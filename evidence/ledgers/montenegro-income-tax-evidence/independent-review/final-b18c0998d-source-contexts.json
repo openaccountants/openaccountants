@@ -1,0 +1,1597 @@
+{
+  "commit": "b18c0998da08c65eeb459d22d24dbce6f0ef146a",
+  "unique_contexts": 159,
+  "all_hashes_and_normalized_quotes_pass": true,
+  "contexts": [
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 21",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "2933e33e209ef40ffa60a3aff77899c442bfa859299a2cf5d6f7a2358edbca88",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment70-2026.txt",
+      "selector": "Article 1",
+      "official_url": "https://www.sluzbenilist.me/propisi/394390/download",
+      "full_context_sha256": "d2141c57dafad49b315cfa8e07fb71f5a8ebe58d1044271827c2c24787b7d459",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment70-2026.txt",
+      "selector": "Article 2",
+      "official_url": "https://www.sluzbenilist.me/propisi/394390/download",
+      "full_context_sha256": "1f9bf0a177d9887aadcf935b877e108c3f5aa37363d9cafd1480f6f3010aad4c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment70-2026.txt",
+      "selector": "Article 3",
+      "official_url": "https://www.sluzbenilist.me/propisi/394390/download",
+      "full_context_sha256": "4974cfc29ded1bd614bf7435d13ac53790256764199cd05b8a7cfac53ad56138",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment70-2026-record.txt",
+      "selector": "Gazette publication and commencement record",
+      "official_url": "https://www.sluzbenilist.me/propisi/394390",
+      "full_context_sha256": "cee4a5e8ef6d97e3484ca2becf2bea3d23343b055ed721ad8c7874e1ea832833",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": 613,
+      "context_offset_unit": "Unicode character position in UTF-8 decoded source text"
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 2",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "13b52907c1f4296c77b7e8c49e15182bd6c6b0099f38e4d8cc9007ced9c374c5",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 3",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "8eb6ee1a84ef6387d81f9fb9cd1ec82e7bace2ba00c743ca67d9ab28a64f7cf3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 4",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "78a26bd6c8de932e1f5c1e2be685737b2d38f08b9bd6fd16f9551a4a249f77c8",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 7",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "0b3bab6b60caf16b248ded436381575162921ddcc651216a1fa4c759228f9f10",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 42",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e0535857aa30c3dd969be5aa710954ff10632ac8575781944ca600f22dd44708",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 12",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "2f8befcc5a64e35489dcdb538b65269c0aa6329fd06af84b9bbf17e469b63d63",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 6",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "ae9c080cf97a6b9c63a2a419a8b3c27cc7fee5af6305481b868fa333b3087cab",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 47",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "b72ff8970f91a0db1d3564e133609ab97062a4f7d9fb24cea5e48b1173fa28da",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 14",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "2cef1225b0368c8251442d3456d8870b74d27b88bc701fe7a9577145a28184ba",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 15",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "e269e33d5cbf422a20fb320bd0362bf8c9b7a903f3fc0f037c75e0ffe683db10",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 18",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "e96b1de9373c2a14d3207c1167d05de7d5d1b412607bed5ab70a1e56e923274e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 10",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 3",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "147b71f4acf70ed59d03ba124ceab1fe38b125470475fbaed3ea54ac757936b1",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 10a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "8511b47228e890e1cad0dc4f7ca1e3c03dda018905738c1baf375e80f042a7c2",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 20",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "317d40b20142fea1f57ab219fbd0ae186f795016b62f57351bc1d30261ed083b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 35",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e55d16a24cb6d151ad254a30f76c2208e696aa657be48b265461d64b5a695a84",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 23",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "190a28b4e863230bf7578e6c7724a0b0a34e86039838d49c0a1170f5fee37c8a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 7",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "219f8c29ef45e4f2620a34df976835175fe594327e96bd465e03a3ded150090e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 24",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "99470433e5da02c4f2e91e67ab9d76ff2fe99de777d328cacb1ee396da945504",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 25",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "95c31e6e8763ab12a7397f5e5480e9cfe54879c5deb2ce537e844390c537ed61",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 26",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "b62aef3bf7ee19b58e4211d798f06286b597b5360daa9afd0dad650f7bd944f6",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 33",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "321d6ce049dd749c6800549912444804245ea930d7a61f98c87c4d518828b518",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 32",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "4829a67e5fd2ee255aa133875ed48adebaeca3efa9d28984512741764aad80a3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 32a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "ce2cbf7e6c8af4db41f60a60431aabfb26286ec461bb2c3d3ce34bcce63e6002",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 32b",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "5078599cfea94bf1173ebccb9f5f91170527e8c94a297b04c04226110a771513",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37d",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "613c4844d8805c8462f9350e3c3c28e591f63087b899d90def2a2e2df3b13062",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37j",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "cd601c930f40b9972e7f1e6cbae651d1554a87ce84fda88bef8aafa74c02d655",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37lj",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e3ab05d1bf5a389131f2741e413ce97ee280658d307c866960cbd966132fb6ba",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37p",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "b8cc72358573f5e972f72ad2b781fe3fc810db99b9d67a1adf6eb04c429e62d7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 49",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "1faad4708addee363fcd2c4d2e464d2ca442271f8d9f117c706efbdb107e21ee",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 14",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "5bc6d1c1e11889b2768120e968dde17ccf76b2e514afd16182dbf50404dd631f",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 43",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "826c3f2825fed5d39cd6e09d56d929a2d8258103eb3684297bc8593272a6c5df",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/local-financing-law-through149-2025.txt",
+      "selector": "Article 8",
+      "official_url": "https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0",
+      "full_context_sha256": "f39bd33fad3773351e19a4da14f9272168eb111300709ffdb6fd58c63845a22a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/local-financing-law-through149-2025.txt",
+      "selector": "Article 9",
+      "official_url": "https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0",
+      "full_context_sha256": "993ece580f6f33044646c90ab84db1d09d98d493f52258e2b2e1c279bc3285c6",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 17",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "f82a94c22c8e83f93e73fac5b5805867eb027523e4a30f4a8cf183d45f789d60",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/vat-law-through12-2026.txt",
+      "selector": "Article 24",
+      "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
+      "full_context_sha256": "96e18cb7c8ed35477d1160f26944f1234b91de45d3db94b04147639010c79e89",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/vat-law-through12-2026.txt",
+      "selector": "Article 42",
+      "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
+      "full_context_sha256": "e557ac6cbdbabdd99deae82172c6ccd71cb38fb22e9c1401b09a1bdc5055e4d7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/vat-law-through12-2026.txt",
+      "selector": "Article 55",
+      "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
+      "full_context_sha256": "b9a664aba7aa22c76a435695915dd9c9b65413d1c9dc725bc52864f68bfea264",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 53v",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "18f521403e5a45ab8ae24917ca170a3fbbccef720c77e39c4c633e22873ffae5",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 53a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "8a44a72c7c39f3392370a12269c21327cff50236cc03235d004d17f7ecc9eff1",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 18",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "6bb81bd15acf875b093da42753322b1070b22b8bd2d29083f3f7011cc189d9c4",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 13",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "3bffeeceb6f33b795997a0973189fa3d43abcc24b0ff3719b3bfb8721f7e218c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 8",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "6d73472aeb97cc15173bf9d14b00771391151b11b7c9d4aafa6649f7cdaa2a85",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 5",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "77d602fdded8f86941bff2cd7e7d06ff2a1ed5255cce0953d89f46418f4d97c0",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 1",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "78e6bdd103a2222b77bfb3546a444417e3be0362487610fef70f5a38b80aa925",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 5a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "b1d6a4503bde26696e70c2542de47d931258fd3d4873e704b6589c33cf90b9fb",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 2",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "7dbac4fd6e6b6f86e608d9e49f52b4d84fd1b85b26aa38bb8474c1dbcde7fc74",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 16",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "7935545f22d208ace6db911b5c28f38b7524b8dd8b01341f889fbb692f7baf19",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 5",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "a5a8aeb3a60803e1815886ea64a90813a4e7139b67d5aa2bf6d95220039cd45b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 17",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "3c56e9ed0551bce040409be5aedb45eae12ae9434c6ed821aeac8d2a58eb4218",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 18",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "2e9ee6d2d521f3473b0fee4b4d4d7cf9f085df070cbd26d6afd0e436b63b090d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 19",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "0beff32b3d238d64a692d43452bd0b5a0672ef22513b1a9eecce2be0c8291d55",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "4c3fc4f9ee59b2bd5b11ac4f29c7304172eab47cf59b0d780374541d208af171",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 21",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "03baf6471f1c99ade76d3cd9d0cf13f1bf3f9751c1f49a2d8efffa04653db0df",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 22",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "d2115a5de8550931ee24338bab16948fa340704b9d441ef4f5382a009b08cb0c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 27",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "0ded2e3029633e087a768caf881b9628ae38b7dfc422e5b39d2f5870fea6773d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 28",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e112dbe5c7471b11e833f787da585095ad88cb24333f7aa28d6bf612047f6e70",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 30",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "3eb6643ae5ca6bd591bf072ff4f4ed12c2794df38534b19099e5fc443863c6c3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 31",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "ad92212291590d3ae143e0fb3bf9811b3c2bd09861610d537538f29ea6203f52",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 48a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "4a6747eadf26bba28e86369f0a5889993cc265d61047178ef6fdd97d290ec8b7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 14",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "09720273a087c43bd02ac2f448247a45b5b68f760ad0ba31a3a439d259e7f528",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 15",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "acc851e76717b01a09ab0887e76191daf7f8b441f41b82dfcef292b8c2318f97",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 34",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "5120161cf535b84cf537cb82b6cac9f7b4695c0b41b116c56c27c70c1c115ab6",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 36",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "6d1fab04b7b4b5c78daff89e7e936b147fb0503d6f318e39a5775e7390108ea7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 49a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "b9268d1c4be8743dbd0810ff229cd205119b12bfefdf6b67dce393741172191e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "da1ddacf9d5c4280e207e132a0c95a96bb08883c9b18197c75893b0a30035106",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 8",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "fbd421a01076b9381b951feba54b310d9e580040a6a4dc316e71abbf27caf527",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "633c041240b634f1a40a980b82b9b4a1dcd44c55b58cb9b987197340bf1a9a21",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37c",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "3cf049213c27823f4fd39155b302f23a0360eb2a0040ae0d2bccfa846ba7f487",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37e",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "310199d97c5c9eb9374260bac686d343732e46380a3d385db7b4c2d35b290e9d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37f",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "5a7b64ea216f66ec1e6feb3f4a623459b58c0e4cdbdaf680a4f5db2fc10b949c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37g",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "848bc3df140b8b00f2af5fe1ca1b562108d1a9051646a1d0e849c1033010666f",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37h",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "a04fe1177b2830c52ba22aae84f2c94ab7727d55f227d62f6499147574a5a3ab",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "54693d8adae1a6e60ee5b40b7b3ff4880463e08c4dea7b12bccb791ad7ce7830",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37i",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "ed7c126626e26dc986a014b407e1516d9f70faca6a37bd8afcd7860fa7ea8645",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37k",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "adb2d8ad294da9c439c907e94f5a959cc2f30b03b44c87ab3b6bbdfe11cf0ca7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37l",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "f74368639d10145bf70d3e54560f5730eacd846dfb1eb1f438046139a9d3931d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37m",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "a99b142d55570b6daf7dab98e94a05ff3385f0b7849beb0572a2179d3502b61a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37n",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "fdfa2f7adf77dd21e1ad812d327ab3d91a325a7272937cecde5df7fd3f3df2a4",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 9",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "156047a340aa2984ab732d2a443f504fd7b0c5c2dd5e63aa18858278fb7ecfaf",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37o",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "1223894f3e119c782d631f003b10109b9f6301397c42b38c480df6f823560039",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37r",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "8f822f16c05584f0d7a805179dc2db64c3a1bde82b245c504751594392babcbd",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37s",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "80e1c1cb3f1697a33353341e76756748ac70b4031c63bc77c000959f44b90702",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50f",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "259d26b797841e91d3c46287e66f0be33f6e2d3480b579f2de94fba57dcce288",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 10",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "9ab01c00a7d98801c8bde643e7a2f3779c16977e2a8c796cfd235a09d7ac0335",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 32c",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "98f4a6207153dc6b5c7bf0ccf57f0f615d9a030cba1d017c8256dfd664414e4d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 32d",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "7487afbbc3b8576d3cd18be0d466ab2a962e83562377f8508ac5d491449248b8",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-rule-through103-2025.txt",
+      "selector": "Article 3",
+      "official_url": "https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0",
+      "full_context_sha256": "2879a1d7ded170391555fd02733e348dd176db5721ca61500f5fcec0a0ec7382",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-rule-through103-2025.txt",
+      "selector": "Article 4",
+      "official_url": "https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0",
+      "full_context_sha256": "25ad54ec449c483c2ef7d162883c02a39ced42f64d0da6472650f3bbbe6a917a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-rule-through103-2025.txt",
+      "selector": "Article 5",
+      "official_url": "https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0",
+      "full_context_sha256": "506baf47be91562e0b697a98af9f08d3dcb8d44d22a8b8d26226945acea6c71b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 43a",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "d6951424046f851b996a33320eb2a4f7b240bcac8fa05aeda9532b7e088b4063",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 48",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "a1486e7b5d99348410d8295bb762642eb7cad729e00677679396f950d3646fd3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 46",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "7ec7516dedb8e221714ce39226c25e5b15b29b999d36c0943ce908a79c1e18d3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50b",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "45541841f6721114e9ed2b781a496b9a9f34926b701c3556f7d0d9d207815604",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50c",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "ca852fa2074d8fdb23c6a1f5ccf864c604fdc957f6e904ecd0fc8f78f99182c3",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50d",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "635b7eca635b33ebc08892e813544fa85eb7c7db9b038bbd42c0b7304f83b8c5",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 50e",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "a8b99b41c84fb057c744aac456f16f989d3bfa7f035cb06c490f6ec8d7902e26",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 44",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e0b7e57ae60737440c1a5501371b51fa878d53f650eae6ac869830c8850d3595",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 6",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "2e024305a41ab36a7231a76f6d92b0e5d19831290858944c942194188ceaf23e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 2",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "4a694dcb1aafee33d39d87e73b18fdfba80fe9e8bd572e1b77440f5331373809",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 3",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "15c3349aa7882ac4207602e74722a4e66c7b6a6eae8188910138f0a45c322add",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 4",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "f8764d5895bb0690fa13b133890a27aae9478934c0f30f0f2b91e312f8d6ca93",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 5",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "b10f60ae47b80e1846c98b62f3425f3396181c7400c57e1bc4b82025d95f3540",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 9",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "30946e5ec20e8a7e8f63ac71adff347fa35f36015e21a49168134ca86e887a6e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/contribution-law-through160-2025.txt",
+      "selector": "Article 11",
+      "official_url": "https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
+      "full_context_sha256": "391b86aec8c28e46cfde60ef3ade72a07e6fac9251a8ee772b97614ea352c89b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/seasonal-tax-informator-2026.txt",
+      "selector": "PDF page 7",
+      "official_url": "https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0",
+      "full_context_sha256": "8480646f34e596614069513fdfed5e798fc595e34cac1b8e5407b9429b910048",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/seasonal-tax-informator-2026.txt",
+      "selector": "PDF page 8",
+      "official_url": "https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0",
+      "full_context_sha256": "7b0f927459feecae66677cd15c6fe50e360891ce362344a77ef6ac463210da13",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "Article 7",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "7ffd892eca5a47d7a4bb703fc84694b84f725516304bc68a2d972664acdb955c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "PDF page 3",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "1b5dbdf2cef0c175391e1e2f8c494965601be9f207dd2cdbd21915b62183703f",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "PDF page 4",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "22876e8ac48f07d5d78ca31cb4f851ee6cb902b3688108d2183d431831d66541",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-rule-through118-2024.txt",
+      "selector": "PDF page 5",
+      "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
+      "full_context_sha256": "cecc7498e0eddd11d26ed14d2f982a091cc9c2ed723d3cae7ad95d70ceb92be0",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pausal-deadline-notice2026.txt",
+      "selector": "Notice 5 February 2026: operative deadline and paper application paragraphs",
+      "official_url": "https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine",
+      "full_context_sha256": "0d6056ce97aa96816512d8ba0f7b62bca2b3ea11ba00a2a0b8abb16c0c14181b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": 337,
+      "context_offset_unit": "Unicode character position in UTF-8 decoded source text"
+    },
+    {
+      "source": "sources/pausal-deadline-notice2026.txt",
+      "selector": "Notice 5 February 2026: paper ZPO paragraph",
+      "official_url": "https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine",
+      "full_context_sha256": "d17f7df6f9448305d157ab2dfd01e832b215462ff7aac1abadaa593808f38ae0",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": 622,
+      "context_offset_unit": "Unicode character position in UTF-8 decoded source text"
+    },
+    {
+      "source": "sources/seasonal-tax-informator-2026.txt",
+      "selector": "PDF page 5",
+      "official_url": "https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0",
+      "full_context_sha256": "e8b4533b1c9104c22759c724a3b3b7c5c464aa48c88be97b03493d6da211d80a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/seasonal-tax-informator-2026.txt",
+      "selector": "PDF page 6",
+      "official_url": "https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0",
+      "full_context_sha256": "41928af10c59a2ec73e894cdab320be424734e45716e758969cdcd9ec978355e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 1",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "0e1a6cc22f6f5da41110bd63997a178eac98b04fbf00c21edee9031da0aace7e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 2",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "142438d027410c5c1ef362df5cc2609cbfae0b9585e1ab8b7318b332a8a82634",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 3",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "d9eb7cbeaaeee97f944faeb9a073403cedbc3359aa292cadbd0040ba10117761",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-amendment160-2025.txt",
+      "selector": "Article 11",
+      "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+      "full_context_sha256": "da83d4f6541c9413dea2cb77b6573c693e48b7a6a6fac36b17145c2498d42344",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 4",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "08bfeaf690bada6f79ec957150361065a3871a430a3418613add01adc67b19cd",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 7",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "d261e0a3a1d9491280cc453a5dd519e939aaa7920f7b9fc72d92df898add4be7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 8",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "57567a48edd9bf1f2f09e626fcf83c27c1c0891485b56fc880c61066ac2ca728",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 9",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "71747310006576bf1309b894a37a689c80e5cd202964816efc72742615e4fe12",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 29",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "9b670d1d93e3490b9eb73468f38ad9dc494b5430e52b5a8126cd07e7afc9f74c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 10",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "610a4d9783f8e57208eb29cdc34beb3968c132f202baa28604e32c113c9b21f6",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 11",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "3f3d43d5ec9b8ac46ca9e34dd9cde2cedbba5028f34bec75e34a193ab30b34df",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 12",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "d0d3c4ce32a4ec4315383336911f4db22a3da5ab9f6ab7126a50697642bc72cc",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 13",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "383b43282dbff235219e855b09c84b7df5654b7f825ced2c13af368fa16996f4",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 14",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "3a6ccc19dcf924841c50b46615db3bf20526214f843aa3b25c0a808d8fd89a26",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 15",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "ed4dec3f6ec50e7f7b8b44aafa9903825ee34e8170d9968044f8d96f66d53c9c",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 16",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "e1d2fd32a831fef7f6a4bdded500d06025f1eb4ed86dd9ce3f4246291c2e1291",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 37b",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "c31afd19ef39ad7f513436222dce56bcd05b1f14aace31c5a26e99864d04f938",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 17",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "a834b6900b168737fdd12f3efca21e083e09427616914825c92f2d142afb5446",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 18",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "9e36c2affb79e5af62d6c6dcb7df31488086fb8f9459c2f38fa6cece70f52ef8",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 19",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "f6a2020d6cb5a3a26b971b0a403e60732ed57d88b62b6480fc375e4a27ed4363",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 20",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "4a12726eb7b77c74165d45cff37eb4016b666923dd1050cb3cbc43c73d54e8ee",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 21",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "a23551fcfe9a9c3564eeac299ba019d49e47a59154d126a494740b07eb90c30e",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 22",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "a3403276849a720e94dc2631f9e240bf24660b5a43e16376e0fc5c5ca06f0c29",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 23",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "2fadd0e6d8f6e45c82a5c413b7a5d77bc8b74a7ff8f4ee028735892b03f9385a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 24",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "5229939bd0b2fb528851a031bb5d0327019da0a16d267151f6a5defc2e80204a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 25",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "9759cbea49bb8d6b6e4a386c1099d7a4d95342d1dc0ba91fa6b404cd06ba63d9",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 26",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "1824fdd315c94a0c27bc7aeb99f5f2b76920cc968ecf109fa7729bcb6464197b",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 45",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "e0303fa88ebccf1541939261b5c8c2be9e5607c6d64165a0275a3081b8a23923",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 27",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "ca017a8c6f412ec7a8deb58cadad17987d15f0330b502a6af728315b2b0c2d13",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 28",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "b00010fd11f1d1f26f477a8648fbe244979cafdb639278b13dfd4be813301b2a",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 29",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "a5ae3c83f97f23c2f58873d3a056a777aa90868984387a3dbe0d0f20bf8d874d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 5",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "f4e351153325754fd582bdaea8e002fb230cae15941c50b018bfa64f9ddef389",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/annual-return-amendment103-2025.txt",
+      "selector": "PDF page 6",
+      "official_url": "https://www.sluzbenilist.me/propisi/385024/download",
+      "full_context_sha256": "5ca74e762b833efc5f8b9651634894943121dd6d8ce5a483d0cedfb5f094ae5d",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 53b",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "1d10aff31175c4f982a13602c109a12a18622cdb99244bc8a9165ee789136e25",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/pit-law-through160-2025.txt",
+      "selector": "Article 53",
+      "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+      "full_context_sha256": "7673b18c7edf81d63c20522a360834e78e37db297bbc70cd222ae148a32e3bea",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/administration-law-pre104-2026.txt",
+      "selector": "Article 95",
+      "official_url": "https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0",
+      "full_context_sha256": "f5e43f22e8ce5734336ac6778558104bb0504cd9d160bab312f7743b41eb50dc",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/administration-amendment104-2026.txt",
+      "selector": "Article 20",
+      "official_url": "https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0",
+      "full_context_sha256": "a69516343b71dc9f8bab46017c9ee671e5bc046996f7344b907fc30d84b508b5",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/administration-amendment104-2026.txt",
+      "selector": "Article 26",
+      "official_url": "https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0",
+      "full_context_sha256": "aaa8eb12ff4ebb3234919231a3a67a4c4d58e459fc90148e2e564080eef7e8b7",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    },
+    {
+      "source": "sources/interest-decision-20260724.txt",
+      "selector": "Decision 24 July 2026",
+      "official_url": "https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0",
+      "full_context_sha256": "a1c3646c7d908afa5b88c8958eb3a415b0763bf863b7b9590ccd4ca930f1bd00",
+      "hash_pass": true,
+      "normalized_exact_words_pass": true,
+      "context_offset_start": null,
+      "context_offset_unit": null
+    }
+  ]
+}

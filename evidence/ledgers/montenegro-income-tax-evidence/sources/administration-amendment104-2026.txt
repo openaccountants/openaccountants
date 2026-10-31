@@ -1,0 +1,844 @@
+                                                                                              Katalog propisa 2026
+
+1868.
+   Na osnovu člana 95 tačka 3 Ustava Crne Gore donosim
+
+                                                       UKAZ
+     O PROGLAŠENJU ZAKONA O IZMJENAMA I DOPUNAMA ZAKONA O
+                    PORESKOJ ADMINISTRACIJI
+                            ("Službeni list Crne Gore", br. 104/26 od 17.07.2026)
+   Proglašavam Zakon o izmjenama i dopunama Zakona o poreskoj administraciji, koji je donijela Skupština Crne
+Gore 28. saziva na Četrnaestoj sjednici Prvog redovnog (proljećnjeg) zasijedanja u 2026. godini, dana 9. jula 2026.
+godine.
+                                               Broj: 01-009/26-1236/2
+                                            Podgorica, 15. jul 2026. godine
+                                               Predsjednik Crne Gore,
+                                                Jakov Milatović, s.r.
+   Na osnovu člana 82 stav 1 tačka 2 i člana 91 stav 1 Ustava Crne Gore, Skupština Crne Gore 28. saziva, na
+Četrnaestoj sjednici Prvog redovnog (proljećnjeg) zasijedanja u 2026. godini, dana 9. jula 2026. godine, donijela je
+
+                                                     ZAKON
+   O IZMJENAMA I DOPUNAMA ZAKONA O PORESKOJ ADMINISTRACIJI
+                                                        Član 1
+   U Zakonu o poreskoj administraciji ("Službeni list RCG", br. 65/01 i 80/04 i "Službeni list CG", br. 20/11, 28/12,
+8/15, 47/17, 52/19, 145/21, 15/25, 160/25 i 70/26), u članu 4 poslije tačke 2 dodaje se nova tačka koja glasi:
+"2a) poreska obaveza obuhvata: porez, kamatu i troškove postupka;"
+   U tački 10 poslije riječi "organizacija" dodaju se riječi: "pravni aranžman".
+   Tačka 15 mijenja se i glasi:
+"15) izvještajni operater platforme je operater platforme u Crnoj Gori koji je obveznik izvještavanja na osnovu
+   Direktive EU 2023/2226 i Modela pravila za izvještavanje, u skladu sa zakonom, odnosno potvrđenim
+   međunarodnim sporazumom, koji je rezident Crne Gore za potrebe oporezivanja ili ima stalnu poslovnu jedinicu
+   koja u skladu sa zakonom posluje u Crnoj Gori, ili nije rezident Crne Gore za potrebe oporezivanja i nema stalnu
+   poslovnu jedinicu u Crnoj Gori ali omogućava prodavcima aktivnosti u vezi iznajmljivanja nepokretnosti koja se
+   nalazi u Crnoj Gori, državi članici EU ili drugoj državi ili pružanja ličnih usluga, isključujući operatera platforme
+   koji, na osnovu potvrđenog međunarodnog sporazuma, nije obveznik izvještavanja i nije kvalifikovani operater
+   platforme izvan EU."
+   U tački 16 riječi: "uključujući i token elektronskog novca" zamjenjuju se riječima: "u skladu sa članom 3 stav 1
+tačka 5 Uredbe EU 2023/1114".
+   Na kraju tačke 18 tačka-zarez briše se i dodaju riječi: "u skladu sa članom 3 stav 1 tačka 15 Uredbe EU
+2023/1114;".
+   Tačka 19 mijenja se i glasi:
+"19) izvještajni pružalac usluga povezanih sa kriptoimovinom je svaki pružalac usluga povezan sa kriptoimovinom
+   ili subjekt povezan sa kriptoimovinom u Crnoj Gori, koji je obveznik izvještavanja u skladu sa Direktivom EU
+   2023/2226, zakonom, odnosno potvrđenim međunarodnim sporazumom, koji je rezident Crne Gore, države
+   članice EU ili druge države, koji pruža jednu ili više usluga povezanih sa kriptoimovinom kojima se sprovode
+   transakcije razmjene u ime i za račun korisnika kriptoimovine o kojoj se izvještava."
+   Poslije tačke 19 dodaje se 21 nova tačka koje glase:
+       "20) prekogranični aranžman je aranžman ili niz aranžmana, koji može da sadrži više koraka ili djelova, a
+       odnosi se na više od jedne države članice EU ili na jednu državu članicu EU i treću zemlju i ukoliko ispunjava
+       najmanje jedan od sljedećih uslova:
+                 - svi učesnici u aranžmanu nijesu rezidenti za potrebe oporezivanja u istoj jurisdikciji;
+
+
+Pravni ekspert doo, Podgorica                                                                                       1
+                                                                                              Katalog propisa 2026
+                - jedan ili više učesnika u aranžmanu istovremeno su rezidenti za potrebe oporezivanja u više od
+            jedne jurisdikcije;
+                - jedan ili više učesnika u aranžmanu obavlja djelatnost u drugoj jurisdikciji preko stalne poslovne
+            jedinice, a taj aranžman je dio poslovanja ili cjelokupno poslovanje stalne poslovne jedinice;
+                - jedan ili više učesnika u aranžmanu obavlja djelatnost u drugoj jurisdikciji, ali nije rezident za
+            potrebe oporezivanja u toj jurisdikciji niti u njoj obavlja djelatnost preko stalne poslovne jedinice;
+                - takav aranžman može imati uticaj na automatsku razmjenu informacija ili identifikaciju stvarnog
+            vlasništva;
+     21) prekogranični aranžman o kojem se izvještava je svaki prekogranični aranžman koji sadrži najmanje jedno
+     obilježje koje ukazuje na potencijalni rizik od izbjegavanja plaćanja poreza;
+     22) obilježje je svojstvo ili osobina prekograničnog aranžmana koji ukazuju na potencijalni rizik od
+     izbjegavanja plaćanja poreza;
+     23) posrednik za potrebe izvještavanja o prekograničnim aranžmanima (u daljem tekstu: posrednik) je:
+                a) svako lice koje sačini, stavi na tržište ili organizuje prekogranični aranžman o kojem se izvještava
+            ili takav aranžman stavi na raspolaganje radi njegove realizacije ili upravlja njegovom realizacijom i
+            mora da ispunjava najmanje jedan od sljedećih uslova:
+                          - rezident je Crne Gore za potrebe oporezivanja;
+                          - u Crnoj Gori ima stalnu poslovnu jedinicu preko koje se pružaju usluge u vezi s
+                    aranžmanom;
+                          - osnovan je ili je uređen prema zakonima Crne Gore; ili
+                          - upisan je u nadležni registar za pružanje pravnih, poreskih i savjetodavnih usluga u Crnoj
+                    Gori;
+                b) svako lice koje, uzimajući u obzir relevantne činjenice i okolnosti i na osnovu dostupnih
+            informacija i relevantnog stručnog znanja i razumijevanja potrebnog za pružanje takvih usluga, ima
+            saznanje ili bi se od nje u razumnoj mjeri moglo očekivati da zna da se obavezala na pružanje, direktno
+            ili posredstvom drugih lica, podrške, pomoći ili savjeta u pogledu sačinjavanja, stavljanja na tržište,
+            organizovanja, stavljanja na raspolaganje u cilju njegovog sprovođenja, ili upravljanja sprovođenjem
+            prekograničnog aranžmana o kojem se izvještava;
+     24) relevantni poreski obveznik za potrebe izvještavanja o prekograničnim aranžmanima (u daljem tekstu:
+     relevantni poreski obveznik) je svako lice kojem se prekogranični aranžman o kojem se izvještava stavlja na
+     raspolaganje radi njegove realizacije ili koje je spremno da taj aranžman realizuje, ili koje je realizovalo prvi
+     korak tog aranžmana;
+     25) tržišni aranžman je prekogranični aranžman koji je sačinjen, stavljen na tržište, spreman za realizaciju ili je
+     stavljen na raspolaganje radi njegove realizacije, i ne zahtijeva veće prilagođavanje;
+     26) posebno prilagođeni aranžman je svaki prekogranični aranžman koji nije tržišni aranžman;
+     27) nadležni organ države članice je organ ili dio organa određen od strane države članice za razmjenu
+     informacija, a koji može uključivati: centralnu kancelariju za vezu, službu za vezu ili nadležnog službenika;
+     28) centralna kancelarija za vezu (u daljem tekstu: CLO) je kancelarija čija glavna odgovornost je kontakt sa
+     nadležnim organima država članicama EU u dijelu administrativne saradnje;
+     29) služba za vezu je svaka kancelarija osim CLO određena da direktno razmjenjuje informacije sa nadležnim
+     organima država članica EU;
+     30) nadležni službenik je svaki službenik koji ima ovlašćenje da direktno razmjenjuje informacije sa
+     nadležnim organima država članica EU;
+     31) organ koji podnosi zahtjev je CLO, služba za vezu ili bilo koji nadležni službenik države članice EU koji
+     podnosi zahtjev za pomoć u ime nadležnog organa;
+     32) upravna istraga je svaki nadzor, provjera ili druga aktivnost preduzeta od strane države članice EU kako bi
+     osigurala ispravnu primjenu poreskog zakonodavstva;
+     33) razmjena informacija na zahtjev je razmjena informacija na osnovu zahtjeva države članice EU koja
+     podnosi zahtjev državi članici EU koja prima zahtjev u posebnom slučaju;
+     34) automatska razmjena je sistemsko dostavljanje informacija kojim raspolaže poreski organ Crne Gore
+     nadležnom organu države članice EU o rezidentima Crne Gore ili drugih država članica EU bez prethodnog
+     zahtjeva u prethodno utvrđenim rokovima;
+
+
+Pravni ekspert doo, Podgorica                                                                                       2
+                                                                                                Katalog propisa 2026
+     35) spontana razmjena je nesistemsko dostavljanje informacija drugoj državi članici EU, u bilo kom trenutku i
+      bez prethodnog zahtjeva;
+     36) elektronski put je korišćenje elektronske opreme za obradu, uključujući digitalnu kompresiju i skladištenje
+      podataka i koristeći žice, radijski prenos, optičke tehnologije ili druge elektromagnetske uređaje;
+     37) CCN mreža je zajednička platforma bazirana na zajedničkoj komunikacionoj mreži (u daljem tekstu:
+      CCN), koju je razvila EU za sve prenose elektronskim putem između nadležnih organa u području carina i
+      oporezivanja;
+     38) klijent za potrebe automatske razmjene informacija o prekograničnim aranžmanima je svaki posrednik ili
+      relevantni poreski obveznik koji prima usluge, uključujući pomoć, savjete, usmjeravanje ili smjernice, od
+      posrednika koji podliježe obavezi čuvanja profesionalne tajne u vezi sa prekograničnim aranžmanom o kojem
+      se izvještava;
+     39) prihod od dividendi koje nijesu dio kastodi računa su dividende ili drugi prihod koji se, u državi članici EU
+      koja je isplatilac, tretira kao dividenda, a isplaćuje ili upisuje na račun koji nije kastodi, odnosno nije definisan
+      kao račun (osim ugovora o osiguranju ili ugovora o rentnom osiguranju) na koji se drži finansijska imovina u
+      korist drugog lica;
+     40) proizvodi životnog osiguranja koji nijesu obuhvaćeni drugim pravnim instrumentima EU o razmjeni
+      informacija i drugim sličnim mjerama su ugovori o osiguranju, osim ugovora o osiguranju uz mogućnost
+      isplate otkupne vrijednosti polise, koji podliježu izvještavanju kada se naknade iz ugovora plaćaju u slučaju
+      smrti vlasnika polise.".
+   Tačka 20 briše se.
+
+                                                         Član 2
+    Poslije člana 5 dodaje se novi član koji glasi:
+    "Centralna kancelarija za vezu
+    Član 5a
+(1) Poreski organ obavještava Evropsku komisiju o postojanju CLO i bez odlaganja o svim promjenama ove
+    kancelarije, koja je nadležna za razmjenu informacija.
+(2) Poreski organ će odrediti službu za vezu, koja će biti nadležna za razmjenu informacija i o tome obavještava
+    Evropsku komisiju i druge države članice EU.
+(3) CLO je odgovorna za ažuriranje popisa službi za vezu i davanje istog na raspolaganje CLO drugih država članica
+    EU.
+(4) Služba za vezu je odgovorna za ažuriranje popisa nadležnih službenika i davanje istog na raspolaganje službama
+    za vezu drugih država članica EU i Evropskoj komisiji.
+(5) Službenici zaduženi za administrativnu saradnju smatraju se nadležnim službenicima za potrebe razmjene
+    informacija.
+(6) Kada služba za vezu ili nadležni službenik pošalje ili primi zahtjev za saradnju ili odgovor na zahtjev za saradnju,
+    o tome obavještava CLO.
+(7) Kada služba za vezu ili nadležni službenik primi zahtjev za saradnju kojim se traži postupanje van njihove
+    nadležnosti koja im je dodijeljena u skladu sa nacionalnim zakonodavstvom ili politikom države Crne Gore,
+    zahtjev bez odlaganja prosljeđuju CLO i o tome obavještavaju tijelo koje podnosi zahtjev, a rok za dostavljanje
+    informacija počinje da teče narednog dana od dana proslijeđivanja zahtjeva CLO."
+
+                                                         Član 3
+   U članu 6 stav 1 tačka 21a poslije riječi: "u skladu sa" dodaju se riječi: "ovim zakonom i".
+
+                                                         Član 4
+   U članu 14e stav 1 mijenja se i glasi:
+"(1) Izvještajna finansijska institucija dužna je da, identifikuje račune koje posjeduje ili kontroliše rezident države
+   članice EU ili druge države, odnosno teritorije države, prikuplja informacije o stanju na računu, ostvarenim
+   prihodima tih lica po osnovu određenih vrsta dohotka i kapitala i preduzima mjere produbljene provjere, na
+   osnovu Direktive EU 2014/107 i/ili Standarda zajedničkog izvještavanja, u skladu sa zakonom i drugim
+   propisom."
+   U stavu 5 riječ "najmanje" zamjenjuje se riječima: "koliko je potrebno, ali ne manje od".
+
+                                                         Član 5
+Pravni ekspert doo, Podgorica                                                                                          3
+                                                                                                Katalog propisa 2026
+   U članu 14f st. 1, 2 i 3 mijenjaju se i glase:
+"(1) Član međunarodne grupe povezanih pravnih lica iz Crne Gore (u daljem tekstu: "član međunarodne grupe iz
+   Crne Gore") koji obavljaju djelatnost u državi članici EU ili drugoj državi odnosno teritoriji države, dužan je da
+   dostavi poreskom organu objedinjene podatke o ostvarenim prihodima, dobiti/gubitku prije oporezivanja,
+   obračunatom i plaćenom porezu na dobit, prijavljenom kapitalu, akumuliranoj dobiti, broju zaposlenih i
+   materijalnoj imovini za svaku državu članicu EU ili drugu državu odnosno teritoriju države.
+(2) Član međunarodne grupe iz Crne Gore dužan je da, pored podataka iz stava 1 ovog člana, dostavi poreskom
+   organu i podatke o identifikaciji svakog člana međunarodne grupe utvrđujući državu, odnosno teritoriju države
+   rezidentnosti i državu, odnosno teritoriju države u kojoj je na osnovu zakona taj član međunarodne grupe osnovan
+   ako se razlikuje od države, odnosno teritorije države rezidentnosti, kao i vrstama djelatnosti koje obavlja.
+(3) Član međunarodne grupe iz Crne Gore dužan je da, podatke iz st. 1 i 2 ovog člana, dostavi poreskom organu, radi
+   razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, na
+   propisanom obrascu u elektronskom obliku, u roku od 12 mjeseci, nakon isteka fiskalne godine za koju se podaci
+   dostavljaju."
+
+                                                         Član 6
+   U članu 14g stav 1 mijenja se i glasi:
+"(1) Izvještajni operater platforme dužan je da, prikuplja podatke i vodi evidenciju o prodavcima, odnosno
+   naručiocima oglasa o prodaji i iznajmljivanju nepokretnosti, parking mjesta i bilo koje vrste prevoza, prodaji
+   proizvoda i pružanju ličnih usluga, o ukupno plaćenim naknadama i broju relevantnih aktivnosti u vezi kojih je ta
+   naknada naplaćena, o porezima, naknadama ili provizijama koje je obustavio i naplatio korisnicima platforme
+   tokom perioda o kojem izvještava i preduzima mjere produbljene provjere, na osnovu Direktive EU 2021/514 i
+   Modela pravila izvještavanja, u skladu sa zakonom i drugim propisom."
+   U stavu 3 riječ "najmanje" zamjenjuje se riječima: "koliko je potrebno, ali ne manje od".
+   Stav 8 mijenja se i glasi:
+"(8) Ako je operater platforme Crne Gore identifikovan kao izvještajni operater platforme u više država članica EU,
+   može da izabere jednu državu članicu EU ili kvalifikovanu jurisdikciju koja nije članica EU u kojoj će ispuniti
+   obavezu izvještavanja i dužan je o tome da obavijesti poreski organ Crne Gore i nadležni organ države članice EU
+   ili kvalifikovane jurisdikcije koja nije članica EU a u kojoj izvještava."
+
+                                                         Član 7
+    U članu 14h stav 1 riječi: "Standarda zajedničkog izvještavanja" zamjenjuju se riječima: "Direktive EU
+2023/2226 i Okvira za izvještavanje o kriptoimovini".
+    U stavu 3 riječ "najmanje" zamjenjuje se riječima: "koliko je potrebno, ali ne manje od".
+St. 7 i 8 mijenjaju se i glase:
+"(7) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da podnese prijavu za registraciju kod
+    nadležnog poreskog organa, u skladu sa zakonom i upiše u Registar pružalaca usluga povezanih sa
+    kriptoimovinom kod Komisije za tržište kapitala Crne Gore u skladu sa zakonom kojim se uređuju mjere i radnje
+    koje se preduzimaju radi sprečavanja i otkrivanja pranja novca i finansiranja terorizma.
+(8) Ako je pružalac usluga povezanih sa kriptoimovinom u Crnoj Gori identifikovan kao izvještajni pružalac usluga
+    povezanih sa kriptoimovinom u više država, može da izabere jednu državu članicu EU ili kvalifikovanu
+    jurisdikciju koja nije članica EU u kojoj će ispuniti obavezu izvještavanja i dužan je da o tome obavijesti nadležni
+    poreski organ Crne Gore i nadležni organ države članice EU ili kvalifikovane jurisdikcije koja nije članica EU u
+    kojoj izvještava."
+    Poslije stava 8 dodaju se četiri nova stava koji glase:
+"(9) Izvještajni pružalac usluga povezanih sa kriptoimovinom, pravno lice, ne podliježe obavezi izvještavanja i
+    preduzimanja mjera produbljene provjere u državi članici EU u kojoj: je rezident za potrebe oporezivanja, je
+    osnovan ili organizovan u skladu sa zakonima te države, ima pravni status ili obavezu da podnosi poreske prijave
+    ili ostale relevantne informacije poreskim organima u toj državi članici EU u vezi ostvarene dobiti subjekta, je
+    subjekt kojim se upravlja iz države članice EU, ili je subjekt ili fizičko lice koji ima stalno mjesto poslovanja u toj
+    državi članici EU, ako taj izvještajni pružalac usluga povezanih sa kriptoimovinom te obaveze ispunjava u bilo
+    kojoj drugoj državi članici EU ili kvalifikovanoj jurisdikciji koja nije članica EU jer je rezident za potrebe
+    oporezivanja u toj državi članici EU ili kvalifikovanoj jurisdikciji koja nije članica EU.
+(10) Izvještajni pružalac usluga povezanih sa kriptoimovinom, fizičko lice, ne podliježe obavezi izvještavanja i
+    preduzimanja mjera produbljene provjere u državi članici EU u kojoj ima stalno mjesto poslovanja, ako te
+
+Pravni ekspert doo, Podgorica                                                                                          4
+                                                                                                 Katalog propisa 2026
+   obaveze ispunjava u bilo kojoj drugoj državi članici EU ili kvalifikovanoj jurisdikciji koja nije članica EU jer je
+   rezident za potrebe oporezivanja u toj državi članici EU ili kvalifikovanoj jurisdikciji koja nije članica EU.
+(11) Izvještajni pružalac usluga povezanih sa kriptoimovinom ne podliježe obavezi izvještavanja i preduzimanja
+   mjera produbljene provjere ako je državi članici EU dostavio obavještenje u formi koji je odredila ta država
+   članica, kojom se potvrđuje da je ispunio obaveze izvještavanja prema pravilima bilo koje druge države članice
+   EU ili kvalifikovane jurisdikcije koja nije članica EU.
+(12) Izvještajni pružalac usluga povezanih sa kriptoimovinom ne podliježe obavezi izvještavanja i preduzimanja
+   mjera produbljene provjere u državi članici EU u odnosu na transakcije o kojima se izvještava, a koje sprovodi
+   preko svoje poslovne jedinice u bilo kojoj drugoj državi članici EU ili kvalifikovanoj jurisdikciji koja nije članica
+   EU, ako ta poslovna jedinica obavezu izvještavanja ispunjava u bilo kojoj drugoj državi članici EU ili
+   kvalifikovanoj jurisdikciji koja nije članica EU."
+   Dosadašnji stav 9 postaje stav 13.
+
+                                                         Član 8
+    Poslije člana 14h dodaju se tri nova člana koji glase:
+    "Izvještavanje o prethodnim poreskim mišljenjima sa prekograničnim uticajem i prethodnim sporazumima o
+transfernim cijenama
+    Član 14i
+(1) Prethodno poresko mišljenje sa prekograničnim uticajem je bilo koji sporazum, obavještenje ili drugi instrument
+    odnosno mjera sa sličnim efektima, uključujući i ono koje je izdato, izmijenjeno ili obnovljeno u toku
+    inspekcijskog nadzora, ako ispunjava sljedeće uslove:
+        - izdato je, izmijenjeno ili obnovljeno od strane Ministarstva finansija ili nadležnog poreskog organa, odnosno
+        poreskog organa jedinice lokalne samouprave, bez obzira na to da li se efektivno koristi;
+        - izdato je, izmijenjeno ili obnovljeno za određeno lice ili grupu lica, koji imaju pravo na njega da se pozovu;
+        - odnosi se na tumačenje ili primjenu zakonske ili administrativne odredbe u vezi primjene ili sprovođenja
+        nacionalnih poreskih propisa;
+        - odnosi se na prekograničnu transakciju ili na pitanje da li se obavljanjem djelatnosti lica u drugoj jurisdikciji
+        osniva stalna poslovna jedinica ili na pitanje da li je fizičko lice rezident za potrebe oporezivanja u Crnoj Gori;
+        i
+        - donosi se prije transakcije ili obavljanja djelatnosti u drugoj jurisdikciji koje bi se mogle smatrati osnivanjem
+        stalne poslovne jedinice ili prije podnošenja poreske prijave za period u kojem su transakcija, niz transakcija ili
+        djelatnosti obavljene;
+(2) Prekogranična transakcija, u skladu sa stavom 1 ovog člana, je transakcija ili niz transakcija u kojim:
+        - jedan ili više učesnika u transakciji ili nizu transakcija nijesu rezidenti za potrebe oporezivanja u državi
+        članici koja izdaje, mijenja ili obnavlja prethodno poresko mišljenje s prekograničnim uticajem;
+        - jedan ili više učesnika u transakciji ili nizu transakcija istovremeno su rezidenti za potrebe oporezivanja u više
+        jurisdikcija;
+        - jedan od učesnika u transakciji ili nizu transakcija obavlja djelatnost u drugoj jurisdikciji preko stalne
+        poslovne jedinice, a ta transakcija ili niz transakcija je dio poslovanja ili cjelokupno poslovanje stalne poslovne
+        jedinice;
+        - takva transakcija ili niz transakcija imaju prekogranični uticaj;
+(3) Prekogranična transakcija ili niz transakcija obuhvata i sporazume koje jedno lice zaključuje tokom obavljanja
+    djelatnosti u drugoj jurisdikciji preko stalne poslovne jedinice.
+(4) Prekograničnom transakcijom, u skladu sa ovim članom, može se podrazumijevati, ali ne isključivo, ulaganje,
+    isporuka robe, usluga, finansiranje ili korišćenje materijalne ili nematerijalne imovine, ali ne mora direktno da
+    uključuje i lice kojem je prethodno poresko mišljenje sa prekograničnim uticajem dostavljeno.
+(5) Prethodni sporazum o transfernim cijenama je svaki sporazum, obavještenje ili drugi instrument odnosno mjera sa
+    sličnim efektima, uključujući i onaj koji je izdat, izmijenjen ili obnovljen u toku inspekcijskog nadzora, ako:
+        - je izdat, izmijenjen ili obnovljen od strane Ministarstva finansija ili nadležnog poreskog organa, odnosno
+        poreskog organa jedinice lokalne samouprave, bez obzira na to da li se efektivno koristi;
+        - je izdat, izmijenjen ili obnovljen za određeno lice ili grupu lica, koje ima pravo da se na njega pozove;
+        - utvrđuje prije prekograničnih transakcija između povezanih preduzeća odgovarajuću grupu kriterijuma za
+        utvrđivanje transfernih cijena za te transakcije ili utvđuje raspodjelu dobiti stalnoj poslovnoj jedinici;
+
+Pravni ekspert doo, Podgorica                                                                                           5
+                                                                                            Katalog propisa 2026
+(6) Prekogranična transakcija podrazumijeva transakciju ili niz transakcija u kojima učestvuju povezana preduzeća
+   koja nisu svi poreski rezidenti na području iste jurisdikcije ili transakcija ili niz transakcija koje imaju
+   prekogranični uticaj.
+(7) Preduzećem, iz stava 5 ovog člana smatra se svaki oblik vođenja poslovanja, a povezanim preduzećem smatra se
+   kada jedno preduzeće neposredno ili posredno učestvuje u upravljanju, kontroli ili kapitalu drugog preduzeća ili
+   ista lica neposredno ili posredno učestvuju u upravljanju, kontroli ili kapitalu preduzeća.
+(8) Transferne cijene, iz stava 5 ovog člana, su cijene po kojima preduzeće prenosi materijalnu ili nematerijalnu
+   imovinu ili pruža usluge povezanim preduzećima.
+(9) Poreski organ i nadležni organi država članica EU, automatskom razmjenom, međusobno razmjenjuju i
+   dostavljaju Evropskoj komisiji informacije o prethodnim poreskim mišljenjima sa prekograničnim uticajem koji
+   su izdati, izmijenjeni ili obnovljeni nakon 31. decembra 2016. godine, i informacije o prethodnim sporazumima o
+   transfernim cijenama koji su izdati, izmijenjeni ili obnovljeni nakon 31. decembra 2026. godine, u skladu sa
+   ograničenjima propisanim tač. 21 i 27 Uputstva kojim je uređen način razmjene informacija kojima raspolaže
+   poreski organ sa nadležnim organima drugih država.
+(10) Poreski organ Crne Gore i nadležni organi država članica EU, automatskom razmjenom, dostavljaju informacije
+   o prethodnim poreskim mišljenjima sa prekograničnim uticajem i prethodnim sporazumima o transfernim
+   cijenama koja su izdata, izmijenjena ili obnovljena u periodu od pet godina prije 1. januara 2017. godine, i te
+   informacije dostavljaju Evropskoj komisiji.
+(11) Ako su prethodna poreska mišljenja sa prekograničnim uticajem i prethodni sporazumi o transfernim cijenama
+   izdati, izmijenjeni ili obnovljeni u periodu od 1. januara 2012. godine do 31. decembra 2013. godine, informacije
+   se dostavljaju samo ako su ta mišljenja i sporazumi bila na snazi 1. januara 2014. godine.
+(12) Ako su prethodna poreska mišljenja s prekograničnim uticajem i prethodni sporazumi o transfernim cijenama
+   izdati, izmijenjeni ili obnovljeni u periodu od 1. januara 2014. godine do 31. decembra 2016. godine, informacije
+   se dostavljaju bez obzira da li su još na snazi.
+(13) Izuzetno od stava 9 ovog člana ne razmjenjuju se informacije o prethodnim poreskim mišljenjima sa
+   prekograničnim uticajem i prethodnim sporazumima o transfernim cijenama koji su izdati, izmijenjeni ili
+   obnovljeni prije 1. aprila 2016. godine određenoj osobi ili grupi osoba, isključujući one koje obavljaju uglavnom
+   finansijske ili investicione djelatnosti, kako je definisano članom 2 tačka 5 Direktive 2013/34/EU, sa godišnjim
+   neto prihodom grupe manjim od 40.000.000,00 eura (ili iznos jednake vrijednosti u nekoj drugoj valuti) u
+   fiskalnoj godini koja prethodi datumu izdavanja, izmjene ili obnove tih poreskih mišljenja sa prekograničnim
+   uticajem i prethodnih sporazuma o transfernim cijenama.
+(14) Odredba stava 9 ovog člana ne primjenjuje se kada se prethodno poresko mišljenje s prekograničnim uticajem
+   odnosi isključivo na poreska davanja fizičkog lica ili više njih, osim ako je to mišljenje izdato, izmijenjeno ili
+   obnovljeno nakon 1. januara 2026. godine i ako iznos transakcije ili niza transakcija prethodnog poreskog
+   mišljenja sa prekograničnim uticajem prelazi 1.500.000,00 eura (ili iznos jednake vrijednosti u bilo kojoj drugoj
+   valuti), ako se takav iznos navodi u prethodnom poreskom mišljenju sa prekograničnim uticajem, ili se istim
+   utvrđuje da li je lice rezident Crne Gore za potrebe oporezivanja.
+(15) Ako međunarodni poreski sporazum na osnovu kojeg je dogovoren prethodni sporazum o transfernim cijenama
+   ne dozvoljava njegovo otkrivanje trećim stranama, bilateralni ili multilateralni prethodni sporazumi o transfernim
+   cijenama sa trećim državama biće isključeni iz oblasti primjene automatske razmjene informacija u skladu sa
+   ovim članom, a ako takav međunarodni sporazum dozvoljava njegovo otkrivanje i nadležni organ treće države
+   daje odobrenje za objavljivanje informacija, takvi bilateralni ili multilateralni prethodni sporazumi o transfernim
+   cijenama će se razmjenjivati na osnovu spontane razmjene informacija.
+(16) Ako bi bilateralni ili multilateralni prethodni sporazumi o transfernim cijenama bili isključeni iz automatske
+   razmjene informacija jer ne dozvoljavaju njihovo otkrivanje trećim stranama, informacije koje se navode u
+   zahtjevu koji vodi do izdavanja takvih bilateralnih ili multilateralnih prethodnih sporazuma o transfernim
+   cijenama razmjenjuju se u skladu sa st. 10 i 11 ovog člana.
+(17) Poreski organ, odnosno nadležni organ bilo koje države članice EU može da zatraži dodatne informacije,
+   uključujući cijeli tekst prethodnog poreskog mišljenja sa prekograničnim uticajem ili prethodnog sporazuma o
+   transfernim cijenama i te informacije dostavi nadležnom organu druge države.
+(18) Bliži način izvještavanja o prethodnim poreskim mišljenjima sa prekograničnim uticajem i prethodnim
+   sporazumima o transfernim cijenama iz stava 9 ovog člana propisuje Ministarstvo.
+   Izvještavanje o prekograničnim aranžmanima radi razmjene informacija
+   Član 14j
+(1) Posrednik, u vezi prekograničnih aranžmana o kojim se izvještava, dostavlja poreskom organu sljedeće
+   informacije:
+Pravni ekspert doo, Podgorica                                                                                     6
+                                                                                               Katalog propisa 2026
+       - identifikaciju posrednika, osim posrednika izuzetih od obaveze izvještavanja zbog obaveze čuvanja
+       profesionalne tajne i relevantnih poreskih obveznika, uključujući njihovo ime, datum i mjesto rođenja (za
+       fizičko lice), rezidentnost za potrebe oporezivanja i PIB, a po potrebi i povezanih lica relevantnog poreskog
+       obveznika;
+       - pojedinosti o obilježjima koja ukazuju na potencijalni rizik od izbjegavanja plaćanja poreza, zbog kojih
+       nastaje obaveza izvještavanja o prekograničnim aranžmanima, u skladu sa propisima kojim se uređuju
+       obilježja prekograničnih aranžmana o kojima se izvještava, a koja ukazuju na potencijalni rizik od
+       izbjegavanja plaćanja poreza;
+       - kratak sadržaj prekograničnog aranžmana o kojem se izvještava, uključujući poziv na naziv pod kojim je
+       opšte poznat, ako postoji, te opis relevantnih aranžmana i sve druge informacije koje bi nadležnom organu
+       mogle pomoći u procjeni potencijalnog poreskog rizika, a da se pritom ne otkrije poslovna, industrijska ili
+       profesionalna tajna ili poslovni postupak, ili informacija čije bi otkrivanje bilo u suprotnosti s javnim
+       poretkom;
+       - datum preduzimanja prvog koraka u realizaciji prekograničnog aranžmana ili datum na koji će biti preduzet
+       prvi korak u realizaciji prekograničnog aranžmana;
+       - podatke o propisima na osnovu kojeg je sačinjen prekogranični aranžman o kojem se izvještava;
+       - vrijednost prekograničnog aranžmana o kojem se izvještava;
+       - podatak o državi članici EU relevantnog poreskog obveznika ili više njih i svim drugim državama članicama
+       EU na koje bi prekogranični aranžman mogao uticati;
+       - podatak o svim drugim licima u državi članici EU na koje bi prekogranični aranžman o kojem se izvještava
+       mogao uticati, uz naznaku država članica EU sa kojima je to lice povezano.
+(2) Obilježja iz stava 1 alineja 2 ovog člana koja ukazuju na potencijalni rizik od izbjegavanja plaćanja poreza
+   propisuje Ministarstvo.
+(3) Posrednik je dužan da informacije iz stava 1 ovog člana, za koje ima saznanje, posjeduje ih ili kontroliše, dostavi
+   poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU, druge države odnosno
+   teritorije države, na propisanom obrascu u elektronskom obliku, u roku od 30 dana od:
+       - dana nakon što je prekogranični aranžman o kojem se izvještava stavljen na raspolaganje radi njegove
+       realizacije, ili
+       - dana nakon što je prekogranični aranžman o kojem se izvještava spreman za realizaciju, ili
+       - momenta kada je napravljen prvi korak u realizaciji prekograničnog aranžmana o kojem se izvještava.
+(4) Izuzetno od stava 3 ovog člana posrednik koji se obavezao, direktno ili posredstvom drugih lica, na pružanje
+   podrške, pomoći ili savjeta u pogledu sačinjavanja, stavljanja na tržište, organizacije, stavljanja na raspolaganje
+   radi sprovođenja, ili upravljanja sprovođenjem prekograničnog aranžmana o kojem se izvještava, dužan je da
+   informacije iz stava 1 ovog člana dostavi poreskom organu, na propisanom obrascu u elektronskom obliku, u roku
+   od 30 dana od dana nakon što je, direktno ili posredstvom drugih lica, pružio podršku, pomoć ili savjet.
+(5) U odnosu na tržišne aranžmane, posrednik je dužan da, poreskom organu kvartalno dostavi, na propisanom
+   obrascu u elektronskom obliku, izvještaj sa ažuriranim informacijama iz stava 1 al. 1, 4, 7 i 8 ovog člana, a koje su
+   postale dostupne nakon podnošenja posljednjeg izvještaja.
+(6) Izvještaj iz stava 5 ovog člana podnosi se u roku od jednog mjeseca od završetka kvartala u kojem su informacije
+   postale dostupne.
+(7) Ako je posrednik dužan da informacije iz stava 1 ovog člana dostavi nadležnim organima više država, iste
+   dostavlja samo nadležnom poreskom organu Crne Gore, ako:
+       - je rezident Crne Gore za potrebe oporezivanja;
+       - ima stalnu poslovnu jedinicu u Crnoj Gori preko koje se pružaju usluge u vezi sa aranžmanom, a nije rezident
+       za potrebe oporezivanja u bilo kojoj drugoj državi;
+       - je osnovan ili uređen prema zakonima Crne Gore, a uslovi iz al. 1 i 2 ovog stava nijesu ispunjeni u nekoj
+       drugoj državi, ili
+       - je upisan u nadležni registar za pružanje pravnih, poreskih i savjetodavnih usluga u Crnoj Gori, a uslovi iz al.
+       1, 2 i 3 ovog stava nijesu ispunjeni u nekoj drugoj državi.
+(8) Ako u skladu sa stavom 7 ovog člana postoji obaveza izvještavanja u više država, posrednik se izuzima od
+   obaveze dostavljanja informacija poreskom organu Crne Gore ako ima dokaz da su iste informacije dostavljene
+   drugoj državi.
+
+
+
+Pravni ekspert doo, Podgorica                                                                                        7
+                                                                                             Katalog propisa 2026
+(9) Izuzetno od stava 1 ovog člana, posrednik nije dužan da poreskom organu dostavi informacije o prekograničnom
+   aranžmanu o kojem se izvještava ako bi se obavezom izvještavanja prekršila obaveza čuvanja profesionalne tajne,
+   u skladu sa propisima kojima se uređuje profesionalna tajna.
+(10) Ako se posrednik pozove na profesionalnu tajnu, obavezan je da u roku od tri dana obavijesti pisanim putem
+   svog klijenta, ako je taj klijent posrednik ili relevantni porezni obveznik, o njegovoj obavezi izvještavanja.
+(11) Posrednik ima pravo na izuzeće iz stava 9 ovog člana samo u onoj mjeri u kojoj posluje u skladu sa
+   ograničenjima iz propisa kojim se uređuje njegova djelatnost.
+(12) Ako nema posrednika ili ako je posrednik obavijestio relevantnog poreskog obveznika ili drugog posrednika o
+   njegovom izuzeću od obaveze dostavljanja informacija o prekograničnom aranžmanu o kojem se izvještava
+   obavezu izvještavanja ima drugi obaviješteni posrednik ili, ako nema takvog posrednika, relevantni poreski
+   obveznik.
+(13) Relevantni poreski obveznik koji ima obavezu izvještavanja dužan je da informacije iz stava 1 ovog člana
+   dostavi poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU, druge države
+   odnosno teritorije države, na propisanom obrascu u elektronskom obliku, u roku od 30 dana nakon što mu je
+   prekogranični aranžman o kojem se izvještava stavljen na raspolaganje radi njegove realizacije, ili nakon što je taj
+   aranžman spreman za realizaciju, ili nakon momenta kada je napravio prvi korak u njegovoj realizaciji, u
+   zavisnosti od toga koji je uslov nastupio ranije.
+(14) Ako je relevantni poreski obveznik dužan da informacije iz stava 1 ovog člana dostavi nadležnim organima više
+   država, te informacije dostavlja samo poreskom organu Crne Gore, ako:
+       - je rezident crne Gore za potrebe oporezivanja;
+       - ima stalnu poslovnu jedinicu u Crnoj Gori koja ostvaruje koristi od aranžmana, a nije rezident za potrebe
+       oporezivanja bilo koje druge države;
+       - ostvaruje dohodak ili dobit u Crnoj Gori, a nije rezident za potrebe oporezivanja i nema stalnu poslovnu
+       jedinicu u bilo kojoj drugoj državi; ili
+       - obavlja djelatnost u Crnoj Gori, a uslovi iz al. 1, 2 i 3 ovoga stava nisu ispunjeni u nekoj drugoj državi.
+(15) Izuzetno od stava 13 ovog člana, relevantni poreski obveznik nije dužan da poreskom organu Crne Gore dostavi
+   informacije o prekograničnom aranžmanu o kojem se izvještava ako može dokazati da su te informacije
+   dostavljene drugoj državi.
+(16) Ako postoji više posrednika, obavezu dostavljanja informacija o prekograničnom aranžmanu o kojem se
+   izvještava imaju svi posrednici koji učestvuju u istom prekograničnom aranžmanu o kojem se izvještava.
+(17) Izuzetno od stava 16 ovog člana posrednik nije dužan da poreskom organu dostavi informacije o
+   prekograničnom aranžmanu o kojem se izvještava samo ako ima dokaz da je te informacije već dostavio drugi
+   posrednik.
+(18) Ako obavezu izvještavanja ima relevantni poreski obveznik i ako postoji više od jednog relevantnog poreskog
+   obveznika, obavezu dostavljanja informacija o prekograničnom aranžmanu o kojem se izvještava ima onaj
+   relevantni poreski obveznik koji se nalazi prvi na sljedećem popisu:
+       - relevantni poreski obveznik koji je sa posrednikom dogovorio prekogranični aranžman o kojem se izvještava;
+       - relevantni poreski obveznik koji upravlja realizacijom aranžmana.
+(19) Izuzetno od stava 18 ovog člana relevantni poreski obveznik nije dužan da poreskom organu dostavi informacije
+   o prekograničnom aranžmanu o kojem se izvještava samo ako ima dokaz da je te informacije već dostavio drugi
+   relevantni poreski obveznik.
+(20) Svaki relevantni poreski obveznik dužan je da poreskom organu dostavi informacije o upotrebi aranžmana u
+   svakoj godini u kojoj ga je upotrebljavao, na propisanom obrascu u elektronskom obliku, u roku od tri mjeseca
+   nakon isteka godine u kojoj se aranžman upotrebljavao.
+(21) Povezanim licem u smislu ovog člana smatra se lice koje je povezano sa drugim licem na najmanje jedan od
+   sljedećih načina:
+       - učestvuje u upravljanju drugog lica tako što može ostvariti znatan uticaj na to drugo lice;
+       - ima kontrolu nad drugim licem na osnovu udjela glasačkih prava preko 25 %;
+       - učestvuje u kapitalu drugog lica na temelju prava vlasništva koje posredno ili premašuje 25% kapitala;
+       - ima pravo na najmanje 25% dobiti drugog lica.
+(22) Ako, u upravljanju, kontroli, kapitalu ili dobiti istog lica iz stava 21 al. 1 do 4 ovog člana učestvuju više od
+   jednog lica, sva ta lica smatraju se povezanim licima.
+
+
+Pravni ekspert doo, Podgorica                                                                                      8
+                                                                                                 Katalog propisa 2026
+(23) Ako ista lica iz stava 21 al. 1 do 4 ovog člana učestvuju u upravljanju, kontroli, kapitalu ili dobiti više lica sva ta
+   lica smatraju se povezanim licima.
+(24) Lice iz stava 21 ovog člana koje djeluje zajedno sa drugim licem u pogledu glasačkih prava u subjektu ili u
+   pogledu vlasništva kapitala subjekta ima udio u svim glasačkim pravima tog subjekta koje ima drugo lice odnosno
+   da ima udio u vlasništvu kapitala tog subjekta koji drži drugo lice.
+(25) Kada se radi o posrednim udjelima, ispunjenje zahtjeva iz stava 21 alineja 3 ovog člana utvrđuje se množenjem
+   stopa udjela po sukcesivnim redovima i smatra se da lice koje posjeduje više od 50% glasačkih prava posjeduje
+   100% tih prava.
+(26) U smislu stava 21 ovog člana, pojedinac, njegov bračni drug i njegov neposredni predak ili potomak smatraju se
+   jednim licem.
+(27) Bliži način izvještavanja o prekograničnim aranžmanima propisuje Ministarstvo.
+   Izvještavanje o dopunskom porezu radi razmjene informacija
+   Član 14k
+(1) Sastavni subjekat grupe međunarodnih preduzeća u Crnoj Gori ili imenovani domaći subjekat u ime sastavnog
+   subjekta podnosi poreskom organu prijavu sa informacijama o dopunskom porezu (u daljem tekstu: prijava), radi
+   razmjene informacija sa nadležnim organima države članice EU, druge države odnosno teritorije države, osim ako
+   je istu podnijelo krajnje matično preduzeće ili subjekat imenovan za podnošenje prijave koji se nalazi u
+   jurisdikciji koja sa Crnom Gorom ima potpisan sporazum između kvalifikovanih nadležnih organa.
+(2) Izuzetno od stava 1 ovog člana, ako se dva ili više sastavnih subjekata iste grupe međunarodnih preduzeća ili
+   velike domaće grupe nalaze u Crnoj Gori, prijavu podnosi imenovani domaći subjekat grupe međunarodnih
+   preduzeća ili velike domaće grupe koji se nalazi u Crnoj Gori, kojeg su drugi sastavni subjekti grupe
+   međunarodnih preduzeća ili velike domaće grupe imenovali za podnošenje prijave.
+(3) Prijava iz stava 1 ovog člana podnosi se poreskom organu na propisanom obrascu u elektronskom obliku,
+   najkasnije 18 mjeseci nakon isteka posljednjeg dana fiskalne godine, u skladu sa zakonom kojim se uređuje sistem
+   i plaćanje obaveza dopunskog poreza na dobit pravnih lica.
+(4) Poreski organ, vodi evidenciju o informacijama dobijenim na osnovu automatske razmjene prijave o dopunskom
+   porezu, i čuva ih onoliko koliko je potrebno, ali ne kraće od pet godina od datuma prijema.
+(5) Poreski organ, nakon prijema prijave iz stava 1 ovog člana, dostavlja posebne djelove prijave sa informacijama o
+   dopunskom porezu, nadležnim poreskim organima drugih država ili država koja primjenjuju samo domaći
+   dopunski porez.
+(6) Bliži način izvještavanja o dopunskom porezu iz stava 5 ovog člana propisuje Ministarstvo."
+
+                                                         Član 9
+   U članu 15 poslije stava 4 dodaje se novi stav koji glasi:
+"(5) Izuzetno od stava 3 ovog člana, za potrebe razmjene informacija o unaprijed dogovorenim cjenovnim
+   aranžmanima i prekograničnim transakcijama, fizičko lice ne smatra se povezanim licem."
+
+                                                         Član 10
+    U članu 16 poslije stava 5 dodaju se četiri nova stava koja glase:
+"(6) Podaci koji se razmjenjuju a predstavljaju poresku tajnu mogu se upotrijebiti za procjenu, primjenu i
+    sprovođenje nacionalnog zakonodavstva Crne Gore, država članica EU i drugih država o porezima, carinama,
+    doprinosima za socijalno osiguranje, sprječavanju pranja novca i borbi protiv finansiranja terorizma, za
+    utvrđivanje i prinudnu naplatu prilikom pružanja pomoći nadležnom organu države članice EU ili druge države u
+    naplati poreskih potraživanja, kao i za naplatu kazni iz sudskih i upravnih postupaka zbog kršenja poreskih
+    propisa.
+(7) Podaci iz stava 6 ovog člana se mogu koristiti u vezi sa sudskim i upravnim postupcima koji mogu uključivati
+    kazne, pokrenutim kao rezultat kršenja poreskog zakonodavstva, bez prejudiciranja opštih pravila i odredbi koje
+    regulišu prava optuženih i svjedoka u takvim postupcima.
+(8) Podaci koji predstavljaju poresku tajnu mogu se razmjenjivati i u druge svrhe osim onih navedenih u stavu 6 ovog
+    člana, uz saglasnost nadležnog organa države članice EU ili druge države i samo ako je to u skladu sa
+    zakonodavstvom države nadležnog organa koji prima te informacije i države nadležnog organa koje je te
+    informacije dostavilo i ako se te informacije mogu upotrijebiti u slične svrhe u državi nadležnog organa koji je
+    dostavio te informacije.
+(9) Poreski organ Crne Gore ili nadležni poreski organ druge države može nadležnim organima drugih država
+    dostaviti popis svrha, pored onih navedenih u stavu 6 ovog člana, u kojim se informacije i dokumenti koji
+Pravni ekspert doo, Podgorica                                                                                           9
+                                                                                                Katalog propisa 2026
+   predstavljaju poresku tajnu mogu upotrebljavati, u skladu sa nacionalnim zakonodavstvom, a nadležni poreski
+   organ države koji prima te informacije iste može upotrijebiti u bilo koju svrhu sa tog popisa, bez saglasnosti
+   nadležnog organa koji je dostavio te informacije."
+   Dosadašnji stav 6 postaje stav 10.
+
+                                                        Član 11
+   Član 16b mijenja se i glasi:
+"(1) Poreski organ dostavlja informacije koje posjeduje ili su dostupne, u zavisnosti od slučaja, nadležnom organu
+   države članice EU, ili druge države odnosno teritorije države, u skladu sa ovim zakonom i potvrđenim
+   međunarodnim sporazumom:
+       1) na zahtjev tog organa;
+       2) automatskom razmjenom o:
+                  a) ostvarenim prihodima rezidenata države članice EU ili druge države odnosno teritorije države po
+              osnovu određenih vrsta dohotka i kapitala, najmanje jednom godišnje, u roku od šest mjeseci nakon
+              isteka poreskog perioda tokom kojeg su informacije postale dostupne;
+                  b) računima rezidenata države članice EU ili druge države odnosno teritorije države do 30. septembra
+              tekuće za prethodnu godinu;
+                  c) poslovanju svakog člana međunarodne grupe povezanih pravnih lica, prema državi članici EU ili
+              drugoj državi odnosno teritoriji države, u roku od 15 mjeseci od isteka godine za koju se izvještaj
+              podnosi;
+                  d) korisnicima platforme, odnosno o prodaji i iznajmljivanju nepokretnosti i parking mjesta, prodaji
+              proizvoda i pružanju ličnih usluga i iznajmljivanju bilo koje vrste prevoza, o ukupno plaćenim
+              naknadama i broj relevantnih aktivnosti u vezi kojih je ta naknada naplaćena, o porezima, naknadama ili
+              provizijama koje je operater platforme obustavio ili naplatio korisnicima platforme, u roku od dva
+              mjeseca od isteka perioda o kojem se izvještava;
+                  e) ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine u roku od devet mjeseci od
+              isteka kalendarske godine za koju se izvještaj podnosi;
+                  f) prethodnim poreskim mišljenjima sa prekograničnim uticajem i prethodnim sporazumima o
+              transfernim cijenama, odmah nakon što su ista izdata, izmijenjena ili obnovljena, a najkasnije u roku od
+              tri mjeseca nakon završetka polovine kalendarske godine u kojoj su ta mišljenja odnosno sporazumi
+              izdati, izmijenjeni ili obnovljeni;
+                  g) prekograničnim aranžmanima o kojim se izvještava iz člana 14j stav 1 ovog zakona, u roku od
+              mjesec dana nakon završetka tromjesečja u kojem su te informacije bile podnesene;
+                  h) dopunskom porezu sastavnog subjekta grupe međunarodnih preduzeća ili velike domaće grupe, u
+              roku od tri mjeseca nakon isteka roka za podnošenje prijave sa informacijama o dopunskom porezu za tu
+              izvještajnu fiskalnu godinu;
+       3) ako dođe do saznanja da informacije mogu biti od koristi za nadležni organ druge države, odnosno teritorije
+       države u bilo kom trenutku i bez prethodnog zahtjeva.
+(2) Ako poreski organ smatra da informacije koje je dobio od nadležnog organa država iz stava 1 ovog člana mogu
+   biti korisne nadležnom organu treće države i ako se ta treća država obavezala da će pružiti saradnju potrebnu za
+   prikupljanje dokaza o nepravilnosti ili nezakonitosti transakcija za koje se smatra da su u suprotnosti sa poreskim
+   propisima ili predstavljaju zloupotrebu istih, te informacije može da proslijedi tom organu u skladu sa pravilima i
+   procedurama propisanim Direktivom 2011/16, ali samo uz prethodnu saglasnost nadležnog organa države ili
+   teritorije države iz koje potiču informacije i ako taj organ ne uloži prigovor takvoj razmjeni informacija u roku od
+   15 kalendarskih dana od prijema obavještenja.
+(3) Izuzetno od stava 2 ovog člana, poreski organ može informacije i dokumenta dobijena od nadležnog organa
+   države članice EU upotrebljavati i bez njenog odobrenja u bilo koju svrhu obuhvaćenu aktom o restriktivnim
+   mjerama na osnovu Ugovora o funkcionisanju Evropske unije i iste u tu svrhu razmijenjivati sa nadležnim
+   organom druge države članice EU na koju se restriktivne mjere odnose.
+(4) Informacije, izvještaji, izjave i svi drugi dokumenti ili njihove ovjerene kopije ili izvatci, koje je pribavio poreski
+   organ koji prima zahtjev i koji su dostavljeni poreskom organu koji je podnio zahtjev, nadležni organi u državi
+   podnosioca zahtjeva mogu koristiti kao dokazni materijal na istoj osnovi kao i slični dokumenti izdati od
+   nadležnih organa u toj državi.
+(5) Izuzetno od odredaba člana 16 st. 6, 7 i 8 ovog zakona i stava 2 ovog člana, informacije koje se razmjenjuju na
+   osnovu izvještaja po državama koriste se za potrebe procjene rizika transfernih cijena visokog stepena i ostale
+Pravni ekspert doo, Podgorica                                                                                         10
+                                                                                            Katalog propisa 2026
+   rizike povezane sa smanjenjem poreske osnovice i premještanjem dobiti, između ostalog i za procjenu rizika
+   neusklađenosti članova međunarodne grupe povezanih pravnih lica u odnosu na pravila o transfernim cijenama za
+   potrebe za ekonomske i statističke analize.
+(6) Informacije koje se razmjenjuju na osnovu izvještaja po državama mogu se koristiti i kao osnov za dalje istrage u
+   odnosu na sporazume o transfernim cijenama međunarodne grupe povezanih pravnih lica ili u odnosu na druga
+   poreska pitanja tokom inspekcijskog nadzora na osnovu kojih se može izvršiti odgovarajuće prilagođavanje
+   oporezive dobiti sastavnog subjekta.
+(7) Za potrebe razmjene informacija na zahtjev nadležnog organa država iz stava 1 ovog člana, tražene informacije
+   smatraju se predvidljivo relevantnim ako u trenutku podnošenja zahtjeva nadležni organ koji podnosi zahtjev
+   smatra da, u skladu sa njegovim nacionalnim zakonodavstvom, postoji razumna mogućnost da će tražene
+   informacije biti relevantne za poreska pitanja jednog ili više poreskih obveznika, nezavisno od toga da li su
+   identifikovani imenom ili na neki drugi način, i biti opravdane za preduzimanje određenih upravnih radnji.
+(8) Za potrebe dokazivanja predvidljive relevantnosti traženih informacija nadležni organ koji podnosi zahtjev,
+   dostavlja poreskom organu najmanje sljedeće informacije:
+       1) poreska svrha za koju se traže informacije;
+       2) identitet lica koji je predmet ispitivanja ili istrage;
+       3) specifikacija informacija potrebnih za primjenu nacionalnog zakonodavstva.
+(9) Ako se zahtjev za dostavljanje informacija odnosi na grupu poreskih obveznika koji ne mogu pojedinačno da se
+   identifikuju, organ koji podnosi zahtjev dostavlja poreskom organu najmanje sljedeće informacije:
+       1) detaljni opis grupe;
+       2) objašnjenje zakonodavstva i činjenica na osnovu kojih se može smatrati da poslovanje poreskih obveznika
+       članova grupe nije usklađeno sa važećim zakonodavstvom;
+       3) objašnjenje načina na koji bi tražene informacije bile od pomoći prilikom utvrđivanja usklađenosti
+       poslovanja poreskih obveznika članova grupe; i
+       4) prema potrebi, činjenice i okolnosti povezane sa uključenošću treće strane koja je aktivno doprinijela
+       mogućoj neusklađenosti poslovanja poreskih obveznika članova grupe sa zakonom.
+(10) Poreski organ dostavlja informacije, nadležnom organu države članice EU ili druge države odnosno teritorije
+   države, pod uslovom da je taj organ iskoristio sve raspoložive izvore informacija vodeći računa o ostvarivanju
+   sopstvenih ciljeva.
+(11) Poreski organ ne može da odbije da pribavi informacije isključivo zato što te informacije nijesu od nacionalnog
+   interesa, niti da odbije da dostavi informacije nadležnom organu države članice EU ili druge države odnosno
+   teritorije države, samo zato što te informacije posjeduje banka, druga finansijska institucija, ovlašćeno lice,
+   zastupnik ili fiducijar ili zato što se te informacije odnose na vlasničke interese fizičkog lica.
+(12) Poreski organ može da preduzima istražne radnje ili da dostavlja informacije koje zahtijeva nadležni organ
+   države članice EU ili druge države odnosno teritorije države, ako je preduzimanje takvih istražnih radnji ili
+   prikupljanje tih informacija u skladu sa zakonom.
+(13) Ako poreski organ smatra da nije potrebno preduzimati nikakvu istražnu radnju, odmah će obavijestiti organ koji
+   je podnio zahtjev o razlozima za takvu odluku.
+(14) Poreski organ može da odbije da dostavi informacije nadležnom organu države članice EU ili druge države
+   odnosno teritorije države ako bi to dovelo do objelodanjivanja komercijalne, industrijske ili poslovne tajne ili
+   komercijalnog postupka ili ako je otkrivanje tih informacija u suprotnosti sa javnim interesom i ako država koja
+   dostavlja zahtjev, nije u mogućnosti, iz pravnih razloga, da osigura slične informacije.
+(15) Poreski organ obavještava nadležni organ države članice EU ili druge države odnosno teritorije države o
+   razlozima za odbijanje zahtjeva za dostavljanje informacija.
+(16) Poreski organ čuva evidenciju o informacijama koje je primio automatskom razmjenom najmanje onoliko
+   koliko je potrebno ali ne kraće od pet godina od datuma njihovog prijema.
+(17) Bliži način razmjene informacija iz stava 1 ovog člana propisuje Ministarstvo."
+
+                                                     Član 12
+   U članu 16c poslije stava 1 dodaje se novi stav koji glasi:
+"(2) Poreski organ ili nadležni organ druge države koji podnosi zahtjev može, ako mu je to poznato i ako je u skladu
+   sa međunarodnim razvojem, da osigura svako lice za koje se vjeruje da posjeduje tražene informacije kao i svaki
+   podatak koji organu koji prima zahtjev može olakšati prikupljanje informacija."
+
+
+Pravni ekspert doo, Podgorica                                                                                   11
+                                                                                              Katalog propisa 2026
+                                                       Član 13
+    U članu 16d poslije stava 4 dodaju se dva nova stava koji glase:
+"(5) Poreski organ će obezbijediti da se svako fizičko lice o kojem se izvještava obavijesti o povredi sigurnosti s
+    obzirom na njegove podatke kada je vjerovatno da će ta povreda negativno uticati na zaštitu njegovih ličnih
+    podataka ili privatnost.
+(6) Podaci koje obrađuju rukovaoci zbirke podataka iz stava 1 ovog člana čuvaju se koliko je potrebno, ali ne duže od
+    rokova propisanim pravilima o zastari koja se primjenjuju na pojedinačnog obrađivača podataka u skladu sa
+    zakonom."
+
+                                                       Član 14
+    Član 16g mijenja se i glasi:
+"(1) Poreski organ i nadležni organ jedne ili više država članica EU, druge države odnosno teritorije države, mogu na
+    osnovu zajedničkog dogovora, da vrše uporedni nadzor na svojoj teritoriji, ili zajednički nadzor kod jednog ili više
+    fizičkih, odnosno pravnih lica, radi dobijanja informacija koja su od zajedničkog ili komplementarnog interesa za
+    te države.
+(2) Poreski organ, odnosno nadležni organ druge države, samostalno će identifikovati lica za koja namjerava da
+    predloži uporedni nadzor i obavjestiti nadležni organ druge zainteresovane države o svim slučajevima za koje se
+    predlaže uporedni nadzor, navodeći razloge svog izbora.
+(3) Poreski organ i nadležni organ druge države određuju vremenski period tokom kojeg će ti nadzori biti sprovedeni.
+(4) Poreski organ obavještava nadležni organ druge države o prihvatanju ili odbijanju iz opravdanih razloga
+    prijedloga za učešće u vršenju nadzora iz stava 1 ovog člana u roku od 60 dana od dana prijema istog.
+(5) Poreski organ imenuje predstavnika koji je odgovoran za nadzor i koordinaciju sprovođenja nadzora iz stava 1
+    ovog člana.
+(6) Zajednički nadzor se sprovodi u skladu sa zakonima i procedurama države u kojoj se nadzor sprovodi.
+(7) Prava i obaveze službenika poreskog organa Crne Gore i službenika nadležnog organa države članice EU ili druge
+    države koji učestvuju u zajedničkom nadzoru utvrđuju se u skladu sa zakonima države u kojoj se vrši zajednički
+    nadzor.
+(8) Izuzetno od odredaba st. 1 do 5 ovog člana, nadležni poreski organ države u kojoj se vrši zajednički nadzor
+    preduzima potrebne mjere da bi:
+        1) omogućio službenicima druge države koji vrše zajednički nadzor da obavljaju razgovor sa pojedinim licima
+        i pregledaju evidenciju zajedno sa službenicima nadležnog organa države u kojoj se vrši zajednički nadzor;
+        2) osigurao da se dokazi prikupljeni tokom vršenja zajedničkog nadzora mogu procijeniti i u pogledu
+        dopuštenosti pod istim uslovima kao i u slučajevima nadzora u državi kada nadzor vrše samo službenici
+        nadležnog organa te države, između ostalog i tokom postupka rješavanja po podnijetom prigovoru ili žalbi;
+        3) osigurao da jedno ili više lica koji su predmet zajedničkog nadzora imaju ista prava i obaveze kao i slučaju
+        kada nadzor vrše samo službenici nadležnog organa države u kojoj se sprovodi nadzor, između ostalog i tokom
+        postupka rješavanja po podnijetom prigovoru ili žalbi.
+(9) Na osnovu rezultata zajedničkog nadzora nadležni organi država koji učestvuju u nadzoru će zauzeti stav o
+    poreskom statusu lica koje je predmet nadzora i sačiniti Izvještaj o izvršenom zajedničkom nadzoru koji sadrži
+    pitanja o kojim su nadležni organi postigli saglasnost i uzeta su u obzir u relevantnim instrumentima koje izdaju
+    nadležni poreski organi država koji su učestvovali u zajedničkom nadzoru.
+(10) U skladu sa stavom 9 ovog člana postupci nadležnih poreskih organa Crne Gore i država članica EU ili drugih
+    država ili bilo kojeg njihovog službenika nakon zajedničkog nadzora i bilo kojih daljih procesa koji se odvijaju u
+    Crnoj Gori ili drugoj državi, kao što su odluka poreskih organa, postupak žalbe ili poravnanja u vezi s tim,
+    odvijaće se u skladu sa nacionalnim zakonodavstvom države u kojoj je izvršen zajednički nadzor.
+(11) Nadležni poreski organ države u kojoj je izvršen zajednički nadzor obavještava lice nad kojim je nadzor izvršen
+    o ishodu zajedničkog nadzora i dostavlja mu Izvještaj o izvršenom zajedničkom nadzoru u roku od 60 dana od
+    njegovog sačinjavanja."
+
+                                                       Član 15
+   U članu 16h stav 1 tačka 2 riječi: "upravnih istraga" zamjenjuju se riječima: "administrativnih provjera".
+   U tački 3 riječi: "sudskog postupka" zamjenjuju se riječima: "postupka administrativnih provjera".
+   U stavu 2 riječ "nadzora" zamjenjuje se riječima: "administrativnih provjera".
+   Poslije stava 2 dodaju se dva nova stava koji glase:
+Pravni ekspert doo, Podgorica                                                                                      12
+                                                                                            Katalog propisa 2026
+"(3) Ako su ovlašćeni službenici nadležnog organa koji podnosi zahtjev prisutni tokom vršenja administrativnih
+   provjera ili u njima učestvuju pomoću elektronskih sredstava komunikacije, mogu da obavljaju razgovor sa licima
+   i izvrše pregled evidencija u skladu sa pravilima i postupcima propisanim zakonom.
+(4) Svako odbijanje lica, koje je pod administrativnom provjerom, da poštuje inspekcijske mjere službenika organa
+   koji podnosi zahtjev, poreski organ će tretirati kao odbijanje preduzimanja mjera od strane sopstvenih
+   službenika."
+   Dosadašnji stav 3 postaje stav 5.
+
+                                                      Član 16
+   U članu 16i stav 1 riječi: "člana 16d" zamjenjuju se riječima: "člana 16f".
+   Poslije stava 1 dodaje se novi stav koji glasi:
+"(2) Ako su tražene informacije sadržane u dokumentaciji kojoj službenici nadležnog organa koji prima zahtjev
+   imaju pristup, obezbjeđuju se kopije tih dokumenata službenicima nadležnog organa koji podnosi zahtjev."
+
+                                                      Član 17
+   U članu 22c poslije stava 3 dodaje se novi stav koji glasi:
+"(4) U zahtjevima za dostavljanje obavještenja navodi se predmet instrumenta ili odluke o kojoj se poreski obveznik
+   mora obavijestiti, ime i adresa poreskog obveznika, zajedno sa svim drugim informacijama koje mogu biti od
+   pomoći za identifikovanje poreskog obveznika."
+   Dosadašnji stav 4 postaje stav 5.
+
+                                                      Član 18
+    U članu 70 poslije stava 5 dodaju se tri nova stava koji glase:
+"(6) Poreski organ, u slučaju neuspjelog postupka prodaje zaplijenjene nepokretne imovine putem javnog nadmetanja
+    i neposredne pogodbe, donosi rješenje kojim se zaplijenjena nepokretnost prenosi u svojinu države Crne Gore, a
+    poreski dug umanjuje za iznos od jedne trećine utvrđene početne vrijednosti nepokretnosti.
+(7) Kada ostvareni iznos od prodaje zaplijenjene imovine prelazi ukupni iznos poreskog potraživanja obezbijeđenog
+    hipotekom, radi kojeg je postupak pokrenut i ostalih potraživanja drugih lica koja imaju pravo na namirenje,
+    poreski organ je dužan da taj iznos vrati poreskom obvezniku u roku od 30 dana od dana donošenja rješenja o
+    raspoređivanju i prenosu sredstava od prodaje nepokretnosti, samo ako poreski obveznik nema drugih dospjelih a
+    neizmirenih poreskih potraživanja.
+(8) Ako poreski organ ne vrati poreskom obvezniku iznos sredstava koji je ostao nakon izmirenja svih potraživanja, u
+    roku iz stava 7 ovog člana, poreski obveznik ima pravo na kamatu po stopi iz člana 95 ovog zakona."
+    Poslije stava 6 dodaje se novi stav koji glasi:
+"(10) Ako na zaplijenjenoj nepokretnoj imovini postoje prava trećih lica koja se namiruju iz kupoprodajne cijene,
+    sredstva ostvarena od prodaje te imovine raspoređuju se prema sljedećem redosljedu:
+       1) potraživanja obezbijeđena založnim pravom;
+       2) potraživanja naknade za lične službenosti i stvarne terete koji se prodajom gase;
+       3) potraživanja izvršnih povjerilaca."
+    Dosadašnji st. 6 i 7 postaju st. 9 i 11.
+
+                                                      Član 19
+    U članu 74 stav 5 na kraju alineje 4 tačka se zamjenjuje tačka-zarezom i dodaju dvije nove alineje koje glase:
+    "- izvještavanje o prekograničnim aranžmanima radi razmjene informacija, u skladu sa zakonom;
+- izvještavanje o dopunskom porezu radi razmjene informacija, u skladu sa zakonom."
+
+                                                      Član 20
+   U članu 95 u stavu 1 poslije riječi: "plaća se" dodaje se riječ "zatezna" a riječi: "po stopi od 0,03%" brišu se.
+   Poslije stava 1 dodaju se četiri nova stava koja glase:
+"(2) Stopa zatezne kamate iz stava 1 ovog člana utvrđuje se u visini osnovne stope zatezne kamate uvećane za tri
+   procentna poena.
+(3) Osnovna stopa zatezne kamate je kamatna stopa koju utvrđuje Evropska centralna banka za glavne operacije
+   refinansiranja i koja važi prvog dana kalendarskog polugodišta na koje se odnosi.
+
+Pravni ekspert doo, Podgorica                                                                                   13
+                                                                                            Katalog propisa 2026
+(4) Stopa zatezne kamate utvrđuje se polugodišnje, za polugodišta od 1. januara do 30. juna i od 1. jula do 31.
+   decembra, a obračunava se godišnje.
+(5) Visinu kamatne stope, u skladu sa st. 2 i 3 ovog člana, utvrđuje poreski organ i objavljuje na svojoj internet
+   stranici prvog radnog dana polugodišta na koje se odnosi, kao i u "Službenom listu Crne Gore"."
+   Dosadašnji st. 2 i 3 postaju st. 6 i 7.
+
+                                                     Član 21
+   Član 96 mijenja se i glasi:
+"(1) Na iznos više plaćenog poreza poreski obveznik ima pravo na kamatu po stopi koja se utvrđuje u skladu sa
+   članom 95 ovog zakona.
+(2) Kamata se obračunava u roku od 30 dana od dana prijema zahtjeva za povraćaj više plaćenog poreza.
+(3) Ako je osnov za povraćaj poreza poništeno, izmijenjeno ili ukinuto rješenje ili drugi akt o zaduženju, kamata se
+   obračunava u roku od 30 dana od dana donošenja tog akta."
+
+                                                     Član 22
+   U članu 103 stav 3 mijenja se i glasi:
+"(3) Izuzetno od stava 1 ovog člana, pravo na utvrđivanje i naplatu poreza ne zastarijeva za potraživanja po osnovu
+   doprinosa za penzijsko i invalidsko osiguranje i potraživanja koja su obezbijeđena zalogom ili hipotekom, osim u
+   dijelu naplate kamate i drugih novčanih davanja."
+
+                                                     Član 23
+   U članu 105 stav 1 riječi: "od 1.000 eura do 15.000 eura" zamjenjuju se riječima: "od 4.000 eura do 40.000 eura".
+   U tač. 7, 14 i 21 riječi "najmanje" zamjenjuju se riječima: "koliko je potrebno, ali ne manje od".
+   Tačka 10 mijenja se i glasi:
+"10) ne dostavi poreskom organu, pored podataka iz člana 14f stav 1 ovog zakona i podatke o identifikaciji svakog
+   člana međunarodne grupe utvrđujući državu, odnosno teritoriju države rezidentnosti i državu, odnosno teritoriju
+   države u kojoj je na osnovu zakona taj član međunarodne grupe osnovan, ako se razlikuje od države, odnosno
+   teritorije države rezidentnosti, kao i vrstama djelatnosti koje obavlja (član 14f stav 2);"
+   U tački 12 riječi: "korisnicima platforme" zamjenjuju se riječju "prodavcima".
+   U tački 16 riječi: "korisnik platforme" zamjenjuju se riječju "prodavac".
+   U tački 24 riječi: "član 14g" zamjenjuju se riječima: "član 14h".
+   Poslije tačke 25 dodaje se sedam novih tačaka koje glase:
+"26) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, radi razmjene informacija sa
+   nadležnim organima države članice EU, druge države odnosno teritorije države, na propisanom obrascu u
+   elektronskom obliku u roku od 30 dana od: dana nakon što je prekogranični aranžman o kojem se izvještava
+   stavljen na raspolaganje radi njegove realizacije, ili dana nakon što je prekogranični aranžman o kojem se
+   izvještava spreman za realizaciju, ili momenta kada je napravljen prvi korak u realizaciji prekograničnog
+   aranžmana o kojem se izvještava (član 14j stav 3);
+27) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, na propisanom obrascu u elektronskom
+   obliku u roku od 30 dana od nakon što je, direktno ili posredstvom drugih lica, pružio podršku, pomoć ili savjet
+   (član 14j stav 4);
+28) ne dostavi poreskom organu u odnosu na tržišne aranžmane, kvartalno, na propisanom obrascu u elektronskom
+   obliku, izvještaj sa ažuriranim informacijama iz člana 14j stav 1 al. 1, 4, 7 i 8 ovog zakona, koje su postale
+   dostupne nakon podnošenja posljednjeg izvještaja (član 14j stav 5);
+29) ne obavijesti u roku od tri dana pisanim putem svog klijenta, ako je taj klijent posrednik ili relevantni poreski
+   obveznik, o njegovoj obavezi izvještavanja (član 14j stav 10);
+30) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, radi razmjene informacija sa nadležnim
+   organima države članice EU, druge države odnosno teritorije države na propisanom obrascu u elektronskom
+   obliku, u roku od 30 dana nakon što mu je prekogranični aranžman o kojem se izvještava stavljen na raspolaganje
+   radi njegove realizacije, ili nakon što je taj aranžman spreman za realizaciju, ili nakon momenta kada je napravio
+   prvi korak u njegovoj realizaciji, u zavisnosti od toga koji je uslov nastupio ranije (član 14j stav 13);
+31) ne dostavi poreskom organu informacije o upotrebi aranžmana u svakoj godini u kojoj ga je upotrebljavao, na
+   propisanom obrascu u elektronskom obliku, u roku od tri mjeseca nakon isteka godine u kojoj se aranžman
+   upotrebljavao (član 14j stav 20);
+
+Pravni ekspert doo, Podgorica                                                                                   14
+                                                                                            Katalog propisa 2026
+32) ne podnese poreskom organu prijavu iz člana 14k stav 1 ovog zakona, na propisanom obrascu u elektronskom
+   obliku, najkasnije 18 mjeseci nakon isteka poslednjeg dana fiskalne godine, u skladu sa zakonom kojim se uređuje
+   sistem i plaćanje obaveza dopunskog poreza na dobit pravnog lica (član 14k stav 3)."
+   Dosadašnje tač. 26 do 30 postaju tač. 33 do 37.
+   U stavu 2 riječi: "od 100 eura do 1.000 eura" zamjenjuju se riječima: "od 400 eura do 4.000 eura".
+
+                                                     Član 24
+   U članu 105a stav 1 riječi: "od 500 eura do 6.000 eura" zamjenjuju se riječima: "od 1.000 eura do 12.000 eura".
+   U tački 9 riječ "najmanje" zamjenjuje se riječima: "koliko je potrebno, ali ne manje od".
+   Poslije tačke 13 dodaje se šest novih tačaka koje glase:
+"14) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, radi razmjene informacija sa
+   nadležnim organima države članice EU, druge države odnosno teritorije države, na propisanom obrascu u
+   elektronskom obliku u roku od 30 dana od: dana nakon što je prekogranični aranžman o kojem se izvještava
+   stavljen na raspolaganje radi njegove realizacije, ili dana nakon što je prekogranični aranžman o kojem se
+   izvještava spreman za realizaciju, ili momenta kada je napravljen prvi korak u realizaciji prekograničnog
+   aranžmana o kojem se izvještava (član 14j stav 3);
+15) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, na propisanom obrascu u elektronskom
+   obliku u roku od 30 dana od nakon što je, direktno ili posredstvom drugih lica, pružio podršku, pomoć ili savjet
+   (član 14j stav 4);
+16) ne dostavi poreskom organu u odnosu na tržišne aranžmane, kvartalno na propisanom obrascu u elektronskom
+   obliku, izvještaj sa ažuriranim informacijama iz člana 14j stav 1 al. 1, 4, 7 i 8 ovog zakona, koje su postale
+   dostupne nakon podnošenja posljednjeg izvještaja (član 14j stav 5);
+17) ne obavijesti u roku od tri dana pisanim putem svog klijenta, ako je taj klijent posrednik ili relevantni poreski
+   obveznik, o njegovoj obavezi izvještavanja (član 14j stav 10);
+18) ne dostavi poreskom organu informacije iz člana 14j stav 1 ovog zakona, radi razmjene informacija sa nadležnim
+   organima države članice EU, druge države odnosno teritorije države na propisanom obrascu u elektronskom
+   obliku, u roku od 30 dana nakon što mu je prekogranični aranžman o kojem se izvještava stavljen na raspolaganje
+   radi njegove realizacije, ili nakon što je taj aranžman spreman za realizaciju, ili nakon momenta kada je napravio
+   prvi korak u njegovoj realizaciji, u zavisnosti od toga koji je uslov nastupio ranije (član 14j stav 13);
+19) ne dostavi poreskom organu informacije o upotrebi aranžmana u svakoj godini u kojoj ga je upotrebljavao, na
+   propisanom obrascu u elektronskom obliku, u roku od tri mjeseca nakon isteka godine u kojoj se aranžman
+   upotrebljavao (član 14j stav 20).
+   U stavu 2 riječi: "od 100 eura do 1.000 eura" zamjenjuju se riječima: "od 200 eura do 4.000 eura".
+
+                                                     Član 25
+    U članu 112a stav 1 riječi: "u roku od šest mjeseci od dana stupanja na snagu ovog zakona" zamjenjuju se
+riječima: "do 31. decembra 2026. godine".
+
+                                                     Član 26
+   Ovaj zakon stupa na snagu narednog dana od dana objavljivanja u "Službenom listu Crne Gore".
+                                                  Broj: 16-5/26-2/4
+                                                 EPA 1063 XXVIII
+                                            Podgorica, 9. jul 2026. godine
+                                           Skupština Crne Gore 28. saziva
+                                                    Predsjednik,
+                                                Andrija Mandić, s.r.
+
+
+
+
+Pravni ekspert doo, Podgorica                                                                                   15
+

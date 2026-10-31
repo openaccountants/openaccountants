@@ -1,10 +1,10 @@
 ---
 name: de-return-assembly
 description: Final orchestrator skill that assembles the complete German filing package for Germany-resident self-employed individuals (Freiberufler and Gewerbetreibende). Consumes outputs from all Germany content skills (germany-vat-return for UStVA, de-einkommensteuer-freelancer for ESt + EÜR, de-social-contributions for KV/PV/RV, de-trade-tax for GewSt, de-estimated-tax for Vorauszahlungen) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Germany content skills listed above. Germany full-year residents only. Self-employed individuals and sole proprietors only.
-version: 0.1
+version: 0.3
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-09-20
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -45,7 +45,7 @@ The capstone Guide for German self-employed returns: every German content Guide 
 ## Section 2: Execution order and dependency chain
 
 1. **UStVA step.** First, because turnover feeds the Anlage EÜR. Regelbesteuerung: the outstanding advance returns plus the yearly return. Kleinunternehmer: no advance return and no yearly VAT return as a rule, and BOTH limits in the Section 3 table are tested, with the start-up row for a business that started in the year. Exception: a Kleinunternehmer who owes VAT as the recipient of a supply (§ 13b(5) UStG) or on goods bought from other EU states still files for those periods (§ 18(4a) UStG, kept in force by § 19(1) sentence 2 UStG); `de-freelance-intake` has the detail. Output: advance return lines, input VAT recovered and blocked, net turnover, Sondervorauszahlung reconciliation. Guide: `germany-vat-return`.
-2. **Income tax and EÜR step.** Net turnover goes to the net receipts line of the Anlage EÜR and the VAT actually received to its own receipts line (Cross-check 1). Blocked input VAT is part of the cost of the item. Covers the Anlage EÜR with the Anlage AVEÜR, Anlage S or Anlage G, Anlage Vorsorgeaufwand and depreciation. Output: taxable profit, taxable income, assessed income tax, solidarity surcharge, church tax. Guide: `de-einkommensteuer-freelancer`. Older versions named this step `de-income-tax`, which is not a Guide.
+2. **Income tax and EÜR step.** Net turnover goes to the net receipts line of the Anlage EÜR and the VAT actually received to its own receipts line (Cross-check 1). Blocked input VAT is part of the cost of the item. Covers the Anlage EÜR with the Anlage AVEÜR, Anlage S or Anlage G, Anlage Vorsorgeaufwand and depreciation. Output: taxable profit, taxable income, assessed income tax, solidarity surcharge, church tax. Guide: `de-einkommensteuer-freelancer`. Older versions named this step `germany-income-tax`, which is not a Guide.
 3. **Health, care and pension step.** Depends on the profit, the main part of the income a statutory fund uses when it sets contributions finally after the assessment. A voluntary member is charged on all income, not on the profit alone: see `de-social-contributions`. Contributions paid in the year go on the Anlage Vorsorgeaufwand as special expenses. Output: the year's amounts, the basic cover amount, any arrears or refund. Guide: `de-social-contributions`.
 4. **Trade tax step.** Gewerbetreibender only. Trade income is the profit plus the add-backs of § 8 GewStG less the reductions of § 9 GewStG, then the allowance and base rate in the Section 3 table, then the municipality's multiplier. The credit against income tax is four times the base amount, capped at the trade tax actually payable and at the income tax falling on the trade income; § 35 EStG prints the multiple in words ("das Vierfache"). A Freiberufler pays no trade tax: skip. Guide: `de-trade-tax`. https://www.gesetze-im-internet.de/estg/__35.html
 5. **Prepayment step.** The tax office sets prepayments by notice (Vorauszahlungsbescheid); nobody self-assesses them, and no amount is stated until a notice exists. The four due dates are in § 37(1) EStG: 10 March, 10 June, 10 September, 10 December. That paragraph prints no split across the dates, so state none: read each amount from the notice and test it against the minimums in the Section 3 table. Guide: `de-estimated-tax`. https://www.gesetze-im-internet.de/estg/__37.html
@@ -57,36 +57,36 @@ Each cross-check compares one Guide's output with another's input. Line numbers 
 
 **Limits the cross-checks use**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Small business: total turnover of the PREVIOUS year not more than (condition 1 of 2, AND) | EUR 25,000 | "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" |
-| Small business: total turnover of the CURRENT year not more than. A hard limit in-year: the supply that crosses it is already taxed | EUR 100,000 | "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |  |
+| Small business: total turnover of the PREVIOUS year not more than (condition 1 of 2, AND) | EUR 25,000 | "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Small business: total turnover of the CURRENT year not more than. A hard limit in-year: the supply that crosses it is already taxed | EUR 100,000 | "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" | same |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Business that STARTS during the year: total turnover of the current year must not exceed | EUR 25,000 | Instructions to Zeile 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |  |
+| Business that STARTS during the year: total turnover of the current year must not exceed | EUR 25,000 | Instructions to Zeile 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| Advance returns are monthly if the VAT payable for the previous year was more than this, quarterly otherwise. The test is the VAT, not turnover | EUR 9,000 | § 18(2): "für das vorangegangene Kalenderjahr mehr als 9 000 Euro" |
-| The tax office may release the business from advance returns if that VAT was not more than | EUR 2,000 | § 18(2): "nicht mehr als 2 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |  |
+| Advance returns are monthly if the VAT payable for the previous year was more than this, quarterly otherwise. The test is the VAT, not turnover | EUR 9,000 | § 18(2): "für das vorangegangene Kalenderjahr mehr als 9 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
+| The tax office may release the business from advance returns if that VAT was not more than | EUR 2,000 | § 18(2): "nicht mehr als 2 000 Euro" | same |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Trade tax allowance for a natural person or partnership, per business per year | EUR 24,500 | § 11(1): "um einen Freibetrag in Höhe von 24 500 Euro" |
-| Base rate on trade income after the allowance. Not the tax rate: the multiplier is applied to the base amount | 3.5% | § 11(2): "Die Steuermesszahl für den Gewerbeertrag beträgt 3,5 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |  |
+| Trade tax allowance for a natural person or partnership, per business per year | EUR 24,500 | § 11(1): "um einen Freibetrag in Höhe von 24 500 Euro" | https://www.gesetze-im-internet.de/gewstg/__11.html |
+| Base rate on trade income after the allowance. Not the tax rate: the multiplier is applied to the base amount | 3.5% | § 11(2): "Die Steuermesszahl für den Gewerbeertrag beträgt 3,5 Prozent" | same |
 
 The solidarity surcharge has a rate, an exemption limit that differs between single and joint assessment, and a zone just above the limit (§ 3 and § 4 SolzG). Church tax has two possible state rates. All of those amounts live in `de-einkommensteuer-freelancer`: read them there, and never carry over a limit from an older package, because the surcharge limits change most years. https://www.gesetze-im-internet.de/solzg_1995/__3.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__37.html |
-| Income tax prepayments are set only if they reach this in the year (first of two conditions, AND) | EUR 400 | § 37(5): "mindestens 400 Euro im Kalenderjahr" |
-| and this for a single due date | EUR 100 | § 37(5): "mindestens 100 Euro für einen Vorauszahlungszeitpunkt betragen" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__37.html |  |
+| Income tax prepayments are set only if they reach this in the year (first of two conditions, AND) | EUR 400 | § 37(5): "mindestens 400 Euro im Kalenderjahr" | https://www.gesetze-im-internet.de/estg/__37.html |
+| and this for a single due date | EUR 100 | § 37(5): "mindestens 100 Euro für einen Vorauszahlungszeitpunkt betragen" | same |
 
 Trade tax prepayments have their own dates and their own minimum: see `de-trade-tax`.
 
@@ -177,12 +177,12 @@ Trade tax prepayments have their own dates and their own minimum: see `de-trade-
 
 **Limits the reviewer brief refers to**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |
-| Low-value asset written off in full in the year of purchase: cost per asset, less any input VAT contained in it | EUR 800 | § 6(2): "für das einzelne Wirtschaftsgut 800 Euro nicht übersteigen" |
-| An asset written off at once goes in a running register if its value is above this; the same amount is the pool floor | EUR 250 | § 6(2) sentence 4: "deren Wert 250 Euro übersteigt"; § 6(2a) |
-| Pool method (Sammelposten): upper cost bound per asset. The pool binds every qualifying asset of the year | EUR 1,000 | § 6(2a): "250 Euro, aber nicht 1 000 Euro übersteigen" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |  |
+| Low-value asset written off in full in the year of purchase: cost per asset, less any input VAT contained in it | EUR 800 | § 6(2): "für das einzelne Wirtschaftsgut 800 Euro nicht übersteigen" | https://www.gesetze-im-internet.de/estg/__6.html |
+| An asset written off at once goes in a running register if its value is above this; the same amount is the pool floor | EUR 250 | § 6(2) sentence 4: "deren Wert 250 Euro übersteigt"; § 6(2a) | same |
+| Pool method (Sammelposten): upper cost bound per asset. The pool binds every qualifying asset of the year | EUR 1,000 | § 6(2a): "250 Euro, aber nicht 1 000 Euro übersteigen" | same |
 
 The limited deductions of § 4(5) EStG (gifts, entertainment, the home office room, the day rate for working at home) each have their own amount and their own kind of limit. Take the home office room and the day rate from `de-einkommensteuer-freelancer`, and the gift and entertainment limits from `germany-bookkeeping`, and say which limit a position used. https://www.gesetze-im-internet.de/estg/__4.html
 
@@ -378,7 +378,7 @@ The final output is **three files**:
 
 ## Section 8: Cross-Guide references
 
-**Inputs:** `de-freelance-intake` (the structured package, JSON); `germany-vat-return`; `de-einkommensteuer-freelancer` (older versions named this `de-income-tax`, which is not a Guide); `de-social-contributions`; `de-trade-tax`; `de-estimated-tax`; `germany-bookkeeping`.
+**Inputs:** `de-freelance-intake` (the structured package, JSON); `germany-vat-return`; `de-einkommensteuer-freelancer` (older versions named this `germany-income-tax`, which is not a Guide); `de-social-contributions`; `de-trade-tax`; `de-estimated-tax`; `germany-bookkeeping`.
 
 **Outputs:** the final reviewer package. No downstream Guide.
 
@@ -444,15 +444,37 @@ The final output is **three files**:
 - An open dispute: an objection, an appeal, an audit, or a voluntary disclosure.
 - Any request to file, sign or transmit. This Guide prepares a package for a Steuerberater to check and sign. It does not file.
 
+```oa-check
+name: DE sole trader 2026, base amount after the allowance
+inputs:
+  trade_income: 30000
+steps:
+  - base: (trade_income - 24500) * 0.035
+expected:
+  base: 192.50
+```
+
+```oa-check
+name: DE sole trader 2026, trade tax at multiplier 410%
+inputs:
+  trade_income: 40000
+  hebesatz: 4.1
+steps:
+  - base: (trade_income - 24500) * 0.035
+  - trade_tax: base * hebesatz
+expected:
+  trade_tax: 2224.25
+```
+
 ## Sources
 
-- https://www.gesetze-im-internet.de/estg/__4.html , https://www.gesetze-im-internet.de/estg/__6.html , https://www.gesetze-im-internet.de/estg/__15.html , https://www.gesetze-im-internet.de/estg/__18.html , https://www.gesetze-im-internet.de/estg/__25.html , https://www.gesetze-im-internet.de/estg/__35.html , https://www.gesetze-im-internet.de/estg/__37.html
-- https://www.gesetze-im-internet.de/ustg_1980/__18.html , https://www.gesetze-im-internet.de/ustg_1980/__19.html
-- https://www.gesetze-im-internet.de/gewstg/__11.html , https://www.gesetze-im-internet.de/gewstg/__14a.html
-- https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html
-- https://www.gesetze-im-internet.de/ao_1977/__108.html , https://www.gesetze-im-internet.de/ao_1977/__149.html , https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html
+- https://www.gesetze-im-internet.de/estg/__4.html , https://www.gesetze-im-internet.de/estg/__6.html , https://www.gesetze-im-internet.de/estg/__15.html , https://www.gesetze-im-internet.de/estg/__18.html , https://www.gesetze-im-internet.de/estg/__25.html , https://www.gesetze-im-internet.de/estg/__35.html , https://www.gesetze-im-internet.de/estg/__37.html (read 2026-10-31)
+- https://www.gesetze-im-internet.de/ustg_1980/__18.html , https://www.gesetze-im-internet.de/ustg_1980/__19.html (read 2026-10-31)
+- https://www.gesetze-im-internet.de/gewstg/__11.html , https://www.gesetze-im-internet.de/gewstg/__14a.html (read 2026-10-31)
+- https://www.gesetze-im-internet.de/solzg_1995/__3.html , https://www.gesetze-im-internet.de/solzg_1995/__4.html (read 2026-10-31)
+- https://www.gesetze-im-internet.de/ao_1977/__108.html , https://www.gesetze-im-internet.de/ao_1977/__149.html , https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html (read 2026-10-31)
 - https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
-- https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025
+- https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 (read 2026-10-31)
 
 ## End of Guide
 

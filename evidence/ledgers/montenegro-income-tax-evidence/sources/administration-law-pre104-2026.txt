@@ -1,0 +1,1016 @@
+Zakon o poreskoj administraciji
+Zakon je objavljen u "Službenom listu RCG", br. 65/2001, 80/2004, 29/2005 - drugi zakon (prestale da važe odredbe koje se odnose na registraciju poreskih obveznika i osiguranika i podnošenje prijave za obračun i plaćanje poreza i doprinosa koje su u suprotnosti sa Zakonom o objedinjenoj registraciji i sistemu izvještavanja o obračunu i naplati poreza i doprinosa) i "Službenom listu CG", br. 20/2011, 28/2012, 8/2015, 47/2017, 52/2019, 145/2021, 15/2025 (čl. 11. ne nalazi se u prečišćenom tekstu) i 160/2025.
+I OSNOVNE ODREDBE 
+Opšte odredbe 
+Član 1 ﻿
+Ovim zakonom uređuju se prava i obaveze poreskog organa i poreskih obveznika u postupku registracije poreskih obveznika i utvrđivanja, naplate i kontrole poreza i drugih dažbina (u daljem tekstu: porez).
+Član 2 ﻿
+(1) Po ovom zakonu dužni su da postupaju državni i organi jedinica lokalne samouprave kada odlučuju o pravima i obavezama poreskog obveznika. 
+(2) Ovaj zakon odnosi se i na pojedince (građane), pravna lica, organizacije, preduzetnike, poreske posrednike i druga lica, državne i organe jedinica lokalne samouprave, kada su poreski obveznici ili kada za poreskog obveznika obračunavaju i plaćaju poreze ili imaju druge obaveze vezane za utvrđivanje i naplatu obaveza poreskog obveznika. 
+(3) Rezidenti države članice Evropske unije (u daljem tekstu: država članica EU), druge države odnosno teritorije države, imaju jednaka prava i obaveze kao i rezidenti Crne Gore za potrebe oporezivanja, u smislu ovog zakona.
+Član 3 ﻿
+- brisan -
+
+Načela poreskog postupka
+Načelo zakonitosti
+Član 3a ﻿
+- brisan -
+Načelo efikasnosti
+Član 3b ﻿
+- brisan -
+Načelo ekonomičnosti
+Član 3c ﻿
+- brisan -
+Načelo vremenskog važenja poreskih propisa
+Član 3d ﻿
+- brisan -
+Načelo omogućavanja uvida u činjenice
+Član 3e ﻿
+- brisan -
+Značenje pojedinih izraza 
+Član 4 ﻿
+Pojedini izrazi upotrijebljeni u ovom zakonu imaju sljedeće značenje:
+1) poreski organ je organ državne uprave ili organ jedinice lokalne samouprave u čijoj nadležnosti su poslovi utvrđivanja, naplate i kontrole poreza;
+2) porez i druge dažbine su porezi, doprinosi, takse, naknade i druga novčana davanja utvrđena zakonom;
+3) poreski obveznik je lice koje, u skladu sa poreskim i drugim zakonima, podliježe obavezi plaćanja poreza;
+4) poreski dužnik je poreski obveznik koji je dužan da plati porez, poreski jemac i poreski isplatilac odnosno posrednik;
+5) poreski jemac je lice koje je odgovorno za plaćanje poreskog duga poreskog obveznika, ako poreski obveznik nije izmirio taj dug po dospjelosti;
+6) poreski isplatilac odnosno posrednik je lice koje je, u skladu sa poreskim propisima, dužno da od drugog lica obustavom ili na neki drugi način naplati porez i da ga uplati na odgovarajući uplatni račun;
+7) poreski zastupnik je lice koje je u skladu sa zakonom ovlašćeno da vodi dio ili sve poslove poreskog obaveznika u vezi sa ispunjavanjem poreskih obaveza;
+8) poreski punomoćnik je lice koje poreski obveznik pismeno ovlasti da u njegovo ime i za njegov račun vodi poslove u vezi sa izvršavanjem poreskih obaveza u skladu sa poreskim propisima;
+9) knjige i evidencije predstavljaju dokumentaciju propisanu posebnim zakonom koju je poreski obveznik dužan da vodi o svom poslovanju, a služe u svrhu utvrđivanja poreske obaveze;
+10) lice je pravno lice, dio pravnog lica, organizacija, preduzetnik i fizičko lice koje je dužno da postupa po ovom zakonu;
+11) nalog za prenos je dokument kojim se vrši prenos sredstava sa računa poreskog obveznika na račune za plaćanje poreza;
+12) izvještajna finansijska institucija je finansijska institucija u Crnoj Gori koja je obveznik izvještavanja, na osnovu Standarda zajedničkog izvještavanja u skladu sa zakonom, odnosno potvrđenim međunarodnim sporazumom, koja je rezident Crne Gore, osim poslovne jedinice te finansijske institucije koja se nalazi van Crne Gore, kao i poslovna jedinica finansijske institucije koja nije rezident Crne Gore, a koja u skladu sa zakonom posluje u Crnoj Gori, isključujući finansijsku instituciju koja, na osnovu potvrđenog međunarodnog sporazuma nije obveznik izvještavanja;
+13) platforma je softver, uključujući internet stranicu ili njen dio, osim softver pomoću kojeg se omogućava obrada plaćanja u vezi obavljanja ili oglašavanja relevantne aktivnosti i preusmjeravanje ili premještanje korisnika platformi, kao i aplikacije, uključujući mobilne aplikacije, kojima korisnici mogu pristupiti i kojima se omogućava prodavcima proizvoda i pružaocima usluga da stupe u kontakt sa korisnicima, kao i aranžmane za prikupljanje i plaćanje naknade za relevantnu aktivnost;
+14) operater platforme je pravno lice ili pravni aranžman koji sa prodavcem proizvoda ili pružaocem usluga (u daljem tekstu: korisnik platforme) zaključuje ugovor o korišćenju platforme ili dijela platforme za obavljanje različitih aktivnosti uz naknadu;
+15) izvještajni operater platforme je operater platforme u Crnoj Gori koji je obveznik izvještavanja, na osnovu Standarda zajedničkog izvještavanja u skladu sa zakonom, odnosno potvrđenim međunarodnim sporazumom, koji je rezident Crne Gore za potrebe oporezivanja ili ima stalnu poslovnu jedinicu koja u skladu sa zakonom posluje u Crnoj Gori, ili nije rezident Crne Gore za potrebe oporezivanja niti ima stalnu poslovnu jedinicu u Crnoj Gori ali omogućava korisnicima platforme relevantne aktivnosti u vezi iznajmljivanja nepokretnosti koja se nalazi u Crnoj Gori ili pružanja određenih usluga, isključujući operatera platforme koji, na osnovu potvrđenog međunarodnog sporazuma, nije obveznik izvještavanja;
+16) kriptoimovina je digitalni prikaz vrijednosti ili prava koje se može prenijeti i skladištiti elektronskim putem, koristeći tehnologije distribuiranog zapisa ili druge slične tehnologije uključujući i token elektronskog novca;
+17) kriptoimovina o kojoj se izvještava je svaka kriptoimovina koja nije digitalna valuta Centralne banke, elektronski novac, uključujući i token elektronskog novca ili bilo koja kriptoimovina za koju je izvještajni pružalac usluga povezanih sa kriptoimovinom na odgovarajući način utvrdio da ne može služiti za plaćanja ili ulaganja;
+18) pružalac usluga povezan sa kriptoimovinom je privredno društvo, pravno lice, preduzetnik ili fizičko lice čija je djelatnost ili poslovanje pružanje jedne ili više usluga povezanih s kriptoimovinom korisnicima kriptoimovine na profesionalnoj osnovi i koje ima odobrenje za rad kao pružalac usluga povezanih sa kriptoimovinom;
+19) izvještajni pružalac usluga povezanih sa kriptoimovinom je svaki pružalac usluga povezan sa kriptoimovinom ili subjekt povezan sa kriptoimovinom u Crnoj Gori koji je obveznik izvještavanja, na osnovu Standarda zajedničkog izvještavanja u skladu sa zakonom, odnosno potvrđenim međunarodnim sporazumom, koji je rezident Crne Gore i koji pruža jednu ili više usluga povezanih sa kriptoimovinom kojima se sprovode transakcije razmjene u ime i za račun korisnika kriptoimovine o kojem se izvještava;
+20) poreska obaveza obuhvata: porez, kamatu i troškove postupka.
+Upotreba rodno osjetljivog jezika
+Član 4a
+Izrazi koji se u ovom zakonu koriste za fizička lica u muškom rodu podrazumijevaju iste izraze u ženskom rodu.
+II NADLEŽNOST PORESKOG ORGANA
+Član 5 ﻿
+(1) Poslove utvrđivanja, naplate i kontrole poreza koje uvodi Republika, vrši organ uprave nadležan za poslove poreza (u daljem tekstu: poreski organ).
+(2) Izuzetno od stava 1 ovog člana poslove utvrđivanja, naplate i kontrole akciza, vrši organ uprave nadležan za poslove carina.
+(3) Poslove utvrđivanja, naplate i kontrole poreza koji su prihodi jedinice lokalne samouprave vrši nadležni organ lokalne uprave.
+(4) Izuzetno od stava 2 ovog člana, poslove utvrđivanja, naplate i kontrole prireza porezu na dohodak fizičkih lica može vršiti poreski organ, na zahtjev jedinice lokalne samouprave.
+Ovlašćenje poreskog organa 
+Član 6 ﻿
+Poreski organ, u ostvarivanju nadležnosti utvrđenih zakonom ima ovlašćenje da: 
+1) obavlja inspekcijski nadzor, preduzima mjere naplate, druge radnje i aktivnosti za koje je nadležan po ovom ili drugim zakonima; 
+2) rješava o pravima poreskih obveznika; 
+3) vrši registraciju privrednih društava, poreskih obveznika, obveznika doprinosa i osiguranika za obavezno socijalno osiguranje i vodi registar privrednih društava, poreski registar i registar obveznika i osiguranika za obavezno socijalno osiguranje i registar stvarnih vlasnika;
+4) vrši utvrđivanje poreza, na način i po postupku utvrđenom zakonom; 
+5) zahtjeva od poreskog obveznika i drugih pravnih i fizičkih lica da podnesu dokumentaciju i pruže druge informacije neophodne za utvrđivanje poreske obaveze; 
+6) poziva lica da učestvuju u poreskom postupku; 
+7) uđe i pregleda poslovne prostorije u kojima se nalaze ili bi se mogle nalaziti poslovne knjige i evidencije ili drugi predmeti potrebni za primjenu poreskih propisa; 
+8) izuzme poslovne knjige i evidencije i druge predmete potrebne za primjenu poreskih propisa u skladu sa ovim zakonom; 
+9) - brisana -
+10) koristi usluge stručnjaka i vještaka, fizičkih i pravnih lica u postupku utvrđivanja poreskih obaveza, kada je stručno znanje potrebno; 
+11) pokreće i vodi prvostepeni upravni postupak;
+12) planira i sprovodi obuku zaposlenih;
+13) vodi poresko knjigovodstvo;
+14) obavještava poreske obveznike o toku inspekcijski nadzor i o njihovim pravima i obavezama u tom postupku; 
+15) pruža stručnu pomoć poreskim obveznicima u primjeni poreskih propisa;
+16) poreskim obveznicima da besplatno primjerak poreske prijave; 
+17) čuva poresku tajnu; 
+18) se odnosi prema poreskim obveznicima i drugim licima sa poštovanjem i uvažavanjem; 
+19) izda prekršajni nalog, podnese zahtjev za pokretanje prekršajnog postupka, odnosno krivičnu prijavu;
+20) proslijedi informacije, uključujući i poreske tajne, koje su otkrivene tokom krivične istrage ili se za njih saznalo pri prikupljanju drugih informacija, organima nadležnim za sprovođenje zakona, kada postoji osnovana sumnja da postoji prekršaj ili krivično djelo; 
+21) primjenjuje međunarodne ugovore i sporazume o izbjegavanju dvostrukog oporezivanja i drugim pogodnostima koje se odnose na plaćanje poreza; 
+21a) razmjenjuje informacije sa nadležnim organima država članica EU, drugih država odnosno teritorija država u skladu sa potvrđenim međunarodnim sporazumima;
+22) priprema izvještaje o stanju u oblasti poreza;
+23) daje inicijative za donošenje propisa i drugih akata za uređivanje poreskog sistema i poreske politike organu državne uprave nadležnom za poslove finansija (u daljem tekstu: Ministarstvo); 
+24) sarađuje sa drugim organima i organizacijama u zemlji i inostranstvu o pitanjima krivičnih poreskih djela, a u skladu sa međunarodnim ugovorima ili sporazumima; 
+25) preduzme mjere neophodne za bezbjednost poreskih službenika; 
+26) preduzme mjere za sprečavanje korupcije službenika u vršenju službenih poslova; 
+27) organizuje funkcionisanje jedinstvenog informacionog sistema u oblasti poreza; 
+28) obezbjeđuje izvršavanje stavova i zaključaka Vlade iz oblasti poreza; 
+28a) kontroliše i objavljuje finansijske iskaze privrednih društava; 
+29) vrši i druge poslove utvrđene zakonom i drugim propisom. 
+Način vođenja poreskog knjigovodstva iz stava 1 tačka 13) ovog člana propisuje Ministarstvo.
+
+Evidencija o imovini
+Član 6a ﻿
+Poreski inspektor i ovlašćeno službeno lice koje preduzima istražne radnje dužni su da podnesu izvještaj o imovini i prihodima, kao i imovini i prihodima bračnih i vanbračnih supružnika, životnih partnera lica istog pola i djece koja žive u zajedničkom domaćinstvu, u skladu sa posebnim zakonom.
+III OPŠTE ODREDBE PORESKOG POSTUPKA 
+Pozivanje 
+Član 7 ﻿
+(1) Poreski organ ima pravo da pozove svako lice, kada ocijeni da je njegovo prisustvo u postupku provođenja poreskih propisa potrebno. 
+(2) Pozivanje lica poreski organ može vršiti radi saslušanja, svjedočenja, vještačenja, predavačanja dokumenata, knjiga i evidencija i predmeta potrebnih za provođenje poreskih propisa, dostavlja rješenja, ili radi saopštenja koja se licu ne mogu izvršiti poštom ili na drugi pogodan način. 
+(3) Pozivanje se vrši pisanim pozivom, ako ovim zakonom nije predviđen drugi način. 
+(4) Lice se poziva po nalogu rukovodioca poreskog organa ili lica koje on ovlasti. 
+(5) U slučaju da se lice poziva radi saslušanja, svijedočenja, vještačenja ili predočavanja dokumentacije, knjiga i evidencija, poziv iz stava 3 ovog člana poreski organ je licu dužan uručiti najkasnije tri radna dana prije dana određenog u pozivu za preduzimanje tih radnji. 
+(6) Poziv iz stava 3 ovog člana sadrži: 
+1) naziv poreskog organa koji je izdao poziv; 
+2) ime i prezime, odnosno naziv lica koje se poziva i poreski identifikacioni broj (u daljem tekstu: PIB); 
+3) mjesto, dan i čas dolaska pozvanog; 
+4) predmet zbog koga se poziva i u kom svojstvu (stranka, svjedok, vještak, tumač itd); 
+5) koja pomoćna sredstva kao dokaze pozvani treba da pribavi, odnosno donese. 
+(7) U slučaju kada se lice poziva radi predočavanja dokumentacije, knjiga, evidencija i drugih predmeta, u pozivu će se naznačiti koje knjige, evidencije, dokumentaciju ili druge predmete je potrebno predočiti. 
+(8) U pozivu se navodi da je pozvano lice dužno da dođe lično ili da ovlasti punomoćnika koji će ga zastupati i upozoriće se na posljedice ako se ne odazove pozivu ili ne izvijesti organ koji je izdao poziv da je spriječen da dođe. 
+(9) Lice koje nije napunilo 18 godina biće pozvano preko svojih roditelja ili drugog zakonskog zastupnika. 
+(10) Lice koje je pozvano može, u opravdanim slučajevima, zatražiti od poreskog organa da promijeni mjesto ili vrijeme saslušanja, svjedočenja, vještačenja, tumačenja ili predočavanja dokumenata navedenih u pozivu. 
+(11) Pozivanje lica, po pravilu, se vrši u radnom vremenu poreskog organa, a ako se radi o hitnim i neodložnim mjerama, lice se može pozvati nakon isteka radnog vremena i u naredne dane.
+Obaveze pozvanog lica 
+Član 8 ﻿
+(1) Pozvano lice je dužno da se odazove pozivu. 
+(2) Ako je pozvano lice, zbog bolesti ili drugog opravdanog razloga, spriječeno da se odazove pozivu dužno je odmah po prijemu poziva, ako je u mogućnosti, o tome obavijestiti poreski organ koji je izdao poziv, a ako to nije, dužno je, po prestanku razloga, doći u poreski organ i opravdati izostanak. 
+(3) Ako su usled neopravdanog izostanka pozvanog lica nastupili troškovi u postupku, poreski organ će odrediti da te troškove snosi pozvano lice. 
+(4) O potrebi obraćanja nadležnom organu radi preduzimanja mjera za privođenje, o izricanju kazne, odnosno plaćanju troškova postupka odlučuje rukovodilac poreskog organa rješenjem protiv kojeg je dopuštena žalba.
+Ispitivanje stranke 
+Član 9 ﻿
+- brisan -
+Ispitivanje svjedoka 
+Član 10 ﻿
+- brisan -
+Član 11 ﻿
+- brisan -
+Član 12 ﻿
+- brisan -
+Član 13 ﻿
+- brisan -
+Član 14 ﻿
+- brisan -
+Izvođenje i ocjena dokaza
+Član 14a ﻿
+- brisan -
+
+Dostavljanje isprava na uvid i provjeru
+Član 14b
+(1) Poreski organ može zahtijevati od poreskog obveznika i drugih lica da, u roku koji odredi, dostave na uvid i provjeru poslovne knjige i evidencije, računovodstvene iskaze, poslovnu dokumentaciju i druge isprave i dokaze, radi utvrđivanja činjeničnog stanja.
+(2) Poreski organ može odrediti da se isprave i dokazi iz stava 1 ovog člana dostave na uvid i provjeru u njenim službenim prostorijama, odnosno elektronskim putem, ili da se uvid i provjera obave kod poreskog obveznika, odnosno lica koje je dužno da te isprave i dokaze dostavi.
+Davanje informacija
+Član 14c
+(1) Poreski obveznik i druga lica dužni su da, na zahtjev poreskog organa i u roku koji odredi, pruže sve raspoložive informacije, neophodne za utvrđivanje činjeničnog stanja od značaja za oporezivanje.
+(2) U zahtjevu za davanje informacija navodi se vrsta informacije koja se traži, kao i upozorenje na posljedice nedavanja informacija, odnosno davanja neistinitih informacija.
+(3) Poreski obveznik i drugo lice iz stava 1 ovog člana dužni su da tražene informacije pruže u pisanom obliku.
+(4) Izuzetno od stava 3 ovog člana, poreski organ će narediti usmeno davanje informacija u njegovim službenim prostorijama, ako informacija nije data u određenom roku ili je data u pisanom obliku, a nije razjasnila činjenično stanje.
+(5) O usmenoj informaciji, datoj u službenim prostorijama poreskog organa, sačinjava se zapisnik.
+Obaveza lica i organa za dostavljanje informacija
+Član 14d
+Fizička i pravna lica, organizacije, preduzetnici, poreski isplatioci, odnosno posrednici, druga lica, državni i organi jedinica lokalne samouprave, dužni su da poreskom organu dostave podatke, izvještaje i dokumentaciju sa kojima raspolažu, a koja su od značaja za oporezivanje, u skladu sa zakonom.
+Izvještavanje o računima radi razmjene informacija
+Član 14e ﻿
+(1) Izvještajna finansijska institucija dužna je da, identifikuje račune koje posjeduje ili kontroliše rezident države članice EU ili druge države, odnosno teritorije države, prikuplja informacije o stanju, izvršenim transakcijama sa tih računa i ostvarenim prihodima tih lica po osnovu određenih vrsta dohotka i kapitala i preduzima mjere produbljene provjere, na osnovu Standarda zajedničkog izvještavanja, u skladu sa zakonom i drugim propisom.
+(2) Standard zajedničkog izvještavanja označava Standard zajedničkog izvještavanja, uključujući Komentar Standarda zajedničkog izvještavanja, odobren od strane Savjeta Organizacije za ekonomsku saradnju i razvoj, od 15. jula 2014. godine i sve njegove izmjene i dopune, koji sadrži procedure izvještavanja i mjere produbljene provjere za automatsku razmjenu informacija.
+(3) U toku postupka produbljene provjere, lica su dužna da, u okviru dokumentacije daju tačne informacije, uključujući izjavu, odnosno potvrdu o rezidentnosti izvještajnoj finansijskoj instituciji.
+(4) Izvještajna finansijska institucija dužna je da, dostavlja potpune i tačne informacije iz stava 1 ovog člana poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, u skladu sa zakonom i drugim propisom, odnosno potvrđenim međunarodnim sporazumima.
+(5) Izvještajna finansijska institucija dužna je da, vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja, radi dostavljanja informacija a svu dokumentaciju koja se odnosi na vlasnika računa čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi.
+(6) Izvještajna finansijska institucija, prije dostavljanja poreskom organu informacije o računima lica iz stava 1 ovog člana, o kojima izvještava, obavještava lice, čije informacije će prikupljati i dostavljati poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države.
+(7) Izvještajna finansijska institucija dužna je da informacije iz stava 1 ovog člana dostavlja poreskom organu, na propisanom obrascu u elektronskom obliku, jednom godišnje, do 30. Juna tekuće za prethodnu godinu.
+(8) Ako lice zaključi aranžman ili uspostavi poslovni odnos čiji je glavni cilj ili jedan od glavnih ciljeva izbjegavanje obaveze propisane ovim članom ili propisima donijetim na osnovu ovog zakona, smatraće se da takav aranžman nije zaključen, odnosno da takav odnos nije uspostavljen, u smislu primjene ovog zakona i propisa donijetih na osnovu ovog zakona. 
+(9) Poreski ili drugi nadležni organ ima pravo da od lica iz stava 1 ovog člana zahtijeva dostavljanje podataka i da, u svako razumno vrijeme, izvrši uvid u poslovne prostorije ili mjesto obavljanja djelatnosti lica, radi: 
+1) utvrđivanja tačnosti i potpunosti podataka koje je dostavila izvještajna finansijska institucija;
+2) provjere procedura koje je izvještajna finansijska institucija uspostavila radi obezbjeđivanja usklađenosti sa obavezama propisanim ovim zakonom i propisima donijetim na osnovu ovog zakona;
+3) provjere usklađenosti podataka sa drugim zahtjevima propisanim ovim zakonom ili propisima donijetim na osnovu ovog zakona.“
+(10) Bliži način izvještavanja i obrazac iz stava 7 ovog člana propisuje Ministarstvo.
+Izvještavanje o poslovanju povezanih lica radi razmjene informacija
+Član 14f ﻿
+(1) Pravno lice, rezident Crne Gore za potrebe oporezivanja, član međunarodne grupe povezanih pravnih lica (u daljem tekstu: međunarodna grupa) koji obavljaju djelatnost u državi članici EU ili drugoj državi odnosno teritoriji države, dužno je da dostavi poreskom organu objedinjene podatke, prema navedenim državama, odnosno teritorijama država o ostvarenim prihodima, dobiti/gubitku prije oporezivanja, obračunatom i plaćenom porezu na dobit, prijavljenom kapitalu, akumuliranoj dobiti, broju zaposlenih i materijalnoj imovini za svakog člana međunarodne grupe.
+(2) Pravno lice iz stava 1 ovog člana, dužno je da, pored podataka iz stava 1 ovog člana, dostavi poreskom organu i podatke o identifikaciji svakog člana međunarodne grupe utvrđujući državu, odnosno teritoriju države rezidentnosti i državu, odnosno teritoriju države u kojoj podliježe oporezivanju po osnovu poslovanja preko stalne poslovne jedinice ako se razlikuje od države, odnosno teritorije države rezidentnosti, kao i vrstama djelatnosti koje obavlja.
+(3) Pravno lice, podatke iz st. 1 i 2 ovog člana, dužno je da dostavi poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, na propisanom obrascu u elektronskom obliku, u roku od 12 mjeseci, nakon isteka fiskalne godine za koju se podaci dostavljaju.
+(4) Bliži način izvještavanja iz stava 3 ovog člana propisuje Ministarstvo.
+Izvještavanje o korisnicima digitalnih platformi radi razmjene informacija
+Član 14g
+(1) Izvještajni operater platforme dužan je da, prikuplja podatke i vodi evidenciju o korisnicima platforme, odnosno naručiocima oglasa o prodaji i iznajmljivanju nepokretnosti i parking mjesta, prodaji proizvoda i pružanju usluga i iznajmljivanju bilo koje vrste prevoza, o ukupno plaćenim naknadama i broju relevantnih aktivnosti u vezi kojih je ta naknada naplaćena, o porezima, naknadama ili provizijama koje je obustavio ili naplatio korisnicima platforme tokom perioda o kojem izvještava i preduzima mjere produbljene provjere, na osnovu Standarda zajedničkog izvještavanja, u skladu sa zakonom i drugim propisom.
+(2) Izvještajni operater platforme dužan je da, osim podataka iz stava 1 ovog člana, od naručioca oglasa i reklama pribavi i dostavi poreskom organu i podatke o:
+- pravnom licu: naziv i sjedište, matični broj i PIB, kao i ime i prezime odgovornog lica u tom pravnom licu;
+- fizičkom licu: ime i prezime, JMB i adresa prebivališta.
+(3) Izvještajni operater platforme dužan je da, vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja i istu čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi.
+(4) Izvještajni operater platforme dužan je da, dostavlja potpune i tačne podatke iz st. 1 i 2 ovog člana, poreskom organu, za potrebe oporezivanja i razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, u skladu sa zakonom i drugim propisom, odnosno potvrđenim međunarodnim sporazumima.
+(5) Izvještajni operater platforme, prije dostavljanja poreskom organu podataka iz st. 1 i 2 ovog člana o kojima izvještava, obavještava lice, čije podatke će prikupljati i dostavljati poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države.
+(6) Izvještajni operater platforme dužan je da podatke iz st. 1 i 2 ovog člana dostavlja nadležnom poreskom organu, na propisanom obrascu u elektronskom obliku, najkasnije do 31. januara godine koja slijedi godinu u kojoj je korisnik platforme identifikovan kao korisnik platforme o kojem se izvještava.
+(7) Izvještajni operater platforme i operater platforme koji ne izvještava dužni su da podnesu prijavu za registraciju nadležnom poreskom organu, u skladu sa ovim zakonom i Zakonom o registraciji privrednih i drugih subjekata.
+(8) Ako je operater platforme Crne Gore identifikovan kao izvještajni operater platforme u više država može da izabere jednu državu u kojoj će ispuniti obavezu izvještavanja i dužan je da o tome obavijesti nadležni poreski organ Crne Gore i države u kojoj izvještava.
+(9) Bliži način izvještavanja iz stava 6 ovog člana propisuje Ministarstvo.
+Izvještavanje o korisnicima usluga povezanih sa kriptoimovinom
+Član 14h
+(1) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da, prikuplja podatke i vodi evidenciju o korisnicima kriptoimovine, fizičkih ili pravnih lica koji su korisnici o kojim se izvještava ili imaju jedno ili više fizičkih lica koja imaju kontrolu, a koji su lica o kojim se izvještava, kao i o pruženim uslugama korisnicima kriptoimovine, preduzetim aktivnostima, nalozima i sprovedenim transakcijama sa iznosima i datumima transakcija, kao i ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine za svaku vrstu kriptoimovine o kojoj se izvještava sa stanjem imovine na kraju izvještajnog perioda i preduzima mjere produbljene provjere, na osnovu Standarda zajedničkog izvještavanja, u skladu sa zakonom i drugim propisom.
+(2) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da, osim podataka iz stava 1 ovog člana, od vlasnika odnosno korisnika kriptoimovine pribavi i dostavi poreskom organu i podatke o:
+- pravnom licu: naziv i sjedište, matični broj i PIB, kao i ime i prezime odgovornog lica u tom pravnom licu;
+- o fizičkom licu: ime i prezime, JMB i adresa prebivališta.
+(3) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da, vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja i istu čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi.
+(4) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da, dostavlja potpune i tačne podatke iz st. 1 i 2 ovog člana poreskom organu, za potrebe oporezivanja i razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, u skladu sa zakonom i drugim propisom, odnosno potvrđenim međunarodnim sporazumima.
+(5) Izvještajni pružalac usluga povezanih sa kriptoimovinom, prije dostavljanja poreskom organu podataka iz st. 1 i 2 ovog člana o kojima izvještava, obavještava lice, čije podatke će prikupljati i dostavljati poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države.
+(6) Izvještajni pružalac usluga povezanih sa kriptoimovinom dužan je da, podatke iz st. 1 i 2 ovog člana dostavlja nadležnom poreskom organu, na propisanom obrascu u elektronskom obliku, najkasnije do 31. januara godine koja slijedi godinu u kojoj je korisnik kriptoimovine identifikovan kao korisnik o kojem se izvještava.
+(7) Izvještajni pružalac usluga povezanih sa kriptoimovinom koji izvještava i pružalac usluga povezanih sa kriptoimovinom koji ne izvještava dužni su da podnesu prijavu za registraciju kod nadležnog poreskog organa, u skladu sa zakonom i upišu u Registar pružalaca usluga povezanih sa kriptoimovinom kod Komisije za tržište kapitala Crne Gore u skladu sa zakonom kojim se uređuju mjere i radnje koje se preduzimaju radi sprečavanja i otkrivanja pranja novca i finansiranja terorizma.
+(8) Ako je pružalac usluga povezanih sa kriptoimovinom u Crnoj Gori identifikovan kao izvještajni pružalac usluga povezanih sa kriptoimovinom u više država može da izabere jednu državu u kojoj će ispuniti obavezu izvještavanja i dužan je da o tome obavijesti nadležni poreski organ Crne Gore i države u kojoj izvještava.
+(9) Bliži način izvještavanja iz stava 6 ovog člana propisuje Ministarstvo.
+Povezana lica 
+Član 15 ﻿
+(1) Povezanim licima se smatraju lica između kojih postoje posebni odnosi koji mogu imati neposredan uticaj na uslove ili ekonomske rezultate transakcija između njih. 
+(2) Pod posebnim odnosima iz stava 1 ovog člana podrazumijevaju se pojedinačni odnosi između: 
+1) lica koja imaju najmanje 25% učešća u kapitalu drugog lica;
+2) jednog lica koje ima neposredan ili posredan interes u drugom licu koje predstavlja preduzeće, ukoliko je taj interes najmanje 25%; 
+3) jednog lica koje je podređeno drugom u smislu poslovnog položaja i tog drugog lica, ili jednog lica koje je pod kontrolom (neposredno ili posredno) drugog lica i tog drugog lica; 
+4) lica koja predstavljaju zavisna društva ili su pod neposrednom ili posrednom kontrolom trećeg lica; 
+5) lica koja neposredno ili posredno kontrolišu treće lice i tog trećeg lica, ukoliko je glasačko pravo svakog od ovih lica najmanje 25%. 
+3) Povezanim licem iz stava 1 ovog člana, smatra se i član porodice poreskog obveznika, kao i treće lice povezano sa članom porodice poreskog obveznika na način propisan st. 1 i 2 ovog člana.
+(4) Članom porodice smatra se srodnik u krvnom srodstvu u pravoj liniji, kao i u pobočnoj liniji do četvrtog stepena srodstva, bračni ili vanbračni supružnik, životni partner lica istog pola, ili tazbinskom srodstvu do drugog stepena srodstva, bez obzira da li je bračna zajednica prestala, kao i usvojenici i potomci usvojenika.
+Poreska tajna 
+Član 16 ﻿
+(1) Poreska tajna je svaka informacija ili podatak o poreskom obvezniku kojim raspolaže poreski organ, osim informacija i podataka: 
+1) za koje poreski obveznik pismeno izjavi da se ne smatraju poreskom tajnom; 
+2) koji se ne mogu povezati sa konkretnim poreskim obveznikom niti se na drugi način mogu identifikovati; 
+3) vezanih za postojanje poreskog duga, ukoliko je hipoteka, odnosno fiducija kao način obezbjeđenja upisana u javne knjige; 
+4) o registraciji poreskog obveznika, PIB, nazivu (ime) i adresi sjedišta;
+4a) o registraciji obveznika doprinosa, odnosno osiguranika za obavezno socijalno osiguranje;
+5) o vrijednosti nepokretne imovine;
+6) koje poreski organ objavljuje kvartalno o listi poreskih dužnika. 
+(2) Poreski organ i lica iz člana 14d stav 1 ovog zakona ne smiju objelodanjivati niti učiniti dostupnim podatke i informacije koji predstavljaju poresku tajnu.
+(3) Podaci koji predstavljaju poresku tajnu mogu se na zahtjev nadležnog organa Crne Gore, države članice EU, druge države odnosno terotorije države, učiniti dostupnim tom organu, u skladu sa zakonom ili potvrđenim međunarodnim sporazumom.
+(4) Informacije, koje poreskom organu dostavljaju nadležni organi države članice EU ili druge države odnosno teritorije države u skladu sa propisima EU i međunarodnim sporazumima, predstavljaju poresku tajnu, pod istim uslovima, kao i informacije koje se razmjenjuju između nadležnih organa u državi.
+(5) Podaci koji se razmjenjuju na zahtjev, automatski i spontano sa nadležnim organima države članice EU, druge države odnosno teritorije države, a predstavljaju poresku tajnu uživaju zaštitu u skladu sa zakonom.
+(6) Uslove i kriterijume objavljivanja liste poreskih dužnika propisuje Vlada Crne Gore, u roku od 90 dana od dana stupanja na snagu ovog zakona.
+Saradnja sa lokalnom samoupravom
+Član 16a
+Poreski organ i jedinica lokalne samouprave dužni su da razmjenjuju službene podatke potrebne za ostvarivanje njihovih funkcija u skladu sa zakonom.
+Razmjena informacija sa nadležnim organima država članica EU, drugih država, odnosno teritorija država
+Član 16b ﻿
+(1) Poreski organ dostavlja informacije, kojima raspolaže, nadležnom organu države članice EU ili drugoj državi odnosno teritoriji države, u skladu sa potvrđenim međunarodnim sporazumom:
+1) na zahtjev tog organa;
+2) automatskom razmjenom o:
+a) ostvarenim prihodima rezidenata države članice EU ili druge države odnosno teritorije države po osnovu određenih vrsta dohotka i kapitala, najmanje jednom godišnje, u roku od šest mjeseci nakon isteka poreskog perioda tokom kojeg su informacije postale dostupne; 
+b) računima rezidenata države članice EU ili druge države odnosno teritorije države do 30. septembra tekuće za prethodnu godinu;
+c) poslovanju svakog člana međunarodne grupe povezanih pravnih lica, prema državi članici EU ili drugoj državi odnosno teritoriji države, u roku od 15 mjeseci od isteka godine za koju se izvještaj podnosi;
+d) korisnicima platforme, odnosno o prodaji i iznajmljivanju nepokretnosti i parking mjesta, prodaji proizvoda i pružanju usluga i iznajmljivanju bilo koje vrste prevoza, o ukupno plaćenim naknadama i broj relevantnih aktivnosti u vezi kojih je ta naknada naplaćena, o porezima, naknadama ili provizijama koje je operater platforme obustavio ili naplatio korisnicima platforme, u roku od dva mjeseca od isteka perioda o kojem se izvještava;
+e) ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine u roku od devet mjeseci od isteka kalendarske godine za koju se izvještaj podnosi;
+3) ako dođe do saznanja da informacije mogu biti od koristi za nadležni organ druge države, odnosno teritorije države u bilo kom trenutku i bez prethodnog zahtjeva.
+(2) Ako poreski organ smatra da informacije koje je dobio od nadležnog organa država iz stava 1 ovog člana, mogu biti od koristi nadležnom organu treće države, može da ih proslijedi tom organu samo uz prethodno pribavljenu saglasnost nadležnog organa države, odnosno teritorije države iz koje potiču informacije.
+(3) Za potrebe razmjene informacija na zahtjev nadležnog organa država iz stava 1 ovog člana, tražene informacije smatraju se predvidljivo relevantnim ako u trenutku podnošenja zahtjeva nadležni organ koji podnosi zahtjev smatra da, u skladu sa njegovim nacionalnim zakonodavstvom, postoji razumna mogućnost da će tražene informacije biti relevantne za poreska pitanja jednog ili više poreskih obveznika, nezavisno od toga da li su identifikovani imenom ili na neki drugi način, i biti opravdane za preduzimanje određenih upravnih radnji.
+(4) Za potrebe dokazivanja predvidljive relevantnosti traženih informacija nadležni organ koji podnosi zahtjev, dostavlja poreskom organu najmanje sljedeće informacije:
+1) poreska svrha za koju se traže informacije;
+2) specifikacija informacija potrebnih za primjenu nacionalnog zakonodavstva.
+(5) Ako se zahtjev za dostavljanje informacija odnosi na grupu poreskih obveznika koji ne mogu pojedinačno da se identifikuju, organ koji podnosi zahtjev dostavlja poreskom organu najmanje sljedeće informacije:
+1) detaljni opis grupe;
+2) objašnjenje zakonodavstva i činjenica na osnovu kojih se može smatrati da poslovanje poreskih obveznika članova grupe nije usklađeno sa važećim zakonodavstvom;
+3) objašnjenje načina na koji bi tražene informacije bile od pomoći prilikom utvrđivanja usklađenosti poslovanja poreskih obveznika članova grupe; i
+4) prema potrebi, činjenice i okolnosti povezane sa uključenošću treće strane koja je aktivno doprinijela mogućoj neusklađenosti poslovanja poreskih obveznika članova grupe sa zakonom.
+(6) Poreski organ dostavlja informacije, nadležnom organu države članice EU ili druge države odnosno teritorije države, pod uslovom da je taj organ iskoristio sve raspoložive izvore informacija vodeći računa o ostvarivanju sopstvenih ciljeva.
+(7) Poreski organ ne može da odbije da pribavi informacije isključivo zato što te informacije nijesu od nacionalnog interesa, niti da odbije da dostavi informacije nadležnom organu države članice EU ili druge države odnosno teritorije države, samo zato što te informacije posjeduje banka, druga finansijska institucija, ovlašćeno lice, zastupnik ili fiducijar ili zato što se te informacije odnose na vlasničke interese fizičkog lica. 
+(8) Poreski organ može da preduzima istražne radnje ili da dostavlja informacije koje zahtjeva nadležni organ države članice EU ili druge države odnosno teritorije države, ako je preduzimanje takvih istražnih radnji ili prikupljanje tih informacija u skladu sa zakonom. 
+(9) Poreski organ može da odbije da dostavi informacije nadležnom organu države članice EU ili druge države odnosno teritorije države ako bi to dovelo do objelodanjivanja komercijalne, industrijske ili poslovne tajne ili komercijalnog postupka ili ako je otkrivanje tih informacija u suprotnosti sa javnim interesom.
+(10) Poreski organ obavještava nadležni organ države članice EU ili druge države odnosno teritorije države o razlozima za odbijanje zahtjeva za dostavljanje informacija. 
+(11) Bliži način razmjene informacija iz stava 1 ovog člana propisuje Ministarstvo.
+Saradnja sa drugim zemljama
+Član 16c
+Ako se, u skladu sa potvrđenim bilateralnim ili multilateralnim međunarodnim sporazumima, drugoj državi odnosno teritoriji države omogući šira saradnja u vezi razmjene informacija koji su od značaja za oporezivanje, poreski organ će državi članici Evropske unije, na zahtjev, omogućiti saradnju koja je ekvivalentna saradnji sa državom, odnosno teritorijom države sa kojom je zaključen sporazum.
+Zaštita podataka
+Član 16d
+​ (1) Poreski organ, izvještajna finansijska institucija, izvještajni operater platforme i izvještajni pružalac usluga povezanih sa kriptoimovinom smatraju se rukovaocima zbirke podataka kada samostalno ili zajednički utvrđuju svrhu i način obrade ličnih podataka u skladu sa zakonom kojim se uređuje zaštita podataka o ličnosti.
+(2) Izvještajna finansijska institucija, izvještajni operater platforme ili izvještajni pružalac usluga povezanih sa kriptoimovinom obavještavaju lice o kojem se izvještava da će informacije koje se na njega odnose prikupljati i dostavljati u skladu s ovim zakonom i tom licu pružaju sve informacije u skladu sa zakonom kojim se uređuje zaštita podataka o ličnosti prije izvještavanja o tim informacijama kako bi to lice moglo ostvariti svoja prava na zaštitu podataka.
+(3) Izvještajni operater platforme obavještava korisnika platforme o kojem izvještava da je podatke o plaćenoj naknadi dostavio nadležnom poreskom organu.
+(4) Izvještajni pružalac usluga povezanih sa kriptoimovinom obavještava korisnika kriptoimovine o kojem izvještava da je podatke o ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine dostavio nadležnom poreskom organu.
+Povreda podataka
+Član 16e
+​ (1) Povredom podataka u smislu ovog zakona smatra se povreda sigurnosti koja dovodi do uništenja, gubitka, izmjene ili bilo kakvog neprimjerenog i neovlašćenog pristupa informacijama, njihovog otkrivanja ili upotrebe, uključujući lične podatke koji se prenose, čuvaju ili na drugi način obrađuju, kao rezultat namjernih nezakonitih radnji, nepažnje ili nesreća.
+(2) Povreda podataka iz stava 1 ovog člana može se odnositi na povjerljivost, dostupnost i cjelovitost podataka.
+(3) Poreski organ će bez odlaganja obavijestiti Evropsku komisiju o svakoj povredi podataka i svim naknadnim korektivnim mjerama koje su preduzete.
+(4) Poreski organ će, u pisanom obliku, zatražiti od Evropske komisije da obustavi pristup Zajedničkoj komunikacionoj mreži za potrebe razmjene informacija ako se povreda podataka ne može odmah i na odgovarajući način staviti pod kontrolu.
+(5) Poreski organ može pisanim putem obavijestiti Evropsku komisiju, državu članicu EU ili drugu državu u kojoj je došlo do povrede podataka o obustavi razmjene informacija s navedenom državom.
+Uzajamna pomoć pri naplati potraživanja
+Član 16f
+(1) Poreski organ može da podnese zahtjev za pružanje uzajamne pomoći u naplati poreza, carina i drugih dažbina, osim doprinosa za obavezno socijalno osiguranje, od poreskog dužnika Crne Gore, nadležnom organu države članice EU, druge države odnosno teritorije države, ako ima saznanja da isti ima prebivalište ili imovinu u toj državi.
+(2) Poreski organ može da, na zahtjev nadležnog organa države članice EU, druge države odnosno teritorije države, pruži pomoć u naplati poreskih potraživanja iz stava 1 ovog člana, od poreskog dužnika te države, ako ta država ima saznanja da poreski dužnik ima prebivalište ili imovinu u Crnoj Gori.
+(3) Zahtjev za pružanje pomoći u naplati potraživanja iz stava 1 ovog člana podnosi se elektronski, na standardnom obrascu, putem Zajedničke komunikacione mreže, preko Centralne kancelarije za vezu, na službenom jeziku ili jednom od službenih jezika države koja prima zahtjev ili sadrži priloženi prevod na istom.
+(4) Bliži način pružanja pomoći u naplati potraživanja iz stava 1 ovog člana propisuje Ministarstvo.
+Uporedni i zajednički nadzor 
+Član 16g
+(1) Poreski organ i nadležni organ države članice EU, druge države odnosno teritorije države, mogu da, na osnovu zajedničkog dogovora, vrše uporedni odnosno zajednički nadzor kod jednog ili više fizičkih, odnosno pravnih lica u cilju dobijanja informacija koje su od zajedničkog ili komplementarnog interesa za te države.
+(2) Poreski organ obavještava nadležni organa druge države o prihvatanju ili odbijanju prijedloga za učešće u vršenju nadzora iz stava 1 ovog člana u roku od 60 dana od dana prijema istog. 
+(3) Poreski organ imenuje predstavnika koji je odgovoran za nadzor i koordinaciju sprovođenja nadzora iz stava 1 ovog člana.
+(4) Prava i obaveze službenika druge države koji učestvuju u zajedničkom nadzoru utvrđuju se u skladu sa zakonima države u kojoj se vrši zajednički nadzor.
+(5) Izuzetno od odredaba st. 1 i 3 ovog člana, nadležni poreski organ države u kojoj se vrši zajednički nadzor preduzima potrebne mjere kako bi:
+1) omogućila službenicima druge države koji vrše zajednički nadzor da obavljaju razgovor sa pojedinim licima i pregledaju evidenciju zajedno sa službenicima nadležnog organa države u kojoj se vrši zajednički nadzor;
+2) osigurala da se dokazi prikupljeni tokom vršenja zajedničkog nadzora mogu procijeniti i u pogledu dopuštenosti pod istim uslovima kao i u slučajevima nadzora u državi kada nadzor vrše samo službenici nadležnog organa te države, između ostalog i tokom postupka rješavanja po podnijetom prigovoru ili žalbi;
+3) osigurala da jedno ili više lica koji su predmet zajedničkog nadzora imaju ista prava i obaveze kao i slučaju kada nadzor vrše samo službenici nadležnog organa jedne države, između ostalog i tokom postupka rješavanja po podnijetom prigovoru ili žalbi.
+(6) Na osnovu rezultata zajedničkog nadzora nadležni organi država koje učestvuju u nadzoru će zauzeti stav o poreskom statusu lica koje je predmet nadzora i sačiniti Izvještaj o izvršenom zajedničkom nadzoru.
+(7) Nadležni poreski organ države u kojoj je izvršen zajednički nadzor obavještava lice nad kojim je nadzor sproveden o ishodu zajedničkog nadzora i dostavlja mu Izvještaj o izvršenom zajedničkom nadzoru u roku od 60 dana od sačinjavanja izvještaja.
+Učešće u postupku pružanja pomoći kod nadležnog organa
+Član 16h
+(1) Ovlašćeni službenici nadležnog organa koji podnosi zahtjev za uzajamnu pomoć mogu da, na osnovu dogovora sa nadležnim organom države koja prima zahtjev, u cilju naplate poreskih potraživanja:
+1) prisustvuju u prostorijama nadležnog organa koji prima zahtjev tokom obavljanja njihovih poslova,
+2) prisustvuju tokom preduzimanja upravnih istraga na teritoriji države koja prima zahtjev, i
+3) pružaju pomoć službenicima nadležnog organa države koja prima zahtjev tokom sudskog postupka.
+(2) Poreski organ obavještava nadležni organ druge države o prihvatanju ili odbijanju prijedloga za učešće u vršenju nadzora iz stava 1 ovog člana u roku od 60 dana od dana prijema istog. 
+(3) Ovlašćeni službenici iz stava 1 ovog člana, moraju imati pisano ovlašćenje, koje u svakom momentu mogu pokazati, u kojem je naveden njihov identitet i zvanje u službi.
+Pomoć u dostavljanju dokumentacije
+Član 16i
+Poreski organ, na zahtjev nadležnog organa druge države, dostavlja obavještenje o svim dokumentima, uključujući i spise pravosudnih organa, koji proizilaze iz države koja je podnijela zahtjev a odnose se na poreska potraživanja iz člana 16d ovog zakona.
+Naplata poreskih potraživanja
+Član 16j
+(1) Poreski organ, na zahtjev nadležnog organa druge države, vrši naplatu potraživanja iz člana 16f ovog zakona, u skladu sa odredbama ovog zakona, kojim je uređen postupak prinudne naplate poreza.
+(2) Uz zahtjev iz stava 1 ovog člana prilaže se i jedinstveni instrument kojim se dozvoljava njegovo sprovođenje u državi primaoca zahtjeva i koji predstavlja jedini osnov za naplatu i preduzimanje mjera predostrožnosti od strane poreskog organa.
+(3) Ako nadležni organ koji je podnio zahtjev za naplatu potraživanja ima saznanja da nove informacije koje posjeduje su relevantne za predmet koji je uzrokovao zahtjev za naplatu iste će proslijediti poreskom organu.
+(4) Poreski organ obavještava organ koji je podnio zahtjev za naplatu potraživanja o svim mjerama koje je preduzeo u vezi podnijetog zahtjeva.
+(5) Poreski organ nije u obavezi da, kod naplate poreskih potraživanja jedne države, daje istu prednost koju je dao sličnim naplatama poreskih potraživanja druge države, osim ako nije drugačije dogovoreno ili propisano zakonom.
+(6) Poreski organ nije u obavezi da pruži pomoć u naplati potraživanja iz člana 16d ovog zakona ukoliko je ukupni iznos potraživanja za koje se traži pomoć manji od 1.500 eura.
+Zapisnik 
+Član 17 ﻿
+- brisan -
+Član 18 ﻿
+- brisan -
+Član 19 ﻿
+- brisan -
+Član 20 ﻿
+- brisan -
+Akti u poreskom postupku 
+Član 21 ﻿
+(1) Poreski akt je svaki akt kojim se pokreće, dopunjava, mijenja ili dovršava neka radnja u poreskom postupku. 
+(2) Poreski akt iz stava 1 ovog člana je rješenje, zapisnik o inspekcijskom nadzoru, nalog za vršenje inspekcijskog nadzora, zapisnik o saslušanju, poziv i drugi akti. 
+(3) Poreski akt kojim se odlučuje o pojedinim pravima i obavezama iz poresko-pravnog odnosa je rješenje. 
+Oblik i sadržina poreskog akta 
+Član 22 ﻿
+(1) Poreski akt donosi se u pisanom obliku.
+(2) Izuzetno od stava 1 ovog člana, poreski inspektor može donijeti usmeni poreski akt na zapisnik i narediti njegovo izvršenje bez odlaganja, ako postoji osnovana sumnja da će se osujetiti naplata poreza.
+(3) Usmeni poreski akt iz stava 2 ovog člana mora se donijeti u pisanom obliku najkasnije u roku od tri dana od dana njegovog donošenja.
+(4) Poreski akt naročito sadrži:
+1) naziv poreskog organa, broj i datum;
+2) ime, odnosno naziv lica kome se dostavlja;
+3) pravni i činjenični osnov za odlučivanje;
+4) potpis ovlašćenog službenog lica, odnosno poreskog inspektora;
+5) otisak pečata.
+(5) Poreski akt kojim se nalaže neko činjenje ili uzdržavanje od činjenja mora da sadrži i upozorenje na posledice nepostupanja.
+Član 22a ﻿
+Poreski akt dostavlja se poreskom obvazniku slanjem preporučene pošiljke ili preko službenog lica poreskog organa.
+Poreski akt smatra se dostavljenim poreskom obvezniku kada se uruči poreskom obvezniku, njegovom zakonskom zastupniku, punomoćniku ili poreskom punomoćniku ili njegovom zastupniku po službenoj dužnosti.
+Ako se dostavljanje poreskog akta vrši slanjem preporučene pošiljke poreski akt smatra se dostavljenim danom uručenja, a ako uručenje nije bilo moguće, poreski akt smatra se dostavljenim po isteku roka od 15 dana od dana predaje poreskog akta poštom.
+Dostavljanje poreskog akta poreskom obvezniku, pravnom licu i preduzetniku, vrši se na njegovu adresu sjedišta koja je zabilježena u poreskom registru na osnovu prijave za registraciju ili ako je akt poslat preporučenom poštom na posljednju poznatu adresu pravnog lica.
+Dostavljanje poreskog akta fizičkom licu, vrši se na adresu njegovog prebivališta, odnosno boravišta, upisanu kod organa državne uprave nadležnog za vođenje registra prebivališta ili boravišta ili na adresu koja je zabilježena na prijavi za registraciju ili na poslednjoj poreskoj prijavi.
+Ako je poreski obveznik pravno lice poreski akt se smatra dostavljenim i kada se uruči zaposlenom licu kod pravnog lica.
+Ako je poreski obveznik fizičko lice, uključujući i preduzetnika, poreski akt se smatra dostavljenim i kada se uruči punoljetnom članu njegovog domaćinstva.
+Dostavljanje, u smislu ovog zakona, smatra se urednim i kada lica iz ovog člana odbiju da prime poreski akt ili odbiju da potpišu prijem poreskog akta, ako lice koje vrši dostavljanje o tome sačinu službenu zabilješku.
+Član 22b
+Ukoliko nije moguće dostaviti poreski akt na način utvrđen u članu 22a ovog zakona, dostavljanje će se izvršiti javnim obavještavanjem u skladu sa zakonom kojim se uređuje upravni postupak.
+Dostavljanje obavještenja na zahtjev nadležnog organa države članice EU, druge države, odnosno teritorije države
+Član 22c
+(1) Poreski organ može, na zahtjev nadležnog organa države članice EU, druge države, odnosno teritorije države, u skladu sa odredbama o dostavljanju poreskih akata, da obavijesti poreskog obveznika rezidenta Crne Gore, o poreskim aktima koje je donio organ države podnosilac zahtjeva.
+(2) Poreski organ odmah obavještava nadležni organi koji je podnio zahtjev o svim preduzetim aktivnostima, a posebno o datumu dostavljanja poreskog akta.
+(3) Poreski organ može da podnese zahtjev nadležnom organu druge države, da obavijesti poreskog obveznika, rezidenta te države o svim poreskim aktima koje je donio.
+(4) Poreski organ Crne Gore, odnosno nadležni organ druge države može podnijeti zahtjev za dostavljanje obavještenja iz stava 1 ovog člana samo ukoliko nije u mogućnosti da poreski akt dostavi poreskom obvezniku ili kada bi takva dostava prouzrokovala troškove velikih razmjera.
+Dostavljenje akta 
+Član 23 ﻿
+- brisan -
+
+Pregled prostorija u kojima se čuvaju knjige i evidencije i drugi predmeti od značaja za utvrđivanje poreske obaveze 
+Član 24 ﻿
+(1) Ovlašćeno službeno lice ima pravo da uđe i pregleda prostoriju gdje se:
+1) čuvaju ili mogu čuvati knjige i evidencije ili drugi predmeti potrebni za utvrđivanje poreske obaveze;
+2) obavlja ili bi se mogla obavljati bilo koja djelatnost koja podliježe oporezivanju.
+(2) Ovlašćeno službeno lice poreskog organa jedinice lokalne samouprave ima pravo da uđe i pregleda stan ili drugu prostoriju koja je predmet oporezivanja radi utvrđivanja činjenica od značaja za utvrđivanje poreske obaveze.
+(3) Ovlašćeno službeno lice iz st. 1 i 2 ovog člana može ući u stan ili drugu prostoriju protiv volje njegovog držaoca i u njima vršiti pretres na osnovu odluke suda.
+(4) Pretres se vrši uz prisustvo dva svjedoka.
+IV PRAVA I OBAVEZE PORESKIH OBVEZNIKA 
+Prava poreskog obveznika 
+Član 25 ﻿
+(1) Poreski obveznik ima pravo da: 
+1) bude tačno i blagovremeno informisan o svim pitanjima koja mu omogućavaju da prijavi i plati poreske obaveze; 
+2) traži od poreskog organa da prikupljene podatke o utvrđivanju poreske obaveze čuva kao poresku tajnu i da ih koristi, odnosno povjeri samo institucijama i organima, na način i po postupku propisanim ovim zakonom; 
+3) traži preispitivanje i ponovno utvrđivanje svoje poreske obaveze, na način propisan ovim zakonom; 
+4) od poreskog organa dobije besplatne informacije o poreskim propisima, pravima i obavezama koje iz njih proizilaze; 
+5) dobije poresku prijavu i druge poreske obrasce; 
+6) se poreski organ prema njemu odnosi sa poštovanjem i uvažavanjem; 
+7) zastupa lične interese pred poreskim organima, sam ili putem svog punomoćnika; 
+8) koristi poreske olakšice, u skladu sa poreskim propisima; 
+9) izvrši uvid u podatke o utvrđivanju i naplati poreske obaveze koji se o njemu vode kod poreskog organa i zahtijeva izmjenu netačnih i dopunu nepotpunih podataka;
+10) prisustvuje inspekcijskom nadzoru;
+11) koristi i druga prava utvrđena zakonom. 
+Obaveze poreskog obveznika 
+Član 26 ﻿
+(1) Poreski obveznik je dužan da: 
+1) podnese prijavu radi registracije nadležnom poreskom organu; 
+2) tačno obračuna porez i podnese poresku prijavu poreskom organu u roku i na način utvrđen poreskim propisima;
+3) prijavi nadležnom poreskom organu svaku promjenu adrese sjedišta, prebivališta, odnosno boravišta, te drugih podataka iz registra poreskog obveznika; 
+4) vodi poslovne knjige i evidencije na propisan način i čuva ih u skladu sa zakonom; 
+5) izmiri poreske obaveze na način i u rokovima utvrđenim zakonom i drugim propisom donesenim na osnovu zakona; 
+6) podnese dokumenta i druge podatke koji su potrebni za utvrđivanje poreske obaveze na zahtjev poreskog organa; 
+7) omogući nesmetan rad službenika poreskog organa u obavljanju zakonskih ovlašćenja; 
+8) izvršava druge obaveze utvrđene poreskim propisima.
+(2) Strano pravno ili fizičko lice koje nema stalnu poslovnu jedinicu, odnosno prebivalište na teritoriji Crne Gore, a ostvaruje prihode ili posjeduje imovinu u Crnoj Gori, dužno je da u roku od deset dana od dana početka ostvarivanja prihoda, odnosno sticanja imovine u Crnoj Gori, imenuje poreskog punomoćnika i o tome obavijesti poreski organ.
+(3) Izuzetno od stava 2 ovog člana, ako strano pravno ili fizičko lice ostvaruje prihode koji se oporezuju po odbitku, za koje nije obavezno podnošenje poreske prijave, nije dužno da imenuje poreskog punomoćnika. 
+Sekundarna poreska obaveza
+Član 26a ﻿
+(1) Sekundarna poreska obaveza nastaje kada je lice odgovorno za dospjelu poresku obavezu drugog poreskog obveznika ili za dospjelu sekundarnu poresku obavezu drugog poreskog obveznika.
+(2) Licem iz stava 1 ovog člana smatra se:
+1) zakonski zastupnik koji je propustio da ispuni obavezu plaćanja poreza za poreskog obveznika, iako je poreski obveznik bio u mogućnosti da to uradi;
+2) lice za koje je pravnosnažnom sudskom odlukom utvrđeno da je izvršilo utaju poreza, pomaganje ili prikrivanje utaje, za iznos utajenog poreza i pripadajuće kamate;
+3) lice koje je odgovorno za sačinjavanje finansijskih iskaza i vjerodostojnost poslovnih knjiga poreskog obveznika, ako je svojim radnjama i bez dužne pažnje umanjilo poslovne prihode u odnosu na stvarne prihode, a što je prouzrokovalo umanjenje poreske obaveze;
+4) povezano lice kojem je poreski obveznik prenio imovinu bez naknade, bez protivusluge ili po cijeni nižoj od tržišne, do iznosa vrijednosti prenesene imovine;
+5) odgovorno lice poreskog obveznika koje ostvareni prihod u gotovini nije uplatilo na račun u banci do iznosa neuplaćenih prihoda;
+6) lice koje stiče dio privrednog društva poreskog obveznika koje predstavlja privrednu cjelinu, za iznos poreza koji je povezan sa poslovanjem tog dijela društva, osim ako je sticanje izvršeno u stečajnom i izvršnom postupku;
+7) lice koje je umanjilo poresku obavezu poreskog obveznika prouzrokovanjem krivičnog djela lažnog stečaja.
+(3) Sekundarna poreska obaveza obuhvata i kamatu i troškove prinudne naplate.
+(4) Sekundarnu poresku obavezu poreski organ može naplatiti od dužnika ili od lica kojem je utvrđena sekundarna poreska obaveza u skladu sa stavom 2 ovog člana.
+V IDENTIFIKACIJA I OPŠTA REGISTRACIJA PORESKOG OBVEZNIKA
+Član 27 ﻿
+(1) Opšta registracija poreskog obveznika kod nadležnog poreskog organa vrši se na osnovu prijave za registraciju upisom u poreski registar, u roku i na način propisan ovim zakonom.
+(2) Prijavu za registraciju dužni su da podnesu:
+1) pravno lice ili organizacija koja obavlja djelatnost, ostvaruje prihode ili posjeduje imovinu u ili van Crne Gore;
+2) strano pravno lice ili organizacija koja obavlja djelatnost, ostvaruje prihode ili posjeduje imovinu u Crnoj Gori;
+3) strano pravno lice ili organizacija koja obavlja djelatnost ili ostvaruje prihode u Crnoj Gori;
+4) strano fizičko lice koje obavlja djelatnost, ostvaruje prihode ili posjeduje imovinu u Crnoj Gori.
+(3) Poreski organ, u cilju identifikacije poreskih obveznika, u roku od osam dana od dana podnošenja prijave za registraciju donosi rješenje o registraciji kojim se pravnim i fizičkim licima dodjeljuje PIB.
+(4) Izuzetno od stava 3 ovog člana, za lica koja ne podnesu prijavu za registraciju, poreski organ će donijeti rješenje o registraciji po službenoj dužnosti.
+(5) Rješenje o registraciji iz st. 3 i 4 ovog člana je javna isprava kojom se dokazuje da je poreski obveznik upisan u registar i da mu je dodijeljen PIB.
+(6) Pravnim i fizičkim licima koji su obveznici lokalnih javnih prihoda dodjeljuje se lokalni poreski identifikacioni broj automatske obrade podataka (u daljem tekstu: AOP).
+(7) PIB je jedinstveni i jedini broj pravnog, odnosno fizičkog lica za sve vrste poreza i zadržava se prilikom promjene sjedišta, prebivališta, odnosno boravišta poreskog obveznika.
+(8) PIB se unosi u:
+1) akt koji poreski obveznik podnosi poreskom organu, državnim organima i organima lokalne uprave;
+2) akt koji poreski organ dostavlja poreskom obvezniku;
+3) nalog kojim poreski obveznik plaća poresku obavezu.
+(9) Bliži način određivanja PIB broja propisuje Ministarstvo.
+Član 28 ﻿
+(1) Poreski organ vodi registar poreskih obveznika. 
+(2) Poreski registar je skup podataka o poreskom obvezniku koji se sastoji od registarskih uložaka i zbirke isprava. Registarski uložak se sastoji iz registarskih listova u koje se upisuju svi podaci koji se registruju. Zbirka isprava je hronološko vođenje isprava i akata na osnovu kojih je izvršen upis u registarski uložak.
+ 
+Mjesto i vrijeme registracije 
+Član 29 ﻿
+(1) Prijava za registraciju, za lica iz člana 27 stav 2 tač. 1) i 3) ovog zakona, podnosi se poreskom organu prema adresi sjedišta tih lica.
+(2) Prijava za registraciju, za lica iz člana 27 stav 2 tač. 2) i 4) ovog zakona, podnosi se prema mjestu prebivališta, odnosno boravišta tih lica.
+(3) Prijava za registraciju, za lice iz člana 27 stav 2, tačka 4) ovog zakona, koje nema prebivalište, odnosno boravište na teritoriji Republike, podnosi se poreskom organu, prema mjestu ostvarivanja prihoda, odnosno posjedovanja imovine tog lica.
+(4) Kriterijume za određivanje velikih, srednjih, malih i mikro poreskih obveznika, na predlog poreskog organa, propisuje Ministarstvo.
+Član 30 ﻿
+- brisan -
+
+Član 31 
+- brisan - 
+Član 32 ﻿
+(1) Prijavu za registraciju, lica iz člana 27 stav 2 tač. 1) i 3) ovog zakona, podnose u roku od pet radnih dana od dana upisa u odgovarajući registar u skladu sa zakonom.
+(2) Izuzetno od stava 1 ovog člana, prijavu za registraciju, lica iz člana 27 stav 2 tač. 1 i 3 ovog zakona, podnose istovremeno sa prijavom za registraciju za obavljanje privredne djelatnosti.
+(3) Prijavu za registraciju, lica iz člana 27 stav 2 tač. 2) i 4) ovog zakona, podnose u roku od pet radnih dana od dana ostvarivanja oporezivog prihoda, upisa u odgovarajući registar, odnosno sticanja imovine koja podliježe oporezivanju.
+Član 33 ﻿
+(1) Lica iz člana 27 ovog zakona dužna su da o svim promjenama koje nastanu u toku poslovanja, a odnose se na upisane podatke u registar, obavijeste poreski organ, u roku od 15 dana od dana nastanka promjene.
+(2) Promjene podataka evidentiranih u registar privrednih društava ažuriraju se automatski u sistemu poreskog organa.
+(3) Promjene koje nijesu predmet registracije u registar privrednih društava, poreski obveznik prijavljuje nadležnoj područnoj jedinici poreskog organa.
+
+Obaveze upravnih organa zaduženih za registraciju ﻿ 
+Član 34 ﻿
+(1) Organ državne uprave nadležan za vođenje evidencije o rođenju, jedinstvenom matičnom broju, prebivalištu, boravištu, smrti i drugim činjenicama od značaja za oporezivanje dužan je da obavještava poreski organ o navedenim podacima, u roku od pet radnih dana od dana prijave ili promjene tih podataka.
+(2) Advokatska komora, profesionalna udruženja, kao i drugi organi i organizacije nadležni za upis u odgovarajući registar lica koja obavljaju određenu djelatnost dužni su da, u roku od pet radnih dana od dana izvršenog upisa, poreskom organu dostave obavještenje o upisu, poništavanju upisa i brisanju iz registra, kao i o drugim promjenama od značaja za utvrđivanje poreza.
+Prestanak registracije
+Član 35 ﻿
+Poreski organ dužan je da, u roku od pet radnih dana od dana prijema obavještenja iz čl. 33 i 34 ovog zakona, izvrši promjene u poreskom registru, odnosno da, u roku od 15 dana, donese rješenje o prestanku registracije.
+VI PORESKA PRIJAVA 
+Član 36 ﻿
+(1) Pod poreskom prijavom, u smislu ovog zakona, podrazumeva se dokumenat koji se sačinjava i podnosi poreskom organu na propisanom obrascu. 
+(2) Poreska prijava obavezno sadrži opšti i posebni dio. U opštem dijelu poreske prijave unose se matični podaci poreskog obveznika, a u posebnom dijelu podaci od značaja za utvrđivanje poreske obaveze. 
+(3) Uz poresku prijavu poreski obveznik je dužan da priloži i svu dokumentaciju koja je od značaja za utvrđivanje poreske obaveze propisane poreskim propisima. 
+(4) Poreski obveznik podnosi poresku prijavu poreskom organu kod kojeg je upisan u registar poreskih obveznika, ukoliko ovim zakonom nije drukčije propisano. 
+(5) Poreska prijava se podnosi za svaku vrstu poreza posebno, na način i u rokovima propisanim poreskim zakonima. 
+(6) Poreski obveznik poresku prijavu može podnijeti elektronski, neposredno ili putem pošte, u skladu sa zakonom.
+(7) Poreski obveznik ili njegov punomoćnik potpisuje poresku prijavu pod prijetnjom kazne za krivokletstvo. Odgovornost u tom slučaju snosi i stručno lice koje je sačinilo poresku prijavu ili njen dio. Stručno lice je dužno da prilikom potpisa unese i svoj PIB. 
+(8) Oblik i sadržinu poreske prijave, na predlog poreskog organa, propisuje Ministarstvo.
+Podnošenje poreske prijave od strane poreskog organa
+Član 37 ﻿
+(1) Poreski organ ima ovlašćenje da za poreskog obveznika podnese poresku prijavu, u roku od tri dana od dana saznanja da prijava nije podnijeta u propisanom roku.
+(2) Poreski organ ima ovlašćenje da na osnovu podataka kojima raspolaže za poreskog obveznika dopuni nepotpunu i ispravi pogrešno popunjenu poresku prijavu, odmah po saznanju o propustima i greškama u podnijetoj prijavi.
+(3) Poreski organ kopiju prijave iz st. 1 i 2 ovog člana dostavlja poreskom obvezniku.
+Izmijenjena poreska prijava 
+Član 38 ﻿
+(1) Poreski obveznik koji otkrije da poreska prijava, koju je podnio, sadrži grešku ili propust dužan je da bez odlaganja, a najkasnije u roku od pet godina od isteka roka za podnošenje poreske prijave, u skladu sa zakonom podnese izmijenjenu poresku prijavu u kojoj je ta greška ili propust ispravljen. 
+(2) Prvobitno podnijeta poreska prijava ne vraća se poreskom obvezniku.
+(3) Podnijetu poresku prijavu poreski obveznik može da izmijeni najviše dva puta podnošenjem izmijenjene poreske prijave.
+(4) Izuzetno od st. 1 i 3 ovog člana, poreski obveznik ne može podnijeti izmijenjenu poresku prijavu poslije pokretanja postupka kontrole, odnosno nakon donošenja rješenja o utvrđivanju poreske obaveze iz člana 52 stav 2 ovog zakona.
+- naslov brisan - 
+Član 39 
+- brisan - 
+  
+Poreska prijava za porez po odbitku
+Član 40 ﻿
+(1) Poreska prijava za porez po odbitku je izvještaj koji poreski isplatilac, odnosno 
+posrednik, podnosi poreskom organu.
+(2) Zbirna poreska prijava, odnosno izvještaj sadrži podatke o obračunatom i plaćenom porezu po odbitku od strane jednog poreskog isplatioca, odnosno posrednika, za sve primaoce prihoda.
+(3) Pojedinačna poreska prijava sadrži podatke o obračunatom i plaćenom porezu po odbitku od strane jednog poreskog isplatioca, odnosno posrednika, za svakog primaoca prihoda.
+(4) Izvještaj iz stava 2 ovog člana podnosi se do 15. u mjesecu za isplate izvršene u prethodnom mjesecu.
+(5) Pojedinačna poreska prijava podnosi se jednom godišnje, najkasnije do 31. januara tekuće, za prethodnu godinu.
+(6) Poreski isplatilac, odnosno posrednik dužan je da licu iz čijeg je prihoda naplaćen porez po odbitku, po isteku godine, a najkasnije do 31. januara, izda potvrdu o plaćenom porezu, u koju se unose podaci o bruto prihodu, troškovima, oporezivom prihodu, olakšicama i po odbitku plaćenom porezu.
+(7) Oblik i sadržinu poreske prijave iz stava 1 ovog člana, na predlog poreskog organa, propisuje Ministarstvo.
+Ovlašćenje poreskog organa za produženje roka za podnošenje poreske prijave 
+Član 41 
+(1) Na zahtjev poreskog obveznika, starješina poreskog organa može da odobri produženje roka za podnošenje poreske prijave propisanog zakonom, najduže 90 dana od dana isteka tog roka. 
+(2) Produženje roka iz stava 1 ovog člana može se odobriti u slučaju: bolesti, odsustva iz zemlje i drugih okolnosti na koje poreski obveznik nije mogao uticati. 
+(3) Zahtjev iz stava 1 ovog člana podnosi se u pisanom obliku u roku propisanom za podnošenje poreske prijave, s tim što se razlog za propuštanje roka mora dokazati. 
+(4) O zahtjevu iz stava 3 ovog člana odlučuje se rješenjem, u roku od sedam dana od dana prijema zahtjeva. 
+(5) Produženje roka u skladu sa ovim članom ne utiče na vrijeme dospjeća plaćanja poreza i obračun kamate za taj period. 
+(6) Ako je rok za podnošenje poreske prijave istekao, a zahtjev iz stava 1 ovog člana odbijen, poreska prijava se mora podnijeti narednog dana od dana dostavljanja rješenja o odbijanju zahtjeva.
+VII PORESKA OBAVEZA 
+Član 42 ﻿
+(1) Poreska obaveza je obaveza poreskog obveznika odnosno poreskog dužnika da plati porez, kamatu i troškove postupka, pojedinačno ili zajedno, na način propisan zakonom. 
+(2) Poreska obaveza iz stava 1 ovog člana za određeni porez, troškove postupka ili kamatu smatra se dospjelom u roku propisanim zakonom. 
+Ispunjenje poreske obaveze
+Član 42a
+(1) Poreska obaveza smatra se ispunjenom plaćanjem dugovanog iznosa poreza po dospjelosti.
+(2) Poresku obavezu ispunjava neposredno poreski obveznik ili drugo lice odgovorno za ispunjenje poreske obaveze poreskog obveznika u skladu sa zakonom.
+(3) Poreski obveznici - pravna lica, preduzetnici i fizička lica koji obavljaju delatnost, čiji su računi blokirani radi izvršenja prinudne naplate, mogu međusobne novčane obaveze izmirivati i ugovaranjem promjene poverioca, odnosno dužnika u određenom obligacionom odnosu (asignacija, cesija i dr.), samo radi ispunjenja poreskih obaveza.
+Odgovornost za obavezu pravnog lica u slučaju likvidacije ili stečaja ﻿ 
+Član 43 ﻿
+(1) Poresku obavezu pravnog lica koji je u postupku likvidacije izmiruje likvidacioni upravnik iz novčanih sredstava pravnog lica, uključujući prihode od prodaje imovine.
+(2) Poresku obavezu poslovne jedinice pravnog lica u likvidaciji neposredno ispunjava pravno lice čiji je dio ta jedinica.
+(3) Poreska obaveza pravnog lica u stečaju izvršava se na način predviđen zakonom kojim se uređuju uslovi, način pokretanja i sprovođenja stečaja.
+Odgovornost za poresku obavezu u slučaju statusnih promjena pravnog lica ﻿ 
+Član 44 ﻿
+(1) U slučaju statusnih promjena pravnog lica, poresku obavezu izmiruje pravni sljedbenik, bez obzira da li je prije okončanja postupka statusne promjene bio u saznanju da pravno lice nije izmirilo svoju poresku obavezu.
+(2) Rok za izmirenje poreske obaveze u slučaju statusnih promjena pravnog lica se ne mijenja ako je izmirenje te obaveze prešlo na pravnog sljedbenika.
+(3) Pravni sljedbenik iz stava 1 ovog člana je:
+1) u slučaju spajanja - pravno lice koje je nastalo spajanjem dva ili više pravnih lica poreskih obveznika;
+2) u slučaju pripajanja - pravno lice kome se jedno ili više pravnih lica poreskih obveznika pripojilo;
+3) u slučaju podjele - pravna lica nastala podjelom poreskog obveznika.
+(4) Ako u slučaju iz stava 3 ovog člana postoji više pravnih sljedbenika, svi su neograničeno solidarno odgovorni za poresku obavezu pravnog prethodnika.
+(5) Promjena statusnog ili svojinskog oblika pravnog lica ne utiče na ispunjenje poreske obaveze.
+Odgovornost za poresku obavezu lica koje je umrlo, izgubilo poslovnu sposobnost ili je nestalo
+Član 45
+(1) Poresku obavezu umrlog lica izmiruju njegovi nasljednici do iznosa vrijednosti naslijeđene imovine, srazmjerno njihovom učešću u nasljedstvu.
+(2) Poresku obavezu lica koje sud proglasi nestalim izmiruje zakonski zastupnik ili izvršilac testamenta, iz njegove imovine.
+(3) Poresku obavezu lica koje je sud proglasio poslovno nesposobnim izmiruje zakonski zastupnik, iz njegove imovine.
+Podnaslovi i članovi 46. do 49.
+- brisani -
+
+VIII PLAĆANjE PORESKE OBAVEZE 
+Član 50 ﻿
+(1) Plaćanje poreske obaveze poreski obveznik vrši u rokovima i na način propisan poreskim zakonima. 
+(2) Plaćanje poreske obaveze izvršava se, po pravilu, preko nosilaca platnog prometa, uplatom na odgovarajuće uplatne račune. 
+(3) Danom plaćanja poreske obaveze smatra se dan kada je uplata poreske obaveze primljena na odgovarajući uplatni račun. 
+(4) Ministarstvo propisuje uplatne račune za plaćanje poreza.
+Nalog za plaćanje poreske obaveze 
+Član 51 ﻿
+(1) Nalog za plaćanje poreske obaveze je finansijski dokument koji podnosi poreski obveznik na propisanom obrascu. 
+(2) Pri podnošenju naloga, poreski obveznik je dužan naznačiti na koju poresku obavezu se nalog odnosi. 
+(3) Plaćanje poreske obaveze iz stava 2 ovog člana vrši se po sljedećem redosljedu:
+1) porez;
+2) kamata.
+(4) Troškovi postupka uplaćuju se na poseban račun, u skladu sa propisom kojim se uređuju računi na koje se vrši uplata javnih prihoda.
+(5) Na pisani zahtjev poreskog obveznika može se odložiti plaćanje poreskog duga, u cjelosti ili djelimično, u skladu sa posebnim propisom.
+IX UTVRĐIVANjE PORESKE OBAVEZE 
+Član 52 ﻿
+(1) Poreski obveznik sam vrši utvrđivanje poreza kada je poreskim zakonom propisano samooporezivanje.
+(2) Utvrđivanje poreske obaveze vrši poreski organ kada poreski obveznik ne obračuna ili netačno obračuna porez, odnosno ne prijavi ostvareni prihod i kada je to propisano poreskim zakonom.
+(3) Neprijavljeni prihod iz stava 2 ovog člana, je ostvareni prihod koji je utvrđen na osnovu razlike između vrijednosti imovine na kraju i početku kalendarske godine umanjene za iznos prijavljenog dohotka.
+(4) Utvrđivanje poreske obaveze iz stava 2 ovog člana vrši se rješenjem.
+Poresko rješenje 
+Član 53 ﻿
+(1) Poresko rješenje iz člana 52 stav 4 ovog zakona, poreski organ donosi na osnovu poslovnih knjiga i evidencija poreskog obveznika.
+(2) Ako poreski organ rješenje iz stava 1 ovog člana ne može da donese na osnovu poslovnih knjiga i evidencija poreskog obveznika, rješenje će se donijeti na osnovu procjene poreske osnovice.
+(3) Procjenu poreske osnovice iz stava 2 ovog člana poreski organ vrši, po slobodnoj ocjeni, na osnovu:
+1) raspoložive uredne poslovne dokumentacije koja nije proknjižena;
+2) raspoložive uredne poslovne dokumentacije o poslovanju u određenom periodu koji je kraći od perioda oporezivanja (dnevnom, nedjeljnom ili mjesečnom);
+3) podataka i činjenica o ostvarenom prometu (dnevnom, nedeljnom ili mjesečnom) dobijenih u postupku inspekcijskog nadzora;
+4) podataka dobijenih upoređivanjem sa drugim poreskim obveznicima koji obavljaju istu ili sličnu djelatnost na istoj ili sličnoj lokaciji, pod približno jednakim uslovima ili upoređivanjem sa prosječnim prihodom više poreskih obveznika koji obavljaju istu ili sličnu djelatnost, na istoj ili sličnoj lokaciji pod približno jednakim uslovima (broj zaposlenih, sredstva rada, veličina i tehnička opremljenost poslovnih prostorija, asortiman proizvoda odnosno usluga, obim proizvodnje odnosno usluga, kvalitet, vrijeme rada i ukupno ostvareni promet);
+5) podataka o mogućnostima prodaje proizvoda odnosno obavljanja usluga utvrđenih u postupku inspekcijskog nadzora na osnovu instaliranih kapaciteta poreskog obveznika;
+6) podataka o troškovima poreskog obveznika nastalih za privatne potrebe i podataka o stečenoj imovini (nepokretnosti, akcije i udjeli u pravnom licu, oprema za obavljanje samostalne djelatnosti, motorna vozila, plovni objekti, vazduhoplovi, štedni ulozi, gotov novac i druga imovinska prava);
+7) podataka iz poreskih prijava podnijetih za prethodne poreske periode.
+(4) Poreski organ, prilikom utvrđivanja poreske osnovice putem procjene, ima pravo da vrši uvid i pribavlja podatke iz evidencija koje vode nadležni organi, pravna lica i službe koje vrše javna ovlašćenja o nepokretnim i pokretnim stvarima i podatke iz kojih se može utvrditi imovina fizičkog lica, finansijskih instrumenata, štednim ulozima i računima kod poslovnih banaka.
+(5) Nadležni organi, pravna lica i službe koje vrše javna ovlašćenja iz stava 4 ovog člana, dužni su da, na zahtjev poreskog organa, dostave podatke kojima raspolažu, odnosno omoguće uvid u te podatke, radi utvrđivanja imovine fizičkog lica.
+(6) Izuzetno od stava 1 ovog člana, ako poreski organ, do isteka roka za donošenje poreskog rješenja utvrđenog zakonom, ne može da utvrdi porez na osnovu potpuno utvrđenog činjeničnog stanja donijeće privremeno poresko rješenje, na osnovu do tada utvrđenog činjeničnog stanja.
+(7) Poreski organ je dužan da u roku od tri godine, od dana donošenja privremenog rješenja donese rješenje o utvrđivanju poreza, kojim se ukida privremeno rješenje.
+Sadržina poreskog rješenja ﻿ 
+Član 54 ﻿
+(1) Pored podataka utvrđenih zakonom kojim se uređuje upravni postupak, dispozitiv poreskog rješenja sadrži naročito:
+1) PIB poreskog obveznika;
+2) vrstu poreza;
+3) poresku osnovicu;
+4) poresku stopu;
+5) iznos utvrđenog poreza;
+6) poreski period;
+7) poreske olakšice;
+8) uplatni račun;
+9) nalog i rok za uplatu; i
+10) iznos kamate i kamatnu stopu.
+(2) Žalba izjavljena protiv poreskog rješenja iz stava 1 ovog člana ne odlaže izvršenje tog rješenja.
+Plaćanje poreske obaveze prema rješenju 
+Član 55 
+Poreska obaveza utvrđena poreskim rješenjem dospijeva za plaćanje u roku od 10 dana od dana dostavljanja rješenja, ukoliko poreskim zakonom nije drukčije propisano. 
+Evidentiranje poreske obaveze
+Član 55a
+(1) Poreski organ vrši evidentiranje poreske obaveze, utvrđene na način iz člana 52 ovog zakona, za svakog poreskog obveznika.
+(2) Evidentiranje poreske obaveze vrši se po prijemu poreske prijave i po dostavi poreskog rješenja.
+ 
+X PRINUDNA NAPLATA POREZA
+Član 56 ﻿
+(1) Postupak prinudne naplate preduzima se kada poreski obveznik odnosno poreski dužnik poresku obavezu nije platio prilikom podnošenja poreske prijave, odnosno kada je poresko rješenje postalo izvršno.
+(2) Poreski organ pokreće postupak prinudne naplate donošenjem rješenja o prinudnoj naplati poreske obaveze.
+(3) Troškove prinudne naplate snosi poreski obveznik.
+(4) Visinu troškova prinudne naplate propisuje Vlada.
+Član 57 ﻿
+(1) Rješenje o prinudnoj naplati naročito sadrži:
+1) naznaku poreske prijave, odnosno izvršnog rješenja i datum kada je poreska prijava evidentirana, odnosno rješenje postalo izvršno;
+2) iznos poreskog duga po vremenu dospjelosti, iznos kamate i troškova postupka;
+3) nalog poreskom obvezniku da u roku od 10 dana plati poreski dug;
+4) naznaku predmeta i sredstava prinudne naplate;
+5) broj računa u čiju se korist vrši uplata;
+6) naznaku dužnika poreskog obveznika;
+7) bližu identifikaciju nepokretnosti prema podacima iz javne knjige;
+8) naznaku da troškovi postupka prinudne naplate padaju na teret poreskog obveznika;
+9) naziv isplatioca i njegovo sjedište.
+(2) Ako se prinudna naplata vrši iz zarada, penzija i drugih ličnih primanja poreskog obveznika, rješenje o prinudnoj naplati dostavlja se i njegovom isplatiocu.
+Član 58 ﻿
+(1) Protiv rješenja o prinudnoj naplati može se izjaviti žalba u roku od 15 dana od dana njegove dostave.
+(2) Žalba ne odlaže izvršenje rješenja.
+Član 59 ﻿
+(1) Predmeti prinudne naplate mogu biti:
+1) novčana sredstva poreskog obveznika,
+2) novčana potraživanja poreskog obveznika;
+3) imovina (pokretna i nepokretna) poreskog obveznika.
+4) nenovčana potraživanja i druga prava poreskog obveznika (roba, usluga, udio u privrednom društvu i sl.);
+5) zarade, naknada zarada i penzije, u dijelu koji nije izuzet od izvršenja u skladu sa zakonom kojim se uređuje izvršenje i obezbeđenje.
+(2) Prinudna naplata se može sprovesti na jednom ili više predmeta iz stava 1 ovog člana.
+Član 60 ﻿
+(1) U postupku prinudne naplate poreske obaveze, radi obezbjeđenja poreskog potraživanja, na imovini poreskog obveznika može se zasnovati založno pravo.
+(2) U postupku zasnivanja založnog prava poreski organ rješenjem o prinudnoj naplati nalaže:
+1) popis pokretnih stvari;
+2) popis nepokretnosti;
+2a) pribavljanje dokaza da je nepokretnost upisana u katastar nepokretnosti kao svojina ili susvojina poreskog obveznika;
+3) zabranu prenosa novčanih sredstava preko računa poreskog obveznika otvorenog kod banke, osim radi izmirenja obaveza po osnovu poreza;
+4) zabranu dužnicima poreskog obveznika da poreskom obvezniku plate dug u gotovom novcu i nalaže upis zabrane u odgovarajući registar;
+5) zabranu dužnicima poreskog obveznika da ispune druge obaveze prema njemu i nalaže upis zabrane u odgovarajući registar.
+(3) Rješenje iz stava 2 ovog člana dostavlja se poreskom obvezniku, odgovarajućim registrima, dužnicima poreskog obveznika i banci.
+(4) Po izvršenom popisu pokretnih stvari ili nepokretnosti i pribavljanja dokaza iz stava 2 tačka 2a ovog člana, poreski organ rješenjem nalaže nadležnom organu da izvrši upis založnog prava u odgovarajući registar u skladu sa zakonom.
+(5) Uz rješenje iz stava 4 ovog člana poreski organ dostavlja zapisnik o popisu pokretnih stvari ili nepokretnosti.
+(6) Zabrane iz stava 2 tač. 3 i 5 i rješenje iz stava 4 ovog člana upisuju se odmah po dostavljanju rješenja, kod nadležnog organa, u založni registar pokretnih stvari, u registar nepokretnosti, odnosno u spisak blokiranih pravnih lica i preduzetnika kod Centralne banke Crne Gore, sa datumom i tačnim vremenom prijema.
+(7) Rješenje iz stava 2 ovog člana postaje izvršan danom dostavljanja poreskom obvezniku.
+(8) Zaloga traje do izmirenja poreskog duga ili poništenja poreskog rješenja.
+(9) U pogledu drugih pitanja koja nijesu uređena ovim zakonom primjenjuje se zakon kojim je uređena zaloga, odnosno hipoteka.
+Član 60a
+U postupku prinudne naplate poreske obaveze, radi obezbjeđenja poreskog potraživanja, može se zaključiti ugovor o fiducijarnom prenosu prava svojine na imovini poreskog dužnika uz prethodnu saglasnost Vlade Crne Gore.
+Prinudna naplata iz novčanih sredstava i potraživanja poreskog obveznika
+Član 61 ﻿
+(1) Prinudna naplata iz novčanih sredstava poreskog obveznika vrši se prenosom sredstava sa računa poreskog obveznika na račun u čiju korist se vrši uplata poreske obaveze.
+(2) Prinudna naplata iz novčanih potraživanja poreskog obveznika vrši se na način što se nalaže dužniku poreskog obveznika da svoj dug prema poreskom obvezniku izmiri uplatom na račun u čiju korist se vrši uplata poreske obaveze, po dospjelosti novčanih potraživanja.
+(3) Ako dužnik iz stava 2 ovog člana ne izvrši plaćanje po dospjelosti novčanih potraživanja, poreski organ vrši prinudnu naplatu iz novčanih sredstava sa računa dužnika poreskog obveznika.
+(4) Rješenje o prinudnoj naplati iz st. 1, 2 i 3 dostavlja se Centralnoj banci Crne Gore, na izvršenje.
+Član 61a
+(1) Prinudna naplata iz zarade, naknade zarade, odnosno penzije poreskog obveznika vrši se obustavom na zaradi, naknadi zarade, odnosno penziji od strane isplatioca tih primanja i uplatom obustavljenog iznosa na propisani račun u čiju korist se vrši uplata poreske obaveze počev od prve naredne isplate do izmirenja poreske obaveze, u skladu sa zakonom kojim se uređuje postupak izvršenja i obezbjeđenja.
+(2) Ako isplatilac zarade, naknade zarade, odnosno penzije, ne postupi u skladu sa stavom 1 ovog člana poreski organ vrši prinudnu naplatu iz novčanih sredstava sa računa isplatioca, u skladu sa članom 61 ovog zakona.
+Naplata poreske obaveze iz novčanih sredstava 
+Član 62 
+- brisan - 
+
+Naplata poreske obaveze iz imovine 
+Član 63 ﻿
+(1) Pod prinudom naplatom poreske obaveze iz imovine poreskog obveznika podrazumjeva se plenidba i prodaja imovine (pokretne ili nepokretne) poreskog obveznika i korišćenje sredstava dobijenih prodajom ili drugim postupkom za naplatu poreske obaveze. 
+(2) Imovina poreskog obveznika koja se može zaplijeniti i prodati uključuje imovinu i imovinska prava koja pripadaju poreskom obvezniku, bilo da tu imovinu fizički posjeduje on ili neko drugo lice. 
+(3) Rješenje o prinudnoj naplati se dostavlja poreskom obvezniku čija se imovina plijeni, odnosno drugom licu ako to lice posjeduje imovinu poreskog obveznika ili mu je dužno po nekom drugom osnovu. 
+Član 64 ﻿
+(1) Plenidbu vrši ovlašćeno službeno lice u prisustvu dva svijedoka. Poreski obveznik ima pravo da prisustvuje postupku plenidbe. 
+(2) Plenidba se sastoji od popisa i procjene imovine. 
+(3) Svako lice koje posjeduje imovinu koja se plijeni dužno je predati ili platiti iznos te imovine ovlašćenom službenom licu na njegov zahtjev. 
+(4) U slučaju kada se kod nekog lica nalazi imovina poreskog obveznika koja je predmet plenidbe, imovina se može zaplijeniti samo na osnovu sudskog rješenja koje se donosi u izvršnom postupku. 
+(5) Za donošenje rješenja iz stava 4 ovog člana poreski organ će, uz zahtjev sudu, dostaviti i dokaze o postojanju poreskog duga, da lice posjeduje gotovinu ili druga sredstva iz kojih bi se mogao naplatiti porez, te da je pokušaj naplate bio neuspješan. 
+(6) Postupak plenidbe traje dok se ne izmiri poreska obaveza, odnosno obustavi postupak prinudne naplate.
+(7) Plenidba nepokretne imovine poreskog obveznika smatra se izvršenom danom izvršnosti rješenja iz člana 60 stav 4 ovog zakona.
+Član 65 
+- brisan - 
+Član 66 ﻿
+(1) O provedenom postupku plenidbe ovlašćeno službeno lice sastavlja zapisnik koji sadrži: 
+1) naziv poreskog organa i ime ovlašćenog službenog lica koji vodi postupak naplate; 
+2) prezime i ime, naziv, prebivalište, odnosno sjedište poreskog obveznika, PIB i podatke o drugim licima koja su prisustvovala plenidbi; 
+3) mjesto i vrijeme plenidbe; 
+4) iznos poreskog duga, kamatu i troškove postupka plenidbe; 
+5) naziv, oznaku i opis zaplijenjenih predmeta; 
+6) vrijednost zaplijenjenih predmeta prema izvršenoj procjeni; 
+7) prezime i ime, adresa, odnosno sjedište lica kome su stvari povjerene na čuvanje; 
+8) konstataciju da su poreski obveznik i čuvar zaplijenjenih stvari opomenuti o posledicama otuđenja ili oštećenja zaplijenjenih stvari; 
+9) primjedbu poreskog obveznika i drugih lica na postupak procjene i plenidbe, na lica koja su vršila procjenu, na iznos procjene ili druge primjedbe, odnosno primjedbe drugih lica. 
+(2) Ukoliko je bilo potrebno prisustvo policije, njihovo prisustvo se upisuje u zapisnik o plenidbi. 
+(3) Zapisnik se potpisuje od strane ovlašćenog službenog lica koje vodi postupak, poreskog obveznika, njegovog punomoćnika ili ovlašćenog lica odnosno člana njegovog domaćinstva, punomoćnika ili ovlašćenog lica, dužnika pravnog lica, svjedoka, procjenitelja i drugih službenih lica koja su prisustvovala plenidbi. 
+(4) Ako poreski obveznik, odnosno njegov punomoćnik ili ovlašćeno lice, odnosno zastupnik ovlašćenog lica ili pravnog lica dužnika odbije da potpiše zapisnik, to će se upisati u zapisnik. 
+(5) Po jedan primjerak zapisnika se dostavlja poreskom obvezniku i drugim licima od kojih je zaplijenjena imovina. 
+Član 67 ﻿
+(1) Ovlašćeno službeno lice je dužno da o izvršenom popisu imovine obavijesti sva lica na koja je ukazano da im pripada popisana imovina, odnosno dio imovine i da ih uputi da, u roku od osam dana od dana prijema obavještenja, mogu podnijeti nadležnom sudu izlučnu tužbu, radi dokazivanja prava svojine na toj imovini. 
+(2) Obavještenje iz stava 1 ovog člana ovlašćeno službeno lice vrši usmeno, ako su ta lica prisutna popisu i to unosi u zapisnik o popisu i procjeni pokretnih stvari, a odsutna lica obavještava pismeno. 
+(3) Ako obaviještena lica iz stava 2 ovog člana pruže dokaz da su u roku od osam dana podnijela izlučnu tužbu u sudu, postupak naplate se prekida u odnosu na stvari koje su obuhvaćene izlučnom tužbom. 
+Član 68 
+(1) Blagovremeno podnošenje izlučne tužbe sudu odlaže plenidbu i prodaju popisane pokretne imovine na koju se tužba odnosi do okončanja spora, a ta imovina ostavlja se na čuvanje poreskom obvezniku. 
+(2) Poreski obveznik je dužan da imovinu iz stava 1 ovog člana sačuva u nepromijenjenom stanju do okončanja spora po izlučnoj tužbi. 
+Član 69 
+(1) Ako se po izlučnoj tužbi utvrdi da podnosilac izlučne tužbe nije sopstvenik, a poreski obveznik otuđi, uništi ili ošteti imovinu, podnijeće se krivična prijava nadležnom tužilaštvu. 
+(2) U slučaju iz stava 1 ovog člana, radi obezbeđenja naplate duga, izvršiće se, bez odlaganja, nov popis i procjena imovine. 
+Član 70 ﻿
+(1) Poreski organ snosi odgovornost za imovinu koja je zaplijenjena. Ukoliko se zaplijene novčana sredstva, poreski organ će ih deponovati na odgovarajući račun budžeta, u roku od jednog radnog dana od dana plenidbe. 
+(2) Poreski organ koji je sproveo postupak plenidbe pokretne imovine, odnosno ustanovio založno pravo na nepokretnoj imovini objavljuje oglas o prodaji imovine na oglasnoj tabli i na internet stranici poreskog organa.
+(3) Na javnom nadmetanju ne mogu učestvovati, direktno ili indirektno službenici poreskog organa, bračni i vanbračni supružnik, odnosno životni partner lica istog pola, preci i potomci službenika, te preci i potomci njegovog bračnog ili vanbračnog supružnika, odnosno životnog partnera lica istog pola.
+(4) Poreski obveznik čija je imovina, zaplijenjena u skladu sa ovim zakonom može, prije prodaje imovine, izmiriti poresku obavezu i troškove plenidbe. Poreski organ će zaplijenjenu imovinu vratiti poreskom obvezniku narednog dana od dana izmirenja obaveze. 
+(5) U slučaju kada je zaplijenjena roba kvarljiva ili kad poreski organ ocijeni da postoje izuzetno važne okolnosti koje opravdavaju neodložnu prodaju, prodaja se može izvršiti neposrednom pogodbom. 
+(6) Sredstva ostvarena od prodaje zaplijenjene imovine koriste se za izmirenje poreske obaveze prema redosljedu iz člana 51 ovog zakona.
+(7) Bliži način prodaje imovine, na predlog poreskog organa, propisuje Ministarstvo. 
+- Podnaslov brisan -
+Član 71 ﻿
+U pogledu izuzeća, postupka obezbjeđenja, popisa imovine i drugih pitanja vezanih za prinudnu naplatu, a koja nijesu posebno uređena ovim zakonom, shodno se primjenjuju odredbe zakona kojim je uređeno izvršenje i obezbjeđenje. 
+Ha PRESTANAK PORESKE OBAVEZE
+Član 71a
+Poreska obaveza prestaje:
+1) naplatom poreza;
+2) zastarjelošću poreza;
+3) na drugi zakonom propisani način.
+Podnaslov i član 72
+- brisani - 
+XI INSPEKCIJSKI NAZDOR 
+Opšte odredbe 
+Član 73 
+Inspekcijski nadzor je postupak provjere i utvrđivanja činjenica bitnih za oporezivanje poreskog obveznika i drugih lica, koji provodi poreski organ u skladu sa ovlašćenjima iz zakona kojim se uređuju pojedine vrste poreza. 
+Predmet inspekcijskog nadzora 
+Član 74 ﻿
+(1) Inspekcijski nazdor obuhvata provjeru svih ili pojedinih činjenica bitnih za oporezivanje. 
+(2) Inspekcijski nazdor obuhvata provjeru jedne ili više vrsta poreza za jedan ili više perioda oporezivanja. 
+(3) Ako se kontrola vrši kod preduzetnika, inspekcijski nadzor može obuhvatiti i one činjenice koje nijesu vezane sa njegovom poslovnom djelatnošću. 
+(4) Inspekcijski nazdor privrednih društava obuhvata i provjeru odnosa između vlasnika društava i društava bitnih za oporezivanje.
+(5) Inspekcijski nadzor obuhvata i nadzor nad obavezom:
+- finansijskog izvještavanja, u skladu sa zakonom kojim se uređuje oblast računovodstva i revizije,
+- izvještavanja o računima i poslovanju povezanih lica radi razmjene informacija, u skladu sa zakonom,
+- izvještavanje o korisnicima digitalnih platformi radi razmjene informacija, u skladu sa zakonom,
+- izvještavanje o korisnicima usluga povezanih sa kriptoimovinom radi razmjene informacija, u skladu sa zakonom.  
+Period inspekcijskog nazdora 
+Član 75 ﻿
+(1) Inspekcijski nadzor može se vršiti za period za koji nije nastupila zastara prava na utvrđivanje poreske obaveze. 
+(2) Inspekcijski nadzor kod poreskih obveznika može se nastaviti na poslednji period oporezivanja obuhvaćen prethodnim inspekcijskim nadzorima. 
+(3) Inspekcijski nazdor može se vršiti kod istog poreskog obveznika za istu vrstu poreza i za isti vremenski period više od jednog puta godišnje.
+Nalog za inspekcijski nadzor 
+
+Član 76 
+(1) Predmet i period inspekcijskog nadzora određuje poreski organ nalogom za inspekcijski nadzor (u daljem tekstu: nalog). 
+(2) Nalog se izdaje u pismenom obliku. Pored podataka iz člana 22 ovog zakona, nalog sadrži: period za koji se vrši kontrola, vrstu poreza, mjesto i vrijeme početka nadzora, ime poreskog inspektora, poziv za učešće poreskog obveznika u postupku inspekcijskog nadzora. 
+Član 77 ﻿
+(1) Nalog se dostavlja: 
+1) velikom poreskom obvezniku 30 dana prije početka inspekcijskog nadzora; 
+2) ostalim poreskim obveznicima 15 dana prije početka inspekcijskog nadzora. 
+(2) Izuzetno od stava 1 ovog člana, ukoliko bi se dostavom u roku iz stava 1 ovog člana ugrozila svrha inspekcijskog nadzora, nalog se dostavlja poreskom obvezniku neposredno prije početka inspekcijskog nadzora. 
+(3) Poreski organ može odložiti početak inspekcijskog nadzora, ako poreski obveznik podnese zahtjev u roku od tri dana od dana prijema naloga i u njemu navede opravdane razloge za odlaganje inspekcijskog nadzora, osim u slučajevima iz stava 2 ovog člana. 
+(4) Odluku po zahtjevu donosi poreski organ u obliku rješenja, protiv kojeg nije dopuštena žalba.  
+Oblici inspekcijskog nadzora
+Član 78 
+(1) Inspekcijski nadzor vrši se metodom kancelarijske i terenske kontrole.
+(2) Poslove inspekcijskog nadzora vrši poreski inspektor.
+- Podnaslov brisan -
+Član 79 
+- brisan -
+Kontrola poreske prijave 
+Član 80 
+(1) Kontrola poreske prijave vrši se u prostorijama poreskog organa gdje je poreski obveznik registrovan. 
+(2) Kontrola poreske prijave je provjera njene tačnosti, tačnosti i potpunosti dokumentacije dostavljene uz prijavu. Prilikom provjere poreske prijave koriste se svi podaci koje posjeduje i do kojih dođe poreski organ. 
+(3) Provjeru poreske prijave vrše poreski inspektori, a kontroli može prisustvovati i poreski obveznik. 
+(4) Ukoliko u postupku kontrole poreski inspektor utvrdi da je prijava nepotpuna ili pogrešno popunjena, istu će popuniti, odnosno greške otkloniti na osnovu priložene dokumentacije. Ukoliko utvrdi da su poreska prijava i priložena dokumentacija netačne, prijavu sa dokumentacijom proslijediće poreskom inspektoru za vršenje kancelarijske kontrole na dalji postupak.
+Kancelarijska kontrola 
+Član 81 
+(1) Kancelarijska kontrola se vrši u prostorijama poreskog organa gdje je poreski obveznik registrovan. 
+(2) U postupku kancelarijske kontrole vrši se provjera pravilnosti podataka iskazanih u poreskoj prijavi, poreskom bilansu i drugim evidencijama poreskog obveznika, upoređivanjem sa podacima iz poreskog knjigovodstva i službenih evidencija kojima raspolaže poreski organ. 
+(3) Poreski inspektor može pozvati poreskog obveznika da učestvuje u postupku kancelarijske kontrole.
+Terenska kontrola 
+Član 82 
+(1) Terenska kontrola se vrši u poslovnim prostorijama poreskog obveznika ili na drugoj lokaciji koju odredi rukovodilac poreskog organa koja vrši kontrolu. 
+(2) Poreski inspektor u toku kontrole koristi podatke iz poreske prijave, dokumentacije i izjave poreskog obveznika i dokumentacije i podataka koje je prikupio poreski organ. 
+(3) Jedna terenska kontrola traje do 90 radnih dana. Rukovodilac poreskog organa može izuzetno odrediti duži rok. 
+Član 82a ﻿
+(1) Izuzetno od čl. 76, 77 i 82 ovog zakona, terenska kontrola kod lica za koje postoji osnovana sumnja da obavlja djelatnost bez prethodno izvršene registracije, u skladu sa zakonom i/ili drugi oblik nelegalnog poslovanja, odnosno, nije prijavio prihod iz člana 52 stav 3 ovog zakona, kontrola evidentiranja prometa i kontrola po zahtjevu poreskog obveznika za povraćaj poreskog kredita, vrši se bez naloga za kontrolu.
+(2) Ako se u postupku terenske kontrole utvrdi da lice obavlja neregistrovanu, odnosno nelegalnu djelatnost, odnosno da nije prijavilo prihod iz člana 52 stav 3 ovog zakona poreska obaveza tom licu utvrđuje se rješenjem, primjenom metode procjene poreske osnovice.
+(3) Poreska obaveza po osnovu prihoda ostvarenih obavljanjem djelatnosti iz stava 2 ovog člana utvrđuje se bez priznavanja normiranih troškova.
+(4) Rješenje o utvrđivanju poreza iz stava 2 ovog člana dostavlja se licu koje obavlja neregistrovanu, odnosno nelegalnu delatnost, sa nalogom da u roku od 30 dana od dana dostavljanja rješenja, kod nadležnog organa izvrši registraciju, odnosno prijavu te djelatnosti, plati utvrđenu poresku obavezu na propisani uplatni račun i otkloni druge utvrđene povrede zakona.
+- Podnaslov brisan - 
+Član 83 
+(1) Poreski inspektor, u postupku pribavljanja dokaza za utvrđivanje poreske obaveze, može koristiti i određene indicije. 
+(2) Indicije, u smislu stava 1 ovoga člana, su izvjesni znakovi, podaci ili informacije koje poreskom organu mogu služiti za utvrđivanje poreske obaveze za sve vrste poreza. 
+(3) Indicije iz stava 2 ovog člana se odnose na: 
+1) vrstu i prirodu poslovanja poreskog obveznika; 
+2) kretanje sredstava preko računa poreskog obveznika u banci ili drugoj finansijskoj instituciji i iznosi sredstava na tim računima; 
+3) odnos rashoda sa prihodima poreskog obveznika; 
+4) imovinu poreskog obveznika stečenu ili korišćenu za ličnu upotrebu i druge dokaze o imovini, uključujući stanove, kuće, poslovne prostore, automobile, sredstva za rad, članstva u klubovima, broj posluge i sl; 
+5) analizu promjena u vrijednosti imovine poreskog obveznika; 
+6) iznos zakupnine nepokretnosti gdje poreski obveznik posluje ili živi; 
+7) iznos kapitala u preduzeću poreskog obveznika; 
+8) ostvareni promet poslovanja poreskog obveznika; 
+9) broj lica koje upošljava poreski obveznik; 
+10) vrstu i broj poslovnih klijenata poreskog obveznika; 
+11) profit ili dohodak drugih lica koja obavljaju sličnu ili istu djelatnost kao i poreski obveznik pod istim ili sličnim uslovima; 
+12) razliku između kupljenih sirovina i drugih materijala i onih koji su stvarno korišćeni u procesu proizvodnje; 
+13) sve druge dokaze koji mogu služiti da se odredi iznos poreske obaveze. 
+Vrijeme inspekcijskog nadzora 
+Član 84 ﻿
+(1) Inspekcijski nadzor obavlja se u toku radnog vremena poreskog obveznika, a izuzetno i nakon isteka radnog vremena, ako to nalaže svrha kontrole. 
+(2) Ako se započeta radnja u postupku inspekcijskog nadzora ne može završiti u toku radnog vremena poreskog obveznika, a poreski obveznik ne pristane na nastavak obavljanja kontrole nakon isteka radnog vremena, poreski inspektor može izvršiti privremeno zatvaranje poslovnog ili skladišnog prostora. 
+(3) Mjera privremenog zatvaranja iz stava 2 ovog člana može trajati najduže do početka radnog vremena poreskog obveznika prvog narednog radnog dana. O privremenoj mjeri iz stava 2 ovog člana donosi se rješenje, protiv kojeg nije dopuštena žalba. 
+Član 85 ﻿
+(1) Poreski obveznik, pored obaveza iz člana 26 ovog zakona, u postupku inspekcijskog nadzora, na poziv poreskog inspektora, dužan je učestvovati u utvrđivanju činjeničnog stanja bitnog za oporezivanje, radi davanja podataka, dostavljanja na uvid knjiga i evidencija i drugih isprava. 
+(2) Ako poreski obveznik nije u mogućnosti da prisustvuje kontroli, ovlastiće lice da u njegovo ime izvršava obaveze iz stava 1 ovog člana. Poreski inspektor može zatražiti podatke od zaposlenih kod poreskog obveznika ili drugih lica. 
+3) Lica iz stava 2 ovog člana dužna su da podatke i dokumentaciju sa kojima raspolažu učine dostupnom poreskom inspektoru.
+Zapisnik o inspekcijskom nadzoru 
+Član 86 ﻿
+(1) O inspekcijskom nadzoru se sastavlja zapisnik. 
+(2) Pored podataka utvrđenih zakonom kojim se uređuje upravni postupak, zapisnik iz stava 1 ovog člana sadrži: predmet nadzora, opis radnji, činjenice i dokaze koji su provedeni u postupku i druge podatke o toku i ishodu nadzora, a naročito činjenice koje su bitne za promjenu poreske obaveze i zbirni iznos utvrđenih promjena poreskih obaveza. 
+(3) Zapisnik o inspekcijskom nadzoru dostavlja se poreskom obvezniku u roku od tri dana od dana izvršene kontrole. Na zapisnik se mogu dati primjedbe u roku od tri dana od dana dostave zapisnika. 
+(4) Ako su u primjedbama iznesene nove činjenice i dokazi, zbog kojih bi trebalo promijeniti činjenično stanje utvrđeno u zapisniku ili izmjeniti ranije pravne ocjene, poreski inspektor će o takvim činjenicama i dokazima ili novim ocjenama sastaviti dopunski zapisnik. Na dopunski zapisnik ne mogu se dati primjedbe. 
+Mjere inspekcijskog nazdora 
+Član 87 ﻿
+Kada poreski inspektor, u toku inspekcijskog nadzora, utvrdi da je povrijeđen ovaj zakon ili drugi poreski propis ima obavezu i ovlašćenje da naredi preduzimanje mjera, i to: 
+1) dostavu potrebne dokumentacije i podataka; 
+2) privremeno oduzimanje dokumentacije, opreme i sredstava rada; 
+3) prinudno otvaranje ili zatvaranje objekata radi vršenja inspekcijskog nadzora; 
+4) zabranu raspolaganja sredstvima na računu; 
+5) zabranu obavljanja djelatnosti, odnosno obavljanje pojedinih poslova za određeno vrijeme; 
+6) privremeno oduzimanje nezakonito ostvarene imovinske koristi; 
+7) privremeno oduzimanje sirovina, repromaterijala, poluproizvoda, gotovih proizvoda i robe kada nema dokaza o načinu pribavljanja robe, kada se roba stavlja u promet od strane lica koje za to nije registrovano ili nema dokaza o porijeklu robe, kada se promet proizvoda vrši bez propisane oznake, kada se roba transportuje bez propisane dokumentacije i kada se roba prodaje van poslovnog sjedišta ili drugog mjesta određenog od strane nadležnog državnog organa; 
+8) izda prekršajni nalog, podnese zahtjev za pokretanje prekršajnog postupka, odnosno krivičnu prijavu nadležnom organu za učinjeno krivično djelo; 
+9) preduzima i druge mjere za koje je zakonom i drugim poreskim propisima ovlašćen.
+Član 87a ﻿
+(1) U toku inspekcijskog nadzora poreski inspektor oduzeće robu u slučajevima:
+1) kada postoji sumnja da su roba, sirovine, repromaterijal, poluproizvodi i gotovi proizvodi upotrijebljeni, nabavljeni bez obračunatog poreza ili na drugi način suprotno zakonu;
+2) kada robu stavlja u promet lice koje nije registrovano, odnosno ovlašćeno za obavljanje djelatnosti;
+3) kada se vrši proizvodnja robe radi stavljanja u promet, odnosno kada se vrši promet robe, a roba nije propisno evidentirana u poslovnim knjigama i drugim propisanim evidencijama;
+4) kada se vrši transport robe bez propisane dokumentacije (otpremnica, tovarni list, račun i sl.);
+5) kada se roba prodaje van registrovanih poslovnih prostorija ili drugog mjesta određenog za prodaju od strane nadležnog organa.
+(2) U slučaju iz stava 1 ovog člana, poreski inspektor oduzeće i prevozno ili drugo sredstvo kojim se roba prevozi, odnosno stavlja u promet, ako je vrijednost robe veća od jedne trećine vrijednosti tog sredstva.
+(3) Prevozno ili drugo sredstvo oduzeće se i kada vrijednost robe nije veća od jedne trećine vrijednosti tog sredstva, ako je to sredstvo, poslije fabričke izrade, dodatno opremljeno posebnim prostorom za skrivanje ili tajni prevoz robe.
+(4) Poreski inspektor može u toku inspekcijskog nadzora, uz potvrdu, privremeno oduzeti poslovne knjige, evidencije, drugu dokumentaciju ili isprave, do okončanja postupka inspekcijskog nadzora.
+(5) Ako poreski obveznik poslovne knjige i evidencije vodi na sredstvima za automatsku obradu podataka, poreski inspektor može, uz potvrdu, privremeno oduzeti i sredstva za automatsku obradu podataka, do okončanja postupka inspekcijskog nadzora.
+(6) Kad poreski inspektor naredi mjeru oduzimanja predmeta kontrole koji mogu poslužiti kao dokaz ili koji su upotrijebljeni, namijenjeni ili nastali u vršenju nezakonitih radnji, dužan je da odredi mjesto i način čuvanja tih predmeta.
+(7) Lice kome je povjereno čuvanje predmeta iz stava 1 ovog člana, dužno je da te predmete preuzme i čuva do odluke po prijavi nadležnog organa, odnosno po zahtjevu poreskog inspektora i o čuvanju predmeta poreskom inspektoru izda potvrdu o preuzetim predmetima.
+Član 88 ﻿
+U toku inspekcijskog nadzora poreski inspektor će poreskom obvezniku narediti zabranu obavljanja djelatnosti u trajanju do 90 dana, ako utvrdi da se:
+1) djelatnost obavlja tako da robu i usluge ne prati vjerodostojna dokumentacija od značaja za utvrđivanje poreza (otpremnica, faktura, izjava kupca i dr.);
+2) izbjegava utvrđivanje i plaćanje poreza tako što se ne uplaćuje dnevni pazar, u skladu sa propisima;
+3) izbjegava utvrđivanje i plaćanje poreza radnim angažovanjem lica koja nemaju zaključen ugovor o radu ili drugi akt o radnom angažovanju donesen u skladu sa propisima o radnim odnosima, kao i ako ta lica nisu, u skladu sa propisima, prijavljena nadležnom organu za obavezno socijalno osiguranje;
+4) promet od prodaje roba ili pružanja usluga ne registruje preko poreske registar kase ili na drugi propisani način. 
+Član 89 
+- brisan -
+
+Član 90 ﻿
+(1) Mjere iz čl. 87, 87a i 88 ovog zakona poreski inspektor naređuje rješenjem. 
+(2) Izuzetno od stava 1 ovog člana, poreski inspektor može mjere iz člana 87 ovog zakona narediti u zapisniku o izvršenoj kontroli, odnosno usmenim rješenjem, kad ocjeni da se na taj način otklanja šteta veće vrijednosti i kad je to u javnom interesu. 
+(3) U slučaju iz stava 2 ovog člana, poreski inspektor je dužan u roku od tri dana donijeti rješenje u pisanoj formi. 
+(4) Rješenje iz stava 1 ovog člana poreski inspektor donosi na osnovu činjenica utvrđenih u zapisniku i dopunskom zapisniku o inspekcijskom nadzoru. 
+(5) Pored podataka iz člana 54 ovog zakona, rješenje iz stava 1 ovog člana sadrži i rok za izvršenje mjere koji odredi poreski inspektor koji donosi rješenje.
+Član 91 
+Ukoliko se u postupku inspekcijskog nadzora utvrde nove činjenice i okolnosti koje ukazuju da poreski obveznik nije pravilno utvrdio porez, poreski organ će, na osnovu zapisnika o inspekcijskom nadzoru, rješenjem utvrditi poresku obavezu.
+Istražne radnje
+Član 91a
+(1) Radi otkrivanja poreskih krivičnih djela i njihovih izvršilaca ovlašćeno službeno lice poreskog organa preduzima istražne radnje po nalogu tužioca.
+(2) Krivična djela iz stava 1 ovog člana su krivična djela propisana Krivičnim zakonikom Crne Gore, koja kao moguću posljedicu imaju potpuno ili djelimično izbjegavanje plaćanja poreza.
+(3) U slučaju sumnje da je izvršeno krivično djelo iz stava 2 ovog člana, ovlašćeno službeno lice poreskog organa je dužno da podnese krivičnu prijavu nadležnom tužiocu.
+(4) Preduzimanje istražnih radnji iz stava 1 ovog člana vrši se bez naloga poreskog organa.
+Službena legitimacija
+Član 91b ﻿
+(1) Ovlašćeno službeno lice koje preduzima istražne radnje u obavljanju poslova mora imati službenu legitimaciju.
+(2) Izgled i sadržaj službene legitimacije iz stava 1 ovog člana propisuje Ministarstvo.
+Unutrašnja kontrola ﻿ 
+Član 91c ﻿
+(1) Poreska uprava sprovodi unutrašnju kontrolu u cilju otkrivanja, utvrđivanja i sprječavanja kršenja zakonitosti rada u službi od strane poreskih službenika.
+(2) U sprovođenju poslova unutrašnje kontrole primjenjuju se ovlašćenja propisana ovim zakonom.
+(3) Način sprovođenja unutrašnje kontrole propisuje Ministarstvo.
+Član 92 
+- brisan - 
+- Poglavlje brisano - 
+Član 93 
+- brisan - 
+Član 94 
+- brisan - 
+XIII KAMATA 
+Član 95 ﻿
+(1) Na iznos neplaćenog ili manje plaćenog poreza, plaća se kamata po stopi od 0,03% dnevno, počev od narednog dana od dana dospjelosti.
+(2) Ako je, u skladu sa odredbom člana 51 stav 5 ovog zakona, plaćanje poreskog duga odloženo, kamata se obračunava i za period za koji je poreski dug odložen.
+(3) Na iznos dugovnih kamata, ne plaća se kamata.
+- Podnaslov brisan - 
+Član 96 
+(1) Na iznos više plaćenog poreza poreski obveznik ima pravo na kamatu po stopi iz člana 95 ovog zakona.
+(2) Kamata se obračunava od dana prijema zahtjeva za povraćaj više plaćenog poreza.
+(3) Ako je osnov za povraćaj poreza poništeno, izmijenjeno ili ukinuto rješenje ili drugi akt o zaduženju, kamata se obračunava od dana uplate poreza.
+XIV PORESKI ODBICI I POVRAĆAJ 
+Član 97 ﻿
+(1) Ukoliko poreski obveznik izvrši uplatu veću od iznosa poreske obaveze, poreski organ je dužan iznos preplate sa pripadajućom kamatom vratiti poreskom obvezniku ili, uz njegovu saglasnost, usmjeriti za izmirenje poreza za naredni poreski period, u skladu sa ovim zakonom. 
+(2) Poreski organ je dužan da povraćaj više plaćenog doprinosa za obavezno socijalno osiguranje za poreskog obveznika iz člana 45 ovog zakona vrati njegovim zakonskim nasljednicima u skladu sa zakonom.
+(3) Poreski organ je dužan obavijestiti poreskog obveznika o izvršenoj preplati, u roku od osam dana od dana preplate. 
+(4) Poreski organ je dužan izvršiti povraćaj više plaćene poreske obaveze u roku od pet radnih dana od dana prijema zahtjeva za povraćaj.
+
+- Podnaslov brisan - 
+Član 98 
+(1) Poreskom obvezniku koji ima poreski dug, za iznos preplate iz člana 97 ovog zakona, izvršiće se umanjenje tog duga, prema redosljedu iz člana 51 ovog zakona.
+(2) Poreski dug iz stava 1 ovog člana se smatra plaćenim danom nastanka preplate.
+- Podnaslov brisan - 
+Član 99 
+- brisan - 
+XV ZASTARJELOSTI 
+Zastarjelost prava na utvrđivanje poreza 
+Član 100 ﻿
+(1) Pravo na utvrđivanje poreske obaveze zastarijeva u roku od pet godina od isteka godine u kojoj je tu obavezu trebalo utvrditi.
+(2) Rok zastarjelosti prava na utvrđivanje poreza prekida se bilo kojom službenom radnjom, u cilju utvrđivanja poreske obaveze, preduzetom od strane poreskog organa.
+Zastarjelost prava na naplatu poreza 
+Član 101 ﻿
+(1) Pravo na naplatu poreza zastarijeva u roku od pet godina od isteka godine u kojoj je porez utvrđen.
+(2) U roku iz stava 1 ovog člana zastarijeva i pravo na naplatu kamate i troškova postupka.
+(3) Rok zastarjelosti prava naplate poreza prekida se bilo kojom službenom radnjom, u cilju naplate poreske obaveze, preduzetom od strane poreskog organa. 
+(4) Rok zastarjelosti ne teče za vrijeme dok traje postupak kod suda ili za slučaj da se poreski obveznik fizičko lice nalazi izvan Republike neprekidno u trajanju dužem od šest mjeseci. 
+(5) U slučaju da je poreski obveznik u postupku stečaja, rok zastare iz stava 1 ovog člana se produžava za šest mjeseci od dana završetka postupka. 
+(6) Ukoliko se poreskom obvezniku odobri produženje roka za izmirenje poreske obaveze, rok zastarjelosti prava na naplatu se produžava za taj period.
+Zastarjelost prava na povraćaj i preusmjerenje više plaćene poreske obaveze i poreskog kredita ﻿ 
+
+Član 102 ﻿
+(1) Pravo na povraćaj više plaćene poreske obaveze i poreskog kredita zastarijeva u roku od pet godina, od isteka godine u kojoj je izvršena preplata, odnosno nastao poreski kredit.
+(2) U roku iz stava 1 ovog člana zastarijeva i pravo na preusmjerenje više plaćene poreske obaveze i poreskog kredita za izmirenje poreza za naredni poreski period, u skladu sa ovim zakonom.
+
+Zastarjelost pokretanja i vođenja prekršajnog postupka za poreske prekršaje
+Član 102a ﻿
+- brisan -
+Apsolutni rok zastarjelosti 
+Član 103 ﻿
+(1) Pravo na utvrđivanje, naplatu i povraćaj poreza uvijek zastarijeva u roku od 10 godina od isteka godine u kojoj je porez trebalo utvrditi, naplatiti, odnosno u kojoj je izvršena preplata.
+(2) Poreski organ, nakon isteka roka iz stava 1 ovog člana, po službenoj dužnosti, donosi rješenje o prestanku poreske obaveze zbog zastarjelosti.
+(3) Izuzetno od stava 1 ovog člana, pravo na utvrđivanje i naplatu poreza ne zastarijeva za potraživanja koja su obezbijeđena zalogom ili hipotekom, osim u dijelu naplate kamate i drugih novčanih davanja.
+- Poglavlje brisano - 
+Član 104 
+- brisan - 
+XVII KAZNENE ODREDBE 
+Poreski prekršaji 
+Član 105 ﻿
+(1) Novčanom kaznom u iznosu od 1.000 eura do 15.000 eura kazniće se za prekršaj pravno lice, pravno lice- privredno društvo - dio stranog društva, odnosno podružnica i trast ako:
+1) ne pruži poreskom organu, na njegov zahtjev i u roku koji odredi, sve raspoložive informacije, neophodne za utvrđivanje činjeničnog stanja od značaja za oporezivanje (član 14c stav 1);
+2) ne pruži poreskom organu informacije koje traži u pisanom obliku (član 14c stav 3);
+3) ne dostavi poreskom organu podatke, izvještaje i dokumentaciju sa kojima raspolaže, a koje su od značaja za oporezivanje u skladu sa zakonom (član 14d);
+4) ne identifikuje račune koje posjeduje ili kontroliše rezident države članice EU, druge države ili teritorije države, ne prikuplja informacije o stanju, izvršenim transakcijama sa tih računa i ostvarenim prihodima tih lica po osnovu određenih vrsta dohotka i kapitala i ne preduzima mjere produbljene provjere (član 14e stav 1);
+5) ne daje tačne informacije u okviru dokumentacije, uključujući izjavu, odnosno potvrdu o rezidentnosti izvještajnoj finansijskoj instituciji, u toku postupka produbljene provjere (član 14e stav 3);
+6) ne dostavi poreskom organu potpune i tačne informacije iz člana 14e stav 1 ovog zakona, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države (član 14e stav 4);
+7) ne vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja radi dostavljanja informacija a svu dokumentaciju koja se odnosi na vlasnika računa ne čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi (član 14e stav 5);
+8) ne dostavi poreskom organu, informacije i podatke o računima iz člana 14e stav 1 ovog zakona, na propisanom obrascu u elektronskom obliku, jednom godišnje, do 30. juna tekuće za prethodnu godinu (član 14e stav 7);
+9) ne dostavi poreskom organu, objedinjene podatke za svakog člana međunarodne grupe povezanih pravnih lica koji obavljaju djelatnost u državi članici EU ili drugoj državi odnosno teritoriji države, o ostvarenim prihodima, dobiti/gubitku prije oporezivanja, obračunatom i plaćenom porezu na dobit, prijavljenom kapitalu, akumuliranoj dobiti, broju zaposlenih i materijalnoj imovini, prema navedenim državama, odnosno teritorijama država (član 14f stav 1);
+10) ne dostavi poreskom organu, pored podataka iz člana 14f stav 1 ovog zakona i podatke o identifikaciji svakog člana međunarodne grupe utvrđujući državu, odnosno teritoriju države rezidentnosti i državu, odnosno teritoriju države u kojoj podliježe oporezivanju po osnovu poslovanja preko stalne poslovne jedinice ako se razlikuje od države, odnosno teritorije države rezidentnosti, kao i vrstama djelatnosti koje obavlja (član 14f stav 2);
+11) ne dostavi podatke iz člana 14f st. 1 i 2 ovog zakona poreskom organu, radi razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države, na propisanom obrascu u elektronskom obliku, u roku od 12 mjeseci, nakon isteka fiskalne godine za koju se podaci dostavljaju (član 14f stav 3);
+12) ne prikuplja podatke i ne vodi evidenciju o korisnicima platforme, odnosno naručiocima oglasa o prodaji i iznajmljivanju nepokretnosti i parking mjesta, prodaji proizvoda i pružanju usluga i iznajmljivanju bilo koje vrste prevoza, o ukupno plaćenim naknadama i broju relevantnih aktivnosti u vezi kojih je ta naknada naplaćena, o porezima, naknadama ili provizijama koje je obustavio ili naplatio korisnicima platforme tokom perioda o kojem izvještava i ne preduzima mjere produbljene provjere (član 14g stav 1);
+13) pored podataka iz člana 14g stav 1 ovog zakona od naručioca oglasa i reklama ne pribavi i ne dostavi poreskom organu i podatke iz člana 14g stav 2 ovog zakona (član 14g stav 2);
+14) ne vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja a svu dokumentaciju koja se odnosi na vlasnika računa ne čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi (član 14g stav 3);
+15) ne dostavlja potpune i tačne podatke iz člana 14g st. 1 i 2 ovog zakona poreskom organu, za potrebe oporezivanja i razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države (član 14g stav 4);
+16) ne dostavlja nadležnom poreskom organu podatke iz člana 14g st. 1 i 2 ovog zakona, na propisanom obrascu u elektronskom obliku, najkasnije do 31. januara godine koja slijedi godinu u kojoj je korisnik platforme identifikovan kao korisnik platforme o kojem se izvještava (član 14g stav 6);
+17) ne podnese prijavu za registraciju nadležnom poreskom organu, u skladu sa ovim zakonom i zakonom o registraciji (član 14g stav 7);
+18) ne obavijesti nadležni poreski organ Crne Gore i države koju izvještava da je obveznik izvještavanja u drugoj državi (član 14g stav 8);
+19) ne prikuplja podatke i ne vodi evidenciju o korisnicima kriptoimovine, fizičkih ili pravnih lica koji su korisnici o kojim se izvještava ili imaju jedno ili više fizičkih lica koja imaju kontrolu, a koji su lica o kojim se izvještava, kao i o pruženim uslugama korisnicima kriptoimovine, preduzetim aktivnostima, nalozima i sprovedenim transakcijama sa iznosima i datumima transakcija i ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine za svaku vrstu kriptoimovine o kojoj se izvještava sa stanjem imovine na kraju izvještajnog perioda i ne preduzima mjere produbljene provjere (član 14h stav 1); 
+20) pored podataka iz člana 14h stav 1 ovog zakona ne pribavi i ne dostavi poreskom organu i podatke o vlasniku odnosno korisniku kriptoimovine iz člana 14h stav 2 ovog zakona (član 14h stav 2);
+20) pored podataka iz člana 14h stav 1 ovog zakona ne pribavi i ne dostavi poreskom organu i podatke o vlasniku odnosno korisniku kriptoimovine iz člana 14h stav 2 ovog zakona (član 14h stav 2);
+21) ne vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja a svu dokumentaciju koja se odnosi na vlasnika računa ne čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi (član 14h stav 3);
+22) ne dostavlja potpune i tačne podatke iz člana 14h st. 1 i 2 ovog zakona poreskom organu, za potrebe oporezivanja i razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države (član 14h stav 4);
+23) ne dostavlja nadležnom poreskom organu podatke iz člana 14h st. 1 i 2 ovog zakona, na propisanom obrascu u elektronskom obliku, najkasnije do 31. januara godine koja slijedi godinu u kojoj je korisnik kriptoimovine identifikovan kao korisnik o kojem se izvještava (član 14h stav 6);
+24) ne podnese prijavu za registraciju kod nadležnog poreskog organa, u skladu sa ovim zakonom i ne upiše se u Registar pružalaca usluga povezanih sa kriptoimovinom kod Komisije za tržište kapitala Crne Gore u skladu sa zakonom kojim se uređuju mjere i radnje koje se preduzimaju radi sprečavanja i otkrivanja pranja novca i finansiranja terorizma (član 14g stav 7);
+25) ne obavijesti nadležni poreski organ Crne Gore i države koju izvještava da je obveznik izvještavanja u drugoj državi (član 14h stav 8);
+26) ne imenuje poreskog punomoćnika i o tome ne obavijesti nadležni poreski organ u roku od deset dana od dana početka ostvarivanja prihoda, odnosno sticanja imovine u Crnoj Gori (član 26 stav 2);
+27) ne podnese poreskom organu prijavu za registraciju u roku od pet radnih dana od dana upisa u odgovarajući registar u skladu sa zakonom (član 32 stav 1);
+28) ne obavijesti poreski organ o svim promjenama koje nastanu u toku poslovanja, a odnose se na upisane podatke u registar, u roku od 15 dana od dana nastanka promjene (član 33 stav 1);
+29) ne podnese poreskom organu izvještaj iz člana 40 stav 2 ovog zakona, do 15. u mjesecu, za isplate izvršene u prethodnom mjesecu (član 40 stav 4);
+30) ne podnese poreskom organu pojedinačnu poresku prijavu, najkasnije do 31. januara tekuće, za prethodnu godinu (član 40 stav 5).
+(2) Za prekršaj iz stava 1 ovog člana kazniće se i odgovorno lice u pravnom licu, odnosno drugom obliku obavljanja djelatnosti u Crnoj Gori, novčanom kaznom u iznosu od 100 eura do 1.000 eura.
+Član 105a ﻿
+(1) Novčanom kaznom u iznosu od 500 eura do 6.000 eura kazniće se za prekršaj poreski obveznik - preduzetnik, ako:
+1) ne pruži poreskom organu, na njegov zahtjev i u roku koji odredi, sve raspoložive informacije, neophodne za utvrđivanje činjeničnog stanja od značaja za oporezivanje (član 14c stav 1);
+2) ne pruži poreskom organu informacije koje traži u pisanom obliku (član 14c stav 3);
+3) ne dostavi poreskom organu podatke, izvještaje i dokumentaciju sa kojima raspolaže, a koje su od značaja za oporezivanje u skladu sa zakonom (član 14d);
+4) ne daje tačne informacije u okviru dokumentacije, uključujući izjavu, odnosno potvrdu o rezidentnosti izvještajnoj finansijskoj instituciji, u toku postupka produbljene provjere (član 14e stav 3).
+5) ne imenuje poreskog punomoćnika i o tome ne obavijesti nadležni poreski organ u roku od deset dana od dana početka ostvarivanja prihoda, odnosno sticanja imovine u Crnoj Gori (član 26 stav 2).
+6) ne podnese poreskom organu prijavu za registraciju u roku od pet radnih dana od dana ostvarivanja oporezivog prihoda, upisa u odgovarajući registar, odnosno sticanja imovine koja podliježe oporezivanju (član 32 stav 3);
+7) ne obavijesti poreski organ o svim promjenama koje nastanu u toku poslovanja, a odnose se na podatke upisane u poreski registar u roku od 15 dana od dana nastanka promjene (član 33);
+8) ne prikuplja podatke i ne vodi evidenciju o korisnicima kriptoimovine, fizičkih ili pravnih lica koji su korisnici o kojim se izvještava ili imaju jedno ili više fizičkih lica koja imaju kontrolu, a koji su lica o kojim se izvještava, kao i o pruženim uslugama korisnicima kriptoimovine, preduzetim aktivnostima, nalozima i sprovedenim transakcijama sa iznosima i datumima transakcija, kao i ostvarenim prihodima po osnovu prodaje ili sticanja kriptoimovine za svaku vrstu kriptoimovine o kojoj se izvještava sa stanjem imovine na kraju izvještajnog perioda i ne preduzima mjere produbljene provjere, (član 14h stav 1); 
+9) pored podataka iz člana 14h stav 1 ovog zakona ne pribavi i ne dostavi poreskom organu i podatke o vlasniku odnosno korisniku kriptoimovine iz člana 14h stav 2 ovog zakona (član 14h stav 2);
+10) ne vodi evidenciju o preduzetim aktivnostima i prikupljenim dokazima na koje se oslanja i istu ne čuva najmanje pet godina nakon isteka roka za dostavljanje informacija za kalendarsku godinu na koju se evidencija odnosi (član 14h stav 3);
+11) ne dostavlja potpune i tačne podatke iz člana 14h st. 1 i 2 ovog zakona poreskom organu, za potrebe oporezivanja i razmjene informacija sa nadležnim organima države članice EU ili druge države odnosno teritorije države (član 14h stav 4);
+12) ne dostavlja nadležnom poreskom organu podatke iz člana 14h st. 1 i 2 ovog zakona, na propisanom obrascu u elektronskom obliku, najkasnije do 31. januara godine koja slijedi godinu u kojoj je korisnik kriptoimovine identifikovan kao korisnik o kojem se izvještava (član 14h stav 6);
+13) ne podnese prijavu za registraciju kod nadležnog poreskog organa, u skladu sa ovim zakonom i ne upiše se u Registar pružalaca usluga povezanih sa kriptoimovinom kod Komisije za tržište kapitala Crne Gore u skladu sa zakonom kojim se uređuju mjere i radnje koje se preduzimaju radi sprečavanja i otkrivanja pranja novca i finansiranja terorizma zakonom o registraciji (član 14g stav 7).
+(2) Za prekršaj iz stava 1 ovog člana kazniće se i poreski obveznik-fizičko lice novčanom kaznom u iznosu od 100 eura do 1.000 eura.
+Član 105b ﻿
+- brisan -
+Članovi od 106 do 111 
+- brisani - 
+XVIII PRELAZNE I ZAVRŠNE ODREDBE 
+Član 112 
+Bliži propisi za izvršavanje ovog zakona donijeće se u roku od šest mjeseci od dana stupanja na snagu ovog zakona. 
+Član 112a
+Zamjenu PIB po službenoj dužnosti, u roku od šest mjeseci od dana stupanja na snagu ovog zakona, izvršiće:
+1) CRPS za preduzetnike i stečajnu masu, 
+2) nadležna područna jedinica poreskog organa za advokate, notare i javne izvršitelje.
+Član 113 
+Ako je postupak za ostvarivanje prava poreskog obveznika u toku okončaće se po odredbama važećeg zakona, ukoliko je to za poreskog obveznika povoljnije. 
+Član 113a
+Član 6 stav 1 tačka 3 ovog zakona primjenjivaće se od dana uspostavljanja Centralnog registra privrednih društava u Poreskoj upravi u skladu sa zakonom kojim se uređuju privredna društva.
+Kontrolu i objavljivanje finansijskih iskaza iz člana 6 stav 1 tačka 28a ovog zakona i nadzor nad obavezom finansijskog izvještavanja iz člana 74 stav 5 ovog zakona vršiće poreski organ od dana uspostavljanja ove nadležnosti za Poresku upravu u skladu sa zakonom kojim se uređuje računovodstvo i revizija.
+Član 113b
+Primjena čl. 105 i 105a ovog zakona odlaže se do dana početka primjene Zakona o prekršajima ("Službeni list CG", br. 1/11 i 6/11).  
+Član 113c
+Odredba člana 6a ovog zakona primjenjivaće se od 1. januara 2016. godine.
+Član 113d
+Podzakonski akti za sprovođenje ovog zakona donijeće se u roku od šest mjeseci od dana stupanja na snagu ovog zakona.
+Član 113e
+Podzakonski akti iz člana 14g stav 8, člana 14h stav 8 i člana 16f stav 4 ovog zakona donijeće se u roku od godinu dana od dana stupanja na snagu ovog zakona.
+Član 114 
+Stupanjem na snagu ovog zakona, prestaje da važi Zakon o poslovima javnih prihoda ("Službeni list RCG", br. 3/92, 3/94, 42/94, 13/96 i 45/98).
+Član 114a
+Danom stupanja na snagu ovog zakona prestaje da važi Pravilnik o načinu utvrđivanja poreske osnovice putem procjene („Službeni list RCG”, broj 36/05).
+Član 115 
+Danom primjene ovog zakona prestaju da važe odredbe zakona u dijelu koji se odnosi na poreski postupak, i to: 
+1) Zakona o porezu na dohodak građana ("Službeni list RCG", br. 30/93, 3/94, 13/94, 42/94, 1/95, 13/96 i 45/98); 
+2) Zakona o porezu na dobit preduzeća ("Službeni list RCG", br. 3/92, 30/93, 3/94, 42/94 i 45/98); 
+3) Zakona o porezima na imovinu ("Službeni list RCG", br. 3/92, 30/93, 3/94, 42/94, 20/95 i 22/95); 
+4) Zakona o porezu na promet ("Službeni list RCG", br. 4/94, 13/94, 42/94, 13/96 i 45/98); 
+5) Zakona o doprinosima za socijalno osiguranje ("Službeni list RCG", br. 23/93, 3/94, 42/94, 13/96 i 45/98); 
+6) Zakona o sistemu javnih prihoda ("Službeni list RCG", br. 31/93, 3/94, 42/94, 13/96 i 45/98). 
+Član 116 
+Ovaj zakon stupa na snagu osmog dana od dana objavljivanja u "Službenom listu Republike Crne Gore", a primjenjivaće se od 1. januara 2002. godine. 
+  
+U REDAKCIJSKOM PREČIŠĆENOM TEKSTU NE NALAZI SE:
+Čl. 11. Odluke - 15/2025-124:
+''Podzakonski akti iz člana 14e stav 8 i člana 27 stav 6 ovog zakona donijeće se u roku od godinu dana od dana stupanja na snagu ovog zakona.''

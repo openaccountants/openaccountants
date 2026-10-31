@@ -8,7 +8,6 @@ __pycache__
 .DS_Store
 **/.DS_Store
 docs
-CHANGELOG.md
 CLA.md
 COMMERCIAL-LICENSING.md
 CONTRIBUTING.md
@@ -17,8 +16,6 @@ LICENSES
 LICENSING.md
 REUSE.toml
 README.md
-GOAL.md
-OWNERS.md
 glama.json
 Dockerfile
 .dockerignore

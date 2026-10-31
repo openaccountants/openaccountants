@@ -35,12 +35,19 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      accounting-pack and router files. Rates-row URLs, the nine canonical
      headings and the "Not yet confirmed" line WARN in both modes until the
      backlog is cleared. The full run prints a count of failures per check.
+     The reviewer-lesson checks (k to o: read-date evidence, Sources columns,
+     source hosts, jurisdiction against body, row year against linked page)
+     WARN in both modes, so old content never fails on them.
   8. PR mode only: one job in one jurisdiction has one skill
      (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
      renamed skill has the job or stripped name of another skill there, unless
      the PR deletes that skill. WARN if its (country, domain) cell is occupied by
      a different job, or no domain can be classified. Pass --duplicates-report to
      write skills/DUPLICATES.md; existing groups are one WARN line on a full run.
+  9. PR mode only: a PR that deletes a skill is a merge or a retirement. ERROR
+     unless the PR body names it and has `## Moved` and `## Not moved` tables;
+     WARN for a heading of the deleted skill those tables do not cover. Outside
+     GitHub Actions there is no PR body, so it WARNs.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -54,6 +61,7 @@ import subprocess
 import sys
 
 import job_identity
+import repo_layout
 import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
@@ -95,9 +103,8 @@ LEGACY_MISSING_DESCRIPTION = {
 # (scripts/backfill-metadata.py did the one-time sweep).
 JURISDICTION_OPTIONAL_DIRS = {
     "skills/cross-border/treaty-corridors",
-    "skills/intelligence",
-    "skills/templates",
-    "skills/international/eu",
+    "skills/foundation/intelligence",
+    "skills/eu",
 }
 
 
@@ -201,27 +208,42 @@ def changed_files_vs_main():
     import subprocess
     try:
         out = subprocess.run(
-            ["git", "diff", "--name-only", "origin/main...HEAD"],
+            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=d", "origin/main...HEAD"],
             cwd=REPO_ROOT, capture_output=True, text=True, check=True,
         ).stdout
-        return [l.strip() for l in out.splitlines() if l.strip()]
+        status = subprocess.run(
+            ["git", "diff", "--name-status", "-M100%", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+        moved = repo_layout.pure_moves(status)
+        return [l.strip() for l in out.splitlines() if l.strip() and l.strip() not in moved]
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute changed files ({e}); validating everything")
         return None
 
 
 def added_and_deleted_vs_main():
-    """(added paths, deleted paths) vs origin/main. A rename is one of each."""
+    """(added paths, deleted paths) vs origin/main. A rename to a new filename is
+    one of each; a move that keeps the filename keeps the slug and is neither."""
     try:
         out = subprocess.run(
-            ["git", "diff", "--name-status", "--no-renames", "origin/main...HEAD"],
+            ["git", "diff", "--name-status", "-M90%", "origin/main...HEAD"],
             cwd=REPO_ROOT, capture_output=True, text=True, check=True,
         ).stdout
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute added files ({e}); skipping the one-job-one-skill check")
         return set(), set()
-    rows = [line.split("\t", 1) for line in out.splitlines() if "\t" in line]
-    return {p for s, p in rows if s == "A"}, {p for s, p in rows if s == "D"}
+    added, deleted = set(), set()
+    for line in out.splitlines():
+        fields = line.split("\t")
+        if fields[0] == "A":
+            added.add(fields[1])
+        elif fields[0] == "D":
+            deleted.add(fields[1])
+        elif fields[0].startswith("R") and os.path.basename(fields[1]) != os.path.basename(fields[2]):
+            deleted.add(fields[1])
+            added.add(fields[2])
+    return added, deleted
 
 
 def job_conflicts(cov, guides, added, deleted, readme_for, words):
@@ -296,6 +318,35 @@ def check_new_skill_jobs(bi, errors, warnings):
     new_errors, new_warnings = job_conflicts(cov, guides_with_jobs(bi), added, deleted, readme_for, words)
     errors.extend(new_errors)
     warnings.extend(new_warnings)
+
+
+def pull_request_body():
+    """The PR description from the Actions event file; None outside a pull_request run."""
+    event = os.environ.get("GITHUB_EVENT_PATH")
+    if not event or not os.path.exists(event):
+        return None
+    with open(event, encoding="utf-8") as fh:
+        pull_request = json.load(fh).get("pull_request")
+    return None if pull_request is None else pull_request.get("body") or ""
+
+
+def check_merge_records(errors, warnings, pr_body=None, deleted=None, old_text=None):
+    """Line 5: a deleted skill's items are all accounted for in the PR body."""
+    deleted = added_and_deleted_vs_main()[1] if deleted is None else deleted
+    pr_body = pull_request_body() if pr_body is None else pr_body
+    for rel in sorted(deleted):
+        if not rel.startswith("skills/") or not rel.endswith(".md") or os.path.basename(rel) == "README.md":
+            continue
+        slug = os.path.splitext(os.path.basename(rel))[0]
+        if pr_body is None:
+            warnings.append(f"{rel}: deleted; list its items under ## Moved and ## Not moved in the PR body")
+            continue
+        text = old_text(rel) if old_text else subprocess.run(
+            ["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT, capture_output=True, text=True,
+        ).stdout
+        problems, notes = skill_checks.merge_record_problems(slug, text, pr_body)
+        errors.extend(f"{rel}: {p}" for p in problems)
+        warnings.extend(f"{rel}: {n}" for n in notes)
 
 
 def same_job_report(bi):
@@ -469,7 +520,7 @@ def check_guides(bi, errors, warnings, only_files=None):
         frontmatter = skill_checks.read_frontmatter(text)
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
-        for letter, name, _func in skill_checks.CHECKS:
+        for letter, name, _func in skill_checks.CHECKS + skill_checks.LESSON_CHECKS:
             problems = results[name]
             if not problems:
                 continue
@@ -616,11 +667,16 @@ def main():
             only = {f for f in changed if f.startswith(("skills/", "packages/"))}
             print(f"changed-only mode: validating {len(only)} changed guide file(s)")
             if not only:
+                check_merge_records(errors, warnings)
+                if errors:
+                    print("\n".join(f"ERROR: {e}" for e in errors))
+                    sys.exit(1)
                 print("no guide files changed — validation passed")
                 return
     check_guides(bi, errors, warnings, only_files=only)
     if changed_only:
         check_new_skill_jobs(bi, errors, warnings)
+        check_merge_records(errors, warnings)
     else:
         groups = same_job_report(bi)
         warnings.append(f"{len(groups)} same-job groups, see skills/DUPLICATES.md")
