@@ -1,0 +1,186 @@
+{
+  "status": "PASS four new payroll/annual-form computations and ten source lookups; independent legal review pending",
+  "cases": [
+    {
+      "name": "Ordinary nominal social base and separate employer-funded sickness field",
+      "assumed_inputs": {
+        "category": "101",
+        "legally_established_rate": ".24",
+        "base1": 40000,
+        "base2": 60000,
+        "separate_category15311_benefit": 1500
+      },
+      "actual": {
+        "person1": "9600.00",
+        "person2": "14400.00",
+        "total_column9": "100000",
+        "total_column10": "1500",
+        "total_column11": "24000.00",
+        "summary1_1b": "24000.00"
+      },
+      "expected": {
+        "person1": 9600,
+        "person2": 14400,
+        "total_column9": 100000,
+        "total_column10": 1500,
+        "total_column11": 24000,
+        "summary1_1b": 24000
+      },
+      "scope": "Actualordinary24percentemployer/eligiblebasesand15311benefitalreadyestablished;notPIT/medical/gross-to-netcalculation.15311base/contributionfieldsremainblank.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "IPC21 printed control differs from total PIT and subdivision salary control",
+      "assumed_inputs": {
+        "already_computed_SAL_tax": 9000,
+        "row41_tax": 1200,
+        "row42_tax": 3000,
+        "row44_tax": 600,
+        "row56_tax": 2400,
+        "subdivision1": 6000,
+        "subdivision2": 3000,
+        "other41_to49s1_tax": 0
+      },
+      "actual": {
+        "row61col5": "16200",
+        "excluded_control_categories": "4800",
+        "printed_control": "11400",
+        "SAL_subdivision_total": "9000"
+      },
+      "expected": {
+        "row61col5": 16200,
+        "excluded_control_categories": 4800,
+        "printed_control": 11400,
+        "SAL_subdivision_total": 9000
+      },
+      "scope": "Payments/reportability/actualtaxalreadyestablished;printedcontrolsubtracts41-49and49^1only;nottreatyratecalculation.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "IALS21 relief total and withholding control use different columns",
+      "assumed_inputs": {
+        "already_allowed_fields8_to12_person1": [
+          "1000",
+          "0",
+          "0",
+          "500",
+          "0"
+        ],
+        "already_allowed_fields8_to12_person2": [
+          "0",
+          "2000",
+          "0",
+          "0",
+          "600"
+        ],
+        "gross_person1": 10000,
+        "gross_person2": 20000,
+        "already_withheld_tax_person1": 200,
+        "already_withheld_tax_person2": 300
+      },
+      "actual": {
+        "person1column13": "1500",
+        "person2column13": "2600",
+        "totalcolumn13": "4100",
+        "totalcolumn6": "30000",
+        "totalcolumn16": "500",
+        "printed_control": "500"
+      },
+      "expected": {
+        "person1column13": 1500,
+        "person2column13": 2600,
+        "totalcolumn13": 4100,
+        "totalcolumn6": 30000,
+        "totalcolumn16": 500,
+        "printed_control": 500
+      },
+      "scope": "Already-establishedrelief/payer/taxassumptionsonly;P/Mnotcombinedonthesameperson;notstatutoryannualallowancesorPITformula.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "IPC21 tolerance sums absolute corrections rather than netting",
+      "assumed_inputs": {
+        "manual_differences_case1": [
+          30,
+          -25
+        ],
+        "manual_differences_boundary": [
+          30,
+          -20
+        ],
+        "printed_MDL_tolerance": 50
+      },
+      "actual": {
+        "case1_abs": "55",
+        "case1_net": "5",
+        "case1_within_tolerance": "0",
+        "boundary_abs": "50",
+        "boundary_within_tolerance": "1"
+      },
+      "expected": {
+        "case1_abs": 55,
+        "case1_net": 5,
+        "case1_within_tolerance": 0,
+        "boundary_abs": 50,
+        "boundary_within_tolerance": 1
+      },
+      "scope": "Annex4partII20validationmathematicsonly;notareductioninlegalcontributionsorliveportaltest.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "source_lookups": [
+    {
+      "name": "Nonresident row and source-code pairs are separate",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Category101 has actual alternative29/24tariffs",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Founder127 and justice174 annual amounts retained",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Sickness15311 and daywork14912 are distinct",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "ITpark categories have special total exclusion",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Identifier exceptions never allow bothzero",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "PartIstart-date7and8 really differ",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Fixed-category field-mask12and13 difference retained",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "IALS21 own country codes and atypical entry retained",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "IALS21 printed control is column16",
+      "status": "PASS SOURCE LOOKUP"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-ACTUAL-FORM-20261031.json": "b5b63c1c9109adc5eec32df19284b5e652a0ecd96221c0244f299624931f966e",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-IALS21-ACTUAL-CLASSIFIER-20261031.json": "5db3d16d76f016550d30bde7fd3eeb0949f7475956b27bcd79b37e40332e91ed",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-FORM-20261031.json": "7385394f79ab9b4fece17bf3f1105324e205c9cae0bef2b153d2e421d3c1dad2",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-CATEGORIES-20261031.json": "ec28d35b9ec25fe3dd933c8404bfc29e0c25e6e292150a6bbae544e20ed593a5",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-IPC21-ACTUAL-REQUIREMENTS-20261031.json": "4684aab4983621cb8b5e0c8176991f923c1a159b2550a39b4ed8e7ccd22e80b9"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-payroll.md": "2a79de75e0b77566e26015ba4dd6a82fc25afb63827773c9ddb9816881470966",
+    "skills/international/moldova/md-cross-border.md": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099"
+  },
+  "read_date": "2026-10-31",
+  "not_certified": "Actual taxpayer/category/benefit/relief/treaty eligibility, current accepted annual prefix, exception-conflict implementation, portal acceptance, comprehensive country coverage or independent review"
+}
