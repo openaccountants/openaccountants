@@ -334,7 +334,7 @@ Practitioner review required for: rate table accuracy (verify against EC TEDB an
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Council Directive 2006/112/EC, consolidated text of 14 April 2025 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 | 2026-10-30 |
+| Council Directive 2006/112/EC, consolidated text of 14 April 2025 | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 | 2026-10-31 |
 | Council Implementing Regulation (EU) No 282/2011, consolidated text of 14 April 2025 (Articles 18, 45a) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R0282-20250414 | 2026-10-30 |
 | Council Directive (EU) 2025/516 (ViDA) | https://eur-lex.europa.eu/eli/dir/2025/516/oj/eng | 2026-10-30 |
 | Council Regulation (EU) 2025/517 | https://eur-lex.europa.eu/eli/reg/2025/517/oj/eng | 2026-10-30 |

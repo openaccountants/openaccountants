@@ -461,7 +461,7 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| Council Directive 2006/112/EC, consolidated text of 14 April 2025 (Articles 2, 6, 14a, 17a, 20, 31-59c, 66-69, 94, 96-98, 105a, 138, 143, 168, 176, 178, 194, 196, 199a, 206, 211, 222, 226, 250-252, 262-264, 284, 288, 288a, 358-369zb) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 | 2026-10-30 |
+| Council Directive 2006/112/EC, consolidated text of 14 April 2025 (Articles 2, 6, 14a, 17a, 20, 31-59c, 66-69, 94, 96-98, 105a, 138, 143, 168, 176, 178, 194, 196, 199a, 206, 211, 222, 226, 250-252, 262-264, 284, 288, 288a, 358-369zb) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414 | 2026-10-31 |
 | Council Implementing Regulation (EU) No 282/2011, consolidated text of 14 April 2025 (Articles 18, 45a) | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02011R0282-20250414 | 2026-10-30 |
 | Council Directive (EU) 2025/516 (ViDA), Articles 1-7 | https://eur-lex.europa.eu/eli/dir/2025/516/oj/eng | 2026-10-30 |
 | Council Regulation (EU) 2025/517 (ViDA administrative cooperation), Article 6 | https://eur-lex.europa.eu/eli/reg/2025/517/oj/eng | 2026-10-30 |

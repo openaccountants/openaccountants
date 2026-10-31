@@ -188,30 +188,30 @@ A business not established in Ireland that supplies taxable goods or services to
 
 | Rule | Figure | Section | Official source |
 | --- | --- | --- | --- |
-| Bond instead of an EEA-resident director | €25,000 | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
-| PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) | same |
-| PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) | same |
-| RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) | same |
-| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations | same |
+| Bond instead of an EEA-resident director | €25,000 | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html |
+| PLC authorised minimum share capital | €25,000 | [s.1000](https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1000/enacted/en/html |
+| PLC shares paid up at allotment | at least one-quarter of nominal value plus all premium | [s.1026](https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html) | https://www.irishstatutebook.ie/eli/2014/act/38/section/1026/enacted/en/html |
+| RBO fine on indictment | up to €500,000 | [S.I. No. 110 of 2019, reg. 28](https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print) | https://www.irishstatutebook.ie/eli/2019/si/110/made/en/print |
+| CRO incorporation, business name and late annual return fees | **check** on the CRO site | CRO fee regulations | Not confirmed; see Sources |
 
 ## Boundaries and exceptions
 
 | Situation | Rule | What to do | Official source |
 | --- | --- | --- | --- |
-| Sole director wants to be secretary too | Not allowed where the company has only one director (s.129(6)) | Appoint a second person as secretary, or a second director who can also be secretary | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
-| No director lives in the EEA | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) applies unless a bond or a s.140 certificate is in force | Bond (€25,000), a s.140 certificate backed by a Revenue statement, or appoint a genuine EEA-resident director. Never a nominee with no real role | same |
-| UK-resident director only | The UK is not an EEA state | Same as above | same |
-| Wants an objects clause | An LTD has unlimited capacity (s.38) | Form a DAC | same |
-| DAC, CLG or PLC with one director | At least two directors required | Appoint a second director | same |
-| More than 149 members in an LTD or DAC | Registration above the limit is void (s.17(7)) | Leave out employee members when counting; otherwise a PLC or other form | same |
-| Trading under a name other than the true name | Business name must be registered within one month of adopting it | File RBN1 / RBN1A / RBN1B with the CRO | same |
-| Company with no Irish-resident directors | Cannot use eRegistration unless through an agent | Agent registers on ROS, or paper TR2 / TR2 (FT) | same |
-| Company pays only its directors | Must still register as an employer and operate PAYE | Register before the first payment | same |
-| Turnover exactly at a VAT threshold | Obligation arises only when turnover exceeds the threshold | Monitor the calendar-year total; may elect to register earlier | same |
-| Non-established business selling to Irish taxable customers | No threshold | Register for VAT from the first supply, unless in the VAT SME Scheme | same |
-| CLG wanting charity tax exemption | Incorporation does not give charitable status | Register with the Charities Regulator, then apply to Revenue | same |
-| Incorporated in Ireland but run from abroad | Resident here from incorporation (on or after 1 January 2015) unless a treaty says otherwise | Do not structure around residence; refer if a treaty tie-breaker is relied on | same |
-| Company formed with no activity in the State | The s.24 declaration must state that a purpose is carrying on an activity in the State | Refer | same |
+| Sole director wants to be secretary too | Not allowed where the company has only one director (s.129(6)) | Appoint a second person as secretary, or a second director who can also be secretary | https://www.irishstatutebook.ie/eli/2014/act/38/section/129/enacted/en/html |
+| No director lives in the EEA | [s.137](https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html) applies unless a bond or a s.140 certificate is in force | Bond (€25,000), a s.140 certificate backed by a Revenue statement, or appoint a genuine EEA-resident director. Never a nominee with no real role | https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html |
+| UK-resident director only | The UK is not an EEA state | Same as above | https://www.irishstatutebook.ie/eli/2014/act/38/section/137/enacted/en/html |
+| Wants an objects clause | An LTD has unlimited capacity (s.38) | Form a DAC | https://www.irishstatutebook.ie/eli/2014/act/38/section/38/enacted/en/html |
+| DAC, CLG or PLC with one director | At least two directors required | Appoint a second director | https://www.irishstatutebook.ie/eli/2014/act/38/section/985/enacted/en/html |
+| More than 149 members in an LTD or DAC | Registration above the limit is void (s.17(7)) | Leave out employee members when counting; otherwise a PLC or other form | https://www.irishstatutebook.ie/eli/2014/act/38/section/17/enacted/en/html |
+| Trading under a name other than the true name | Business name must be registered within one month of adopting it | File RBN1 / RBN1A / RBN1B with the CRO | https://www.irishstatutebook.ie/eli/1963/act/30/enacted/en/print |
+| Company with no Irish-resident directors | Cannot use eRegistration unless through an agent | Agent registers on ROS, or paper TR2 / TR2 (FT) | https://www.revenue.ie/en/starting-a-business/registering-for-tax/eregistration.aspx |
+| Company pays only its directors | Must still register as an employer and operate PAYE | Register before the first payment | https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/registration-of-employers-for-paye-purposes/index.aspx |
+| Turnover exactly at a VAT threshold | Obligation arises only when turnover exceeds the threshold | Monitor the calendar-year total; may elect to register earlier | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
+| Non-established business selling to Irish taxable customers | No threshold | Register for VAT from the first supply, unless in the VAT SME Scheme | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/option-to-tax-lettings.aspx |
+| CLG wanting charity tax exemption | Incorporation does not give charitable status | Register with the Charities Regulator, then apply to Revenue | Not confirmed; see Sources |
+| Incorporated in Ireland but run from abroad | Resident here from incorporation (on or after 1 January 2015) unless a treaty says otherwise | Do not structure around residence; refer if a treaty tie-breaker is relied on | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx |
+| Company formed with no activity in the State | The s.24 declaration must state that a purpose is carrying on an activity in the State | Refer | https://www.irishstatutebook.ie/eli/2014/act/38/section/24/enacted/en/html |
 
 ## Worked cases
 
@@ -382,7 +382,7 @@ expected:
 | Revenue: payment and filing | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-31 |
 | Revenue: filing your tax return | https://www.revenue.ie/en/self-assessment-and-self-employment/filing-your-tax-return/index.aspx | 2026-10-31 |
 
-Not yet confirmed: CRO and RBO filing fees and processing times, which this skill still sends the reader to check on those sites; the current Class S PRSI rate, which belongs to the PRSI skill.
+Not yet confirmed: the Charities Regulator and Revenue charity steps, which have no source read here; CRO and RBO filing fees and processing times, which this skill still sends the reader to check on those sites; the current Class S PRSI rate, which belongs to the PRSI skill.
 
 <!-- openaccountants-cta-block -->
 

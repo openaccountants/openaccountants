@@ -53,7 +53,7 @@ The two tests are joined by OR: crossing either one means the person must regist
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/register-it-self-assessment.aspx |
+| Source | all figures below | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/persons-required-register-goods-services-abroad.aspx |
 | Threshold, persons supplying services only | EUR 42,500 | "€42,500 in the case of persons supplying services only." | same |
 | Threshold, goods at the reduced or standard rate that the person manufactured or produced from zero-rated materials (same amount as services) | EUR 42,500 | "€42,500 for persons supplying goods liable at the reduced or standard rates which they have manufactured or produced from zero rated materials." | same |
 | Threshold, persons supplying goods | EUR 85,000 | "€85,000 for persons supplying goods." | same |
@@ -77,7 +77,7 @@ Route every VAT question, including rates, VAT3 returns and the reverse charge, 
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Source | all figures below | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf | https://assets.gov.ie/static/documents/cb168977/PRSI_C20260116_Contribution_Rates_and_User_Guide_-_SW_14_-_English_Version_-_January_2026_.pdf-web.pdf |
 | Self-employed contributors pay Class S if annual income is this amount or more | EUR 5,000 | "Self-employed contributors with annual income of €5,000 or over pay Class S PRSI" | same |
 
 The Class S test says "or over": income of exactly the amount in the table is caught. That is a different direction from the self-assessment test above, which says "exceeds". The two tests share a number but are different rules. Route the Class S rate and minimum contribution to `ie-prsi-class-s`.
@@ -86,7 +86,7 @@ The Class S test says "or over": income of exactly the amount in the table is ca
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Source | all figures below | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ | https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/ |
 | Shareholding at or above which a proprietary director is classified as self-employed for PRSI (directly or indirectly) | 50% | "From 1 July 2013 proprietary directors who own or control 50% or more of the shareholding of a company, either directly or indirectly e.g., through a holding company, are classified as self-employed and liable to pay PRSI at Class S." | same |
 
 A director who owns or controls 50% or more (the share in the table above), counting shares held through a holding company, is classified as self-employed and pays Class S. A director below that share is not classified by this rule: refer the classification to `ie-prsi-class-s` and the reviewer.
@@ -95,7 +95,7 @@ A director who owns or controls 50% or more (the share in the table above), coun
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Source | all figures below | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf | https://www.revenue.ie/en/tax-professionals/tdm/income-tax-capital-gains-tax-corporation-tax/part-42/42-04-13.pdf |
 | Share of a company's share capital above which a director (controlling it directly or indirectly) is a proprietary director and a chargeable person who files Form 11 | 15% | "A proprietary director is a director who can control, either directly or indirectly, more than 15% of the share capital of a company. All proprietary directors are ‘chargeable persons’ and must be set up on Revenue’s record for the issue of a self-assessment return." | same |
 
 This is the income tax test for which directors must file Form 11. It is a different rule from the PRSI Class S shareholding test in the table above: see Section 4.5. A director above the share in this table is a proprietary director and a chargeable person; route the director's own return to `ie-income-tax-form11`. A director at or below it is a non-proprietary director, for whom Revenue lists Form 12.
@@ -104,7 +104,7 @@ This is the income tax test for which directors must file Form 11. It is a diffe
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/index.aspx |
+| Source | all figures below | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
 | Option 1: share of the tax due for the CURRENT tax year | 90% | "90% of the tax due for that tax year" | same |
 | Option 2: share of the tax due for the immediately PREVIOUS tax year | 100% | "100% of the tax due for the immediately previous tax year" | same |
 | Option 3: share of the tax due for the PRE-PRECEDING year, only when paying by direct debit, and not if that year's tax was nil | 105% | "105% of the tax due for the tax year preceding the immediately previous tax year" | same |
@@ -116,7 +116,7 @@ Preliminary tax covers Income Tax, PRSI and USC. It "must be equal to, or more t
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/preliminary-tax.aspx |
+| Source | all figures below | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
 | Extended date for the 2025 Form 11 balance and 2026 preliminary tax, ONLY if the 2025 Form 11 is filed AND the payment is made through ROS | 18 November 2026 | "the due date is extended to Wednesday 18 November 2026." | same |
 | Date where the client does not both file and pay through ROS | 31 October 2026 | "the required date to submit both returns and payments is no later than 31 October 2026." | same |
 
@@ -126,7 +126,7 @@ By 31 October in a tax year the client must pay preliminary tax for that year, f
 
 | Item | Value | Note (verbatim from the page) | Official source |
 | --- | --- | --- | --- |
-| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/pay-file-system.aspx |
+| Source | all figures below | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx | https://www.revenue.ie/en/gains-gifts-and-inheritance/transfering-an-asset/when-and-how-do-you-pay-and-file-cgt.aspx |
 | Pay date, disposals 1 January to 30 November (initial period) | 15 December of the same year | "1 January and 30 November (the initial period), you must pay CGT by 15 December of the same year" | same |
 | Pay date, disposals 1 December to 31 December (later period) | 31 January of the next year | "1 December and 31 December (the later period), you must pay CGT by 31 January of the next year." | same |
 | CGT return | by 31 October of the following year | "You must file your CGT Return on, or before, 31 October of the year that follows the date of disposal." | same |
@@ -291,23 +291,23 @@ Use `ask_user_input_v0`. Batch where independent.
 
 | Answer | Action | Official source |
 | --- | --- | --- |
-| Q1 183 days, or 280-day test met | continue | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
-| Q1 arrived or left during the year | **REFER**: split-year treatment is for employment income only | same |
-| Q1 not resident | **REFUSE** | same |
-| Q1 not sure | ask for day counts; do not assume residence | same |
-| Q2 Irish-domiciled | worldwide income basis; continue | same |
-| Q2 foreign domicile, resident each of last three years | record ordinarily resident = yes; flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | same |
-| Q2 foreign domicile, not resident all three years, or not sure | flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | same |
-| Q3 sole trader or partnership | route `ie-income-tax-form11` + `ie-prsi-class-s` + `ie-usc` + `ie-preliminary-tax` | same |
-| Q3 LTD single director-shareholder | route `ie-corporation-tax` + `ie-income-tax-form11` (director); flag `employment_status_review`; director's own return: Form 11 if more than 15% of share capital | same |
-| Q3 LTD several directors, DAC or CLG | route `ie-corporation-tax`; if more than 50 employees **REFUSE** | same |
-| Q3 not sure | route `ie-formation` first | same |
-| Q4 below the threshold for the supply type | registration optional; flag below-threshold | same |
-| Q4 above services but below goods threshold, and services only or goods less than the share | registration obligatory; route `ie-vat-return` | same |
-| Q4 above services but below goods threshold, and goods only or goods at or above the share | registration optional unless the goods are made from zero-rated materials; flag for review | same |
-| Q4 above the goods threshold | registration obligatory; route `ie-vat-return` | same |
-| Q5 RCT | flag RCT; ask whether principal contractor or subcontractor | same |
-| Q5 financial services or funds | **REFUSE** | same |
+| Q1 183 days, or 280-day test met | continue | Routing step, no figure |
+| Q1 arrived or left during the year | **REFER**: split-year treatment is for employment income only | Routing step, no figure |
+| Q1 not resident | **REFUSE** | Routing step, no figure |
+| Q1 not sure | ask for day counts; do not assume residence | Routing step, no figure |
+| Q2 Irish-domiciled | worldwide income basis; continue | Routing step, no figure |
+| Q2 foreign domicile, resident each of last three years | record ordinarily resident = yes; flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | Routing step, no figure |
+| Q2 foreign domicile, not resident all three years, or not sure | flag `remittance_basis_review`; route `ie-non-dom`; reviewer confirms | Routing step, no figure |
+| Q3 sole trader or partnership | route `ie-income-tax-form11` + `ie-prsi-class-s` + `ie-usc` + `ie-preliminary-tax` | Routing step, no figure |
+| Q3 LTD single director-shareholder | route `ie-corporation-tax` + `ie-income-tax-form11` (director); flag `employment_status_review`; director's own return: Form 11 if more than 15% of share capital | Routing step, no figure |
+| Q3 LTD several directors, DAC or CLG | route `ie-corporation-tax`; if more than 50 employees **REFUSE** | Routing step, no figure |
+| Q3 not sure | route `ie-formation` first | Routing step, no figure |
+| Q4 below the threshold for the supply type | registration optional; flag below-threshold | Routing step, no figure |
+| Q4 above services but below goods threshold, and services only or goods less than the share | registration obligatory; route `ie-vat-return` | Routing step, no figure |
+| Q4 above services but below goods threshold, and goods only or goods at or above the share | registration optional unless the goods are made from zero-rated materials; flag for review | Routing step, no figure |
+| Q4 above the goods threshold | registration obligatory; route `ie-vat-return` | Routing step, no figure |
+| Q5 RCT | flag RCT; ask whether principal contractor or subcontractor | Routing step, no figure |
+| Q5 financial services or funds | **REFUSE** | Routing step, no figure |
 
 ### 5.2 Secondary batched questions
 
@@ -320,13 +320,13 @@ Use `ask_user_input_v0`. Batch where independent.
 
 | Answer | Action | Official source |
 | --- | --- | --- |
-| Q6 jointly assessed | partner's PPSN required; `ie-income-tax-form11` applies joint bands and credits | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
-| Q6 separately assessed or single treatment | flag for reviewer; each spouse's position checked in `ie-income-tax-form11` | same |
-| Q7 one or more employees | route `ie-payroll` | same |
-| Q7 more than 20 | flag (larger payroll; confirm scope) | same |
-| Q8 not registered and Q4 above threshold | flag **VAT registration overdue**; reviewer registers through ROS | same |
-| Q8 cancelled | flag for reviewer (final VAT3 and annual return) | same |
-| Q9 not paid, part paid or first year | flag `preliminary_tax_open`; route `ie-preliminary-tax` | same |
+| Q6 jointly assessed | partner's PPSN required; `ie-income-tax-form11` applies joint bands and credits | Routing step, no figure |
+| Q6 separately assessed or single treatment | flag for reviewer; each spouse's position checked in `ie-income-tax-form11` | Routing step, no figure |
+| Q7 one or more employees | route `ie-payroll` | Routing step, no figure |
+| Q7 more than 20 | flag (larger payroll; confirm scope) | Routing step, no figure |
+| Q8 not registered and Q4 above threshold | flag **VAT registration overdue**; reviewer registers through ROS | Routing step, no figure |
+| Q8 cancelled | flag for reviewer (final VAT3 and annual return) | Routing step, no figure |
+| Q9 not paid, part paid or first year | flag `preliminary_tax_open`; route `ie-preliminary-tax` | Routing step, no figure |
 
 ### 5.3 Capital events question
 
@@ -336,10 +336,10 @@ Use `ask_user_input_v0`. Batch where independent.
 
 | Answer | Action | Official source |
 | --- | --- | --- |
-| Q10 disposal | route `ie-cgt`; capture the disposal date (1 January to 30 November, or December) | https://www.revenue.ie/en/tax-professionals/ebrief/2026/no-0342026.aspx |
-| Q10 gift or inheritance | route `ie-cat`; capture relationship to the giver and the valuation date | same |
-| Q10 both | route both | same |
-| Q10 neither | skip | same |
+| Q10 disposal | route `ie-cgt`; capture the disposal date (1 January to 30 November, or December) | Routing step, no figure |
+| Q10 gift or inheritance | route `ie-cat`; capture relationship to the giver and the valuation date | Routing step, no figure |
+| Q10 both | route both | Routing step, no figure |
+| Q10 neither | skip | Routing step, no figure |
 
 ### 5.4 Foreign income question
 
@@ -497,19 +497,19 @@ When uncertain, prefer the stricter compliance outcome and flag it. All defaults
 
 | Ambiguity | Conservative default | Official source |
 | --- | --- | --- |
-| Residence borderline, no day count for the preceding year | Do not assume residence; ask for day counts; refuse if still unproven | https://www.revenue.ie/en/starting-a-business/starting-a-business/registering.aspx |
-| Domicile unclear | Assume foreign domicile is possible; flag `remittance_basis_review`; tax foreign income as arising until the reviewer decides | same |
-| Ordinary residence unclear | Record as unclear; it does not decide the remittance basis; `ie-non-dom` and the reviewer decide | same |
-| Turnover close to the VAT threshold for the supply type | Treat as above; flag registration | same |
-| Goods share of a mixed business close to the share in the VAT table | Treat as below the share; apply the services threshold | same |
-| Director shareholding close to the Class S share, or held through a holding company | Count indirect holdings; treat as Class S; flag for review | same |
-| Contractor working mainly for one client | Flag `employment_status_review` with the five Karshan questions | same |
-| Sole trader or partnership unclear (shared trade) | Assume partnership; flag the partnership return, Form 1 (Firms) | same |
-| Preliminary tax base unclear | Flag for `ie-preliminary-tax`; do not use the pre-preceding-year option unless direct debit is confirmed and that year's tax was not nil | same |
-| CGT disposal date unclear | Ask; the payment date depends on whether it fell in December | same |
-| Self-employed income close to the Class S amount | Treat as at or over (the test is "or over"); flag Class S | same |
-| Foreign income, treaty position unclear | Tax as arising with no credit; reviewer claims any credit | same |
-| ROS access unknown | Assume not active; use the 31 October 2026 date | same |
+| Residence borderline, no day count for the preceding year | Do not assume residence; ask for day counts; refuse if still unproven | Routing step, no figure |
+| Domicile unclear | Assume foreign domicile is possible; flag `remittance_basis_review`; tax foreign income as arising until the reviewer decides | Routing step, no figure |
+| Ordinary residence unclear | Record as unclear; it does not decide the remittance basis; `ie-non-dom` and the reviewer decide | Routing step, no figure |
+| Turnover close to the VAT threshold for the supply type | Treat as above; flag registration | Routing step, no figure |
+| Goods share of a mixed business close to the share in the VAT table | Treat as below the share; apply the services threshold | Routing step, no figure |
+| Director shareholding close to the Class S share, or held through a holding company | Count indirect holdings; treat as Class S; flag for review | Routing step, no figure |
+| Contractor working mainly for one client | Flag `employment_status_review` with the five Karshan questions | Routing step, no figure |
+| Sole trader or partnership unclear (shared trade) | Assume partnership; flag the partnership return, Form 1 (Firms) | Routing step, no figure |
+| Preliminary tax base unclear | Flag for `ie-preliminary-tax`; do not use the pre-preceding-year option unless direct debit is confirmed and that year's tax was not nil | Routing step, no figure |
+| CGT disposal date unclear | Ask; the payment date depends on whether it fell in December | Routing step, no figure |
+| Self-employed income close to the Class S amount | Treat as at or over (the test is "or over"); flag Class S | Routing step, no figure |
+| Foreign income, treaty position unclear | Tax as arising with no credit; reviewer claims any credit | Routing step, no figure |
+| ROS access unknown | Assume not active; use the 31 October 2026 date | Routing step, no figure |
 
 ## Worked cases
 
