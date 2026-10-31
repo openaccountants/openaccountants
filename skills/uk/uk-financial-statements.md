@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UK Financial Statements
 
-## UK Financial Statements Skill v1.1
+## UK Financial Statements Skill v1.2
 
 > **Year applicability:** This version gives the position at 30 October 2026. The size thresholds apply to financial years beginning on or after 6 April 2025, so they govern accounts for 2025/26 and 2026/27 year ends. FRS 102 and FRS 105 changes from the Periodic Review 2024 apply to accounting periods beginning on or after 1 January 2026. Where a rule changes on a later date (April 2028 filing reforms), the date is given. Read alongside uk-corporation-tax (the CT600 and its iXBRL accounts) and uk-formation (identity verification and other Companies House rules at formation).
 
