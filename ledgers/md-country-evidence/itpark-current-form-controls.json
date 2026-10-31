@@ -1,0 +1,386 @@
+{
+  "status": "PASS writer arithmetic/source identity only; named legal/portal ambiguities and independent country review remain open",
+  "cases": [
+    {
+      "name": "IU17 monthly maximum and monetary control",
+      "inputs": {
+        "sales": 200000,
+        "counted_employees": 3,
+        "forecast_reporting_year_wage": 17400
+      },
+      "actual": {
+        "row010": 14000,
+        "row020": 15660,
+        "row030": 15660,
+        "control": 15660
+      },
+      "expected": {
+        "row010": 14000,
+        "row020": 15660,
+        "row030": 15660,
+        "control": 15660
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "2026 eligibility and statutory employee population expressly assumed; not an FTE or payroll-tax computation"
+    },
+    {
+      "name": "Zero sales does not cancel a positive statutory employee minimum",
+      "inputs": {
+        "sales": 0,
+        "counted_employees": 3,
+        "forecast_reporting_year_wage": 17400
+      },
+      "actual": {
+        "row010": 0,
+        "row020": 15660,
+        "row030": 15660
+      },
+      "expected": {
+        "row010": 0,
+        "row020": 15660,
+        "row030": 15660
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Status/period/count established; no claim that0/0eligibility ratio passes or that every zero-sales entity has employees"
+    },
+    {
+      "name": "Monthly70percent does not establish cumulative eligibility",
+      "inputs": {
+        "month_eligible": 140000,
+        "month_total": 200000,
+        "cumulative_eligible": 650000,
+        "cumulative_total": 1000000
+      },
+      "actual": {
+        "month_percent": 70,
+        "cumulative_percent": 65
+      },
+      "expected": {
+        "month_percent": 70,
+        "cumulative_percent": 65
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Positive denominators assumed; full-period/two-month legal condition separately required, no automatic status-loss conclusion"
+    },
+    {
+      "name": "Annual salary control and individual statements use paid salary",
+      "inputs": {
+        "employeeA": {
+          "amount": 30000,
+          "active_months": 2
+        },
+        "employeeB": {
+          "amount": 20000,
+          "active_months": 1
+        }
+      },
+      "actual": {
+        "ISAPTI_col4_total": 50000,
+        "employee_statements": [
+          [
+            30000,
+            2
+          ],
+          [
+            20000,
+            1
+          ]
+        ],
+        "aggregate_months_not_current_headcount": 3
+      },
+      "expected": {
+        "ISAPTI_col4_total": 50000,
+        "employee_statements": [
+          [
+            30000,
+            2
+          ],
+          [
+            20000,
+            1
+          ]
+        ],
+        "aggregate_months_not_current_headcount": 3
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Matched covered-payment/year/month facts assumed; not IPC21insured-income reference or tax liability"
+    },
+    {
+      "name": "IUPT clear upward adjustment is additional assessed tax",
+      "inputs": {
+        "row011": 1000000,
+        "row012": 100000,
+        "row030": 70000,
+        "row040": 65000,
+        "established_row020": 5220
+      },
+      "actual": {
+        "row010_base": 1100000,
+        "row010_tax": 77000,
+        "row050": 7000,
+        "prior_shortfall": 5000,
+        "hypothetical_total_unpaid": 12000
+      },
+      "expected": {
+        "row010_base": 1100000,
+        "row010_tax": 77000,
+        "row050": 7000,
+        "prior_shortfall": 5000,
+        "hypothetical_total_unpaid": 12000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Only unambiguous branch14(a); M expressly established, no resolution of average/floor/portal; arithmetic cash reconciliation not a payment demand"
+    },
+    {
+      "name": "IUPT clear downward adjustment differs from paid excess",
+      "inputs": {
+        "adjusted_tax": 60000,
+        "prior_calculated_tax": 70000,
+        "actual_paid": 65000,
+        "established_M": 5220
+      },
+      "actual": {
+        "row050": -10000,
+        "hypothetical_paid_excess": 5000,
+        "prior_shortfall": 5000
+      },
+      "expected": {
+        "row050": -10000,
+        "hypothetical_paid_excess": 5000,
+        "prior_shortfall": 5000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Only unambiguous branch14(b); actual account/proof/refund procedure still required; no automatic10000cashrefund"
+    },
+    {
+      "name": "2024monthly TP adjustments are disjoint from later012",
+      "inputs": {
+        "account611": 1000000,
+        "later012": 80000,
+        "already_monthly013": 20000
+      },
+      "actual": {
+        "correct010": 1100000,
+        "correct_tax": 77000,
+        "wrong_double_count_base": 1120000,
+        "wrong_double_count_tax": 78400,
+        "general2025_012": 100000,
+        "general2025_010": 1100000
+      },
+      "expected": {
+        "correct010": 1100000,
+        "correct_tax": 77000,
+        "wrong_double_count_base": 1120000,
+        "wrong_double_count_tax": 78400,
+        "general2025_012": 100000,
+        "general2025_010": 1100000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Assumed nonoverlapping adjustments and correct original-period forms; general2025bridge aggregates both buckets once, no013"
+    },
+    {
+      "name": "Printed12month average is not the annual minimum total",
+      "inputs": {
+        "assumed_monthly_minimum_schedule": [
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220,
+          5220
+        ]
+      },
+      "actual": {
+        "sum_monthly_minima": 62640,
+        "literal_divisor": 12,
+        "average": 5220
+      },
+      "expected": {
+        "sum_monthly_minima": 62640,
+        "literal_divisor": 12,
+        "average": 5220
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Arithmetic illustration only on an expressly assumed minimum schedule; published wording also says single tax, so this does not resolve which input/partial-year/portal rule applies"
+    }
+  ],
+  "source_lookups": [
+    {
+      "source": "ITPARK-IU17-INLINE-INSTRUCTIONS-20261031",
+      "point": "I_7_period",
+      "checked_exact_text": "„L”",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-IU17-INLINE-INSTRUCTIONS-20261031",
+      "point": "I_9_monthly_sales",
+      "checked_exact_text": "611",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-IU17-INLINE-INSTRUCTIONS-20261031",
+      "point": "I_10_employees",
+      "checked_exact_text": "cel puțin o zi",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-IU17-INLINE-INSTRUCTIONS-20261031",
+      "point": "II_1s_cumulative_start",
+      "checked_exact_text": "de la aplicarea regimului",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX1-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "\n011\n",
+      "absent": true,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX3-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "suma totală pe Notă, col.4",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX4-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "În coloana 5",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX5-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "confirmarea precum că",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX6-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "În col.1",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX7-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "Forma IUPT25",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX7-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "\n013\n",
+      "absent": true,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX8-20261031",
+      "point": "body_paragraph_019",
+      "checked_exact_text": "Pentru perioada fiscală 2025",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX8-20261031",
+      "point": "body_paragraph_020",
+      "checked_exact_text": "12 luni",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX8-20261031",
+      "point": "body_paragraph_027",
+      "checked_exact_text": "dar nu mai mic",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX9-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "A/2024",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ACTUAL-ANNEX10-20261031",
+      "point": "body_paragraph_015",
+      "checked_exact_text": "codul 013",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-ORDER106-ENACTED-20261031",
+      "point": "point8_commencement",
+      "checked_exact_text": "01.01.2026",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-2024-SFS-DEADLINE-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "26 decembrie 2025",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    },
+    {
+      "source": "ITPARK-CODE129-DEADLINE-20261031",
+      "point": "complete retained text",
+      "checked_exact_text": "prima zi lucrătoare",
+      "absent": false,
+      "status": "PASS source field/wording identity; not independent legal review"
+    }
+  ],
+  "unresolved_source_checks": [
+    {
+      "subject": "IUPT14(d)/15(d)",
+      "status": "UNRESOLVED: signed difference with positive not-less-than average floor conflicts with refundable route; no computed portal value certified"
+    },
+    {
+      "subject": "IUPT average",
+      "status": "UNRESOLVED: minimum label versus generic single-tax sum, divisor12 and partial-year handling"
+    },
+    {
+      "subject": "IUPT equality/payment",
+      "status": "UNRESOLVED: T=M and other orderings omitted; paid040not expressly subtracted in050/060"
+    },
+    {
+      "subject": "ISAPTI month counts",
+      "status": "UNRESOLVED: active-month field versus covered-payment/accrual-regime facts in cross-year/status cases"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-IU17-INLINE-INSTRUCTIONS-20261031.json": "62e46c0a5e1b7df70b39e5e63d0b04461588035187d9c70d3abaed9b0e443a04",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX1-20261031.json": "0f554005d051bb4f7a3b5bab667bd2dd5d3051f025cc67df618f1b0fe371be8d",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX3-20261031.json": "b4ae24f5c02bca922b67f493cdaf784eba5cedb5a8df1f2698fc808864a2ff41",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX4-20261031.json": "d3ca997c9553983df7b595a1ffbdade2c1960ae3055747b28b98e583e05bfebe",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX5-20261031.json": "5e54f4958cb354994343f7cf95298152e1939399cd5ba04debdd235a8e13cd10",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX6-20261031.json": "7d8158bb3adec80fb87b7b8b897b46d8bab14acdfd162388366a1ba5ee39fc45",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX7-20261031.json": "7a8a01678cca36ca626ba033b197c136637e5ba626455ebdcea88931416f64d9",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX8-20261031.json": "463e0f5d6fa29313143314129cfb1e441c48f168414d2bc9b7ccbc4a13583616",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX9-20261031.json": "8ec67a35995a84d59ef0f7fd33b44aad39d3814f36d2db335874958150d1cb97",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ACTUAL-ANNEX10-20261031.json": "7bf79cc60b696bced38b9056487d557421e398b3bf91c8dbc68da43700150f84",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-ORDER106-ENACTED-20261031.json": "da68f08e5b985183f1c445428d18b024cb65dfa7a44e0066872ef62099dca7cb",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-2024-SFS-DEADLINE-20261031.json": "38eba3821f6c748b7bfc971dc87e1163502fcc47b2cc4e3f03f28fb51207abd7",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ITPARK-CODE129-DEADLINE-20261031.json": "2ff46816315386c47b7c525125cf2cc731b3435d7597790bde684ae57d1644f8"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-tax-optimization.md": "4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa",
+    "skills/international/moldova/md-transfer-pricing.md": "b07a9c391a962ab2582a6a16cd2028afbb6d9cd6b6a6f66b8c087c4d0fea3720",
+    "skills/international/moldova/moldova-payroll.md": "0d3c7088bad54ca2f226d937a4090e4414e74e2703d36c89a8c4298fd4fd5ad6"
+  }
+}

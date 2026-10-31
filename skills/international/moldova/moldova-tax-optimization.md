@@ -1,10 +1,10 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited writer draft corrects unsupported savings and blanket prohibitions, preserves predecessor subjects and states remaining form, procedure and case-specific gaps. Independent whole-country review and accountant attestation remain pending."
-version: 0.3
+version: 0.4
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.3
+# Moldova tax planning and regime comparison, 2026 v0.4
 
 ## Who this applies to
 
@@ -101,7 +101,28 @@ Salary requires the actual employment/remuneration, cumulative PIT, medical and 
 
 IT-park entry/exit changes the tax regime from the **month after** status acquisition/withdrawal. For salary accrued under one regime and paid under the other, retain the mechanism applicable at accrual when calculating/paying income tax and medical premiums at payment. Do not tax the same covered special-regime salary twice or assume ordinary-regime accrual becomes exempt solely because payment was later. [Code art. 375][code].
 
-The directly read May 2026 Order 59 amendment records the monthly IU17 accounting-sales input in account **611** and the current-month computation; it does not supply the entire approved IU17, IUPT or salary-information form here. Obtain the period's actual approved attachments, corrections/validation rules and resident registration/verification instructions before completing a filing. [Order 59/2026 point 2][iuamend]; [Code arts. 373–374][code].
+### Complete the actual monthly IU17 return
+
+The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. This is writer source verification, without authenticated electronic-field acceptance or independent pack approval. The May2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](../../../ledgers/md-country-evidence/itpark-current-attachments.json).
+
+Use the registered name/fiscal code, CAEM-2 activity, actual park registration code, four-character head-office CUATM, SFS office and submission date. The monthly period format is **L/NN/YYYY**, with month 1–12. This monthly period code does not replace the separate annual IUPT code or the annual salary-information year. Establish resident status and the applicable entry/exit month before selecting the return. [Order 135 annex 2 part I points 1–8][parkorder]; [actual IU17 header][iu17actual]; [Code arts. 368, 375][code].
+
+| IU17 field | Working-paper method |
+|---|---|
+| 010 column 3 | Current-month accounting sales from account 611 under SNC/IFRS, with the applicable statutory returns/discounts treatment. Do not substitute profit, all cash receipts or cumulative sales. |
+| 010 columns5–6 | Printed **7%** rate; calculated turnover tax in 6 = column 3 × column 5. Column 4 is marked unused for this row. |
+| 020 columns3–6 | Actual qualifying employee count in 3, reporting-year forecast average wage in 4 and printed **30%** in 5; minimum tax in 6 =3 × 4 × 5. One qualifying insured/work/paid-leave day counts under the statutory test; do not invent an FTE reduction. |
+| 030 column 6 and control sum | Larger of010 column 6 and020 column 6. The form's control sum is that same030 column 6 amount. |
+
+Sources: [actual IU17 form][iu17actual]; [current annex 2 part I points9–12][parkorder]; [Code arts.369–371][code]. For a **2026** period, the established forecast-wage input is **17,400**, giving **5,220** per counted employee. Instruction10's phrase referring to the wage in force when completing a return does not authorise substituting a later year's wage into an earlier reporting-year correction: Code 370(2) and the form's own header identify the reporting year. A late/corrected-period implementation must retain that year's legal input. [Code 370(2)][code]; [HG773/2025][wage]; [actual IU17 column 4][iu17actual].
+
+For an assumed ordinary eligible month with sales **200,000** and three counted employees,010 gives **14,000**,020 gives **15,660**, and030/control sum is **15,660**. If another month has no sales but the same three counted employees, its minimum remains **15,660**; do not suppress it because turnover is zero. This arithmetic assumes status and the statutory employee population are established; it does not settle an actual eligibility breach or validate a zero-sales eligibility denominator. [Code 369–371][code]; [actual IU17][iu17actual]; [annex 2 I 9–11][parkorder].
+
+**Eligibility annex: monthly and cumulative columns are different from the monthly tax base.** Row1 contains total sales tied to main 010 column 3; row 2 contains sales of the actual Law 77 article8 permitted services/works; row 3 is **row 2 ÷ row 1 × 100**. Column 3 is the reported month; column 4 is year-to-date for an existing resident, or from application of the special regime for a new resident in that year. Reconcile both columns independently. For example, monthly eligible sales 140,000 of total200,000 give **70%**, while cumulative eligible 650,000 of total 1,000,000 give **65%**. A passing monthly percentage does not establish the cumulative condition; apply the Code 368 full-period and conditional two-month rules above. Do not invent a0/0 percentage or assume it establishes eligibility. [Actual IU17 annex][iu17actual]; [Order 135 annex 2 part II points 1–4, including 1^1][parkorder]; [Code 368][code].
+
+**Keep the 2025/2026 changeover separate.** Order 106, published **28 October 2025**, removes monthly IU17 rows **011/012** and their old instruction points **9^1/9^2** from **1 January 2026**; its new general related-party return and instructions also take effect on that date. The separate **IUPT24** annexes are the **2024** route; the general annex 7 form is actually labelled **IUPT25** and contains an explicit2025 bridge for adjustments previously reported monthly. Do not restore the removed monthly rows or count the same TP adjustment twice. The [TP Guide's actual IUPT field method](md-transfer-pricing.md) supplies the annual reconciliation and its specific unresolved floor/refund cases. The [payroll Guide's actual ISAPTI17 and employee-information method](moldova-payroll.md) supplies the separate annual salary outputs; those are not the IPC21 insured-income base or another7% payroll charge. [Enacted Order 106 points 1–8][park106]; [actual IUPT25][iupt25actual] and [2024-specific form][iupt24actual]; [Code 373–375][code].
+
+Keep head-only or the authorised two-signature route, electronic submission receipt, actual payment/treasury reconciliation and corrections for the relevant regime/year. Actual attachments do not establish portal acceptance, park registration/contract, verification compliance, membership fees or a refund right. [Order 135 annex 2 I12][parkorder]; [Code 373–374][code]; [Law 77 arts.7,18][park].
 
 ## Penalties and interest
 
@@ -195,7 +216,9 @@ Read 30 October 2026. The planning ledger retains exact short original-language 
 | [Order 59/2026 point 2][iuamend] | Directly read monthly IU17 accounting-sales amendment, not all form attachments | 2026-10-30 |
 | [Social budget Law 320/2025 art. 4][socialbudget] | 2026 daily 0.1% input selected by Code article 378(4) for late single-tax payment | 2026-10-30 |
 
-**Not yet confirmed:** full Government park registration/contract/application and indicator-verification instructions, actual current membership fee and complete IU17/IUPT/ISAPTI/form attachments/correction validations; every taxpayer-specific revenue/accounting classification, withdrawal/re-entry/penalty/credit allocation and historical transition; full implementation of the corporate deferral option and approved SME/ordinary return fields; all independent-worker case law, sector authorisations, foreign payroll/social/treaty consequences and other incentive schemes. The old 20–50% saving, universal non-IT prohibition, automatic single-client reclassification and blanket “6% instead of salary” proposition are not certified. Their topics are retained in the sourced comparison/conditional methods or these gaps and the archived original. Complete topic mapping is not comprehensive country coverage or independent review.
+| [Current Order135/2017, inline IU17 instructions][parkorder] and [enacted Order106/2025][park106] | Full current inline instructions and actual amendment read: monthly period/base/count, separate cumulative eligibility, removal of monthly TP rows and January2026 commencement. Nine linked original DOCX files/all14renderedpages read; actual IUPT and salary methods are in the TP/payroll companions. Source/portal ambiguities remain explicit | 2026-10-31 |
+
+**Not yet confirmed:** full Government park registration/contract/application and indicator-verification instructions, actual current membership fee; authenticated IU17/ISAPTI/employee-information and IUPT correction/validation, salary-month cross-regime reconciliation, IUPT minimum/partial-year/equality/refund-floor implementation beyond the actual fields now mapped in the companion Guides; every taxpayer-specific revenue/accounting classification, withdrawal/re-entry/penalty/credit allocation and historical transition; full implementation of the corporate deferral option and the named SME/ordinary return implementation gaps; all independent-worker case law, sector authorisations, foreign payroll/social/treaty consequences and other incentive schemes. The old 20–50% saving, universal non-IT prohibition, automatic single-client reclassification and blanket “6% instead of salary” proposition are not certified. Their topics are retained in the sourced comparison/conditional methods or these gaps and the archived original. Complete topic mapping is not comprehensive country coverage or independent review.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
@@ -206,6 +229,12 @@ Read 30 October 2026. The planning ledger retains exact short original-language 
 [march]: https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro
 [iuamend]: https://www.legis.md/cautare/getResults?doc_id=154274&lang=ro
 [socialbudget]: https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro
+
+[parkorder]: https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro
+[park106]: https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro
+[iu17actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_1_135md.docx
+[iupt25actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an7_135md.docx
+[iupt24actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an9_135md.docx
 
 <!-- openaccountants-cta-block -->
 

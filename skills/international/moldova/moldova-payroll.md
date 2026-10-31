@@ -1,7 +1,7 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited writer draft corrects the former employee social deduction and exemption assumptions, preserves predecessor topics through explicit destinations, and requires whole-country independent review. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: 0.7
+version: 0.8
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.7
+# Moldova payroll withholding, 2026 v0.8
 
 ## Who this applies to
 
@@ -208,6 +208,16 @@ The current Order 95 link supplies the original IALS21 `.doc`, now retained unch
 
 The actual Order 95 annex-3 classifier uses three-letter entries, including `DEU` Germany, `MLT` Malta, `MDA` Moldova, `ROU` Romania, `GBR` United Kingdom and `USA` United States. Apply the current instruction's rule to **leave column 7 blank for a Moldovan citizen** and, for multiple citizenships, use the citizenship presented in the employment/civil relationship. The list's MDA entry does not override that blank-field rule. Preserve the annex's legacy labels and `Liberland/LBL` observation without asserting current ISO status or live portal acceptance. The annual-prefix omission in the current instructions remains unresolved by these attachments. [Actual country list](https://www.legis.md/UserFiles/Image/RO/2021/mo239-248md/anexa%20nr_3_95.docx); [Order 95 annex 2, preamble and column 7][ials].
 
+### Annual IT-park salary information: actual ISAPTI17 and employee statement
+
+Use the current Order 135 annexes **3–4** for the annual **ISAPTI17** information to SFS and **5–6** for the separate information delivered to each employee. Allfour original DOCX attachments and all four rendered pages were read. These are salary-payment information outputs under Code 374, separate from ordinary IALS21, IPC21 nominal insured-income reporting and the employer's monthly IU17 tax computation. The annual SFS deadline is **25 January** following the payment year; the employee-information deadline is **1 March**. [Current Order 135][parkorder]; [actual ISAPTI17][isaptiactual]/[instructions][isaptiinstructions]; [employee information][parkemployee]/[instructions][parkemployeeinstructions]; [Code 374](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+ISAPTI17's header requires registered taxpayer name/fiscal code, **four-digit CAEM-2**, actual park registration code, **four-character head-office CUATM**, SFS office, calendar year, actual submission date and number of entries. Number records consecutively over the whole statement, across pages. In the actual table, **column2** is the employee fiscal identifier, **3** the name, **4** total covered labour-law salary payments to or for that employee, and **5** the months active in the park. The printed **control sum is total column 4**, with the month-total cell marked unused. Keep the head-only or authorised two-signature method from instruction 13; a printed accountant-signature line does not override that instruction. [Annex3 fields/footer][isaptiactual]; [annex4 instructions 1–13][isaptiinstructions].
+
+The employee statement identifies the resident employer and employee by names/fiscal codes and the year. Its two columns are the covered salary-payment amount and the employee's park-active months. Keep the form's own **number/date** and **proof that it was sent or handed to that employee**. This form is not an instruction to send a draft without the firm's normal approval. Reconcile its amount/month fields to the corresponding annual SFS record, rather than copying the forecast insured-income base or the employer's 7% turnover tax. [Annex5 fields and delivery-evidence note][parkemployee]; [annex6 instructions 1–3][parkemployeeinstructions]; [Code 374(1)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+For an assumed matched payment-year ledger, employee A has covered salary payments **30,000** and **two** active months; employee B has **20,000** and **one**. The annual monetary control sum is **50,000**, and each employee statement carries that employee's own amount and months. Do not replace 50,000 with the IPC21 fixed insured-income reference or sum active months into an asserted current-month headcount. The source calls the field “months active”, while Code 374 describes months whose paid salary was covered by the single tax: where accrual/payment cross a regime/year boundary, apply Code 375 and retain that reconciliation; these forms alone do not verify every cross-year month-count/portal rule. [Actual forms3/5][isaptiactual]; [annex4 points 11–12][isaptiinstructions]; [annex6 points 2–3][parkemployeeinstructions]; [Code 374–375](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
 ### Eligible small-business annual reporting through UNIF25
 
 Current Code92(8) replaces the ordinary annual information-return route for the specified non-VAT individual entrepreneur/farm with annual average staffing not above five; the unified report is due25March. It is an exception to annual92(3), **not a repeal of monthly payment/reporting under92(1)–(2)** or the separate recipient-information duty. Use the actual whole-year category and change dates in the [individual-income Guide](moldova-income-tax.md). [Code92(1)–(4),(8)][code]; [SFSOrder300/2025 and actual UNIF25 form][unif25order].
@@ -346,6 +356,8 @@ Primary-source reads on 30–31 October 2026, with individual dates below. [The 
 | [Current IALS21 form](https://www.legis.md/UserFiles/Image/RO/2021/mo239-248md/95_an_1.doc) and [country classifier](https://www.legis.md/UserFiles/Image/RO/2021/mo239-248md/anexa%20nr_3_95.docx) | Original DOC retained unchanged; local conversion/read of both form pages and all eight classifier pages. Actual totals, signatures, sixteen columns/dependent annex and own three-letter codes; annual-prefix/portal and atypical-code limits retained. | 2026-10-31 |
 | [Current IPC21 form](https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an1_94md.docx), [categories](https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an3_94ro.docx) and [requirements](https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_4_94md.docx) | All three/four/five pages read and visually inspected; actual source/insured codes, table controls, nominal field masks and exception conflicts retained. Official validation rules read; live portal not tested. | 2026-10-31 |
 
+| [Current ISAPTI17 form][isaptiactual]/[instructions][isaptiinstructions] and [employee statement][parkemployee]/[instructions][parkemployeeinstructions] | Allfour originalDOCX/allfourrenderedpages read. Header/record/paid-salary/month fields, monetarycontrolsum, signatures and separateemployee-delivery evidence mapped; cross-regime month counts and authenticated implementation remain explicit | 2026-10-31 |
+
 Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current and IALS21 May-amendment checks; IALS21 omitted annual-prefix values and atypical country entries, IPC21 duplicated date/field-mask and part-II exclusion conflicts, authenticated portal validation, all liquidation/historical correction routes and case-specific nominal special-category implementation; remaining Government benefit/travel/food/training implementation, meal-ticket nominal amount and non-cash exceptions; foreign-currency/FX-linked loan benchmark choice, missing-observation handling, exact transaction-day/conversion/final-rounding and no-cash-wages remittance; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
@@ -370,6 +382,12 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 [unif25order]: https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro
 [unif25form]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx
 [unif25instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx
+
+[parkorder]: https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro
+[isaptiactual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_3_135md.docx
+[isaptiinstructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_4_135md.docx
+[parkemployee]: https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_5_135md.docx
+[parkemployeeinstructions]: https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_6_135md.docx
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,14 @@
+{
+  "article": "ITPARK-2024-SFS-DEADLINE-20261031",
+  "official_url": "https://www.sfs.md/ro/stiri/formularul-darii-de-seama-privind-impozitul-unic-pentru-tranzactii-cu-persoane-afiliate-pentru-anul-2024-disponibil-online",
+  "text": "Potrivit art. XXVI alin. (4) din Legea nr. 187/2025, calculul și raportarea impozitului unic pentru aceste tranzacții se efectuează prin prezentarea dării de seamă cu privire la impozitul unic pentru tranzacții cu persoane afiliate către Serviciul Fiscal de Stat, până la data de 26 decembrie 2025.",
+  "sha256": "2b191d2ef351e63dca0a03abb655805e6806a7331308a74c945fc5c9aa64cc9e",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T04:00:30.178126+00:00",
+  "format": "Selected exact official web/browser paragraph; layout whitespace normalized",
+  "source_points": {
+    "deadline_paragraph": "Potrivit art. XXVI alin. (4) din Legea nr. 187/2025, calculul și raportarea impozitului unic pentru aceste tranzacții se efectuează prin prezentarea dării de seamă cu privire la impozitul unic pentru tranzacții cu persoane afiliate către Serviciul Fiscal de Stat, până la data de 26 decembrie 2025."
+  },
+  "scope": "SFS notice15December2025; paragraph about announced filing deadline",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

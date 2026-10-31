@@ -1,7 +1,7 @@
 ---
 name: md-transfer-pricing
 description: Use this Guide for Moldova transfer-pricing affiliation, local and cross-border scope, the aggregate information threshold, statutory exclusions, method selection, comparability intervals and adjustments for 2026. It explains requested master and local files, electronic information filing, advance pricing agreements, corresponding adjustments and period-specific sanctions. Trigger on Moldova TP, affiliated transactions, the MDL20 million threshold, transfer-pricing information, an SFS file request or an APA. Reconcile actual transaction values and evidence rather than using net balances or an expired automatic file tier. Current source and implementation gaps remain explicit; this is a writer draft awaiting independent country-pack review.
-version: 0.4
+version: 0.5
 jurisdiction: MD
 category: transfer-pricing
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova transfer pricing v0.4
+# Moldova transfer pricing v0.5
 
 2026 writer draft, primary law read 30 October 2026; the current information annex and APA application model read 31 October 2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
@@ -101,7 +101,7 @@ Use the actual tax period, including a legally adopted non-calendar fiscal perio
 
 Annual information is distinct from the requested file and APA application/report. Current Order9 annex1 points53¹–53² requires the approved annex2 information and responsible electronic signature. Order8 adds fiscal-period identifiers to annexA row5, annexB row6 and annexC row8, and updates annexB table2 to sequence, transaction code, object/contract details, party-role code, controlled amount and optional comments. The complete current annex 2, including transaction-role, method, indicator and country catalogues, has now been read and retained; use its field mappings below. Authenticated electronic-field acceptance and legacy country-code handling remain untested. The12May2026 SFS launch notice identifies the electronic-declaration service in the taxpayer cabinet for periods from2025, but a portal receipt is still required for the actual filing. [Order9](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro), [Order8 points1.3,4](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro), [SFS launch notice](https://www.sfs.md/ro/stiri/formularul-privind-preturile-de-transfer-disponibil-in-sia-declaratia-electronica).
 
-Correct information under226¹⁹(5)/188, using the form and method valid for the corrected period, subject to188's six-year and audit restrictions. A corrected **file** has the separate30day decision-communication rule in226¹⁹(6); do not turn it into a general extension of an original request. TitlesII/X determine the related return; the special IT-park TP single-tax return under373(1¹) is not automatically an ordinary12% corporation-tax calculation. Its current form and full computation remain unconfirmed below. [Code226¹⁹,188,226¹⁸(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Law187 artII point28](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro).
+Correct information under226¹⁹(5)/188, using the form and method valid for the corrected period, subject to188's six-year and audit restrictions. A corrected **file** has the separate30day decision-communication rule in226¹⁹(6); do not turn it into a general extension of an original request. TitlesII/X determine the related return; the special IT-park TP single-tax return under373(1¹) is not automatically an ordinary12% corporation-tax calculation. Its actual current forms and field computation are supplied below, with the specific minimum/refund-floor and portal ambiguities retained. [Code226¹⁹,188,226¹⁸(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Law187 artII point28](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro).
 
 ### Complete the actual current information form
 
@@ -150,6 +150,42 @@ For Annex C, method codes are **01 CUP; 02 cost-plus; 03 resale price; 04 TNMM; 
 The country nomenclature supplies, for example, 004 Afghanistan, 276 Germany, 470 Malta, 498 Moldova, 642 Romania, 826 United Kingdom and 840 United States, plus 000 “Altele”. Use the actual registration-state entry and preserve its three characters. The retained list has legacy labels, including 720 “Yemen democratic”; do not silently replace it with a modern ISO list or certify an unresolved portal mapping for an unlisted/currently renamed jurisdiction. [Nomenclature 1 and instructions 8–9](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx).
 
 For an assumed eligible non-APA affiliate, reconcile goods sold for MDL 9 million using 0001/1001, services bought for MDL 8 million using 0007/2007 and eligible calculated loan interest of MDL 3 million using 0002/2002. The total is MDL 20 million without netting inflows against outflows; assumed loan principal of MDL 50 million and advances of MDL 2 million remain outside the stated statutory threshold. A separate actual-APA-covered amount belongs in its own covered schedule and is not added back to that threshold merely because the form records it. These assumed records test classification and aggregation, not whether a real contract meets the legal exclusions. [Actual transaction catalogue](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx); [Code 226¹⁹](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+### IT-park related-party adjustment return: IUPT25 and IUPT24
+
+IUPT is a single-tax adjustment return for the applicable affiliated transactions, separate from the Order9 TP information form/file and the monthly IU17. The current Order 135 annex 7 is actually labelled **IUPT25**; annex 9 is explicitly **IUPT24 for 2024**. Original forms/instructions 7–10 were fully text-read and visually inspected, including all eight rendered pages. Do not use a 12% ordinary company calculation for a 7% park sales-base adjustment, or rename the approved form because its label contains 25. Establish the correct taxpayer, covered transaction, arm's-length adjustment and fiscal period first. [Current Order 135][parkorder]; [actual IUPT25][iupt25actual] and [instructions][iupt25instructions]; [actual IUPT24][iupt24actual] and [instructions][iupt24instructions]; [Code 373(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+**Commencement matters.** Actual Order 106 of **10 October 2025**, published **28 October 2025**, adds the annual and2024-specific annexes. Points **1,3,4,5** take effect on **1 January 2026**; the other provisions take effect on publication. Thus current monthly IU17 no longer includes old rows 011/012, while the annual IUPT25 method explicitly carries the 2025 adjustments that were already reported through monthly IU17. IUPT24 separately isolates2024 adjustments already reported monthly in 013. Preserve those returns and make the annual bridge once. The current general deadline is the **25th of the sixth month after the article 12^1 fiscal period**; Law 187 article XXVI(4) separately prints **25 December 2025** for the 2024 transition; the [SFS notice of15 December 2025](https://www.sfs.md/ro/stiri/formularul-darii-de-seama-privind-impozitul-unic-pentru-tranzactii-cu-persoane-afiliate-pentru-anul-2024-disponibil-online) announces **26 December 2025** as the filing date. Code 129(8) supplies the nonworking day rollover and full day electronic filing rule. The historical deadline is not an extension or template for2026 periods. [Order 106 points 1–8][park106]; [Law 187 article XXVI(4)](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro); [Code 373(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+Use registered identity, CAEM-2 activity, park registration code, head-office four-character CUATM and actual submission date. IUPT25 instruction 6 supplies **A/YYYY** for the annual reporting year; IUPT24 prints **A/2024**. These are not the monthly IU17 L/NN/YYYY code or the IPC21 taxpayer marker. Head-only and the stated authorised two-signature routes are separate from electronic acceptance. [Annex8 instructions 1–7,16][iupt25instructions]; [annex10 instructions 1–7,17][iupt24instructions]; [actual forms][iupt25actual].
+
+| IUPT field | General annex 7/IUPT25 | 2024-specific annex 9/IUPT24 |
+|---|---|---|
+| 011 column 3 | Annual financial-accounting sales, account 611, under SNC/IFRS | The corresponding2024 accounting sales |
+| 012 column 3 | Annual article226^23(1) sales adjustment; for 2025 include the previously monthly-reported adjustments and subsequent adjustments once | Adjustments excluding those separately reported in 013 |
+| 013 column 3 | No such row in the general form | Adjustments already reported through2024 IU17, kept disjoint from 012 |
+| 010 columns3–5 | **011 +012** in 3; printed **7%** in 4; resulting tax in 5 | **011 +012 +013** in 3; the same printed rate/calculation |
+| 020 column 5 | The instructed average annual minimum under article370(2); instruction 11 says sum the single-tax amounts and divide by12 | Instruction12 specifies the corresponding2024 average and divisor 12 |
+| 030 column 5 | Tax calculated for the reporting period | Tax calculated for 2024 |
+| 040 column 5 | Tax actually paid for that reporting period, reconciled to payments/account | Tax actually paid for 2024 |
+| 050;060 column 5 | Adjustment calculation and its payable/refundable route under instructions 14–15 | The corresponding calculation under instructions 15–16 |
+
+Sources: [actual general form][iupt25actual]; [instructions 8–15][iupt25instructions]; [actual2024 form][iupt24actual]; [instructions 8–16][iupt24instructions]. Keep the020 average,030 calculated tax and040 actual payment as different measures. The minimum row's label expressly refers to the statutory minimum, while its explanation says to sum “single tax” and divide by12; retain the monthly minimum and actual-tax schedules separately. Neither the wording nor the divisor alone verifies a different partial year divisor or which electronic validation the portal applies. Do not silently substitute annual total minimum or actual7% tax for the required average without resolving that source conflict.
+
+Let **T=010 column 5**, **B=030 column 5** and **M=020 column 5**. The published branches, rather than an invented single formula, are:
+
+| Published branch | IUPT25 instruction 14 / IUPT24 instruction 15 |
+|---|---|
+| T>B and T>M | 050=T−B;060 follows the payable route. |
+| T≤B and T>M | 050=T−B;060 follows the refundable route. Keep a zero result zero. |
+| T≤B, T<M and B=M | 050=0. |
+| T≤B, T<M and B>M | The text says T−B, “not less than” M, while the next instruction calls it refundable. The signed-floor interpretation is unresolved; do not encode it as an automatic positive floor, negative floor or approved cash refund. |
+
+The instructions do not expressly resolve **T=M**, or every other ordering/equality case. Their published050/060 formulas also contain no explicit subtraction of 040, although actual paid tax is collected separately. Record these as source/implementation gaps; a return's “refund” label does not prove an amount was actually paid, an accepted tax-account credit or approval for cash reimbursement. Current Code 373(3) sends excess-payment refunds through article176 and the receiving revenue administrators. [Annex8 instructions 11–15][iupt25instructions]; [annex10 instructions 12–16][iupt24instructions]; [Code 373(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+For a clear upward branch, assume accounted annual sales **1,000,000**, an evidenced disjoint upward sales adjustment **100,000**, B of **70,000**, and established M of **5,220**. General010 base is **1,100,000**, T is **77,000** and the additional assessed tax under branch(a) is **7,000**. Actual040 of **65,000** would be an account/payment fact; it does not turn the published T−B adjustment into **12,000**. Reconcile the pre-existing 5,000 shortfall separately before concluding a cash amount due. This example uses an expressly clear ordering and established M; it does not settle the ambiguous average/floor cases. [Annex8 instructions 8–15][iupt25instructions]; [actual form][iupt25actual].
+
+For a2024 bridge, assumed account 611 sales **1,000,000**, later adjustments in 012 of **80,000**, and disjoint previously monthly-reported adjustments in 013 of **20,000** give010 base **1,100,000** and T **77,000**. Adding the full100,000 to 012 and repeating 20,000 in 013 would incorrectly give 1,120,000 and 78,400. For2025 the general012 includes both buckets once and has no013. Preserve the monthly returns, adjusted amounts and original calculated tax; do not erase historical adjustments merely because current IU17 has removed the old monthly fields. [Annex10 instructions 8–11][iupt24instructions]; [annex8 instruction10][iupt25instructions]; [Order 106 points3–4,8][park106].
 
 ### APA application and monitoring
 
@@ -287,7 +323,16 @@ expected:
 | [Current information annex 2, complete approved DOCX](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx) | All 20 rendered pages and original Word text: main form, affiliation A, transaction B, APA report C, instructions and all four code catalogues; incorrect February 2023 caption and comments numbering retained as source defects. Parent Order 9 current header/link rechecked. | 2026-10-31 |
 | [Approved APA application model](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an3_9ro.docx) | Both pages, sections I–XIII/signature; six exhibits and specific maximum-10-day proceedings undertaking. Parent Order 8 header/link rechecked. | 2026-10-31 |
 
-Not yet confirmed: authenticated portal acceptance, legacy country-code/renamed-jurisdiction mapping and actual submission receipts; APA technical payment/refund implementation; general deadline adjustment/communication and foreign-currency conversion mechanics for an actual off-calendar case; current TP-record retention trigger after repeal/rewrite of the former six-year clause; larger-sample quartile interpolation; application of the stale annex1 point55(2) cross-reference for voluntary corresponding adjustments; IT-park TP single-tax return/computation; CbC/exchange applicability and specialist OECD/treaty routes; transaction-specific independent comparables, actual treaty texts/protocols and full amendment/commencement reconciliation. These are explicit source/procedure gaps. Neither the ledger nor this expanded writer draft establishes independent whole-country review, accountant attestation or comprehensive coverage.
+| [Current Order135][parkorder], [enacted Order106][park106], [IUPT25 form][iupt25actual]/[instructions][iupt25instructions] and [IUPT24 form][iupt24actual]/[instructions][iupt24instructions] | Allfour originalDOCX attachments/all8renderedpages read. Annualadjustment/monthly bridge and clear calculation branches mapped; minimum-average wording, partial-year divisor, missing equalities, signed refund floor and actual account/portal approval remain explicit | 2026-10-31 |
+
+Not yet confirmed: authenticated portal acceptance, legacy country-code/renamed-jurisdiction mapping and actual submission receipts; APA technical payment/refund implementation; general deadline adjustment/communication and foreign-currency conversion mechanics for an actual off-calendar case; current TP-record retention trigger after repeal/rewrite of the former six-year clause; larger-sample quartile interpolation; application of the stale annex1 point55(2) cross-reference for voluntary corresponding adjustments; IUPT minimum-average wording/partial-year divisor, omitted equality branches, signed refund-floor interpretation and actual tax-account/portal/refund implementation beyond the now-mapped form method; CbC/exchange applicability and specialist OECD/treaty routes; transaction-specific independent comparables, actual treaty texts/protocols and full amendment/commencement reconciliation. These are explicit source/procedure gaps. Neither the ledger nor this expanded writer draft establishes independent whole-country review, accountant attestation or comprehensive coverage.
+
+[parkorder]: https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro
+[park106]: https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro
+[iupt25actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an7_135md.docx
+[iupt25instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an8_135md.docx
+[iupt24actual]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an9_135md.docx
+[iupt24instructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an10_135md.docx
 
 <!-- openaccountants-cta-block -->
 
