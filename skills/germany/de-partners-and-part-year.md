@@ -4,7 +4,7 @@ description: "Use this skill for two German income tax cases in tax year 2026. P
 version: 0.2
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored

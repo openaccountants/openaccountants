@@ -4,7 +4,7 @@ description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026
 version: 1.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

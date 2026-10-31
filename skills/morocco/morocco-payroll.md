@@ -3,7 +3,7 @@ name: morocco-payroll
 description: Morocco — Payroll for a Self-Employed Person Who Hires Employees (IR salarial / CNSS / AMO / TFP)
 jurisdiction: MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2

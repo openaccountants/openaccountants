@@ -4,7 +4,7 @@ description: Tier 2 Massachusetts content skill for employer payroll compliance 
 version: 1.0
 jurisdiction: US-MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:

@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Morocco's Contribution Professi
 version: 1.0
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team

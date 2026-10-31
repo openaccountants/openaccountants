@@ -4,7 +4,7 @@ description: "German VAT for tax year 2026 beyond the monthly or quarterly advan
 version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
