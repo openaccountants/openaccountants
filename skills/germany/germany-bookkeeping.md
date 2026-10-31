@@ -1,10 +1,10 @@
 ---
 name: germany-bookkeeping
 description: Use this skill whenever asked about bookkeeping, chart of accounts, Kontenrahmen, SKR03, SKR04, financial statements, P&L format, balance sheet layout, bank reconciliation, expense classification, asset capitalisation, GWG, or day-to-day accounting for a German entity. Trigger on phrases like "Kontenrahmen", "SKR03", "SKR04", "HGB", "Buchhaltung", "chart of accounts Germany", "EÜR", "Einnahmen-Überschussrechnung", "Bilanz", "GuV", "capitalise or expense Germany", "GWG threshold", "Geringwertige Wirtschaftsgüter", "depreciation Germany", "AfA", "bank reconciliation Germany", "Kleinunternehmer", "bookkeeping Germany", or any question about recording transactions, classifying expenses, or preparing accounts under German law. ALWAYS read this skill before touching any bookkeeping work for Germany.
-version: 1.0
+version: 1.1
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -20,18 +20,18 @@ How a German business keeps its books: who must keep double-entry books and who 
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Germany (Bundesrepublik Deutschland) |
-| Currency | EUR |
-| Financial year | Traders entered in the commercial register: the period for which they regularly close their books; moving to a year that differs from the calendar year needs the tax office's agreement. Other traders: the calendar year (§ 4a EStG). Income tax itself is assessed per calendar year (§ 2(7) EStG). A financial year may not be longer than twelve months (§ 240(2) HGB) |
-| Accounting standards | HGB (Handelsgesetzbuch), the German Commercial Code |
-| GAAP framework | German GAAP (GoB, Grundsätze ordnungsmäßiger Buchführung) |
-| Standard chart of accounts | SKR03 (process-oriented) and SKR04 (financial-statement-oriented), published by DATEV |
-| Governing body | Finanzamt (local tax office) for tax books and returns. Companies send their annual accounts to the company register (Unternehmensregister, § 325 HGB) |
-| Key legislation | HGB, Third Book, from § 238 (Handelsbücher); EStG (Einkommensteuergesetz); UStG (Umsatzsteuergesetz); AO (Abgabenordnung) |
-| Record retention | Ten, eight or six years, depending on the class of document. See the retention table below |
-| Digital requirements | GoBD: the ministry's principles for books and records kept electronically and for data access by the tax office. See below |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Germany (Bundesrepublik Deutschland) | same |
+| Currency | EUR | same |
+| Financial year | Traders entered in the commercial register: the period for which they regularly close their books; moving to a year that differs from the calendar year needs the tax office's agreement. Other traders: the calendar year (§ 4a EStG). Income tax itself is assessed per calendar year (§ 2(7) EStG). A financial year may not be longer than twelve months (§ 240(2) HGB) | https://www.gesetze-im-internet.de/estg/__4a.html |
+| Accounting standards | HGB (Handelsgesetzbuch), the German Commercial Code | https://www.gesetze-im-internet.de/hgb/__238.html |
+| GAAP framework | German GAAP (GoB, Grundsätze ordnungsmäßiger Buchführung) | same |
+| Standard chart of accounts | SKR03 (process-oriented) and SKR04 (financial-statement-oriented), published by DATEV |  |
+| Governing body | Finanzamt (local tax office) for tax books and returns. Companies send their annual accounts to the company register (Unternehmensregister, § 325 HGB) | https://www.gesetze-im-internet.de/hgb/__325.html |
+| Key legislation | HGB, Third Book, from § 238 (Handelsbücher); EStG (Einkommensteuergesetz); UStG (Umsatzsteuergesetz); AO (Abgabenordnung) | https://www.gesetze-im-internet.de/hgb/__238.html |
+| Record retention | Ten, eight or six years, depending on the class of document. See the retention table below | https://www.gesetze-im-internet.de/ao_1977/__147.html |
+| Digital requirements | GoBD: the ministry's principles for books and records kept electronically and for data access by the tax office. See below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4 |
 
 **Record retention under tax law**
 
@@ -67,19 +67,19 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **VAT rates used in the chart: the statute**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__12.html |
-| Standard rate | 19% | § 12(1) UStG: "Die Steuer beträgt für jeden steuerpflichtigen Umsatz 19 Prozent der Bemessungsgrundlage" |
-| Reduced rate | seven percent, stated in words | § 12(2) UStG: "Die Steuer ermäßigt sich auf sieben Prozent für die folgenden Umsätze" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__12.html |  |
+| Standard rate | 19% | § 12(1) UStG: "Die Steuer beträgt für jeden steuerpflichtigen Umsatz 19 Prozent der Bemessungsgrundlage" | https://www.gesetze-im-internet.de/ustg_1980/__12.html |
+| Reduced rate | seven percent, stated in words | § 12(2) UStG: "Die Steuer ermäßigt sich auf sieben Prozent für die folgenden Umsätze" | same |
 
 **VAT rates used in the chart: as the ministry prints them**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
-| Standard rate | 19% | Tax booklet, 2025 edition: "den allgemeinen Steuersatz von 19 Prozent" |
-| Reduced rate | 7% | Tax booklet, 2025 edition: "den ermäßigten von 7 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |  |
+| Standard rate | 19% | Tax booklet, 2025 edition: "den allgemeinen Steuersatz von 19 Prozent" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
+| Reduced rate | 7% | Tax booklet, 2025 edition: "den ermäßigten von 7 Prozent" | same |
 
 ### Class 0: Non-Current Assets (Anlagevermögen)
 
@@ -214,11 +214,11 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **Tax-law bookkeeping duty for commercial businesses and farmers**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__141.html |
-| Total turnover of the single business in the calendar year: the duty can start above | EUR 800,000 | § 141(1) no. 1 AO: "von mehr als 800 000 Euro im Kalenderjahr" |
-| Profit from the business in the financial year: the duty can start above | EUR 80,000 | § 141(1) no. 4 AO: "einen Gewinn aus Gewerbebetrieb von mehr als 80 000 Euro im Wirtschaftsjahr" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__141.html |  |
+| Total turnover of the single business in the calendar year: the duty can start above | EUR 800,000 | § 141(1) no. 1 AO: "von mehr als 800 000 Euro im Kalenderjahr" | https://www.gesetze-im-internet.de/ao_1977/__141.html |
+| Profit from the business in the financial year: the duty can start above | EUR 80,000 | § 141(1) no. 4 AO: "einen Gewinn aus Gewerbebetrieb von mehr als 80 000 Euro im Wirtschaftsjahr" | same |
 
 - **Either limit is enough.** The law joins the tests with "or".
 - **The duty does not start by itself.** It starts with the financial year that follows the tax office's notice pointing out the duty (§ 141(2) AO). It ends after the financial year that follows the one in which the tax office finds the limits are no longer crossed.
@@ -227,30 +227,30 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **Commercial-law release for sole merchants**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |
-| Revenue on each of two balance sheet dates in a row: not more than | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" |
-| Annual surplus on each of the same two dates: not more than | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |  |
+| Revenue on each of two balance sheet dates in a row: not more than | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" | https://www.gesetze-im-internet.de/hgb/__241a.html |
+| Annual surplus on each of the same two dates: not more than | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" | same |
 
 - **Both limits must be kept**, on two balance sheet dates in a row. A new business is released at once if it keeps both limits on its first balance sheet date.
 - **Sole merchants only.** The release is for Einzelkaufleute. Partnerships and companies cannot use it.
 
 **Kleinunternehmer limits: the statute**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Total turnover of the previous calendar year: must not have exceeded | EUR 25,000 | § 19(1) UStG: "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" |
-| Total turnover of the current calendar year: must not exceed | EUR 100,000 | § 19(1) UStG: "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |  |
+| Total turnover of the previous calendar year: must not have exceeded | EUR 25,000 | § 19(1) UStG: "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Total turnover of the current calendar year: must not exceed | EUR 100,000 | § 19(1) UStG: "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" | same |
 
 **Kleinunternehmer limits: how the ministry applies them**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Business starts during the year: total turnover of the current calendar year must not exceed | EUR 25,000 | EÜR instructions 2026, line 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten" |
-| Current-year limit for a business that kept the previous-year limit | EUR 100,000 | EÜR instructions 2026, line 12: "im laufenden Kj. 100.000 € nicht überschreitet" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |  |
+| Business starts during the year: total turnover of the current calendar year must not exceed | EUR 25,000 | EÜR instructions 2026, line 12: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Current-year limit for a business that kept the previous-year limit | EUR 100,000 | EÜR instructions 2026, line 12: "im laufenden Kj. 100.000 € nicht überschreitet" | same |
 
 - **Both tests must be met.** The previous year and the current year are joined by "and".
 - **Crossing a limit during the year.** The sale that takes the total over the limit is already taxed under the normal rules. Sales received before that point stay exempt. The instructions say: "Die bis zum Zeitpunkt der Überschreitung vereinnahmten Umsätze sind steuerfrei."
@@ -278,14 +278,14 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **Limits for gifts, entertainment and the home office**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__4.html |
-| Gifts to people who are not employees: deductible only if the cost of everything given to one recipient in the financial year is not more than | EUR 50 | § 4(5) no. 1 EStG: "insgesamt 50 Euro nicht übersteigen" |
-| Business entertainment: share of the reasonable and documented costs that may be deducted | 70% | § 4(5) no. 2 EStG: "soweit sie 70 Prozent der Aufwendungen übersteigen" |
-| Home office room that is the centre of all business and professional work: yearly flat amount that may be taken in place of the actual costs | EUR 1,260 | § 4(5) no. 6b EStG: "pauschal ein Betrag von 1 260 Euro (Jahrespauschale)" |
-| Daily flat amount for each calendar day on which work is done mainly at home and no first place of work is visited | EUR 6 | § 4(5) no. 6c EStG: "ein Betrag von 6 Euro (Tagespauschale)" |
-| Yearly cap on the daily flat amounts | EUR 1,260 | § 4(5) no. 6c EStG: "höchstens 1 260 Euro im Wirtschafts- oder Kalenderjahr" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__4.html |  |
+| Gifts to people who are not employees: deductible only if the cost of everything given to one recipient in the financial year is not more than | EUR 50 | § 4(5) no. 1 EStG: "insgesamt 50 Euro nicht übersteigen" | https://www.gesetze-im-internet.de/estg/__4.html |
+| Business entertainment: share of the reasonable and documented costs that may be deducted | 70% | § 4(5) no. 2 EStG: "soweit sie 70 Prozent der Aufwendungen übersteigen" | same |
+| Home office room that is the centre of all business and professional work: yearly flat amount that may be taken in place of the actual costs | EUR 1,260 | § 4(5) no. 6b EStG: "pauschal ein Betrag von 1 260 Euro (Jahrespauschale)" | same |
+| Daily flat amount for each calendar day on which work is done mainly at home and no first place of work is visited | EUR 6 | § 4(5) no. 6c EStG: "ein Betrag von 6 Euro (Tagespauschale)" | same |
+| Yearly cap on the daily flat amounts | EUR 1,260 | § 4(5) no. 6c EStG: "höchstens 1 260 Euro im Wirtschafts- oder Kalenderjahr" | same |
 
 - **Gifts: a cliff, not an allowance.** Above the limit the whole cost for that recipient is lost, not just the excess. The statute measures "Anschaffungs- oder Herstellungskosten" and does not say net or gross.
 - **Home office room.** Costs of the room and its furnishing are not deductible at all unless the room is the centre of the whole business and professional activity. If it is, the client takes the actual costs or the yearly flat amount. The flat amount falls by one twelfth for each full month in which the room is not the centre.
@@ -296,24 +296,24 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **Entertainment: as the ministry puts it for 2026**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| Deductible share | 70% | EÜR instructions 2026, line 64: "sind zu 70 % abziehbar und zu 30 % nicht abziehbar" |
-| Non-deductible share | 30% | Same sentence |
-| Input VAT on the entertainment costs | deductible, as far as the costs are reasonable and documented | EÜR instructions 2026, line 64: "Die hierauf entfallende Vorsteuer ist allerdings abziehbar" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |  |
+| Deductible share | 70% | EÜR instructions 2026, line 64: "sind zu 70 % abziehbar und zu 30 % nicht abziehbar" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Non-deductible share | 30% | Same sentence | same |
+| Input VAT on the entertainment costs | deductible, as far as the costs are reasonable and documented | EÜR instructions 2026, line 64: "Die hierauf entfallende Vorsteuer ist allerdings abziehbar" | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 
 - **Proof.** Written details of place, date, participants, occasion and amount. For a restaurant, occasion and participants are enough, and the restaurant bill must be attached (§ 4(5) no. 2 EStG).
 - **Removed.** Older material tied the input VAT to a gross amount per bill. No official page read for this Guide prints such an amount, so it is gone.
 
 **Meal flat amounts on business trips in Germany**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__9.html |
-| Away from home and the first place of work for 24 hours, per calendar day | EUR 28 | § 9(4a) EStG: "28 Euro für jeden Kalendertag" |
-| Day of arrival and day of departure on a trip with an overnight stay, each | EUR 14 | § 9(4a) EStG: "jeweils 14 Euro für den An- und Abreisetag" |
-| Day without overnight stay, away from home and the first place of work for more than 8 hours | EUR 14 | § 9(4a) EStG: "14 Euro für den Kalendertag, an dem der Arbeitnehmer ohne Übernachtung" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__9.html |  |
+| Away from home and the first place of work for 24 hours, per calendar day | EUR 28 | § 9(4a) EStG: "28 Euro für jeden Kalendertag" | https://www.gesetze-im-internet.de/estg/__9.html |
+| Day of arrival and day of departure on a trip with an overnight stay, each | EUR 14 | § 9(4a) EStG: "jeweils 14 Euro für den An- und Abreisetag" | same |
+| Day without overnight stay, away from home and the first place of work for more than 8 hours | EUR 14 | § 9(4a) EStG: "14 Euro für den Kalendertag, an dem der Arbeitnehmer ohne Übernachtung" | same |
 
 - **Business owners too.** § 4(5) no. 5 EStG applies these employee amounts to the owner's own business trips.
 - **Three months.** The flat amounts stop after the first three months of a longer job at the same place.
@@ -321,11 +321,11 @@ Account numbers were checked on 19 September 2026 against DATEV's own charts for
 
 **Private use of a business car**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |
-| Business use above which the list-price method applies | 50% | § 6(1) no. 4 EStG: "das zu mehr als 50 Prozent betrieblich genutzt wird" |
-| Private use per calendar month, as a share of the German list price at first registration plus extras, VAT included | 1% | § 6(1) no. 4 EStG: "für jeden Kalendermonat mit 1 Prozent des inländischen Listenpreises" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__6.html |  |
+| Business use above which the list-price method applies | 50% | § 6(1) no. 4 EStG: "das zu mehr als 50 Prozent betrieblich genutzt wird" | https://www.gesetze-im-internet.de/estg/__6.html |
+| Private use per calendar month, as a share of the German list price at first registration plus extras, VAT included | 1% | § 6(1) no. 4 EStG: "für jeden Kalendermonat mit 1 Prozent des inländischen Listenpreises" | same |
 
 - **Logbook.** The client may prove the real private share with a proper logbook instead.
 - **Car not used mostly for business.** The list-price method is not open. The private share of the total car costs is added back.
@@ -378,23 +378,23 @@ Straight-line depreciation spreads the cost evenly over the normal useful life. 
 
 **Buildings: yearly rates set by law**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |
-| Building held as a business asset, not used for housing, building application after 31 March 1985 | 3% | § 7(4) no. 1 EStG: "gestellt worden ist, jährlich 3 Prozent" |
-| Other building, completed after 31 December 2022 | 3% | § 7(4) no. 2a EStG: "nach dem 31. Dezember 2022 fertiggestellt worden sind, jährlich 3 Prozent" |
-| Other building, completed before 1 January 2023 and after 31 December 1924 | 2% | § 7(4) no. 2b EStG: "fertiggestellt worden sind, jährlich 2 Prozent" |
-| Other building, completed before 1 January 1925 | 2.5% | § 7(4) no. 2c EStG: "jährlich 2,5 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |  |
+| Building held as a business asset, not used for housing, building application after 31 March 1985 | 3% | § 7(4) no. 1 EStG: "gestellt worden ist, jährlich 3 Prozent" | https://www.gesetze-im-internet.de/estg/__7.html |
+| Other building, completed after 31 December 2022 | 3% | § 7(4) no. 2a EStG: "nach dem 31. Dezember 2022 fertiggestellt worden sind, jährlich 3 Prozent" | same |
+| Other building, completed before 1 January 2023 and after 31 December 1924 | 2% | § 7(4) no. 2b EStG: "fertiggestellt worden sind, jährlich 2 Prozent" | same |
+| Other building, completed before 1 January 1925 | 2.5% | § 7(4) no. 2c EStG: "jährlich 2,5 Prozent" | same |
 
 - **Shorter real life.** If the building's real useful life is shorter than the life these rates imply, the client may depreciate over the real life (§ 7(4) sentence 2 EStG). This needs proof and is a case to refer.
 
 ### Declining Balance Option (2025-2027)
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |
-| Highest declining-balance rate, applied to the book value | 30% | § 7(2) EStG: "und 30 Prozent nicht übersteigen" |
-| Electric vehicles bought in the same window: share of cost deductible in the year of purchase | 75% | § 7(2a) EStG: "im Jahr der Anschaffung 75 Prozent" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__7.html |  |
+| Highest declining-balance rate, applied to the book value | 30% | § 7(2) EStG: "und 30 Prozent nicht übersteigen" | https://www.gesetze-im-internet.de/estg/__7.html |
+| Electric vehicles bought in the same window: share of cost deductible in the year of purchase | 75% | § 7(2a) EStG: "im Jahr der Anschaffung 75 Prozent" | same |
 
 - **Window.** Movable fixed assets bought or made after 30 June 2025 and before 1 January 2028.
 - **Second cap.** The rate may be at most three times the straight-line rate for the asset. The law says "das Dreifache" and gives no number.
@@ -503,25 +503,25 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 **Small and medium-sized companies**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |
-| Small company: balance sheet total not more than | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" |
-| Small company: revenue in the twelve months before the balance sheet date not more than | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" |
-| Small company: employees on yearly average not more than | 50 | § 267(1) HGB: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" |
-| Medium-sized company: balance sheet total not more than | EUR 25,000,000 | § 267(2) HGB: "25 000 000 Euro Bilanzsumme" |
-| Medium-sized company: revenue in the twelve months before the balance sheet date not more than | EUR 50,000,000 | § 267(2) HGB: "50 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" |
-| Medium-sized company: employees on yearly average not more than | 250 | § 267(2) HGB: "Im Jahresdurchschnitt zweihundertfünfzig Arbeitnehmer" |
-| Large company | goes over at least two of the three medium-sized limits | § 267(3) HGB |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |  |
+| Small company: balance sheet total not more than | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267.html |
+| Small company: revenue in the twelve months before the balance sheet date not more than | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" | same |
+| Small company: employees on yearly average not more than | 50 | § 267(1) HGB: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" | same |
+| Medium-sized company: balance sheet total not more than | EUR 25,000,000 | § 267(2) HGB: "25 000 000 Euro Bilanzsumme" | same |
+| Medium-sized company: revenue in the twelve months before the balance sheet date not more than | EUR 50,000,000 | § 267(2) HGB: "50 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" | same |
+| Medium-sized company: employees on yearly average not more than | 250 | § 267(2) HGB: "Im Jahresdurchschnitt zweihundertfünfzig Arbeitnehmer" | same |
+| Large company | goes over at least two of the three medium-sized limits | § 267(3) HGB | same |
 
 **Micro companies (Kleinstkapitalgesellschaften)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |
-| Balance sheet total not more than | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" |
-| Revenue in the twelve months before the balance sheet date not more than | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" |
-| Employees on yearly average not more than | 10 | § 267a(1) HGB: "im Jahresdurchschnitt zehn Arbeitnehmer" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |  |
+| Balance sheet total not more than | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267a.html |
+| Revenue in the twelve months before the balance sheet date not more than | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" | same |
+| Employees on yearly average not more than | 10 | § 267a(1) HGB: "im Jahresdurchschnitt zehn Arbeitnehmer" | same |
 
 - **Two-of-three test.** A company belongs to a class if it stays within at least two of that class's three limits.
 - **Two balance sheet dates in a row.** The class changes only when the limits are crossed, or no longer crossed, on two balance sheet dates in a row. For a new or converted company the first balance sheet date decides (§ 267(4) HGB).
@@ -564,11 +564,11 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 **VAT return rhythm**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| VAT of the previous calendar year above which the return period is the month, not the quarter | EUR 9,000 | § 18(2) UStG: "mehr als 9 000 Euro" |
-| VAT of the previous calendar year up to which the tax office may release the business from advance returns | EUR 2,000 | § 18(2) UStG: "nicht mehr als 2 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |  |
+| VAT of the previous calendar year above which the return period is the month, not the quarter | EUR 9,000 | § 18(2) UStG: "mehr als 9 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
+| VAT of the previous calendar year up to which the tax office may release the business from advance returns | EUR 2,000 | § 18(2) UStG: "nicht mehr als 2 000 Euro" | same |
 
 - **Default.** The return period is the calendar quarter. The return and the payment are due by the tenth day after the period ends (§ 18(1) UStG).
 - **New businesses, tax periods 2021 to 2026.** The expected VAT of the current year decides the period. If the business ran for only part of the previous year, that year's VAT is scaled up to a full year. Outside those tax periods the basic rule applies: monthly returns in the year of start and in the year after (§ 18(2) UStG).
@@ -576,10 +576,10 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 **Trade tax: add-back of financing costs**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__8.html |
-| Allowance taken off the sum of the financing items before anything is added back | EUR 200,000 | § 8 no. 1 GewStG: "soweit die Summe den Betrag von 200 000 Euro übersteigt" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__8.html |  |
+| Allowance taken off the sum of the financing items before anything is added back | EUR 200,000 | § 8 no. 1 GewStG: "soweit die Summe den Betrag von 200 000 Euro übersteigt" | https://www.gesetze-im-internet.de/gewstg/__8.html |
 
 - **Step 1: add up the items, each at the share the law gives.** Interest and other payments for debt: in full. Annuities and permanent burdens: in full. Profit shares of a silent partner: in full. Rent, lease and leasing payments for movable fixed assets owned by someone else: one fifth (and only half of that for electric vehicles, certain plug-in hybrids and bicycles). Rent, lease and leasing payments for immovable fixed assets owned by someone else: one half. Payments for the time-limited use of rights such as licences and concessions: one quarter.
 - **Step 2: take off the allowance** in the table.
@@ -598,17 +598,17 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 **E-invoicing: turnover limit for the 2027 relief**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__27.html |
-| Issuer's total turnover (§ 19(2) UStG) of the previous calendar year: not more than | EUR 800,000 | § 27(38) no. 2 UStG: "im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__27.html |  |
+| Issuer's total turnover (§ 19(2) UStG) of the previous calendar year: not more than | EUR 800,000 | § 27(38) no. 2 UStG: "im vorangegangenen Kalenderjahr nicht mehr als 800 000 Euro betragen hat" | https://www.gesetze-im-internet.de/ustg_1980/__27.html |
 
 **Small invoices**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustdv_1980/__33.html |
-| Invoice total up to which fewer details are needed and the invoice may always be an other invoice | EUR 250 | § 33 UStDV: "Eine Rechnung, deren Gesamtbetrag 250 Euro nicht übersteigt" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustdv_1980/__33.html |  |
+| Invoice total up to which fewer details are needed and the invoice may always be an other invoice | EUR 250 | § 33 UStDV: "Eine Rechnung, deren Gesamtbetrag 250 Euro nicht übersteigt" | https://www.gesetze-im-internet.de/ustdv_1980/__33.html |
 
 - **Also always allowed as other invoices:** invoices issued by a Kleinunternehmer (§ 34a UStDV) and passenger tickets (§ 34 UStDV).
 - **Bookkeeping consequence.** Store incoming e-invoices in their structured form and keep them for the invoice period in Section 1.
@@ -653,23 +653,23 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 ## Sources
 
-- AO § 140, § 141, § 146, § 147 (bookkeeping duty, order rules, retention): https://www.gesetze-im-internet.de/ao_1977/__140.html and https://www.gesetze-im-internet.de/ao_1977/__141.html and https://www.gesetze-im-internet.de/ao_1977/__146.html and https://www.gesetze-im-internet.de/ao_1977/__147.html
-- EGAO Art. 97 § 19a (start of the shorter voucher period): https://www.gesetze-im-internet.de/aoeg_1977/art_97__19a.html
-- GmbHG § 13 (a GmbH is a trading company): https://www.gesetze-im-internet.de/gmbhg/__13.html
-- HGB § 1, § 6, § 238, § 240, § 241a, § 242 (merchants, bookkeeping duty, release): https://www.gesetze-im-internet.de/hgb/__1.html and https://www.gesetze-im-internet.de/hgb/__6.html and https://www.gesetze-im-internet.de/hgb/__238.html and https://www.gesetze-im-internet.de/hgb/__240.html and https://www.gesetze-im-internet.de/hgb/__241a.html and https://www.gesetze-im-internet.de/hgb/__242.html
-- HGB § 252, § 257 (valuation principles, retention): https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/hgb/__257.html
-- HGB § 264, § 266, § 267, § 267a, § 275, § 276 (statements, layouts, size classes): https://www.gesetze-im-internet.de/hgb/__264.html and https://www.gesetze-im-internet.de/hgb/__266.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__267a.html and https://www.gesetze-im-internet.de/hgb/__275.html and https://www.gesetze-im-internet.de/hgb/__276.html
-- HGB § 316, § 325, § 326 (audit, publication): https://www.gesetze-im-internet.de/hgb/__316.html and https://www.gesetze-im-internet.de/hgb/__325.html and https://www.gesetze-im-internet.de/hgb/__326.html
-- EStG § 2, § 4, § 4a, § 5, § 5b, § 6, § 7, § 9, § 37b: https://www.gesetze-im-internet.de/estg/__2.html and https://www.gesetze-im-internet.de/estg/__4.html and https://www.gesetze-im-internet.de/estg/__4a.html and https://www.gesetze-im-internet.de/estg/__5.html and https://www.gesetze-im-internet.de/estg/__5b.html and https://www.gesetze-im-internet.de/estg/__6.html and https://www.gesetze-im-internet.de/estg/__7.html and https://www.gesetze-im-internet.de/estg/__9.html and https://www.gesetze-im-internet.de/estg/__37b.html
-- EStDV § 60 (EÜR sent electronically): https://www.gesetze-im-internet.de/estdv_1955/__60.html
-- UStG § 12, § 13b, § 14, § 14b, § 18, § 19, § 27: https://www.gesetze-im-internet.de/ustg_1980/__12.html and https://www.gesetze-im-internet.de/ustg_1980/__13b.html and https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustg_1980/__14b.html and https://www.gesetze-im-internet.de/ustg_1980/__18.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html
-- UStDV § 33, § 34a (small invoices, Kleinunternehmer invoices): https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html
-- GewStG § 8 (trade tax add-backs): https://www.gesetze-im-internet.de/gewstg/__8.html
+- AO § 140, § 141, § 146, § 147 (bookkeeping duty, order rules, retention): https://www.gesetze-im-internet.de/ao_1977/__140.html and https://www.gesetze-im-internet.de/ao_1977/__141.html and https://www.gesetze-im-internet.de/ao_1977/__146.html and https://www.gesetze-im-internet.de/ao_1977/__147.html (read 2026-10-31)
+- EGAO Art. 97 § 19a (start of the shorter voucher period): https://www.gesetze-im-internet.de/aoeg_1977/art_97__19a.html (read 2026-10-31)
+- GmbHG § 13 (a GmbH is a trading company): https://www.gesetze-im-internet.de/gmbhg/__13.html (read 2026-10-31)
+- HGB § 1, § 6, § 238, § 240, § 241a, § 242 (merchants, bookkeeping duty, release): https://www.gesetze-im-internet.de/hgb/__1.html and https://www.gesetze-im-internet.de/hgb/__6.html and https://www.gesetze-im-internet.de/hgb/__238.html and https://www.gesetze-im-internet.de/hgb/__240.html and https://www.gesetze-im-internet.de/hgb/__241a.html and https://www.gesetze-im-internet.de/hgb/__242.html (read 2026-10-31)
+- HGB § 252, § 257 (valuation principles, retention): https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/hgb/__257.html (read 2026-10-31)
+- HGB § 264, § 266, § 267, § 267a, § 275, § 276 (statements, layouts, size classes): https://www.gesetze-im-internet.de/hgb/__264.html and https://www.gesetze-im-internet.de/hgb/__266.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__267a.html and https://www.gesetze-im-internet.de/hgb/__275.html and https://www.gesetze-im-internet.de/hgb/__276.html (read 2026-10-31)
+- HGB § 316, § 325, § 326 (audit, publication): https://www.gesetze-im-internet.de/hgb/__316.html and https://www.gesetze-im-internet.de/hgb/__325.html and https://www.gesetze-im-internet.de/hgb/__326.html (read 2026-10-31)
+- EStG § 2, § 4, § 4a, § 5, § 5b, § 6, § 7, § 9, § 37b: https://www.gesetze-im-internet.de/estg/__2.html and https://www.gesetze-im-internet.de/estg/__4.html and https://www.gesetze-im-internet.de/estg/__4a.html and https://www.gesetze-im-internet.de/estg/__5.html and https://www.gesetze-im-internet.de/estg/__5b.html and https://www.gesetze-im-internet.de/estg/__6.html and https://www.gesetze-im-internet.de/estg/__7.html and https://www.gesetze-im-internet.de/estg/__9.html and https://www.gesetze-im-internet.de/estg/__37b.html (read 2026-10-31)
+- EStDV § 60 (EÜR sent electronically): https://www.gesetze-im-internet.de/estdv_1955/__60.html (read 2026-10-31)
+- UStG § 12, § 13b, § 14, § 14b, § 18, § 19, § 27: https://www.gesetze-im-internet.de/ustg_1980/__12.html and https://www.gesetze-im-internet.de/ustg_1980/__13b.html and https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustg_1980/__14b.html and https://www.gesetze-im-internet.de/ustg_1980/__18.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html (read 2026-10-31)
+- UStDV § 33, § 34a (small invoices, Kleinunternehmer invoices): https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html (read 2026-10-31)
+- GewStG § 8 (trade tax add-backs): https://www.gesetze-im-internet.de/gewstg/__8.html (read 2026-10-31)
 - Finance ministry, EÜR form and instructions for 2026, letter of 1 September 2026: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
-- Finance ministry, depreciation table for generally usable assets (AfA-Tabelle AV): https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Weitere_Steuerthemen/Betriebspruefung/AfA-Tabellen/Ergaenzende-AfA-Tabellen/AfA-Tabelle_AV.pdf?__blob=publicationFile&v=3
+- Finance ministry, depreciation table for generally usable assets (AfA-Tabelle AV): https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Weitere_Steuerthemen/Betriebspruefung/AfA-Tabellen/Ergaenzende-AfA-Tabellen/AfA-Tabelle_AV.pdf?__blob=publicationFile&v=3 (read 2026-10-31)
 - Finance ministry, GoBD change letters of 11 March 2024 and 14 July 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4 and https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4
 - Finance ministry, e-invoice letter of 15 October 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
-- Finance ministry, tax booklet (Steuern von A-Z), 2025 edition: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9
+- Finance ministry, tax booklet (Steuern von A-Z), 2025 edition: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 (read 2026-10-31)
 
 ## Disclaimer
 
