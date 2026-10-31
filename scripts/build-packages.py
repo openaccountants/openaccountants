@@ -780,9 +780,12 @@ def build_us_state_package(state_code):
 
     # 3. Core US orchestrator files
     orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
-    core_orch = ["us-federal-return-assembly.md", "global-router.md"]
-    for f in core_orch:
-        src = os.path.join(orch_dir, f)
+    core_orch = [
+        os.path.join(orch_dir, "us-federal-return-assembly.md"),
+        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+    ]
+    for src in core_orch:
+        f = os.path.basename(src)
         if os.path.isfile(src):
             shutil.copy2(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
@@ -982,8 +985,12 @@ def build_canada_province_package(province_code):
 
     # 6. Core orchestrator files (Canada freelance intake + return assembly, global router)
     orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
-    for orch_file in ("ca-freelance-intake.md", "ca-return-assembly.md", "global-router.md"):
-        src = os.path.join(orch_dir, orch_file)
+    for src in (
+        os.path.join(orch_dir, "ca-freelance-intake.md"),
+        os.path.join(orch_dir, "ca-return-assembly.md"),
+        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+    ):
+        orch_file = os.path.basename(src)
         if os.path.isfile(src):
             shutil.copy2(src, os.path.join(pkg_dir, orch_file))
             copied_files.append(orch_file)
@@ -1176,7 +1183,7 @@ def main():
     # ---- Industry verticals package ----
     vert_result = None
     if not us_only:
-        vert_dir = os.path.join(SKILLS_DIR, "verticals")
+        vert_dir = os.path.join(SKILLS_DIR, "reference", "verticals")
         if os.path.isdir(vert_dir):
             vert_pkg = os.path.join(PACKAGES_DIR, "_verticals")
             os.makedirs(vert_pkg, exist_ok=True)
@@ -1204,7 +1211,7 @@ def main():
     # ---- Integrations package ----
     integ_result = None
     if not us_only:
-        integ_dir = os.path.join(SKILLS_DIR, "integrations")
+        integ_dir = os.path.join(SKILLS_DIR, "reference", "integrations")
         if os.path.isdir(integ_dir):
             integ_pkg = os.path.join(PACKAGES_DIR, "_integrations")
             os.makedirs(integ_pkg, exist_ok=True)

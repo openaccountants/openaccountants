@@ -14,10 +14,10 @@ Owner: Michael Cutajar
 | [Albania](albania/) | Needs signature | 8 | 8 | 0 |
 | [Andorra](andorra/) | Needs writing | 8 | 8 | 0 |
 | [Armenia](armenia/) | Needs signature | 10 | 10 | 0 |
-| [Austria](austria/) | Needs signature | 10 | 10 | 0 |
+| [Austria](austria/) | Needs signature | 9 | 9 | 0 |
 | [Azerbaijan](azerbaijan/) | Needs writing | 10 | 10 | 0 |
 | [Belarus](belarus/) | Needs writing | 10 | 10 | 0 |
-| [Belgium](belgium/) | Needs signature | 15 | 15 | 0 |
+| [Belgium](belgium/) | Needs signature | 14 | 14 | 0 |
 | [Bosnia](bosnia/) | Needs writing | 10 | 10 | 0 |
 | [Bulgaria](bulgaria/) | Needs signature | 10 | 10 | 0 |
 | [Croatia](croatia/) | Needs signature | 10 | 10 | 0 |
@@ -58,7 +58,7 @@ Owner: Michael Cutajar
 | [Serbia](serbia/) | Needs signature | 10 | 10 | 0 |
 | [Slovakia](slovakia/) | Needs signature | 10 | 9 | 0 |
 | [Slovenia](slovenia/) | Needs signature | 10 | 10 | 0 |
-| [Spain](spain/) | Needs writing | 28 | 27 | 0 |
+| [Spain](spain/) | Needs writing | 27 | 26 | 0 |
 | [Svalbard](svalbard/) | Needs writing | 3 | 3 | 0 |
 | [Sweden](sweden/) | Needs signature | 15 | 14 | 0 |
 | [Switzerland](switzerland/) | Needs signature | 14 | 14 | 0 |
@@ -138,7 +138,7 @@ Owner: Ryan Duguid
 | [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 0 | 0 |
 | [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
-| [China](china/) | Needs writing | 16 | 9 | 0 |
+| [China](china/) | Needs writing | 15 | 9 | 0 |
 | [Fiji](fiji/) | Needs writing | 6 | 0 | 0 |
 | [Hong Kong](hong-kong/) | Needs writing | 7 | 0 | 0 |
 | [India](india/) | Needs writing | 18 | 14 | 0 |
@@ -188,7 +188,7 @@ Owner: Michael Cutajar
 | [Oman](oman/) | Needs writing | 6 | 0 | 0 |
 | [Qatar](qatar/) | Needs signature | 8 | 8 | 0 |
 | [Saudi Arabia](saudi-arabia/) | Needs writing | 12 | 0 | 0 |
-| [United Arab Emirates](uae/) | Needs writing | 9 | 7 | 0 |
+| [United Arab Emirates](uae/) | Needs writing | 8 | 6 | 0 |
 
 ## Africa
 

@@ -85,7 +85,7 @@ All domain skills for a country live in the same directory (e.g., `skills/german
 - **Tax optimization skills** are standalone — no separate workflow base; they follow the universal `workflow-base.md`
 - **Crypto tax skills** load on top of `crypto-tax-workflow-base` (in `skills/foundation/`)
 - **Cross-border skills** load on top of `cross-border-workflow-base` (in `skills/foundation/`)
-- **Vertical skills** (industry-specific) and **integration skills** (platform-specific) are standalone in `skills/verticals/` and `skills/integrations/`
+- **Vertical skills** (industry-specific) and **integration skills** (platform-specific) are standalone in `skills/reference/verticals/` and `skills/reference/integrations/`
 - Citation format: for US, cite IRC sections, state statutes, or IRS notices; for international, cite the relevant tax authority and legislation
 
 ## Where to put your files
@@ -98,8 +98,8 @@ All domain skills for a country live in the same directory (e.g., `skills/german
 | US federal | `skills/us/federal/` | `skills/us/federal/us-crypto-tax.md` |
 | US state | `skills/us/states/[code]/` | `skills/us/states/ny/ny-income-tax.md` |
 | Global / cross-border (not one country) | `skills/cross-border/` + `jurisdiction:` in frontmatter | `skills/cross-border/oecd-model-treaty-defaults.md` with `jurisdiction: INTL` |
-| Industry vertical (developer, e-commerce) | `skills/verticals/` + `jurisdiction: GLOBAL` | `skills/verticals/freelance-developer.md` |
-| Platform integration (Stripe, Xero) | `skills/integrations/` + `jurisdiction: GLOBAL` | `skills/integrations/stripe-integration.md` |
+| Industry vertical (developer, e-commerce) | `skills/reference/verticals/` + `jurisdiction: GLOBAL` | `skills/reference/verticals/freelance-developer.md` |
+| Platform integration (Stripe, Xero) | `skills/reference/integrations/` + `jurisdiction: GLOBAL` | `skills/reference/integrations/stripe-integration.md` |
 | If unsure | Same folder as related skills + **`jurisdiction: XX`** in frontmatter | `jurisdiction: JP`, `MT`, `GLOBAL`, `US`, `US-CA`, etc. |
 
 **Rule:** Folder path is the primary signal. Frontmatter `jurisdiction:` is the backup — use it even when the folder makes it obvious.
@@ -113,9 +113,10 @@ All domain skills for a country live in the same directory (e.g., `skills/german
 | International country skills (all domains) | `skills/[country-slug]/` |
 | Foundation workflow bases | `skills/foundation/` (usually MCP/packages only, not website sync) |
 | Cross-border / treaty corridor rules | `skills/cross-border/` (subdirectory `treaty-corridors/` for WHT rates) |
-| Industry vertical skills | `skills/verticals/` |
-| Platform integration skills | `skills/integrations/` |
-| Orchestrator files (router, intake, assembly) | `skills/orchestrator/` |
+| Industry vertical skills | `skills/reference/verticals/` |
+| Platform integration skills | `skills/reference/integrations/` |
+| Router | `skills/foundation/global-router.md` |
+| Orchestrator files (intake, assembly) | `skills/orchestrator/` |
 
 You never need to run the generators: the scheduled platform sync regenerates every derived tree after your source change has been ingested.
 

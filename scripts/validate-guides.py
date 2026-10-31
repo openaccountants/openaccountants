@@ -96,7 +96,7 @@ LEGACY_MISSING_DESCRIPTION = {
 # (scripts/backfill-metadata.py did the one-time sweep).
 JURISDICTION_OPTIONAL_DIRS = {
     "skills/cross-border/treaty-corridors",
-    "skills/intelligence",
+    "skills/foundation/intelligence",
     "skills/templates",
     "skills/eu",
 }

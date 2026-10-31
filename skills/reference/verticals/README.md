@@ -41,4 +41,4 @@ Sector-specific overlays. Load alongside your country / state package when your 
 
 For multi-sided businesses (e.g., e-commerce + content creator), load multiple verticals — they overlay rather than conflict.
 
-See the [README](../../README.md) for how to load skills into your AI.
+See the [README](../../../README.md) for how to load skills into your AI.

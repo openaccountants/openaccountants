@@ -12,8 +12,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SKILLS = ROOT / "skills"
 
 TOPIC_DIRS = frozenset({
-    "cross-border", "financial-reporting", "foundation", "integrations", "intelligence",
-    "orchestrator", "patterns", "templates", "verticals",
+    "cross-border", "foundation", "orchestrator", "reference", "templates",
 })
 
 

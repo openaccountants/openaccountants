@@ -40,9 +40,9 @@ PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants" / "skills"
 SITE = "https://www.openaccountants.com"
 LICENSE_LINE = "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 
-# Content skills only. Foundation/orchestrator/templates/patterns are workflow scaffolding
+# Content skills only. Foundation/orchestrator/templates are workflow scaffolding
 # that the MCP assembles; they are not something a person installs on its own.
-TOPIC_SOURCES = ("cross-border", "verticals", "integrations", "financial-reporting")
+TOPIC_SOURCES = ("cross-border", "reference")
 KEEP_FILES = {"README.md", "LICENSE.md", "install.sh", "index.json"}
 BAD_DESCRIPTIONS = {"", "---", ">", "|", "null", "none"}
 GLOSS = "tax rules your AI follows"

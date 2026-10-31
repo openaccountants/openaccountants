@@ -17,13 +17,10 @@ skills/                    # SOURCE — edit tax content here
   us/                      #   us/federal/, us/states/<code>/ and national files
   COUNTRIES.md             #   GENERATED directory of country packs
   cross-border/            #   treaty + multi-jurisdiction rules (treaty-corridors/ for WHT)
-  foundation/              #   workflow bases bundled into packages by the build
-  verticals/               #   industry-specific skills (jurisdiction: GLOBAL)
-  integrations/            #   platform integrations (Stripe, Shopify, ...)
+  foundation/              #   workflow bases, global-router, patterns/, intelligence/
+  reference/               #   verticals/, integrations/, financial-reporting/
   orchestrator/            #   per-country intake + return-assembly orchestrators
-  financial-reporting/     #   IFRS/GAAP reporting skills (leases, rev rec, ...)
-  intelligence/            #   deadline engine, threshold alerts, optimisation advisor
-  patterns/, templates/    #   shared authoring patterns and file templates
+  templates/               #   shared file templates
 
 packages/                  # GENERATED per-jurisdiction bundles — do not edit (one exception)
   <jurisdiction>/          #   one folder per country / US state / CA province (malta/, us-ca/, ...)
