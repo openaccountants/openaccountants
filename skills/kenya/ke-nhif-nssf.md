@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # KE Nhif Nssf
 
-## Kenya SHIF (formerly NHIF) and NSSF Contributions -- Self-Employed Skill v2.0
+## Kenya SHIF (formerly NHIF) and NSSF Contributions -- Self-Employed Skill v2.1
 
 ## Section 1 -- Quick reference
 
