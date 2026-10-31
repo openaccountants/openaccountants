@@ -22,15 +22,15 @@ Türkiye taxes individuals under the Income Tax Law no. 193 (GVK) and companies 
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | turkey-pit | checked against the law (2026; PR #1035), partial |
-| IT-CORP, corporate income tax | tr-corporate-income-tax | checked against the law (2026; PR #1047) |
-| VAT | turkey-vat | checked against the law (2026; PR #1044) |
-| SC, social contributions | tr-payroll-social | checked against the law (2026; PR #1046) |
-| PR, payroll withholding | tr-payroll-social | checked against the law (2026; PR #1046) |
-| TP, transfer pricing | tr-transfer-pricing | checked against the law (2026; PR #1052) |
-| XB, cross-border | tr-cross-border | checked against the law (2026; PR #1054) |
+| Income tax | turkey-pit | checked against the law (2026; PR #1035), partial |
+| Company tax | tr-corporate-income-tax | checked against the law (2026; PR #1047) |
+| VAT or sales tax | turkey-vat | checked against the law (2026; PR #1044) |
+| Social contributions | tr-payroll-social | checked against the law (2026; PR #1046) |
+| Payroll | tr-payroll-social | checked against the law (2026; PR #1046) |
+| Transfer pricing | tr-transfer-pricing | checked against the law (2026; PR #1052) |
+| Cross-border | tr-cross-border | checked against the law (2026; PR #1054) |
 
 The overview (tr-tax-overview) and the company formation skills (tr-company-formation, turkey-company-formation-entity-choice-2) are not tax-domain skills. Treaty-by-treaty withholding rates, free zones, technology zones and investment incentive regimes are out of scope for the pack.
 

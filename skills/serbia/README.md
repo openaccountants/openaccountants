@@ -13,15 +13,15 @@ Calendar tax year for individuals and, by default, for companies. Authority: the
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | serbia-income-tax | checked against the law |
-| IT-CORP, corporate income tax | rs-corporate-tax | checked against the law |
-| VAT | serbia-vat | checked against the law |
-| SC, social contributions | serbia-social-contributions | checked against the law |
-| PR, payroll withholding | serbia-payroll | checked against the law |
-| TP, transfer pricing | rs-transfer-pricing | checked against the law |
-| XB, cross-border | rs-cross-border | checked against the law |
+| Income tax | serbia-income-tax | checked against the law |
+| Company tax | rs-corporate-tax | checked against the law |
+| VAT or sales tax | serbia-vat | checked against the law |
+| Social contributions | serbia-social-contributions | checked against the law |
+| Payroll | serbia-payroll | checked against the law |
+| Transfer pricing | rs-transfer-pricing | checked against the law |
+| Cross-border | rs-cross-border | checked against the law |
 
 Not covered in depth, by design (niche regimes, not a group most clients belong to): the VAT cash accounting scheme (Article 36a), the special schemes for travel agencies, second-hand goods and investment gold, and a field-by-field POPDV map. serbia-vat refers these out.
 

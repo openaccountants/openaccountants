@@ -24,15 +24,15 @@ San Marino taxes income under one law, the IGR (Law 166/2013), reformed by Law 1
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | [sm-income-tax](sm-income-tax.md) | checked against the law |
-| IT-CORP, corporate income tax | [sm-corporate-income-tax](sm-corporate-income-tax.md) | checked against the law (partial, see above) |
+| Income tax | [sm-income-tax](sm-income-tax.md) | checked against the law |
+| Company tax | [sm-corporate-income-tax](sm-corporate-income-tax.md) | checked against the law (partial, see above) |
 | VAT, import tax (monofase) | [sm-vat-gst](sm-vat-gst.md) | checked against the law (partial, see above) |
-| SC, social contributions | [sm-payroll-social](sm-payroll-social.md) | checked against the law (partial, see above) |
-| PR, payroll withholding | [sm-payroll-social](sm-payroll-social.md) | checked against the law |
-| TP, transfer pricing | [sm-transfer-pricing](sm-transfer-pricing.md) | checked against the law |
-| XB, cross-border | [sm-cross-border](sm-cross-border.md) | checked against the law |
+| Social contributions | [sm-payroll-social](sm-payroll-social.md) | checked against the law (partial, see above) |
+| Payroll | [sm-payroll-social](sm-payroll-social.md) | checked against the law |
+| Transfer pricing | [sm-transfer-pricing](sm-transfer-pricing.md) | checked against the law |
+| Cross-border | [sm-cross-border](sm-cross-border.md) | checked against the law |
 
 Supporting skills: [sm-tax-overview](sm-tax-overview.md) (router and headline figures) and [sm-company-formation](sm-company-formation.md) (SRL and SPA set-up), both checked against the law.
 

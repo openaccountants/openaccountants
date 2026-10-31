@@ -24,15 +24,15 @@ The State Tax Service administers the Tax Code. Ordinary income/profit tax uses 
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND | [azerbaijan-income-tax](azerbaijan-income-tax.md) | checked against the law; partial |
-| IT-CORP | [az-corporate-income-tax](az-corporate-income-tax.md) | checked against the law |
-| VAT | [azerbaijan-vat](azerbaijan-vat.md) | checked against the law; partial |
-| SC | [azerbaijan-social-contributions](azerbaijan-social-contributions.md) | checked against the law; partial |
-| PR | [azerbaijan-payroll](azerbaijan-payroll.md) | checked against the law; partial |
-| TP | [azerbaijan-transfer-pricing](azerbaijan-transfer-pricing.md) | checked against the law; partial |
-| XB | [azerbaijan-cross-border](azerbaijan-cross-border.md) | checked against the law; partial |
+| Income tax | [azerbaijan-income-tax](azerbaijan-income-tax.md) | checked against the law; partial |
+| Company tax | [az-corporate-income-tax](az-corporate-income-tax.md) | checked against the law |
+| VAT or sales tax | [azerbaijan-vat](azerbaijan-vat.md) | checked against the law; partial |
+| Social contributions | [azerbaijan-social-contributions](azerbaijan-social-contributions.md) | checked against the law; partial |
+| Payroll | [azerbaijan-payroll](azerbaijan-payroll.md) | checked against the law; partial |
+| Transfer pricing | [azerbaijan-transfer-pricing](azerbaijan-transfer-pricing.md) | checked against the law; partial |
+| Cross-border | [azerbaijan-cross-border](azerbaijan-cross-border.md) | checked against the law; partial |
 
 [az-tax-overview](az-tax-overview.md) routes questions to those skills. Ordinary computations include business profit and losses, depreciation, simplified turnover eligibility, employment gross-to-net, employee/employer contributions, entrepreneur contributions, VAT input allocation, TP adjustments, non-resident gross-up and PE remittance tax. Each tax skill has two recomputing examples. The partial notes identify actual missing computations, not zeros or exemptions.
 

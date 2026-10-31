@@ -12,15 +12,15 @@ Calendar tax year. Direct taxes (income tax, corporate income tax, municipal bus
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | luxembourg-income-tax | checked against the law |
-| IT-CORP, corporate income tax | lu-corporate-tax | checked against the law |
-| VAT | luxembourg-vat-return | checked against the law |
-| SC, social contributions | luxembourg-social-contributions | checked against the law |
-| PR, payroll withholding | luxembourg-payroll | checked against the law |
-| TP, transfer pricing | lu-transfer-pricing | checked against the law |
-| XB, cross-border | lu-cross-border | checked against the law |
+| Income tax | luxembourg-income-tax | checked against the law |
+| Company tax | lu-corporate-tax | checked against the law |
+| VAT or sales tax | luxembourg-vat-return | checked against the law |
+| Social contributions | luxembourg-social-contributions | checked against the law |
+| Payroll | luxembourg-payroll | checked against the law |
+| Transfer pricing | lu-transfer-pricing | checked against the law |
+| Cross-border | lu-cross-border | checked against the law |
 
 luxembourg-tax-optimization (self-employed versus SARL planning) belongs to the Accounting packs milestone and is not counted here.
 

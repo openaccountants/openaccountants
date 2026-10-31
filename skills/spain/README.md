@@ -24,15 +24,15 @@ The [dated independent ledger-review checkpoint](../../evidence/ledgers/spain-20
 
 ## Domains
 
-| Domain | Main and territorial Guides | Status |
+| Tax | Main and territorial Guides | Status |
 |---|---|---|
-| IT-IND | [Resident IRPF](es-income-tax.md), [regional/national credits](es-irpf-deductions.md), [four foral systems](es-foral-income-tax.md) | partial: two crypto computations |
-| IT-CORP | [Common-territory corporate tax](es-corporate-tax.md), [foral corporate tax](es-foral-corporate-tax.md) | ordinary methods supplied; see recorded limits |
-| VAT | [IVA computation and return reconciliation](es-vat-return.md), [Canary IGIC](es-canary-islands-igic.md), [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) | ordinary methods supplied; see recorded limits |
-| SC | [Employee, RETA, household and agricultural-employee contributions](es-social-contributions.md) | ordinary methods supplied; see recorded limits |
-| PR | [Common-territory payroll](spain-payroll.md), [Modelo111](es-modelo-111.md), [foral payroll](es-foral-payroll.md) | ordinary methods supplied; see recorded limits |
-| TP | [Related-party valuation, documentation and information returns](spain-transfer-pricing.md), [local foral methods](es-foral-corporate-tax.md#cross-border-points) | checked against the law |
-| XB | [Non-residents, PE and departure](es-non-resident-income-tax-irnr-and.md), [foral nonresident tax](es-foral-non-resident-tax.md), [incoming-worker election](es-beckham.md) | ordinary methods supplied; see recorded limits |
+| Income tax | [Resident IRPF](es-income-tax.md), [regional/national credits](es-irpf-deductions.md), [four foral systems](es-foral-income-tax.md) | partial: two crypto computations |
+| Company tax | [Common-territory corporate tax](es-corporate-tax.md), [foral corporate tax](es-foral-corporate-tax.md) | ordinary methods supplied; see recorded limits |
+| VAT or sales tax | [IVA computation and return reconciliation](es-vat-return.md), [Canary IGIC](es-canary-islands-igic.md), [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) | ordinary methods supplied; see recorded limits |
+| Social contributions | [Employee, RETA, household and agricultural-employee contributions](es-social-contributions.md) | ordinary methods supplied; see recorded limits |
+| Payroll | [Common-territory payroll](spain-payroll.md), [Modelo111](es-modelo-111.md), [foral payroll](es-foral-payroll.md) | ordinary methods supplied; see recorded limits |
+| Transfer pricing | [Related-party valuation, documentation and information returns](spain-transfer-pricing.md), [local foral methods](es-foral-corporate-tax.md#cross-border-points) | checked against the law |
+| Cross-border | [Non-residents, PE and departure](es-non-resident-income-tax-irnr-and.md), [foral nonresident tax](es-foral-non-resident-tax.md), [incoming-worker election](es-beckham.md) | ordinary methods supplied; see recorded limits |
 
 The resident calculation routes also include [capital gains](es-capital-gains.md), [rental income](es-rental-income.md), [self-employment](es-autonomous-worker.md), [instalments](es-estimated-tax.md) and [crypto](spain-crypto-tax.md). Each tax Guide retains its two executable examples. Five additional controls check the part-year and multiple-payer foreign-assignment addition in the [closeout calculation appendix](../../evidence/ledgers/spain-closeout-20261031/foreign-assignment-controls.md). The foral annual-return and payroll rules are separate methods; State scales and withholding tables are not substituted for local ones.
 

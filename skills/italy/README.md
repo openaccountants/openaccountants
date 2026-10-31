@@ -12,15 +12,15 @@ Calendar tax year for individuals; companies are taxed on their financial year. 
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | sourced from the law |
-| IT-CORP, corporate income tax | it-ires-corporate-tax; it-irap (who pays since 2022, rates and 2026 surcharges, base by entity type, staff and flat deductions, return, acconti, penalties, multi-region split) | sourced from the law |
-| VAT | italy-vat-return (2026 rates and Tabella A, monthly or quarterly settlement, LIPE, reverse charge, split payment, esterometro, penalties and ravvedimento), it-dichiarazione-iva-annuale (annual return, December acconto, credits and refunds). Out of scope: margin scheme, VAT groups, agriculture regime, OSS returns | checked against the law |
-| SC, social contributions | it-inps-contributions (gestione separata in full, with the 2026 headline figures for artigiani and commercianti), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee and employer INPS and INAIL in it-employer-contributions | checked against the law |
-| PR, payroll withholding | italy-payroll (IRPEF withholding and conguaglio, cuneo fiscale, 2026 substitute taxes, fringe benefits, employee INPS, TFR, payslip, CU, 770, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | checked against the law |
-| TP, transfer pricing | italy-transfer-pricing | sourced from the law |
-| XB, cross-border | it-cross-border (hub), it-impatriati | sourced from the law |
+| Income tax | it-irpef-employees (employees, pensioners, investment and rental income), it-income-tax (self-employed, regime ordinario), it-regime-forfettario (flat-rate regime), it-estimated-tax, it-impatriati, italy-crypto-tax | sourced from the law |
+| Company tax | it-ires-corporate-tax; it-irap (who pays since 2022, rates and 2026 surcharges, base by entity type, staff and flat deductions, return, acconti, penalties, multi-region split) | sourced from the law |
+| VAT or sales tax | italy-vat-return (2026 rates and Tabella A, monthly or quarterly settlement, LIPE, reverse charge, split payment, esterometro, penalties and ravvedimento), it-dichiarazione-iva-annuale (annual return, December acconto, credits and refunds). Out of scope: margin scheme, VAT groups, agriculture regime, OSS returns | checked against the law |
+| Social contributions | it-inps-contributions (gestione separata in full, with the 2026 headline figures for artigiani and commercianti), it-inps-artigiani-commercianti (artigiani, commercianti and the professional funds); employee and employer INPS and INAIL in it-employer-contributions | checked against the law |
+| Payroll | italy-payroll (IRPEF withholding and conguaglio, cuneo fiscale, 2026 substitute taxes, fringe benefits, employee INPS, TFR, payslip, CU, 770, F24), it-employer-contributions (employer and employee INPS by sector, INAIL, TFR and the Fondo di Tesoreria, cost of an employee) | checked against the law |
+| Transfer pricing | italy-transfer-pricing | sourced from the law |
+| Cross-border | it-cross-border (hub), it-impatriati | sourced from the law |
 
 ## Official sources
 

@@ -22,15 +22,15 @@ Calendar tax year, Swiss franc. The Steuerverwaltung administers individual weal
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | li-income-tax | checked against the law |
-| IT-CORP, corporate income tax | li-corporate-income-tax | checked against the law |
-| VAT | liechtenstein-vat | checked against the law |
-| SC, social contributions | li-payroll-social | checked against the law |
-| PR, payroll withholding | li-payroll-social | checked against the law |
-| TP, transfer pricing | li-transfer-pricing | checked against the law |
-| XB, cross-border | li-cross-border | checked against the law |
+| Income tax | li-income-tax | checked against the law |
+| Company tax | li-corporate-income-tax | checked against the law |
+| VAT or sales tax | liechtenstein-vat | checked against the law |
+| Social contributions | li-payroll-social | checked against the law |
+| Payroll | li-payroll-social | checked against the law |
+| Transfer pricing | li-transfer-pricing | checked against the law |
+| Cross-border | li-cross-border | checked against the law |
 
 Also in the pack: [li-tax-overview](li-tax-overview.md) (router and headline figures) and [li-company-formation](li-company-formation.md) (legal forms, capital, accounts and review).
 

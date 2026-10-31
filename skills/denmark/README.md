@@ -12,15 +12,15 @@ Calendar tax year for individuals; companies usually use the calendar year but m
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | dk-income-tax (2026 deep-tax), dk-capital-gains | sourced from the law |
-| IT-CORP, corporate income tax | dk-corporate-tax | checked against the law |
-| VAT | denmark-vat-return (2026 deep-tax) | sourced from the law |
-| SC, social contributions | dk-social-contributions | checked against the law |
-| PR, payroll withholding | dk-payroll | checked against the law |
-| TP, transfer pricing | dk-transfer-pricing | checked against the law |
-| XB, cross-border | dk-cross-border | checked against the law |
+| Income tax | dk-income-tax (2026 deep-tax), dk-capital-gains | sourced from the law |
+| Company tax | dk-corporate-tax | checked against the law |
+| VAT or sales tax | denmark-vat-return (2026 deep-tax) | sourced from the law |
+| Social contributions | dk-social-contributions | checked against the law |
+| Payroll | dk-payroll | checked against the law |
+| Transfer pricing | dk-transfer-pricing | checked against the law |
+| Cross-border | dk-cross-border | checked against the law |
 
 ## Official sources
 

@@ -14,15 +14,15 @@ Calendar tax year. Three levels of income tax: the Confederation (direkte Bundes
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | checked against the law |
-| IT-CORP, corporate income tax | ch-corporate-income-tax | checked against the law |
-| VAT | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return (2026 return: effective, net tax rate and flat tax rate methods, annual settlement instalments, reverse charge in the return, corrections, interest) | sourced from the law |
-| SC, social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | checked against the law |
-| PR, payroll withholding | ch-payroll | checked against the law |
-| TP, transfer pricing | ch-transfer-pricing | checked against the law |
-| XB, cross-border | ch-cross-border, germany-to-switzerland-cross-border-tax (Germany pack) | checked against the law |
+| Income tax | ch-federal-income-tax, ch-cantonal-tax, ch-lump-sum | checked against the law |
+| Company tax | ch-corporate-income-tax | checked against the law |
+| VAT or sales tax | switzerland-vat (2026: CHF 100,000 registration, 8.1% / 2.6% / 3.8%, platforms, effective and net tax rate methods, annual reporting option, 60-day deadline, reverse charge, import tax, 4.0% default interest, penalties); ch-vat-return (2026 return: effective, net tax rate and flat tax rate methods, annual settlement instalments, reverse charge in the return, corrections, interest) | sourced from the law |
+| Social contributions | ch-ahv-iv (self-employed and non-employed), ch-payroll (employees) | checked against the law |
+| Payroll | ch-payroll | checked against the law |
+| Transfer pricing | ch-transfer-pricing | checked against the law |
+| Cross-border | ch-cross-border, germany-to-switzerland-cross-border-tax (Germany pack) | checked against the law |
 
 ## Official sources
 

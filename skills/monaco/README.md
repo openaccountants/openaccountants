@@ -16,14 +16,14 @@ covered_by:
 
 2026 source-cited drafts checked 25 October 2026. The seven applicable tax domains are covered for ordinary taxpayers and computations on the stated facts. Payroll and social contributions share one Guide. All eight Guides remain tier 2: no named Monaco professional has signed off. Source coverage, independent AI review and arithmetic validation are distinct from professional attestation and from a maintainer merging this PR.
 
-| Domain | Guide | Ordinary coverage |
+| Tax | Guide | Ordinary coverage |
 |---|---|---|
-| IT-IND | [Individual tax](mc-income-tax.md) | Genuine residence, full French-exception screen, certificates, foreign filing destination and sanctions; French calculations route to the France Guide |
-| IT-CORP | [Business profits tax](mc-corporate-income-tax.md) | Scope, base, deductions, executive scale, dated shareholder interest, losses/carryback, participation, disposals, cessation, advances and DSF filing |
-| VAT | [VAT](monaco-vat.md) | Rates/franchise, tax points, input coefficients/capital adjustments, refunds, imports/EU trade, DSF onboarding/returns and invoicing |
-| SC, PR | [Payroll/social](mc-payroll-social.md) | January to September and October to December 2026 rates, bases/caps/rounding, directors, domestic and self-employed schemes, hiring/payslips, France collection and bilateral affiliation |
-| TP | [Transfer pricing](mc-transfer-pricing.md) | Normal foreign conditions, evidence, related deduction tests, disclosures/retention, CbCR population/notification/EAI filing and sanctions |
-| XB | [Cross-border](mc-cross-border.md) | Residence/source/PE decisions, foreign credits and participation, cessation, employment/social routing, CRS account-holder classification and CbCR routing |
+| Income tax | [Individual tax](mc-income-tax.md) | Genuine residence, full French-exception screen, certificates, foreign filing destination and sanctions; French calculations route to the France Guide |
+| Company tax | [Business profits tax](mc-corporate-income-tax.md) | Scope, base, deductions, executive scale, dated shareholder interest, losses/carryback, participation, disposals, cessation, advances and DSF filing |
+| VAT or sales tax | [VAT](monaco-vat.md) | Rates/franchise, tax points, input coefficients/capital adjustments, refunds, imports/EU trade, DSF onboarding/returns and invoicing |
+| Social contributions, payroll | [Payroll/social](mc-payroll-social.md) | January to September and October to December 2026 rates, bases/caps/rounding, directors, domestic and self-employed schemes, hiring/payslips, France collection and bilateral affiliation |
+| Transfer pricing | [Transfer pricing](mc-transfer-pricing.md) | Normal foreign conditions, evidence, related deduction tests, disclosures/retention, CbCR population/notification/EAI filing and sanctions |
+| Cross-border | [Cross-border](mc-cross-border.md) | Residence/source/PE decisions, foreign credits and participation, cessation, employment/social routing, CRS account-holder classification and CbCR routing |
 
 [Overview](mc-tax-overview.md) is the entry point. [Formation](mc-company-formation.md) preserves the existing Accounting packs topic with current capital/permission corrections; its exhaustive registry, beneficial-owner, accounts/audit and October-reform implementation remain partial. Formation is not one of the seven tax domains and does not add a completed domain.
 

@@ -12,15 +12,15 @@ Calendar tax year. Authority: the Financial Administration (Finanční správa) 
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | checked against the law |
-| IT-CORP, corporate income tax | cz-corporate-income-tax (2026: residence, 21% rate, base and non-deductible costs, tax depreciation, losses, participation exemption, § 23e borrowing cost limit, advances, deadlines, penalties; top-up tax for large groups not covered) | checked against the law |
-| VAT | czech-republic-vat-return (2026: registration at CZK 2,000,000 and CZK 2,536,500, 21% and 12% rates, return, control statement and EC sales list, reverse charge, unreliable payers, penalties; partial exemption, special schemes, VAT groups and OSS not covered); cz-vat-return is a pointer to it | sourced from the law |
-| SC, social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed OSVČ, 2026) | checked against the law |
-| PR, payroll withholding | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, sick pay, annual reconciliation and vyúčtování; deductions under court orders not covered) | checked against the law |
-| TP, transfer pricing | cz-transfer-pricing | checked against the law |
-| XB, cross-border | cz-cross-border | checked against the law |
+| Income tax | cz-employee-income-tax (employees, rental, capital and other non-business income, tax year 2026); cz-income-tax (self-employed OSVČ, expense lump sums and the flat-rate regime, tax year 2026) | checked against the law |
+| Company tax | cz-corporate-income-tax (2026: residence, 21% rate, base and non-deductible costs, tax depreciation, losses, participation exemption, § 23e borrowing cost limit, advances, deadlines, penalties; top-up tax for large groups not covered) | checked against the law |
+| VAT or sales tax | czech-republic-vat-return (2026: registration at CZK 2,000,000 and CZK 2,536,500, 21% and 12% rates, return, control statement and EC sales list, reverse charge, unreliable payers, penalties; partial exemption, special schemes, VAT groups and OSS not covered); cz-vat-return is a pointer to it | sourced from the law |
+| Social contributions | cz-employee-contributions (employees and employers, 2026); cz-social-health (self-employed OSVČ, 2026) | checked against the law |
+| Payroll | cz-payroll (2026: registration and JMHZ, monthly gross-to-net, prohlášení and credits, DPP and DPČ withholding tax, sick pay, annual reconciliation and vyúčtování; deductions under court orders not covered) | checked against the law |
+| Transfer pricing | cz-transfer-pricing | checked against the law |
+| Cross-border | cz-cross-border | checked against the law |
 
 Also in the pack: cz-tax-overview, cz-company-formation, references.md.
 

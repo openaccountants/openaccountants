@@ -23,14 +23,14 @@ Tax year **2026**, currency EUR, tax authority [Vero](https://www.vero.fi/en/). 
 
 The twelve ordinary tax Guides passed independent source review on 26 October 2026 after the recorded corrections. No unresolved ordinary content error was identified within the scope below. This is the bounded ordinary-tax milestone; none has professional attestation. Passing arithmetic or having a Guide does not establish comprehensive country coverage.
 
-| Domain | Ordinary computation / procedure |
+| Tax | Ordinary computation / procedure |
 |---|---|
-| IT-IND | [Income tax](fi-income-tax.md): wages, pensions, investment, rent/gains, sole-trade allocation, deductions/credits, mainland and Åland components; [prepayments](fi-prepayments.md) |
-| IT-CORP | [Corporate income tax](fi-corporate-income-tax.md): book-to-tax base, depreciation, dividends/gains, interest, groups, losses and broadcasting tax |
-| VAT | [VAT return](finland-vat-return.md): taxable base, rates, exemptions, input deduction, EU/import routes, Åland, construction reverse charge and property adjustments |
-| SC / PR | [YEL](fi-yel-social.md) and [payroll](fi-employer-payroll.md): entrepreneur/employee eligibility, insurance bases, health contributions, benefits, withholding and reporting |
-| TP | [Transfer pricing](fi-transfer-pricing.md): ordinary method execution, documentation and requests; [CbCR](fi-country-by-country-reporting.md): role, country rows, notification and filing |
-| XB | [Individual residence/income/relief](fi-individual-cross-border-residence.md); [corporate residence/PE/withholding/credit/exit](fi-corporate-cross-border-tax.md) |
+| Income tax | [Income tax](fi-income-tax.md): wages, pensions, investment, rent/gains, sole-trade allocation, deductions/credits, mainland and Åland components; [prepayments](fi-prepayments.md) |
+| Company tax | [Corporate income tax](fi-corporate-income-tax.md): book-to-tax base, depreciation, dividends/gains, interest, groups, losses and broadcasting tax |
+| VAT or sales tax | [VAT return](finland-vat-return.md): taxable base, rates, exemptions, input deduction, EU/import routes, Åland, construction reverse charge and property adjustments |
+| Social contributions, payroll | [YEL](fi-yel-social.md) and [payroll](fi-employer-payroll.md): entrepreneur/employee eligibility, insurance bases, health contributions, benefits, withholding and reporting |
+| Transfer pricing | [Transfer pricing](fi-transfer-pricing.md): ordinary method execution, documentation and requests; [CbCR](fi-country-by-country-reporting.md): role, country rows, notification and filing |
+| Cross-border | [Individual residence/income/relief](fi-individual-cross-border-residence.md); [corporate residence/PE/withholding/credit/exit](fi-corporate-cross-border-tax.md) |
 | Property | [Transfer tax](fi-property-transfer-tax.md) and [annual real-estate tax](fi-annual-real-estate-tax.md); rent/gains in income-tax Guides |
 
 Formation and accounting are a separate milestone. The existing [company-formation Guide](fi-company-formation.md) is preserved unchanged by the 26 October tax rebuild; this batch makes no accounting-pack completion claim.

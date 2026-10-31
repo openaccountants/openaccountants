@@ -22,15 +22,15 @@ Belarus uses BYN and the calendar tax year. MNS administers tax; FSZN and Belgos
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND | [Individual/business income](belarus-income-tax.md) | checked against the law |
-| IT-CORP | [Corporate profit/simplified system](by-corporate-income-tax.md) | checked against the law |
-| VAT | [VAT](belarus-vat.md) | checked against the law |
-| SC | [Social contributions](belarus-social-contributions.md) | checked against the law, partial |
-| PR | [Payroll](belarus-payroll.md) | checked against the law, partial |
-| TP | [Transfer pricing](belarus-transfer-pricing.md) | checked against the law |
-| XB | [Cross-border](belarus-cross-border-tax.md) | checked against the law, partial |
+| Income tax | [Individual/business income](belarus-income-tax.md) | checked against the law |
+| Company tax | [Corporate profit/simplified system](by-corporate-income-tax.md) | checked against the law |
+| VAT or sales tax | [VAT](belarus-vat.md) | checked against the law |
+| Social contributions | [Social contributions](belarus-social-contributions.md) | checked against the law, partial |
+| Payroll | [Payroll](belarus-payroll.md) | checked against the law, partial |
+| Transfer pricing | [Transfer pricing](belarus-transfer-pricing.md) | checked against the law |
+| Cross-border | [Cross-border](belarus-cross-border-tax.md) | checked against the law, partial |
 
 January single-tax and private-rent schedules, the July professional-income minimum, the March accident-insurance reform and the January reporting cutover have separate dated treatment. Future unpublished monthly wage inputs must be supplied for the actual calculation period.
 

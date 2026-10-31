@@ -12,15 +12,15 @@ Calendar tax year for individuals; companies use the calendar year or another 12
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | pl-income-tax; pl-capital-gains covers investment income | checked against the law |
-| IT-CORP, corporate income tax | pl-cit-corporate-tax | checked against the law |
-| VAT | poland-vat-return (2026: PLN 240,000 exemption, JPK_V7, KSeF, split payment); pl-vat-return points to it; poland-einvoice covers KSeF for 2026 (who is in and out, the 2026 carve-outs, offline modes, fines from 2027) | sourced from the law |
-| SC, social contributions | pl-zus-contributions (self-employed, social and health contributions); pl-payroll and pl-civil-law-contracts cover employee and contract ZUS for 2026 | checked against the law |
-| PR, payroll withholding | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | checked against the law |
-| TP, transfer pricing | pl-transfer-pricing | checked against the law |
-| XB, cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | checked against the law |
+| Income tax | pl-income-tax; pl-capital-gains covers investment income | checked against the law |
+| Company tax | pl-cit-corporate-tax | checked against the law |
+| VAT or sales tax | poland-vat-return (2026: PLN 240,000 exemption, JPK_V7, KSeF, split payment); pl-vat-return points to it; poland-einvoice covers KSeF for 2026 (who is in and out, the 2026 carve-outs, offline modes, fines from 2027) | sourced from the law |
+| Social contributions | pl-zus-contributions (self-employed, social and health contributions); pl-payroll and pl-civil-law-contracts cover employee and contract ZUS for 2026 | checked against the law |
+| Payroll | pl-payroll (employees); pl-civil-law-contracts (umowa zlecenie, umowa o dzieło, board fees) | checked against the law |
+| Transfer pricing | pl-transfer-pricing | checked against the law |
+| Cross-border | pl-cross-border (individuals); pl-cit-corporate-tax covers company withholding, CFC and exit tax | checked against the law |
 
 ## Official sources
 

@@ -21,15 +21,15 @@ Iceland taxes individuals on the calendar year. A combined state and municipal i
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | iceland-income-tax | checked against the law |
-| IT-CORP, corporate income tax | is-corporate-income-tax | checked against the law |
-| VAT | iceland-vat | checked against the law |
-| SC, social contributions | iceland-social-contributions | checked against the law |
-| PR, payroll withholding | iceland-payroll | checked against the law |
-| TP, transfer pricing | is-transfer-pricing | checked against the law |
-| XB, cross-border | is-cross-border | checked against the law |
+| Income tax | iceland-income-tax | checked against the law |
+| Company tax | is-corporate-income-tax | checked against the law |
+| VAT or sales tax | iceland-vat | checked against the law |
+| Social contributions | iceland-social-contributions | checked against the law |
+| Payroll | iceland-payroll | checked against the law |
+| Transfer pricing | is-transfer-pricing | checked against the law |
+| Cross-border | is-cross-border | checked against the law |
 
 Not covered in depth, by design: treaty withholding rate tables and treaty corridors other than the UK; VAT special schemes beyond VOES and the foreign-business refund; sector taxes other than the three financial-sector taxes. The 2026 reduced levy rate for posted workers with an A1 certificate is not yet published; it is on the "Not yet confirmed:" line of the payroll and social contributions skills.
 

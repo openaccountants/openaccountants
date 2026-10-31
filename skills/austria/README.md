@@ -15,15 +15,15 @@ Calendar tax year. Authorities: the Finanzamt Österreich for most taxpayers and
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | at-income-tax (residents, 2026: tariff, credits, Familienbonus Plus, Gewinnfreibetrag, Basispauschalierung, filing, prepayments) | checked against the law |
-| IT-CORP, corporate income tax | at-corporate-income-tax | checked against the law |
-| VAT | at-vat-return (2026 UVA and U 1 box by box: rates incl. 4.9% food rate, small business and EU SME scheme, periods, reverse charge, ZM, surcharges, VAT interest) | checked against the law |
-| SC, social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG, 2026: rates, minimum and maximum bases, provisional base, Nachbemessung, Versicherungsgrenze, small business exemption) | checked against the law |
-| PR, payroll withholding | at-payroll-and-social-insurance | checked against the law |
-| TP, transfer pricing | at-transfer-pricing | checked against the law |
-| XB, cross-border | at-cross-border | checked against the law |
+| Income tax | at-income-tax (residents, 2026: tariff, credits, Familienbonus Plus, Gewinnfreibetrag, Basispauschalierung, filing, prepayments) | checked against the law |
+| Company tax | at-corporate-income-tax | checked against the law |
+| VAT or sales tax | at-vat-return (2026 UVA and U 1 box by box: rates incl. 4.9% food rate, small business and EU SME scheme, periods, reverse charge, ZM, surcharges, VAT interest) | checked against the law |
+| Social contributions | at-payroll-and-social-insurance (employees and employers, ASVG), at-svs-contributions (self-employed, GSVG and FSVG, 2026: rates, minimum and maximum bases, provisional base, Nachbemessung, Versicherungsgrenze, small business exemption) | checked against the law |
+| Payroll | at-payroll-and-social-insurance | checked against the law |
+| Transfer pricing | at-transfer-pricing | checked against the law |
+| Cross-border | at-cross-border | checked against the law |
 
 Also in the pack: at-tax-overview (a map of the system) and at-company-formation (entity choice).
 

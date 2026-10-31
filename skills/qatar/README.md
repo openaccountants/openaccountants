@@ -21,15 +21,15 @@ none carries a licensed Qatar professional's attestation.
 
 ## Domains
 
-| Domain | Guide | Status and ordinary coverage |
+| Tax | Guide | Status and ordinary coverage |
 |---|---|---|
-| IT-IND | [qa-tax-overview](qa-tax-overview.md) | Source-cited draft: taxable individual activities, exemptions, actual/elected expenses, losses and filing |
-| IT-CORP | [qa-corporate-income-tax](qa-corporate-income-tax.md) | Source-cited draft: ownership tests, tax reconciliation, deduction limits, assets, losses and audit/return duties |
-| VAT | [qa-vat-gst](qa-vat-gst.md), [qatar-tax](qatar-tax.md) | Not applicable: VAT not implemented; both current summaries use the same rule and foreign-tax routing |
-| SC | [qa-payroll-social](qa-payroll-social.md) | Source-cited draft: Qatari employee base/caps, 2025 ER, leave, reporting and GCC home-scheme coordination |
-| PR | Not applicable to excluded employment remuneration | ITL promulgation art. 2(3); SC and business-payment WHT remain separate obligations |
-| TP | [qa-transfer-pricing](qa-transfer-pricing.md) | Source-cited draft: arm's length, amended files/deadlines, mandatory CbCR and current local-filing suspension, BAPA procedure |
-| XB | [qa-cross-border-tax](qa-cross-border-tax.md) | Source-cited draft: WHT, foreign income/exemptions/substance/credit, PE attribution, actual disposals/cessation and approved-payer treaty relief |
+| Income tax | [qa-tax-overview](qa-tax-overview.md) | Source-cited draft: taxable individual activities, exemptions, actual/elected expenses, losses and filing |
+| Company tax | [qa-corporate-income-tax](qa-corporate-income-tax.md) | Source-cited draft: ownership tests, tax reconciliation, deduction limits, assets, losses and audit/return duties |
+| VAT or sales tax | [qa-vat-gst](qa-vat-gst.md), [qatar-tax](qatar-tax.md) | Not applicable: VAT not implemented; both current summaries use the same rule and foreign-tax routing |
+| Social contributions | [qa-payroll-social](qa-payroll-social.md) | Source-cited draft: Qatari employee base/caps, 2025 ER, leave, reporting and GCC home-scheme coordination |
+| Payroll | Not applicable to excluded employment remuneration | ITL promulgation art. 2(3); SC and business-payment WHT remain separate obligations |
+| Transfer pricing | [qa-transfer-pricing](qa-transfer-pricing.md) | Source-cited draft: arm's length, amended files/deadlines, mandatory CbCR and current local-filing suspension, BAPA procedure |
+| Cross-border | [qa-cross-border-tax](qa-cross-border-tax.md) | Source-cited draft: WHT, foreign income/exemptions/substance/credit, PE attribution, actual disposals/cessation and approved-payer treaty relief |
 
 [Company formation](qa-company-formation.md) is also reconciled to current
 primary law: mainland LLC partners/capital, foreign-ownership approval and tax

@@ -17,15 +17,15 @@ Bosnia and Herzegovina has three tax jurisdictions for direct taxes: the Federat
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | bosnia-income-tax | checked against the law |
-| IT-CORP, corporate income tax | ba-corporate-income-tax | sourced from the law |
-| VAT | bosnia-vat | checked against the law |
-| SC, social contributions | bosnia-social-contributions | checked against the law |
-| PR, payroll withholding | bosnia-payroll | checked against the law |
-| TP, transfer pricing | ba-transfer-pricing | checked against the law |
-| XB, cross-border | ba-cross-border | checked against the law |
+| Income tax | bosnia-income-tax | checked against the law |
+| Company tax | ba-corporate-income-tax | sourced from the law |
+| VAT or sales tax | bosnia-vat | checked against the law |
+| Social contributions | bosnia-social-contributions | checked against the law |
+| Payroll | bosnia-payroll | checked against the law |
+| Transfer pricing | ba-transfer-pricing | checked against the law |
+| Cross-border | ba-cross-border | checked against the law |
 
 Not covered in depth, by design: VAT special schemes for travel agencies, second-hand goods and auctions, the farmers' flat-rate compensation and a field-by-field e-records map; treaty withholding rate tables.
 
