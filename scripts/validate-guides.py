@@ -64,8 +64,8 @@ PR_ERROR_CHECKS = {
     "tier_honest",         # (g)
     "no_em_dash",          # (h)
 }
-#: Warnings in both modes for now: rates_rows_sourced (c), canonical_headings (d)
-#: and not_yet_confirmed (i). They become errors once the backlog is cleared
+#: Warnings in both modes for now: rates_rows_sourced (c), canonical_headings (d),
+#: not_yet_confirmed (i) and reviewed_on (j). They become errors once the backlog is cleared
 #: (pass rates are in skills/REGISTER.md).
 
 # Legacy guides that predate the description requirement. Grandfathered so CI

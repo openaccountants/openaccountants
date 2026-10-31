@@ -10,7 +10,7 @@ Generated from the skill tree on 2026-10-31 by `scripts/build-register.py`. One 
 - Signed by a named accountant (tier 1): 33, in US (21), PH (7), GE (3), CA (1), MY (1)
 - Scope: 2058 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 156 other (routers, templates, patterns)
 - Domain from the README `covered_by`: 100; from the slug: 1266; no tax domain: 937
-- Pass all 9 checks: 175 of 2058 tax skills
+- Pass all 10 checks: 175 of 2058 tax skills
 - Duplicates: 432 skills in 154 (country, domain) cells where the README does not name which skill covers the job
 
 ## Pass rate per check
@@ -25,9 +25,10 @@ Tax skills only (the deep-tax shape applies to them). One column per check in `R
 | (d) | `canonical_headings` | 396 | 1662 | 19% |
 | (e) | `two_oa_checks` | 421 | 1637 | 20% |
 | (f) | `version_numeric` | 1214 | 844 | 59% |
-| (g) | `tier_honest` | 1904 | 154 | 93% |
+| (g) | `tier_honest` | 1920 | 138 | 93% |
 | (h) | `no_em_dash` | 715 | 1343 | 35% |
 | (i) | `not_yet_confirmed` | 480 | 1578 | 23% |
+| (j) | `reviewed_on` | 1904 | 154 | 93% |
 
 ## By domain
 

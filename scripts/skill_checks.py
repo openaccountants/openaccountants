@@ -294,19 +294,25 @@ def _real(value):
 
 
 def check_tier_honest(path, text, fm):
-    """(g) ``reviewed_by`` implies ``tier: 1`` and ``reviewed_on``; ``tier: 1`` implies ``reviewed_by`` (rule 10)."""
+    """(g) ``reviewed_by`` implies ``tier: 1``; ``tier: 1`` implies ``reviewed_by`` (rule 10)."""
     tier = str(fm.get("tier") or "").strip()
     reviewed_by = _real(fm.get("reviewed_by"))
-    reviewed_on = fm.get("reviewed_on")
     problems = []
-    if reviewed_by:
-        if tier != "1":
-            problems.append(f"reviewed_by set but tier is {tier or 'missing'}")
-        if not reviewed_on or not DATE_RE.fullmatch(str(reviewed_on).strip()):
-            problems.append("reviewed_by set but no reviewed_on (YYYY-MM-DD)")
+    if reviewed_by and tier != "1":
+        problems.append(f"reviewed_by set but tier is {tier or 'missing'}")
     if tier == "1" and not reviewed_by:
         problems.append("tier 1 without reviewed_by")
     return problems
+
+
+def check_reviewed_on(path, text, fm):
+    """(j) a signed skill names the date it was signed (rule 10). No file carries
+    ``reviewed_on`` yet, so this warns until the 184 signed files are backfilled."""
+    reviewed_by = _real(fm.get("reviewed_by"))
+    reviewed_on = fm.get("reviewed_on")
+    if reviewed_by and (not reviewed_on or not DATE_RE.fullmatch(str(reviewed_on).strip())):
+        return ["reviewed_by set but no reviewed_on (YYYY-MM-DD)"]
+    return []
 
 
 CTA_MARKER = "<!-- openaccountants-cta-block -->"
@@ -341,6 +347,7 @@ CHECKS = [
     ("g", "tier_honest", check_tier_honest),
     ("h", "no_em_dash", check_no_em_dash),
     ("i", "not_yet_confirmed", check_not_yet_confirmed),
+    ("j", "reviewed_on", check_reviewed_on),
 ]
 CHECK_NAMES = [name for _, name, _ in CHECKS]
 
