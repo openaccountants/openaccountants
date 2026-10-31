@@ -411,7 +411,7 @@ Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
 2. Tax Procedures Act 2015 (not re-read in this update; read date unverified)
 3. Finance Act 2023, Finance Act 2024 (not re-read in this update; read date unverified)
 4. KRA, read 2026-10-31 -- https://www.kra.go.ke
-5. Income Tax Act, s15(2)(ae), as cited by KRA, read 2026-10-31
+5. Income Tax Act, s15(2)(ae) (section text not re-read in this update; read date unverified)
 6. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
 7. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
 
