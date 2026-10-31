@@ -557,7 +557,7 @@ Most German accountants use DATEV. Bank transactions are imported via DATEV Unte
 
 | Tax Guide | How Bookkeeping Connects |
 | --- | --- |
-| **de-self-employed-income-tax** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
+| **de-einkommensteuer-freelancer** | Profit from GuV/EÜR feeds Anlage G (Gewerbe) or Anlage S (Freiberufler) of the Einkommensteuererklärung. Non-deductible items from Section 4 (the non-deductible share of entertainment, gifts over the limit, fines, trade tax) must be added back. |
 | **de-vat-return** | VAT accounts (1400 and 1406 for input VAT, 3800 and 3806 for output VAT, in SKR04) feed the Umsatzsteuer-Voranmeldung, sent electronically. Monthly or quarterly: see the VAT return table below. Input VAT (Vorsteuer) is netted against output VAT (Umsatzsteuer). |
 | **de-trade-tax** | Gewerbesteuer is worked out from the adjusted trade profit. Financing costs are partly added back (Hinzurechnungen): see the trade tax table below. |
 | **de-crypto-tax** | Gains on crypto held privately are private sales when sold within one year of purchase. Bookkeeping must track acquisition cost per wallet and exchange. See that Guide for the method. |
