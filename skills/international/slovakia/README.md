@@ -5,12 +5,13 @@ not_applicable: {}
 covered_by:
   IT-IND: slovakia-pit
   XB: sk-cross-border
+  SC: sk-payroll-social
 partial: {}
 ---
 
 # Slovakia: tax pack
 
-Calendar tax year. Authority: the Financial Administration (Finančná správa SR); returns are filed electronically through eDane. Euro. Residents are taxed on worldwide income, non-residents on Slovak-source income. For 2026 individuals pay 19%, 25%, 30% or 35% depending on the band, set as multiples of the subsistence minimum. Companies pay 10%, 21% or 24% depending on taxable revenue. Payments to non-residents carry withholding tax (19%, 7% on dividends to individuals, 35% for non-cooperating states) or a 19% / 35% security deduction.
+Calendar tax year. Authority: the Financial Administration (Finančná správa SR); returns are filed electronically through eDane. Euro. Residents are taxed on worldwide income, non-residents on Slovak-source income. For 2026 individuals pay 19%, 25%, 30% or 35% depending on the band, set as multiples of the subsistence minimum. Companies pay 10%, 21% or 24% depending on taxable revenue. Payments to non-residents carry withholding tax (19%, 7% or 10% on individual profit dividends according to the generating profit period, 35% for non-cooperating states) or a 19% / 35% security deduction.
 
 ## Domains
 
@@ -24,6 +25,10 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 | TP, transfer pricing | sk-transfer-pricing (2026: dependent persons, significant controlled transactions, § 17(5) adjustment, methods and median rule, full, basic and shortened documentation under guideline MF/012879/2025-724, Table I, 15-day hand-over, penalties, CbCR, APAs) | checked against the law |
 | XB, cross-border | sk-cross-border | checked against the law |
 
+## Out of scope
+
+- VAT: the annual § 50 input-tax coefficient where included-supplies turnover is zero, and the sanction for a first breach of the control-statement duty. Ask a Slovak tax adviser for these.
+
 ## Official sources
 
 - Act No. 595/2003 Coll. on income tax, version in force from 1 January 2026: https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html (read 2026-10-23)
@@ -34,3 +39,6 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 - Ministry of Finance, list of cooperating states under § 2 x) with the treaty for each state, valid from 1 January 2026: https://www.mfsr.sk/files/archiv/39/Zoznam-spolupracujucich-statov-podla-2-pism-x-zakona-c-595_2003-Z-z_1.1.2026.pdf (read 2026-10-23)
 - Financial Directorate, list of tax treaties in force (as at 1 January 2022): https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DP/Medzinarodne_zdanovanie/2022/2021.01.05_1_MZ_2022_IM.pdf (read 2026-10-23)
 - Ministry of Finance, transfer pricing: https://www.mfsr.sk/sk/dane-cla-uctovnictvo/priame-dane/dane-z-prijmu/transferove-ocenovanie/ (read 2026-10-23)
+
+- Ministry of Finance, actual current DPFO/DPPO forms and notice MF/014310/2026-721: https://www.mfsr.sk/files/archiv/66/prispevok_16.zip (read 2026-10-27)
+- Ministry of Finance, matching 2026 instructions and notice MF/014312/2026-721: https://www.mfsr.sk/files/archiv/36/prispevok_18.zip (read 2026-10-27)
