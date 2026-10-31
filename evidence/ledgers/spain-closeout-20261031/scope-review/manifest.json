@@ -1,0 +1,22 @@
+{
+  "review_type": "independent finite completion-scope classification",
+  "review_date": "2026-10-31",
+  "files": {
+    "scope-review.md": "8ef085b25bbff4b6a9a3c0a0fe1ba29c1e22f075fb01183e955764443a1c792a",
+    "scope-matrix.json": "831870d870628c5b75be75b3eaa8483808c73440e2f0897eefc691963afd4ca1"
+  },
+  "counts": {
+    "A": 4,
+    "B": 33,
+    "C": 36
+  },
+  "decision": "DO_NOT_CLOSE_CURRENT_TEXT",
+  "A_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "source_files_modified": false,
+  "publication_or_attestation": false
+}

@@ -1,0 +1,374 @@
+[
+  {
+    "source": "S0",
+    "kind": "raw",
+    "path": "sources/S0.body",
+    "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f"
+  },
+  {
+    "source": "S0",
+    "kind": "reader",
+    "path": "sources/S0.reader.txt",
+    "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5"
+  },
+  {
+    "source": "S1",
+    "kind": "raw",
+    "path": "sources/S1.body",
+    "sha256": "a513248b4b5e079ef59a934d44a717f60735fe99f51239168af318e41b7d046b"
+  },
+  {
+    "source": "S1",
+    "kind": "reader",
+    "path": "sources/S1.reader.txt",
+    "sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e"
+  },
+  {
+    "source": "S2",
+    "kind": "raw",
+    "path": "sources/S2.body",
+    "sha256": "13c30391dff092c41c97b8694e84d84eb6eddd9269eb7e86f39e9c21b6fe4a5d"
+  },
+  {
+    "source": "S2",
+    "kind": "reader",
+    "path": "sources/S2.reader.txt",
+    "sha256": "67fbb25e769320c02d38db5f36590524568e0e3eb2dc4e468581493bec107ec3"
+  },
+  {
+    "source": "S3",
+    "kind": "raw",
+    "path": "sources/S3.body",
+    "sha256": "1fdf82e545e24d9960c45370c3c7bcbfa0105bf7383b701820439f35283dc4ac"
+  },
+  {
+    "source": "S3",
+    "kind": "reader",
+    "path": "sources/S3.reader.txt",
+    "sha256": "2f1f4e129bed985c841486440bf1893a88933f8c64604002938d94075df47ba3"
+  },
+  {
+    "source": "S4",
+    "kind": "raw",
+    "path": "sources/S4.body",
+    "sha256": "397f4b8d0e5a92f8e9a71787f3d4e406292dba30bf7a42d121e2d96c270184e5"
+  },
+  {
+    "source": "S4",
+    "kind": "reader",
+    "path": "sources/S4.reader.txt",
+    "sha256": "8f135771c8bacbb6275b0f795a663e4438cf2e34bd9f1d74168d646318735a5d"
+  },
+  {
+    "source": "S5",
+    "kind": "raw",
+    "path": "sources/S5.body",
+    "sha256": "e69c2214a94b7f64e6db3a2a4c477c2186203683120c16047939953e950a4950"
+  },
+  {
+    "source": "S5",
+    "kind": "reader",
+    "path": "sources/S5.reader.txt",
+    "sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad"
+  },
+  {
+    "source": "S6",
+    "kind": "raw",
+    "path": "sources/S6.body",
+    "sha256": "e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336"
+  },
+  {
+    "source": "S6",
+    "kind": "reader",
+    "path": "sources/S6.reader.txt",
+    "sha256": "d9388e74b53928b5bf8bfbb9509c35959952b0ace9b0d3ae9d6480d37366c9a8"
+  },
+  {
+    "source": "S7",
+    "kind": "raw",
+    "path": "sources/S7.body",
+    "sha256": "d64b8474b4ad439bcb38c4a1f417d5157d37b4aaee064d0f6cf1c852be659b33"
+  },
+  {
+    "source": "S7",
+    "kind": "reader",
+    "path": "sources/S7.reader.txt",
+    "sha256": "5d654d3b846cd164eee104bda200f7a35a80cfd0896edbfdb647971be77f641d"
+  },
+  {
+    "source": "S8",
+    "kind": "raw",
+    "path": "sources/S8.body",
+    "sha256": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45"
+  },
+  {
+    "source": "S8",
+    "kind": "reader",
+    "path": "sources/S8.reader.txt",
+    "sha256": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0"
+  },
+  {
+    "source": "S9",
+    "kind": "raw",
+    "path": "sources/S9.body",
+    "sha256": "c23acbc209a7bafcb4edae1d0e4ecaff6389946ee04aacab8eacda07b3165e5d"
+  },
+  {
+    "source": "S9",
+    "kind": "reader",
+    "path": "sources/S9.reader.txt",
+    "sha256": "e5253a3be41e18b1c70619b808c50cc897d1426d899437496ce226af6277bf63"
+  },
+  {
+    "source": "S10",
+    "kind": "raw",
+    "path": "sources/S10.body",
+    "sha256": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c"
+  },
+  {
+    "source": "S10",
+    "kind": "reader",
+    "path": "sources/S10.reader.txt",
+    "sha256": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f"
+  },
+  {
+    "source": "S11",
+    "kind": "raw",
+    "path": "sources/S11.body",
+    "sha256": "55560ad9d229bf4804626e3f1f584d1300e72a5f498e558284c336d6af1582e8"
+  },
+  {
+    "source": "S11",
+    "kind": "reader",
+    "path": "sources/S11.reader.txt",
+    "sha256": "7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a"
+  },
+  {
+    "source": "S12",
+    "kind": "raw",
+    "path": "sources/S12.body",
+    "sha256": "7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce"
+  },
+  {
+    "source": "S12",
+    "kind": "reader",
+    "path": "sources/S12.reader.txt",
+    "sha256": "508e4289f12634c30cae09a615e1951c0ab7827ef549be07513c72824b3743bb"
+  },
+  {
+    "source": "S13",
+    "kind": "raw",
+    "path": "sources/S13.body",
+    "sha256": "b397f9ba9aad1d92efe539be80b8987391f7735a5c4b4942d5715ddf74b3c6d4"
+  },
+  {
+    "source": "S13",
+    "kind": "reader",
+    "path": "sources/S13.reader.txt",
+    "sha256": "9f4a38022f53ff3e0301d743b0e9fe4c7342db1814a5a8e5c05f96ea40618057"
+  },
+  {
+    "source": "S14",
+    "kind": "raw",
+    "path": "sources/S14.body",
+    "sha256": "615adc6d0f26e87272a3ae1e3945488990d8338e2c3a621a1fe04ac2c6d6acfe"
+  },
+  {
+    "source": "S14",
+    "kind": "reader",
+    "path": "sources/S14.reader.txt",
+    "sha256": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6"
+  },
+  {
+    "source": "S15",
+    "kind": "raw",
+    "path": "sources/S15.body",
+    "sha256": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d"
+  },
+  {
+    "source": "S15",
+    "kind": "reader",
+    "path": "sources/S15.reader.txt",
+    "sha256": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b"
+  },
+  {
+    "source": "S16",
+    "kind": "raw",
+    "path": "sources/S16.body",
+    "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362"
+  },
+  {
+    "source": "S16",
+    "kind": "reader",
+    "path": "sources/S16.reader.txt",
+    "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1"
+  },
+  {
+    "source": "S17",
+    "kind": "raw",
+    "path": "sources/S17.body",
+    "sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295"
+  },
+  {
+    "source": "S17",
+    "kind": "reader",
+    "path": "sources/S17.reader.txt",
+    "sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1"
+  },
+  {
+    "source": "S22",
+    "kind": "raw",
+    "path": "sources/S22.body",
+    "sha256": "5b2d4ec220d518fd5326fe8402ae56536b6553d425646261b7396f781ac88ade"
+  },
+  {
+    "source": "S22",
+    "kind": "reader",
+    "path": "sources/S22.reader.txt",
+    "sha256": "b3e160a9ec49cde61dfe18464239bef7fd7feed2ccfc2a5b4b5936045ced97a1"
+  },
+  {
+    "source": "S23",
+    "kind": "raw",
+    "path": "sources/S23.body",
+    "sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11"
+  },
+  {
+    "source": "S23",
+    "kind": "reader",
+    "path": "sources/S23.reader.txt",
+    "sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18"
+  },
+  {
+    "source": "S24",
+    "kind": "raw",
+    "path": "sources/S24.body",
+    "sha256": "cd9eb8f3b0284909a2ba80b11e06e7bdc6e0f5a139a4ecffa0456726387555ab"
+  },
+  {
+    "source": "S24",
+    "kind": "reader",
+    "path": "sources/S24.reader.txt",
+    "sha256": "b255458c864d0449bab62d1bb7730c0bc99e8cde22dae3980e8cad48a190d761"
+  },
+  {
+    "source": "S25",
+    "kind": "raw",
+    "path": "sources/S25.body",
+    "sha256": "7685393415fa9a31a875942a496a5148eb97e374b87076b6e28f0ef96b6ec474"
+  },
+  {
+    "source": "S25",
+    "kind": "reader",
+    "path": "sources/S25.reader.txt",
+    "sha256": "0d6b124f5e43d61443a2ac6281cad983b110a97396157eeb5cc3aa36eaf9a0f3"
+  },
+  {
+    "source": "S26",
+    "kind": "raw",
+    "path": "sources/S26.body",
+    "sha256": "8701653f1809d81b7f664171cfecc902c7d5eb7d105f0764f5700052ecaa1e93"
+  },
+  {
+    "source": "S26",
+    "kind": "reader",
+    "path": "sources/S26.reader.txt",
+    "sha256": "6ee631d16517ce27ef36f6f9789c2fb8ebde66e08599dd54401aa6b7d30b7c57"
+  },
+  {
+    "source": "S27",
+    "kind": "raw",
+    "path": "sources/S27.body",
+    "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c"
+  },
+  {
+    "source": "S27",
+    "kind": "reader",
+    "path": "sources/S27.reader.txt",
+    "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799"
+  },
+  {
+    "source": "S28",
+    "kind": "raw",
+    "path": "sources/S28.body",
+    "sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe"
+  },
+  {
+    "source": "S28",
+    "kind": "reader",
+    "path": "sources/S28.reader.txt",
+    "sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201"
+  },
+  {
+    "source": "S29",
+    "kind": "raw",
+    "path": "sources/S29.body",
+    "sha256": "21ec2fd8600cff60c31cea6893cbf84f7c089c2eead39e320e030e83e808089e"
+  },
+  {
+    "source": "S29",
+    "kind": "reader",
+    "path": "sources/S29.reader.txt",
+    "sha256": "e23300d4bf947c7ecebf818794ca6b17cc18a7d2ed7b16ee8e90dc9b43fcedb9"
+  },
+  {
+    "source": "S20",
+    "kind": "raw",
+    "path": "sources/S20.body",
+    "sha256": "044553ae1536d17f3907f1b3a349c0eb0556d8b1315abd8d75e77e2f585a1f1d"
+  },
+  {
+    "source": "S20",
+    "kind": "reader",
+    "path": "sources/S20.reader.txt",
+    "sha256": "901a71ad7d582caeb796a9915998f60fc7e24906fef7ca376d69b31971b63f8e"
+  },
+  {
+    "source": "S21",
+    "kind": "raw",
+    "path": "sources/S21.body",
+    "sha256": "3adf8e92ab5316f9fc3e709ddeaea3db9ce33a7193c22fdda4f1eb190a5aaa17"
+  },
+  {
+    "source": "S21",
+    "kind": "reader",
+    "path": "sources/S21.reader.txt",
+    "sha256": "599de5edd0c84c39ea895e726978b21a754b55998353f1e0defc3c25e979b516"
+  },
+  {
+    "source": "S18",
+    "kind": "raw",
+    "path": "sources/S18.body",
+    "sha256": "b1c4150d4977faf3a7958c7f6e51efc5ae2969854a1262bb06d86fb5fffddedb"
+  },
+  {
+    "source": "S18",
+    "kind": "reader",
+    "path": "sources/S18.reader.txt",
+    "sha256": "71bc4433d706c8ac3cf37b7fdb85586e3c0aaff52bb35e7ef4411417620f82f5"
+  },
+  {
+    "source": "S19",
+    "kind": "raw",
+    "path": "sources/S19.body",
+    "sha256": "aa16d3688891c339374ec231291970494066a455da49974f779a2a4686d5d520"
+  },
+  {
+    "source": "S19",
+    "kind": "reader",
+    "path": "sources/S19.reader.txt",
+    "sha256": "85b9ccb436d3e8640cf117fd8011b6e0aa9f943ea39d44f875cb085ad6b8ec07"
+  },
+  {
+    "source": "Palma",
+    "kind": "raw",
+    "path": "sources/Palma.body",
+    "sha256": "499eeadfdc515811ae9a8ef1d846f27fb17b86084b79c6a1f1da116613453bfd"
+  },
+  {
+    "source": "Palma",
+    "kind": "reader",
+    "path": "sources/Palma.reader.txt",
+    "sha256": "e34a916ff8308c1c383e4f6c396e3e6985e2784b0d103188730f4dbaaced681b"
+  }
+]

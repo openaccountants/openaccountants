@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "read_utc": "2026-10-27T19:43:04.183777+00:00",
+    "http_status": 200,
+    "final_url": "https://www.sepe.es/HomeSepe/prestaciones-desempleo/Cuantias-anuales.html",
+    "bytes": 90837,
+    "sha256": "cacbb21b2517cdd70ab791c6719d1b2a923bec01e75b5d24ce07a307d1e3d76e"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "read_utc": "2026-10-27T19:43:04.724384+00:00",
+    "http_status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "bytes": 2870265,
+    "sha256": "b8a30f031e36252be334a18670b65c46e3d8082de84f8f78edf5f9afc5f3a110"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "read_utc": "2026-10-27T19:43:06.220538+00:00",
+    "http_status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "bytes": 1477792,
+    "sha256": "5405e802c325cc1815bdfd1a48ddfe5da7ca8d6d652c25db0d0e52fac9e783db"
+  }
+]

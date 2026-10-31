@@ -1,0 +1,62 @@
+[
+  {
+    "name": "LIRPF",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "bytes": 2028806,
+    "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "retrieved_at": "2026-10-27T23:59:24.302621+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  },
+  {
+    "name": "RIRPF",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "status": 200,
+    "bytes": 1000017,
+    "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "retrieved_at": "2026-10-27T23:59:23.836251+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  },
+  {
+    "name": "AEAT-2025-expenses",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/fase-2-determinacion-rendimiento-neto/particular-analisis-gastos-articulo-19_2_f-lirpf.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/fase-2-determinacion-rendimiento-neto/particular-analisis-gastos-articulo-19_2_f-lirpf.html",
+    "status": 200,
+    "bytes": 27375,
+    "sha256": "7c6a40a40036dfc728dd6bf1ab58bd7e7f4b1350233bf58f2c908fdb0d64b58a",
+    "retrieved_at": "2026-10-27T23:59:23.057513+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  },
+  {
+    "name": "Balearic-Law4-2026",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+    "status": 200,
+    "bytes": 737136,
+    "sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+    "retrieved_at": "2026-10-27T23:59:23.969199+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  },
+  {
+    "name": "Balearic-corrigendum",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOIB-i-2026-90195",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOIB-i-2026-90195",
+    "status": 200,
+    "bytes": 17511,
+    "sha256": "195c871add1302d762cef31c54adfa7397b39f8a55ab2a0f7d6f21df29a5ea22",
+    "retrieved_at": "2026-10-27T23:59:24.056912+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  },
+  {
+    "name": "ATIB-enactment",
+    "url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "final_url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "status": 200,
+    "bytes": 39170,
+    "sha256": "24ec50892d7c0f1050e2076dca745e5017de0eb992a785b2796b756b5a5fa54d",
+    "retrieved_at": "2026-10-27T23:59:24.384804+00:00",
+    "scope": "Independent fresh HTTP body; downloaded does not mean entire long statute read"
+  }
+]

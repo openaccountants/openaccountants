@@ -1,0 +1,161 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Reserva de capitalización
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Sociedades 2025.
+
+Principales novedades del Impuesto sobre Sociedades 2025
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Sociedades 2025.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Reserva de capitalización
+
+Con efectos para los períodos impositivos que se inicien a partir de 1 de enero de 2025, se modifica el apartado 1 del artículo 25 de la LIS por el apartado Dos de la disposición final octava de la Ley 7/2024, en los siguientes términos:
+
+Elevación del porcentaje de reducción
+
+Con carácter general, para los contribuyentes que tributen al tipo de gravamen previsto en los apartados 1 a 6 de la LIS, se incrementa el porcentaje aplicable para la determinación de la reducción en la base imponible en concepto de reserva de capitalización, del 15 al 20 por ciento del incremento de sus fondos propios, siempre que cumplan los requisitos exigidos.
+
+No obstante lo anterior, dicho porcentaje puede ser superior siempre que la plantilla media total del contribuyente en el período impositivo, se haya incrementado respecto a la plantilla media total del período impositivo inmediato anterior, según el siguiente baremo:
+
+Incremento de plantilla
+Porcentaje de reducción
+
+≥ 2% e < 5%
+23%
+
+≥ 5% e ≤ 10%
+26,50%
+
+> 10%
+30%
+
+Este incremento de plantilla deberá mantenerse durante un plazo de 3 años desde el cierre del período impositivo al que corresponda la reducción.
+
+Límite a la reducción aplicable
+
+Se eleva el límite sobre el importe de la reducción en la base imponible en concepto de reserva de capitalización y se diferencia en función del importe neto de la cifra de negocios (INCN) del contribuyente:
+
+El 20 por ciento de la de la base imponible positiva del período impositivo previa a esta reducción, a la integración a que se refiere el apartado 12 del artículo 11 de la LIS, y a la compensación de bases imponibles negativas.
+
+El 25 por ciento de la base imponible positiva del período impositivo previa a esta reducción, a la integración a que se refiere el apartado 12 del artículo 11 de la LIS, y a la compensación de bases imponibles negativas, cuando se trate de contribuyentes cuyo INCN sea inferior a 1 millón de euros durante los 12 meses anteriores a la fecha en que se inicie el período impositivo al que corresponda esta reducción.
+
+Puede consultar las particularidades de este incentivo fiscal en el Capítulo 5 de este Manual Práctico.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 10/junio/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

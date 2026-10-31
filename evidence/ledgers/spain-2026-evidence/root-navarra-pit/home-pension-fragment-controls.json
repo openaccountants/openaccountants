@@ -1,0 +1,9 @@
+{
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "fragment_sha256": "71253488b6be7ed282ee6d73bf8eb7ade4af9097718f8d0552d65a3e701bcb26",
+  "current_units": 25,
+  "rows": 208,
+  "selected_article_subsection_scopes": 36,
+  "actual_original_language_native_checks": "all output rows pass literal LF comparison",
+  "status": "Writer fragment only, no independent PASS; remaining advance/source-specific scopes pending; payments/business/returnthreshold delegated to writerB"
+}

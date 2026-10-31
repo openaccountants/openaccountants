@@ -1,12 +1,12 @@
 ---
 name: ma-return-assembly
 description: >
-  Use this skill to assemble and sequence the complete Moroccan tax filing package for a self-employed person once the regime, income, social and VAT figures are known. Trigger on "assemble my Morocco return", "what do I file in Morocco", "Morocco filing package", "déclaration Maroc". Consumes ma-auto-entrepreneur/ma-cpu/ma-income-tax, ma-social-contributions, morocco-vat. Computes nothing itself.
+  Use this skill to assemble and sequence the complete Moroccan tax filing package for a self-employed person once the regime, income, social and VAT figures are known. Trigger on "assemble my Morocco return", "what do I file in Morocco", "Morocco filing package", "déclaration Maroc". Consumes ma-auto-entrepreneur/ma-cpu/morocco-professional-income-tax, ma-social-contributions, morocco-vat. Computes nothing itself.
 version: 0.1
 jurisdiction: MA
 tax_year: 2026
 tier: 2
-last_updated: 2026-06-12
+last_updated: 2026-10-31
 category: orchestrator
 depends_on:
   - ma-freelance-intake
@@ -39,7 +39,7 @@ Collect these from the upstream skills before assembling. Do not re-interrogate 
 | ICE, RC number, identifiant fiscal (IF) | intake | All DGI / SIMPL filings |
 | Flat-tax turnover figure (1% commercial / 2% services) | `ma-auto-entrepreneur` | Auto-entrepreneur quarterly declaration |
 | CPU liability figure | `ma-cpu` | CPU annual declaration |
-| Net profit (résultat net) under RNR or RNS | `ma-income-tax` | IR déclaration du revenu global |
+| Net profit (résultat net) under RNR or RNS | `morocco-professional-income-tax` | IR déclaration du revenu global |
 | TVA output/input position, declaration frequency | `morocco-vat` | TVA returns (if registered) |
 | CNSS / AMO registration status and contribution figures | `ma-social-contributions` | CNSS filing |
 | SIMPL / platform credentials | intake | Submission |
@@ -64,7 +64,7 @@ Pick exactly one income-tax track per the regime confirmed at intake. Never file
 - **Social:** CNSS/AMO via `ma-social-contributions`.
 
 ### RNR / RNS — résultat net réel / résultat net simplifié (above the ceilings, or by election)
-- **Declaration:** the **IR déclaration annuelle du revenu global**, filed via SIMPL, reporting the **résultat net** (full books under RNR; simplified books under RNS) from `ma-income-tax`.
+- **Declaration:** the **IR déclaration annuelle du revenu global**, filed via SIMPL, reporting the **résultat net** (full books under RNR; simplified books under RNS) from `morocco-professional-income-tax`.
 - **TVA:** TVA return(s) via `morocco-vat` — TVA applies by default for activities above the registration threshold.
 - **Social:** CNSS/AMO via `ma-social-contributions`.
 
@@ -80,7 +80,7 @@ All SIMPL filings are electronic; payment is electronic (télépaiement) at fili
 |---|---|---|---|---|
 | Auto-entrepreneur turnover declaration | Auto-entrepreneur | **Quarterly** | Within the **month following** each quarter-end | `ma-auto-entrepreneur` |
 | CPU annual declaration | CPU | Annual | Per the CPU calendar (typically **by 1 March** of the following year) — confirm | `ma-cpu` |
-| IR déclaration du revenu global | RNR / RNS | Annual | **By ~1 May** of the year following the tax year (résultat net) | `ma-income-tax` |
+| IR déclaration du revenu global | RNR / RNS | Annual | **By ~1 May** of the year following the tax year (résultat net) | `morocco-professional-income-tax` |
 | TVA declaration — monthly | TVA-registered (larger turnover) | **Monthly** | By the **20th** of the following month (télédéclaration) | `morocco-vat` |
 | TVA declaration — quarterly | TVA-registered (smaller turnover) | **Quarterly** | By the **20th** of the month following the quarter | `morocco-vat` |
 | CNSS / AMO contributions | All regimes | Per CNSS schedule | Per CNSS rules — confirm cadence | `ma-social-contributions` |
@@ -119,6 +119,6 @@ All SIMPL filings are electronic; payment is electronic (télépaiement) at fili
 
 ## Disclaimer
 
-This skill performs **orchestration and assembly only** — it computes no tax figure. All amounts originate from the Morocco content skills (`ma-freelance-intake`, `ma-auto-entrepreneur`, `ma-cpu`, `ma-income-tax`, `ma-social-contributions`, `morocco-vat`) and **must be reviewed and signed off by a qualified Moroccan expert-comptable** before anything is filed with the DGI, CNSS, or the auto-entrepreneur platform. Deadlines, forms, thresholds, and regime rules change; verify every flagged item against the DGI (simpl.tax.gov.ma) at filing time. Nothing here is tax, legal, or financial advice.
+This skill performs **orchestration and assembly only** — it computes no tax figure. All amounts originate from the Morocco content skills (`ma-freelance-intake`, `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `ma-social-contributions`, `morocco-vat`) and **must be reviewed and signed off by a qualified Moroccan expert-comptable** before anything is filed with the DGI, CNSS, or the auto-entrepreneur platform. Deadlines, forms, thresholds, and regime rules change; verify every flagged item against the DGI (simpl.tax.gov.ma) at filing time. Nothing here is tax, legal, or financial advice.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).

@@ -12,7 +12,7 @@ body:
     attributes:
       label: Skill file path or slug
       description: The skill containing the wrong value.
-      placeholder: "e.g., skills/international/malta/malta-vat-return.md or malta-vat-return"
+      placeholder: "e.g., skills/malta/malta-vat-return.md or malta-vat-return"
     validations:
       required: true
   - type: input

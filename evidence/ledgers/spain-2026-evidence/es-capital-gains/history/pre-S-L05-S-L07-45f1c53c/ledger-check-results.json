@@ -1,0 +1,1244 @@
+[
+  {
+    "name": "frozen Guide",
+    "actual": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "expected": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4960",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4965",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4970",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4975",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4980",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5716",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5721",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5726",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5731",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5736",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3160",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3160",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3795",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 2831",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3186",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3164",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3220",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4312",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4314",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 4985",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3902",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3904",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3912",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3230",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3232",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3226",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3234",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3218",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3216",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3222",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3306",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3308",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3308",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3314",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3312",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2599",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2599",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3336",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3338",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3340",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3369",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3369",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3383",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3379",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3379",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3381",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3381",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3381",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3377",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3369",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3373",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3373",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3371",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3439",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 12139",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 12139",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 12139",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2613",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2625",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2631",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2633",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2629",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2619",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3204",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3204",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Ownership exact quote 13",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Ownership exact quote 14",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Ownership exact quote 14",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2659",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2663",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2673",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2713",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2721",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2737",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2715",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2717",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2717",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2725",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2725",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2725",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2727",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2729",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2731",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2733",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2735",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2739",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 7092",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 7094",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 7462",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 7102",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2673",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2673",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2673",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2673",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2675",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2675",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D29 exact quote 2238",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D29 exact quote 2424",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D29 exact quote 2426",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D29 exact quote 2455",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D26 exact quote 2218",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D26 exact quote 2404",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D26 exact quote 2406",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "D26 exact quote 2435",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Repeal exact quote 85",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Repeal exact quote 94",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11533",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11537",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11543",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11553",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11555",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11557",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11559",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11549",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11551",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11561",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11569",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11575",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 11547",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 3861",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5259",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 5281",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 10072",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 10072",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 10074",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 10076",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 2760",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 2760",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 2918",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nold exact quote 94",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nold exact quote 100",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nold exact quote 102",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nold exact quote 104",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Nold exact quote 110",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1857",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 7226",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2637",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "R exact quote 2637",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "NR exact quote 978",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "NR exact quote 986",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "NR exact quote 988",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "O210 exact quote 628",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "O210 exact quote 628",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2213",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2136",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2268",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 1843",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 1849",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "N exact quote 1722",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L exact quote 1319",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RDL18 exact quote 486",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RDL18 exact quote 1396",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "L raw",
+    "actual": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "expected": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "pass_check": true
+  },
+  {
+    "name": "L reader",
+    "actual": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "expected": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "pass_check": true
+  },
+  {
+    "name": "R raw",
+    "actual": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "expected": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "pass_check": true
+  },
+  {
+    "name": "R reader",
+    "actual": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "expected": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "pass_check": true
+  },
+  {
+    "name": "N raw",
+    "actual": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "expected": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "pass_check": true
+  },
+  {
+    "name": "N reader",
+    "actual": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "expected": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "pass_check": true
+  },
+  {
+    "name": "NR raw",
+    "actual": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+    "expected": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+    "pass_check": true
+  },
+  {
+    "name": "NR reader",
+    "actual": "61ae2b2294c8299fb1a13b4e9431c06d1f9cd861fcdd3ab08392d72bf2a2853f",
+    "expected": "61ae2b2294c8299fb1a13b4e9431c06d1f9cd861fcdd3ab08392d72bf2a2853f",
+    "pass_check": true
+  },
+  {
+    "name": "O210 raw",
+    "actual": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "expected": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "pass_check": true
+  },
+  {
+    "name": "O210 reader",
+    "actual": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "expected": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "pass_check": true
+  },
+  {
+    "name": "LGT raw",
+    "actual": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "expected": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "pass_check": true
+  },
+  {
+    "name": "LGT reader",
+    "actual": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "expected": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "pass_check": true
+  },
+  {
+    "name": "Nold raw",
+    "actual": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "expected": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "pass_check": true
+  },
+  {
+    "name": "Nold reader",
+    "actual": "08f2f2bc70ce7e88fe606cf526c988787cc680c060ee0881dd7535abc21029e8",
+    "expected": "08f2f2bc70ce7e88fe606cf526c988787cc680c060ee0881dd7535abc21029e8",
+    "pass_check": true
+  },
+  {
+    "name": "Ownership raw",
+    "actual": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+    "expected": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+    "pass_check": true
+  },
+  {
+    "name": "Ownership reader",
+    "actual": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+    "expected": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+    "pass_check": true
+  },
+  {
+    "name": "D29 raw",
+    "actual": "6e3590efdf1ef621987422b34f5b13f00d9ef321cf3cbdf9cc9271d6cc2161fe",
+    "expected": "6e3590efdf1ef621987422b34f5b13f00d9ef321cf3cbdf9cc9271d6cc2161fe",
+    "pass_check": true
+  },
+  {
+    "name": "D29 reader",
+    "actual": "b665054d26b266518028f419e4cf72618d526e762becee90155f8f12e584be82",
+    "expected": "b665054d26b266518028f419e4cf72618d526e762becee90155f8f12e584be82",
+    "pass_check": true
+  },
+  {
+    "name": "D26 raw",
+    "actual": "c2ba5f5c1ddb46bd29ff8fb9e6b329f830d1ed11a7606bd2a49d59a6126dc5b5",
+    "expected": "c2ba5f5c1ddb46bd29ff8fb9e6b329f830d1ed11a7606bd2a49d59a6126dc5b5",
+    "pass_check": true
+  },
+  {
+    "name": "D26 reader",
+    "actual": "28352fbd44ceaa7b0e50288de10ce59da7990a370b553104004ae91e3b41ba0a",
+    "expected": "28352fbd44ceaa7b0e50288de10ce59da7990a370b553104004ae91e3b41ba0a",
+    "pass_check": true
+  },
+  {
+    "name": "Repeal raw",
+    "actual": "3b7d30b2eff92db1cdb47d25e21376e1ee7c5f420860e3dcb48ee1893b418783",
+    "expected": "3b7d30b2eff92db1cdb47d25e21376e1ee7c5f420860e3dcb48ee1893b418783",
+    "pass_check": true
+  },
+  {
+    "name": "Repeal reader",
+    "actual": "2c48717f0b45ccf2aea876eda44320a33fff177b825cf58519bcacee1989c066",
+    "expected": "2c48717f0b45ccf2aea876eda44320a33fff177b825cf58519bcacee1989c066",
+    "pass_check": true
+  },
+  {
+    "name": "RDL18 raw",
+    "actual": "1dea7ab99aa3a6c7fed2a5ed163fd9f11fabdb0c97a963bdf3a38aaa0b40d98c",
+    "expected": "1dea7ab99aa3a6c7fed2a5ed163fd9f11fabdb0c97a963bdf3a38aaa0b40d98c",
+    "pass_check": true
+  },
+  {
+    "name": "RDL18 reader",
+    "actual": "d6361740dcb5219d7509d7284394c6efad01e05dabd4f9b0f7207027668168a4",
+    "expected": "d6361740dcb5219d7509d7284394c6efad01e05dabd4f9b0f7207027668168a4",
+    "pass_check": true
+  },
+  {
+    "name": "exact current wording",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "2 original examples",
+    "actual": "2",
+    "expected": "2",
+    "pass_check": true
+  },
+  {
+    "name": "transfer",
+    "actual": "19900",
+    "expected": "19900",
+    "pass_check": true
+  },
+  {
+    "name": "basis",
+    "actual": "10050",
+    "expected": "10050",
+    "pass_check": true
+  },
+  {
+    "name": "gain",
+    "actual": "9850",
+    "expected": "9850",
+    "pass_check": true
+  },
+  {
+    "name": "tax",
+    "actual": "3897/2",
+    "expected": "3897/2",
+    "pass_check": true
+  },
+  {
+    "name": "admitted loss",
+    "actual": "8000",
+    "expected": "8000",
+    "pass_check": true
+  },
+  {
+    "name": "cross offset",
+    "actual": "2500",
+    "expected": "2500",
+    "pass_check": true
+  },
+  {
+    "name": "carry",
+    "actual": "5500",
+    "expected": "5500",
+    "pass_check": true
+  },
+  {
+    "name": "savingsbase",
+    "actual": "7500",
+    "expected": "7500",
+    "pass_check": true
+  },
+  {
+    "name": "secondtax",
+    "actual": "1455",
+    "expected": "1455",
+    "pass_check": true
+  },
+  {
+    "name": "unlisted floor",
+    "actual": "15000",
+    "expected": "15000",
+    "pass_check": true
+  },
+  {
+    "name": "unlisted gain",
+    "actual": "10000",
+    "expected": "10000",
+    "pass_check": true
+  },
+  {
+    "name": "rights basis",
+    "actual": "8000",
+    "expected": "8000",
+    "pass_check": true
+  },
+  {
+    "name": "rights gain",
+    "actual": "7000",
+    "expected": "7000",
+    "pass_check": true
+  },
+  {
+    "name": "annuity clamp",
+    "actual": "10000.0",
+    "expected": "10000",
+    "pass_check": true
+  },
+  {
+    "name": "annuity partial",
+    "actual": "5000.0",
+    "expected": "5000",
+    "pass_check": true
+  },
+  {
+    "name": "combinedrate19",
+    "actual": "19",
+    "expected": "19",
+    "pass_check": true
+  },
+  {
+    "name": "combinedrate21",
+    "actual": "21",
+    "expected": "21",
+    "pass_check": true
+  },
+  {
+    "name": "combinedrate23",
+    "actual": "23",
+    "expected": "23",
+    "pass_check": true
+  },
+  {
+    "name": "combinedrate27",
+    "actual": "27",
+    "expected": "27",
+    "pass_check": true
+  },
+  {
+    "name": "combinedrate30",
+    "actual": "30",
+    "expected": "30",
+    "pass_check": true
+  },
+  {
+    "name": "combinedopeningquota0",
+    "actual": "0",
+    "expected": "0",
+    "pass_check": true
+  },
+  {
+    "name": "combinedopeningquota1140",
+    "actual": "1140",
+    "expected": "1140",
+    "pass_check": true
+  },
+  {
+    "name": "combinedopeningquota10380",
+    "actual": "10380",
+    "expected": "10380",
+    "pass_check": true
+  },
+  {
+    "name": "combinedopeningquota44880",
+    "actual": "44880",
+    "expected": "44880",
+    "pass_check": true
+  },
+  {
+    "name": "combinedopeningquota71880",
+    "actual": "71880",
+    "expected": "71880",
+    "pass_check": true
+  },
+  {
+    "name": "actual 2 oa",
+    "actual": "0",
+    "expected": "0",
+    "pass_check": true
+  }
+]

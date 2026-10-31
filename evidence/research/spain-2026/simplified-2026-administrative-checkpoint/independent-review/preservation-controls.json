@@ -1,0 +1,62 @@
+[
+  {
+    "file": "es-vat-return.md",
+    "sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+    "bytes": 76767,
+    "old_url_occurrences": 166,
+    "old_url_order_preserved": true,
+    "oa_exact": true,
+    "protected_meta_exact": true,
+    "source_rows_exact": true,
+    "units": 172,
+    "changed_units": 3
+  },
+  {
+    "file": "spain-vat-return.md",
+    "sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+    "bytes": 26446,
+    "old_url_occurrences": 55,
+    "old_url_order_preserved": true,
+    "oa_exact": true,
+    "protected_meta_exact": true,
+    "source_rows_exact": true,
+    "units": 83,
+    "changed_units": 2
+  },
+  {
+    "file": "es-estimated-tax.md",
+    "sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+    "bytes": 34585,
+    "old_url_occurrences": 77,
+    "old_url_order_preserved": true,
+    "oa_exact": true,
+    "protected_meta_exact": true,
+    "source_rows_exact": true,
+    "units": 131,
+    "changed_units": 10
+  },
+  {
+    "file": "es-income-tax.md",
+    "sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475",
+    "bytes": 85291,
+    "old_url_occurrences": 233,
+    "old_url_order_preserved": true,
+    "oa_exact": true,
+    "protected_meta_exact": true,
+    "source_rows_exact": true,
+    "units": 395,
+    "changed_units": 3
+  },
+  {
+    "file": "README.md",
+    "sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+    "bytes": 8688,
+    "old_url_occurrences": 10,
+    "old_url_order_preserved": true,
+    "oa_exact": true,
+    "protected_meta_exact": true,
+    "source_rows_exact": true,
+    "units": 45,
+    "changed_units": 1
+  }
+]

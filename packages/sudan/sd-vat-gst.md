@@ -5,7 +5,9 @@ version: 0.1
 jurisdiction: SD
 tax_year: 2025
 last_updated: 2026-09-11
+authored_by: Ahmed Hassan
 review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - vat-workflow-base
 category: international

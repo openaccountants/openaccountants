@@ -1,0 +1,103 @@
+{
+  "base": "ad570bbc",
+  "snapshot": "97b92e8d92624e3d5b0cac34379ca8b696b77d72",
+  "new_urls": [
+    {
+      "url": "https://files.reglugerd.is/pdf/1243-2019/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/1243-2019/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f",
+      "status": 200,
+      "final_url": "https://island.is/stjornartidindi/nr/2771f46a-7402-4e33-87de-16a856e3f81f",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://sedlabanki.is/gagnatorg/vextir",
+      "status": 200,
+      "final_url": "https://sedlabanki.is/gagnatorg/vextir",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://voes.rsk.is/Application/Register",
+      "status": 200,
+      "final_url": "https://voes.rsk.is/Application/Register",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2009152.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattamal/endurgreidslur-virdisaukaskatts/erlendir-adilar/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/atvinnurekstur/skattamal/endurgreidslur-virdisaukaskatts/erlendir-adilar/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/launatekjur-og-hlunnindi/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/einstaklingar/tekjur-og-fradraettir/skattmat/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/english/companies/vat/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/english/companies/vat/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/fagadilar/akvardandi-bref/obeinir-skattar/akvardandi-bref-1-2026",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/fagadilar/akvardandi-bref/obeinir-skattar/akvardandi-bref-1-2026",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/2026/rsk_0601_2_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/baeklingar/VSK_Skraning_a_vsk_skra.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk02/rsk_0201_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk02/rsk_02085.is.pdf",
+      "content_type": "application/pdf"
+    }
+  ],
+  "checked_at": "2026-10-23",
+  "method": "Direct HTTP GET of URLs newly introduced versus ad570bbc; first 256 response bytes read. Transport/content-type check only, not legal or operative-text verification.",
+  "access_notes": [
+    "Innovation Act 152/2009 returned direct403; operative current Articles3 and5 were read through the web reader.",
+    "The Gazette entry returned direct200 HTML after web-reader403; no operative Gazette-text retrieval is claimed. Official notice2/2026 and authority valuation text were read.",
+    "The 2026 indexed VAT letter operative table was read; linked Word memorandum was unsupported by the web reader and is not claimed read.",
+    "Reachability does not establish current legal correctness, eligibility, live form acceptance, filing or named accountant review."
+  ]
+}

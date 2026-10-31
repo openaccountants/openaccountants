@@ -1,0 +1,212 @@
+
+
+
+
+
+
+
+	
+	
+		  - Bizkaia.Eus
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:contenedor]]
+ 
+  
+
+
+
+
+
+
+    
+  
+
+	
+[[ID:iniciocontenido]]
+
+    
+
+ 
+
+
+
+[[ID:contenido_editado]]
+
+  
+
+No residentes
+
+Tributación de las rentas más comunes
+
+Capital inmobiliario
+
+
+
+
+
+ www.bizkaia.eus/guregida
+
+
+
+
+
+
+
+
+
+Preguntas frecuentes Nº Identificación: 900007012
+
+
+
+
+Un residente fiscal italiano posee un inmueble en Gernika el cual está arrendado durante todo el año 2026. El alquiler es de 1000€ mensuales. El arrendador justifica como gastos relacionados con el inmueble el IBI el cual asciende a 500€ y  los gastos de comunidad por los que abona 100€ mensuales. ¿Cómo tributarán las rentas procedentes de este alquiler?
+
+
+
+	
+
+
+
+Tanto la normativa interna como los Convenios para evitar la doble imposición, establecen que independientemente de que los bienes inmuebles se encuentren arrendados o no, siempre que se localicen en territorio español, tributarán en España. En este caso en Bizkaia en aplicación del Concierto económico.
+
+
+    
+La base imponible será el importe íntegro de los alquileres recibidos. Desde el 01/01/2026, al ser el arrendador un residente del Espacio económico europeo con intercambio de información, podrá deducir el importe de los intereses de los capitales ajenos invertidos en la adquisición y demás gastos de financiación (por lo tanto no se puede deducir el gasto de IBI ni los gastos de comunidad). No obstante, podrá aplicarse la bonificación del 70% establecida para rentas limitadas a índices de referencia.
+
+    
+El tipo de gravamen aplicable será el general vigente según el año de devengo (en el año 2026 para residentes UE, Islandia y Noruega 19% y para el resto de contribuyentes 24%).
+
+    
+Solo se podrá deducir las deducciones por donativos en los términos previstos en la normativa vigente y las retenciones practicadas en su caso.
+
+    
+El plazo de presentación será anual y el modelo de declaración será el 210 (modelo único), el cual lo podrá presentar el propio no residente o su representante nombrado de forma voluntaria para este tipo de rentas.
+
+
+
+En este caso, por tanto, el cálculo de la cuota a tributar anual será el siguiente:
+
+
+    
+Ingresos íntegros (1000€x 12 meses) : 12.000€
+
+    
+Gastos (500€+100€) : No aplicables, solo aplicables los gastos de financiación para su adquisición.
+
+    
+Bonificación: 70% de 12.000=8.400€
+
+    
+Base Imponible : 3.600€
+
+    
+Tipo de gravamen : 19%
+
+    
+Cuota (3600€x19%) : 684€
+
+
+
+Si el arrendatario es persona obligada a retener (arrendamientos de locales, negocios……) ingresará las retenciones practicadas en el modelo 216 y el arrendador no residente no estará obligado a presentar autoliquidación, salvo que tenga gastos deducibles por ser residente de la UE, por ejemplo, y presente una autoliquidación a devolver para recuperar parte de las retenciones (modelo 210 - plazo presentación trimestral).
+
+
+Si el arrendatario no está obligado a retener (arrendamiento de vivienda…), el propio no residente contribuyente (o su representante) deberá autoliquidar y presentar una autoliquidación a ingresar (modelo 210 - plazo presentación trimestral).
+
+
+En este caso, si suponemos que el arrendatario no está obligado a retener, el propio no residente (o su representante) deberá presentar trimestralmente una autoliquidación a ingresar (modelo 210) e ingresar la cuota de 684€ en cualquier entidad colaboradora.
+
+
+
+
+
+
+
+Nota
+
+
+Esta Pregunta-Respuesta carece de efectos vinculantes para la Hacienda Foral de Bizkaia, teniendo el carácter de mera información.
+
+
+
+
+
+Volver
+   
+   
+            
+[[ID:utilidades]]
+
+						
+				
+              
+ enviar por e-mail
+
+              
+
+
+
+
+
+
+ 				
+				
+
+			
+		
+
+
+		
+
+	 
+	
+
+	
+
+	
+	 
+
+[[ID:estadisticas]]
+
+	 
+
+ 
+
+
+
+

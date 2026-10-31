@@ -9,9 +9,9 @@ Each package contains:
 
 US state packages (packages/us-[code]/) additionally include:
 4. us-tax-workflow-base.md — US-specific workflow foundation
-5. All federal skills from skills/federal/
+5. All federal skills from skills/us/federal/
 6. Core US orchestrator files
-7. State-specific skills from skills/us-states/[code]/
+7. State-specific skills from skills/us/states/[code]/
 
 Usage:
     python3 scripts/build-packages.py           # rebuild all packages
@@ -33,12 +33,14 @@ Output:
         └── [code]-*.md (state-specific skills)
 """
 
+import json
 import os
 import re
 import shutil
 import sys
 
 from frontmatter_yaml import FrontmatterError, load_frontmatter
+from repo_layout import country_dirs
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS_DIR = os.path.join(REPO_ROOT, "skills")
@@ -496,7 +498,9 @@ def find_country_skills(country_dir):
     if not os.path.isdir(country_dir):
         return skills
 
-    for root, _dirs, files in os.walk(country_dir):
+    for root, dirs, files in os.walk(country_dir):
+        if os.path.basename(country_dir) == "us":
+            dirs[:] = []  # federal/ and states/ have their own packages
         for f in sorted(files):
             if not f.endswith('.md') or f.startswith('.'):
                 continue
@@ -507,6 +511,25 @@ def find_country_skills(country_dir):
             skills.append((f, filepath))
 
     return skills
+
+
+def _load_registry_dir_to_code():
+    """Folder name -> ISO code for international packs, from scripts/data/jurisdictions.json."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "jurisdictions.json")
+    try:
+        with open(path, encoding="utf-8") as fh:
+            rows = json.load(fh)
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for row in rows:
+        d = row.get("dir") or ""
+        if d.startswith("skills/") and not d.startswith("skills/us/") and row.get("code"):
+            out[d.rsplit("/", 1)[-1]] = row["code"]
+    return out
+
+
+REGISTRY_DIR_TO_CODE = _load_registry_dir_to_code()
 
 
 def find_orchestrator_files(country_dir_name):
@@ -537,7 +560,12 @@ def find_orchestrator_files(country_dir_name):
 
 def build_package(country_dir_name, country_dir):
     """Build a complete package for one jurisdiction."""
-    code = DIR_TO_CODE.get(country_dir_name, country_dir_name.upper()[:2])
+    # The country code comes from the registry (scripts/data/jurisdictions.json), then the
+    # legacy map. Never guess it from the folder name: the old ``upper()[:2]`` fallback
+    # labelled Benin as Belgium, Eswatini as Spain and gave non-EU packs the EU VAT base.
+    code = REGISTRY_DIR_TO_CODE.get(country_dir_name) or DIR_TO_CODE.get(country_dir_name)
+    if code is None:
+        print(f"WARNING: {country_dir_name} has no jurisdictions.json entry; built without a country code")
     name = COUNTRY_NAMES.get(code, country_dir_name.replace('-', ' ').title())
     practitioner = PRACTITIONER_TITLES.get(code, "qualified tax professional")
 
@@ -567,7 +595,7 @@ def build_package(country_dir_name, country_dir):
 
     # Copy EU VAT base if EU member
     if code in EU_MEMBERS:
-        eu_vat = os.path.join(SKILLS_DIR, "international", "eu", "eu-vat-base.md")
+        eu_vat = os.path.join(SKILLS_DIR, "eu", "eu-vat-base.md")
         if os.path.exists(eu_vat):
             shutil.copy2(eu_vat, os.path.join(pkg_dir, "eu-vat-directive.md"))
             copied_files.append("eu-vat-directive.md")
@@ -712,7 +740,7 @@ These {state_name} tax skills need your eye. Every rate, threshold, and form ref
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us-states/{state_code}/` or `skills/federal/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/us/states/{state_code}/` or `skills/us/federal/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 
@@ -743,7 +771,7 @@ def build_us_state_package(state_code):
         copied_files.append("us-tax-workflow-base.md")
 
     # 2. All federal skills
-    federal_dir = os.path.join(SKILLS_DIR, "federal")
+    federal_dir = os.path.join(SKILLS_DIR, "us", "federal")
     if os.path.isdir(federal_dir):
         for f in sorted(os.listdir(federal_dir)):
             if f.endswith(".md"):
@@ -752,9 +780,12 @@ def build_us_state_package(state_code):
 
     # 3. Core US orchestrator files
     orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
-    core_orch = ["us-federal-return-assembly.md", "global-router.md"]
-    for f in core_orch:
-        src = os.path.join(orch_dir, f)
+    core_orch = [
+        os.path.join(orch_dir, "us-federal-return-assembly.md"),
+        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+    ]
+    for src in core_orch:
+        f = os.path.basename(src)
         if os.path.isfile(src):
             shutil.copy2(src, os.path.join(pkg_dir, f))
             copied_files.append(f)
@@ -772,7 +803,7 @@ def build_us_state_package(state_code):
             copied_files.append(f)
 
     # 5. State-specific skill files (everything except README.md)
-    state_dir = os.path.join(SKILLS_DIR, "us-states", state_code)
+    state_dir = os.path.join(SKILLS_DIR, "us", "states", state_code)
     state_skill_count = 0
     if os.path.isdir(state_dir):
         for f in sorted(os.listdir(state_dir)):
@@ -822,7 +853,7 @@ CA_PROVINCE_NAMES = {
     "sk": "Saskatchewan", "yt": "Yukon",
 }
 
-# Source directory name under skills/international/canada/ for each province
+# Source directory name under skills/canada/ for each province
 CA_PROVINCE_DIRS = {
     "ab": "alberta", "bc": "british-columbia", "mb": "manitoba",
     "nb": "new-brunswick", "nl": "newfoundland", "ns": "nova-scotia",
@@ -882,7 +913,7 @@ These {province_name} tax skills need your eye. Every rate, threshold, and form 
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).
 
-Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/international/canada/{CA_PROVINCE_DIRS.get(province_code, province_code)}/`, and submit a PR.
+Or if you're comfortable with GitHub: fork the repo, fix the source under `skills/canada/{CA_PROVINCE_DIRS.get(province_code, province_code)}/`, and submit a PR.
 
 **Your name goes on the skill either way.**
 
@@ -917,8 +948,8 @@ def build_canada_province_package(province_code):
         fh.write(build_intake("Canada", "CPA", "CA"))
     copied_files.append("intake.md")
 
-    # 3. Federal Canadian skills (top-level .md files in skills/international/canada/)
-    canada_root = os.path.join(SKILLS_DIR, "international", "canada")
+    # 3. Federal Canadian skills (top-level .md files in skills/canada/)
+    canada_root = os.path.join(SKILLS_DIR, "canada")
     if os.path.isdir(canada_root):
         for f in sorted(os.listdir(canada_root)):
             full = os.path.join(canada_root, f)
@@ -954,8 +985,12 @@ def build_canada_province_package(province_code):
 
     # 6. Core orchestrator files (Canada freelance intake + return assembly, global router)
     orch_dir = os.path.join(SKILLS_DIR, "orchestrator")
-    for orch_file in ("ca-freelance-intake.md", "ca-return-assembly.md", "global-router.md"):
-        src = os.path.join(orch_dir, orch_file)
+    for src in (
+        os.path.join(orch_dir, "ca-freelance-intake.md"),
+        os.path.join(orch_dir, "ca-return-assembly.md"),
+        os.path.join(SKILLS_DIR, "foundation", "global-router.md"),
+    ):
+        orch_file = os.path.basename(src)
         if os.path.isfile(src):
             shutil.copy2(src, os.path.join(pkg_dir, orch_file))
             copied_files.append(orch_file)
@@ -1063,11 +1098,9 @@ def main():
     # ---- International packages ----
     intl_results = []
     if not us_only:
-        intl_dir = os.path.join(SKILLS_DIR, "international")
-        for country_dir_name in sorted(os.listdir(intl_dir)):
-            country_dir = os.path.join(intl_dir, country_dir_name)
-            if not os.path.isdir(country_dir):
-                continue
+        for country_path in country_dirs():
+            country_dir_name = country_path.name
+            country_dir = str(country_path)
             if country_dir_name == "eu":
                 continue  # EU is a regional layer, not a jurisdiction
             if country_dir_name == "canada":
@@ -1150,7 +1183,7 @@ def main():
     # ---- Industry verticals package ----
     vert_result = None
     if not us_only:
-        vert_dir = os.path.join(SKILLS_DIR, "verticals")
+        vert_dir = os.path.join(SKILLS_DIR, "reference", "verticals")
         if os.path.isdir(vert_dir):
             vert_pkg = os.path.join(PACKAGES_DIR, "_verticals")
             os.makedirs(vert_pkg, exist_ok=True)
@@ -1178,7 +1211,7 @@ def main():
     # ---- Integrations package ----
     integ_result = None
     if not us_only:
-        integ_dir = os.path.join(SKILLS_DIR, "integrations")
+        integ_dir = os.path.join(SKILLS_DIR, "reference", "integrations")
         if os.path.isdir(integ_dir):
             integ_pkg = os.path.join(PACKAGES_DIR, "_integrations")
             os.makedirs(integ_pkg, exist_ok=True)

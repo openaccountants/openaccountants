@@ -1,0 +1,1468 @@
+[
+  {
+    "i": 7,
+    "rows": [
+      7
+    ],
+    "reader_sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 1
+  },
+  {
+    "i": 48,
+    "rows": [
+      48,
+      1114
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 102
+  },
+  {
+    "i": 49,
+    "rows": [
+      49
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 102
+  },
+  {
+    "i": 50,
+    "rows": [
+      50,
+      1115
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 24
+  },
+  {
+    "i": 51,
+    "rows": [
+      51
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 24
+  },
+  {
+    "i": 52,
+    "rows": [
+      52,
+      1116
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 352
+  },
+  {
+    "i": 53,
+    "rows": [
+      53
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 352
+  },
+  {
+    "i": 154,
+    "rows": [
+      166,
+      1416,
+      1425,
+      1434,
+      1443,
+      1452,
+      1461,
+      1470,
+      1479
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 90
+  },
+  {
+    "i": 155,
+    "rows": [
+      167
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 90
+  },
+  {
+    "i": 156,
+    "rows": [
+      168,
+      290,
+      296,
+      302,
+      308,
+      314,
+      320,
+      326,
+      332,
+      338,
+      1417,
+      1426,
+      1435,
+      1444,
+      1453,
+      1462,
+      1471,
+      1480
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 92
+  },
+  {
+    "i": 157,
+    "rows": [
+      169
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 93
+  },
+  {
+    "i": 158,
+    "rows": [
+      170,
+      1418,
+      1427,
+      1436,
+      1445,
+      1454,
+      1463,
+      1472,
+      1481
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 95
+  },
+  {
+    "i": 159,
+    "rows": [
+      171,
+      1419,
+      1428,
+      1437,
+      1446,
+      1455,
+      1464,
+      1473,
+      1482
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 11
+  },
+  {
+    "i": 160,
+    "rows": [
+      172
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 11
+  },
+  {
+    "i": 161,
+    "rows": [
+      173,
+      292,
+      298,
+      304,
+      310,
+      316,
+      322,
+      328,
+      334,
+      340,
+      1420,
+      1429,
+      1438,
+      1447,
+      1456,
+      1465,
+      1474,
+      1483
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 13
+  },
+  {
+    "i": 162,
+    "rows": [
+      174
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 14
+  },
+  {
+    "i": 163,
+    "rows": [
+      175,
+      1421,
+      1430,
+      1439,
+      1448,
+      1457,
+      1466,
+      1475,
+      1484
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 16
+  },
+  {
+    "i": 164,
+    "rows": [
+      176,
+      1422,
+      1431,
+      1440,
+      1449,
+      1458,
+      1467,
+      1476,
+      1485
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 340
+  },
+  {
+    "i": 165,
+    "rows": [
+      177
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 340
+  },
+  {
+    "i": 166,
+    "rows": [
+      178,
+      294,
+      300,
+      306,
+      312,
+      318,
+      324,
+      330,
+      336,
+      342,
+      1423,
+      1432,
+      1441,
+      1450,
+      1459,
+      1468,
+      1477,
+      1486
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 342
+  },
+  {
+    "i": 167,
+    "rows": [
+      179
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 343
+  },
+  {
+    "i": 168,
+    "rows": [
+      180,
+      1424,
+      1433,
+      1442,
+      1451,
+      1460,
+      1469,
+      1478,
+      1487
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 345
+  },
+  {
+    "i": 232,
+    "rows": [
+      244,
+      247,
+      250
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 89
+  },
+  {
+    "i": 233,
+    "rows": [
+      245,
+      248,
+      251
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 10
+  },
+  {
+    "i": 234,
+    "rows": [
+      246,
+      249,
+      252
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 339
+  },
+  {
+    "i": 271,
+    "rows": [
+      343,
+      344,
+      345,
+      346
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 132
+  },
+  {
+    "i": 273,
+    "rows": [
+      351,
+      352,
+      353,
+      354
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 135
+  },
+  {
+    "i": 277,
+    "rows": [
+      367,
+      370
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 131
+  },
+  {
+    "i": 278,
+    "rows": [
+      368,
+      371
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 134
+  },
+  {
+    "i": 396,
+    "rows": [
+      511
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 286
+  },
+  {
+    "i": 401,
+    "rows": [
+      516
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 287
+  },
+  {
+    "i": 406,
+    "rows": [
+      521
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 288
+  },
+  {
+    "i": 680,
+    "rows": [
+      923,
+      926,
+      935,
+      956
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 97
+  },
+  {
+    "i": 681,
+    "rows": [
+      924,
+      929,
+      937,
+      960,
+      968
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 18
+  },
+  {
+    "i": 682,
+    "rows": [
+      925,
+      932,
+      939,
+      964
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 347
+  },
+  {
+    "i": 683,
+    "rows": [
+      927
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 96
+  },
+  {
+    "i": 684,
+    "rows": [
+      928
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 101
+  },
+  {
+    "i": 685,
+    "rows": [
+      930
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 21
+  },
+  {
+    "i": 686,
+    "rows": [
+      931
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 15
+  },
+  {
+    "i": 687,
+    "rows": [
+      933
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 347
+  },
+  {
+    "i": 688,
+    "rows": [
+      934
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 344
+  },
+  {
+    "i": 689,
+    "rows": [
+      936,
+      945,
+      959
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 94
+  },
+  {
+    "i": 690,
+    "rows": [
+      938,
+      947,
+      963
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 15
+  },
+  {
+    "i": 691,
+    "rows": [
+      940,
+      949,
+      967
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 344
+  },
+  {
+    "i": 692,
+    "rows": [
+      941,
+      957
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 99
+  },
+  {
+    "i": 693,
+    "rows": [
+      942,
+      961
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 20
+  },
+  {
+    "i": 694,
+    "rows": [
+      943,
+      965
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 349
+  },
+  {
+    "i": 695,
+    "rows": [
+      944,
+      950
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 96
+  },
+  {
+    "i": 696,
+    "rows": [
+      946,
+      951
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 17
+  },
+  {
+    "i": 697,
+    "rows": [
+      948,
+      952
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 346
+  },
+  {
+    "i": 698,
+    "rows": [
+      953,
+      958
+    ],
+    "reader_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 98
+  },
+  {
+    "i": 699,
+    "rows": [
+      954,
+      962
+    ],
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 19
+  },
+  {
+    "i": 700,
+    "rows": [
+      955,
+      966
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 348
+  },
+  {
+    "i": 701,
+    "rows": [
+      972
+    ],
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 103
+  },
+  {
+    "i": 702,
+    "rows": [
+      973
+    ],
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 25
+  },
+  {
+    "i": 703,
+    "rows": [
+      974
+    ],
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 353
+  },
+  {
+    "i": 704,
+    "rows": [
+      975,
+      978,
+      990
+    ],
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 104
+  },
+  {
+    "i": 705,
+    "rows": [
+      976,
+      979,
+      991
+    ],
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 26
+  },
+  {
+    "i": 706,
+    "rows": [
+      977,
+      980,
+      992
+    ],
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 354
+  },
+  {
+    "i": 707,
+    "rows": [
+      981
+    ],
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 104
+  },
+  {
+    "i": 708,
+    "rows": [
+      982
+    ],
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 26
+  },
+  {
+    "i": 709,
+    "rows": [
+      983
+    ],
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 354
+  },
+  {
+    "i": 710,
+    "rows": [
+      984,
+      987
+    ],
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 106
+  },
+  {
+    "i": 711,
+    "rows": [
+      985,
+      988
+    ],
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 28
+  },
+  {
+    "i": 712,
+    "rows": [
+      986,
+      989
+    ],
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 356
+  },
+  {
+    "i": 736,
+    "rows": [
+      1019
+    ],
+    "reader_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 339
+  },
+  {
+    "i": 784,
+    "rows": [
+      1085
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 270
+  },
+  {
+    "i": 785,
+    "rows": [
+      1086
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 239
+  },
+  {
+    "i": 786,
+    "rows": [
+      1087
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 240
+  },
+  {
+    "i": 787,
+    "rows": [
+      1088
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 241
+  },
+  {
+    "i": 788,
+    "rows": [
+      1089
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 242
+  },
+  {
+    "i": 789,
+    "rows": [
+      1090
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 243
+  },
+  {
+    "i": 790,
+    "rows": [
+      1091
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 273
+  },
+  {
+    "i": 791,
+    "rows": [
+      1092
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 275
+  },
+  {
+    "i": 792,
+    "rows": [
+      1093
+    ],
+    "reader_sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 276
+  },
+  {
+    "i": 793,
+    "rows": [
+      1094
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 244
+  },
+  {
+    "i": 794,
+    "rows": [
+      1095
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 245
+  },
+  {
+    "i": 795,
+    "rows": [
+      1096
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 246
+  },
+  {
+    "i": 796,
+    "rows": [
+      1097
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 247
+  },
+  {
+    "i": 797,
+    "rows": [
+      1098
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 248
+  },
+  {
+    "i": 798,
+    "rows": [
+      1099
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 277
+  },
+  {
+    "i": 799,
+    "rows": [
+      1100
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 278
+  },
+  {
+    "i": 800,
+    "rows": [
+      1101
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 279
+  },
+  {
+    "i": 801,
+    "rows": [
+      1102
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 249
+  },
+  {
+    "i": 802,
+    "rows": [
+      1103
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 250
+  },
+  {
+    "i": 803,
+    "rows": [
+      1104
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 251
+  },
+  {
+    "i": 804,
+    "rows": [
+      1105
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 252
+  },
+  {
+    "i": 805,
+    "rows": [
+      1106
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 280
+  },
+  {
+    "i": 806,
+    "rows": [
+      1107
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 281
+  },
+  {
+    "i": 807,
+    "rows": [
+      1108
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 282
+  },
+  {
+    "i": 808,
+    "rows": [
+      1109
+    ],
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 283
+  },
+  {
+    "i": 809,
+    "rows": [
+      1110
+    ],
+    "reader_sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 271
+  },
+  {
+    "i": 810,
+    "rows": [
+      1111
+    ],
+    "reader_sha256": "86ca14e4f7dff1e5bae1d82b2df9b26b1cdc0c9981115e8087724af3f50f8074",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 301
+  },
+  {
+    "i": 811,
+    "rows": [
+      1112
+    ],
+    "reader_sha256": "d27ea50637d25b891fc88ff48866ef058eb7bba8a38007c6dcc45f6cc7f724a8",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 305
+  },
+  {
+    "i": 812,
+    "rows": [
+      1113
+    ],
+    "reader_sha256": "c7911960087ee1ff07aec70228a74525ed2218ab4d5049759389bf6a76b6bbc2",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 309
+  },
+  {
+    "i": 829,
+    "rows": [
+      1163,
+      1169
+    ],
+    "reader_sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 806
+  },
+  {
+    "i": 830,
+    "rows": [
+      1164,
+      1170
+    ],
+    "reader_sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 267
+  },
+  {
+    "i": 831,
+    "rows": [
+      1165,
+      1171
+    ],
+    "reader_sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 809
+  },
+  {
+    "i": 832,
+    "rows": [
+      1166,
+      1172
+    ],
+    "reader_sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 223
+  },
+  {
+    "i": 833,
+    "rows": [
+      1167,
+      1173
+    ],
+    "reader_sha256": "0a77808b0582f38980bfa00bfde896b2e9a1228ad81e61a1c9bd6a063aae717a",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 812
+  },
+  {
+    "i": 834,
+    "rows": [
+      1168,
+      1174
+    ],
+    "reader_sha256": "0a77808b0582f38980bfa00bfde896b2e9a1228ad81e61a1c9bd6a063aae717a",
+    "prior_pair": "es-foral-non-resident-tax",
+    "prior_file": "selected-quotes-for-writer-read.json",
+    "prior_row": 311
+  },
+  {
+    "i": 908,
+    "rows": [
+      1326,
+      1327,
+      1328,
+      1329,
+      1330
+    ],
+    "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 405
+  },
+  {
+    "i": 909,
+    "rows": [
+      1331,
+      1332,
+      1333,
+      1334,
+      1335
+    ],
+    "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 406
+  },
+  {
+    "i": 910,
+    "rows": [
+      1336,
+      1337,
+      1338,
+      1339,
+      1340
+    ],
+    "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 407
+  },
+  {
+    "i": 911,
+    "rows": [
+      1341,
+      1342,
+      1343,
+      1344,
+      1345
+    ],
+    "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 408
+  },
+  {
+    "i": 912,
+    "rows": [
+      1346,
+      1347,
+      1348,
+      1349,
+      1350
+    ],
+    "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 409
+  },
+  {
+    "i": 913,
+    "rows": [
+      1351,
+      1352,
+      1353,
+      1354,
+      1355
+    ],
+    "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 410
+  },
+  {
+    "i": 914,
+    "rows": [
+      1356,
+      1357,
+      1358,
+      1359,
+      1360
+    ],
+    "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 411
+  },
+  {
+    "i": 915,
+    "rows": [
+      1361,
+      1362,
+      1363,
+      1364,
+      1365
+    ],
+    "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 412
+  },
+  {
+    "i": 916,
+    "rows": [
+      1366,
+      1367,
+      1368,
+      1369,
+      1370
+    ],
+    "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 413
+  },
+  {
+    "i": 917,
+    "rows": [
+      1371,
+      1372,
+      1373,
+      1374,
+      1375
+    ],
+    "reader_sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 432
+  },
+  {
+    "i": 918,
+    "rows": [
+      1376,
+      1377,
+      1378,
+      1379,
+      1380
+    ],
+    "reader_sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 433
+  },
+  {
+    "i": 919,
+    "rows": [
+      1381,
+      1382,
+      1383,
+      1384,
+      1385
+    ],
+    "reader_sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 434
+  },
+  {
+    "i": 1026,
+    "rows": [
+      1602,
+      1635,
+      1641,
+      1644
+    ],
+    "reader_sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 139
+  },
+  {
+    "i": 1032,
+    "rows": [
+      1610,
+      1614,
+      1615,
+      1616,
+      1619,
+      1623,
+      1630
+    ],
+    "reader_sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 138
+  },
+  {
+    "i": 1151,
+    "rows": [
+      1906,
+      2085
+    ],
+    "reader_sha256": "35281ebbb6f248ff7b2888476898a1559c06373108174810d79afdb1a535a4c2",
+    "prior_pair": "es-social-contributions",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 13
+  },
+  {
+    "i": 1465,
+    "rows": [
+      2559,
+      2562
+    ],
+    "reader_sha256": "00c733ee479c48f6f7072ce6a4705c50a93182849852d651249ecac92e86017f",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 468
+  },
+  {
+    "i": 1466,
+    "rows": [
+      2560,
+      2592
+    ],
+    "reader_sha256": "00c733ee479c48f6f7072ce6a4705c50a93182849852d651249ecac92e86017f",
+    "prior_pair": "es-foral-corporate-tax",
+    "prior_file": "rows.json",
+    "prior_row": 469
+  },
+  {
+    "i": 1555,
+    "rows": [
+      2671
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 253
+  },
+  {
+    "i": 1556,
+    "rows": [
+      2672
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 254
+  },
+  {
+    "i": 1557,
+    "rows": [
+      2673
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 255
+  },
+  {
+    "i": 1558,
+    "rows": [
+      2674
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 256
+  },
+  {
+    "i": 1559,
+    "rows": [
+      2675
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 257
+  },
+  {
+    "i": 1560,
+    "rows": [
+      2676
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 284
+  },
+  {
+    "i": 1561,
+    "rows": [
+      2677
+    ],
+    "reader_sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 285
+  }
+]

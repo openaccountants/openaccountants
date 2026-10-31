@@ -1,10 +1,10 @@
 ---
 name: fr-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing their French tax returns AND mentions freelancing, auto-entrepreneur, micro-entrepreneur, entreprise individuelle, profession libérale, or self-employment. Trigger on phrases like "aide-moi avec mes impôts", "préparer ma déclaration", "I'm a freelancer in France", "I'm an auto-entrepreneur", "prepare my 2042-C-PRO", or any similar phrasing where the user is a France-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the French self-employed tax workflow -- every other skill in the stack (france-tva, france-income-tax, france-cotisations, fr-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. France full-year residents only; self-employed individuals, micro-entrepreneurs, and sole proprietors.
-version: 1.0
+version: 1.1
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -110,35 +110,35 @@ Show the user the limit that applies to the year chosen at Q0, read from the mic
 
 The page is stamped "Vérifié le 13 mai 2026".
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
-| Income of 2025: sales of goods and accommodation, turnover of 2024 or 2023 | EUR 188,700 | "ne doit pas avoir dépassé 188 700 €" |
-| Income of 2025: other services (BIC) and liberal activity (BNC), turnover of 2024 or 2023 | EUR 77,700 | "ne doit pas avoir dépassé 77 700 €" |
-| Income received in 2026: sales of goods and accommodation, turnover of 2025 (N-1) or 2024 (N-2) | EUR 203,100 | "n’a pas dépassé 203 100 €" |
-| Income received in 2026: services (BIC) and liberal activity (BNC), turnover of 2025 or 2024 | EUR 83,600 | "n’a pas dépassé 83 600 €" |
-| Flat allowance, sales of goods and accommodation (BIC), other than furnished tourist lets | 71% | "Le taux d'abattement est de 71 %" |
-| Flat allowance, services (BIC) | 50% | "Le taux d'abattement est de 50 %" |
-| Flat allowance, liberal activity (BNC) | 34% | "Le taux d'abattement est de 34 %" |
-| Minimum allowance | EUR 305 | "Le montant de l’abattement ne peut pas être inférieur à 305 €" |
-| Flat income tax payment (versement libératoire), commerce, catering and accommodation | 1% | "1 % pour les activités de commerce, restauration et logement" |
-| Flat income tax payment, other BIC activities | 1.7% | "1,7 % pour les autres activités relevant des BIC" |
-| Flat income tax payment, BNC | 2.2% | "ce taux est de 2,2 %" |
-| Flat income tax payment, ceiling on the household's reference income of year N-2, single person | EUR 29,579 | "29 579 € pour une personne seule" |
-| Same ceiling, couple sharing one tax household | EUR 59,158 | "59 158 € pour une personne en couple" |
-| Same ceiling, couple with one child sharing one tax household | EUR 73,947.5 | "73 947,5 € pour une personne en couple avec 1 enfant et partageant le même foyer fiscal" |
-| Same ceiling, couple with two children sharing one tax household | EUR 88,737 | "88 737 € pour une personne en couple avec 2 enfants et partageant le même foyer fiscal" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |  |
+| Income of 2025: sales of goods and accommodation, turnover of 2024 or 2023 | EUR 188,700 | "ne doit pas avoir dépassé 188 700 €" | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Income of 2025: other services (BIC) and liberal activity (BNC), turnover of 2024 or 2023 | EUR 77,700 | "ne doit pas avoir dépassé 77 700 €" | same |
+| Income received in 2026: sales of goods and accommodation, turnover of 2025 (N-1) or 2024 (N-2) | EUR 203,100 | "n’a pas dépassé 203 100 €" | same |
+| Income received in 2026: services (BIC) and liberal activity (BNC), turnover of 2025 or 2024 | EUR 83,600 | "n’a pas dépassé 83 600 €" | same |
+| Flat allowance, sales of goods and accommodation (BIC), other than furnished tourist lets | 71% | "Le taux d'abattement est de 71 %" | same (2026) |
+| Flat allowance, services (BIC) | 50% | "Le taux d'abattement est de 50 %" | same (2026) |
+| Flat allowance, liberal activity (BNC) | 34% | "Le taux d'abattement est de 34 %" | same (2026) |
+| Minimum allowance | EUR 305 | "Le montant de l’abattement ne peut pas être inférieur à 305 €" | same (2026) |
+| Flat income tax payment (versement libératoire), commerce, catering and accommodation | 1% | "1 % pour les activités de commerce, restauration et logement" | same (2026) |
+| Flat income tax payment, other BIC activities | 1.7% | "1,7 % pour les autres activités relevant des BIC" | same (2026) |
+| Flat income tax payment, BNC | 2.2% | "ce taux est de 2,2 %" | same (2026) |
+| Flat income tax payment, ceiling on the household's reference income of year N-2, single person | EUR 29,579 | "29 579 € pour une personne seule" | same (2026) |
+| Same ceiling, couple sharing one tax household | EUR 59,158 | "59 158 € pour une personne en couple" | same (2026) |
+| Same ceiling, couple with one child sharing one tax household | EUR 73,947.5 | "73 947,5 € pour une personne en couple avec 1 enfant et partageant le même foyer fiscal" | same (2026) |
+| Same ceiling, couple with two children sharing one tax household | EUR 88,737 | "88 737 € pour une personne en couple avec 2 enfants et partageant le même foyer fiscal" | same (2026) |
 
 The micro regime is lost only after two consecutive years over the limit. The page says the income of year N is excluded "uniquement si l’un des seuils a été dépassé pendant 2 années consécutives, en N-1 et en N-2" (https://entreprendre.service-public.gouv.fr/vosdroits/F23267). One year over the limit does not end the regime. Furnished tourist lets have their own limits and allowances on that page: if the client lets furnished tourist accommodation, read them there, or use `fr-rental-income`.
 
 **The flat-payment ceiling: two official pages disagree**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
-| Option for the versement libératoire in 2026: reference income of 2024, single person (1 part) | EUR 29,315 | "29 315 € pour une personne seule (1 part)" |
-| Same, couple (2 parts) | EUR 58,630 | "58 630 € pour un couple (2 parts)" |
-| Same, couple with two children (3 parts) | EUR 87,945 | "87 945 € pour un couple avec deux enfants (3 parts)" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |  |
+| Option for the versement libératoire in 2026: reference income of 2024, single person (1 part) | EUR 29,315 | "29 315 € pour une personne seule (1 part)" | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Same, couple (2 parts) | EUR 58,630 | "58 630 € pour un couple (2 parts)" | same (2026) |
+| Same, couple with two children (3 parts) | EUR 87,945 | "87 945 € pour un couple avec deux enfants (3 parts)" | same (2026) |
 
 The service-public page in the micro table gives one ceiling and this impots.gouv.fr page gives a lower one for the option 'en 2026', tested on the 2024 reference income. The service-public page adds that an option made before 30 September of a year applies from 1 January of the next ("Si la demande est effectuée avant le 30 septembre 2026, le versement libératoire s'appliquera aux revenus perçus à partir du 1 er janvier 2027") and, for a business created in the year, before the last day of the third month after creation. Do not pick one. The impots.gouv.fr page sets two more conditions for the option: the previous year's turnover must be below the micro limit for the activity ("Votre chiffre d'affaires de l'année précédente est inférieur à : 188 700 € pour les activités de vente de marchandises, de fourniture de logement ... 77 700 € pour les prestations de services (BIC) et les professions libérales (BNC)") and the client must be in the micro-social regime ("Option pour le régime micro-social"). If the client's 2024 reference income falls between the two values for their household, flag it for the reviewer and ask the client for the URSSAF confirmation of the option. If it is below both, the ceiling is not in question; if it is above both, the option is not available.
 
@@ -162,16 +162,16 @@ The service-public page in the micro table gives one ceiling and this impots.gou
 
 The page is stamped "Vérifié le 01 janvier 2026" and says that the proposal from the 2025 finance law "visant à instaurer un seuil unique de franchise en base de TVA de 25 000 € a été abandonnée" (https://entreprendre.service-public.gouv.fr/vosdroits/F21746). Any document or software that applies a single lower threshold is wrong for 2026. Each limit is "inférieur ou égal" to the amount, on turnover excluding VAT. Each activity has two: a basic limit on the previous calendar year (N-1) and a higher limit on the current year (N).
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |
-| Abandoned single threshold (never apply it) | EUR 25,000 | "seuil unique de franchise en base de TVA de 25 000 € a été abandonnée" |
-| Sales of goods and accommodation, previous year (N-1) | EUR 85,000 | "est inférieur ou égal à 85 000 € (seuil de la franchise en base de TVA)" |
-| Sales of goods and accommodation, current year (N) | EUR 93,500 | "est inférieur ou égal à 93 500 € (seuil majoré de la franchise en base de TVA)" |
-| Services and liberal professions other than lawyers, previous year (N-1) | EUR 37,500 | "est inférieur ou égal à 37 500 € (seuil de la franchise en base de TVA)" |
-| Services and liberal professions other than lawyers, current year (N) | EUR 41,250 | "est inférieur ou égal à 41 250 € (seuil majoré de la franchise en base de TVA)" |
-| A lawyer's regulated work, and authors' and performers' works, previous year (N-1) | EUR 50,000 | "inférieur ou égal à 50 000 € (seuil de la franchise en base de TVA)" |
-| Same, current year (N) | EUR 55,000 | "est inférieur ou égal à 55 000 € (seuil majoré de la franchise en base de TVA)" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |  |
+| Abandoned single threshold (never apply it) | EUR 25,000 | "seuil unique de franchise en base de TVA de 25 000 € a été abandonnée" | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (2026) |
+| Sales of goods and accommodation, previous year (N-1) | EUR 85,000 | "est inférieur ou égal à 85 000 € (seuil de la franchise en base de TVA)" | same (2026) |
+| Sales of goods and accommodation, current year (N) | EUR 93,500 | "est inférieur ou égal à 93 500 € (seuil majoré de la franchise en base de TVA)" | same (2026) |
+| Services and liberal professions other than lawyers, previous year (N-1) | EUR 37,500 | "est inférieur ou égal à 37 500 € (seuil de la franchise en base de TVA)" | same (2026) |
+| Services and liberal professions other than lawyers, current year (N) | EUR 41,250 | "est inférieur ou égal à 41 250 € (seuil majoré de la franchise en base de TVA)" | same (2026) |
+| A lawyer's regulated work, and authors' and performers' works, previous year (N-1) | EUR 50,000 | "inférieur ou égal à 50 000 € (seuil de la franchise en base de TVA)" | same (2026) |
+| Same, current year (N) | EUR 55,000 | "est inférieur ou égal à 55 000 € (seuil majoré de la franchise en base de TVA)" | same (2026) |
 
 Crossing the basic limit of the previous year brings VAT "dès le 1er janvier de l’année suivante"; crossing the higher limit during the current year brings VAT "dès le 1 er jour de dépassement" (https://entreprendre.service-public.gouv.fr/vosdroits/F21746). The franchise limits and the micro limits are different numbers: a micro-entrepreneur can stay in the micro regime and still have to charge VAT.
 
@@ -207,21 +207,21 @@ Q8: "Régime matrimonial (if married/PACSé)?"
 
 **Micro-social contribution rates in force from 1 January 2026, and the Acre rates**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
-| Sale of goods (BIC), full rate | 12.3% | "Achat/revente de marchandises (BIC) 12,3 %" |
-| Commercial and craft services (BIC), full rate | 21.2% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Other services (BNC), full rate | 25.6% | "Autres prestations de services (BNC) 25,6 %" |
-| Regulated liberal professions under Cipav, full rate | 23.2% | "Professions libérales réglementées relevant de la Cipav (BIC et BNC) 23,2 %" |
-| Acre, sale of goods, activity started up to 30 June 2026 | 6.2% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" |
-| Acre, sale of goods, activity started from 1 July 2026 | 9.3% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" |
-| Acre, commercial and craft services, started up to 30 June 2026 | 10.6% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Acre, commercial and craft services, started from 1 July 2026 | 15.9% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Acre, other services (BNC), started up to 30 June 2026 | 12.8% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" |
-| Acre, other services (BNC), started from 1 July 2026 | 19.2% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" |
-| Acre, Cipav, started up to 30 June 2026 | 13.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" |
-| Acre, Cipav, started from 1 July 2026 | 17.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |  |
+| Sale of goods (BIC), full rate | 12.3% | "Achat/revente de marchandises (BIC) 12,3 %" | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (2026) |
+| Commercial and craft services (BIC), full rate | 21.2% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same (2026) |
+| Other services (BNC), full rate | 25.6% | "Autres prestations de services (BNC) 25,6 %" | same (2026) |
+| Regulated liberal professions under Cipav, full rate | 23.2% | "Professions libérales réglementées relevant de la Cipav (BIC et BNC) 23,2 %" | same (2026) |
+| Acre, sale of goods, activity started up to 30 June 2026 | 6.2% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" | same |
+| Acre, sale of goods, activity started from 1 July 2026 | 9.3% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" | same |
+| Acre, commercial and craft services, started up to 30 June 2026 | 10.6% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same |
+| Acre, commercial and craft services, started from 1 July 2026 | 15.9% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same |
+| Acre, other services (BNC), started up to 30 June 2026 | 12.8% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" | same |
+| Acre, other services (BNC), started from 1 July 2026 | 19.2% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" | same |
+| Acre, Cipav, started up to 30 June 2026 | 13.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" | same |
+| Acre, Cipav, started from 1 July 2026 | 17.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" | same |
 
 The asterisk on the Cipav Acre rate is the page's: "pour les professions libérales relevant de la Cipav, le taux est réhaussé en tenant compte du taux minimum (somme des taux CSG/CRDS et du taux de retraite complémentaire non exonérés par l'Acre)". The Acre columns are headed "Débuts d'activité Jusqu'au 30/06/2026" and "Débuts d'activité à compter du 1/07/2026"; the full-rate column is headed "A compter du 1/01/2026". These are the rates for 2026 turnover. For turnover of 2025, read the rate printed on the client's own URSSAF declarations; this skill does not carry the 2025 rates. A micro-entrepreneur must declare turnover each month or each quarter, even when it is nil (same page). The flat income tax payment, where opted for, is collected with the contributions on the same periodic declaration.
 
@@ -437,10 +437,10 @@ Flag every credit and reduction for reviewer confirmation.
 
 **Flat deduction on salaries**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |
-| Flat deduction for professional expenses on employment income, kept unless actual expenses are claimed | 10% | "Déduction forfaitaire de 10 % pour frais professionnels" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 |  |
+| Flat deduction for professional expenses on employment income, kept unless actual expenses are claimed | 10% | "Déduction forfaitaire de 10 % pour frais professionnels" | https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 (2026) |
 
 ## Section 7: The final handoff
 
@@ -661,24 +661,24 @@ For an unprepared user (has to go and fetch documents):
 
 **VAT rates in mainland France**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/1013-PGP.html |
-| Standard rate | 20% | "la seconde du taux de 20 %" |
-| Intermediate rate | 10% | "soumet au taux de 10 % de la TVA les abonnements" |
-| Reduced rate | 5.5% | "relevant du taux réduit de 5,5 % de la TVA" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/1013-PGP.html |  |
+| Standard rate | 20% | "la seconde du taux de 20 %" | https://bofip.impots.gouv.fr/bofip/1013-PGP.html (2026) |
+| Intermediate rate | 10% | "soumet au taux de 10 % de la TVA les abonnements" | same (2026) |
+| Reduced rate | 5.5% | "relevant du taux réduit de 5,5 % de la TVA" | same (2026) |
 
 **VAT filing and instalments (réel simplifié and réel normal)**
 
 The page is stamped "Vérifié le 21 février 2026".
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
-| Réel simplifié, year closing 31 December: first instalment in July, share of the previous year's VAT | 55% | "l'entreprise doit verser 55 % de la taxe due l'année précédente" |
-| Réel simplifié: second instalment in December, share of the previous year's VAT | 40% | "l'entreprise doit verser 40 % de la taxe due l'année précédente" |
-| Réel simplifié: no instalments the following year where the VAT paid the previous year was below | EUR 1,000 | "un montant de TVA inférieur à 1 000 € l'année précédente est dispensée" |
-| Réel normal: the return is quarterly instead of monthly where the VAT due each year is below | EUR 4,000 | "le montant de la TVA exigible chaque année est inférieur à 4 000 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |  |
+| Réel simplifié, year closing 31 December: first instalment in July, share of the previous year's VAT | 55% | "l'entreprise doit verser 55 % de la taxe due l'année précédente" | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (2026) |
+| Réel simplifié: second instalment in December, share of the previous year's VAT | 40% | "l'entreprise doit verser 40 % de la taxe due l'année précédente" | same (2026) |
+| Réel simplifié: no instalments the following year where the VAT paid the previous year was below | EUR 1,000 | "un montant de TVA inférieur à 1 000 € l'année précédente est dispensée" | same (2026) |
+| Réel normal: the return is quarterly instead of monthly where the VAT due each year is below | EUR 4,000 | "le montant de la TVA exigible chaque année est inférieur à 4 000 €" | same (2026) |
 
 The CA12 is filed "au plus tard le 2 e jour ouvré suivant le 1 er mai" for a year closing on 31 December, and the balance is paid with it (https://entreprendre.service-public.gouv.fr/vosdroits/F23566).
 
@@ -686,32 +686,32 @@ The CA12 is filed "au plus tard le 2 e jour ouvré suivant le 1 er mai" for a ye
 
 The page is stamped "Vérifié le 02 avril 2026".
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |
-| Exemption where turnover excluding VAT of the year before last (N-2), or of the first year for a business created in N-1, did not exceed | EUR 5,000 | "n'a pas dépassé 5 000 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |  |
+| Exemption where turnover excluding VAT of the year before last (N-2), or of the first year for a business created in N-1, did not exceed | EUR 5,000 | "n'a pas dépassé 5 000 €" | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (2026) |
 
 A business is exempt from CFE in the year it is created, "Ensuite, sa base d'imposition est réduite de moitié l'année suivante"; the CFE is in general payable "au plus tard le 15 décembre (inclus)" (https://entreprendre.service-public.gouv.fr/vosdroits/F23547). The amount itself is set by the commune: see `fr-cfe`.
 
 **Small equipment taken to expense**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
-| Unit value excluding VAT up to which materials and tools may be deducted immediately | EUR 500 | "d'une valeur unitaire hors taxes n'excédant pas 500 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |  |
+| Unit value excluding VAT up to which materials and tools may be deducted immediately | EUR 500 | "d'une valeur unitaire hors taxes n'excédant pas 500 €" | https://bofip.impots.gouv.fr/bofip/2109-PGP.html (2026) |
 
 **Investment income: the flat tax is two parts**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 |
-| Income tax part of the prélèvement forfaitaire unique | 12.8% | "l'impôt sur le revenu ( 12,8 % )" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 |  |
+| Income tax part of the prélèvement forfaitaire unique | 12.8% | "l'impôt sur le revenu ( 12,8 % )" | https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 (2026) |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Social levies, investment income of 2026, general case | 18.6% | under "Revenus de 2026", cas général: "18,6 %" in the total row |
-| Social levies, investment income of 2025 | 17.2% | under "Revenus de 2025": "17,2 %" in the total row |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |  |
+| Social levies, investment income of 2026, general case | 18.6% | under "Revenus de 2026", cas général: "18,6 %" in the total row | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
+| Social levies, investment income of 2025 | 17.2% | under "Revenus de 2025": "17,2 %" in the total row | same |
 
 The levies differ again for rental income, property gains and some savings products: `fr-capital-gains` and `fr-rental-income` carry them.
 
@@ -750,21 +750,23 @@ The levies differ again for rental income, property gains and some savings produ
 
 ## Sources
 
-- Régime fiscal de la micro-entreprise: https://entreprendre.service-public.gouv.fr/vosdroits/F23267
-- Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur
-- Résultat imposable à l'impôt sur le revenu (IR) ou à l'impôt sur les sociétés (IS): https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes
-- Les modalités de la déclaration de revenus en 2026: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026
-- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746
-- Déclarer et payer la TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F23566
-- VAT rates on services: https://bofip.impots.gouv.fr/bofip/1013-PGP.html
-- Notice to the CA3, 2026: https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf
-- L'essentiel du statut (auto-entrepreneur): https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html
-- Quotient familial d'un couple marié ou pacsé: https://www.service-public.gouv.fr/particuliers/vosdroits/F2705
-- Cotisation foncière des entreprises: https://entreprendre.service-public.gouv.fr/vosdroits/F23547
-- Small-value equipment: https://bofip.impots.gouv.fr/bofip/2109-PGP.html
-- Barème, flat deduction on salaries: https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217
-- Revenus d'épargne et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2613
-- Prélèvements sociaux sur les revenus du patrimoine et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2329
+- Régime fiscal de la micro-entreprise: https://entreprendre.service-public.gouv.fr/vosdroits/F23267 (read 2026-10-31)
+- Comment déclarer les revenus provenant de mon activité de micro-entrepreneur ?: https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur (read 2026-10-31)
+- Résultat imposable à l'impôt sur le revenu (IR) ou à l'impôt sur les sociétés (IS): https://www.impots.gouv.fr/professionnel/resultat-imposable-limpot-sur-le-revenu-ir-ou-limpot-sur-les-societes (read 2026-10-31)
+- Les modalités de la déclaration de revenus en 2026: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 (read 2026-10-31)
+- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (read 2026-10-31)
+- Déclarer et payer la TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (read 2026-10-31)
+- VAT rates on services: https://bofip.impots.gouv.fr/bofip/1013-PGP.html (read 2026-10-31)
+- Notice to the CA3, 2026: https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf (read 2026-10-31)
+- L'essentiel du statut (auto-entrepreneur): https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (read 2026-10-31)
+- Quotient familial d'un couple marié ou pacsé: https://www.service-public.gouv.fr/particuliers/vosdroits/F2705 (read 2026-10-31)
+- Cotisation foncière des entreprises: https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (read 2026-10-31)
+- Small-value equipment: https://bofip.impots.gouv.fr/bofip/2109-PGP.html (read 2026-10-31)
+- Barème, flat deduction on salaries: https://bofip.impots.gouv.fr/bofip/10855-PGP.html/identifiant=BOI-BAREME-000035-20260217 (read 2026-10-31)
+- Revenus d'épargne et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2613 (read 2026-10-31)
+- Prélèvements sociaux sur les revenus du patrimoine et de placement: https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 (read 2026-10-31)
+
+Not yet confirmed: the flat-payment ceiling for the option taken in 2026. F23267 prints EUR 29,579 for a single person against year N-2, and impots.gouv.fr prints EUR 29,315 against the 2024 reference income.
 
 ## Disclaimer
 

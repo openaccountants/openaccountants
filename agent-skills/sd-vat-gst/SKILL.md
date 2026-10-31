@@ -8,6 +8,8 @@ metadata:
   jurisdiction: "SD"
   tax_year: "2025"
   last_updated: "2026-09-11"
+  authored_by: "Ahmed Hassan"
+  trust_label: "Accountant-authored"
   review_status: "pending_review"
 ---
 

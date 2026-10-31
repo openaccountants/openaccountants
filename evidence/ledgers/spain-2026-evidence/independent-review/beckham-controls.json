@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ordinary600000",
+    "actual": "144000",
+    "expected": "144000",
+    "pass": true
+  },
+  {
+    "id": "ordinary600001",
+    "actual": "14400047/100",
+    "expected": "14400047/100",
+    "pass": true
+  },
+  {
+    "id": "ordinary650000",
+    "actual": "167500",
+    "expected": "167500",
+    "pass": true
+  },
+  {
+    "id": "ordinary110000",
+    "actual": "26400",
+    "expected": "26400",
+    "pass": true
+  },
+  {
+    "id": "savings6000",
+    "actual": "1140",
+    "expected": "1140",
+    "pass": true
+  },
+  {
+    "id": "savings50000",
+    "actual": "10380",
+    "expected": "10380",
+    "pass": true
+  },
+  {
+    "id": "savings200000",
+    "actual": "44880",
+    "expected": "44880",
+    "pass": true
+  },
+  {
+    "id": "savings300000",
+    "actual": "71880",
+    "expected": "71880",
+    "pass": true
+  },
+  {
+    "id": "savings310000",
+    "actual": "74880",
+    "expected": "74880",
+    "pass": true
+  },
+  {
+    "id": "savings4000",
+    "actual": "760",
+    "expected": "760",
+    "pass": true
+  },
+  {
+    "id": "example1",
+    "actual": "27160",
+    "expected": "27160",
+    "pass": true
+  },
+  {
+    "id": "art80effective percentage",
+    "actual": "25.77",
+    "expected": "25.77",
+    "pass": true
+  },
+  {
+    "id": "correct foreign income limb",
+    "actual": "77310.00",
+    "expected": "77310",
+    "pass": true
+  },
+  {
+    "id": "frozen unrounded limb",
+    "actual": "1005000/13",
+    "expected": "1005000/13",
+    "pass": true
+  },
+  {
+    "id": "specialcap",
+    "actual": "50250",
+    "expected": "50250",
+    "pass": true
+  },
+  {
+    "id": "credit",
+    "actual": "50250",
+    "expected": "50250",
+    "pass": true
+  },
+  {
+    "id": "aftercredit",
+    "actual": "192130",
+    "expected": "192130",
+    "pass": true
+  },
+  {
+    "id": "twopayers",
+    "actual": "156000",
+    "expected": "156000",
+    "pass": true
+  },
+  {
+    "id": "dividendwithholding",
+    "actual": "58900",
+    "expected": "58900",
+    "pass": true
+  },
+  {
+    "id": "balance",
+    "actual": "-22770",
+    "expected": "-22770",
+    "pass": true
+  },
+  {
+    "id": "rounding separates smaller foreign base",
+    "actual": "25770.00",
+    "expected": "25770",
+    "pass": true
+  },
+  {
+    "id": "unrounded alternative for smaller base",
+    "actual": "335000/13",
+    "expected": "335000/13",
+    "pass": true
+  }
+]

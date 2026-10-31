@@ -1,0 +1,404 @@
+{
+  "es-beckham": {
+    "rows": 158,
+    "quote_occurrences": 612,
+    "bad": []
+  },
+  "es-modelo-111": {
+    "rows": 163,
+    "quote_occurrences": 536,
+    "bad": []
+  },
+  "es-estimated-tax": {
+    "rows": 222,
+    "quote_occurrences": 767,
+    "bad": [
+      {
+        "id": "es-estimated-tax-0034",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0035",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0036",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0037",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0038",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0039",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0084",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0177",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0178",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0179",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0180",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0181",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0182",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0183",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0184",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0185",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0186",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0187",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0188",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0189",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0190",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0191",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0192",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      },
+      {
+        "id": "es-estimated-tax-0193",
+        "file": "sources/RIRPF.reader.txt",
+        "LF": [
+          6296,
+          6296
+        ],
+        "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25"
+      }
+    ]
+  },
+  "spain-transfer-pricing": {
+    "rows": 99,
+    "bad": [
+      {
+        "id": 8,
+        "quote": "d) A las operaciones realizadas con la misma persona o entidad vinculada, siempre que el importe de la contraprestación del conjunto de operaciones no supere los 250.000 euros, de acuerdo con el valor de mercado.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt"
+      },
+      {
+        "id": 16,
+        "quote": "d) A las operaciones realizadas con la misma persona o entidad vinculada, siempre que el importe de la contraprestación del conjunto de operaciones no supere los 250.000 euros, de acuerdo con el valor de mercado.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt"
+      },
+      {
+        "id": 18,
+        "quote": "d) A las operaciones realizadas con la misma persona o entidad vinculada, siempre que el importe de la contraprestación del conjunto de operaciones no supere los 250.000 euros, de acuerdo con el valor de mercado.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt"
+      },
+      {
+        "id": 49,
+        "quote": "a) La sanción consistirá en multa pecuniaria fija de 1.000 euros por cada dato y 10.000 euros por conjunto de datos, omitido, o falso, referidos a cada una de las obligaciones de documentación que se establezcan reglamentariamente para el grupo o para cada persona o entidad en su condición de contribuyente.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt"
+      },
+      {
+        "id": 55,
+        "quote": "4. Tratándose de requerimientos individualizados o de declaraciones exigidas con carácter general en cumplimiento de la obligación de suministro de información recogida en los artículos 93 y 94 de esta Ley, que no tengan por objeto datos expresados en magnitudes monetarias y hayan sido contestados o presentadas de forma incompleta, inexacta, o con datos falsos, la sanción consistirá en multa pecuniaria fija de 200 euros por cada dato o conjunto de datos referidos a una misma persona o entidad omitido, inexacto o falso.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt"
+      },
+      {
+        "id": 56,
+        "quote": "Si el importe de las operaciones no declaradas o declaradas incorrectamente representa un porcentaje superior al 10, 25, 50 o 75 por ciento del importe de las operaciones que debieron declararse, la sanción consistirá en multa pecuniaria proporcional del 0,5, 1, 1,5 o 2 por ciento del importe de las operaciones no declaradas o declaradas incorrectamente, respectivamente. En caso de que el porcentaje sea inferior al 10 por ciento, se impondrá multa pecuniaria fija de 500 euros.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt"
+      },
+      {
+        "id": 57,
+        "quote": "la sanción consistirá en multa pecuniaria proporcional de hasta el 2 por ciento del importe de las operaciones no declaradas o declaradas incorrectamente, con un mínimo de 500 euros.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt"
+      },
+      {
+        "id": 67,
+        "quote": "operaciones con personas o entidades vinculadas en los términos previstos en el artículo 42.3 de la Norma Foral del Impuesto sobre Sociedades exclusivamente cuando su importe conjunto supere la cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se refiere al conjunto de las operacio- nes por persona o entidad vinculada. No obstante, no será obligatorio cumplimentar la «Información de operaciones con per- sonas o entidades vinculadas» del modelo 232, respecto de las siguientes operaciones: a) \u0007Las",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 68,
+        "quote": "el artículo 42.3 de la Norma Foral del Impuesto sobre Sociedades exclusivamente cuando su importe conjunto supere la cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se refiere al conjunto de las operacio- nes por persona o entidad vinculada. No obstante, no será obligatorio cumplimentar la «Información de operaciones con per- sonas o entidades vinculadas» del modelo 232, respecto de las siguientes operaciones: a) \u0007Las realizadas entre entidades que se integren en un mismo grupo de consolida- ción",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 69,
+        "quote": "entidades vinculadas exclusivamente cuando su importe conjunto supere la cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se refiere al conjunto de las operaciones por persona o entidad vinculada que sean del mismo tipo y hayan sido valoradas con el mismo método de valoración.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt"
+      },
+      {
+        "id": 70,
+        "quote": "de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y, se refiere al conjunto de las operaciones por persona o entidad vinculada que sean del mismo tipo y hayan sido valoradas con el mismo método de valoración. 2 LG.:S.S.1-1958 64260-8102-I-OAG VC\\KE dizkari Ofiziala Número 1 8 2 l de Gipuzkoa Jueves, a 20 de septiembre de 2018",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-transfer-pricing/G232-right-column.reader.txt"
+      },
+      {
+        "id": 71,
+        "quote": "operaciones con per- sonas o entidades vinculadas» del modelo 232, respecto de las siguientes operaciones: a) \u0007Las realizadas entre entidades que se integren en un mismo grupo de consolida- ción fiscal que haya optado por el régimen regulado en el Capítulo VI del Título VI de la Norma Foral del Impuesto sobre Sociedades. b) \u0007Las realizadas con sus miembros o con otras entidades integrantes del mismo grupo de consolidación fiscal que haya optado por el régimen regulado en el Capítulo VI del Título VI de la Norma Foral del Impuesto sobre",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 72,
+        "quote": "en el ámbito de ofertas públicas de venta o de ofertas públicas de adquisición de valores. d) Las realizadas entre entidades de crédito integradas a través de un sistema institucional de protección aprobado por el Banco de España, que tenga relación con el cumplimiento por parte del referido sistema institucional de protección de los requi- sitos establecidos en la normativa que resulte de aplicación. 3. Estarán obligados a cumplimentar el cuadro informativo «operaciones con personas o entidades vinculadas en caso de aplicación de la reducción",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-transfer-pricing/G232-right-column.reader.txt"
+      },
+      {
+        "id": 73,
+        "quote": "cve: BOB-2018a118-(I-614) en aquellos casos en que el contribuyente realice operaciones o tenga valores en países o territorios calificados como paraísos fiscales independientemente de su importe.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 74,
+        "quote": "Artículo 1.—\u0007Modificación de la Orden Foral 1047/2018, de 12 de junio, del diputado foral de Hacienda y Finanzas por la que se aprueba el modelo 232 de Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales Se sustituye el Anexo de la Orden Foral 1047/2018, de 12 de junio, del diputado foral de Hacienda y Finanzas por la que se aprueba el modelo 232 de Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/46e96eb7cb6ebc3fe1a4.pdf.reader.txt"
+      },
+      {
+        "id": 75,
+        "quote": "Información operaciones con personas o entidades vinculadas Indicar las operaciones del ejercicio (criterio de devengo contable) con personas o entidades vinculadas, residentes y no residentes, de acuerdo con lo establecido en el artículo 42 de la Norma Foral 11/2013, que agrupen un determinado tipo de operación siempre que se haya utilizado el mismo método de valoración. Se deberán declarar separadamente las operaciones de ingreso y pago, sin efectuar compensaciones entre ellas aunque correspondan al mismo concepto",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 76,
+        "quote": "Artículo 6.—Documentación A fin de cumplimentar la información correspondiente a operaciones con personas o entidades vinculadas habrán de tenerse en cuenta las siguientes reglas: a) \u0007En las operaciones que supongan gastos o ingresos contables, se atenderá al criterio de devengo contable de dichas operaciones con independencia de cuan- do se produzca la corriente monetaria del cobro o pago. b) \u0007En las operaciones que no supongan gasto o ingreso contable, se atenderá a la fecha de realización de la operación con independencia de cuando se",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 77,
+        "quote": "independencia de cuan- do se produzca la corriente monetaria del cobro o pago. b) \u0007En las operaciones que no supongan gasto o ingreso contable, se atenderá a la fecha de realización de la operación con independencia de cuando se produzca la corriente monetaria derivada de las mismas. c) \u0007En las operaciones que se extienden a lo largo de varios ejercicios, si el valor de la operación supera el límite de 36.000 euros y la operación sigue vigente a lo largo de varios ejercicios sólo debe declararse en la información adicional del ejercicio en que",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 78,
+        "quote": "extienden a lo largo de varios ejercicios, si el valor de la operación supera el límite de 36.000 euros y la operación sigue vigente a lo largo de varios ejercicios sólo debe declararse en la información adicional del ejercicio en que se realice la operación. \u0007En el supuesto de prestaciones de servicios continuadas a lo largo del tiempo tanto para el cómputo de la cifra de 36.000 euros, como para determinar en qué momento deben declararse, habrá que estar al valor de la operación en cada uno de los ejercicios.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 79,
+        "quote": "c) En las operaciones que se extienden a lo largo de varios ejercicios, si el valor de la opera- ción supera el límite de 36.000 euros y la operación sigue vigente a lo largo de varios ejercicios sólo debe declararse en la información adicional del ejercicio en que se realice la operación. En el supuesto de prestaciones de servicios continuadas a lo largo del tiempo, tanto para el cómputo de la cifra de 36.000 euros como para determinar en qué momento deben declararse, habrá que estar al valor de la operación en cada uno de los ejercicios. 4.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt"
+      },
+      {
+        "id": 80,
+        "quote": "Artículo 5.—Plazo de presentación del Modelo 232 La presentación del modelo 232 de «Declaración informativa de operaciones vincula- das y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» se deberá realizar en el mes siguiente a los diez meses posteriores a la conclusión del período impositivo al que se refiera la información a Suministrar.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 81,
+        "quote": "informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales” se deberá realizar en el mes siguiente a los diez meses posteriores a la conclusión del período impositivo al que se refiera la información a suministrar. Artículo 5. Forma de presentación, condiciones generales y procedimiento para la presen- tación telemática por Internet del modelo 232 1. La presentación del modelo 232, “declaración informativa de operaciones vinculadas y de operaciones y situaciones",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt"
+      },
+      {
+        "id": 82,
+        "quote": "Artículo 4. Plazo de presentación del modelo 232 de declaración informativa de operaciones vinculadas y de opera- ciones y situaciones relacionadas con países o territorios consi- derados como paraísos fiscales. La presentación del modelo 232 de declaración informativa de operaciones vinculadas y de operaciones y situaciones rela- cionadas con países o territorios considerados como paraísos fiscales se deberá realizar en el mes siguiente a los diez meses posteriores a la conclusión del período impositivo al que se refiera la información a",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-transfer-pricing/G232-right-column.reader.txt"
+      },
+      {
+        "id": 83,
+        "quote": "Artículo 3.—Forma de presentación del modelo 232 El modelo 232 se presentará de forma obligatoria por vía telemática. BOLETÍN OFICIAL DE BIZKAIA BOB Núm. 118 Miércoles, 20 de junio de 2018 Pág. 3",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 84,
+        "quote": "como paraísos fiscales” se efectuará obligatoriamente por vía telemática a través de Internet. 2. El modelo 232 se cumplimentará mediante el programa de ayuda “modelos fiscales” desarrollado por el Departamento de Hacienda, Finanzas y Presupuestos y se presentará obli- gatoriamente por vía telemática a través de la Sede Electrónica “DiputacionDigital” (en adelante “DiputacionDigital”). En el modelo se hará constar el número identificativo de la declaración que será un número secuencial cuyos tres primeros dígitos se corresponderán con el",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt"
+      },
+      {
+        "id": 85,
+        "quote": "Gipuzkoa. 3. Sin perjuicio de lo dispuesto en el apartado 1 anterior, la presentación por medios electrónicos se realizará por Inter- net, mediante la plataforma Zergabidea. La plataforma Zergabidea se encuentra disponible en el portal https://zergabidea.gipuzkoa.eus. También se puede acce- der a la misma a través de la página web oficial del Departamento de Hacienda y Finanzas, www.gipuzkoa.eus/es/web/ogasuna. DISPOSICIÓN FINAL La presente orden foral entrará en vigor al día siguiente al de su publicación en el BOLETÍN OFICIAL de Gipuzkoa y",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-transfer-pricing/G232-right-column.reader.txt"
+      },
+      {
+        "id": 86,
+        "quote": "personas o entidades vinculadas en los términos previstos en el artículo 42.3 de la Norma Foral del Impuesto sobre Sociedades exclusivamente cuando su importe conjunto supere la cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se refiere al conjunto de las operacio- nes por persona o entidad vinculada. No obstante, no será obligatorio cumplimentar la «Información de operaciones con per- sonas o entidades vinculadas» del modelo 232, respecto de las siguientes operaciones: a) \u0007Las realizadas entre",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 87,
+        "quote": "cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se refiere al conjunto de las operaciones por persona o entidad vinculada que sean del mismo tipo y hayan sido valoradas con el mismo método de valoración.",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt"
+      },
+      {
+        "id": 88,
+        "quote": "Sociedades y del Impuesto sobre la Renta de No Residentes que actúen mediante establecimiento permanente, así como las entidades en régimen de atribución de rentas constituidas en el extranjero con presencia en el Territorio Histórico de Bizkaia, que rea- licen operaciones con personas o entidades vinculadas en los términos previstos en el artículo 42.3 de la Norma Foral del Impuesto sobre Sociedades exclusivamente cuando su importe conjunto supere la cifra de 36.000 euros de valor de mercado. Este límite de 36.000 euros no incluye el IVA y se",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt"
+      },
+      {
+        "id": 98,
+        "quote": "ANUAL 17.094,00 € (14 pagas) 7.200,00 €",
+        "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0e1ddc48e3e06502ebd0.reader.txt"
+      }
+    ],
+    "reader_hashes": {
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a3364f0174ad9bf55d1b.reader.txt": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/4f81a8ffd9105556084e.reader.txt": "88e333858bddba9320a03710dfa12dd8f69073d815a556dc284f0cb36f1f07b0",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a5b12f5c8d6c053785a9.reader.txt": "0a7f9c20060a6fc78747aaba47c08d890442fed226d339bae136ebd37739e9f2",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/704ae3484067f6e6db58.reader.txt": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/212f3ece6ca154d530bf.reader.txt": "81b3d72bec19c712867a16295b20126c3a097e8b0a80ee5566654c1fe3450a83",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/fbf728fd1de1fdd157eb.reader.txt": "cfbc0ea49ce9d8a7ad1e07afab9d48bb5ce6b9ab6838dad719f3ff2a9efdaa35",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/173cb9c85a5867dfdd99.reader.txt": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d768459678a5f553741c.pdf.reader.txt": "c1017bc4d4be259d7a47ea7a28ab54eeb85641171e364feea7accc77d981e3d5",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/dcc893e56c59542c9d07.pdf.reader.txt": "fb886a83e2cbefa80d11c4213f36d0fb7630bcc2c08f2fa9285b41d80e4e88a2",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-transfer-pricing/G232-right-column.reader.txt": "dc73de9b16b3f5bb219909465d62965bd4592a6eaee4bd724da24604c2bafacc",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/46e96eb7cb6ebc3fe1a4.pdf.reader.txt": "99bd660b973046d7b1e45964052aff66738aa290565b113092c9271c2c45a285",
+      "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0e1ddc48e3e06502ebd0.reader.txt": "03fe1a0ff3855da2f5de286a7795b48f3b2add7638c0966d2ed32615b17e316a"
+    }
+  }
+}
