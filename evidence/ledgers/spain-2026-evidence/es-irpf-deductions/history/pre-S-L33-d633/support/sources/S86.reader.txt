@@ -1,0 +1,195 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por cuidado de hijos menores
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad de Castilla y León
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por cuidado de hijos menores
+
+Normativa: Arts. 5.1 y 10 Texto Refundido de las disposiciones legales de la Comunidad de Castilla y León en materia de tributos propios y cedidos, aprobado por Decreto Legislativo 1/2013, de 12 de septiembre
+
+Cuantías y límites máximos de la deducción
+
+Los contribuyentes que, por motivos de trabajo, por cuenta propia o ajena, tengan que dejar a sus hijos menores al cuidado de una persona empleada de hogar o en guarderías o centros infantiles podrán optar por deducir alguna de las siguientes cantidades:
+
+El 30 por 100 de las cantidades satisfechas en el período impositivo a la persona empleada del hogar, con el límite máximo de 322 euros, tanto en tributación individual como conjunta.
+
+El 100 por 100 de los gastos satisfechos de preinscripción y de matrícula, así como los gastos de asistencia en horario general y ampliado y los gastos de alimentación, siempre que se hayan producido por meses completos, en escuelas, centros y guarderías infantiles de la Comunidad de Castilla y León, inscritas en el Registro de Centros para la conciliación de la vida familiar y laboral, con el límite máximo de 1.320 euros, tanto en tributación individual como conjunta.
+
+Base de deducción
+
+En el caso a) de la deducción por cuidado de hijos (por persona empleada del hogar) la base estará constituida por las cantidades satisfechas a la persona empleada del hogar. 
+
+No obstante, en caso de haber percibido subvenciones públicas por este concepto, el importe total de la deducción más la cuantía de dichas subvenciones no podrá superar el gasto efectivo, minorándose en este caso el importe máximo de la deducción en la cuantía necesaria. Si la suma no supera el gasto, no se deberá restar la subvención.
+
+En el caso b) de la deducción por cuidado de hijos (por gastos de guardería) la base de la deducción estará constituida por las cantidades satisfechas a escuelas infantiles, centros y guarderías infantiles en los términos antes indicados minorada, en su caso, en el importe de las subvenciones recibidas por este concepto. 
+
+No obstante, en el supuesto de que el contribuyente tuviera derecho al incremento de la deducción estatal por maternidad a que se refiere el artículo 81.2 de la Ley del IRPF, el importe de la misma minorará la cuantía de esta deducción determinada conforme los puntos anteriores. En este supuesto, el límite de 1.320 euros se verá reducido en la cantidad a que el contribuyente tuviera derecho por la deducción estatal.
+
+Requisitos y otras condiciones para la aplicación de la deducción
+
+Que, a la fecha de devengo del impuesto (normalmente, el 31 de diciembre), los hijos a los que sea de aplicación el mínimo por descendientes tuvieran menos de 4 años de edad.
+
+Que ambos padres realicen una actividad por cuenta propia o ajena, por la cual estén dados de alta en el régimen correspondiente de la Seguridad Social o Mutualidad.
+
+Que, en el supuesto de que la deducción sea aplicable por gastos de custodia por una persona empleada de hogar, esta esté dada de alta en el Sistema Especial para Empleados del Hogar del Régimen General de la Seguridad Social.
+
+Importante: los contribuyentes con derecho a la deducción deberán hacer constar el NIF de la persona empleada del hogar, escuela, centro o guardería infantil en el Anexo B.5 de la declaración.
+
+Que la base imponible general más la base imponible del ahorro menos el mínimo personal y familiar (casillas [0435], [0460] y [0520] de la declaración, respectivamente) no supere las siguientes cantidades:
+
+- 18.900 euros en tributación individual.
+
+- 31.500 euros en tributación conjunta.
+
+Cuando más de un contribuyente tenga derecho a la aplicación de esta deducción respecto de los mismos descendientes, el importe de las cantidades satisfechas se prorrateará entre ellos por partes iguales, respetando, en todo caso, el límite máximo de la deducción.
+
+Si el régimen económico del matrimonio es la sociedad de gananciales, las cantidades satisfechas por el cuidado de los hijos corresponden a los cónyuges por partes iguales, por lo que cada uno de ellos aplicará la deducción por las cantidades que le correspondan. Si el régimen económico del matrimonio es el de separación de bienes o no existe matrimonio ente los cónyuges, la deducción se aplicará por el cónyuge o cónyuges que haya satisfecho los gastos, por las cantidades efectivamente satisfechas.
+
+El importe total de la deducción aplicada por ambos progenitores, más el importe en su caso, del incremento de la deducción estatal por maternidad, más la cuantía de las ayudas públicas percibidas por este concepto no podrá superar, para el mismo ejercicio, el importe total del gasto efectivo en escuelas infantiles, centros y guarderías infantiles.
+
+En el caso de que el importe de todas las deducciones y ayudas públicas mencionadas superase el gasto satisfecho por la guardería, se minorará el importe máximo de la deducción en la cuantía necesaria. Dicha minoración se debe realizar proporcionalmente a la deducción aplicada de cada uno de los progenitores, con independencia de a qué progenitor se impute la ayuda.
+
+A estos efectos el cálculo para minorar el importe máximo de la deducción en la cuantía necesaria, se realiza de forma independiente por cada uno de los hijos si proceden de distintos progenitores.
+
+El contribuyente no tendrá derecho a la aplicación de esta deducción cuando hubiera optado por solicitar ayudas y prestaciones públicas otorgadas por la Junta de Castilla y León de análoga naturaleza por causa de cuidado de hijos menores y se hubieran concedido.
+
+Se hace constar, a tal efecto, la compatibilidad de la presente deducción con la percepción de las ayudas reguladas en la ORDEN FAM/882/2021, de 12 de julio, por la que se aprueban las bases reguladoras para la concesión del «Bono Concilia» a las familias de Castilla y León para la conciliación de la vida personal, familiar y laboral en el cuidado de menores de cero a tres años, por no presentar naturaleza análoga, de acuerdo con el criterio remitido por la Comunidad Autónoma.
+
+El importe del Bono Concilia percibido no computa a efectos de comprobar que el importe total de la deducción aplicada por ambos progenitores más, en su caso, el importe del incremento por la deducción estatal por maternidad y el de otras ayudas públicas percibidas por el concepto de cuidado de hijos menores, supera el gasto efectivamente incurrido por dicho concepto, ni en la consiguiente minoración de la cuantía máxima deducible si se diera este supuesto.
+
+Se hace constar, adicionalmente, la compatibilidad de la presente deducción con la percepción de "Ayudas por reducción de jornada y excedencia" reguladas por la ORDEN FAM/1454/2023, de 18 de diciembre, por la que se aprueban las bases reguladoras para la concesión de subvenciones destinadas a la conciliación de la vida personal, familiar y laboral en Castilla y León. El importe percibido por estas ayudas por reducción de jornada y excedencia tampoco computa a los efectos mencionados en el párrafo anterior.
+
+Saldos pendientes de aplicación generados en el ejercicio 2022
+
+Los contribuyentes que en el ejercicio citado hubieran tenido derecho a aplicar la presente deducción y hubieran carecido de cuota íntegra autonómica suficiente para aplicarse el total del importe generado por dicha deducción conservarán el derecho a aplicarse el importe no deducido en los tres períodos impositivos consecutivos siguientes hasta agotar, en su caso, el importe total de la deducción.
+
+Por tanto, en la declaración del IRPF del ejercicio 2025 finaliza la posibilidad de aplicar el importe generado en el ejercicio 2022 y no deducido, pudiendo, en su caso, tal y como se indica en el párrafo siguiente, solicitar a  la Junta de Castilla y León el abono de la cantidad que les reste por aplicar.
+
+De no resultar finalmente aplicada la totalidad de la deducción podrán solicitar a la Junta de Castilla y León, conforme al procedimiento establecido en la Orden EYH/706/2015, de 24 de agosto (BOCyL del 1 de septiembre), el abono de la cantidad que les reste por aplicar.
+
+Compatibilidad
+
+Esta deducción resulta compatible con la aplicación de las deducciones autonómicas "Por nacimiento o adopción de hijos", "Por partos o adopciones múltiples" y "Por gastos de adopción".
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 29/septiembre/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

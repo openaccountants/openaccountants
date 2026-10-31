@@ -1,0 +1,4525 @@
+{
+  "verdict": "PASS",
+  "candidate_commit": "c92542a3a82f818521abf464ccea3796632e92a6",
+  "prior_full_review_candidate": "89507147db70dad74f1389f9abdb03616bd33613",
+  "review_date": "2026-10-30",
+  "reviewer": "Same fresh independent full-pack reviewer; exact-repair follow-up; no subagents",
+  "scope": "Source/editorial publication only. Not named Liechtenstein accountant attestation, comprehensive coverage or actual filing acceptance. All7domains remain partial.",
+  "guide_sha256": {
+    "skills/international/liechtenstein/li-payroll-social.md": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf",
+    "skills/international/liechtenstein/li-transfer-pricing.md": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
+    "skills/international/liechtenstein/li-cross-border.md": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447",
+    "skills/international/liechtenstein/liechtenstein-vat.md": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
+    "skills/international/liechtenstein/li-corporate-income-tax.md": "162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28",
+    "skills/international/liechtenstein/li-income-tax.md": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f",
+    "skills/international/liechtenstein/li-company-formation.md": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
+    "skills/international/liechtenstein/li-tax-overview.md": "62eeb9200e1cf20bb32cc52aa20402126a48bb66ddae74178b2f972e8e86e83a",
+    "skills/international/liechtenstein/README.md": "4764f6a5a0cdd2bb008d67b3f999efc5fa208f934b9f8933672c7eb88b04ed73"
+  },
+  "freeze": {
+    "before_matches": true,
+    "after_matches": true,
+    "manifest_sha256": "88562bdff8b1f32452f839b237dfbf4806d96fc5cf3e262eef0b772aeefa0ef0",
+    "members": 132,
+    "original107member_freeze_preserved_exact": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "verdict": "CLOSED",
+      "guide": "skills/international/liechtenstein/li-transfer-pricing.md",
+      "lines": [
+        103,
+        105,
+        107,
+        109
+      ],
+      "source_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "articles": "SteV36d(1)–(4), note60; SteG63(2)–(3),124a",
+      "reason": "The foreign/domestic application evidence and refusal gates, increased-taxpayer finality trigger and three-calendar-month deadline are supplied.90-day/10-year124a reopening is separate. XB explicitly routes ordinary applications to this TP procedure. Actual treaty/MAP, service/holiday and foreign finality facts remain scoped."
+    },
+    {
+      "id": "F2",
+      "verdict": "CLOSED",
+      "guide": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "lines": [
+        98,
+        100
+      ],
+      "source_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "articles": "SteV42(1)–(3),42a(1)–(3), note75; SteG113(3)",
+      "reason": "The latest30-days-after-general-maturity request rule, reasoned written six-month extension, provisional payment and further-request-before-expiry conditions are supplied. The mandatory electronic program/filing, information-letter passcode and electronic41(2)attachments are supplied. No assigned2027calendar or filing acceptance is invented."
+    },
+    {
+      "id": "F3",
+      "verdict": "CLOSED",
+      "guide": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "lines": [
+        169,
+        170,
+        171,
+        172
+      ],
+      "source_url": "https://www.gesetze.li/konso/pdf/2009330000",
+      "articles": "Source attribution/editorial repair",
+      "reason": "MWSTG, MWSTV/amendment and authority evidence are separate valid source entries. All eight original official URL targets remain. The stray[law]scope definition is removed; reference definitions are unique and all used reference links resolve. Historical24October versus selected30October/browser transport/read limitations remain accurate."
+    },
+    {
+      "id": "F4",
+      "verdict": "CLOSED",
+      "guide": "ledgers/liechtenstein-vat.md",
+      "lines": [
+        31
+      ],
+      "source_url": "https://www.gesetze.li/konso/pdf/2009330000",
+      "articles": "MWSTG45(1)(a)",
+      "reason": "LI-VAT-024 in both Markdown and writer JSON now expressly requires the foreign supplier NOT REGISTERED. It agrees with the unchanged correct Guide and original negative-register source passage."
+    }
+  ],
+  "further_findings": [],
+  "original_row_continuity": {
+    "count": 663,
+    "byte_identical_row_objects": 655,
+    "VAT_label_correction": 1,
+    "refreshed_router_target_hashes": 7,
+    "no_other_rule_source_quote_date_case_field_change": true,
+    "rows": [
+      {
+        "id": "LI-PS-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-065",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-066",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-067",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-068",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-069",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-070",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-071",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-072",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-073",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-074",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-075",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-076",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-077",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-078",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-079",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-080",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-081",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-082",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-083",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-084",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-085",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-086",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-087",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-088",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-089",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-090",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-091",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-092",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-093",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-094",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-095",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-096",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-097",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-098",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-099",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-100",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-101",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-102",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-103",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-104",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-105",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-106",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-107",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-108",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-109",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-110",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-111",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-112",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-113",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-114",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-115",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-116",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-117",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-118",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-119",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-120",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-121",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-122",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-123",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-124",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-125",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-126",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-127",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-128",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-129",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-130",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-131",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-132",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-133",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-134",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-135",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-136",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-137",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-138",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-139",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-140",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-141",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-142",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-143",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-144",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-145",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-146",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-147",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-148",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-149",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-150",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-151",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-152",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-153",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-154",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-155",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-156",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-157",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-158",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-159",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-160",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-161",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-162",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-163",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-164",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-165",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-166",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-PS-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-065",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-066",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-067",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-068",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-069",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-070",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-071",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-072",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-073",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-074",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W05",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-W06",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-TP-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-W05",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-XB-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-024",
+        "unchanged": false,
+        "permitted_change": {
+          "rule_or_figure": {
+            "old": "Acquisitiontaxregisteredforeignsupplieranddomestic8(1)servicegates;notallforeigndebits",
+            "new": "Acquisition tax: foreign supplier NOT REGISTERED and domestic8(1)service gates; not all foreign debits"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-065",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-066",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-067",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-068",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-069",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-070",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-071",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-VAT-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-065",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-066",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-067",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-068",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-069",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-070",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-071",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-072",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-073",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-074",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-075",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-076",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-CORP-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-046",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-047",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-048",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-049",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-050",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-051",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-052",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-053",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-054",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-055",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-056",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-057",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-058",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-059",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-060",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-061",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-062",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-063",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-064",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-065",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-066",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-067",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-068",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-069",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-070",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-071",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-072",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-073",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-074",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-075",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-076",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-077",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-078",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-079",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-080",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-081",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-082",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-083",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-084",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-085",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-086",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-087",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-088",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-089",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-090",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-091",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-092",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-093",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-094",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-095",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-096",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-097",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-098",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-099",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-100",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-101",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-102",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-103",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-104",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-105",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-106",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-107",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-108",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-109",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-110",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-111",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-112",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-113",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-114",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-115",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-IND-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-001",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-002",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-003",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-004",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-005",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-006",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-007",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-012",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-013",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-014",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-015",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-016",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-017",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-018",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-019",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-020",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-021",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-022",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-023",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-024",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-025",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-026",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-027",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-028",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-029",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-030",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-031",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-032",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-033",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-034",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-035",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-036",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-037",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-038",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-039",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-040",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-041",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-042",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-043",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-044",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-045",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-W01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-W02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-W03",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-W04",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-C01",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-FORM-C02",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-001",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
+            "new": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-002",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "689df0232d972cd3c96619716e594d3384baf96400ddfbc4c8e7e198b7aa52ec",
+            "new": "162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-003",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "83ed049ad9c373473494f2767b0bd5f373552db647a6ce66107fa276321740e8",
+            "new": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-004",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "882888edacfe0b8a4a7543e52201a8e0602b1873a3d25e63499d6a3b9456730c",
+            "new": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-005",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "963195bbcb4533061b868a960e16f9abf00cf696c3422da21ece5cb811c5ea18",
+            "new": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-006",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "98c5ed4b05ce03aa2435c4313ac425216af3fff1c9c9a344463fb702192608dd",
+            "new": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-007",
+        "unchanged": false,
+        "permitted_change": {
+          "evidence_sha256": {
+            "old": "d03528182c8b1505f20de300c466cd616c3ca2d65e928f0998ec235dae295aab",
+            "new": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3"
+          }
+        },
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-008",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-009",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-010",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      },
+      {
+        "id": "LI-ROUTE-011",
+        "unchanged": true,
+        "permitted_change": {},
+        "pass": true
+      }
+    ]
+  },
+  "added_rows": [
+    {
+      "id": "LI-TP-075",
+      "rule_or_figure": "Foreign corresponding-adjustment application: full facts, original/foreign pricing evidence, reasonable challenge proof and final foreign assessment",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "die rechtskräftige ausländische Steuerveranlagung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS: re-read full SteV36d(1)(a)–(e), not just the short quote. The Guide requires complete facts, original pricing/arm-length basis, foreign correction method, all reasonable foreign challenge measures and final foreign assessment, correctly limited to SteG63(2).",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-TP-076",
+      "rule_or_figure": "Foreign application refusal: original defensible legal basis, arm-length foreign correction and reasonable foreign measures",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "sich der ursprünglich angesetzte Verrechnungspreis nicht auf eine vertretbare Rechtsansicht im Sinne von Art. 49 SteG stützt;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS: re-read36d(2)(a)–(c). The Guide separately preserves the three refusal grounds: original price lacks a defensible Art49 basis, foreign correction is not arm-length, or reasonable foreign measures were not taken. It does not promise relief just from submission.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-TP-077",
+      "rule_or_figure": "Domestic application requires36d(1)(a)–(b) and has stated36d(2)(a) refusal gate",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteV36d(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "hat die Informationen und Unterlagen nach Abs. 1 Bst. a und b zu enthalten;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS:36d(3) imports only36d(1)(a)–(b) for the domestic63(3) request and its stated36d(2)(a) refusal ground. The Guide does not impose a foreign assessment/challenge package on that domestic route.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-TP-078",
+      "rule_or_figure": "Both requests within3calendar months after finality of increased-profit taxpayer assessment; distinct from124a90days",
+      "Guide_section": "Cross-border points / Deadlines and filing",
+      "act_article_or_official_section": "SteV36d(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "innert drei Monaten nach Rechtskraft der Veranlagung des Steuerpflichtigen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS:36d(4) starts three months from finality of the assessment of the taxpayer whose profit was increased. The Guide names that taxpayer and distinguishes applicant-side dates. For reopening a final domestic assessment under124a in63(2) cases, it additionally preserves90days from foreign finality and10years from tax-year end; calendar months are not equated to days.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-TP-079",
+      "rule_or_figure": "36d first applies to2025 assessments, current2026 method included",
+      "Guide_section": "Sources / commencement",
+      "act_article_or_official_section": "SteV note60;LGBl2025/169",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Er findet erstmals auf Veranlagungen des Steuerjahres 2025 Anwendung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS: the source consolidation note60 and retained2025/169 commencement expressly first apply36d to assessments of tax year2025. The2026 workpaper therefore includes it without claiming retroactive application to earlier assessments.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-CORP-077",
+      "rule_or_figure": "Corporate return mandatory authority-provided electronic program and electronic submission",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "zu erstellen und elektronisch einzureichen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS:42a(1) requires creation using the electronic program provided on the tax authority website and electronic filing. The Guide states both requirements; no private submission is inferred.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-CORP-078",
+      "rule_or_figure": "Corporate passcode supplied with information letter",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "zusammen mit dem Informationsschreiben zur Einreichung der Steuererklärung einen Passcode.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS:42a(2) supplies the taxpayer a passcode together with the filing-information letter. The Guide correctly describes receipt, without inventing credentials or claiming access.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-CORP-079",
+      "rule_or_figure": "Corporate41(2) attachments accompany return electronically",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV42a(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Die erforderlichen Beilagen nach Art. 41 Abs. 2 sind zusammen mit der Steuererklärung elektronisch einzureichen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS:42a(3) requires the41(2) attachments with the electronic return. The Guide preserves that article-specific attachment scope and electronic route.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    },
+    {
+      "id": "LI-CORP-080",
+      "rule_or_figure": "42a first applies to2024 returns, current2026 method included",
+      "Guide_section": "Sources / commencement",
+      "act_article_or_official_section": "SteV note75;LGBl2024/501",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "findet erstmals auf Steuererklärungen für das Steuerjahr 2024 Anwendung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "independent_quote_identity": true,
+      "independent_source_hash_matches": true,
+      "verdict": "PASS",
+      "independent_reason": "PASS: consolidation note75 and retained2024/501 commencement first apply42a to returns for tax year2024, consistent with its use in the2026 preparation Guide.",
+      "evidence": "Preserved original SteV PDF/text, consolidated01.07.2026; source observation and SHA256 below, independently read in the first review and reread for this exact repair."
+    }
+  ],
+  "review_chain_total_groups": 672,
+  "source_bearing_groups": 620,
+  "other_groups": 52,
+  "arithmetic": {
+    "method": "Independent Decimal AST evaluator authored for this review; no writer scripts or repository checker imported. Semantic and legal assumptions assessed separately in full-pack-review.md.",
+    "executions": 37,
+    "distinct_exact_blocks": 30,
+    "expected_fields": 138
+  },
+  "all37blocks_exactly_unchanged": true,
+  "all25predecessor_controls_exact": true,
+  "all27tariff_and32social_table_rows_match": true,
+  "old_topic_maps": {
+    "entries": 406,
+    "all_preserved": true,
+    "line_destinations_checked": 290,
+    "remaining_line_failures": [],
+    "normalization": "19inherited destinations differ only in Markdown heading depth or leading code indentation; topic text and correct line destinations preserved."
+  },
+  "guide_checks": [
+    {
+      "guide": "skills/international/liechtenstein/li-payroll-social.md",
+      "sha256": "06fcdc4b097df6416d284f4200fbdcd4e09f8cca62530df54da5229f8fbef1bf",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {},
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-transfer-pricing.md",
+      "sha256": "53b7d3ddc9f5447f72f857580bca92ee66588841bcf34fd18edb63d2973b9c4c",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {
+        "version": [
+          "0.3",
+          "0.4"
+        ]
+      },
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-cross-border.md",
+      "sha256": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {
+        "version": [
+          "0.4",
+          "0.5"
+        ]
+      },
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "sha256": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {
+        "version": [
+          "2.3",
+          "2.4"
+        ]
+      },
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "sha256": "162b15efd16bd5d93de4b377786934b2bc78a5810919166daf70451cc4854d28",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {
+        "version": [
+          "0.3",
+          "0.4"
+        ]
+      },
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-income-tax.md",
+      "sha256": "43dbf99f43e4763b7d8e1efc962160f82bc562cdc5a8fbf591cb47ec90f4e96f",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {},
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-company-formation.md",
+      "sha256": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {},
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 2
+    },
+    {
+      "guide": "skills/international/liechtenstein/li-tax-overview.md",
+      "sha256": "62eeb9200e1cf20bb32cc52aa20402126a48bb66ddae74178b2f972e8e86e83a",
+      "reference_definition_duplicates": {},
+      "missing_reference_links": [],
+      "missing_local_links": [],
+      "old_official_reference_targets_retained": true,
+      "metadata_changes": {},
+      "only_permitted_metadata_change": true,
+      "cta_unchanged": true,
+      "current_example_blocks_unchanged": true,
+      "current_blocks": 0
+    }
+  ],
+  "schema": {
+    "files": [
+      "skills/international/liechtenstein/li-company-formation.md",
+      "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "skills/international/liechtenstein/li-cross-border.md",
+      "skills/international/liechtenstein/li-income-tax.md",
+      "skills/international/liechtenstein/li-payroll-social.md",
+      "skills/international/liechtenstein/li-tax-overview.md",
+      "skills/international/liechtenstein/li-transfer-pricing.md",
+      "skills/international/liechtenstein/liechtenstein-vat.md"
+    ],
+    "errors": [],
+    "warnings": []
+  },
+  "historical_review_copies_exact": [
+    {
+      "file": "predecessor-maps-checkpoint.json",
+      "copy_sha256": "2394f2649bbe917012b000b205b54be352267d5cd9decc41414ffd86afbfdfbe",
+      "private_sha256": "2394f2649bbe917012b000b205b54be352267d5cd9decc41414ffd86afbfdfbe",
+      "pass": true
+    },
+    {
+      "file": "eight-guide-schema.json",
+      "copy_sha256": "5df9586a545fc0b391ed0da98768f9556e72e9acd875bb5560d261f66db5d65a",
+      "private_sha256": "5df9586a545fc0b391ed0da98768f9556e72e9acd875bb5560d261f66db5d65a",
+      "pass": true
+    },
+    {
+      "file": "repository-examples.log",
+      "copy_sha256": "2e1166a97b9894eb6b91785e2c32f7562d4c56d9dd421c86071a3f383c34ba70",
+      "private_sha256": "2e1166a97b9894eb6b91785e2c32f7562d4c56d9dd421c86071a3f383c34ba70",
+      "pass": true
+    },
+    {
+      "file": "table-review.json",
+      "copy_sha256": "90fb01cc59950f5e1e3354aa86bbdd104868487a391e29e0b2064b477a235c48",
+      "private_sha256": "90fb01cc59950f5e1e3354aa86bbdd104868487a391e29e0b2064b477a235c48",
+      "pass": true
+    },
+    {
+      "file": "freeze-before.json",
+      "copy_sha256": "f4f40739c7406eb398b058d108daafaa4bf925c40a7cbef75fd516cf0a607b88",
+      "private_sha256": "f4f40739c7406eb398b058d108daafaa4bf925c40a7cbef75fd516cf0a607b88",
+      "pass": true
+    },
+    {
+      "file": "full-pack-review.json",
+      "copy_sha256": "30773803797f996a62f6a7f44806a6aabb774574afc96949b3f4b8f3e3ec9861",
+      "private_sha256": "30773803797f996a62f6a7f44806a6aabb774574afc96949b3f4b8f3e3ec9861",
+      "pass": true
+    },
+    {
+      "file": "repository-validation.log",
+      "copy_sha256": "66a081d72c7b21d1cff475b6060ae4405d90441bbf5eb1fec0437abfc67c6303",
+      "private_sha256": "66a081d72c7b21d1cff475b6060ae4405d90441bbf5eb1fec0437abfc67c6303",
+      "pass": true
+    },
+    {
+      "file": "arithmetic-review.json",
+      "copy_sha256": "e3e8e2944b2b23364ed72a59b0b6895de21371560fa68788ae12a87a746bbaaa",
+      "private_sha256": "e3e8e2944b2b23364ed72a59b0b6895de21371560fa68788ae12a87a746bbaaa",
+      "pass": true
+    },
+    {
+      "file": "independent_checks.py",
+      "copy_sha256": "8688001630cb885ea09aa9dc72a58bf93b68a0196d468a7054143dc3fa4234ac",
+      "private_sha256": "8688001630cb885ea09aa9dc72a58bf93b68a0196d468a7054143dc3fa4234ac",
+      "pass": true
+    },
+    {
+      "file": "predecessor-controls.json",
+      "copy_sha256": "3cbbb60ad42cc82ce122eb7ef877783aea66a312fc6805e6afeb754908f74a38",
+      "private_sha256": "3cbbb60ad42cc82ce122eb7ef877783aea66a312fc6805e6afeb754908f74a38",
+      "pass": true
+    },
+    {
+      "file": "row-identity-checkpoint.json",
+      "copy_sha256": "0826ab8d846b6dc1128cab3e131ceecea433421ba071d47fd6a0cb346540aad3",
+      "private_sha256": "0826ab8d846b6dc1128cab3e131ceecea433421ba071d47fd6a0cb346540aad3",
+      "pass": true
+    },
+    {
+      "file": "freeze-after.json",
+      "copy_sha256": "d887ad3d557234b9a4b844fdbfbbdd1157e3825b669be93391540cd36b0660d4",
+      "private_sha256": "d887ad3d557234b9a4b844fdbfbbdd1157e3825b669be93391540cd36b0660d4",
+      "pass": true
+    },
+    {
+      "file": "build_review.py",
+      "copy_sha256": "691aed13724c4df248953b59ecfba0fb0f36fa8684a42015c86fe2eee35eafad",
+      "private_sha256": "691aed13724c4df248953b59ecfba0fb0f36fa8684a42015c86fe2eee35eafad",
+      "pass": true
+    },
+    {
+      "file": "outlines.json",
+      "copy_sha256": "64f62878e9bedc8360ec56a43afe3a54405fd52c52f818d3b2ee940ec6f33ef9",
+      "private_sha256": "64f62878e9bedc8360ec56a43afe3a54405fd52c52f818d3b2ee940ec6f33ef9",
+      "pass": true
+    },
+    {
+      "file": "full-pack-review.md",
+      "copy_sha256": "7c91bc9d4083b03e17ccdfb8fa8f2536c512f59a2e8ada5376f0529c313a9f1c",
+      "private_sha256": "7c91bc9d4083b03e17ccdfb8fa8f2536c512f59a2e8ada5376f0529c313a9f1c",
+      "pass": true
+    }
+  ],
+  "new_legal_claim_review": "Read all meaningful eight-Guide/README deltas against the cited original sources. TP36d and corporate42/42a pass. Other changes are bibliography, route link, review-register attribution, version/heading and21a spacing; no new unsupported tax result found.",
+  "protected_metadata_ctas": "Unchanged except version advance for TP,corporate,XB,VAT; matching H1versions. Other introduction-only Guide edits keep version/date; tax year,tier,review_status,trust label,license,byline and CTA byte content preserved.",
+  "no_candidate_mutations": true
+}

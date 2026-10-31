@@ -1,0 +1,30 @@
+{
+  "single_eligible_part_year": {
+    "formula": "3000+18400*46/365",
+    "unrounded": "5318.904109589041095890410959",
+    "display": "5318.90",
+    "residual_gross": "16081.10"
+  },
+  "successive_payers": {
+    "formula": "27300*39/365+18400*36/365",
+    "unrounded": "4731.780821917808219178082192",
+    "display": "4731.78"
+  },
+  "one_cap": {
+    "eligible_before_cap": 80000,
+    "cap": 60100,
+    "exempt": 60100,
+    "residual_gross": 19900
+  },
+  "specific_pay_not_prorated_twice": {
+    "specific": 3000,
+    "nonspecific_eligible": "2318.904109589041095890410959",
+    "total": "5318.904109589041095890410959"
+  },
+  "domestic_only_payer": {
+    "extra_domestic_salary": 50000,
+    "extra_qualifying_days": 0,
+    "exemption_increment": 0
+  },
+  "status": "Writer arithmetic only. Independent source/delta review required."
+}

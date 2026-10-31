@@ -1,0 +1,41 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.guernseyregistry.com/article/183449/Annual-Validation---Companies",
+      "sha256": "91764f73bfb231a272d4240fb111dc593ff8e99f97d929805c24021d7e462e07"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/limitedcompanylegislationandregulations",
+      "sha256": "86d7e93e2df068f7d18b084791ba00582768a9a962482833674b3d973159efed"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/article/203669/A-Z-Limited-companies-guidance",
+      "sha256": "f7213f71359f8eee866bc5ea06905bc1cbc6f22ebd4ee4c0a3c5e9c9af01bd75"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=172173&p=0",
+      "sha256": "549618ccf21ebe3d8cd9bc6b97c00241dde34874a8528a6cdffaddee77f16685"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=173525&p=0",
+      "sha256": "79591265926f5041d7a32dc3c44561b541c2617decb4049d23de08ebe5eada21"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=186495&p=0",
+      "sha256": "8daafd0c328492f9d7b2f86c56b7fddb34c91ca5d607dcbeec6977a64bb9a699"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/resolutions",
+      "sha256": "5d38b29ec9eb64e5a02f6d12eb2d90589a64ea2de45c9bda4ccdc6361f10bafb"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/CHttpHandler.ashx?id=5097&p=0",
+      "sha256": "5fde7dc4ccc4f738a63b91a94f1d59df68565dbeb7ccbee4275571515453ab5d"
+    },
+    {
+      "url": "https://www.guernseyregistry.com/companyfees",
+      "sha256": "796d82d45ed32444f780c0dbf129390a6b1585c3bcb151135e61ad73209660d4"
+    }
+  ]
+}

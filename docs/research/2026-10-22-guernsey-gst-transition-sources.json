@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Official reform timetable",
+    "url": "https://gov.gg/taxreform",
+    "as_of": "2026-10-22",
+    "sha256": "2254a393a351f0a051fb0fe41fa60a408686aa55b6ec8558ccc52803956eee0a",
+    "locators": "Personal tax, social security, consumption tax and business tax changes; calculator limitations"
+  },
+  {
+    "title": "Adopted Proposition 1",
+    "url": "https://statesvoting-records.gov.gg/Propositions/Details/2682",
+    "as_of": "2026-10-22",
+    "sha256": "76587316afe47922763fd1980b22ef0f3ff78cd1de6d1b6eed104429c2869084",
+    "locators": "Proposition and Vote Result"
+  },
+  {
+    "title": "Legislation direction",
+    "url": "https://statesvoting-records.gov.gg/Propositions/Details/2787",
+    "as_of": "2026-10-22",
+    "sha256": "fe99becd5f729748e6824c76a5eb100a94235da7c3f13d7e314feff2266c8dbb",
+    "locators": "Proposition and Vote Result"
+  }
+]

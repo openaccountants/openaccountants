@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/estonia-income-tax"
   jurisdiction: "EE"
   tax_year: "2026"
-  last_updated: "2026-10-16"
+  last_updated: "2026-10-24"
   authored_by: "Michael Cutajar and the OpenAccountants team"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
@@ -69,7 +69,7 @@ All amounts in euros. "2026" is the year in force now; the 2025 column is for th
 | Training expenses plus gifts and donations | Up to 1,200 a year together, not more than taxable income | Same | [Income tax returns for 2025](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/income-tax-returns-2025) |
 | III-pillar (supplementary funded pension) contributions | Up to 15% of taxable income, maximum 6,000 a year, outside the 1,200 limit | Same | [III-pillar contributions](https://www.emta.ee/en/private-client/taxes-and-payment/tax-incentives/contributions-supplementary-funded-pension) |
 | Renting out a dwelling | 20% of the rent deducted automatically; not for short-term accommodation or sub-letting | Same | Income tax returns for 2025 |
-| Dividends taxed at 14/86 before 2025 and passed on to an individual | 7% withheld | 7% withheld | [ETCB tax rates](https://www.emta.ee/en/private-client/taxes-and-payment/declaration-income/tax-rates) |
+| Dividend a company received (exempt under § 50(1^1)) whose underlying profit was taxed at 14/86 under former § 50^1, passed on to an individual. A company's own pre-2025 profit paid out now is taxed at 22/78 | 7% withheld | 7% withheld | [TuMS § 61(68)](https://www.riigiteataja.ee/akt/TuMS) |
 
 The 2026 rate stayed at 22%. Earlier commentary had announced a 24% rate and a separate security tax from 2026; the ETCB 2026 rates list only the 22% rate, so do not use 24% for personal income tax. The 24% figure that does apply is the standard **VAT** rate.
 
@@ -315,4 +315,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-16. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `estonia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/estonia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `estonia-income-tax` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/estonia-income-tax. If neither is available, confirm every figure against the official source pages cited above before relying on it.

@@ -1,0 +1,175 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.5.20. Por gastos de enfermedad
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.5. Canarias
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.5.20. Por gastos de enfermedad
+
+Cuantía
+
+El 12% de los gastos y honorarios profesionales abonados durante el periodo impositivo por la prestación de servicios realizada por quienes tengan la condición de profesionales médicos o sanitarios, excepto farmacéuticos, por motivo de la prevención, diagnóstico y tratamiento de enfermedades, salud dental, embarazo y nacimiento de hijos, accidentes e invalidez, tanto propios como de las personas que se incluyan en el mínimo familiar.
+
+En ningún caso se incluye la asistencia con fines estéticos, excepto cuando constituyan la reparación de daños causados por accidentes o intervenciones que afecten a las personas y los tratamientos destinados a la identidad sexual.
+
+Tampoco se integrarán en la base de la deducción las primas satisfechas por seguros médicos ni el importe de las prestaciones médicas que sean reintegrables por la Seguridad Social o las entidades que la sustituyan.
+
+El 12% de los gastos en la adquisición de aparatos y complementos, incluidas las gafas graduadas y las lentillas, que por sus características objetivas sólo puedan destinarse a suplir las deficiencias físicas de las personas.
+
+Requisitos y condiciones
+
+Que la suma de la base imponible general y la base imponible del ahorro no sea superior a:
+
+46.455 euros en tributación individual.
+
+61.770 euros en tributación conjunta.
+
+En estos casos la deducción tendrá un límite anual de 500 euros en tributación individual y 700 euros en tributación conjunta que se incrementarán en 100 euros en tributación individual cuando el contribuyente sea una persona mayor de 65 años o con discapacidad y acredite un grado de discapacidad igual o superior al 65%.
+
+Cuando la suma de la base imponible general y la base imponible del ahorro sea superior a 46.455 en tributación individual o 61.770 en conjunta el límite de deducción será de 150 euros por contribuyente.
+
+La deducción solo la podrán aplicar las personas titulares de las facturas que, a su vez, realicen el pago.
+
+No obstante, en el caso de matrimonios en régimen de gananciales las cantidades satisfechas se atribuirán a ambos cónyuges por partes iguales aunque la factura esté a nombre de uno solo de ellos.
+
+Cuando se trate de gastos y honorarios abonados a profesionales médicos o sanitarios, la aplicación de la deducción queda condicionada a la declaración por parte del contribuyente del número de identificación fiscal del prestador de cada servicio y de su importe anual.
+
+Base de la deducción
+
+La base conjunta de esta deducción estará constituida por las cantidades justificadas con factura que deberá cumplir las condiciones establecidas en el Reglamento por el que se regulan las obligaciones de facturación, aprobado por el Real Decreto 1619/2012, de 30 de noviembre.
+
+La factura deberá conservarse durante el plazo de prescripción.
+
+La base de la deducción se minorará en el importe de las ayudas concedidas por las Administraciones públicas en el periodo impositivo de que se trate, que cubran la totalidad o parte de los gastos que dan derecho a la deducción siempre que las ayudas tengan la consideración de renta exenta a efectos de IRPF.
+
+Cumplimentación
+
+En el caso de servicios prestados por profesionales médicos o sanitarios deberá consignar el NIF del profesional que presta el servicio y, las cantidades anuales abonadas a cada profesional teniendo en cuenta que dicho importe deberá minorarse en la cuantía de las ayudas concedidas por las Administraciones públicas para cubrir el gasto cuando las mismas tengan la consideración de renta exenta.
+
+En el caso de adquisición de aparatos y complementos reflejará el importe de los gastos teniendo en cuenta que dicho importe deberá minorarse en la cuantía de las ayudas concedidas por las Administraciones públicas para cubrir el gasto cuando las mismas tengan la consideración de renta exenta.
+
+Los datos serán trasladados por el programa al anexo B.13 de la declaración.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

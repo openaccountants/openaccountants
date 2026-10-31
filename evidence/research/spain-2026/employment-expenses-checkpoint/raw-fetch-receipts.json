@@ -1,0 +1,45 @@
+{
+  "time": "2026-10-27T23:46:02.617101+00:00",
+  "sources": [
+    {
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/balearic-enactment-fresh.html",
+      "status": 200,
+      "bytes": 737136,
+      "sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+      "content_type": "text/html; charset=UTF-8",
+      "body_downloaded": true,
+      "download_is_not_fullbody_read_claim": true
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rirpf-fresh.html",
+      "status": 200,
+      "bytes": 1000017,
+      "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "content_type": "text/html; charset=UTF-8",
+      "body_downloaded": true,
+      "download_is_not_fullbody_read_claim": true
+    },
+    {
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html",
+      "status": 200,
+      "bytes": 2028806,
+      "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "content_type": "text/html; charset=UTF-8",
+      "body_downloaded": true,
+      "download_is_not_fullbody_read_claim": true
+    },
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/fase-2-determinacion-rendimiento-neto/particular-analisis-gastos-articulo-19_2_f-lirpf.html",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/aeat-employment-expenses-fresh.html",
+      "status": 200,
+      "bytes": 27375,
+      "sha256": "7c6a40a40036dfc728dd6bf1ab58bd7e7f4b1350233bf58f2c908fdb0d64b58a",
+      "content_type": "text/html",
+      "body_downloaded": true,
+      "download_is_not_fullbody_read_claim": true
+    }
+  ]
+}

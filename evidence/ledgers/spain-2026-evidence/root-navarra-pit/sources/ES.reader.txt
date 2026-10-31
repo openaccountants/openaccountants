@@ -1,0 +1,1099 @@
+
+
+    Ayudas al alquiler joven (Emanzipa)
+
+[[ID:liferayAUICSS]]
+
+[[ID:liferayPortalCSS]]
+
+[[ID:f7f8108c]]
+
+[[ID:liferayThemeCSS]]
+
+
+
+
+
+
+
+
+
+	
+[[ID:yxvy_quickAccessNav]]
+
+		Navegación
+
+		
+			
+				
+Saltar al contenido
+
+			
+
+			
+
+		
+	
+
+	
+
+[[ID:wrapper]]
+
+[[ID:closeInstallBtn]]
+
+                                            close
+
+[[ID:appIcon]]
+
+[[ID:installTitle]]
+
+Descárgate la app
+
+[[ID:downloadAppBtn]]
+Abrir
+
+[[ID:botonMenu]]
+
+Menú                	
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_navbarbrand]]
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039]]
+
+                                 Mi carpeta 
+
+[[ID:layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617]]
+
+                                 Atención ciudadana 
+
+[[ID:p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_]]
+
+[[ID:p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+[[ID:portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+                        ES
+                        keyboard_arrow_down
+
+EU                        
+
+                            search
+
+[[ID:navbar-collapse-1]]
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt]]
+
+[[ID:layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32627039]]
+
+                                 Mi carpeta 
+
+[[ID:layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_links_adt_32138617]]
+
+                                 Atención ciudadana 
+
+[[ID:p_p_id_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3_]]
+
+[[ID:p_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+[[ID:portlet_com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet_INSTANCE_languagescontentv3]]
+
+                        ES
+                        keyboard_arrow_down
+
+EU                        
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas]]
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_menu_tematicas]]
+
+Servicios por temas
+
+                    Hacienda
+
+                    Empleo
+
+                    Vivienda
+
+                    Salud
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu]]
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_navbar_main_menu]]
+
+                            Actividad económica
+                            keyboard_arrow_right
+
+                            Agricultura y Ganadería
+                            keyboard_arrow_right
+
+                            Asuntos sociales
+                            keyboard_arrow_right
+
+                            Consumo
+                            keyboard_arrow_right
+
+                            Cultura
+                            keyboard_arrow_right
+
+                            Deporte
+                            keyboard_arrow_right
+
+                            Educación
+                            keyboard_arrow_right
+
+                                        Actividad económica
+                                        keyboard_arrow_right
+
+                                        Agricultura y Ganadería
+                                        keyboard_arrow_right
+
+                                        Asuntos sociales
+                                        keyboard_arrow_right
+
+                                        Consumo
+                                        keyboard_arrow_right
+
+                                        Cultura
+                                        keyboard_arrow_right
+
+                                        Deporte
+                                        keyboard_arrow_right
+
+Ver todos los temas                                
+                                keyboard_arrow_down
+
+                                    Ver menos
+                                
+                                keyboard_arrow_up
+
+                                        Educación
+                                        keyboard_arrow_right
+
+                            Empleo
+                            keyboard_arrow_right
+
+                            Hacienda
+                            keyboard_arrow_right
+
+                            Igualdad y violencia de género
+                            keyboard_arrow_right
+
+                            Justicia
+                            keyboard_arrow_right
+
+                            Juventud
+                            keyboard_arrow_right
+
+                            Medio ambiente
+                            keyboard_arrow_right
+
+                            Migraciones
+                            keyboard_arrow_right
+
+                                        Empleo
+                                        keyboard_arrow_right
+
+                                        Hacienda
+                                        keyboard_arrow_right
+
+                                        Igualdad y violencia de género
+                                        keyboard_arrow_right
+
+                                        Justicia
+                                        keyboard_arrow_right
+
+                                        Juventud
+                                        keyboard_arrow_right
+
+                                        Medio ambiente
+                                        keyboard_arrow_right
+
+                                        Migraciones
+                                        keyboard_arrow_right
+
+                            Política exterior
+                            keyboard_arrow_right
+
+                            Salud
+                            keyboard_arrow_right
+
+                            Seguridad y emergencias
+                            keyboard_arrow_right
+
+                            Territorio, paisaje y urbanismo
+                            keyboard_arrow_right
+
+                            Transportes
+                            keyboard_arrow_right
+
+                            Vivienda
+                            keyboard_arrow_right
+
+                                        Política exterior
+                                        keyboard_arrow_right
+
+                                        Salud
+                                        keyboard_arrow_right
+
+                                        Seguridad y emergencias
+                                        keyboard_arrow_right
+
+                                        Territorio, paisaje y urbanismo
+                                        keyboard_arrow_right
+
+                                        Transportes
+                                        keyboard_arrow_right
+
+                                        Vivienda
+                                        keyboard_arrow_right
+
+[[ID:p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu_]]
+
+[[ID:p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu]]
+
+[[ID:portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_others_menu]]
+
+                keyboard_arrow_right
+                
+                     Mi carpeta
+
+                    El área personal: las carpetas temáticas y notificaciones electrónicas
+
+                keyboard_arrow_right
+                
+                     Trámites - Sede electrónica
+
+                    Ayudas, empleo público, impuestos, autorizaciones, certificados...
+
+                keyboard_arrow_right
+                
+                     Gobierno de Navarra
+
+                    El equipo de Gobierno, su programa y presupuesto, y los departamentos
+
+                keyboard_arrow_right
+                
+                     Sala de prensa
+
+                    Las noticias del Gobierno y de la Administración, y la agenda informativa
+
+                keyboard_arrow_right
+                
+                     Atención ciudadana
+
+                    En las oficinas, correo electrónico, teléfono, chat y redes sociales
+
+[[ID:content]]
+
+[[ID:navbar-collapse-2]]
+
+[[ID:portal_searcher_form_cms]]
+
+[[ID:portal_searcher_form_input_cms]]
+
+BUSCAR                                    
+                                    search 
+
+Ayudas al alquiler joven (Emanzipa)
+
+[[ID:breadcrumbs]]
+
+[[ID:p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_]]
+
+[[ID:p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs]]
+
+[[ID:portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs]]
+
+[[ID:_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_breadcrumbs_breadcrumbs-defaultScreen]]
+
+                                        keyboard_backspace
+                                        Buscador de trámites
+
+[[ID:main-content]]
+
+[[ID:column-1]]
+
+[[ID:layout-column_column-1]]
+
+[[ID:p_p_id_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_]]
+
+[[ID:p_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet]]
+
+[[ID:portlet_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet]]
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+			
+	
+	
+    
+	
+	
+		
+			
+	       		
+	            	
+	                    
+Ayudas al alquiler joven (Emanzipa)
+
+						
+Emanzipa es un programa que ayuda a jóvenes al pago mensual del alquiler de su vivienda
+
+						
+						
+							
+
+								En plazo
+							
+
+							
+
+								
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseButton]]
+			
+									share
+									Suscribirse a este trámite
+								
+							
+
+						
+	                    	                    
+	            	
+	        	
+	   		 	
+			
+							
+				 
+					
+						 Mostrar todo  
+						arrow_downward 
+					 
+				
+
+				
+[[ID:allContentGuide2Accordion]]
+			
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:Informacion]]
+
+	
+Información básica
+	
+
+	
+		
+			
+				
+
+					Dirigido a keyboard_arrow_down
+				
+
+			
+			
+[[ID:infoDirigido]]
+
+				
+					
+Personas de 23 a 35 años (ambos incluidos) empadronadas en Navarra que viven de alquiler. 
+
+						
+			
+		
+		
+
+	
+		
+			
+				
+
+					Descripción keyboard_arrow_down
+				
+
+			
+			
+[[ID:infoDescripcion]]
+
+				
+Requisitos para acceder a la ayuda:
+
+Tener entre 23 y 35 años durante el año para el que se concede la ayuda. El requisito de edad debe cumplirse a 31 de diciembre de cada año. Por tanto, no se puede acceder si durante el año de concesión se ha cumplido o se cumplirán 36 años.
+
+Contar con unos ingresos mínimos anuales de 5.000 euros.
+
+Percibir unos ingresos máximos de 22.000 euros al año, o 33.000 euros como máximo si la unidad familiar la forman más de una persona. Estos ingresos son el resultado de sumar las casillas 507 y 529 del IRPF. Corresponden a la base imponible más las rentas exentas de la renta.
+
+El precio del alquiler mensual será como máximo de 700 euros.
+
+ 
+
+Restricciones de acceso a las ayudas:
+
+No puede accederse al programa Emanzipa si da alguna de estas circunstancias:
+
+Ser titular de una vivienda o haber transmitido una en los últimos 5 años.
+
+Tener parentesco con la persona propietaria de la vivienda hasta segundo grado de consanguinidad o afinidad (padres, madres o hermanos/as, propios o de la pareja).
+
+Tener como ingresos de la parte especial del ahorro una cantidad superior a 5.000 euros. La parte especial del ahorro en renta procede de los dividendos de cuentas bancarias, acciones y de las ganancias obtenidas por la transmisión de acciones, inmuebles y otros activos.
+
+Tener bienes y derechos por valor superior a 90.000 euros.
+
+Las deducciones para el acceso a la vivienda (programas DAVID y EmanZipa) son incompatibles entre sí y con la deducción fiscal por alquiler de vivienda. Si has obtenido una de estas deducciones, no puedes renunciar posteriormente a ella para el mismo año fiscal.
+
+Características de la prestación:
+
+El importe de la ayuda será del 50 % de la renta mensual de alquiler, con un máximo de 280 euros al mes.
+
+Es necesario renovarla anualmente para demostrar que se siguen cumpliendo los requisitos.
+
+Se abonará una ayuda mensual, previa aportación de los justificantes bancarios de pago.
+
+
+			
+		
+	
+
+	
+
+	
+		
+			
+				
+
+					Normativa keyboard_arrow_down
+				
+
+			
+			
+[[ID:infoNormativa]]
+
+				
+
+Ley Foral 10/2010, del derecho a la vivienda en Navarra.
+
+Decreto Foral Legislativo 4/2008, por el que se aprueba el texto refundido de la Ley Foral del Impuesto sobre la Renta de las Personas Físicas.
+
+
+				
+							
+		
+	
+
+					
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:Tramitaciones]]
+
+	
+Tramitación
+	
+
+	
+		
+			
+				
+					
+
+						Presentación de solicitudes keyboard_arrow_down
+					
+
+				
+				
+[[ID:tramita0]]
+
+					
+							
+						
+							
+							
+
+								
+Se puede tramitar con las siguientes credenciales:
+
+
+Certificado digital o DNI electrónico
+
+Cl@ve
+
+
+								
+							
+
+
+
+
+
+
+							
+						
+							
+								
+									Tramitar
+									 
+								 
+							
+						
+													
+							
+					
+				
+			
+		
+	
+		
+			
+				
+					
+
+						Adjuntar justificantes bancarios keyboard_arrow_down
+					
+
+				
+				
+[[ID:tramita1]]
+
+					
+							
+						
+							
+							
+
+								
+Se puede tramitar con las siguientes credenciales:
+
+
+Certificado digital o DNI electrónico
+
+Cl@ve
+
+
+								
+							
+
+
+
+
+
+
+							
+						
+							
+								
+									Adjuntar
+									 
+								 
+							
+						
+													
+							
+					
+				
+			
+		
+	
+
+					
+					
+					
+												
+							Contacto
+							
+Nasuvinsa
+
+Envíanos tu consulta
+
+Llámanos al 848 420 042
+																
+						 
+					
+				
+
+				
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contenido relacionado 
+   
+    
+		
+
+        	
+				arrow_right_alt
+				Más información sobre el alquiler de una vivienda
+			
+	
+		
+
+        	
+				arrow_right_alt
+				Obtén Cl@ve o Certificado Digital
+			
+	
+
+					
+										
+				
+			
+			
+				
+					info
+					
+						
+						
+							
+Advertencia: el contenido de esta página tiene carácter meramente informativo; las condiciones son las publicadas en la normativa correspondiente.
+
+						
+					
+				
+			
+		
+ 		
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_fmSuscribirse]]
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_formDate]]
+
+
+	
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseModal]]
+
+		        
+			
+		    			    		
+	       			
+[[ID:suscribirseModalLabel]]
+
+Recibir notificaciones
+
+	       			×
+		      			      	
+				
+					
+Introduce tu correo electrónico para recibir una notificación cuando el trámite se actualice
+
+					
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_tramitePrimKey]]
+
+
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_urlTitle]]
+
+
+					
+						
+
+				Correo electrónico
+
+[[ID:qfkd__column1__1]]
+
+			Requerido
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail]]
+
+
+					
+						
+						
+
+				Confirmación correo electrónico
+
+[[ID:jbfs__column1__1]]
+
+			Requerido
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseEmail1]]
+
+
+					
+
+Información sobre protección de datos de carácter personal
+
+Responsable del tratamiento
+Servicio de Comunicación del Departamento de Presidencia e Igualdad (Gobierno de Navarra). Puedes contactar con nosotros/as en el correo electrónico protecciondedatosportal@navarra.es
+
+Finalidad del tratamiento
+El correo electrónico que proporciones para la suscripción a un trámite o una búsqueda servirá para avisar a ese correo de las novedades de ese trámite o de esa búsqueda.
+
+Derechos
+Puedes ejercer tus derechos de protección de datos establecidos en el Reglamento General de Protección de Datos (artículos 15 a 22). Consulta cómo en esta página web.
+
+Más información
+Puedes obtener más información acerca del tratamiento 'Gestión de las suscripciones a trámites y a búsquedas en el Catálogo de Trámites' en esta página web.
+
+
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_suscribirseAcepto]]
+
+			Acepto las condiciones de la pólitica de protección de datos
+
+[[ID:uvlz__column1__1]]
+
+			Requerido
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captcha]]
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_refreshCaptcha]]
+
+[[ID:ored__column1__1]]
+
+			Refrescar CAPTCHA
+
+				Texto de verificación
+
+[[ID:fehs__column1__1]]
+
+			Requerido
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_captchaText]]
+
+
+
+			
+
+				
+				
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_govj]]
+
+	Guardar
+
+
+																
+		  	
+		
+	
+
+[[ID:_es_navarra_tramites_visor_web_portlet_TramitesVisorWebPortlet_checkboxNames]]
+
+
+
+
+		
+
+
+
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_BwqBaxrACF3D]]
+
+    access_time
+    
+        miércoles 28 de octubre de 2026 
+        
+            01:09:08 h
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_m4B4QMWWulCE]]
+
+Ayuda para tramitar
+
+								keyboard_backspace
+								Qué días son inhábiles
+
+								keyboard_backspace
+								Cómo obtener las credenciales para tramitar: cl@ve y certificado digital
+
+								keyboard_backspace
+								Cómo pagar, consultar las notificaciones, y firmar, adjuntar y comprobar la autenticidad de los documentos
+
+¿Problemas informáticos? Te atendemos de lunes a jueves, de 8:00 a 17:30 horas; y los viernes y meses de verano (julio-septiembre), de 8:00 a 15:00 horas.
+
+								email
+								soportec@navarra.es
+
+								local_phone
+								948 013 555
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_032LhhV4F2aP]]
+
+[[ID:hrefFm]]
+
+[[ID:footer]]
+
+[[ID:p_p_id_errorReportUrl_INSTANCE_footererrorReportUrlv3_]]
+
+[[ID:p_errorReportUrl_INSTANCE_footererrorReportUrlv3]]
+
+[[ID:portlet_errorReportUrl_INSTANCE_footererrorReportUrlv3]]
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        chat_bubble_outline
+        Comunicar un error en la información
+    
+
+[[ID:p_p_id_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_]]
+
+[[ID:p_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3]]
+
+[[ID:portlet_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateContainer]]
+
+	update
+	
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lastUpdateDateText]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_loaderSpin]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_lasUpdateDateFromPortlet]]
+
+[[ID:_lastPublicationDatev2_INSTANCE_footerlastPublicationDatev3_final]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footercontentv3]]
+
+                    Trámites-Sede electrónica
+
+                    Temas
+
+                    Gobierno de Navarra
+
+                    Sala de Prensa
+
+                    Accesibilidad
+
+                    Protección de datos
+
+                    Aviso legal
+
+Gobierno de Navarra Avenida Carlos III 2, Planta Baja 31002 Pamplona / Iruña Tel. +34 948 012 012 - navarra@navarra.es
+

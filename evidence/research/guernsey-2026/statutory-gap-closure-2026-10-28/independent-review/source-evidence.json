@@ -1,0 +1,113 @@
+{
+  "candidate": "5d8327adbb6ddf637b678cc51e9fdeee1dd5c53f",
+  "read_on": "2026-10-28",
+  "sources": [
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/benefit-valuation-current.pdf",
+      "sha256": "8ca24f75ee3a3c621922cb14bd588d50bfffb823bd10384410e36b12ac03e65f",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "current v.0012 rr1\u20132,5\u20136 and amendment notes",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267223",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/benefit-valuation-original-2010.pdf",
+      "sha256": "07dbb99cadef16455c239bc59d83b7b24ad1b0ad3478e7b6ef9e4c3c9f839413",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "authentic original reg5 and page4 formula visually checked; original rates not used for2026",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=265330",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/benefit-valuation-amendment-2025.pdf",
+      "sha256": "a5bdc73a5c936fe8649463a75beaf4a7d9efa822edd60f4c646d9910732d185e",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "complete rr1\u20137 including2026rates and commencement, all5pages",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263414",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/benefit-exemption-current.pdf",
+      "sha256": "16e8e41be452c0fe567a916571b7c0a55b2e87f93c32ccbd8e6e906a844c8c05",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "current v.0004 ss1,2(1)(v),2(2),3 and amendment notes",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=263409",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-no3-amendment-2022.pdf",
+      "sha256": "a6ccdefa0d3eca4a0521394b2947d1baaec6c59387aea57b88d9f388b0185215",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "authentic ss12,14; other substantive amendments not relied on",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267992",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/tax-records-original-2006.pdf",
+      "sha256": "4450c96024bcb3c2289e585892c75bb08af93cd89ba02cc8f3dc0cc359eb42f1",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "complete rr1\u20138, read with2012amendment; page4civil2500visuallyverified",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=266947",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/tax-records-amendment-2012.pdf",
+      "sha256": "d0fdfbef3aa4182eef00b95d9e12afa9e98f06c6c04a01ac9ef950a4afece852",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "complete rr1\u20138; no-return duties, legal-person/trust retention and foreign records",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=191876&p=0",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/C42.pdf",
+      "sha256": "d99380b7beda5ca970166dfcbd46ae69588e247e7d1e70d1f03da6a4cf2ff7fb",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "all3pages, updated16July2025; approved ring, ownership/election/records/rate gates",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.gov.gg/CHttpHandler.ashx?id=178595&p=0",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/map-guidance-current.pdf",
+      "sha256": "416aca7e2a401a24fc31da6d426b65575af9de11a28ac41a9841951ddeb2f925",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "issue8dated12Feb2024, sections7.1\u20137.4 and7.7.1\u20137.7.5 only",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/topics/policy-sub-issues/dispute-resolution/beps-action-14-peer-review-best-practices-guernsey-2020.pdf",
+      "saved_pdf": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/oecd-best-practices-guernsey-2020.pdf",
+      "sha256": "106b603a0dab73022bfd6e9b69bd382c261947bbd2ac360e53167a8fd3db2b16",
+      "receipt_hash_matches": true,
+      "reviewer_read_scope": "paragraph3 and its BP1context; historical2020Guernsey self-report only",
+      "basis": "saved official primary source, reread independently; not a successful fresh reviewer HTTP fetch"
+    },
+    {
+      "url": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=253819",
+      "text_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/income-tax-current.txt",
+      "sha256": "1c1438c2b0ed5ba52042d61a13191e603401f1cb04505786ea8b010bd3cc0b47",
+      "reviewer_read_scope": "ss7(1)\u2013(3)(d),65(4),67,68,68A,68AA,75,75A,75P,108,148(3); targeted75B(1)\u2013(4),75K(1)\u2013(7),(11),75L(1)\u2013(5),75M(1)\u2013(3)",
+      "basis": "saved official primary text"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=189611&p=0",
+      "text_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/M40.txt",
+      "sha256": "b01b0ae4c00e5a2669f4daba732376984f6dd548449ecd01a58b668a50dba9ee",
+      "reviewer_read_scope": "complete specific settlement interpretation",
+      "basis": "saved official primary text"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=191687&p=0",
+      "text_file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/work/sources/M41.txt",
+      "sha256": "993e1ff45376b0ddf4de8cf2b48c7b6a2f9d1df9a05130575e50406dbd7545ca",
+      "reviewer_read_scope": "complete specific non-invocation settlement practice",
+      "basis": "saved official primary text"
+    }
+  ],
+  "fresh_access_attempts": {
+    "web": "267239/266947 inaccessible; C42/MAP403 Forbidden",
+    "normal_browser": "267239 opened in hidden IAB; empty AX and blank PDF viewer, no readable law text obtained. No CAPTCHA, warning bypass or challenge completion.",
+    "conclusion": "Independent substantive analysis uses saved primary texts/PDFs and checks source receipt hashes. No fresh access success is claimed."
+  },
+  "visual_check": "Authentic2010PDF page4 rendered by pdftoppm and viewed: reg5 B/365 times annual benefit, with3(1)/3(3)exceptions. Original historical rates not used."
+}

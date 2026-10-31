@@ -1,86 +1,99 @@
-# Repo layout — the canonical answer
+# Repo layout: the canonical answer
 
-One page on how this repo is organized, what is generated vs hand-maintained, and which file to edit. If another doc disagrees with this one, this one wins — and please fix the other doc.
+One page on how this repo is organized, what is generated vs hand-maintained, and which file to edit. If another doc disagrees with this one, this one wins: and please fix the other doc.
 
 ## The one rule
 
-**`skills/` is the editable source. `packages/` is generated from it — except `packages/us-federal/`, which is hand-authored.**
+**`skills/` is the editable source. `packages/` is generated from it: except `packages/us-federal/`, which is hand-authored.**
 
 `scripts/build-packages.py` reads `skills/` and rebuilds the per-jurisdiction bundles under `packages/`. Anything you write directly into a generated package will be overwritten on the next build. The build never touches hand-authored packages (see `HAND_AUTHORED_PACKAGES` in the script), so `packages/us-federal/` is safe to edit in place.
 
 ## Directory tree
 
 ```
-skills/                    # SOURCE — edit tax content here
-  federal/                 #   US federal source skills
-  us-states/<code>/        #   US state source skills (ny/, ca/, ...)
-  international/<country>/ #   country skills, all domains in one folder
+skills/                    # SOURCE: edit tax content here
+  <country>/               #   one folder per country, all domains together (eu/ is the EU layer)
+  canada/<province>/       #   provincial skills sit inside canada/
+  us/                      #   us/federal/, us/states/<code>/ and national files
+  COUNTRIES.md             #   GENERATED directory of country packs, with each pack's state
+  REGISTER.md, REGISTER.csv #  GENERATED one row per skill: country, domain, year, checks
+  DUPLICATES.md            #   GENERATED skills doing the same job in one jurisdiction
   cross-border/            #   treaty + multi-jurisdiction rules (treaty-corridors/ for WHT)
-  foundation/              #   workflow bases bundled into packages by the build
-  verticals/               #   industry-specific skills (jurisdiction: GLOBAL)
-  integrations/            #   platform integrations (Stripe, Shopify, ...)
+  foundation/              #   workflow bases, global-router, patterns/, intelligence/
+  reference/               #   verticals/, integrations/, financial-reporting/
   orchestrator/            #   per-country intake + return-assembly orchestrators
-  financial-reporting/     #   IFRS/GAAP reporting skills (leases, rev rec, ...)
-  intelligence/            #   deadline engine, threshold alerts, optimisation advisor
-  patterns/, templates/    #   shared authoring patterns and file templates
+  templates/               #   shared file templates
 
-packages/                  # GENERATED per-jurisdiction bundles — do not edit (one exception)
+packages/                  # GENERATED per-jurisdiction bundles: do not edit (one exception)
   <jurisdiction>/          #   one folder per country / US state / CA province (malta/, us-ca/, ...)
   _cross-border/           #   cross-border and multi-jurisdiction bundles
   _verticals/              #   industry-specific bundles
   _integrations/           #   platform-integration bundles
-  us-federal/              #   EXCEPTION — HAND-AUTHORED. US federal form guides +
+  us-federal/              #   EXCEPTION: HAND-AUTHORED. US federal form guides +
                            #   rates.2025.json / rates.2026.json (OBBBA corrections
                            #   reviewed by Christopher Aryee, CPA). Never regenerated.
 
 agent-skills/              # GENERATED Agent Skills format (one folder per skill, SKILL.md) + install.sh
+evidence/                  # Source records, not skills: ledgers/ and research/ (not read by any build)
 calculators/               # Open decision checks (rules.json + one pure function + tests)
 workflows/                 # Guided 6-phase advisor workflows (cross-border intake, UK CGT, ...)
 mcp/                       # Python MCP server source (openaccountants-mcp on PyPI)
 scripts/                   # Build + maintenance scripts (build-index.py, coverage-report.py, validate-guides.py, ...)
 tests/                     # unittest suite: python3 -m unittest discover -s tests
-docs/                      # Repo documentation (this file, quality states, coverage, website sync, ...)
+docs/                      # Repo documentation: this file, GOAL.md, OWNERS.md, CHANGELOG.md,
+                           # the skill standard, quality tiers, coverage, website sync, research/
 tools/workbooks/           # Verification-workbook generator (out/ is gitignored build output)
 plugins/ + .claude-plugin/ # Claude Code plugin marketplace manifest + commands
+assets/                    # Images and brand files
 .github/                   # CI: validation, MCP sync (sync-mcp.yml mirrors packages/ to the MCP repo)
 
-index.json                 # GENERATED by scripts/build-index.py — machine-readable
-                           # inventory of every skill in the repo
-llms.txt                   # Short agent-facing index; llms-full.txt lists every skill
-GOAL.md                    # The goal, the milestone and how work moves
-OWNERS.md                  # Who owns each jurisdiction
-VERIFIERS.md               # Reviewing accountants on record (generated nightly)
+Root (only what a tool or GitHub needs there):
+README.md, LICENSE, CONTRIBUTING.md, SECURITY.md, CODE_OF_CONDUCT.md, CLA.md
+LICENSING.md, COMMERCIAL-LICENSING.md, LICENSES/, REUSE.toml  # Licence terms; the licence text names them
+index.json                 # GENERATED by scripts/build-index.py: inventory of every skill
+llms.txt                   # Short agent-facing index; llms-full.txt (GENERATED) lists every skill
+CLAUDE.md, AGENTS.md       # Instructions AI coding agents read at the root (AGENTS.md is a symlink)
+CITATION.cff               # GitHub's "Cite this repository"
+glama.json                 # Read by the Glama directory
+Dockerfile, .dockerignore  # Container build
+VERIFIERS.md               # Reviewing accountants on record (written nightly by the platform sync)
+PARTNERS.md                # Stub pointing at VERIFIERS.md; the platform links to it
 ```
 
 ## Generated vs hand-maintained
 
 | Path | Status | Regenerate with |
 |------|--------|-----------------|
-| `skills/**` | Hand-maintained source | — |
+| `skills/**` | Hand-maintained source |: |
 | `packages/**` (except `us-federal/`) | Generated | `python3 scripts/build-packages.py` |
-| `packages/us-federal/**` | **Hand-authored** — form guides + rates JSONs | — (see `ANNUAL-UPDATE-RUNBOOK.md` there) |
+| `packages/us-federal/**` | **Hand-authored**: form guides + rates JSONs |: (see `ANNUAL-UPDATE-RUNBOOK.md` there) |
 | `index.json` | Generated | `python3 scripts/build-index.py` |
 | `agent-skills/<slug>/SKILL.md`, `agent-skills/index.json` | Generated | `python3 scripts/build-agent-skills.py` (the README there is hand-maintained; its stats block is restamped) |
-| `workflows/`, `mcp/`, `docs/`, `scripts/`, `calculators/`, `tests/` | Hand-maintained | — |
+| `skills/COUNTRIES.md` | Generated | `python3 scripts/build-country-index.py` |
+| `skills/REGISTER.md`, `skills/REGISTER.csv` | Generated | `python3 scripts/build-register.py` |
+| `skills/DUPLICATES.md` | Generated | `python3 scripts/validate-guides.py --duplicates-report` |
+| `llms-full.txt` | Generated | `python3 scripts/build-llms-full.py` |
+| `README.md` stats block, `VERIFIERS.md` | Written nightly by the platform sync | Do not edit |
+| `workflows/`, `mcp/`, `docs/`, `scripts/`, `calculators/`, `tests/` | Hand-maintained |: |
 | `tools/workbooks/out/` | Build output, gitignored | `python3 tools/workbooks/generate_workbook.py` |
 
-## Inventories — index.json is the only one
+## Inventories: index.json is the only one
 
 **`index.json` at the repo root is the single canonical machine-readable inventory** of every skill. It is generated by `scripts/build-index.py` and CI fails if it is stale (`scripts/validate-guides.py`).
 
 The two older inventories are **gone** and must not come back (the validator errors if they reappear):
 
-- `skills/manifest.json` — removed. Its generator, `scripts/build-skills-manifest.py`, is now a deprecation stub. Nothing read it.
-- `packages/manifest.json` — removed. `scripts/build-packages.py` no longer writes it. Nothing read it — the MCP server indexes `packages/**/*.md` frontmatter directly at runtime.
+- `skills/manifest.json`: removed. Its generator, `scripts/build-skills-manifest.py`, is now a deprecation stub. Nothing read it.
+- `packages/manifest.json`: removed. `scripts/build-packages.py` no longer writes it. Nothing read it: the MCP server indexes `packages/**/*.md` frontmatter directly at runtime.
 
 If you need a machine-readable listing, read `index.json` or run `python3 scripts/build-index.py`.
 
 ## Which file do I edit?
 
-- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/international/<country>/`.
-- **Fix a US state skill:** `skills/us-states/<code>/`.
-- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/federal/` for these; the us-federal package is the source.
-- **Add a US federal source skill (non-form-guide):** `skills/federal/`.
+- **Fix a rate or rule for a country (Malta VAT, Germany payroll, ...):** `skills/<country>/`.
+- **Fix a US state skill:** `skills/us/states/<code>/`.
+- **Fix a US federal form guide or federal rates JSON:** `packages/us-federal/` directly. Do NOT look for a source in `skills/us/federal/` for these; the us-federal package is the source.
+- **Add a US federal source skill (non-form-guide):** `skills/us/federal/`.
 - **Cross-border / treaty rules:** `skills/cross-border/`.
 - **A guided workflow:** `workflows/`.
 - **A calculator:** `calculators/<name>/`.

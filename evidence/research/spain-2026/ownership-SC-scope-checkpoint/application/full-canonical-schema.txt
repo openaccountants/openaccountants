@@ -1,0 +1,7 @@
+checked 2267 guides (122 non-guide .md files skipped)
+checked 6122 generated package frontmatter block(s)
+WARN: 794 guides missing `a `## Sources` section with a URL (tax skills)`
+WARN: 5 guides missing `fresh figures (last_updated within a year, tax_year current)`
+WARN: 5 guides missing `jurisdiction (jurisdiction-agnostic dirs)`
+
+validation passed (3 warning group(s))

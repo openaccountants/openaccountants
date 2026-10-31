@@ -1,0 +1,1784 @@
+<!--pasadaVerificarIdioma: 0 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 1 - intCodigoAVerificar: 5346 - strTablaAVerificar: Temas--><!-- - TipoNoticia_biz: - True - True - False<BR>--><!--pasadaVerificarIdioma: 2 - intCodigoAVerificar: 5346 - strTablaAVerificar: Temas--><!-- - TipoNoticia_biz: - True - True - False<BR>-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="eu" lang="eu">
+<head>
+
+<!--bolMigradoLiferay: False - /ogasuna/egutegia/egutegia_anual.asp - <br>-->
+	<title> Zergak eta zerga-betebeharrei buruzko informazioa - Bizkaiko egutegi fiskala - Bizkaia.Eus</title>
+	
+<!-- metas -->
+<meta http-equiv='Content-Language' content='eu' />
+<meta name='language' content='eu' />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+
+	<meta name="robots" content="all" />
+
+<meta name="keywords" content="Ahaldun Nagusia, Ekonomi Sustapena, Gizarte Ekintza, Herri Lanak eta Garraioak, Ingurumena, Kultura, Nekazaritza, Ogasuna eta Finantzak, Lehendakaritza" />
+<meta name="description" content="Bizkaiko foru administrazioa" />
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+if(getCookieGa('pc_analitica_bizkaia')=="1" || getCookieGa('pc_analitica_bizkaia')=="true"){
+<!-- Google Tag Manager DES -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZSZSRR');
+<!-- Google Tag Manager PRO -->
+<!--(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!-- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!-- j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=-->
+<!-- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!-- })(window,document,'script','dataLayer','GTM-5ZSZSRR');-->
+}
+function getCookieGa(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+		<link href="/home2/estiloak/comun.css?v=2" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="/home2/estiloak/impresora.css?v=2" rel="stylesheet" type="text/css" media="print" />
+	
+	<link rel="Shortcut Icon" type="image/ico" href="/home2/irudiak/bfa.ico" />
+	<script type="text/javascript" src="/home2/jquery/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/home2/jquery/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/home2/jquery/jquery-ui.css?v=2" type="text/css" />
+
+
+</head>
+
+<body>
+<div id="contenedor"> 
+  <!-- Google Tag Manager (noscript) -->
+<!--DES-->
+<!--<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>-->
+<!--PRO-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+	<p><a id="saltar" accesskey="s" href="#inicio_contenido">saltatu edukira</a></p>
+	<div id="contenedor_cabecera">
+
+		<a id="imagen_logo_dipu_cabecera" href="https://www.bizkaia.eus/eu" title="Bizkaiko Foru Aldundiaren orri nagusia">
+			<img src="/home2/irudiak/ald_logo_gorri.gif" alt="Aldundiaren Logoa" />
+		</a> <!-- imagen_logo_dipu_cabecera -->
+		
+		<div id="texto_logo_dipu_cabecera">
+			<h1>
+				<a accesskey='1' href='https://www.bizkaia.eus/eu'>Foru Aldundia</a> - <a href='https://www.bizkaia.eus/eu' lang='es'>Diputaci&oacute;n Foral</a>
+			</h1>
+		</div> <!-- texto_logo_dipu_cabecera -->
+		
+		<div id="opciones_cabecera">
+		
+			<div id="buscar">
+			
+				<form action="https://www.bizkaia.eus/eu/bilaketa-emaitza" method="get" name="formulario_buscar" id="formulario_buscar">
+						
+			
+			
+
+				<label for="textBuscador" id="titulo_buscar">Aurkitu</label>
+					<input name="q" type="text" id="textBuscador" size="20" maxlength="256" value='' onfocus="if (this.value=='Aurkitu beharreko testua') this.value='';" />
+
+
+                    <!--<div id="contenedor_boton_buscar"> -->
+                        <!-- <input accesskey="4" name="ok" type="submit" id="boton_buscar" title="Aurkitzeko inprimakiren ok botoia" alt="Aurkitzeko inprimakiren ok botoia" value="Aurkitu" /> -->
+
+						<input accesskey="4" name="ok" type="submit" id="boton_buscar" value="Aurkitu"/>
+
+					<!--</div> -->
+					
+				
+
+				</form>
+			</div> <!-- buscar -->
+		  
+			<ul id="idiomas">
+				<!-- <div id="tit_idiomas">
+					<h2><span>Hizkuntzak</span></h2>
+				</div> -->
+			  <li id="idioma_izq">
+<a href='/ogasuna/egutegia/egutegia_anual.asp?Age_Codigo=07%2F10%2F2026&amp;Modelos=301&amp;Tem_Codigo=5346&amp;id=0&amp;Idioma=CA' lang='es'>Español</a>
+	</li>
+	<li id="idioma_dch">
+<a class="idioma_inactivo" lang="en">English</a>
+	</li>
+
+			</ul> <!-- idiomas -->
+		</div> <!-- opciones_cabecera -->
+		<div class="separador">&nbsp;</div>
+	</div> <!-- contenedor_cabecera -->
+
+
+   <div class="separador">&nbsp;</div>
+  <!-- parte principal -->
+
+	<a name="inicio_contenido" id="iniciocontenido"></a>
+	
+ <p class="estas_en">Hemen zaude:</p>
+	<ul class="ruta">
+		<li><a href="https://www.bizkaia.eus/eu">Hasiera </a></li>
+	  <li><a href="https://www.bizkaia.eus/eu/gaia-xehetasuna/-/edukia/dt/282">Zergak eta zerga-betebeharrei buruzko informazioa</a></li>
+<li class='ultimoItemRuta'>Bizkaiko egutegi fiskala</li>
+	</ul><!-- ruta -->
+	  	 
+<div class="actualidadInicio">
+<div class="h3ActualidadInicio h3ConIcono">
+        	<h2 class="h3ConBorde">Bizkaiko egutegi fiskala</h2>
+        </div>  
+<div class="principal">   
+        	<h3><span>Informazioa</span></h3>
+
+
+
+    <div id="contenido_editado">
+
+    
+        
+    <h4>ATXIKIPENAK</h4>
+    <div class="oga_alerta"> 
+                <p class="oga_tit_alerta">Oharra</p>
+               <p>Oharra: datak errespetatuz, abuztuan aurkestu beharreko ereduak irailan izango dira.</p>
+              </div>
+		
+
+
+
+ 
+   <div  class="ogacalendarioICS ogacalendarioICSAnual"> <h5 class="ogacalendario">Sartu egutegia agendan</h5>
+ <p class="limpiar"><strong>ATXIKIPENAK</strong> saileko <strong>216</strong> ereduari dagokion <strong>zerga egutegia</strong> zure agendan erabili nahi baduzu, behera karga ezazu ICS fitxategia eta inportatu zure agenda programan.</p>
+  	 <form name="frm_ICS" method="post" action="egutegia_Fam_Ere_ICS.asp?Age_Codigo=07/10/2026&amp;Modelos=301&amp;Idioma=EU" >
+     <input type="submit" value="Deskargatu fitxategia" name="anual" class="oga_buscar oga_M"/>
+     </form>
+  </div>
+<p class="eguVolver limpiar"><a href="egutegia.asp?Age_Codigo=07/10/2026&amp;Tem_Codigo=5346"> Egutegira itzuli</a></p>
+  
+   <h5 class="ogacalendariomes">urtarrilaren &nbsp;1(e)tik - Otsailaren&nbsp;2(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Otsailaren &nbsp;1(e)tik - Otsailaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Martxoaren &nbsp;1(e)tik - Martxoaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Apirilaren &nbsp;1(e)tik - Apirilaren&nbsp;27(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Maiatzaren &nbsp;1(e)tik - Maiatzaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Ekainaren &nbsp;1(e)tik - Ekainaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Uztailaren &nbsp;1(e)tik - Uztailaren&nbsp;27(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Irailaren &nbsp;1(e)tik - Irailaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Urriaren &nbsp;1(e)tik - Urriaren&nbsp;26(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Azaroaren &nbsp;1(e)tik - Azaroaren&nbsp;25(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+		</div>
+	
+   <h5 class="ogacalendariomes">Abenduaren &nbsp;1(e)tik - Abenduaren&nbsp;28(e)ra</h5>
+     <div class="ogacalendario">
+	 <!-- * Nota adicional Grupo *-->
+  <p class="oga_limpiar"></p>
+         <p class="ogacalendario">
+			
+           <strong>216 eredua</strong> - Egoitza iraunkorrik gabeko ez-egoiliarrei egindako atxikipenen aitorpen-likidazioa.
+ 
+		  </p>
+        
+  </div>
+ 
+<p class="eguVolver"><a href="egutegia.asp?Age_Codigo=2026/10/7&amp;Tem_Codigo=5346&amp;Idioma=EU"> Egutegira itzuli</a></p>
+   </div><!--centenido_editado-->
+
+        </div><!-- principal -->
+        <br class="separador"/>
+      </div><!-- actualidad_inicio -->
+   		
+       <div class="menuPpal"> 
+		
+			<!-- Zona de los temas -->
+			<!--<div class="caja">
+				<div class="cajaInfoDepartamentalInicioGris">
+                	<p>Zergak eta zerga-betebeharrak, Katastroa, Aurrekontuak, Europear fondoak, FAEA. Telefono zenbakia: 901 50 2000</p>
+                    <br />
+				</div>
+			</div>
+            
+            <br class="separador"/>-->
+            
+			<div class="caja">
+                <div class="cajaH3Gris">
+                    <h3 class="h3FondoGris h3Informacion icoInformacionRojo">Atalak</h3>
+                </div>
+				<div class='tema_activo'>
+<p class='nombre_tema'>
+Bizkaiko egutegi fiskala
+</p>
+<p class="intro_indice_tema">
+Zerga-ereduei, zergei eta aurkezpen-datei buruzko informazioa eskuratzea.
+</p>
+<div class='articulos_relacionados'>
+<div class='tit_articulos_relacionados'>
+ <h4><span>Azpiatalak </span></h4>
+</div>
+<ul class='lista_articulos_relacionados'>
+<li>
+<a href="https://www.bizkaia.eus/documents/d/guest/egutegi-fiskala-2026" target="_blank" title="Informazio honi lotutako esteka beste leiho batean irekiko da">Egutegi fiskalaren bertsio murriztua eta inprimagarria</a></li>
+<li class='ultimoItemHijo'>
+<a href="https://www.bizkaia.eus/eu/herritarrei-arreta-ematea-ogasunean#ancla-atencion-linea" target="_blank" title="Informazio honi lotutako esteka beste leiho batean irekiko da">Zerbitzuan harpidetza</a></li>
+</ul>
+</div><!-- articulos_relacionados -->
+
+</div>
+
+			</div>
+			
+			<br class="separador"/>
+			<!-- temas -->
+		
+    </div>
+   
+   
+    <!-- menuPpal -->
+  <div class="separador">&nbsp;</div>
+  
+<div class="piePagina">
+    <ul class="listaEnlacesPie">
+		<li><a href="https://www.bizkaia.eus/eu/directorio-de-entidades">Entitateak</a></li>
+		<li>
+			<a href="https://www.bizkaia.eus/eu/accesibilidad" accesskey="7">
+				Erabilerraztasuna
+			</a>
+		</li>
+        <li>
+            
+            <a href="https://www.bizkaia.eus/eu/mapa-web"  accesskey="3">Gunearen mapa</a>
+        </li>
+        <li><a href="https://www.bizkaia.eus/eu/aviso-legal" accesskey="8">Legezko abisua</a></li>
+		<li><a href="/home2/cookies.asp"><span lang="en">Cookie</span>ak</a></li>
+    </ul> <!-- listaEnlacesPie -->
+
+    <p class="copyRight">&copy;
+        Bizkaiko Foru Aldundia - <span lang='es'>Diputaci&oacute;n Foral de Bizkaia</span>
+    </p>
+	
+	
+		<!-- <h3><span>Validaciones</span></h3> -->
+		<ul class="listaValidaciones">
+			<li id="validacionCss">
+				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwww.bizkaia.eus%2Fogasuna%2Fegutegia%2Fegutegia%5Fanual%2Easp%3FAge%5FCodigo%3D07%252F10%252F2026%26Modelos%3D301%26Tem%5FCodigo%3D5346%26id%3D0%26idioma%3DEU" title="CSS baliozkotzea. Informazio honi lotutako esteka beste leiho batean irekiko da" class="enlaceImagen" target="_blank">
+					<img alt="Kaskadako estilo-orriak erregulatzen duen arautegiarekin bat etortzearen ikonoa" src="/home2/irudiak/validacionCss.gif" id="imgValidacionCss" />
+			   </a>
+			</li>
+			<li>
+				<a href='https://www.bizkaia.eus/eu/accesibilidad' class="enlaceImagen" title="Orrialde honen erabilerraztasunaren ziurtagiria AENOR-en partez">
+					<img  src="/home2/irudiak/logoAenor.gif" id="imgLogoAenor" alt="Logoa AENOR produktu ziurtatua"/>
+			   </a>
+			</li>
+		</ul><!-- listaValidaciones -->
+	
+	
+</div><!-- piePagina -->
+<img id='estadisticas' src='/home2/includes/bfa_plantilla.asp?idi=eu&amp;dep=5&amp;tem=&amp;tema=5346&amp;U=https%3A%2F%2Fwww%2Ebizkaia%2Eeus%2Fogasuna%2Fegutegia%2Fegutegia%5Fanual%2Easp%3FAge%5FCodigo%3D07%252F10%252F2026%26Modelos%3D301%26Tem%5FCodigo%3D5346%26id%3D0' alt='' />
+<div id="barraaceptacion" class="lan-modal">
+    <div id="cuadrocontenido"  class="lan-modal-content" role="dialog" aria-modal="true">
+      <div id="contenedorheader" class="lan-container lan-teal"> 
+        <h1 class="tituloAviso">Cookieak</h1>
+		<button id="close" type="button" class="close cook_oculto firstFocusElement" onclick="mostrarPanelCookies();"><span aria-hidden="true">×</span><span class="sr-only">Itxi&nbsp;<span class="tituloCerrar">Cookieak</span></span></button>
+      </div>
+	  <div id="mesajeInicial" class="lan-container">
+        <p><span lang="en">Cookie</span>  propioak eta hirugarrenen <span lang="en">cookie</span>ak erabiltzen ditugu tekniko-analisi -eta pertsonalizazio- helburuetarako, hala nola erabiltzaileak zer nabigazio-hizkuntza erabili duen jakiteko. Informazio gehiagorako, kontsulta ezazu gure  <a href="javascript:void(0);" class="firstFocusElement" id="fTMCookies1" onclick="mostrarPoliticaCookies();"  role="button"><span lang="en">cookie</span>n politika<span class="sr-only"> (Leiho modala ireki)</span></a>.</p>
+
+        <div class="botonera">
+			<div id="enlaceIdiomas" class="enlaceIdiomas">			
+			<p>Aldatu hona:</p>
+			
+					<p><a href="/ogasuna/egutegia/egutegia_anual.asp?Age_Codigo=07%2F10%2F2026&amp;Modelos=301&amp;Tem_Codigo=5346&amp;id=0&amp;Idioma=CA" lang="es" role="button"><abbr title="Español">ES</abbr></a> </p>
+					
+				
+			</div>
+				<ul class="aceptar_rechazar">
+					<li><a href="javascript:void(0);" class="enlaceboton sinFlotar btn-primary" onclick="ponerTodasCookies();" role="button">Onartu <span class="sr-only" lang="en">cookie</span> guztiak</a></li>
+					<li><a href="javascript:void(0);" class="enlaceboton sinFlotar btn-primary" onclick="quitarTodasCookies();" role="button" >Ukatu <span class="sr-only">cookie</span> guztiak</a></li>
+					<li><a href="javascript:void(0);" class="enlaceboton sinFlotar lastFocusElement" onclick="javascript:mostrarConfiguracion();" role="button" >Konfiguratu<span class="sr-only"> <span lang="en">cookie</span>ak (Leiho modala ireki)</span></a></li>
+				</ul>
+		</div>
+      </div>
+
+	  <div id="politicaCookies" class="lan-container cook_oculto">
+			
+<div id="cook_contenido">
+
+<p>Web-orri honek, https://www.bizkaia.eus/ (aurrerantzean, <strong>&quot;Webgunea&quot;</strong>), nabigazioaren bidez eta zerbitzuaren hartzailearen IP helbidearen bidez nabigazioaren beraren jarraipena egiteko tresnak erabiltzen ditu; honela, zerbitzuak edo haren funtzionamendu teknikoa hobetzeko eta bermatzeko, beste erabiltzaile batzuengandik bereizteko eta nabigazio-ohiturak aztertzeko.</p>
+<p><span lang="en">Cookie</span>n politika honen helburua da erabiltzen ditugun <span lang="en">cookie</span>n funtzionamenduari eta erabilgarritasunei buruzko informazio argi eta zehatza ematea.</p>
+
+<h2>Zer dira eta zertarako erabiltzen ditugu <span lang="en">cookie</span>ak?</h2>
+
+<p><span lang="en">Cookie</span> bat webgune jakin batzuetan sartzen zarenean zure ordenagailuan deskargatzen den fitxategi bat da.</p>
+<p><span lang="en">Cookie</span>k, besteak beste, erabiltzaile baten edo haren ekipamenduaren nabigazio-ohiturei buruzko informazioa biltzea eta berreskuratzea ahalbidetzen diote webgune bati. Barne hartzen duten informazioaren arabera eta ekipamendua erabiltzen den moduaren arabera, erabiltzailea ezagutzeko erabili daitezke.</p>
+<p>Indarrean dagoen legeak aukera ematen du <span lang="en">cookie</span>ak bere gailuan gordetzeko, webgune honen funtzionamendurako behar-beharrezkoak badira. Hala ere, gainerako <span lang="en">cookie</span> motetarako baimena beharko dugu.</p>
+
+<h2 id="gestor_cookies"><span lang="en">Cookie</span> motak, horiek kudeatzen dituen erakundearen arabera</h2>
+
+<p><span lang="en">Cookie</span>ak bidaltzen dituen ekipo edo domeinua kudeatzen eta jasotako datuak tratatzen dituenaren arabera, honako hauek bereizten ditugu:</p>
+<ul>
+<li>
+<span lang="en">Cookie</span> propioak: Bizkaiko Foru Aldundiak kudeatzen dituenak.
+</li>
+<li>
+Hirugarrenen <span lang="en">cookie</span>ak: <span lang="en">cookie</span>n bidez bildutako datuak erabiltzen dituen beste erakunde batek kudeatzen ditu. Webgune honetan Google Analytics-en <span lang="en">cookie</span>ak erabiltzen dira: Googlek garatutako Interneteko analisi zerbitzua da, webguneko nabigazioak neurtzea eta aztertzea ahalbidetzen dituena. Zure nabigatzailean zerbitzu honen <span lang="en">cookie</span>ak ikusi ahal izango dituz.
+</li>
+</ul>
+<h2><span lang="en">Cookie</span> motak, xedearen arabera</h2>
+<ul>
+<li>
+<span lang="en">Cookie</span> teknikoak: erabiltzaileak webgune, plataforma edo aplikazio batean nabigatzea ahalbidetzen dute, baita horietan dauden aukera edo zerbitzu desberdinak erabiltzea ere; hala nola, trafikoa kontrolatzea eta datuak komunikatzea, saioa identifikatzea, sarrera mugatua duten ataletan sartzea, ekimen batean izena emateko edo parte hartzeko eskaera egitea, hedapenerako bideoak edo soinua daukaten edukia gordetzea edo sare sozialen bidez edukiak partekatzea. 
+</li>
+<li>
+Analisi-<span lang="en">cookie</span>ak: erabiltzaile kopurua zenbatzea ahalbidetzen dute, baita nabigazioaren neurketa eta analisi estatistikoa egitea ere. Horren helburua eskura dauden zerbitzuak hobetzea da. Propioak edo hirugarren batenak izan daitezke.
+</li>
+<li>
+Pertsonalizazio-<span lang="en">cookie</span>ak: erabiltzaileak zerbitzura sartzea ahalbidetzen dute erabiltzailearen gailuan aurretik definitutako irizpide batzuen araberako ezaugarri orokor batzuekin; hala nola, hizkuntza, zerbitzura sartzeko erabiltzen den nabigatzaile mota, zerbitzura sartzeko erabiltzen duen eskualdeko konfigurazioa, eta abar.
+</li>
+<!--<li></li>-->
+</ul>
+<h2 id="duracion_cookies"> <span lang="en">Cookie</span>n iraupena</h2>
+<ul>
+<li>
+Saiorako <span lang="en">cookie</span>k: erabiltzailea webgune batera sartzen den bitartean datuak bildu eta gordetzen dituzte.
+</li>
+<li>
+<span lang="en">Cookie</span> iraunkorrak: datuek gailuan gordeta jarraitzen dute, eta horietara sartu daiteke eta horiek tratatu <span lang="en">cookie</span>-en arduradunak definitutako aldi batean. Aldi hori minutu batzuetatik zenbait urtetara bitartekoa izan daiteke.
+</li>
+</ul>
+<h2 id="tituloTablaCookies">Zer <span lang="en">cookie</span> erabiltzen ditu webgune honek?</h2>
+
+<!---nuevo  desplegable--->
+
+<div class="row uib_cookies">
+
+  <ul class="listadoCookies">
+		<!--Técnicas-->
+		<li>
+			<div class="cabeceraCookies">
+					<a href="javascript:void(0);" id="enlaceTecnicas_2"   aria-expanded="false" role="button">
+					<h3 id="flechaSpan_2">
+						<span><span lang="en">Cookie</span> teknikoak</span>
+						<span class="flecha_abajo_one" aria-hidden="true"></span>  
+					</h3>
+					</a>		
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionTecnicas_2">					   
+				   <p class="sr-only" id="descripcion_tabla_politica_cookies_tecnica">Lerro bakoitzean <span lang="en">cookie</span>(teknikoak) bati buruzko datuak </p>
+				 <table aria-labelledby="enlaceTecnicas_2"
+                                                            aria-describedby="descripcion_tabla_politica_cookies_tecnica"
+                                                            class="responsive-table-cookies px-3 px-sm-0" tabindex="0">
+
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="col-3 col-sm-3" scope="col">Izena</th>
+                                                                    <th class="col-5 col-sm-5" scope="col">Mota</th>
+                                                                    <th class="col-1 col-sm-1" scope="col">Helburua</th>
+                                                                    <th class="col-3 col-sm-3" scope="col">Iraupena
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">JSESSIONID</th>
+                                                                    <td>Saioa identifikatzea</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">ASPSESSIONID</th>
+                                                                    <td>Saioa identifikatzea</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">TS01</th>
+                                                                    <td>Saioa identifikatzea</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">LFR_SESSION_STATE</th>
+                                                                    <td>Saioa identifikatzea</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">COOKIE_SUPPORT</th>
+                                                                    <td>Adierazi ea erabiltzaileak aktibatuta daukan
+                                                                        <span lang="en">cookie</span>tarako laguntza
+                                                                    </td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">pc_tecnicas_bizkaia</th>
+                                                                    <td>Tekniken <span lang="en">cookie</span>n blokeari
+                                                                        buruzko onarpen/errefusatze lehentasunak
+                                                                        jasotzea</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">pc_analitica_bizkaia</th>
+                                                                    <td>Analisien <span lang="en">cookie</span>n
+                                                                        blokeari buruzko onarpen/errefusatze
+                                                                        lehentasunak jasotzea</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">pc_preferencias_bizkaia</th>
+                                                                    <td>Lehentasunen <span lang="en">cookie</span>n
+                                                                        blokeari buruzko onarpen/errefusatze
+                                                                        lehentasunak jasotzea</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+																<tr>
+																	<th scope="row">pc_terceros_bizkaia</th>
+																	<td>Hirugarrenen cookien blokeari buruzko onarpen/errefusatze lehentasunak jasotzea</td>
+																	<td>Urtebete</td>
+																	<td>Bizkaiko Foru Aldundia</td>
+																</tr>
+                                                               <tr>
+                                                                    <th scope="row">CPLB</th>
+                                                                    <td>Karga orekatzeko gure zerbitzariek erabilitako
+                                                                        informazioa jasotzen du</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>																												
+																<tr>
+                                                                    <th scope="row">Kultursistema_session</th>
+                                                                    <td>Erabiltzailearen saioa mantendu</td>
+                                                                    <td>Ordu 1</td>
+                                                                    <td>Kultursistema</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <th scope="row">XSRF-TOKEN</th>
+                                                                    <td>CSRF (Cross Site Request Forgery) erasoak
+                                                                        saihesteko</td>
+                                                                    <td>Ordu 1</td>
+                                                                    <td>Kultursistema</td>
+                                                                </tr>
+																<tr>
+																	<th scope="row">_GRECAPTCHA</th>
+																	<td>Babestu webgunea spametik eta indar handiko erasoetatik</td>
+																	<td>5 hilabete</td>
+																	<td>Google</td>
+																</tr>
+																
+                                                            </tbody>
+                                                        </table>
+			</div>
+		</li>
+		<!--Análisis-->
+		<li>
+			<div class="cabeceraCookies">
+				
+					<a href="javascript:void(0);" id="enlaceAnalisis_2"  aria-expanded="false" role="button">
+					<h3>
+						<span>Analisi-<span lang="en">cookie</span>ak</span>
+						<span class="flecha_abajo_one" aria-hidden="true"></span> 
+
+					</h3>
+					</a>
+				
+					
+				
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionAnalisis_2">		
+					<p class="sr-only" id="descripcion_tabla_politica_cookies_analisis">Lerro bakoitzean analisirako <span lang="en">cookie</span> bati buruzko datuak </p>
+                            <table aria-labelledby="enlaceAnalisis_2"
+                                                            aria-describedby="descripcion_tabla_politica_cookies_analisis"
+                                                            class="responsive-table-cookies px-3 px-sm-0" tabindex="0">
+
+
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="col-3 col-sm-3" scope="col">Izena</th>
+                                                                    <th class="col-5 col-sm-5" scope="col">Mota</th>
+                                                                    <th class="col-1 col-sm-1" scope="col">Helburua</th>
+                                                                    <th class="col-3 col-sm-3" scope="col">Iraupena
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">dtCookie</th>
+                                                                    <td>Bisita bat arakatzen du hainbat eskaeraren bidez
+                                                                    </td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">dtLatC</th>
+                                                                    <td>Zerbitzariaren sortasuna neurtzen du
+                                                                        errendimenduaren monitorizaziorako</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">dtPC</th>
+                                                                    <td>Beharrezkoa balizen transmisiorako parametro
+                                                                        egokiak identifikatzeko; korrelaziorako saioaren
+                                                                        IDa barne hartzen du</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">dtSa</th>
+                                                                    <td>Erdi mailako biltegia orrialdeak hartzen
+                                                                        dituzten ekintzetarako</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">rxVisitor</th>
+                                                                    <td>Bisitariaren ID saioak korrelazioan jartzeko
+                                                                    </td>
+                                                                    <td>Etengabe</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">rxvt</th>
+                                                                    <td>Saioaren itxarote-denbora</td>
+                                                                    <td>Saioa</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">iyrc-user-id</th>
+                                                                    <td>Erabiltzaileak bereiztea</td>
+                                                                    <td>Ordu 1</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">_ga, _ga_XXXXXXXXXXX</th>
+                                                                    <td>Erabiltzailea bereiztea</td>
+                                                                    <td>2 urte</td>
+                                                                    <td>Google Analytics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">_gat, _gat_XXXXXXXXXXX</th>
+                                                                    <td>Eskaeren ehunekoa mugatzea</td>
+                                                                    <td>Minutu 1</td>
+                                                                    <td>Google Analytics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">_gid</th>
+                                                                    <td>Erabiltzaileak bereiztea</td>
+                                                                    <td>Egun 1</td>
+                                                                    <td>Google Analytics</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">MUID</th>
+                                                                    <td>Erabiltzailea bereiztea</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">_clck</th>
+                                                                    <td>Lehentasunak esleitzea erabiltzaile berdinari
+                                                                    </td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">_clsk</th>
+                                                                    <td>Konektatu saio batean ikusitako hainbat orri
+                                                                    </td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">CLID</th>
+                                                                    <td>Identifikatu erabiltzaile baten lehenengo bisita
+                                                                    </td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">ANONCHK</th>
+                                                                    <td>Erabiltzailea bereiztea</td>
+                                                                    <td>Egun 1</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">MR</th>
+                                                                    <td>Adierazi noiz freskatu MUID</td>
+                                                                    <td>6 hilabete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">SM</th>
+                                                                    <td>Sinkronizatu MUID Microsoft inguruan</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Microsoft <span lang="en">Clarity</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>                      
+			</div>
+		</li>
+		<!--Personalización-->
+		<li>
+			<div class="cabeceraCookies">
+					<a href="javascript:void(0);" id="enlacePreferencias_2" aria-expanded="false" role="button">
+					<h3>
+						<span >Pertsonalizazio-<span lang="en">cookie</span>ak</span>
+						<span class="flecha_abajo_one" aria-hidden="true"></span>  
+					</h3>
+					</a>
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionPreferencias_2">		
+					<p class="sr-only" id="descripcion_tabla_politica_cookies_personalizacion">Lerro bakoitzean  <span lang="en">cookie</span>(Pertsonalizazio) bati buruzko datuak </p>     
+                                 <table aria-labelledby="enlacePreferencias_2"
+                                                            aria-describedby="descripcion_tabla_politica_cookies_personalizacion"
+                                                            class="responsive-table-cookies px-3 px-sm-0" tabindex="0">
+
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="col-3 col-sm-3" scope="col">Izena</th>
+                                                                    <th class="col-5 col-sm-5" scope="col">Mota</th>
+                                                                    <th class="col-1 col-sm-1" scope="col">Helburua</th>
+                                                                    <th class="col-3 col-sm-3" scope="col">Iraupena
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">Idioma</th>
+                                                                    <td>Erabiltzailearen hizkuntzarik gustukoena
+                                                                        aukeratzea</td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">cookie-tramites-favs</th>
+                                                                    <td>Gorde gogoko izapideak Aurretiazko Hitzorduan
+                                                                    </td>
+                                                                    <td>Urtebete</td>
+                                                                    <td>Bizkaiko Foru Aldundia</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>                         
+			
+			</div>
+		</li>
+		<!--Terceros-->
+		<li>
+			<div class="cabeceraCookies">
+					<a href="javascript:void(0);" id="enlaceTerceros_2"  aria-expanded="false" role="button">
+					<h3>
+						<span>Hirugarrenen <span lang="en">cookie</span>ak</span>
+						<span class="flecha_abajo_one" aria-hidden="true"></span>  
+					</h3>
+					</a>
+			
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionTerceros_2">		
+					<p class="sr-only" id="descripcion_tabla_politica_cookies_terceros">Lerro bakoitzean  <span lang="en">cookie</span>(Hirugarrenen) bati buruzko datuak </p>   
+                                 <table aria-labelledby="enlaceTerceros_2"
+                                                            class="responsive-table-cookies px-3 px-sm-0"  tabindex="0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="col-3 col-sm-3" scope="col">Izena</th>
+                                                                    <th class="col-5 col-sm-5" scope="col">Helburua</th>
+                                                                    <th class="col-1 col-sm-1" scope="col">Iraupena</th>
+                                                                    <th class="col-3 col-sm-3" scope="col">Jabea</th>
+                                                                </tr>
+                                                            </thead>
+                                                             <tbody>
+																<tr>
+																	<th scope="row">CLID</th>
+																	<td>Identifikatu erabiltzaile baten lehenengo bisita</td>
+																	<td>Urtebete</td>
+																	<td>Microsoft Clarity</td>
+																</tr>
+																<tr>
+																	<th scope="row">APISID</th>
+																	<td>Gorde erabiltzailearen lehentasunak eta informazioa orriak bistaratzean, Google mapak bertan daudela.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">HSID</th>
+																	<td>Iruzurra prebenitzea</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">MUID</th>
+																	<td>Bereizi erabiltzailea</td>
+																	<td>Urtebete</td>
+																	<td>Microsoft Clarity</td>
+																</tr>
+																<tr>
+																	<th scope="row">NID</th>
+																	<td>Gogoratu bere lehentasunak eta beste edozein informazio</td>
+																	<td>6 hilabete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">SAPISID</th>
+																	<td>Erakutsi iragarki pertsonalizatuak Googleko webguneetan</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">SID</th>
+																	<td>Eskaini iragarkiak edo retargeting entregatzea, eskaini iruzurra prebenitzea.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">SIDCC</th>
+																	<td>Eskaini web-trafiko fidagarriaren identifikazioa.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">SM</th>
+																	<td>Microsoften domeinuen arteko MUIDa sinkronizatzeko erabiltzen da</td>
+																	<td>Saioa</td>
+																	<td>Microsoft Clarity</td>
+																</tr>
+																<tr>
+																	<th scope="row">SSID</th>
+																	<td>Eskaini iragarkiak edo retargeting entregatzea, eskaini iruzurra prebenitzea.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-1PAPISID</th>
+																	<td>Sortu webgunearen bisitariaren interesen profil bat, Googleren publizitate garrantzitsua eta pertsonalizatua erakusteko.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-1PSID</th>
+																	<td>Sortu webgunearen bisitariaren interesen profil bat, Googleren publizitate garrantzitsua eta pertsonalizatua erakusteko.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-1PSIDCC</th>
+																	<td>Sortu webgunearen bisitarien interesen profil bat, retargeting bidez erakusteko iragazki garrantzitsu eta pertsonalizatuak.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-1PSIDTS</th>
+																	<td>Sortu webgunearen bisitarien interesen profil bat, retargeting bidez erakusteko iragazki garrantzitsu eta pertsonalizatuak.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-3PSID</th>
+																	<td>Sortu webgunearen bisitariaren interesen profil bat, Googleren publizitate garrantzitsua eta pertsonalizatua erakusteko.</td>
+																	<td>2 urte</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-3PSIDCC</th>
+																	<td>Sortu webgunearen bisitariaren interesen profil bat, Googleren publizitate garrantzitsua eta pertsonalizatua erakusteko.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-3PSIDTS</th>
+																	<td>Sortu webgunearen bisitarien interesen profil bat, retargeting bidez erakusteko iragazki garrantzitsu eta pertsonalizatuak.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">__Secure-ENID</th>
+																	<td>Webguneko zerbitzuak eta aukerak erabiltzeko beharrezko cookiea</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">ar_debug</th>
+																	<td>Araztu iragarkiak.</td>
+																	<td>Urtebete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">MR</th>
+																	<td>Adierazi noiz freskatu MUID</td>
+																	<td>6 hilabete</td>
+																	<td>Microsoft Clarity</td>
+																</tr>
+																<tr>
+																	<th scope="row">XSRF-TOKEN</th>
+																	<td>CSRF (Cross Site Request Forgery) erasoak saihesteko</td>
+																	<td>1 ordu</td>
+																	<td>Kultursistema</td>
+																</tr>
+																<tr>
+																	<th scope="row">_fbp</th>
+																	<td>Gorde eta arakatu webguneetan bisitak</td>
+																	<td>Urtebete</td>
+																	<td>Facebook</td>
+																</tr>
+																<tr>
+																	<th scope="row">kultursistema_session</th>
+																	<td>Mantendu erabiltzailearen saioa</td>
+																	<td>1 ordu</td>
+																	<td>Kultursistema</td>
+																</tr>
+																<tr>
+																	<th scope="row">AEC</th>
+																	<td>Detektatu spam, iruzurra eta gehiegikeria</td>
+																	<td>6 hilabete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">SOCS</th>
+																	<td>Gorde erabiltzailearen cookie-aukerak</td>
+																	<td>13 hilabete</td>
+																	<td>Google</td>
+																</tr>
+																<tr>
+																	<th scope="row">Locale</th>
+																	<td>Ez dago eskuragarri</td>
+																	<td></td>
+																	<td>Gobierno Vasco</td>
+																</tr>
+																<tr>
+																	<th scope="row">_hegoa_coop_session</th>
+																	<td>Sortu erabiltzaileentzat saio-identifikatzaile bat</td>
+																	<td>Saioa</td>
+																	<td>Gobierno Vasco</td>
+																</tr>
+															
+															</tbody>
+                                                        </table>                    
+			</div>
+		</li>
+		
+	  </ul>
+
+
+</div>
+<!-- fin nuevo desplegable-->
+
+
+
+
+
+
+	
+
+<h2>Nola desaktibatu edo ezabatu daitezke <span lang="en">cookie</span>ak?</h2>
+
+<p>Erabiltzaileak, Webgunera lehen aldiz sartzen denean, <span lang="en">cookie</span>ak konfiguratu eta onartu edo baztertu ahal izango ditu webgunean bertan. Ondoren, erabiltzaileak edozein unetan aldatu edo kendu ahal izango du baimena <span lang="en">cookie</span>n politika honen bidez edo konfigurazioaren bidez.</p>
+<p>Hala ere, edozein unetan baliatu ahal izango duzu horiek libreki desaktibatzeko eskubidea, bai eta webgune honetako <span lang="en">cookie</span>ak ezabatzekoa ere. Ekintza horiek desberdin egiten dira, erabiltzen ari zaren nabigatzailearen arabera. Hemen utziko dizugu nabigatzaile ezagunenetarako gida azkar bat.</p>
+<ul>
+<li>
+<a href="https://support.google.com/accounts/answer/61416?co=GENIE.Platform%3DDesktop&amp;hl=es&amp;oco=0" target="_blank" title="Lotura hau beste leiho baten zabalduko da" hreflang="es">Desaktibatu <span lang="en">cookie</span>ak Chromen</a>
+</li>
+<li>
+<a href="https://support.mozilla.org/es/kb/Deshabilitar%20cookies%20de%20terceros " target="_blank" title="Lotura hau beste leiho baten zabalduko da" hreflang="es">Desaktibatu <span lang="en">cookie</span>ak FireFoxen</a>
+</li>
+<li>
+<a href="https://support.microsoft.com/es-es/topic/eliminar-y-administrar-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" title="Lotura hau beste leiho baten zabalduko da" hreflang="es">Desaktibatu <span lang="en">cookie</span>ak Exploreren</a>
+</li>
+<li>
+<a href="https://support.apple.com/es-es/HT201265#:~:text=Para%20activar%20o%20desactivar%20el,funcionen%20si%20bloqueas%20las%20cookies" target="_blank" title="Lotura hau beste leiho baten zabalduko da" hreflang="es">Desaktibatu <span lang="en">cookie</span>ak Safarin</a>
+</li>
+<li>
+<a href="https://support.microsoft.com/es-es/microsoft-edge/problema-al-bloquear-cookies-de-terceros-f91209bd-0104-2446-61be-d2e4d7da64da" target="_blank" title="Lotura hau beste leiho baten zabalduko da" hreflang="es">Desaktibatu <span lang="en">cookie</span>ak Edgen</a>
+</li>
+</ul>
+<p><span lang="en">Cookie</span>-ak desaktibatu edo ezabatzen badira baliteke webguneko zenbait funtzionaltasun ondo ez ibiltzea.</p>
+
+<h2>Aldaketak <span lang="en">Cookie</span>n Politikan</h2>
+
+<p>Webguneak <span lang="en">cookie</span>n politika hau aldatzeko eskubidea gordetzen du, betiere, indarrean dagoen legediak baimentzen duen moduan. Horregatik, gure webgunera sartzen zaren bakoitzean politika hori berrikusteko gomendatzen dizugu, dagozkion eguneraketa- eta informazio-ondorioetarako.</p>
+
+<p>
+<a href="javascript:void(0);" class="enlaceboton flotarIzquierda lastFocusElement" onclick="mostrarConfiguracion();" role="button" title="(Leiho berria ireki)">Konfiguratu<span class="sr-only"> <span lang="en">cookie</span>ak (Leiho modala ireki)</span></a>
+</p>
+<!--<p><a id="atras" href="javascript:history.back()" class="enlaceboton">Itzuli</a></p>
+<br class="limpiar"/>-->
+</div>
+
+
+
+	  </div>
+	  
+      <div id="capaConfiguracion" class="lan-container cook_oculto" >
+	  <p>Jarraian, erakutsiko dizugu gure webguneak zer kategoriatarako erabiltzen dituen <span lang="en">cookie</span>ak. Haiek onartuta edo ukatuta zure aukeraketa pertsonaliza dezakezu, horretarako dauden botoien bidez. Informazio gehiagorako, kontsulta ezazu gure <a href="javascript:void(0);" onclick="mostrarPoliticaCookies();" role="button"><span lang="en">cookien</span> politika<span class="sr-only"> (Leiho modala ireki)</span></a>.</p>
+	  <ul class="botonestodas">
+	  <li><a href="javascript:void(0);" class="enlacebotontodas" onclick="marcarTodo();" role="button">Onartu <span class="sr-only" lang="en">cookie</span> guztiak</a></li>
+	  <li><a href="javascript:void(0);" class="enlacebotontodas" onclick="desmarcarTodo();" role="button">Ukatu <span class="sr-only" lang="en">cookie</span>guztiak</a></li>
+       </ul>
+	  
+	  <ul class="listadoCookies">
+		<!--Técnicas-->
+		<li>
+			<div class="cabeceraCookies">
+				<div class="capaDetalles" role="heading" aria-level="2">	
+					<a role="button" href="javascript:void(0);" id="enlaceTecnicas" aria-labelledby="tituloTecnicas cookieTecnicasEstado" aria-expanded="false">
+						<span class="flecha_abajo_one" aria-hidden="true" ></span><span class="oculto"></span>
+					</a>
+				</div>
+				<span id="tituloTecnicas"><span lang="en">Cookie</span> teknikoak</span>				
+				<span class="cookiesNecesarias" id="cookieTecnicasEstado">
+				  Beti aktibo
+				</span>			
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionTecnicas">		
+				<p>Beharrezkoak dira gure webgunean nabigatzeko eta oinarrizko zereginetarako, webguneak behar bezala funtziona dezan.</p>
+			</div>
+		</li>
+		<!--Análisis-->
+		<li>
+			<div class="cabeceraCookies">
+				<div class="capaDetalles"  role="heading" aria-level="2">
+					<a role="button" href="javascript:void(0);" id="enlaceAnalisis" aria-labelledby="tituloAnalisis cookieAnalisisEstado" aria-expanded="false">
+						<span class="flecha_abajo_one" aria-hidden="true" ></span><span class="oculto"></span>
+					</a>
+				</div>
+				<span id="tituloAnalisis">Analisi-<span lang="en">cookie</span>ak</span>
+				<span class="switch">
+					<label for="cbGa" role="none"><span class="switchText" id="cookieAnalisisEstado">Inaktibo</span>
+					<span class="sr-only"></span></label>
+					<input type="checkbox" id="cbGa" name="cbGa" aria-labelledby="tituloAnalisis" aria-describedby="descripcionAnalisis" role="switch" aria-checked="false" />
+					<span class="slider round" onclick="toggleAnalisis(event)"></span>
+				</span>
+				
+				
+				
+				
+				
+				
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionAnalisis">		
+				<p>Erabiltzaileek webguneetan duten portaerari buruzko informazio anonimoa biltzen dute, dena delako jarduera neurtu eta aztertzeko, erabilera-datuen arabera hobekuntzak sartzeko.</p>
+			</div>
+		</li>
+		<!--Personalización-->
+		<li>
+			<div class="cabeceraCookies">
+				<div class="capaDetalles" role="heading" aria-level="2">
+					<a role="button" href="javascript:void(0);" id="enlacePreferencias" aria-labelledby="tituloPreferencias cookiePreferenciasEstado" aria-expanded="false">
+						<span class="flecha_abajo_one" aria-hidden="true" ></span><span class="oculto"></span>
+					</a>
+				</div>
+				<span id="tituloPreferencias" role="heading" aria-level="2">Pertsonalizazio-<span lang="en">cookie</span>ak</span>
+				<span class="switch">
+					<label for="cbPrf" role="none"><span class="switchText" id="cookiePreferenciasEstado">Inaktibo</span> <span class="sr-only"></span></label>
+					<input type="checkbox" id="cbPrf" name="cbPrf"  aria-labelledby="tituloPreferencias" aria-describedby="descripcionPreferencias" role="switch" aria-checked="false" />
+					<span class="slider round" onclick="togglePreferencias(event)"></span>
+				</span>
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionPreferencias">		
+			<p>Aldez aurretik definitutako ezaugarri orokor batzuk dituen zerbitzu batean sartzeko aukera ematen diote erabiltzaileari, erabiltzen duen terminalaren berezko irizpideen arabera (hizkuntza, nabigatzaile mota...).</p>
+			</div>
+		</li>
+		<!--Terceros-->
+		<li>
+			<div class="cabeceraCookies">
+				<div class="capaDetalles" role="heading" aria-level="2">
+					<a role="button" href="javascript:void(0);" id="enlaceTerceros" aria-labelledby="tituloTerceros cookieTercerosEstado" aria-expanded="false">
+						<span class="flecha_abajo_one" aria-hidden="true" ></span><span class="oculto"></span>
+					</a>
+				</div>
+				<span id="tituloTerceros">Hirugarrenen <span lang="en">cookie</span>ak</span>
+				<span class="switch">
+					<label for="cbTer" role="none"><span class="switchText" id="cookieTercerosEstado">Inaktibo</span> <span class="sr-only"></span></label>
+					<input type="checkbox" id="cbTer" name="cbTer"  aria-labelledby="tituloTerceros" aria-describedby="descripcionTerceros" role="switch" aria-checked="false" />
+					<span class="slider round" onclick="toggleTerceros(event)"></span>
+				</span>
+			</div>
+			<div class="capaDescripcionCookies" id="descripcionTerceros">		
+			<p><span lang="en">Cookie</span> horiek erabiltzaileek webean hirugarrenei dagozkien txertatutako tresnekin eduki jakin baten inguruan egiten duten erabilerari buruzko informazioa jaso lezakete. <span lang="en">Cookie</span>sn kategoria hau ezeztatzen bada, litekeena da webgunearen eduki zehatza ez agertzea.</p>
+			</div>
+		</li>
+		
+	  </ul>
+	 
+	  <p><a href="javascript:void(0);" class="enlaceboton flotarDerecha lastFocusElement" onclick="PonerCookiesSeleccionadas();" role="button"><span class="sr-only"><span lang="en">cookie</span>en konfigurazioa </span> Gorde eta itxi</a>
+       </p>
+		<!--</div>-->
+    </div>
+	
+  </div>
+</div>
+ 
+<script type="text/javascript">
+<!--//<![CDATA[
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = {37: 1, 38: 1, 39: 1, 40: 1, 33: 1, 34: 1, 35: 1, 36: 1};
+var flagCookie = 1;
+
+
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+  
+  var divScrollElement = document.getElementById("capaConfiguracion");
+  divScrollElement.addEventListener("wheel", function (e) {
+  if (e.deltaY > 0) { 
+    divScrollElement.scrollTop += 100;
+	} else {
+	  divScrollElement.scrollTop -= 100;
+      return true; 
+    }
+  });
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+ $( function() {
+    // run the currently selected effect
+    function runEffect(capa, enlace) {
+      // get effect type from
+     
+      // Most effect types need no options passed by default
+      var options = {};
+      // some effects have required parameters
+     
+ 
+      // Run the effect
+	  if ($(capa).is(":visible")) { 
+		$(capa).hide( "fast");
+		$(enlace).find('.flecha_arriba_one').addClass('flecha_abajo_one');
+		$(enlace).find('.flecha_abajo_one').removeClass('flecha_arriba_one');
+		$(enlace).attr("aria-expanded", "false");
+
+	  }else{
+		$(capa).show( "fast");
+		$(enlace).find('.flecha_abajo_one').addClass('flecha_arriba_one');
+		$(enlace).find('.flecha_arriba_one').removeClass('flecha_abajo_one');
+		$(enlace).attr("aria-expanded", "true");
+	  
+	  }
+    };
+ 
+  
+ 
+
+    $( "#enlaceTecnicas" ).on( "click", function() {
+      runEffect("#descripcionTecnicas", "#enlaceTecnicas");
+    });
+	$( "#enlaceAnalisis" ).on( "click", function() {
+      runEffect("#descripcionAnalisis", "#enlaceAnalisis");
+    });
+	$( "#enlacePreferencias" ).on( "click", function() {
+      runEffect("#descripcionPreferencias", "#enlacePreferencias");
+    });
+	
+	$( "#enlaceTerceros" ).on( "click", function() {
+      runEffect("#descripcionTerceros", "#enlaceTerceros");
+    });
+	
+	//Publicidad
+	/*
+	$( "#enlacePublicidad" ).on( "click", function() {
+      runEffect("#descripcionPublicidad", "#enlacePublicidad");
+    });
+ 	*/
+
+    $( "#descripcionTecnicas" ).hide();
+	$( "#descripcionAnalisis" ).hide();
+	$( "#descripcionPreferencias" ).hide();
+	$( "#descripcionTerceros" ).hide();
+	   //$( "#descripcionPublicidad" ).hide();
+	   
+	  
+	 ///desplegable 2
+	 
+	 
+
+    $( "#enlaceTecnicas_2" ).on( "click", function() {
+      runEffect("#descripcionTecnicas_2", "#enlaceTecnicas_2");
+    });
+	$( "#enlaceAnalisis_2" ).on( "click", function() {
+      runEffect("#descripcionAnalisis_2", "#enlaceAnalisis_2");
+    });
+	$( "#enlacePreferencias_2" ).on( "click", function() {
+      runEffect("#descripcionPreferencias_2", "#enlacePreferencias_2");
+    });
+	$( "#enlaceTerceros_2" ).on( "click", function() {
+      runEffect("#descripcionTerceros_2", "#enlaceTerceros_2");
+    });
+
+
+    $( "#descripcionTecnicas_2" ).hide();
+	$( "#descripcionAnalisis_2" ).hide();
+	$( "#descripcionPreferencias_2" ).hide();
+	$( "#descripcionTerceros_2" ).hide();
+	
+	$(".listadoCookies .switch input").on("keydown", function(e){
+		const ariaLabel = this.id;
+		if (e.keyCode == 32) {
+			var checkValue = document.getElementById(ariaLabel).checked;
+			var element = ariaLabel;
+			switchText(e,!checkValue,element);
+		}
+		
+    });
+	
+	//Accesibilidad
+	
+	$('body').on('keydown', '.lastFocusElement', function(e){
+        if (e.keyCode == 9) {
+			if (e.shiftKey) {
+			}else{
+				e.preventDefault();
+				$(this).parents('div[role="dialog"]').find('.firstFocusElement').focus();
+			}
+        }
+    });
+	
+	$('body').on('keydown', '.firstFocusElement', function(e){
+        if (e.keyCode == 9) {
+            if (e.shiftKey) {
+				e.preventDefault();
+				$(this).parents('div[role="dialog"]').find('.lastFocusElement').focus();
+                   
+            }else{
+			}
+        }
+    });
+	
+	
+
+  } );
+  
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+ 
+function setCookie(c_name,value,exdays,domain){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; path=/; expires="+exdate.toUTCString() + "; domain=" + domain);
+    document.cookie=c_name + "=" + c_value;
+}
+function setCookie2(c_name, value, exhours,domain) {
+    var exdate=new Date();
+    exdate.setTime(exdate.getTime() + exhours);
+    var c_value=escape(value) + ((exhours==null) ? "" : "; path=/; expires="+exdate.toUTCString() + "; domain=" + domain);
+    document.cookie=c_name + "=" + c_value;
+}
+function setCookie3(c_name, value, exminutes,domain) {
+    var exdate=new Date();
+	exdate.setTime(exdate.getTime() + exminutes);
+	var c_value=escape(value) + ((exminutes==null) ? "" : "; path=/; expires="+exdate.toUTCString() + "; domain=" + domain);
+	document.cookie=c_name + "=" + c_value;
+}
+function setCookie4(c_name, value, exseconds,domain) {
+    var exdate=new Date();
+    exdate.setTime(exdate.getTime() + exseconds);
+    var c_value=escape(value) + ((exseconds==null) ? "" : "; path=/; expires="+exdate.toUTCString() + "; domain=" + domain);
+    document.cookie=c_name + "=" + c_value;
+}
+//Marcado de los botones de Cookies de Análisis y de Preferencias:
+function marcarTodo(){
+   document.getElementById('cbGa').checked=true;
+   document.getElementById('cbPrf').checked=true;
+   document.getElementById('cbTer').checked=true;
+   document.getElementById('cbGa').setAttribute("aria-checked", "true");
+   document.getElementById('cbPrf').setAttribute("aria-checked", "true");
+   document.getElementById('cbTer').setAttribute("aria-checked", "true");
+   //document.getElementById('cbPu').checked=true;
+	document.getElementById('cbGa').parentNode.querySelector("label[for='cbGa'] .switchText").textContent="Aktibo";
+	document.getElementById('cbPrf').parentNode.querySelector("label[for='cbPrf'] .switchText").textContent="Aktibo";
+	document.getElementById('cbTer').parentNode.querySelector("label[for='cbTer'] .switchText").textContent="Aktibo";
+	
+}
+//Desmarcado de los botones de Cookies de Análisis y de Preferencias:
+function desmarcarTodo(){
+   document.getElementById('cbGa').checked=false;
+   document.getElementById('cbPrf').checked=false;
+   document.getElementById('cbTer').checked=false;
+	document.getElementById('cbGa').setAttribute("aria-checked", "false");
+   document.getElementById('cbPrf').setAttribute("aria-checked", "false");
+   document.getElementById('cbTer').setAttribute("aria-checked", "false");
+   //document.getElementById('cbPu').checked=false;
+	document.getElementById('cbGa').parentNode.querySelector("label[for='cbGa'] .switchText").textContent="Inaktibo";
+	document.getElementById('cbPrf').parentNode.querySelector("label[for='cbPrf'] .switchText").textContent="Inaktibo";
+	document.getElementById('cbTer').parentNode.querySelector("label[for='cbTer'] .switchText").textContent="Inaktibo";
+}
+//Marcado/desmarcado del botón de Cookies de Análisis:
+function toggleAnalisis(e){
+	//	const ariaLabel = $(this).attr("aria-labelledby");
+    //    if($(this).is(":checked")){
+    //        $("#"+ariaLabel+" ~ span.switchStatus ").html('activo');
+    //    }else{
+    //        $("#"+ariaLabel+" ~ span.switchStatus ").html('inactivo');
+    //    }
+	document.getElementById('cbGa').checked=!(document.getElementById('cbGa').checked);
+	var checkValue = document.getElementById('cbGa').checked;
+	var element = 'cbGa';
+	switchText(e,checkValue,element);
+}
+//Marcado/desmarcado del botón de Cookies de Preferencias:
+function togglePreferencias(e){
+	document.getElementById('cbPrf').checked=!(document.getElementById('cbPrf').checked);
+	var checkValue = document.getElementById('cbPrf').checked;
+	var element = 'cbPrf';
+	switchText(e,checkValue,element);
+}
+
+//Marcado/desmarcado del botón de Cookies de Terceros:
+function toggleTerceros(e){
+	document.getElementById('cbTer').checked=!(document.getElementById('cbTer').checked);
+	var checkValue = document.getElementById('cbTer').checked;
+	var element = 'cbTer';
+	switchText(e,checkValue,element);
+}
+
+if(((getCookie('pc_tecnicas_bizkaia')!="1")&&(getCookie('pc_tecnicas_bizkaia')!="true")) || getCookie('pc_analitica_bizkaia') == null || getCookie('pc_preferencias_bizkaia') == null){
+    document.getElementById("barraaceptacion").style.display="block";
+	disableScroll();
+	setTimeout(function(){
+		$("#fTMCookies1").focus();
+	}, 300);
+	
+}
+if((getCookie('pc_analitica_bizkaia')=="1")||(getCookie('pc_analitica_bizkaia')=="true")){
+    document.getElementById("cbGa").checked="true";
+	document.getElementById("cbGa").setAttribute("aria-checked", "true");
+}
+if((getCookie('pc_preferencias_bizkaia')=="1")||(getCookie('pc_preferencias_bizkaia')=="true")){
+    document.getElementById("cbPrf").checked="true";
+	document.getElementById("cbPrf").setAttribute("aria-checked", "true");
+}
+if((getCookie('pc_terceros_bizkaia')=="1")||(getCookie('pc_terceros_bizkaia')=="true")){
+    document.getElementById("cbTer").checked="true";
+	document.getElementById("cbTer").setAttribute("aria-checked", "true");
+}
+/*
+if((getCookie('pc_publicidad_bizkaia')=="1")||(getCookie('pc_publicidad_bizkaia')=="true")){
+    document.getElementById("cbPu").checked="true";
+}
+*/
+
+//manejar textos junto a los switch
+function switchText(e,checkValue,element){
+	if (true == checkValue ){
+		document.getElementById(element).parentNode.querySelector("label[for='" + element + "'] .switchText").textContent="Aktibo";
+		document.getElementById(element).setAttribute("aria-checked", "true");
+	} else {
+		document.getElementById(element).parentNode.querySelector("label[for='" + element + "'] .switchText").textContent="Inaktibo";
+		document.getElementById(element).setAttribute("aria-checked", "false");
+	}
+}
+
+function PonerCookiesSeleccionadas(){
+	
+	//Cookies Técnicas:
+	setCookie('pc_tecnicas_bizkaia','true',365,'.bizkaia.eus');
+	
+	//Cookies de Análisis:
+	//Marcado:
+	if (document.getElementById('cbGa').checked)
+	{
+		//Creación de la cookie 'pc_analitica_bizkaia':
+		setCookie('pc_analitica_bizkaia','true',365,'.bizkaia.eus');
+	   
+	   //Creación de las demás cookies de análisis que se utilicen en Bizkaia.eus (Liferay incluido):
+	   setCookie3('iyrc-user-id','1',(1 * 60 * 60 * 1000),'.bizkaia.eus');	//1 hora
+	}
+	//Desmarcado:
+	else
+	{
+		if (document.getElementById('cbGa').checked == false && (getCookie("pc_analitica_bizkaia")=="-1" || getCookie("pc_analitica_bizkaia")=="false" || getCookie("pc_analitica_bizkaia")==null))
+		{
+			flagCookie = 0;
+		}
+		//Borrado de la cookie 'pc_analitica_bizkaia':
+		setCookie('pc_analitica_bizkaia','false',365,'.bizkaia.eus');
+		
+		clearCookie('iyrc-user-id','.bizkaia.eus','/');
+	}
+	
+	//Cookies de Personalización (Marcado/desmarcado):
+	//Marcado:
+	if (document.getElementById('cbPrf').checked)
+	{
+			//Creación de la cookie 'pc_preferencias_bizkaia':
+			setCookie('pc_preferencias_bizkaia','true',365,'.bizkaia.eus');
+			//Creación de las demás cookies de personalización que se utilicen en Bizkaia.eus (Liferay incluido):
+			setCookie('cookie-tramites-favs','true',365,'.bizkaia.eus');	//1 año.
+	}
+	//Desmarcado:
+	else
+	{
+			//Borrado de la cookie 'pc_preferencias_bizkaia':
+			setCookie('pc_preferencias_bizkaia','false',365,'.bizkaia.eus');
+			//Borrado de las cookies de personalización que se utilicen en Bizkaia.eus (Liferay incluido):
+			clearCookie('Idioma','.bizkaia.eus','/');
+			clearCookie('cookie-tramites-favs','.bizkaia.eus','/');
+	}
+	//Cookies de Terceros (Marcado/desmarcado):
+	//Marcado:
+	if (document.getElementById('cbTer').checked)
+	{
+			//Creación de la cookie 'pc_terceros_bizkaia':
+			setCookie('pc_terceros_bizkaia','true',365,'.bizkaia.eus');
+			//Creación de las demás cookies de personalización que se utilicen en Bizkaia.eus (Liferay incluido):
+			setCookie('cookie-tramites-favs','true',365,'.bizkaia.eus');	//1 año.
+	}
+	//Desmarcado:
+	else
+	{
+			//Borrado de la cookie 'pc_terceros_bizkaia':
+			setCookie('pc_terceros_bizkaia','false',365,'.bizkaia.eus');
+			//Borrado de las cookies de personalización que se utilicen en Bizkaia.eus (Liferay incluido):
+			clearCookie('Idioma','.bizkaia.eus','/');
+			clearCookie('cookie-tramites-favs','.bizkaia.eus','/');
+	}
+	
+	
+	
+	
+	
+	
+	//Cookies de Publicidad:
+	/*
+	if (document.getElementById('cbPu').checked)
+	{
+			setCookie('pc_publicidad_bizkaia','1',365,'');			
+	}
+	else
+	{
+			setCookie('pc_publicidad_bizkaia','-1',365,'');
+	}
+	*/
+	
+	//if (getCookie("pc_analitica_bizkaia") == "true" || (getCookie("pc_analitica_bizkaia") == "1")){
+	//console.log('Entro1');
+		//ga('create', 'UA-84998129-2', 'auto', 'defaultTracker');
+	//}else{
+	//console.log('Entro2');
+		//ga('create', 'UA-84998129-9', {name: 'anonymousTracker', 'storage':'none', 'clientId':'2020ncd.asp.' + '14119916'}, 'anonymousTracker');
+	//}
+	
+	if (getCookie("pc_preferencias_bizkaia")=="1" || getCookie("pc_preferencias_bizkaia")=="true"){
+		setCookie('Idioma','EU',365,'');
+	}
+	else
+	{
+		clearCookie('Idioma','.bizkaia.eus','/');
+	}
+
+    document.getElementById("barraaceptacion").style.display="none";
+	enableScroll();
+	cerrarModal();
+}
+
+
+function cerrarModal(){
+	document.getElementById("barraaceptacion").style.display="none";
+	//location.reload();	
+}
+
+function ponerTodasCookies(){
+	marcarTodo();
+	PonerCookiesSeleccionadas();
+}
+function quitarTodasCookies(){
+	desmarcarTodo();
+	PonerCookiesSeleccionadas();
+}
+
+function clearCookie(name, domain, path){
+	try {
+	    function Get_Cookie( check_name ) {
+	            // first we'll split this cookie up into name/value pairs
+	            // note: document.cookie only returns name=value, not the other components
+	            var a_all_cookies = document.cookie.split(';'),
+	            	a_temp_cookie = '',
+	        		cookie_name = '',
+	            	cookie_value = '',
+		            b_cookie_found = false;
+	    
+	            for ( i = 0; i < a_all_cookies.length; i++ ) {
+                    // now we'll split apart each name=value pair
+                    a_temp_cookie = a_all_cookies[i].split( '=' );
+    
+                    // and trim left/right whitespace while we're at it
+                    cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+    
+                    // if the extracted name matches passed check_name
+                    if ( cookie_name == check_name ) {
+                        b_cookie_found = true;
+                        // we need to handle case where cookie has no value but exists (no = sign, that is):
+                        if ( a_temp_cookie.length > 1 ) {
+                            cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+                        }
+                        // note that in cases where cookie is initialized but no value, null is returned
+                        return cookie_value;
+                        break;
+                    }
+                    a_temp_cookie = null;
+                    cookie_name = '';
+	            }
+	            if ( !b_cookie_found ) {
+	              return null;
+	            }
+	        }
+	        if (Get_Cookie(name)) {
+                var domain = domain || document.domain;
+                var path = path || "/";
+				 var exdate=new Date();
+				exdate.setDate(exdate.getDate() - 100);
+                document.cookie = name + "=; expires=" + exdate + "; domain=" + domain + "; path=" + path;
+	        }
+	}
+	catch(err) {}    
+};
+
+function mostrarPoliticaCookies(){
+	var element = document.getElementById("cuadrocontenido");
+	element.classList.add("configuracion");
+	var e = document.getElementById("contenedorheader");
+	e.classList.remove("contenedorheader");
+	document.getElementById("barraaceptacion").style.display="block";
+	document.getElementById("politicaCookies").style.display='block';
+	document.getElementById('mesajeInicial').style.display='none';
+	document.getElementById('capaConfiguracion').style.display='none';
+	document.getElementById('close').style.display='block';
+	document.getElementById("cuadrocontenido").style.position= 'relative';
+	document.getElementById('enlaceIdiomas').style.display='none';
+	document.querySelector("#contenedorheader .tituloAviso").innerHTML = sanitize('Cookien politika');
+	document.querySelector("#contenedorheader .tituloCerrar").innerHTML = sanitize('Cookien politika');
+	enableScroll();
+	setTimeout(function(){
+		document.getElementById("close").focus();
+	}, 300);
+	
+	
+
+}
+
+function mostrarPanelCookies(){
+		
+	//if(getCookie('pc_tecnicas_bizkaia')!="1"){
+	if((getCookie('pc_tecnicas_bizkaia')!="1")&&(getCookie('pc_tecnicas_bizkaia')!="true")){
+		var element = document.getElementById("cuadrocontenido");
+		element.classList.remove("configuracion");
+		var e = document.getElementById("contenedorheader");
+		e.classList.add("contenedorheader");
+		document.getElementById("barraaceptacion").style.display="block";
+		document.getElementById('mesajeInicial').style.display='block';
+		document.getElementById('capaConfiguracion').style.display='none';
+		document.getElementById("politicaCookies").style.display="none";
+		document.getElementById('close').style.display='none';
+		//document.getElementById('atras').style.display='block';
+		document.getElementById("cuadrocontenido").style.position= 'absolute';
+		document.getElementById('enlaceIdiomas').style.display='block';
+		setTimeout(function(){
+			$("#fTMCookies1").focus();
+		}, 300);
+		
+	}else{
+		cerrarModal();
+	}
+		document.querySelector("#contenedorheader .tituloAviso").innerHTML = sanitize('Cookieak');
+}
+
+function mostrarConfiguracion(){
+	var element = document.getElementById("cuadrocontenido");
+	element.classList.add("configuracion");
+	var e = document.getElementById("contenedorheader");
+	e.classList.remove("contenedorheader");
+	document.getElementById("barraaceptacion").style.display="block";
+	document.getElementById('mesajeInicial').style.display='none';
+	document.getElementById('capaConfiguracion').style.display='block';
+	document.getElementById('close').style.display='block';
+	//document.getElementById('atras').style.display='none';
+	document.getElementById("politicaCookies").style.display='none';
+	document.getElementById('enlaceIdiomas').style.display='none';
+	document.querySelector("#contenedorheader .tituloAviso").innerHTML = ('Konfiguratu <span lang="en">cookie</span>ak');
+	document.querySelector("#contenedorheader .tituloCerrar").innerHTML = ('Konfiguratu <span lang="en">cookie</span>ak');
+	setTimeout(function(){
+		document.getElementById("close").focus();
+	}, 300);
+}
+
+$(function(){
+  $(".accordion-titulo").click(function(e){
+           
+        e.preventDefault();
+    
+        var contenido=$(this).next(".accordion-content");
+		
+        if(contenido.css("display")=="none"){ //open		
+          contenido.slideDown(250);
+          $(this).addClass("open");
+        }
+        else{ //close		
+          contenido.slideUp(250);
+          $(this).removeClass("open");	
+        }
+
+      });
+});
+
+
+//Controlar cookies en iframedetalle
+$(function(){
+	window.iFrameResizer = {
+	  onMessage: function(message){ 
+		var messageData = JSON.parse(message);
+		if( messageData.checkCookies.length ) {
+			if( messageData.checkCookies == 'true' ) {
+			$('body').addClass( messageData.checkCookies );
+			//console.log('- true -');
+			//$(document).trigger("tracking-event");
+			document.getElementById("barraaceptacion").style.display="none";
+			enableScroll();
+			cerrarModal();
+		  }
+		}
+	  }
+	}
+});
+
+function sanitize(string) {
+  const map = {
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#x27;',
+      "/": '&#x2F;',
+  };
+  const reg = /[<>"'/]/ig;
+  return string.replace(reg, (match)=>(map[match]));
+}
+
+
+$(document).ready(function() { 
+
+ if ($("#barraaceptacion").length) {
+
+  $("body").append($("#barraaceptacion"));
+
+                if( $('#barraaceptacion').css('display') == 'block' ) {
+
+                               $("#contenedor").attr("aria-hidden", "true");
+
+                               $('#contenedor * a').attr("tabindex", "-1");
+
+                               $('#contenedor * input').attr("tabindex", "-1");
+
+                               $('#contenedor * button').attr("tabindex", "-1");
+
+                                $('#contenedor * select').attr("tabindex", "-1");
+
+                }
+
+                $("#barraaceptacion .enlaceboton").on("click", function() {
+
+                               $("#contenedor").attr("aria-hidden", "false");
+
+                               $('#contenedor * a').removeAttr("tabindex");
+
+                               $('#contenedor * input').removeAttr("tabindex");
+
+                               $('#contenedor * button').removeAttr("tabindex");
+
+                               $('#contenedor * select').removeAttr("tabindex");
+
+                });
+
+}
+
+});;
+
+
+//]]>-->
+</script>
+<!--//FIN BLOQUE COOKIES-->
+<script src="/home2/js/conformidadAria.js" type="text/javascript" ></script>
+
+</div><!-- contenedor -->
+<div class="separador">&nbsp;</div>
+
+</body>
+
+</html>

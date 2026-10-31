@@ -9,7 +9,7 @@
 Rules:
 
 - Do not claim all countries. About 195 sovereign states exist; the catalogue does not carry all of them and never will claim to. (`tests/test_copy_rules.py` fails on the phrase.)
-- Do not collapse the two quality states. Most skills are source-cited drafts; each file states its `tier` in frontmatter (see [QUALITY-TIERS.md](QUALITY-TIERS.md)), and the website shows the reviewing accountant's name on reviewed ones.
+- Do not collapse the two quality tiers. Most skills are tier 2 (checked against the law, or sourced from the law), with no accountant sign-off; each file states its `tier` in frontmatter (see [QUALITY-TIERS.md](QUALITY-TIERS.md)), and the website shows the reviewing accountant's name on reviewed ones.
 - Quote one population per page. A count of skills, of jurisdictions and of reviewed skills each come from the same report run; do not mix a repository figure with a platform figure in one sentence.
 - Change the rounded claim only when a measured figure crosses a floor, then update every surface that quotes it in one pull request.
 
@@ -19,7 +19,7 @@ Rules:
 python3 scripts/coverage-report.py --summary
 ```
 
-The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](../GOAL.md) and says, per jurisdiction, which are present and which are missing. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](../OWNERS.md).
+The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](GOAL.md) and says, per jurisdiction, which are present and which are missing. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](OWNERS.md).
 
 Two other sources exist and disagree with each other, because they count different things:
 
@@ -36,10 +36,10 @@ The coverage report keeps a canonical list of pseudo-codes (`PSEUDO_CODES` in `s
 
 `NONE`, `GENERAL`, `GLOBAL`, `INTL`, `EU`, `EU-27`, `EU/EEA/CH/UK`, `EG-AE`, `EG-SA`
 
-A skill under one of these is a cross-border, regional or template skill. Michael Cutajar maintains them (see [OWNERS.md](../OWNERS.md)).
+A skill under one of these is a cross-border, regional or template skill. Michael Cutajar maintains them (see [OWNERS.md](OWNERS.md)).
 
 ## How to update
 
 - Platform figures: nothing to do; the nightly sync restamps the README block.
 - Repository figures: the sync runs `python3 scripts/build-index.py`, which rewrites `index.json` and restamps the `llms.txt` sentence. In a pull request, do not commit `index.json`; it is generated.
-- Dated figures in `GOAL.md` and `OWNERS.md`: regenerate with the coverage report when you edit those files.
+- Dated figures in `docs/GOAL.md` and `docs/OWNERS.md`: regenerate with the coverage report when you edit those files.

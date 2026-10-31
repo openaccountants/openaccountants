@@ -1,0 +1,1559 @@
+{
+  "Andalucia2": [
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 760,
+      "LF_end": 760,
+      "quote": "A efectos de esta Ley, el concepto de vivienda habitual es el fijado por la normativa estatal del impuesto sobre la renta de las personas físicas vigente a 31 de diciembre de 2012, según lo siguiente:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 762,
+      "LF_end": 762,
+      "quote": "1. Con carácter general, se considera vivienda habitual del contribuyente la edificación que constituya su residencia durante un plazo continuado de, al menos, tres años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 764,
+      "LF_end": 764,
+      "quote": "No obstante, se entenderá que la vivienda tuvo el carácter de habitual cuando, a pesar de no haber transcurrido dicho plazo, se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente exijan el cambio de domicilio, tales como celebración de matrimonio, separación matrimonial, traslado laboral, obtención de primer empleo o cambio de empleo, u otras análogas justificadas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 766,
+      "LF_end": 766,
+      "quote": "2. Para que la vivienda constituya la residencia habitual del contribuyente debe ser habitada de manera efectiva y con carácter permanente, en un plazo no superior a doce meses, contados a partir de la fecha de adquisición o de terminación de las obras.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 768,
+      "LF_end": 768,
+      "quote": "No obstante, se entenderá que la vivienda no pierde el carácter de habitual cuando se produzcan las siguientes circunstancias:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 770,
+      "LF_end": 770,
+      "quote": "a) Cuando se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente impidan la ocupación de la vivienda, en los términos previstos en el apartado 1 de este artículo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 772,
+      "LF_end": 772,
+      "quote": "b) Cuando el contribuyente disfrute de vivienda habitual por razón de cargo o empleo y la vivienda adquirida no sea objeto de utilización, en cuyo caso el plazo antes indicado comenzará a contarse a partir de la fecha del cese.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 774,
+      "LF_end": 774,
+      "quote": "3. Se asimilan a la vivienda habitual los siguientes conceptos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 776,
+      "LF_end": 776,
+      "quote": "a) Los anexos o cualquier otro elemento que no constituya la vivienda propiamente dicha, tales como jardines, parques, piscinas e instalaciones deportivas, siempre que se adquieran conjuntamente con la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 778,
+      "LF_end": 778,
+      "quote": "b) Las plazas de garaje adquiridas conjuntamente con ésta, con el máximo de dos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia3": [
+    {
+      "source": "S25",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 788,
+      "LF_end": 788,
+      "quote": "A los efectos de esta Ley, la consideración de persona con discapacidad es la fijada por la normativa estatal del impuesto sobre la renta de las personas físicas, según lo siguiente:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 790,
+      "LF_end": 790,
+      "quote": "1. Tendrán la consideración de personas con discapacidad los contribuyentes que tengan reconocido un grado igual o superior al 33 por ciento, de acuerdo con el baremo a que se refiere el artículo 367 del texto refundido de la Ley General de la Seguridad Social, aprobado por Real Decreto Legislativo 8/2015, de 30 de octubre, o norma que lo sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 792,
+      "LF_end": 792,
+      "quote": "2. En particular, se considerará acreditado un grado de discapacidad igual o superior al 33 por ciento en el caso de los pensionistas de la Seguridad Social que tengan reconocida una pensión de incapacidad permanente total, absoluta o gran invalidez y en el caso de los pensionistas de clases pasivas que tengan reconocida una pensión de jubilación o retiro por incapacidad permanente para el servicio o inutilidad.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia4": [
+    {
+      "source": "S25",
+      "article": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 802,
+      "LF_end": 802,
+      "quote": "A los efectos de esta Ley, en los casos de separación legal o cuando no existiera vínculo matrimonial, tendrá la consideración de familia monoparental la formada por la madre o el padre y los hijos que convivan con una u otro y que reúnan alguno de los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 804,
+      "LF_end": 804,
+      "quote": "a) Hijos menores de edad, con excepción de los que, con el consentimiento de los padres, vivan independientes de éstos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 806,
+      "LF_end": 806,
+      "quote": "b) Hijos mayores de edad con discapacidad a quienes, por resolución judicial, asista un curador.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia5": [
+    {
+      "source": "S25",
+      "article": "5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 816,
+      "LF_end": 816,
+      "quote": "1. A los efectos de esta Ley, el concepto de familia numerosa es el fijado en el artículo 2 de la Ley 40/2003, de 18 de noviembre, de Protección a las Familias Numerosas, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 818,
+      "LF_end": 818,
+      "quote": "2. La aplicación de los beneficios fiscales previstos en esta Ley para los miembros de familias numerosas queda condicionada a que los contribuyentes ostenten, a la fecha del devengo del impuesto, el título de familia numerosa que acredita dicha condición y categoría.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia6": [
+    {
+      "source": "S25",
+      "article": "6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 828,
+      "LF_end": 828,
+      "quote": "A los efectos de esta Ley, tendrán la consideración de víctima de violencia doméstica las personas a que se refiere el artículo 173.2 de la Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal, que cuenten con orden de protección en vigor e inscrita en el Registro Central para la Protección de las Víctimas de la Violencia Doméstica, o con sentencia judicial firme por tal motivo en los últimos diez años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia7": [
+    {
+      "source": "S25",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 838,
+      "LF_end": 838,
+      "quote": "1. A los efectos de esta Ley, la consideración de víctima del terrorismo y personas afectadas es la fijada en el artículo 3.a) de la Ley 10/2010, de 15 de noviembre, relativa a medidas para la asistencia y atención a las víctimas del terrorismo de la Comunidad Autónoma de Andalucía, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 840,
+      "LF_end": 840,
+      "quote": "2. La acreditación de la situación de violencia de terrorismo se realizará conforme lo previsto en el artículo 4.a) de la citada Ley 10/2010, de 15 de noviembre, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia8": [
+    {
+      "source": "S25",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 850,
+      "LF_end": 850,
+      "quote": "1. A los efectos de esta Ley, tendrán la consideración de municipios con problemas de despoblación aquellos cuya cifra de población sea de menos de 3.000 habitantes.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 852,
+      "LF_end": 852,
+      "quote": "2. El concepto de cifra de población a que se refiere el apartado anterior es el fijado en el artículo 10.4 b) de la Ley 6/2010, de 11 de junio, reguladora de la participación de las entidades locales en los tributos de la Comunidad Autónoma de Andalucía, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia9": [
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 882,
+      "LF_end": 882,
+      "quote": "1. Sin perjuicio de la aplicación del tramo autonómico de la deducción por inversión en vivienda habitual establecida en la normativa estatal del impuesto sobre la renta de las personas físicas, en los casos que proceda, se establece una deducción del 6 % por las cantidades satisfechas en el período impositivo por la adquisición o rehabilitación del inmueble que constituya o vaya a constituir la vivienda habitual del contribuyente, siempre que concurra alguna de las siguientes condiciones en la fecha del devengo del impuesto:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 884,
+      "LF_end": 884,
+      "quote": "a) Que la vivienda tenga la calificación de protegida, de conformidad con la normativa de la Comunidad Autónoma de Andalucía.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 886,
+      "LF_end": 886,
+      "quote": "b) Que el adquirente sea menor de 35 años. En caso de tributación conjunta, el requisito de la edad deberá cumplirlo, al menos, uno de los cónyuges o, en su caso, el padre o la madre en el supuesto de familias monoparentales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 888,
+      "LF_end": 888,
+      "quote": "2. Para la aplicación de la deducción es requisito que la suma de las bases imponibles general y del ahorro no sea superior a 25.000 euros, en tributación individual, o a 30.000 euros, en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 890,
+      "LF_end": 890,
+      "quote": "3. La base y el límite máximo de la deducción prevista en el apartado 1 se determinarán de acuerdo con los requisitos y circunstancias previstos en la normativa estatal del impuesto sobre la renta de las personas físicas vigente a 31 de diciembre de 2012. La base máxima de esta deducción será de 9.040 euros anuales y estará constituida por las cantidades satisfechas para la adquisición o rehabilitación de la vivienda, incluidos los gastos originados que hayan corrido a cargo del adquirente y, en el caso de financiación ajena, la amortización, los intereses, el coste de los instrumentos de cobertura del riesgo de tipo de interés variable de los préstamos hipotecarios regulados en el artículo decimonoveno de la Ley 36/2003, de 11 de noviembre, de medidas de reforma económica, y demás gastos derivados de la misma. En caso de aplicación de los citados instrumentos de cobertura, los intereses satisfechos por el contribuyente se minorarán en las cantidades obtenidas por la aplicación del citado instrumento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 892,
+      "LF_end": 892,
+      "quote": "4. En los supuestos de nulidad matrimonial, divorcio o separación judicial, el contribuyente podrá seguir practicando esta deducción, por las cantidades satisfechas en el período impositivo para la adquisición de la que fue durante la vigencia del matrimonio su vivienda habitual, siempre que continúe teniendo esta condición para los hijos comunes y el progenitor en cuya compañía queden.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 894,
+      "LF_end": 894,
+      "quote": "5. Cuando se adquiera una vivienda habitual habiendo disfrutado de la deducción por adquisición de otras viviendas habituales anteriores, no se podrá practicar deducción por la adquisición o rehabilitación de la nueva en tanto las cantidades invertidas en la misma no superen las invertidas en las anteriores, en la medida en que hubiesen sido objeto de deducción. Cuando la enajenación de una vivienda habitual hubiera generado una ganancia patrimonial exenta por reinversión, la base de deducción por la adquisición o rehabilitación de la nueva se minorará en el importe de la ganancia patrimonial a la que se aplique la exención por reinversión. En este caso, no se podrá practicar deducción por la adquisición de la nueva mientras las cantidades invertidas en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducción, como la ganancia patrimonial exenta por reinversión.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 896,
+      "LF_end": 896,
+      "quote": "6. Se considerará rehabilitación de vivienda habitual la que cumpla los requisitos y circunstancias fijadas por la normativa estatal del impuesto sobre la renta de las personas físicas vigente a 31 de diciembre de 2012; en concreto, las obras en la misma que cumplan cualquiera de los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 898,
+      "LF_end": 898,
+      "quote": "a) Que se trate de actuaciones subvencionadas en materia de rehabilitación de viviendas en los términos previstos en el Real Decreto 106/2018, de 9 de marzo, por el que se regula el Plan Estatal de Vivienda 2018-2021, o plan que lo sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 900,
+      "LF_end": 900,
+      "quote": "b) Que tengan por objeto principal la reconstrucción de la vivienda mediante la consolidación y el tratamiento de las estructuras, fachadas o cubiertas y otras análogas, siempre que el coste global de las operaciones de rehabilitación exceda del 25% del precio de adquisición, si se hubiese efectuado ésta durante los dos años inmediatamente anteriores al inicio de las obras de rehabilitación o, en otro caso, del valor de mercado que tuviera la vivienda en el momento de dicho inicio. A estos efectos, se descontará del precio de adquisición o del valor de mercado de la vivienda la parte proporcional correspondiente al suelo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia10": [
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 922,
+      "LF_end": 922,
+      "quote": "1. Tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción del 15%, con un límite máximo de 1.200 euros anuales, de las cantidades satisfechas en el período impositivo por alquiler de la que constituya su vivienda habitual, los contribuyentes que a la fecha de devengo del impuesto sean menores de 35 años o mayores de 65 años o que tengan la consideración de víctima de violencia doméstica, víctima del terrorismo o de personas afectadas, siempre que concurran los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 924,
+      "LF_end": 924,
+      "quote": "a) Que la suma de las bases imponibles general y del ahorro no sea superior a 25.000 euros en tributación individual o a 30.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 926,
+      "LF_end": 926,
+      "quote": "b) Que el contribuyente identifique al arrendador o arrendadora de la vivienda haciendo constar su número de identificación fiscal (NIF) en la correspondiente autoliquidación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 928,
+      "LF_end": 928,
+      "quote": "2. No obstante, cuando a la fecha del devengo del impuesto el contribuyente tenga la consideración de persona con discapacidad, siempre que concurran los requisitos de los párrafos a) y b) del apartado anterior, la deducción prevista en este artículo será del 15%, con el límite de 1.500 euros anuales, de las cantidades satisfechas en el período impositivo por alquiler de la que constituya su vivienda habitual.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 930,
+      "LF_end": 930,
+      "quote": "3. En caso de tributación conjunta, el requisito que origine el derecho a aplicar esta deducción deberá cumplirlo, al menos, uno de los cónyuges o, en su caso, el padre o la madre en el supuesto de familias monoparentales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 932,
+      "LF_end": 932,
+      "quote": "4. Cuando haya más de un contribuyente con derecho a la aplicación de la deducción, la misma se aplicará sobre la base de las cantidades que cada declarante hubiera satisfecho, con los límites máximos de deducción previstos en los apartados 1 y 2, para cada caso.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia11": [
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 968,
+      "LF_end": 968,
+      "quote": "1. Los contribuyentes tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 200 euros por cada hijo nacido, adoptado o por cada menor en régimen de acogimiento familiar simple, permanente o preadoptivo, administrativo o judicial, en el periodo impositivo en el que se produzca el nacimiento, la adopción o el acogimiento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 970,
+      "LF_end": 970,
+      "quote": "2. No obstante, el importe de la deducción será de 400 euros si el contribuyente reside en un municipio con problemas de despoblación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 972,
+      "LF_end": 972,
+      "quote": "3. En el caso de partos, adopciones o acogimientos múltiples, la cuantía correspondiente de la deducción se incrementará en 200 euros por cada hijo o, en su caso, por cada menor.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 974,
+      "LF_end": 974,
+      "quote": "4. Cuando sean dos los contribuyentes que tengan derecho a la aplicación de la deducción, su importe se distribuirá por partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 976,
+      "LF_end": 976,
+      "quote": "5. Esta deducción es incompatible con la aplicación de la deducción autonómica por adopción de hijos en el ámbito internacional regulada en el artículo 12 y con la aplicación de la deducción para familia numerosa del artículo 14.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 978,
+      "LF_end": 978,
+      "quote": "6. En caso de acogimiento familiar, únicamente podrá aplicar la deducción el contribuyente que no haya recibido ayudas de la Administración de la Comunidad Autónoma de Andalucía vinculadas con el acogimiento. Asimismo, será necesario que el menor conviva con el contribuyente al menos 90 días durante el período impositivo en el que se produzca el acogimiento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 980,
+      "LF_end": 980,
+      "quote": "No dará lugar a esta deducción el supuesto de acogimiento familiar preadoptivo cuando se haya producido la adopción del menor durante el periodo impositivo, sin perjuicio de la aplicación, en su caso, de la deducción por adopción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 982,
+      "LF_end": 982,
+      "quote": "Se suprime el apartado 4 y se renumeran los apartados 5 a 7 como 4 a 6 por la disposición final 9.2 de la Ley 8/2025, de 22 de diciembre. Ref. BOE-A-2026-945",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 984,
+      "LF_end": 984,
+      "quote": "Esta modificación surte efectos desde el 1 de enero de 2025, según establece la disposición final 18.b) de la citada Ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 986,
+      "LF_end": 986,
+      "quote": "                Seleccionar redacción:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 994,
+      "LF_end": 994,
+      "quote": "                  Texto original, publicado el 26/10/2021, en vigor a partir del 01/01/2022.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia12": [
+    {
+      "source": "S25",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1004,
+      "LF_end": 1004,
+      "quote": "1. En los supuestos de adopción internacional, los contribuyentes tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 600 euros por cada hijo adoptado en el período impositivo en el que se haya inscrito la adopción en el Registro Civil.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1006,
+      "LF_end": 1006,
+      "quote": "2. Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 80.000 euros, en caso de tributación individual, o a 100.000 euros, en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1008,
+      "LF_end": 1008,
+      "quote": "3. Se entenderá que la adopción tiene carácter internacional cuando así resulte de las normas y convenios aplicables a esta materia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1010,
+      "LF_end": 1010,
+      "quote": "4. Cuando sean dos los contribuyentes que tengan derecho a la aplicación de la deducción prevista en este artículo, su importe se distribuirá por partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia13": [
+    {
+      "source": "S25",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1020,
+      "LF_end": 1020,
+      "quote": "1. Sin perjuicio de lo dispuesto en el apartado 2 de este artículo, los contribuyentes que sean madres o padres de familia monoparental en la fecha del devengo del impuesto tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 100 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1022,
+      "LF_end": 1022,
+      "quote": "Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 80.000 euros en tributación individual o a 100.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1024,
+      "LF_end": 1024,
+      "quote": "2. La deducción prevista en el apartado anterior se incrementará adicionalmente en 100 euros por cada ascendiente que conviva con la familia monoparental, siempre que éstos generen el derecho a la aplicación del mínimo por ascendientes mayores de 75 años establecido en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1026,
+      "LF_end": 1026,
+      "quote": "3. Cuando varios contribuyentes tengan derecho a la aplicación de la deducción prevista en el apartado 2, se estará a las reglas de prorrateo, convivencia y demás límites previstos en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia14": [
+    {
+      "source": "S25",
+      "article": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1036,
+      "LF_end": 1036,
+      "quote": "1. Los contribuyentes que sean ascendientes y formen parte de una familia numerosa tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 200 euros, en el caso de familias numerosas de categoría general, y de 400 euros para el caso de familias de categoría especial.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1038,
+      "LF_end": 1038,
+      "quote": "2. De igual forma, tendrán derecho a esta deducción los hermanos huérfanos en los casos establecidos en los párrafos d) y e) del artículo 2.2 de la Ley 40/2003, de 18 de noviembre, de Protección a las Familias Numerosas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1040,
+      "LF_end": 1040,
+      "quote": "3. Será requisito para la práctica de esta deducción que la suma de las bases imponibles general y del ahorro no sea superior a 25.000 euros en tributación individual o a 30.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "14",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1042,
+      "LF_end": 1042,
+      "quote": "4. Cuando sean varios los contribuyentes que tengan derecho a la aplicación de la deducción, su importe se distribuirá por partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia15": [
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1052,
+      "LF_end": 1052,
+      "quote": "1. Los contribuyentes tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción del 15% de las cantidades satisfechas en el periodo impositivo por los gastos de enseñanza escolar o extraescolar de idiomas, de informática o de ambas, con un máximo de 150 euros anuales por cada descendiente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1054,
+      "LF_end": 1054,
+      "quote": "2. Se considerarán gastos de enseñanza escolar de idiomas, de informática, o de ambas, las cantidades satisfechas a los centros docentes en concepto de gastos de escolaridad, en la proporción correspondiente a dichas materias o asignaturas, así como a aquellas que sean impartidas en un idioma extranjero. Dicha proporción se determinará en función del número total de horas lectivas que dichas materias o asignaturas representen en el conjunto de horas lectivas del curso escolar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1056,
+      "LF_end": 1056,
+      "quote": "2 bis. Se considerarán gastos de enseñanza extraescolar de idiomas, de informática, o de ambas, las cantidades satisfechas en contraprestación por los servicios de enseñanza de dichas materias prestados por otro tipo de centros no comprendidos en el apartado 2, ya sean privados o públicos, oficiales o no, tales como las academias y las escuelas oficiales de idiomas. También tendrán dicha consideración las cantidades abonadas a personas físicas, dadas de alta en el correspondiente epígrafe del impuesto sobre actividades económicas (IAE), en contraprestación por clases particulares que se impartan sobre dichas materias en domicilios particulares o en lugares no destinados u organizados específicamente a tal fin.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1058,
+      "LF_end": 1058,
+      "quote": "3. Esta deducción se aplicará respecto de aquellos descendientes por los que se tenga derecho al mínimo por descendiente regulado en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1060,
+      "LF_end": 1060,
+      "quote": "4. Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 80.000 euros en caso de tributación individual o a 100.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1062,
+      "LF_end": 1062,
+      "quote": "5. Tendrá derecho a aplicar esta deducción quien satisfaga de forma efectiva los gastos. Cuando haya más de un contribuyente con derecho a la aplicación de la deducción, la misma se aplicará sobre la base de las cantidades que cada declarante hubiera satisfecho, con el límite máximo de deducción previsto en el apartado 1.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "15",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1064,
+      "LF_end": 1064,
+      "quote": "6. El derecho a disfrutar de la deducción se justificará de acuerdo con lo previsto en el artículo 60.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia16": [
+    {
+      "source": "S25",
+      "article": "16",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1086,
+      "LF_end": 1086,
+      "quote": "1. Los contribuyentes que tengan la consideración de personas con discapacidad tendrán derecho a aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 150 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "16",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1088,
+      "LF_end": 1088,
+      "quote": "2. Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 25.000 euros, en caso de tributación individual, o a 30.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia17": [
+    {
+      "source": "S25",
+      "article": "17",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1098,
+      "LF_end": 1098,
+      "quote": "1. Los contribuyentes con cónyuges o parejas inscritas en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras administraciones públicas que no sean declarantes por tributación individual del impuesto en el ejercicio y con un grado de discapacidad igual o superior al 65% tendrán derecho a aplicar una deducción de 100 euros en la cuota íntegra autonómica.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "17",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1100,
+      "LF_end": 1100,
+      "quote": "2. Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 25.000 euros, en caso de tributación individual, o a 30.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "17",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1102,
+      "LF_end": 1102,
+      "quote": "3. No tendrán derecho a aplicar esta deducción los contribuyentes con cónyuges o parejas de hecho con discapacidad que hayan aplicado la deducción prevista en el artículo anterior.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia18": [
+    {
+      "source": "S25",
+      "article": "18",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1112,
+      "LF_end": 1112,
+      "quote": "1. Los contribuyentes que tengan derecho a la aplicación del mínimo por discapacidad de descendientes o ascendientes conforme a la normativa estatal del impuesto sobre la renta de las personas físicas podrán deducirse de la cuota íntegra autonómica la cantidad de 100 euros por persona con discapacidad.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "18",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1114,
+      "LF_end": 1114,
+      "quote": "Tendrán derecho a aplicar esta deducción aquellos contribuyentes cuando la suma de las bases imponibles general y del ahorro no sea superior a 80.000 euros, en tributación individual, o a 100.000 euros en caso de tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "18",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1116,
+      "LF_end": 1116,
+      "quote": "2. Cuando varios contribuyentes tengan derecho a la aplicación de la deducción prevista en el apartado 1 de este artículo, se estará a las reglas del prorrateo, convivencia y demás límites previstos en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "18",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1118,
+      "LF_end": 1118,
+      "quote": "3. Asimismo, cuando se acredite que las personas con discapacidad necesitan ayuda de terceras personas y generen derecho a la aplicación del mínimo en concepto de gastos de asistencia, conforme a la normativa estatal reguladora del impuesto sobre la renta de las personas físicas, el contribuyente podrá deducirse de la cuota íntegra autonómica la cantidad resultante de aplicar el 20% del importe satisfecho a la Seguridad Social, en concepto de cuota fija que sea por cuenta del empleador o empleadora, de conformidad con lo establecido en el Sistema Especial del Régimen General de la Seguridad Social de Empleados del Hogar, con el límite de 500 euros anuales por contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "18",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1120,
+      "LF_end": 1120,
+      "quote": "Únicamente tendrá derecho a esta deducción el contribuyente titular del hogar familiar que conste como tal en la Tesorería General de la Seguridad Social, por la afiliación en Andalucía al Sistema Especial del Régimen General de la Seguridad Social de Empleados del Hogar, de acuerdo con lo previsto en la normativa de aplicación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia19": [
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1130,
+      "LF_end": 1130,
+      "quote": "1. La persona titular del hogar familiar, siempre que constituya su vivienda habitual, y que conste en la Tesorería General de la Seguridad Social por la afiliación en Andalucía al Sistema Especial del Régimen General de la Seguridad Social de Empleados del Hogar, podrá deducirse de la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas la cantidad resultante de aplicar el 20 % del importe satisfecho en el periodo impositivo por cuenta del empleador o empleadora a la Seguridad Social correspondiente a la cotización de un empleado o empleada, con un límite máximo de 500 euros anuales, cuando concurra cualquiera de los siguientes requisitos en la fecha del devengo del impuesto:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1132,
+      "LF_end": 1132,
+      "quote": "a) Que la persona titular del hogar familiar, o, en su caso, su cónyuge o pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones públicas, sea madre o padre de hijos que den derecho al mínimo por descendientes y perciba rendimientos del trabajo o de actividades económicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1134,
+      "LF_end": 1134,
+      "quote": "En el supuesto de cónyuges o miembros integrantes de la pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones Públicas, ambos deberán percibir rendimientos del trabajo o de actividades económicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1136,
+      "LF_end": 1136,
+      "quote": "b) Que la persona titular del hogar familiar, o, en su caso, su cónyuge o pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones públicas, sea de edad igual o superior a 75 años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1138,
+      "LF_end": 1138,
+      "quote": "2. A los efectos de este artículo, se entenderá por titular del hogar familiar el previsto en la normativa reguladora del Sistema Especial del Régimen General de la Seguridad Social de Empleados del Hogar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1140,
+      "LF_end": 1140,
+      "quote": "3. Esta deducción será incompatible con la deducción autonómica regulada en el apartado 3 del artículo 18, cuando se trate de la misma persona empleada la que dé derecho a la aplicación de ambas deducciones.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "19",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1142,
+      "LF_end": 1142,
+      "quote": "4. En el supuesto de cónyuges o miembros integrantes de la pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones públicas, se podrá aplicar la deducción indistintamente el titular del hogar familiar o su cónyuge o pareja de hecho.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia20": [
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1164,
+      "LF_end": 1164,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas del 20% de las cantidades invertidas durante el ejercicio en la adquisición de acciones o participaciones sociales como consecuencia de acuerdos de constitución de sociedades o de ampliación de capital, cuando se trate de sociedades mercantiles que revistan la forma de sociedad anónima, sociedad anónima laboral, sociedad de responsabilidad limitada, sociedad de responsabilidad limitada laboral o sociedad cooperativa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1166,
+      "LF_end": 1166,
+      "quote": "2. En todo caso, el límite de deducción aplicable será de 4.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1168,
+      "LF_end": 1168,
+      "quote": "3. Para la aplicación de la deducción deberán cumplirse los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1170,
+      "LF_end": 1170,
+      "quote": "a) Que como consecuencia de la participación adquirida por el contribuyente, computada junto con la que posean de la misma entidad su cónyuge o personas unidas al contribuyente por razón de parentesco, en línea recta o colateral, por consanguinidad o afinidad hasta el tercer grado incluido, no se llegue a poseer durante ningún día del año natural más del 40% del total del capital social de la entidad o de sus derechos de voto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1172,
+      "LF_end": 1172,
+      "quote": "b) Que dicha participación se mantenga un mínimo de tres años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1174,
+      "LF_end": 1174,
+      "quote": "c) Que el contribuyente no ejerza funciones ejecutivas ni de dirección ni mantenga una relación laboral con la entidad objeto de la inversión.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1176,
+      "LF_end": 1176,
+      "quote": "d) Que la adquisición se formalice en escritura pública, en la que conste la identidad de los inversores y el importe de la inversión.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1178,
+      "LF_end": 1178,
+      "quote": "e) Que la entidad de la que se adquieran las acciones o participaciones cumpla los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1180,
+      "LF_end": 1180,
+      "quote": "1.º Que tenga su domicilio social y fiscal en la Comunidad Autónoma de Andalucía.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1182,
+      "LF_end": 1182,
+      "quote": "2.º Que desarrolle una actividad económica. A estos efectos no se considerará que desarrolla una actividad económica cuando tenga por actividad principal la gestión de un patrimonio mobiliario o inmobiliario, de acuerdo con lo establecido en el artículo 4.Ocho.Dos.a) de la Ley 19/1991, de 6 de junio, del Impuesto sobre el Patrimonio.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1184,
+      "LF_end": 1184,
+      "quote": "3.º Que, para el caso en que la inversión efectuada corresponda a la constitución de la entidad, desde el primer ejercicio fiscal ésta cuente al menos con una persona con contrato laboral a jornada completa, dada de alta en el Régimen correspondiente de la Seguridad Social, y que se mantengan las condiciones del contrato durante al menos veinticuatro meses.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1186,
+      "LF_end": 1186,
+      "quote": "4.º Que, para el caso en que la inversión efectuada corresponda a una ampliación de capital de la entidad, dicha entidad hubiera sido constituida dentro de los tres años anteriores a la ampliación de capital y la plantilla media de la entidad durante los dos ejercicios fiscales posteriores al de la ampliación se incremente respecto de la plantilla media que tuviera en los doce meses anteriores al menos en una persona, con los requisitos del párrafo 3.º anterior, y dicho incremento se mantenga durante al menos otros veinticuatro meses.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1188,
+      "LF_end": 1188,
+      "quote": "Para el cálculo de la plantilla media total de la entidad y de su incremento se computará el número de personas empleadas, en los términos que disponga la legislación laboral, teniendo en cuenta la jornada contratada en relación a la jornada completa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "20",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1190,
+      "LF_end": 1190,
+      "quote": "4. La deducción prevista en este artículo, con los mismos requisitos de los apartados anteriores, será del 50%, con un límite de 12.000 euros, en el caso de sociedades creadas o participadas por universidades o centros de investigación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia21": [
+    {
+      "source": "S25",
+      "article": "21",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1200,
+      "LF_end": 1200,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas por el importe que hayan satisfecho, en concepto de gastos de defensa jurídica derivados de la relación laboral en procedimientos judiciales de despido, extinción de contrato y reclamación de cantidades, con el límite de 200 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "21",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1202,
+      "LF_end": 1202,
+      "quote": "2. El derecho a disfrutar de la deducción se justificará de acuerdo con lo previsto en el artículo 60.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia22": [
+    {
+      "source": "S25",
+      "article": "22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1212,
+      "LF_end": 1212,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas del 10% de las cantidades donadas durante el período impositivo a favor de cualquiera de las siguientes instituciones:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1214,
+      "LF_end": 1214,
+      "quote": "a) Las entidades públicas dependientes de la Comunidad Autónoma de Andalucía o de corporaciones locales de Andalucía, cuya finalidad sea la defensa y conservación del medio ambiente, quedando afectos dichos recursos al desarrollo de programas de esta naturaleza.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1216,
+      "LF_end": 1216,
+      "quote": "b) Las entidades sin fines lucrativos y las entidades beneficiarias del mecenazgo, reguladas respectivamente en los artículos 2 y 16 de la Ley 49/2002, de 23 de diciembre, de régimen fiscal de las entidades sin fines lucrativos y de incentivos fiscales al mecenazgo, siempre que su fin exclusivo sea la defensa del medio ambiente y se hallen inscritas en los correspondientes registros de la Comunidad Autónoma de Andalucía.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1218,
+      "LF_end": 1218,
+      "quote": "2. El límite de deducción aplicable será de 150 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1220,
+      "LF_end": 1220,
+      "quote": "3. La efectividad de la donación prevista en este artículo se justificará de conformidad con lo previsto en el artículo 24 de la Ley 49/2002, de 23 de diciembre, y en sus normas de desarrollo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia22 bis": [
+    {
+      "source": "S25",
+      "article": "22 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1230,
+      "LF_end": 1230,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas del 15% de las cantidades satisfechas en el periodo impositivo en concepto de cuotas de pertenencia o adhesión a gimnasios, centros deportivos, clubes deportivos, federaciones deportivas y secciones deportivas o de recreación deportiva de otras entidades no deportivas, para el desarrollo de actividades de ejercicio físico o práctica deportiva por el contribuyente o por su cónyuge o pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones Públicas, o por aquellas personas que den derecho a la aplicación del mínimo por descendientes y ascendientes regulado en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1232,
+      "LF_end": 1232,
+      "quote": "2. El importe máximo de la deducción aplicable será de 100 euros anuales por contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1234,
+      "LF_end": 1234,
+      "quote": "3. Tendrá derecho a aplicar esta deducción el contribuyente que haya satisfecho de forma efectiva, total o parcialmente, las cantidades que constituyan el gasto objeto de la deducción, siempre que las actividades se realicen por las personas a que se refiere el apartado 1.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1236,
+      "LF_end": 1236,
+      "quote": "Cuando el gasto haya sido satisfecho por varios contribuyentes, la deducción se aplicará en función de las cantidades efectivamente abonadas por cada uno, respetando en todo caso el límite previsto en el apartado 2.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1238,
+      "LF_end": 1238,
+      "quote": "4. El derecho a la aplicación de esta deducción deberá justificarse conforme a lo establecido en el artículo 60.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia22 ter": [
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1254,
+      "LF_end": 1254,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas del 30% de las cantidades satisfechas en el periodo impositivo en concepto de gastos veterinarios derivados de la adquisición de animales de compañía o de la tenencia de perros de asistencia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1256,
+      "LF_end": 1256,
+      "quote": "2. El importe máximo de la deducción será de 100 euros anuales por contribuyente y será aplicable en relación con los gastos veterinarios satisfechos por el contribuyente desde el 1 de enero de 2025 y durante los periodos siguientes:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1258,
+      "LF_end": 1258,
+      "quote": "a) Con carácter general, durante el año siguiente a la fecha de adquisición del animal de compañía.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1260,
+      "LF_end": 1260,
+      "quote": "b) En caso de que la adquisición del animal de compañía se realice mediante adopción, durante los tres años siguientes a la fecha de la adopción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1262,
+      "LF_end": 1262,
+      "quote": "c) En el supuesto de que se trate de un perro de asistencia, durante todo el periodo de tenencia del animal por parte del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1264,
+      "LF_end": 1264,
+      "quote": "3. A los efectos de este artículo, se entenderá por:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1266,
+      "LF_end": 1266,
+      "quote": "a) Animales de compañía, los definidos en el párrafo a) del artículo 3 de la Ley 7/2023, de 28 de marzo, de protección de los derechos y el bienestar de los animales o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1268,
+      "LF_end": 1268,
+      "quote": "b) Perros de asistencia, los definidos en el párrafo cc) del artículo 3 de la Ley 7/2023, de 28 de marzo, y en el Real Decreto 409/2025, de 27 de mayo, por el que se regula la actividad y bienestar de los perros de asistencia, que lo desarrolla.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1270,
+      "LF_end": 1270,
+      "quote": "A estos efectos, se entenderán comprendidos en esta definición los perros de aviso que, cumpliendo los requisitos establecidos en el Real Decreto 409/2025, de 27 de mayo, estén destinados a la protección y acompañamiento de las víctimas de violencia de género, siempre que estas tengan dicha consideración conforme a lo previsto en la Ley 13/2007, de 26 de noviembre, de medidas de prevención y protección integral contra la violencia de género, o en las normas que las sustituyan.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1272,
+      "LF_end": 1272,
+      "quote": "4. Tendrán la consideración de gastos veterinarios derivados de la adquisición de animales de compañía o de la tenencia de perros de asistencia los siguientes, siempre que hayan sido efectivamente satisfechos por el contribuyente:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1274,
+      "LF_end": 1274,
+      "quote": "a) Los relativos a vacunaciones, desparasitación y demás tratamientos que resulten obligatorios conforme a lo dispuesto en el artículo 3 de la Orden de la Consejería de Agricultura y Pesca, de 19 de abril de 2010, por la que se establecen los tratamientos obligatorios de los animales de compañía, los datos para su identificación en la venta y los métodos de sacrificio de los mismos en la Comunidad Autónoma de Andalucía, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1276,
+      "LF_end": 1276,
+      "quote": "b) Los gastos de esterilización del animal, cuando dicha intervención sea preceptiva de conformidad con lo dispuesto en los artículos 23.1.a) y 26.i) de la Ley 7/2023, de 28 de marzo, y en el artículo 29 de la Ley 11/2003, de 24 de noviembre, de protección de los animales, o en las normas que las sustituyan.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1278,
+      "LF_end": 1278,
+      "quote": "5. La deducción solo será aplicable cuando concurran los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1280,
+      "LF_end": 1280,
+      "quote": "a) En caso de que la adquisición del animal de compañía por el contribuyente se produzca mediante venta, cesión o adopción, esta deberá realizarse conforme a lo previsto en los artículos 55, 56, 57 y 58 de la Ley 7/2023, de 28 de marzo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1282,
+      "LF_end": 1282,
+      "quote": "b) Que los gastos estén debidamente justificados mediante factura expedida por profesional o centro veterinario legalmente autorizado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1284,
+      "LF_end": 1284,
+      "quote": "c) Que la suma de la base imponible general y del ahorro del contribuyente no supere los 80.000 euros en tributación individual ni los 100.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1286,
+      "LF_end": 1286,
+      "quote": "6. En el caso de adquisición de animales de compañía, la deducción solo será aplicable para aquellas adquisiciones formalizadas a partir del 1 de enero de 2025. Esta limitación no resultará de aplicación a los perros de asistencia, sin perjuicio de lo dispuesto en el apartado 2.c).",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia22 quater": [
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1302,
+      "LF_end": 1302,
+      "quote": "1. Los contribuyentes podrán aplicar en la cuota íntegra autonómica del impuesto sobre la renta de las personas físicas una deducción de 100 euros por cada persona integrante de su núcleo familiar que tenga enfermedad celíaca diagnosticada.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1304,
+      "LF_end": 1304,
+      "quote": "2. A los exclusivos efectos de esta deducción, se consideran personas integrantes del núcleo familiar del contribuyente al propio contribuyente, su cónyuge o pareja inscrita en el Registro de Parejas de Hecho de la Comunidad Autónoma de Andalucía o en registros análogos de otras Administraciones Públicas, y a aquellas personas que le den derecho a la aplicación del mínimo por ascendientes o descendientes regulado en la normativa estatal del impuesto sobre la renta de las personas físicas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1306,
+      "LF_end": 1306,
+      "quote": "3. Cuando dos o más contribuyentes tengan derecho a la aplicación de la deducción por razón de una misma persona, su importe se distribuirá por partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1308,
+      "LF_end": 1308,
+      "quote": "4. La condición de enfermedad celíaca deberá acreditarse mediante informe médico oficial que recoja el diagnóstico definitivo conforme a los criterios reconocidos por la comunidad científica. Dicho informe deberá ser emitido:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1310,
+      "LF_end": 1310,
+      "quote": "a) Por profesionales en ejercicio en el Sistema Sanitario Público de Andalucía (SSPA) o en otros servicios de salud públicos integrados en el Sistema Nacional de Salud (SNS), debidamente identificados mediante su código numérico personal (CNP) o el homólogo que corresponda en cada Comunidad Autónoma.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "22 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 1312,
+      "LF_end": 1312,
+      "quote": "b) En el caso de pacientes con aseguramiento sanitario privado, por profesionales adscritos a la entidad aseguradora correspondiente, debidamente identificados mediante su número de colegiado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Andalucia60": [
+    {
+      "source": "S25",
+      "article": "60",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 2741,
+      "LF_end": 2741,
+      "quote": "1. Los contribuyentes del impuesto sobre la renta de las personas físicas estarán obligados a conservar durante el plazo máximo de prescripción los justificantes y documentos que acrediten el derecho a disfrutar de las deducciones de la cuota íntegra autonómica que se contemplan en la presente Ley y que hayan aplicado en sus declaraciones por dicho impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S25",
+      "article": "60",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+      "reader": "sources/S25.reader.txt",
+      "LF_start": 2743,
+      "LF_end": 2743,
+      "quote": "2. Mediante orden del titular de la Consejería competente en materia de Hacienda podrán establecerse obligaciones específicas de justificación, destinadas al control de las deducciones a que se refiere el apartado anterior.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ]
+}

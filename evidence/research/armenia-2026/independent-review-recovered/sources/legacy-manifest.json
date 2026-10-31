@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://www.arlis.am/hy/acts/158682/latest",
+    "status": 200,
+    "final_url": "https://www.arlis.am/hy/acts/158682/latest",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 26 Oct 2026 17:02:11 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Length": "119725",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "private",
+      "Strict-Transport-Security": "max-age=31536000",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Permissions-Policy": "interest-cohort=()",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'none'; connect-src 'self' https://www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://www.googletagmanager.com/ https://www.google-analytics.com/analytics.js; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'self' https://www.google.com; frame-ancestors 'none'; object-src 'none'"
+    },
+    "bytes": 119725,
+    "sha256": "cf14787a0d1ef7a89c59de1c875e5255c67d9bcf099e7f471982ced6f26aa8d1",
+    "path": "sources/110.raw",
+    "fetched": "2026-10-26T17:02:12.269060+00:00"
+  },
+  {
+    "url": "https://www.arlis.am/hy/acts/96164/latest",
+    "status": 200,
+    "final_url": "https://www.arlis.am/hy/acts/96164/latest",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 26 Oct 2026 17:02:12 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Length": "87055",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "private",
+      "Strict-Transport-Security": "max-age=31536000",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Permissions-Policy": "interest-cohort=()",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'none'; connect-src 'self' https://www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://www.googletagmanager.com/ https://www.google-analytics.com/analytics.js; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'self' https://www.google.com; frame-ancestors 'none'; object-src 'none'"
+    },
+    "bytes": 87055,
+    "sha256": "efc27b2acab209e56271447903498d8919c1d3bb0c036d91bde3743fd66dae71",
+    "path": "sources/111.raw",
+    "fetched": "2026-10-26T17:02:12.918410+00:00"
+  },
+  {
+    "url": "https://www.arlis.am/hy/acts/157894/latest",
+    "status": 200,
+    "final_url": "https://www.arlis.am/hy/acts/157894/latest",
+    "headers": {
+      "Server": "nginx",
+      "Date": "Mon, 26 Oct 2026 17:02:13 GMT",
+      "Content-Type": "text/html; charset=UTF-8",
+      "Content-Length": "46767",
+      "Connection": "close",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "private",
+      "Strict-Transport-Security": "max-age=31536000",
+      "X-XSS-Protection": "1; mode=block",
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Referrer-Policy": "same-origin",
+      "Permissions-Policy": "interest-cohort=()",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Content-Security-Policy": "default-src 'none'; connect-src 'self' https://www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google.com/ https://www.gstatic.com/ https://www.googletagmanager.com/ https://www.google-analytics.com/analytics.js; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; base-uri 'none'; frame-src 'self' https://www.google.com; frame-ancestors 'none'; object-src 'none'"
+    },
+    "bytes": 46767,
+    "sha256": "4b5c7372c7b46488fdc6ca2266f4280de656a81951aba43ce810a09d2454174b",
+    "path": "sources/112.raw",
+    "fetched": "2026-10-26T17:02:14.357580+00:00"
+  }
+]

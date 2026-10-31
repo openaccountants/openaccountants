@@ -1,0 +1,183 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por cada hijo de 0 a 3 años en escuelas infantiles o centros de educación infantil de cualquier m...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad Autónoma de La Rioja
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por cada hijo de 0 a 3 años en escuelas infantiles o centros de educación infantil de cualquier municipio de La Rioja
+
+Normativa: Art. 32.6 Ley 10/2017, de 27 de octubre, por la que se consolidan las disposiciones legales de la Comunidad Autónoma de La Rioja en materia de impuestos propios y tributos cedidos
+
+Cuantía y límite máximo de la deducción
+
+El 20 por 100 de los gastos de escolarización no subvencionado por cada hijo de 0 a 3 años.
+
+A estos efectos se entenderán por gastos de escolarización las cantidades satisfechas a escuelas o centros de educación infantil por los siguientes conceptos:
+
+- la preinscripción y matrícula de menores de 3 años,
+
+- la asistencia, en horario general y ampliado, y
+
+- la alimentación.
+
+Siempre que no tengan para el contribuyente la consideración de rendimientos del trabajo en especie exentos por aplicación de lo dispuesto en el artículo 42.3. b) o d) de la Ley del IRPF, es decir, por:
+
+- La contratación directa o indirectamente por empresas o empleadores del servicio de primer ciclo de educación infantil para los hijos de sus trabajadores en guarderías o centros de educación infantil autorizados [Artículo 42.3.b) Ley del IRPF].
+
+- La prestación del servicio de educación preescolar, infantil, primaria, secundaria obligatoria, bachillerato y formación profesional por centros educativos autorizados, a los hijos de sus empleados, con carácter gratuito o por precio inferior al normal de mercado [Artículo 42.3.d) Ley del IRPF].
+
+La base de esta deducción tendrá como límite para cada hijo el importe total del gasto efectivo no subvencionado satisfecho en el ejercicio a la escuela o centro de educación infantil.
+
+El límite máximo de la deducción es de 600 euros anuales, por cada hijo de 0 a 3 años.
+
+Requisitos y otras condiciones para la aplicación de la deducción
+
+Que el contribuyente tenga su residencia habitual en la Comunidad Autónoma de La Rioja.
+
+Que el contribuyente, a fecha de devengo del impuesto (normalmente el 31 de diciembre), conviva con el menor y tenga derecho al mínimo por descendientes.
+
+Si el hijo cumple tres años durante el ejercicio, se podrá aplicar la deducción por los gastos de escolarización satisfechos hasta el mes anterior al cumplimiento de esa edad.
+
+Se podrá aplicar la deducción por los gastos de escolarización de los hijos que hubieran falle­cido en el año.
+
+Finalmente se puede aplicar la deducción por los hijos respecto de los que el contribuyente ten­ga la guarda y custodia compartida, aunque en la fecha de devengo del impuesto convivan con el otro progenitor, siempre que tenga derecho al mínimo por descendientes.
+
+Que cada hijo de 0 a 3 años que pueda dar derecho a la deducción esté matriculado en una escuela o centro de educación infantil de cualquier municipio de La Rioja.
+
+Que la base liquidable general sometida a tributación según el artículo 50 de la Ley del IRPF no exceda de las siguientes cantidades:
+
+- 18.030 euros en declaración individual.
+
+- 30.050 euros en declaración conjunta.
+
+Siempre que, además, la base liquidable del ahorro sometida a tributación según el artículo 50 de la Ley del IRPF no supere 1.800 euros.
+
+El importe de la base liquidable general sometida a tributación según el artículo 50 de la Ley del IRPF es el reflejado en la casilla [0500] de la declaración.
+
+Por su parte, el importe de la base liquidable del ahorro sometida a tributación según el artículo 50 de la Ley del IRPF es el que aparece reflejado en la casilla [0510] de la declaración.
+
+En el caso de progenitores con derechos a deducción por el mismo descendiente y que presenten declaraciones individuales, el importe se prorrateará por partes iguales entre ambos.
+
+Importante: los contribuyentes con derecho a la deducción deberán hacer constar el NIF de la escuela, centro o guardería infantil en la casilla [1076] del Anexo B.7 de la declaración.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 29/septiembre/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

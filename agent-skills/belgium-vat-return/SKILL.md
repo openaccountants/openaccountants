@@ -7,18 +7,18 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/belgium-vat-return"
   jurisdiction: "BE"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.1
+# Belgium VAT (btw / TVA): rates, thresholds, returns and penalties, tax year 2026 v2.3
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Belgium.
 
 **What this skill does.** It sets out the law layer of Belgian VAT for 2026: who is in, the rates, the small-business exemption, return frequency, deadlines, refunds, e-invoicing and penalties. Figures come from the VAT Code (Wetboek van de belasting over de toegevoegde waarde, "WBTW", Law of 3 July 1969) and its Royal Decrees (KB nr. 1, 20, 41 and 44), read in the official coordination on FisconetPlus, from amending laws in the Belgisch Staatsblad, and from FOD Financiën pages.
 
-**Sibling skills.** [be-vat-return](be-vat-return.md) is a pointer to this file. [belgium-einvoice](belgium-einvoice.md) covers Peppol and invoice formats. [belgium-bookkeeping](belgium-bookkeeping.md), [be-income-tax](be-income-tax.md) and [be-corporate-tax](be-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
+**Sibling skills.** [be-vat-return](be-vat-return.md) covers preparing the return: the full grid map, reverse charges, listings and their fines. [belgium-einvoice](belgium-einvoice.md) covers Peppol and invoice formats. [belgium-bookkeeping](belgium-bookkeeping.md), [be-income-tax](be-income-tax.md) and [be-corporate-tax](be-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
 
 ## Who this applies to
 
@@ -126,7 +126,7 @@ The KB nr. 41 scale does not apply where the offence was committed to evade tax 
 
 ## Worked examples
 
-**Example 1: quarterly return, Q3 2026.** A Belgian BV files quarterly. In July to September 2026 it invoices EUR 80,000 of consultancy at 21%. It buys EUR 30,000 of goods and services at 21%, has EUR 4,000 net of costs on a passenger car at 21%, and a EUR 500 net client dinner at 12%. Output VAT is 80,000 × 21% = 16,800 (grid 54). Input VAT on the general purchases is 6,300. The car VAT is 840, of which 50% is deductible: 420. The dinner VAT of 60 is not deductible. Deductible VAT in grid 59 is 6,720. VAT payable in grid 71 is 10,080, due with the return by 25 October 2026. If it pays a month late but filed on time, the fine is 5%, EUR 504, and late interest at 8% for one month is EUR 67.20.
+**Example 1: quarterly return, Q3 2026.** A Belgian BV files quarterly. In July to September 2026 it invoices EUR 80,000 of consultancy at 21%. It buys EUR 30,000 of goods and services at 21%, has EUR 4,000 net of costs on a passenger car at 21%, and a EUR 500 net client dinner at 12%. Output VAT is 80,000 × 21% = 16,800 (grid 54). Input VAT on the general purchases is 6,300. The car VAT is 840, of which 50% is deductible: 420. The dinner VAT of 60 is not deductible. Deductible VAT in grid 59 is 6,720. VAT payable in grid 71 is 10,080, due with the return by 25 October 2026. If it pays a month late but filed on time, the fine is 5% of 10,080, which is EUR 504. A total fine above EUR 250 is rounded down to the ten euros (KB nr. 41 art. 4 § 1), so the fine is EUR 500. Late interest at 8% for one month is EUR 67.20.
 
 ```oa-check
 name: Belgium quarterly return Q3 2026 with car and restaurant limits
@@ -143,13 +143,14 @@ steps:
   - dinner_deductible: dinner_net * 0.12 * 0
   - grid_59: input_general + car_deductible + dinner_deductible
   - grid_71: output_vat - grid_59
-  - late_payment_fine: grid_71 * 0.05
+  - fine_unrounded: grid_71 * 0.05
+  - late_payment_fine: floor(fine_unrounded / 10) * 10
   - interest_one_month: floor(grid_71 / 10) * 10 * 0.08 / 12
 expected:
   output_vat: 16800
   grid_59: 6720
   grid_71: 10080
-  late_payment_fine: 504
+  late_payment_fine: 500
   interest_one_month: 67.20
 ```
 
@@ -237,4 +238,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `belgium-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/belgium-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

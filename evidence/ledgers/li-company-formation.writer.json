@@ -1,0 +1,942 @@
+{
+  "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
+  "guide": "skills/international/liechtenstein/li-company-formation.md",
+  "guide_sha256": "57e40ab3e2c0224955cc23c50b2989040022b7816ac486f5a15564e67f1422a3",
+  "rules": [
+    {
+      "id": "LI-FORM-001",
+      "rule_or_figure": "GmbH statutory minimum10000CHF",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR122(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens 10 000 Franken",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-002",
+      "rule_or_figure": "Share-divided AG/stated entity statutory minimum50000CHF",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR122(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens 50 000 Franken",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-003",
+      "rule_or_figure": "Non-share-divided stated entity minimum30000CHF",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR122(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens 30 000 Franken betragen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-004",
+      "rule_or_figure": "Nominal EUR/USD alternatives: GmbH10000,AG50000,stated other30000, not converted FX",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR122(1a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens 50 000 Euro oder 50 000 US-Dollar",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-005",
+      "rule_or_figure": "Foundation30000CHF/EUR/USD",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR552 section13(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Das Mindestkapital der Stiftung beträgt 30 000 Franken.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-006",
+      "rule_or_figure": "Statutory minimum fully paid/contributed, not every higher subscribed amount",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR122(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Mindestkapital und Mindestvermögen müssen voll einbezahlt bzw. eingebracht werden.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-007",
+      "rule_or_figure": "AG fully subscribed; at least25% each share and any higher required amount",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR284(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens aber 25 % auf jede Aktie",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-008",
+      "rule_or_figure": "GmbH each contribution at least50CHF and stated multiples/quotas",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR391(1),(3)–(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "muss aber ein Vielfaches von Fünfzig darstellen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-009",
+      "rule_or_figure": "GmbH formation contribution fully paid or in kind; single-contribution rule subject exception",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "PGR391(5)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "muss diese bei der Gründung voll einbezahlt oder durch Sacheinlagen gedeckt haben.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-010",
+      "rule_or_figure": "GmbH in-kind expert report",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "AJU factsheet07/2025 section7",
+      "official_url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf",
+      "exact_original_language_quote": "Sacheinlagen müssen im Rahmen eines Sachverständigenberichts bewertet werden.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/factsheet-selected-web-excerpt.json",
+      "source_text_sha256": "1527bf894e67b03320731a5386bb606eceab1232213090ecc9d8124fa2f4a5b8",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-011",
+      "rule_or_figure": "Capital at free disposal on register entry",
+      "Guide_section": "Capital is not a fee or tax",
+      "act_article_or_official_section": "AJU factsheet07/2025 section7",
+      "official_url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf",
+      "exact_original_language_quote": "Das Kapital hat der GmbH zur freien Verfügung zu stehen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/factsheet-selected-web-excerpt.json",
+      "source_text_sha256": "1527bf894e67b03320731a5386bb606eceab1232213090ecc9d8124fa2f4a5b8",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-012",
+      "rule_or_figure": "Ordinary authenticated articles plus registration for GmbH formation",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR390(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Eintragung ins Handelsregister.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-013",
+      "rule_or_figure": "Required articles include purpose/capital/member contributions/name/seat/date and stated particulars",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR390(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "den Betrag der von jedem Teilnehmer auf das Stammkapital zu leistenden Stammeinlage;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-014",
+      "rule_or_figure": "Simplified route at most3shareholders and1manager",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR390(5)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "wenn sie höchstens drei Gesellschafter und einen Geschäftsführer hat.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-015",
+      "rule_or_figure": "Simplified authority model, no legal departures, shareholder signatures authenticated",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR390(5)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Die Unterschriften der Gesellschafter auf den Statuten sind zu beglaubigen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-016",
+      "rule_or_figure": "Application articles copy, founders/contributions/managers/representation details",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR394(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "eine Ausfertigung oder eine beglaubigte Abschrift des Gesellschaftsvertrages beizulegen ist",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-017",
+      "rule_or_figure": "Actual register/publication particulars distinct from unsigned draft",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR394(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Zur Eintragung und Veröffentlichung gelangt der notwendige Inhalt der Statuten",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-018",
+      "rule_or_figure": "Qualified management/representation member actual licence/equivalence route, not universal local address rule",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR180a(1)–(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "eine Bewilligung nach dem Treuhändergesetz besitzen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-019",
+      "rule_or_figure": "Supervised/trade and stated association exemptions with foundation caveat",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR180a(3)–(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Dies gilt nicht für Stiftungen, welche der Aufsicht gemäss Art. 552 § 29 unterstehen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-020",
+      "rule_or_figure": "Specified incapable/convicted management representative disqualification",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR180b(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "handlungsunfähig im Sinne von Art. 16 sind;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-021",
+      "rule_or_figure": "Specified conviction exclusion5years from final judgment",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR180b(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "für die Dauer von fünf Jahren seit der Rechtskraft des Urteils.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-022",
+      "rule_or_figure": "Corresponding EEA disqualification; no-exclusion register declaration and subsequent exit/removal duty",
+      "Guide_section": "Ordinary GmbH preparation method",
+      "act_article_or_official_section": "PGR180b(3)–(6)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "zu erklären, dass kein Ausschlussgrund nach Abs. 1 oder 3 vorliegt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-023",
+      "rule_or_figure": "Accounts supplementary regime legal-form scope",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1063",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Aktiengesellschaft, der Kommanditaktiengesellschaft sowie der Gesellschaft mit beschränkter Haftung.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-024",
+      "rule_or_figure": "Micro: at least2of3 not exceeded580000/1160000/10",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "580 000 Schweizer Franken Bilanzsumme;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-025",
+      "rule_or_figure": "Micro turnover1160000CHF",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1a)(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "1 160 000 Schweizer Franken Nettoumsatzerlöse",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-026",
+      "rule_or_figure": "Micro average employees10",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1a)(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "im Durchschnitt des Geschäftsjahres 10 Arbeitnehmerinnen und Arbeitnehmer.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-027",
+      "rule_or_figure": "Small: at least2of3 not exceeded9.2m/18.5m/50",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "9.2 Millionen Schweizer Franken Bilanzsumme;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-028",
+      "rule_or_figure": "Small turnover18.5mCHF",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1)(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "18.5 Millionen Schweizer Franken Nettoumsatzerlöse",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-029",
+      "rule_or_figure": "Small average employees50",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(1)(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "im Durchschnitt des Geschäftsjahres 50 Arbeitnehmerinnen und Arbeitnehmer.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-030",
+      "rule_or_figure": "Medium exceeds2small limits and not exceeds2medium limits32.4m/64.8m/250",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "32.4 Millionen Schweizer Franken Bilanzsumme;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-031",
+      "rule_or_figure": "Medium turnover64.8mCHF",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(2)(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "64.8 Millionen Schweizer Franken Nettoumsatzerlöse",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-032",
+      "rule_or_figure": "Medium employees250",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(2)(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "im Durchschnitt des Geschäftsjahres 250 Arbeitnehmerinnen und Arbeitnehmer.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-033",
+      "rule_or_figure": "Large exceeds at least2medium criteria",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mindestens zwei der drei in Abs. 2 bezeichneten Merkmale überschreiten.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-034",
+      "rule_or_figure": "Two successive balance dates, separate first application",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "an den Bilanzstichtagen von zwei aufeinanderfolgenden Geschäftsjahren",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-035",
+      "rule_or_figure": "NonCHF accounts require prescribed thresholds, not ad-hocFX",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1064(5)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "wenn die Jahresrechnung nicht in Schweizer Franken erstellt wird.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-036",
+      "rule_or_figure": "Monetary threshold amendment first FYstarting on/after1Jan2024",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR notes1952–1959;LGBl2024/170",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "mals anwendbar auf Geschäftsjahre, die am oder nach dem 1. Januar 2024 beginnen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-037",
+      "rule_or_figure": "Audit requirement and small-company exception with1057 reservation",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "nicht jedoch solche, die nach Art. 1057 offenlegungspflichtig sind",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-038",
+      "rule_or_figure": "Where applicable no audit means review, subject actual waiver",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "vorbehalten bleibt ein Verzicht gemäss Art. 1058a.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-039",
+      "rule_or_figure": "Commercial micro review waiver eligibility; segmented/bearer AG excluded",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058a(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Davon ausgenommen sind segmentierte Verbandspersonen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-040",
+      "rule_or_figure": "Unanimous governing-body waiver decision",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058a(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "bedarf eines einstimmigen Beschlusses des obersten Organs.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-041",
+      "rule_or_figure": "Later member review demand and appointment; authority renewed-evidence right",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058a(4),(8)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "Jedes Mitglied des obersten Organs hat jedoch jederzeit das Recht",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-042",
+      "rule_or_figure": "Actual waiver declaration signed management with minutes/current evidence; registry/articles consequences",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1058a(5)–(9)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "von mindestens einem Mitglied der Verwaltung bzw. Geschäftsführung unterzeichnet sein.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-043",
+      "rule_or_figure": "Approved accounts/report due before end12thmonth, actual justified extension separate",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1122(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "spätestens vor Ablauf des zwölften Monats nach dem Bilanzstichtag",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-044",
+      "rule_or_figure": "Valid review waiver changes report, not underlying accounts filing",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1122(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "gemäss Art. 1058a verzichtet wurde",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-045",
+      "rule_or_figure": "Disclosure1122(1) documents filed electronically",
+      "Guide_section": "Accounts, review and disclosure",
+      "act_article_or_official_section": "PGR1122(6)",
+      "official_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "exact_original_language_quote": "hat in elektronischer Form zu erfolgen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-company-formation-evidence/sources/03.txt",
+      "source_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-FORM-W01",
+      "rule_or_figure": "Purpose/licensing/beneficial owner/management/currency evidence first; registration does not establish tax status or trade permission.",
+      "classification": "AUTHOR WORKFLOW/EXPRESS LIMIT",
+      "Guide_section": "Scope / Ask and refer"
+    },
+    {
+      "id": "LI-FORM-W02",
+      "rule_or_figure": "No current authority fee, guaranteed incorporation timetable, universal resident-director rule, full trust/foundation/special-entity method or live filing claim.",
+      "classification": "AUTHOR WORKFLOW/EXPRESS LIMIT",
+      "Guide_section": "Scope / Ask and refer"
+    },
+    {
+      "id": "LI-FORM-W03",
+      "rule_or_figure": "Size screens do not alone establish registered review waiver; special accounts/consolidation/sustainability/nonCHF threshold and exception chains remain open.",
+      "classification": "AUTHOR WORKFLOW/EXPRESS LIMIT",
+      "Guide_section": "Scope / Ask and refer"
+    },
+    {
+      "id": "LI-FORM-W04",
+      "rule_or_figure": "Both executable examples are funding screens with explicit assumed facts; no actual legal formation/approval asserted.",
+      "classification": "AUTHOR WORKFLOW/EXPRESS LIMIT",
+      "Guide_section": "Scope / Ask and refer"
+    },
+    {
+      "id": "LI-FORM-C01",
+      "rule_or_figure": "Liechtenstein assumed GmbH contribution total",
+      "classification": "ASSUMED INPUTS/DERIVED ARITHMETIC",
+      "Guide_section": "Worked controls",
+      "case_block_sha256": "e03eaf23d3fea32ab0ad8d4f62cfe5f2224a983d6ed790acc48892edc3451642"
+    },
+    {
+      "id": "LI-FORM-C02",
+      "rule_or_figure": "Liechtenstein assumed AG contribution and statutory minimum",
+      "classification": "ASSUMED INPUTS/DERIVED ARITHMETIC",
+      "Guide_section": "Worked controls",
+      "case_block_sha256": "aaae7db55e3b0cc334d15a07910cf789d9fe8bceb5367f388be3463a6b5291c7"
+    }
+  ],
+  "old_topic_destinations": [
+    {
+      "id": "OLD-001",
+      "old_text": "---\nname: li-company-formation\ndescription: >\n  Prepare a 2026 Liechtenstein entity-formation workpaper, centred on an ordinary\n  GmbH and selected AG, establishment and foundation capital distinctions. Use for\n  statutory capital, permitted nominal currency, contributions, standard versus\n  simplified GmbH formation, register evidence and the separate accounting/review\n  workstream. It corrects the earlier approximate GmbH capital range and blanket\n  capital-payment claim. Establish purpose, owners, management, licensing and\n  reporting duties before choosing a form. This draft does not supply an authority\n  fee quote, incorporation timetable, universal resident-director rule, full trust or\n  foundation method, every audit exemption or approved filing. Named local legal\n  and accountant review remain separate requirements.\njurisdiction: LI\ntax_year: 2026\nlast_updated: 2026-10-24\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\ncategory: formation\nversion: 0.2\n---",
+      "old_sha256": "643274785b48bcac9a96b9ab38694f7d27b24d2143b34038e689aef4808da78b",
+      "old_section": "Metadata",
+      "exact_retained": false,
+      "destination": "Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged"
+    },
+    {
+      "id": "OLD-002",
+      "old_text": "# Liechtenstein company formation and entity screening v0.2",
+      "old_sha256": "ce8c4502add62880a79fdde0bfe84757a7a0599aa49aa6af9e5d98fddba889de",
+      "old_section": "Metadata",
+      "exact_retained": false,
+      "destination": "Metadata/title version0.2 to0.3 and date30October; protected fields and CTA unchanged"
+    },
+    {
+      "id": "OLD-003",
+      "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
+      "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
+      "old_section": "Metadata",
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
+    },
+    {
+      "id": "OLD-004",
+      "old_text": "## Scope and first decision",
+      "old_sha256": "0a5f721845599fb3271849d2ab5792f3712431411dc28ccac4a17e74fcf7b30e",
+      "old_section": "Scope and first decision",
+      "exact_retained": true,
+      "destination": "Current Guide line29"
+    },
+    {
+      "id": "OLD-005",
+      "old_text": "This source-cited 2026 draft prepares the ordinary GmbH route and flags selected other legal forms. The [PGR consolidated 1 September 2026][law] and [Office of Justice GmbH fact sheet dated July 2025][factsheet] replace the earlier secondary-source approximations. They do not establish a fixed incorporation time, all-in cost, tax exemption or suitability for a particular owner.",
+      "old_sha256": "db411376712c1903c2055fc2d016541c8df5e31df5654498f3afc7282ce1a551",
+      "old_section": "Scope and first decision",
+      "exact_retained": true,
+      "destination": "Current Guide line31"
+    },
+    {
+      "id": "OLD-006",
+      "old_text": "Retain business/purpose and regulated-activity facts, founders/beneficiaries, ownership/control, intended country of work and management, capital currency and funding, registered office/service address, governance, licensing, expected accounts/size and beneficial-owner evidence. Tax residence and trade/sector permission are separate determinations; registration alone does not settle them.",
+      "old_sha256": "8f1953fcf12b4e11cc5b5dd7ba7fd579ba73a0eff78e2c6579cf0104acf53e46",
+      "old_section": "Scope and first decision",
+      "exact_retained": true,
+      "destination": "Current Guide line33"
+    },
+    {
+      "id": "OLD-007",
+      "old_text": "## Capital is not a fee or tax",
+      "old_sha256": "f296c43fcadc5a98f2aecd22eac4ebb14e44eb2f93ec59a622641e9b1ac5cc74",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line35"
+    },
+    {
+      "id": "OLD-008",
+      "old_text": "| Form/screen | Statutory minimum in selected nominal currency | Source and limitation |",
+      "old_sha256": "94119a6066ac84f000dddd312f8cb7a23d2a750055b1d433c22edf984c8a493d",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line37"
+    },
+    {
+      "id": "OLD-009",
+      "old_text": "|---|---|---|",
+      "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line38"
+    },
+    {
+      "id": "OLD-010",
+      "old_text": "| GmbH | CHF 10,000, or EUR 10,000, or USD 10,000 | PGR article 122; each member's contribution rules in article 391 |",
+      "old_sha256": "7d1570d6f99eb974a779c161bb1ec4b9966378df835833c776f85c721ad82013",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line39"
+    },
+    {
+      "id": "OLD-011",
+      "old_text": "| AG / stated share-divided entity rule | CHF 50,000, or EUR 50,000, or USD 50,000 | Article 122; AG formation/payment rules remain separately applicable |",
+      "old_sha256": "6a33fc838fd97ce40bb9d2c72a258194dfc3bdcd89d5308301eb5504939ed86c",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line40"
+    },
+    {
+      "id": "OLD-012",
+      "old_text": "| Stated non-share-divided entity rule | CHF 30,000, or EUR 30,000, or USD 30,000 | Article 122; determine actual legal form before applying |",
+      "old_sha256": "4ab20dd989fa7dcc67a4a1342bd4550d765f1c8077d974a3b5b8ce5aef4d557d",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line41"
+    },
+    {
+      "id": "OLD-013",
+      "old_text": "| Foundation | CHF 30,000, or EUR 30,000, or USD 30,000 | PGR article 552 section 13; no full foundation method supplied |",
+      "old_sha256": "584a928239ebe2de12117f55b9db5d9e07ce8eb38d946cbc68c300c5cfdcd603",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line42"
+    },
+    {
+      "id": "OLD-014",
+      "old_text": "These are statutory nominal-currency alternatives, not amounts translated at a current exchange rate. Article 122(2) requires the statutory minimum capital/assets to be fully contributed. It does **not** mean every AG's entire higher subscribed capital must always be paid in full: article 284 separately addresses full subscription and at least 25% on each share, with any higher statutory/articles requirement and the overall minimum retained. Contributions in kind require their own evidence/procedure. The AG arithmetic below is only a funding screen. [PGR, articles 122 and 284][law]",
+      "old_sha256": "2168fee0cae82f79e513c117e8a39e07e7ddf9a9d1df7b99e2b425b1af52b1b8",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line44"
+    },
+    {
+      "id": "OLD-015",
+      "old_text": "For GmbH members, article 391 requires at least CHF 50 per member contribution, its stated multiples/quotas, and full payment or contribution in kind at formation. The fact sheet identifies expert valuation for in-kind contributions and capital at the company's free disposal on registration. These matters are not proved by a bank-balance total alone. [PGR, article 391][law]; [fact sheet, sections 7–8][factsheet]",
+      "old_sha256": "5dd6b52f644732f179db3dafc51454ff47a3cb8ce12ab2ae84651ffcc3ff5b50",
+      "old_section": "Capital is not a fee or tax",
+      "exact_retained": true,
+      "destination": "Current Guide line46"
+    },
+    {
+      "id": "OLD-016",
+      "old_text": "## Ordinary GmbH preparation method",
+      "old_sha256": "258dd88e30634c798a6ba0373c1ff501d14abca367e1772901583832dd78b8b9",
+      "old_section": "Ordinary GmbH preparation method",
+      "exact_retained": true,
+      "destination": "Current Guide line48"
+    },
+    {
+      "id": "OLD-017",
+      "old_text": "1. Decide the actual form/purpose and applicable regulated/trade permissions. An asset-holding purpose is not automatically an ordinary commercial business or a PVS tax classification.\n2. Choose the normal publicly authenticated articles or the article 390(5) simplified route. The latter requires at most three shareholders, one manager, the authority model and no departures from the law; shareholder signatures still require authentication. It is not a universal online/self-service exemption from formalities. [PGR, article 390][law]\n3. Reconcile articles, owners/contributions, manager/representation powers, seat, financial year and other required particulars. Article 394 addresses the register application and supporting information. The GmbH acquires legal personality through registration, not when the owners merely sign a draft. [PGR, articles 390 and 394][law]\n4. Assess qualified-management and disqualification rules. Article 180a has a qualified-member rule with express exceptions; article 180b has exclusions. The fact sheet distinguishes ordinary/trade-supervised cases and noncommercial GmbHs. Do not replace these with a blanket “one local resident director” statement. Representation/service-address duties are separate from tax actual management. [PGR, article 180a][law]; [fact sheet, section 3][factsheet]\n5. Obtain contribution evidence, required valuation/authentication, signed corporate/organ documents and current authority forms; reconcile the intended register particulars to all documents. Preserve the actual registration decision and register extract. This draft does not establish present portal acceptance, registry fees, beneficial-owner filing particulars or a guaranteed duration.\n6. Start separate tax, VAT, payroll/insurance and accounts workstreams using the topic Guides. The corporate minimum-tax exception and source/management facts must be tested, rather than assuming every formed entity owes the same minimum tax.",
+      "old_sha256": "20e87c3c5f7d87d37e95ac3cdc7d64a9c543c10989bc7bb1d20a455a206408e6",
+      "old_section": "Ordinary GmbH preparation method",
+      "exact_retained": true,
+      "destination": "Current Guide line50"
+    },
+    {
+      "id": "OLD-018",
+      "old_text": "## Accounts, review and disclosure",
+      "old_sha256": "85ca8a68cfb8474ffe3f3a72e795062f31802aaeba7e77ad61280ddf5a5681b5",
+      "old_section": "Accounts, review and disclosure",
+      "exact_retained": true,
+      "destination": "Current Guide line61"
+    },
+    {
+      "id": "OLD-019",
+      "old_text": "PGR article 1064 provides the size criteria and separate first-application/two-period rules. Article 1058a allows the stated commercial micro-companies to waive a review, with exclusions, a unanimous decision, signed declaration/supporting evidence and continuing rights to demand a review. It is not an automatic exemption because one year's turnover is small. Audit/review, the choice of reviewer and an accounting-period change need their own current classification. [PGR, articles 1058a and 1064][law]",
+      "old_sha256": "a1bd6a1f118309c2d2bcab2e0a256e4f6029d78283a7274554b031fef06bb1c9",
+      "old_section": "Accounts, review and disclosure",
+      "exact_retained": true,
+      "destination": "Current Guide line63"
+    },
+    {
+      "id": "OLD-020",
+      "old_text": "Under article 1122(1), the covered company's approved annual accounts and required report must be filed with the Office of Justice **before expiry of the twelfth month after the balance-sheet date**, subject to an actual granted extension and the provision's scope. A valid review waiver affects the required report, not the underlying disclosure obligation. Tax filing and corporate approvals have separate clocks. The fact sheet corroborates the GmbH reporting route; it is not a complete annual-accounts or sustainability Guide. [PGR, article 1122][law]; [fact sheet, sections 10–11][factsheet]",
+      "old_sha256": "430aabc0a8b24fd28d231f0ffa66adcc76d7c4e40d5f734a35ccfa881475cace",
+      "old_section": "Accounts, review and disclosure",
+      "exact_retained": false,
+      "destination": "Original scope/12-month disclosure paragraphs retained; new ordinary size/assurance workpaper and electronic-filing requirement inserted. Prior historical source dates preserved with new actual30October reads."
+    },
+    {
+      "id": "OLD-021",
+      "old_text": "No current authority fee tariff, late-filing penalty amount, full filing form, every board/supervision exception or business-permission procedure has been established by this draft. Preserve any notice and obtain the applicable procedure before filing or quoting an outcome.",
+      "old_sha256": "337f96ff9a4abcb0508bd3e7207d75e01c7bbc7f1ec7c85135a848993d6cc9b8",
+      "old_section": "Accounts, review and disclosure",
+      "exact_retained": true,
+      "destination": "Current Guide line82"
+    },
+    {
+      "id": "OLD-022",
+      "old_text": "## Worked controls",
+      "old_sha256": "c32b68aca8a7149fab23993db5a7401d48b7a0c840f767aad26caf0eb7b5b61c",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line84"
+    },
+    {
+      "id": "OLD-023",
+      "old_text": "### Three-founder GmbH capital reconciliation",
+      "old_sha256": "de365ebc7508b75ac0ad4e935ae6008fa382f74e6091420cdac11b9d690e7190",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line86"
+    },
+    {
+      "id": "OLD-024",
+      "old_text": "Assume the chosen CHF minimum and three proposed fully paid cash contributions CHF 4,000, CHF 3,000 and CHF 3,000. They total CHF 10,000 and leave no shortfall against the statutory capital screen. This does not establish simplified-route eligibility, authenticated documents, licensing, costs or registration.",
+      "old_sha256": "5478ccebcd29617c8dde2ac0ae63a7789673c79ca68d3150af119918b4f7d652",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line88"
+    },
+    {
+      "id": "OLD-025",
+      "old_text": "```oa-check\nname: Liechtenstein assumed GmbH contribution total\ninputs:\n  first_contribution: 4000\n  second_contribution: 3000\n  third_contribution: 3000\n  statutory_chf_minimum: 10000\nsteps:\n  total_capital: first_contribution + second_contribution + third_contribution\n  capital_shortfall: max(0, statutory_chf_minimum - total_capital)\nexpected:\n  total_capital: 10000\n  capital_shortfall: 0\n```",
+      "old_sha256": "e03eaf23d3fea32ab0ad8d4f62cfe5f2224a983d6ed790acc48892edc3451642",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line90"
+    },
+    {
+      "id": "OLD-026",
+      "old_text": "### AG minimum versus subscribed amount",
+      "old_sha256": "2b48583dffc178ddd505e37ba79cc39271128ef096954ae47ea9364412468192",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line105"
+    },
+    {
+      "id": "OLD-027",
+      "old_text": "Assume CHF 100,000 subscribed share capital, uniform contributions, no higher articles requirement, ordinary article 284 conditions and the CHF 50,000 minimum. A 25% amount would be CHF 25,000, so the overall statutory minimum requires at least CHF 50,000. This leaves CHF 50,000 unpaid subscribed capital in this assumed screen, not a conclusion that an actual filing satisfies every share/contribution requirement.",
+      "old_sha256": "eee4f3c540c8533adf4db4f62f6fa758f679f27a02b1f9d7a2a002fef9317c50",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line107"
+    },
+    {
+      "id": "OLD-028",
+      "old_text": "```oa-check\nname: Liechtenstein assumed AG contribution and statutory minimum\ninputs:\n  assumed_subscribed_capital: 100000\n  ordinary_per_share_fraction: 0.25\n  statutory_chf_minimum: 50000\nsteps:\n  assumed_fractional_payment: assumed_subscribed_capital * ordinary_per_share_fraction\n  required_funding_screen: max(assumed_fractional_payment, statutory_chf_minimum)\n  assumed_unpaid_subscribed_amount: assumed_subscribed_capital - required_funding_screen\nexpected:\n  assumed_fractional_payment: 25000\n  required_funding_screen: 50000\n  assumed_unpaid_subscribed_amount: 50000\n```",
+      "old_sha256": "aaae7db55e3b0cc334d15a07910cf789d9fe8bceb5367f388be3463a6b5291c7",
+      "old_section": "Worked controls",
+      "exact_retained": true,
+      "destination": "Current Guide line109"
+    },
+    {
+      "id": "OLD-029",
+      "old_text": "## Ask and refer",
+      "old_sha256": "4722f4a1a85c1adec1399c9b3f1dc5d9d74e60d0c831f77bd4d2398381ad7e51",
+      "old_section": "Ask and refer",
+      "exact_retained": true,
+      "destination": "Current Guide line125"
+    },
+    {
+      "id": "OLD-030",
+      "old_text": "Establish purpose/licensing, actual founders/beneficiaries/control, intended residence/management, capital currency and contributions, governance/service address, representation and accounts/size. Refer trusts, foundations, Anstalt control/benefits, segmented entities, noncash contributions, foreign owners/management, regulated activities, disqualification, review waivers and all disputed formation/tax cases. Full formation/annual-reporting scope and named local professional review remain open. This secondary topic does not make any core tax domain complete.",
+      "old_sha256": "10113d93bfb02bad060a0d8428807c2947701b575d875f10a58c8c8ec0ba3b9f",
+      "old_section": "Ask and refer",
+      "exact_retained": true,
+      "destination": "Current Guide line127"
+    },
+    {
+      "id": "OLD-031",
+      "old_text": "## Sources",
+      "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "old_section": "Sources",
+      "exact_retained": true,
+      "destination": "Current Guide line129"
+    },
+    {
+      "id": "OLD-032",
+      "old_text": "Read 24 October 2026:",
+      "old_sha256": "6d513a347d5ed72aae61494cee684de5b7ddc10fce3d7e6b3b097a3480dc5021",
+      "old_section": "Sources",
+      "exact_retained": false,
+      "destination": "Sources preserves original URLs and historical24October reads; current PGR/factsheet selected rereads added."
+    },
+    {
+      "id": "OLD-033",
+      "old_text": "- [Current PGR, 1 September 2026 consolidation][law], selected articles 122, 180a, 261, 284, 390–391, 394, 552 section 13, 1058a, 1064 and 1122. Whole PDF retrieval is not whole PGR verification.\n- [Office of Justice GmbH fact sheet, July 2025][factsheet], selected organisation, capital and reporting provisions compared with the current PGR.\n- [Official GmbH registration page][registration], current models/forms entry point; no live application was exercised.",
+      "old_sha256": "33c79928fa34ad250b3ca7d718e9d055774586342c26acd95c92ce1f60327a10",
+      "old_section": "Sources",
+      "exact_retained": true,
+      "destination": "Current Guide line133"
+    },
+    {
+      "id": "OLD-034",
+      "old_text": "[law]: https://www.gesetze.li/konso/pdf/1926004000\n[factsheet]: https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf\n[registration]: https://www.llv.li/de/privatpersonen/beruf-und-arbeitsplatz/handelsregister/eintragungen/gesellschaft-mit-beschraenkter-haftung",
+      "old_sha256": "e2fcf8e2a91200473685c7c0b610e7b65a09ff01610e72c9501678123869749b",
+      "old_section": "Sources",
+      "exact_retained": true,
+      "destination": "Current Guide line139"
+    },
+    {
+      "id": "OLD-035",
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "old_section": "Sources",
+      "exact_retained": true,
+      "destination": "Current Guide line143"
+    },
+    {
+      "id": "OLD-036",
+      "old_text": "---",
+      "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "old_section": "Sources",
+      "exact_retained": true,
+      "destination": "Current Guide line1"
+    },
+    {
+      "id": "OLD-037",
+      "old_text": "## Talk to an accountant",
+      "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
+      "old_section": "Talk to an accountant",
+      "exact_retained": true,
+      "destination": "Current Guide line147"
+    },
+    {
+      "id": "OLD-038",
+      "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
+      "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
+      "old_section": "Talk to an accountant",
+      "exact_retained": true,
+      "destination": "Current Guide line149"
+    }
+  ],
+  "explicit_successor_map": {
+    "Accounts, review and disclosure": "Original scope/12-month disclosure paragraphs retained; new ordinary size/assurance workpaper and electronic-filing requirement inserted. Prior historical source dates preserved with new actual30October reads.",
+    "Sources": "Sources preserves original URLs and historical24October reads; current PGR/factsheet selected rereads added."
+  },
+  "quote_binding_failures": [],
+  "remaining": "Actual permissions/beneficial-owner/fees/noncash formation procedure, special legal forms and accounts exceptions, nonCHF reporting thresholds and fresh independent pack review; no comprehensive formation claim."
+}

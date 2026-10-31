@@ -31,6 +31,7 @@ from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from frontmatter_yaml import FrontmatterError, load_frontmatter  # noqa: E402
+from repo_layout import country_dirs  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SKILLS_DIR = REPO_ROOT / "skills"
@@ -39,9 +40,9 @@ PLUGIN_SKILLS_DIR = REPO_ROOT / "plugins" / "openaccountants" / "skills"
 SITE = "https://www.openaccountants.com"
 LICENSE_LINE = "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 
-# Content skills only. Foundation/orchestrator/templates/patterns are workflow scaffolding
+# Content skills only. Foundation/orchestrator/templates are workflow scaffolding
 # that the MCP assembles; they are not something a person installs on its own.
-SOURCE_DIRS = ("international", "federal", "us-states", "cross-border", "verticals", "integrations", "financial-reporting")
+TOPIC_SOURCES = ("cross-border", "reference")
 KEEP_FILES = {"README.md", "LICENSE.md", "install.sh", "index.json"}
 BAD_DESCRIPTIONS = {"", "---", ">", "|", "null", "none"}
 GLOSS = "tax rules your AI follows"
@@ -160,7 +161,7 @@ def stamp_readme(text: str, built: dict, jurisdictions: list[str], reviewed: int
     """Rewrite the counts block between the oa-skills-stats markers; the rest is hand-written.
 
     Two quality states only: accountant-reviewed (tier 1 with a named reviewer) and
-    source-cited draft. `reviewed` is the tier-1 count from build(); when it is not
+    tier 2 (checked against the law, or sourced from the law). `reviewed` is the tier-1 count from build(); when it is not
     given, a named reviewer in metadata is the fallback signal."""
     if reviewed is None:
         reviewed = sum(1 for v in built.values() if v.get("reviewed_by"))
@@ -169,15 +170,14 @@ def stamp_readme(text: str, built: dict, jurisdictions: list[str], reviewed: int
         "<!-- oa-skills-stats:start -->\n"
         f"**{len(built):,} skills** across **{len(jurisdictions)} jurisdictions**. "
         f"{reviewed} are accountant-reviewed (a named accountant in `metadata.reviewed_by`); "
-        f"the other {drafts:,} are source-cited drafts.\n"
+        f"the other {drafts:,} are tier 2 (checked against the law, or sourced from the law).\n"
         "<!-- oa-skills-stats:end -->"
     )
     return re.sub(r"<!-- oa-skills-stats:start -->.*?<!-- oa-skills-stats:end -->", block, text, flags=re.S)
 
 
 def iter_source_files():
-    for d in SOURCE_DIRS:
-        base = SKILLS_DIR / d
+    for base in [*country_dirs(SKILLS_DIR), *(SKILLS_DIR / d for d in TOPIC_SOURCES)]:
         if not base.is_dir():
             continue
         for p in sorted(base.rglob("*.md")):

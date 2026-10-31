@@ -1,0 +1,165 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.7.16. Por traslado de vivienda habitual
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.7. Castilla-La Mancha
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.7.16. Por traslado de vivienda habitual
+
+Cuantía
+
+500 euros en el periodo impositivo en el que se produzca el cambio de residencia y en el siguiente, por los gastos ocasionados al trasladar la residencia habitual por motivos laborales a un municipio de Castilla-La Mancha de los incluidos en las zonas escasamente pobladas(extrema despoblación e intensa despoblación).
+
+Requisitos y condiciones
+
+La base liquidable del periodo impositivo en el que se hubiera comenzado a aplicar la deducción deberá ser inferior a 22.946 euros en tributación individual o a 31.485 euros en tributación conjunta.
+
+El año siguiente al cambio de residencia el contribuyente podrá aplicar la deducción con independencia de la cuantía de su base liquidable en ese ejercicio.
+
+El importe de la deducción no podrá exceder de la parte autonómica de la cuota íntegra procedente de los rendimientos del trabajo y de las actividades económicas del ejercicio en que resulte aplicable la deducción.
+
+La deducción es aplicable tanto a los trabajadores por cuenta ajena como a los empresarios o profesionales autónomos siempre y cuando el cambio de residencia obedezca a motivos laborales.
+
+Para tener derecho a la deducción es necesario que el contribuyente traslade su residencia habitual y, además, desarrolle su actividad laboral en una de las zonas escasamente pobladas.
+
+Los contribuyentes que trasladaron su residencia en 2024 a zonas escasamente pobladas de Castilla-La Mancha por motivos laborales y cumplan los límites de base liquidables pueden aplicar la deducción en el ejercicio 2025.
+
+En tributación conjunta, la deducción de 500 euros se aplicará por cada uno de los contribuyentes que traslade su residencia con el límite de la parte autonómica de la cuota íntegra procedente de rendimientos del trabajo y de actividades económicas que corresponda a los contribuyentes que generen derecho a la deducción.
+
+En el caso de que ambos cónyuges generen derecho a la deducción, en tributación conjunta, el límite máximo de la deducción es único para la declaración en su conjunto por lo que su determinación se hará tomando en consideración el conjunto de los rendimientos del trabajo y de actividades económicas obtenidos por ambos cónyuges y se aplicará al importe total de la deducción (1.000 euros).
+
+Para consolidar el derecho a la deducción, es preciso que el contribuyente permanezca en la nueva residencia habitual durante el año en que se produce el traslado y los tres siguientes.
+
+En caso de fallecimiento del contribuyente no se perderá el derecho a la deducción aunque no se cumpla este requisito.
+
+El incumplimiento de cualquiera de los requisitos anteriores dará lugar a la devolución de las cantidades deducidas de la cuota íntegra autonómica del ejercicio en que se produzca el incumplimiento, con los correspondientes intereses de demora.
+
+Cumplimentación
+
+Si conforme a lo expuesto cumple los requisitos para aplicar la deducción marcará la casilla correspondiente al ejercicio en el que se haya producido el traslado.
+
+Puede consultar las zonas que posibilitan la aplicación de la deducción en:
+Municipios despoblación extrema e intensa 2(401 KB - pdf)
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/abril/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

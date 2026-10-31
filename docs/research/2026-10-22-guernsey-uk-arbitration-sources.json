@@ -1,0 +1,17 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gov.uk/government/publications/guernsey-tax-treaties/uk-guernsey-memorandum-of-understanding-on-arbitration-under-article-25-of-the-agreement",
+      "locators": "Parts 1, 2, 11\u201313 and signature dates; web retrieval"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/5c470999ed915d38b0437c54/2018_Guernsey-UK_Double_Taxation_Agreement_in_force.pdf",
+      "locators": "Article 25(1), (2), (5)"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/guernsey-tax-treaties",
+      "locators": "Details: memorandum status conflicts with effective-date clause"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "accepted_source_candidate": "5d8327adbb6ddf637b678cc51e9fdeee1dd5c53f",
+  "administrative_head": "696132b85dd81b7ed12d3d897459cb21054db4fc",
+  "published_baseline": "d4ea78488b8feed9e93c375076a9fc5e7f7825f6",
+  "decision": "accepted within the exact incomplete scope of the source review",
+  "open_material_findings": [],
+  "guide_and_readme_manifest": [
+    {
+      "path": "skills/international/guernsey/README.md",
+      "git_blob": "19dad2c69662a92a63313d1aee643075cb65676f",
+      "sha256": "e82dbfb0dcc701e669a78af6590eb121abe2c4617c58b627f7bedf585cb981c6",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": false,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": "README administrative diff manually checked",
+      "main_controls": 0,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 11931
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "git_blob": "aa46c2cd79757da8b67c4dbf2c77a5e9c87137e3",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 25430
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "git_blob": "3bef025f6ed1fae667c21a3f3b317ff36d3da9d6",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 12375
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "git_blob": "0e21bd46e38bd0efbd984b71972b732675d32745",
+      "sha256": "7c1921f96c8c6f631a27abdd709d278aaffe9419ecd0a0b51c5c1446c1937c35",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": true,
+      "bytes": 69286
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "git_blob": "2a6b924df70e418175f4baeab1e0ef970692846a",
+      "sha256": "1e95f0db588efe760c34b8a99c130bb5d50fea83ff6faf8917a499c369be90df",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 14050
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "git_blob": "5a724073eed8a74dcd9afe2887bd767580d5df79",
+      "sha256": "809b3cf140a1f72ae7af449beb34c0a5abe95a2552fb281c97f53473585f3bf1",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": true,
+      "bytes": 47253
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "git_blob": "ac28b3217c54da0e2c9189c59574a3d77748a8ae",
+      "sha256": "9f660785d0ff25d10d5f7f5028fbf2d75f9d63c93331b68af1804801bd067c57",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": false,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": true,
+      "bytes": 67406
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "git_blob": "37863b3c5355ddb35c705d99e8b36e3a7ad22a72",
+      "sha256": "1542cd9b3b69f8fd9270971d1398579313b4b7c23bc80ddc43910262021826a4",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 29281
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "git_blob": "3832501d5aac7e8149c1ff5d0f9e89963eff2187",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": true,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 16361
+    },
+    {
+      "path": "skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md",
+      "git_blob": "6822c808ce14e7e9c678d4d04189fca896dbc1eb",
+      "sha256": "790db265af168f91613d615572464d8654ac3c6f3e80c4d9e91ccdd2262fc382",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": false,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 24283
+    },
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "git_blob": "ea679ec7468ca7c325f8a05639f4dd559ade77f4",
+      "sha256": "141233f33252d445baa3da30995164cf7e404f2bede38497201d65fdac312476",
+      "working_file_exact_to_pinned_blob": true,
+      "full_file_exact_to_accepted": false,
+      "operative_body_unchanged_ignoring_spacing_and_review_status_paragraph": true,
+      "main_controls": 2,
+      "main_controls_exact_to_accepted": true,
+      "protected_metadata_exact": true,
+      "cta_tail_exact": "absent in accepted source candidate",
+      "bytes": 62731
+    }
+  ],
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "research_baseline_archives_exact": true,
+  "original32_archive_exact": true,
+  "original18_main_exact": true,
+  "controls": {
+    "count": 93,
+    "failures": []
+  },
+  "schema": {
+    "errors": [],
+    "warnings": []
+  },
+  "review_artifacts_copied_byte_exact": {
+    "report.md": true,
+    "integrity.json": true,
+    "source-evidence.json": true
+  },
+  "administrative_country_diff_sha256": "1d96c047ee3423cf2a4b9c541a63e48c8982f016599b8216a7db533699aab28d",
+  "lost_content_restored_this_continuation": 0,
+  "historical_restorations_preserved": 2
+}

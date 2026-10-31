@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-28",
+  "scope": "Finite ledger review; prior whole22 reading reused. No new source acquisition/full law-body review claimed.",
+  "actual_current_wordings": "All352 original prepared rows and all18 new/changed wordings read; final360 rows.",
+  "actual_source_quotes": "All154 initial anchors, all16 corrected September anchors and all added/changed clauses including final publication anchor5; final158 native spans verified mechanically. Initial output q2 tail/q3 truncation remedied by q2 tail and fullq3 reads. Full amended LF183 read separately after a combined diff truncated it.",
+  "old_topics": "629 mapped units; selected earlier published/frozen topics actually spotchecked; all24 successor changed map entries read. Actual hospitalisation omission repaired, historical-event limits remain explicit. Not all629 old units newly read.",
+  "source_scope": "21 raw/reader identity pairs rehashed; selected prepared quotation bodies actually read. All September named calls now literal-LF. Hashing is not whole-source reading.",
+  "closed_findings": [
+    "S-L17 literal-LF September callsites",
+    "S-L18 21October entry/process cohort versus 1December selected effects; removed false blanket exclusion",
+    "S-L19 actual ET37.2 holidays quote",
+    "S-L20 ordinary newborn hospital extension restored"
+  ],
+  "remaining_ordinary_boundary": "Operational recalculation of an existing award for a process starting21Oct–30Nov and continuing intoDecember remains unresolved; do not infer retrospective award override. Other expressly retained historical event transitions not broadly supplied.",
+  "independent_controls": 83,
+  "actual_examples": "check-examples.py final current Guide: checked1files,2oa-checkblocks,0failures,0missing.",
+  "unread_prepared_substantive_scope": []
+}

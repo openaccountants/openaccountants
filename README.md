@@ -1,32 +1,28 @@
 # OpenAccountants
 
-**Free AI skills (tax rules your AI follows) your AI can cite, with sources and published review status.**
-
-This library includes accountant-reviewed skills and source-cited drafts. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
-
-## Need someone to do the accounting?
-
-OpenAccountants also helps business owners get bookkeeping and tax work done through accountants in our network. Tell us what you need, including work across countries. We confirm whether we can take it on, who will do the work and the price before you commit.
-
-**[Book a free 30-minute call](https://www.openaccountants.com/tax-help?source=github_readme#book)** · [Explore our accounting services](https://www.openaccountants.com/tax-help?source=github_readme)
-
-The skills and AI connection remain free.
+**Open tax skills for AI.** Your AI answers tax questions from memory. Add these skills and it answers from the law: every rate, threshold and deadline cited to its official source, for 190+ jurisdictions.
 
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-047857)](LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/openaccountants-mcp?label=openaccountants-mcp&color=047857)](https://pypi.org/project/openaccountants-mcp/)
 [![GitHub stars](https://img.shields.io/github/stars/openaccountants/openaccountants?style=social)](https://github.com/openaccountants/openaccountants/stargazers)
 
 <!-- oa-stats:start -->
-**2,091 AI skills** across **247 jurisdictions** · **33 accountant-reviewed** · **38 named accountants** · **21,502 questions answered** through connected AIs
+**2,132 AI skills** across **249 jurisdictions** · **33 accountant-reviewed** · **39 named accountants** · **6,115 questions answered** through connected AIs
 
-<sub>Live from openaccountants.com — updated 2026-10-24 by the nightly sync.</sub>
+<sub>Live from openaccountants.com — updated 2026-10-30 by the nightly sync.</sub>
 <!-- oa-stats:end -->
 
 ---
 
-## Try it in 60 seconds
+## Find your country
 
-Add the hosted connector to Claude, ChatGPT, Cursor, Windsurf or any MCP client:
+**[Browse all countries](skills/COUNTRIES.md)**, by region, with the state of each pack. United States: [federal](skills/us/federal/) and [states](skills/us/states/).
+
+---
+
+## Add to your AI
+
+Add this address to Claude, ChatGPT, Cursor, Windsurf or any AI that takes a connector:
 
 ```
 https://www.openaccountants.com/api/mcp
@@ -34,22 +30,9 @@ https://www.openaccountants.com/api/mcp
 
 Guided setup: **[openaccountants.com/connect](https://www.openaccountants.com/connect)**
 
-Listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) and the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants).
-
 Then ask a question your AI would otherwise guess at:
 
 > *"What's the combined sales tax rate in Manatee County, Florida for 2026?"*
-
-Without OpenAccountants, models answer from training data. With it, the answer can cite the fetched skill and its review status. Name a professional reviewer only when that skill version has a published review record.
-
-```
-You:    "I'm moving to Malta and selling my company next year. What tax do I face?"
-          ↓  loads moving-to-malta-tax-residence, selling-a-company-in-malta
-AI:     Residence and domicile · Remittance basis on foreign income
-        Gain on the share sale · Participation exemption check
-        ─────────────────────────────────────────
-        Authored by Michael Cutajar CPA, ACCA (Malta)
-```
 
 <details>
 <summary><strong>Prefer self-hosting or manual files?</strong></summary>
@@ -57,18 +40,33 @@ AI:     Residence and domicile · Remittance basis on foreign income
 - **pip MCP server:** `pip install openaccountants-mcp` (mirrors this repo's `packages/`)
 - **Manual:** download your jurisdiction's folder from [`packages/`](packages/) and upload the files to your AI. Start with your country's main package; `index.json` is the machine-readable inventory.
 
+Also listed on [Smithery](https://smithery.ai/server/info-ood9/openaccountants) and the [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.openaccountants/openaccountants).
+
 </details>
 
 ---
 
-## Two states, greppable honesty
+## Contribute
 
-Every skill is in exactly one state — and the repo greps honestly:
+Three ways in, all in **[CONTRIBUTING.md](CONTRIBUTING.md)**:
+
+- **I can write.** Take a country and write its missing skills from the law.
+- **I am an accountant.** Review a skill and put your name on it.
+- **I found a mistake.** Open an issue with the source that shows it.
+
+---
+
+## How to read a skill
+
+This library holds accountant-reviewed skills and skills no accountant has signed off yet. Check each skill version's review record before relying on it; a named author is distinct from a professional reviewer. Skill content is source-available under the terms in [LICENSING.md](LICENSING.md).
+
+Every skill is in exactly one state:
 
 | State | Meaning |
 |---|---|
 | **Accountant-reviewed** | A named, licensed accountant reviewed the complete skill. Their name is in the frontmatter (`reviewed_by:`) and on [the public roster](VERIFIERS.md) |
-| **Source-cited draft** | Written from official sources, every figure cited to its source; not yet professionally reviewed |
+| **Checked against the law** | Built to the standard in [docs/skill-template.md](docs/skill-template.md): every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet |
+| **Sourced from the law** | Older skill not yet rebuilt to the standard: every figure cited to an official source; no accountant has signed it off yet |
 
 The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are built, checked and corrected: [docs/ACCURACY-METHODOLOGY.md](docs/ACCURACY-METHODOLOGY.md). Which number to quote and where it is measured: [docs/COVERAGE.md](docs/COVERAGE.md).
 
@@ -76,15 +74,9 @@ The definitions: [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). How skills are 
 
 ---
 
-## Are you an accountant?
+## Need the work done?
 
-Your name on the tax knowledge AI actually uses — with attribution built in:
-
-1. **Build a skill** for the work you know cold: [openaccountants.com/skills/new](https://www.openaccountants.com/skills/new). It publishes credited to you, and lands in this repo under your name.
-2. **Review a skill** in your jurisdiction — your name, credential and review date go on it, here and on every AI answer that cites it.
-3. **Set your GitHub username** in [your profile](https://www.openaccountants.com/profile) and your platform edits are committed to this repo as *you* — your contribution graph reflects your work.
-
-The current roster: **[VERIFIERS.md](VERIFIERS.md)** (generated nightly from the platform).
+OpenAccountants also does the bookkeeping, VAT, payroll and tax work for businesses, in the countries they work in. [Talk to us](https://www.openaccountants.com/tax-help?source=github_readme#book). The skills and the AI connection stay free.
 
 ---
 
@@ -110,18 +102,6 @@ The whole story, in plain words: [openaccountants.com/how-it-works](https://www.
 
 ---
 
-## Contributing
-
-The goal is one complete, verified, reviewed tax pack per jurisdiction: **[GOAL.md](GOAL.md)**. Who owns which jurisdiction: **[OWNERS.md](OWNERS.md)**. Take an open `[XX] Complete the pack` issue and open a PR with `Closes #N`.
-
-Edit **`skills/**` only** — everything else regenerates automatically:
-
-- `packages/`, `agent-skills/<slug>/`, `index.json`, `llms-full.txt`: generated nightly; never edit in a PR
-- Merged source PRs are credited to you and must be confirmed as ingested before the next platform export
-- Full instructions: [CONTRIBUTING.md](CONTRIBUTING.md) · Layout: [docs/REPO-LAYOUT.md](docs/REPO-LAYOUT.md)
-
----
-
 ## For developers
 
 | What | Where |
@@ -141,10 +121,10 @@ API and platform integrations: [openaccountants.com/for-developers](https://www.
 
 Independent, open-source review aids and calculation tools that complement the OpenAccountants skill library:
 
-- **[payday-super-checker](https://github.com/ryanduguid/australian-accounting/tree/main/packages/payday-super-checker)** (Apache-2.0) — Verifies superannuation contributions against Australian Payday Super deadlines (in force since 1 July 2026) and estimates SG charge exposure on late payments, with all workings and statutory assumptions disclosed.
-- **[div7a-loan-review](https://github.com/ryanduguid/australian-accounting/tree/main/packages/div7a-loan-review)** (Apache-2.0) — Reviews Division 7A loan terms and minimum yearly repayments against the ATO benchmark interest rate, with fabricated inputs and explicit refusal boundaries.
-- **[xero-trial-balance-export](https://github.com/ryanduguid/accounting-review-pipeline/tree/main/packages/xero-trial-balance-export)** (Apache-2.0) — Exports a Xero trial balance to CSV only when month-movement and YTD column pairs both balance exactly.
-- **[ato-benchmark-compare](https://github.com/ryanduguid/australian-accounting/tree/main/packages/ato-benchmark-compare)** (Apache-2.0) — Evaluates business P&L statements locally against the Australian Taxation Office (ATO) small business performance benchmarks, surfacing variance flags and ratio analyses.
+- **[payday-super-checker](https://github.com/ryanduguid/australian-accounting/tree/main/packages/payday-super-checker)** (Apache-2.0): Verifies superannuation contributions against Australian Payday Super deadlines (in force since 1 July 2026) and estimates SG charge exposure on late payments, with all workings and statutory assumptions disclosed.
+- **[div7a-loan-review](https://github.com/ryanduguid/australian-accounting/tree/main/packages/div7a-loan-review)** (Apache-2.0): Reviews Division 7A loan terms and minimum yearly repayments against the ATO benchmark interest rate, with fabricated inputs and explicit refusal boundaries.
+- **[xero-trial-balance-export](https://github.com/ryanduguid/accounting-review-pipeline/tree/main/packages/xero-trial-balance-export)** (Apache-2.0): Exports a Xero trial balance to CSV only when month-movement and YTD column pairs both balance exactly.
+- **[ato-benchmark-compare](https://github.com/ryanduguid/australian-accounting/tree/main/packages/ato-benchmark-compare)** (Apache-2.0): Evaluates business P&L statements locally against the Australian Taxation Office (ATO) small business performance benchmarks, surfacing variance flags and ratio analyses.
 
 *(External tools provide computational review assistance and do not constitute tax or legal advice.)*
 
@@ -153,6 +133,6 @@ Independent, open-source review aids and calculation tools that complement the O
 ## License
 
 - **Code** (mcp/, scripts/, tools/, calculators/): [AGPL-3.0-only](LICENSE)
-- **Skill content**: OpenAccountants Guide License v1.0 — see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
+- **Skill content**: OpenAccountants Guide License, see [LICENSING.md](LICENSING.md); commercial options in [COMMERCIAL-LICENSING.md](COMMERCIAL-LICENSING.md)
 
 **Contact:** info@openaccountants.com · [Security policy](SECURITY.md) · [Cite this repo](CITATION.cff)

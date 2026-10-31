@@ -1,0 +1,2380 @@
+                               Agencia Tributaria
+                 www.agenciatributaria.es
+
+
+
+
+          ALGORITMO DE CÁLCULO
+
+DEL TIPO DE RETENCIÓN A CUENTA DEL IRPF
+
+         PARA LOS RENDIMIENTOS
+
+          DEL TRABAJO PERSONAL
+
+     EJERCICIO 2026 (a partir de 10 DE SEPTIEMBRE)
+
+
+
+
+                           DEPARTAMENTO DE INFORMÁTICA TRIBUTARIA
+                                  SUBDIRECCIÓN APLICACIONES
+                                Área de definiciones y programas de ayuda
+
+                                            10-09-2026 (SGTT)
+
+
+
+
+                         Página 1
+                                                            INDICE
+
+
+CONTENIDO                                                                                                       PÁGINA
+
+
+NORMATIVA APLICABLE................................................................................               3
+
+VALIDACIONES DE LOS DATOS DE ENTRADA..........................................                                    4
+
+CÁLCULO Y COMPUTO DE DESCENDIENTES.............................................                                   9
+
+CÁLCULO Y COMPUTO DE ASCENDIENTES................................................                                 16
+
+CÁLCULO DE GASTOS DEDUCIBLES............................................................                          21
+
+RENDIMIENTO NETO DEL TRABAJO...........................................................                           21
+
+REDUCCION POR OBTENCIÓN DE RENDIMIENTOS DEL TRABAJO......                                                         22
+
+RENDIMIENTO NETO DEL TRABAJO REDUCIDO.......................................                                      22
+
+REDUCCIÓN PENSIONISTA DE S. SOCIAL O C.PASIVAS...........................                                         22
+
+REDUCCIÓN MÁS DE DOS DESCENDIENTES...............................................                                 22
+
+REDUCCIÓN DESEMPLEADO...........................................................................                  23
+
+MÍNIMO PERSONAL Y FAMILIAR...................................................................                     24
+
+BASE PARA CALCULAR EL TIPO DE RETENCIÓN......................................                                     29
+
+CUOTA DE RETENCIÓN.....................................................................................           29
+
+TIPO DE RETENCIÓN..........................................................................................       34
+
+IMPORTE ANUAL DE LAS RETENCIONES E INGRESOS A CUENTA…....                                                         35
+
+REGULARIZACIÓN..............................................................................................      36
+
+DATOS DE ENTRADA.........................................................................................         40
+
+DATOS DE SALIDA..............................................................................................     43
+
+RESTO DE VARIABLES UTILIZADAS..............................................................                       48
+
+
+
+
+                                                              Página 2
+NORMATIVA APLICABLE
+
+Ley 35/2006 de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de
+modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no
+Residentes y sobre el Patrimonio (BOE de 29 de noviembre de 2006).
+
+Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto
+439/2007, de 30 de marzo, (BOE de 31 de marzo de 2007).
+
+
+ULTIMAS MODIFICACIONES NORMATIVAS:
+
+Ley 11/2020, de 30 de diciembre, de Presupuestos Generales del Estado para 2021, que modifica
+con efectos 1 de enero de 2021 y vigencia indefinida, el artículo 101.1 de la Ley 35/2006, en
+relación con la escala de retención aplicable a los rendimientos del trabajo.
+
+Sentencia del Tribunal Supremo (1219/2020, de 29 de septiembre) sobre aplicación proporcional de
+la deducción por obtención rentas en Ceuta y Melilla a contribuyente que ya era residente en esos
+territorios en el ejercicio anterior, pero pierde la residencia habitual en el último ejercicio. El T.S.
+considera que la citada deducción es aplicable proporcionalmente por el tiempo en que el
+contribuyente ha seguido teniendo su “residencia efectiva” en esos territorios (inferior a 183 días),
+aunque no coincida con el concepto de residencia habitual del art. 72 LIRPF.
+
+Real Decreto 899/2021, de 19 de octubre, por el que se modifica el Reglamento del Impuesto sobre
+la Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo, en materia
+de reducciones en la base imponible por aportaciones a sistemas de previsión social y pagos a
+cuenta.
+
+Ley 31/2022, de 23 de diciembre, de Presupuestos Generales del Estado para 2023:
+
+   -   Modifica con efectos 1 de enero de 2023, el artículo 20 de la Ley 35/2006, en relación con la
+       reducción aplicable a los rendimientos del trabajo (en cuanto afecta al cálculo de la base de
+       retención), e introduce un apartado 3 en la D.A. 47ª de la citada ley para establecer que estas
+       modificaciones normativas se aplicarán para el cálculo del tipo de retención en relación con
+       los rendimientos del trabajo que se satisfagan a partir del 1 de febrero de 2023,
+       regularizando si procede el tipo de retención aplicado en el mes de enero.
+
+   -   También con efectos desde 1 de enero de 2023,, añade una D.A. 57ª en la Ley 35/2006, de
+       28 de noviembre, en virtud de la cual, en los períodos impositivos 2022 y 2023, la
+       deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta Ley será aplicable,
+       en los términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la
+       isla de La Palma, debiendo entenderse, a estos efectos, que las referencias realizadas a Ceuta
+       y Melilla en dicho artículo y en su desarrollo reglamentario lo son a la isla de La Palma.
+
+Real Decreto 1039/2022, de 27 de diciembre, por el que se modifican el Reglamento del Impuesto
+sobre la Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo, y el
+Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de
+desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por
+el real Decreto 1065/2007, de 27 de julio; en virtud del cual, se modifican los límites excluyentes de
+la obligación de retener contemplados en el artículo 81.1, y el límite del artículo 85.3, ambos del
+Reglamento del IRPF. Estas modificaciones reglamentarias se aplicarán también para el cálculo del
+
+
+                                               Página 3
+tipo de retención en relación con los rendimientos del trabajo que se satisfagan a partir del 1 de
+febrero de 2023, regularizando, si procede, el tipo de retención aplicado en el mes de enero.
+
+Real Decreto 31/2023, de 24 de enero, por el que se modifica el Reglamento del Impuesto sobre la
+Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo, para dar
+cumplimiento a las medidas contenidas en el Estatuto del Artista en materia de retenciones.
+
+Real Decreto 1008/2023, de 5 de diciembre, por el que se modifican el reglamento del Impuesto
+sobre la Renta de las Personas Físicas aprobado por el Real Decreto 439/2007, de 30 de marzo, en
+materia de retribuciones en especie, deducción por maternidad, obligación de declarar, pagos a
+cuenta y régimen especial aplicable a trabajadores, profesionales, emprendedores e inversores
+desplazados a territorio español, y el Reglamento del Impuesto sobre Sociedades, aprobado por el
+Real Decreto 634/215, de 10 de julio, en materia de retenciones e ingresos a cuenta.
+
+Real Decreto 142/2024, de 6 de febrero, por el que se modifica el Reglamento del Impuesto sobre la
+Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de 30 de marzo, en materia
+de Retenciones e Ingresos a Cuenta.
+
+Este Reglamento actualiza los límites excluyentes de la obligación de retener contenidos en el
+apartado 1 del artículo 81 del Reglamento, para adaptarlos al incremento del Salario Mínimo
+Interprofesional aprobado para el año 2024 por el Real Decreto 145/2024, de 6 de febrero,
+modificando también de forma coordinada, la reducción a aplicar sobre los rendimientos netos del
+trabajo, contenida en la letra d) del apartado 3 del artículo 83 del Reglamento. De esta forma, no
+quedará sujeta a retención la percepción de rendimientos del trabajo por importe igual o inferior al
+salario mínimo interprofesional. Los rendimientos próximos a dicho SMI también se ven afectados
+por la nueva reducción que se establece ya que, en caso contrario, se produciría un error de salto.
+
+Estas medidas no solo afectan a sueldos y salarios, sino a cualquier tipo de rendimiento del trabajo,
+como podrían ser los perceptores de pensiones o prestaciones por desempleo.
+
+Real Decreto-Ley 4/2024, de 26 de junio, por el que se modifica la D.A. 57ª de la Ley 35/2006, del
+IRPF, ampliando con efectos de 1 de enero de 2024 la aplicación del régimen excepcional de
+reducción del tipo de retención a los contribuyentes con residencia habitual y efectiva en la Isla de
+la Palma, en los mismos términos y condiciones que para los contribuyentes con residencia habitual
+y efectiva en Ceuta y Melilla.
+
+Real Decreto-Ley 13/2025, de 25 de noviembre, por el que se modifica la D.A. 57ª de la Ley
+35/2006, del IRPF, ampliando con efectos desde su entrada en vigor y para el ejercicio 2025, la
+aplicación del régimen excepcional de reducción del tipo de retención a los contribuyentes con
+residencia habitual y efectiva en la Isla de la Palma, en los mismos términos y condiciones que para
+los contribuyentes con residencia habitual y efectiva en Ceuta y Melilla.
+
+Real Decreto-Ley 23/2026, de 8 de septiembre, por el que se modifica la D.A. 57ª de la Ley
+35/2006, del IRPF, ampliando con efectos a partir de su entrada en vigor, el 10 de septiembre,
+para el ejercicio 2026, la aplicación del régimen excepcional de reducción del tipo de retención a
+los contribuyentes con residencia habitual y efectiva en la Isla de la Palma, en los mismos términos
+y condiciones que para los contribuyentes con residencia habitual y efectiva en Ceuta y Melilla.
+
+
+
+
+                                              Página 4
+ VALIDACIONES DE LOS DATOS DE ENTRADA.
+
+ A. DATOS DE CUMPLIMENTACIÓN OBLIGATORIA.
+
+ 1.   NIF
+ 2.   AÑOPER
+ 3.   SITUFAM
+ 4.   NIFCON si SITUFAM = SITUACION2
+ 5.   SITUPER
+ 6.   CONTRATO si SITUPER = ACTIVO
+ 7.   RETRIB
+
+ B. VALIDACIONES DE LOS DATOS ADICIONALES CON LAS CAUSAS DE
+ REGULARIZACIÓN.
+
+ Si CAUSA1= S o CAUSA2=S o CAUSA3= S o CAUSA4=S CAUSA5= S o CAUSA6=S
+ CAUSA7= S o CAUSA8=S: PERCIBIDO, RETENIDO, RETRIBA, IMPORTEA, RENCEMEA,
+ BASEA, MINPERFAA, TIPOA, MINORADO, MINOPAGOA.
+
+ Else: Si CAUSA9 = S o CAUSA10 = S: PERCIBIDO, RETENIDO, RETRIBA, IMPORTEA,
+ RENCEMEA, MINORADO, MINOPAGOA.
+
+ Else: Si CAUSA11 = S: PERCIBIDO, RETENIDO.
+
+
+ C. INCIDENCIAS EN LA INTRODUCCIÓN DE LOS DATOS.
+
+1.    Si NIF = blancos o de persona jurídica: “NIF del perceptor obligatorio de persona física”
+2.    Si AÑOPER = 0: “Año de nacimiento del perceptor obligatorio”
+3.    Si SITUFAM = 0: “Situación familiar del perceptor obligatoria”
+4.    Si (NIFCON = blancos y SITUFAM = SITUACION2): “NIF del cónyuge obligatorio”
+5.    Si NIFCON no= blancos y SITUFAM no= SITUACION2: “NIF del cónyuge no debe tener contenido”
+6.    Si (DISCAPACITADO = N y DISCAPER no= SIN DISCAPACIDAD): “Si el perceptor no es persona
+      con discapacidad no puede tener contenido Discapacidad”.
+7.    Si (DISCAPACITADO = N y MOVILPER = S): “Si el perceptor no es persona con discapacidad no
+      puede tener contenido Movilidad reducida”.
+8.    Si (DISCAPER no= DE33A65 y MOVILPER = S): “Movilidad reducida incorrecta para Discapacidad
+      del perceptor”.
+9.    Si SITUPER = blancos: “Situación laboral del perceptor obligatoria”.
+10. Si (SITUPER = ACTIVO y CONTRATO = blancos): “Tipo de contrato obligatorio”.
+11. Si (SITUPER no= ACTIVO y CONTRATO no= blancos): “Tipo de contrato incorrecto para Situación
+      laboral del perceptor”.
+12. Si (SITUPER no= ACTIVO y MOVIL = S): “Movilidad geográfica incorrecta para Situación laboral del
+      perceptor”.
+13. Si (EDADES > 24 y DISCADES = SIN DISCAPACIDAD): “Descendientes de 25 o más años sin
+      discapacidad no dan derecho a mínimo”
+
+
+
+                                                    Página 5
+14. Si (NUMDES = 0 y SITUFAM = SITUACION1): “La situación familiar “1” exige que el contribuyente
+     tenga al menos un descendiente que dé derecho a la reducción de la tributación conjunta para familias
+     monoparentales”.
+15. Si (DISCADES no= DE33A65 y MOVILDES = S): “Movilidad reducida incorrecta para Discapacidad
+     del descendiente”.
+16. Si (EDADAS < 65 y DISCAS = SIN DISCAPACIDAD): “Ascendientes menores de 65 años sin
+     discapacidad no dan derecho a mínimo”.
+17. Si (DISCAS no= DE33A65 y MOVILAS = S): “Movilidad reducida incorrecta para Discapacidad del
+     ascendiente”.
+18. Si RETRIB = 0,00: “Las retribuciones totales son obligatorias”.
+19. Si IRREGULAR1 > 90.000,00: “La cuantía máxima de la reducción (art.º 18.2 LIRPF) no puede superar
+     el importe de 90.000 euros”
+20. Si IRREGULAR1> RETRIB x 0,30: “La cuantía máxima de la reducción (art.18.2 LIRPF) no puede
+     superar, con carácter general, el 30% de las retribuciones totales
+21. Si RETRIB ≥ 33.007,20 y PRESVIV= S: Las retribuciones totales anuales consignadas no son inferiores
+     a 33.007,20 €, por lo que en la pantalla de datos económicos deberá desactivarse la casilla relativa a los
+     pagos por préstamos destinados a la adquisición o rehabilitación de la vivienda habitual del perceptor “
+22. Si (REGULARIZACIÓN = N y PERCIBIDO > 0,00): “Retribuciones ya satisfechas con anterioridad a
+     la regularización incompatible con Regularización no cumplimentada”.
+23. Si (REGULARIZACIÓN = N y RETENIDO > 0,00): “Retenciones e ingresos a cuenta ya practicados
+     incompatible con Regularización no cumplimentada”.
+24. Si (REGULARIZACIÓN = N y RETRIBA > 0,00): “Retribuciones anuales consideradas con
+     anterioridad a la regularización incompatible con Regularización no cumplimentada”.
+25. Si (REGULARIZACIÓN = N y IMPORTEA > 0,00): “Retenciones totales anuales determinadas antes
+     de la regularización incompatible con Regularización no cumplimentada”.
+26. Si (REGULARIZACIÓN = N y RENCEMEA = S): “Los rendimientos anteriores a la regularización
+     fueron obtenidos en Ceuta o Melilla o Isla de la Palma incompatible con Regularización no
+     cumplimentada”.
+27. Si (REGULARIZACIÓN = N y BASEA > 0,00): “Base para calcular el tipo de retención determinada
+     antes de la regularización incompatible con Regularización no cumplimentada”.
+28. Si (REGULARIZACIÓN = N y MINPERFAA > 0,00): “Mínimo personal y familiar determinado antes
+     de la regularización incompatible con Regularización no cumplimentada”
+29. Si (REGULARIZACIÓN = N y TIPOA > 0,00): “Tipo de retención aplicado con anterioridad a la
+     regularización incompatible con Regularización no cumplimentada”.
+30. Si REGULARIZACIÓN = N y MINORADO = S: “Minoración por pagos de préstamos para vivienda
+     antes de la regularización incompatible con Regularización no cumplimentada”.
+31. Si (REGULARIZACIÓN = N y MINOPAGOA  0,00): “Importe de la minoración por pagos de
+     préstamos para vivienda antes de la regularización incompatible con Regularización no cumplimentada”.
+32. Si (REGULARIZACIÓN = N y CAUSA1 a CAUSA11 = S): “Si no hay Regularización no puede
+     seleccionar ninguna Causa de regularización”.
+33. Si (REGULARIZACIÓN = S y CAUSA11 = N y RETRIBA < PERCIBIDO): “Las Retribuciones ya
+     satisfechas con anterioridad a la regularización no pueden ser superiores a las Retribuciones anuales
+     consideradas con anterioridad”.
+34. Si (REGULARIZACIÓN = S y RETRIB ≤ PERCIBIDO): “Las Retribuciones totales consignadas en
+     Datos económicos (importes anuales) no pueden ser inferiores o iguales a las Retribuciones ya
+     satisfechas con anterioridad a la regularización”.
+
+
+                                                     Página 6
+35. Si (REGULARIZACION = S y CAUSA11 = N y RETRIBA = 0,00): “Las Retribuciones anuales
+      consideradas con anterioridad a la regularización son obligatorias”.
+36. Si (REGULARIZACION = S y PERCIBIDO = 0,00): “Las Retribuciones ya satisfechas con anterioridad
+      a la regularización son obligatorias”.
+37. Si (REGULARIZACION = S y CAUSA9 = N y CAUSA10 = N y CAUSA11 = N y MINPERFAA =
+      0,00): “Mínimo personal y familiar determinado antes de la regularización es obligatorio.”
+38. Si [ (REGULARIZACION = S) y (CAUSA1 a CAUSA11 = N)]: “No ha seleccionado ninguna causa de
+      regularización”.
+39. Si [ (REGULARIZACION = S) y (CAUSA1 = S) y (BASE=BASEA)]: “De los datos introducidos no se
+      desprende que se hayan producido variaciones en la base para determinar el tipo de retención, lo cual es
+      incompatible con la causa de regularización consignada”
+40. Si [ (REGULARIZACION = S) y (CAUSA2 = S) y (MINPERFA=MINPERFAA)]: “De los datos
+      introducidos no se desprende que se hayan producido variaciones en el mínimo personal y familiar para
+      determinar el tipo de retención, lo cual es incompatible con la causa de regularización consignada”.
+41. Si (REGULARIZACION = S y CAUSA3 = S y CONYUGE = 0,00): “No ha consignado el importe de la
+      Pensión compensatoria a favor del cónyuge”.
+42. Si (REGULARIZACION = S y CAUSA4 = S y ANUALIDADES = 0,00): “No ha consignado el
+      importe de las Anualidades por alimentos a favor de hijos”
+43. Si (REGULARIZACION = S y CAUSA5 = S y SITUFAM no= SITUACION3): “Si selecciona como
+      causa de regularización el cambio de la situación familiar “2” a la situación familiar “3”, sólo puede
+      seleccionar situación familiar “3”.
+44. Si (REGULARIZACION = S y CAUSA6 = S y CAUSA7 = S): “Ha seleccionado dos causas
+      incompatibles entre si”.
+45. Si (REGULARIZACION = S y CAUSA6 = S y CAUSA8 = S): “Ha seleccionado dos causas
+      incompatibles entre sí”.
+46. Si (REGULARIZACION = S y CAUSA7 = S y CAUSA8 = S): “Ha seleccionado dos causas
+      incompatibles entre sí”.
+47. Si (REGULARIZACION = S y CAUSA9 = S y CAUSA10 = S): “Ha seleccionado dos causas
+      incompatibles entre sí”.
+48. Si (REGULARIZACION = S y CAUSA9 = S y CAUSA1 a CAUSA8 = S y CAUSA11 = S): “Ha
+      seleccionado causas de regularización incompatibles entre sí”
+49.    Si (REGULARIZACION = S y CAUSA10 = S y CAUSA1 a CAUSA8 = S y CAUSA11 = S): “Ha
+      seleccionado causas de regularización incompatibles entre sí”
+50. Si REGULARIZACION = S y CAUSA9 = S                   y PRESVIV = N “Si el perceptor no comunica que
+      efectúa pagos por préstamos, la causa de regularización no puede ser la realización de pagos por
+      préstamos destinados para la adquisición de la vivienda habitual”.
+51. Si (REGULARIZACION = S y MINORADO = S y MINOPAGOA = 0): “Debe consignar el importe de
+      la minoración por pagos de préstamos para vivienda antes de la regularización”.
+52. Si     (REGULARIZACION = S y MINORADO= S y (MINOPAGOA > 660.14 o
+      MINOPAGOA>2,00%*RETRIBA)): “El importe de la minoración por pagos de préstamos para
+      vivienda determinado antes de la regularización no puede superar el 2 por 100 de las retribuciones totales
+      anuales determinadas antes de la regularización ni tampoco ser mayor de 660,14€”.
+53. Si REGULARIZACION = S y CAUSA9 = N y CAUSA 11 = N y PRESVIV = S y MINORADO= N):
+      “Si el perceptor ha comunicado que realiza pagos para el préstamo de su vivienda y antes de la
+      regularización no se aplicó minoración por dicho concepto por pagos, la causa de regularización debe ser
+      “El perceptor ha comunicado que realiza pagos por préstamos destinados a la adquisición o
+      rehabilitación de su vivienda habitual”.
+
+
+
+
+                                                    Página 7
+54. Si (REGULARIZACION = S y RESICEME = S y CAUSA6 = S): “Si el contribuyente tiene su
+     residencia habitual y efectiva en Ceuta o Melilla o Isla de la Palma, la causa de regularización no puede
+     ser la pérdida de la residencia habitual y efectiva en Ceuta o Melilla o Isla de la Palma”.
+55. Si (REGULARIZACION = S y RESICEME = N y CAUSA7 = S): “Si el contribuyente no tiene su
+     residencia habitual y efectiva en Ceuta o Melilla o Isla de la Palma, la causa de regularización no puede
+     ser la adquisición de la de la residencia habitual y efectiva en Ceuta o Melilla o Isla de la Palma”.
+56. Si (REGULARIZACION = S y RESICEME = N y CAUSA8 = S): “Si el contribuyente no tiene su
+     residencia habitual y efectiva en Ceuta o Melilla o Isla de la Palma, la causa de regularización no puede
+     ser Comenzar a realizar trabajos fuera de Ceuta o Melilla o Isla de la Palma por residentes en Ceuta o
+     Melilla o Isla de la Palma”.
+57. Si (REGULARIZACION = S y RENCEME = S y CAUSA8 = S): “Si el contribuyente obtiene
+     rendimientos en Ceuta o Melilla o Isla de la Palma, la causa de Regularización no puede ser comenzar a
+     realizar trabajos fuera de Ceuta o Melilla o Isla de la Palma”.
+58. Si (REGULARIZACION = S y RENCEMEA = N y CAUSA6 = S): “Si el contribuyente no obtenía
+     rendimientos en Ceuta o Melilla o Isla de la Palma con anterioridad a la regularización, no podrá
+     seleccionar como causa de regularización la pérdida de la residencia habitual y efectiva en Ceuta o
+     Melilla o Isla de la Palma”.
+59. Si (REGULARIZACION = S y RENCEMEA = N y CAUSA8 = S): “Si el contribuyente no obtenía
+     rendimientos en Ceuta o Melilla o Isla de la Palma con anterioridad a la regularización, la causa de ésta
+     no puede ser comenzar a realizar trabajos fuera de Ceuta o Melilla o Isla de la Palma”.
+60. Si (REGULARIZACIÓN = S y CAUSA9 = S y BASEA > 0,00): “Base para calcular el tipo de retención
+     determinada antes de la regularización incompatible con la causa de regularización consignada”.
+61. Si (REGULARIZACIÓN = S y CAUSA9 = S y MINPERFAA > 0,00): “Mínimo personal y familiar
+     determinado antes de la regularización incompatible con la causa de regularización consignada”.
+62. Si (REGULARIZACIÓN = S y CAUSA9 = S y TIPOA > 0,00): “Tipo de retención aplicado con
+     anterioridad a la regularización incompatible con la causa de regularización consignada”.
+63. Si (REGULARIZACIÓN = S y CAUSA10 = S y BASEA > 0,00): “Base para calcular el tipo de
+     retención determinada antes de la regularización incompatible con la causa de regularización
+     consignada”.
+64. Si (REGULARIZACIÓN = S y CAUSA10 = S y MINPERFAA > 0,00): “Mínimo personal y familiar
+     determinado antes de la regularización incompatible con la causa de regularización consignada”.
+65. Si (REGULARIZACIÓN = S y CAUSA10 = S y TIPOA > 0,00): “Tipo de retención aplicado con
+     anterioridad a la regularización incompatible con la causa de regularización consignada”.
+66. Si (REGULARIZACIÓN = S y CAUSA11 = S y IMPORTEA > 0,00): “Retenciones totales anuales
+     determinadas antes de la regularización incompatible con Otras causas de regularización”.
+67. Si (REGULARIZACIÓN = S y CAUSA11 = S y BASEA > 0,00): “Base para calcular el tipo de
+     retención determinada antes de la regularización incompatible con Otras causas de regularización”.
+68. Si (REGULARIZACIÓN = S y CAUSA11 = S y MINPERFAA > 0,00): “Mínimo personal y familiar
+     determinado antes de la regularización incompatible con Otras causas de regularización”.
+69. Si (REGULARIZACIÓN = S y CAUSA11 = S y TIPOA > 0,00): “Tipo de retención aplicado con
+     anterioridad a la regularización incompatible con Otras causas de regularización”.
+70. Si (REGULARIZACIÓN = S y CAUSA11 = S y RETRIBA > 0,00): “Retribuciones anuales
+    consideradas con anterioridad a la regularización incompatible con Otras causas de regularización”.
+71. Si (REGULARIZACIÓN = S y CAUSA11 = S y RENCEMEA = S): “Los rendimientos anteriores a la
+    regularización fueron obtenidos en Ceuta o Melilla o Isla de la Palma incompatible con Otras causas de
+    regularización”.
+72. Si (REGULARIZACIÓN = S y CAUSA11 = S y MINORADO = S): “En algún momento antes de la
+    regularización se aplicó minoración por pagos de préstamos para vivienda es incompatible con otras
+    causas de regularización”.
+
+
+
+                                                   Página 8
+73. Si (REGULARIZACIÓN = S y CAUSA11 = S y MINOPAGOA  0,00) : “Importe de la minoración por
+    pagos de préstamos para vivienda determinado antes de la regularización es incompatible con otras
+    causas de regularización”.
+74. Si (REGULARIZACIÓN = S y CAUSA11 = S y CAUSA1 a CAUSA10 = S): “Ha seleccionado causas
+    de regularización incompatibles entre sí”
+75. Si (REGULARIZACION =S y RETRIB>RETRIBA y (CAUSA9 = S o CAUSA10 = S)): “La causa de
+    regularización consignada es incompatible con el aumento del importe de las retribuciones totales
+    anuales. En consecuencia, deberán efectuarse dos regularizaciones sucesivas: la primera por la causa
+    consignada, sin considerar el aumento de retribuciones, y la segunda, por la causa de regularización
+    correspondiente a dicho aumento”.
+76. Si (REGULARIZACION =S y RETRIB<RETRIBA y (CAUSA9 = S o CAUSA10 = S)): “La causa de
+    regularización consignada es incompatible con la disminución del importe de las retribuciones totales
+    anuales. En consecuencia, deberán efectuarse dos regularizaciones sucesivas: la primera por la causa de
+    regularización correspondiente a la disminución de retribuciones, y la segunda, por la causa de
+    regularización consignada”.
+77. Si (REGULARIZACION = S y PRESVIV= S y CAUSA10 = S): “La causa de regularización consignada
+    es incompatible con la activación de la casilla de la pantalla de Datos Económicos relativa a los pagos
+    por préstamos destinados a la vivienda habitual del perceptor. En consecuencia, deberá desactivarse
+    dicha casilla”.
+78. Si (REGULARIZACION = S y CAUSA10 = S y MINORADO= N y MINOPAGOA = 0): “Si la causa
+    de regularización es la 10 debe indicar, que en algún momento se aplicó la minoración por pagos y
+    consignar el importe de la misma anteriormente determinado”.
+79. Si [REGULARIZACION = S y CAUSA10 = N y PRESVIV = N y (MINOPAGOA > 2,00% *
+    PERCIBIDO)]: “El importe de la minoración por pagos de préstamos para vivienda determinado antes
+    de la regularización no puede superar el 2 por 100 de las retribuciones ya satisfechas con anterioridad a
+    la regularización”.
+80. Si (REGULARIZACION = S y MINOPAGOA ≠ 0 y MINOPAGO < 0): La cantidad consignada en
+    importe de la minoración por pagos de préstamos para la vivienda determinado antes de la regularización
+    es incorrecta.
+81. Si (CONTRATO = INFERIOR AÑO): MOSTRAR AVISO: “Recuerde que, en el caso de renovaciones
+    de contratos temporales, las retribuciones anuales totales han de incluir las cantidades satisfechas con
+    anterioridad a lo largo del ejercicio”.
+
+
+
+
+                                                  Página 9
+NOTA IMPORTANTE PARA EL CÁLCULO
+Todas las variables que intervienen en los cálculos se utilizan con el máximo número de decimales,
+excepto en las que explícitamente se utilicen las funciones de REDONDEAR o TRUNCAR
+incluidas en el algoritmo.
+
+
+CALCULO Y COMPUTO DE DESCENDIENTES
+
+
+** Ordenar descendientes por orden creciente de AÑODES
+
+
+
+
+** Cálculo de la edad del descendiente
+
+
+    EDADES = 2026 – AÑODES
+
+
+
+** Cómputo de descendientes
+
+
+   Si POR ENTERO = S: ENTERO = 1
+
+
+   Else: ENTERO = 0,5
+
+
+   Finsi.
+
+
+
+
+** Cálculo del número de descendientes
+
+   Si AÑODES (1) > 0 : i = 1
+                        NUMDES = 0
+
+
+        Repetir:
+
+
+            NUMDES = NUMDES + 1
+
+
+            i = i +1
+
+
+        Hasta: AÑODES (i) = 0 ó i = 17
+
+
+   Finsi.
+
+
+
+
+                                               Página 10
+** Cálculo del número total de descendientes menores de 3 años (incluidos adoptados y acogidos hace menos de 3
+años) y de 3 a 25 años (Resto):
+
+
+   Si NUMDES > 0:          i=1
+                           NUMDES3 = 0
+                           NUMDES325 = 0
+
+
+   Repetir:
+              Si [EDADES (i) < 3 ] ó [AÑOADOP (i) > 2023]:      NUMDES3 = NUMDES3 + 1
+
+
+                   Hasta: NUMDES3 = 0 ó = 10
+                   Si NUMDES3 = 11  ERROR: “El número de descendientes menores de 3 años no puede ser
+                   superior a 9”.
+
+
+              Else: Si [EDADES (i) ≥ 3 y EDADES (i) < 25] o [EDADES (i) > 25 y DISCADES ≠ SIN
+              DISCAPACIDAD] :                                   NUMDES325 = NUMDES325 + 1
+
+
+              Finsi.
+
+
+              i = i +1
+      Hasta: i = NUMDES + 1
+   Finsi.
+
+
+
+
+** Cálculo del número de descendientes menores de 3 años (incluidos adoptados y acogidos hace menos de 3
+años) computados por entero:
+
+
+   Si NUMDES3 > 0:         i=1
+                           NUMDES3EN = 0
+        Repetir:
+               Si ENTERO (i) = 1         NUMDES3EN = NUMDES3EN + 1
+               i = i +1
+
+
+            Hasta: i = NUMDES3 + 1
+
+
+   Finsi.
+
+
+
+
+                                                  Página 11
+** Cálculo del número total del resto de descendientes computados por entero:
+
+
+
+   Si NUMDES325 > 0: i = 1
+                           NUMDES325EN = 0
+
+
+
+
+           Repetir:
+
+
+                Si ENTERO (i) = 1       NUMDES325EN = NUMDES325EN + 1
+
+
+                i = i +1
+
+
+           Hasta: i = NUMDES325 + 1
+
+
+  Finsi.
+
+
+
+
+** Detalle del cómputo del Hijo 1º
+
+
+    Si ENTERO= 1: COMHIJO1 = POR ENTERO
+
+
+   Else: COMHIJO1 = POR MITAD
+
+
+
+
+** Detalle del cómputo del Hijo 2º
+
+
+   Si ENTERO = 1: COMHIJO2 = POR ENTERO
+
+
+   Else: COMHIJO2 = POR MITAD
+
+
+
+
+** Detalle del cómputo del Hijo 3º
+
+
+   Si ENTERO = 1: COMHIJO3 = POR ENTERO
+
+
+   Else: COMHIJO3 = POR MITAD
+
+
+
+
+                                                  Página 12
+** Cálculo del número total 4º y sucesivos descendientes
+
+
+   Si NUMDES > 3:          i=1
+                           NUMDESMAS3 = 0
+
+
+           Repetir:
+
+
+              NUMDESMAS3 = NUMDESMAS3 + 1
+
+
+               i = i +1
+
+
+           Hasta: AÑODES (i) = 0 ó i = 13
+
+
+  Finsi.
+
+
+
+
+** Cálculo del número total 4º y sucesivos descendientes computados por entero
+
+
+
+
+   Si NUMDESMAS3 > 0:               i=1
+                                    NUMDESMAS3EN = 0
+
+
+           Repetir:
+
+
+                Si ENTERO (i) = 1           NUMDESMAS3EN = NUMDESMAS3EN + 1
+
+
+                i = i +1
+
+
+           Hasta: i = NUMDESMAS3 + 1
+ Finsi.
+
+
+
+
+                                                   Página 13
+** Cálculo del número total de descendientes con discapacidad ≥33% y < 65%
+
+   Si DISCADES = DE33A65:          i=1
+                                   NUMDES3365 = 0
+
+
+          Repetir:
+
+
+             NUMDES3365 = NUMDES3365 + 1
+
+
+              i = i +1
+
+
+          Hasta: AÑODES (i) = 0 ó i = 17
+ Finsi.
+
+
+
+
+** Cálculo del número de descendientes con discapacidad ≥33% y < 65% computados por entero
+
+   Si NUMDES3365 > 0:              i=1
+                                   NUMDES3365EN = 0
+
+
+
+
+          Repetir:
+
+
+               Si ENTERO (i) = 1           NUMDES3365EN = NUMDES3365EN + 1
+
+
+               i = i +1
+
+
+          Hasta: i = NUMDES3365 + 1
+    Finsi.
+
+
+
+
+                                                    Página 14
+** Cálculo del número total de descendientes con movilidad reducida
+
+NUMDESMOV = 0
+Si NUMDES > 0
+      i=1
+      Repetir:
+        Si MOVILDES (i) = S
+               NUMDESMOV = NUMDESMOV + 1
+        Finsi
+        i=i+1
+      Hasta: AÑODES(i) = 0 o i = 17
+Finsi
+
+
+
+
+** Cálculo del número de descendientes con movilidad reducida computados por entero
+
+   Si NUMDESMOV > 0:             i=1
+                                 NUMDESMOVEN = 0
+
+
+
+
+        Repetir:
+
+
+             Si ENTERO (i) = 1         NUMDESMOVEN = NUMDESMOVEN + 1
+
+
+             i = i +1
+
+
+         Hasta: i = NUMDESMOV + 1
+    Finsi.
+
+
+
+
+                                                  Página 15
+** Cálculo del número total de descendientes con discapacidad ≥65%
+
+   Si DISCADES = DESDE65:          i=1
+                                   NUMDES65 = 0
+
+
+          Repetir:
+
+
+             NUMDES65 = NUMDES65 + 1
+
+
+              i = i +1
+
+
+          Hasta: AÑODES (i) = 0 ó i = 17
+ Finsi.
+
+
+
+
+** Cálculo del número de descendientes con discapacidad ≥ 65% computados por entero
+
+   Si NUMDES65 > 0:                i=1
+                                   NUMDES65EN = 0
+
+
+
+
+          Repetir:
+
+
+               Si ENTERO (i) = 1           NUMDES65EN = NUMDES65EN + 1
+
+
+               i = i +1
+
+
+          Hasta: i = NUMDES65 + 1
+    Finsi.
+
+
+
+
+                                                  Página 16
+CALCULO Y COMPUTO DE ASCENDIENTES
+
+** Cálculo de la edad del ascendiente
+
+
+
+   EDADAS = 2026 – AÑOAS
+
+
+
+
+** Cálculo del número de ascendientes
+
+
+   Si AÑOAS (1) > 0:       j=1
+                           NUMAS = 0
+
+
+         Repetir:
+
+
+            NUMAS = NUMAS + 1
+
+
+            j = j +1
+
+
+         Hasta: AÑOAS (j) = 0 ó j = 7
+
+
+   Finsi.
+
+
+** Cálculo del número total de ascendientes menores de 75 años y mayores de 75 años:
+
+
+   Si NUMAS > 0:           j=1
+                           NUMAS65A = 0
+                           NUMAS75A = 0
+
+
+          Repetir:
+
+
+              Si [EDADAS (j) > 74]]:      NUMAS75A = NUMAS75A + 1
+
+
+              Else: Si [EDADAS (j) ≤ 74 y EDADAS (j) > 64] o [EDADAS (j) < 64 y DISCAS ≠ SIN
+              DISCAPACIDAD]:              NUMAS65A = NUMAS65A + 1
+
+
+              Finsi.
+
+
+              j = j +1
+
+
+         Hasta: j = NUMAS + 1
+
+
+Finsi.
+
+
+                                                  Página 17
+** Cálculo del número total de ascendientes menores de 75 años computados por entero:
+
+
+   Si NUMAS65A > 0: j = 1
+                         NUMAS65AEN = 0
+
+
+
+
+         Repetir:
+
+
+              Si CONVIVENCIA (j) = 1           NUMAS65AEN = NUMAS65AEN + 1
+
+
+              j = j +1
+
+
+         Hasta: j = NUMAS65A + 1
+
+
+Finsi.
+
+
+
+
+** Cálculo del número total de ascendientes mayores de 75 años computados por entero:
+
+
+   Si NUMAS75A > 0: j = 1
+                         NUMAS75AEN = 0
+
+
+
+
+         Repetir:
+
+
+              Si CONVIVENCIA (j) = 1           NUMAS75AEN = NUMAS75AEN + 1
+
+
+              j = j +1
+
+
+         Hasta: j = NUMAS75A + 1
+
+
+Finsi.
+
+
+
+
+                                                  Página 18
+** Cálculo del número total de ascendientes con discapacidad ≥33% y < 65%
+
+   Si DISCAS = DE33A65:            j=1
+
+                                   NUMAS3365 = 0
+
+
+          Repetir:
+
+
+             NUMAS3365 = NUMAS3365 + 1
+
+
+              j = j +1
+
+
+          Hasta: AÑOAS (j) = 0 ó j = 7
+ Finsi.
+
+
+
+
+** Cálculo del número de ascendientes con discapacidad ≥ 33% y < 65% computados por entero
+
+   Si NUMAS3365 > 0:               j=1
+                                   NUMAS3365EN = 0
+
+
+
+
+          Repetir:
+
+
+               Si CONVIVENCIA (j) = 1          NUMAS3365EN = NUMAS3365EN+ 1
+
+
+               j = j +1
+
+
+          Hasta: j = NUMAS3365 + 1
+    Finsi.
+
+
+
+
+                                                   Página 19
+** Cálculo del número total de ascendientes con movilidad reducida
+
+NUMASMOV = 0
+Si NUMAS > 0
+      j=1
+      Repetir:
+        Si MOVILAS (j) = S
+               NUMASMOV = NUMASMOV + 1
+        Finsi
+        j=j+1
+      Hasta: AÑOAS(j) = 0 o j = 7
+Finsi
+
+
+
+
+** Cálculo del número de ascendientes con movilidad reducida computados por entero
+
+   Si NUMASMOV > 0: j = 1
+                               NUMASMOVEN = 0
+
+
+
+
+        Repetir:
+
+
+             Si CONVIVENCIA (j) = 1            NUMASMOVEN = NUMASMOVEN + 1
+
+
+             j = j +1
+
+
+         Hasta: i = NUMASMOV + 1
+    Finsi.
+
+
+
+
+                                                  Página 20
+** Cálculo del número total de ascendientes con discapacidad ≥65%
+
+   Si DISCAS = DESDE65:              j=1
+                                     NUMAS65 = 0
+
+
+        Repetir:
+
+
+              NUMAS65 = NUMAS65 + 1
+
+
+               j = j +1
+
+
+        Hasta: AÑOAS (j) = 0 ó j = 7
+   Finsi.
+
+
+
+
+** Cálculo del número de ascendientes con discapacidad ≥ 65% computados por entero
+
+   Si NUMAS65 > 0:                   j=1
+                                     NUMAS65EN = 0
+
+
+
+
+        Repetir:
+
+
+                Si CONVIVENCIA (i) = 1             NUMAS65EN = NUMAS65EN + 1
+
+
+                j = j +1
+
+
+            Hasta: i = NUMAS65 + 1
+    Finsi.
+
+
+
+
+                                                     Página 21
+CÁLCULO DE LOS GASTOS DEDUCIBLES
+
+OTROS GASTOS
+
+A. CON CARÁCTER GENERAL
+
+
+GASTOSGEN = 2.000,00
+
+
+B. INCREMENTO POR MOVILIDAD GEOGRAFICA
+
+
+Si MOVIL = S: INCREGASMOVIL = 2.000,00
+
+
+Else: INCREGASMOVIL = 0.00
+
+
+Finsi
+
+
+C. INCREMENTO PARA TRABAJADORES ACTIVOS CON DISCAPACIDAD
+
+Si SITUPER = ACTIVO:
+   Si [DISCAPER = DESDE65 ó (DISCAPER = DE33A65 y MOVILPER = S)]: INCREGASDISTRA = 7.750,00
+   Else: Si DISCAPER = DE33A65: INCREGASDISTRA = 3.500,00
+   Else: INCREGASDISTRA= 0,00
+
+
+Else: INCREGASDISTRA= 0,00
+
+
+Finsi
+
+D. TOTAL OTROS GASTOS
+
+OTROSGASTOS = GASTOSGEN + INCREGASMOVIL + INCREGASDISTRA
+
+SI RETRIB – COTIZACIONES < 0: OTROSGASTOS = 0
+
+
+SI OTROSGASTOS > RETRIB – COTIZACIONES: OTROSGASTOS = RETRIB – COTIZACIONES
+
+
+Finsi.
+
+
+GASTOS DEDUCIBLES
+
+GASTOS = COTIZACIONES + OTROSGASTOS
+
+
+
+RENDIMIENTO NETO DEL TRABAJO (a efectos del cálculo de la reducción por obtención
+de rendimientos del trabajo).
+
+RNT = RETRIB – IRREGULAR1 – IRREGULAR2 – COTIZACIONES
+
+
+Si RNT < 0: RNT = 0
+
+
+
+                                            Página 22
+REDUCCIÓN POR OBTENCIÓN DE RENDIMIENTOS DEL TRABAJO
+
+REDUCCIÓN DE CARÁCTER GENERAL (art. 20 LIRPF, según RD-Ley 4/2024, y art. 83.3.d) RIRPF)
+
+
+Si RNT ≤ 14.852,00: RED20 = 7.302,00
+
+
+Else: Si 14.852,00 < RNT ≤ 17.673,52: RED20 = 7.302,00 - [1,75 * (RNT- 14.852,00)]
+
+
+Else: Si 17.673,52 < RNT < 19.747,50: RED20 = 2.364,34 - [1,14 * (RNT- 17.673,52)]}
+
+
+Else: RED20 = 0,00
+
+
+Finsi.
+
+Se define la función REDONDEAR1 (...), consistente en redondear al segundo decimal magnitudes que se
+consideran “finales”, en aplicación de la normativa sobre introducción del EURO, y teniendo en cuenta que
+0,005 se redondea a 0,01.
+
+RED20 = REDONDEAR1 (RED20)
+
+
+RENDIMIENTO NETO REDUCIDO
+RNTREDU = RNT – OTROSGASTOS - RED20
+Si RNTRDU < 0 : RNTREDU = 0
+
+
+
+REDUCCIÓN PENSIONISTA DE LA S. SOCIAL O CLASES PASIVAS
+Si SITUPER = PENSIONISTA: PENSION = 600,00
+
+Else: PENSION = 0,00
+
+Finsi.
+
+
+REDUCCIÓN MAS DE DOS DESCENDIENTES
+Si NUMDES > 2: HIJOS = 600,00
+
+Else: HIJOS = 0,00
+
+Finsi
+
+
+REDUCCIÓN POR SER DESEMPLEADO
+
+Si SITUPER = DESEMPLEADO: DESEM = 1.200,00
+
+Else: DESEM= 0,00
+
+Finsi.
+
+
+                                                   Página 23
+MÍNIMO PERSONAL Y FAMILIAR
+A. MÍNIMO DEL CONTRIBUYENTE
+
+  A1.CON CARÁCTER GENERAL
+
+     MINPER = 5.550,00
+
+
+  A2. SI EDAD ≥ 65
+
+     Si (2026 – AÑOPER) > 64: 65PER = 1.150,00
+
+     Else: 65PER = 0,00
+
+     Finsi.
+
+  A3. SI EDAD ≥ 75
+
+     Si (2026 – AÑOPER) >74: 75PER = 1.400,00
+
+     Else: 75PER = 0,00
+
+     Finsi
+
+MINCON= MINPER + 65PER + 75PER
+
+
+
+B. MINIMO POR DESCENDIENTES < 25 AÑOS Ó CON DISCAPACIDAD
+
+  B1. CON CARÁCTER GENERAL
+
+      Si AÑODES (1) > 0 :      i=1
+                               MINDESG = 0,00
+
+        Repetir:
+               Si i = 1: MINDESG = 2.400,00 * ENTERO (i)
+
+              Else: Si i = 2: MINDESG = MINDESG + [2.700,00 * ENTERO (i)]
+
+              Else: Si i = 3: MINDESG = MINDESG + [4.000,00 * ENTERO (i)]
+
+              Else: MINDESG = MINDESG + [4.500,00 * ENTERO (i)]
+
+              Finsi.
+
+               i = i +1
+
+         Hasta: AÑODES (i) = 0 ó i = 17
+
+     Finsi.
+
+
+  MINDESG = REDONDEAR1 (MINDESG)
+
+
+
+
+                                                 Página 24
+  B2. DESCENDIENTES < 3 AÑOS
+
+      Si NUMDES > 0:           i=1
+                               MINDES3 = 0,00
+
+        Repetir:
+
+          Si AÑODES (i) > 2023: MINDES3 = MINDES3 + [2.800,00 * ENTERO (i)]
+
+          Else: Si {[AÑOADOP (i ) ≥ AÑODES (i)] y [ AÑOADOP (i) > 2023 ]}:
+
+                               MINDES3 = MINDES3 + [2.800,00 * ENTERO (i)]
+
+               Finsi.
+
+          Finsi.
+
+           i = i +1
+
+        Hasta: i = NUMDES + 1
+
+      Finsi.
+
+      MINDES3= REDONDEAR1 (MINDES3)
+
+   MINDES = MINDESG + MINDES3
+
+
+
+
+C.MÍNIMO POR ASCENDIENTES ≥ 65 AÑOS O CON DISCAPACIDAD
+
+
+C1. ASCENDIENTES ≥ 65 AÑOS O CON DISCAPACIDAD
+
+
+
+      Si NUMAS65A o NUMAS75A > 0:                 j=1
+                                                 65AS = 0,00
+
+          Repetir:
+
+               65AS = 65AS + [1.150,00 / CONVIVENCIA (j)]
+
+               j = j +1
+
+
+          Hasta: j = NUMAS65A + NUMAS75A + 1
+
+
+      Finsi.
+
+      65AS = REDONDEAR1 (65AS)
+
+
+
+
+                                                   Página 25
+  C2. ASCENDIENTES ≥ 75 AÑOS
+
+
+    Si NUMAS75A > 0:            j=1
+                                75AS = 0,00
+
+
+       Repetir:
+
+                 75AS = 75AS + [1.400,00 / CONVIVENCIA (j)]
+
+             Finsi.
+
+             j = j +1
+
+        Hasta: j = NUMAS75A + 1
+
+    Finsi.
+
+    75AS = REDONDEAR1 (75AS)
+
+  MINAS = 65AS +75AS
+
+
+
+D. MINIMO POR DISCAPACIDAD
+
+
+  D1. DISCAPACIDAD DEL CONTRIBUYENTE
+
+  ** Contribuyente con discapacidad
+      Si DISCAPER = DESDE65: DISPER = 9.000,00
+
+     Else: Si DISCAPER = DE33A65: DISPER = 3.000,00
+
+     Else: DISPER = 0,00
+
+     Finsi
+
+  ** Gastos de asistencia contribuyente
+      Si [DISCAPER = DESDE65 ó (DISCAPER = DE33A65 Y MOVILPER = S)]: ASISPER = 3.000,00
+
+     Else: ASISPER = 0,00
+
+     Finsi
+
+  MINDISC = DISPER + ASISPER
+
+
+
+
+                                                 Página 26
+D2. DISCAPACIDAD DE DESCENDIENTES Y ASCENDIENTES
+
+** Descendiente con discapacidad
+
+   Si NUMDES3365 > 0 ó NUMDES65 > 0:                  i=1
+                                                      DISDES = 0,00
+
+
+       Repetir:
+
+             Si DISCADES (i) = DESDE65:    DISDES = DISDES + [ 9.000,00 * ENTERO (i) ]
+
+
+             Else: Si DISCADES (i) = DE33A65:         DISDES = DISDES + [ 3.000,00 * ENTERO (i) ]
+
+
+             Finsi.
+
+             i = i +1
+
+       Hasta: i = NUMDES3365 +NUMDES65 + 1
+
+   Finsi.
+
+   DISDES = REDONDEAR1 (DISDES)
+
+
+
+** Ascendiente con discapacidad
+
+
+   Si NUMAS3365 > 0 ó NUMAS65 > 0:                    j=1
+                                                      DISAS = 0,00
+
+       Repetir:
+
+             Si DISCAS (j) = DESDE65:      DISAS = DISAS + [9.000,00 / CONVIVENCIA (j)]
+
+             Else: Si DISCAS (j) = DE33A65: DISAS = DISAS + [3.000,00 / CONVIVENCIA (j)]
+
+
+             Finsi.
+
+             j = j +1
+
+       Hasta: j = NUMAS3365 +NUMAS65 + 1
+
+   Finsi.
+
+   DISAS = REDONDEAR1 (DISAS)
+
+
+
+
+                                                Página 27
+  ** Gastos asistencia descendiente
+
+
+     Si NUMDESMOV > 0 o NUMDES65 > 0:              i=1
+                                                   ASISDES = 0,00
+
+       Repetir:
+
+                  Si DISCADES (i) = DESDE65:       ASISDES = ASISDES + [ 3.000,00 * ENTERO (i)]
+
+                  Else:      Si [DISCADES (i) = DE33A65 y MOVILDES (i) = S]:
+                                                   ASISDES = ASISDES + [3.000,00 * ENTERO (i)]
+
+
+                             Finsi.
+
+                  Finsi.
+
+                  i = i +1
+
+      Hasta: i = NUMDESMOV + NUMDES65 + 1
+
+     Finsi.
+
+     ASISDES = REDONDEAR1 (ASISDES)
+
+  ** Gastos asistencia ascendiente
+
+     Si NUMASMOV > 0 o NUMAS65 > 0: j = 1
+                                    ASISAS = 0,00
+
+       Repetir:
+
+                  Si DISCAS (j) = DESDE65:         ASISAS = ASISAS + [3.000,00 / CONVIVENCIA (j)]
+
+                  Else:      Si [DISCAS (j) = DE33A65 Y MOVILAS (j) = S]:
+                                                   ASISAS = ASISAS + [3.000,00 / CONVIVENCIA (j)]
+
+                             Finsi.
+
+                  Finsi.
+
+                  j = j +1
+
+      Hasta: j = NUMASMOV + NUMAS65 + 1
+
+     Finsi.
+
+     ASISAS = REDONDEAR1 (ASISAS)
+
+  MDISDEAS = DISDES + DISAS + ASISDES + ASISAS
+
+ MINDIS= MINDISC + MDISDEAS
+
+MINPERFA = MINCON + MINDES + MINAS + MINDIS
+
+
+
+
+                                                     Página 28
+BASE PARA CALCULAR EL TIPO DE RETENCION.
+
+** Suma de reducciones:
+
+   REDU = PENSION + HIJOS + DESEM + CONYUGE
+
+
+** Cálculo de la base:
+
+   Si RNTREDU > REDU : BASE = RNTREDU – REDU
+
+   Else: BASE = 0,00
+
+   Finsi.
+
+
+CUOTA DE RETENCIÓN
+
+A. RENDIMIENTOS EXENTOS DE RETENCIÓN
+
+Según TABLA 1
+
+            TABLA 1 - LIMITES EXCLUYENTES DE RETENCIÓN
+             Art. 81 RIRPF (según modif. Real Decreto 142/2024, de 6 de febrero):
+
+
+               SITUACIÓN             Número de descendientes
+               FAMILIAR             0         1         2 ó más
+               SITUACIÓN 1         ---     17.644       18.694
+               SITUACIÓN 2       17.197    18.130       19.262
+               SITUACIÓN 3       15.876    16.342       16.867
+
+
+
+Si RETRIB ≤ (19.262,00 + PENSION + DESEM):
+
+   Si SITUFAM = SITUACION1:
+
+            Si [NUMDES = 1 y RETRIB ≤ (17.644,00 + PENSION + DESEM)]: EXENTOS = S
+
+            Else: Si [NUMDES > 1 y RETRIB ≤ (18.694,00 + PENSION + DESEM)]: EXENTOS = S
+
+            Finsi.
+
+
+   Else: Si SITUFAM = SITUACION2:
+
+            Si [NUMDES = 0 y RETRIB ≤ (17.197,00 + PENSION + DESEM)]: EXENTOS = S
+
+            Else: Si [NUMDES = 1 y RETRIB ≤ (18.130,00 + PENSION + DESEM)]: EXENTOS = S
+
+            Else: Si [NUMDES > 1 y RETRIB ≤ (19.262,00 + PENSION + DESEM)]: EXENTOS = S
+
+            Finsi.
+
+
+
+
+                                                      Página 29
+   Else: Si SITUFAM = SITUACION3:
+
+             Si [NUMDES = 0 y RETRIB ≤ (15.876,00 + PENSION + DESEM)]: EXENTOS = S
+
+             Else: Si [NUMDES = 1 y RETRIB ≤ (16.342,00 + PENSION + DESEM)]: EXENTOS = S
+
+             Else: Si [NUMDES > 1 y RETRIB ≤ (16.867,00 + PENSION + DESEM)]: EXENTOS = S
+
+             Finsi.
+
+          Finsi.
+
+    Finsi.
+
+
+Si EXENTOS = S:            CUOTA = 0,00
+
+                           TIPO = 0,00
+
+                           Ir a           1
+Finsi.
+
+
+
+
+B. RENDIMIENTOS SUJETOS A RETENCIÓN
+
+
+   B1. CUOTA1
+
+   ** Calculo de la cuota 1. Función ESCALA (BASE ...): Consiste en la aplicación de la
+   TABLA 2.
+
+
+             Ejemplo:      Para una base de 24.000,00:
+
+                           Hasta 20.200,00: 4.225,50
+
+                           Resto: 24.000,00 – 20.200,00 = 3.800,00: 3.800,00* 0,30 = 1.140,00
+
+                           CUOTA 1= 4.225,50 + 1.140, 00 = 5.365,50
+
+
+
+         TABLA 2 - ESCALA DE RETENCIÓN
+
+                                                Resto BASE
+             BASE hasta           Cuota                              Porcentaje
+                                                hasta
+             0,00                 0,00          12.450,00            19,00
+             12.450,00            2.365,50      7.750,00             24,00
+             20.200,00            4.225,50      15.000,00            30,00
+             35.200,00            8.725,50      24.800,00            37,00
+             60.000,00            17.901,50     240.000,00           45,00
+             300.000,00           125.901,50    En adelante          47,00
+
+
+
+
+                                                         Página 30
+  ** Anualidades:                      Si [ANUALIDADES > 0,00 y (BASE – ANUALIDADES) > 0,00]:
+
+                                                BASE1 = BASE – ANUALIDADES
+
+                                                BASE2 = ANUALIDADES
+
+                                                CUOTA1.1 = ESCALA (BASE1)
+
+                                                CUOTA1.2 = ESCALA (BASE2)
+
+                                                CUOTA1 = CUOTA1.1+ CUOTA1.2
+
+
+  ** Anualidades = 0,00 ó ≥ BASE:      Else:    CUOTA1 = ESCALA (BASE)
+
+                                       Finsi.
+
+
+
+B2. CUOTA2
+
+  ** Calculo de la cuota 2. Función ESCALA (MINPERFA...): Consiste en la aplicación de la
+  TABLA 2
+
+
+  ** Anualidades:                      Si [ANUALIDADES > 0,00 y (BASE – ANUALIDADES) > 0,00]:
+
+                                                CUOTA 2 = ESCALA (MINPERFA + 1.980)
+
+  ** Anualidades = 0,00 ó ≥ BASE:      Else:    CUOTA2 = ESCALA (MINPERFA)
+
+                                       Finsi.
+
+
+B3. CUOTA
+
+  ** Cálculo de la cuota:
+
+
+     Si CUOTA 1 > CUOTA 2: CUOTA = CUOTA1 - CUOTA2
+
+     Else: CUOTA = 0,00
+
+     Finsi.
+
+
+  ** Límite del 43 % (art. 85.3 RIRPF, según modif R.D. 1039/2022):
+
+     Si RETRIB ≤ 35.200,00:
+
+        Si SITUFAM = SITUACION1:
+
+              Si NUMDES = 1: LIMITE = [RETRIB - (17.644,00 + PENSION + DESEM)] * 0,43
+
+              Else: Si NUMDES > 1: LIMITE = [RETRIB - (18.694,00 + PENSION + DESEM)] * 0,43
+
+              Finsi.
+
+
+        Else: Si SITUFAM = SITUACION2:
+
+            Si NUMDES = 0: LIMITE = [RETRIB - (17.197,00 + PENSION + DESEM)] *0,43
+
+
+                                                 Página 31
+                    Else: Si NUMDES = 1: LIMITE = [RETRIB - (18.130,00 + PENSION + DESEM)] * 0,43
+
+                    Else: Si NUMDES > 1: LIMITE = [RETRIB - (19.262,00 + PENSION + DESEM)] * 0,43
+
+                    Finsi.
+
+                 Else: Si SITUFAM = SITUACION3:
+
+                    Si NUMDES = 0: LIMITE = [RETRIB - (15.876,00 + PENSION + DESEM)] * 0,43
+
+                    Else: Si NUMDES = 1: LIMITE = [RETRIB - (16.342,00 + PENSION + DESEM)] * 0,43
+
+                    Else: Si NUMDES > 1: LIMITE = [RETRIB - (16.867,00 + PENSION + DESEM)] *0,43
+
+                    Finsi.
+
+                 Finsi.
+
+          Si CUOTA > LIMITE: CUOTA = LIMITE
+
+       Finsi.
+
+
+
+1   CÁLCULO TIPO DE RETENCIÓN
+    ** Tratamiento de Ceuta y Melilla o Isla de la Palma
+
+
+       Si (RESICEME = S y RENCEME = S): CEUMELI = S
+       Else: CEUMELI = N
+       Finsi.
+    Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a
+    cuenta previstas para residentes en Ceuta y/o Melilla es excepcional para el ejercicio 2023, 2024, 2025 y 2026
+    (D.A.57ª Ley IRPF – redacción dada por Real Decreto-Ley 23/2026, de 8 de septiembre), se considera conveniente
+    mantener la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+
+    APLICACION DE LA REDUCCION POR PAGO DE PRÉSTAMOS PARA ADQUISICION O
+    REHABILITACION DE LA VIVIENDA HABITUAL (RD 1975/2008)
+
+       Si RETRIB < 33.007,20 y PRESVIV= S:
+                   MINOPAGO = 2,00% *RETRIB
+
+       Else: MINOPAGO = 0
+       MINOPAGO = TRUNCAR (MINOPAGO)
+       Finsi
+
+
+        Si CEUMELI = S: DIFERENCIA POSITIVA = (CUOTA* 0,40) - MINOPAGO
+        Else: DIFERENCIA POSITIVA = CUOTA - MINOPAGO
+
+
+        Si DIFERENCIAPOSITIVA < 0: DIFERENCIAPOSITIVA = 0
+        Finsi.
+
+
+
+
+                                                          Página 32
+TIPO DE RETENCIÓN APLICABLE
+
+
+     TIPO = (DIFERENCIAPOSITIVA/RETRIB) * 100
+     TIPO = TRUNCAR (TIPO)
+
+** Truncado del tipo de retención. Se define la función TRUNCAR (TIPO), que consiste en truncar el tipo
+en el segundo decimal. Ejemplo: TIPO = 17,85964523; TRUNCAR (TIPO) = 17,85
+
+
+**        Límites generales mínimos del 15% y 2%)
+
+     Si (CEUMELI = S
+
+                   Si (CONTRATO = ESPECIAL (1) y TIPO < 6,00): TIPO = 6,00
+
+                   Else: Si (CONTRATO = INFERIORAÑO (1) y TIPO < 0,80,): TIPO = 0,80
+                   Finsi.
+
+     Else: Si (CONTRATO = ESPECIAL (1) y TIPO < 15,00): TIPO = 15,00
+
+     Else: Si (CONTRATO = INFERIORAÑO (1) y TIPO < 2,00): TIPO = 2,00
+     Finsi.
+     Nota (1): Tipo CONTRATO:
+             INFERIORAÑO: Incluye, desde 1-1-2023, contratos derivados de la relación laboral especial de las personas artistas
+              que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas que realizan
+              actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad.
+             ESPECIAL: Para relaciones laborales especiales de carácter dependiente distintas de las de las personas artistas
+              señalada anteriormente, de los penados en instituciones penitenciarias y de las personas con discapacidad en centros
+              especiales de empleo.
+
+
+
+
+IMPORTE ANUAL DE LAS RETENCIONES E INGRESOS A CUENTA
+
+         IMPORTE = (RETRIB * TIPO) /100
+
+
+         IMPORTE = REDONDEAR1 (IMPORTE)
+
+
+     Si REGULARIZACION = N: Fin. Mostrar resultados.
+     Else: Continuar
+Finsi.
+
+
+
+
+                                                            Página 33
+REGULARIZACIÓN
+
+CAUSA DE REGULARIZACIÓN                                                                         VBLE.
+Circunstancias que determinan variaciones en la base para calcular el tipo de retención    CAUSA1
+Circunstancias que determinan variaciones en el importe del mínimo personal y familiar
+                                                                                           CAUSA2
+para calcular el tipo de retención
+Quedar obligado judicialmente el perceptor a satisfacer pensión compensatoria al
+                                                                                           CAUSA3
+cónyuge
+Quedar obligado el perceptor a satisfacer anualidades a favor de los hijos previstas en el
+                                                                                           CAUSA4
+art. 7.k) LIRPF
+Cambio de la situación familiar “2” a la situación familiar “3”                            CAUSA5
+Pérdida de la residencia habitual y efectiva en Ceuta o Melilla o La Palma en el
+ejercicio (residencia inferior a 183 días), pero habiendo tenido el perceptor la condición CAUSA6
+de residente en Ceuta o Melilla o La Palma el ejercicio anterior
+Adquisición de la residencia habitual y efectiva en Ceuta o Melilla o La Palma             CAUSA7
+Comenzar a realizar trabajos fuera de Ceuta o Melilla o La Palma por residentes en
+                                                                                           CAUSA8
+dichos territorios
+El perceptor ha comunicado que realiza pagos por préstamos destinados a la adquisición
+                                                                                           CAUSA9
+o rehabilitación de su vivienda habitual
+El perceptor ha comunicado la improcedencia de reducción del tipo de retención por
+                                                                                           CAUSA10
+pagos por préstamos destinados a la adquisición o rehabilitación de su vivienda habitual
+Otras causas                                                                               CAUSA11
+
+
+** Cálculo importe para la determinación del tipo de retención a partir de la regularización.
+
+   SI REGULARIZACIÓN = S
+
+        Si [CEUMELI = S y RENCEMEA = N y CAUSA7] = S
+
+                 IMPORTEREG = PERCIBIDO * CUOTA/RETRIB + (RETRIB – PERCIBIDO) * (CUOTA*0,40) /RETRIB
+
+        Finsi.
+
+        Else: Si [RESICEME = S y RENCEME = N y RENCEMEA = S y CAUSA8 = S]:
+
+                 IMPORTEREG = PERCIBIDO * (CUOTA* 0,40) /RETRIB + (RETRIB – PERCIBIDO) * CUOTA/RETRIB
+
+        Finsi
+
+        Else: Si [RESICEME = N y RENCEME = N y RENCEMEA = S y CAUSA6 = S]:
+
+                 IMPORTEREG = PERCIBIDO * (CUOTA* 0,40) /RETRIB + (RETRIB – PERCIBIDO) * CUOTA/RETRIB
+
+        Finsi
+
+        Else: Si [CEUMELI=S y RENCEMEA = S]:
+
+                 IMPORTEREG = CUOTA*0,40
+
+        Finsi.
+
+        Else: IMPORTEREG = CUOTA
+
+        Finsi.
+
+
+
+                                                    Página 34
+** Tratamiento especial por minoración por pagos de préstamos para la vivienda habitual
+
+Si [(CAUSA1=S o CAUSA2=S o CAUSA3=S o CAUSA4=S o CAUSA5=S o CAUSA6=S o CAUSA7=S o
+CAUSA8 =S):
+        Si (MINORADO = S y PRESVIV =S y RETRIB < 33.007,20):
+                Si RETRIB>RETRIBA: MINOPAGO = MINOPAGOA+2,00%*(RETRIB-RETRIBA)
+                Else: Si RETRIB<RETRIBA: MINOPAGO = MINOPAGOA2,00%*(RETRIBA-RETRIB)
+                Else: MINOPAGO = MINOPAGOA
+
+           Else: Si MINORADO = S y PRESVIV =N:
+                     MINOPAGO = MINOPAGOA
+           Else: MINOPAGO= 0
+
+Else: Si CAUSA9 = S y PRESVIV= S y RETRIB < 33.007,20:
+          Si MINORADO= S:
+                 MINOPAGO =MINOPAGOA+ 2,00%*(RETRIBPERCIBIDO)
+          Else: MINOPAGO = 2,00%*(RETRIBPERCIBIDO)
+
+Else: Si CAUSA10 = S y MINORADO = S y PRESVIV =N:
+          MINOPAGO = MINOPAGOA2%*(RETRIBPERCIBIDO)
+
+Else: Si CAUSA11=S y PRESVIV =S y RETRIB < 33.007,20:
+        MINOPAGO = 2% * (RETRIB – PERCIBIDO)
+        Else: MINOPAGO= 0
+
+
+Else: MINOPAGO = 0
+
+Finsi.
+
+Si (PRESVIV= S y MINOPAGO > 2,00%*33.007,20): MINOPAGO =2,00%*33.007,20
+
+MINOPAGO = TRUNCAR (MINOPAGO)
+
+
+
+** Cálculo del tipo de retención a partir de la regularización
+
+   TIPOREG = [(IMPORTEREG – RETENIDOMINOPAGO) / (RETRIB – PERCIBIDO )] * 100
+
+   Si TIPOREG < 0: TIPOREG = 0,00
+
+    TIPOREG = TRUNCAR (TIPOREG)
+
+   Finsi
+
+
+
+** Límites generales en la aplicación del tipo (máximo del 47 % y mínimos del 15 % y 2 %)
+
+    Si CEUMELI = S y
+
+                 Si (RENCEMEA = S y TIPOREG > 19,00): TIPOREG = 19,00
+
+                 Else: Si TIPOREG > 47,00: TIPOREG = 47,00
+
+                 Else: Si (CONTRATO = ESPECIAL (1) y TIPOREG < 6,00): TIPOREG = 6,00
+
+                 Else: Si (CONTRATO = INFERIORAÑO (1) y TIPOREG < 0,80): TIPOREG = 0,80
+
+                 Finsi
+
+                                                     Página 35
+    Else: Si TIPOREG > 47,00: TIPOREG = 47,00
+
+    Else: Si (CONTRATO = ESPECIAL (1) y TIPOREG < 15,00):                   TIPOREG = 15,00
+
+    Else: Si (CONTRATO = INFERIORAÑO (1) y TIPOREG < 2,00):                          TIPOREG = 2,00
+
+    Finsi.
+
+   (Nota (1): Tipo CONTRATO:
+            INFERIORAÑO: Incluye, desde 1-1-2023, contratos derivados de la relación laboral especial de las personas artistas
+             que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas que realizan
+             actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad.
+            ESPECIAL: Para relaciones laborales especiales de carácter dependiente distintas de las de las personas artistas
+             señalada anteriormente, de los penados en instituciones penitenciarias y de las personas con discapacidad en centros
+             especiales de empleo.
+
+
+
+
+** Cálculo del importe anual de la retención
+
+   IMPORTE = {[(RETRIB – PERCIBIDO) * TIPOREG] / 100 } + RETENIDO
+
+   IMPORTE = REDONDEAR1 (IMPORTE)
+
+
+
+** Causas de regularización a las que no son aplicables los límites del art. 87.5 del RIRPF (R.D.439/2007).
+
+
+   Si [CAUSA5 = S o CAUSA6 = S o CAUSA 7 = S o CAUSA8 = S o CAUSA9 = S o CAUSA10 = S o CAUSA11 =
+   S]: Fin. Mostrar resultados.
+
+
+   Else: continuar.
+
+   Finsi.
+
+
+
+
+                                                           Página 36
+** Límites del art. 87.5 del RIRPF (R.D.439/2007), específicos de los procedimientos de regularización.
+
+  REVISAR = N
+
+  DIFERENCIA = (BASEA – MINPERFAA)
+
+  SI DIFERENCIA < 0: DIFERENCIA = 0
+        (87.5, 1er párrafo, RIRPF)
+  Si [ (DIFERENCIA ≥ BASE - MINPERFA) y (TIPOREG > TIPOA)] :               TIPOREG = TIPOA
+                                                                           REVISAR = S
+        (87.5, 2º párrafo, RIRPF)
+  Else: Si [(DIFERENCIA < BASE - MINPERFA) y (IMPORTEA < IMPORTE)]:
+
+                      INCREIMPORTE = IMPORTE - IMPORTEA
+                      INCREBASEMIN = (BASE - MINPERFA) – (DIFERENCIA)
+
+                      Si INCREIMPORTE > INCREBASEMIN:
+
+                             REVISAR = S
+                             IMPORTE = IMPORTEA + INCREBASEMIN
+                             TIPOREG = [(IMPORTE – RETENIDO) / (RETRIB – PERCIBIDO)] * 100
+
+                             Si TIPOREG < 0,00:    TIPOREG = 0
+
+                             Else:   TIPOREG = TRUNCAR (TIPOREG)
+                                     IMPORTE = {[(RETRIB – PERCIBIDO) * TIPOREG] / 100} + RETENIDO
+                                     INCREIMPORTE = IMPORTE – IMPORTEA
+                                     Finsi
+
+                       Si [(INCREIMPORTE > INCREBASEMIN) y TIPOREG > 0]: TIPOREG = [(IMPORTEA +
+                     INCREBASEMIN – RETENIDO) / (RETRIB – PERCIBIDO)] * 100
+
+                     TIPOREG = TRUNCAR (TIPOREG)
+                     Finsi.
+            Finsi.
+   Finsi.
+
+Si REVISAR = S:
+
+      Si CEUMELI = S
+
+            Si (CONTRATO = ESPECIAL (1) y TIPOREG < 6,00):        TIPOREG = 6,00
+
+            Else: Si (CONTRATO = INFERIORAÑO (1) y TIPOREG < 0,80):        TIPOREG = 0,80
+
+            Finsi.
+
+      Else:
+
+            Si (CONTRATO = ESPECIAL (1) y TIPOREG < 15):          TIPOREG = 15
+
+            Else: Si (CONTRATO = INFERIORAÑO (1) y TIPOREG < 2):           TIPOREG = 2
+
+            Finsi.
+
+      Finsi.
+
+IMPORTE = {[ (RETRIB – PERCIBIDO) *TIPOREG] / 100} + RETENIDO
+Finsi.
+Fin. Mostrar resultados.
+
+
+                                                     Página 37
+(Nota (1): Tipo CONTRATO:
+       INFERIORAÑO: Incluye, desde 1-1-2023, contratos derivados de la relación laboral especial de las personas artistas
+        que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas que realizan
+        actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad.
+
+       ESPECIAL: Para relaciones laborales especiales de carácter dependiente distintas de las de las personas artistas
+        señalada anteriormente, de los penados en instituciones penitenciarias y de las personas con discapacidad en centros
+        especiales de empleo.
+
+
+
+
+                                                      Página 38
+DATOS DE ENTRADA
+DATOS DEL PERCEPTOR
+                                                                                                                                                                              VALOR POR
+NOMBRE        DESCRIPCIÓN                                                                                                                             VALORES                 DEFECTO
+
+NIF           NIF DEL PERCEPTOR                                                                                                                       NIF de persona física
+AÑOPER        AÑO DE NACIMIENTO DEL PERCEPTOR                                                                                                         ≥1.906 y ≤ 2.026
+                                                                                                                                                      SITUACION1
+SITUFAM       SITUACIÓN FAMILIAR                                                                                                                      SITUACION2              SITUACION3
+                                                                                                                                                      SITUACION3
+NIFCON        NIF DEL CÓNYUGE                                                                                                                         NIF de persona física
+DISCAPACITADO PERCEPTOR con DISCAPACIDAD                                                                                                              S/N                     N
+
+                                                                                                                                                      SIN DISCAPACIDAD
+DISCAPER      GRADO DE DISCAPACIDAD DEL PERCEPTOR                                                                                                     DE33A65                 SIN DISCAPACIDAD
+                                                                                                                                                      DESDE65
+
+MOVILPER      CON NECESIDAD DE AYUDA DE TERCERAS PERSONAS O MOVILIDAD REDUCIDA                                                                        S/N                     N
+              RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA o La Palma
+RESICEME      Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta previstas para S/N                      N
+              residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener la denominación
+              actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+                                                                                                                                                      ACTIVO
+                                                                                                                                                      PENSIONISTA
+SITUPER       SITUACIÓN LABORAL DEL PERCEPTOR                                                                                                                                 ACTIVO
+                                                                                                                                                      DESEMPLEADO
+                                                                                                                                                      OTRA SITUACIÓN
+              TIPO DE CONTRATO O RELACIÓN
+                 (Nota (1): Tipo CONTRATO:
+                            GENERAL: Incluye, desde 1-1-2025 los contratos indefinidos derivados de las relaciones laborales especiales de las
+                             personas con discapacidad, y la de los penados en instituciones penitenciarias.
+                            INFERIORAÑO: Incluye, desde 1-1-2023, contratos derivados de la relación laboral especial de las personas artistas       GENERAL (1)
+                             que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas que realizan    INFERIORAÑO (1)
+CONTRATO                                                                                                                                                                      GENERAL
+                             actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad.                                      ESPECIAL (1)
+                            ESPECIAL: Para relaciones laborales especiales de carácter dependiente distintas de la de las personas artistas          MANUALES
+                             señalada anteriormente, así como de las derivadas de las relaciones laborales de carácter especial de las personas con
+                             discapacidad y de los penados
+                            Relaciones esporádicas propias de retribuciones por peonadas o jornales diarios.
+
+MOVIL         MOVILIDAD GEOGRÁFICA                                                                                                                    S/N                     N
+
+                                                                                                    39
+DATOS DE ENTRADA (continuación)
+HIJOS Y OTROS DESCENDIENTES
+                                                                                                                               VALOR POR
+NOMBRE         DESCRIPCIÓN                                                                                 VALORES             DEFECTO
+
+AÑODES         AÑO DE NACIMIENTO DEL DESCENDIENTE                                                          ≥1.906 y ≤ 2.026
+AÑOADOP        AÑO DE ADOPCIÓN/ACOGIMIENTO/GUARDA Y CUSTODIA                                               ≥1.906 y ≤ 2.026
+POR ENTERO     POR ENTERO (DESCENDIENTE COMPUTADO POR ENTERO)                                              S/N                 N
+
+                                                                                                           SIN DISCAPACIDAD
+DISCADES       DISCAPACIDAD DEL DESCENDIENTE                                                               DE33A65             SIN DISCAPACIDAD
+                                                                                                           DESDE65
+
+MOVILDES       MOVILIDAD REDUCIDA DEL DESCENDIENTE                                                         S/N                 N
+
+ASCENDIENTES
+                                                                                                                               VALOR POR
+NOMBRE         DESCRIPCIÓN                                                                                 VALORES             DEFECTO
+
+AÑOAS          AÑO DE NACIMIENTO DEL ASCENDIENTE                                                           ≥1.906 y ≤ 2.026
+CONVIVENCIA    CONVIVENCIA (Nº PERSONAS CON QUE CONVIVE EL ASCENDIENTE)                                    ≥1 y ≥ 9            1
+                                                                                                           SIN DISCAPACIDAD
+DISCAS         DISCAPACIDAD DEL ASCENDIENTE                                                                DE33A65             SIN DISCAPACIDAD
+                                                                                                           DESDE65
+MOVILAS        MOVILIDAD REDUCIDA DEL ASCENDIENTE                                                          S/N                 N
+
+DATOS ECONÓMICOS
+                                                                                                                               VALOR POR
+NOMBRE         DESCRIPCIÓN                                                                                 VALORES             DEFECTO
+
+RETRIB         RETRIBUCIONES TOTALES (DINERARIAS Y EN ESPECIE). IMPORTE INTEGRO                            > 0,00
+
+IRREGULAR1     REDUCCIONES (ART.º. 18.2 LIRPF)                                                             ≥ 0,00 y ≤ 90.000   0,00
+IRREGULAR2     REDUCCIONES (ART.º 18.3; DD.TT. 11ª Y 12ª de la LIRPF)                                      ≥ 0,00              0,00
+
+COTIZACIONES   GASTOS DEDUCIBLES (ART. 19.2, a), b) y c): COTIZACIONES A LA S. SOCIAL, MUTUTALIDADES...)   ≥ 0,00              0,00
+
+
+
+                                                                                 40
+                 LOS DATOS ANTERIORES CORRESPONDEN A RENDIMIENTOS OBTENIDOS EN CEUTA O MELILLA o La Palma
+                 Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta
+RENCEME          previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener S/N                N
+                 la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+
+CONYUGE          PENSIÓN COMPENSATORIA A FAVOR DEL CÓNYUGE. IMPORTE FIJADO JUDICIALMENTE                                                       ≥ 0,00              0,00
+
+ANUALIDADES      ANUALIDADES POR ALIMENTOS A FAVOR DE LOS HIJOS. IMPORTE PREVISTO EN EL ARTÍCULO 7.K) LIRPF.  ≥ 0,00                                               0,00
+                 EL PERCEPTOR HA COMUNICADO EN EL MODELO 145 QUE ESTÁ EFECTUANDO PAGOS POR PRÉSTAMOS
+                 DESTINADOS A LA ADQUISICIÓN O REHABILITACIÓN DE SU VIVIENDA HABITUAL POR LOS QUE VA A TENER
+PRESVIV          DERECHO A DEDUCCIÓN POR INVERSIÓN EN VIVIENDA HABITUAL EN EL IRPF Y QUE LA SUMA DE LOS S/N                                                        N
+                 RENDIMIENTOS ÍNTEGROS DEL TRABAJO PROCEDENTES DE TODOS SUS PAGADORES ES INFERIOR A 33.007,20
+                 EUROS ANUALES
+
+
+REGULARIZACION   REGULARIZACIÓN                                                                                                                S/N                 N
+PERCIBIDO        RETRIBUCIONES YA SATISFECHAS CON ANTERIORIDAD A LA REGULARIZACIÓN                                                             > 0,00
+RETENIDO         RETENCIONES E INGRESOS A CUENTA YA PRACTICADOS                                                                                ≥ 0,00              0,00
+RETRIBA          RETRIBUCIONES ANUALES CONSIDERADAS CON ANTERIORIDAD A LA REGULARIZACIÓN                                                       > 0,00
+IMPORTEA         RETENCIONES TOTALES ANUALES DETERMINADAS ANTES DE LA REGULARIZACIÓN                                                           ≥ 0,00              0,00
+                 LOS RENDIMIENTOS ANTERIORES A LA REGULARIZACIÓN FUERON OBTENIDOS EN CEUTA Y MELILLA O LA
+                 PALMA
+
+RENCEMEA         Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta S/N                       N
+                 previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener
+                 la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+BASEA            BASE PARA CALCULAR EL TIPO DE RETENCIÓN DETERMINADA ANTES DE LA REGULARIZACIÓN                                                ≥ 0,00              0,00
+MINPERFAA        MINIMO PERSONAL Y FAMILIAR DETERMINADO ANTES DE LA REGULARIZACIÓN                                                             ≥ 5.550,00          5.550
+TIPOA            TIPO DE RETENCIÓN APLICADO CON ANTERIORIDAD A LA REGULARIZACIÓN                                                               ≥ 0,00              0,00
+                 EN ALGUN MOMENTO ANTES DE LA REGULARIZACION SE APLICÓ MINORACIÓN POR PAGOS DE PRÉSTAMOS
+MINORADO                                                                                                                                       S/N                 N
+                 PARA LA VIVIENDA
+                 IMPORTE DE LA MINORACION POR PAGOS DE PRÉSTAMOS PARA LA VIVIENDA DETERMINADO ANTES DE LA
+MINOPAGOA                                                                                                                                                          0,00
+                 REGULARIZACIÓN
+MINOPAGO         IMPORTE DE LA MINORACION POR PAGOS DE PRÉSTAMOS PARA LA VIVIENDA                                                              ≥ 0,00 y ≤ 660,14   0,00
+CAUSA1           CIRCUNSTANCIAS QUE DETERMINAN VARIACIONES EN LA BASE PARA CALCULAR EL TIPO DE RETENCIÓN                                       S/N                 N
+                 CIRCUNSTANCIAS QUE DETERMINAN VARIACIONES EN EL IMPORTE DEL MÍNIMO PERSONAL Y FAMILIAR
+CAUSA2                                                                                                                                         S/N                 N
+                 PARA CALCULAR EL TIPO DE RETENCIÓN
+                 QUEDAR OBLIGADO JUDICIALMENTE EL PERCEPTOR A SATISFACER PENSIÓN COMPENSATORIA AL
+CAUSA3                                                                                                                                         S/N                 N
+                 CÓNYUGE
+                                                                                                41
+                QUEDAR OBLIGADO EL PERCEPTOR A SATISFACER ANUALIDADES A FAVOR DE HIJOS SEGÚN LO PREVISTO
+CAUSA4                                                                                                                                             S/N                     N
+                EN EL ART. 7.K) LIRPF
+CAUSA5          CAMBIO DE LA SITUACIÓN FAMILIAR “2” A LA SITUACIÓN FAMILIAR “3”                                                                    S/N                     N
+                PÉRDIDA DE LA RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA O LA PALMA EN EL
+CAUSA6          EJERCICIO (RESIDENCIA INFERIOR A 183 DÍAS), PERO HABIENDO TENIDO EL PERCEPTOR LA                                                   S/N                     N
+                CONDICIÓN DE RESIDENTE EN CEUTA O MELILLA O LA PALMA EL EJERCICIO ANTERIOR
+CAUSA7          ADQUISICIÓN DE LA RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA O LA PALMA                                                     S/N                     N
+                COMENZAR A REALIZAR TRABAJOS FUERA DE CEUTA O MELILLA O LA PALMA POR RESIDENTES EN
+CAUSA8                                                                                                                                             S/N                     N
+                DICHOS TERRITORIOS.
+                EL PERCEPTOR HA COMUNICADO QUE REALIZA PAGOS POR PRÉSTAMOS DESTINADOS A LA ADQUISICIÓN O
+CAUSA9                                                                                                                                             S/N                     N
+                REHABILITACIÓN DE SU VIVIENDA HABITUAL
+                EL PERCEPTOR HA COMUNICADO LA IMPROCEDENCIA DE REDUCCIÓN DEL TIPO DE RETENCIÓN POR PAGOS
+CAUSA10                                                                                                                                            S/N                     N
+                POR PRÉSTAMOS DESTINADOS A LA ADQUISICIÓN O REHABILITACIÓN DE SU VIVIENDA HABITUAL
+CAUSA11         OTRAS CAUSAS                                                                                                                       S/N                     N
+
+
+DATOS DE SALIDA
+                                                                                                                                                                           VALOR POR
+NOMBRE          DESCRIPCIÓN                                                                                                                        VALORES                 DEFECTO
+NIF             NIF DEL PERCEPTOR                                                                                                                  NIF de persona física
+AÑOPER          AÑO DE NACIMIENTO DEL PERCEPTOR                                                                                                    ≥1.906 y ≤ 2.026
+                                                                                                                                                   SITUACION1
+SITUFAM         SITUACIÓN FAMILIAR                                                                                                                 SITUACION2              SITUACION3
+                                                                                                                                                   SITUACION3
+NIFCON          NIF DEL CÓNYUGE                                                                                                                    NIF de persona física
+DISCAPACITADO   PERCEPTOR CON DISCAPACIDAD                                                                                                         S/N                     N
+                                                                                                                                                   SIN DISCAPACIDAD
+DISCAPER        GRADO DE DISCAPACIDAD DEL PERCEPTOR                                                                                                DE33A65                 SIN DISCAPACIDAD
+                                                                                                                                                   DESDE65
+MOVILPER        CON NECESIDAD DE AYUDA DE TERCERAS PERSONAS O MOVILIDAD REDUCIDA                                                                   S/N                     N
+                                                                                                                                                   ACTIVO
+                                                                                                                                                   PENSIONISTA
+SITUPER         SITUACIÓN LABORAL DEL PERCEPTOR                                                                                                                            ACTIVO
+                                                                                                                                                   DESEMPLEADO
+                                                                                                                                                   OTRA SITUACIÓN
+                TIPO DE CONTRATO O RELACIÓN
+                   (Nota (1): Tipo CONTRATO:                                                                                                       GENERAL (1)
+                              GENERAL: Incluye, desde 1-1-2025 los contratos indefinidos derivados de las relaciones laborales especiales de      INFERIORAÑO (1)
+CONTRATO                                                                                                                                                                   GENERAL
+                               las personas con discapacidad, y la de los penados en instituciones penitenciarias.                                 ESPECIAL (1)
+                              INFERIORAÑO: Incluye, desde 1-1-2023, contratos derivados de la relación laboral especial de las personas           MANUALES
+                               artistas que desarrollan su actividad en las artes escénicas, audiovisuales y musicales, así como de las personas
+                                                                                                 42
+                                que realizan actividades técnicas o auxiliares necesarias para el desarrollo de dicha actividad.
+                               ESPECIAL: Para relaciones laborales especiales de carácter dependiente distintas de la de las personas artistas
+                                señalada anteriormente, así como de las derivadas de las relaciones laborales de carácter especial de las
+                                personas con discapacidad y de los penados
+                               Relaciones esporádicas propias de retribuciones por peonadas o jornales diarios.
+
+MOVIL            MOVILIDAD GEOGRÁFICA                                                                                                             S/N                         N
+                 RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA O LA PALMA
+                 Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta
+RESICEME                                                                                                                                        S/N                           N
+                 previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener
+                 la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+RETRIB           RETRIBUCIONES TOTALES (DINERARIAS Y EN ESPECIE). IMPORTE INTEGRO                                                                 > 0,00
+
+IRREGULAR1       REDUCCIONES (ART.º. 18.2 LIRPF)                                                                                                  ≤ 90.000,00                 0,00
+
+IRREGULAR2       REDUCCIONES (ART.º 18.3; DD.TT. 11ª Y 12ª de la LIRPF)                                                                           ≥ 0,00                      0,00
+
+COTIZACIONES     GASTOS ART. 19.2, a), b) y c): COTIZACIONES A LA S. SOCIAL, MUTUALIDADES...)                                                     ≥ 0,00                      0,00
+GASTOSGEN        OTROS GASTOS: CUANTIA FIJA CON CARÁCTER GENERAL                                                                                  = 2.000,00                  2.000,00
+
+INCREGASMOVIL    OTROS GASTOS: INCREMENTO POR MOVILIDAD GEOGRÁFICA                                                                                ≥ 0,00 Y ≤ 2.000, 00        0,00
+
+INCREGASDISTRA   OTROS GASTOS. INCREMENTO PARA TRABAJADORES ACTIVOS CON DISCAPACIDAD                                                              ≥ 0,00 Y ≤ 7.750, 00        0,00
+
+OTROSGASTOS      GASTOS ART 19.2.f): OTROS GASTOS (GASTOSGEN + INCREGASMOVIL + INGREGASDISTRA)                                                    ≥ 2.000, 00 y ≤ 11.750,00
+
+GASTOS           GASTOS DEDUCCIBLES                                                                                                               ≥ 2.000
+                 LOS DATOS ANTERIORES CORRESPONDEN A RENDIMIENTOS OBTENIDOS EN CEUTA O MELILLA O LA
+                 PALMA
+RENCEME                                                                                                                                           S/N                         N
+                 Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta
+                 previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener
+                 la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+                 EL PERCEPTOR HA COMUNICADO EN EL MODELO 145 QUE ESTÁ EFECTUANDO PAGOS POR PRÉSTAMOS
+                 DESTINADOS A LA ADQUISICIÓN O REHABILITACIÓN DE SU VIVIENDA HABITUAL POR LOS QUE VA A TENER
+PRESVIV          DERECHO A DEDUCCIÓN POR INVERSIÓN EN VIVIENDA HABITUAL EN EL IRPF Y QUE LA SUMA DE LOS S/N                                                                   N
+                 RENDIMIENTOS ÍNTEGROS DEL TRABAJO PROCEDENTES DE TODOS SUS PAGADORES ES INFERIOR A 33.007,20
+                 EUROS ANUALES
+AÑODES           AÑO DE NACIMIENTO DEL DESCENDIENTE                                                                                               ≥1.906 y ≤ 2.026
+
+AÑOADOP          AÑO DE ADOPCIÓN ACOGIMIENTO/GUARDA Y CUSTODIA                                                                                    ≥1.906 y ≤ 2.026
+
+
+                                                                                                 43
+POR ENTERO    POR ENTERO (DESCENDIENTE COMPUTADO POR ENTERO)                                             S/N                        N
+                                                                                                         SIN DISCAPACIDAD
+DISCADES      DISCAPACIDAD DEL DESCENDIENTE                                                              DE33A65                    SIN DISCAPACIDAD
+                                                                                                         DESDE65
+MOVILDES      MOVILIDAD REDUCIDA DEL DESCENDIENTE                                                        S/N                        N
+
+AÑOAS         AÑO DE NACIMIENTO DEL ASCENDIENTE                                                          ≥1.906 y ≤ 2.026
+
+CONVIVENCIA   CONVIVENCIA (Nº PERSONAS CON QUE CONVIVE ASCENDIENTE)                                      ≥1 y ≤ 9                   1
+                                                                                                         SIN DISCAPACIDAD
+DISCAS        DISCAPACIDAD DEL ASCENDIENTE                                                               DE33A65                    SIN DISCAPACIDAD
+                                                                                                         DESDE65
+MOVILAS       MOVILIDAD REDUCIDA DEL ASCENDIENTE                                                         S/N                        N
+              RENDIMIENTO NETO A EFECTOS DEL CÁLCULO DE LA REDUCCIÓN POR OBTENCIÓN DE RENDIMIENTOS DEL
+RNT                                                                                                      ≥ 0,00                     0,00
+              TRABAJO
+RED20         REDUCCIÓN POR RENDIMIENTOS DEL TRABAJO. REDUCCION DE CARÁCTER GENERAL                      > 0,00 y ≤ 7.302,00        0,00
+RNTREDU       RENDIMIENTO NETO REDUCIDO                                                                  ≥ 0,00                     0,00
+PENSION       PENSIONISTA DE LA S. SOCIAL / CL. PASIVAS                                                  0,00 ó 600,00              0,00
+HIJOS         CONTRIBUYENTE CON MÁS DE DOS DESCENDIENTES CON DERECHO A REDUCCIÓN                         0,00 ó 600,00              0,00
+DESEM         REDUCCION POR SER DESEMPELADO                                                              0,00 ó 1.200,00            0,00
+MINPER        MÍNIMO DEL CONTRIBUYENTE CON CARÁCTER GENERAL                                              5.550,00                   5.550,00
+65PER         MÍNIMO DEL CONTRIBUYENTE SI EDAD SUPERIOR A 65 AÑOS                                        0,00 ó 1.150,00            0,00
+75PER         MINIMO DEL CONTRIBUYENTE SI EDAD SUPERIOR A 75 AÑOS                                        0,00 ó 1.400,00            0,00
+MINCON        MÍNIMO DEL CONTRIBUYENTE                                                                   ≥ 5.550,00 y ≤ 8.100,00    5.550,00
+MINDESG       MINIMO POR DESCENDIENTES < 25 AÑOS Ó CON DISCAPACIDAD. CON CARÁCTER GENERAL                ≥ 0,00                     0,00
+MINDES3       MINIMO POR DESCENDIENTES < 25 AÑOS Ó CON DISCAPACIDAD. DESCENDIENTES < 3 AÑOS.             ≥ 0,00                     0,00
+MINDES        MÍNIMO POR DESCENDIENTES < 25 AÑOS O CON DISCAPACIDAD                                      ≥ 0,00                     0,00
+65AS          MÍNIMO POR ASCENDIENTES. ASCENDIENTE MAYOR DE 65 AÑOS O CON DISCAPACIDAD                   ≥ 0,00                     0,00
+
+
+75AS          MÍNIMO POR ASCENDIENTES. ASCENDIENTE MAYOR DE 75 AÑOS                                      ≥ 0,00                     0,00
+
+
+MINAS         MÍNIMO POR ASCENDIENTES                                                                    ≥ 0,00                     0,00
+DISPER        MÍNIMO DISCAPACIDAD. CONTRIBUYENTE CON DISCAPACIDAD                                        0,00, 3.000,00, 9.000,00   0,00
+ASISPER       MÍNIMO DISCAPACIDAD. CONTRIBUYENTE GASTOS DE ASISTENCIA                                    0,00 ó 3.000,00            0,00
+MINDISC       MÍNIMO POR DISCAPACIDAD. DISCAPACIDAD DEL CONTRIBUYENTE                                    ≥ 0,00 y ≤ 12.000,00       0,00
+                                                                         44
+DISDES           DISCAPACIDAD DE DESCENDIENTES Y ASCENDIENTES. DESCENDIENTES CON DISCAPACIDAD                                                     ≥ 0,00       0,00
+DISAS            DISCAPACIDAD DE DESCENDIENTES Y ASCENDIENTES. ASCENDIENTES CON DISCAPACIDAD                                                      ≥ 0,00       0,00
+ASISDES          DISCAPACIDAD DE DESCENDIENTES Y ASCENDIENTES. DESCENDIENTES GASTOS DE ASISTENCIA                                                 ≥ 0,00       0,00
+ASISAS           DISCAPACIDAD DE DESCENDIENTES Y ASCENDIENTES. ASCENDIENTES GASTOS DE ASISTENCIA                                                  ≥ 0,00       0,00
+MDISDEAS         MÍNIMO DISCAPACIDAD. DESCENDIENTES Y ASCENDIENTES                                                                                ≥ 0,00       0,00
+MINDIS           MÍNIMO DISCAPACIDAD. CONTRIBUYENTE, DESCENDIENTES Y ASCENDIENTES                                                                 ≥ 0,00       0,00
+MINPERFA         MÍNIMO PERSONAL Y FAMILIAR                                                                                                       ≥ 5.550,00   5.550,00
+CONYUGE          PENSIÓN COMPENSATORIA A FAVOR DEL CÓNYUGE. IMPORTE FIJADO JUDICIALMENTE                                                          ≥ 0,00       0,00
+BASE             BASE PARA CALCULAR EL TIPO DE RETENCIÓN                                                                                          ≥ 0,00       0,00
+ANUALIDADES      ANUALIDADES POR ALIMENTOS A FAVOR DE LOS HIJOS. IMPORTE PREVISTO EN EL ARTÍCULO 7.K) LIRPF.                                      ≥ 0,00       0,00
+CUOTA            CUOTA DE RETENCIÓN                                                                                                               ≥ 0,00       0,00
+TIPO             TIPO DE RETENCIÓN APLICABLE                                                                                                      ≥ 0,00       0,00
+TIPOREG          TIPO DE RETENCIÓN (A PARTIR DE LA REGULARIZACIÓN)                                                                                ≥ 0,00       0,00
+IMPORTE          IMPORTE ANUAL DE LAS RETENCIONES E INGRESOS A CUENTA                                                                             ≥ 0,00       0,00
+REGULARIZACION   REGULARIZACIÓN                                                                                                                   S/N          N
+PERCIBIDO        RETRIBUCIONES YA SATISFECHAS CON ANTERIORIDAD A LA REGULARIZACIÓN                                                                > 0,00
+RETENIDO         RETENCIONES E INGRESOS A CUENTA YA PRACTICADOS                                                                                   ≥ 0,00       0,00
+RETRIBA          RETRIBUCIONES ANUALES CONSIDERADAS CON ANTERIORIDAD A LA REGULARIZACIÓN                                                          > 0,00
+IMPORTEA         RETENCIONES TOTALES ANUALES DETERMINADAS ANTES DE LA REGULARIZACIÓN                                                              ≥ 0,00       0,00
+                 LOS RENDIMIENTOS ANTERIORES A LA REGULARIZACIÓN FUERON OBTENIDOS EN CEUTA O MELILLA O LA
+                 PALMA
+
+RENCEMEA                                                                                                                                          S/N          N
+                 Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta
+                 previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente mantener
+                 la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+BASEA            BASE PARA CALCULAR EL TIPO DE RETENCIÓN DETERMINADA ANTES DE LA REGULARIZACIÓN                                                   ≥ 0,00       0,00
+
+MINPERFAA        MINIMO PERSONAL Y FAMILIAR DETERMINADO ANTES DE LA REGULARIZACIÓN                                                                ≥ 5.550,00   5.550,00
+TIPOA            TIPO DE RETENCIÓN APLICADO CON ANTERIORIDAD A LA REGULARIZACIÓN                                                                  ≥ 0,00       0,00
+                 EN ALGUN MOMENTO ANTES DE LA REGULARIZACION SE APLICÓ EL MINORACIÓN POR PAGOS DE
+MINORADO                                                                                               S/N                                                     N
+                 PRÉSTAMOS PARA LA VIVIENDA
+                 IMPORTE DE LA MINORACION POR PAGOS DE PRÉSTAMOS PARA VIVIENDA DETERMINADO ANTES DE LA
+MINOPAGOA                                                                                                                                                      0,00
+                 REGULARIZACIÓN.
+MINOPAGO         IMPORTE DE LA MINORACION POR PAGOS DE PRÉSTAMOS PARA VIVIENDA.                                                                   ≤ 660,14     0,00
+
+                                                                                                 45
+CAUSA1         CIRCUNSTANCIAS QUE DETERMINAN VARIACIONES EN LA BASE PARA CALCULAR EL TIPO DE RETENCIÓN                        S/N          N
+               CIRCUNSTANCIAS QUE DETERMINAN VARIACIONES EN EL IMPORTE DEL MÍNIMO PERSONAL Y FAMILIAR PARA CALCULAR EL TIPO
+CAUSA2                                                                                                                        S/N          N
+               DE RETENCIÓN
+               QUEDAR OBLIGADO JUDICIALMENTE EL PERCEPTOR A SATISFACER PENSIÓN COMPENSATORIA AL
+CAUSA3                                                                                                                        S/N          N
+               CÓNYUGE
+               QUEDAR OBLIGADO EL PERCEPTOR A SATISFACER ANUALIDADES A FAVOR DE HIJOS SEGÚN LO PREVISTO
+CAUSA4                                                                                                                        S/N          N
+               EN EL ART. 7.K) LIRPF
+CAUSA5         CAMBIO DE LA SITUACIÓN FAMILIAR “2” A LA SITUACIÓN FAMILIAR “3”                                                S/N          N
+               PÉRDIDA DE LA RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA O LA PALMA en el ejercicio
+CAUSA6         (RESIDENCIA INFERIOR A 183 DÍAS), PERO HABIENDO TENIDO EL PERCEPTOR LA CONDICIÓN DE RESIDENTE                  S/N          N
+               EN CEUTA O MELILLA O LA PALMA EL EJERCICIO ANTERIOR
+CAUSA7         ADQUISICIÓN DE LA RESIDENCIA HABITUAL Y EFECTIVA EN CEUTA O MELILLA O LA PALMA     S/N                                      N
+               COMENZAR A REALIZAR TRABAJOS FUERA DE CEUTA O MELILLA O LA PALMA POR RESIDENTES EN
+CAUSA8                                                                                                                        S/N          N
+               DICHOS TERRITORIOS
+               EL PERCEPTOR HA COMUNICADO QUE REALIZA PAGOS POR PRÉSTAMOS DESTINADOS A LA ADQUISICIÓN O
+CAUSA9                                                                                                                        S/N          N
+               REHABILITACIÓN DE SU VIVIENDA HABITUAL
+               EL PERCEPTOR HA COMUNICADO LA IMPROCEDENCIA DE REDUCCIÓN DEL TIPO DE RETENCIÓN POR PAGOS
+CAUSA10                                                                                                                       S/N          N
+               POR PRÉSTAMOS DESTINADOS A LA ADQUISICIÓN O REHABILITACIÓN DE SU VIVIENDA HABITUAL
+CAUSA11        OTRAS CAUSAS                                                                                                   S/N          N
+               NUMERO TOTAL DE DESCENDIENTES MENORES DE 3 AÑOS Y ADOPTADOS O ACOGIDOS HACE MENOS DE 3
+NUMDES3                                                                                                                       0a9          0
+               AÑOS
+               NUMERO DE DESCENDIENTES MENORES DE 3 AÑOS Y ADOPTADOS O ACOGIDOS HACE MENOS DE 3 AÑOS
+NUMDES3EN                                                                                                                     0a9          0
+               COMPUTADOS POR ENTERO
+NUMDES325      NUMERO TOTAL DE DESCENDIENTES RESTO                                                                            0 a 16       0
+NUMDES325EN    NUMERO DE DESCENDIENTES RESTO COMPUTADOS POR ENTERO                                                            0 A 16       0
+                                                                                                                              POR ENTERO
+COMHIJO1       DETALLE DEL COMPUTO DEL HIJO 1º                                                                                             POR MITAD
+                                                                                                                              POR MITAD
+                                                                                                                              POR ENTERO
+COMHIJO2       DETALLE DEL COMPUTO DEL HIJO 2º                                                                                             POR MITAD
+                                                                                                                              POR MITAD
+                                                                                                                              POR ENTERO
+COMHIJO3       DETALLE DELCOMPUTO DEL HIJO 3º                                                                                              POR MITAD
+                                                                                                                              POR MITAD
+NUMDESMAS3     NUMERO TOTAL DE DESCENDIENTES A PARTIR DEL 4º (4º Y SUCESIVOS)                                                 0 a 13       0
+NUMDESMASEN    NUMERO TOTAL DE DESCENDIENTES A PARTIR DEL 4º (4º Y SUCESIVOS) COMPUTADOS POR ENTERO                           0 a 13       0
+NUMDES3365     NUMERO TOTAL DE DESCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 33% Y < 65%                                          0 a 16       0
+NUMDES3365EN   NUMERO DE DESCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 33% Y < 65% COMPUTADOS POR ENTERO                          0 a 16       0
+NUMDESMOV      NUMERO TOTAL DE DESCENDIENTES CON MOVILIDAD REDUCIDA                                                           0 a 16       0
+NUMDESMOVEN    NUMERO DE DESCENDIENTES CON MOVILIDAD REDUCIDA COMPUTADOS POR ENTERO                                           0 a 16       0
+NUMDES65       NUMERO DE DESCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 65%                                                        0 a 16       0
+
+
+                                                                                   46
+NUMDES65EN    NUMERO DE DESCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 65% COMPUTADOS POR ENTERO          0 a 16   0
+NUMAS         NUMERO TOTAL DE ASCENDIENTES                                                           0a6      0
+NUMAS65A      NUMERO TOTAL DE ASCENDIENTES MENORES DE 75 AÑOS                                        0a6      0
+NUMAS65AEN    NUMERO DE ASCENDIENTES MENORES DE 75 AÑOS COMPUTADOS POR ENTERO                        0a6      0
+NUMAS75A      NUMERO TOTAL DE ASCENDIENTES MAYORES DE 75 AÑOS                                        0a6      0
+NUMAS75AEN    NUMERO DE ASCENDIENTES MAYORES DE 75 AÑOS COMPUTADOS POR ENTERO                        0a6      0
+NUMAS3365     NUMERO TOTAL DE ASCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 33% Y < 65%                   0a6      0
+NUMAS3365EN   NUMERO DE ASCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 33% Y < 65% COMPUTADOS POR ENTERO   0a6      0
+NUMASMOV      NUMERO TOTAL DE ASCENDIENTES CON MOVILIDAD REDUCIDA                                    0a6      0
+NUMASMOVEN    NUMERO DE ASCENDIENTES CON MOVILIDAD REDUCIDA COMPUTADOS POR ENTERO                    0a6      0
+NUMAS65       NUMERO TOTAL DE ASCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 65%                           0a6      0
+NUMAS65EN     NUMERO DE ASCENDIENTES CON GRADO DE DISCAPACIDAD ≥ 65% COMPUTADOS POR ENTERO           0a6      0
+
+
+
+
+                                                                       47
+RESTO DE VARIABLES UTILIZADAS
+                                                                                                                                                         VALOR POR
+NOMBRE               DESCRIPCIÓN                                                                                                               VALORES    DEFECTO
+
+i                    ÍNDICE DE DESCENDIENTES
+EDADES               EDAD DEL DESCENDIENTE
+ENTERO               COMPUTO DEL DESCENDIENTE
+j                    ÍNDICE DE ASCENDIENTES
+EDADAS               EDAD DEL ASCENDIENTE
+REDU                 SUMA DE REDUCCIONES DEL RENDIMIENTO NETO REDUCIDO
+EXENTOS              RENDIMIENTOS EXENTOS DE RETENCIÓN
+BASE1                BASE PARA CALCULAR EL TIPO DE RETENCIÓN MENOS ANUALIDADES
+BASE2                ANUALIDADES
+CUOTA1.1             CUOTA DE RETENCIÓN CORRESPONDIENTE A BASE1
+CUOTA1.2             CUOTA DE RETENCIÓN CORRESPONDIENTE A BASE2
+CUOTA1               CUOTA DE RETENCIÓN CORRESPONDIENTE A BASE
+CUOTA2               CUOTA DE RETENCIÓN CORRESPONDIENTE AL MINIMO PERSONAL Y FAMILIAR
+LIMITE               LÍMITE DEL ART. 83.3 RD 1775/2004
+IMPORTEREG           IMPORTE PARA LA DETERMINACIÓN DEL TIPO DE RETENCIÓN A PARTIR DE LA REGULARIZACIÓN
+DIFERENCIAPOSITIVA   DIFERENCIA POSITIVA ENTRE LA CUOTA O (CUOTA/2) Y EL MINOPAGO
+DIFERENCIA           DIFERENCIA BASE Y MINIMO PERSONAL Y FAMILIAR ANTERIOR A LA REGULARIZACIÓN
+                     DERECHO A DEDUCCIÓN CEUTA / MELILLA / LA PALMA
+
+
+CEUMELI              Nota: Dado que la asimilación de la Isla de la Palma a las especialidades en materia de retenciones e ingresos a cuenta
+                     previstas para residentes en Ceuta y/o Melilla puede ser excepcional para el ejercicio 2026, se considera conveniente
+                     mantener la denominación actual de las variables afectadas RESICEME, RENCEME, CEUMELI, etc…
+
+REVISAR              APLICACIÓN DE LOS LÍMITES DEL ART. 87.5 RD 439/2007
+                     INCREMENTO DE LA DIFERENCIA ENTRE LA BASE DE RETENCIÓN PARA CALCULAR EL TIPO DE RETENCIÓN
+INCREBASEMIN
+                     Y EL MINIMO PERSONAL Y FAMILIAR
+INCREIMPORTE         INCREMENTO DEL IMPORTE DE RETENCIÓN
+
+
+
+
+                                                                                               48
+
