@@ -1,10 +1,10 @@
 ---
 name: italy-einvoice
 description: Use this skill whenever asked about Italian e-invoicing, FatturaPA, Sistema di Interscambio (SDI), electronic invoicing compliance in Italy, Codice Destinatario, PEC invoicing, fattura elettronica, TD document types, cross-border e-invoicing via SDI, conservazione sostitutiva, or any question about issuing, receiving, validating, or archiving electronic invoices in Italy. Also trigger when preparing or reviewing XML invoices for SDI submission, handling SDI rejection (scarto) errors, configuring Codice Destinatario or PEC routing, or advising on FatturaPA technical format compliance. This skill covers the FatturaPA XML schema, SDI transmission channels, mandatory fields, validation rules, archiving, penalties, and interaction with Italian VAT returns. ALWAYS read this skill before touching any Italian e-invoicing work.
-version: 1.0
+version: 1.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -24,17 +24,17 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 
 **Quick Reference**
 
-| Field | Value |
-| --- | --- |
-| Country | Italy (Repubblica Italiana) |
-| E-invoicing system | Sistema di Interscambio (SdI), run by the Agenzia delle Entrate (art. 1(2) D.Lgs. 127/2015) |
-| Invoice format | FatturaPA XML (ordinary schema 1.2.3, simplified 1.0.2) |
-| Key legislation | D.Lgs. 127/2015 art. 1; D.P.R. 633/1972 art. 21; D.L. 36/2022 art. 18; D.Lgs. 471/1997 arts. 6 and 11; Provvedimento 433608/2022 (private parties); D.M. 55/2013 (public administrations) |
-| Portal | "Fatture e Corrispettivi", in the Agenzia's reserved area |
-| Current spec version | 1.9.1, usable from 15 May 2026 (version 1.9 was usable from 1 April 2025) |
-| B2G mandatory since | 31 March 2015 for all public administrations |
-| B2B/B2C mandatory since | 1 January 2019 |
-| Current status | In force for VAT persons resident or established in Italy, forfettari included (exceptions in Section 2) |
+| Field | Value | Source |
+| --- | --- |---|
+| Country | Italy (Repubblica Italiana) | same |
+| E-invoicing system | Sistema di Interscambio (SdI), run by the Agenzia delle Entrate (art. 1(2) D.Lgs. 127/2015) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 |
+| Invoice format | FatturaPA XML (ordinary schema 1.2.3, simplified 1.0.2) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
+| Key legislation | D.Lgs. 127/2015 art. 1; D.P.R. 633/1972 art. 21; D.L. 36/2022 art. 18; D.Lgs. 471/1997 arts. 6 and 11; Provvedimento 433608/2022 (private parties); D.M. 55/2013 (public administrations) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica |
+| Portal | "Fatture e Corrispettivi", in the Agenzia's reserved area | same |
+| Current spec version | 1.9.1, usable from 15 May 2026 (version 1.9 was usable from 1 April 2025) | https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new |
+| B2G mandatory since | 31 March 2015 for all public administrations | https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica |
+| B2B/B2C mandatory since | 1 January 2019 | same |
+| Current status | In force for VAT persons resident or established in Italy, forfettari included (exceptions in Section 2) | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari |
 
 ## Section 2: Mandate Scope
 
@@ -77,17 +77,17 @@ Who in Italy must issue e-invoices through the Sistema di Interscambio (SdI) and
 
 **Format Specification**
 
-| Parameter | Value |
-| --- | --- |
-| Format | FatturaPA XML (Italian schema, not the European standard EN 16931) |
-| Schema files | VFPR12 (ordinary) and VFSM10 (simplified) |
-| Root element | `FatturaElettronica` (ordinary) or `FatturaElettronicaSemplificata` (simplified) |
-| Versioning attribute | `versione="FPR12"` (to private parties) or `versione="FPA12"` (to a public administration); simplified invoice `FSM10` |
-| Encoding | UTF-8 |
-| Max file size | 5MB per file (one invoice or a batch) |
-| Namespace | `http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2` (ordinary) |
-| File name | Country code, sender's fiscal ID, underscore, unique progressive of up to 5 characters: `IT01234567890_00001.xml` |
-| Signature | Optional: CAdES or XAdES Baseline B (qualified certificate), or CAdES with the Agenzia's certificate |
+| Parameter | Value | Source |
+| --- | --- |---|
+| Format | FatturaPA XML (Italian schema, not the European standard EN 16931) |  |
+| Schema files | VFPR12 (ordinary) and VFSM10 (simplified) |  |
+| Root element | `FatturaElettronica` (ordinary) or `FatturaElettronicaSemplificata` (simplified) | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
+| Versioning attribute | `versione="FPR12"` (to private parties) or `versione="FPA12"` (to a public administration); simplified invoice `FSM10` | same |
+| Encoding | UTF-8 | same |
+| Max file size | 5MB per file (one invoice or a batch) | same |
+| Namespace | `http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2` (ordinary) |  |
+| File name | Country code, sender's fiscal ID, underscore, unique progressive of up to 5 characters: `IT01234567890_00001.xml` | same |
+| Signature | Optional: CAdES or XAdES Baseline B (qualified certificate), or CAdES with the Agenzia's certificate | same |
 
 ### XML Structure
 
@@ -279,22 +279,22 @@ The compilation guide 1.10 shows how to fill and correct TD16 to TD29.
 
 **VAT Rates (2025/2026)**
 
-| Rate | Application | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote |
-| 22% | Standard rate | "l'aliquota ordinaria Iva è del 22%" |
-| 10% | Reduced rate (for example household electricity and gas, medicines, building renovation) | "10% , per esempio per la fornitura di energia elettrica" |
-| 5% | Reduced rate (some foods) | "5% , per esempio per alcuni alimenti" |
-| 4% | Super-reduced rate (basic food, drinks, agricultural products) | "4% , per esempio per alimentari, bevande e prodotti agricoli" |
+| Rate | Application | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote |  |
+| 22% | Standard rate | "l'aliquota ordinaria Iva è del 22%" | https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote |
+| 10% | Reduced rate (for example household electricity and gas, medicines, building renovation) | "10% , per esempio per la fornitura di energia elettrica" | same |
+| 5% | Reduced rate (some foods) | "5% , per esempio per alcuni alimenti" | same |
+| 4% | Super-reduced rate (basic food, drinks, agricultural products) | "4% , per esempio per alimentari, bevande e prodotti agricoli" | same |
 
 For a line with no VAT, the rate field is set to "0%" with a nature code; for a forfettario the nature is "Non soggette - altri casi" (N2.2) ([forfettari page](https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari)).
 
 ### Simplified invoice limit
 
-| Item | Amount | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
-| Maximum total of a simplified invoice (TD07), error 00460 | EUR 400 | "non può eccedere il limite di euro 400"; no limit for forfettari and RF20 |
+| Item | Amount | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |  |
+| Maximum total of a simplified invoice (TD07), error 00460 | EUR 400 | "non può eccedere il limite di euro 400"; no limit for forfettari and RF20 | https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 |
 
 ### Rounding
 
@@ -312,19 +312,19 @@ Each VAT rate and each nature code needs its own `DatiRiepilogo` block. `Natura`
 
 ### Stamp duty (imposta di bollo) on e-invoices
 
-| Item | Amount or rule | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
-| When due | The Agenzia flags an invoice as owing stamp duty (list B) when the sum of its line totals is above EUR 77.47, a line carries nature N2.1, N2.2, N3.5, N3.6 or N4, and no NB code is shown | "risulta maggiore di 77,47 euro" |
-| Amount | EUR 2 per invoice | "i 2 euro dell'imposta di bollo" ([forfettari page](https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari)) |
-| How shown | `BolloVirtuale` = "SI"; forfettari include the stamp in the document total | Forfettari page |
-| Not subject | Line tag `TipoDato` (2.2.1.16.1): NB1 insurance, NB2 third sector, NB3 bank statement | Ordinary invoice only |
-| Excluded from the check | TD16, TD17, TD18, TD19, TD28, and RegimeFiscale RF05 to RF11 | June 2026 guide |
-| Quarterly check | Agenzia lists A (stamp shown) and B (stamp missing, editable) per quarter | Edit B by the end of the next month; Q2 by 10 September |
-| Payment | Q1 31 May; Q2 30 September; Q3 30 November; Q4 28 February next year (29 in a leap year) | Portal, or F24 codes 2521 to 2524, 2525 penalties, 2526 interest |
-| Small amounts | If Q1 is not above EUR 5,000, pay it by 30 September; if Q1 and Q2 together are not above EUR 5,000, pay them by 30 November | "non supera 5.000 euro" |
-| Late or short payment | PEC notice: stamp, penalty cut to one third, interest | Reply within thirty days |
-| Review | A stamp charged in error can be removed after a successful request for review (riesame); see the lists of excluded invoices in the portal | June 2026 guide |
+| Item | Amount or rule | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |  |
+| When due | The Agenzia flags an invoice as owing stamp duty (list B) when the sum of its line totals is above EUR 77.47, a line carries nature N2.1, N2.2, N3.5, N3.6 or N4, and no NB code is shown | "risulta maggiore di 77,47 euro" | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
+| Amount | EUR 2 per invoice | "i 2 euro dell'imposta di bollo" ([forfettari page](https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari)) |  |
+| How shown | `BolloVirtuale` = "SI"; forfettari include the stamp in the document total | Forfettari page | https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari |
+| Not subject | Line tag `TipoDato` (2.2.1.16.1): NB1 insurance, NB2 third sector, NB3 bank statement | Ordinary invoice only | https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 |
+| Excluded from the check | TD16, TD17, TD18, TD19, TD28, and RegimeFiscale RF05 to RF11 | June 2026 guide | same |
+| Quarterly check | Agenzia lists A (stamp shown) and B (stamp missing, editable) per quarter | Edit B by the end of the next month; Q2 by 10 September | same |
+| Payment | Q1 31 May; Q2 30 September; Q3 30 November; Q4 28 February next year (29 in a leap year) | Portal, or F24 codes 2521 to 2524, 2525 penalties, 2526 interest | same |
+| Small amounts | If Q1 is not above EUR 5,000, pay it by 30 September; if Q1 and Q2 together are not above EUR 5,000, pay them by 30 November | "non supera 5.000 euro" | same |
+| Late or short payment | PEC notice: stamp, penalty cut to one third, interest | Reply within thirty days | same |
+| Review | A stamp charged in error can be removed after a successful request for review (riesame); see the lists of excluded invoices in the portal | June 2026 guide | same |
 
 ## Section 8: Archiving Requirements
 
@@ -411,19 +411,21 @@ These rates apply to violations from 1 September 2024 (D.Lgs. 87/2024, art. 5); 
 
 ## Sources
 
-- Agenzia: technical specifications 1.9.1: https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1
-- Agenzia: specification versions: https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new
-- Agenzia: e-invoice guide (December 2025): https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica
-- Agenzia: compilation guide 1.10: https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025
-- Agenzia: e-invoices for forfettari: https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari
-- Agenzia: stamp duty guide (June 2026): https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026
-- Agenzia: VAT rates: https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote
-- Agenzia: free storage service: https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica
-- D.Lgs. 127/2015, art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30
-- D.P.R. 633/1972, art. 21: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30
-- D.L. 36/2022, art. 18: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30
-- D.L. 119/2018, art. 10-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30
-- D.Lgs. 471/1997, art. 6 and art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30
+- Agenzia: technical specifications 1.9.1: https://www.agenziaentrate.gov.it/portale/documents/d/guest/allegato-a-specifiche-tecniche-vers-1-9-1 (read 2026-10-31)
+- Agenzia: specification versions: https://www.agenziaentrate.gov.it/portale/fatturazione-elettronica-e-dati-fatture-transfrontaliere-new (read 2026-10-31)
+- Agenzia: e-invoice guide (December 2025): https://www.agenziaentrate.gov.it/portale/documents/d/guest/la_fattura_elettronica (read 2026-10-31)
+- Agenzia: compilation guide 1.10: https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_compilazione-fe-esterometro-v1-10_aprile_2025 (read 2026-10-31)
+- Agenzia: e-invoices for forfettari: https://www.agenziaentrate.gov.it/portale/fattura-elettronica-per-i-forfettari (read 2026-10-31)
+- Agenzia: stamp duty guide (June 2026): https://www.agenziaentrate.gov.it/portale/documents/d/guest/l-imposta_di_bollo_sulle_fatture_elettronichegiugno2026 (read 2026-10-31)
+- Agenzia: VAT rates: https://www.agenziaentrate.gov.it/portale/web/guest/iva-regole-generali-aliquote-esenzioni-pagamento/norme-generali-e-aliquote (read 2026-10-31)
+- Agenzia: free storage service: https://www.agenziaentrate.gov.it/portale/aree-tematiche/fatturazione-elettronica/guida-fatturazione-elettronica/i-servizi-dell-agenzia-fe/servizio-conservazione-elettronica (read 2026-10-31)
+- D.Lgs. 127/2015, art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2015-08-05;127~art1!vig=2026-06-30 (read 2026-10-31)
+- D.P.R. 633/1972, art. 21: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21!vig=2026-06-30 (read 2026-10-31)
+- D.L. 36/2022, art. 18: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2022-04-30;36~art18!vig=2026-06-30 (read 2026-10-31)
+- D.L. 119/2018, art. 10-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2018-10-23;119~art10bis!vig=2026-06-30 (read 2026-10-31)
+- D.Lgs. 471/1997, art. 6 and art. 11: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art6!vig=2026-06-30 and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art11!vig=2026-06-30 (read 2026-10-31)
+
+Not yet confirmed: that FatturaPA is not EN 16931; the schema file names VFPR12 and VFSM10 (not in the specifications 1.9.1 text).
 
 ## Disclaimer
 

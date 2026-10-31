@@ -1,10 +1,10 @@
 ---
 name: italy-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Italy. Trigger on phrases like "set up a company in Italy", "SRL formation", "SRLS", "Camera di Commercio", "Italian company formation", "register a business Italy", "società a responsabilità limitata", "Registro delle Imprese", "partita IVA", "Italian notary", or any question about starting a business entity in Italy. Covers entity types (SRL, SRLS, SPA, SNC, SAS), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on Italian company formation.
-version: 1.0
+version: 1.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -20,33 +20,33 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 How to set up a business in Italy: which legal form to pick, the steps from the deed to the Registro delle Imprese, the capital that must be paid in, the VAT number (partita IVA), the ATECO activity code, the INPS and INAIL registrations, and the duties that start once the business exists. Figures are for tax year 2026. Italy's tax year is the calendar year. The Civil Code articles were read on Normattiva in their text in force on 22 September 2026. The annual government concession tax on company books comes from an Agenzia delle Entrate page that does not show a year; the amounts are fixed by statute and apply to 2026. The IRAP rate comes from the Agenzia's instructions to the IRAP return filed in 2026, which covers tax year 2025.
 
-## Italy Company Formation Guide v1.0
+## Italy Company Formation Guide v1.1
 
 Tax detail lives in other Guides: income tax for individuals and partners in `it-income-tax`, IRAP in `it-irap`, VAT returns in `italy-vat-return`, e-invoicing in `italy-einvoice`, and INPS contributions in `it-inps-contributions`. Where no official page prints a number, this Guide says so and gives none.
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Italy (Italian Republic) |
-| Currency | Euro |
-| Company registrar | Registro delle Imprese, kept by the local Camera di Commercio |
-| Key legislation | Civil Code (Codice civile): arts. 2291 and following (S.n.c.), 2313 and following (S.a.s.), 2325 and following (S.p.A.), 2462 to 2483 (S.r.l.), 2463-bis (S.r.l. semplificata); D.L. 1/2012 art. 3 (S.r.l. semplificata costs); D.P.R. 633/1972 art. 35 (VAT registration) |
-| Typical formation time | Legacy estimate: 1 to 3 weeks. No official page states a duration. The notary must file a company deed within ten days (art. 2330) |
-| Taxes on an S.r.l. or S.p.A. | IRES and IRAP. The table below gives each rate. No official page prints one combined rate, so this Guide does not state one |
-| Tax authority | Agenzia delle Entrate (codice fiscale, partita IVA, tax returns) |
+| Field | Value | Source |
+| --- | --- |---|
+| Country | Italy (Italian Republic) | same |
+| Currency | Euro | same |
+| Company registrar | Registro delle Imprese, kept by the local Camera di Commercio | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2330!vig= |
+| Key legislation | Civil Code (Codice civile): arts. 2291 and following (S.n.c.), 2313 and following (S.a.s.), 2325 and following (S.p.A.), 2462 to 2483 (S.r.l.), 2463-bis (S.r.l. semplificata); D.L. 1/2012 art. 3 (S.r.l. semplificata costs); D.P.R. 633/1972 art. 35 (VAT registration) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig= and https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art35!vig=2026-06-30 |
+| Typical formation time | Legacy estimate: 1 to 3 weeks. No official page states a duration. The notary must file a company deed within ten days (art. 2330) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2330!vig= |
+| Taxes on an S.r.l. or S.p.A. | IRES and IRAP. The table below gives each rate. No official page prints one combined rate, so this Guide does not state one | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
+| Tax authority | Agenzia delle Entrate (codice fiscale, partita IVA, tax returns) | https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/aa7_10/schedainfo-aa7_10 |
 
 **Company taxes (for detail see `it-irap` and `it-income-tax`)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
-| IRES, corporate income tax on the company's net income (TUIR art. 77) | 24% | "con l'aliquota del 24 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |  |
+| IRES, corporate income tax on the company's net income (TUIR art. 77) | 24% | "con l'aliquota del 24 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
-| IRAP, regional tax, ordinary rate on the net value of production. Regions may vary it, and some sectors pay a surcharge in 2026 (see `it-irap`) | 3.9% | "l'aliquota del 3,9 per cento" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |  |
+| IRAP, regional tax, ordinary rate on the net value of production. Regions may vary it, and some sectors pay a surcharge in 2026 (see `it-irap`) | 3.9% | "l'aliquota del 3,9 per cento" | https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 |
 
 IRAP is also due from S.n.c. and S.a.s., under art. 3(1)(b) of D.Lgs. 446/1997 (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3!vig=2026-06-30). Individuals, including a ditta individuale, have not paid IRAP since 2022 (L. 234/2021 art. 1 comma 8, quoted in note 70 on the same Normattiva page; see `it-irap`).
 
@@ -99,12 +99,12 @@ The steps below are for an S.r.l. A ditta individuale skips Steps 2 to 5: it reg
 - **Forfettario for a ditta individuale.** An individual can choose the flat-rate regime in form AA9/12 or in ComUnica. Entry conditions and rates are in the table below; the full rules are in `it-income-tax`.
 - **PEC.** Every company needs a certified e-mail address (PEC), recorded in the Registro delle Imprese. The statute was not read for this refresh (see "When to refuse or refer").
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
-| Forfettario: previous-year revenue or fees, annualised, must not be above | EUR 85,000 | "non superiori a 85.000 euro" |
-| Forfettario substitute tax, in place of IRPEF and its surcharges | 15% | "nella misura del 15%" |
-| Forfettario start-up rate, first five years, if the conditions are met | 5% | "L'imposta sostitutiva è ridotta al 5% per i primi cinque anni di attività" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |  |
+| Forfettario: previous-year revenue or fees, annualised, must not be above | EUR 85,000 | "non superiori a 85.000 euro" | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
+| Forfettario substitute tax, in place of IRPEF and its surcharges | 15% | "nella misura del 15%" | same |
+| Forfettario start-up rate, first five years, if the conditions are met | 5% | "L'imposta sostitutiva è ridotta al 5% per i primi cinque anni di attività" | same |
 
 ### Step 7: INPS and INAIL Registration
 
@@ -114,22 +114,22 @@ The steps below are for an S.r.l. A ditta individuale skips Steps 2 to 5: it reg
 
 - **Tassa di Concessione Governativa.** S.p.A., S.r.l. and S.a.p.a. pay a yearly government concession tax for the numbering and stamping of their books. It depends on the capital on 1 January of the year paid. The first year is paid by postal slip (c/c 6007) before the VAT start-of-activity declaration; later years by F24 with tax code 7085 by 16 March. Partnerships and individuals do not pay it.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg |
-| Yearly tax if capital is not above EUR 516,456.90 | EUR 309.87 | "309,87 euro, se l’ammontare del capitale o del fondo di dotazione non supera" |
-| Capital limit | EUR 516,456.90 | "516.456,90 euro" |
-| Yearly tax if capital is above the limit | EUR 516.46 | "516,46 euro, se il capitale sociale o il fondo di dotazione supera tale importo" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg |  |
+| Yearly tax if capital is not above EUR 516,456.90 | EUR 309.87 | "309,87 euro, se l’ammontare del capitale o del fondo di dotazione non supera" | https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg |
+| Capital limit | EUR 516,456.90 | "516.456,90 euro" | same |
+| Yearly tax if capital is above the limit | EUR 516.46 | "516,46 euro, se il capitale sociale o il fondo di dotazione supera tale importo" | same |
 
 ## Section 4: Capital Requirements
 
 The standard S.r.l. minimum is printed in words in art. 2463 ("diecimila euro") and in digits in art. 2463-bis, which is why the table uses that article.
 
-| Entity Type | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig= |
-| S.r.l. standard minimum capital (art. 2463, secondo comma, numero 4, as referred to in art. 2463-bis) | EUR 10,000 | "inferiore all'importo di 10.000 euro previsto all'articolo 2463" |
-| S.r.l.s. minimum capital; it must also be below EUR 10,000, subscribed and paid in full at formation, in cash, to the directors | EUR 1 | "pari almeno ad 1 euro" |
+| Entity Type | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig= |  |
+| S.r.l. standard minimum capital (art. 2463, secondo comma, numero 4, as referred to in art. 2463-bis) | EUR 10,000 | "inferiore all'importo di 10.000 euro previsto all'articolo 2463" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig= |
+| S.r.l.s. minimum capital; it must also be below EUR 10,000, subscribed and paid in full at formation, in cash, to the directors | EUR 1 | "pari almeno ad 1 euro" | same |
 
 | Entity Type | Min. Share Capital | Min. Paid-Up | Payment Timing | In-Kind Contributions |
 | --- | --- | --- | --- | --- |
@@ -222,6 +222,37 @@ Durations are legacy estimates, except the notary's ten-day filing limit (art. 2
 | Bank account fully operational | 1 to 3 weeks | Day 16 to 50 |
 | **Ready to trade** |  | **About 2 to 5 weeks** |
 
+## Worked examples
+
+An S.r.l. with taxable income of EUR 100,000 pays IRES at 24%: EUR 24,000 (TUIR art. 77). IRAP is worked separately in `it-irap`.
+
+```oa-check
+name: S.r.l., taxable income EUR 100,000, IRES at 24%
+inputs:
+  taxable_income: 100000
+  ires_rate_pct: 24
+steps:
+  - ires: taxable_income * ires_rate_pct / 100
+expected:
+  ires: 24000.00
+```
+
+A new forfettario sole trader with taxable income of EUR 30,000 compares the 5% start-up rate with the 15% rate. If the start-up conditions are met, the tax is EUR 1,500, not EUR 4,500.
+
+```oa-check
+name: Forfettario, taxable income EUR 30,000, 5% against 15%
+inputs:
+  taxable_income: 30000
+steps:
+  - startup_tax: taxable_income * 5 / 100
+  - standard_tax: taxable_income * 15 / 100
+  - saving: standard_tax - startup_tax
+expected:
+  startup_tax: 1500.00
+  standard_tax: 4500.00
+  saving: 3000.00
+```
+
 ## The method, step by step
 
 1. Pick the legal form with the client's answers below, using the comparison in Section 2 and the capital rules of Civil Code arts. 2463, 2463-bis, 2464, 2327 and 2342 (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig=).
@@ -249,16 +280,22 @@ Durations are legacy estimates, except the notary's ten-day filing limit (art. 2
 
 ## Sources
 
-- Civil Code arts. 2296, 2327, 2330, 2331, 2342, 2364, 2435, 2463, 2463-bis, 2464: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463!vig=
-- D.L. 1/2012 art. 3: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-01-24;1~art3!vig=
-- D.P.R. 633/1972 art. 35: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art35!vig=
-- D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30
-- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig=
-- D.Lgs. 446/1997 art. 3: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3!vig=2026-06-30
-- Agenzia delle Entrate, IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414
-- Agenzia delle Entrate, concession tax on company books: https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg
-- Agenzia delle Entrate, forfettario rules: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020-
+- Civil Code arts. 2296, 2327, 2330, 2331, 2342, 2364, 2435, 2463, 2463-bis, 2464: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463!vig= (read 2026-10-31)
+- D.L. 1/2012 art. 3: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-01-24;1~art3!vig= (read 2026-10-31)
+- D.P.R. 633/1972 art. 35: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art35!vig= (read 2026-10-31)
+- D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 77: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art77!vig= (read 2026-10-31)
+- D.Lgs. 446/1997 art. 3: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-15;446~art3!vig=2026-06-30 (read 2026-10-31)
+- Agenzia delle Entrate, IRAP 2026 instructions: https://www.agenziaentrate.gov.it/portale/documents/20143/9765340/IRAP_2026_istruzioni.pdf/6cd3bc0e-e7bd-f449-c86b-03cc142c1b74?t=1772192055414 (read 2026-10-31)
+- Agenzia delle Entrate, concession tax on company books: https://www.agenziaentrate.gov.it/portale/schede/pagamenti/f24verstassareg/f24-tassa-ccgg (read 2026-10-31)
+- Agenzia delle Entrate, forfettario rules: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- (read 2026-10-31)
 - Agenzia delle Entrate, forms AA7/10 and AA9/12 and resolution 24/E of 2025 on ATECO: links in "The method, step by step"
+- Civil Code art. 2330: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2330!vig= (read 2026-10-31)
+- Civil Code art. 2463-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262:2~art2463bis!vig= (read 2026-10-31)
+- D.P.R. 633/1972 art. 35: https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972-10-26;633~art35!vig=2026-06-30 (read 2026-10-31)
+- Agenzia, form AA7/10: https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/aa7_10/schedainfo-aa7_10 (read 2026-10-31)
+
+Not yet confirmed: the 1 to 3 week formation time (a legacy estimate; no official page states a duration).
 
 ## Disclaimer
 

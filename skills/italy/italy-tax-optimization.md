@@ -1,10 +1,10 @@
 ---
 name: italy-tax-optimization
 description: Use this skill whenever asked about reducing tax in Italy, tax planning, saving tax, optimizing tax, allowances, deductions the client might be missing, or any question about legal strategies to minimize income tax liability for self-employed individuals in Italy. Trigger on phrases like "reduce tax", "tax planning", "save tax", "optimize", "allowances", "deductions I'm missing", "risparmiare sulle tasse", "ottimizzazione fiscale", "pagare meno tasse", "detrazioni", "deduzioni". ALWAYS read this skill before advising on any Italian tax optimization strategy.
-version: 1.0
+version: 1.1
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -20,38 +20,38 @@ Lawful tax planning for a self-employed person in Italy: forfettario or ordinari
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Italy (Repubblica Italiana) |
-| Key legislation | TUIR art. 5, 8, 10, 11, 16-ter, 54 to 54-octies, 84, 102, 164; L. 190/2014 art. 1 co. 54-89 (forfettario); D.Lgs. 252/2005 (pension funds); L. 212/2000 art. 10-bis (abuse of law) |
-| Attitude to planning | Choosing between regimes and lawful options is free (art. 10-bis(4)); abuse is disregarded (Section 10) |
-| Currency | EUR |
-| Tax year | Calendar year |
-| Return | Modello Redditi PF online by 31 October of the following year (D.P.R. 322/1998 art. 2). Not the 730 for VAT-number income. See `it-income-tax` |
+| Field | Value | Source |
+| --- | --- |---|
+| Country | Italy (Repubblica Italiana) | same |
+| Key legislation | TUIR art. 5, 8, 10, 11, 16-ter, 54 to 54-octies, 84, 102, 164; L. 190/2014 art. 1 co. 54-89 (forfettario); D.Lgs. 252/2005 (pension funds); L. 212/2000 art. 10-bis (abuse of law) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
+| Attitude to planning | Choosing between regimes and lawful options is free (art. 10-bis(4)); abuse is disregarded (Section 10) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 |
+| Currency | EUR | same |
+| Tax year | Calendar year | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 |
+| Return | Modello Redditi PF online by 31 October of the following year (D.P.R. 322/1998 art. 2). Not the 730 for VAT-number income. See `it-income-tax` | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 and https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026 |
 
 ### IRPEF Rates 2026 (Legge di Bilancio 2026)
 
 - Top of the first bracket: EUR 28,000; top of the second bracket: EUR 50,000 ([TUIR art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art11!vig=)): "a) fino a 28.000 euro, 23 per cento"; "fino a 50.000 euro".
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
-| First bracket | 23% | "sull’intero importo" |
-| Second bracket, from 2026 income | 33% | "dal 35 al 33 per cento" |
-| Old second-bracket rate, 2024 and 2025 only | 35% | "Dall’anno 2024" |
-| Above the second bracket | 43% | "sul reddito eccedente i 50.000 euro" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |  |
+| First bracket | 23% | "sull’intero importo" | https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef |
+| Second bracket, from 2026 income | 33% | "dal 35 al 33 per cento" | same |
+| Old second-bracket rate, 2024 and 2025 only | 35% | "Dall’anno 2024" | same |
+| Above the second bracket | 43% | "sul reddito eccedente i 50.000 euro" | same |
 
 - Regional and municipal surcharges come on top (not on forfettario income): `it-income-tax`.
 
 ### Detrazioni Limits (Art. 16-ter TUIR, from 2025)
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 |
-| Reddito complessivo above which the cap applies | EUR 75,000 | "reddito complessivo superiore a 75.000 euro" |
-| Income at which the base amount drops | EUR 100,000 | "non superiore a 100.000 euro" |
-| Base amount, up to that level | EUR 14,000 | "a) 14.000 euro" |
-| Base amount, above it | EUR 8,000 | "b) 8.000 euro" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 |  |
+| Reddito complessivo above which the cap applies | EUR 75,000 | "reddito complessivo superiore a 75.000 euro" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 |
+| Income at which the base amount drops | EUR 100,000 | "non superiore a 100.000 euro" | same |
+| Base amount, up to that level | EUR 14,000 | "a) 14.000 euro" | same |
+| Base amount, above it | EUR 8,000 | "b) 8.000 euro" | same |
 
 - Reddito complessivo above which a further cut applies (art. 16-ter(5-bis)): EUR 200,000; cut to the detrazioni for certain oneri: EUR 440 ([L. 199/2025](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-12-30;199)): "reddito complessivo superiore a 200.000 euro"; "pari a 440 euro".
 - Above the first limit, oneri giving a detrazione count only up to the base amount times a family coefficient that rises with the number of children; some items are outside the cap (art. 16-ter(4) and (5)).
@@ -60,16 +60,16 @@ Lawful tax planning for a self-employed person in Italy: forfettario or ordinari
 
 The first decision. The entry conditions decide whether the forfettario is open; a taxpayer who qualifies may still choose the ordinario.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
-| Entry: PREVIOUS-year revenue or fees, annualised, all ATECO codes together, not above | EUR 85,000 | "ragguagliati ad anno, non superiori a 85.000 euro" |
-| Exit in the SAME year once revenue or fees go over | EUR 100,000 | "dallo stesso anno" |
-| Entry: previous-year gross staff and collaborator costs not above | EUR 20,000 | "20.000 euro lordi" |
-| Exclusion: previous-year employment income above (standing rule) | EUR 30,000 | "superiore a 30.000 euro" |
-| The same limit for 2025 and 2026 only | EUR 35,000 | "elevato a 35.000 euro" |
-| Substitute tax, replacing IRPEF and both surcharges | 15% | "un’unica imposta" |
-| Start-up rate, first five years, if conditions are met | 5% | "per i primi cinque anni di attività" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |  |
+| Entry: PREVIOUS-year revenue or fees, annualised, all ATECO codes together, not above | EUR 85,000 | "ragguagliati ad anno, non superiori a 85.000 euro" | https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- |
+| Exit in the SAME year once revenue or fees go over | EUR 100,000 | "dallo stesso anno" | same |
+| Entry: previous-year gross staff and collaborator costs not above | EUR 20,000 | "20.000 euro lordi" | same |
+| Exclusion: previous-year employment income above (standing rule) | EUR 30,000 | "superiore a 30.000 euro" | same |
+| The same limit for 2025 and 2026 only | EUR 35,000 | "elevato a 35.000 euro" | same |
+| Substitute tax, replacing IRPEF and both surcharges | 15% | "un’unica imposta" | same |
+| Start-up rate, first five years, if conditions are met | 5% | "per i primi cinque anni di attività" | same |
 
 - Coefficient, professional/scientific/technical/health/education/financial services: 78%; other activities incl. IT services: 67% (L. 145/2018 allegato 2, [Agenzia table](https://www.agenziaentrate.gov.it/portale/documents/20143/241208/allegato+4.pdf/d69be7fc-b18a-3c73-bd2e-b0f3c1970218)).
 
@@ -136,13 +136,13 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 ### Motor Vehicle Deduction Limits (Art. 164 TUIR)
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
-| Cars not used only as business tools; individual professional: one vehicle only | 20% | "nella misura del 20 per cento" |
-| Sales agents and representatives | 80% | "attività di agenzia" |
-| Cars given to employees for mixed use most of the year | 70% | "uso promiscuo" |
-| Sales agents: purchase cost counted up to | EUR 25,822.84 | "elevati rispettivamente a euro 25.822,84" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |  |
+| Cars not used only as business tools; individual professional: one vehicle only | 20% | "nella misura del 20 per cento" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 |
+| Sales agents and representatives | 80% | "attività di agenzia" | same |
+| Cars given to employees for mixed use most of the year | 70% | "uso promiscuo" | same |
+| Sales agents: purchase cost counted up to | EUR 25,822.84 | "elevati rispettivamente a euro 25.822,84" | same |
 
 - Only vehicles used exclusively as tools of the business itself (impresa) are deducted in full (art. 164(1)(a)). Cost caps still apply: purchase and hire costs count only up to limits that art. 164(1)(b) writes in lire; for sales agents the article prints the raised purchase limit in euro (table). Fuel is deductible only if paid by credit, debit or prepaid card (art. 164(1-bis)).
 
@@ -164,73 +164,73 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 ## Section 6: Timing Strategies
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
-| Payments on account, as a share of last year's tax (or of the lower tax expected) | 100% | "dell’imposta dichiarata nell’anno" |
-| First instalment, by 30 June, general rule (not ISA taxpayers or forfettari) | 40% | "entro il 30 giugno" |
-| Second instalment, by 30 November, general rule | 60% | "entro il 30 novembre" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |  |
+| Payments on account, as a share of last year's tax (or of the lower tax expected) | 100% | "dell’imposta dichiarata nell’anno" | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef |
+| First instalment, by 30 June, general rule (not ISA taxpayers or forfettari) | 40% | "entro il 30 giugno" | same |
+| Second instalment, by 30 November, general rule | 60% | "entro il 30 novembre" | same |
 
 - **ISA taxpayers and forfettari** pay the acconto in two equal instalments on the same dates (Agenzia payment page; `it-estimated-tax`).
 
-| Strategy | Detail |
-| --- | --- |
-| Forfettario limits | Tested on revenue earned or fees received in the year; watch both during the year. Splitting activity or invoices only to stay under them is a Section 10 risk |
-| Costs (ordinario) | Professionals use the cash basis: costs count when paid (TUIR art. 54(1)) |
-| Acconti | A lower forecast is allowed; underpaying on a wrong one brings penalties and interest (`it-estimated-tax`) |
-| Pension fund | Paid by 31 December, within the Section 8 limit |
+| Strategy | Detail | Source |
+| --- | --- |---|
+| Forfettario limits | Tested on revenue earned or fees received in the year; watch both during the year. Splitting activity or invoices only to stay under them is a Section 10 risk | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
+| Costs (ordinario) | Professionals use the cash basis: costs count when paid (TUIR art. 54(1)) | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30 |
+| Acconti | A lower forecast is allowed; underpaying on a wrong one brings penalties and interest (`it-estimated-tax`) | https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef and https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 |
+| Pension fund | Paid by 31 December, within the Section 8 limit |  |
 
 ## Section 7: VAT Optimization (IVA)
 
-| Strategy | Detail |
-| --- | --- |
-| Forfettario | No IVA charged or recovered; helps with private clients |
-| Regime dei minimi | Closed to new entrants |
-| IVA per cassa | By option, on supplies to business or professional customers: IVA due on payment, and IVA on purchases deductible on payment, for volume d'affari "non superiore a 2 milioni di euro" ([D.L. 83/2012 art. 32-bis](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-06-22;83~art32bis!vig=2026-06-30)); due anyway after one year. Not with special VAT schemes or reverse charge |
-| Split payment, refunds, reverse charge | `italy-vat-return` |
+| Strategy | Detail | Source |
+| --- | --- |---|
+| Forfettario | No IVA charged or recovered; helps with private clients | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 |
+| Regime dei minimi | Closed to new entrants | same |
+| IVA per cassa | By option, on supplies to business or professional customers: IVA due on payment, and IVA on purchases deductible on payment, for volume d'affari "non superiore a 2 milioni di euro" ([D.L. 83/2012 art. 32-bis](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2012-06-22;83~art32bis!vig=2026-06-30)); due anyway after one year. Not with special VAT schemes or reverse charge |  |
+| Split payment, refunds, reverse charge | `italy-vat-return` | same |
 
 ## Section 8: Social Security Optimization
 
 ### INPS Contribution Structures
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf |
-| Gestione separata: professionals with no other compulsory cover | 26.07% | "Soggetti non assicurati presso altra forma" |
-| Gestione separata: pensioners or otherwise insured | 24% | "l’aliquota è confermata" |
-| Gestione separata: maximum income | EUR 122,295 | "è pari a 122.295,00 euro" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf |  |
+| Gestione separata: professionals with no other compulsory cover | 26.07% | "Soggetti non assicurati presso altra forma" | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf |
+| Gestione separata: pensioners or otherwise insured | 24% | "l’aliquota è confermata" | same |
+| Gestione separata: maximum income | EUR 122,295 | "è pari a 122.295,00 euro" | same |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
-| Artigiani rate | 24% | "Titolari e coadiuvanti" |
-| Commercianti rate | 24.48% | "Titolari e coadiuvanti" |
-| Income above which each rate rises by one point | EUR 56,224 | "all’importo di 56.224,00 euro" |
-| Minimum income (minimale): contributions due even if income is lower | EUR 18,808 | "è pari a 18.808,00 euro" |
-| Fixed contribution on the minimale, artigiani | EUR 4,521.36 | Circolare 14/2026, minimale table |
-| Fixed contribution on the minimale, commercianti | EUR 4,611.64 | Circolare 14/2026, minimale table |
-| Artigiani and commercianti: maximum income, contributors before 1996 | EUR 93,707 | "è pari a 93.707,00 euro" |
-| The same, enrolled from 1996 with no earlier contributions | EUR 122,295 | "per il 2026, a 122.295,00 euro" |
-| Optional cut for forfettario artigiani and commercianti | 35% | "riduzione contributiva" |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | all figures below | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |  |
+| Artigiani rate | 24% | "Titolari e coadiuvanti" | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Commercianti rate | 24.48% | "Titolari e coadiuvanti" | same |
+| Income above which each rate rises by one point | EUR 56,224 | "all’importo di 56.224,00 euro" | same |
+| Minimum income (minimale): contributions due even if income is lower | EUR 18,808 | "è pari a 18.808,00 euro" | same |
+| Fixed contribution on the minimale, artigiani | EUR 4,521.36 | Circolare 14/2026, minimale table | same |
+| Fixed contribution on the minimale, commercianti | EUR 4,611.64 | Circolare 14/2026, minimale table | same |
+| Artigiani and commercianti: maximum income, contributors before 1996 | EUR 93,707 | "è pari a 93.707,00 euro" | same |
+| The same, enrolled from 1996 with no earlier contributions | EUR 122,295 | "per il 2026, a 122.295,00 euro" | same |
+| Optional cut for forfettario artigiani and commercianti | 35% | "riduzione contributiva" | same |
 
 - A cassa member pays the cassa; its rates are on no allowed page (`it-inps-contributions`).
 
 ### Optimization Strategies
 
-| Strategy | Detail |
-| --- | --- |
-| Forfettario cut | Forfettario artigiani and commercianti only, on application; continues unless renounced or conditions end. Renouncing is final. Lowers the future pension. Not for the gestione separata |
-| Other cuts | Circolare 14/2026 also keeps a cut for artigiani and commercianti over 65 already drawing an INPS pension, and one for those first enrolled in 2025: `it-inps-contributions` |
-| Minimum contribution | Artigiani and commercianti owe the fixed amount whatever their income |
+| Strategy | Detail | Source |
+| --- | --- |---|
+| Forfettario cut | Forfettario artigiani and commercianti only, on application; continues unless renounced or conditions end. Renouncing is final. Lowers the future pension. Not for the gestione separata | https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf |
+| Other cuts | Circolare 14/2026 also keeps a cut for artigiani and commercianti over 65 already drawing an INPS pension, and one for those first enrolled in 2025: `it-inps-contributions` | same |
+| Minimum contribution | Artigiani and commercianti owe the fixed amount whatever their income | same |
 
 ### Fondi Pensione Integrativi (Supplementary Pension): TUIR Art. 10, D.Lgs. 252/2005
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | D.Lgs. 252/2005 art. 8 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
-| Yearly deduction limit, from tax year 2026 | EUR 5,300 | "innalzato a euro 5.300" |
-| Previous limit | EUR 5,164.57 | "non superiore ad euro 5.164,57" |
-| Final withholding on the taxable part of the benefit (art. 11) | 15% | "con l'aliquota del 15 per cento" ([art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art11!vig=2026-06-30)) |
+| What | Value | Note | Source |
+| --- | --- | --- |---|
+| Source | D.Lgs. 252/2005 art. 8 | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |  |
+| Yearly deduction limit, from tax year 2026 | EUR 5,300 | "innalzato a euro 5.300" | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 |
+| Previous limit | EUR 5,164.57 | "non superiore ad euro 5.164,57" | same |
+| Final withholding on the taxable part of the benefit (art. 11) | 15% | "con l'aliquota del 15 per cento" ([art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art11!vig=2026-06-30)) |  |
 
 - **Exit tax** falls by 0.30 percentage points per year of membership after the fifteenth, with a maximum cut of 6 percentage points (art. 11(6)).
 - **First job started after 1 January 2007:** in the twenty years after the fifth year of membership, the unused limit of the first five years may be deducted, up to half the yearly limit (art. 8(6)).
@@ -303,7 +303,24 @@ The first decision. The entry conditions decide whether the forfettario is open;
 
 ## Sources
 
-- Every page used is linked once in the tables or text above; plus D.Lgs. 117/2026 art. 377: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377
+- Every page used is linked once in the tables or text above; plus D.Lgs. 117/2026 art. 377: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2026-06-19;117:1~art377 (read 2026-10-31)
+- L. 190/2014 art. 1: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-24 (read 2026-10-31)
+- L. 212/2000 art. 10-bis: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000-07-27;212~art10bis!vig=2026-06-30 (read 2026-10-31)
+- TUIR art. 7: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art7!vig=2026-06-30 (read 2026-10-31)
+- D.P.R. 322/1998 art. 2: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1998-07-22;322~art2!vig=2026-06-30 (read 2026-10-31)
+- Agenzia, Redditi PF 2026 instructions, fascicolo 1: https://www.agenziaentrate.gov.it/portale/documents/d/guest/pf1_istruzioni_2026 (read 2026-10-31)
+- Agenzia, IRPEF rates: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef (read 2026-10-31)
+- L. 207/2024: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2024-12-30;207 (read 2026-10-31)
+- Agenzia, forfettario rules: https://www.agenziaentrate.gov.it/portale/regime-forfetario-le-regole-2020-/infogen-regime-forfetario-le-regole-2020- (read 2026-10-31)
+- TUIR art. 164: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art164!vig=2026-06-30 (read 2026-10-31)
+- Agenzia, how IRPEF is paid: https://www.agenziaentrate.gov.it/portale/come-si-paga-l-irpef (read 2026-10-31)
+- TUIR art. 54: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1986-12-22;917~art54!vig=2026-06-30 (read 2026-10-31)
+- D.Lgs. 471/1997 art. 13: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-12-18;471~art13!vig=2026-10-24 (read 2026-10-31)
+- INPS Circolare 8/2026: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15153/Allegati/16573_Circolare-numero-8-del-03-02-2026.pdf (read 2026-10-31)
+- INPS Circolare 14/2026: https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/02/Circolare_15162/Allegati/16561_Circolare-numero-14-del-09-02-2026.pdf (read 2026-10-31)
+- D.Lgs. 252/2005 art. 8: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005-12-05;252~art8!vig=2026-06-30 (read 2026-10-31)
+
+Not yet confirmed: that a pension fund contribution must be paid by 31 December to count for the year (no text read says this directly).
 
 ## Disclaimer
 
