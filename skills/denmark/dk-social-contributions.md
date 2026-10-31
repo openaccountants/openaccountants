@@ -1,6 +1,6 @@
 ---
 name: dk-social-contributions
-description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, dk-vat-return. Payroll withholding of A-skat is not covered."
+description: "Danish social contributions for 2026 for employees, employers and the self-employed. Covers the 8% labour market contribution (arbejdsmarkedsbidrag, AM-bidrag), its base and the new 2026 rule that nobody pays it before the year they turn 18; ATP Livslang Pension by hours band (DKK 297 a month in total for 117 hours or more, one third employee, two thirds employer); the employer contributions collected through Samlet Betaling (AUB, Barsel.dk, finansieringsbidrag FIB, AES by branch group) and the duty to insure work accidents; voluntary ATP, AES and AM-bidrag for the self-employed; and the 2026 a-kasse and efterløn contributions as context. Trigger on: AM-bidrag, arbejdsmarkedsbidrag, ATP-bidrag, Samlet Betaling, AUB, Barsel.dk, FIB, AES-bidrag, arbejdsskadeforsikring, a-kasse, efterlønsbidrag, employer cost Denmark. Out of scope, see: dk-income-tax (A-skat, bundskat, B-skat), dk-corporate-tax, dk-capital-gains, denmark-vat-return. Payroll withholding of A-skat is not covered."
 version: 0.1
 jurisdiction: DK
 tax_year: 2026
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Tax year: calendar year 2026. Currency: Danish kroner (DKK). Denmark funds most social security from general taxation, so the payroll-linked charges are small flat amounts plus one percentage charge, the 8% AM-bidrag. AM-bidrag is a tax collected by Skattestyrelsen. ATP and the employer contributions are collected by ATP through Samlet Betaling (virk.dk).
 
-See also: dk-income-tax (state and municipal income tax, personal allowance, B-skat for the self-employed), dk-corporate-tax (companies), dk-capital-gains, dk-vat-return.
+See also: dk-income-tax (state and municipal income tax, personal allowance, B-skat for the self-employed), dk-corporate-tax (companies), dk-capital-gains, denmark-vat-return.
 
 ## Who this applies to
 

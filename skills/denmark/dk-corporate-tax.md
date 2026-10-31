@@ -1,6 +1,6 @@
 ---
 name: dk-corporate-tax
-description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (dk-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
+description: "Danish corporate income tax (selskabsskat) for companies resident in Denmark (A/S, ApS and other limited companies) and for permanent establishments of foreign companies, income year 2026. Covers the 22% rate (Selskabsskatteloven § 17) and the higher rate for financial companies, the taxable base, participation exemption for subsidiary and group shares, loss carry-forward with the DKK 21,830,700 limit and the 60% rule, mandatory national joint taxation (sambeskatning) and the administration company, the interest limitation rules, acontoskat in March and November, the restskattetillæg, the oplysningsskema deadline, exit tax and withholding on outbound dividends, interest and royalties. Trigger on: Danish corporate tax, selskabsskat, ApS tax, acontoskat, sambeskatning, underskudsfremførsel, rentefradragsbegrænsning, udbytteskat, Denmark 22%. Out of scope: individuals and the self-employed (dk-income-tax), shareholders' share income (dk-capital-gains), VAT (denmark-vat-return), payroll, transfer pricing documentation, tonnage tax, hydrocarbon tax and foundations."
 version: 0.1
 jurisdiction: DK
 tax_year: 2026
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Tax year: income year 2026 (indkomståret 2026). Most companies use the calendar year. A company with a different financial year (forskudt indkomstår) is taxed for the income year that the financial year "replaces" (Selskabsskatteloven § 29 A, stk. 1). Currency: Danish kroner (DKK). Authority: Skattestyrelsen (skat.dk). Statute: Selskabsskatteloven, LBK nr. 279 of 13 March 2025, as later amended (see Sources).
 
-See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (individual share gains), dk-vat-return (VAT).
+See also: dk-income-tax (individuals and the self-employed), dk-capital-gains (individual share gains), denmark-vat-return (VAT).
 
 ## Who this applies to
 

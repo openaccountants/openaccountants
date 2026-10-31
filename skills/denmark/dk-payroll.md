@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Denmark payroll: withholding, eIndkomst and holiday pay (2026)
 
-This skill covers what an employer in Denmark withholds from wages each month, what it reports to eIndkomst, and when it pays. It links to the other Denmark skills and does not repeat them: `dk-income-tax` (the rates behind the trækprocent, the personal allowance, the employee's annual return and the self-employed), `dk-social-contributions` (employer contributions collected through Samlet Betaling, and social security for posted workers), `dk-corporate-tax` and `dk-vat-return`.
+This skill covers what an employer in Denmark withholds from wages each month, what it reports to eIndkomst, and when it pays. It links to the other Denmark skills and does not repeat them: `dk-income-tax` (the rates behind the trækprocent, the personal allowance, the employee's annual return and the self-employed), `dk-social-contributions` (employer contributions collected through Samlet Betaling, and social security for posted workers), `dk-corporate-tax` and `denmark-vat-return`.
 
 All figures are for the 2026 calendar year. Statute text was read on retsinformation.dk on 23 October 2026. Practice figures come from skat.dk, the Danish legal guide (Den juridiske vejledning, info.skat.dk), virk.dk and borger.dk, all read the same day.
 
