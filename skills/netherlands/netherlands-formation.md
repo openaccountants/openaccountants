@@ -522,6 +522,42 @@ customary salary floor was €56,000.
 - [ ] Filing calendar set: VAT, payroll, income tax or VPB, annual accounts.
 - [ ] Hand-offs made to nl-corporate-tax, nl-payroll-tax and the VAT Guides where relevant.
 
+## Checked examples
+
+```oa-check
+name: VPB, taxable profit EUR 300,000 (2026)
+inputs:
+  profit: 300000
+steps:
+  - tax: pct(200000, 19) + pct(profit - 200000, 25.8)
+expected:
+  tax: 63800
+```
+
+```oa-check
+name: MKB-winstvrijstelling, profit after ondernemersaftrek EUR 40,000
+inputs:
+  profit: 40000
+steps:
+  - relief: pct(profit, 12.7)
+expected:
+  relief: 5080
+```
+
+## Sources
+
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/ondernemersaftrek-2025/zelfstandigenaftrek-2025 (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/ondernemersaftrek-2026/zelfstandigenaftrek-2026 (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/mkb_winstvrijstelling (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/inkomstenbelasting_voor_ondernemers/voorwaarden_urencriterium (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/vermogen_en_aanmerkelijk_belang/aanmerkelijk_belang/loon_en_aanmerkelijk_belang/loon_en_aanmerkelijk_belang (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kleineondernemersregeling-in-de-europese-unie-eu-kor (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/voor_wie_geldt_de_btw/ondernemer (read 2026-10-31)
+- https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting (read 2026-10-31)
+
+Not yet confirmed: customary salary, AOW-age, substantial interest, VAT-rate and BV capital rows.
+
 <!-- openaccountants-cta-block -->
 
 ---
