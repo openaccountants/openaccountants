@@ -43,11 +43,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Required inputs
 
-- **Required inputs before computing** — Before computing, you MUST obtain: 1. Employment status -- self-employed, informal sector, or voluntary? 2. Monthly declared income -- determines SHIF and NSSF 3. Registered with SHA? 4. Registered with NSSF? 5. Any formal employment alongside? -- dual status 6. Sector -- formal vs informal. If monthly income is unknown, request estimate. SHIF uses declared household income.
+- **Required inputs before computing**: Before computing, you MUST obtain: 1. Employment status -- self-employed, informal sector, or voluntary? 2. Monthly declared income -- determines SHIF and NSSF 3. Registered with SHA? 4. Registered with NSSF? 5. Any formal employment alongside? -- dual status 6. Sector -- formal vs informal. If monthly income is unknown, request estimate. SHIF uses declared household income.
 
 ### Refusal catalogue
 
-- **R-KE-SOC-1** — There have been multiple court challenges to the Social Health Insurance Act. Escalate -- do not advise on constitutional matters. (Trigger: question about SHIF constitutionality.)
+- **R-KE-SOC-1**: There have been multiple court challenges to the Social Health Insurance Act. Escalate -- do not advise on constitutional matters. (Trigger: question about SHIF constitutionality.)
 
 ### Prohibitions
 
@@ -55,7 +55,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 3 -- SHIF (replacing NHIF)
 
-- **Legislation** — Social Health Insurance Act 2023 (effective October 2024)  _(Social Health Insurance Act 2023)_
+- **Legislation**: Social Health Insurance Act 2023 (effective October 2024)  _(Social Health Insurance Act 2023)_
 
 **SHIF Old vs New comparison**  _(Social Health Insurance Act 2023)_
 
@@ -66,7 +66,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Minimum | KES 150 | KES 300 |
 | Maximum | KES 1,700 | No cap |
 
-- **SHIF monthly formula** — shif_monthly = max(declared_monthly_income x 2.75%, KES 300)  _(Social Health Insurance Act 2023)_
+- **SHIF monthly formula**: shif_monthly = max(declared_monthly_income x 2.75%, KES 300)  _(Social Health Insurance Act 2023)_
 
 ## Section 4 -- NSSF contributions
 
@@ -137,7 +137,7 @@ Payment via M-Pesa, bank deposit, or online portals.
 
 ### Registration
 
-- **Registration requirements** — SHIF mandatory for all residents. NSSF voluntary for self-employed. KRA PIN required.
+- **Registration requirements**: SHIF mandatory for all residents. NSSF voluntary for self-employed. KRA PIN required.
 
 ### Tax interaction
 
@@ -258,6 +258,14 @@ Expected output: Tier I only. KES 1,080.
 Input: KES 30,000, voluntary NSSF, no SHIF registration.
 Expected output: NSSF KES 3,600. Advise to register for SHIF (mandatory).
 
+## Sources
+
+1. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
+2. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
+3. NSSF Year 4 notice to employers, read 2026-10-31 -- https://gaa.go.ke/sites/default/files/2026-02/Notice%20To%20Employers%20%E2%80%94%20Year%204%20%282026%29%20NSSF%20Contribution%20Rates%20.pdf
+
+Not yet confirmed: self-employed SHIF payment timing and SHIF penalties.
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
@@ -270,7 +278,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

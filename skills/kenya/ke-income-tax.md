@@ -4,6 +4,7 @@ description: Use this skill whenever asked about Kenyan income tax for self-empl
 version: 2.1
 jurisdiction: KE
 tax_year: 2025
+tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The SHIF treatment was updated on 2026-10-31.
 last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -72,16 +73,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Required inputs
 
-- **Minimum viable inputs** — bank statement for the tax year. Acceptable from: Equity Bank, KCB (Kenya Commercial Bank), Co-operative Bank, NCBA, Standard Chartered Kenya, Absa Kenya, I&M Bank, DTB, or mobile money (M-Pesa via Safaricom).
-- **Recommended inputs** — invoices, insurance premium certificates, instalment tax payment records, PIN certificate, WHT certificates.
-- **Ideal inputs** — complete bookkeeping, prior year return, iTax account records.
+- **Minimum viable inputs**: bank statement for the tax year. Acceptable from: Equity Bank, KCB (Kenya Commercial Bank), Co-operative Bank, NCBA, Standard Chartered Kenya, Absa Kenya, I&M Bank, DTB, or mobile money (M-Pesa via Safaricom).
+- **Recommended inputs**: invoices, insurance premium certificates, instalment tax payment records, PIN certificate, WHT certificates.
+- **Ideal inputs**: complete bookkeeping, prior year return, iTax account records.
 
 ### Refusal catalogue
 
-- **R-KE-1 -- Company/LLP** — This skill covers self-employed individuals only. Companies file corporate returns at 30%. (Trigger: client is a limited company or LLP.)
-- **R-KE-2 -- Non-resident** — Non-residents pay flat 30% on Kenya-source income with no personal relief. This skill covers residents only. (Trigger: non-resident status.)
-- **R-KE-3 -- Cross-border/WHT** — Cross-border WHT and treaty analysis are outside scope. Consult a tax practitioner. (Trigger: complex withholding tax or treaty questions.)
-- **R-KE-4 -- Capital gains** — Capital gains tax (15%) is outside scope. (Trigger: property disposal.)
+- **R-KE-1 -- Company/LLP**: This skill covers self-employed individuals only. Companies file corporate returns at 30%. (Trigger: client is a limited company or LLP.)
+- **R-KE-2 -- Non-resident**: Non-residents pay flat 30% on Kenya-source income with no personal relief. This skill covers residents only. (Trigger: non-resident status.)
+- **R-KE-3 -- Cross-border/WHT**: Cross-border WHT and treaty analysis are outside scope. Consult a tax practitioner. (Trigger: complex withholding tax or treaty questions.)
+- **R-KE-4 -- Capital gains**: Capital gains tax (15%) is outside scope. (Trigger: property disposal.)
 
 ## Section 3 -- Transaction pattern library (the lookup table)
 
@@ -259,11 +260,11 @@ expected:
 
 ### 5.1 Progressive rates
 
-- **Progressive rates** — 10%/25%/30%/32.5%/35%. Non-residents: flat 30%.  _(ITA Cap 470, Third Schedule.)_
+- **Progressive rates**: 10%/25%/30%/32.5%/35%. Non-residents: flat 30%.  _(ITA Cap 470, Third Schedule.)_
 
 ### 5.2 Personal relief
 
-- **Personal relief** — KES 28,800/year. Credit against tax, NOT deduction from income. Available to all residents.  _(ITA.)_
+- **Personal relief**: KES 28,800/year. Credit against tax, NOT deduction from income. Available to all residents.  _(ITA.)_
 
 ### 5.3 Insurance relief
 
@@ -271,19 +272,19 @@ expected:
 
 ### 5.4 Instalment tax
 
-- **Instalment tax** — Quarterly: 25% each on 20th of 4th, 6th, 9th, 12th months. Based on estimated current year or prior year actual. If prior year tax < KES 40,000: not required. Under-estimation: 20% penalty.  _(s12.)_
+- **Instalment tax**: Quarterly: 25% each on 20th of 4th, 6th, 9th, 12th months. Based on estimated current year or prior year actual. If prior year tax < KES 40,000: not required. Under-estimation: 20% penalty.  _(s12.)_
 
 ### 5.5 Turnover tax
 
-- **Turnover tax** — 1.5% on gross turnover KES 1M--25M. Monthly filing. Replaces income tax. No expense deductions. Excludes professional/management services.  _(s12C.)_
+- **Turnover tax**: 1.5% on gross turnover KES 1M--25M. Monthly filing. Replaces income tax. No expense deductions. Excludes professional/management services.  _(s12C.)_
 
 ### 5.6 Presumptive tax
 
-- **Presumptive tax** — KES 15,000/year for specified businesses under KES 1M turnover. Final tax.  _(s12D.)_
+- **Presumptive tax**: KES 15,000/year for specified businesses under KES 1M turnover. Final tax.  _(s12D.)_
 
 ### 5.7 Wear-and-tear (capital deductions)
 
-- **Wear-and-tear rates** — Reducing balance method. Heavy machinery: 37.5%. Computers: 30%. Vehicles: 25%. Furniture: 12.5%. Farm machinery: 100%.  _(Second Schedule.)_
+- **Wear-and-tear rates**: Reducing balance method. Heavy machinery: 37.5%. Computers: 30%. Vehicles: 25%. Furniture: 12.5%. Farm machinery: 100%.  _(Second Schedule.)_
 
 ### 5.8 NSSF/SHIF
 
@@ -291,11 +292,11 @@ expected:
 
 ### 5.9 WHT credits
 
-- **WHT credits** — Withholding tax on professional fees (5%) is a credit against final tax. Requires WHT certificates.  _(ITA.)_
+- **WHT credits**: Withholding tax on professional fees (5%) is a credit against final tax. Requires WHT certificates.  _(ITA.)_
 
 ### 5.10 Record keeping
 
-- **Record keeping** — 5 years. English or Swahili. Paper or electronic.  _(Tax Procedures Act s23.)_
+- **Record keeping**: 5 years. English or Swahili. Paper or electronic.  _(Tax Procedures Act s23.)_
 
 ## Section 6 -- Tier 2 catalogue
 
@@ -404,13 +405,13 @@ Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
 - NEVER give insurance relief on SHIF contributions
 - NEVER present calculations as definitive
 
-### Sources
+## Sources
 
-1. Income Tax Act, Chapter 470
-2. Tax Procedures Act 2015
-3. Finance Act 2023, Finance Act 2024
-4. KRA -- https://www.kra.go.ke
-5. Income Tax Act, s15(2)(ae), inserted by the Tax Laws (Amendment) Act 2024
+1. Income Tax Act, Chapter 470 (not re-read in this update; read date unverified)
+2. Tax Procedures Act 2015 (not re-read in this update; read date unverified)
+3. Finance Act 2023, Finance Act 2024 (not re-read in this update; read date unverified)
+4. KRA, read 2026-10-31 -- https://www.kra.go.ke
+5. Income Tax Act, s15(2)(ae), as cited by KRA, read 2026-10-31
 6. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
 7. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
 
@@ -426,7 +427,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
