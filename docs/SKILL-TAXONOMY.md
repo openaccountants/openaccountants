@@ -45,7 +45,7 @@ The second milestone, **Accounting packs**, adds these. They never count as miss
 
 Foundation workflow bases live in `skills/foundation/` and are bundled into packages by the build: `workflow-base.md` (universal), `vat-workflow-base.md`, `us-tax-workflow-base.md`, `bookkeeping-workflow-base.md`, `einvoice-workflow-base.md`, `payroll-workflow-base.md`, `company-formation-workflow-base.md`, `financial-statements-workflow-base.md`, `transfer-pricing-workflow-base.md` and `cross-border-workflow-base.md`.
 
-Orchestrators (`skills/orchestrator/`) are the global router plus per-country intake and return-assembly pairs. `skills/intelligence/` holds the deadline engine, threshold alerts and optimisation triggers; `skills/patterns/` holds vendor pattern libraries.
+Orchestrators (`skills/orchestrator/`) are the per-country intake and return-assembly pairs; the global router is `skills/foundation/global-router.md`. `skills/foundation/intelligence/` holds the deadline engine, threshold alerts and optimisation triggers; `skills/foundation/patterns/` holds vendor pattern libraries.
 
 ## The universal skill skeleton
 

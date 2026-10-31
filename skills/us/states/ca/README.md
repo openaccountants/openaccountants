@@ -1,3 +1,10 @@
+---
+jurisdiction: US-CA
+covered_by:
+  IT-IND: ca-540-individual-return
+  VAT: california-sales-tax
+---
+
 # California — OpenAccountants Tax Skills
 
 | Field | Value |
@@ -14,6 +21,11 @@
 
 | File | What it covers |
 |---|---|
+| `ca-540-individual-return.md` | Form 540 resident return |
+| `ca-estimated-tax-540es.md` | Estimated tax (Form 540-ES) |
+| `ca-llc-fee-and-tax.md` | LLC fee and tax |
+| `ca-pte-elective-tax.md` | Pass-through entity elective tax |
+| `california-sales-tax.md` | Sales and use tax |
 | `ca-income-tax.md` | Individual income tax for self-employed / sole proprietors |
 | `ca-540-es-estimated-tax.md` | Estimated tax payments (Form 540-ES) |
 | `ca-form-3853-coverage.md` | Health coverage mandate / individual shared responsibility penalty (Form 3853) |

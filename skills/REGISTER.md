@@ -4,14 +4,14 @@ Generated from the skill tree on 2026-10-31 by `scripts/build-register.py`. One 
 
 ## Totals
 
-- Skills: 2309
+- Skills: 2304
 - Jurisdictions: 275 (266 countries or states, the rest pseudo-codes)
-- Tax year 2026: 1012; still 2025: 1166; no year: 126
+- Tax year 2026: 1009; still 2025: 1164; no year: 126
 - Signed by a named accountant (tier 1): 30, in US (21), PH (7), CA (1), MY (1)
-- Scope: 2064 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 156 other (routers, templates, patterns)
-- Domain from the README `covered_by`: 141; from the slug: 1233; no tax domain: 935
-- Pass all 10 checks: 187 of 2064 tax skills
-- Duplicates: 426 skills in 154 (country, domain) cells where the README does not name which skill covers the job
+- Scope: 2065 tax skills (deep-tax shape applies), 89 accounting-pack skills (general template), 150 other (routers, templates, patterns)
+- Domain from the README `covered_by`: 148; from the slug: 1222; no tax domain: 934
+- Pass all 10 checks: 185 of 2065 tax skills
+- Duplicates: 414 skills in 149 (country, domain) cells where the README does not name which skill covers the job
 
 ## Pass rate per check
 
@@ -19,16 +19,16 @@ Tax skills only (the deep-tax shape applies to them). One column per check in `R
 
 | | Check | Pass | Fail | Pass rate |
 |---|---|---:|---:|---:|
-| (a) | `tax_year_current` | 902 | 1162 | 44% |
-| (b) | `sources_read_dates` | 540 | 1524 | 26% |
-| (c) | `rates_rows_sourced` | 229 | 1835 | 11% |
-| (d) | `canonical_headings` | 482 | 1582 | 23% |
-| (e) | `two_oa_checks` | 471 | 1593 | 23% |
-| (f) | `version_numeric` | 1251 | 813 | 61% |
-| (g) | `tier_honest` | 1931 | 133 | 94% |
-| (h) | `no_em_dash` | 765 | 1299 | 37% |
-| (i) | `not_yet_confirmed` | 528 | 1536 | 26% |
-| (j) | `reviewed_on` | 1917 | 147 | 93% |
+| (a) | `tax_year_current` | 902 | 1163 | 44% |
+| (b) | `sources_read_dates` | 544 | 1521 | 26% |
+| (c) | `rates_rows_sourced` | 226 | 1839 | 11% |
+| (d) | `canonical_headings` | 480 | 1585 | 23% |
+| (e) | `two_oa_checks` | 475 | 1590 | 23% |
+| (f) | `version_numeric` | 1251 | 814 | 61% |
+| (g) | `tier_honest` | 1932 | 133 | 94% |
+| (h) | `no_em_dash` | 766 | 1299 | 37% |
+| (i) | `not_yet_confirmed` | 533 | 1532 | 26% |
+| (j) | `reviewed_on` | 1918 | 147 | 93% |
 
 ## By domain
 
@@ -37,13 +37,13 @@ A skill covering two domains counts in both.
 | Domain | Skills | Signed |
 |---|---:|---:|
 | IT-IND | 403 | 4 |
-| IT-CORP | 187 | 2 |
-| VAT | 297 | 3 |
+| IT-CORP | 188 | 2 |
+| VAT | 292 | 3 |
 | SC | 184 | 0 |
 | PR | 236 | 2 |
 | TP | 64 | 0 |
 | XB | 119 | 0 |
-| (no tax domain) | 935 | 19 |
+| (no tax domain) | 934 | 19 |
 
 ## Country by domain
 
@@ -56,8 +56,8 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | CA | 18! | 2! | 1 | 1 | 2! | 1 | 2! | 0 | 5 | 1 | 51 |
 | GB | 5! | 1 | 5! | 1 | 2! | 1 | 4! | 13 | 33 | 0 | 35 |
 | MT | 6! | 1 | 2! | 1 | 1 | 1 | 1 | 1 | 32 | 0 | 34 |
-| ES | 6! | 2! | 2! | 1 | 2! | 1 | 2! | 21 | 28 | 0 | 30 |
 | DE | 5! | 1 | 2! | 1 | 3! | 1 | 4! | 7 | 28 | 0 | 29 |
+| ES | 6! | 2! | 1 | 1 | 2! | 1 | 2! | 20 | 28 | 0 | 29 |
 | NL | 4! | 1 | 2! | 1 | 2! | 1 | 1 | 9 | 25 | 0 | 27 |
 | FR | 5! | 1 | 1 | 1 | 1 | 1 | 2! | 3 | 22 | 0 | 23 |
 | DO | 2! | 1 | 1 | 1 | 2! | 1 | 1 | 0 | 1 | 0 | 22 |
@@ -72,13 +72,13 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | EG | 3! | 1 | 1 | 1 | 2! | 1 |  | 0 | 11 | 0 | 17 |
 | KZ | 3! | 1 | 1 | 2! | 2! |  |  | 0 | 11 | 0 | 17 |
 | UA | 3! | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 17 | 0 | 17 |
-| CN | 4! | 1 | 2! | 1 | 1 | 1 | 2! | 4 | 9 | 0 | 16 |
 | MA | 4! |  | 1 | 1 | 1 |  |  | 0 | 6 | 0 | 16 |
 | US-CA | 4! |  | 1 |  | 1 |  | 1 | 0 | 10 | 0 | 16 |
 | US-NY | 6! | 1 | 2! |  | 1 |  | 1 | 0 | 6 | 0 | 16 |
-| BE | 3! | 1 | 2! | 1 | 2! | 1 | 1 | 8 | 15 | 0 | 15 |
+| CN | 4! | 1 | 1 | 1 | 1 | 1 | 2! | 5 | 9 | 0 | 15 |
 | GR | 2! | 1 | 2! | 1 | 1 | 1 | 1 | 2 | 15 | 0 | 15 |
 | SE | 3! | 1 | 2! | 1 | 1 | 1 | 1 | 0 | 14 | 0 | 15 |
+| BE | 3! | 1 | 1 | 1 | 2! | 1 | 1 | 7 | 14 | 0 | 14 |
 | BR | 4! |  | 1 |  | 1 | 1 |  | 0 | 1 | 0 | 14 |
 | CH | 1 | 1 | 2! | 1 | 1 | 1 | 1 | 6 | 14 | 0 | 14 |
 | FI | 2! | 2! | 1 | 1 | 1 | 1 | 2! | 0 | 14 | 0 | 14 |
@@ -96,7 +96,6 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | MM | 3! |  | 3! | 1 | 1 |  |  | 0 | 0 | 0 | 11 |
 | NZ | 2! |  | 2! |  |  |  |  | 0 | 10 | 0 | 11 |
 | AM | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 10 | 0 | 10 |
-| AT | 1 | 1 | 2! | 2! | 1 | 1 | 1 | 3 | 10 | 0 | 10 |
 | AZ | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 8 | 10 | 0 | 10 |
 | BA | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 10 | 0 | 10 |
 | BG | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 3 | 10 | 0 | 10 |
@@ -119,11 +118,12 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | SK | 1 | 1 | 2! | 1 | 1 | 1 | 1 | 3 | 9 | 0 | 10 |
 | TR | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 9 | 0 | 10 |
 | US-GA | 2! | 3! | 1 |  | 1 |  |  | 0 | 3 | 0 | 10 |
-| AE | 1 | 2! | 2! | 1 | 1 |  |  | 0 | 7 | 0 | 9 |
+| AT | 1 | 1 | 1 | 2! | 1 | 1 | 1 | 2 | 9 | 0 | 9 |
 | CY | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 9 | 0 | 9 |
 | LT | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 4 | 8 | 0 | 9 |
 | US-MI | 3! | 1 | 1 |  | 1 |  |  | 0 | 0 | 0 | 9 |
 | AD | 2! | 1 | 1 | 1 | 1 | 1 | 1 | 4 | 8 | 0 | 8 |
+| AE | 1 | 2! | 1 | 1 | 1 |  |  | 0 | 6 | 0 | 8 |
 | AL | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 8 | 0 | 8 |
 | AR | 1 | 1 | 1 | 1 |  |  |  | 0 | 0 | 0 | 8 |
 | BF | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 8 |
@@ -138,7 +138,7 @@ Count of skills in each (country, domain) cell. `*` means at least one is signed
 | QA | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 7 | 8 | 0 | 8 |
 | RW | 2! | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 8 |
 | SM | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 8 | 0 | 8 |
-| US-TX | 3! |  | 2! |  |  |  |  | 0 | 1 | 0 | 8 |
+| US-TX | 3! | 1 | 2! |  |  |  |  | 0 | 1 | 0 | 8 |
 | UZ | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 0 | 0 | 8 |
 | VN | 1 | 1 | 1 | 1 | 1 |  |  | 0 | 2 | 0 | 8 |
 | XK | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 5 | 8 | 0 | 8 |
@@ -328,11 +328,7 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | AD | IT-IND | `ad-non-resident-income-tax` |
 | AE | IT-CORP | `ae-corporate-tax` |
 | AE | IT-CORP | `general-uae-corporate-tax-guide` |
-| AE | VAT | `ae-vat-return` |
-| AE | VAT | `uae-vat` |
 | AT | SC | `at-svs-contributions` |
-| AT | VAT | `at-vat-return` |
-| AT | VAT | `austria-vat-return` |
 | AU | IT-IND | `amending-an-individual-income-tax-return-in-australia` |
 | AU | IT-IND | `au-amending-individual-income-tax-return-period` |
 | AU | IT-IND | `au-capital-gains` |
@@ -362,8 +358,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | BE | IT-IND | `be-income-tax` |
 | BE | PR | `be-payroll-withholding` |
 | BE | PR | `belgium-payroll` |
-| BE | VAT | `be-vat-return` |
-| BE | VAT | `belgium-vat-return` |
 | BR | IT-IND | `br-carn-monthly-income-tax-rental-income` |
 | BR | IT-IND | `br-freelance-intake` |
 | BR | IT-IND | `br-income-tax` |
@@ -397,7 +391,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | CN | IT-IND | `china-pit` |
 | CN | IT-IND | `cn-freelance-intake` |
 | CN | IT-IND | `cn-return-assembly` |
-| CN | VAT | `china-vat` |
 | CN | XB | `china-to-singapore-relocation-tax` |
 | CZ | IT-IND | `cz-employee-income-tax` |
 | CZ | IT-IND | `cz-income-tax` |
@@ -437,7 +430,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | ES | IT-IND | `es-return-assembly` |
 | ES | IT-IND | `es-non-resident-income-tax-irnr-and` |
 | ES | PR | `es-foral-payroll` |
-| ES | VAT | `spain-vat-return` |
 | ES | XB | `es-foral-non-resident-tax` |
 | FI | IT-CORP+XB | `fi-corporate-cross-border-tax` |
 | FI | IT-IND | `fi-individual-cross-border-residence` |
@@ -668,7 +660,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | US-AR | VAT | `ar-sales-tax` |
 | US-AR | VAT | `arizona-sales-tax` |
 | US-AR | VAT | `arkansas-sales-tax` |
-| US-CA | IT-IND | `ca-540-individual-return` |
 | US-CA | IT-IND | `ca-income-tax` |
 | US-CA | IT-IND | `us-ca-freelance-intake` |
 | US-CA | IT-IND | `us-ca-return-assembly` |
@@ -715,11 +706,9 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | US-NV | VAT | `nv-sales-tax` |
 | US-NY | IT-IND | `ny-estimated-tax` |
 | US-NY | IT-IND | `ny-income-tax` |
-| US-NY | IT-IND | `ny-it-201-resident-return` |
 | US-NY | IT-IND | `nyc-ubt` |
 | US-NY | IT-IND | `us-ny-freelance-intake` |
 | US-NY | IT-IND | `us-ny-return-assembly` |
-| US-NY | VAT | `new-york-sales-tax` |
 | US-NY | VAT | `ny-sales-tax` |
 | US-OH | VAT | `oh-sales-tax` |
 | US-OH | VAT | `ohio-sales-tax` |
@@ -730,7 +719,6 @@ Skills that share a (country, domain) cell with another skill and are not named 
 | US-TX | IT-IND | `tx-franchise-tax` |
 | US-TX | IT-IND | `us-tx-freelance-intake` |
 | US-TX | IT-IND | `us-tx-return-assembly` |
-| US-TX | VAT | `texas-sales-tax` |
 | US-TX | VAT | `tx-sales-tax` |
 | US-UT | VAT | `ut-sales-tax` |
 | US-UT | VAT | `utah-sales-tax` |

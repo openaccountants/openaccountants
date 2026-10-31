@@ -1,3 +1,11 @@
+---
+jurisdiction: US-NY
+covered_by:
+  IT-IND: ny-it-201-resident-return
+  IT-CORP: ny-corporate-franchise-article-9a
+  VAT: new-york-sales-tax
+---
+
 # New York — OpenAccountants Tax Skills
 
 | Field | Value |
@@ -14,6 +22,11 @@
 
 | File | What it covers |
 |---|---|
+| `ny-corporate-franchise-article-9a.md` | Corporate franchise tax (Article 9-A) |
+| `ny-it-201-resident-return.md` | Form IT-201 resident return |
+| `ny-llc-filing-fee-it-204-ll.md` | LLC filing fee (Form IT-204-LL) |
+| `ny-payroll.md` | Payroll |
+| `ny-pte-tax-ptet.md` | Pass-through entity tax |
 | `ny-income-tax.md` | Individual income tax for self-employed / sole proprietors |
 | `ny-estimated-tax.md` | Estimated tax payments |
 | `ny-sales-tax.md` | State and local sales & use tax compliance |

@@ -33,7 +33,7 @@ What gets backfilled (missing keys only):
                   convention: <code>-… prefix (gb-* -> GB, us-ny-* -> US-NY),
                   so au-/ca-/de-/es-/in-/mt- -> AU/CA/DE/ES/IN/MT,
                   us-ca-* -> US-CA, us-federal-* -> US.
-                - skills/patterns/*                    -> dir convention
+                - skills/foundation/patterns/*                    -> dir convention
                   (all jurisdiction-bearing siblings say GLOBAL).
                 - skills/cross-border/*.md             -> nearest sibling
                   convention, per-file (EU-directive content -> EU-27 like
@@ -44,7 +44,7 @@ What gets backfilled (missing keys only):
                   jurisdiction-specific file in an otherwise GLOBAL dir; the
                   us- filename prefix convention matches skills/us/federal).
                 Dirs whose existing convention is "no jurisdiction key"
-                (skills/cross-border/treaty-corridors, skills/intelligence,
+                (skills/cross-border/treaty-corridors, skills/foundation/intelligence,
                 skills/templates) are LEFT ALONE and reported — we do not
                 invent a convention.
 
@@ -125,7 +125,7 @@ FILE_JURISDICTION = {
 # "no jurisdiction key" (or, for international/eu, no single country applies).
 LEAVE_DIRS = {
     "skills/cross-border/treaty-corridors",
-    "skills/intelligence",
+    "skills/foundation/intelligence",
     "skills/templates",
     "skills/eu",
 }

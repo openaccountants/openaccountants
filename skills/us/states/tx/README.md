@@ -1,3 +1,10 @@
+---
+jurisdiction: US-TX
+covered_by:
+  IT-CORP: tx-margin-tax
+  VAT: texas-sales-tax
+---
+
 # Texas — OpenAccountants Tax Skills
 
 | Field | Value |
@@ -14,6 +21,8 @@
 
 | File | What it covers |
 |---|---|
+| `texas-sales-tax.md` | Sales and use tax |
+| `tx-margin-tax.md` | Franchise (margin) tax |
 | `tx-franchise-tax.md` | Franchise (margin) tax for taxable entities |
 | `tx-sales-tax.md` | State and local sales & use tax compliance |
 | `tx-sales-tax-legacy.md` | Legacy sales tax reference (prior format) |

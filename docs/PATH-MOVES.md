@@ -10827,3 +10827,71 @@ Use this to update `skills.github_path` on the platform.
 | skills/im/im-payroll-social.md | skills/isle-of-man/im-payroll-social.md |
 | skills/im/im-related-party-uk-treaty.md | skills/isle-of-man/im-related-party-uk-treaty.md |
 | skills/im/im-tax-overview.md | skills/isle-of-man/im-tax-overview.md |
+
+## Topic folders
+
+Shared folders grouped under `skills/foundation/` and `skills/reference/`, and state skills moved out of `skills/orchestrator/`. Slugs did not change.
+
+| Old path | New path |
+|---|---|
+| skills/financial-reporting/business-combinations/ifrs3-business-combinations.md | skills/reference/financial-reporting/business-combinations/ifrs3-business-combinations.md |
+| skills/financial-reporting/business-combinations/us-gaap-asc805-business-combinations.md | skills/reference/financial-reporting/business-combinations/us-gaap-asc805-business-combinations.md |
+| skills/financial-reporting/debt-vs-equity/ias32-debt-vs-equity.md | skills/reference/financial-reporting/debt-vs-equity/ias32-debt-vs-equity.md |
+| skills/financial-reporting/debt-vs-equity/us-gaap-debt-vs-equity.md | skills/reference/financial-reporting/debt-vs-equity/us-gaap-debt-vs-equity.md |
+| skills/financial-reporting/financial-reporting-router.md | skills/reference/financial-reporting/financial-reporting-router.md |
+| skills/financial-reporting/financial-reporting-workflow-base.md | skills/reference/financial-reporting/financial-reporting-workflow-base.md |
+| skills/financial-reporting/leases/ifrs16-leases.md | skills/reference/financial-reporting/leases/ifrs16-leases.md |
+| skills/financial-reporting/leases/us-gaap-asc842-leases.md | skills/reference/financial-reporting/leases/us-gaap-asc842-leases.md |
+| skills/financial-reporting/revenue-recognition/ifrs15-revenue.md | skills/reference/financial-reporting/revenue-recognition/ifrs15-revenue.md |
+| skills/financial-reporting/revenue-recognition/us-gaap-asc606-revenue.md | skills/reference/financial-reporting/revenue-recognition/us-gaap-asc606-revenue.md |
+| skills/integrations/amazon-seller-integration.md | skills/reference/integrations/amazon-seller-integration.md |
+| skills/integrations/freeagent-integration.md | skills/reference/integrations/freeagent-integration.md |
+| skills/integrations/paypal-integration.md | skills/reference/integrations/paypal-integration.md |
+| skills/integrations/quickbooks-integration.md | skills/reference/integrations/quickbooks-integration.md |
+| skills/integrations/revolut-business-integration.md | skills/reference/integrations/revolut-business-integration.md |
+| skills/integrations/sage-integration.md | skills/reference/integrations/sage-integration.md |
+| skills/integrations/shopify-integration.md | skills/reference/integrations/shopify-integration.md |
+| skills/integrations/stripe-integration.md | skills/reference/integrations/stripe-integration.md |
+| skills/integrations/wise-integration.md | skills/reference/integrations/wise-integration.md |
+| skills/integrations/xero-integration.md | skills/reference/integrations/xero-integration.md |
+| skills/intelligence/deadline-engine.md | skills/foundation/intelligence/deadline-engine.md |
+| skills/intelligence/optimisation-advisor.md | skills/foundation/intelligence/optimisation-advisor.md |
+| skills/intelligence/threshold-alerts.md | skills/foundation/intelligence/threshold-alerts.md |
+| skills/orchestrator/ca-540-individual-return.md | skills/us/states/ca/ca-540-individual-return.md |
+| skills/orchestrator/ca-estimated-tax-540es.md | skills/us/states/ca/ca-estimated-tax-540es.md |
+| skills/orchestrator/ca-llc-fee-and-tax.md | skills/us/states/ca/ca-llc-fee-and-tax.md |
+| skills/orchestrator/ca-pte-elective-tax.md | skills/us/states/ca/ca-pte-elective-tax.md |
+| skills/orchestrator/california-sales-tax.md | skills/us/states/ca/california-sales-tax.md |
+| skills/orchestrator/global-router.md | skills/foundation/global-router.md |
+| skills/orchestrator/ny-corporate-franchise-article-9a.md | skills/us/states/ny/ny-corporate-franchise-article-9a.md |
+| skills/orchestrator/ny-it-201-resident-return.md | skills/us/states/ny/ny-it-201-resident-return.md |
+| skills/orchestrator/ny-llc-filing-fee-it-204-ll.md | skills/us/states/ny/ny-llc-filing-fee-it-204-ll.md |
+| skills/orchestrator/ny-payroll.md | skills/us/states/ny/ny-payroll.md |
+| skills/orchestrator/ny-pte-tax-ptet.md | skills/us/states/ny/ny-pte-tax-ptet.md |
+| skills/orchestrator/texas-sales-tax.md | skills/us/states/tx/texas-sales-tax.md |
+| skills/orchestrator/tx-margin-tax.md | skills/us/states/tx/tx-margin-tax.md |
+| skills/patterns/README.md | skills/foundation/patterns/README.md |
+| skills/patterns/global-ad-platforms.md | skills/foundation/patterns/global-ad-platforms.md |
+| skills/patterns/global-cloud-infrastructure.md | skills/foundation/patterns/global-cloud-infrastructure.md |
+| skills/patterns/global-home-office.md | skills/foundation/patterns/global-home-office.md |
+| skills/patterns/global-marketplaces-banking-fees.md | skills/foundation/patterns/global-marketplaces-banking-fees.md |
+| skills/patterns/global-payment-processors.md | skills/foundation/patterns/global-payment-processors.md |
+| skills/patterns/global-productivity-tools.md | skills/foundation/patterns/global-productivity-tools.md |
+| skills/patterns/global-saas-vendors.md | skills/foundation/patterns/global-saas-vendors.md |
+| skills/patterns/global-travel-expenses.md | skills/foundation/patterns/global-travel-expenses.md |
+| skills/patterns/global-vehicle-expenses.md | skills/foundation/patterns/global-vehicle-expenses.md |
+| skills/verticals/README.md | skills/reference/verticals/README.md |
+| skills/verticals/banking-sector.md | skills/reference/verticals/banking-sector.md |
+| skills/verticals/charity-nonprofit.md | skills/reference/verticals/charity-nonprofit.md |
+| skills/verticals/construction-sector.md | skills/reference/verticals/construction-sector.md |
+| skills/verticals/consultant-professional.md | skills/reference/verticals/consultant-professional.md |
+| skills/verticals/content-creator.md | skills/reference/verticals/content-creator.md |
+| skills/verticals/ecommerce-seller.md | skills/reference/verticals/ecommerce-seller.md |
+| skills/verticals/freelance-developer.md | skills/reference/verticals/freelance-developer.md |
+| skills/verticals/insurance-sector.md | skills/reference/verticals/insurance-sector.md |
+| skills/verticals/investment-funds-reits.md | skills/reference/verticals/investment-funds-reits.md |
+| skills/verticals/medical-professional.md | skills/reference/verticals/medical-professional.md |
+| skills/verticals/oil-gas-extractives.md | skills/reference/verticals/oil-gas-extractives.md |
+| skills/verticals/property-investor.md | skills/reference/verticals/property-investor.md |
+| skills/verticals/saas-digital-products.md | skills/reference/verticals/saas-digital-products.md |
+| skills/verticals/shipping-aviation-tonnage-tax.md | skills/reference/verticals/shipping-aviation-tonnage-tax.md |
