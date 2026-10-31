@@ -1,10 +1,10 @@
 ---
 name: pt-return-assembly
-description: "Utilizar esta skill sempre que for solicitada a montagem, finalização ou consolidação de um pacote fiscal anual português do período de tributação de 2026 (campanha de entrega em 2027): IRS (pessoas singulares, Modelo 3 e anexos, entregue de 1 de abril a 30 de junho de 2027) e/ou IRC (sociedades, Modelo 22 até 31 de maio de 2027, IES até 15 de julho de 2027). Acionar com expressões como \"preparar declaração IRS final\", \"preparar Modelo 22 final\", \"pacote contabilista certificado\", \"working paper Portugal\", \"submissão Portal das Finanças\", \"consolidação fiscal Portugal\", \"fechar a declaração\", \"montar dossier fiscal\", \"review final antes de submeter no Portal das Finanças\", \"pacote OCC para revisão\", \"encerramento do ano fiscal português\", \"preparar IES\", \"preparar SAF-T anual\", \"consolidar Modelo 3 e Anexos\", \"consolidar Modelo 22 e Anexos\", ou pedidos equivalentes em inglês: \"Portugal return assembly\", \"Portugal final tax package\", \"Portugal working paper\", \"Portugal IRS/IRC submission package\", \"Portuguese tax return capstone\". Esta é a skill capstone orquestradora que consolida os outputs de pt-income-tax, pt-irs-employees-investment, pt-nhr-ifici, pt-foreign-source-treaties, pt-corporate-tax, portugal-vat-return, pt-social-contributions, portugal-payroll, portugal-bookkeeping, portugal-financial-statements e portugal-crypto-tax num único working paper unificado, com reconciliações cross-skill, instruções de pagamento via Portal das Finanças, instruções de submissão (Modelo 3 / Modelo 22 / IES / SAF-T) e lista final de ações do contribuinte. Não recalcula nada: apenas reconcilia, monta e empacota para o revisor. Fora do âmbito: não-residentes (pt-cross-border), preços de transferência em detalhe (pt-transfer-pricing). LER SEMPRE este skill em ÚLTIMO LUGAR: é o capstone que consolida todos os outputs upstream."
-version: 1.1
+description: "Utilizar esta skill sempre que for solicitada a montagem, finalização ou consolidação de um pacote fiscal anual português do período de tributação de 2026 (campanha de entrega em 2027): IRS (pessoas singulares, Modelo 3 e anexos, entregue de 1 de abril a 30 de junho de 2027) e/ou IRC (sociedades, Modelo 22 até 31 de maio de 2027, IES até 15 de julho de 2027). Acionar com expressões como \"preparar declaração IRS final\", \"preparar Modelo 22 final\", \"pacote contabilista certificado\", \"working paper Portugal\", \"submissão Portal das Finanças\", \"consolidação fiscal Portugal\", \"fechar a declaração\", \"montar dossier fiscal\", \"review final antes de submeter no Portal das Finanças\", \"pacote OCC para revisão\", \"encerramento do ano fiscal português\", \"preparar IES\", \"preparar SAF-T anual\", \"consolidar Modelo 3 e Anexos\", \"consolidar Modelo 22 e Anexos\", ou pedidos equivalentes em inglês: \"Portugal return assembly\", \"Portugal final tax package\", \"Portugal working paper\", \"Portugal IRS/IRC submission package\", \"Portuguese tax return capstone\". Esta é a skill capstone orquestradora que consolida os outputs de pt-income-tax, pt-irs-employees-investment, pt-nhr-ifici, pt-foreign-source-treaties, pt-corporate-tax, portugal-vat-return, pt-social-contributions, portugal-payroll, portugal-bookkeeping, portugal-financial-statements e portugal-crypto-tax num único working paper unificado, com reconciliações cross-skill, instruções de pagamento via Portal das Finanças, instruções de submissão (Modelo 3 / Modelo 22 / IES / SAF-T) e lista final de ações do contribuinte. Não recalcula nada: apenas reconcilia, monta e empacota para o revisor. O mapa de inputs por anexo, os campos do Modelo 22 e as instruções de submissão, prazos e coimas estão na skill filha pt-return-assembly-filing, que se carrega junto com esta. Fora do âmbito: não-residentes (pt-cross-border), preços de transferência em detalhe (pt-transfer-pricing). LER SEMPRE este skill em ÚLTIMO LUGAR: é o capstone que consolida todos os outputs upstream."
+version: 1.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # PT Return Assembly
 
-## Portugal: Montagem Final da Declaração (Capstone), Skill v1.1 (período de tributação 2026)
+## Portugal: Montagem Final da Declaração (Capstone), Skill v1.2 (período de tributação 2026)
 
 ## DIRETIVA DE EXECUÇÃO CRÍTICA: LER PRIMEIRO
 
@@ -40,6 +40,8 @@ A skill capstone final para a campanha fiscal portuguesa do **período de tribut
 - **Declaração periódica de IVA**: mensal (volume de negócios do ano anterior igual ou superior a €650.000) ou trimestral, até ao dia 20 do 2.º mês seguinte (CIVA art. 41.º, n.º 1).
 - **DMR (Declaração Mensal de Remunerações)**: obrigação dos empregadores, até ao dia 10 do mês seguinte ao do pagamento (CIRS art. 119.º, n.º 1, al. c), subal. i)).
 - **Declaração trimestral da Segurança Social** dos trabalhadores independentes: até ao último dia de janeiro, abril, julho e outubro (ISS, Guia Prático dos Trabalhadores Independentes).
+
+**Skill filha.** Esta skill tem uma filha, `pt-return-assembly-filing`, com as Secções 2 (inputs por anexo e campos dos formulários) e 7 (instruções de submissão, prazos, coimas e substituição). Carregar as duas.
 
 O output é um pacote pronto para o revisor: working paper linha-a-linha, tabela de reconciliação cross-skill, instruções de pagamento (referência para pagamento gerada pelo Portal das Finanças), instruções de submissão para Portal das Finanças e Segurança Social Direta, checklist do revisor, e lista final de ações do contribuinte.
 
@@ -74,105 +76,16 @@ O output é um pacote pronto para o revisor: working paper linha-a-linha, tabela
 | Prazo declaração trimestral SS (independentes) | Até ao **último dia de janeiro, abril, julho e outubro** (ISS, Guia Prático) |
 | Recibo / comprovativo | Comprovativo de entrega emitido pelo Portal das Finanças |
 | Legislação fundamental | Código do IRS (Decreto-Lei n.º 442-A/88), Código do IRC (Decreto-Lei n.º 442-B/88), Código do IVA (Decreto-Lei n.º 394-B/84), Lei Geral Tributária (LGT, Decreto-Lei n.º 398/98), Regime Geral das Infrações Tributárias (RGIT, Lei n.º 15/2001), Código Contributivo (Lei n.º 110/2009), Estatuto dos Benefícios Fiscais (EBF, Decreto-Lei n.º 215/89), Lei n.º 64/2025 (taxas de IRC 2026 e 2027), Orçamento do Estado para 2026 (Lei n.º 73-A/2025), Estatuto da OCC |
-| Versão da skill | 1.1 |
+| Versão da skill | 1.2 |
 | Validada por | Pendente: requer assinatura por **Contabilista Certificado** membro da OCC quando a declaração assenta em contabilidade organizada (Estatuto da OCC, art. 10.º, n.º 1, al. b)) |
 
 **Prazos em dia não útil.** Os prazos do Modelo 3, do Modelo 22 e da IES correm "independentemente de esse dia ser útil ou não útil". Para os prazos de IVA, a regra de transição para o dia útil seguinte e as datas concretas de 2027 estão em `portugal-vat-return`.
 
 ## Secção 2: Entradas Obrigatórias dos Skills Upstream
 
-A skill de montagem **não recalcula nada**. Espera outputs estruturados das skills upstream abaixo. Se uma skill upstream não tiver corrido, a montagem sinaliza a lacuna e continua com os dados disponíveis.
+A skill de montagem **não recalcula nada**. Espera outputs estruturados das skills upstream. Se uma skill upstream não tiver corrido, a montagem sinaliza a lacuna e continua com os dados disponíveis.
 
-### 2.1 Declaração singular (Modelo 3): inputs
-
-**Inputs Modelo 3**
-
-| Skill upstream | Output consumido | Onde aparece no Modelo 3 |
-| --- | --- | --- |
-| `pt-income-tax` | Rendimentos da Categoria B (trabalho independente): regime simplificado vs contabilidade organizada, coeficientes do art. 31.º, retenções na fonte, pagamentos por conta, IRS Jovem, taxas progressivas de 2026 e adicional de solidariedade | Anexo B (regime simplificado ou atos isolados), Anexo C (contabilidade organizada) |
-| `pt-irs-employees-investment` | Trabalho dependente e pensões (Categoria A e H), rendimentos de capitais (E), prediais (F), mais-valias (G), deduções à coleta | Anexo A, Anexo E, Anexo F, Anexo G, Anexo G1, Anexo H |
-| `pt-nhr-ifici` | Regime de Residente Não Habitual (regime transitório) ou IFICI (EBF art. 58.º-A); rendimentos de fonte estrangeira com tratamento próprio | Anexo L |
-| `pt-foreign-source-treaties` | Rendimentos de fonte estrangeira, crédito de imposto por dupla tributação internacional (CIRS art. 81.º), aplicação de Convenções para Evitar a Dupla Tributação (CDT) | Anexo J (rendimentos obtidos no estrangeiro) |
-| `pt-corporate-tax` | (Apenas se o sujeito passivo for sócio de uma sociedade em transparência fiscal, CIRC art. 6.º) Lucro tributável imputado ao sócio | Anexo D (imputação de rendimentos) |
-| `portugal-vat-return` | Para trabalhadores independentes Categoria B com IVA: posição anual de IVA; reconciliação de volume de negócios apenas | Verificação cruzada; não aparece diretamente no Modelo 3 |
-| `pt-social-contributions` | Contribuições para a Segurança Social pagas como trabalhador independente; declarações trimestrais | Anexo B / C (contribuições); Anexo SS ao Modelo 3 |
-| `portugal-bookkeeping` | Para contabilidade organizada: demonstração de resultados, conciliação fiscal-contabilística | Anexo C (campos de apuramento) |
-| `portugal-crypto-tax` | Ganhos com criptoativos (CIRS art. 10.º, n.º 1, al. k)); detenção inferior a 365 dias (tributada) ou igual ou superior a 365 dias (excluída, art. 10.º, n.º 22); mineração e outras operações da Categoria B | Anexo G / Anexo G1 ou Anexo B / C consoante natureza |
-| `portugal-payroll` | Trabalhador independente que também recebe rendimentos de trabalho dependente: salários, retenções de IRS, contribuições para a Segurança Social, quotizações sindicais | Anexo A |
-
-**Anexos do Modelo 3 em vigor** (Portaria n.º 104/2026/1, art. 1.º, produz efeitos a 1 de janeiro de 2026): aprovados de novo os anexos A (trabalho dependente e pensões), B (rendimentos empresariais e profissionais, regime simplificado ou atos isolados), C (contabilidade organizada), D (imputação de rendimentos), H (benefícios fiscais e deduções) e J (rendimentos obtidos no estrangeiro); mantidos com novas instruções os anexos E (rendimentos de capitais) e G (mais-valias e outros incrementos patrimoniais); mantidos o rosto e os anexos F (rendimentos prediais), G1 (mais-valias não tributadas) e L (residente não habitual / incentivo fiscal à investigação científica e inovação), aprovados pela Portaria n.º 72-B/2025/1, e o Anexo I (rendimentos de herança indivisa), aprovado pela Portaria n.º 39-B/2024. Os modelos "destinam-se a declarar os rendimentos dos anos de 2015 e seguintes" (art. 1.º, n.º 4), pelo que servem para os rendimentos de 2026 até serem substituídos. As instruções do Anexo H foram depois alteradas pela Portaria n.º 136-C/2026/1.
-
-### 2.2 Declaração de sociedades (Modelo 22): inputs
-
-**Inputs Modelo 22**
-
-| Skill upstream | Output consumido | Onde aparece no Modelo 22 |
-| --- | --- | --- |
-| `pt-corporate-tax` | Lucro tributável, taxa de IRC (19% para períodos iniciados em 2026; 15% sobre os primeiros €50.000 para PME e Small Mid Cap; 12,5% startups), derrama estadual (CIRC art. 87.º-A), derrama municipal, tributações autónomas (CIRC art. 88.º), prejuízos fiscais (CIRC art. 52.º), benefícios fiscais ao investimento (RFAI, SIFIDE II) | Modelo 22 (apuramento do lucro tributável, matéria coletável e cálculo do imposto); Anexos A, C, D, E |
-| `portugal-bookkeeping` | Balancete final pós-encerramento, demonstração de resultados, balanço, mapas de depreciações e amortizações (Modelo 32) | Suporta Modelo 22 + IES |
-| `portugal-financial-statements` | Demonstrações financeiras (SNC, NCM ou NCM-ME): Balanço, Demonstração de Resultados por Naturezas, Demonstração das Alterações no Capital Próprio, Demonstração dos Fluxos de Caixa, Anexo | Submetidas via IES; suportam Modelo 22 |
-| `portugal-vat-return` | Posição anual de IVA da sociedade; declarações periódicas; pro-rata se aplicável; regularizações | Verificação cruzada; reflete-se na IES |
-| `portugal-payroll` | Custos com pessoal, retenções na fonte de IRS dos colaboradores (Categoria A), contribuições para a Segurança Social | Modelo 22 (gastos com pessoal); cruzamento com DMR |
-| `pt-social-contributions` | Contribuições da entidade empregadora e dos trabalhadores; membros de órgãos estatutários (MOE); entidades contratantes | DMR + Modelo 22 verificação cruzada |
-| `pt-foreign-source-treaties` | Rendimentos de fonte estrangeira da sociedade; crédito por dupla tributação internacional (CIRC art. 91.º); participation exemption (CIRC art. 51.º) | Modelo 22, deduções à coleta e correções ao resultado |
-| `pt-transfer-pricing` | Operações com entidades relacionadas (CIRC art. 63.º; Portaria n.º 268/2021) | Correções no Modelo 22; informação na IES |
-| `portugal-crypto-tax` | Ganhos e perdas em criptoativos detidos pela sociedade, tratados consoante natureza contabilística | Modelo 22 (correções fiscais ao resultado contabilístico) |
-
-**Impresso a usar para o período de 2026.** O Modelo 22 e os anexos são aprovados por despacho (CIRC art. 117.º, n.º 2). O impresso em vigor a 30 de outubro de 2026 é o do Despacho n.º 320/2026, feito para as alterações legislativas de 2025: o seu campo 347-B ainda multiplica por 20% e o 347-A por 16% (PME) ou 12,5% (startups), as taxas dos períodos de 2025. A declaração do período de 2026 (enviada até 31 de maio de 2027) usa o impresso que estiver aprovado para essa campanha; confirmar o novo despacho antes de preencher.
-
-**Anexos do Modelo 22 em vigor em 2026** (Despacho n.º 320/2026, de 9 de janeiro): aprovados de novo a declaração Modelo 22 e os anexos C, D e F; mantidos os anexos A (períodos de 2015 e seguintes), B (apenas períodos anteriores a 2011), E, G e AIMI, aprovados pelo Despacho n.º 422/2025. Títulos dos formulários da AT: A "Derrama municipal", C "Regiões Autónomas", D "Benefícios fiscais", E "Regime simplificado", F "Organismos de investimento coletivo", G "Regime especial de determinação da matéria coletável" (atividades de transporte marítimo).
-
-**Quadro 10 (Cálculo do imposto) do impresso do Despacho n.º 320/2026.** Campos usados nas reconciliações desta skill; confirmar no impresso aprovado para a campanha de 2027:
-
-| Campo | Conteúdo (fórmula impressa no quadro) |
-| --- | --- |
-| 347-A / 347-B | Imposto à taxa reduzida (primeiros €50.000) / à taxa normal |
-| 351 | Coleta (347-A + 347-B + 349 + 350 + 370): IRC apenas, sem derramas nem tributações autónomas |
-| 373 | Derrama estadual (art. 87.º-A) |
-| 378 | Coleta total (351 + 373) |
-| 353 | Dupla tributação jurídica internacional (art. 91.º) |
-| 355 | Benefícios fiscais |
-| 356 | Pagamento especial por conta (art. 93.º) |
-| 357 / 358 | Total das deduções / total do IRC liquidado (378 - 357) |
-| 359 | Retenções na fonte |
-| 360 | Pagamentos por conta (art. 105.º) |
-| 374 | Pagamentos adicionais por conta (art. 105.º-A) |
-| 361 / 362 | IRC a pagar / IRC a recuperar (358 + 371 - 359 - 360 - 374) |
-| 364 | Derrama municipal (o Anexo A transporta para este campo) |
-| 365 | Tributações autónomas |
-| 366 / 369 | Juros compensatórios / juros de mora |
-| 367 / 368 | Total a pagar / total a recuperar |
-
-### 2.3 Identificadores exigidos pelo intake
-
-**Identificadores**
-
-| Identificador | Obrigatório para |
-| --- | --- |
-| **NIF** (Número de Identificação Fiscal), atribuído pela AT a pessoas singulares e coletivas | Todas as declarações |
-| **NISS** (Número de Identificação de Segurança Social) | Declarações Segurança Social, DMR, declaração trimestral |
-| **NIPC** (Número de Identificação de Pessoa Coletiva), coincide com o NIF da sociedade | Modelo 22, IES |
-| **CAE** (Classificação das Atividades Económicas), código principal e códigos secundários | Modelo 22, IES, Anexo B do Modelo 3 (art. 151.º do CIRS e coeficientes) |
-| **Senha de acesso ao Portal das Finanças** | Submissão pelo próprio |
-| **Senha do Contabilista Certificado** | Nos casos em que a declaração deva por este ser assinada, o CC é identificado por senha atribuída pela AT (Portaria n.º 104/2026/1, art. 2.º, n.º 2) |
-| **Regime de IVA**: normal mensal, normal trimestral, isenção do art. 53.º (volume de negócios até €15.000), outros regimes especiais | Declaração periódica de IVA |
-| **Domicílio fiscal e estabelecimentos**: concelho (define derrama municipal e o Anexo A) | Modelo 22, Anexo A |
-| **Período de tributação** (sociedades com período não coincidente com ano civil) | Modelo 22, IES |
-| **Estado civil + dependentes + agregado familiar**; opção por tributação conjunta | Modelo 3, rosto |
-| **Residência fiscal** (residente, não residente, RNH, IFICI, Madeira/Açores) | Modelo 3 |
-| **IBAN** + comprovativo de titularidade | Reembolsos e pagamentos |
-
-- **Identificador em falta**: se qualquer identificador estiver em falta, a skill de montagem sinaliza-o como "Necessita Input" e produz o working paper com placeholders em vez de parar. Regra interna de trabalho desta skill, não uma regra legal.
-
-### 2.4 Coordenação AT + Segurança Social + e-fatura
-
-Portugal tem obrigações declarativas em portais distintos:
-
-- **AT (Portal das Finanças):** Modelo 3, Modelo 22, IES, declarações periódicas de IVA, comunicação de faturas, DMR, declarações de retenções (Modelo 10, Modelo 39, Modelo 30), IMI, IMT, IUC.
-- **Segurança Social (Segurança Social Direta):** contribuições de trabalhadores por conta de outrem e da entidade empregadora, declaração trimestral e contribuições dos trabalhadores independentes, entidades contratantes. A declaração anual dos independentes em contabilidade organizada faz-se através do Anexo SS ao Modelo 3, "enviada aos serviços da Segurança Social pela entidade tributária competente" (ISS, Guia Prático).
-- **e-fatura (faturas.portaldasfinancas.gov.pt):** comunicação das faturas emitidas, em tempo real, por ficheiro SAF-T (PT) ou por inserção direta no Portal, até ao dia 5 do mês seguinte (DL 198/2012, art. 3.º, n.os 1 e 2).
-
-A capstone produz **um pacote único integrado** com as três vertentes reconciliadas. Um sócio-gerente de uma sociedade unipessoal por quotas, por exemplo, terá obrigações como contribuinte singular (Modelo 3), como sociedade (Modelo 22 e IES), e perante a Segurança Social (como membro de órgão estatutário). A montagem cruza as três.
+O detalhe desta secção está na skill filha `pt-return-assembly-filing`, Secção 2: o mapa de inputs do Modelo 3 por anexo (2.1), o mapa de inputs do Modelo 22, os anexos em vigor e os campos do Quadro 10 (2.2), os identificadores exigidos pelo intake (2.3) e a coordenação AT + Segurança Social + e-fatura (2.4). Carregar `pt-return-assembly-filing` junto com esta skill sempre que se monta um pacote.
 
 ## Secção 3: Workflow de Montagem, Reconciliações Cross-Skill
 
@@ -594,154 +507,7 @@ Os pagamentos de IRS, IRC, IVA e outros tributos fazem-se com a referência para
 
 ## Secção 7: Instruções de Submissão
 
-### 7.1 Submissões no Portal das Finanças
-
-**Canais de submissão**
-
-| Canal | Descrição | Adequado para |
-| --- | --- | --- |
-| **Portal das Finanças: preenchimento direto** | Formulário online no Portal | Contribuintes singulares; PME simples |
-| **Portal das Finanças: envio de ficheiro** | Upload de ficheiros gerados por software de contabilidade | CC profissionais; sociedades com volume |
-| **Software certificado de faturação / contabilidade** | Comunicação de faturas em tempo real ou por ficheiro SAF-T (PT) (DL 198/2012, art. 3.º, n.º 1) | Sociedades com ERP; grandes contribuintes |
-
-### 7.2 Submissão do Modelo 3 (IRS)
-
-1. Aceder ao Portal das Finanças com NIF + senha (ou Chave Móvel Digital / Cartão de Cidadão)
-2. Menu de IRS: "Entregar Declaração" (Modelo 3)
-3. Selecionar ano dos rendimentos 2026
-4. Se disponível, o sistema apresenta uma declaração pré-preenchida com dados já comunicados à AT (rendimentos do trabalho, retenções, despesas dedutíveis com base nas faturas comunicadas até ao final de fevereiro de 2027, CIRS art. 78.º-B, n.º 5)
-5. Validar e corrigir os anexos pré-preenchidos; acrescentar os anexos aplicáveis (Portaria n.º 104/2026/1):
-   - Anexo A (rendimentos do trabalho dependente e pensões)
-   - Anexo B (rendimentos empresariais e profissionais: regime simplificado ou atos isolados)
-   - Anexo C (rendimentos empresariais e profissionais: contabilidade organizada)
-   - Anexo D (imputação de rendimentos)
-   - Anexo E (rendimentos de capitais)
-   - Anexo F (rendimentos prediais)
-   - Anexo G (mais-valias e outros incrementos patrimoniais)
-   - Anexo G1 (mais-valias não tributadas)
-   - Anexo H (benefícios fiscais e deduções)
-   - Anexo I (rendimentos de herança indivisa)
-   - Anexo J (rendimentos obtidos no estrangeiro)
-   - Anexo L (residentes não habituais / IFICI)
-   - Anexo SS (Segurança Social, trabalhadores independentes)
-6. Validar: o Portal executa verificações lógicas e aritméticas; resolver erros e analisar avisos
-7. Submeter: o sistema emite comprovativo de entrega. A declaração considera-se apresentada na data da submissão, sob condição de correção de erros em 30 dias (Portaria n.º 104/2026/1, art. 3.º, n.º 2)
-8. Aguardar nota de liquidação
-
-**Rendimentos de fonte estrangeira com crédito de imposto ainda não determinado no Estado da fonte:** o prazo do n.º 1 é prorrogado até 31 de dezembro desse ano, desde que o contribuinte comunique à AT, dentro do prazo normal, que cumpre as condições (CIRS art. 60.º, n.os 3 e 4).
-
-**Contabilista Certificado:** quando a Categoria B é tributada com base em contabilidade organizada (Anexo C), a declaração é assinada pelo CC, identificado por senha atribuída pela AT (Portaria n.º 104/2026/1, art. 2.º, n.º 2; Estatuto da OCC, art. 10.º, n.º 1, al. b)).
-
-**Atenção:** declarar o IBAN de que o contribuinte é titular no Portal das Finanças, para o reembolso ser pago por transferência.
-
-### 7.3 Submissão do Modelo 22 (IRC)
-
-As sociedades comerciais e as demais entidades do CIRC art. 123.º, n.º 1, são obrigadas a dispor de contabilidade organizada. As declarações fiscais que assentam nessa contabilidade são assinadas pelo Contabilista Certificado (Estatuto da OCC, art. 10.º, n.º 1, al. b)), que submete com a sua senha.
-
-1. CC acede ao Portal das Finanças com as suas credenciais
-2. Menu de IRC: "Entregar Declaração" (Modelo 22), no impresso aprovado para a campanha de 2027 (ver Secção 2.2: o impresso do Despacho n.º 320/2026 ainda traz as taxas dos períodos de 2025)
-3. Selecionar período de tributação 2026
-4. Preencher os quadros do rosto do Modelo 22: identificação do sujeito passivo e do CC, tipo de declaração, período de tributação, regime de tributação, apuramento do lucro tributável (correções ao resultado contabilístico), apuramento da matéria coletável, cálculo do imposto, tributações autónomas, retenções e pagamentos por conta, outras informações
-5. Juntar os anexos aplicáveis (Despacho n.º 320/2026):
-   - Anexo A (derrama municipal): quando a sociedade tem estabelecimentos em mais de um município e matéria coletável superior a €50.000 (repartição pela massa salarial; ver pt-corporate-tax)
-   - Anexo C (Regiões Autónomas)
-   - Anexo D (benefícios fiscais: RFAI, SIFIDE II e outros)
-   - Anexo E (regime simplificado de IRC)
-   - Anexo F (organismos de investimento coletivo)
-   - Anexo G (regime especial do transporte marítimo)
-   - Anexo AIMI (prédios afetos a uso pessoal dos sócios e gerentes, para efeitos do adicional ao IMI)
-6. Validar e submeter: o Portal emite comprovativo
-7. Pagar o imposto autoliquidado até 31 maio 2027 (CIRC art. 104.º, n.º 1, al. b)); o reembolso, quando a declaração é enviada no prazo e sem erros, é feito até ao fim do 3.º mês seguinte ao envio (art. 104.º, n.º 3)
-
-**Grupos (RETGS):** a sociedade dominante envia a declaração do grupo e cada sociedade do grupo envia a sua (CIRC art. 120.º, n.º 6).
-
-**Cessação de atividade:** a declaração do período da cessação é enviada até ao último dia do 3.º mês seguinte (CIRC art. 120.º, n.º 3).
-
-### 7.4 Submissão da IES (Informação Empresarial Simplificada)
-
-A IES é a declaração anual de informação contabilística e fiscal do CIRC art. 117.º, n.º 1, al. c), "enviada nos termos e com os anexos que para o efeito sejam mencionados no respectivo modelo" (art. 121.º, n.º 1). Submetida pelo CC.
-
-1. CC acede ao Portal das Finanças
-2. Menu: "IES / Declaração Anual"
-3. Preencher o rosto e os anexos aplicáveis do modelo da IES em vigor (informação contabilística SNC, NCM ou NCM-ME; informação de IVA; operações com entidades relacionadas, CIRC art. 63.º; outros consoante a atividade)
-4. Validar e submeter até **15 julho 2027** (CIRC art. 121.º, n.º 2): o Portal emite comprovativo
-5. O dossier de preços de transferência, quando exigido, é constituído até ao mesmo prazo (ver `pt-transfer-pricing`; isenção para rendimentos totais inferiores a €10.000.000, Portaria n.º 268/2021)
-
-### 7.5 Submissão da Declaração Periódica de IVA
-
-1. CC ou sujeito passivo acede ao Portal das Finanças
-2. Menu de IVA: "Declaração Periódica"
-3. Selecionar período (mês ou trimestre)
-4. Preencher os quadros da declaração e, se houver regularizações, os anexos dos campos 40 e 41; no Quadro 06 apura-se o imposto a entregar ao Estado (campo 93) ou o crédito a recuperar (campos 94, 95 e 96) (AT, Ofício-Circulado n.º 25119/2026). Os restantes números de campo estão em `portugal-vat-return`. A Portaria n.º 298/2026/1 aprovou um novo modelo que só se aplica às declarações de períodos iniciados a partir de 1 de julho de 2027; desde 1 de julho de 2026 já vale a quadrícula «Regime Grupos IVA» no Quadro 01 para as entidades de um grupo de IVA (Lei n.º 62/2025), cujo apuramento global é feito na declaração do grupo (mesmo ofício-circulado)
-5. Submeter até dia 20 do 2.º mês seguinte (CIVA art. 41.º, n.º 1) e pagar até dia 25 do 2.º mês seguinte (CIVA art. 27.º, n.º 1). A declaração de junho e do 2.º trimestre segue o calendário especial descrito em `portugal-vat-return`
-6. A declaração é devida mesmo em período sem operações tributáveis (ver `portugal-vat-return`)
-
-### 7.6 Comunicação de faturas e SAF-T (PT)
-
-**Comunicação de faturas e SAF-T**
-
-| Obrigação | Como | Prazo |
-| --- | --- | --- |
-| **Comunicação de faturas à AT** | Em tempo real, por ficheiro SAF-T (PT), ou por inserção direta no Portal das Finanças (DL 198/2012, art. 3.º, n.º 1) | Até **dia 5** do mês seguinte ao da emissão (art. 3.º, n.º 2) |
-| **Comunicação do inventário** (entidades com contabilidade organizada obrigadas a inventário) | Ficheiro por transmissão eletrónica | Até **31 de janeiro**, inventário a 31 de dezembro do ano anterior (DL 198/2012, art. 3.º-A, n.º 1) |
-| **SAF-T (PT) da contabilidade** | Capacidade de exportação obrigatória (CIRC art. 123.º, n.º 8) | A pedido da AT, nomeadamente em inspeção |
-| **SAF-T Auditoria fiscal** | Sob solicitação da AT em inspeções | Prazo fixado na notificação |
-
-### 7.7 Submissões na Segurança Social Direta
-
-**Submissões Segurança Social Direta**
-
-| Declaração | Prazo |
-| --- | --- |
-| **Declaração de remunerações** (entidade empregadora) | Confirmação ou correção dos valores apurados pelo sistema até ao dia 20 do mês seguinte; o silêncio vale como aceitação (Código Contributivo art. 40.º, n.º 8) |
-| **Declaração trimestral** dos trabalhadores independentes | Até ao **último dia de janeiro, abril, julho e outubro**, relativa aos três meses anteriores (ISS, Guia Prático) |
-| **Anexo SS ao Modelo 3** (independentes em contabilidade organizada e declaração anual) | Com o Modelo 3, enviado à Segurança Social pela AT (ISS, Guia Prático) |
-| **Início / fim de atividade** de empresários em nome individual e titulares de EIRL só com atividade industrial ou comercial | Online, "no mês em que a alteração acontecer" (ISS, Guia Prático) |
-
-### 7.8 Resumo de prazos (período 2026)
-
-**Resumo de prazos**
-
-| Tipo de declarante | Declaração | Autoridade | Prazo |
-| --- | --- | --- | --- |
-| Singular (residente) | Modelo 3 IRS + Anexos | AT | **1 abril a 30 junho 2027** (CIRS art. 60.º, n.º 1) |
-| Sociedade (período = ano civil) | Modelo 22 IRC + Anexos, e pagamento | AT | **31 maio 2027** (CIRC art. 120.º, n.º 1; art. 104.º, n.º 1, al. b)) |
-| Sociedade | IES | AT | **15 julho 2027** (CIRC art. 121.º, n.º 2) |
-| Sujeito passivo IVA mensal | Declaração periódica de dezembro 2026 | AT | **22 fevereiro 2027** (20 fevereiro é sábado; regra em `portugal-vat-return`); pagamento até **25 fevereiro 2027** |
-| Sujeito passivo IVA trimestral | Declaração periódica do 4.º trimestre 2026 | AT | **22 fevereiro 2027** (20 fevereiro é sábado); pagamento até **25 fevereiro 2027** |
-| Empregador | DMR de dezembro 2026 | AT | **10 janeiro 2027** (CIRS art. 119.º, n.º 1, al. c), i)) |
-| Entidade devedora de rendimentos | Documento comprovativo dos rendimentos e retenções de 2026 ao titular | Contribuinte | **20 janeiro 2027** (CIRS art. 119.º, n.º 1, al. b)) |
-| Substituto tributário | Modelo 10 (restantes rendimentos de 2026) | AT | **Final de fevereiro 2027** (CIRS art. 119.º, n.º 1, al. c), ii)) |
-| Entidade que paga rendimentos sujeitos a retenção liberatória | Modelo 39 (rendimentos de 2026) | AT | **Final de fevereiro 2027** (CIRS art. 119.º, n.º 12, al. b)) |
-| Entidade que paga rendimentos com isenção, dispensa ou redução de taxa (art. 71.º) | Declaração própria | AT | **Final de julho 2027** (CIRS art. 119.º, n.º 2, al. a)) |
-| Entidade que paga rendimentos a não residentes | Modelo 30 | AT | **Até ao fim do 2.º mês seguinte** ao pagamento (CIRS art. 119.º, n.º 7, al. a)) |
-| Trabalhador independente | Declaração trimestral SS (outubro a dezembro 2026) | SS | **31 janeiro 2027** |
-| Todos os emitentes de faturas | Comunicação das faturas de dezembro 2026 | AT (e-fatura) | **5 janeiro 2027** |
-| Entidades com inventário | Comunicação do inventário a 31 dezembro 2026 | AT | **31 janeiro 2027** |
-| Grupos multinacionais com rendimentos consolidados de €750.000.000 ou mais no período anterior | Declaração financeira e fiscal por país (CIRC art. 117.º, n.º 1, al. d), e art. 121.º-A, n.º 1) | AT | **12 meses** após o fim do período de relato (art. 121.º-A, n.º 3); cada entidade do grupo comunica quem declara até ao prazo do Modelo 22 (art. 121.º-A, n.º 4) |
-
-### 7.9 Coimas por atraso
-
-**Coimas por atraso**
-
-| Infração | Coima | Base legal |
-| --- | --- | --- |
-| Falta ou atraso na entrega de declaração que permita à AT determinar a matéria coletável (Modelo 3, Modelo 22, IVA, IES) | €150 a €3.750 | RGIT art. 116.º, n.º 1 |
-| Falta ou atraso na apresentação de declarações, documentos, comunicações (DMR, Modelo 10, comunicação de faturas, SAF-T) | €150 a €3.750 | RGIT art. 117.º, n.º 1 |
-| Falta ou atraso nas declarações de início, alteração ou cessação de atividade | €300 a €7.500 | RGIT art. 117.º, n.º 2 |
-| Pessoas coletivas | Limites mínimo e máximo elevados para o dobro; máximo de €165.000 em caso de dolo | RGIT art. 26.º, n.os 1 e 4 |
-| Falta de entrega da prestação tributária (imposto, retenções, pagamentos por conta): negligência | 15% a metade do imposto em falta | RGIT art. 114.º, n.º 2 |
-| Falta de entrega da prestação tributária: dolo, sem crime | Valor da prestação em falta até ao dobro | RGIT art. 114.º, n.º 1 |
-| Juros compensatórios: liquidação retardada por facto do sujeito passivo, declaração fora de prazo | Contam-se dia a dia | LGT art. 35.º, n.os 1, 3 e 6 |
-| Juros de mora: imposto não pago no prazo legal | 7,221% ao ano desde 1 de janeiro de 2026, a taxa das dívidas ao Estado | LGT art. 44.º, n.º 3; Aviso n.º 18/2026/2 (IGCP) |
-
-- **Dispensa de coima**: não é aplicada coima quando, nos cinco anos anteriores, o agente não foi condenado nem beneficiou de dispensa ou redução, a infração não causou prejuízo efetivo à receita e a falta está regularizada; a falta de entrega de imposto conta sempre como prejuízo (RGIT art. 29.º, n.os 1 a 3).
-
-### 7.10 Substituição de declaração
-
-- **IRC**: quando tenha sido liquidado imposto inferior ao devido ou declarado prejuízo superior ao efetivo, a declaração de substituição pode ser apresentada "ainda que fora do prazo", pagando o imposto em falta (CIRC art. 122.º, n.º 1). Quando a autoliquidação resultou em imposto superior ao devido, a substituição faz-se no prazo de um ano a contar do termo do prazo legal (art. 122.º, n.º 2). O pagamento da diferença é feito até ao dia do envio da declaração de substituição (art. 104.º, n.º 1, al. c)).
-- **IRS**: a declaração é ainda apresentada nos 30 dias imediatos a qualquer facto que altere os rendimentos já declarados (CIRS art. 60.º, n.º 2). Uma declaração submetida com erros pode ser corrigida no prazo de 30 dias (Portaria n.º 104/2026/1, art. 3.º, n.º 2).
-- **Coimas**: regularização espontânea pode beneficiar da dispensa do RGIT art. 29.º, se reunidos os requisitos; em consequência de inspeção não há essa atenuação, e pode haver crime fiscal se houver ocultação.
+O detalhe desta secção está na skill filha `pt-return-assembly-filing`, Secção 7: canais de submissão (7.1), passos do Modelo 3 e anexos (7.2), do Modelo 22 e anexos (7.3), da IES (7.4), da declaração periódica de IVA (7.5), comunicação de faturas e SAF-T (7.6), Segurança Social Direta (7.7), resumo de prazos do período 2026 (7.8), coimas por atraso (7.9) e substituição de declaração (7.10). Os prazos principais estão também na Secção 1 desta skill.
 
 ## Secção 8: Lista Final de Ações do Contribuinte (Calendar)
 
@@ -878,6 +644,7 @@ Conservar pelo menos:
 
 ## Secção 2: Entradas Obrigatórias dos Skills Upstream
 
+0. **Mapa de inputs por anexo**: ver `pt-return-assembly-filing`, Secção 2
 0. **Invocar pt-income-tax**: consumir output da Categoria B para Modelo 3 (Anexo B / C), retenções, pagamentos por conta, IRS Jovem
 0. **Invocar pt-irs-employees-investment**: consumir Categorias A, H, E, F, G e deduções à coleta (Anexos A, E, F, G, G1, H)
 0. **Invocar pt-nhr-ifici**: consumir output RNH/IFICI para Anexo L
@@ -909,7 +676,7 @@ Conservar pelo menos:
 
 ## Secção 7: Instruções de Submissão
 
-0. **Gerar instruções de submissão**: produzir instruções de submissão para Portal das Finanças, e-fatura / SAF-T e Segurança Social Direta
+0. **Gerar instruções de submissão**: produzir instruções de submissão para Portal das Finanças, e-fatura / SAF-T e Segurança Social Direta, seguindo `pt-return-assembly-filing`, Secção 7
 
 ## Secção 8: Lista Final de Ações do Contribuinte (Calendar)
 
@@ -1128,7 +895,7 @@ O output final é um conjunto de três ficheiros, colocados em `/mnt/user-data/o
 
 2. `reviewer_brief.md`: ficheiro markdown com todo o conteúdo da Secção 4 (estrutura do working paper para o CC), com os blocos headline da Secção 5 e o bloco de atestação da Secção 10.
 
-3. `taxpayer_action_list.md`: ficheiro markdown com a lista de ações da Secção 8, mais o bloco de instruções de pagamento da Secção 6 e o bloco de instruções de submissão da Secção 7.
+3. `taxpayer_action_list.md`: ficheiro markdown com a lista de ações da Secção 8, mais o bloco de instruções de pagamento da Secção 6 e o bloco de instruções de submissão da Secção 7 (em `pt-return-assembly-filing`).
 
 Os três ficheiros são apresentados ao utilizador no final.
 
@@ -1150,10 +917,11 @@ Se a execução esgotar o contexto a meio da construção, completar primeiro o 
 10. A comunicação mensal de faturas ocorre em paralelo durante o ano, não no momento da montagem; a skill apenas confirma que está em dia.
 11. Cripto DeFi avançado (LP tokens, yield farming, NFTs, DAOs) pode exceder o enquadramento padrão do CIRS art. 10.º; a skill `portugal-crypto-tax` cobre casos standard.
 12. A skill assume um único CC vinculado; se houver mudança de CC durante o exercício, há obrigações de comunicação ao Portal das Finanças que ficam fora do âmbito desta capstone.
-13. Os campos do Modelo 22 indicados (Quadro 10) são os do impresso do Despacho n.º 320/2026, e da declaração periódica de IVA só os campos 40, 41 e 93 a 96; confirmar no impresso aprovado para a campanha de 2027 e em `portugal-vat-return`.
+13. Os campos do Modelo 22 indicados (Quadro 10, em `pt-return-assembly-filing`, Secção 2.2) são os do impresso do Despacho n.º 320/2026, e da declaração periódica de IVA só os campos 40, 41 e 93 a 96; confirmar no impresso aprovado para a campanha de 2027 e em `portugal-vat-return`.
 
 ### 15.2 Change log
 
+- v1.2 (2026-10-31): Skill dividida em duas para caber no limite de tamanho da plataforma. As Secções 2 (inputs por anexo, anexos em vigor, Quadro 10 do Modelo 22, identificadores, coordenação AT + SS + e-fatura) e 7 (instruções de submissão, resumo de prazos, coimas, substituição) passaram, sem alterações, para a skill filha `pt-return-assembly-filing`. Ficam aqui ponteiros com o mesmo número de secção. Nenhum valor mudou.
 - v1.1 (2026-10-30): Período de tributação 2026 (campanha 2027). Prazos movidos para 2027 a partir dos códigos (CIRS art. 60.º, CIRC arts. 104.º, 120.º e 121.º, CIVA arts. 27.º e 41.º, CIRS art. 119.º). Anexos do Modelo 3 alinhados com a Portaria n.º 104/2026/1 (G1, I e SS acrescentados) e do Modelo 22 com o Despacho n.º 320/2026 (Anexo B só para períodos anteriores a 2011; F, G e AIMI acrescentados). Taxas de IRC 19% / 15% (Lei n.º 64/2025), tributações autónomas de 2026, prejuízos a 65% sem limite temporal, retenções da Categoria B a 23% / 16,5% / 11,5% / 20%, pagamentos por conta de IRS a 65%, Modelo 10 e Modelo 39 até ao final de fevereiro (DL 49/2025), pagamento do IVA até dia 25, coimas do RGIT corrigidas, base legal do CC corrigida para o Estatuto da OCC, conservação de 10 anos pelo CIVA art. 52.º. Removidos valores sem fonte oficial lida (IBAN da AT, número de dígitos de referências, números de campos); ver a linha "Not yet confirmed". Revisão independente (2026-10-30): títulos dos anexos F, G1, I e L confirmados (Portarias 72-B/2025/1 e 39-B/2024); campos do Quadro 10 do Modelo 22 (Despacho 320/2026) e nota de que esse impresso ainda traz as taxas de 2025; taxas e prazos da Segurança Social do empregador (Código Contributivo arts. 40.º, 43.º, 53.º e 69.º); juros de mora de 7,221% (Aviso 18/2026/2); campos 40, 41 e 93 a 96 da declaração de IVA e novo modelo de julho de 2027; prazo da declaração por país (CIRC art. 121.º-A); IVA mensal de dezembro de 2026 até 22 de fevereiro de 2027.
 - v1.0 (2026-05): Versão inicial. Modelada sobre `ng-return-assembly`, `id-return-assembly`, `mt-return-assembly` e `us-ca-return-assembly`. Adaptada para Modelo 3 IRS + Anexos, Modelo 22 IRC + Anexos, IES, SAF-T (PT), DMR, declaração periódica de IVA, submissão via Portal das Finanças e impacto prospetivo do OE 2026. Coordena as skills upstream Portugal. Atestação requer Contabilista Certificado membro da OCC.
 
@@ -1224,7 +992,7 @@ Se a execução esgotar o contexto a meio da construção, completar primeiro o 
 | AT, Ofício-Circulado n.º 25119/2026 (VAT return: fields 40, 41, 93 to 96; Portaria 298/2026/1 new model for periods from 1 July 2027; VAT groups box from 1 July 2026) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/legislacao/instrucoes_administrativas/Documents/Oficio-Circulado-25119-2026.pdf | 2026-10-30 |
 | CIRC art. 121-A (country-by-country report: EUR 750,000,000, 12 months, notification by the Modelo 22 deadline) | https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc121a.aspx | 2026-10-30 |
 
-Not yet confirmed: the act approving Anexo SS to the Modelo 3 (the ISS guide describes it, the approving act was not read); the Modelo 22 form and Quadro 10 field numbers for the 2027 campaign (the 2026 period), because that form is not yet approved: the field map in Section 2.2 is from the Despacho 320/2026 form; the other Modelo 22 quadros and the periodic VAT return field numbers other than 40, 41 and 93 to 96 (an earlier version listed Modelo C fields 1, 4, 5, 7 and 22); the Modelo 22 annex subjects of B (pre-2011 only) beyond what the AT form titles show; the IES annex letters and contents (an earlier version said Anexo L related parties, R intra-EU, Q offshore); the 18.4% rate an earlier version gave for self-employed pensioners (not found in the consolidated Contributions Code); the first-job youth hiring relief (Decreto-Lei 72/2017) an earlier version cited; RFAI and SIFIDE II percentages and the SIFIDE carry-forward period an earlier version gave as 8 years (see pt-corporate-tax); whether CFEI II and DLRR can still be claimed for 2026; the treatment of unused special payments on account (PEC) paid before 2022; the Pillar Two transposing act (an earlier version said Lei 41/2024), the EUR 750 million group threshold for Pillar Two and the 15% minimum rate; the DAC8 start date for crypto reporting; the date for direct filing of the accounting SAF-T; the IUC payment month rule; the validity period of tax and social security clearance certificates (an earlier version said 3 months); the 15-day Social Security deadline for start, cessation or suspension of activity and the January "Folha de Férias / Mapa de Encargos" an earlier version listed; the AT IBAN and the digit counts of NIF, NISS and Multibanco references an earlier version gave; the IRS deduction caps and band table, which this skill takes from pt-income-tax and pt-irs-employees-investment.
+Not yet confirmed: the act approving Anexo SS to the Modelo 3 (the ISS guide describes it, the approving act was not read); the Modelo 22 form and Quadro 10 field numbers for the 2027 campaign (the 2026 period), because that form is not yet approved: the field map in Section 2.2 of pt-return-assembly-filing is from the Despacho 320/2026 form; the other Modelo 22 quadros and the periodic VAT return field numbers other than 40, 41 and 93 to 96 (an earlier version listed Modelo C fields 1, 4, 5, 7 and 22); the Modelo 22 annex subjects of B (pre-2011 only) beyond what the AT form titles show; the IES annex letters and contents (an earlier version said Anexo L related parties, R intra-EU, Q offshore); the 18.4% rate an earlier version gave for self-employed pensioners (not found in the consolidated Contributions Code); the first-job youth hiring relief (Decreto-Lei 72/2017) an earlier version cited; RFAI and SIFIDE II percentages and the SIFIDE carry-forward period an earlier version gave as 8 years (see pt-corporate-tax); whether CFEI II and DLRR can still be claimed for 2026; the treatment of unused special payments on account (PEC) paid before 2022; the Pillar Two transposing act (an earlier version said Lei 41/2024), the EUR 750 million group threshold for Pillar Two and the 15% minimum rate; the DAC8 start date for crypto reporting; the date for direct filing of the accounting SAF-T; the IUC payment month rule; the validity period of tax and social security clearance certificates (an earlier version said 3 months); the 15-day Social Security deadline for start, cessation or suspension of activity and the January "Folha de Férias / Mapa de Encargos" an earlier version listed; the AT IBAN and the digit counts of NIF, NISS and Multibanco references an earlier version gave; the IRS deduction caps and band table, which this skill takes from pt-income-tax and pt-irs-employees-investment.
 
 ## Disclaimer final
 
