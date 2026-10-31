@@ -2,8 +2,10 @@
 jurisdiction: GI
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  VAT: gi-transaction-tax-transition
+partial:
+  VAT: "gi-transaction-tax-transition is a working-paper draft; the operative charging provisions, commodity rates and any relief extension after 12 October 2026 are not yet reconciled"
 ---
 
 # Gibraltar: tax pack
@@ -18,7 +20,7 @@ Tax years in this pack: 5 on 2026.
 |---|---|---|
 | IT-IND, individual income tax | gi-individual-income-tax (2026) | sourced from the law |
 | IT-CORP, corporate income tax | gi-corporate-tax (2026) | sourced from the law |
-| VAT, indirect tax | (missing) | |
+| VAT, indirect tax | gi-transaction-tax-transition (2026) | sourced from the law, partial |
 | SC, social contributions | gi-payroll-social-insurance (2026) | sourced from the law |
 | PR, payroll withholding | gi-payroll-social-insurance (2026) | sourced from the law |
 | TP, transfer pricing | (missing) | |

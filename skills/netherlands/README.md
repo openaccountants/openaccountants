@@ -2,6 +2,8 @@
 jurisdiction: NL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
+covered_by:
+  IT-IND: nl-income-tax
 partial: {}
 ---
 

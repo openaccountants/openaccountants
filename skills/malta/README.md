@@ -3,6 +3,7 @@ jurisdiction: MT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: malta-income-tax
   XB: moving-to-malta-tax-residence
 ---
 
