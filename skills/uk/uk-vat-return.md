@@ -1,10 +1,10 @@
 ---
 name: uk-vat-return
 description: "UK VAT for a business registered in Great Britain, as the law stands on 24 October 2026. VAT has no tax year: each figure carries the date it applies from. Covers the 20%, 5% and 0% rates, exempt supplies, the temporary zero rate on domestic electricity (1 October 2026 to 31 March 2027), registration at GBP 90,000, deregistration at GBP 88,000, Making Tax Digital, the nine boxes, the deadline, blocked input tax (cars, business entertainment), mobile phones, bad debt relief, the Capital Goods Scheme (GBP 600,000 from 29 July 2026), the Flat Rate, cash and annual accounting schemes, reverse charges for overseas services and construction, penalty points, late payment penalties and interest. Trigger on: VAT return, VAT100, 9 boxes, VAT threshold, MTD for VAT, reverse charge, input tax, bad debt relief, VAT penalty. Out of scope: the short routine (vat-returns-for-small-businesses-in-the-uk), Xero closes (close-the-uk-vat-quarter-from-xero, xero-uk-vat-close), EU goods sellers (gb-vat-eu-goods-sellers)."
-version: 2.1
+version: 2.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -140,6 +140,25 @@ The construction reverse charge covers standard and reduced-rate construction op
 - **Making Tax Digital:** all VAT-registered businesses keep digital records and file through compatible software. Links between programs must be digital; copy and paste is not a digital link. Exemption only where digital records are not practical (for example age, disability, location, religious objection) or for insolvency ([VAT Notice 700/22](https://www.gov.uk/government/publications/vat-notice-70022-making-tax-digital-for-vat/vat-notice-70022-making-tax-digital-for-vat)).
 - **Corrections:** a return cannot be amended once sent. Net errors within the method 1 limit go on the current return; larger or deliberate errors are notified to HMRC separately (method 2). Time limit: 4 years ([VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045)).
 
+### How to file and pay a VAT return, step by step
+
+**What you need first:** your 9-digit VAT registration number, access to your VAT online account, software compatible with Making Tax Digital, digital records for the period, VAT invoices for every reclaim, and the period dates and due date.
+
+1. **Find the due date.** Sign in to the VAT online account, which shows when returns are due and when payment must clear ([GOV.UK: when to do a VAT Return](https://www.gov.uk/vat-returns), read 2026-10-31).
+2. **Fill in boxes 1 to 9 in the software.** Use the box rules under "The taxable base". Enter 0.00 in any box that does not apply; every box is completed, and a return is due even with nothing to pay or reclaim ([VAT Notice 700/12, 3.1 and 7.2](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012), read 2026-10-31).
+3. **Deal with past errors before submitting.** Net errors within the method 1 limit go on this return. Otherwise see step 8 ([VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045), read 2026-10-31).
+4. **Submit from the software.** The online account form is only for a business that does not have to use software. A paper return applies only to a business approved to send one, and it must reach HMRC by the due date ([GOV.UK: how to send your VAT Return](https://www.gov.uk/vat-returns/how-to-send-your-vat-return), read 2026-10-31; [VAT Notice 700/12, 1.2 and 5](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012), read 2026-10-31).
+5. **Check it arrived.** The VAT online account shows that HMRC has received the return ([GOV.UK: when to do a VAT Return](https://www.gov.uk/vat-returns), read 2026-10-31).
+6. **Pay so the money clears by the deadline: 1 calendar month and 7 days after the period ends.** There are three common routes ([GOV.UK: pay your VAT bill](https://www.gov.uk/pay-vat/print), read 2026-10-31):
+   - Direct Debit: set it up in the VAT online account at least 3 working days before submitting. HMRC collects 3 working days after the deadline. If it is set up later, the first payment goes another way.
+   - Bank transfer: sort code 08 32 00, account 11963155, name HMRC VAT, reference the 9-digit VAT number with no spaces. Faster Payments usually arrive the same or next day, including weekends and bank holidays. CHAPS usually arrives the same working day. Bacs usually takes 3 working days.
+   - Overseas bank account: CHAPS to IBAN GB36 BARC 2005 1773 1523 91, BIC BARCGB22.
+7. **If box 5 is a repayment,** HMRC credits the account and repays the balance, subject to any enquiries ([VAT Notice 700/12, 3.6](https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012), read 2026-10-31). Money goes to the bank account in the VAT registration details; with no account there, HMRC sends a cheque. Direct Debit details are not used for repayments ([GOV.UK: pay your VAT bill](https://www.gov.uk/pay-vat/print), read 2026-10-31).
+8. **To correct a sent return,** you cannot amend it. Method 1: net errors up to GBP 10,000, or up to GBP 50,000 if within 1% of box 6 for the return in which you find them, go on the current return. Method 2: anything above that, any deliberate error, or any error by choice is reported on the [HMRC online form](https://www.tax.service.gov.uk/submissions/new-form/notification-errors-vat-returns), or in writing with the VAT number to VAT Error Correction Team, BT VAT, HMRC, BX9 1WR. The limit is 4 years from the end of the period for output tax and over-claimed input tax, and from the return's due date for under-claimed input tax. It does not apply to deliberate errors ([VAT Notice 700/45](https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045), read 2026-10-31).
+9. **If you cannot pay,** file on time anyway, because a late return and a late payment are separate failures. Contact HMRC to ask for a payment plan; HMRC checks that it is affordable, and if none is agreed it asks for the full amount ([GOV.UK: if you cannot pay your tax bill](https://www.gov.uk/difficulties-paying-hmrc), read 2026-10-31).
+
+**Stop and get a professional when:** an error was deliberate; net errors are over GBP 50,000; the business has exempt income and partial exemption applies; or HMRC has opened an enquiry into the period.
+
 ## Penalties and interest
 
 **Late submission (points).** Each late return earns one point until the threshold: annual returns 2, quarterly 4, monthly 5. At the threshold you pay GBP 200, and GBP 200 again for each further late return while at the threshold. Applies to periods starting on or after 1 January 2023, including nil and repayment returns ([gov.uk: penalty points](https://www.gov.uk/guidance/penalty-points-and-penalties-if-you-submit-your-vat-return-late); [FA 2021 Sch 24](https://www.legislation.gov.uk/ukpga/2021/26/schedule/24)).
@@ -224,6 +243,39 @@ expected:
   total: 1148.73
 ```
 
+**Example 3: which should I use, the Flat Rate Scheme or standard VAT accounting?** An IT consultancy past its first year of registration sells GBP 100,000 net to UK businesses at 20% and expects to stay there, so it can join (limit GBP 150,000 excluding VAT). VAT-inclusive turnover is GBP 120,000. The flat rate is charged on that inclusive figure ([GOV.UK: Flat Rate Scheme](https://www.gov.uk/vat-flat-rate-scheme/print), read 2026-10-31).
+
+- Worked one way, standard accounting: pay output VAT of GBP 20,000 less input VAT.
+- Worked the other way, with goods of GBP 3,000 a year: this is above 2% of turnover and above GBP 1,000, so the sector rate of 14.5% applies and the payment is GBP 17,400.
+- The deciding figure: standard accounting wins once reclaimable input VAT passes GBP 20,000 - 17,400 = GBP 2,600. With input VAT of GBP 3,500 it pays GBP 16,500, which is GBP 900 less. With input VAT of GBP 1,500 the flat rate is GBP 1,100 cheaper.
+- If goods are only GBP 1,500, the business is a limited cost business at 16.5%, pays GBP 19,800, and the break-even falls to GBP 200. Standard accounting then wins for almost any business with costs.
+- The test goes with the goods spend first, then the input VAT. To join, apply to HMRC online or by post; confirmation comes through the VAT online account or by post.
+
+```oa-check
+name: Flat Rate Scheme against standard accounting, IT consultancy
+inputs:
+  net_sales: 100000
+  input_vat: 3500
+  sector_rate: 0.145
+  limited_rate: 0.165
+steps:
+  - output_vat: net_sales * 0.20
+  - gross: net_sales + output_vat
+  - flat_sector: gross * sector_rate
+  - flat_limited: gross * limited_rate
+  - standard: output_vat - input_vat
+  - breakeven_sector: output_vat - flat_sector
+  - breakeven_limited: output_vat - flat_limited
+  - standard_saves: flat_sector - standard
+expected:
+  flat_sector: 17400
+  flat_limited: 19800
+  standard: 16500
+  breakeven_sector: 2600
+  breakeven_limited: 200
+  standard_saves: 900
+```
+
 ## Ask the client first
 
 1. Are you VAT registered? From what date, on which return periods, and under which schemes (Flat Rate, cash, annual)? If not: your taxable turnover month by month for the last 12 months, and any single 30 days ahead that could go over GBP 90,000.
@@ -278,8 +330,15 @@ expected:
 | HMRC, VAT Notice 700/65 (business entertainment), 2.6 and 3.2 | https://www.gov.uk/guidance/business-entertainment-and-vat-notice-70065 | 2026-10-24 |
 | HMRC, VAT Notice 700/18 (bad debt relief), 3.12 and 3.14 | https://www.gov.uk/guidance/relief-from-vat-on-bad-debts-notice-70018 | 2026-10-24 |
 | HMRC, VAT Notice 706/2 (Capital Goods Scheme; updated 29 July 2026) | https://www.gov.uk/guidance/capital-goods-scheme-notice-7062 | 2026-10-24 |
+| GOV.UK, how to send your VAT Return | https://www.gov.uk/vat-returns/how-to-send-your-vat-return | 2026-10-31 |
+| GOV.UK, when to do a VAT Return | https://www.gov.uk/vat-returns | 2026-10-31 |
+| GOV.UK, pay your VAT bill (Direct Debit, bank details, timing, repayments) | https://www.gov.uk/pay-vat/print | 2026-10-31 |
+| GOV.UK, VAT Notice 700/12 (updated 19 December 2025; boxes, submission, repayment) | https://www.gov.uk/guidance/how-to-fill-in-and-submit-your-vat-return-vat-notice-70012 | 2026-10-31 |
+| GOV.UK, VAT Notice 700/45 (methods, limits, where to send) | https://www.gov.uk/guidance/how-to-correct-vat-errors-and-make-adjustments-or-claims-vat-notice-70045 | 2026-10-31 |
+| GOV.UK, if you cannot pay your tax bill | https://www.gov.uk/difficulties-paying-hmrc | 2026-10-31 |
+| GOV.UK, Flat Rate Scheme, all parts | https://www.gov.uk/vat-flat-rate-scheme/print | 2026-10-31 |
 
-Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes.
+Not yet confirmed: HMRC's interest rate table was last updated 23 December 2025; the 7.75% figure is confirmed only by adding 4% to the Bank of England rate shown on 24 October 2026. The statutory instrument that adds the 7 days to the online return deadline was not read; the deadline is from HMRC's page. The legal basis for Making Tax Digital for VAT (VAT Regulations 1995 Part V) and for late payment interest (Finance Act 2009 s 101) was not read; those rules are from HMRC's notices. The VAT Notice 700/1 supplement threshold table ends at 31 March 2026; the GBP 90,000 figure for later dates rests on the statute, which shows no outstanding changes. How-to: whether the 2% limited cost test runs on turnover with or without VAT was not settled from the page; Example 3 uses goods figures that fall on the same side either way. What the software itself shows as a submission receipt varies by product and was not read.
 
 <!-- openaccountants-cta-block -->
 
