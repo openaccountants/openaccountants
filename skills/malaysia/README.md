@@ -2,7 +2,10 @@
 jurisdiction: MY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: malaysia-sst
+  SC: my-epf-socso
+  PR: my-pcb
 partial: {}
 ---
 

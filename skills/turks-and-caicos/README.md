@@ -2,7 +2,8 @@
 jurisdiction: TC
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  SC: tc-national-insurance
 partial: {}
 ---
 

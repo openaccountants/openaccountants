@@ -2,7 +2,8 @@
 jurisdiction: MF
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: mf-tgca-scope-and-compliance
 partial: {}
 ---
 

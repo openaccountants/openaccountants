@@ -2,8 +2,10 @@
 jurisdiction: PH
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: ph-sss-philhealth
+partial:
+  SC: "self-employed contributions only; no employer payroll remittance"
 ---
 
 # Philippines: tax pack

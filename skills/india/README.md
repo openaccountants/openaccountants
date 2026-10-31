@@ -2,7 +2,8 @@
 jurisdiction: IN
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  SC: in-pf-esi-employer
 partial: {}
 ---
 

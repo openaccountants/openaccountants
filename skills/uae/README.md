@@ -2,8 +2,10 @@
 jurisdiction: AE
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  XB: ae-tax-residency
+partial:
+  XB: "residence rules only; no non-resident withholding, treaty or exit rules"
 ---
 
 # UAE: tax pack

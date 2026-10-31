@@ -2,8 +2,10 @@
 jurisdiction: JP
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  XB: jp-nonpermanent-resident
+partial:
+  XB: "non-permanent resident regime only; no non-resident withholding, treaty or exit rules"
 ---
 
 # Japan: tax pack

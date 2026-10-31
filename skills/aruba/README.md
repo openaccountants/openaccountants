@@ -2,8 +2,10 @@
 jurisdiction: AW
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  VAT: aw-turnover-taxes
+partial:
+  VAT: "rates and registration only; no full base, exemptions or filing method"
 ---
 
 # Aruba: tax pack

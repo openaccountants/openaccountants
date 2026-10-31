@@ -2,8 +2,10 @@
 jurisdiction: IL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  XB: il-new-immigrant
+partial:
+  XB: "new immigrant and returning resident exemption only; no general non-resident or treaty rules"
 ---
 
 # Israel: tax pack
