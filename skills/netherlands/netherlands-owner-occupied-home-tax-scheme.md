@@ -3,7 +3,7 @@ name: netherlands-owner-occupied-home-tax-scheme
 description: The Dutch owner-occupied home scheme
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-01
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -39,12 +39,12 @@ For temporary absence, current article 3.111(7) excludes from “third parties,�
 
 | 2026 WOZ value | Annual ordinary benefit |
 | --- | --- |
-| Up to €12,500 | Nil |
-| Above €12,500 through €25,000 | 0.10% of value |
-| Above €25,000 through €50,000 | 0.20% of value |
-| Above €50,000 through €75,000 | 0.25% of value |
-| Above €75,000 through €1,350,000 | 0.35% of value |
-| Above €1,350,000 | €4,725 plus 2.35% of the excess |
+| Up to €12,500 | Nil Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €12,500 through €25,000 | 0.10% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €25,000 through €50,000 | 0.20% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €50,000 through €75,000 | 0.25% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2025/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €75,000 through €1,350,000 | 0.35% of value Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
+| Above €1,350,000 | €4,725 plus 2.35% of the excess Source: https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere (read 2026-10-31) |
 | Source | [2026 annual table and article 3.112](https://www.belastingdienst.nl/wps/wcm/connect/fisin/fisin2026/eigen_woning_en_restschuld_vroegere) |
 
 The vacant sale/future-home exceptions have no deemed benefit. The temporary-assignment exception uses 0.55% through €1,350,000 and, above that, €7,425 plus 2.35% of the excess. Do not apply that higher schedule to every absence. [Article 3.112(4)–(5)](https://wetten.overheid.nl/BWBR0011353).
