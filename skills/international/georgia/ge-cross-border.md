@@ -20,8 +20,8 @@ Profit tax is covered in ge-corporate-income-tax. Transfer pricing, including th
 
 ## Who this applies to
 
-- **Resident individual**: a person who actually stayed in Georgia for 183 days or more in any continuous 12-month period ending in the tax year, or who was abroad in Georgian public service that year (art. 34(2)). Days abroad for treatment, leisure, business trips or education count as days in Georgia (art. 34(3)). Any part of a day counts as a day (art. 34(5)). Days of diplomats, international-organisation staff and transit are not counted (art. 34(4)). Status is set for each tax period (art. 34(8)).
-- **Georgian citizen resident nowhere**: treated as resident on application to the tax authority (art. 34(6^1)). The Minister of Finance may grant residence to other foreign individuals in set cases (art. 34(6^2)).
+- **Resident individual**: a person who actually stayed in Georgia for 183 days or more in any continuous 12-month period ending in the tax year, or who was abroad in Georgian public service that year (art. 34(2)). Days abroad for treatment, leisure, business trips or education count as days in Georgia (art. 34(3)). Any part of a day counts as a day (art. 34(5)). Days in Georgia as a diplomat or consular officer, as international-organisation staff or foreign public servant, in transit, or for treatment or leisure are not counted (art. 34(4)). Status is set for each tax period (art. 34(8)).
+- **Georgian citizen resident nowhere**: treated as resident on application to the tax authority (art. 34(6^1)). A high net worth individual may be granted residence under the Minister of Finance's procedure (art. 34(6)), and the Minister may grant residence to other foreign individuals in set cases (art. 34(6^2)).
 - **Georgian enterprise**: one whose place of business or place of management is in Georgia (art. 22(1)). Every other enterprise is foreign (art. 22(2)).
 - **Non-residents** with Georgian-source income that is not attributed to a Georgian permanent establishment are taxed at source with no deductions (art. 134(1)).
 - **Tax agents**: a legal person, enterprise, organisation or entrepreneur that pays Georgian-source income to a non-resident must withhold (art. 154(1)(c)).
@@ -45,7 +45,7 @@ Profit tax is covered in ge-corporate-income-tax. Transfer pricing, including th
 | Salary of a non-resident | 20% at source | 2026 | arts. 81(1), 134(1)(f), same URL |
 | Interest, royalties and other income to a person registered in a preferential tax country | 15% at source | 2026 | art. 134(1^1), same URL |
 | Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | art. 98^2(5), (6), same URL |
-| Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 50 countries | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
+| Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 49 countries | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
 | VAT on services bought from a non-established supplier (reverse charge) | 18% of the amount paid | 2026 | arts. 161(1)(a), (3)(a), 166, same Tax Code URL |
 | Penalty interest on late tax, including tax not withheld | 0.05% of the unpaid tax per day | 2026 | art. 272(4), same Tax Code URL |
 
@@ -81,7 +81,7 @@ A service a non-resident performs entirely abroad is not Georgian-source, unless
   - owning Georgian shares or property;
   - seconded staff under the host's control;
   - controlling a Georgian company;
-  - storage, display, purchasing, information gathering, preparatory or ancillary work;
+  - storage, display, purchasing, information gathering, preparatory or ancillary work, or preparing and signing loan, supply or technical service agreements for the foreign enterprise;
   - leasing property, unless the owner systematically services and supervises it.
 - The tax authority registers PEs (art. 29(11)).
 - A PE pays profit tax like a Georgian company on distributed profit. Profit sent to the head office counts as distributed (arts. 97(3), 98^1(3)); see ge-corporate-income-tax.
@@ -91,10 +91,10 @@ A service a non-resident performs entirely abroad is not Georgian-source, unless
 **Preferential tax countries.**
 
 - The list (Government Ordinance No 615) has 15 jurisdictions in Part 1: Anguilla, Bahamas, Bahrain, Bermuda, British Virgin Islands, Guernsey, Vanuatu, Cayman Islands, Curaçao, Isle of Man, Marshall Islands, Micronesia, Palau, Sark, Turks and Caicos Islands.
-- Part 2 has 50 countries where a regime for some legal persons meets the test (art. 98^2(6)). Examples are Andorra, the United Arab Emirates, Cyprus, Hong Kong, Jersey, Liechtenstein, Luxembourg, Malaysia, Panama and Seychelles.
+- Part 2 has 49 countries where a regime for some legal persons meets the test (art. 98^2(6)). Examples are Andorra, the United Arab Emirates, Cyprus, Hong Kong, Jersey, Liechtenstein, Luxembourg, Malaysia, Panama and Seychelles.
 - **The treaty rule.** Under note 3 of the list, a listed country that has a ratified tax treaty in force with Georgia is preferential only for art. 98^1(2)(e) and art. 98^2(3)(a) to (e). So the 15% withholding in art. 134(1^1) does not apply to a person in a treaty country on the list.
 
-**Treaty relief.** The procedure for using a treaty privilege, and for refunds of Georgian tax to a non-resident, is set by order of the Minister of Finance (art. 125). Treaties are published on matsne.gov.ge. Read the treaty with the payee's country for the rate and the beneficial-owner condition before applying it. For example, under the Georgia–Cyprus agreement (in force 4 January 2016), dividends, interest and royalties paid to a Cyprus resident beneficial owner are taxable only in Cyprus (arts. 10(1), 11(1), 12(1)). This does not apply where the payee has a Georgian PE the income is linked to (arts. 10(3), 11(3), 12(3)).
+**Treaty relief.** The procedure for using a treaty privilege, and for refunds of Georgian tax to a non-resident, is set by order of the Minister of Finance (art. 125). Treaties are published on matsne.gov.ge. Read the treaty with the payee's country for the rate and the beneficial-owner condition before applying it. For example, under the Georgia–Cyprus agreement (in force 4 January 2016), dividends and interest paid to a Cyprus resident, and royalties whose beneficial owner is a Cyprus resident, are taxable only in Cyprus (arts. 10(1), 11(1), 12(1)). This does not apply where the payee has a Georgian PE the income is linked to (arts. 10(3), 11(3), 12(3)).
 
 **Residence certificates.** The Revenue Service issues certificates of Georgian tax residence. Anyone can check one on rs.ge/residence using the certificate ID and barcode.
 
@@ -126,7 +126,7 @@ A service a non-resident performs entirely abroad is not Georgian-source, unless
 | Failure to withhold | the payer pays the tax not withheld on the amount actually paid, plus the related penalties | art. 154(2)(b) |
 | Late payment | penalty interest of 0.05% of the unpaid tax per day, including the day of payment | art. 272(4) |
 | Penalty interest time limit | not charged once 3 years have passed from the day the obligation to charge it arose | art. 272(2^1) |
-| Late return, up to 2 months | 5% of the tax due for each month or part month, capped at 30% | art. 274(1) |
+| Late return, up to 2 months | 5% of the tax due on the return (Georgian text of art. 274(1); the English translation still shows an older wording of 5% a month capped at 30%) | art. 274(1) |
 | Late return, over 2 months | 10% of the tax due | art. 274(2) |
 | Late return showing no tax | no fine | art. 274(3) |
 | Understatement, up to 5% of the tax declared | 10% of the understated tax | art. 275(2^1) |
