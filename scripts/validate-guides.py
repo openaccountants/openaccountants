@@ -35,6 +35,11 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      accounting-pack and router files. Rates-row URLs, the nine canonical
      headings and the "Not yet confirmed" line WARN in both modes until the
      backlog is cleared. The full run prints a count of failures per check.
+  8. PR mode only: one job in one country has one skill (docs/skill-template.md).
+     ERROR if a NEW skill file lands in a (country, domain) cell that already
+     holds a slug, unless the PR deletes that slug or the pack README's
+     covered_by names the new slug for that domain. WARN when a new skill has
+     no domain that can be classified.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -52,6 +57,7 @@ from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
+COVERAGE_REPORT = os.path.join(REPO_ROOT, "scripts", "coverage-report.py")
 
 #: scripts/skill_checks.py checks that fail a PR (changed-only mode) when a tax
 #: skill breaks them. On the full tree they are warnings, so the backlog shows
@@ -198,6 +204,68 @@ def changed_files_vs_main():
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute changed files ({e}); validating everything")
         return None
+
+
+def added_and_deleted_vs_main():
+    """(added paths, deleted paths) vs origin/main. A rename is one of each."""
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-status", "--no-renames", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except Exception as e:  # pragma: no cover
+        print(f"WARN: could not compute added files ({e}); skipping the one-skill-per-cell check")
+        return set(), set()
+    rows = [line.split("\t", 1) for line in out.splitlines() if "\t" in line]
+    return {p for s, p in rows if s == "A"}, {p for s, p in rows if s == "D"}
+
+
+def cell_conflicts(cov, guides, added, deleted, readme_for):
+    """(errors, warnings) for the skills in `added`. `guides` is the tree at HEAD;
+    `readme_for(guide)` returns the pack's covered_by map."""
+    errors, warnings = [], []
+    deleted_slugs = {os.path.splitext(os.path.basename(p))[0] for p in deleted}
+    cells = {}
+    for g in guides:
+        if g["path"] in added or g["slug"] in deleted_slugs:
+            continue
+        code = str(g.get("jurisdiction") or "").upper()
+        for d in cov.cell_domains(g, readme_for(g))[0]:
+            cells.setdefault((code, d), []).append(g["slug"])
+    for g in guides:
+        code = str(g.get("jurisdiction") or "").upper()
+        if g["path"] not in added or not code or code in cov.PSEUDO_CODES or g["slug"] in deleted_slugs:
+            continue
+        domains, named = cov.cell_domains(g, readme_for(g))
+        if not domains:
+            warnings.append(f"{g['path']}: no tax domain in the slug, so its country cell was not checked")
+        for d in sorted(domains - named, key=cov.DOMAIN_CODES.index):
+            holders = sorted(cells.get((code, d), []))
+            if holders:
+                errors.append(
+                    f"{g['path']}: {code} {d} already holds {', '.join(holders)}. One job has one skill: "
+                    f"merge into it, delete it in this PR, or name {g['slug']} under covered_by in the pack README"
+                )
+    return errors, warnings
+
+
+def check_new_skill_cells(bi, errors, warnings):
+    added, deleted = added_and_deleted_vs_main()
+    if not added:
+        return
+    spec = importlib.util.spec_from_file_location("coverage_report", COVERAGE_REPORT)
+    cov = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cov)
+    with open(cov.DATA_PATH, encoding="utf-8") as fh:
+        pack_dirs = {row["code"]: row.get("dir") or "" for row in json.load(fh)}
+
+    def readme_for(guide):
+        code = str(guide.get("jurisdiction") or "").upper()
+        return cov.read_pack_readme(pack_dirs.get(code) or os.path.dirname(guide["path"]))[2]
+
+    new_errors, new_warnings = cell_conflicts(cov, bi.build_index()["guides"], added, deleted, readme_for)
+    errors.extend(new_errors)
+    warnings.extend(new_warnings)
 
 
 #: Bytes that may precede a frontmatter opener without being part of it:
@@ -509,6 +577,8 @@ def main():
                 print("no guide files changed — validation passed")
                 return
     check_guides(bi, errors, warnings, only_files=only)
+    if changed_only:
+        check_new_skill_cells(bi, errors, warnings)
     check_packages_frontmatter(bi, errors, only_files=only)
     check_us_federal_deletions(errors)
     if not no_index_check:
