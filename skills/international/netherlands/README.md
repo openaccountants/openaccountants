@@ -19,7 +19,7 @@ Calendar tax year. Authority: the Belastingdienst. Euro. Individuals are taxed i
 | SC, social contributions | nl-social-contributions | checked against the law |
 | PR, payroll withholding | nl-payroll-tax (2026 deep-tax: tables, credits, premiums, loonaangifte calendar, penalties, WKR free space, final levies, targeted exemptions, group election), nl-company-car | sourced from the law |
 | TP, transfer pricing | netherlands-transfer-pricing | checked against the law |
-| XB, cross-border | nl-cross-border (hub), nl-double-tax-relief, netherlands-30-percent-ruling (2026 deep-tax), nl-30-percent-ruling (older duplicate, to be merged) | checked against the law |
+| XB, cross-border | nl-cross-border (hub), nl-double-tax-relief, nl-30-percent-ruling (2026 deep-tax) | checked against the law |
 
 ## Official sources
 
