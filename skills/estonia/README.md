@@ -13,15 +13,15 @@ Calendar tax year. Authority: the Estonian Tax and Customs Board (Maksu- ja Toll
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | estonia-income-tax | sourced from the law |
-| IT-CORP, corporate income tax | ee-corporate-income-tax (distributed-profit tax at 22/78, deemed distributions, participation exemption, capital reductions, bank advance tax, 2026) | checked against the law |
-| VAT | estonia-vat-return | sourced from the law |
-| SC, social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | checked against the law |
-| PR, payroll withholding | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | checked against the law |
-| TP, transfer pricing | ee-transfer-pricing | checked against the law |
-| XB, cross-border | ee-cross-border (residence, non-residents, withholding, dividends, permanent establishments, treaty relief, foreign tax credit, company exit tax, 2026) | checked against the law |
+| Income tax | estonia-income-tax | sourced from the law |
+| Company tax | ee-corporate-income-tax (distributed-profit tax at 22/78, deemed distributions, participation exemption, capital reductions, bank advance tax, 2026) | checked against the law |
+| VAT or sales tax | estonia-vat-return | sourced from the law |
+| Social contributions | estonia-social-contributions (social tax, unemployment premiums, II pillar, self-employed FIE, 2026) | checked against the law |
+| Payroll | estonia-payroll (gross to net, withholding, basic exemption, TSD, 2026) | checked against the law |
+| Transfer pricing | ee-transfer-pricing | checked against the law |
+| Cross-border | ee-cross-border (residence, non-residents, withholding, dividends, permanent establishments, treaty relief, foreign tax credit, company exit tax, 2026) | checked against the law |
 
 Also in the pack: ee-tax-overview (a map of the system), ee-company-formation (entity choice) and estonia-tax-optimization.
 

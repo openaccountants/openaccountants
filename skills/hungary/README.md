@@ -12,15 +12,15 @@ Calendar tax year unless a company keeps a different business year. Authority: t
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026); hu-other-independent-income (primary producers, civil-law contract fees, crypto gains, private accommodation flat tax; 2026) | checked against the law |
-| IT-CORP, corporate income tax | hu-corporate-tax | checked against the law |
-| VAT | hu-vat-return (2026: rates incl. 0% for prescription medicines from 1 September 2026, HUF 20 million exemption, EU small-business scheme, filing frequency, deadlines, refunds, reverse charge, blocked input VAT, penalties); hungary-vat-return (row-by-row form 2665 and supplier library) | sourced from the law |
-| SC, social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | checked against the law |
-| PR, payroll withholding | hu-payroll | checked against the law |
-| TP, transfer pricing | hu-transfer-pricing | checked against the law |
-| XB, cross-border | hu-cross-border | checked against the law |
+| Income tax | hu-income-tax (self-employed: flat-rate, real-cost, KATA; 2026); hu-capital-and-rental-income (interest, dividends, gains, TBSZ/NYESZ, rental, real estate sales, annual return; 2026); hu-other-independent-income (primary producers, civil-law contract fees, crypto gains, private accommodation flat tax; 2026) | checked against the law |
+| Company tax | hu-corporate-tax | checked against the law |
+| VAT or sales tax | hu-vat-return (2026: rates incl. 0% for prescription medicines from 1 September 2026, HUF 20 million exemption, EU small-business scheme, filing frequency, deadlines, refunds, reverse charge, blocked input VAT, penalties); hungary-vat-return (row-by-row form 2665 and supplier library) | sourced from the law |
+| Social contributions | hu-social-contributions (self-employed and company members, 2026); employees in hu-payroll | checked against the law |
+| Payroll | hu-payroll | checked against the law |
+| Transfer pricing | hu-transfer-pricing | checked against the law |
+| Cross-border | hu-cross-border | checked against the law |
 
 hungary-einvoice covers NAV Online Számla; e-invoicing belongs to the Accounting packs milestone.
 

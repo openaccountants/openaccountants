@@ -14,15 +14,15 @@ Calendar tax year for individuals and companies. Authority: the National Revenue
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | bulgaria-income-tax | checked against the law (2026, euro) |
-| IT-CORP, corporate income tax | bg-corporate-income-tax | checked against the law |
-| VAT | bulgaria-vat-return | checked against the law (2026, euro) |
-| SC, social contributions | bulgaria-social-contributions | checked against the law |
-| PR, payroll withholding | bulgaria-payroll | checked against the law |
-| TP, transfer pricing | bg-transfer-pricing | checked against the law |
-| XB, cross-border | bg-cross-border | checked against the law |
+| Income tax | bulgaria-income-tax | checked against the law (2026, euro) |
+| Company tax | bg-corporate-income-tax | checked against the law |
+| VAT or sales tax | bulgaria-vat-return | checked against the law (2026, euro) |
+| Social contributions | bulgaria-social-contributions | checked against the law |
+| Payroll | bulgaria-payroll | checked against the law |
+| Transfer pricing | bg-transfer-pricing | checked against the law |
+| Cross-border | bg-cross-border | checked against the law |
 
 ## Official sources
 

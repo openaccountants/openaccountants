@@ -14,15 +14,15 @@ Calendar tax year. Authority: the Tax Administration (Poreska uprava), with retu
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | montenegro-income-tax (2026: residence, salary and business bands, supplementary and occasional work, rent with 30/50/70% standard costs, capital income and gains at 15%, sport, royalties, internet and gaming, gambling before and after 21 May 2026, losses, foreign tax credit, advances, GPP-FL by end of April, lump-sum eligibility and all 16 scale amounts, KPP/ZPO, all 13 printed GPP-FL schedules with unresolved 2026 mappings, fines, interest) | checked against the law |
-| IT-CORP, corporate income tax | me-corporate-income-tax (2026: 9/12/15% bands, base and capped costs, depreciation groups, capital gains, five-year losses, incentives, group relief, return and payment within three months, fines, interest) | checked against the law |
-| VAT | montenegro-vat (2026: 21/15/7/0% with the art. 24a lists, EUR 30,000 registration, monthly return and payment by the 15th, building land from 1 April 2026, reverse charge, imports, deduction and refunds, fines, interest) | checked against the law |
-| SC, social contributions | montenegro-social-contributions (2026: PIO 10% employee and 0% employer, unemployment 0.5% + 0.5%, Labour Fund 0.2%, entrepreneur bases at 60/100/150% of the average wage, farmers, additional service, annual PIO ceiling and refund, IOPPD by the 15th, fines, interest) | checked against the law |
-| PR, payroll withholding | montenegro-payroll (2026: gross to net, surtax as an employer charge, Chamber dues, disability levy, benefits and exemptions, minimum wage floors, IOPPD, foreign salary, fines, interest) | checked against the law |
-| TP, transfer pricing | me-transfer-pricing (2026: related persons, methods and interquartile range, 4.97% prescribed financing rate, documentation, large taxpayers, CbC notification, fines) | checked against the law |
-| XB, cross-border | me-cross-border (2026: company residence and PE, 15% withholding and 30% for listed territories, nonresident capital gains, treaty relief conditions, foreign tax credit, participation relief) | checked against the law |
+| Income tax | montenegro-income-tax (2026: residence, salary and business bands, supplementary and occasional work, rent with 30/50/70% standard costs, capital income and gains at 15%, sport, royalties, internet and gaming, gambling before and after 21 May 2026, losses, foreign tax credit, advances, GPP-FL by end of April, lump-sum eligibility and all 16 scale amounts, KPP/ZPO, all 13 printed GPP-FL schedules with unresolved 2026 mappings, fines, interest) | checked against the law |
+| Company tax | me-corporate-income-tax (2026: 9/12/15% bands, base and capped costs, depreciation groups, capital gains, five-year losses, incentives, group relief, return and payment within three months, fines, interest) | checked against the law |
+| VAT or sales tax | montenegro-vat (2026: 21/15/7/0% with the art. 24a lists, EUR 30,000 registration, monthly return and payment by the 15th, building land from 1 April 2026, reverse charge, imports, deduction and refunds, fines, interest) | checked against the law |
+| Social contributions | montenegro-social-contributions (2026: PIO 10% employee and 0% employer, unemployment 0.5% + 0.5%, Labour Fund 0.2%, entrepreneur bases at 60/100/150% of the average wage, farmers, additional service, annual PIO ceiling and refund, IOPPD by the 15th, fines, interest) | checked against the law |
+| Payroll | montenegro-payroll (2026: gross to net, surtax as an employer charge, Chamber dues, disability levy, benefits and exemptions, minimum wage floors, IOPPD, foreign salary, fines, interest) | checked against the law |
+| Transfer pricing | me-transfer-pricing (2026: related persons, methods and interquartile range, 4.97% prescribed financing rate, documentation, large taxpayers, CbC notification, fines) | checked against the law |
+| Cross-border | me-cross-border (2026: company residence and PE, 15% withholding and 30% for listed territories, nonresident capital gains, treaty relief conditions, foreign tax credit, participation relief) | checked against the law |
 
 Also in the pack: montenegro-tax-optimization, me-tax-overview and me-company-formation, all tax year 2026 (overview and formation rebuilt from the official laws on 30 Oct 2026: PRs #1001 and #1002).
 

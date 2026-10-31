@@ -19,14 +19,14 @@ Use the mainland China routes below for 2026 work. Hong Kong, Macao and Taiwan n
 
 ## Domains
 
-| Domain | Guide | Status |
+| Tax | Guide | Status |
 | --- | --- | --- |
-| IT-IND, individual income tax | `cn-iit` | Source-cited draft |
-| IT-CORP, corporate income tax | `cn-corporate-tax` | Source-cited draft |
-| VAT | `cn-vat` | Source-cited draft |
-| SC, social contributions | `cn-social-insurance` | Source-cited draft; national framework and Shanghai illustrations, partial as stated above |
+| Income tax | `cn-iit` | Source-cited draft |
+| Company tax | `cn-corporate-tax` | Source-cited draft |
+| VAT or sales tax | `cn-vat` | Source-cited draft |
+| Social contributions | `cn-social-insurance` | Source-cited draft; national framework and Shanghai illustrations, partial as stated above |
 | PR, payroll and payer withholding | `cn-withholding` | Source-cited draft |
-| TP, transfer pricing | `cn-transfer-pricing` | Source-cited draft |
+| Transfer pricing | `cn-transfer-pricing` | Source-cited draft |
 | XB, cross-border residence, source and foreign credits | `cn-cross-border` | Source-cited draft |
 
 `cn-stamp-tax` is the additional 2026 stamp-duty route. Legacy `china-pit`, `china-to-singapore-relocation-tax`, `cn-fapiao-einvoice`, `cn-formation`, `cn-freelance-intake`, `cn-return-assembly` and the references document remain preserved. Their presence is not evidence of current 2026 tax coverage or of a fresh review.

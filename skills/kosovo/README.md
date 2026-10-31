@@ -18,15 +18,15 @@ Calendar tax year. Authority: the Tax Administration of Kosovo (Administrata Tat
 
 ## Domains
 
-| Domain | Skill | Status |
+| Tax | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | kosovo-income-tax | checked against the law |
-| IT-CORP, corporate income tax | xk-corporate-income-tax | checked against the law |
-| VAT | kosovo-vat | checked against the law |
-| SC, social contributions | kosovo-social-contributions | checked against the law (partial: health insurance) |
-| PR, payroll withholding | kosovo-payroll | checked against the law (partial: health insurance) |
-| TP, transfer pricing | xk-transfer-pricing | checked against the law |
-| XB, cross-border | xk-cross-border | checked against the law |
+| Income tax | kosovo-income-tax | checked against the law |
+| Company tax | xk-corporate-income-tax | checked against the law |
+| VAT or sales tax | kosovo-vat | checked against the law |
+| Social contributions | kosovo-social-contributions | checked against the law (partial: health insurance) |
+| Payroll | kosovo-payroll | checked against the law (partial: health insurance) |
+| Transfer pricing | xk-transfer-pricing | checked against the law |
+| Cross-border | xk-cross-border | checked against the law |
 
 Supporting skill: kosovo-tax-optimization (sole trader versus company, gross versus real-income method).
 

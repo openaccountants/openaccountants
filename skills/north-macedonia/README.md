@@ -20,15 +20,15 @@ North Macedonia uses the calendar year and Macedonian denar (MKD). The Public Re
 
 ## Domains
 
-| Domain | Computational skill | Status |
+| Tax | Computational skill | Status |
 |---|---|---|
-| IT-IND | [north-macedonia-income-tax](north-macedonia-income-tax.md) | Checked against the law |
-| IT-CORP | [mk-corporate-income-tax](mk-corporate-income-tax.md) | Checked against the law |
-| VAT | [north-macedonia-vat](north-macedonia-vat.md) | Checked against the law |
-| SC | [north-macedonia-social-contributions](north-macedonia-social-contributions.md) | Checked against the law |
-| PR | [north-macedonia-payroll](north-macedonia-payroll.md) | Checked against the law |
-| TP | [north-macedonia-transfer-pricing](north-macedonia-transfer-pricing.md) | Checked against the law |
-| XB | [north-macedonia-cross-border](north-macedonia-cross-border.md) | Checked against the law; partial |
+| Income tax | [north-macedonia-income-tax](north-macedonia-income-tax.md) | Checked against the law |
+| Company tax | [mk-corporate-income-tax](mk-corporate-income-tax.md) | Checked against the law |
+| VAT or sales tax | [north-macedonia-vat](north-macedonia-vat.md) | Checked against the law |
+| Social contributions | [north-macedonia-social-contributions](north-macedonia-social-contributions.md) | Checked against the law |
+| Payroll | [north-macedonia-payroll](north-macedonia-payroll.md) | Checked against the law |
+| Transfer pricing | [north-macedonia-transfer-pricing](north-macedonia-transfer-pricing.md) | Checked against the law |
+| Cross-border | [north-macedonia-cross-border](north-macedonia-cross-border.md) | Checked against the law; partial |
 
 The contribution split changes for **July-December 2026 wage months**: the combined ordinary employee rate remains 28%, but pension becomes 19.9% and unemployment 0.1%, replacing 18.8% and 1.2% for January-June. Self-employed and standalone director groups have different fund coverage. Use the individual skills, including their dated rate tables and limitations, for calculation.
 
