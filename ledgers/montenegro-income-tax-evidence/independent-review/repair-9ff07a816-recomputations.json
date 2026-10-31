@@ -1,0 +1,881 @@
+{
+  "commit": "9ff07a816c1adafbb944598e2f2a8edca2c2f90f",
+  "method": "Separate Decimal implementation by law/category; original steps were not executed or reused. Every published expected field compared. Arithmetic alone is not tax correctness.",
+  "blocks": [
+    {
+      "file": "skills/international/montenegro/montenegro-income-tax.md",
+      "block": 1,
+      "name": "Montenegro principal business annual profit and settlement",
+      "block_sha256": "dc64a90e3b852707d82189fc54f75cf824f27f3493647ec55d24788e812ae2d4",
+      "inputs": {
+        "revenue": "80000",
+        "accounting_profit": "25000",
+        "private_expense": "1200",
+        "depreciation_adjustment": "800",
+        "qualifying_spend": "3000",
+        "representation": "1000",
+        "memberships": "120",
+        "available_loss": "3000",
+        "paid_advances": "1800"
+      },
+      "expected_fields": {
+        "purpose_excess": "600",
+        "representation_excess": "200",
+        "membership_excess": "40",
+        "adjusted_profit": "27840",
+        "loss_used": "3000",
+        "taxable_business": "24840",
+        "annual_pit": "2250",
+        "settlement_due": "450"
+      },
+      "independent_fields": {
+        "purpose_excess": "600.00",
+        "representation_excess": "200.00",
+        "membership_excess": "40.000",
+        "adjusted_profit": "27840.000",
+        "loss_used": "3000",
+        "taxable_business": "24840.000",
+        "annual_pit": "2250.00000",
+        "settlement_due": "450.00000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "skills/international/montenegro/montenegro-income-tax.md",
+      "block": 2,
+      "name": "Montenegro principal versus supplementary income rates",
+      "block_sha256": "4a3bc8120446200cc4f1568fc7c349a99496678a2cbe100d9dbb693e2759a8bb",
+      "inputs": {
+        "taxable_profit": "10000"
+      },
+      "expected_fields": {
+        "principal_pit": "144",
+        "supplementary_pit": "1500"
+      },
+      "independent_fields": {
+        "principal_pit": "144.00",
+        "supplementary_pit": "1500.00"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 1,
+      "name": "Montenegro occasional independent work withholding",
+      "block_sha256": "9d5a863afe743ec96c420abe2abc270f1d23026799cf6d6f5d1d672873e36fc1",
+      "inputs": {
+        "gross_receipt": "2000"
+      },
+      "expected_fields": {
+        "standard_expenses": "600",
+        "taxable_base": "1400",
+        "pit_withheld": "210",
+        "receipt_after_pit_only": "1790"
+      },
+      "independent_fields": {
+        "standard_expenses": "600.00",
+        "taxable_base": "1400.00",
+        "pit_withheld": "210.0000",
+        "receipt_after_pit_only": "1790.0000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 2,
+      "name": "Montenegro rental standard expense alternatives",
+      "block_sha256": "6371bcddfdb4d30b1f6372b76761a90942db7bfe3505e4633b15268ca190c2b1",
+      "inputs": {
+        "gross_rent": "20000"
+      },
+      "expected_fields": {
+        "ordinary_base": "14000",
+        "ordinary_pit": "2100",
+        "qualifying_50_base": "10000",
+        "qualifying_50_pit": "1500",
+        "qualifying_70_base": "6000",
+        "qualifying_70_pit": "900"
+      },
+      "independent_fields": {
+        "ordinary_base": "14000.00",
+        "ordinary_pit": "2100.0000",
+        "qualifying_50_base": "10000.00",
+        "qualifying_50_pit": "1500.0000",
+        "qualifying_70_base": "6000.00",
+        "qualifying_70_pit": "900.0000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 3,
+      "name": "Montenegro property gain and current capital loss",
+      "block_sha256": "8ef77d89be966e0eae2c861b00fe6a460b5d75a3fe5b8e746059060d551c0581",
+      "inputs": {
+        "sale_price": "150000",
+        "reconstruction": "7000",
+        "sale_costs": "3000",
+        "established_indexed_cost": "110000",
+        "current_capital_loss": "5000"
+      },
+      "expected_fields": {
+        "adjusted_sale": "140000",
+        "gain": "30000",
+        "taxable_capital_gain": "25000",
+        "pit": "3750"
+      },
+      "independent_fields": {
+        "adjusted_sale": "140000",
+        "gain": "30000",
+        "taxable_capital_gain": "25000",
+        "pit": "3750.00"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 4,
+      "name": "Montenegro securities FIFO gain",
+      "block_sha256": "0538e161800cad0e17d5abdab5a42f8ae474605d2348c5dcb5dacc1e58b724a1",
+      "inputs": {
+        "first_units": "100",
+        "first_price": "10",
+        "second_units": "100",
+        "second_price": "15",
+        "units_sold": "150",
+        "sale_price_each": "20"
+      },
+      "expected_fields": {
+        "first_used": "100",
+        "second_used": "50",
+        "proceeds": "3000",
+        "fifo_cost": "1750",
+        "gain": "1250",
+        "pit": "187.50",
+        "remaining_second_units": "50"
+      },
+      "independent_fields": {
+        "first_used": "100",
+        "second_used": "50",
+        "proceeds": "3000",
+        "fifo_cost": "1750",
+        "gain": "1250",
+        "pit": "187.50",
+        "remaining_second_units": "50"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 5,
+      "name": "Montenegro residual internet and video game bases",
+      "block_sha256": "a2ed8b6ed6a21ba7f55a026ecd29173acb2a68a7ae909f94418046391a605073",
+      "inputs": {
+        "internet_receipts": "10000",
+        "game_receipts": "10000"
+      },
+      "expected_fields": {
+        "internet_base": "8500",
+        "internet_pit": "1275",
+        "game_base": "8000",
+        "game_pit": "1200"
+      },
+      "independent_fields": {
+        "internet_base": "8500.00",
+        "internet_pit": "1275.0000",
+        "game_base": "8000.0",
+        "game_pit": "1200.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 6,
+      "name": "Montenegro private foreign dividend credit cap",
+      "block_sha256": "ca909faeb389fffb8ded4a92616f99aa0be1da0f9ef8001c0984f67c51196ea2",
+      "inputs": {
+        "foreign_gross_dividend": "10000",
+        "qualifying_foreign_tax": "2000"
+      },
+      "expected_fields": {
+        "domestic_tax_on_foreign": "1500",
+        "allowed_credit": "1500",
+        "residual_domestic_pit": "0",
+        "excess_not_claimed": "500"
+      },
+      "independent_fields": {
+        "domestic_tax_on_foreign": "1500.00",
+        "allowed_credit": "1500.00",
+        "residual_domestic_pit": "0.00",
+        "excess_not_claimed": "500.00"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for this single-dividend example; original prose retained verbatim with a separate qualification rejecting inference of a mandatory same-country category basket."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 7,
+      "name": "Montenegro fine art royalty and amateur sport",
+      "block_sha256": "0213272837e0eec9d6bc2e29cab222cb0f4202055ccf572666071423cf0eecc0",
+      "inputs": {
+        "fine_art_rights": "5000",
+        "qualifying_amateur_sport": "5000"
+      },
+      "expected_fields": {
+        "royalty_base": "2000",
+        "royalty_pit": "300",
+        "sport_base": "500",
+        "sport_pit": "75"
+      },
+      "independent_fields": {
+        "royalty_base": "2000.0",
+        "royalty_pit": "300.000",
+        "sport_base": "500.0",
+        "sport_pit": "75.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 8,
+      "name": "Montenegro principal business PIT with municipal surtax",
+      "block_sha256": "5115f19491c7c6553b4956755f5bceb7a7abe50323a1264379c25aea8a7ae34e",
+      "inputs": {
+        "taxable_profit": "20000",
+        "surtax_rate": "0.13"
+      },
+      "expected_fields": {
+        "pit": "1524",
+        "surtax": "198.12",
+        "total": "1722.12"
+      },
+      "independent_fields": {
+        "pit": "1524.00",
+        "surtax": "198.12",
+        "total": "1722.12"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/retained-examples.md",
+      "block": 9,
+      "name": "Montenegro gambling winning before and after the 70/26 change",
+      "block_sha256": "56336fb0b33be8d59cab8a6c73ed2fc6a815113e2fcb4e2555c2587ed34658b1",
+      "inputs": {
+        "winning": "1500"
+      },
+      "expected_fields": {
+        "tax_before_21_may": "145",
+        "tax_from_21_may": "180"
+      },
+      "independent_fields": {
+        "tax_before_21_may": "145.00",
+        "tax_from_21_may": "180.00"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated betting winning after stake deduction. Does not support applying a stake deduction to global jackpots."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 1,
+      "name": "Montenegro pausal group I, turnover ceiling 7500",
+      "block_sha256": "eda7f76323790e0209c369c06623c1ab5ca4bcf54f1cf5344aa1f32c2effd970",
+      "inputs": {
+        "turnover_ceiling": "7500",
+        "cost_percent": "50"
+      },
+      "expected_fields": {
+        "base": "3750",
+        "pit": "0",
+        "combined": "412.5"
+      },
+      "independent_fields": {
+        "base": "3750.0",
+        "pit": "0.00",
+        "combined": "412.500"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 2,
+      "name": "Montenegro pausal group I, turnover ceiling 15000",
+      "block_sha256": "dc9020cedb8a10400c3c27360140bd79c545f437462b6043c3cb57b747fe29bf",
+      "inputs": {
+        "turnover_ceiling": "15000",
+        "cost_percent": "50"
+      },
+      "expected_fields": {
+        "base": "7500",
+        "pit": "0",
+        "combined": "825"
+      },
+      "independent_fields": {
+        "base": "7500.0",
+        "pit": "0.00",
+        "combined": "825.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 3,
+      "name": "Montenegro pausal group I, turnover ceiling 22500",
+      "block_sha256": "410ef51e96ccdcc6d551b9b0a5c6b6be3de3691d94702e94b8bd2ada967439ea",
+      "inputs": {
+        "turnover_ceiling": "22500",
+        "cost_percent": "50"
+      },
+      "expected_fields": {
+        "base": "11250",
+        "pit": "256.5",
+        "combined": "1494"
+      },
+      "independent_fields": {
+        "base": "11250.0",
+        "pit": "256.500",
+        "combined": "1494.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 4,
+      "name": "Montenegro pausal group I, turnover ceiling 30000",
+      "block_sha256": "2bf1a5e8fcb123d9959e0f5bf85720f818a434d720638573b23f7b37feb92835",
+      "inputs": {
+        "turnover_ceiling": "30000",
+        "cost_percent": "50"
+      },
+      "expected_fields": {
+        "base": "15000",
+        "pit": "774",
+        "combined": "2424"
+      },
+      "independent_fields": {
+        "base": "15000.0",
+        "pit": "774.000",
+        "combined": "2424.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 5,
+      "name": "Montenegro pausal group II, turnover ceiling 7500",
+      "block_sha256": "012ad6b3f3c010fbb038186a22f49f32028d1daa6905869c471e8d7c48f170bc",
+      "inputs": {
+        "turnover_ceiling": "7500",
+        "cost_percent": "40"
+      },
+      "expected_fields": {
+        "base": "4500",
+        "pit": "0",
+        "combined": "495"
+      },
+      "independent_fields": {
+        "base": "4500.0",
+        "pit": "0.00",
+        "combined": "495.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 6,
+      "name": "Montenegro pausal group II, turnover ceiling 15000",
+      "block_sha256": "360690b51dc2932438dfb05697846bb179db6155ba9b40d533c8a15825e54754",
+      "inputs": {
+        "turnover_ceiling": "15000",
+        "cost_percent": "40"
+      },
+      "expected_fields": {
+        "base": "9000",
+        "pit": "54",
+        "combined": "1044"
+      },
+      "independent_fields": {
+        "base": "9000.0",
+        "pit": "54.000",
+        "combined": "1044.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 7,
+      "name": "Montenegro pausal group II, turnover ceiling 22500",
+      "block_sha256": "3fea6b1d912498fdfdb4a0d275288f3af9707472e9936f0a1577121c864caaab",
+      "inputs": {
+        "turnover_ceiling": "22500",
+        "cost_percent": "40"
+      },
+      "expected_fields": {
+        "base": "13500",
+        "pit": "549",
+        "combined": "2034"
+      },
+      "independent_fields": {
+        "base": "13500.0",
+        "pit": "549.000",
+        "combined": "2034.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 8,
+      "name": "Montenegro pausal group II, turnover ceiling 30000",
+      "block_sha256": "62a38fb0e75b07a09288ab98c6e47468df6db506d954161bd345eb4e8b135449",
+      "inputs": {
+        "turnover_ceiling": "30000",
+        "cost_percent": "40"
+      },
+      "expected_fields": {
+        "base": "18000",
+        "pit": "1224",
+        "combined": "3204"
+      },
+      "independent_fields": {
+        "base": "18000.0",
+        "pit": "1224.000",
+        "combined": "3204.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 9,
+      "name": "Montenegro pausal group III, turnover ceiling 7500",
+      "block_sha256": "01b0e1723700cdb6122ffc23ec9ebe0aa3660f02e2af5ccc2673d4eada64ff43",
+      "inputs": {
+        "turnover_ceiling": "7500",
+        "cost_percent": "35"
+      },
+      "expected_fields": {
+        "base": "4875",
+        "pit": "0",
+        "combined": "536.25"
+      },
+      "independent_fields": {
+        "base": "4875.00",
+        "pit": "0.00",
+        "combined": "536.2500"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 10,
+      "name": "Montenegro pausal group III, turnover ceiling 15000",
+      "block_sha256": "dee711ffe901240c727bc1232fc8ad8b64fc33bea690633fee28e81e9d755d33",
+      "inputs": {
+        "turnover_ceiling": "15000",
+        "cost_percent": "35"
+      },
+      "expected_fields": {
+        "base": "9750",
+        "pit": "121.5",
+        "combined": "1194"
+      },
+      "independent_fields": {
+        "base": "9750.00",
+        "pit": "121.5000",
+        "combined": "1194.0000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 11,
+      "name": "Montenegro pausal group III, turnover ceiling 22500",
+      "block_sha256": "7cd51d0da1da32cc7604f0c3cc2346b0d52d0d06c8de5f361efe05d4fa28d365",
+      "inputs": {
+        "turnover_ceiling": "22500",
+        "cost_percent": "35"
+      },
+      "expected_fields": {
+        "base": "14625",
+        "pit": "717.75",
+        "combined": "2326.5"
+      },
+      "independent_fields": {
+        "base": "14625.00",
+        "pit": "717.7500",
+        "combined": "2326.5000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 12,
+      "name": "Montenegro pausal group III, turnover ceiling 30000",
+      "block_sha256": "13b3fd2c59f0459b3f65ca6f30c52e7c8799469047fc7b32b966745980037d14",
+      "inputs": {
+        "turnover_ceiling": "30000",
+        "cost_percent": "35"
+      },
+      "expected_fields": {
+        "base": "19500",
+        "pit": "1449",
+        "combined": "3594"
+      },
+      "independent_fields": {
+        "base": "19500.00",
+        "pit": "1449.0000",
+        "combined": "3594.0000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 13,
+      "name": "Montenegro pausal group IV, turnover ceiling 7500",
+      "block_sha256": "bca44cd0705c7f60c35cc085a3a924519cd85542295d0fc2f37fd3bc5d62e5b1",
+      "inputs": {
+        "turnover_ceiling": "7500",
+        "cost_percent": "30"
+      },
+      "expected_fields": {
+        "base": "5250",
+        "pit": "0",
+        "combined": "577.5"
+      },
+      "independent_fields": {
+        "base": "5250.0",
+        "pit": "0.00",
+        "combined": "577.500"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 14,
+      "name": "Montenegro pausal group IV, turnover ceiling 15000",
+      "block_sha256": "9a35b6e1de80d2359a9dad8d7a4753d9b0bd880cc90f7b1485fbe6f42a7a6b54",
+      "inputs": {
+        "turnover_ceiling": "15000",
+        "cost_percent": "30"
+      },
+      "expected_fields": {
+        "base": "10500",
+        "pit": "189",
+        "combined": "1344"
+      },
+      "independent_fields": {
+        "base": "10500.0",
+        "pit": "189.000",
+        "combined": "1344.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 15,
+      "name": "Montenegro pausal group IV, turnover ceiling 22500",
+      "block_sha256": "cbf654477229e794dd8e68617839f7d6cd94f1c6561c8fb791c3730f987abf56",
+      "inputs": {
+        "turnover_ceiling": "22500",
+        "cost_percent": "30"
+      },
+      "expected_fields": {
+        "base": "15750",
+        "pit": "886.5",
+        "combined": "2619"
+      },
+      "independent_fields": {
+        "base": "15750.0",
+        "pit": "886.500",
+        "combined": "2619.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 16,
+      "name": "Montenegro pausal group IV, turnover ceiling 30000",
+      "block_sha256": "f4a7c0bedf5444429e426ec5ba4c77ea38192bd89a76766602b2d1af208977f4",
+      "inputs": {
+        "turnover_ceiling": "30000",
+        "cost_percent": "30"
+      },
+      "expected_fields": {
+        "base": "21000",
+        "pit": "1674",
+        "combined": "3984"
+      },
+      "independent_fields": {
+        "base": "21000.0",
+        "pit": "1674.000",
+        "combined": "3984.000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as promulgated annual scale ceiling row, independently compared visually with original table. Eligibility, actual period and authority decision remain prerequisites."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 17,
+      "name": "Montenegro pausal monthly split and separate assumed municipal surtax",
+      "block_sha256": "3fb74aab94adecbec938b482ec16c9254c4ed90d7e808e31c21c930b6f9c353b",
+      "inputs": {
+        "annual_pit": "549",
+        "base": "13500",
+        "assumed_surtax_rate": "0.13"
+      },
+      "expected_fields": {
+        "pio": "1350",
+        "unemployment": "135",
+        "combined": "2034",
+        "monthly_pit": "45.75",
+        "monthly_contributions": "123.75",
+        "monthly_combined": "169.5",
+        "annual_surtax": "71.37",
+        "all_in": "2105.37"
+      },
+      "independent_fields": {
+        "pio": "1350.0",
+        "unemployment": "135.00",
+        "combined": "2034.00",
+        "monthly_pit": "45.75",
+        "monthly_contributions": "123.75",
+        "monthly_combined": "169.50",
+        "annual_surtax": "71.37",
+        "all_in": "2105.37"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 18,
+      "name": "Montenegro H independent category bases",
+      "block_sha256": "b66a99a1ca0ac6021ed8909db5fe0f1da8954e27d3fea74b8295ba754b758b82",
+      "inputs": {
+        "occasional_receipts": "2000",
+        "internet_receipts": "10000",
+        "gaming_receipts": "5000",
+        "documented_gaming_costs": "1200"
+      },
+      "expected_fields": {
+        "h5": "1400",
+        "h8": "8500",
+        "h11": "3800",
+        "h12": "13700",
+        "pit": "2055"
+      },
+      "independent_fields": {
+        "h5": "1400.0",
+        "h8": "8500.00",
+        "h11": "3800",
+        "h12": "13700.00",
+        "pit": "2055.0000"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 19,
+      "name": "Montenegro main ordinary full-year due with foreign-country credit cap",
+      "block_sha256": "a2afe1a40c602974116d81555dcbfd71b6fdf9ccd35a37288b84b2c2fe66dcc1",
+      "inputs": {
+        "principal_base": "24840",
+        "b4": "14000",
+        "d6": "500",
+        "e6": "2000",
+        "f_dividend": "10000",
+        "f_occasional_net": "1400",
+        "h12": "13700",
+        "foreign_dividend_tax": "2000",
+        "foreign_occasional_tax": "70",
+        "business_advances": "1800",
+        "b5": "2100",
+        "d7": "75",
+        "e7": "300"
+      },
+      "expected_fields": {
+        "main12": "2250",
+        "f15": "1570",
+        "main35": "11400",
+        "main37": "41600",
+        "main39": "6240",
+        "main41": "8490",
+        "main58": "5845",
+        "main61": "2645",
+        "main62": "0"
+      },
+      "independent_fields": {
+        "main12": "2250.00",
+        "f15": "1570.00",
+        "main35": "11400",
+        "main37": "41600",
+        "main39": "6240.00",
+        "main41": "8490.00",
+        "main58": "5845.00",
+        "main61": "2645.00",
+        "main62": "0"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS: amended prose explicitly states dividend Country A and occasional income in a DIFFERENT Country B, eligible foreign income taxes and no treaty variation. Country A cap1500; Country B cap210 versus70paid; total allowable1570. Printed/live pooled F15 acceptance remains a named gap."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 20,
+      "name": "Montenegro main overpayment split without a double refund",
+      "block_sha256": "6e09673c29d6347ba0aa1c18fa21c1411d7ab9b5487b551633422fdee819c409",
+      "inputs": {
+        "main41": "8490",
+        "main58": "9000",
+        "refund_requested": "300"
+      },
+      "expected_fields": {
+        "overpaid": "510",
+        "next_period_credit": "210",
+        "claimed_total": "510"
+      },
+      "independent_fields": {
+        "overpaid": "510",
+        "next_period_credit": "210",
+        "claimed_total": "510"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 21,
+      "name": "Montenegro A1 component balances remain separate",
+      "block_sha256": "1610afbfd614d76a4bb159d4ac962ad073c3d94039f8787f22279eb49d287053",
+      "inputs": {
+        "base": "12000",
+        "pio_advance": "1300",
+        "unemployment_advance": "100"
+      },
+      "expected_fields": {
+        "pio_charge": "1200",
+        "unemployment_charge": "120",
+        "pio_overpaid": "100",
+        "pio_due": "0",
+        "unemployment_overpaid": "0",
+        "unemployment_due": "20"
+      },
+      "independent_fields": {
+        "pio_charge": "1200.0",
+        "unemployment_charge": "120.00",
+        "pio_overpaid": "100.0",
+        "pio_due": "0",
+        "unemployment_overpaid": "0",
+        "unemployment_due": "20.00"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 22,
+      "name": "Montenegro KPP products and services conservation",
+      "block_sha256": "1b7a9cfdd1b996928f478e31ead184c8f66f3c91def744c940e614b0e6e9d072",
+      "inputs": {
+        "first_products": "120",
+        "first_services": "80",
+        "second_products": "30",
+        "second_services": "70"
+      },
+      "expected_fields": {
+        "products": "150",
+        "services": "150",
+        "turnover": "300"
+      },
+      "independent_fields": {
+        "products": "150",
+        "services": "150",
+        "turnover": "300"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS for the stated illustrative facts; actual taxpayer classification and source evidence remain separate requirements."
+    },
+    {
+      "file": "ledgers/montenegro-income-tax-evidence/additional-controls.md",
+      "block": 23,
+      "name": "Montenegro A printed early rounding versus full precision",
+      "block_sha256": "589277d2e3d3ce3498e52fa587cb52d08e2150846dd62b31f23d3a480f39b44d",
+      "inputs": {
+        "annual_amount": "8400",
+        "days_in_year": "365",
+        "active_days": "302"
+      },
+      "expected_fields": {
+        "printed_daily": "23.01",
+        "printed_result": "6949.02",
+        "full_precision_result": "6950.14",
+        "difference": "1.12"
+      },
+      "independent_fields": {
+        "printed_daily": "23.01",
+        "printed_result": "6949.02",
+        "full_precision_result": "6950.14",
+        "difference": "1.12"
+      },
+      "arithmetic_status": "PASS",
+      "errors": {},
+      "tax_assumption_assessment": "PASS as a discrepancy demonstration only. Accepted2026 proration/rounding remains explicitly unconfirmed."
+    }
+  ]
+}
