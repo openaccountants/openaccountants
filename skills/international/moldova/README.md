@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: 2.7
+version: 2.8
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,7 +13,7 @@ partial:
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; ordinary reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
   PR: "2026 payroll writer draft and figure ledger prepared; cumulative withholding, ordinary MDL loan method and directly read current IALS21 column instructions/May amendment are supplied; actual reporting attachments/technical fields, foreign-currency loan and remaining benefit/procedure gaps stay explicit; whole-country independent review is pending."
-  TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; full current information-form/role codes, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
+  TP: "2026 TP writer rewrite and figure ledger prepared: exclusions, methods, files, APA and corresponding-adjustment procedures sourced; enacted VEN12 adjustment rows are linked separately from the TP information form; current information-form fields/codes and the APA application model are mapped; portal acceptance, legacy country mapping, retention and specific procedure gaps remain explicit; whole-country independent review is pending."
   XB: "2026 cross-border writer rewrite and figure ledger prepared: residence, withholding, PE profit, foreign credits, mobility, monthly reporting and current salary-information instructions sourced; INR14 citizenship amendment/commencement read, while actual revised attachments, other approved forms and refund/departure procedures remain open; whole-country independent review is pending."
 ---
 
@@ -42,6 +42,8 @@ Actual SIMM, UNIF25 and DAP24 form/instruction binaries are now retained. The co
 The actual social tariff, travel destination-rate, asset-life and asset-register/repair annexes are now retained and read to the scopes in [the annex manifest](../../../ledgers/md-country-evidence/downloaded-numeric-annexes.json), on 31 October 2026. The corporate draft supplies destination/currency/category examples, five selected asset-class rows and the actual 29-column register/seven-column repair method. The social draft distinguishes insured-benefit classes and payment clocks directly from annex1. Other asset classes, minimum transport tariffs, later implementation gaps and independent whole-country review remain open; full binary retention is not full-catalogue verification.
 
 The remaining UNIF25 annexes are now read in full to instruction136 and formpage4, with the unchanged binaries and [full-read observations](../../../ledgers/md-country-evidence/unif25-remaining-attachment-read.json) retained. Individual, payroll, cross-border and overview drafts now map supporting schedules, annual resident/nonresident payment information and local/property reporting fields. Current Code15(a¹) overrides the stale day-worker relief sentence; the form's legacy social header does not replace monthly declarations. Actual annex/column/year inconsistencies, classifiers, local rates and portal implementation remain explicit. This is writer work, with no independent country-review or completeness claim.
+
+The TP draft now maps the complete current information annex and approved APA application model, read 31 October 2026. [Both official binaries](../../../ledgers/md-country-evidence/tp-approved-attachments.json) are retained unchanged. The field method distinguishes affiliation and taxpayer-role codes, separate APA reporting and the model’s maximum-10-day proceedings undertaking. The annex’s incorrect date caption and comments numbering remain explicit. Portal acceptance, technical payment/refund handling, retention and other named procedures remain open; these form methods do not establish comprehensive coverage or independent review.
 
 ## Domains
 

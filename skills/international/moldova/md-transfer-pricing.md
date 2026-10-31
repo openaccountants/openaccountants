@@ -1,20 +1,20 @@
 ---
 name: md-transfer-pricing
 description: Use this Guide for Moldova transfer-pricing affiliation, local and cross-border scope, the aggregate information threshold, statutory exclusions, method selection, comparability intervals and adjustments for 2026. It explains requested master and local files, electronic information filing, advance pricing agreements, corresponding adjustments and period-specific sanctions. Trigger on Moldova TP, affiliated transactions, the MDL20 million threshold, transfer-pricing information, an SFS file request or an APA. Reconcile actual transaction values and evidence rather than using net balances or an expired automatic file tier. Current source and implementation gaps remain explicit; this is a writer draft awaiting independent country-pack review.
-version: 0.3
+version: 0.4
 jurisdiction: MD
 category: transfer-pricing
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova transfer pricing v0.3
+# Moldova transfer pricing v0.4
 
-2026 writer draft, primary law read30October2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
+2026 writer draft, primary law read 30 October 2026; the current information annex and APA application model read 31 October 2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
 ## Who this applies to
 
@@ -95,13 +95,61 @@ Retain contracts, invoices, accounting reconciliation, functional interviews, be
 
 ## Deadlines and filing
 
-Reconcile a voluntary income/expense adjustment with the income-tax return as well as the TP information/file. The [corporate Guide](md-corporate-income-tax.md) identifies the VEN12 adjustment rows verified directly from enacted MF Order 145/2024. Those return rows are separate from the Order 9 annex-2 information form, whose unobserved fields/role codes remain a gap. [MF Order 145/2024, read 30 October 2026](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro); [Code art. 226²³](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+Reconcile a voluntary income/expense adjustment with the income-tax return as well as the TP information/file. The [corporate Guide](md-corporate-income-tax.md) identifies the VEN12 adjustment rows verified directly from enacted MF Order 145/2024. Those return rows are separate from the Order 9 annex-2 information form, whose current fields and code mappings are supplied below. [MF Order 145/2024, read 30 October 2026](https://www.legis.md/cautare/getResults?doc_id=146071&lang=ro); [Code art. 226²³](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 Use the actual tax period, including a legally adopted non-calendar fiscal period under art12¹, rather than the parent group's reporting calendar by default. The information deadline is the25th of month six after that period ends. Thus a calendar2026 period has a statutory25June2027 deadline before any applicable nonworking-day adjustment; a valid30June2026 period has25December2026 on that same basis. The taxpayer's actual fiscal-period eligibility and general calendar adjustment must be confirmed before fixing a live deadline. File-request due time is120days from the request but cannot fall before the information deadline; monitor the actual valid request/communication, not an informal conversation. [Code226¹⁹(2)–(3),12¹](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-Annual information is distinct from the requested file and APA application/report. Current Order9 annex1 points53¹–53² requires the approved annex2 information and responsible electronic signature. Order8 adds fiscal-period identifiers to annexA row5, annexB row6 and annexC row8, and updates annexB table2 to sequence, transaction code, object/contract details, party-role code, controlled amount and optional comments. The current complete annex2 transaction/role-code catalogue and authenticated electronic submission fields have not been fully obtained; keep that ordinary filing gap open, rather than reusing2024 XLSX templates or guessed codes. The12May2026 SFS launch notice identifies the electronic-declaration service in the taxpayer cabinet for periods from2025, but a portal receipt is still required for the actual filing. [Order9](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro), [Order8 points1.3,4](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro), [SFS launch notice](https://www.sfs.md/ro/stiri/formularul-privind-preturile-de-transfer-disponibil-in-sia-declaratia-electronica).
+Annual information is distinct from the requested file and APA application/report. Current Order9 annex1 points53¹–53² requires the approved annex2 information and responsible electronic signature. Order8 adds fiscal-period identifiers to annexA row5, annexB row6 and annexC row8, and updates annexB table2 to sequence, transaction code, object/contract details, party-role code, controlled amount and optional comments. The complete current annex 2, including transaction-role, method, indicator and country catalogues, has now been read and retained; use its field mappings below. Authenticated electronic-field acceptance and legacy country-code handling remain untested. The12May2026 SFS launch notice identifies the electronic-declaration service in the taxpayer cabinet for periods from2025, but a portal receipt is still required for the actual filing. [Order9](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro), [Order8 points1.3,4](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro), [SFS launch notice](https://www.sfs.md/ro/stiri/formularul-privind-preturile-de-transfer-disponibil-in-sia-declaratia-electronica).
 
 Correct information under226¹⁹(5)/188, using the form and method valid for the corrected period, subject to188's six-year and audit restrictions. A corrected **file** has the separate30day decision-communication rule in226¹⁹(6); do not turn it into a general extension of an original request. TitlesII/X determine the related return; the special IT-park TP single-tax return under373(1¹) is not automatically an ordinary12% corporation-tax calculation. Its current form and full computation remain unconfirmed below. [Code226¹⁹,188,226¹⁸(4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Law187 artII point28](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro).
+
+### Complete the actual current information form
+
+Use the actual annex 2 linked from current Order 9/2024, incorporating Order 8/2026 for periods from 2025. Its first-page caption incorrectly says “nr.9 din februarie 2023”; the enacted parent, current attachment link and amended fields identify the applicable form. The complete 20-page attachment, including its four nomenclatures, is retained. This is a form-completion method, not a portal submission receipt. [Current Order 9](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro); [actual information annex](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx); [Order 8 point 4](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro).
+
+| Form area | Fields and reconciliation |
+|---|---|
+| Main table 1 | Registered taxpayer name and fiscal identifier; actual main activity and four-digit CAEM code; reporting fiscal period in row 5. The signature area records presentation date, director/administrator, IDNP and signature. |
+| Main table 2 | For each reported affiliate, name, fiscal identifier, **registration-state name and code**, and total controlled amount in MDL. A Moldovan fiscal resident uses the Moldovan identifier; the stated nonresident route uses the identifier assigned where registered. Use this annex's own country nomenclature, rather than treating citizenship, registration and tax residence as interchangeable. |
+| Main table 3 | Separately identify the affiliates/controlled transactions actually covered by an APA, with the corresponding name/identifier/state/code/MDL amount fields. Keep the statutory APA exclusion from threshold calculation distinct from reporting its covered amounts. |
+| Annex A | One affiliation schedule per affiliate. Row 5 is the fiscal period. Codes 1001/1002/1003 identify taxpayer ownership of affiliate, affiliate ownership of taxpayer, or common third-party ownership, respectively, using the stated minimum 25% voting-participation test. Show direct, indirect and total shares and the actual intermediary chains; common ownership has separate taxpayer/affiliate columns. Codes 1004/1005/1006 identify the corresponding effective-control directions through appointments, contracts, constitutive provisions or voting agreements. A share below 25% does not by itself disprove effective control. |
+| Annex B | One schedule per affiliate. Its identity table includes affiliation code in 5 and fiscal period in 6. Current transaction table 2 has **six columns**: sequence; transaction code; actual object/contract number/date; **taxpayer's role** code; controlled amount; optional comments. Do not put the affiliate's role in the taxpayer-role field. Instruction 25's comments subpoint is numbered 7, but maps to actual column 6. |
+| Annex C, APA compliance | One schedule per affiliate with transactions actually covered by the APA. Header fields include affiliation 5, unilateral/bilateral/multilateral type 6, APA number/date 7 and fiscal period 8. The transaction table has nine columns: sequence, transaction code, object/contract details, taxpayer-role code, method code, profit-indicator code, measured indicator, controlled amount and optional comments. This separate annual APA compliance report follows the already-sourced income-tax-return deadline, rather than being made due at the sixth-month information deadline merely by its location in the packet. |
+
+Table sources: [actual information form and instructions 1–36, including 10¹–10⁵,15¹,24¹,35¹](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx); threshold/APA scope and deadline remain governed by [Code 226¹⁹,226²⁹](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro). Keep the MDL/no-VAT/exclusion working paper above, rather than replacing current statutory financing and advance exclusions with the older accounting-recognition wording removed by Order 8.
+
+### Transaction-role, method and indicator codes
+
+These are the actual transaction catalogue's paired codes. Preserve leading zeroes in transaction codes and select the **filing taxpayer's** side. An affiliation code 1001 in Annex A means ownership; transaction-role 1001 means seller. They belong to different fields. [Information annex, nomenclature 2 and instructions 25/36](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx).
+
+| Transaction | Contract | Taxpayer-role codes |
+|---|---|---|
+| 0001 | Sale/purchase | 1001 seller; 2001 buyer |
+| 0002 | Loan | 1002 lender; 2002 borrower |
+| 0003 | Locațiune | 1003 locator; 2003 locatar |
+| 0004 | Arendă | 1004 arendator; 2004 arendaș |
+| 0005 | Leasing | 1005 locator; 2005 locatar |
+| 0006 | Works, antrepriză | 1006 contractor; 2006 client |
+| 0007 | Services | 1007 provider; 2007 beneficiary |
+| 0008 | Transport | 1008 transporter; 2008 client |
+| 0009 | Forwarding, expediție | 1009 expeditor; 2009 client |
+| 0010 | Mandate | 1010 mandant; 2010 mandatar |
+| 0011 | Commission | 1011 comisionar; 2011 comitent |
+| 0012 | Deposit | 1012 deponent; 2012 depozitar |
+| 0013 | Intermediation | 1013 intermediary; 2013 client |
+| 0014 | Commercial agency | 1014 commercial agent; 2014 principal |
+| 0015 | Franchise | 1015 franchisor; 2015 franchisee |
+| 0016 | Distribution | 1016 supplier; 2016 distributor |
+| 0017 | Credit | 1017 creditor; 2017 debtor |
+| 0018 | Insurance | 1018 insurer; 2018 insured |
+| 0019 | Civil partnership | 1019 participant; no second role printed |
+| 0020 | Other contracts | 1020 financial outflow; 2020 financial inflow |
+
+For Annex C, method codes are **01 CUP; 02 cost-plus; 03 resale price; 04 TNMM; 05 profit split; 06 other OECD-recognised methods**. Do not swap 02/03 or infer that a code alone justifies method selection. Profit-indicator codes are 01 resale margin; 02 cost-plus gross-profit margin; 03 return on total assets; 04 return on total costs; 05 return on sales; 06 return on operating costs; 07 gross sales margin; 08 economic return; 09 financial return; 10 return on resources consumed; 11 Berry ratio; 12 other indicator. Select the actual agreed method/indicator and reconcile its accounting definition and measured value to the APA and supporting analysis; the catalogue's label alone supplies no universal denominator or safe harbour. [Nomenclatures 3–4 and instruction 36](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx).
+
+The country nomenclature supplies, for example, 004 Afghanistan, 276 Germany, 470 Malta, 498 Moldova, 642 Romania, 826 United Kingdom and 840 United States, plus 000 “Altele”. Use the actual registration-state entry and preserve its three characters. The retained list has legacy labels, including 720 “Yemen democratic”; do not silently replace it with a modern ISO list or certify an unresolved portal mapping for an unlisted/currently renamed jurisdiction. [Nomenclature 1 and instructions 8–9](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx).
+
+For an assumed eligible non-APA affiliate, reconcile goods sold for MDL 9 million using 0001/1001, services bought for MDL 8 million using 0007/2007 and eligible calculated loan interest of MDL 3 million using 0002/2002. The total is MDL 20 million without netting inflows against outflows; assumed loan principal of MDL 50 million and advances of MDL 2 million remain outside the stated statutory threshold. A separate actual-APA-covered amount belongs in its own covered schedule and is not added back to that threshold merely because the form records it. These assumed records test classification and aggregation, not whether a real contract meets the legal exclusions. [Actual transaction catalogue](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx); [Code 226¹⁹](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 ### APA application and monitoring
 
@@ -111,7 +159,22 @@ Track **admissibility separately from substantive resolution**: annex3 points16�
 
 The APA's scope, transaction types, period, assumptions, method, interval and conditions control protection; an application alone is not approval. Monitor material changes and file the revision request within30days of a point46 condition, observing the statutory pre-expiry request rule as well. Annex3 points45–67 govern extension/revision and decisions. Annually report APA compliance by the **income-tax return deadline** under226²⁹, with electronic signature and the prescribed annex2 reporting content; this is not the sixth-month information deadline. Code226³⁰ and annex3 points70–86 allow audit/termination: “revocarea” operates from conclusion, “anularea” from cancellation, with distinct false-data/noncompliance/changed-assumption/no-report grounds and objection routes. Preserve the actual decision before excluding covered transactions from the threshold. [Code226²⁵–226³⁰](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Order9 annex3](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro).
 
-Pay the per-type fee before application/modification. Annex3 points87–90 sends it to the State budget; withdrawal before admission permits requested refund through the statutory process, while withdrawal after admission does not under that ordinary branch. Separately apply the Code's foreign-refusal/no-response and other specific reapplication/refund routes; do not infer a blanket refund entitlement. The current stamped APA model annex/technical payment implementation remains unconfirmed below. [Code226²⁵(7),226²⁸](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Order9 annex3 points21–25,55–57,87–90](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro).
+Pay the per-type fee before application/modification. Annex3 points87–90 sends it to the State budget; withdrawal before admission permits requested refund through the statutory process, while withdrawal after admission does not under that ordinary branch. Separately apply the Code's foreign-refusal/no-response and other specific reapplication/refund routes; do not infer a blanket refund entitlement. The approved APA application model is mapped below; technical payment/refund implementation remains unconfirmed. [Code226²⁵(7),226²⁸](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), [Order9 annex3 points21–25,55–57,87–90](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro).
+
+### Prepare the approved APA application model
+
+The actual two-page model is Order 9 annex 3 introduced through Order 8/2026 annex 1; distinguish this **application model** from the APA procedure in the TP regulation and from information-form Annex C's annual compliance report. Address it to SFS, date it and preserve the authority's registration reference. [Order 8 point 1.1](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro); [approved model](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an3_9ro.docx).
+
+| Model section | Actual requested material |
+|---|---|
+| I | Taxpayer name/code, legal/correspondence addresses, telephone/email, representative and representative's legal capacity. |
+| II | APA type; partner jurisdiction for bilateral/multilateral requests; covered transactions; affiliated-party names, fiscal identifiers and legal addresses; evidence of the foreign-authority request where relevant; covered fiscal periods. |
+| III–VII | Annex 1 activity description; 2 functional analysis; 3 selected pricing method; 4 comparability interval; 5 critical assumptions. These are application exhibits, not the information form's similarly numbered code catalogues. |
+| VIII–IX | Conclusions and the APA fee exhibit 6. Retain actual payment evidence under the applicable procedure; the blank model is not proof of payment. |
+| X–XI | Authenticity/completeness/correctness declaration and declaration that no relevant administrative/tax-audit, criminal or judicial proceedings are ongoing/completed. Section XI also contains an undertaking to notify SFS within a maximum 10 days if proceedings arise; it does not call those working days. Keep that undertaking separate from the 30-day changed-assumptions/revision procedure. |
+| XII–XIII and signature | Actual exhibit list, other relevant information and authorised signature. Check the underlying admissibility, language, fee and evidence requirements above before submission. |
+
+Source: [complete approved APA application model I–XIII](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an3_9ro.docx), read 31 October 2026. Receipt, electronic-field acceptance, technical payment/refund handling and any case-specific deadline computation remain separate evidence requirements.
 
 ## Penalties and interest
 
@@ -217,12 +280,14 @@ expected:
 | [BNM monetary-policy decision, 6 November 2025, point 1](https://bnm.md/en/node/69226) | Fetched 6.00% short-term base input; calendar-2026 daily percentage derived with Code 228(3), rather than copied from an old rate. | 2026-10-30 |
 |[Current Fiscal Code157050](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro)|226¹⁷–226³⁰,260,252,188 and relevant ordinary tax/interest provisions; selected articles only|2026-10-30|
 |[Law187/2025](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro)|ArtII point19, selected point28 and artXXVI: period2025 structure and separate2024 transition|2026-10-30|
-|[Order9 current consolidation152738](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro)|Complete rendered annex1 and annex3 text: pricing, documentation, amendments and APA procedure. Linked annex2DOCX unavailable|2026-10-30|
+|[Order9 current consolidation152738](https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro)|Complete rendered annex1 and annex3 text: pricing, documentation, amendments and APA procedure. Current annex 2 separately retained/read on 31 October as below|2026-10-30|
 |[Order8/2026](https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro)|Current master/local file, language/signature/form amendments; applies stated file/information changes to periods from2025|2026-10-30|
 |[Law214/2024 artXVII(2)](https://www.legis.md/cautare/getResults?doc_id=144601&lang=ro)|Exact paragraph read in the official browser-rendered law; delayed260(8),(11) period2028 sanctions. No successful PDF-download claim|2026-10-30|
 |[SFS12May2026 electronic-form launch](https://www.sfs.md/ro/stiri/formularul-privind-preturile-de-transfer-disponibil-in-sia-declaratia-electronica)|Official search-returned notice identifies the2025-onward electronic service. Direct retrieval403; portal/form not tested|2026-10-30|
+| [Current information annex 2, complete approved DOCX](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx) | All 20 rendered pages and original Word text: main form, affiliation A, transaction B, APA report C, instructions and all four code catalogues; incorrect February 2023 caption and comments numbering retained as source defects. Parent Order 9 current header/link rechecked. | 2026-10-31 |
+| [Approved APA application model](https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an3_9ro.docx) | Both pages, sections I–XIII/signature; six exhibits and specific maximum-10-day proceedings undertaking. Parent Order 8 header/link rechecked. | 2026-10-31 |
 
-Not yet confirmed: complete current annex2 information/APA-report forms, transaction/party-role codes and actual portal acceptance; current stamped APA application model and payment/refund implementation; general deadline adjustment/communication and foreign-currency conversion mechanics for an actual off-calendar case; current TP-record retention trigger after repeal/rewrite of the former six-year clause; larger-sample quartile interpolation; application of the stale annex1 point55(2) cross-reference for voluntary corresponding adjustments; IT-park TP single-tax return/computation; CbC/exchange applicability and specialist OECD/treaty routes; transaction-specific independent comparables, actual treaty texts/protocols and full amendment/commencement reconciliation. These are explicit source/procedure gaps. Neither the ledger nor this expanded writer draft establishes independent whole-country review, accountant attestation or comprehensive coverage.
+Not yet confirmed: authenticated portal acceptance, legacy country-code/renamed-jurisdiction mapping and actual submission receipts; APA technical payment/refund implementation; general deadline adjustment/communication and foreign-currency conversion mechanics for an actual off-calendar case; current TP-record retention trigger after repeal/rewrite of the former six-year clause; larger-sample quartile interpolation; application of the stale annex1 point55(2) cross-reference for voluntary corresponding adjustments; IT-park TP single-tax return/computation; CbC/exchange applicability and specialist OECD/treaty routes; transaction-specific independent comparables, actual treaty texts/protocols and full amendment/commencement reconciliation. These are explicit source/procedure gaps. Neither the ledger nor this expanded writer draft establishes independent whole-country review, accountant attestation or comprehensive coverage.
 
 <!-- openaccountants-cta-block -->
 

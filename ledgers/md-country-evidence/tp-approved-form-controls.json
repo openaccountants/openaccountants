@@ -1,0 +1,118 @@
+{
+  "status": "PASS two new TP aggregation controls and nine source lookups; independent legal review pending",
+  "cases": [
+    {
+      "name": "Information threshold aggregates opposing flows without netting",
+      "assumed_inputs": {
+        "records": [
+          {
+            "transaction": "0001",
+            "taxpayer_role": "1001",
+            "MDL": "9000000"
+          },
+          {
+            "transaction": "0007",
+            "taxpayer_role": "2007",
+            "MDL": "8000000"
+          },
+          {
+            "transaction": "0002",
+            "taxpayer_role": "2002",
+            "MDL": "3000000"
+          }
+        ],
+        "threshold_MDL": 20000000
+      },
+      "actual": {
+        "eligible": "20000000",
+        "threshold_reached": "1"
+      },
+      "expected": {
+        "eligible": 20000000,
+        "threshold_reached": 1
+      },
+      "scope": "Assumed legally eligible non-APA transaction values, without VAT; not evidence of real affiliation or arm’s-length pricing.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Principal, advances and actual APA-covered values stay separate",
+      "assumed_inputs": {
+        "eligible_MDL": "20000000",
+        "principal_MDL": "50000000",
+        "advances_MDL": "2000000",
+        "separate_APA_covered_MDL": "11000000"
+      },
+      "actual": {
+        "ledger_total": "83000000",
+        "excluded": "63000000",
+        "threshold_base": "20000000",
+        "APA_schedule": "11000000"
+      },
+      "expected": {
+        "ledger_total": 83000000,
+        "excluded": 63000000,
+        "threshold_base": 20000000,
+        "APA_schedule": 11000000
+      },
+      "scope": "Code22619(4),(7) exclusions assumed satisfied; an application alone is not an actual APA. APA amount remains reportable separately, not added back to threshold.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "source_lookups": [
+    {
+      "name": "Transaction codes preserve their leading zeroes",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Actual contract catalogue; no conversion to unpadded integers."
+    },
+    {
+      "name": "Seller and buyer roles differ within sale code0001",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Taxpayer side, not affiliate side."
+    },
+    {
+      "name": "Loan borrower and service beneficiary mappings match example",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Threshold assumption does not alter the original contract-role code."
+    },
+    {
+      "name": "Affiliation1001 and transaction-role1001 are distinct fields",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Affiliation evidence must be kept separately from sale role."
+    },
+    {
+      "name": "Civil partnership has one printed participant role",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "No invented second party-role code2019."
+    },
+    {
+      "name": "Cost-plus02 and resale03 are not reversed",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Actual method catalogue; not automatic method-selection approval."
+    },
+    {
+      "name": "Berry uses indicator11; indicator labels do not define universal denominators",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "No invented universal formula from label alone."
+    },
+    {
+      "name": "Country codes preserve three characters and source labels",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Actual registration-state nomenclature, including legacy label; portal mapping not tested."
+    },
+    {
+      "name": "APA model proceedings undertaking says ten days, not working days",
+      "status": "PASS SOURCE LOOKUP",
+      "scope": "Separate from changed-assumptions/revision30day procedure; actual proceedings and deadline calculation not established."
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-TP-INFORMATION-ANNEX2-20261031.json": "06142b167a880d16f1730bb25eb2e613539e4b62bec94538501349fb611a1b79",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-TP-APA-MODEL-20261031.json": "78d63ecaf934a54a55e140f81cf7d41a8f2d962e70ffd7c6713079ac749dca69",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-22619.json": "c66683abb5604d8e982a650bf4b806d5d16e200c5616ae0d2c86139c9ad3a122"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/md-transfer-pricing.md": "973fe014540532927bce4a1596bd217be1fec63792140532e9f079a090e1cd3e"
+  },
+  "read_date": "2026-10-31",
+  "not_certified": "Authenticated portal acceptance, technical payment/refund procedure, retention trigger, legal transaction eligibility, treaty rights, actual comparables, comprehensive country coverage or independent review"
+}
