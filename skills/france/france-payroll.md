@@ -1,10 +1,10 @@
 ---
 name: france-payroll
 description: Use this skill whenever asked about French payroll processing for employees. Trigger on phrases like "French payroll", "bulletin de paie", "fiche de paie", "prélèvement à la source", "PAS", "URSSAF cotisations", "cotisations sociales France", "CSG CRDS", "SMIC", "AGIRC-ARRCO", "retraite complémentaire", "DSN", "net imposable", "net à payer", "salaire brut net France", "charges patronales", "charges salariales", "PMSS", "plafond sécurité sociale", "minimum wage France", "congés payés", "13ème mois", "mutuelle obligatoire", or any question about computing employee pay, income tax withholding, or social contributions in France. This skill covers prélèvement à la source (PAS), URSSAF contributions, AGIRC-ARRCO, CSG/CRDS, mandatory benefits, payslip (bulletin de paie) requirements, DSN filing, and employer cost analysis. ALWAYS read this skill before processing any French employee payroll.
-version: 1.0
+version: 1.3
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,9 +15,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# French payroll: pay, contributions, PAS and DSN
+# French payroll: pay, contributions, PAS and DSN (2026, v1.3)
 
-How a French employer runs a monthly payroll for an employee: the social contributions taken from gross pay, the employer contributions on top, the single degressive relief that now sits over them, income tax withheld at source (prélèvement à la source), the mandatory payslip, and the monthly DSN filing. Figures are for tax year 2026. The income tax scale in Section 2 is the one applied in 2026 to income of 2025 declared in 2026; every other figure in this skill (the withholding grid, social contributions, the Smic, the ceilings and the payroll reliefs) is the one in force during 2026, and where a figure changed inside 2026 the row gives its start date. The rules on contributions and the DSN are those in force on 19 October 2026. The Smic rose on 1 June 2026, so this skill gives both the January value and the June value, and the default withholding grid shown is the one in force from 1 May 2026.
+How a French employer runs a monthly payroll for an employee: the social contributions taken from gross pay, the employer contributions on top, the single degressive relief that now sits over them, income tax withheld at source (prélèvement à la source), the mandatory payslip, and the monthly DSN filing. Figures are for tax year 2026. The income tax scale in Section 2 is the one applied in 2026 to income of 2025 declared in 2026; every other figure in this skill (the withholding grid, social contributions, the Smic, the ceilings and the payroll reliefs) is the one in force during 2026, and where a figure changed inside 2026 the row gives its start date. The rules on contributions and the DSN are those checked on 29 October 2026. The Smic rose on 1 June 2026, so this skill gives both the January value and the June value, and the default withholding grid shown is the one in force from 1 May 2026.
 
 ## Section 1: Quick Reference
 
@@ -35,7 +35,7 @@ How a French employer runs a monthly payroll for an employee: the social contrib
 | Key legislation | Code de la Sécurité sociale; Code du travail; Code général des impôts art. 204 A to 204 M for the withholding | |
 | Monthly social security ceiling (plafond mensuel, PMSS) | EUR 4,005 | "Mois 4 005 €" |
 | Annual social security ceiling (PASS) | EUR 48,060 | "2026 Année 48 060 €" |
-| Daily ceiling, used to prorate a part month | EUR 220 | "Jour 220 €" |
+| Published daily ceiling, not the ordinary part-month proration method | EUR 220 | "Jour 220 €" |
 | Hourly ceiling | EUR 30 | "Heure 30 €" |
 | Electronic declaration | DSN, filed on net-entreprises.fr | |
 | Review status | Not yet reviewed by a French expert-comptable | |
@@ -114,6 +114,8 @@ Guadeloupe, La Reunion and Martinique have their own grid, and Guyane and Mayott
 | Monthly net taxable Smic at 1 June 2026, the basis of the abattement | EUR 1,531.12 | "Le montant mensuel net imposable du salaire minimum de croissance s’élève, au 1 er juin 2026, à 1 531,12 euros." |
 | Abattement applied to a short contract before the default grid is read | EUR 766 | "est égal à 766 euros (1 531,12 / 2)" |
 
+The EUR 766 allowance applies only when no personal PAS rate has been transmitted, to CDD or mission contracts whose initial term does not exceed two months, or an imprecise term whose contractual minimum does not exceed two months, and only during the first two months of employment. A renewal does not restart that period; an interrupted new contract has its own test. Subtract the allowance from the withholding base, then use the monthly grid without adjusting its bands for a shorter pay period and apply that rate to the base after the allowance. Source: BOI-IR-PAS-20-20-30-10 §230–270, https://bofip.impots.gouv.fr/bofip/11252-PGP.html/identifiant%3DBOI-IR-PAS-20-20-30-10-20181228 .
+
 ## Section 3: Social Security: Employee Deductions (2026)
 
 ### URSSAF Contributions (Employee Share)
@@ -188,7 +190,7 @@ No official page prints a single total for employee deductions, so this skill do
 | Agirc-Arrco tranche 1 employee contribution inside that cap | 3.15% | "3,15 % (cotisations salariales de retraite complémentaire sur la tranche 1 (= plafond))" |
 | CEG tranche 1 employee contribution inside that cap | 0.86% | "0,86 % (contribution d’équilibre général (CEG) sur la tranche 1 (= plafond))" |
 
-The relief is a reduction of the employee's old-age contributions on the overtime pay only. It is not an exemption from CSG or CRDS. The reduction must appear on the payslip.
+The relief is a reduction of the employee's old-age contributions on the overtime pay only. It is not an exemption from CSG or CRDS. The reduction must appear on the payslip. Apply eligible overtime/complementary pay × min(the employee’s actually due mandatory legal/conventional old-age contribution rate,11.31%);11.31% is a cap, not every employee’s rate. Eligibility requires legal/conventional working-time compliance, no substitution for suppressed remuneration unless twelve months elapsed, and no complete replacement of the overtime pay by compensatory rest.
 
 ## Section 4: Social Security: Employer Contributions (2026)
 
@@ -271,7 +273,7 @@ The formula on the Urssaf pages is: coefficient equals T min plus T delta multip
 | Flat employer deduction per overtime hour, employer with fewer than 20 employees | EUR 1.50 | "1,50 € pour les employeurs dont l’effectif est inférieur à 20 salariés" |
 | Flat employer deduction per overtime hour, employer with 20 employees or more | EUR 0.50 | "0,50 € par heure supplémentaire pour les employeurs d’au moins 20 salariés" |
 
-From 1 January 2026 the old headcount limit for this deduction was removed, so every employer eligible for the single relief can claim it whatever its size. It also covers days bought back from an employee on a forfait-jours contract above the cap of 218 days.
+From 1 January 2026 the old headcount limit for this deduction was removed, so every employer eligible for the single relief can claim it whatever its size. It also covers days bought back from an employee on a forfait-jours contract above the cap of 218 days. Under CSSL241-18II and L241-18-1II, each qualifying surrendered forfait day carries SEVEN times the relevant hourly amount: EUR10.50 for the under20 branch or EUR3.50 for the20+ branch, before the actual contribution cap. Establish the applicable headcount branch, a qualifying annual forfait and surrender beyond218 days under the statutory conditions, working-time compliance and remuneration at least equal to an unenhanced hour; exclude recent remuneration substitution unless twelve months elapsed. Apply after other eligible reliefs and cap at the relevant employer contributions still due for that employee’s remuneration at payment. Keep the control document required by V. IV also conditions relief on its named EU1407/2013 de-minimis reference: establish the applicable aid-rule succession and undertaking’s aid facts before claiming; the retained agency’s200000/100000 amounts are not a verified universal2026 ceiling. The amounts here are conditional on those eligibility/remaining-dues inputs, not automatic relief for every purchased day.
 
 ### AGIRC-ARRCO (Employer Share)
 
@@ -292,7 +294,7 @@ From 1 January 2026 the old headcount limit for this deduction was removed, so e
 
 The same warning as on the employee table applies here. The only allowed page that prints the employer CEG tranche 2 and CET rates is the Urssaf rates page for household employers, in a footnote that states the Agirc-Arrco rules generally. The private-sector rates page prints neither. Confirm the tranche 2 and CET rates against the Agirc-Arrco circular before signing. The 60/40 Agirc-Arrco employer/employee split is confirmed separately, for all private-sector employees and not just household employees, on entreprendre.service-public.gouv.fr/vosdroits/F24013, which is a better source for that split than the household-employer page.
 
-An Apec contribution is also due for cadres. No allowed official page prints its rate: entreprendre.service-public.gouv.fr/vosdroits/F24013 names "Cotisation Apec (pour les cadres uniquement)" without giving one, which is the evidence for that. This skill does not state one.
+Apec is also due on cadres’ salary up to four social-security ceilings: 0.06% in total, split 0.024% employee and 0.036% employer. This ordinary contribution is separate from Agirc-Arrco pension-point contributions. Source: the official Agirc-Arrco points page, https://www.agirc-arrco.fr/particuliers/ma-retraite/comprendre-ma-retraite/points-de-retraite-comment-sont-ils-obtenus/ . F24013 (entreprendre.service-public.gouv.fr/vosdroits/F24013) names Cotisation Apec without a figure; the official Agirc-Arrco source supplies it. The distinct cadre provident-cover minimum still requires the applicable agreement; it is not inferred from the Apec rate.
 
 ### Unemployment and Other Employer-Only
 
@@ -307,7 +309,9 @@ An Apec contribution is also due for cadres. No allowed official page prints its
 | Contribution | Employer rate | Page wording |
 | --- | --- | --- |
 | Source | all figures below | https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html |
-| Employer contribution on the part of a rupture conventionnelle or forced retirement payment that is outside the contribution base, for a contract whose end falls after 1 January 2026 | 40% | "Le taux de cette contribution patronale passe de 30 % à 40 %" |
+| Employer contribution on the excluded social-contribution-base part of ordinary rupture conventionnelle or employer-initiated retirement indemnities | 40% under CSS L137-12. Urssaf dates the increase to the January 2026 employment period, not simply a contract end after 1 January; its stated qualifying contrat de valorisation de l’expérience retirement exception must be checked separately | "Le taux de cette contribution patronale passe de 30 % à 40 % à compter de la période d’emploi de janvier 2026." |
+
+Date boundary: the selected current L137-12 display says its amended 40% text entered into force immediately on 31 December 2025, while the Urssaf operational note refers to the January 2026 employment period. A December 2025/January 2026 straddling indemnity needs that precise effect-date reconciliation; the old after-1-January contract-end shortcut is not used here. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053282399/2026-06-16 .
 
 ### Total Employer Cost (Approximate)
 
@@ -348,9 +352,9 @@ Net monthly pay at the Smic is not published as a figure on any allowed page and
 | Legal monthly hours | 151.67 hours | "151,67 heures par mois" |
 | Legal annual hours | 1,607 hours | "1 607 heures par an" |
 | Maximum daily working time | 10 hours | "ne doit pas dépasser la durée maximale de 10 heures par jour" |
-| Maximum daily working time where activity rises or the business needs it | 12 hours | "la durée maximale quotidienne de travail est limitée à 12 heures par jour" |
-| Maximum in a single week | 48 hours | "Soit 48 heures sur une même semaine" |
-| Maximum average over 12 consecutive weeks | 44 hours | "Soit 44 heures par semaine en moyenne sur une période de 12 semaines consécutives" |
+| Maximum daily working time under the stated derogation | 12 hours where the collective-agreement derogation covers increased activity or organisational need; other departures require the inspector’s approval or the stated emergency route | "Soit si une convention collective ... le prévoit" / "limitée à 12 heures par jour" |
+| Ordinary maximum in a single week | 48 hours; up to60 only for exceptional circumstances with inspection approval | "Soit 48 heures sur une même semaine" |
+| Ordinary maximum average over 12 consecutive weeks | 44 hours; up to46 over12 consecutive weeks under the stated collective/company agreement or inspection authorisation | "Soit 44 heures par semaine en moyenne sur une période de 12 semaines consécutives" |
 
 | Rule | Value | Page wording |
 | --- | --- | --- |
@@ -378,7 +382,7 @@ Conditions that change the answer. The premiums above are the fallback. Where a 
 | Main leave period | 1 May to 31 October | "du 1 er mai au 31 octobre de l'année en cours" |
 | Leave that must be taken in the main period to earn fractionnement days | 12 working days, two weeks | "un congé d'au moins 12 jours ouvrables (soit 2 semaines)" |
 
-A part-day of accrued leave is rounded up to the next whole day. The fractionnement rules themselves are set by the collective agreement.
+A part-day of accrued leave is rounded up to the next whole day. The fractionnement rules themselves are set by the collective agreement. If the applicable convention or agreement does not stipulate the rules, Code du travail L3141-23 supplies the fallback: a continuous minimum twelve working days between 1 May and 31 October; for the part of principal leave beyond twelve days taken outside that period, one extra working day for three to five days, or two for at least six. Principal leave above twenty-four working days does not count for that supplement, and an individual agreement may derogate. Source: https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000033020705/2026-03-03 .
 
 ### Sick Leave (Arrêt Maladie)
 
@@ -389,8 +393,10 @@ A part-day of accrued leave is rounded up to the next whole day. The fractionnem
 | Daily base salary for a monthly paid employee | The last three gross salaries before the stoppage, divided by 91.25 | "au total des 3 derniers salaires bruts perçus avant l'arrêt de travail, divisé par 91,25" |
 | Pay taken into account, capped | 1.4 times the Smic in force on the last day of the month before the stoppage. The page states the 2026 cap as EUR 2,613.82 a month, which is built on the Smic in force from 1 June 2026, so it governs a stoppage beginning on or after 1 July 2026 | "est plafonné à 1,4 fois le montant du Smic en vigueur, lors du dernier jour du mois qui précède l'arrêt (soit 2 613,82 € par mois en 2026)" |
 | Cap for a stoppage that began before 1 April 2025 | 1.8 times the Smic, the old ceiling | "Pour les arrêts ayant débuté avant le 1ᵉʳ avril 2025, l’ancien plafond reste applicable" |
-| Maximum daily allowance | EUR 42.97 | "Les IJ ne peuvent pas dépasser 42,97 € bruts" |
+| Maximum daily allowance using the June-based monthly cap, for a stoppage beginning from 1 July 2026 | EUR 42.97; for an earlier 2026 stoppage recompute from the prior-month Smic gate above | "Les IJ ne peuvent pas dépasser 42,97 € bruts" |
 | Waiting period before the allowance starts | 3 days | "Les IJ sont versées après un délai de carence de 3 jours" |
+
+Ordinary sickness IJ entitlement is separate from the amount calculation. For the first six months, CSS R313-3(1) requires either 150 salaried or assimilated hours in the preceding three calendar months or 90 days, or six-month insurance contributions equivalent to those on 1,015 hourly Smic valued at the first day of the reference period; assess at the work-interruption date under R313-1(2). Beyond six continuous months, R313-3(2) requires twelve months of affiliation plus either 600 hours in the preceding twelve months or 365 days, or the stated twelve-month contributions equivalent to 2,030 hourly Smic valued at the 1 January preceding the reference period. Seasonal/discontinuous and other special histories must follow their own source rules. Do not substitute stale fixed-euro thresholds for those statutory Smic gates. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047983348/2026-09-29 .
 
 **Employer top-up (indemnites complementaires)**
 
@@ -404,9 +410,9 @@ A part-day of accrued leave is rounded up to the next whole day. The fractionnem
 | 21 to 25 years | 140 days: 70 days at 90% then 70 days at 66.66% | "De 21 à 25 ans 140 jours (70 jours à 90 % et 70 jours à 66,66 % )" |
 | 26 to 30 years | 160 days: 80 days at 90% then 80 days at 66.66% | "De 26 à 30 ans 160 jours (80 jours à 90 % et 80 jours à 66,66 % )" |
 | 31 years and more | 180 days: 90 days at 90% then 90 days at 66.66% | "31 ans et plus 180 jours (90 jours à 90 % et 90 jours à 66,66 % )" |
-| Waiting period before the employer top-up starts, every stoppage | 7 days, so the top-up begins on the 8th day | "Ainsi le versement des indemnités complémentaires commence au 8 e jour de l'arrêt maladie sauf dispositions conventionnelles" |
+| Waiting period before the ordinary sickness employer top-up starts | 7 days, so the top-up begins on the 8th day; work accidents and occupational disease start on the first absence day, excluding commuting accidents | "au-delà de sept jours d’absence" / "premier jour d’absence" (Code du travail D1226-3) |
 
-Conditions. The top-up needs at least one year of service at the first day of absence, and the medical certificate must reach **the employer** within 48 hours. Two different waiting periods run at once and must not be confused: three days on the health scheme allowance and seven days on the employer top-up, the top-up beginning on the eighth day unless a collective agreement is more favourable. There is no waiting period on the health scheme allowance where there was a return to work between two stoppages and that return did not exceed 48 hours ("reprise d'activité entre 2 arrêts de travail n'ayant pas dépassé 48 heures"), or where the stoppages follow an affection de longue duree. Where the stoppage follows a work accident or an occupational illness, the allowance runs from the first day of absence. Periods already paid in the previous twelve months reduce what is left. The Smic used for the cap is the one in force on the last day of the month before the stoppage. A stoppage beginning in June 2026 still takes the last day of May, which is inside the January to May Smic period, so its cap is 1.4 times the January 2026 monthly Smic in the Smic table in Section 5, not the monthly cap printed in the table above. No allowed page prints that January-based cap as an amount, so work it from the two figures and show the working. Only a stoppage beginning on or after 1 July 2026 takes the printed cap.
+Conditions. The top-up needs at least one year of service at the first day of absence, and the medical certificate must reach **the employer** within 48 hours. The employee must qualify for social-security daily benefits, be treated in France or the EEA, and not be a home worker, seasonal, intermittent or temporary worker. The 90% and two-thirds levels are total replacement targets: subtract the full nominal social-security daily allowance even if its actual payment is reduced for hospitalisation or a CPAM sanction, and the employer-funded share of provident benefits to obtain the employer top-up (Code du travail D1226-1 and D1226-5). Two different waiting periods run at once and must not be confused: three days on the health scheme allowance and seven days on the employer top-up, the top-up beginning on the eighth day unless a collective agreement is more favourable. There is no waiting period on the health scheme allowance where there was a return to work between two stoppages and that return did not exceed 48 hours ("reprise d'activité entre 2 arrêts de travail n'ayant pas dépassé 48 heures"), or where the stoppages follow an affection de longue duree. The employer top-up starts on the first absence day for a work accident or occupational disease, excluding a commuting accident. This is distinct from the health-scheme work-accident benefit: the employer pays the accident day and the caisse benefit starts the day after the resulting stoppage (CSS L433-1). Sources: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000019225874/2026-03-07 and https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000053283560/2026-02-15 . Periods already paid in the previous twelve months reduce what is left. The Smic used for the cap is the one in force on the last day of the month before the stoppage. A stoppage beginning in June 2026 still takes the last day of May, which is inside the January to May Smic period, so its cap is 1.4 times the January 2026 monthly Smic in the Smic table in Section 5, not the monthly cap printed in the table above. No allowed page prints that January-based cap as an amount, so work it from the two figures and show the working. Only a stoppage beginning on or after 1 July 2026 takes the printed cap.
 
 ### Maternity Leave (Congé de Maternité)
 
@@ -419,7 +425,7 @@ Conditions. The top-up needs at least one year of service at the first day of ab
 | Twins | 12 weeks before, 22 weeks after, 34 weeks in total | "2 12 semaines 22 semaines 34 semaines" |
 | Three or more babies | 24 weeks before, 22 weeks after, 46 weeks in total | "3 ou plus 24 semaines 22 semaines 46 semaines" |
 
-The count for a first or second child is by the number of children already dependent before the birth, not by birth order alone. The employee may give up part of the leave but must stop work for at least eight weeks, six of them after the birth. Pay during the leave comes from the health scheme as daily maternity allowances; the contract is suspended and the employer pays no salary unless an agreement says otherwise. No allowed page prints a cap for the maternity allowance, so this skill does not state one. After the maternity leave the employee may take the congé supplémentaire de naissance; its length and pay are on its own service-public page and are not covered here.
+The count for a first or second child is by the number of children already dependent before the birth, not by birth order alone. The employee may give up part of the leave but must stop work for at least eight weeks, six of them after the birth. Pay during the leave comes from the health scheme as daily maternity allowances; the contract is suspended and the employer pays no salary unless an agreement says otherwise. For an eligible monthly-paid employee, F2265 now supplies the daily benefit calculation: take the sum of the three preceding gross monthly salaries, each within the applicable PMSS, divide by 91.25 and apply the 21% forfait deduction. The page prints a minimum EUR 11.12 and maximum EUR 104.02 per day for its current 2026 presentation; use the prior-month ceiling gate, not an assumed unchanged prior-year PMSS. Ordinary eligibility requires six months of affiliation at the presumed delivery date and, under R313-3(1), either 150 salaried/assimilated hours in the preceding three calendar months or 90 days, or sufficient six-month insurance contributions measured against 1,015 hourly Smic at the start of the reference period. Assess the work/contribution tests at the maternity dates in R313-1(3); cessation for at least eight weeks including six post-birth weeks remains required. Seasonal/discontinuous and unemployed cases have their own alternative histories on the source page and are not established by the ordinary test alone. Sources: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047983348/2026-09-29 and https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006073189/LEGISCTA000006156797/?anchor=LEGIARTI000006749178 . After the maternity leave the employee may take the congé supplémentaire de naissance; its length and pay are on its own service-public page and are not covered here.
 
 ### Paternity Leave (Congé de Paternité)
 
@@ -445,7 +451,7 @@ No statutory obligation. It is common under collective agreements or company pol
 | Minimum employer share of the premium | 50% | "La participation financière de l'employeur doit être au moins égale à 50 % de la cotisation" |
 | Dental cover in the minimum basket | 125% of the agreed tariff | "Frais dentaires (prothèses et orthodontie) à hauteur de 125 % du tarif conventionnel" |
 
-The cover must meet a minimum basket of care: the whole of the ticket moderateur on consultations, acts and services reimbursed by the health scheme, with exceptions; the whole of the daily hospital charge; and the dental and optical minimums. Cover is compulsory for employees except in the cases where an employee is allowed to refuse. Cover carries on after the contract ends, for the length of the last contract and not more than twelve months. The employer's contribution to this cover is itself charged to CSG and CRDS, with no professional-costs allowance.
+The cover must meet a minimum basket of care: the whole of the ticket moderateur on consultations, acts and services reimbursed by the health scheme, with exceptions; the whole of the daily hospital charge; and the dental and optical minimums. Cover is compulsory for employees except in the cases where an employee is allowed to refuse. Free continued cover requires a termination other than faute lourde that opens unemployment-insurance entitlement and cover rights already opened with the last employer. It lasts during compensated unemployment, capped by the last contract or consecutive contracts with that employer, rounded up to whole months, and at most twelve months. The former employee must evidence continuing eligibility; the employer records portability on the employment certificate and informs the insurer (CSS L911-8: https://www.legifrance.gouv.fr/codes/id/LEGIARTI000006745464/2026-07-11). The employer's contribution to this cover is itself charged to CSG and CRDS, with no professional-costs allowance.
 
 ### Avantages en Nature and Frais Professionnels
 
@@ -463,15 +469,15 @@ These are the pay elements most often mis-entered. A benefit in kind is pay and 
 | Same car, employer pays the private fuel | 20% of the purchase cost | "15 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 20 % du coût d'achat" |
 | Company car, vehicle made available since 1 February 2025, bought, more than five years old | 10% of the purchase cost | "Véhicule acheté de plus de 5 ans 10 % du coût d'achat" |
 | Same car, employer pays the private fuel | 15% of the purchase cost | "10 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 15 % du coût d'achat" |
-| Company car, vehicle made available since 1 February 2025, leased | 50% of the yearly total cost | "Véhicule loué ou en location avec option d’achat (LOA) 50 % du coût global annuel (location, entretien, assurance)" |
-| Same car, employer pays the private fuel | 67% of the yearly total cost | "50 % du coût global annuel (location, entretien, assurance) + frais réels sur factures de carburant utilisé à des fins personnelles ou 67 % du coût global" |
+| Company car, vehicle made available since 1 February 2025, leased | 50% of annual lease, maintenance and insurance costs | "Véhicule loué ou en location avec option d’achat (LOA) 50 % du coût global annuel (location, entretien, assurance)" |
+| Same car, employer pays the private fuel | 50% of annual lease/maintenance/insurance PLUS actual invoiced private fuel, OR67% of global annual lease/maintenance/insurance plus private AND professional fuel and all related taxes | "50 % du coût global annuel (location, entretien, assurance) + frais réels sur factures de carburant utilisé à des fins personnelles ou 67 % du coût global" |
 | Company car, vehicle made available before 1 February 2025, bought, five years old or less | 9% of the purchase cost | "Véhicule acheté âgé de 5 ans ou moins 9 % du coût d'achat" |
 | Same car, employer pays the private fuel | 12% of the purchase cost | "9 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 12 % du coût d'achat" |
 | Company car, vehicle made available before 1 February 2025, bought, more than five years old | 6% of the purchase cost | "Véhicule acheté de plus de 5 ans 6 % du coût d'achat" |
 | Same car, employer pays the private fuel | 9% of the purchase cost | "6 % du coût d'achat + frais réels sur factures de carburant utilisé à des fins personnelles ou 9 % du coût d'achat" |
 | Company car, vehicle made available before 1 February 2025, leased | 30% of the yearly total cost | "Véhicule loué ou en location avec option d’achat (LOA) 30 % du coût global annuel TTC (location, entretien, assurance)" |
 | Same car, employer pays the private fuel | 40% of the yearly total cost | "30 % du coût global annuel TTC (location, entretien, assurance) + frais de carburant sur facture o u 4 0 % du coût global" |
-| Leased company car, either schedule, cap | Capped at the amount the benefit would have been if the employer had bought the vehicle instead of leasing it | "L'avantage évalué pour un véhicule loué est plafonné au montant de l'avantage en nature qui aurait été évalué si l'employeur avait acheté le véhicule" |
+| Leased company car, either schedule, cap | Capped at the hypothetical purchased-car benefit under the applicable schedule. Its reference purchase price is the lessor’s actual VAT-inclusive price, with the discount capped at30% of the manufacturer’s advised price at contract start | "L'avantage évalué pour un véhicule loué est plafonné au montant de l'avantage en nature qui aurait été évalué si l'employeur avait acheté le véhicule" |
 | Electric vehicle, made available since 1 February 2025, meeting the environmental score required for the bonus écologique | 70% reduction of the benefit on the schedule above, the reduction being limited to EUR 4,641.60 a year in 2026 | "Si le véhicule respecte le score environnemental requis pour bénéficier du bonus écologique, vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 70 % sur le montant de l’avantage en nature, dans la limite de 4 641,60 € par an en 2026" |
 | Electric vehicle made available before 1 February 2025 | 50% reduction of the benefit on the schedule above, the reduction being limited to EUR 2,026.30 a year in 2026 | "Vous utilisez le barème ci-dessus auquel vous appliquez une réduction de 50 %, dans la limite de 2 026,30 € par an en 2026" |
 | Electric vehicle, either schedule | Electricity the employer pays for is excluded from the benefit-in-kind calculation | "Les frais d'électricité pris en charge par l’employeur n’entrent pas en compte dans le calcul de l’avantage en nature" |
@@ -492,9 +498,9 @@ These are the pay elements most often mis-entered. A benefit in kind is pay and 
 | Source | all figures below | https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html |
 | Prime de partage de la valeur, exempt from contributions up to | EUR 3,000 | "exonérée de cotisations et contributions sociales dans la limite de 3 000 €" |
 | Same cap where the employer has a profit-sharing scheme in the conditions on the page | EUR 6,000 | "Cette limite d’exonération passe à 6 000 € par bénéficiaire et par an" |
-| Forfait social on the prime, employer with the headcount stated on the page | 20% | "le forfait social au taux de 20 % est dû si l’effectif de votre entreprise est égal ou sup" |
+| Forfait social on the prime, employer with at least 250 employees | 20% | "le forfait social au taux de 20 % est dû si l’effectif de votre entreprise est égal ou supérieur à 250 salariés" |
 
-The prime de partage de la valeur counts in annual gross pay for the single degressive relief, whether or not it is paid into a savings plan.
+The EUR 3,000/6,000 contribution exemption is per beneficiary and calendar year. For the ordinary EUR 6,000 route, an employer subject to compulsory participation needs intéressement; an employer not subject to it may use intéressement or participation, implemented by payment or concluded for the same financial year. The page separately exempts specified public-interest associations/foundations and Esat from that scheme condition. Through 31 December 2026, the wider CSG/CRDS and income-tax exemption requires both fewer than 50 employees and pay below three annual Smic; do not infer it from the basic social-contribution exemption. The prime de partage de la valeur counts in annual gross pay for the single degressive relief, whether or not it is paid into a savings plan.
 
 ## Section 7: Payslip Requirements
 
@@ -539,11 +545,11 @@ The montant net social line and the seven-zone layout came in with the version o
 | Employer with 50 employees or more, pay run in the same month as the work | The 5th of the following month | "vous devez transmettre votre DSN liée à la paie du mois en cours, le 5 du mois suivant (M+1)" |
 | Employer with 50 employees or more, pay run in the month after the work (decalage de paie) | At the latest the 15th of the following calendar month | "au plus tard le 15 du mois civil suivant" |
 | Employer with fewer than 50 employees | At the latest the 15th of the following calendar month | "Vous devez transmettre votre DSN liée à la paie du mois en cours, au plus tard le 15 du mois civil suivant" |
-| Employer with fewer than 11 employees, quarterly option | F24013 says such a business may choose to file the DSN each quarter instead of each month, at the latest the 15th of the month after the work period; the same page also says it may exceptionally choose to pay each quarter. Confirm with Urssaf which of the two the client has opted for before moving any monthly filing. Source: entreprendre.service-public.gouv.fr/vosdroits/F24013 | "Les entreprises de moins de 11 salariés peuvent choisir d'effectuer la DSN chaque trimestre et non chaque mois." / "Les entreprises de moins de 11 salariés qui déclarent en DSN chaque trimestre, doivent aussi le faire au plus tard le 15 du mois suivant la période de travail effectuée." |
+| Employer with fewer than 11 employees, quarterly payment option | The ordinary DSN remains monthly, by the 15th. CSS R243-6-1 permits eligible employers to opt for quarterly contribution payment, within the first 15 days of the next quarter, by notifying the collection body before 31 December or when employing the first employee. It renews unless renounced by 31 December. Simplified declaration schemes listed in that article are excluded. | "versement trimestriel des cotisations" / "L’employeur reste tenu d’adresser la déclaration sociale nominative à la date prévue"; contrary F24013 agency text: entreprendre.service-public.gouv.fr/vosdroits/F24013 |
 | Deadline falling on a public holiday or a non-working day | Extended to the next working day | "il est prolongé" |
-| Event report (signalement d'evenement): sick leave, end of contract | Within 5 days of the event | "vous êtes tenu d’envoyer une DSN de signalement d'événement dans les 5 jours suivants" |
+| Event report: sickness, early return or end of contract | Ordinarily within five working days after the payroll manager learns of it. Net-entreprises states exceptions for subrogated sickness or delayed payroll recognition of sickness, and no return report when the actual return is not earlier than that already declared. | "dans les 5 jours ouvrés suivant leur connaissance"; https://www.net-entreprises.fr/declaration/mentions-legales/ |
 
-The condition the live text used to miss: the 5th is not simply the large-employer date. It applies only where the employer has 50 employees or more **and** pays in the same month as the work. An employer of that size that pays in the following month is on the 15th, like a smaller employer. An employer with fewer than 11 employees may, on the wording of F24013, choose to file quarterly, also by the 15th of the month after the work period (see the warning in the row above).
+The condition the live text used to miss: the 5th is not simply the large-employer date. It applies only where the employer has 50 employees or more **and** pays in the same month as the work. An employer of that size that pays in the following month is on the 15th, like a smaller employer. CSS R133-14 I expressly requires a DSN each month; R243-6-1 preserves that duty even when payment is quarterly. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039222527 and https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038681470 . Contrary administrative text is retained as a source discrepancy: F24013 says a business below 11 employees may file quarterly, but that wording does not displace these monthly statutory filing rules.
 
 **Penalties**
 
@@ -563,7 +569,7 @@ The condition the live text used to miss: the 5th is not simply the large-employ
 
 The EUR 10,000 and EUR 750 caps on filing outside the DSN channel apply to employers within the scope of the décret of 24 September 2014. A third cap applies to employers within the scope of the décret of 18 May 2016: EUR 750 per business, per month.
 
-An omission or an inaccuracy carries no penalty where the employer corrects it within 30 days of the filing that carried it. Urssaf sends a compte-rendu metier within four hours of the filing, and more anomalies can be flagged five days after the deadline. Separately, the droit à l'erreur applies only where the employer corrects the pay at the nearest declarative deadline and pays the top-up contributions and social charges at the same time; on that condition it removes the majorations and the penalty where either limb is met, provided the inaccuracies are not repetitive: the majorations and penalty that would otherwise apply come to less than one monthly value of the social security ceiling, or the regularising payment is below 5% of the total initial contributions.
+The 30-day correction exception on the Urssaf page covers other omissions and inaccuracies; it does not give a blanket exemption for an employee omitted from the DSN, which has its separate penalty above. Read the compte-rendu métier and Suivi DSN anomaly reports promptly and correct the declaration. Not yet confirmed: universal four-hour CRM delivery and five-day later-anomaly service levels formerly stated here; the selected current Urssaf text promises rapid feedback without those exact timings. Separately, the droit à l'erreur applies only where the employer corrects the pay at the nearest declarative deadline and pays the top-up contributions and social charges at the same time; on that condition it removes the majorations and the penalty where either limb is met, provided the inaccuracies are not repetitive: the majorations and penalty that would otherwise apply come to less than one monthly value of the social security ceiling, or the regularising payment is below 5% of the total initial contributions.
 
 **Penalties on the employer as collector of the income tax withheld**
 
@@ -582,13 +588,14 @@ Those Urssaf penalties are about the social contributions. The income tax withhe
 | Withholding kept back deliberately, delay over one month, criminal fine | EUR 1,500 | "passible d’une amende de 1 500 €" |
 | Repeat within three years | Two years imprisonment and a fine of EUR 3,750, or one of the two | "punissable de deux ans d'emprisonnement et de 3 750 € d'amende" |
 
-The two deliberate-breach fines in the table above apply only where the administration shows the breach was deliberate. Where only part of a return is filed late, the on-time inaccuracy fine applies to that part and the non-filing fine does not. The converse also holds: where the administration finds an omission or an inaccuracy on a return that was itself filed late, only the 10% non-filing fine applies to the whole of the withholding not declared in time.
+The two deliberate-breach fines in the table above apply only where the administration shows the breach was deliberate. Where only part of a return is filed late, the doctrine applies the 5% fine to that late-filed part, instead of the 10% non-filing fine. The converse also holds: where the administration finds an omission or an inaccuracy on a return that was itself filed late, only the 10% non-filing fine applies to the whole of the withholding not declared in time.
 
 ### Annual
 
 | Obligation | Deadline | Notes |
 | --- | --- | --- |
 | DADS | Not applicable, fully replaced by the DSN since 2019 | Historical reference only |
+| Bilan social, retained reporting handoff | Under Code du travail L2312-28, the annual social-policy consultation also covers the social report for a business with at least 300 employees, and an establishment report for each distinct establishment with at least 300. | Apply L2312-29’s threshold transition: the first report concerns the year after reaching the threshold; the first may cover one year and the second two; a drop below threshold still requires the current-year report. Current consultation terms follow the applicable agreement or statutory fallback. Source: https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000035609798/2026-06-14/ |
 | Index de l'égalité professionnelle | Each year, at the latest 1 March, on the company website and on Égapro | Businesses with at least 50 employees over the past year. A business that has just reached 50 employees has three years before it must publish. Source: https://entreprendre.service-public.gouv.fr/vosdroits/F35103 |
 
 ### Employee Obligations
@@ -637,19 +644,63 @@ The two deliberate-breach fines in the table above apply only where the administ
 
 ### Key Handoff Points
 
-- **Payroll to bookkeeping.** Gross wages and employer charges are profit and loss expenses. Employee deductions and the tax withheld are liabilities in the 43x accounts until the DSN payment clears. Employer contributions are booked to 645xxx.
+- **Payroll to bookkeeping.** Gross wages use account 641 and employer social contributions 645. Social-contribution liabilities use 43x; income tax withheld at source uses 4421, not 43x, until the respective payments clear. Source: the ANC January 2026 PCG account plan, https://www.anc.gouv.fr/files/anc/files/1_Normes_fran%C3%A7aises/recueil/2026/Recueil-PCG-Janvier-2026.pdf .
 - **Payroll to income tax.** Withholding settles most of the employee's income tax in real time. The annual return may still produce an adjustment. The net imposable on the payslip is the reference figure.
 - **Payroll to the DSN.** All payroll data feeds the DSN. Accurate payslips give an accurate DSN. Errors produce anomaly reports through net-entreprises.fr.
 
 ## The method, step by step
 
 1. **Fix the gross and the pay elements.** Add base pay, overtime at the premium in the overtime table in Section 5 or at the collective agreement rate, bonuses, and benefits in kind at the values in Section 6. Check the result against the Smic in force on the days worked, using the table at https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html Expense allowances inside the limits on https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html stay out of the base.
-2. **Split the gross across the ceilings.** Work out tranche 1 and tranche 2 against the monthly ceiling at https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html and prorate the ceiling with the daily and hourly values in the same table for a part month or a short contract.
-3. **Apply the employee contributions.** Use the employee table in Section 3 and the Agirc-Arrco tables, from https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html and https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 Charge CSG and CRDS on the reduced base in the CSG table, watching the four-ceiling limit. Apply the overtime relief from https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html
+2. **Split the gross across the ceilings.** Work out tranche 1 and tranche 2 against the monthly ceiling at https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html For an ordinary monthly employee employed for only part of a month, use the monthly ceiling multiplied by the calendar days covered by the employment period and divided by the actual calendar days in that month, also deducting whole unpaid absence days under CSS R242-2. EUR 220 per day and EUR 30 per hour are not substitutes for that formula. For the part-time employees covered by CSSR242-2, the employer has the right to correct the ceiling. If that optional correction is exercised, use contractual hours plus complementary hours divided by the applicable legal or shorter collective full-time duration, capped at the full ceiling; perform the cumulative payroll regularisation it requires. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039222466/2026-03-26
+3. **Apply the employee contributions.** Use the employee table in Section 3 and the Agirc-Arrco tables, from https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html and https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 Charge CSG and CRDS on the reduced base in the CSG table, watching the four-ceiling limit. Apply the overtime relief from https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html Apply its actual eligibility and rate-cap gates in Section3 before calculating the reduction.
 4. **Apply the employer contributions, then the single degressive relief.** Use the employer table in Section 4, then compute the relief with the coefficient parameters at https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html Check eligibility against the pay ceiling in that table before computing anything.
-5. **Compute the net imposable and withhold the income tax.** Net imposable is the gross less the deductible social contributions. Apply the rate the tax office sent through the DSN feedback, or, where there is none, the grid at https://bofip.impots.gouv.fr/bofip/11255-PGP.html taking the grid for the territory where the employee lives. The tax withheld is paid to the tax administration by the SEPA B2B debit set in the DSN, as described at https://www.impots.gouv.fr/les-modalites-du-prelevement-la-source-0
+5. **Compute the net imposable and withhold the income tax.** Start the net imposable with gross taxable remuneration, add the taxable employer contribution for health-cost cover if it is not already included, and subtract only deductible employee social contributions within their applicable limits. Employer health contributions are taxable remuneration; CSG/CRDS that are not deductible must not be subtracted. Source: https://bofip.impots.gouv.fr/bofip/5956-PGP.html/identifiant%3DBOI-RSA-BASE-30-10-20-20260217 . Apply the rate the tax office sent through the DSN feedback, or, where there is none, the grid at https://bofip.impots.gouv.fr/bofip/11255-PGP.html taking the grid for the territory where the employee lives. The tax withheld is paid to the tax administration by the SEPA B2B debit set in the DSN, as described at https://www.impots.gouv.fr/les-modalites-du-prelevement-la-source-0
 6. **Issue the payslip.** Build the seven zones listed in Section 7 from https://entreprendre.service-public.gouv.fr/vosdroits/F559 including the montant net social line and the year to date totals.
-7. **File the DSN and pay.** File on net-entreprises.fr by the date in the DSN table in Section 8, from https://www.urssaf.fr/accueil/employeur/gerer-entreprise/declaration-sociale-nominative.html Read the compte-rendu metier and correct by an annule et remplace before the due date. Send an event report within five days of a sick leave or an end of contract.
+7. **File the DSN and pay.** File on net-entreprises.fr by the date in the DSN table in Section 8, from https://www.urssaf.fr/accueil/employeur/gerer-entreprise/declaration-sociale-nominative.html Read the compte-rendu metier and correct by an annule et remplace before the due date. Send event reports within the five-working-day rule and its exceptions in Section 8, rather than assuming every event has the same calendar-day deadline.
+
+## Worked examples
+
+**Example 1. Ordinary part-month ceiling, March 2026.** Fictional monthly-paid employee, employed for ten calendar days in March (31 days), gross pay EUR 2,000, no unpaid absence or part-time reduction and no earlier employment-period regularisation balance. PMSS is EUR 4,005. The prorated ceiling is 4,005 × 10 / 31 = EUR 1,291.94 when illustrated to cents. Capped employee old-age contributions at 6.90% are EUR 89.14; uncapped employee old-age at 0.40% on the full EUR 2,000 is EUR 8.00. Multiplying EUR 220 by ten gives EUR 2,200 and is not the ordinary monthly proration rule. This example computes those two contribution lines, not a complete net payslip. Sources: CSS R242-2, the ceiling and private-sector contribution tables cited above.
+
+```oa-check
+name: France ordinary monthly ceiling for ten calendar days in March2026
+inputs:
+  monthly_ceiling: 4005
+  calendar_employment_days: 10
+  calendar_month_days: 31
+  gross: 2000
+steps:
+  - ceiling: round(monthly_ceiling * calendar_employment_days / calendar_month_days, 2)
+  - capped_employee_old_age: round(min(gross, ceiling) * 0.069, 2)
+  - uncapped_employee_old_age: round(gross * 0.004, 2)
+expected:
+  ceiling: 1291.94
+  capped_employee_old_age: 89.14
+  uncapped_employee_old_age: 8.00
+```
+
+**Example 2. Published ordinary RGDU monthly calculation, June 2026.** Fictional eligible private employer with 70 employees, an employee paid EUR 2,000 for a full 35-hour week throughout June, no absence, overtime or PPV, employment continuing on 1 July, and the same pay/hour pattern over the year. Use the January hourly Smic EUR 12.02 for RGDU, not the June minimum wage: 12.02 × 35 × 52 / 12 = EUR 1,823.0333… reference monthly Smic. With T min 0.0200, T delta 0.3821 and P 1.75, the coefficient is 0.317818…; to the four-decimal precision used in the Urssaf June example it is 0.3178, giving EUR 635.60. The full-year corresponding relief is EUR 7,627.20 on these unchanged fictional inputs, subject to the required actual annual/progressive regularisation. The EUR 635.60 matches the agency’s published monthly result. The executable block uses its published 0.3178 coefficient as an input; the ledger’s supplementary control independently recomputes the fractional-power formula, which the oa-check parser does not support. It is not a complete employer-cost calculation, and different pay, hours, PPV or absence require recomputation. Source: https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html , current July 2026 method and June example.
+
+```oa-check
+name: France published RGDU2026 full-month seventy-employee example
+inputs:
+  january_smic_hourly: 12.02
+  weekly_hours: 35
+  gross_month: 2000
+  t_min: 0.02
+  t_delta: 0.3821
+  published_coefficient: 0.3178
+steps:
+  - reference_smic: january_smic_hourly * weekly_hours * 52 / 12
+  - eligibility_ceiling: reference_smic * 3
+  - coefficient: clamp(published_coefficient, t_min, t_min + t_delta)
+  - monthly_relief: round(gross_month * coefficient, 2)
+  - unchanged_year_relief: round(monthly_relief * 12, 2)
+expected:
+  coefficient: 0.3178
+  monthly_relief: 635.60
+  unchanged_year_relief: 7627.20
+```
 
 ## Ask the client first
 
@@ -658,7 +709,7 @@ The two deliberate-breach fines in the table above apply only where the administ
 - **Where does the employee live and work?** Mayotte has its own ceiling and its own Smic. Guadeloupe, La Reunion, Martinique, Guyane and Mayotte have their own default withholding grids. Haut-Rhin, Bas-Rhin and Moselle carry an extra employee health contribution and a different apprenticeship tax.
 - **Which collective agreement applies?** It can raise the minimum pay above the Smic, change the overtime premiums and the annual quota, change the reference period for leave, and require the employer to keep paying during maternity or sickness.
 - **Does the employer use a zoned exemption, the overseas Lodeom exemption, or the home-help exemption, and is the employee's annual pay at or below the pay ceiling in Section 4 (2.5 times the frozen Smic for maladie, 3.5 times for allocations familiales)?** Both the exemption and the pay ceiling must be met; that is now the only ordinary route to the reduced maladie and allocations familiales rates.
-- **Was any pay paid in a month when the Smic changed, or any prime de partage de la valeur paid in the year?** Both change the single degressive relief.
+- **What are the paid hours, absences and any prime de partage de la valeur in the year?** These affect the single degressive relief. Ordinary 2026 RGDU uses the Smic frozen at 1 January, with the adjustments in Section 4, while actual minimum pay changes on 1 June.
 
 ## When to refuse or refer
 
@@ -666,7 +717,7 @@ The two deliberate-breach fines in the table above apply only where the administ
 - Payroll in Mayotte beyond the ceiling and the Smic quoted here. The contribution rates are a separate schedule.
 - Household employers, childminders and home-help staff: they use the Urssaf schedule for particuliers employeurs, not the private-sector schedule.
 - Apprentices, professionalisation contracts, interns and company officers, where the base and the exemptions are not the ones in this skill.
-- Cadres benefits: the Apec contribution and the minimum provident cover for cadres come from national agreements, not from the pages allowed here. Ask the expert-comptable or read the collective agreement.
+- Additional cadre benefits, including the minimum provident cover, require the actual applicable agreement. The ordinary Apec contribution is supplied above; it does not establish a provident-cover premium.
 - Termination pay: severance, rupture conventionnelle and transactional payments have their own exemption limits. Only the employer contribution rate is in this skill.
 - Any case where a collective agreement, an extended branch agreement or a company agreement is in play and has not been read.
 - Any figure a client wants to rely on without a French expert-comptable signing it off.
@@ -687,36 +738,39 @@ The two deliberate-breach fines in the table above apply only where the administ
 
 ## Sources
 
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html
-- https://www.urssaf.fr/accueil/actualites/augmentation-smic.html
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html
-- https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html
-- https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/assurance-chomage-ags.html
-- https://www.impots.gouv.fr/les-modalites-du-prelevement-la-source-0
-- https://entreprendre.service-public.gouv.fr/vosdroits/F35103
-- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html
-- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html
-- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html
-- https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html
-- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html
-- https://www.urssaf.fr/accueil/employeur/gerer-entreprise/declaration-sociale-nominative.html
-- https://entreprendre.service-public.gouv.fr/vosdroits/F559
-- https://entreprendre.service-public.gouv.fr/vosdroits/F24013
-- https://entreprendre.service-public.gouv.fr/vosdroits/F33754
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F34009
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F1419
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F15396
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F1911
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F2391
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F2258
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F3053
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F2265
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F3156
-- https://bofip.impots.gouv.fr/bofip/11255-PGP.html
-- https://bofip.impots.gouv.fr/bofip/11471-PGP.html
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/plafonds-securite-sociale.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/actualites/augmentation-smic.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-secteur-prive.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-particuliers.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/csg-crds.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/employeur/cotisations/liste-cotisations/assurance-chomage-ags.html Selected cited scope read 2026-10-29.
+- https://www.impots.gouv.fr/les-modalites-du-prelevement-la-source-0 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.gouv.fr/vosdroits/F35103 Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/reduction-generale-cotisation.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/exonerations-heures/reduction-cotisations-salariales.html Selected overtime, nominal-IJ, optional part-time ceiling, weekly derogation, leased-car basket/cap and age/date SMIC scopes reread31October2026 from the retained sources. Selected own-law indexed II–V for forfait days: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610232/2026-01-01 ; https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053278678/2026-10-09 . Exact source representations and short scopes are in the ledger; no full lawHTML or full Urssaf-body acquisition is claimed.
+- https://www.urssaf.fr/accueil/employeur/beneficier-exonerations/prime-partage-valeur.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/actualites/informations-nouvelle-annee.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/avantages-en-nature.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/frais-professionnels.html Selected cited scope read 2026-10-29.
+- https://www.urssaf.fr/accueil/employeur/gerer-entreprise/declaration-sociale-nominative.html Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.gouv.fr/vosdroits/F559 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.gouv.fr/vosdroits/F24013 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.gouv.fr/vosdroits/F33754 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F34009 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F15396 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F1911 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F2391 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F2258 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F3053 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F2265 Selected cited scope read 2026-10-29.
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F3156 Selected cited scope read 2026-10-29.
+- https://bofip.impots.gouv.fr/bofip/11255-PGP.html Selected cited scope read 2026-10-29.
+- https://bofip.impots.gouv.fr/bofip/11471-PGP.html Selected cited scope read 2026-10-29.
+
+
+Source-reading note, 29 October 2026: the selected current CSS R242-2, R133-14 I and R243-6-1 clauses, Code du travail D1226-1 to D1226-5, CSS L433-1 and L911-8, BOI-RSA-BASE-30-10-20 §200 and BOI-IR-PAS-20-20-30-10 §230–270 support the narrow corrections above. Where direct official HTTP access failed, the ledger preserves the actual official indexed display and its selected reading, not a claim that a whole statute was downloaded. The latest retrieved R133-14 display did not include its event-report subsection; the administrative five-day event wording is retained as that source’s wording, with no invented full current subsection reading. Ordinary methods and remaining precise source limits are recorded in the figure ledger.
 
 ## Disclaimer
 

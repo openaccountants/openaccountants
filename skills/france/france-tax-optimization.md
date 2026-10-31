@@ -1,10 +1,10 @@
 ---
 name: france-tax-optimization
 description: Use this skill whenever asked about reducing tax in France, tax planning, saving tax, optimizing tax, allowances, deductions the client might be missing, or any question about legal strategies to minimize income tax liability for self-employed individuals in France. Trigger on phrases like "reduce tax", "tax planning", "save tax", "optimize", "allowances", "deductions I'm missing", "payer moins d'impôts", "optimisation fiscale", "réduire ses impôts", "défiscalisation". ALWAYS read this skill before advising on any French tax optimization strategy.
-version: 1.0
+version: 1.2
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -15,7 +15,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # France: legal tax planning for the self-employed and small business owners
 
-This skill helps an assistant compare the lawful choices a French self-employed person or small business owner can make: which income tax regime, which legal structure, when to spend, save or invoice, and which deductions and reliefs to claim. Figures are for tax year 2026. France taxes the previous year's income, so the income tax scale, the family quotient cap, the retirement savings ceilings and the credit and reduction limits marked "income of 2025" govern income of 2025 declared in 2026, while the micro turnover limits marked "income of 2026", the corporation tax rates, the VAT thresholds and the social contribution rates are those in force during 2026. VAT and social contribution rules are stated as in force on 19 October 2026, with the start date where a rule changed during the year. Where a 2026 figure is not yet published, the table says so and gives the latest official figure with its year. Every recommendation below rests on a rule printed on an official page; a planning idea that depends on a figure no official page prints has been left out.
+This skill helps an assistant compare the lawful choices a French self-employed person or small business owner can make: which income tax regime, which legal structure, when to spend, save or invoice, and which deductions and reliefs to claim. Figures are for tax year 2026. France taxes the previous year's income, so the income tax scale, the family quotient cap, the retirement savings ceilings and the credit and reduction limits marked "income of 2025" govern income of 2025 declared in 2026, while the micro turnover limits marked "income of 2026", the corporation tax rates, the VAT thresholds and the social contribution rates are those in force during 2026. VAT and social contribution rules are tied to the selected current sources actually read on 29 October 2026, with the start date where a rule changed during the year. Where a 2026 figure is not yet published, the table says so and gives the latest official figure with its year. Every recommendation below rests on a rule printed on an official page; a planning idea that depends on a figure no official page prints has been left out.
 
 ## Section 1: Quick reference
 
@@ -25,7 +25,7 @@ This skill helps an assistant compare the lawful choices a French self-employed 
 | --- | --- |
 | Country | France (République française) |
 | Authority | Direction générale des finances publiques (DGFiP), with URSSAF for social contributions |
-| Main texts | Code général des impôts (CGI) and Livre des procédures fiscales (LPF), read through BOFiP, impots.gouv.fr and service-public pages because the statute site cannot be read by our fetcher |
+| Main texts | Code général des impôts (CGI), social-security legislation and Livre des procédures fiscales (LPF). The figure ledger distinguishes actual selected statute representations, administrative doctrine, acquired bodies and failed direct routes; no whole-code reading is claimed |
 | Tax year | Calendar year, taxed the following year |
 | Return for income of 2025 | Filed in spring 2026; the deadlines are in Section 11 |
 | Currency | EUR |
@@ -81,19 +81,19 @@ Under the micro regime the taxable profit is turnover less a flat allowance. Und
 | Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
 | Turnover limit, sales of goods and accommodation, governing income of 2025 | EUR 188,700 | "ne doit pas avoir dépassé 188 700 €" |
 | Turnover limit, services and BNC, governing income of 2025 | EUR 77,700 | "ne doit pas avoir dépassé 77 700 €" |
-| Turnover limit, sales of goods and accommodation, governing income of 2026 | EUR 203,100 | "n’a pas dépassé 203 100 €" |
-| Turnover limit, services, BNC and accommodation other than tourist lets, governing income of 2026 | EUR 83,600 | "n’a pas dépassé 83 600 €" |
+| Turnover limit, goods and qualifying accommodation EXCLUDING furnished residential letting, governing income of 2026 | EUR 203,100 | "n’a pas dépassé 203 100 €" |
+| Turnover limit, services/BNC and ordinary furnished residential letting; eligible classified tourist lets and chambres d’hôtes have their own stated branch, governing income of 2026 | EUR 83,600 | "n’a pas dépassé 83 600 €" |
 | Flat allowance, sales of goods | 71% | "Le taux d'abattement est de 71 %" |
 | Flat allowance, commercial services (BIC) | 50% | "Le taux d'abattement est de 50 %" |
 | Flat allowance, non-commercial activities (BNC) | 34% | "Le taux d'abattement est de 34 %" |
 | Floor of the flat allowance | EUR 305 | "Le montant de l’abattement ne peut pas être inférieur à 305 €" |
-| Optional flat income tax payment (versement libératoire), commerce, catering and accommodation | 1% | "1 % pour les activités de commerce, restauration et logement" |
+| Optional flat income tax payment, commerce/catering and qualifying accommodation EXCLUDING furnished residential letting | 1% | "1 % pour les activités de commerce, restauration et logement" |
 | Optional flat income tax payment, other BIC activities | 1.7% | "1,7 % pour les autres activités relevant des BIC" |
 | Optional flat income tax payment, BNC activities | 2.2% | "ce taux est de 2,2 %" |
-| Reference income of year N-2 below which a single person may opt for the flat payment | EUR 29,579 | "29 579 € pour une personne seule" |
-| Same limit for a person in a couple | EUR 59,158 | "59 158 € pour une personne en couple" |
+| For the 2026 option: 2024 RFR, one share, must not exceed | EUR 29,315 | DGFiP’s current year selector expressly uses 2024 RFR for the 2026 option |
+| For the 2026 option: 2024 RFR, couple with two shares, must not exceed | EUR 58,630 | The 29,579/59,158 amounts instead concern the 2027 option using 2025 RFR |
 
-How the limits work, as the page states it: a business keeps the micro regime for year N if its turnover excluding VAT of year N-1 or of year N-2 stayed within the limit, so the regime is lost only when the limit is exceeded two years running. A new business is under the micro regime in its year of creation and the next year, and may opt for a real regime if it does not want the micro regime. The flat income tax payment must be requested from URSSAF before 30 September of the year before the one it is to apply to; a request made before 30 September 2026 applies to income received from 1 January 2027. A new business may instead request it before the last day of the third month after the month of creation. Above the reference-income limit for the household's situation, the option is closed.
+How the limits work, as the page states it: a business keeps the micro regime for year N if its turnover excluding VAT of year N-1 or of year N-2 stayed within the limit, so the regime is lost only when the limit is exceeded two years running. A new business is under the micro regime in its year of creation and the next year, and may opt for a real regime if it does not want the micro regime. The flat income tax payment must be requested from URSSAF before 30 September of the year before the one it is to apply to; a request made before 30 September 2026 applies to income received from 1 January 2027. A new business may instead request it before the last day of the third month after the month of creation. Above the reference-income limit for the household's situation, the option is closed. Use the option year and N-2 household shares explicitly: the published DGFiP example for 2.5 shares uses a strict rounded threshold below EUR 73,288 for 2026 (below EUR 73,948 for 2027), while its general rule says the limit must not be exceeded. Retain that published selector/rounding distinction rather than applying the 2027 amount to 2026.
 
 Which way to choose:
 
@@ -138,7 +138,7 @@ A company subject to corporation tax (IS) pays tax on its profit at the company 
 | Reduced rate condition 1: turnover of the period at most | EUR 10,000,000 | "Chiffre d'affaires inférieur ou égal à 10 000 000 €" |
 | Reduced rate condition 2: capital fully paid up and held at least this share by individuals | 75% | "détenu pour au moins 75 % par des personnes physiques" |
 
-Both conditions must be met (AND). If either fails, the whole profit is at the standard rate.
+Both conditions must be met (AND). Use turnover restated to 12 months where needed and the EUR 42,500 reduced-rate slice per 12-month period, with the applicable period adjustment. The capital must be held continuously at least75% by individuals, or by an intermediary company itself meeting the same CGI219I-b conditions and at least75% individually held. Apply the specified fund exclusions only without the statutory dependence link; use `fr-corporate-tax` for group turnover and the complete eligibility method. If the ordinary reduced-rate conditions fail, use the ordinary standard rate rather than assuming this slice is available.
 
 **Tax on a dividend paid to a resident individual**
 
@@ -155,10 +155,10 @@ A household that takes the flat tax gives up the 40% allowance on dividends and 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F2329 |
-| Investment income received from 1 January 2026, general case | 18.6% | "Revenus de 2026 Le taux des prélèvements sociaux dépend des revenus concernés : Cas général Tableau - Taux des contributions sociales applicables Prélèvements sociaux Taux Contribution sociale général" |
-| Investment income received in 2025, declared in 2026 | 17.2% | "Revenus de 2025 Tableau - Taux des contributions sociales applicables Prélèvements sociaux Taux Contribution sociale généralisée (CSG) 9,2 % Contribution au remboursement de la dette sociale (CRDS) 0," |
+| Produits de placement received/levied from 1 January 2026, general case | 18.6% | "Revenus de 2026 Le taux des prélèvements sociaux dépend des revenus concernés : Cas général Tableau - Taux des contributions sociales applicables Prélèvements sociaux Taux Contribution sociale général" |
+| Produits de placement received/levied in 2025 only; not the general revenus du patrimoine declared in 2026 | 17.2% | "Revenus de 2025 Tableau - Taux des contributions sociales applicables Prélèvements sociaux Taux Contribution sociale généralisée (CSG) 9,2 % Contribution au remboursement de la dette sociale (CRDS) 0," |
 
-The page keeps the lower total for some products in 2026, including life insurance: always name the income before using either rate. Do not add the income tax part and the levies into one figure; the page does not print one.
+The page keeps the lower total for some products in 2026, including life insurance: always name the income before using either rate. Do not add the income tax part and the levies into one figure; the page does not print one. Distinguish the collection populations before selecting the year: the enacted increase also applies to general revenus du patrimoine of2025 declared in2026 (18.6%), whereas produits de placement received/levied in2025 retain17.2%. Keep the actual lower-rate product exceptions, including property-income/property-gain and assurance-vie branches, and use `fr-capital-gains` for the income-specific method. The 2026 brochure news page states the different commencement clocks.
 
 How to compare: compute, for the same profit, (a) income tax and self-employed contributions on the whole profit as an entrepreneur individuel, and (b) corporation tax on the profit kept, plus income tax and contributions on the pay drawn, plus the flat tax and levies on any dividend. The live text suggested a profit level above which a company "should be considered"; no official page prints such a level, so it is gone. The answer depends on how much is drawn, on the household's bands, and on whether a dividend to this manager also bears social contributions, which is a question for `fr-social-contributions` before any figure is given.
 
@@ -169,13 +169,13 @@ How to compare: compute, for the same profit, (a) income tax and self-employed c
 | Deduction | Legislation | Notes |
 | --- | --- | --- |
 | Self-employed social contributions | CGI art. 154 bis | Compulsory contributions are a cost of the business under the régime réel. Under the micro regime they are covered by the flat allowance and are not deducted again. |
-| Deductible CSG on investment and property income | CGI art. 154 quinquies | Pre-printed on the 2042 and taken automatically; correct it at line 6DE if wrong. Only on income taxed at the progressive scale; nothing is deductible on income taxed under the flat tax. The deductible rate is in the table below. |
-| Vehicle costs (barème kilométrique) | CGI art. 39 and art. 93 | Use the official mileage scale for business journeys, or actual costs. The live text printed a deduction for a sample car with no source; it is removed. Read the scale on its official page before computing. |
-| Business premises at home | CGI art. 39 and art. 93 | Under the régime réel only: the business share of rent, energy and insurance for space used for the activity, by a reasonable key such as floor area. Keep the working. |
+| Deductible CSG on investment and property income | CGI art. 154 quinquies | The known deductible CSG on patrimony income is preprinted and corrected in 6DE if wrong. CSG relating to investment income declared in 2BH/2DF is calculated automatically and is NOT to be added manually to 6DE. Apply the actual scale/relief and payment-year conditions; nothing is deductible on ordinary PFU income. The deductible rate is in the table below. |
+| Vehicle costs (barème kilométrique) | CGI art. 39 and art. 93 | For BNC, use actual justified costs or the eligible annual mileage election under BOI-BNC-BASE-40-60-40-20, with its vehicle, full-year, evidence and no-double-cost gates. Do not transfer that BNC mileage election automatically to every BIC business. The dated six-CV historical population is recomputed in Section 12. |
+| Business premises at home | CGI art. 39 and art. 93 | Under the real regime, deduct only actual qualifying professional costs. For mixed rented BNC premises, BOI-BNC-BASE-40-60-30 §70 expressly accepts the rent fraction based on professional floor area/total area, supported by the working. Do not extend that rent key automatically to every utility or insurance bill: allocate each actual mixed cost on its professional facts. No automatic notional rent for an owner-occupied home. |
 | Training linked to the current activity | CGI art. 39 and art. 93 | A cost of the business under the régime réel. The tax credit for training of business managers has ended: see the note below. |
-| Professional subscriptions | CGI art. 93 | Professional orders, unions and professional associations. |
-| Meals taken alone because of the work | CGI art. 93 | Only the excess over the cost of a meal at home is deductible, within a limit. The live text printed 2025 amounts; the 2026 amounts were not found on an allowed page in this pass, so they are removed. |
-| Interest on business loans | CGI art. 39 | Interest on borrowing for the business. |
+| Professional subscriptions | CGI art. 93 | Professional order/union dues are expressly deductible under BOI-BNC-BASE-40-60-60 §200; do not infer that every association or general-interest subscription qualifies. Professional documentation has its own actual-use rule. |
+| Meals taken alone because of the work | CGI art. 93 | For ordinary BNC work-only additional meals in 2026, establish normal professional necessity/distance and actual receipts. Deduct only the extra over the EUR 5.50 home-meal value. Without proved exceptional circumstances, the paid cost is capped at EUR 21.40, so the ordinary maximum is EUR 15.90; a EUR 25 meal with no justified exceptional need gives 21.40 − 5.50 = 15.90. No receipts means no flat deduction. These are BNC rules, not a transplant of employee meal deductions. |
+| Interest on business loans | CGI art. 39 | Qualifying interest on borrowing for the actual profession is deductible under the applicable regime; repaying the borrowed capital itself is not. BNC interest relating to asset acquisition can instead form part of the asset cost under its specific election; do not infer a universal immediate deduction. |
 | Business insurance | CGI art. 39 and art. 93 | Professional liability, premises and similar policies. Optional Madelin-type cover is deductible only within its own limits. |
 | Gifts to charities | CGI art. 200 | A reduction of tax, not a deduction from income: see Section 9. |
 
@@ -241,7 +241,7 @@ What the same page says about each kind of loss:
 - **Non-professional non-commercial activities:** set only against profits of the same kind, in the same year and the next six years.
 - **Global deficit:** a global deficit not yet used is reported on the 2042 at lines 6FA to 6FL, which carry the years 2019 to 2024 for income of 2025.
 
-A loss from an activity carried on professionally is not subject to these restrictions. For professional furnished lets the brochure says the deficit is set against global income with no limit (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf). For professional BIC and BNC activities the pages read do not state the rule in one sentence; that it reaches the other income of the household under CGI art. 156 I is the general rule and should be confirmed by the accountant.
+An eligible professional BIC/BNC loss has the ordinary global-income route under CGI 156(I), rather than the non-professional same-category restriction. Classify the actual activity and deductible loss first; do not turn the label “professional” into an exemption from every statutory restriction. An unused GLOBAL deficit has its own next-six-years route. Professional furnished letting uses its own actual participation/status gates and the supplied rental method; its ordinary deficit is set against global income without an amount cap (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf). The property-loss 10,700 route also requires the continuing-letting condition through 31 December of the third following year, with actual exceptions/recapture; `fr-rental-income` supplies it.
 
 Strategy: before advising someone with a salary to start an activity that will make early losses, establish whether it is carried on professionally. If it is not, the losses wait for future profits of the same kind and do not reduce tax on the salary.
 
@@ -257,7 +257,7 @@ Strategy: before advising someone with a salary to start an activity that will m
 | Flat income tax payment | The request deadline is the one in Section 2. Missing it delays the option by a year. |
 | Exceptional income | A one-off income can sometimes be taxed under the "système du quotient" for exceptional income. The live text gave a fraction; that rule is in `fr-personal-income-tax`, which covers the quotient for exceptional income, and is not repeated here. |
 
-The live text also said that marrying or entering a PACS before 31 December gives joint taxation for the whole year. The year of marriage has its own rules and options; they were not read on an allowed page in this pass, so the claim is removed. Check the 2026 brochure chapter on the household situation before advising on it.
+For the year of marriage or PACS, the 2026 brochure states one joint declaration for the whole year, with an option for separate declarations in that event year. This is not an automatic tax saving: apply the actual household facts and compare the permitted choices. Spouses must instead declare separately when separated in property and not living under the same roof, authorised to live separately during separation/divorce proceedings, one has abandoned the home and each has own income, or divorced in the year. The brochure also gives the actual PACS separate-property/equivalent-regime, separate-home, abandonment/own-income and dissolution grounds. Use `fr-personal-income-tax` for the complete household method; its2026-return brochure concerns events/income of2025, not a claim that the2027 return form is published.
 
 ## Section 7: VAT optimisation (TVA)
 
@@ -289,13 +289,13 @@ The page (checked 1 January 2026) says the thresholds for 2026 are unchanged and
 | --- | --- |
 | Stay in the franchise | No VAT is charged and no VAT on costs is recovered. It helps with private customers, who cannot recover VAT. It does not help with business customers, who recover the VAT anyway. |
 | Opt out of the franchise | A business in the franchise that wants to recover VAT on its purchases must opt for the real VAT regime (F21746). This makes sense in a year of heavy investment. The option is valid for two calendar years and renews tacitly; to leave it, the business must denounce it at the end of a two-year period, and if it has received a refund of a VAT credit the option is compulsorily renewed for two years. |
-| Simplified regime | Annual return with instalments, within the band above. The instalment rules and the filing calendar are in `france-vat-return`. The live text printed older band limits; the table above replaces them. |
+| Simplified regime | Turnover alone does not establish eligibility. CGI 287(3 bis) requires monthly filing when prior-year VAT is strictly ABOVE EUR 15,000. Exactly EUR 15,000 does not trigger that provision alone; do not infer automatic RSI eligibility at equality, because the other statutory regime, transaction and option conditions still apply. The administrative summary’s “below EUR 15,000” wording is retained as countertext and does not itself settle equality. Apply the full turnover, taxable-activity, exclusion and startup/ongoing rules in `france-vat-return`, including its calendar-year CA12 versus CA12E distinction. Annual return and instalments are separate from eligibility. |
 | VAT on receipts or on invoices | When VAT becomes due for services, and the option to pay it on invoices, are covered in `france-vat-return`. |
-| Reverse charge on EU business services | No French VAT is charged on a business service to an EU business customer; the customer self-accounts. The recapitulative statements and lines are in `france-vat-return`. |
+| Reverse charge on EU business services | For an ordinary service actually within the general B2B place rule, supplied to a qualifying EU taxable customer, apply the customer-place/reverse-charge method. Do not transfer it to a service with its own place-of-supply exception or to an establishment that changes the liability. The full scope and DES conditions are in `france-vat-return`. |
 
 ## Section 8: Social security optimisation
 
-From the 2025 income declared in 2026, a self-employed person's contributions and CSG-CRDS are worked out on a single base: gross income less costs, reduced by a flat allowance (https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html).
+From the 2025 income declared in 2026, the ordinary non-micro self-employed base starts from receipts/products less the qualifying business costs BEFORE deducting personal social contributions, deductible CSG and the listed tax exemptions/154 bis payments. The ordinary contributions and CSG-CRDS share that starting method, subject to their own statutory exceptions; the 26% allowance has a floor and ceiling, so it is not universally a simple 74% of tax profit. The social-contributions Guide supplies the exact components and exceptions (https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html).
 
 **Self-employed contribution base after the reform**
 
@@ -303,7 +303,7 @@ From the 2025 income declared in 2026, a self-employed person's contributions an
 | --- | --- | --- |
 | Source | all figures below | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html |
 | Flat allowance on the single base | 26% | "le revenu brut abattu de 26 %" |
-| Full health rate for all self-employed workers | 8.5% | "Le nouveau taux « plein » est fixé à 8,5 % pour l’ensemble des travailleurs indépendants" |
+| Ordinary full health rate on the fraction up to three PASS, after the applicable lower-base progressive reduction | 8.5% | CSS D621-1/D621-2: the fraction above three PASS instead bears 6.5%; this is not a flat 8.5% on every worker’s whole base |
 
 **Contributions of craftsmen, traders and unregulated liberal professions, 2026**
 
@@ -330,7 +330,7 @@ The health and family scales are progressive; their bands are in `fr-social-cont
 | Micro-social or real base | Micro-social contributions are a share of turnover (Section 2). Under the régime réel they follow profit after costs. With high costs, compare both. |
 | Minimum contributions | Some contributions have a yearly minimum that is due even in a loss year; the basic pension minimum is in the table above. |
 | Collaborating spouse | A spouse who works in the business without pay can be covered as a conjoint collaborateur; the cost and the options are in `fr-social-contributions`. |
-| Retirement plan payments | Madelin-type and retirement plan payments deducted from the business profit reduce the profit that income tax is charged on. Whether they also reduce the social contribution base after the 2026 reform is not stated on the pages read; confirm before promising a social saving. |
+| Retirement plan payments | Madelin-type and retirement plan payments deducted from the business profit reduce the profit that income tax is charged on. They must not be assumed to reduce the ordinary reformed social base: the actual 2026 declaration notice expressly adds back the tax-exempt/deducted 154 bis Madelin and PER amounts before the social allowance. Use the exact statutory base and exceptions in `fr-social-contributions`; do not promise the old illustrative 10% social saving. |
 
 ## Section 9: Investment and retirement
 
@@ -352,9 +352,9 @@ How the ceiling works, as the brochure states it:
 
 - The ceiling for payments deducted from global income is the higher of the share of the previous year's net earned income (capped at eight annual social security ceilings) and the floor, reduced by the previous year's payments deducted from business profit (net of the 15 % part in the table) and by employer payments into company retirement plans. A person with no earned income still has the floor.
 - Spouses and PACS partners taxed together may pool their ceilings (box 6QR).
-- For income of 2025 the unused ceiling carries forward for the next three years. The 2026 finance law, under the heading for income of 2026 and later, extends that period from three to five years, and removes the tax advantages on retirement plan payments for people aged 70 and over (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf). The live text gave different 2026 ceilings, an overall self-employed ceiling and a computed tax saving that no page prints; they are removed.
+- For income of 2025 the unused ceiling carries forward for the next three years. Current CGI 163 quatervicies has a five-year rule, and the Ministry explains its use from payments made in 2026 while expressly retaining a three-year limit for the unused ceilings of 2024 and 2025. Do not relabel all legacy vintages as five-year capacity. Current CGI 163 quinvicies removes the listed tax advantages for payments made by the owner into a modern PER or French PEPP sub-account FROM the seventieth birthday, effective 1 January 2026; do not extend that exact contract/owner gate to every legacy retirement product (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf). The earlier global-income ceilings were corrected. The separate business-profit formula below is derived from CGI154bis; it is not the global-income allowance or an automatic tax saving.
 - Payments deducted from global income cannot create or increase a global deficit.
-- The self-employed business-profit deduction is reported net of the part matching the share in the table applied to profit between one and eight ceilings. The overall self-employed limit is not printed as a single amount on the pages read, so this skill does not state one.
+- For the separate CGI154bis business-profit retirement route, first establish a qualifying BIC/BNC owner, covered contract/payment and benefit under I/II1°, absence of the non-deduction election, and the applicable modern-PER/PEPP age gate above. With B the qualifying taxable profit and P the annual social-security ceiling, the gross limit is max(10% × min(B,8P) + 15% × max(0,min(B,8P) − P), 10% × P). Include the specified exempt business profits and exclude long-term professional gains/losses as the article directs. Reduce this limit by the enterprise-plan sums exempt under CGI81(18°a/a bis), and deduct only actual eligible payments within the resulting capacity. Use the2026 PASS of EUR48,060 in Section8 for this2026 business calculation. Do not deduct the same payment again from global income: for the global-income capacity reduction, the business deduction is taken net of the15% component, as the brochure states. A derived formula is not a universal precomputed allowance; the chosen EUR15,750 example remains a chosen payment, not a ceiling.
 
 When the deduction pays: the deduction saves tax at the household's marginal band. At a 0% or low band, the option not to deduct, which leaves the capital taxed more lightly at exit, may be better. Exit taxation depends on whether the payments were deducted and on the form of exit; confirm it with `fr-capital-gains` before advising.
 
@@ -383,13 +383,13 @@ Payments into life insurance are not deductible from income. Which gains the all
 | Limit in the first year the household claims the credit for the direct employment of an employee at home | EUR 15,000 | "Le plafond de 12 000 € est porté à 15 000 € pour la première" |
 | Ceiling once the increases are added, general case | EUR 15,000 | "sans pouvoir excéder 15 000 € (ou 18 000 €)" |
 | Ceiling once the increases are added, first year | EUR 18,000 | same quote |
-| Limit where a household member holds a disability card | EUR 20,000 | "Les dépenses seront retenues dans la limite de 20 000 €." |
+| Limit for the stated invalidity population, without extra increase | EUR 20,000 | The actual brochure names carte d’invalidité/CMI “invalidité”, third-category invalidity pension, or disabled-child special-education supplement; do not substitute any generic disability card |
 | Gifts to organisations of general interest, CGI art. 200: reduction | 66% | "de 66 % dans la limite de 20 % du revenu" |
 | Ceiling of those gifts, as a share of taxable income | 20% | same quote |
 | Gifts to organisations giving free meals, care or housing to people in difficulty: reduction | 75% | "réduction d’impôt égale à 75 % des verse" |
 | Gifts to those organisations made from 14 October to 31 December 2025, limit including earlier 2025 gifts | EUR 2,000 | "au 31.12.2025, dans la limite de 2 000 € (y compris les sommes" |
 
-The first-year limit applies only to direct employment of an employee; it does not apply to spending through a service provider.
+The first-year limit applies only to direct employment of an employee; it does not apply to spending through a service provider. The EUR 1,500 child increase is EUR 750 for alternating custody. Net any aid off the actual spending and apply each service subcap before the household cap, then the 50% credit.
 
 The help-at-home relief is a tax credit (crédit d'impôt), not a reduction as the live text called it. Gifts at the higher rate above their limit fall into the general rate and its ceiling. For gifts to those organisations made from 1 January to 13 October 2025 the page prints a lower maximum than the limit in the table above (line 7UD). The 2026 brochure news page says the limit for the meals and care organisations was raised for gifts made from 14 October 2025 (finance law for 2026, art. 28), so it is the limit in force for gifts made during 2026 (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf). The live text gave a lower limit.
 
@@ -415,18 +415,18 @@ The cap (CGI art. 200-0 A) covers most reductions and credits that reward a spen
 | --- | --- | --- |
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
 | Deliberate breach (manquement délibéré), CGI art. 1729 | 40% | "la majoration de 40 % pour manquement délibéré prévue par l’article 1729 du CGI" |
-| Abuse of law where the taxpayer is the main beneficiary, or fraudulent manoeuvres | 80% | "80 % sur les droits résultant des rappels (1729)" |
+| CGI1729(b) L64 abuse: principal initiative OR principal beneficiary; CGI1729(c) fraudulent manoeuvres | 80% | "80 % en cas d'abus de droit"; "initiative principale ... ou ... principal bénéficiaire" |
 
-The 80% row on the BOFiP page reads "Rappels avec abus de droit (le service a établi que le contribuable est le bénéficiaire principal de l'abus de droit) ou manœuvres frauduleuses". The live text printed a separate surcharge for the "mini abuse of law" (LPF art. L64 A); no allowed page read in this pass prints one, so it is removed. Treat any arrangement whose main purpose is tax as a referral (see "When to refuse or refer").
+The 80% row on the BOFiP page reads "Rappels avec abus de droit (le service a établi que le contribuable est le bénéficiaire principal de l'abus de droit) ou manœuvres frauduleuses". The live text printed a separate surcharge for the "mini abuse of law" (LPF art. L64 A); no allowed page read in this pass prints one, so it is removed. Treat any arrangement whose main purpose is tax as a referral (see "When to refuse or refer"). That BOFiP comparison wording does not replace the complete CGI1729(b) test: the80% L64-abuse surcharge falls to40% when neither principal initiative nor principal-beneficiary status is established. Principal initiative alone can therefore retain80%. This is separate from1729(c) fraudulent manoeuvres and does not create an automatic L64A penalty; see `fr-tax-audit`.
 
 **Red lines**
 
 | Risk | Detail |
 | --- | --- |
-| Abuse of law (LPF art. L64) | An arrangement set aside under the abuse of law procedure bears the penalty in the table above where the tax authority shows the taxpayer is its main beneficiary. |
+| Abuse of law (LPF art. L64) | An arrangement set aside under the abuse of law procedure bears the penalty in the table above at80% where principal initiative OR principal-beneficiary status is established, reduced to40% when neither is established under CGI1729(b). |
 | Overall cap on tax advantages | Advantages above the cap in Section 9 are added back to the tax. Planning that stacks reliefs past the cap gains nothing. |
 | Non-professional activities | Losses from non-professional activities only offset income of the same kind (Section 5). |
-| Retirement plan payments from age 70 | From income of 2026 the tax advantages on these payments are removed for people aged 70 and over (Section 9). |
+| Covered retirement-plan payments from the seventieth birthday | From 1 January 2026 apply the modern-PER/French-PEPP owner/payment gate in Section 9, rather than a universal rule for every old retirement contract. |
 | Micro regime with high costs | Choosing the micro regime when real costs exceed the flat allowance means paying tax on profit that does not exist. Always compare. |
 | VAT franchise with business customers | Staying in the franchise gives no price advantage with business customers and blocks recovery of VAT on costs. |
 | Backdated invoices or payments | Moving income or costs between years works only when the payment date really moves. Changing documents to move a year is fraud. |
@@ -453,7 +453,7 @@ The 2026 return for income of 2025 had these online deadlines: Thursday 21 May (
 
 ## Section 12: Worked method examples
 
-The live text gave six cash examples with tax savings worked out by hand. They used a stale scale and figures no page prints, so they are removed. The examples below set out the method. The assistant should compute the client's own figures from the tables, show every step, and label the result as an estimate.
+The three method examples below remain. The six earlier numerical populations are also retained after them with their original inputs, corrected arithmetic and explicit eligibility/year assumptions. A result computed from sourced parameters is a calculation, not a figure that an official page must itself print. None is a complete tax or social-contribution assessment.
 
 ### Example 1: Micro-BNC or régime réel (hypothetical client)
 
@@ -466,6 +466,58 @@ A self-employed person asks how much to pay into a retirement plan before 31 Dec
 ### Example 3: Help at home (hypothetical client)
 
 A household employing a cleaner directly at home. Step 1: take eligible spending net of any aid. Step 2: cap it at the limit in Section 9 for the household's situation; the first-year limit applies only because the employee is employed directly. Step 3: apply the credit rate. Step 4: add the advantage to the client's other capped advantages and test the overall cap.
+
+### The six historical numerical populations, recomputed
+
+1. **PER, BNC EUR 100,000 and a 41% marginal slice.** Keep the former EUR 15,750 as a CHOSEN eligible payment, not as the old unverified ceiling formula. Assume its actual available business/global deduction ceiling is independently established, the owner is below the applicable age gate, no double deduction, and all EUR 15,750 reduces income otherwise taxed at 41%. The income-tax effect is 15,750 × 41% = EUR 6,457.50 before assessment rounding, approximately the old EUR 6,458. The old EUR 1,575 social saving is not supported: the reformed ordinary social base adds back the covered 154 bis payments. A EUR 100,000 BNC label alone does not establish either the ceiling or this marginal-band assumption.
+
+2. **Micro-BNC turnover EUR 60,000, actual deductible costs EUR 25,000.** For a single adult with no other income or relief, treating these as income of 2025 declared in 2026 and independently eligible for each compared regime: micro taxable profit is 60,000 × (1 − 34%) = EUR 39,600; real profit is 60,000 − 25,000 = EUR 35,000. The current scale gives EUR 4,983.99 versus EUR 3,603.99 before whole-euro assessment rounding, or EUR 4,984 versus EUR 3,604, an income-tax difference of EUR 1,380. The old EUR 5,510/EUR 4,130 estimates are superseded. This excludes social contributions, the costs’ tax/social timing and any opt-out eligibility or administration cost.
+
+```oa-check
+name: France optimization restored comparison 1
+inputs:
+  turnover: 60000
+  allowance: 0.34
+  costs: 25000
+  zero_band: 11600
+  band2_top: 29579
+  band2_rate: 0.11
+  band3_rate: 0.3
+steps:
+  - micro_profit: turnover*(1-allowance)
+  - real_profit: turnover-costs
+  - micro_tax: (band2_top-zero_band)*band2_rate+(micro_profit-band2_top)*band3_rate
+  - real_tax: (band2_top-zero_band)*band2_rate+(real_profit-band2_top)*band3_rate
+  - difference: micro_tax-real_tax
+expected:
+  micro_profit: 39600
+  real_profit: 35000
+  micro_tax: 4983.99
+  real_tax: 3603.99
+  difference: 1380
+```
+
+3. **EUR 80,000 taxable household income, single versus married with two dependent children.** These are two separate fictional household populations for income of 2025, not a tax saving that a single person can elect. One-share tax is EUR 17,103.99. For the eligible joint household, three-share tax before the quotient cap is EUR 4,972; the two-share baseline is EUR 10,207.98. Two additional half-shares permit at most 2 × 1,807 = EUR 3,614 of advantage, so capped tax is EUR 6,593.98, rounded EUR 6,594. The difference from rounded single tax EUR 17,104 is EUR 10,510. The old EUR 15,673/EUR 7,236/EUR 8,437 figures are superseded; other household gates, special caps, reductions and credits are excluded.
+
+4. **EUR 6,000 eligible help-at-home spending.** Assume direct employment, no aid, no competing capped advantages and spending entirely on eligible cleaning within the applicable household ceiling. The refundable credit is 6,000 × 50% = EUR 3,000. The original gardening/cleaning label did not establish allocation: if any amount is gardening, first apply its own EUR 5,000 service subcap. Do not assume EUR 6,000 entirely on gardening qualifies.
+
+```oa-check
+name: France optimization restored comparison 2
+inputs:
+  eligible_cleaning: 6000
+  household_cap: 12000
+  credit_rate: 0.5
+steps:
+  - capped_spending: min(eligible_cleaning,household_cap)
+  - credit: capped_spending*credit_rate
+expected:
+  capped_spending: 6000
+  credit: 3000
+```
+
+5. **EUR 80,000 eligible CSG base, deduction at a 30% marginal slice.** Assume the precise income is eligible for the 6.8-point deduction, the CSG was paid in the deductible year, no excluded PFU or proportionate-relief adjustment, and the full deduction stays in the 30% slice. Then 80,000 × 6.8% = EUR 5,440 deducted, and 5,440 × 30% = EUR 1,632 income-tax effect. This is not an extra credit or a deduction of 6.8% of the CSG bill; the full CSG/CRDS levy is separate.
+
+6. **BNC, one owned six-CV non-electric car entered on the professional asset register, 15,000 actual eligible business kilometres in 2025.** The official 2026 schedule for income of 2025 gives (d × 0.374) + 1,457 in the 5,001–20,000-km band. The computed amount is 15,000 × 0.374 + 1,457 = EUR 7,067; if all of that deduction reduces income in a 30% marginal slice, the illustrative income-tax effect is EUR 2,120.10. The old EUR 5,500/EUR 1,650 estimates are superseded. Assume the actual full-year BNC mileage election and required records are established; apply its exclusivity to all relevant vehicles/costs, with no duplicate actual-cost deduction; this dated 2025-income schedule is not asserted to be a future 2027-return schedule. Source: https://www.impots.gouv.fr/sites/default/files/media/3_Documentation/depliants/nid_4002_gp_120.pdf .
 
 ## The method, step by step
 
@@ -513,7 +565,7 @@ A household employing a cleaner directly at home. Step 1: take eligible spending
 - Self-employed contribution rates 2026: https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/taux-cotisations-ac-plnr.html
 - Small equipment tolerance: https://bofip.impots.gouv.fr/bofip/2109-PGP.html
 - Declining balance coefficients: https://bofip.impots.gouv.fr/bofip/4699-PGP.html
-- Penalties: https://bofip.impots.gouv.fr/bofip/4911-PGP.html
+- Penalties: https://bofip.impots.gouv.fr/bofip/4911-PGP.html Selected CGI1729(b), CGI219I-b, CGI154bisI/II, household-brochure and capital-levy commencement scopes reread31October2026; exact original-language quotations and source URLs are in the ledger. CGI154bis: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047288764/2026-05-08 .
 - Training credit for business managers ended: https://entreprendre.service-public.gouv.fr/vosdroits/F23460
 - Return deadlines 2026: https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026
 - Brochure pratique 2026, news: https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/nouveautes.pdf

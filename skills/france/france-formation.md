@@ -1,10 +1,10 @@
 ---
 name: france-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in France. Trigger on phrases like "set up a company in France", "SAS formation", "SARL création", "Guichet unique INPI", "French company formation", "register a business France", "société par actions simplifiée", "société à responsabilité limitée", "Kbis", "RCS registration", "annonce légale", or any question about starting a business entity in France. Covers entity types (SAS, SARL, EURL, SASU, SA, auto-entrepreneur), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on French company formation.
-version: 1.0
+version: 1.3
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-09-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Forming a business in France: micro-entrepreneur, EI, SARL, SAS and SA
 
-How to set a business up in France: which legal form to choose, what the founder is liable for, the manager's social status, the steps from the articles to the register, the capital that must be paid in, the official fees, and the duties that begin the day the business exists. Figures are for tax year 2026. Most of the official pages used here were checked by the administration during 2026. Five carry an earlier check date, and their figures are printed exactly as those pages print them: the share capital deposit page (checked 20 October 2025), the company creation overview (12 September 2025), the annual accounts filing page (11 June 2025), the statutory auditor page (10 April 2025) and the equity page (10 April 2024). Every amount and percentage sits in a table naming the official page it was read on. Where no official page prints a number, this Guide says so and gives none.
+How to set a business up in France: which legal form to choose, what the founder is liable for, the manager's social status, the steps from the articles to the register, the capital that must be paid in, the official fees, and the duties that begin the day the business exists. Figures are for tax year 2026. Most of the official pages used here were checked by the administration during 2026. The figure ledger records each actually read source’s displayed date and representation. Older check dates are not treated as proof of a new 2026 enactment; current selected statutes resolve the identified SASU, reserve and tariff points, with contrary administrative wording preserved. The rates and fee tables name their official pages. Activity-specific EI/micro registration costs are also sourced in Ask the client first and the figure ledger. Where no official page prints a number, this Guide says so and gives none.
 
 ## Section 1: Quick Reference
 
@@ -28,7 +28,7 @@ How to set a business up in France: which legal form to choose, what the founder
 | Currency | Euro |
 | Where every formality is filed | Guichet des formalités des entreprises, the one-stop desk run by the INPI, at https://www.formalites.entreprises.gouv.fr |
 | Registers the filing feeds | Registre national des entreprises (RNE) and, for a commercial company, the Registre du commerce et des sociétés (RCS) |
-| Key legislation | Code de commerce, Code civil, Code général des impôts. Legifrance cannot be read by this Guide's fetcher, so every article named below is cited from the government page that names it |
+| Key legislation | Code de commerce, Code civil, Code général des impôts. Selected statute bodies and official government pages were read in the exact representations recorded in the figure ledger; source acquisition is not a claim that every linked law was read |
 | Typical formation time | No official page states a formation time. Section 10 gives the legacy estimate and the two delays the pages do fix |
 | Corporate tax | See the corporation tax table in Section 6 |
 | Formation fees | See the tables in Section 5 |
@@ -49,8 +49,8 @@ The forms below are the ones the state's own business portal describes for a fou
 | Partners may be companies | Not applicable | Not applicable | Yes | Yes | Yes |
 | Articles and share capital | None | None | Required | Required | Required |
 | Who may be the legal representative | The entrepreneur | The entrepreneur | The gérant must be an individual, not a company | The président may be an individual or a company | Individuals, plus a company as a board member represented by a permanent representative |
-| Profit taxed as | Income tax under the micro regime, unless a real regime is chosen | Income tax, with an option to be treated as an EURL and taxed as a company | Corporation tax by default, with a time limited option for income tax | Corporation tax by default, with the same time limited option | Corporation tax by default, with the same time limited option |
-| Manager's social status | Self-employed | Self-employed | Majority gérant: self-employed (TNS). Otherwise treated as an employee | Président: treated as an employee, general scheme, without unemployment insurance | Président and directeur général: treated as an employee |
+| Profit taxed as | Income tax under the eligible micro regime, unless a real regime is chosen | Income tax, with an option to be treated as an EURL and taxed as a company | SARL: IS by default, with the eligible young-company election or separate family-SARL route. EURL: an individual sole owner has IR by default with an IS option; a corporate sole owner makes IS compulsory | IS by default, with the eligible young-company IR election | IS by default, with the eligible young-company IR election |
+| Manager's social status | Self-employed | Self-employed | Majority mandate: TNS; general-scheme mandate if the managers collectively do not exceed half the capital after the statutory spouse/PACS/unemancipated-minor full-ownership/usufruct attribution. Separate independent technical activity | Président: treated as an employee, general scheme, without unemployment insurance | Président and directeur général: treated as an employee |
 | Listed on a regulated market | No | No | No | No. The page says a SAS cannot be listed | Yes |
 
 Sources for this table: https://entreprendre.service-public.fr/vosdroits/F37398 for the micro-entrepreneur, https://entreprendre.service-public.fr/vosdroits/F37396 for the individual business, https://entreprendre.service-public.fr/vosdroits/F37411 for the SARL and EURL, https://entreprendre.service-public.fr/vosdroits/F37366 for the SAS and SASU, and https://entreprendre.service-public.fr/vosdroits/F37402 for the SA.
@@ -66,24 +66,24 @@ Sources for this table: https://entreprendre.service-public.fr/vosdroits/F37398 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23267 |
-| Selling goods, food to take away or eat in, and supplying accommodation | EUR 203,100 | Limit for income received in 2026, tested on turnover of 2025 or 2024 |
+| Selling goods, food to take away or eat in, and qualifying accommodation EXCLUDING direct/indirect furnished residential letting | EUR 203,100 | Limit for income received in 2026, tested on turnover of 2025 or 2024 |
 | Services and the liberal professions | EUR 83,600 | Limit for income received in 2026, tested on turnover of 2025 or 2024 |
 | Selling goods: the limit that governed income received in 2025 | EUR 188,700 | Use this one for the 2025 income being declared in 2026 |
 | Services: the limit that governed income received in 2025 | EUR 77,700 | Use this one for the 2025 income being declared in 2026 |
 
-**A business created this year is not tested against those limits yet.** The same page states the rule for a new business: the micro regime applies automatically in the year of creation (N) and in the following year (N+1), and only from year N+2 does the turnover test start, looking at years N and N-1. Where the activity starts during the year, the first year's limit is cut in proportion to the number of days the business existed, unless the business is seasonal. A founder can still opt out of the micro regime for a real regime from the start.
+**A business created this year is not tested against those limits yet.** The same page states the rule for a new business: the micro regime applies automatically in the year of creation (N) and in the following year (N+1), and only from year N+2 does the turnover test start. Applying the page’s general prior-two-calendar-years rule at that point means the creation year N and following year N+1. The page has an inconsistent sentence saying N and N-1, but its actual 2028 example tests 2026 and 2027; the selected method follows the general rule and that dated example, not the inconsistent index label. Where the activity starts during the year, the first year's limit is cut in proportion to the number of days the business existed, unless the business is seasonal. A founder can still opt out of the micro regime for a real regime from the start.
 
-**Micro-entrepreneur social contributions**, charged on turnover and not on profit. These are the full rates. A founder with the Acre start-up relief pays a reduced rate in the first period, and the reduced rates are on the same page.
+**Micro-entrepreneur social contributions**, charged on turnover and not on profit. These are the full rates. An eligible founder with Acre start-up relief pays the rate for the actual start date and relief period. The current social-contributions Guide supplies the pre/post-1 July 2026 rules and limits; do not treat every new business as entitled or use one undated rate.
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
-| Selling goods and supplying accommodation | 12.3% | Applied to declared turnover for 2026 |
+| Sales and accommodation in the CGI 50-0(1)(1°) category, excluding furnished residential letting | 12.3% | CSS D613-4(a) ties this rate to that exact tax category, not every accommodation activity. Ordinary furnished BIC services and eligible classified-tourism activities have their separate categories in the social-contributions/rental Guides |
 | Commercial and craft services (BIC) | 21.2% | Applied to declared turnover for 2026 |
 | Other liberal services (BNC) outside Cipav | 25.6% | Final step of the phased rise, reached on 1 January 2026 |
 | Liberal professions attached to Cipav | 23.2% | These professions did not move to the rate above |
 
-**Recommended default.** The state recommends no form. What the pages let you compare is liability, who may manage, how profit is taxed and how the manager is insured. A SAS or SASU gives the widest freedom in the articles and can admit investors. A SARL or EURL is more prescribed by the Code de commerce and its majority gérant is self-employed. A micro-entreprise or an EI has no share capital and no shares at all.
+**Recommended default.** The state recommends no form. What the pages let you compare is liability, who may manage, how profit is taxed and how the manager is insured. A SAS or SASU gives the widest freedom in the articles and can admit investors. A SARL or EURL is more prescribed by the Code de commerce and its majority gérant is self-employed. A micro-entreprise or an EI has no share capital and no shares at all. For the SARL managerial mandate, classify the managers collectively under CSSL311-3(11): attribute full-ownership/usufruct shares of each manager's spouse/PACS partner and unemancipated minor children. The general-scheme branch requires that aggregate not exceed half the capital; own shares alone are insufficient. Independent technical professional activity is a separate classification.
 
 ## Section 3: Registration Process
 
@@ -130,7 +130,7 @@ declaration of beneficial owners with the registration application. The declarat
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F32886 |
-| Holding that makes a person a beneficial owner | 25% | "une personne qui détient plus de 25 % du capital, ou plus de 25 % des droits de vote de la société". It is capital OR voting rights, and the test is "more than", not "at least" |
+| Holding that makes a person a beneficial owner | 25% | "une personne qui détient plus de 25 % du capital, ou plus de 25 % des droits de vote de la société". It is capital OR voting rights, and the test is "more than", not "at least" Other-control and fallback identification is also required: apply CMFR561-1 control by other means under Code de commerce L233-3 I-3°/4°. If no natural person is identifiable by ownership or other control and there is no stated AML/terrorist-financing suspicion, identify the actual natural legal representatives: the relevant gérants; board-SA DG; dual-board-SA sole DG or directoire president; SAS president and applicable DG. For corporate representatives in the named a/d branches, identify their natural legal representatives. No one exceeding25% does not mean no beneficial owner. |
 
 The declaration must be updated when the beneficial owners change. The pages in this Guide's allowed set do not print a deadline in days for that update, so none is given here.
 
@@ -163,7 +163,7 @@ Three separate rules apply: the minimum share capital for the form, how much of 
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F32333 |
 | SAS, SASU and SA: share of a cash contribution paid at creation | 50% | "le versement initial doit être au minimum de 50 % de la somme indiquée". The balance is due within 5 years of registration |
-| Civil company such as an SCI, SCM or SCP: lowest share capital allowed | EUR 1 | "Aucun capital social minimum n’est imposé pour les sociétés civiles". The partners fix the capital freely and the page adds that it is not recommended to stop at the floor. The deposit itself is optional for a civil company |
+| Civil company such as an SCI, SCM or SCP: freely fixed capital, with no statutory minimum printed by this source | EUR 1 is the page’s possible illustration, not a statutory floor | "Aucun capital social minimum n’est imposé pour les sociétés civiles"; partners fix it freely. The capital deposit is optional for a civil company |
 
 The capital deposit page prints the same minimum of one euro for a SARL or an EURL as it does for a SAS, and it prints the SARL initial payment as twenty per cent, so the two pages agree. The page also warns against the legal floor in terms: it says one euro is possible "bien que cela ne soit pas recommandé", because a higher capital helps with bank finance and reduces the risk of the compulsory procedure that starts when equity falls below half the share capital. No official page names a recommended amount, so this Guide names none.
 
@@ -204,9 +204,7 @@ The legal notice is a separate compulsory cost. The tariff is a flat amount, fix
 The page therefore prints two different tariffs under the same caption, "Tarifs de la publication
 d'un avis de constitution d'une SARL". The first table sits in the part of the page about the
 SARL. The second sits in the part headed "Société en nom collectif (SNC)", whose text and forms
-are about an SNC. The page disagrees with itself and this Guide does not pick a winner: for a
-SARL, confirm the tariff with the journal d'annonces légales or the online press service that
-will publish the notice before quoting a client a figure.
+are about an SNC. The caption is inconsistent, but the enacted tariff is available: article 2 of the 19 November 2025 order, effective 1 January 2026, expressly assigns SARL 148/173 euros and SNC 220/259 euros to its respective department groups. The SARL row therefore uses 148/173; the retained 220/259 figures describe the SNC comparison, not a competing SARL tariff. Source: https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000053177561 .
 
 Help with the articles is optional and is the one professional cost the state quantifies.
 
@@ -215,6 +213,8 @@ Help with the articles is optional and is the one professional cost the state qu
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F32232 |
 | Lawyer or notary drafting the articles, low end | EUR 1,000 | "Le coût de cette intervention varie entre 1 000 € et 2 500 €" |
 | Lawyer or notary drafting the articles, high end | EUR 2,500 | Same sentence |
+
+Historical budget illustration retained from the pre-refresh Guide: EUR 35.59 registration + EUR 20.34 beneficial-owner filing + EUR 238.80 SAS notice = EUR 294.73. Those are the old Guide’s inputs, not current fee quotations or a current legal minimum. Its EUR 0–100 bank charge and EUR 500–2000 professional-help figures were planning estimates, not statutory rates; the actual current official amounts and the separately stated VAT basis above control a new quote. The old EUR 284.40 Réunion/Mayotte notice illustration likewise is not the current 233-euro HT SAS tariff.
 
 A founder budgeting the legal minimum needs the registration fee, the beneficial owners declaration and the legal notice for the chosen form. Bank charges for the capital deposit account are set by the bank and are not published by the state, so no figure is given for them.
 
@@ -239,7 +239,7 @@ running.
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F23547 |
-| Exempt where turnover excluding VAT of year N-2 did not exceed | EUR 5,000 | "n'a pas dépassé 5 000 €" |
+| Small-turnover exemption from the minimum contribution, not a blanket exemption from every ordinary CFE base | EUR 5,000 | Use the reference-period turnover and the applicable annualisation/startup gates. The current business page’s broad wording is qualified by the official 2026 CET fiche’s express minimum-base scope; the CFE Guide supplies the method |
 | The lowest minimum base a commune may set, the same for every band | EUR 250 | Every band below starts at this figure |
 | Band 1: turnover of year N-2 up to | EUR 10,000 | Minimum base between the floor above and the ceiling below |
 | Band 1 ceiling | EUR 597 | |
@@ -257,7 +257,7 @@ running.
 
 | Obligation | When | Who to |
 | --- | --- | --- |
-| Approve the annual accounts in general meeting | SARL and SA: within 6 months of the year end. SAS and SASU: a period set freely by the partners in the articles, in practice 6 months, because a dividend must be paid within 9 months of the year end | The partners |
+| Approve the annual accounts in general meeting | SARL/EURL and SA: ordinary six-month approval deadline. A multi-member SAS uses the articles’ approval arrangements; do not transfer that freedom to a SASU. Under current Code de commerce L227-9, its sole associate approves within six months after year end and cannot delegate that power. If the sole associate is an individual personally acting as president, timely deposit of the duly signed annual accounts and inventory is deemed approval. The F31214 blanket SAS/SASU description is administrative countertext, not an override of the statute. Dividend-payment timing is a separate rule | The partners |
 | File the annual accounts | Within the month following approval, or within 2 months following approval where the filing is made electronically. For a SARL or an EURL the page words the same two limits as filing at the registry and filing on the one-stop desk | Greffe du tribunal de commerce, through https://www.formalites.entreprises.gouv.fr |
 | Corporation tax return, form n° 2065 | Within 3 months of the year end. If the year ends on 31 December, or if no year ends during the calendar year, by the second working day after 1 May | SIE, https://www.impots.gouv.fr |
 | VAT returns | Monthly, quarterly or yearly, according to the regime | SIE, https://www.impots.gouv.fr |
@@ -268,7 +268,7 @@ running.
 
 The accounts approval and filing rules are on https://entreprendre.service-public.fr/vosdroits/F31214 and the corporation tax return deadline is on https://entreprendre.service-public.fr/vosdroits/F37366
 
-**Corporation tax.** A SAS, SASU, SA, SARL or EURL pays corporation tax by default. The reduced rate is not automatic: both conditions in the table must be met, and the capital must be fully paid up.
+**Corporation tax.** SAS, SASU, SA and SARL are ordinarily subject to IS. An EURL with an individual sole owner is instead subject to IR by default and can opt for IS; an EURL with a corporate sole owner is compulsorily subject to IS. Source: https://entreprendre.service-public.gouv.fr/vosdroits/F37777 . The reduced IS rate is not automatic: both conditions in the table must be met, and the capital must be fully paid up.
 
 | What | Value | Note |
 | --- | --- | --- |
@@ -277,13 +277,13 @@ The accounts approval and filing rules are on https://entreprendre.service-publi
 | Reduced rate on the first slice of profit | 15% | Profit above the slice is taxed at the standard rate |
 | The slice of profit the reduced rate covers | EUR 42,500 | Not an allowance for everyone: a cap on the slice taxed at the lower rate |
 | First condition: turnover of the accounting period, restated to 12 months if needed, at or below | EUR 10,000,000 | |
-| Second condition: share of the capital held by individuals, capital fully paid up | 75% | Held by individuals, or by a company itself held at least 75% by individuals |
+| Second condition: share of the capital held by individuals, capital fully paid up | 75% | Held continuously by individuals, or by a company meeting the same CGI219I-b conditions whose capital is at least75% individually held. Apply the actual specified fund/no-dependence exclusions; use `fr-corporate-tax` for the12month slice/group-turnover method |
 | Corporation tax below this amount is paid in one go, with no instalments | EUR 3,000 | |
 | Income tax option: voting rights held by individuals, at least | 50% | One of the conditions for electing income tax instead |
 | Income tax option: voting rights held by the président, directeur général, président du conseil de surveillance, a member of the directoire or the gérant and their household, at least | 34% | Another condition for the same election |
 | Income tax option: annual turnover or balance sheet total, below | EUR 10,000,000 | A different test from the reduced rate condition above, which is met at or below the same amount |
 
-The income tax election is open only to a company that carries on a commercial, craft, agricultural or liberal activity as its main activity, is not listed, employs fewer than 50 people, has annual turnover or a balance sheet total below the amount in the income tax option row of the
+The following five-period IR election is the young-company route, not every possible IR regime. An eligible family SARL has a separate IR option without a fixed duration: the current SARL page requires industrial, commercial, craft or agricultural activity and the stated family links (direct-line relatives, siblings, spouses or PACS partners); a liberal activity is excluded from that family route. The option requires all partners’ agreement; do not apply it when its conditions are absent. The EURL’s individual-owner default above is separate again. The young-company income tax election is open only to a company that carries on a commercial, craft, agricultural or liberal activity as its main activity, is not listed, employs fewer than 50 people, has annual turnover or a balance sheet total below the amount in the income tax option row of the
 table, and was created less than 5 years before the election is asked for. The election lasts 5 accounting periods and cannot be renewed. It taxes the result in the partners' hands in proportion to their holdings. Going the other way, a company that has elected corporation tax may withdraw the election up to the fifth period following the one it was made for, after which the corporation tax election is irrevocable.
 
 **VAT.** A new business charges no VAT while it is inside the franchise en base, and deducts none either. The single EUR 25,000 franchise threshold proposed for 2026 was abandoned, so the limits below are the ones in force. They are VAT limits and are not the micro income tax limits in Section 2.
@@ -299,17 +299,16 @@ table, and was created less than 5 years before the election is asked for. The e
 
 Lawyers, authors and performers have their own pair of limits on the same page. A business outside the franchise files VAT returns, and the French VAT return Guide covers those.
 
-**Electronic invoicing catches every new business.** From 1 September 2026 a business of any size must be able to receive its invoices in electronic form, which means choosing an approved platform before that date. Issuing electronic invoices starts on 1 September 2026 for large and intermediate companies, and
-on 1 September 2027 for small and medium enterprises and micro-enterprises. The French electronic
+**Electronic invoicing.** An in-scope VAT-taxable business must have electronic receiving capacity from 1 September 2026, whatever its size; a business created after that date needs it when entering the covered activity. Issuing starts from 1 September 2026 for large/intermediate companies and from 1 September 2027 for PME/micro eligible for the statutory deferral, which excludes CGI 256C VAT-group members. Apply the legal-person/reference-year rules, not an assumed present-year headcount. The French electronic
 invoicing Guide (france-einvoice) carries the formats, the platform rules and the reporting of
 transaction data. A small business may enter early if it wants to. See https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf
 
-**The legal reserve.** A company must set part of each year's profit aside before it can distribute freely.
+**The legal reserve.** Code de commerce L232-10 applies this compulsory reserve to SARL and companies limited by shares: start from the year’s profit AFTER deducting prior losses, then allocate at least one twentieth until the reserve reaches one tenth of capital. This is not a blanket reserve obligation on an EI or every civil company. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051322888 .
 
 | What | Value | Note |
 | --- | --- | --- |
 | Source | all figures below | https://entreprendre.service-public.fr/vosdroits/F24024 |
-| Compulsory transfer out of each year's profit to the legal reserve | 5% | "Elle est constituée par un prélèvement d'au moins 5 % réalisé sur le bénéfice de chaque exercice". It is a minimum, not a fixed figure |
+| Compulsory transfer out of profit after prior losses to the legal reserve | At least 5%, until the reserve target is reached | The statutory base is the year’s profit less prior losses; the administrative page’s shorter profit wording does not remove that condition |
 | The transfer stops being compulsory once the reserve reaches this share of the share capital | 10% | The legal reserve can never be distributed |
 
 The French bookkeeping, financial statements, VAT return and payroll Guides cover the books, the accounts, the returns and the payroll themselves.
@@ -318,7 +317,7 @@ The French bookkeeping, financial statements, VAT return and payroll Guides cove
 
 ### Documents Typically Required
 
-To open the account that takes the capital, the legal representative or a proxy must give a request to deposit the share capital, the money itself, the representative's identity document and address, the list of subscribers with each partner's identity document, and a complete draft of the articles dated less than one year earlier. The depositary then issues the attestation de dépôt des fonds, which must name the company, its registered office, the total paid, the amount each partner paid, and the place and date of the deposit, with the depositary's stamp and signature. Note that the Kbis does not exist yet at this stage, so the bank cannot ask for it for the deposit account. See https://entreprendre.service-public.fr/vosdroits/F32333
+To open the account that takes the capital, the legal representative or a proxy must give a request to deposit the share capital, the money itself, the representative's identity document and address, the list of subscribers with each partner's identity document, and a complete draft of the articles dated less than one year earlier. The depositary then issues the attestation de dépôt des fonds, which must name the company, its registered office, the total paid, the amount each partner paid, and the place and date of the deposit, with the depositary's stamp and signature. At this creation stage the official list uses an unsigned draft of the articles; the registration proof is provided after registration to release the funds and finalise the account. Do not treat this as a universal ban on a bank requesting supplementary documents. See https://entreprendre.service-public.fr/vosdroits/F32333
 
 ### Typical Timeline
 
@@ -370,7 +369,7 @@ The third threshold is 50 employees. A compulsory mandate runs 6 years and is re
 
 - **R-FR-F5: a micro-entrepreneur trying to raise investment.** The micro regime is an individual business. It has no share capital, no shares and no second partner, so it cannot take an equity investor. Moving to a SAS or a SARL is the route.
 - **R-FR-F6: sending the client to a body that no longer handles this.** The CFE centres closed and nothing goes directly to the commercial court registry any more. Everything is filed on the one-stop desk at https://www.formalites.entreprises.gouv.fr and the desk forwards it.
-- **R-FR-F7: applying the micro turnover limits to a business created this year.** The limits are tested on earlier calendar years. A business created in year N is on the micro regime for N and N+1 whatever it earns, and the test first bites in N+2 on the turnover of N and N-1, with the first year's limit cut in proportion to the days the business existed.
+- **R-FR-F7: applying the micro turnover limits to a business created this year.** The limits are tested on earlier calendar years. A business created in year N is on the micro regime for N and N+1 whatever it earns, and the test first bites in N+2 on the turnover of N and N+1, applying the general prior-two-years rule and the source reconciliation explained in Section 2, with the first year's limit cut in proportion to the days the business existed.
 - **R-FR-F8: quoting the VAT franchise limits as the micro income tax limits.** They are different numbers on different pages and a business can be inside one and outside the other. Section 2 has the income tax limits, Section 6 the VAT limits.
 
 ## Section 10: Timeline
@@ -400,9 +399,9 @@ The durations in this table are the legacy Guide's own estimate. No official pag
 
 ## Ask the client first
 
-- How many founders are there today, and is an outside investor expected? One founder with no investor can use a micro-entreprise or an EI, which cost nothing to register and have no capital. An investor needs shares, which means a SAS or a SARL.
+- How many founders are there today, and is an outside investor expected? One founder with no investor can use a micro-entreprise or an EI, which have no share capital. Registration fees depend on activity and regime: the published18March2026 F23282 tariff gives ordinary commercial EI EUR21.74; craft EI EUR45, or EUR15 if already on RCS; commercial/craft micro and liberal/agricultural EI or micro free; commercial-agent EI and micro EUR23.21. These are registration formalities, not all business setup costs. An investor needs shares, which means a SAS or a SARL.
 - Will a founder be the gérant or the président, and will the business be run by an individual or by another company? A SARL cannot have a company as its gérant. A SAS can have a company as its président, and the filing then needs that company's own documents.
-- Will the founder draw pay from the business, and how much? That decides whether the assimilé salarié or the TNS status costs more, and it is usually the biggest running difference between a SAS and a SARL.
+- Will the founder draw pay from the business, and how much? That decides whether the assimilé salarié or the TNS status costs more, and it is usually the biggest running difference between a SAS and a SARL. Apply the actual collective/family-attributed SARL mandate test above before inferring either scheme from the founder's own share percentage.
 - Is anything other than cash going into the capital? A contribution in kind can force a commissaire aux apports, and both of the conditions in Section 4 must hold before the partners can skip one.
 - What turnover is expected in the first two years, and what will the business sell? It decides the micro limits, the VAT franchise limits and the reduced corporation tax band, and goods and services have different limits.
 - Which year end is wanted? It sets the corporation tax return date and the accounts approval and filing dates in Section 6.
@@ -417,30 +416,69 @@ The durations in this table are the legacy Guide's own estimate. No official pag
 - Anything after formation that belongs to another Guide: payroll, the books, the annual accounts, the VAT returns, the founder's own income tax, and any restructuring or tax planning.
 - Any figure a client brings from an older version of this Guide. The registration fee, the beneficial owners fee and the legal notice tariffs all changed, and the old totals were arithmetic rather than published amounts. Check Section 5 before quoting.
 
+## Executable checks of the existing computations
+
+**Registration-only fixture.** Under the existing F23282 commercial-activity tariff, compare an ordinary commercial EI registration at EUR 21.74 with a commercial micro-entrepreneur registration at EUR 0. The difference is EUR 21.74. These are the specified registration formalities only, not total formation costs, an agent-commercial fee or a craft fee; do not add legal notices/professional charges from an unrelated form.
+
+```oa-check
+name: France commercial EI versus commercial micro registration only
+inputs:
+  commercial_ei_fee: 21.74
+  commercial_micro_fee: 0
+steps:
+  fee_difference: commercial_ei_fee-commercial_micro_fee
+expected:
+  fee_difference: 21.74
+```
+
+**Cash-capital fixture.** Assume the chosen form's founders and all other formation conditions are satisfied, and all contributions in this calculation are cash. For EUR 10,000 subscribed cash capital, the existing 20% SARL/EURL initial-payment rule gives EUR 2,000 and EUR 8,000 outstanding; the 50% SAS/SASU rule gives EUR 5,000 and EUR 5,000 outstanding. An SA at its existing EUR 37,000 minimum, all cash, pays at least EUR 18,500 initially and has EUR 18,500 outstanding. The outstanding cash follows the existing five-year rule; contributions in kind and their valuation are separate. Sources are the already quoted F37411/F37402/F32333 provisions.
+
+```oa-check
+name: France stipulated cash capital initial payments by form
+inputs:
+  sarl_cash_capital: 10000
+  sas_cash_capital: 10000
+  sa_minimum_cash_capital: 37000
+steps:
+  sarl_initial: sarl_cash_capital * 0.20
+  sarl_outstanding: sarl_cash_capital-sarl_initial
+  sas_initial: sas_cash_capital * 0.50
+  sas_outstanding: sas_cash_capital-sas_initial
+  sa_initial: sa_minimum_cash_capital * 0.50
+  sa_outstanding: sa_minimum_cash_capital-sa_initial
+expected:
+  sarl_initial: 2000
+  sarl_outstanding: 8000
+  sas_initial: 5000
+  sas_outstanding: 5000
+  sa_initial: 18500
+  sa_outstanding: 18500
+```
+
 ## Sources
 
-- https://entreprendre.service-public.fr/vosdroits/F32886
-- https://entreprendre.service-public.fr/vosdroits/F32232
-- https://entreprendre.service-public.fr/vosdroits/F32333
-- https://entreprendre.service-public.fr/vosdroits/F35957
-- https://entreprendre.service-public.fr/vosdroits/F35934
-- https://entreprendre.service-public.fr/vosdroits/F37411
-- https://entreprendre.service-public.fr/vosdroits/F37366
-- https://entreprendre.service-public.fr/vosdroits/F37402
-- https://entreprendre.service-public.fr/vosdroits/F37396
-- https://entreprendre.service-public.fr/vosdroits/F37398
-- https://entreprendre.service-public.fr/vosdroits/F37369
-- https://entreprendre.service-public.fr/vosdroits/F31214
-- https://entreprendre.service-public.fr/vosdroits/F31440
-- https://entreprendre.service-public.fr/vosdroits/F37169
-- https://entreprendre.service-public.fr/vosdroits/F24024
-- https://entreprendre.service-public.fr/vosdroits/F23575
-- https://entreprendre.service-public.fr/vosdroits/F23547
-- https://entreprendre.service-public.fr/vosdroits/F23267
-- https://entreprendre.service-public.fr/vosdroits/F21746
-- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html
-- https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf
-- https://www.formalites.entreprises.gouv.fr
+- https://entreprendre.service-public.fr/vosdroits/F32886 Additional selected primary scopes read31October2026: registration feesF23282 https://entreprendre.service-public.gouv.fr/vosdroits/F23282 ; CMFR561-1 https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072026/LEGISCTA000021019133/2026-10-30 ; CGI219I-b https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-10-29 ; CSSL311-3(11) https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051284232/2026-10-30 . Retained web-result/rendered-source provenance, original source dates and precise scopes are in the ledger.
+- https://entreprendre.service-public.fr/vosdroits/F32232 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F32333 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F35957 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F35934 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37411 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37366 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37402 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37396 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37398 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37369 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F31214 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F31440 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F37169 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F24024 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F23575 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F23547 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F23267 Selected cited scope read 2026-10-29.
+- https://entreprendre.service-public.fr/vosdroits/F21746 Selected cited scope read 2026-10-29.
+- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html Selected cited scope read 2026-10-29.
+- https://www.impots.gouv.fr/sites/default/files/media/1_metier/2_professionnel/EV/2_gestion/290_facturation_electronique/fiche-3_tpe_a-partir-de-quand-mon-entreprise-doit-etre-prete.pdf Selected cited scope read 2026-10-29.
+- https://www.formalites.entreprises.gouv.fr Historical/navigation URL retained; this URL body has no accepted direct read claim. Replacement F35934 quoted one-stop filing instructions read 2026-10-29.
 
 ## Disclaimer
 

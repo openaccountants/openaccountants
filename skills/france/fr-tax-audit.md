@@ -1,10 +1,10 @@
 ---
 name: fr-tax-audit
 description: French tax audit procedures, penalties, and taxpayer rights (contrôle fiscal). Trigger on phrases like "contrôle fiscal", "vérification de comptabilité", "redressement fiscal", "DGFIP contrôle", "proposition de rectification", "pénalités fiscales", "majoration 40%", "manquement délibéré", "intérêts de retard", "abus de droit", "commission départementale", "recours hiérarchique", "charte du contribuable vérifié", "FEC contrôle", "rejet de comptabilité", "acte anormal de gestion", "tax audit France", "tax penalties France", "objection tax France", "délai de reprise", "prescription fiscale", "régularisation spontanée". Covers the 8 verification axes (FEC, IS, charge deductibility, CCA 455, revenue, TVA, fixed assets, international), penalty schedules, audit procedures, and taxpayer rights.
-version: 1.0
+version: 1.4
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -13,7 +13,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# France: tax audits of a business, penalties and taxpayer rights (contrôle fiscal)
+# France: tax audits of a business, penalties and taxpayer rights (contrôle fiscal) v1.4
+
+> **Based on work by [Romain Simon (@romainsimon)](https://github.com/romainsimon/paperasse)**, licensed under MIT. Adapted for the OpenAccountants format.
 
 This skill covers the French tax audit of a business (vérification de comptabilité and examen de comptabilité) by the DGFiP: the notice, the accounting entries file (FEC), the time limits, the proposition de rectification and the answer to it, the appeals, the reassessment periods, the surcharges and late-payment interest, and the points an inspector checks. Figures are for tax year 2026. The procedure rules, surcharges and interest rates below are those in force on 19 October 2026, read on official pages on 19 October 2026; an audit run in 2026 can reach income of 2025 declared in 2026 and every earlier year still open under the reassessment periods, and each audited year is taxed under the corporation tax and VAT figures of its own year, so the 2026 figures shown for those two taxes must be checked again for each year under audit. Each official page's own publication date is given in its table where it matters.
 
@@ -46,9 +48,9 @@ The phases below follow BOFiP. The time limits are in words because the pages pr
 | 2 bis. FEC sending, examen de comptabilité | LPF art. L. 47 AA; BOI-CF-PGR-20-10 (https://bofip.impots.gouv.fr/bofip/236-PGP.html) | The notice 3923-EC-SD says the FEC must be sent "sous quinze jours à compter de la réception de l'avis" (within fifteen days of receiving the notice). |
 | 3. On-site work and its length | LPF art. L. 52; BOI-CF-PGR-20-30 (https://bofip.impots.gouv.fr/bofip/243-PGP.html) | See "Length of the on-site audit" below. |
 | 4. Proposition de rectification | LPF art. L. 57; BOI-CF-IOR-10-50-10 (https://bofip.impots.gouv.fr/bofip/5510-PGP.html) | The formal written notice of each adjustment. It interrupts the reassessment period and opens the answer period. |
-| 5. Taxpayer's answer | LPF art. L. 11, L. 57 and R.* 57-1; BOI-CF-IOR-10-50-10 | Thirty days from receipt, extended by thirty days if the taxpayer asks and the request reaches the administration before the first thirty days end. The page says a request made after that is not admissible save exceptional circumstances. The period is a clear period (délai franc). |
+| 5. Taxpayer's answer | LPF art. L. 11, L. 57 and R.* 57-1; BOI-CF-IOR-10-50-10 | Thirty clear days from receipt, extended by thirty days on an express timely request. LPF L. 57 says the request must be received before expiry; the published BOFiP practice accepts a request presented or dispatched before expiry, with La Poste's stamp proving postal dispatch. Exclude the receipt day and the expiry day when counting the clear period; if the last permissible day is Saturday, Sunday or a public holiday, use the next working day. A late request is inadmissible save exceptional circumstances. |
 | 6. Administration's reply to the observations (form 3926-CFE-SD) | LPF art. L. 57 and L. 57 A | Each point kept or dropped, with reasons for any point on which disagreement persists. |
-| 7. Recours hiérarchique, then interlocution | BOI-CF-PGR-20-10 (https://bofip.impots.gouv.fr/bofip/236-PGP.html) | First to the inspector's superior, then to the interlocutor named by the director. The request must be made within thirty days of receiving the reply to the observations (for the first level) or the report on the first-level appeal (for the second level). |
+| 7. Recours hiérarchique, then interlocution | BOI-CF-PGR-20-10 (https://bofip.impots.gouv.fr/bofip/236-PGP.html) | Two distinct routes. During the control, raise actual procedural difficulties with the superior then the interlocutor before the proposition de rectification in the contradictory procedure; for an ex officio assessment, before notification of its bases, or collection if LPF L. 76 dispenses with that notification. The later merits route in a contradictory procedure opens after form 3926-CFE-SD: thirty clear days from its receipt for the first level, then thirty clear days from receipt of the first-level report for interlocution. Exclude the receipt and dispatch days. If the superior signed penalties exclusive of good faith, expressly request direct interlocution within thirty clear days of receiving form 3926. A merits request immediately after the proposal is premature. |
 | 8. Commission départementale des impôts directs et des taxes sur le chiffre d'affaires | LPF art. L. 59 A and R.* 59-1; BOI-CF-CMSS-20-30 (https://bofip.impots.gouv.fr/bofip/4355-PGP.html) and BOI-CF-CMSS-20-10 (https://bofip.impots.gouv.fr/bofip/873-PGP.html) | For a disagreement that persists. The taxpayer has thirty days from receipt of the administration's reply to ask for it. Above the turnover limits in the commission table below, the national commission is competent instead. An abuse of law case goes to the comité de l'abus de droit, not to this commission. |
 | 9. Mise en recouvrement | | The additional tax, interest and surcharges are put into collection (avis de mise en recouvrement). |
 
@@ -61,7 +63,7 @@ BOFiP BOI-CF-PGR-20-30 (version published 20 December 2017, https://bofip.impots
 - It becomes six months where the accounts have serious irregularities that deprive them of probative value (LPF art. L. 52, II, 4°).
 - It is suspended until the business hands over a FEC that meets the standards of LPF art. A. 47 A-1.
 - It does not apply in the cases of LPF art. L. 52, II (for example after a flagrance fiscale report, II-5°; and the time limit cannot be raised against the administration while it examines observations the taxpayer presents after the on-site work, II-1°), nor to the holding companies covered by LPF art. L. 52 A.
-- For an examen de comptabilité, the administration must send the proposition de rectification within six months of receiving the FEC (LPF art. L. 47 AA, 4°).
+- For an examen de comptabilité, within six clear months of receiving **all conforming FEC copies**, the administration must dispatch either the proposition de rectification (2126-EC-SD) or an avis d'absence de rectification (3953-EC). Exclude the receipt and dispatch days. Incomplete or nonconforming copies do not start that clock and the remote procedure can be cancelled; this does not replace the distinct FEC penalties or on-site rules (LPF art. L. 47 AA, 4°).
 
 ### Taxpayer guarantees
 
@@ -70,8 +72,9 @@ BOFiP BOI-CF-PGR-20-30 (version published 20 December 2017, https://bofip.impots
 | Right | Source |
 | --- | --- |
 | Written notice before the audit, naming the right to an adviser | LPF art. L. 47; https://bofip.impots.gouv.fr/bofip/236-PGP.html |
+| Oral and adversarial discussion of the accounting findings before any reassessment | LPF art. L. 47 A; https://bofip.impots.gouv.fr/bofip/9026-PGP.html |
 | Charte des droits et obligations du contribuable vérifié, made available with the notice and updated every year; its provisions bind the administration ("opposables à l'administration") | https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie |
-| Recours hiérarchique and interlocution, within thirty days | https://bofip.impots.gouv.fr/bofip/236-PGP.html |
+| Recours hiérarchique and interlocution: procedural difficulties during control, and the separate thirty-clear-day post-reply merits route, as set out above | https://bofip.impots.gouv.fr/bofip/236-PGP.html |
 | Departmental tax commission | https://bofip.impots.gouv.fr/bofip/4355-PGP.html |
 | On-site length limited for small businesses (three months, six months on serious irregularities) | LPF art. L. 52; https://bofip.impots.gouv.fr/bofip/243-PGP.html |
 
@@ -87,7 +90,7 @@ Above those limits the commission nationale des impôts directs et des taxes sur
 
 ## Section 3: The 8 verification axes
 
-These are the points an inspector commonly examines. The checks are the method of this skill, not a list printed by the administration.
+These are practical review questions, not statutory presumptions of risk, concealment or non-deductibility. Account codes and the eight-axis layout are this Guide’s working method, not a list prescribed by the administration. An unexplained balance or missing document requires facts and the applicable rule before a tax adjustment.
 
 ### Axis 1: FEC examination (LPF art. L. 47 A)
 
@@ -127,24 +130,25 @@ The page (version published 15 December 2021) puts it as two cases: no adjustmen
 | Turnover condition, for the financial year, brought to twelve months where needed | EUR 10,000,000 | "Chiffre d'affaires inférieur ou égal à 10 000 000 €" |
 | Ownership condition, with the capital fully paid up | 75% | "détenu pour au moins 75 % par des personnes physiques" |
 
-The page is "Vérifié le 17 février 2026". Both conditions must be met (AND): turnover at or below the limit in the table, and capital fully paid up and held at least to the share in the table by individuals, or by a company itself so held.
+The page is "Vérifié le 17 février 2026". Apply the full CGI art. 219, I-b conditions together: turnover at or below the table limit, annualised where required; capital entirely paid up and **continuously** at least 75% held by individuals, or by a company meeting the same conditions whose capital is at least 75% held by individuals. For a parent of an art. 223 A/223 A bis group, add the turnover of all group members. The statutory percentage excludes holdings of sociétés de capital-risque, fonds communs de placement à risques, the specified pre-2013 fonds professionnels spécialisés, fonds professionnels de capital investissement, sociétés de développement régional and sociétés financières d'innovation only where there is no CGI art. 39, 12 dependence between the company and those vehicles. Year-end individual ownership alone, or a corporate shareholder satisfying only the 75% individual-ownership limb, is insufficient. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-10-29
 
 **IS control checkpoints**
 
 | Checkpoint | Legal basis | Detail |
 | --- | --- | --- |
-| IS add-back (account 695) | CGI art. 39-1-4° (legacy reference, not checked) | Corporation tax is not a deductible charge: verify it is added back |
-| PME reduced rate eligibility | CGI art. 219, I-b | Both conditions in the table above. The turnover limit is brought to twelve months for a short or long year; the page does not say the profit slice is prorated, so do not prorate it without checking |
+| IS add-back (account 695) | CGI art. 213 | Corporation tax is expressly non-deductible: verify its add-back |
+| PME reduced rate eligibility | CGI art. 219, I-b | Both conditions in the table above. The turnover limit is brought to twelve months for a short or long year; CGI art. 219 I-b also expressly states the EUR 42,500 profit slice per twelve months, so adjust that slice to the accounting-period length |
 | Non-deductible charges | CGI art. 39 | Fines, luxury expenses, personal expenses |
 | Acte anormal de gestion | Case law (Conseil d'État) | Charges unrelated to the interest of the business |
 
 ### Axis 3: Charge deductibility (CGI art. 39-1)
 
-**Four cumulative conditions:**
-1. Incurred in the interest of the business
-2. Reflects normal management
-3. Supported by invoices or documentation
-4. Results in a decrease of net assets
+**Cumulative charge checks:**
+1. Incurred in the interest of the business or as part of its normal management
+2. An effective charge supported by sufficient invoices or documentation
+3. Included in the expenses of the period in which it was incurred
+4. A charge rather than acquisition of an asset: test the decrease of net assets and the specific capitalisation rules
+5. Not excluded by a specific tax provision
 
 **Systematic examination grid**
 
@@ -170,7 +174,7 @@ The page is "Vérifié le 17 février 2026". Both conditions must be met (AND): 
 | --- | --- |
 | Pre-incorporation expenses | Taken over by the company in the form company law requires (état des actes annexed to the statuts, or a later decision)? Professional character? |
 | Home office | Justified surface proportion? Plan available? Mortgage principal is never deductible |
-| Interest on the current account | No interest: no issue. If interest is paid, the deductible rate is capped. The reference rate is "la moyenne annuelle des taux effectifs moyens pratiqués par les établissements de crédit pour des prêts à taux variable aux entreprises d'une durée initiale supérieure à deux ans" (BOI-BIC-CHG-50-50-30, https://bofip.impots.gouv.fr/bofip/5505-PGP.html). It is not an ECB rate. CGI art. 39-1-3° also requires the capital to be fully paid up (legacy statement, not on a page read for this skill) |
+| Interest on the current account | If no interest is paid, there is no interest expense to cap; that alone does not settle transfer-pricing, distribution or abnormal-management issues. If interest is paid, test the applicable deductible-rate limit. The reference rate is "la moyenne annuelle des taux effectifs moyens pratiqués par les établissements de crédit pour des prêts à taux variable aux entreprises d'une durée initiale supérieure à deux ans" (BOI-BIC-CHG-50-50-30, https://bofip.impots.gouv.fr/bofip/5505-PGP.html). It is not an ECB rate. Not yet confirmed in this Guide’s selected source chain: the complete art. 39-1-3° paid-up-capital gate and its interaction with art. 212’s proven higher market-rate option. Establish those gates through the corporation-tax/transfer-pricing method before deducting interest; the reference-rate quotation alone is not the entire entitlement |
 | Currency conversion | Rate used and its consistency; the inspector may ask for the rate of each transaction |
 
 ### Axis 5: Revenue (CGI art. 38-2)
@@ -229,13 +233,13 @@ The page is "Vérifié le 01 janvier 2026" and says the franchise thresholds for
 | Source | all figures below | https://bofip.impots.gouv.fr/bofip/2109-PGP.html |
 | Unit value excluding VAT up to which tools and equipment (PCG accounts 2154 and 2155), office furniture and equipment, and software may be expensed at once | EUR 500 | "valeur unitaire hors taxes n'excédant pas 500 €" |
 
-The limit is a tolerance, measured excluding VAT per unit, and on the global price where several items form one piece of equipment. The page does not say a franchise business measures it including VAT; ask the accountant. For furniture the page excludes the initial furnishing of an office building, restaurant or shop and its complete renewal: "La mesure n'est notamment pas applicable à l'équipement initial en mobilier d'un immeuble de bureaux, d'un restaurant ou d'un magasin commercial, ni au renouvellement complet de ce mobilier, même si la valeur unitaire de chaque meuble est inférieure à 500 € hors taxes".
+The limit is a tolerance, measured excluding VAT per unit, and on the global price where several items form one piece of equipment. It excludes transport equipment. The initial-furniture/full-renewal exclusion quoted below has an express exception when the entire initial equipment or renewal itself does not exceed EUR 500. The page does not say a franchise business measures it including VAT; ask the accountant. For furniture the page excludes the initial furnishing of an office building, restaurant or shop and its complete renewal: "La mesure n'est notamment pas applicable à l'équipement initial en mobilier d'un immeuble de bureaux, d'un restaurant ou d'un magasin commercial, ni au renouvellement complet de ce mobilier, même si la valeur unitaire de chaque meuble est inférieure à 500 € hors taxes".
 
 **Fixed assets checks**
 
 | Check | Detail |
 | --- | --- |
-| Capitalisation | Items above the tolerance in the table above are fixed assets |
+| Capitalisation | Test whether the expenditure acquires an asset; exceeding EUR 500 only removes this immediate-expense tolerance and does not turn every operating cost into a fixed asset |
 | Depreciation method | Period consistent with the normal use of the asset; pro rata temporis from the date the asset is put into service |
 | Mixed use | Phone and computer: wholly professional use justified? If mixed, only the professional part is deductible |
 
@@ -247,7 +251,7 @@ The limit is a tolerance, measured excluding VAT per unit, and on the global pri
 | --- | --- |
 | Transfer pricing | Applies where there is a foreign subsidiary or intra-group transactions: see `france-transfer-pricing` |
 | Withholding tax (CGI art. 182 B) | Payments to foreign providers for services used in France: withholding due? Check the tax treaty. The rate is not on a page read for this skill |
-| DES (déclaration européenne de services) | Due on services a French business SUPPLIES to a business customer in another EU State where the service is located there, not on purchases. The CA3 notice says: "toute personne physique ou morale est tenue de souscrire une déclaration européenne de services (DES) lorsque les conditions suivantes sont réunies" (https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf) |
+| DES (déclaration européenne de services) | Due only where the supplier has its seat in France, or a French establishment providing the service, or failing those its domicile/habitual residence there; the recipient is a taxable person acting as such with its seat, receiving establishment, or domicile/habitual residence in another EU State; the service is located there under Directive 2006/112/EC art. 44; and that recipient owes the tax under art. 196. Omit services exempt in the recipient State. This is an outbound-supply obligation, not a purchase declaration. The CA3 notice says: "toute personne physique ou morale est tenue de souscrire une déclaration européenne de services (DES) lorsque les conditions suivantes sont réunies" (https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf) |
 
 ## Section 4: Penalty schedule
 
@@ -262,9 +266,9 @@ The limit is a tolerance, measured excluding VAT per unit, and on the global pri
 | Reduction of the interest where the taxpayer regularises during an audit (LPF art. L. 62) | 30% | "l'intérêt de retard est réduit de 30 % lorsqu’au cours d'un contrôle" |
 
 - Start: interest runs from the first day of the month after the one in which the tax should have been paid.
-- End: for tax paid late by the taxpayer, the last day of the month of payment. For additional tax assessed after an audit (an insufficiency under CGI art. 1729), the last day of the month of the proposition de rectification, or of the issue of the rôle where the additional tax is staggered (CGI art. 1727, IV-4). For a return not filed (CGI art. 1728 cases), the last day of the month the return is filed or the bases are notified.
+- End: for tax paid late by the taxpayer, the last day of the month of payment. For additional tax assessed after an audit (an insufficiency under CGI art. 1729), the last day of the month of the proposition de rectification, or of the issue of the rôle where the additional tax is staggered (CGI art. 1727, IV-4). For a return not filed (CGI art. 1728 cases), the last day of the month the return is filed or the bases are notified. For a corrective declaration, including CGI art. 1727 V or LPF L. 62 regularisation, stop at the end of the month that declaration is filed; do not automatically use the later proposal or payment month.
 - The interest is due on top of any surcharge.
-- A taxpayer in good faith who files a corrective return spontaneously has the interest reduced by half (CGI art. 1727, V, the droit à l'erreur), under the conditions on the page.
+- A taxpayer in good faith who files a corrective return spontaneously has the interest reduced by half only if the infringement is not exclusive of good faith and there is payment of the resulting tax with the corrective declaration, or for a rôle by the payment deadline on the notice. An accepted public-accountant plan for the tax preserves the reduction in place of immediate/deadline payment (CGI art. 1727, V; BOI-CF-INF-10-10-20). Filing alone without one of these statutory payment routes does not establish this reduction. Current source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051213330/2026-10-29
 - Do not quote a yearly rate: the page prints only the monthly rate.
 
 ### Surcharges (majorations, CGI art. 1728 and 1729)
@@ -277,10 +281,10 @@ The limit is a tolerance, measured excluding VAT per unit, and on the global pri
 | Return filed late, spontaneously or within thirty days of a formal notice (CGI art. 1728) | 10% | "la majoration de 10 % prévue par l’article 1728 du CGI" |
 | Return filed more than thirty days after a formal notice (mise en demeure), even in good faith (CGI art. 1728) | 40% | "40 % sur le tout (1728)" |
 | Deliberate breach (manquement délibéré, CGI art. 1729), on the additional tax | 40% | "la majoration de 40 % pour manquement délibéré prévue par l’article 1729 du CGI" |
-| Abuse of law where the service has established the taxpayer is the main beneficiary, fraudulent manoeuvres, or concealment of the price in a contract (CGI art. 1729) | 80% | "80 % sur les droits résultant des rappels (1729)" |
+| Abuse of law where principal initiative or principal benefit is established; fraudulent manoeuvres; concealment of a contractual price (CGI art. 1729) | 80%; abuse reduced to 40% otherwise | "80 % sur les droits résultant des rappels (1729)" |
 
 - In the page's table, additional tax in good faith ("Rappels en cas de bonne foi") carries only the CGI art. 1728 surcharge where the return was late (the rate in the table depends on whether it was filed before, within, or more than thirty days after a mise en demeure), and no CGI art. 1729 surcharge; additional tax with a deliberate breach adds the CGI art. 1729 rate. Interest is due in both cases.
-- The higher abuse of law rate applies only where the service has established that the taxpayer is the main beneficiary of the abuse. The page does not print the rate for other abuse of law cases: check it before stating one.
+- Under current CGI art. 1729 b, abuse of law carries 80%, reduced to 40% unless the administration establishes that the taxpayer had the principal initiative or was the principal beneficiary. The older BOFiP combination-table example names the beneficiary case; it is not an exhaustive statement of the statutory initiative alternative.
 
 ### Computation example: deliberate breach (hypothetical)
 
@@ -296,9 +300,56 @@ Total assessment:                             3,560.00
 
 If the taxpayer had regularised during the audit under LPF art. L. 62, the interest would be reduced as in the interest table, and the conditions of that procedure apply.
 
+**Qualification of that counterfactual.** The deliberate-breach facts in the illustration do not qualify for LPF L. 62: good faith is a separate mandatory gate. Only a different, eligible good-faith case meeting all Section 8 conditions gets the reduction. If that case has EUR 60 unreduced interest, the 30% reduction leaves EUR 42 (60 × 70%); it does not reduce the EUR 1,000 deliberate-breach surcharge in the original fixture or make that fixture eligible.
+
+
+### Recomputable checks of the existing penalty methods
+
+The first block recomputes the hypothetical deliberate-breach illustration above. Its twelve chargeable months and valid 40% deliberate-breach finding are declared facts, not inferences from an arithmetic discrepancy.
+
+```oa-check
+name: Existing audit illustration, EUR 10000 disallowed charge
+inputs:
+  disallowed: 10000
+  tax_rate: 0.25
+  months: 12
+  monthly_interest: 0.002
+  deliberate_rate: 0.40
+steps:
+  - extra_tax: disallowed * tax_rate
+  - interest: extra_tax * months * monthly_interest
+  - surcharge: extra_tax * deliberate_rate
+  - total: extra_tax + interest + surcharge
+expected:
+  extra_tax: 2500
+  interest: 60
+  surcharge: 1000
+  total: 3560
+```
+
+For the existing on-site FEC fine, assume one control with EUR 60,000 recalled duties over its covered periods: max(EUR 5,000, 10% of 60,000) is EUR 6,000, once for the control. At exactly EUR 50,000 duties the result remains EUR 5,000. A remote-examination failure uses the separately stated fixed fine instead.
+
+```oa-check
+name: On-site FEC fine, recalled duties EUR 60000
+inputs:
+  recalled_duties: 60000
+  floor: 5000
+  share: 0.10
+steps:
+  - proportional: recalled_duties * share
+  - fine: max(floor, proportional)
+  - at_boundary: max(floor, 50000 * share)
+expected:
+  proportional: 6000
+  fine: 6000
+  at_boundary: 5000
+```
+
 ## Section 5: Risk assessment grid
 
 ### Aggravating factors
+
+The following labels are internal triage prompts, not verified empirical audit probabilities or automatic legal consequences.
 
 **Aggravating factors**
 
@@ -319,7 +370,7 @@ If the taxpayer had regularised during the audit under LPF art. L. 62, the inter
 | Small size, within the simplified-regime admission limits | The on-site audit is limited in time (Section 2) |
 | Regular bookkeeping | Compliant FEC, balanced entries |
 | First year in good faith | No CGI art. 1729 surcharge on additional tax in good faith, and a spontaneous corrective return halves the interest |
-| No employees | No payroll risk |
+| No employees | Check officer remuneration, earlier employment periods and other payroll obligations before concluding there is no payroll exposure |
 | Franchise en base | No collected-VAT risk while within the limits |
 
 ## Section 6: Common adjustment scenarios
@@ -334,7 +385,7 @@ If the taxpayer had regularised during the audit under LPF art. L. 62, the inter
 
 ### Scenario 3: Pre-incorporation expenses without état des actes
 
-**Assessment:** Full add-back of the pre-incorporation charges, and the additional IS on that amount.
+**Assessment:** Establish who incurred the expense, valid company takeover, its business purpose and its expense/asset classification. The absence of an état des actes is a review flag, not by itself a sourced rule that every pre-incorporation amount must be fully added back. Add back the amount only where the applicable charge conditions fail; compute extra IS on that disallowed amount. The complete company-law takeover method is not established in this Guide.
 
 ### Scenario 4: Omitted revenue (credit balance on 411)
 
@@ -367,11 +418,11 @@ BOFiP BOI-CF-PGR-10 (version of 19 May 2021, https://bofip.impots.gouv.fr/bofip/
 ## Section 8: Voluntary regularisation
 
 If the taxpayer corrects before an audit:
-- Late interest still applies, at the monthly rate in the interest table, but a taxpayer in good faith who files a corrective return spontaneously has it reduced by half (CGI art. 1727, V).
+- Late interest still applies at the monthly rate in the interest table. The spontaneous corrective-return half reduction requires good faith, no infringement exclusive of good faith, and payment of the resulting tax with the corrective declaration, or for a rôle by the payment deadline on the notice. An accepted public-accountant plan for the tax preserves the reduction in place of immediate/deadline payment (CGI art. 1727, V).
 - No CGI art. 1729 surcharge applies to a good-faith correction.
 
 If the taxpayer corrects during an audit:
-- The régularisation procedure of LPF art. L. 62 reduces the interest by the share in the interest table, for the taxes the audit covers and under that article's conditions.
+- **LPF art. L. 62 positive method.** Start from a return filed on time and an error not exclusive of good faith. In a vérification de comptabilité or ESFP request regularisation before any proposition de rectification. For the other covered route, request within thirty days of receiving an LPF L. 10, L. 16 or L. 23 A request or a proposition de rectification. File the supplementary declaration within thirty days of the regularisation request. Pay all additional tax and reduced interest on filing, or, for a rôle, by its stated payment deadline; an accepted public-accountant payment plan for the tax preserves the reduction if immediate/deadline payment is absent. The interest payable is 70% of the ordinary amount, with its endpoint the end of the supplementary-declaration filing month. A late original return or deliberate breach fails this procedure. Source: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037312536/2026-10-30
 
 For significant cases (crypto, foreign income, unreported gains), refer to an avocat fiscaliste; see also `fr-crypto-tax`.
 
@@ -397,8 +448,8 @@ For each anomaly, the adjustment is set out as a **chef de redressement** contai
 | --- | --- |
 | Charge deductibility doubtful | Flag as potentially non-deductible |
 | Surcharge unclear | Show interest only as the base case, and the deliberate breach rate as the risk if intent could be argued; say which |
-| FEC gap found | Flag as a possible concealment and a reliability issue |
-| Revenue source unclear | Include in taxable revenue |
+| FEC gap found | Investigate file completeness and reliability; do not infer intentional concealment from a gap alone |
+| Revenue source unclear | Establish the nature, ownership, period and tax treatment before deciding whether it is taxable revenue |
 | Small-business three-month limit | Do not assume it applies until the turnover is checked against the simplified-regime admission limits for the year |
 
 ## Section 11: Key legal references
@@ -409,7 +460,7 @@ For each anomaly, the adjustment is set out as a **chef de redressement** contai
 | --- | --- |
 | Taxable profit | CGI art. 38-1 |
 | Net asset variation | CGI art. 38-2 |
-| Deductible charges (4 conditions) | CGI art. 39-1 |
+| General deductible-charge conditions | CGI art. 39-1 |
 | CCA interest cap | CGI art. 39-1-3° and 212 |
 | IS rates | CGI art. 219, I |
 | PME reduced rate | CGI art. 219, I-b |
@@ -435,14 +486,14 @@ For each anomaly, the adjustment is set out as a **chef de redressement** contai
 ## The method, step by step
 
 1. Identify the procedure from the notice: form 3927-SD (vérification de comptabilité, on site) or form 3923-EC-SD (examen de comptabilité, remote). Check it names the right to an adviser and the years and taxes covered, and check the time before the first visit (BOI-CF-PGR-20-10, https://bofip.impots.gouv.fr/bofip/236-PGP.html).
-2. Prepare the FEC to the standard of LPF art. A. 47 A-1 (https://bofip.impots.gouv.fr/bofip/9028-PGP.html). Hand it over at the start of the operations for an on-site audit, or send it within fifteen days of receiving the notice for an examen de comptabilité (https://bofip.impots.gouv.fr/bofip/9026-PGP.html and https://bofip.impots.gouv.fr/bofip/236-PGP.html). A missing or non-compliant file triggers the fine in the FEC table.
+2. Prepare the FEC to the standard of LPF art. A. 47 A-1 (https://bofip.impots.gouv.fr/bofip/9028-PGP.html). Hand it over at the start of the operations for an on-site audit, or send it within fifteen days of receiving the notice for an examen de comptabilité (https://bofip.impots.gouv.fr/bofip/9026-PGP.html and https://bofip.impots.gouv.fr/bofip/236-PGP.html). For an on-site audit, the missing or non-compliant file uses the art. 1729 D I fine in the FEC table. For an examen de comptabilité, failure to transmit within fifteen days or the specified non-compliance uses the separate art. 1729 D II fixed EUR 5,000 fine, once per control; BOFiP also describes cancellation of that remote procedure and possible commencement of an on-site verification. Do not substitute the on-site 10% alternative for the remote fixed fine.
 3. Test whether the three-month on-site limit applies: compare turnover with the simplified-regime admission limits for each audited year, and note the six-month case and the suspension until the FEC is handed over (LPF art. L. 52, https://bofip.impots.gouv.fr/bofip/243-PGP.html).
 4. Check which years are still open, using the periods in Section 7 (https://bofip.impots.gouv.fr/bofip/937-PGP.html and https://bofip.impots.gouv.fr/bofip/1396-PGP.html).
 5. Run the eight axes of Section 3 on each open year, with the corporation tax and VAT figures of that year (https://entreprendre.service-public.gouv.fr/vosdroits/F23575 and https://entreprendre.service-public.gouv.fr/vosdroits/F21746).
-6. On the proposition de rectification, diary thirty days from receipt, and ask in writing for the extra thirty days before the first period ends if needed (LPF art. L. 57, https://bofip.impots.gouv.fr/bofip/5510-PGP.html).
-7. Consider regularising during the audit under LPF art. L. 62 to reduce the interest (https://bofip.impots.gouv.fr/bofip/1458-PGP.html).
-8. On the administration's reply (form 3926-CFE-SD), decide within thirty days on a recours hiérarchique, then on interlocution (https://bofip.impots.gouv.fr/bofip/236-PGP.html), and within thirty days on the departmental commission where it is competent (https://bofip.impots.gouv.fr/bofip/4355-PGP.html and https://bofip.impots.gouv.fr/bofip/873-PGP.html).
-9. Compute each chef de redressement: additional tax, interest at the monthly rate to the month of the proposition de rectification (https://bofip.impots.gouv.fr/bofip/1458-PGP.html) and any surcharge (https://bofip.impots.gouv.fr/bofip/4911-PGP.html), in the format of Section 9.
+6. On the proposition de rectification, diary thirty days from receipt, using the clear-period and non-working-day rules in Section 1. If needed expressly request the extra thirty days in time, including the published timely-posted route and La Poste evidence there (LPF art. L. 57, https://bofip.impots.gouv.fr/bofip/5510-PGP.html).
+7. Test each positive LPF art. L. 62 gate in Section 8, calculate ordinary interest to the supplementary-declaration filing month, then multiply it by 70% only for an eligible regularisation. Do not apply it to a deliberate-breach fixture (https://bofip.impots.gouv.fr/bofip/1458-PGP.html).
+8. For procedural difficulties during control, use the early hierarchical/interlocution route and its procedure-specific cutoff in Section 1. For a later merits disagreement after form 3926-CFE-SD, use the separate thirty-clear-day first-level and interlocution periods there, or expressly request direct interlocution where its penalty-signature condition applies (https://bofip.impots.gouv.fr/bofip/236-PGP.html), and within thirty days on the departmental commission where it is competent (https://bofip.impots.gouv.fr/bofip/4355-PGP.html and https://bofip.impots.gouv.fr/bofip/873-PGP.html).
+9. Compute each chef de redressement: additional tax, interest at the monthly rate to the applicable endpoint in Section 4: the corrective-declaration filing month for regularisation, otherwise the proposal month for the ordinary insufficiency case (https://bofip.impots.gouv.fr/bofip/1458-PGP.html) and any surcharge (https://bofip.impots.gouv.fr/bofip/4911-PGP.html), in the format of Section 9.
 
 ## Ask the client first
 
@@ -465,24 +516,32 @@ For each anomaly, the adjustment is set out as a **chef de redressement** contai
 
 ## Sources
 
-- BOI-CF-PGR-20-10, notice of audit, appeals and the charte: https://bofip.impots.gouv.fr/bofip/236-PGP.html
-- BOI-CF-PGR-20-30, length of on-site audits: https://bofip.impots.gouv.fr/bofip/243-PGP.html
-- BOI-CF-IOR-60-40-10, FEC hand-over and the fine: https://bofip.impots.gouv.fr/bofip/9026-PGP.html
-- BOI-CF-IOR-60-40-20, FEC format: https://bofip.impots.gouv.fr/bofip/9028-PGP.html
-- BOI-CF-IOR-10-50-10, effects of the proposition de rectification: https://bofip.impots.gouv.fr/bofip/5510-PGP.html
-- BOI-CF-CMSS-20-10, competence of the departmental commission: https://bofip.impots.gouv.fr/bofip/873-PGP.html
-- BOI-CF-CMSS-20-30, referral to the departmental commission: https://bofip.impots.gouv.fr/bofip/4355-PGP.html
-- BOI-CF-PGR-10, reassessment periods: https://bofip.impots.gouv.fr/bofip/937-PGP.html
-- BOI-CF-PGR-10-20, reassessment periods for IR and IS: https://bofip.impots.gouv.fr/bofip/1396-PGP.html
-- BOI-CF-PGR-10-50, extensions of the reassessment period: https://bofip.impots.gouv.fr/bofip/1479-PGP.html
-- BOI-CF-INF-10-10-20, late payment interest: https://bofip.impots.gouv.fr/bofip/1458-PGP.html
-- BOI-CF-INF-10-20-30-10, surcharges: https://bofip.impots.gouv.fr/bofip/4911-PGP.html
-- BOI-BIC-CHG-50-50-30, current account interest reference rate: https://bofip.impots.gouv.fr/bofip/5505-PGP.html
-- BOI-BIC-CHG-20-30-10, small equipment expensed: https://bofip.impots.gouv.fr/bofip/2109-PGP.html
-- Impôt sur les sociétés, taux: https://entreprendre.service-public.gouv.fr/vosdroits/F23575
-- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746
-- Notice 3310-NOT-CA3-SD, 2026 (DES): https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf
-- Charte des droits et obligations du contribuable vérifié: https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie
+- BOI-CF-PGR-20-10, notice of audit, appeals and the charte: https://bofip.impots.gouv.fr/bofip/236-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-PGR-20-30, length of on-site audits: https://bofip.impots.gouv.fr/bofip/243-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-IOR-60-40-10, FEC hand-over and the fine: https://bofip.impots.gouv.fr/bofip/9026-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-IOR-60-40-20, FEC format: https://bofip.impots.gouv.fr/bofip/9028-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-IOR-10-50-10, effects of the proposition de rectification: https://bofip.impots.gouv.fr/bofip/5510-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-CMSS-20-10, competence of the departmental commission: https://bofip.impots.gouv.fr/bofip/873-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-CMSS-20-30, referral to the departmental commission: https://bofip.impots.gouv.fr/bofip/4355-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-PGR-10, reassessment periods: https://bofip.impots.gouv.fr/bofip/937-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-PGR-10-20, reassessment periods for IR and IS: https://bofip.impots.gouv.fr/bofip/1396-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-PGR-10-50, extensions of the reassessment period: https://bofip.impots.gouv.fr/bofip/1479-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-INF-10-10-20, late payment interest: https://bofip.impots.gouv.fr/bofip/1458-PGP.html Selected cited scope read 2026-10-29.
+- BOI-CF-INF-10-20-30-10, surcharges: https://bofip.impots.gouv.fr/bofip/4911-PGP.html Selected cited scope read 2026-10-29.
+- BOI-BIC-CHG-50-50-30, current account interest reference rate: https://bofip.impots.gouv.fr/bofip/5505-PGP.html Selected cited scope read 2026-10-29.
+- BOI-BIC-CHG-20-30-10, small equipment expensed: https://bofip.impots.gouv.fr/bofip/2109-PGP.html Selected cited scope read 2026-10-29.
+- Impôt sur les sociétés, taux: https://entreprendre.service-public.gouv.fr/vosdroits/F23575 Selected cited scope read 2026-10-29.
+- Franchise en base de TVA: https://entreprendre.service-public.gouv.fr/vosdroits/F21746 Selected cited scope read 2026-10-29.
+- Notice 3310-NOT-CA3-SD, 2026 (DES): https://www.impots.gouv.fr/sites/default/files/formulaires/3310-ca3-sd/2026/3310-ca3-sd_5426.pdf Selected cited scope read 2026-10-29.
+- Charte des droits et obligations du contribuable vérifié: https://www.impots.gouv.fr/charte-des-droits-et-obligations-du-contribuable-verifie Selected cited scope read 2026-10-29.
+- Selected current statutory rate, twelve-month reduced slice and tax exclusion: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046868562/2026-10-29 and https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000054373444/2026-10-29
+- Current abuse-of-law 80%/40% conditions: https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020051904/2026-10-29
+- General charge conditions and mixed expenses: https://bofip.impots.gouv.fr/bofip/3848-PGP.html and https://bofip.impots.gouv.fr/bofip/468-PGP.html Selected cited scope read 2026-10-29.
+- Remote-examination procedure and separate FEC fine: https://bofip.impots.gouv.fr/bofip/3750-PGP.html Selected cited scope read 2026-10-29.
+
+Selected-source update, 29 October 2026: the figure ledger records actual native-LF reads separately from acquired bodies and earlier author reading. The complete current paid-up-capital/market-interest interaction, corporate takeover formalities, detailed foreign-currency rules and every underlying accounting-code instruction are not derived here. Practical review grids do not establish those missing legal methods or an automatic tax result.
+
+Selected repair reads, 31 October 2026: the retained official BOFiP clauses above supply both hierarchical routes, the remote no-adjustment endpoint, timely-posted extension practice, cumulative DES conditions and the corrective-declaration interest endpoint. The rendered current LPF L. 62 supplies the full regularisation gates, and CGI art. 219 I-b supplies continuous ownership and qualifying corporate-owner conditions. Actual selected reading is recorded separately from acquisition and from prior full-pack review; no new whole-country verdict is made.
 
 ## Footer
 
