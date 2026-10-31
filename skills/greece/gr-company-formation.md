@@ -1,11 +1,11 @@
 ---
 name: gr-company-formation
 description: "Company formation and entity choice in Greece for 2026. Covers the private company (ΙΚΕ, Law 4072/2012), the limited liability company (ΕΠΕ, Law 3190/1955) and the société anonyme (ΑΕ, Law 4548/2018); capital (an ΙΚΕ's capital is set freely and may be zero; EUR 1 minimum for an ΕΠΕ, EUR 25,000 for an ΑΕ), full payment of ΙΚΕ capital and the one-month certificate; formation through the One-Stop Shop (ΥΜΣ) or the online e-ΥΜΣ and GEMI registration under Law 4919/2022; the 2025 fee schedule (EUR 60, or EUR 18 online, plus the EUR 10 GEMI fee and a 0.1% Competition Commission fee for an ΑΕ); founder conditions (an active Greek tax number); the same-day or next-day check; GEMI fines; and the first tax and payroll steps. Trigger phrases: set up a company in Greece, ΙΚΕ, ΑΕ, ΕΠΕ, ΓΕΜΗ, Υπηρεσία Μιας Στάσης, e-ΥΜΣ, minimum capital Greece. Out of scope: company tax (gr-corporate-income-tax), partnerships on single-entry books (gr-partnerships-single-entry), VAT (greece-vat-return), payroll (gr-payroll), e-invoicing (greece-einvoice)."
-version: 0.2
+version: 0.3
 jurisdiction: GR
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -74,7 +74,7 @@ Greek companies keep statutory accounting records, publish annual financial stat
 | Ministry of Development, legal framework of the ΥΜΣ (template articles) | https://gge.mindev.gov.gr/tomeas-emporiou/thesmiko-plaisio-genikes-plirofories/ | 2026-10-30 |
 | Ministry of Development, services for company formation (e-ΥΜΣ, name check, cost calculator) | https://gge.mindev.gov.gr/tomeas-emporiou/ypiresies-gia-systasi-etaireias-eggrafi-ypokatastimatos-sto-gemh/ | 2026-10-30 |
 | e-ΥΜΣ cost calculator (cites ΚΥΑ 38164/2025) | https://eyms.businessportal.gr/cost | 2026-10-30 |
-| Pack skills for the tax figures: gr-corporate-income-tax (ITC art. 68, ν. 3986/2011 art. 31), greece-vat-return (VAT Code arts. 41, 44α), gr-payroll | skills/international/greece/ | 2026-10-30 |
+| Pack skills for the tax figures: gr-corporate-income-tax (ITC art. 68, ν. 3986/2011 art. 31), greece-vat-return (VAT Code arts. 41, 44α), gr-payroll | skills/greece/ | 2026-10-30 |
 
 Not yet confirmed: the Law 4548/2018 rules on how much ΑΕ capital is paid in at formation and when (the earlier version said fully paid at incorporation; the official text in ΦΕΚ Α' 104/2018 and its amendments up to Law 5317/2026 could not be opened, so only the EUR 25,000 minimum from the ministry page is stated); whether the EUR 10 GEMI registration fee is charged on top of the EUR 18 online formation fee (ΚΥΑ art. 5(5) replaces only the formation fee; the e-ΥΜΣ calculator gives the exact total); amendments to Law 4072/2012 after 28.4.2023; how a non-resident, non-EU founder obtains a Greek ΑΦΜ (the earlier version said in person at the tax office or through a tax representative); the 1 to 4 week and 2 to 3 month practical timelines in the earlier version (no official source); the Law 4308/2014 deadline for approving and publishing annual financial statements; notary and lawyer fees.
 
