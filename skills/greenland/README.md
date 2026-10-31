@@ -2,8 +2,10 @@
 jurisdiction: GL
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: gl-mandatory-pension
+partial:
+  SC: "mandatory pension minimum only; no mixed employment and self-employment income"
 ---
 
 # Greenland: tax pack

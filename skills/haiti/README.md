@@ -2,7 +2,8 @@
 jurisdiction: HT
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: ht-turnover-tax-tca
 partial: {}
 ---
 

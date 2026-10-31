@@ -2,7 +2,8 @@
 jurisdiction: UY
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
+covered_by:
+  VAT: uruguay-iva
 partial: {}
 ---
 
