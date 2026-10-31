@@ -1,15 +1,17 @@
 ---
 name: cn-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a China VAT (增值税 / VAT) return, handle Golden Tax System (金税系统) compliance, classify transactions for Chinese VAT purposes, or advise on VAT registration and filing in China. Trigger on phrases like "增值税", "VAT return China", "增值税申报", "增值税专用发票", "金税系统", "一般纳税人", "小规模纳税人", or any China VAT request. ALWAYS read this skill before touching any China VAT work.
+description: Use this skill whenever asked to prepare, review, or classify transactions for a China VAT (增值税 / VAT) return, handle Golden Tax System (金税系统) compliance, classify transactions for Chinese VAT purposes, or advise on VAT registration and filing in China. Trigger on phrases like "增值税", "VAT return China", "增值税申报", "增值税专用发票", "金税系统", "一般纳税人", "小规模纳税人", simplified-method election, 选择简易计税, or any China VAT request. Covers general and small-scale taxpayers, including the 3%, 5%, 2% and 1.5% simplified-method elections for 2026 and 2027. ALWAYS read this skill before touching any China VAT work.
 jurisdiction: CN
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 1.1
+version: 1.2
+depends_on:
+  - vat-workflow-base
 category: international
 ---
 
@@ -26,7 +28,7 @@ The big change for 2026 is that the **VAT Law of the People's Republic of China 
 
 Currency is CNY. Sales in foreign currency are converted to renminbi (Law Art. 18).
 
-Out of scope: Hong Kong, Macao and Taiwan; consumption tax; customs duty; VAT surcharges (附加税费), beyond noting that they are filed on the same form; and the detailed rules for financial institutions, real estate developers and cross-period construction projects (see "When to refuse or refer").
+Out of scope: Hong Kong, Macao and Taiwan; consumption tax; customs duty; VAT surcharges (附加税费), beyond noting that they are filed on the same form; and the detailed rules for financial institutions, real estate developers and cross-period construction projects (see "When to refuse or refer"). Corporate income tax is in **cn-corporate-tax**; individual income tax, including tax on employees and freelancers, is in **cn-iit**.
 
 
 ### What changed on 1 January 2026 ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))
@@ -74,6 +76,18 @@ A service not on this list, such as general management consulting or marketing f
 
 **Exported goods (Reg. Art. 8)** means goods declared to customs, physically leaving China and sold to an overseas entity or individual, plus goods the State Council deems exported.
 
+### Simplified-method elections for general taxpayers, 2026 to 2027 ([MOF/STA announcement 2026 No. 10 三](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html); [VAT Law Art. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html))
+
+| Election | Who and what | Period | Official provision |
+| --- | --- | --- | --- |
+| 3% levy rate | A general taxpayer may choose it for listed activities, including: selling tap water; small hydropower units (up to 50,000 kW) selling their own electricity; consignment stores; public transport (ferries, buses, metro, light rail, taxis, long-distance coaches, shuttle buses); labour-only construction (清包工); construction for old projects (contract start on or before 30 April 2016); R&D and technical, IT and assurance or consulting services by non-enterprise units; film screening, warehousing, loading and unloading, pick-up and delivery (收派) and cultural and sports services; non-degree education and education support services. Read No. 10 三（一） for the full list ("可以选择适用简易计税方法，按照3%的规定征收率计算缴纳增值税") | 2026-01-01 to 2027-12-31 | [2026 No. 10 三（一）](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |
+| 5% levy rate | A general taxpayer may choose it for listed old real estate items, including leasing or selling real estate acquired on or before 30 April 2016 ("按照5%的规定征收率计算缴纳增值税") | 2026-01-01 to 2027-12-31 | [2026 No. 10 三（二）](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |
+| 3% reduced to 2% | A general taxpayer selling a used fixed asset whose input was blocked and not deducted; a small-scale taxpayer (not a natural person) selling its own used fixed asset; anyone selling second-hand goods (旧货), which excludes items the seller used itself ("依照3%征收率减按2%计算缴纳增值税") | From 2026-01-01 | [2026 No. 10 三（三）1–3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |
+
+**Scope of the choice (No. 10 三（四）1).** The choice covers all taxable transactions of the same simplified-method item ("一般纳税人应当就同一简易计税方法项目的全部应税交易一并选择适用简易计税方法"). Own-developed real estate and construction services may be chosen project by project.
+
+**Lock-in (No. 10 三（四）2).** Once chosen, it cannot be changed for 36 months ("36个月内不得变更"). After the taxpayer then chooses the general method, it cannot choose the simplified method again for 36 months. Input for items under the simplified method is not deductible (Law Art. 22).
+
 
 ## The base
 
@@ -109,10 +123,10 @@ How the threshold works: sales **below** it are exempt. Once sales **reach** it,
 
 Other small-scale rules:
 - There is no input credit. Tax payable = sales × levy rate (Law Art. 14).
-- Natural persons are always small-scale. A non-business unit with occasional taxable sales may choose small-scale treatment (Reg. Art. 7).
+- Natural persons are always small-scale. A non-business unit that has only occasional taxable sales **and** whose main business is not a taxable transaction may choose small-scale treatment ("不经常发生应税交易且主要业务不属于应税交易范围的非企业单位", Reg. Art. 7).
 - Small-scale taxpayers may file quarterly (Reg. Art. 43).
 - **Invoicing under the 1% cut ([STA announcement 2026 No. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html), item 四).** Sales that take the reduced 1% must be invoiced at 1% ("应当按照1%征收率开具增值税发票"). A small-scale taxpayer may give up the reduction for all or some sales in order to issue special VAT invoices ("小规模纳税人可以选择全部或者部分应税交易放弃减税并开具增值税专用发票"). Those sales are then taxed at the 3% levy rate.
-- A small-scale taxpayer may issue special VAT invoices. No. 10 refers to buyers who obtain special invoices from small-scale taxpayers taxed at 3%. However, no special invoice may be issued to a natural person or for an exempt sale (Reg. Art. 37). A small-scale taxpayer whose sales are below the threshold may give up the exemption for all or some sales and issue special invoices ([STA announcement 2026 No. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html), item 一: "可以选择全部或者部分应税交易放弃免税并开具增值税专用发票"). The same announcement tells natural persons with certain income (bond interest, rent of real estate, platform work income) to apply the monthly threshold to the month's total sales.
+- A small-scale taxpayer may issue special VAT invoices. No. 10 refers to buyers who obtain special invoices from small-scale taxpayers taxed at 3%. However, no special invoice may be issued to a natural person or for an exempt sale (Reg. Art. 37). A small-scale taxpayer whose sales are below the threshold may give up the exemption for all or some sales and issue special invoices ([STA announcement 2026 No. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html), item 一: "可以选择全部或者部分应税交易放弃免税并开具增值税专用发票"). The same announcement tells natural persons with certain income (bond interest, rent of real estate, platform work income) to apply the monthly threshold to the month's total sales (item 二). Interest or rent received as a lump sum is spread evenly over the months it covers ("以对应租赁期月均分摊的租金，确定月销售额").
 - The waiver rule in Law Art. 27 (36 months without the relief after giving it up) does **not** apply to small-scale taxpayers ("小规模纳税人除外").
 
 
@@ -143,8 +157,12 @@ Other small-scale rules:
 | Unified motor vehicle sales invoice | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
 | Rail e-ticket or air e-ticket itinerary (电子发票（铁路电子客票）/（航空运输电子客票行程单）) for domestic passenger transport | VAT shown or included on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
 | Road, waterway and other passenger tickets showing the traveller's identity | Face amount ÷ (1 + 3%) × 3% | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
-| Toll-road e-invoice (通行费) | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
+| Toll-road e-invoice (通行费), or e-invoice (ordinary invoice) marked 通行费 | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
 | Bridge and lock toll invoices | Amount ÷ (1 + 5%) × 5% | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |
+
+A taxpayer confirms the use of a digital e-invoice or other voucher through its tax digital account (税务数字账户) or the VAT invoice platform before claiming it ([Shanghai Tax Bureau explanation](https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html), Q12).
+
+Apart from the vouchers above, an ordinary invoice (普通发票) gives no input credit (Reg. Art. 12).
 
 **Farm products (No. 10, from 2026-01-01).** If a special invoice or customs certificate is obtained from a general taxpayer, deduct the VAT shown. If a special invoice is obtained from a small-scale taxpayer taxed at 3%, compute input as the invoice amount × 9% deduction rate. With a farm-product sales or purchase invoice, compute input as the purchase price × 9%. The 9% rate also applies to exempt farm products bought from farmers' cooperatives.
 
@@ -164,7 +182,7 @@ Input tied to non-taxable transactions that block deduction (Reg. Art. 22; No. 2
 
 **Reversal (Reg. Art. 24).** If goods (other than fixed assets) or services whose input was already deducted later suffer an abnormal loss, or are used for welfare, personal consumption or consumption services, reverse (转出) the input in that period. Where the input cannot be identified, use the current actual cost.
 
-**No time limit on confirmation.** For special invoices, customs certificates, motor vehicle invoices and toll e-invoices issued from 1 January 2017, the old certification deadline (the "360-day" window) was abolished ("取消认证确认、稽核比对、申报抵扣的期限"). The taxpayer confirms each voucher's use (用途确认) in the e-tax bureau when filing ([STA announcement 2019 No. 45](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html)). The STA policy library lists this announcement as amended, not repealed. The complete 144-entry attachment to [STA announcement 2026 No. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls) was read on 29 October 2026; it does not list 2019 No. 45. That list check does not waive the actual voucher and taxable-use requirements.
+**No time limit on confirmation.** For special invoices, customs certificates, motor vehicle invoices and toll e-invoices issued from 1 January 2017, the old certification deadline (the "360-day" window) was abolished ("取消认证确认、稽核比对、申报抵扣的期限"). The taxpayer confirms each voucher's use (用途确认) in the e-tax bureau when filing ([STA announcement 2019 No. 45](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html)). The STA policy library lists this announcement as partly in force (部分有效), not repealed. The complete 144-entry attachment to [STA announcement 2026 No. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls) was read on 29 October 2026; it does not list 2019 No. 45. That list check does not waive the actual voucher and taxable-use requirements.
 
 
 ### Fapiao and the fully digitalised e-invoice ([VAT Law Art. 34](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 5, 37, 38](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [STA: nationwide digital e-invoice](https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html); [Shanghai Tax Bureau explanation](https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html))
@@ -192,7 +210,7 @@ Input tied to non-taxable transactions that block deduction (Reg. Art. 22; No. 2
 ### Exemptions ([VAT Law Art. 24–27](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 26–31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))
 
 Statutory exemptions (Law Art. 24):
-1. Farm producers selling their own primary farm products; agricultural ploughing, irrigation, pest control, plant protection, agricultural insurance and related training; breeding and disease control for poultry, livestock and aquatic animals. Resold purchased farm products do **not** qualify (No. 10).
+1. Farm producers selling their own primary farm products; agricultural ploughing, irrigation, pest control, plant protection, agricultural insurance and related training; breeding and disease control for poultry, livestock and aquatic animals. Resold purchased primary farm products, and primary products made from purchased farm products, do **not** qualify ("不属于本项目免征增值税的范围", No. 10 二（一）1).
 2. Medical services provided by medical institutions. For-profit cosmetic medical institutions are excluded (Reg. Art. 27).
 3. Antique and second-hand books; used personal goods sold by natural persons.
 4. Imported instruments and equipment used directly for scientific research, experiments and teaching.
@@ -225,7 +243,11 @@ Rules on using exemptions:
 | Free transfer of goods by a unit or 个体工商户 | Deemed sale at market price | Law Art. 5, 19 |
 | Sales at 13% and 6% not accounted for separately | Highest rate on the whole | Law Art. 12 |
 | Software sold with installation, maintenance or training | Software product rate on the whole | No. 13 三 |
+| Deposit or advance received before the transaction starts, with no invoice issued | Not yet "payment received", which means money received during or after the transaction. Exceptions: prepaid services (next row), an invoice issued first, and large machinery, ships and aircraft with a production period over 12 months, taxed on receipt of payment or the contract payment date | Law Art. 28; Reg. Art. 39; No. 13 四（一） |
 | Prepaid services delivered over time | Liability on the earlier of the day service actually starts and the contract date, on the whole amount received | No. 13 四（二） |
+| Machinery, steel structures or prefabricated buildings sold with installation | Goods rate on the whole | No. 13 三（二） |
+| Express courier services (收派服务) | A logistics support service taxed at 6%, not transport at 9% ("快递企业提供快递服务取得的收入，按照收派服务缴纳", [No. 9 Annex 2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf)). A general taxpayer courier may elect the simplified 3%; the buyer deducts what the special invoice shows | Law Art. 10; No. 9 Annex 2; No. 10 三（一）12 |
+| Staff meals, client dinners, entertainment, food delivery for staff | Input not deductible | Law Art. 22; Reg. Art. 20 |
 | Foreign company sells a service to a Chinese business | Buyer withholds VAT at the applicable rate, unless a domestic agent files | Law Art. 15 |
 | Service to a foreign client not in the Reg. Art. 9 list | Not zero-rated | Reg. Art. 9 |
 | Special invoice requested by an individual consumer | Not allowed; issue an ordinary invoice | Reg. Art. 37 |
@@ -285,7 +307,7 @@ Refuse to:
 | 10 or 15 days | As set by the tax office | Within 15 days from the 1st of the next month | Prepay within 5 days after each period ends |
 | Per transaction | Taxpayers without regular taxable sales | If sales reach the threshold, file by 30 June of the following year | None |
 
-The tax office sets each taxpayer's period according to the amount of tax. Check the tax office's filing calendar for the month, because deadlines that fall on public holidays are published by the tax office. Returns are due even when no tax is payable, or while an exemption applies ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 32: "纳税人在纳税期内没有应纳税款的，也应当按照规定办理纳税申报").
+The tax office sets each taxpayer's period according to the amount of tax. Law Art. 30 removed the old 1-day, 3-day and 5-day periods ([Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202603/t479704.html), Q2: "删除了“1日、3日、5日”三个短期计税期间"). If the last day falls on a public holiday, the deadline moves to the day after the holiday, and three or more consecutive holidays inside the period extend it by the number of holidays ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 109). Check the tax office's filing calendar for the month. Returns are due even when no tax is payable, or while an exemption applies ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 32: "纳税人在纳税期内没有应纳税款的，也应当按照规定办理纳税申报").
 
 **Where to file (Law Art. 29).** Taxpayers with a fixed place of business file where the business is registered or where they reside. Branches in a different county file separately, unless consolidated filing is approved. Taxpayers without a fixed place file where the sale takes place. Natural persons selling or leasing real estate, transferring natural resource rights, or providing construction file where the property or work is. Import VAT is collected by customs.
 
@@ -332,6 +354,16 @@ Cross-border transaction, export/non-resident and source rules are preserved in 
 
 **Case 7: crossing the general taxpayer threshold.** A small-scale company that files monthly has cumulative sales for the 12 months to May 2026 that reach 5,200,000 yuan. That exceeds 500万元 (five million yuan). It must register by the June filing deadline, and general taxpayer status takes effect from 1 May 2026 (the 1st day of the period in which the threshold was exceeded). For a quarterly filer, the period would be the quarter, so status would take effect from 1 April 2026. The May return filed as small-scale must be corrected.
 
+**Case 8: services for a US client, two outcomes.** A Shanghai general taxpayer receives 700,000 yuan (VAT-exclusive) from a US company. If the work is software or information systems services for the US company and is consumed entirely outside China, it is zero-rated (Reg. Art. 9): output VAT nil, and the company declares refund or exemption. If it is general management advice, it is not on the list: output VAT = 700,000 × 6% = 42,000.
+
+**Case 9: courier fees.** The company pays 9,540 yuan for deliveries and receives a special invoice for 收派服务 at 6%. Sales amount = 9,540 ÷ 1.06 = 9,000. Input VAT = 540.
+
+**Case 10: cloud hosting.** A provider charges 10,600 yuan including VAT at 6%. Sales amount = 10,000. Input VAT = 600, deductible with the special invoice.
+
+**Case 11: payroll.** Salaries of 850,000 yuan are paid. Wages are not a taxable transaction (Law Art. 6). Leave them off the VAT return.
+
+**Case 12: small-scale sale with a special invoice.** A small-scale company sells goods for 50,000 yuan (VAT-exclusive) to a general taxpayer that wants a special invoice. It gives up the 1% cut for that sale (STA announcement 2026 No. 4, item 四): VAT = 50,000 × 3% = 1,500, shown on a special invoice. The buyer deducts 1,500, subject to the input tests above.
+
 #### Conservative defaults when facts are missing ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))
 
 - Rate unknown: establish the transaction category and applicable law before computing. Separately, where known sales at different rates have not been accounted for separately, apply the highest rate under VAT Law Art. 12. Missing classification facts alone are not that statutory trigger.
@@ -373,6 +405,21 @@ expected:
   tax_on_whole_sales: 3200
 ```
 
+```oa-check
+name: China2026 courier input and small-scale sale at 3 percent
+inputs:
+  courier_vat_inclusive: 9540
+  small_scale_sale: 50000
+steps:
+  courier_base: courier_vat_inclusive / 1.06
+  courier_input: courier_base * 0.06
+  small_scale_vat: small_scale_sale * 0.03
+expected:
+  courier_base: 9000
+  courier_input: 540
+  small_scale_vat: 1500
+```
+
 ## Ask the client first
 
 ### Ask the client first
@@ -389,33 +436,38 @@ Sources: [VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t47469
 - Are any purchases used for staff welfare, entertainment, meals or loans, or for exempt or simplified-method items?
 - Did you give away goods, intangibles, real estate or financial products free of charge?
 - Did any invoice go out before you were paid? Were you paid before delivery?
+- Small-scale only: did you invoice any sales at 3% (to issue special invoices) instead of the reduced 1%?
+- General taxpayers: have you chosen the simplified method for any activity, and from which month?
 
 
 ## Sources
 
 | Source | Official URL | Read on |
 | --- | --- | --- |
-| VAT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html | 2026-10-29 |
-| Implementation Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html | 2026-10-29 |
-| MOF/STA announcement 2026 No. 10 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html | 2026-10-29 |
-| general taxpayer registration | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html | 2026-10-29 |
+| VAT Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html | 2026-10-31 |
+| Implementation Regulations | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html | 2026-10-31 |
+| MOF/STA announcement 2026 No. 10 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html | 2026-10-31 |
+| general taxpayer registration | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html | 2026-10-31 |
 | MOF/STA announcement 2026 No. 25 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html | 2026-10-29 |
-| MOF/STA announcement 2026 No. 13 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html | 2026-10-29 |
+| MOF/STA announcement 2026 No. 13 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html | 2026-10-31 |
 | scope notes, MOF/STA announcement 2026 No. 9 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html | 2026-10-29 |
-| STA announcement 2026 No. 4 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html | 2026-10-29 |
-| STA announcement 2019 No. 45 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html | 2026-10-29 |
-| STA: nationwide digital e-invoice | https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html | 2026-10-29 |
-| Shanghai Tax Bureau explanation | https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html | 2026-10-29 |
+| STA announcement 2026 No. 4 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html | 2026-10-31 |
+| STA announcement 2019 No. 45 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html | 2026-10-31 |
+| STA: nationwide digital e-invoice | https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html | 2026-10-31 |
+| Shanghai Tax Bureau explanation | https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html | 2026-10-31 |
 | MOF/STA announcement 2026 No. 2 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html | 2026-10-29 |
-| MOF/STA announcement 2026 No. 11 on export VAT and consumption tax | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml | 2026-10-29 |
+| MOF/STA announcement 2026 No. 11 on export VAT and consumption tax | https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml | 2026-10-31 |
 | STA announcement 2026 No. 6 on return forms | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html | 2026-10-29 |
 | Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html | 2026-10-29 |
-| Implementation Rules of the Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-29 |
+| Implementation Rules of the Tax Collection Administration Law | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html | 2026-10-31 |
+| Shanghai Tax Bureau Q&A on old and new VAT law | https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202603/t479704.html | 2026-10-31 |
 | Shanghai Tax Bureau announcement 2026 No. 1 | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html | 2026-10-29 |
 
-| Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf | 2026-10-29 |
+| Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf | 2026-10-31 |
 | Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248210711.pdf | 2026-10-29 |
 | Additional operative source | https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls | 2026-10-29 |
+
+Not yet confirmed: which parts of STA announcement 2019 No. 45 are no longer in force (the policy library marks it partly in force); the detail of the housing rental reliefs kept by No. 10 三（三）5 (announcement 2021 No. 24) and the second-hand car relief kept by No. 10 三（三）7 (announcement 2023 No. 63); the box-level completion of the return forms.
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
