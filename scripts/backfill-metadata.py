@@ -45,7 +45,7 @@ What gets backfilled (missing keys only):
                   us- filename prefix convention matches skills/us/federal).
                 Dirs whose existing convention is "no jurisdiction key"
                 (skills/cross-border/treaty-corridors, skills/foundation/intelligence,
-                skills/templates) are LEFT ALONE and reported — we do not
+                skills/foundation/intelligence) are LEFT ALONE and reported — we do not
                 invent a convention.
 
 Insertion point: after the last tax_year / tax_year_notes / jurisdiction
@@ -126,7 +126,6 @@ FILE_JURISDICTION = {
 LEAVE_DIRS = {
     "skills/cross-border/treaty-corridors",
     "skills/foundation/intelligence",
-    "skills/templates",
     "skills/eu",
 }
 
