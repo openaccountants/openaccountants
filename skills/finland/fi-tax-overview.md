@@ -63,9 +63,9 @@ Classify the question with the Scope table, open the named skill, and take the c
 | Basis | Residents on worldwide income; non-residents on Finnish-source income | [Individual cross-border residence](fi-individual-cross-border-residence.md); [Income Tax Act 1535/1992, sections 9–10][ita] | same |
 | Individual rates | Progressive state tax on earned income plus municipal/parish tax; capital income 30% up to EUR 30,000, 34% above | [Individual income tax](fi-income-tax.md); [Income Tax Act, section 124][ita] | same |
 | Corporate rate | 20% | [Corporate income tax](fi-corporate-income-tax.md); [Income Tax Act, section 124][ita] | same |
-| VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] | same |
-| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) | same |
-| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) | same |
+| VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] | https://www.finlex.fi/fi/lainsaadanto/1993/1501 |
+| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) | The linked skill |
+| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) | The linked skill |
 
 ## Workpaper handoff
 
@@ -125,11 +125,11 @@ The independent source review, corrections and remaining gaps are recorded in th
 | Source | URL | Read on |
 | --- | --- | --- |
 | Income Tax Act 1535/1992, section 124 (capital income, corporate rate) | https://www.finlex.fi/fi/lainsaadanto/1992/1535 | 2026-10-31 |
-| VAT Act 1501/1993, sections 84 and 85 | https://www.finlex.fi/fi/lainsaadanto/1993/1501 | 2026-10-31 |
+| VAT Act 1501/1993, sections 84, 85 and 85a | https://www.finlex.fi/fi/lainsaadanto/1993/1501 | 2026-10-31 |
 | Vero, VAT rates | https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/ | 2026-10-31 |
 | Vero, tax rates on capital income | https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/ | 2026-10-31 |
 
-Not yet confirmed: the 10% rate section number in the VAT Act; the individual and corporate return dates in the table were not re-read here and belong to the linked skills.
+Not yet confirmed: the individual and corporate return dates in the table were not re-read here and belong to the linked skills.
 
 <!-- openaccountants-cta-block -->
 
