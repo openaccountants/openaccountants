@@ -36,6 +36,7 @@ Moldova has two compulsory systems. State social insurance (asigurări sociale d
 | Family doctors practising independently | 24% of income | 2026 | annex 1 pt. 1.3, same URL |
 | Agricultural employers (at least 70% of activity in CAEM groups 01.1-01.6) | 24% in total: 18% from the employer, 6% from the state budget | 2026 | annex 1 pt. 1.5, same URL |
 | Day labourers (Law 22/2018), paid by the beneficiary | 6% of daily pay | 2026 | annex 1 pt. 1.9, same URL |
+| Minimum monthly base per employee | the minimum wage, MDL 6,300, in proportion to time worked; for part-time or reduced hours the contribution is at least 25% of the contribution on the minimum wage | 2026 | Law 489/1999 art. 22(1), same URL; Government Decision 771/2025 |
 | Fixed annual social contribution: IE and farm founders, retail traders, plant buyers, patent holders, individual contracts | MDL 22,878 | 2026 | Law LP320/2025 art. 3(1), (3), https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro |
 | Fixed annual social contribution: justice professionals | MDL 30,966 | 2026 | LP320/2025 art. 3(2), same URL |
 | Fixed annual social contribution: owners or tenants of farmland working it themselves | MDL 5,827 (at least 1/12 a month) | 2026 | LP320/2025 art. 3(3), same URL |
@@ -50,7 +51,7 @@ Moldova has two compulsory systems. State social insurance (asigurări sociale d
 
 ## The taxable base
 
-**Social insurance.** The employer rate applies to the total of salaries and rewards calculated each month for all employees (annex 1 pt. 1.1). No contribution is calculated on the items in annex 3 to Law 489/1999, which include: dividends, interest and other income from property (pt. 21); sick pay (pt. 19); social benefits from public budgets (pt. 20); business-trip and other compensation, except pay for unused leave on dismissal (pt. 3); severance pay within Labour Code limits (pt. 8); copyright payments and civil contracts other than contracts for works or services (pt. 26); grants and free financial aid (pt. 25); union or employer-body aid up to one average monthly wage a year (pt. 28); and employer payments for child care up to MDL 2,500 a month per child under 3 (pt. 42).
+**Social insurance.** The employer rate applies to the total of salaries and rewards calculated each month for all employees (annex 1 pt. 1.1). The monthly base for each employee may not be lower than the minimum wage (MDL 6,300 in 2026), in proportion to the time worked. For an employee on part-time or reduced hours, the contribution may not be less than 25% of the contribution on the minimum wage: at 24%, MDL 1,512 a month at full time and MDL 378 at the 25% floor. Article 22 sets a minimum base only; its former paragraphs (2) and (3) are repealed (Law 489/1999 art. 22(1)). No contribution is calculated on the items in annex 3 to Law 489/1999, which include: dividends, interest and other income from property (pt. 21); sick pay (pt. 19); social benefits from public budgets (pt. 20); business-trip and other compensation, except pay for unused leave on dismissal (pt. 3); severance pay within Labour Code limits (pt. 8); copyright payments and civil contracts other than contracts for works or services (pt. 26); grants and free financial aid (pt. 25); union or employer-body aid up to one average monthly wage a year (pt. 28); and employer payments for child care up to MDL 2,500 a month per child under 3 (pt. 42).
 
 **Health insurance.** The 9% premium is calculated on salary and other rewards before taxes and other deductions are withheld (Law 1593/2002 art. 6). "Other rewards" means any sum other than salary paid by the employer to the employee, and other rights and income paid to individuals, except income under Fiscal Code art. 20, 89, 90 and 90^1 (art. 3). The employer does not pay a health premium of its own; the employee is the payer (annex 1 pt. 2).
 
@@ -86,7 +87,7 @@ No late penalty is charged on social contributions while a transfer or offset re
 - **Foreign workers.** Foreigners with a Moldovan employment contract, permanent residents, beneficiaries of protection and asylum seekers pay health premiums like Moldovan citizens, unless a treaty provides otherwise. Foreigners with temporary residence for family reunion, study, volunteering, religious work or as digital nomads pay like individually insured citizens (Law 1593/2002 art. 10(1)-(2)). Digital nomads become insured after paying the full fixed premium (LP321/2025 art. 4(6)).
 - **Moldovans working abroad.** Citizens outside every payer category who prove more than 183 days abroad in the year may insure by paying MDL 12,636 (LP321/2025 art. 4(5)).
 - **International projects.** Moldovan citizens employed by international organisations and projects are in pt. 1.1 unless a treaty exempts them (annex 1 pt. 1.1; annex 3 pt. 6).
-- **Social security agreements.** Bilateral agreements decide which country's system applies to posted workers; see the pack's cross-border skill (md-cross-border, in preparation).
+- **Social security agreements.** Bilateral agreements decide which country's system applies to posted workers; they are not covered in this pack yet (see [md-cross-border](md-cross-border.md) for income tax).
 
 ## Worked examples
 
@@ -141,7 +142,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 489/1999 on the public social insurance system, consolidated to LP201/2026: art. 28; annex 1 (as replaced, MO 659-661/2025), annex 3 | https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro | 2026-10-31 |
+| Law 489/1999 on the public social insurance system, consolidated to LP201/2026: arts. 22, 28; annex 1 (as replaced, MO 659-661/2025), annex 3 | https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro | 2026-10-31 |
 | Law LP320 of 29 December 2025 on the state social insurance budget for 2026, consolidated to LP211/2026: arts. 3, 4, 15 | https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro | 2026-10-31 |
 | Law 1593/2002 on compulsory health insurance premiums, consolidated: arts. 3, 4, 6, 10, 12, 17, 20, 22, 23; annexes 1 and 2 | https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro | 2026-10-31 |
 | Law LP321 of 29 December 2025 on the compulsory health insurance funds for 2026, consolidated to LP212/2026: arts. 4, 11 | https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro | 2026-10-31 |
@@ -149,7 +150,7 @@ expected:
 | Government Decision 773/2025 (average monthly wage 2026) | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-31 |
 | Government Decision 771/2025 (minimum wage 2026) | https://www.legis.md/cautare/getResults?doc_id=152064&lang=ro | 2026-10-31 |
 
-Not yet confirmed: a minimum contribution base equal to the minimum wage (MDL 6,300; 25% for part-time), which the old version took from a secondary source and which was not found in annex 1 as read; the list of jobs with special working conditions (annex 2 to Law 489/1999, not read); the late-payment rate on percentage health premiums (Law 1593/2002 penalty article not read); which point 1.8 payers LP320/2025 art. 3(1) refers to (annex 1 as read has no pt. 1.8); the contribution rules inside Law 77/2016 for IT park residents and how long that regime runs; the monthly return form and its name (the old version called it IPC21; the Ministry of Finance order was not read); bilateral social security agreements.
+Not yet confirmed: the list of jobs with special working conditions (annex 2 to Law 489/1999, not read); the late-payment rate on percentage health premiums (Law 1593/2002 penalty article not read); which point 1.8 payers LP320/2025 art. 3(1) refers to (annex 1 as read has no pt. 1.8); the contribution rules inside Law 77/2016 for IT park residents and how long that regime runs; the monthly return form and its name (the old version called it IPC21; the Ministry of Finance order was not read); bilateral social security agreements.
 
 <!-- openaccountants-cta-block -->
 
