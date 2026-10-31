@@ -1,0 +1,366 @@
+{
+  "scope": "Independent table/gate/payment/penalty arithmetic; actual entitlement, declaration, administrative route, current period rate and day/holiday inputs remain required. No new special minimum or automatic sanction invented.",
+  "count": 60,
+  "checks": [
+    {
+      "name": "Basque30k twochildren source rate",
+      "actual": "325",
+      "expected": "325",
+      "passed": true
+    },
+    {
+      "name": "Basqueactive disability7points",
+      "actual": "150",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "name": "point reduction not relative13percent reduction",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basque40k twochildren changedprospective rate",
+      "actual": "375",
+      "expected": "375",
+      "passed": true
+    },
+    {
+      "name": "wholepayment not marginalslice",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basque20k exactzero table",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basque20k pluscent firstnonzero",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basquezero table shortcontract floor",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "Basque15percent specialrelationship floor",
+      "actual": "150",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "name": "Basqueparttime alone no2percent inference",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Basqueactive disability highreduction zero floor",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "Basque33percent meets firstdisability gate",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basque65percent highercategory",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "mobility25percent equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basqueage30 qualifies numericalgate",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Basqueage31 fails absentexception",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Navarra30000 higheststrictthreshold27500",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarratwochildren12.6percent",
+      "actual": "315",
+      "expected": "315",
+      "passed": true
+    },
+    {
+      "name": "Navarra30250 equality remains lowerrow",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Navarra30250.01 enters13.7percent",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarra13.7percent payment",
+      "actual": "685/2",
+      "expected": "685/2",
+      "passed": true
+    },
+    {
+      "name": "Navarraparttime zero table floor",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "Navarra17000 equality doesnotcrossfirstthreshold",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Navarra17000.01 crossesfirstthreshold",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarradirector35percent",
+      "actual": "350",
+      "expected": "350",
+      "passed": true
+    },
+    {
+      "name": "Navarraordinaryincome8400 equality",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarra8400.01 fails numericaldependentgate",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Navarradoublefamilylimit",
+      "actual": "16800",
+      "expected": "16800",
+      "passed": true
+    },
+    {
+      "name": "Navarracorrect annualbasis not12monthlybasis",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarraallowableexpenses income test",
+      "actual": "8400",
+      "expected": "8400",
+      "passed": true
+    },
+    {
+      "name": "Navarrapriorlossoffset not deductedfromcurrentincome",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarra disability5point reduction",
+      "actual": "1.5",
+      "expected": "1.5",
+      "passed": true
+    },
+    {
+      "name": "Navarra same2percent floor thenbinds",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "sporadicdailywork forecast",
+      "actual": "8000",
+      "expected": "8000",
+      "passed": true
+    },
+    {
+      "name": "newpension annualisation separatefromannualtax",
+      "actual": "36000",
+      "expected": "36000",
+      "passed": true
+    },
+    {
+      "name": "noquota-prior-withholdingbalancing invented",
+      "actual": "375",
+      "expected": "375",
+      "passed": true
+    },
+    {
+      "name": "Gnominal2026Q4deadline",
+      "actual": "6",
+      "expected": "6",
+      "passed": true
+    },
+    {
+      "name": "Gnominaldate not automatically actualadjusteddeadline",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarraannual190 nominal5Feb2027",
+      "actual": "2027",
+      "expected": "2027",
+      "passed": true
+    },
+    {
+      "name": "AJuly filing10Sep distinct G25Sep",
+      "actual": "15 days, 0:00:00",
+      "expected": "15 days, 0:00:00",
+      "passed": true
+    },
+    {
+      "name": "Bdeclaration ordinary5percent",
+      "actual": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "Bdeclaration3workingday0.5percent",
+      "actual": "5",
+      "expected": "5",
+      "passed": true
+    },
+    {
+      "name": "Bordinary400 notautomaticallyhalved",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Bunderpayment penaltymin100percent",
+      "actual": "1000",
+      "expected": "1000",
+      "passed": true
+    },
+    {
+      "name": "Bunderpayment penaltymax250percent",
+      "actual": "2500",
+      "expected": "2500",
+      "passed": true
+    },
+    {
+      "name": "Avoluntary5percentwithin6months",
+      "actual": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "Avoluntaryafter12months10percent",
+      "actual": "100",
+      "expected": "100",
+      "passed": true
+    },
+    {
+      "name": "Gvoluntary2percentwithin3months",
+      "actual": "20",
+      "expected": "20",
+      "passed": true
+    },
+    {
+      "name": "Gvoluntary4\u201312months5percent",
+      "actual": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "Gvoluntaryafter12months10percent",
+      "actual": "100",
+      "expected": "100",
+      "passed": true
+    },
+    {
+      "name": "A/Gdifferentinterestbases latermonth6 comparison",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "Navarravoluntaryrate1",
+      "actual": "10",
+      "expected": "10",
+      "passed": true
+    },
+    {
+      "name": "Navarravoluntaryrate5",
+      "actual": "50",
+      "expected": "50",
+      "passed": true
+    },
+    {
+      "name": "Navarravoluntaryrate10",
+      "actual": "100",
+      "expected": "100",
+      "passed": true
+    },
+    {
+      "name": "Navarravoluntaryrate15",
+      "actual": "150",
+      "expected": "150",
+      "passed": true
+    },
+    {
+      "name": "Ahiddenwithheldlower125percent",
+      "actual": "1250",
+      "expected": "1250",
+      "passed": true
+    },
+    {
+      "name": "Ghiddenwithheldlower105percent",
+      "actual": "1050",
+      "expected": "1050",
+      "passed": true
+    },
+    {
+      "name": "concealmentexact10percent notstrictabove",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "Navarrawrongperiod55percent separate",
+      "actual": "550",
+      "expected": "550",
+      "passed": true
+    },
+    {
+      "name": "Awrongperiod30percent separate",
+      "actual": "300",
+      "expected": "300",
+      "passed": true
+    }
+  ]
+}

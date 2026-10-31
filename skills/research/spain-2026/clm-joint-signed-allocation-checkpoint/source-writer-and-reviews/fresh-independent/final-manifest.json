@@ -1,0 +1,85 @@
+{
+  "reviewer": "/root/bulgaria_vat_income_independent",
+  "recorded_utc": "2026-10-27T23:05:51.431884+00:00",
+  "verdict": "bounded PASS",
+  "controls": 37,
+  "original_oa_blocks": 2,
+  "current_guide_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "current_readme_sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6",
+  "live_mutations": false,
+  "country_complete": false,
+  "frozen_inputs": [
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/proposed-v1.4.md",
+      "bytes": 470201,
+      "sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/before-v1.3.md",
+      "bytes": 465133,
+      "sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/root-independent/README-proposed.md",
+      "bytes": 8558,
+      "sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/root-independent/README-before.md",
+      "bytes": 8348,
+      "sha256": "66ae1eb7cf60b1b871a670306d7ee444d449cc1cfcc5959201e8c9a4a63657a9"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/frozen-manifest.json",
+      "bytes": 16981,
+      "sha256": "46d97ab56f627114eec9e73187a45a3be082590da5dda6b017cce60adedde4ae"
+    }
+  ],
+  "own_artifacts": [
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/controls.json",
+      "bytes": 3647,
+      "sha256": "b6286a05328593d8cb3e4b6a43168c4e69c1cf10125e74b06fa281bcfc290758"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/exact-diff-ledger.json",
+      "bytes": 18739,
+      "sha256": "6168b7b0c82cee75d2c61c03affc15ce2dab19046bb5e3b7658f15f26fa6ff66"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/findings.json",
+      "bytes": 421,
+      "sha256": "98d7a458a32ff4c4bade4c8b814e3f9524665f3f9ba43cd9dd3bb72d6470416b"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/live-web-open-receipt.txt",
+      "bytes": 13278,
+      "sha256": "b01597cb754aee8581a05e4949498f10b764083fb1738aa1eddbde881a6740fb"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/oa-recomputed.json",
+      "bytes": 2688,
+      "sha256": "66b2446ea1e1f4e8ad1e5fd4a17aa3c5e2b99acec547d5ba7593a305e091c858"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/primary-read-receipts.json",
+      "bytes": 19747,
+      "sha256": "9b66fed0e5d53b47c61c712f6a287848af6dee673b338a68fb317aca76f2ce81"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/report.md",
+      "bytes": 5837,
+      "sha256": "e36a20c0f7b4f09d135c04aac824f2d739d46dbb0766a79d191d6da23e23864c"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/review.py",
+      "bytes": 8019,
+      "sha256": "aea214d85ea18bee77311738c3615e0d97a009aa9647ec2bb2645965d7d98ed1"
+    },
+    {
+      "path": "spain/review/regional-clm-joint-signed-legalbridge/fresh-independent/signed-joint-recomputed.json",
+      "bytes": 756,
+      "sha256": "12b1fe1f20fe9ba6994c991ac9baa715245f11fcea3db1d9801800888ed98b1f"
+    }
+  ]
+}

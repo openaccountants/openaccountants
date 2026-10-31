@@ -1,0 +1,122 @@
+{
+  "monetary-index-cost": {
+    "actual": "107100.000",
+    "expected": "107100",
+    "pass": true
+  },
+  "monetary-index-depreciation": {
+    "actual": "6180.000",
+    "expected": "6180",
+    "pass": true
+  },
+  "monetary-deduction": {
+    "actual": "6920",
+    "expected": "6920",
+    "pass": true
+  },
+  "monetary-disposal": {
+    "actual": "49080",
+    "expected": "49080",
+    "pass": true
+  },
+  "monetary-cap": {
+    "actual": "5000",
+    "expected": "5000",
+    "pass": true
+  },
+  "bad-debt-closing-ceiling": {
+    "actual": "3500.00",
+    "expected": "3500",
+    "pass": true
+  },
+  "bad-debt-addition": {
+    "actual": "1500",
+    "expected": "1500",
+    "pass": true
+  },
+  "domestic-dividend-base": {
+    "actual": "5000.0",
+    "expected": "5000",
+    "pass": true
+  },
+  "domestic-dividend-quota": {
+    "actual": "1200.00",
+    "expected": "1200",
+    "pass": true
+  },
+  "micro-netbase": {
+    "actual": "85000.00",
+    "expected": "85000",
+    "pass": true
+  },
+  "Bizkaia-environmental-credit": {
+    "actual": "29680.0000",
+    "expected": "29680",
+    "pass": true
+  },
+  "AG-environmental-credit": {
+    "actual": "28000.00",
+    "expected": "28000",
+    "pass": true
+  },
+  "BG-surcharge": {
+    "actual": "816.0000",
+    "expected": "816",
+    "pass": true
+  },
+  "BG-increased-quota": {
+    "actual": "46416.00",
+    "expected": "46416",
+    "pass": true
+  },
+  "A-exact-feedback": {
+    "actual": "29432841/111746",
+    "expected": "29432841/111746",
+    "pass": true
+  },
+  "A-excess-reconciliation": {
+    "actual": "55000",
+    "expected": "55000",
+    "pass": true
+  },
+  "A-displayed-quota": {
+    "actual": "45863.39",
+    "expected": "45863.39",
+    "pass": true
+  },
+  "2026-AG-hire": {
+    "actual": "7700.0",
+    "expected": "7700",
+    "pass": true
+  },
+  "2026-AG-special-hire": {
+    "actual": "15400",
+    "expected": "15400",
+    "pass": true
+  },
+  "pension-below-threshold-preferred": {
+    "actual": "100.0",
+    "expected": "100",
+    "pass": true
+  },
+  "pension-below-threshold-other": {
+    "actual": "50.00",
+    "expected": "50",
+    "pass": true
+  },
+  "minimum-credit-available": {
+    "actual": "7000",
+    "expected": "7000",
+    "pass": true
+  },
+  "232-boundary-equal": {
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  "232-next-cent": {
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  }
+}

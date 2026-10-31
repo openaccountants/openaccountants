@@ -1,10 +1,10 @@
 ---
 name: de-einkommensteuer-freelancer
-description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, business expenses including the home office flat rate and the EUR 6 day rate, low-value assets and depreciation (§§ 6, 7), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit, filing deadlines with and without a Steuerberater (§ 149 AO) and the late-filing surcharge (§ 152 AO). Trigger on: Freiberufler, Selbständige, EÜR, Anlage S, Homeoffice-Pauschale, Investitionsabzugsbetrag, Vorauszahlungen, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
-version: 1.2
+description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, sorting a year of bank transactions into receipts and costs, business expenses including the § 4(5) limits (entertainment 70%, gifts EUR 50, fines), the home office flat rate and the EUR 6 day rate, business cars (1% rule, commuting adjustment), business loan interest (§ 4(4a)), low-value assets, the Sammelposten pool and depreciation (§§ 6, 7, including the § 7(2a) electric vehicle schedule), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses and the § 10c lump sum, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit and the Hebesatz floor, filing deadlines with and without a Steuerberater (§ 149 AO), the late-filing surcharge (§ 152 AO), interest, the 1% late payment surcharge and the § 370 and § 378 AO offences. Trigger on: Freiberufler, Selbständige, Einkommensteuer Selbständige, EÜR, Anlage EÜR, Anlage S, Betriebsausgaben, Bewirtung, Arbeitszimmer, Homeoffice-Pauschale, GWG, Investitionsabzugsbetrag, Vorauszahlungen, Gewerbesteuer Anrechnung, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
+version: 1.7
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -19,7 +19,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 
 ## Who this applies to
 
-- **In scope.** One individual resident in Germany with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER.
+- **In scope.** One individual resident in Germany (a residence or habitual abode here, taxed on worldwide income, [§ 1(1) EStG](https://www.gesetze-im-internet.de/estg/__1.html)) with income from self-employed work (§ 18 EStG) or a trade (§ 15 EStG), assessed alone or jointly with a spouse. Tax office: the local Finanzamt; returns go through ELSTER.
 - **Freiberufler ([§ 18(1) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__18.html)).** Self-employed scientific, artistic, writing, teaching or educational work, and the named professions (among them doctors, dentists, vets, lawyers, notaries, engineers, architects, auditors, tax advisers, Heilpraktiker, physiotherapists, journalists, interpreters, translators) "und ähnlicher Berufe". Qualified staff are allowed if the owner leads the work and answers for it with their own expertise. § 18(1) no. 3 adds other self-employed work such as executor or supervisory board fees.
 - **Trade ([§ 15(2) EStG](https://www.gesetze-im-internet.de/estg/__15.html)).** An independent, lasting activity for profit in general economic life that is not farming, a liberal profession or other self-employed work: what is left over. Whether an unnamed job is "similar" is decided case by case: refer it to a Steuerberater, as is splitting one person's mixed freelance and trade work.
 - **The split decides trade tax, registration and the bookkeeping duty, not the tariff.**
@@ -31,7 +31,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Bookkeeping duty by size (§ 141 AO) | None | After a limit in the rates table is crossed and the office gives notice |
 | Profit form | Anlage S | Anlage G |
 
-- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; a partnership that also trades is a trade as a whole, § 15(3) no. 1 EStG): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.
+- **Out of scope, with the skill to use.** Partnerships (GbR, OHG, KG, Partnerschaftsgesellschaft; for partnership commercial classification and the separable own-activity de minimis exception under § 15(3) no. 1 EStG, use `de-partners-and-part-year` and `de-trade-tax`): `de-partners-and-part-year`. Companies (GmbH, UG): `de-corporate-tax`. Wages only: `de-employee-income-tax`. Letting: `de-rental-income`. Legal form: `germany-formation`. VAT returns: `germany-vat-return` and `de-vat-annual-and-special-schemes`. Records, the GWG pool and the car logbook: `germany-bookkeeping`. Contributions: `de-social-contributions`. Prepayment planning: `de-estimated-tax`. Investments: `de-capital-gains`. Crypto: `de-crypto-tax`. Staff: `de-payroll`. Non-residents: `de-non-resident-tax`.
 - **Also refer.** Selling or closing the business, extraordinary income (§ 34), retained profits (§ 34a), the progression clause (§ 32b); electric and hybrid business cars and any dispute over private car use; the exact church tax rate and rounding for a client (state rules).
 
 ## Rates, bands and thresholds
@@ -63,6 +63,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Surcharge cap: share of the excess of the tax over the limit | 11.9% | 2026 | https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 | Church tax for members, on the income tax, by state | 8% or 9% | 2025 booklet | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
 | Trade tax allowance per business (individuals, partnerships) | EUR 24,500 | 2026 | https://www.gesetze-im-internet.de/gewstg/__11.html |
+| Trade tax multiplier (Hebesatz) floor where a municipality sets none higher | 200% for 2026; 280% from 2027 | 2026 | https://www.gesetze-im-internet.de/gewstg/__16.html (§ 16(4) sentence 2, already printed in its 2027 wording); https://www.gesetze-im-internet.de/gewstg/__36.html (§ 36(5b): first applied for 2027, law of 29 June 2026, BGBl. 2026 I Nr. 197) |
 | Bookkeeping duty can start: turnover in the calendar year more than | EUR 800,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__141.html |
 | Or trade profit in the financial year more than | EUR 80,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__141.html |
 | Kleinunternehmer: previous year's turnover not above | EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
@@ -77,11 +78,19 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Meals: arrival and departure day with overnight stay, each; or a day over eight hours away without one | EUR 14 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |
 | Meals abroad, example Austria: full day / arrival, departure or over eight hours | EUR 50 / EUR 33 | 2026 | BMF letter of 5 December 2025 (Sources) |
 | Business trips in a private car, per full km (or actual cost share) | EUR 0.30 | 2026 | EÜR instructions 2026, line 72 (the highest BRKG rate, § 5(2): https://www.gesetze-im-internet.de/brkg_2005/__5.html) |
-| Low-value asset (GWG): expensed in full if cost net of deductible input VAT is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |
+| Business car, private use under the list-price method: per calendar month, share of the domestic list price at first registration; only if business use is over 50% | 1% | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 4) |
+| Business entertainment (Bewirtung): deductible share of the reasonable cost, with a proper receipt | 70% | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) no. 2) |
+| Gifts to non-employees: deductible only if the year's gifts to one person cost not more than | EUR 50 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) no. 1) |
+| Business loan interest, overwithdrawal add-back: share of overwithdrawals | 6% | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(4a)) |
+| The add-back is capped at the year's interest less | EUR 2,050 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(4a)) |
+| Low-value asset (GWG): expensed in full if cost reduced by contained input VAT for the eligibility test is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |
 | Running register needed if a GWG is worth more than | EUR 250 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |
+| Pool (Sammelposten) instead of GWG: assets costing more than EUR 250 and not more than EUR 1,000, written off one fifth a year over five years | EUR 250 to EUR 1,000; 20% a year | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2a)) |
+| Computer hardware and software: useful life that may be taken, full cost in the year bought, still listed on Anlage AVEÜR | One year | 2026 | EÜR instructions 2026, line 34, citing the BMF letter of 22 February 2022 (Sources) |
 | Declining balance, movable assets bought 1 July 2025 to 31 December 2027: up to three times straight-line, not more than | 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html |
+| Electric vehicles bought 1 July 2025 to 31 December 2027: year bought, then each following year | 75%, then 10%, 5%, 5%, 3%, 2% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(2a)) |
 | § 7g investment deduction: share of a future asset's expected cost | 50% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
-| § 7g profit limit: profit before the deduction not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
+| § 7g profit limit: profit calculated without investment deductions or § 7g(2) add-backs not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g cap on open deductions (this year and three before), per business | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g special depreciation over the year bought and four after, in total | 40% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | "Almost only" business use for § 7g means at least | 90% | 2026 | EÜR instructions 2026, line 89 |
@@ -95,6 +104,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Statutory health contribution with sick pay claim: cut by | 4% | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |
 | Cap for health, care and other insurance together | EUR 2,800 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |
 | Lower cap (KSK insured, employer health share, or cost refunds without own expense) | EUR 1,900 | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |
+| Special expenses lump sum (Sonderausgaben-Pauschbetrag) for church tax, donations and the other § 10(1) nos. 4, 5, 7, 9 items, if no higher amount is shown: single / joint | EUR 36 / EUR 72 | 2026 | https://www.gesetze-im-internet.de/estg/__10c.html |
 | Loss carry-back cap, single / joint | EUR 1,000,000 / EUR 2,000,000 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html |
 | Loss carry-forward above EUR 1 million (2 million joint) of total income: share of the excess | 70% for 2024 to 2027; 60% from 2028 | 2026 | https://www.gesetze-im-internet.de/estg/__10d.html ; https://www.recht.bund.de/bgbl/1/2024/108/VO.html |
 | Prepayments set only if at least, per year / per due date | EUR 400 / EUR 100 | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |
@@ -134,33 +144,69 @@ For a trade and for self-employed work the taxed income is the profit (§ 2(2) E
 - **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG).
 - **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out.
 - **Paper EÜR only in hardship cases** (EÜR instructions 2026).
-- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG).
+- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG); records that call trade tax an expense are wrong for any year since 2008. Church tax paid is a special expense instead (§ 10(1) no. 4 EStG). Fines, administrative fines and warning fines set by a German court or authority, an EU member state or an EU body (§ 4(5) no. 8 EStG).
+
+### Sorting a year of bank transactions
+
+Receipts count when received, costs when paid (§ 11 EStG). The table sorts the usual lines of a self-employed person's bank statement; the rules behind each line are in the sections that follow.
+
+| On the bank statement | Treatment |
+| --- | --- |
+| Client payments, fees (Honorar), platform payouts (Stripe, PayPal) | Receipts. Normal VAT scheme: the VAT collected is also a receipt and VAT paid to the tax office an expense. Kleinunternehmer: the gross amount |
+| Rent for business premises, office supplies, software, advertising, bank fees, adviser fees, chamber dues, business liability insurance | Expense in full |
+| Restaurant with a client (Bewirtung) | 70% of the reasonable cost. Needs a receipt naming place, date, guests and reason, with the till receipt. Input VAT is still fully deductible ([§ 15(1a) UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)) |
+| Gifts to clients | In full if the year's gifts to that person cost EUR 50 or less; above that, nothing at all. Record each recipient |
+| Rent of the home, home office | Day rate EUR 6 per day worked mainly at home, max EUR 1,260. Room costs only if the room is the centre of all work |
+| Fuel, car costs | Depends on the car method; see below. No method confirmed: deduct nothing yet |
+| Laptop, phone, furniture | Over EUR 800 net: depreciate (computers and software: one year allowed). EUR 800 or less: expense now or pool |
+| Health, care, pension insurance (Krankenkasse, DRV, KSK) | Not a business expense. Special expense, below |
+| Income tax, surcharge, church tax, prepayments | Never a business expense (§ 12 no. 3 EStG). Church tax paid is a special expense (§ 10(1) no. 4 EStG) |
+| Trade tax (Gewerbesteuer) | Never deductible (§ 4(5b) EStG) |
+| Fines from a court or authority | Not deductible (§ 4(5) no. 8 EStG) |
+| Transfers between own accounts, loan principal, private withdrawals | Leave out of ordinary cash receipts and expenses, but record withdrawals and deposits separately: they feed the § 4(4a) test below |
+| Wages, rent received, interest, dividends | Not business income. Other forms (Anlage N, V, KAP) |
+| Cash withdrawals | Ask what the cash paid for. Default: leave out |
 
 ### VAT status changes every EÜR figure (§ 19 UStG)
 
 - **Both limits must be met**; a turnover exactly at a limit is still inside. The receipt that crosses a limit in the current year is already taxed normally; earlier receipts stay exempt (EÜR instructions, line 12). Opting out binds for at least five calendar years (§ 19(3) UStG).
 - **Kleinunternehmer.** Receipts go on line 12 at the gross amount received. Its sales are exempt, so input VAT is not deductible ([§ 15(2) no. 1 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)): every cost counts gross.
 - **Normal VAT scheme.** VAT collected and VAT refunded are receipts (form lines 17, 18); deductible input VAT and VAT paid to the office are expenses (lines 58, 59), with the ten-day rule of § 11(2) sentence 2 EStG at the year end.
-- **The EUR 800 GWG test** uses cost less deductible input VAT only (§ 6(2) EStG: "vermindert um einen darin enthaltenen Vorsteuerbetrag"), so a Kleinunternehmer tests the gross price. Example: a chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) is above EUR 800 for a Kleinunternehmer and must be depreciated or pooled; a business in the normal scheme records EUR 800 and expenses it in full.
+- **The EUR 800 GWG test** uses cost reduced by the input VAT contained in the price (§ 6(2) EStG: "vermindert um einen darin enthaltenen Vorsteuerbetrag"), including where it is not recoverable. Keep eligibility separate from the deductible expense: [§ 9b(1) EStG](https://www.gesetze-im-internet.de/estg/__9b.html) excludes recoverable VAT from acquisition cost; irrecoverable VAT remains in cost. An otherwise eligible self-usable business chair at EUR 952 gross (EUR 800 plus 19% VAT, [§ 12(1) UStG](https://www.gesetze-im-internet.de/ustg_1980/__12.html)) meets the EUR 800 test in both cases. A Kleinunternehmer can choose to expense the full EUR 952; a business entitled to full input-VAT credit expenses EUR 800 and claims the EUR 152 VAT separately.
 
 ### Business expenses (Betriebsausgaben)
 
 Business expenses are the costs caused by the business (§ 4(4) EStG); § 4(5) limits some. Home office room costs, gifts and entertainment must be recorded one by one and apart from other expenses, or the deduction is lost (§ 4(7) EStG).
 
 - **Home office.** Room is the centre of all work: actual costs or the EUR 1,260 flat amount, less one twelfth per full month it is not. Otherwise no room costs, only the EUR 6 day rate (§ 4(5) no. 6c): for a day worked mainly at home without visiting a first place of work (also on a day away if no other workplace is available for good). One day rate per day, and none so far as room costs are deducted.
-- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first kilometre, one way, not for flights. For a business car, the costs above the allowance are added back; list-price method and logbook: `germany-bookkeeping`.
-- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; nothing for eight hours or less; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026.
+- **Commuting** to one's own premises uses the employee allowance rules of § 9 EStG through § 4(5) no. 6: EUR 0.38 from the first full kilometre, one way, not for flights. Apply the business-car adjustment below; the private-use amount is separate. The existing `germany-bookkeeping` record-keeping route does not replace this computation.
+
+**Business-car commuting adjustment, ordinary combustion car.** In addition to the separate private-use add-back, § 4(5) no. 6 EStG disallows `max(0, D − A)` for travel between home and the business premises. Under the list-price method, `D = 0.0003 × domestic list price at first registration × full one-way kilometres × calendar months`. `A` is the statutory commuting allowance: for this ordinary car case, `EUR 0.38 × full one-way kilometres × actual commuting days`, applying the § 9(1) no. 4 distance and benefit-reduction conditions. When private use is valued under § 6(1) no. 4 sentence 1 or 3, including the logbook method, use the actual documented costs of these commuting trips as `D` instead. Electric/hybrid reductions and family-home trips need their separate rules.
+
+For a stipulated ordinary car with a EUR 40,000 list price, 20 full km, 12 months and 200 commuting days, `D = 2,880`, `A = 1,520`, and the extra nondeductible amount is EUR 1,360. With actual/logbook commuting costs of EUR 1,000 the extra amount is zero; with EUR 2,000 it is EUR 480. These amounts are separate from the private-use add-back.
+- **Cars.** A car used more than 50% for business can be a business asset: all its costs are expenses and private use is added back at 1% of the gross domestic list price at first registration per calendar month ([§ 6(1) no. 4 EStG](https://www.gesetze-im-internet.de/estg/__6.html)), or by logbook. A private car used for business trips: EUR 0.30 per km or the actual cost share. Home-to-premises travel uses the commuting allowance and, for a business car, the adjustment above. Electric and hybrid cars have special rules: refer. No method confirmed: deduct nothing yet.
+- **Entertainment (Bewirtung)** of business contacts (§ 4(5) no. 2): 70% of the reasonable cost, with a receipt naming place, date, guests and reason and the till receipt attached. The 30% cut does not touch the input VAT, which stays fully deductible ([§ 15(1a) UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)).
+- **Gifts** to people who are not employees (§ 4(5) no. 1): deductible only if the year's gifts to that person cost EUR 50 or less; one euro over and the whole amount is lost. Record each recipient (§ 4(7)).
+- **Business loan interest (§ 4(4a) EStG).** Interest is deductible, but overwithdrawals cut it, also under the EÜR: an overwithdrawal is the excess of withdrawals over profit plus deposits for the year. The statutory add-back is 6% of the current year's overwithdrawals plus prior overwithdrawals less prior underwithdrawals, capped at the year's interest less EUR 2,050. Profit for this test excludes the add-back itself. Interest on loans that financed fixed assets is unaffected. The complete multi-year balance and mixed-debt allocation method is not set out here: refer.
+- **Phone and internet.** Deduct the business share shown by records. The employee flat rate from the wage tax guidelines is not a rule for the self-employed.
+- **Mixed and unknown items.** Default to no deduction until the client confirms the business share (§ 12 no. 1 EStG keeps private living costs out).
+- **Meals** on business trips (§ 4(5) no. 5 with § 9(4a)): flat amounts only; for a day without an overnight, nothing for eight hours or less. The EUR 14 arrival/departure branch instead requires an overnight away from home on that, preceding or following day; they stop after three months at one place; abroad, the country amounts in the ministry's letter of 5 December 2025, in force from 1 January 2026.
 - **Business trips** are not commuting: every kilometre counts, at EUR 0.30 or the actual cost share.
 - **Flat expense shares** for writers, journalists, side-line teachers and examiners replace all actual expenses of that activity. They rest on a ministry letter of 6 April 2023 (BStBl I S. 671) that the 2026 EÜR instructions cite, not on the statute.
 
 ### Assets: GWG, depreciation and the Investitionsabzugsbetrag
 
-- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool instead (`germany-bookkeeping`). Other assets are depreciated evenly over their useful life, by months in the year bought ([§ 7(1) EStG](https://www.gesetze-im-internet.de/estg/__7.html)), or by the 30% declining balance for movables bought 1 July 2025 to 31 December 2027 (§ 7(2)).
-- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. The EUR 200,000 profit limit is a cliff (EUR 200,001 means no deduction that year); the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).
+- **GWG** is tested asset by asset and is a choice. § 6(2a) offers a yearly pool (Sammelposten) instead: every asset of the year costing more than EUR 250 and not more than EUR 1,000 goes into one pool, written off at one fifth a year over the year formed and the four after, whatever happens to the single asset (`germany-bookkeeping` for the records). Other assets are depreciated evenly over their useful life, by months in the year bought ([§ 7(1) EStG](https://www.gesetze-im-internet.de/estg/__7.html)), or by the 30% declining balance for movables bought 1 July 2025 to 31 December 2027 (§ 7(2)).
+- **Computers and software.** A useful life of one year may be taken (EÜR instructions 2026, line 34, citing the BMF letter of 22 February 2022): the full cost is an expense in the year bought, and the asset is still listed on Anlage AVEÜR.
+- **Electric vehicles** bought 1 July 2025 to 31 December 2027 may be written off on the fixed schedule of § 7(2a): 75% in the year bought, then 10%, 5%, 5%, 3% and 2% in the five following years. Not alongside special depreciation on the same asset (§ 7(2a) sentence 2).
+- **§ 7g investment deduction ([§ 7g EStG](https://www.gesetze-im-internet.de/estg/__7g.html)).** Up to 50% of a planned movable asset's expected cost comes off profit in advance. Test the EUR 200,000 profit limit without both investment deductions and § 7g(2) add-backs; a tested profit of EUR 200,001 fails for that year; the EUR 200,000 cap on open deductions is a different rule with the same number. A deduction may create a loss. Not bought by the end of the third year after: it is undone in the year taken (§ 7g(3)). In the year bought, up to the same share of the real cost is added back (not more than the open deductions) and the cost may be cut by as much (§ 7g(2)). The asset must be let or used only or almost only (at least 90%) in a German establishment until the end of the year after purchase (§ 7g(4)). Special depreciation of up to 40% also needs the profit limit met in the year before purchase (§ 7g(5), (6)).
 
 ### From profit to taxable income
 
 The order is set by [§ 2 EStG](https://www.gesetze-im-internet.de/estg/__2.html): income of each type (profit for a business; receipts less Werbungskosten for a job, letting and the rest, [§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)) → total income (§ 2(3)) → less losses, special expenses and extraordinary burdens = income (§ 2(4)) → less child allowances = taxable income (§ 2(5)) → tariff, less reductions such as the § 35 credit = tax to be assessed (§ 2(6)) → less prepayments and tax withheld. The tariff works on taxable income, never on turnover or profit. Flat-taxed investment income stays outside (§ 2(5b); `de-capital-gains`).
+
+- **Special expenses** are the pension and health items below, plus church tax paid, donations and the other § 10(1) nos. 4, 5, 7 and 9 items; for that second group the office deducts at least the EUR 36 lump sum (EUR 72 under a joint assessment) if no higher amount is shown ([§ 10c EStG](https://www.gesetze-im-internet.de/estg/__10c.html)). Extraordinary burdens and child allowances against Kindergeld: `de-employee-income-tax`.
+- **Order of the tax step.** Tariff (or splitting); for a trader less the § 35 credit; then the surcharge on the tax after the credit, and church tax on the tax before the credit (§ 51a(2) EStG); then less prepayments paid.
 
 ### Special expenses: pension and health insurance
 
@@ -184,7 +230,7 @@ Income tax is reduced by four times the trade tax base amount (Messbetrag) set f
 - **Forms**, as named in ELSTER's instructions for the 2025 return, the latest published: main form ESt 1 A; Anlage S (self-employed work) or Anlage G (trade, including the § 35 data); Anlage EÜR with Anlage AVEÜR, one set per business; Anlage Vorsorgeaufwand; Anlage Sonderausgaben (church tax, donations, own training).
 - **Who must file** ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)): without wages, if total income exceeds the basic allowance (twice it for a joint assessment); also after a loss notice for the year before, and whenever the office asks (§ 149(1) AO).
 - **Electronic filing is a duty** with business income ([§ 25(4) EStG](https://www.gesetze-im-internet.de/estg/__25.html)), except in the employee cases of § 46(2) nos. 2 to 8; the office can waive it for hardship.
-- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; if such income is not more than EUR 410 in total it is taken off again. Neither helps someone without wages.
+- **Side income next to a job** ([§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)): an employee must be assessed if income without wage tax is more than EUR 410; the separate § 46(3) deduction covers eligible taxable non-wage income not assessed under § 32d(6), where that eligible income totals no more than EUR 410. Reduce the deduction by the part of the age-relief amount exceeding the wage-based component under § 24a sentence 5, using wages excluding § 19(2) pension remuneration, and by the § 13(3) amount (§ 46(3) sentence 2). Neither helps someone without wages.
 
 | Deadline | 2026 return | 2025 return | Source |
 | --- | --- | --- | --- |
@@ -206,17 +252,24 @@ Income tax is reduced by four times the trade tax base amount (Messbetrag) set f
 | Minimum per started month for a yearly return | EUR 25 | § 152(5) sentence 2 |
 | Highest surcharge per return | EUR 25,000 | § 152(10) |
 | Interest on a balance or refund, per full month (1.8% a year) | 0.15% | [§ 238(1a) AO](https://www.gesetze-im-internet.de/ao_1977/__238.html) |
+| Interest base: the balance rounded down to a multiple of | EUR 50 | § 238(2) AO |
+| Late payment surcharge per started month, on the overdue amount rounded down to a multiple of EUR 50 | 1% | [§ 240(1) AO](https://www.gesetze-im-internet.de/ao_1977/__240.html) |
+| Reckless understatement (leichtfertige Steuerverkürzung): fine of up to | EUR 50,000 | [§ 378(2) AO](https://www.gesetze-im-internet.de/ao_1977/__378.html) |
 
 - **May or must.** The surcharge may be set for any late return unless the delay is excusable (§ 152(1)). It is compulsory after 14 months (or when a return called in early misses its date, § 152(2) no. 3), unless the deadline was extended, the tax is nil or below, or the tax is not above prepayments plus tax withheld (§ 152(3)); it then stays possible at discretion.
-- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one.
-- **Interest** starts 15 months after the end of the tax year and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count.
-- **Late payment** of a balance or a prepayment carries the late payment surcharge for each started month ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).
+- **Example.** A 2026 return without an adviser filed three months and five days after Monday 2 August 2027, balance EUR 2,000: 0.25% x 2,000 = EUR 5 a month, below the EUR 25 minimum, so 4 started months x EUR 25 = EUR 100, if the office sets one. The surcharge is rounded down to whole euros (§ 152(5) AO).
+- **Interest** starts 15 months after the end of the tax year (1 April 2028 for tax year 2026) and runs until the assessment takes effect ([§ 233a(2) AO](https://www.gesetze-im-internet.de/ao_1977/__233a.html)); only full months count, on the balance rounded down to EUR 50. Refunds earn the same.
+- **Late payment** of a balance or a prepayment carries a surcharge of 1% for each started month on the overdue amount rounded down to EUR 50 ([§ 240 AO](https://www.gesetze-im-internet.de/ao_1977/__240.html)).
+- **Wrong returns.** Tax evasion is a crime ([§ 370 AO](https://www.gesetze-im-internet.de/ao_1977/__370.html)). Reckless understatement is an administrative offence with a fine of up to EUR 50,000 ([§ 378 AO](https://www.gesetze-im-internet.de/ao_1977/__378.html)). Either case: refer.
 
 ## Cross-border points
 
 - This skill assumes full German residence for the whole year. A move to or from Germany in the year: `de-partners-and-part-year`. Non-residents with German freelance income: `de-non-resident-tax`. Treaty withholding: `de-treaty-withholding-rates`. Leaving with large holdings: `leaving-germany-exit-tax`.
+- **Non-residents.** A person without a German home or habitual abode is taxed only on German income, including profit from a German permanent establishment or self-employed work done in Germany ([§ 49 EStG](https://www.gesetze-im-internet.de/estg/__49.html)): `de-non-resident-tax`.
+- **Foreign clients.** Fees from foreign clients for work done in Germany by a resident are German income in full. VAT on cross-border services: `germany-vat-return`.
+- **Foreign tax and a foreign establishment.** Foreign tax credits (§ 34c EStG) are in `de-non-resident-tax`. If a treaty exempts the profit of a foreign establishment, test progression separately under § 32b EStG, including its statutory exceptions; exemption does not itself establish progression. Refer for that treaty and progression assessment.
 - Splitting needs both spouses fully liable to German tax (§ 26 EStG).
-- § 7g needs the asset used in a domestic establishment (§ 7g(4)).
+- Under § 7g, the own-use alternative requires the qualifying business use in a domestic establishment; letting is a separate statutory alternative for the required period (§ 7g(1), (4), (6)). Apply the main method's other asset, profit, timing, use and reporting conditions to the actual arrangement; this does not establish eligibility for a particular foreign leasing arrangement.
 - Meals abroad use the country amounts of the BMF letter of 5 December 2025, not the German flat rates.
 - Foreign income exempt under a treaty can still raise the rate through § 32b (progression clause): refer.
 - Selling to EU clients changes the VAT treatment, not the income tax: `germany-vat-return`.
@@ -304,13 +357,78 @@ expected:
 
 A married couple with the same EUR 100,000 joint taxable income under splitting pays twice the tax on EUR 50,000: 2 x 10,548 = EUR 21,096, against EUR 30,864 for one single person; their EUR 40,700 surcharge limit is not exceeded.
 
+**Example 4: Freiberufler designer, from the bank statement to the balance due.** Anna is a self-employed designer in Hamburg, single, no church, normal VAT scheme. 2026 fees net of VAT EUR 72,000. Ordinary costs (software, studio share, insurance, adviser) EUR 9,000. A client dinner EUR 400 net. A gift to one client EUR 80. 140 days worked mainly at home without going to the studio, no separate room. All VAT she collected in 2026 she also paid over in 2026, so VAT nets to nil in the EÜR. A laptop for EUR 1,800 net. Basic health and care cover per the insurer's certificate (already net of the 4% cut) EUR 7,200. Private pension (Rürup) EUR 3,000. Prepayments paid EUR 10,000. (Invented case.) Dinner: 70% x 400 = EUR 280. Gift: over EUR 50, so EUR 0. Home office: 140 x 6 = EUR 840. Laptop: one-year life, EUR 1,800. Profit: 72,000 - 9,000 - 280 - 0 - 840 - 1,800 = EUR 60,080. Taxable income: 60,080 - 7,200 - 3,000 - 36 (lump sum) = EUR 49,844, zone 3. z = 3.2045; tax = (173.10 x 3.2045 + 2,397) x 3.2045 + 1,034.87 = 10,493.59, so EUR 10,493. Below EUR 20,350: no surcharge. Balance: 10,493 - 10,000 = EUR 493, due one month after the notice.
+
+```oa-check
+name: DE 2026 Freiberufler designer, single, profit from EÜR items, zone 3
+inputs:
+  fees: 72000
+  ordinary_costs: 9000
+  dinner: 400
+  gift: 80
+  home_days: 140
+  laptop: 1800
+  basic_cover: 7200
+  pension: 3000
+  prepaid: 10000
+steps:
+  - dinner_deductible: dinner * 0.70
+  - gift_deductible: 0
+  - home_office: min(home_days * 6, 1260)
+  - profit: fees - ordinary_costs - dinner_deductible - gift_deductible - home_office - laptop
+  - taxable: floor(profit - basic_cover - pension - 36)
+  - z: (taxable - 17799) / 10000
+  - tax: floor((173.10 * z + 2397) * z + 1034.87)
+  - balance: tax - prepaid
+expected:
+  profit: 60080
+  taxable: 49844
+  tax: 10493
+  balance: 493
+```
+
+`gift_deductible` is 0 because the EUR 80 gift is over the EUR 50 limit, so none of it counts.
+
+**Example 5: sole trader with the § 35 credit capped by the trade tax payable, Hebesatz 360%.** Bernd runs an online shop in a town with a trade tax multiplier of 360%. 2026 profit EUR 95,000, his only income; no trade tax add-backs. Single, church member at 9%. Special expenses: basic health and care cover EUR 9,000, pension EUR 6,000. 2026 is his first year of trading, so no church tax or prepayments were paid in it and the EUR 36 lump sum applies. (Invented case; the multiplier is an input, each town sets its own.) Trade tax: 95,000 - 24,500 = 70,500 x 3.5% = Messbetrag EUR 2,467.50; x 360% = EUR 8,883. Not deductible, so profit stays EUR 95,000. Taxable income: 95,000 - 9,000 - 6,000 - 36 = EUR 79,964, zone 4: 0.42 x 79,964 - 11,135.63 = 22,449.25, so EUR 22,449. Credit: 4 x 2,467.50 = EUR 9,870. Cap on the trade share: all income is trade, so EUR 22,449. Cap on trade tax payable: EUR 8,883. The lowest is EUR 8,883; the other EUR 987 is lost. Income tax 22,449 - 8,883 = EUR 13,566. Below EUR 20,350: no surcharge. Church tax at 9% on the tax before the credit: 9% x 22,449 = EUR 2,020.41 (state rounding rules may differ). Compare Example 3: at a Hebesatz of 400% the credit absorbs the trade tax exactly; below 400% the trade tax payable is the binding cap and part of the credit is lost.
+
+```oa-check
+name: DE 2026 sole trader, § 35 credit capped by trade tax payable, church tax base
+inputs:
+  profit: 95000
+  hebesatz: 3.60
+  basic_cover: 9000
+  pension: 6000
+steps:
+  - trade_income: floor(profit / 100) * 100
+  - messbetrag: (trade_income - 24500) * 0.035
+  - trade_tax: messbetrag * hebesatz
+  - taxable: floor(profit - basic_cover - pension - 36)
+  - tariff_tax: floor(0.42 * taxable - 11135.63)
+  - credit: min(4 * messbetrag, tariff_tax, trade_tax)
+  - income_tax: tariff_tax - credit
+  - church_tax: tariff_tax * 0.09
+expected:
+  messbetrag: 2467.50
+  trade_tax: 8883
+  taxable: 79964
+  tariff_tax: 22449
+  credit: 8883
+  income_tax: 13566
+  church_tax: 2020.41
+```
+
+In `credit`, the second term is the tax on trade income: here trade income is all the income, so the share is the whole tariff tax.
+
 ## Ask the client first
 
 - What exactly do you do, and on what qualification? Is a trade registered?
 - EÜR or books? Any notice from the tax office to keep books?
 - Turnover in 2025 and expected for 2026? Small-business VAT rule (§ 19 UStG) used, or opted out?
 - Other income this year: job, pension, rent, investments? Married or registered partner, wanting joint assessment? Children?
-- Church member, and which federal state? Health and pension cover: statutory, private, professional scheme, Künstlersozialkasse?
+- Church member, and which federal state? Health and pension cover: statutory, private, professional scheme, Künstlersozialkasse? The insurers' annual certificates?
+- Home office: days worked mainly at home, and is a separate room the centre of all work?
+- Client dinners, gifts and their receipts and recipients? Business loans, and withdrawals and deposits for the year? What did cash withdrawals pay for?
+- Car method, business-use share, domestic list price at first registration, calendar months, full one-way distance and commuting days? For actual/logbook valuation, the costs attributable to those trips?
 - Prepayments set? A loss carried from earlier years? Is the 2025 return filed, and does a Steuerberater prepare your returns?
 
 ## Sources
@@ -318,6 +436,12 @@ A married couple with the same EUR 100,000 joint taxable income under splitting 
 | Source | URL | Read on |
 | --- | --- | --- |
 | EStG § 2, § 4, § 6, § 7, § 7g, § 9, § 10, § 10d, § 11, § 12, § 15, § 18, § 25, § 26, § 32a, § 35, § 36, § 37, § 46, § 51a | https://www.gesetze-im-internet.de/estg/ | 2026-10-26 |
+| EStG § 1 (residence), § 10c (EUR 36 lump sum), § 49 (German income of non-residents) | https://www.gesetze-im-internet.de/estg/ | 2026-10-23 |
+| EStG § 4(4a) (overwithdrawals, 6%, EUR 2,050), § 4(5) nos. 1, 2, 8 (gifts, entertainment, fines), § 6(1) no. 4 (1% rule), § 6(2a) (Sammelposten), § 7(2a) (electric vehicles) | https://www.gesetze-im-internet.de/estg/__4.html ; https://www.gesetze-im-internet.de/estg/__6.html ; https://www.gesetze-im-internet.de/estg/__7.html | 2026-10-31 |
+| GewStG § 16(4), § 36(5b) (Hebesatz floor 280% first applied for 2027) | https://www.gesetze-im-internet.de/gewstg/__16.html ; https://www.gesetze-im-internet.de/gewstg/__36.html | 2026-10-31 |
+| BGBl. 2026 I Nr. 197, law of 29 June 2026 (Hebesatz floor 200 to 280) | https://www.recht.bund.de/bgbl/1/2026/197/VO.html | 2026-10-23 |
+| AO § 238(2), § 240 (late payment 1%, EUR 50 rounding), § 370, § 378 (evasion, reckless understatement) | https://www.gesetze-im-internet.de/ao_1977/ | 2026-10-31 |
+| UStG § 15(1a) (input VAT on entertainment) | https://www.gesetze-im-internet.de/ustg_1980/__15.html | 2026-10-23 |
 | EStDV § 56, § 60 | https://www.gesetze-im-internet.de/estdv_1955/ | 2026-10-26 |
 | AO § 108, § 109, § 138, § 140, § 141, § 149, § 152, § 233a, § 238, § 240 | https://www.gesetze-im-internet.de/ao_1977/ | 2026-10-26 |
 | EGAO Art. 97 § 36 | https://www.gesetze-im-internet.de/aoeg_1977/art_97__36.html | 2026-10-24 |
@@ -332,8 +456,10 @@ A married couple with the same EUR 100,000 joint taxable income under splitting 
 | BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-26 |
 | BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-24 |
 | ELSTER help, 2025 income tax return | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
+| EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
+| EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |
 
-Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24).
+Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24); the one-year life for computers and software, which rests on the BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, line 34, not on the statute.
 
 <!-- openaccountants-cta-block -->
 

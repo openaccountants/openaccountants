@@ -1,0 +1,217 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Arrendamiento de inmuebles destinados a vivienda
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 4. Rendimientos del capital inmobiliario
+
+Reducciones del rendimiento neto
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Arrendamiento de inmuebles destinados a vivienda
+
+Normativa: Art. 23.2 Ley IRPF
+
+Delimitación de "arrendamiento de un bien inmueble destinado a vivienda":
+
+Se considera que se trata de un arrendamiento de un bien inmueble destinado a vivienda cuando, de acuerdo con lo dispuesto en el artículo 2 de la Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos (LAU), el arrendamiento recaiga “sobre una edificación habitable cuyo destino primordial sea satisfacer la necesidad permanente de vivienda del arrendatario”.
+
+Por su parte, ha de tenerse en cuenta que el artículo 3 de la LAU dispone que “se considera arrendamiento para uso distinto del de vivienda, aquel arrendamiento que recayendo sobre una edificación tenga como destino primordial uno distinto del establecido en el artículo anterior”. Añadiendo además que “en especial, tendrán esta consideración los arrendamientos de fincas urbanas celebrados por temporada, sea esta de verano o cualquier otra”. Por ello, en ningún caso resultará aplicable la reducción señalada cuando el arrendamiento del inmueble se celebre por temporada, sea ésta de verano, o cualquier otra.
+
+Precisión: arrendamiento de vivienda a una persona jurídica
+
+Como regla general, no resulta aplicable la citada reducción en la medida en que, al tratarse de una persona jurídica, no se cumplen los requisitos consistentes en que el inmueble se destine a la vivienda y que el uso exclusivo de la misma recaiga en la persona física determinada en el contrato de arrendamiento.
+
+Tampoco resulta aplicable dicha reducción cuando el arrendamiento del inmueble se realice a una sociedad para un destino genérico de utilización por “sus empleados”. 
+
+Sin embargo, la reducción sí resultará aplicable sobre los rendimientos netos derivados del arrendamiento de bienes inmuebles cuando siendo el arrendatario una persona jurídica, quede acreditado que el inmueble se destina a la vivienda de determinadas personas físicas. Esto es, cuando desde el primer momento quede plenamente identificada la finalidad del arrendamiento en los términos exigidos por la Ley del IRPF constando el uso exclusivo de la vivienda para una persona física determinada (Criterio fijado por el Tribunal Económico-Administrativo Central, en su Resolución de 8 de septiembre de 2016, en recurso extraordinario de alzada para la unificación de criterio).
+
+En los supuestos de arrendamiento de bienes inmuebles destinados a vivienda, el rendimiento neto positivo, calculado por diferencia entre la totalidad de ingresos íntegros y los gastos necesarios que tengan la consideración de deducibles en los términos anteriormente comentados, se reducirá en alguno de los porcentajes que siguientes, atendiendo a la fecha en la que se haya celebrado el contrato:
+
+Atención: desde el 1 de enero de 2024, se aplican nuevos porcentajes de reducción por arrendamiento de inmuebles destinados a vivienda para los contratos que hayan sido celebrados con posterioridad al 26 de mayo de 2023, de acuerdo con la disposición final novena de la Ley 12/2023, de 24 de mayo, por el derecho a la vivienda (BOE de 15 de mayo). 
+
+Contratos de arrendamiento de vivienda celebrados a partir del 26 de mayo de 2023
+
+Con carácter general, se fija una reducción del 50 por 100.
+
+No obstante, en su lugar, podrá aplicarse alguno de los siguientes porcentajes incrementados si en el momento de celebrar el contrato se cumplen todos los requisitos que se señalan a continuación:
+
+En un 90 por 100 cuando se haya formalizado por el mismo arrendador un nuevo contrato de arrendamiento sobre una vivienda situada en zonas de mercado residencial tensionado, en el que la renta inicial se hubiera rebajado en más de un 5 por 100 en relación con la última renta del anterior contrato de arrendamiento de la misma vivienda, una vez aplicada, en su caso, la cláusula de actualización anual del contrato anterior.
+
+En un 70 por 100 cuando, no cumpliéndose los requisitos de la letra anterior, concurra alguna de las siguientes circunstancias:
+
+Cuando el arrendatario sea una persona física:
+
+Que el arrendador alquile por primera vez la vivienda, y
+
+Que la vivienda esté situada en una zona de mercado residencial tensionado y,
+
+Que el arrendatario tenga una edad comprendida entre 18 y 35 años.
+
+Cuando existan varios arrendatarios de una misma vivienda, esta reducción se aplicará sobre la parte del rendimiento neto que proporcionalmente corresponda a los arrendatarios que cumplan los requisitos previstos en esta letra.
+
+Cuando el arrendatario sea una Administración Pública o entidad sin fines lucrativos a las que sea de aplicación el régimen especial regulado en el título II de la Ley 49/2002, de 23 de diciembre, de régimen fiscal de las entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo, que destine la vivienda a alguno de los siguientes fines:
+
+Al alquiler social con una renta mensual inferior a la establecida en el programa de ayudas al alquiler del plan estatal de vivienda, o
+
+Al alojamiento de personas en situación de vulnerabilidad económica a que se refiere la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital, o
+
+cuando la vivienda esté acogida a algún programa público de vivienda o calificación en virtud del cual la Administración competente establezca una limitación en la renta del alquiler.
+
+En un 60 por 100 cuando, no cumpliéndose los requisitos de las letras anteriores, la vivienda hubiera sido objeto de una actuación de rehabilitación que hubiera finalizado en los dos años anteriores a la fecha de celebración del contrato.
+
+A estos efectos, se estará al concepto de rehabilitación previsto en el apartado 1 del artículo 41 del Reglamento del IRPF.
+
+Precisiones:
+
+La reducción será aplicable mientras se sigan cumpliendo los requisitos establecidos con anterioridad.
+
+Las zonas de mercado residencial tensionado a las que podrá resultar de aplicación esta reducción serán las recogidas en la resolución que, de acuerdo con lo dispuesto en la legislación estatal en materia de vivienda, apruebe el Ministerio de Vivienda y Agenda Urbana.
+
+Puede consultar dichas zonas de mercado residencial tensionado en el siguiente enlace: https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi/consultar-zonas-de-mercado-residencial-tensionado
+
+En ningún caso resultarán de aplicación estas reducciones en relación con los contratos de arrendamiento que incumplan lo dispuesto en el apartado 6 del artículo 17 de la Ley de Arrendamientos Urbanos.
+
+Contratos de arrendamiento de vivienda celebrados con anterioridad al 26 de mayo de 2023
+
+A los rendimientos netos de capital inmobiliario derivados de estos contratos les resultará de aplicación la reducción del 60 por 100, prevista en el apartado 2 del artículo 23 de la Ley del IRPF en su redacción vigente a 31 de diciembre de 2021.
+
+Estas reducciones sólo resultarán aplicables sobre los rendimientos netos positivos que hayan sido calculados por el contribuyente en una autoliquidación presentada antes de que se haya iniciado un procedimiento de verificación de datos, de comprobación limitada o de inspección que incluya en su objeto la comprobación de tales rendimientos.
+
+En ningún caso resultará de aplicación la reducción respecto de la parte de los rendimientos netos positivos derivada de ingresos no incluidos o de gastos indebidamente deducidos en la autoliquidación del contribuyente y que se regularicen en alguno de los procedimientos citados en el párrafo anterior, incluso cuando esas circunstancias hayan sido declaradas o aceptadas por el contribuyente durante la tramitación del procedimiento.
+
+Téngase en cuenta que la sentencia del TS 1312/2020 (recurso de casación 1434/2019), sobre la base de la distinción entre declaración y autoliquidación, fijó como criterio interpretativo en relación con la redacción anterior al 11 de julio de 2021, que disponía que la reducción del 60 por 100 "solo resultaba aplicable respecto de los rendimientos declarados por el contribuyente", que dicha reducción no se perdía por no haber incluido los rendimientos en la autoliquidación y, por ello, que los contribuyentes podían, al ser regularizados, incluir rentas no declaradas y solicitar la aplicación de la reducción del 60 por 100 sobre el rendimiento neto resultante.
+
+Como consecuencia del citado criterio interpretativo fijado por la sentencia del TS 1312/2020 y, con el fin de aclarar de forma definitiva que la reducción por el arrendamiento de bienes inmuebles destinados a vivienda no puede aplicarse sobre el rendimiento neto positivo calculado durante la tramitación de un procedimiento de comprobación, se procedió a modificar en este sentido, con efectos desde el 11 de julio de 2021, la redacción del artículo 23.2 de la Ley del IRPF por el artículo.3.tres de la Ley 11/2021, de 9 de julio, de medidas de prevención y lucha contra el fraude fiscal, de transposición de la Directiva (UE) 2016/1164, del Consejo, de 12 de julio de 2016, por la que se establecen normas contra las prácticas de elusión fiscal que inciden directamente en el funcionamiento del mercado interior, de modificación de diversas normas tributarias y en materia de regulación del juego.
+
+Alquileres turísticos: 
+
+En los alquileres turísticos no resultan aplicables las reducciones previstas en el artículo 23.2 de la Ley de IRPF, ya que no tienen por finalidad satisfacer una necesidad permanente de vivienda sino cubrir una necesidad de carácter temporal. Véase al respecto la Resolución del Tribunal Económico-Administrativo Central (TEAC), de 8 de marzo de 2018, Reclamación número 00/05663/2017, recaída en recurso extraordinario de alzada para unificación de criterio.
+
+Hasta el 31 de enero de 2024, el artículo 54 ter del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio, en la redacción dada por la disposición final segunda del Real Decreto 366/2021, de 25 de mayo, regulaba de forma independiente la obligación de informar sobre la cesión del uso de viviendas con fines turísticos, dirigida, en particular, a las plataformas colaborativas que intermedian en la cesión. 
+
+La declaración se presentaba a través del modelo 179, aprobado por Orden HAC/612/2021, de 16 de junio, con periodicidad anual, en el plazo comprendido entre el 1 y el 31 de enero de cada año, en relación con la información y operaciones que correspondieran al año natural inmediato anterior.
+
+Desde el 1 de febrero de 2024, esta obligación de información se incluye dentro de los supuestos de la nueva obligación de información de determinadas actividades por los operadores de plataformas. Por este motivo, se han aprobado a través de la Orden HAC/72/2024, de 1 de febrero, el modelo 040 "Declaración censal de alta, modificación y baja en el registro de operadores de plataforma extranjeros no cualificados y en el registro de otros operadores de plataforma obligados a comunicar información" y el modelo 238 "Declaración informativa para la comunicación de información por parte de operadores de plataformas", de modo que para el ejercicio 2024 y siguientes, se elimina la obligación de presentar la declaración informativa sobre la cesión de uso de viviendas con fines turísticos (modelo 179).
+
+Cuadro-resumen: reducciones por arrendamiento de viviendas del artículo 23.2 de la Ley del IRPF aplicables en 2025
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

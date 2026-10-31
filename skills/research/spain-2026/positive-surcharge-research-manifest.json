@@ -1,0 +1,399 @@
+{
+  "frozen_on": "2026-10-27",
+  "baseline_head_at_start": "33c86ed352ff457bb520f34389a941e3e73cd569",
+  "current_head": "700b7687843bf0f0257b25aeb219d37b50ca3574",
+  "verdict": "BLOCKER EVIDENCE: no full ordinary positive surcharge method certified; no Guide edits",
+  "no_accountant_attestation": true,
+  "files": [
+    {
+      "file": "baseline.json",
+      "bytes": 1354,
+      "sha256": "ff413abacdf2eed5a90100a08d8852c501da709b84363f58f8ae9a33de6b2cd3"
+    },
+    {
+      "file": "before-README.md",
+      "bytes": 7712,
+      "sha256": "6512f266c81c0c15f6d5a102bf419e7e8cc362f474e06d5614a83cee14cd1f01"
+    },
+    {
+      "file": "before-es-foral-corporate-tax.md",
+      "bytes": 97950,
+      "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f"
+    },
+    {
+      "file": "before-es-foral-non-resident-tax.md",
+      "bytes": 67660,
+      "sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152"
+    },
+    {
+      "file": "before-es-vat-return.md",
+      "bytes": 71407,
+      "sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f"
+    },
+    {
+      "file": "before-spain-vat-return.md",
+      "bytes": 25104,
+      "sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08"
+    },
+    {
+      "file": "checked-routes.json",
+      "bytes": 2933,
+      "sha256": "5eca4095daeb3641cee634854dc0b7250dcce65868c2bb7117355cc774e77971"
+    },
+    {
+      "file": "controls.json",
+      "bytes": 8003,
+      "sha256": "adddea0c12ce008fc877b2d33b843ed762e87a0b48137ab057b65cfce7e75001"
+    },
+    {
+      "file": "controls.py",
+      "bytes": 5004,
+      "sha256": "68b85ccbd528eb53d5d247e9d9190fb89fe6fc71a58e32badef35815ba60ac63"
+    },
+    {
+      "file": "example-check.txt",
+      "bytes": 65,
+      "sha256": "a26de9265aab7e78b4ab53665db4e9d8e406f70bdfbfabca743082f2e094d16f"
+    },
+    {
+      "file": "extraction-index.json",
+      "bytes": 1287,
+      "sha256": "a0ffbc7db57789c1052e510bc90c30eae9e4dcc3f33b847a5015986ccb9d5360"
+    },
+    {
+      "file": "fetch-sources.py",
+      "bytes": 2053,
+      "sha256": "4f6b9a261eff6b1e66a18c9b04c0d942ba8b8fbff9db1d2e874d6027a8791119"
+    },
+    {
+      "file": "format-options.md",
+      "bytes": 857,
+      "sha256": "a176225b1b0d4fb9694d5a20c348e11566f4897a4f7f02ff373d75cdb2ef6473"
+    },
+    {
+      "file": "images/alava-law-114.png",
+      "bytes": 216131,
+      "sha256": "b78438d967b813f4ff9158c63290c38000f2cd6b82e5586dc0698e564ce4952b"
+    },
+    {
+      "file": "images/bizkaia-2025-web-help-40.png",
+      "bytes": 135071,
+      "sha256": "f122a12f105c3db9978da5d9b3c68945e60275ecc6cdc7afd4026838011586cb"
+    },
+    {
+      "file": "images/bizkaia-law-100.png",
+      "bytes": 211668,
+      "sha256": "0519979d1fd0dbaf7a91dc09fdb6ec29aa0453d3e0c17e2382f38c16bcdb0776"
+    },
+    {
+      "file": "images/bizkaia-reg-74.png",
+      "bytes": 208927,
+      "sha256": "c47479e5a0a503cbc76ebd7506e0677858968a64484ce8aae8ac06cfb6b2eda7"
+    },
+    {
+      "file": "images/gipuzkoa-law-137.png",
+      "bytes": 222625,
+      "sha256": "be008c2a31a0f0c06cbc3a1e7b59812c023c01d94bb480c9cec9d4e5b01cd980"
+    },
+    {
+      "file": "images/gipuzkoa-order259-1.png",
+      "bytes": 216082,
+      "sha256": "72d47538bd156e31ff5c2940425980749faf8eb64fb62bf2a83cfc3bed6745fd"
+    },
+    {
+      "file": "images/gipuzkoa-reg-87.png",
+      "bytes": 214063,
+      "sha256": "5f7203e10cceb1c9e9d7b16c31c60bb6d329eb525efb1f71eaad96fd203f0636"
+    },
+    {
+      "file": "no-loss-checks.json",
+      "bytes": 2219,
+      "sha256": "23f809633ddec82b6d4f0470324ccca9ec3c3d4785869eea2e543ef50b91a045"
+    },
+    {
+      "file": "pe-proposal.md",
+      "bytes": 3672,
+      "sha256": "8bff9bf75066f5ebe93f616c1e80c1ce0d2657e2f0120a740bd151428c13d83c"
+    },
+    {
+      "file": "report.md",
+      "bytes": 12868,
+      "sha256": "1170756048196ae4af3cc491cf8ab2206dba7eea70a4ee010934107a81994118"
+    },
+    {
+      "file": "source-map.md",
+      "bytes": 6256,
+      "sha256": "0c14347242ae956c4bf8b973c42598b280f7205cca1542779aa9ea6c4702d106"
+    },
+    {
+      "file": "source-receipts.json",
+      "bytes": 8812,
+      "sha256": "a781fd696f373388beca95bb452c9e8e37e3c7f633dbbd90b4835965201bdd42"
+    },
+    {
+      "file": "sources/alava-campaign2025.html",
+      "bytes": 125641,
+      "sha256": "6dfb9f5e9c18b06b646c5718e1b230f0e89619646805fbc184961cfb65dd3d2d"
+    },
+    {
+      "file": "sources/alava-charging-excerpt.txt",
+      "bytes": 2093,
+      "sha256": "981776f2edf4532ec5adc998be146027face5014fdf7c420be2a4e5da95f3986"
+    },
+    {
+      "file": "sources/alava-df42-2025-gazette.pdf",
+      "bytes": 541986,
+      "sha256": "08a259a6ada4d5c646ce77451505f3a55c33be381747aabd380b4ffbde608cb1"
+    },
+    {
+      "file": "sources/alava-df42-2025-gazette.txt",
+      "bytes": 111440,
+      "sha256": "2f9676da384e6680b1eadf13ec55d2935114659a54be7e0e423634e76c19cbb4"
+    },
+    {
+      "file": "sources/alava-df42-correction2026.pdf",
+      "bytes": 52345,
+      "sha256": "c2814060fd26be75b68bfdad05b4b0afcc48cdb19eba2a69fce6fa0d13e15cdb"
+    },
+    {
+      "file": "sources/alava-df42-correction2026.txt",
+      "bytes": 7194,
+      "sha256": "ef7a4d49376f018f0e20589e9cb5ed05ba8de636a7f500ba25bd9ff583a6a62b"
+    },
+    {
+      "file": "sources/alava-faq.html",
+      "bytes": 149222,
+      "sha256": "88154d69ae22063a0145a4c8f685fa5fe19ebc8d5d20790a26996f4699f3015d"
+    },
+    {
+      "file": "sources/alava-irnr-art19.txt",
+      "bytes": 3241,
+      "sha256": "95a0dab01e9eb6d3f33c48837f0e6d3ffd219f87f43da6f9b5dd9983177e9541"
+    },
+    {
+      "file": "sources/alava-irnr.pdf",
+      "bytes": 446013,
+      "sha256": "ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe"
+    },
+    {
+      "file": "sources/alava-irnr.txt",
+      "bytes": 145840,
+      "sha256": "5703da7561d142fb9ca8fb75312c3103386d99dfa65c98f87c106faba089a02f"
+    },
+    {
+      "file": "sources/alava-law.pdf",
+      "bytes": 1609894,
+      "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6"
+    },
+    {
+      "file": "sources/alava-law.txt",
+      "bytes": 808605,
+      "sha256": "40b92636adfca1d852afd36c3f090d3ee70b98ffbcf398e6d588f70e276874b8"
+    },
+    {
+      "file": "sources/alava-news.html",
+      "bytes": 182064,
+      "sha256": "72705e0742f7bf023e534b91195c277fc7d2e11b8acd8c082d6e6c917324ac33"
+    },
+    {
+      "file": "sources/alava-news.txt",
+      "bytes": 76476,
+      "sha256": "f90ab46c79503b446ee2e5baeab1803f8c0e3396a7a4a8eda9b06f2c5d05b51a"
+    },
+    {
+      "file": "sources/alava-normative-index.html",
+      "bytes": 347462,
+      "sha256": "f08828a83e6e2c277a33da98f936f98a318dcb7927fe836e513a412d18b18d33"
+    },
+    {
+      "file": "sources/alava-normative-index.txt",
+      "bytes": 162988,
+      "sha256": "ecf2a132b140f05a80d7fb13c78fc45cbdd41dc1b79bbe669354b3c03b396df7"
+    },
+    {
+      "file": "sources/alava-programme2026.pdf",
+      "bytes": 444534,
+      "sha256": "279ff067c1d46c4c93ba19ee3db45b6205d0c0df2c6b8ccca079a59f3e20869d"
+    },
+    {
+      "file": "sources/alava-programme2026.txt",
+      "bytes": 28773,
+      "sha256": "060e8d18d6294b13380c81336c4f445cea449665d325d13bd9e8d7ed7bd77614"
+    },
+    {
+      "file": "sources/alava-reg.pdf",
+      "bytes": 533045,
+      "sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09"
+    },
+    {
+      "file": "sources/alava-reg.txt",
+      "bytes": 216811,
+      "sha256": "0644a7dae1c06de8de625bd451d93cb04a496704241b372ffbaf201211862404"
+    },
+    {
+      "file": "sources/bizkaia-2025-web-help.pdf",
+      "bytes": 3687890,
+      "sha256": "2c411beda08de02a272e3dae8733dd0e9faae4764cc47bb1ddefae77aaf07e3a"
+    },
+    {
+      "file": "sources/bizkaia-2025-web-help.txt",
+      "bytes": 19263,
+      "sha256": "45fdba44f2a1455337f9d3c7a36d24520ce85b00ced4a5bb573d0445ff1d5e8f"
+    },
+    {
+      "file": "sources/bizkaia-campaign2025.html",
+      "bytes": 323788,
+      "sha256": "303ca7d97f9c6bd78b4d5d47c65d59ea8c06f981d5c44ffb1a8f9ecffefa26c5"
+    },
+    {
+      "file": "sources/bizkaia-charging-excerpt.txt",
+      "bytes": 1956,
+      "sha256": "522b41b05888c594bc6b9ba92f1a903755efb549209dc8efde59efd081a969c4"
+    },
+    {
+      "file": "sources/bizkaia-irnr-art19.txt",
+      "bytes": 3111,
+      "sha256": "de1912f8fd168e9a35a64a812e7d87700e704fa7b05664e82fc64621a5b3b72d"
+    },
+    {
+      "file": "sources/bizkaia-irnr.pdf",
+      "bytes": 236552,
+      "sha256": "b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1"
+    },
+    {
+      "file": "sources/bizkaia-irnr.txt",
+      "bytes": 144588,
+      "sha256": "65ce97bf3b01e237e886510c886e3607ba7b31c5d1b1f6ebe584896e4281a217"
+    },
+    {
+      "file": "sources/bizkaia-law.pdf",
+      "bytes": 1322692,
+      "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe"
+    },
+    {
+      "file": "sources/bizkaia-law.txt",
+      "bytes": 849299,
+      "sha256": "7233bb875bf415bad3b3b39190f382af096a223664cd8419a8e5cdc489923937"
+    },
+    {
+      "file": "sources/bizkaia-reg.pdf",
+      "bytes": 460049,
+      "sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339"
+    },
+    {
+      "file": "sources/bizkaia-reg.txt",
+      "bytes": 277130,
+      "sha256": "ca473c46b1bec0944a59d741b2cfec8a0eb806983de8df3f165ad4f8beaad27e"
+    },
+    {
+      "file": "sources/bizkaia-surcharge-parliament.pdf",
+      "bytes": 244094,
+      "sha256": "8022411e4f8790223ae6edddde2d0d008fa6168525cf6622779335fde1b21cf7"
+    },
+    {
+      "file": "sources/bizkaia-surcharge-parliament.txt",
+      "bytes": 111318,
+      "sha256": "23fb238ba044ef2657ac7ed56714cf52bbd2011c214fef3a30ddf16700940b30"
+    },
+    {
+      "file": "sources/gipuzkoa-charging-excerpt.txt",
+      "bytes": 1889,
+      "sha256": "cafb347da0bd7417e223fc7f4dde4471fc9656b84dc3255becf50883b46a1d15"
+    },
+    {
+      "file": "sources/gipuzkoa-corporate-landing-links.json",
+      "bytes": 37413,
+      "sha256": "447c8803d7b07e875a6496c9ed92eaa1e093b913da793aca9f54c4f38760ead7"
+    },
+    {
+      "file": "sources/gipuzkoa-corporate-landing.html",
+      "bytes": 236318,
+      "sha256": "fe40a6821a17ce1c5e7cc3d4d559b74d791290b8850e188215277dd0a0dbe0a0"
+    },
+    {
+      "file": "sources/gipuzkoa-corporate-landing.txt",
+      "bytes": 42457,
+      "sha256": "51e0ac8575d1516cad247ac31f6348e86b1981bc3bdc8635368aee76dca9ae49"
+    },
+    {
+      "file": "sources/gipuzkoa-irnr-art19.txt",
+      "bytes": 3420,
+      "sha256": "8fc46c06b9ec13c818b35d4c68130e320d3a84f7190b3b9386e03ecc91a4edcf"
+    },
+    {
+      "file": "sources/gipuzkoa-irnr.pdf",
+      "bytes": 799094,
+      "sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d"
+    },
+    {
+      "file": "sources/gipuzkoa-irnr.txt",
+      "bytes": 195691,
+      "sha256": "9159a9d5e5766157e53777389c60588711358cb562276f0bbd2ebef0e02e3baa"
+    },
+    {
+      "file": "sources/gipuzkoa-law.pdf",
+      "bytes": 2587573,
+      "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44"
+    },
+    {
+      "file": "sources/gipuzkoa-law.txt",
+      "bytes": 1104835,
+      "sha256": "2a106c8f27797afd43fcb6b9a1c4f128f0b74a9b910ca41a38cc3ee81ef036fe"
+    },
+    {
+      "file": "sources/gipuzkoa-model200.html",
+      "bytes": 243357,
+      "sha256": "cc68d02604db8b7861403133a37f75b18a72995e73565afa3627bd726b650d3f"
+    },
+    {
+      "file": "sources/gipuzkoa-model200.txt",
+      "bytes": 39141,
+      "sha256": "efae659829c594f457ae7aab664f32adfec464bd06ce821084b0f97608d91370"
+    },
+    {
+      "file": "sources/gipuzkoa-order259.pdf",
+      "bytes": 3567982,
+      "sha256": "211ec159542506b766122d48cb6f9107920dbe0ff6aff71d7037a580258c8930"
+    },
+    {
+      "file": "sources/gipuzkoa-order259.txt",
+      "bytes": 1125892,
+      "sha256": "789a1d99875d9e036b0a5dbe9f9b26f40e0daf98f98a6fef7def17ad7bf13643"
+    },
+    {
+      "file": "sources/gipuzkoa-programmes-links.json",
+      "bytes": 36417,
+      "sha256": "0d0af329ce845904681c015e529049810ad678698a1e6c43a616d8b4fd71bbbc"
+    },
+    {
+      "file": "sources/gipuzkoa-programmes.html",
+      "bytes": 254045,
+      "sha256": "93234a5c3351407178ea9984d792ad34561bdf6efb09f674ed1d9783ec89f774"
+    },
+    {
+      "file": "sources/gipuzkoa-programmes.txt",
+      "bytes": 38754,
+      "sha256": "a61e5bc421719f2b00edff946b43bbad795884cdf3cb6518ef75569ef56ab5dd"
+    },
+    {
+      "file": "sources/gipuzkoa-reg.pdf",
+      "bytes": 1066738,
+      "sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c"
+    },
+    {
+      "file": "sources/gipuzkoa-reg.txt",
+      "bytes": 337292,
+      "sha256": "ebac85d2d7602d2dd77a92d1b12a57e199eb41535a379b7b1059c72efb6c6731"
+    },
+    {
+      "file": "sources/gipuzkoa-treasury-home.html",
+      "bytes": 256149,
+      "sha256": "75ca3231fe564b32d2edc0fc11373b6b5d4f6016429df280d18081d6cc771643"
+    },
+    {
+      "file": "surgical.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

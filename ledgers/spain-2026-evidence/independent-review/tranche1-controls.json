@@ -1,0 +1,330 @@
+{
+  "scope": "Own independent source-based and separating controls; does not prove unidentified claimant facts. Beckham22 additional controls retained separately.",
+  "count": 54,
+  "checks": [
+    {
+      "name": "111 employment gross",
+      "actual": "7500",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "111 employment tax",
+      "actual": "1231.50",
+      "expected": "1231.50",
+      "pass": true
+    },
+    {
+      "name": "111 professional recipients",
+      "actual": "2",
+      "expected": "2",
+      "pass": true
+    },
+    {
+      "name": "111 professional gross",
+      "actual": "3500",
+      "expected": "3500",
+      "pass": true
+    },
+    {
+      "name": "111 professional withholding",
+      "actual": "405",
+      "expected": "405",
+      "pass": true
+    },
+    {
+      "name": "111 total and complementary incremental",
+      "actual": "136.50",
+      "expected": "136.50",
+      "pass": true
+    },
+    {
+      "name": "111 ordinary professional cash",
+      "actual": "1060",
+      "expected": "1060",
+      "pass": true
+    },
+    {
+      "name": "111 part-payment gross allocation not net transfer",
+      "actual": "75",
+      "expected": "75",
+      "pass": true
+    },
+    {
+      "name": "111 cash/in-kind counts each deduplicate",
+      "actual": "(2, 1)",
+      "expected": "(2, 1)",
+      "pass": true
+    },
+    {
+      "name": "111 directory threshold equality outside lower rate",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "111 six-month director turnover annualisation",
+      "actual": "120000",
+      "expected": "120000",
+      "pass": true
+    },
+    {
+      "name": "130 prior-payment box05 not cash paid",
+      "actual": "900",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "130 cumulative Q2",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "130 Q1 loss is not a3000 taxcredit",
+      "actual": "-100",
+      "expected": "-100",
+      "pass": true
+    },
+    {
+      "name": "130 Q2 low-income own plus prior credit",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "130 exact70percent exemption",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "130 below70percent no exemption",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "130 test uses covered receipts not withheldtax",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "130 home nonfarm per-quarter twoquarters",
+      "actual": "1320.28",
+      "expected": "1320.28",
+      "pass": true
+    },
+    {
+      "name": "130 farming annual home remaining secondquarter",
+      "actual": "60.14",
+      "expected": "60.14",
+      "pass": true
+    },
+    {
+      "name": "130 forecast equality fails lower-than gate",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "130 territory multiplies taxrate not income allowance",
+      "actual": "0.080",
+      "expected": "0.08",
+      "pass": true
+    },
+    {
+      "name": "130 current grants included capital grants excluded",
+      "actual": "220.00",
+      "expected": "220",
+      "pass": true
+    },
+    {
+      "name": "131 half employee unit uses3percent",
+      "actual": "300.00",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "131 no employees2percent",
+      "actual": "200.00",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "name": "131 above1employee4percent",
+      "actual": "400.00",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "131 samequarter withheld excess can leave signed result",
+      "actual": "-150",
+      "expected": "-150",
+      "pass": true
+    },
+    {
+      "name": "modules2026 administrative exact thresholds pass",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "modules2026 administrative0.01above fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "modules2026 six-month annualisation",
+      "actual": "(200000, 100000, 220000)",
+      "expected": "(200000, 100000, 220000)",
+      "pass": true
+    },
+    {
+      "name": "modules2026 linked receipts aggregation",
+      "actual": "260000",
+      "expected": "260000",
+      "pass": true
+    },
+    {
+      "name": "Ceuta one-month-window comparison October1 before October3",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP 25percent related ownership equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP250k docs equality exempt",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP250k filing equality doesnottrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP100k specific equality doesnottrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP50percent equality doesnottrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP45m equality outside simplification",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP750m CbCR equality inside threshold",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP costplus fee",
+      "actual": "324000",
+      "expected": "324000",
+      "pass": true
+    },
+    {
+      "name": "TP upward revenue correction",
+      "actual": "24000",
+      "expected": "24000",
+      "pass": true
+    },
+    {
+      "name": "TP60percent independent disclosure",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP full-year directIPREM construction",
+      "actual": "36000",
+      "expected": "36000",
+      "pass": true
+    },
+    {
+      "name": "TP professional income strict75 equality fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP professional income80percent succeeds",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP professional total remuneration floor",
+      "actual": "60000",
+      "expected": "60000",
+      "pass": true
+    },
+    {
+      "name": "TP two36000 salaries exceed total floor",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP35999.99 fails individual despite aggregate",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP exact36000 local ordinary trigger fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP36000.01 local ordinary trigger succeeds",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP B counterparty aggregate distincttypes triggers",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "TP A/G each genuine group below trigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "TP missingdocs fixedpenalty cap example",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "TP correction-specific15percent",
+      "actual": "3600",
+      "expected": "3600",
+      "pass": true
+    }
+  ]
+}

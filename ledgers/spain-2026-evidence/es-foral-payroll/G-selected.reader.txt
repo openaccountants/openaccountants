@@ -1,0 +1,267 @@
+
+Artículo 100. Tabla de porcentajes de retención y reglas para su
+aplicación.
+
+       1.126 Tabla general de porcentajes de retención:
+
+
+
+                  Importe rendimiento anual (€)                          Número de descendientes
+                    Desde                  Hasta             0       1       2       3       4       5       Más
+                             0,00              20.000,00 0       0       0       0       0       0       0
+                        20.000,01              20.510,00 7       5       3       0       0       0       0
+                        20.510,01              21.300,00 8       6       4       1       0       0       0
+                        21.300,01              22.150,00 9       7       5       2       0       0       0
+                        22.150,01              23.220,00 10      9       7       4       0       0       0
+                        23.220,01              24.050,00 11      10      8       5       1       0       0
+                        24.050,01              25.410,00 12      11      9       6       3       0       0
+                        25.410,01              27.440,00 13      12      10      7       4       0       0
+                        27.440,01              29.790,00 14      13      11      9       6       2       0
+                        29.790,01              32.610,00 15      14      13      10      8       4       0
+                        32.610,01              36.350,00 16      15      14      12      9       6       0
+
+
+introducen otras modificaciones reglamentarias. Este Decreto Foral entra en vigor el día siguiente al de su
+publicación en el BOG (15-12-2025), y la modificación surte efectos a partir de 1 de enero de 2026.).
+
+126 Este apartado ha sido modificado por el apartado dos del ordinal segundo del artículo 1 del DECRETO FORAL
+
+27/2025, de 23 de diciembre, por el que se desarrollan reglamentariamente diversas modificaciones de la Norma
+Foral 1/2025, de 9 de mayo, se modifican las tablas de retenciones de los rendimientos de trabajo y se aprueban los
+coeficientes de actualización aplicables en 2026. Este Decreto Foral entra en vigor el día siguiente al de su
+publicación en el BOG (30-12-2025) y la modificación surte efectos a partir del 1 de enero de 2026.
+
+
+
+
+Texto vigente                                                                                                      114
+                  36.350,01        40.670,00 17    16   15   13   11   8    0
+                  40.670,01        44.560,00 18    17   16   15   13   10   2
+                  44.560,01        48.060,00 19    18   17   16   14   12   4
+                  48.060,01        52.020,00 20    19   18   17   15   13   7
+                  52.020,01        56.780,00 21    20   20   18   17   15   9
+                  56.780,01        61.820,00 22    21   21   20   18   16   11
+                  61.820,01        65.710,00 23    22   22   21   19   18   12
+                  65.710,01        70.080,00 24    23   23   22   21   19   14
+                  70.080,01        75.020,00 25    25   24   23   22   20   16
+                  75.020,01        80.730,00 26    26   25   24   23   22   17
+                  80.730,01        86.770,00 27    27   26   25   24   23   19
+                  86.770,01        92.190,00 28    28   27   26   25   24   21
+                  92.190,01        98.350,00 29    29   28   27   27   25   22
+                  98.350,01       105.380,00 30    30   29   29   28   27   23
+                 105.380,01       113.180,00 31    31   30   30   29   28   25
+                 113.180,01       122.030,00 32    32   31   31   30   29   26
+                 122.030,01       132.200,00 33    33   32   32   31   30   28
+                 132.200,01       144.140,00 34    34   33   33   32   32   29
+                 144.140,01       157.300,00 35    35   34   34   33   33   31
+                 157.300,01       172.280,00 36    36   36   35   35   34   32
+                 172.280,01       190.410,00 37    37   37   36   36   35   33
+                 190.410,01       212.820,00 38    38   38   37   37   36   35
+                 212.820,01       236.060,00 39    39   39   38   38   37   36
+                 236.060,01       En adelante 40   40   40   39   39   39   37
+
+
+     2. Reglas generales para la aplicación de la tabla.
+
+     1ª. El número de descendientes a tener en cuenta para la aplicación de la tabla
+     será el de aquéllos por los que se tenga derecho a la deducción prevista en el
+     artículo 79 de la Norma Foral del Impuesto. A estos efectos, la situación familiar
+     será la existente el día primero del año natural, o el día de inicio de la relación
+     cuando ésta hubiera comenzado con posterioridad a aquella fecha.
+
+     No se computarán los descendientes que vayan a cumplir más de 30 años en el
+     período impositivo en el que sea de aplicación la retención, salvo que dichos
+     descendientes originen el derecho a practicar la deducción contemplada en el
+     artículo 82 de la Norma Foral del Impuesto.
+
+     2ª. El volumen de retribuciones a tener en cuenta para la aplicación de la tabla
+     se determinará en función de la percepción íntegra, teniendo en cuenta las
+     retribuciones dinerarias y en especie que, de acuerdo con las normas o
+     estipulaciones contractuales aplicables y demás circunstancias previsibles, vaya
+     normalmente a percibir el contribuyente en el año natural.
+
+     La percepción íntegra anual también incluirá tanto las retribuciones fijas como las
+     variables previsibles.
+
+
+
+
+Texto vigente                                                                       115
+       Si entre las retribuciones anteriores se incluyese alguna a la que resulte de
+       aplicación lo dispuesto en los artículos 19, 19 bis ó 20 de la Norma Foral del
+       Impuesto, para el cálculo del porcentaje de retención se computará como
+       rendimiento el resultante de aplicar el porcentaje que corresponda de los
+       señalados en los citados artículos así como, en su caso, los límites relativos a
+       los porcentajes de integración inferior al 100 por 100.
+
+       3ª. El porcentaje de retención así determinado se aplicará a la totalidad de las
+       retribuciones que se abonen o satisfagan. Si entre las retribuciones anteriores se
+       incluyese alguna a la que resulte de aplicación lo dispuesto en los artículos 19,
+       19 bis ó 20 de la Norma Foral del Impuesto, el porcentaje de retención calculado
+       se aplicará sobre el rendimiento resultante de aplicar el porcentaje y, en su caso,
+       el límite que correspondan de los señalados en los citados artículos.
+       127
+          Cuando durante el año se produzcan variaciones en la cuantía de las
+       retribuciones dinerarias o en especie sometidas a retención o ingreso a cuenta,
+       se calculará un nuevo porcentaje teniendo en cuenta las alteraciones
+       producidas. Este nuevo porcentaje se aplicará exclusivamente a partir de la
+       fecha en que se produzcan las referidas variaciones.
+
+       Si al concluir el período inicialmente previsto en un contrato o relación de
+       duración inferior al año, el trabajador continuase prestando sus servicios al
+       mismo empleador, o volviese a hacerlo dentro del año natural, se determinará el
+       nuevo porcentaje de retención que corresponda teniendo en cuenta tanto las
+       retribuciones anteriormente satisfechas como las que normalmente vaya a
+       percibir, siempre dentro del mismo año natural.
+
+       4ª128. El porcentaje de retención resultante de lo dispuesto en los apartados
+       anteriores no podrá ser inferior al 2 por 100 cuando los rendimientos se deriven
+       de contratos o relaciones de duración inferior al año o de una relación laboral
+       especial de las y los artistas que desarrollan su actividad en las artes escénicas,
+       audiovisuales y musicales, así como de las personas que realizan actividades
+       técnicas o auxiliares necesarias para el desarrollo de dicha actividad, ni inferior
+       al 15 por 100 cuando se deriven de otras relaciones laborales especiales de
+       carácter dependiente.
+
+       No obstante, no será de aplicación el mínimo del 15 por 100 de retención a que
+       se refiere el párrafo anterior a los rendimientos obtenidos por las penadas y los
+       penados en las instituciones penitenciarias ni a los rendimientos derivados de
+       relaciones laborales de carácter especial que afecten a personas con
+       discapacidad.
+
+       3. Reglas específicas para la aplicación de la tabla.
+
+
+
+127 Este párrafo ha sido modificado por el apartado diez del ordinal primero del artículo 1 del DECRETO FORAL
+
+31/2018, de 27 de diciembre, por el que se modifican el Reglamento del Impuesto sobre la Renta de las Personas
+Físicas y el Reglamento del Impuesto sobre Sociedades, y se aprueban los coeficientes de actualización aplicables en
+2019 para la determinación de las rentas obtenidas en la transmisión de elementos patrimoniales en ambos impuestos.
+Este Decreto Foral entra en vigor el día de su publicación en el BOG (31-12-2018), y la modificación surte efectos a
+partir de 1 de enero de 2018.
+
+128 Esta regla general 4ª ha sido modificada por el apartado doce del artículo 6 del Decreto Foral 56/2023, de 12 de
+
+diciembre, por el que se modifican diversos reglamentos tributarios. La modificación entra en vigor el día siguiente al
+de su publicación en el BOLETÍN OFICIAL de Gipuzkoa (BOG 18/12/2023).
+
+
+
+
+Texto vigente                                                                                                    116
+       1ª.129 Tratándose de pensiones y haberes pasivos, y a los exclusivos efectos de
+       determinar el porcentaje de retención aplicable, procederá la elevación al año de
+       las cantidades que como tales pensionistas o titulares de haberes pasivos
+       perciban quienes adquieran tal condición durante el ejercicio.
+
+       No obstante, la persona contribuyente podrá optar por no aplicar la elevación al
+       año prevista en el párrafo anterior.
+
+       2ª. Cuando se trate de trabajadores manuales que perciban sus retribuciones por
+       peonadas o jornales diarios, consecuencia de una relación esporádica y diaria
+       con el empleador, el volumen de las retribuciones a tener en cuenta para la
+       aplicación de la tabla correspondiente será el resultado de multiplicar por 100 el
+       importe de la peonada o jornal diario percibido.
+
+       3ª. Cuando el perceptor de rendimientos del trabajo estuviese obligado a
+       satisfacer, por resolución judicial, una pensión compensatoria a su cónyuge o
+       pareja de hecho, el importe de ésta podrá disminuir el volumen de retribuciones
+       a tener en cuenta para el cálculo del porcentaje de retención.
+
+       A tal fin, el contribuyente deberá poner en conocimiento de su pagador, en la
+       forma prevista en el artículo 101, dicha circunstancia, acompañando testimonio
+       literal de la resolución judicial determinante de la pensión.
+
+       La reducción prevista en esta regla sólo resultará aplicable cuando el trabajador
+       prestase sus servicios bajo la vigencia de un contrato de duración indefinida y
+       sólo podrá ser invocada a partir del período impositivo siguiente a aquél en que
+       se hubiese fijado judicialmente la pensión.
+
+       En los supuestos contemplados en esta regla, si el porcentaje de retención
+       resultante fuese inferior al 2 por 100, se aplicará este último.
+
+       Lo previsto en esta regla no será de aplicación cuando la persona perceptora de
+       la pensión compensatoria conviva con la persona obligada a satisfacerla.
+
+       4.130 Personas trabajadoras activas con discapacidad.
+
+       A las personas trabajadoras activas con discapacidad les será de aplicación la
+       tabla general de porcentajes de retención a que se refiere el apartado 1. Este
+       porcentaje de retención que resulte de la aplicación de la tabla general se
+       minorará en los puntos que señala la siguiente escala, según que la referida
+       trabajadora se encuentre en alguna de las siguientes situaciones:
+
+
+
+129 Esta regla específica ha sido modificada por el apartado uno del ordinal segundo del artículo único del Decreto
+
+Foral 10/2025, de 24 de junio, por el que se modifica el Reglamento del Impuesto sobre la Renta de las Personas
+Físicas. La modificación entra en vigor el día de su publicación en el BOLETÍN OFICIAL de Gipuzkoa (BOG
+25/06/2025) y surte efectos a partir de 1 de julio de 2025.
+
+130 Este apartado ha sido modificado por el apartado tres del artículo único del Decreto Foral 23/2022, de 27 de
+
+diciembre, por el que se modifica el Reglamento del Impuesto sobre la Renta de las Personas Físicas, y se aprueban
+los coeficientes de actualización aplicables en 2023 para la determinación, en el citado impuesto y en el impuesto
+sobre sociedades, de las rentas obtenidas en la transmisión de elementos patrimoniales. La modificación entra en
+vigor el día de su publicación en el BOLETÍN OFICIAL de Gipuzkoa (BOG 28/12/2022) y surtirá efectos a partir de
+1 de enero de 2023..
+
+
+
+
+Texto vigente                                                                                                 117
+       a) Personas trabajadoras activas con un grado de discapacidad igual o superior
+       al 33 por 100 e inferior al 65 por 100.
+
+       b)131 Personas trabajadoras activas con un grado de discapacidad igual o
+       superior al 33 por 100 e inferior al 65 por 100 que se encuentren en estado
+       carencial de movilidad reducida, entendiéndose por tales aquellas que obtengan
+       en el sub-baremo de Limitaciones en las Actividades de movilidad (BLAM) del
+       Real Decreto 888/2022, de 18 de octubre, por el que se establece el
+       procedimiento para el reconocimiento, declaración y calificación del grado de
+       discapacidad, una limitación final de movilidad igual o superior al 25 por 100.
+
+       c) Personas trabajadoras activas con un grado de discapacidad igual o superior
+       al 65 por 100.
+       132
+
+
+
+
+             Importe rendimiento anual                                      Grado de discapacidad
+                                                               Apartado             Apartado            Apartado
+
+        Desde                         Hasta                       4. a)                4.b)                4. c)
+
+                     0,00                       25.410,00           9                             12
+                25.410,01                       32.610,00           7                             12
+                32.610,01                       48.060,00           6                             10
+                48.060,01                       56.780,00           5                             10
+                56.780,01                       80.730,00           4                             8
+                80.730,01                      122.030,00           3                             6
+             122.030,01                        190.410,00           2                             5
+             190.410,01                       En adelante           1                             3
+
+
+                    artículo 100.
+                   El apartado dos modifica el apartado 5 del artículo 101.
+                   El apartado tres adiciona una disposición adicional decimocuarta.
+
+
+          Decreto Foral 22/2025, de 2 de diciembre, por el que se
+           desarrolla parcialmente la Norma Foral 1/2025, de 9 de mayo, y
+           se introducen otras modificaciones reglamentarias (BOG 15-12-
+           2025)
+
+           El ordinal primero de su artículo 1 modifica con efectos a partir de 1 de
+           enero de 2025 los siguientes preceptos:
+
+                   El apartado uno el párrafo primero del artículo 35.
+                   El apartado dos el apartado 1 del artículo 36.
+                   El apartado tres el apartado 2 del artículo 37.
+                   El apartado cuatro añade un artículo 42 bis al capítulo IV del título
+                    III.
+                   El apartado cinco el artículo 58.
+                   El apartado seis modifica el apartado 2 y añade un apartado 3 al

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "baseline_commit": "bba54325f2f975ced58da68251ca202377677d7f",
+  "source": "skills/international/spain/es-social-contributions.md",
+  "source_sha256": "105161f7a6b7c2d0d542d6f1b0983bfb3d3585b57d684204e70827528751b88d",
+  "independent_review": "PASS for finite 2026 interest input delta",
+  "controls": {
+    "legal_rate": "3.25",
+    "social_security_rate": "4.0625",
+    "full_year_10000": "406.250000",
+    "73_of_365_days": "81.250000",
+    "normalized_old_bytes_equal": true,
+    "frontmatter_unchanged": true,
+    "all_oa_blocks_equal": true,
+    "full_cta_tail_equal": true,
+    "h2_unchanged": true,
+    "baseline_sha256": "fade74809d49c4a0a33f401b4d234a91c308f9edcc3f022bdece8fabb72070f6",
+    "current_sha256": "105161f7a6b7c2d0d542d6f1b0983bfb3d3585b57d684204e70827528751b88d",
+    "example_exit": 0,
+    "checked_utc": "2026-10-27T16:52:37.555244+00:00"
+  },
+  "remaining": [
+    "S01 new2026 reduced-fee monetary authority/MEI reconciliation",
+    "S02 exact annual income equals SMI extension conflict"
+  ],
+  "whole_country_complete": false
+}

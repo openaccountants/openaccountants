@@ -1,0 +1,364 @@
+{
+  "scope": "Rootcurrent-file binding of21actuallysealedindependentreviewpairs. Manifestmembers/reportsprovide actualreview;hashlocatorpresencealoneisnotasubstitute forreview. Coordinate-onlysuccessors additionallyrequire preservednativeLFerratum. Deductions pending.",
+  "pairs": [
+    {
+      "slug": "es-beckham",
+      "Guide_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+      "ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925",
+      "accepted_review_report": "tranche1-report.md",
+      "accepted_review_manifest": "tranche1-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche1-successor-presence.json",
+        "S-L01-independent-closure.json",
+        "tranche1-result.json",
+        "tranche1-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche1-successor-presence.json",
+        "native-LF-final-audit.json",
+        "tranche1-result.json",
+        "native-LF-audit-groupA-current.json",
+        "tranche1-protection.json"
+      ]
+    },
+    {
+      "slug": "es-modelo-111",
+      "Guide_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "ledger_sha256": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6",
+      "accepted_review_report": "tranche1-report.md",
+      "accepted_review_manifest": "tranche1-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche1-successor-presence.json",
+        "tranche1-result.json",
+        "initial-three-ledger-quote-check.json",
+        "tranche1-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche1-successor-presence.json",
+        "native-LF-final-audit.json",
+        "tranche1-result.json",
+        "native-LF-audit-groupA-current.json",
+        "tranche1-protection.json"
+      ]
+    },
+    {
+      "slug": "es-estimated-tax",
+      "Guide_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "ledger_sha256": "b44ae8932a0048419050c8fb67e30674ecf578cdb9a0deaf0c84a0dc73ea0bf1",
+      "accepted_review_report": "tranche1-report.md",
+      "accepted_review_manifest": "tranche1-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche1-successor-presence.json",
+        "tranche1-result.json",
+        "initial-three-ledger-quote-check.json",
+        "tranche1-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "native-LF-final-audit.json",
+        "native-LF-erratum-report.md",
+        "native-LF-successor-bindings.json"
+      ]
+    },
+    {
+      "slug": "spain-transfer-pricing",
+      "Guide_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "ledger_sha256": "8fcbf7ccd6a8b44922db500eac09386b2ce65de894c9cf8aa6d902831d8231d4",
+      "accepted_review_report": "tranche1-report.md",
+      "accepted_review_manifest": "tranche1-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche1-result.json",
+        "tranche1-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche1-result.json",
+        "tranche1-protection.json"
+      ]
+    },
+    {
+      "slug": "es-non-resident-income-tax-irnr-and",
+      "Guide_sha256": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+      "ledger_sha256": "e6d267324516381e9f09083d3614d8780b03da7c197d2bf239e781663c4661d0",
+      "accepted_review_report": "tranche2-report.md",
+      "accepted_review_manifest": "tranche2-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche2-result.json",
+        "tranche2-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche2-result.json",
+        "tranche2-protection.json"
+      ]
+    },
+    {
+      "slug": "es-canary-islands-igic",
+      "Guide_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "ledger_sha256": "f3fbc2f6ec343dfdd20187ba5908b028ebd7c83952a212636918cc189094f0fb",
+      "accepted_review_report": "tranche3-report.md",
+      "accepted_review_manifest": "tranche3-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche2-result.json",
+        "tranche2-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche2-result.json",
+        "tranche2-protection.json"
+      ]
+    },
+    {
+      "slug": "es-ceuta-melilla-ipsi",
+      "Guide_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "ledger_sha256": "41fd5a36bb182967cdbc50f2cf919363785ba65848bdb5c086a2f4c347980899",
+      "accepted_review_report": "tranche3-report.md",
+      "accepted_review_manifest": "tranche3-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche3-protection.json",
+        "tranche3-result.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche3-protection.json",
+        "tranche3-result.json"
+      ]
+    },
+    {
+      "slug": "es-autonomous-worker",
+      "Guide_sha256": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+      "ledger_sha256": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555",
+      "accepted_review_report": "tranche4-report.md",
+      "accepted_review_manifest": "tranche4-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche4-result.json",
+        "tranche4-protection.json",
+        "tranche4-report.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche4-result.json",
+        "tranche4-protection.json",
+        "native-LF-final-audit.json",
+        "tranche4-report.md",
+        "native-LF-audit-groupA-current.json"
+      ]
+    },
+    {
+      "slug": "es-rental-income",
+      "Guide_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "ledger_sha256": "d306f92e524564f6d412fdf2ee901d3fa38eebd28476e1099a11369dcf55adb0",
+      "accepted_review_report": "tranche5-report.md",
+      "accepted_review_manifest": "tranche5-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche5-report.md",
+        "tranche5-protection.json",
+        "tranche5-result.json",
+        "tranche5-initial-ledger.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche5-report.md",
+        "native-LF-final-audit.json",
+        "native-LF-audit-groupA-current.json",
+        "tranche5-result.json"
+      ]
+    },
+    {
+      "slug": "es-capital-gains",
+      "Guide_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "ledger_sha256": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c",
+      "accepted_review_report": "tranche6-report.md",
+      "accepted_review_manifest": "tranche6-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche6-initial-ledger.md",
+        "tranche6-protection.json",
+        "tranche6-report.md",
+        "tranche6-result.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "native-LF-final-audit.json",
+        "native-LF-audit-groupA-current.json",
+        "tranche6-report.md",
+        "tranche6-result.json"
+      ]
+    },
+    {
+      "slug": "spain-vat-return",
+      "Guide_sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+      "ledger_sha256": "a86645db838f32384769c2889eab3e672039dd4527274b3230fbb4623149c44c",
+      "accepted_review_report": "tranche7-report.md",
+      "accepted_review_manifest": "tranche7-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche7-result.json",
+        "tranche7-report.md",
+        "tranche7-protection.json",
+        "tranche7-initial-ledger.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche7-result.json",
+        "tranche7-report.md"
+      ]
+    },
+    {
+      "slug": "es-vat-return",
+      "Guide_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "ledger_sha256": "418e4b14dd08bd9e2e2c0f056cc5640c4e270650469b537f022c492ebea1c1e4",
+      "accepted_review_report": "tranche8-report.md",
+      "accepted_review_manifest": "tranche8-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche8-report.md",
+        "tranche8-result.json",
+        "tranche8-initial-ledger.md",
+        "tranche8-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche8-report.md",
+        "tranche8-result.json"
+      ]
+    },
+    {
+      "slug": "es-foral-payroll",
+      "Guide_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "ledger_sha256": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+      "accepted_review_report": "tranche9-report.md",
+      "accepted_review_manifest": "tranche9-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche9-initial-ledger.md",
+        "tranche9-report.md",
+        "tranche9-result.json",
+        "tranche9-protection.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche9-report.md",
+        "tranche9-manifest.json",
+        "tranche9-result.json",
+        "archive-index-through-twentieth-pair.json"
+      ]
+    },
+    {
+      "slug": "es-corporate-tax",
+      "Guide_sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+      "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45",
+      "accepted_review_report": "tranche10-report.md",
+      "accepted_review_manifest": "tranche10-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche10-integrity.json",
+        "tranche10-report.md",
+        "tranche10-read-ledger.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "native-LF-final-audit.json",
+        "tranche10-integrity.json",
+        "native-LF-audit-groupA-current.json",
+        "tranche10-report.md",
+        "tranche10-read-ledger.json"
+      ]
+    },
+    {
+      "slug": "spain-crypto-tax",
+      "Guide_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "ledger_sha256": "7c4f1c0ce0aa36b631ad3799efa6fdf19e55114d236cd0bdec05f3c554f9ee1e",
+      "accepted_review_report": "tranche11-report.md",
+      "accepted_review_manifest": "tranche11-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche11-initial-integrity.json",
+        "tranche11-report.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "native-LF-final-audit.json",
+        "native-LF-audit-groupA-current.json",
+        "native-LF-erratum-report.md",
+        "native-LF-successor-bindings.json"
+      ]
+    },
+    {
+      "slug": "es-social-contributions",
+      "Guide_sha256": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+      "ledger_sha256": "b97e69d8101a113a8e10fc1ef960d6e30b5e6ccc3ad1f12a378c2142b7298791",
+      "accepted_review_report": "tranche12-report.md",
+      "accepted_review_manifest": "tranche12-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche12-report.md",
+        "tranche12-final-identity.json",
+        "tranche12-successor-integrity.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "native-LF-final-audit.json",
+        "native-LF-audit-groupA-current.json",
+        "native-LF-erratum-report.md",
+        "native-LF-successor-bindings.json"
+      ]
+    },
+    {
+      "slug": "spain-payroll",
+      "Guide_sha256": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+      "ledger_sha256": "5f014d016726afe6b3abe97d116fdb0ff297328ac75fb6fde7035946ddd691b0",
+      "accepted_review_report": "tranche13-report.md",
+      "accepted_review_manifest": "tranche13-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche13-integrity.json",
+        "tranche13-report.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche13-integrity.json",
+        "tranche13-report.md"
+      ]
+    },
+    {
+      "slug": "es-foral-corporate-tax",
+      "Guide_sha256": "226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929",
+      "ledger_sha256": "f6523c92cd59a3894210cbe62f12c04b620e398c4ae0fe81cd0522ec452bf709",
+      "accepted_review_report": "tranche14-report.md",
+      "accepted_review_manifest": "tranche14-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche14-report.md",
+        "tranche14-final-integrity.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche14-report.md",
+        "tranche14-final-integrity.json"
+      ]
+    },
+    {
+      "slug": "es-foral-non-resident-tax",
+      "Guide_sha256": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+      "ledger_sha256": "6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a",
+      "accepted_review_report": "tranche15-report.md",
+      "accepted_review_manifest": "tranche15-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche15-report.md",
+        "tranche15-final-integrity.json"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche15-report.md",
+        "tranche15-final-integrity.json"
+      ]
+    },
+    {
+      "slug": "es-income-tax",
+      "Guide_sha256": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+      "ledger_sha256": "99d3d3675aae17adcd0f04bad21a2d22b5e7dcc8b64f5d98af60caea2a700448",
+      "accepted_review_report": "tranche16-report.md",
+      "accepted_review_manifest": "tranche16-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche16-final-integrity.json",
+        "tranche16-report.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche16-final-integrity.json",
+        "tranche16-report.md"
+      ]
+    },
+    {
+      "slug": "es-foral-income-tax",
+      "Guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+      "ledger_sha256": "75f77f9a374ee3730b7d061e2b30cc7228294dcaca5f8135e33e534c71de2aca",
+      "accepted_review_report": "tranche17-report.md",
+      "accepted_review_manifest": "tranche17-manifest.json",
+      "Guide_fullhash_evidence_locators": [
+        "tranche17-final-integrity.json",
+        "tranche17-repair-proof.json",
+        "tranche17-report.md"
+      ],
+      "ledger_fullhash_evidence_locators": [
+        "tranche17-final-integrity.json",
+        "tranche17-repair-proof.json",
+        "tranche17-report.md"
+      ]
+    }
+  ]
+}

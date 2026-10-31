@@ -1,0 +1,113 @@
+{
+  "note": "All comparator values and reduced payments in these distinguishing controls are synthetic inputs, not statements of actual 2026 SMI or new-award fee. Controls encode the cited published assessment and verify the Guide applies it consistently; they are not a new official simulator result.",
+  "controls": [
+    {
+      "name": "annual income one cent below comparator",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "basis": "TGSS Pr\u00f3rroga Tarifa Plana; current RD 44.3.f. This tests the expressly labelled published assessment, not an adjudicated legal-challenge result."
+    },
+    {
+      "name": "annual income exactly at comparator",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "basis": "TGSS Pr\u00f3rroga Tarifa Plana; current RD 44.3.f. This tests the expressly labelled published assessment, not an adjudicated legal-challenge result."
+    },
+    {
+      "name": "annual income one cent above comparator",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "basis": "TGSS Pr\u00f3rroga Tarifa Plana; current RD 44.3.f. This tests the expressly labelled published assessment, not an adjudicated legal-challenge result."
+    },
+    {
+      "name": "initial unconditional period at equality",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "basis": "LETA 38 ter.6 first paragraph; new Guide expressly preserves initial-period exemption."
+    },
+    {
+      "name": "initial unconditional period above comparator",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "basis": "LETA 38 ter.6 first paragraph."
+    },
+    {
+      "name": "two calendar years: below then equality, six extension months each",
+      "actual": [
+        0,
+        6
+      ],
+      "expected": [
+        0,
+        6
+      ],
+      "passed": true,
+      "basis": "TGSS limits loss to the affected year; LETA 38 ter.2 requires each year separately. Twelve extension months total, not a 24-month general extension."
+    },
+    {
+      "name": "two calendar years: equality then below",
+      "actual": [
+        6,
+        0
+      ],
+      "expected": [
+        6,
+        0
+      ],
+      "passed": true,
+      "basis": "Same annual partition; no cross-year benefit removal."
+    },
+    {
+      "name": "two calendar years: both below",
+      "actual": [
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0
+      ],
+      "passed": true,
+      "basis": "Each annual condition passes."
+    },
+    {
+      "name": "two calendar years: both equality",
+      "actual": [
+        6,
+        6
+      ],
+      "expected": [
+        6,
+        6
+      ],
+      "passed": true,
+      "basis": "Separate annual comparisons with their respective comparator, not one blended threshold."
+    },
+    {
+      "name": "annual gate first, then proportional affected-month numerator",
+      "actual": "11000",
+      "expected": "11000",
+      "passed": true,
+      "basis": "LETA 38 ter.6 proportional-income sentence. Synthetic comparator 22000: full annual income equals it; comparing the proportional 11000 against the full annual comparator would give the wrong gate."
+    },
+    {
+      "name": "six affected months, actual assessed monthly final 378 less actual reduced 90",
+      "actual": "1728",
+      "expected": "1728",
+      "passed": true,
+      "basis": "Arithmetic reconciliation control only: both quotas are assumed actual assessment records. 90 is not a statutory 2026 reduced-fee assertion; 378 is the preserved full-coverage example output."
+    },
+    {
+      "name": "varying affected-month actual final and reduced records",
+      "actual": "843",
+      "expected": "843",
+      "passed": true,
+      "basis": "Existing signed monthly regularisation plus actual records; does not infer a universal flat fee or six identical debits."
+    }
+  ]
+}

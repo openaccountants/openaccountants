@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por gastos en la adquisición de vehículos eléctricos</title><meta name="ObjectId" content="2a08e43ab9659910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='86cce6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunidad Autónoma de la Región de Murcia</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por gastos en la adquisición de vehículos eléctricos</h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 1.Diecinueve Texto Refundido de las disposiciones legales vigentes en la Regi&oacute;n de Murcia en materia de tributos cedidos, aprobado por Decreto Legislativo 1/2010, de 5 de noviembre</strong></p>
+<h2>Base de la deducci&oacute;n y limites aplicables</h2>
+<ul>
+<li>
+<p>Estar&aacute; constituida por el <strong>valor de adquisici&oacute;n </strong>(incluidos los gastos y tributos inherentes a la misma), <strong>minorado</strong> en las <strong>subvenciones</strong> o <strong>ayudas p&uacute;blicas percibidas</strong> por la citada adquisici&oacute;n, <strong>de los siguientes tipos de veh&iacute;culos el&eacute;ctricos</strong>:</p>
+<p class="letrita sangrado-izq">A los efectos de la presente deducci&oacute;n, se considerar&aacute;n <strong>veh&iacute;culos el&eacute;ctricos</strong> los siguientes: Veh&iacute;culos el&eacute;ctricos puros (BEV), Veh&iacute;culos el&eacute;ctricos de autonom&iacute;a extendida (EREV), Veh&iacute;culos h&iacute;bridos &ldquo;enchufables&rdquo; (PHEV), Veh&iacute;culos el&eacute;ctricos de c&eacute;lulas de combustible (FCV) y Veh&iacute;culos el&eacute;ctricos h&iacute;bridos de c&eacute;lulas de combustible (FCHV), seg&uacute;n la definici&oacute;n de los mismos que se establece en el Real Decreto 266/2021, de 13 de abril, por el que se aprueba la concesi&oacute;n directa de ayudas a las comunidades aut&oacute;nomas y a las ciudades de Ceuta y Melilla para la ejecuci&oacute;n de programas de incentivos ligados a la movilidad el&eacute;ctrica (MOVES III) en el marco del Plan de Recuperaci&oacute;n, Transformaci&oacute;n y Resiliencia Europeo.</p>
+<ul class="lista-sin-icono">
+<li>
+<p>- Turismos (categor&iacute;a M1).</p>
+</li>
+<li>
+<p>- Motocicletas (categor&iacute;as L3e, L4e y L5e) de motor el&eacute;ctrico, con una potencia del motor igual o superior a 3 kW y una autonom&iacute;a m&iacute;nima de 70 km.</p>
+</li>
+<li>
+<p>- Ciclomotores (categor&iacute;a L1e).</p>
+</li>
+</ul>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Atenci&oacute;n</strong></span>: en los supuestos de adquisici&oacute;n mediante operaciones de <strong>leasing</strong> o <strong>renting</strong> tendr&aacute;n la consideraci&oacute;n de <strong>valor de adquisici&oacute;n</strong> todas las cantidades que deben pagarse en base al contrato: las que deban ser pagadas a partir del momento en que se firma el contrato de leasing o renting por cualquier concepto (incluidos intereses o cualquier otro gasto financiero) y las que correspondan a un momento anterior a la adquisici&oacute;n jur&iacute;dica del veh&iacute;culo el&eacute;ctrico, incluy&eacute;ndose tambi&eacute;n en cualquier caso las posibles opciones de compra.</em></p>
+</li>
+<li>
+<p>La base de la deducci&oacute;n estar&aacute; sujeta a los siguientes&nbsp;<strong>l&iacute;mites por veh&iacute;culo</strong>:</p>
+<ul class="lista-sin-icono">
+<li>
+<p>- <strong>45.000 euros</strong> en caso de turismos (53.000 euros si se trata de veh&iacute;culos <abbr title="Battery Electric Vehicle">BEV</abbr> de 8 o 9 plazas).</p>
+</li>
+<li>
+<p>- <strong>10.000 euros</strong> en caso de motocicletas.</p>
+</li>
+<li>
+<p>- <strong>3.000 euros</strong> en caso de ciclomotores.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Importante</strong></span>: <strong>cada contribuyente</strong> podr&aacute; aplicar la deducci&oacute;n por la adquisici&oacute;n de <strong>un</strong> <strong>&uacute;nico veh&iacute;culo el&eacute;ctrico</strong> en <strong>cada per&iacute;odo impositivo</strong>.</em></p>
+<h2>Cuant&iacute;a y l&iacute;mite m&aacute;ximo de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>El contribuyente podr&aacute; deducir de la cuota &iacute;ntegra auton&oacute;mica la cuant&iacute;a resultante de aplicar a la <strong>base de la deducci&oacute;n</strong> los siguientes <strong>porcentajes</strong>, en funci&oacute;n de su r&eacute;gimen de tributaci&oacute;n y de su base imponible total:</p>
+<ol type="a">
+<li>
+<p><strong>En caso de declaraci&oacute;n individual</strong></p>
+<table class="letrita" summary="contribuyentes que no tengan la condici&oacute;n legal de ">
+<thead>
+<tr>
+<th>(Base imponible general + Base imponible del ahorro)</th>
+<th>Porcentaje de deducci&oacute;n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hasta 34.999,99 euros</td>
+<td class="texto_der">30 por 100</td>
+</tr>
+<tr>
+<td>Entre 35.000 y 44.999,99 euros</td>
+<td class="texto_der">22,50 por 100</td>
+</tr>
+<tr>
+<td>Entre 45.000 y 59.999,99 euros</td>
+<td class="texto_der">15 por 100</td>
+</tr>
+<tr>
+<td>A partir de 60.000 euros</td>
+<td class="texto_der">Sin derecho</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>En caso de declaraci&oacute;n conjunta</strong></p>
+<table class="letrita" summary="contribuyentes que tengan la condici&oacute;n legal de familia numerosa">
+<thead>
+<tr>
+<th>(Base imponible general + Base imponible del ahorro)</th>
+<th>Porcentaje de deducci&oacute;n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hasta 49.999,99 euros</td>
+<td class="texto_der">30 por 100</td>
+</tr>
+<tr>
+<td>Entre 50.000 y 74.999,99 euros</td>
+<td class="texto_der">22,50 por 100</td>
+</tr>
+<tr>
+<td>Entre 75.000 y 94.999,99 euros</td>
+<td class="texto_der">15 por 100</td>
+</tr>
+<tr>
+<td>A partir de 95.000 euros</td>
+<td class="texto_der">Sin derecho</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</li>
+<li>
+<p>Se establece un <strong>l&iacute;mite m&aacute;ximo</strong> de <strong>7.000 euros por veh&iacute;culo</strong>.</p>
+</li>
+</ul>
+<h2>Requisitos y otras condiciones para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>Los contribuyentes deber&aacute;n tener su <strong>domicilio fiscal en la Regi&oacute;n de Murcia</strong> en el ejercicio de adquisici&oacute;n del veh&iacute;culo.</p>
+</li>
+<li>
+<p>El veh&iacute;culo <strong>no debe estar afecto a ninguna actividad econ&oacute;mica</strong> y podr&aacute; ser adquirido de forma directa o por medio de operaciones de leasing o renting.</p>
+</li>
+<li>
+<p>Deber&aacute; tratarse de <strong>veh&iacute;culos nuevos o de importaci&oacute;n</strong>, matriculados por primera vez en Espa&ntilde;a a nombre del beneficiario, salvo en el caso de renting/leasing, en los que podr&aacute; estar matriculado a nombre de la empresa de renting/leasing.</p>
+<p>Tambi&eacute;n dar&aacute; derecho a la aplicaci&oacute;n de la presente deducci&oacute;n la adquisici&oacute;n de veh&iacute;culos de demostraci&oacute;n con hasta dieciocho meses de antig&uuml;edad, contada desde su primera matriculaci&oacute;n hasta la fecha de la factura de compraventa o del contrato de renting, siempre que el concesionario o punto de venta hubiera adquirido el veh&iacute;culo del fabricante o importador como veh&iacute;culo nuevo.</p>
+</li>
+<li>
+<p>El contribuyente <strong>deber&aacute; disponer del correspondiente contrato</strong> de compraventa, leasing o renting.</p>
+</li>
+</ul>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><span class="verde letrita sangrado-izq"><strong>Precisiones</strong></span>:</p>
+<p class="letrita sangrado-izq">- En los supuestos de adquisici&oacute;n directa o mediante <strong>compraventa</strong> de un veh&iacute;culo nuevo, de importaci&oacute;n o de un veh&iacute;culo de demostraci&oacute;n,.la deducci&oacute;n podr&aacute; ser aplicada por el <strong>contribuyente </strong>a cuyo nombre se realice la <strong>matriculaci&oacute;n.</strong></p>
+<p class="letrita sangrado-izq">- En los supuestos de adquisici&oacute;n de veh&iacute;culos mediante operaciones de <strong>leasing</strong> o <strong>renting</strong>, la deducci&oacute;n podr&aacute; ser aplicada por el <strong>contribuyente </strong>que aparezca como <strong>titular del contrato</strong>. Cuando &eacute;ste sea suscrito como titulares por<strong> 2 contribuyentes</strong>&nbsp;se <strong>prorratear&aacute; en cualquier caso</strong> entre ambos, a partes iguales, (1) el <strong>importe</strong> de la deducci&oacute;n; (2) el <strong>l&iacute;mite m&aacute;ximo</strong> aplicable por veh&iacute;culo (7.000 euros) y (3) la<strong> base m&aacute;xima de la deducci&oacute;n</strong>, definida asimismo por veh&iacute;culo.</p>
+</div>
+<ul>
+<li>
+<p>En el <strong>supuesto de compraventa de veh&iacute;culos en r&eacute;gimen de gananciales</strong> la deducci&oacute;n <strong>podr&aacute; prorratearse a partes iguales</strong> por ambos c&oacute;nyuges aun cuando la factura se emita &uacute;nicamente a nombre de uno de ellos. Otro tanto suceder&aacute; en los casos de <strong>leasing</strong> o <strong>renting</strong>, aunque s&oacute;lo uno de los c&oacute;nyuges figure como titular del contrato.</p>
+<p class="letrita sangrado-izq">El <strong>prorrateo entre c&oacute;nyuges </strong>se configura como una <strong>opci&oacute;n</strong> y no tiene car&aacute;cter obligatorio.En caso de que ambos c&oacute;nyuges <strong>opten</strong> por dicho prorrateo &eacute;ste afectar&aacute; (1) al <strong>importe de la deducci&oacute;n</strong> (calculado en base al valor de adquisici&oacute;n del veh&iacute;culo); (2) al <strong>l&iacute;mite m&aacute;ximo de la deducci&oacute;n,</strong> por veh&iacute;culo (7.000 euros) y (3) a la <strong>base m&aacute;xima de la deducci&oacute;n</strong>, definida asimismo por veh&iacute;culo.</p>
+</li>
+<li>
+<p>El contribuyente <strong>deber&aacute; mantener la titularidad del veh&iacute;culo durante al menos cinco a&ntilde;os</strong>, salvo fallecimiento del contribuyente o siniestro total del veh&iacute;culo. En el caso de adquisici&oacute;n del veh&iacute;culo mediante una operaci&oacute;n de renting, el contrato deber&aacute; mantenerse al menos dos a&ntilde;os desde la fecha de su entrada en vigor.</p>
+<p class="letrita sangrado-izq">Debe extenderse a los supuestos de <strong>renting</strong> lo establecido para los supuestos de compraventa, no consider&aacute;ndose ncumplido el plazo de mantenimiento en caso de fallecimiento del contribuyente o de siniestro total del veh&iacute;culo.</p>
+</li>
+</ul>
+<h2>&Aacute;mbito temporal de aplicaci&oacute;n de la deducci&oacute;n</h2>
+<p>La deducci&oacute;n resultar&aacute; <strong>aplicable</strong>:</p>
+<ol type="a">
+<li>
+<p>En el supuesto de veh&iacute;culos adquiridos mediante <strong>compraventa:</strong>&nbsp;en el periodo impositivo en el que el veh&iacute;culo sea <strong>matriculado</strong> a nombre del contribuyente con derecho a la deducci&oacute;n.</p>
+</li>
+<li>
+<p>En el supuesto de veh&iacute;culos adquiridos por medio de operaciones de <strong>leasing</strong> o <strong>renting:</strong>&nbsp;en el per&iacute;odo impositivo en el que se <strong>formalice</strong> el contrato correspondiente.</p>
+</li>
+</ol>
+<h2>Orden de aplicaci&oacute;n y saldos pendientes de aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>En el caso de que el importe de la deducci&oacute;n <strong>no pueda aplicarse en su totalidad en el periodo impositivo</strong> de la realizaci&oacute;n de la inversi&oacute;n, por insuficiencia de la cuota &iacute;ntegra auton&oacute;mica, <strong>la cantidad restante podr&aacute; ser aplicada</strong>, como m&aacute;ximo, <strong>en los tres periodos impositivos posteriores</strong>.</p>
+</li>
+<li>
+<p>En el supuesto de <strong>concurrencia con otras deducciones auton&oacute;micas</strong>, se aplicar&aacute; la presente deducci&oacute;n:</p>
+<ol type="a">
+<li>
+<p>Con <strong>posterioridad</strong> a todas aquellas deducciones que no se puedan trasladar a ejercicios futuros en caso de insuficiencia de la cuota &iacute;ntegra auton&oacute;mica.</p>
+</li>
+<li>
+<p>Con <strong>anterioridad</strong> a las deducciones auton&oacute;micas "por gastos en la instalaci&oacute;n de infraestructuras de recarga de veh&iacute;culos el&eacute;ctricos" y "por inversi&oacute;n en instalaciones de recursos energ&eacute;ticos renovables", que ser&aacute;n aplicables, respectivamente, en pen&uacute;ltimo y &uacute;ltimo lugar.</p>
+</li>
+</ol>
+</li>
+</ul><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

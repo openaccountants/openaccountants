@@ -1,0 +1,50 @@
+{
+  "tranche1-report.md": {
+    "sha256": "5666fa99914e304e3bf7182611aa869eabfd74398a1d41a38bff5576355353d2",
+    "bytes": 5130
+  },
+  "tranche1-result.json": {
+    "sha256": "ff5e6978641c7942145f1defabe27bee9e1b40e3c8d09ba700bb74d5d56970f5",
+    "bytes": 1625
+  },
+  "tranche1-read-ledger.json": {
+    "sha256": "f1cd7bf5092e40f78db5ffbc0a8fb77280a802370dc19cf864ef276bc068b350",
+    "bytes": 11502
+  },
+  "tranche1-controls.py": {
+    "sha256": "67b4039e239e0891c7d84245dee8180b5e68ce62710a1fa5c440645a98731538",
+    "bytes": 5301
+  },
+  "tranche1-controls.json": {
+    "sha256": "7ac37d868cca868397330a6c3770935d817be47c63f332c5531f9e0a82113af0",
+    "bytes": 7709
+  },
+  "beckham-controls.json": {
+    "sha256": "f6debc2918692d56bb9c5e829e7cce168f2f1fc905a6ef5896eb1971aa589729",
+    "bytes": 2330
+  },
+  "S-L01-independent-closure.json": {
+    "sha256": "32c9bb13520d94a9e8fef2f92a17266114ab23ecf5aea0f98bf1afc549fdd7f5",
+    "bytes": 636
+  },
+  "tranche1-protection.json": {
+    "sha256": "f7f50789628f2e3468401c43e7674408e4a27517d9cb999ce8fb98a08cea3e0c",
+    "bytes": 3074
+  },
+  "tranche1-source-identities-rehashed.json": {
+    "sha256": "69dd60e9c4db7b413e9bc9f1eebc3330b20c0f6aa9196b84d184077252653019",
+    "bytes": 36104
+  },
+  "tranche1-successor-presence.json": {
+    "sha256": "67d2a38630483fdaeb7903c22880102d9e795595ce0827e50e0f7e7aca03e5e2",
+    "bytes": 10074
+  },
+  "all-four-quote-presence.json": {
+    "sha256": "df167833d0324a76f23aa8f14b2837a4a81982f4cf27c366ca71976edddc7ac4",
+    "bytes": 30715
+  },
+  "initial-three-ledger-quote-check.json": {
+    "sha256": "6467772cc0525dbaf5de0a26d6e4b72b4a2f0fa9264deac3014be8d545556aa1",
+    "bytes": 17139
+  }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/es-foral-payroll.md",
+    "sha256": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+    "bytes": 336823
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-payroll/rows.json",
+    "sha256": "a4db206ef514eff700f9616e79d988ca41ec27d494c695fd298ede92c5506f10",
+    "bytes": 395708
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-payroll/source-read-receipts.json",
+    "sha256": "59851455eef63ad7b19b00a098d68b63663e7c3bb33d8375c103e3c0e07004dc",
+    "bytes": 49318
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-payroll/writer-status.md",
+    "sha256": "31ea38f22e2ff54da23cd550237bd5e0bf5f02d1d8d9a7028c4966b104b6c5fc",
+    "bytes": 1454
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-payroll/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

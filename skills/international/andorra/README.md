@@ -1,7 +1,7 @@
 ---
 jurisdiction: AD
-version: 0.6
-last_updated: 2026-10-29
+version: 0.7
+last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -29,7 +29,7 @@ Ordinary computations were rebuilt from the current primary texts; calculation/s
 
 Specialist scope outside the ordinary methods: tax consolidation/CFC/reorganisations and sector/national-project incentives; historic holding/transitional gain allocations; IGI simplified, used-goods, investment-gold, financial-sector and traveller administrative schemes; full treaty-rate/social-agreement matrix, MAP/arbitration administration; immigration/deposits, separate ITP/foreign-investment taxes and actual legal termination entitlements. Particular authorisations, notices, regulated affordable-rent classification and partial-month CASS complement amounts are actual case inputs, not permission to invent a rate. Each Guide's Sources lists precise unconfirmed legacy claims and statutory inconsistencies.
 
-[Formation](ad-company-formation.md) and [overview](ad-tax-overview.md) remain unchanged **2025 supporting documents**, outside the evidence for 2026 computational coverage. Their presence does not certify current rates or establish a separate new Guide. Sibling corrections belong in their own work.
+[Formation](ad-company-formation.md) and [overview](ad-tax-overview.md) are **2026 supporting documents**, refreshed on 2026-10-30 from the consolidated laws on the Portal Jurídic d'Andorra (overview: [PR #954](https://github.com/openaccountants/openaccountants/pull/954), which also reads the Govern d'Andorra tax pages; formation: [PR #958](https://github.com/openaccountants/openaccountants/pull/958)). They sit outside the evidence for 2026 computational coverage and do not establish a separate new Guide. Each lists its own unconfirmed points under Sources. Sibling corrections belong in their own work.
 
 ## Primary sources
 

@@ -1,0 +1,71 @@
+from fractions import Fraction as F
+from decimal import Decimal as D
+from datetime import date
+from pathlib import Path
+import json
+checks=[]
+def c(n,a,e):
+    assert a==e,(n,a,e)
+    checks.append(dict(name=n,actual=str(a),expected=str(e),passed=True))
+def tax(x):
+    limits=[6000,50000,200000,300000];rates=[F(19,100),F(21,100),F(23,100),F(27,100),F(30,100)]
+    t=F(0);last=0
+    for top,r in zip(limits+[x],rates):
+        amount=max(0,min(x,top)-last);t+=amount*r;last=top
+    return t
+for b,e in [(6000,1140),(50000,10380),(200000,44880),(300000,71880),(400000,101880)]:c('savings total boundary '+str(b),tax(b),e)
+c('case1 transfer net costs',20000-100,19900)
+c('case1 acquisition costs',10000+50,10050)
+c('case1 gain',19900-10050,9850)
+c('case1 tax',tax(9850),F(3897,2))
+c('case2 admitted loss',10000-2000,8000)
+c('case2 crosspool25percent',min(8000,10000*F(25,100)),2500)
+c('case2 admitted carry',8000-2500,5500)
+c('case2 separate deferred loss',2000,2000)
+c('case2 savingsbase',10000-2500,7500)
+c('case2 savings tax',tax(7500),1455)
+c('incremental annual bracket not restarted',tax(50000+9850)-tax(50000),F(4531,2))
+c('incremental differs standalone first bands',tax(50000+9850)-tax(50000)!=tax(9850),True)
+c('unlisted capitalisation division20percent',F(3000)/F(20,100),15000)
+c('unlisted independentprice absent floor',max(7000,10000,15000)-5000,10000)
+c('unlisted proved independentprice route',7000-5000,2000)
+c('unlisted higheractual price',max(18000,10000,15000)-5000,13000)
+c('listed higher agreedprice reference',max(10000,12000),12000)
+c('listed higher quotation reference',max(13000,12000),13000)
+c('bonus shares preserve total basis',100*100/(100+100),50)
+c('FIFO old100basis100 then50basis120',100*100+50*120,16000)
+c('DT29 untaxed oldrights reduce basis',10000-2000,8000)
+c('DT29 oldrights adjusted gain',15000-8000,7000)
+c('DT29 alreadytaxed rights not doubled',15000-10000,5000)
+c('home loan-net reinvestment denominator',300000-100000,200000)
+c('home partial qualified reinvestment gain',90000*min(F(100000,200000),1),45000)
+c('home overfunding cannot exceed gain',90000*min(F(250000,200000),1),90000)
+c('annuity overfunding eligible amount',min(30000,60000,240000),30000)
+c('annuity overfunding exemption cap',10000*F(min(30000,60000,240000),30000),10000)
+c('annuity half proceeds reinvestment',10000*F(15000,30000),5000)
+c('annuity cumulative residual cap',min(30000,30000,max(240000-230000,0)),10000)
+c('annuity residual partial exemption',10000*F(10000,30000),F(10000,3))
+c('annuity exhausted cap leaves zero',min(30000,30000,max(240000-240000,0)),0)
+c('annuity5percent decline equality',950>=1000*F(95,100),True)
+c('annuity5.01percent decline fails',D('949.90')>=D(1000)*D('.95'),False)
+for y,pct in enumerate([95,90,85,80,75,70,65,60,55,50],1):c('death refund year '+str(y),200000*F(pct,100),2000*pct)
+c('death guarantee10years equality',10<=10,True)
+c('2019 transition beforeApril1',date(2019,3,31)<date(2019,4,1),True)
+c('2019 April1 not excluded by before clause',date(2019,4,1)<date(2019,4,1),False)
+c('current dated relocation sale aftercommencement',date(2026,10,15)>=date(2026,10,8),True)
+c('age-relocation qualifying example gain fully exempt',90000-90000,0)
+c('2012 acquisition firstday eligible numerical date',date(2012,5,12)<=date(2012,5,12)<=date(2012,12,31),True)
+c('2012 daybefore outside',date(2012,5,12)<=date(2012,5,11),False)
+c('2012 finalday inclusive',date(2012,12,31)<=date(2012,12,31),True)
+c('2012 halfgain then halfreinvestment',100000*F(1,2)*(1-F(1,2)),25000)
+c('IRNR exempt halfgain doesnot halve3percent consideration',300000*F(3,100),9000)
+c('IRNR ordinary gain19percent not24',50000*F(19,100),9500)
+c('DT9 remaining transfercap capacity',400000-350000,50000)
+c('DT9 eligible fraction of100ktransfer',F(50000,100000),F(1,2))
+c('DT9 pre2006gain80k partwithin cap',80000*F(1,2),40000)
+c('DT9 listed wealth2005value substitution',min(15000,12000)-10000,2000)
+c('DT9 below2005value allpositive gain',11000-10000,1000)
+c('DT9 ordinary two inclusive dates', (date(2006,1,19)-date(1990,1,1)).days+1,5863)
+c('Ceuta conditional60percent attributable taxcredit',1000*F(60,100),600)
+Path(__file__).with_suffix('.json').write_text(json.dumps({'scope':'Independent arithmetic and separating statutory gates. Full factual eligibility, genuine independent pricing, treaty and exceptional dated repeal consequences remain separately established; no equality-at400k rule invented.','count':len(checks),'checks':checks},indent=2)+'\n')
+print(len(checks),'PASS')

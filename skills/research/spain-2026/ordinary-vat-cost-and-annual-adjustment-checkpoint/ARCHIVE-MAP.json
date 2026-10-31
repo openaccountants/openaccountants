@@ -1,0 +1,1312 @@
+{
+  "baseline_head": "0f31d1b5b3e0a1b16603e6ffa2c0f79cbbab84f8",
+  "verified_manifests": [
+    {
+      "role": "scope-delta",
+      "report": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/report.md",
+      "report_sha256": "98d6360e67829338d524cc290dd01f71ac7d0b7e154da8c3bbf314ba631a2ee1",
+      "manifest": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/manifest.json",
+      "manifest_sha256": "1532efe16a458aa1197d9c472895b254939b4f69580ce4bdc1c3f530bbcdc4f9",
+      "members_verified": 8
+    }
+  ],
+  "scope": "Lossless ordinary VAT acquisition-value and annual two-factor adjustment source chain, private options, original observations, and exact independent review. Derived interpretations and actual reading are distinguished; five country-domain partials remain.",
+  "files": [
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/actual-read-scopes.json",
+      "original_sha256": "7bcf8cdc6b51e42fb982b96565c8ed652f648f488c0ac6c141dad7b4201b5399",
+      "original_bytes": 2303,
+      "stored_path": "archive/7b/7bcf8cdc6b51e42fb982b96565c8ed652f648f488c0ac6c141dad7b4201b5399.gz",
+      "stored_bytes": 533,
+      "stored_sha256": "acbc5834de4a05ae57626d4baa6023463f3742037df9c16a8d9ad0c9570685de"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/artifact-manifest.json",
+      "original_sha256": "f860fb8b3141c1902618beaa8686702c8ad82d112b0efcf5cb098b79c0bb97e4",
+      "original_bytes": 10707,
+      "stored_path": "archive/f8/f860fb8b3141c1902618beaa8686702c8ad82d112b0efcf5cb098b79c0bb97e4.gz",
+      "stored_bytes": 2321,
+      "stored_sha256": "f4c9500b5488f0e4097bb7bf239b8a1538433695c034bd055230f2d711a3b3ef"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/browser-read-receipt.json",
+      "original_sha256": "27a253ca02b352d45d88389ed83dc66e24c0ee88ded8f49127d069ff49ee5b75",
+      "original_bytes": 1765,
+      "stored_path": "archive/27/27a253ca02b352d45d88389ed83dc66e24c0ee88ded8f49127d069ff49ee5b75.gz",
+      "stored_bytes": 966,
+      "stored_sha256": "6eb1065a148d73fbf138089b6e722aa48e2ebb6ff6e58f7c30866e19f0ad4042"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/checkpoint-README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/checkpoint-es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/checkpoint-identities.json",
+      "original_sha256": "f4ca4c2cbdea1e70f771b5935b2bb43effc14a29e4c33cdea1a7b2721098fb74",
+      "original_bytes": 911,
+      "stored_path": "archive/f4/f4ca4c2cbdea1e70f771b5935b2bb43effc14a29e4c33cdea1a7b2721098fb74.gz",
+      "stored_bytes": 407,
+      "stored_sha256": "ced9c328ed1a6fcf2bbe519ef58c135aa58d27d8f2c99afbe9d54b4f34b50dfd"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/controls.py",
+      "original_sha256": "2b1e5995675e1dfcde3904107cd29bcb9e9a938a8e966fb4c587e329c2439fc5",
+      "original_bytes": 3643,
+      "stored_path": "archive/2b/2b1e5995675e1dfcde3904107cd29bcb9e9a938a8e966fb4c587e329c2439fc5.gz",
+      "stored_bytes": 1547,
+      "stored_sha256": "06e16403d30e73e397a5a365bd09cd2feac7f3c9cec9655cf7d4fbe8f900652b"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/current-root-README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/draft-options.md",
+      "original_sha256": "eb4cf9f2b3a4bef7c91d9115c5075c5277b05661eb1ce6b279835316bc763418",
+      "original_bytes": 4475,
+      "stored_path": "archive/eb/eb4cf9f2b3a4bef7c91d9115c5075c5277b05661eb1ce6b279835316bc763418.gz",
+      "stored_bytes": 1754,
+      "stored_sha256": "55cfa22b80cecde6c800fb4a1d9c1db15eb822f01e5c6e297c681da90954b6fc"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/fetch-current.py",
+      "original_sha256": "3769460c2d103b9bfd68cf7006bd4a89dbd202b24013e3093105c306475bcdcf",
+      "original_bytes": 1024,
+      "stored_path": "archive/37/3769460c2d103b9bfd68cf7006bd4a89dbd202b24013e3093105c306475bcdcf.gz",
+      "stored_bytes": 621,
+      "stored_sha256": "60e104b6106ee88f7002044884a9a93901e68a5bffbbdae0b2f0af7612fa201c"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/fresh-source-receipts.json",
+      "original_sha256": "2dd0484711f342887a03647e3e490e733d5b3e60716fc6399ed56d8b6c2a8951",
+      "original_bytes": 4339,
+      "stored_path": "archive/2d/2dd0484711f342887a03647e3e490e733d5b3e60716fc6399ed56d8b6c2a8951.gz",
+      "stored_bytes": 1365,
+      "stored_sha256": "93ce8895b47676b6e751ed490f986d2ba966b90847ad506b611e3321dc6934d6"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/independent-controls.json",
+      "original_sha256": "49f8c7a593d1db33c628c007b3e34eec389c2e6bae0d65105cc98d83bcee21ea",
+      "original_bytes": 6515,
+      "stored_path": "archive/49/49f8c7a593d1db33c628c007b3e34eec389c2e6bae0d65105cc98d83bcee21ea.gz",
+      "stored_bytes": 1105,
+      "stored_sha256": "ab0fe09d4559bd2864638bfc37e9b31c66e3f17c914408be11156916aa21ecd2"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/make-readers.py",
+      "original_sha256": "ed60552be745e629407adb9dc075f944fd2c7545b89a2ce71a2373829ac81208",
+      "original_bytes": 502,
+      "stored_path": "archive/ed/ed60552be745e629407adb9dc075f944fd2c7545b89a2ce71a2373829ac81208.gz",
+      "stored_bytes": 320,
+      "stored_sha256": "7ecc02cb1239d4980731185c61ba824510c20d68371667b2e45c0295151e2122"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/no-live-change-check.json",
+      "original_sha256": "e57cbc939642b5260575c6dafbf5e5a32df6944eb9596c02935c5360e1cee3c7",
+      "original_bytes": 1002,
+      "stored_path": "archive/e5/e57cbc939642b5260575c6dafbf5e5a32df6944eb9596c02935c5360e1cee3c7.gz",
+      "stored_bytes": 513,
+      "stored_sha256": "a744fe54bd61558fb16dd56fd172c88ab0b574090a223a45ad5efbdc3ff265c3"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/read-source.py",
+      "original_sha256": "bd6f02ef08c91b978f5ea4b5f9dd9bc84b280d9ff273cc9e4d82ee59850ec5dd",
+      "original_bytes": 678,
+      "stored_path": "archive/bd/bd6f02ef08c91b978f5ea4b5f9dd9bc84b280d9ff273cc9e4d82ee59850ec5dd.gz",
+      "stored_bytes": 435,
+      "stored_sha256": "f3e9cb0ea80d9353171015d2bc828e0fe451d2023a91bb00b69f0e6f84b2492b"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/report.md",
+      "original_sha256": "d9c337f59121f92aa3806491095f63f13969d7e747992e9ce728d3cea859645b",
+      "original_bytes": 15906,
+      "stored_path": "archive/d9/d9c337f59121f92aa3806491095f63f13969d7e747992e9ce728d3cea859645b.gz",
+      "stored_bytes": 6562,
+      "stored_sha256": "ca376b338b1df01dd6a1f7cb1b788b2f8186c97c008dc8902530a3ab378ffb1b"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/retained-source-identities.json",
+      "original_sha256": "ef17a3f0edf2eb54c17e96272d80f1670837f1471c1281360e9cf8cb1707bd63",
+      "original_bytes": 3779,
+      "stored_path": "archive/ef/ef17a3f0edf2eb54c17e96272d80f1670837f1471c1281360e9cf8cb1707bd63.gz",
+      "stored_bytes": 765,
+      "stored_sha256": "0a826b99f44f1eef37f51a848c5bad066d4f9102199e5d0d2f0cec54067296f8"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/source-chain-and-scope.json",
+      "original_sha256": "2fad0111c9aeed3bc4460212ffe8df84d83a1899eb7af52bde5eb7d0983f1e91",
+      "original_bytes": 2636,
+      "stored_path": "archive/2f/2fad0111c9aeed3bc4460212ffe8df84d83a1899eb7af52bde5eb7d0983f1e91.gz",
+      "stored_bytes": 1268,
+      "stored_sha256": "1ded929ba4fb4f6507744251db6f30e09f2fad411e66cf95557385c18157b847"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/source-freeze.json",
+      "original_sha256": "19211891bb25f3b91cb754c07e24c4f25e9d1747a97885c1285e4e292657ee22",
+      "original_bytes": 558,
+      "stored_path": "archive/19/19211891bb25f3b91cb754c07e24c4f25e9d1747a97885c1285e4e292657ee22.gz",
+      "stored_bytes": 400,
+      "stored_sha256": "2ffe71b848350c82c03aa5c0d3424935eb92eaa3002392ae26eec4d52152a4df"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/source-map.json",
+      "original_sha256": "331c7299285d7e432bf2f4b20ee3a367ce71cada14b87b2f2b8c6a044441012a",
+      "original_bytes": 4642,
+      "stored_path": "archive/33/331c7299285d7e432bf2f4b20ee3a367ce71cada14b87b2f2b8c6a044441012a.gz",
+      "stored_bytes": 1242,
+      "stored_sha256": "66a0d7d0ed415bdd0da5d419fd92493a0b29afe8b68040990a34c56395bba018"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/KA01732-current.html",
+      "original_sha256": "c6b28bbfad640de27d71c33d15c9e2057622e2561f9c82ee10a6f8c0198250d6",
+      "original_bytes": 80386,
+      "stored_path": "archive/c6/c6b28bbfad640de27d71c33d15c9e2057622e2561f9c82ee10a6f8c0198250d6.gz",
+      "stored_bytes": 18641,
+      "stored_sha256": "636267ed6bf51d5b6f612841a2b1dc4b6d57c88ce467031f005757f7ad8a6a2d"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/KA01732-current.reader.txt",
+      "original_sha256": "3765a50690e14205fa62517847079161a0ade938a9b1fb372c410d2e07cb6011",
+      "original_bytes": 48153,
+      "stored_path": "archive/37/3765a50690e14205fa62517847079161a0ade938a9b1fb372c410d2e07cb6011.gz",
+      "stored_bytes": 13071,
+      "stored_sha256": "a978a2d151bf5873c941083fca894abdf29ab8e1517958f1b22e3b5b491cce76"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/KA01732-live-AX.txt",
+      "original_sha256": "62df27e466ca69853e73813deac3f947df548db5d26a08a79ff098ae29c15f1d",
+      "original_bytes": 6091,
+      "stored_path": "archive/62/62df27e466ca69853e73813deac3f947df548db5d26a08a79ff098ae29c15f1d.gz",
+      "stored_bytes": 2448,
+      "stored_sha256": "282e9aaf6375aa93705528076f193be4914c6a3e58d1e5d725b7e106e1e9c4fa"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/KA01732-live-deduction-fields.png",
+      "original_sha256": "ff612a9a4fad46cf4828a7dcd6ac556911d4258356cfe7761213b7f649835412",
+      "original_bytes": 65715,
+      "stored_path": "archive/ff/ff612a9a4fad46cf4828a7dcd6ac556911d4258356cfe7761213b7f649835412.gz",
+      "stored_bytes": 51313,
+      "stored_sha256": "bce9be2025bc2281e40f7ceb5e1fdfe157a37aefa29e9aefdd08d837b0f49510"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/V0055-19-live-AX.txt",
+      "original_sha256": "15edd4fef106ca6a30df0ef1e50ee4d93957add1382c3e5f3f14441715f8edc6",
+      "original_bytes": 6825,
+      "stored_path": "archive/15/15edd4fef106ca6a30df0ef1e50ee4d93957add1382c3e5f3f14441715f8edc6.gz",
+      "stored_bytes": 2096,
+      "stored_sha256": "6b2e930222b5b02802776e3026fb59e830d1e323b1bb22e08c665aa0e845b635"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/V0055-19-live-complete-AX.txt",
+      "original_sha256": "1deb743742b26181d4b38d13d7b9f59df7505b3585dc8194deccb5a38f9a75b1",
+      "original_bytes": 13806,
+      "stored_path": "archive/1d/1deb743742b26181d4b38d13d7b9f59df7505b3585dc8194deccb5a38f9a75b1.gz",
+      "stored_bytes": 4298,
+      "stored_sha256": "529414801646b3ef28f80380a2f57a7a47426ac8a1d87c24b9098a26f807b77b"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/V0055-19-live-complete-body.txt",
+      "original_sha256": "8c21c724b6545d46e057bdb16c390564244c3736dcf2199827bf1a85c5ea1494",
+      "original_bytes": 7241,
+      "stored_path": "archive/8c/8c21c724b6545d46e057bdb16c390564244c3736dcf2199827bf1a85c5ea1494.gz",
+      "stored_bytes": 2652,
+      "stored_sha256": "0b19da59b75625bab12790b8404a9092c1e0e0346139d33acce278ef9fc0c966"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/dgt-v0055-19.html",
+      "original_sha256": "4302c4573d2c619bf70d2e8d39931c23af87e0fbacdba0e713831051e9bea8d5",
+      "original_bytes": 59252,
+      "stored_path": "archive/43/4302c4573d2c619bf70d2e8d39931c23af87e0fbacdba0e713831051e9bea8d5.gz",
+      "stored_bytes": 12851,
+      "stored_sha256": "6ca23c7a2f67043c11762c62abef1f8994306100351566c12e2165823a444477"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/dgt-v0055-19.txt",
+      "original_sha256": "8c21c724b6545d46e057bdb16c390564244c3736dcf2199827bf1a85c5ea1494",
+      "original_bytes": 7241,
+      "stored_path": "archive/8c/8c21c724b6545d46e057bdb16c390564244c3736dcf2199827bf1a85c5ea1494.gz",
+      "stored_bytes": 2652,
+      "stored_sha256": "0b19da59b75625bab12790b8404a9092c1e0e0346139d33acce278ef9fc0c966"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/liva-108.txt",
+      "original_sha256": "fe3a65e227ce69993815f7a30195bff895a66d89737227a121f62993fbb91298",
+      "original_bytes": 992,
+      "stored_path": "archive/fe/fe3a65e227ce69993815f7a30195bff895a66d89737227a121f62993fbb91298.gz",
+      "stored_bytes": 508,
+      "stored_sha256": "f19b689d2f70dfd5891a81df9087f8be7d805644e303169a91f2eae639df240c"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/liva-current.html",
+      "original_sha256": "10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41",
+      "original_bytes": 1769466,
+      "stored_path": "archive/10/10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41.gz",
+      "stored_bytes": 219148,
+      "stored_sha256": "508805d6362211841e127124c951537eb7d60dd9205ab09b0519551d74d8d304"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/liva-current.reader.txt",
+      "original_sha256": "9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa",
+      "original_bytes": 766667,
+      "stored_path": "archive/9d/9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa.gz",
+      "stored_bytes": 162789,
+      "stored_sha256": "ac271992079f0ca640ffb6bff9c6ddcb404308c745e132e3735ac24c87d9baa4"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/liva-full.html",
+      "original_sha256": "92b09235398c290c9929d718d97f6726cb00bce5f754975f8214fd5eeac88abc",
+      "original_bytes": 1769466,
+      "stored_path": "archive/92/92b09235398c290c9929d718d97f6726cb00bce5f754975f8214fd5eeac88abc.gz",
+      "stored_bytes": 219148,
+      "stored_sha256": "eebea639bcf3d018e53ef745432da33aea838507e1636d360ebd3e01f7dc0bcf"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/pgc-current.html",
+      "original_sha256": "e19e6f89b840414760cbfc0ebe1be01210506d21b24f407c0a22feaa14f6f4bd",
+      "original_bytes": 1851507,
+      "stored_path": "archive/e1/e19e6f89b840414760cbfc0ebe1be01210506d21b24f407c0a22feaa14f6f4bd.gz",
+      "stored_bytes": 261545,
+      "stored_sha256": "38507aadbf4d62517e1154aa4273957c3bf4e7af0f851cd9edd4f47c1745465a"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/pgc-current.reader.txt",
+      "original_sha256": "e9938d417f4bae33f80323af181a4c722f0856c96fda6e3b597c3d0440b17f49",
+      "original_bytes": 987359,
+      "stored_path": "archive/e9/e9938d417f4bae33f80323af181a4c722f0856c96fda6e3b597c3d0440b17f49.gz",
+      "stored_bytes": 211916,
+      "stored_sha256": "d95cc1157c13fb1dbcab7728b2def44a8ef2d0664bdde36944a724bedde256d0"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/pgc-full.html",
+      "original_sha256": "fb0ed4f7c6bdbc981130378df071b248b377731dd9a665f9039daa2713b4c503",
+      "original_bytes": 1851507,
+      "stored_path": "archive/fb/fb0ed4f7c6bdbc981130378df071b248b377731dd9a665f9039daa2713b4c503.gz",
+      "stored_bytes": 261546,
+      "stored_sha256": "9e277eef1eb9f4bca80664ff0ea7b959dcc2aac6a5118a2ce3bafdd5efdc2ac4"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/sources/pgc-full.txt",
+      "original_sha256": "57ce2e915a6c522f1f3a57d74a3dfaf0bfeba01e8eb53b223be4fffed12101fe",
+      "original_bytes": 1269556,
+      "stored_path": "archive/57/57ce2e915a6c522f1f3a57d74a3dfaf0bfeba01e8eb53b223be4fffed12101fe.gz",
+      "stored_bytes": 225640,
+      "stored_sha256": "51455541e9ea33886f20cac5e0665900204670552840a30fdc044e03e3953b91"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/text-chain-comparisons.json",
+      "original_sha256": "db262ea27e75a78a16b37e690de199a5c0ba8fd3364758fa100f7b02c254e3d0",
+      "original_bytes": 951,
+      "stored_path": "archive/db/db262ea27e75a78a16b37e690de199a5c0ba8fd3364758fa100f7b02c254e3d0.gz",
+      "stored_bytes": 553,
+      "stored_sha256": "fcbfb05be726be284bf1f4f93220f755142314304bde005356d602c2dbc399e9"
+    },
+    {
+      "original_path": "spain-VAT108-irrecoverable-value-source-review/verification-receipt.json",
+      "original_sha256": "68b9df98a0d336ac782f042902db6af7b4e1b63e903cbf098c1db88d6617546c",
+      "original_bytes": 690,
+      "stored_path": "archive/68/68b9df98a0d336ac782f042902db6af7b4e1b63e903cbf098c1db88d6617546c.gz",
+      "stored_bytes": 414,
+      "stored_sha256": "7a225d7a7ca697aec07b3aa5e80b3e3c114fc40586faf10ec428a765a5271253"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/actual-read-scopes.json",
+      "original_sha256": "89234c885c94288aff3f69966a1a765fa3ba0ae442cc429d02ed2f9eaeee339c",
+      "original_bytes": 1774,
+      "stored_path": "archive/89/89234c885c94288aff3f69966a1a765fa3ba0ae442cc429d02ed2f9eaeee339c.gz",
+      "stored_bytes": 396,
+      "stored_sha256": "e785d2a3eb46d67c06e8a0997d4759e522e691a8d779a556f1fb926aca215f8b"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/artifact-manifest.json",
+      "original_sha256": "a045ce3c4a16355711b0d081f85c9dc5287ef20864428657b828597d0957beab",
+      "original_bytes": 2491,
+      "stored_path": "archive/a0/a045ce3c4a16355711b0d081f85c9dc5287ef20864428657b828597d0957beab.gz",
+      "stored_bytes": 773,
+      "stored_sha256": "38dd0bc18999d7d8591313860e29ef20d932fb61985bf9670201f9d7f00afe08"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/controls.py",
+      "original_sha256": "416cee31a2d782ba7e8c144f5ed31bd10b6fc65f5ca8ca27f421a143e44b2520",
+      "original_bytes": 2150,
+      "stored_path": "archive/41/416cee31a2d782ba7e8c144f5ed31bd10b6fc65f5ca8ca27f421a143e44b2520.gz",
+      "stored_bytes": 1012,
+      "stored_sha256": "85a57f04c3f680e57cf2145f070a20877307e69bd408e7803366e68b03e04d10"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/read-source.py",
+      "original_sha256": "bd6f02ef08c91b978f5ea4b5f9dd9bc84b280d9ff273cc9e4d82ee59850ec5dd",
+      "original_bytes": 678,
+      "stored_path": "archive/bd/bd6f02ef08c91b978f5ea4b5f9dd9bc84b280d9ff273cc9e4d82ee59850ec5dd.gz",
+      "stored_bytes": 435,
+      "stored_sha256": "f3e9cb0ea80d9353171015d2bc828e0fe451d2023a91bb00b69f0e6f84b2492b"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/sealed108-immutability.json",
+      "original_sha256": "dc3e487fe0581671f506f775e3d7b4d49b849d04068a0f7d5ddea922667635da",
+      "original_bytes": 294,
+      "stored_path": "archive/dc/dc3e487fe0581671f506f775e3d7b4d49b849d04068a0f7d5ddea922667635da.gz",
+      "stored_bytes": 232,
+      "stored_sha256": "22e9aa1450c377ee30c3b0fa026fb1ba9a2425554f0a27a459128cf58de7e1ac"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/separating-controls.json",
+      "original_sha256": "a41b8ffb6d7a3e2e29123d715d18903e321513ddce452e05e656228c667c88f5",
+      "original_bytes": 5000,
+      "stored_path": "archive/a4/a41b8ffb6d7a3e2e29123d715d18903e321513ddce452e05e656228c667c88f5.gz",
+      "stored_bytes": 799,
+      "stored_sha256": "9dfb586f456c3e4cc15799498cb3f433879952efe435c1149a62d53bc268ed70"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/source-freeze.json",
+      "original_sha256": "1f8e873321b3747b50fc99d894cb576916c72932b1e73f115ce77063d9e7a7e2",
+      "original_bytes": 384,
+      "stored_path": "archive/1f/1f8e873321b3747b50fc99d894cb576916c72932b1e73f115ce77063d9e7a7e2.gz",
+      "stored_bytes": 289,
+      "stored_sha256": "a41a8ad68be989db13f3027170100364a47a462339cd2282e8b8c9c0f0a8ba2e"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/source-identity.json",
+      "original_sha256": "29fb90a22bac07a82053812a77759c5492efe5b7e7f5bbfcb983d676bb845ad0",
+      "original_bytes": 336,
+      "stored_path": "archive/29/29fb90a22bac07a82053812a77759c5492efe5b7e7f5bbfcb983d676bb845ad0.gz",
+      "stored_bytes": 268,
+      "stored_sha256": "3c4c99a5f00736b039948dc2507c64b950c906e678f31550305d2c11618e16ee"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/source-view.md",
+      "original_sha256": "76b6d40524e72440d99f1d0f520f439f1e364e6ea1e1da29fe2ee60f74adfaae",
+      "original_bytes": 7333,
+      "stored_path": "archive/76/76b6d40524e72440d99f1d0f520f439f1e364e6ea1e1da29fe2ee60f74adfaae.gz",
+      "stored_bytes": 3330,
+      "stored_sha256": "1a661e37b9a86c27a6c0951e422f819254df320b75789f182b5b41c7c10d8bc3"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/sources/liva-current.html",
+      "original_sha256": "10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41",
+      "original_bytes": 1769466,
+      "stored_path": "archive/10/10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41.gz",
+      "stored_bytes": 219148,
+      "stored_sha256": "508805d6362211841e127124c951537eb7d60dd9205ab09b0519551d74d8d304"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-view/sources/liva-current.reader.txt",
+      "original_sha256": "9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa",
+      "original_bytes": 766667,
+      "stored_path": "archive/9d/9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa.gz",
+      "stored_bytes": 162789,
+      "stored_sha256": "ac271992079f0ca640ffb6bff9c6ddcb404308c745e132e3735ac24c87d9baa4"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/V1338-25-live-complete-AX.txt",
+      "original_sha256": "0089270195d6f4eb20a4590e9832cca7a0ac638d98800f75fa93a8ba344cc0ba",
+      "original_bytes": 47201,
+      "stored_path": "archive/00/0089270195d6f4eb20a4590e9832cca7a0ac638d98800f75fa93a8ba344cc0ba.gz",
+      "stored_bytes": 13236,
+      "stored_sha256": "7e09973b55b45b9877d9b94a1bbcdf3b48a1b36ac43e79ec21035dfad9332a68"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/actual-law-excerpts.txt",
+      "original_sha256": "3170fdf7260e0d7ca542fb6cd9012121f2d756f2f672d74fa5c226b30407fe93",
+      "original_bytes": 15959,
+      "stored_path": "archive/31/3170fdf7260e0d7ca542fb6cd9012121f2d756f2f672d74fa5c226b30407fe93.gz",
+      "stored_bytes": 4773,
+      "stored_sha256": "f604230c53ab6f43029a297f31247dd22ee0f531507104470296d8e8d8cc21b4"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/aeat-calculator-joint-p50-u75-repeat.txt",
+      "original_sha256": "e375c1b86009f10f2a268255683e23351f0d798d0365cfd8a0b57c2ddf5b73e4",
+      "original_bytes": 6749,
+      "stored_path": "archive/e3/e375c1b86009f10f2a268255683e23351f0d798d0365cfd8a0b57c2ddf5b73e4.gz",
+      "stored_bytes": 2440,
+      "stored_sha256": "5393f584f6259274e29ebea4c441068e55f0d2755ecf4f327b9e9d9d839b27c1"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/aeat-calculator-separate-ten-point-gates.txt",
+      "original_sha256": "fe2b1f85070f38b58a019c75b970ef3b5a0eff1c63816cb0add9a58a51680e83",
+      "original_bytes": 7031,
+      "stored_path": "archive/fe/fe2b1f85070f38b58a019c75b970ef3b5a0eff1c63816cb0add9a58a51680e83.gz",
+      "stored_bytes": 2484,
+      "stored_sha256": "d489fbf609dbb3d70ab3b095cfb5451bf54d6847364c605a475eb6af857cabc0"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/aeat-calculator-use-only-p40-u75.txt",
+      "original_sha256": "927688d5ae601b957bf277f32726b709aab3f80f7df55152cd845a96ea1e064f",
+      "original_bytes": 6749,
+      "stored_path": "archive/92/927688d5ae601b957bf277f32726b709aab3f80f7df55152cd845a96ea1e064f.gz",
+      "stored_bytes": 2440,
+      "stored_sha256": "82d79c6e0584516c9fb41230073e3d5ba5e47d4ca8630c6a9e124b03d9842dd1"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/artifact-manifest.json",
+      "original_sha256": "32314fc196a7f52842c7d5b15f32a5ba51f0bde2bf31d458c0791e9f6d23ceab",
+      "original_bytes": 3177,
+      "stored_path": "archive/32/32314fc196a7f52842c7d5b15f32a5ba51f0bde2bf31d458c0791e9f6d23ceab.gz",
+      "stored_bytes": 929,
+      "stored_sha256": "544328ea7355c5c517230468993b70a9dcb3a5bb972bb774977688d8ae4e466a"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/liva-current.html",
+      "original_sha256": "10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41",
+      "original_bytes": 1769466,
+      "stored_path": "archive/10/10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41.gz",
+      "stored_bytes": 219148,
+      "stored_sha256": "508805d6362211841e127124c951537eb7d60dd9205ab09b0519551d74d8d304"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/liva-current.reader.txt",
+      "original_sha256": "9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa",
+      "original_bytes": 766667,
+      "stored_path": "archive/9d/9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa.gz",
+      "stored_bytes": 162789,
+      "stored_sha256": "ac271992079f0ca640ffb6bff9c6ddcb404308c745e132e3735ac24c87d9baa4"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/live-unchanged.json",
+      "original_sha256": "33fcbe007daf9f0143416f5cbb749620e189d7b0f3f3802e7bea47318db04557",
+      "original_bytes": 202,
+      "stored_path": "archive/33/33fcbe007daf9f0143416f5cbb749620e189d7b0f3f3802e7bea47318db04557.gz",
+      "stored_bytes": 173,
+      "stored_sha256": "3f7143cccd95f18aa6b70e4beeb390b394513b44fcb4a6908cb2dc3f8029a5fb"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/report.md",
+      "original_sha256": "ffd6fb9703474b68acf96a8b67f652252deb0d27a5c60393f37aabaf35e73943",
+      "original_bytes": 3985,
+      "stored_path": "archive/ff/ffd6fb9703474b68acf96a8b67f652252deb0d27a5c60393f37aabaf35e73943.gz",
+      "stored_bytes": 1981,
+      "stored_sha256": "b8120bbeb7357356bab25cd2e4ee3af5769582ad10084daed40bab723aab39ea"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/retained-calculator-result-scopes.json",
+      "original_sha256": "a44bd5e6778a0f5cd6d461228ea75d976f95273ddf00ec18c2332c6cd551ef60",
+      "original_bytes": 2859,
+      "stored_path": "archive/a4/a44bd5e6778a0f5cd6d461228ea75d976f95273ddf00ec18c2332c6cd551ef60.gz",
+      "stored_bytes": 782,
+      "stored_sha256": "81900eb50422c940486c3e35913e7d8e2d206886fc33429274b063aa053b1ac5"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/separating-arithmetic-controls.json",
+      "original_sha256": "c1cb223e301b336485265e7d63692b3df58920b8adce73c00f2e64005fe2c182",
+      "original_bytes": 2317,
+      "stored_path": "archive/c1/c1cb223e301b336485265e7d63692b3df58920b8adce73c00f2e64005fe2c182.gz",
+      "stored_bytes": 418,
+      "stored_sha256": "abdea386e6702e342b835d44ae0745cb2d769693fb06b8c63e8147ec23e5703d"
+    },
+    {
+      "original_path": "spain-VAT-one-gate-source-inquiry/source-read-ledger.json",
+      "original_sha256": "bd1a5ecf4a6bed5f665b49d3f8d6aed5ecc4c68815c16181b25eef0a517ad655",
+      "original_bytes": 1475,
+      "stored_path": "archive/bd/bd1a5ecf4a6bed5f665b49d3f8d6aed5ecc4c68815c16181b25eef0a517ad655.gz",
+      "stored_bytes": 897,
+      "stored_sha256": "bd2dec51ad312264c9922f9ae18d150f15fd4cdd93443f1795ec2fa4a304a782"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/baseline-spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/candidate-spain-vat-return.md",
+      "original_sha256": "4ad44dbf22824c18fc691fdb3c18421534b9a35049e772522087be6f839dc6d0",
+      "original_bytes": 26547,
+      "stored_path": "archive/4a/4ad44dbf22824c18fc691fdb3c18421534b9a35049e772522087be6f839dc6d0.gz",
+      "stored_bytes": 9555,
+      "stored_sha256": "dd50ba3a43e0b61ce7008095d34482c7c31557b60c9115b6b841173c6423c5b8"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/composition-manifest.json",
+      "original_sha256": "d57b4c8d61a2691d316d9543b141db30eef8c525d37e8d5ec94b7ac029532543",
+      "original_bytes": 12730,
+      "stored_path": "archive/d5/d57b4c8d61a2691d316d9543b141db30eef8c525d37e8d5ec94b7ac029532543.gz",
+      "stored_bytes": 2267,
+      "stored_sha256": "93b4fca5aa0efc4685b612d148ab9657cf3d4910906e411251af4e874471963d"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/country-examples.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/exact-diff.patch",
+      "original_sha256": "dc44d339065406e2117bf9c053fb5aa7585167cffb5ad2ef334ac3abba16d3d9",
+      "original_bytes": 3411,
+      "stored_path": "archive/dc/dc44d339065406e2117bf9c053fb5aa7585167cffb5ad2ef334ac3abba16d3d9.gz",
+      "stored_bytes": 1418,
+      "stored_sha256": "672896bc4a5c3cce04e8758ce76acc8c6f616329006b0743724d26712b7f4f0e"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/options.md",
+      "original_sha256": "59b0a8ab3ab78d45393cbe9f54a91842fb8b3bb071014115f670d682e3bc65c6",
+      "original_bytes": 1455,
+      "stored_path": "archive/59/59b0a8ab3ab78d45393cbe9f54a91842fb8b3bb071014115f670d682e3bc65c6.gz",
+      "stored_bytes": 798,
+      "stored_sha256": "bb1cbc2b4eaf730459594d4fc05ccaea1dff0829ec83c89dbb62d45ebfc7a3e7"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/preservation.json",
+      "original_sha256": "4293472464b5e7feb3ba2614ab27606c79e0b577804b570046057ca159a5ebe2",
+      "original_bytes": 140,
+      "stored_path": "archive/42/4293472464b5e7feb3ba2614ab27606c79e0b577804b570046057ca159a5ebe2.gz",
+      "stored_bytes": 110,
+      "stored_sha256": "fbafd46d7aa1edf968a3009bf5552ea41dba01e32182f987b98293adf779429d"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/schema-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "4ad44dbf22824c18fc691fdb3c18421534b9a35049e772522087be6f839dc6d0",
+      "original_bytes": 26547,
+      "stored_path": "archive/4a/4ad44dbf22824c18fc691fdb3c18421534b9a35049e772522087be6f839dc6d0.gz",
+      "stored_bytes": 9555,
+      "stored_sha256": "dd50ba3a43e0b61ce7008095d34482c7c31557b60c9115b6b841173c6423c5b8"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/writer-manifest.json",
+      "original_sha256": "2aff8a88f16c0ee2cf497f06c570d93f6b395790b36f47ed526117256e1a4f89",
+      "original_bytes": 10971,
+      "stored_path": "archive/2a/2aff8a88f16c0ee2cf497f06c570d93f6b395790b36f47ed526117256e1a4f89.gz",
+      "stored_bytes": 2371,
+      "stored_sha256": "4ff701a4deb869c1fe481ba4835b79414b7e4a4fb3745f3125e37ced150faead"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/writer-report.md",
+      "original_sha256": "748d094d0d760dcdd1fb1bac248f7c267e5685171e3476629de0bffd0ba90700",
+      "original_bytes": 758,
+      "stored_path": "archive/74/748d094d0d760dcdd1fb1bac248f7c267e5685171e3476629de0bffd0ba90700.gz",
+      "stored_bytes": 499,
+      "stored_sha256": "06a044c5d2dbff559aa1877be10e08e7ca136b8a88cc933536f090c0e1199ee7"
+    },
+    {
+      "original_path": "spain-VAT-mirror-scope-private-method/writer-validation.json",
+      "original_sha256": "1be6f4914c6e8292999d288dbdf2c58c7605ba45ce21cecdaf2335da0a2170be",
+      "original_bytes": 177,
+      "stored_path": "archive/1b/1be6f4914c6e8292999d288dbdf2c58c7605ba45ce21cecdaf2335da0a2170be.gz",
+      "stored_bytes": 134,
+      "stored_sha256": "e9e62726399425118173b6203c487c4a255ab845a100dee3fc229bef075b6268"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/README.md.diff.patch",
+      "original_sha256": "eaf10de873bd402b103e3a0f2dd7a886574671e538bd0bb2979b1e98ab8519c6",
+      "original_bytes": 6408,
+      "stored_path": "archive/ea/eaf10de873bd402b103e3a0f2dd7a886574671e538bd0bb2979b1e98ab8519c6.gz",
+      "stored_bytes": 2669,
+      "stored_sha256": "fbb9d1743031bc6f0a0261b255b87b006d46e91bc382ae80dea1d443fdcc9cd9"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/approved-review-identities.json",
+      "original_sha256": "0f7e3efadd78301c3943b67f4c4c9cb4e6d2b52805c97e659fca189277bc70b0",
+      "original_bytes": 771,
+      "stored_path": "archive/0f/0f7e3efadd78301c3943b67f4c4c9cb4e6d2b52805c97e659fca189277bc70b0.gz",
+      "stored_bytes": 377,
+      "stored_sha256": "23a0562b08284bbc1ffdff75fc3cf5b733f2ec9875b5ca72793b5fc6e23cd04b"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/baseline-README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/baseline-es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/baseline-spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/candidate-README.md",
+      "original_sha256": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+      "original_bytes": 13131,
+      "stored_path": "archive/60/6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a.gz",
+      "stored_bytes": 5214,
+      "stored_sha256": "a6c9795aa45dcb387fa023f8d04760e26ad7705b921bcce9060a460c36fb80a9"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/candidate-es-vat-return.md",
+      "original_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "original_bytes": 86372,
+      "stored_path": "archive/d1/d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3.gz",
+      "stored_bytes": 27330,
+      "stored_sha256": "d263a05e1a4415163d908350642f86edfe1d52fbf8547bf94b2bd1e010c7cee1"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/candidate-spain-vat-return.md",
+      "original_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "original_bytes": 26631,
+      "stored_path": "archive/70/70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2.gz",
+      "stored_bytes": 9603,
+      "stored_sha256": "c0d3d8ac1757b74d57fa2fca2df0c13a13c2f4f51a7bc14d2ee8e69d641ec6ff"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/composition-manifest.json",
+      "original_sha256": "96be7854392126614f56397be075f2e50ca44d5e45a2017dd693be6a65a1a0e5",
+      "original_bytes": 12824,
+      "stored_path": "archive/96/96be7854392126614f56397be075f2e50ca44d5e45a2017dd693be6a65a1a0e5.gz",
+      "stored_bytes": 2359,
+      "stored_sha256": "934a70f29db3e3c127f6fb6b4da6db283dc40fe86c02a53107ecf382804c1789"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/country-examples.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/draft-options.md",
+      "original_sha256": "a4fce3197659ee685179e3a9a48b7134fe1731a84c00a6dad2718422cd344a12",
+      "original_bytes": 1741,
+      "stored_path": "archive/a4/a4fce3197659ee685179e3a9a48b7134fe1731a84c00a6dad2718422cd344a12.gz",
+      "stored_bytes": 949,
+      "stored_sha256": "d8dd59a46a0902ccc51b887c1023274ea5f0c58440a3e57e2f807a5d29a01610"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/es-vat-return.md.diff.patch",
+      "original_sha256": "f5b7516e353b17da3f54776da7e6a97892b6809db3c6533bbe9ea20820eadd84",
+      "original_bytes": 18755,
+      "stored_path": "archive/f5/f5b7516e353b17da3f54776da7e6a97892b6809db3c6533bbe9ea20820eadd84.gz",
+      "stored_bytes": 5859,
+      "stored_sha256": "4368c1f46325fdb79c5f8c940366af229f6624a2a7c9d1e52acc945400eb2633"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/own-separating-controls.json",
+      "original_sha256": "4e673de70d2a438872286130ea3e3cf1733cc583df362fbc5a93b391bf14d87b",
+      "original_bytes": 2778,
+      "stored_path": "archive/4e/4e673de70d2a438872286130ea3e3cf1733cc583df362fbc5a93b391bf14d87b.gz",
+      "stored_bytes": 576,
+      "stored_sha256": "eb12cb655fae44c3d5e1002c762c63bab1e08f2b81a6719316b9f299896fa6c4"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/preservation.json",
+      "original_sha256": "f6bfc32086be44ec2f60b761d1722e8dbdcbe8952eebd47abe64c41839517f8f",
+      "original_bytes": 611,
+      "stored_path": "archive/f6/f6bfc32086be44ec2f60b761d1722e8dbdcbe8952eebd47abe64c41839517f8f.gz",
+      "stored_bytes": 186,
+      "stored_sha256": "05ee72300b0bd3b6c859f80c1b5aca583194465e8e28fd5e8e9bae457c130322"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/replacements.json",
+      "original_sha256": "37253d4d85d05e0d414eed3da022be98a94dabef10d981f3e92d7a0ae8b95269",
+      "original_bytes": 64307,
+      "stored_path": "archive/37/37253d4d85d05e0d414eed3da022be98a94dabef10d981f3e92d7a0ae8b95269.gz",
+      "stored_bytes": 12730,
+      "stored_sha256": "23442fa1b2c5882da6f01e9935a3af7782351b655e6b87fa736f7cfd7b5138b5"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/schema-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/README.md",
+      "original_sha256": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+      "original_bytes": 13131,
+      "stored_path": "archive/60/6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a.gz",
+      "stored_bytes": 5214,
+      "stored_sha256": "a6c9795aa45dcb387fa023f8d04760e26ad7705b921bcce9060a460c36fb80a9"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/es-vat-return.md",
+      "original_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "original_bytes": 86372,
+      "stored_path": "archive/d1/d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3.gz",
+      "stored_bytes": 27330,
+      "stored_sha256": "d263a05e1a4415163d908350642f86edfe1d52fbf8547bf94b2bd1e010c7cee1"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "original_bytes": 26631,
+      "stored_path": "archive/70/70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2.gz",
+      "stored_bytes": 9603,
+      "stored_sha256": "c0d3d8ac1757b74d57fa2fca2df0c13a13c2f4f51a7bc14d2ee8e69d641ec6ff"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/source-manifest-verification.json",
+      "original_sha256": "707225511e800dee77dbfbc623ad9f0b2340b26b45926ca8a167a77f4543332e",
+      "original_bytes": 350,
+      "stored_path": "archive/70/707225511e800dee77dbfbc623ad9f0b2340b26b45926ca8a167a77f4543332e.gz",
+      "stored_bytes": 232,
+      "stored_sha256": "22384d44d333b0ff1bf2c68207b48845009e98f91769d28f0f25a6d703c7623e"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/spain-vat-return.md.diff.patch",
+      "original_sha256": "a665c367f671d1f66af1c903c7081c3847b0ded7c308cd04fbbc0630ebb072f0",
+      "original_bytes": 3495,
+      "stored_path": "archive/a6/a665c367f671d1f66af1c903c7081c3847b0ded7c308cd04fbbc0630ebb072f0.gz",
+      "stored_bytes": 1517,
+      "stored_sha256": "f4e1c6d3c7f0ab867f5e0ec0e064b1d0ef1658d6c76013b9dd78b6ab926cf727"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/validation.json",
+      "original_sha256": "73dce7f6817c9af5ef34638383e23679ca04a9801750365acc7d6318973b7d8e",
+      "original_bytes": 292,
+      "stored_path": "archive/73/73dce7f6817c9af5ef34638383e23679ca04a9801750365acc7d6318973b7d8e.gz",
+      "stored_bytes": 186,
+      "stored_sha256": "1510ec00cf57f3514e4621405267f0fb23c51e17e5255ae4bd853761ed7faed7"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/writer-manifest.json",
+      "original_sha256": "53185b9a131ddc2bf3e577450c1370cfb980b16371072127309145221a5d4dd9",
+      "original_bytes": 14131,
+      "stored_path": "archive/53/53185b9a131ddc2bf3e577450c1370cfb980b16371072127309145221a5d4dd9.gz",
+      "stored_bytes": 2781,
+      "stored_sha256": "6c230dcea9d60c65626840f78e42cffd4d9e33dc6f391775678350d923384754"
+    },
+    {
+      "original_path": "spain-VAT-ordinary-acquisition-and-adjustment-private/writer-report.md",
+      "original_sha256": "32f3141212530ded09e211f66668a24d3dd712419a3d74a78490f1d19b13bef1",
+      "original_bytes": 3601,
+      "stored_path": "archive/32/32f3141212530ded09e211f66668a24d3dd712419a3d74a78490f1d19b13bef1.gz",
+      "stored_bytes": 1871,
+      "stored_sha256": "d784e330d7b4ed61e9d87be936807d7b115f37af6b00b03b7eae3c046bed3f46"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/README.md.own.diff",
+      "original_sha256": "26a4df8886a68f41176d9c99be308d9972d4d9fdc03fe49dde2329244041dbb6",
+      "original_bytes": 6670,
+      "stored_path": "archive/26/26a4df8886a68f41176d9c99be308d9972d4d9fdc03fe49dde2329244041dbb6.gz",
+      "stored_bytes": 2753,
+      "stored_sha256": "0c938484ab1571fcb31d8b900c23cf4b705c880789aaf0647b83bab059798595"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/checks.json",
+      "original_sha256": "6e5f3e382df7fe27e76f55bd0920c37c602a2086ee78d649d62a8cd98bb47ee2",
+      "original_bytes": 3827,
+      "stored_path": "archive/6e/6e5f3e382df7fe27e76f55bd0920c37c602a2086ee78d649d62a8cd98bb47ee2.gz",
+      "stored_bytes": 872,
+      "stored_sha256": "81aa0d6870c8bbe47436c85b83aed1586fd2740a32e882a2fc0ffa5f10c791e8"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/es-vat-return.md.own.diff",
+      "original_sha256": "4eb86ac565d10e653197a199cceee0e5e39327c0e119cb5f23ed1b6e7e866560",
+      "original_bytes": 19017,
+      "stored_path": "archive/4e/4eb86ac565d10e653197a199cceee0e5e39327c0e119cb5f23ed1b6e7e866560.gz",
+      "stored_bytes": 5935,
+      "stored_sha256": "fe5735e784e28faf4f843722a0bbfbe201a47952242a7aef43354eaba5caf331"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/live-and-composition-binding.json",
+      "original_sha256": "d6953b50d2f73cd491d8f77155729b358fc3e640364a5f9336b48c32e4c437b4",
+      "original_bytes": 7694,
+      "stored_path": "archive/d6/d6953b50d2f73cd491d8f77155729b358fc3e640364a5f9336b48c32e4c437b4.gz",
+      "stored_bytes": 2040,
+      "stored_sha256": "2ab4c023e38d5a14da29c6d9b2060c9b81256e90e16c3039ffd3bc40b1f59fcc"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/manifest.json",
+      "original_sha256": "1532efe16a458aa1197d9c472895b254939b4f69580ce4bdc1c3f530bbcdc4f9",
+      "original_bytes": 2283,
+      "stored_path": "archive/15/1532efe16a458aa1197d9c472895b254939b4f69580ce4bdc1c3f530bbcdc4f9.gz",
+      "stored_bytes": 669,
+      "stored_sha256": "75e0c47c5bb55d7977c052820c2e91308af94aaf9013ff3845c81b3b5a3fb1fe"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/own-check-script.py",
+      "original_sha256": "13ead76b10a4c8eac8848d1f9fe3a5fcb1ce1c02d44d1303cef2a43e408aafa2",
+      "original_bytes": 4398,
+      "stored_path": "archive/13/13ead76b10a4c8eac8848d1f9fe3a5fcb1ce1c02d44d1303cef2a43e408aafa2.gz",
+      "stored_bytes": 2243,
+      "stored_sha256": "171c75bca49c415b190eaca93c2aba14cd3f7a0bb340cca2e8e1665074fe66da"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/own22-examples.txt",
+      "original_sha256": "4181a36c6551f88a63a8d1d9d19fdc02dad76bf2eae071bd56dc735734d4a033",
+      "original_bytes": 73,
+      "stored_path": "archive/41/4181a36c6551f88a63a8d1d9d19fdc02dad76bf2eae071bd56dc735734d4a033.gz",
+      "stored_bytes": 86,
+      "stored_sha256": "859e27ba24343a930c5e924a9ffd89aefe87bd4bd8933e75bc4acf60f1cf7f38"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/report.md",
+      "original_sha256": "98d6360e67829338d524cc290dd01f71ac7d0b7e154da8c3bbf314ba631a2ee1",
+      "original_bytes": 4232,
+      "stored_path": "archive/98/98d6360e67829338d524cc290dd01f71ac7d0b7e154da8c3bbf314ba631a2ee1.gz",
+      "stored_bytes": 2200,
+      "stored_sha256": "40fda885a85d2eb4db93817a1382bb1ac43210868a2abb29778f07f8e7f3d762"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/vat-exact-delta-review/spain-vat-return.md.own.diff",
+      "original_sha256": "9f68dea93118c59fd628247e700e11118f4e7b97e14989157c7e2bed9825d6ec",
+      "original_bytes": 3757,
+      "stored_path": "archive/9f/9f68dea93118c59fd628247e700e11118f4e7b97e14989157c7e2bed9825d6ec.gz",
+      "stored_bytes": 1596,
+      "stored_sha256": "dece81cddf5fa90c4867999a478b2c9c55fd69f213f3d044be6ed2da7a25bb79"
+    }
+  ]
+}

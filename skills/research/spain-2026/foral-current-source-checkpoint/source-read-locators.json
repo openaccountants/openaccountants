@@ -1,0 +1,71 @@
+[
+  {
+    "file": "sources/bizkaia-law.pdf",
+    "pdf_pages_one_based": [
+      99,
+      100,
+      209
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/alava-law.pdf",
+    "pdf_pages_one_based": [
+      114,
+      231
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/gipuzkoa-law.pdf",
+    "pdf_pages_one_based": [
+      136,
+      137,
+      138,
+      277,
+      278
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/bizkaia-reg.pdf",
+    "pdf_pages_one_based": [
+      74,
+      75,
+      76
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/gipuzkoa-reg.pdf",
+    "pdf_pages_one_based": [
+      87,
+      88
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/alava-reg.pdf",
+    "pdf_pages_one_based": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  },
+  {
+    "file": "sources/bizkaia-NF2-2025-enacted.pdf",
+    "pdf_pages_one_based": [
+      59,
+      60
+    ],
+    "scope": "Charging, ordinary gross quota and special provisions; for Alava regulation final additional/transitional provisions. Full bodies retained; not an entire-law line-by-line review."
+  }
+]

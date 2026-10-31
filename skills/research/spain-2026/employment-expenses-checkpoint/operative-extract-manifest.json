@@ -1,0 +1,38 @@
+[
+  {
+    "source": "lirpf-fresh.html",
+    "section": "a19",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html-a19.txt",
+    "sha256": "7fb33809ee2734655de5673695633fd765a00bb7d16f4565f99a10da2f92410e"
+  },
+  {
+    "source": "lirpf-fresh.html",
+    "section": "a20",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html-a20.txt",
+    "sha256": "0400cce5130af0977ae7d6af23df4a5ffcc6b14289ba743533acd24212f9cf4d"
+  },
+  {
+    "source": "lirpf-fresh.html",
+    "section": "a84",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/lirpf-fresh.html-a84.txt",
+    "sha256": "2c512563344886d92fea4d674ea3c8476a7d09327e56b80dcbdbcb19d0aee682"
+  },
+  {
+    "source": "rirpf-fresh.html",
+    "section": "a11",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/rirpf-fresh.html-a11.txt",
+    "sha256": "a843adfe05b5b03d5f2d0945b97aeb21475032a3976f5a6b4857bf6993c0de3d"
+  },
+  {
+    "source": "balearic-enactment-fresh.html",
+    "section": "DF67",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/balearic-DF67.txt",
+    "sha256": "85856afae8b5d7db7abdddb037ade7efe811b00362ad37830b4e1f5ef7ebfee0"
+  },
+  {
+    "source": "balearic-enactment-fresh.html",
+    "section": "DF72",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/thalidomide-wage-current-source/sources/balearic-DF72.txt",
+    "sha256": "085bf2339bf35aea8f9b712c06ed3a7fd744a27b368607389642c4a2570cff82"
+  }
+]

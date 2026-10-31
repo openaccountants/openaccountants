@@ -1,0 +1,87 @@
+{
+  "kind": "Selected actual browser AX observations transcribed from tool outputs, not raw HTTP bodies or a complete exported return",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "version": "1.19 OPEN",
+  "observed_date": "2026-10-28",
+  "browser_separation": "Own hidden IAB tabs3 and4; Cantabria Brave1623103262 untouched; no native file picker, login, taxpayer access or filing",
+  "individual_fixture": {
+    "name": "PRUEBA BALEAR FICTICIA",
+    "fictional_NIF": "12345678Z",
+    "birth": "01/01/1985",
+    "region": "ILLES BALEARS",
+    "mode": "DECLARANTE",
+    "salary": "25000",
+    "social_security_expense": "1500",
+    "observed_BI": "21500",
+    "income_AX_quotes": [
+      "354 button 25.000,00, ID: TPING",
+      "370 button 21.500,00, ID: BIGRALH"
+    ],
+    "cases": [
+      {
+        "case": "ordinary1500_n2",
+        "input_AX_quotes": [
+          "23 text field (settable) Importe satisfecho por el titular: Primer descendiente o acogido:, Value: 1500,00, ID: aYvR9w3",
+          "25 text field (settable) Nº personas con derecho a la deducción: Primer descendiente o acogido:, Value: 2, ID: aYvRlw3",
+          "27 text field (settable) Días (*): Primer descendiente o acogido:, Value: 365, ID: aYvRyw3",
+          "73 checkbox (settable, integer) Value: 0, ID: aYvRx04-real"
+        ],
+        "output_AX_quotes": ["427 button 330,00, ID: ANEXOB"],
+        "observed_credit": "330.00"
+      },
+      {
+        "case": "ordinary500_n2",
+        "input_AX_quotes": [
+          "23 text field (settable) Importe satisfecho por el titular: Primer descendiente o acogido:, Value: 500,00, ID: aYvR9w3",
+          "25 text field (settable) Nº personas con derecho a la deducción: Primer descendiente o acogido:, Value: 2, ID: aYvRlw3",
+          "27 text field (settable) Días (*): Primer descendiente o acogido:, Value: 365, ID: aYvRyw3",
+          "73 checkbox (settable, integer) Value: 0, ID: aYvRx04-real"
+        ],
+        "output_AX_quotes": ["200 text field Value: 200,00, ID: aYvRq53, Por gastos relativos a los descendientes o acogidos menores de seis años por motivos de conciliación:"],
+        "observed_credit": "200.00"
+      },
+      {
+        "case": "enhanced_RETA183_500_n2",
+        "input_AX_quotes": [
+          "23 text field (settable) Importe satisfecho por el titular: Primer descendiente o acogido:, Value: 500,00, ID: aYvRm34",
+          "25 text field (settable) Nº personas con derecho a la deducción: Primer descendiente o acogido:, Value: 2, ID: aYvRy34",
+          "27 text field (settable) Días (*): Primer descendiente o acogido:, Value: 365, ID: aYvRa44",
+          "73 checkbox (settable, integer) Value: 1, ID: aYvR994-real"
+        ],
+        "output_AX_quotes": ["200 text field Value: 250,00, ID: aYvRq53, Por gastos relativos a los descendientes o acogidos menores de seis años por motivos de conciliación:"],
+        "observed_credit": "250.00"
+      },
+      {
+        "case": "enhanced_RETA183_1500_n2",
+        "input_AX_quotes": [
+          "23 text field (settable) Importe satisfecho por el titular: Primer descendiente o acogido:, Value: 1.500,00, ID: aYvRzb4",
+          "25 text field (settable) Nº personas con derecho a la deducción: Primer descendiente o acogido:, Value: 2, ID: aYvRac4",
+          "27 text field (settable) Días (*): Primer descendiente o acogido:, Value: 365, ID: aYvRnc4",
+          "73 checkbox (settable, integer) Value: 1, ID: aYvRmh4-real"
+        ],
+        "output_AX_quotes": ["200 text field Value: 450,00, ID: aYvRq53, Por gastos relativos a los descendientes o acogidos menores de seis años por motivos de conciliación:"],
+        "observed_credit": "450.00"
+      }
+    ]
+  },
+  "separate_married_mixed_rate_fixture": {
+    "fictional_people": ["PRUEBA CONJUNTA FICTICIA/12345678Z/birth01Jan1991", "PRUEBA OTRO FICTICIO/87654321X/birth01Jan1985"],
+    "both_salary": "25000",
+    "both_social_security_expense": "1500",
+    "each_individual_BI": "21500",
+    "joint_BI": "45000",
+    "enhanced_claimant_input": {"own_expense": "500", "entitled": "2", "days": "365"},
+    "ordinary_claimant_input": {"own_expense": "1500", "entitled": "2", "days": "365"},
+    "observed_summary_column_order": ["CONJUNTA", "Declarante", "Cónyuge"],
+    "actual_summary_AX_quotes": [
+      "633 button 45.000,00, ID: BIGRALH",
+      "635 button 21.500,00, ID: BIGRALH",
+      "637 button 21.500,00, ID: BIGRALH",
+      "739 button 580,00, ID: ANEXOB",
+      "741 button 250,00, ID: ANEXOB",
+      "743 button 330,00, ID: ANEXOB"
+    ],
+    "limit": "The joint result only sums these entered n2 claimant records. The dialog has no child identifier for cross-spouse row matching. It does not establish a universal mixed-rate joint allocation, a pooled joint cap or the legal entry configuration for a joint-only claim. No such new joint method is implemented."
+  },
+  "setup_notes": "An all-zero fictional NIF was rejected by input-format validation and replaced by the standard fictional checksum-valid12345678Z; no census lookup or taxpayer identification was used. One stale numeric AX click and one off-layout click were replaced by current state/visible semantic controls. Initial zero-income output was not used as a qualifying credit case; work income was entered before the reported positive observations. No Presentar button was clicked."
+}
