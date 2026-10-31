@@ -2,7 +2,7 @@
 
 Who owns each jurisdiction for the [GOAL.md](GOAL.md) push. The owner drives the pack to complete and verified; they do not have to write every line themselves. James Wallach works with Jeff on the US. Change this file by PR.
 
-**Every owner and every writer, human or AI, builds skills to one standard: [docs/skill-template.md](docs/skill-template.md) ("How to write a skill: the standard").** Primary sources only, one independent review before merge, nothing unconfirmed in the skill.
+**Every owner and every writer, human or AI, builds skills to one standard: [docs/skill-template.md](skill-template.md) ("How to write a skill: the standard").** Primary sources only, one independent review before merge, nothing unconfirmed in the skill.
 
 **Agents starting European work: read [Europe writing assignments](#europe-writing-assignments) first.** It records the allocation as of 31 October 2026.
 
@@ -48,7 +48,7 @@ Michael set this allocation on 23 October 2026 and remains the accountable owner
 
 - 23 October: Michael split the 55 European jurisdictions between Claude (22) and ChatGPT (33).
 - 24 October: Michael handed Bulgaria (BG), Croatia (HR), Estonia (EE), Latvia (LV), Lithuania (LT), Slovakia (SK) and Slovenia (SI) from ChatGPT to Claude. That made Claude 29 and ChatGPT 26. The follow-ups recorded at that handover were fixed on 30 October: the Lithuania formation VAT test (#947) and the Slovenia income tax conflict noted on #769 (#943). The older overview, formation and optimisation skills in these packs were refreshed the same day.
-- 24 October: Michael replaced the consolidated PR #514 with one PR per country. The [split register](docs/research/2026-10-24-country-pr-split.md) maps each replacement PR. #514 and its branch stay as historical review evidence.
+- 24 October: Michael replaced the consolidated PR #514 with one PR per country. The [split register](research/2026-10-24-country-pr-split.md) maps each replacement PR. #514 and its branch stay as historical review evidence.
 
 ### 30-31 October 2026
 

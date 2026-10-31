@@ -64,7 +64,7 @@ Record the facts, selected skill/version, source passages, assumptions, calculat
 
 This router was reconciled to the existing Finland source pack on 26 October 2026. Tax rules and official URLs belong to the linked topic skills; no independent legal conclusion is supplied by this index. Earlier 2025 summary figures remain in Git history and must not substitute for current topic-source checks.
 
-The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
+The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../docs/OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
 
 [ita]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
 [vat]: https://www.finlex.fi/fi/lainsaadanto/1993/1501

@@ -6,11 +6,11 @@ Set 22 October 2026 by Michael Cutajar, Ryan Duguid and Jeff Watts. Milestone **
 
 Every jurisdiction in the catalogue has a **complete, verified, reviewed pack**, and nobody else has that. Three tests; all three must pass before a jurisdiction counts:
 
-1. **Complete.** We go deep on tax first. The pack has one skill, in the deep-tax shape, for each applicable tax domain: IT-IND (individual income tax), IT-CORP (corporate income tax), VAT (VAT, GST or sales tax), SC (social contributions), PR (payroll withholding), TP (transfer pricing) and XB (cross-border: exit tax, treaties, non-residents). "Applicable" is decided per jurisdiction and written in the pack's `README.md` (`applicable:` and `not_applicable:` with a reason; template in [docs/pack-readme-template.md](docs/pack-readme-template.md)). A territory with no VAT has no VAT skill, and says so. Bookkeeping, e-invoicing, financial statements and tax optimisation are the second milestone, **Accounting packs**, and never count as missing here.
+1. **Complete.** We go deep on tax first. The pack has one skill, in the deep-tax shape, for each applicable tax domain: IT-IND (individual income tax), IT-CORP (corporate income tax), VAT (VAT, GST or sales tax), SC (social contributions), PR (payroll withholding), TP (transfer pricing) and XB (cross-border: exit tax, treaties, non-residents). "Applicable" is decided per jurisdiction and written in the pack's `README.md` (`applicable:` and `not_applicable:` with a reason; template in [docs/pack-readme-template.md](pack-readme-template.md)). A territory with no VAT has no VAT skill, and says so. Bookkeeping, e-invoicing, financial statements and tax optimisation are the second milestone, **Accounting packs**, and never count as missing here.
 2. **Verified.** Every figure is tied to an official source that resolves, the two worked examples in every skill recompute, and the pack passes `scripts/validate-guides.py` and CI. A guide being present is not coverage. Source preparation is not coverage.
 3. **Reviewed.** A named accountant has reviewed the pack (`tier: 1` with `reviewed_by` and `reviewed_on`). This is the last step and the slowest: we build and verify first, then bring accountants in per jurisdiction.
 
-There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `tier: 2`, named **Checked against the law** (built to the standard in docs/skill-template.md) or **Sourced from the law** (older skills not yet rebuilt). See [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](docs/COVERAGE.md)); the exact figures come from the report below, never from a hand count.
+There are exactly two quality tiers: **Accountant-reviewed** (`tier: 1`) and `tier: 2`, named **Checked against the law** (built to the standard in docs/skill-template.md) or **Sourced from the law** (older skills not yet rebuilt). See [docs/QUALITY-TIERS.md](QUALITY-TIERS.md). In prose we say "190+ jurisdictions" ([docs/COVERAGE.md](COVERAGE.md)); the exact figures come from the report below, never from a hand count.
 
 ## Where we are
 
@@ -54,7 +54,7 @@ Coverage is one of seven. Each has a label; every issue carries one workstream l
 gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "Cover the world" --state open --json number,title,body
 ```
 
-Pick one, comment `taking`, branch `pack/<code>`, follow the checklist in the issue body, open a PR with `Closes #N`. The issue body, the pack README and [docs/skill-template.md](docs/skill-template.md) are the whole spec.
+Pick one, comment `taking`, branch `pack/<code>`, follow the checklist in the issue body, open a PR with `Closes #N`. The issue body, the pack README and [docs/skill-template.md](skill-template.md) are the whole spec.
 
 ## Owners
 

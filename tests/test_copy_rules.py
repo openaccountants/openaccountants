@@ -1,13 +1,13 @@
 """Copy rules for the repository's own prose (docs, READMEs, workflows, templates).
 
-The rules come from GOAL.md and docs/COVERAGE.md: never "every country"; the one
+The rules come from docs/GOAL.md and docs/COVERAGE.md: never "every country"; the one
 rounded claim is "190+ jurisdictions"; exactly two quality states, named
 "Accountant-reviewed" (tier 1) and "Checked against the law" / "Sourced from the law"
 (tier 2; "Source-cited draft" is retired); and the retired role and state
 words ("Partner", "attest", "verified accountant", "accountant-verified",
 "Accountant-authored") do not come back.
 
-Scope: every tracked Markdown file except CHANGELOG.md (history keeps its old
+Scope: every tracked Markdown file except docs/CHANGELOG.md (history keeps its old
 wording), docs/research/ and evidence/ (source quotations and historical evidence),
 and the skill content trees
 (skills/, packages/, agent-skills/<slug>/, plugins/openaccountants/skills/),
@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-EXCLUDED_FILES = {"CHANGELOG.md"}
+EXCLUDED_FILES = {"docs/CHANGELOG.md"}
 EXCLUDED_PREFIXES = (
     "docs/research/",
     "evidence/",
@@ -69,7 +69,7 @@ class CopyRulesTest(unittest.TestCase):
         files = tracked_markdown()
         self.assertIn("README.md", files)
         self.assertIn("docs/QUALITY-TIERS.md", files)
-        self.assertNotIn("CHANGELOG.md", files)
+        self.assertNotIn("docs/CHANGELOG.md", files)
         self.assertNotIn("evidence/ledgers/es-beckham.md", files)
         self.assertNotIn("evidence/ledgers/spain-2026-evidence/es-beckham/frozen-guide.md", files)
 

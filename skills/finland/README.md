@@ -17,7 +17,7 @@ partial: {}
 
 # Finland tax pack
 
-Tax year **2026**, currency EUR, tax authority [Vero](https://www.vero.fi/en/). Michael / ChatGPT owns this pack under [OWNERS.md](../../OWNERS.md). Work remains on [issue #392](https://github.com/openaccountants/openaccountants/issues/392) and the existing Finland [PR #777](https://github.com/openaccountants/openaccountants/pull/777). Historical consolidated PR #514 is not the current publication destination.
+Tax year **2026**, currency EUR, tax authority [Vero](https://www.vero.fi/en/). Michael / ChatGPT owns this pack under [OWNERS.md](../../docs/OWNERS.md). Work remains on [issue #392](https://github.com/openaccountants/openaccountants/issues/392) and the existing Finland [PR #777](https://github.com/openaccountants/openaccountants/pull/777). Historical consolidated PR #514 is not the current publication destination.
 
 ## Domains
 
