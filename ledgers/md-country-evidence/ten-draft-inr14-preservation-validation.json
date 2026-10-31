@@ -1,0 +1,99 @@
+{
+  "status": "PASS writer preservation/source/control checks only; ordinary gaps and fresh independent whole-country review remain open",
+  "checked_on": "2026-10-31",
+  "base_commit": "6d5fbce34",
+  "checks": [
+    {
+      "slug": "md-corporate-income-tax",
+      "source_rows": 380,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-social-contributions",
+      "source_rows": 284,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-income-tax",
+      "source_rows": 542,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-payroll",
+      "source_rows": 247,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-vat",
+      "source_rows": 354,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-transfer-pricing",
+      "source_rows": 403,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-cross-border",
+      "source_rows": 318,
+      "appended_rows": 40,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-company-formation",
+      "source_rows": 209,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-tax-overview",
+      "source_rows": 55,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-tax-optimization",
+      "source_rows": 84,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    }
+  ],
+  "total_source_groups": 2876,
+  "new_source_groups": 40,
+  "original_country_topic_units": 745,
+  "subsequent_topic_units": 229,
+  "original_and_subsequent_topics": "UNCHANGED with destinations",
+  "previous_oa_check_blocks": 50,
+  "previous_arithmetic_cases": 26,
+  "new_arithmetic_cases": 1,
+  "new_source_lookups": 8,
+  "actual_new_annex_binaries": 3,
+  "scope": "Current INR14 form1page, complete instructions2pages and classifier5pages read and visually inspected. Nine-column reporting/control method and three-letter country entries supplied; monthly-period, classifier-caption/list and entity-field issues retained. No authenticated submission/prefix/ISO-status/comprehensivecoverage claim.",
+  "publication": "No new push or PR; country incomplete; independent whole-country review pending readiness"
+}

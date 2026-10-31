@@ -1,0 +1,77 @@
+{
+  "status": "PASS one new INR14 reconciliation case and eight source lookups; independent legal review pending",
+  "cases": [
+    {
+      "name": "INR14 gross, withholding, control and record count use separate bases",
+      "assumed_records": [
+        {
+          "gross": "40000",
+          "tax": "0"
+        },
+        {
+          "gross": "60000",
+          "tax": "7200"
+        }
+      ],
+      "actual": {
+        "column8": "100000",
+        "column9": "7200",
+        "control_sum": "7200",
+        "entries": "2"
+      },
+      "expected": {
+        "column8": 100000,
+        "column9": 7200,
+        "control_sum": 7200,
+        "entries": 2
+      },
+      "scope": "Actual legal reportability/exemption/tax already established by assumption; zero withholding does not eliminate the row; no rate or treaty entitlement inferred.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "source_lookups": [
+    {
+      "name": "Actual form has nine columns",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Printed control sum names column9",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Country classifier uses three letters, not TP numeric codes",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Preserved classifier caption anomaly",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Preserved atypical entry without certifying ISO/portal status",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Period instruction really prints monthlyL rather than inferred annual code",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Code annual and unified routes remain distinct",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Instruction requires monthly income-source code and art188correction",
+      "status": "PASS SOURCE LOOKUP"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-FORM-20261031.json": "4f912f1721cb6d1758fd8a2b151ae52a124e34cdb5257810f701df62a945bf81",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-INSTRUCTIONS-20261031.json": "d04b1126615e6c3b8f0c0f08c169cf71842130a5245dab60d1a6ada827209164",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-INR14-CURRENT-CLASSIFIER-20261031.json": "f480792787b05283af861a8d36672f403081c6bdd49412a7d63005e8cada700e",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CODE-UNIF-INTERFACES-20261031.json": "80eeabfee8d4245037c5ea46e127fb62b6dc27b933a239398f842f67754f5aa9"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/md-cross-border.md": "6db91ea8a2f4d9d198ac124eee957e4bcbcf90108bec54fea51becd6c77a0009"
+  },
+  "read_date": "2026-10-31",
+  "not_certified": "Taxpayer factual eligibility, exemption/rate/treaty relief, accepted annual portal prefix, entity-country field, atypical classifier codes, ISO status, actual filing acceptance or comprehensive country coverage"
+}
