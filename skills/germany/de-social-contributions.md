@@ -443,7 +443,7 @@ expected:
 | Sozialversicherungs-Rechengrößenverordnung 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
 | Beitragssatzbekanntmachung Rentenversicherung 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | Pflegeversicherungs-Beitragssatzanpassungsverordnung 2025 | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-24 |
-| Federal Health Ministry, Beiträge (2026 average additional rate 2.9%) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-31 |
+| Federal Health Ministry, Beiträge (2026 average additional rate 2.9%) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-24 |
 | Mindestlohnverordnung (MiLoV5) | https://www.gesetze-im-internet.de/milov5/__1.html | 2026-10-24 |
 | VVG § 193; EStG § 10 | https://www.gesetze-im-internet.de/vvg_2008/__193.html | 2026-10-24 |
 | svbezgrv_2026 § 1 | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html | 2026-10-31 |

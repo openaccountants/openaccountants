@@ -452,9 +452,9 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | SVBezGrV 2026 § 4 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-24 |
 | RVBeitrSBek 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | BGBl. 2024 I Nr. 108, Art. 6 (loss share back to 60% from 2028) | https://www.recht.bund.de/bgbl/1/2024/108/VO.html | 2026-10-24 |
-| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-10-31-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
-| BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2026-10-31-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-31 |
-| BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-31 |
+| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-26 |
+| BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-26 |
+| BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-24 |
 | ELSTER help, 2025 income tax return | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
 | EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
 | EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |

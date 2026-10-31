@@ -258,7 +258,7 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | AO §§ 370, 378 (evasion, reckless understatement, fine up to EUR 50,000) | https://www.gesetze-im-internet.de/ao_1977/__378.html | 2026-10-23 |
 | EStG § 49 (German income of non-residents) | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-23 |
 | SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
-| BMF, Anlage EÜR 2026 form and instructions (letter of 1 September 2026) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-10-31-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
+| BMF, Anlage EÜR 2026 form and instructions (letter of 1 September 2026) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
 | BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
 | EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
 | EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |

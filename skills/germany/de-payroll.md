@@ -374,7 +374,7 @@ Defaults when an answer is missing, for an estimate only: unknown class, estimat
 | Pension rate notice 2026 (RVBeitrSBek 2026) | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | Care rate regulation (PBAV 2025) § 1 | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-24 |
 | Social insurance values regulation 2026 (SVBezGrV 2026), BGBl. 2025 I No. 278 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
-| Finance ministry, Programmablaufplan 2026, Anlage 1 (final, 12 November 2025), incl. test table | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2026-10-31-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
+| Finance ministry, Programmablaufplan 2026, Anlage 1 (final, 12 November 2025), incl. test table | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-24 |
 | Finance ministry, Programmablaufplan 2026 overview page | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026.html | 2026-10-31 |
 | Finance ministry, Aktivrente FAQ | https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html | 2026-10-24 |
 | Finance ministry, Steuern von A bis Z (church tax 8% or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-24 |
