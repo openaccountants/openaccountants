@@ -1,0 +1,144 @@
+{
+  "files": [
+    {
+      "path": "skills/international/montenegro/README.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": false,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-company-formation.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-corporate-income-tax.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-cross-border.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-tax-overview.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/me-transfer-pricing.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-income-tax.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": false,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-payroll.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-social-contributions.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-tax-optimization.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    },
+    {
+      "path": "skills/international/montenegro/montenegro-vat.md",
+      "frozen_manifest": true,
+      "current_equals_frozen": true,
+      "git_base_equals_frozen": true
+    }
+  ],
+  "nonblank_predecessor_lines": 415,
+  "map_rows": 415,
+  "map_errors": [],
+  "all_old_nonblank_mapped": true,
+  "original_blocks": [
+    {
+      "index": 1,
+      "sha256": "dc64a90e3b852707d82189fc54f75cf824f27f3493647ec55d24788e812ae2d4",
+      "in_guide": true,
+      "in_appendix": false
+    },
+    {
+      "index": 2,
+      "sha256": "4a3bc8120446200cc4f1568fc7c349a99496678a2cbe100d9dbb693e2759a8bb",
+      "in_guide": true,
+      "in_appendix": false
+    },
+    {
+      "index": 3,
+      "sha256": "9d5a863afe743ec96c420abe2abc270f1d23026799cf6d6f5d1d672873e36fc1",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 4,
+      "sha256": "6371bcddfdb4d30b1f6372b76761a90942db7bfe3505e4633b15268ca190c2b1",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 5,
+      "sha256": "8ef77d89be966e0eae2c861b00fe6a460b5d75a3fe5b8e746059060d551c0581",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 6,
+      "sha256": "0538e161800cad0e17d5abdab5a42f8ae474605d2348c5dcb5dacc1e58b724a1",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 7,
+      "sha256": "a2ed8b6ed6a21ba7f55a026ecd29173acb2a68a7ae909f94418046391a605073",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 8,
+      "sha256": "ca909faeb389fffb8ded4a92616f99aa0be1da0f9ef8001c0984f67c51196ea2",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 9,
+      "sha256": "0213272837e0eec9d6bc2e29cab222cb0f4202055ccf572666071423cf0eecc0",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 10,
+      "sha256": "5115f19491c7c6553b4956755f5bceb7a7abe50323a1264379c25aea8a7ae34e",
+      "in_guide": false,
+      "in_appendix": true
+    },
+    {
+      "index": 11,
+      "sha256": "56336fb0b33be8d59cab8a6c73ed2fc6a815113e2fcb4e2555c2587ed34658b1",
+      "in_guide": false,
+      "in_appendix": true
+    }
+  ],
+  "cta_exact": true,
+  "protected_metadata_exact": true
+}

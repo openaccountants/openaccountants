@@ -1,6 +1,6 @@
 # How to write a skill: the standard
 
-**This file is the one standard for every skill in this repository.** It applies to every writer, human or AI (Claude, ChatGPT, Codex, Gemini or anything else), and to every accountant who contributes. `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` and `OWNERS.md` point here. If another document says something different, this file wins; fix the other document in the same PR.
+**This file is the one standard for every skill in this repository.** It applies to every writer, human or AI (Claude, ChatGPT, Codex, Gemini or anything else), and to every accountant who contributes. `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` and `docs/OWNERS.md` point here. If another document says something different, this file wins; fix the other document in the same PR.
 
 The repository is treated as tax law. Every figure must be traceable to the law that sets it.
 
@@ -28,6 +28,15 @@ The frontmatter below is what the platform reads today. A smaller field list fol
 A perfect skill makes a frontier model give the right answer, with its conditions, cited to the law, and never a confident wrong one, for one job in one country.
 
 Each of the twelve lines below is in the standard because a measurement says so. Each line carries its **Evidence** (the test or reading that justifies it) and its **Check** (the function in `scripts/skill_checks.py` that tests it, or "reviewer" when only a human reading the law can). The checks run from `scripts/validate-guides.py`: an error on a PR for a tax skill, a warning on the backlog. Where a line is marked **unmeasured**, it is reasoning, not a result, and the weekly loop owes it a test.
+
+## How to read a source
+
+Every figure comes from the official page, actually opened by the writer. Memory and secondary summaries do not count.
+
+1. **Route, in order:** a direct fetch of the official page; then a real browser; then a dated archive copy, marked as archived in the Sources table.
+2. **Quote it:** each figure carries the exact wording from the page, the link and the read date.
+3. **Read the neighbouring sections:** caps, exceptions and definitions often sit elsewhere in the same law. A Kansas example used the right federal unemployment tax rate and missed the wage base in another section.
+4. **Respect blocks:** an ordinary browser visit is fine. Never solve a CAPTCHA or disguise a request. If a page will not open, the figure is marked unverified, never guessed.
 
 ## The twelve lines
 
@@ -71,7 +80,7 @@ Every rule, rate, threshold, deadline, exemption, taxpayer group and edge case t
 One job in one country has one skill. The pack `README.md` names it under `covered_by` when the slug does not say the domain. A second skill for the same cell is retired with an alias, not kept beside the first.
 
 - **Evidence:** the scoreboard set itself carried pairs: `malta-vat-return` with `mt-vat3-quarterly-return-malta`, `germany-vat-return` with `de-vat-annual-and-special-schemes`. Routing to the right skill was 64% to 70% (30 Oct 2026). The shape test of 31 Oct 2026 put the cost of routing at about 7 points: the same skill pasted in scored 50% (Claude) and 40% (GPT); the live arm, where the model picks the skill, 43% on both. In the wild, `netherlands-vat-return` and `nl-vat-return` were both being loaded (16 and 13 loads in 28 days).
-- **Check:** `scripts/build-register.py`, `duplicate` column: two or more slugs in one (country, domain) cell that `covered_by` does not name.
+- **Check:** `scripts/build-register.py`, `duplicate` column: two or more slugs in one (country, domain) cell that `covered_by` does not name. `scripts/validate-guides.py` fails a PR that adds or renames a skill when another skill in that jurisdiction has the same job, unless the PR deletes that skill; a different job in an occupied cell only warns. A skill may declare `job:` (a short kebab id such as `30-percent-ruling`); otherwise the job comes from the slug without its country, year and numeric suffix (`scripts/job_identity.py`). `skills/DUPLICATES.md` lists the existing groups.
 
 ### 7. The headings are one of the two canonical sets, verbatim, in order
 

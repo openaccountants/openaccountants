@@ -43,8 +43,6 @@ coverage = _load("coverage_report", "coverage-report.py")
 skill_checks = _load("skill_checks", "skill_checks.py")
 DOMAIN_CODES = coverage.DOMAIN_CODES
 PSEUDO_CODES = coverage.PSEUDO_CODES
-#: Slug tokens that say "individuals" outright, so IT-IND stays even next to IT-CORP or VAT.
-INDIVIDUAL_TOKENS = {"individual", "individuals", "personal", "pit", "self-employed", "freelance", "capital-gain", "capital-gains"}
 
 # Old slug guess, kept only as `task_guess` for countries whose README has no
 # domain model. The domain column is the GOAL.md code; this is a hint.
@@ -99,17 +97,7 @@ def main():
         code = str(s.get("jurisdiction") or fm.get("jurisdiction") or "?").upper()
         applicable, not_applicable, covered_by, partial = readme_for(code, s["path"])
         has_model = applicable is not None or bool(not_applicable) or bool(covered_by)
-        domains = set(coverage.domains_of(s))
-        named = {d for d, slug in covered_by.items() if slug == s["slug"]}
-        domains |= named
-        # coverage-report tags IT-IND on the tokens `return` and `income-tax`, so
-        # `sk-corporate-income-tax` and `slovakia-vat-return` land in IT-IND too.
-        # Harmless there (a union), noise here (every such pair reads as a
-        # duplicate), so a slug-only IT-IND is dropped when the same slug also
-        # carries IT-CORP or VAT and the README does not say otherwise.
-        if "IT-IND" in domains and "IT-IND" not in named and domains & {"IT-CORP", "VAT"} \
-                and not coverage.slug_tokens(s["slug"]) & INDIVIDUAL_TOKENS:
-            domains.discard("IT-IND")
+        domains, named = coverage.cell_domains(s, covered_by)
         results = skill_checks.run_checks(s["path"], text, fm)
         row = {
             "slug": s["slug"],

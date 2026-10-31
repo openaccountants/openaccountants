@@ -4,1861 +4,1861 @@
   "name": "Andorra",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/andorra"
+  "dir": "skills/andorra"
  },
  {
   "code": "AE",
   "name": "Uae",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/uae"
+  "dir": "skills/uae"
  },
  {
   "code": "AF",
   "name": "Afghanistan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/afghanistan"
+  "dir": "skills/afghanistan"
  },
  {
   "code": "AG",
   "name": "Antigua And Barbuda",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/antigua-and-barbuda"
+  "dir": "skills/antigua-and-barbuda"
  },
  {
   "code": "AL",
   "name": "Albania",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/albania"
+  "dir": "skills/albania"
  },
  {
   "code": "AM",
   "name": "Armenia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/armenia"
+  "dir": "skills/armenia"
  },
  {
   "code": "AO",
   "name": "Angola",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/angola"
+  "dir": "skills/angola"
  },
  {
   "code": "AR",
   "name": "Argentina",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/argentina"
+  "dir": "skills/argentina"
  },
  {
   "code": "AT",
   "name": "Austria",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/austria"
+  "dir": "skills/austria"
  },
  {
   "code": "AU",
   "name": "Australia",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/australia"
+  "dir": "skills/australia"
  },
  {
   "code": "AW",
   "name": "Aruba",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/aruba"
+  "dir": "skills/aruba"
  },
  {
   "code": "AZ",
   "name": "Azerbaijan",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/azerbaijan"
+  "dir": "skills/azerbaijan"
  },
  {
   "code": "BA",
   "name": "Bosnia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/bosnia"
+  "dir": "skills/bosnia"
  },
  {
   "code": "BB",
   "name": "Barbados",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/barbados"
+  "dir": "skills/barbados"
  },
  {
   "code": "BD",
   "name": "Bangladesh",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/bangladesh"
+  "dir": "skills/bangladesh"
  },
  {
   "code": "BE",
   "name": "Belgium",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/belgium"
+  "dir": "skills/belgium"
  },
  {
   "code": "BF",
   "name": "Burkina Faso",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/burkina-faso"
+  "dir": "skills/burkina-faso"
  },
  {
   "code": "BG",
   "name": "Bulgaria",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/bulgaria"
+  "dir": "skills/bulgaria"
  },
  {
   "code": "BH",
   "name": "Bahrain",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/bahrain"
+  "dir": "skills/bahrain"
  },
  {
   "code": "BI",
   "name": "Burundi",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/burundi"
+  "dir": "skills/burundi"
  },
  {
   "code": "BJ",
   "name": "Benin",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/benin"
+  "dir": "skills/benin"
  },
  {
   "code": "BL",
   "name": "Saint Barthelemy",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-barthelemy"
+  "dir": "skills/saint-barthelemy"
  },
  {
   "code": "BM",
   "name": "Bermuda",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/bermuda"
+  "dir": "skills/bermuda"
  },
  {
   "code": "BN",
   "name": "Brunei",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/brunei"
+  "dir": "skills/brunei"
  },
  {
   "code": "BO",
   "name": "Bolivia",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/bolivia"
+  "dir": "skills/bolivia"
  },
  {
   "code": "BR",
   "name": "Brazil",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/brazil"
+  "dir": "skills/brazil"
  },
  {
   "code": "BS",
   "name": "Bahamas",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/bahamas"
+  "dir": "skills/bahamas"
  },
  {
   "code": "BT",
   "name": "Bhutan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/bhutan"
+  "dir": "skills/bhutan"
  },
  {
   "code": "BW",
   "name": "Botswana",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/botswana"
+  "dir": "skills/botswana"
  },
  {
   "code": "BY",
   "name": "Belarus",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/belarus"
+  "dir": "skills/belarus"
  },
  {
   "code": "BZ",
   "name": "Belize",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/belize"
+  "dir": "skills/belize"
  },
  {
   "code": "CA",
   "name": "Canada",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/canada"
+  "dir": "skills/canada"
  },
  {
   "code": "CA-AB",
   "name": "Alberta (Canada)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/alberta"
+  "dir": "skills/canada/alberta"
  },
  {
   "code": "CD",
   "name": "Dr Congo",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/dr-congo"
+  "dir": "skills/dr-congo"
  },
  {
   "code": "CF",
   "name": "Central African Republic",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/central-african-republic"
+  "dir": "skills/central-african-republic"
  },
  {
   "code": "CG",
   "name": "Republic Of Congo",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/republic-of-congo"
+  "dir": "skills/republic-of-congo"
  },
  {
   "code": "CH",
   "name": "Switzerland",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/switzerland"
+  "dir": "skills/switzerland"
  },
  {
   "code": "CI",
   "name": "Ivory Coast",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/ivory-coast"
+  "dir": "skills/ivory-coast"
  },
  {
   "code": "CL",
   "name": "Chile",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/chile"
+  "dir": "skills/chile"
  },
  {
   "code": "CM",
   "name": "Cameroon",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/cameroon"
+  "dir": "skills/cameroon"
  },
  {
   "code": "CN",
   "name": "China",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/china"
+  "dir": "skills/china"
  },
  {
   "code": "CO",
   "name": "Colombia",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/colombia"
+  "dir": "skills/colombia"
  },
  {
   "code": "CR",
   "name": "Costa Rica",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/costa-rica"
+  "dir": "skills/costa-rica"
  },
  {
   "code": "CU",
   "name": "Cuba",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/cuba"
+  "dir": "skills/cuba"
  },
  {
   "code": "CV",
   "name": "Cape Verde",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/cape-verde"
+  "dir": "skills/cape-verde"
  },
  {
   "code": "CW",
   "name": "Cura Ao",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/cura-ao"
+  "dir": "skills/curacao"
  },
  {
   "code": "CY",
   "name": "Cyprus",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/cyprus"
+  "dir": "skills/cyprus"
  },
  {
   "code": "CZ",
   "name": "Czech Republic",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/czech-republic"
+  "dir": "skills/czech-republic"
  },
  {
   "code": "DE",
   "name": "Germany",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/germany"
+  "dir": "skills/germany"
  },
  {
   "code": "DJ",
   "name": "Djibouti",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/djibouti"
+  "dir": "skills/djibouti"
  },
  {
   "code": "DK",
   "name": "Denmark",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/denmark"
+  "dir": "skills/denmark"
  },
  {
   "code": "DM",
   "name": "Dominica",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/dominica"
+  "dir": "skills/dominica"
  },
  {
   "code": "DO",
   "name": "Dominican Republic",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/dominican-republic"
+  "dir": "skills/dominican-republic"
  },
  {
   "code": "DZ",
   "name": "Algeria",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/algeria"
+  "dir": "skills/algeria"
  },
  {
   "code": "EC",
   "name": "Ecuador",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/ecuador"
+  "dir": "skills/ecuador"
  },
  {
   "code": "EE",
   "name": "Estonia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/estonia"
+  "dir": "skills/estonia"
  },
  {
   "code": "EG",
   "name": "Egypt",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/egypt"
+  "dir": "skills/egypt"
  },
  {
   "code": "ER",
   "name": "Eritrea",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/eritrea"
+  "dir": "skills/eritrea"
  },
  {
   "code": "ES",
   "name": "Spain",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/spain"
+  "dir": "skills/spain"
  },
  {
   "code": "ET",
   "name": "Ethiopia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/ethiopia"
+  "dir": "skills/ethiopia"
  },
  {
   "code": "FI",
   "name": "Finland",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/finland"
+  "dir": "skills/finland"
  },
  {
   "code": "FJ",
   "name": "Fiji",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/fiji"
+  "dir": "skills/fiji"
  },
  {
   "code": "FO",
   "name": "Faroe Islands",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/faroe-islands"
+  "dir": "skills/faroe-islands"
  },
  {
   "code": "FR",
   "name": "France",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/france"
+  "dir": "skills/france"
  },
  {
   "code": "GA",
   "name": "Gabon",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/gabon"
+  "dir": "skills/gabon"
  },
  {
   "code": "GB",
   "name": "Uk",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/uk"
+  "dir": "skills/uk"
  },
  {
   "code": "GD",
   "name": "Grenada",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/grenada"
+  "dir": "skills/grenada"
  },
  {
   "code": "GE",
   "name": "Georgia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/georgia"
+  "dir": "skills/georgia"
  },
  {
   "code": "GF",
   "name": "French Guiana",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/french-guiana"
+  "dir": "skills/french-guiana"
  },
  {
   "code": "GG",
   "name": "Guernsey",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/guernsey"
+  "dir": "skills/guernsey"
  },
  {
   "code": "GH",
   "name": "Ghana",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/ghana"
+  "dir": "skills/ghana"
  },
  {
   "code": "GI",
   "name": "Gibraltar",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/gibraltar"
+  "dir": "skills/gibraltar"
  },
  {
   "code": "GL",
   "name": "Greenland",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/greenland"
+  "dir": "skills/greenland"
  },
  {
   "code": "GM",
   "name": "Gambia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/gambia"
+  "dir": "skills/gambia"
  },
  {
   "code": "GN",
   "name": "Guinea",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/guinea"
+  "dir": "skills/guinea"
  },
  {
   "code": "GP",
   "name": "Guadeloupe",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/guadeloupe"
+  "dir": "skills/guadeloupe"
  },
  {
   "code": "GQ",
   "name": "Equatorial Guinea",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/equatorial-guinea"
+  "dir": "skills/equatorial-guinea"
  },
  {
   "code": "GR",
   "name": "Greece",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/greece"
+  "dir": "skills/greece"
  },
  {
   "code": "GT",
   "name": "Guatemala",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/guatemala"
+  "dir": "skills/guatemala"
  },
  {
   "code": "GW",
   "name": "Guinea Bissau",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/guinea-bissau"
+  "dir": "skills/guinea-bissau"
  },
  {
   "code": "GY",
   "name": "Guyana",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/guyana"
+  "dir": "skills/guyana"
  },
  {
   "code": "HK",
   "name": "Hong Kong",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/hong-kong"
+  "dir": "skills/hong-kong"
  },
  {
   "code": "HN",
   "name": "Honduras",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/honduras"
+  "dir": "skills/honduras"
  },
  {
   "code": "HR",
   "name": "Croatia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/croatia"
+  "dir": "skills/croatia"
  },
  {
   "code": "HT",
   "name": "Haiti",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/haiti"
+  "dir": "skills/haiti"
  },
  {
   "code": "HU",
   "name": "Hungary",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/hungary"
+  "dir": "skills/hungary"
  },
  {
   "code": "ID",
   "name": "Indonesia",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/indonesia"
+  "dir": "skills/indonesia"
  },
  {
   "code": "IE",
   "name": "Ireland",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/ireland"
+  "dir": "skills/ireland"
  },
  {
   "code": "IL",
   "name": "Israel",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/israel"
+  "dir": "skills/israel"
  },
  {
   "code": "IM",
-  "name": "Im",
+  "name": "Isle of Man",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/im"
+  "dir": "skills/isle-of-man"
  },
  {
   "code": "IN",
   "name": "India",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/india"
+  "dir": "skills/india"
  },
  {
   "code": "IQ",
   "name": "Iraq",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/iraq"
+  "dir": "skills/iraq"
  },
  {
   "code": "IR",
   "name": "Iran",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/iran"
+  "dir": "skills/iran"
  },
  {
   "code": "IS",
   "name": "Iceland",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/iceland"
+  "dir": "skills/iceland"
  },
  {
   "code": "IT",
   "name": "Italy",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/italy"
+  "dir": "skills/italy"
  },
  {
   "code": "JM",
   "name": "Jamaica",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/jamaica"
+  "dir": "skills/jamaica"
  },
  {
   "code": "JO",
   "name": "Jordan",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/jordan"
+  "dir": "skills/jordan"
  },
  {
   "code": "JP",
   "name": "Japan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/japan"
+  "dir": "skills/japan"
  },
  {
   "code": "KE",
   "name": "Kenya",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/kenya"
+  "dir": "skills/kenya"
  },
  {
   "code": "KG",
   "name": "Kyrgyzstan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/kyrgyzstan"
+  "dir": "skills/kyrgyzstan"
  },
  {
   "code": "KH",
   "name": "Cambodia",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/cambodia"
+  "dir": "skills/cambodia"
  },
  {
   "code": "KM",
   "name": "Comoros",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/comoros"
+  "dir": "skills/comoros"
  },
  {
   "code": "KN",
   "name": "Saint Kitts And Nevis",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-kitts-and-nevis"
+  "dir": "skills/saint-kitts-and-nevis"
  },
  {
   "code": "KR",
   "name": "South Korea",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/south-korea"
+  "dir": "skills/south-korea"
  },
  {
   "code": "KW",
   "name": "Kuwait",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/kuwait"
+  "dir": "skills/kuwait"
  },
  {
   "code": "KY",
   "name": "Cayman Islands",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/cayman-islands"
+  "dir": "skills/cayman-islands"
  },
  {
   "code": "KZ",
   "name": "Kazakhstan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/kazakhstan"
+  "dir": "skills/kazakhstan"
  },
  {
   "code": "LA",
   "name": "Laos",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/laos"
+  "dir": "skills/laos"
  },
  {
   "code": "LB",
   "name": "Lebanon",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/lebanon"
+  "dir": "skills/lebanon"
  },
  {
   "code": "LC",
   "name": "Saint Lucia",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-lucia"
+  "dir": "skills/saint-lucia"
  },
  {
   "code": "LI",
   "name": "Liechtenstein",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/liechtenstein"
+  "dir": "skills/liechtenstein"
  },
  {
   "code": "LK",
   "name": "Sri Lanka",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/sri-lanka"
+  "dir": "skills/sri-lanka"
  },
  {
   "code": "LR",
   "name": "Liberia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/liberia"
+  "dir": "skills/liberia"
  },
  {
   "code": "LS",
   "name": "Lesotho",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/lesotho"
+  "dir": "skills/lesotho"
  },
  {
   "code": "LT",
   "name": "Lithuania",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/lithuania"
+  "dir": "skills/lithuania"
  },
  {
   "code": "LU",
   "name": "Luxembourg",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/luxembourg"
+  "dir": "skills/luxembourg"
  },
  {
   "code": "LV",
   "name": "Latvia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/latvia"
+  "dir": "skills/latvia"
  },
  {
   "code": "LY",
   "name": "Libya",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/libya"
+  "dir": "skills/libya"
  },
  {
   "code": "MA",
   "name": "Morocco",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/morocco"
+  "dir": "skills/morocco"
  },
  {
   "code": "MC",
   "name": "Monaco",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/monaco"
+  "dir": "skills/monaco"
  },
  {
   "code": "MD",
   "name": "Moldova",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/moldova"
+  "dir": "skills/moldova"
  },
  {
   "code": "ME",
   "name": "Montenegro",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/montenegro"
+  "dir": "skills/montenegro"
  },
  {
   "code": "MF",
   "name": "Saint Martin",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-martin"
+  "dir": "skills/saint-martin"
  },
  {
   "code": "MG",
   "name": "Madagascar",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/madagascar"
+  "dir": "skills/madagascar"
  },
  {
   "code": "MK",
   "name": "North Macedonia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/north-macedonia"
+  "dir": "skills/north-macedonia"
  },
  {
   "code": "ML",
   "name": "Mali",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/mali"
+  "dir": "skills/mali"
  },
  {
   "code": "MM",
   "name": "Myanmar",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/myanmar"
+  "dir": "skills/myanmar"
  },
  {
   "code": "MN",
   "name": "Mongolia",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/mongolia"
+  "dir": "skills/mongolia"
  },
  {
   "code": "MO",
   "name": "Macau",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/macau"
+  "dir": "skills/macau"
  },
  {
   "code": "MQ",
   "name": "Martinique",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/martinique"
+  "dir": "skills/martinique"
  },
  {
   "code": "MR",
   "name": "Mauritania",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/mauritania"
+  "dir": "skills/mauritania"
  },
  {
   "code": "MS",
   "name": "Montserrat",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/montserrat"
+  "dir": "skills/montserrat"
  },
  {
   "code": "MT",
   "name": "Malta",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/malta"
+  "dir": "skills/malta"
  },
  {
   "code": "MU",
   "name": "Mauritius",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/mauritius"
+  "dir": "skills/mauritius"
  },
  {
   "code": "MV",
   "name": "Maldives",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/maldives"
+  "dir": "skills/maldives"
  },
  {
   "code": "MW",
   "name": "Malawi",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/malawi"
+  "dir": "skills/malawi"
  },
  {
   "code": "MX",
   "name": "Mexico",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/mexico"
+  "dir": "skills/mexico"
  },
  {
   "code": "MY",
   "name": "Malaysia",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/malaysia"
+  "dir": "skills/malaysia"
  },
  {
   "code": "MZ",
   "name": "Mozambique",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/mozambique"
+  "dir": "skills/mozambique"
  },
  {
   "code": "NA",
   "name": "Namibia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/namibia"
+  "dir": "skills/namibia"
  },
  {
   "code": "NE",
   "name": "Niger",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/niger"
+  "dir": "skills/niger"
  },
  {
   "code": "NG",
   "name": "Nigeria",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/nigeria"
+  "dir": "skills/nigeria"
  },
  {
   "code": "NI",
   "name": "Nicaragua",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/nicaragua"
+  "dir": "skills/nicaragua"
  },
  {
   "code": "NL",
   "name": "Netherlands",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/netherlands"
+  "dir": "skills/netherlands"
  },
  {
   "code": "NO",
   "name": "Norway",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/norway"
+  "dir": "skills/norway"
  },
  {
   "code": "NP",
   "name": "Nepal",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/nepal"
+  "dir": "skills/nepal"
  },
  {
   "code": "NZ",
   "name": "New Zealand",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/new-zealand"
+  "dir": "skills/new-zealand"
  },
  {
   "code": "OM",
   "name": "Oman",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/oman"
+  "dir": "skills/oman"
  },
  {
   "code": "PA",
   "name": "Panama",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/panama"
+  "dir": "skills/panama"
  },
  {
   "code": "PE",
   "name": "Peru",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/peru"
+  "dir": "skills/peru"
  },
  {
   "code": "PG",
   "name": "Papua New Guinea",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/papua-new-guinea"
+  "dir": "skills/papua-new-guinea"
  },
  {
   "code": "PH",
   "name": "Philippines",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/philippines"
+  "dir": "skills/philippines"
  },
  {
   "code": "PK",
   "name": "Pakistan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/pakistan"
+  "dir": "skills/pakistan"
  },
  {
   "code": "PL",
   "name": "Poland",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/poland"
+  "dir": "skills/poland"
  },
  {
   "code": "PM",
   "name": "Saint Pierre And Miquelon",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-pierre-and-miquelon"
+  "dir": "skills/saint-pierre-and-miquelon"
  },
  {
   "code": "PR",
   "name": "Puerto Rico",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/puerto-rico"
+  "dir": "skills/puerto-rico"
  },
  {
   "code": "PT",
   "name": "Portugal",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/portugal"
+  "dir": "skills/portugal"
  },
  {
   "code": "PY",
   "name": "Paraguay",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/paraguay"
+  "dir": "skills/paraguay"
  },
  {
   "code": "QA",
   "name": "Qatar",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/qatar"
+  "dir": "skills/qatar"
  },
  {
   "code": "RE",
   "name": "Reunion",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/reunion"
+  "dir": "skills/reunion"
  },
  {
   "code": "RO",
   "name": "Romania",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/romania"
+  "dir": "skills/romania"
  },
  {
   "code": "RS",
   "name": "Serbia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/serbia"
+  "dir": "skills/serbia"
  },
  {
   "code": "RU",
   "name": "Russia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/russia"
+  "dir": "skills/russia"
  },
  {
   "code": "RW",
   "name": "Rwanda",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/rwanda"
+  "dir": "skills/rwanda"
  },
  {
   "code": "SA",
   "name": "Saudi Arabia",
   "region": "middle-east",
   "owner": "michael",
-  "dir": "skills/international/saudi-arabia"
+  "dir": "skills/saudi-arabia"
  },
  {
   "code": "SC",
   "name": "Seychelles",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/seychelles"
+  "dir": "skills/seychelles"
  },
  {
   "code": "SD",
   "name": "Sudan",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/sudan"
+  "dir": "skills/sudan"
  },
  {
   "code": "SE",
   "name": "Sweden",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/sweden"
+  "dir": "skills/sweden"
  },
  {
   "code": "SG",
   "name": "Singapore",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/singapore"
+  "dir": "skills/singapore"
  },
  {
   "code": "SH",
   "name": "Saint Helena",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/saint-helena"
+  "dir": "skills/saint-helena"
  },
  {
   "code": "SI",
   "name": "Slovenia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/slovenia"
+  "dir": "skills/slovenia"
  },
  {
   "code": "SJ",
   "name": "Svalbard",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/svalbard"
+  "dir": "skills/svalbard"
  },
  {
   "code": "SK",
   "name": "Slovakia",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/slovakia"
+  "dir": "skills/slovakia"
  },
  {
   "code": "SL",
   "name": "Sierra Leone",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/sierra-leone"
+  "dir": "skills/sierra-leone"
  },
  {
   "code": "SM",
   "name": "San Marino",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/san-marino"
+  "dir": "skills/san-marino"
  },
  {
   "code": "SN",
   "name": "Senegal",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/senegal"
+  "dir": "skills/senegal"
  },
  {
   "code": "SO",
   "name": "Somalia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/somalia"
+  "dir": "skills/somalia"
  },
  {
   "code": "SR",
   "name": "Suriname",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/suriname"
+  "dir": "skills/suriname"
  },
  {
   "code": "SS",
   "name": "South Sudan",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/south-sudan"
+  "dir": "skills/south-sudan"
  },
  {
   "code": "ST",
   "name": "S O Tom And Pr Ncipe",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/s-o-tom-and-pr-ncipe"
+  "dir": "skills/sao-tome-and-principe"
  },
  {
   "code": "SV",
   "name": "El Salvador",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/el-salvador"
+  "dir": "skills/el-salvador"
  },
  {
   "code": "SX",
   "name": "Sint Maarten",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/sint-maarten"
+  "dir": "skills/sint-maarten"
  },
  {
   "code": "SZ",
   "name": "Eswatini",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/eswatini"
+  "dir": "skills/eswatini"
  },
  {
   "code": "TC",
   "name": "Turks And Caicos",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/turks-and-caicos"
+  "dir": "skills/turks-and-caicos"
  },
  {
   "code": "TD",
   "name": "Chad",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/chad"
+  "dir": "skills/chad"
  },
  {
   "code": "TG",
   "name": "Togo",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/togo"
+  "dir": "skills/togo"
  },
  {
   "code": "TH",
   "name": "Thailand",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/thailand"
+  "dir": "skills/thailand"
  },
  {
   "code": "TJ",
   "name": "Tajikistan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/tajikistan"
+  "dir": "skills/tajikistan"
  },
  {
   "code": "TL",
   "name": "Timor Leste",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/timor-leste"
+  "dir": "skills/timor-leste"
  },
  {
   "code": "TM",
   "name": "Turkmenistan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/turkmenistan"
+  "dir": "skills/turkmenistan"
  },
  {
   "code": "TN",
   "name": "Tunisia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/tunisia"
+  "dir": "skills/tunisia"
  },
  {
   "code": "TO",
   "name": "Tonga",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/tonga"
+  "dir": "skills/tonga"
  },
  {
   "code": "TR",
   "name": "Turkey",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/turkey"
+  "dir": "skills/turkey"
  },
  {
   "code": "TT",
   "name": "Trinidad And Tobago",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/trinidad-and-tobago"
+  "dir": "skills/trinidad-and-tobago"
  },
  {
   "code": "TW",
   "name": "Taiwan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/taiwan"
+  "dir": "skills/taiwan"
  },
  {
   "code": "TZ",
   "name": "Tanzania",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/tanzania"
+  "dir": "skills/tanzania"
  },
  {
   "code": "UA",
   "name": "Ukraine",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/ukraine"
+  "dir": "skills/ukraine"
  },
  {
   "code": "UG",
   "name": "Uganda",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/uganda"
+  "dir": "skills/uganda"
  },
  {
   "code": "US",
   "name": "United States (federal)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/federal"
+  "dir": "skills/us/federal"
  },
  {
   "code": "US-AK",
   "name": "Alaska (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ak"
+  "dir": "skills/us/states/ak"
  },
  {
   "code": "US-AL",
   "name": "Alabama (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/al"
+  "dir": "skills/us/states/al"
  },
  {
   "code": "US-AR",
   "name": "Arkansas (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ar"
+  "dir": "skills/us/states/ar"
  },
  {
   "code": "US-AZ",
   "name": "Arizona (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/az"
+  "dir": "skills/us/states/az"
  },
  {
   "code": "US-CA",
   "name": "California (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ca"
+  "dir": "skills/us/states/ca"
  },
  {
   "code": "US-CO",
   "name": "Colorado (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/co"
+  "dir": "skills/us/states/co"
  },
  {
   "code": "US-CT",
   "name": "Connecticut (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ct"
+  "dir": "skills/us/states/ct"
  },
  {
   "code": "US-DC",
   "name": "District of Columbia (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/dc"
+  "dir": "skills/us/states/dc"
  },
  {
   "code": "US-DE",
   "name": "Delaware (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/de"
+  "dir": "skills/us/states/de"
  },
  {
   "code": "US-FL",
   "name": "Florida (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/fl"
+  "dir": "skills/us/states/fl"
  },
  {
   "code": "US-GA",
   "name": "Georgia (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ga"
+  "dir": "skills/us/states/ga"
  },
  {
   "code": "US-HI",
   "name": "Hawaii (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/hi"
+  "dir": "skills/us/states/hi"
  },
  {
   "code": "US-IA",
   "name": "Iowa (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ia"
+  "dir": "skills/us/states/ia"
  },
  {
   "code": "US-ID",
   "name": "Idaho (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/id"
+  "dir": "skills/us/states/id"
  },
  {
   "code": "US-IL",
   "name": "Illinois (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/il"
+  "dir": "skills/us/states/il"
  },
  {
   "code": "US-IN",
   "name": "Indiana (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/in"
+  "dir": "skills/us/states/in"
  },
  {
   "code": "US-KS",
   "name": "Kansas (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ks"
+  "dir": "skills/us/states/ks"
  },
  {
   "code": "US-KY",
   "name": "Kentucky (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ky"
+  "dir": "skills/us/states/ky"
  },
  {
   "code": "US-LA",
   "name": "Louisiana (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/la"
+  "dir": "skills/us/states/la"
  },
  {
   "code": "US-MA",
   "name": "Massachusetts (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ma"
+  "dir": "skills/us/states/ma"
  },
  {
   "code": "US-MD",
   "name": "Maryland (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/md"
+  "dir": "skills/us/states/md"
  },
  {
   "code": "US-ME",
   "name": "Maine (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/me"
+  "dir": "skills/us/states/me"
  },
  {
   "code": "US-MI",
   "name": "Michigan (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/mi"
+  "dir": "skills/us/states/mi"
  },
  {
   "code": "US-MN",
   "name": "Minnesota (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/mn"
+  "dir": "skills/us/states/mn"
  },
  {
   "code": "US-MO",
   "name": "Missouri (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/mo"
+  "dir": "skills/us/states/mo"
  },
  {
   "code": "US-MS",
   "name": "Mississippi (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ms"
+  "dir": "skills/us/states/ms"
  },
  {
   "code": "US-MT",
   "name": "Montana (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/mt"
+  "dir": "skills/us/states/mt"
  },
  {
   "code": "US-NC",
   "name": "North Carolina (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nc"
+  "dir": "skills/us/states/nc"
  },
  {
   "code": "US-ND",
   "name": "North Dakota (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nd"
+  "dir": "skills/us/states/nd"
  },
  {
   "code": "US-NE",
   "name": "Nebraska (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ne"
+  "dir": "skills/us/states/ne"
  },
  {
   "code": "US-NH",
   "name": "New Hampshire (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nh"
+  "dir": "skills/us/states/nh"
  },
  {
   "code": "US-NJ",
   "name": "New Jersey (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nj"
+  "dir": "skills/us/states/nj"
  },
  {
   "code": "US-NM",
   "name": "New Mexico (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nm"
+  "dir": "skills/us/states/nm"
  },
  {
   "code": "US-NV",
   "name": "Nevada (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/nv"
+  "dir": "skills/us/states/nv"
  },
  {
   "code": "US-NY",
   "name": "New York (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ny"
+  "dir": "skills/us/states/ny"
  },
  {
   "code": "US-NY-NYC",
   "name": "New York City (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ny-nyc"
+  "dir": "skills/us/states/ny-nyc"
  },
  {
   "code": "US-OH",
   "name": "Ohio (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/oh"
+  "dir": "skills/us/states/oh"
  },
  {
   "code": "US-OK",
   "name": "Oklahoma (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ok"
+  "dir": "skills/us/states/ok"
  },
  {
   "code": "US-OR",
   "name": "Oregon (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/or"
+  "dir": "skills/us/states/or"
  },
  {
   "code": "US-PA",
   "name": "Pennsylvania (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/pa"
+  "dir": "skills/us/states/pa"
  },
  {
   "code": "US-RI",
   "name": "Rhode Island (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ri"
+  "dir": "skills/us/states/ri"
  },
  {
   "code": "US-SC",
   "name": "South Carolina (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/sc"
+  "dir": "skills/us/states/sc"
  },
  {
   "code": "US-SD",
   "name": "South Dakota (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/sd"
+  "dir": "skills/us/states/sd"
  },
  {
   "code": "US-TN",
   "name": "Tennessee (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/tn"
+  "dir": "skills/us/states/tn"
  },
  {
   "code": "US-TX",
   "name": "Texas (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/tx"
+  "dir": "skills/us/states/tx"
  },
  {
   "code": "US-UT",
   "name": "Utah (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/ut"
+  "dir": "skills/us/states/ut"
  },
  {
   "code": "US-VA",
   "name": "Virginia (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/va"
+  "dir": "skills/us/states/va"
  },
  {
   "code": "US-VT",
   "name": "Vermont (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/vt"
+  "dir": "skills/us/states/vt"
  },
  {
   "code": "US-WA",
   "name": "Washington (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/wa"
+  "dir": "skills/us/states/wa"
  },
  {
   "code": "US-WI",
   "name": "Wisconsin (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/wi"
+  "dir": "skills/us/states/wi"
  },
  {
   "code": "US-WV",
   "name": "West Virginia (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/wv"
+  "dir": "skills/us/states/wv"
  },
  {
   "code": "US-WY",
   "name": "Wyoming (US)",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/us-states/wy"
+  "dir": "skills/us/states/wy"
  },
  {
   "code": "UY",
   "name": "Uruguay",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/uruguay"
+  "dir": "skills/uruguay"
  },
  {
   "code": "UZ",
   "name": "Uzbekistan",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/uzbekistan"
+  "dir": "skills/uzbekistan"
  },
  {
   "code": "VA",
   "name": "Vatican City",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/vatican-city"
+  "dir": "skills/vatican-city"
  },
  {
   "code": "VC",
   "name": "Saint Vincent And The Grenadines",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/saint-vincent-and-the-grenadines"
+  "dir": "skills/saint-vincent-and-the-grenadines"
  },
  {
   "code": "VE",
   "name": "Venezuela",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/venezuela"
+  "dir": "skills/venezuela"
  },
  {
   "code": "VG",
   "name": "British Virgin Islands",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/british-virgin-islands"
+  "dir": "skills/british-virgin-islands"
  },
  {
   "code": "VI",
   "name": "Us Virgin Islands",
   "region": "americas",
   "owner": "jeff",
-  "dir": "skills/international/us-virgin-islands"
+  "dir": "skills/us-virgin-islands"
  },
  {
   "code": "VN",
   "name": "Vietnam",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/vietnam"
+  "dir": "skills/vietnam"
  },
  {
   "code": "VU",
   "name": "Vanuatu",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/vanuatu"
+  "dir": "skills/vanuatu"
  },
  {
   "code": "WS",
   "name": "Samoa",
   "region": "apac",
   "owner": "ryan",
-  "dir": "skills/international/samoa"
+  "dir": "skills/samoa"
  },
  {
   "code": "XK",
   "name": "Kosovo",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/international/kosovo"
+  "dir": "skills/kosovo"
  },
  {
   "code": "YT",
   "name": "Mayotte",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/mayotte"
+  "dir": "skills/mayotte"
  },
  {
   "code": "ZA",
   "name": "South Africa",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/south-africa"
+  "dir": "skills/south-africa"
  },
  {
   "code": "ZM",
   "name": "Zambia",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/zambia"
+  "dir": "skills/zambia"
  },
  {
   "code": "ZW",
   "name": "Zimbabwe",
   "region": "africa",
   "owner": "ryan",
-  "dir": "skills/international/zimbabwe"
+  "dir": "skills/zimbabwe"
  }
 ]

@@ -1,0 +1,23 @@
+{
+  "literal_conditional": {
+    "gross": "20000",
+    "expense": "1200",
+    "base": "18800",
+    "rate": "0.19",
+    "withholding": "3572.00",
+    "final_tax": "3572.00",
+    "refund": "0.00",
+    "arithmetic_pass": true,
+    "legal_selection_approved": false
+  },
+  "historical_concordance_conditional": {
+    "base": "20000",
+    "withholding": "3800.00",
+    "final_tax": "3572.00",
+    "refund": "228.00",
+    "arithmetic_pass": true,
+    "legal_selection_approved": false
+  },
+  "difference": "228.00",
+  "not_an_election": true
+}

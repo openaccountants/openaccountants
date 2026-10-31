@@ -18,21 +18,21 @@ class SourcesCheckTest(unittest.TestCase):
         self.assertIsNone(vg.check_sources("skills/foundation/bookkeeping-workflow-base.md", "# no sources"))
 
     def test_tax_skill_without_section_warns(self):
-        self.assertEqual(vg.check_sources("skills/international/malta/malta-income-tax.md", "# Body\n\n## Rates\n"),
+        self.assertEqual(vg.check_sources("skills/malta/malta-income-tax.md", "# Body\n\n## Rates\n"),
                          "no `## Sources` section")
 
     def test_section_without_url_warns(self):
         text = "## Sources\n\n- Income Tax Act, article 56\n\n## Next\n"
-        self.assertEqual(vg.check_sources("skills/international/malta/malta-income-tax.md", text),
+        self.assertEqual(vg.check_sources("skills/malta/malta-income-tax.md", text),
                          "`## Sources` section has no URL")
 
     def test_section_with_url_passes(self):
         text = "## Sources\n\n| Source | URL | Read on |\n|---|---|---|\n| ITA | https://legislation.mt/x | 2026-10-22 |\n"
-        self.assertIsNone(vg.check_sources("skills/international/malta/malta-income-tax.md", text))
+        self.assertIsNone(vg.check_sources("skills/malta/malta-income-tax.md", text))
 
     def test_url_after_next_heading_does_not_count(self):
         text = "## Sources\n\nSee below.\n\n## Links\n\nhttps://example.org\n"
-        self.assertEqual(vg.check_sources("skills/international/malta/malta-vat-return.md", text),
+        self.assertEqual(vg.check_sources("skills/malta/malta-vat-return.md", text),
                          "`## Sources` section has no URL")
 
 

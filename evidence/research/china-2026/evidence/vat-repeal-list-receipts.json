@@ -1,0 +1,55 @@
+[
+  {
+    "page": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/t481352.html",
+    "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls",
+    "file": "VAT18-e8674046acac.xls",
+    "sha256": "5e6ad77fd64b6b75577c260d49020c21e114a12cc7f75216f7c1e42e7624963d",
+    "bytes": 49152,
+    "magic": "d0cf11e0a1b11ae1",
+    "table_sha256": "57a925c7b7de8609523c812bde4b44e88a06633e0bfa47b1c6fce1cec1a52eef",
+    "sheet_shapes": [
+      [
+        "Sheet1",
+        146,
+        5
+      ]
+    ]
+  },
+  {
+    "page": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-08/24/content_8cc275690e6e41f18e963968dec699f2.shtml",
+    "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-08/24/8cc275690e6e41f18e963968dec699f2/files/23cdd4dc57f84a3d9fac325b92095a71.xls",
+    "file": "VAT18-b7f71f030526.xls",
+    "sha256": "4a7eb63447bba77a30901a67cb9c296de4c3a09b74ca854d551ab1ee80889563",
+    "bytes": 49152,
+    "magic": "d0cf11e0a1b11ae1",
+    "table_sha256": "57a925c7b7de8609523c812bde4b44e88a06633e0bfa47b1c6fce1cec1a52eef",
+    "sheet_shapes": [
+      [
+        "Sheet1",
+        146,
+        5
+      ]
+    ]
+  },
+  {
+    "page": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-08/24/content_8cc275690e6e41f18e963968dec699f2.shtml",
+    "url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-08/24/失效废止的部分税务规范性文件目录.xls",
+    "error": "'ascii' codec can't encode characters in position 26-41: ordinal not in range(128)"
+  },
+  {
+    "page": "https://neimenggu.chinatax.gov.cn/zcwj/zxwj/202608/t20260828_896986.html",
+    "url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5251854/5251854/files/%E5%A4%B1%E6%95%88%E5%BA%9F%E6%AD%A2%E7%9A%84%E9%83%A8%E5%88%86%E7%A8%8E%E5%8A%A1%E8%A7%84%E8%8C%83%E6%80%A7%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.xls",
+    "file": "VAT18-1bbfd0a69bdf.xls",
+    "sha256": "4a7eb63447bba77a30901a67cb9c296de4c3a09b74ca854d551ab1ee80889563",
+    "bytes": 49152,
+    "magic": "d0cf11e0a1b11ae1",
+    "table_sha256": "57a925c7b7de8609523c812bde4b44e88a06633e0bfa47b1c6fce1cec1a52eef",
+    "sheet_shapes": [
+      [
+        "Sheet1",
+        146,
+        5
+      ]
+    ]
+  }
+]
