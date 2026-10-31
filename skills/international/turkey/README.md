@@ -1,6 +1,6 @@
 ---
 jurisdiction: TR
-version: 0.1
+version: 0.2
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -10,10 +10,10 @@ covered_by:
   VAT: turkey-vat
   SC: tr-payroll-social
   PR: tr-payroll-social
+  TP: tr-transfer-pricing
+  XB: tr-cross-border
 partial:
   IT-IND: "turkey-pit does not yet cover simple-method (basit usul) businesses and the tradesman exemption, or withholding on interest"
-  TP: "no transfer pricing skill in the pack yet (KVK art. 13); a separate PR will add it"
-  XB: "no cross-border skill in the pack yet (residence, treaties, non-resident withholding beyond the rates in tr-corporate-income-tax); a separate PR will add it"
 ---
 
 # Türkiye: tax pack
@@ -29,8 +29,8 @@ Türkiye taxes individuals under the Income Tax Law no. 193 (GVK) and companies 
 | VAT | turkey-vat | checked against the law (2026; PR #1044) |
 | SC, social contributions | tr-payroll-social | checked against the law (2026; PR #1046) |
 | PR, payroll withholding | tr-payroll-social | checked against the law (2026; PR #1046) |
-| TP, transfer pricing | (missing) | partial: "no transfer pricing skill in the pack yet (KVK art. 13); a separate PR will add it" |
-| XB, cross-border | (missing) | partial: "no cross-border skill in the pack yet (residence, treaties, non-resident withholding beyond the rates in tr-corporate-income-tax); a separate PR will add it" |
+| TP, transfer pricing | tr-transfer-pricing | checked against the law (2026; PR #1052) |
+| XB, cross-border | tr-cross-border | checked against the law (2026; PR #1054) |
 
 The overview (tr-tax-overview) and the company formation skills (tr-company-formation, turkey-company-formation-entity-choice-2) are not tax-domain skills. Treaty-by-treaty withholding rates, free zones, technology zones and investment incentive regimes are out of scope for the pack.
 
