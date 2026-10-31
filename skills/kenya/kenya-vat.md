@@ -37,7 +37,7 @@ This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act
 | Standard rate | 16% | Every taxable supply, import and imported taxable service not zero-rated (s. 5(2)(b)) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Zero rate | 0% | Second Schedule Part A, in the course of a registered person's business, not hotel, restaurant or entertainment services | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Registration threshold | KES 5,000,000 | Any 12 months, s. 34(1) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
-| Withholding VAT | 2% of taxable value | Appointed agents, TPA s. 42A; replaces the 6% in the earlier skill | 2026 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Withholding VAT | 2% of taxable value | Appointed agents, TPA s. 42A(1). Not on zero-rated supplies, on registered manufacturers with investment of at least KES 2 billion at 31 December 2024, or on official aid-funded projects (s. 42A(1) proviso, (3)). Replaces the 6% in the earlier skill | 2026 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
 | Refund claim, excess from zero-rating or withholding | 12 months | From the date the tax is due and payable, s. 17(5) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Input tax claim window | 6 months | After the end of the period of the supply or import, s. 17(2) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 | Bad debt relief wait | 3 years | Was 2 years, s. 31(1), Finance Act 2026 s. 29 | 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
@@ -305,13 +305,15 @@ Never claim input tax without the document, never zero-rate without evidence, ne
 
 | Source | URL | Read |
 | --- | --- | --- |
-| VAT Act, Cap. 476, version of 1 July 2025 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31 (ss. 2, 5, 17, 34, 44 and Schedules, by keyword reading of the PDF) |
+| VAT Act, Cap. 476, legislation as at 1 July 2026 (Legal Notice 128 of 2026), KRA copy | https://www.kra.go.ke/images/publications/Value-Added-Tax-Act-2026.pdf | 2026-10-31 (ss. 2, 10, 17, 31, 34, 44 and the Schedule paragraphs cited, by passage in extracted text, not cover to cover) |
+| VAT Act, Cap. 476, version of 1 July 2025 (cited in the tables above) | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31 by keyword passages; on review the page would not render, so check against the KRA copy |
 | Finance Act 2026, No. 19 of 2026, ss. 25 to 33, 48 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-10-31 |
-| Tax Procedures Act, Cap. 469B, version of 1 July 2025, ss. 38, 42A, 83, 83A, 84 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31 |
+| Tax Procedures Act, Cap. 469B, legislation as at 1 September 2026, KRA copy | https://www.kra.go.ke/images/publications/Tax-Procedures-Act--2026.pdf | 2026-10-31 (ss. 38, 42A, 83, 83A, 84, by passage in extracted text, not cover to cover) |
+| Tax Procedures Act, Cap. 469B, version of 1 July 2025 (cited in the tables above) | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31 by keyword passages; check against the KRA copy |
 | KRA VAT page | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax | 2026-10-31 |
 | KRA, Finance Act 2026 summary | https://www.kra.go.ke/popular-links/finance-act-2026-what-it-means-for-you | 2026-10-31 |
 
-Not yet confirmed: the conditions in the TPA s. 42A(1) proviso, including the KES 2 billion investment text, and the earlier skill's 100% withholding on foreign entities; whether a later version of the Act exists beyond the 1 July 2025 text plus Finance Act 2026; VAT Act s. 31 full conditions; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; any 2026 petroleum rate change; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
+Not yet confirmed: the earlier skill's 100% withholding on foreign entities; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; any 2026 petroleum rate change; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
 
 ## Disclaimer
 
