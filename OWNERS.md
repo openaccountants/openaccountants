@@ -42,7 +42,7 @@ To take an open role, comment on the coverage report issue or open a PR changing
 
 Michael set this allocation on 23 October 2026 and remains the accountable owner for Europe. A writing allocation does not transfer professional responsibility, and it does not make a skill Accountant-reviewed.
 
-**Claude: 33 jurisdictions. ChatGPT: 22.** A country allocation covers every topic, including existing skills. One active writer per country.
+**Claude: 32 jurisdictions. ChatGPT: 23.** A country allocation covers every topic, including existing skills. One active writer per country.
 
 ### 23 and 24 October 2026
 
@@ -59,6 +59,7 @@ On 30 October Michael said to finish Europe and "max out the agents". 116 PRs me
 - **Stale ChatGPT country PRs:** Claude reviewed, fixed and merged #782 IS, #783 IM, #784 XK, #786 ME, #787 NO, #790 SM, #793 MD, #807 MK and #915 IT. Each got an independent review, and a second review where the first reviewer rebuilt files. The remaining old files in those countries were then rewritten and reviewed.
 - **Liechtenstein:** PR #785 is being finished the same way.
 - **Germany #921 and Slovakia #907** stay with ChatGPT.
+- **Spain closeout (31 October):** Michael asked ChatGPT to finish the remaining scope. The handover is recorded on #391. Preserve Claude’s merged formation/optimisation refreshes and the #905 tax pack; one active writer, one country batch. The reviewed withholding and foreign-assignment additions leave two crypto computations open, not six whole ordinary domains.
 - **EU-wide VAT:** the EU VAT base and directive skills were brought to 2026 (#1017, #1018).
 
 State on main at 31 October:
@@ -93,7 +94,7 @@ Writer is who holds the country now. Tax year is the year on every skill on main
 | DE | Germany | Claude | 2026 | ChatGPT PR #921 open; it stays with ChatGPT. Issue #388 open. |
 | DK | Denmark | Claude | 2026 | Issue #389 closed. |
 | EE | Estonia | Claude | 2026 | Issue #390 closed. |
-| ES | Spain | Claude (from ChatGPT, 30 Oct) | 2026 | ChatGPT's #905 merged 30 Oct; Claude refreshed optimisation and formation (#972, #980). Issue #391 open. |
+| ES | Spain | ChatGPT closeout (from Claude, 31 Oct) | 2026 | #905 and Claude's #972/#980 preserved. Reviewed closeout additions are on `codex/spain-closeout-2026`; #391 stays open for Navarra multi-lot crypto cost and Álava blocked crypto-loss release. |
 | FI | Finland | ChatGPT | 2026 | Issue #392 closed. |
 | FO | Faroe Islands | ChatGPT | 2026 | Draft PR #776 open. Issue #393 open. |
 | FR | France | Claude | 2026 | Issue #394 closed. |

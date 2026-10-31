@@ -1,0 +1,15 @@
+{
+  "all22_schema_and_mechanical_errors": [
+    "skills/international/spain/es-irpf-deductions.md: (h) no_em_dash: 7 em dash(es)"
+  ],
+  "all22_warnings": [
+    "1 guides fail check (c) rates_rows_sourced",
+    "skills/international/spain/es-irpf-deductions.md: (c) rates_rows_sourced: 8 of 434 rates table row(s) without a URL"
+  ],
+  "preexisting_unchanged_failure": true,
+  "changed2_errors": [],
+  "changed2_warnings": [],
+  "baseline_deductions_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "examples_output": "checked 23 files, 49 oa-check blocks, 0 failures, 0 missing\n",
+  "initial_plain_python_issue": "PyYAML was absent in plain python; reused pinned validation dependency directory for subsequent checks."
+}

@@ -1113,3 +1113,40 @@ No prior public-main file exists. The actual first branch body `59af84aaae0dab05
 | 427 | [Bcoef]: https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/15/I-1336_cas.pdf?hash=7bb6a27105d5d87568e6537aa6283dc3<br>[Acoef]: https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf<br>[Gcoef]: https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf | Current LF429, exact original unit |
 | 431 | This Guide provides sourced computation support. Obtain a qualified professional's review and sign-off before filing or acting on the result. | Current LF433, exact original unit |
 | 433 | **Not yet confirmed:** application of the province-specific corporate extraordinary surcharge to a particular PE if a positive charge is proposed; specialist mixed-Navarra/Basque fiscal-group allocation and unusual attribution/elections; detailed historic property/share reliefs beyond the supplied ordinary method; future2027operational schemas. The annual-law clocks and ordinary methods are supplied. The complete2026non-PE and separate PE/CIT coefficient tables are supplied above; use the proper population and exact asset date. Independent source and calculation review covers the supplied ordinary scope,with the stated unresolved branches excluded. | Current Sources LF435 preserves mixed-Navarra/Basque fiscal-group/specialist attribution, historical relief and future operational limits; precise surcharge question now bounded beyond supplied own19 interpretation. No claim that ordinary composition alone completes these branches. |
+
+
+## 31 October 2026 closeout A1 revision: own historical-context withholding construction
+
+WRITER DRAFT; independent revision review pending. The initial current-numbering net proposal was rejected for insufficient contextual support and is preserved with the rejection. This revision adds the actual historical own24.6/31.2 and explicit interpretation-rule bridge, selects a labelled gross method and keeps the competing literalnet result visible. No published concordance ruling, universal legal outcome, accountant attestation or country completion is claimed.
+
+| Row | Figure/rule | Own act/article | Exact quotation or derivation status |
+|---|---|---|---|
+| A1R-01 | Current24.5EU/EEAexpense rule,31.2exclusion names24.2/6; current25sets19%ordinaryqualifyingEU/EEArate. | NF16/2014arts24/25/31 | sin tener en consideración lo dispuesto en los artículos 24.2 y 6, 26 y 33.7. |
+| A1R-02 | Own2020art24.6containsEU/EEAexpenses and31.2expressly excludes24.6; sourceusedonlytoidentifyreferent. | HistoricalNF16/2014arts24.6/31.2 | Cuando se trate de contribuyentes residentes en otro Estado miembro de la Unión Europea, se aplicarán las siguientes reglas especiales: |
+| A1R-03 | ActualNF2/2025art2.SixlocatesEU/EEAexpensesin5andnonew6; current31.2retainsidenticalexclusiontext. | NF2/2025art2.SixandcurrentNF16/2014art31.2 | El artículo 24 queda redactado en los siguientes |
+| A1R-04 | Currentownregulation17.1directsordinarywithholdingbasetoown31.2. | DF11/2016art17.1 | Con carácter general, la base para el cálculo de la obligación de retener se determinará de acuerdo con lo dispuesto en el apartado 2 del artículo 31 de la Norma Foral del Impuesto. |
+| A1R-05 | Owninterpretationruleincorporatescontext/historyunderCivilCode3.1; it does not itselfissue a concordanceruling. | NF2/2005art11.1andCivilCode3.1 | Las normas tributarias se interpretarán con arreglo a lo dispuesto en el apartado 1 del artículo 3 del Código Civil. |
+| A1R-06 | Labelledhistorical-contextconstructionpreserves31.2exclusionidentifiedbyitsownformer24.6referent, now5; chosenprospectivebasisgross. | Reasonedownhistorical/currentchainabove | Derivation, not an express administrative instruction or a claim that the legislature expressly corrected the reference. No B/A law supplies the bridge. |
+| A1R-07 | Proposedgrossbranch:20,000×19%=3,800withholding; final(20,000−1,200)×19%=3,572;expense-difference228. | Derivedfictionalcontrolunderexistingcurrentexpense/raterulesandlabelledprospectiveconstruction | Actualcertificate/returnandlawfulrefundclaimrequired;notanautomaticpayment. |
+| A1R-08 | Competingliteralcurrentnumberingbranch:18,800×19%=3,572prospectivelyandfinally,refund0. | Deriveddiagnosticofretainedcounterinterpretation | Not a taxpayer election, additional charge or selected binding answer. |
+| A1R-09 | Ordinarynonqualifyingthirdcountry/noestablishedexpensegetsnogeneralEUexpensedifference; controllingowninstruction/rulingandactualfactsreserved. | Existing24.1/24.5/25withproposedown31.2construction | No expense/residence/assessment/ruling is invented; sources clearly identify uncertainty. |
+
+- [G-IRNR-2026-1972](https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-IRNR-2026-2067](https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-IRNR-2026-2277](https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-IRNR-regulation-current-785](https://www.gipuzkoa.eus/documents/2456431/null/DF%2011-2016%20(2026-0)/0988d0d9-65e5-f1f1-e6af-c452b324b425), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-NF2-2025-original](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/11/28/c2508038.pdf), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-2020-historical24](https://www.gipuzkoa.eus/documents/2456431/19242636/NF%2B16-2014%2B%282020-3%29.pdf/1f4447cb-30a6-fe43-38b1-b8368b0bca8d?t=1612341442000), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-2020-historical31](https://www.gipuzkoa.eus/documents/2456431/19242636/NF%2B16-2014%2B%282020-3%29.pdf/1f4447cb-30a6-fe43-38b1-b8368b0bca8d?t=1612341442000), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [G-NFGT11](https://www.gipuzkoa.eus/documents/2456431/8.6741042E7/NF%202-2005%20(2026).pdf/b8f36f3d-32d7-f2bf-c007-b7e250cb49e2), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+- [Civil3.1](https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763#art3), read31October2026. Full context/read scope and any raw/reader hashes in [A1 source contexts](spain-closeout-20261031/a1-source-contexts.json).
+
+All original Guide nonblank units are mapped in [A1 destinations](spain-closeout-20261031/a1-old-topic-destinations.json). All earlier ledger bytes and historical independent review records remain unchanged.
