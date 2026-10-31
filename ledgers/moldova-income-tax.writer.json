@@ -15068,6 +15068,6 @@
     "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
     "record": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
     "row_status_note": "Original writer-level PENDING fields are preserved historical observations; completed bounded source review is recorded separately. This does not confer accountant attestation.",
-    "final_status_hash_delta": "PENDING independent recheck"
+    "final_status_hash_delta": "Recorded separately in ledgers/md-country-evidence/independent-review/publication-status-recheck.json"
   }
 }
