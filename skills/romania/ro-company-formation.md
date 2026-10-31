@@ -1,11 +1,11 @@
 ---
 name: ro-company-formation
 description: "Company formation and entity choice in Romania for 2026. Covers the limited liability company (SRL), the joint-stock company (SA), the authorised natural person (PFA) and branches; the new SRL minimum capital set by Legea 239/2025 (RON 500 for a new SRL, RON 5,000 once prior-year net turnover is above RON 400,000, in force from 18 December 2025, with existing SRLs given two years from that date to comply); how much capital is paid in and when (Law 31/1990); the SA minimum of RON 90,000; registration at the Trade Register (ONRC) under Law 265/2022 (name reservation, 15-day filing window, one-working-day decision, no registration fees); the beneficial owner declaration; and the first tax steps (micro-enterprise or profit tax, VAT threshold, annual financial statements in 150 days). Trigger phrases: register a company in Romania, înființare SRL, capital social minim 2026, ONRC, Registrul Comerțului, PFA. Out of scope: company tax (ro-corporate-income-tax), VAT (ro-vat-return), payroll (ro-payroll-social), self-employed tax (ro-income-tax), cross-border (ro-cross-border)."
-version: 0.3
+version: 0.2
 jurisdiction: RO
 category: international
 tax_year: 2026
-last_updated: 2026-10-31
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -49,7 +49,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Law 129/2019 (anti-money laundering), ONRC consolidated text to 26.5.2025: art. 56 | https://www.onrc.ro/documente/legislatie/Nou%20Legea%20129%20modificat%C4%83%2026_05_2025.docx | 2026-10-30 |
 | Law 82/1991 on accounting, republished, ANAF copy: art. 36 | https://static.anaf.ro/static/10/Anaf/legislatie/Legea_82_1991.pdf | 2026-10-30 |
 | ONRC, national legislation list | https://www.onrc.ro/index.php/ro/legislatie/legislatie-nationala | 2026-10-30 |
-| Pack skills for the tax figures: ro-corporate-income-tax (Fiscal Code arts. 17, 42, 47, 48, 51), ro-vat-return (arts. 310, 316), ro-payroll-social | skills/romania/ | 2026-10-30 |
+| Pack skills for the tax figures: ro-corporate-income-tax (Fiscal Code arts. 17, 42, 47, 48, 51), ro-vat-return (arts. 310, 316), ro-payroll-social | skills/international/romania/ | 2026-10-30 |
 
 Not yet confirmed: how ONRC and the courts apply art. VI(6) to existing SRLs at or below RON 400,000 turnover (ONRC's 17 December 2025 announcement restates the article without addressing them; legislatie.just.ro did not load); the RON 1 minimum that applied from 2020 to 2025 (the amending Law 223/2020 was not read); the fee for name reservation and the Monitorul Oficial Part IV publication tariff; the representative office of a foreign company (not covered by Law 31/1990; its authorisation rules were not read); practical timelines beyond the one-working-day decision (the earlier version said 5 to 10 business days); the date of the ANAF consolidation of Law 82/1991 and the current fines for late financial statements.
 
