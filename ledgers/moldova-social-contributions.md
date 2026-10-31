@@ -2,7 +2,7 @@
 
 **Local 2026 writer draft. Whole-country independent review pending. Ordinary source and implementation gaps remain open in the Guide Sources and country README.**
 
-Guide SHA256: `d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
+Guide SHA256: `0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2`. Source quotes are exact after whitespace normalization; full paragraphs, official URLs, source hashes and assumed cases are retained in the JSON. The initial 67-row source checkpoint is preserved separately.
 
 | ID | Rule/figure | Guide section | Act/article and official URL | Short exact original-language quote | Read on |
 |---|---|---|---|---|---|

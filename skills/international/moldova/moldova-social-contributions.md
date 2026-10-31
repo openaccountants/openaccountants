@@ -1,7 +1,7 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, requires whole-country independent review and does not claim comprehensive coverage or accountant attestation."
-version: "0.11"
+version: "0.12"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.11
+# Moldova social contributions and medical insurance, 2026 v0.12
 
 ## Who this applies to
 
@@ -87,7 +87,7 @@ Employee gifts/benefits tied to Fiscal Code art. 24(19^3)/(20) require the actua
 
 ### Agriculture, IT parks and other professional categories
 
-For agriculture, compute qualifying CAEM 01.1–01.6 income divided by recorded operating income for the reporting period. Preserve the pre-1-January accounting-policy election and reconcile the actual annual ratio before the final monthly declaration. If the ordinary ratio conditions are satisfied despite a missing policy statement, CNAS describes corrected declarations; if 18% was used and the actual ratio fails, correct and settle the ordinary difference. The state 6% is not an employee deduction. [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][instructions].
+For agriculture, compute qualifying CAEM 01.1–01.6 income divided by recorded operating income for the reporting period. Preserve the pre-1-January accounting-policy election and reconcile the actual annual ratio before the final monthly declaration. For the missing-policy correction route, CNAS point 13.3 expressly requires an actual annual ratio **above 70%**. Its application at exactly 70% is unconfirmed here. If 18% was used and the actual ratio fails, correct and settle the ordinary difference. The state 6% is not an employee deduction. [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][instructions].
 
 For IT-park employment, report the specified 11,832 monthly insured income for each employer independently. Multiple jobs within the same employer do not create multiple insured-income bases. Keep the 54.7% allocation of the park's single tax distinct from insured income and actual salary; covered civil work/service contracts remain under the ordinary social law. The previous Guide's 7%-of-turnover and 30%-of-average-salary minimum assertions require the full current park-tax eligibility/base and headcount rules, which this social draft does not certify. [Law 489 art. 19(7), 20(4)][social]; [CNAS points 12.1–12.3][instructions].
 

@@ -3,7 +3,7 @@
   "country": "MD",
   "slug": "moldova-social-contributions",
   "Guide_path": "skills/international/moldova/moldova-social-contributions.md",
-  "Guide_sha256": "d0743068ac3ac40321761cf62e3e0756cb37b3c1aab1f9b3e8d767640f75bdfb",
+  "Guide_sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
   "rows": [
     {
       "id": "MD-SC-001",
@@ -10977,7 +10977,7 @@
   "baseline_old_units": 155,
   "remaining": "Guide Sources Not yet confirmed and country README remain authoritative; no complete-coverage, accountant-attestation or independent-review claim",
   "source_integrity": "Quotes and retained article/source hashes checked by writer; not independent substantive verification",
-  "new_bytes": 95648,
+  "new_bytes": 95692,
   "subsequently_merged_repairs_20261031": {
     "PR": 1026,
     "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
