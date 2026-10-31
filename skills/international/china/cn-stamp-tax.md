@@ -194,7 +194,7 @@ Other targeted exemptions (for example social security funds, commodity reserves
 | Contract states price and VAT amount separately | Tax the price only | Law Art. 5 |
 | Contract states VAT-inclusive price and only the VAT rate | Tax the full amount | Law Art. 5; Shanghai and Tianjin bureau answers |
 | Sale of goods between two individuals | Not taxed | Rate table note on sale contracts |
-| Sale of movable goods by a company to an individual, including an individual-business operator | The whole contract is outside the movable-goods sale-contract item; neither signatory pays under that item | [Stamp Tax Law rate-table exclusion; Tianjin 22 October 2026 Q&A](https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml); [Guangdong Q5–6](https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml) |
+| Sale of movable goods by a company to an individual, including an individual-business operator | The whole contract is outside the movable-goods sale-contract item; neither signatory pays under that item | [Stamp Tax Law rate-table exclusion; Jiangsu 12366 reply, 26 September 2022](https://jiangsu.chinatax.gov.cn/art/2022/9/26/art_16876_1882.html); [Guangdong Q5–6](https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml) |
 | Loan from a shareholder or another non-financial company | Not taxed | Rate table note on loan contracts |
 | Bank loan to a small or micro enterprise | Exempt until 31 December 2027 | MOF/STA announcement 2023 No. 13 |
 | Interbank lending | Not taxed | Rate table note on loan contracts |

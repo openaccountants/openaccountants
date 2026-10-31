@@ -8,7 +8,7 @@ The preserved initial review checked 145 ledger claim groups against 118 primary
 
 ## Contents
 
-- `ledgers/`: complete figure/rule claims, operative references, short exact original-language excerpts, official URLs, read dates, source hashes and original-topic destinations.
+- `/ledgers/china-2026/` (repository root): complete figure/rule claims, operative references, short exact original-language excerpts, official URLs, read dates, source hashes and original-topic destinations.
 - `review/`: preserved initial findings and independent bounded closure, source-unit/disposition evidence and exact final hashes.
 - `writer-repair-log.json`: exact repairs and restored names.
 - `candidate-manifest.json`, `baseline-inventory.json` and `coverage.json`: final source hashes, original inventory and honest domain routing.
