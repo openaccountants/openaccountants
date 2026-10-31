@@ -1,0 +1,1088 @@
+{
+  "slug": "cn-transfer-pricing",
+  "candidate_sha256": "db9d76474c1e10e359ece75ce12daf4156d2675395d45d9e9c82dbc4a433b9f4",
+  "rows": [
+    {
+      "id": "CN-TP-01",
+      "claim": "Annual actual-account resident/nonresident-establishment related reporting; CbCR/file tests distinct; HK/Macao/Taiwan",
+      "section": "Who",
+      "act_article": "42 §§1,5,10,26",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            36,
+            36
+          ],
+          "quote": "一、实行查账征收的居民企业和在中国境内设立机构、场所并据实申报缴纳企业所得税的非居民企业向税务机关报送年度企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "01871fb2af953899e985836513b3e1d02a650dfb45f91dcf794176b6cf1c9457"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            59,
+            68
+          ],
+          "quote": "五、存在下列情形之一的居民企业，应当在报送年度关联业务往来报告表时，填报国别报告：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "32e9daed1a9a0b211e4f35b98219540f14470bc2f635d93088e9b4955f34c0cb"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            194,
+            194
+          ],
+          "quote": "二十六、涉及港澳台地区的，参照本公告相关规定处理。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "140226a96f5b0407820b06f0743793d212905e57b82b4a79b10ee6aee2c4460e"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-02",
+      "claim": "25% ownership, chain and family aggregation; financing50%/guarantee10% with equity and independent-lender qualifications; IP/control/appointments/family/common-interest alternatives, period and state-ownership exceptions; appointment and concurrent-role tests use half or more, including equality.",
+      "section": "Who",
+      "act_article": "42 §§2–3",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            37,
+            51
+          ],
+          "quote": "二、企业与其他企业、组织或者个人具有下列关系之一的，构成本公告所称关联关系：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "46a1e7a62ae071708b8248f6d0bb13319eeefc762b0e432e058e5be424d752c6"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            52,
+            52
+          ],
+          "quote": "三、仅因国家持股或者由国有资产管理部门委派董事、高级管理人员而存在本公告第二条第（一）至（五）项关系的，不构成",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "568de9aae0307846c1932792c816c57cce9eedcbc10f7f5ced6e28cde167042a"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-03",
+      "claim": "Master file: cross-border plus group-prepared alternative, or related transactions strictly>1billion",
+      "section": "Thresholds",
+      "act_article": "42 §11",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            78,
+            80
+          ],
+          "quote": "十一、符合下列条件之一的企业，应当准备主体文档:",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3d104b03f25025a8c11edddb50e1b6097c83856a02c56910b468c7ee7da8a6fc"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-04",
+      "claim": "Local tangible200m,financial100m,intangible100m,other40m strict exceed; toll-processing customs valuation",
+      "section": "Thresholds",
+      "act_article": "42 §13",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            105,
+            109
+          ],
+          "quote": "十三、年度关联交易金额符合下列条件之一的企业，应当准备本地文档:",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "624d43d9ffa338dbe7ed0d7759e8c9b643de8236e14e4685c96eae30e5679f27"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-05",
+      "claim": "CbCR resident ultimate-parent prior revenue strictly>5.5billion or designated resident reporting enterprise",
+      "section": "Thresholds",
+      "act_article": "42 §5",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            59,
+            68
+          ],
+          "quote": "五、存在下列情形之一的居民企业，应当在报送年度关联业务往来报告表时，填报国别报告：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "32e9daed1a9a0b211e4f35b98219540f14470bc2f635d93088e9b4955f34c0cb"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-06",
+      "claim": "Cost-sharing/thin-capitalisation special-file triggers and no numerical ratio invented",
+      "section": "Thresholds",
+      "act_article": "42 §15",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            160,
+            162
+          ],
+          "quote": "十五、特殊事项文档包括成本分摊协议特殊事项文档和资本弱化特殊事项文档。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b40f17b6ef24f7f8112321d813cd2ad7d1a1dcbacbcbc81d77a9032e8f123640"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-07",
+      "claim": "APA covered local/special exemption and threshold exclusion; domestic-only all-files exemption",
+      "section": "Thresholds",
+      "act_article": "42 §18",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            185,
+            186
+          ],
+          "quote": "十八、企业执行预约定价安排的，可以不准备预约定价安排涉及关联交易的本地文档和特殊事项文档，且关联交易金额不计入",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c40096c458cb67a1e0bfe7e86aa14bbe68992572fc45dcc354bce13cae987e55"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-08",
+      "claim": "Simple-function foreign-related manufacturer/distributor/contract-R&D loss: local file regardless threshold",
+      "section": "Thresholds",
+      "act_article": "6 art28",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            160,
+            162
+          ],
+          "quote": "第二十八条 企业为境外关联方从事来料加工或者进料加工等单一生产业务，或者从事分销、合约研发业务，原则上应当保持",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ba6ffb9747b3c5da13e71ded33902b6137b995d22e3498b913d9f33e7d252ea1"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-09",
+      "claim": "Transaction categories incl financing vs financial assets",
+      "section": "Base",
+      "act_article": "42 §4",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            53,
+            58
+          ],
+          "quote": "四、关联交易主要包括：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cbf60504e80fdcc47dd97131365c5bb4e84041f5428e3b8e7480f9d0aad6d545"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-10",
+      "claim": "Comparability five factors, six method families, tested-party/public-information/statistical principles and median adjustment",
+      "section": "Base",
+      "act_article": "6 arts15–16,23–27",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            99,
+            104
+          ],
+          "quote": "第十五条 税务机关实施转让定价调查时，应当进行可比性分析，可比性分析一般包括以下五个方面。税务机关可以根据案件",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "45a5c0875ab26058fd0b4c02c495bcac38c48c6de8c8791138c67060f8178dcb"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            105,
+            105
+          ],
+          "quote": "第十六条 税务机关应当在可比性分析的基础上，选择合理的转让定价方法，对企业关联交易进行分析评估。转让定价方法包",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "1ca806207e64b7e2eccc87a639dec42b17e2fa2507ec1651c47d393553cea507"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            152,
+            152
+          ],
+          "quote": "第二十三条 税务机关分析评估被调查企业关联交易时，应当在分析评估交易各方功能风险的基础上，选择功能相对简单的一",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "48da839ca76d458e5b7224982b2953fc8594b3638d9867e78960fdcdef905879"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            153,
+            153
+          ],
+          "quote": "第二十四条 税务机关在进行可比性分析时，优先使用公开信息，也可以使用非公开信息。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "19620a6eb5294708c2fcfcb58a62b1ce4489786a210668527b24e17857fa0860"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            154,
+            156
+          ],
+          "quote": "第二十五条 税务机关分析评估被调查企业关联交易是否符合独立交易原则时，可以根据实际情况选择算术平均法、加权平均",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "047a0532847c3d8dee6756ca7b70875789365f46c8ec07dffc63f48a968e9d29"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            159,
+            159
+          ],
+          "quote": "第二十七条 税务机关分析评估被调查企业关联交易是否符合独立交易原则时，选取的可比企业与被调查企业处于不同经济环",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f9476123e397dd10a80dd7eeedbf92577df1c29da7c9b54d54eb865f4dad0374"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-11",
+      "claim": "CUP comparability and all-types scope",
+      "section": "Base",
+      "act_article": "6 art17",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            106,
+            121
+          ],
+          "quote": "第十七条 可比非受控价格法以非关联方之间进行的与关联交易相同或者类似业务活动所收取的价格作为关联交易的公平成交",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "afc7885e2bf893dbea2e1d7b219123f14d4413905d32e8c790efd5c66e4f24b1"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-12",
+      "claim": "Resale price formula and simple resale conditions; example2",
+      "section": "Base / Examples",
+      "act_article": "6 art18",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            122,
+            127
+          ],
+          "quote": "第十八条 再销售价格法以关联方购进商品再销售给非关联方的价格减去可比非关联交易毛利后的金额作为关联方购进商品的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0e6481c1a808797b1e5a90d26210a04735419a8f08f174215defd3b7fc03885e"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-13",
+      "claim": "Cost-plus formula, reasonable cost and comparable markup conditions; example1,7%hypothetical",
+      "section": "Base / Examples",
+      "act_article": "6 art19",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            128,
+            133
+          ],
+          "quote": "第十九条 成本加成法以关联交易发生的合理成本加上可比非关联交易毛利后的金额作为关联交易的公平成交价格。其计算公",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a0f1f22a01d9cad0b0b601cfa79b566ad8bb62aef9aacb1636c88338d945a918"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-14",
+      "claim": "TNMM indicator formulas and applicability; profit split and residual; other asset valuation methods",
+      "section": "Base",
+      "act_article": "6 arts20–22",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            134,
+            142
+          ],
+          "quote": "第二十条 交易净利润法以可比非关联交易的利润指标确定关联交易的利润。利润指标包括息税前利润率、完全成本加成率、",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d2e7eb7bfd5cfca433f2c8463be00a8c007d1615dc847083d62daa937d800bab"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            143,
+            147
+          ],
+          "quote": "第二十一条 利润分割法根据企业与其关联方对关联交易合并利润（实际或者预计）的贡献计算各自应当分配的利润额。利润",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "330c1172f775410f407271248f91a8bdd76b4e64e1a161847ffb98255125f4af"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            148,
+            151
+          ],
+          "quote": "第二十二条 其他符合独立交易原则的方法包括成本法、市场法和收益法等资产评估方法，以及其他能够反映利润与经济活动",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0ff922ceff11d452becd3bc957b8a08d7e1b80e2c15c5a6d2a9d29b5c6ec5b24"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-15",
+      "claim": "Intangible contribution/ownership/funder return/royalty changes/full-adjustment conditions",
+      "section": "Base",
+      "act_article": "6 arts30–32",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            166,
+            167
+          ],
+          "quote": "第三十条 判定企业及其关联方对无形资产价值的贡献程度及相应的收益分配时，应当全面分析企业所属企业集团的全球营运",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8e026e1828b300fb0476ec18997d5c1386e6aad5c4c47787e525160bb6e23942"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            168,
+            172
+          ],
+          "quote": "第三十一条 企业与其关联方转让或者受让无形资产使用权而收取或者支付的特许权使用费，应当根据下列情形适时调整，未",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fbe70c9757cc2ee07842ae7a69d8038895c06171f376d83b62883cafa0cbfcc3"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            173,
+            174
+          ],
+          "quote": "第三十二条 企业与其关联方转让或者受让无形资产使用权而收取或者支付的特许权使用费，应当与无形资产为企业或者其关",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bb74780f94c8b820087bdbe36f9724df899a8a2fc5a47536f3cbb0e72ae394b1"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-16",
+      "claim": "Beneficial service test, six excluded categories, cost attribution/allocation, non-substantive payee adjustment; no statutory5%asserted",
+      "section": "Base",
+      "act_article": "6 arts33–37",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            175,
+            175
+          ],
+          "quote": "第三十三条 企业以融资上市为主要目的在境外成立控股公司或者融资公司，仅因融资上市活动所产生的附带利益向境外关联",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d67bf34b3ec0e0a25a45785a9fe42073dca4e1fb0e9cc0c2c8178d9518cc09e6"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            176,
+            177
+          ],
+          "quote": "第三十四条 企业与其关联方发生劳务交易支付或者收取价款不符合独立交易原则而减少企业或者其关联方应纳税收入或者所",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5d2901496450cce9ff6df45e04103418b0ca5473b33e3405669508ed7fdd0d44"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            178,
+            195
+          ],
+          "quote": "第三十五条 企业向其关联方支付非受益性劳务的价款，税务机关可以按照已税前扣除的金额全额实施特别纳税调整。非受益",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2056f401044df25d35824afb6ae0ef88a4a28d94e795538381ce5216a9776cfe"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            196,
+            198
+          ],
+          "quote": "第三十六条 企业接受或者提供的受益性劳务应当充分考虑劳务的具体内容和特性，劳务提供方的功能、风险、成本和费用，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4fc8db5be42b188aa3b2567d18fca39593b694f59d5f89bd60daf6bc95972f2d"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            199,
+            199
+          ],
+          "quote": "第三十七条 企业向未执行功能、承担风险，无实质性经营活动的境外关联方支付费用，不符合独立交易原则的，税务机关可",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fb5ab93bdca75b9570805f09b8dd14e60978ac66be269ce5229184781da61373"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-17",
+      "claim": "Master/local/special contents incl value chain,location benefits,outbound investment/equity/services",
+      "section": "Base",
+      "act_article": "42 §§12,14,16–17",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            81,
+            104
+          ],
+          "quote": "十二、主体文档主要披露最终控股企业所属企业集团的全球业务整体情况，包括以下内容：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "837f139807b1c18637796ec5fd08d9c13766b28947300e85ece03ed9736b839c"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            110,
+            159
+          ],
+          "quote": "十四、本地文档主要披露企业关联交易的详细信息，包括以下内容：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "445c2de3f1a6fc2562171675fd2f5efdad91093c1db32c76e2a79410d85858f1"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            163,
+            172
+          ],
+          "quote": "十六、成本分摊协议特殊事项文档包括以下内容：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ba793b460648bcfca0a24bf79fad7bc3dc2b441edad67c4d73cac74c60d14d1b"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            173,
+            184
+          ],
+          "quote": "十七、资本弱化特殊事项文档包括以下内容：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9c3627801dfae034d4444ad32f355c45828191198e808d4d6353d6f20e88287c"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-18",
+      "claim": "Master12months,local/special30June following year,request30days and2026calendar illustrations",
+      "section": "Deadlines",
+      "act_article": "42 §19",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            187,
+            187
+          ],
+          "quote": "十九、主体文档应当在企业集团最终控股企业会计年度终了之日起12个月内准备完毕；本地文档和特殊事项文档应当在关联",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cb90e79946edbf3e06036a4039fb3bc2919d7ced891c3ffdaa36095ba3a35016"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-19",
+      "claim": "Force majeure30days after cessation;Chinese/source citations/seal/signature/successor retention/10years",
+      "section": "Deadlines",
+      "act_article": "42 §§20–24",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            188,
+            188
+          ],
+          "quote": "二十、企业因不可抗力无法按期提供同期资料的，应当在不可抗力消除后30日内提供同期资料。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "7a1abb3be05ac61698c69dceaabcbfb86aad8e84cb25e4d0c8394b9aa48576af"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            189,
+            189
+          ],
+          "quote": "二十一、同期资料应当使用中文，并标明引用信息资料的出处来源。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "97dc85d07efee6a6c23d572a9325ed396ce9cb70b28ffe4904931448e8ec2e30"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            190,
+            190
+          ],
+          "quote": "二十二、同期资料应当加盖企业印章，并由法定代表人或者法定代表人授权的代表签章。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "adfd4b7be44dbd30b74075d91bc1bfc7871ffe6060c1b2f48970d7614f156e7f"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            191,
+            191
+          ],
+          "quote": "二十三、企业合并、分立的，应当由合并、分立后的企业保存同期资料。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ab3633d16db048159b855bb37285e503365a6ed57da2e4f910d6862ad59cc9a"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            192,
+            192
+          ],
+          "quote": "二十四、同期资料应当自税务机关要求的准备完毕之日起保存10年。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f759c60acd951d57fee0019e50dc272576e5898d7e56f32d7f254effdd3403b4"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-20",
+      "claim": "EIT standard25%,annual5months; both examples assume eligibility/rate and interest separately",
+      "section": "Thresholds / Deadlines / Examples",
+      "act_article": "EIT arts4,54",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            65,
+            67
+          ],
+          "quote": "第四条　企业所得税的税率为25％。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "218d3cba2f59f176df3b0b71c05a398f24cad67a63b0cfde3d24954be0feb45c"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            182,
+            185
+          ],
+          "quote": "第五十四条　企业所得税分月或者分季预缴。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "63b25c73cbc81dc840d768fecb5f3a5b959238e124b2b1a0fa38df9555445a93"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-21",
+      "claim": "Arm-length adjustment,information duties,deemed assessment;self-correction not investigation bar",
+      "section": "Penalties",
+      "act_article": "EIT arts41,43–44;6art3",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            162,
+            163
+          ],
+          "quote": "第四十一条　企业与其关联方之间的业务往来，不符合独立交易原则而减少企业或者其关联方应纳税收入或者所得额的，税务",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b7b75f59a0ccf178256a35a28693c507a12a4d3e05182ff951c9f5b96b68574e"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            165,
+            166
+          ],
+          "quote": "第四十三条　企业向税务机关报送年度企业所得税纳税申报表时，应当就其与关联方之间的业务往来，附送年度关联业务往来",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0dab6079011a1c139067de514dd1a074898be11aa34cbff9e3ab01265c7ba24f"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            167,
+            167
+          ],
+          "quote": "第四十四条　企业不提供与其关联方之间业务往来资料，或者提供虚假、不完整资料，未能真实反映其关联业务往来情况的，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b52f7e6f796bb6ff0188ef55102bb60861331584b2d7a96e2a123b0a83a4e3a5"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            64,
+            67
+          ],
+          "quote": "第三条 税务机关通过关联申报审核、同期资料管理和利润水平监控等手段，对企业实施特别纳税调整监控管理，发现企业存",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "de965e91db75caa9ec28ba75b40fc9aa7a3e5444199bf13d3a7a8cd279ec5b58"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-22",
+      "claim": "Special-interest nextJune1,yearendbenchmark+5points/365,cooperation reductions and exception,postdeadline surcharge distinction,voluntary correction",
+      "section": "Interest",
+      "act_article": "6 arts44–45;Reg121",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            213,
+            218
+          ],
+          "quote": "第四十四条 税务机关对企业实施特别纳税调整的，应当根据企业所得税法及其实施条例的有关规定对2008年1月1日以",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "dbc5760baf6e983747e42cbdfa4b102637b2504966f5ac1e46468f940da401eb"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            219,
+            219
+          ],
+          "quote": "第四十五条 企业自行调整补税且主动提供同期资料等有关资料，或者按照有关规定不需要准备同期资料但根据税务机关要求",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2543af458f953a86a5b53f8371f63bda78dc6b749fd6ef452d53f3d69f3c9cdc"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            355,
+            356
+          ],
+          "quote": "第一百二十二条　企业所得税法第四十八条所称利息，应当按照税款所属纳税年度中国人民银行公布的与补税期间同期的人民",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "801a15a8a60fc4629a0becb58e439a81051ed4dc503aad906ff07815e5f636ef"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            353,
+            354
+          ],
+          "quote": "第一百二十一条　税务机关根据税收法律、行政法规的规定，对企业作出特别纳税调整的，应当对补征的税款，自税款所属纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e9fafd45196afd708a01f0c13b7da7c3cf9c88648dc77ee3db9c1b355beda38b"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-23",
+      "claim": "Preliminary objection7days,administrative-review payment/security",
+      "section": "Penalties",
+      "act_article": "6 arts40–41",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            202,
+            207
+          ],
+          "quote": "第四十条 经调查，税务机关发现企业存在特别纳税调整问题的，应当按照以下程序实施调整：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c3ac0af87ec6fe97706ce4f4fe9080ab0fee5cd8e53a51135ef4e62b89a8f6be"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            47,
+            61
+          ],
+          "quote": "注释：第四十一条第二款废止。参见：《国家税务总局关于公布全文失效废止和部分条款失效废止的税收规范性文件目录的公",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "aa7bf3b4755152a195a98f08da4ea54864f12aeeebb599b82fe7a648fa447b1c"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-24",
+      "claim": "CbCR national security,exchange and investigation fallback conditions",
+      "section": "Cross-border",
+      "act_article": "42 §§6–8",
+      "sources": [
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            69,
+            69
+          ],
+          "quote": "六、最终控股企业为中国居民企业的跨国企业集团，其信息涉及国家安全的，可以按照国家有关规定，豁免填报部分或者全部",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f2e5f0c59789c7cce0d4c8b94e8e52b408d5be3fba6ed9222a24f518aa3ffbc6"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            70,
+            70
+          ],
+          "quote": "七、税务机关可以按照我国对外签订的协定、协议或者安排实施国别报告的信息交换。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "01ede9f4825c439134975ff73b7d758723f85bbf0b18852e14bb6a3ab9d8478b"
+        },
+        {
+          "source_id": "TP42",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "source_file": "TP42.txt",
+          "source_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "source_lines": [
+            71,
+            74
+          ],
+          "quote": "八、企业虽不属于本公告第五条规定填报国别报告的范围，但其所属跨国企业集团按照其他国家有关规定应当准备国别报告，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "08e14ddace13f9917fc10b50dbe65c81c59fa2babb5df0626b0f360746754246"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-25",
+      "claim": "Same-tax-burden domestic no-national-revenue-reduction qualification",
+      "section": "Cross-border",
+      "act_article": "6 art38",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            200,
+            200
+          ],
+          "quote": "第三十八条 实际税负相同的境内关联方之间的交易，只要该交易没有直接或者间接导致国家总体税收收入的减少，原则上不",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c3935fe4fab3e3a73254953701477e78e82d5071003607ac4ed6b4fb6049b258"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-26",
+      "claim": "APA future pricing,six stages,three types,3–5years,prior3years40m eachyear ordinaryscope; ordinary prior-year amount is at least40000000, including equality.",
+      "section": "Cross-border / Thresholds",
+      "act_article": "64 §§1–4",
+      "sources": [
+        {
+          "source_id": "TP64",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1990035/201610/c2458312/content.html",
+          "source_file": "TP64.txt",
+          "source_sha256": "3707112ce22bebafc10f48c5d8f9bb7fd66a2465787958e58fe299f2d9a9f5c1",
+          "source_lines": [
+            29,
+            29
+          ],
+          "quote": "一、企业可以与税务机关就其未来年度关联交易的定价原则和计算方法达成预约定价安排。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c2cf42e001e96fe31cd866feddb16a0548ca22376dd169383834f15a98e35a23"
+        },
+        {
+          "source_id": "TP64",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1990035/201610/c2458312/content.html",
+          "source_file": "TP64.txt",
+          "source_sha256": "3707112ce22bebafc10f48c5d8f9bb7fd66a2465787958e58fe299f2d9a9f5c1",
+          "source_lines": [
+            30,
+            30
+          ],
+          "quote": "二、预约定价安排的谈签与执行经过预备会谈、谈签意向、分析评估、正式申请、协商签署和监控执行6个阶段。预约定价安",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b49c5eaf2db581a8664a540233b1904f5c27c71e11a8fecacf953d8035cdd096"
+        },
+        {
+          "source_id": "TP64",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1990035/201610/c2458312/content.html",
+          "source_file": "TP64.txt",
+          "source_sha256": "3707112ce22bebafc10f48c5d8f9bb7fd66a2465787958e58fe299f2d9a9f5c1",
+          "source_lines": [
+            31,
+            33
+          ],
+          "quote": "三、预约定价安排适用于主管税务机关向企业送达接收其谈签意向的《税务事项通知书》之日所属纳税年度起3至5个年度的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "83d582deca14ba46657ae2f27795b25611039fc73f1bf50a75dffba3168d70ba"
+        },
+        {
+          "source_id": "TP64",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1990035/201610/c2458312/content.html",
+          "source_file": "TP64.txt",
+          "source_sha256": "3707112ce22bebafc10f48c5d8f9bb7fd66a2465787958e58fe299f2d9a9f5c1",
+          "source_lines": [
+            34,
+            34
+          ],
+          "quote": "四、预约定价安排一般适用于主管税务机关向企业送达接收其谈签意向的《税务事项通知书》之日所属纳税年度前3个年度每",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "810a6dfe22235adb325811d8275f87a66aa713f88183d6c1b3551872ec3ea0da"
+        }
+      ]
+    },
+    {
+      "id": "CN-TP-27",
+      "claim": "Treaty MAP requestedwithinactualtreatydeadline,receipt dates,procedural suspension is explicitly unconfirmed; no application-based deferral assumed;adjusted royalties do not ordinarily re-open withholding",
+      "section": "Cross-border",
+      "act_article": "6 arts42,47–48,56",
+      "sources": [
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            211,
+            211
+          ],
+          "quote": "第四十二条 税务机关对企业实施特别纳税调整，涉及企业向境外关联方支付利息、租金、特许权使用费的，除另有规定外，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "65dad95296a32d6adcdb1e37ffcd6a526c76db58d097146a00a72b59402e2ae2"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            221,
+            224
+          ],
+          "quote": "第四十七条 根据我国对外签署的税收协定的有关规定，国家税务总局可以依据企业申请或者税收协定缔约对方税务主管当局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4b89dbad5855dbe9f3e2b080001bba52078b8dee79269ebe4cf94d163a3514d4"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            225,
+            226
+          ],
+          "quote": "第四十八条 企业申请启动相互协商程序的，应当在税收协定规定期限内，向国家税务总局书面提交《启动特别纳税调整相互",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5e34c0145328a1bba9e124ae89403b7a1ed7fb271fc7895a5db1ed8a13189178"
+        },
+        {
+          "source_id": "TP6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "source_file": "TP6.txt",
+          "source_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "source_lines": [
+            248,
+            250
+          ],
+          "quote": "第五十六条 国家税务总局与税收协定缔约对方税务主管当局签署相互协商协议后，应当书面通知省税务机关，附送相互协商",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "37c96e6e9de63b5601c07a6df688877ef43181d648282ba08e6e18f83cd2c961"
+        }
+      ]
+    }
+  ],
+  "original_topics": [
+    [
+      "No prior Guide/slug in baseline",
+      "New TP route; no old country text deleted"
+    ]
+  ],
+  "line_convention": "Python str.splitlines(); complete context and hashes, not only quotation membership.",
+  "evidence_note": "Complete official source readers and full captured contexts are retained in the private country evidence. Public ledger retains operative citations, exact excerpts, source/reader hashes and captured line spans. Read the official linked unit; quote membership alone does not prove the rule."
+}

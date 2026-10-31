@@ -1,0 +1,862 @@
+{
+  "slug": "cn-cross-border",
+  "candidate_sha256": "5c76de948cba53af707d2734658ca32876d8c818a1b795d48aafc01c9e0c429e",
+  "rows": [
+    {
+      "id": "CN-XB-01",
+      "claim": "Individualdomicileor183daysresident/worldwidevsnonresChina-source;habitualresidencehukou/family/economicinterestsnotpassportalone",
+      "section": "Who",
+      "act_article": "IIT1;Reg2",
+      "sources": [
+        {
+          "source_id": "e056819faab82b3e",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+          "source_file": "e056819faab82b3e.txt",
+          "source_sha256": "459286821a5dcedaf7fd7e652c2e79d3f8871ac2b5c9d35de234a117ccf07ff5",
+          "source_lines": [
+            44,
+            46
+          ],
+          "quote": "第一条　在中国境内有住所，或者无住所而一个纳税年度内在中国境内居住累计满一百八十三天的个人，为居民个人。居民个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "95a208b6b6a9c39374f1a11451ed07e8dd1cdb896b5316ab75617d2dde9f7343"
+        },
+        {
+          "source_id": "6578413203601ac4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "source_file": "6578413203601ac4.txt",
+          "source_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "source_lines": [
+            58,
+            58
+          ],
+          "quote": "第二条　个人所得税法所称在中国境内有住所，是指因户籍、家庭、经济利益关系而在中国境内习惯性居住；所称从中国境内",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8edc46823a871de289a0dd89f3f9c8ec4c3b181b09f6f2d909465a78dbe122e7"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-02",
+      "claim": "Corporateresidenceincorporation/actualmanagement,overallbusiness/personnel/accounts/property;nonresidentestablishment/effectiveconnectionvsChina-source",
+      "section": "Who",
+      "act_article": "EIT2–3;Reg4–5",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            59,
+            61
+          ],
+          "quote": "第二条　企业分为居民企业和非居民企业。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9dcad92598a836df2f6641cc1fbfa8f6ca3774a2335a824e438e0d4659cd2aae"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            62,
+            64
+          ],
+          "quote": "第三条　居民企业应当就其来源于中国境内、境外的所得缴纳企业所得税。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "93dd0fe1130c09eadf6ff12a4c5b841a45717c9074e52266678ba903aa82260c"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            55,
+            55
+          ],
+          "quote": "第四条　企业所得税法第二条所称实际管理机构，是指对企业的生产经营、人员、账务、财产等实施实质性全面管理和控制的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "63bd1af89f69a4876c25bebadb3a426c8733730ef2ad8cf2ca82c817a4093d9b"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            56,
+            62
+          ],
+          "quote": "第五条　企业所得税法第二条第三款所称机构、场所，是指在中国境内从事生产经营活动的机构、场所，包括：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "df0078c5ae54dc9dec327ea8e3d5750e8747a2f60bc0eb03b5eb3e0989235cae"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-03",
+      "claim": "Nondomiciledsix-yearforeign-source+foreign-paidconcessionand>30daysreset;90daysdomesticworkexemptionfullforeignpay/noChinaburdenconditions",
+      "section": "Rates / Base",
+      "act_article": "IITReg4–5",
+      "sources": [
+        {
+          "source_id": "6578413203601ac4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "source_file": "6578413203601ac4.txt",
+          "source_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "source_lines": [
+            65,
+            65
+          ],
+          "quote": "第四条　在中国境内无住所的个人，在中国境内居住累计满183天的年度连续不满六年的，经向主管税务机关备案，其来源",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0cdca837de044dd0ea9573cc08a0b11347ce99d4d679029880565f32c9b6ffa3"
+        },
+        {
+          "source_id": "6578413203601ac4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "source_file": "6578413203601ac4.txt",
+          "source_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "source_lines": [
+            66,
+            66
+          ],
+          "quote": "第五条　在中国境内无住所的个人，在一个纳税年度内在中国境内居住累计不超过90天的，其来源于中国境内的所得，由境",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "557b6c9d299a720144c0d05e4599a2412cd20c89f688efb7fe7d9bf99e325150"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-04",
+      "claim": "No-domicileresidencedays24hours/countfrom2019,distinctworkdayallocation",
+      "section": "Base",
+      "act_article": "2019No34",
+      "sources": [
+        {
+          "source_id": "d1a3182cd6ca332e",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html",
+          "source_file": "d1a3182cd6ca332e.txt",
+          "source_sha256": "33acdce48f5fae29cbc7a431d020422e1c791868c34c132606620a38b012d2e0",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "关于在中国境内无住所的个人居住时间判定标准的公告",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "33acdce48f5fae29cbc7a431d020422e1c791868c34c132606620a38b012d2e0"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-05",
+      "claim": "Individualsourcebywork/property/rights/payernotbankaccount",
+      "section": "Base",
+      "act_article": "IITReg3",
+      "sources": [
+        {
+          "source_id": "6578413203601ac4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "source_file": "6578413203601ac4.txt",
+          "source_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "source_lines": [
+            59,
+            64
+          ],
+          "quote": "第三条　除国务院财政、税务主管部门另有规定外，下列所得，不论支付地点是否在中国境内，均为来源于中国境内的所得：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8a8cb4a12cb9990ae1feffdd98216f2420231992469a800ffeb73bba2867df90"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-06",
+      "claim": "Individualcategory/countrycreditlimits,comprehensiveincomeamountproportion;qualifyingpaidforeignincome-tax exclusions,proof,taxsparing,5yearcarry",
+      "section": "Base / Examples",
+      "act_article": "IIT7;2020No3§§3–6,9–10",
+      "sources": [
+        {
+          "source_id": "e056819faab82b3e",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+          "source_file": "e056819faab82b3e.txt",
+          "source_sha256": "459286821a5dcedaf7fd7e652c2e79d3f8871ac2b5c9d35de234a117ccf07ff5",
+          "source_lines": [
+            88,
+            88
+          ],
+          "quote": "第七条　居民个人从中国境外取得的所得，可以从其应纳税额中抵免已在境外缴纳的个人所得税税额，但抵免额不得超过该纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0a644076c03e29df9ef1fad1c88f65af01bdc59b4b4e5338e95c5544737804fd"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            62,
+            67
+          ],
+          "quote": "三、居民个人在一个纳税年度内来源于中国境外的所得，依照所得来源国家（地区）税收法律规定在中国境外已缴纳的所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4f425f05060bd3bbcc3439aefca9a02e6b3ba0cb138f3623f220f90b9ddef111"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            68,
+            73
+          ],
+          "quote": "四、可抵免的境外所得税税额，是指居民个人取得境外所得，依照该所得来源国（地区）税收法律应当缴纳且实际已经缴纳的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6f5de64090b3f45d1c1ef2f0032f4eb19b687e9e7ca4b12a1ddad5ef2600d201"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            74,
+            74
+          ],
+          "quote": "五、居民个人从与我国签订税收协定的国家（地区）取得的所得，按照该国（地区）税收法律享受免税或减税待遇，且该免税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "218b05f652629692f938bb2a3b3b33baa5f50121bb6f2616b2eeb9c9d420ae2a"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            75,
+            75
+          ],
+          "quote": "六、居民个人一个纳税年度内来源于一国（地区）的所得实际已经缴纳的所得税税额，低于依照本公告第三条规定计算出的来",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f7c8b6ca3e63fc6f50c9377ff5aab6746511d89c51f1ae6d7dfab186b7619fb4"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            78,
+            78
+          ],
+          "quote": "九、居民个人取得境外所得的境外纳税年度与公历年度不一致的，取得境外所得的境外纳税年度最后一日所在的公历年度，为",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ecf4f499e98f72b1f99c46f313ffb49f9b8d1294e7aa3ee695cddc7680fb11e9"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            79,
+            81
+          ],
+          "quote": "十、居民个人申报境外所得税收抵免时，除另有规定外，应当提供境外征税主体出具的税款所属年度的完税证明、税收缴款书",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5e23043878af810ce1d0fc3b49299663f3dcd23466a9054f672d7c5ad1963dec"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-07",
+      "claim": "Foreignbranchincomeevenunremitted,residentadjustment/source,andforeignlossseparatefromdomestic",
+      "section": "Base",
+      "act_article": "EIT3,17–18;Reg7;125§3",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            62,
+            64
+          ],
+          "quote": "第三条　居民企业应当就其来源于中国境内、境外的所得缴纳企业所得税。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "93dd0fe1130c09eadf6ff12a4c5b841a45717c9074e52266678ba903aa82260c"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            117,
+            117
+          ],
+          "quote": "第十七条　企业在汇总计算缴纳企业所得税时，其境外营业机构的亏损不得抵减境内营业机构的盈利。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "38dc68b116fbeb0e40196a2d958a4e204c6cf1d1cc55e7410697f43d2659419e"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            118,
+            118
+          ],
+          "quote": "第十八条　企业纳税年度发生的亏损，准予向以后年度结转，用以后年度的所得弥补，但结转年限最长不得超过五年。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4336c13492f0d8ddb0405bb29c875cdfdb1bdbcc6f170429e9e058e94cc55097"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            64,
+            70
+          ],
+          "quote": "第七条　企业所得税法第三条所称来源于中国境内、境外的所得，按照以下原则确定：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c23bbc618559d921bf9a74f5d20c3b616b6938d4e5862b10d1bbb1492a49c4a1"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            56,
+            62
+          ],
+          "quote": "三、企业应就其按照实施条例第七条规定确定的中国境外所得（境外税前所得），按以下规定计算实施条例第七十八条规定的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d67af3476e3273d68042c134b3412172ba949017736c62383f2296c000605b22"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-08",
+      "claim": "Corporateordinary25%,direct/indirectcreditdefinitions,basketlimitand5followingyears",
+      "section": "Rates / Base / Example2",
+      "act_article": "EIT4,23–24;Reg77–80;125§§4–9",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            65,
+            67
+          ],
+          "quote": "第四条　企业所得税的税率为25％。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "218d3cba2f59f176df3b0b71c05a398f24cad67a63b0cfde3d24954be0feb45c"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            127,
+            129
+          ],
+          "quote": "第二十三条　企业取得的下列所得已在境外缴纳的所得税税额，可以从其当期应纳税额中抵免，抵免限额为该项所得依照本法",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a377dc5e020cf87789258a835ef14ac076ae59d9e2c0fb267e47eecab460d906"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            130,
+            131
+          ],
+          "quote": "第二十四条　居民企业从其直接或者间接控制的外国企业分得的来源于中国境外的股息、红利等权益性投资收益，外国企业在",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2b16a35b60f889e2db0ecc56e997a8c007c16ab97373479a12889585cbe87137"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            224,
+            224
+          ],
+          "quote": "第七十七条　企业所得税法第二十三条所称已在境外缴纳的所得税税额，是指企业来源于中国境外的所得依照中国境外税收法",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bc5ca64417f82fa7823ab034ae6a91735cc6553927ac6747692bb03586c6c89b"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            225,
+            226
+          ],
+          "quote": "第七十八条　企业所得税法第二十三条所称抵免限额，是指企业来源于中国境外的所得，依照企业所得税法和本条例的规定计",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4637259315b5be21bdbaee8d870da785da2a0f404fc4d01e6257b0f2d668b2b5"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            227,
+            227
+          ],
+          "quote": "第七十九条　企业所得税法第二十三条所称5个年度，是指从企业取得的来源于中国境外的所得，已经在中国境外缴纳的企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c978699ca01460b1ae56dcc52dfe70d633bc9fb4b965ed72227e648c21827864"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            63,
+            69
+          ],
+          "quote": "四、可抵免境外所得税税额，是指企业来源于中国境外的所得依照中国境外税收法律以及相关规定应当缴纳并已实际缴纳的企",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8ad2c8c29df4ec8537c152c39da0a60f5e0266b6f8f3f1d9acce4fa40d340842"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            77,
+            80
+          ],
+          "quote": "八、企业应按照企业所得税法及其实施条例和本通知的有关规定分国（地区）别计算境外税额的抵免限额。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ba7a6e9e9cdde927b7504e4850febb2e36e89538f49309b7857a04a2e6221331"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            81,
+            81
+          ],
+          "quote": "九、在计算实际应抵免的境外已缴纳和间接负担的所得税税额时，企业在境外一国（地区）当年缴纳和间接负担的符合规定的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8051845c5418aa61eeaef318d3d3471e80955ed7bb775f6e5ceb9e0f14354bdd"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-09",
+      "claim": "Corporatebasketchoice5yearlock,newmethodpreservesremainingcarry;20%specifiedownershipfiveforeigntiers",
+      "section": "Rates / Base",
+      "act_article": "84§§1–2;125§§5–6modified",
+      "sources": [
+        {
+          "source_id": "CIT-FTC84",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202488/content.html",
+          "source_file": "CIT-FTC84.txt",
+          "source_sha256": "72825587819a6d94e651d7e8452db93dfa65a09bf2ca27ea9d834bd90864a9ae",
+          "source_lines": [
+            50,
+            51
+          ],
+          "quote": "一、企业可以选择按国（地区）别分别计算（即“分国（地区）不分项”），或者不按国（地区）别汇总计算（即“不分国（",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "02907a6a4da7b929b06ddf3369fbd69d9521bafd91e250584dc72a1dc30ecfe8"
+        },
+        {
+          "source_id": "CIT-FTC84",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5202488/content.html",
+          "source_file": "CIT-FTC84.txt",
+          "source_sha256": "72825587819a6d94e651d7e8452db93dfa65a09bf2ca27ea9d834bd90864a9ae",
+          "source_lines": [
+            52,
+            54
+          ],
+          "quote": "二、企业在境外取得的股息所得，在按规定计算该企业境外股息所得的可抵免所得税额和抵免限额时，由该企业直接或者间接",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "dfc2d838959d61427007783d27c1d649b8b63e0f79fecbe2a480aa5b9e9b5807"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            70,
+            71
+          ],
+          "quote": "五、居民企业在按照企业所得税法第二十四条规定用境外所得间接负担的税额进行税收抵免时，其取得的境外投资收益实际间",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "99e7cd8b7b62bccc2ff842d8a8f31ba2894b03e89dffb1786f5f243d3d0ad1a0"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-10",
+      "claim": "Corporatecreditsimplified/taxsparingnotautomatic12.5%orforeignheadlinerate",
+      "section": "Base / Limits",
+      "act_article": "125§§7,10",
+      "sources": [
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            76,
+            76
+          ],
+          "quote": "七、居民企业从与我国政府订立税收协定（或安排）的国家（地区）取得的所得，按照该国（地区）税收法律享受了免税或减",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "08046e99646531ae698d81066ebbb531fb3fe37ba6ffd15d4cde9142537f046a"
+        },
+        {
+          "source_id": "CIT-FTC125",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203574/content.html",
+          "source_file": "CIT-FTC125.txt",
+          "source_sha256": "6ea56ce08699133d05909ec2914ef2f8f523da4e5f3f507ad2a9877b0cb0285c",
+          "source_lines": [
+            82,
+            86
+          ],
+          "quote": "十、属于下列情形的，经企业申请，主管税务机关核准，可以采取简易办法对境外所得已纳税额计算抵免：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c81d0ea4bc658f9856195319e27b52e6f3baaaf4ab9e1a70caacb02e852c5fba"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-11",
+      "claim": "ResidentindividualforeignincomeMar–Junfollowingyear,competentoffice;emigrationhukoucancellationpreclearance",
+      "section": "Deadlines",
+      "act_article": "IIT10,13;2020No3§§7–8",
+      "sources": [
+        {
+          "source_id": "e056819faab82b3e",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+          "source_file": "e056819faab82b3e.txt",
+          "source_sha256": "459286821a5dcedaf7fd7e652c2e79d3f8871ac2b5c9d35de234a117ccf07ff5",
+          "source_lines": [
+            96,
+            104
+          ],
+          "quote": "第十条　有下列情形之一的，纳税人应当依法办理纳税申报：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fa6a2828f5f54559516a7a7d82730a9f563ceee4be435fd9d321f2429f0b20ef"
+        },
+        {
+          "source_id": "e056819faab82b3e",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+          "source_file": "e056819faab82b3e.txt",
+          "source_sha256": "459286821a5dcedaf7fd7e652c2e79d3f8871ac2b5c9d35de234a117ccf07ff5",
+          "source_lines": [
+            110,
+            114
+          ],
+          "quote": "第十三条　纳税人取得应税所得没有扣缴义务人的，应当在取得所得的次月十五日内向税务机关报送纳税申报表，并缴纳税款",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "96a68fb1b6c27438512595b5443711275de0734830a80e2307ba6c89e09eb391"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            76,
+            76
+          ],
+          "quote": "七、居民个人从中国境外取得所得的，应当在取得所得的次年3月1日至6月30日内申报纳税。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "022417a91750810b2ddc9107c5b0de9fe0d6cb342a9f05053e8ca1b0b685df31"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            77,
+            77
+          ],
+          "quote": "八、居民个人取得境外所得，应当向中国境内任职、受雇单位所在地主管税务机关办理纳税申报；在中国境内没有任职、受雇",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "19434fbaaa1b047abbaaba75e090467e5149319c67584c809f9fc28284eaff47"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-12",
+      "claim": "Enterprise5monthsannual,currenttermination60daysandliquidationfilingbeforetaxderegistration",
+      "section": "Deadlines",
+      "act_article": "EIT54–55",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            182,
+            185
+          ],
+          "quote": "第五十四条　企业所得税分月或者分季预缴。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "63b25c73cbc81dc840d768fecb5f3a5b959238e124b2b1a0fa38df9555445a93"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            186,
+            187
+          ],
+          "quote": "第五十五条　企业在年度中间终止经营活动的，应当自实际经营终止之日起六十日内，向税务机关办理当期企业所得税汇算清",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "91c8adcbeffea32fd44c31b07051d26513e6b6cf238e94df70bc78620bbc7d47"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-13",
+      "claim": "Late0.05%dailystatutoryconditions,separatefiling/fraud/orderednonpayment/withholdingtriggers",
+      "section": "Penalties",
+      "act_article": "Collection32,60,62–64,68–69",
+      "sources": [
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            121,
+            121
+          ],
+          "quote": "第三十二条　纳税人未按照规定期限缴纳税款的，扣缴义务人未按照规定期限解缴税款的，税务机关除责令限期缴纳外，从滞",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b3918dbfa3c6c86e8701a063cd11971929d5d06bb7eaefcbc01cb65d27a7f974"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            179,
+            186
+          ],
+          "quote": "第六十条　纳税人有下列行为之一的，由税务机关责令限期改正，可以处二千元以下的罚款；情节严重的，处二千元以上一万",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2a52ba5e09e0f59b783149a037d917ff410f3b4b984cc7c8dfa29d01ca4165fe"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            188,
+            188
+          ],
+          "quote": "第六十二条　纳税人未按照规定的期限办理纳税申报和报送纳税资料的，或者扣缴义务人未按照规定的期限向税务机关报送代",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f6a2e281fe2afdf024121e26714ea0b67efdf2a34c9cbc3de5b1dbf96f9f29ea"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            189,
+            190
+          ],
+          "quote": "第六十三条　纳税人伪造、变造、隐匿、擅自销毁帐簿、记帐凭证，或者在帐簿上多列支出或者不列、少列收入，或者经税务",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5513c47627cd145c13d66dc321ab93a0c872ea171a76a04817600e5be7a0d885"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            191,
+            192
+          ],
+          "quote": "第六十四条　纳税人、扣缴义务人编造虚假计税依据的，由税务机关责令限期改正，并处五万元以下的罚款。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "10cf6e6f0b0a75dab3ad097089a33259c2ccc81e6e7a2d133bf9a7da51f285e4"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            197,
+            197
+          ],
+          "quote": "第六十八条　纳税人、扣缴义务人在规定期限内不缴或者少缴应纳或者应解缴的税款，经税务机关责令限期缴纳，逾期仍未缴",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4832d9beb93e84f8f83efad84b3cba2dc078932c52fdec110b3af00d23dd67cd"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            198,
+            198
+          ],
+          "quote": "第六十九条　扣缴义务人应扣未扣、应收而不收税款的，由税务机关向纳税人追缴税款，对扣缴义务人处应扣未扣、应收未收",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6e9323ab534f3370559a7af65bdbbf4b76245258378a4ba0e6c26c866db86ae2"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-14",
+      "claim": "Treatyselfassessment/reporting/proofdistinctdomesticresidence,nodefaultdestinationresult",
+      "section": "Cross-border",
+      "act_article": "35arts2–8",
+      "sources": [
+        {
+          "source_id": "Treaty35",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+          "source_file": "Treaty35.txt",
+          "source_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+          "source_lines": [
+            52,
+            52
+          ],
+          "quote": "第二条在中国境内发生纳税义务的非居民纳税人需要享受协定待遇的，适用本办法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0076b0d6ce6e0eba357721e253d789d7d023690509c9ddf980028209c4974d3d"
+        },
+        {
+          "source_id": "Treaty35",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+          "source_file": "Treaty35.txt",
+          "source_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+          "source_lines": [
+            53,
+            53
+          ],
+          "quote": "第三条非居民纳税人享受协定待遇，采取“自行判断、申报享受、相关资料留存备查”的方式办理。非居民纳税人自行判断符",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e586e9f0f39034a5afe75948a9a06fec6bae4466db58cfb44f876c0909c6f4fe"
+        },
+        {
+          "source_id": "Treaty35",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+          "source_file": "Treaty35.txt",
+          "source_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+          "source_lines": [
+            60,
+            60
+          ],
+          "quote": "第五条非居民纳税人自行申报的，自行判断符合享受协定待遇条件且需要享受协定待遇，应在申报时报送《非居民纳税人享受",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d86d6f0c925db15b29a11282166025941ab3bfa834b557e41f60e2a956e03cb1"
+        },
+        {
+          "source_id": "Treaty35",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+          "source_file": "Treaty35.txt",
+          "source_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+          "source_lines": [
+            69,
+            69
+          ],
+          "quote": "第八条非居民纳税人对《非居民纳税人享受协定待遇信息报告表》填报信息和留存备查资料的真实性、准确性、合法性承担法",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6e836c851d28dff1086d6c8e9f9a68ff014da72499d257edc9d7d747386717df"
+        }
+      ]
+    },
+    {
+      "id": "CN-XB-15",
+      "claim": "Example1incomeamount500k,base400k,tax68080,countrylimit13616,excess6384,Chinaaftercredit54464;conditionsactualdeductions/paidtax",
+      "section": "Examples",
+      "act_article": "IITcomprehensiverates;2020No3§§3,6",
+      "sources": [
+        {
+          "source_id": "1bfc01893fedef98",
+          "official_url": "https://guangdong.chinatax.gov.cn/gdsw/fssw_nsrxt_kjxz/2025-10/09/content_b02be06c906e46bca00673beb9e7783a.shtml",
+          "source_file": "1bfc01893fedef98.txt",
+          "source_sha256": "fbb201b3cd1caf151c08608b3652198d0e1fa592e4a3dca12e1c4158cacdc87e",
+          "source_lines": [
+            1,
+            233
+          ],
+          "quote": "纳税人学堂 - 国家税务总局佛山市税务局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fbb201b3cd1caf151c08608b3652198d0e1fa592e4a3dca12e1c4158cacdc87e"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            62,
+            67
+          ],
+          "quote": "三、居民个人在一个纳税年度内来源于中国境外的所得，依照所得来源国家（地区）税收法律规定在中国境外已缴纳的所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4f425f05060bd3bbcc3439aefca9a02e6b3ba0cb138f3623f220f90b9ddef111"
+        },
+        {
+          "source_id": "4df181f65ba88456",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "source_file": "4df181f65ba88456.txt",
+          "source_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "source_lines": [
+            75,
+            75
+          ],
+          "quote": "六、居民个人一个纳税年度内来源于一国（地区）的所得实际已经缴纳的所得税税额，低于依照本公告第三条规定计算出的来",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f7c8b6ca3e63fc6f50c9377ff5aab6746511d89c51f1ae6d7dfab186b7619fb4"
+        }
+      ]
+    }
+  ],
+  "original_topics": [
+    [
+      "No prior national cross-border Guide/slug",
+      "New2026nationalroute;legacy2025China–Singaporecorridorpreservedunchangedandexcludedascurrentcompletionevidence."
+    ]
+  ],
+  "line_convention": "Python str.splitlines(); complete context and hashes, not only quotation membership.",
+  "evidence_note": "Complete official source readers and full captured contexts are retained in the private country evidence. Public ledger retains operative citations, exact excerpts, source/reader hashes and captured line spans. Read the official linked unit; quote membership alone does not prove the rule."
+}
