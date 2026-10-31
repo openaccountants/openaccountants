@@ -1,0 +1,19 @@
+{
+ "status":"writer_cases_pending_independent_review",
+ "cases":[
+  {"facts":"otherwise eligible principal activity, turnover7500","expected":"first subgroup; authority decision needed"},
+  {"facts":"otherwise eligible principal activity, turnover7500.01","expected":"second subgroup; no calculation of pausal tax from arbitrary actual turnover"},
+  {"facts":"otherwise eligible principal activity, turnover15000","expected":"second subgroup"},
+  {"facts":"otherwise eligible principal activity, turnover22500","expected":"third subgroup"},
+  {"facts":"otherwise eligible principal activity, turnover30000","expected":"fourth subgroup, subject to all other gates"},
+  {"facts":"turnover30000.01","expected":"fails statutory pausal turnover test"},
+  {"facts":"supplementary entrepreneurship, turnover5000","expected":"no principal-activity pausal entitlement"},
+  {"facts":"VAT-registered principal entrepreneur","expected":"no pausal"},
+  {"facts":"accountant, turnover5000","expected":"professional exclusion; low turnover does not cure it"},
+  {"facts":"kiosk selling bought-in goods","expected":"own-product statutory exception not met"},
+  {"facts":"company pays occasional-work fee","expected":"payer withholding under48a; not nonwithheld domestic H income"},
+  {"facts":"foreign occasional-work income in F","expected":"income in column5; foreign tax in column6; do not follow contradictory prose or duplicate income in H"},
+  {"facts":"domestic multiple-employer earnings","expected":"G plus OPD-2 and authority decision; not foreign-salary main2.1"},
+  {"facts":"foreign gambling after21May2026","expected":"current statutory12% rate; printed2025 pooled15% mapping remains unresolved"}
+ ]
+}

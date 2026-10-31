@@ -1,0 +1,47 @@
+[
+  {
+    "id": "B-IRPF-regulation",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_47_2014.pdf/c17e2f7e-e4dd-789c-235e-21add02afe5e?t=1710491329241",
+    "raw_sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "reader_sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "independent_raw_reextraction_byte_equal": true,
+    "independently_read_complete_article11_lines": [
+      552,
+      598
+    ],
+    "complete_context_sha256": "13af857ab0f73e250e5157491d16261e27c42fcb41b9a9432019a434b462744f",
+    "annual_days_wording_present": true,
+    "part_year_substitution_printed_in_examined_article": false,
+    "source_retrieval_attribution": "Fresh retrieval31Oct by writer; reviewer independently read and verified raw/extracted bytes, not own refetch."
+  },
+  {
+    "id": "A-IRPF-regulation",
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento_irpf_cas-2-pdf",
+    "raw_sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "reader_sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "independent_raw_reextraction_byte_equal": true,
+    "independently_read_complete_article11_lines": [
+      466,
+      514
+    ],
+    "complete_context_sha256": "94662d419e5c6de2f8e97501ae24cfebf6d6395b21366f5f44575a3b846d36fe",
+    "annual_days_wording_present": true,
+    "part_year_substitution_printed_in_examined_article": false,
+    "source_retrieval_attribution": "Fresh retrieval31Oct by writer; reviewer independently read and verified raw/extracted bytes, not own refetch."
+  },
+  {
+    "id": "G-IRPF-regulation",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0755457E7/DF%2033-2014%20(2026-2).pdf/7e4c25eb-a139-fa5f-d310-deaa4c4bcffd",
+    "raw_sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "reader_sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "independent_raw_reextraction_byte_equal": true,
+    "independently_read_complete_article11_lines": [
+      1661,
+      1687
+    ],
+    "complete_context_sha256": "d50b1ce0de8b5f38d7459d3d66fbb163436292d5ac8464dfa6f82f5d966e310d",
+    "annual_days_wording_present": true,
+    "part_year_substitution_printed_in_examined_article": false,
+    "source_retrieval_attribution": "Fresh retrieval31Oct by writer; reviewer independently read and verified raw/extracted bytes, not own refetch."
+  }
+]

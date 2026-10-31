@@ -1,0 +1,36 @@
+{
+  "commit": "b18c0998da08c65eeb459d22d24dbce6f0ef146a",
+  "prior_rechecked_commit": "9ff07a816c1adafbb944598e2f2a8edca2c2f90f",
+  "exact_diff_files": [
+    "ledgers/montenegro-income-tax-evidence/repair-response.md",
+    "ledgers/montenegro-income-tax.md",
+    "ledgers/montenegro-income-tax.writer.json"
+  ],
+  "prior_input_hashes_unchanged_except": [
+    "ledgers/montenegro-income-tax-evidence/repair-response.md",
+    "ledgers/montenegro-income-tax.md",
+    "ledgers/montenegro-income-tax.writer.json"
+  ],
+  "writer_json_only_changes_two_quotes": true,
+  "ledger_markdown_only_changes_two_quotes": true,
+  "quote_repairs": [
+    {
+      "id": "ME-PIT-107",
+      "old_quote": "- u prvu podgrupu spadaju obveznici čiji promet iznosi do 7.500,00 €;",
+      "new_quote": "do 15.000,00       do 7.500,00 €                  0,00 €              825,00 €",
+      "article5_context_sha256": "b10f60ae47b80e1846c98b62f3425f3396181c7400c57e1bc4b82025d95f3540",
+      "quote_exact_in_correct_article": true,
+      "table_row_values_verified": true
+    },
+    {
+      "id": "ME-PIT-109",
+      "old_quote": "- u drugu podgrupu spadaju obveznici čiji promet iznosi do 15.000,00 €;",
+      "new_quote": "do 30.000,00      do 15.000,00 €               774,00 €             2.424,00 €",
+      "article5_context_sha256": "b10f60ae47b80e1846c98b62f3425f3396181c7400c57e1bc4b82025d95f3540",
+      "quote_exact_in_correct_article": true,
+      "table_row_values_verified": true
+    }
+  ],
+  "guide_readme_sources_controls_originaltopics_all_unchanged": true,
+  "current_checkout_clean": true
+}

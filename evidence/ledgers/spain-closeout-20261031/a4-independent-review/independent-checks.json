@@ -1,0 +1,85 @@
+{
+  "reviewed_on": "2026-10-31",
+  "baseline_guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "candidate_guide_sha256": "fa181e424cf4030776d01acd1ccb05d13a601b83a69309ede919b5efdfac9ed7",
+  "baseline_ledger_sha256": "75f77f9a374ee3730b7d061e2b30cc7228294dcaca5f8135e33e534c71de2aca",
+  "candidate_ledger_sha256": "766e76aef0953a25503a402fdfe133468152d6238c1f13886ad834625211e4ff",
+  "ledger_addition_sha256": "904e2e58299cc6bde3eb9161b9689cb34e8fa2731ee12d80944e8b0a617e91c0",
+  "original_ledger_exact_prefix": true,
+  "new_delta_groups": [
+    "A4-01",
+    "A4-02",
+    "A4-03",
+    "A4-04",
+    "A4-05",
+    "A4-06",
+    "A4-07"
+  ],
+  "all_predecessor_nonblank_lines": 677,
+  "exact_line_retention_count": 673,
+  "reviewed_replacements": {
+    "17": "date increased",
+    "18": "version increased",
+    "61": "absence-of-method assertion replaced; all other day/private-travel/source text retained",
+    "970": "only missing denominator bridge replaced; other boundaries exact"
+  },
+  "all_predecessor_destinations_valid": true,
+  "predecessor_map_sha256": "3bdcfed1a868cd799c167b5b16f159b87d1799489719b8d13410a2d012f54c7d",
+  "whole_existing_examples_section_sha256": "21a00b28b77122260f11358d00de6af2c64e305aace15eb3d25316ddd006ae87",
+  "whole_examples_section_unchanged": true,
+  "oa_blocks_unchanged": true,
+  "actual_example_test": "checked1file;2oa-checkblocks;0failures;0missing",
+  "frontmatter_only_date_version_changes": true,
+  "cta_status": "Absent before and after; no missing preexisting CTA",
+  "all5_control_groups_pass": true,
+  "local_link_targets": {
+    "Guide controls": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/foreign-assignment-controls.md",
+      "exists": true
+    },
+    "Ledger source contexts": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/source-contexts.json",
+      "exists": true
+    },
+    "Ledger predecessor destinations": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/old-topic-destinations.json",
+      "exists": true
+    }
+  },
+  "legal_computation_verdict": "PASS_BOUNDED_LABELLED_OWN_TEXT_METHOD",
+  "A4_method_gap_closed_if_published_with_evidence": true,
+  "publication_verdict": "PASS_EXACT_CANDIDATE_AND_SUPPORT_PACKAGE",
+  "other_A_blockers": [
+    "A1",
+    "A2",
+    "A3"
+  ],
+  "accountant_attestation": false,
+  "country_complete": false,
+  "harness_erratum": "Initial transient harness assumed an existing CTA header and stopped with ValueError. Inspection showed no preexisting CTA. This harness checks faithful absence and makes no false CTA preservation claim.",
+  "linked_controls_actual_test": "checked 1 files, 5 oa-check blocks, 0 failures, 0 missing",
+  "support_files": {
+    "writer-controls.json": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/writer-controls.json",
+      "sha256": "7f52185acc9cc1d6f793b628e95c3b5929721e30c031ee2c5b3bfc2ec6e3e3b9"
+    },
+    "old-topic-destinations.json": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/old-topic-destinations.json",
+      "sha256": "3bdcfed1a868cd799c167b5b16f159b87d1799489719b8d13410a2d012f54c7d"
+    },
+    "source-contexts.json": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/source-contexts.json",
+      "sha256": "883b03c0a0cc29e75fe8c61fa1d1b32380a2d8b1821daa32946079fcdad21498"
+    },
+    "foreign-assignment-controls.md": {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/spain-closeout-2026-10-31/repository/ledgers/spain-closeout-20261031/foreign-assignment-controls.md",
+      "sha256": "770234be321339cfd22f96c4291b462cac04d6fddeeb75d24d0e3843ccfefb79"
+    }
+  },
+  "packaging_finding": {
+    "id": "F-A4-01",
+    "status": "RESOLVED",
+    "description": "Initially missing linked control/context/destination targets materialized by writer; reviewer verified actual content and all five executable controls. Candidate Guide and ledger hashes unchanged."
+  },
+  "raw_pdf_location_scope": "Reviewer verified exact fresh full raw PDFs at W/sources. source-contexts.json contains official URLs and raw hashes, not missing local-PDF path references. No broken raw-source local path is introduced by this candidate."
+}

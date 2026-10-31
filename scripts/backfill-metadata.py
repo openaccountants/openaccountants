@@ -21,19 +21,19 @@ What gets backfilled (missing keys only):
                 The exact tier-1 file list is printed in the report.
 
   jurisdiction  Derived from the path only where unambiguous:
-                - skills/us-states/<code>/*            -> US-<CODE>
-                - skills/federal/*, packages/us-federal/* -> US
-                - skills/international/<dir>/*         -> the jurisdiction
+                - skills/us/states/<code>/*            -> US-<CODE>
+                - skills/us/federal/*, packages/us-federal/* -> US
+                - skills/<country>/*                   -> the jurisdiction
                   code sibling files in the SAME dir already use; a
                   country-name->ISO-3166 dict covers dirs with no sibling
                   convention; genuinely ambiguous dirs are left + reported
-                  (skills/international/eu — a shared EU-wide base, not a
+                  (skills/eu — a shared EU-wide base, not a
                   country).
                 - skills/orchestrator/*                -> sibling filename
                   convention: <code>-… prefix (gb-* -> GB, us-ny-* -> US-NY),
                   so au-/ca-/de-/es-/in-/mt- -> AU/CA/DE/ES/IN/MT,
                   us-ca-* -> US-CA, us-federal-* -> US.
-                - skills/patterns/*                    -> dir convention
+                - skills/foundation/patterns/*                    -> dir convention
                   (all jurisdiction-bearing siblings say GLOBAL).
                 - skills/cross-border/*.md             -> nearest sibling
                   convention, per-file (EU-directive content -> EU-27 like
@@ -42,9 +42,9 @@ What gets backfilled (missing keys only):
                   every other matrix sibling).
                 - skills/foundation/us-tax-workflow-base.md -> US (the one
                   jurisdiction-specific file in an otherwise GLOBAL dir; the
-                  us- filename prefix convention matches skills/federal).
+                  us- filename prefix convention matches skills/us/federal).
                 Dirs whose existing convention is "no jurisdiction key"
-                (skills/cross-border/treaty-corridors, skills/intelligence,
+                (skills/cross-border/treaty-corridors, skills/foundation/intelligence,
                 skills/templates) are LEFT ALONE and reported — we do not
                 invent a convention.
 
@@ -63,6 +63,9 @@ import re
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from repo_layout import TOPIC_DIRS  # noqa: E402
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
 
@@ -70,7 +73,7 @@ BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
 # scripts/build-index.py uses for the accountant_reviewed count).
 UNREVIEWED_MARKERS = {"pending", "none", "no", "false", "-", "n/a", "tbd"}
 
-# skills/international/<dir> -> ISO-3166 alpha-2, used ONLY when no sibling
+# skills/<country> -> ISO-3166 alpha-2, used ONLY when no sibling
 # file in the dir already carries a jurisdiction value.
 COUNTRY_CODES = {
     "andorra": "AD",
@@ -122,9 +125,9 @@ FILE_JURISDICTION = {
 # "no jurisdiction key" (or, for international/eu, no single country applies).
 LEAVE_DIRS = {
     "skills/cross-border/treaty-corridors",
-    "skills/intelligence",
+    "skills/foundation/intelligence",
     "skills/templates",
-    "skills/international/eu",
+    "skills/eu",
 }
 
 KEY_LINE_RES = {
@@ -178,17 +181,17 @@ def derive_jurisdiction(rel, sibling_values):
         return None, "outside known trees"
 
     tree = parts[1]
-    if tree == "federal":
-        return "US", "skills/federal -> US"
-    if tree == "us-states" and len(parts) >= 4:
-        return "US-" + parts[2].upper(), "skills/us-states/<code> -> US-<CODE>"
-    if tree == "international" and len(parts) >= 4:
+    if parts[1:3] == ["us", "federal"]:
+        return "US", "skills/us/federal -> US"
+    if parts[1:3] == ["us", "states"] and len(parts) >= 5:
+        return "US-" + parts[3].upper(), "skills/us/states/<code> -> US-<CODE>"
+    if tree not in TOPIC_DIRS and len(parts) >= 3:
         siblings = sibling_values.get(dirname, set())
         if len(siblings) == 1:
             return next(iter(siblings)), "sibling convention in same dir"
         if len(siblings) > 1:
             return None, "ambiguous: siblings disagree (%s)" % ", ".join(sorted(siblings))
-        code = COUNTRY_CODES.get(parts[2])
+        code = COUNTRY_CODES.get(tree)
         if code:
             return code, "country-name -> ISO code (no sibling convention)"
         return None, "no sibling convention and no country mapping"

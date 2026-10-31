@@ -9,6 +9,19 @@ real jurisdiction which taxonomy domains are present and which are missing.
 Pseudo-codes (GLOBAL, INTL, EU variants, templates) are reported separately
 and never counted as jurisdictions.
 
+A pack is `complete` when no required domain is missing and every skill in a
+required domain is on the current tax year (2026, or a documented tax_year_notes;
+the same test as check_tax_year_current in scripts/skill_checks.py). Each
+jurisdiction also has one `state`, the next job it needs:
+
+    needs_writing    a required domain is missing (or marked partial)
+    needs_updating   a required domain's skill is on an old or missing tax year
+    needs_signature  current, but not every required skill is Accountant-reviewed
+    complete         current and every required skill is Accountant-reviewed
+
+So state `complete` is stricter than the `complete` flag, which does not ask for
+a signature.
+
 Owner, region and display name come from scripts/data/jurisdictions.json.
 A pack README.md with an `applicable:` / `not_applicable:` block narrows the
 domains that count as missing for that jurisdiction.
@@ -33,6 +46,9 @@ from datetime import date, datetime
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(REPO_ROOT, "scripts", "data", "jurisdictions.json")
+sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
+
+import skill_checks  # noqa: E402
 
 # Codes that are not jurisdictions. Canonical list; docs/COVERAGE.md points here.
 PSEUDO_CODES = {"NONE", "GENERAL", "GLOBAL", "INTL", "EU", "EU-27", "EU/EEA/CH/UK", "EG-AE", "EG-SA"}
@@ -59,6 +75,10 @@ DOMAIN_CODES = [d[0] for d in DOMAINS]
 
 STALE_DAYS = 365
 
+STATES = ["needs_writing", "needs_updating", "needs_signature", "complete"]
+#: Slug tokens that say "individuals" outright, so IT-IND stays even next to IT-CORP or VAT.
+INDIVIDUAL_TOKENS = {"individual", "individuals", "personal", "pit", "self-employed", "freelance", "capital-gain", "capital-gains"}
+
 
 def load_build_index():
     spec = importlib.util.spec_from_file_location("build_index", os.path.join(REPO_ROOT, "scripts", "build-index.py"))
@@ -84,6 +104,23 @@ def domains_of(guide):
         if category in category_hits or tokens & slug_hits:
             found.add(code)
     return found
+
+
+def cell_domains(guide, covered_by):
+    """The (domains, named) a skill fills in its country's grid.
+
+    `named` is the domains the README's covered_by gives this slug. domains_of()
+    tags IT-IND on the tokens `return` and `income-tax`, so `sk-corporate-income-tax`
+    and `slovakia-vat-return` land in IT-IND too. Harmless in a union, noise in a
+    cell, so a slug-only IT-IND is dropped when the same slug also carries IT-CORP
+    or VAT and the README does not say otherwise."""
+    domains = set(domains_of(guide))
+    named = {d for d, slug in covered_by.items() if slug == guide["slug"]}
+    domains |= named
+    if "IT-IND" in domains and "IT-IND" not in named and domains & {"IT-CORP", "VAT"} \
+            and not slug_tokens(guide["slug"]) & INDIVIDUAL_TOKENS:
+        domains.discard("IT-IND")
+    return domains, named
 
 
 def _domain_map(block, key):
@@ -137,6 +174,37 @@ def is_stale(guide, today):
     return (today - updated).days > STALE_DAYS
 
 
+def on_current_year(guide):
+    """check_tax_year_current on the skill file: the index does not carry tax_year_notes."""
+    path = os.path.join(REPO_ROOT, guide["path"])
+    with open(path, encoding="utf-8", errors="replace") as fh:
+        text = fh.read()
+    return not skill_checks.check_tax_year_current(path, text, skill_checks.read_frontmatter(text))
+
+
+def is_reviewed(guide):
+    return str(guide.get("tier")) == "1" and bool(guide.get("reviewed_by"))
+
+
+def required_guides(guides, required, covered_by):
+    """Skills that a required domain depends on. covered_by names the one skill
+    for its domain, so the others in that domain do not hold the pack back."""
+    out = []
+    for g in guides:
+        domains, _named = cell_domains(g, covered_by)
+        if any(covered_by.get(d, g["slug"]) == g["slug"] for d in domains & required):
+            out.append(g)
+    return out
+
+
+def pack_state(missing, outdated, unsigned):
+    if missing:
+        return "needs_writing"
+    if outdated:
+        return "needs_updating"
+    return "needs_signature" if unsigned else "complete"
+
+
 def build_report(today=None):
     today = today or date.today()
     bi = load_build_index()
@@ -167,6 +235,9 @@ def build_report(today=None):
         required = set(applicable) if applicable is not None else set(DOMAIN_CODES)
         required -= set(not_applicable)
         missing = sorted(required - present, key=DOMAIN_CODES.index)
+        in_scope = required_guides(guides, required, covered_by)
+        outdated = sorted(g["slug"] for g in in_scope if not on_current_year(g))
+        unsigned = sorted(g["slug"] for g in in_scope if not is_reviewed(g))
         rows.append({
             "code": code,
             "name": info.get("name") or code,
@@ -174,14 +245,17 @@ def build_report(today=None):
             "owner": info.get("owner") or "open",
             "dir": pack_dir,
             "skills": len(guides),
-            "reviewed": sum(1 for g in guides if str(g.get("tier")) == "1" and g.get("reviewed_by")),
+            "reviewed": sum(1 for g in guides if is_reviewed(g)),
             "stale": sum(1 for g in guides if is_stale(g, today)),
             "present": sorted(present, key=DOMAIN_CODES.index),
             "missing": missing,
             "not_applicable": not_applicable,
             "partial": partial,
             "has_readme": applicable is not None or bool(not_applicable),
-            "complete": not missing,
+            "outdated": outdated,
+            "unsigned": unsigned,
+            "complete": not missing and not outdated,
+            "state": pack_state(missing, outdated, unsigned),
         })
     # Jurisdictions listed in the data file but with no guide at all.
     for code, info in meta.items():
@@ -190,7 +264,7 @@ def build_report(today=None):
                 "code": code, "name": info.get("name") or code, "region": info.get("region") or "unassigned",
                 "owner": info.get("owner") or "open", "dir": info.get("dir") or "", "skills": 0, "reviewed": 0,
                 "stale": 0, "present": [], "missing": list(DOMAIN_CODES), "not_applicable": {}, "partial": {},
-                "has_readme": False, "complete": False,
+                "has_readme": False, "outdated": [], "unsigned": [], "complete": False, "state": "needs_writing",
             })
     rows.sort(key=lambda r: (r["owner"], r["region"], r["code"]))
     return {
@@ -199,6 +273,7 @@ def build_report(today=None):
         "jurisdictions": len(rows),
         "pseudo_codes": pseudo,
         "complete": sum(1 for r in rows if r["complete"]),
+        "states": {s: sum(1 for r in rows if r["state"] == s) for s in STATES},
         "with_readme": sum(1 for r in rows if r["has_readme"]),
         "reviewed_skills": index["counts"]["accountant_reviewed"],
         "rows": rows,
@@ -212,6 +287,7 @@ def summary_lines(report):
         f"Skills: {report['guides']:,}  Jurisdictions: {report['jurisdictions']}  "
         f"Complete packs: {report['complete']}  Packs with README: {report['with_readme']}  "
         f"Reviewed skills: {report['reviewed_skills']}",
+        "States: " + "  ".join(f"{k}: {v}" for k, v in report["states"].items()),
         f"Pseudo-codes (not jurisdictions): {', '.join(f'{k} ({v})' for k, v in sorted(report['pseudo_codes'].items()))}",
         "",
         f"{'Owner':<9}{'Juris':>6}{'Complete':>10}{'Thin(<=7)':>11}{'No skills':>11}{'Stale skills':>14}",
@@ -228,13 +304,13 @@ def summary_lines(report):
 
 def table_lines(rows, markdown=False):
     if markdown:
-        out = ["| Owner | Region | Code | Name | Skills | Reviewed | Stale | Missing domains |", "|---|---|---|---|---|---|---|---|"]
+        out = ["| Owner | Region | Code | Name | State | Skills | Reviewed | Stale | Missing domains |", "|---|---|---|---|---|---|---|---|---|"]
         for r in rows:
-            out.append(f"| {r['owner']} | {r['region']} | {r['code']} | {r['name']} | {r['skills']} | {r['reviewed']} | {r['stale']} | {', '.join(r['missing']) or 'none'} |")
+            out.append(f"| {r['owner']} | {r['region']} | {r['code']} | {r['name']} | {r['state']} | {r['skills']} | {r['reviewed']} | {r['stale']} | {', '.join(r['missing']) or 'none'} |")
         return out
-    out = [f"{'owner':<9}{'region':<13}{'code':<9}{'skills':>7}{'rev':>5}{'stale':>7}  missing"]
+    out = [f"{'owner':<9}{'region':<13}{'code':<9}{'state':<17}{'skills':>7}{'rev':>5}{'stale':>7}  missing"]
     for r in rows:
-        out.append(f"{r['owner']:<9}{r['region']:<13}{r['code']:<9}{r['skills']:>7}{r['reviewed']:>5}{r['stale']:>7}  {', '.join(r['missing']) or '-'}")
+        out.append(f"{r['owner']:<9}{r['region']:<13}{r['code']:<9}{r['state']:<17}{r['skills']:>7}{r['reviewed']:>5}{r['stale']:>7}  {', '.join(r['missing']) or '-'}")
     return out
 
 

@@ -1,0 +1,1024 @@
+{
+  "slug": "cn-vat",
+  "candidate_sha256": "61a510cb82232a776fb3474512f654646b7901ebf7fff2144555469c81fe9e29",
+  "rows": [
+    {
+      "id": "CN-CNVAT-01",
+      "claim": "## Scope and who this is for ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))\n\nThis skill covers mainland China value added tax for tax year 2026. It is for businesses, sole traders (个体工商户) and their advisers who prepare, review or classify VAT returns.\n\nThe big change for 2026 is that the **VAT Law of the People's Republic of China (中华人民共和国增值税法)** took effect on 1 January 2026. The NPC Standing Committee adopted it on 25 December 2024. Article 38 says the law applies from 2026-01-01 and that the Provisional Regulations (增值税暂行条例) are repealed on the same day (《中华人民共和国增值税暂行条例》\"同时废止\"). The State Council's **Implementation Regulations (增值税法实施条例, Decree No. 826)** also apply from 1 January 2026. The Ministry of Finance (MOF) and the State Taxation Administration (STA) have since issued announcements that carry over most earlier reliefs and practice. These are cited below.\n\nCurrency is CNY. Sales in foreign currency are converted to renminbi (Law Art. 18).\n\nOut of scope: Hong Kong, Macao and Taiwan; consumption tax; customs duty; VAT surcharges (附加税费), beyond noting that they are filed on the same form; and the detailed rules for financial institutions, real estate developers and cross-period construction projects (see \"When to refuse or refer\").",
+      "section": "Who this applies to / Scope and who this is for",
+      "act_article": "Article 38 says the law applies from 2026-01-01 and that the Provisional Regulations ( [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-02",
+      "claim": "## What changed on 1 January 2026 ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))\n\n| Topic | Rule from 2026-01-01 | Where |\n| --- | --- | --- |\n| Taxpayers | Units and individuals (including 个体工商户) that sell goods, services, intangibles or real estate in China, or that import goods | [Law Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Rates | 13%, 9%, 6% and 0% remain. The law lists which supplies take each rate | [Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Small-scale levy rate | Statutory 3%. Reduced to 1% from 2026-01-01 to 2027-12-31, except for selling or leasing real estate and transferring land use rights | [VAT Law Art. 11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 10 §3(3)(6)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Small-scale threshold | Annual taxable sales not over 500万元 (five million yuan) | [Law Art. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Sales threshold (起征点) | Below it, small-scale sales are exempt. Once it is reached, the **whole** amount is taxed. For 2026–2027: 10万元 (one hundred thousand yuan) a month, 30万元 (three hundred thousand yuan) a quarter, CNY 1,000 per transaction or day | [VAT Law Art. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 10 §1(1)–(2)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Deemed sales | Three cases only (see the method). Free services are not among them | [Law Art. 5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Non-taxable items | Wages, administrative fees and government funds, compensation for expropriation, and deposit interest | [Law Art. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Non-deductible input | Six statutory categories, now including catering, daily-life services and entertainment bought for consumption | [Law Art. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Liability date | The day payment is received or the right to payment arises. If the invoice is issued first, the invoice date | [Law Art. 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Filing periods | 10 days, 15 days, 1 month or 1 quarter. Returns are due within 15 days after the period ends | [Law Art. 30](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Exemptions | Nine statutory groups. Other reliefs apply only as the State Council provides | [Law Art. 24–25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Invoices | Paper and electronic invoices have the same legal effect | [Law Art. 34](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Excess input | Carry it forward, or apply for a refund as the State Council provides | [Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Foreign sellers | The buyer withholds, unless a domestic agent files | [Law Art. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n\nMany 2016-era circulars (for example 财税〔2016〕36号) used to be the legal basis for rates and exemptions. The domestic-stage VAT reliefs issued before 31 December 2025 stopped applying on 2026-01-01, except those No. 10 lists or keeps (\"在2025年12月31日前制发文件规定的国内环节增值税优惠政策同时停止执行\"). Before relying on an old circular, check that No. 10 carries it forward.",
+      "section": "Who this applies to / What changed on 1 January 2026",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "809e05a20b9ce8e0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+          "source_file": "809e05a20b9ce8e0.txt",
+          "source_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+          "source_lines": [
+            1,
+            365
+          ],
+          "quote": "一、增值税起征点标准",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-03",
+      "claim": "## Ask the client first\n\nSources: [VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [general taxpayer registration](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html).\n\n- Are you registered as a general taxpayer (一般纳税人), or are you a small-scale taxpayer (小规模纳税人)? What were your taxable sales over the last 12 months or four quarters?\n- Are you a company, a sole trader (个体工商户) or a natural person? Natural persons are always small-scale.\n- What filing period has the tax office set: a month, a quarter, 10 days or 15 days?\n- What do you sell? Are any sales exempt, at a different rate, or under the simplified method?\n- Do you export goods, or sell services or technology to overseas entities? Do you hold the customs declarations and contracts?\n- Do you buy services from foreign companies? If so, the buyer must withhold.\n- For purchases: do you hold special VAT invoices (增值税专用发票), import VAT payment certificates or other deduction vouchers? Have they been confirmed for deduction (用途确认) in the e-tax bureau?\n- Are any purchases used for staff welfare, entertainment, meals or loans, or for exempt or simplified-method items?\n- Did you give away goods, intangibles, real estate or financial products free of charge?\n- Did any invoice go out before you were paid? Were you paid before delivery?",
+      "section": "Ask the client first / Ask the client first",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "37b33d3c081d4aed",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+          "source_file": "37b33d3c081d4aed.txt",
+          "source_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9",
+          "source_lines": [
+            1,
+            90
+          ],
+          "quote": "一、增值税纳税人（以下简称纳税人）年应征增值税销售额超过增值税法规定的小规模纳税人标准（以下简称规定标准）的，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-04",
+      "claim": "## The method, step by step\n\n1. **Confirm the transaction is in scope and in China** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 3–4; [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html), Art. 4). A sale is taxable in China if one of these applies. For goods, they are dispatched from or located in China. For real estate or natural resource rights, the property is in China. For financial products, they are issued in China or the seller is domestic. For other services and intangibles, they are consumed in China or the seller is domestic. A foreign seller's service is \"consumed in China\" when it is sold to a domestic buyer, unless it is consumed on site abroad, or when it relates directly to goods, real estate or natural resources in China.\n2. **Take out non-taxable items** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 6; [MOF/STA announcement 2026 No. 25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html)). Wages and salaries, administrative fees and government funds collected, compensation for expropriation, and deposit interest are not taxable. MOF/STA announcement 2026 No. 25 adds more. It applies from 2026-09-01, and also to matters from 2026-01-01 to 2026-08-31 that have not yet been dealt with (\"2026年1月1日至2026年8月31日期间已发生未处理的事项，按照本公告规定执行\"). The following do **not** block input tax: insurance payouts received, donations received, penalties received when a contract fell through and no sale took place, free services (other than free transfers of financial products), transfers of receivables from your own sales, and subsidies not linked to sales. The following **do** block the related input tax (Reg. Art. 22): selling equity (other than securities), dividends, and futures without physical delivery.\n3. **Add deemed sales** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 5 and Art. 19). Only three cases are deemed sales: (1) a unit or 个体工商户 uses self-produced or commissioned goods for collective welfare or personal consumption; (2) a unit or 个体工商户 transfers goods free of charge; (3) a unit or individual transfers intangibles, real estate or financial products free of charge. Value them at market price. Free services are not a deemed sale (MOF/STA announcement 2026 No. 25 also treats them as not blocking input tax).\n4. **Fix the taxpayer status** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 9; [general taxpayer registration](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html)). A taxpayer whose annual taxable sales exceed 500万元 (five million yuan) must register as a general taxpayer. Annual sales means the cumulative taxable sales over a running period of up to 12 months or four quarters. Occasional sales of intangibles or real estate are left out. A smaller business may register voluntarily if its accounts are sound. Once registered, it cannot go back to small-scale status (Reg. Art. 36).\n5. **Pick the rate for each sale** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 10–13). Use the rate table below. Account separately for sales at different rates or levy rates, otherwise the highest rate applies (Art. 12). If one transaction has a main part and an ancillary part, the main part's rate applies to the whole (Art. 13; Reg. Art. 10).\n6. **Work out the taxable amount** ([Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html), Art. 15–17). The taxable amount is the full consideration, excluding the VAT itself. Where the price includes VAT, divide the VAT-inclusive price by (1 + rate) or by (1 + levy rate). For foreign currency, use the central parity rate on the day of the sale or on the 1st of the month. Once chosen, the method cannot change for 12 months.\n7. **Date the liability** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 28; [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html), Art. 39–41). The tax point is the day payment is received or the right to payment arises. That right arises on the payment date in the written contract. With no written contract, or none fixing a date, it is the day the sale is completed: goods dispatched, service finished, transfer done. If an invoice is issued first, the tax point is the invoice date. A deemed sale is taxed on the day it is completed. Imports are taxed on the customs declaration date. For exports, the export declaration date applies if it is earlier.\n8. **Compute output tax** (general method) or **tax payable** (simplified method) ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 8 and Art. 14). Under the general method, tax payable is current output tax minus current creditable input tax. Under the simplified method, tax payable is sales times the levy rate, with no input credit.\n9. **Collect and test input tax** ([Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html), Art. 11–12 and 19–25; [MOF/STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html)). Deduct only amounts shown on a lawful deduction voucher, and only for inputs not caught by Law Art. 22. Apportion mixed-use inputs (see below).\n10. **Handle excess input** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 21). Carry excess input forward, or apply for a refund where State Council rules allow it.\n11. **File and pay by the deadline for the period** ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html), Art. 30–31), and do the January true-up of apportioned input for the previous year (Reg. Art. 23).",
+      "section": "The base / The method, step by step",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "dd4e5b8990e6212d",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html",
+          "source_file": "dd4e5b8990e6212d.txt",
+          "source_sha256": "dfa9cddaab6176549d0ac886f5cf12e225b8d781f83a14844d781248d5ab336a",
+          "source_lines": [
+            1,
+            85
+          ],
+          "quote": "一、纳税人有下列情形的，不属于增值税法实施条例第二十二条所称不得抵扣非应税交易，对应的进项税额可以按规定从销项",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "dfa9cddaab6176549d0ac886f5cf12e225b8d781f83a14844d781248d5ab336a"
+        },
+        {
+          "source_id": "37b33d3c081d4aed",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+          "source_file": "37b33d3c081d4aed.txt",
+          "source_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9",
+          "source_lines": [
+            1,
+            90
+          ],
+          "quote": "一、增值税纳税人（以下简称纳税人）年应征增值税销售额超过增值税法规定的小规模纳税人标准（以下简称规定标准）的，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9"
+        },
+        {
+          "source_id": "6153f6024e1a44e7",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+          "source_file": "6153f6024e1a44e7.txt",
+          "source_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a",
+          "source_lines": [
+            1,
+            97
+          ],
+          "quote": "一、关于增值税进项税额抵扣",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-05",
+      "claim": "## Rates for tax year 2026 ([VAT Law Art. 10–11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 8–9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [scope notes, MOF/STA announcement 2026 No. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html))\n\n| Rate | What it covers (Law Art. 10) | Official provision |\n| --- | --- | --- |\n| 13% | Sales of goods, processing, repair and replacement services, and leasing of tangible movable property; imports of goods. Everything not listed at 9% or 0% | [VAT Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 9 annexes](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html) |\n| 9% | Transport, postal, basic telecom, construction and real estate leasing services; sales of real estate; transfers of land use rights. Sales or imports of: farm products, edible vegetable oil and edible salt; tap water, heating, cooling, hot water, gas, LPG, natural gas, dimethyl ether, biogas and household coal products; books, newspapers, magazines, audio-visual products and e-publications; feed, fertiliser, pesticides, farm machinery and agricultural film | [VAT Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 9 annexes](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html) |\n| 6% | Sales of services and intangibles not listed at 13%, 9% or 0%. This includes financial services, value-added telecom, IT, consulting, R&D, design, advertising, catering, accommodation and other consumer services | [VAT Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [2026 No. 9 annexes](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html) |\n| 0% | Exports of goods, unless the State Council provides otherwise. Cross-border sales of the services and intangibles listed in Reg. Art. 9 | [VAT Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Regulations Art. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) |\n| 3% levy rate | Simplified method (small-scale taxpayers, and general taxpayers where an election is allowed) (Law Art. 11) | [VAT Law Art. 11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n\nThe law's wording is \"税率为百分之十三\" (13%), \"税率为百分之九\" (9%), \"税率为百分之六\" (6%) and \"税率为零\" (zero). The exact scope of the 9% goods and of each service category is in the two annexes to MOF/STA announcement 2026 No. 9 (适用9%增值税税率货物范围注释; 销售服务、无形资产、不动产注释), in force from 2026-01-01.\n\n**Zero-rated services (Reg. Art. 9).** Only these qualify:\n- sold **to overseas entities** and **consumed entirely outside China**: R&D, energy performance contracting, design, film and TV production and distribution, software, circuit design and testing, information systems, business process management, and offshore outsourcing;\n- technology transferred to overseas entities and used entirely outside China;\n- international transport, space transport, and repair services for overseas parties (对外修理修配).\n\nA service not on this list, such as general management consulting or marketing for a foreign client, is not zero-rated. Check whether an exemption applies, or tax it at the normal rate.\n\n**Exported goods (Reg. Art. 8)** means goods declared to customs, physically leaving China and sold to an overseas entity or individual, plus goods the State Council deems exported.",
+      "section": "Rates, bands and thresholds / Rates for tax year 2026",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "6f3a4e8919b525df",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html",
+          "source_file": "6f3a4e8919b525df.txt",
+          "source_sha256": "a9198221d5700eafd9225c14229d1985670aedff40c5275e4634bf16970a6b2d",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "关于增值税征税具体范围有关事项的公告",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a9198221d5700eafd9225c14229d1985670aedff40c5275e4634bf16970a6b2d"
+        },
+        {
+          "source_id": "VAT9-services",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf",
+          "source_file": "VAT9-services.txt",
+          "source_sha256": "09958f9c44b81de9be2f6fa35102e1b1a0def4922253d04927e366de187fe6da",
+          "source_lines": [
+            1,
+            478
+          ],
+          "quote": "附件 2",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "1a6ce065cb59dc9d5cad56e4419a39c6e17e1a259356d79b92b514b6e87a8e76"
+        },
+        {
+          "source_id": "VAT9-goods",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248210711.pdf",
+          "source_file": "VAT9-goods.txt",
+          "source_sha256": "9f27af7645d49f0821341d64006816dbfd1e61551929f04baf020e4bb9b4a2b7",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "附件 1",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b2a86e8f3aabb03e70cbaa814197c65ee4a9e78b8172290b3c6f69b57cb4a9ed"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-06",
+      "claim": "## Small-scale taxpayers in 2026 ([VAT Law Art. 9, 11, 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html); [Implementation Regulations Art. 7, 43](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))\n\n| Item | 2026 figure | Source wording | Official provision |\n| --- | --- | --- | --- |\n| Small-scale threshold | Annual taxable sales not over 500万元 (five million yuan) | \"年应征增值税销售额未超过五百万元\" | [VAT Law Art. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Statutory levy rate | 3% | \"征收率为百分之三\" | [VAT Law Art. 11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Reduced levy rate, 2026-01-01 to 2027-12-31 | 1% on all taxable transactions except selling or leasing real estate and transferring land use rights | \"依照3%征收率减按1%征收率征收增值税\" | [2026 No. 10 §3(3)(6)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Prepaid items (预缴) in the same period | 1% prepayment rate once the prepayment-location total reaches the threshold | \"减按1%预征率预缴增值税\" | [2026 No. 10 §3(3)(6)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Individuals (not 个体工商户 registered as general taxpayers) renting out housing | 3% reduced to 1.5% | \"依照3%征收率减按1.5%计算缴纳增值税\" | [2026 No. 10 §3(3)(4)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Sales threshold, monthly filer | 10万元 (one hundred thousand yuan) of monthly sales | \"起征点为月销售额10万元\" | [2026 No. 10 §1(1)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Sales threshold, quarterly filer | 30万元 (three hundred thousand yuan) of quarterly sales | \"起征点为季度销售额30万元\" | [2026 No. 10 §1(1)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n| Sales threshold, per-transaction filer | CNY 1,000 per transaction (or per day) | \"起征点为每次（日）销售额1000元\" | [2026 No. 10 §1(2)](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html) |\n\nHow the threshold works: sales **below** it are exempt. Once sales **reach** it, VAT is due on the **whole** amount, not just the excess (Law Art. 23: \"达到起征点的，依照本法规定全额计算缴纳增值税\"). Where a small-scale taxpayer is allowed to deduct costs from sales, the threshold is tested on the net VAT-exclusive amount (No. 10).\n\nOther small-scale rules:\n- There is no input credit. Tax payable = sales × levy rate (Law Art. 14).\n- Natural persons are always small-scale. A non-business unit with occasional taxable sales may choose small-scale treatment (Reg. Art. 7).\n- Small-scale taxpayers may file quarterly (Reg. Art. 43).\n- **Invoicing under the 1% cut ([STA announcement 2026 No. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html), item 四).** Sales that take the reduced 1% must be invoiced at 1% (\"应当按照1%征收率开具增值税发票\"). A small-scale taxpayer may give up the reduction for all or some sales in order to issue special VAT invoices (\"小规模纳税人可以选择全部或者部分应税交易放弃减税并开具增值税专用发票\"). Those sales are then taxed at the 3% levy rate.\n- A small-scale taxpayer may issue special VAT invoices. No. 10 refers to buyers who obtain special invoices from small-scale taxpayers taxed at 3%. However, no special invoice may be issued to a natural person or for an exempt sale (Reg. Art. 37). A small-scale taxpayer whose sales are below the threshold may give up the exemption for all or some sales and issue special invoices ([STA announcement 2026 No. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html), item 一: \"可以选择全部或者部分应税交易放弃免税并开具增值税专用发票\"). The same announcement tells natural persons with certain income (bond interest, rent of real estate, platform work income) to apply the monthly threshold to the month's total sales.\n- The waiver rule in Law Art. 27 (36 months without the relief after giving it up) does **not** apply to small-scale taxpayers (\"小规模纳税人除外\").",
+      "section": "The base / Small-scale taxpayers in 2026",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "809e05a20b9ce8e0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+          "source_file": "809e05a20b9ce8e0.txt",
+          "source_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+          "source_lines": [
+            1,
+            365
+          ],
+          "quote": "一、增值税起征点标准",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "9f40e0e10e0eb135",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479286.html",
+          "source_file": "9f40e0e10e0eb135.txt",
+          "source_sha256": "4b7a9e2f12e124d7b819b0a3134a6e5a82940dfed884615a823ebe79aaa5c7b5",
+          "source_lines": [
+            1,
+            77
+          ],
+          "quote": "一、小规模纳税人发生应税交易，销售额未达到起征点标准的，可以选择全部或者部分应税交易放弃免税并开具增值税专用发",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4b7a9e2f12e124d7b819b0a3134a6e5a82940dfed884615a823ebe79aaa5c7b5"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-07",
+      "claim": "## General taxpayer registration ([STA announcement on general taxpayer registration, 2026](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html); [Implementation Regulations Art. 36](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))\n\n- **Who must register:** a taxpayer whose annual taxable sales exceed the small-scale threshold of 500万元 (five million yuan). Two exceptions: natural persons, and non-business units with occasional taxable sales that choose small-scale treatment.\n- **Annual sales:** cumulative taxable sales over a running period of up to 12 months or four quarters of business, including months with no sales. Occasional sales of intangibles or real estate are left out. Sales adjusted later, whether by self-correction, risk review or audit, count in the period when the liability arose.\n- **Deadline:** register within the filing deadline of the month after the threshold is exceeded. Where sales are adjusted, register within 10 working days of the adjustment.\n- **Effective date:** the 1st day of the period in which the threshold was exceeded. For voluntary registration, the 1st day of the period in which the taxpayer registers. Returns already filed as small-scale from the effective date must be corrected period by period.\n- **Late registration:** from 5 working days after the deadline, the taxpayer is managed as a general taxpayer anyway.\n- **Transition:** if the 2025 Q4 or December small-scale return shows the threshold exceeded, general taxpayer status takes effect on 2026-01-01. A taxpayer that before 2026-01-01 computed tax on sales at the VAT rates without input credit also becomes a general taxpayer on 2026-01-01. The probationary \"counselling period\" regime (纳税辅导期) ended on 2026-01-01.\n- **One-way:** once registered, a general taxpayer cannot go back to small-scale status.",
+      "section": "The base / General taxpayer registration",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "37b33d3c081d4aed",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+          "source_file": "37b33d3c081d4aed.txt",
+          "source_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9",
+          "source_lines": [
+            1,
+            90
+          ],
+          "quote": "一、增值税纳税人（以下简称纳税人）年应征增值税销售额超过增值税法规定的小规模纳税人标准（以下简称规定标准）的，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-08",
+      "claim": "## Input tax: what you can and cannot deduct ([VAT Law Art. 16, 21, 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 11–25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 13 on input tax](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))\n\n**Deduction vouchers (Reg. Art. 11–12).** Input tax is deductible only against a lawful voucher:\n- the VAT shown on a special VAT invoice (增值税专用发票) from the seller, including the fully digitalised e-invoice (special invoice) version;\n- the VAT shown on a customs import VAT payment certificate (海关进口增值税专用缴款书);\n- the VAT shown on a tax payment certificate (完税凭证) for services, intangibles or domestic real estate bought from a foreign seller. This also requires a written contract, proof of payment and the foreign party's statement or invoice (No. 13 一（五）);\n- farm-product purchase or sales invoices, at a computed amount;\n- other vouchers with a deduction function, including those below.\n\n**Other vouchers under MOF/STA announcement 2026 No. 13:**\n\n| Voucher | Creditable input | Official provision |\n| --- | --- | --- |\n| Unified motor vehicle sales invoice | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Rail e-ticket or air e-ticket itinerary (电子发票（铁路电子客票）/（航空运输电子客票行程单）) for domestic passenger transport | VAT shown or included on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Road, waterway and other passenger tickets showing the traveller's identity | Face amount ÷ (1 + 3%) × 3% | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Toll-road e-invoice (通行费) | VAT shown on it | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n| Bridge and lock toll invoices | Amount ÷ (1 + 5%) × 5% | [2026 No. 13 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [VAT Law Art. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html) |\n\n**Farm products (No. 10, from 2026-01-01).** If a special invoice or customs certificate is obtained from a general taxpayer, deduct the VAT shown. If a special invoice is obtained from a small-scale taxpayer taxed at 3%, compute input as the invoice amount × 9% deduction rate. With a farm-product sales or purchase invoice, compute input as the purchase price × 9%. The 9% rate also applies to exempt farm products bought from farmers' cooperatives.\n\n**Never deductible (Law Art. 22):**\n1. input for items taxed under the simplified method;\n2. input for exempt items;\n3. input for abnormal losses: theft, loss or spoilage caused by poor management, or goods or real estate confiscated or demolished for breaking the law (Reg. Art. 19);\n4. purchases used for collective welfare or personal consumption. Client entertainment (交际应酬消费) counts as personal consumption (Reg. Art. 20);\n5. catering, daily-life services (居民日常服务) and entertainment bought and consumed directly;\n6. other items the State Council specifies. These currently include loan interest, and the advisory fees, handling fees and consulting fees paid to the lender that relate directly to the loan (Reg. Art. 21).\n\nInput tied to non-taxable transactions that block deduction (Reg. Art. 22; No. 25), such as equity sales and dividends, is also not deductible.\n\n**Apportionment (Reg. Art. 23).** Where goods (other than fixed assets) and services are used for both taxable items and simplified, exempt or blocked non-taxable items, and the input cannot be split, compute the non-deductible part each period by the ratio of sales or income. Then true it up for the full year in the January return of the following year.\n\n**Long-term assets used for mixed purposes (Reg. Art. 25).** For a fixed asset, intangible or real estate with an original value **not over 500万元 (five million yuan)**, all input is deductible. Above that, deduct the input in full on purchase, then adjust it each year for the blocked use. Fixed assets are items used for more than 12 months (Reg. Art. 19).\n\n**Reversal (Reg. Art. 24).** If goods (other than fixed assets) or services whose input was already deducted later suffer an abnormal loss, or are used for welfare, personal consumption or consumption services, reverse (转出) the input in that period. Where the input cannot be identified, use the current actual cost.\n\n**No time limit on confirmation.** For special invoices, customs certificates, motor vehicle invoices and toll e-invoices issued from 1 January 2017, the old certification deadline (the \"360-day\" window) was abolished (\"取消认证确认、稽核比对、申报抵扣的期限\"). The taxpayer confirms each voucher's use (用途确认) in the e-tax bureau when filing ([STA announcement 2019 No. 45](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html)). The STA policy library lists this announcement as amended, not repealed. The complete 144-entry attachment to [STA announcement 2026 No. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls) was read on 29 October 2026; it does not list 2019 No. 45. That list check does not waive the actual voucher and taxable-use requirements.",
+      "section": "The base / Input tax: what you can and cannot deduct",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "6153f6024e1a44e7",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+          "source_file": "6153f6024e1a44e7.txt",
+          "source_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a",
+          "source_lines": [
+            1,
+            97
+          ],
+          "quote": "一、关于增值税进项税额抵扣",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a"
+        },
+        {
+          "source_id": "809e05a20b9ce8e0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+          "source_file": "809e05a20b9ce8e0.txt",
+          "source_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+          "source_lines": [
+            1,
+            365
+          ],
+          "quote": "一、增值税起征点标准",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e"
+        },
+        {
+          "source_id": "63153cbaaa292819",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202001/t451787.html",
+          "source_file": "63153cbaaa292819.txt",
+          "source_sha256": "def7faf30dfd047b6ae8a5541ba236e709d4d2ac0fc622fb9f7997fe3d410133",
+          "source_lines": [
+            1,
+            109
+          ],
+          "quote": "一、增值税一般纳税人取得2017年1月1日及以后开具的增值税专用发票、海关进口增值税专用缴款书、机动车销售统一",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "def7faf30dfd047b6ae8a5541ba236e709d4d2ac0fc622fb9f7997fe3d410133"
+        },
+        {
+          "source_id": "VAT18-attachment",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls",
+          "source_file": "VAT18-attachment.txt",
+          "source_sha256": "638eba8129807c7d3ddda2787dedb41c9e261609a712e999982208abfe54da8e",
+          "source_lines": [
+            1,
+            147
+          ],
+          "quote": "附件",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "14656ed370303d00a6a35ef65732a3a73a538ae4eb9063b2680e88d22bcf95e3"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-09",
+      "claim": "## Fapiao and the fully digitalised e-invoice ([VAT Law Art. 34](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 5, 37, 38](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [STA: nationwide digital e-invoice](https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html); [Shanghai Tax Bureau explanation](https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html))\n\n- A taxpayer must issue an invoice to the buyer for each taxable transaction (Reg. Art. 37). A special VAT invoice must show the sales amount and the VAT separately (Reg. Art. 5).\n- **No special invoice** may be issued where the buyer is a natural person or the sale is exempt, or in other cases MOF and the STA specify (Reg. Art. 37).\n- If a special invoice is wrong, or the sale is discounted, suspended or returned, void it or issue a red-letter special invoice (红字增值税专用发票). If you do not, you cannot reduce output tax or sales (Reg. Art. 38).\n- Paper and electronic invoices have the same legal effect, and the state promotes e-invoices (Law Art. 34).\n- **Fully digitalised e-invoices (数电发票)** have been in nationwide use since 1 December 2024 (\"自2024年12月1日起，在全国正式推广应用全面数字化电子发票\"). There are two types: e-invoice (special invoice) and e-invoice (ordinary invoice). They need no tax-control device. Numbers are assigned by the system and an invoicing limit (发票总额度) is granted automatically. Issuing, delivery, checking and use confirmation all happen in the national e-tax bureau. Invoices downloaded from the taxpayer's tax digital account carry a digital signature and need no invoice seal for booking and archiving.\n- Special-business labels (for example construction, real estate sales and leasing, passenger and freight transport, farm-product purchase, and margin-taxation 差额征税) exist within both types for specific transactions.",
+      "section": "The base / Fapiao and the fully digitalised e-invoice",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "270ea35207ff5cb0",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html",
+          "source_file": "270ea35207ff5cb0.txt",
+          "source_sha256": "e39171f604351f2a3c0b13bde4de87556a42a559edd1d3a7f34153623e687491",
+          "source_lines": [
+            1,
+            109
+          ],
+          "quote": "[人民日报] 12月1日起全国推广应用数电发票_国家税务总局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e39171f604351f2a3c0b13bde4de87556a42a559edd1d3a7f34153623e687491"
+        },
+        {
+          "source_id": "78d0ccf583799d6c",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html",
+          "source_file": "78d0ccf583799d6c.txt",
+          "source_sha256": "0c2e0d931c22b1727084733407d0b0405d3f143762f27e4d829206fbcb5434b0",
+          "source_lines": [
+            1,
+            166
+          ],
+          "quote": "一、《公告》制发的背景是什么？",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0c2e0d931c22b1727084733407d0b0405d3f143762f27e4d829206fbcb5434b0"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-10",
+      "claim": "## Export refunds ([VAT Law Art. 33](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 47–52](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html))\n\n- Zero-rated exports of goods and cross-border services and intangibles are declared to the tax office for refund or exemption (退（免）税) (Law Art. 33).\n- **Two methods (Reg. Art. 47).** Under the exempt-credit-refund method (免抵退税办法), the export is exempt, related input is set against VAT payable, and any balance is refunded. Under the exempt-refund method (免退税办法), the export is exempt and the related input is refunded. The refund is computed at the export refund rate set by the State Council for the product, which can be lower than the domestic rate.\n- **Conditions and time limits ([MOF/STA announcement 2026 No. 11 on export VAT and consumption tax](https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml), in force from 2026-01-01).** Exported goods qualify for refund or exemption only if they are sold to an overseas entity or individual, declared to customs and physically exported, booked as a sale, and paid for in foreign exchange as required. For goods declared for export, collect the documents and file the refund claim in a VAT filing period between the month after the export declaration and 30 April of the following year (\"在货物报关出口之日次月起至次年4月30日前的各增值税纳税申报期内\"). If the foreign-exchange receipt has not arrived by that 30 April, repay the refund. A claim missed in that window can still be made in any VAT filing period after 30 April and within 36 months of the export declaration date, with the documents and proof of the foreign-exchange receipt (\"可以在次年4月30日后至报关出口之日起36个月内的各增值税纳税申报期内，收齐有关凭证，同时提供收汇材料\"). The 30 April window above does not cover goods exported from or through a bonded zone (保税区), for which the announcement sets its own dates. Before claiming, the taxpayer must complete the refund-or-exemption filing (退（免）税备案) (\"应当办理退（免）税备案\"). Exports made before that filing can still qualify once it is done. The announcement also lists deemed exports (for example sales into special customs zones) and the cases that are exempt only or taxed.\n- **Deadline (Reg. Art. 48).** File within the prescribed period. If you file late, the export is taxed as a domestic sale. For entrusted exports, the principal must complete the agency export formalities. If it does not, the consignor pays the VAT.\n- **Waiver (Reg. Art. 49).** A taxpayer may waive refund in favour of exemption or taxation, or waive exemption in favour of taxation. The waiver runs from the following month and locks in for 36 months.\n- **Returns (Reg. Art. 50).** If an exported sale is discounted, suspended or returned, repay the refund.\n- **2026 product changes (No. 2).** The VAT export refund for photovoltaic and certain other products is abolished from 2026-04-01. For battery products, the refund rate is cut from 9% to 6% from 2026-04-01 to 2026-12-31, and abolished from 2027-01-01. The export declaration date decides which rate applies. The product lists are in the announcement's annexes.\n- Detailed refund procedures are set by MOF and the STA (Reg. Art. 51). Preparing a refund claim is a referral (see below).",
+      "section": "The base / Export refunds",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "6f65dc7d0820e63c",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html",
+          "source_file": "6f65dc7d0820e63c.txt",
+          "source_sha256": "c28dd8bc47c7a182d67e2186f68681e8a7c08210b46b1a766b19e55bf93f3a26",
+          "source_lines": [
+            1,
+            69
+          ],
+          "quote": "一、自2026年4月1日起，取消光伏等产品增值税出口退税。具体产品清单见附件1。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c28dd8bc47c7a182d67e2186f68681e8a7c08210b46b1a766b19e55bf93f3a26"
+        },
+        {
+          "source_id": "454a6de3cf4e1e06",
+          "official_url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml",
+          "source_file": "454a6de3cf4e1e06.txt",
+          "source_sha256": "4991add09efbc037adc9aaf86d1e21bb235bba9e952b3df7a2b879e3e8bb9617",
+          "source_lines": [
+            1,
+            382
+          ],
+          "quote": "一、适用增值税退（免）税政策的出口业务",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4991add09efbc037adc9aaf86d1e21bb235bba9e952b3df7a2b879e3e8bb9617"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-11",
+      "claim": "## Exemptions ([VAT Law Art. 24–27](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 26–31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))\n\nStatutory exemptions (Law Art. 24):\n1. Farm producers selling their own primary farm products; agricultural ploughing, irrigation, pest control, plant protection, agricultural insurance and related training; breeding and disease control for poultry, livestock and aquatic animals. Resold purchased farm products do **not** qualify (No. 10).\n2. Medical services provided by medical institutions. For-profit cosmetic medical institutions are excluded (Reg. Art. 27).\n3. Antique and second-hand books; used personal goods sold by natural persons.\n4. Imported instruments and equipment used directly for scientific research, experiments and teaching.\n5. Imported materials and equipment given free by foreign governments and international organisations.\n6. Articles for disabled people imported directly by organisations of disabled people; services provided by disabled individuals.\n7. Care services of nurseries, kindergartens, elderly-care institutions and disability-service institutions (for nurseries and kindergartens, only fees within the approved standard); marriage introduction; funeral services.\n8. Degree education provided by schools (including technical schools and technician colleges); work-study services by students.\n9. First-gate admission ticket income of memorial halls, museums, cultural centres, heritage sites, art galleries, exhibition halls, painting academies and libraries for cultural events, and of religious sites for cultural or religious events.\n\nOther reliefs exist only as the State Council provides (Law Art. 25). No. 10 carries many of them forward, some with an end date of 2027-12-31. Examples include software-product refunds on collection (财税〔2011〕100号) and the reduced rates above. If an exemption is not in Law Art. 24 or No. 10, do not assume it survived.\n\nRules on using exemptions:\n- Account for exempt sales separately, or the exemption is lost (Law Art. 26).\n- A taxpayer may waive an exemption, but then cannot use it again for 36 months. Small-scale taxpayers are not subject to this lock-in (Law Art. 27).\n- Input tax for exempt items is not deductible (Law Art. 22).",
+      "section": "The base / Exemptions",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "809e05a20b9ce8e0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+          "source_file": "809e05a20b9ce8e0.txt",
+          "source_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+          "source_lines": [
+            1,
+            365
+          ],
+          "quote": "一、增值税起征点标准",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-12",
+      "claim": "## Boundary and exception table ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html); [MOF/STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html))\n\n| Situation | Treatment | Basis |\n|---|---|---|\n| Deposit interest received | Not taxable | Law Art. 6(4) |\n| Loan interest received by a lender | Taxable financial service at 6% | Law Art. 10(3) |\n| Bank handling fees and payment-platform fees paid | Taxable services at 6%. Input is deductible with a special invoice, unless the fee relates directly to a loan | Law Art. 10(3); Reg. Art. 21 |\n| Loan interest paid, and loan-related advisory or handling fees paid to the lender | Input not deductible | Reg. Art. 21 |\n| Dividends from equity holdings (other than securities), dividends on ordinary shares of companies limited by shares (including listed securities), and paid equity transfers (other than securities) | Non-taxable, but related input is blocked | Reg. Art. 22; No. 25 二 |\n| Sales that do not take place in China under Law Art. 4 | Not taxable in China, but related input is blocked | Reg. Art. 22; No. 25 二（一） |\n| Insurance payouts, donations received, subsidies not linked to sales | Non-taxable; input not blocked | No. 25 |\n| Free services (other than financial products) | Not a deemed sale; input not blocked | Law Art. 5; No. 25 |\n| Free transfer of goods by a unit or 个体工商户 | Deemed sale at market price | Law Art. 5, 19 |\n| Sales at 13% and 6% not accounted for separately | Highest rate on the whole | Law Art. 12 |\n| Software sold with installation, maintenance or training | Software product rate on the whole | No. 13 三 |\n| Prepaid services delivered over time | Liability on the earlier of the day service actually starts and the contract date, on the whole amount received | No. 13 四（二） |\n| Foreign company sells a service to a Chinese business | Buyer withholds VAT at the applicable rate, unless a domestic agent files | Law Art. 15 |\n| Service to a foreign client not in the Reg. Art. 9 list | Not zero-rated | Reg. Art. 9 |\n| Special invoice requested by an individual consumer | Not allowed; issue an ordinary invoice | Reg. Art. 37 |\n| Restructuring (merger, division, sale or exchange) that transfers a business able to run fairly independently (可以相对独立运营的经营业务) as a package of assets, receivables, liabilities and staff, with a reasonable commercial purpose and not mainly to reduce, defer or accelerate VAT. If the transferor is a general taxpayer, the receiver must be one too | Not taxable; input remains deductible, and a merged-away taxpayer's unused input passes to the successor | No. 13 二 |\n| Price unusually low or high without good reason | Tax office may assess the value (cost-plus uses a 10% profit margin) | Law Art. 20; Reg. Art. 18 |",
+      "section": "The base / Boundary and exception table",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "dd4e5b8990e6212d",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html",
+          "source_file": "dd4e5b8990e6212d.txt",
+          "source_sha256": "dfa9cddaab6176549d0ac886f5cf12e225b8d781f83a14844d781248d5ab336a",
+          "source_lines": [
+            1,
+            85
+          ],
+          "quote": "一、纳税人有下列情形的，不属于增值税法实施条例第二十二条所称不得抵扣非应税交易，对应的进项税额可以按规定从销项",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "dfa9cddaab6176549d0ac886f5cf12e225b8d781f83a14844d781248d5ab336a"
+        },
+        {
+          "source_id": "6153f6024e1a44e7",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+          "source_file": "6153f6024e1a44e7.txt",
+          "source_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a",
+          "source_lines": [
+            1,
+            97
+          ],
+          "quote": "一、关于增值税进项税额抵扣",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-13",
+      "claim": "## Worked cases ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html); [MOF/STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html))\n\n**Case 1: IT consulting at 6% (general taxpayer).** A Shanghai general taxpayer receives 530,000 yuan including VAT from a Beijing company for IT consulting in March 2026. Sales = 530,000 ÷ 1.06 = 500,000. Output VAT = 500,000 × 6% = 30,000. It issues a special e-invoice showing the sales amount and the VAT separately.\n\n**Case 2: laptops at 13%.** The same company buys laptops for 113,000 yuan including VAT and receives a special e-invoice. Sales amount 113,000 ÷ 1.13 = 100,000. Input VAT = 100,000 × 13% = 13,000, deductible after use confirmation. If the laptops were given to staff as welfare, the 13,000 would not be deductible (Law Art. 22(4)).\n\n**Case 3: small-scale quarterly filer and the threshold.** A small-scale trading company files quarterly. It sells no real estate, invoices only at the 1% rate, and has not given up the reduction to issue special invoices. In Q1 2026 its VAT-exclusive sales are 280,000 yuan. That is below the 30万元 (three hundred thousand yuan) quarterly threshold, so the sales are exempt. In Q2 2026 its sales are 320,000 yuan. The threshold is reached, so the whole amount is taxed at the reduced 1%: 320,000 × 1% = 3,200. The tax is not computed only on the 20,000 above the threshold.\n\n**Case 4: service bought from a foreign company.** A Chinese company buys market research from a Singapore company with no domestic agent. The price is 100,000 yuan excluding VAT, and the service is consumed in China. The Chinese buyer withholds 100,000 × 6% = 6,000 and remits it. Assume the buyer is a general VAT taxpayer and the service is used for eligible taxable transactions, with no input-credit exclusion. It can then deduct the 6,000 with the tax payment certificate, written contract, proof of payment and foreign party's statement or invoice. A small-scale buyer does not obtain input credit merely by remitting the withholding VAT (VAT Law Arts. 8–9,14,16,22; Regulations Arts. 11–12).\n\n**Case 5: business travel.** An employee takes a long-distance coach ticket showing their identity, face value 1,030 yuan. Input VAT = 1,030 ÷ (1 + 3%) × 3% = 30. A client dinner with a 1,060 yuan special invoice at 6% shows VAT of 60. That 60 is **not** deductible, because it is a catering service consumed directly and entertainment counts as personal consumption.\n\n**Case 6: design for an overseas client.** A Shenzhen studio designs packaging for a German company. The design is used entirely in Germany. Design services sold to an overseas entity and consumed entirely abroad are zero-rated (Reg. Art. 9), and the studio files for refund or exemption. If the same studio also provides general brand consulting to the German company, that service is not on the Reg. Art. 9 list, so it is not zero-rated.\n\n**Case 7: crossing the general taxpayer threshold.** A small-scale company that files monthly has cumulative sales for the 12 months to May 2026 that reach 5,200,000 yuan. That exceeds 500万元 (five million yuan). It must register by the June filing deadline, and general taxpayer status takes effect from 1 May 2026 (the 1st day of the period in which the threshold was exceeded). For a quarterly filer, the period would be the quarter, so status would take effect from 1 April 2026. The May return filed as small-scale must be corrected.\n\n### Conservative defaults when facts are missing ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))\n\n- Rate unknown: establish the transaction category and applicable law before computing. Separately, where known sales at different rates have not been accounted for separately, apply the highest rate under VAT Law Art. 12. Missing classification facts alone are not that statutory trigger.\n- Export evidence missing or initial refund claim window missed: establish whether the transaction is refundable, exempt-only or domestically taxable under the applicable export provisions. [MOF/STA announcement 2026 No. 11 §9(1)(4)](https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml) allows qualifying later claims within the specified 36-month period; its §6 includes exempt-only cases. Missing papers or a missed initial window alone do not prove domestic taxation. Apply VAT Regulations Art. 48 with the actual category, event and deadline facts.\n- Deduction voucher missing or not confirmed: claim no input until it is held.\n- Taxpayer status unknown: confirm it from the tax office record before computing.",
+      "section": "Two worked examples that recompute / Worked cases",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "809e05a20b9ce8e0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+          "source_file": "809e05a20b9ce8e0.txt",
+          "source_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+          "source_lines": [
+            1,
+            365
+          ],
+          "quote": "一、增值税起征点标准",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e"
+        },
+        {
+          "source_id": "6153f6024e1a44e7",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+          "source_file": "6153f6024e1a44e7.txt",
+          "source_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a",
+          "source_lines": [
+            1,
+            97
+          ],
+          "quote": "一、关于增值税进项税额抵扣",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a"
+        },
+        {
+          "source_id": "454a6de3cf4e1e06",
+          "official_url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml",
+          "source_file": "454a6de3cf4e1e06.txt",
+          "source_sha256": "4991add09efbc037adc9aaf86d1e21bb235bba9e952b3df7a2b879e3e8bb9617",
+          "source_lines": [
+            1,
+            382
+          ],
+          "quote": "36个月内的各增值税纳税申报期内",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4991add09efbc037adc9aaf86d1e21bb235bba9e952b3df7a2b879e3e8bb9617"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-14",
+      "claim": "## When to refuse or refer\n\nSources: [VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html).\n\nRefer the matter to a Chinese certified tax agent (税务师) or CPA (注册会计师) where:\n- a refund of excess input (留抵退税) or an export refund or exemption claim has to be prepared;\n- the client is a bank, insurer, securities firm or other financial institution, or is selling financial products;\n- the client is a real estate developer, or has construction or real estate projects with prepayment (Reg. Art. 45), or has projects that elected the simplified method before 2026;\n- the client has a group or head-office consolidated filing (Law Art. 29; Reg. Art. 42), contracting, leasing or affiliated operation (挂靠) (Reg. Art. 34), or an asset-management product;\n- the client has a restructuring, or a long-term asset over 500万元 (five million yuan) in mixed use ([Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html) Art. 25);\n- the client relies on a relief not found in Law Art. 24 or MOF/STA announcement 2026 No. 10;\n- there is any suspicion of false invoicing (虚开发票), which can be a crime, or of arrangements without a reasonable commercial purpose (Reg. Art. 53);\n- the tax office has opened an audit or risk review.\n\nRefuse to:\n- claim input tax for a small-scale taxpayer;\n- zero-rate a service that is not on the Reg. Art. 9 list or lacks proof of use abroad;\n- issue a special invoice to an individual consumer or for an exempt sale;\n- present any computation as final without a professional check.",
+      "section": "The base / When to refuse or refer",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-15",
+      "claim": "## Filing and payment ([VAT Law Art. 29–32](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 43–46](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [STA announcement 2026 No. 6 on return forms](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html); [Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html))\n\n**Periods and due dates (Law Art. 30–31; Reg. Art. 43–44):**\n\n| Period | Who | Return due | Prepayment |\n|---|---|---|---|\n| 1 month | Most general taxpayers | Within 15 days after the month ends | None |\n| 1 quarter | Small-scale taxpayers; banks, finance companies, trust companies and credit cooperatives; others the STA designates | Within 15 days after the quarter ends | None |\n| 10 or 15 days | As set by the tax office | Within 15 days from the 1st of the next month | Prepay within 5 days after each period ends |\n| Per transaction | Taxpayers without regular taxable sales | If sales reach the threshold, file by 30 June of the following year | None |\n\nThe tax office sets each taxpayer's period according to the amount of tax. Check the tax office's filing calendar for the month, because deadlines that fall on public holidays are published by the tax office. Returns are due even when no tax is payable, or while an exemption applies ([Implementation Rules of the Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html), Art. 32: \"纳税人在纳税期内没有应纳税款的，也应当按照规定办理纳税申报\").\n\n**Where to file (Law Art. 29).** Taxpayers with a fixed place of business file where the business is registered or where they reside. Branches in a different county file separately, unless consolidated filing is approved. Taxpayers without a fixed place file where the sale takes place. Natural persons selling or leasing real estate, transferring natural resource rights, or providing construction file where the property or work is. Import VAT is collected by customs.\n\n**Forms.** Use the existing 增值税及附加税费申报表 (general taxpayer and small-scale versions) and the 预缴表. The fill-in requirements for certain lines were adjusted from 1 February 2026. File through the national e-tax bureau. Since 5 June 2026, some Shanghai taxpayers chosen by the Shanghai Tax Bureau have been piloting a revised 增值税及附加税费申报表（试行） ([Shanghai Tax Bureau announcement 2026 No. 1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html)). Use the pilot form only if the tax office has told you that you are in the pilot.\n\n**Penalties (Tax Collection Administration Law):**\n\n| Failure | Consequence | Article |\n|---|---|---|\n| Late payment | Surcharge of 0.05% of the unpaid tax per day (\"按日加收滞纳税款万分之五的滞纳金\") | 32 |\n| Late filing | Fine of up to two thousand yuan (二千元以下). In serious cases, two thousand to ten thousand yuan (二千元以上一万元以下) | 62 |\n| Tax evasion (false returns, hidden income and similar) | The tax and surcharge are recovered, plus a fine of half to five times the tax (百分之五十以上五倍以下). Criminal liability if it is a crime | 63 |\n| Failing to file, causing tax to be unpaid or underpaid | The tax and surcharge are recovered, plus a fine of half to five times the tax (百分之五十以上五倍以下) | 64 |\n| Fabricating a false tax base | Fine of up to fifty thousand yuan (五万元以下) | 64 |",
+      "section": "Deadlines and filing / Filing and payment",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        },
+        {
+          "source_id": "22c7290bd74e1b44",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html",
+          "source_file": "22c7290bd74e1b44.txt",
+          "source_sha256": "ec13d3bf3afa56fb161b8bac16b03d5c6540ced06958c3270ee196ab1b7506c0",
+          "source_lines": [
+            1,
+            69
+          ],
+          "quote": "一、调整《增值税及附加税费申报表（一般纳税人适用）》及其附列资料、《增值税及附加税费申报表（小规模纳税人适用）",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ec13d3bf3afa56fb161b8bac16b03d5c6540ced06958c3270ee196ab1b7506c0"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            1,
+            244
+          ],
+          "quote": "第一条　为了加强税收征收管理，规范税收征收和缴纳行为，保障国家税收收入，保护纳税人的合法权益，促进经济和社会发",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8"
+        },
+        {
+          "source_id": "f4fd2737d35dbad1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+          "source_file": "f4fd2737d35dbad1.txt",
+          "source_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56",
+          "source_lines": [
+            1,
+            291
+          ],
+          "quote": "第一条　根据《中华人民共和国税收征收管理法》（以下简称税收征管法）的规定，制定本细则。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56"
+        },
+        {
+          "source_id": "1554fbdcde7fed4d",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202606/t480523.html",
+          "source_file": "1554fbdcde7fed4d.txt",
+          "source_sha256": "954a42fa871cb4411a5e735e0f99ba35f2346c448f498a6a16ef26ef33c36a62",
+          "source_lines": [
+            1,
+            101
+          ],
+          "quote": "一、自2026年6月5日起，在上海市的部分增值税纳税人（以下称试点纳税人）中开展增值税及附加税费申报试点，具体",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "954a42fa871cb4411a5e735e0f99ba35f2346c448f498a6a16ef26ef33c36a62"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-16",
+      "claim": "## Returns for 2025 periods being filed or corrected now ([VAT Law Art. 38](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [general taxpayer registration](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html))\n\nPeriods up to 31 December 2025 remain under the Provisional Regulations and the policies in force at the time. The law repeals the Provisional Regulations from 2026-01-01 (Art. 38). Liabilities that arose before that date were incurred under the old rules. Do not apply the new law's deemed-sale, non-deductible-input or liability-date rules to 2025 transactions. For status: if the 2025 Q4 or December small-scale return shows sales above the threshold, general taxpayer status takes effect on 2026-01-01, not earlier. Adjustments to 2025 sales cannot make general taxpayer status start before 2026-01-01. For a 2025 period, check the rule in force at that date before using this skill.",
+      "section": "Deadlines and filing / Returns for 2025 periods being filed or corrected now",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "37b33d3c081d4aed",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html",
+          "source_file": "37b33d3c081d4aed.txt",
+          "source_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9",
+          "source_lines": [
+            1,
+            90
+          ],
+          "quote": "一、增值税纳税人（以下简称纳税人）年应征增值税销售额超过增值税法规定的小规模纳税人标准（以下简称规定标准）的，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b02c4cfe8e5158e63fd9eaf5f13e231aa87c81dbc47f0f5c25d59f92b2e5ebf9"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNVAT-17",
+      "claim": "## Completion checklist ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))\n\n- [ ] Taxpayer status confirmed, and the 12-month sales test run against 500万元 (five million yuan).\n- [ ] Filing period confirmed with the tax office record.\n- [ ] Non-taxable items (wages, deposit interest, dividends) removed. Items that block input identified.\n- [ ] Deemed sales (free goods, welfare use, free transfers of intangibles, real estate or financial products) added at market value.\n- [ ] Each sale at the right rate (13%, 9%, 6%, 0%), with separate accounting for mixed rates.\n- [ ] Small-scale filers: threshold tested (10万元 (one hundred thousand yuan) a month or 30万元 (three hundred thousand yuan) a quarter) and the 1% reduced levy rate applied where it applies.\n- [ ] Liability dates checked, especially for prepayments, invoices issued before payment, and exports.\n- [ ] Every input has a lawful voucher, confirmed for deduction in the e-tax bureau.\n- [ ] Non-deductible input removed: welfare, entertainment, catering, loan interest, exempt and simplified items.\n- [ ] Mixed-use input apportioned, with the annual true-up planned for the January return.\n- [ ] Foreign-seller purchases: VAT withheld and remitted; tax payment certificate, contract and payment proof held.\n- [ ] Zero-rated services matched to the Reg. Art. 9 list; export refund declarations filed in time.\n- [ ] Special invoices voided or reversed (red-letter) for errors and returns.\n- [ ] Return filed and tax paid within 15 days of the period end.",
+      "section": "The base / Completion checklist",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "bb8c8c9025ccfe98",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "source_file": "bb8c8c9025ccfe98.txt",
+          "source_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "source_lines": [
+            1,
+            173
+          ],
+          "quote": "第一条　为了健全有利于高质量发展的增值税制度，规范增值税的征收和缴纳，保护纳税人的合法权益，制定本法。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078"
+        },
+        {
+          "source_id": "a132dd0c61328ddd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "source_file": "a132dd0c61328ddd.txt",
+          "source_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "source_lines": [
+            1,
+            185
+          ],
+          "quote": "第一条　根据《中华人民共和国增值税法》（以下简称增值税法），制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    }
+  ],
+  "original_topics": [
+    [
+      "Scope and who this is for ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))",
+      "Who this applies to; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "What changed on 1 January 2026 ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))",
+      "Who this applies to; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Ask the client first",
+      "Ask the client first; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "The method, step by step",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Rates for tax year 2026 ([VAT Law Art. 10–11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 8–9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [scope notes, MOF/STA announcement 2026 No. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479282.html))",
+      "Rates, bands and thresholds; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Small-scale taxpayers in 2026 ([VAT Law Art. 9, 11, 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html); [Implementation Regulations Art. 7, 43](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "General taxpayer registration ([STA announcement on general taxpayer registration, 2026](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html); [Implementation Regulations Art. 36](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Input tax: what you can and cannot deduct ([VAT Law Art. 16, 21, 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 11–25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 13 on input tax](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Fapiao and the fully digitalised e-invoice ([VAT Law Art. 34](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 5, 37, 38](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [STA: nationwide digital e-invoice](https://www.chinatax.gov.cn/chinatax/n810219/n810780/c5236090/content.html); [Shanghai Tax Bureau explanation](https://shanghai.chinatax.gov.cn/zcfw/zcjd/202411/t474124.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Export refunds ([VAT Law Art. 33](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 47–52](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Exemptions ([VAT Law Art. 24–27](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 26–31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Boundary and exception table ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 25](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202608/t481411.html); [MOF/STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Worked cases ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [MOF/STA announcement 2026 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html); [MOF/STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html))",
+      "Two worked examples that recompute; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "When to refuse or refer",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Filing and payment ([VAT Law Art. 29–32](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations Art. 43–46](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html); [STA announcement 2026 No. 6 on return forms](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479295.html); [Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html))",
+      "Deadlines and filing; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Returns for 2025 periods being filed or corrected now ([VAT Law Art. 38](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [general taxpayer registration](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478913.html))",
+      "Deadlines and filing; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Completion checklist ([VAT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ]
+  ],
+  "line_convention": "Python str.splitlines(); complete context and hashes, not only quotation membership.",
+  "evidence_note": "Complete official source readers and full captured contexts are retained in the private country evidence. Public ledger retains operative citations, exact excerpts, source/reader hashes and captured line spans. Read the official linked unit; quote membership alone does not prove the rule."
+}
