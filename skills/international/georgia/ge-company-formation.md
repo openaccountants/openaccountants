@@ -24,7 +24,7 @@ Figures and rules below come from the Law of Georgia on Entrepreneurs (consolida
 - **Free professions**: artistic, scientific, medical, architectural, legal, arbitration, mediation, notary, audit and consulting (including tax consulting) work by individuals is not business activity under the Law. Such professionals may still use an entrepreneur form _(Law on Entrepreneurs art. 3(1), (3))_
 - **Most common entity type**: the LLC. Its capital is divided into shares and partners' liability is limited. The company is liable with all its assets and not for its partners' debts _(Law on Entrepreneurs art. 123)_
 - **Single-member company**: an LLC or a JSC can be set up by one person _(Law on Entrepreneurs art. 19(1))_
-- **Branch of a foreign company**: a branch is not a legal person. A branch of a foreign entrepreneur is registered with NAPR on duly certified documents _(Law on Entrepreneurs art. 15(1), (4))_. NAPR gives it a tax identification number at the same time _(Tax Code art. 66(3))_
+- **Branch of a foreign company**: a branch is not a legal person. A branch of a Georgian entrepreneur is not registered _(Law on Entrepreneurs art. 15(1))_. A branch of a foreign entrepreneur is registered with NAPR on duly certified documents _(Law on Entrepreneurs art. 15(1), (4))_. NAPR gives it a tax identification number at the same time _(Tax Code art. 66(3))_
 - **Minimum capital, LLC**: none set by law. The subscribed capital is the amount the company determines. A company other than a JSC with only no-par shares can set it at any amount _(Law on Entrepreneurs art. 28)_
 - **Minimum capital, JSC**: GEL 100,000 at registration _(Law on Entrepreneurs art. 156(1))_
 - **Instrument of incorporation**: in writing, signed by all founders. Signatures are notarised, or certified by NAPR or a body it authorises, or made as an electronic signature under the e-documents law _(Law on Entrepreneurs art. 4(2), (3))_. It contains the statute and data including the brand name, legal address, partners' identification data and managers _(art. 5(1), (2))_
@@ -34,6 +34,7 @@ Figures and rules below come from the Law of Georgia on Entrepreneurs (consolida
 - **NAPR fee and time, company (any form except individual entrepreneur)**: GEL 200 for 1 working day; GEL 400 for the same day as filing _(NAPR, Fees and Terms, Business registration)_
 - **NAPR fee and time, individual entrepreneur**: GEL 26 for 1 working day; GEL 75 for the same day _(NAPR, Fees and Terms)_. The application carries name, legal address, personal number or identity document data and signature _(Law on Entrepreneurs art. 11(1), (2))_
 - **English-language extract**: GEL 26 added to the fee of the service it goes with _(NAPR, Fees and Terms)_
+- **NAPR certification of signatures on a document filed for registration**: GEL 7, done immediately _(NAPR, Fees and Terms)_
 - **Core incorporation steps**:
   1. Prepare the instrument of incorporation and certify signatures (art. 4).
   2. File with NAPR (arts. 8, 9). NAPR or a body it authorises can certify the signatures (art. 4(3)).
@@ -46,7 +47,7 @@ Figures and rules below come from the Law of Georgia on Entrepreneurs (consolida
 - **Dividends**: a company may not pay a dividend if this makes it insolvent _(Law on Entrepreneurs art. 33)_. For the profit tax and 5% withholding on dividends, see [ge-corporate-income-tax](ge-corporate-income-tax.md).
 - **Core annual tax compliance**:
   - monthly profit tax return by the 15th (Tax Code art. 153(10));
-  - monthly return on salaries paid and tax withheld by the 15th (art. 153(5));
+  - monthly return on salaries paid and tax withheld by the 15th (art. 153(5)); for funded pension contributions on salaries, see [georgia-social-contributions](georgia-social-contributions.md);
   - monthly VAT return by the 15th if registered (art. 168(1)).
 - **Accounting and financial statements**: under the Law on Accounting, Reporting and Audit _(Law on Entrepreneurs art. 56(1))_. Entities file their financial statements with SARAS (Service for Accounting, Reporting and Auditing Supervision) by 1 October of the following year, or within 9 months of a non-calendar year end _(SARAS, Reporting supervision)_
 - **Size categories (two of three tests at year end)** _(SARAS, Reporting supervision)_:
