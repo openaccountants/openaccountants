@@ -36,14 +36,17 @@ Since 1 January 2017 most companies are not taxed on the profit they earn in a y
 | Gross-up for distributed-profit items | taxable amount = amount paid / 0.85 | 2026 | same, art. 97(10) |
 | Effective rate on the net amount paid | 15 / 85 = about 17.65% | 2026 | derived from arts. 97(10), 98(1) |
 | Banks, credit unions, microfinance organisations, loan providers (annual profit) | 20% | 2026 | same, art. 98(4) |
-| Slot machine salons and online games of chance (domestic players) | 20% | 2026 | same, art. 98(6) |
+| Slot machine salons and online games of chance (domestic players); the base is bets accepted less winnings paid (art. 97(9^1)) | 20% | 2026 | same, art. 98(6) |
 | Online games of chance and betting, profit from foreign-citizen players | 5% | 2026 | same, art. 98(5) |
 | Oil and gas "existing agreements" signed before 1 January 1998 | 10% | 2026 | same, art. 98(2) |
 | International company (status granted by the Government) | 5%; gross-up / 0.95 | 2026 | same, art. 23(10), (11) |
 | Entertainment cap | 1% of prior-year income (1% of expenses if expenses exceed income); first year: 1% of expenses to year end | 2026 | same, art. 98^4(2), (3) |
 | Donations to charities not taxed | up to 10% of prior-year net profit | 2026 | same, art. 98^3(3)(a) |
 | Withholding on dividends (to individuals, non-profits, non-residents) | 5% | 2026 | same, art. 130(1) |
+| Dividends received by a Georgian company (a form listed in art. 2(3) of the Law on Entrepreneurs, other than an individual enterprise) | not taxed at source | 2026 | same, art. 130(2) |
+| Dividends paid by a bank, credit union, microfinance organisation or loan provider out of profit earned in 2023 or later | not taxed at source | 2026 | same, art. 130(8) |
 | Withholding on interest (to individuals, non-residents without a PE) | 5% | 2026 | same, art. 131(1) |
+| Interest paid by a licensed Georgian financial institution | not taxed at source | 2026 | same, art. 131(5) |
 | Withholding on royalties paid to non-residents | 5% | 2026 | same, art. 134(1)(b^1) |
 | Withholding on royalties paid to resident individuals | 20% | 2026 | same, art. 132(1) |
 | Other Georgian-source payments to non-residents | 10% | 2026 | same, art. 134(1)(e) |
@@ -58,7 +61,7 @@ Since 1 January 2017 most companies are not taxed on the profit they earn in a y
 
 1. **Distributed profit**: a dividend paid to a partner, in money or in kind (art. 98^1(1)). These are not distributed profit (art. 98^1(2)):
    - a return of capital on liquidation or a share buy-back, up to the partner's contributions;
-   - a dividend paid by one Georgian company (other than an individual enterprise or an exempt person) to another, under art. 2(3) of the Law on Entrepreneurs;
+   - a dividend paid to a company in a form listed in art. 2(3) of the Law on Entrepreneurs (general partnership, limited partnership, LLC, joint-stock company or cooperative), unless the recipient is an individual enterprise or a person exempt from profit tax;
    - passing on a dividend received from a foreign enterprise, unless that enterprise is in a preferential tax country. That amount is treated as paid out first (art. 98^1(5)).
    - Deemed distributions: non-market transactions with related parties that are outside profit tax, controlled transactions that fail the arm's length test, and non-market transactions with exempt persons (art. 98^1(4)).
 2. **Costs unrelated to economic activity** (art. 98^2(1)):
@@ -121,7 +124,7 @@ A company registered before 1 December has a first tax period to 31 December. On
 |---|---|---|
 | Late payment | penalty interest of 0.05% of the unpaid tax for each day late, including the day of payment | art. 272(4) |
 | Penalty interest time limit | not charged once 3 years have passed from the day the obligation arose | art. 272(2^1) |
-| Late return, up to 2 months late | 5% of the tax due on the return for each month or part month, capped at 30% | art. 274(1) |
+| Late return, up to 2 months late | 5% of the tax due on the return | art. 274(1), Georgian text |
 | Late return, more than 2 months late | 10% of the tax due on the return | art. 274(2) |
 | Late return showing zero tax | no fine | art. 274(3) |
 | Understatement, up to 5% of the declared tax | 10% of the understated tax | art. 275(2^1) |
@@ -132,6 +135,8 @@ A company registered before 1 December has a first tax period to 31 December. On
 | Breach of taxpayer registration rules | GEL 500 | art. 273 |
 
 Fines from one audit under art. 275 cannot exceed the tax assessed in that audit (art. 275(5)).
+
+The English translation on matsne still shows the older art. 274(1) wording (5% for each month, capped at 30%). The Georgian original, which is the official text, sets a single 5% fine for a return up to 2 months late.
 
 ## Cross-border points
 
@@ -219,10 +224,10 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Tax Code of Georgia, consolidated English text, publication of 15 October 2026 (arts. 21 to 23, 29, 59, 62, 96 to 99, 121, 122, 125, 130 to 134, 153 to 155, 272 to 275, 309) | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
-| Tax Code of Georgia, Georgian original, same publication (arts. 153, 155 deadlines) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, Georgian original, same publication (arts. 98, 134, 153, 155, 272, 274, 275) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 | Law of Georgia on Information Technology Zones (virtual zone person) | https://matsne.gov.ge/en/document/view/1152405 | 2026-10-31 |
 
-Not yet confirmed: the annual interest rate cap set by the Minister of Finance (art. 98^2(1)(e)); the Government's current list of preferential tax countries (art. 98^2(10)); treaty withholding rates and the art. 125 relief procedure; the list of activities allowed for an international company (Government ordinance, art. 23(15)); transfer pricing documentation rules (arts. 126 to 129, not read); whether the late-filing fine in art. 274(1) reaches its 30% cap within two months as the English text reads (checked in English only); any changes in force from 2027.
+Not yet confirmed: the annual interest rate cap set by the Minister of Finance (art. 98^2(1)(e)); the Government's current list of preferential tax countries (art. 98^2(10)); treaty withholding rates and the art. 125 relief procedure; the list of activities allowed for an international company (Government ordinance, art. 23(15)); transfer pricing documentation rules (arts. 126 to 129, not read); any changes in force from 2027.
 
 <!-- openaccountants-cta-block -->
 
