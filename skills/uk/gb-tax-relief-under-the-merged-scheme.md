@@ -1,6 +1,7 @@
 ---
 name: gb-tax-relief-under-the-merged-scheme
 description: A drafting guide to the merged scheme R&D expenditure credit (RDEC) for UK companies with accounting periods beginning on or after 1 April 2024, covering the credit rate, the PAYE cap, the notification and claim process, and the payment steps.
+version: 0.1
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-31
@@ -203,19 +204,46 @@ Project details: a claim for 1 to 3 projects describes every project. A claim fo
 - Late claims, where HMRC's discretion follows Statement of Practice 5 (2001).
 - A claim under HMRC enquiry, or a company that may fail the going concern condition at step 7.
 
+## Checked examples
+
+```oa-check
+name: Merged scheme RDEC, qualifying expenditure GBP 100,000
+inputs:
+  spend: 100000
+  notional: 25
+steps:
+  - gross: pct(spend, 20)
+  - net: gross - pct(gross, notional)
+expected:
+  gross: 20000
+  net: 15000
+```
+
+```oa-check
+name: ERIS, loss-making R&D intensive SME, qualifying expenditure GBP 100,000, all surrendered
+inputs:
+  spend: 100000
+steps:
+  - deduction: pct(spend, 186)
+  - credit: pct(deduction, 14.5)
+expected:
+  deduction: 186000
+  credit: 26970
+```
+
 ## Sources
 
-- https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000
-- https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000
-- https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100
-- https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief
-- https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief
-- https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800
-- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000
+- https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird115000 (read 2026-10-31)
+- https://www.gov.uk/guidance/work-out-your-research-and-development-tax-relief (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird140000 (read 2026-10-31)
+- https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird112100 (read 2026-10-31)
+- https://www.gov.uk/guidance/tell-hmrc-that-youre-planning-to-claim-research-and-development-rd-tax-relief (read 2026-10-31)
+- https://www.gov.uk/guidance/submit-detailed-information-before-you-claim-research-and-development-rd-tax-relief (read 2026-10-31)
+- https://www.gov.uk/guidance/make-a-claim-for-rd-tax-relief-on-your-company-tax-return (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird81800 (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/corporate-intangibles-research-and-development-manual/cird111000 (read 2026-10-31)
 
 Drafted by OpenAccountants. Not yet reviewed or approved by a named accountant.
 

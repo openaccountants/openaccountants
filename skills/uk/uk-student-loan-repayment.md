@@ -68,11 +68,11 @@ Source: [Rates and thresholds for employers 2026 to 2027](https://www.gov.uk/gui
 
 **2026-27 thresholds:** published by HMRC in [Rates and thresholds for employers 2026 to 2027](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) and by SLC in [Repaying your student loan: what you pay](https://www.gov.uk/repaying-your-student-loan/what-you-pay), both read on 2026-10-23. Plan 5 and the Postgraduate Loan stay at £25,000 and £21,000. Thresholds change on 6 April each year: check the next year's figures before using them.
 
-- **Plan 1 eligibility** — Student Finance England or Wales courses started before 1 September 2012; all Student Finance Northern Ireland borrowers (undergraduate and postgraduate).
-- **Plan 2 eligibility** — Student Finance England courses started 1 September 2012 to 31 July 2023; Student Finance Wales undergraduate or PGCE courses started on or after 1 September 2012.
-- **Plan 4 eligibility** — all Student Awards Agency Scotland borrowers, undergraduate or postgraduate.
-- **Plan 5 eligibility** — Student Finance England undergraduate or PGCE courses started on or after 1 August 2023 (collections began April 2026).
-- **Postgraduate Loan (PGL) eligibility** — England/Wales master's and doctoral loans.
+- **Plan 1 eligibility**: Student Finance England or Wales courses started before 1 September 2012; all Student Finance Northern Ireland borrowers (undergraduate and postgraduate).
+- **Plan 2 eligibility**: Student Finance England courses started 1 September 2012 to 31 July 2023; Student Finance Wales undergraduate or PGCE courses started on or after 1 September 2012.
+- **Plan 4 eligibility**: all Student Awards Agency Scotland borrowers, undergraduate or postgraduate.
+- **Plan 5 eligibility**: Student Finance England undergraduate or PGCE courses started on or after 1 August 2023 (collections began April 2026).
+- **Postgraduate Loan (PGL) eligibility**: England/Wales master's and doctoral loans.
 
 Plan eligibility source: [Which repayment plan you're on](https://www.gov.uk/repaying-your-student-loan/which-repayment-plan-you-are-on), read on 2026-10-23.
 
@@ -99,10 +99,10 @@ Plan eligibility source: [Which repayment plan you're on](https://www.gov.uk/rep
 
 ### Refusal catalogue
 
-- **R-UK-SL-1 -- Plan type unknown** — Trigger: client does not know plan type. Message: "Do not guess the plan type. Direct the client to check at repaymentplan.studentloanrepayment.co.uk or call SLC directly."
-- **R-UK-SL-2 -- Overseas borrower** — Trigger: client lives outside the UK for 3+ months. Message: "SLC conducts an overseas income assessment with country-specific thresholds. Do not use UK thresholds. Escalate to SLC directly."
-- **R-UK-SL-3 -- Loan cancellation or SLC error** — Trigger: client disputes loan balance or believes SLC has made an error. Message: "Loan balance disputes and administrative errors must be resolved directly with SLC. Out of scope."
-- **R-UK-SL-4 -- Next year's thresholds not yet published** — Trigger: a 2027-28 or later computation requires a specific threshold that HMRC has not yet announced. Message: "Thresholds are published annually by HMRC and may not yet be confirmed. Flag for reviewer and verify before finalising any computation."
+- **R-UK-SL-1 -- Plan type unknown**: Trigger: client does not know plan type. Message: "Do not guess the plan type. Direct the client to check at repaymentplan.studentloanrepayment.co.uk or call SLC directly."
+- **R-UK-SL-2 -- Overseas borrower**: Trigger: client lives outside the UK for 3+ months. Message: "SLC conducts an overseas income assessment with country-specific thresholds. Do not use UK thresholds. Escalate to SLC directly."
+- **R-UK-SL-3 -- Loan cancellation or SLC error**: Trigger: client disputes loan balance or believes SLC has made an error. Message: "Loan balance disputes and administrative errors must be resolved directly with SLC. Out of scope."
+- **R-UK-SL-4 -- Next year's thresholds not yet published**: Trigger: a 2027-28 or later computation requires a specific threshold that HMRC has not yet announced. Message: "Thresholds are published annually by HMRC and may not yet be confirmed. Flag for reviewer and verify before finalising any computation."
 
 ## Section 3 -- Payment pattern library
 
@@ -254,7 +254,7 @@ Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x
 
 ### Rule 1 -- Single plan formula
 
-- **Single plan formula** — Repayment = (total_relevant_income - threshold) x rate If result is negative, repayment = £0.
+- **Single plan formula**: Repayment = (total_relevant_income - threshold) x rate If result is negative, repayment = £0.
 
 ### Rule 2 -- What income counts
 
@@ -272,11 +272,11 @@ Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x
 
 ### Rule 3 -- PAYE offset
 
-- **PAYE offset formula** — Total repayment due = (total_relevant_income - threshold) x rate Less: PAYE deductions already made = Balance due via Self Assessment If PAYE exceeds total due, client claims refund from SLC (not HMRC).
+- **PAYE offset formula**: Total repayment due = (total_relevant_income - threshold) x rate Less: PAYE deductions already made = Balance due via Self Assessment If PAYE exceeds total due, client claims refund from SLC (not HMRC).
 
 ### Rule 4 -- Multiple plans
 
-- **Multiple plans general rule** — Plans 1, 2, 4 and 5 together give one 9% repayment above the lowest of their thresholds, not one charge per plan (Education (Student Loans) (Repayment) Regulations 2009, reg 29(5A); [GOV.UK: repaying your student loan](https://www.gov.uk/repaying-your-student-loan/print)). A Postgraduate Loan is a separate 6% charge above its own threshold, paid at the same time (reg 29(3A)).
+- **Multiple plans general rule**: Plans 1, 2, 4 and 5 together give one 9% repayment above the lowest of their thresholds, not one charge per plan (Education (Student Loans) (Repayment) Regulations 2009, reg 29(5A); [GOV.UK: repaying your student loan](https://www.gov.uk/repaying-your-student-loan/print)). A Postgraduate Loan is a separate 6% charge above its own threshold, paid at the same time (reg 29(3A)).
 
 **Combination table**
 
@@ -286,15 +286,15 @@ Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x
 | Plan 1 + Postgraduate Loan | 9% above £26,065 AND 6% above £21,000 Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
 | Plan 1 + Plan 2 | One 9% charge above £26,065 (the lower threshold). SLC splits it between the loans Source: https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (tax year 2026) (read 2026-10-31) |
 
-- **Maximum combined rate** — 15% (9% + 6%) where the income is above both the undergraduate plan threshold and the Postgraduate Loan threshold.
+- **Maximum combined rate**: 15% (9% + 6%) where the income is above both the undergraduate plan threshold and the Postgraduate Loan threshold.
 
 ### Rule 5 -- NOT tax-deductible
 
-- **Not tax-deductible** — Student loan repayments are NOT business expenses. Cannot be deducted from trading profits.
+- **Not tax-deductible**: Student loan repayments are NOT business expenses. Cannot be deducted from trading profits.
 
 ### Rule 6 -- Payment schedule (via Self Assessment)
 
-- **Payment schedule** — The whole student loan repayment for the year is due with the balancing payment on 31 January after the tax year. It is not included in payments on account, so it never goes into the 31 January or 31 July POA ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account): the balancing payment "will also include anything you owe for capital gains or student loans"). See uk-payments-on-account.
+- **Payment schedule**: The whole student loan repayment for the year is due with the balancing payment on 31 January after the tax year. It is not included in payments on account, so it never goes into the 31 January or 31 July POA ([payments on account](https://www.gov.uk/understand-self-assessment-bill/payments-on-account): the balancing payment "will also include anything you owe for capital gains or student loans"). See uk-payments-on-account.
 
 ### Rule 7 -- Write-off periods
 
@@ -311,41 +311,41 @@ Change from 2025-26: **down £82.35** (Plan 2 threshold rose by £915 -> £915 x
 
 ### Rule 8 -- Plan 5 timing
 
-- **Plan 5 timing** — Plan 5 collections began April 2026. For 2024-25 SA, no Plan 5 repayment is due. For 2025-26 SA, no Plan 5 repayment is due either (collections only begin in tax year 2026-27). From 2026-27 onwards, Plan 5 repayments apply at 9% above the published threshold.
+- **Plan 5 timing**: Plan 5 collections began April 2026. For 2024-25 SA, no Plan 5 repayment is due. For 2025-26 SA, no Plan 5 repayment is due either (collections only begin in tax year 2026-27). From 2026-27 onwards, Plan 5 repayments apply at 9% above the published threshold.
 
 ### Rule 9 -- Unearned income rule
 
-- **Unearned income rule** — Total unearned income (savings + dividends + rent) only counts if it exceeds £2,000/year.
+- **Unearned income rule**: Total unearned income (savings + dividends + rent) only counts if it exceeds £2,000/year.
 
 ### Rule 10 -- Threshold publication timing
 
-- **Threshold publication timing** — HMRC publishes student loan thresholds annually, typically in the months preceding the start of the tax year (April). When a threshold for an upcoming year is not yet announced, flag for reviewer rather than estimating.
+- **Threshold publication timing**: HMRC publishes student loan thresholds annually, typically in the months preceding the start of the tax year (April). When a threshold for an upcoming year is not yet announced, flag for reviewer rather than estimating.
 
 ## Section 6 -- Tier 2 catalogue
 
 ### T2-1 -- Multiple plan interaction
 
-- **T2-1** — Trigger: Client has more than one plan type simultaneously. Action: Confirm plan types with SLC before computing. Undergraduate plans (1, 2, 4, 5) share one 9% charge above the lowest threshold; a Postgraduate Loan adds 6% above its own threshold.
+- **T2-1**: Trigger: Client has more than one plan type simultaneously. Action: Confirm plan types with SLC before computing. Undergraduate plans (1, 2, 4, 5) share one 9% charge above the lowest threshold; a Postgraduate Loan adds 6% above its own threshold.
 
 ### T2-2 -- Overseas earnings
 
-- **T2-2** — Trigger: Client lives outside UK for 3+ months. Action: SLC applies country-specific thresholds. Do not use UK thresholds. Escalate.
+- **T2-2**: Trigger: Client lives outside UK for 3+ months. Action: SLC applies country-specific thresholds. Do not use UK thresholds. Escalate.
 
 ### T2-3 -- Approaching write-off date
 
-- **T2-3** — Trigger: Client is within 2 years of write-off. Action: Advise against voluntary overpayments. Flag for reviewer to confirm exact write-off date with SLC.
+- **T2-3**: Trigger: Client is within 2 years of write-off. Action: Advise against voluntary overpayments. Flag for reviewer to confirm exact write-off date with SLC.
 
 ### T2-4 -- Mid-year overseas move
 
-- **T2-4** — Trigger: Client was UK-resident part of the year, then moved abroad. Action: UK SA covers UK-resident period; SLC overseas assessment covers the rest. Flag for reviewer.
+- **T2-4**: Trigger: Client was UK-resident part of the year, then moved abroad. Action: UK SA covers UK-resident period; SLC overseas assessment covers the rest. Flag for reviewer.
 
 ### T2-5 -- Early repayment decision
 
-- **T2-5** — Trigger: Client asks whether to make voluntary overpayments. Action: Flag for reviewer. Consider interest rates, write-off proximity, and opportunity cost.
+- **T2-5**: Trigger: Client asks whether to make voluntary overpayments. Action: Flag for reviewer. Consider interest rates, write-off proximity, and opportunity cost.
 
 ### T2-6 -- Next year's threshold not yet published
 
-- **T2-6** — Trigger: Computation requires a 2027-28 or later threshold that HMRC has not announced. Action: Use the latest published figure as a placeholder, clearly label "PROVISIONAL -- threshold pending HMRC announcement", and flag for reviewer to revisit once HMRC publishes.
+- **T2-6**: Trigger: Computation requires a 2027-28 or later threshold that HMRC has not announced. Action: Use the latest published figure as a placeholder, clearly label "PROVISIONAL -- threshold pending HMRC announcement", and flag for reviewer to revisit once HMRC publishes.
 
 ## Section 7 -- Excel working paper template
 
@@ -471,13 +471,55 @@ This skill and its outputs are provided for informational and computational purp
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
+## Checked examples
+
+```oa-check
+name: Plan 2 and Postgraduate Loan, income GBP 42,000 (2024/25)
+inputs:
+  income: 42000
+  plan2: 27295
+  pgl: 21000
+steps:
+  - p2: pct(income - plan2, 9)
+  - pg: pct(income - pgl, 6)
+  - total: p2 + pg
+expected:
+  p2: 1323.45
+  pg: 1260
+  total: 2583.45
+```
+
+```oa-check
+name: Plan 2 and Postgraduate Loan, income GBP 42,000 (2026/27)
+inputs:
+  income: 42000
+  plan2: 29385
+  pgl: 21000
+steps:
+  - p2: pct(income - plan2, 9)
+  - pg: pct(income - pgl, 6)
+  - total: p2 + pg
+expected:
+  p2: 1135.35
+  pg: 1260
+  total: 2395.35
+```
+
+## Sources
+
+- https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2024-to-2025 (read 2026-10-31)
+- https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026 (read 2026-10-31)
+- https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (read 2026-10-31)
+
+Not yet confirmed: Plan 5 rows for 2024/25 and 2025/26 (the GBP 25,000 is on the 2026/27 page only); descriptive rows.
+
 <!-- openaccountants-cta-block -->
 
 ---
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

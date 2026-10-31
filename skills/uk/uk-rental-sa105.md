@@ -335,6 +335,39 @@ The working sheet adds boxes 20, 22, 23, 30 and 31, then subtracts boxes 24 to 2
 - [ ] MTD position checked for April 2026, April 2027 and April 2028.
 - [ ] Return filed and balance and payments on account paid by the deadlines.
 
+## Checked examples
+
+```oa-check
+name: Rents GBP 3,000, property allowance instead of expenses
+inputs:
+  rents: 3000
+  allowance: 1000
+steps:
+  - taxable: rents - allowance
+expected:
+  taxable: 2000
+```
+
+```oa-check
+name: Rent-a-Room, receipts GBP 9,000, alternative method
+inputs:
+  rents: 9000
+  limit: 7500
+steps:
+  - taxable: rents - limit
+expected:
+  taxable: 1500
+```
+
+## Sources
+
+- https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income (read 2026-10-31)
+- https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet/hs223-rent-a-room-scheme-2026 (read 2026-10-31)
+- https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1092 (read 2026-10-31)
+- https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (read 2026-10-31)
+
+Not yet confirmed: nothing outstanding from this pass.
+
 <!-- openaccountants-cta-block -->
 
 ---

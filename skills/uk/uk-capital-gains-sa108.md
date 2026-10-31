@@ -376,6 +376,43 @@ Claim codes (boxes 8, 13.6, 20, 28, 36): PRR, LET, GHO (gift hold-over), ROR, PR
 - [ ] Claims and deadlines diaried: BADR/IR by 31 January 2028 for 2025/26; return and payment by 31 January 2027.
 - [ ] Computations, valuations and estimates attached; figures labelled as estimates until confirmed.
 
+## Checked examples
+
+```oa-check
+name: Basic rate gain GBP 23,000, annual exempt amount GBP 3,000 (2026/27)
+inputs:
+  gain: 23000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 18)
+expected:
+  taxable: 20000
+  tax: 3600
+```
+
+```oa-check
+name: Higher rate gain GBP 23,000, annual exempt amount GBP 3,000 (2026/27)
+inputs:
+  gain: 23000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 24)
+expected:
+  taxable: 20000
+  tax: 4800
+```
+
+## Sources
+
+- https://www.gov.uk/capital-gains-tax/print (read 2026-10-31)
+- https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (read 2026-10-31)
+- https://www.gov.uk/business-asset-disposal-relief/print (read 2026-10-31)
+- https://assets.publishing.service.gov.uk/media/6a02e5df4fb0713aa63ea77c/SA108-Notes-2026.pdf (read 2026-10-31)
+
+Not yet confirmed: nothing outstanding from this pass.
+
 <!-- openaccountants-cta-block -->
 
 ---

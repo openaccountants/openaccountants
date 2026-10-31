@@ -317,6 +317,41 @@ The UK rules implement the OECD CARF through the regulations above. Questions ab
 - [ ] Earlier unpaid tax: Cryptoasset Disclosure Service considered.
 - [ ] Figures labelled as estimates until records are confirmed.
 
+## Checked examples
+
+```oa-check
+name: Crypto gain GBP 12,000, basic rate taxpayer (2026/27)
+inputs:
+  gain: 12000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 18)
+expected:
+  taxable: 9000
+  tax: 1620
+```
+
+```oa-check
+name: Crypto gain GBP 12,000, higher rate taxpayer (2026/27)
+inputs:
+  gain: 12000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 24)
+expected:
+  taxable: 9000
+  tax: 2160
+```
+
+## Sources
+
+- https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (read 2026-10-31)
+- https://www.gov.uk/income-tax-rates (read 2026-10-31)
+
+Not yet confirmed: three capital gains rows, GBP 1,500 trustee allowance not on the pages read.
+
 <!-- openaccountants-cta-block -->
 
 ---
