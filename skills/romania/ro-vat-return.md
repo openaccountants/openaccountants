@@ -1,10 +1,10 @@
 ---
 name: ro-vat-return
-description: "Use this skill for Romanian VAT (TVA, taxa pe valoarea adăugată) in tax year 2026: who must register, the 21% standard rate and 11% reduced rate set by Legea 141/2025 from 1 August 2025 and what the 11% list covers, the 9% transitional rate for homes ending 31 July 2026, the 395,000 lei small-enterprise exemption, monthly or quarterly D300 returns due on the 25th, the D394 local listing due on the 30th, the D390 EU listing, RO e-TVA pre-filled returns and compliance notices, RO e-Factura in five working days, domestic and EU reverse charge, intra-EU supplies, the 50% car restriction, refunds, interest and fines. Trigger phrases: Romanian VAT, TVA Romania, D300, decont de TVA, D394, e-TVA, cota TVA 21%, plafon 395.000 lei, VAT registration Romania. Out of scope: e-invoice formats and validation (romania-einvoice), company tax (ro-corporate-income-tax), residence and withholding (ro-cross-border), the system overview (ro-tax-overview)."
-version: 1.1
+description: "Use this skill for Romanian VAT (TVA, taxa pe valoarea adăugată) in tax year 2026: who must register, the 21% standard rate and 11% reduced rate set by Legea 141/2025 from 1 August 2025 and what the 11% list covers, the 9% transitional rate for homes ending 31 July 2026, the 395,000 lei small-enterprise exemption, monthly or quarterly D300 returns due on the 25th, the D394 local listing due on the 30th, the D390 EU listing, RO e-TVA pre-filled returns and compliance notices, RO e-Factura in five working days, domestic and EU reverse charge, intra-EU supplies, the 50% car restriction, refunds, interest and fines. Trigger phrases: Romanian VAT, Romania VAT return, Romanian VAT rate, TVA Romania, D300, decont de TVA, D394, e-TVA, cota TVA 21%, plafon 395.000 lei, VAT registration Romania. Out of scope: e-invoice formats and validation (romania-einvoice), company tax (ro-corporate-income-tax), residence and withholding (ro-cross-border), the system overview (ro-tax-overview)."
+version: 1.2
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -18,7 +18,7 @@ This skill covers Romanian VAT for the 2026 calendar year: who is in, the rates,
 
 The law is Title VII of Legea 227/2015 (Codul fiscal, "the Fiscal Code") and Legea 207/2015 (Codul de procedură fiscală, "the Procedure Code"). Every article below was read on 23 October 2026 in ANAF's consolidated texts, both shown as last updated by Legea 170/2026. ANAF notes that these consolidations are not an official republication. The current rates come from Legea 141/2025, art. II pt. 42, which rewrote art. 291(1) and (2) and took effect on 1 August 2025 (art. VII(1) of that law). Older drafts of this skill credited the change to OUG 59/2025; that was wrong. Superscript article numbers are written as 278^1, 13^2 and so on.
 
-Related skills: [romania-einvoice](romania-einvoice.md) (RO e-Factura formats, validation, archiving), [ro-corporate-income-tax](ro-corporate-income-tax.md), [ro-cross-border](ro-cross-border.md), [ro-tax-overview](ro-tax-overview.md). [romania-vat-return](romania-vat-return.md) is an older alias of this skill and points here.
+Related skills: [romania-einvoice](romania-einvoice.md) (RO e-Factura formats, validation, archiving), [ro-corporate-income-tax](ro-corporate-income-tax.md), [ro-cross-border](ro-cross-border.md), [ro-tax-overview](ro-tax-overview.md).
 
 ## Who this applies to
 
@@ -70,7 +70,7 @@ Sort the client first:
 - hotel and similar accommodation, including camping pitches;
 - restaurant and catering services, except alcoholic drinks and NC 2202 drinks.
 
-Anything not on that list, and not exempt, is at 21%. Since 1 August 2025 there is no 5% or 9% rate in art. 291. The 9% rate survives only in Legea 141/2025 art. III: for the transitional homes above, and, until 1 August 2026, for buildings sold to town halls for subsidised rent under advance contracts signed by 1 August 2025 (art. III(4)). D300 has a separate row 11 for it.
+Anything not on that list, and not exempt, is at 21%. Since 1 August 2025 there is no 19%, 5% or 9% rate in art. 291. The 9% rate survives only in Legea 141/2025 art. III: for the transitional homes above, and, until 1 August 2026, for buildings sold to town halls for subsidised rent under advance contracts signed by 1 August 2025 (art. III(4)). D300 has a separate row 11 for it.
 
 **Which rate applies when the rate changes.** The rate in force when the chargeable event happens (delivery or performance). Where an invoice or advance came first, the rate at that earlier date applies and is regularised to the rate at delivery (art. 291(4) and (6)). Imports and intra-EU acquisitions take the rate for the same goods supplied in Romania (art. 291(7) and (8)).
 
