@@ -1,0 +1,234 @@
+{
+  "original_candidate": "32d4e3e8c3121fa37fa7648b5343116dacd08cc4",
+  "repair_commit": "ce1666a9ef976cb9b42bcbea4a1d9d2adc08efe9",
+  "changed_paths": [
+    "skills/international/andorra/ad-corporate-income-tax.md",
+    "skills/international/andorra/ad-income-tax.md",
+    "skills/international/andorra/ad-payroll-social.md",
+    "skills/research/andorra-2026/removed-and-why.md"
+  ],
+  "preservation": [
+    {
+      "path": "skills/international/andorra/README.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-company-formation.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/ad-tax-overview.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 0
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 2
+    },
+    {
+      "path": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 3
+    },
+    {
+      "path": "skills/research/andorra-2026/nonresident-supplementary-controls.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 1
+    },
+    {
+      "path": "skills/research/andorra-2026/continuation-controls.md",
+      "worktree_matches_fix_commit": true,
+      "frontmatter_bytes_unchanged": true,
+      "cta_suffix_bytes_unchanged": true,
+      "controls_byte_exact_unchanged": true,
+      "control_count": 4
+    }
+  ],
+  "total_controls": 20,
+  "controls": [
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "name": "Andorra loss relief settlement floor without credits",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "name": "Andorra ordinary permanent expense adjustments",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "name": "Andorra 2026 direct business income and proportional bonus",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "name": "Andorra 2026 employment savings and capped foreign credit",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "name": "Andorra separate service and royalty withholding",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "name": "Andorra property gain and withholding settlement",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "name": "Andorra ordinary employee annual rate and monthly payroll",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "name": "Andorra self-employed 50 percent base with July wage floor",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "name": "Andorra controlled service price reconciliation",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "name": "Andorra related financing pricing comparison",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "name": "Andorra ordinary IGI mixed rates and prior credit",
+      "pass": true
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "name": "Andorra reverse charge and investment car presumption",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra ordinary advance and annual balance",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra advance excess reconciliation",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/corporate-supplementary-controls.md",
+      "name": "Andorra eligible intangible partial expenditure ratio",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/nonresident-supplementary-controls.md",
+      "name": "Andorra non-resident rental income base",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra combined loss and credit settlement floor",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra PE cessation gain and annual balance",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra ordinary 25 percent health complement across July",
+      "pass": true
+    },
+    {
+      "path": "skills/research/andorra-2026/continuation-controls.md",
+      "name": "Andorra company migration deemed share gain",
+      "pass": true
+    }
+  ],
+  "examples_check": {
+    "exit_code": 0,
+    "stdout": "checked 9 files, 20 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  "guide_validation": {
+    "exit_code": 0,
+    "stdout": "checked 2263 guides (44 non-guide .md files skipped)\nchecked 6122 generated package frontmatter block(s)\nWARN: 795 guides missing `a `## Sources` section with a URL (tax skills)`\nWARN: 5 guides missing `fresh figures (last_updated within a year, tax_year current)`\nWARN: 5 guides missing `jurisdiction (jurisdiction-agnostic dirs)`\n\nvalidation passed (3 warning group(s))\n",
+    "stderr": ""
+  },
+  "readme_bytes_unchanged": true,
+  "exact_IT_IND_partial": "\"The exact 2026 annual dependent-income minimum-wage benchmark after July's wage change remains unconfirmed; the general family-relief method is supplied.\"",
+  "original_review_sha256_before": "1131a75a1c2020e32756fffdca88eb1511941604f6ac83eb4c340bc4c03b75eb",
+  "original_review_sha256_after": "1131a75a1c2020e32756fffdca88eb1511941604f6ac83eb4c340bc4c03b75eb",
+  "lost_content_restored": 1,
+  "findings": {
+    "F1": "closed",
+    "F2": "closed: one original topic group restored",
+    "F3": "closed",
+    "F4": "closed by supplying method",
+    "P3": "closed"
+  },
+  "publication": "held; exact existing IT-IND partial retained"
+}

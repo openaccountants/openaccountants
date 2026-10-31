@@ -1,0 +1,228 @@
+[
+  {
+    "name": "bizkaia-law",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:54.380709+00:00",
+    "status": 200,
+    "file": "sources/bizkaia-law.pdf",
+    "bytes": 1322692,
+    "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe"
+  },
+  {
+    "name": "alava-law",
+    "url": "https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:54.381209+00:00",
+    "status": 200,
+    "file": "sources/alava-law.pdf",
+    "bytes": 1609894,
+    "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6"
+  },
+  {
+    "name": "gipuzkoa-law",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:54.381399+00:00",
+    "status": 200,
+    "file": "sources/gipuzkoa-law.pdf",
+    "bytes": 2587573,
+    "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44"
+  },
+  {
+    "name": "bizkaia-reg",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_203_2013.pdf/5d2f80fc-9d5b-0f71-b578-56da0a5a0c50?t=1679483614806",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:54.381598+00:00",
+    "status": 200,
+    "file": "sources/bizkaia-reg.pdf",
+    "bytes": 460049,
+    "sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339"
+  },
+  {
+    "name": "alava-reg",
+    "url": "https://web.araba.eus/documents/d/araba/indice-reglamento-del-impuesto-sobre-sociedades-cas-5-pdf",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:54.381775+00:00",
+    "status": 200,
+    "file": "sources/alava-reg.pdf",
+    "bytes": 533045,
+    "sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09"
+  },
+  {
+    "name": "gipuzkoa-reg",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/8.0761381E7/DF%2017-2015%20%282026%29.pdf/ad233e14-7236-0450-948f-50a669df270f",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:55.978673+00:00",
+    "status": 200,
+    "file": "sources/gipuzkoa-reg.pdf",
+    "bytes": 1066738,
+    "sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c"
+  },
+  {
+    "name": "alava-normative-index",
+    "url": "https://web.araba.eus/es/hacienda/normativa/dispociciones-sociedades",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:56.156079+00:00",
+    "status": 200,
+    "file": "sources/alava-normative-index.html",
+    "bytes": 347462,
+    "sha256": "f08828a83e6e2c277a33da98f936f98a318dcb7927fe836e513a412d18b18d33"
+  },
+  {
+    "name": "alava-news",
+    "url": "https://web.araba.eus/es/hacienda/sociedades/novedades-normativas",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:57.639080+00:00",
+    "status": 200,
+    "file": "sources/alava-news.html",
+    "bytes": 182064,
+    "sha256": "72705e0742f7bf023e534b91195c277fc7d2e11b8acd8c082d6e6c917324ac33"
+  },
+  {
+    "name": "alava-faq",
+    "url": "https://web.araba.eus/es/hacienda/sociedades/preguntas-frecuentes",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:57.677168+00:00",
+    "status": 200,
+    "file": "sources/alava-faq.html",
+    "bytes": 149222,
+    "sha256": "88154d69ae22063a0145a4c8f685fa5fe19ebc8d5d20790a26996f4699f3015d"
+  },
+  {
+    "name": "alava-programme2026",
+    "url": "https://irekia.araba.eus/documents/2908004/2938986/2.1%2B2025-12-23%2BAcuerdo%2B795%2Banexo%2BCAS%2Bcove.pdf/9730184b-0f97-2814-2e93-f465af6a5444?t=1766499116153",
+    "read_on": "2026-10-27",
+    "retrieved_utc": "2026-10-27T19:02:57.878241+00:00",
+    "status": 200,
+    "file": "sources/alava-programme2026.pdf",
+    "bytes": 444534,
+    "sha256": "279ff067c1d46c4c93ba19ee3db45b6205d0c0df2c6b8ccca079a59f3e20869d"
+  },
+  {
+    "name": "alava-df42-2025-gazette",
+    "url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03919_C.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 541986,
+    "sha256": "08a259a6ada4d5c646ce77451505f3a55c33be381747aabd380b4ffbde608cb1",
+    "file": "sources/alava-df42-2025-gazette.pdf"
+  },
+  {
+    "name": "alava-df42-correction2026",
+    "url": "https://www.araba.eus/botha/Boletines/2026/019/2026_019_00372_C.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 52345,
+    "sha256": "c2814060fd26be75b68bfdad05b4b0afcc48cdb19eba2a69fce6fa0d13e15cdb",
+    "file": "sources/alava-df42-correction2026.pdf"
+  },
+  {
+    "name": "bizkaia-2025-web-help",
+    "url": "https://gidak.bizkaia.eus/content/imagenes/SOCIEDADES/Batuz_Gu%C3%ADa%20aplicaci%C3%B3n%20web%20del%20Impuesto%20sobre%20Sociedades%20-%20Individual%20-%202025%20V5%20-%2012JUNIO.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 3687890,
+    "sha256": "2c411beda08de02a272e3dae8733dd0e9faae4764cc47bb1ddefae77aaf07e3a",
+    "file": "sources/bizkaia-2025-web-help.pdf"
+  },
+  {
+    "name": "bizkaia-surcharge-parliament",
+    "url": "https://apps.bizkaia.eus/SIGP/servlet/MuestraArchivoServlet?archivo1=%2Fvar%2Fdatosbfafilec%2Fbfaprog%2FDATOS%2FSIGP%2Fpdf%2F12E0100001290010000276_1770280056175",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 244094,
+    "sha256": "8022411e4f8790223ae6edddde2d0d008fa6168525cf6622779335fde1b21cf7",
+    "file": "sources/bizkaia-surcharge-parliament.pdf"
+  },
+  {
+    "name": "bizkaia-campaign2025",
+    "url": "https://www.bizkaia.eus/es/impuesto-sociedades",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 323788,
+    "sha256": "303ca7d97f9c6bd78b4d5d47c65d59ea8c06f981d5c44ffb1a8f9ecffefa26c5",
+    "file": "sources/bizkaia-campaign2025.html"
+  },
+  {
+    "name": "alava-campaign2025",
+    "url": "https://web.araba.eus/es/hacienda/sociedades/mi-declaracion",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 125641,
+    "sha256": "6dfb9f5e9c18b06b646c5718e1b230f0e89619646805fbc184961cfb65dd3d2d",
+    "file": "sources/alava-campaign2025.html"
+  },
+  {
+    "name": "gipuzkoa-treasury-home",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "file": "sources/gipuzkoa-treasury-home.html",
+    "bytes": 256149,
+    "sha256": "75ca3231fe564b32d2edc0fc11373b6b5d4f6016429df280d18081d6cc771643"
+  },
+  {
+    "name": "gipuzkoa-corporate-landing",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/sociedades",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "file": "sources/gipuzkoa-corporate-landing.html",
+    "bytes": 236318,
+    "sha256": "fe40a6821a17ce1c5e7cc3d4d559b74d791290b8850e188215277dd0a0dbe0a0"
+  },
+  {
+    "name": "gipuzkoa-programmes",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/programas-ayuda",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "file": "sources/gipuzkoa-programmes.html",
+    "bytes": 254045,
+    "sha256": "93234a5c3351407178ea9984d792ad34561bdf6efb09f674ed1d9783ec89f774"
+  },
+  {
+    "name": "gipuzkoa-model200",
+    "url": "https://www.gipuzkoa.eus/es/web/ogasuna/impuestos/modelo/200",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "file": "sources/gipuzkoa-model200.html",
+    "bytes": 243357,
+    "sha256": "cc68d02604db8b7861403133a37f75b18a72995e73565afa3627bd726b650d3f"
+  },
+  {
+    "name": "bizkaia-irnr",
+    "url": "https://www.bizkaia.eus/documents/880307/15187815/ca_12_2013.pdf/f4546f62-db4b-682d-60af-aab88f7da8b1?t=1768552029655",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 236552,
+    "sha256": "b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1",
+    "file": "sources/bizkaia-irnr.pdf"
+  },
+  {
+    "name": "alava-irnr",
+    "url": "https://web.araba.eus/documents/d/araba/indice_nf-del-ir-de-no-residentes-cas-pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 446013,
+    "sha256": "ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe",
+    "file": "sources/alava-irnr.pdf"
+  },
+  {
+    "name": "gipuzkoa-irnr",
+    "url": "https://www.gipuzkoa.eus/documents/2456431/4.3863475E7/NF%2016-2014%20(2026).pdf/c063bd52-a8c3-f949-c95a-692cfb8515d9",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 799094,
+    "sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+    "file": "sources/gipuzkoa-irnr.pdf"
+  },
+  {
+    "name": "gipuzkoa-order259",
+    "url": "https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2026/06/24/c2604206.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "bytes": 3567982,
+    "sha256": "211ec159542506b766122d48cb6f9107920dbe0ff6aff71d7037a580258c8930",
+    "file": "sources/gipuzkoa-order259.pdf"
+  }
+]

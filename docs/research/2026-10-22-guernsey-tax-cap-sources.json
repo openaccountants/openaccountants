@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://gov.gg/taxcap",
+      "locator": "Introduction; qualifying income; combined cap; social contributions",
+      "sha256": "4e1f7477c8ca78b322bbcde48c09ee74dbc9e70551c3db4597f1e29626bcf743"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=174308&p=0",
+      "locator": "Monetary Values PDF, page 5; columns 2024\u20132018",
+      "sha256": "3ba3c8a099ff6a555e5b7cc0fe28c196dc23292a19888f134f084d6118f88ea9"
+    }
+  ],
+  "unavailable_legislation": "https://www.guernseylegalresources.gg/CHttpHandler.ashx?documentid=80761 (HTTP 403)"
+}

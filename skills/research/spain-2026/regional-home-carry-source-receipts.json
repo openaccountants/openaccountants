@@ -1,0 +1,156 @@
+[
+  {
+    "key": "canarias-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "sha256": "efa11c76eeb98594da1d57cd796977d9af545270056e68da24240d1557a2d94d",
+    "bytes": 463402,
+    "fetched_utc": "2026-10-27T16:47:04.623470+00:00",
+    "independent_verified_sha256": "efa11c76eeb98594da1d57cd796977d9af545270056e68da24240d1557a2d94d"
+  },
+  {
+    "key": "canarias-home",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/inversion-vivienda-habitual.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/inversion-vivienda-habitual.html",
+    "sha256": "8d03d09da63dfb9abf42b1c01f3a6669d59517923f9e8ca6bd8055da43814a72",
+    "bytes": 14388,
+    "fetched_utc": "2026-10-27T16:47:03.826432+00:00",
+    "independent_verified_sha256": "8d03d09da63dfb9abf42b1c01f3a6669d59517923f9e8ca6bd8055da43814a72"
+  },
+  {
+    "key": "lirpf-incorporated2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20111231&tn=1",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20111231&tn=1",
+    "sha256": "3ca2b942e7f013eeb19641ae2abcc4e9e62b4e306475c3fc967241f2eefc9b64",
+    "bytes": 1570548,
+    "fetched_utc": "2026-10-27T16:47:12.691946+00:00",
+    "independent_verified_sha256": "3ca2b942e7f013eeb19641ae2abcc4e9e62b4e306475c3fc967241f2eefc9b64"
+  },
+  {
+    "key": "canarias-common",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/limites-comunes-obligaciones-formales-aplicar-deducciones.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/limites-comunes-obligaciones-formales-aplicar-deducciones.html",
+    "sha256": "9085c85a015f2610ddc07a4bef6b8299899143ebd31a4d7d9b3b7cee0cbc8816",
+    "bytes": 10207,
+    "fetched_utc": "2026-10-27T16:47:04.076326+00:00",
+    "independent_verified_sha256": "9085c85a015f2610ddc07a4bef6b8299899143ebd31a4d7d9b3b7cee0cbc8816"
+  },
+  {
+    "key": "canarias-home-presentation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_5-canarias/10_5_10-inversion-vivienda-habitual.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_5-canarias/10_5_10-inversion-vivienda-habitual.html",
+    "sha256": "991cab60d6dcad5e775e08df0c96d0602d976147e9c3c319fb713f9ffd913f4c",
+    "bytes": 11183,
+    "fetched_utc": "2026-10-27T16:53:47.680395+00:00",
+    "independent_verified_sha256": "991cab60d6dcad5e775e08df0c96d0602d976147e9c3c319fb713f9ffd913f4c"
+  },
+  {
+    "key": "aeat-priorhome-threshold",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/otras-condiciones-aplicacion-deduccion.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/otras-condiciones-aplicacion-deduccion.html",
+    "sha256": "7641dd6fbead88626b6994dfdd050952d69d09e09fc8774d1738a7c892d20a47",
+    "bytes": 13079,
+    "fetched_utc": "2026-10-27T16:53:47.730249+00:00",
+    "independent_verified_sha256": "7641dd6fbead88626b6994dfdd050952d69d09e09fc8774d1738a7c892d20a47"
+  },
+  {
+    "key": "lirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "bytes": 2028806,
+    "fetched_utc": "2026-10-27T16:53:48.279353+00:00",
+    "independent_verified_sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b"
+  },
+  {
+    "key": "balears-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "sha256": "95f72d56a1c804a6be36a96d7922f4ddabec98923535379020258ef367c961ea",
+    "bytes": 718564,
+    "fetched_utc": "2026-10-27T16:47:03.909536+00:00",
+    "independent_verified_sha256": "95f72d56a1c804a6be36a96d7922f4ddabec98923535379020258ef367c961ea"
+  },
+  {
+    "key": "galicia-law",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "sha256": "8515e789aa2e06f0998d78037efcb493831668b8fea47f6b9bd6d05219b20b95",
+    "bytes": 675743,
+    "fetched_utc": "2026-10-27T16:47:06.059165+00:00",
+    "independent_verified_sha256": "8515e789aa2e06f0998d78037efcb493831668b8fea47f6b9bd6d05219b20b95"
+  },
+  {
+    "key": "balears-care",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html",
+    "sha256": "360bec41d7497bb8094018051a83d3c95519f19ff37d4db07ae32619819c8b24",
+    "bytes": 15884,
+    "fetched_utc": "2026-10-27T16:47:03.826179+00:00",
+    "independent_verified_sha256": "360bec41d7497bb8094018051a83d3c95519f19ff37d4db07ae32619819c8b24"
+  },
+  {
+    "key": "galicia-empty",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/gastos-derivados-adecuacion-inmueble-vacio-vivienda.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/gastos-derivados-adecuacion-inmueble-vacio-vivienda.html",
+    "sha256": "f29a8641adbd60a926de93912e128ccd33b39e8f0f0394d1f2579d0042056e7e",
+    "bytes": 18955,
+    "fetched_utc": "2026-10-27T16:47:03.820507+00:00",
+    "independent_verified_sha256": "f29a8641adbd60a926de93912e128ccd33b39e8f0f0394d1f2579d0042056e7e"
+  },
+  {
+    "key": "balears-care-presentation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html",
+    "sha256": "e10ab4007d3c88cd085b177afd8231ad17e4ba115e494910ea7a6481a92b4d15",
+    "bytes": 14115,
+    "fetched_utc": "2026-10-27T16:49:13.139770+00:00",
+    "independent_verified_sha256": "e10ab4007d3c88cd085b177afd8231ad17e4ba115e494910ea7a6481a92b4d15"
+  },
+  {
+    "key": "galicia-empty-presentation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_20-gastos-derivados-adecuacion-inmueble-vivienda.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_20-gastos-derivados-adecuacion-inmueble-vivienda.html",
+    "sha256": "615d8a70afb6c4daf266c944eb486bfc651c08092333074472fc6ee76170f0d4",
+    "bytes": 17588,
+    "fetched_utc": "2026-10-27T16:49:13.149069+00:00",
+    "independent_verified_sha256": "615d8a70afb6c4daf266c944eb486bfc651c08092333074472fc6ee76170f0d4"
+  },
+  {
+    "key": "balears-atib-irpf25",
+    "url": "https://www.atib.es/DescargaDocs/DA_IRPF25_s.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "final_url": "https://www.atib.es/DescargaDocs/DA_IRPF25_s.pdf",
+    "sha256": "53d16bd2f072dcb923ee3e4b8c1bb6440e4e8b5780791e5e26b0e06eb9c6c054",
+    "bytes": 350950,
+    "fetched_utc": "2026-10-27T16:49:13.911917+00:00",
+    "independent_verified_sha256": "53d16bd2f072dcb923ee3e4b8c1bb6440e4e8b5780791e5e26b0e06eb9c6c054"
+  }
+]

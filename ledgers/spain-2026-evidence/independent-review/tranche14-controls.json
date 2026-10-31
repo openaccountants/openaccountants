@@ -1,0 +1,486 @@
+{
+  "count": 80,
+  "checks": [
+    {
+      "name": "microEligibleAssetsEquality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "microStaffTenNotBelow",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "BcorporateShare25Disqualifier",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "NcorporateShare25NotOver",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "NturnoverHalfEquality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "domesticDividendIntegrated",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "domesticDividendQuota",
+      "actual": "1200",
+      "expected": "1200",
+      "pass": true
+    },
+    {
+      "name": "dividendWrongFullQuota",
+      "actual": "2400",
+      "expected": "2400",
+      "pass": true
+    },
+    {
+      "name": "globalImpairmentCeiling",
+      "actual": "3500",
+      "expected": "3500",
+      "pass": true
+    },
+    {
+      "name": "globalImpairmentIncrement",
+      "actual": "1500",
+      "expected": "1500",
+      "pass": true
+    },
+    {
+      "name": "indexedCost",
+      "actual": "107100",
+      "expected": "107100",
+      "pass": true
+    },
+    {
+      "name": "indexedDepreciation",
+      "actual": "6180",
+      "expected": "6180",
+      "pass": true
+    },
+    {
+      "name": "indexedNet",
+      "actual": "100920",
+      "expected": "100920",
+      "pass": true
+    },
+    {
+      "name": "carrying",
+      "actual": "94000",
+      "expected": "94000",
+      "pass": true
+    },
+    {
+      "name": "monetaryDeduction",
+      "actual": "6920",
+      "expected": "6920",
+      "pass": true
+    },
+    {
+      "name": "positiveDisposal",
+      "actual": "49080",
+      "expected": "49080",
+      "pass": true
+    },
+    {
+      "name": "monetaryCapPositive",
+      "actual": "5000",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "lossNoCorrection",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "carOrdinaryCap",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "carLowerExpense",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "electricDepRateCap",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "BfinancingProportion",
+      "actual": "750",
+      "expected": "750",
+      "pass": true
+    },
+    {
+      "name": "NotherWithFinanceCap",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "microOptionBase",
+      "actual": "85000",
+      "expected": "85000",
+      "pass": true
+    },
+    {
+      "name": "microGrossQuota",
+      "actual": "17000",
+      "expected": "17000",
+      "pass": true
+    },
+    {
+      "name": "microBucket",
+      "actual": "5950",
+      "expected": "5950",
+      "pass": true
+    },
+    {
+      "name": "microFloor",
+      "actual": "12750",
+      "expected": "12750",
+      "pass": true
+    },
+    {
+      "name": "microUsed",
+      "actual": "4250",
+      "expected": "4250",
+      "pass": true
+    },
+    {
+      "name": "microCarry",
+      "actual": "1750",
+      "expected": "1750",
+      "pass": true
+    },
+    {
+      "name": "microPayable",
+      "actual": "2750",
+      "expected": "2750",
+      "pass": true
+    },
+    {
+      "name": "Nquota",
+      "actual": "19000",
+      "expected": "19000",
+      "pass": true
+    },
+    {
+      "name": "NcreditBucket",
+      "actual": "4750",
+      "expected": "4750",
+      "pass": true
+    },
+    {
+      "name": "Nclaim",
+      "actual": "4750",
+      "expected": "4750",
+      "pass": true
+    },
+    {
+      "name": "Ncarry",
+      "actual": "3250",
+      "expected": "3250",
+      "pass": true
+    },
+    {
+      "name": "Npayable",
+      "actual": "4250",
+      "expected": "4250",
+      "pass": true
+    },
+    {
+      "name": "Ninstalment",
+      "actual": "5400",
+      "expected": "5400",
+      "pass": true
+    },
+    {
+      "name": "AlavaAmountNoCredit",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "AlavaInterpretedFloor",
+      "actual": "17000",
+      "expected": "17000",
+      "pass": true
+    },
+    {
+      "name": "AlavaDefaultFloor",
+      "actual": "19000",
+      "expected": "19000",
+      "pass": true
+    },
+    {
+      "name": "AlavaSeparate6kClaim",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "AlavaSeparate8kClaim",
+      "actual": "7000",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "NoCreditNoRateCut",
+      "actual": "24000",
+      "expected": "24000",
+      "pass": true
+    },
+    {
+      "name": "NforeignOnlyMinimum",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "NfilmMinimum",
+      "actual": "13000",
+      "expected": "13000",
+      "pass": true
+    },
+    {
+      "name": "NfilmQuota",
+      "actual": "17000",
+      "expected": "17000",
+      "pass": true
+    },
+    {
+      "name": "NforeignBelowFloorNoFilm",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "NfilmClaimImpossiblePositive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "SequentialOrdinary",
+      "actual": "35000",
+      "expected": "35000",
+      "pass": true
+    },
+    {
+      "name": "SequentialRD",
+      "actual": "45500",
+      "expected": "45500",
+      "pass": true
+    },
+    {
+      "name": "SequentialEnv",
+      "actual": "9750",
+      "expected": "9750",
+      "pass": true
+    },
+    {
+      "name": "BenvGrant",
+      "actual": "15200",
+      "expected": "15200",
+      "pass": true
+    },
+    {
+      "name": "BenvBase",
+      "actual": "84800",
+      "expected": "84800",
+      "pass": true
+    },
+    {
+      "name": "BenvGenerated",
+      "actual": "29680",
+      "expected": "29680",
+      "pass": true
+    },
+    {
+      "name": "AGenvGenerated",
+      "actual": "28000",
+      "expected": "28000",
+      "pass": true
+    },
+    {
+      "name": "TerritorialDifference",
+      "actual": "1680",
+      "expected": "1680",
+      "pass": true
+    },
+    {
+      "name": "AGhire2026",
+      "actual": "7700",
+      "expected": "7700",
+      "pass": true
+    },
+    {
+      "name": "AGspecialHire",
+      "actual": "15400",
+      "expected": "15400",
+      "pass": true
+    },
+    {
+      "name": "WomenYoungOverlay",
+      "actual": "9/20",
+      "expected": "9/20",
+      "pass": true
+    },
+    {
+      "name": "PensionRatio",
+      "actual": "1/100",
+      "expected": "1/100",
+      "pass": true
+    },
+    {
+      "name": "PreferredBelow15",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "OtherBelow15",
+      "actual": "50",
+      "expected": "50",
+      "pass": true
+    },
+    {
+      "name": "PreferredAt15",
+      "actual": "225",
+      "expected": "225",
+      "pass": true
+    },
+    {
+      "name": "OtherAt15",
+      "actual": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "name": "BGmeasure",
+      "actual": "250000",
+      "expected": "250000",
+      "pass": true
+    },
+    {
+      "name": "BGpriorMean",
+      "actual": "100000.0",
+      "expected": "100000",
+      "pass": true
+    },
+    {
+      "name": "BGsurcharge",
+      "actual": "816",
+      "expected": "816",
+      "pass": true
+    },
+    {
+      "name": "BGincreasedQuota",
+      "actual": "46416",
+      "expected": "46416",
+      "pass": true
+    },
+    {
+      "name": "BGnet",
+      "actual": "143584",
+      "expected": "143584",
+      "pass": true
+    },
+    {
+      "name": "WrongAverageAllocation",
+      "actual": "15504/25",
+      "expected": "15504/25",
+      "pass": true
+    },
+    {
+      "name": "WrongDirectProfitCharge",
+      "actual": "3400",
+      "expected": "3400",
+      "pass": true
+    },
+    {
+      "name": "AtriggerPreTax",
+      "actual": "135000",
+      "expected": "135000",
+      "pass": true
+    },
+    {
+      "name": "AtaxableExcess",
+      "actual": "55000",
+      "expected": "55000",
+      "pass": true
+    },
+    {
+      "name": "AexactSurcharge",
+      "actual": "29432841/111746",
+      "expected": "29432841/111746",
+      "pass": true
+    },
+    {
+      "name": "AwholeReconciliation",
+      "actual": "190000",
+      "expected": "190000",
+      "pass": true
+    },
+    {
+      "name": "AthirdBand",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "ADisplayCents",
+      "actual": "45863.39",
+      "expected": "45863.39",
+      "pass": true
+    },
+    {
+      "name": "232EqualNoTrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "232CentTrigger",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "BaggregateTwoTypes",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "AGseparateTypes",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    }
+  ],
+  "scope": "Independent selected ordinary fact patterns; conditional interpretations retained, no universal accounting allocation or return rounding proved."
+}

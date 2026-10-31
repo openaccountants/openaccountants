@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ca" data-i18ncatalogurl="https://www.ajuntamentdetremp.cat/plonejsi18n" xml:lang="ca">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Nuclis Agregats — Ajuntament de Tremp</title>
+    
+    <!-- css links -->
+    <link rel="shortcut icon" href="https://www.ajuntamentdetremp.cat/@@diputacio-controlpanel/++widget++form.widgets.site_favicon/@@download/favicon.ico" /><link rel="canonical" href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" /><link rel="alternate" href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/RSS" title="Nuclis Agregats - RSS 1.0" type="application/rss+xml" /><link rel="alternate" href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/rss.xml" title="Nuclis Agregats - RSS 2.0" type="application/rss+xml" /><link rel="alternate" href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/atom.xml" title="Nuclis Agregats - Atom" type="application/rss+xml" /><link rel="search" href="https://www.ajuntamentdetremp.cat/@@search" title="Cerca en aquest lloc" /><link rel="stylesheet" type="text/css" href="https://www.ajuntamentdetremp.cat/++plone++production/++unique++2022-08-08T11:15:25.222093/default.css" data-bundle="production" /><link rel="stylesheet" type="text/css" href="https://www.ajuntamentdetremp.cat/++plone++product.diputacio/cookieklaro/cookieklaro.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700%7COpen+Sans:300,400,700" /><style media="screen">
+      .bgTheme { background-color: #0073ba !important;}
+      .bgTransTheme { background-color: rgba(0,115,186,0.75) !important;}
+      .colorTheme { color: #0073ba !important; }
+      .textFontTheme { font-family: 'Open Sans', sans-serif !important;}
+      .headerFontTheme { font-family: 'Montserrat', sans-serif !important;}
+      body { font-family: 'Open Sans', sans-serif; }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .template-listing_view #content-core header, .searchResults .result-title, .documentDescription, .h5, .h6 { font-family: 'Montserrat', sans-serif;}
+      .groupThemeDipu3 .goog-te-combo { font-family: 'Montserrat', sans-serif !important;}
+      .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, #portal-slider .slider-item__more:hover { background-color: #0073ba; }
+      .btn-link:hover, .btn-link:focus, #content a:not([href=""]):not(.btn):not([role="button"]):not(.no-link):hover, #portal-footer a:not([href=""]):not(.btn):not([role="button"]):not(.no-link):hover {color: #0073ba;}
+      a:hover { color: #0073ba; }
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem a,
+      .themeTree .portletNavigationTree nav.portletContent .navTreeItemInPath.navTreeItem  a { color: #0073ba; background-color: rgba(255 , 255 , 255 , 0.87); }
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem a::after,
+      .themeTree .portletNavigationTree nav.portletContent .navTreeItemInPath.navTreeItem a::after,
+      .newsItem__title:after { background-color: #0073ba; } 
+      .themeTree .portletNavigationTree nav.portletContent .navTreeCurrentNode.navTreeItem ul a {background-color: transparent; color: #333333;}
+       :root { --primary: #0073ba; --contrastIndex: 255;  }
+      .colorContrast{ color: white; color:rgba(255 , 255 , 255 , 0.87); color: rgba(var(--contrastIndex, 255), var(--contrastIndex, 255), var(--contrastIndex, 255), .87 ) !important; }
+      </style><link rel="stylesheet" type="text/css" href="/++theme++plone-tema-diputacio-2/styles/build/plonetheme.diputacio2.min.css" />
+    <!-- css links end -->
+    <link rel="stylesheet" type="text/css" href="/++theme++plone-tema-diputacio-2/styles/css/custom.css" />
+
+    
+  <meta name="DC.description" content="El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells." /><meta name="description" content="El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells." /><meta name="DC.format" content="text/plain" /><meta name="DC.type" content="Carpeta" /><meta name="DC.date.valid_range" content="2021/08/03 - " /><meta name="DC.date.modified" content="2025-04-07T07:00:23+01:00" /><meta name="DC.date.created" content="2021-07-02T08:56:41+01:00" /><meta name="DC.language" content="ca" /><meta content="summary" name="twitter:card" /><meta content="Ajuntament de Tremp" property="og:site_name" /><meta content="Nuclis Agregats" property="og:title" /><meta content="website" property="og:type" /><meta content="@ajtremp" name="twitter:site" /><meta content="https://www.facebook.com/AjTremp" property="og:article:publisher" /><meta content="El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells." property="og:description" /><meta content="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" property="og:url" /><meta content="https://www.ajuntamentdetremp.cat/@@site-logo/logosol.jpg" property="og:image" /><meta content="image/png" property="og:image:type" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Plone - http://plone.com" /><script>PORTAL_URL = 'https://www.ajuntamentdetremp.cat';</script><script src="https://www.ajuntamentdetremp.cat/++plone++production/++unique++2022-08-08T11:15:25.222093/default.js" data-bundle="production"></script><script type="application/ld+json"> 
+    // JSON SCHEMA
+        {
+            "@context": "http://www.schema.org",
+            "@type": "Organization",
+            "name": "Nuclis Agregats",
+            "url": "https://www.ajuntamentdetremp.cat",
+            "logo": "https://www.ajuntamentdetremp.cat/logo", 
+            "description": "Nuclis Agregats",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Pla&#231;a de la Creu, 1, Tremp",
+                "addressLocality": "Nuclis Agregats",
+                "addressRegion": "Catalonia",
+                "postalCode": "25620",
+                "addressCountry": "Spain"
+            },
+                 
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer support",                
+                "telephone": "+34 973650005",
+                "email": "norespondre@diputaciolleida.cat",
+            }
+        }
+    </script></head>
+  <body id="visual-portal-wrapper" class="frontend icons-off portaltype-folder section-el-municipi site-ajuntament-de-tremp subsection-nuclis-agregats-1 template-blog_view thumbs-off userrole-anonymous viewpermission-view " dir="ltr" data-i18ncatalogurl="https://www.ajuntamentdetremp.cat/plonejsi18n" data-view-url="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" data-pat-plone-modal="{&quot;actionOptions&quot;: {&quot;displayInModal&quot;: false}}" data-portal-url="https://www.ajuntamentdetremp.cat" data-pat-pickadate="{&quot;date&quot;: {&quot;selectYears&quot;: 200}, &quot;time&quot;: {&quot;interval&quot;: 5 } }" data-base-url="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1"><!-- Accessibility accesskeys - Jump to section --><p class="fixed m-3">
+      <a id="skip-to-content" class="btn bgTheme sr-only sr-only-focusable" href="#content"><span class="text-white"> al contingut</span></a>
+      <a id="skip-to-navigation" class="btn bgTheme sr-only sr-only-focusable" href="#main-navigation"><span class="text-white"> a la navegació</span></a>
+      <a id="skip-to-contact-info" class="btn bgTheme sr-only sr-only-focusable" href="#portal-info"><span class="text-white">Informació de contacte</span></a>
+    </p><!-- MOBILE NAVIGATION --><aside id="mobile-navigation" class="hidden-md hidden-lg offcanvas-element bgTheme">
+      <div id="mobile-menu" class="textFontTheme text-bold">
+    <span class="toggler" data-offcanvas="#mobile-navigation" role="button" data-offcanvas-state="hidden">
+      <span class="toggler__icon" aria-hidden="true"></span>
+      <span data-offcanvas-alt="Menú" class="toggler__text">Menú</span>
+    </span>
+    <div class="content">
+      
+      <nav class="">
+        
+          <ul id="mobileAccordion" class="panel-group list-unstyled">
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#tramits" role="button">Tràmits <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="tramits">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/tramits-i-gestions">Tràmits i gestions</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/tramits-i-gestions-1">Canal Empresa - FUE</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/carpeta-ciutadana">Carpeta Ciutadana</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/validacio-documents-electronics">Validació documents electrònics</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/notificacio-electronica">Notificació Electrònica</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/perfil-contractant">Licitacions</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/tauler-dedictes">Tauler d'edictes</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/facturacio-electronica">Facturació electrònica</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/tributs-i-recaptacio">Informació econòmica</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/punt-dinformacio-cadastral">Punt d'Informació Cadastral</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/informacio-urbanistica">Informació Urbanística</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/subvencions-i-ajuts">Subvencions i ajuts</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/oferta-docupacio-publica">Oferta d'ocupació pública</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/unitat-mobil-dni">Unitat mòbil DNI i Passaport</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/tramits/borsa-local-dhabitatge">Borsa Local d'Habitatge</a></li>
+                  </ul>
+            </li>
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#ajuntament" role="button">Ajuntament <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="ajuntament">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/alcaldia-1">L'alcaldessa</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/relacions-institucionals">Relacions institucionals</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/el-consistori-2">El consistori</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/el-govern">Equip de Govern</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/organs-de-govern-1">Òrgans de govern</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/comissions-informatives-1">Comissions informatives</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/junta-de-portaveus">Junta de portaveus</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/ordenances-i-reglaments">Ordenances i reglaments</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/plans-daccio-de-govern">Plans d'acció</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/comunicacio">Comunicació</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/ajuntament/atencio-ciutadana">Atenció ciutadana</a></li>
+                  </ul>
+            </li>
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#seueitramits" role="button">Transparència <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="seueitramits">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/portal-de-transparencia">Portal de Transparència</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/dades-de-transparencia">Dades de transparència</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/codi-de-conducta-dels-alts-carrrecs">Codi de conducta dels alts càrrrecs</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/canals-de-denuncies">Canals de denúncies</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/sol-licitud-dacces-a-la-informacio-publica">Sol·licitud d'accés a la informació pública</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/seueitramits/suggeriments-queixes-i-propostes">Suggeriments, queixes i propostes</a></li>
+                  </ul>
+            </li>
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#actualitat" role="button">Actualitat <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="actualitat">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/actualitat/agenda">Agenda</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/actualitat/noticies">Notícies</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/actualitat/avisos-pregons">Avisos / Pregons</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/actualitat/eagora">Aplicació eAgora</a></li>
+                  </ul>
+            </li>
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#el-municipi" role="button">Municipi <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="el-municipi">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/comerc-i-serveis">Comerç i Serveis</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/poligons-i-empreses">Polígons i empreses</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/parcs-i-jardins">Parcs i Jardins</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/equipaments-municipals">Equipaments municipals</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/entitats">Entitats</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/vilamitjana">EMD Vilamitjana</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">Nuclis Agregats</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/telefons-dinteres">Adreces i telèfons</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/el-municipi/en-xifres">En xifres</a></li>
+                  </ul>
+            </li>
+            <li class="panel panel-default">
+              <div class="panel-heading">
+                
+                  <a data-toggle="collapse" data-parent="#mobileAccordion" href="#visita-tremp" role="button">Visita Tremp <span class="picto-down-open" aria-hidden="true"></span></a>
+                
+                
+              </div>
+                  <ul class="panel-collapse collapse list-unstyled" id="visita-tremp">
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/guia">Mapa interactiu</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/historia-i-patrimoni">Història</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/turisme-cultural">Turisme Cultural</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/turisme-natural">Turisme Natural</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/fires-i-mercats">Fires i Mercats</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/festes-i-tradicions">Festes i tradicions</a></li>
+                    <li><a class="text-white" href="https://www.ajuntamentdetremp.cat/visita-tremp/btt">BTT</a></li>
+                  </ul>
+            </li>
+            
+          </ul>
+       
+      </nav>
+      
+    </div>
+  </div>
+      <div class="p-3 hidden-sm hidden-md"><div id="portal-searchbox-mobile">
+
+   
+    <form id="searchGadget_form_mobile" action="https://www.ajuntamentdetremp.cat/@@search" role="search" class="bb-1">
+
+            <label class="hiddenStructure" for="searchGadgetMobile">Cerca</label>        
+            <input name="SearchableText" type="text" size="18" id="searchGadgetMobile" title="Cerca en el lloc" placeholder="Cerca en el lloc" class="searchField" />
+
+            <button class="searchButton" type="submit">
+                <span class="icon-search flip-horizontal-icon" aria-hidden="true"></span>
+                <span class="sr-only">Cerca</span>
+            </button> 
+          
+        
+
+    </form>
+
+</div></div>
+      
+    </aside><main class="main">
+      <div class="outer-wrapper">
+        
+        
+
+        <!-- HEADER PORTAL -->
+        <header id="content-header" class="pos-relative">
+          <div id="portal-top" class="bg-white" data-spy="affix" data-offset-top="1">
+            <div class="container pt-2">
+              <div id="headerRow" class="row">
+                <div class="col-xs-12 col-sm-6   mb-2">
+                  <a id="portal-logo" class="mainLogo mainLogo--site pl-3 pb-3 mr-6 pl-sm-0 pb-sm-0 mr-md-0" href="https://www.ajuntamentdetremp.cat" title="Ajuntament de Tremp">
+	<img alt="Escut Ajuntament de Tremp." class="mainLogo__image" src="https://www.ajuntamentdetremp.cat/@@site-logo/logosol.jpg" />
+	<span class="mainLogo__title">Ajuntament de Tremp</span>
+</a>
+                </div>
+                <div class="goupSocialLanguage col-xs-12 col-sm-6 text-center text-sm-right hidden-print">
+                  <ul class="list-unstyled eq-height eq-height--middle eq-height--center small">
+                    <li class="px-0"><div id="social-icons">
+
+    <ul class="list-inline h2-size eq-height">
+        <li class="" id="socialicon-facebook">
+            <a href="https://www.facebook.com/AjTremp" class="colorTheme " target="_blank" title="Facebook"><span aria-hidden="true" class="picto-facebook-circled"></span><span class="sr-only">https://www.facebook.com/AjTremp</span></a></li>
+        <li class="" id="socialicon-twitter">
+            <a href="https://twitter.com/AjTremp" class="colorTheme " target="_blank" title="Twitter"><span aria-hidden="true" class="picto-twitter-circled"></span><span class="sr-only">https://twitter.com/AjTremp</span></a></li>
+        <li class="" id="socialicon-instagram">
+            <a href="https://www.instagram.com/ajtremp" class="colorTheme " target="_blank" title="Instagram"><span aria-hidden="true" class="picto-instagram-circled"></span><span class="sr-only">https://www.instagram.com/ajtremp</span></a></li>
+    </ul>
+
+</div></li>                  
+                    <li class="px-0"><div id="portalLanguageGoogle">
+    <div class="languages bg-none colorTheme">
+        <span class="caret languages-icon mt-2" title="languages" aria-hidden="true"></span>
+        <label class="sr-only" for="googTransID">Choose language</label>
+        <select class="goog-te-combo sr-only" aria-label="Widget del menú d'idiomes del Traductor" id="googTransID">
+            <option value="">Sense opcions</option>
+        </select>
+        <div id="google_translate_element"></div>
+        <script type="text/plain" data-type="application/javascript" data-name="google_translate">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'ca', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: false}, 'google_translate_element');
+            }
+            $(window).load(function(e) {
+                $('.goog-te-combo').attr('id','googTransID');
+                $('.goog-te-combo').addClass('colorTheme');
+            });
+        </script>
+        <script type="text/plain" data-type="application/javascript" data-name="google_translate" data-src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>  
+</div></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="bgTransTheme navAbsolute">
+              <div class="container  hidden-xs hidden-sm">
+                <div class="row">
+                  <div class="col-md-11 col-lg-11">
+                    <div id="main-navigation" class="hidden-print">
+
+    <ul class="nav nav-pills">
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Tràmits</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/tramits-i-gestions">Tràmits i gestions</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/tramits-i-gestions-1">Canal Empresa - FUE</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/carpeta-ciutadana">Carpeta Ciutadana</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/validacio-documents-electronics">Validació documents electrònics</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/notificacio-electronica">Notificació Electrònica</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/perfil-contractant">Licitacions</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/tauler-dedictes">Tauler d'edictes</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/facturacio-electronica">Facturació electrònica</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/tributs-i-recaptacio">Informació econòmica</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/punt-dinformacio-cadastral">Punt d'Informació Cadastral</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/informacio-urbanistica">Informació Urbanística</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/subvencions-i-ajuts">Subvencions i ajuts</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/oferta-docupacio-publica">Oferta d'ocupació pública</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/unitat-mobil-dni">Unitat mòbil DNI i Passaport</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/tramits/borsa-local-dhabitatge">Borsa Local d'Habitatge</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Ajuntament</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/alcaldia-1">L'alcaldessa</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/relacions-institucionals">Relacions institucionals</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/el-consistori-2">El consistori</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/el-govern">Equip de Govern</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/organs-de-govern-1">Òrgans de govern</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/comissions-informatives-1">Comissions informatives</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/junta-de-portaveus">Junta de portaveus</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/ordenances-i-reglaments">Ordenances i reglaments</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/plans-daccio-de-govern">Plans d'acció</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/comunicacio">Comunicació</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/ajuntament/atencio-ciutadana">Atenció ciutadana</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Transparència</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/portal-de-transparencia">Portal de Transparència</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/dades-de-transparencia">Dades de transparència</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/codi-de-conducta-dels-alts-carrrecs">Codi de conducta dels alts càrrrecs</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/canals-de-denuncies">Canals de denúncies</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/sol-licitud-dacces-a-la-informacio-publica">Sol·licitud d'accés a la informació pública</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/seueitramits/suggeriments-queixes-i-propostes">Suggeriments, queixes i propostes</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Actualitat</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/actualitat/agenda">Agenda</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/actualitat/noticies">Notícies</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/actualitat/avisos-pregons">Avisos / Pregons</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/actualitat/eagora">Aplicació eAgora</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Municipi</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/comerc-i-serveis">Comerç i Serveis</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/poligons-i-empreses">Polígons i empreses</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/parcs-i-jardins">Parcs i Jardins</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/equipaments-municipals">Equipaments municipals</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/entitats">Entitats</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/vilamitjana">EMD Vilamitjana</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">Nuclis Agregats</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/telefons-dinteres">Adreces i telèfons</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/el-municipi/en-xifres">En xifres</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          
+            <a class="dropdown-toggle h4-size text-nowrap  colorContrast" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <span>Visita Tremp</span> <span class="picto-down-open"></span>
+            </a>
+          
+          
+          <ul class="dropdown-menu">
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/guia">Mapa interactiu</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/historia-i-patrimoni">Història</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/turisme-cultural">Turisme Cultural</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/turisme-natural">Turisme Natural</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/fires-i-mercats">Fires i Mercats</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/festes-i-tradicions">Festes i tradicions</a></li>
+            <li><a href="https://www.ajuntamentdetremp.cat/visita-tremp/btt">BTT</a></li>
+          </ul>
+      </li>
+    </ul>
+ 
+</div>
+                  </div>
+                  <section class="col-md-1 col-lg-1 text-right hidden-print">
+                    <h2 class="sr-only">Cercador</h2>
+                    <div id="portal-searchbox">
+
+    
+    <button type="button" data-toggle="modal" data-target="#modalSearchBox" class="searchBox__button">
+        <span class="icon-search flip-horizontal-icon colorContrast h2-size mt-2" aria-hidden="true"></span>
+        <span class="sr-only">Cerca</span>
+    </button>      
+</div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            
+          </div><div class="affixHack" role="presentation"></div>
+        </header><!-- / HEADER PORTAL -->
+
+        <div id="page-header">
+
+	
+
+	<div id="interior-slider" class=" hidden-print pos-relative">
+		
+		<picture class="interiorSlider__image">
+			<source media="(min-width: 1200px)" srcset="https://www.ajuntamentdetremp.cat/el-municipi/@@images/a9a7fb40-c526-4340-b01e-b18a98fc657b.jpeg"></source>
+			<source media="(min-width: 768px)" srcset="https://www.ajuntamentdetremp.cat/el-municipi/@@images/2e90475e-9a6d-49de-9271-38c8873f62bd.jpeg"></source>
+			<source srcset="https://www.ajuntamentdetremp.cat/el-municipi/@@images/36dff132-c35c-46d9-a2cf-884906dc17f4.jpeg"></source>
+			<img class="" aria-hidden="true" alt="imatge de la secció" src="https://www.ajuntamentdetremp.cat/el-municipi/@@images/a9a7fb40-c526-4340-b01e-b18a98fc657b.jpeg" />
+		</picture> 
+			
+		<div class=" sectionHeader bgTransTheme">
+			<div class="container">
+				<div class="row">
+					<p class="col-xs-12 col-sm-12 colorContrast mb-4 mt-3 text-bold headerFontTheme">
+							Municipi
+					</p>
+				</div>
+			</div>			
+		</div>			
+ 
+	</div>
+
+	
+
+</div>
+
+        <div id="above-content-wrapper" class="pt-3 bt-1 bb-1 mb-5">
+          <div class="container pt-2">
+            <section id="viewlet-above-content"><nav id="portal-breadcrumbs" class="plone-breadcrumb" aria-labelledby="breadcrumbs-you-are-here">
+  <div class="container">
+    <h2 id="breadcrumbs-you-are-here" class="hiddenStructure">Sou a:</h2>
+    <ol aria-labelledby="breadcrumbs-you-are-here">
+      <li id="breadcrumbs-home">
+        <a href="https://www.ajuntamentdetremp.cat">Inici</a>
+      </li>
+      <li id="breadcrumbs-1">
+        
+          <a href="https://www.ajuntamentdetremp.cat/el-municipi">Municipi</a>
+          
+        
+      </li>
+      <li id="breadcrumbs-2">
+        
+          
+          <span id="breadcrumbs-current">Nuclis Agregats</span>
+        
+      </li>
+    </ol>
+  </div>
+</nav></section>
+          </div>
+        </div>
+
+        <div id="statusBar" class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <aside id="global_statusmessage" aria-label="Alertes del sistema">
+      
+
+      <div>
+      </div>
+    </aside>
+            </div>
+          </div>
+        </div>
+
+    		<div id="full-container">
+    		  <div id="inside-full-container" class="container">
+    		    <div id="main-container" class="row flex-canvas">    		      
+    		      
+
+    
+
+    <div class="col-xs-12 col-md-8 col-lg-9 col-md-push-4 col-lg-push-3">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <article id="content">
+
+          
+
+          <header>
+            <div id="viewlet-above-content-title">
+<span id="social-tags-body" style="display: none" itemscope="" itemtype="http://schema.org/WebPage">
+  <span itemprop="name">Nuclis Agregats</span>
+  <span itemprop="description">El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells.</span>
+  <span itemprop="url">https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1</span>
+  <span itemprop="image">https://www.ajuntamentdetremp.cat/@@site-logo/logosol.jpg</span>
+</span>
+</div>
+            
+                <h1 class="documentFirstHeading mt-0 text-darker &#10;      ">Nuclis Agregats</h1>
+            
+            <div id="viewlet-below-content-title">
+
+</div>
+
+            
+                <p class="documentDescription description text-gray textFontTheme &#10;      ">El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells.</p>
+            
+          </header>
+
+          <div id="viewlet-above-content-body"></div>
+          <div id="content-core" class="clearfix">
+            
+
+      <div class="eq-height row mt-3">
+        
+
+  
+
+  
+    
+      
+        
+                
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/aulas/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/aulas/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/aulas">Aulàs</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/casterner-de-les-olles/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/casterner-de-les-olles/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/casterner-de-les-olles">Casterner de les Olles</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castissent/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castissent/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castissent">Castissent</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claramunt/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claramunt/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claramunt">Claramunt</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claret/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claret/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claret">Claret</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castellet/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castellet/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castellet">El Castellet</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/els-masos-de-tamurcia/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/els-masos-de-tamurcia/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/els-masos-de-tamurcia">Els Masos de Tamúrcia</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/eroles/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/eroles/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/eroles">Eroles</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/escarla/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/escarla/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/escarla">Escarlà</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espills/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espills/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espills">Espills</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-serra/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-serra/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-serra">Espluga Serra</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-freda/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-freda/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-freda">Espluga Freda</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/figols/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/figols/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/figols">Figols</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/gurp/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/gurp/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/gurp">Gurp</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/la-torre-de-tamurcia/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/la-torre-de-tamurcia/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/la-torre-de-tamurcia">La Torre de Tamúrcia</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/llastarri/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/llastarri/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/llastarri">Llastarri</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/orrit/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/orrit/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/orrit">El Pont d'Orrit</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/palau-de-noguera/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/palau-de-noguera/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/palau-de-noguera">Palau de Noguera</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigcercos/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigcercos/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigcercos">Puigcercós</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+              
+                   
+
+                    <article class="newsItem col-xs-12 col-sm-6 col-lg-6 mb-4 pos-relative ">
+
+                        <div class="visible-block height-100 pos-relative">
+                            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigverd/@@images/image/thumb" alt="" class="sr-only" />                     
+                                                 
+                            <h2 class="tileHeadline newsItem__title blogItem__title p-3 h3 text-darker url mt-0 " style="background-image: url(https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigverd/@@images/image/preview)">
+                                <a class="newsItem__title__text text-white " href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigverd">Puigverd</a>
+                            </h2>       
+
+                            
+<!--                             <p metal:use-macro="context/@@listing_view/macros/document_byline"></p>   -->                          
+
+                                     
+
+                        </div>    
+
+                        
+
+                    </article>
+
+                    
+
+                
+            
+          
+            
+
+        
+
+    <!-- Navigation -->
+
+
+  <nav class="pagination">
+
+    <ul>
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      
+
+      
+      <li class="active">
+        <span>1</span>
+      </li>
+
+      
+      <li>
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1?b_start:int=20">2</a>
+      </li>
+
+      
+      
+
+      
+      
+
+      
+      <li class="next">
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1?b_start:int=20">
+          <span class="label">7 elements següents</span>
+          <span class="arrow"></span>
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+
+
+
+
+
+      
+
+      
+        
+      
+
+    
+  
+
+
+  </div>
+
+
+          </div>
+          <div id="viewlet-below-content-body">
+
+
+    <div class="visualClear"><!-- --></div>
+
+    
+
+</div>
+
+          
+        </article>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div id="viewlet-below-content">
+
+
+
+
+</div>
+        </div>
+      </footer>
+    </div>
+  
+              <div id="sidebar" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-md-pull-8 col-lg-pull-9">
+          <aside id="portal-column-one" class="themeTree">
+              <div class="portletWrapper" id="portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d64652d7472656d702f616a756e74616d656e742d64652d7472656d700a6e617669676174696f6e" data-portlethash="706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d64652d7472656d702f616a756e74616d656e742d64652d7472656d700a6e617669676174696f6e">
+<div class="portlet portletNavigationTree ">
+
+    <header class="portletHeader hiddenStructure">
+        <a href="https://www.ajuntamentdetremp.cat/sitemap" class="tile">Navegació</a>
+    </header>
+
+    <nav class="portletContent lastItem">
+        <ul class="navTree navTreeLevel0">
+            
+            
+
+
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-comerc-i-serveis">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/comerc-i-serveis" class="state-published navTreeFolderish contenttype-minisite">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/comerc-i-serveis/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Comerç i Serveis
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-poligons-i-empreses">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/poligons-i-empreses" class="state-published contenttype-document">
+
+             
+
+
+            
+            Polígons i empreses
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-parcs-i-jardins">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/parcs-i-jardins" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/parcs-i-jardins/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Parcs i Jardins
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-equipaments-municipals">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/equipaments-municipals" class="state-published contenttype-document">
+
+             
+
+
+            
+            Equipaments municipals
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeFolderish section-entitats">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/entitats" class="state-published navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Entitats
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-vilamitjana">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/vilamitjana" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/vilamitjana/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            EMD Vilamitjana
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeFolderish section-nuclis-agregats-1">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" class="state-published navTreeCurrentItem navTreeCurrentNode navTreeFolderish contenttype-folder">
+
+             
+
+
+            
+            Nuclis Agregats
+        </a>
+        
+            <ul class="navTree navTreeLevel1">
+                
+
+
+
+<li class="navTreeItem visualNoMarker section-aulas">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/aulas" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/aulas/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Aulàs
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-casterner-de-les-olles">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/casterner-de-les-olles" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/casterner-de-les-olles/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Casterner de les Olles
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-castissent">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castissent" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castissent/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Castissent
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-claramunt">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claramunt" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claramunt/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Claramunt
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-claret">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claret" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/claret/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Claret
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-castellet">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castellet" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/castellet/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            El Castellet
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-els-masos-de-tamurcia">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/els-masos-de-tamurcia" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/els-masos-de-tamurcia/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Els Masos de Tamúrcia
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-eroles">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/eroles" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/eroles/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Eroles
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-escarla">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/escarla" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/escarla/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Escarlà
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-espills">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espills" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espills/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Espills
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-espluga-serra">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-serra" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-serra/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Espluga Serra
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-espluga-freda">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-freda" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/espluga-freda/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Espluga Freda
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-figols">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/figols" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/figols/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Figols
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-gurp">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/gurp" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/gurp/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Gurp
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-la-torre-de-tamurcia">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/la-torre-de-tamurcia" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/la-torre-de-tamurcia/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            La Torre de Tamúrcia
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-llastarri">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/llastarri" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/llastarri/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Llastarri
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-orrit">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/orrit" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/orrit/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            El Pont d'Orrit
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-palau-de-noguera">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/palau-de-noguera" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/palau-de-noguera/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Palau de Noguera
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-puigcercos">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigcercos" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigcercos/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Puigcercós
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-puigverd">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigverd" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/puigverd/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Puigverd
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-sant-adria">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/sant-adria" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/sant-adria/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Sant Adrià
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-santa-engracia">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/santa-engracia" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/santa-engracia/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Santa Engràcia
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-sapeira">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/sapeira" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/sapeira/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Sapeira
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-suterranya">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/suterranya" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/suterranya/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Suterranya
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-tercui">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/tercui" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/tercui/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Tercui
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-tendrui">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/tendrui" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/tendrui/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Tendrui
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-torogo">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/torogo" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1/torogo/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Torogó
+        </a>
+        
+
+    
+</li>
+
+
+
+
+            </ul>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-telefons-dinteres">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/telefons-dinteres" class="state-published contenttype-document">
+
+             
+
+
+            <img src="https://www.ajuntamentdetremp.cat/el-municipi/telefons-dinteres/@@images/image/icon" alt="" class="pull-right thumb-icon" />
+            Adreces i telèfons
+        </a>
+        
+
+    
+</li>
+
+<li class="navTreeItem visualNoMarker section-en-xifres">
+
+    
+
+        <a href="https://www.ajuntamentdetremp.cat/el-municipi/en-xifres" class="state-published contenttype-document">
+
+             
+
+
+            
+            En xifres
+        </a>
+        
+
+    
+</li>
+
+
+
+
+        </ul>
+    </nav>
+</div>
+
+
+</div>
+          </aside>
+        </div>
+    		      <div id="column2-container">
+    		      </div>
+    		    </div><!--/row-->
+    		  </div><!--/container-->
+    		</div>
+        
+        
+
+      </div> <!--/outer-wrapper -->
+
+      <!-- Document Actions -->
+      <aside id="document-actions" class="bg-gray pt-1 pb-4 bg-gray-light-medium mt-5 hidden-print" aria-labelledby="heading_document_actions">
+    
+    <h2 id="heading_document_actions" class="sr-only">Document Actions</h2>
+    
+    <div class="container">
+        <div class="documentActions row">
+
+            <div class="col-md-7 mt-4">
+                                   
+
+                    <ul class="list-inline text-center text-md-left">
+                        <li class="document-action text-bold" id="document-action-print">
+                            <a href="javascript:this.print();" class="text-darker text-no-underline text-nowrap eq-height" title="">
+                                <span class="mr-2 picto-print rounded-icon b-1 text-darker border-black" aria-hidden="true" title="Imprimeix-ho"></span>                
+                                          
+                                         
+                                <span class="hidden-xs pt-2">Imprimeix-ho</span>
+                            </a>
+                        </li>
+                        <li class="document-action text-bold" id="document-action-send">
+                            <a href="mailto:?subject=Nuclis Agregats" class="text-darker text-no-underline text-nowrap eq-height" title="">
+                                                
+                                <span class="mr-2 picto-mail rounded-icon b-1 text-darker border-black" aria-hidden="true" title="Enviar per email"></span>          
+                                         
+                                <span class="hidden-xs pt-2">Enviar per email</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+
+                
+            </div>
+
+            <div class="col-md-5 text-center text-md-right mt-4 px-md-0">
+            
+                <p class="visible-inline share text-bold mr-3">Compartir</p>
+                <ul class="social-share list-inline visible-inline mb-2">
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">
+                            <span class="picto-facebook" title="facebook" aria-hidden="true"></span><span class="sr-only">facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="Twitter" target="_blank" href="https://twitter.com/share?url=https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">
+                            <span class="picto-twitter" title="twitter" aria-hidden="true"></span><span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rounded-icon rounded-icon--black" title="LinkedIn" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">
+                            <span class="picto-linkedin" title="linkedin" aria-hidden="true"></span><span class="sr-only">linkedin</span>
+                        </a>
+                    </li> 
+                    <li>
+                        <a class="rounded-icon rounded-icon--black visible-sm visible-xs" href="https://api.whatsapp.com/send?text=https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" title="Whatsapp" target="_blank" data-text="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1">
+                            <span class="picto-whatsapp" title="whatsapp" aria-hidden="true"></span><span class="sr-only">Whatsapp</span> 
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div> <!-- /container -->
+</aside>
+
+    </main><footer id="portal-footer-wrapper" class="">
+      <div class="container" id="portal-footer">
+      <div class="row">
+	<div class="col-xs-12">
+		
+
+	</div>
+</div>
+
+
+<!-- Matomo -->
+<script data-type="application/javascript" data-name="matomo">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.ddl.net/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '9']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    </div>
+      <div class="container" id="custom-footer">
+  
+ 
+  <div class="py-4">
+
+    <div class="row">    
+
+      <div class="col-xs-12 col-sm-6 text-left">
+        <a class="text-no-underline text-darker" href="https://www.ajuntamentdetremp.cat">
+        <figure id="logoFooter" class="eq-height eq-height--nowrap eq-height--middle mb-3">
+          <img src="https://www.ajuntamentdetremp.cat/@@site-logo" style="max-height: 9rem" alt="Escut Ajuntament de Tremp" />
+          <figcaption class="text-bold h5-size line-height-large">Ajuntament de Tremp</figcaption>
+        </figure>
+        </a>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 text-right">
+
+        <div id="portal-info" class="text-right text-medium">
+          <p class="text-bold">Ajuntament de Tremp</p>
+          <p class="mb-0">
+            <span class="text-normal"><span>Plaça de la Creu, 1, Tremp</span></span>
+            <span> | <span>25620</span></span>
+            <span class="text-nowrap"> | Tel: <a class="text-darker" href="tel:973650005">973650005</a></span>
+            
+          </p>
+          <p class="mb-0">
+            <span><a class="text-nowrap text-darker" href="mailto:administracio@tremp.cat">administracio@tremp.cat</a></span>
+            <span> | <span>P2529500G</span></span>
+          </p>
+        </div>
+        
+      </div>
+      
+    </div>
+
+  </div> 
+  
+  <div class="bt-1 pt-3">
+
+ 
+      <div class="row">
+        <div class="col-xs-12 col-sm-7 col-lg-5 mt-md-3 text-gray-light navbar-default text-left hidden-print">
+            <ul id="portal-site-actions" class="list-inline text-medium">
+
+                <li id="siteaction-index_html"><a href="https://www.ajuntamentdetremp.cat">Inici</a></li>
+                <li id="siteaction-legal_advice"><a href="https://www.ajuntamentdetremp.cat/avis-legal">Avís Legal</a></li>
+                <li id="siteaction-privacity"><a href="https://www.ajuntamentdetremp.cat/politica-de-privacitat">Política de privacitat</a></li>
+                <li id="siteaction-cookies"><a href="https://www.ajuntamentdetremp.cat/politica-de-cookies">Política de cookies</a></li>
+                <li id="siteaction-rat"><a href="https://www.ajuntamentdetremp.cat/registre-activitats-de-tractament">RAT</a></li>
+                <li id="siteaction-accessibility"><a href="https://www.ajuntamentdetremp.cat/accessibility-info">Accessibilitat</a></li>
+                <li id="siteaction-sitemap"><a href="https://www.ajuntamentdetremp.cat/sitemap">Mapa del lloc</a></li>
+                <li id="siteaction-contact"><a href="https://www.ajuntamentdetremp.cat/contact-info">Contacte</a></li>
+
+                <li id="siteaction-credits">
+                  <a href="https://www.ajuntamentdetremp.cat/credits">Crèdits</a>
+                </li>
+
+            </ul>
+
+        </div>
+        <div class="col-xs-12 col-sm-5 col-lg-2 text-md-right hidden-print">    
+            <ul id="portal-socialicons" class="list-inline">
+
+                <li class="px-0" id="footerSocialicon-facebook">
+                  <a class="text-gray opacity-50" href="https://www.facebook.com/AjTremp" target="_blank" title="Facebook"><span aria-hidden="true" class="picto-facebook-circled h1-size"></span><span class="sr-only">https://www.facebook.com/AjTremp</span></a></li>
+                <li class="px-0" id="footerSocialicon-twitter">
+                  <a class="text-gray opacity-50" href="https://twitter.com/AjTremp" target="_blank" title="Twitter"><span aria-hidden="true" class="picto-twitter-circled h1-size"></span><span class="sr-only">https://twitter.com/AjTremp</span></a></li>
+                <li class="px-0" id="footerSocialicon-instagram">
+                  <a class="text-gray opacity-50" href="https://www.instagram.com/ajtremp" target="_blank" title="Instagram"><span aria-hidden="true" class="picto-instagram-circled h1-size"></span><span class="sr-only">https://www.instagram.com/ajtremp</span></a></li>
+            </ul>   
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-5 mt-lg-3 text-right">    
+            <p class="small">Projecte desenvolupat per <a href="https://www.diputaciolleida.cat/" class="text-darker" rel="noopener noreferer" target="_blank">Diputació de Lleida</a></p>
+        </div>
+      </div>
+ 
+
+  </div>
+</div>
+    </footer><div id="portal-seachBoxDialog">
+    <!-- Trigger the modal with a button -->    
+    <div id="modalSearchBox" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close text-white opacity-66" data-dismiss="modal">
+                    <span class="picto-cancel" aria-hidden="true"></span><span class="sr-only">Tancar</span>
+                </button>
+            </div>
+            <form id="searchGadget_form" class="pat-livesearch" action="https://www.ajuntamentdetremp.cat/@@search" role="search" data-pat-livesearch="ajaxUrl:https://www.ajuntamentdetremp.cat/@@ajax-search">
+
+                <div class="LSBox text-left">
+                    <label class="text-white h4 hiddenStructure " for="searchGadget">Cerca</label>
+                    <div class="form-group">        
+                        <input name="SearchableText" type="text" size="18" id="searchGadget" title="Cerca en el lloc" placeholder="Cerca en el lloc" class="searchField " />
+                        <input class="searchButton text-white h3-size py-0" type="submit" value="Cerca" />
+                    </div><!-- / form-group -->
+                    
+     
+                
+                </div>
+            </form>
+         </div>
+    </div> 
+</div><!-- Modal Searchbox --><!-- js tags --><script src="/++theme++plone-tema-diputacio-2/styles/build/plonetheme.diputacio2.min.js"></script><!-- js tags end --><script src="/++theme++plone-tema-diputacio-2/js/custom.js"></script><script>
+      $(function () {
+        $('a.swipebox:not([data-type="Folder"])').swipebox();
+
+        /* Funcio per veure si element existeix */
+        function waitForElm(selector) {
+            return new Promise(resolve => {
+                if (document.querySelector(selector)) {
+                    return resolve(document.querySelector(selector));
+                }
+
+                const observer = new MutationObserver(mutations => {
+                    if (document.querySelector(selector)) {
+                        resolve(document.querySelector(selector));
+                        observer.disconnect();
+                    }
+                });
+
+                observer.observe(document.body, {
+                    childList: true,
+                    subtree: true
+                });
+            });
+        }
+
+
+        $( document ).ready(function() {
+          if ($('.affix-fixer').length > 0) {
+            $('.affix-fixer').height( $('#main-navigation').height() );
+          }
+
+          // Afegir contingut al llistat de resultats de la cerca per a complir estandard HTML
+          waitForElm('.livesearch-results').then((elm) => { 
+              $(elm).append('<li>Sense resultats de la cerca</li>');
+          });
+          // waitForElm('#google_translate_element').then((elm) => {
+          //     $('#googTransID.sr-only').remove();
+          // });
+          waitForElm('#goog-gt-votingHiddenPane').then((elm) => {
+              $('#goog-gt-votingHiddenPane').remove();
+          });
+          
+          if ($('#location-map').length > 0) {
+            waitForElm('#location-map .leaflet-marker-icon').then((elm) => {
+              $( ".leaflet-marker-icon" ).each(function( index ) {
+                strTitle = $(this).attr('title');
+                $(this).attr('alt', 'localitzacio: ' + strTitle);
+              });
+            });
+          }
+          
+        });
+      })
+    </script><script>
+    let policyTitle = "Pol&#237;tica de cookies"
+    let policyText = "L'informem que utilitzem cookies pr&#242;pies i de tercers per oferir un millor servei, d'acord amb els teus h&#224;bits de navegaci&#243;. Pots consultar la nostra Pol&#237;tica de Cookies aqu&#237;:"
+    let policyLinkText = "Pol&#237;tica de galetes"
+    let policyURL = "https://www.ajuntamentdetremp.cat/politica-de-cookies"
+    let matomoEnabled = 1
+
+    requirejs.config({
+        waitSeconds : 30,
+    })
+
+    require(['++plone++product.diputacio/cookieklaro/config'], function () {
+        require(['++plone++product.diputacio/cookieklaro/cookieklaro.min'], function (klaro) {
+            window.klaro = klaro
+        })
+    })
+</script></body>
+</html>

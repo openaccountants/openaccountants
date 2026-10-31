@@ -3,7 +3,9 @@ name: australia-financial-statements-2
 description: Determine Australian company financial reporting obligations, select applicable standards, prepare accounts and arrange assurance and lodgement.
 jurisdiction: AU
 last_updated: 2026-09-08
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---

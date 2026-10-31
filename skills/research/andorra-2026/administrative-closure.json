@@ -1,0 +1,152 @@
+{
+  "result": "PASS",
+  "checked_utc": "2026-10-27T17:47:28.410710+00:00",
+  "accepted_legal_repair": "ce1666a9ef976cb9b42bcbea4a1d9d2adc08efe9",
+  "status_documentation_checkpoint": "f5eb78b1",
+  "main_reconciliation": "7e3624298e3f32b2c433147e77fbd18c8c9a83e5",
+  "main": "187064a83bc15251730448448f9ed8a57a388ba6",
+  "country_tree_before_and_after_merge": "a8cb97801aa50e942351247f8b9250fb11b7c2f5",
+  "research_tree_before_and_after_merge": "e7e4106b5e8ea4ee6cdfa34ae0400f97d6512fe6",
+  "Guide_preservation": [
+    {
+      "path": "skills/international/andorra/README.md",
+      "same_as_accepted_repair": false,
+      "status_only_replacement": false,
+      "README_status_update": true,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-company-formation.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-corporate-income-tax.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-income-tax.md",
+      "same_as_accepted_repair": false,
+      "status_only_replacement": true,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-payroll-social.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-tax-overview.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/ad-transfer-pricing.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    },
+    {
+      "path": "skills/international/andorra/andorra-igi.md",
+      "same_as_accepted_repair": true,
+      "status_only_replacement": false,
+      "README_status_update": false,
+      "frontmatter_unchanged": true,
+      "cta_unchanged": true,
+      "controls_unchanged": true
+    }
+  ],
+  "review_archive": [
+    {
+      "path": "computations.json",
+      "sha256": "831fa236df346fc882d20d16407b1598f67fff83e7222aae7999c80c85994b43",
+      "source_byte_exact": true
+    },
+    {
+      "path": "coverage-andorra.json",
+      "sha256": "2135abf52a6720d4e847ce53810f6f8674dc9fcc5ec93b42d2217f51f234a138",
+      "source_byte_exact": true
+    },
+    {
+      "path": "preservation.json",
+      "sha256": "7fa7aa28707af87110df8b4868081125dc59d423eed26773bed1f842e5f6cc25",
+      "source_byte_exact": true
+    },
+    {
+      "path": "repair-closure.md",
+      "sha256": "dffc5034c512b2c0420e07143b24585529894db86fef6c0b3c23995397a2f836",
+      "source_byte_exact": true
+    },
+    {
+      "path": "repair-verification.json",
+      "sha256": "8338568375720f2c33b4c9ee366198e2c8cbf10dc56926a1bbb61b0648796a4a",
+      "source_byte_exact": true
+    },
+    {
+      "path": "report.md",
+      "sha256": "1131a75a1c2020e32756fffdca88eb1511941604f6ac83eb4c340bc4c03b75eb",
+      "source_byte_exact": true
+    },
+    {
+      "path": "review_checks.py",
+      "sha256": "de7d49081c209fc6ae1ffe219346e8582d30bef0e9b63b18a4a8b7338d98ac68",
+      "source_byte_exact": true
+    }
+  ],
+  "prior_research": [
+    {
+      "path": "docs/research/2026-10-23-andorra-corporate-filing-sources.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/research/2026-10-23-andorra-non-resident-sources.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/research/2026-10-23-andorra-transfer-pricing-sources.md",
+      "unchanged": true
+    }
+  ],
+  "exact_IT_IND_partial": "The exact 2026 annual dependent-income minimum-wage benchmark after July's wage change remains unconfirmed; the general family-relief method is supplied.",
+  "lost_content_restored": 1,
+  "publication": "HELD locally; no country-complete claim, push, merge-to-main, public message or CLA consent",
+  "tests": "129 passed at whole-pack candidate before Guide-only fixes; not rerun for unchanged tooling",
+  "final_schema": "2263 Guides,6122 generated blocks,3 inherited warning groups",
+  "final_metadata": "7sources/zero findings against current main187064a8",
+  "final_changed_schema": "7Guides/zero warninggroups",
+  "scope": "Administrative check only, no new tax-law review"
+}

@@ -29,6 +29,57 @@ or Singapore — employees, founders, families — and their accountants. The tw
 covered together because the Indian side is nearly identical and the differences that matter
 (treaty capital-gains treatment, above all) are sharpest side by side.
 
+---
+
+## Part 1 — The three statuses, and the day counts that decide them
+
+Indian tax residence is tested each financial year (1 April – 31 March):
+
+### 1.1 Resident
+You are resident if you spend **182+ days** in India in the FY, **or** 60+ days in the FY
+*and* 365+ days across the four prior FYs.
+
+**The leaver's reliefs on the 60-day limb:** for an Indian **citizen leaving India for
+employment abroad** (or as crew), the 60-day trigger relaxes to **182 days** in the departure
+year. For citizens/PIOs **visiting** India in later years, the trigger is 182 days — but only
+**120 days** if your India-sourced income exceeds **₹15 lakh** (the 2020 tightening aimed at
+high earners running long annual India stints).
+
+**The practical read:** in the departure year, leave before crossing 182 India days. In every
+later year, high earners with Indian income above ₹15 lakh must hold India visits **under 120
+days** (and under 60 to be safe on the second limb); everyone else keeps to under 182. Family
+weddings and winter stays are where NRI statuses quietly die — count midnight-to-midnight
+presence and keep boarding passes.
+
+### 1.2 The deemed-resident rule — the Dubai trap (s.6(1A))
+An Indian **citizen** with India-sourced income above **₹15 lakh** who is **"not liable to
+tax in any other country by reason of residence or domicile"** is *deemed* an Indian resident
+— a rule written precisely for the Gulf, where there is no personal income tax to be liable
+to. Two crucial softenings:
+- Deemed residents are automatically **RNOR**, not full residents — so their *foreign* income
+  stays outside Indian tax; the rule bites reporting posture and Indian-income treatment, not
+  the Dubai salary.
+- Holding a genuine **UAE tax residency** position (and, where relevant, a UAE Tax Residency
+  Certificate under the India–UAE treaty's residence article) is the standard defence — the
+  treaty tie-breaker looks at permanent home and centre of vital interests, not just the
+  absence of a UAE income tax.
+Singapore-bound movers largely escape this rule: Singapore taxes residents, so "liable to
+tax" is satisfied the ordinary way.
+
+### 1.3 RNOR — the corridor's gift (Resident but Not Ordinarily Resident)
+You are RNOR if resident **but** either non-resident in **9 of the 10** prior FYs, or present
+**≤729 days** across the prior 7 FYs (plus the deemed-resident and 120-day-limb cases above).
+An RNOR pays Indian tax on **Indian income only** — foreign salary, foreign gains, foreign
+interest stay outside. Why it matters twice:
+- **On the way out**, mis-timed departures often produce a resident year; RNOR mechanics can
+  soften it.
+- **On the way home**, a returning NRI typically enjoys **2–3 RNOR years** — the window to
+  realise foreign gains, receive foreign payouts, and restructure *before* worldwide Indian
+  taxation resumes. Returning without planning the RNOR window is the single most expensive
+  omission on the round trip.
+
+---
+
 ## Part 2 — What India keeps taxing an NRI on
 
 Non-residence removes Indian tax on foreign income. India-sourced income stays, with its own

@@ -1,0 +1,228 @@
+{
+  "scope": "Own mirror arithmetic and source gates. Labelled later-reference alternatives remain competing; no reconciliation or universal regime election inferred.",
+  "count": 37,
+  "checks": [
+    {
+      "name": "invoice settlement",
+      "actual": "1060",
+      "expected": "1060",
+      "passed": true
+    },
+    {
+      "name": "VAT output minus actual input",
+      "actual": "130",
+      "expected": "130",
+      "passed": true
+    },
+    {
+      "name": "prior credit used limited to current positive",
+      "actual": "130",
+      "expected": "130",
+      "passed": true
+    },
+    {
+      "name": "prior credit balance87",
+      "actual": "70",
+      "expected": "70",
+      "passed": true
+    },
+    {
+      "name": "originalstateonly result",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "investment original recovery",
+      "actual": "1008",
+      "expected": "1008",
+      "passed": true
+    },
+    {
+      "name": "investment current hypothetical",
+      "actual": "756",
+      "expected": "756",
+      "passed": true
+    },
+    {
+      "name": "investment signed43repayment",
+      "actual": "-50.4",
+      "expected": "-50.4",
+      "passed": true
+    },
+    {
+      "name": "investment returntotal45",
+      "actual": "449.60",
+      "expected": "449.60",
+      "passed": true
+    },
+    {
+      "name": "investment stateonly result",
+      "actual": "550.40",
+      "expected": "550.40",
+      "passed": true
+    },
+    {
+      "name": "investment not copied twice",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "mixeduse then prorrata",
+      "actual": "630",
+      "expected": "630",
+      "passed": true
+    },
+    {
+      "name": "ordinary prorrata extra with fixeduse",
+      "actual": "105",
+      "expected": "105",
+      "passed": true
+    },
+    {
+      "name": "annual delayedfirstuse20point difference divisor10",
+      "actual": "420",
+      "expected": "420",
+      "passed": true
+    },
+    {
+      "name": "actual firstuse cumulative recovery",
+      "actual": "8820",
+      "expected": "8820",
+      "passed": true
+    },
+    {
+      "name": "annual420 is not4200reset",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "literal DGT later-reference additional input",
+      "actual": "693",
+      "expected": "693",
+      "passed": true
+    },
+    {
+      "name": "contrary acquisition reference additional input",
+      "actual": "735",
+      "expected": "735",
+      "passed": true
+    },
+    {
+      "name": "reference interpretations materially differ",
+      "actual": "42",
+      "expected": "42",
+      "passed": true
+    },
+    {
+      "name": "exact10pointgate closed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "10.01pointgate opens",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "special mandatory exactly10percent excess",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "special9.99percentexcess notmandatory byamount",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "negative currentcredit separate from87",
+      "actual": "170",
+      "expected": "170",
+      "passed": true
+    },
+    {
+      "name": "prior87alone excludes current100credit",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "advertising exact200 notexceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "cashentry exact2m notexceed",
+      "actual": "True",
+      "expected": "True",
+      "passed": true
+    },
+    {
+      "name": "cashexclusion exact100k notexceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "largeenterprise threshold equality notexceed",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "349supplied quarterly exact50k notabove",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 0",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 1",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 2",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 3",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 4",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "energy strict CPI trigger 5",
+      "actual": "False",
+      "expected": "False",
+      "passed": true
+    },
+    {
+      "name": "reversecharge fulloutput versuspartialinput",
+      "actual": "84",
+      "expected": "84",
+      "passed": true
+    }
+  ]
+}

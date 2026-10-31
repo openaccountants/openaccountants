@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:33:37.761914+00:00",
+    "bytes": 352525,
+    "sha256": "b9758eefd5bddfb94008c2cc0bb29abc449df2cbda171c48e51ee5c23f987ace"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:33:37.682090+00:00",
+    "bytes": 312860,
+    "sha256": "e9e4943865d6a05e4dbd858222db4ff7bd223ec89d2cf83ebd9e267813220d4c"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:33:37.761750+00:00",
+    "bytes": 533085,
+    "sha256": "a761cdf4ba13ded13aab840d629416a6d8a05653da804ef1d9ab51cfb5ba08ac"
+  },
+  {
+    "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/06/Consulta%2014-26%20web.pdf",
+    "final_url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/06/Consulta%2014-26%20web.pdf",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:33:37.854058+00:00",
+    "bytes": 82704,
+    "sha256": "9dc1e8813883d9c1b3e2010312d57139c95154df0d64d2e3790abe2091672c25"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-6456",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-6456",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:33:37.644795+00:00",
+    "bytes": 203029,
+    "sha256": "bee534f80e5db3aafee3d4083a5db6566a964959f4f014516349567f5e65b0d7"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254&p=20221212&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254&p=20221212&tn=1",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:34:15.413473+00:00",
+    "bytes": 305035,
+    "sha256": "4fed2c689209b33cc5f0c36032643d419ca3310478c2e4b2f4488adec76a19ee"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "read_on": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:34:15.378440+00:00",
+    "bytes": 2028806,
+    "sha256": "268c63578253e82e6889678ccf304dca5e54a09f1649240c042a88ced1f88d1d"
+  }
+]

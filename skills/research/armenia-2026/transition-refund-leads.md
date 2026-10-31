@@ -1,0 +1,12 @@
+# Treaty continuation/refund leads checked, 26 October 2026
+
+These are targeted primary readings after recovery, not a completed treaty procedure or a claim that no instrument exists. Actual HTTP receipts and byte hashes are in `transition-refund-leads-retrievals.json`. The native Tax Code response matches the earlier recorded 3,931,381-byte consolidation; old receipt timestamps are not substituted for this actual fetch.
+
+| Primary source | Actual read scope | Result |
+|---|---|---|
+| [Current Tax Code](https://www.arlis.am/hy/acts/215611/latest) | Articles 445–447, especially 446(1)/447(8), with 19(7)/327(2) compared | 446 preserves laws outside the repealed list, not automatically every old administrative act. 447(8) conditionally continues pre-Code tax-benefit application frameworks pending the corresponding Code instruments. It does not identify the authorised recipient/account or modern approval-to-cash settlement for treaty refunds. |
+| [Government 864-N, current incorporation](https://www.arlis.am/hy/acts/232103/latest) | Complete decision and Annex 1–8, commencement and current 16 October 2026-onward metadata, including the 15 October 1477-N transition note | Code 327's alternative-account clause has specified cases. Annex 2 defaults to the taxpayer's own account. Annex 3 lists succession/liquidation, deregistered nonresident branch founders/authorised persons, heirs, deregistered entrepreneur personal accounts, natural-person passport accounts and specified Treasury cases. Annex 4 uses 246-N; 5 requires specified paper evidence and bank ownership, 6 uses electronic submission for its listed cases, 7–8 have conditional web-service commencement. This does not expressly establish a general transfer of an Armenian withholding agent's credit to an unrelated foreign income beneficiary. |
+
+The ordinary Code 327 own-account method already supplied in the corporate/VAT/personal Guides is distinct from proving a particular foreign recipient's refund entitlement and credit allocation. Neither lead is used to revive repealed 1398-N or erase the explicit XB partial entry. The fresh independent reviewer separately confirmed the conditional nature of 447(8). Current Government/SRC treaty approval and authorised beneficiary settlement evidence remains required.
+
+The author read the native primary passages. The independent reviewer must make its own source-based finding; this note is not its approval.

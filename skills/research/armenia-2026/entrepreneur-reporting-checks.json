@@ -1,0 +1,35 @@
+{
+  "kind": "writer independent Decimal and explicit branch assertions; not whole-pack review",
+  "cases": [
+    {
+      "case": "ordinary entrepreneur",
+      "profit": "8000000",
+      "tax": "1840000.00"
+    },
+    {
+      "case": "loss",
+      "result": "-4000000",
+      "tax": "0.00"
+    },
+    {
+      "case": "full-month suspension",
+      "liable_months": "9",
+      "profit_tax": "45000"
+    },
+    {
+      "case": "ordinary quarterly advance",
+      "advance": "400000"
+    }
+  ],
+  "reporting_boundaries": [
+    {
+      "one_off_receipt": "1000000",
+      "mandatory_reportable_whole_receipt": "0"
+    },
+    {
+      "one_off_receipt": "1200000",
+      "mandatory_reportable_whole_receipt": "1200000"
+    }
+  ],
+  "passed": true
+}

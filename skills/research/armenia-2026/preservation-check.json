@@ -1,0 +1,61 @@
+{
+  "main_commit": "d3dc782b195e5244ae8b48590aec1ee672bf559f",
+  "checks": [
+    {
+      "path": "skills/international/armenia/am-company-formation.md",
+      "baseline_sha256": "9f1b1aa2560d6cd5b0338e81513aade5072bc28bebd4ea724abb1d9987054d39",
+      "current_sha256": "f03d447c2128dc0e507cd053670f45dc3bb9567704a81acc89f3cb541e10b0e7",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/am-corporate-income-tax.md",
+      "baseline_sha256": "57b1ffe3f326b17bbe33245efab18f1cc8fb3ea7578291f7b24d7b52a4647d74",
+      "current_sha256": "8ca139b1d3aa249d235e6c5b1b4f2d93a8d98396055cf012ab9ce2d621f18684",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/am-tax-overview.md",
+      "baseline_sha256": "77d4ff0d2674e29f0942f7dfbf75a4cdddfa7d53aec033208f6f3938c163b60e",
+      "current_sha256": "5c48531f2aed26abeb87115a71c3721061fb4975b767cdf7489bf7512fbdcb9f",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-income-tax.md",
+      "baseline_sha256": "d7b0251c101a75a3afe5b0ed62e5fd9255362e8c71d15626f33c740850d811ca",
+      "current_sha256": "61e0e2e5a495e2bff4001ebfe8a4c774087ca474728d591115c7ab05405b53d8",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-payroll.md",
+      "baseline_sha256": "07b800ad34efa681d3f5fcd5552829bfcb274ec5e3f300e9dd88342d09a0bc9a",
+      "current_sha256": "458c22cae70351af88a1e5f593ecd123afe85e7701ee397085645e77087136b2",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-social-contributions.md",
+      "baseline_sha256": "496956a3afb18233d3b5f496708a2c40d15638f432cd8fca619afb51fd339f0d",
+      "current_sha256": "283f6317c6d3d533b182ece0ca11a818a8e385ff23ae00d74912293cce822745",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-tax-optimization.md",
+      "baseline_sha256": "a1c8f200cffadb596bf3d15073d2cc0cd2c42a4cae13d77131bda9f0048354d2",
+      "current_sha256": "480b734536560042eeafd3f2bd84ed8754e852385e4aa1b7f5ab18029ff3aed5",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-vat.md",
+      "baseline_sha256": "8c42fccda755f8b071fdb270fe50e75d3779700ea7eb477b78f9ef224e6c09bb",
+      "current_sha256": "e8c934f4cfe0d920f110901e52b4e09bd48b851dcb83259dcb85fa509ec54979",
+      "protected_fields_preserved": true,
+      "cta_byte_identical": true
+    }
+  ]
+}

@@ -1,14 +1,15 @@
 ---
 name: slovenia-payroll
 description: "Slovenian payroll for employees for tax year 2026. Covers the monthly gross-to-net: employee contributions of 22.1% plus 1% long-term care, employer contributions of 16.1% plus 1% long-term care, the flat compulsory health contribution (EUR 39.36 a month from 1 March 2026), the minimum contribution base (60% of the average wage, EUR 1,521.62) against the 2026 minimum wage of EUR 1,481.88, withholding on the monthly scale with the 2026 general allowance (EUR 462.66 a month plus the low-income taper), the REK-O return filed on the pay date, and fines and late interest. Trigger phrases: Slovenia payroll, gross to net Slovenia, bruto neto plača, akontacija dohodnine, REK-O, REK-1, minimalna plača 2026, najnižja osnova za prispevke, OZP, prispevek za dolgotrajno oskrbo. Out of scope: the self-employed (s.p.) and contribution bases in depth (slovenia-social-contributions), the annual return (slovenia-income-tax), residence and treaties (si-cross-border)."
-jurisdiction: SI
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-24
 version: 0.3
-verified_by: pending
+jurisdiction: SI
+tax_year: 2026
+last_updated: 2026-10-24
+review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Slovenia payroll (2026)
@@ -189,3 +190,23 @@ expected:
 | Ministry of Labour, minimum wage for 2026 (28 January 2026) | https://www.gov.si/novice/2026-01-28-dolocen-znesek-minimalne-place-za-2026/ | 2026-10-24 |
 
 Not yet confirmed: the Uradni list RS 16/26 order setting the OZP at EUR 39.36 was not read (the figure is from the FURS 2026 tables, which cite it); the minimum wage decision in the Uradni list was not read (the figure is from the ministry's notice); the exact payment date from which employers moved from EUR 1,436.95 to EUR 1,521.62 as the minimum base (FURS applies the 2025 average from the February 2026 self-employed contributions); who bears the employee's 0.24% parental care and employment share on the gap to the minimum base (ZPIZ-2 and ZZVZZ put the pension and health shares on the employer; the employment and parental care acts were not read); the deadline for registering a new employee for insurance; the 2026 version of the REK-O field list with the long-term care fields.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

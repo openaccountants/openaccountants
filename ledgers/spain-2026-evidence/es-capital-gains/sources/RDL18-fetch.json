@@ -1,0 +1,7 @@
+{
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280",
+  "acquired_utc": "2026-10-28T17:59:52.251038+00:00",
+  "raw_sha256": "1dea7ab99aa3a6c7fed2a5ed163fd9f11fabdb0c97a963bdf3a38aaa0b40d98c",
+  "reader_derivation": "HTMLParser data text/block newlines, raw bytes untouched. Only publication/entry-selectedscope read.",
+  "first_default_sandbox_fetch": "DNSfailed, subsequent authorisedpublicread succeeded; no private data sent."
+}

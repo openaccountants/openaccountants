@@ -1,0 +1,158 @@
+{
+  "receipt": "/private/tmp/oa-armenia-preserved-local-source-inventory-2026-10-24.json",
+  "candidate_source": "df7247a47d4e9ef0aa961165bad1c09e10f9e4f7",
+  "rows": [
+    {
+      "path": "docs/research/2026-10-24-armenia-corporate-sources.md",
+      "git_blob": "1b94838a82178784090903088a64859188b723f6",
+      "sha256": "2a7b0e8d9ff9d51d6909f6e66a5f869f11f5fe989c63cc048c5817b1c78d8c23",
+      "bytes": 6219
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-cross-border-sources.md",
+      "git_blob": "9dacc26e5b298dca9b0414fcdd2fdec2f7b91d52",
+      "sha256": "cc59d87daeefc01d34d6d9d67fe30acc3654be20c1f986e23413da25144cfb39",
+      "bytes": 6797
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-formation-planning-sources.md",
+      "git_blob": "f18c4be4054b11c6eb9e36372660c3c31f645aa1",
+      "sha256": "39e8c249fd1091b295952105831470957b1cef5fb3a327abc2ed3bea9f1a0b1c",
+      "bytes": 6447
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-individual-sources.md",
+      "git_blob": "489ed9827587269758e14fb3ab73a984a8ea7877",
+      "sha256": "6082f97ff6cd90f2f6e953541d23eca66e6544a632faf7ea73519873ac8852d5",
+      "bytes": 6674
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-social-payroll-sources.md",
+      "git_blob": "b9f9d056910fb94a1c475938fc33691f918109df",
+      "sha256": "2c8f5309815b3018d659e6b1909f7a14f6c3291972f6edfca630479a9a70b19c",
+      "bytes": 8420
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-tp-sources.md",
+      "git_blob": "6dbb2e3b0567164fa2301f438cd4cef3384a5e0e",
+      "sha256": "0d3a20bf0c51ff4c8f074fe1542c25bc664df77340a7ca6ee5223fefb38326b5",
+      "bytes": 6661
+    },
+    {
+      "path": "docs/research/2026-10-24-armenia-vat-sources.md",
+      "git_blob": "38587290d496244383f187d5a50ebb3bf901b3d6",
+      "sha256": "8638ff31697fc2d00b8807e686feaf2031c0d72fb5e15bff277abb1515773020",
+      "bytes": 5966
+    },
+    {
+      "path": "skills/international/armenia/README.md",
+      "git_blob": "6aa13d6b37ba098bbfe2b04461dd428a6f7fdff0",
+      "sha256": "6307a05c0d9e3272e4efbb7e46b210941c1a73b5e91f5228b3b9952f0f4f2535",
+      "bytes": 6995,
+      "tax_year": null,
+      "tier": null,
+      "version": 0.7,
+      "oa_check_blocks": 0
+    },
+    {
+      "path": "skills/international/armenia/am-company-formation.md",
+      "git_blob": "d73b998e8ded5d3f678c7748d3ea22cafd487a2f",
+      "sha256": "998e136c737c87e8269f1549e407c5a2981e49e3646df9b948630a96f83e14c2",
+      "bytes": 7891,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 0
+    },
+    {
+      "path": "skills/international/armenia/am-corporate-income-tax.md",
+      "git_blob": "f225ae978d3c75c2a2523d6e880f5b80abafc732",
+      "sha256": "e5841a6dbe12f55c033a65929a29a8d8c34f36227d7d4d119b93ccbfe6a2869b",
+      "bytes": 27577,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 7
+    },
+    {
+      "path": "skills/international/armenia/am-cross-border.md",
+      "git_blob": "bfb186607b8d2e288042a8153f4175cd213e0041",
+      "sha256": "16c01970bc716ce9d5360ca5d024232051ceb58dd1cdd467c64daf79f9b27f66",
+      "bytes": 26134,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.1,
+      "oa_check_blocks": 6
+    },
+    {
+      "path": "skills/international/armenia/am-tax-overview.md",
+      "git_blob": "c2304f2931387f6dbf136b2e9df1052ccb5330e3",
+      "sha256": "34799cd393893443b3979d78dd5ff440c60277e1eced9834a2f13ded95ca7665",
+      "bytes": 5176,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 0
+    },
+    {
+      "path": "skills/international/armenia/am-transfer-pricing.md",
+      "git_blob": "7a60596de9c3828c67b20e482ed3a9cefab98d23",
+      "sha256": "605c4755add2857962e7dec0d06a3dd11cc2418ec7c9593bcd135fabff67d91e",
+      "bytes": 23630,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.1,
+      "oa_check_blocks": 7
+    },
+    {
+      "path": "skills/international/armenia/armenia-income-tax.md",
+      "git_blob": "83b3c5fa3caf38eedfe278a8d9a185d17023662b",
+      "sha256": "c76ef7ad759855fac5e97d2450ca67e6f3e0696275addbd3570c87c09d57fdd0",
+      "bytes": 23364,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 7
+    },
+    {
+      "path": "skills/international/armenia/armenia-payroll.md",
+      "git_blob": "11db6004d9a5a8729cdf00ae7a31df4b14431762",
+      "sha256": "dbd394bfc4317b453801e1d69f3e7d269e79ac16d7d9aa65e188cd4342c5fa77",
+      "bytes": 21381,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 7
+    },
+    {
+      "path": "skills/international/armenia/armenia-social-contributions.md",
+      "git_blob": "1a1874a11820fa2b4cbed3001d8f16487154f841",
+      "sha256": "75c24297484217d444f9218b17c5616b391371bd651509f3cdd1016876014fae",
+      "bytes": 21670,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 9
+    },
+    {
+      "path": "skills/international/armenia/armenia-tax-optimization.md",
+      "git_blob": "452da98c0973864bd63bad1ecb7bcc9104e15bdb",
+      "sha256": "295ef2a9811c043c416e925c1bd1668e046034a34659a58f419b34011a561c20",
+      "bytes": 12524,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 0.2,
+      "oa_check_blocks": 0
+    },
+    {
+      "path": "skills/international/armenia/armenia-vat.md",
+      "git_blob": "76a114c47b5fdbc11b2b2338e9a23200fa8e2a0a",
+      "sha256": "c134b6b4aed05238464bb86b9125c383277d1063fade91dfebb5a21394db9e95",
+      "bytes": 25391,
+      "tax_year": 2026,
+      "tier": 2,
+      "version": 2.1,
+      "oa_check_blocks": 8
+    }
+  ]
+}

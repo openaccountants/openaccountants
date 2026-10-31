@@ -4,7 +4,6 @@ description: "UK Income Tax for individuals who file the SA100 Self Assessment r
 version: 2.3
 jurisdiction: GB
 tax_year: 2026
-tax_year_notes: "2026-27 (6 April 2026 to 5 April 2027); 2025-26 figures given where the return being filed now differs"
 last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review

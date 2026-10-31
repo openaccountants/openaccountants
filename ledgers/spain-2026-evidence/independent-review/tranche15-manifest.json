@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    {
+      "path": "tranche15-report.md",
+      "sha256": "7f274337a67126777c709bb1f733ac5ef6ea405e93cf1f5942b68439a4d9dbbd"
+    },
+    {
+      "path": "tranche15-final-integrity.json",
+      "sha256": "526797910ee9b12b4c58a34f7539928ee880d8880950c55fcab1d44d3d7aeafc"
+    },
+    {
+      "path": "tranche15-read-ledger.json",
+      "sha256": "274d8f92a0fb9428b099b9b44283c35c71cb0e9188f60a52d81439d657a0c8c8"
+    },
+    {
+      "path": "tranche15-source-identities.json",
+      "sha256": "cae8a4d6129451a16b8b095c3a83716dce15cf9319749407895f0c836e5f0640"
+    },
+    {
+      "path": "tranche15-controls.json",
+      "sha256": "2a10b36c0a602342ecb633d1bc0e847031b643e43d66b895f488be7db078d873"
+    },
+    {
+      "path": "tranche15-controls.py",
+      "sha256": "f4647cfe6744b957d1cb7e6842f68c610f3f730107f6fca5fa0cafa1bd25be4f"
+    },
+    {
+      "path": "tranche15-examples.txt",
+      "sha256": "2b2d2f05ee094a1451299deac0bf10591aa14ec0f834c47fb74051c9b763fa25"
+    },
+    {
+      "path": "S-L24-finding.json",
+      "sha256": "bd34b5cc4bfda9b0e8de0765f5611a3695d634d87fdddca641989d538fb9e435"
+    }
+  ]
+}

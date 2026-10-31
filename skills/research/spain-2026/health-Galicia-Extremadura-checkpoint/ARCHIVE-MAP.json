@@ -1,0 +1,1312 @@
+{
+  "baseline_head": "baf3d0f9e4f6845511d13de91c6c927b4695d1d2",
+  "verified_reviews": [
+    {
+      "role": "Cantabria-health-exact",
+      "report": "spain-Cantabria-health-overlap-independent-review/report.md",
+      "report_sha256": "d3c1a51ccf6aafd9583506af593d5c04b5f72b3d32cda5e364c22b346bdb3b4c",
+      "manifest": "spain-Cantabria-health-overlap-independent-review/manifest.json",
+      "manifest_sha256": "109c50782967c9f0a595f10a3bbedc2d8084548cf2035f6c382cbc22f2d53470",
+      "members_verified": 5
+    },
+    {
+      "role": "Galicia-carry-exact",
+      "report": "spain-Galicia-carry-vintages-independent-review/report.md",
+      "report_sha256": "243bf78f8bcfc16d842e899ceeb32cd9dee80eb6b1648f07251f0071e59b30d4",
+      "manifest": "spain-Galicia-carry-vintages-independent-review/manifest.json",
+      "manifest_sha256": "6c4a3c1feebdee8f767c72800abde08720c41df7fdb992cfb15f2c2c86e6bd2c",
+      "members_verified": 6
+    },
+    {
+      "role": "Extremadura-rehab-exact",
+      "report": "spain-Extremadura-rental-rehab-independent-review/report.md",
+      "report_sha256": "f3ae4f51ca2c2cc094265ac52ebe8a4fb870082e1db15cdd4905a456e907615d",
+      "manifest": "spain-Extremadura-rental-rehab-independent-review/artifact-manifest.json",
+      "manifest_sha256": "0221fe7dd716884b6fbb277a530eda976df0258d02887369a8bc053e24345d6f",
+      "members_verified": 27
+    },
+    {
+      "role": "mechanical-composition-exact",
+      "report": "spain-health-Galicia-Extremadura-final-composition-independent-review/report.md",
+      "report_sha256": "4b07bc002c2806d280b45714ef6616a4ba621debecebbf47d15970ceb3b06db0",
+      "manifest": "spain-health-Galicia-Extremadura-final-composition-independent-review/manifest.json",
+      "manifest_sha256": "e390f920aa09daa433993478e04c21c39ff54d92f5499ea6ccb7693b48154161",
+      "members_verified": 5
+    }
+  ],
+  "scope": "Three independently reviewed finite regional methods; exact interpretations and unresolved questions, original findings and successors retained. Independent mechanical combined-file binding. No whole-country readiness or attestation.",
+  "files": [
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/README.md.diff",
+      "original_sha256": "0e10095dd6adb2b95677591ceb947e67265e7b91a236b797c07f737afa5cdf79",
+      "original_bytes": 14244,
+      "stored_path": "archive/0e/0e10095dd6adb2b95677591ceb947e67265e7b91a236b797c07f737afa5cdf79.gz",
+      "stored_bytes": 3636,
+      "stored_sha256": "513cd8ca7452c0d2feb4ff5f022118957ba433527714f274209a803c93e46517"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/actual-read-excerpts.txt",
+      "original_sha256": "b7517dc994a28f77a4ff20ea3c1a227746dfbf397b9a405bbf8654e518fd113c",
+      "original_bytes": 32600,
+      "stored_path": "archive/b7/b7517dc994a28f77a4ff20ea3c1a227746dfbf397b9a405bbf8654e518fd113c.gz",
+      "stored_bytes": 9098,
+      "stored_sha256": "df93934386435b1c059e3be2721ab6dfe3c022b919298eda8e58245b04881b3b"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/artifact-manifest.json",
+      "original_sha256": "22ce00e752d48930a407f8601d86da18844259352de6653312c7fc2a9d015d62",
+      "original_bytes": 11035,
+      "stored_path": "archive/22/22ce00e752d48930a407f8601d86da18844259352de6653312c7fc2a9d015d62.gz",
+      "stored_bytes": 2208,
+      "stored_sha256": "31ddc58809da931f5eea9d9147670ea506971394b64d31cff3f7301f795843d0"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/baseline/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/baseline/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/candidate-README.md",
+      "original_sha256": "5fc86cbcd1ebfe446b47ad7f746d8a0dd396011010c7c80321b98c133e91d074",
+      "original_bytes": 16777,
+      "stored_path": "archive/5f/5fc86cbcd1ebfe446b47ad7f746d8a0dd396011010c7c80321b98c133e91d074.gz",
+      "stored_bytes": 6468,
+      "stored_sha256": "95f96c1143f502600f587d943cb985b69f4dd4f1030eb6ca9645a04f14a3fdd0"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f24435dc1333286578a3b979bc9ed35665436886616bfe6756b0f1fc2216931f",
+      "original_bytes": 501106,
+      "stored_path": "archive/f2/f24435dc1333286578a3b979bc9ed35665436886616bfe6756b0f1fc2216931f.gz",
+      "stored_bytes": 141251,
+      "stored_sha256": "942c9c0bb9516e42e55947fa53b30c0b3d98e32b462700c4e16901bc041f20d7"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/check.py",
+      "original_sha256": "f73cb95ca0b2c7efa1ff100fa80cc9760f9c1081fe4a452eda97c0b57acecdd9",
+      "original_bytes": 6500,
+      "stored_path": "archive/f7/f73cb95ca0b2c7efa1ff100fa80cc9760f9c1081fe4a452eda97c0b57acecdd9.gz",
+      "stored_bytes": 2777,
+      "stored_sha256": "79f31910850ef011e615c60f758407c478cbed90f65e8e5876655b19808ab83c"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/es-irpf-deductions.md.diff",
+      "original_sha256": "b2888a56baca6b7f10c26da8eac25554b043f933a1641a03702e0be405c06db9",
+      "original_bytes": 24045,
+      "stored_path": "archive/b2/b2888a56baca6b7f10c26da8eac25554b043f933a1641a03702e0be405c06db9.gz",
+      "stored_bytes": 6935,
+      "stored_sha256": "602b7aee602474a9c6cd4b559ee5f625e100594c9a0150a8626596d25066e1a1"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/exact-replacements.json",
+      "original_sha256": "c80ef249b529d5e0a652b89bd93445d93b18b32cc41ace17d91d4999541e25f5",
+      "original_bytes": 8777,
+      "stored_path": "archive/c8/c80ef249b529d5e0a652b89bd93445d93b18b32cc41ace17d91d4999541e25f5.gz",
+      "stored_bytes": 3051,
+      "stored_sha256": "adaa99652d8f7d5de8242f1b59c09c0d0f11471a460973afa0245c8ed5f61ce1"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/finalize-evidence.py",
+      "original_sha256": "d5693c271144bc3d54393929bcc1125d17be73bff68f820ce7bb084f9f8f3379",
+      "original_bytes": 1147,
+      "stored_path": "archive/d5/d5693c271144bc3d54393929bcc1125d17be73bff68f820ce7bb084f9f8f3379.gz",
+      "stored_bytes": 611,
+      "stored_sha256": "ceec4f987220cdcbfa491fc7dca0dc63380e875db4ce07a47a94f86714d9e3c7"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/freeze.json",
+      "original_sha256": "b61bcf026dd15aae2b7eeff1f1d29c9cb57bb13211fdd5fe20b8c992c4804c6a",
+      "original_bytes": 569,
+      "stored_path": "archive/b6/b61bcf026dd15aae2b7eeff1f1d29c9cb57bb13211fdd5fe20b8c992c4804c6a.gz",
+      "stored_bytes": 364,
+      "stored_sha256": "2f9db921d3c94e205f6e0dbc8d8b01cb9984efe7256db4527a5e46dc307d5a94"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/history/unsealed-first-quota-fixture/candidate-README.md",
+      "original_sha256": "5fc86cbcd1ebfe446b47ad7f746d8a0dd396011010c7c80321b98c133e91d074",
+      "original_bytes": 16777,
+      "stored_path": "archive/5f/5fc86cbcd1ebfe446b47ad7f746d8a0dd396011010c7c80321b98c133e91d074.gz",
+      "stored_bytes": 6468,
+      "stored_sha256": "95f96c1143f502600f587d943cb985b69f4dd4f1030eb6ca9645a04f14a3fdd0"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/history/unsealed-first-quota-fixture/candidate-es-irpf-deductions.md",
+      "original_sha256": "abc8210c0127c11815366c7e5483518dfbce40874902738e0f878b952cd73155",
+      "original_bytes": 500887,
+      "stored_path": "archive/ab/abc8210c0127c11815366c7e5483518dfbce40874902738e0f878b952cd73155.gz",
+      "stored_bytes": 141105,
+      "stored_sha256": "ff0a5bdddb26f233a89232cfbbc0e8b2488827264465da07358a49b4b9cd1db8"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/history/unsealed-first-quota-fixture/exact-replacements.json",
+      "original_sha256": "2f23adc4c9d31124d73d648c91f9550dc4238c6c0a6df473959fda78d521a6f9",
+      "original_bytes": 8544,
+      "stored_path": "archive/2f/2f23adc4c9d31124d73d648c91f9550dc4238c6c0a6df473959fda78d521a6f9.gz",
+      "stored_bytes": 2967,
+      "stored_sha256": "4e2474eb23764f5cc5399399b70822277d56dce5f0abab00ce7d1b1ce775c801"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/history/unsealed-first-quota-fixture/prepare.py",
+      "original_sha256": "49ffc304574abcc1af75559690a4122f1285c737c7e46a08be3c084adc026f47",
+      "original_bytes": 7775,
+      "stored_path": "archive/49/49ffc304574abcc1af75559690a4122f1285c737c7e46a08be3c084adc026f47.gz",
+      "stored_bytes": 3463,
+      "stored_sha256": "1da55226f84eaacf66b895bac8896e3816185cc6c566885cf513ee0487584955"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/options-before-edit.md",
+      "original_sha256": "077ad608bafea86df1b089fc5e3f40de1de7c6679d414411e42867c471dbb2d2",
+      "original_bytes": 2030,
+      "stored_path": "archive/07/077ad608bafea86df1b089fc5e3f40de1de7c6679d414411e42867c471dbb2d2.gz",
+      "stored_bytes": 1124,
+      "stored_sha256": "3edc99ddb4b505738bc4d3288acd8ca1c8a9846ac0992a3224f0a33b739d0faa"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/prepare-sources.py",
+      "original_sha256": "1eabd92a18a5b291b615376a91f5783f94136b46d913a5f7778adfa306dad0af",
+      "original_bytes": 1368,
+      "stored_path": "archive/1e/1eabd92a18a5b291b615376a91f5783f94136b46d913a5f7778adfa306dad0af.gz",
+      "stored_bytes": 740,
+      "stored_sha256": "0eb18a7bf58c66027adf12bfa3ff3aaf06c4373ef4f9d370d3eb85c8db1c3f27"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/prepare.py",
+      "original_sha256": "96c11797bb196eccf3a1e85b503a81629898a2a03d7688cebbedb5f53c8e1846",
+      "original_bytes": 8048,
+      "stored_path": "archive/96/96c11797bb196eccf3a1e85b503a81629898a2a03d7688cebbedb5f53c8e1846.gz",
+      "stored_bytes": 3551,
+      "stored_sha256": "75aad9a88ab1829c4e7cb492c3bdb9357585ccd733de04f2c31936d45d604224"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/preservation-proof.json",
+      "original_sha256": "f5209fc83e2f3250d520fc73f210348642733c1599186c9ab1f9dd54d3e579e0",
+      "original_bytes": 1016,
+      "stored_path": "archive/f5/f5209fc83e2f3250d520fc73f210348642733c1599186c9ab1f9dd54d3e579e0.gz",
+      "stored_bytes": 452,
+      "stored_sha256": "74d311ceba5963d0a38f6747bf161b922abfee1f7b937993c4039271637d5c4f"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/report.md",
+      "original_sha256": "56102d48c7ecd889d680742a492db2926ead9d2f32e91e80857dc38f8b9cbbb3",
+      "original_bytes": 6890,
+      "stored_path": "archive/56/56102d48c7ecd889d680742a492db2926ead9d2f32e91e80857dc38f8b9cbbb3.gz",
+      "stored_bytes": 3428,
+      "stored_sha256": "45208c795ad22d31cd8f43a08ec9f001cea7c14485c6b267cd15b3ab7dc4b3e9"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "f24435dc1333286578a3b979bc9ed35665436886616bfe6756b0f1fc2216931f",
+      "original_bytes": 501106,
+      "stored_path": "archive/f2/f24435dc1333286578a3b979bc9ed35665436886616bfe6756b0f1fc2216931f.gz",
+      "stored_bytes": 141251,
+      "stored_sha256": "942c9c0bb9516e42e55947fa53b30c0b3d98e32b462700c4e16901bc041f20d7"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/source-map.json",
+      "original_sha256": "034451d4a997ffb697e90916299a76f759a5f4465179023220358d59531fe23f",
+      "original_bytes": 3252,
+      "stored_path": "archive/03/034451d4a997ffb697e90916299a76f759a5f4465179023220358d59531fe23f.gz",
+      "stored_bytes": 1072,
+      "stored_sha256": "c323e6fc60dfc56d5b8c0118c6b08808c54aa358f87752d0f14ef342df6ccbd8"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/ACAT-home.html",
+      "original_sha256": "1460f798715ac75f6972adc706fb6fcb44545652f51634cbe9fc11d1e1be658d",
+      "original_bytes": 109911,
+      "stored_path": "archive/14/1460f798715ac75f6972adc706fb6fcb44545652f51634cbe9fc11d1e1be658d.gz",
+      "stored_bytes": 21778,
+      "stored_sha256": "8a6541aeef6507efad25d04bbcc8b50dd9646f678c5228bf5f4e3410af4104d7"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/ACAT-home.reader.txt",
+      "original_sha256": "465304428d384c4ee6b12ad184ec6f5bfbf7821745d1b567b46bf9111edbdf57",
+      "original_bytes": 4832,
+      "stored_path": "archive/46/465304428d384c4ee6b12ad184ec6f5bfbf7821745d1b567b46bf9111edbdf57.gz",
+      "stored_bytes": 2031,
+      "stored_sha256": "38a5efadf068264f35d36e05ee7c7cfd52c3ad62a62367919d78cfeb48f0ef3f"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/AEAT-health-2025.html",
+      "original_sha256": "44a61a0ae761d5b98f92e2760b97ecdb8092b1bde693bdfe0612e33dcebc5cea",
+      "original_bytes": 11176,
+      "stored_path": "archive/44/44a61a0ae761d5b98f92e2760b97ecdb8092b1bde693bdfe0612e33dcebc5cea.gz",
+      "stored_bytes": 3916,
+      "stored_sha256": "8a7034a196cf5f7b076eca97ae4fe41a37a4023af3d2ccbd32e08298d17993c2"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/AEAT-health-2025.reader.txt",
+      "original_sha256": "fc8c96e9fa1c80378446dd94449373c71a947e66c2ec43574af45e06f7ad40b1",
+      "original_bytes": 2719,
+      "stored_path": "archive/fc/fc8c96e9fa1c80378446dd94449373c71a947e66c2ec43574af45e06f7ad40b1.gz",
+      "stored_bytes": 1306,
+      "stored_sha256": "57bafd25512d1e9af3dc1937baab378f935f3725e48a70b1d4c9977d7791836e"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/LIRPF-current.html",
+      "original_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "original_bytes": 2028806,
+      "stored_path": "archive/78/780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "1c6b02f3d86dffbba797defbb393a563eddddb30be0de5581b52349c70a25492"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "513fd01d6cbec8efaf3d8ff48ccc1861585ef279e54e5be1ada34654584d5967",
+      "original_bytes": 900904,
+      "stored_path": "archive/51/513fd01d6cbec8efaf3d8ff48ccc1861585ef279e54e5be1ada34654584d5967.gz",
+      "stored_bytes": 188240,
+      "stored_sha256": "11a44c33c37d843eb63edaf7129de3ee36225ea918cccf9435635e825e596d9a"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/amendment-original.html",
+      "original_sha256": "5842f73d21d4da5e184de5291bf6f3d01f0ac5512f8217a93c6a7e4d7c0b728d",
+      "original_bytes": 168962,
+      "stored_path": "archive/58/5842f73d21d4da5e184de5291bf6f3d01f0ac5512f8217a93c6a7e4d7c0b728d.gz",
+      "stored_bytes": 37899,
+      "stored_sha256": "cbc47cc604ca2dd0b80c63278f10943b76fd304a12ceb294c1f9fab96a498045"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/amendment-original.reader.txt",
+      "original_sha256": "f7393923f2005e84612f67dee754ce14baf1e23751275e1617d15f5ccf454c70",
+      "original_bytes": 124282,
+      "stored_path": "archive/f7/f7393923f2005e84612f67dee754ce14baf1e23751275e1617d15f5ccf454c70.gz",
+      "stored_bytes": 32832,
+      "stored_sha256": "2f6a40015acd1a2493aeabbbfbca5c15fcd87b11c5fb8d60a439c4887af854b8"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/law-current.html",
+      "original_sha256": "8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251",
+      "original_bytes": 350447,
+      "stored_path": "archive/88/8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251.gz",
+      "stored_bytes": 53160,
+      "stored_sha256": "d891f3818cc4710e0e8ae78f49ebbff1aa80fd88e3d7e54ce4ec3db791571912"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/sources/law-current.reader.txt",
+      "original_sha256": "e4234fae725824cdbafe3808189da0affe50026bdc3ff8c05c98ce17776fb015",
+      "original_bytes": 184140,
+      "stored_path": "archive/e4/e4234fae725824cdbafe3808189da0affe50026bdc3ff8c05c98ce17776fb015.gz",
+      "stored_bytes": 38019,
+      "stored_sha256": "22e9dd1191c4b5c3dd86a539a9485c468a7794607e09a8a7d8f98d0ea3014f8c"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-private-method/writer-controls.json",
+      "original_sha256": "a7c53bf4eb91bc51c6b15a23d6302d4c512cdef57e2d8b068b5ef1c6cccd35cd",
+      "original_bytes": 4030,
+      "stored_path": "archive/a7/a7c53bf4eb91bc51c6b15a23d6302d4c512cdef57e2d8b068b5ef1c6cccd35cd.gz",
+      "stored_bytes": 725,
+      "stored_sha256": "d0ad3568a3d4f80e3e22a1a3d05db56329b219126aba6cb255948bbe722bcf4b"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/independent-controls.json",
+      "original_sha256": "9ea816661fd77ebbc1bb1a5568979cce86927fc006d3944199ddd27e67876cc1",
+      "original_bytes": 1894,
+      "stored_path": "archive/9e/9ea816661fd77ebbc1bb1a5568979cce86927fc006d3944199ddd27e67876cc1.gz",
+      "stored_bytes": 385,
+      "stored_sha256": "58114c9ff69b6a609dfbeaa8de46c0394afb4bca7afc8c90bec98d0cea6acbb5"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/manifest.json",
+      "original_sha256": "109c50782967c9f0a595f10a3bbedc2d8084548cf2035f6c382cbc22f2d53470",
+      "original_bytes": 792,
+      "stored_path": "archive/10/109c50782967c9f0a595f10a3bbedc2d8084548cf2035f6c382cbc22f2d53470.gz",
+      "stored_bytes": 396,
+      "stored_sha256": "d66341a36d42d52fba80e1c7ba3dad4d33bf4efe3068547b17b0f071a901e649"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/own-source-read-ledger.json",
+      "original_sha256": "fae43d5981398b9c0ba9f242bf1e20d4453fbea7b2193e8ddcf3f28d914d46e5",
+      "original_bytes": 3979,
+      "stored_path": "archive/fa/fae43d5981398b9c0ba9f242bf1e20d4453fbea7b2193e8ddcf3f28d914d46e5.gz",
+      "stored_bytes": 1090,
+      "stored_sha256": "a6a24985b99c26d834212f2c3d48ceb27dfab8383fe5532604ca84d6edbc7f32"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/preservation-proof.json",
+      "original_sha256": "518a1a5d5a9d8f5a26eaf1c2a58a6b64713c95ef56b70644693097151194c8e8",
+      "original_bytes": 329,
+      "stored_path": "archive/51/518a1a5d5a9d8f5a26eaf1c2a58a6b64713c95ef56b70644693097151194c8e8.gz",
+      "stored_bytes": 219,
+      "stored_sha256": "e57d7090ef9eb5062332d2ca5a97620a476a8670547c87bb390b1228dd28c224"
+    },
+    {
+      "original_path": "spain-Cantabria-health-overlap-independent-review/report.md",
+      "original_sha256": "d3c1a51ccf6aafd9583506af593d5c04b5f72b3d32cda5e364c22b346bdb3b4c",
+      "original_bytes": 2722,
+      "stored_path": "archive/d3/d3c1a51ccf6aafd9583506af593d5c04b5f72b3d32cda5e364c22b346bdb3b4c.gz",
+      "stored_bytes": 1536,
+      "stored_sha256": "3b650f503df27d7ad9e60abde30fed1981f4c999c14a71e5285889e149ee497b"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/README.diff",
+      "original_sha256": "4981d2ec7f5d7aa4a3a2100af498981ee9f18ddf77e2e3de71a2115196ee501d",
+      "original_bytes": 14332,
+      "stored_path": "archive/49/4981d2ec7f5d7aa4a3a2100af498981ee9f18ddf77e2e3de71a2115196ee501d.gz",
+      "stored_bytes": 3687,
+      "stored_sha256": "6fa2cf28fc72bc161b5f799b942083c109663c1b3690e6ab11218c521b02cf4b"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/acquisition-sandbox-DNS-failure.json",
+      "original_sha256": "f69e60f81fec2cb36ab74e0dbb3542d18462cd7e14c88ce3465583be5b9e2bf0",
+      "original_bytes": 199,
+      "stored_path": "archive/f6/f69e60f81fec2cb36ab74e0dbb3542d18462cd7e14c88ce3465583be5b9e2bf0.gz",
+      "stored_bytes": 177,
+      "stored_sha256": "73e5b80b3cfe84ef174a5c1488715b7670504985c9e410bc966ed9343ea2b930"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/acquisition.json",
+      "original_sha256": "8b2c6a535df2f5710692b4742605e05231981a72fd68ead2ee4c329b313ad6e2",
+      "original_bytes": 2433,
+      "stored_path": "archive/8b/8b2c6a535df2f5710692b4742605e05231981a72fd68ead2ee4c329b313ad6e2.gz",
+      "stored_bytes": 977,
+      "stored_sha256": "49c4b7354208f7a39977acb549363edce32837c47171580339da5c5bed7ff18d"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/actual-read-excerpts.txt",
+      "original_sha256": "afb7ab80d0eba5aa9670440ab89a885747ec4dec137f642dc6577ebd30542265",
+      "original_bytes": 58728,
+      "stored_path": "archive/af/afb7ab80d0eba5aa9670440ab89a885747ec4dec137f642dc6577ebd30542265.gz",
+      "stored_bytes": 11445,
+      "stored_sha256": "4a88aa68da1afd26b1ef213c5b275ac4ee6240468c8e0750b4fd719e8742ef99"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/actual-read-scopes.json",
+      "original_sha256": "43a40ed176e16651334e83ff3ccd4d3a7ffe44cb02a77b8de92714bc84169fee",
+      "original_bytes": 3474,
+      "stored_path": "archive/43/43a40ed176e16651334e83ff3ccd4d3a7ffe44cb02a77b8de92714bc84169fee.gz",
+      "stored_bytes": 690,
+      "stored_sha256": "82a518c0479f303430a6818f0e7d6fc291b1af816389b3e6bbf67088ce4428e7"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/add-sources.py",
+      "original_sha256": "981d28412502f21d81b225d585e9dbbdc455580445b58dcb19bfda8b849e000b",
+      "original_bytes": 2148,
+      "stored_path": "archive/98/981d28412502f21d81b225d585e9dbbdc455580445b58dcb19bfda8b849e000b.gz",
+      "stored_bytes": 1079,
+      "stored_sha256": "e97bfed8937dfeeaed1fa916c1d8310d21d13c111e4412b41382be919f12f7c4"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/artifact-manifest.json",
+      "original_sha256": "76da6f317bb77c25561d1b3285f086fbe5a84e20a6affccadee7b0520adb83bc",
+      "original_bytes": 10671,
+      "stored_path": "archive/76/76da6f317bb77c25561d1b3285f086fbe5a84e20a6affccadee7b0520adb83bc.gz",
+      "stored_bytes": 2242,
+      "stored_sha256": "0ce22679bc3268771c1966f4bd160677af53910e29ede2ace89b94c4df6d078a"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/author-controls.json",
+      "original_sha256": "2668f54a4444254eca5fff15969ac9059409813576c31b2b54399cd83e6a675f",
+      "original_bytes": 4361,
+      "stored_path": "archive/26/2668f54a4444254eca5fff15969ac9059409813576c31b2b54399cd83e6a675f.gz",
+      "stored_bytes": 654,
+      "stored_sha256": "cd35554995ae7dce991c798fbd7e56cf537150c0db27444f44b4ac88ec01454d"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/baselines/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/baselines/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/candidate-README.md",
+      "original_sha256": "7cf34114fd8f0bfa2f74d5a118d862409409bc2cce37345f195b50712b13d19d",
+      "original_bytes": 16865,
+      "stored_path": "archive/7c/7cf34114fd8f0bfa2f74d5a118d862409409bc2cce37345f195b50712b13d19d.gz",
+      "stored_bytes": 6500,
+      "stored_sha256": "aa09bb61ce58a53c3a3898c7d3dba4c4dd228e773337cc2ef15d5760bcd3500f"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f42eaa4b6a527c71608096a6045c873cfc62a035921c6b6662c19e7ed952b999",
+      "original_bytes": 504070,
+      "stored_path": "archive/f4/f42eaa4b6a527c71608096a6045c873cfc62a035921c6b6662c19e7ed952b999.gz",
+      "stored_bytes": 141980,
+      "stored_sha256": "e663febba3d7c05d1b4c2324c4b1cdae54a3443ef7aa152e76961812d11acd27"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/check-preservation.py",
+      "original_sha256": "0e4bcdc56eecef434dca59bd8197f1ef7f47de0899b3523d28ce274fa98fbafc",
+      "original_bytes": 3287,
+      "stored_path": "archive/0e/0e4bcdc56eecef434dca59bd8197f1ef7f47de0899b3523d28ce274fa98fbafc.gz",
+      "stored_bytes": 1601,
+      "stored_sha256": "e074a5704bd01d66624841061c603f2548b6ea06d72e2c9738743c6f67048d2a"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/compose.py",
+      "original_sha256": "fb80018fa35a1fd83b715031902089462f04fb20fa7818898dd6a12b2d4ed3da",
+      "original_bytes": 14677,
+      "stored_path": "archive/fb/fb80018fa35a1fd83b715031902089462f04fb20fa7818898dd6a12b2d4ed3da.gz",
+      "stored_bytes": 5264,
+      "stored_sha256": "ef1d97da5f4d5a6a9cceadf4d4b2df0685957191d16bab5d99af190687e5521a"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/controls.py",
+      "original_sha256": "251a49d22ef4c28748addc10813239961bf444a7d9d0e8671245c4fad36074fb",
+      "original_bytes": 3981,
+      "stored_path": "archive/25/251a49d22ef4c28748addc10813239961bf444a7d9d0e8671245c4fad36074fb.gz",
+      "stored_bytes": 1443,
+      "stored_sha256": "b3ddfbbfa725d6776f0961bb6ff3ae2980ef9d24fc78262967acc5c20114e4b6"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/deductions.diff",
+      "original_sha256": "84e44d4608922f0a8c7a94f4764c6ed92c7fc654bc36104b1af75295da4acd49",
+      "original_bytes": 27914,
+      "stored_path": "archive/84/84e44d4608922f0a8c7a94f4764c6ed92c7fc654bc36104b1af75295da4acd49.gz",
+      "stored_bytes": 7972,
+      "stored_sha256": "bebb22c5c8250bf172e2073eb48b6c4c0b220c0b452c0ec115446648b87bafa5"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/freeze.json",
+      "original_sha256": "f0e9ba39ea16abb595db50c74f796a9114a055ad88e72c64ceaf54725cae5a98",
+      "original_bytes": 480,
+      "stored_path": "archive/f0/f0e9ba39ea16abb595db50c74f796a9114a055ad88e72c64ceaf54725cae5a98.gz",
+      "stored_bytes": 342,
+      "stored_sha256": "45da44218dcc49411ea2df4494b63e7bd1d26a80d733443ccc67e8f9ef681cb1"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/options.md",
+      "original_sha256": "832a2379daa392f6b09868507fd1a377cdc4e57c14ae6e696d575eeca49327de",
+      "original_bytes": 3366,
+      "stored_path": "archive/83/832a2379daa392f6b09868507fd1a377cdc4e57c14ae6e696d575eeca49327de.gz",
+      "stored_bytes": 1569,
+      "stored_sha256": "50536e3c14162a4f971a45825036f8f080d25681866ae15cfc77003ee72c0846"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/preservation-and-validation.json",
+      "original_sha256": "e8d856c6b594b51c791e83e97c240312a98472ef973f8115ac3163fc82dff6d2",
+      "original_bytes": 3297,
+      "stored_path": "archive/e8/e8d856c6b594b51c791e83e97c240312a98472ef973f8115ac3163fc82dff6d2.gz",
+      "stored_bytes": 1193,
+      "stored_sha256": "eaf007cbfdbbe198ae015e337e9d76461f6cb1461017dcaa42d5e47e8748fe81"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/replacement-ledger.json",
+      "original_sha256": "e22db125ca394c9ff6447e74ec5c30ab70c432b4dcdb1ab5cad5ec53412278f8",
+      "original_bytes": 14104,
+      "stored_path": "archive/e2/e22db125ca394c9ff6447e74ec5c30ab70c432b4dcdb1ab5cad5ec53412278f8.gz",
+      "stored_bytes": 4486,
+      "stored_sha256": "5ab541a702ba7f29bdb1a198a7bd68336c7c8fa4de0b0059b516c0b4febbe2f0"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/report.md",
+      "original_sha256": "216e7eb191614631967e5be5f00fd7c12e2e990e6916e54df3a22700f35570cd",
+      "original_bytes": 4083,
+      "stored_path": "archive/21/216e7eb191614631967e5be5f00fd7c12e2e990e6916e54df3a22700f35570cd.gz",
+      "stored_bytes": 2171,
+      "stored_sha256": "e4c9db84f5749859e2c269d382057763fe9258c67271893cf699124b2810cb46"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/source-map.json",
+      "original_sha256": "70164059335c240b48cb0958464570829d4bdbb81ce76a723e0b5916101204c4",
+      "original_bytes": 3126,
+      "stored_path": "archive/70/70164059335c240b48cb0958464570829d4bdbb81ce76a723e0b5916101204c4.gz",
+      "stored_bytes": 1072,
+      "stored_sha256": "8eedf20e7205a2b77c06ff38d864883ae479fb824fa28ffa9319fb293907bcb2"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.html",
+      "original_sha256": "4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101",
+      "original_bytes": 15423,
+      "stored_path": "archive/4e/4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101.gz",
+      "stored_bytes": 5088,
+      "stored_sha256": "35240ddea8741b4af0b441981542a90fc053033a7edb612558ea8c80010524ee"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.reader.txt",
+      "original_sha256": "866d1efb58bf75cd8f7c7ff840329b4b5b9de78d43f499cc7be0ffba080886c5",
+      "original_bytes": 6320,
+      "stored_path": "archive/86/866d1efb58bf75cd8f7c7ff840329b4b5b9de78d43f499cc7be0ffba080886c5.gz",
+      "stored_bytes": 2450,
+      "stored_sha256": "2c2b7971c52824498d3ad2e56b838e8bd416bbba5f5a8621b26cedd2deeea50c"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-works-help.html",
+      "original_sha256": "615d8a70afb6c4daf266c944eb486bfc651c08092333074472fc6ee76170f0d4",
+      "original_bytes": 17588,
+      "stored_path": "archive/61/615d8a70afb6c4daf266c944eb486bfc651c08092333074472fc6ee76170f0d4.gz",
+      "stored_bytes": 5610,
+      "stored_sha256": "59a6d914fa698ce2a5a50c776f9baa00ad117752fbc36e2398256a09ae6abfa7"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-works-help.reader.txt",
+      "original_sha256": "42e58457db42b3466ec78b12edbcc1d91c3f44b84bf5bb8266906a116c61f680",
+      "original_bytes": 8796,
+      "stored_path": "archive/42/42e58457db42b3466ec78b12edbcc1d91c3f44b84bf5bb8266906a116c61f680.gz",
+      "stored_bytes": 3084,
+      "stored_sha256": "e0dd603e0954137f8e06eb32f9ba1685a70e6b57f598cbbdeeb9487b6f4ad3b3"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-works-manual.html",
+      "original_sha256": "f29a8641adbd60a926de93912e128ccd33b39e8f0f0394d1f2579d0042056e7e",
+      "original_bytes": 18955,
+      "stored_path": "archive/f2/f29a8641adbd60a926de93912e128ccd33b39e8f0f0394d1f2579d0042056e7e.gz",
+      "stored_bytes": 5983,
+      "stored_sha256": "5ef53d8e5016b871f04a85b3ddff7c0235c7a0fbc25bb2868493b34192802135"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/AEAT-works-manual.reader.txt",
+      "original_sha256": "6c426925b800801b9d5c105f2ac4bbba8ce6622d078c54e3f197238b9c19fb64",
+      "original_bytes": 8683,
+      "stored_path": "archive/6c/6c426925b800801b9d5c105f2ac4bbba8ce6622d078c54e3f197238b9c19fb64.gz",
+      "stored_bytes": 3202,
+      "stored_sha256": "435e0ed0c1da63c87f0aaa8b634d355a62e2e0564a2909233a09a351a0eaa8e7"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.html",
+      "original_sha256": "e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487",
+      "original_bytes": 769922,
+      "stored_path": "archive/e3/e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487.gz",
+      "stored_bytes": 150271,
+      "stored_sha256": "73dabfc1937683f9db79641894991932e389f237232c3f452194c707d6dc64a2"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.reader.txt",
+      "original_sha256": "82fea104b649b97756e433b6928eb8fa6f7b469ba5a117c48d7f24f96edd13e1",
+      "original_bytes": 576505,
+      "stored_path": "archive/82/82fea104b649b97756e433b6928eb8fa6f7b469ba5a117c48d7f24f96edd13e1.gz",
+      "stored_bytes": 137314,
+      "stored_sha256": "7a6f14fd7b44513f22ac6abf79bc3a173ac5a68b2787b4fe34e36699edc5776b"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-2025-amendment.html",
+      "original_sha256": "a0ac527793a593d6070a7704a19d8479a1371141429bbe2f30ff7f912302e395",
+      "original_bytes": 792387,
+      "stored_path": "archive/a0/a0ac527793a593d6070a7704a19d8479a1371141429bbe2f30ff7f912302e395.gz",
+      "stored_bytes": 151888,
+      "stored_sha256": "4fc4b59e37723a05d4416a117598bebf4cb3e6fa48106881f10977189142e23c"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-2025-amendment.reader.txt",
+      "original_sha256": "278cb177bc5ba4a27ce74e33347be575e0afa05e00b7080101141b9f07db855f",
+      "original_bytes": 580016,
+      "stored_path": "archive/27/278cb177bc5ba4a27ce74e33347be575e0afa05e00b7080101141b9f07db855f.gz",
+      "stored_bytes": 138203,
+      "stored_sha256": "f6b7cde722607976a6d0e85d698d90a2f9834b784f96504c6a60af96fc2507c9"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-current.html",
+      "original_sha256": "7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1",
+      "original_bytes": 675743,
+      "stored_path": "archive/72/7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1.gz",
+      "stored_bytes": 86721,
+      "stored_sha256": "54fe023466fa052e7fa45f9630c98097b7776827c6f5fb866d1be6001abd1b6c"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/sources/law-current.reader.txt",
+      "original_sha256": "045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633",
+      "original_bytes": 319668,
+      "stored_path": "archive/04/045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633.gz",
+      "stored_bytes": 60364,
+      "stored_sha256": "8bd2dc5aff127dc47187dd125d928dcfb6c3c7909c6799b69fd41d84b58c72c8"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-private-method/worked-ledgers.json",
+      "original_sha256": "0edbda293f3341a1e8de13472c2a2e800ab1685198def57300e6a403b6854820",
+      "original_bytes": 1271,
+      "stored_path": "archive/0e/0edbda293f3341a1e8de13472c2a2e800ab1685198def57300e6a403b6854820.gz",
+      "stored_bytes": 320,
+      "stored_sha256": "c931fe2a4a8bea820909fa60b89260fc6f821323e7314bbac2572101b31e676d"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/actual-UI-observations.json",
+      "original_sha256": "77790e32e6eae84cdb69509dc395e16d09d83315ebb7f148980beb6602fb25b9",
+      "original_bytes": 4129,
+      "stored_path": "archive/77/77790e32e6eae84cdb69509dc395e16d09d83315ebb7f148980beb6602fb25b9.gz",
+      "stored_bytes": 1612,
+      "stored_sha256": "89fd87eb1ee6ab1fabd4ead1ad665cc20726179c61cbd4c9dfcbf454910615ba"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/candidate-README.md",
+      "original_sha256": "fbdf3577b6e8d71bbaeb92e48d3ac02ba6da4822d13f24696331b1171b72493c",
+      "original_bytes": 16703,
+      "stored_path": "archive/fb/fbdf3577b6e8d71bbaeb92e48d3ac02ba6da4822d13f24696331b1171b72493c.gz",
+      "stored_bytes": 6455,
+      "stored_sha256": "ec96528d4fe65c4d09a56ce1e800a5b777dac64c220c7412f6c7ee384339d658"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f5a20f51cb72d35960d69401eadfba6827a82fd5cb977474e52bae19110bb71f",
+      "original_bytes": 502189,
+      "stored_path": "archive/f5/f5a20f51cb72d35960d69401eadfba6827a82fd5cb977474e52bae19110bb71f.gz",
+      "stored_bytes": 141455,
+      "stored_sha256": "de04c087d58b357aff1325ee06243790a62ad4af06d3f719cfe7a009298d78f4"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedJan1-day300-offer64-input-AX.txt",
+      "original_sha256": "ae2eb55c6a52097dcd6b003d9a2a17e2fbb0c665ea7a53512ae0ba8c659d7870",
+      "original_bytes": 32281,
+      "stored_path": "archive/ae/ae2eb55c6a52097dcd6b003d9a2a17e2fbb0c665ea7a53512ae0ba8c659d7870.gz",
+      "stored_bytes": 6970,
+      "stored_sha256": "034f232bb867f656c13adf9dbf8da12dbdd4f9135ad855392de5ee29364f64ae"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedJan1-day300-offer64-result-AX.txt",
+      "original_sha256": "6f8778d6861d962031a50c5b6733d00c0f082ec458d4d5cf4b210085c540d518",
+      "original_bytes": 25812,
+      "stored_path": "archive/6f/6f8778d6861d962031a50c5b6733d00c0f082ec458d4d5cf4b210085c540d518.gz",
+      "stored_bytes": 5751,
+      "stored_sha256": "74e587881648da067f30a73a27ef9fa57aaa3fd0c9c1accb1471943f27744e4a"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedJan1-day300-offer65-input-AX.txt",
+      "original_sha256": "0f38ee0e857dde6c076f41234142818f3a0851cf92d2dcabda448950ab1e9e03",
+      "original_bytes": 32291,
+      "stored_path": "archive/0f/0f38ee0e857dde6c076f41234142818f3a0851cf92d2dcabda448950ab1e9e03.gz",
+      "stored_bytes": 6970,
+      "stored_sha256": "2e9bc4c28e1e18b5ea39959a6f02e427c2540c4228f64946ec795c8cb22bc9c0"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedJan1-day365-validation-AX.txt",
+      "original_sha256": "f02e8786904d3ea374f05866d40754479db41a7596f2c5077d8e441a59845b75",
+      "original_bytes": 33436,
+      "stored_path": "archive/f0/f02e8786904d3ea374f05866d40754479db41a7596f2c5077d8e441a59845b75.gz",
+      "stored_bytes": 7180,
+      "stored_sha256": "a4bc85724d56da7b1f2a495324cf406dcb94e99097cdf074352e361d9fc78018"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-day200-offer75-input-AX.txt",
+      "original_sha256": "6a5f6769474745ffc8ba1fb54e19f8f5a9977816130372a1f0ea1c1084ffe932",
+      "original_bytes": 32315,
+      "stored_path": "archive/6a/6a5f6769474745ffc8ba1fb54e19f8f5a9977816130372a1f0ea1c1084ffe932.gz",
+      "stored_bytes": 6981,
+      "stored_sha256": "8a87741d506791fb003fddfb8960c16dbe586080e72d40fb1b5d61c2b9bed55b"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-day200-offer75-result-AX.txt",
+      "original_sha256": "57606049f8877bf2650ab97f842a3a16a1b95ab4cd786e9ed257d5403ef10672",
+      "original_bytes": 25808,
+      "stored_path": "archive/57/57606049f8877bf2650ab97f842a3a16a1b95ab4cd786e9ed257d5403ef10672.gz",
+      "stored_bytes": 5749,
+      "stored_sha256": "ed0f81b4c20ea4c791e88248df94d5b8b301a1f78217e6c946f802569d8804c5"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-day275-offer0-input-AX.txt",
+      "original_sha256": "87bde7c1bff72a93e547a67d887e2ac5efa1d7c6205fed0fc2dccaba14b48058",
+      "original_bytes": 32300,
+      "stored_path": "archive/87/87bde7c1bff72a93e547a67d887e2ac5efa1d7c6205fed0fc2dccaba14b48058.gz",
+      "stored_bytes": 6973,
+      "stored_sha256": "1c227e6a51ad2c5840f3066434f55710cc2fe7adf3fba9c28d7abd89472a9661"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-day275-offer0-result-AX.txt",
+      "original_sha256": "3aa7445bc832a313b11dea979a2d17be453b7168b7d3ffc4a2e6b8553cd209d6",
+      "original_bytes": 25812,
+      "stored_path": "archive/3a/3aa7445bc832a313b11dea979a2d17be453b7168b7d3ffc4a2e6b8553cd209d6.gz",
+      "stored_bytes": 5750,
+      "stored_sha256": "c5e1446d99ee761d0da79e162154bb350ecdb71779e9830cc128dfc36b2f1e7d"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-net8000-day200-offer75-input-AX.txt",
+      "original_sha256": "0fee886e231bd9900bad00d228f14bffee55d32435421fb3f3e4dff38dc51d2c",
+      "original_bytes": 32314,
+      "stored_path": "archive/0f/0fee886e231bd9900bad00d228f14bffee55d32435421fb3f3e4dff38dc51d2c.gz",
+      "stored_bytes": 6986,
+      "stored_sha256": "e934ce699e07dcc4233e8b287c4a90a56c5a1f5c55f327e75eecb7a62cc29d28"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/completedMar31-net8000-day200-offer75-result-AX.txt",
+      "original_sha256": "56217271258cd8eb1ff85b78d31f5bdb4bd3ae175e8a932a036b1fb1c2bce5e4",
+      "original_bytes": 25808,
+      "stored_path": "archive/56/56217271258cd8eb1ff85b78d31f5bdb4bd3ae175e8a932a036b1fb1c2bce5e4.gz",
+      "stored_bytes": 5749,
+      "stored_sha256": "4dddc2db69a474417b4b44ac8d4a61827f3b173e9bae103d5ab1e0ad7fb64ed9"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/compose-and-check.py",
+      "original_sha256": "b0d3b14b5a5ddaf8be3a261ab6140eca94ad59e522a7458f21dc948c070e54c5",
+      "original_bytes": 10898,
+      "stored_path": "archive/b0/b0d3b14b5a5ddaf8be3a261ab6140eca94ad59e522a7458f21dc948c070e54c5.gz",
+      "stored_bytes": 4729,
+      "stored_sha256": "7143d52e1d3edc28e773806a10d0db3afec62869472e4bfe30b4f866d9ce3f00"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/day300-offer65-input-AX.txt",
+      "original_sha256": "c463c603d731253844fbaf0b00eab7204c72b3fd722c74e61748e7fa2118ff27",
+      "original_bytes": 32281,
+      "stored_path": "archive/c4/c463c603d731253844fbaf0b00eab7204c72b3fd722c74e61748e7fa2118ff27.gz",
+      "stored_bytes": 6970,
+      "stored_sha256": "5a313679839d564d48371a4960b606cf2800e093c1fcab431c966448d0cc9584"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/draft-options.md",
+      "original_sha256": "9deb5dd5a82fa9e674a1f06f3c5afc3eb1d1bb5a0ff6362d63674890399dc536",
+      "original_bytes": 2761,
+      "stored_path": "archive/9d/9deb5dd5a82fa9e674a1f06f3c5afc3eb1d1bb5a0ff6362d63674890399dc536.gz",
+      "stored_bytes": 1382,
+      "stored_sha256": "427fb641be3f73658efc14c15f7017573cf0c5afe20b38bd2e672068c26d8491"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/exact-replacements.json",
+      "original_sha256": "054385cf23f1bf4ad89242046389947cc8eed1becb6e6cf807b6bdd58a52ea1f",
+      "original_bytes": 7232,
+      "stored_path": "archive/05/054385cf23f1bf4ad89242046389947cc8eed1becb6e6cf807b6bdd58a52ea1f.gz",
+      "stored_bytes": 3022,
+      "stored_sha256": "9588a614f058d94f4dbd4f5a046664cf2e54c10a89eec8a208167930c65fa38c"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/final-net8000-day200-offer75.png",
+      "original_sha256": "d444f61489382d9a58040714f129add1c140b5b6a450898684360e6fc7bebd68",
+      "original_bytes": 146315,
+      "stored_path": "archive/d4/d444f61489382d9a58040714f129add1c140b5b6a450898684360e6fc7bebd68.gz",
+      "stored_bytes": 121610,
+      "stored_sha256": "0a3fc23bdd969fb5ebe207c549bf463e9cc0a32486c0ed0874ea157633d66e52"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/manifest.json",
+      "original_sha256": "34a3a4ea2fbdf0a865bf87ae782c0299897fceddf89afb2fa457ac8c0e131025",
+      "original_bytes": 5654,
+      "stored_path": "archive/34/34a3a4ea2fbdf0a865bf87ae782c0299897fceddf89afb2fa457ac8c0e131025.gz",
+      "stored_bytes": 2048,
+      "stored_sha256": "ca6e569b43ebefeebe893c303acf8e12a0bf7bb5dbc966fea6cc0e3fdac1bfc7"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/own-controls.json",
+      "original_sha256": "1756983b5f64ef696c697c67643522a62b94105da9fc12fea63a3f8677b172be",
+      "original_bytes": 3273,
+      "stored_path": "archive/17/1756983b5f64ef696c697c67643522a62b94105da9fc12fea63a3f8677b172be.gz",
+      "stored_bytes": 672,
+      "stored_sha256": "8808eae3c5a5d6742ac781a32d43111af61ef23e2583c7023a571493e2a2b3ff"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/own-examples.txt",
+      "original_sha256": "ba77a5cdafdb9da02ffba0b4d2821df3ea5db453da980b1015b2e36baae44d05",
+      "original_bytes": 438,
+      "stored_path": "archive/ba/ba77a5cdafdb9da02ffba0b4d2821df3ea5db453da980b1015b2e36baae44d05.gz",
+      "stored_bytes": 300,
+      "stored_sha256": "ae3451b7896ce9ff60e5f0fedb9b899007eb6ebe1351f9ed3d64d5b27220ade1"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/preservation-proof.json",
+      "original_sha256": "1bfbb73c22536f9a3b53937e2b40b7a49defc749833ddaaaaf037eb15e2511cc",
+      "original_bytes": 584,
+      "stored_path": "archive/1b/1bfbb73c22536f9a3b53937e2b40b7a49defc749833ddaaaaf037eb15e2511cc.gz",
+      "stored_bytes": 278,
+      "stored_sha256": "a6e776a08a25fbc16556e3ac088280631035c4c4dd1ac56e272aa8933640548d"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/prior-year-completion-validation-AX.txt",
+      "original_sha256": "b2d5766fbd625ae274729d3c902c8d076b600a7e9869e0ba86f52ee887b7872d",
+      "original_bytes": 32989,
+      "stored_path": "archive/b2/b2d5766fbd625ae274729d3c902c8d076b600a7e9869e0ba86f52ee887b7872d.gz",
+      "stored_bytes": 7119,
+      "stored_sha256": "949e3d1dad4ec7e45037f0f33df3188ad1166e1f82e613e0289b0f53b3960d76"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/retained-source-acquisition-receipts.json",
+      "original_sha256": "9cc7654a193565a103c6aaf3e16a77d57c5b94383cc874f48ba4344eef16b422",
+      "original_bytes": 2574,
+      "stored_path": "archive/9c/9cc7654a193565a103c6aaf3e16a77d57c5b94383cc874f48ba4344eef16b422.gz",
+      "stored_bytes": 1024,
+      "stored_sha256": "bbf601e9debd59997bae2ab414342d2218fa9d8ad8a7c594a7cfb0dff62d6893"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/source-read-ledger.json",
+      "original_sha256": "cd1bc8674dd655bd54077f5d1740db7854fa6eb6bb5c2ef21cdc65bb24ef7bc2",
+      "original_bytes": 4414,
+      "stored_path": "archive/cd/cd1bc8674dd655bd54077f5d1740db7854fa6eb6bb5c2ef21cdc65bb24ef7bc2.gz",
+      "stored_bytes": 1563,
+      "stored_sha256": "4c58ff1271e32ae4b210e3c6f13fec9f73b7a3261466d0bab940623dbe5e63b5"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-completion.html",
+      "original_sha256": "d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7",
+      "original_bytes": 15770,
+      "stored_path": "archive/d5/d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7.gz",
+      "stored_bytes": 5026,
+      "stored_sha256": "7fc27998db0857c2635f0b6163c6dd9fd3dbbb01b816beba44eb345a608140c9"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-completion.reader.txt",
+      "original_sha256": "0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396",
+      "original_bytes": 6224,
+      "stored_path": "archive/02/0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396.gz",
+      "stored_bytes": 2373,
+      "stored_sha256": "8fbd5825b28558bbe66d536441f34e76db8e477ebed432daf2678b3fe7baf10a"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-rehab.html",
+      "original_sha256": "c42253f194a80e5798b9e8cdee6c445df6b9eb13d39714a90c9d8e10e6bb4ba4",
+      "original_bytes": 18230,
+      "stored_path": "archive/c4/c42253f194a80e5798b9e8cdee6c445df6b9eb13d39714a90c9d8e10e6bb4ba4.gz",
+      "stored_bytes": 5705,
+      "stored_sha256": "3913a205198b8f6e76393b5306b093f70d1dbaec10c398628dadb3b87e950d01"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-rehab.reader.txt",
+      "original_sha256": "7788c7d390f64225cef83d9ac04c64c983b3b6a524c9c821ebb18cfa97ea4591",
+      "original_bytes": 6813,
+      "stored_path": "archive/77/7788c7d390f64225cef83d9ac04c64c983b3b6a524c9c821ebb18cfa97ea4591.gz",
+      "stored_bytes": 2692,
+      "stored_sha256": "727c8333631aa84a9ed7d9666f8a81aad4ee8b31742877a231132060a2291001"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/law-current.html",
+      "original_sha256": "7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce",
+      "original_bytes": 558040,
+      "stored_path": "archive/7b/7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce.gz",
+      "stored_bytes": 70751,
+      "stored_sha256": "dc605aae60a5f835c0a2df3cf45ba72a999d723c1c0afef07db50397bdff4ffc"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/sources/law-current.reader.txt",
+      "original_sha256": "cab462175621aaa1177a3a69a9fc8c22572264e8c66911eeb40b6e38de05cdf8",
+      "original_bytes": 248088,
+      "stored_path": "archive/ca/cab462175621aaa1177a3a69a9fc8c22572264e8c66911eeb40b6e38de05cdf8.gz",
+      "stored_bytes": 49510,
+      "stored_sha256": "f8617457d82045dbb555c50d18127652cfcb368a1195c5cec4f2baa42fbe63f3"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-day-grant-private-method/writer-report.md",
+      "original_sha256": "39cc2bcbb94e5cfb6c80e0e1cdba040d85984a72bc85c4eef831e800bdeaebca",
+      "original_bytes": 3864,
+      "stored_path": "archive/39/39cc2bcbb94e5cfb6c80e0e1cdba040d85984a72bc85c4eef831e800bdeaebca.gz",
+      "stored_bytes": 2045,
+      "stored_sha256": "2330ccaeffd6a197a7a20bd1d537760a7ce584e0c5ccdfc52ace1542aa663ea2"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition/README.md",
+      "original_sha256": "fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7",
+      "original_bytes": 19306,
+      "stored_path": "archive/fa/fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7.gz",
+      "stored_bytes": 7296,
+      "stored_sha256": "5788965747cef80b7b1aa6d749c2dff40aa0146eaab7a21d0db56c57a74056f1"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition/composition-manifest.json",
+      "original_sha256": "38224907615abee78cfa267821ff5f1f0b86bb85e46936219bb92a7f27b162a1",
+      "original_bytes": 44594,
+      "stored_path": "archive/38/38224907615abee78cfa267821ff5f1f0b86bb85e46936219bb92a7f27b162a1.gz",
+      "stored_bytes": 12028,
+      "stored_sha256": "1fb19d32b1e11a4e1266279cbcddde56bd47b797932a78f6564b5a5b64ea7e71"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition/es-irpf-deductions.md",
+      "original_sha256": "d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17",
+      "original_bytes": 544691,
+      "stored_path": "archive/d5/d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17.gz",
+      "stored_bytes": 155339,
+      "stored_sha256": "7c9de85f3df8e73ee5f09f7baffa0236f674b21ae8bbe9fc94a716029777720b"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition/exact-replacements.json",
+      "original_sha256": "1a5d1f18056d317ecaba1f219928688b2c3616c194192b2ec8c6ab2918529e6e",
+      "original_bytes": 28717,
+      "stored_path": "archive/1a/1a5d1f18056d317ecaba1f219928688b2c3616c194192b2ec8c6ab2918529e6e.gz",
+      "stored_bytes": 8962,
+      "stored_sha256": "1283af5757d2209711956f32de31e472ed3fd3af928b834ae55fbd58942e6bc3"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition/report.md",
+      "original_sha256": "135c8715b0833ce213478eaa96e5a108eae8fcfda6df8bdc46b0f097033aafe2",
+      "original_bytes": 690,
+      "stored_path": "archive/13/135c8715b0833ce213478eaa96e5a108eae8fcfda6df8bdc46b0f097033aafe2.gz",
+      "stored_bytes": 428,
+      "stored_sha256": "f2be275006ea9190d565120b2832d5a55db7a9b526dab7ccc7006ed1a1ca2214"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/check.py",
+      "original_sha256": "f20d3528d444ef75d96b0d33b0058b994e0c6d0d74d5a2db01b77d6bd21f39fc",
+      "original_bytes": 5397,
+      "stored_path": "archive/f2/f20d3528d444ef75d96b0d33b0058b994e0c6d0d74d5a2db01b77d6bd21f39fc.gz",
+      "stored_bytes": 2301,
+      "stored_sha256": "fbaab8c8bd22de14dce9d23e7d31d7a602633cfc4b1b9a0e05b5a0a721f36aa5"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/manifest.json",
+      "original_sha256": "6c4a3c1feebdee8f767c72800abde08720c41df7fdb992cfb15f2c2c86e6bd2c",
+      "original_bytes": 994,
+      "stored_path": "archive/6c/6c4a3c1feebdee8f767c72800abde08720c41df7fdb992cfb15f2c2c86e6bd2c.gz",
+      "stored_bytes": 487,
+      "stored_sha256": "6c8fb5158f32fc6e0599eaa6775d3fb515d8b234fcc6d86c6d6172355c6f282d"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/own-controls.json",
+      "original_sha256": "257db596e54bdb86f1eedd3fe0abeb0d37768470edaedf29298320842681dbbf",
+      "original_bytes": 4264,
+      "stored_path": "archive/25/257db596e54bdb86f1eedd3fe0abeb0d37768470edaedf29298320842681dbbf.gz",
+      "stored_bytes": 684,
+      "stored_sha256": "2f2bca8403abd2fa3ce5dcbee3e7b2033a864e18b8a9fc8277d692f0e7437ad1"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/own-examples.txt",
+      "original_sha256": "7bf374ade43ed31b2391d89a3b45e03bb376d1039620ba5a6e4e4a39b9dde5ff",
+      "original_bytes": 426,
+      "stored_path": "archive/7b/7bf374ade43ed31b2391d89a3b45e03bb376d1039620ba5a6e4e4a39b9dde5ff.gz",
+      "stored_bytes": 293,
+      "stored_sha256": "50b384cea944e9797e7e54b33a8cd277c96098948aceab3db77025dbe161f670"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/preservation-checks.json",
+      "original_sha256": "e6ab0f73fb6f9c1cc149e0835d0f6264cb2ee360f9d45941521babfd5728a1b5",
+      "original_bytes": 1891,
+      "stored_path": "archive/e6/e6ab0f73fb6f9c1cc149e0835d0f6264cb2ee360f9d45941521babfd5728a1b5.gz",
+      "stored_bytes": 684,
+      "stored_sha256": "3083d5035d5d5405542ef0c9d27c0d3f1abaef799e773bcfb1ce6a2932d31fa4"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/report.md",
+      "original_sha256": "243bf78f8bcfc16d842e899ceeb32cd9dee80eb6b1648f07251f0071e59b30d4",
+      "original_bytes": 4318,
+      "stored_path": "archive/24/243bf78f8bcfc16d842e899ceeb32cd9dee80eb6b1648f07251f0071e59b30d4.gz",
+      "stored_bytes": 2187,
+      "stored_sha256": "331b7f6564a04f0dbd73189d9240f950d458919c5a4cc853ef854a811ca8019f"
+    },
+    {
+      "original_path": "spain-Galicia-carry-vintages-independent-review/source-read-ledger.json",
+      "original_sha256": "58c933c0c7c19b1ded8e33d4e7ba9028697bc069a73578b4a69a987c0cb21804",
+      "original_bytes": 6757,
+      "stored_path": "archive/58/58c933c0c7c19b1ded8e33d4e7ba9028697bc069a73578b4a69a987c0cb21804.gz",
+      "stored_bytes": 1454,
+      "stored_sha256": "8b184283558bc0744d37ce3f1bf3f649f1d4a4b84fe7d12450ea011a5624166a"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/README.md.diff",
+      "original_sha256": "a0a0f195e00b794b71756befd35db420ed82f74a07202cfc3a41cdb4acccbcf6",
+      "original_bytes": 14170,
+      "stored_path": "archive/a0/a0a0f195e00b794b71756befd35db420ed82f74a07202cfc3a41cdb4acccbcf6.gz",
+      "stored_bytes": 3626,
+      "stored_sha256": "50c9fe30dce66f9d24dbe07d8a5d3bf6472e2c4c90cb5da22b874a7dcfb9cf1d"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/actual-read-excerpts.txt",
+      "original_sha256": "be6d473ca676d2c93a77671a2bb386a6e4a28721243e7863afeb95ef4d6a3548",
+      "original_bytes": 28378,
+      "stored_path": "archive/be/be6d473ca676d2c93a77671a2bb386a6e4a28721243e7863afeb95ef4d6a3548.gz",
+      "stored_bytes": 6553,
+      "stored_sha256": "6ebf5bc4a6c0758bd89dcb22ff7b05dcfb5e58e714064ad4d52e49f34163ecda"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/actual-read-scopes.json",
+      "original_sha256": "2980d95ea995c2dac753287aff9af1350c4225fc8524ddf0ba20c5cdeb6433c5",
+      "original_bytes": 2423,
+      "stored_path": "archive/29/2980d95ea995c2dac753287aff9af1350c4225fc8524ddf0ba20c5cdeb6433c5.gz",
+      "stored_bytes": 601,
+      "stored_sha256": "a2b352f944278da9d14e409a37b53b523085005c50cfd022625b26a24bc72c5a"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/artifact-manifest.json",
+      "original_sha256": "0221fe7dd716884b6fbb277a530eda976df0258d02887369a8bc053e24345d6f",
+      "original_bytes": 8746,
+      "stored_path": "archive/02/0221fe7dd716884b6fbb277a530eda976df0258d02887369a8bc053e24345d6f.gz",
+      "stored_bytes": 1869,
+      "stored_sha256": "100043cfee74e19019c332784907bf34156ad57855449fd97d85c5a9bc4e87e4"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/baselines/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/baselines/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/check.py",
+      "original_sha256": "4e6fc8f4a4fcf277ab842a2cb27798149e6a2186b557278472789c9a198e7078",
+      "original_bytes": 6722,
+      "stored_path": "archive/4e/4e6fc8f4a4fcf277ab842a2cb27798149e6a2186b557278472789c9a198e7078.gz",
+      "stored_bytes": 2967,
+      "stored_sha256": "930f6ed24c10de64ca492e4958edecb4101b4abf08b289f1839590117543fd2b"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/es-irpf-deductions.md.diff",
+      "original_sha256": "722796e4909e71e42450743d40da3153aff984e54bb3fccbdbc5d429d4881ced",
+      "original_bytes": 22430,
+      "stored_path": "archive/72/722796e4909e71e42450743d40da3153aff984e54bb3fccbdbc5d429d4881ced.gz",
+      "stored_bytes": 6793,
+      "stored_sha256": "f11b240fa39bdcede347e9f6daf0e870c5fa4bd99b4e660bdb82d7962c0d06a2"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/freeze.json",
+      "original_sha256": "9fe427083cbb9bbce8b50792fa258a704c376842e12cb77cfbb82dffb840df62",
+      "original_bytes": 497,
+      "stored_path": "archive/9f/9fe427083cbb9bbce8b50792fa258a704c376842e12cb77cfbb82dffb840df62.gz",
+      "stored_bytes": 353,
+      "stored_sha256": "8925a9860aa078aceb2de4a093c47a0713613cc54a66afca98a4efbf9cf8587d"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/independent-controls.json",
+      "original_sha256": "ad673b3e501e55a27ba266c0c2df1be40c4dbc09b29dffdacf16e47a68c0f3fe",
+      "original_bytes": 3371,
+      "stored_path": "archive/ad/ad673b3e501e55a27ba266c0c2df1be40c4dbc09b29dffdacf16e47a68c0f3fe.gz",
+      "stored_bytes": 627,
+      "stored_sha256": "e46bfa69db91d34fb5675164cb34bd781e78be161e472a5f702f418a96c646e0"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/own-UI-read-ledger.json",
+      "original_sha256": "86e5fb3a181b6527f016e7cf6e75174394adf43911a0eaf54d5c2e9692ef1471",
+      "original_bytes": 5878,
+      "stored_path": "archive/86/86e5fb3a181b6527f016e7cf6e75174394adf43911a0eaf54d5c2e9692ef1471.gz",
+      "stored_bytes": 1080,
+      "stored_sha256": "0c00c45d4ccf439b600e8813e50e13d34646a5dfee72c7a3b1370daeaea703df"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/own-UI-selected-read.txt",
+      "original_sha256": "584c19934ff491598b87126f8d33988b73020e7343d5bde706ecfac6c1b076bc",
+      "original_bytes": 11101,
+      "stored_path": "archive/58/584c19934ff491598b87126f8d33988b73020e7343d5bde706ecfac6c1b076bc.gz",
+      "stored_bytes": 1758,
+      "stored_sha256": "0e81a79d2c14d1cdef8f5d06fc36dd4f5acfb968fca6ab8ca12ce4b5f4725cbe"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/own-source-map.json",
+      "original_sha256": "582959660dafe2fa40fcce881635dc575e5d722ceafff75fc4825743d66f22e7",
+      "original_bytes": 2912,
+      "stored_path": "archive/58/582959660dafe2fa40fcce881635dc575e5d722ceafff75fc4825743d66f22e7.gz",
+      "stored_bytes": 1065,
+      "stored_sha256": "447161ddafb5b9e2337de2d1e6e6501b092903ad112b72194cde77df8f70b418"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/preservation-and-validation.json",
+      "original_sha256": "98334b630a718277ab010f31015bf2c3be878f5eb36aea48c7a564af0a525379",
+      "original_bytes": 8509,
+      "stored_path": "archive/98/98334b630a718277ab010f31015bf2c3be878f5eb36aea48c7a564af0a525379.gz",
+      "stored_bytes": 2429,
+      "stored_sha256": "1a9a257d1a07e1c7f4f1028f6d20c5b47cd452d845a4a03691959dc549018965"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/report.md",
+      "original_sha256": "f3ae4f51ca2c2cc094265ac52ebe8a4fb870082e1db15cdd4905a456e907615d",
+      "original_bytes": 4333,
+      "stored_path": "archive/f3/f3ae4f51ca2c2cc094265ac52ebe8a4fb870082e1db15cdd4905a456e907615d.gz",
+      "stored_bytes": 2280,
+      "stored_sha256": "f95c8e68eb9522a3f8a464b52fe5618a57316ccd21514056bf911499238f9052"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/AEAT-completion.html",
+      "original_sha256": "d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7",
+      "original_bytes": 15770,
+      "stored_path": "archive/d5/d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7.gz",
+      "stored_bytes": 5026,
+      "stored_sha256": "7fc27998db0857c2635f0b6163c6dd9fd3dbbb01b816beba44eb345a608140c9"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/AEAT-completion.reader.txt",
+      "original_sha256": "0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396",
+      "original_bytes": 6224,
+      "stored_path": "archive/02/0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396.gz",
+      "stored_bytes": 2373,
+      "stored_sha256": "8fbd5825b28558bbe66d536441f34e76db8e477ebed432daf2678b3fe7baf10a"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/AEAT-rehab.html",
+      "original_sha256": "c42253f194a80e5798b9e8cdee6c445df6b9eb13d39714a90c9d8e10e6bb4ba4",
+      "original_bytes": 18230,
+      "stored_path": "archive/c4/c42253f194a80e5798b9e8cdee6c445df6b9eb13d39714a90c9d8e10e6bb4ba4.gz",
+      "stored_bytes": 5705,
+      "stored_sha256": "3913a205198b8f6e76393b5306b093f70d1dbaec10c398628dadb3b87e950d01"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/AEAT-rehab.reader.txt",
+      "original_sha256": "7788c7d390f64225cef83d9ac04c64c983b3b6a524c9c821ebb18cfa97ea4591",
+      "original_bytes": 6813,
+      "stored_path": "archive/77/7788c7d390f64225cef83d9ac04c64c983b3b6a524c9c821ebb18cfa97ea4591.gz",
+      "stored_bytes": 2692,
+      "stored_sha256": "727c8333631aa84a9ed7d9666f8a81aad4ee8b31742877a231132060a2291001"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/LIRPF-habitual-home-incorporated.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/LIRPF-habitual-home-incorporated.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/law-1-2025.html",
+      "original_sha256": "994b759cd0376a4d79896c68ce3f3b12c010947edf5dd0f2fc6fc71d5bd89300",
+      "original_bytes": 125785,
+      "stored_path": "archive/99/994b759cd0376a4d79896c68ce3f3b12c010947edf5dd0f2fc6fc71d5bd89300.gz",
+      "stored_bytes": 25052,
+      "stored_sha256": "882950d91a145e91a41617b570a67c3c03e088bcea1535007b5142d9c1be882e"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/law-1-2025.reader.txt",
+      "original_sha256": "4cfa1793870d69291679699df5d4c57e8ea9f76f6fc961b6831c3c1d1710f128",
+      "original_bytes": 73637,
+      "stored_path": "archive/4c/4cfa1793870d69291679699df5d4c57e8ea9f76f6fc961b6831c3c1d1710f128.gz",
+      "stored_bytes": 19768,
+      "stored_sha256": "e4118275b05407fd26949a068b35df904a1eed68c7f6a5d5c596cd6da068f808"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/law-current.html",
+      "original_sha256": "7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce",
+      "original_bytes": 558040,
+      "stored_path": "archive/7b/7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce.gz",
+      "stored_bytes": 70751,
+      "stored_sha256": "dc605aae60a5f835c0a2df3cf45ba72a999d723c1c0afef07db50397bdff4ffc"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/sources/law-current.reader.txt",
+      "original_sha256": "cab462175621aaa1177a3a69a9fc8c22572264e8c66911eeb40b6e38de05cdf8",
+      "original_bytes": 248088,
+      "stored_path": "archive/ca/cab462175621aaa1177a3a69a9fc8c22572264e8c66911eeb40b6e38de05cdf8.gz",
+      "stored_bytes": 49510,
+      "stored_sha256": "f8617457d82045dbb555c50d18127652cfcb368a1195c5cec4f2baa42fbe63f3"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/target-read-scope.json",
+      "original_sha256": "928fbd2169f36637f95a53963ef65918a029f014a13f9469ce194fe483627875",
+      "original_bytes": 7751,
+      "stored_path": "archive/92/928fbd2169f36637f95a53963ef65918a029f014a13f9469ce194fe483627875.gz",
+      "stored_bytes": 3270,
+      "stored_sha256": "75e24a1eb0340ea6b007b2c839b7614aad68cb447328b69cc14656795d21d5b8"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/targets/candidate-README.md",
+      "original_sha256": "fbdf3577b6e8d71bbaeb92e48d3ac02ba6da4822d13f24696331b1171b72493c",
+      "original_bytes": 16703,
+      "stored_path": "archive/fb/fbdf3577b6e8d71bbaeb92e48d3ac02ba6da4822d13f24696331b1171b72493c.gz",
+      "stored_bytes": 6455,
+      "stored_sha256": "ec96528d4fe65c4d09a56ce1e800a5b777dac64c220c7412f6c7ee384339d658"
+    },
+    {
+      "original_path": "spain-Extremadura-rental-rehab-independent-review/targets/candidate-es-irpf-deductions.md",
+      "original_sha256": "f5a20f51cb72d35960d69401eadfba6827a82fd5cb977474e52bae19110bb71f",
+      "original_bytes": 502189,
+      "stored_path": "archive/f5/f5a20f51cb72d35960d69401eadfba6827a82fd5cb977474e52bae19110bb71f.gz",
+      "stored_bytes": 141455,
+      "stored_sha256": "de04c087d58b357aff1325ee06243790a62ad4af06d3f719cfe7a009298d78f4"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/check.py",
+      "original_sha256": "5142b01b35085fd95d63e2f06d1b91934ff08a5e3206466941ddd8b93a9a7a90",
+      "original_bytes": 6982,
+      "stored_path": "archive/51/5142b01b35085fd95d63e2f06d1b91934ff08a5e3206466941ddd8b93a9a7a90.gz",
+      "stored_bytes": 2755,
+      "stored_sha256": "21e70dbf9309d44f330165e7190d461158893fba8b1a4ee2b7e041c157c2e123"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/composition-proof.json",
+      "original_sha256": "b3d762c8042f31e7661be620b8757c7429fd508556dd6097e75f1742c1a64245",
+      "original_bytes": 16845,
+      "stored_path": "archive/b3/b3d762c8042f31e7661be620b8757c7429fd508556dd6097e75f1742c1a64245.gz",
+      "stored_bytes": 3768,
+      "stored_sha256": "2574ef60d04cb5e404f707894ac16777c3a3e3e255a242426c9bfffd6dc26843"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/derived-exact-replacements.json",
+      "original_sha256": "da412e9381f5ae144b85bdbc4324a63dc9131769efdf46681f43183e4b513376",
+      "original_bytes": 28602,
+      "stored_path": "archive/da/da412e9381f5ae144b85bdbc4324a63dc9131769efdf46681f43183e4b513376.gz",
+      "stored_bytes": 8973,
+      "stored_sha256": "405aa9ceb25d0831c70721008dad68df08ddfbbf3d43939835084a041016a925"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/manifest.json",
+      "original_sha256": "e390f920aa09daa433993478e04c21c39ff54d92f5499ea6ccb7693b48154161",
+      "original_bytes": 891,
+      "stored_path": "archive/e3/e390f920aa09daa433993478e04c21c39ff54d92f5499ea6ccb7693b48154161.gz",
+      "stored_bytes": 466,
+      "stored_sha256": "8ed36424038cff6913216d3804bb5b847f3e7b500d2fe17f6d902fb6ab8f6c78"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/preseal-check-note.txt",
+      "original_sha256": "ca3f4bf097cdeba289d7a0055725e0aa0f33930da048045e35f3def69cb5848b",
+      "original_bytes": 398,
+      "stored_path": "archive/ca/ca3f4bf097cdeba289d7a0055725e0aa0f33930da048045e35f3def69cb5848b.gz",
+      "stored_bytes": 277,
+      "stored_sha256": "cde263eacf3e62a7111a0843612730502256671fc6e44933e5e14c2b437fecfb"
+    },
+    {
+      "original_path": "spain-health-Galicia-Extremadura-final-composition-independent-review/report.md",
+      "original_sha256": "4b07bc002c2806d280b45714ef6616a4ba621debecebbf47d15970ceb3b06db0",
+      "original_bytes": 2426,
+      "stored_path": "archive/4b/4b07bc002c2806d280b45714ef6616a4ba621debecebbf47d15970ceb3b06db0.gz",
+      "stored_bytes": 1290,
+      "stored_sha256": "641f7c04c9271709b056eb97cacf223defff8344242b032d1f515051e54330ba"
+    }
+  ]
+}

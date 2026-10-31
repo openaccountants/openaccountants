@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/portugal-bookkeeping"
   jurisdiction: "PT"
   tax_year: "2025"
-  last_updated: "2026-07-13"
+  last_updated: "2026-10-24"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -529,8 +529,8 @@ Para o tratamento do regime de Residente Não Habitual (RNH) e do Incentivo Fisc
 - **IES integra dados contabilísticos e fiscais** — A submissão da IES integra os dados contabilísticos e fiscais num único relato anual
 - **Resultado fiscal e Quadro 07** — O resultado fiscal parte do resultado contabilístico (conta 81) com correcções fiscais no Quadro 07 da Modelo 22
 - **Principais correcções fiscais** — Principais correcções: tributação autónoma, gastos não dedutíveis, benefícios fiscais (SIFIDE, RFAI, DLRR)
-- **Taxa de IRC geral** — 21% (taxa geral)
-- **Taxa reduzida PME primeiros 50.000 EUR** — 17% (sobre os primeiros 50.000 EUR para PME; derrama estadual sobre lucros superiores a 1.500.000 EUR)
+- **Taxa de IRC geral** — 19% nos períodos de tributação iniciados em 2026 (20% em 2025, 18% em 2027, 17% a partir de 2028)  _(artigo 87.º, n.º 1, do CIRC; artigo 3.º da Lei n.º 64/2025; ver a skill pt-corporate-tax)_
+- **Taxa reduzida PME primeiros 50.000 EUR** — 15% em 2026 (16% em 2025) sobre os primeiros 50.000 EUR de matéria coletável de PME e Small Mid Cap; o excedente paga a taxa geral; derrama estadual sobre lucros superiores a 1.500.000 EUR  _(artigo 87.º, n.º 2, do CIRC; ver a skill pt-corporate-tax)_
 
 Utilize a skill pt-income-tax para o apuramento detalhado
 
@@ -572,6 +572,8 @@ Utilize a skill pt-social-contributions para detalhes
 
 Esta skill e os respectivos resultados são disponibilizados apenas para fins informativos e de apoio ao cálculo e não constituem aconselhamento fiscal, jurídico ou financeiro. A Open Accountants e os seus colaboradores não aceitam qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado (Contabilista Certificado membro da OCC) antes da submissão ou de qualquer actuação com base nos mesmos.
 
+> Contributed by Michael Cutajar.
+
 <!-- openaccountants-cta-block -->
 
 ---
@@ -592,4 +594,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-24. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `portugal-bookkeeping` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/portugal-bookkeeping. If neither is available, confirm every figure against the official source pages cited above before relying on it.

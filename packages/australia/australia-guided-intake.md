@@ -5,14 +5,14 @@ version: 0.3
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-10
+authored_by: Ryan Duguid
 review_status: pending_review
+trust_label: Accountant-authored
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # AU Freelance Intake
-
-## AU Freelance Intake
 
 ## Australia Sole Trader Intake Skill v0.3
 
@@ -52,7 +52,7 @@ Target: intake completes in 5 minutes for a prepared user, 15 minutes for a user
 
 ## Income-year handoff
 
-- **Income-year handoff** — This intake prepares 2025–26. Include `tax_year: "2025-26"` in every handoff. Each receiving guide must confirm that year before using its rates. A guide covering only 2026–27 cannot supply historical rates. Keep missing-year support as an unresolved calculation requirement and withhold final totals until resolved. (tax_year 2025-26)
+This intake prepares 2025–26. Include `tax_year: "2025-26"` in every handoff. Each receiving guide must confirm that year before using its rates. A guide covering only 2026–27 cannot supply historical rates. Keep missing-year support as an unresolved calculation requirement and withhold final totals until resolved.
 
 ## Section 1 -- The opening
 
@@ -92,7 +92,7 @@ Q3: "Do you have an ABN?"
 
 - **Q1 evaluation** — Q1 = Full year -> continue. Q1 = Part year or did not live in Australia -> stop. "I'm set up for full-year Australian residents only. Part-year or non-residents have different rules around foreign income and dual residency. You need a registered tax agent who handles non-resident returns."
 - **Q2 evaluation** — Q2 = Sole trader -> continue. Q2 = Partnership -> stop. "Partnerships lodge a separate partnership return and distribute income to partners. The australia-company-trust workflow (workflows/australia-company-trust.md) covers partnership, company and trust engagements end to end; if it is not available, you need a registered tax agent familiar with partnership returns." Q2 = Company (Pty Ltd) -> stop. "Company returns follow different rules. The australia-company-trust workflow covers them; if it is not available, you need a registered tax agent." Q2 = Trust -> stop. "Trust returns have separate distribution and reporting requirements. The australia-company-trust workflow covers them; if it is not available, you need a registered tax agent familiar with trust returns." Q2 = Not sure -> ask one follow-up: "Do you operate under your own name (or a registered business name) with an individual ABN? Or do you have a registered company with ASIC? If you invoice under your own ABN, you're a sole trader. If you have an ACN and Pty Ltd, you're a company."
-- **Q3 evaluation** — Record the ABN or application status and confirm entitlement. An ABN is not universally compulsory to conduct a business. Check GST registration and no-ABN withholding separately; do not reject an otherwise valid income-tax engagement solely because no ABN is quoted.  _([ABR eligibility](https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-entitlement))_
+- **Q3 evaluation:** Record the ABN or application status and confirm entitlement. An ABN is not universally compulsory to conduct a business. Check GST registration and no-ABN withholding separately; do not reject an otherwise valid income-tax engagement solely because no ABN is quoted. [ABR eligibility](https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-entitlement).
 
 **Second batch of scope questions**
 
@@ -107,12 +107,12 @@ Q6: "Industry?"
     Options: ["Software / tech / IT services", "Professional services (accounting, legal, consulting)", "Trades (construction, electrical, plumbing)", "Creative (design, media, photography)", "Other"]
 ```
 
-Total time: ~45 seconds if the user taps through.
-
 - **GST registration turnover threshold** — 75000 AUD (turnover above which GST registration required or voluntary registration applies)
-- **Q4 evaluation** — Verify GST registration and effective dates on the ABR, supported by the ATO account where available. Charging GST on an invoice does not establish registration. Determine the GST reporting cycle from the issued statement. Separately check PAYG instalments and withholding even when the client is not GST-registered.  _([ATO registration](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst))_
+- **Q4 evaluation:** Verify GST registration and effective dates on the ABR, supported by the ATO account where available. Charging GST on an invoice does not establish registration. Determine the GST reporting cycle from the issued statement. Separately check PAYG instalments and withholding even when the client is not GST-registered. [ATO registration](https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst).
 - **Q5 evaluation** — All options -> note for Medicare levy surcharge and tax offset calculations. Continue.
 - **Q6 evaluation** — All options -> note for expense classification context. Continue.
+
+Total time: ~45 seconds if the user taps through.
 
 ## Section 3 -- The dump
 
@@ -313,7 +313,7 @@ Q: "Home office claim method?"
 ```
 
 - **Home office option handling** — If option 1 -> ask for total hours worked from home during 2025-26 (text input). If option 2 -> flag as complex: actual cost method requires detailed records of electricity, gas, internet, phone, depreciation of furniture. Ask for floor area percentage of dedicated workspace. If option 3 -> rent is already captured in expenses. No home office calculation needed. If option 4 -> skip home office entirely. If option 5 -> recommend fixed rate method (70c/hr) as simpler. Ask for hours.
-- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)  _(PCG 2023/1)_
+- **Fixed rate home office method rate** — 70 cents/hour (2024-25 through 2026-27, PCG 2023/1; was 67c for 2022-23 and 2023-24, replacing the old 52c/hr method)
 
 **Motor vehicle gap-filling question**
 
@@ -370,8 +370,6 @@ Once gap-filling is done, produce a final handoff message and hand off to `au-re
 > Starting now.
 
 Then internally invoke `au-return-assembly` with the structured intake package.
-
-0. **Invoke au-return-assembly** — Internally invoke `au-return-assembly` with the structured intake package.
 
 ## Section 8 -- Structured intake package (internal format)
 
@@ -568,10 +566,6 @@ For an unprepared user (has to go fetch documents):
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-> Contributed by Ryan Duguid.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Ryan Duguid.
 

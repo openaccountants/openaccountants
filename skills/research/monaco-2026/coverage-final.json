@@ -1,0 +1,24 @@
+{
+  "code": "MC",
+  "name": "Monaco",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/international/monaco",
+  "skills": 8,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "missing": [],
+  "not_applicable": {},
+  "partial": {},
+  "has_readme": true,
+  "complete": true
+}

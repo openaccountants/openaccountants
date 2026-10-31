@@ -4,7 +4,6 @@ description: "UK National Insurance contributions for tax year 2026/27 (6 April 
 version: 3.1
 jurisdiction: GB
 tax_year: 2026
-tax_year_notes: "2026-27"
 last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review

@@ -7,17 +7,21 @@
 
 1. `foundation.md`
 2. `intake.md`
-3. `ee-company-formation.md`
-4. `ee-corporate-income-tax.md`
-5. `ee-tax-overview.md`
-6. `estonia-income-tax.md`
-7. `estonia-payroll.md`
-8. `estonia-social-contributions.md`
-9. `estonia-tax-optimization.md`
-10. `estonia-vat-return.md`
-11. `eu-vat-directive.md`
-12. `payroll-workflow-base.md`
-13. `company-formation-workflow-base.md`
+3. `README.md`
+4. `ee-company-formation.md`
+5. `ee-corporate-income-tax.md`
+6. `ee-cross-border.md`
+7. `ee-tax-overview.md`
+8. `ee-transfer-pricing.md`
+9. `estonia-income-tax.md`
+10. `estonia-payroll.md`
+11. `estonia-social-contributions.md`
+12. `estonia-tax-optimization.md`
+13. `estonia-vat-return.md`
+14. `eu-vat-directive.md`
+15. `payroll-workflow-base.md`
+16. `company-formation-workflow-base.md`
+17. `transfer-pricing-workflow-base.md`
 
 ## How to use
 

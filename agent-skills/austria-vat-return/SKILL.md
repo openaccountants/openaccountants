@@ -7,7 +7,7 @@ metadata:
   openaccountants_url: "https://www.openaccountants.com/skills/austria-vat-return"
   jurisdiction: "AT"
   tax_year: "2026"
-  last_updated: "2026-10-23"
+  last_updated: "2026-10-27"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
@@ -54,6 +54,7 @@ metadata:
 - **Exempt without credit.** Banking, insurance, medical care, most education, letting of business premises unless the landlord opts to tax, and the small business exemption (§ 6 Abs 1 UStG). Input VAT on related costs is lost; a business with both kinds of supply apportions (§ 12 Abs 4 to 6 UStG).
 - **Input VAT.** Deductible on a proper invoice for supplies made to the business (§ 12 UStG). No deduction for ordinary cars and motorcycles and their running costs, and for business meals except where the advertising purpose far outweighs everything else. Zero-emission cars are an exception within the reasonableness cap. A cash-basis business deducts only once it has paid.
 - **Reverse charge.** The customer enters the tax as output VAT and, if entitled, deducts the same amount as input VAT in the same return, so a fully taxable business pays nothing net.
+- **Change of use of a capital asset.** If the facts that decided the input VAT deduction on a fixed asset change in the four calendar years after the year of first use, the deduction is corrected for each year of change, one fifth of the asset's input VAT a year. For land (including capitalised costs and major repairs) the period is nineteen years and the correction is one twentieth a year. On a sale, the rest of the period is corrected at the latest in the last UVA of that year (§ 12 Abs 10 and 11 UStG, RIS consolidated text read 26 October 2026).
 - **The small business limit is counted gross.** The limit test uses the agreed consideration, not a base computed as if VAT applied (§ 6 Abs 1 Z 27 last sentence). Ancillary sales, the sale of the business, and most exempt supplies are left out.
 
 ## Deadlines and filing
@@ -179,6 +180,26 @@ expected:
 
 Not yet confirmed: the reasonableness cap for input VAT on zero-emission cars was not read for 2026.
 
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
+
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-23. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `austria-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/austria-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `austria-vat-return` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/austria-vat-return. If neither is available, confirm every figure against the official source pages cited above before relying on it.

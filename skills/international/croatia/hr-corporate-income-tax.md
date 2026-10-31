@@ -1,15 +1,14 @@
 ---
 name: hr-corporate-income-tax
 description: "Use this skill for Croatian profit tax (porez na dobit) in tax year 2026 under the Profit Tax Act in force from 1 January 2026 (last amended NN 151/25) and the Profit Tax Rulebook. It covers who pays and residence (art. 2 and 3), the 10% and 18% rates split at EUR 1,000,000 of revenue in the period (art. 28), the base and the main add-backs (50% of representation and of passenger car costs, fines, donations above 2%), depreciation rates and the car cap, bad debts, provisions, losses carried forward for 5 years, thin capitalisation (art. 8) and the 30% EBITDA interest limit (art. 30.a), monthly advances, the PD return due 30 April, and fines. Trigger on: Croatia corporate tax, porez na dobit 2026, PD obrazac, d.o.o. tax Croatia, predujam poreza na dobit, 10% or 18% profit tax. Out of scope: transfer pricing (hr-transfer-pricing), withholding and treaties in depth (cross-border skill), VAT (croatia-vat-return), individuals (croatia-income-tax)."
-jurisdiction: HR
-category: international
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+jurisdiction: HR
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
+tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -253,3 +252,23 @@ expected:
 | Zakon o kamatama (NN 94/04) and Uredba o visini stope zatezne kamate (NN 153/04), in the Tax Administration register | https://porezna-uprava.gov.hr/Propisi | 2026-10-24 |
 
 Not yet confirmed: the late payment interest rate on tax debts for 2026. OPZ art. 130(1) points to a separate law; the register lists the Interest Act (NN 94/04), whose rate decree (NN 153/04, 15%) predates the Obligations Act art. 29 formula, and no Tax Administration text naming the 2026 rate was found. The Croatian National Bank lists the Obligations Act art. 29 non-commercial default rate at 5.40% for 1 July to 31 December 2026 (https://www.hnb.hr/documents/d/guest/h-tablica_max-nks-eks-1), but no official text was found saying that rate applies to tax debts. Also not confirmed: whether the advance for March or for April is the first one paid at the new amount (Rulebook art. 48(1) fixes it on 30 April); the list of bodies named for the new sponsorship deduction (the art. 6(8) decision was not read); EU directive and treaty relief from withholding (left to the cross-border skill); and the content of the Investment Promotion Act and Tourism Act reliefs, which this skill only flags.
+
+> Contributed by Michael Cutajar.
+
+<!-- openaccountants-cta-block -->
+
+---
+
+## Talk to a verified accountant
+
+This guide is maintained by the OpenAccountants network — accountants who put
+their name behind the tax answers AI gives people. The live, always-current
+version (and the professional behind it) is at
+[openaccountants.com](https://www.openaccountants.com).
+
+- Use it in your AI: https://www.openaccountants.com/connect
+- Meet the accountants: https://www.openaccountants.com/network
+
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.

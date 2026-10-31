@@ -1,0 +1,2049 @@
+[
+  {
+    "quote_i": 14,
+    "quote_rows": [
+      14
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 15,
+    "quote_rows": [
+      15
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 16,
+    "quote_rows": [
+      16
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 17,
+    "quote_rows": [
+      17
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 18,
+    "quote_rows": [
+      18
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 19,
+    "quote_rows": [
+      19
+    ],
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 64
+  },
+  {
+    "quote_i": 51,
+    "quote_rows": [
+      51
+    ],
+    "reader_sha256": "6584403e01d6542eb7f398af6a906bacd908383c65f383c4152d25f092cadbd0",
+    "prior_pair": "es-corporate-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 61
+  },
+  {
+    "quote_i": 65,
+    "quote_rows": [
+      65
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 176
+  },
+  {
+    "quote_i": 141,
+    "quote_rows": [
+      141
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 94
+  },
+  {
+    "quote_i": 142,
+    "quote_rows": [
+      142
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 95
+  },
+  {
+    "quote_i": 143,
+    "quote_rows": [
+      143
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 96
+  },
+  {
+    "quote_i": 144,
+    "quote_rows": [
+      144
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 97
+  },
+  {
+    "quote_i": 145,
+    "quote_rows": [
+      145
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 98
+  },
+  {
+    "quote_i": 146,
+    "quote_rows": [
+      146
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 99
+  },
+  {
+    "quote_i": 147,
+    "quote_rows": [
+      147
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 100
+  },
+  {
+    "quote_i": 148,
+    "quote_rows": [
+      148
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 101
+  },
+  {
+    "quote_i": 149,
+    "quote_rows": [
+      149
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 54
+  },
+  {
+    "quote_i": 150,
+    "quote_rows": [
+      150
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 55
+  },
+  {
+    "quote_i": 151,
+    "quote_rows": [
+      151
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 56
+  },
+  {
+    "quote_i": 154,
+    "quote_rows": [
+      154
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 131
+  },
+  {
+    "quote_i": 155,
+    "quote_rows": [
+      155
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 132
+  },
+  {
+    "quote_i": 156,
+    "quote_rows": [
+      156
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 133
+  },
+  {
+    "quote_i": 157,
+    "quote_rows": [
+      157
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 134
+  },
+  {
+    "quote_i": 159,
+    "quote_rows": [
+      159
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 47
+  },
+  {
+    "quote_i": 160,
+    "quote_rows": [
+      160
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 46
+  },
+  {
+    "quote_i": 161,
+    "quote_rows": [
+      161,
+      169
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 48
+  },
+  {
+    "quote_i": 167,
+    "quote_rows": [
+      167
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 50
+  },
+  {
+    "quote_i": 271,
+    "quote_rows": [
+      275
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 80
+  },
+  {
+    "quote_i": 272,
+    "quote_rows": [
+      276
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 80
+  },
+  {
+    "quote_i": 338,
+    "quote_rows": [
+      342
+    ],
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 390
+  },
+  {
+    "quote_i": 339,
+    "quote_rows": [
+      343
+    ],
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 391
+  },
+  {
+    "quote_i": 340,
+    "quote_rows": [
+      344
+    ],
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 391
+  },
+  {
+    "quote_i": 341,
+    "quote_rows": [
+      345
+    ],
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 391
+  },
+  {
+    "quote_i": 342,
+    "quote_rows": [
+      346
+    ],
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 391
+  },
+  {
+    "quote_i": 354,
+    "quote_rows": [
+      358
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 76
+  },
+  {
+    "quote_i": 586,
+    "quote_rows": [
+      590
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 427
+  },
+  {
+    "quote_i": 587,
+    "quote_rows": [
+      591
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 427
+  },
+  {
+    "quote_i": 588,
+    "quote_rows": [
+      592
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 427
+  },
+  {
+    "quote_i": 589,
+    "quote_rows": [
+      593
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 427
+  },
+  {
+    "quote_i": 591,
+    "quote_rows": [
+      595
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 426
+  },
+  {
+    "quote_i": 601,
+    "quote_rows": [
+      606,
+      607
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 372
+  },
+  {
+    "quote_i": 602,
+    "quote_rows": [
+      608,
+      610
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 372
+  },
+  {
+    "quote_i": 603,
+    "quote_rows": [
+      609
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 372
+  },
+  {
+    "quote_i": 604,
+    "quote_rows": [
+      611
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 373
+  },
+  {
+    "quote_i": 605,
+    "quote_rows": [
+      612
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 373
+  },
+  {
+    "quote_i": 606,
+    "quote_rows": [
+      613
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 373
+  },
+  {
+    "quote_i": 607,
+    "quote_rows": [
+      614
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 374
+  },
+  {
+    "quote_i": 608,
+    "quote_rows": [
+      615
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 374
+  },
+  {
+    "quote_i": 609,
+    "quote_rows": [
+      616
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 374
+  },
+  {
+    "quote_i": 610,
+    "quote_rows": [
+      617
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 374
+  },
+  {
+    "quote_i": 611,
+    "quote_rows": [
+      618
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 375
+  },
+  {
+    "quote_i": 612,
+    "quote_rows": [
+      619
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 375
+  },
+  {
+    "quote_i": 613,
+    "quote_rows": [
+      620
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 375
+  },
+  {
+    "quote_i": 614,
+    "quote_rows": [
+      621
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 375
+  },
+  {
+    "quote_i": 615,
+    "quote_rows": [
+      622
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 376
+  },
+  {
+    "quote_i": 616,
+    "quote_rows": [
+      623
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 376
+  },
+  {
+    "quote_i": 617,
+    "quote_rows": [
+      624
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 376
+  },
+  {
+    "quote_i": 618,
+    "quote_rows": [
+      625
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 376
+  },
+  {
+    "quote_i": 619,
+    "quote_rows": [
+      626
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 377
+  },
+  {
+    "quote_i": 620,
+    "quote_rows": [
+      627
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 377
+  },
+  {
+    "quote_i": 621,
+    "quote_rows": [
+      628
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 377
+  },
+  {
+    "quote_i": 622,
+    "quote_rows": [
+      629
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 377
+  },
+  {
+    "quote_i": 623,
+    "quote_rows": [
+      630
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 378
+  },
+  {
+    "quote_i": 624,
+    "quote_rows": [
+      631
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 378
+  },
+  {
+    "quote_i": 625,
+    "quote_rows": [
+      632
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 378
+  },
+  {
+    "quote_i": 626,
+    "quote_rows": [
+      633
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 378
+  },
+  {
+    "quote_i": 627,
+    "quote_rows": [
+      634
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 379
+  },
+  {
+    "quote_i": 628,
+    "quote_rows": [
+      635
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 379
+  },
+  {
+    "quote_i": 629,
+    "quote_rows": [
+      636
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 379
+  },
+  {
+    "quote_i": 630,
+    "quote_rows": [
+      637
+    ],
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 379
+  },
+  {
+    "quote_i": 2573,
+    "quote_rows": [
+      2683
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-rental-income",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 128
+  },
+  {
+    "quote_i": 2574,
+    "quote_rows": [
+      2684
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-rental-income",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 128
+  },
+  {
+    "quote_i": 2575,
+    "quote_rows": [
+      2685
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-rental-income",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 128
+  },
+  {
+    "quote_i": 2823,
+    "quote_rows": [
+      2943,
+      2944
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 293
+  },
+  {
+    "quote_i": 2824,
+    "quote_rows": [
+      2945,
+      2947
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 293
+  },
+  {
+    "quote_i": 2825,
+    "quote_rows": [
+      2946
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 293
+  },
+  {
+    "quote_i": 2826,
+    "quote_rows": [
+      2948
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 294
+  },
+  {
+    "quote_i": 2827,
+    "quote_rows": [
+      2949
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 294
+  },
+  {
+    "quote_i": 2828,
+    "quote_rows": [
+      2950
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 294
+  },
+  {
+    "quote_i": 2829,
+    "quote_rows": [
+      2951
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 295
+  },
+  {
+    "quote_i": 2830,
+    "quote_rows": [
+      2952
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 295
+  },
+  {
+    "quote_i": 2831,
+    "quote_rows": [
+      2953
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 295
+  },
+  {
+    "quote_i": 2832,
+    "quote_rows": [
+      2954
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 295
+  },
+  {
+    "quote_i": 2833,
+    "quote_rows": [
+      2955
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 296
+  },
+  {
+    "quote_i": 2834,
+    "quote_rows": [
+      2956
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 296
+  },
+  {
+    "quote_i": 2835,
+    "quote_rows": [
+      2957
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 296
+  },
+  {
+    "quote_i": 2836,
+    "quote_rows": [
+      2958
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 296
+  },
+  {
+    "quote_i": 2837,
+    "quote_rows": [
+      2959
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 297
+  },
+  {
+    "quote_i": 2838,
+    "quote_rows": [
+      2960
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 297
+  },
+  {
+    "quote_i": 2839,
+    "quote_rows": [
+      2961
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 297
+  },
+  {
+    "quote_i": 2840,
+    "quote_rows": [
+      2962
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 297
+  },
+  {
+    "quote_i": 2841,
+    "quote_rows": [
+      2963
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 298
+  },
+  {
+    "quote_i": 2842,
+    "quote_rows": [
+      2964
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 298
+  },
+  {
+    "quote_i": 2843,
+    "quote_rows": [
+      2965
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 298
+  },
+  {
+    "quote_i": 2844,
+    "quote_rows": [
+      2966
+    ],
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 298
+  },
+  {
+    "quote_i": 2845,
+    "quote_rows": [
+      2967
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-social-contributions",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 11
+  },
+  {
+    "quote_i": 2846,
+    "quote_rows": [
+      2968
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-social-contributions",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 11
+  },
+  {
+    "quote_i": 2847,
+    "quote_rows": [
+      2969
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-social-contributions",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 11
+  },
+  {
+    "quote_i": 2848,
+    "quote_rows": [
+      2970
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-social-contributions",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 11
+  },
+  {
+    "quote_i": 2849,
+    "quote_rows": [
+      2971
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-foral-income-tax",
+    "prior_file": "rows.json",
+    "prior_row": 1907
+  },
+  {
+    "quote_i": 2850,
+    "quote_rows": [
+      2972
+    ],
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "prior_pair": "es-foral-payroll",
+    "prior_file": "rows.json",
+    "prior_row": 258
+  },
+  {
+    "quote_i": 2854,
+    "quote_rows": [
+      2976
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 270
+  },
+  {
+    "quote_i": 2855,
+    "quote_rows": [
+      2977
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 271
+  },
+  {
+    "quote_i": 2856,
+    "quote_rows": [
+      2978
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 272
+  },
+  {
+    "quote_i": 2859,
+    "quote_rows": [
+      2981
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 398
+  },
+  {
+    "quote_i": 2860,
+    "quote_rows": [
+      2982,
+      2985,
+      6263
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 164
+  },
+  {
+    "quote_i": 2861,
+    "quote_rows": [
+      2983
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 401
+  },
+  {
+    "quote_i": 2862,
+    "quote_rows": [
+      2984
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 401
+  },
+  {
+    "quote_i": 2863,
+    "quote_rows": [
+      2986
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 400
+  },
+  {
+    "quote_i": 3255,
+    "quote_rows": [
+      3386
+    ],
+    "reader_sha256": "7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 220
+  },
+  {
+    "quote_i": 4311,
+    "quote_rows": [
+      4464
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-estimated-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 54
+  },
+  {
+    "quote_i": 6018,
+    "quote_rows": [
+      6219
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 49
+  },
+  {
+    "quote_i": 6019,
+    "quote_rows": [
+      6220
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 62
+  },
+  {
+    "quote_i": 6020,
+    "quote_rows": [
+      6221
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 63
+  },
+  {
+    "quote_i": 6021,
+    "quote_rows": [
+      6222
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 65
+  },
+  {
+    "quote_i": 6022,
+    "quote_rows": [
+      6223
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 66
+  },
+  {
+    "quote_i": 6023,
+    "quote_rows": [
+      6224
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 67
+  },
+  {
+    "quote_i": 6024,
+    "quote_rows": [
+      6225
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 68
+  },
+  {
+    "quote_i": 6025,
+    "quote_rows": [
+      6226
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 69
+  },
+  {
+    "quote_i": 6026,
+    "quote_rows": [
+      6227
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 70
+  },
+  {
+    "quote_i": 6027,
+    "quote_rows": [
+      6228
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 71
+  },
+  {
+    "quote_i": 6028,
+    "quote_rows": [
+      6229
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 85
+  },
+  {
+    "quote_i": 6029,
+    "quote_rows": [
+      6230
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 86
+  },
+  {
+    "quote_i": 6030,
+    "quote_rows": [
+      6231
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 87
+  },
+  {
+    "quote_i": 6031,
+    "quote_rows": [
+      6232
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 88
+  },
+  {
+    "quote_i": 6032,
+    "quote_rows": [
+      6233
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 114
+  },
+  {
+    "quote_i": 6033,
+    "quote_rows": [
+      6234
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 115
+  },
+  {
+    "quote_i": 6034,
+    "quote_rows": [
+      6235
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 116
+  },
+  {
+    "quote_i": 6035,
+    "quote_rows": [
+      6236
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 117
+  },
+  {
+    "quote_i": 6036,
+    "quote_rows": [
+      6237
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 118
+  },
+  {
+    "quote_i": 6037,
+    "quote_rows": [
+      6238
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 119
+  },
+  {
+    "quote_i": 6038,
+    "quote_rows": [
+      6239
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 120
+  },
+  {
+    "quote_i": 6039,
+    "quote_rows": [
+      6240
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 121
+  },
+  {
+    "quote_i": 6040,
+    "quote_rows": [
+      6241
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 122
+  },
+  {
+    "quote_i": 6041,
+    "quote_rows": [
+      6242
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 123
+  },
+  {
+    "quote_i": 6042,
+    "quote_rows": [
+      6243
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 124
+  },
+  {
+    "quote_i": 6043,
+    "quote_rows": [
+      6244
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 125
+  },
+  {
+    "quote_i": 6044,
+    "quote_rows": [
+      6245
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 126
+  },
+  {
+    "quote_i": 6045,
+    "quote_rows": [
+      6246
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 127
+  },
+  {
+    "quote_i": 6046,
+    "quote_rows": [
+      6247
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 128
+  },
+  {
+    "quote_i": 6047,
+    "quote_rows": [
+      6248
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 129
+  },
+  {
+    "quote_i": 6048,
+    "quote_rows": [
+      6249
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 135
+  },
+  {
+    "quote_i": 6049,
+    "quote_rows": [
+      6250
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 136
+  },
+  {
+    "quote_i": 6050,
+    "quote_rows": [
+      6251
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 137
+  },
+  {
+    "quote_i": 6051,
+    "quote_rows": [
+      6252
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 49
+  },
+  {
+    "quote_i": 6052,
+    "quote_rows": [
+      6253
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 139
+  },
+  {
+    "quote_i": 6053,
+    "quote_rows": [
+      6254
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 140
+  },
+  {
+    "quote_i": 6054,
+    "quote_rows": [
+      6255
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 141
+  },
+  {
+    "quote_i": 6055,
+    "quote_rows": [
+      6256
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 142
+  },
+  {
+    "quote_i": 6056,
+    "quote_rows": [
+      6257
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 49
+  },
+  {
+    "quote_i": 6057,
+    "quote_rows": [
+      6258
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 144
+  },
+  {
+    "quote_i": 6058,
+    "quote_rows": [
+      6259
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 145
+  },
+  {
+    "quote_i": 6059,
+    "quote_rows": [
+      6260
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 146
+  },
+  {
+    "quote_i": 6060,
+    "quote_rows": [
+      6261
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 147
+  },
+  {
+    "quote_i": 6061,
+    "quote_rows": [
+      6262
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 163
+  },
+  {
+    "quote_i": 6062,
+    "quote_rows": [
+      6264
+    ],
+    "reader_sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "prior_pair": "spain-crypto-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 111
+  },
+  {
+    "quote_i": 6063,
+    "quote_rows": [
+      6265
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 169
+  },
+  {
+    "quote_i": 6064,
+    "quote_rows": [
+      6266
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 170
+  },
+  {
+    "quote_i": 6065,
+    "quote_rows": [
+      6267
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 171
+  },
+  {
+    "quote_i": 6066,
+    "quote_rows": [
+      6268
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 172
+  },
+  {
+    "quote_i": 6067,
+    "quote_rows": [
+      6269
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 173
+  },
+  {
+    "quote_i": 6068,
+    "quote_rows": [
+      6270
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 174
+  },
+  {
+    "quote_i": 6069,
+    "quote_rows": [
+      6271
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 175
+  },
+  {
+    "quote_i": 6070,
+    "quote_rows": [
+      6272
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 177
+  },
+  {
+    "quote_i": 6071,
+    "quote_rows": [
+      6273
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 178
+  },
+  {
+    "quote_i": 6072,
+    "quote_rows": [
+      6274
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 179
+  },
+  {
+    "quote_i": 6073,
+    "quote_rows": [
+      6275
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 180
+  },
+  {
+    "quote_i": 6074,
+    "quote_rows": [
+      6276
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 181
+  },
+  {
+    "quote_i": 6075,
+    "quote_rows": [
+      6277
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 182
+  },
+  {
+    "quote_i": 6076,
+    "quote_rows": [
+      6278
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 183
+  },
+  {
+    "quote_i": 6077,
+    "quote_rows": [
+      6279
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 71
+  },
+  {
+    "quote_i": 6078,
+    "quote_rows": [
+      6280
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 71
+  },
+  {
+    "quote_i": 6079,
+    "quote_rows": [
+      6281
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 72
+  },
+  {
+    "quote_i": 6080,
+    "quote_rows": [
+      6282
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 71
+  },
+  {
+    "quote_i": 6081,
+    "quote_rows": [
+      6283
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 234
+  },
+  {
+    "quote_i": 6082,
+    "quote_rows": [
+      6284
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 235
+  },
+  {
+    "quote_i": 6083,
+    "quote_rows": [
+      6285
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 236
+  },
+  {
+    "quote_i": 6084,
+    "quote_rows": [
+      6286
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 237
+  },
+  {
+    "quote_i": 6085,
+    "quote_rows": [
+      6287
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 238
+  },
+  {
+    "quote_i": 6086,
+    "quote_rows": [
+      6288
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 87
+  },
+  {
+    "quote_i": 6087,
+    "quote_rows": [
+      6289
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 88
+  },
+  {
+    "quote_i": 6088,
+    "quote_rows": [
+      6290
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 89
+  },
+  {
+    "quote_i": 6089,
+    "quote_rows": [
+      6291
+    ],
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 243
+  },
+  {
+    "quote_i": 6090,
+    "quote_rows": [
+      6292
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 251
+  },
+  {
+    "quote_i": 6091,
+    "quote_rows": [
+      6293
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 252
+  },
+  {
+    "quote_i": 6092,
+    "quote_rows": [
+      6294
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 253
+  },
+  {
+    "quote_i": 6093,
+    "quote_rows": [
+      6295
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 254
+  },
+  {
+    "quote_i": 6094,
+    "quote_rows": [
+      6296
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 255
+  },
+  {
+    "quote_i": 6095,
+    "quote_rows": [
+      6297
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 256
+  },
+  {
+    "quote_i": 6096,
+    "quote_rows": [
+      6298
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 257
+  },
+  {
+    "quote_i": 6097,
+    "quote_rows": [
+      6299
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 258
+  },
+  {
+    "quote_i": 6098,
+    "quote_rows": [
+      6300
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 113
+  },
+  {
+    "quote_i": 6099,
+    "quote_rows": [
+      6301
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 113
+  },
+  {
+    "quote_i": 6100,
+    "quote_rows": [
+      6302
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 115
+  },
+  {
+    "quote_i": 6101,
+    "quote_rows": [
+      6303
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 393
+  },
+  {
+    "quote_i": 6102,
+    "quote_rows": [
+      6304
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 394
+  },
+  {
+    "quote_i": 6103,
+    "quote_rows": [
+      6305
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 395
+  },
+  {
+    "quote_i": 6104,
+    "quote_rows": [
+      6306
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 401
+  },
+  {
+    "quote_i": 6105,
+    "quote_rows": [
+      6307
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-autonomous-worker",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 114
+  },
+  {
+    "quote_i": 6106,
+    "quote_rows": [
+      6308
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 424
+  },
+  {
+    "quote_i": 6107,
+    "quote_rows": [
+      6309
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 425
+  },
+  {
+    "quote_i": 6108,
+    "quote_rows": [
+      6310
+    ],
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 427
+  },
+  {
+    "quote_i": 6126,
+    "quote_rows": [
+      6328
+    ],
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 91
+  },
+  {
+    "quote_i": 6127,
+    "quote_rows": [
+      6329
+    ],
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "prior_pair": "es-income-tax",
+    "prior_file": "actual-read-quotes.json",
+    "prior_row": 92
+  }
+]

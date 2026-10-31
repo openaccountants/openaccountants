@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Ejemplo: Deducción por rentas obtenidas en Ceuta o Melilla</title><meta name="ObjectId" content="9cf04a4538839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='7f0e4a4538839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota.html'>Capítulo 16. Deducciones generales de la cuota en el ejercicio 2025</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='b6e04a4538839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-rentas-obtenidas-ceuta-melilla.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Deducción por rentas obtenidas en Ceuta o Melilla</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Ejemplo: Deducción por rentas obtenidas en Ceuta o Melilla</h1><div class="page-break-after--always_pdf border-left border-primary pl-2 border-size-5">
+<p>Don M.V.C., soltero y sin hijos, traslad&oacute; su residencia de C&aacute;diz a Ceuta el 20 de agosto de 2023, residiendo en esta ciudad desde dicha fecha. Durante el ejercicio 2025<span class="revisar">&nbsp;</span>ha obtenido las siguientes rentas:</p>
+<ul>
+<li>
+<p>Rendimiento neto reducido del trabajo:&nbsp;31.000</p>
+</li>
+<li>
+<p>Rendimiento neto reducido de capital mobiliario: 500</p>
+</li>
+<li>
+<p>Rendimiento neto reducido de capital inmobiliario: 3.200</p>
+</li>
+<li>
+<p>Ganancia patrimonial reducida imputable a 2025: 20.000</p>
+</li>
+</ul>
+<p>Los rendimientos netos del trabajo proceden de su relaci&oacute;n laboral con una empresa situada en Ceuta. Los rendimientos del capital mobiliario corresponden a intereses de cuentas de entidades financieras situadas en Ceuta. Por su parte, los rendimientos de capital inmobiliario corresponden a un piso de su propiedad situado en C&aacute;diz y que estuvo alquilado desde el 1 de enero a 30 de septiembre de 2025. El d&iacute;a 1 de octubre de 2025 procedi&oacute; a la venta de dicho piso obteniendo como consecuencia de la transmisi&oacute;n una ganancia patrimonial reducida de 20.000 euros.</p>
+<p>Determinar el importe de la deducci&oacute;n por las rentas obtenidas en Ceuta en el ejercicio 2025.</p>
+<h2>Soluci&oacute;n:&nbsp;</h2>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><strong><span class="verde">Nota previa:</span> </strong>al haber residido en Ceuta durante un plazo inferior a tres a&ntilde;os, la deducci&oacute;n por rentas obtenidas en Ceuta &uacute;nicamente podr&aacute; aplicarse sobre las cuotas &iacute;ntegras, estatal y auton&oacute;mica, que proporcionalmente correspondan a las rentas obtenidas en Ceuta (rendimientos netos del trabajo y rendimientos netos del capital mobiliario).</em></p>
+<p>Base imponible general y base liquidable general (31.000 + 3.200) = 34.200</p>
+<p>Base imponible del ahorro y base liquidable del ahorro (20.000 + 500) = 20.500</p>
+<p>M&iacute;nimo personal y familiar = 5.550</p>
+<p><strong>1. Cuota &iacute;ntegra correspondiente a la base liquidable general</strong></p>
+<ol type="a">
+<li>
+<p><strong>Aplicaci&oacute;n de las escalas de gravamen a la base liquidable general (34.200,00)</strong></p>
+<p><strong>Escala general</strong></p>
+<p>Hasta 20.200,00: 2.112,75</p>
+<p>Resto 14.000,00 al 15%: 2.100</p>
+<p>Cuota 1 (2.112,75 + 2.100) = 4.212,75</p>
+<p><strong>Escala auton&oacute;mica</strong></p>
+<p>Hasta 20.200,00: 2.112,75</p>
+<p>Resto 14.000,00 al 15%: 2.100</p>
+<p>Cuota 2 (2.112,75 + 2.100) = 4.212,75</p>
+</li>
+<li>
+<p><strong>Aplicaci&oacute;n de las escalas de gravamen a la base liquidable general correspondiente al m&iacute;nimo personal y familiar</strong></p>
+<p><strong>Escala general</strong> 5.550 al 9,50%: 527,25</p>
+<p>Cuota 3 =&nbsp;527,25</p>
+<p><strong>Escala auton&oacute;mica</strong> 5.550 al 9,50%:&nbsp;527,25</p>
+<p>Cuota 4 =&nbsp;527,25</p>
+</li>
+<li>
+<p><strong>Determinaci&oacute;n de la cuota &iacute;ntegra general, estatal y auton&oacute;mica</strong></p>
+<p>Cuota &iacute;ntegra general estatal (Cuota 1 - Cuota 3): 4.212,75 &ndash; 527,25 =&nbsp;3.685,50</p>
+<p>Cuota &iacute;ntegra general auton&oacute;mica (Cuota 2 - Cuota 4): 4.212,75 &ndash; 527,25 =&nbsp;3.685,50</p>
+</li>
+</ol>
+<p><strong>2. Cuota correspondiente a la base liquidable del ahorro (20.500,00)</strong></p>
+<ul>
+<li>
+<p><strong>Gravamen estatal</strong></p>
+<p>Hasta 6.000,00: 570</p>
+<p>Resto 14.500,00 al 10,50%: 1.522,50</p>
+<p>Cuota gravamen estatal (570 + 1.522,50) = 2.092,50</p>
+</li>
+<li>
+<p><strong>Gravamen auton&oacute;mico</strong></p>
+<p>Hasta 6.000:&nbsp;570</p>
+<p>Resto 14.500,00 al 10,50%: 1.522,50</p>
+<p>Cuota gravamen auton&oacute;mico (570 + 1.522,50) = 2.092,50</p>
+</li>
+<li>
+<p><strong>Determinaci&oacute;n de las cuotas &iacute;ntegras</strong></p>
+<p>Parte estatal (3.685,50 + 2.092,50) =&nbsp;5.778</p>
+<p>Parte auton&oacute;mica (3.685,50 + 2.092,50) = 5.778</p>
+</li>
+</ul>
+<p><strong>3. Deducci&oacute;n por rentas obtenidas en Ceuta o Melilla </strong></p>
+<p>Para su c&aacute;lculo deben seguirse los siguientes pasos:</p>
+<ul>
+<li>
+<p>C&aacute;lculo de la deducci&oacute;n correspondiente a las rentas obtenidas en Ceuta: &nbsp;</p>
+<p>[<em>60% x Cuota &iacute;ntegra general / Base liquidable general x Base liquidable general obtenida en Ceuta]</em>&nbsp;</p>
+<p>60% [(3.685,50 + 3.685,50) &divide; 34.200 x 31.000] = 4.008,78</p>
+</li>
+<li>
+<p>C&aacute;lculo de la deducci&oacute;n correspondiente a las rentas obtenidas en Ceuta incluidas en la base liquidable del ahorro:</p>
+<p>[<em>60% x Cuota&nbsp;&iacute;ntegra del ahorro/ Base liquidable del ahorro&nbsp;x Base liquidable del ahorro obtenida en Ceuta]</em></p>
+<p>60% [(2.092,50 + 2.092,50) &divide; 20.500 x 500] = 61,24</p>
+</li>
+<li>
+<p>Total importe de la deducci&oacute;n por rentas obtenidas en Ceuta (4.008,78 + 61,24) = 4.070,02 euros</p>
+</li>
+<li>
+<p>Dicho importe&nbsp;debe distribuirse al 50 por 100 en la parte estatal y la parte auton&oacute;mica, de acuerdo con lo que establecen los art&iacute;culos 67 y 77 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF </abbr></p>
+<p>Parte estatal: 2.035,01</p>
+<p>Parte auton&oacute;mica: 2.035,01</p>
+</li>
+</ul>
+<p><strong>4. Cuota l&iacute;quida</strong></p>
+<ul>
+<li>
+<p>Parte estatal (5.778 &ndash; 2.035,01) =&nbsp;3.742,99</p>
+</li>
+<li>
+<p>Parte auton&oacute;mica ((5.778 &ndash; 2.035,01) = 4.107,68</p>
+</li>
+</ul>
+</div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>
