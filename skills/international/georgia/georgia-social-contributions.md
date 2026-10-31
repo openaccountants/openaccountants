@@ -36,6 +36,7 @@ Georgia's mandatory contribution on earnings is the funded pension. The employee
 | State contribution, first GEL 24,000 of the calendar year's salary or income | 2% | 2026 | art. 3(6)(e.a), same URL |
 | State contribution, from GEL 24,000 to GEL 60,000 | 1% | 2026 | art. 3(6)(e.b), same URL |
 | State contribution above GEL 60,000 | none | 2026 | art. 3(6)(f), same URL |
+| Total paid into an employee's account (employee + employer + state) | 6% of salary within the first GEL 24,000 of the year, 5% from GEL 24,000 to GEL 60,000, 4% above GEL 60,000 | 2026 | art. 3(6)(a), (b), (e), (f), same URL |
 | Ceiling on the employee, employer or self-employed contribution | none set | 2026 | art. 3(6)(a), (b), (d), same URL |
 | Age test for mandatory joining | 60 for men, 55 for women, before the Law came into force | 2026 | art. 3(2), 21(1), same URL |
 | Opt-out window (employees 40 or older before the Law) | not earlier than 3 months and within 5 months of enrolment | 2026 | art. 22(1), same URL |
@@ -53,6 +54,8 @@ Georgia's mandatory contribution on earnings is the funded pension. The employee
 
 **The state bands run on the calendar year.** The annual salary or income is what the participant receives from 1 January to 31 December. For a new participant it runs from joining to 31 December of that year (art. 2 h1)). The state pays 2% while the year's total is within GEL 24,000, 1% on the part from GEL 24,000 to GEL 60,000, and nothing above GEL 60,000 (art. 3(6)(e)-(f)).
 
+**Opt-out.** After a valid opt-out under art. 22(1) the employee is no longer a participant, so nothing more is withheld or paid for him or her. The employee's own contributions, with their investment income less costs, are returned to the employee (and taxed, Tax Code art. 82(1)(b3.b)). The employer's contributions, with their income less costs, go back to the employer. The state's contributions go to the Pension Fund's treasury account and their income to the State Treasury (Law art. 22(3)(a)-(c)). The employee may rejoin at any time (art. 22(4)).
+
 **Breaks.** A participant whose salary or self-employed income stops for a time stops contributing and restarts when income restarts. The assets stay in the account (art. 23(1)-(2)).
 
 **Income tax.** Employer and state contributions are not the employee's salary (Tax Code art. 101(3)(d)). Contributions to the individual account, returns on them, and pensions paid at retirement under arts. 32-34(3) are exempt from income tax (art. 82(1)(b3)). Three sums are not exempt: contributions made in error and returned, contributions returned to an employee who opted out under art. 22, and assets paid out on leaving Georgia for good (art. 82(1)(b3.a)-(b3.c)). The Pension Fund withholds the tax when it pays these (art. 154(1)(q)).
@@ -66,7 +69,7 @@ Georgia's mandatory contribution on earnings is the funded pension. The employee
 | Employer and employee contributions | no later than the day the income tax return is filed, on the basis of that return | Law on Funded Pension art. 3(6)(a)-(b) |
 | Employer's monthly return of salaries paid and tax withheld (the return the contributions follow) | by the 15th of the month after the month | Tax Code art. 153(5), 154(4) |
 | Self-employed contribution | on the day the income tax return is filed | Law on Funded Pension art. 3(6)(d) |
-| Individual entrepreneur's annual income tax return | by 1 April of the following year | Tax Code art. 153(1)(a) |
+| Individual entrepreneur's annual income tax return | before 1 April of the following year (Georgian text: "1 აპრილამდე", so by 31 March) | Tax Code art. 153(1)(a) |
 | Opt-out request | between 3 and 5 months after enrolment, in writing to the Pension Fund | Law on Funded Pension art. 22(1) |
 | Rejoining after an opt-out | at any time, by application to the Pension Fund | art. 3(9), 22(4) |
 | Pension Fund may fine the employer | within 6 months of finding the breach | art. 37^3(5) |
@@ -124,7 +127,7 @@ expected:
   total_to_account: 1740
 ```
 
-**Example 2. Self-employed participant above GEL 60,000.** An individual entrepreneur taxed under the general 20% rules joined the scheme voluntarily. Her taxable business income for 2026 is GEL 70,000. Her own contribution is 4%, GEL 2,800, paid on the day she files her 2026 income tax return, by 1 April 2027 (art. 3(6)(d); Tax Code art. 153(1)(a)). The state pays 2% of GEL 24,000, GEL 480, plus 1% of GEL 36,000, GEL 360, so GEL 840. Nothing is added on the GEL 10,000 above GEL 60,000. GEL 3,640 goes into her account.
+**Example 2. Self-employed participant above GEL 60,000.** An individual entrepreneur taxed under the general 20% rules joined the scheme voluntarily. Her taxable business income for 2026 is GEL 70,000. Her own contribution is 4%, GEL 2,800, paid on the day she files her 2026 income tax return, by 31 March 2027 (before 1 April) (art. 3(6)(d); Tax Code art. 153(1)(a)). The state pays 2% of GEL 24,000, GEL 480, plus 1% of GEL 36,000, GEL 360, so GEL 840. Nothing is added on the GEL 10,000 above GEL 60,000. GEL 3,640 goes into her account.
 
 ```oa-check
 name: Georgia funded pension, self-employed on GEL 70,000, 2026
