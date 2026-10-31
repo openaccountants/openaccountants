@@ -297,7 +297,8 @@ expected:
 | Lov nr. 1783 of 29 Dec 2025 (§ 13, stk. 1, nr. 3 from 1 Jan 2026) | https://www.retsinformation.dk/eli/lta/2025/1783 | 2026-10-24 |
 | Lov nr. 763 of 8 Sep 2026 (reminder fee DKK 160 from 14 Sep 2026; ML § 54, stk. 3) | https://www.retsinformation.dk/eli/lta/2026/763 | 2026-10-24 |
 | Momsbekendtgørelsen, BEK nr. 1435 of 29 Nov 2023 (§§ 17, 58, 66, 78-86, 99-100) | https://www.retsinformation.dk/eli/lta/2023/1435 | 2026-10-24 |
-| BEK nr. 518 of 13 May 2025 (MB §§ 17 and 81, from 1 Jul 2025) | https://www.retsinformation.dk/eli/lta/2025/518 | 2026-10-24 |
+| BEK nr. 518 of 13 May 2025 (MB §§ 17 and 81, from 1 Jul 2025) | https://www.retsinformation.dk/eli/lta/2025/518 | 2026-10-31 |
+| Re-read for this merge: ML § 23, stk. 1 to 3, and MB § 81 | https://www.retsinformation.dk/eli/lta/2024/209 ; https://www.retsinformation.dk/eli/lta/2023/1435 | 2026-10-31 |
 | BEK nr. 850 of 20 Jun 2025 (MB § 64) | https://www.retsinformation.dk/eli/lta/2025/850 | 2026-10-24 |
 | Opkrævningsloven, LBK nr. 1040 of 13 Sep 2024 (§§ 4-8, 16 c) | https://www.retsinformation.dk/eli/lta/2024/1040 | 2026-10-24 |
 | Lov nr. 16 of 14 Jan 2025 (§ 4, stk. 2 fee DKK 800 to DKK 1,400) | https://www.retsinformation.dk/eli/lta/2025/16 | 2026-10-24 |
