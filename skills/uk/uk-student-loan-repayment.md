@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UK Student Loan Repayment
 
-## UK Student Loan Repayment -- Self-Employed Skill v2.3
+## UK Student Loan Repayment -- Self-Employed Skill v2.4
 
 ## Rates and thresholds
 
