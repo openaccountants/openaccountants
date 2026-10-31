@@ -28,7 +28,7 @@ The [dated independent ledger-review checkpoint](../../evidence/ledgers/spain-20
 |---|---|---|
 | IT-IND | [Resident IRPF](es-income-tax.md), [regional/national credits](es-irpf-deductions.md), [four foral systems](es-foral-income-tax.md) | partial: two crypto computations |
 | IT-CORP | [Common-territory corporate tax](es-corporate-tax.md), [foral corporate tax](es-foral-corporate-tax.md) | ordinary methods supplied; see recorded limits |
-| VAT | [IVA computation](es-vat-return.md), [return reconciliation](spain-vat-return.md), [Canary IGIC](es-canary-islands-igic.md), [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) | ordinary methods supplied; see recorded limits |
+| VAT | [IVA computation and return reconciliation](es-vat-return.md), [Canary IGIC](es-canary-islands-igic.md), [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) | ordinary methods supplied; see recorded limits |
 | SC | [Employee, RETA, household and agricultural-employee contributions](es-social-contributions.md) | ordinary methods supplied; see recorded limits |
 | PR | [Common-territory payroll](spain-payroll.md), [Modelo111](es-modelo-111.md), [foral payroll](es-foral-payroll.md) | ordinary methods supplied; see recorded limits |
 | TP | [Related-party valuation, documentation and information returns](spain-transfer-pricing.md), [local foral methods](es-foral-corporate-tax.md#cross-border-points) | checked against the law |

@@ -1,6 +1,6 @@
 ---
 name: es-return-assembly
-description: Final orchestrator skill that assembles the complete Spain filing package for Spain-resident self-employed individuals (autónomos). Consumes outputs from all Spain content skills (spain-vat-return for Modelo 303, es-income-tax for IRPF Modelo 100, es-social-contributions for RETA, es-estimated-tax for Modelo 130 pagos fraccionados) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Spain content skills listed above. Spain full-year residents only. Autónomos (self-employed individuals) only.
+description: Final orchestrator skill that assembles the complete Spain filing package for Spain-resident self-employed individuals (autónomos). Consumes outputs from all Spain content skills (es-vat-return for Modelo 303, es-income-tax for IRPF Modelo 100, es-social-contributions for RETA, es-estimated-tax for Modelo 130 pagos fraccionados) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Spain content skills listed above. Spain full-year residents only. Autónomos (self-employed individuals) only.
 version: 0.1
 jurisdiction: ES
 tax_year: 2025
@@ -45,7 +45,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ## Section 2 -- Execution order and dependency chain
 
-- **spain-vat-return step (Modelo 303)** — Runs first because IVA base imponible feeds into the IRPF. For Q4 2025: prepare Modelo 303 if not yet filed; verify Q1-Q3 figures. Reconcile facturas emitidas (output IVA) with facturas recibidas (input IVA). Handle intracomunitarias (reverse charge, Modelo 349). Output: Modelo 303 box values, IVA devengado, IVA soportado deducible, result (a ingresar / a compensar / a devolver)  _(Section 2 -- Execution order and dependency chain)_
+- **es-vat-return step (Modelo 303)** — Runs first because IVA base imponible feeds into the IRPF. For Q4 2025: prepare Modelo 303 if not yet filed; verify Q1-Q3 figures. Reconcile facturas emitidas (output IVA) with facturas recibidas (input IVA). Handle intracomunitarias (reverse charge, Modelo 349). Output: Modelo 303 box values, IVA devengado, IVA soportado deducible, result (a ingresar / a compensar / a devolver)  _(Section 2 -- Execution order and dependency chain)_
 - **es-income-tax step (IRPF Modelo 100)** — Depends on IVA output: rendimiento íntegro de actividades económicas must use base imponible (ex-IVA) from Modelo 303. Compute rendimiento neto: ingresos - gastos deducibles - amortización - RETA cuotas. Apply gastos de difícil justificación (5%, max EUR 2,000) for simplificada. Apply reducciones (if applicable). Compute base imponible general + base del ahorro. Apply escala estatal + autonómica. Deduct retenciones, pagos fraccionados (Modelo 130). Output: Modelo 100 key boxes, cuota líquida, resultado de la declaración  _(Section 2 -- Execution order and dependency chain)_
 - **es-social-contributions step (RETA)** — Depends on IRPF: RETA cuotas are a gasto deducible in the rendimiento neto computation. Reconcile actual cuotas paid vs the new income-based contribution system (since 2023). Verify base de cotización is appropriate for income level. Flag if regularisation is expected (TGSS adjusts RETA based on actual income, with potential refund or additional payment). Output: annual RETA paid, base de cotización, regularisation estimate, deductibility confirmation  _(Section 2 -- Execution order and dependency chain)_
 - **es-estimated-tax step (Modelo 130)** — Depends on IRPF: pagos fraccionados are computed as 20% of rendimiento neto acumulado minus retenciones acumuladas. Status check: es-estimated-tax is currently a Q4 stub. If the stub has substantive computation content, use it. If it is still a placeholder, compute Modelo 130 using the standard formula (Art. 110 LIRPF: 20% x rendimiento neto acumulado - retenciones - pagos fraccionados anteriores) and flag in the reviewer brief that the dedicated skill was not available. Output: Q4 2025 Modelo 130 computation, and 2026 quarterly schedule. If any upstream content skill fails to produce validated output, the assembly skill notes the failure in the reviewer brief and continues with available data rather than halting entirely.  _(Section 2 -- Execution order and dependency chain, Art. 110 LIRPF)_
@@ -135,7 +135,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 - 2026 Modelo 130 quarterly schedule: EUR X per quarter
 
 ## IVA Return (Modelo 303)
-[Content from spain-vat-return output]
+[Content from es-vat-return output]
 - Registration type and period
 - IVA devengado (output IVA) by rate (21%, 10%, 4%)
 - IVA soportado deducible (deductible input IVA)
@@ -270,7 +270,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ## Section 6 -- Self-checks
 
-- **Check ES-A1** — All upstream skills executed. spain-vat-return, es-income-tax, es-social-contributions all produced output. es-estimated-tax produced output or was computed from standard formula.  _(Check ES-A1)_
+- **Check ES-A1** — All upstream skills executed. es-vat-return, es-income-tax, es-social-contributions all produced output. es-estimated-tax produced output or was computed from standard formula.  _(Check ES-A1)_
 - **Check ES-A2** — Modelo 303 base imponible matches IRPF ingresos. Within EUR 1 tolerance.  _(Check ES-A2)_
 - **Check ES-A3** — RETA cuotas deducted in IRPF match actual payments. Exact match.  _(Check ES-A3)_
 - **Check ES-A4** — Retenciones in IRPF match sum of all retenciones from sources. Retenciones from professional activity + employment + capital = total deducted.  _(Check ES-A4)_
@@ -289,7 +289,7 @@ This skill coordinates execution of the content skills, verifies cross-skill con
 
 ## Section 8 -- Cross-skill references
 
-- **Inputs and outputs** — Inputs: es-freelance-intake -- structured intake package (JSON); spain-vat-return -- Modelo 303 box values and classification output; es-income-tax -- IRPF Modelo 100 computation output; es-social-contributions -- RETA reconciliation output; es-estimated-tax -- Modelo 130 computation (or fallback computation). Outputs: The final reviewer package. No downstream skill.  _(Section 8 -- Cross-skill references)_
+- **Inputs and outputs** — Inputs: es-freelance-intake -- structured intake package (JSON); es-vat-return -- Modelo 303 box values and classification output; es-income-tax -- IRPF Modelo 100 computation output; es-social-contributions -- RETA reconciliation output; es-estimated-tax -- Modelo 130 computation (or fallback computation). Outputs: The final reviewer package. No downstream skill.  _(Section 8 -- Cross-skill references)_
 
 ## Section 9 -- Known gaps
 
@@ -319,7 +319,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Section 2 -- Execution order and dependency chain
 
-0. **Step 1** — Execute spain-vat-return
+0. **Step 1** — Execute es-vat-return
 0. **Step 2** — Execute es-income-tax
 
 <!-- openaccountants-cta-block -->
