@@ -1,6 +1,6 @@
 # de-treaty-withholding-rates: figure and rule ledger
 
-Guide: [de-treaty-withholding-rates](../skills/international/germany/de-treaty-withholding-rates.md). Accepted Guide SHA-256: `c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8`.
+Guide: [de-treaty-withholding-rates](../../skills/germany/de-treaty-withholding-rates.md). Accepted Guide SHA-256: `c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `145b606742499809b3df74e59aeaa6cbd407e1fe8d5a389f183a50bfccc7625d`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

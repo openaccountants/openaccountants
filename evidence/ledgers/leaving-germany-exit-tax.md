@@ -1,6 +1,6 @@
 # leaving-germany-exit-tax: figure and rule ledger
 
-Guide: [leaving-germany-exit-tax](../skills/international/germany/leaving-germany-exit-tax.md). Accepted Guide SHA-256: `af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d`.
+Guide: [leaving-germany-exit-tax](../../skills/germany/leaving-germany-exit-tax.md). Accepted Guide SHA-256: `af2fa313362b1a41d77c68ca1454e8fdb87290b6c96ccabc533ac154d2b4689d`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `7ae1965709101dba4eb46d3c1cae206b30e6bb2baca01734532d8bf9fea8590a`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

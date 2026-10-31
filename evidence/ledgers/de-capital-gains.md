@@ -1,6 +1,6 @@
 # de-capital-gains: figure and rule ledger
 
-Guide: [de-capital-gains](../skills/international/germany/de-capital-gains.md). Accepted Guide SHA-256: `5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229`.
+Guide: [de-capital-gains](../../skills/germany/de-capital-gains.md). Accepted Guide SHA-256: `5ec577aa8062f1fdc8a1af2fcc8fba597962776896c9ec0d5d50dea661280229`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `a2d5148919a1f11c203df139187ccb5bb845bd131b0dcc0e36ca392c5fd02819`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

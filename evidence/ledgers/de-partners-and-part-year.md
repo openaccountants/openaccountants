@@ -1,6 +1,6 @@
 # de-partners-and-part-year: figure and rule ledger
 
-Guide: [de-partners-and-part-year](../skills/international/germany/de-partners-and-part-year.md). Accepted Guide SHA-256: `0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245`.
+Guide: [de-partners-and-part-year](../../skills/germany/de-partners-and-part-year.md). Accepted Guide SHA-256: `0839172b17872bebeed72749eb57e3353d83c4a6132dbb8e02f04ec0ceefb245`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `c18a2d6c013a0d6b5ecf0b6667284a1fde4d891b6727cc428538e3df7af033f3`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

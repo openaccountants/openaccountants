@@ -1,6 +1,6 @@
 # de-self-employed-income-tax: figure and rule ledger
 
-Guide: [de-self-employed-income-tax](../skills/international/germany/de-self-employed-income-tax.md). Accepted Guide SHA-256: `2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe`.
+Guide: [de-self-employed-income-tax](../../skills/germany/de-self-employed-income-tax.md). Accepted Guide SHA-256: `2280d3e51b479079e099ff054b5d9dc83c8d390fb3b63e86a4db5ea124a74ebe`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `268d21a62c0c9cf9775471f683d835eec408b8d9113bb083adbebea1de2afc04`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

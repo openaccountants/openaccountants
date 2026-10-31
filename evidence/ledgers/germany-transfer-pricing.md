@@ -1,6 +1,6 @@
 # germany-transfer-pricing: figure and rule ledger
 
-Guide: [germany-transfer-pricing](../skills/international/germany/germany-transfer-pricing.md). Accepted Guide SHA-256: `e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783`.
+Guide: [germany-transfer-pricing](../../skills/germany/germany-transfer-pricing.md). Accepted Guide SHA-256: `e0fb36c2e05112e253ac55ce2bd1079fe537dfaac9638c662e7f7fca68fe5783`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `b6b30b59aeff0c1dabcbb20008dc06a241b968ac2680a623f46b2c96f8ac19f2`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

@@ -1,6 +1,6 @@
 # de-einkommensteuer-freelancer: figure and rule ledger
 
-Guide: [de-einkommensteuer-freelancer](../skills/international/germany/de-einkommensteuer-freelancer.md). Accepted Guide SHA-256: `424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19`.
+Guide: [de-einkommensteuer-freelancer](../../skills/germany/de-einkommensteuer-freelancer.md). Accepted Guide SHA-256: `424a96380e879606f6e7b35211b32c99290361c805ad19c7b6c24babd84a9d19`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `33a28ba3bb4b1f9fe47f1a395af833192f29881e1c414d7ad0291aa94337b745`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

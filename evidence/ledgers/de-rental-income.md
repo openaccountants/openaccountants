@@ -1,6 +1,6 @@
 # de-rental-income: figure and rule ledger
 
-Guide: [de-rental-income](../skills/international/germany/de-rental-income.md). Accepted Guide SHA-256: `6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e`.
+Guide: [de-rental-income](../../skills/germany/de-rental-income.md). Accepted Guide SHA-256: `6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `2302bb3ddb1e1197523d20d77c817624b8134644cc77ddce1eae4628f537a838`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

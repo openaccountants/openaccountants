@@ -1,6 +1,6 @@
 # germany-to-switzerland-cross-border-tax: figure and rule ledger
 
-Guide: [germany-to-switzerland-cross-border-tax](../skills/international/germany/germany-to-switzerland-cross-border-tax.md). Accepted Guide SHA-256: `796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5`.
+Guide: [germany-to-switzerland-cross-border-tax](../../skills/germany/germany-to-switzerland-cross-border-tax.md). Accepted Guide SHA-256: `796c662a90d1493b7b63a1bc83093175168016bfc5a5a7f312f8759471f838b5`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `fd66d884e1c6a49697b807c9c7458b905b3fc58701840351918f95628fb5bc69`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

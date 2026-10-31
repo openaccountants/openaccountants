@@ -1,6 +1,6 @@
 # de-trade-tax: figure and rule ledger
 
-Guide: [de-trade-tax](../skills/international/germany/de-trade-tax.md). Accepted Guide SHA-256: `41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953`.
+Guide: [de-trade-tax](../../skills/germany/de-trade-tax.md). Accepted Guide SHA-256: `41138a1e3f25dd1bbcd831ffa2110a80edf06d021505c5ae84794380ef07e953`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `285f9247c0bbe096e68880c5da2ad67b3083f26bac67e17fda5caa1607a26c07`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

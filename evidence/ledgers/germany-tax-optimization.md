@@ -1,6 +1,6 @@
 # germany-tax-optimization: figure and rule ledger
 
-Guide: [germany-tax-optimization](../skills/international/germany/germany-tax-optimization.md). Accepted Guide SHA-256: `4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce`.
+Guide: [germany-tax-optimization](../../skills/germany/germany-tax-optimization.md). Accepted Guide SHA-256: `4f360c9f88fcfa601cba004d4764aa2089e3d493582745fcb6b06c330be5f9ce`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `a2f35f1b515aecdb84c5f268c4dc7bd0d85c470d5825f6c13f751157eef9c867`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

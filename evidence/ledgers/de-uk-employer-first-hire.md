@@ -1,6 +1,6 @@
 # de-uk-employer-first-hire: figure and rule ledger
 
-Guide: [de-uk-employer-first-hire](../skills/international/germany/de-uk-employer-first-hire.md). Accepted Guide SHA-256: `7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff`.
+Guide: [de-uk-employer-first-hire](../../skills/germany/de-uk-employer-first-hire.md). Accepted Guide SHA-256: `7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

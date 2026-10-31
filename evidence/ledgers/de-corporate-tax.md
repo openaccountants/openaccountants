@@ -1,6 +1,6 @@
 # de-corporate-tax: figure and rule ledger
 
-Guide: [de-corporate-tax](../skills/international/germany/de-corporate-tax.md). Accepted Guide SHA-256: `926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378`.
+Guide: [de-corporate-tax](../../skills/germany/de-corporate-tax.md). Accepted Guide SHA-256: `926723924c9092e0ab651796b78a84164ee10a5ea92015fa1c5a98afeebf4378`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `04e66e215d1c172601b29f68c736342393acfb5a421a2246ee710ade98ec2aef`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

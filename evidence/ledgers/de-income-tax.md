@@ -1,6 +1,6 @@
 # de-income-tax: figure and rule ledger
 
-Guide: [de-income-tax](../skills/international/germany/de-income-tax.md). Accepted Guide SHA-256: `afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6`.
+Guide: [de-income-tax](../../skills/germany/de-income-tax.md). Accepted Guide SHA-256: `afcb21f5552d8db8463ed4d9c7ce8782227dc3c6fd573bb77bc673af4cd596c6`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `59b68374ecb60704b3eed56e1801c6b9dbfbc2d7b548dce300666838143aecb2`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

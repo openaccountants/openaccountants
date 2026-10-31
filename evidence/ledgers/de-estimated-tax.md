@@ -1,6 +1,6 @@
 # de-estimated-tax: figure and rule ledger
 
-Guide: [de-estimated-tax](../skills/international/germany/de-estimated-tax.md). Accepted Guide SHA-256: `27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454`.
+Guide: [de-estimated-tax](../../skills/germany/de-estimated-tax.md). Accepted Guide SHA-256: `27bd4da330db7fb8428c569af3f3e6a208d64623cda58343c02590a36b2ee454`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `ec0ceae7d0c9ddc75a6b6fe9a40144604b30a8ca694e1fd3a17602053f115814`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

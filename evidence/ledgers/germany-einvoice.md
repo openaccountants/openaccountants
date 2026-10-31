@@ -1,6 +1,6 @@
 # germany-einvoice: figure and rule ledger
 
-Guide: [germany-einvoice](../skills/international/germany/germany-einvoice.md). Accepted Guide SHA-256: `d2017d1ab2cce52ae1d416036f9d18f331b35f1aa7e9221ab24307d126b3bddb`.
+Guide: [germany-einvoice](../../skills/germany/germany-einvoice.md). Accepted Guide SHA-256: `d2017d1ab2cce52ae1d416036f9d18f331b35f1aa7e9221ab24307d126b3bddb`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `d208d8d2e296186a2d7cb06a9c5ec0f8926e3de1e6419b7b5f52bd913f4fef18`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 

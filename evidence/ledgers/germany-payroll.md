@@ -1,6 +1,6 @@
 # germany-payroll: figure and rule ledger
 
-Guide: [germany-payroll](../skills/international/germany/germany-payroll.md). Accepted Guide SHA-256: `16b1a73defe4c7e4971d7982ccea5713766875abb49b8ac7edb902545d2ff075`.
+Guide: [germany-payroll](../../skills/germany/germany-payroll.md). Accepted Guide SHA-256: `16b1a73defe4c7e4971d7982ccea5713766875abb49b8ac7edb902545d2ff075`.
 Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
 Original published ledger SHA-256: `ecc38d2f98ea5b23f41bf8bc615f9ce2d45d4c295d7a4087171ef4ea68e21c9e`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 
