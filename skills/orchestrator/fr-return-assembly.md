@@ -1,10 +1,10 @@
 ---
 name: fr-return-assembly
 description: Final orchestrator skill that assembles the complete French filing package for France-resident self-employed individuals, micro-entrepreneurs, and sole proprietors. Consumes outputs from all French content skills (france-tva for TVA CA3/CA12, france-income-tax for 2042/2042-C-PRO/2035/2031, france-cotisations for URSSAF/SSI, fr-estimated-tax for prélèvement à la source) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all French content skills listed above. France full-year residents only. Self-employed individuals, micro-entrepreneurs, and sole proprietors only.
-version: 1.0
+version: 1.1
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -52,40 +52,40 @@ The skill runs the content skills in this order.
 
 **Micro regime: limits, allowances and the flat income tax payment**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
-| Income received in 2025: overall turnover limit (tested on 2024 or 2023) | EUR 188,700 | "ne doit pas avoir dépassé 188 700 €" |
-| Income received in 2025: services and BNC turnover limit (tested on 2024 or 2023) | EUR 77,700 | "ne doit pas avoir dépassé 77 700 €" |
-| Income received in 2026: sales of goods and accommodation limit (tested on 2025 or 2024) | EUR 203,100 | "n’a pas dépassé 203 100 €" |
-| Income received in 2026: services and BNC limit (tested on 2025 or 2024) | EUR 83,600 | "n’a pas dépassé 83 600 €" |
-| Flat allowance, sales of goods and accommodation (BIC) | 71% | "Le taux d'abattement est de 71 %" |
-| Flat allowance, services (BIC) | 50% | "Le taux d'abattement est de 50 %" |
-| Flat allowance, liberal activity (BNC) | 34% | "Le taux d'abattement est de 34 %" |
-| Minimum allowance | EUR 305 | "Le montant de l’abattement ne peut pas être inférieur à 305 €" |
-| Flat income tax payment rate, trade, catering and accommodation | 1% | "1 % pour les activités de commerce, restauration et logement" |
-| Flat income tax payment rate, other BIC activities | 1.7% | "1,7 % pour les autres activités relevant des BIC" |
-| Flat income tax payment rate, BNC | 2.2% | "ce taux est de 2,2 %" |
-| Flat income tax payment: household reference income of year N-2 must be below (page says 'inférieur à'), single person | EUR 29,579 | "29 579 € pour une personne seule" |
-| Flat income tax payment: household reference income of year N-2 must be below, couple in one tax household | EUR 59,158 | "59 158 € pour une personne en couple" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |  |
+| Income received in 2025: overall turnover limit (tested on 2024 or 2023) | EUR 188,700 | "ne doit pas avoir dépassé 188 700 €" | https://entreprendre.service-public.gouv.fr/vosdroits/F23267 |
+| Income received in 2025: services and BNC turnover limit (tested on 2024 or 2023) | EUR 77,700 | "ne doit pas avoir dépassé 77 700 €" | same |
+| Income received in 2026: sales of goods and accommodation limit (tested on 2025 or 2024) | EUR 203,100 | "n’a pas dépassé 203 100 €" | same |
+| Income received in 2026: services and BNC limit (tested on 2025 or 2024) | EUR 83,600 | "n’a pas dépassé 83 600 €" | same |
+| Flat allowance, sales of goods and accommodation (BIC) | 71% | "Le taux d'abattement est de 71 %" | same (2026) |
+| Flat allowance, services (BIC) | 50% | "Le taux d'abattement est de 50 %" | same (2026) |
+| Flat allowance, liberal activity (BNC) | 34% | "Le taux d'abattement est de 34 %" | same (2026) |
+| Minimum allowance | EUR 305 | "Le montant de l’abattement ne peut pas être inférieur à 305 €" | same (2026) |
+| Flat income tax payment rate, trade, catering and accommodation | 1% | "1 % pour les activités de commerce, restauration et logement" | same (2026) |
+| Flat income tax payment rate, other BIC activities | 1.7% | "1,7 % pour les autres activités relevant des BIC" | same (2026) |
+| Flat income tax payment rate, BNC | 2.2% | "ce taux est de 2,2 %" | same (2026) |
+| Flat income tax payment: household reference income of year N-2 must be below (page says 'inférieur à'), single person | EUR 29,579 | "29 579 € pour une personne seule" | same (2026) |
+| Flat income tax payment: household reference income of year N-2 must be below, couple in one tax household | EUR 59,158 | "59 158 € pour une personne en couple" | same (2026) |
 
 The micro regime is lost only where a limit was crossed in BOTH of the two earlier years: the page says the receipts of year N leave the micro regime "uniquement si l’un des seuils a été dépassé pendant 2 années consécutives, en N-1 et en N-2". The allowance replaces actual costs: "ce ne sont donc pas les charges réelles qui sont déduites".
 
 The flat-payment limit is tied to the scale. The brochure defines it as the top of the second band of the scale of year N-2 ('la limite supérieure de la deuxième tranche du barème de l'impôt sur les revenus de l'année 2023, soit 28 797 €' for 2025 income). F23267 prints 29 579 € against 'l'année N-2' without naming the year of the option; impots.gouv.fr prints a different amount for the option taken in 2026, in the table below. Test each year against the brochure rule and the two pages, and flag the disagreement; `fr-freelance-intake` carries both figures.
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
-| Option taken in 2026: 2024 reference income must be below, single person (1 share) | EUR 29,315 | "opter pour le « versement libératoire » auprès de l’Urssaf en 2026 ... Votre revenu fiscal de référence (RFR) de 2024 est inférieur au plafond suivant : 29 315 € pour une personne seule (1 part)" |
-| Option taken in 2026: same test, couple (2 shares) | EUR 58,630 | "58 630 € pour un couple (2 parts)" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |  |
+| Option taken in 2026: 2024 reference income must be below, single person (1 share) | EUR 29,315 | "opter pour le « versement libératoire » auprès de l’Urssaf en 2026 ... Votre revenu fiscal de référence (RFR) de 2024 est inférieur au plafond suivant : 29 315 € pour une personne seule (1 part)" | https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur |
+| Option taken in 2026: same test, couple (2 shares) | EUR 58,630 | "58 630 € pour un couple (2 parts)" | same |
 
 **The 2042-C-PRO for income of 2025: boxes and the flat-payment test**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf |
-| Flat income tax payment on 2025 income: 2023 reference income per family-quotient share must not exceed | EUR 28,797 | "28 797 €. Cette limite est majorée de 50 % par demi-part" |
-| Increase of that limit per extra half share | 50% | "28 797 €. Cette limite est majorée de 50 % par demi-part" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf |  |
+| Flat income tax payment on 2025 income: 2023 reference income per family-quotient share must not exceed | EUR 28,797 | "28 797 €. Cette limite est majorée de 50 % par demi-part" | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf |
+| Increase of that limit per extra half share | 50% | "28 797 €. Cette limite est majorée de 50 % par demi-part" | same (income of 2025) |
 
 Box map from the same brochure chapter (declarant 1 shown; declarant 2 and dependants use the next letters):
 
@@ -98,29 +98,29 @@ The option for the flat payment is made with URSSAF before 30 September to apply
 
 **Income tax scale applied in 2026 to income of 2025, per family-quotient share**
 
-| Band of taxable income per share | Rate | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |
-| Up to EUR 11,600 | 0% | "Jusqu'à 11 600 € 0 %" |
-| From EUR 11,601 to EUR 29,579 | 11% | "De 11 601 € à 29 579 € 11 %" |
-| From EUR 29,580 to EUR 84,577 | 30% | "De 29 580 € à 84 577 € 30 %" |
-| From EUR 84,578 to EUR 181,917 | 41% | "De 84 578 € à 181 917 € 41 %" |
-| Above EUR 181,917 | 45% | "Plus de 181 917 € 45 %" |
+| Band of taxable income per share | Rate | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 |  |
+| Up to EUR 11,600 | 0% | "Jusqu'à 11 600 € 0 %" | https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 (income of 2025) |
+| From EUR 11,601 to EUR 29,579 | 11% | "De 11 601 € à 29 579 € 11 %" | same (income of 2025) |
+| From EUR 29,580 to EUR 84,577 | 30% | "De 29 580 € à 84 577 € 30 %" | same (income of 2025) |
+| From EUR 84,578 to EUR 181,917 | 41% | "De 84 578 € à 181 917 € 41 %" | same (income of 2025) |
+| Above EUR 181,917 | 45% | "Plus de 181 917 € 45 %" | same (income of 2025) |
 
 **Family-quotient cap for income of 2025**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |
-| Maximum tax saving per extra half share (general case) | EUR 1,807 | "Son montant est fixé à 1 807 € par demi-part supplémentaire" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 |  |
+| Maximum tax saving per extra half share (general case) | EUR 1,807 | "Son montant est fixé à 1 807 € par demi-part supplémentaire" | https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 (income of 2025) |
 
 **Décote for income of 2025**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |
-| Gross tax must be below, single, divorced or widowed | EUR 1,982 | "inférieure à 1 982 € pour les contribuables célibataires, divorcés ou veufs" |
-| Gross tax must be below, couple taxed jointly | EUR 3,277 | "et à 3 277 € pour les contribuables soumis à imposition commune" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 |  |
+| Gross tax must be below, single, divorced or widowed | EUR 1,982 | "inférieure à 1 982 € pour les contribuables célibataires, divorcés ou veufs" | https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 (income of 2025) |
+| Gross tax must be below, couple taxed jointly | EUR 3,277 | "et à 3 277 € pour les contribuables soumis à imposition commune" | same (income of 2025) |
 
 The other family-quotient caps (single parent, shared custody, the extra reductions) and the décote formula are in `fr-personal-income-tax`.
 
@@ -138,13 +138,13 @@ If they do not match, flag it for the reviewer. Common causes: receipts basis ag
 
 **VAT franchise en base thresholds in force for 2026**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |
-| Trade and accommodation: prior-year turnover at or below | EUR 85,000 | "est inférieur ou égal à 85 000 € (seuil de la franchise en base de TVA)" |
-| Trade and accommodation: current-year turnover at or below (higher threshold) | EUR 93,500 | "est inférieur ou égal à 93 500 € (seuil majoré de la franchise en base de TVA)" |
-| Services and liberal professions: prior-year turnover at or below | EUR 37,500 | "est inférieur ou égal à 37 500 € (seuil de la franchise en base de TVA)" |
-| Services and liberal professions: current-year turnover at or below (higher threshold) | EUR 41,250 | "est inférieur ou égal à 41 250 € (seuil majoré de la franchise en base de TVA)" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 |  |
+| Trade and accommodation: prior-year turnover at or below | EUR 85,000 | "est inférieur ou égal à 85 000 € (seuil de la franchise en base de TVA)" | https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (2026) |
+| Trade and accommodation: current-year turnover at or below (higher threshold) | EUR 93,500 | "est inférieur ou égal à 93 500 € (seuil majoré de la franchise en base de TVA)" | same (2026) |
+| Services and liberal professions: prior-year turnover at or below | EUR 37,500 | "est inférieur ou égal à 37 500 € (seuil de la franchise en base de TVA)" | same (2026) |
+| Services and liberal professions: current-year turnover at or below (higher threshold) | EUR 41,250 | "est inférieur ou égal à 41 250 € (seuil majoré de la franchise en base de TVA)" | same (2026) |
 
 The page says these thresholds are unchanged for 2026 and that the single lower threshold proposed by the 2025 finance law "a été abandonnée". Separate thresholds apply to lawyers, authors and performers: take them from `france-vat-return`. Crossing the higher threshold brings VAT "dès le 1 er jour de dépassement".
 
@@ -159,33 +159,33 @@ If they do not match, check timing first. The micro-entrepreneur declares turnov
 
 **Micro-entrepreneur contribution rates in force in 2026**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |
-| Purchase and resale of goods (BIC) | 12.3% | "Achat/revente de marchandises (BIC) 12,3 %" |
-| Commercial and craft services, including furnished lettings of all kinds and chambres d'hôtes, but not classified tourist lettings, which have their own rate on the page (BIC) | 21.2% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Other services (BNC), general scheme | 25.6% | "Autres prestations de services (BNC) 25,6 %" |
-| Regulated liberal professions attached to the Cipav | 23.2% | "Professions libérales réglementées relevant de la Cipav (BIC et BNC) 23,2 %" |
-| Acre rate, goods, activity started up to 30 June 2026 | 6.2% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" |
-| Acre rate, goods, activity started from 1 July 2026 | 9.3% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" |
-| Acre rate, BIC services, activity started up to 30 June 2026 | 10.6% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Acre rate, BIC services, activity started from 1 July 2026 | 15.9% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" |
-| Acre rate, BNC, activity started up to 30 June 2026 | 12.8% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" |
-| Acre rate, BNC, activity started from 1 July 2026 | 19.2% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" |
-| Acre rate, Cipav, activity started up to 30 June 2026 | 13.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" |
-| Acre rate, Cipav, activity started from 1 July 2026 | 17.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" |
-| Training contribution, craftsmen | 0.3% | "Taux Artisans 0,3 % Commerçants 0,1 %" |
-| Training contribution, traders | 0.1% | "Artisans 0,3 % Commerçants 0,1 %" |
-| Training contribution, liberal professions | 0.2% | "Professions libérales réglementées et professions libérales non réglementées 0,2 %" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html |  |
+| Purchase and resale of goods (BIC) | 12.3% | "Achat/revente de marchandises (BIC) 12,3 %" | https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (2026) |
+| Commercial and craft services, including furnished lettings of all kinds and chambres d'hôtes, but not classified tourist lettings, which have their own rate on the page (BIC) | 21.2% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same (2026) |
+| Other services (BNC), general scheme | 25.6% | "Autres prestations de services (BNC) 25,6 %" | same (2026) |
+| Regulated liberal professions attached to the Cipav | 23.2% | "Professions libérales réglementées relevant de la Cipav (BIC et BNC) 23,2 %" | same (2026) |
+| Acre rate, goods, activity started up to 30 June 2026 | 6.2% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" | same |
+| Acre rate, goods, activity started from 1 July 2026 | 9.3% | "Vente de marchandises ( BIC ) 6,2% 9,3% 12,3%" | same |
+| Acre rate, BIC services, activity started up to 30 June 2026 | 10.6% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same |
+| Acre rate, BIC services, activity started from 1 July 2026 | 15.9% | "Prestations de services commerciales et artisanales (BIC) 10,6% 15,9% 21,2%" | same |
+| Acre rate, BNC, activity started up to 30 June 2026 | 12.8% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" | same |
+| Acre rate, BNC, activity started from 1 July 2026 | 19.2% | "Autres prestations de services ( BNC ) 12,8% 19,2% 25,6%" | same |
+| Acre rate, Cipav, activity started up to 30 June 2026 | 13.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" | same |
+| Acre rate, Cipav, activity started from 1 July 2026 | 17.4% | "Professions libérales relevant de la Cipav (BNC) 13,4%* 17,4% 23,2%" | same |
+| Training contribution, craftsmen | 0.3% | "Taux Artisans 0,3 % Commerçants 0,1 %" | same (2026) |
+| Training contribution, traders | 0.1% | "Artisans 0,3 % Commerçants 0,1 %" | same (2026) |
+| Training contribution, liberal professions | 0.2% | "Professions libérales réglementées et professions libérales non réglementées 0,2 %" | same (2026) |
 
 The page heads the full rates "A compter du 1/01/2026": they are the rates in force during 2026, for mainland France (the page prints separate overseas rates). For turnover collected in 2025, take the rate from the client's URSSAF statements and `fr-social-contributions`, not from this table. The Acre column is chosen by the date the activity STARTED, and the reduced rate runs "Jusqu'à la fin du 3ème trimestre civil suivant celui de la date d'inscription". It is a reduced rate for that period, not a flat half reduction for four quarters.
 
 **Self-employed au réel: the reformed base**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html |
-| Flat allowance on the single base | 26% | "le revenu brut abattu de 26 %" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html |  |
+| Flat allowance on the single base | 26% | "le revenu brut abattu de 26 %" | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html (2026) |
 
 The page says the new base and scales apply "à compter de la régularisation des cotisations de l’année 2025 (après la déclaration des revenus 2025, en 2026)". The rate scales are in `fr-social-contributions`.
 
@@ -200,10 +200,10 @@ The page says the new base and scales apply "à compter de la régularisation de
 
 **CSG and CRDS for the self-employed, 2026**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html |
-| CSG and CRDS on earned income | 9.70% | "Le taux de CSG-CRDS est fixé à 9,70 % (9,20 % + 0,50 %)" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html |  |
+| CSG and CRDS on earned income | 9.70% | "Le taux de CSG-CRDS est fixé à 9,70 % (9,20 % + 0,50 %)" | https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html (2026) |
 
 URSSAF prints no deductible and non-deductible split for earned income on that page. It says it sends an attestation de versement de la CSG-CRDS that "détaille les versements effectués et notamment le montant déductible de la CSG". Use that document. The 2042 brochure describes box 6DE as "CSG déductible connue, calculée sur les revenus du patrimoine" (https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf).
 
@@ -229,22 +229,22 @@ The low-value gift limit is set by art. 28-00 A of annex IV to the CGI and is me
 
 **CFE: exemption and payment**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |
-| Exempt where turnover excluding VAT of year N-2 did not exceed | EUR 5,000 | "n'a pas dépassé 5 000 €" |
-| Prior-year CFE above which an instalment is due | EUR 3,000 | "CFE supérieure à 3 000 € L'entreprise doit verser un acompte égal à 50 %" |
-| Instalment, as a share of the prior-year CFE | 50% | "L'entreprise doit verser un acompte égal à 50 % de la CFE versée l'année précédente" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 |  |
+| Exempt where turnover excluding VAT of year N-2 did not exceed | EUR 5,000 | "n'a pas dépassé 5 000 €" | https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (2026) |
+| Prior-year CFE above which an instalment is due | EUR 3,000 | "CFE supérieure à 3 000 € L'entreprise doit verser un acompte égal à 50 %" | same (2026) |
+| Instalment, as a share of the prior-year CFE | 50% | "L'entreprise doit verser un acompte égal à 50 % de la CFE versée l'année précédente" | same (2026) |
 
 A business is exempt from CFE in the year it is created, and its base is halved the following year. Where the prior-year CFE was above the instalment threshold, the instalment is due "en général entre le 26 mai et le 16 juin (inclus)" and the balance by 15 December; otherwise the whole CFE is due by 15 December. A micro-entrepreneur pays the CCI part of the CFE through the URSSAF auto-entrepreneur account. The minimum base is a range set by the commune: `fr-cfe` holds it.
 
 **CVAE thresholds**
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/839-PGP.html |
-| Turnover above which a business is within the CVAE (page: 'supérieur à') | EUR 152,500 | "seuil d’assujettissement à la CVAE (152 500 €)" |
-| Turnover below which the CVAE rate is nil | EUR 500,000 | "< 500 000 € 0 %" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/839-PGP.html |  |
+| Turnover above which a business is within the CVAE (page: 'supérieur à') | EUR 152,500 | "seuil d’assujettissement à la CVAE (152 500 €)" | https://bofip.impots.gouv.fr/bofip/839-PGP.html (2026) |
+| Turnover below which the CVAE rate is nil | EUR 500,000 | "< 500 000 € 0 %" | same (2026) |
 
 If a micro-entrepreneur claims the CFE as a deduction, it is an error: the micro regime uses the flat allowance only.
 
@@ -409,23 +409,23 @@ If the option was made but the reference-income test fails, flag it at once: the
 
 **Balance of income tax.** The balance is debited as set out in the table below, and the same return sets the PAS rate applied from September 2026.
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 |
-| Balance below this amount: one debit in September 2026 | EUR 300 | "en un seul prélèvement en septembre 2026 si le montant est inférieur à 300€" |
-| Balance above this amount: four monthly debits, September to December | EUR 300 | "en quatre prélèvements mensuels (de septembre à décembre) si le montant est supérieur à 300€" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 |  |
+| Balance below this amount: one debit in September 2026 | EUR 300 | "en un seul prélèvement en septembre 2026 si le montant est inférieur à 300€" | https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 |
+| Balance above this amount: four monthly debits, September to December | EUR 300 | "en quatre prélèvements mensuels (de septembre à décembre) si le montant est supérieur à 300€" | same (2026) |
 
 **VAT.**
 - CA3 (réel normal): monthly, or every three months where the VAT due each year is below the amount in the table below, on the date in the DGFiP schedule (`france-vat-return` holds the schedule).
 - CA12 (réel simplifié): the annual return at the latest on the second working day after 1 May, or within three months of the year end where the accounting year does not end on 31 December. For a 31 December year end, instalments in July and December as shares of the prior year's VAT, with the balance paid with the return in May.
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |
-| July instalment, share of prior-year VAT | 55% | "l'entreprise doit verser 55 % de la taxe due l'année précédente" |
-| December instalment, share of prior-year VAT | 40% | "l'entreprise doit verser 40 % de la taxe due l'année précédente" |
-| Prior-year VAT below which no instalments are due | EUR 1,000 | "un montant de TVA inférieur à 1 000 € l'année précédente est dispensée" |
-| Annual VAT due below which a réel normal return is quarterly | EUR 4,000 | "le montant de la TVA exigible chaque année est inférieur à 4 000 €" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 |  |
+| July instalment, share of prior-year VAT | 55% | "l'entreprise doit verser 55 % de la taxe due l'année précédente" | https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (2026) |
+| December instalment, share of prior-year VAT | 40% | "l'entreprise doit verser 40 % de la taxe due l'année précédente" | same (2026) |
+| Prior-year VAT below which no instalments are due | EUR 1,000 | "un montant de TVA inférieur à 1 000 € l'année précédente est dispensée" | same (2026) |
+| Annual VAT due below which a réel normal return is quarterly | EUR 4,000 | "le montant de la TVA exigible chaque année est inférieur à 4 000 €" | same (2026) |
 
 **URSSAF, micro-entrepreneur.** Declare turnover collected each month or each quarter on the URSSAF auto-entrepreneur portal, even when it is nil. URSSAF's own example: the declaration for March is due on 30 April, moved to the next working day when that falls on a weekend or public holiday. On the quarterly option the page's first-declaration table gives the due dates 31 July (January to March), 31 October (April to June), 31 January of the next year (July to September) and 30 April of the next year (October to December) (https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html).
 
@@ -514,15 +514,15 @@ If the option was made but the reference-income test fails, flag it at once: the
 6. **Check the CFE.** Exemption, first-year rule and payment dates (https://entreprendre.service-public.gouv.fr/vosdroits/F23547).
 7. **If the return is late or wrong.** Use the online correction service while it is open (https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026). A return filed late of the taxpayer's own accord, before any formal demand, carries the surcharge in the table below on the tax it shows, plus interest for each month of delay; after a mise en demeure the rate is higher, and `fr-tax-audit` holds it.
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |
-| Surcharge on the tax shown by a return filed late (art. 1728 CGI), base rate | 10% | "la majoration de 10 % prévue par l’article 1728 du CGI" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/4911-PGP.html |  |
+| Surcharge on the tax shown by a return filed late (art. 1728 CGI), base rate | 10% | "la majoration de 10 % prévue par l’article 1728 du CGI" | https://bofip.impots.gouv.fr/bofip/4911-PGP.html (2026) |
 
-| Item | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://bofip.impots.gouv.fr/bofip/1458-PGP.html |
-| Late payment interest (art. 1727 CGI), per month | 0.2% | "taux de l'intérêt de retard de 0,2 % par mois" |
+| Item | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://bofip.impots.gouv.fr/bofip/1458-PGP.html |  |
+| Late payment interest (art. 1727 CGI), per month | 0.2% | "taux de l'intérêt de retard de 0,2 % par mois" | https://bofip.impots.gouv.fr/bofip/1458-PGP.html (2026) |
 
 8. **Run the six cross-checks and the self-checks, then assemble the three output files.** Keep the records for the periods in the retention table (https://entreprendre.service-public.gouv.fr/vosdroits/F10029).
 
@@ -545,27 +545,29 @@ If the option was made but the reference-income test fails, flag it at once: the
 
 ## Sources
 
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23267 (micro regime, checked 13 May 2026 by the site)
-- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf (2026 income tax brochure, self-employed income)
-- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf (2026 income tax brochure, deductible charges)
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 (income tax scale, checked 15 April 2026 by the site)
-- https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 (family-quotient cap)
-- https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 (décote)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (VAT franchise en base, checked 1 January 2026 by the site)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (declaring and paying VAT, checked 21 February 2026 by the site)
-- https://bofip.impots.gouv.fr/bofip/1196-PGP.html (VAT on gifts)
-- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (micro-entrepreneur rates, Acre, training contribution, declarations)
-- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html (reformed base)
-- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html (CSG-CRDS and the attestation)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (CFE, checked 2 April 2026 by the site)
-- https://bofip.impots.gouv.fr/bofip/839-PGP.html (CVAE)
-- https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 (2026 deadlines, balance, correction service)
-- https://www.service-public.gouv.fr/particuliers/vosdroits/F34009 (prélèvement à la source, checked 15 April 2026 by the site)
-- https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur (micro-entrepreneur declaring, flat-payment ceiling)
-- https://bofip.impots.gouv.fr/bofip/4911-PGP.html (late filing surcharge)
-- https://bofip.impots.gouv.fr/bofip/1458-PGP.html (late payment interest)
-- https://entreprendre.service-public.gouv.fr/vosdroits/F10029 (document retention)
-- https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation (electronic invoicing start dates)
+- https://entreprendre.service-public.gouv.fr/vosdroits/F23267 (micro regime, checked 13 May 2026 by the site, read 2026-10-31)
+- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/11-revenus_non_salaries_161a182.pdf (2026 income tax brochure, self-employed income, read 2026-10-31)
+- https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/12-charges_ded_rev_225a236.pdf (2026 income tax brochure, deductible charges, read 2026-10-31)
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F1419 (income tax scale, checked 15 April 2026 by the site, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/2494-PGP.html/identifiant=BOI-IR-LIQ-20-20-20-20260407 (family-quotient cap, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/2495-PGP.html/identifiant=BOI-IR-LIQ-20-20-30-20260407 (décote, read 2026-10-31)
+- https://entreprendre.service-public.gouv.fr/vosdroits/F21746 (VAT franchise en base, checked 1 January 2026 by the site, read 2026-10-31)
+- https://entreprendre.service-public.gouv.fr/vosdroits/F23566 (declaring and paying VAT, checked 21 February 2026 by the site, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/1196-PGP.html (VAT on gifts, read 2026-10-31)
+- https://www.autoentrepreneur.urssaf.fr/portail/accueil/sinformer-sur-le-statut/lessentiel-du-statut.html (micro-entrepreneur rates, Acre, training contribution, declarations, read 2026-10-31)
+- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/reforme-cotisations-independants.html (reformed base, read 2026-10-31)
+- https://www.urssaf.fr/accueil/independant/comprendre-payer-cotisations/vos-cotisations.html (CSG-CRDS and the attestation, read 2026-10-31)
+- https://entreprendre.service-public.gouv.fr/vosdroits/F23547 (CFE, checked 2 April 2026 by the site, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/839-PGP.html (CVAE, read 2026-10-31)
+- https://www.impots.gouv.fr/les-modalites-de-la-declaration-de-revenus-en-2026 (2026 deadlines, balance, correction service, read 2026-10-31)
+- https://www.service-public.gouv.fr/particuliers/vosdroits/F34009 (prélèvement à la source, checked 15 April 2026 by the site, read 2026-10-31)
+- https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur (micro-entrepreneur declaring, flat-payment ceiling, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/4911-PGP.html (late filing surcharge, read 2026-10-31)
+- https://bofip.impots.gouv.fr/bofip/1458-PGP.html (late payment interest, read 2026-10-31)
+- https://entreprendre.service-public.gouv.fr/vosdroits/F10029 (document retention, read 2026-10-31)
+- https://www.impots.gouv.fr/professionnel/questions/partir-de-quand-suis-je-concerne-par-la-reforme-de-la-facturation (electronic invoicing start dates, read 2026-10-31)
+
+Not yet confirmed: the flat-payment ceiling for the option taken in 2026. F23267 prints EUR 29,579 for a single person against year N-2, and impots.gouv.fr prints EUR 29,315 against the 2024 reference income.
 
 ### Change log
 
