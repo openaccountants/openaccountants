@@ -54,9 +54,11 @@ One job in one country has one skill. The pack `README.md` names it under `cover
 - **Evidence:** the scoreboard set itself carried pairs: `malta-vat-return` with `mt-vat3-quarterly-return-malta`, `germany-vat-return` with `de-vat-annual-and-special-schemes`. Routing to the right skill was 64% to 70% (30 Oct 2026). The shape test of 31 Oct 2026 put the cost of routing at about 7 points: the same skill pasted in scored 50% (Claude) and 40% (GPT); the live arm, where the model picks the skill, 43% on both. In the wild, `netherlands-vat-return` and `nl-vat-return` were both being loaded (16 and 13 loads in 28 days).
 - **Check:** `scripts/build-register.py`, `duplicate` column: two or more slugs in one (country, domain) cell that `covered_by` does not name.
 
-### 7. The nine headings are the nine canonical strings, verbatim, in order
+### 7. The headings are one of the two canonical sets, verbatim, in order
 
-Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) has exactly these `##` headings, in this order, so an AI reading any two jurisdictions finds the same things in the same places. A numbering prefix ("## 1.") is tolerated; nothing else in the heading text is.
+Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) uses one of two heading sets, with every heading present and in this order, so an AI reading any two jurisdictions finds the same things in the same places. A numbering prefix ("## 1.") is tolerated; a source link in brackets after the heading text is tolerated; nothing else is. A skill does not mix the two sets.
+
+The reference set (about 440 skills, the September waves):
 
 ```
 ## Who this applies to
@@ -70,10 +72,24 @@ Every tax skill (IT-IND, IT-CORP, VAT, SC, PR, TP, XB) has exactly these `##` he
 ## Sources
 ```
 
-What each holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the two examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
+The method set (about 250 skills, the October waves):
 
-- **Evidence:** shape test, 31 Oct 2026, 30 questions, two models: cutting a fifth of the text changed nothing on Claude (50% right either way) and cost GPT 7 points; the nine-section rewrite beat its pre-September version by 16 points on Claude (56% against 40%) and 8 on GPT, and cut confident-wrong from 20% to 0% (Claude). Section demand, 31 Oct 2026: 6.4% of loads had any section held back, so the earlier inline-budget rule (core sections under a character budget) measured nothing and is dropped. The heading text is also the switch the platform uses to decide what to send first, which is why the strings are fixed.
-- **Check:** `check_canonical_headings` (d). The two older spellings it still accepts ("The taxable base", "Worked examples") go once the backlog is rewritten.
+```
+## Scope
+## Ask the client first
+## The method, step by step
+## Boundary and exception table
+## Worked cases
+## When to refuse or refer
+## Filing and payment
+## Completion checklist
+## Talk to a verified accountant
+```
+
+In the method set, six headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; Talk to a verified accountant) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
+
+- **Evidence:** shape test, 31 Oct 2026, 30 questions, two models: cutting a fifth of the text changed nothing on Claude (50% right either way) and cost GPT 7 points; the rewritten skills beat their pre-September versions by 16 points on Claude (56% against 40%) and 8 on GPT, and cut confident-wrong from 20% to 0% (Claude). Split by set on the same run: reference set 54% right, 0% confident-wrong (10 skills); method set 50%, 6% (8 skills); skills on neither set 28%, 11% (9 skills, the US, Australia and Canada ones). The two sets are within noise of each other; being on neither is what costs. Section demand, 31 Oct 2026: 6.4% of loads had any section held back, so the earlier inline-budget rule (core sections under a character budget) measured nothing and is dropped. Picking one set for everything is a decision for after the loop has measured both on a full Monday run.
+- **Check:** `check_canonical_headings` (d), which accepts either full set. The two older spellings it still accepts in the reference set ("The taxable base", "Worked examples") go once the backlog is rewritten.
 
 ### 8. One figure, one home
 
