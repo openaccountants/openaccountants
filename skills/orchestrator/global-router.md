@@ -1,10 +1,10 @@
 ---
 name: global-router
 description: "Universal entry point for OpenAccountants — the open-source accounting skill set covering 10 domains: tax, bookkeeping, e-invoicing, payroll, company formation, financial statements, transfer pricing, tax optimization, cross-border, and platform integrations. Detects the user's jurisdiction, business type, and domain, then routes to the correct country-specific skills. Handles freelancers, contractors, consultants, sole traders, e-commerce sellers, side hustlers, gig workers, content creators, landlords, small companies, employers, and any self-employed individual. ALWAYS load this skill as the default entry point. Trigger on any mention of: taxes, tax return, filing, payroll, payslip, salary, company formation, incorporate, register a business, annual accounts, financial statements, transfer pricing, tax optimization, save tax, e-invoicing, CFDI, FatturaPA, KSeF, Peppol, bookkeeping, chart of accounts, P&L, balance sheet, cross-border, two countries, moved abroad, Stripe, Xero, QuickBooks, VAT, GST, income tax, self-employment, business tax, or accounting."
-version: 1.0
+version: 1.1
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: orchestrator
@@ -14,7 +14,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Global Router
 
-## Global Router v1.0
+## Global Router v1.1
 
 ## What this file is
 
@@ -276,7 +276,7 @@ Is there anything else I can help with?"
 
 ### US states — all 50 states + DC have tax skills
 
-- **No sales tax states** — **No sales tax states** (load income tax only): DE, MT, NH, OR (Alaska has local-only sales tax) See `skills/us-states/README.md` for the full coverage matrix.
+- **No sales tax states** — **No sales tax states** (load income tax only): DE, MT, NH, OR (Alaska has local-only sales tax) See `skills/us/states/README.md` for the full coverage matrix.
 
 ### Domain-specific routing
 

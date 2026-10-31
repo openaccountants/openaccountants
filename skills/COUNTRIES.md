@@ -35,8 +35,8 @@ Owner: Michael Cutajar
 | [Guernsey](guernsey/) | Needs writing | 10 | 10 | 0 |
 | [Hungary](hungary/) | Needs signature | 11 | 11 | 0 |
 | [Iceland](iceland/) | Needs signature | 10 | 10 | 0 |
-| [Im](im/) | Needs writing | 7 | 7 | 0 |
 | [Ireland](ireland/) | Needs signature | 18 | 18 | 0 |
+| [Isle of Man](isle-of-man/) | Needs writing | 8 | 8 | 0 |
 | [Italy](italy/) | Needs signature | 22 | 21 | 0 |
 | [Kosovo](kosovo/) | Needs writing | 8 | 8 | 0 |
 | [Latvia](latvia/) | Needs signature | 10 | 10 | 0 |

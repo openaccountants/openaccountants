@@ -4,8 +4,8 @@ description: "Use this skill for Isle of Man VAT in 2026 under the Value Added T
 jurisdiction: IM
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
-version: 1.1
+last_updated: 2026-10-31
+version: 1.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 The Isle of Man has its own VAT law, the Value Added Tax Act 1996 (AT 1 of 1996). Under the Customs and Excise Agreement with the United Kingdom, the Island is treated as part of the UK for customs, excise and VAT purposes, and the Island's VAT law follows UK VAT law closely. VAT is run locally by the Customs and Immigration Division of the Treasury (its web pages still sit under "Customs and Excise"). Most HMRC VAT notices are relevant to Isle of Man traders, but the Island has its own rates in a few areas, its own registration and filing, and its own penalty rules. Amounts are in pounds sterling (GBP).
 
-There is one VAT skill for the Island. It sits in the `isle-of-man` folder; the rest of the pack is in [`im`](../im/README.md). There is no duplicate VAT skill in `skills/international/im`. Related skills: [im-corporate-income-tax](../im/im-corporate-income-tax.md), [im-income-tax](../im/im-income-tax.md), [im-payroll-social](../im/im-payroll-social.md).
+There is one VAT skill for the Island. It sits in this folder with the rest of the [pack](README.md). There is no duplicate VAT skill. Related skills: [im-corporate-income-tax](../im/im-corporate-income-tax.md), [im-income-tax](../im/im-income-tax.md), [im-payroll-social](../im/im-payroll-social.md).
 
 ## Who this applies to
 

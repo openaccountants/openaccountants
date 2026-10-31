@@ -624,10 +624,10 @@
  },
  {
   "code": "IM",
-  "name": "Im",
+  "name": "Isle of Man",
   "region": "europe",
   "owner": "michael",
-  "dir": "skills/im"
+  "dir": "skills/isle-of-man"
  },
  {
   "code": "IN",

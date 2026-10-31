@@ -1,10 +1,10 @@
 ---
 name: deadline-engine
 description: Intelligence skill that generates a personalised filing calendar based on the user's jurisdiction and obligations. Looks up deadlines from a master table covering 15 jurisdictions, produces a sorted 12-month calendar, flags approaching deadlines with amber (30 days) and red (7 days) urgency, and calculates late-filing penalties by referencing each jurisdiction's penalty rules.
-version: 0.3
+version: 0.4
 jurisdiction: GLOBAL
 tax_year: 2025
-last_updated: 2026-09-18
+last_updated: 2026-10-31
 review_status: pending_review
 depends_on:
   - workflow-base
