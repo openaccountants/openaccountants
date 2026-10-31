@@ -91,6 +91,7 @@ Moldova taxes individuals at one flat rate of 12% under Title II of the Fiscal C
 | What | Deadline | Source |
 |---|---|---|
 | Annual income tax return of individuals | 30 April of the following year (30 April 2027 for 2026) | art. 83(4) b) |
+| Annual income tax return of legal persons and of resident organisational forms with the status of an individual | the 25th of the third month after the tax year (25 March 2027 for 2026) | art. 83(4) a) |
 | Payment of the annual tax | by the return deadline, without extensions | art. 87(1) |
 | Unified annual return of an individual entrepreneur or farm with up to 5 staff on average and not VAT-registered | 25 March of the following year | art. 83(11), 92(8) |
 | Justice and health professionals: return | 25 March of the following year | art. 69^5(4) |
@@ -125,7 +126,7 @@ The SFS may assess tax, interest and fines for 4 years from the filing or paymen
 - **Non-residents.** A non-resident individual without a business in Moldova is taxed only on Moldovan-source income in art. 71, for example payments for services provided in Moldova, management and consulting fees paid by a resident, dividends and interest paid by residents, and capital gains on assets located or registered in Moldova (art. 71(1)). The payer withholds 12%, or 6% on dividends (art. 91(1)). Non-residents receiving income from payers who do not withhold are taxed under art. 74 and file a return (art. 74, 83(2) b1)). Real-estate rent received by a non-resident from such a payer is taxed at 12% of the monthly contract value, with the contract registered within 7 days (art. 74(1^1)).
 - **Residents with foreign income.** Residents are taxed on worldwide income as set out in art. 13. Tax paid abroad is credited under art. 82 (for justice and health professionals, art. 69^5(3)).
 - **Leaving Moldova.** A person moving abroad files a return for the resident part of the year (art. 83(7)).
-- **Treaties.** Treaty rates and the documents needed to apply them are in art. 79^3 and the individual treaties; the pack's cross-border skill (md-cross-border, in preparation) covers them.
+- **Treaties.** Treaty rates and the documents needed to apply them are in art. 79^3 and the individual treaties; see the pack's cross-border skill, [md-cross-border](md-cross-border.md).
 
 ## Worked examples
 
