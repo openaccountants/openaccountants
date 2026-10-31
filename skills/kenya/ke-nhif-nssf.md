@@ -1,10 +1,10 @@
 ---
 name: ke-nhif-nssf
 description: Use this skill whenever asked about Kenyan social contributions for self-employed individuals -- SHIF (formerly NHIF) health insurance and NSSF pension. Trigger on phrases like "NHIF self-employed", "SHIF contributions", "NSSF Tier I", "NSSF Tier II", "Kenya social security", "Kenya health insurance", or any question about Kenyan social contribution obligations for self-employed persons. Covers the SHIF 2.75% rate (replacing NHIF brackets from October 2024), NSSF Tier I/II structure, voluntary registration, and edge cases. ALWAYS read this skill before touching any Kenyan social contribution work.
-version: 2.0
+version: 2.1
 jurisdiction: KE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -29,9 +29,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | SHIF minimum | KES 300/month |
 | SHIF maximum | No cap |
 | NSSF self-employed | 12% of declared pensionable earnings (both portions) |
-| NSSF Tier I ceiling | KES 8,000 (Lower Earnings Limit) |
-| NSSF Tier II ceiling | KES 72,000 (Upper Earnings Limit) |
-| NSSF maximum monthly | KES 8,640 |
+| NSSF Tier I ceiling | KES 9,000 (Lower Earnings Limit, Year 4, from February 2026) |
+| NSSF Tier II ceiling | KES 108,000 (Upper Earnings Limit, Year 4, from February 2026) |
+| NSSF maximum monthly | KES 12,960 |
 | NSSF for self-employed | Voluntary |
 | Payment deadline | 9th of following month |
 | Currency | KES only |
@@ -51,7 +51,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Prohibitions
 
-- **Prohibitions list** — NEVER use old NHIF brackets from October 2024 onward -- SHIF 2.75% applies. NEVER tell self-employed that NSSF is mandatory -- it is voluntary for self-employed. NEVER ignore KES 300 SHIF minimum. NEVER assume NSSF uncapped -- Upper Earnings Limit KES 72,000 caps the base. NEVER conflate SHIF household income with individual income without clarifying. NEVER present old NSSF rates (pre-February 2025). NEVER assume foreign residents exempt from SHIF -- residency triggers obligation.
+- **Prohibitions list**: NEVER use old NHIF brackets from October 2024 onward -- SHIF 2.75% applies. NEVER tell self-employed that NSSF is mandatory -- it is voluntary for self-employed. NEVER ignore KES 300 SHIF minimum. NEVER assume NSSF uncapped -- Upper Earnings Limit KES 108,000 caps the base. NEVER conflate SHIF household income with individual income without clarifying. NEVER present old NSSF limits (pre-February 2026: KES 8,000 / KES 72,000 / KES 8,640). NEVER assume foreign residents exempt from SHIF -- residency triggers obligation.
 
 ## Section 3 -- SHIF (replacing NHIF)
 
@@ -70,7 +70,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Section 4 -- NSSF contributions
 
-- **Legislation** — NSSF Act 2013 (effective February 2025)  _(NSSF Act 2013)_
+- **Legislation**: NSSF Act 2013, Third Schedule, Year 4 limits from February 2026  _([Year 4 notice](https://gaa.go.ke/sites/default/files/2026-02/Notice%20To%20Employers%20%E2%80%94%20Year%204%20%282026%29%20NSSF%20Contribution%20Rates%20.pdf), read 2026-10-31)_
 
 ### Self-employed NSSF
 
@@ -80,10 +80,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Registration | Voluntary |
 | Self-employed pays | Both employee and employer portions (total 12%) |
-| Minimum (Tier I only) | KES 960 |
-| Maximum (Tier I + II) | KES 8,640 |
+| Minimum (Tier I only) | KES 1,080 |
+| Maximum (Tier I + II) | KES 12,960 |
 
-- **NSSF Tier I/II formula** — tier_i = min(declared_income, KES 8,000) x 6% x 2 tier_ii = max(0, min(declared_income, KES 72,000) - KES 8,000) x 6% x 2 total_nssf = tier_i + tier_ii  _(NSSF Act 2013)_
+- **NSSF Tier I/II formula**: tier_i = min(declared_income, KES 9,000) x 6% x 2 tier_ii = max(0, min(declared_income, KES 108,000) - KES 9,000) x 6% x 2 total_nssf = tier_i + tier_ii  _(NSSF Act 2013)_
 
 ## Section 5 -- Computation examples
 
@@ -92,8 +92,35 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Declared income | SHIF | NSSF Tier I | NSSF Tier II | Total NSSF | Grand total |
 | --- | --- | --- | --- | --- | --- |
 | KES 5,000 | KES 300 (min) | KES 600 | KES 0 | KES 600 | KES 900 |
-| KES 50,000 | KES 1,375 | KES 960 | KES 5,040 | KES 6,000 | KES 7,375 |
-| KES 200,000 | KES 5,500 | KES 960 | KES 7,680 | KES 8,640 | KES 14,140 |
+| KES 50,000 | KES 1,375 | KES 1,080 | KES 4,920 | KES 6,000 | KES 7,375 |
+| KES 200,000 | KES 5,500 | KES 1,080 | KES 11,880 | KES 12,960 | KES 18,460 |
+
+```oa-check
+name: Declared KES 50,000 a month, SHIF and NSSF Year 4
+inputs:
+  income: 50000
+steps:
+  - shif: max(income * 0.0275, 300)
+  - tier_i: min(income, 9000) * 0.12
+  - tier_ii: max(0, min(income, 108000) - 9000) * 0.12
+  - total: shif + tier_i + tier_ii
+expected:
+  shif: 1375
+  total: 7375
+```
+
+```oa-check
+name: Declared KES 200,000 a month, NSSF at the Year 4 cap
+inputs:
+  income: 200000
+steps:
+  - shif: max(income * 0.0275, 300)
+  - nssf: min(income, 9000) * 0.12 + max(0, min(income, 108000) - 9000) * 0.12
+  - total: shif + nssf
+expected:
+  nssf: 12960
+  total: 18460
+```
 
 ## Section 6 -- Payment, registration, and tax interaction
 
@@ -103,7 +130,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Contribution | Due date | Frequency |
 | --- | --- | --- |
-| SHIF | 9th of following month | Monthly |
+| SHIF | Unverified for self-employed members; confirm with SHA | Unverified |
 | NSSF | 9th of following month | Monthly |
 
 Payment via M-Pesa, bank deposit, or online portals.
@@ -118,7 +145,7 @@ Payment via M-Pesa, bank deposit, or online portals.
 
 | Question | Answer |
 | --- | --- |
-| SHIF deductible? | YES -- insurance relief (15% of premiums, capped KES 60,000/year) |
+| SHIF deductible? | YES -- deduction under ITA s15(2)(ae) ([KRA PAYE page](https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye)). Insurance relief does not apply ([KRA notice 8 Nov 2024](https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif)) |
 | NSSF deductible? | YES -- pension relief up to KES 30,000/month |
 | Where reported? | iTax annual return |
 
@@ -128,8 +155,8 @@ Payment via M-Pesa, bank deposit, or online portals.
 
 |  | SHIF | NSSF |
 | --- | --- | --- |
-| Late payment | 2.5%/month | 5%/month |
-| Non-registration | Denial of healthcare | Loss of benefits |
+| Late payment | Unverified; confirm with SHA | 5%/month |
+| Non-registration | Unverified; confirm with SHA | Loss of benefits |
 
 ## Section 7 -- NHIF-to-SHIF transition and household income
 
@@ -156,7 +183,7 @@ Resolution: Employer handles employment contributions. Additional SHIF may be du
 ### EC3 -- Income above NSSF Upper Limit
 
 Situation: Income KES 200,000.
-Resolution: NSSF capped at KES 8,640. SHIF = KES 5,500 (no cap).
+Resolution: NSSF capped at KES 12,960. SHIF = KES 5,500 (no cap).
 
 ### EC4 -- Non-citizen resident
 
@@ -209,7 +236,7 @@ Expected output: SHIF KES 300 (minimum).
 ### Test 3 -- High income, NSSF capped
 
 Input: Declared KES 200,000. Both.
-Expected output: SHIF KES 5,500. NSSF KES 8,640. Total KES 14,140.
+Expected output: SHIF KES 5,500. NSSF KES 12,960. Total KES 18,460.
 
 ### Test 4 -- Dual status
 
@@ -223,8 +250,8 @@ Expected output: SHIF KES 300 (minimum; 2.75% = KES 275, below minimum).
 
 ### Test 6 -- NSSF at Lower Earnings Limit
 
-Input: Declared KES 8,000. NSSF only.
-Expected output: Tier I only. KES 960.
+Input: Declared KES 9,000. NSSF only.
+Expected output: Tier I only. KES 1,080.
 
 ### Test 7 -- NSSF only, no SHIF
 
