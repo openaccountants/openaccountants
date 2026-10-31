@@ -1,6 +1,6 @@
 ---
 name: belgium-einvoice
-description: "Belgian structured e-invoicing for 2026: the B2B obligation in force since 1 January 2026 under VAT Code art. 53 § 2bis (Law of 6 February 2024, amended by the Law of 10 February 2026), the Royal Decree of 8 July 2025 (Peppol BIS in UBL over the Peppol network, rounding, fines), who must send and who must be able to receive, exclusions (art. 44 exempt businesses, flat-rate farmers, businesses not established in Belgium), self-billing, credit notes, the EUR 1,500 / 3,000 / 5,000 fines, the three-month tolerance in early 2026 and the self-billing tolerance to 30 June 2026, B2G invoicing through Mercurius, Peppol BIS Billing 3.0 fields and validation, VAT computed per VAT category, archiving for seven years, and the 120% cost deduction for small businesses. Trigger on: Peppol Belgium, e-invoicing Belgium 2026, e-facturatie, facturation électronique, structured invoice Belgium, Mercurius, Peppol BIS, UBL Belgium, B2B e-invoice fine. Out of scope: VAT rates and returns (belgium-vat-return, be-vat-return), bookkeeping (belgium-bookkeeping)."
+description: "Belgian structured e-invoicing for 2026: the B2B obligation in force since 1 January 2026 under VAT Code art. 53 § 2bis (Law of 6 February 2024, amended by the Law of 10 February 2026), the Royal Decree of 8 July 2025 (Peppol BIS in UBL over the Peppol network, rounding, fines), who must send and who must be able to receive, exclusions (art. 44 exempt businesses, flat-rate farmers, businesses not established in Belgium), self-billing, credit notes, the EUR 1,500 / 3,000 / 5,000 fines, the three-month tolerance in early 2026 and the self-billing tolerance to 30 June 2026, B2G invoicing through Mercurius, Peppol BIS Billing 3.0 fields and validation, VAT computed per VAT category, archiving for seven years, and the 120% cost deduction for small businesses. Trigger on: Peppol Belgium, e-invoicing Belgium 2026, e-facturatie, facturation électronique, structured invoice Belgium, Mercurius, Peppol BIS, UBL Belgium, B2B e-invoice fine. Out of scope: VAT rates and returns (be-vat-return), bookkeeping (belgium-bookkeeping)."
 version: 1.1
 jurisdiction: BE
 category: invoicing
@@ -43,7 +43,7 @@ Rules below are those in force in 2026. Each line names its source; the full lis
 - **Excluded senders.** Taxable persons under the flat-rate scheme of art. 56, and bankrupt taxable persons for the activity for which they were declared bankrupt (art. 53 § 2bis, first paragraph). The flat-rate scheme ends at the latest on 1 January 2028 (efactuur.belgium.be, "Voor wie wordt e-facturatie verplicht?").
 - **Businesses that make only art. 44 exempt supplies** need not send and need not be able to receive structured e-invoices (same page).
 - **Not established in Belgium.** A taxable person without an establishment in Belgium is outside the obligation, even if it has a Belgian VAT number, both for sending and for receiving (same page). The Law of 10 February 2026 removed the reference to the VAT number of art. 50 § 1, 3° from art. 53 § 2bis (art. 4, 1°), so the obligation now turns on the customer's VAT number under art. 50 § 1, 1° (or a VAT group sub-number).
-- **Small-business exemption.** Businesses under the small-business exemption (turnover up to EUR 25,000) are covered (efactuur.belgium.be FAQ, question 2). See [belgium-vat-return](belgium-vat-return.md).
+- **Small-business exemption.** Businesses under the small-business exemption (turnover up to EUR 25,000) are covered (efactuur.belgium.be FAQ, question 2). See [be-vat-return](be-vat-return.md).
 - **Farmers under the special agricultural scheme** are covered at least for receiving B2B invoices (same FAQ).
 - **Customers.** Every Belgian VAT-identified recipient of a structured e-invoice must be able to receive it in the format in which it was issued, itself or through a third party (art. 53 § 2bis, last paragraph of the 2024 text).
 - **Customer that cannot receive.** If the recipient cannot receive a structured e-invoice for technical reasons, the supplier need not issue one, but must still issue an ordinary invoice (art. 53 § 2bis, paragraph added by the Law of 10 February 2026, art. 4, 4°).
@@ -154,7 +154,7 @@ The 2025 version said BuyerReference is always mandatory. The rule is a buyer re
 | O | Services outside scope of tax | Not subject to VAT; VAT amount must be zero |
 | L, M | Canary Islands, Ceuta and Melilla taxes | Not used for Belgian supplies |
 
-The rates themselves are in [belgium-vat-return](belgium-vat-return.md).
+The rates themselves are in [be-vat-return](be-vat-return.md).
 
 ## Section 5 -- Transmission Method
 
@@ -218,7 +218,7 @@ The 2025 version described Hermes, a free government platform that converts stru
 
 ### VAT rates
 
-The 2026 Belgian rates (21%, 12%, 6%, 0%) and what they apply to are in [belgium-vat-return](belgium-vat-return.md). The 2025 version's rate table described the 12% rate wrongly and is replaced by that link.
+The 2026 Belgian rates (21%, 12%, 6%, 0%) and what they apply to are in [be-vat-return](be-vat-return.md). The 2025 version's rate table described the 12% rate wrongly and is replaced by that link.
 
 ### Rounding rules
 
@@ -301,7 +301,7 @@ A second or later infringement counts as such only if the administration finds i
 
 ### Other VAT penalties
 
-Late or missing invoices, wrong VAT and late returns carry the ordinary VAT fines in KB nr. 41 and KB nr. 44. The amounts are in [be-vat-return](be-vat-return.md) and [belgium-vat-return](belgium-vat-return.md).
+Late or missing invoices, wrong VAT and late returns carry the ordinary VAT fines in KB nr. 41 and KB nr. 44. The amounts are in [be-vat-return](be-vat-return.md).
 
 ### Practical consequences
 

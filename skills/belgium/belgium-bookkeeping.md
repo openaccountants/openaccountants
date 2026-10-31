@@ -232,7 +232,7 @@ Corrections against the 2025 version of this skill: 172 is leasing and 173 is cr
 - **Stock.** Stock is valued at cost, or at market value at the balance sheet date if lower (KB WVV art. 3:47).
 - **Contracts in progress.** Valued at cost plus margin as the work progresses, where the margin is reasonably certain. A company may instead keep them at cost until completion (KB WVV art. 3:49). Both methods are allowed; the 2025 version said completed contract was "the norm", which the decree does not say.
 - **Cost of identical items.** Specific identification, weighted average, FIFO or LIFO (KB WVV art. 3:21).
-- **VAT and invoices.** VAT timing and invoicing are in [be-vat-return](be-vat-return.md) and [belgium-vat-return](belgium-vat-return.md). From 1 January 2026 invoices between Belgian VAT-registered businesses are structured e-invoices: see [belgium-einvoice](belgium-einvoice.md).
+- **VAT and invoices.** VAT timing and invoicing are in [be-vat-return](be-vat-return.md). From 1 January 2026 invoices between Belgian VAT-registered businesses are structured e-invoices: see [belgium-einvoice](belgium-einvoice.md).
 
 ## Section 4 -- Expense Classification
 
@@ -441,7 +441,7 @@ Late filing surcharges and the full filing procedure are in [belgium-financial-s
 ### VAT (btw / TVA)
 
 - Input VAT is booked in 411 and output VAT in 451 (MAR).
-- Return frequency, deadlines, the annual client listing and the intra-EU listing are in [be-vat-return](be-vat-return.md); rates and the small-business exemption are in [belgium-vat-return](belgium-vat-return.md).
+- Return frequency, deadlines, the annual client listing and the intra-EU listing, rates and the small-business exemption are in [be-vat-return](be-vat-return.md).
 - VAT records are kept 7 years: the Law of 18 December 2025 (art. 97) replaced "ten" by "seven" in VAT Code art. 60 § 3 and § 4, for VAT that became due from 1 January 2023 (art. 101).
 
 ### Social contributions and payroll
