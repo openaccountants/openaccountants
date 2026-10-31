@@ -1,0 +1,262 @@
+Internal Error ()
+citeturn2899view0 [wordlim: 200] Source: open({"ref_id":"https://www.gesetze.li/konso/pdf/2016502000","lineno":null}); 
+URL https://www.gesetze.li/konso/pdf/2016502000 is not accessible via this tool.--------------------------------------------------------------------------------
+Internal Error ()
+citeturn2899view1 [wordlim: 200] Source: open({"ref_id":"https://www.gesetze.li/konso/pdf/2016510000","lineno":null}); 
+URL https://www.gesetze.li/konso/pdf/2016510000 is not accessible via this tool.--------------------------------------------------------------------------------
+CbC-Reporting - Internationaler Informationsaustausch - Steuerverwaltung - Landesverwaltung - Liechtensteinische Landesverwaltung (https://www.llv.li/de/landesverwaltung/steuerverwaltung/internationaler-informationsaustausch/cbcreporting)
+citeturn2899view2 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"turn2898search0","lineno":null}); Total lines: 5230
+L1069:           * 【1047†Grundsatzinformation zur UID】
+L1070:           * 【1048†Auswirkungen der Schweizer UID auf Liechtenstein】
+L1071:             * 【1049†Importeure / Exporteure】
+L1072:             * 【1050†In Liechtenstein tätige Unternehmen】
+L1073:             * 【1051†Kunden der Eidgenössischen Zollverwaltung (EZV) im Rahmen der Zollkundenverwaltung】
+L1074:             * 【1052†In Artikel 3c UIDG festgelegte UID-Einheiten】
+L1075:           * 【1053†Umsetzung der UID in Liechtenstein】
+L1076:           * 【1054†Veröffentlichung im UID-Register】
+L1134:         * 【1110†Abgeltungssteuerabkommen (AStA)】
+L1135:         * 【1111†AIA/CRS】
+L1136:         * 【1112†CARF】
+L1137:         * 【1113†CbC-Reporting】
+L1138:         * 【1114†Competent Authority (CA)】
+L1139:         * 【1115†FATCA】
+L1140:         * 【1116†Informationsaustausch auf Ersuchen】
+L1141:       * 【1117†Betriebliche Personalvorsorge】
+L1142:       * 【1118†Unfallversicherung】
+L1143:         * 【1119†Versicherte Personen】
+L1144:         * 【1120†Unfallmeldungen】
+L1145:         * 【1121†Arbeitgeber】
+L1146:         * 【1122†Prämien】
+L1147:         * 【1123†Leistungen】
+L1148:         * 【1124†Unfallversicherer】
+L3353:         * 【3292†Öffentliches Mehrwertsteuer-Register】
+L3354:         * 【3293†Wer ist steuerpflichtig?】
+L3355:         * 【3294†Steuersätze】
+L3356:         * 【3295†Publikationen zur Mehrwertsteuerpraxis】
+L3357:         * 【3296†Änderungen ab 1. Januar 2025】
+L3358:       * 【3297†Grundstücksgewinnsteuer】
+L3359:       * 【3298†Stempelabgaben】
+L3360:       * 【3299†Steuerabkommen/DBA】
+L3361:       * 【3300†Internationaler Informationsaustausch】
+L3362:         * 【3301†Abgeltungssteuerabkommen (AStA)】
+L3363:         * 【3302†AIA/CRS】
+L3364:         * 【3303†CARF】
+L3365:         * 【3304†CbC-Reporting】
+L3405:   * 【3304†Deutsch】
+L3406:   * 【3343†English】
+L3407: 
+L3408:   * 【3344†Onlineschalter】
+L3409:   * 【3345†Open Data Portal†www.opendata.li】
+L3410:   * 【3346†my.llv.li†my.llv.li】
+L3411: 
+L3412:   * 【3347†News】
+L3413:   * 【3348†Veranstaltungen】
+L3414:   * 【3349†Medienmitteilungen】
+L3415:   * 【3321†Karriere】
+L3416: 
+L3417:   * 【3347†News】
+L3418:   * 【3348†Veranstaltungen】
+L3419:   * 【3349†Medienmitteilungen】
+L3420:   * 【3321†Karriere】
+L3421: 
+L3422:   * 【3344†Onlineschalter】
+L3423:   * 【3345†Open Data Portal†www.opendata.li】
+L3424:   * 【3346†my.llv.li†my.llv.li】
+L3425: 
+L3426: [Button: DE ]
+L3427: 
+L3428: 【3304†Deutsch】 【3343†English】
+L3720:       * 【1874†Vergabewesen】
+L5037:     * 【3246†Rechtsvorschriften】
+L5038:     * 【3247†Referendumsvorlagen】
+L5039:     * 【3248†Registratur】
+L5040:     * 【3249†Staatskalender】
+L5041:     * 【3250†Telefonzentrale】
+L5042:     * 【3251†Wahlen und Abstimmungen】
+L5043:       * 【3252†Abstimmungsergebnisse】
+L5044:       * 【3253†Briefwahl】
+L5045:       * 【3254†Das "Doppelte Ja"】
+L5046:       * 【3255†Das Referendum】
+L5047:       * 【3256†Die Volksinitiative】
+L5048:         * 【3257†Anmeldung und Vorprüfung】
+L5049:         * 【3258†Unterschriftensammlung】
+L5050:         * 【3259†Behandlung im Landtag】
+L5051:       * 【3260†Wahlergebnisse】
+L5052:         * 【3261†Landtagswahl 2021】
+L5053:         * 【3262†Landtagswahl 2017】
+L5054:         * 【3263†Gemeindewahlen】
+L5055:       * 【3264†Wahl- und Abstimmungstermine】
+L5056:       * 【3265†Statistiken】
+L5057:     * 【3266†Wappen und Farben Liechtensteins】
+L5058:       * 【3267†Gemeindewappen】
+L5059:       * 【3268†Besondere Bestimmungen】
+L5060:       * 【3269†Farben】
+L5061:       * 【3270†Staatswappen】
+L5062:     * 【3271†Datenschutzhinweis】
+L5063:   * 【3272†Steuerverwaltung】
+L5064:     * 【3273†Steuern natürliche Personen】
+L5065:       * 【3274†Vermögens- und Erwerbssteuer】
+L5066:       * 【356†eTax / elektronische Steuererklärung】
+L5067:       * 【357†Bestätigungen】
+L5068:       * 【3275†Selbstanzeige】
+L5069:       * 【359†Kurse Devisen, Gold und Edelmetalle, Kryptowährungen】
+L5070:     * 【3276†Steuern juristische Personen】
+L5071:       * 【3277†Ertragssteuer】
+L5072:       * 【3278†Mindestbesteuerung (GloBE)】
+L5073:       * 【3279†PVS - Privatvermögensstruktur】
+L5074:       * 【3280†Gemeinnützige Rechtsträger】
+L5075:       * 【356†eTax / elektronische Steuererklärung】
+L5076:       * 【357†Bestätigungen】
+L5077:       * 【359†Kurse Devisen, Gold und Edelmetalle, Kryptowährungen】
+L5078:       * 【3281†Abgaben auf Versicherungsprämien】
+L5079:     * 【356†eTax / elektronische Steuererklärung (JP & NP)】
+L5080:       * 【3282†eTax herunterladen (JP & NP)】
+L5081:         * 【3283†eTax Vorjahre herunterladen】
+L5082:       * 【3284†Passcode anfordern / entsperren】
+L5083:     * 【3285†Lohn-/Quellensteuer, Personalvorsorge】
+L5084:       * 【3286†Lohn-/Quellensteuer】
+L5085:       * 【3287†eLohnausweis / eLohnlisten】
+L5086:       * 【3288†Amtliches Lohnausweisformular】
+L5087:       * 【3289†Betriebliche Personalvorsorge】
+L5088:     * 【3290†Mehrwertsteuer】
+L5089:       * 【3291†e-MWST】
+L5090:       * 【3292†Öffentliches Mehrwertsteuer-Register】
+L5091:       * 【3293†Wer ist steuerpflichtig?】
+L5092:       * 【3294†Steuersätze】
+L5093:       * 【3295†Publikationen zur Mehrwertsteuerpraxis】
+L5094:       * 【3296†Änderungen ab 1. Januar 2025】
+L5095:     * 【3297†Grundstücksgewinnsteuer】
+L5096:     * 【3298†Stempelabgaben】
+L5097:     * 【3299†Steuerabkommen/DBA】
+L5098:     * 【3300†Internationaler Informationsaustausch】
+L5099:       * 【3301†Abgeltungssteuerabkommen (AStA)】
+L5100:       * 【3302†AIA/CRS】
+L5101:       * 【3303†CARF】
+L5102:       * 【3304†CbC-Reporting】
+L5103:       * 【3305†Competent Authority (CA)】
+L5104:       * 【3306†FATCA】
+L5105:       * 【3307†Informationsaustausch auf Ersuchen】
+L5106:     * 【3308†Newsletter】
+L5107:     * 【3309†Kontakt】
+L5108:     * 【3310†Bankverbindungen】
+L5109:     * 【3311†Datenschutzhinweis】
+L5110:   * 【3312†Zivilstandsamt】
+L5111:     * 【3313†Geschlechtswechsel】
+L5112:     * 【3314†Heirat】
+L5113:       * 【3315†Ehe für alle】
+L5114:     * 【3316†Einbürgerung】
+L5115:     * 【3317†Namensführung】
+L5116:     * 【3318†Dokumente bestellen】
+L5117:     * 【3319†Kontakt】
+L5118:     * 【3320†Datenschutzhinweis】
+L5119: # CbC-Reporting
+L5120: 
+L5121: Beim Country‐by‐Country‐Reporting (CbC-Reporting) übermitteln berichtende Rechtsträger eines multinationalen Konzerns (Konzernumsatz grösser CHF 900 Mio.) einen länderbezogenen Bericht an ihre nationale Steuerbehörde, welche diesen wiederum an die zuständigen Behörden der Partnerstaaten weiterleitet.
+L5122: In Liechtenstein ansässige berichtende Rechtsträger haben sich bis zum Ende der ersten Berichtssteuerperiode unaufgefordert bei der Steuerverwaltung zu registrieren. Dies kann mittels eines formlosen Schreibens an die Steuerverwaltung erfolgen:
+L5123: 
+L5124: Steuerverwaltung
+L5125: Abteilung Internationales
+L5126: Postfach 684
+L5127: 9490 Vaduz
+L5128: In Liechtenstein ansässige konstitutive Rechtsträger einer im Ausland ansässigen Konzernobergesellschaft, die nicht substituierende Konzernobergesellschaften sind, können unter den in Art. 5 CbC-Gesetz genannten Voraussetzungen zur Einreichung eines länderbezogenen Berichts in Liechtenstein verpflichtet werden (nur auf Verlangen der Steuerverwaltung erforderlich).
+L5129: Die Steuerverwaltung wird die Einreichung des länderbezogenen Berichts jedoch jedenfalls nur im Einklang mit der Guidance on the Implementation of Country-by-Country Reporting: BEPS Action 13 verlangen.
+L5130: ## Weitere Informationen
+L5131: 
+L5132: ## Meldewesen
+L5133: 
+L5134: 【3350†Erfassung CbC-Reportings – XML Upload (Schemaversion 2.0)†formulare.llv.li】
+L5135: ## Gesetzliche Grundlagen
+L5136: 
+L5137: 【3351†Übereinkommen über die gegenseitige Amtshilfe in Steuersachen (MAK) (Deutsche Version)†www.gesetze.li】
+L5138: 
+L5139: 【3352†Übereinkommen über die gegenseitige Amtshilfe in Steuersachen (MAK) (Englische Version)】
+L5140: 
+L5141: 【3353†Multilaterale Vereinbarung der zuständigen Behörden über den Austausch länderbezogener Berichte (MCAA-CbC) (Deutsche Version)†www.gesetze.li】
+L5142: 【3354†Multilaterale Vereinbarung der zuständigen Behörden über den Austausch länderbezogener Berichte (MCAA-CbC) (Englische Version)】
+L5143: 
+L5144: 【3355†Bericht und Antrag zum MCAA-CbC†www.gesetze.li】
+L5145: 
+L5146: 【3356†CbC-Gesetz†www.gesetze.li】
+L5147: 
+L5148: 【3357†CbC-Gesetz (Englische Übersetzung)†www.regierung.li】
+L5149: 
+L5150: 【3358†Bericht und Antrag zum CbC-Gesetz†bua.gmg.biz】
+L5151: 
+L5152: 【3359†CbC-Verordnung†www.gesetze.li】
+L5153: 
+L5154: 【3360†CbC-Verordnung (Englische Übersetzung)†www.regierung.li】
+L5155: ## Hilfsmittel
+L5156: 
+L5157: 【3361†OECD AEOI Portal zum CbC-Reporting (nur auf Englisch verfügbar)†www.oecd.org】
+L5158: 
+L5159: 【3362†OECD CbC XML-Schema & OECD User Guide (XML Version 2.0 - gültig/verpflichtend ab Nov.20)  (nur auf Englisch verfügbar)†www.oecd.org】
+L5160: 
+L5161: 【3363†Leitlinien zur Umsetzung der länderbezogenen Berichterstattung BEPS-Aktionspunkt 13†www.oecd.org】
+L5162: 
+L5163: 【3364†XML Zusatzspezifikation CbC (Version Juli 2020)】
+L5164: ### Ansprechpersonen
+L5165: 
+L5166:   * Alexander Zelzer
+L5167: 
+L5168: 【3365†[email protected]】
+L5169: 
+L5170: +423 236 69 73
+L5171: 
+L5172:   * Dr. Viktoria Wöhrer
+L5173: 
+L5174: 【3366†[email protected]】
+L5175: 
+L5176: +423 236 69 71
+L5177: 
+L5178: Link Website: https://www.llv.li/de/landesverwaltung/steuerverwaltung/internationaler-informationsaustausch/cbcreporting
+L5179: # Suche
+L5180: 
+L5181: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L5182: 
+L5183: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L5184: 
+L5185: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L5186: 
+L5187: Suchfeld [Input] Suche starten.
+L5188: 
+L5189: Filter
+L5190: 
+L5191:   *   * ## Filtermöglichkeiten
+L5192: 
+L5193: Filter zurücksetzen
+L5194: 
+L5195:   * Inhaltstyp
+L5196: 
+L5197: Inhalte () Dokumente () Personen () News () Medienmitteilungen () Events () Publikationen () Zahl-Tag () Opendata ()
+L5198: 
+L5199: 【3367†Zu den Suchresultaten springen】
+L5200: [Button: Filter anwenden ]
+L5201: 
+L5202:   *   *   *   *   * ### Für Ihre Suchanfrage konnten keine Ergebnisse gefunden werden.
+L5203: 
+L5204: Im Folgenden finden Sie ähnliche oder themenverwandte Inhalte, die für Sie von Interesse sein könnten.Wenn Sie nicht fündig werden, nutzen Sie bitte die Navigation.
+L5205: 
+L5206: Suchfeld [Input] Suche starten.
+L5207: 
+L5208: Privatperson / Juristische Person [Select]
+L5209: 
+L5210: Zuständiges Amt [Select]
+L5211: 
+L5212: Thema wählen [Select]
+L5213: 
+L5214: Inhaltstyp wählen [Select]
+L5215: 
+L5216: Filter zurücksetzen
+L5217: 
+L5218: 0 Ergebnisse
+L5219: 
+L5220: Anwendungen
+L5221: 
+L5222: Mehr laden
+L5223: 
+L5224: Formulare
+L5225: Mehr laden
+L5226: 
+L5227: Dateien
+L5228: 
+L5229: Mehr laden

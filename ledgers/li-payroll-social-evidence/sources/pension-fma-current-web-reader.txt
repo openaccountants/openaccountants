@@ -1,0 +1,435 @@
+Laufende Aufsicht (https://www.fma-li.li/de/finanzdienstleister/bereich-versicherungen-vorsorgeeinrichtungen/vorsorgeeinrichtungen/laufende-aufsicht)
+citeturn2897view0 [wordlim: 200] Crawled: 6 days ago; Content type: text/html; Source: open({"ref_id":"turn2896search0","lineno":null}); Total lines: 636
+L431:   * Aufsicht & Regulierung
+L432: 
+L433: 【153†DORA】 【163†Bewilligungen und Zulassungen】 【164†Enforcement und Sanktionen】 【165†Europäische Aufsichtsbehörden】 【167†Finanzstabilität und Makroprudenzielle Aufsicht】 【182†Wirtschaftsprüfer-Aufsicht】 【193†Abwicklungsbehörde】 【199†Fintech】 【205†Geldwäschereibekämpfung】 【211†Regulierungsprojekte】 【102†Marktmissbrauch】
+L434: 
+L435: 【205†Unsere Rolle in der Geldwäschereibekämpfung Geldwäschereibekämpfung】
+L436: 
+L437:   * Standort
+L438: 【219†Register der Bewilliungsträger】 【220†Wirtschaftsstandort Liechtenstein】 【221†Nachhaltigkeit in der Finanzwirtschaft】 【227†Internationales】
+L439: 
+L440: 【220†Ein internationaler, stabiler Finanzplatz Finanzplatz Liechtenstein】
+L441: 
+L442:   * Medien & Öffentlichkeit
+L443: 
+L444: 【242†Aktuelles】 【243†Kundenschutz】 【261†Veranstaltungen】 【262†Publikationen】 【263†Medien】
+L445: 
+L446:     * 【286†Stabil in turbulentem Umfeld: Bericht zur Entwicklung der Pensionskassen 2025 veröffentlicht】 21.10.26 • Publikation
+L447: 
+L448: 【286†Lesen】
+L449:     * 【287†Bekanntmachung Neuzulassung als Versicherungsunternehmen nach VersAG】 15.10.26 • Bewilligungen
+L450: 
+L451: Die Justinian Versicherungs AG wurde per 15. Oktober 2026 als Versicherungsunternehmen nach dem liechtensteinischen Versicherungsaufsichtsgesetz (VersAG) bewilligt.
+L452: 
+L453: 【287†Lesen】
+L454: 
+L455:     * 【288†Erlöschen einer Registrierung nach TVTG】 14.10.26 • Bewilligungen
+L456: Die Copper Markets hat per 24. September 2026 auf ihre Registrierung als VT-Verwahrer nach Art. 12 Abs. 1 i.V.m. Art. 2 Abs. 1 Bst. n TVTG verzichtet. Die Registrierung ist somit nach Art. 20 Abs. 1 Bst. a TVTG erloschen.
+L457: 
+L458: 【288†Lesen】
+L459: 
+L460:   * Die FMA
+L461: 
+L462: 【265†Karriere†karriere.fma-li.li】 【266†Organisation】 【273†Kontakt】 【277†Datenschutz】 【279†Abgaben und Gebühren】 【280†Zustellungen gemäss Zustellgesetz】 【281†Nachhaltigkeit】
+L463: 【265†Starte deinen Weg bei uns und werde Teil unseres Teams Karriere Website†karriere.fma-li.li】
+L464: 
+L465:   * 【48†Vorsorgeeinrichtungen】
+L466: 
+L467:   * 【49†Bewilligungen / Zulassungen】
+L468: 
+L469:   * 【50†Laufende Aufsicht】
+L470: 
+L471:   * 【51†Freigabe des Pensionskassen-Sperrkontos】
+L472: 
+L473:   * 【52†Regulierung / Rechtsgrundlagen】
+L474: 
+L475:   * 【53†Register】
+L476: 
+L477:   * 【54†FAQ】
+L478: # Laufende Aufsicht
+L479: Die FMA beaufsichtigt die gesamte Geschäftstätigkeit der Vorsorgeeinrichtungen. Im Rahmen ihrer Aufsichtstätigkeit prüft die FMA die Statuten, die Reglemente, den Geschäftsbericht, den Bericht über das abgelaufene Geschäftsjahr, die Berichte der Revisionsstellen und des Pensionskassenexperten sowie die erforderlichen statistischen Daten der Vorsorgeeinrichtungen. Die FMA wacht darüber, dass die gesetzlichen und reglementarischen Vorschriften eingehalten werden.
+L480: In regelmässigen Abständen prüft die FMA die Geschäftstätigkeit der Vorsorgeeinrichtungen vor Ort. Bei Vorliegen eines unrechtmässigen Zustandes ordnet die FMA die ihr geeignet erscheinenden Massnahmen zu dessen Beseitigung an.
+L481: ### Berichterstattung
+L482: 
+L483: Folgende Wegleitung konkretisiert die im Rahmen der regelmässigen Berichterstattung von Vorsorgeeinrichtungen mit Sitz im Fürstentum Liechtenstein und deren zuständigen Revisionsstellen einzubringenden Informationen sowie die zu verwendenden Systeme und Formate:
+L484: 
+L485:   * Wegleitung •
+L486: 
+L487: Vorsorgeeinrichtungen •
+L488: 
+L489: Wirtschaftsprüfer/Wirtschaftsprüfergesellschaften •
+L490: 
+L491: BPVG
+L492: 
+L493: 【289†FMA-Wegleitung 2022/7】
+L494: Regelmässige Berichterstattung nach dem Gesetz über die betriebliche Personalvorsorge (BPVG) an die FMA (0.24 MB)
+L495: 
+L496: [Button: ]
+L497: 
+L498: Es stehen folgende Dokumente zum Download bereit:
+L499: ### Vorsorgeeinrichtungen (Vorlage und Validierungsregeln für das Berichtsjahr 2025):
+L500: 
+L501:   * 【290†Jährliche Berichterstattung VE Excel-Vorlage (39 kB)】
+L502: 
+L503:   * 【291†FMA List of Validations (20 kB)】
+L504: 
+L505: ### Revisionsstellen (Vorlagen für die Berichterstattung für das Berichtsjahr 2026):
+L506: 
+L507:   * 【292†VE Revisionsbericht zur Aufsichtsprüfung an die FMA inklusive Anhang 1 (69 kB)】
+L508: 
+L509:   * 【293†VE Anhang G1 - Risikoanalyse-Prüfstrategie (27 kB)】
+L510: 
+L511:   * 【294†VE Anhang 2 - Beanstandungen und Empfehlungen (23 kB)】
+L512: ### Deckungslücken
+L513: 
+L514:   * Wegleitung •
+L515: 
+L516: Vorsorgeeinrichtungen •
+L517: 
+L518: BPVG
+L519: 
+L520: 【295†FMA-Wegleitung 2018/59】
+L521: 
+L522: Vorgehen bei Deckungslücken in Vorsorgeeinrichtungen (0.09 MB)
+L523: 
+L524: [Button: ]
+L525: 
+L526: ### Beendigung der Geschäftstätigkeit
+L527: 
+L528:   * Wegleitung •
+L529: 
+L530: Arbeitnehmer •
+L531: 
+L532: BPVG
+L533: 
+L534: 【296†FMA-Wegleitung 2018/61】
+L535: 
+L536: Organisatorische Aufhebung einer Personalvorsorgestiftung (Fusion) (0.14 MB)
+L537: 
+L538: [Button: ]
+L539: ### Anschlusspflicht im Bereich der betrieblichen Personalvorsorge
+L540: Arbeitnehmer, welche einen AHV-pflichtigen Jahreslohn von mindestens CHF 14'700.- erzielen und das 17. Altersjahr vollendet haben, sind grundsätzlich in der beruflichen Vorsorge zu versichern. Alle Arbeitgeber, welche in der betrieblichen Personalvorsorge obligatorisch zu versichernde Arbeitnehmer beschäftigen, müssen einer liechtensteinischen Vorsorgeeinrichtung angeschlossen sein und ihre Arbeitnehmer ordnungsgemäss versichern.
+L541: Der Arbeitgeber ist verantwortlich dafür, dass alle seine versicherungspflichtigen Arbeitnehmer der Vorsorgeeinrichtung zur Versicherung angemeldet und die Beiträge fristgerecht der Vorsorgeeinrichtung vergütet werden. Jeder Arbeitnehmer in Liechtenstein, welcher der Versicherungspflicht gemäss dem Gesetz über die betriebliche Personalvorsorge unterliegt, hat ein Recht auf Beitragsleistungen seines Arbeitgebers an seine Altersvorsorge und zur Risikoabsicherung.
+L542:   * 【297†Verpflichtung zur Leistung von Sozialversicherungsbeiträgen Meldepflicht (55 kB)】
+L543: 
+L544:   * 【298†Merkblatt über das Betreuungs- und Pflegegeld für häusliche Betreuung Verpflichtung zur Leistung von Sozialversicherungsbeiträgen (62 kB)】
+L545: ### Meldung Beitragsausstände
+L546: Arbeitgeber müssen Arbeitgeber- und Arbeitnehmerbeiträge bei der Lohnzahlung zurückbehalten und spätestens auf das Ende des jeweiligen Kalenderquartals der Vorsorgeeinrichtung überweisen. Andernfalls verstösst der gegen seine gesetzlichen Pflichten, was eine Strafanzeige der FMA zur Folge hat (Art. 25 Abs. 1 lit. f BPVG). Gemeinschafts- und Sammeleinrichtungen müssen nach Art. 7 Abs. 5 BPVG der FMA Beitragsausstände von Arbeitgebern in Verzug melden.
+L547: Die Meldung ist der FMA innert drei Monaten ab Ende des jeweiligen Quartals mit untenstehendem Formular zu erstatten.
+L548:   * 【299†Meldung Beitragsausstände FMA-Formular (60 kB)】
+L549: ### Weitere Dokumente:
+L550: 
+L551:   * 【300†Meldung des Stiftungsrates gemäss Art. 15b Abs. 5 BPVG (52 kB)】
+L552: 
+L553:   * 【301†Merkblatt für liechtensteinische Vorsorgeeinrichtungen Bescheinigung Pensionskassen-Beiträge und Leistungen (129 kB)】
+L554: 
+L555:   Keine Dateien Datei Dateien
+L556: ### Downloads
+L557: 
+L558: Kontakt
+L559: 
+L560: Finanzmarktaufsicht Liechtenstein
+L561: 
+L562: Landstrasse 109, Postfach 279
+L563: 
+L564: 9490 Vaduz, Liechtenstein
+L565: 
+L566: 
+L567: 
+L568: T. +423 236 73 73
+L569: 
+L570: M. info@fma-li.li
+L571: 
+L572: 
+L573: 
+L574: Öffnungszeiten
+L575: 
+L576: Montag - Freitag
+L577: 
+L578: 08.00 – 12.00 Uhr
+L579: 
+L580: 13.30 – 17.00 Uhr
+L581: 
+L582: 
+L583: 
+L584: An 【274†folgenden Tagen】
+L585: 
+L586: bleibt die FMA geschlossen
+L587: 
+L588: ##### Kontakt
+L589: 
+L590: Finanzmarktaufsicht Liechtenstein
+L591: 
+L592: Landstrasse 109, Postfach 279
+L593: 
+L594: 9490 Vaduz, Liechtenstein
+L595: 
+L596: 
+L597: 
+L598: T. +423 236 73 73
+L599: 
+L600: M. info@fma-li.li
+L601: ##### Öffnungszeiten
+L602: 
+L603: Montag - Freitag
+L604: 
+L605: 08.00 – 12.00 Uhr
+L606: 
+L607: 13.30 – 17.00 Uhr
+L608: 
+L609: 
+L610: 
+L611: An 【274†folgenden Tagen】
+L612: 
+L613: bleibt die FMA geschlossen
+L614: 
+L615:   * 【302†Impressum】
+L616:   * 【277†Datenschutz】
+L617:   * 【303†Rechtshinweis】
+L618: 
+L619: 【265†Jobs & Karriere†karriere.fma-li.li】 【248†Meldung erstatten】
+L620: 
+L621: Suche
+L622: 
+L623: [Input: Suche nach ..] [Button: ] [Button: ]
+L624: 
+L625: [Button: Alle ]
+L626: 
+L627:   * Seiten
+L628:   * Aktuelles
+L629:   * Warnungen
+L630:   * Dokumente
+L631:   * Publikationen
+L632:   * Veranstaltungen
+L633:   * Mitarbeiter
+L634:   * Rechtsgrundlagen
+L635:   * Guidelines
+--------------------------------------------------------------------------------
+FAQ (https://www.fma-li.li/de/finanzdienstleister/bereich-versicherungen-vorsorgeeinrichtungen/vorsorgeeinrichtungen/faq)
+citeturn2897view1 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"turn2896search2","lineno":null}); Total lines: 666
+L431:   * Aufsicht & Regulierung
+L432: 
+L433: 【153†DORA】 【163†Bewilligungen und Zulassungen】 【164†Enforcement und Sanktionen】 【165†Europäische Aufsichtsbehörden】 【167†Finanzstabilität und Makroprudenzielle Aufsicht】 【182†Wirtschaftsprüfer-Aufsicht】 【193†Abwicklungsbehörde】 【199†Fintech】 【205†Geldwäschereibekämpfung】 【211†Regulierungsprojekte】 【102†Marktmissbrauch】
+L434: 
+L435: 【205†Unsere Rolle in der Geldwäschereibekämpfung Geldwäschereibekämpfung】
+L436: 
+L437:   * Standort
+L438: 【219†Register der Bewilliungsträger】 【220†Wirtschaftsstandort Liechtenstein】 【221†Nachhaltigkeit in der Finanzwirtschaft】 【227†Internationales】
+L439: 
+L440: 【220†Ein internationaler, stabiler Finanzplatz Finanzplatz Liechtenstein】
+L441: 
+L442:   * Medien & Öffentlichkeit
+L443: 
+L444: 【242†Aktuelles】 【243†Kundenschutz】 【261†Veranstaltungen】 【262†Publikationen】 【263†Medien】
+L445: 
+L446:     * 【286†ESMA-Opinion zum Umgang mit nicht MiCAR-konformen Stablecoins】 23.10.26 • Aufsicht und Regulierung
+L447: Mit einer am 8. Oktober 2026 veröffentlichten ESMA-Opinion wurde die Erwartungshaltung der ESMA zum Umgang mit nicht MiCAR-konformen Stablecoinskonkretisiert.
+L448: 
+L449: 【286†Lesen】
+L450: 
+L451:     * 【287†Stabil in turbulentem Umfeld: Bericht zur Entwicklung der Pensionskassen 2025 veröffentlicht】 21.10.26 • Publikation
+L452: 
+L453: 【287†Lesen】
+L454: 
+L455:     * 【288†Bekanntmachung Neuzulassung als Versicherungsunternehmen nach VersAG】 15.10.26 • Bewilligungen
+L456: Die Justinian Versicherungs AG wurde per 15. Oktober 2026 als Versicherungsunternehmen nach dem liechtensteinischen Versicherungsaufsichtsgesetz (VersAG) bewilligt.
+L457: 
+L458: 【288†Lesen】
+L459: 
+L460:   * Die FMA
+L461: 
+L462: 【265†Karriere†karriere.fma-li.li】 【266†Organisation】 【273†Kontakt】 【277†Datenschutz】 【279†Abgaben und Gebühren】 【280†Zustellungen gemäss Zustellgesetz】 【281†Nachhaltigkeit】
+L463: 
+L464: 【265†Starte deinen Weg bei uns und werde Teil unseres Teams Karriere Website†karriere.fma-li.li】
+L465: 
+L466:   * 【48†Vorsorgeeinrichtungen】
+L467:   * 【49†Bewilligungen / Zulassungen】
+L468: 
+L469:   * 【50†Laufende Aufsicht】
+L470: 
+L471:   * 【51†Freigabe des Pensionskassen-Sperrkontos】
+L472: 
+L473:   * 【52†Regulierung / Rechtsgrundlagen】
+L474: 
+L475:   * 【53†Register】
+L476: 
+L477:   * 【54†FAQ】
+L478: # FAQ
+L479: 
+L480:   * #### Wozu dient die betriebliche Vorsorge?
+L481: 
+L482: Die berufliche Alters-, Hinterlassenen- und Invalidenvorsorge ergänzt die Leistungen der AHV und IV. Während diese den Existenzbedarf im Vorsorgefall sichern, soll die berufliche Vorsorge die angemessene Fortsetzung des bisherigen Lebensstandards ermöglichen. Sie zahlt Leistungen ab dem Zeitpunkt der Pensionierung sowie im Fall von Erwerbsunfähigkeit oder Tod aus.
+L483: 
+L484:   * #### Worauf stützt sich die betriebliche Vorsorge?
+L485: Die Grundsteine der betrieblichen Vorsorge sind im Wesentlichen das Gesetz über die betriebliche Personalvorsorge (BPVG), die dazu erlassene Verordnung (BPVV) sowie das Vorsorgereglement der jeweiligen Vorsorgeeinrichtung.
+L486: Das BPVG ist ein Rahmengesetz, welches die gesetzliche Minimalvorsorge regelt (sog. Obligatorium der beruflichen Vorsorge). Das BPVG definiert Mindestleistungen für das Alter, den Todesfall und die Invalidität. Die Vorsorgeeinrichtungen sind jedoch frei, über das gesetzlich geforderte Minimum hinauszugehen. Dann handelt es sich um sogenannte überobligatorische Leistungen. Das Vorsorgereglement regelt im gesetzlich vorgesehenen Rahmen die versicherten Leistungen und deren Finanzierung.
+L487:   * #### Wer ist zu versichern?
+L488: 
+L489: Alle Arbeitnehmer, die das 17. Altersjahr vollendet haben und in der 1. Säule versichert sind und mindestens einen massgebenden Jahreslohn von derzeit CHF 14 700 erzielen, müssen der Vorsorgeeinrichtung des Arbeitgebers beitreten. Die obligatorische Versicherung beginnt mit dem Antritt des Arbeitsverhältnisses. Der genannte Mindestjahreslohn stellt die Eintrittsschwelle in das Obligatorium der beruflichen Vorsorge dar.
+L490: Das Sparen für die Altersrente beginnt am 1. Januar nach Vollendung des 17. Altersjahres, sofern das Arbeitsverhältnis unbefristet ist. Löhne unter dem genannten Mindestjahreslohn müssen nicht versichert werden.
+L491: Verschiedene Personengruppen sind der Versicherungspflicht nicht unterstellt: Dazu gehören beispielsweise Selbständigerwerbende, Arbeitnehmer von juristischen Personen, die daran massgeblich beteiligt sind und Arbeitgeberfunktionen ausüben oder Personen, die im Sinne der IV mindestens zu zwei Drittel invalid sind.
+L492: 
+L493:   * #### Wie hoch ist der Mindestlohn für die obligatorische Unterstellung unter das BPVG?
+L494: Die Versicherungspflicht setzt ein bei einem AHV-pflichtigen Jahreslohn von derzeit CHF 14 700 (die minimale Altersrente der Alters- und Hinterlassenenversicherung). Falls Sie nur einen Bruchteil des Jahres gearbeitet haben, ist Ihr Gehalt auf ein Jahr umzurechnen.
+L495: 
+L496:   * #### Bin ich auch während meiner Probezeit zu versichern?
+L497: Die Vereinbarung einer Probezeit entbindet nicht von der Versicherungspflicht, auch wenn allenfalls das Arbeitsverhältnis in der Probezeit wieder gekündigt wird. Die Risikoversicherung, welche Leistungen im Invaliditäts- und Todesfall erbringt, setzt ein mit dem Beginn des Arbeitsverhältnisses. Für Altersleistungen ist der Arbeitnehmer zu versichern, wenn das Arbeitsverhältnis unbefristet ist.
+L498: Dabei ist zu beachten, dass ein Arbeitsverhältnis, welches auf mehr als drei Monate befristet ist, als unbefristet gilt und entsprechend die Versicherungspflicht auslöst. Gleiches gilt, wenn ein befristetes Arbeitsverhältnis über die Dauer von drei Monaten verlängert wird.
+L499:   * #### Ist mein Arbeitsverhältnis unbefristet?
+L500: 
+L501: Ob ein Arbeitsverhältnis unbefristet ist, lässt sich in der Regel dem Arbeitsvertrag entnehmen. Ein Arbeitsverhältnis, welches auf mehr als drei Monate befristet ist, gilt jedoch gemäss BPVG als unbefristet. Ist ein Arbeitsverhältnis auf weniger als drei Monate befristet und wird es über die Dauer von drei Monaten verlängert, so gilt es ab dem Zeitpunkt der Verlängerung ebenfalls als unbefristet.
+L502: 
+L503:   * #### Ich bin arbeitslos. Bin ich versichert?
+L504: Wird die versicherte Person arbeitslos, ist sie für die Risiken Tod und Invalidität obligatorisch in der beruflichen Vorsorge versichert. Die Prämien für diese Vorsorge werden hälftig von den arbeitslosen Personen und der Arbeitslosenkasse getragen. Für das Alter sind Sie jedoch nicht obligatorisch BPVG-versichert.gle Inhalt
+L505: 
+L506:   * #### Ich bin teilzeitbeschäftigt. Bin ich BPVG versichert?
+L507: Teilzeit Erwerbstätige sind obligatorisch in der betrieblichen Vorsorge versichert, wenn ein AHV-pflichtiges Jahreseinkommen von derzeit CHF 14 700 erreicht wird.
+L508: 
+L509:   * #### Ich arbeite für mehrere Arbeitgeber: Bin ich BPVG versichert?
+L510: Zunächst muss für jedes Einkommen geklärt werden, ob der Mindestjahreslohn von derzeit CHF 14 700 erreicht wird. Wenn ja, unterliegt dieser Lohn der BPVG-Versicherungspflicht. Wenn keiner der bezogenen Löhne CHF 14 700 Franken übersteigt, so kann sich der Arbeitnehmer bei der Vorsorgeeinrichtung, der einer seiner Arbeitgeber angeschlossen ist, freiwillig versichern lassen (sofern dies das Reglement der Vorsorgeeinrichtung zulässt).
+L511: In diesem Falle ist der entsprechende Arbeitgeber jedoch nicht verpflichtet, an die Kosten der Versicherung beizutragen. Ist eine Person für einen ihrer Löhne bereits bei einer Vorsorgeeinrichtung obligatorisch versichert, kann sie den zusätzlich bei den anderen Arbeitgebern erzielten Lohn bei dieser Vorsorgeeinrichtung versichern (falls das Reglement dies vorsieht).
+L512:   * #### Bei welcher Vorsorgeeinrichtung bin ich versichert?
+L513: 
+L514: Jeder Arbeitgeber, der beitrittspflichtige Arbeitnehmer beschäftigt, hat sich entweder bei der betriebseigenen Vorsorgeeinrichtung oder bei einer Sammeleinrichtung anzuschliessen. Fragen Sie Ihren Arbeitgeber; er wird Ihnen die Kontaktangaben der zuständigen Vorsorgeeinrichtung mitteilen.
+L515: 
+L516:   * #### Mein Arbeitgeber ist bei keiner Vorsorgeeinrichtung angeschlossen. Was kann ich tun?
+L517: Jeder Arbeitgeber, der beitrittspflichtige Arbeitnehmer beschäftigt, hat sich entweder bei der betriebseigenen Vorsorgeeinrichtung oder bei einer Sammeleinrichtung anzuschliessen. Informieren Sie die FMA, falls Ihr Arbeitgeber über keinen Anschluss verfügt. Sofern trotz Verpflichtung kein Anschluss an eine Vorsorgeeinrichtung vorliegt, wird die FMA den entsprechenden Arbeitgeber zwangsweise an eine Vorsorgeeinrichtung anschliessen.
+L518: 
+L519:   * #### Welches sind die gesetzlich vorgeschriebenen Minimalleistungen?
+L520: Das BPVG schreibt Minimalleistungen vor. Auf betrieblicher Ebene können weitergehende Lösungen beschlossen und in der Vorsorgeeinrichtung realisiert werden. So ist es durchaus möglich, dass der Mindestjahreslohn (Eintrittsschwelle) gesenkt oder aufgehoben und die obere Plafonierung heraufgesetzt werden kann. Die konkreten Leistungen ergeben sich aus dem jeweiligen Vorsorgereglement.
+L521: Die Altersvorsorge basiert auf einem individuellen Sparprozess. Dieser beginnt ab 19 Jahren und endet mit dem Erreichen des Rentenalters. Das auf dem individuellen Konto der Versicherten angesparte Altersguthaben dient der Finanzierung der Altersrente. Das vorhandene Kapital wird dabei mit einem im jeweiligen Reglement der Vorsorgeeinrichtung festgelegten Umrechnungsfaktor (sog. Umwandlungssatz) in eine jährliche Altersrente umgewandelt.
+L522: Anstelle der Rente kann die Vorsorgeeinrichtung eine Kapitalabfindung ausrichten. Die Möglichkeit einer Kapitalabfindung ist im Reglement der Vorsorgeeinrichtung geregelt.
+L523: Das Altersguthaben wird aus den jährlichen Altersgutschriften inklusive Zins gebildet. In Liechtenstein besteht kein gesetzlich definierter Mindestzins.
+L524: 
+L525: 
+L526: 
+L527: Bei Invalidität im Sinne der Invalidenversicherung richtet die Vorsorgeeinrichtung eine Invalidenrente sowie Invalidenkinderrenten aus. Nach Erreichen des Rentenalters wird die Invalidenrente in eine Altersrente umgewandelt.
+L528: Im Falle des Todes des versicherten Arbeitnehmers erhält der überlebende Ehegatte (Witwe oder Witwer bzw. eingetragener Partner) eine Hinterlassenenrente, wenn er für den Unterhalt mindestens eines Kindes aufkommen muss oder wenn er mindestens 45 Jahre alt ist und die Ehe fünf Jahre oder länger gedauert hat. Der überlebende Ehepartner, welcher keine dieser Voraussetzungen erfüllt, erhält eine einmalige Abfindung von drei Jahresrenten.
+L529: Bei Wiederverheiratung erlischt der Anspruch auf eine Hinterlassenenrente.
+L530:   * #### Wie hoch ist meine Altersrente?
+L531: 
+L532: Die Höhe der Altersrente ergibt sich aus dem vorhandenen Altersguthaben und dem im Reglement der jeweiligen Vorsorgeeinrichtung festgelegten Rentenumwandlungssatz.
+L533: 
+L534:   * #### Welche Auswirkungen auf das Altersguthaben hat die Umstellung auf eine Teilzeitbeschäftigung?
+L535: In der Regel: Die Vorsorgeleistungen reduzieren sich entsprechend. Zwar wird das Guthaben, das Sie bis zum Zeitpunkt der Änderung angespart haben, unverändert weitergeführt und verzinst. Allerdings reduziert sich mit dem Pensum meist auch der Lohn, was zu kleineren Beiträgen und somit zu verminderten Leistungen (bei Pensionierung, Invalidität oder Tod) führt.
+L536: Ausnahme: Die Reduktion der Leistungen kann leicht abgefedert werden, falls es das Reglement der Vorsorgeeinrichtung ermöglicht, den gesetzlich abzuziehenden Freibetrag für den obligatorischen Teil der betrieblichen Vorsorge dem Arbeitspensum anzupassen. Dadurch reduziert sich der versicherte Lohn weniger stark und die Leistungen nehmen prozentual weniger ab, da diese vom versicherten Lohn abhängen.
+L537: 
+L538:   * #### Wie hoch ist der anrechenbare Lohn bei der jeweiligen Vorsorgeeinrichtung?
+L539: Das Reglement der Vorsorgeeinrichtung kann den massgebenden Jahreslohn nach oben begrenzen, wobei diese Grenze nicht niedriger sein darf als derzeit CHF 88 200 (dreifacher Jahresbetrag der maximalen Altersrente der Alters- und Hinterlassenenversicherung). Der Betrag entspricht dem in der betrieblichen Vorsorge anrechenbaren Lohn.
+L540: 
+L541:   * #### Was ist eine Freizügigkeitsleistung?
+L542: Verlässt ein Arbeitnehmer vor dem Eintritt eines Vorsorgefalles (Alter, Tod oder Invalidität) die Vorsorgeeinrichtung, hat er Anspruch auf die Austrittsleistung. Diese entspricht dem vorhandenen Altersguthaben samt den darauf erzielten Zinsen sowie eine gegebenenfalls vom Arbeitnehmer persönlich geleistete Kapitaleinlage. Beim Stellenwechsel überweist die bisherige Vorsorgeeinrichtung die Austrittsleistung an die Vorsorgeeinrichtung des neuen Arbeitgebers.
+L543: Sofern kein neues Arbeitsverhältnis besteht, ist die Austrittsleistung auf eine Freizügigkeitseinrichtung zu überweisen. Der Arbeitnehmer hat die Wahl zwischen einem auf seinen Namen lautenden Freizügigkeits- bzw. Sperrkonto bei einer liechtensteinischen Bank oder einer zu seinen Gunsten errichteten Freizügigkeitspolice bei einer liechtensteinischen Versicherungsgesellschaft.
+L544:   * #### Kann ich mein BPVG-Altersguthaben bar beziehen, wenn ich den Wirtschaftsraum Liechtenstein/Schweiz endgültig verlasse?
+L545: Eine Barauszahlung des BPVG-Vorsorgeguthabens ist möglich, wenn die Person nachweisen kann, dass sie den Wirtschaftsraum Liechtenstein/Schweiz endgültig verlässt.
+L546: Bei einer Ausreise in ein EU-Land (Belgien, Dänemark, Deutschland, Estland, Finnland, Frankreich, Griechenland, Irland, Italien, Lettland, Litauen, Luxemburg, Malta, Niederlande, Österreich, Polen, Portugal, Schweden, Slowakei, Slowenien, Spanien, Tschechien, Ungarn, Vereinigtes Königreich, Zypern) oder nach Island oder Norwegen ist eine Barauszahlung des BPVG-Vorsorgeguthabens nicht möglich, wenn die Person in diesem Land weiterhin obligatorisch gegen die Risiken Alter, Tod und Invalidität versichert ist.
+L547: 
+L548: 
+L549: Wenn die Person in einen Drittstaat zieht (nicht EWR oder Schweiz), ist kein Nachweis betreffend Sozialversicherungspflicht erforderlich.
+L550: 
+L551:   * #### Wie muss ich vorgehen, wenn ich den Wirtschaftsraum Liechtenstein/Schweiz verlasse und mein Vorsorgeguthaben bar beziehen möchte?
+L552: Planen Sie Liechtenstein endgültig zu verlassen bzw. Ihre Arbeitstätigkeit in Liechtenstein definitiv aufzugeben und dabei Ihr Guthaben aus der beruflichen Vorsorge bar zu beziehen, so benötigt Ihre Vorsorgeeinrichtung bzw. die FMA im Falle einer Ausreise in einen EWR-Staat (EU plus Island und Norwegen) für die Barauszahlung eine Bestätigung, dass Sie in jenem Land nicht obligatorisch für Alter, Invalidität und Hinterlassenenleistungen versichert sind.
+L553: Um eine solche Bestätigung zu erlangen, können Sie im Falle der Ausreise nach Deutschland, Österreich oder Spanien bei der FMA mittels eines Formulars eine Anfrage für die Abklärung der Sozialversicherungspflicht einreichen.
+L554: 
+L555: 
+L556: Sind Sie in keinem EWR-Staat oder der Schweiz obligatorisch rentenversichert, kann, soweit alle Voraussetzungen für eine Barauszahlung erfüllt sind, Ihre Freizügigkeitsleistung bar ausbezahlt werden. Für die Prüfung der Voraussetzungen der Barauszahlung ist Ihre Vorsorgeeinrichtung zuständig sofern sich Ihr Vorsorgeguthaben noch bei der Vorsorgeeinrichtung befindet. Befindet sich Ihr Vorsorgeguthaben bei einer liechtensteinischen Bank ist die FMA zuständig.
+L557: Sind Sie in einem EWR-Staat obligatorisch rentenversichert, ist eine Barauszahlung ihrer Freizügigkeitsleistung vorerst nicht möglich.
+L558: 
+L559: 
+L560: 
+L561: Sobald Sie das ordentliche Rücktrittsalter erreichen, können Sie Ihr gesperrtes Guthaben aus der beruflichen Vorsorge (inkl. Zins) bar beziehen.
+L562: 
+L563:   * #### Muss ich die Abklärung der Sozialversicherungspflicht selber vornehmen?
+L564: Die FMA hat mit den Sozialversicherungsbehörden Österreichs, Spaniens und Deutschlands Vereinbarungen über die Zusammenarbeit bei der Abklärung der Sozialversicherungspflicht abgeschlossen. Verlässt eine Person den Wirtschaftsraum Liechtenstein/Schweiz endgültig, kann sie bei der FMA ein Antragsformular für die Abklärung der Sozialversicherungspflicht in den genannten Staaten beziehen. Dieses Formular ist vollständig auszufüllen und der FMA wieder zu retournieren.
+L565: Die erhobenen Personendaten werden anschliessend von der FMA der zuständigen Sozialversicherungsbehörde übermittelt, welche prüft, ob die Person der obligatorischen Sozialversicherung unterstellt ist.
+L566: 
+L567: 
+L568: Reist die Person definitiv in ein EWR-Land aus, mit welchem bisher keine Vereinbarung über die Zusammenarbeit abgeschlossen wurde, hat sie selbst Kontakt mit den dort zuständigen Sozialversicherungsbehörden aufzunehmen und eine Bestätigung über die Versicherungspflicht bei der betroffenen liechtensteinischen Einrichtung oder der FMA einzureichen. Detailliertere Informationen können Sie der Wegleitung „Abklärung der Sozialversicherungspflicht in EWR-Staaten entnehmen“.
+L569:   * #### Kann ich mein BPVG-Altersguthaben beziehen, um mich selbständig zu machen?
+L570: Eine Barauszahlung der Freizügigkeitsleistung ist möglich, wenn die Person eine selbständige Erwerbstätigkeit aufnimmt und nicht mehr der obligatorischen betrieblichen Vorsorge untersteht. Die Person muss den Nachweis erbringen, dass sie eine selbständige Erwerbstätigkeit aufnimmt bzw. aufgenommen hat (die einzureichenden Unterlagen sind auf dem Antragsformular aufgeführt). Die Barauszahlung kann der Selbständigerwerbende im Zeitpunkt der Aufnahme der selbständigen Erwerbstätigkeit bzw.
+L571: innerhalb von längstens einem Jahr nach Aufnahme der selbständigen Erwerbstätigkeit verlangen.
+L572:   * #### Kann ich mein BPVG-Altersguthaben beziehen um Wohneigentum zu erwerben?
+L573: 
+L574: Eine Barauszahlung der Austrittsleistung für die Wohneigentumsförderung ist in Liechtenstein gesetzlich nicht vorgesehen.
+L575: 
+L576:   * #### Kann ich das Altersguthaben auf dem Pensionskassen- Sperrkonto aus den gleichen Gründen bar beziehen wie bei der Vorsorgeeinrichtung?
+L577: Es gelten bezüglich der Freigabe der Freizügigkeitsleistung die gleichen gesetzlichen Voraussetzungen. Befindet sich die Freizügigkeitsleistung auf einem Sperrkonto einer liechtensteinischen Bank, prüft die FMA die Freigabe des Pensionskassen-Sperrkontos.
+L578: 
+L579:   * #### Was ist der Sicherheitsfonds und was für Aufgaben erfüllt er?
+L580: Gestützt auf eine Vereinbarung zwischen Liechtenstein und der Schweiz stellt der Sicherheitsfonds der Schweiz seit dem Jahr 2007 die gesetzlichen und reglementarischen Leistungen von zahlungsunfähig gewordenen Vorsorgeeinrichtungen mit Sitz in Liechtenstein sicher und nimmt Aufgaben im Bereich der Zentralstelle 2. Säule wahr.
+L581: 
+L582:   * #### Ich weiss nicht, wo sich mein BPVG-Altersguthaben befindet: An wen kann ich mich wenden?
+L583: Informationen über vergessene Guthaben erteilt der Sicherheitsfonds der Schweiz, welcher als Zentralstelle für die 2. Säule fungiert. Zu diesem Zweck sind die Vorsorgeeinrichtungen sowie Freizügigkeitseinrichtungen verpflichtet, der Zentralstelle 2. Säule jährlich vergessene Guthaben zu melden.
+L584: 
+L585:   Keine Dateien Datei Dateien
+L586: ### Downloads
+L587: 
+L588: Kontakt
+L589: 
+L590: Finanzmarktaufsicht Liechtenstein
+L591: 
+L592: Landstrasse 109, Postfach 279
+L593: 
+L594: 9490 Vaduz, Liechtenstein
+L595: 
+L596: 
+L597: 
+L598: T. +423 236 73 73
+L599: 
+L600: M. info@fma-li.li
+L601: 
+L602: 
+L603: 
+L604: Öffnungszeiten
+L605: 
+L606: Montag - Freitag
+L607: 
+L608: 08.00 – 12.00 Uhr
+L609: 
+L610: 13.30 – 17.00 Uhr
+L611: 
+L612: 
+L613: 
+L614: An 【274†folgenden Tagen】
+L615: 
+L616: bleibt die FMA geschlossen
+L617: 
+L618: ##### Kontakt
+L619: 
+L620: Finanzmarktaufsicht Liechtenstein
+L621: 
+L622: Landstrasse 109, Postfach 279
+L623: 
+L624: 9490 Vaduz, Liechtenstein
+L625: 
+L626: 
+L627: 
+L628: T. +423 236 73 73
+L629: 
+L630: M. info@fma-li.li
+L631: ##### Öffnungszeiten
+L632: 
+L633: Montag - Freitag
+L634: 
+L635: 08.00 – 12.00 Uhr
+L636: 
+L637: 13.30 – 17.00 Uhr
+L638: 
+L639: 
+L640: 
+L641: An 【274†folgenden Tagen】
+L642: 
+L643: bleibt die FMA geschlossen
+L644: 
+L645:   * 【289†Impressum】
+L646:   * 【277†Datenschutz】
+L647:   * 【290†Rechtshinweis】
+L648: 
+L649: 【265†Jobs & Karriere†karriere.fma-li.li】 【248†Meldung erstatten】
+L650: 
+L651: Suche
+L652: 
+L653: [Input: Suche nach ..] [Button: ] [Button: ]
+L654: 
+L655: [Button: Alle ]

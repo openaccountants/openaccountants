@@ -1,0 +1,271 @@
+Country by Country - XML Upload (Schemaversion 2.0) - Schritt 1 von 5 (https://formulare.llv.li/formserver_CBC/start.do?generalid=STV_CBC_MM)
+citeturn2901view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"turn2900view0","lineno":null}); Total lines: 115
+L0: ## Sprunglinks
+L1: 
+L2:   * 【0†Zum Formularnavigator springen】
+L3:   * 【1†Zum Inhalt springen (Accesskey 0)】
+L4:   * 【2†Zur Formularnavigation am Ende des Formulars springen】
+L5: 
+L6: 【3†Image: Liechtensteinische Landesverwaltung】
+L7: 
+L8: ### Formularanbieter
+L9: 
+L10: E-Government
+L11: 
+L12: ### Adressat
+L13: 
+L14: Steuerverwaltung
+L15: Postfach 684
+L16: 9490 Vaduz
+L17: Liechtenstein
+L18: 
+L19: # Country by Country - XML Upload (Schemaversion 2.0)
+L20: 
+L21: ## Einleitungstext
+L22: 
+L23: [Input]
+L24: 
+L25: ## Fortschrittanzeige
+L26: 
+L27: [Input]
+L28: 
+L29: Login
+L30: ### Login
+L31: 
+L32: CbC-Meldestellennummer* (Das Feld CbC-Meldestellennummer muss ausgefüllt sein)
+L33: 
+L34: [Input]
+L35: 
+L36: 【4†i】
+L37: 
+L38: Information
+L39: 
+L40: AIA-Meldestellennummer erstellt und ausgegeben von der STV im Zuge der Registrierung.
+L41: 
+L42: PEID der Meldestelle* (Das Feld PEID der Meldestelle muss ausgefüllt sein)
+L43: 
+L44: [Input]
+L45: 
+L46: 【4†i】
+L47: 
+L48: Information
+L49: 
+L50: PEID der Meldestelle. Entspricht der Handelsregisternummer.
+L51: 
+L52: PIN der Meldestelle* (Das Feld PIN der Meldestelle muss ausgefüllt sein)
+L53: 
+L54: [Input]
+L55: 
+L56: 【4†i】
+L57: 
+L58: Information
+L59: PIN erstellt und ausgegeben von der STV im Zuge der Registrierung.
+L60: ## Navigationselemente
+L61: 
+L62: [Input][Input][Input][Input][Input]
+L63: 
+L64: CBC_Massenmeldung_V1_0_Login.block_STV_CBC_EM_Login_V1_0_meldestellen_nr
+L65: ## Formularkennung
+L66: 
+L67: 【5†AFS†www.aforms.com】 - STV_CBC_MM
+L68: 
+L69: Möchten Sie die Daten in dem Formular speichern?
+L70: 
+L71: Bitte wählen Sie die Datei aus, die Sie laden möchten.
+L72: 
+L73: Datei
+L74: 
+L75: [Input]
+L76: 
+L77: Bitte eine Datei auswählen!
+L78: 
+L79: Sie haben die Bearbeitung des Formulars noch vor der Fertigstellung abgebrochen. Das Formular wurde nicht abgesendet.
+L80: 
+L81: [Button: Eingaben speichern]
+L82: 
+L83: Speichern Sie Ihre bisherigen Angaben für eine spätere Bearbeitung.
+L84: 
+L85: [Button: Formular beenden]
+L86: Bei einem Sprachenwechsel können eingegebene Daten dieser Seite verloren gehen. Wollen Sie trotzdem fortfahren?
+L87: 
+L88: Bei einem Sprachenwechsel können eingegebene Daten dieser Seite verloren gehen. Wollen Sie trotzdem fortfahren?
+L89: ## Formularkennung
+L90: 
+L91: Steuerverwaltung
+L92: 
+L93: * * *
+L94: 
+L95: Aeulestrasse 38
+L96: Postfach 684
+L97: 9490 Vaduz
+L98: 
+L99: Kontakt
+L100: 
+L101: * * *
+L102: 
+L103: Tel: +423 236 68 17
+L104: info.stv@llv.li
+L105: 【6†https://www.llv.li†www.llv.li】
+L106: Feedback senden (telefonzentrale@llv.li)
+L107: 
+L108: 【7†Impressum†www.llv.li】
+L109: 
+L110: 【8†Datenschutzerklärung†www.llv.li】
+L111: 
+L112: 【9†Rechtshinweise†www.llv.li】
+L113: 
+L114: © 2022 Liechtensteinische Landesverwaltung
+--------------------------------------------------------------------------------
+20200701_STV_Zusatzspezifikation CbC Schema v2.0_veröffentlicht (https://www.llv.li/serviceportal2/amtsstellen/steuerverwaltung/int_cbc_xml_zusatzspezifikation.pdf)
+citeturn2901view1 [wordlim: 200] Crawled: 2 weeks ago; Content type: application/pdf; Number of pages: 6; Source: open({"ref_id":"turn2900view1","lineno":null}); Total lines: 151
+L0@P0: 1/6
+L1@P0: STEUERVERWALTUNG
+L2@P0: FÜRSTENTUM LIECHTENSTEIN
+L3@P0: STV - Zusatzspezifikation CbC XML Schema v2.0
+L4@P0: Datum 01.07.2020 ersetzt die Version vom 16.04.18
+L5@P0: Inhaltsverzeichnis
+L6@P0: 1 Einleitung ____________________________________________________________ 3
+L7@P0: 1.1 Zweck _________________________________________________________________ 3
+L8@P0: 2 XML Meldung an die STV ________________________________________________ 3
+L9@P0: 2.1 XSD Schema Files ________________________________________________________ 3
+L10@P0: 2.2 CbC User Guide _________________________________________________________ 3
+L11@P0: 2.3 MessageSpec ___________________________________________________________ 3
+L12@P0: 2.3.1 ReceivingCountry _____________________________________________ 3
+L13@P0: 2.3.2 MessageRefID ________________________________________________ 4
+L14@P0: 2.4 DocSpec _______________________________________________________________ 4
+L15@P0: 2.4.1 DocRefID ____________________________________________________ 4
+L16@P0: 2.4.2 DocTypeIndic _________________________________________________ 5
+L17@P0: 2.5 TIN & IN _______________________________________________________________ 5
+L18@P0: 2.6 Spezialzeichen __________________________________________________________ 6
+L19@P0-1: 2.7 Hinweise zur XML Schema Version v2.0 ______________________________________ 6 2/6
+L20@P1: Referenzierte Dokumente
+L21@P1: [REFERENZ] Beschreibung Version
+L22@P1: https://www.oecd.org/tax/country-by-countryreporting-xml-schema-user-guide-for-taxadministrations.htmHomepage OECD:
+L23@P1: XML User Guide CbC
+L24@P1: v2.0
+L25@P1: (June 2019)
+L26@P1: https://www.oecd.org/tax/country-by-countryreporting-xml-schema-user-guide-for-taxadministrations.htmHomepage OECD:
+L27@P1: XML Schema CbC
+L28@P1: v2.0
+L29@P1: http://www.llv.li/#/117658/cbc-reporting Homepage STV:
+L30@P1: XML
+L31@P1: Zusatzspezifikation
+L32@P1: CbC der STV
+L33@P1: 02.07.2020
+L34@P1: Terminologie und Abkürzungen
+L35@P1: Begriff / Kürzel Erklärung
+L36@P1: CbC Country-by-Country (Reporting)
+L37@P1: CRS Common Reporting Standard
+L38@P1: STV Steuerverwaltung
+L39@P1: AI Amt für Informatik
+L40@P1: PIN persönliche Identifikationsnummer
+L41@P1: MNR Meldestellennummer
+L42@P1-2: FI Financial Institution3/6
+L43@P2: 1 Einleitung
+L44@P2: 1.1 Zweck
+L45@P2: Dieses Dokument enthält Zusatzspezifikationen in Bezug auf das Country-by-Country
+L46@P2: Reporting (CbC) in Liechtenstein. Diese Zusatzspezifikationen sind für liechtensteinische
+L47@P2: Finanzinstitute zwingend einzuhalten und umzusetzen. Sämtliche CbC-Meldungen die an
+L48@P2: die Steuerverwaltung ab November 2020 übermittelt werden, müssen ausnahmslos mit
+L49@P2: der XML-Schema-Version 2.0 übermittelt werden.
+L50@P2: 2 XML Meldung an die STV
+L51@P2: 2.1 XSD Schema Files
+L52@P2: Die Meldungen sind jeweils entsprechend der aktuellen Version der XSD Schema-Files zu
+L53@P2: erstellen. Diese können über die Homepage der STV oder über die Homepage der OECD
+L54@P2: heruntergeladen werden.
+L55@P2: Weiters gilt folgendes unbedingt zu beachten:
+L56@P2: • Die Namespaces sind gemäss dem Schema-File einzuhalten
+L57@P2: • Das XML File ist UTF-8 konform (Header)
+L58@P2: • Die Location des Schemafiles muss wie folgt im XML angegeben werden:
+L59@P2: xsi:schemaLocation="urn:oecd:ties:cbc:v2 CbcXML_v2.0.xsd"
+L60@P2: 2.2 CbC User Guide
+L61@P2: Der jeweils aktuelle CbC-User Guide der OECD sowie diese Zusatzspezifikation sind einzuhalten.
+L62@P2: Diese können über die Homepage der STV heruntergeladen werden:
+L63@P2: www.stv.llv.li  Internationales Steuerrecht  CbC-Reporting
+L64@P2: 2.3 MessageSpec
+L65@P2: 2.3.1 ReceivingCountry
+L66@P2: Das Feld ReceivingCountry wird mit dem Wert (2-stelliger ISO Code) des endgültigen
+L67@P2: Empfängerlandes befüllt, z.B. „DE“ für Deutschland.
+L68@P2: Das Feld „Receiving Country“ kann pro CbC-Report und somit pro XML einmal oder
+L69@P2-3: mehrfach vorkommen (1..∞). 4/6
+L70@P3: 2.3.2 MessageRefID
+L71@P3: [ABSENDERLAND][JAHR]-[MELDESTELLENNUMMER].[AUFSTEIGENDENUMMER3STELLIG]
+L72@P3: Beispiel: LI2018-12345.123
+L73@P3: Nach der Jahresangabe ist ein Minus als Trennzeichen zu setzen.
+L74@P3: Name Wert Bemerkung
+L75@P3: ABSENDERLAND LI TransmittingCountry
+L76@P3: JAHR XXXX ReportingPeriod
+L77@P3: MELDESTELLENNUMMER XXXXX CbC-Meldestellennummer der
+L78@P3: Registrierung (5-stellig)
+L79@P3: AUFSTEIGENDENUMMER3STELLIG XXX aufsteigend
+L80@P3: Message-Ref-ID's dürfen keine Spezialzeichen (gemäss Kapitel 2.6) und keine Leerzeichen
+L81@P3: enthalten. Jede Message-Ref-ID muss immer eindeutig sein und kann nur 1x verwendet
+L82@P3: werden.
+L83@P3: 2.4 DocSpec
+L84@P3: 2.4.1 DocRefID
+L85@P3: [ABSENDERLAND][JAHR]-[MELDESTELLENNUMMER].[GUID]
+L86@P3: Beispiel: LI2018-12345.1a2gltr984uff
+L87@P3: Nach der Jahresangabe ist ein Minus als Trennzeichen zu setzen.
+L88@P3: Name Wert Bemerkung
+L89@P3: ABSENDERLAND LI TransmittingCountry
+L90@P3: JAHR XXXX ReportingPeriod
+L91@P3: MELDESTELLENNUMMER XXXXX Meldestellennummer der
+L92@P3: Registrierung, 5-stellig
+L93@P3: GUID 1-20 Zeichen Zeichenanzahl für die
+L94@P3: Eindeutigkeit
+L95@P3: Doc Ref ID's dürfen keine Spezialzeichen (gemäss Kapitel 2.6) und keine Leerzeichen
+L96@P3: enthalten. Jede Doc-Ref-ID muss immer eindeutig sein und kann nur 1x verwendet
+L97@P3-4: werden. 5/6
+L98@P4: 2.4.2 DocTypeIndic
+L99@P4: Der "DocTypeIndic" darf pro Meldung nur einmalig verwendet werden. Dies bedeutet, ein
+L100@P4: "OECD 1" (New Data) Report darf nur neue Daten enthalten. Dasselbe gilt analog für alle
+L101@P4: anderen „DocTypeIndic“ Werte. Pro Meldung kann nur 1 „DocTypeIndic“ Wert
+L102@P4: vorkommen, ausgenommen der Wert „OECD0“ auf Ebene ReportingFI.
+L103@P4: Zu Testzwecken können Meldungen mit den "DocTypeIndic" Werten OECD10, OECD11,
+L104@P4: OECD12, und OECD13 übermittelt werden. Allfällige Testmeldungen werden von der STV
+L105@P4: nicht ins Ausland übermittelt. Sie werden spätestens am Ende des laufenden Jahres
+L106@P4: jeweils gelöscht.
+L107@P4: Folgende Werte sind möglich:
+L108@P4: • OECD0 Resend Option (nur für Ebene: ReportingFI)
+L109@P4: • OECD1 New Data
+L110@P4: • OECD2 Corrected Data
+L111@P4: • OECD3 Deletion of Data
+L112@P4: • OECD10 TEST Resend Option (nur für Ebene: ReportingFI)
+L113@P4: • OECD11 New TEST Data
+L114@P4: • OECD12 Corrected TEST Data
+L115@P4: • OECD13 Deletion of TEST Data
+L116@P4: 2.5 TIN & IN
+L117@P4: Als liechtensteinische TIN (Tax Identification Number) bzw. als liechtensteinische IN
+L118@P4: (Identification Number) ist die liechtensteinische PEID Nummer zu verwenden. Die PEID
+L119@P4: Nummer ist die Kurzform der liechtensteinischen HR-Nummer.
+L120@P4: Aufbau HR-Nr.
+L121@P4: FL - |0001.234.567 | -8
+L122@P4: Fix PEID Prüfziffer
+L123@P4: Die PEID Nummer ist ohne Trennzeichen zu erfassen!
+L124@P4-5: Beispiel: 1234567 6/6
+L125@P5: 2.6 Spezialzeichen
+L126@P5: Die folgenden fünf Spezial- bzw. Sonderzeichen (siehe Spalte “Character”) dürfen nicht in
+L127@P5: der XML Datei geliefert werden. Sie sind in abgeänderter Form zu übermitteln (siehe
+L128@P5: Spalte “Entity Reference”).
+L129@P5: Character Description Entity Reference
+L130@P5: & Ampersand &amp;
+L131@P5: < Less Than &lt;
+L132@P5: > Greater Than &gt;
+L133@P5: ' Apostrophe &apos;
+L134@P5: " Quotation Mark &quot;
+L135@P5: Die folgenden drei Zeichenpaare sind nicht erlaubt bzw. nicht möglich. XML Dateien,
+L136@P5: welche eines dieser Zeichenpaare enthalten, werden nicht angenommen. Sie können
+L137@P5: nicht an die STV übermittelt werden.
+L138@P5: Character Description Entity Reference
+L139@P5: -- Double Dash N/A
+L140@P5: /* Slash Asterisk N/A
+L141@P5: &# Ampersand Hash N/A
+L142@P5: 2.7 Hinweise zur XML Schema Version v2.0
+L143@P5: Die neue XML Schema Version v2.0 bringt ua. folgende Anpassungen:
+L144@P5: Element v1.0 v2.0
+L145@P5: Schemalocation/Header v1.0 v2.0
+L146@P5: MessageTypeIndic optional mandatory
+L147@P5: Timestamp n.a. with milliseconds
+L148@P5: ReportingEntity
+L149@P5: Start/End Date
+L150@P5: n.a. validation
