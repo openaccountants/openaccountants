@@ -1,7 +1,7 @@
 ---
 name: nz-gst-return
 description: Use this skill whenever asked about New Zealand GST returns, or to prepare, review, or classify transactions for a New Zealand GST return (GST101A form), for a self-employed individual or small business. Trigger on phrases like "prepare GST return", "do the GST", "fill in GST101A", "create the return", "New Zealand GST", "NZ GST", "GST return", "GST101A", "GST rate NZ", "input tax", "output tax", "zero-rated", "GST registration", "taxable supply", "IRD GST", "myIR GST", or any question about GST filing for sole traders in New Zealand. Also trigger when classifying transactions for GST purposes from bank statements, invoices, or other source data. Covers the 15% standard rate, zero-rated and exempt supplies, $60K registration threshold, invoice and payments basis, and GST101A return preparation. ALWAYS read this skill before touching any NZ GST work.
-version: 2.1
+version: 2.2
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-10-31
@@ -56,9 +56,9 @@ Figures are for tax year 2026, meaning the New Zealand 2026-27 income year from 
 | What | Value | Note | Source |
 | --- | --- | --- | --- |
 | Standard rate | 15% | The only positive rate. There are no reduced rates. | https://www.ird.govt.nz/gst/what-gst-is |
-| Zero rate | 0% | "Zero-rated supplies are supplies that have GST charged at 0% where certain requirements are met." | https://www.ird.govt.nz/gst/what-gst-is |
-| GST inside a GST-inclusive price | 3/23 | IRD example: $115 including GST contains $15 GST. | https://www.ird.govt.nz/gst/what-gst-is |
-| GST to add to a GST-exclusive price | 15% | IRD example: $100 plus GST is $115. | https://www.ird.govt.nz/gst/what-gst-is |
+| Zero rate | 0% | "Zero-rated supplies are supplies that have GST charged at 0% where certain requirements are met." | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
+| GST inside a GST-inclusive price | 3/23 | IRD example: $115 including GST contains $15 GST. | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf |
+| GST to add to a GST-exclusive price | 15% | IRD example: $100 plus GST is $115. | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf |
 
 ### Registration ([Registering for GST](https://www.ird.govt.nz/gst/registering-for-gst); [IR375](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf); [IS 25/21](https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/interpretation-statements/2025/is-25-21.pdf?modified=20251023203446))
 
@@ -127,9 +127,9 @@ GST can be claimed only to the extent goods and services are used to make taxabl
 | GST-exclusive cost | Method | Adjustment periods | Source |
 | --- | --- | --- | --- |
 | $10,000 or less | Principal purpose (all the GST if the main purpose is taxable use, none if not) or apportionment | None | https://www.ird.govt.nz/gst/claiming-gst |
-| $10,001 to $20,000 | Apportionment | 2 | https://www.ird.govt.nz/gst/claiming-gst |
-| $20,001 to $500,000 | Apportionment | 5 | https://www.ird.govt.nz/gst/claiming-gst |
-| Over $500,000, or land of any value | Apportionment | 10 | https://www.ird.govt.nz/gst/claiming-gst |
+| $10,001 to $20,000 | Apportionment | 2 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf |
+| $20,001 to $500,000 | Apportionment | 5 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf |
+| Over $500,000, or land of any value | Apportionment | 10 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir375/ir375.pdf |
 
 - **Apportionment lock-in.** A person who chooses apportionment for a purchase of $10,000 or less must use it for all such purchases for a minimum of 24 months (IR375).
 - **Adjustment periods.** The first runs from acquisition to the end of the current income year, or to the end of the income year at least 12 months after acquisition (the person chooses). Each later period is an income year. At the end of each, compare actual taxable use with the use already claimed. The adjustment goes in the first return after balance date.
@@ -179,7 +179,7 @@ From 1 April 2024, an online marketplace must collect and pay GST on **listed se
 | What | Value | Source |
 | --- | --- | --- |
 | Overseas supplier must register when supplies to NZ customers were more than, or are expected to be more than | $60,000 | https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-remote-services-into-new-zealand |
-| Low value good (physical good, excluding GST) | NZ$1,000 or less | https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-remote-services-into-new-zealand |
+| Low value good (physical good, excluding GST) | NZ$1,000 or less | https://www.ird.govt.nz/gst/gst-for-overseas-businesses/supplying-low-value-imported-goods |
 
 - **Remote services** (digital content, apps, software, legal, accounting or consultancy services) supplied by an overseas business to NZ-resident consumers: the supplier, or a marketplace such as an app store, registers above the line, charges GST and files quarterly.
 - **Business customers.** No registration is needed if the supplier supplies only GST-registered NZ businesses for business use. It treats a customer as unregistered unless the customer says it is registered or gives a GST number or NZBN, so a registered business should give its GST number.
@@ -192,12 +192,12 @@ From 1 April 2024, an online marketplace must collect and pay GST on **listed se
 | --- | --- | --- |
 | Late filing, payments basis (basis when the return is due) | $50 | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
 | Late filing, invoice or hybrid basis | $250 | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| Late payment, day after the due date | 1% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| Late payment, 7th day after the due date, on remaining tax including penalties | 4% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| Monthly late payment penalty | Does not apply to GST | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| Interest IRD charges on underpaid tax, from 16 January 2026 | 8.97% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| Interest IRD pays on overpaid tax, from 16 January 2026 | 2.25% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
-| No interest on amounts under | $100 | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-filing-penalties |
+| Late payment, day after the due date | 1% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties |
+| Late payment, 7th day after the due date, on remaining tax including penalties | 4% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties |
+| Monthly late payment penalty | Does not apply to GST | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/penalties-and-debt/late-payment-penalties |
+| Interest IRD charges on underpaid tax, from 16 January 2026 | 8.97% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments |
+| Interest IRD pays on overpaid tax, from 16 January 2026 | 2.25% | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments |
+| No interest on amounts under | $100 | https://www.ird.govt.nz/managing-my-tax/penalties-and-interest/interest-on-overpayments-and-underpayments |
 
 - **First late payment.** If it is the first late payment in a 2-year period, IRD may give a grace period before charging penalties.
 - **Late filing penalty due date.** It is usually due on the 28th of the month after the return was due. A penalty that would fall due on 28 December is due 15 January, and one that would fall due on 28 May is due 7 June.
@@ -235,21 +235,21 @@ On a paper return, read and sign the declaration (IR375).
 | Sale of a going concern | Zero-rated | Registered seller to registered buyer; the whole or a stand-alone part of the activity; all goods and services needed to keep it running; both parties agree in writing that it is a going concern and intend the buyer can carry it on; the business is operating up to transfer | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
 | Land between registered persons | Compulsorily zero-rated | Buyer registered, buying for taxable supplies, not as a home for the buyer or a relative, at settlement. Refer | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
 | Listed services sold through a GST-registered online marketplace, registered seller | Zero-rated | See the marketplace section | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Financial services (interest, loans, bank fees, shares, currency exchange) | Exempt | Zero-rating election for some business-to-business supplies: refer | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Renting a residential dwelling | Exempt | No GST claim on the dwelling's costs. Commercial dwellings (hotels, motels, boarding houses) are taxable | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Residential accommodation under a head lease | Exempt | If the property is for the principal purpose of residential accommodation. Taxable only if all three apply: the parties agree the exemption does not apply, the lease was entered into before 16 May 2000, and earlier supplies were treated as taxable | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Sale of a dwelling rented for at least 5 years | Exempt | If sold as part of a taxable activity | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Sale of a registered person's private assets | Generally not taxable; not in the return | Unless the asset was used in the taxable activity | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Penalty interest on overdue accounts | Exempt | Statutory fines and parking penalties are outside GST | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Donated goods sold by a non-profit | Exempt | Refer | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Secondhand goods from an unregistered seller | Credit may be claimed | Must pay before claiming, on any basis. Keep the secondhand goods TSI record. Not secondhand goods: new goods, unused primary produce, leased or rented goods, livestock, fine metal. Purchases from associated persons: refer. Box: the previous version of this skill claimed it with purchases in Box 11; IRD's pages read for this skill do not name the box (check) | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Exporting secondhand goods on which a credit was claimed | Debit adjustment of 3/23 of the full purchase price | Zero-rating also needs the goods entered for export, export within 28 days and a no-reimport declaration | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| GST paid to Customs on imported goods | Credit adjustment (Box 13), not Box 11 | Claimable in full if the goods are used solely to make taxable supplies ([Claiming GST](https://www.ird.govt.nz/gst/claiming-gst)); apportion otherwise. Invoice basis: earlier of invoice or payment. Payments or hybrid basis: when paid | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Imported services, taxable use under 95% | Reverse charge: return 15% GST on the price | Applies where intended or actual taxable use is less than 95%. Can also push turnover past $60,000 | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Supplies to an associated person who cannot claim | GST on the greater of market value and the price | | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Bad debt written off (GST already returned) | Credit adjustment of 3/23 of the amount written off | Keep a record of recovery steps. Payments basis: no claim, except hire purchase and door-to-door sales. Partly-taxed supplies use (written off / total consideration) x GST included | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Bad debt recovered | Debit adjustment of 3/23 of the amount recovered | | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
-| Insurance payout relating to the taxable activity | Debit adjustment for the GST content | | https://www.ird.govt.nz/gst/charging-gst/zero-rated-supplies |
+| Financial services (interest, loans, bank fees, shares, currency exchange) | Exempt | Zero-rating election for some business-to-business supplies: refer | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Renting a residential dwelling | Exempt | No GST claim on the dwelling's costs. Commercial dwellings (hotels, motels, boarding houses) are taxable | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Residential accommodation under a head lease | Exempt | If the property is for the principal purpose of residential accommodation. Taxable only if all three apply: the parties agree the exemption does not apply, the lease was entered into before 16 May 2000, and earlier supplies were treated as taxable | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Sale of a dwelling rented for at least 5 years | Exempt | If sold as part of a taxable activity | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Sale of a registered person's private assets | Generally not taxable; not in the return | Unless the asset was used in the taxable activity | https://www.ird.govt.nz/gst/charging-gst/special-supplies |
+| Penalty interest on overdue accounts | Exempt | Statutory fines and parking penalties are outside GST | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Donated goods sold by a non-profit | Exempt | Refer | https://www.ird.govt.nz/gst/charging-gst/exempt-supplies |
+| Secondhand goods from an unregistered seller | Credit may be claimed | Must pay before claiming, on any basis. Keep the secondhand goods TSI record. Not secondhand goods: new goods, unused primary produce, leased or rented goods, livestock, fine metal. Purchases from associated persons: refer. Box: the previous version of this skill claimed it with purchases in Box 11; IRD's pages read for this skill do not name the box (check) | https://www.ird.govt.nz/gst/charging-gst/special-supplies |
+| Exporting secondhand goods on which a credit was claimed | Debit adjustment of 3/23 of the full purchase price | Zero-rating also needs the goods entered for export, export within 28 days and a no-reimport declaration | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments |
+| GST paid to Customs on imported goods | Credit adjustment (Box 13), not Box 11 | Claimable in full if the goods are used solely to make taxable supplies ([Claiming GST](https://www.ird.govt.nz/gst/claiming-gst)); apportion otherwise. Invoice basis: earlier of invoice or payment. Payments or hybrid basis: when paid | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-credit-adjustments |
+| Imported services, taxable use under 95% | Reverse charge: return 15% GST on the price | Applies where intended or actual taxable use is less than 95%. Can also push turnover past $60,000 | https://www.ird.govt.nz/gst/charging-gst/special-supplies |
+| Supplies to an associated person who cannot claim | GST on the greater of market value and the price | | https://www.ird.govt.nz/gst/charging-gst/special-supplies |
+| Bad debt written off (GST already returned) | Credit adjustment of 3/23 of the amount written off | Keep a record of recovery steps. Payments basis: no claim, except hire purchase and door-to-door sales. Partly-taxed supplies use (written off / total consideration) x GST included | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-credit-adjustments |
+| Bad debt recovered | Debit adjustment of 3/23 of the amount recovered | | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments |
+| Insurance payout relating to the taxable activity | Debit adjustment for the GST content | | https://www.ird.govt.nz/gst/gst-adjustments/other-gst-debit-adjustments |
 
 ## Classifying bank-statement lines: conservative defaults
 
