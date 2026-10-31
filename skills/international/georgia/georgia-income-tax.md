@@ -1,6 +1,6 @@
 ---
 name: georgia-income-tax
-description: "Personal income tax in the country of Georgia (Sakartvelo, GE, currency GEL; not the US state) for tax year 2026 under the Tax Code of Georgia. Covers residence (183 days in any 12 months), the flat 20% rate, the 5% rates for residential rent and for gains on a flat, house or car, the holding-period exemptions, the exemption for foreign-source income of residents, micro business status (0%, GEL 30,000, no staff) and small business status (1%, then 3% from the month gross income passes GEL 500,000, or GEL 700,000 for wine and agro tourism), final withholding on dividends and interest (5%), royalties, the annual return due by 1 April, the monthly small business return, current tax payments, fines and 0.05% a day penalty interest. Trigger on: Georgia income tax, 20% flat tax Georgia, small business status 1%, micro business Georgia, individual entrepreneur Georgia, rs.ge declaration. Out of scope: payroll runs (georgia-payroll), funded pension (georgia-social-contributions), VAT (georgia-vat), company profit tax (ge-corporate-income-tax)."
+description: "Personal income tax in the country of Georgia (Sakartvelo, GE, currency GEL; not the US state) for tax year 2026 under the Tax Code of Georgia. Covers residence (183 days in any 12 months), the flat 20% rate, the 5% rates for residential rent and for gains on a flat, house or car, the holding-period exemptions, the exemption for foreign-source income of residents, micro business status (0%, GEL 30,000, no staff) and small business status (1%, then 3% from the month gross income passes GEL 500,000, or GEL 700,000 for wine and agro tourism), final withholding on dividends and interest (5%), royalties, the annual return due before 1 April, the monthly small business return, current tax payments, fines and 0.05% a day penalty interest. Trigger on: Georgia income tax, 20% flat tax Georgia, small business status 1%, micro business Georgia, individual entrepreneur Georgia, rs.ge declaration. Out of scope: payroll runs (georgia-payroll), funded pension (georgia-social-contributions), VAT (georgia-vat), company profit tax (ge-corporate-income-tax)."
 version: 0.2
 jurisdiction: GE
 tax_year: 2026
@@ -58,7 +58,7 @@ Georgia taxes individuals at one flat rate of 20%, with a 5% rate for some rent 
 
 ## The taxable base
 
-**Taxable income** is gross income for the calendar year less the deductions allowed by the Code (art. 80(1)). An entrepreneur deducts business expenses under the general rules (art. 105-121). A business loss of an entrepreneur cannot be set against his or her salary. It is carried forward for up to five years against future business profit (art. 121(3)). A loss on selling an asset that is not used in business can only be set against gains on assets of the same type in the same year. It is not carried forward (art. 121(1)-(2)).
+**Taxable income** is gross income for the calendar year less the deductions allowed by the Code (art. 80(1)). An entrepreneur deducts business expenses under the general rules (art. 105-121). Expenses not related to economic activity, entertainment expenses (unless entertainment is the business) and personal expenses are not deductible, nor are purchases from a micro business unless the seller is taxed under the general rules (art. 106(a)-(c), (f)). A business loss of an entrepreneur cannot be set against his or her salary. It is carried forward for up to five years against future business profit (art. 121(3)). A loss on selling an asset that is not used in business can only be set against gains on assets of the same type in the same year. It is not carried forward (art. 121(1)-(2)).
 
 **Salary** is taxed at source by the employer (art. 154(1)(a)); see [georgia-payroll](georgia-payroll.md). An employee whose income was all taxed at source does not file an annual return (art. 153(1)(a)).
 
@@ -72,7 +72,7 @@ Georgia taxes individuals at one flat rate of 20%, with a 5% rate for some rent 
 
 **Micro business status.** For a natural person who works alone without hired staff and whose gross income for the calendar year does not exceed GEL 30,000 (art. 84(1)). A micro business pays no income tax (art. 86). The status is revoked if the person asks, applies for small business status, has inventory over GEL 45,000 at a tax authority count, or registers for VAT (art. 85(2)). A micro business that passes GEL 30,000 must apply for small business status within 15 days, or it loses its status (art. 85(3)).
 
-**Small business status.** For an entrepreneur natural person (art. 88(1)). The taxable income is Georgian-source income other than salary (art. 90(3)). The rate is 1% (art. 90(1)). When gross income for the year passes GEL 500,000 (GEL 700,000 for wine and agro tourism operators), the rate is 3% from the start of the month in which the limit is passed until the end of the year (art. 90(2)). The status ends from the next year if gross income passed the limit in each of 2 calendar years. It also ends on request, for a barred activity, after three cash-register fines in a year, or when the person stops being an entrepreneur (art. 89(2)-(5)). A small business keeps a special book of records (art. 91(1)). Its loss is not carried forward unless it leaves the regime (art. 91(5)). It pays no current tax payments (art. 94(1)). A small business that must register for VAT records its stock at that moment and may deduct VAT on it with documents (art. 92).
+**Small business status.** For an entrepreneur natural person (art. 88(1)). The taxable income is Georgian-source income other than salary and the income types the Government excludes (art. 90(3), 88(3)). The tax is on that income itself: the Code allows no deduction of expenses from it, so business costs do not reduce the 1% or 3% charge (art. 90(3)). The rate is 1% (art. 90(1)). When gross income for the year passes GEL 500,000 (GEL 700,000 for wine and agro tourism operators), the rate is 3% from the start of the month in which the limit is passed until the end of the year (art. 90(2)). The status ends from the next year if gross income passed the limit in each of 2 calendar years. It also ends on request (from the first day of the next month, art. 89(3^1)), for a barred activity, after three cash-register fines in a year, or when the person stops being an entrepreneur (art. 89(2)-(5)). A small business keeps a special book of records (art. 91(1)). Its loss is not carried forward unless it leaves the regime (art. 91(5)). It pays no current tax payments (art. 94(1)). Small business status does not stop VAT registration: a holder who passes the VAT threshold must register under art. 165 (art. 92(1)); see [georgia-vat](georgia-vat.md). At that moment it records its stock and may deduct VAT on it with documents (art. 92(2)-(3)).
 
 **Small business employers.** Salary of up to GEL 6,000 in total in a year paid to staff by a small business is not taxed at source if the employer registered and got the status in the same year, or its gross income last year did not exceed GEL 50,000 (art. 94(4)).
 
@@ -82,10 +82,10 @@ Georgia taxes individuals at one flat rate of 20%, with a 5% rate for some rent 
 
 | What | Deadline | Source |
 |---|---|---|
-| Annual income tax return of a resident whose income is not taxed at source | by 1 April of the following year (1 April 2027 for 2026) | Tax Code art. 153(1)(a) |
+| Annual income tax return of a resident whose income is not taxed at source | before 1 April of the following year (Georgian text: "1 აპრილამდე", so by 31 March 2027 for 2026) | Tax Code art. 153(1)(a) |
 | Payment of tax due under the annual return | within the time for filing the return, where the Code sets no other date | art. 62(2) |
 | Small business monthly return and payment | by the 15th of the month after the month | art. 93(1^1) |
-| Micro business annual return | before 1 April of the following year | art. 93(1) |
+| Micro business annual return | before 1 April of the following year (by 31 March) | art. 93(1) |
 | Return of a gain from selling property outside a business | by the 15th of the month after the month of the sale | art. 153(12) |
 | Current tax payments of an entrepreneur, each 25% of last year's tax | 15 May, 15 July, 15 September, 15 December | art. 155(1) |
 | Reduce current payments when income falls by at least 50% | notify the tax authority before the payment date | art. 155(3) |
@@ -115,13 +115,13 @@ Returns are filed electronically with the Revenue Service (rs.ge). A person who 
 - **Residence** is the 183-day test in art. 34(2). A Georgian citizen who is resident nowhere may apply to be treated as resident (art. 34(6^1)).
 - **Residents** pay no Georgian tax on foreign-source income (art. 82(1)(u)).
 - **Non-residents without a permanent establishment** are taxed at source with no deductions: dividends 5% and interest 5% (art. 130, 131), royalties 5%, international telecom and transport 10%, other Georgian-source amounts 10%, salary 20% (art. 134(1)). The rate is 15% on interest, royalties and other income paid to a person registered in a country with preferential tax treatment (art. 134(1^1)).
-- **Refund return for non-residents.** A non-resident taxed at source on items in art. 134(1)(c)-(e) may file by 1 April of the next year to be taxed on net income instead. The tax cannot exceed what was withheld (art. 134(3)-(4)).
+- **Refund return for non-residents.** A non-resident taxed at source on items in art. 134(1)(c)-(e) may file before 1 April of the next year (Georgian text: "1 აპრილამდე") to be taxed on net income instead. The tax cannot exceed what was withheld (art. 134(3)-(4)).
 - **Sale of property by a non-resident** is taxed on the gain, not the gross price (art. 80(4)-(5)).
 - **Treaties.** A non-resident may use a privilege under an international agreement of Georgia (art. 125).
 
 ## Worked examples
 
-**Example 1. Landlord who also sold a car.** A resident individual who is not an entrepreneur rents a flat to a family for living purposes at GEL 2,000 a month in 2026, GEL 24,000 for the year, and claims no deductions. The tenant is a private individual, so no tax is withheld. The rent is taxed at 5%, GEL 1,200 (art. 81(2)), on the annual return due by 1 April 2027 (art. 153(1)(a)). In May 2026 she also sold a car she had owned for four months for GEL 3,000 more than she paid. Four months is not more than six, so the gain is taxed at 5%, GEL 150 (art. 81(3), 82(1)(f.b)), on a return due by 15 June 2026 (art. 153(12)).
+**Example 1. Landlord who also sold a car.** A resident individual who is not an entrepreneur rents a flat to a family for living purposes at GEL 2,000 a month in 2026, GEL 24,000 for the year, and claims no deductions. The tenant is a private individual, so no tax is withheld. The rent is taxed at 5%, GEL 1,200 (art. 81(2)), on the annual return due by 31 March 2027 (before 1 April, art. 153(1)(a)). In May 2026 she also sold a car she had owned for four months for GEL 3,000 more than she paid. Four months is not more than six, so the gain is taxed at 5%, GEL 150 (art. 81(3), 82(1)(f.b)), on a return due by 15 June 2026 (art. 153(12)).
 
 ```oa-check
 name: Georgia, residential rent at 5% and a short-held car gain, 2026
@@ -172,7 +172,7 @@ expected:
 
 1. Is this the country of Georgia (GEL), not the US state?
 2. How many days was the person in Georgia in each 12-month period ending in 2026, and for what purpose?
-3. Is the person an individual entrepreneur, and does he or she hold micro business, small business or fixed tax status? Gross income by month?
+3. Is the person an individual entrepreneur, and does he or she hold micro business, small business or fixed tax status? Gross income by month? If no status is held yet, what are the business costs: small business status taxes gross income at 1% (art. 90(1)), the general rule taxes profit at 20% (art. 81(1)), so the status costs less while costs are below 95% of income (85% once the 3% rate applies, art. 90(2)).
 4. What income is there besides salary: rent (residential or not, deductions claimed or not), dividends, interest, royalties, sales of property (with purchase and registration dates)?
 5. Is any income from outside Georgia, and where does the payer sit?
 6. Does any exemption group in art. 82(2) apply (disability, single parent, veteran, high-mountain settlement)?
@@ -181,10 +181,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 34, 62, 79-82, 84-95^6, 104, 105, 121, 125, 130-132, 134, 153-155, 272-275, 288 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
-| Tax Code of Georgia, Georgian text, consolidated publication 247: arts. 81, 82, 84, 89, 90, 93, 94, 130, 131, 134, 153, 155, 272, 274 (cross-check) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 34, 62, 67, 79-82, 84-95^6, 100, 104-106, 121, 125, 130-132, 134, 153-155, 272-275, 288, 291 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, Georgian text, consolidated publication 247: arts. 81, 82, 84-94, 130, 131, 134, 153, 155, 272, 274 (cross-check) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 
-Not yet confirmed: the Government lists of income outside the micro and small business limits and of activities barred from these statuses (art. 84(2)-(4), 88(2)-(3)); the fixed tax activities and rates set by the Government (art. 95^1-95^6); the Georgian-source rules in art. 104 (not read in full); the English translation lags the Georgian text for art. 82 (laws of June 2025, November 2025 and 1 April 2026), and art. 94(2) still appears in English but is repealed in Georgian, so the Georgian text was used where they differ; whether a GEL 100 fine applies to a missed small business monthly return (claimed in the old version, no article found); whether a gain on a flat or house is taxed at 5% on the gross gain or after costs (art. 82(4)(b) not read); the rs.ge return forms; treaty rates.
+Not yet confirmed: the Government lists of income outside the micro and small business limits and of activities barred from these statuses (art. 84(2)-(4), 88(2)-(3)); the fixed tax activities and rates set by the Government (art. 95^1-95^6); the Georgian-source rules in art. 104 (not read in full); the English translation lags the Georgian text for art. 82 (laws of June 2025, November 2025 and 1 April 2026), and art. 94(2) still appears in English but is repealed in Georgian, so the Georgian text was used where they differ; whether a missed small business monthly return with no tax due is fined (the old version said GEL 100 per return; art. 274(3) imposes no late-filing fine where the tax is zero, art. 67(4) deems an unfiled return filed at zero except where the Minister of Finance provides otherwise, and art. 291 sets GEL 100 for a breach with no fine of its own; the Minister's order was not read); whether VAT charged by a VAT-registered entrepreneur is left out of gross income (the old version said so; no article found); whether a gain on a flat or house is taxed at 5% on the gross gain or after costs (art. 82(4)(b) not read); the rs.ge return forms; treaty rates.
 
 <!-- openaccountants-cta-block -->
 
