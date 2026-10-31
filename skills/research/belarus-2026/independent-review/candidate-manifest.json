@@ -1,0 +1,36 @@
+{
+  "commit": "d2ccb587628dfbee6f2e2817cef6ed5d05e5aceb",
+  "files": {
+    "skills/international/belarus/README.md": "c8802485649af22c26b8fcfc18e792ebc1747d10d9a787d1c1e4402b2a9faeb2",
+    "skills/international/belarus/belarus-cross-border-tax.md": "0ca161f14934419f8717ac72aa959d91c94cab41d7217c91fcf706145264eba4",
+    "skills/international/belarus/belarus-income-tax.md": "42a04c12e962864d8d8ba62485532810f35d6ad45451b8b0f72e5264cfc0ddc7",
+    "skills/international/belarus/belarus-payroll.md": "03712dd87ac894f031cd555a758ae8a652e880b68e5e78738f3c17bd4fe0d771",
+    "skills/international/belarus/belarus-social-contributions.md": "e110647a2e2a1e15a975306737c292ae6682d41272e0cb01c2a61159ebf08fd4",
+    "skills/international/belarus/belarus-tax-optimization.md": "d129405cf1b040918a8ce753b56118b3b6fffb1234e52c22d3a9de21a61e2316",
+    "skills/international/belarus/belarus-transfer-pricing.md": "d716c6bfc81b0157c4165573927c9fb932a3059fbc59d93229319dc95204ea19",
+    "skills/international/belarus/belarus-vat.md": "134e4fb0f36f4569479bde086c55db63d40fc07cdef7587a820011fe427e1160",
+    "skills/international/belarus/by-company-formation.md": "8927e0b19ec0ac58dff7e7eccd527e8b089f8a8ebdd40b9c8219be3bd1fcb78f",
+    "skills/international/belarus/by-corporate-income-tax.md": "d132a6420248612a366b4acfd926911fa7715ac97d39f49777d7aab4cb374470",
+    "skills/international/belarus/by-tax-overview.md": "8cd908a980888f8339926245595148447fb5079208f62ceb0b291065afbeb532"
+  },
+  "git_blobs": {
+    "skills/international/belarus/README.md": "4e093f681e96afc57b9523553306d131e4325905",
+    "skills/international/belarus/belarus-cross-border-tax.md": "c759ccd41a83ceb20a68bfa8226b43c79fd992ea",
+    "skills/international/belarus/belarus-income-tax.md": "ab19aa82a6537bdbcf3432c5fb14b8696d10a41a",
+    "skills/international/belarus/belarus-payroll.md": "7f03cce2d0d55b5a8761183ec7bb68da275b6e02",
+    "skills/international/belarus/belarus-social-contributions.md": "5113f7f2ca90445844f07c7286c73e91d20b185c",
+    "skills/international/belarus/belarus-tax-optimization.md": "0f6c55fc44088dce27277cbd96b67241cc2652a8",
+    "skills/international/belarus/belarus-transfer-pricing.md": "51148209315c2fbb205ee6bbd4e7748e5af78781",
+    "skills/international/belarus/belarus-vat.md": "089d3a487c9651a8585ed967e35cf65a575fb3da",
+    "skills/international/belarus/by-company-formation.md": "eb8ba4cfac4da7086ca48528acf655ae95757ab5",
+    "skills/international/belarus/by-corporate-income-tax.md": "7ff76aa7c1fcab98c503d2216fd241299c5c268b",
+    "skills/international/belarus/by-tax-overview.md": "888a4bb84f90cb63b64015f6d37fc5274cf9ca4f"
+  },
+  "research_files": {
+    "skills/research/belarus-2026/preservation-baseline.json": "6e40cee750d1be767186e7a371b2d0625115574e791a7ef5ac49aaef9c843f89",
+    "skills/research/belarus-2026/preservation-check.json": "5f7df82959be2a347e1a1593960dde8e29f763048467663a93e8014071ce4f60",
+    "skills/research/belarus-2026/research.md": "b995374186a4103b629c355f65a362031f5441e02cdfd4a9a488a09a2e63a4ec",
+    "skills/research/belarus-2026/single-tax-source-receipts.json": "2eb64526168deb25bc213b3b25c60da7fadcbf9a291365a3f067e1b3fdd4fed2",
+    "skills/research/belarus-2026/single-tax-support.md": "0b2ad8675f6aa9a3f5f707fdadacae07de3e5bbb4a7bd62c48cb37dfc977282f"
+  }
+}
