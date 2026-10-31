@@ -1,7 +1,7 @@
 ---
 name: moldova-income-tax
 description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited writer draft preserves predecessor subjects, identifies ordinary and specialist gaps, and requires independent whole-country review. It does not certify every treaty or special-regime implementation or claim accountant attestation."
-version: 0.9
+version: "0.10"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova individual income tax and self-employment, 2026 v0.9
+# Moldova individual income tax and self-employment, 2026 v0.10
 
 ## Who this applies to
 
@@ -295,6 +295,14 @@ Identify the art. 232 taxpayer category before a filing fine. Article 260(1) dis
 
 The special rental registration/assessment, special-regime notice duties and fiscal estimation provisions are not replaced by these ordinary fine summaries. Do not conclude criminal/administrative exposure or complete settlement from a bank statement alone. Full special-offence/appeal implementation remains a gap; use the actual decision and governing provision.
 
+### Assessment, collection and refund limitation
+
+Use **current Code 264’s statutory start dates**, rather than the actual date a late return/payment was made. Under 264(1)(a), tax and late charges can be determined within **four years from the last statutory filing date**, or the payment due date if no return is prescribed. Tax-specific sanctions use the corresponding statutory filing/payment date under 264(1)(b); sanctions unrelated to a particular tax use the offence date under 264(1)(c). Paragraph2 is repealed. Under 264(3), SFS can extend the period subject to control, **not beyond six years from the last statutory filing date**, where no return was submitted or the taxpayer seeks an overpayment/statutory refund. These are conditional powers and clocks, not a universal six-year assessment period. [Code 264](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), read 31 October 2026.
+
+**Collection is separate.** For an obligation determined within 264, 265(1) requires the specified enforcement action/court referral within six years after determination. The clock is subject to 265(2)’s suspension circumstances, resumes when the circumstance ends under 265(3), and is interrupted under the Civil Code with a fresh period under 265(4)–(5). The suspension list covers the stated detention/absence, deferral/instalment, court, insolvency, special-record and enforcement circumstances. Do not infer expiry solely by adding six calendar years; the applicable Civil Code interruption grounds and case-specific event dates still require verification. [Code 265](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+**An offset/refund application has its own clock.** Under 266(1), apply within six years from the relevant payment/arising of the amount; filing suspends that period. A late application is invalid unless SFS reinstates/accepts it under 266(2) on evidence that the taxpayer could not comply. Unclaimed amounts are cancelled under the Government procedure in 266(3), whose detailed implementation is not supplied here. This time limit does not itself prove a substantive credit/refund entitlement. Retain statutory due dates, actual filings/refund applications, determination/enforcement dates, suspension/interruption evidence and decisions separately. [Code 266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
 ## Cross-border points
 
 Apply the actual residence/citizenship and income-source categories in arts. 5, 13–14. A Moldovan citizen's taxable foreign financial income is not automatically exempt because it was retained abroad; a resident foreign citizen's non-business foreign investment/financial income has the stated statutory exclusion. Business/professional worldwide income, services performed in Moldova for a foreign payer, employment, management remuneration and nonresident Moldova-source income require their distinct statutory/treaty routes. Do not apply the employee “183-day” residence definition as a treaty employment exemption. [Arts. 5, 13–14, 71, 74, 79^3][code].
@@ -400,6 +408,10 @@ Primary-source reads on 30–31 October 2026, with individual dates below. The [
 | [DAP24 form][dap24form] and [instructions][dap24instructions] | All 3 form/4 instruction pages read and visually inspected; main/expense/relief methods supplied, defective relief cross-reference/total-header and portal implementation explicit | 2026-10-30 |
 | [Complete MF Order 40 capital-cost annex](https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc) | All nine acquisition routes and 22 document subitems read; original DOC retained unchanged, local conversion documented and complete one-page render visually inspected. Code42 bases/exceptions remain controlling. | 2026-10-31 |
 | [Actual current CET18 annex 1](https://www.legis.md/UserFiles/Image/RO/2026/mo148-151ro/an1_150md.docx) | All five rendered pages/full Word text read; A/B/C/D/E/F/H/J/K/M, evidence table, codes, signature and receipt. Current parent/latest3April2026header/link checked. K7sign, genericE7cap and acceptedportal implementation limits explicit. | 2026-10-31 |
+
+| Source | Read scope | Read on |
+|---|---|---|
+| [Current Code264–266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Full assessment, collection and refund-limitation provisions read; clocks, statutory start dates and conditional extensions separated. Historical/Civil Code/Government implementation gaps remain | 2026-10-31 |
 
 Not yet confirmed: complete 2026 commencement chain beyond the selected January/current transitions, including the retail-registration cut-off amendment's enactment/application history; UNIF25 actual classifier/portal validation, the named inconsistent-source fields and relief/local-tax implementation beyond the selected now-read supporting/reporting methods, DAP24 relief-column/self-referential-header inconsistency and exact portal/rounding validation beyond the now-read approved form/instructions, and every special-regime registration/cessation/notification procedure; CET18 authenticated portal handling of the 20,000 education cap versus generic point 34^7, accepted K7 loss-sign and lookalike-code encoding, and route-specific cost-evidence exceptions beyond the now-read complete Order40 list; remaining individual-business home-office/mixed-use, car, bad-debt and charity implementation beyond the statutory tests and the corporate companion’s sourced ordinary travel/asset/benefit methods; unavailable annex values and actual forms remain gaps; voluntary pension/annuity and other specialist deductions; annual form implementation of unused/birth/death-dependent relief, including the apparent tension between regulation point 33 and Code art. 35(4), whose statutory next-month rule controls this draft; precise lottery/sports/online and exceptional final-withholding implementation; all tax/social treaty agreements, posting certificates and foreign-tax refund procedures; full offence/appeal implementation and taxpayer-specific historic medical-penalty transitions; all IT-park/software-worker/special incentive methods. The old 2025 minimum 5,500/forecast 16,100, fixed social 20,518 or justice 27,772 and monthly rounding claims are historical/unconfirmed for their own year, not reused as 2026 rates. Old VAT 20% and registration 1.2/1.5/1.7-million claims require the VAT Guide's statutory reconciliation. All predecessor rules/examples are retained, corrected or explicitly unconfirmed in the destination ledger. Ordinary gaps and whole-country independent review keep this domain partial.
 

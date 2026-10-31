@@ -3,16 +3,16 @@ name: md-company-formation
 description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited writer draft preserves predecessor topics, states current-form and specialist gaps, and requires independent whole-country review. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
 jurisdiction: MD
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: 0.5
+version: 0.6
 ---
 
-# Moldova company formation and entity choice, 2026 v0.5
+# Moldova company formation and entity choice, 2026 v0.6
 
 ## Who this applies to
 
@@ -100,7 +100,7 @@ Application 3-5 acknowledges one-stop registration and repeats a **30-day** comp
 
 For formation, the ASP checklist identifies **BE-1 for an individual founder** and **BE-2 for a legal-entity founder**. Each founder, or its properly authorised representative, submits its own signed declaration at constitution. After constitution, ASP’s published procedure names the administrator or designated resident natural person as signer. The actual BE-1 and BE-2 core forms, **pages 1–2 of each**, were read and visually inspected; their five-page PEP annexes were not fully verified. [ASP checklist][asp]; [ASP signer guidance][bofaq]; [BE-1][companybe1]; [BE-2][companybe2].
 
-BE-1 records the individual founder and its interest; BE-2 records the founding entity, its administrator and the ownership chain. Follow that chain to natural persons and retain the actual supporting evidence. Both forms distinguish identified beneficial owners and control through other means from the conditional administrator fallback. Complete the applicable identity/interest/control and PEP sections, annex list, signature and date; unused fields are crossed out as the notes require. The notes request interests to **two decimal places**; this presentation rule does not decide the statutory threshold or permit exclusion of other control. BE-1’s internal subtitle contains “p.j.” although its top form label and ASP catalogue identify an individual-founder filing: retain that published inconsistency rather than choosing the wrong form from that subtitle. Foreign-document legalisation, travel-document evidence and treaty exceptions still require their actual applicable route. [BE-1/BE-2 core pages and notes][companybe1]; [BE-2][companybe2]; [Law 308 art. 5^2][aml]; [Law 220 arts. 7–8][register].
+BE-1 records the individual founder and its interest; BE-2 records the founding entity, its administrator and the ownership chain. Follow that chain to natural persons and retain the actual supporting evidence. Both forms distinguish identified beneficial owners and control through other means from the conditional administrator fallback. Complete the applicable identity/interest/control and PEP sections, annex list, signature and date; unused fields are crossed out as the notes require. The notes request interests to **two decimal places**; this presentation rule does not decide the statutory threshold or permit exclusion of other control. Foreign-document legalisation, travel-document evidence and treaty exceptions still require their actual applicable route. [BE-1/BE-2 core pages and notes][companybe1]; [BE-2][companybe2]; [Law 308 art. 5^2][aml]; [Law 220 arts. 7–8][register].
 
 ### Identify the beneficial owner and keep the correct update clock
 

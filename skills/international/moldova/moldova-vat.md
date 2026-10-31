@@ -1,7 +1,7 @@
 ---
 name: moldova-vat
 description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft still requires independent pack review.
-version: 2.3
+version: 2.4
 jurisdiction: MD
 category: international
 tax_year: 2026
@@ -12,9 +12,9 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova VAT v2.3
+# Moldova VAT v2.4
 
-2026 writer draft, law read 30 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. This draft has not completed independent whole-country review or accountant attestation.
+2026 writer draft, law read 30–31 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. This draft has not completed independent whole-country review or accountant attestation.
 
 ## Who this applies to
 
@@ -25,6 +25,12 @@ For an ordinary business, test eligible supplies in **any consecutive 12 months*
 Nonresident automated electronic services to resident nonbusiness individuals follow arts94(d),95(1^1),109^1,111(5),112^1,114(1^1),115(1^2),(3), rather than automatically using a business's monthly reverse-charge return. Registration follows assignment of the fiscal code; the period is quarterly, the payment date is the tax point, and the declaration/payment deadline is the25th after the quarter. MDL, USD or EUR payment is permitted for this class. Ordinary VAT12 amounts are expressed in lei. A card payment to a software brand does not establish whether the customer is a business or the supplier falls in this consumer regime. [Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 Do not refuse all mixed activity or all dealings across the Nistru. Compute direct attribution/prorata for ordinary mixed activity. Identify the counterparty's actual fiscal relationship and the relevant customs/implementing-law route for cross-Nistru dealings; the specialist procedure remains unconfirmed below. Income-tax calculations belong in the companion income Guides. VAT work here produces evidenced working papers and a return reconciliation, not a bank-statement-only filing conclusion.
+
+### Registration cancellation and final stock/asset calculation
+
+Inform SFS when taxable supplies cease; article 113(1) leaves the cancellation procedure to SFS. SFS can cancel registration itself for failure to furnish the required VAT returns for each tax period, inaccurate headquarters/subdivision address information, or liquidation without a cancellation application before the liquidation tax audit starts. Do not invent a fixed number of missed returns. In liquidation, apply before that audit; otherwise the authority’s 113(2)(d) route applies. [Code 113(1),(2),(6)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); ledger 208–209/213.
+
+**At cancellation**, article 113(3) deems a taxable supply of stock and fixed assets for which acquisition VAT was deducted, and requires payment of the resulting VAT. Use **market value**, or for depreciable assets **the greater of carrying value and market value**. Inventory the qualifying remaining items, original deductions and valuation evidence, then apply their actual VAT classification/rate. The cancellation date under 113(4) is the date of the audit act underlying SFS’s cancellation decision. Formal statutory suspension does not itself cancel registration; if supplies occur during suspension,113(5) restores VAT rights/obligations from the first day of the month of those supplies. The actual SFS cancellation application and final-return implementation remain unverified. [Code 113(3)–(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); ledger 210–212.
 
 ## Rates, bands and thresholds
 
@@ -63,6 +69,16 @@ Related-party/employee below-market supplies use market value under art99(1), wi
 Art103 exemptions **without credit** include housing/land and their specified rent/rights (not transaction commissions); education directly within the stated education/training categories; authorised state-fee services and professional justice-sector activity; medical services except cosmetic services, the listed medical goods and qualifying care; listed financial operations including insurance/reinsurance/intermediation; postal services; the specified domestic passenger transport and other enumerated supplies. A bank's consultancy, information, rental, cash-handling or custody service can fall outside the financial exemption's wording. Notaries/lawyers cannot be automatically coded20% solely by their occupation where art103(1)(6) applies. A commercial property rent is not the housing/land exemption merely because its bank narrative says “rent”. [Code art103(1)(1),(5),(6),(9),(10),(12),(13),(16),(17)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 Other express art103 exemptions include the listed publications/digital books and associated rights/editing (advertising/erotic exclusions), qualifying agricultural-cooperative services subject to the75% condition, the listed passenger-vehicle tariffs, certain agricultural machinery, qualifying production/service assets contributed to capital, renewable-generation construction, authorised waste machinery and listed forestry work. Capital-contribution relief under103(1)(29) requires the Government procedure and has a three-year disposal/use restriction, a clawback and no deduction of that clawback. The exact procedure is not supplied here. Do not confuse an **exempt car purchase** with a universal ban on VAT on every vehicle expense. Customs/re-import/temporary-admission, humanitarian/diplomatic and other specialist art103 exemptions require their own evidence. [Code art103](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+The following predecessor topics are also exemptions **without credit**, under their actual article 103(1) conditions:
+
+- Point 3 covers State property redeemed in privatisation.
+- Point 14 covers the specified gambling-business services and lotteries. Its exception excludes the stated services whose value is included wholly/partly in the stake or admission payment and other services to spectators/participants; it is not an exemption for every service at a gambling venue.
+- Point 15 covers the listed human/animal burial and cremation services and related funeral activities, including preparation/embalming, funeral premises and plots, cemetery/grave upkeep, transporting bodies, religious rites, funeral organisation and making/supplying coffins or wreaths.
+- Point 16 covers **hostel accommodation** and the listed communal services to the population: residential-space rental, residential-building maintenance, sanitation and lift use. This is distinct from article104(b)’s listed residential utilities **with credit**.
+- Point 27^2 covers anti-hail rockets at tariff 3604. Point 27^3 lists hydraulic turbines up to 1,000 kW at 841011000, generators over 75 kW but not over 375 kW at 850133000, the specified parts at 850300990 and electrical circuit-switching apparatus. Match the actual statutory description and tariff/power limits; a renewable-energy label alone is insufficient.
+
+Sources: [Code 103(1)(3),(14)–(16),(27^2)–(27^3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); existing ledger 110,120–122,131–132. Preserve qualifying invoices and the particular exemption evidence.
 
 Exemption **with credit** under art104 includes proved exports and listed international-transport services, the residential utilities, the listed network-energy imports, specified Government-listed assistance projects, defined free-zone/port/airport movements and qualifying light-industry processing. Internal zone supplies can instead be non-objects under art95(2)(a). Transport/balancing-energy exclusions and directions of movement matter; neither foreign payment nor a zone address establishes the exemption. Implementing lists/proof for these specialist routes remain unconfirmed below. [Code arts95(2),104](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
@@ -140,6 +156,16 @@ The predecessor's private red-flag settings (MDL100,000 transaction, MDL5,000 ta
 For legal-person/business categories in art232(a),(c), art260(1) sets reporting-preparation/presentation fines ofMDL500–1,000 per return, capped atMDL10,000 for all returns; the distinct nonbusiness-individual category hasMDL200–400, capped atMDL2,000. Failure to issue a required fiscal invoice within arts117/117^1 timing isMDL3,000–3,600 per invoice, capped atMDL72,000 under260(4). Late/nonregistration as a VAT payer is7%–10% of taxable supply volume excluding art104 supplies under256(7); where this fine is applied,261(5) is not also applied. Do not treat those ranges as a discretionary minimum automatically selected by software. [Code arts232,256(7),260](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 False-data understatement is20%–30% of the understated amount under261(4); genuine self-correction under188 is excepted by261(4^1). Evasion under261(5) is80%–100% of undeclared tax, subject to the non-cumulation just described. Late-payment interest under228 runs from the day after due date through actual payment; its annual formula uses the prior-November BNM base rate rounded up to a whole percent, plus5points, divided by days in the year and rounded to four decimals. Additional-liability self-correction interest is capped at the corresponding tax under228(2^1). Determine the correct case-specific relief/audit treatment; do not substitute the social-contribution0.1% rate for ordinary VAT late charges. [Code arts228,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+**An excessive refund has its own interest period.** Under article 228(10), the late charge applies to the **amount refunded in excess**, including an excess found after repeated control. It runs from the actual refund to the business’s bank/payment account, or the stated budget-debt extinguishment, through recovery. Do not use the refund-request date or charge the lawfully refunded portion merely because the overall claim was examined. This is separate from the ordinary original-tax due date. [Code 228(10)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); existing ledger 286.
+
+### Assessment, collection and refund limitation
+
+Use **current Code 264’s statutory start dates**, rather than the actual date a late return/payment was made. Under 264(1)(a), tax and late charges can be determined within **four years from the last statutory filing date**, or the payment due date if no return is prescribed. Tax-specific sanctions use the corresponding statutory filing/payment date under 264(1)(b); sanctions unrelated to a particular tax use the offence date under 264(1)(c). Paragraph2 is repealed. Under 264(3), SFS can extend the period subject to control, **not beyond six years from the last statutory filing date**, where no return was submitted or the taxpayer seeks an overpayment/statutory refund. These are conditional powers and clocks, not a universal six-year assessment period. [Code 264](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro), read 31 October 2026.
+
+**Collection is separate.** For an obligation determined within 264, 265(1) requires the specified enforcement action/court referral within six years after determination. The clock is subject to 265(2)’s suspension circumstances, resumes when the circumstance ends under 265(3), and is interrupted under the Civil Code with a fresh period under 265(4)–(5). The suspension list covers the stated detention/absence, deferral/instalment, court, insolvency, special-record and enforcement circumstances. Do not infer expiry solely by adding six calendar years; the applicable Civil Code interruption grounds and case-specific event dates still require verification. [Code 265](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
+
+**An offset/refund application has its own clock.** Under 266(1), apply within six years from the relevant payment/arising of the amount; filing suspends that period. A late application is invalid unless SFS reinstates/accepts it under 266(2) on evidence that the taxpayer could not comply. Unclaimed amounts are cancelled under the Government procedure in 266(3), whose detailed implementation is not supplied here. This time limit does not itself prove a substantive credit/refund entitlement. Retain statutory due dates, actual filings/refund applications, determination/enforcement dates, suspension/interruption evidence and decisions separately. [Code 266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 ## Cross-border points
 
@@ -250,10 +276,8 @@ expected:
 
 ## Ask the client first
 
-- What is the legal entity/activity, IDNO, actual VAT registration/effective date, and any cancellation, reorganisation, formal suspension or chapter10^4 status?
-- Which consecutive12month supplies and imported services trigger the relevant dated registration test? Were any obligations already triggered before a threshold change?
-- What is supplied, to whom and where? Obtain contracts, tariff/product evidence, actual customer/supplier establishments and property/use locations, not just a merchant narrative.
-- Which supplies are standard/reduced, exempt with credit, exempt without credit or non-objects? What proves the particular education, medical, justice, finance, residential, export or project condition?
+- What is the legal entity/activity, IDNO, actual VAT registration/effective date, and any cancellation, reorganisation, formal suspension or chapter10^4 status? Which consecutive12month supplies and imported services trigger the relevant dated registration test? Were any obligations already triggered before a threshold change?
+- What is supplied, to whom and where? Obtain contracts, tariff/product evidence, actual customer/supplier establishments and property/use locations, not just a merchant narrative. Which supplies are standard/reduced, exempt with credit, exempt without credit or non-objects? What proves the particular education, medical, justice, finance, residential, export or project condition?
 - Obtain invoices and actual receipt dates, customs declarations and paid-tax evidence, advances and acceptance records, returns/discounts/bad debts, business-card fiscal receipts and the business/private attribution.
 - What is directly taxable/exempt/shared, including construction projects, cars by qualifying user, entertainment, gifts, destruction, changed use and capital-relief disposals?
 - What opening credit, prior refund request/decision, arrears and earlier corrections must reconcile? Supply the filed return, annexes, receipt and payment record.
@@ -270,6 +294,10 @@ expected:
 |[May consolidation153671](https://www.legis.md/cautare/getResults?doc_id=153671&lang=ro), [Law41/2026](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro)|Art96 and the Law41 medical-device amendment/1May commencement; remaining tariff-based reduced categories retained|2026-10-30|
 |[Order1164/2012 current consolidation151641](https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro)|Full annex2 text: ordinary24boxes, annexes, unregistered routes and critical submission errors. Linked annex1DOCX not retrieved|2026-10-30|
 |[Order529/2025](https://www.legis.md/cautare/getResults?doc_id=151607&lang=ro)|Energy box7/8/16/17 amendments, applicability fromJanuary2026 periods|2026-10-30|
+
+| Source | Read scope | Read on |
+|---|---|---|
+| [Current Code264–266](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | Full assessment, collection and refund-limitation provisions read; clocks, statutory start dates and conditional extensions separated. Historical/Civil Code/Government implementation gaps remain | 2026-10-31 |
 
 Not yet confirmed: full2026 amendment-by-amendment commencement reconciliation beyond the dated changes above; actual late-registration assessment period and procedural relief; non-exact prorata rounding representation in SFS practice; Government refund application/proof/limits and2026 refund-programme amendments; Government capital-contribution, destruction, assistance-project/free-zone/processing and other specialist exemption procedures; full2026 cross-Nistru transitional law/customs and DCFTA origin procedures; current Ministry energy-trader own-use declaration procedure; current nonresident e-services registration/form/payment implementation; foreign-currency VAT conversion date and supporting BNM rule; case-specific late-charge relief/account allocation; current annex1TVA12DOCX/layout and authenticated portal validation/rounding; counterparty-specific status, bank-export conventions, the predecessor IBAN-prefix claim and the legal assumptions of the archived legacy transactions. These gaps remain explicit and this VAT draft does not establish whole-country coverage or independent review.
 

@@ -2,7 +2,7 @@
   "status": "LOCAL 2026 WRITER DRAFT; whole-country independent review and ordinary gaps pending",
   "slug": "moldova-vat",
   "Guide_path": "skills/international/moldova/moldova-vat.md",
-  "Guide_sha256": "ac2cfb3c9d304f50ac660d4cf69a8739253f611c51d375a6387fb1ea48edc26e",
+  "Guide_sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf",
   "rows": [
     {
       "id": "MD-VAT-001",
@@ -4880,7 +4880,7 @@
       "id": "MD-VAT-349",
       "rule_or_figure": "1. Nu este completat: - Codul fiscal al furnizorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale.",
       "Guide_section": "Deadlines and filing",
-      "act_article_or_official_section": "Order1164/2012 annex2 point1",
+      "act_article_or_official_section": "Order1164/2012 annex2 point8, critical-error table item7, activation subpoint1",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro",
       "exact_original_language_quote": "1. Nu este completat: - Codul fiscal al furnizorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale.",
       "read_date": "2026-10-30",
@@ -4888,13 +4888,18 @@
       "source_text_sha256": "0a1d739918516efcb2ec56b1a19f799d0cb02d686f55a0db6b914fe39063b8d7",
       "source_context": "1. Nu este completat:\n\n- Codul fiscal al furnizorului;\n\n- Data eliberării facturii fiscale;\n\n- Seria și/sau numărul facturii fiscale.",
       "quote_matches_source_after_layout_normalization": true,
-      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "citation_correction_20261031": {
+        "previous_act_article_or_official_section": "Order1164/2012 annex2 point1",
+        "reason": "Independent MD-REVIEW-001: nested invoice errors belong to point8 table7/8, not standalone points1/2.",
+        "independent_delta_recheck": "PENDING"
+      }
     },
     {
       "id": "MD-VAT-350",
       "rule_or_figure": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. 8 Eroare la completarea Anexei nr.2 la declarația TVA „Lista facturilor fiscale eli",
       "Guide_section": "Deadlines and filing",
-      "act_article_or_official_section": "Order1164/2012 annex2 point2",
+      "act_article_or_official_section": "Order1164/2012 annex2 point8, critical-error table item7, activation subpoint2",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro",
       "exact_original_language_quote": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. 8 Eroare la completarea Anexei nr.2 la declarația TVA „Lista facturilor fiscale",
       "read_date": "2026-10-30",
@@ -4902,13 +4907,18 @@
       "source_text_sha256": "0a1d739918516efcb2ec56b1a19f799d0cb02d686f55a0db6b914fe39063b8d7",
       "source_context": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o.\n\n\n\n\n8\n\n\t\n\nEroare la completarea Anexei nr.2 la declarația TVA „Lista facturilor fiscale eliberate”",
       "quote_matches_source_after_layout_normalization": true,
-      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "citation_correction_20261031": {
+        "previous_act_article_or_official_section": "Order1164/2012 annex2 point2",
+        "reason": "Independent MD-REVIEW-001: nested invoice errors belong to point8 table7/8, not standalone points1/2.",
+        "independent_delta_recheck": "PENDING"
+      }
     },
     {
       "id": "MD-VAT-351",
       "rule_or_figure": "1. Nu este completat: - Codul fiscal al cumpărătorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale.",
       "Guide_section": "Deadlines and filing",
-      "act_article_or_official_section": "Order1164/2012 annex2 point1",
+      "act_article_or_official_section": "Order1164/2012 annex2 point8, critical-error table item8, activation subpoint1",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro",
       "exact_original_language_quote": "1. Nu este completat: - Codul fiscal al cumpărătorului; - Data eliberării facturii fiscale; - Seria și/sau numărul facturii fiscale.",
       "read_date": "2026-10-30",
@@ -4916,13 +4926,18 @@
       "source_text_sha256": "0a1d739918516efcb2ec56b1a19f799d0cb02d686f55a0db6b914fe39063b8d7",
       "source_context": "1. Nu este completat:\n\n- Codul fiscal al cumpărătorului;\n\n- Data eliberării facturii fiscale;\n\n- Seria și/sau numărul facturii fiscale.",
       "quote_matches_source_after_layout_normalization": true,
-      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "citation_correction_20261031": {
+        "previous_act_article_or_official_section": "Order1164/2012 annex2 point1",
+        "reason": "Independent MD-REVIEW-001: nested invoice errors belong to point8 table7/8, not standalone points1/2.",
+        "independent_delta_recheck": "PENDING"
+      }
     },
     {
       "id": "MD-VAT-352",
       "rule_or_figure": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. [Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vi",
       "Guide_section": "Deadlines and filing",
-      "act_article_or_official_section": "Order1164/2012 annex2 point2",
+      "act_article_or_official_section": "Order1164/2012 annex2 point8, critical-error table item8, activation subpoint2",
       "official_url": "https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro",
       "exact_original_language_quote": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o. [Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vigoare 13.11.25]",
       "read_date": "2026-10-30",
@@ -4930,7 +4945,12 @@
       "source_text_sha256": "0a1d739918516efcb2ec56b1a19f799d0cb02d686f55a0db6b914fe39063b8d7",
       "source_context": "2. Seria și numărul facturii nu este atribuită furnizorului ce a eliberat-o.\n\n \n\n[Anexa nr.2 modificată prin OSFS529 din 04.11.25, MO565-568/13.11.25 art.993; în vigoare 13.11.25] \n\n \n13-11-2025\n10-10-2025",
       "quote_matches_source_after_layout_normalization": true,
-      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained"
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW; ordinary gaps retained",
+      "citation_correction_20261031": {
+        "previous_act_article_or_official_section": "Order1164/2012 annex2 point2",
+        "reason": "Independent MD-REVIEW-001: nested invoice errors belong to point8 table7/8, not standalone points1/2.",
+        "independent_delta_recheck": "PENDING"
+      }
     },
     {
       "id": "MD-VAT-353",
@@ -4970,6 +4990,202 @@
         "calculation_control": "ledgers/md-country-evidence/late-rate-controls.md",
         "source_input": "ledgers/md-country-evidence/sources/fiscal-code-article-BNM-NOV2025-BASE.json"
       }
+    },
+    {
+      "id": "MD-VAT-355",
+      "rule_or_figure": "Current Code264(1) introductory scope: (1) Cu excepţia cazurilor prevăzute la alin.(3), obligaţiile fiscale pot fi determinate de către contribuabil şi Serviciul Fiscal de Stat sau alte org",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(1) introductory scope",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(1) Cu excepţia cazurilor prevăzute la alin.(3), obligaţiile fiscale pot fi determinate de către contribuabil şi Serviciul Fiscal de Stat sau alte organe cu",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "(1) Cu excepţia cazurilor prevăzute la alin.(3), obligaţiile fiscale pot fi determinate de către contribuabil şi Serviciul Fiscal de Stat sau alte organe cu atribuţii de administrare fiscală în următoarele termene:",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-356",
+      "rule_or_figure": "Current Code264(1)(a): a) impozitele, taxele, majorările de întârziere – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale respective s",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(1)(a)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "a) impozitele, taxele, majorările de întârziere – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale respective",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "a) impozitele, taxele, majorările de întârziere – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale respective sau pentru plata impozitului, taxei, majorării de întârziere (penalităţii), în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale;",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-357",
+      "rule_or_figure": "Current Code264(1)(b): b) sancţiunile fiscale aferente unor impozite şi taxe concrete – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fisca",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(1)(b)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "b) sancţiunile fiscale aferente unor impozite şi taxe concrete – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "b) sancţiunile fiscale aferente unor impozite şi taxe concrete – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale privind impozitul şi taxa menţionată sau pentru plata impozitului şi taxei în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale;",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-358",
+      "rule_or_figure": "Current Code264(1)(c): c) sancţiunile fiscale neaferente unor impozite şi taxe concrete – în cel mult 4 ani din data săvârșirii încălcării a legislației. ",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(1)(c)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "c) sancţiunile fiscale neaferente unor impozite şi taxe concrete – în cel mult 4 ani din data săvârșirii încălcării a legislației.",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "c) sancţiunile fiscale neaferente unor impozite şi taxe concrete – în cel mult 4 ani din data săvârșirii încălcării a legislației. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-359",
+      "rule_or_figure": "Current Code264(2): (2) - abrogat. ",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(2) - abrogat.",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "(2) - abrogat. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-360",
+      "rule_or_figure": "Current Code264(3): (3) Serviciul Fiscal de Stat poate extinde perioada supusă controlului prevăzută la alin. (1), dar care nu va depăși 6 ani de la ultima dată stabilită",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art264(3)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Serviciul Fiscal de Stat poate extinde perioada supusă controlului prevăzută la alin. (1), dar care nu va depăși 6 ani de la ultima",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-264-20261031.json",
+      "source_text_sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+      "source_context": "(3) Serviciul Fiscal de Stat poate extinde perioada supusă controlului prevăzută la alin. (1), dar care nu va depăși 6 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale, în cazul în care contribuabilul nu a prezentat darea de seamă fiscală sau în cazul în care solicită restituirea sumelor plătite în plus sau a sumelor care, conform legislației fiscale, urmează a fi restituite.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-361",
+      "rule_or_figure": "Current Code265(1): (1) Dacă determinarea obligaţiei fiscale a avut loc în termen sau în perioada stabilită la art.264, ea poate fi stinsă prin executare silită de către ",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art265(1)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(1) Dacă determinarea obligaţiei fiscale a avut loc în termen sau în perioada stabilită la art.264, ea poate fi stinsă prin executare silită de",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "source_text_sha256": "462d9c68ec30611330a0ede3be8f08ca9dc1a1a515b5145cd0da0764a6b0c1ae",
+      "source_context": "(1) Dacă determinarea obligaţiei fiscale a avut loc în termen sau în perioada stabilită la art.264, ea poate fi stinsă prin executare silită de către Serviciul Fiscal de Stat în conformitate cu prezentul titlu, de către serviciul de colectare a impozitelor și taxelor locale sau de către instanţa judecătorească, însă numai în cazul în care acţiunile Serviciului Fiscal de Stat, ale serviciului de colectare a impozitelor și taxelor locale sau sesizarea instanţei judecătoreşti au avut loc pe parcursul a 6 ani de după determinarea obligaţiei fiscale. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-362",
+      "rule_or_figure": "Current Code265(2): (2) Termenul de prescripţie se suspendă în cazul în care: a) contribuabilul persoană fizică se află sub arest sau este condamnat la privaţiune de libe",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art265(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(2) Termenul de prescripţie se suspendă în cazul în care: a) contribuabilul persoană fizică se află sub arest sau este condamnat la privaţiune de",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "source_text_sha256": "462d9c68ec30611330a0ede3be8f08ca9dc1a1a515b5145cd0da0764a6b0c1ae",
+      "source_context": "(2) Termenul de prescripţie se suspendă în cazul în care: a) contribuabilul persoană fizică se află sub arest sau este condamnat la privaţiune de libertate – pe perioada aflării sub arest sau a privaţiunii de libertate; b) contribuabilul persoană fizică lipseşte din Republica Moldova mai mult de 6 luni – pe perioada absenţei lui; c) persoana cu funcţie de răspundere a contribuabilului persoană juridică lipseşte din Republica Moldova mai mult de 6 luni – pe perioada absenţei lui; d) a fost acordată o amânare sau eşalonare a stingerii obligaţiei fiscale – pe perioada amânării sau eşalonării stingerii; e) instanţa judecătorească a hotărât perceperea impozitului, taxei, majorării de întârziere (penalităţii) şi/sau amenzii – pe o perioadă de până la stingerea obligaţiei fiscale sau până la caducitatea hotărârii judecătoreşti; f) contribuabilul se află în procedură de insolvabilitate; g) obligațiile fiscale sunt luate la evidență specială conform art. 206 alin. (1); h) există încheierea executorului judecătoresc privind intentarea procedurii de executare, emisă în temeiul documentului executoriu înaintat de Serviciul Fiscal de Stat. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-363",
+      "rule_or_figure": "Current Code265(3): (3) Termenul de prescripţie îşi reia cursul din ziua încetării circumstanţei care a servit drept temei pentru suspendarea lui. ",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art265(3)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Termenul de prescripţie îşi reia cursul din ziua încetării circumstanţei care a servit drept temei pentru suspendarea lui.",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "source_text_sha256": "462d9c68ec30611330a0ede3be8f08ca9dc1a1a515b5145cd0da0764a6b0c1ae",
+      "source_context": "(3) Termenul de prescripţie îşi reia cursul din ziua încetării circumstanţei care a servit drept temei pentru suspendarea lui. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-364",
+      "rule_or_figure": "Current Code265(4): (4) Termenul de prescripție se întrerupe în conformitate cu prevederile Codului civil. ",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art265(4)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(4) Termenul de prescripție se întrerupe în conformitate cu prevederile Codului civil.",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "source_text_sha256": "462d9c68ec30611330a0ede3be8f08ca9dc1a1a515b5145cd0da0764a6b0c1ae",
+      "source_context": "(4) Termenul de prescripție se întrerupe în conformitate cu prevederile Codului civil. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-365",
+      "rule_or_figure": "Current Code265(5): (5) După întreruperea termenului de prescripție începe să curgă un nou termen. Timpul scurs până la întreruperea termenului de prescripție nu se inclu",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art265(5)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(5) După întreruperea termenului de prescripție începe să curgă un nou termen. Timpul scurs până la întreruperea termenului de prescripție nu se include în",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-265-20261031.json",
+      "source_text_sha256": "462d9c68ec30611330a0ede3be8f08ca9dc1a1a515b5145cd0da0764a6b0c1ae",
+      "source_context": "(5) După întreruperea termenului de prescripție începe să curgă un nou termen. Timpul scurs până la întreruperea termenului de prescripție nu se include în noul termen de prescripție.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-366",
+      "rule_or_figure": "Current Code266(1): (1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate f",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art266(1)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-266-20261031.json",
+      "source_text_sha256": "ab1048f9106b2256d293713285f252afed9dea1c7c2e5ee91cb4d1a9b29144c2",
+      "source_context": "(1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate fi depusă de contribuabil în termen de 6 ani din data efectuării şi/sau apariţiei lor. Cererea depusă după expirarea termenului de 6 ani este nevalabilă. În acest caz, nu se va efectua nici o compensare ori restituire, cu excepţia cazurilor prevăzute la alin.(2). Depunerea cererii suspendă curgerea termenului indicat. ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-367",
+      "rule_or_figure": "Current Code266(2): (2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a sumelor care",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art266(2)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-266-20261031.json",
+      "source_text_sha256": "ab1048f9106b2256d293713285f252afed9dea1c7c2e5ee91cb4d1a9b29144c2",
+      "source_context": "(2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite dacă contribuabilul prezintă dovezi privind imposibilitatea respectării termenului de prescripţie prevăzut la alin.(1). ",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
+    },
+    {
+      "id": "MD-VAT-368",
+      "rule_or_figure": "Current Code266(3): (3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează în modul st",
+      "Guide_section": "Penalties and interest: Assessment, collection and refund limitation",
+      "act_article_or_official_section": "Fiscal Code art266(3)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "(3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează",
+      "read_date": "2026-10-31",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-266-20261031.json",
+      "source_text_sha256": "ab1048f9106b2256d293713285f252afed9dea1c7c2e5ee91cb4d1a9b29144c2",
+      "source_context": "(3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează în modul stabilit de Guvern.",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING INDEPENDENT DELTA REVIEW; source capture separately read by reviewer; no whole-pack approval"
     }
   ],
   "old_topic_destinations": [
@@ -8492,7 +8708,7 @@
   ],
   "baseline_old_units": 135,
   "old_bytes": 13083,
-  "new_bytes": 44434,
+  "new_bytes": 50953,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated old headings, rates and disclaimer boilerplate consolidated into canonical nine sections; platform CTA preserved.",
@@ -8509,5 +8725,10 @@
     "units": 81,
     "review_scope": "Original smaller-file review retained; expanded whole-country review pending",
     "revision_note": "Version2.3/last_updated31October records actual current-main predecessor reconciliation. Tax methods and original source-read dates unchanged."
+  },
+  "independent_review_corrections_20261031": {
+    "evidence": "ledgers/md-country-evidence/vat-it-independent-review-corrections.json",
+    "status": "Writer fix; independent recheck pending",
+    "new_source_rows": 14
   }
 }
