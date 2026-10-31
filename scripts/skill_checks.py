@@ -11,7 +11,7 @@ skills/REGISTER.csv, a pass rate per check in REGISTER.md) and
 scripts/validate-guides.py (errors on a PR, warnings on the backlog). No AI,
 no network: text and regex only, so a result is the same on every machine.
 
-    python3 scripts/skill_checks.py skills/international/slovakia/slovakia-pit.md
+    python3 scripts/skill_checks.py skills/slovakia/slovakia-pit.md
 """
 
 import importlib.util
@@ -30,6 +30,7 @@ def _load(name, filename):
     return module
 
 
+repo_layout = _load("repo_layout", "repo_layout.py")
 _build_index = _load("build_index", "build-index.py")
 _coverage = _load("coverage_report", "coverage-report.py")
 try:
@@ -84,7 +85,6 @@ META_CATEGORIES = {
     "orchestrator", "patterns", "pattern", "template", "foundation", "integration",
     "intelligence", "vertical",
 }
-TAX_PATH_PREFIXES = ("skills/international/", "skills/us-states/")
 
 NON_REVIEWER_MARKERS = {"pending", "pending_review", "none", "no", "false", "-", "n/a", "tbd"}
 DATE_RE = re.compile(r"\b\d{4}-\d{2}-\d{2}\b")
@@ -150,7 +150,7 @@ def scope_of(path, frontmatter):
         return "general"
     if category in META_CATEGORIES:
         return "other"
-    if domains_of(path, frontmatter) or rel.startswith(TAX_PATH_PREFIXES):
+    if domains_of(path, frontmatter) or (repo_layout.is_country_path(rel) and not rel.startswith("skills/us/federal/")):
         return "tax"
     return "other"
 

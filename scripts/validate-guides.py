@@ -35,6 +35,12 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      accounting-pack and router files. Rates-row URLs, the nine canonical
      headings and the "Not yet confirmed" line WARN in both modes until the
      backlog is cleared. The full run prints a count of failures per check.
+  8. PR mode only: one job in one jurisdiction has one skill
+     (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
+     renamed skill has the job or stripped name of another skill there, unless
+     the PR deletes that skill. WARN if its (country, domain) cell is occupied by
+     a different job, or no domain can be classified. Pass --duplicates-report to
+     write skills/DUPLICATES.md; existing groups are one WARN line on a full run.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -47,11 +53,14 @@ import re
 import subprocess
 import sys
 
+import job_identity
+import repo_layout
 import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
+COVERAGE_REPORT = os.path.join(REPO_ROOT, "scripts", "coverage-report.py")
 
 #: scripts/skill_checks.py checks that fail a PR (changed-only mode) when a tax
 #: skill breaks them. On the full tree they are warnings, so the backlog shows
@@ -87,9 +96,9 @@ LEGACY_MISSING_DESCRIPTION = {
 # (scripts/backfill-metadata.py did the one-time sweep).
 JURISDICTION_OPTIONAL_DIRS = {
     "skills/cross-border/treaty-corridors",
-    "skills/intelligence",
+    "skills/foundation/intelligence",
     "skills/templates",
-    "skills/international/eu",
+    "skills/eu",
 }
 
 
@@ -140,6 +149,8 @@ TAX_SLUG_TOKENS = (
 SOURCES_HEADING_RE = re.compile(r"^##+\s+Sources\b", re.MULTILINE | re.IGNORECASE)
 URL_RE = re.compile(r"https?://[^\s)>\]]+")
 STALE_DAYS = 365
+JOB_RE = re.compile(r"^job:[ \t]*(\S+)[ \t]*$", re.MULTILINE)
+DUPLICATES_REPORT = os.path.join(REPO_ROOT, "skills", "DUPLICATES.md")
 
 
 def is_tax_skill(rel):
@@ -191,13 +202,122 @@ def changed_files_vs_main():
     import subprocess
     try:
         out = subprocess.run(
-            ["git", "diff", "--name-only", "origin/main...HEAD"],
+            ["git", "diff", "--name-only", "--no-renames", "--diff-filter=d", "origin/main...HEAD"],
             cwd=REPO_ROOT, capture_output=True, text=True, check=True,
         ).stdout
-        return [l.strip() for l in out.splitlines() if l.strip()]
+        status = subprocess.run(
+            ["git", "diff", "--name-status", "-M100%", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+        moved = repo_layout.pure_moves(status)
+        return [l.strip() for l in out.splitlines() if l.strip() and l.strip() not in moved]
     except Exception as e:  # pragma: no cover
         print(f"WARN: could not compute changed files ({e}); validating everything")
         return None
+
+
+def added_and_deleted_vs_main():
+    """(added paths, deleted paths) vs origin/main. A rename to a new filename is
+    one of each; a move that keeps the filename keeps the slug and is neither."""
+    try:
+        out = subprocess.run(
+            ["git", "diff", "--name-status", "-M90%", "origin/main...HEAD"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except Exception as e:  # pragma: no cover
+        print(f"WARN: could not compute added files ({e}); skipping the one-job-one-skill check")
+        return set(), set()
+    added, deleted = set(), set()
+    for line in out.splitlines():
+        fields = line.split("\t")
+        if fields[0] == "A":
+            added.add(fields[1])
+        elif fields[0] == "D":
+            deleted.add(fields[1])
+        elif fields[0].startswith("R") and os.path.basename(fields[1]) != os.path.basename(fields[2]):
+            deleted.add(fields[1])
+            added.add(fields[2])
+    return added, deleted
+
+
+def job_conflicts(cov, guides, added, deleted, readme_for, words):
+    """(errors, warnings) for the skills in `added`. `guides` is the tree at HEAD;
+    `readme_for(guide)` returns the pack's covered_by map."""
+    errors, warnings = [], []
+    deleted_slugs = {os.path.splitext(os.path.basename(p))[0] for p in deleted}
+    live = [g for g in guides if g["path"] not in deleted and (g["slug"] not in deleted_slugs or g["path"] in added)]
+    reported = set()
+    for g in live:
+        code = str(g.get("jurisdiction") or "").upper()
+        if g["path"] not in added or not code or code in cov.PSEUDO_CODES:
+            continue
+        others = [o for o in live if o["slug"] != g["slug"] and str(o.get("jurisdiction") or "").upper() == code]
+        same = sorted({o["slug"] for o in others if job_identity.same_job(g, o, words)})
+        fresh = [slug for slug in same if frozenset((slug, g["slug"])) not in reported]
+        reported.update(frozenset((slug, g["slug"])) for slug in same)
+        if fresh:
+            errors.append(
+                f"{g['path']}: {code} already has this job in {', '.join(fresh)}. One job has one skill: "
+                f"merge into it or delete it in this PR. If the work differs, declare a distinct `job:` and rename"
+            )
+        domains, named = cov.cell_domains(g, readme_for(g))
+        if not domains:
+            warnings.append(f"{g['path']}: no tax domain in the slug, so its country cell was not checked")
+        for d in sorted(domains - named, key=cov.DOMAIN_CODES.index):
+            holders = sorted({
+                o["slug"] for o in others
+                if o["slug"] not in same and d in cov.cell_domains(o, readme_for(o))[0]
+            })
+            if holders:
+                warnings.append(f"{g['path']}: {code} {d} also holds {', '.join(holders)}, with a different job")
+    return errors, warnings
+
+
+def load_coverage():
+    spec = importlib.util.spec_from_file_location("coverage_report", COVERAGE_REPORT)
+    cov = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(cov)
+    return cov
+
+
+def guides_with_jobs(bi):
+    """The index rows plus any `job:` frontmatter. The key stays out of index.json."""
+    guides = bi.build_index()["guides"]
+    for g in guides:
+        with open(os.path.join(REPO_ROOT, g["path"]), encoding="utf-8") as fh:
+            block = bi.extract_frontmatter(fh.read()) or ""
+        match = JOB_RE.search(block)
+        if match:
+            g["job"] = match.group(1).strip("'\"")
+    return guides
+
+
+def check_new_skill_jobs(bi, errors, warnings):
+    added, deleted = added_and_deleted_vs_main()
+    if not added:
+        return
+    cov = load_coverage()
+    with open(cov.DATA_PATH, encoding="utf-8") as fh:
+        pack_dirs = {row["code"]: row.get("dir") or "" for row in json.load(fh)}
+    covered_by = {}
+
+    def readme_for(guide):
+        code = str(guide.get("jurisdiction") or "").upper()
+        folder = pack_dirs.get(code) or os.path.dirname(guide["path"])
+        if folder not in covered_by:
+            covered_by[folder] = cov.read_pack_readme(folder)[2]
+        return covered_by[folder]
+
+    words = job_identity.load_jurisdiction_words()
+    new_errors, new_warnings = job_conflicts(cov, guides_with_jobs(bi), added, deleted, readme_for, words)
+    errors.extend(new_errors)
+    warnings.extend(new_warnings)
+
+
+def same_job_report(bi):
+    return job_identity.same_job_groups(
+        guides_with_jobs(bi), job_identity.load_jurisdiction_words(), load_coverage().PSEUDO_CODES
+    )
 
 
 #: Bytes that may precede a frontmatter opener without being part of it:
@@ -499,6 +619,12 @@ def main():
 
     errors, warnings = [], []
     bi = load_build_index()
+    if "--duplicates-report" in sys.argv:
+        groups = same_job_report(bi)
+        with open(DUPLICATES_REPORT, "w", encoding="utf-8") as fh:
+            fh.write(job_identity.render_report(groups))
+        print(f"wrote skills/DUPLICATES.md: {len(groups)} same-job groups")
+        return
     only = None
     if changed_only:
         changed = changed_files_vs_main()
@@ -509,6 +635,11 @@ def main():
                 print("no guide files changed — validation passed")
                 return
     check_guides(bi, errors, warnings, only_files=only)
+    if changed_only:
+        check_new_skill_jobs(bi, errors, warnings)
+    else:
+        groups = same_job_report(bi)
+        warnings.append(f"{len(groups)} same-job groups, see skills/DUPLICATES.md")
     check_packages_frontmatter(bi, errors, only_files=only)
     check_us_federal_deletions(errors)
     if not no_index_check:

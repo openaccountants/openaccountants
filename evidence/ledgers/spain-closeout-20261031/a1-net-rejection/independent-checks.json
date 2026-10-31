@@ -1,0 +1,43 @@
+{
+  "verdict": "REJECT_CURRENT_NET_METHOD_FOR_ORDINARY_COMPLETION",
+  "A1_closed": false,
+  "publication_approved": false,
+  "open_findings": [
+    "F-A1-01"
+  ],
+  "does_not_hold_net_legally_impossible": true,
+  "does_not_approve_gross_as_settled": true,
+  "binding_ruling_not_only_admissible_route": true,
+  "groups_checked": [
+    "A1-01",
+    "A1-02",
+    "A1-03",
+    "A1-04",
+    "A1-05",
+    "A1-06",
+    "A1-07"
+  ],
+  "conditional_arithmetic_pass": true,
+  "guide_sha256": "3727c1fcc8a67afb0c88a1d1842397f7d2d0b4234a812eaa888fa0735d72b3a2",
+  "ledger_sha256": "6c6db1fbb41598f6eb568d56d6392d3beba293bb25424b28d7f7a80c594d05b9",
+  "baseline_guide_sha256": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+  "baseline_ledger_sha256": "6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a",
+  "ledger_exact_original_prefix": true,
+  "all348_predecessor_destinations_checked": true,
+  "exact_predecessor_lines": 343,
+  "changed_lines": [
+    21,
+    22,
+    97,
+    245,
+    435
+  ],
+  "original_examples_section_unchanged": true,
+  "original_examples_sha256": "8338088089d8a68102d083fd4efdd1b45dfe41741da51548db7d6bcd6b5f52c9",
+  "actual_examples_test": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing",
+  "frontmatter_only_date_version_changes": true,
+  "source_facts_and_provenance_pass": true,
+  "accountant_attestation": false,
+  "country_complete": false,
+  "harness_erratum": "An initial transient assertion selected a procedural-law contents heading instead of the operative article11. Corrected selector excludes the contents heading; the actual complete article was read and checked. No source or candidate change made."
+}

@@ -39,7 +39,7 @@ Sources: impots.gouv.fr, CGI (read 2026-04-12) · No accountant has signed it of
 1. A licensed accountant in the jurisdiction picks up the skill.
 2. They check the rates, thresholds, forms and deadlines against current law and recompute the worked examples.
 3. They submit corrections by pull request, or through openaccountants.com.
-4. A maintainer listed in [OWNERS.md](../OWNERS.md) merges; the skill gets `tier: 1`, `reviewed_by` and `reviewed_on`.
+4. A maintainer listed in [OWNERS.md](OWNERS.md) merges; the skill gets `tier: 1`, `reviewed_by` and `reviewed_on`.
 
 The accountant is credited publicly on the skill and in [VERIFIERS.md](../VERIFIERS.md).
 

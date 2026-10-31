@@ -1,35 +1,50 @@
 # Contributing to OpenAccountants
 
-Thanks for your interest in contributing. Here's how it works.
-
-## Who can contribute
-
-Anyone. A skill lands as **Checked against the law** (`tier: 2`): built to [the standard](docs/skill-template.md), every figure cited to the law and checked against the statute by an independent review before merge; no accountant has signed it off yet. Older skills not yet rebuilt to the standard are **Sourced from the law** (`tier: 2`): every figure cited to an official source, no accountant sign-off. Drafts are welcome; they are how most of the library started. A skill becomes **accountant-reviewed** (`tier: 1`) only when a licensed accountant whose credential we have checked reviews the whole skill and puts their name on it. Those are the only two tiers; see [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
-
-To review as an accountant: sign up at [openaccountants.com](https://www.openaccountants.com), finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number (provisional and student members of a professional body count, once checked), and set your GitHub username in your profile so we can match your pull requests to you.
-
-Not an accountant? You can still:
-
-- **Draft or fix a skill** from official sources and open a PR. It merges as Checked against the law (`tier: 2`).
-- **Report an error** in a skill by opening an issue with the source that shows it.
-- **Contribute code** (`mcp/`, `scripts/`, `calculators/`, `.github/`).
-
-There are no fees and no minimum contribution. Contributions of any kind need the [CLA](#contributor-license-agreement-cla).
-
-## The work: complete a pack
-
-[GOAL.md](GOAL.md) sets the target: every jurisdiction with a complete, verified, reviewed tax pack. The work is tracked as one issue per jurisdiction, `[XX] Complete the pack`, on the **Cover the world** milestone, labelled `coverage` plus `owner:<name>` or `owner:open`.
-
-1. Take an issue. Comment `taking` on an `owner:open` issue, or ask the owner in [OWNERS.md](OWNERS.md) for one.
-2. Branch `pack/<code>`. Draft the missing domains in the deep-tax shape from [docs/skill-template.md](docs/skill-template.md), with a `## Sources` section and two worked examples that recompute.
-3. Run `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.
-4. Open a PR with `Closes #N`. A maintainer listed in [OWNERS.md](OWNERS.md) merges. Nothing counts until merged.
-
-```
-gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "Cover the world" --state open
-```
+Anyone can contribute. Pick your door. There are no fees and no minimum. Every contribution needs the [CLA](#contributor-license-agreement-cla).
 
 **Keep it public.** This repository is read by every AI that crawls it. No client names, no prices, no internal plans, no private contact details in any file.
+
+## I can write
+
+You do not need to be an accountant. You need the law and care.
+
+1. **Find the work.** [skills/COUNTRIES.md](skills/COUNTRIES.md) gives each country pack a state:
+
+   | State | What the pack needs |
+   |---|---|
+   | Needs writing | A required domain is missing |
+   | Needs updating | A required skill is on an old or missing tax year |
+   | Needs signature | Current, but not all Accountant-reviewed |
+   | Complete | Nothing |
+
+2. **Take an issue.** Each jurisdiction has one `[XX] Complete the pack` issue. Comment `taking` on an `owner:open` issue so nobody duplicates you, or ask the owner in [docs/OWNERS.md](docs/OWNERS.md).
+
+   ```
+   gh issue list -R openaccountants/openaccountants -l coverage -l owner:open -m "Cover the world" --state open
+   ```
+
+3. **Check the skill does not exist.** One job in one country has one skill. Search [skills/REGISTER.csv](skills/REGISTER.csv) for your country and domain, and read [skills/DUPLICATES.md](skills/DUPLICATES.md). A pull request that adds or renames a skill into a duplicate group fails CI. Improve the existing skill instead.
+4. **Write it.** Branch `pack/<code>`, edit `skills/` only, and follow the standard in [docs/skill-template.md](docs/skill-template.md): cited to the law, a `## Sources` section, two worked examples that recompute.
+5. **Run the checks.** `python3 scripts/validate-guides.py --changed-only` and `python3 scripts/check-examples.py --changed-only`.
+6. **Open a PR with `Closes #N`.**
+7. **Get a separate reviewer.** Someone other than the writer (a person, or a separate AI agent with no shared context) re-reads the cited law, checks every figure, recomputes both examples, fixes what is wrong, and posts a PR comment with three parts: figures checked (a count), fixes made with sources, items still not confirmed. Only then does the PR merge. A maintainer merges; nothing counts until merged.
+
+The skill lands as **Checked against the law** (`tier: 2`). Code contributions (`mcp/`, `scripts/`, `calculators/`, `.github/`) follow the same PR route.
+
+## I am an accountant
+
+Your name goes on the tax knowledge AI actually uses.
+
+1. Sign up at [openaccountants.com](https://www.openaccountants.com) and finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number. Provisional and student members of a professional body count, once checked.
+2. Set your GitHub username in your profile so we can match your pull requests to you.
+3. Pick a skill in your jurisdiction, ideally in a pack that says Needs signature, and review the whole skill.
+4. In a PR of your own, set `tier: 1`, `reviewed_by` and `reviewed_on`. The skill becomes **Accountant-reviewed**. Your name, credential and review date go on it here and on the AI answers that cite it. The tiers are defined in [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
+
+You can also write skills through the first door.
+
+## I found a mistake
+
+[Open an issue](https://github.com/openaccountants/openaccountants/issues/new/choose) naming the skill, what is wrong, and the official source that shows it. Or fix it yourself in a PR with that source; the steps above apply.
 
 ## How to contribute a skill
 
@@ -39,12 +54,12 @@ Skills are added and changed only through pull requests to this repository.
 
 
 1. Fork this repo
-2. Create your skill in the appropriate **source** directory (`skills/federal/`, `skills/us-states/[code]/`, `skills/international/[country]/`, etc.)
+2. Create your skill in the appropriate **source** directory (`skills/us/federal/`, `skills/us/states/[code]/`, `skills/[country]/`, etc.)
 3. Follow the [skill template](docs/skill-template.md)
-4. Do **not** run any generator scripts — `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
+4. Do **not** run any generator scripts: `index.json`, `llms-full.txt` and `packages/` rebuild in the scheduled platform sync after the source change is ingested
 5. Open a PR with a description of what tax forms/schedules the skill covers
 
-> **Important:** edit `skills/**` only. `packages/`, `index.json` and `llms-full.txt` are generated — CI will ask you to revert any changes to them, and the scheduled platform sync regenerates them after confirmed source ingestion. One exception for now: **`packages/us-federal/`** is hand-authored and may be edited directly.
+> **Important:** edit `skills/**` only. `packages/`, `index.json` and `llms-full.txt` are generated: CI will ask you to revert any changes to them, and the scheduled platform sync regenerates them after confirmed source ingestion. One exception for now: **`packages/us-federal/`** is hand-authored and may be edited directly.
 
 ## Repo layout
 
@@ -54,7 +69,7 @@ Skills are added and changed only through pull requests to this repository.
 
 Every skill in `skills/` that should appear on [openaccountants.com](https://www.openaccountants.com) must either:
 
-1. Live in a **recognized country folder** (`skills/international/<country>/`, `skills/federal/`, `skills/us-states/<code>/`), **or**
+1. Live in a **recognized country folder** (`skills/<country>/`, `skills/us/federal/`, `skills/us/states/<code>/`), **or**
 2. Include **`jurisdiction:` in YAML frontmatter** (e.g. `MT`, `GB`, `US`, `US-CA`, `GLOBAL`, `INTL`)
 
 Skill changes made on openaccountants.com land here through the scheduled sync, committed under the responsible accountant's name. A merged pull request must be ingested and verified in the platform before the next outbound export. The ingestion workflow notifies the platform when configured; a maintainer handles failed notifications and backfills. The exporter must fail closed if its stored Git blob does not match the current source guide. Frontmatter uses `reviewed_by` + `review_status` (the legacy `verified_by` key is being retired automatically). Want your platform edits credited to your GitHub account? Set your GitHub username in your accountant profile on openaccountants.com.
@@ -63,17 +78,17 @@ Full details: [docs/WEBSITE-SYNC.md](docs/WEBSITE-SYNC.md)
 
 ## Skill structure and frontmatter
 
-**The canonical spec for skill files — required/optional frontmatter keys, formats, the `category` vocabulary, and the body section order — is [docs/skill-template.md](docs/skill-template.md).** Don't restate it; follow it. CI validates required guide schema with `scripts/validate-guides.py` and synchronization metadata with `scripts/check-sync-integrity.py`; citation quality and body structure still require reviewer judgment.
+**The canonical spec for skill files: required/optional frontmatter keys, formats, the `category` vocabulary, and the body section order: is [docs/skill-template.md](docs/skill-template.md).** Don't restate it; follow it. CI validates required guide schema with `scripts/validate-guides.py` and synchronization metadata with `scripts/check-sync-integrity.py`; citation quality and body structure still require reviewer judgment.
 
 One-line summary: YAML frontmatter (`name`, `description`, `jurisdiction`, `category`, `tax_year`, `tier`, `last_updated`, plus optional keys), then, for a tax skill, the deep-tax shape: who it applies to, rates and thresholds with sources, the base, deadlines, penalties, cross-border points, two worked examples that recompute, the questions to ask the client, and sources with read dates.
 
-All domain skills for a country live in the same directory (e.g., `skills/international/germany/` contains tax, bookkeeping, payroll, formation, financial statements, transfer pricing, tax optimization, and e-invoicing). The build script detects them by filename suffix and bundles the appropriate workflow base automatically.
+All domain skills for a country live in the same directory (e.g., `skills/germany/` contains tax, bookkeeping, payroll, formation, financial statements, transfer pricing, tax optimization, and e-invoicing). The build script detects them by filename suffix and bundles the appropriate workflow base automatically.
 
 ## Quality standards
 
 - Follow the ten rules in [docs/skill-template.md](docs/skill-template.md): every amount, percentage, threshold and deadline cited to the law or the tax authority, with the article and a read date; never Big Four firms or blogs; nothing unconfirmed in the skill; one independent review before merge
-- Computation rules must be mechanical — the AI should be able to follow them step by step
-- Scope must be explicit — what's covered and what's deferred to other skills
+- Computation rules must be mechanical: the AI should be able to follow them step by step
+- Scope must be explicit: what's covered and what's deferred to other skills
 - **US skills** load on top of `us-tax-workflow-base` (in `skills/foundation/`)
 - **International skills** load on top of `foundation.md` + `intake.md` (generated by `build-packages.py`)
 - **Bookkeeping skills** load on top of `bookkeeping-workflow-base` (in `skills/foundation/`)
@@ -82,40 +97,41 @@ All domain skills for a country live in the same directory (e.g., `skills/intern
 - **Formation skills** load on top of `company-formation-workflow-base` (in `skills/foundation/`)
 - **Financial statements skills** load on top of `financial-statements-workflow-base` (in `skills/foundation/`)
 - **Transfer pricing skills** load on top of `transfer-pricing-workflow-base` (in `skills/foundation/`)
-- **Tax optimization skills** are standalone — no separate workflow base; they follow the universal `workflow-base.md`
+- **Tax optimization skills** are standalone: no separate workflow base; they follow the universal `workflow-base.md`
 - **Crypto tax skills** load on top of `crypto-tax-workflow-base` (in `skills/foundation/`)
 - **Cross-border skills** load on top of `cross-border-workflow-base` (in `skills/foundation/`)
-- **Vertical skills** (industry-specific) and **integration skills** (platform-specific) are standalone in `skills/verticals/` and `skills/integrations/`
+- **Vertical skills** (industry-specific) and **integration skills** (platform-specific) are standalone in `skills/reference/verticals/` and `skills/reference/integrations/`
 - Citation format: for US, cite IRC sections, state statutes, or IRS notices; for international, cite the relevant tax authority and legislation
 
 ## Where to put your files
 
-### Quick reference — common cases
+### Quick reference: common cases
 
 | You're writing… | Put it here | Example |
 |-----------------|-------------|---------|
-| Country-specific (Malta crypto, UK VAT, Germany payroll) | `skills/international/[country]/` | `skills/international/malta/mt-crypto-tax.md` |
-| US federal | `skills/federal/` | `skills/federal/us-crypto-tax.md` |
-| US state | `skills/us-states/[code]/` | `skills/us-states/ny/ny-income-tax.md` |
+| Country-specific (Malta crypto, UK VAT, Germany payroll) | `skills/[country]/` | `skills/malta/mt-crypto-tax.md` |
+| US federal | `skills/us/federal/` | `skills/us/federal/us-crypto-tax.md` |
+| US state | `skills/us/states/[code]/` | `skills/us/states/ny/ny-income-tax.md` |
 | Global / cross-border (not one country) | `skills/cross-border/` + `jurisdiction:` in frontmatter | `skills/cross-border/oecd-model-treaty-defaults.md` with `jurisdiction: INTL` |
-| Industry vertical (developer, e-commerce) | `skills/verticals/` + `jurisdiction: GLOBAL` | `skills/verticals/freelance-developer.md` |
-| Platform integration (Stripe, Xero) | `skills/integrations/` + `jurisdiction: GLOBAL` | `skills/integrations/stripe-integration.md` |
+| Industry vertical (developer, e-commerce) | `skills/reference/verticals/` + `jurisdiction: GLOBAL` | `skills/reference/verticals/freelance-developer.md` |
+| Platform integration (Stripe, Xero) | `skills/reference/integrations/` + `jurisdiction: GLOBAL` | `skills/reference/integrations/stripe-integration.md` |
 | If unsure | Same folder as related skills + **`jurisdiction: XX`** in frontmatter | `jurisdiction: JP`, `MT`, `GLOBAL`, `US`, `US-CA`, etc. |
 
-**Rule:** Folder path is the primary signal. Frontmatter `jurisdiction:` is the backup — use it even when the folder makes it obvious.
+**Rule:** Folder path is the primary signal. Frontmatter `jurisdiction:` is the backup: use it even when the folder makes it obvious.
 
 ### Full directory map
 
 | What you're editing | Source directory |
 |---------------------|-----------------|
-| US federal skills | `skills/federal/` |
-| US state skills | `skills/us-states/[two-letter code]/` |
-| International country skills (all domains) | `skills/international/[country-slug]/` |
+| US federal skills | `skills/us/federal/` |
+| US state skills | `skills/us/states/[two-letter code]/` |
+| International country skills (all domains) | `skills/[country-slug]/` |
 | Foundation workflow bases | `skills/foundation/` (usually MCP/packages only, not website sync) |
 | Cross-border / treaty corridor rules | `skills/cross-border/` (subdirectory `treaty-corridors/` for WHT rates) |
-| Industry vertical skills | `skills/verticals/` |
-| Platform integration skills | `skills/integrations/` |
-| Orchestrator files (router, intake, assembly) | `skills/orchestrator/` |
+| Industry vertical skills | `skills/reference/verticals/` |
+| Platform integration skills | `skills/reference/integrations/` |
+| Router | `skills/foundation/global-router.md` |
+| Orchestrator files (intake, assembly) | `skills/orchestrator/` |
 
 You never need to run the generators: the scheduled platform sync regenerates every derived tree after your source change has been ingested.
 
@@ -123,7 +139,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review and merge
 
-Maintainers listed in [OWNERS.md](OWNERS.md) merge. A merged skill without an accountant reviewer is `tier: 2` (Checked against the law). When a licensed accountant reviews it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and their name goes on the skill here and on every AI answer that cites it.
+Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. A merged skill without an accountant reviewer is `tier: 2` (Checked against the law). When a licensed accountant reviews it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and their name goes on the skill here and on every AI answer that cites it.
 
 ## Contributor License Agreement (CLA)
 

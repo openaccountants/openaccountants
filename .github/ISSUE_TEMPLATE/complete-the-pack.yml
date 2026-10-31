@@ -1,5 +1,5 @@
 name: Complete the pack
-description: Take a jurisdiction to a complete, verified pack (see GOAL.md)
+description: Take a jurisdiction to a complete, verified pack (see docs/GOAL.md)
 title: "[XX] Complete the pack"
 labels: ["coverage", "owner:open"]
 body:

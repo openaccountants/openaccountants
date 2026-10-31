@@ -30,7 +30,7 @@ From the PT bundle:
 - `pt-income-tax` — IRS rates, brackets, Anexo B simplified regime coefficients
 - `pt-nhr-ifici` — NHR/IFICI special tax regime rules
 - `pt-social-contributions` — TSU self-employed contribution base and rate
-- `pt-vat-return` — IVA exemption threshold, periodic returns
+- `portugal-vat-return` — IVA exemption threshold, periodic returns
 
 ## 6-phase structure
 

@@ -3,7 +3,7 @@
 import unittest
 from pathlib import Path
 
-AU = Path(__file__).resolve().parents[1] / "skills" / "international" / "australia"
+AU = Path(__file__).resolve().parents[1] / "skills" / "australia"
 
 
 def read(name: str) -> str:

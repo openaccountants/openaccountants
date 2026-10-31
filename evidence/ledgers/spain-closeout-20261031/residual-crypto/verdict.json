@@ -1,0 +1,40 @@
+{
+  "reviewed_on": "2026-10-31",
+  "verdict": "A2_AND_A3_REMAIN_OPEN_AFTER_BOUNDED_OWN_SOURCE_CHECK",
+  "A2": {
+    "status": "OPEN",
+    "missing": "Own-Navarra cost attribution for indistinguishable same-type ordinary coin units acquired in multiple lots.",
+    "positive_existing_scope": "Actual-provenance/identified-lot and ordinary sale/swap measurement remain supplied.",
+    "fresh_results": "Current43.2 and2025manual FIFO address securities/funds; TEAF246/2015 concerns corporate inventory. No positive own ordinary-coin attribution bridge established by these sources."
+  },
+  "A3": {
+    "status": "OPEN",
+    "missing": "Own-Álava timing and amount of later release of ordinary same-type crypto losses already blocked under43(i).",
+    "positive_existing_scope": "Valuation, FIFO and statutory two-month block supplied; preserve actual affected units/loss.",
+    "fresh_results": "Current43 release paragraph remains g/h-only before separatei; originalNF21/2025 insertsi without amending release. Manual crypto section supplies valuation/FIFO, not release; latestDF36/2026 is reporting/diligence and does not modify43 or supply release."
+  },
+  "reported_public_queries": {
+    "attribution": "Root writer reports from native official databases; not independently replayed by this reviewer. Empty results are not proof that no relevant private/unindexed ruling exists.",
+    "Navarra_TEAF": {
+      "queries": [
+        "criptomonedas",
+        "monedas virtuales",
+        "criptoactivos"
+      ],
+      "reported_hits": 0,
+      "FIFO_hit": "TEAF246/2015, independently inspected and rejected as nonresponsive corporate inventory law"
+    },
+    "Alava_consultations": {
+      "query_crypto_reported_hits": 0,
+      "query_virtuales_reported_hits": 1,
+      "reported_nonresponsive_subject": "2014online teaching VAT; not relied upon as crypto income-tax law"
+    }
+  },
+  "does_not_establish_no_authority_exists": true,
+  "does_not_import_State_or_sibling_province_method": true,
+  "does_not_invent_zero_basis_or_permanent_loss": true,
+  "A1_and_A4_separate_exact_PASS_unchanged": true,
+  "country_issue391_close": false,
+  "minimum_future_evidence": "Own directly responsive rule/ruling or a positively justified own-law method for the actual ordinary group, followed by independent finite delta review. A binding ruling is not uniquely required.",
+  "scope": "Bounded requested existing fresh sources and latest reporting amendment only; no new whole-pack audit."
+}

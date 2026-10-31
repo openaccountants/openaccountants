@@ -1,0 +1,71 @@
+{
+  "single_eligible_part_year": {
+    "inputs": {
+      "actual_nonspecific": 18400,
+      "specific": 3000,
+      "qualifying_days": 46,
+      "relationship_duration_days": 184,
+      "own_year_denominator": 365
+    },
+    "exempt": {
+      "rational": "388280/73",
+      "decimal": "5318.90410958904109589041095890410958904109589",
+      "display": "5318.90"
+    },
+    "residual": {
+      "rational": "1173920/73",
+      "decimal": "16081.0958904109589041095890410958904109589041",
+      "display": "16081.10"
+    },
+    "expected_display_matches": true
+  },
+  "successive_payers": {
+    "components": [
+      {
+        "rational": "212940/73",
+        "decimal": "2916.98630136986301369863013698630136986301370",
+        "display": "2916.99"
+      },
+      {
+        "rational": "132480/73",
+        "decimal": "1814.79452054794520547945205479452054794520548",
+        "display": "1814.79"
+      }
+    ],
+    "aggregate": {
+      "rational": "345420/73",
+      "decimal": "4731.78082191780821917808219178082191780821918",
+      "display": "4731.78"
+    },
+    "expected_display_matches": true
+  },
+  "one_cap": {
+    "eligible": 80000,
+    "taxpayer_cap": 60100,
+    "exempt": 60100,
+    "residual": 19900,
+    "passes": true
+  },
+  "specific_pay_not_prorated_twice": {
+    "specific_included_once": 3000,
+    "nonspecific": {
+      "rational": "169280/73",
+      "decimal": "2318.90410958904109589041095890410958904109589",
+      "display": "2318.90"
+    },
+    "combined": {
+      "rational": "388280/73",
+      "decimal": "5318.90410958904109589041095890410958904109589",
+      "display": "5318.90"
+    },
+    "passes": true
+  },
+  "domestic_only_payer": {
+    "salary": 50000,
+    "specific": 0,
+    "qualifying_days": 0,
+    "increment": "0",
+    "aggregate_unchanged": "345420/73",
+    "passes": true
+  }
+}
