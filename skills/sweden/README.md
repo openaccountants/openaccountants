@@ -16,7 +16,7 @@ Calendar tax year for individuals; companies are taxed per financial year (räke
 |---|---|---|
 | IT-IND, individual income tax | se-employee-income-tax, se-income-tax, se-capital-gains, se-closely-held-company-312 | sourced from the law |
 | IT-CORP, corporate income tax | se-corporate-tax | checked against the law |
-| VAT | sweden-vat-return (2026 deep-tax), se-vat-return (older duplicate, to be merged) | source-cited draft |
+| VAT | sweden-vat-return (2026 deep-tax) | source-cited draft |
 | SC, social contributions | se-social-contributions, sweden-payroll, se-employee-income-tax | checked against the law |
 | PR, payroll withholding | sweden-payroll, se-benefits-and-allowances | checked against the law |
 | TP, transfer pricing | se-transfer-pricing | checked against the law |

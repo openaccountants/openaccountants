@@ -1,6 +1,6 @@
 ---
 name: se-transfer-pricing
-description: "Swedish transfer pricing (internprissättning) for companies with cross-border related-party transactions, tax year 2026. Covers the arm's length rule in Inkomstskattelagen 14 kap. 19-20 §§ (korrigeringsregeln) and what counts as ekonomisk intressegemenskap; the documentation duty in Skatteförfarandelagen 39 kap. 15-16 f §§ and Skatteförfarandeförordningen 9 kap. 9-19 §§ (group part and company part, the 250 employees / SEK 450 million / SEK 400 million exemption, the SEK 5 million immaterial-transaction rule, timing, language, seven-year retention); country-by-country reports (SFL 33 a kap., SEK 7 billion, twelve months, notification); prissättningsbesked (APA) fees; MAP and the EU dispute law 2019:601; skattetillägg and reopening periods. Trigger on: internprissättning, transfer pricing Sweden, armlängdsprincipen, korrigeringsregeln, master file, local file, land-för-land-rapport, CbCR Sweden, prissättningsbesked, APA Sweden, ömsesidig överenskommelse. Out of scope: corporate tax computation and interest limitation (se-corporate-tax), cross-border individuals and exit tax (se-cross-border), VAT (se-vat-return)."
+description: "Swedish transfer pricing (internprissättning) for companies with cross-border related-party transactions, tax year 2026. Covers the arm's length rule in Inkomstskattelagen 14 kap. 19-20 §§ (korrigeringsregeln) and what counts as ekonomisk intressegemenskap; the documentation duty in Skatteförfarandelagen 39 kap. 15-16 f §§ and Skatteförfarandeförordningen 9 kap. 9-19 §§ (group part and company part, the 250 employees / SEK 450 million / SEK 400 million exemption, the SEK 5 million immaterial-transaction rule, timing, language, seven-year retention); country-by-country reports (SFL 33 a kap., SEK 7 billion, twelve months, notification); prissättningsbesked (APA) fees; MAP and the EU dispute law 2019:601; skattetillägg and reopening periods. Trigger on: internprissättning, transfer pricing Sweden, armlängdsprincipen, korrigeringsregeln, master file, local file, land-för-land-rapport, CbCR Sweden, prissättningsbesked, APA Sweden, ömsesidig överenskommelse. Out of scope: corporate tax computation and interest limitation (se-corporate-tax), cross-border individuals and exit tax (se-cross-border), VAT (sweden-vat-return)."
 version: 0.1
 jurisdiction: SE
 tax_year: 2026
@@ -44,22 +44,22 @@ See also, in this pack: `se-corporate-tax` (the 20.6% rate, the taxable base, th
 |---|---|---|---|
 | Tax on an upward transfer pricing adjustment | 20.6% corporate income tax on the extra income (see `se-corporate-tax`) | 2026 | IL 65 kap. 10 §, https://data.riksdagen.se/dokument/sfs-1999-1229.text |
 | Exemption from documentation: employees | Group (intressegemenskap) has fewer than 250 employees in the year before the tax year | 2026 | SFL 39 kap. 16 a §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
-| Exemption from documentation: size | And either turnover of not more than SEK 450,000,000 or a balance sheet total of not more than SEK 400,000,000, for the whole group, in the year before the tax year | 2026 | SFL 39 kap. 16 a § |
-| Immaterial transactions, local file | Transactions with one non-resident related company (or attributable to one fast driftställe) totalling less than SEK 5,000,000 in the financial year always count as immaterial. Does not cover licensing or transfer of intangibles that matter to the business | 2026 | SFL 39 kap. 16 c § |
-| Documentation languages | Swedish, Danish, Norwegian or English | 2026 | SFL 39 kap. 16 e § |
+| Exemption from documentation: size | And either turnover of not more than SEK 450,000,000 or a balance sheet total of not more than SEK 400,000,000, for the whole group, in the year before the tax year | 2026 | SFL 39 kap. 16 a §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Immaterial transactions, local file | Transactions with one non-resident related company (or attributable to one fast driftställe) totalling less than SEK 5,000,000 in the financial year always count as immaterial. Does not cover licensing or transfer of intangibles that matter to the business | 2026 | SFL 39 kap. 16 c §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Documentation languages | Swedish, Danish, Norwegian or English | 2026 | SFL 39 kap. 16 e §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 | Retention of documentation | Seven years after the end of the calendar year in which the tax year ended | 2026 | SFF 9 kap. 19 §, https://data.riksdagen.se/dokument/sfs-2011-1261.text |
-| Country-by-country report: threshold | Groups with consolidated revenue of SEK 7,000,000,000 or more in the year before the reported year. A Swedish group member of a foreign-parented group is exempt if the parent is exempt at home because revenue is below EUR 750 million or the local equivalent | 2026 | SFL 33 a kap. 6 § |
-| Country-by-country report: deadline | Within 12 months after the end of the reported financial year | 2026 | SFL 33 a kap. 11 § |
-| Country-by-country notification | Before the end of the reported financial year | 2026 | SFL 33 a kap. 12 § |
+| Country-by-country report: threshold | Groups with consolidated revenue of SEK 7,000,000,000 or more in the year before the reported year. A Swedish group member of a foreign-parented group is exempt if the parent is exempt at home because revenue is below EUR 750 million or the local equivalent | 2026 | SFL 33 a kap. 6 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Country-by-country report: deadline | Within 12 months after the end of the reported financial year | 2026 | SFL 33 a kap. 11 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Country-by-country notification | Before the end of the reported financial year | 2026 | SFL 33 a kap. 12 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 | APA fee, new application | SEK 150,000 per foreign state covered | 2026 | Förordning (2009:1295) 7-8 §§, https://data.riksdagen.se/dokument/sfs-2009-1295.text |
-| APA fee, renewal | SEK 100,000 per foreign state | 2026 | Förordning (2009:1295) 7-8 §§ |
-| APA fee, renewal with changes | SEK 125,000 per foreign state | 2026 | Förordning (2009:1295) 7-8 §§ |
+| APA fee, renewal | SEK 100,000 per foreign state | 2026 | Förordning (2009:1295) 7-8 §§, https://data.riksdagen.se/dokument/sfs-2009-1295.text |
+| APA fee, renewal with changes | SEK 125,000 per foreign state | 2026 | Förordning (2009:1295) 7-8 §§, https://data.riksdagen.se/dokument/sfs-2009-1295.text |
 | APA term | Three to five tax years, unless special reasons | 2026 | Lag (2009:1289) 15 §, https://data.riksdagen.se/dokument/sfs-2009-1289.text |
-| MAP request | No fee | 2026 | Skatteverket, Undanröjande av dubbelbeskattning |
+| MAP request | No fee | 2026 | Skatteverket, Undanröjande av dubbelbeskattning, https://www.skatteverket.se/foretagochorganisationer/skatter/internationellt/dubbelbeskattning/undanrojandeavdubbelbeskattning.106.233f91f71260075abe8800018011.html |
 | EU dispute resolution request | Within three years of being notified of the measure causing the dispute | 2026 | Lag (2019:601) 2 kap. 2 §, https://data.riksdagen.se/dokument/sfs-2019-601.text |
-| Skattetillägg on an incorrect return | 40% of the tax that would have been avoided; 10% if the error only puts income in the wrong year | 2026 | SFL 49 kap. 11 §, 13 § |
-| Ordinary reassessment period (to the taxpayer's detriment) | Two years from the end of the calendar year in which the tax year ended | 2026 | SFL 66 kap. 21 § |
-| Extended reassessment (efterbeskattning) | Six years from the end of that calendar year, for example where the return contained an oriktig uppgift | 2026 | SFL 66 kap. 27 § |
+| Skattetillägg on an incorrect return | 40% of the tax that would have been avoided; 10% if the error only puts income in the wrong year | 2026 | SFL 49 kap. 11 §, 13 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Ordinary reassessment period (to the taxpayer's detriment) | Two years from the end of the calendar year in which the tax year ended | 2026 | SFL 66 kap. 21 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
+| Extended reassessment (efterbeskattning) | Six years from the end of that calendar year, for example where the return contained an oriktig uppgift | 2026 | SFL 66 kap. 27 §, https://data.riksdagen.se/dokument/sfs-2011-1244.text |
 
 ## The taxable base
 
