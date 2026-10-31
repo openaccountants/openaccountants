@@ -3,10 +3,11 @@ name: ma-auto-entrepreneur-4
 description: Use this skill whenever asked about Morocco's auto-entrepreneur regime — the simplified turnover-based tax and social-cover status for freelancers and micro-businesses. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers turnover ceilings, the 0.5%/1% liberatory IR, the single-client 80,000 MAD anti-disguised-salary withholding, dedicated CNSS/AMO cover, registration via the RNAE (Poste Maroc / ae.gov.ma), excluded regulated professions, and exit on ceiling breach. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and ma-income-tax for alternatives.
 jurisdiction: MA
 tax_year: 2025
-last_updated: 2026-08-22
+last_updated: 2026-10-31
+version: 0.2
 authored_by: Mr Moe Lwin Tun
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -200,7 +201,7 @@ The agent must **never** present these as settled; it presents the computation, 
 
 This skill is **research-verified** against public sources (DGI / tax.gov.ma, the auto-entrepreneur portal ae.gov.ma, PwC Worldwide Tax Summaries, and reporting on the Loi de Finances 2025/2026) as of **May 2026**. It is **YMYL** content and is **pending sign-off by a Moroccan accountant (expert-comptable)**. Rates, ceilings, CNSS bracket amounts, and deadlines change with each Loi de Finances and must be **re-verified** before use. Nothing here is a substitute for advice from a licensed Moroccan expert-comptable or the DGI. Part of **openaccountants.com** — open-source tax skills for the self-employed.
 
-> Contributed by Mr Moe Lwin Tun, CPA-123456.
+> Contributed by Mr Moe Lwin Tun.
 
 <!-- openaccountants-cta-block -->
 

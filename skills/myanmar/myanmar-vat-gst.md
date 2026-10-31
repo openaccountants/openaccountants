@@ -3,10 +3,11 @@ name: myanmar-vat-gst
 description: "Source-cited draft: vat / gst for Myanmar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: MM
 tax_year: 2025
-last_updated: 2026-08-22
+last_updated: 2026-10-31
+version: 0.2
 authored_by: Mr Moe Lwin Tun
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -27,15 +28,14 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Sources
 
-Check out Mr Moe Lwin Tun(johnDoe/John.Smith)’s profile on LinkedIn https://mm.linkedin.com/in/mr-moe-lwin-tun-johndoe-john-smith-2b649b428
 
-> Contributed by Ko win Khaing (Mr Moe Lwin Tun), CPA-123456.
+> Contributed by Ko win Khaing (Mr Moe Lwin Tun).
 
 ## Sources
 
 Statue
 
-> Contributed by Mr Moe Lwin Tun, CPA-123456.
+> Contributed by Mr Moe Lwin Tun.
 
 <!-- openaccountants-cta-block -->
 
