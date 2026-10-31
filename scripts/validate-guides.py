@@ -335,7 +335,7 @@ def check_merge_records(errors, warnings, pr_body=None, deleted=None, old_text=N
     deleted = added_and_deleted_vs_main()[1] if deleted is None else deleted
     pr_body = pull_request_body() if pr_body is None else pr_body
     for rel in sorted(deleted):
-        if not rel.startswith("skills/") or not rel.endswith(".md") or os.path.basename(rel) == "README.md":
+        if not rel.startswith("skills/") or not rel.endswith(".md") or os.path.basename(rel) in ("README.md", "SOURCES.md"):
             continue
         slug = os.path.splitext(os.path.basename(rel))[0]
         if pr_body is None:
@@ -391,7 +391,7 @@ def packages_files():
         for filename in sorted(filenames):
             if not filename.endswith(".md"):
                 continue
-            if filename.lower().startswith("readme"):
+            if filename.lower().startswith("readme") or filename.lower() == "sources.md":
                 continue
             full = os.path.join(dirpath, filename)
             paths.append(os.path.relpath(full, REPO_ROOT).replace(os.sep, "/"))
