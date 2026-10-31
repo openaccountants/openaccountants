@@ -531,7 +531,7 @@ Refer:    only clear and compelling evidence could support a nil position.
 - [Profit-making scheme] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme (read 2026-10-31)
 - [Trading] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading (read 2026-10-31)
 - [Mining] https://www.ird.govt.nz/cryptoassets/individual/mining (read 2026-10-31)
-- [Airdrops and forks] https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks (read 2026-10-31)
+- [Airdrops and forks] https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks (page text was a stub when tried on 2026-10-31; not read)
 - [New residents] https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning (read 2026-10-31)
 - [Taxing] https://www.ird.govt.nz/cryptoassets/taxing (read 2026-10-31)
 - [Records] https://www.ird.govt.nz/cryptoassets/taxing/record-keeping (read 2026-10-31)
@@ -541,7 +541,7 @@ Refer:    only clear and compelling evidence could support a nil position.
 - Linked in the method steps: [Buying and selling], [Acquiring to sell], [Tax residence], [Calculating income], [Crypto and GST], [Declare], QB 21/06
 - Rate, GST, IR3 and provisional tax pages: linked in their tables
 - Technical decision summary 25/23: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051 (read 2026-10-31)
-- IRRUIP18: https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18 (read 2026-10-31)
+- IRRUIP18: https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18 (landing page read 2026-10-31; the paper itself not read)
 - Tax Information Bulletin Vol 34 No 5: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927 (read 2026-10-31)
 
 Not yet confirmed: none beyond the points this skill refers out.
