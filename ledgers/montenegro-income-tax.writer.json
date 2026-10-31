@@ -2695,7 +2695,7 @@
           "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
           "read_on": "2026-10-31",
           "source_file": "sources/pausal-rule-through118-2024.txt",
-          "original_language_quote": "- u prvu podgrupu spadaju obveznici čiji promet iznosi do 7.500,00 €;",
+          "original_language_quote": "do 15.000,00       do 7.500,00 €                  0,00 €              825,00 €",
           "full_context_sha256": "b10f60ae47b80e1846c98b62f3425f3396181c7400c57e1bc4b82025d95f3540"
         }
       ],
@@ -2727,7 +2727,7 @@
           "official_url": "https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0",
           "read_on": "2026-10-31",
           "source_file": "sources/pausal-rule-through118-2024.txt",
-          "original_language_quote": "- u drugu podgrupu spadaju obveznici čiji promet iznosi do 15.000,00 €;",
+          "original_language_quote": "do 30.000,00      do 15.000,00 €               774,00 €             2.424,00 €",
           "full_context_sha256": "b10f60ae47b80e1846c98b62f3425f3396181c7400c57e1bc4b82025d95f3540"
         }
       ],

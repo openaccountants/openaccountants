@@ -890,7 +890,7 @@ The four activity groups recognise costs of I: 50%, II: 40%, III: 35%, IV: 30%. 
 
 | I / 50% | 15,000.00 | 7,500.00 | 0.00 | 825.00 | [Pausal Rulebook art. 5][pausal] |
 
-- Article 5; https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0; read 2026-10-31; original quote: - u prvu podgrupu spadaju obveznici čiji promet iznosi do 7.500,00 €;
+- Article 5; https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0; read 2026-10-31; original quote: do 15.000,00       do 7.500,00 €                  0,00 €              825,00 €
 
 ## ME-PIT-108: Lump-sum scale, application and turnover book
 
@@ -902,7 +902,7 @@ The four activity groups recognise costs of I: 50%, II: 40%, III: 35%, IV: 30%. 
 
 | I / 50% | 30,000.00 | 15,000.00 | 774.00 | 2,424.00 | [Pausal Rulebook art. 5][pausal] |
 
-- Article 5; https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0; read 2026-10-31; original quote: - u drugu podgrupu spadaju obveznici čiji promet iznosi do 15.000,00 €;
+- Article 5; https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0; read 2026-10-31; original quote: do 30.000,00      do 15.000,00 €               774,00 €             2.424,00 €
 
 ## ME-PIT-110: Lump-sum scale, application and turnover book
 

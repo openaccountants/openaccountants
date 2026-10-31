@@ -14,3 +14,7 @@ Original reviewed candidate: `8a3ac55c83def25a74fc39f3d184afb87c543603`. Origina
 | ME-R08 | Scope bank-line VAT to output remittances/recoverable input; other VAT goes to the underlying expense/asset workpaper. |
 
 All eleven original PIT oa-check blocks remain exact; all nine appendix examples including their original prose remain verbatim. Corrected old legal statements are explicitly mapped as source corrections; all other original topics and gaps remain. Two minor whitespace findings were repaired. Required independent exact-commit repair review and GitHub checks remain separate gates. No accountant attestation or comprehensive coverage claim.
+
+## Exact repair recheck: scale-quote correction
+
+The exact9ff07a816 review closed all eight initial findings but found two quote locators selecting earlier article4 subgroup text. ME-PIT-107 and109 now quote their exact article5 table rows (groupI turnover ceilings15,000 and30,000, taxable incomes7,500 and15,000). Guide figures, all calculations and original article5 context hashes are unchanged. The source quote locator is restricted to article5 for future regeneration. Final independent provenance recheck remains required.
