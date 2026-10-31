@@ -1,10 +1,10 @@
 ---
 name: japan-bookkeeping
 description: Use this skill whenever asked about Japanese bookkeeping for sole proprietors (個人事業主), small corporations (中小企業), or any entity using Japanese GAAP. Trigger on phrases like "勘定科目", "chart of accounts", "bookkeeping Japan", "損益計算書", "P&L", "貸借対照表", "balance sheet", "青色申告", "白色申告", "確定申告", "仕訳", "複式簿記", "消費税", "減価償却", "少額減価償却資産", "中小会計要領", "freee", "弥生", "bank reconciliation", "expense classification", "revenue recognition", or any question about day-to-day transaction recording, financial statement preparation, or account coding for a Japanese business.
-version: 1.0
+version: 1.1
 jurisdiction: JP
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
