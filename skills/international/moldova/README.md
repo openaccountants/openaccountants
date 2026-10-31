@@ -1,18 +1,15 @@
 ---
 jurisdiction: MD
-version: 0.2
-last_updated: 2026-10-30
+version: 0.3
+last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   TP: md-transfer-pricing
   XB: md-cross-border
 partial:
-  IT-IND: "skills carry tax_year 2025 and are not yet rebuilt to the 2026 standard"
   IT-CORP: "md-corporate-income-tax carries tax_year 2025 and is not yet rebuilt to the 2026 standard"
-  VAT: "moldova-vat carries tax_year 2025 and is not yet rebuilt to the 2026 standard"
-  SC: "moldova-social-contributions carries tax_year 2025 and is not yet rebuilt to the 2026 standard"
-  PR: "moldova-payroll carries tax_year 2025 and is not yet rebuilt to the 2026 standard"
+  PR: "moldova-payroll gives the annual withholding computation; the Government method for monthly withholding (Fiscal Code art. 88(1)) is not confirmed"
   XB: "md-cross-border covers nonresident withholding, permanent establishments, treaty proof and the foreign tax credit; individual residence tests and permanent-establishment profit computation are not covered"
 ---
 
@@ -24,11 +21,11 @@ Moldova taxes income under the Fiscal Code No. 1163/1997, administered by the St
 
 | Domain | Skill | Status |
 |---|---|---|
-| IT-IND, individual income tax | moldova-income-tax, md-tax-overview, moldova-tax-optimization | sourced from the law (tax_year 2025) |
+| IT-IND, individual income tax | moldova-income-tax, md-tax-overview, moldova-tax-optimization | checked against the law |
 | IT-CORP, corporate income tax | md-corporate-income-tax, md-company-formation | sourced from the law (tax_year 2025) |
-| VAT | moldova-vat | sourced from the law (tax_year 2025) |
-| SC, social contributions | moldova-social-contributions | sourced from the law (tax_year 2025) |
-| PR, payroll withholding | moldova-payroll | sourced from the law (tax_year 2025) |
+| VAT | moldova-vat | checked against the law |
+| SC, social contributions | moldova-social-contributions | checked against the law |
+| PR, payroll withholding | moldova-payroll | checked against the law, partial |
 | TP, transfer pricing | md-transfer-pricing | checked against the law |
 | XB, cross-border | md-cross-border | checked against the law, partial |
 
