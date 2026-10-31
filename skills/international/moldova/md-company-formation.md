@@ -1,6 +1,6 @@
 ---
 name: md-company-formation
-description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited writer draft preserves predecessor topics, states current-form and specialist gaps, and has a bounded source-review record linked under Sources. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
+description: "Prepare Moldova company formation and entity choice for 2026 using the current SRL, state-registration, joint-stock and accounting laws. Covers ordinary SRL constitution, founders and statute, subscribed capital and payments, the SA capital screen, ASP application documents and representation, foreign documents, standard and urgent company-registration tariffs, one-stop fiscal records, register changes and annual accounts. Use for incorporation, SRL versus individual entrepreneur, an SA proposal, IDNO, beneficial-owner disclosure, foreign founders, accounting and filing planning. This source-cited draft states current-form and specialist gaps, and has a bounded source-review record linked under Sources. It does not establish every securities, regulated-sector, AML, banking or historical procedure or claim accountant attestation."
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -28,7 +28,7 @@ An ordinary SRL has no general numerical member cap. The article-11(4) exception
 |---|---|---|
 | Ordinary SRL capital | Amount set in the statute and/or registered in the State Register. Article 21 states no fixed numerical minimum; this is not a certified universal **1 MDL** minimum or an exemption from sector-specific capital rules | [Law 135 art. 21][srl] |
 | SRL contributions | Each member must pay the subscribed contribution in full within **six months after registration**; total contributions cannot be below subscribed capital | [Law 135 art. 22(2), (6)–(8)][srl] |
-| SA minimum capital | **600,000 MDL** under the currently operative general SA law. The predecessor's 20,000 MDL figure is not the current article-38 floor | [Law 1134 art. 38(1)–(6)][sa] |
+| SA minimum capital | **600,000 MDL** under the currently operative general SA law. | [Law 1134 art. 38(1)–(6)][sa] |
 | Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff][asp]; [Law 220 art. 4][register] |
 | Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff][asp]; [Law 220 art. 4(6)][register] |
 | Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service][aspii] |
@@ -173,7 +173,7 @@ Accounting is kept in Romanian and national currency, with foreign-currency tran
 
 The responsible person signs before presentation. Mandatory audit includes medium/large entities, public-interest entities, other legally specified entities and the prescribed consolidated accounts. Audited statements and related management/audit reports are published on the entity's website within the article-33 deadline and remain available at least **five years**. The stated suspension exception is in article 33(6^1). A routine tax return is not a substitute for those accounts or audit/publication duties. Actual BNS/SNC templates, public-interest classification and a taxpayer's precise deadline-rollover calculation remain separate checks. [Accounting Law arts. 18, 31–33][accounts].
 
-Use the [corporate](md-corporate-income-tax.md), [individual](moldova-income-tax.md), [VAT](moldova-vat.md), [payroll](moldova-payroll.md) and [social/medical](moldova-social-contributions.md) methods for tax compliance. Obtain the chosen bank's actual account-opening/KYC requirements after establishing the entity and authorised signatories; the predecessor's bank-account step is retained as an implementation requirement, not a verified promise about a bank's timing or acceptance.
+Use the [corporate](md-corporate-income-tax.md), [individual](moldova-income-tax.md), [VAT](moldova-vat.md), [payroll](moldova-payroll.md) and [social/medical](moldova-social-contributions.md) methods for tax compliance. Obtain the chosen bank's actual account-opening/KYC requirements after establishing the entity and authorised signatories.
 
 ## Penalties and interest
 
@@ -232,7 +232,7 @@ Obtain the activities and regulated permissions; founders' legal form, countries
 
 **Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
-Read 30 October 2026. The formation ledger retains each source context, short original-language quote, read date, hash and predecessor-topic destination. This is a writer draft; the bounded source-review record is linked under Sources and accountant attestation remains open.
+Sources read 30 October 2026.
 
 | Primary source | Scope actually read | Read date |
 |---|---|---|
@@ -250,11 +250,11 @@ Read 30 October 2026. The formation ledger retains each source context, short or
 | [HG 966/2020, operative October 2026 consolidation][tariff966] | Introductory tariff/relief approvals and funding method; no verification of every attached tariff | 2026-10-30 |
 | [ASP founder conviction declaration][founderconviction] and [administrator/founder declaration][entityfounderconviction] | Each one-page blank form read in full and visually inspected; actual role fields and statement, not a criminal-record certificate | 2026-10-30 |
 
-**Not yet confirmed:** actual discrepancy-notation/removal forms and approved operational procedure; other entity-specific declaration variants beyond the company/individual forms mapped here; full constitution/model; case-specific conviction expiry, rehabilitation and foreign-record recognition beyond the sourced founder declaration and SRL administrator tests; current national PEP-list/foreign-role screening and complete reporting-entity AML operations beyond the sourced ownership, disclosure and due-diligence interface; remaining fee-relief support-instrument/first-year evidence and urgent-track handling, other unquoted service tariffs; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps and in the archived original. No most-common-entity statistic, comprehensive country coverage or accountant attestation is claimed.
+**Not yet confirmed:** actual discrepancy-notation/removal forms and approved operational procedure; other entity-specific declaration variants beyond the company/individual forms mapped here; full constitution/model; case-specific conviction expiry, rehabilitation and foreign-record recognition beyond the sourced founder declaration and SRL administrator tests; current national PEP-list/foreign-role screening and complete reporting-entity AML operations beyond the sourced ownership, disclosure and due-diligence interface; remaining fee-relief support-instrument/first-year evidence and urgent-track handling, other unquoted service tariffs; bank-specific account-opening/KYC procedure; full SA constitution/securities-registration and sector-capital/permit requirements; detailed BNS/SNC templates, public-interest determination and individual deadline rollover; all 2026 historical formation/amendment transitions and cross-border document treaty exemptions. The old SRL 1 MDL example, SA 20,000 MDL minimum, approximate fee and universal one-day completion were not retained as certified rules. Their subjects remain in the current method or precise gaps. No most-common-entity statistic, comprehensive country coverage or accountant attestation is claimed.
 
-Actual ASP individual application (two pages), instructions (three pages), BE-8 first page, individual-registration tariff and name-service tariff/requirements read 30 October 2026. The formation ledger binds their retained texts and PDF hashes. No full PEP-list or portal validation is claimed.
+Actual ASP individual application (two pages), instructions (three pages), BE-8 first page, individual-registration tariff and name-service tariff/requirements read 30 October 2026. No full PEP-list or portal validation is claimed.
 
-Actual company application (two pages), completion instructions (five pages), BE-1/BE-2 core pages (two each), selected ASP SRL checklist, ASP beneficial-owner guidance and current Law 308 articles 4–5, 5^2, 8, 8^1 and 14 read 30 October 2026. The latest displayed consolidation is effective 13 August 2026. Source texts, PDF hashes and the exact inspected-page scope are retained in the formation ledger.
+Actual company application (two pages), completion instructions (five pages), BE-1/BE-2 core pages (two each), selected ASP SRL checklist, ASP beneficial-owner guidance and current Law 308 articles 4–5, 5^2, 8, 8^1 and 14 read 30 October 2026. The latest displayed consolidation is effective 13 August 2026.
 
 Post-formation company application 3-11 (one page), its instructions (three pages), individual update application 3-22 (one page), its instructions (three pages), BE-3 core (pages 1–2 of seven), provisional-data form 3-34 (one page) and their actual ASP catalogue entries were read 30 October 2026. Eleven pages were rendered and visually inspected. These blank forms do not verify the separate discrepancy-clearance procedure, current PEP annex or a live portal submission.
 
@@ -299,7 +299,7 @@ The current Civil Code articles 199 and 246–249, SRL Law articles 69–72, SME
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
