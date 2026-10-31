@@ -22,7 +22,7 @@ See also, and do not repeat here:
 - **de-employee-income-tax**: the 2026 tariff, Werbungskosten and special expenses for a resident employee. The tariff formula there is the one used below.
 - **de-rental-income**: how to compute the rental result (AfA, Werbungskosten, Anlage V). A non-resident landlord computes it the same way.
 - **de-capital-gains**: the flat tax on investment income, the Sparer-Pauschbetrag and the loss pots.
-- **de-payroll** and **germany-payroll**: running wage tax for an employee, including tax class I.
+- **de-payroll**: running wage tax for an employee, including tax class I.
 - **de-corporate-tax**: corporate tax at 15%, also for the German permanent establishment of a foreign company.
 - **leaving-germany-exit-tax**: shareholders who move out, and extended limited liability after a move to a low-tax country (§ 2 AStG).
 - **germany-to-switzerland-cross-border-tax**: Swiss commuters and moves to Switzerland.

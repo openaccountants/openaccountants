@@ -1,6 +1,6 @@
 ---
 name: netherlands-payroll
-description: "Running Dutch payroll for tax year 2026: wage tax and national insurance withheld through the loonheffingen (Wet LB 1964), white and green tables, special-remuneration tables, the 2026 combined bands (35.75%, 37.56%, 49.50%) and the AOW-age bands, the payroll tax credits applied by one employer, the 52% anonymous rate, employer premiums (AWf, Aof, Wko, Whk, Ufo) and the Zvw levy on the EUR 79,409 cap, the director's customary wage of EUR 58,000, minimum wage, holiday pay and the transition payment, the monthly and four-weekly loonaangifte calendar, corrections, the EUR 83 and 3% penalties, payslips and the annual statement. Trigger phrases: loonheffing, loonaangifte, Dutch payroll, loonstrook, witte tabel, groene tabel, bijzondere beloningen, anoniementarief, minimumloon, vakantiegeld, nulaangifte, betaalverzuimboete. Out of scope: WKR detail (nl-payroll-tax), premium detail and self-employed (nl-social-contributions), company car (nl-company-car), expat scheme (netherlands-30-percent-ruling), cross-border (nl-cross-border)."
+description: "Running Dutch payroll for tax year 2026: wage tax and national insurance withheld through the loonheffingen (Wet LB 1964), white and green tables, special-remuneration tables, the 2026 combined bands (35.75%, 37.56%, 49.50%) and the AOW-age bands, the payroll tax credits applied by one employer, the 52% anonymous rate, employer premiums (AWf, Aof, Wko, Whk, Ufo) and the Zvw levy on the EUR 79,409 cap, the director's customary wage of EUR 58,000, minimum wage, holiday pay and the transition payment, the monthly and four-weekly loonaangifte calendar, corrections, the EUR 83 and 3% penalties, payslips and the annual statement. Trigger phrases: loonheffing, loonaangifte, Dutch payroll, loonstrook, witte tabel, groene tabel, bijzondere beloningen, anoniementarief, minimumloon, vakantiegeld, nulaangifte, betaalverzuimboete. Out of scope: WKR detail (nl-payroll-tax), premium detail and self-employed (nl-social-contributions), company car (nl-company-car), expat scheme (nl-30-percent-ruling), cross-border (nl-cross-border)."
 version: 1.2
 jurisdiction: NL
 tax_year: 2026
@@ -23,7 +23,7 @@ Every employer who pays wages to an employee and is a withholding agent (inhoudi
 
 Use the Handboek Loonheffingen 2026 (version March 2026) with the rates appendix, edition 4 of 25 June 2026. Edition 4 corrects two figures from earlier editions: the general credit base runs "up to and including" EUR 29,736, and the employment credit ends at EUR 132,920 (not EUR 132,290). For a 2025 correction, use the 2025 tables.
 
-Out of this skill: the work-cost scheme (WKR) in detail, see nl-payroll-tax; premium rules in depth and the self-employed, see nl-social-contributions; private use of a company car, see nl-company-car; the expat scheme, see netherlands-30-percent-ruling; who is insured where and treaty allocation, see nl-cross-border. Annual income tax for the employee: nl-income-tax.
+Out of this skill: the work-cost scheme (WKR) in detail, see nl-payroll-tax; premium rules in depth and the self-employed, see nl-social-contributions; private use of a company car, see nl-company-car; the expat scheme, see nl-30-percent-ruling; who is insured where and treaty allocation, see nl-cross-border. Annual income tax for the employee: nl-income-tax.
 
 ## Rates, bands and thresholds
 
@@ -94,7 +94,7 @@ Out of this skill: the work-cost scheme (WKR) in detail, see nl-payroll-tax; pre
 
 - **Withholding versus insurance.** Decide separately whether Dutch wage tax applies (domestic law and the treaty) and whether the employee is insured for Dutch social security (EU Regulation 883/2004 or a bilateral agreement; an A1 or certificate of coverage). A worker can owe Dutch wage tax and be insured abroad, or the other way round. Use the table column that matches the tax and insurance position.
 - **Foreign employers** without a permanent establishment can register voluntarily to run Dutch payroll.
-- **Expat scheme (30% ruling).** Up to 30% tax-free in 2026 if the Belastingdienst has decided and the salary norm is met; detail and the fall to 27% from 2027 in netherlands-30-percent-ruling.
+- **Expat scheme (30% ruling).** Up to 30% tax-free in 2026 if the Belastingdienst has decided and the salary norm is met; detail and the fall to 27% from 2027 in nl-30-percent-ruling.
 - **Residence, treaties and the 183-day test:** nl-cross-border.
 
 ## Worked examples
