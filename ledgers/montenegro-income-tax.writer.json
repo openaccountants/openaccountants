@@ -6,32 +6,16 @@
   "claims": [
     {
       "id": "ME-PIT-001",
-      "section": "",
+      "section": "Scope and tax-year coverage",
       "figure_or_rule": "This skill computes Montenegro personal income tax for an individual or a sole proprietor (preduzetnik) for 2026. The law is the Personal Income Tax Law (Zakon o porezu na dohodak fizičkih lica, \"PIT Law\"), consolidated through amendment 160/25, which applies from 1 January 2026 (160/25 art. 21), read with amendment 70/26, which changes the gambling rate from 21 May 2026 (70/26 arts. 1 and 3). The tax is run by the Tax Administration (Poreska uprava). The currency is the euro.",
       "official_evidence": [
         {
           "act_article_or_form": "Article 21",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
           "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 21 Na teret rashoda ne priznaju se: 1) troškovi koji nijesu nastali u svrhu obavljanja poslovne djelatnosti; 2) troškovi koji se ne mogu dokumentovati; 3) kamate za neblagovremeno plaćanje poreza i doprinosa; 4) kamate isplaćene nerezidentima, ako su plaćene po stopi višoj od uobičajene komercijalne stope; 5) troškovi na ime plaćanja izvršenih",
-          "full_context_sha256": "03baf6471f1c99ade76d3cd9d0cf13f1bf3f9751c1f49a2d8efffa04653db0df"
-        },
-        {
-          "act_article_or_form": "Article 1",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 1 (1) Ovim zakonom uvodi se obaveza plaćanja poreza na dohodak fizičkih lica (u daljem tekstu: porez na dohodak). (2) Prihodi od poreza na dohodak pripadaju budžetu Crne Gore i budžetima jedinica lokalne samouprave u srazmjeri utvrđenoj posebnim zakonima, osim prihoda od poreza na dohodak iz člana 12 stav 2 tačka 10 ovog zakona, koji pripadaju budžetu",
-          "full_context_sha256": "835a9ad2e68a903b78c14216ed390ae8a4eb1d6ffd17605f4490916a4ea0348f"
-        },
-        {
-          "act_article_or_form": "Article 3",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 3 (1) Rezidentno fizičko lice (u daljem tekstu: rezident), u smislu ovog zakona, je fizičko lice koje: 1) na teritoriji Crne Gore ima prebivalište ili centar poslovnih i životnih interesa; 2) boravi na teritoriji Crne Gore više od 183 dana u poreskoj godini. (2) Rezident Crne Gore je i fizičko lice koje je upućeno izvan Crne Gore radi obavljanja posla",
-          "full_context_sha256": "8eb6ee1a84ef6387d81f9fb9cd1ec82e7bace2ba00c743ca67d9ab28a64f7cf3"
+          "source_file": "sources/pit-amendment160-2025.txt",
+          "original_language_quote": "Član 21 Ovaj zakon stupa na snagu danom objavljivanja u \"Službenom listu Crne Gore\", a primjenjivaće se od 1. januara 2026. godine. Broj: 16-2/25-5/8 EPA 766 XXVIII Podgorica, 27. decembar 2025. godine Skupština Crne Gore 28. saziva Predsjednik, Andrija Mandić, s.r. Pravni ekspert doo, Podgorica",
+          "full_context_sha256": "2933e33e209ef40ffa60a3aff77899c442bfa859299a2cf5d6f7a2358edbca88"
         },
         {
           "act_article_or_form": "Article 1",
@@ -58,12 +42,15 @@
           "full_context_sha256": "4974cfc29ded1bd614bf7435d13ac53790256764199cd05b8a7cfac53ad56138"
         },
         {
-          "act_article_or_form": "Article 3",
-          "official_url": "https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
+          "act_article_or_form": "Gazette publication and commencement record",
+          "official_url": "https://www.sluzbenilist.me/propisi/394390",
           "read_on": "2026-10-31",
-          "source_file": "sources/pit-amendment160-2025.txt",
-          "original_language_quote": "Član 3 Član 10 mijenja se i glasi: \"Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka",
-          "full_context_sha256": "147b71f4acf70ed59d03ba124ceab1fe38b125470475fbaed3ea54ac757936b1"
+          "source_file": "sources/pit-amendment70-2026-record.txt",
+          "original_language_quote": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:",
+          "full_context_sha256": "cee4a5e8ef6d97e3484ca2becf2bea3d23343b055ed721ad8c7874e1ea832833",
+          "context_exact_text": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu: 21.05.2026. ",
+          "context_offset_start": 613,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -297,6 +284,17 @@
       "section": "Rates, bands and thresholds",
       "figure_or_rule": "| Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3][may]; [Gazette record][mayrecord] |",
       "official_evidence": [
+        {
+          "act_article_or_form": "Gazette publication and commencement record",
+          "official_url": "https://www.sluzbenilist.me/propisi/394390",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-amendment70-2026-record.txt",
+          "original_language_quote": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:",
+          "full_context_sha256": "cee4a5e8ef6d97e3484ca2becf2bea3d23343b055ed721ad8c7874e1ea832833",
+          "context_exact_text": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu: 21.05.2026. ",
+          "context_offset_start": 613,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
+        },
         {
           "act_article_or_form": "Article 1",
           "official_url": "https://www.sluzbenilist.me/propisi/394390/download",
@@ -1346,6 +1344,14 @@
       "figure_or_rule": "| ZAKUP, KIRIJA, rent received | Property income, 15% after expenses | Arts. 34 to 36 |",
       "official_evidence": [
         {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
+        },
+        {
           "act_article_or_form": "Article 34",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
@@ -1368,6 +1374,14 @@
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 36 Oporezivi prihod od imovine predstavlja razliku između prihoda iz člana 34 i rashoda iz člana 35 ovog zakona nastalih u istom poreskom periodu. 4. Prihodi od",
           "full_context_sha256": "6d1fab04b7b4b5c78daff89e7e936b147fb0503d6f318e39a5775e7390108ea7"
+        },
+        {
+          "act_article_or_form": "Article 49a",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 49a (1) Akontaciju poreza na prihode od imovine tokom godine obračunava, obustavlja i uplaćuje isplatilac prihoda (pravno lice ili preduzetnik), pri svakoj isplati i istovremeno sa isplatom, primjenom stope od 15% na oporezivi prihod iz člana 36 ovog zakona. (2) Kod neposrednog ostvarivanja prihoda od imovine porez na dohodak plaća se prilikom",
+          "full_context_sha256": "b9268d1c4be8743dbd0810ff229cd205119b12bfefdf6b67dce393741172191e"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -1378,12 +1392,28 @@
       "figure_or_rule": "| KAMATA, interest received | Capital income, 15% of gross (interest on Montenegrin government, central bank or municipal debt securities is not capital income) | Art. 37(1)(1) and (5) |",
       "official_evidence": [
         {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
+        },
+        {
           "act_article_or_form": "Article 37",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 37 (1) Prihodom od kapitala smatraju se: 1) prihodi od kamata; 2) Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, \"Sl. list CG\", br. 160/25) 3) prihodi od korišćenja imovine i usluga od strane vlasnika i suvlasnika kapitala za njihove privatne potrebe; 3a) prihodi fizičkih lica nastali raspodjelom preostale imovine",
           "full_context_sha256": "4c3fc4f9ee59b2bd5b11ac4f29c7304172eab47cf59b0d780374541d208af171"
+        },
+        {
+          "act_article_or_form": "Article 50",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 50 (1) Isplatilac prihoda od kapitala dužan je da obračuna, obustavi i uplati porez na prihod od kapitala istovremeno sa isplatom prihoda. (2) Porez na prihode od kapitala obračunava se po stopi od 15%. 6. Plaćanje poreza na kapitalne",
+          "full_context_sha256": "da1ddacf9d5c4280e207e132a0c95a96bb08883c9b18197c75893b0a30035106"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -1394,12 +1424,28 @@
       "figure_or_rule": "| DIVIDENDA, dividend | Capital income, 15% of gross | Art. 37(1)(4) |",
       "official_evidence": [
         {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
+        },
+        {
           "act_article_or_form": "Article 37",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 37 (1) Prihodom od kapitala smatraju se: 1) prihodi od kamata; 2) Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, \"Sl. list CG\", br. 160/25) 3) prihodi od korišćenja imovine i usluga od strane vlasnika i suvlasnika kapitala za njihove privatne potrebe; 3a) prihodi fizičkih lica nastali raspodjelom preostale imovine",
           "full_context_sha256": "4c3fc4f9ee59b2bd5b11ac4f29c7304172eab47cf59b0d780374541d208af171"
+        },
+        {
+          "act_article_or_form": "Article 50",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 50 (1) Isplatilac prihoda od kapitala dužan je da obračuna, obustavi i uplati porez na prihod od kapitala istovremeno sa isplatom prihoda. (2) Porez na prihode od kapitala obračunava se po stopi od 15%. 6. Plaćanje poreza na kapitalne",
+          "full_context_sha256": "da1ddacf9d5c4280e207e132a0c95a96bb08883c9b18197c75893b0a30035106"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -1423,7 +1469,7 @@
     {
       "id": "ME-PIT-065",
       "section": "Classifying bank-statement lines",
-      "figure_or_rule": "| Own-account transfers, loan principal, VAT payments | Neither income nor expense | Arts. 13 and 18 |",
+      "figure_or_rule": "| Own-account transfers and loan principal; output VAT remittances and recoverable input VAT | Neither income nor expense; check nonrecoverable VAT with the underlying expense or asset in the accounts-to-tax workpaper | Arts. 13, 18, 20 and 23 |",
       "official_evidence": [
         {
           "act_article_or_form": "Article 13",
@@ -1440,6 +1486,22 @@
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 18 Za utvrđivanje oporezive dobiti priznaju se prihodi u iznosima utvrđenim bilansom uspjeha, u skladu sa zakonom kojim se uređuje računovodstvo, izuzev prihoda za koje je ovim zakonom propisan drukčiji način",
           "full_context_sha256": "2e9ee6d2d521f3473b0fee4b4d4d7cf9f085df070cbd26d6afd0e436b63b090d"
+        },
+        {
+          "act_article_or_form": "Article 20",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 20 Pravni ekspert doo, Podgorica 6 Katalog propisa 2025 (1) Za utvrđivanje poreskog obveznika koji obavlja osnovnu samostalnu djelatnost ili dopunsku preduzetničku djelatnost priznaju se rashodi u iznosima utvrđenim bilansom uspjeha, u skladu sa zakonom kojim se uređuje računovodstvo, izuzev rashoda za koje je ovim zakonom propisan drukčiji način",
+          "full_context_sha256": "317d40b20142fea1f57ab219fbd0ae186f795016b62f57351bc1d30261ed083b"
+        },
+        {
+          "act_article_or_form": "Article 23",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 23 (1) Amortizacija stalnih osnovnih sredstava priznaje se kao rashod u iznosu utvrđenom na način predviđen ovim zakonom. (2) Stalna osnovna sredstva iz stava 1 ovog člana obuhvataju materijalna i nematerijalna sredstva čiji je vijek trajanja duži od jedne godine i čija vrijednost prelazi 200 Eura. (3) Osnovna sredstva iz stava 2 ovog člana",
+          "full_context_sha256": "190a28b4e863230bf7578e6c7724a0b0a34e86039838d49c0a1170f5fee37c8a"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -1871,8 +1933,19 @@
     {
       "id": "ME-PIT-083",
       "section": "Gambling winnings",
-      "figure_or_rule": "Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).",
+      "figure_or_rule": "Taxable winnings from lottery games and betting are each winning less its corresponding stake (art. 37s(2)(1) and (2)); a global jackpot uses the total accumulated prize defined in art. 37s(2)(3), without importing that stake deduction. These definitions were replaced by [160/25 art. 10][amend]. Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).",
       "official_evidence": [
+        {
+          "act_article_or_form": "Gazette publication and commencement record",
+          "official_url": "https://www.sluzbenilist.me/propisi/394390",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-amendment70-2026-record.txt",
+          "original_language_quote": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:",
+          "full_context_sha256": "cee4a5e8ef6d97e3484ca2becf2bea3d23343b055ed721ad8c7874e1ea832833",
+          "context_exact_text": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu: 21.05.2026. ",
+          "context_offset_start": 613,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
+        },
         {
           "act_article_or_form": "Article 37s",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
@@ -1959,7 +2032,7 @@
     {
       "id": "ME-PIT-085",
       "section": "Reliefs",
-      "figure_or_rule": "- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days.",
+      "figure_or_rule": "- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days. A person previously employed by the founder or a related person of the new employer is excluded, whether or not there was a break in employment (art. 32b(3)).",
       "official_evidence": [
         {
           "act_article_or_form": "Article 32b",
@@ -2096,30 +2169,6 @@
           "source_file": "sources/vat-law-through12-2026.txt",
           "original_language_quote": "Član 55 (1) Lice koje u posljednjih 12 mjeseci ili u kraćem periodu izvrši promet proizvoda, odnosno usluga, iznad iznosa od 30.000 eura, dužno je izvršiti registraciju za PDV, podnošenjem prijave za registraciju poreskom organu, najkasnije do 20. dana kalendarskog mjeseca koji slijedi mjesecu u kojem je izvršilo promet. (2) Po osnovu prijave za",
           "full_context_sha256": "b9a664aba7aa22c76a435695915dd9c9b65413d1c9dc725bc52864f68bfea264"
-        },
-        {
-          "act_article_or_form": "Article 24",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 24 (1) Izdaci za zdravstvene, humanitarne, socijalne, obrazovne, naučne, vjerske, kulturne i sportske svrhe, zaštitu životne sredine, razvoj civilnog društva i volonterizma, kao i izdaci namijenjeni ustanovama, odnosno pružaocima usluga socijalne i dječije zaštite osnovanim u skladu sa zakonom kojim se uređuje socijalna i dječija zaštita, priznaju se",
-          "full_context_sha256": "99470433e5da02c4f2e91e67ab9d76ff2fe99de777d328cacb1ee396da945504"
-        },
-        {
-          "act_article_or_form": "Article 42",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 42 (1) Porez na dohodak obračunava se godišnje. (1a) Izuzetno od stava 1 ovog člana, u slučaju prestanka obavljanja samostalne djelatnosti porez na dohodak obračunava se za period godine u kojem je poreski obveznik obavljao samostalnu djelatnost. (2) Poreski obveznik sam obračunava porez na dohodak u poreskoj prijavi. (3) Porez na dohodak obračunava se",
-          "full_context_sha256": "e0535857aa30c3dd969be5aa710954ff10632ac8575781944ca600f22dd44708"
-        },
-        {
-          "act_article_or_form": "Article 55",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 55 Primanja po osnovu naknade zbog nezaposlenosti, naknade po osnovu otpremnine kod odlaska u penziju, odnosno kod otpuštanja sa posla, do najnižeg iznosa utvrđenog Opštim kolektivnim ugovorom, odnosno propisom Vlade, ne oporezuju se do 1. januara 2005.",
-          "full_context_sha256": "d0acd25ccc30a31621007e3a3f10c61456c9650313aa68c82f32bd61ea363db3"
         },
         {
           "act_article_or_form": "Article 49",
@@ -2306,30 +2355,6 @@
       "figure_or_rule": "- **Lump-sum tax** (art. 49): available on request to a principal independent activity with turnover below EUR 30,000.01. Apply by the end of January, or within five days of registration for a new activity; the authority decides within 15 days. Tax is paid monthly at 1/12 by the end of the month for the previous month; seasonal activities of up to six months pay by the 5th of the month for the current month. Turnover books must be kept. Not available for lawyers, notaries, auditors, accountants, health, consulting, design, surveying, enforcement officers and other professional and intellectual activities, hairdressing, billiards and amusement games, wholesale and retail trade, hospitality, hotels, financial intermediation, real estate, or VAT-registered taxpayers; the authority can approve lump-sum tax for trade or hospitality in a kiosk, trailer or mobile unit only where the taxpayer produces and sells only its own products (art. 49(10) and (11)). If circumstances justify it, the authority orders a change of method by decision (art. 49(7)). The scale is set by Ministry rulebook (art. 49(2)).",
       "official_evidence": [
         {
-          "act_article_or_form": "Article 24",
-          "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/vat-law-through12-2026.txt",
-          "original_language_quote": "Član 24 PDV se obračunava i plaća po opštoj stopi od 21% od svakog prometa proizvoda, usluga i uvoza proizvoda, osim od prometa proizvoda, usluga i uvoza proizvoda za koje je propisano da se PDV plaća po sniženoj stopi, kao i od prometa proizvoda, usluga i uvoza proizvoda za koje je propisana nulta (0) stopa PDV. Snižene",
-          "full_context_sha256": "96e18cb7c8ed35477d1160f26944f1234b91de45d3db94b04147639010c79e89"
-        },
-        {
-          "act_article_or_form": "Article 42",
-          "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/vat-law-through12-2026.txt",
-          "original_language_quote": "Član 42 Pravni ekspert doo, Podgorica 19 Katalog propisa 2025 (1) Izuzetno od člana 13 stav 1 ovog zakona, lice koje za posljednjih 12 mjeseci ostvari promet proizvoda, odnosno usluga u vrijednosti koja ne prelazi, odnosno nije vjerovatno da će preći iznos od 30.000 eura nije poreski obveznik u smislu ovog zakona. (2) Lice iz stava 1 ovog člana ne smije",
-          "full_context_sha256": "e557ac6cbdbabdd99deae82172c6ccd71cb38fb22e9c1401b09a1bdc5055e4d7"
-        },
-        {
-          "act_article_or_form": "Article 55",
-          "official_url": "https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/vat-law-through12-2026.txt",
-          "original_language_quote": "Član 55 (1) Lice koje u posljednjih 12 mjeseci ili u kraćem periodu izvrši promet proizvoda, odnosno usluga, iznad iznosa od 30.000 eura, dužno je izvršiti registraciju za PDV, podnošenjem prijave za registraciju poreskom organu, najkasnije do 20. dana kalendarskog mjeseca koji slijedi mjesecu u kojem je izvršilo promet. (2) Po osnovu prijave za",
-          "full_context_sha256": "b9a664aba7aa22c76a435695915dd9c9b65413d1c9dc725bc52864f68bfea264"
-        },
-        {
           "act_article_or_form": "Article 49",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
@@ -2487,7 +2512,7 @@
     {
       "id": "ME-PIT-102",
       "section": "Deadlines and filing",
-      "figure_or_rule": "- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)).",
+      "figure_or_rule": "- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); payers of other personal earnings under article 14 give recipients a statement by 31 January (art. 47(5)).",
       "official_evidence": [
         {
           "act_article_or_form": "Article 47",
@@ -3026,12 +3051,26 @@
           "full_context_sha256": "cecc7498e0eddd11d26ed14d2f982a091cc9c2ed723d3cae7ad95d70ceb92be0"
         },
         {
-          "act_article_or_form": "Notice 5 February 2026",
+          "act_article_or_form": "Notice 5 February 2026: operative deadline and paper application paragraphs",
           "official_url": "https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine",
           "read_on": "2026-10-31",
           "source_file": "sources/pausal-deadline-notice2026.txt",
-          "original_language_quote": "Obavještavamo vas da će se, zbog objektivnih tehničkih okolnosti vezanih za puštanje u produkciju IRMS\",\"image\":[\"https://media.gov.me/media//https://media.gov.me/media/gov/2024/06/06/1717676074pl9pg5pzhjy2gyt5.jpg\"],\"datePublished\":\"2026-02-05\",\"dateModified\":\"2026-02-13\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Poreska",
-          "full_context_sha256": "a3fcf1306967ea1a69c69d3dedb5727d5b6f97a6ff3383e93edbcc4019d35dc0"
+          "original_language_quote": "Obavještavamo vas da će se, zbog objektivnih tehničkih okolnosti vezanih za puštanje u produkciju IRMS, blagovremeno podnijetim zahtjevima za paušalno oporezivanje prihoda od samostalne djelatnosti za tekuću godinu, smatrati zahtjevi podnijeti zaključno sa 27. februarom 2026. godine. Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim",
+          "full_context_sha256": "0d6056ce97aa96816512d8ba0f7b62bca2b3ea11ba00a2a0b8abb16c0c14181b",
+          "context_exact_text": "Obavještavamo vas da će se, zbog objektivnih tehničkih okolnosti vezanih za puštanje u produkciju IRMS, blagovremeno podnijetim zahtjevima za paušalno oporezivanje prihoda od samostalne djelatnosti za tekuću godinu, smatrati zahtjevi podnijeti zaključno sa 27. februarom 2026. godine. Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim područnim jedinicama, odnosno ekspoziturama, podnijeti u papirnoj formi na obrascu „ZPO“ koji je propisan Pravilnikom o paušalnom oporezivanju prihoda od samostalne djelatnosti. ",
+          "context_offset_start": 337,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
+        },
+        {
+          "act_article_or_form": "Notice 5 February 2026: paper ZPO paragraph",
+          "official_url": "https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pausal-deadline-notice2026.txt",
+          "original_language_quote": "Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim područnim jedinicama, odnosno ekspoziturama, podnijeti u papirnoj formi na obrascu „ZPO“ koji je propisan Pravilnikom o paušalnom oporezivanju prihoda od samostalne",
+          "full_context_sha256": "d17f7df6f9448305d157ab2dfd01e832b215462ff7aac1abadaa593808f38ae0",
+          "context_exact_text": "Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim područnim jedinicama, odnosno ekspoziturama, podnijeti u papirnoj formi na obrascu „ZPO“ koji je propisan Pravilnikom o paušalnom oporezivanju prihoda od samostalne djelatnosti. ",
+          "context_offset_start": 622,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
         },
         {
           "act_article_or_form": "PDF page 5",
@@ -3759,7 +3798,7 @@
     {
       "id": "ME-PIT-138",
       "section": "GPP-FL: promulgated schedules and the calculation crosswalk",
-      "figure_or_rule": "| F: foreign income | Separate source categories and countries, showing income and foreign tax in distinct columns. F10 is foreign salary for main 2.1; F11 is occasional-work income and F12 the other listed foreign categories for main 3.5. F13 records foreign tax paid, F14 the corresponding Montenegrin tax and F15 the lower eligible credit for main 5.7, subject to the statutory cap per relevant foreign income. Do not duplicate the same foreign receipt in F and a domestic schedule. | [103/25 art. 3, F][gppforms]; [PIT Law art. 44][law] |",
+      "figure_or_rule": "| F: foreign income | Separate source categories and countries, showing income and foreign tax in distinct columns. F10 is foreign salary for main 2.1; F11 is occasional-work income and F12 the other listed foreign categories for main 3.5. F13 records foreign tax paid, F14 the corresponding Montenegrin tax and F15 the lower eligible credit for main 5.7, subject to the statutory foreign-country cap and the separate allocation workpaper. Do not duplicate the same foreign receipt in F and a domestic schedule. | [103/25 art. 3, F][gppforms]; [PIT Law art. 44][law] |",
       "official_evidence": [
         {
           "act_article_or_form": "PDF page 24",
@@ -3991,7 +4030,7 @@
     {
       "id": "ME-PIT-142",
       "section": "GPP-FL: promulgated schedules and the calculation crosswalk",
-      "figure_or_rule": "**Foreign-tax evidence.** F's instructions require a certificate from the competent authority abroad showing the source, amount of income and tax paid, in the source-country language and Montenegrin with a court-certified translation. Preserve the proof and apply treaty priority and the article 44 cap; the printed aggregate credit field does not authorise unused credit from one income source to erase tax on another. [F instructions][gppforms]; [PIT Law arts. 44 and 45][law].",
+      "figure_or_rule": "**Foreign-tax evidence.** F's instructions require a certificate from the competent authority abroad showing the source, amount of income and tax paid, in the source-country language and Montenegrin with a court-certified translation. Preserve the proof and apply treaty priority and the article 44 cap; the printed aggregate credit field does not authorise unused credit from one foreign country to erase tax on another country's income. Article 44 states the cap by foreign country; a mandatory separate category basket within the same country is not established here. Also retain the Montenegro tax already paid within five days on foreign salary under article 46(7): article 42(4) credits advances, but main 5.1 is labelled business advances and F15 is foreign tax. The live return field for those Montenegro salary advances is unresolved; the printed crosswalk must not cause the same salary tax to be paid twice. [F instructions][gppforms]; [PIT Law arts. 44 and 45][law].",
       "official_evidence": [
         {
           "act_article_or_form": "PDF page 24",
@@ -4018,6 +4057,14 @@
           "full_context_sha256": "1824fdd315c94a0c27bc7aeb99f5f2b76920cc968ecf109fa7729bcb6464197b"
         },
         {
+          "act_article_or_form": "Article 42",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 42 (1) Porez na dohodak obračunava se godišnje. (1a) Izuzetno od stava 1 ovog člana, u slučaju prestanka obavljanja samostalne djelatnosti porez na dohodak obračunava se za period godine u kojem je poreski obveznik obavljao samostalnu djelatnost. (2) Poreski obveznik sam obračunava porez na dohodak u poreskoj prijavi. (3) Porez na dohodak obračunava se",
+          "full_context_sha256": "e0535857aa30c3dd969be5aa710954ff10632ac8575781944ca600f22dd44708"
+        },
+        {
           "act_article_or_form": "Article 44",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
@@ -4032,6 +4079,14 @@
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 45 (1) Sporazum o otklanjanju dvostrukog oporezivanja ima pretežnu važnost u odnosu na odredbe ovog zakona. (2) Oblik, sadržinu i postupak izdavanja potvrde o rezidentnosti, u poreske svrhe, propisuje ministarstvo nadležno za finansije. 3. Plaćanje poreza na lična",
           "full_context_sha256": "e0303fa88ebccf1541939261b5c8c2be9e5607c6d64165a0275a3081b8a23923"
+        },
+        {
+          "act_article_or_form": "Article 46",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 46 (1) Porez na lična primanja obračunava, obustavlja i uplaćuje poslodavac, odnosno isplatilac tih primanja. (2) Porez na lična primanja se obračunava, obustavlja i uplaćuje prilikom svake isplate primanja, prema propisima koji važe na dan isplate. (3) Akontacija poreza na lična primanja obračunava se od poreske osnovice, koju čini iznos bruto ličnih",
+          "full_context_sha256": "7ec7516dedb8e221714ce39226c25e5b15b29b999d36c0943ce908a79c1e18d3"
         }
       ],
       "status": "writer_bound_pending_independent_review"
@@ -4303,7 +4358,7 @@
     {
       "id": "ME-PIT-150",
       "section": "Cross-border points",
-      "figure_or_rule": "- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.",
+      "figure_or_rule": "- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on the income earned in that foreign country (art. 44). Maintain a workpaper per foreign country and compute the corresponding domestic tax with the right class rates and bases: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.",
       "official_evidence": [
         {
           "act_article_or_form": "Article 44",
@@ -4425,6 +4480,14 @@
       "section": "1. Principal business: accounts to tax, and the annual balance",
       "figure_or_rule": "Total revenue 80,000; accounting profit 25,000 after all booked costs. Add back private costs 1,200 and book depreciation above tax depreciation 800. Qualifying-purpose spending 3,000 exceeds the 3% cap (2,400) by 600; representation 1,000 exceeds 1% (800) by 200; memberships 120 exceed 0.1% (80) by 40. Adjusted profit is 27,840. An unused business loss of 3,000 within its five years brings the base to 24,840. PIT is 3,600 × 9% = 324 plus 12,840 × 15% = 1,926, total 2,250. Advances paid 1,800, so 450 is due with the return. [Arts. 17 to 33, 42 and 48][law]",
       "official_evidence": [
+        {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
+        },
         {
           "act_article_or_form": "Article 17",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
@@ -4682,6 +4745,22 @@
       "figure_or_rule": "Sale of a property that was not the only and main residence for 150,000, with documented reconstruction 7,000 and sale costs 3,000; the price is not below market. Indexed acquisition cost is 110,000. Adjusted sale price 140,000, gain 30,000. A capital loss of 5,000 on shares sold in the same year reduces the taxable gain to 25,000; PIT 3,750, paid with the return. [Arts. 37a to 37d, 37g, 37h and 50a][law]",
       "official_evidence": [
         {
+          "act_article_or_form": "Article 37b",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37b Kapitalni dobitak od nepokretnosti je razlika između prodajne i nabavne cijene",
+          "full_context_sha256": "c31afd19ef39ad7f513436222dce56bcd05b1f14aace31c5a26e99864d04f938"
+        },
+        {
+          "act_article_or_form": "Article 37c",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37c (1) Prodajnom cijenom nepokretnosti iz člana 37b ovog zakona smatra se ugovorena cijena, umanjena za dokumentovane troškove rekonstrukcije i troškove prodaje te nepokretnosti. (2) Ako je ugovorena cijena iz stava 1 ovog člana niža od tržišne, prodajnu cijenu utvrđuje nadležni poreski organ. (3) Kod razmjene nepokretnosti prodajnom cijenom smatra se",
+          "full_context_sha256": "3cf049213c27823f4fd39155b302f23a0360eb2a0040ae0d2bccfa846ba7f487"
+        },
+        {
           "act_article_or_form": "Article 37a",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
@@ -4762,6 +4841,14 @@
       "figure_or_rule": "Two receipts of 10,000 each, neither salary nor taxed under another heading. Internet income: 15% expenses, base 8,500, PIT 1,275. Video-game competition income with no documented costs: 20% standard, base 8,000, PIT 1,200. [Arts. 37o to 37r and 50e][law]",
       "official_evidence": [
         {
+          "act_article_or_form": "Article 37p",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37p (1) Rashodi po osnovu obavljanja djelatnosti preko interneta priznaju se u visini 15% ostvarenih prihoda preko interneta. (2) Rashodima po osnovu video-igara (gaming) smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (3) Ako se rashodi iz stava 2 ovog člana ne dokumentuju, priznaju se",
+          "full_context_sha256": "b8cc72358573f5e972f72ad2b781fe3fc810db99b9d67a1adf6eb04c429e62d7"
+        },
+        {
           "act_article_or_form": "Article 37o",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
@@ -4822,6 +4909,22 @@
     },
     {
       "id": "ME-PIT-165",
+      "section": "Retained example 8. Foreign dividend with a capped credit",
+      "figure_or_rule": "**Reviewer qualification of the preceding preserved dividend example:** its stated facts contain only this foreign dividend. The EUR 500 is not claimed in that case. The original phrase about other income does not establish a mandatory category basket within one foreign country; apply the country cap in [PIT Law art. 44][law] and retain any unresolved same-country allocation question.",
+      "official_evidence": [
+        {
+          "act_article_or_form": "Article 44",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 44 (1) Rezidentnom poreskom obvezniku koji ostvari dohodak izvan Crne Gore i koji plaća porez na dohodak drugoj državi odobrava se poreski kredit u visini poreza na dohodak plaćenog u toj državi. (2) Poreski kredit iz stava 1 ovog člana ne može biti veći od iznosa koji bi se dobio primjenom odredaba ovog zakona na dohodak ostvaren u drugoj",
+          "full_context_sha256": "e0b7e57ae60737440c1a5501371b51fa878d53f650eae6ac869830c8850d3595"
+        }
+      ],
+      "status": "writer_bound_pending_independent_review"
+    },
+    {
+      "id": "ME-PIT-166",
       "section": "Retained example 9. Fine-art royalty and amateur sport",
       "figure_or_rule": "Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]",
       "official_evidence": [
@@ -4834,12 +4937,52 @@
           "full_context_sha256": "ed7c126626e26dc986a014b407e1516d9f70faca6a37bd8afcd7860fa7ea8645"
         },
         {
+          "act_article_or_form": "Article 37j",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37j (1) Rashodima po osnovu sportske djelatnosti smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (2) Ako se rashodi iz stava 1 ovog člana ne dokumentuju, priznaju se standardni rashodi u visini 30% ostvarenih prihoda od sportske djelatnosti, osim sportisti amateru kojem se standardni rashodi",
+          "full_context_sha256": "cd601c930f40b9972e7f1e6cbae651d1554a87ce84fda88bef8aafa74c02d655"
+        },
+        {
+          "act_article_or_form": "Article 37k",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37k Oporezivi prihod od sportske djelatnosti predstavlja razliku između prihoda iz člana 37i i rashoda iz člana 37j ovog zakona nastalih u istom poreskom periodu. 5b. Prihodi od autorskih i srodnih prava, patenta, žiga i prihodi samostalnog stručnjaka u kulturi",
+          "full_context_sha256": "adb2d8ad294da9c439c907e94f5a959cc2f30b03b44c87ab3b6bbdfe11cf0ca7"
+        },
+        {
+          "act_article_or_form": "Article 37l",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37l (1) Prihodima od autorskih prava smatra se naknada koju obveznik ostvari po osnovu autorskog djela. (2) Autorskim djelom iz stava 1 ovog člana smatraju se naročito: 1) govorna djela (predavanja, govori, besjede); 2) pisana djela (romani, poezija, članci, priručnici, studije, monografije, računarski programi); 3) muzička djela, sa riječima ili bez",
+          "full_context_sha256": "f74368639d10145bf70d3e54560f5730eacd846dfb1eb1f438046139a9d3931d"
+        },
+        {
+          "act_article_or_form": "Article 37lj",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 37lj (1) Rashodima po djelatnosti iz člana 37l ovog zakona, smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (2) Ako se rashodi iz stava 1 ovog člana ne dokumentuju, priznaju se standardni rashodi u visini: 1) 60% ostvarenih prihoda po osnovu naknade za prava koja obveznik ostvari po osnovu",
+          "full_context_sha256": "e3ab05d1bf5a389131f2741e413ce97ee280658d307c866960cbd966132fb6ba"
+        },
+        {
           "act_article_or_form": "Article 37m",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
           "read_on": "2026-10-31",
           "source_file": "sources/pit-law-through160-2025.txt",
           "original_language_quote": "Član 37m Oporezivi prihod od autorskih i srodnih prava, prihoda ostvarenih od patenta i žiga i prihodi od samostalnog stručnjaka u kulturi predstavlja razliku između prihoda iz člana 37l i rashoda iz člana 37lj ovog zakona nastalih u istom poreskom periodu. 5c. Prihod od drugih primanja",
           "full_context_sha256": "a99b142d55570b6daf7dab98e94a05ff3385f0b7849beb0572a2179d3502b61a"
+        },
+        {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
         },
         {
           "act_article_or_form": "Article 50b",
@@ -4861,10 +5004,18 @@
       "status": "writer_bound_pending_independent_review"
     },
     {
-      "id": "ME-PIT-166",
+      "id": "ME-PIT-167",
       "section": "Retained example 10. Sole proprietor with municipal surtax",
       "figure_or_rule": "Principal-business taxable profit 20,000; the municipality's surtax decision sets 13%. PIT is 324 + 8,000 × 15% = 1,524. Surtax is 13% of the PIT, 198.12. Total 1,722.12. Contributions are computed separately. [PIT Law art. 10(1)(2)][law]; [Local Self-Government Financing Law arts. 8 and 9][local]",
       "official_evidence": [
+        {
+          "act_article_or_form": "Article 10",
+          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-law-through160-2025.txt",
+          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
+          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
+        },
         {
           "act_article_or_form": "Article 8",
           "official_url": "https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0",
@@ -4880,39 +5031,26 @@
           "source_file": "sources/local-financing-law-through149-2025.txt",
           "original_language_quote": "Član 9 Prirez porezu na dohodak fizičkih lica plaća se po stopi koju utvrdi opština svojim propisom. 2. Zakonom ustupljeni",
           "full_context_sha256": "993ece580f6f33044646c90ab84db1d09d98d493f52258e2b2e1c279bc3285c6"
-        },
-        {
-          "act_article_or_form": "Article 10",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona",
-          "full_context_sha256": "bfe34d8d728452f5492e1313c5f41b0eb6f466987c3cd400f0593889fb4c3fcd"
-        },
-        {
-          "act_article_or_form": "Article 8",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 8 Osnovicu poreza na dohodak rezidenta predstavlja oporezivi dohodak poreskog obveznika ostvaren u poreskom periodu, umanjen za iznos prenesenog gubitka. Osnovicu poreza na dohodak nerezidenta predstavlja oporezivi dohodak poreskog obveznika ostvaren u poreskom",
-          "full_context_sha256": "6d73472aeb97cc15173bf9d14b00771391151b11b7c9d4aafa6649f7cdaa2a85"
-        },
-        {
-          "act_article_or_form": "Article 9",
-          "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-          "read_on": "2026-10-31",
-          "source_file": "sources/pit-law-through160-2025.txt",
-          "original_language_quote": "Član 9 Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, \"Sl. list CG\", br. 86/09) 9. Poreska",
-          "full_context_sha256": "8e298e22fc78cf6bf9620f4504063028f3f5a1bfd5f200859459a82b333ad43f"
         }
       ],
       "status": "writer_bound_pending_independent_review"
     },
     {
-      "id": "ME-PIT-167",
+      "id": "ME-PIT-168",
       "section": "Retained example 11. Gambling winning before and after 21 May 2026",
       "figure_or_rule": "A betting winning of 1,500 after deducting the stake. Paid on 10 March 2026, the bands apply: 1,450 × 10% = 145. Paid on 10 June 2026, the flat rate applies: 1,500 × 12% = 180. The organiser withholds and pays by the 15th of the next month. [PIT Law arts. 10(1)(4), 37s and 50f][law]; [70/26 arts. 1 and 3][may]",
       "official_evidence": [
+        {
+          "act_article_or_form": "Gazette publication and commencement record",
+          "official_url": "https://www.sluzbenilist.me/propisi/394390",
+          "read_on": "2026-10-31",
+          "source_file": "sources/pit-amendment70-2026-record.txt",
+          "original_language_quote": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:",
+          "full_context_sha256": "cee4a5e8ef6d97e3484ca2becf2bea3d23343b055ed721ad8c7874e1ea832833",
+          "context_exact_text": "Datum objavljivanja: 20.05.2026. Datum stupanja na snagu: 21.05.2026. ",
+          "context_offset_start": 613,
+          "context_hash_rule": "SHA256 of exact UTF-8 context_exact_text; byte content is a contiguous substring of source_file"
+        },
         {
           "act_article_or_form": "Article 10",
           "official_url": "https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
@@ -4971,251 +5109,237 @@
       "id": "ME-CTRL-01",
       "block_sha256": "eda7f76323790e0209c369c06623c1ab5ca4bcf54f1cf5344aa1f32c2effd970",
       "block_name": "Montenegro pausal group I, turnover ceiling 7500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-106"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-02",
       "block_sha256": "dc9020cedb8a10400c3c27360140bd79c545f437462b6043c3cb57b747fe29bf",
       "block_name": "Montenegro pausal group I, turnover ceiling 15000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-107"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-03",
       "block_sha256": "410ef51e96ccdcc6d551b9b0a5c6b6be3de3691d94702e94b8bd2ada967439ea",
       "block_name": "Montenegro pausal group I, turnover ceiling 22500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-108"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-04",
       "block_sha256": "2bf1a5e8fcb123d9959e0f5bf85720f818a434d720638573b23f7b37feb92835",
       "block_name": "Montenegro pausal group I, turnover ceiling 30000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-109"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-05",
       "block_sha256": "012ad6b3f3c010fbb038186a22f49f32028d1daa6905869c471e8d7c48f170bc",
       "block_name": "Montenegro pausal group II, turnover ceiling 7500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-110"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-06",
       "block_sha256": "360690b51dc2932438dfb05697846bb179db6155ba9b40d533c8a15825e54754",
       "block_name": "Montenegro pausal group II, turnover ceiling 15000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-111"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-07",
       "block_sha256": "3fea6b1d912498fdfdb4a0d275288f3af9707472e9936f0a1577121c864caaab",
       "block_name": "Montenegro pausal group II, turnover ceiling 22500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-112"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-08",
       "block_sha256": "62a38fb0e75b07a09288ab98c6e47468df6db506d954161bd345eb4e8b135449",
       "block_name": "Montenegro pausal group II, turnover ceiling 30000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-113"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-09",
       "block_sha256": "01b0e1723700cdb6122ffc23ec9ebe0aa3660f02e2af5ccc2673d4eada64ff43",
       "block_name": "Montenegro pausal group III, turnover ceiling 7500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-114"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-10",
       "block_sha256": "dee711ffe901240c727bc1232fc8ad8b64fc33bea690633fee28e81e9d755d33",
       "block_name": "Montenegro pausal group III, turnover ceiling 15000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-115"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-11",
       "block_sha256": "7cd51d0da1da32cc7604f0c3cc2346b0d52d0d06c8de5f361efe05d4fa28d365",
       "block_name": "Montenegro pausal group III, turnover ceiling 22500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-116"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-12",
       "block_sha256": "13b3fd2c59f0459b3f65ca6f30c52e7c8799469047fc7b32b966745980037d14",
       "block_name": "Montenegro pausal group III, turnover ceiling 30000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-117"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-13",
       "block_sha256": "bca44cd0705c7f60c35cc085a3a924519cd85542295d0fc2f37fd3bc5d62e5b1",
       "block_name": "Montenegro pausal group IV, turnover ceiling 7500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-118"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-14",
       "block_sha256": "9a35b6e1de80d2359a9dad8d7a4753d9b0bd880cc90f7b1485fbe6f42a7a6b54",
       "block_name": "Montenegro pausal group IV, turnover ceiling 15000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-119"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-15",
       "block_sha256": "cbf654477229e794dd8e68617839f7d6cd94f1c6561c8fb791c3730f987abf56",
       "block_name": "Montenegro pausal group IV, turnover ceiling 22500",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-120"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-16",
       "block_sha256": "f4a7c0bedf5444429e426ec5ba4c77ea38192bd89a76766602b2d1af208977f4",
       "block_name": "Montenegro pausal group IV, turnover ceiling 30000",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-121"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-17",
       "block_sha256": "3fb74aab94adecbec938b482ec16c9254c4ed90d7e808e31c21c930b6f9c353b",
       "block_name": "Montenegro pausal monthly split and separate assumed municipal surtax",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
         "ME-PIT-122",
         "ME-PIT-123"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-18",
       "block_sha256": "b66a99a1ca0ac6021ed8909db5fe0f1da8954e27d3fea74b8295ba754b758b82",
       "block_name": "Montenegro H independent category bases",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
-        "ME-PIT-141",
-        "ME-PIT-142",
-        "ME-PIT-143"
+        "ME-PIT-140"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-19",
-      "block_sha256": "1fde3e7e893c4e34cd4d6bd9545297cd893e9d742a7252dcb317966b375b6a2a",
-      "block_name": "Montenegro main ordinary full-year due with isolated foreign credit cap",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "block_sha256": "a2afe1a40c602974116d81555dcbfd71b6fdf9ccd35a37288b84b2c2fe66dcc1",
+      "block_name": "Montenegro main ordinary full-year due with foreign-country credit cap",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
+        "ME-PIT-138",
         "ME-PIT-141",
         "ME-PIT-142",
-        "ME-PIT-143"
+        "ME-PIT-150"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-20",
       "block_sha256": "6e09673c29d6347ba0aa1c18fa21c1411d7ab9b5487b551633422fdee819c409",
       "block_name": "Montenegro main overpayment split without a double refund",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
-        "ME-PIT-141",
-        "ME-PIT-142",
-        "ME-PIT-143"
+        "ME-PIT-141"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-21",
       "block_sha256": "1610afbfd614d76a4bb159d4ac962ad073c3d94039f8787f22279eb49d287053",
       "block_name": "Montenegro A1 component balances remain separate",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
-        "ME-PIT-141",
-        "ME-PIT-142",
-        "ME-PIT-143"
+        "ME-PIT-130"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-22",
       "block_sha256": "1b7a9cfdd1b996928f478e31ead184c8f66f3c91def744c940e614b0e6e9d072",
       "block_name": "Montenegro KPP products and services conservation",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
-        "ME-PIT-141",
-        "ME-PIT-142",
-        "ME-PIT-143"
+        "ME-PIT-124",
+        "ME-PIT-125"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     },
     {
       "id": "ME-CTRL-23",
       "block_sha256": "589277d2e3d3ce3498e52fa587cb52d08e2150846dd62b31f23d3a480f39b44d",
       "block_name": "Montenegro A printed early rounding versus full precision",
-      "assumptions": "The block inputs are illustrative case facts except the sixteen original scale rows, which are printed-source expectations. All legal interpretation remains subject to the linked ledger source rules.",
+      "assumptions": "Illustrative facts as explicitly stated; first sixteen blocks transcribe original pausal scale expectations. CTRL19 assumes two different foreign countries with eligible taxes and no treaty variation. Not proof of live portal acceptance.",
       "source_ledger_ids": [
-        "ME-PIT-140",
-        "ME-PIT-141",
-        "ME-PIT-142",
         "ME-PIT-143"
       ],
-      "review_required": "Recompute all expected fields independently and verify class/form/period assumptions against the original source."
+      "review_required": "Independently recompute every expected field and check tax classification, period and country assumptions."
     }
   ],
-  "original_language_quote_policy": "Exact original-language words from the retained primary text, with whitespace normalised for PDF reflow. Page/article locators and full-context hashes identify the complete passage; short excerpts alone are not the entire rule."
+  "original_language_quote_policy": "Exact original-language words from retained official text, whitespace normalised for PDF reflow. Complete article/page context is identified by file, selector and hash; notice/Gazette metadata contexts also retain exact text/offset. Short excerpts do not replace full-context review."
 }

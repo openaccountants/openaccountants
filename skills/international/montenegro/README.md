@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: me-cross-border
 partial:
-  IT-IND: "2026 GPP-FL mapping for supplementary entrepreneurship and mid-year foreign gambling, live portal handling of printed A/A1/F/H conflicts, and partial-year band proration/rounding remain unconfirmed; pausal scale and promulgated printed schedules now sourced"
+  IT-IND: "2026 GPP-FL mapping for supplementary entrepreneurship, Montenegro foreign-salary advances, country-level foreign-credit allocation and mid-year foreign gambling, live portal handling of printed A/A1/F/H conflicts, and partial-year band proration/rounding remain unconfirmed; pausal scale and promulgated printed schedules now sourced"
 ---
 
 # Montenegro: tax pack

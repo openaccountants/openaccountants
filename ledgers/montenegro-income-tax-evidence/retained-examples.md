@@ -143,6 +143,8 @@ expected:
   excess_not_claimed: 500
 ```
 
+**Reviewer qualification of the preceding preserved dividend example:** its stated facts contain only this foreign dividend. The EUR 500 is not claimed in that case. The original phrase about other income does not establish a mandatory category basket within one foreign country; apply the country cap in [PIT Law art. 44][law] and retain any unresolved same-country allocation question.
+
 ### 9. Fine-art royalty and amateur sport
 
 Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]
@@ -207,4 +209,3 @@ expected:
 [local]: https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0
 [contrib]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0
 [vat]: https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0
-

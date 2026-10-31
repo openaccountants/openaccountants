@@ -3,2490 +3,2905 @@
     "old_line": 1,
     "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
     "text": "---",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 2,
     "sha256": "06565538fc38c070c9340c90be0b41c75db14ccadb66ff48a9e082fc7326cc0e",
     "text": "name: montenegro-income-tax",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 3,
     "sha256": "267d50b40c43ebc6b4563b35d56d105356ec2b1a3766bebbcc6a574210b0692f",
     "text": "description: \"Montenegro personal income tax (porez na dohodak fizičkih lica) for tax year 2026, from the Personal Income Tax Law as amended by 160/25 (from 1 January 2026) and 70/26 (from 21 May 2026). Covers residence and scope, the monthly salary bands (0, 9 and 15% at EUR 700 and 1,000), the annual bands for a principal independent activity (0, 9 and 15% at EUR 8,400 and 12,000), the flat 15% for supplementary entrepreneurs, occasional work, rent, capital income, capital gains, sport, royalties, other receipts and internet or gaming income, and gambling winnings (progressive to 20 May, 12% from 21 May). Sets out business-profit adjustments, standard expense percentages, losses, reliefs, the municipal surtax, the GPP-FL return due by the end of April, monthly advances, withholding, lump-sum tax, fines and the foreign tax credit. Payroll, social contributions and VAT have their own skills.\"",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 4,
     "sha256": "ee9c86ca1e6252f655472d04f77e286d9afd66f6e61e123ac3a70817a5ad19c9",
     "text": "version: 0.3",
-    "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)"
+    "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 5,
     "sha256": "24113bfca3fbec7df015fc15103bc6ba3a507438a2b221aac4c90a2d845e8df1",
     "text": "jurisdiction: ME",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 6,
     "sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
     "text": "tax_year: 2026",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 7,
     "sha256": "d72b367a32118533bb2307de84357c52da5457f02401a8fb3ecbeb31753bd2d4",
     "text": "last_updated: 2026-10-30",
-    "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)"
+    "destination": "Guide metadata advanced (0.3 to 0.4; 30 to 31 October)",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 8,
     "sha256": "c829c00daed817adc3bedc10a12367ca7e32d98a59a2a41351beee7fa15894a8",
     "text": "review_status: pending_review",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 9,
     "sha256": "562730c67ed2b4446fff767408e033f2d9959e2ff887995ed417b16f2a520523",
     "text": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 10,
     "sha256": "c5249899bbbaad7a04b40ae013cc49114f75b1e4913825619aeee00bbfa9c333",
     "text": "depends_on:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 11,
     "sha256": "84e773544247430e791e75b17715f7a741a3ce9599191a138d20051babe6c8c0",
     "text": "  - income-tax-workflow-base",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 12,
     "sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
     "text": "category: international",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 13,
     "sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
     "text": "tier: 2",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 14,
     "sha256": "b77970a894370f7563ecfa0888c3a39cc3da828882b467c81e830e26de101fb7",
     "text": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 15,
     "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
     "text": "---",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 17,
     "sha256": "d1fe499fc80fd902cddb8b333c18ed81e3f4bd5defce619db1c65a8d82504a79",
     "text": "# Montenegro personal income tax, tax year 2026",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 19,
     "sha256": "7abbc7b3d36fc3618e537ab4383c7ef91ff225cbefc4f958b91ec95b301d5bc1",
     "text": "This skill computes Montenegro personal income tax for an individual or a sole proprietor (preduzetnik) for 2026. The law is the Personal Income Tax Law (Zakon o porezu na dohodak fizičkih lica, \"PIT Law\"), consolidated through amendment 160/25, which applies from 1 January 2026 (160/25 art. 21), read with amendment 70/26, which changes the gambling rate from 21 May 2026 (70/26 arts. 1 and 3). The tax is run by the Tax Administration (Poreska uprava). The currency is the euro.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 21,
     "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
     "text": "## Who this applies to",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 23,
     "sha256": "757d5e65141b4407c66d62230be62700da1631e12c93c9d415381404594776fc",
     "text": "- **Taxpayers.** Every resident or nonresident individual who earns income from a source named in the law. Where two or more people earn income jointly, each is taxed on his or her share (PIT Law art. 2).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 24,
     "sha256": "db7dc682742dd37d86bf7184d91d4b47e2a7998a07a6d20cd48d4e37f7390899",
     "text": "- **Residents.** An individual is resident if he or she has a domicile or centre of business and vital interests in Montenegro, or stays in Montenegro for more than 183 days in the tax year. An individual sent abroad to work for a Montenegrin resident person or for an international organisation is also resident (art. 3). Citizenship, a bank account or one immigration document does not decide residence.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 25,
     "sha256": "415abc10300f84d2c11382b25ac84c2953b499482783a65e824e45c652951e01",
     "text": "- **Scope.** Residents are taxed on income earned in and outside Montenegro; nonresidents only on income earned in Montenegro (art. 4).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 26,
     "sha256": "af92a1b17711ec49deb310b1c27fa9373a47eafc9ed947ba062287053aed07c5",
     "text": "- **Tax period.** The calendar year, except where an activity starts or stops during the year (art. 7). On cessation of an independent activity, tax is computed for the part of the year in which it was carried on (art. 42(1a)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 27,
     "sha256": "3e487b1eda40eb89887ad32d1dc50b03777cc9d492cce4118574d062bb0f1fda",
     "text": "- **Income classes.** Personal earnings (salary); independent activity, split into a principal independent activity, supplementary entrepreneurship and occasional independent work; property (rent); capital; capital gains; sport; copyright, related rights, patents, trademarks and independent cultural professionals; other receipts; internet and video games (gaming); and games of chance (art. 12(2)). Total income is the sum of these for the period (art. 12(3)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 28,
     "sha256": "0c631634a59539e936c70a685a6523bd42657f6e3d512ad2c3587f32dbc02ec9",
     "text": "- **Out of the tax.** Members of foreign diplomatic and consular missions and their households who are not Montenegrin citizens, UN technical-assistance officials, honorary consuls on pay from the appointing state, and officials, experts and administrative staff of international organisations who are not Montenegrin citizens or have no domicile in Montenegro (art. 6).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 29,
     "sha256": "00766ece1f785773693a6f971d97eabe7de463ee656cd2d8c72b84a160be8e0b",
     "text": "- **Other skills.** Monthly salary withholding and the IOPPD report are in the [payroll skill](montenegro-payroll.md); insurance status, contribution bases and the annual pension refund in the [social contributions skill](montenegro-social-contributions.md); VAT in the [VAT skill](montenegro-vat.md); companies (d.o.o., a.d.) in the [corporate income tax skill](me-corporate-income-tax.md).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 31,
     "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
     "text": "## Rates, bands and thresholds",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 33,
     "sha256": "b613b6bd8865447158efe55d68deae4ab740827c51f0c0d6c515cf3ee1dd40cb",
     "text": "| Item | Amount | Tax year | Source |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 34,
     "sha256": "4da1ec6f47782090102dc16bda978efb5655fbf2ddce0f84ecf1faf79a930f2d",
     "text": "|---|---|---|---|",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 35,
     "sha256": "c22a2f4bbd2b718c66b69300d4d530c860e4733060c5a6e06f3993c9ad4c9ad2",
     "text": "| Personal earnings (salary), monthly | 0% up to EUR 700.00; 9% from EUR 700.01 to 1,000.00; 15% above EUR 1,000.00 | 2026 | [PIT Law art. 10(1)(1)][law], as restated by [160/25 art. 3][amend] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 36,
     "sha256": "773620f06c84df391010fb45f6c99480a2ea13888b9edd78a0821adc1fe0f179",
     "text": "| Principal independent activity, annual | 0% up to EUR 8,400.00; 9% from EUR 8,400.01 to 12,000.00; 15% above EUR 12,000.00 | 2026 | [PIT Law art. 10(1)(2)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 37,
     "sha256": "8e7fb7494b624641c18514d16045e0188373fc28a9f488b5bcfc897adcdfffbc",
     "text": "| Supplementary entrepreneurship, occasional work, property, capital, capital gains, sport, royalties, other receipts, internet and gaming | 15% of the tax base | 2026 | [PIT Law art. 10(1)(3)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 38,
     "sha256": "8baada5f7ef12377ef4799333781b3ea5fc92265e8c1c009be8999e862dc7f04",
     "text": "| Gambling winnings paid 1 January to 20 May 2026 | 0% up to EUR 50.00; 10% from EUR 50.01 to 1,500.00; 15% above EUR 1,500.00, per winning | 1 Jan to 20 May 2026 | [PIT Law art. 10(1)(4)][law], [160/25 art. 3][amend] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 39,
     "sha256": "61746e833e747f345600a3f1283ba5ab20d343795549104dffb0e2aedc9676bf",
     "text": "| Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3][may]; [Gazette record][mayrecord] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 40,
     "sha256": "aa52c27d00eb1f981c0cb8818b5e5ced26c1cff3b9fc2bf325ddc2da21250745",
     "text": "| Undeclared income found from the rise in net assets | 80% of the base | 2026 | [PIT Law art. 10a][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 41,
     "sha256": "ce8f6dd765c307c6d5235027867027db5bb931c685771c35549e0cced83d3828",
     "text": "| Occasional independent work, undocumented costs | standard expenses 30% of receipts | 2026 | [PIT Law art. 20(2)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 42,
     "sha256": "9ef901aa885a3e4fff6cb5c83b5ea832c2ebdf73ff66bccd3d082d1d6525a835",
     "text": "| Rent, undocumented costs | standard expenses 30% | 2026 | [PIT Law art. 35(2)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 43,
     "sha256": "8ec640049566c58fafd28c16982c2b5bb1deb8f3925e57b72c003373ddfc587d",
     "text": "| Holiday letting to tourists | standard expenses 50% if tourist tax is paid; 70% under a lease with a travel agency or local tourist organisation with average occupancy of at least 60 days a year | 2026 | [PIT Law art. 35(3)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 44,
     "sha256": "1b6a6dc14c30804147f9610c62c63be2cf01fd7dd906022f6d49bda3a3078681",
     "text": "| Depreciable fixed assets | value over EUR 200 and useful life over one year | 2026 | [PIT Law art. 23(2)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 45,
     "sha256": "b82ff21082a01feced0ec30a86c1da29359451fe0ab24ba11e6f1ae4e4e3dd6e",
     "text": "| Depreciation rates | group I 2.5% (straight line, asset by asset); II 10%; III 15%; IV 20%; V 30% (declining balance on the group) | 2026 | [PIT Law art. 23(3) to (5)][law]; [160/25 art. 7][amend] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 46,
     "sha256": "1077bab6e65ad645e7a4b357bc4e77de5ca68d52edcafa64b75dacd85c247ab3",
     "text": "| Health, humanitarian, social, educational, scientific, religious, cultural, sports and environmental spending | deductible up to 3% of total income | 2026 | [PIT Law art. 24][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 47,
     "sha256": "73805aa7a7fc0a5a8bae164809434373c091ed618d76397e49ad76834c84d823",
     "text": "| Representation (entertainment) | deductible up to 1% of total income | 2026 | [PIT Law art. 25][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 48,
     "sha256": "8823c7353cb0b941b68b96348b81e2e3a584da5ba3424aa61d974385ecdad421",
     "text": "| Chamber and association memberships | deductible up to 0.1% of total income, or the amount fixed by law | 2026 | [PIT Law art. 26][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 49,
     "sha256": "7414a35268046ac5ae532057309a9f910389721b3c1e606183d7b00766463c93",
     "text": "| Business losses | carried forward, no longer than 5 years | 2026 | [PIT Law art. 33][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 50,
     "sha256": "1e6f7ff573c9e189e49f99bd704f8a89bed478c9a21fafc39673162a243199cc",
     "text": "| New business in an underdeveloped municipality | tax cut by 100% for the first 8 years, total relief no more than EUR 200,000; apply within 30 days of registration | 2026 | [PIT Law arts. 32 and 32a][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 51,
     "sha256": "d8d594079589eff2b7d12d14400a6c91122fbf211a1d55569e5f4f3ce7c215b0",
     "text": "| New hire in an underdeveloped municipality | salary tax relief for 4 years from hiring | 2026 | [PIT Law art. 32b][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 52,
     "sha256": "f48015c3ae183cccf49dc9b8bc1df9ec01c0f7c9d175157b54f2ddb5cc98e2fe",
     "text": "| Property acquisition cost that cannot be established | 80% of the sale price | 2026 | [PIT Law art. 37d(5)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 53,
     "sha256": "a26a9628fe6af56056d93a24a53868eab362cf484450c091f5064986836290f4",
     "text": "| Sport income, undocumented costs | standard expenses 30%; amateur athletes 90% | 2026 | [PIT Law art. 37j][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 54,
     "sha256": "f7335304c4df3ab41f40a03ea61521b117e30397dc1cf55b16a0b89029a5f1a9",
     "text": "| Copyright and related income, undocumented costs | 60% fine art; 50% architecture, urban and landscape planning; 30% performers; 30% all other copyright, related rights, patents, trademarks and cultural professionals | 2026 | [PIT Law art. 37lj][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 55,
     "sha256": "a71c166c682b4be98d0da4e5f60e151c085c39bf6e3bb43b955b6a9fc791e405",
     "text": "| Internet income | expenses 15% of receipts | 2026 | [PIT Law art. 37p(1)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 56,
     "sha256": "fc9af742c262d90106f83594d9c40372be44b0216ae00679316b0f5cff672d96",
     "text": "| Video-game (gaming) income, undocumented costs | standard expenses 20% | 2026 | [PIT Law art. 37p(3)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 57,
     "sha256": "2cea3f4004813a7c85c440bb2b511c88368b41437a07a35d905cf1f41893272d",
     "text": "| Lump-sum tax eligibility | prior-year (or planned) turnover below EUR 30,000.01 | 2026 | [PIT Law art. 49(1)][law]; [160/25 art. 14][amend] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 58,
     "sha256": "0b329f5cecefc377f3a257310c8e129652c4b08651d461d6379c09b8e0930a94",
     "text": "| Salary from two or more payers, return required | total monthly gross above EUR 700 | 2026 | [PIT Law art. 43(4)(5)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 59,
     "sha256": "7fae1d9c9e725f69f77bcd437004388992a88aa4f58decf828d572eb318cdb2c",
     "text": "| Municipal surtax (prirez) | up to 13% of the tax; up to 15% in the Capital City (Podgorica) and the Old Royal Capital (Cetinje); rate set by each municipality's decision | 2026 | [Local Self-Government Financing Law arts. 8 and 9][local] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 60,
     "sha256": "009b79715acde2ee2dcaa698f2b0179ec526fb7e017c815a1a465375cc46812f",
     "text": "| Pension and disability contribution (PIO), employees | 10% employee, 0% employer | 2026 | [Contributions Law art. 15][contrib] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 61,
     "sha256": "45498b85ba6f46d9d3f3518c61c8c12f7878468d5cc5b1bdf97a9917a03f4853",
     "text": "| Unemployment contribution, employees | 0.5% employee, 0.5% employer | 2026 | [Contributions Law art. 18][contrib] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 62,
     "sha256": "78e6c68152ba5fca967a84cb0da393e959826584131b0f462f85879abb3df48b",
     "text": "| VAT, standard rate and registration | 21%; registration once turnover in the last 12 months, or a shorter period, exceeds EUR 30,000 | 2026 | [VAT Law arts. 24, 42 and 55][vat] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 63,
     "sha256": "82b4a890f3eeb536d4147c5f35bda3c8c50cc09aa000f5a86dcc880580189bbd",
     "text": "| Fine, individual (return, payment, foreign salary, rent withholding) | EUR 500 to 2,000 | 2026 | [PIT Law art. 53v][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 64,
     "sha256": "d369f498563ee2e9fbe584b2c13fe9ae1926714b24dae5b5c45442a369a439d3",
     "text": "| Fine, entrepreneur (return, advances, information return, lump sum, books) | EUR 1,000 to 6,000, plus a possible ban on the activity of 1 to 3 months | 2026 | [PIT Law art. 53a(3) and (4)][law]; [160/25 art. 18][amend] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 65,
     "sha256": "826e34bcf17925ad83c924b57f7fe852a0a0406b872ce70b302674ae42f77f0b",
     "text": "| Fine, legal-person payer | EUR 2,000 to 20,000; responsible person EUR 500 to 1,000 | 2026 | [PIT Law art. 53a(1) and (2)][law] |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 67,
     "sha256": "ba5bf3ab1f63a37e340546480959746ce543f7db9f76da1216b15b336d8cff3c",
     "text": "Checks: a monthly salary of EUR 1,200 bears PIT of 300 × 9% + 200 × 15% = EUR 57.00. Annual principal-business profit of EUR 8,400 bears no tax; EUR 12,000 bears EUR 324.00. The salary bands are monthly; the business bands are annual. Never apply one to the other.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 69,
     "sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
     "text": "## The taxable base",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 71,
     "sha256": "d1c71483cc514678e6d7437b1643012db2f0bca7ceb3cee4c9f55a6c46c97057",
     "text": "### How the base is built",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 73,
     "sha256": "05333b419201e5be88cb366d72077b1c51214fd7d9cc1c23deb8c694f5f7dfe8",
     "text": "Taxable income is total income less recognised expenses, which must be documented unless the law says otherwise (art. 13). A resident's base is the taxable income of the period less a carried-forward loss; a nonresident's base has no loss deduction (art. 8). Each income class has its own base, rate and payment route, so keep a separate schedule per class.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 75,
     "sha256": "c43c7f696cf0412c87dc0338eac953dd0c9f601092b82033b31b65915d99de3a",
     "text": "### Exclusions and exempt amounts",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 77,
     "sha256": "5cdea69f1d011923983a4880eb5d3787fae75071e9571fa8aeb71217be474e7d",
     "text": "- **Not income** (art. 5): disability rights payments, child allowance, basic social-protection rights, aid for natural disasters, health-insurance benefits other than salary compensation, inheritances and gifts, organised humanitarian aid, state awards, pensions (except pensions of state and public officials), prize games, insurance of property and life, and receipts of religious officials (point 12, added by [160/25 art. 1][amend]).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 78,
     "sha256": "48918556b6393f15ebd1e46114c9a5d966095ca477a3fa8acf61688ea332440e",
     "text": "- **Exempt up to set amounts** (art. 5a): for example, death solidarity aid up to EUR 2,000 (raised from 1,500 by [160/25 art. 2][amend]), illness aid up to EUR 1,000, retirement severance up to EUR 1,500, field allowance and separated-living allowance up to EUR 100 a month, student grants up to EUR 300 a month, newborn payment to an employee up to EUR 1,000, amateur athletes' food allowance up to EUR 600 a month, and jubilee awards of EUR 150 to 450.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 79,
     "sha256": "03f72163eb349d867563b8212f67c6f0d4d71c952ff3db4141f3bcc4efde3cb5",
     "text": "- An inherited or gifted property's exclusion at receipt does not make its later sale tax free: the acquisition cost is then the donor's or deceased's cost (art. 37d(3)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 80,
     "sha256": "847f26124b3178a5af0614b00bc5dacd6874648c3e8b8f93f45f99ac5d90dda4",
     "text": "- An unidentified bank credit is neither an exempt gift nor automatically business revenue. If the tax authority finds undeclared income from the rise in net assets, art. 10a taxes it at 80%.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 82,
     "sha256": "6c3989fadc930b7cf4c0b4bc266d0e26d4df789d9a0711dce23192c85930fff7",
     "text": "### Principal independent activity and supplementary entrepreneurship",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 84,
     "sha256": "cc338c432e5406660baf7662f2fd4cde2e80e4910193a2c21715630d687ba426",
     "text": "- **Who.** A principal independent activity is a registered business, a liberal profession (health workers, vets, farmers, lawyers, notaries, auditors, engineers, architects, advisers, consultants, translators, journalists and similar) or professional and intellectual services that are the taxpayer's main activity (art. 16(2) and (3)). Supplementary entrepreneurship is business carried on by an entrepreneur as a supplementary activity under the company law (art. 16(4), added by [160/25 art. 5][amend]). Supplementary entrepreneurship is taxed at a flat 15%: it does not get the 0% and 9% bands.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 85,
     "sha256": "78c21594cde38abc848c54e6c470dd9c3e518b801ab2c0fe248c87449f249433",
     "text": "- **Base.** Taxable profit is the income-statement profit adjusted under the PIT Law (art. 17). Income and expenses follow the income statement under the accounting law unless the PIT Law says otherwise (arts. 18 and 20(1)). Dividends and profit shares from other legal persons are left out of the business base (art. 19); this does not exempt an individual's private dividends, which are capital income under art. 37.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 86,
     "sha256": "99356917ab4e7bdee5c17c51ca67cd31e1a535f89c139a36fae3a1179169819b",
     "text": "- **Not deductible** (art. 21): costs not incurred for the business, costs that cannot be documented, interest for late payment of tax and contributions, interest paid to nonresidents above the usual commercial rate, payments to a nonresident head office, profit distributions to employees or others, fines and penalties, and contributions to political organisations. Income tax and owner drawings are not expenses either.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 87,
     "sha256": "10a570095ce1408a9ce75130c77628799cc66484b0c3ab75fad39d4df9d12edb",
     "text": "- **Inventory.** Materials and goods sold use weighted average cost or FIFO (art. 22).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 88,
     "sha256": "2bd28d71abaa46b543508cb9268e2aa9e37da884a980f2b0663511b5513f7410",
     "text": "- **Depreciation.** Tax depreciation replaces book depreciation on fixed assets over EUR 200 with a life over one year, at the group rates in the table (art. 23). Right-of-use assets under operating leases and intangible assets are depreciated as booked under the accounting rules (art. 23(6) and (7)). Do not use the corporate-tax EUR 300 threshold.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 89,
     "sha256": "1129e1a4f96bb7c6fff70e8e1568bbf6c3f4a4ee794e6f09c87ea5899caa94ad",
     "text": "- **Capped expenses.** Qualifying-purpose spending up to 3% of total income, and only if paid to bodies carrying on those activities and used only for those purposes (art. 24). Representation up to 1%, if business-related, documented and not paid to a related person (art. 25). Memberships up to 0.1%, except a membership fixed by law (art. 26). Do not use the corporate 3.5% cap.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 90,
     "sha256": "3e6f251ad89fdcbbe548d8e30d3fb08e05f8b2755d53469df7142650e5c6895c",
     "text": "- **Bad debts.** Deductible only if the debt was earlier included in income, is written off in the books and failed collection is proved; a later recovery goes back into income (art. 27). Reserve funds are not deductible (art. 28).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 91,
     "sha256": "985a30e6a33eae75c586dcd8f037ad9751149ab1f85518f9b890ebb20e08e49a",
     "text": "- **Related-party interest.** Deductible up to the open-market interest cost and no more than actually paid (art. 30). The difference between arm's length interest and interest actually received is added to the lender's base (art. 31).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 92,
     "sha256": "5d8430750133b97d4942adcb9320625f3e81f5c51caf70d4c368bd6d703b7827",
     "text": "- **Losses.** Business losses carry forward for no more than five years (art. 33). Keep a register by year of origin and use. A business loss is not set against rent, capital income or capital gains, and a capital loss is not carried forward under art. 33.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 93,
     "sha256": "e062f8deeaf9c0d2d135f5ea537596870fbacb73c0fbeafe68cc1aa038aeacaf",
     "text": "- **Mixed-use costs.** Home office, car, phone and internet costs are deductible only for the business part, since private costs are excluded (art. 21(1)) and costs must be documented (arts. 13(2) and 21(2)). The law sets no fixed home-office or car percentage: ask for floor-area or mileage evidence and deduct nothing until it is produced.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 94,
     "sha256": "78bd620ad36abd2c2cc2cbbbd280fed7a6ea96a5c61898d5ab603a9187ee751e",
     "text": "- **VAT-registered taxpayers.** Output VAT is not income and recoverable input VAT is not an expense, because the base follows the income statement (arts. 18 and 20).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 96,
     "sha256": "ca1f9c3b6a9f3e6768880a2284a65c86e18b632b64c0042cb7fa814dbb25384f",
     "text": "Principal annual business PIT on taxable base B: `0.09 × max(min(B, 12000) − 8400, 0) + 0.15 × max(B − 12000, 0)`.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 98,
     "sha256": "391bae9ae71f57ce0d7970be4b87b425d4d7a8cea1c9321e45cda277df479995",
     "text": "### Occasional independent work",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 100,
     "sha256": "fa6b8bceb10c3ad10bf04900654166889323aaff935b9650636139a9ebd39ec8",
     "text": "Occasional work outside the taxpayer's main activity, or a work contract (ugovor o djelu) to make or repair something or perform a physical or intellectual task, if not taxed under another heading (art. 16(5)). If costs are not documented, standard expenses are 30% of receipts (art. 20(2)), so the base is 70% of the gross receipt and tax is 15% of that. A legal-person or entrepreneur payer withholds the tax at each payment; income received directly is taxed with the annual return (art. 48a).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 102,
     "sha256": "add52759195579041f709bcee56539969562ae61e44ec1f03e4cfbedb850f5a3",
     "text": "### Classifying bank-statement lines",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 104,
     "sha256": "65eb498c1f1b7a036743d3e9ad0085ffaedd3ba3c3af8c01fe215bbb436bd461",
     "text": "| Line on the statement | Class | Rule |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 105,
     "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
     "text": "|---|---|---|",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 106,
     "sha256": "961a1059553b10fd723c46ed528edb00f90406e7bf9fd0bcd2b30e738bd3238b",
     "text": "| Client payments, fees, platform payouts (Stripe, PayPal, Wise, Upwork) into a registered business | Principal or supplementary business income | Arts. 16 to 18 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 107,
     "sha256": "41cc35ce1199b13c0cb566946cdd467002ade4fd80c93a8cc03fd629f0000ed3",
     "text": "| ZARADA, PLATA, salary from an employer | Personal earnings, monthly bands | Arts. 10(1)(1), 14 and 15 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 108,
     "sha256": "99c3a4faf900c4fb652b1f58e9f1b5c6dc83f112212184d5ff5afeab3a9a10c7",
     "text": "| ZAKUP, KIRIJA, rent received | Property income, 15% after expenses | Arts. 34 to 36 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 109,
     "sha256": "06106bf3697ce811c09ef1695d3e73111c93fd283ab50729369025b344e9df0a",
     "text": "| KAMATA, interest received | Capital income, 15% of gross (interest on Montenegrin government, central bank or municipal debt securities is not capital income) | Art. 37(1)(1) and (5) |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 110,
     "sha256": "957f4b91d6c2fce87c7a7e6aaf7f3737658af4228b3938d2c5781963c5fa3fd9",
     "text": "| DIVIDENDA, dividend | Capital income, 15% of gross | Art. 37(1)(4) |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 111,
     "sha256": "78f697a0f96e2ed6188fb985d5dabaa1676c88127a248f8b6fd7f435b0ad9c05",
     "text": "| POVRAĆAJ POREZA, tax refund | Not income | Art. 42(6) |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 112,
     "sha256": "a7f989be8f0f23baa7c3652e4f4697650a18b30aed440b5a6d7d74104ea0fcae",
     "text": "| Own-account transfers, loan principal, VAT payments | Neither income nor expense | Arts. 13 and 18 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide bank classification: output VAT/recoverable input scope clarified; nonrecoverable VAT checked in underlying cost workpaper",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 113,
     "sha256": "6fbc67bbe6fb6db82b39d5e26c5e634d07fa29b7092187a5e59625316e7d3bd3",
     "text": "| POREZ, PRIREZ, income tax paid; drawings | Not deductible | Art. 21 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 114,
     "sha256": "ca33810bbb678ce2c1612197f21e98f4ad14e59bd6c815eedae112ac8a559235",
     "text": "| KAZNA, fines and penalties | Not deductible | Art. 21(7) |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 115,
     "sha256": "d658c2e77462a77d27ccf0df2a2edfec675f43d50332339564b3dfe7d4f5d52f",
     "text": "| Laptop, furniture, car over EUR 200 | Fixed asset, depreciate | Art. 23 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 116,
     "sha256": "b93e00d742a0413d8d633669f03f0a2b4d4d61ad68d8b6c30093ac610fdfe70f",
     "text": "| DOPRINOSI, PIO, contributions | Track separately in the contribution workpaper | Contributions Law |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 118,
     "sha256": "0658a49faa975ac11c0fbb214d8d7a33c97018d9e1a8da86a6375fa19b2a622c",
     "text": "### Property income",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 120,
     "sha256": "fea928cc272bc9cbf2d3295c9cc5fb60b3318279f035fca1eefe7f8329de26f1",
     "text": "Rent from movable and immovable property (art. 34). Expenses are documented actual costs or, if not documented, 30% of rent (art. 35(1) and (2)). For rooms, apartments, houses and flats let to tourists, standard expenses are 50% if tourist tax was paid, or 70% under a lease with a travel agency or local tourist organisation giving average occupancy of at least 60 days a year (art. 35(3)). The route depends on the evidence, not on the larger percentage. Taxable income is rent less expenses in the same period (art. 36). A legal-person or entrepreneur tenant withholds 15% at each payment; rent received directly is taxed with the annual return (art. 49a). A licensed holiday-letting provider files a return even with no income in the year (art. 43(5)). Tourist tax, property tax and VAT are separate.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 122,
     "sha256": "4b332a2d15d622c29b8ebd22a80ddc46e2e49bdeeee2556d66cc160577fbab5e",
     "text": "### Capital income",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 124,
     "sha256": "21cce41be15f6ef16524e6d319c63f68f74298a65075172034474d1a12409fcd",
     "text": "Interest; the owner's private use of company assets and services; liquidation surplus above invested capital; dividends and profit shares in cash, shares or stakes; and shares that board members and employees receive or buy on preferential terms (art. 37(1) and (2), as amended by [160/25 art. 8][amend], which deleted point 2). No costs are deductible; the base is the gross amount (art. 37(3) and (4)). Interest on debt securities issued by the state, the Central Bank of Montenegro or a municipality is not capital income (art. 37(5)). The payer withholds 15% at payment (art. 50).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 126,
     "sha256": "678fef4238344e7c5ea473a0d06cb55316e5c31e3bf56110d4049ed2ee0052d8",
     "text": "### Capital gains",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 128,
     "sha256": "ea179a6c1a03c774fd3ca2088413432ce2ed4a6fff90a6b9a30316604ffa6dff",
     "text": "- **What.** Gains on the sale or transfer of real estate (land, buildings, flats, business units and other structures), stakes in legal persons and shares and other equity securities. A negative difference is a capital loss (art. 37a).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 129,
     "sha256": "49d913b957a4e1402144ab8da32e494bd5ccb5a6217c677553eae38e391c23a0",
     "text": "- **Real estate.** Sale price is the contract price less documented reconstruction and sale costs; the tax authority sets the price if the contract price is below market, and an exchange uses market price (art. 37c). Acquisition cost is the price paid or the price the authority set on acquisition under the real-estate transfer tax law, or construction cost for a self-built property; for a gift or inheritance, the donor's or deceased's cost. It is indexed each year by retail price growth from acquisition to sale, using official statistics. Only if no cost can be established is acquisition cost 80% of the sale price (art. 37d).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 130,
     "sha256": "3f604a4e2c927b8cd7f5b111a398844eab55444a2bb27a302c23fe8fdd235aa0",
     "text": "- **Company stakes.** Sale and purchase values are those in the contract; the authority sets the sale value if below market; a stake acquired on founding costs the founding contribution plus increases (art. 37e).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 131,
     "sha256": "9fefcbb22fe5e709d555b8b3c9212dabdf56ec9d7ae9c28bb7e81826c8b6c044",
     "text": "- **Shares.** Listed shares cost the documented price paid; unlisted shares the documented price, or nominal value if no price is documented. Repeated purchases of the same issuer use FIFO. Bonus shares paid as a dividend cost the value at which they were acquired (art. 37f).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 132,
     "sha256": "c44c9888bc20ddeb526d733a427d595b525bd03d92865b21b48db8f3cd3b50b8",
     "text": "- **Exempt** (art. 37g): a property that was the taxpayer's only and main residence (domicile); transfers between spouses or life partners linked to marriage, partnership, divorce, its end or inheritance; gifts to first-order heirs.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 133,
     "sha256": "a3afe72ba9d5ddff74b7da89361bcff95adfe5094db69491bd5c8240fcdeb34b",
     "text": "- **Losses.** A capital loss is set only against capital gains of the same tax period (art. 37h).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 134,
     "sha256": "c171c53e5c4f406053023ab5824f005891bdcc3253c8c74951339e1a3af1f802",
     "text": "- **Tax.** 15%, computed annually and paid with the annual return (art. 50a). A gain recorded in business books goes in the tax balance, not a separate return (art. 43(6a)); never report it twice.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 136,
     "sha256": "f11a45e1a6e2c4c82c6a6e2157dcc89da31f79d43694b4f437e88611a475427d",
     "text": "### Sport, copyright, other receipts, internet and gaming",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 138,
     "sha256": "5c1c9d36db4cb99bade0603646f7f9371a0648bb83844eb3e7263fe5198ed543",
     "text": "- **Sport** (arts. 37i to 37k): income of professional and amateur athletes, coaches and sports professionals, transfers and fees, that is not salary. Documented costs, or standard 30%; amateur athletes 90%.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 139,
     "sha256": "310a5eae0cc9a08ba4f38dbd2786ccb15bb392a2472ce8e03ded030a8a1e609d",
     "text": "- **Copyright, related rights, patents, trademarks, cultural professionals** (arts. 37l to 37m): documented costs, or standard 60% for fine art, 50% for architecture, urban and landscape planning, 30% for performers' rights and 30% for everything else.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 140,
     "sha256": "6a1733599ebe2b555690fe17ccc494d95c639cda67be00e8da1a17dd52daf41b",
     "text": "- **Other receipts** (art. 37n): awards and payments to people not employed by the payer, officials' pensions under the officials' salary law (point 1a, added by [160/25 art. 9][amend]), receipts above art. 5a limits, pay of board and assembly members not employed by the payer, bankruptcy trustees and lay judges, severance on agreed termination, sales-agency income and all other untaxed income. Taxed on gross (art. 37n(3)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 141,
     "sha256": "8241d0c90283ca2438d05fc5d674f9ee72f932e6d4c7125c4acdcf650272fadb",
     "text": "- **Internet and video games** (arts. 37o to 37r): income from an activity carried on through the internet, if not taxed under another heading, with a fixed 15% expense; income from video-game competitions and other gaming that is not salary, with documented costs or 20% standard. These percentages are expenses; the tax rate is 15%. Do not use both actual and standard costs, and do not move salary or business income into the internet heading.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 143,
     "sha256": "366c28fdb9bb94632fc65efef19a410782f8d8beb390e2609d13b6c38a0a5d78",
     "text": "### Gambling winnings",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 145,
     "sha256": "3859b43e5c7d5a25d251f83b2b7a076d7cb5fcc4ce6167fe3990453b651f785b",
     "text": "Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide correction: corrected lottery/betting stake deduction versus total global-jackpot base, PIT37s(2)",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 147,
     "sha256": "61ea24026ea6ca56c74df7865bed84a135afd60410c289166d7e7c8ab9e11834",
     "text": "### Reliefs",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 149,
     "sha256": "41b00ee6a1e1c90b77e5178bae3db42e2207de29ab6f50c344deaddf7344ee76",
     "text": "- **Underdeveloped municipalities** (arts. 32 and 32a): a taxpayer who starts an activity there pays no tax for the first eight years from registration, capped at EUR 200,000 in total including other state aid. Not available to someone who closed the same or a similar activity in the previous three years, to recipients of aid for firms in difficulty, or in transport, shipbuilding, steel, trade and hospitality (except primary hospitality establishments). Apply within 30 days of registration; the authority decides; a statement of other state aid goes with each annual return.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 150,
     "sha256": "b68a4edf4a122a6a36e195ef8a338cf3a49250577474867eda3e0b7218cb5a57",
     "text": "- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide correction: original relief conditions retained and PIT32b(3) related/former-employment exclusion added",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 151,
     "sha256": "23b9a98279793d97a3483a439b48f24c04abba0118234e09747327098012985a",
     "text": "- **Expired** (art. 32c): the 2021 to 2023 new-hire relief.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 152,
     "sha256": "5cfdf786692772baef0c5956aa11ed9c587a141eaa59b5a83c64977059b6de6e",
     "text": "- **Research and innovation; digital nomads** (art. 32d): exemption for beneficiaries of research and innovation incentives, and for income from a foreign employer earned under digital-nomad status, each under its own law.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 154,
     "sha256": "9f6418ebdecd651a9839e3a731d9b4f923b07a075ace5854d90624072c53d1ae",
     "text": "### What sits on top of PIT",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 156,
     "sha256": "a474285086ebddfec051bf35e5ac91f993185cdb8138a77b0c7e07bc11b3cecb",
     "text": "- **Municipal surtax (prirez).** A municipality can levy a surtax on the PIT on salary, independent activity, property and property rights, and capital income, at up to 13% of the tax, or up to 15% in the Capital City and the Old Royal Capital (Local Self-Government Financing Law art. 8). The actual rate is the municipality's own decision (art. 9). It is a tax on the tax, never added to the income rate: at a 13% surtax the top business rate becomes 15% × 1.13 = 16.95%; at 15% it is 17.25%. The law lists only these four bases; capital gains and gambling winnings are not among them.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 157,
     "sha256": "df430e532ba8da82cd2f9ade02855cc271cb950d30a9729a697e79911f97dc8e",
     "text": "- **Social contributions.** Employees pay 10% PIO and 0.5% unemployment; the employer pays 0% PIO and 0.5% unemployment (Contributions Law arts. 15 and 18). The health contribution provisions are deleted (art. 17). The annual PIO ceiling is set each year by Ministry of Finance act (art. 14(3) and (4)). Older secondary guides still show 15% employee pension and 8.5% health; those rates are out of date. Details, bases and the self-employed rules are in the [social contributions skill](montenegro-social-contributions.md).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 158,
     "sha256": "c2b21f6136c054b4337b8c270bce7aeaca6add772a2fccac4ad398c0653d32d4",
     "text": "- **VAT.** Standard rate 21% (VAT Law art. 24); a business whose turnover in the last 12 months, or a shorter period, exceeds EUR 30,000 must apply for registration by the 20th of the following month (arts. 42 and 55). A VAT-registered taxpayer cannot pay lump-sum PIT (PIT Law art. 49(12)). See the [VAT skill](montenegro-vat.md).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 160,
     "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
     "text": "## Deadlines and filing",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 162,
     "sha256": "6f89dcb7b3af2e3a4d3de78952960b99a6ede5658b947b3d58897218ae07aee4",
     "text": "- **Annual return.** Form GPP-FL with schedules A, PPG, A1, B, B1, C, D, D1, E, E1, F, G and H ([return rulebook art. 3][return]), filed by the end of April for the previous year (PIT Law art. 43(2)). Tax is self-assessed and paid when the return is filed; advances and withholding on all sources are credited (art. 42(2), (4) and (5)). An overpayment is refunded on request or credited to the next year's advances (art. 42(6)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 163,
     "sha256": "61ff6939f1e48ff7a8383bfca4cdb74ff66f40004a5356747aa366981b22a7cb",
     "text": "- **Who files** (art. 43(4) to (6)): residents with a principal independent activity (unless on lump-sum tax), supplementary entrepreneurship, or occasional work not taxed by withholding; rent, unless the payer is a legal person or entrepreneur; capital gains; foreign income; salary from two or more payers with total monthly gross above EUR 700; sport; copyright and related income; internet and gaming income. A licensed holiday-letting provider files even with no income. A nonresident files for Montenegrin income on which no withholding is prescribed.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 164,
     "sha256": "78834eff68fa5694378a6dbd55bc8fa140924175062e504bfb73c2a1bc6a3875",
     "text": "- **Where and how.** A resident files with the tax office of his or her domicile, a nonresident with that of his or her stay, in person, by post or electronically; the taxpayer or an authorised person signs ([return rulebook arts. 4 and 5][return]; PIT Law art. 43(7)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 165,
     "sha256": "539419e76f320f7ee63e704e54b3a72c2102a808131fa34bdd34ccc9116b33fa",
     "text": "- **Cessation.** A taxpayer who stops an independent activity files within 30 days of deletion from the register (art. 43(2a)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 166,
     "sha256": "8d786b87c0d7d8cf19e813a26dd3734a7b5f4349ac69315ae774212b2b55d49a",
     "text": "- **Late or missing return.** The tax authority files a return on the taxpayer's behalf ex officio (art. 43(6b)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 167,
     "sha256": "2f7a7eb775a7fc32e2b992e466d3785dd3ec17b2d0b1dc15b272002c1c61896b",
     "text": "- **Two or more employers.** The authority assesses the tax by decision within 30 days of the return, from the return and its own records (art. 43a).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 168,
     "sha256": "3a6dfc77528a3600629ba6389097e696a2a38e1a65cedf49370e22c1ae7fe41c",
     "text": "- **Business advances.** Principal and supplementary business tax is paid in monthly advances of 1/12 of the previous year's tax, by the end of each month for the previous month (art. 48(1) and (2)). A new business files an information return with its estimated income within 15 days of registration (art. 48(4)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 169,
     "sha256": "054bf76abc3dda23f9e8b39e393cc74b34fb3b5d9533d7aac1dd17995d303de9",
     "text": "- **Lump-sum tax** (art. 49): available on request to a principal independent activity with turnover below EUR 30,000.01. Apply by the end of January, or within five days of registration for a new activity; the authority decides within 15 days. Tax is paid monthly at 1/12 by the end of the month for the previous month; seasonal activities of up to six months pay by the 5th of the month for the current month. Turnover books must be kept. Not available for lawyers, notaries, auditors, accountants, health, consulting, design, surveying, enforcement officers and other professional and intellectual activities, hairdressing, billiards and amusement games, wholesale and retail trade, hospitality, hotels, financial intermediation, real estate, or VAT-registered taxpayers; the authority can approve lump-sum tax for trade or hospitality in a kiosk, trailer or mobile unit only where the taxpayer produces and sells only its own products (art. 49(10) and (11)). If circumstances justify it, the authority orders a change of method by decision (art. 49(7)). The scale is set by Ministry rulebook (art. 49(2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 170,
     "sha256": "eecb8b5424da2ee81a99454d79b90b630a800c984ececb4be8721cb1a8f9152b",
     "text": "- **Withholding by the payer, at payment:** salary (art. 46), occasional work (art. 48a), rent paid by a legal person or entrepreneur (art. 49a), capital income (art. 50), sport and copyright income earned in Montenegro (arts. 50b(1) and 50c(1)), other receipts (art. 50d). Gambling: the organiser withholds at payment and pays by the 15th of the following month (art. 50f).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 171,
     "sha256": "8db1636f9da054d6c42b01b6613a03d30643f5480e4b4a4b698c4f04aabc83d7",
     "text": "- **Paid with the annual return:** capital gains (art. 50a), internet and gaming income (art. 50e), sport and copyright income earned abroad (arts. 50b(2) and 50c(2)), and occasional work or rent received directly (arts. 48a(2) and 49a(2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 172,
     "sha256": "9a21fc5347fc674efd88cf821dcc9c2a2f5a7b75259d6a66a115c0073209156f",
     "text": "- **Self-assessed within five days:** salary from abroad, and salary from a foreign diplomatic mission or international organisation (art. 46(6) and (7)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 173,
     "sha256": "0d36c3b6b1878633c2c8026dd15d8cc1274c1763d8725b21e01d8d9b5846d2f7",
     "text": "- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide correction: annual other-payer statement scoped to other personal earnings under PIT14/47(5)",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 174,
     "sha256": "c8bfb6f027091905f1661cf72cdddf01e19c677d644584420e6f683dde1950bc",
     "text": "- **Records.** Keep identity and residence evidence, income records, accounts and loss registers, asset, valuation and indexation evidence, relief decisions, foreign tax and treaty evidence, payer statements, advance payments, the signed return and payment records.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 176,
     "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
     "text": "## Penalties and interest",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 178,
     "sha256": "9f3471295c9edb88740f17bf38400583506856c43c7b7de2a07f745f8172afcd",
     "text": "- **Individual:** EUR 500 to 2,000 for not filing the return by the end of April (or within 30 days of cessation), wrong computation or not paying with the return; for a resident with foreign or diplomatic-mission salary not paying within five days; and for rent withholding failures (art. 53v).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 179,
     "sha256": "e6139adbfd87858ce2a6947842b8bdcc6ace1b7794bb0b885727551f891430bd",
     "text": "- **Entrepreneur:** EUR 1,000 to 6,000 for not filing or paying the annual return, not paying advances on time, not filing the information return within 15 days of registration, not paying lump-sum tax on time, or not keeping turnover books; a ban on the activity of one to three months can be added (art. 53a(3) and (4)). For an individual, not keeping turnover books brings a EUR 200 misdemeanour order (art. 53b).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 180,
     "sha256": "11d5ee9b34c0b3b605c08ee2fdf1a9463e8455ea62a9cbd01b0ab6e90f371f7f",
     "text": "- **Legal-person payer:** EUR 2,000 to 20,000 for failing to compute, withhold or pay tax on salary, rent, capital, sport, copyright, other receipts or gambling winnings, or to give salary data or the monthly report; the responsible person EUR 500 to 1,000 (art. 53a(1) and (2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 181,
     "sha256": "e7769d8580319cc3b28b8101d29d7af0badb2a6e95c47d62dd21b8298610249d",
     "text": "- **Interest, appeals, enforcement.** The PIT Law refers these to the tax procedure law (art. 53). Late-payment interest runs from the day after the due date: 0.03% a day until 17 July 2026, then 5.4% a year for 18 July to 31 December 2026 (ECB main refinancing rate plus 3 points, set each half-year) (Tax Administration Law art. 95, as amended by 104/26 arts. 20 and 26; Tax Administration decision of 24 July 2026).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 182,
     "sha256": "a7b3967b4e3ead1a796a1aab2f00c692e9dfd522dc988d737e242bfcb3b81be3",
     "text": "- A fine follows a specific offence; an arithmetic difference is not by itself a penalty.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 184,
     "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
     "text": "## Cross-border points",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 186,
     "sha256": "8b849f2e3394aff6c7d854dc9c2a1c7d0b9bc8e68325b7dbd697524c2495aaff",
     "text": "- **Nonresidents** are taxed only on Montenegrin income (art. 4(2)), with no loss carry-forward (art. 8). They file only for Montenegrin income on which no withholding is prescribed (art. 43(6)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 187,
     "sha256": "d2056899f589c8e8813c1490708abb00a431c6cd8c40c75f7f9d023f5a9dc6a5",
     "text": "- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide correction: credit cap clarified by foreign country under PIT44; existing rates/proof/no-carry-forward topics preserved",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 188,
     "sha256": "8842c3d784d71bba611dc4c9c268e7cd143f8f5d5d474b0752364d302468ddd3",
     "text": "- **Treaties** prevail over the PIT Law (art. 45(1)). The Ministry sets the form and procedure for residence certificates (art. 45(2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 189,
     "sha256": "593274beda22efbb44bf6f1eeead247a006a16bc13717610ed76937c8b736028",
     "text": "- **Foreign salary** is self-assessed and paid within five days of receipt (art. 46(7)); a nonresident organisation with a seat or permanent unit in Montenegro withholds like a local employer (art. 46(5)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 190,
     "sha256": "40be793d41c10f0318c758334c2e9dc1ba0463ce20c5cfda116c7ed069522727",
     "text": "- **Foreign sport and copyright income** is taxed annually with the return (arts. 50b(2) and 50c(2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 191,
     "sha256": "59a501ff265ff9da41e9ed9cd2e79091e24e04e6a8d72f7bde5d85b101991675",
     "text": "- **Posted workers.** An individual sent abroad by a Montenegrin resident or for an international organisation remains resident (art. 3(2)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 192,
     "sha256": "c26dfa6ed2807b7fdebb8ce5281d469b82508b03d192f5331e19b02df4d85362",
     "text": "- **Digital nomads.** Income from a foreign employer earned under digital-nomad status is exempt under art. 32d.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 193,
     "sha256": "e34809e566125def27534f519a551ed0e80043229fdee2e9bc47f81c5a2aedb2",
     "text": "- **Payments to nonresidents in a business.** Interest above the usual commercial rate and payments to a nonresident head office are not deductible (art. 21(4) and (5)).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 195,
     "sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
     "text": "## Worked examples",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 197,
     "sha256": "d2f330fc345fa0ea99b4bab0e9debf6603cd72663a263a30595cbda1456e7dc7",
     "text": "All figures are EUR for 2026. Facts are as stated; there is no surtax, social contribution, VAT or relief unless stated.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 199,
     "sha256": "a723078e74ec585fdbc52170e9a9bd4ff02d95eece19317afc388102df2a109f",
     "text": "### 1. Principal business: accounts to tax, and the annual balance",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 201,
     "sha256": "02cc91820d0d322ef7b62bad7b947c4ba5471b7e29842e4e11499d6330fb0265",
     "text": "Total revenue 80,000; accounting profit 25,000 after all booked costs. Add back private costs 1,200 and book depreciation above tax depreciation 800. Qualifying-purpose spending 3,000 exceeds the 3% cap (2,400) by 600; representation 1,000 exceeds 1% (800) by 200; memberships 120 exceed 0.1% (80) by 40. Adjusted profit is 27,840. An unused business loss of 3,000 within its five years brings the base to 24,840. PIT is 3,600 × 9% = 324 plus 12,840 × 15% = 1,926, total 2,250. Advances paid 1,800, so 450 is due with the return. [Arts. 17 to 33, 42 and 48][law]",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 203,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 204,
     "sha256": "c728a9bafa2af5bc368b83695b56534b4ff15e1f09c3ec6c8c19c38f3ca71ef5",
     "text": "name: Montenegro principal business annual profit and settlement",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 205,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 206,
     "sha256": "bcf387bd34a85918c6f3cf6ef18ee4a6d0d2af1190c574fbc607a26ba5738c12",
     "text": "  revenue: 80000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 207,
     "sha256": "ea27f96783a12e1b5e3234304479a2c8aa5ecd460f968cc510b3f499d8278cdc",
     "text": "  accounting_profit: 25000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 208,
     "sha256": "80df6939d56007ed48e6276a2428fdd10b3eae67aee384b3d02302bf1ad5485a",
     "text": "  private_expense: 1200",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 209,
     "sha256": "c3edc050e2785a03606428b78edee15e7b2d1e28a4bb053771de4dbbd987a6be",
     "text": "  depreciation_adjustment: 800",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 210,
     "sha256": "ead566dc60e23cfc88bf308718eca79c4cc675683e301935d51aa6eea6d1d934",
     "text": "  qualifying_spend: 3000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 211,
     "sha256": "e3355eead5d830081b9a144f2d59cf65a5b367031353eb6f7ab1e89722c395ae",
     "text": "  representation: 1000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 212,
     "sha256": "519fb5dab9312ca5eb991e0dffeb7bb8d645f78e4d5dcaa03f10244b26a53b45",
     "text": "  memberships: 120",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 213,
     "sha256": "311822bdb7ea636648b9480f7592e3d068b3f2904fd8daae39a76da6df4791c6",
     "text": "  available_loss: 3000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 214,
     "sha256": "2f2de413906d5a98852d08375fcdc7834606700dda4e78dcd0ad258657f8b326",
     "text": "  paid_advances: 1800",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 215,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 216,
     "sha256": "5d893df3e4fc210413124b3b38a39f3a2dbe8393be740088c2d0f38a2bc9e877",
     "text": "  - purpose_excess: max(qualifying_spend - revenue * 0.03, 0)",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 217,
     "sha256": "6811a5815bafa155e5872fb9d1d03c91ed1fae7acb228f6492ab32e234edd102",
     "text": "  - representation_excess: max(representation - revenue * 0.01, 0)",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 218,
     "sha256": "f845ecbd27d24c42c8a082246be71444bbbc0db4db70aa4f352d04b31aa5485d",
     "text": "  - membership_excess: max(memberships - revenue * 0.001, 0)",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 219,
     "sha256": "b65aab34f51281d7574ea0b700250f6c12ef644dcefe86200151057c76003ce4",
     "text": "  - adjusted_profit: accounting_profit + private_expense + depreciation_adjustment + purpose_excess + representation_excess + membership_excess",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 220,
     "sha256": "aa83f229ca95aa69dd2e7ad17cde1e21b9aa3bd3b8603a9d7137ca3e222fca8a",
     "text": "  - loss_used: min(available_loss, max(adjusted_profit, 0))",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 221,
     "sha256": "bb71cffca1f493a126a6e46dddc2694706fa7c3f1a42580c53920bd23421e866",
     "text": "  - taxable_business: max(adjusted_profit - loss_used, 0)",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 222,
     "sha256": "524711c7d7a3374d83d481bc529cfcf30140d1d166b4939514ddcc1ace2468e1",
     "text": "  - annual_pit: max(min(taxable_business, 12000) - 8400, 0) * 0.09 + max(taxable_business - 12000, 0) * 0.15",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 223,
     "sha256": "3732f7408cdfb5e06fde143666a6092f0346d39dc9dc1b82832b296441003da2",
     "text": "  - settlement_due: annual_pit - paid_advances",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 224,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 225,
     "sha256": "cb331f4db350547f27179dc0bbc74145b271b73753b055ecd565bc067f85e3f4",
     "text": "  purpose_excess: 600",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 226,
     "sha256": "b678d4ed20bee2b7c016ae36f7304ba7ebab1fe8cd57666ae29f1463eafa911c",
     "text": "  representation_excess: 200",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 227,
     "sha256": "e524b08a021e6d39d8501b22707f95302a205f63804d8555a29d906690a7c42c",
     "text": "  membership_excess: 40",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 228,
     "sha256": "71ebec3d85602beeb995daf98b218554e285b4215fb4919e71cc1a9e4d4e843e",
     "text": "  adjusted_profit: 27840",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 229,
     "sha256": "bd53b67813775bee4d03586e7178cc02290d449a7356f3636930609a7b5e3fb5",
     "text": "  loss_used: 3000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 230,
     "sha256": "0281905c6f976a7f2e27b52cca3c014523272c4890f11cde49cec87602161bf4",
     "text": "  taxable_business: 24840",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 231,
     "sha256": "098b8387dba8e8e05fcd297db58a753e0d1eb8b7656a4f8ff601a1342bc22746",
     "text": "  annual_pit: 2250",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 232,
     "sha256": "d90ee00f72f25f15061a0bbf5ce0c2ac207dc0ecbede4abb26f452fd4c156d1b",
     "text": "  settlement_due: 450",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 233,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 235,
     "sha256": "118e6d03ff13636cb50b8178b8fdc6a484de42eed0476da5f691f75fd9caf8ac",
     "text": "### 2. Principal versus supplementary business",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 237,
     "sha256": "c3a8c34411da9190b766a1859d3bb83b493c7e1352b98a2f7ac60b3bbe11765d",
     "text": "The same taxable profit of 10,000. As a principal activity, PIT is 1,600 × 9% = 144. As supplementary entrepreneurship, PIT is 15% = 1,500. The class follows the facts and registration; it is not an election. [Arts. 10, 12 and 16][law]",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 239,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 240,
     "sha256": "1856a003de7ff439dd0d0318cd577b0de45f628d4a128a8a9d153f197d7e963f",
     "text": "name: Montenegro principal versus supplementary income rates",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 241,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 242,
     "sha256": "fc4d88de257a51ef8b5df4c17beed483b0478c80808ccf9f2ec980dce2cbd874",
     "text": "  taxable_profit: 10000",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 243,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 244,
     "sha256": "e5e26c40e00f804091545bbe616abaad113fd81250eeb420b2dd78775bc8a13d",
     "text": "  - principal_pit: max(min(taxable_profit, 12000) - 8400, 0) * 0.09 + max(taxable_profit - 12000, 0) * 0.15",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 245,
     "sha256": "02dafbb45b9779f204443eec651e2b3fc523712eb4cf7bbfb2803debc96bccd0",
     "text": "  - supplementary_pit: taxable_profit * 0.15",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 246,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 247,
     "sha256": "b0918fb2955270e6fdca1238d28848b064fb99c23a81921daa0d9dcd28328d15",
     "text": "  principal_pit: 144",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 248,
     "sha256": "96f8cf2e9881662b356cff75cba6083ac5798173c4acf0de85464d1a6e2fecd9",
     "text": "  supplementary_pit: 1500",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 249,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 251,
     "sha256": "fc994f5ad95790c3a66900a29ea7da50d76608e87fda7d5daa514cd35286a8fa",
     "text": "### 3. Occasional work paid by a company",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 253,
     "sha256": "64fef915d2648747579c5ca9b78a80a7daccae0f2e2065c67adab3ff887bfbeb",
     "text": "Gross fee 2,000, no documented costs, paid by a company. Standard expenses 600, base 1,400, PIT withheld 210. The 1,790 left is before any contribution due on the fee. [Arts. 16(5), 20(2) and 48a][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 255,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 256,
     "sha256": "55f0192fea2dc2282bf89eb63390d87a672c64491490d15fed22125251def464",
     "text": "name: Montenegro occasional independent work withholding",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 257,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 258,
     "sha256": "fb7385ebe812facb7369ff59b23d8d84c0a61858aa55f7f1eaef48ff0ea1542e",
     "text": "  gross_receipt: 2000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 259,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 260,
     "sha256": "7d7d2660b9863a04539c93032bb253aadf78288e59ba6a3ff3cfab9ae3667765",
     "text": "  - standard_expenses: gross_receipt * 0.30",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 261,
     "sha256": "c0400d04dbee7d586b78204994625ca639a2b8115cb91fa22f9eb8209bfd156d",
     "text": "  - taxable_base: gross_receipt - standard_expenses",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 262,
     "sha256": "cd060ad4a809d348d5d5caa378832b064ad96f75aee5f3986fc4cac307b358df",
     "text": "  - pit_withheld: taxable_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 263,
     "sha256": "60df8538cb33cbb7c476c7e2114a5f163c3b05fb5684f7c1bc6cf5e400107a26",
     "text": "  - receipt_after_pit_only: gross_receipt - pit_withheld",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 264,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 265,
     "sha256": "cc37b335890f7b93edb4ed3ab32279e5d313d2301252d754c823bf9f6ba8f891",
     "text": "  standard_expenses: 600",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 266,
     "sha256": "6d1431409b10f3752527dfd4dd9c72942e6415ab34e6f821f8869367763afd46",
     "text": "  taxable_base: 1400",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 267,
     "sha256": "2140561806d1e16433e23379c1413ac71c806b1533f0f1d3824472709787848c",
     "text": "  pit_withheld: 210",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 268,
     "sha256": "d14d72ec069dfd3b5629ce4802834c78db26799a83685089e244e2b98a57707b",
     "text": "  receipt_after_pit_only: 1790",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 269,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 271,
     "sha256": "3409bc5a3893cc6c196c388f17c9a7c182ed2ac4a92056a9d12ac49cb851f8c6",
     "text": "### 4. Rent with standard expenses",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 273,
     "sha256": "8a55c6ddccc50aa44a0c17a99eec59009f1555e4634003957387077c5f5563b2",
     "text": "Gross rent 20,000, no documented costs. Ordinary letting: base 14,000, PIT 2,100. Tourist letting with tourist tax paid: base 10,000, PIT 1,500. Tourist letting under an agency or local tourist organisation lease with at least 60 days' average occupancy: base 6,000, PIT 900. These are three different sets of facts. [Arts. 35, 36 and 49a][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 275,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 276,
     "sha256": "1bea1558a2563fada6433a2a6cc68299382b3aad053ed8a20e9202f97b71266a",
     "text": "name: Montenegro rental standard expense alternatives",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 277,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 278,
     "sha256": "79fbd00dfa0702e249921d04203618579a86fc9eb1678f2dafafa18a9bee586c",
     "text": "  gross_rent: 20000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 279,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 280,
     "sha256": "adb7af2a4973b8047d76b952c1824ee77160b4a428835b743bab8834fcce08e5",
     "text": "  - ordinary_base: gross_rent * (1 - 0.30)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 281,
     "sha256": "bb1a557ba7692c0256e79028a6b3feb74523afaee265c74700f42cd47140d774",
     "text": "  - ordinary_pit: ordinary_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 282,
     "sha256": "0df15b812d67b3dc7817c73a471a33e269a96081e88ff856d448f87f5101ac29",
     "text": "  - qualifying_50_base: gross_rent * (1 - 0.50)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 283,
     "sha256": "81bf67c69588f65e219cb694832fdc577dfd363d8219fea8d687cbf06839b7c3",
     "text": "  - qualifying_50_pit: qualifying_50_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 284,
     "sha256": "49a538f4b7ec2200cbc62dcb97f2288e53412f6b642c32525b945d7be57a4ba9",
     "text": "  - qualifying_70_base: gross_rent * (1 - 0.70)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 285,
     "sha256": "c4f73c337ea35434c593d0846efff14e82e0c5161eb29422b40a1d1c8deb0174",
     "text": "  - qualifying_70_pit: qualifying_70_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 286,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 287,
     "sha256": "4d95f503b31f44bdd310fd99eae05e27e1f4a9f9cdf84f9bbb2a9bdde8afe69e",
     "text": "  ordinary_base: 14000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 288,
     "sha256": "c9beb79829ead51a0d86febee26fb4db54386c5478f6a1cedb5d61d5d971c6fc",
     "text": "  ordinary_pit: 2100",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 289,
     "sha256": "d4647dce3074f472fec0e49f69d0478a0decb55a53e6eb2cf443d36c1794dea8",
     "text": "  qualifying_50_base: 10000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 290,
     "sha256": "4acbd9ee911620d9892e35afd7f9398a5b17945981f17309da9a81635ec28a59",
     "text": "  qualifying_50_pit: 1500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 291,
     "sha256": "a9c75d65fa5123591c5afdfc5445c8baafd78b4b4b17a5a0e3f9519815795b86",
     "text": "  qualifying_70_base: 6000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 292,
     "sha256": "c93516714568efbe86fc26d1146d7014a0b70508865988a294428b75ab0a9b72",
     "text": "  qualifying_70_pit: 900",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 293,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 295,
     "sha256": "025f6eb928343792a7c64fee84917b232711aa50c33b3906baa21dd2d3703780",
     "text": "### 5. Property gain with a same-year capital loss",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 297,
     "sha256": "e2ef59051c25327b79882b8ffd71ce4feac5ce8bd90b7db707400ed90baa406b",
     "text": "Sale of a property that was not the only and main residence for 150,000, with documented reconstruction 7,000 and sale costs 3,000; the price is not below market. Indexed acquisition cost is 110,000. Adjusted sale price 140,000, gain 30,000. A capital loss of 5,000 on shares sold in the same year reduces the taxable gain to 25,000; PIT 3,750, paid with the return. [Arts. 37a to 37d, 37g, 37h and 50a][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 299,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 300,
     "sha256": "b358775c1166da6d950b76604609d915e0716de07ae6c997d0dd49de2c00e88b",
     "text": "name: Montenegro property gain and current capital loss",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 301,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 302,
     "sha256": "a461a1608fcc313d9bcf692c661e7dd2b95c561a3225e881cb7f77509629e677",
     "text": "  sale_price: 150000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 303,
     "sha256": "1cb6228e602378b48f41d87e6222eb3c913713da21dbbf5f1664f39e1df6cc88",
     "text": "  reconstruction: 7000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 304,
     "sha256": "3f46026273ccdeee249303d567673f3ce5462bd8a7a076c7089338ac1498124c",
     "text": "  sale_costs: 3000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 305,
     "sha256": "cb6e3eceb04faafb5c3a7d81ae90a42cecb557d514c4ad34e7d11ade1960b19b",
     "text": "  established_indexed_cost: 110000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 306,
     "sha256": "8097ae0783453914ee4f7056f714205fdea7a75cc459997c8040c49ae8c54783",
     "text": "  current_capital_loss: 5000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 307,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 308,
     "sha256": "f823676842b288685f7694ba27c35c7c991d4252cd1153c24148310390f607dd",
     "text": "  - adjusted_sale: sale_price - reconstruction - sale_costs",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 309,
     "sha256": "d80114fcbeb141a0ac003580a8330d6040bd7db88cd7b4c1b222e5ac6f6e4d0b",
     "text": "  - gain: adjusted_sale - established_indexed_cost",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 310,
     "sha256": "c7046ea51da6f364ed6f205b7939f1c0334c6533fe31663e2744412f8cfbfd75",
     "text": "  - taxable_capital_gain: max(gain - current_capital_loss, 0)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 311,
     "sha256": "1a45c78bc2e81e3eb76cc0902669417af810d041a14ca37161dd7f13cb56304a",
     "text": "  - pit: taxable_capital_gain * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 312,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 313,
     "sha256": "cf02da2444685ce03cca0b2870832c8d3238c9e5c3f7b67deae5ddfe0778aff3",
     "text": "  adjusted_sale: 140000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 314,
     "sha256": "1edb794eb63d0797e4c76b8f6ba1c1acd438ebd1fc767d99ce7137bedc1f9135",
     "text": "  gain: 30000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 315,
     "sha256": "3784b6d7ee19447dad0f4c6c9821390a7319aac9d54d2983c2a00d36cb78e9ba",
     "text": "  taxable_capital_gain: 25000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 316,
     "sha256": "837d11b3466be6ae500e932d358112bb39ca58b213e1342419d8eb4b3d118e4c",
     "text": "  pit: 3750",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 317,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 319,
     "sha256": "66c3cf3d027f2dd2a8d01e6729acc1ae8927f619962114dd419ea277894eb869",
     "text": "### 6. Shares under FIFO",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 321,
     "sha256": "dcdd98c59a9d47e83a0fc7ddcc309b6349abc7b5cb296ff7fa99101de0295f18",
     "text": "Buy 100 shares at 10, then 100 at 15, of the same issuer; sell 150 at 20. FIFO cost is 100 × 10 + 50 × 15 = 1,750; gain 1,250; PIT 187.50. Fifty shares at 15 remain. [Arts. 37a, 37f and 50a][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 323,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 324,
     "sha256": "378b8dc3eda8b12aa216ded088fa68e7e76e9302ef560fd6b1fb65e9cb47b06d",
     "text": "name: Montenegro securities FIFO gain",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 325,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 326,
     "sha256": "e745c6ca2c73b16a37ad7fb6fb21ea52cd54e8c2150bfb18b855b5933b629ea2",
     "text": "  first_units: 100",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 327,
     "sha256": "93cb0c55d28677fc345ea2885a2a196befb7a201e85d9018ead7abe61bb7c560",
     "text": "  first_price: 10",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 328,
     "sha256": "deeb5febe9de8a30acc6a422ebed47aecffb66fe9840e640f85f5ddc6e71b371",
     "text": "  second_units: 100",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 329,
     "sha256": "04eb3d11be84a811ff57078bdc4e18ec1db424e84f0938c095815fd79d3970a5",
     "text": "  second_price: 15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 330,
     "sha256": "2ba4237e7eceede2e3d5871a74336d7a474b0812b6c2c81c5af8f6a42d098609",
     "text": "  units_sold: 150",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 331,
     "sha256": "c85c93f32850bb434380fbe4eec1a59a8fd0537bfb1f073f9b2d85aacb2b7086",
     "text": "  sale_price_each: 20",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 332,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 333,
     "sha256": "c427f078100020ecbcf476224adb965739b1567fed6a8117450acf891cdbe7b2",
     "text": "  - first_used: min(first_units, units_sold)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 334,
     "sha256": "2bc0e034ba994218415c7e217042f5025d6c500ee4c60434a7e07b2d2763bef9",
     "text": "  - second_used: units_sold - first_used",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 335,
     "sha256": "0967fcdfa19de18cd6bb799627edb3fff3e1e0a56cad0ea82ad8c374d7d7e984",
     "text": "  - proceeds: units_sold * sale_price_each",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 336,
     "sha256": "532a62e74fa11811c1cc11f4791ed308284159bb452a281384a552a57192eb4d",
     "text": "  - fifo_cost: first_used * first_price + second_used * second_price",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 337,
     "sha256": "59dc5e59c9479b200d9b0a62a37f7fb65456478a74965822643758df37766d3e",
     "text": "  - gain: proceeds - fifo_cost",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 338,
     "sha256": "7469aafb8dd2d6648420bc7c073b84d1eee792531ee11dbcf427e076a2a35de4",
     "text": "  - pit: gain * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 339,
     "sha256": "435b85c7df294f3227b823ae15d6d672e658bde6b338d6a6c40563b75e29a571",
     "text": "  - remaining_second_units: second_units - second_used",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 340,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 341,
     "sha256": "81c971ec51039b123d01a70baa51b9d9441ce244b68137d1ff47b33804139081",
     "text": "  first_used: 100",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 342,
     "sha256": "13796c906b5a21db60e765265f5b045ea48f7f01db065cde2d72ffff0e712b89",
     "text": "  second_used: 50",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 343,
     "sha256": "9f0bf43394057fe52ae6fa1bc752397677b9af39392a932ddabb82b09233edcc",
     "text": "  proceeds: 3000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 344,
     "sha256": "12ed11a8331f985134e12a5393b0be1aeb7138a863656da28d03a25fe006f902",
     "text": "  fifo_cost: 1750",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 345,
     "sha256": "43f1a5b96b2b188057a9f133c50544c1703b440f1c49e73b57f14f046044daf0",
     "text": "  gain: 1250",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 346,
     "sha256": "144a119de1883655d915a92ff3b86f7331149f8b24d34e7d7c0a10b2e02df266",
     "text": "  pit: 187.50",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 347,
     "sha256": "155cabd982040c761a8ebf56a92a0135f582f3622a51f170ec9ad07ea3debe08",
     "text": "  remaining_second_units: 50",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 348,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 350,
     "sha256": "e0ee0c3a341d24dc68cb46edff8d2a3943bbeddbc0d7af6f9b71805de06ed00a",
     "text": "### 7. Internet income versus video-game income",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 352,
     "sha256": "e72e5f78f15ebddc44f7de6915590099d7e0bf9dcaf94c57a835346c4c685742",
     "text": "Two receipts of 10,000 each, neither salary nor taxed under another heading. Internet income: 15% expenses, base 8,500, PIT 1,275. Video-game competition income with no documented costs: 20% standard, base 8,000, PIT 1,200. [Arts. 37o to 37r and 50e][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 354,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 355,
     "sha256": "c1798ed8a78d884236139888cffa300ec9f55f0723eb685dae26a115798561e8",
     "text": "name: Montenegro residual internet and video game bases",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 356,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 357,
     "sha256": "9e4c300ab7a062fb465a27ae2ff83f86636ff3fe4f50c909c2f1c12382acdef5",
     "text": "  internet_receipts: 10000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 358,
     "sha256": "13229635d4834970980af5856ffd01d9364618fc001a1664787f4bef7832e70d",
     "text": "  game_receipts: 10000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 359,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 360,
     "sha256": "456eab5bf2fddbb6850c038e8cca8f87cb0f1117adaf2fda831768b70c47d2ba",
     "text": "  - internet_base: internet_receipts * (1 - 0.15)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 361,
     "sha256": "647935287eef120d73a45cdac87597d259b841bc19bd9e255adf44302e34afac",
     "text": "  - internet_pit: internet_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 362,
     "sha256": "a390a4ed2f176cae6e681ae0f012fd9f4e39e40bba913beb16c94c7b23432786",
     "text": "  - game_base: game_receipts * (1 - 0.20)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 363,
     "sha256": "753ae460d94962d176fae2f59bdc5775688467c2906228be291d59e3a8c17b03",
     "text": "  - game_pit: game_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 364,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 365,
     "sha256": "e5924925533331cace5f39d4ffeae164edcdfcde853c1e7ad0be385b60bf0927",
     "text": "  internet_base: 8500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 366,
     "sha256": "9f6082183d6a13e5a732d1a383083a00c1a0550a6084a5736297ab552e85554e",
     "text": "  internet_pit: 1275",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 367,
     "sha256": "d8044036a985f09efc1b6ec0cc711e7f9d508dc30828d4b95c215d7094424174",
     "text": "  game_base: 8000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 368,
     "sha256": "aff349411ef3388d43e2aec4d18a87aa07d4754f0b5657f2ea34a9903af4b083",
     "text": "  game_pit: 1200",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 369,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 371,
     "sha256": "bc46920bbc2b733201e47e4827b1980237ea9cf44bdb5c1ba41fb0cc078af209",
     "text": "### 8. Foreign dividend with a capped credit",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 373,
     "sha256": "53115a18143e00ec5a15b64da55b2bc4a2a4e12c63bd481d98d12cbd428f942f",
     "text": "A resident receives a foreign dividend of 10,000 gross and proves 2,000 of foreign income tax paid. Montenegrin tax is 1,500, so the credit is capped at 1,500 and nothing is left to pay. The 500 excess is not carried forward, refunded or set against other income. [Arts. 37, 44 and 45][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 375,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 376,
     "sha256": "398148e35a79882fd0dcdb0e5f568cea8ca4320caa1ce7a90f071182e4b9845e",
     "text": "name: Montenegro private foreign dividend credit cap",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 377,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 378,
     "sha256": "8260e35e71053aff5ef4dff0df33e05dd0037fb3516bf4c47af17c6e009ced93",
     "text": "  foreign_gross_dividend: 10000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 379,
     "sha256": "266d75a828d4788cd1ebd9ecde92832d8ba0d6917f6f0de549902d6cb2b11495",
     "text": "  qualifying_foreign_tax: 2000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 380,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 381,
     "sha256": "d367002ce846af6b773d9e14e8c979732a01bbd802a8d10c8c391243e190d081",
     "text": "  - domestic_tax_on_foreign: foreign_gross_dividend * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 382,
     "sha256": "70a463293e1cb3584bc2750d4a1ad7cc967a2d195d337b5430c0431979dc7f6c",
     "text": "  - allowed_credit: min(qualifying_foreign_tax, domestic_tax_on_foreign)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 383,
     "sha256": "2c199547dfd7dbdb117475aaaf94622767cf6ba6a1f19a798f198758e9263c06",
     "text": "  - residual_domestic_pit: domestic_tax_on_foreign - allowed_credit",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 384,
     "sha256": "c01019399eae9cc51055b3fc9bb2df48cf4b6dc51e8a3a6889d7f0f3ef8abefd",
     "text": "  - excess_not_claimed: qualifying_foreign_tax - allowed_credit",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 385,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 386,
     "sha256": "e5ef018a8959d2d0cd985a570b94f278f6fe12f6da907a9bc7dea942e60da53d",
     "text": "  domestic_tax_on_foreign: 1500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 387,
     "sha256": "97dddb4a20658f27fdd6e9f0bfbdac68de33f872ad90870109e168527d56fd66",
     "text": "  allowed_credit: 1500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 388,
     "sha256": "0f48885c2648825030e4ab3e3d627aab2d39c43880d2f8d6e6b1a4dfdf13e544",
     "text": "  residual_domestic_pit: 0",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 389,
     "sha256": "122221d4da86b6ac87495694af033226a2b1b5791fb3a7d6b8b73bf7e143561b",
     "text": "  excess_not_claimed: 500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 390,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 392,
     "sha256": "cfae67bc2a8450c8473b22c1c0b9a0940926cca3a1e748db92b8e06dd6b5a6e9",
     "text": "### 9. Fine-art royalty and amateur sport",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 394,
     "sha256": "d2ccc007ea63f77a5ce85a797e9a99ab1dad7c02b2d61507c702c8e1fb135edf",
     "text": "Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 396,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 397,
     "sha256": "17540feb54492b8ff6611147c265e468924583143c39919c2aae3e10474ab863",
     "text": "name: Montenegro fine art royalty and amateur sport",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 398,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 399,
     "sha256": "9776ab4c0ffee75698adb681c5e2723bde2e12ef506888f97586fe9e49029d85",
     "text": "  fine_art_rights: 5000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 400,
     "sha256": "2345fd4969b5544d750ce621aaba84474277869f82ee85e7db42c4849e51a149",
     "text": "  qualifying_amateur_sport: 5000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 401,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 402,
     "sha256": "be8e51cd76d7d7306ad6846612a9cf0173e97e9c1f7cd9cac3117136bb720c64",
     "text": "  - royalty_base: fine_art_rights * (1 - 0.60)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 403,
     "sha256": "f8c40bb8b40c7133703ac243dc5b5217fff0a4aceaa3aef9000181b154d5da2a",
     "text": "  - royalty_pit: royalty_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 404,
     "sha256": "5911f57adc961c7f9e0170902c2a51e95d206b5e78ec846fd65f180d032bba82",
     "text": "  - sport_base: qualifying_amateur_sport * (1 - 0.90)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 405,
     "sha256": "4c2fecb06e911c817157894ab2e3b9b5ff52a8dde10a9be198f44c6bbd414340",
     "text": "  - sport_pit: sport_base * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 406,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 407,
     "sha256": "7b834a720823701998e010981fa6c73d594979fb439ba582385c406f37b7c16c",
     "text": "  royalty_base: 2000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 408,
     "sha256": "816001d566dc52c3c1fc05913b7f3fd2b4e531af077e5c0726e2422ce09b02b5",
     "text": "  royalty_pit: 300",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 409,
     "sha256": "fa9be88df8649fe5cbf08d9dc0248b1f857a5cb998680580a6fb8173db05cc92",
     "text": "  sport_base: 500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 410,
     "sha256": "0a6f7d05636c19350ed1ef01106e648cffb8c679699adf27acda9ef1ac4bad8b",
     "text": "  sport_pit: 75",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 411,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 413,
     "sha256": "5b5def9911fb4291d222b00a59714ccc0a32a824287ad2ab6e2e5067fb18483a",
     "text": "### 10. Sole proprietor with municipal surtax",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 415,
     "sha256": "0a6d2152688a798fa28f274463f15cf86893fa24ebc4afd65448170eceee367e",
     "text": "Principal-business taxable profit 20,000; the municipality's surtax decision sets 13%. PIT is 324 + 8,000 × 15% = 1,524. Surtax is 13% of the PIT, 198.12. Total 1,722.12. Contributions are computed separately. [PIT Law art. 10(1)(2)][law]; [Local Self-Government Financing Law arts. 8 and 9][local]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 417,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 418,
     "sha256": "7727aaff63977f1d012fdffe40dc7af1e6a9f9c859f7e3fc8133d014bf4bbd69",
     "text": "name: Montenegro principal business PIT with municipal surtax",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 419,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 420,
     "sha256": "2ef734415c2ed3d4dbe361099558557d118ca36df2e34097b84b4bc68903dc1b",
     "text": "  taxable_profit: 20000",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 421,
     "sha256": "cd8bed2850e2b3d4dd02a645fdbbeee2842df58c5627050bdbca7b01369aa797",
     "text": "  surtax_rate: 0.13",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 422,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 423,
     "sha256": "8ab188603e2d6210efb3341d6c13fe1ba01fc4a970051427c4c359eddb032736",
     "text": "  - pit: max(min(taxable_profit, 12000) - 8400, 0) * 0.09 + max(taxable_profit - 12000, 0) * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 424,
     "sha256": "b0ae27df5d65c63d15a65b04d50144237f824e003fff914ed189ae68fcb9b928",
     "text": "  - surtax: round(pit * surtax_rate, 2)",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 425,
     "sha256": "ce862408304675a284e002df16b3710ffc4091e629397856ce4b3d0f214479e7",
     "text": "  - total: pit + surtax",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 426,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 427,
     "sha256": "da0e377f3b3cf5b1156dcc34c02092aeed759794c000b7bd00cb5f528bf13666",
     "text": "  pit: 1524",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 428,
     "sha256": "f8b6dc66caae977dd1965a82bfb87dc8577f179af17097b438a398f3a835f598",
     "text": "  surtax: 198.12",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 429,
     "sha256": "8a7dc4210a3a8611a93c43d3e0a65f0594c527e2ee8296f8e7b5693d5379d4fa",
     "text": "  total: 1722.12",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 430,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 432,
     "sha256": "240314f16eb4645a3eaeee0ffe5e1f6de5a4941644d378e385ee1e09ec2c7ad4",
     "text": "### 11. Gambling winning before and after 21 May 2026",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 434,
     "sha256": "35ee7b703024da8da47536edd52b42d62790412a64703b2d6f4948dc3d9a3fb2",
     "text": "A betting winning of 1,500 after deducting the stake. Paid on 10 March 2026, the bands apply: 1,450 × 10% = 145. Paid on 10 June 2026, the flat rate applies: 1,500 × 12% = 180. The organiser withholds and pays by the 15th of the next month. [PIT Law arts. 10(1)(4), 37s and 50f][law]; [70/26 arts. 1 and 3][may]",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 436,
     "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
     "text": "```oa-check",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 437,
     "sha256": "9aeab3e56999acd62c4a45583ecb307e1d327175ea2117e794c0e3fca215236c",
     "text": "name: Montenegro gambling winning before and after the 70/26 change",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 438,
     "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
     "text": "inputs:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 439,
     "sha256": "e962d34ccbae75acfb44897a3ce929495386cfe2e3259d054beebe2951df5c43",
     "text": "  winning: 1500",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 440,
     "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
     "text": "steps:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 441,
     "sha256": "8e32b68a7578fa4284495995fac0231cf828d27ecd553feb454fef51458edc12",
     "text": "  - tax_before_21_may: max(min(winning, 1500) - 50, 0) * 0.10 + max(winning - 1500, 0) * 0.15",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 442,
     "sha256": "91d12382c4018e10996e13be0825e42d4cf6fbd665f79784f55cfb2079f96232",
     "text": "  - tax_from_21_may: winning * 0.12",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 443,
     "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
     "text": "expected:",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 444,
     "sha256": "144e75fd4f19cbaed9ca910e1d325e169685cb73c113c991e49973d66228ec5a",
     "text": "  tax_before_21_may: 145",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 445,
     "sha256": "5eca952f51285efe7f621c2cfb769ab89d646d58ddeb97bb5ca1e4127b30deae",
     "text": "  tax_from_21_may: 180",
-    "destination": "Retained examples appendix: unchanged exact line"
+    "destination": "Retained examples appendix: unchanged exact line",
+    "preservation_mode": "verbatim_in_appendix"
   },
   {
     "old_line": 446,
     "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
     "text": "```",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 448,
     "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
     "text": "## Ask the client first",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 450,
     "sha256": "d64ddb972ad5a56279c6ff1553593149ac5bdfb830c304534f945afbedf9fba7",
     "text": "1. Residence: domicile, centre of vital interests, days in Montenegro in 2026, and any posting abroad or digital-nomad status.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 451,
     "sha256": "8508ca63c5f561318b2473daf2275565cca6ceb58a8a0310943680289625fa76",
     "text": "2. Which income classes: salary (and from how many payers), registered business as main or supplementary activity, occasional contracts, rent (and whether to tourists, with a licence), interest and dividends, sales of property, stakes or shares, sport, royalties, internet or gaming income, gambling winnings.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 452,
     "sha256": "2aaf2c1fab8669dbf67e3e57af71befd9749ff6a6b017a12cb913eef21acd4da",
     "text": "3. For a business: accounts, fixed-asset register, unused losses by year, advances paid, VAT registration, lump-sum decision, and any underdeveloped-municipality or other relief decision.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 453,
     "sha256": "8eea74981cd21d7067189c7328778a5e38f871dafb99bf696f3504b44b5489b7",
     "text": "4. Municipality of activity or residence, and its surtax decision.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 454,
     "sha256": "151b8379a3270cc02846a832fe7e7725508181794929f870a3842f7be3e2b66f",
     "text": "5. Who paid each receipt (legal person, entrepreneur or private individual) and what tax was withheld.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 455,
     "sha256": "fbf20b12632a37485c5505dc0d032feb8113494aad56b4cd0a9782e9b739c558",
     "text": "6. Foreign income and foreign tax paid, with proof and the treaty country.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 457,
     "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
     "text": "## Sources",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 459,
     "sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
     "text": "| Source | URL | Read on |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 460,
     "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
     "text": "|---|---|---|",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 461,
     "sha256": "a6fa37f89c773325af25df4549837dc5ff78dfc96ff8736e3ef1afbd7ab6ceff",
     "text": "| Personal Income Tax Law, consolidated through 160/25 (Ministry of Finance publication), arts. 1 to 10a, 12 to 37s, 42 to 53v, 62 | https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 462,
     "sha256": "fc592b1f5d84e2bdb6f5dc8587ae5f077e7cb1a48afe6b484a720f699eb5e271",
     "text": "| Law amending the Personal Income Tax Law, Official Gazette 160/25, arts. 1 to 21 (application from 1 January 2026, art. 21) | https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 463,
     "sha256": "9ad97ced3af83afb47b63bfc06fafac47470dc8759c893d87b354bae1866623e",
     "text": "| Law amending the Personal Income Tax Law, Official Gazette 70/26, arts. 1 to 3 (12% gambling rate) | https://www.sluzbenilist.me/propisi/394390/download | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 464,
     "sha256": "9457c778c7362b803e3c2d9192e5e95ba82a44153c7ef7edd09530246a29848f",
     "text": "| Official Gazette record for 70/26: published 20.05.2026, in force 21.05.2026 | https://www.sluzbenilist.me/propisi/394390 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 465,
     "sha256": "b34a67c730a1521344001f006bf5ade19f743e4148f06d011d21f978bf3cb305",
     "text": "| Ministry of Finance, notice on taxation of gambling winnings, 5 January 2026 (bands from 1 January 2026) | https://www.gov.me/clanak/jasna-pravila-oporezivanja-dobitaka-od-igara-na-srecu-zakon-se-primjenjuje-jednako-na-sve | 2026-10-30 |",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 466,
     "sha256": "0e578d80ad8b41a98642eec1724cf081cbb78426deef505c3c29132b33549e0d",
     "text": "| Rulebook on the form and content of the annual PIT return (GPP-FL), through 103/2025, arts. 1 to 5 | https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 467,
     "sha256": "1fbdcd051d77552e759aa6b7c6c829f7e5db624d54726e698577df9eb175085f",
     "text": "| Local Self-Government Financing Law, through 149/2025, arts. 8 and 9 (surtax) | https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 468,
     "sha256": "9543f381aab4cc47092dafe52522d412d50e1ee0f3b550c9fc3773c8f8801e91",
     "text": "| Law on Contributions for Mandatory Social Insurance, through 160/2025, arts. 14, 15, 17 and 18 | https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 469,
     "sha256": "de2f3cdba072f4ca4b9d6390ae11b103a3eb8b5a8e9c14c66cd5b6d5222adad0",
     "text": "| VAT Law, consolidated through 12/26, arts. 24, 42 and 55 | https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 470,
     "sha256": "3a39702cb70c0b0e2456c234ccef20ab80586d118381f8f12fae7a69fed0c26a",
     "text": "| Tax Administration Law, Ministry consolidation published March 2026 (before 104/26), art. 95(1) (0.03% a day) | https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 471,
     "sha256": "0fcb74969d0efe89fbd5bdd26c32c0442ad2a04a8f772cf16c18317d858d645a",
     "text": "| Law amending the Tax Administration Law, Official Gazette 104/26, arts. 20 and 26 (ECB + 3 points from 18 July 2026) | https://wapi.gov.me/download/c22f3c59-7e52-4213-bbe4-3cd9d8d3a373?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 472,
     "sha256": "d83da0907d15a457cf2fce83f094425d0f788d9c1fa6e8a9cddbf13d3512ae7f",
     "text": "| Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |",
-    "destination": "Guide Sources table, same URL with newly read date"
+    "destination": "Guide Sources table, same URL with newly read date",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 474,
     "sha256": "38af68e0bde6cbedba5f0cf967adf9a36a249eb75e0c4ebae9adc2b3a027c0a4",
     "text": "[law]: https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 475,
     "sha256": "39c7333cff6272634478a07ddf842e382f14c0fc03ad3f624aa5ec8e52bdf46c",
     "text": "[amend]: https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 476,
     "sha256": "e214f1d38790d8124fc1d3bf0d198c7b7143462ede945803cf7e1ac0ae90db3d",
     "text": "[may]: https://www.sluzbenilist.me/propisi/394390/download",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 477,
     "sha256": "31f10b4e46864c13711bbcb8111ce76b4dc0692068eba59d0a1a5ff1fd30f2b3",
     "text": "[mayrecord]: https://www.sluzbenilist.me/propisi/394390",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 478,
     "sha256": "9631b01646208a421e97309dacb24feda6bef5b90074e9ccf2d049112b51cf3e",
     "text": "[return]: https://wapi.gov.me/download/afb50b45-7e83-4dac-b69e-2a1e280d3ffc?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 479,
     "sha256": "76fe4ef8d93458137de86c37edae34f7334baf0fabaf853b0bd87086b419e661",
     "text": "[local]: https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 480,
     "sha256": "4ace40ba5639c3362f6d6cd959645326c675c52e502f263b340f216352108a1f",
     "text": "[contrib]: https://wapi.gov.me/download/97253561-f373-4456-a024-b15f6596a0f2?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 481,
     "sha256": "1390c398f7dc5a8773f01666e72619cdd601d4d8de7c41f4321300af21dd393c",
     "text": "[vat]: https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 483,
     "sha256": "69c118acc7f961cab5bc1b76addb134a6b2a1d2a8e1acb0f54af5f95338b0b8a",
     "text": "Not yet confirmed: the GPP-FL schedules and their box layout (the rulebook PDF omits the attachments) and the e-filing portal; the PIT-specific rulebook classifying assets into depreciation groups (art. 23(8)); the lump-sum tax scale (art. 49(2)); each municipality's current surtax rate (only the 13% and 15% caps are confirmed); the 2026 PIO annual ceiling (the old EUR 68,765 was a 2024 figure); the treatment of government grants in business income; the dual net minimum wage of EUR 670 and 800 and the employer Labour Fund and Chamber levies (see the payroll skill); the list of underdeveloped municipalities; and a September 2026 Government proposal to change salary taxation from 1 January 2027, not found enacted.",
-    "destination": "Guide Sources: old pausal/printed-layout gaps closed; all other gaps preserved plus specific 2026 form/rounding gaps"
+    "destination": "Guide Sources: old pausal/printed-layout gaps closed; all other gaps preserved plus specific 2026 form/rounding gaps",
+    "preservation_mode": "documented_correction_or_metadata_gap_update"
   },
   {
     "old_line": 485,
     "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
     "text": "<!-- openaccountants-cta-block -->",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 487,
     "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
     "text": "---",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 489,
     "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
     "text": "## Talk to a verified accountant",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 491,
     "sha256": "d41a05f6c45a661160201e47359bbc3a7bb7ef83e6450478028330da4d2a64bc",
     "text": "This guide is maintained by the OpenAccountants network — accountants who put",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 492,
     "sha256": "ee1ef748aa1f4dfaa8bf75796a1df67343ea61efb442fa32d53c762b561d35ea",
     "text": "their name behind the tax answers AI gives people. The live, always-current",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 493,
     "sha256": "2cbb389a9ad595bff6a6dde37f81891540f15ca35a6a96d9e6418f81909a2462",
     "text": "version (and the professional behind it) is at",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 494,
     "sha256": "2c0ebe83a888dc3ad5132525cb98eb28b4ce17af1c395357b932c48166c61e32",
     "text": "[openaccountants.com](https://www.openaccountants.com).",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 496,
     "sha256": "9fc15ca082913c558496e5718d0d7c592aad71a788fcf7c9812f1c8b37c4220d",
     "text": "- Use it in your AI: https://www.openaccountants.com/connect",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 497,
     "sha256": "6c37a9410c003ec947955e9498c578db511a7cdbf09a32f8503fcb98a89bf507",
     "text": "- Meet the accountants: https://www.openaccountants.com/network",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 499,
     "sha256": "0b2b38bb62f73a28b897bc076bd07876ed3504e40cd386a55f639102a0c61c1c",
     "text": "> **General reference only.** This document does not constitute tax, legal, or",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 500,
     "sha256": "e7f5a191c8f011d89816d0c3b2048a8b05726936fe01595dafb16eb648aed28f",
     "text": "> financial advice. Verify figures against the cited primary sources or with a",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   },
   {
     "old_line": 501,
     "sha256": "29043232012f2c6d33f540f3f92ca4af42009dbfb4c3a98036c325dca2e96f9c",
     "text": "> licensed professional before relying on them.",
-    "destination": "Guide: unchanged exact line"
+    "destination": "Guide: unchanged exact line",
+    "preservation_mode": "verbatim_in_guide"
   }
 ]

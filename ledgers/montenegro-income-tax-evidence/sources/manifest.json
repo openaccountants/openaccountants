@@ -32,6 +32,22 @@
     "format": "txt"
   },
   {
+    "file": "pit-amendment70-2026-record.html",
+    "url": "https://www.sluzbenilist.me/propisi/394390",
+    "sha256": "ee2a0a1b9a9ba1234396411f5528dd89c278eead50f57ccd2e0993b093092331",
+    "bytes": 264275,
+    "read_on": "2026-10-31",
+    "format": "html"
+  },
+  {
+    "file": "pit-amendment70-2026-record.txt",
+    "url": "https://www.sluzbenilist.me/propisi/394390",
+    "sha256": "a5b00f80e72b830e10d56416667acbc497110b5ee00348828f98e35708690fa9",
+    "bytes": 2464,
+    "read_on": "2026-10-31",
+    "format": "txt"
+  },
+  {
     "file": "pit-amendment70-2026.pdf",
     "url": "https://www.sluzbenilist.me/propisi/394390/download",
     "sha256": "29d66a55c3de2dc38bb65e653d594938613d06a616d5249f25ce2fddcbf5ea6a",
@@ -144,7 +160,7 @@
     "format": "txt"
   },
   {
-    "file": "administration-law-pre104-2026.pdf",
+    "file": "administration-law-pre104-2026.docx",
     "url": "https://wapi.gov.me/download/2dd530ac-eec4-4d0c-9d8f-0c9e7ebc5b86?version=1.0",
     "sha256": "cec34ce039466010c4bb9efe727282a7065433b123afb6ad443bac49f60b173a",
     "bytes": 68663,
@@ -214,5 +230,13 @@
     "bytes": 541067,
     "read_on": "2026-10-31",
     "format": "html"
+  },
+  {
+    "file": "pausal-deadline-notice2026.txt",
+    "url": "https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine",
+    "sha256": "193230411dfc296b1df91f9a50d3bfe739c3bcbcc0a8a900fc497c5c66365beb",
+    "bytes": 2378,
+    "read_on": "2026-10-31",
+    "format": "txt"
   }
 ]

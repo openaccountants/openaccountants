@@ -299,10 +299,10 @@ expected:
 
 ## Mixed ordinary full-year return: main due and refund
 
-Assume principal taxable business base 24,840; domestic rent base B4=14,000, sport D6=500, copyright E6=2,000; H12=13,700. Foreign dividend 10,000 and occasional net income 1,400 are each included only in F, not duplicated in B/D/E/H. Foreign paid taxes are dividend 2,000 and occasional 70; the eligible credit is capped separately at 1,500 and 210 respectively. Thus 1,570 is eligible, not the 1,710 pooled domestic tax on those foreign categories. No foreign salary, supplementary activity, gambling, relief or municipal surtax is assumed. Business PIT advances are 1,800; B/D/E advances 2,100/75/300.
+Assume principal taxable business base 24,840; domestic rent base B4=14,000, sport D6=500, copyright E6=2,000; H12=13,700. Assume the dividend comes from foreign Country A and occasional work from a DIFFERENT foreign Country B, both with the stated eligible foreign income tax and no treaty variation. Foreign dividend 10,000 and occasional net income 1,400 are each included only in F, not duplicated in B/D/E/H. Foreign paid taxes are dividend 2,000 and occasional 70; the eligible credit is capped by the two foreign countries at 1,500 and 210 respectively. Thus 1,570 is eligible, not the 1,710 pooled domestic tax across those different countries. This is a statutory country-cap workpaper, not certification of live portal acceptance of the printed pooled F15 field. No foreign salary, supplementary activity, gambling, relief or municipal surtax is assumed. Business PIT advances are 1,800; B/D/E advances 2,100/75/300.
 
 ```oa-check
-name: Montenegro main ordinary full-year due with isolated foreign credit cap
+name: Montenegro main ordinary full-year due with foreign-country credit cap
 inputs:
   principal_base: 24840
   b4: 14000

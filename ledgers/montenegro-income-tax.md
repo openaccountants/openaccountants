@@ -6,15 +6,11 @@ The predecessor is frozen in `montenegro-income-tax-evidence/predecessor/`. All 
 
 Every numbered row below includes the full figure/rule text, section, act/article or form page, official URL, exact original-language excerpt and read date. The companion `.writer.json` retains source selectors and full-context hashes. Multiple rules in a paragraph are a group, not a claim that only one figure was checked.
 
-## ME-PIT-001: 
+## ME-PIT-001: Scope and tax-year coverage
 
 This skill computes Montenegro personal income tax for an individual or a sole proprietor (preduzetnik) for 2026. The law is the Personal Income Tax Law (Zakon o porezu na dohodak fizičkih lica, "PIT Law"), consolidated through amendment 160/25, which applies from 1 January 2026 (160/25 art. 21), read with amendment 70/26, which changes the gambling rate from 21 May 2026 (70/26 arts. 1 and 3). The tax is run by the Tax Administration (Poreska uprava). The currency is the euro.
 
-- Article 21; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 21 Na teret rashoda ne priznaju se: 1) troškovi koji nijesu nastali u svrhu obavljanja poslovne djelatnosti; 2) troškovi koji se ne mogu dokumentovati; 3) kamate za neblagovremeno plaćanje poreza i doprinosa; 4) kamate isplaćene nerezidentima, ako su plaćene po stopi višoj od uobičajene komercijalne stope; 5) troškovi na ime plaćanja izvršenih
-
-- Article 1; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 1 (1) Ovim zakonom uvodi se obaveza plaćanja poreza na dohodak fizičkih lica (u daljem tekstu: porez na dohodak). (2) Prihodi od poreza na dohodak pripadaju budžetu Crne Gore i budžetima jedinica lokalne samouprave u srazmjeri utvrđenoj posebnim zakonima, osim prihoda od poreza na dohodak iz člana 12 stav 2 tačka 10 ovog zakona, koji pripadaju budžetu
-
-- Article 3; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 3 (1) Rezidentno fizičko lice (u daljem tekstu: rezident), u smislu ovog zakona, je fizičko lice koje: 1) na teritoriji Crne Gore ima prebivalište ili centar poslovnih i životnih interesa; 2) boravi na teritoriji Crne Gore više od 183 dana u poreskoj godini. (2) Rezident Crne Gore je i fizičko lice koje je upućeno izvan Crne Gore radi obavljanja posla
+- Article 21; https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0; read 2026-10-31; original quote: Član 21 Ovaj zakon stupa na snagu danom objavljivanja u "Službenom listu Crne Gore", a primjenjivaće se od 1. januara 2026. godine. Broj: 16-2/25-5/8 EPA 766 XXVIII Podgorica, 27. decembar 2025. godine Skupština Crne Gore 28. saziva Predsjednik, Andrija Mandić, s.r. Pravni ekspert doo, Podgorica
 
 - Article 1; https://www.sluzbenilist.me/propisi/394390/download; read 2026-10-31; original quote: Član 1 U Zakonu o porezu na dohodak fizičkih lica („Službeni list RCG”, br. 65/01, 37/04 i 78/06 i „SIužbeni list CG”, br. 86/09, 14/12, 6/13, 62/13, 60/14, 79/15, 83/16, 67/19, 59/21, 146/21, 152/22, 88/24, 133/25 i 160/25) u članu 10 stav 1 tačka 4 mijenja se i glasi: „4) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 10 ovog zakona iznosi
 
@@ -22,7 +18,7 @@ This skill computes Montenegro personal income tax for an individual or a sole p
 
 - Article 3; https://www.sluzbenilist.me/propisi/394390/download; read 2026-10-31; original quote: Član 3 Ovaj zakon stupa na snagu narednog dana od dana objavljivanja u „Službenom listu Crne Gore”. Broj: 16-2/26-1/5 EPA 973 XXVIII Podgorica, 14. maj 2026. godine Skupština Crne Gore 28. saziva Predsjednik, Andrija Mandić,
 
-- Article 3; https://wapi.gov.me/download/47bea12c-f250-4cdc-b481-3afc30fba94f?version=1.0; read 2026-10-31; original quote: Član 3 Član 10 mijenja se i glasi: "Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka
+- Gazette publication and commencement record; https://www.sluzbenilist.me/propisi/394390; read 2026-10-31; original quote: Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:
 
 ## ME-PIT-002: Who this applies to
 
@@ -105,6 +101,8 @@ This skill computes Montenegro personal income tax for an individual or a sole p
 ## ME-PIT-013: Rates, bands and thresholds
 
 | Gambling winnings paid from 21 May 2026 | 12% of each winning | from 21 May 2026 | [70/26 arts. 1 and 3][may]; [Gazette record][mayrecord] |
+
+- Gazette publication and commencement record; https://www.sluzbenilist.me/propisi/394390; read 2026-10-31; original quote: Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:
 
 - Article 1; https://www.sluzbenilist.me/propisi/394390/download; read 2026-10-31; original quote: Član 1 U Zakonu o porezu na dohodak fizičkih lica („Službeni list RCG”, br. 65/01, 37/04 i 78/06 i „SIužbeni list CG”, br. 86/09, 14/12, 6/13, 62/13, 60/14, 79/15, 83/16, 67/19, 59/21, 146/21, 152/22, 88/24, 133/25 i 160/25) u članu 10 stav 1 tačka 4 mijenja se i glasi: „4) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 10 ovog zakona iznosi
 
@@ -464,23 +462,35 @@ Occasional work outside the taxpayer's main activity, or a work contract (ugovor
 
 | ZAKUP, KIRIJA, rent received | Property income, 15% after expenses | Arts. 34 to 36 |
 
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
+
 - Article 34; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 34 Prihodima od imovine smatraju se prihodi ostvareni od davanja u zakup pokretne i nepokretne imovine.
 
 - Article 35; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 35 (1) Rashodima po osnovu imovine smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (2) Ukoliko se rashodi iz stava 1 ovog člana ne dokumentuju, priznaju se standardni rashodi u visini 30% ostvarenih prihoda od imovine. (3) Izuzetno od stava 2 ovog člana, kod iznajmljivanja soba, apartmana, kuća
 
 - Article 36; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 36 Oporezivi prihod od imovine predstavlja razliku između prihoda iz člana 34 i rashoda iz člana 35 ovog zakona nastalih u istom poreskom periodu. 4. Prihodi od
 
+- Article 49a; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 49a (1) Akontaciju poreza na prihode od imovine tokom godine obračunava, obustavlja i uplaćuje isplatilac prihoda (pravno lice ili preduzetnik), pri svakoj isplati i istovremeno sa isplatom, primjenom stope od 15% na oporezivi prihod iz člana 36 ovog zakona. (2) Kod neposrednog ostvarivanja prihoda od imovine porez na dohodak plaća se prilikom
+
 ## ME-PIT-062: Classifying bank-statement lines
 
 | KAMATA, interest received | Capital income, 15% of gross (interest on Montenegrin government, central bank or municipal debt securities is not capital income) | Art. 37(1)(1) and (5) |
 
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
+
 - Article 37; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37 (1) Prihodom od kapitala smatraju se: 1) prihodi od kamata; 2) Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, "Sl. list CG", br. 160/25) 3) prihodi od korišćenja imovine i usluga od strane vlasnika i suvlasnika kapitala za njihove privatne potrebe; 3a) prihodi fizičkih lica nastali raspodjelom preostale imovine
+
+- Article 50; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 50 (1) Isplatilac prihoda od kapitala dužan je da obračuna, obustavi i uplati porez na prihod od kapitala istovremeno sa isplatom prihoda. (2) Porez na prihode od kapitala obračunava se po stopi od 15%. 6. Plaćanje poreza na kapitalne
 
 ## ME-PIT-063: Classifying bank-statement lines
 
 | DIVIDENDA, dividend | Capital income, 15% of gross | Art. 37(1)(4) |
 
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
+
 - Article 37; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37 (1) Prihodom od kapitala smatraju se: 1) prihodi od kamata; 2) Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, "Sl. list CG", br. 160/25) 3) prihodi od korišćenja imovine i usluga od strane vlasnika i suvlasnika kapitala za njihove privatne potrebe; 3a) prihodi fizičkih lica nastali raspodjelom preostale imovine
+
+- Article 50; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 50 (1) Isplatilac prihoda od kapitala dužan je da obračuna, obustavi i uplati porez na prihod od kapitala istovremeno sa isplatom prihoda. (2) Porez na prihode od kapitala obračunava se po stopi od 15%. 6. Plaćanje poreza na kapitalne
 
 ## ME-PIT-064: Classifying bank-statement lines
 
@@ -490,11 +500,15 @@ Occasional work outside the taxpayer's main activity, or a work contract (ugovor
 
 ## ME-PIT-065: Classifying bank-statement lines
 
-| Own-account transfers, loan principal, VAT payments | Neither income nor expense | Arts. 13 and 18 |
+| Own-account transfers and loan principal; output VAT remittances and recoverable input VAT | Neither income nor expense; check nonrecoverable VAT with the underlying expense or asset in the accounts-to-tax workpaper | Arts. 13, 18, 20 and 23 |
 
 - Article 13; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 13 (1) Oporezivi dohodak predstavlja razliku između dohotka iz člana 12 ovog zakona i priznatih rashoda (troškova) koje je poreski obveznik imao pri njegovom ostvarivanju i očuvanju. (2) Rashodi iz stava 1 ovog člana moraju biti dokumentovani, osim ako ovim zakonom nije drukčije propisano. III VRSTE PRIHODA 1. Prihodi po osnovu ličnih
 
 - Article 18; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 18 Za utvrđivanje oporezive dobiti priznaju se prihodi u iznosima utvrđenim bilansom uspjeha, u skladu sa zakonom kojim se uređuje računovodstvo, izuzev prihoda za koje je ovim zakonom propisan drukčiji način
+
+- Article 20; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 20 Pravni ekspert doo, Podgorica 6 Katalog propisa 2025 (1) Za utvrđivanje poreskog obveznika koji obavlja osnovnu samostalnu djelatnost ili dopunsku preduzetničku djelatnost priznaju se rashodi u iznosima utvrđenim bilansom uspjeha, u skladu sa zakonom kojim se uređuje računovodstvo, izuzev rashoda za koje je ovim zakonom propisan drukčiji način
+
+- Article 23; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 23 (1) Amortizacija stalnih osnovnih sredstava priznaje se kao rashod u iznosu utvrđenom na način predviđen ovim zakonom. (2) Stalna osnovna sredstva iz stava 1 ovog člana obuhvataju materijalna i nematerijalna sredstva čiji je vijek trajanja duži od jedne godine i čija vrijednost prelazi 200 Eura. (3) Osnovna sredstva iz stava 2 ovog člana
 
 ## ME-PIT-066: Classifying bank-statement lines
 
@@ -638,7 +652,9 @@ Interest; the owner's private use of company assets and services; liquidation su
 
 ## ME-PIT-083: Gambling winnings
 
-Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).
+Taxable winnings from lottery games and betting are each winning less its corresponding stake (art. 37s(2)(1) and (2)); a global jackpot uses the total accumulated prize defined in art. 37s(2)(3), without importing that stake deduction. These definitions were replaced by [160/25 art. 10][amend]. Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f).
+
+- Gazette publication and commencement record; https://www.sluzbenilist.me/propisi/394390; read 2026-10-31; original quote: Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:
 
 - Article 37s; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37s (1) Prihodom od igara na sreću smatra se ukupan pojedinačni dobitak ostvaren od igara na sreću u skladu sa zakonom kojim se uređuju igre na sreću, i to od: 1) lutrijskih igara, u novcu, stvarima, uslugama i pravima; 2) igara klađenja (kladioničke igre), u novcu; 3) globalnog džekpot-a, u novcu. (2) Dobitkom od igara na sreću iz stava 1 ovog člana
 
@@ -664,7 +680,7 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 
 ## ME-PIT-085: Reliefs
 
-- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days.
+- **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days. A person previously employed by the founder or a related person of the new employer is excluded, whether or not there was a break in employment (art. 32b(3)).
 
 - Article 32b; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 32b (1) Poreski obveznik iz člana 32 ovog zakona, koji na neodredjeno vrijeme ili najmanje na pet godina zaposli lice, oslobodja se obaveze plaćanja obračunatog i obustavljenog poreza iz zarade za tog zaposlenog, za period od četiri godine od dana zasnivanja radnog odnosa. (2) Zaposlenim licem iz stava 1 ovog člana smatra se lice koje se nalazi na
 
@@ -709,12 +725,6 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 - Article 42; https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0; read 2026-10-31; original quote: Član 42 Pravni ekspert doo, Podgorica 19 Katalog propisa 2025 (1) Izuzetno od člana 13 stav 1 ovog zakona, lice koje za posljednjih 12 mjeseci ostvari promet proizvoda, odnosno usluga u vrijednosti koja ne prelazi, odnosno nije vjerovatno da će preći iznos od 30.000 eura nije poreski obveznik u smislu ovog zakona. (2) Lice iz stava 1 ovog člana ne smije
 
 - Article 55; https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0; read 2026-10-31; original quote: Član 55 (1) Lice koje u posljednjih 12 mjeseci ili u kraćem periodu izvrši promet proizvoda, odnosno usluga, iznad iznosa od 30.000 eura, dužno je izvršiti registraciju za PDV, podnošenjem prijave za registraciju poreskom organu, najkasnije do 20. dana kalendarskog mjeseca koji slijedi mjesecu u kojem je izvršilo promet. (2) Po osnovu prijave za
-
-- Article 24; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 24 (1) Izdaci za zdravstvene, humanitarne, socijalne, obrazovne, naučne, vjerske, kulturne i sportske svrhe, zaštitu životne sredine, razvoj civilnog društva i volonterizma, kao i izdaci namijenjeni ustanovama, odnosno pružaocima usluga socijalne i dječije zaštite osnovanim u skladu sa zakonom kojim se uređuje socijalna i dječija zaštita, priznaju se
-
-- Article 42; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 42 (1) Porez na dohodak obračunava se godišnje. (1a) Izuzetno od stava 1 ovog člana, u slučaju prestanka obavljanja samostalne djelatnosti porez na dohodak obračunava se za period godine u kojem je poreski obveznik obavljao samostalnu djelatnost. (2) Poreski obveznik sam obračunava porez na dohodak u poreskoj prijavi. (3) Porez na dohodak obračunava se
-
-- Article 55; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 55 Primanja po osnovu naknade zbog nezaposlenosti, naknade po osnovu otpremnine kod odlaska u penziju, odnosno kod otpuštanja sa posla, do najnižeg iznosa utvrđenog Opštim kolektivnim ugovorom, odnosno propisom Vlade, ne oporezuju se do 1. januara 2005.
 
 - Article 49; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 49 (1) Obvezniku poreza na prihode od osnovne samostalne djelatnosti, čiji je ukupan promet u godini koja prethodi godini za koju se utvrđuje porez, odnosno čiji je planirani promet kada počinje da obavlja djelatnosti manji od 30.000,01 eura, može se, na njegov zahtjev, priznati da porez plaća u godišnjem paušalnom iznosu. (2) Bliže kriterijume za
 
@@ -778,12 +788,6 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 
 - **Lump-sum tax** (art. 49): available on request to a principal independent activity with turnover below EUR 30,000.01. Apply by the end of January, or within five days of registration for a new activity; the authority decides within 15 days. Tax is paid monthly at 1/12 by the end of the month for the previous month; seasonal activities of up to six months pay by the 5th of the month for the current month. Turnover books must be kept. Not available for lawyers, notaries, auditors, accountants, health, consulting, design, surveying, enforcement officers and other professional and intellectual activities, hairdressing, billiards and amusement games, wholesale and retail trade, hospitality, hotels, financial intermediation, real estate, or VAT-registered taxpayers; the authority can approve lump-sum tax for trade or hospitality in a kiosk, trailer or mobile unit only where the taxpayer produces and sells only its own products (art. 49(10) and (11)). If circumstances justify it, the authority orders a change of method by decision (art. 49(7)). The scale is set by Ministry rulebook (art. 49(2)).
 
-- Article 24; https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0; read 2026-10-31; original quote: Član 24 PDV se obračunava i plaća po opštoj stopi od 21% od svakog prometa proizvoda, usluga i uvoza proizvoda, osim od prometa proizvoda, usluga i uvoza proizvoda za koje je propisano da se PDV plaća po sniženoj stopi, kao i od prometa proizvoda, usluga i uvoza proizvoda za koje je propisana nulta (0) stopa PDV. Snižene
-
-- Article 42; https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0; read 2026-10-31; original quote: Član 42 Pravni ekspert doo, Podgorica 19 Katalog propisa 2025 (1) Izuzetno od člana 13 stav 1 ovog zakona, lice koje za posljednjih 12 mjeseci ostvari promet proizvoda, odnosno usluga u vrijednosti koja ne prelazi, odnosno nije vjerovatno da će preći iznos od 30.000 eura nije poreski obveznik u smislu ovog zakona. (2) Lice iz stava 1 ovog člana ne smije
-
-- Article 55; https://wapi.gov.me/download/795cb7a3-2699-44bd-baa6-b11802121045?version=1.0; read 2026-10-31; original quote: Član 55 (1) Lice koje u posljednjih 12 mjeseci ili u kraćem periodu izvrši promet proizvoda, odnosno usluga, iznad iznosa od 30.000 eura, dužno je izvršiti registraciju za PDV, podnošenjem prijave za registraciju poreskom organu, najkasnije do 20. dana kalendarskog mjeseca koji slijedi mjesecu u kojem je izvršilo promet. (2) Po osnovu prijave za
-
 - Article 49; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 49 (1) Obvezniku poreza na prihode od osnovne samostalne djelatnosti, čiji je ukupan promet u godini koja prethodi godini za koju se utvrđuje porez, odnosno čiji je planirani promet kada počinje da obavlja djelatnosti manji od 30.000,01 eura, može se, na njegov zahtjev, priznati da porez plaća u godišnjem paušalnom iznosu. (2) Bliže kriterijume za
 
 ## ME-PIT-099: Deadlines and filing
@@ -830,7 +834,7 @@ Taxable winnings are each individual winning from lottery games, betting and glo
 
 ## ME-PIT-102: Deadlines and filing
 
-- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)).
+- **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); payers of other personal earnings under article 14 give recipients a statement by 31 January (art. 47(5)).
 
 - Article 47; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 47 (1) Podatke o isplaćenim ličnim primanjima po osnovu zarada i obustavljenom i uplaćenom porezu na dohodak na ta lična primanja poslodavac dostavlja zaposlenom do 31. januara tekuće godine za prethodnu godinu. (2) Poslodavac je dužan da nadležnom poreskom organu dostavlja izvještaje i druge evidencije koje su bitne za obračun poreza na lična
 
@@ -1010,7 +1014,9 @@ For a full-year group-II third-subgroup decision, annual PIT is EUR 549 and cont
 
 - PDF page 5; https://wapi.gov.me/download/13de63a3-660e-4cb4-bb77-b0b59e456834?version=1.0; read 2026-10-31; original quote: M.P.
 
-- Notice 5 February 2026; https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine; read 2026-10-31; original quote: Obavještavamo vas da će se, zbog objektivnih tehničkih okolnosti vezanih za puštanje u produkciju IRMS","image":["https://media.gov.me/media//https://media.gov.me/media/gov/2024/06/06/1717676074pl9pg5pzhjy2gyt5.jpg"],"datePublished":"2026-02-05","dateModified":"2026-02-13","publisher":{"@type":"Organization","name":"Poreska
+- Notice 5 February 2026: operative deadline and paper application paragraphs; https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine; read 2026-10-31; original quote: Obavještavamo vas da će se, zbog objektivnih tehničkih okolnosti vezanih za puštanje u produkciju IRMS, blagovremeno podnijetim zahtjevima za paušalno oporezivanje prihoda od samostalne djelatnosti za tekuću godinu, smatrati zahtjevi podnijeti zaključno sa 27. februarom 2026. godine. Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim
+
+- Notice 5 February 2026: paper ZPO paragraph; https://www.gov.me/clanak/rok-za-podnosenje-zahtjeva-za-pausalno-oporezivanje-produzen-do-27-februara-2026-godine; read 2026-10-31; original quote: Napominjemo da su poreski obveznici predmetne zahtjeve dužni nadležnim područnim jedinicama, odnosno ekspoziturama, podnijeti u papirnoj formi na obrascu „ZPO“ koji je propisan Pravilnikom o paušalnom oporezivanju prihoda od samostalne
 
 - PDF page 5; https://wapi.gov.me/download/16a44be5-b5f1-431e-952a-9251f90dfdc4?version=1.0; read 2026-10-31; original quote: Treba napomenuti da je zakonskim izmjenama od 2026. godine samostalnu djelatnost moguće obavljati kao osnovnu od strane lica koja nijesu u radnom odnosu i kao dopunsku djelatnost od strane lica koja već imaju osnov osiguranja-zaposlenje. Kod dopunske samostalne djelatnosti nije moguće ostvariti pravo na paušalno oporezivanje. ➢ POSTUPAK PODNOŠENJA ZAHTJEVA
 
@@ -1220,7 +1226,7 @@ On the cover select original/amended and resident/nonresident, state the year, t
 
 ## ME-PIT-138: GPP-FL: promulgated schedules and the calculation crosswalk
 
-| F: foreign income | Separate source categories and countries, showing income and foreign tax in distinct columns. F10 is foreign salary for main 2.1; F11 is occasional-work income and F12 the other listed foreign categories for main 3.5. F13 records foreign tax paid, F14 the corresponding Montenegrin tax and F15 the lower eligible credit for main 5.7, subject to the statutory cap per relevant foreign income. Do not duplicate the same foreign receipt in F and a domestic schedule. | [103/25 art. 3, F][gppforms]; [PIT Law art. 44][law] |
+| F: foreign income | Separate source categories and countries, showing income and foreign tax in distinct columns. F10 is foreign salary for main 2.1; F11 is occasional-work income and F12 the other listed foreign categories for main 3.5. F13 records foreign tax paid, F14 the corresponding Montenegrin tax and F15 the lower eligible credit for main 5.7, subject to the statutory foreign-country cap and the separate allocation workpaper. Do not duplicate the same foreign receipt in F and a domestic schedule. | [103/25 art. 3, F][gppforms]; [PIT Law art. 44][law] |
 
 - PDF page 24; https://www.sluzbenilist.me/propisi/385024/download; read 2026-10-31; original quote: DODATAK F: DOHODAK OSTVAREN IZVAN CRNE GORE A. Ime i prezime poreskog obveznika B. Poreski identifikacioni broj (JMBG) _____________________________ I__I__I__I__I__I__I__I__I__I__I__I__I__I IZRAČUNAVANJE DOHOTKA OSTVARENOG IZVAN CRNE GORE DOHODAK OSTVAREN IZVAN CRNE GORE Izvor dohotka I Zemlja II Zemlja III Zemlja Ukupan Plaćeni (prihoda) ________________
 
@@ -1286,7 +1292,7 @@ On the cover select original/amended and resident/nonresident, state the year, t
 
 ## ME-PIT-142: GPP-FL: promulgated schedules and the calculation crosswalk
 
-**Foreign-tax evidence.** F's instructions require a certificate from the competent authority abroad showing the source, amount of income and tax paid, in the source-country language and Montenegrin with a court-certified translation. Preserve the proof and apply treaty priority and the article 44 cap; the printed aggregate credit field does not authorise unused credit from one income source to erase tax on another. [F instructions][gppforms]; [PIT Law arts. 44 and 45][law].
+**Foreign-tax evidence.** F's instructions require a certificate from the competent authority abroad showing the source, amount of income and tax paid, in the source-country language and Montenegrin with a court-certified translation. Preserve the proof and apply treaty priority and the article 44 cap; the printed aggregate credit field does not authorise unused credit from one foreign country to erase tax on another country's income. Article 44 states the cap by foreign country; a mandatory separate category basket within the same country is not established here. Also retain the Montenegro tax already paid within five days on foreign salary under article 46(7): article 42(4) credits advances, but main 5.1 is labelled business advances and F15 is foreign tax. The live return field for those Montenegro salary advances is unresolved; the printed crosswalk must not cause the same salary tax to be paid twice. [F instructions][gppforms]; [PIT Law arts. 44 and 45][law].
 
 - PDF page 24; https://www.sluzbenilist.me/propisi/385024/download; read 2026-10-31; original quote: DODATAK F: DOHODAK OSTVAREN IZVAN CRNE GORE A. Ime i prezime poreskog obveznika B. Poreski identifikacioni broj (JMBG) _____________________________ I__I__I__I__I__I__I__I__I__I__I__I__I__I IZRAČUNAVANJE DOHOTKA OSTVARENOG IZVAN CRNE GORE DOHODAK OSTVAREN IZVAN CRNE GORE Izvor dohotka I Zemlja II Zemlja III Zemlja Ukupan Plaćeni (prihoda) ________________
 
@@ -1294,9 +1300,13 @@ On the cover select original/amended and resident/nonresident, state the year, t
 
 - PDF page 26; https://www.sluzbenilist.me/propisi/385024/download; read 2026-10-31; original quote:  oporezivi dohodak od povremene samostalne djelatnosti utvrđuje se u skladu sa postupkom opisanim pod rednim brojem 2. Dodatka F ovog Uputstva;  oporezivi dohodak za svrhe oporezivanja za ostale izvore prihoda (imovina, kapital, kapitalni dobici, sportske djelatnosti, autorska i srodna prava, patenat, žig i samostalni stručnjak u kulturi, internet i video
 
+- Article 42; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 42 (1) Porez na dohodak obračunava se godišnje. (1a) Izuzetno od stava 1 ovog člana, u slučaju prestanka obavljanja samostalne djelatnosti porez na dohodak obračunava se za period godine u kojem je poreski obveznik obavljao samostalnu djelatnost. (2) Poreski obveznik sam obračunava porez na dohodak u poreskoj prijavi. (3) Porez na dohodak obračunava se
+
 - Article 44; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 44 (1) Rezidentnom poreskom obvezniku koji ostvari dohodak izvan Crne Gore i koji plaća porez na dohodak drugoj državi odobrava se poreski kredit u visini poreza na dohodak plaćenog u toj državi. (2) Poreski kredit iz stava 1 ovog člana ne može biti veći od iznosa koji bi se dobio primjenom odredaba ovog zakona na dohodak ostvaren u drugoj
 
 - Article 45; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 45 (1) Sporazum o otklanjanju dvostrukog oporezivanja ima pretežnu važnost u odnosu na odredbe ovog zakona. (2) Oblik, sadržinu i postupak izdavanja potvrde o rezidentnosti, u poreske svrhe, propisuje ministarstvo nadležno za finansije. 3. Plaćanje poreza na lična
+
+- Article 46; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 46 (1) Porez na lična primanja obračunava, obustavlja i uplaćuje poslodavac, odnosno isplatilac tih primanja. (2) Porez na lična primanja se obračunava, obustavlja i uplaćuje prilikom svake isplate primanja, prema propisima koji važe na dan isplate. (3) Akontacija poreza na lična primanja obračunava se od poreske osnovice, koju čini iznos bruto ličnih
 
 ## ME-PIT-143: GPP-FL: promulgated schedules and the calculation crosswalk
 
@@ -1380,7 +1390,7 @@ On the cover select original/amended and resident/nonresident, state the year, t
 
 ## ME-PIT-150: Cross-border points
 
-- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.
+- **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on the income earned in that foreign country (art. 44). Maintain a workpaper per foreign country and compute the corresponding domestic tax with the right class rates and bases: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit.
 
 - Article 44; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 44 (1) Rezidentnom poreskom obvezniku koji ostvari dohodak izvan Crne Gore i koji plaća porez na dohodak drugoj državi odobrava se poreski kredit u visini poreza na dohodak plaćenog u toj državi. (2) Poreski kredit iz stava 1 ovog člana ne može biti veći od iznosa koji bi se dobio primjenom odredaba ovog zakona na dohodak ostvaren u drugoj
 
@@ -1425,6 +1435,8 @@ On the cover select original/amended and resident/nonresident, state the year, t
 ## ME-PIT-157: 1. Principal business: accounts to tax, and the annual balance
 
 Total revenue 80,000; accounting profit 25,000 after all booked costs. Add back private costs 1,200 and book depreciation above tax depreciation 800. Qualifying-purpose spending 3,000 exceeds the 3% cap (2,400) by 600; representation 1,000 exceeds 1% (800) by 200; memberships 120 exceed 0.1% (80) by 40. Adjusted profit is 27,840. An unused business loss of 3,000 within its five years brings the base to 24,840. PIT is 3,600 × 9% = 324 plus 12,840 × 15% = 1,926, total 2,250. Advances paid 1,800, so 450 is due with the return. [Arts. 17 to 33, 42 and 48][law]
+
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
 
 - Article 17; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 17 (1) Oporezivi prihod od samostalne djelatnosti predstavlja oporeziva dobit poreskog obveznika. (2) Oporeziva dobit iz stava 1 ovog člana utvrđuje se usklađivanjem dobiti poreskog obveznika iskazane u bilansu uspjeha, na način predviđen ovim zakonom. Usklađivanje
 
@@ -1498,6 +1510,10 @@ Gross rent 20,000, no documented costs. Ordinary letting: base 14,000, PIT 2,100
 
 Sale of a property that was not the only and main residence for 150,000, with documented reconstruction 7,000 and sale costs 3,000; the price is not below market. Indexed acquisition cost is 110,000. Adjusted sale price 140,000, gain 30,000. A capital loss of 5,000 on shares sold in the same year reduces the taxable gain to 25,000; PIT 3,750, paid with the return. [Arts. 37a to 37d, 37g, 37h and 50a][law]
 
+- Article 37b; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37b Kapitalni dobitak od nepokretnosti je razlika između prodajne i nabavne cijene
+
+- Article 37c; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37c (1) Prodajnom cijenom nepokretnosti iz člana 37b ovog zakona smatra se ugovorena cijena, umanjena za dokumentovane troškove rekonstrukcije i troškove prodaje te nepokretnosti. (2) Ako je ugovorena cijena iz stava 1 ovog člana niža od tržišne, prodajnu cijenu utvrđuje nadležni poreski organ. (3) Kod razmjene nepokretnosti prodajnom cijenom smatra se
+
 - Article 37a; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37a (1) Kapitalnim dobitkom smatra se prihod ostvaren prodajom, odnosno prenosom imovine i to nepokretnosti, udjela u pravnom licu i hartija od vrijednosti (u daljem tekstu: imovina). (2) Oporezivi prihod po osnovu kapitalnog dobitka predstavlja razliku između prodajne i nabavne cijene imovine iz stava 1 ovog člana. (3) Negativna razlika iz stava 2
 
 - Article 37d; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37d (1) Nabavnom cijenom nepokretnosti iz člana 37b ovog zakona smatra se cijena po kojoj je poreski obveznik stekao nepokretnost, odnosno cijena nepokretnosti koju je utvrdio poreski organ prilikom sticanja te nepokretnosti, u skladu sa zakonom kojim se uređuje porez na promet nepokretnosti. (2) Nabavnu cijenu nepokretnosti koju je obveznik sam
@@ -1522,6 +1538,8 @@ Buy 100 shares at 10, then 100 at 15, of the same issuer; sell 150 at 20. FIFO c
 
 Two receipts of 10,000 each, neither salary nor taxed under another heading. Internet income: 15% expenses, base 8,500, PIT 1,275. Video-game competition income with no documented costs: 20% standard, base 8,000, PIT 1,200. [Arts. 37o to 37r and 50e][law]
 
+- Article 37p; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37p (1) Rashodi po osnovu obavljanja djelatnosti preko interneta priznaju se u visini 15% ostvarenih prihoda preko interneta. (2) Rashodima po osnovu video-igara (gaming) smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (3) Ako se rashodi iz stava 2 ovog člana ne dokumentuju, priznaju se
+
 - Article 37o; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37o (1) Prihodima preko interneta smatraju se prihodi koje fizičko lice ostvari od obavljanja djelatnosti preko interneta, ako nijesu oporezovani po drugom osnovu. (2) Prihodima ostvarenim od video igara (gaming) smatraju se prihodi koje fizičko lice ostvari od takmičenja i drugih prihoda od video-igara, a koji ne predstavljaju zaradu u skladu sa
 
 - Article 37r; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37r (1) Oporezivi prihod ostvaren preko interneta predstavlja razliku između prihoda iz člana 37o stav 1 i rashoda iz člana 37p stav 1 ovog zakona nastalih u istom poreskom periodu. (2) Oporezivi prihod ostvaren od video igara (gaming) predstavlja razliku između prihoda iz člana 37o stav 2 i rashoda iz člana 37p stav 2, odnosno stav 3 ovog zakona
@@ -1538,35 +1556,49 @@ A resident receives a foreign dividend of 10,000 gross and proves 2,000 of forei
 
 - Article 45; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 45 (1) Sporazum o otklanjanju dvostrukog oporezivanja ima pretežnu važnost u odnosu na odredbe ovog zakona. (2) Oblik, sadržinu i postupak izdavanja potvrde o rezidentnosti, u poreske svrhe, propisuje ministarstvo nadležno za finansije. 3. Plaćanje poreza na lična
 
-## ME-PIT-165: Retained example 9. Fine-art royalty and amateur sport
+## ME-PIT-165: Retained example 8. Foreign dividend with a capped credit
+
+**Reviewer qualification of the preceding preserved dividend example:** its stated facts contain only this foreign dividend. The EUR 500 is not claimed in that case. The original phrase about other income does not establish a mandatory category basket within one foreign country; apply the country cap in [PIT Law art. 44][law] and retain any unresolved same-country allocation question.
+
+- Article 44; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 44 (1) Rezidentnom poreskom obvezniku koji ostvari dohodak izvan Crne Gore i koji plaća porez na dohodak drugoj državi odobrava se poreski kredit u visini poreza na dohodak plaćenog u toj državi. (2) Poreski kredit iz stava 1 ovog člana ne može biti veći od iznosa koji bi se dobio primjenom odredaba ovog zakona na dohodak ostvaren u drugoj
+
+## ME-PIT-166: Retained example 9. Fine-art royalty and amateur sport
 
 Fine-art rights 5,000 with no documented costs: 60% standard, base 2,000, PIT 300. Amateur sport income 5,000 (not salary) with no documented costs: 90% standard, base 500, PIT 75. [Arts. 37i to 37m, 50b and 50c][law]
 
 - Article 37i; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37i Prihodima od sportske djelatnosti smatraju se prihodi profesionalnog sportiste, sportiste amatera, trenera, sportskog stručnjaka osposobljenog za rad u sportu, prihodi po osnovu transfera i naknade treneru i sportisti amateru, a koji nemaju karakter zarade u skladu sa propisima o radu i zakonom kojim se uređuje sport.
 
+- Article 37j; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37j (1) Rashodima po osnovu sportske djelatnosti smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (2) Ako se rashodi iz stava 1 ovog člana ne dokumentuju, priznaju se standardni rashodi u visini 30% ostvarenih prihoda od sportske djelatnosti, osim sportisti amateru kojem se standardni rashodi
+
+- Article 37k; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37k Oporezivi prihod od sportske djelatnosti predstavlja razliku između prihoda iz člana 37i i rashoda iz člana 37j ovog zakona nastalih u istom poreskom periodu. 5b. Prihodi od autorskih i srodnih prava, patenta, žiga i prihodi samostalnog stručnjaka u kulturi
+
+- Article 37l; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37l (1) Prihodima od autorskih prava smatra se naknada koju obveznik ostvari po osnovu autorskog djela. (2) Autorskim djelom iz stava 1 ovog člana smatraju se naročito: 1) govorna djela (predavanja, govori, besjede); 2) pisana djela (romani, poezija, članci, priručnici, studije, monografije, računarski programi); 3) muzička djela, sa riječima ili bez
+
+- Article 37lj; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37lj (1) Rashodima po djelatnosti iz člana 37l ovog zakona, smatraju se stvarni troškovi nastali u vezi sa ostvarivanjem tih prihoda, pod uslovom da su dokumentovani. (2) Ako se rashodi iz stava 1 ovog člana ne dokumentuju, priznaju se standardni rashodi u visini: 1) 60% ostvarenih prihoda po osnovu naknade za prava koja obveznik ostvari po osnovu
+
 - Article 37m; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 37m Oporezivi prihod od autorskih i srodnih prava, prihoda ostvarenih od patenta i žiga i prihodi od samostalnog stručnjaka u kulturi predstavlja razliku između prihoda iz člana 37l i rashoda iz člana 37lj ovog zakona nastalih u istom poreskom periodu. 5c. Prihod od drugih primanja
+
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
 
 - Article 50b; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 50b (1) Akontaciju poreza na prihode od sportske djelatnosti koji su ostvareni u Crnoj Gori tokom godine obračunava, obustavlja i uplaćuje isplatilac prihoda, pri svakoj isplati prihoda i istovremeno sa isplatom, primjenom stope od 15% na oporezivi prihod iz člana 37k ovog zakona. (2) Izuzetno od stava 1 ovog člana, porez na prihode od sportske
 
 - Article 50c; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 50c (1) Akontaciju poreza na prihode od autorskih i srodnih prava, patenta i žiga i prihode samostalnih stručnjaka u kulturi koji su ostvareni u Crnoj Gori tokom godine obračunava, obustavlja i uplaćuje isplatilac prihoda pri svakoj isplati prihoda i istovremeno sa isplatom, primjenom stope od 15% na oporezivi prihod iz člana 37m ovog zakona. (2)
 
-## ME-PIT-166: Retained example 10. Sole proprietor with municipal surtax
+## ME-PIT-167: Retained example 10. Sole proprietor with municipal surtax
 
 Principal-business taxable profit 20,000; the municipality's surtax decision sets 13%. PIT is 324 + 8,000 × 15% = 1,524. Surtax is 13% of the PIT, 198.12. Total 1,722.12. Contributions are computed separately. [PIT Law art. 10(1)(2)][law]; [Local Self-Government Financing Law arts. 8 and 9][local]
+
+- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
 
 - Article 8; https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0; read 2026-10-31; original quote: Član 8 Opština može pravnim i fizičkim licima koja obavljaju djelatnost na njenoj teritoriji propisati obavezu plaćanja prireza porezu na dohodak fizičkih lica po stopi do 13% poreske obaveze. Izuzetno od stava 1 ovog člana, stopa prireza porezu na dohodak fizičkih lica za Glavni grad i Prijestonicu može iznositi do 15% poreske obaveze. Prirez porezu na
 
 - Article 9; https://wapi.gov.me/download/98dd2203-4c4e-4751-bbb9-9ad1e13564bd?version=1.0; read 2026-10-31; original quote: Član 9 Prirez porezu na dohodak fizičkih lica plaća se po stopi koju utvrdi opština svojim propisom. 2. Zakonom ustupljeni
 
-- Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
-
-- Article 8; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 8 Osnovicu poreza na dohodak rezidenta predstavlja oporezivi dohodak poreskog obveznika ostvaren u poreskom periodu, umanjen za iznos prenesenog gubitka. Osnovicu poreza na dohodak nerezidenta predstavlja oporezivi dohodak poreskog obveznika ostvaren u poreskom
-
-- Article 9; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 9 Briše se. (Zakon o izmjenama i dopunama Zakona o porezu na dohodak fizičkih lica, "Sl. list CG", br. 86/09) 9. Poreska
-
-## ME-PIT-167: Retained example 11. Gambling winning before and after 21 May 2026
+## ME-PIT-168: Retained example 11. Gambling winning before and after 21 May 2026
 
 A betting winning of 1,500 after deducting the stake. Paid on 10 March 2026, the bands apply: 1,450 × 10% = 145. Paid on 10 June 2026, the flat rate applies: 1,500 × 12% = 180. The organiser withholds and pays by the 15th of the next month. [PIT Law arts. 10(1)(4), 37s and 50f][law]; [70/26 arts. 1 and 3][may]
+
+- Gazette publication and commencement record; https://www.sluzbenilist.me/propisi/394390; read 2026-10-31; original quote: Datum objavljivanja: 20.05.2026. Datum stupanja na snagu:
 
 - Article 10; https://wapi.gov.me/download/b8465a42-2073-4894-9be0-3b965c2f7195?version=1.0; read 2026-10-31; original quote: Član 10 Stopa poreza na dohodak: 1) koji je ostvaren na osnovu prihoda iz člana 12 stav 2 tačka 1 ovog zakona iznosi: - 0% na iznos oporezivog dohotka do 700,00€, - 9% na iznos oporezivog dohotka od 700,01€ do 1.000,00€, - 15% na iznos oporezivog dohotka od 1.000,01€; 2) koji je ostavren na osnovu prihoda iz člana 12 stav 2 tačka 2 alineja 1 ovog zakona
 
@@ -1772,7 +1804,7 @@ Each nonblank predecessor line is preserved below, including every earlier calcu
 
 | 111 | \| POVRAĆAJ POREZA, tax refund \| Not income \| Art. 42(6) \| | Guide: unchanged exact line |
 
-| 112 | \| Own-account transfers, loan principal, VAT payments \| Neither income nor expense \| Arts. 13 and 18 \| | Guide: unchanged exact line |
+| 112 | \| Own-account transfers, loan principal, VAT payments \| Neither income nor expense \| Arts. 13 and 18 \| | Guide bank classification: output VAT/recoverable input scope clarified; nonrecoverable VAT checked in underlying cost workpaper |
 
 | 113 | \| POREZ, PRIREZ, income tax paid; drawings \| Not deductible \| Art. 21 \| | Guide: unchanged exact line |
 
@@ -1818,13 +1850,13 @@ Each nonblank predecessor line is preserved below, including every earlier calcu
 
 | 143 | ### Gambling winnings | Guide: unchanged exact line |
 
-| 145 | Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f). | Guide: unchanged exact line |
+| 145 | Taxable winnings are each individual winning from lottery games, betting and global jackpots, less the stake for that winning (art. 37s, as replaced by [160/25 art. 10][amend]). Prize games are not income (art. 5(10)). Rates: progressive bands for winnings paid to 20 May 2026; 12% for winnings paid from 21 May 2026 ([70/26][may]). The game organiser withholds at each payment or transfer (art. 50f). | Guide correction: corrected lottery/betting stake deduction versus total global-jackpot base, PIT37s(2) |
 
 | 147 | ### Reliefs | Guide: unchanged exact line |
 
 | 149 | - **Underdeveloped municipalities** (arts. 32 and 32a): a taxpayer who starts an activity there pays no tax for the first eight years from registration, capped at EUR 200,000 in total including other state aid. Not available to someone who closed the same or a similar activity in the previous three years, to recipients of aid for firms in difficulty, or in transport, shipbuilding, steel, trade and hospitality (except primary hospitality establishments). Apply within 30 days of registration; the authority decides; a statement of other state aid goes with each annual return. | Guide: unchanged exact line |
 
-| 150 | - **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days. | Guide: unchanged exact line |
+| 150 | - **New hires there** (art. 32b): a permanent or at least five-year hire of a person registered with the Employment Agency for over three months and living in an underdeveloped municipality frees the salary tax for four years, if headcount rises above the 12-month average. If the employer ends the contract within five years (other than at the employee's request or for serious breach), the tax is repaid within 30 days. | Guide correction: original relief conditions retained and PIT32b(3) related/former-employment exclusion added |
 
 | 151 | - **Expired** (art. 32c): the 2021 to 2023 new-hire relief. | Guide: unchanged exact line |
 
@@ -1862,7 +1894,7 @@ Each nonblank predecessor line is preserved below, including every earlier calcu
 
 | 172 | - **Self-assessed within five days:** salary from abroad, and salary from a foreign diplomatic mission or international organisation (art. 46(6) and (7)). | Guide: unchanged exact line |
 
-| 173 | - **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)). | Guide: unchanged exact line |
+| 173 | - **Employer reports.** Monthly report of taxes and contributions by the 15th of the month for the previous month (art. 47(3)); annual statement of salary and tax to each employee by 31 January (art. 47(1)); other payers give recipients a statement by 31 January (art. 47(5)). | Guide correction: annual other-payer statement scoped to other personal earnings under PIT14/47(5) |
 
 | 174 | - **Records.** Keep identity and residence evidence, income records, accounts and loss registers, asset, valuation and indexation evidence, relief decisions, foreign tax and treaty evidence, payer statements, advance payments, the signed return and payment records. | Guide: unchanged exact line |
 
@@ -1882,7 +1914,7 @@ Each nonblank predecessor line is preserved below, including every earlier calcu
 
 | 186 | - **Nonresidents** are taxed only on Montenegrin income (art. 4(2)), with no loss carry-forward (art. 8). They file only for Montenegrin income on which no withholding is prescribed (art. 43(6)). | Guide: unchanged exact line |
 
-| 187 | - **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit. | Guide: unchanged exact line |
+| 187 | - **Foreign tax credit.** A resident who pays income tax abroad gets a credit for it, capped at the Montenegrin tax on that income (art. 44). Compute the cap with the right class rate and base: a principal business uses the progressive bands, not a flat 15%. Do not credit social contributions, refundable treaty excess or unproved tax. The law gives no carry-forward of unused credit. | Guide correction: credit cap clarified by foreign country under PIT44; existing rates/proof/no-carry-forward topics preserved |
 
 | 188 | - **Treaties** prevail over the PIT Law (art. 45(1)). The Ministry sets the form and procedure for residence certificates (art. 45(2)). | Guide: unchanged exact line |
 
@@ -2420,7 +2452,7 @@ Each nonblank predecessor line is preserved below, including every earlier calcu
 
 ## Additional calculation control inventory
 
-All 23 additional blocks require independent recomputation, in addition to all 11 preserved original blocks. Synthetic inputs are assumptions, not statutory figures. All 16 source table expectations must also be compared visually against the original table.
+All 23 additional blocks require independent recomputation, in addition to all 11 preserved originals. Inputs are explicit illustrative facts except the original scale expectations. Every control source link is below. CTRL19 uses different source countries, not an unproved category basket.
 
 | Control | Name | Figure-rule source groups |
 |---|---|---|
@@ -2441,9 +2473,9 @@ All 23 additional blocks require independent recomputation, in addition to all 1
 | ME-CTRL-15 | Montenegro pausal group IV, turnover ceiling 22500 | ME-PIT-120 |
 | ME-CTRL-16 | Montenegro pausal group IV, turnover ceiling 30000 | ME-PIT-121 |
 | ME-CTRL-17 | Montenegro pausal monthly split and separate assumed municipal surtax | ME-PIT-122, ME-PIT-123 |
-| ME-CTRL-18 | Montenegro H independent category bases | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
-| ME-CTRL-19 | Montenegro main ordinary full-year due with isolated foreign credit cap | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
-| ME-CTRL-20 | Montenegro main overpayment split without a double refund | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
-| ME-CTRL-21 | Montenegro A1 component balances remain separate | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
-| ME-CTRL-22 | Montenegro KPP products and services conservation | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
-| ME-CTRL-23 | Montenegro A printed early rounding versus full precision | ME-PIT-140, ME-PIT-141, ME-PIT-142, ME-PIT-143 |
+| ME-CTRL-18 | Montenegro H independent category bases | ME-PIT-140 |
+| ME-CTRL-19 | Montenegro main ordinary full-year due with foreign-country credit cap | ME-PIT-138, ME-PIT-141, ME-PIT-142, ME-PIT-150 |
+| ME-CTRL-20 | Montenegro main overpayment split without a double refund | ME-PIT-141 |
+| ME-CTRL-21 | Montenegro A1 component balances remain separate | ME-PIT-130 |
+| ME-CTRL-22 | Montenegro KPP products and services conservation | ME-PIT-124, ME-PIT-125 |
+| ME-CTRL-23 | Montenegro A printed early rounding versus full precision | ME-PIT-143 |
