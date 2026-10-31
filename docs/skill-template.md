@@ -4,6 +4,25 @@
 
 The repository is treated as tax law. Every figure must be traceable to the law that sets it.
 
+## What a skill is
+
+A skill is a set of instructions that lets an AI do one tax job correctly, in one place, for one tax year, and shows who stands behind it.
+
+Every part of a skill answers one of four questions. A field that answers none of them does not belong.
+
+| Question | Variables |
+|---|---|
+| What job? | Country, job, who it covers |
+| What is true? | Rules, figures, steps, exceptions, worked examples |
+| Still true? | Tax year, date the law was last read, version |
+| Who stands behind it? | Written by, checked against the law on, signed by |
+
+"Verified" is three separate facts: who wrote it, whether it was checked against the law and when, and whether a licensed person signed this version. They are kept apart because each can be true without the others. The public label is worked out from them, never typed.
+
+**Strict on shape, local on content.** The fields, the blocks and the checks are the same in all jurisdictions. Only the values change: figures, portals, forms, sources, language. Where a job does not exist in a jurisdiction, the pack README says so, with the reason. Federal systems (the US, Canada, Spain's foral regions) add one field, not a different shape.
+
+The frontmatter below is what the platform reads today. A smaller field list follows these four questions and moves with the server, in one planned change.
+
 ## What a perfect skill does
 
 A perfect skill makes a frontier model give the right answer, with its conditions, cited to the law, and never a confident wrong one, for one job in one country.
@@ -83,10 +102,10 @@ The method set (about 250 skills, the October waves):
 ## When to refuse or refer
 ## Filing and payment
 ## Completion checklist
-## Talk to a verified accountant
+## (the standard closing block)
 ```
 
-In the method set, six headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; Talk to a verified accountant) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
+In the method set, six headings are required (Scope, which may read "Scope and who this is for"; Ask the client first; The method, step by step; Worked cases; When to refuse or refer; the standard closing block) and three are optional (Boundary and exception table; Filing and payment; Completion checklist). The rates, base and deadline material lives under "The method, step by step" as sub-headings, each carrying its source link in the heading text, which is why a bracketed link after a heading is tolerated. What each set holds: residence and scope (who is in, who is out); the rates table with item, amount, tax year and official URL per row; what is taxed, what is deductible or exempt, how losses work; registration, returns, payments, instalments, form, portal, box; late filing, late payment, under-declaration figures; non-residents, treaties, withholding, exit rules that touch this domain; the worked examples (line 9); the facts to ask (line 10); the sources table (line 1). There is no length rule: the model reads the whole skill.
 
 - **Evidence:** shape test, 31 Oct 2026, 30 questions, two models: cutting a fifth of the text changed nothing on Claude (50% right either way) and cost GPT 7 points; the rewritten skills beat their pre-September versions by 16 points on Claude (56% against 40%) and 8 on GPT, and cut confident-wrong from 20% to 0% (Claude). Split by set on the same run: reference set 54% right, 0% confident-wrong (10 skills); method set 50%, 6% (8 skills); skills on neither set 28%, 11% (9 skills, the US, Australia and Canada ones). The two sets are within noise of each other; being on neither is what costs. Section demand, 31 Oct 2026: 6.4% of loads had any section held back, so the earlier inline-budget rule (core sections under a character budget) measured nothing and is dropped. Picking one set for everything is a decision for after the loop has measured both on a full Monday run.
 - **Check:** `check_canonical_headings` (d), which accepts either full set. The two older spellings it still accepts in the reference set ("The taxable base", "Worked examples") go once the backlog is rewritten.
@@ -131,7 +150,7 @@ The section names the facts the AI must have before it computes (residence, turn
 
 `tier: 2` means **Checked against the law** (built to this standard and independently reviewed before merge) or **Sourced from the law** (an older skill not yet rebuilt). `tier: 1` means a licensed accountant reviewed the whole skill and set `reviewed_by` and `reviewed_on`; no one else sets these keys. A content change after the review drops the name and the skill returns to `tier: 2` until it is reviewed again. Where no accountant signs, the byline is the team's: `trust_label: Built by Michael Cutajar and the OpenAccountants team`.
 
-- **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-attested label; the label never tracked accuracy.
+- **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-signed label; the label never tracked accuracy.
 - **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the date it was signed. That `reviewed_on` moved with the content: reviewer.
 
 ### 12. An independent second reader before merge
