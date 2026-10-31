@@ -15,7 +15,7 @@ description: >
   trusts and foundations, capital-payment taxation and treaty cases.
 jurisdiction: LI
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2

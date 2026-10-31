@@ -1,11 +1,12 @@
 {
   "base_commit": "b41220632936e5c1a211254030b6acb659f6870a",
   "Guide_before_sha256": "78b6c525c7338c92391ff5071f8ace082a94ddef53dea02b51371d1be6fc63ca",
-  "Guide_after_sha256": "c68edca525d15b86768503ad8cb6b9d77e64bbf7e6a3c4faac839e56bdf849e2",
+  "Guide_after_sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec",
   "added_rule_groups": 21,
   "original_rules_unchanged": true,
   "existing_two_examples_exact": true,
   "CTA_exact": true,
   "original_workbook_unchanged": true,
-  "review": "PENDING"
+  "review": "PENDING",
+  "provenance_repair": "Advance Guide last_updated to2026-10-31 per independent VAL-F1; tax prose, rules, examples and CTA unchanged."
 }

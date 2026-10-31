@@ -1,7 +1,7 @@
 {
   "status": "WRITER LEDGER; FULL INDEPENDENT COUNTRY REVIEW PENDING",
   "guide": "skills/international/liechtenstein/li-income-tax.md",
-  "guide_sha256": "c68edca525d15b86768503ad8cb6b9d77e64bbf7e6a3c4faac839e56bdf849e2",
+  "guide_sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec",
   "rules": [
     {
       "id": "LI-IND-001",
@@ -2623,6 +2623,8 @@
     "added_rule_groups": 21,
     "preserved_prior_rule_groups": 121,
     "ordinary_scope": "Annex1 methods supplied; actual valuations, share classes, assumptions, municipal rates and other stated gaps remain",
-    "prior_review": "Existing pinned review remains evidence for its own snapshot; this addition needs delta review."
+    "prior_review": "Existing pinned review remains evidence for its own snapshot; this addition needs delta review.",
+    "independent_review_record": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.json",
+    "metadata_repair_record": "Recorded separately in ledgers/li-income-tax-evidence/valuation-20261031/independent-review/repair-verification.json"
   }
 }

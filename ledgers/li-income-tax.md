@@ -1,7 +1,7 @@
 # Figure ledger: li-income-tax
 
 WRITER LEDGER, not independent review. Sources are original official Act/Ordinance PDFs and an explicitly selected exact web-reader excerpt; no private account or return was accessed. Current source files in sibling evidence directories are members of the country freeze.
-Current Guide SHA256: `c68edca525d15b86768503ad8cb6b9d77e64bbf7e6a3c4faac839e56bdf849e2`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
+Current Guide SHA256: `c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec`. All27tariff rows are bound individually; annual minima are monthly amounts times12.
 
 | ID | Rule/figure and section | Act/article | Official URL | Short exact German quote | Read date |
 |---|---|---|---|---|---|
@@ -262,3 +262,5 @@ Writer addition, independent review pending. The original 121 ledger groups and 
 | LI-IND-VAL19 | Official2026 helper1January2026/31December2025 calendar accounts instructions | Official 2026 helper, Bewertung 2026 cells A1,A3 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | Hilfsformular zur Bewertung von Unternehmensanteilen ohne Kursnotiz (Steuerjahr 2026)  /  Der Unternehmenswert ist auf den 1. Januar des Steuerjahres zu ermitteln. Der Bewertung ist die letzte vor diesem Stichtag abgeschlossene Jahresrechnung zu Grunde zu legen. Beispiel: Für das Steuerjahr 2026 ist der Unternehmenswert zum 1. Januar 2026 zu ermitteln. Schliesst das Geschäftsjahr mit dem Kalenderjahr, so ist die Jahresrechnung per 31. Dezember 2025 massgebend. Sofern ein Geschäftsjahr nicht 12 Monate umfasst, ist das entsprechende Rechnungsergebnis auf 12 Monate umzurechnen. | 2026-10-31 |
 | LI-IND-VAL20 | Helper company rounding100 inP44/P57; not finaltaxrounding authority | Official 2026 helper, Bewertung 2026 cells P44,P57 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | 0  /  0 | 2026-10-31 |
 | LI-IND-VAL21 | Helper F70 feeds economic allocation G70 and voting discount lookup J70; separate legal facts if unequal | Official 2026 helper, Bewertung 2026 cells F69,G70,J70,K70 | https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx | Anteil in %  /  0  /  0.2  /  0 | 2026-10-31 |
+
+The bounded source review and sole provenance finding are retained in [the independent report](li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md). The final date/hash repair is [recorded separately](li-income-tax-evidence/valuation-20261031/independent-review/repair-verification.json); earlier writer-pending wording records its original checkpoint.

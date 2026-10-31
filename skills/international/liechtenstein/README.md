@@ -36,7 +36,7 @@ Also in the pack: [li-tax-overview](li-tax-overview.md) (router and headline fig
 
 Out of scope: VAT platform, margin, group and net-tax-rate schemes; expenditure (lump-sum) taxation; trusts and foundations; GloBE top-up tax; the terms of individual tax treaties.
 
-The individual-tax Guide now supplies the ordinary unquoted-company valuation under SteV 7a and Annex 1: weighted earnings/substance, the 60% operating-substance minimum, company-type exceptions and voting-right minority deductions. The official 2026 helper is retained with separate formula observations. This addition awaits independent review; actual asset/company classifications and values, unequal share classes, municipal rates and the other explicit Guide limits remain unresolved. The [prior pack review](../../../ledgers/li-pack-review-evidence/README.md) remains tied to its reviewed snapshot.
+The individual-tax Guide now supplies the ordinary unquoted-company valuation under SteV 7a and Annex 1: weighted earnings/substance, the 60% operating-substance minimum, company-type exceptions and voting-right minority deductions. The official 2026 helper is retained with separate formula observations. The [bounded independent review](../../../ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md) and [final date/hash repair](../../../ledgers/li-income-tax-evidence/valuation-20261031/independent-review/repair-verification.json) are recorded separately; actual asset/company classifications and values, unequal share classes, municipal rates and the other explicit Guide limits remain unresolved. The [prior pack review](../../../ledgers/li-pack-review-evidence/README.md) remains tied to its reviewed snapshot.
 
 ## Official sources
 
