@@ -20,7 +20,7 @@ review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-version: 0.7
+version: 0.8
 ---
 
 # Moldova cross-border income tax, 2026
@@ -142,7 +142,7 @@ A main-home exemption is not any home someone once occupied. Article 5(46) requi
 | Ordinary individual annual return where required | 30 April of the next year; special nonresident/cessation/departure rules must be screened first | [Code art. 83(2),(4)(b),(7)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 | Non-PE preparatory/auxiliary activity under art. 5(15¹) | Obtain fiscal code, keep required accounts; annual activity report by the 25th of the third following month and cessation document within 10 days | [Code art. 76(2)–(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 | Covered art. 74 nonresident self-calculation | Approved tax document and tax within 3 days of cessation of Moldova activity, with contract and income/withholding evidence, subject to the special monthly rent rule | [Code art. 74(2),(4),(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
-| Art. 74(1¹) rent/use from payers outside art. 90 | Register contract within 7 days of conclusion; monthly tax by the current-month 25th. For a contract concluded after the 25th, apply its stated first-payment rule by the 25th following the month of transfer into possession/use | [Code art. 74(1¹)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Art. 74(1¹) rent/use from payers outside art. 90 | Register contract within 7 days of conclusion; monthly tax by the current-month 25th. For a contract concluded after the 25th, the special first-payment sentence expressly concerns **immovable property**: payment by the 25th of the month following the month of transfer into possession/use. Its application to movable property or international-transport property under art. 71(k¹) is not confirmed here | [Code art. 74(1¹)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 | Change of permanent domicile abroad | File for the whole reporting-period portion in which the individual was resident, under the MF procedure; no invented automatic 3-day departure deadline | [Code art. 83(7)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 
 The table gives statutory dates, not a verified holiday-adjusted calendar. A filing extension does not itself extend the art. 87 payment deadline. An art. 5(15¹) operation that becomes a PE must include in its first return the earlier business-activity information required by art. 83(10). No-PE status does not remove the withholding duties expressly retained by art. 76(1). See [Code arts. 76, 83(8),(10),(12), 87(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
@@ -315,13 +315,11 @@ The predecessor's three decision cases remain: a remote supplier needs service/s
 
 ## Ask the client first
 
-- Who legally earns each payment, what is their legal form/citizenship where relevant, and what is their domestic and treaty residence for the actual period? Obtain domicile, travel/day records, management-location facts and dated residence evidence.
+- Who legally earns each payment, what is their legal form/citizenship where relevant, and what is their domestic and treaty residence for the actual period? Obtain domicile, travel/day records, management-location facts and dated residence evidence. Has the individual arrived, ceased residence or changed permanent domicile? Obtain the exact dates, property inventory, arrival/departure market valuations, basis documents and departure filing history.
 - What exactly is supplied: goods, management/consultancy, other services, IP rights, software operation/distribution/reproduction, financing, rent, gains, salary/director remuneration, pension, prizes or liquidation? Obtain the contract, rights, service location and payment terms.
 - Is the payer within art. 90, and is the payment connected to a Moldova PE? Obtain sites, offices, warehouses/sales, agents/stock, signing authority, related contracts, project start/stop/acceptance and subcontractor records.
 - For dividends/capital/liquidation, what profit years, historic capital increases, contributions, distributions and noncash values support the base and rate? For property/gains, obtain title, cost, improvements/valuation, disposal proceeds, main-home and loss evidence.
-- Which treaty and protocol apply, what substantive entitlement/beneficial-owner/anti-abuse facts support relief, when was the acceptable residence document received, and has residence changed? Is a refund, corrected return or tax-paid certificate already in progress?
-- For foreign income, is it taxable in Moldova for this population and period? Obtain the Moldova-category computation, foreign authority's tax-paid evidence, translation, currency/timing records, refund entitlement and any prior credit.
-- Has the individual arrived, ceased residence or changed permanent domicile? Obtain the exact dates, property inventory, arrival/departure market valuations, basis documents and departure filing history.
+- Which treaty and protocol apply, what substantive entitlement/beneficial-owner/anti-abuse facts support relief, when was the acceptable residence document received, and has residence changed? Is a refund, corrected return or tax-paid certificate already in progress? For foreign income, is it taxable in Moldova for this population and period? Obtain the Moldova-category computation, foreign authority's tax-paid evidence, translation, currency/timing records, refund entitlement and any prior credit.
 - Obtain actual payroll/insurance/posting facts, VAT/customs and related-party records, prior filings/payment receipts, current form access and treasury details. Which unclosed ordinary procedure gap below is relevant to the planned filing?
 
 ## Sources
