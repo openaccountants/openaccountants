@@ -14,7 +14,7 @@ Tax years: not stated (1 skill), 2025 (7 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](co-income-tax.md) | not stated | Needs updating |
+| Income tax | [Income tax](colombia-income-tax.md) | not stated | Needs updating |
 | Company tax | [Corporate income tax](co-corporate-income-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [VAT return](co-vat-return.md) | 2025 | Needs updating |
 | Social contributions | [Social contributions](co-social-contributions.md) | 2025 | Needs updating |
@@ -26,7 +26,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 ## What still needs doing
 
-- Income tax: bring [Income tax](co-income-tax.md) up to the current tax year.
+- Income tax: bring [Income tax](colombia-income-tax.md) up to the current tax year.
 - Company tax: bring [Corporate income tax](co-corporate-income-tax.md) up to the current tax year.
 - VAT or sales tax: bring [VAT return](co-vat-return.md) up to the current tax year.
 - Social contributions: bring [Social contributions](co-social-contributions.md) up to the current tax year.

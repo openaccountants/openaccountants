@@ -4,7 +4,7 @@ description: Tier 2 Massachusetts content skill for employer payroll compliance 
 version: 1.0
 jurisdiction: US-MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -43,7 +43,7 @@ Out of scope and deferred to other skills:
 
 - Federal payroll: deferred to the federal payroll skill (Form 941, W-2/W-3, Form 940 FUTA, federal Form 1099-NEC). This skill assumes federal payroll is handled.
 - Massachusetts corporate excise tax: deferred to ma-corporate-excise.
-- Massachusetts personal income tax for the individual filer: deferred to ma-income-tax.
+- Massachusetts personal income tax for the individual filer: deferred to morocco-professional-income-tax.
 - Multi-state withholding allocation for telecommuters not specifically involving MA residents: deferred to the federal multi-state payroll skill.
 - Massachusetts paid sick time accrual mechanics for employers with under 11 employees (unpaid sick time still required, but the accrual mechanics differ — out of scope here beyond a high-level note).
 - Workers' compensation insurance under M.G.L. c. 152 (separate compliance regime, not a tax).

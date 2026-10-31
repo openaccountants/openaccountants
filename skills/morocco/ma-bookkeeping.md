@@ -1,10 +1,10 @@
 ---
 name: ma-bookkeeping
-description: Use this skill whenever asked about record-keeping, bookkeeping, or invoicing obligations for self-employed people and micro-businesses in Morocco — which books or registers each tax regime must keep, what must appear on an invoice, the ICE identifier, the move toward e-invoicing, document retention, and when a taxpayer must move up to full accounting. Trigger on phrases like "Morocco bookkeeping", "comptabilité Maroc", "facture ICE", "e-invoicing Morocco", "facturation électronique Maroc", "registre des recettes", "tenue de comptabilité Maroc", "mentions obligatoires facture", "محاسبة المغرب", "فاتورة ICE". Covers the auto-entrepreneur receipts register, the CPU register of receipts and purchases, RNS / RNR full accounting under the CGNC and Code de Commerce, mandatory invoice mentions, the DGI e-invoicing roadmap, the SIMPL teleservices, and the 10-year retention rule. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-auto-entrepreneur, ma-cpu, and ma-income-tax for the tax computation.
+description: Use this skill whenever asked about record-keeping, bookkeeping, or invoicing obligations for self-employed people and micro-businesses in Morocco — which books or registers each tax regime must keep, what must appear on an invoice, the ICE identifier, the move toward e-invoicing, document retention, and when a taxpayer must move up to full accounting. Trigger on phrases like "Morocco bookkeeping", "comptabilité Maroc", "facture ICE", "e-invoicing Morocco", "facturation électronique Maroc", "registre des recettes", "tenue de comptabilité Maroc", "mentions obligatoires facture", "محاسبة المغرب", "فاتورة ICE". Covers the auto-entrepreneur receipts register, the CPU register of receipts and purchases, RNS / RNR full accounting under the CGNC and Code de Commerce, mandatory invoice mentions, the DGI e-invoicing roadmap, the SIMPL teleservices, and the 10-year retention rule. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-auto-entrepreneur, ma-cpu, and morocco-professional-income-tax for the tax computation.
 version: 1.0
 jurisdiction: MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Morocco — Record-Keeping & Bookkeeping for the Self-Employed (Comptabilité)
 
-This skill tells an AI agent what books, registers, and invoices a self-employed Moroccan taxpayer must keep, and for how long — organised by tax regime. It does not compute the tax (that is ma-auto-entrepreneur, ma-cpu, and ma-income-tax); it governs the underlying comptabilité and facturation.
+This skill tells an AI agent what books, registers, and invoices a self-employed Moroccan taxpayer must keep, and for how long — organised by tax regime. It does not compute the tax (that is ma-auto-entrepreneur, ma-cpu, and morocco-professional-income-tax); it governs the underlying comptabilité and facturation.
 
 The depth of obligation rises with the regime:
 
@@ -190,7 +190,7 @@ Escalate to the human expert-comptable / comptable agréé (do not auto-decide):
 
 ## PROHIBITIONS
 
-- **Prohibitions list** — - Do NOT state a firm e-invoicing go-live date or category threshold — the implementing decree was unpublished as of April 2026; say it is pending and direct the user to the DGI. - Do NOT tell an RNS/RNR taxpayer they may skip CGNC double-entry accounting. - Do NOT tell an auto-entrepreneur they must keep CGNC books, a balance sheet, or a purchase ledger for tax — the AE keeps a register of receipts only. - Do NOT confirm an invoice as compliant if the ICE (seller, or B2B client) is missing or invalid. - Do NOT advise retention shorter than 10 years. - Do NOT quote ICE structure, invoice-mention lists, penalty amounts, or thresholds as settled — present items marked (verify) as provisional pending reviewer confirmation against the current CGI / Loi de Finances 2026. - Do NOT compute the tax itself here — defer to ma-auto-entrepreneur, ma-cpu, ma-income-tax, and morocco-vat. - Do NOT replace a licensed Moroccan expert-comptable / comptable agréé.
+- **Prohibitions list** — - Do NOT state a firm e-invoicing go-live date or category threshold — the implementing decree was unpublished as of April 2026; say it is pending and direct the user to the DGI. - Do NOT tell an RNS/RNR taxpayer they may skip CGNC double-entry accounting. - Do NOT tell an auto-entrepreneur they must keep CGNC books, a balance sheet, or a purchase ledger for tax — the AE keeps a register of receipts only. - Do NOT confirm an invoice as compliant if the ICE (seller, or B2B client) is missing or invalid. - Do NOT advise retention shorter than 10 years. - Do NOT quote ICE structure, invoice-mention lists, penalty amounts, or thresholds as settled — present items marked (verify) as provisional pending reviewer confirmation against the current CGI / Loi de Finances 2026. - Do NOT compute the tax itself here — defer to ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, and morocco-vat. - Do NOT replace a licensed Moroccan expert-comptable / comptable agréé.
 
 ## Disclaimer
 

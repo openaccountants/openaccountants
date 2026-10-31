@@ -1,10 +1,10 @@
 ---
 name: ma-tax-optimization
-description: Use this skill whenever asked about legitimate (legal) tax optimization for a self-employed person, freelancer, or sole trader in Morocco — that is, choosing the most efficient tax regime and using lawful levers to reduce the tax bill without evasion. Trigger on phrases like 'reduce tax Morocco', 'optimiser mes impôts Maroc', 'auto-entrepreneur vs CPU', 'tax planning Morocco freelancer', 'quel régime fiscal Maroc', 'lower my tax legally Morocco', 'best status freelance Maroc', 'كيف أقلل الضريبة'. Covers the choice between auto-entrepreneur (0.5% / 1% of turnover), the Contribution Professionnelle Unique (CPU), and the Résultat Net Simplifié / Réel (RNS / RNR, net profit on the IR scale to 37%), with break-even logic by turnover and margin; the auto-entrepreneur single-client 80,000 MAD anti-disguised-salary rule and disguised-employment risk; the cotisation minimale and new-business exemption; VAT registration threshold management; and export / Casablanca Finance City incentives. Reply in the user's language (English, French, or Moroccan Arabic / Darija). LEGAL planning only — never advise evasion. Cross-reference ma-auto-entrepreneur, ma-cpu, ma-income-tax.
+description: Use this skill whenever asked about legitimate (legal) tax optimization for a self-employed person, freelancer, or sole trader in Morocco — that is, choosing the most efficient tax regime and using lawful levers to reduce the tax bill without evasion. Trigger on phrases like 'reduce tax Morocco', 'optimiser mes impôts Maroc', 'auto-entrepreneur vs CPU', 'tax planning Morocco freelancer', 'quel régime fiscal Maroc', 'lower my tax legally Morocco', 'best status freelance Maroc', 'كيف أقلل الضريبة'. Covers the choice between auto-entrepreneur (0.5% / 1% of turnover), the Contribution Professionnelle Unique (CPU), and the Résultat Net Simplifié / Réel (RNS / RNR, net profit on the IR scale to 37%), with break-even logic by turnover and margin; the auto-entrepreneur single-client 80,000 MAD anti-disguised-salary rule and disguised-employment risk; the cotisation minimale and new-business exemption; VAT registration threshold management; and export / Casablanca Finance City incentives. Reply in the user's language (English, French, or Moroccan Arabic / Darija). LEGAL planning only — never advise evasion. Cross-reference ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax.
 version: 1.0
 jurisdiction: MA
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -24,7 +24,7 @@ The decisive idea: a self-employed person in Morocco is taxed under the **Impôt
 
 This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, CPU, RNS, RNR, IR, TVA, CNSS, cotisation minimale, DGI) and explain them in the user's chosen language.
 
-> **Cross-references.** For the mechanics of each regime, defer to the dedicated skills: **ma-auto-entrepreneur** (the 0.5% / 1% turnover status and its CNSS/AMO cover), **ma-cpu** (the Contribution Professionnelle Unique), and **ma-income-tax** (the IR scale, RNS/RNR net-profit regimes, and deductions). This skill sits *above* them and helps choose between them.
+> **Cross-references.** For the mechanics of each regime, defer to the dedicated skills: **ma-auto-entrepreneur** (the 0.5% / 1% turnover status and its CNSS/AMO cover), **ma-cpu** (the Contribution Professionnelle Unique), and **morocco-professional-income-tax** (the IR scale, RNS/RNR net-profit regimes, and deductions). This skill sits *above* them and helps choose between them.
 
 ## 1. Quick Reference
 
@@ -75,7 +75,7 @@ A self-employed Moroccan has, broadly, three families of regime. The first lever
 
 ### 2.1 The three options at a glance
 
-> RNS (**Résultat Net Simplifié**) and RNR (**Résultat Net Réel**) both tax *real net profit* on the IR scale; RNR requires fuller accounting. See **ma-income-tax**.
+> RNS (**Résultat Net Simplifié**) and RNR (**Résultat Net Réel**) both tax *real net profit* on the IR scale; RNR requires fuller accounting. See **morocco-professional-income-tax**.
 
 ### 2.2 The IR scale (the engine behind CPU and RNS/RNR)
 
@@ -237,7 +237,7 @@ These are largely **corporate (IS)** incentives, but relevant when a freelancer 
 - Cotisation minimale: **0.25%** standard; **4%** professions libérales *(verify)*; **36-month** new-business exemption (CGI Art. 144).
 - VAT: standard **20%**, reduced **10%**; optional registration binds **3 years**.
 
-**Cross-references:** ma-auto-entrepreneur · ma-cpu · ma-income-tax
+**Cross-references:** ma-auto-entrepreneur · ma-cpu · morocco-professional-income-tax
 
 ## PROHIBITIONS
 

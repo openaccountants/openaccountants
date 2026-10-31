@@ -1,7 +1,7 @@
 ---
 name: germany-vat-return
-description: "German VAT for tax year 2026, centred on the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. Covers the 19% and 7% rates, including the 7% rate on restaurant and catering services (drinks excluded) from 1 January 2026; the small business limits of § 19 UStG (EUR 25,000 and EUR 100,000); monthly or quarterly filing (EUR 9,000 and EUR 2,000), the 10th-day deadline, the one-month extension and the 1/11 special prepayment; the annual return deadline; reverse charge under § 13b; the recapitulative statement; e-invoices (receiving since 2025, issuing by 2027 or 2028); late filing and late payment surcharges and interest; and the 2026 box numbers. Trigger on: Umsatzsteuer-Voranmeldung, UStVA, Vorsteuer, Kennzahl, Dauerfristverlängerung, Zusammenfassende Meldung, E-Rechnung, Säumniszuschlag, German VAT return. Out of scope: the annual return in detail, § 19, § 20 cash basis, partial exemption and OSS (de-vat-annual-and-special-schemes), e-invoice formats (germany-einvoice), income tax (de-income-tax)."
-version: 2.5
+description: "German VAT for tax year 2026, centred on the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. Covers the 19% and 7% rates, including the 7% rate on restaurant and catering services (drinks excluded) from 1 January 2026; the small business limits of § 19 UStG (EUR 25,000 and EUR 100,000); monthly or quarterly filing (EUR 9,000 and EUR 2,000), the 10th-day deadline, the one-month extension and the 1/11 special prepayment; the annual return deadline; reverse charge under § 13b; the recapitulative statement; e-invoices (receiving since 2025, issuing by 2027 or 2028); late filing and late payment surcharges and interest; and the 2026 box numbers. Trigger on: Umsatzsteuer-Voranmeldung, UStVA, Vorsteuer, Kennzahl, Dauerfristverlängerung, Zusammenfassende Meldung, E-Rechnung, Säumniszuschlag, German VAT return. Out of scope: the annual return in detail, § 19, § 20 cash basis, partial exemption and OSS (de-vat-annual-and-special-schemes), e-invoice formats (germany-einvoice), income tax (germany-income-tax)."
+version: 2.6
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -20,7 +20,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 
 - [de-vat-annual-and-special-schemes](de-vat-annual-and-special-schemes.md): the annual return (form USt 2 A) and how it reconciles to the advance returns, the small business scheme in depth, cash accounting under § 20 UStG, partial exemption, § 15a corrections, the one-stop shop, fines.
 - [germany-einvoice](germany-einvoice.md): XRechnung, ZUGFeRD, Peppol and archiving.
-- [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md): income tax.
+- [germany-income-tax](germany-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md): income tax.
 - `vat-workflow-base` (the workflow for preparing any VAT return) and `eu-vat-directive` (EU rules), when working a bank statement into a return.
 
 ## Who this applies to

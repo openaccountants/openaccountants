@@ -1,10 +1,10 @@
 ---
 name: de-vat-annual-and-special-schemes
-description: "German VAT for tax year 2026 beyond the monthly or quarterly advance return: the annual VAT return (Umsatzsteuererklärung, form USt 2 A) and who files it, its deadline (2 August 2027, or 29 February 2028 with a tax adviser), reconciling it to the advance returns and paying the balance within one month; the small business scheme under § 19 UStG (EUR 25,000 and EUR 100,000, losing it mid-year, no annual return) and the EU small business scheme run by the BZSt; cash accounting under § 20 UStG (EUR 800,000, freelancers); the one-month extension and the 1/11 special prepayment; partial exemption (§ 15(4)) and input tax correction (§ 15a); domestic reverse charge (§ 13b); the EU one-stop shop (§ 18j, EUR 10,000); penalties; and the e-invoicing timetable. Trigger on: Umsatzsteuererklärung, Jahreserklärung, Abschlusszahlung, Kleinunternehmer, Istversteuerung, Sondervorauszahlung, Vorsteueraufteilung, § 15a, OSS. Out of scope: classifying transactions and filling the advance return (germany-vat-return), e-invoice formats (germany-einvoice), income tax (de-income-tax, de-einkommensteuer-freelancer)."
+description: "German VAT for tax year 2026 beyond the monthly or quarterly advance return: the annual VAT return (Umsatzsteuererklärung, form USt 2 A) and who files it, its deadline (2 August 2027, or 29 February 2028 with a tax adviser), reconciling it to the advance returns and paying the balance within one month; the small business scheme under § 19 UStG (EUR 25,000 and EUR 100,000, losing it mid-year, no annual return) and the EU small business scheme run by the BZSt; cash accounting under § 20 UStG (EUR 800,000, freelancers); the one-month extension and the 1/11 special prepayment; partial exemption (§ 15(4)) and input tax correction (§ 15a); domestic reverse charge (§ 13b); the EU one-stop shop (§ 18j, EUR 10,000); penalties; and the e-invoicing timetable. Trigger on: Umsatzsteuererklärung, Jahreserklärung, Abschlusszahlung, Kleinunternehmer, Istversteuerung, Sondervorauszahlung, Vorsteueraufteilung, § 15a, OSS. Out of scope: classifying transactions and filling the advance return (germany-vat-return), e-invoice formats (germany-einvoice), income tax (germany-income-tax, de-einkommensteuer-freelancer)."
 version: 0.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **What this skill does.** [germany-vat-return](germany-vat-return.md) classifies transactions and fills in the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. This skill picks up the cases that skill refuses and the year-end: the annual VAT return for 2026, the small business scheme, cash accounting, the one-month extension, partial exemption, input tax correction, reverse charge, the one-stop shop, penalties and the e-invoicing dates.
 
-**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [de-income-tax](de-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business uses gross receipts and costs, while normal-scheme cash EÜR records VAT collected as a receipt and VAT remitted as an expense. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit.
+**Sibling skills.** [germany-vat-return](germany-vat-return.md) for the box-by-box advance return and the supplier library. [germany-einvoice](germany-einvoice.md) for XRechnung, ZUGFeRD and archiving. [germany-income-tax](germany-income-tax.md) and [de-einkommensteuer-freelancer](de-einkommensteuer-freelancer.md) for income tax, where a small business uses gross receipts and costs, while normal-scheme cash EÜR records VAT collected as a receipt and VAT remitted as an expense. [de-corporate-tax](de-corporate-tax.md) for a GmbH's profit.
 
 ## Who this applies to
 

@@ -1,10 +1,10 @@
 ---
 name: ma-financial-statements
-description: "Use this skill whenever asked about financial statements, statutory accounts, or financial reporting obligations for self-employed people and small businesses in Morocco — who has to prepare formal accounts and who does not, the CGNC framework, the components of the états de synthèse (Bilan, CPC, ESG, Tableau de financement, ETIC), the normal vs simplified model, when IFRS applies, how accounts are filed with the DGI and deposited at the commercial court (dépôt légal), and when a statutory auditor (commissaire aux comptes) is required. Trigger on phrases like \"Morocco financial statements\", \"états de synthèse\", \"bilan CPC Maroc\", \"do I file accounts Morocco\", \"comptes annuels Maroc\", \"CGNC états de synthèse\", \"tableau de financement\", \"ETIC\", \"commissaire aux comptes Maroc\", \"dépôt des comptes Maroc\", \"القوائم المالية المغرب\", \"الميزانية المغرب\". Frame for a self-employed reader: auto-entrepreneur and CPU taxpayers do NOT prepare formal financial statements (they keep simple registers — cross-ref ma-bookkeeping); résultat net réel (RNR) taxpayers and companies prepare the full états de synthèse under the CGNC, and résultat net simplifié (RNS) prepares a reduced set. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-bookkeeping, ma-income-tax, ma-cpu, and ma-auto-entrepreneur."
+description: "Use this skill whenever asked about financial statements, statutory accounts, or financial reporting obligations for self-employed people and small businesses in Morocco — who has to prepare formal accounts and who does not, the CGNC framework, the components of the états de synthèse (Bilan, CPC, ESG, Tableau de financement, ETIC), the normal vs simplified model, when IFRS applies, how accounts are filed with the DGI and deposited at the commercial court (dépôt légal), and when a statutory auditor (commissaire aux comptes) is required. Trigger on phrases like \"Morocco financial statements\", \"états de synthèse\", \"bilan CPC Maroc\", \"do I file accounts Morocco\", \"comptes annuels Maroc\", \"CGNC états de synthèse\", \"tableau de financement\", \"ETIC\", \"commissaire aux comptes Maroc\", \"dépôt des comptes Maroc\", \"القوائم المالية المغرب\", \"الميزانية المغرب\". Frame for a self-employed reader: auto-entrepreneur and CPU taxpayers do NOT prepare formal financial statements (they keep simple registers — cross-ref ma-bookkeeping); résultat net réel (RNR) taxpayers and companies prepare the full états de synthèse under the CGNC, and résultat net simplifié (RNS) prepares a reduced set. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-bookkeeping, morocco-professional-income-tax, ma-cpu, and ma-auto-entrepreneur."
 version: 1.0
 jurisdiction: MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Morocco — Financial Statements & Financial Reporting (États de Synthèse)
 
-This skill tells an AI agent **who has to prepare formal financial statements** in Morocco, **what those statements are**, and **how they are filed** — organised by tax regime and legal form. It does **not** compute the tax (that is `ma-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`) and it does **not** govern the underlying books and invoices (that is `ma-bookkeeping`). It governs the **output** of the accounting system: the **états de synthèse** under the **Code Général de Normalisation Comptable (CGNC)**.
+This skill tells an AI agent **who has to prepare formal financial statements** in Morocco, **what those statements are**, and **how they are filed** — organised by tax regime and legal form. It does **not** compute the tax (that is `morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`) and it does **not** govern the underlying books and invoices (that is `ma-bookkeeping`). It governs the **output** of the accounting system: the **états de synthèse** under the **Code Général de Normalisation Comptable (CGNC)**.
 
 The central message for a self-employed reader:
 
@@ -85,7 +85,7 @@ This is the core narrative for the reader:
 
 1. **Start as auto-entrepreneur** → keep a **register of receipts**. You do **not** prepare or file any financial statements. Your tax is computed on collected turnover (see `ma-auto-entrepreneur`).
 2. **CPU** → keep a **register of receipts and purchases**. Still **no** formal financial statements.
-3. **Move to RNR** (by option, or because the turnover ceiling was exceeded for two consecutive years — verify in `ma-income-tax` / `ma-cpu`) → you now prepare the **full états de synthèse under the CGNC** every year and attach them to your **IR return** via SIMPL-IR. This is a large step up in obligation.
+3. **Move to RNR** (by option, or because the turnover ceiling was exceeded for two consecutive years — verify in `morocco-professional-income-tax` / `ma-cpu`) → you now prepare the **full états de synthèse under the CGNC** every year and attach them to your **IR return** via SIMPL-IR. This is a large step up in obligation.
 4. **Incorporate (e.g. SARL)** → the company prepares **full états de synthèse**, attaches them to the **IS return** via SIMPL-IS, **deposits** them at the **greffe du tribunal de commerce** (dépôt légal), and appoints a **commissaire aux comptes** if it is an SA or if turnover exceeds **MAD 50,000,000 HT**.
 
 > The agent must not let the reader assume incorporation is "the same as freelancing with a logo". Incorporation brings **published accounts, dépôt légal, and possible statutory audit** — all absent for AE/CPU.
@@ -207,7 +207,7 @@ Other points:
 - **Do NOT** tell a self-employed person or an ordinary SARL to prepare **IFRS** statements — IFRS is for banks/insurers/listed groups' **consolidated** accounts.
 - **Do NOT** tell any **sole proprietor** (AE/CPU/RNS/RNR) they need a **commissaire aux comptes** — that is a company-law obligation (SA, or turnover > MAD 50M HT).
 - **Do NOT** state firm thresholds, deadlines, or penalty amounts as settled — present items marked *(verify)* as provisional pending reviewer confirmation against the current CGNC / CGI / Code de Commerce / Loi de Finances 2026.
-- **Do NOT** compute the tax itself here — defer to `ma-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`; defer the books/invoices to `ma-bookkeeping`.
+- **Do NOT** compute the tax itself here — defer to `morocco-professional-income-tax`, `ma-cpu`, `ma-auto-entrepreneur`; defer the books/invoices to `ma-bookkeeping`.
 - **Do NOT** replace a licensed Moroccan **expert-comptable / commissaire aux comptes**.
 
 ## Disclaimer

@@ -1,10 +1,10 @@
 ---
 name: de-trade-tax
-description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-einkommensteuer-freelancer, de-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
+description: "German trade tax (Gewerbesteuer, GewSt) for collection period 2026: who is liable (sole traders and partnerships with a commercial business, every GmbH, UG and AG; free professions excluded), trade income (Gewerbeertrag) with the § 8 add-backs (one quarter of financing items above EUR 200,000) and § 9 reductions (Grundsteuer, partnership shares, 15% participation exemption, donations), the EUR 24,500 allowance, the 3.5% base rate, the municipal multiplier (Hebesatz, at least 200% for 2026, 280% from 2027), the § 35 EStG income tax credit (four times the base amount, capped), loss carry-forward (EUR 1 million plus 60%), apportionment between municipalities (Zerlegung), the return, quarterly prepayments, surcharges and interest. Trigger on: Gewerbesteuer, GewSt, Hebesatz, Gewerbeertrag, Steuermessbetrag, Freibetrag 24.500, Hinzurechnungen, Kürzungen, § 35 EStG, Zerlegung, Gewerbesteuer-Vorauszahlung, trade tax Germany. Out of scope: income tax of the owner (de-einkommensteuer-freelancer, germany-income-tax), partners' income (de-partners-and-part-year), corporate income tax (de-corporate-tax), non-residents (de-non-resident-tax)."
 version: 1.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -21,7 +21,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Collection period (Erhebungszeitraum) 2026 is the calendar year 2026 ([§ 14 GewStG](https://www.gesetze-im-internet.de/gewstg/__14.html)). Trade tax is a municipal tax with two authorities. The tax office sets the base amount in the Gewerbesteuermessbescheid, and that notice also decides whether the business is liable at all ([§ 184(1) AO](https://www.gesetze-im-internet.de/ao_1977/__184.html)). The municipality applies its multiplier, issues the trade tax notice and collects the tax ([§ 16(1) GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html)).
 
-This skill does not repeat the profit computation. The owner's profit comes from `de-einkommensteuer-freelancer` or `de-income-tax` (Anlage G), a partnership's from `de-partners-and-part-year`, a company's from `de-corporate-tax`. Whether a self-employed person is a Freiberufler or a trader is triaged in `de-freelance-intake`.
+This skill does not repeat the profit computation. The owner's profit comes from `de-einkommensteuer-freelancer` or `germany-income-tax` (Anlage G), a partnership's from `de-partners-and-part-year`, a company's from `de-corporate-tax`. Whether a self-employed person is a Freiberufler or a trader is triaged in `de-freelance-intake`.
 
 ## Who this applies to
 

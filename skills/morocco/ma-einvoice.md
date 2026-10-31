@@ -4,7 +4,7 @@ description: Use this skill whenever asked about Morocco e-invoicing, the DGI's 
 version: 1.0
 jurisdiction: MA
 tax_year: 2025
-last_updated: 2026-07-13
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -163,7 +163,7 @@ Two layers: **invoice-conformity penalties that exist today**, and **future e-in
 - **PLF / Loi de Finances 2025–2026** — Roadmap context; verify final wording.  _(PLF / Loi de Finances 2025–2026)_
 - **SIMPL** — DGI télédéclaration/télépaiement portal (portail.tax.gov.ma).  _(SIMPL)_
 
-DGI: tax.gov.ma. Cross-skills: `morocco-vat`, `ma-auto-entrepreneur`, `ma-bookkeeping`, `ma-income-tax`.
+DGI: tax.gov.ma. Cross-skills: `morocco-vat`, `ma-auto-entrepreneur`, `ma-bookkeeping`, `morocco-professional-income-tax`.
 
 ### Test suite
 

@@ -14,7 +14,7 @@ Tax years: 2026 (4 skills), 2025 (11 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](ma-income-tax.md), [Income tax](morocco-income-tax.md) | 2026, 2025 | Needs updating |
+| Income tax | [Income tax](morocco-professional-income-tax.md), [Income tax](morocco-income-tax.md) | 2026, 2025 | Needs updating |
 | Company tax | | | Missing |
 | VAT or sales tax | [VAT](morocco-vat.md) | 2025 | Needs updating |
 | Social contributions | [Social contributions](ma-social-contributions.md) | 2025 | Needs updating |

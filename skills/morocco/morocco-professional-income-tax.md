@@ -1,5 +1,5 @@
 ---
-name: ma-income-tax
+name: morocco-professional-income-tax
 description: >
   Use this skill whenever asked about Morocco personal income tax — the Impôt sur
   le Revenu (IR) on professional / business income taxed on net profit under the

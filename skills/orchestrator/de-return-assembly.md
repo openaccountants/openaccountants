@@ -1,7 +1,7 @@
 ---
 name: de-return-assembly
 description: Final orchestrator skill that assembles the complete German filing package for Germany-resident self-employed individuals (Freiberufler and Gewerbetreibende). Consumes outputs from all Germany content skills (germany-vat-return for UStVA, de-einkommensteuer-freelancer for ESt + EÜR, de-social-contributions for KV/PV/RV, de-trade-tax for GewSt, de-estimated-tax for Vorauszahlungen) to produce a single unified reviewer package containing every worksheet, every form, every brief section, all cross-skill reconciliations, and the final action list with payment instructions, filing instructions, and next-year planning. This is the capstone skill that runs last and produces the final deliverable. MUST be loaded alongside all Germany content skills listed above. Germany full-year residents only. Self-employed individuals and sole proprietors only.
-version: 0.2
+version: 0.3
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -45,7 +45,7 @@ The capstone Guide for German self-employed returns: every German content Guide 
 ## Section 2: Execution order and dependency chain
 
 1. **UStVA step.** First, because turnover feeds the Anlage EÜR. Regelbesteuerung: the outstanding advance returns plus the yearly return. Kleinunternehmer: no advance return and no yearly VAT return as a rule, and BOTH limits in the Section 3 table are tested, with the start-up row for a business that started in the year. Exception: a Kleinunternehmer who owes VAT as the recipient of a supply (§ 13b(5) UStG) or on goods bought from other EU states still files for those periods (§ 18(4a) UStG, kept in force by § 19(1) sentence 2 UStG); `de-freelance-intake` has the detail. Output: advance return lines, input VAT recovered and blocked, net turnover, Sondervorauszahlung reconciliation. Guide: `germany-vat-return`.
-2. **Income tax and EÜR step.** Net turnover goes to the net receipts line of the Anlage EÜR and the VAT actually received to its own receipts line (Cross-check 1). Blocked input VAT is part of the cost of the item. Covers the Anlage EÜR with the Anlage AVEÜR, Anlage S or Anlage G, Anlage Vorsorgeaufwand and depreciation. Output: taxable profit, taxable income, assessed income tax, solidarity surcharge, church tax. Guide: `de-einkommensteuer-freelancer`. Older versions named this step `de-income-tax`, which is not a Guide.
+2. **Income tax and EÜR step.** Net turnover goes to the net receipts line of the Anlage EÜR and the VAT actually received to its own receipts line (Cross-check 1). Blocked input VAT is part of the cost of the item. Covers the Anlage EÜR with the Anlage AVEÜR, Anlage S or Anlage G, Anlage Vorsorgeaufwand and depreciation. Output: taxable profit, taxable income, assessed income tax, solidarity surcharge, church tax. Guide: `de-einkommensteuer-freelancer`. Older versions named this step `germany-income-tax`, which is not a Guide.
 3. **Health, care and pension step.** Depends on the profit, the main part of the income a statutory fund uses when it sets contributions finally after the assessment. A voluntary member is charged on all income, not on the profit alone: see `de-social-contributions`. Contributions paid in the year go on the Anlage Vorsorgeaufwand as special expenses. Output: the year's amounts, the basic cover amount, any arrears or refund. Guide: `de-social-contributions`.
 4. **Trade tax step.** Gewerbetreibender only. Trade income is the profit plus the add-backs of § 8 GewStG less the reductions of § 9 GewStG, then the allowance and base rate in the Section 3 table, then the municipality's multiplier. The credit against income tax is four times the base amount, capped at the trade tax actually payable and at the income tax falling on the trade income; § 35 EStG prints the multiple in words ("das Vierfache"). A Freiberufler pays no trade tax: skip. Guide: `de-trade-tax`. https://www.gesetze-im-internet.de/estg/__35.html
 5. **Prepayment step.** The tax office sets prepayments by notice (Vorauszahlungsbescheid); nobody self-assesses them, and no amount is stated until a notice exists. The four due dates are in § 37(1) EStG: 10 March, 10 June, 10 September, 10 December. That paragraph prints no split across the dates, so state none: read each amount from the notice and test it against the minimums in the Section 3 table. Guide: `de-estimated-tax`. https://www.gesetze-im-internet.de/estg/__37.html
@@ -378,7 +378,7 @@ The final output is **three files**:
 
 ## Section 8: Cross-Guide references
 
-**Inputs:** `de-freelance-intake` (the structured package, JSON); `germany-vat-return`; `de-einkommensteuer-freelancer` (older versions named this `de-income-tax`, which is not a Guide); `de-social-contributions`; `de-trade-tax`; `de-estimated-tax`; `germany-bookkeeping`.
+**Inputs:** `de-freelance-intake` (the structured package, JSON); `germany-vat-return`; `de-einkommensteuer-freelancer` (older versions named this `germany-income-tax`, which is not a Guide); `de-social-contributions`; `de-trade-tax`; `de-estimated-tax`; `germany-bookkeeping`.
 
 **Outputs:** the final reviewer package. No downstream Guide.
 

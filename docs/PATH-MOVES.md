@@ -10895,3 +10895,10 @@ Shared folders grouped under `skills/foundation/` and `skills/reference/`, and s
 | skills/verticals/property-investor.md | skills/reference/verticals/property-investor.md |
 | skills/verticals/saas-digital-products.md | skills/reference/verticals/saas-digital-products.md |
 | skills/verticals/shipping-aviation-tonnage-tax.md | skills/reference/verticals/shipping-aviation-tonnage-tax.md |
+| skills/international/bahrain/README.md | skills/bahrain/README.md |
+| skills/international/bahrain/bh-cross-border-tax.md | skills/bahrain/bh-cross-border-tax.md |
+| skills/international/bahrain/bh-transfer-pricing.md | skills/bahrain/bh-transfer-pricing.md |
+| skills/germany/de-income-tax.md | skills/germany/germany-income-tax.md |
+| skills/colombia/co-income-tax.md | skills/colombia/colombia-income-tax.md |
+| skills/argentina/ar-income-tax.md | skills/argentina/argentina-income-tax.md |
+| skills/morocco/ma-income-tax.md | skills/morocco/morocco-professional-income-tax.md |
