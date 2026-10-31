@@ -132,7 +132,7 @@ The current rates for both kinds of interest are in `pt-irs-employees-investment
 - **Foreign clients** do not withhold Portuguese tax. The whole IRS is then paid through payments on account and the final balance. Foreign tax withheld by a client's country is credited under the treaty; see `pt-foreign-source-treaties`.
 - **NHR and IFICI** holders: see `pt-nhr-ifici`. They cannot use IRS Jovem (art. 12-B(9)).
 - **Leaving Portugal** with crypto held in the business is treated as a sale (art. 31(18)(b)). See `portugal-crypto-tax`.
-- **VAT** on the same fees is separate. The EUR 15,000 CIVA art. 53 exemption limit also drives the withholding waiver. See `pt-vat-return`.
+- **VAT** on the same fees is separate. The EUR 15,000 CIVA art. 53 exemption limit also drives the withholding waiver. See `portugal-vat-return`.
 
 ## Worked examples
 
