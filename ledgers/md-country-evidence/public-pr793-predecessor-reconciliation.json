@@ -11,7 +11,7 @@
       "slug": "README",
       "incoming_file_text": "---\njurisdiction: MD\nversion: 0.2\nlast_updated: 2026-10-30\napplicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]\nnot_applicable: {}\ncovered_by:\n  TP: md-transfer-pricing\n  XB: md-cross-border\npartial:\n  IT-IND: \"skills carry tax_year 2025 and are not yet rebuilt to the 2026 standard\"\n  IT-CORP: \"md-corporate-income-tax carries tax_year 2025 and is not yet rebuilt to the 2026 standard\"\n  VAT: \"moldova-vat carries tax_year 2025 and is not yet rebuilt to the 2026 standard\"\n  SC: \"moldova-social-contributions carries tax_year 2025 and is not yet rebuilt to the 2026 standard\"\n  PR: \"moldova-payroll carries tax_year 2025 and is not yet rebuilt to the 2026 standard\"\n  XB: \"md-cross-border covers nonresident withholding, permanent establishments, treaty proof and the foreign tax credit; individual residence tests and permanent-establishment profit computation are not covered\"\n---\n\n# Moldova: tax pack\n\nMoldova taxes income under the Fiscal Code No. 1163/1997, administered by the State Tax Service (SFS). The fiscal period is the calendar year and the currency is the Moldovan leu (MDL). Payers withhold tax at source on Moldova-source income paid to nonresidents.\n\n## Domains\n\n| Domain | Skill | Status |\n|---|---|---|\n| IT-IND, individual income tax | moldova-income-tax, md-tax-overview, moldova-tax-optimization | sourced from the law (tax_year 2025) |\n| IT-CORP, corporate income tax | md-corporate-income-tax, md-company-formation | sourced from the law (tax_year 2025) |\n| VAT | moldova-vat | sourced from the law (tax_year 2025) |\n| SC, social contributions | moldova-social-contributions | sourced from the law (tax_year 2025) |\n| PR, payroll withholding | moldova-payroll | sourced from the law (tax_year 2025) |\n| TP, transfer pricing | md-transfer-pricing | checked against the law |\n| XB, cross-border | md-cross-border | checked against the law, partial |\n\nTreaty-by-treaty withholding rates are out of scope for the pack.\n\n## Official sources\n\n| Source | URL | Read on |\n|---|---|---|\n| Fiscal Code No. 1163/1997, consolidated text in force 30 October 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |\n| Law No. 187/2025 amending certain normative acts (transfer-pricing filing from fiscal period 2025) | https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro | 2026-10-30 |\n| State Tax Service | https://www.sfs.md | not read (human check) |\n",
       "incoming_file_sha256": "f9daba51153452b11fb508bcab4aa5a0af03c8f8851b54723c2a45ef4eaec4ac",
-      "current_Guide_sha256": "d595197d398265574545a9c40b1b378cad1d77d146bd288cd165e1b691d98931",
+      "current_Guide_sha256": "b80ddb9362fa3042ecc91dea306c29872f3bede649d1c560f20886571af4bf59",
       "incoming_units": 18,
       "old_topic_destinations": [
         {
@@ -2656,5 +2656,11 @@
       "status": "OPEN observed31October; privateincomingcopy retained; notadopted/reviewed/closed"
     }
   ],
-  "publication": "PR793merged. Do not push expansion to merged PR. CoordinateoneexistingopenMDPR after fullcountryreview; preserve otherPR work."
+  "publication": "PR793merged. Do not push expansion to merged PR. CoordinateoneexistingopenMDPR after fullcountryreview; preserve otherPR work.",
+  "subsequent_observation_20261031": {
+    "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
+    "repair_PRs": "1024/1026/1027/1028 MERGED",
+    "reconciliation": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+    "scope": "Historical open-overlap observation retained above; superseded for current publication planning."
+  }
 }

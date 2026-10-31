@@ -637,3 +637,7 @@ Original bytes: 13083. Draft bytes: 44434. More than25% shorter: False.
 - Private red-flag amounts are explicitly nonstatutory; bank-export/IBAN/currency/procedure and legal-scope gaps remain named.
 
 The two current recomputing blocks are retained with hashes in the JSON. Independent source/old-topic comparison and legal-assumption review are pending.
+
+## Subsequently merged repair PR #1028
+
+The full incoming file and all 81 units are preserved in the [repair predecessor table](md-country-evidence/public-merged-repair-predecessor-reconciliation.md). Published review notes cover the smaller incoming file; they do not approve this expanded country pack. Existing source rows, cases and old-topic destinations remain unchanged.

@@ -8501,5 +8501,12 @@
     "Private red-flag amounts are explicitly nonstatutory; bank-export/IBAN/currency/procedure and legal-scope gaps remain named."
   ],
   "independent_old_topic_comparison": "PENDING WHOLE-COUNTRY REVIEW; any lost-content restoration count must be recorded before publication",
-  "remaining": "Sources Not yet confirmed and country README remain authoritative; no comprehensive coverage claim"
+  "remaining": "Sources Not yet confirmed and country README remain authoritative; no comprehensive coverage claim",
+  "subsequently_merged_repairs_20261031": {
+    "PR": 1028,
+    "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
+    "complete_destination_table": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+    "units": 81,
+    "review_scope": "Original smaller-file review retained; expanded whole-country review pending"
+  }
 }

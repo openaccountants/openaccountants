@@ -14577,5 +14577,12 @@
   ],
   "independent_old_topic_comparison": "PENDING; reviewer must record any lost content restored before publication",
   "source_integrity": "Writer binds each exact quote and legal paragraph to retained official body/hash; not independent substantive verification",
-  "remaining": "The Guide Sources Not yet confirmed and country README are authoritative; full 7-Guide country review still pending"
+  "remaining": "The Guide Sources Not yet confirmed and country README are authoritative; full 7-Guide country review still pending",
+  "subsequently_merged_repairs_20261031": {
+    "PR": 1024,
+    "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
+    "complete_destination_table": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+    "units": 106,
+    "review_scope": "Original smaller-file review retained; expanded whole-country review pending"
+  }
 }

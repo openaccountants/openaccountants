@@ -10739,5 +10739,12 @@
   "baseline_old_units": 155,
   "remaining": "Guide Sources Not yet confirmed and country README remain authoritative; no complete-coverage, accountant-attestation or independent-review claim",
   "source_integrity": "Quotes and retained article/source hashes checked by writer; not independent substantive verification",
-  "new_bytes": 92691
+  "new_bytes": 92691,
+  "subsequently_merged_repairs_20261031": {
+    "PR": 1026,
+    "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
+    "complete_destination_table": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
+    "units": 79,
+    "review_scope": "Original smaller-file review retained; expanded whole-country review pending"
+  }
 }

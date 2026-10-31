@@ -1081,3 +1081,7 @@ Independent whole-pack comparison and any lost-content restoration count are pen
 ## Assumed calculations
 
 The two current Guide blocks and hashes are retained in the JSON. All case facts are expressly assumed; they are not extra statutory thresholds. Predecessor numerical fixtures and bank examples remain mapped/archived. Independent legal-assumption review and recomputation are pending.
+
+## Subsequently merged repair PR #1024
+
+The full incoming file and all 106 units are preserved in the [repair predecessor table](md-country-evidence/public-merged-repair-predecessor-reconciliation.md). Published review notes cover the smaller incoming file; they do not approve this expanded country pack. Existing source rows, cases and old-topic destinations remain unchanged.

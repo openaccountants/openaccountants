@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: "2.18"
+version: "2.19"
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -61,9 +61,9 @@ The social draft now supplies the [current CNAS refund procedure and actual appl
 
 The social draft also supplies the [current CNAM fixed-medical-premium refund](moldova-social-contributions.md#cnam-fixed-medical-premium-refund-conditions-application-and-stages), reconciled to the actual10October2025amendment and current approved application. Strict paid-percentage benchmark, actual timely fixed payment, earlier proportional-day repeal and separate territorial/central/Treasury stages are explicit. Other named ordinary/correction/registration gaps and whole-country independent review remain open.
 
-PR #793 merged on31October2026. Its subsequently rewritten TP/XB Guides and README are preserved in the [complete predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.md), with full incoming text and exact topic hashes. The deeper local methods, source limits, existing examples and all seven partial entries remain. Four open overlapping repair PRs (#1024/#1026/#1027/#1028) are recorded for coordination; this expansion still needs whole-country review and one agreed publication PR. The earlier merged batch does not establish review or completeness for these expanded drafts.
+PR #793 merged on31October2026. Its subsequently rewritten TP/XB Guides and README are preserved in the [complete predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.md), with full incoming text and exact topic hashes. The deeper local methods, source limits, existing examples and all seven partial entries remain. Repair PRs [#1024](https://github.com/openaccountants/openaccountants/pull/1024), [#1026](https://github.com/openaccountants/openaccountants/pull/1026), [#1027](https://github.com/openaccountants/openaccountants/pull/1027) and [#1028](https://github.com/openaccountants/openaccountants/pull/1028) also merged on31October2026. Their full text, examples, review notes and topic destinations, together with the subsequent README update #1029, are retained in the [repair reconciliation](../../../ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.md). Ten drafts remain: gaps and country review are still open. Those merged PRs are historical and cannot receive this expanded batch. The earlier merged batch does not establish review or completeness for these expanded drafts.
 
-The social draft now also supplies the [current CNAS payment-correction application and recording method](moldova-social-contributions.md#cnas-payment-corrections-and-recording-dates). Its six-page official source separates source/destination fields, credit limits, ten-working-day Treasury dispatch and the actual Treasury/system recording dates. Other named ordinary gaps, open-PR coordination and whole-country independent review remain.
+The social draft now also supplies the [current CNAS payment-correction application and recording method](moldova-social-contributions.md#cnas-payment-corrections-and-recording-dates). Its six-page official source separates source/destination fields, credit limits, ten-working-day Treasury dispatch and the actual Treasury/system recording dates. Other named ordinary gaps, publication coordination and whole-country independent review remain.
 
 ## Domains
 

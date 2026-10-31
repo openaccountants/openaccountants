@@ -1,0 +1,38 @@
+{
+  "status": "PASS writer preservation/incoming arithmetic; ordinary gaps and whole-country legal review remain open",
+  "checked_on": "2026-10-31",
+  "base": "9142052b6959695a680f39a27c2b22a6812995bc",
+  "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
+  "ten_Guide_tax_texts": "BYTE-IDENTICAL to pre-merge deeper pack",
+  "source_rows_unchanged": 3865,
+  "existing_oa_check_blocks_unchanged": 50,
+  "previous_topic_units_preserved": 1194,
+  "new_incoming_topic_units": 370,
+  "total_topic_units_preserved": 1564,
+  "incoming_arithmetic": [
+    {
+      "PR": 1024,
+      "blocks": 2,
+      "failures": []
+    },
+    {
+      "PR": 1026,
+      "blocks": 2,
+      "failures": []
+    },
+    {
+      "PR": 1027,
+      "blocks": 2,
+      "failures": []
+    },
+    {
+      "PR": 1028,
+      "blocks": 2,
+      "failures": []
+    }
+  ],
+  "all_incoming_substantive_lines": "PRESERVED in hashed units",
+  "local_partial_domains": 7,
+  "review_scope": "Four original comments retained;262 smaller-file ledger rows only",
+  "publication": "No remote push/PR/comment/merge performed; repair PRs observed as MERGED; expanded pack remains unpublished/unreviewed."
+}
