@@ -4,7 +4,7 @@ description: Use this skill whenever asked about forming, incorporating, or regi
 version: 1.0
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -34,7 +34,7 @@ This skill covers starting a business in the Netherlands in tax year 2026 (calen
 It does not compute the corporate tax bill, VAT returns or payroll. Route those to:
 
 - **nl-corporate-tax**: corporate income tax (vennootschapsbelasting, VPB) for the BV;
-- **nl-vat-return** / **netherlands-vat-return**: filing VAT returns;
+- **nl-vat-return**: filing VAT returns;
 - **netherlands-payroll**: running payroll, the expat scheme (known as the thirty-percent ruling)
   and employer contributions.
 
@@ -445,7 +445,7 @@ The customary salary is at least the highest of the comparable-job salary, €64
   the choice between salary and dividend.
 - **Refer to netherlands-payroll** for running payroll, the expat scheme, employee insurance and the
   Whk premium.
-- **Refer to nl-vat-return / netherlands-vat-return** for VAT returns, the EU-KOR and cross-border supplies.
+- **Refer to nl-vat-return** for VAT returns, the EU-KOR and cross-border supplies.
 - **Refuse to confirm ondernemer status** as certain: it is a facts-and-circumstances test decided by the
   Belastingdienst after registration. Give the criteria and the risk.
 - **Refer to a specialist** for converting an eenmanszaak into a BV (tax-neutral transfer), holding and

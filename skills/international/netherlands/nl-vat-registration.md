@@ -11,12 +11,12 @@ description: >
   import schemes and their quarterly and monthly returns, and penalties. Trigger on "do
   I need a Dutch VAT number", "register for btw", "join the KOR", "OSS Netherlands",
   "foreign company VAT Netherlands", "fiscal representative Netherlands". Out of scope:
-  filling in the return boxes (nl-vat-return, netherlands-vat-return), income tax
+  filling in the return boxes (nl-vat-return), income tax
   (nl-income-tax), cross-border income (nl-cross-border).
 version: 0.1
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-30
 authored_by: Ryan Duguid
 review_status: pending_review
 trust_label: Accountant-authored
@@ -27,7 +27,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Netherlands VAT registration, KOR, OSS and non-established businesses (2026)
 
-This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md) or [netherlands-vat-return](netherlands-vat-return.md).
+This skill answers one question: does this business need to be registered for Dutch VAT, and if so, how and under which scheme? It does not fill in returns. For the boxes, rates per supply, input VAT and corrections, use [nl-vat-return](nl-vat-return.md).
 
 Tax year 2026 (calendar year). Law: Wet op de omzetbelasting 1968 (Wet OB 1968) as in force from 1 January 2026.
 
