@@ -1,10 +1,10 @@
 ---
 name: belgium-payroll
 description: "Belgian payroll for 2026 from the employer side: employee social security of 13.07% (RSZ / ONSS), the private-sector employer rate of 24.92% (19.88% plus wage moderation for most workers), the social and fiscal work bonus (werkbonus), the structural reduction, the exemption above the quarterly pay ceiling, first-hire reductions, the company car solidarity contribution and the 2026 reference CO2 for the benefit in kind, meal vouchers and eco-cheques, how withholding (bedrijfsvoorheffing) fits in, DmfA and monthly advance dates, and RSZ surcharges, interest and late-filing charges. Trigger on: Belgian payroll, RSZ bijdragen, ONSS cotisations, werkbonus, structurele vermindering, solidariteitsbijdrage bedrijfswagen, employer cost Belgium, DmfA, maaltijdcheques. Out of scope: be-payroll-withholding (the Annex III key formula), be-employee-income-tax, be-social-contributions (self-employed), be-cross-border (posted and frontier workers)."
-version: 1.3
+version: 1.4
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-26
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -189,8 +189,6 @@ expected:
 | Fisconetplus, art. 412 WIB 92, withholding payment dates and quarterly threshold | https://www.minfin.fgov.be/myminfin-web/pages/public/fisconet/document/473ac660-d80e-4181-ab8e-e3544b57ffa8 | 2026-10-23 |
 
 Not yet confirmed: the company car benefit in kind formula of art. 36, par. 2 WIB 92 (6/7 of catalogue value, CO2 percentage from 5.5% moving 0.1 point per gram, 4% to 18%, age reduction) and its 2026 indexed minimum, because Fisconetplus could not be read today; the employer's 2026 tax deductibility of company cars (art. 198bis and 66 WIB 92); the rounding step in the solidarity contribution; the special social security contribution scale for 2026; work bonus amounts for January to June 2026; the 2026 minimum wage (GGMMI, CAO 43); the labour-law points (holiday pay, overtime, guaranteed pay, holidays, payslip contents, Dimona, 281.10 and work accident deadlines) carried from the earlier version without a 2026 re-read; the FOD withholding calendar page, which blocked automated reading today (dates kept in `be-payroll-withholding`).
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

@@ -1,10 +1,10 @@
 ---
 name: albania-income-tax
 description: "Albanian personal income tax (tatimi mbi të ardhurat personale) for tax year 2026 under Law No. 29/2023 as amended to Law No. 81/2025. Covers employees (13% and 23% scale, monthly payroll, the ALL 600,000 / 420,000 / 360,000 personal deductions), the self-employed and individual traders (15% and 23% scale, the 0% rate to 2029 for gross income up to ALL 14 million, presumed expenses, instalments), the disguised-employment rule in art. 12(1)(ç) and its two exceptions, investment income (dividends 8%; interest, rent and gains 15%), gifts and inheritances, the 31 March DVAP return, and penalties and interest. Trigger on 'Albanian income tax', 'DVAP', 'TAP Albania', 'self-employed Albania 0%', 'disguised employment Albania', 'tax on rent Albania'. Out of scope: companies (al-corporate-tax), VAT (albania-vat), payroll mechanics (albania-payroll), contributions (albania-social-contributions), treaties (al-cross-border), planning (albania-tax-optimization)."
-version: 0.2
+version: 0.3
 jurisdiction: AL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -255,8 +255,6 @@ expected:
 | General Directorate of Taxes, tax returns of natural persons in business | https://tatime.gov.al/person-fizik/?artikull=deklaratat-tatimore | 2026-10-23 |
 
 Not yet confirmed: the payment date for the balance on DVAP and on the annual business return (Law 29/2023 art. 61 sets only the filing date, and tatime.gov.al refers to "official instructions"); whether a self-employed person's or trader's late business return is fined ALL 3,000 (art. 113(c), individuals) or ALL 5,000 (art. 113(b)); how "gross income" is measured for the ALL 14,000,000 test in art. 69(1)(dh); the tatime.gov.al self-employed page says "three or fewer clients" for the 90% test while art. 12(1)(ç) says "fewer than 3" (this skill follows the law); how employment income from a foreign employer with no Albanian payroll agent is taxed during the year; the Council of Ministers decision classifying activities for the art. 14 presumed-expense rates; the 2026 national minimum wage that caps the private pension deduction under art. 20(4) (see `albania-social-contributions`).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

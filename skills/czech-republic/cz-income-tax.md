@@ -1,10 +1,10 @@
 ---
 name: cz-income-tax
 description: "Czech personal income tax for the self-employed (OSVČ), tax year 2026. Covers business and professional income under § 7 of the Income Taxes Act, the expense lump sums (80%, 60%, 40% and 30% of income, capped at CZK 1,600,000, 1,200,000, 800,000 and 600,000), actual expenses and tax records, the 15% and 23% rates with the 2026 threshold of CZK 1,762,812, credits and the child tax benefit, losses, tax advances (zálohy), the flat-rate regime (paušální daň) with its three bands and 2026 monthly payments, and the return deadlines for 2026. Trigger on: OSVČ, živnostník, DPFO, daňové přiznání, výdajové paušály, výdaje procentem z příjmů, paušální daň, paušální režim, zálohy na daň, Czech freelancer tax, self-employed tax Czech Republic. Out of scope: employees and non-business income (cz-employee-income-tax), social and health insurance (cz-social-health), non-residents and treaties (cz-cross-border), companies (cz-corporate-income-tax), VAT (cz-vat-return)."
-version: 2.1
+version: 2.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -263,8 +263,6 @@ Not yet confirmed:
 - The Financial Administration had not published the filing dates for the 2026 return. The 1 April, 3 May and 1 July 2027 dates come from Tax Code §§ 33 and 136 and the way it counted the 2025 dates.
 - Applying each lump-sum percentage and cap per activity, for a person with activities in more than one group, follows the wording of § 7(7); no Financial Administration instruction on it was read.
 - 2026 social and health insurance of the self-employed (minimum advances, assessment bases) is not covered here. cz-social-health still carries 2025 figures.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
