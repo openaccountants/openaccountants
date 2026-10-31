@@ -1,10 +1,10 @@
 ---
 name: es-freelance-intake
 description: ALWAYS USE THIS SKILL when a user asks for help preparing their Spain tax returns AND mentions freelancing, self-employment, autónomo, working por cuenta propia, or independent professional activity. Trigger on phrases like "help me do my taxes", "prepare my Modelo 100", "I'm autónomo in Spain", "I'm a freelancer in Spain", "do my taxes as an autónomo", "prepare my IRPF return", or any similar phrasing where the user is a Spain-resident self-employed individual needing tax return preparation. This is the REQUIRED entry point for the Spain self-employed tax workflow -- every other skill in the stack (es-vat-return, es-income-tax, es-social-contributions, es-estimated-tax, es-return-assembly) depends on this skill running first to produce a structured intake package. Uses upload-first workflow -- the user dumps all their documents and the skill infers as much as possible before asking questions. Uses ask_user_input_v0 for structured questions instead of one-at-a-time prose. Built for speed. Spain full-year residents only; autónomos (self-employed individuals) only.
-version: 0.1
+version: 0.4
 jurisdiction: ES
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -761,6 +761,49 @@ The VAT return is `es-vat-return` and nothing else: never route VAT work to any 
 8. Confirm the whole picture with the user using the Section 5 template, then fill the gaps in Section 6 that the documents cannot answer.
 9. Hand the package in Section 8 to `es-return-assembly`, with every unresolved item in `open_flags`. An unresolved item passed on as resolved is the one failure this skill can cause on its own.
 
+## Worked checks
+
+These checks confirm a routing answer. They are not a computation of the client's tax.
+
+### Release from Modelo 130
+
+A professional had EUR 100,000 of activity income last year, of which EUR 72,000 bore withholding. 72% is at least 70%, so art. 109.2 of the Reglamento del IRPF releases them from the quarterly payment for those activities.
+
+```oa-check
+name: Spain 2026 intake professional release from Modelo 130
+inputs:
+  activity_income: 100000
+  income_with_withholding: 72000
+  test_percent: 70
+steps:
+  share_percent: income_with_withholding / activity_income * 100
+  headroom: share_percent - test_percent
+expected:
+  share_percent: 72
+  headroom: 2
+```
+
+### Reading a professional invoice
+
+An established professional invoices EUR 1,000 plus 21% VAT to a business payer who must withhold 15% (art. 95.1). The invoice shows 210 VAT, 150 withholding and 1,060 to collect. A qualifying new professional at 7% withholds 70 and collects 1,140.
+
+```oa-check
+name: Spain 2026 intake invoice withholding read
+inputs:
+  base: 1000
+  vat_rate: 0.21
+  standard_rate: 0.15
+  starting_rate: 0.07
+steps:
+  vat: base * vat_rate
+  collect_standard: base + vat - base * standard_rate
+  collect_starting: base + vat - base * starting_rate
+expected:
+  vat: 210
+  collect_standard: 1060
+  collect_starting: 1140
+```
+
 ## Ask the client first
 
 - Were you resident in Spain for the whole of 2026 on the art. 9 tests, and did you move in or out during the year? A move year is referred, because Spain has no part-year resident.
@@ -785,16 +828,20 @@ The VAT return is `es-vat-return` and nothing else: never route VAT work to any 
 
 ## Sources
 
-- Ley 35/2006, Ley del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764
-- RD 439/2007, Reglamento del IRPF: https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820
-- Ley 37/1992, Ley del IVA: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740
-- RD 1624/1992, Reglamento del IVA: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925
-- RD 1065/2007, gestión e inspección: https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984
-- Orden HAC/1526/2024, suppressing Modelo 037: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410
-- Ley 20/2007, Estatuto del trabajo autónomo: https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409
-- Real Decreto-ley 1/2023: https://www.boe.es/buscar/act.php?id=BOE-A-2023-625
-- Ley 4/2012 de Canarias, IGIC rates: https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282
-- Agencia Tributaria, who the module method applies to: https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html
+| Official source | Scope read | Read on |
+|---|---|---|
+| [Ley 35/2006, Ley del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) | Arts. 30, 68.4, 101.8 | 2026-10-31 |
+| [RD 439/2007, Reglamento del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 30, 95, 109, 110 | 2026-10-31 |
+| [Ley 37/1992, Ley del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) | Art. 107 only | 2026-10-31 |
+| [RD 1624/1992, Reglamento del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Art. 81 | 2026-10-31 |
+| [RD 1065/2007, gestión e inspección](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984) | EUR 3,005.06 | 2026-10-31 |
+| [Orden HAC/1526/2024, suppressing Modelo 037](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410) | Page opened only | 2026-10-31 |
+| [Ley 20/2007, Estatuto del trabajo autónomo](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409) | Page opened only | 2026-10-31 |
+| [Real Decreto-ley 1/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-625) | Page opened only | 2026-10-31 |
+| [Ley 4/2012 de Canarias, IGIC rates](https://www.boe.es/buscar/act.php?id=BOE-A-2012-9282) | Page opened only | 2026-10-31 |
+| [Agencia Tributaria, who the module method applies to](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html) | Module limits 150,000, 75,000, 250,000, 125,000 | 2026-10-31 |
+
+Not yet confirmed: figures from sources marked "Page opened only" and table rows not named in the scope column were not re-read on 2026-10-31; they carry the skill's October 2026 refresh, whose exact read date is not recorded.
 
 ## Disclaimer
 
