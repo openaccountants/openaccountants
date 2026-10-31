@@ -28,16 +28,16 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Dividends received by Belarus companies**: 12%; 0% under the same five-year non-distribution condition _(Special Part, art. 184(6), (8))_. Dividends paid to a foreign company without a permanent establishment: 25%, before any treaty relief _(Special Part, arts. 189(1.4), 192(1.4))_
 - **Does VAT exist**: yes. The standard rate is 20%, with 10% for listed goods, 25% for telecommunications services and 0% for exports _(Special Part, art. 122)_. Detail: [belarus-vat](belarus-vat.md).
 - **Annual personal income tax declaration deadline**: by 31 March of the following year, for income that must be declared (for example foreign-source income and income from payers who are not tax agents). The MNS sends a payment notice by 30 April and the tax is paid by 1 June _(Special Part, arts. 219(2), 222(1))_
-- **Entrepreneur returns**: cumulative returns for the quarter, half-year, nine months and year, filed by the 20th and paid by the 22nd of the month after each period _(Special Part, art. 207; see [belarus-income-tax](belarus-income-tax.md))_
+- **Entrepreneur returns**: cumulative returns for the quarter, half-year, nine months and year, filed by the 20th and paid by the 22nd of the month after each period _(Special Part, arts. 207, 217(3)-(4); see [belarus-income-tax](belarus-income-tax.md))_
 - **Profit tax return filing deadline (quarterly periods)**: the return for each quarter is filed by the 20th of the following month and the tax paid by the 22nd. The annual return is filed by 20 March and the balance paid by 22 March of the following year; a fourth-quarter advance of two thirds of the third-quarter tax is due by 22 December _(Special Part, arts. 185, 186(6), (7), (9))_
-- **VAT return filing deadline**: by the 20th of the month after the reporting period (a month, or a quarter where elected); payment by the 22nd _(Special Part, art. 136(1)-(2))_
+- **VAT return filing deadline**: by the 20th of the month after the reporting period; payment by the 22nd. The reporting period is a month, or a quarter where the payer tells the tax office it elects one; it is always a quarter for individual entrepreneurs and simplified-system companies and always a month for telecommunications providers _(Special Part, arts. 127(2)-(3), 136(1)-(2))_
 - **Payroll and social contributions**: employers pay 28% pension and 6% social insurance contributions to the Social Protection Fund (FSZN), and withhold 1% from the employee; these are separate from income tax _(Law No. 118-Z, art. 5)_. Detail: [belarus-social-contributions](belarus-social-contributions.md) and [belarus-payroll](belarus-payroll.md).
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code, Special Part, consolidated to Law No. 127-Z of 30.12.2025: arts. 122, 136, 184, 185, 186, 189, 192, 196, 199, 207, 214, 219, 222 | https://pravo.by/document/?guid=3871&p0=hk0900071 | 2026-10-31 |
+| Tax Code, Special Part, consolidated to Law No. 127-Z of 30.12.2025: arts. 122, 127, 136, 184, 185, 186, 189, 192, 196, 199, 207, 214, 217, 219, 222 | https://pravo.by/document/?guid=3871&p0=hk0900071 | 2026-10-31 |
 | Tax Code, General Part: arts. 17, 69 | https://pravo.by/document/?guid=3871&p0=hk0200166 | 2026-10-31 |
 | Law No. 118-Z of 15.07.2021 on compulsory insurance contributions to the FSZN: art. 5 | https://pravo.by/document/?guid=3871&p0=H12100118 | 2026-10-31 |
 
