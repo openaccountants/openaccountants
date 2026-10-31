@@ -29,6 +29,15 @@ A perfect skill makes a frontier model give the right answer, with its condition
 
 Each of the twelve lines below is in the standard because a measurement says so. Each line carries its **Evidence** (the test or reading that justifies it) and its **Check** (the function in `scripts/skill_checks.py` that tests it, or "reviewer" when only a human reading the law can). The checks run from `scripts/validate-guides.py`: an error on a PR for a tax skill, a warning on the backlog. Where a line is marked **unmeasured**, it is reasoning, not a result, and the weekly loop owes it a test.
 
+## How to read a source
+
+Every figure comes from the official page, actually opened by the writer. Memory and secondary summaries do not count.
+
+1. **Route, in order:** a direct fetch of the official page; then a real browser; then a dated archive copy, marked as archived in the Sources table.
+2. **Quote it:** each figure carries the exact wording from the page, the link and the read date.
+3. **Read the neighbouring sections:** caps, exceptions and definitions often sit elsewhere in the same law. A Kansas example used the right federal unemployment tax rate and missed the wage base in another section.
+4. **Respect blocks:** an ordinary browser visit is fine. Never solve a CAPTCHA or disguise a request. If a page will not open, the figure is marked unverified, never guessed.
+
 ## The twelve lines
 
 ### 1. Every figure comes from the official page, for the current tax year, cited to the article
