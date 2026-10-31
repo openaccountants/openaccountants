@@ -1,8 +1,8 @@
 {
-  "status": "2026CORPORATE WRITER DRAFT; ordinary implementation gaps retained; independentwholecountryreviewnotyetrequested",
+  "status": "2026 CORPORATE WRITER DRAFT; independent whole-country review in progress, focused011/012corrections pending; ordinary gaps remain",
   "slug": "md-corporate-income-tax",
   "Guide_path": "skills/international/moldova/md-corporate-income-tax.md",
-  "Guide_sha256": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+  "Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
   "rows": [
     {
       "id": "MD-CORP-001",
@@ -8454,6 +8454,38 @@
       "source_context": "Articolul 22. Nerecunoaşterea venitului în cazul pierderii forţate a proprietăţii\n(1) Nu se recunoaşte venitul la înlocuirea proprietăţii cu o proprietate de acelaşi tip în cazul pierderii ei forţate.\n(2) În cazul nerecunoaşterii venitului în conformitate cu alin.(1), baza valorică a proprietăţii de înlocuire se consideră baza valorică a proprietăţii înlocuite, majorată cu suma cheltuielilor suportate pentru procurarea proprietăţii, care nu este acoperită din venitul obţinut în cazul pierderii forţate.\n(3) Proprietatea se consideră pierdută în mod forţat, dacă ea este parţial sau total distrusă, furată, sechestrată sau destinată demolării ori dacă contribuabilul este forţat într-un oarecare alt mod să-şi abandoneze proprietatea din cauza pericolului sau iminenţei uneia din acţiunile sau evenimentele menţionate mai sus.\n(4) Proprietatea de înlocuire se consideră de acelaşi tip atunci când ea are aceleaşi însuşiri sau este de aceeaşi natură ca şi proprietatea înlocuită (indiferent de faptul dacă este sau nu o proprietate de acelaşi nivel sau calitate).\n(5) Perioada de înlocuire este perioada care expiră în perioada fiscală următoare celei în care s-a produs pierderea.",
       "quote_matches_source_after_layout_normalization": true,
       "independent_review": "PENDING WHOLE-COUNTRY REVIEW; historical/inactive/specialist source fields not adopted as current ordinary entitlements"
+    },
+    {
+      "id": "MD-CORP-556",
+      "rule_or_figure": "Nonmonetary VEN12row02010 valuation: preceding-month comparable average; where no such prior-month supplies, current-month cost is the statutory floor",
+      "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+      "act_article_or_official_section": "Fiscal Code art. 21(1)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+      "source_text_sha256": "5ecbca58b0a5e4becb4d9453092c121658cfa30ed3ae2da44586db776b410334",
+      "source_context": "(1) Venitul obţinut sub formă nemonetară se evaluează de către fiecare subiect al impunerii şi constituie valoarea medie a preţului de livrare a mărfurilor şi/sau de prestare a serviciilor analoage pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară. În cazul în care, pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară, nu au fost efectuate livrări de mărfuri şi/sau prestări de servicii, venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+      "quote_matches_source_after_layout_normalization": true,
+      "writer_retained_context_recheck_date": "2026-10-31",
+      "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+      "independent_review": "PENDING focused011/012recheck and whole-country review"
+    },
+    {
+      "id": "MD-CORP-557",
+      "rule_or_figure": "VEN12row03031 waste/shrinkage: annual management norms subject to ministry limits for specified tobacco, ethyl-alcohol and petroleum products",
+      "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+      "act_article_or_official_section": "Fiscal Code art. 24(13)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-24.json",
+      "source_text_sha256": "9e3e5e60098ec37f768fbc2489f471d54bc559ad177a216986676f86be21df64",
+      "source_context": "(13) Deducerea reziduurilor, deșeurilor și perisabilității naturale se permite în limitele aprobate anual de către conducătorii întreprinderilor, dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun de la pozițiile tarifare 240210000, 240220, 240290000, 2403, 2404 și limitele stabilite de Ministerul Agriculturii și Industriei Alimentare pentru produsele din alcool etilic de la pozițiile tarifare 2207 și 2208, precum și limitele stabilite de Ministerul Infrastructurii și Dezvoltării Regionale pentru produsele petroliere.",
+      "quote_matches_source_after_layout_normalization": true,
+      "writer_retained_context_recheck_date": "2026-10-31",
+      "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+      "independent_review": "PENDING focused011/012recheck and whole-country review"
     }
   ],
   "old_topic_destinations": [
@@ -8728,5 +8760,6 @@
     "complete_destination_table": "ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.json",
     "units": 95,
     "status": "WRITER MAPPING ONLY; current scope correction supplied; independent whole-country review pending"
-  }
+  },
+  "new_bytes": 101217
 }
