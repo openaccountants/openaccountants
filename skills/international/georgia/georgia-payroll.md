@@ -90,7 +90,7 @@ An employee whose only income is salary taxed at source does not file an annual 
 | Breach | Penalty | Source |
 |---|---|---|
 | Tax not withheld | the payer pays the tax itself, with penalties | Tax Code art. 154(2)(b) |
-| Late monthly return, up to 2 months | 5% of the tax on the return for each month or part month, at most 30% | art. 274(1) |
+| Late monthly return, up to 2 months | 5% of the tax on the return (Georgian text of art. 274(1); the English translation still shows an older wording of 5% a month capped at 30%) | art. 274(1) |
 | Late monthly return, more than 2 months | 10% of the tax on the return | art. 274(2) |
 | Understated tax | 10%, 25% or 50% of the understated tax, by size | art. 275 |
 | Late payment | 0.05% of the unpaid tax a day | art. 272(4) |
