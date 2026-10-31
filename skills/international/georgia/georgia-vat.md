@@ -20,6 +20,8 @@ Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next 
 
 - **Taxable person.** Any person who independently carries on an economic activity anywhere, whatever its purpose or result (Tax Code art. 158(1)). Economic activity includes entrepreneurial activity, regular supplies of goods or services (not one-off ones), and use of property for regular income. The supply of a non-residential building is always economic activity (art. 158(2)-(3)).
 - **Compulsory registration.** A taxable person whose VAT-taxable supplies pass GEL 100,000 in any 12 calendar months in a row must apply to register within 2 business days (art. 165(1)). VAT is due from the supply that takes the total over GEL 100,000, including that supply (art. 165(2)).
+- **What counts toward GEL 100,000.** Taxable supplies count. Exempt supplies are left out, except three kinds that do count: exempt financial or immovable property transactions where they are the person's main activity, exports of goods, and the supplies exempt with the right to deduct under art. 172(1)-(2) (art. 165(7)). Services whose place of supply is outside Georgia are not Georgian taxable supplies (art. 159(1)(b), 162^1(1)) and do not count.
+- **Cancelling registration.** A VAT payer may apply to cancel once taxable supplies, counted the same way, were not more than GEL 100,000 in the last 12 calendar months and a year has passed since it last registered (art. 165^1(1)). A cancellation on request takes effect from the first day of the next month (art. 165^1(3)(c)).
 - **Other compulsory cases.** A producer of excisable goods registers before supplying them (art. 165(3)). A non-resident with a fixed establishment in Georgia owes VAT from its first supply and registers by the last day of that month (art. 165(9)).
 - **Voluntary registration** is allowed. The person is a VAT payer from the day of the application (art. 165(6)).
 - **Liable without registration**: importers, tax agents under reverse charge, and non-resident suppliers of services whose place of supply is Georgia when the supply is not reverse charged (art. 165^2(2)).
@@ -33,6 +35,7 @@ Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next 
 | VAT rate | 18% | 2026 | Tax Code art. 166, https://matsne.gov.ge/en/document/view/1043717?publication=247 |
 | Compulsory registration threshold | GEL 100,000 of taxable supplies in any 12 calendar months in a row | 2026 | art. 165(1), same URL |
 | Time to apply after passing the threshold | 2 business days | 2026 | art. 165(1), same URL |
+| Cancelling registration on request | supplies not more than GEL 100,000 in the last 12 months and at least a year since registration | 2026 | art. 165^1(1), same URL |
 | Reorganisation or contribution in kind from a VAT payer | register before the first taxable supply, at the latest 10 days after | 2026 | art. 165(4)-(5), same URL |
 | Accounting period | calendar month | 2026 | art. 167, same URL |
 | Return and payment | by the 15th of the next month | 2026 | art. 168(1), same URL |
@@ -48,7 +51,7 @@ Georgia has one VAT rate, 18%, and a monthly return due by the 15th of the next 
 
 **Taxable amount.** The consideration received or due for the supply, excluding VAT, including any subsidy linked to the price; the same rule applies to barter (art. 164(1)). On import, it is the customs value plus taxes and duties other than VAT and the costs of transport, packing and insurance to the first destination (art. 164^1(1)-(2)).
 
-**Exempt without the right to deduct** (input VAT on them is not recoverable): financial services; lotteries and gambling; supply of land; certain transfers of land and flats to individuals; regulated urban passenger transport; newspapers and magazines (art. 171(1)); medical services, education by educational institutions, child care and social services, funeral services and other items in art. 170(1). The lease of goods whose supply is exempt without deduction is also exempt (art. 171(1)(j)).
+**Exempt without the right to deduct** (input VAT on them is not recoverable): financial services, which include insurance and reinsurance and the services of insurance brokers and agents (art. 15(2)(h)); lotteries and gambling; supply of land; certain transfers of land and flats to individuals; regulated urban passenger transport; newspapers and magazines (art. 171(1)); medical services, education by educational institutions, child care and social services, universal postal services and the sale of postage stamps at face value by the state postal operator, funeral services and other items in art. 170(1) (postal: art. 170(1)(n)-(o)). The lease of goods whose supply is exempt without deduction is also exempt (art. 171(1)(j)).
 
 **Exempt with the right to deduct** (input VAT is recoverable): supply of goods outside Georgia, export and re-export (art. 172(4)(e)); carriage of exported or transit goods and related services (art. 172(1)(h)); international passenger carriage on one transport document (art. 172(1)(i)); organised bringing of foreign tourists into Georgia by tour operators and tourist products supplied to them (art. 172(4)(o)); supplies to diplomatic missions (art. 172(3)); and the other items in art. 172. Imports exempt from VAT are listed in art. 173.
 
@@ -159,7 +162,7 @@ expected:
 ## Ask the client first
 
 1. Is this the country of Georgia (GEL), not the US state?
-2. Taxable supplies in each of the last 12 months, and the date the GEL 100,000 total was passed?
+2. Taxable supplies in each of the last 12 months (including exports of goods and the art. 165(7) items), and the date the GEL 100,000 total was passed?
 3. Is the client a company, an individual entrepreneur, or on micro, small or fixed tax status? Any Free Industrial Zone link?
 4. Which supplies are exports, services to foreign customers, or exempt (financial, land, medical, education)?
 5. Which services are bought from suppliers outside Georgia?
@@ -169,10 +172,10 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 63, 85, 92, 156-181^1, 272-275, 282 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 15, 63, 85, 92, 156-181^1, 272-275, 282 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
 | Tax Code of Georgia, Georgian text, publication 247 (cross-check of arts. 165, 166, 168, 171, 172) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 
-Not yet confirmed: arts. 170-172 were amended by laws of June and November 2025 that the English translation does not show in full, so the full exemption lists were read only in summary (the items named above appear in both texts); the Minister of Finance rules on non-resident suppliers to consumers (art. 165^2(2)(e)), reverse-charge reporting (art. 161(4)) and tax invoices (art. 180(5)); whether residential lease is taxable (not listed among the exemptions in arts. 170-172 as read); the old version blocked input VAT on cars and fuel for personal use, which art. 178 does not list (deduction then follows the use test in art. 175); Virtual Zone and Free Industrial Zone rules; the rs.ge return boxes; refund procedure under art. 63; excise and wine rules.
+Not yet confirmed: arts. 170-172 were amended by laws of June and November 2025 that the English translation does not show in full, so the full exemption lists were read only in summary (the items named above appear in both texts); the Minister of Finance rules on non-resident suppliers to consumers (art. 165^2(2)(e)), reverse-charge reporting (art. 161(4)) and tax invoices (art. 180(5)); whether residential lease is taxable (not listed among the exemptions in arts. 170-172 as read); the old version blocked input VAT on cars and fuel for personal use, which art. 178 does not list (deduction then follows the use test in art. 175); Virtual Zone and Free Industrial Zone rules; the rs.ge return boxes; refund procedure under art. 63; excise and wine rules; the exchange rate for supplies invoiced in foreign currency (the old version named the National Bank of Georgia rate; the article was not read).
 
 <!-- openaccountants-cta-block -->
 
