@@ -21,7 +21,7 @@ Figures are for tax year 2026 (calendar year 2026 for income tax, USC and VAT th
 
 What this skill does not cover, with where to go instead:
 
-- VAT returns, rates and reverse charge: the skill **ireland-vat-return**.
+- VAT returns, rates and reverse charge: the skill **ie-vat-return**.
 - Corporation Tax computations, preliminary tax, close-company surcharges in detail, start-up relief (s.486C), R&D credit, Knowledge Development Box, Pillar Two: the skill **ie-corporation-tax**.
 - PRSI rates (they change each October), payroll operation, benefit in kind.
 - Immigration permissions for non-EEA founders, bank account opening, shareholders' agreements, funds (ICAV, ILP), listing on Euronext Dublin, and sector licensing beyond signposting.
@@ -51,7 +51,7 @@ What this skill does not cover, with where to go instead:
 3. **If a sole trader or partnership:** register a business name with the CRO within one month of adopting any name other than the owner's true name(s), then register with Revenue (TR1 or eRegistration) for Income Tax, and for VAT, employer PAYE and RCT if they apply.
 4. **If a company:** pick the company type; confirm at least one EEA-resident director or arrange a section 137 bond or a section 140 certificate; appoint a secretary (not the sole director); draft the constitution; file the incorporation with the CRO (Form A1 on CORE; fees and screens: **check**).
 5. **After incorporation:** keep the company's own beneficial ownership register and file with the RBO within 5 months; register with Revenue (TR2 or ROS through an agent) for Corporation Tax and, as needed, VAT, employer PAYE (compulsory if the directors are paid) and RCT.
-6. **Diary the first compliance dates:** first annual return to the CRO; first Corporation Tax return and preliminary tax (see ie-corporation-tax); VAT returns (see ireland-vat-return); Form 11 for self-employed individuals and proprietary directors.
+6. **Diary the first compliance dates:** first annual return to the CRO; first Corporation Tax return and preliminary tax (see ie-corporation-tax); VAT returns (see ie-vat-return); Form 11 for self-employed individuals and proprietary directors.
 7. **Record the reasons.** Write down why the vehicle was chosen and the facts it depends on (profit level, drawings, risk), so the choice can be revisited when they change.
 
 ## Choosing the vehicle
@@ -130,7 +130,7 @@ A Tax Reference Number is not issued automatically on incorporation. You must re
 - **Not eligible for eRegistration** ([Revenue: eRegistration](https://www.revenue.ie/en/starting-a-business/registering-for-tax/eregistration.aspx)) include companies that have no Irish-resident directors and unincorporated bodies and non-profits not represented by an agent. They use the paper TR forms.
 - **After registration:** companies, sole traders and partnerships must file returns and pay through ROS.
 - **Employer PAYE** ([Revenue: registration of employers](https://www.revenue.ie/en/employing-people/becoming-an-employer-and-ongoing-obligations/registration-of-employers-for-paye-purposes/index.aspx)): register before paying any employee, and report pay and deductions on or before each payday. A company must register as an employer and operate PAYE on its directors' pay even if it has no other employees; a director of an Irish-incorporated company pays PAYE on director's pay wherever resident.
-- **VAT:** see the thresholds below and the skill ireland-vat-return.
+- **VAT:** see the thresholds below and the skill ie-vat-return.
 - **RCT:** register if the business is a principal contractor in construction, forestry or meat processing (see Revenue's RCT pages).
 - **Tax residence of the company** ([Revenue: company residency rules](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx)): a company incorporated in Ireland on or after 1 January 2015 is tax resident here unless a tax treaty makes it resident in another country. A foreign-incorporated company is resident here if centrally managed and controlled here.
 
@@ -181,7 +181,7 @@ Registration is obligatory when annual turnover (calendar year, excluding VAT) e
 | Distance sales of goods and cross-border telecoms, broadcasting and electronic services to other EU consumers (EU-wide total; supplier established only in Ireland) | €10,000 |
 | Acquisitions of goods from other EU Member States | €41,000 |
 
-A business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland must register whatever its turnover, unless it uses the VAT SME Scheme. Occasional disposals of business assets are left out of annual turnover. Details and returns: ireland-vat-return.
+A business not established in Ireland that supplies taxable goods or services to taxable customers in Ireland must register whatever its turnover, unless it uses the VAT SME Scheme. Occasional disposals of business assets are left out of annual turnover. Details and returns: ie-vat-return.
 
 ### Company law figures (Companies Act 2014)
 
@@ -259,7 +259,7 @@ Two US-resident founders want an Irish LTD to sell software into the EU. Neither
 
 ### Case 5: services business under the VAT threshold
 
-A new consultancy expects services turnover of €40,000 in 2026. Registration is not obligatory because turnover does not exceed €42,500, but it may elect to register (for example to recover VAT on start-up costs, or because its customers are VAT-registered businesses). Once turnover exceeds €42,500 it must register ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). The timing and mechanics are in ireland-vat-return.
+A new consultancy expects services turnover of €40,000 in 2026. Registration is not obligatory because turnover does not exceed €42,500, but it may elect to register (for example to recover VAT on start-up costs, or because its customers are VAT-registered businesses). Once turnover exceeds €42,500 it must register ([Revenue: VAT thresholds](https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx)). The timing and mechanics are in ie-vat-return.
 
 ## When to refuse or refer
 
@@ -282,7 +282,7 @@ A new consultancy expects services turnover of €40,000 in 2026. Registration i
 - Corporation Tax ([Revenue: payment and filing](https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx)): pay preliminary tax by its due date; file the CT1 and Form 46G (Company) and pay any balance by the 23rd of the ninth month after the end of the accounting period, through ROS. Filing late adds a surcharge of 5% of the tax (up to €12,695) if within two months of the deadline, or 10% (up to €63,485) after that, and restricts some reliefs. Late tax carries interest at 0.0219% a day.
 - RBO: file any change to beneficial ownership within 14 days of the date the company's own register had to be updated.
 - Payroll: report pay and deductions to Revenue on or before each payday.
-- VAT returns: see ireland-vat-return.
+- VAT returns: see ie-vat-return.
 
 **Sole trader or partner**
 
@@ -308,7 +308,7 @@ A new consultancy expects services turnover of €40,000 in 2026. Registration i
 - [ ] Revenue registration made by the right route (ROS through an agent, eRegistration, or TR1 / TR2); taxes chosen: Income Tax or Corporation Tax, VAT, employer PAYE (compulsory if directors are paid), RCT.
 - [ ] VAT threshold tested on the correct category; non-established rule considered.
 - [ ] First annual return date, CT1 date, preliminary tax, payroll and VAT dates in the diary.
-- [ ] Companion Skills consulted where needed: ie-corporation-tax and ireland-vat-return.
+- [ ] Companion Skills consulted where needed: ie-corporation-tax and ie-vat-return.
 
 <!-- openaccountants-cta-block -->
 
