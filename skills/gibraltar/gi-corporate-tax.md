@@ -6,8 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.19"
+last_updated: 2026-10-31
+version: "0.20"
 verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
@@ -43,7 +43,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar corporate tax and filing v0.19
+# Gibraltar corporate tax and filing v0.20
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -119,7 +119,7 @@ For the defined apportioned branch head-office expenses, paragraph 2(1)(p) exclu
 
 Where Schedule 3 paragraph 2(1)(a) applies to a dwelling-house or domestic office, identify the part used to produce the trade or profession’s income. The deduction for those premises must not exceed **two-thirds of the rent bona fide paid**, unless the greater-sum exception is justified on the particular circumstances specified in the paragraph. The cap is not an automatic deduction: an unsupported or private amount does not qualify merely because it is below two-thirds. This rule does not create a deduction for imputed rent where no rent was paid. [Schedule 3, paragraph 2(1)(a), printed page 159](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-**Conditional illustration:** assume £18,000 of relevant bona fide rent was paid and a separate supported analysis establishes £9,000 as the income-producing rent amount. The ordinary two-thirds cap is £12,000, so the amount within both those tests is £9,000. If the otherwise eligible amount instead is £14,400 and no greater-sum exception is relied on, the cap leaves £12,000. These are assumed inputs, not a prescribed business-use percentage, a final tax assessment or a conclusion about the recipient’s tax or employee benefits. The [supplementary rent control](../../research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md) checks only that arithmetic.
+**Conditional illustration:** assume £18,000 of relevant bona fide rent was paid and a separate supported analysis establishes £9,000 as the income-producing rent amount. The ordinary two-thirds cap is £12,000, so the amount within both those tests is £9,000. If the otherwise eligible amount instead is £14,400 and no greater-sum exception is relied on, the cap leaves £12,000. These are assumed inputs, not a prescribed business-use percentage, a final tax assessment or a conclusion about the recipient’s tax or employee benefits. The [supplementary rent control](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md) checks only that arithmetic.
 
 #### Non-annual employer contributions to an approved fund
 
@@ -190,11 +190,11 @@ The statutory stock definition extends beyond finished retail goods. It includes
 
 **Example 1: qualifying purchaser.** Assume a discontinued trade transfers its stock for £25,000 cash and non-cash consideration independently valued at £5,000. The buyer intends to carry on the relevant Gibraltar trade and the stock cost is deductible in the buyer's taxable computation. Section 21(1)(a)'s value is **£30,000**. A £40,000 open-market estimate is not substituted merely because it is higher, though other applicable anti-avoidance/connected-party rules must still be checked. These facts and consideration values are assumed, not statutory safe harbours.
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 **Example 2: other stock.** Assume the paragraph (a) buyer/deductibility conditions are not met. Supported open-market values at cessation are £18,000 for finished goods and £12,000 for qualifying unfinished stock. The section 21(1)(b) total is **£30,000**, even if the actual disposal proceeds are £20,000. The £10,000 difference is a valuation reconciliation, not automatically the final taxable gain or tax bill; reconcile it to the accounts without counting a receipt twice.
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 Recommended working papers: cessation date and stock/WIP inventory; buyer's trade and deductible-cost evidence where paragraph (a) is used; contract and cash/non-cash consideration; market valuation where paragraph (b) applies; and the bridge to the cessation accounts. Keep stock valuation separate from capital-allowance disposals and transferred-loss eligibility. Interactions with connected-party provisions, actual valuation disputes and return-field mechanics remain case-specific review work. [Sections 20A–21; Schedule 3 Part II](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -212,7 +212,7 @@ For accounting periods ending **on or after 31 July 2024**, section 20(6) limits
 
 Example: assume a designated company has a Schedule 3 profit measure of £100,000 and £80,000 of eligible carried-forward losses, all outside the protected periods below, with no insolvency exception. The cap is £50,000; set off £50,000, leaving £50,000 of profits before other applicable adjustments and £30,000 of unused losses. At exactly £50,000 of eligible losses the entire pool fits the cap. This calculation does not establish the company's status or eligibility. [Section 20(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 
 The restriction does not apply to losses incurred in periods ending **from 1 July 2021 through 30 June 2023**. Designated persons must use these losses before losses from other periods. Identify the loss period's **end date**: a period ending 30 June 2023 falls within the window; one ending 1 July 2023 does not. Section 20(8) separately excludes the specified designated companies subject to insolvency proceedings. Neither exception removes the other loss eligibility conditions. [Section 20(8)–(10)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
@@ -241,7 +241,7 @@ No set-off is given under section 20A(1) if, within the specified three-year per
 
 The instalment example in section 4 also recomputes under its stated, verified basis-liability assumptions:
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 ## Deadlines and filing
 
@@ -293,7 +293,7 @@ Use the workbook currently linked from the ITO corporate page, and prepare the c
 
 Estimate the **whole period’s expected corporation-tax liability** reasonably from the information now available. Enter **half that estimate as each reduced payment on account**, not half the reduction from the previous liability. Retain the forecast computation and its assumptions. Section 39(6) still requires the Commissioner’s discharge/reduction decision; completion or delivery of the form does not itself grant the reduction. [CT4 instructions, rows 30–32 and 94–102](https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls); [section 39(5)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-**Conditional forecast illustration:** assume the verified original basis liability is £24,000, giving two £12,000 payments before reduction, and the properly computed current-period forecast is £10,000. CT4’s requested amount is **£5,000 per payment**, totalling £10,000; the aggregate proposed reduction is £14,000. If the Commissioner grants those amounts and the final period liability is later £14,000, £4,000 remains to reconcile before any surcharge calculation. This does not establish the Schedule 10 allocation, approval, original due dates or surcharge allocation. The [supplementary controls](../../research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md) recompute these assumed amounts, including a zero-estimate request; a zero estimate is not an automatic discharge.
+**Conditional forecast illustration:** assume the verified original basis liability is £24,000, giving two £12,000 payments before reduction, and the properly computed current-period forecast is £10,000. CT4’s requested amount is **£5,000 per payment**, totalling £10,000; the aggregate proposed reduction is £14,000. If the Commissioner grants those amounts and the final period liability is later £14,000, £4,000 remains to reconcile before any surcharge calculation. This does not establish the Schedule 10 allocation, approval, original due dates or surcharge allocation. The [supplementary controls](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md) recompute these assumed amounts, including a zero-estimate request; a zero estimate is not an automatic discharge.
 
 The declaration requires signature, date, signatory name and designation. The form says a photocopied signature is unacceptable; except where a liquidator or administrator is appointed, the signer must be authorised for the company. It also calls for an adviser/representative’s details when signing for the company. Preserve the signed claim, evidence of authority and actual decision. [CT4 declaration, rows 102–118](https://www.gibraltar.gov.gi/new/sites/default/files/HMGoG_Documents/CT4%20-%20Claim%20to%20reduce%20payments%20on%20account%20for%20an%20accounting%20period.xls).
 
@@ -337,7 +337,7 @@ For this rule, paragraph (6) includes factual control or common control, and in 
 
 **Ownership example:** assume one equal-right class, no indirect holdings and 1,000 total shares. Holdings of 500 give 50%; 510 give 51%. The second passes the stated numerical limb; the first still needs the factual-control inquiry. Even established close relationship does not itself prove the remaining paragraph (5) conditions or a PE.
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 ### Contracting agents and subsidiaries
 
@@ -357,7 +357,7 @@ Article 21 takes priority for defined offshore exploration/exploitation activiti
 
 **Offshore example:** assume enterprise A performs 28 counted days, an associated enterprise performs 12 substantially similar days, and 10 of those days coincide with A's activity. Within the relevant window, the aggregate is **28 + 12 − 10 = 30 days**. One further non-overlapping day gives 31 and fails that paragraph (4) exception. This does not resolve paragraph (5), other PE rules, domestic charge or the distinct employee rules in the [employment treaty Guide](gi-uk-employment-pensions-treaty.md).
 
-The [original executable control and assumptions](../../research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
+The [original executable control and assumptions](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md) are preserved in supplementary research; the method and numerical explanation here remain unchanged.
 
 This section establishes treaty rules, not a case-specific PE clearance, home-office ruling or profit-allocation approval. Current registration/return treatment for a particular non-resident enterprise, project-timing interpretations, valuation and internal-dealing evidence, other corridors and Article 28 anti-abuse application remain subject to further source and professional review.
 
@@ -441,18 +441,18 @@ Section 20(11) permits regulations changing the percentage, designations and tre
 
 The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
 
-- [Rates of Tax Rules, rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf)
-- [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf)
-- [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf)
-- [Articles 4 and 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force)
-- [Article 5(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment)
-- [Article 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-7-business-profits)
-- [Article 9](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-9-associated-enterprises)
-- [Article 21(1)–(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities)
-- [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate)
-- [ITO entertainment guidance, printed pages 1 and 3](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf)
-- [ITO downloads page](https://www.gibraltar.gov.gi/income-tax-office/downloads-ito)
-- [ITO allocation table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf)
+- [Rates of Tax Rules, rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf); read on 2026-10-28.
+- [ITO, Guidance Notes for Companies, August 2025, pp2–3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf); read on 2026-10-22.
+- [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); read on 2026-10-28.
+- [Articles 4 and 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force); read on 2026-10-28.
+- [Article 5(1)–(3)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment); read on 2026-10-28.
+- [Article 7](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-7-business-profits); read on 2026-10-28.
+- [Article 9](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-9-associated-enterprises); read on 2026-10-28.
+- [Article 21(1)–(5)](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities); read on 2026-10-28.
+- [ITO corporate guidance](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate); read on 2026-10-28.
+- [ITO entertainment guidance, printed pages 1 and 3](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf); read on 2026-10-28.
+- [ITO downloads page](https://www.gibraltar.gov.gi/income-tax-office/downloads-ito); read on 2026-10-22.
+- [ITO allocation table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf); read on 2026-10-28.
 
 Earlier source reads are preserved at 22 October 2026. The Act, corporate Rates Rules, cited UK treaty articles, entertainment guidance, allocation table and current ITO corporate/contact/CT4 material were read for the 28 October writer ledger; the August 2025 company-guidance PDF retains its earlier read scope. The dated research records retain statutory locators and source limitations. Inclusion of the allocation table or undated entertainment guidance does not remove the specific limitations noted above. The arithmetic blocks verify only the stated examples; they do not settle the mixed-loss cap interpretation or establish taxpayer eligibility.
 
@@ -465,7 +465,7 @@ Earlier source reads are preserved at 22 October 2026. The Act, corporate Rates 
 | [ITO corporate page](https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate) | Current CT4 link, expired-period restriction and surcharge warning | 2026-10-28 |
 | [ITO contact page](https://www.gibraltar.gov.gi/contacts/income-tax-office-76) | Corporate Tax Section: CT1/CT2 returns and general-query contacts | 2026-10-28 |
 
-The [complete writer rule ledger and old-topics map](../../research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md) cover the inherited and new rules with exact primary-source quotes, dates and full original-paragraph destinations. The [fresh country review](../../research/gibraltar-2026/final-country-review-2026-10-28/review.md) and its bounded repair closure identify the exact revisions checked; the earlier full/delta reviews retain their recorded scopes. Professional attestation remains pending.
+The [complete writer rule ledger and old-topics map](../../evidence/research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md) cover the inherited and new rules with exact primary-source quotes, dates and full original-paragraph destinations. The [fresh country review](../../evidence/research/gibraltar-2026/final-country-review-2026-10-28/review.md) and its bounded repair closure identify the exact revisions checked; the earlier full/delta reviews retain their recorded scopes. Professional attestation remains pending.
 
 Not yet confirmed: section 16(6) extended-period boundaries; the Schedule 10 table’s specific anomalous dates; Schedule 3 paragraph 9(6) disposal wording and the paragraph 2(1)(o) Gazette-guideline identity; other capital-allowance/claim interactions and administrative confirmation of the labelled mixed-loss reading described above. The new published CT1/CT2 contact does not establish a tested filing or a CT4 route.
 

@@ -6,8 +6,8 @@ jurisdiction: GI
 category: cross-border
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-22
-version: 0.2
+last_updated: 2026-10-31
+version: "0.3"
 verified_by: pending
 sources:
   - url: "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf"
@@ -21,11 +21,16 @@ sources:
     as_of: "2026-10-22"
 ---
 
-# Gibraltar–Spain tax residence v0.2
+# Gibraltar–Spain tax residence v0.3
 
 > **Source-cited draft.** Independent source review and professional attestation are pending. Residence, source and relief conclusions require the actual facts and applicable domestic laws.
 
-## Agreement, territory and dates
+> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
+
+## Who this applies to
+
+### Agreement, territory and dates
+
 
 The UK signed the agreement with Spain on **4 March 2019** as the state responsible for Gibraltar's external relations. It entered into force on **4 March 2021**. Article 9 limits its UK-side application to Gibraltar; it is not the UK–Spain income-tax treaty for ordinary UK residents. [Official treaty cover, preamble and Article 9](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf); [BOE status](https://www.boe.es/buscar/act.php?id=BOE-A-2021-3947).
 
@@ -33,7 +38,17 @@ Article 8 applies Article 2(1)–(2) to taxable periods beginning on or after en
 
 The November 2021 Gibraltar FAQ identifies ordinary individual application from **1 January 2022 in Spain** and **1 July 2021 in Gibraltar**, and company accounting periods starting on/after **4 March 2021**. It is interpretive guidance, not replacement treaty wording. [FAQ, printed pages 7–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/FAQs%20-%20International%20Tax%20Agreement%20-%20Spain.pdf).
 
-## Individuals: domestic residence first
+## Rates, bands and thresholds
+
+| Rule | Figure and conditions | Official source |
+|---|---|---|
+| Dual-resident individual overnight limb, Article 2(1)(b) | More than 183 Spanish nights; defined sporadic absences and alternative family/home/asset tests below | https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf |
+| Entity historical exception, Article 2(2)(b) | Only specified pre-16 November 2018 entities meeting all cumulative historical conditions below; not a new 2026 election | https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf |
+
+## The base
+
+### Individuals: domestic residence first
+
 
 Article 2(1)(a) begins with domestic residence law and certificates. Apply the paragraph (b) conflict rules where the person is resident in **both** jurisdictions. Do not use the treaty's overnight count as a complete substitute for either domestic test. [Article 2(1)(a)–(b)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
@@ -50,13 +65,15 @@ For a dual resident, **any one** of these paragraph (b)(i) conditions produces r
 
 If those provisions are inconclusive, paragraph (b)(ii) presumes residence only in Spain unless reliable evidence establishes **both** a permanent home for exclusive use in Gibraltar **and** remaining in Gibraltar for more than 183 days. The treaty uses different words for this day test and the earlier overnight test. Do not assume a Gibraltar lease alone rebuts the presumption, or that rebutting it cancels the special relocation rules below. Cat 2, HEPSS and other named special schemes do not themselves prove Gibraltar residence for this agreement. [Article 2(1)(b)(ii), (c) and (e)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
-### Relocation rules are a separate screen
+#### Relocation rules are a separate screen
 
 Article 2(1)(c)(i) states that Spanish nationals moving residence to Gibraltar after signature are considered resident only in Spain. The exact prior residence and move history must be checked; do not describe nationality alone, without the move condition, as the rule. For non-Spanish nationals establishing new Gibraltar residence, paragraph (c)(ii) retains Spanish residence for the move tax period and **four subsequent tax years**. It excepts a non-Spanish national who spends less than one complete tax year in Spain and a registered Gibraltarian who spends less than four years in Spain. Registered status uses the statutory definition in paragraph (d), not merely possession of a British passport. [Article 2(1)(c)–(d)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
 **Timing conflict to resolve:** FAQ printed page 10 gives a registered-Gibraltarian move in 2026 with retention through 2029. The treaty's move-year-plus-four wording produces **2030** if a 2026 move is within that rule. Do not adopt the shorter example without a supported legal determination. Prior-year/transitional cases and exceptions require review. [FAQ page 10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/FAQs%20-%20International%20Tax%20Agreement%20-%20Spain.pdf); [Article 2(1)(c)(ii)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
-## Entities: four independent Spanish-residence triggers
+
+### Entities: four independent Spanish-residence triggers
+
 
 For the Gibraltar-connected legal persons, entities and arrangements described in Article 2(2)(a), any of the following establishes residence only in Spain under that provision:
 
@@ -67,7 +84,7 @@ For the Gibraltar-connected legal persons, entities and arrangements described i
 
 [Article 2(2)(a)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf). Incorporation and a registered office alone do not answer these tests. Assess actual management and all relevant rights, not just nominal share ownership. Spanish entities moving residence to Gibraltar after entry into force retain residence only in Spain under paragraph (e). [Article 2(2)(e)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
-### Historical exception: narrow and cumulative
+#### Historical exception: narrow and cumulative
 
 Paragraph (b) disapplies **only management and control triggers (iii)/(iv)** for qualifying entities incorporated before **16 November 2018** for which trigger (iii) or (iv) was met at **31 December 2018**, and which satisfied the other historical conditions at that date. It does not disapply the Spanish-asset or Spanish-income triggers. All the following need evidence:
 
@@ -87,7 +104,31 @@ Paragraph (b) disapplies **only management and control triggers (iii)/(iv)** for
 
 Paragraph (d) requires an authority-provided qualifying-entity list and ownership/management details, with a treaty deadline of **31 March 2020**. That historic date predates entry into force. The list's actual submission, treatment and current confirmation procedure are not established here. Do not turn it into a new 2026 application deadline or certify an entity solely from a self-completed ratio calculation. [Article 2(2)(c)–(d)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
-## Conditional worked checks
+## Deadlines and filing
+
+Keep the actual domestic filing, claim, payment and appeal dates separate from the treaty tests and authority-cooperation dates below. Current case-specific submission channels and implementation remain unconfirmed. Do not treat this Guide or a completed working paper as a submitted return, accepted claim or deadline extension.
+
+## Penalties and interest
+
+This Guide does not compute a separate penalty or interest amount for the stated job. Keep the domestic return/payment and dispute requirements in the linked taxpayer Guides separate from the allocation, formation or relief test. The unresolved procedural limits remain listed in Sources. This is a scope boundary, not a finding that no penalty applies.
+
+## Cross-border points
+
+### Relief, information exchange and disputes
+
+
+Article 2(3) requires competent authorities to eliminate relevant double taxation **under domestic law**. It does not provide a complete rate-limitation or automatic-refund formula. Use the separate [Gibraltar domestic foreign-tax relief Guide](gi-foreign-tax-relief.md) and establish Spanish relief under Spanish law. A Spanish treaty-residence result does not, without source-tax analysis, prove zero Gibraltar tax on Gibraltar work or property. [Article 2(3)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
+
+Article 3 provides information exchange, collection assistance and document service, including for persons not resident in either party. Its specified annual worker-information exchanges use an **80 km municipality-radius definition** in paragraph (15); that geographical condition is not an exemption from all information exchange. Separate six-monthly vehicle/vessel/aircraft exchanges and ownership/registry access also apply within their stated scope. These are authority cooperation duties, not new taxpayer return deadlines. [Article 3](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
+
+Article 8 gives different historical reach for automatic information exchange (periods from **1 January 2014**) and other exchange (periods/charges from **1 January 2011**). Do not apply those dates to backdate the ordinary residence rules. Article 6 imports the stated confidentiality/data safeguards. [Articles 6 and 8](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
+
+The Joint Coordination Committee endeavours to resolve interpretation/application issues where all its authorities decide to do so. That is not guaranteed arbitration or an automatic stay of assessments. Establish the current referral channel and preserve domestic appeal/claim deadlines independently. No universal taxpayer appeal deadline is supplied by Article 5. [Articles 2(1)(b)(iii) and 5](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
+
+## Two worked examples that recompute
+
+### Conditional worked checks
+
 
 **Overnight allocation:** assume dual domestic residence, 170 Spanish nights, 160 Gibraltar nights and 35 nights elsewhere that have been legally established to be sporadic absences covered by paragraph (b)(i)(A). Spain has the larger overnight count; allocating those 35 nights gives **205**, exceeding 183. This calculation does not establish that all travel abroad is sporadic, resolve an equal-count case or replace the other residence tests. [Article 2(1)(b)(i)(A)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
 
@@ -129,22 +170,30 @@ expected:
   gibraltar_above_limit_percent: 76
 ```
 
-## Relief, information exchange and disputes
+## Ask the client first
 
-Article 2(3) requires competent authorities to eliminate relevant double taxation **under domestic law**. It does not provide a complete rate-limitation or automatic-refund formula. Use the separate [Gibraltar domestic foreign-tax relief Guide](gi-foreign-tax-relief.md) and establish Spanish relief under Spanish law. A Spanish treaty-residence result does not, without source-tax analysis, prove zero Gibraltar tax on Gibraltar work or property. [Article 2(3)](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
+### Evidence, open work and output
 
-Article 3 provides information exchange, collection assistance and document service, including for persons not resident in either party. Its specified annual worker-information exchanges use an **80 km municipality-radius definition** in paragraph (15); that geographical condition is not an exemption from all information exchange. Separate six-monthly vehicle/vessel/aircraft exchanges and ownership/registry access also apply within their stated scope. These are authority cooperation duties, not new taxpayer return deadlines. [Article 3](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
-
-Article 8 gives different historical reach for automatic information exchange (periods from **1 January 2014**) and other exchange (periods/charges from **1 January 2011**). Do not apply those dates to backdate the ordinary residence rules. Article 6 imports the stated confidentiality/data safeguards. [Articles 6 and 8](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
-
-The Joint Coordination Committee endeavours to resolve interpretation/application issues where all its authorities decide to do so. That is not guaranteed arbitration or an automatic stay of assessments. Establish the current referral channel and preserve domestic appeal/claim deadlines independently. No universal taxpayer appeal deadline is supplied by Article 5. [Articles 2(1)(b)(iii) and 5](https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf).
-
-## Evidence, open work and output
 
 For individuals obtain domestic residence analyses/certificates, nationality and registered status, full move history, dated travel records, home availability, family/dependency facts and Spanish-law asset valuations. For entities obtain formation/management records, assets and rights by country, source-income workings, all control rights, related-party turnover and historic business/tax evidence. Recommendations identify the necessary facts; they are not a prescribed treaty application form.
 
 Deliver separate conclusions for domestic residence, treaty residence, source taxation, relief and filings. Keep the timing conflict, historical list procedure, Spanish definitions and claims/referral channels open until resolved. BOE currently displays the initial text as its latest update; ongoing treaty status and any later instruments must still be checked for the case. This Guide does not establish comprehensive Gibraltar cross-border coverage or professional attestation.
 
-## Disclaimer
+## Sources
+
+### Disclaimer
+
 
 General tax and accounting reference material. Qualified Gibraltar and Spanish advisers must verify the facts, applicable law and procedural deadlines before filing, paying or acting.
+
+### Preserved source-read provenance
+
+The dates below preserve the source reads recorded in the existing Guide. This structural repair does not claim a fresh verification of every old rule. New executable controls repeat the existing scenario assumptions; their exact responsive source excerpts and 31 October read scopes are recorded in the country repair ledger.
+
+| Source | Official URL | Recorded read date |
+|---|---|---|
+| Treaty Series 78/2024: UK–Spain agreement regarding Gibraltar, Articles 2–9 | https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf | 2026-10-22 |
+| Spanish BOE treaty text and entry-into-force record | https://www.boe.es/buscar/act.php?id=BOE-A-2021-3947 | 2026-10-22 |
+| Gibraltar official interpretive FAQ, November 2021, timing examples | https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/FAQs%20-%20International%20Tax%20Agreement%20-%20Spain.pdf | 2026-10-22 |
+
+Not yet confirmed: FAQ/treaty timing conflict, complete Spanish domestic definitions/valuation/filing and relief, historical entity list, exception eligibility and current referral/claim channels remain unresolved. The country remains partial; this continuation does not grant professional attestation.

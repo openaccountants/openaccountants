@@ -6,8 +6,8 @@ jurisdiction: GI
 category: transfer-pricing
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.8"
+last_updated: 2026-10-31
+version: "0.9"
 verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
@@ -111,7 +111,7 @@ Exceeding borrowing costs not deductible under paragraphs 18(3)–(7) may be car
 
 **Ordinary illustration:** assume an established in-scope taxpayer, €4,000,000 exceeding borrowing costs, €6,000,000 tax EBITDA and an independently established applicable group-wide floor of €3,000,000, with no competing group claim, paragraph 18(7) alternative, paragraph 18(6) case or other restriction. Thirty percent of EBITDA is €1,800,000; the ordinary limit is €3,000,000. Deduct €3,000,000 under this Part and carry forward €1,000,000 disallowed costs. All inputs are expressed in euros solely to illustrate the statutory comparison; this is not a sterling conversion or final company-tax assessment.
 
-**Equality boundary:** on the same scope assumptions, €3,000,000 exceeding borrowing costs and €10,000,000 tax EBITDA put both limbs at €3,000,000. Nothing is disallowed by this limit. Eligibility, other deduction restrictions and the actual group-wide amount still require proof. The [two supplementary arithmetic controls](../../research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md) retain these illustrations without adding extra main examples.
+**Equality boundary:** on the same scope assumptions, €3,000,000 exceeding borrowing costs and €10,000,000 tax EBITDA put both limbs at €3,000,000. Nothing is disallowed by this limit. Eligibility, other deduction restrictions and the actual group-wide amount still require proof. The [two supplementary arithmetic controls](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md) retain these illustrations without adding extra main examples.
 
 ### Aggregate connected-expense cap
 
@@ -239,8 +239,8 @@ If only £12,000 of that dividend is actually set off, this provision protects o
 | Source | Actual read scope | Read on |
 |---|---|---|
 | [Income Tax Act 2010, 23 March 2026 consolidation](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf) | Sections 22, 40(1)–(4), 42–43; Schedule 4 paragraphs 2, 4–5, 7–11, targeted Part III definitions and complete Part V paragraph 18(1)–(8); not the whole 297-page Act newly read | 2026-10-28 |
-| Same Act, sections 22, 40, 42–43 and Schedule 4 earlier methods | Earlier source reads and completed reviews retained in the [lending/appeals full review](../../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); this date does not claim a fresh reread of every old provision | 2026-10-22 |
+| Same Act, sections 22, 40, 42–43 and Schedule 4 earlier methods | Earlier source reads and completed reviews retained in the [lending/appeals full review](../../docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md); this date does not claim a fresh reread of every old provision | 2026-10-22 |
 
-The [complete rule ledger and old-topics map](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md) and [independent country review records](../../research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions checked, findings and bounded repair closure. Earlier reviews retain their stated scopes. This remains a source-cited draft; professional attestation is pending.
+The [complete rule ledger and old-topics map](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-connected-party-pricing-and-interest.md) and [independent country review records](../../evidence/research/gibraltar-2026/ordinary-completion-2026-10-28/independent-review/) identify the exact revisions checked, findings and bounded repair closure. Earlier reviews retain their stated scopes. This remains a source-cited draft; professional attestation is pending.
 
 Not yet confirmed: complex control/associate attribution and the paragraph 11 relative cross-reference; the paragraph 5 investment-definition successor; disputed exemptions and overlapping restrictions; paragraph 18(6)'s reference to 19(3), group-wide floor allocation, foreign-currency conversion, capacity amounts and current return fields; wider international documentation/reporting and other later-Part regimes. The ordinary paragraph 18 limit and separate carry-forward periods above do not resolve those specific questions.

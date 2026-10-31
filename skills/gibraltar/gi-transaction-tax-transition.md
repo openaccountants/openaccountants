@@ -6,8 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.9"
+last_updated: 2026-10-31
+version: "0.10"
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf"
@@ -47,7 +47,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 
-# Gibraltar goods transaction-tax transition v0.9
+# Gibraltar goods transaction-tax transition v0.10
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -253,7 +253,7 @@ expected:
   assumed_tax_saving: 900
 ```
 
-The preserved production, cost-floor and rate-sensitivity illustrations and the third original executable check remain in [the calculation supplement](../../research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md). They use assumed classifications and do not establish a real commodity rate.
+The preserved production, cost-floor and rate-sensitivity illustrations and the third original executable check remain in [the calculation supplement](../../evidence/research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md). They use assumed classifications and do not establish a real commodity rate.
 
 ## Ask the client first
 

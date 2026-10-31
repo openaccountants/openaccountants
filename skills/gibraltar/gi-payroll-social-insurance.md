@@ -6,8 +6,8 @@ jurisdiction: GI
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.15"
+last_updated: 2026-10-31
+version: "0.16"
 verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf"
@@ -85,7 +85,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar payroll and social insurance v0.15
+# Gibraltar payroll and social insurance v0.16
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -101,11 +101,11 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 
 For the ordinary earnings-related class, the published schedule effective **1 July 2026** gives:
 
-| Contributor | Rate | Monthly minimum | Monthly maximum |
-|---|---:|---:|---:|
-| Employee | 10% | £62.11 | £176.76 |
-| Employer | 18% | £138.55 | £243.65 |
-| Self-employed, separate SE class | 20% | £131.95 | £232.05 |
+| Contributor | Rate | Monthly minimum | Monthly maximum | Official source |
+|---|---:|---:|---:|---|
+| Employee | 10% | £62.11 | £176.76 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| Employer | 18% | £138.55 | £243.65 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| Self-employed, separate SE class | 20% | £131.95 | £232.05 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
 
 [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf). The schedule contains separate pensioner, married-woman, trainee and exemption classes. Do not assign them from age or job title without confirming the issued class and eligibility.
 
@@ -113,13 +113,13 @@ For the ordinary earnings-related class, the published schedule effective **1 Ju
 
 For a confirmed full monthly contribution period, the same official schedule provides:
 
-| Issued class | Employee contribution | Employer contribution |
-|---|---:|---:|
-| D1, detached worker paying SI | 10%, minimum £62.11, maximum £176.76 | 18%, minimum £138.55, maximum £243.65 |
-| MW, married-woman option | £69.12 | 20%, minimum £78.65, maximum £173.98 |
-| PN, pensioner (60 / 5E entries) | Exempt | 18%, minimum £138.55, maximum £243.65 |
-| T2, trainee second employment (E272) | 10%, maximum £16.99 | Exempt |
-| Exempt group: DW, SM, SP, SW, SX, EZ, XX | Exempt | Exempt |
+| Issued class | Employee contribution | Employer contribution | Official source |
+|---|---:|---:|---|
+| D1, detached worker paying SI | 10%, minimum £62.11, maximum £176.76 | 18%, minimum £138.55, maximum £243.65 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| MW, married-woman option | £69.12 | 20%, minimum £78.65, maximum £173.98 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| PN, pensioner (60 / 5E entries) | Exempt | 18%, minimum £138.55, maximum £243.65 | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| T2, trainee second employment (E272) | 10%, maximum £16.99 | Exempt | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
+| Exempt group: DW, SM, SP, SW, SX, EZ, XX | Exempt | Exempt | [Schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf) |
 
 Select the issued class and its supporting eligibility evidence. The table is not authority to self-award an exemption. D1 and DW differ; PN employment and XX pension income differ. T2 has no minimum printed in its row. [2026/27 schedule, monthly columns](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf).
 
@@ -143,10 +143,10 @@ For cessation lump sums, the notes require an **ITO directive before payment**, 
 
 Two numerical discrepancies were checked against the rendered tables:
 
-| Case | Employer-note illustration | Current-linked table |
-|---|---|---|
-| Daily pay £35, code 24 | £0.98 daily PAYE in section 4 | £0.96 in Daily Part 1, page 1 |
-| Monthly £1,623.50, code 35, ordinary ER | £144.82 PAYE and £176.66 employee SI in section 9 | £125.89 PAYE and £162.35 employee SI in Monthly Part 1, page 14, £1,623–£1,624 row |
+| Case | Employer-note illustration | Current-linked table | Official source |
+|---|---|---|---|
+| Daily pay £35, code 24 | £0.98 daily PAYE in section 4 | £0.96 in Daily Part 1, page 1 | [Notes](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf); [current-linked table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf) |
+| Monthly £1,623.50, code 35, ordinary ER | £144.82 PAYE and £176.66 employee SI in section 9 | £125.89 PAYE and £162.35 employee SI in Monthly Part 1, page 14, £1,623–£1,624 row | [Notes](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf); [current-linked table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf) |
 
 Sources: [employer notes](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf), [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf), [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf). Do not copy the notes' historical illustration as a current table cell or silently blend the two. The table-linked calculations below are conditional on confirmation of the applicable table/code. The monthly SI cell also agrees with 10% of £1,623.50; that arithmetic does not resolve every PAYE discrepancy.
 
@@ -157,6 +157,7 @@ The daily table's footer directs the reader to contact PAYE where a tax amount i
 Assume confirmed code 24, three relevant worked days and £105 pay, with ITO/table applicability established. The daily equivalent is £35; the table cell is £0.96; the deduction is **£2.88**, not the notes' £2.94. This is a PAYE calculation only; SI uses its separate contribution-period rules.
 
 These checks validate arithmetic after a table lookup; they do not independently validate every table cell, settle the published discrepancy, or implement a complete PAYE engine. Retain the exact table page, row, code and any ITO direction with the payroll working paper.
+
 
 ## The base
 
@@ -486,22 +487,22 @@ expected:
 
 The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
 
-- [ITO employers, obligations section](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers)
-- [2025/26 P8 guidance, pages 7–11 and 17](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf)
-- [Regulations 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf)
-- [Employer notes, sections 3–5 and 9–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf)
-- [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf)
-- [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf)
-- [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf)
-- [Social Security (Insurance) Act, section 7(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf)
-- [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf)
-- [Employment Injuries regulations 5(1)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf)
-- [Order paragraphs 2–4; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf)
-- [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland)
-- [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers)
-- [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822)
-- [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837)
-- [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance)
+- [ITO employers, obligations section](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers); read on 2026-10-22.
+- [2025/26 P8 guidance, pages 7–11 and 17](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf); read on 2026-10-22.
+- [Regulations 2–3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf); read on 2026-10-22.
+- [Employer notes, sections 3–5 and 9–10](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf); read on 2026-10-22.
+- [daily table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf); read on 2026-10-22.
+- [monthly table](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf); read on 2026-10-22.
+- [ITO 2026/27 contribution-class schedule](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf); read on 2026-10-22.
+- [Social Security (Insurance) Act, section 7(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf); read on 2026-10-22.
+- [Social Insurance (Contributions) Regulations, regulation 17A(1), (5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf); read on 2026-10-22.
+- [Employment Injuries regulations 5(1)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf); read on 2026-10-22.
+- [Order paragraphs 2–4; agreement Article 2, printed page 10](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf); read on 2026-10-22.
+- [UK inbound guidance](https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland); read on 2026-10-22.
+- [ITO contact](https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers); read on 2026-10-22.
+- [CA3822 instructions](https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822); read on 2026-10-22.
+- [CA3837 instructions](https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837); read on 2026-10-22.
+- [social-insurance explanation](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance); read on 2026-10-22.
 
 ### Evidence and exclusions
 
@@ -517,11 +518,11 @@ The detailed authority for recovering a missed employee deduction from later wag
 
 ### Current writer source scope and retained reviews
 
-Earlier full/delta review records keep their exact versions and source hashes. On 28 October 2026 the writer re-used or cached the official sources, rechecked the three rendered table pages and the relevant scanned UK-agreement pages, and recorded the full rule/figure ledger and old-topic map at [ledgers/gi-payroll-social-insurance.md](../../research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md). The old source discrepancies remain disclosed; neither their repetition nor this writer ledger establishes independent country acceptance. No live filing, payment, certificate application or external enquiry was made.
+Earlier full/delta review records keep their exact versions and source hashes. On 28 October 2026 the writer re-used or cached the official sources, rechecked the three rendered table pages and the relevant scanned UK-agreement pages, and recorded the full rule/figure ledger and old-topic map at [ledgers/gi-payroll-social-insurance.md](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md). The old source discrepancies remain disclosed; neither their repetition nor this writer ledger establishes independent country acceptance. No live filing, payment, certificate application or external enquiry was made.
 
 ### Retained controls
 
-Six original executable blocks remain byte-exact in [preserved payroll controls](../../research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md), alongside the two main examples here. Separate new benefit illustrations are in [benefit controls](../../research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md).
+Six original executable blocks remain byte-exact in [preserved payroll controls](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md), alongside the two main examples here. Separate new benefit illustrations are in [benefit controls](../../evidence/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md).
 
 Not yet confirmed: current-linked PAYE tables versus dated notes and grey cells; ordinary missed employee-SI wage recovery; general first-employer/concurrent allocation and annual/quarterly self-employed interaction; benefit-threshold wording and pension-definition reference; specialist employment-cost/coverage and actual submission/approval issues described above.
 

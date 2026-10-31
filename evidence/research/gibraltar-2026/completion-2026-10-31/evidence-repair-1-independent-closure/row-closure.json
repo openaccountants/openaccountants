@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "GMT-01",
+    "original_finding": "R1/GMT-01",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Application dates now come from s 2(2)\u2013(3), distinct from commencement; calendar-year derivations retain their assumptions.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "63a7d9347b23654daf47c9a45ab2c5733357b7c7d4966612b52af3e7666331c0",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s2(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-02",
+    "original_finding": "R1/GMT-02",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Article 1.1 now includes the EUR 750 million threshold, two/four-year test, proportional non-12-month adjustment, Article 6.1 crossreference and excluded-entity boundary.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "82396add32f6607fa6a8e29c1a55214fc711ea8c3914298bc738c7071a8aa249",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/oecd-model-rules.txt",
+        "reader_sha256": "a56a646c3e2e05205c191f696269ca923e17f4c0872824cb2f71dfb232fd6011",
+        "locator": "Model Rules art1.1.1\u20131.1.3",
+        "official_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-03",
+    "original_finding": "R1/GMT-03",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Complete domestic-group definition, s 3(4) location and s 15 Part 4 treatment separately substantiate the scope and threshold boundary illustrations.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "0a21a420e8fb9544ee2905238237ac5ccd7657de74a35c73d33f7b56cb29d76f",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s3(1), Wholly Domestic Group definition",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "769b2acb8aa0715d2b934af55c2c4bbc81cd402bf1de7cce819f99f509aa9a22",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s3(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "7db725de515286c27c943bf7eaf2a97dc2890a959150c64660f484cf29a3841f",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s15",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-04",
+    "original_finding": "R1/GMT-04",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Sections 12\u201317 now separately substantiate parent IIR charge, UTPR disapplication, investment exclusions and distinct constituent/JV joint liability; unrelated definition fragment no longer carries the row.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "55914fa73b5dac5e29226cf831a0ee8ba1222daf5a547e5bfdfb137570f29ac8",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s12",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "a4c3420040a69e2fdf36d54604b98798a656370a2ff0a133d672a73365dbfe74",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s13",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "b258c5c9906f4e26705c1e32466a9c2b75e80c2096d9d9fff051e871e6018ac4",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s14",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "e07fbe5d93736f2da97e2e1bff1dab232611f7eef38fae4854841bf63b4f114d",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s16",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "8a5769781053bb6ca7b5e71a270b53ab71379d0c8125e9b467d97920e9e023f6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s17",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-05",
+    "original_finding": "R1/GMT-05",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Rule 3AA(1),(3),(16) establishes both-Act scope, resident/registered/established constituent entity and UPE requirements; foreign subsidiaries receive no invented election.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "16a5c6c3a0592ede78c784e609971e1bb621a4d35a41db0e6e49a746640037d4",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "b10b575f8fdaba25d793ef0c13193f5a3111343af5fba6b0a33cb2832d794e65",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "98ea4199cb4f8cad1ee60244c5b22d38cfcf5260dca0d7d8a79acbdc571fef54",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(16)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-06",
+    "original_finding": "R1/GMT-06",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Rules 3(55),3AA(2),(4)\u2013(6) now establish charge disapplication, request/approval in writing, approval date and mandatory approval when requirements met.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "39d09f2c4af51ad7a76986e982b7b544f9ebffe1161f2964403521d851b5447f",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3(55)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "98d98ac326d2af53b7f3390834d12515f433f9141d91b3976dc52d1a0eac006f",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(2)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "7835fa52a4029701d827efb8c0044b2bac6242467cbe53413c2aa10af0992541",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "b9041037f56f4c25bb55f8a54ac51491a694a3d31326f8014c1f05d82f69fba3",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(5)\u2013(6)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-07",
+    "original_finding": "R1/GMT-07",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Complete rule 3AA(9) includes both basis-period limbs and not-yet-due language; approval validity remains separately supported. Hypothetical dates are not statutory filing dates.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "3fd35489437bd3ee6eb958b4907cb4aa7aad1ac986b580e80c06be4a97d5a456",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(9)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "b9041037f56f4c25bb55f8a54ac51491a694a3d31326f8014c1f05d82f69fba3",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(5)\u2013(6)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-08",
+    "original_finding": "R1/GMT-08",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Rule 3AA(7)\u2013(8) now contains both recipients, 30-day notification trigger and grounds.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "bf2cdb2931be159be89f59868799c8535c14c698a0a9129993142c44750fd4f6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(7)\u2013(8)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-09",
+    "original_finding": "R1/GMT-09",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Rule 3AA(10)\u2013(14) now contains cessation notices, 18-month maximum, first-awareness notice, reasonable steps, Commissioner determination and possible re-election; no unconditional extension inferred.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "4155f118455802a7f47d5ce18e8afef44ca23c4672cb9df0423e69009bbcf5d8",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(10)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "a900d52da15d3a14297da91435c409468eb9ffcf7f528e1f9808cd018db48372",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(11)\u2013(14)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-10",
+    "original_finding": "R1/GMT-10",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Rule 3AA(15) now quotes Part VI/Schedule 4 and after 1 March 2025 condition directly.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "bff807c38fa86042a5925722749b9faae0206898af0f1a3c339e636ec5be80f6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/allowances-rules.txt",
+        "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+        "locator": "Allowances r3AA(15)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-11",
+    "original_finding": "R1/GMT-11",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "ITA 40(6)(a)\u2013(b) includes election counteraction trigger plus all three contextual considerations.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "a38f289d7ff76590bf2aad704ae94ff1acdfb237001a39fba7db2d960d96a63a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+        "reader_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "locator": "ITA s40(6)(a)\u2013(b)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-12",
+    "original_finding": "R1/GMT-12",
+    "status": "closed within evidence-repair scope",
+    "classification": "writer process/research boundary; not a statutory obligation or legally proved absence",
+    "assessment": "Correctly reclassified as a writer research boundary; empty evidence array is appropriate because no new statutory duty or proved absence of a channel is asserted.",
+    "evidence_units": []
+  },
+  {
+    "id": "GMT-13",
+    "original_finding": "R1/GMT-13",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Full s 11 now includes fifteen percent, and s 18 supplies the modified-Model-Rules calculation requirement. A headline rate is not treated as proof of zero top-up.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "b9d4e9bb85886a507425df7be1392b22a5504a7b86045670b68f08b1b53e90cb",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s11",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "40cd48bf59ef8756a1f91ecabc8e414da65f5762218dec73fccc32ef8e868e3e",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s18",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-14",
+    "original_finding": "R1/GMT-14",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Ten separate operative excerpts cover interpretation/effective timing, all disapplications, QDMTT-only safe harbour exclusion, foreign/domestic tax exclusions, separate pools/formula and fiscal-year average sterling conversion.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "118d716eb6049c0b01adea8ef9d82bccf5f3a14737ab2280251be4e36a3ebcb7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s4",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "eac642eef02bb563e1483281406b9c6c37715c8a74b88e7ea71723ae80aac561",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s6",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "69030071ff6281937ac601eb209ba09ee5f3d41d79ee58216387c7a6cf589c11",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s19",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "38f3e4a2fd9f5cb37bb4d3d640cc0bd5e1103fa073cbf1ce3f338dadc0e70bb3",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s20",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "65fb86b889ec3021bb1870e12ba1ef097537643bd5a008789f769bd259e8b95a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s21",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 6,
+        "quote_sha256": "680b6ccb0eab4c52b85ebf27f1f115d6dc58e2f36d35c5a95af96d6384277ff2",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s22",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 7,
+        "quote_sha256": "8f6d7709ed8051de16908c07aa47195760808471386a9a445a81eb25f963266a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s23",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 8,
+        "quote_sha256": "61e836b208058a67b3a9b7c4cb277fc084f6653f708d30e5712e9549ca199830",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s24",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 9,
+        "quote_sha256": "aaea0a8e19a36aeabd08223123312c54f5d1feecfc8f1d31afceb79a8c55e644",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s25",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 10,
+        "quote_sha256": "534952074b9b04a84fc919ed4f6fdd69902689c163b25f9b5ae67ca226ca9c86",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s8",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-15",
+    "original_finding": "R1/GMT-15",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Section 7 directly supports election effect; the remaining full-calculation exclusions are expressly a writer scope declaration.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "d1981f04ef6d4e5e7113efd1a9b72604e144217a32d8ea4bc271e1ae0a6eded4",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s7",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-16",
+    "original_finding": "R1/GMT-16",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Both ss 26\u201327 excerpts contain 15/18-month deadlines, both first-year conditions, filers and supporting-information requirements.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "a1cddf94efeba192b8db47e8e03d4d727969e56fd2d318f31582c9bd122769a7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s26(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "3d039f7d35905446e7d13ed21beff08825174257cfd659ae1e1d5d49eef66577",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s27(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-17",
+    "original_finding": "R1/GMT-17",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Full s 28 covers actual overseas filing/effective reporting-year QCAA, each Part 3/Part 4 notifier, 3-month deadline and accompanying information.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "059a27c2de21ec74258ce1982195ca935a037ce6fe88c2e01d23d62e97a40719",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s28(1)\u2013(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-18",
+    "original_finding": "R1/GMT-18",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Section 29(1)\u2013(3) establishes payment date, parent payment/joint liability and DLE payment, rather than only timing.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "7842760ee1d4712f8f1a7de0c48f3ec91a16f85558315d5a65035264283cdd56",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s29(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-19",
+    "original_finding": "R1/GMT-19",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "All statutory deadline conditions are bound; date derivations are unchanged. Exact oldURL, dated 22 October writer record and earlier reviewer limitation are retained. A dated 31 October 404 receipt plus independent fresh web 404 supports current availability only, without retroactively reproducing 22 October.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "a1cddf94efeba192b8db47e8e03d4d727969e56fd2d318f31582c9bd122769a7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s26(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "3d039f7d35905446e7d13ed21beff08825174257cfd659ae1e1d5d49eef66577",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s27(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "059a27c2de21ec74258ce1982195ca935a037ce6fe88c2e01d23d62e97a40719",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s28(1)\u2013(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "7842760ee1d4712f8f1a7de0c48f3ec91a16f85558315d5a65035264283cdd56",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s29(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "1f472bf1d0e33762366104f316e4a7580214cb897852bd2eca1b56a244726e50",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/evidence-repair-1/sources/old-registration-404.html",
+        "reader_sha256": "d3e3764e22f2eca69392e79982d5d4f69db7e537653e518a5b42e7413a017c7d",
+        "locator": "Current31OctpublicHTTPresponse",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-20",
+    "original_finding": "R1/GMT-20",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Registration \u00a7\u00a7 3\u201310 and both appendices now substantiate cohort/date/six-month rules, one group filer/GMTAREG1, fields, IDs/authorisation, CbC branch, confirmations, out-of-scope notice and new-DLE 12-month rule. This does not determine election validity.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "c6b3202e4d8f2ff235299f3c1af84462b86e28cbcdd4b8616472ff08037bb530",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a73",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "c421afdda054b22075a49e3176d758139bb27feecda8cd0068db2c52d4e77e2e",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a74",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "59fa22b65a85c719459d13645445d20aea463295da6a0b7a2d62239ee6353c0a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a75",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "f851155706db5e2747dfdc14f73f8f25359cd01bbbb7912c93cde7e9ba682414",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a76",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "ba35b791c0a3e9347c6b876d638c583406da43823842c4f780847c10e2ac5577",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a77",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 6,
+        "quote_sha256": "1752ed0dda92ac85f30f24be277df4627cb311eaa2f2d9712f47c2ad3f3cd07b",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a78",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 7,
+        "quote_sha256": "62cdd09db116465a133ee7a1601563fc752068af4b31faf114bc850f43896393",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a79",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 8,
+        "quote_sha256": "354cb9c1889d94a6effa3ed2ac0e9b3b328cd2d362b2a430aa278806fe6d2941",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration guidance \u00a710",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 9,
+        "quote_sha256": "e9a985acca746d94ccaaacda3544907fb92a5cbdefd417b5f94d57c0519d016b",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration Appendix1 steps1\u20132",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 10,
+        "quote_sha256": "ffdbb59ef62b437ba05a420560ef5f8adec096261c9cee4520a9e27c22ad2a39",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration Appendix1 formnotes",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 11,
+        "quote_sha256": "95346842dd7dc2b3b1ec23e6c2c88fbed7862d45ee605dae7387aab7b8ce5d38",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-registration.txt",
+        "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+        "locator": "Registration Appendix2 steps1\u201310",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-21",
+    "original_finding": "R1/GMT-21",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Actual notification \u00a74 QCAA/activated-relationship paragraphs and 2024 common-understanding/section48 paragraphs now substantiate the bounded exception; no extension or later-year relationship is inferred.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "02bd205700e4d489a028df3c133919eb621366bdfe3ea14201b5cf2bfc7462e5",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification guidance \u00a74",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "94c45ffcf95b683a2e8364c36b16a13d5ef03b2042f44434c3e2f37948b9af00",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification guidance \u00a74",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-22",
+    "original_finding": "R1/GMT-22",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Appendix1 steps 1\u201310 plus \u00a76 cover registered TIN, Reports/Unscheduled path, all A\u2013G fields, draft JSON, Preview/Report, valid/invalid correction and five Actions; initial validation remains distinct from ITO legal review.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "adcb0e2e3ee6d0db052883e6ee308c355dc8a2a0ff97d6d94c1b018198834192",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 steps1\u20134",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "c16d21119fcb1be8f8ca642a70234c5f1a8a5943485fa47ebe6f1822a005a322",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 step5",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "59fec8cd6520705703ea9befaf0dac76d17245e4351191f91477c9a24451d3d6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 step6",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "bb9e0837a390a2be30f951c09ad923b2bb27b25d233441fb99d09bebbeba832c",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 step7",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "481b7972957f9bbc05d02926808740d6f1dae7a3f031cf92a0da09085524d3c4",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 step8",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 6,
+        "quote_sha256": "7078a6c3483703b13cffe62f0bea612afaf9ac26525c07a3698d5e01be35168d",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification Appendix1 steps9\u201310",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 7,
+        "quote_sha256": "60bb2df24597798e0786695657232b44b5845ea04ecdaa4cb7cfecc3927408f6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-notification.txt",
+        "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+        "locator": "Notification guidance \u00a76",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-23",
+    "original_finding": "R1/GMT-23",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "GIR dissemination/XML, no-test warning, all four local validation rules, registered TIN/uniqueID/local-role requirements, scheduled upload, receipt-versus-validation, rejection correction and accepted-amendment limitation now have operative excerpts.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "5d651474883da91eaeeebb8272103021ccb7a3ec49b59c5d133c3c021d9b64f6",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR guidance \u00a74",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "f79467054d3e7dc43e42d14834e26ffcd976db279f16d8f277492a4e628859f7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR guidance \u00a75",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "46328fa08ea67ec5092748024d4d8b28ecf475de0b338f66ce7ffe58a1f5a03e",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 step1",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "400b635a87350f26b2399eb4c3fd02ad96190d52ff0d76feeffe81cb48f6ca91",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 step1",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "2bd95c01b0f1c0fe5aa2f1e32b61e39fabb381ce49b98f18f08163e6c02cf690",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 steps2\u20135",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 6,
+        "quote_sha256": "5089467e3de4e2f603ef764882ea0a429a137b6804c8f7f67e51766076a40476",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 steps5\u20137",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 7,
+        "quote_sha256": "0a2945f55b5385b5345ad94233e8bf88706deac4b37bd7552fa5499786d33b39",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 steps7\u20138",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 8,
+        "quote_sha256": "ced0bed7d13d61cb98f90610fc712d611880d16b3fdb9e53fc4fd1125944d7cb",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 step9",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-24",
+    "original_finding": "R1/GMT-24",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "GMTA1 fields1\u20136, capacity/declaration/signature, liability trigger, separate-return scope, due date and email are quoted. Both statutory first-year conditions are retained over the form shorthand.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "28f98d1597509f700f888d7c40dbd0a6dbba6c4b2f6c3823c7696856297e1aba",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-payment.txt",
+        "reader_sha256": "57cf5fcc2e10f7a9d94a2b7b7a43a64388a2cc659ab9777cfa9299154fdbc675",
+        "locator": "GMTA1 pp1\u20132",
+        "official_url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "16341b57eff851eca185e78242e8b9893b9b981c9f709d8c35d7645fd215db32",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-payment.txt",
+        "reader_sha256": "57cf5fcc2e10f7a9d94a2b7b7a43a64388a2cc659ab9777cfa9299154fdbc675",
+        "locator": "GMTA1 p3 notes",
+        "official_url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "a1cddf94efeba192b8db47e8e03d4d727969e56fd2d318f31582c9bd122769a7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s26(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "3d039f7d35905446e7d13ed21beff08825174257cfd659ae1e1d5d49eef66577",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s27(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-25",
+    "original_finding": "R1/GMT-25",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "GMTA1 payment-only banktransfer instruction, assigned unique top-up reference, assistance email and phone option are now directly quoted; submission-email fragment no longer purports to prove payment rules.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "6b26c4a16919f35fed101cc2bc509ba6f2fe309a7530ee8d3ca8eb682ae18707",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-payment.txt",
+        "reader_sha256": "57cf5fcc2e10f7a9d94a2b7b7a43a64388a2cc659ab9777cfa9299154fdbc675",
+        "locator": "GMTA1 p3 payment details",
+        "official_url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "9f983e61beeaaa1f0d7b9e7c511e3437aa13bd0f38f562c7a7649016466a1314",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-payment.txt",
+        "reader_sha256": "57cf5fcc2e10f7a9d94a2b7b7a43a64388a2cc659ab9777cfa9299154fdbc675",
+        "locator": "GMTA1 p3 assistance",
+        "official_url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-26",
+    "original_finding": "R1/GMT-26",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Section 30 retention plus ss33\u201336 assessment/amendment/appeal/finality excerpts now cover the whole stated rule, preserving separate procedures.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "1f3e7d0d0a6136a5fac783eafd57bce6afb79a8e482f448dd5bc7333acd9ba0a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s30",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "f5d5808254e78d1175e0af94ea50929c79a9a0802ca9f1a90d6f04aaaf89f265",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA ss33\u201335",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "211be6198d73d7575947f5b32c1674682e02293539b92d77f9d3fccdf1ee2af8",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s36",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-27",
+    "original_finding": "R1/GMT-27",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Complete GMTA 52 and ITA 61(1)\u2013(3) now substantiate minimum-tax ten-year versus ordinary-tax six-year refund periods and certification; illustrative 2034 endpoint unchanged.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "eb71b701d4dba6beffd6baecf0d191eb1c88d6c91bd0321eeed707f9c2c23c2d",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s52(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "df2f04f3377a3411d51e1d27115d2948e14958d7b9b241529b24f9cf01fa284c",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+        "reader_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "locator": "ITA s61(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-28",
+    "original_finding": "R1/GMT-28",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Complete s 44(1)(a)\u2013(b) now supplies 2%/5%, day-after due, further 30-day trigger and unpaid principal-plus-first-surcharge base. Partial-payment scenarios retain actual-payment conditions.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "75319b83decc8a9479b34ba9e4be76c7a83d5373c04bc01855c33b472b374d0b",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s44(1)(a)\u2013(b)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-29",
+    "original_finding": "R1/GMT-29",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Actual ss43,45,47\u201349 provide every stated penalty amount, one-month trigger, shall-may defect, conditional discretion and enforcement; no automatic waiver asserted.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "cd519299be407f30d560dcb53ddd5fc5b074f84d88494fdc4788547ccd04c789",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s43",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "b69188182c5e5e825122390631a6039ea9902f63e9a4faac74be8bff779f380b",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s45",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "c8a550b2aafe3a6d2fc164de504a5b858fd5b05ec12710960564e784018243d7",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s47",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "b1253748d78d442a8828aaa241cb2ede9ab64563e6085b28eeb14930cdb3fa3e",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s48",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "71d94d0e3a24d4181424a47e713592f7b618674cb4ff710d847aa046d914b4d1",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s49",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-30",
+    "original_finding": "R1/GMT-30",
+    "status": "closed within evidence-repair scope",
+    "classification": "writer crossreference control with own-law tests identified; no additional statutory duty",
+    "assessment": "Correctly classified as a crossreference control with commencement, location, covered-tax and QCAA provisions separately attached, not an additional duty or exemption.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "63a7d9347b23654daf47c9a45ab2c5733357b7c7d4966612b52af3e7666331c0",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s2(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "769b2acb8aa0715d2b934af55c2c4bbc81cd402bf1de7cce819f99f509aa9a22",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s3(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "65fb86b889ec3021bb1870e12ba1ef097537643bd5a008789f769bd259e8b95a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s21",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "680b6ccb0eab4c52b85ebf27f1f115d6dc58e2f36d35c5a95af96d6384277ff2",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s22",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "059a27c2de21ec74258ce1982195ca935a037ce6fe88c2e01d23d62e97a40719",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s28(1)\u2013(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-31",
+    "original_finding": "R1/GMT-31",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Both s 8 average-currency and s 25 formula excerpts now support the example. All numerical inputs/results remain illustrative; prior recomputation preserved.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "534952074b9b04a84fc919ed4f6fdd69902689c163b25f9b5ae67ca226ca9c86",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s8",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "aaea0a8e19a36aeabd08223123312c54f5d1feecfc8f1d31afceb79a8c55e644",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s25",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-32",
+    "original_finding": "R1/GMT-32",
+    "status": "closed within evidence-repair scope",
+    "classification": "tax rules and stated conditions",
+    "assessment": "Complete s 44 evidence now supports both compound and paid-first-surcharge scenarios; prior arithmetic preserved unchanged.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "75319b83decc8a9479b34ba9e4be76c7a83d5373c04bc01855c33b472b374d0b",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/global-minimum-tax-act.txt",
+        "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+        "locator": "GMTA s44(1)(a)\u2013(b)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  },
+  {
+    "id": "GMT-33",
+    "original_finding": "R1/GMT-33",
+    "status": "closed within evidence-repair scope",
+    "classification": "writer process/research boundary; not a statutory obligation or legally proved absence",
+    "assessment": "Correctly classified as the client evidence checklist, not a separately prescribed set of statutory filing obligations.",
+    "evidence_units": []
+  },
+  {
+    "id": "GMT-34",
+    "original_finding": "R1/GMT-34",
+    "status": "closed within evidence-repair scope",
+    "classification": "writer process/research boundary; not a statutory obligation or legally proved absence",
+    "assessment": "Correctly classified as writer self-check controls referencing established tests, without generic deadline fragment standing in for all controls.",
+    "evidence_units": []
+  },
+  {
+    "id": "GMT-35",
+    "original_finding": "R1/GMT-35",
+    "status": "closed within evidence-repair scope",
+    "classification": "mixed: metadata observation and explicit writer research limits, not legal exemptions",
+    "assessment": "GIR Appendix1 step 9 establishes forthcoming accepted-return amendment guidance/contact; exact Act-index labels and two PDF targets support the metadata observation. Full-GloBE/notice/live-operation limits remain writer declarations and prove no exemption or absence of later law.",
+    "evidence_units": [
+      {
+        "unit": 1,
+        "quote_sha256": "ced0bed7d13d61cb98f90610fc712d611880d16b3fdb9e53fc4fd1125944d7cb",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/pillar-two-gir.txt",
+        "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+        "locator": "GIR Appendix1 step9",
+        "official_url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 2,
+        "quote_sha256": "4de26e6e778fb64162b450c1a3136a929917554ae91853378b17bf397308dfae",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/evidence-repair-1/sources/gmta-index.html",
+        "reader_sha256": "80623d8a49d0613465db5ffc3857d364459c3e25f3dc1192eecbb4fcb1a16b1c",
+        "locator": "Act index, current heading",
+        "official_url": "https://www.gibraltarlaws.gov.gi/legislations/global-minimum-tax-act-2024-7478",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 3,
+        "quote_sha256": "4e8a38fdd9493b70ad9a1194c25ee0bcc1363b083b51b6696ccd26e8a01dde5a",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/evidence-repair-1/sources/gmta-index.html",
+        "reader_sha256": "80623d8a49d0613465db5ffc3857d364459c3e25f3dc1192eecbb4fcb1a16b1c",
+        "locator": "Act index, historical version heading",
+        "official_url": "https://www.gibraltarlaws.gov.gi/legislations/global-minimum-tax-act-2024-7478",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 4,
+        "quote_sha256": "c337697c1a02b4bff6206fc482328b36ec228c8a5061724531ba572d742fc469",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/evidence-repair-1/sources/gmta-index.html",
+        "reader_sha256": "80623d8a49d0613465db5ffc3857d364459c3e25f3dc1192eecbb4fcb1a16b1c",
+        "locator": "Act index, embeddedPDFtarget",
+        "official_url": "https://www.gibraltarlaws.gov.gi/legislations/global-minimum-tax-act-2024-7478",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      },
+      {
+        "unit": 5,
+        "quote_sha256": "acd4ee66625e9a3187fa3f5ce62499eadf78dfc4bd2a83ef5e661fa704e5cae8",
+        "reader_file": "evidence/research/gibraltar-2026/completion-2026-10-31/evidence-repair-1/sources/gmta-index.html",
+        "reader_sha256": "80623d8a49d0613465db5ffc3857d364459c3e25f3dc1192eecbb4fcb1a16b1c",
+        "locator": "Act index, embeddedPDFtarget",
+        "official_url": "https://www.gibraltarlaws.gov.gi/legislations/global-minimum-tax-act-2024-7478",
+        "read_on": "2026-10-31",
+        "range_binding": "pass",
+        "operative_support_read": "pass"
+      }
+    ]
+  }
+]

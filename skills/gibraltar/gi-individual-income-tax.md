@@ -6,8 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.11"
+last_updated: 2026-10-31
+version: "0.12"
 verified_by: pending
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
@@ -79,7 +79,7 @@ trust_label: Accountant-authored
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Gibraltar individual income tax: ordinary assessment v0.11
+# Gibraltar individual income tax: ordinary assessment v0.12
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -100,15 +100,16 @@ Collect employment, self-employment, pensions, rents, distributions, foreign-tax
 
 Rules 2 and 3A prescribe these ordinary full-year bands. The temporary overrides in rules 3B and 3C expressly concern 2022/23 and 2023/24; they are not the 2026/27 tables. The official index identifies the 1 July 2024 consolidation as current when checked on 22 October 2026.
 
-| System | Marginal bands |
-|---|---|
-| ABS, taxable income after allowances | First £4,000: 14%; next £12,000: 17%; remainder: 39% |
-| GIBS, assessable income at most £25,000 | First £10,000: 6%; next £7,000: 20%; remainder: 28% |
-| GIBS, assessable income above £25,000 | First £17,000: 16%; next £8,000: 19%; next £15,000: 25%; next £65,000: 28%; remainder: 25% |
+| System | Marginal bands | Official source |
+|---|---|---|
+| ABS, taxable income after allowances | First £4,000: 14%; next £12,000: 17%; remainder: 39% | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf) |
+| GIBS, assessable income at most £25,000 | First £10,000: 6%; next £7,000: 20%; remainder: 28% | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf) |
+| GIBS, assessable income above £25,000 | First £17,000: 16%; next £8,000: 19%; next £15,000: 25%; next £65,000: 28%; remainder: 25% | [Official source](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf) |
 
 Source for every band: [Rates of Tax Rules, rules 2–3C](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), checked for the 2026/27 year. GIBS requires the prescribed election and remains subject to rule 3A. Rule 3A(3) requires the Commissioner to disregard the election described there if the ABS liability with the individual's allowances and deductions would be lower; compare completed calculations rather than choosing from headline rates.
 
 **Partial-year limitation:** rule 3A(4) reduces the specified assessable/deemed-assessable amounts by one-twelfth for each complete calendar month without the listed Gibraltar activity. Rules 2(2) and 3A(2) additionally refer to section 34(3); that reference does not align straightforwardly with section 34 in the current Act. The archived 1952 Act’s section 34(3) concerned prescribed non-resident relief as if resident, while the current section 34(3) concerns amendment of assessments. Current Schedule 9 paragraphs 13–17 and 20 preserve continuity/references only within their stated conditions; no corresponding rewritten eligibility provision was established here. Allowances rule 24 now expressly concerns a non-resident receiving a Gibraltar-accruing pension and is not a general frontier-employee entitlement. [Archived Act, section 34(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1952-11/1952-11o.pdf); [current Schedule 9](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [rule 24](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). The interaction and exact partial-year calculation need resolution before applying full-year bands to a starter, leaver or intermittent worker. The examples below assume full-year activity.
+
 
 ## The base
 
@@ -406,7 +407,7 @@ Primary legislation and [self-employed payment guidance](https://www.gibraltar.g
 | IT1 for 2026 filing and period labels | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf) | 2026-10-28 |
 | Current individual-return guidance and email instructions | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf) | 2026-10-28 |
 
-Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](../../research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. The [fresh country review](../../research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.
+Earlier reads and completed review scopes remain recorded on their actual dates. On 28 October 2026 the writer read the additional ordinary provisions and public procedure pages recorded in the [full figure/rule ledger](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md). The [legislature’s current allowance index](https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405) still names the 23 March 2026 consolidation; its amendment table includes LN 2026/054 with commencement on that date. The writer has not recharacterised publication of the amendment on 26 March as a missing later version. The [fresh country review](../../evidence/research/gibraltar-2026/final-country-review-2026-10-28/review.md) and bounded repair closure record the exact revisions checked; professional attestation remains pending.
 
 | Instrument | Official source | Read date |
 |---|---|---|
@@ -417,11 +418,11 @@ Earlier reads and completed review scopes remain recorded on their actual dates.
 | LN 2026/125, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download) | 2026-10-28 |
 | LN 2022/170, rules 2–3 | [Official source](https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download) | 2026-10-28 |
 
-The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](../../research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved.
+The property/energy addition is v0.11 material outside the earlier f7d59d7c review. The [complete current ledger and topic map](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) inherit the 60 accepted rule rows and their proof units unchanged and add 14 bounded source/limit rows. Its [separate independent review and closure records](../../evidence/research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md) identify the exact revisions, findings and disposition; the prior review retains its exact scope. The [four conditional relief scenarios](../../evidence/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md) supplement the two main examples; they do not establish eligibility or actual tax saved.
 
 ### Retained calculation controls
 
-Six original executable controls remain byte-exact in the [individual supplement](../../research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](../../research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
+Six original executable controls remain byte-exact in the [individual supplement](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md), alongside the two main examples retained here. New independent scenarios are in the [ordinary-deduction controls](../../evidence/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md). All source qualifications and original example prose remain in this Guide.
 
 Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points.
 
