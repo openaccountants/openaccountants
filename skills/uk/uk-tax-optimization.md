@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # UK Tax Optimization
 
-## UK Tax Optimization -- Self-Employed Skill v1.1
+## UK Tax Optimization -- Self-Employed Skill v1.2
 
 > Source-cited draft: not reviewed by an accountant.
 
