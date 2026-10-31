@@ -1,383 +1,146 @@
 ---
 name: azerbaijan-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for an Azerbaijan VAT (EDV) return for any client. Trigger on phrases like "Azerbaijan VAT", "EDV return", "Azerbaijani tax", or any request involving Azerbaijan VAT filing. This skill covers standard EDV payers filing monthly returns. Simplified tax regime and micro-enterprise exemptions are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Azerbaijan VAT work.
-version: 2.0
+description: 'Use this skill for 2026 Azerbaijan VAT working papers for ordinary domestic VAT taxpayers, importers, exporters and recipients of non-resident services. It covers compulsory and voluntary registration, the rolling and single-contract thresholds, 2026 POS turnover weighting, tax points, input credit and mixed-use allocation, monthly returns, reverse charge, cancellation and retained inventory. Trigger on Azerbaijan VAT, EDV, VAT deposit account, non-resident services, input VAT, mixed taxable and exempt supplies and VAT registration. It covers the separate registration and filing process for foreign B2C electronic sellers. Specialist agricultural margin, leasing and other special schemes need separate source checks. Checked against the law (tier 2); no accountant has signed it off.'
+version: 2.1
 jurisdiction: AZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 ---
 
-# Azerbaijan VAT
-
-## Section 1 — Quick reference
-
-**Quick reference fields**
-
-| Field | Value |
-| --- | --- |
-| Country | Azerbaijan (Republic of Azerbaijan) |
-| Tax name | EDV (Elave Deger Vergisi / Value Added Tax) |
-| Standard rate | 18% |
-| Reduced rates | None (single standard rate) |
-| Zero rate | 0% (exports, international transport, diplomatic supplies, certain agricultural produce) |
-| Return form | Monthly EDV declaration |
-| Filing portal | https://www.taxes.gov.az |
-| Authority | State Tax Service under the Ministry of Economy |
-| Currency | AZN (Azerbaijani Manat) only |
-| Filing frequency | Monthly |
-| Deadline | 20th of the month following the reporting month |
-| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending local practitioner validation |
-| Validation date | April 2026 |
-
-**Key EDV return boxes**
-
-| Box | Meaning |
-| --- | --- |
-| 1 | Taxable supplies at 18% — base |
-| 2 | Output EDV at 18% |
-| 3 | Zero-rated supplies (exports) |
-| 4 | Exempt supplies |
-| 5 | Reverse charge on imported services — base |
-| 6 | Output EDV on reverse charge |
-| 7 | Total output EDV |
-| 8 | Input EDV on domestic purchases |
-| 9 | Import EDV (paid at customs) |
-| 10 | Input EDV on reverse charge (creditable) |
-| 11 | Total input EDV |
-| 12 | Net EDV payable or credit |
-| 13 | Credit brought forward |
-| 14 | Net payable after credit |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 18% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Azerbaijan |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge (Box 5/6/10) |
-| Unknown blocked-input status | Blocked |
-
-**Red flag thresholds**
+# Azerbaijan Value Added Tax v2.1
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | AZN 10,000 |
-| HIGH tax-delta on a single default | AZN 500 |
-| MEDIUM counterparty concentration | >40% |
-| MEDIUM conservative-default count | >4 |
-| LOW absolute net EDV position | AZN 20,000 |
+> **Checked against the law.** Tax year 2026. Figures independently re-checked against the official sources on 31 October 2026. General reference for working papers; a qualified professional must review the facts and filing position. No accountant has signed this skill off.
 
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
+## Who this applies to
 
-**Minimum viable** — bank statement for the month. Acceptable from: Kapital Bank, PASHA Bank, International Bank of Azerbaijan (IBA), AccessBank, Bank Respublika, Xalq Bank, or any other.
+Persons registered or required to register for Azerbaijan VAT (ƏDV), importers and recipients acting as tax agents for non-resident services under [Tax Code art. 153–155, 169](https://e-qanun.az/frameworks/46/f_46948.html). Ordinary domestic businesses, imports, exports and mixed taxable/exempt activities are covered. A simplified-tax business is not exempt from all reverse-charge obligations merely because it is outside ordinary VAT registration.
 
-**Recommended** — invoices, e-invoice register from taxes.gov.az, client VOEN (TIN).
+Rolling turnover is not the only registration trigger. Excise/mandatory-marked goods producers and building-construction businesses are mandatory VAT taxpayers under art. 154.6. Non-resident internet sellers to unregistered Azerbaijan customers have a separate registration rule under art. 33.8-1, not the domestic rolling threshold. The foreign-seller registration and filing process below follows Cabinet Decision 387, as consolidated for the 2026 statutory threshold.
 
-**Ideal** — complete e-invoice register, prior period declaration.
+## Rates, bands and thresholds
 
-### Refusal catalogue
+| Item | Amount / treatment | Tax year / period | Official source |
+|---|---|---|---|
+| Standard VAT | 18% of VAT-exclusive consideration/base | 2026 | [Tax Code art. 173.1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Exports of goods and listed art. 168.1.5 services | 0%, subject to classification/evidence | 2026 | [Tax Code art. 165.1.3](https://e-qanun.az/frameworks/46/f_46948.html) |
+| International/transit transport and listed related services | 0%, with the postal exception | 2026 | [Tax Code art. 165.1.4](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Domestic compulsory registration | Taxable operations above 200,000 over rolling 12 months | 2026 | [Tax Code art. 155.1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Single contract/transaction trigger | Total above 200,000; register before transaction | 2026 | [Tax Code art. 155.1, 157.3.1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Qualifying public retail/service POS threshold weighting | 0.5 × qualifying turnover for threshold only | Operations from 1 Jan 2026 | [Tax Code art. 155.1-1](https://e-qanun.az/frameworks/46/f_46948.html); Law 297-VIIQD transitional art. 18.1 |
+| Voluntary deregistration threshold | Prior full 12 months at most 100,000 after art. 158.2-1 POS weighting; at least 1 year after last registration, subject to exceptions | 2026 | [Tax Code arts. 158.2–158.2-1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Non-resident B2C electronic seller trigger | Calendar-year turnover above USD 10,000 equivalent; register within 30 days | Current 2026 text | [Tax Code art. 33.8-1](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Catering public integrated-POS turnover deduction | 50% of qualifying POS turnover | 1 Jan 2026–31 Dec 2028 | [Tax Code art. 174.5](https://e-qanun.az/frameworks/46/f_46948.html) |
+| Medical/public private-practice integrated-POS turnover deduction | 50% of qualifying POS turnover | 1 Jan 2024–31 Dec 2026 | [Tax Code art. 174.5](https://e-qanun.az/frameworks/46/f_46948.html) |
 
-- **R-AZ-1 — Simplified tax regime** — "Simplified tax payers do not file EDV returns. Out of scope." (Trigger: client on simplified tax (turnover below AZN 200,000).)
-- **R-AZ-2 — Micro-enterprise** — "Micro-enterprises are exempt from EDV. Out of scope." (Trigger: registered micro-enterprise.)
-- **R-AZ-3 — Partial exemption** — "Input EDV apportionment required. Use a qualified practitioner." (Trigger: mixed taxable and exempt supplies.)
-- **R-AZ-4 — Free economic zone** — "FEZ entities have special EDV rules. Out of scope." (Trigger: Alat FEZ or other designated zone.)
-- **R-AZ-5 — Income tax** — "This skill handles EDV returns only." (Trigger: user asks about income tax.)
+## The base
 
-## Section 3 — Supplier pattern library
+Determine supply, place, time, VAT base and rate before aggregating a return. Art. 161 uses consideration excluding VAT, including the specified other duties/taxes/charges. For a VAT-inclusive price at the standard rate, VAT equals gross × 18/118 and net equals gross/1.18. Do not use the invoice amount as VAT-exclusive without checking the contract.
 
-### 3.1 Azerbaijani banks (fees exempt — exclude)
+Under art. 166, the ordinary tax point is payment. Advance receipts are taxable when paid; instalments are separate transactions to their extent. Set-off, barter, gratuitous supplies, expired debt and other statutory cases have their own tax points. Cash-register operations follow the receipt rule in art. 166.1.1-1. Do not replace this system with a universal invoice-date or delivery-date rule. Apply art. 163 adjustments when price, cancellation or return facts change.
 
-**Azerbaijani banks patterns**
+Separate standard-rate, zero-rate, exempt and outside-scope supplies. Zero-rated transactions remain taxable and permit eligible input credit (art. 175.7); exempt transactions do not generally permit input credit (art. 175.6). Art. 164 gives specific exemptions; for example qualifying producers' own agricultural product sales are exempt from 1 January 2014 for thirteen years (art. 164.1.18). Financial services for this purpose include insurance and reinsurance and the related agent and broker services (art. 13.2.14.7). Other art. 164 exemptions include paid education services (art. 164.1.13) and metro passenger transport (art. 164.1.12). Goods and services for the official use of accredited international organisations and foreign diplomatic and consular missions, and for the personal use of their non-citizen diplomatic and administrative staff and families, are zero-rated (art. 165.1.1). Test a financial-service exemption under art. 164.1.2 against its current definition; this skill does not extend it to every bank or leasing invoice. Law 413-VIIQD of 26 May 2026 changes the leasing exemptions from 25 December 2026, the date the Tax Code's commencement notes give for it (it enters into force with the Law on Financial Lease, 412-VIIQ). From that date "leasing" (lizinq) becomes "financial lease" (maliyyə icarəsi) in arts. 164.1.2, 164.1.2-1 and 164.1.25; art. 164.1.34-1 loses its "without transfer of ownership" condition and covers renting farm machinery to agricultural producers; and art. 164.1.50 drops "or leasing" from the exemption for aircraft and engines rented from non-residents without an Azerbaijan PE (Law 413-VIIQD arts. 2.8.1-2.8.4, 26). Use the current wording for operations up to 24 December 2026 and the amended wording from 25 December 2026.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| KAPITAL BANK, KAPITALBANK | EXCLUDE | Financial service, exempt |
-| PASHA BANK, PASHABANK | EXCLUDE | Same |
-| IBA, BEYNELXALQ BANK | EXCLUDE | Same |
-| ACCESSBANK, BANK RESPUBLIKA, XALQ BANK | EXCLUDE | Same |
-| FAIZ, INTEREST | EXCLUDE | Interest, out of scope |
-| KREDIT, LOAN | EXCLUDE | Loan principal, out of scope |
+For domestic input credit, obtain a valid electronic invoice and evidence that the VAT-exclusive value was paid from the purchaser's bank/payment account to the supplier's account and VAT was paid to the VAT deposit account, subject to art. 175's express exceptions. Credit the corresponding paid part of instalments. Cash-register receipts alone, non-compliant invoices and sham-transaction documents do not establish credit (arts. 175.9, 175.11). The VAT-deposit payment is due within one working day of paying the net consideration under art. 175.1.3, with the art. 177.5 exception. Import documents evidencing paid import VAT support credit under art. 175.10.
 
-### 3.2 Government and statutory bodies (exclude)
+Directly attribute input VAT to taxable and exempt transactions where separately evidenced. For common mixed-use input, restrict credit to the statutory taxable-use proportion; exclude private/non-business use. Art. 175.4 provides the taxable-turnover share for mixed taxable/exempt transactions and permits full credit for separately accounted taxable inputs. A PIT or corporate deduction is not proof of VAT recoverability. Check the additional restrictions for state-funded and specified social expenditure in arts. 175.3 and 175.6.
 
-**Government and statutory bodies patterns**
+Compute payable VAT as output VAT plus adjustments/reverse-charge liability less allowable input credit under art. 174.1. Record excess credit distinctly. For taxpayers with at least 50% zero-rated turnover, art. 179.1 provides repayment within 20 days of application; others use the four-month limit in art. 179.2. Risky-taxpayer claims are subject to the commencement qualification in art. 179.4. Do not promise a refund without a valid application and those checks.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| VERGI XIDMETI, STATE TAX | EXCLUDE | Tax payment |
-| GOMRUK, CUSTOMS | EXCLUDE | Duty (import EDV separate) |
-| DSMF, SOSIAL MUDAFIE | EXCLUDE | Social protection |
-| ASAN XIDMET | EXCLUDE | Government service fee |
+For the 2026 catering relief, only services to the public paid through POS terminals integrated with the cash register qualify. Subtract 50% of that qualifying turnover from total taxable turnover, then apply 18%. Other bank transfers are not automatically qualifying POS receipts. The same art. 174.5 relief for medical institutions/private medical practice has its own 2024–2026 period. Keep qualifying and other receipts separate. Do not confuse this deduction with the 0.5 registration-threshold weighting or the separate 6% catering simplified tax.
 
-### 3.3 Utilities
+The agricultural trade-margin regime under arts. 153.3, 159.1 and 174.4 applies for the stated five-year period from 1 January 2022, subject to purchase/sales records. From 2026 the definition includes qualifying farmed fish, excluding the specified processing and foreign-origin fish treatment. Imported agricultural products have an election under art. 175.13. These are specialist schemes outside the ordinary return examples.
 
-**Utilities patterns**
+## Deadlines and filing
 
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| AZERIQAZ, AZERENERJI | Domestic 18% | 8 | Gas/electricity |
-| AZERSU | Domestic 18% | 8 | Water |
-| AZERCELL, BAKCELL, NAR MOBILE | Domestic 18% | 8 | Telecoms |
+For rolling turnover, compulsory registration takes effect on the first day of the month after crossing the threshold; apply within ten days of that date. For a single contract above 200,000, apply before the transaction. Mandatory-category businesses apply with initial registration or before starting the relevant later activity. Voluntary registration ordinarily takes effect on the first day of the following reporting period ([Tax Code art. 155.1, 156–157](https://e-qanun.az/frameworks/46/f_46948.html)). Apply the POS weighting only to operations from 1 January 2026, not earlier receipts within the same rolling window.
 
-### 3.4 Insurance (exempt — exclude)
+Ordinary domestic VAT reporting periods are calendar months (art. 178). File and pay by the following month's 20th under art. 177.1–177.2 via the State Tax Service electronic system. The registered foreign electronic seller has the distinct payment deadline below. Imported goods VAT is assessed/collected by customs under art. 177.4. For a non-VAT-registered tax agent buying in-scope non-resident services, pay reverse-charge VAT within seven days after paying the supplier and file by the following month's 20th (art. 169.5). A VAT-registered agent pays with the monthly VAT return and claims credit only when art. 169.4 and art. 175 conditions are met.
 
-**Insurance patterns**
+For a foreign B2C electronic seller without an Azerbaijan PE, [Cabinet Decision 387, paragraphs 1.3, 2 and 3-1](https://frameworks.e-qanun.az/55/f_55514.html) requires registration through the electronic-commerce tax administration platform within 30 days after the calendar-year USD 10,000-equivalent threshold is exceeded. VAT registration takes effect from tax registration. Supply the entity/home-country registration and tax information, addresses, activities, payment currency, intended start date, at least two responsible persons and the prescribed electronic supporting documents. The authority checks the submission within 20 working days under paragraph 2.2. Document authentication and translation follow section 7. Changes in the paragraph 2.7 information require notification within 20 working days (paragraph 4.1.2).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| PASHA SIGORTA, AXA MBASK, ATESHGAH | EXCLUDE | Exempt |
-| SIGORTA, INSURANCE | EXCLUDE | Same |
+The registered seller calculates its own Azerbaijan VAT and submits monthly returns through that platform by the following month's 20th under Tax Code arts. 177.2 and 178; the special art. 177.1.4 payment deadline is the last day of the following month. Pay in the selected AZN, USD, EUR or GBP currency under Decision 387 paragraphs 2.7.9 and 3-1.4, converting foreign-currency payment to AZN at the Central Bank's official rate on the payment day. Paragraphs 1.5.1–1.5.4 identify customer-location evidence, including local payment provider, customer location, device IP and mobile country code. Under paragraph 1.7, the registered seller's in-scope B2C supplies are not also collected through the art. 169 payment-agent route; paragraph 1.7-1 retains that route for unregistered sellers. Screen this status before applying payment-agent collection, so the same receipt is not charged twice. A seller deregistered under section 3 returns to the applicable art. 169.3 treatment; previous liabilities remain due.
 
-### 3.5 Food and entertainment (blocked)
+If taxable business ceases, apply for deregistration under art. 158.1. For voluntary low-turnover deregistration, art. 158.2-1 also weights qualifying retail/public-service POS turnover by 0.5 when applying the 100,000 test in art. 158.2. This rule took effect on 1 January 2026 under Law 297-VIIQD art. 19.6. The restriction to operations after 1 January 2026 in art. 18.1 expressly names arts. 155.1-1 and 218.1-1, not art. 158.2-1; do not transplant that receipt-date restriction into the deregistration test. Inventory retained at cancellation is treated as supplied immediately before cancellation under arts. 159.6, 161.3 and 166.3, subject to the overriding art. 159.7 credit-entitlement rule. If the goods were acquired in a VAT-taxed transaction but the purchaser had no art. 175 entitlement to input credit, their supply is not taxable under that provision; if entitlement was partly denied, reduce the taxable amount by the denied proportion. Establish entitlement from the acquisition/use records, not simply whether credit was claimed. A final return on liquidation/individual cessation is required within 30 days, without extending the normal return deadline (art. 177.2). Small turnover alone does not cancel registration.
 
-**Food and entertainment patterns**
+## Penalties and interest
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BRAVO, BAZARSTORE, ARAZ SUPERMARKET | Default BLOCK | Personal provisioning |
-| RESTAURANT, RESTORAN, KAFE | Default BLOCK | Entertainment blocked |
+Under [Tax Code art. 57.1](https://e-qanun.az/frameworks/46/f_46948.html), failure without grounds to submit a required return for a period with taxable or exempt operations or tax objects attracts AZN 40. Under [Tax Code art. 58.1](https://e-qanun.az/frameworks/46/f_46948.html), an understated or evaded tax amount attracts a 50% financial sanction, excluding additional tax assessed by a desk audit; the horizontal-monitoring case in art. 58.1-1 uses 25%. Under [Tax Code art. 59.1–59.2](https://e-qanun.az/frameworks/46/f_46948.html), late tax or advance payments bear 0.1% per overdue day, for at most one year. For additional tax identified by field audit or horizontal monitoring, interest starts on the assessment date under art. 59.2. Apply the facts and procedural exceptions before assessing a sanction.
 
-### 3.6 SaaS — non-resident (reverse charge)
+Operating without compulsory VAT registration attracts 50% of the VAT payable for the unregistered period under art. 58.4. Failure to make the specified timely VAT-deposit payment attracts 50% of the unpaid VAT under art. 58.6, subject to its exception. These are separate conduct tests; do not automatically add every sanction to the same error.
 
-**SaaS non-resident patterns**
+## Cross-border points
 
-| Pattern | Box | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | 5/6/10 | Reverse charge at 18% |
-| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 5/6/10 | Same |
+Goods are supplied where delivered, with dispatch/installation exceptions in art. 167. Services use art. 168's ordered tests: immovable property, movable-property work, cultural/education/sport activity, transport, listed recipient-location services, then the supplier-place fallback. The earliest applicable paragraph controls. Legal/accounting/consulting, intellectual property, specified electronic services and other listed services use the recipient-location test under art. 168.1.5. Do not infer export zero-rating from payment in foreign currency.
 
-### 3.7 Professional services
+Imported taxable goods use customs value plus applicable duties/taxes excluding VAT and road tax (art. 162). For in-country services of an unregistered non-resident, assess reverse charge under art. 169 independently of income-tax withholding. Art. 33.8-1 expressly excludes certain remotely delivered professional services, real-time education/training and event-ticket booking from its electronic-commerce definition; that does not erase other VAT source/agent obligations. Apply the registered foreign B2C procedure and its separate payment timing above, with the customer-location and exclusion tests in Cabinet Decision 387.
 
-**Professional services patterns**
+## Two worked examples that recompute
 
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| NOTAR, NOTARY | Domestic 18% | 8 | If business purpose |
-| AUDITOR, MUHASIB | Domestic 18% | 8 | Deductible |
-| VEKIL, LAWYER | Domestic 18% | 8 | If business matter |
+### Ordinary monthly return
 
-### 3.8 Payroll and exclusions
+Assume 50,000 VAT-exclusive paid taxable sales and 20,000 VAT-exclusive purchases, with all input conditions met and no adjustments. Output VAT is 9,000; input VAT is 3,600; payable is 5,400.
 
-**Payroll and exclusions patterns**
+```oa-check
+name: AZ ordinary VAT 2026
+inputs:
+  sales_net: 50000
+  purchases_net: 20000
+steps:
+  - output_vat: sales_net*0.18
+  - input_vat: purchases_net*0.18
+  - payable: output_vat-input_vat
+expected:
+  output_vat: 9000
+  input_vat: 3600
+  payable: 5400
+```
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| EMEK HAQQI, SALARY | EXCLUDE | Wages |
-| DIVIDEND | EXCLUDE | Out of scope |
-| DAXILI, INTERNAL, OWN TRANSFER | EXCLUDE | Internal |
-| ATM, NAGD, CASH | TIER 2 — ask | Default exclude |
+### Mixed taxable and exempt use
 
-## Section 4 — Worked examples
+Assume 80,000 standard-rate VAT-exclusive turnover and 20,000 exempt turnover. Common inputs have 9,000 VAT and cannot be directly attributed; all payment/invoice conditions are met. The taxable share is 80%, giving 7,200 input credit. Output VAT of 14,400 less credit gives 7,200 payable. No art. 174.5 relief applies in this example.
 
-### Example 1 — Non-resident SaaS reverse charge
-
-**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; AZN 27.20`
-
-**Reasoning:** US entity. Reverse charge at 18%. Box 5/6 (output), Box 10 (input credit). Net zero.
-
-**Example 1 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -27.20 | -27.20 | 4.90 | 18% | 10 | 5/6 | N |
-
-### Example 2 — Domestic utility
-
-**Input line:** `10.04.2026 ; AZERCELL ; DEBIT ; Mobile April ; -35.00 ; AZN`
-
-**Example 2 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | AZERCELL | -35.00 | -29.66 | -5.34 | 18% | 8 | N |
-
-### Example 3 — Entertainment blocked
-
-**Input line:** `15.04.2026 ; RESTORAN SHIRVANSHAH ; DEBIT ; Dinner ; -180.00 ; AZN`
-
-**Example 3 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTORAN SHIRVANSHAH | -180.00 | -180.00 | 0 | — | — | Y | "Entertainment: blocked" |
-
-### Example 4 — Export (zero-rated)
-
-**Input line:** `22.04.2026 ; TECHCORP LLC ; CREDIT ; IT services ; +8,500.00 ; AZN`
-
-**Example 4 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | TECHCORP LLC | +8,500 | +8,500 | 0 | 0% | 3 | Y | "Verify export docs" |
-
-### Example 5 — Motor vehicle blocked
-
-**Input line:** `28.04.2026 ; BAKU AUTO ; DEBIT ; Car lease ; -850.00 ; AZN`
-
-**Example 5 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | BAKU AUTO | -850.00 | -850.00 | 0 | — | — | Y | "Vehicle: blocked" |
-
-### Example 6 — Import of goods
-
-**Input line:** `25.04.2026 ; CUSTOMS ; DEBIT ; Import EDV machinery ; -3,600 ; AZN`
-
-**Example 6 table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 25.04.2026 | CUSTOMS | -3,600 | -3,051 | -549 | 18% | 9 | N |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 18% (Tax Code Article 175)
-
-- **Unknown rate on a sale** — 18%
-
-### 5.2 Zero rate
-
-- **Zero rate supplies** — Exports, international transport, diplomatic supplies, certain agricultural produce. Box 3.
-
-### 5.3 Exempt supplies
-
-- **Exempt supplies** — Financial services, insurance, medical, educational, residential rental, public transport, postal.
-
-### 5.4 Reverse charge — non-resident services (Article 169)
-
-- **Reverse charge non-resident services** — Self-assess at 18%. Box 5/6 (output), Box 10 (input credit). Net zero for fully taxable.  _(Article 169)_
-
-### 5.5 Import EDV
-
-- **Import EDV** — At customs. Base = customs value + duties. 18%. Box 9. Recoverable.
-
-### 5.6 Blocked input EDV
-
-- **Blocked input EDV categories** — Passenger vehicles, entertainment, personal consumption, no valid invoice, for exempt supplies.
-
-### 5.7 Credit notes
-
-- **Credit notes** — Both parties adjust in current period.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial?"
-
-- **Fuel/vehicles** — Default: 0%. Question: "Car or commercial?"
-
-### 6.2 Entertainment — *Default:* block.
-
-- **Entertainment** — Default: block.
-
-### 6.3 SaaS entities — *Default:* reverse charge. *Question:* "Check invoice."
-
-- **SaaS entities** — Default: reverse charge. Question: "Check invoice."
-
-### 6.4 Owner transfers — *Default:* exclude. *Question:* "Sale or own money?"
-
-- **Owner transfers** — Default: exclude. Question: "Sale or own money?"
-
-### 6.5 Foreign incoming — *Default:* zero-rated. *Question:* "Export docs?"
-
-- **Foreign incoming** — Default: zero-rated. Question: "Export docs?"
-
-### 6.6 Large purchases — *Question:* "Fixed asset?"
-
-- **Large purchases** — Question: "Fixed asset?"
-
-### 6.7 Mixed-use phone — *Default:* 0%. *Question:* "Business line?"
-
-- **Mixed-use phone** — Default: 0%. Question: "Business line?"
-
-### 6.8 Cash withdrawals — *Default:* exclude.
-
-- **Cash withdrawals** — Default: exclude.
-
-### 6.9 Rent — *Default:* no EDV. *Question:* "Commercial with EDV?"
-
-- **Rent** — Default: no EDV. Question: "Commercial with EDV?"
-
-## Section 7 — Excel working paper template
-
-Per `vat-workflow-base` Section 3 with Azerbaijan-specific box codes.
-
-## Section 8 — Azerbaijani bank statement reading guide
-
-**CSV conventions.** Kapital Bank and PASHA Bank exports use semicolon delimiters, DD.MM.YYYY dates.
-
-**Azerbaijani terms.** Emek haqqi (salary), faiz (interest), kredit (loan), nagd (cash), daxili (internal), gomruk (customs), sigorta (insurance).
-
-**Internal transfers.** Between client's Kapital, PASHA, IBA accounts. Always exclude.
-
-**Foreign currency.** Convert to AZN at the Central Bank of Azerbaijan rate.
-
-**IBAN prefix.** AZ = Azerbaijan.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type — *Fallback:* "Sole trader or company?"
-
-- **Entity type** — Fallback: "Sole trader or company?"
-
-### 9.2 EDV registration — *Fallback:* "VAT payer or simplified regime?"
-
-- **EDV registration** — Fallback: "VAT payer or simplified regime?"
-
-### 9.3 VOEN — *Fallback:* "What is your VOEN?"
-
-- **VOEN** — Fallback: "What is your VOEN?"
-
-### 9.4 Period — *Inference:* statement dates.
-
-- **Period** — Inference: statement dates.
-
-### 9.5 Industry — *Fallback:* "What does the business do?"
-
-- **Industry** — Fallback: "What does the business do?"
-
-### 9.6 Exempt supplies — *If yes, R-AZ-3 fires.*
-
-- **Exempt supplies** — If yes, R-AZ-3 fires.
-
-### 9.7 Credit B/F — *Always ask.*
-
-- **Credit B/F** — Always ask.
-
-### 9.8 Cross-border — *Fallback:* "Customers outside Azerbaijan?"
-
-- **Cross-border** — Fallback: "Customers outside Azerbaijan?"
-
-## Section 10 — Reference material
-
-### Sources
-
-1. Tax Code of Azerbaijan — Articles 159-184
-2. State Tax Service — https://www.taxes.gov.az
-3. Central Bank of Azerbaijan — https://www.cbar.az
-
-### Change log
-
-- **v2.0 (April 2026):** Full rewrite to Malta v2.0 10-section structure.
-
-## End of Azerbaijan VAT (EDV) Skill v2.0
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+```oa-check
+name: AZ mixed VAT input credit 2026
+inputs:
+  taxable_sales: 80000
+  exempt_sales: 20000
+  common_input_vat: 9000
+steps:
+  - share: taxable_sales/(taxable_sales+exempt_sales)
+  - credit: common_input_vat*share
+  - output_vat: taxable_sales*0.18
+  - payable: output_vat-credit
+expected:
+  share: 0.8
+  credit: 7200
+  payable: 7200
+```
+
+## Ask the client first
+
+- What are registration status, rolling turnover, single-contract values and mandatory-category activities?
+- Which receipts occurred from 1 January 2026 and which POS payments qualify for threshold weighting or catering/medical relief?
+- What is the actual supply, customer location, payment/tax point and VAT-inclusive or exclusive price?
+- Are there exempt sales, private use, valid electronic invoices, deposit-account payments and import documents?
+- Are there non-resident suppliers, B2C electronic sales, customs entries or export evidence?
+- Is this a specialist margin/election case or a cessation with retained assets?
+
+## Sources
+
+| Source and provisions read | Official URL | Read on |
+|---|---|---|
+| Tax Code, arts. 33.8-1, 57–59, 153–179 and commencement annotations | https://e-qanun.az/frameworks/46/f_46948.html | 2026-10-31 |
+| Cabinet Decision 387, current consolidated electronic-seller procedure, paras. 1–7 | https://frameworks.e-qanun.az/55/f_55514.html | 2026-10-31 |
+| Law 297-VIIQD, arts. 18.1 and 19.6, commencement and POS transition | https://frameworks.e-qanun.az/61/f_61117.html | 2026-10-31 |
+| Law 413-VIIQD of 26 May 2026, arts. 2.8.1-2.8.4 and 26 (leasing exemptions from 25 December 2026) | https://frameworks.e-qanun.az/62/f_62107.html | 2026-10-31 |
+| STS 2026 amendment FAQ, POS transitional provision art. 18.1 | https://www.taxes.gov.az/uploads/2026/faq/FAQ2026.pdf | 2026-10-31 |
+
+Not yet confirmed: a general block on input VAT for passenger cars or entertainment (the old version of this skill stated one from a secondary source; it was not found in art. 175); which contracts the Law on Financial Lease (412-VIIQ) treats as a financial lease, which decides what falls within the amended exemptions from 25 December 2026. Specialist agricultural margin/election calculations are outside scope.
 
 <!-- openaccountants-cta-block -->
 
