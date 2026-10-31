@@ -1,7 +1,7 @@
 ---
 jurisdiction: LI
 version: 0.8
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
@@ -13,7 +13,7 @@ covered_by:
   TP: li-transfer-pricing
   XB: li-cross-border
 partial:
-  IT-IND: "the 2026 municipal surcharge of each municipality is not yet published by the Steuerverwaltung (its page lists surcharges up to 2025), so a resident's total tax cannot be finished; the 2026 filing date is also not yet set"
+  IT-IND: "the 2026 municipal surcharge of each municipality is not yet published by the Steuerverwaltung (its page lists surcharges up to 2025), so a resident's total tax cannot be finished"
 ---
 
 # Liechtenstein: tax pack
