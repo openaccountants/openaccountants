@@ -23,7 +23,7 @@ This skill answers three questions about individuals (natural persons) for tax y
 
 It is written for anyone answering an individual's question: an employee, a freelancer or sole establishment owner, a property investor, a newcomer or leaver, or a non-resident with UAE income.
 
-**Companion Skills.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** skill. VAT registration and VAT on supplies are in the **uae-vat** skill, and VAT return preparation is in the **ae-vat-return** skill. This skill only points to those rules. It does not repeat them.
+**Companion Skills.** Company Corporate Tax (free zones, deductions, losses, transfer pricing, top-up tax) is in the **ae-corporate-tax** skill. VAT registration, VAT on supplies and VAT return preparation are in the **uae-vat** skill. This skill only points to those rules. It does not repeat them.
 
 **Not covered:** Emirate-level fees and charges, customs duty, excise tax, social security and pension contributions, and the tax a person may still owe to another country (for example, because of citizenship or because they have not broken residence there). For those, refer.
 

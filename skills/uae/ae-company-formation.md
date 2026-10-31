@@ -32,7 +32,7 @@ It does **not** cover licensing. The trade licence, legal form, share capital, o
 Once the company exists, use the companion skills for the detail:
 
 - **ae-corporate-tax**: rates, deductions, losses, transfer pricing, QFZP income tests, returns and penalties.
-- **uae-vat** and **ae-vat-return**: VAT rules, invoicing, e-invoicing and the VAT201 return.
+- **uae-vat**: VAT rules, invoicing, e-invoicing and the VAT201 return.
 - **ae-payroll-social**: employing staff, end-of-service gratuity and GCC nationals' pensions.
 - **ae-income-tax**: individuals (there is no personal income tax on wages).
 
@@ -226,7 +226,7 @@ A QFZP that distributes goods in or from a Designated Zone also needs an agreed-
 ### First filings after formation ([Corporate Tax Law, Articles 51, 53 and 56](https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf); [Tax Procedures Law, Article 6](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf))
 
 - **Corporate Tax registration** on EmaraTax gives the company a TRN. The FTA can also register a person on its own initiative, effective from the date the person became a Taxable Person (Article 51(3)).
-- **VAT registration** is a separate EmaraTax application with its own TRN and effective date; the VAT return periods are those the FTA assigns (see **ae-vat-return**).
+- **VAT registration** is a separate EmaraTax application with its own TRN and effective date; the VAT return periods are those the FTA assigns (see **uae-vat**).
 - **Corporate Tax return and payment** are due 9 months after the end of each tax period:
 
 | First tax period ends | Return and payment due |

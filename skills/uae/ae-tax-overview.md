@@ -25,7 +25,7 @@ The currency is the UAE dirham (AED). Federal taxes are administered by the Fede
 | --- | --- | --- | --- |
 | Corporate Tax | Companies and other juridical persons (including free zone companies); individuals whose business turnover is more than AED 1,000,000 in a calendar year; non-residents with a UAE permanent establishment or nexus | 0% on taxable income up to AED 375,000, 9% above; Small Business Relief; 0% on qualifying income of a Qualifying Free Zone Person | ae-corporate-tax |
 | Domestic Minimum Top-up Tax | UAE entities of multinational groups with revenue of EUR 750 million or more | Tops the UAE effective rate up to 15% | ae-corporate-tax (summary; refer out) |
-| VAT | Businesses whose taxable supplies and imports pass the registration threshold; consumers bear it in the price | Standard rate 5%; mandatory registration above AED 375,000 | uae-vat and ae-vat-return |
+| VAT | Businesses whose taxable supplies and imports pass the registration threshold; consumers bear it in the price | Standard rate 5%; mandatory registration above AED 375,000 | uae-vat |
 | Excise tax | Importers, producers and stockpilers of excise goods, and anyone releasing them from a Designated Zone | 100% on tobacco, energy drinks and e-smoking products; sweetened drinks taxed per litre by sugar content | This skill (summary; refer out) |
 | Personal income tax | Nobody | None. Wages and personal investment income are not taxed | ae-income-tax |
 | Payroll taxes | Nobody for tax | No income tax to withhold from wages; pension and social contributions sit outside the FTA's taxes | ae-payroll-social |
@@ -289,7 +289,7 @@ All returns are filed and paid through EmaraTax.
 - [ ] Each registration made on EmaraTax by its own deadline.
 - [ ] Residence tested if a certificate or treaty is needed; certificate type and period chosen.
 - [ ] Return deadlines diarised: Corporate Tax 9 months, VAT by the 28th day, excise by the 15th day, top-up tax (see "Filing and payment").
-- [ ] Detailed questions routed to ae-corporate-tax, uae-vat, ae-vat-return, ae-income-tax, ae-payroll-social or ae-company-formation.
+- [ ] Detailed questions routed to ae-corporate-tax, uae-vat, ae-income-tax, ae-payroll-social or ae-company-formation.
 
 <!-- openaccountants-cta-block -->
 

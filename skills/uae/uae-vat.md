@@ -1,10 +1,10 @@
 ---
 name: uae-vat
 description: Use this skill whenever asked to prepare, review, or classify transactions for a UAE VAT return (VAT201 form) for any client. Trigger on phrases like "prepare VAT return", "do the VAT", "fill in VAT201", "create the return", "UAE VAT filing", "FTA return", or any request involving UAE VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill covers the UAE only and only standard VAT-registered persons filing VAT201. VAT groups, profit margin schemes, partial exemption with non-trivial exempt supplies, and Designated Zone goods movement classifications are all in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later (for workflow architecture). ALWAYS read this skill before touching any UAE VAT work.
-version: 2.0
+version: 2.1
 jurisdiction: AE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -16,7 +16,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Tax year 2026. UAE VAT is filed by tax period (usually a quarter), not by annual return, so "2026" here means tax periods that fall in calendar year 2026. The rules below are the law as published on tax.gov.ae and mof.gov.ae on 25 September 2026. Two sets of changes took effect this year (1 January 2026 and 14 April 2026) and one more takes effect on 1 October 2026; each is dated where it applies. A short section covers returns for periods that ended before those dates.
 
-## Scope and who this is for ([VAT Law, consolidated to Decree-Law No. 16 of 2025](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated 09-2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf))
+## Scope and who this is for
+
+Sources for this section: [VAT Law, consolidated to Decree-Law No. 16 of 2025](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated 09-2026](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf).
 
 This skill covers federal Value Added Tax under Federal Decree-Law No. 8 of 2017 ("VAT Law") and its Executive Regulation (Cabinet Decision No. 52 of 2017), for:
 
@@ -236,7 +238,9 @@ The box layout is from the FTA's returns user guide (August 2021 edition, the la
 | Supplier invoice unpaid 7 months after the supply; supplier has written it off, reduced its output tax and notified the buyer | Buyer reduces its recoverable input tax by the tax on the amount written off (input-side Adjustment column) | VAT Law Article 64(2): all conditions, including over 6 months unpaid |
 | Invoice not yet paid and the business does not intend to pay within six months of the agreed date | Do not claim the input tax | Executive Regulation Article 54(1)-(2) |
 
-## Worked cases ([VAT Law, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [FTA VAT Returns User Guide](https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf))
+## Worked cases
+
+Sources for this section: [VAT Law, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf); [Executive Regulation, consolidated](https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf); [FTA VAT Returns User Guide](https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf).
 
 **Case 1: mandatory registration.** A Dubai mainland trading LLC, not registered, has taxable supplies of AED 390,000 in the 12 months to 30 June 2026. That exceeds AED 375,000, so it must apply within 30 days of becoming required to register. The FTA registers it from the first day of the month after the month in which it became required to register, whether or not it applies, and it owes VAT on its taxable supplies from that date. A late application is a penalty of AED 10,000.
 
@@ -255,6 +259,41 @@ The box layout is from the FTA's returns user guide (August 2021 edition, the la
 | Client dinner (blocked, not reported) | 1,200 | 0 | none |
 
 Box 12 = 20,000 + 183.60 = 20,183.60. Box 13 = 10,000 + 183.60 = 10,183.60. Box 14 = 20,183.60 - 10,183.60 = 10,000. The return and AED 10,000 must reach the FTA by 28 October 2026.
+
+```oa-check
+name: Reverse charge on a software subscription, Case 3 (2026)
+inputs:
+  subscription: 3672
+  rate: 0.05
+steps:
+  - box_3_vat: subscription * rate
+  - box_10_vat: box_3_vat
+  - net_effect: box_3_vat - box_10_vat
+expected:
+  box_3_vat: 183.60
+  box_10_vat: 183.60
+  net_effect: 0.00
+```
+
+```oa-check
+name: Quarterly VAT201, Case 4 (quarter to 30 September 2026)
+inputs:
+  local_sales: 400000
+  reverse_charge_base: 3672
+  local_purchases: 200000
+  rate: 0.05
+steps:
+  - box_1b_vat: local_sales * rate
+  - box_3_vat: reverse_charge_base * rate
+  - box_9_vat: local_purchases * rate
+  - box_12: box_1b_vat + box_3_vat
+  - box_13: box_9_vat + box_3_vat
+  - box_14: box_12 - box_13
+expected:
+  box_12: 20183.60
+  box_13: 10183.60
+  box_14: 10000.00
+```
 
 **Case 5: gift limit.** In the 12 months to 31 August 2026 a business gives commercial gifts of goods on which it recovered input tax. One customer receives goods costing AED 400: no deemed supply (not above AED 500). Another receives goods costing AED 700: that is a deemed supply reported in Box 1, subject to the AED 2,000 relief on total output tax on deemed supplies in the 12 months.
 
@@ -328,6 +367,25 @@ Box 12 = 20,000 + 183.60 = 20,183.60. Box 13 = 10,000 + 183.60 = 10,183.60. Box 
 - [ ] E-invoicing deadline identified from last year's revenue.
 - [ ] Changes effective 1 October 2026 applied to supplies from that date.
 - [ ] Records kept for five years (15 years for real estate).
+
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| VAT Law, consolidated to Decree-Law No. 16 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-10-31 |
+| Executive Regulation, consolidated 09-2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-10-31 |
+| FTA VAT Returns User Guide | https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf | 2026-10-31 |
+| Tax Procedures Law, consolidated | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf | 2026-10-31 |
+| Cabinet Decision No. 74 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2074%20of%202023%20on%20Executive%20Regulation%20of%20Federal%20Decree-Law%20No.%2028%20of%202022%20on%20Tax%20Procedures%20-%20For%20Publishing.pdf | 2026-10-31 |
+| Cabinet Decision No. 40 of 2017 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-10-31 |
+| Cabinet Decision No. 106 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20106%20of%202025.pdf | 2026-10-31 |
+| Ministerial Decision No. 244 of 2025 | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-10-31 |
+| Ministerial Decision No. 66 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-10-31 |
+| FTA Profit Margin Scheme Guide VATGPM1 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Profit%20Margin-Scheme-EN-02-01-2026-re.pdf | 2026-10-31 |
+| Cabinet Decision No. 149 of 2026 (this link returned 404 on 2026-10-31; last read when the skill was written) | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-09-25 |
+| Executive Regulation as at October 2025 (this link returned 404 on 2026-10-31; last read when the skill was written) | https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf | 2026-09-25 |
+
+Not yet confirmed: the Minister's decision setting the value for the cash-payment input tax block; whether the penalties table in force from 14 April 2026 applies to violations that began before that date.
 
 <!-- openaccountants-cta-block -->
 
