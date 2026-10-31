@@ -35,7 +35,7 @@ Individuals use the calendar tax year and household taxation; companies use thei
 - **Cross-border:** the complete artist-specific withholding finality calculation, EEA exit-deferral qualification/form-follow-up, exit CEHR/CDHR intersections, and named Swiss/UAE treaty/IFI questions remain reserved. The published UK property-gain relief is positively supplied with its coverage gates; its full implementation bridge is not derived. No complete treaty-rate matrix is claimed.
 - **Dates and evidence:** 2027 scales, ceilings, forms and calendars not established in these Guides remain future-parameter limits. Actual household, contract, caisse, territory, establishment and treaty facts are case inputs. They are distinct from the legal/source conflicts named above.
 
-The accompanying `ledgers/<slug>.md` files bind figures and rules to exact official quotations, read dates and old-topic destinations. Independent AI review is a source/calculation check; these Guides have no new accountant attestation.
+The accompanying `evidence/ledgers/<slug>.md` files bind figures and rules to exact official quotations, read dates and old-topic destinations. Independent AI review is a source/calculation check; these Guides have no new accountant attestation.
 
 ## Official sources
 
