@@ -3,10 +3,11 @@ name: myanmar-personal-income-tax-2
 description: "Source-cited draft: personal income tax for Myanmar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: MM
 tax_year: 2025
-last_updated: 2026-08-22
+last_updated: 2026-10-31
+version: 0.2
 authored_by: Mr Moe Lwin Tun
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -36,7 +37,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 You wrote a tax Guide for me earlier in this conversation. Before I publish it, fix the following IN the full Guide and give me the complete corrected document back (no commentary, just the Guide):  1. Add a "## The method, step by step" section — numbered steps in second person, including what breaks when the order is wrong. The method is the part the accountant's name will stand behind.  Why this matters: every figure with its official link gets machine-checked against that page nightly and kept current forever. A figure without one cannot be checked and will display as unverified.
 
-> Contributed by Mr Moe Lwin Tun, CPA-123456.
+> Contributed by Mr Moe Lwin Tun.
 
 <!-- openaccountants-cta-block -->
 

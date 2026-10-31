@@ -3,10 +3,11 @@ name: myanmar-vat-gst-2
 description: "Source-cited draft: vat / gst for Myanmar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
 jurisdiction: MM
 tax_year: 2025
-last_updated: 2026-08-22
+last_updated: 2026-10-31
+version: 0.2
 authored_by: Mr Moe Lwin Tun
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -25,7 +26,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **Specific Goods Tax (separate from commercial tax)** — Excise-style Specific Goods Tax applies to listed goods (e.g. tobacco, alcohol, vehicles, fuel) at separately scheduled rates  _([Specific Goods Tax Law — https://taxsummaries.pwc.com/myanmar/corporate/other-taxes](https://taxsummaries.pwc.com/myanmar/corporate/other-taxes))_
 - **Commercial tax on exports** — Most exported goods are exempt from commercial tax (0%); electricity and crude oil are notable exceptions ((approx — confirm))  _([Commercial Tax Law — https://taxsummaries.pwc.com/myanmar/corporate/other-taxes](https://taxsummaries.pwc.com/myanmar/corporate/other-taxes))_
 
-> Contributed by Mr Moe Lwin Tun, CPA-123456.
+> Contributed by Mr Moe Lwin Tun.
 
 <!-- openaccountants-cta-block -->
 
