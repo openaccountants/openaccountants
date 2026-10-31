@@ -1,6 +1,8 @@
-# Figure/rule ledger: de-uk-employer-first-hire
+# de-uk-employer-first-hire: figure and rule ledger
 
-Current Guide `7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff` at main `62b7639a5a68324a83a96bb0190fff8b7c76f8c5`. Writer ledger only; no Guide edit, new independent review or country readiness claim. Official selected clauses actually read29October2026. This is a first-hire setup workflow with five qualitative decision cases, not a net-pay calculation Guide; zero executable tax blocks alone is not a defect. Every original case is carried unchanged.
+Guide: [de-uk-employer-first-hire](../skills/international/germany/de-uk-employer-first-hire.md). Accepted Guide SHA-256: `7f2bb0b78a274a979c60708a8d2967859daed0a46618ed2b76e6e2787fd7f0ff`.
+Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
+Original published ledger SHA-256: `50e05f26a2529421c0ce3c81f69228cd3ee16116f1d5bedcdd37abe93fd7f8b4`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 
 | LF | Section | Exact current rule / figure | Own act/article and official URL | Exact original-language selected quote / classification | Read date |
 |---|---|---|---|---|---|
@@ -108,3 +110,8 @@ Actual introduction body51aa5dfa (4October2026) plus current-main `62b7639a5a683
 ## Writer checks / precise limits
 
 All quote bodies are exact substrings of pinned derived readers, using native literalLF coordinates; raw bodies are unchanged. No claim that every paragraph of SGBIV/SGBVII, DVKA FAQs or the entire EStG was read. The exact scopes are recorded in actual-read-quotes.json. Statements about UK posting or multi-country coverage remain referrals, not supplied substantive UK coordination algorithms. A prior certificate is not automatically invalidated by this workflow: changed facts trigger assessment. No real taxpayer, registration, payroll filing or authority enquiry was performed. The five decision controls preserve declared facts and branch logic; they are not a fabricated administrative-runtime demonstration.
+
+## Official source excerpts
+
+| Source ID / operative unit | Official source | Short exact original-language excerpt | Read on | Reviewed unit SHA-256 |
+| --- | --- | --- | --- | --- |
