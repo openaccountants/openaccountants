@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import importlib.util
+import os
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT / "scripts"))
@@ -108,7 +110,11 @@ class MergeRecord(unittest.TestCase):
         validate.check_merge_records(errors, warnings, pr_body="nothing", deleted={"skills/x/loser-x.md"}, old_text=lambda _: self.LOSER)
         self.assertEqual(len(errors), 3)
         errors, warnings = [], []
-        validate.check_merge_records(errors, warnings, pr_body=None, deleted={"skills/x/loser-x.md"})
+        # On a pull_request run Actions sets GITHUB_EVENT_PATH, so pr_body=None
+        # would pick up the real PR body. Clear it to test the no-PR path.
+        with mock.patch.dict(os.environ):
+            os.environ.pop("GITHUB_EVENT_PATH", None)
+            validate.check_merge_records(errors, warnings, pr_body=None, deleted={"skills/x/loser-x.md"})
         self.assertEqual(len(warnings), 1)
 
 
