@@ -1,7 +1,7 @@
 ---
 name: de-payroll
 description: "German payroll for employees for pay periods in 2026: wage tax (Lohnsteuer) by tax class I to VI through the finance ministry's 2026 program flow (PAP) with the EUR 12,348 basic allowance, the Vorsorgepauschale, solidarity surcharge and church tax; the four social insurance branches (pension 18.6%, unemployment 2.6%, health 14.6% plus the fund's additional rate, average 2.9%, care 3.6% with the childless surcharge) and the 2026 ceilings; Minijobs (EUR 603), the Midijob band to EUR 2,000, the Aktivrente; the wage tax return by the 10th, contributions by the third-last bank working day, DEÜV reports, payslips, minimum wage, tax-free surcharges, sick and maternity pay, and penalties. Trigger on: Lohnsteuer, Gehaltsabrechnung, Lohnabrechnung, Entgeltabrechnung, Brutto Netto, Nettolohn, Steuerklasse, Sozialversicherung, Arbeitnehmeranteil, Arbeitgeberanteil, Beitragsbemessungsgrenze, Solidaritätszuschlag, Kirchensteuer, Rentenversicherung, Krankenversicherung, Pflegeversicherung, Arbeitslosenversicherung, Minijob, Midijob, Mindestlohn, payslip Germany, Lohnsteuer-Anmeldung, DEÜV. Out of scope: the employee's annual return (de-employee-income-tax), the self-employed (de-social-contributions, de-einkommensteuer-freelancer), non-residents' wider German tax (de-non-resident-tax)."
-version: 1.7
+version: 1.8
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -39,23 +39,23 @@ All wage tax amounts are yearly. The PAP annualises the period's pay, computes t
 | Item | Rate or amount | Year | Source |
 | --- | --- | --- | --- |
 | Basic allowance (Grundfreibetrag): no tax up to | EUR 12,348 | 2026 | [§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html) |
-| First progressive zone: (914.51 y + 1,400) y | EUR 12,349 to 17,799 | 2026 | § 32a(1) EStG |
-| Second progressive zone: (173.10 z + 2,397) z + 1,034.87 | EUR 17,800 to 69,878 | 2026 | § 32a(1) EStG |
-| Third zone: 0.42 x less 11,135.63 | EUR 69,879 to 277,825 | 2026 | § 32a(1) EStG |
-| Top zone: 0.45 x less 19,470.38 | from EUR 277,826 | 2026 | § 32a(1) EStG |
+| First progressive zone: (914.51 y + 1,400) y | EUR 12,349 to 17,799 | 2026 | § 32a(1) EStG, https://www.gesetze-im-internet.de/estg/__32a.html |
+| Second progressive zone: (173.10 z + 2,397) z + 1,034.87 | EUR 17,800 to 69,878 | 2026 | § 32a(1) EStG, https://www.gesetze-im-internet.de/estg/__32a.html |
+| Third zone: 0.42 x less 11,135.63 | EUR 69,879 to 277,825 | 2026 | § 32a(1) EStG, https://www.gesetze-im-internet.de/estg/__32a.html |
+| Top zone: 0.45 x less 19,470.38 | from EUR 277,826 | 2026 | § 32a(1) EStG, https://www.gesetze-im-internet.de/estg/__32a.html |
 | Employee lump sum (ANP), classes I to V | EUR 1,230 | 2026 | [§ 9a EStG](https://www.gesetze-im-internet.de/estg/__9a.html) |
 | Special expenses lump sum (SAP), classes I to V | EUR 36 | 2026 | [§ 10c EStG](https://www.gesetze-im-internet.de/estg/__10c.html) |
 | Single parent relief (EFA), class II, first child; each further child adds EUR 240 (only through an ELStAM allowance) | EUR 4,260 | 2026 | [§ 24b(2) EStG](https://www.gesetze-im-internet.de/estg/__24b.html) |
 | Child allowances per counter, classes I to III (surcharge and church tax base only) | EUR 9,756 | 2026 | [PAP 2026](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2) |
-| Child allowances per counter, class IV | EUR 4,878 | 2026 | PAP 2026 |
+| Child allowances per counter, class IV | EUR 4,878 | 2026 | PAP 2026, https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 |
 | Classes V and VI: minimum tax as share of the taxable amount | 14% | 2026 | [§ 39b(2) sentence 7 EStG](https://www.gesetze-im-internet.de/estg/__39b.html) |
-| Classes V and VI: at most 42% above EUR 14,071; exactly 42% above EUR 34,939; 45% above EUR 222,260 | thresholds as stated | 2026 | § 39b(2) sentence 7 EStG; PAP 2026 (W1STKL5, W2STKL5, W3STKL5) |
+| Classes V and VI: at most 42% above EUR 14,071; exactly 42% above EUR 34,939; 45% above EUR 222,260 | thresholds as stated | 2026 | § 39b(2) sentence 7 EStG; PAP 2026 (W1STKL5, W2STKL5, W3STKL5), https://www.gesetze-im-internet.de/estg/__39b.html |
 | Vorsorgepauschale: the unemployment part counts only so far as it and the health and care parts together stay within | EUR 1,900 | 2026 | [§ 39b(2) sentence 5 no. 3(e) EStG](https://www.gesetze-im-internet.de/estg/__39b.html); PAP 2026 (VSPHB) |
 | Reduced health rate used in the Vorsorgepauschale (PAP: KVSATZAN = KVZ/2/100 + 0.07) | 14.0% | 2026 | [§ 243 SGB V](https://www.gesetze-im-internet.de/sgb_5/__243.html); PAP 2026 |
 | Solidarity surcharge on the wage tax | 5.5% | 2026 | [§ 4 SolzG](https://www.gesetze-im-internet.de/solzg_1995/__4.html) |
-| Surcharge capped at this share of the excess over the exemption limit (phase-in) | 11.9% | 2026 | § 4 SolzG |
+| Surcharge capped at this share of the excess over the exemption limit (phase-in) | 11.9% | 2026 | § 4 SolzG, https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 | Surcharge exemption limit, all classes except III | EUR 20,350 | 2026 | [§ 3(3) SolzG](https://www.gesetze-im-internet.de/solzg_1995/__3.html) |
-| Surcharge exemption limit, class III | EUR 40,700 | 2026 | § 3(3) SolzG |
+| Surcharge exemption limit, class III | EUR 40,700 | 2026 | § 3(3) SolzG, https://www.gesetze-im-internet.de/solzg_1995/__3.html |
 | Church tax on the church tax base, by state | 8% or 9% | 2026 | [Finance ministry, Steuern von A bis Z](https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9) |
 | Tax-free pay past the standard retirement age (Aktivrente), per year | EUR 24,000 | 2026 | [§ 3 no. 21 EStG](https://www.gesetze-im-internet.de/estg/__3.html) |
 | The same, per month in payroll | EUR 2,000 | 2026 | [Finance ministry Aktivrente FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/FAQ-zur-Aktivrente.html) |
@@ -67,17 +67,17 @@ All wage tax amounts are yearly. The PAP annualises the period's pay, computes t
 | Pension insurance, full rate (employer and employee 9.3% each) | 18.6% | 2026 | [RVBeitrSBek 2026](https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html); [§ 168(1) no. 1 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__168.html) |
 | Unemployment insurance, full rate (1.3% each) | 2.6% | 2026 | [§ 341(2) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html); [§ 346(1) SGB III](https://www.gesetze-im-internet.de/sgb_3/__346.html) |
 | Health insurance, general rate (half each) | 14.6% | 2026 | [§ 241 SGB V](https://www.gesetze-im-internet.de/sgb_5/__241.html); [§ 249(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__249.html) |
-| Health: the fund's own additional rate, half each | fund's rate | 2026 | § 249(1) SGB V |
+| Health: the fund's own additional rate, half each | fund's rate | 2026 | § 249(1) SGB V, https://www.gesetze-im-internet.de/sgb_5/__249.html |
 | Average additional rate (planning value; binding for the groups of § 242(3) SGB V) | 2.9% | 2026 | [Federal Health Ministry, Beiträge](https://www.bundesgesundheitsministerium.de/beitraege) |
 | Care insurance, full rate | 3.6% | 2026 | [§ 1 PBAV 2025](https://www.gesetze-im-internet.de/pbav_2025/__1.html) |
 | Care, employer share outside Saxony (employee the same with one child) | 1.8% | 2026 | [§ 58(1) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html); PAP 2026 |
 | Care, Saxony: employee bears 1 point more (employee 2.3%, employer 1.3%, with one child) | 1 point | 2026 | [§ 58(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__58.html); PAP 2026 |
 | Childless surcharge, employee only, from the month after turning 23 | 0.6 points | 2026 | [§ 55(3) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html) |
-| Reduction per child from the second to the fifth, while under 25, employee only | 0.25 points | 2026 | § 55(3) SGB XI |
+| Reduction per child from the second to the fifth, while under 25, employee only | 0.25 points | 2026 | § 55(3) SGB XI, https://www.gesetze-im-internet.de/sgb_11/__55.html |
 | Pension and unemployment ceiling (BBG RV/AV) | EUR 101,400 a year; EUR 8,450 a month | 2026 | [SVBezGrV 2026 § 4](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3); [§ 341(4) SGB III](https://www.gesetze-im-internet.de/sgb_3/__341.html) |
 | Health and care ceiling (BBG KV/PV) | EUR 69,750 a year; EUR 5,812.50 a month | 2026 | SVBezGrV 2026 § 2(2) (special JAEG of § 6(7) SGB V); [§ 55(2) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__55.html); [BMG actual 2026 contribution-ceiling guidance](https://www.bundesgesundheitsministerium.de/beitraege/seite) expressly states these amounts; the special-JAEG reference alone is not treated as the whole 2026 contribution-ceiling proof |
-| Compulsory health insurance threshold (JAEG) | EUR 77,400 a year; EUR 6,450 a month | 2026 | SVBezGrV 2026 § 2(1) |
-| Special JAEG, only for people privately insured on 31 December 2002 | EUR 69,750 a year | 2026 | SVBezGrV 2026 § 2(2) |
+| Compulsory health insurance threshold (JAEG) | EUR 77,400 a year; EUR 6,450 a month | 2026 | SVBezGrV 2026 § 2(1), https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html |
+| Special JAEG, only for people privately insured on 31 December 2002 | EUR 69,750 a year | 2026 | SVBezGrV 2026 § 2(2), https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html |
 | Insolvency levy, employer only | 0.15% | 2026 | [§ 360 SGB III](https://www.gesetze-im-internet.de/sgb_3/__360.html) |
 | U1 (sick pay) and U2 (maternity) levies, employer only | each fund's rate | 2026 | [§ 1 AAG](https://www.gesetze-im-internet.de/aufag/__1.html), [§ 7 AAG](https://www.gesetze-im-internet.de/aufag/__7.html) |
 
@@ -103,15 +103,15 @@ Do not read the care rate from § 55(1) SGB XI: the statute still prints "3,4 Pr
 | Commercial Minijob: employer's flat health contribution (if statutorily insured) | 13% | 2026 | [§ 249b SGB V](https://www.gesetze-im-internet.de/sgb_5/__249b.html) |
 | Commercial Minijob: employer's flat pension contribution | 15% | 2026 | [§ 172(3) SGB VI](https://www.gesetze-im-internet.de/sgb_6/__172.html) |
 | Minijobber's ordinary own pension share where the assessment base is not raised by the EUR 175 minimum; otherwise use the qualified remainder worksheet below (18.6% less 15%), unless released | 3.6% | 2026 | Derived; [Minijob-Zentrale](https://www.minijob-zentrale.de/DE/die-minijobs/minijob-mit-verdienstgrenze) states 3.6% |
-| Private-household Minijob: employer's flat health and pension contributions, each | 5% | 2026 | § 249b SGB V; § 172(3a) SGB VI |
+| Private-household Minijob: employer's flat health and pension contributions, each | 5% | 2026 | § 249b SGB V; § 172(3a) SGB VI, https://www.gesetze-im-internet.de/sgb_5/__249b.html |
 | Uniform flat tax where flat or Minijob pension contributions are paid (covers wage tax, surcharge, church tax) | 2% | 2026 | [§ 40a(2) EStG](https://www.gesetze-im-internet.de/estg/__40a.html) |
-| Flat tax on a Minijob without those contributions | 20% | 2026 | § 40a(2a) EStG |
-| Flat tax for short-term staff (occasional, at most 18 consecutive working days, average pay per working day not above EUR 150, or needed at once at an unforeseeable time) | 25% | 2026 | § 40a(1) EStG |
-| No 25% (or farm 5%) flat tax if average pay per hour exceeds | EUR 19 | 2026 | § 40a(4) no. 1 EStG; § 40a(4) no. 2 also bars those routes where the same employer pays ordinary § 39b/§ 39c wages for another job |
+| Flat tax on a Minijob without those contributions | 20% | 2026 | § 40a(2a) EStG, https://www.gesetze-im-internet.de/estg/__40a.html |
+| Flat tax for short-term staff (occasional, at most 18 consecutive working days, average pay per working day not above EUR 150, or needed at once at an unforeseeable time) | 25% | 2026 | § 40a(1) EStG, https://www.gesetze-im-internet.de/estg/__40a.html |
+| No 25% (or farm 5%) flat tax if average pay per hour exceeds | EUR 19 | 2026 | § 40a(4) no. 1 EStG; § 40a(4) no. 2 also bars those routes where the same employer pays ordinary § 39b/§ 39c wages for another job, https://www.gesetze-im-internet.de/estg/__40a.html |
 | Short-term job, contribution-free: limited to (not if pursued as an occupation and paid above EUR 603) | 3 months or 70 working days a calendar year; on a farm 15 weeks or 90 working days | 2026 | [§ 8(1) no. 2 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html) |
 | Transition band (Midijob), regular monthly pay, all jobs together | EUR 603.01 to EUR 2,000 | 2026 | [§ 20(2) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__20.html); [Minijob-Zentrale, Midijob](https://www.minijob-zentrale.de/DE/die-minijobs/midijob) |
 | Factor F = 28% divided by the total contribution rate (18.6 + 3.6 + 2.6 + 14.6 + 2.9 = 42.3), as published by the labour ministry (notice of 25 November 2025, Federal Gazette 18 December 2025) | 0.6619 | 2026 | § 20(2a) SGB IV; [Berlin Senate finance circular on 2026 social insurance values](https://www.berlin.de/politik-und-verwaltung/rundschreiben/download.php/4330060) |
-| Apprentices: employer bears the whole contribution if monthly pay is not above | EUR 325 | 2026 | § 20(3) SGB IV |
+| Apprentices: employer bears the whole contribution if monthly pay is not above | EUR 325 | 2026 | § 20(3) SGB IV, https://www.gesetze-im-internet.de/sgb_4/__20.html |
 
 ## The taxable base
 
@@ -391,6 +391,15 @@ Defaults when an answer is missing, for an estimate only: unknown class, estimat
 | Retirement-age pension and unemployment distinction: SGB VI § 5(4), § 172(1); SGB III § 28(1) no. 1, § 346(3) | https://www.gesetze-im-internet.de/sgb_6/__5.html ; https://www.gesetze-im-internet.de/sgb_3/__28.html ; https://www.gesetze-im-internet.de/sgb_6/__172.html ; https://www.gesetze-im-internet.de/sgb_3/__346.html | 2026-10-29 |
 | Pension Vorsorgepauschale and professional schemes: EStG § 39b(2) sentence 5 no. 3(a); PAP 2026 KRV definition | https://www.gesetze-im-internet.de/estg/__39b.html ; https://www.bundesfinanzministerium.de/Content/DE/Downloads/Steuern/Steuerarten/Lohnsteuer/Programmablaufplan/2025-11-12-PAP-2026-anlage-1.pdf?__blob=publicationFile&v=2 | 2026-10-29 |
 | Social contribution rounding and transition allocation: BVV §§ 1 and 2; SGB XI § 58(5) | https://www.gesetze-im-internet.de/beitrvv/__1.html ; https://www.gesetze-im-internet.de/beitrvv/__2.html ; https://www.gesetze-im-internet.de/sgb_11/__58.html | 2026-10-29 |
+| EStG § 32a | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-31 |
+| EStG § 40a | https://www.gesetze-im-internet.de/estg/__40a.html | 2026-10-31 |
+| SGB XI § 55 | https://www.gesetze-im-internet.de/sgb_11/__55.html | 2026-10-31 |
+| SGB IV § 20 | https://www.gesetze-im-internet.de/sgb_4/__20.html | 2026-10-31 |
+| SGB V § 249 | https://www.gesetze-im-internet.de/sgb_5/__249.html | 2026-10-31 |
+| SGB V § 249b | https://www.gesetze-im-internet.de/sgb_5/__249b.html | 2026-10-31 |
+| SolzG § 3 | https://www.gesetze-im-internet.de/solzg_1995/__3.html | 2026-10-31 |
+| SolzG § 4 | https://www.gesetze-im-internet.de/solzg_1995/__4.html | 2026-10-31 |
+| svbezgrv_2026 § 2 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-31 |
 
 Not yet confirmed: the Federal Gazette text of the labour ministry's 2026 factor F notice itself (0.6619 is taken from an official state circular that cites it, and equals 28 / 42.3); which states levy 8% and which 9% church tax (secondary sources name Bavaria and Baden-Württemberg at 8%), and state church tax caps; U1 and U2 rates (set by each fund) and accident insurance; the 2027 health ceiling amount.
 

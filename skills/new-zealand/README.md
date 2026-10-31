@@ -2,8 +2,11 @@
 jurisdiction: NZ
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: nz-acc-levies
+  XB: nz-tax-residency
+partial:
+  XB: "residence rules only; no non-resident withholding, treaty or exit rules"
 ---
 
 # New Zealand: tax pack

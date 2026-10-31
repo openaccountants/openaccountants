@@ -2,8 +2,12 @@
 jurisdiction: SG
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: sg-cpf-medisave
+  XB: sg-tax-residency
+partial:
+  SC: "self-employed MediSave only; no employee or employer CPF"
+  XB: "residence rules only; no non-resident withholding, treaty or exit rules"
 ---
 
 # Singapore: tax pack

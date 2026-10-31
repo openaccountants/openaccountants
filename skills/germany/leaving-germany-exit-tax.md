@@ -1,10 +1,10 @@
 ---
 name: leaving-germany-exit-tax
-version: 0.1
+version: 0.2
 description: "German exit tax (Wegzugsteuer, Wegzugsbesteuerung, section 6 AStG) when a shareholder leaves Germany, for example a GmbH owner moving to Dubai: who it covers, the shareholding test, the triggers, how the deemed gain is taxed, seven yearly instalments, coming back, reporting after leaving, and the extended limited tax liability under section 2 AStG after a move to a low-tax country such as the UAE."
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -31,14 +31,14 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 ## Who and what § 6 AStG covers
 
-| Item | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.gesetze-im-internet.de/astg/__6.html |
-| Prior period of full tax liability | at least seven years in total within the last twelve years before the trigger | "innerhalb der letzten zwölf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbeständen insgesamt mindestens sieben Jahre unbeschränkt steuerpflichtig" |
-| Instalments | seven equal yearly instalments, on application | "kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden" |
-| Return window | seven years from the end of full tax liability | "innerhalb von sieben Jahren seit Beendigung der unbeschränkten Steuerpflicht wieder unbeschränkt steuerpflichtig" |
-| Extension of the return window | at most five years in total, on application | "insgesamt um höchstens fünf Jahre verlängern, wenn die Absicht zur Rückkehr unverändert fortbesteht" |
-| Distribution limit | more than one quarter of the value at exit | "deren gemeiner Wert insgesamt mehr als ein Viertel des Werts im Sinne des Absatzes 1 beträgt" |
+| Item | Value | Note | Source |
+|---|---|---| --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/astg/__6.html |  |
+| Prior period of full tax liability | at least seven years in total within the last twelve years before the trigger | "innerhalb der letzten zwölf Jahre vor den in Absatz 1 Satz 1 Nummer 1 bis 3 genannten Tatbeständen insgesamt mindestens sieben Jahre unbeschränkt steuerpflichtig" | https://www.gesetze-im-internet.de/astg/__6.html |
+| Instalments | seven equal yearly instalments, on application | "kann auf Antrag des Steuerpflichtigen in sieben gleichen Jahresraten entrichtet werden" | same |
+| Return window | seven years from the end of full tax liability | "innerhalb von sieben Jahren seit Beendigung der unbeschränkten Steuerpflicht wieder unbeschränkt steuerpflichtig" | same |
+| Extension of the return window | at most five years in total, on application | "insgesamt um höchstens fünf Jahre verlängern, wenn die Absicht zur Rückkehr unverändert fortbesteht" | same |
+| Distribution limit | more than one quarter of the value at exit | "deren gemeiner Wert insgesamt mehr als ein Viertel des Werts im Sinne des Absatzes 1 beträgt" | same |
 
 **Who.** Only natural persons. The seven-year test counts years of full tax liability under § 1(1) EStG, in total, not in a row. Where the shares were received free of charge, the full tax liability of the giver (and of each earlier giver in a chain of free transfers) is added, and years in which both were fully taxable count only once. A person whose earlier exit tax lapsed because they came back is treated as covered without the seven-year test, and so is their direct or indirect successor (§ 6(2) sentence 4 AStG).
 
@@ -46,12 +46,12 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 **Recent free acquisition: combined-source interpretation.** Read § 6(1) AStG's reference to § 17(1) sentence 1 EStG together with § 17(1) sentence 4, which expressly applies sentence 1 to the following predecessor case. If the relevant share was acquired free of charge within the five years before the deemed disposal, a holder who did not personally meet the 1% test must still be tested where the predecessor, or an earlier predecessor in a chain of free transfers, met that participation test within the relevant five-year period under sentence 1. Record the acquisition and each relevant transfer date, direct/indirect holdings and the predecessor's qualifying holding dates. A recent gift or inheritance of a 0.5% share therefore does not fail solely because the current holder never reached 1%, if the qualifying predecessor test is met. This is a separate shareholding rule from the residence-period aggregation in § 6(2) AStG; all other person, trigger and tax-chain conditions still apply.
 
-| Item | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__17.html |
-| Ordinary personal minimum shareholding, directly or indirectly, at any time within the last five years; recent free acquisitions also use the predecessor rule above | 1% | "innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war" |
-| Allowance against the gain, the part matching the share sold | EUR 9,060 | "soweit er den Teil von 9 060 Euro übersteigt, der dem veräußerten Anteil" |
-| The allowance is reduced by the amount by which the gain exceeds the part matching the share sold of | EUR 36,100 | "um den der Veräußerungsgewinn den Teil von 36 100 Euro übersteigt" |
+| Item | Value | Note | Source |
+|---|---|---| --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__17.html |  |
+| Ordinary personal minimum shareholding, directly or indirectly, at any time within the last five years; recent free acquisitions also use the predecessor rule above | 1% | "innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war" | https://www.gesetze-im-internet.de/estg/__17.html |
+| Allowance against the gain, the part matching the share sold | EUR 9,060 | "soweit er den Teil von 9 060 Euro übersteigt, der dem veräußerten Anteil" | same |
+| The allowance is reduced by the amount by which the gain exceeds the part matching the share sold of | EUR 36,100 | "um den der Veräußerungsgewinn den Teil von 36 100 Euro übersteigt" | same |
 
 **The triggers (§ 6(1) AStG).** Each of these counts as a sale of the shares at fair market value:
 
@@ -65,15 +65,15 @@ After the event, the shares count as acquired at fair market value by the person
 
 The deemed sale is a sale under § 17(1) EStG, and § 17(1) sentence 1 makes that gain income from business (Einkünfte aus Gewerbebetrieb). The gain is the amount by which the sale price, after sale costs, exceeds the acquisition cost (§ 17(2) sentence 1 EStG); for § 6 AStG the sale price is the fair market value. Acquisition cost includes incidental costs and later costs such as open or hidden capital contributions (§ 17(2a) EStG). Under § 3c(2) EStG, this acquisition cost is itself deductible only at the share in the § 3c table below, not in full: its second half-sentence reaches "die Anschaffungs- oder Herstellungskosten ... mindernd zu berücksichtigen sind", not only sale costs.
 
-| Item | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |
-| Tax-free share of the sale price or fair market value within § 17(2) EStG (partial-income method, § 3 no. 40 letter c) | 40% | "40 Prozent a) der Betriebsvermögensmehrungen oder Einnahmen aus der Veräußerung"; letter c: "des Veräußerungspreises oder des gemeinen Werts im Sinne des § 17 Absatz 2" |
+| Item | Value | Note | Source |
+|---|---|---| --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3.html |  |
+| Tax-free share of the sale price or fair market value within § 17(2) EStG (partial-income method, § 3 no. 40 letter c) | 40% | "40 Prozent a) der Betriebsvermögensmehrungen oder Einnahmen aus der Veräußerung"; letter c: "des Veräußerungspreises oder des gemeinen Werts im Sinne des § 17 Absatz 2" | https://www.gesetze-im-internet.de/estg/__3.html |
 
-| Item | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3c.html |
-| Share at which sale costs, other linked costs, and the acquisition cost used to compute the gain may be deducted (§ 3c(2) sentence 1) | 60% | "bei der Ermittlung der Einkünfte nur zu 60 Prozent abgezogen werden; Entsprechendes gilt, wenn bei der Ermittlung der Einkünfte der Wert des Betriebsvermögens oder des Anteils am Betriebsvermögen oder die Anschaffungs- oder Herstellungskosten oder der an deren Stelle tretende Wert mindernd zu berücksichtigen sind." |
+| Item | Value | Note | Source |
+|---|---|---| --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/estg/__3c.html |  |
+| Share at which sale costs, other linked costs, and the acquisition cost used to compute the gain may be deducted (§ 3c(2) sentence 1) | 60% | "bei der Ermittlung der Einkünfte nur zu 60 Prozent abgezogen werden; Entsprechendes gilt, wenn bei der Ermittlung der Einkünfte der Wert des Betriebsvermögens oder des Anteils am Betriebsvermögen oder die Anschaffungs- oder Herstellungskosten oder der an deren Stelle tretende Wert mindernd zu berücksichtigen sind." | https://www.gesetze-im-internet.de/estg/__3c.html |
 
 The allowance in the § 17 table above is not a flat amount. It is the part of that amount that matches the share of the company being taxed, and it falls by the excess of the gain over the matching part of the taper amount, so for a large holding it is usually gone. Tax rates and the solidarity surcharge are not repeated here; see `de-einkommensteuer-freelancer` for the tariff.
 
@@ -115,16 +115,16 @@ A transfer on death to a natural person does not break condition 1, if that pers
 
 ## Extended limited tax liability after a move to a low-tax country (§ 2 AStG)
 
-| Item | Value | Note |
-|---|---|---|
-| Source | all figures below | https://www.gesetze-im-internet.de/astg/__2.html |
-| Applies only in years when the income caught by § 2 is in total more than | EUR 16,500 | "insgesamt beschränkt steuerpflichtigen Einkünfte mehr als 16 500 Euro betragen" |
-| Low-tax test: model taxable income of an unmarried resident of the other territory | EUR 77,000 | "die ein steuerpflichtiges Einkommen von 77 000 Euro bezieht, um mehr als ein Drittel geringer" |
-| Substantial interest: limited partner's share of the partnership's income, more than | 25% | "mehr als 25 Prozent der Einkünfte im Sinne des § 15 Abs. 1 Satz 1 Nr. 2" |
-| Substantial interest: German-source income as a share of all income, more than | 30% | "im Veranlagungszeitraum mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen" |
-| Substantial interest: German-source income exceeds | EUR 62,000 | "mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen" |
-| Substantial interest: German-source assets as a share of all assets, more than | 30% | "mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt" |
-| Substantial interest: German-source assets exceed | EUR 154,000 | "mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt" |
+| Item | Value | Note | Source |
+|---|---|---| --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/astg/__2.html |  |
+| Applies only in years when the income caught by § 2 is in total more than | EUR 16,500 | "insgesamt beschränkt steuerpflichtigen Einkünfte mehr als 16 500 Euro betragen" | https://www.gesetze-im-internet.de/astg/__2.html |
+| Low-tax test: model taxable income of an unmarried resident of the other territory | EUR 77,000 | "die ein steuerpflichtiges Einkommen von 77 000 Euro bezieht, um mehr als ein Drittel geringer" | same |
+| Substantial interest: limited partner's share of the partnership's income, more than | 25% | "mehr als 25 Prozent der Einkünfte im Sinne des § 15 Abs. 1 Satz 1 Nr. 2" | same |
+| Substantial interest: German-source income as a share of all income, more than | 30% | "im Veranlagungszeitraum mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen" | same |
+| Substantial interest: German-source income exceeds | EUR 62,000 | "mehr als 30 Prozent ihrer sämtlichen Einkünfte betragen oder 62 000 Euro übersteigen" | same |
+| Substantial interest: German-source assets as a share of all assets, more than | 30% | "mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt" | same |
+| Substantial interest: German-source assets exceed | EUR 154,000 | "mehr als 30 Prozent ihres Gesamtvermögens beträgt oder 154 000 Euro übersteigt" | same |
 
 **Who (§ 2(1) AStG).** A natural person who, in the ten years before their full tax liability ended, was fully taxable in Germany as a German (als Deutscher) for at least five years in total, AND who:
 
@@ -187,14 +187,40 @@ All facts here are hypothetical. Anna is a German citizen. She has lived in Germ
 - Do not state a combined or effective rate. No allowed page prints one.
 - Whether the § 3 no. 40 exemption and the § 17(3) allowance apply to a § 6 AStG deemed gain rests on § 6(1)'s own wording treating the trigger as a sale "im Sinne des § 17 Absatz 1 Satz 1" EStG; no AStG or EStG page states the chain in one sentence. Confirm before relying on it for a large gain.
 
+```oa-check
+name: DE § 17(3) allowance, 100% holding, gain EUR 40,000
+inputs:
+  gain: 40000
+steps:
+  - reduction: max(0, gain - 36100)
+  - allowance: max(0, 9060 - reduction)
+  - taxable: gain - allowance
+expected:
+  allowance: 5160.00
+  taxable: 34840.00
+```
+
+```oa-check
+name: DE partial-income method, 60% of sale price less 60% of cost
+inputs:
+  price: 100000
+  cost: 60000
+steps:
+  - taxable_price: price * 0.60
+  - deductible_cost: cost * 0.60
+  - gain: taxable_price - deductible_cost
+expected:
+  gain: 24000.00
+```
+
 ## Sources
 
-- [§ 6 AStG, Besteuerung des Vermögenszuwachses](https://www.gesetze-im-internet.de/astg/__6.html)
-- [§ 2 AStG, Einkommensteuer](https://www.gesetze-im-internet.de/astg/__2.html)
-- [§ 21 AStG, Anwendungsvorschriften](https://www.gesetze-im-internet.de/astg/__21.html)
-- [§ 17 EStG, Veräußerung von Anteilen an Kapitalgesellschaften](https://www.gesetze-im-internet.de/estg/__17.html)
-- [§ 3 EStG, steuerfreie Einnahmen (no. 40)](https://www.gesetze-im-internet.de/estg/__3.html)
-- [§ 3c EStG, Anteilige Abzüge](https://www.gesetze-im-internet.de/estg/__3c.html)
+- [§ 6 AStG, Besteuerung des Vermögenszuwachses](https://www.gesetze-im-internet.de/astg/__6.html) (read 2026-10-31)
+- [§ 2 AStG, Einkommensteuer](https://www.gesetze-im-internet.de/astg/__2.html) (read 2026-10-31)
+- [§ 21 AStG, Anwendungsvorschriften](https://www.gesetze-im-internet.de/astg/__21.html) (read 2026-10-31)
+- [§ 17 EStG, Veräußerung von Anteilen an Kapitalgesellschaften](https://www.gesetze-im-internet.de/estg/__17.html) (read 2026-10-31)
+- [§ 3 EStG, steuerfreie Einnahmen (no. 40)](https://www.gesetze-im-internet.de/estg/__3.html) (read 2026-10-31)
+- [§ 3c EStG, Anteilige Abzüge](https://www.gesetze-im-internet.de/estg/__3c.html) (read 2026-10-31)
 
 Selected § 6(1)–(2) AStG and § 17(1) EStG clauses re-read on 29 October 2026 for the predecessor share test and its distinct residence-period conditions; the combined-source interpretation is labelled above.
 

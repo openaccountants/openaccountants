@@ -2,8 +2,10 @@
 jurisdiction: BR
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: br-inss
+partial:
+  SC: "self-employed INSS only; no employee or employer contributions"
 ---
 
 # Brazil: tax pack

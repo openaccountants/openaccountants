@@ -1,11 +1,11 @@
 ---
 name: germany-income-tax
 description: "Use this skill to turn a German self-employed person's year of bank transactions into profit (Anlage EÜR) and the 2026 income tax, for a Freiberufler (Anlage S) or a sole trader (Anlage G) resident in Germany. Tax year 2026, filed in 2027. Covers sorting receipts and costs, the § 4(5) EStG limits (entertainment 70%, gifts EUR 50, home office EUR 6 a day up to EUR 1,260), cars, low-value assets (EUR 800), depreciation, § 7g, the § 19 UStG small-business limits (EUR 25,000 / 100,000), the 2026 tariff, solidarity surcharge, church tax, the § 35 trade tax credit, prepayments, deadlines and penalties. Trigger on: Einkommensteuer Selbständige, Anlage EÜR, Betriebsausgaben, Bewirtung, Arbeitszimmer, GWG, Vorauszahlungen, Gewerbesteuer Anrechnung, Freiberufler tax. Out of scope: employees (de-employee-income-tax), non-residents (de-non-resident-tax), trade tax computation (de-trade-tax), companies (de-corporate-tax), partnerships."
-version: 2.6
+version: 2.7
 jurisdiction: DE
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -58,11 +58,11 @@ See also, and do not repeat here:
 | Home office room that is the centre of all work | Actual cost, or EUR 1,260 a year flat (one twelfth less per month not met) | 2026 | Same, § 4(5) no. 6b |
 | Home to own premises | EUR 0.38 per full km one way, per day; cap EUR 4,500 unless a car is used | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4), applied by § 4(5) no. 6 EStG |
 | Meals on business trips | EUR 28 for a full 24-hour day away; EUR 14 for arrival/departure if an overnight away from home occurs on that, preceding or following day, or for a non-overnight day more than 8 hours away | 2026 | Same, § 9(4a), applied by § 4(5) no. 5 EStG |
-| Business trips in a private car | EUR 0.30 per km, or the actual cost share | 2026 | BMF, 2026 Anlage EÜR instructions, line 72 (URL in Sources) |
+| Business trips in a private car | EUR 0.30 per km, or the actual cost share | 2026 | BMF, 2026 Anlage EÜR instructions, line 72 (URL in Sources), https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 | Business car, private use | 1% of list price per month, only if business use is over 50% | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 4) |
 | Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |
 | Pool (Sammelposten), instead | Assets over EUR 250 up to EUR 1,000, one fifth a year over five years | 2026 | Same, § 6(2a) |
-| Computer hardware and software | Useful life of one year may be taken: full cost in the year bought, still listed on Anlage AVEÜR | 2026 | BMF, 2026 Anlage EÜR instructions, line 34, citing the BMF letter of 22 February 2022 |
+| Computer hardware and software | Useful life of one year may be taken: full cost in the year bought, still listed on Anlage AVEÜR | 2026 | BMF, 2026 Anlage EÜR instructions, line 34, citing the BMF letter of 22 February 2022, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 | Declining balance | Movable assets bought 1 July 2025 to 31 December 2027: up to 3 × straight-line rate, max 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(2)) |
 | Electric vehicles bought 1 July 2025 to 31 December 2027 | 75% in the year bought, then 10%, 5%, 5%, 3%, 2% | 2026 | Same, § 7(2a) |
 | Investment deduction (§ 7g) | Up to 50% of expected cost; profit calculated without investment deductions or § 7g(2) add-backs not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |

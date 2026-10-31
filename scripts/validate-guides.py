@@ -97,7 +97,6 @@ LEGACY_MISSING_DESCRIPTION = {
 JURISDICTION_OPTIONAL_DIRS = {
     "skills/cross-border/treaty-corridors",
     "skills/foundation/intelligence",
-    "skills/templates",
     "skills/eu",
 }
 

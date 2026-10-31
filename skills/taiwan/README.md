@@ -2,8 +2,10 @@
 jurisdiction: TW
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
-covered_by: {}
-partial: {}
+covered_by:
+  SC: tw-nhi
+partial:
+  SC: "National Health Insurance only; no labour insurance or labour pension"
 ---
 
 # Taiwan: tax pack

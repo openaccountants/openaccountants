@@ -1,10 +1,10 @@
 ---
 name: germany-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Germany. Trigger on phrases like "set up a company in Germany", "GmbH formation", "UG gründen", "Handelsregister", "German company formation", "register a business Germany", "Gesellschaft mit beschränkter Haftung", "Unternehmergesellschaft", "German notary", "Gewerbeanmeldung", or any question about starting a business entity in Germany. Covers entity types (GmbH, UG, AG, GbR, KG), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on German company formation.
-version: 1.0
+version: 1.1
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -25,37 +25,37 @@ Read Section 2 to pick the legal form, Section 3 for the steps in order, Section
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Germany (Federal Republic of Germany) |
-| Currency | Euro |
-| Company registrar | Handelsregister, kept by the local court (Amtsgericht) where the company has its seat. It has two divisions: A for sole merchants, OHG and KG, B for the AG, GmbH and other corporations (§ 3 HRV): https://www.gesetze-im-internet.de/hdlregvfg/__3.html The joint register portal of the federal states carries the commercial register and the other company registers: https://www.handelsregister.de/rp_web/welcome.xhtml |
-| Key legislation | GmbH-Gesetz (GmbHG); Handelsgesetzbuch (HGB); Aktiengesetz (AktG). For partnerships also §§ 705 and following of the Civil Code (BGB) and the PartGG |
-| Typical formation time | Legacy estimate: 3 to 6 weeks from the notary to the register entry. No official page states a duration |
-| Taxes on a GmbH, UG or AG | Corporate income tax, solidarity surcharge and trade tax. The three tables below give the parts. No official page prints one combined rate, so this skill does not state one |
-| Tax authority | Local Finanzamt. Bundeszentralamt für Steuern (BZSt) for the VAT identification number and the business identification number |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Germany (Federal Republic of Germany) | same |
+| Currency | Euro | same |
+| Company registrar | Handelsregister, kept by the local court (Amtsgericht) where the company has its seat. It has two divisions: A for sole merchants, OHG and KG, B for the AG, GmbH and other corporations (§ 3 HRV): https://www.gesetze-im-internet.de/hdlregvfg/__3.html The joint register portal of the federal states carries the commercial register and the other company registers: https://www.handelsregister.de/rp_web/welcome.xhtml |  |
+| Key legislation | GmbH-Gesetz (GmbHG); Handelsgesetzbuch (HGB); Aktiengesetz (AktG). For partnerships also §§ 705 and following of the Civil Code (BGB) and the PartGG | https://www.gesetze-im-internet.de/gmbhg/__5.html |
+| Typical formation time | Legacy estimate: 3 to 6 weeks from the notary to the register entry. No official page states a duration |  |
+| Taxes on a GmbH, UG or AG | Corporate income tax, solidarity surcharge and trade tax. The three tables below give the parts. No official page prints one combined rate, so this skill does not state one | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html |
+| Tax authority | Local Finanzamt. Bundeszentralamt für Steuern (BZSt) for the VAT identification number and the business identification number | https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html |
 
 **Corporate income tax (Körperschaftsteuer)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/kstg_1977/__23.html |
-| Corporate income tax on taxable income, for assessment periods up to and including 2027 | 15% | § 23(1) no. 1 KStG: "Veranlagungszeiträume bis 2027 15 Prozent". The same paragraph schedules lower rates from 2028 on. None of them applies to 2026 |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/kstg_1977/__23.html |  |
+| Corporate income tax on taxable income, for assessment periods up to and including 2027 | 15% | § 23(1) no. 1 KStG: "Veranlagungszeiträume bis 2027 15 Prozent". The same paragraph schedules lower rates from 2028 on. None of them applies to 2026 | https://www.gesetze-im-internet.de/kstg_1977/__23.html |
 
 **Solidarity surcharge**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__4.html |
-| Solidarity surcharge, charged on the corporate income tax and not on the income | 5.5% | § 4 SolzG: "Der Solidaritätszuschlag beträgt 5,5 Prozent der Bemessungsgrundlage" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/solzg_1995/__4.html |  |
+| Solidarity surcharge, charged on the corporate income tax and not on the income | 5.5% | § 4 SolzG: "Der Solidaritätszuschlag beträgt 5,5 Prozent der Bemessungsgrundlage" | https://www.gesetze-im-internet.de/solzg_1995/__4.html |
 
 **Trade tax (Gewerbesteuer)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |
-| Base rate (Steuermesszahl) applied to trade income. It is not the tax rate: the result is multiplied by the multiplier (Hebesatz) that each municipality sets | 3.5% | § 11(2) GewStG: "Die Steuermesszahl für den Gewerbeertrag beträgt 3,5 Prozent" |
-| Allowance taken off trade income first. Natural persons and partnerships only. A GmbH, UG or AG is not on the list and gets no allowance | EUR 24,500 | § 11(1) GewStG: "bei natürlichen Personen sowie bei Personengesellschaften um einen Freibetrag in Höhe von 24 500 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gewstg/__11.html |  |
+| Base rate (Steuermesszahl) applied to trade income. It is not the tax rate: the result is multiplied by the multiplier (Hebesatz) that each municipality sets | 3.5% | § 11(2) GewStG: "Die Steuermesszahl für den Gewerbeertrag beträgt 3,5 Prozent" | https://www.gesetze-im-internet.de/gewstg/__11.html |
+| Allowance taken off trade income first. Natural persons and partnerships only. A GmbH, UG or AG is not on the list and gets no allowance | EUR 24,500 | § 11(1) GewStG: "bei natürlichen Personen sowie bei Personengesellschaften um einen Freibetrag in Höhe von 24 500 Euro" | same |
 
 The activity of a GmbH, UG or AG always counts as a trade, in full, whatever the company does. See § 2(2) GewStG at https://www.gesetze-im-internet.de/gewstg/__2.html The multiplier is set by the municipality under § 16 GewStG at https://www.gesetze-im-internet.de/gewstg/__16.html so the trade tax burden depends on where the company sits. `de-trade-tax` explains the calculation for sole traders and partnerships. It does not cover companies, so for a GmbH, UG or AG use the base rate above and the municipality's multiplier, with no allowance.
 
@@ -95,18 +95,18 @@ Steps 1 to 4 are written for the GmbH and the UG. Steps 5 to 8 apply to every fo
 
 **What the model protocol fixes (Annex 1 of the GmbHG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf |
-| Payment options the protocol offers for the cash contribution: all at once, or this share at once and the rest when the shareholders' meeting calls for it. A UG must strike the second option | 50% | Annex 1, clause 3: "sofort in voller Höhe/zu 50 Prozent sofort" |
-| Formation costs the company itself bears under the protocol, and never more than its share capital. Costs above that fall on the shareholders | EUR 300 | Annex 1, clause 5: "bis zu einem Gesamtbetrag von 300 €, höchstens jedoch bis zum Betrag ihres Stammkapitals" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf |  |
+| Payment options the protocol offers for the cash contribution: all at once, or this share at once and the rest when the shareholders' meeting calls for it. A UG must strike the second option | 50% | Annex 1, clause 3: "sofort in voller Höhe/zu 50 Prozent sofort" | https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf |
+| Formation costs the company itself bears under the protocol, and never more than its share capital. Costs above that fall on the shareholders | EUR 300 | Annex 1, clause 5: "bis zu einem Gesamtbetrag von 300 €, höchstens jedoch bis zum Betrag ihres Stammkapitals" | same |
 
 **Model protocols for a formation by video (Annex 2 of the GmbHG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/anlage_2.html |
-| Formation costs the company itself bears under the video protocols, and never more than its share capital | EUR 600 | Annex 2, clause 5: "bis zu einem Gesamtbetrag von 600 €, höchstens jedoch bis zum Betrag ihres Stammkapitals" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/anlage_2.html |  |
+| Formation costs the company itself bears under the video protocols, and never more than its share capital | EUR 600 | Annex 2, clause 5: "bis zu einem Gesamtbetrag von 600 €, höchstens jedoch bis zum Betrag ihres Stammkapitals" | https://www.gesetze-im-internet.de/gmbhg/anlage_2.html |
 
 ### Step 2: Notary Appointment (Beurkundung)
 
@@ -138,16 +138,16 @@ Steps 1 to 4 are written for the GmbH and the UG. Steps 5 to 8 apply to every fo
 
 **Court fees for the first entry in the commercial register (Handelsregistergebührenverordnung, fee schedule)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hreggebv/anlage.html |
-| First entry of a GmbH, UG included, cash formation (no. 2100) | EUR 225 | "Eintragung einer Gesellschaft mit beschränkter Haftung einschließlich einer Unternehmergesellschaft" |
-| Same, when one contribution in kind or more is made (no. 2101) | EUR 360 | "Es wird mindestens eine Sacheinlage geleistet: Die Gebühr 2100 beträgt" |
-| First entry of an AG (no. 2102) | EUR 450 | "Eintragung einer Aktiengesellschaft, einer Kommanditgesellschaft auf Aktien" |
-| Same, when one contribution in kind or more is made (no. 2103) | EUR 540 | "Es wird mindestens eine Sacheinlage geleistet: Die Gebühr 2102 beträgt" |
-| First entry of a sole merchant (no. 1100) | EUR 105 | "eines Einzelkaufmanns" |
-| First entry of a partnership with up to 3 partners to be entered (no. 1101) | EUR 150 | "einer Gesellschaft mit bis zu 3 einzutragenden Gesellschaftern" |
-| Added to no. 1101 for each further partner to be entered (no. 1102) | EUR 60 | "erhöht sich für jeden weiteren einzutragenden Gesellschafter" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hreggebv/anlage.html |  |
+| First entry of a GmbH, UG included, cash formation (no. 2100) | EUR 225 | "Eintragung einer Gesellschaft mit beschränkter Haftung einschließlich einer Unternehmergesellschaft" | https://www.gesetze-im-internet.de/hreggebv/anlage.html |
+| Same, when one contribution in kind or more is made (no. 2101) | EUR 360 | "Es wird mindestens eine Sacheinlage geleistet: Die Gebühr 2100 beträgt" | same |
+| First entry of an AG (no. 2102) | EUR 450 | "Eintragung einer Aktiengesellschaft, einer Kommanditgesellschaft auf Aktien" | same |
+| Same, when one contribution in kind or more is made (no. 2103) | EUR 540 | "Es wird mindestens eine Sacheinlage geleistet: Die Gebühr 2102 beträgt" | same |
+| First entry of a sole merchant (no. 1100) | EUR 105 | "eines Einzelkaufmanns" | same |
+| First entry of a partnership with up to 3 partners to be entered (no. 1101) | EUR 150 | "einer Gesellschaft mit bis zu 3 einzutragenden Gesellschaftern" | same |
+| Added to no. 1101 for each further partner to be entered (no. 1102) | EUR 60 | "erhöht sich für jeden weiteren einzutragenden Gesellschafter" | same |
 
 On top of each entry fee the court charges a separate fee for making the data available for retrieval (no. 6000). The schedule prints it as one third of the entry fee ("1/3 der für die Eintragung oder Entgegennahme bestimmten Gebühr"). This skill does not add the two together. The notary's fee is separate: see Section 5.
 
@@ -162,11 +162,11 @@ On top of each entry fee the court charges a separate fee for making the data av
 
 **Fee for the trade notification**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung |
-| Lower end of the range the Federal Government's portal gives for the trade notification | EUR 20 | "Die Kosten für der Gewerbeanzeige variieren zwischen 20 und 60 EUR" |
-| Upper end of that range | EUR 60 | Same sentence. No federal statute sets the fee. Ask the municipality for its own amount |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung |  |
+| Lower end of the range the Federal Government's portal gives for the trade notification | EUR 20 | "Die Kosten für der Gewerbeanzeige variieren zwischen 20 und 60 EUR" | https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung |
+| Upper end of that range | EUR 60 | Same sentence. No federal statute sets the fee. Ask the municipality for its own amount | same |
 
 ### Step 6: Tax Registration (Steuerliche Erfassung)
 
@@ -180,26 +180,26 @@ On top of each entry fee the court charges a separate fee for making the data av
 
 **Small-business VAT rule (Kleinunternehmer): the two yearly limits**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Total turnover of the previous calendar year must not have gone above this. Condition 1 of 2, joined by AND | EUR 25,000 | § 19(1) UStG: "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" |
-| Total turnover of the current calendar year must not go above this. Condition 2 of 2. A hard limit during the year, not a forecast | EUR 100,000 | § 19(1) UStG: "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__19.html |  |
+| Total turnover of the previous calendar year must not have gone above this. Condition 1 of 2, joined by AND | EUR 25,000 | § 19(1) UStG: "im vorangegangenen Kalenderjahr 25 000 Euro nicht überschritten hat" | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
+| Total turnover of the current calendar year must not go above this. Condition 2 of 2. A hard limit during the year, not a forecast | EUR 100,000 | § 19(1) UStG: "im laufenden Kalenderjahr 100 000 Euro nicht überschreitet" | same |
 
 **Small-business VAT rule in the year the business starts**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
-| A business that starts during the year: total turnover of that calendar year must not go above this. The receipt that crosses the limit is already taxed under the normal rules. Earlier receipts stay exempt | EUR 25,000 | Ministry's instructions for the 2026 EÜR form: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten". A GmbH does not file that form. The start-up sentence is the ministry's reading of § 19 UStG and is not printed in the statute. § 19 UStG covers every business established in Germany |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |  |
+| A business that starts during the year: total turnover of that calendar year must not go above this. The receipt that crosses the limit is already taxed under the normal rules. Earlier receipts stay exempt | EUR 25,000 | Ministry's instructions for the 2026 EÜR form: "darf der Gesamtumsatz im laufenden Kj. 25.000 € nicht überschreiten". A GmbH does not file that form. The start-up sentence is the ministry's reading of § 19 UStG and is not printed in the statute. § 19 UStG covers every business established in Germany | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 
 **VAT advance returns: how often**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
-| Quarterly is the default. Monthly if the VAT payable for the previous calendar year was more than this | EUR 9,000 | § 18(2) UStG: "für das vorangegangene Kalenderjahr mehr als 9 000 Euro" |
-| The tax office may release the business from advance returns if the VAT for the previous calendar year was not more than this | EUR 2,000 | § 18(2) UStG: "für das vorangegangene Kalenderjahr nicht mehr als 2 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ustg_1980/__18.html |  |
+| Quarterly is the default. Monthly if the VAT payable for the previous calendar year was more than this | EUR 9,000 | § 18(2) UStG: "für das vorangegangene Kalenderjahr mehr als 9 000 Euro" | https://www.gesetze-im-internet.de/ustg_1980/__18.html |
+| The tax office may release the business from advance returns if the VAT for the previous calendar year was not more than this | EUR 2,000 | § 18(2) UStG: "für das vorangegangene Kalenderjahr nicht mehr als 2 000 Euro" | same |
 
 For tax periods 2021 to 2026 a new business is not automatically a monthly filer: in the start-up year the expected VAT of the current year is measured against the limits above, and for a business that was active for only part of the previous year the actual VAT is scaled up to a full year (§ 18(2) sentence 6 UStG). Shelf companies and dormant shells that are taken over are monthly filers in the current and the following calendar year (§ 18(2) sentence 5 UStG). The statute limits the relief for new businesses to tax periods up to 2026. Read § 18(2) UStG again for 2027: without the relief, a new business files monthly in its first and second calendar year (§ 18(2) sentence 4 UStG).
 
@@ -212,10 +212,10 @@ For tax periods 2021 to 2026 a new business is not automatically a monthly filer
 
 **Beneficial owner test**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gwg_2017/__3.html |
-| A natural person who, directly or indirectly, holds more than this share of the capital, or controls more than this share of the voting rights, or exercises control in a comparable way | 25% | § 3(2) GwG: "mehr als 25 Prozent der Kapitalanteile hält" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gwg_2017/__3.html |  |
+| A natural person who, directly or indirectly, holds more than this share of the capital, or controls more than this share of the voting rights, or exercises control in a comparable way | 25% | § 3(2) GwG: "mehr als 25 Prozent der Kapitalanteile hält" | https://www.gesetze-im-internet.de/gwg_2017/__3.html |
 
 ### Step 8: Further Registrations
 
@@ -226,10 +226,10 @@ For tax periods 2021 to 2026 a new business is not automatically a monthly filer
 
 **IHK contribution exemption for small unregistered businesses**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ihkg/__3.html |
-| Natural persons and partnerships that are NOT in the commercial register pay no contribution while their trade income, or their profit from the trade, does not go above this. Not for a GmbH, UG, AG, OHG or KG | EUR 5,200 | § 3(3) IHKG: "ihr nach dem Einkommensteuergesetz ermittelter Gewinn aus Gewerbebetrieb 5 200 Euro nicht übersteigt". The same paragraph holds a further relief for first-time founders who are natural persons. Read its conditions on the page |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ihkg/__3.html |  |
+| Natural persons and partnerships that are NOT in the commercial register pay no contribution while their trade income, or their profit from the trade, does not go above this. Not for a GmbH, UG, AG, OHG or KG | EUR 5,200 | § 3(3) IHKG: "ihr nach dem Einkommensteuergesetz ermittelter Gewinn aus Gewerbebetrieb 5 200 Euro nicht übersteigt". The same paragraph holds a further relief for first-time founders who are natural persons. Read its conditions on the page | https://www.gesetze-im-internet.de/ihkg/__3.html |
 
 **Other legal forms in short.**
 
@@ -242,26 +242,26 @@ For tax periods 2021 to 2026 a new business is not automatically a monthly filer
 
 **GmbH: minimum capital and what must be paid in first**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__5.html |
-| Minimum share capital (Stammkapital) of a GmbH, printed in words | twenty-five thousand euros | § 5(1) GmbHG: "Das Stammkapital der Gesellschaft muß mindestens fünfundzwanzigtausend Euro betragen" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__5.html |  |
+| Minimum share capital (Stammkapital) of a GmbH, printed in words | twenty-five thousand euros | § 5(1) GmbHG: "Das Stammkapital der Gesellschaft muß mindestens fünfundzwanzigtausend Euro betragen" | https://www.gesetze-im-internet.de/gmbhg/__5.html |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__7.html |
-| Amount that must be reached before the register application: cash paid in, plus the nominal amount of shares to be covered in kind. The rest stays owed by the shareholders | half of the minimum share capital | § 7(2) GmbHG: "die Hälfte des Mindeststammkapitals gemäß § 5 Abs. 1 erreicht" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__7.html |  |
+| Amount that must be reached before the register application: cash paid in, plus the nominal amount of shares to be covered in kind. The rest stays owed by the shareholders | half of the minimum share capital | § 7(2) GmbHG: "die Hälfte des Mindeststammkapitals gemäß § 5 Abs. 1 erreicht" | https://www.gesetze-im-internet.de/gmbhg/__7.html |
 
 A second test applies together with the total, not instead of it: on each cash share one quarter of the nominal amount must be paid in before the application. The statute prints it in words ("ein Viertel des Nennbetrags eingezahlt ist", § 7(2) GmbHG): https://www.gesetze-im-internet.de/gmbhg/__7.html Contributions in kind must be made in full before the application (§ 7(3) GmbHG). Each share must be a full euro amount, and the shares must add up to the share capital (§ 5 GmbHG): https://www.gesetze-im-internet.de/gmbhg/__5.html
 
 **UG (haftungsbeschränkt): minimum capital and the reserve**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__5a.html |
-| Minimum share capital of a UG. The statute sets no amount: a UG is a company formed with less than the GmbH minimum (§ 5a(1)), and each share must be a full euro amount (§ 5(2) GmbHG). This skill reads that as a lowest possible capital of one euro | one euro | § 5a(1) GmbHG: "mit einem Stammkapital gegründet wird, das den Betrag des Mindeststammkapitals nach § 5 Abs. 1 unterschreitet". The start-up portal prints it: "Das Stammkapital beträgt mindestens einen Euro" (https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt) |
-| Share of each year's annual net profit, reduced by a loss carried forward from the year before, that must go into a statutory reserve, printed in words | one quarter | § 5a(3) GmbHG: "ein Viertel des um einen Verlustvortrag aus dem Vorjahr geminderten Jahresüberschusses" |
-| Registered share capital at which the UG rules stop applying, once the company raises its capital to it or above | the GmbH minimum | § 5a(5) GmbHG: "den Betrag des Mindeststammkapitals nach § 5 Abs. 1 erreicht oder übersteigt" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gmbhg/__5a.html |  |
+| Minimum share capital of a UG. The statute sets no amount: a UG is a company formed with less than the GmbH minimum (§ 5a(1)), and each share must be a full euro amount (§ 5(2) GmbHG). This skill reads that as a lowest possible capital of one euro | one euro | § 5a(1) GmbHG: "mit einem Stammkapital gegründet wird, das den Betrag des Mindeststammkapitals nach § 5 Abs. 1 unterschreitet". The start-up portal prints it: "Das Stammkapital beträgt mindestens einen Euro" (https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt) |  |
+| Share of each year's annual net profit, reduced by a loss carried forward from the year before, that must go into a statutory reserve, printed in words | one quarter | § 5a(3) GmbHG: "ein Viertel des um einen Verlustvortrag aus dem Vorjahr geminderten Jahresüberschusses" | https://www.gesetze-im-internet.de/gmbhg/__5a.html |
+| Registered share capital at which the UG rules stop applying, once the company raises its capital to it or above | the GmbH minimum | § 5a(5) GmbHG: "den Betrag des Mindeststammkapitals nach § 5 Abs. 1 erreicht oder übersteigt" | same |
 
 - **UG profit retention rule.** The reserve duty has no time limit. It does not end when the reserve reaches a certain size. It ends only when the company raises its registered share capital to the GmbH minimum or above. From then on the special UG rules no longer apply, and the company may keep the UG name or change to GmbH (§ 5a(5) GmbHG): https://www.gesetze-im-internet.de/gmbhg/__5a.html
 - **What the reserve may be used for.** Only a capital increase from company funds, or to cover an annual loss or a loss carried forward that profits do not cover (§ 5a(3) GmbHG). A capital increase from company funds rests on a balance sheet, and the last annual balance sheet can serve only if it was audited (§ 57c, § 57e GmbHG): https://www.gesetze-im-internet.de/gmbhg/__57e.html The start-up portal puts it this way: before the step up to a GmbH the UG's balance sheet must be examined by an auditor: https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt § 5a(5) GmbHG itself does not say by which kind of capital increase the minimum must be reached.
@@ -270,10 +270,10 @@ A second test applies together with the total, not instead of it: on each cash s
 
 **AG: minimum capital**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/aktg/__7.html |
-| Minimum share capital (Grundkapital) of an AG, printed in words | fifty thousand euros | § 7 AktG: "Der Mindestnennbetrag des Grundkapitals ist fünfzigtausend Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/aktg/__7.html |  |
+| Minimum share capital (Grundkapital) of an AG, printed in words | fifty thousand euros | § 7 AktG: "Der Mindestnennbetrag des Grundkapitals ist fünfzigtausend Euro" | https://www.gesetze-im-internet.de/aktg/__7.html |
 
 For cash contributions to an AG the amount called in before the application must be one quarter of the lowest issue price of each share or more, plus the whole premium if shares are issued above that price. The statute prints it in words ("mindestens ein Viertel des geringsten Ausgabebetrags", § 36a(1) AktG): https://www.gesetze-im-internet.de/aktg/__36a.html Contributions in kind must be made in full. Where the contribution is a duty to transfer an asset, the transfer must be carried out within five years of the entry (§ 36a(2) AktG). No official page prints that quarter as a euro amount, so this skill gives none.
 
@@ -301,33 +301,33 @@ The legacy version of this section gave euro ranges for notary fees, adviser fee
 
 **Notary fees: the business value (Geschäftswert) for the articles**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/__107.html |
-| Lowest business value for notarising articles of association. It does NOT apply to a formation with the model protocol (§ 105(6) GNotKG) | EUR 30,000 | § 107(1) GNotKG: "beträgt der Geschäftswert mindestens 30 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/__107.html |  |
+| Lowest business value for notarising articles of association. It does NOT apply to a formation with the model protocol (§ 105(6) GNotKG) | EUR 30,000 | § 107(1) GNotKG: "beträgt der Geschäftswert mindestens 30 000 Euro" | https://www.gesetze-im-internet.de/gnotkg/__107.html |
 
 **Notary fees: the business value for the first register application of a company**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/__105.html |
-| The business value is the capital to be entered in the register, and not less than this. The floor does NOT apply to a formation with the model protocol (§ 105(6) GNotKG) | EUR 30,000 | § 105(1) GNotKG: "Der Geschäftswert beträgt mindestens 30 000 Euro" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/__105.html |  |
+| The business value is the capital to be entered in the register, and not less than this. The floor does NOT apply to a formation with the model protocol (§ 105(6) GNotKG) | EUR 30,000 | § 105(1) GNotKG: "Der Geschäftswert beträgt mindestens 30 000 Euro" | https://www.gesetze-im-internet.de/gnotkg/__105.html |
 
 **Notary fees: the fee rates for notarising (fee schedule, part 2)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/anlage_1.html |
-| Lowest fee for notarising a contract (no. 21100, fee rate 2.0). A formation by two or more founders is a contract | EUR 120 | No. 21100 Beurkundungsverfahren: "mindestens 120,00 €" |
-| Lowest fee for notarising other declarations (no. 21200, fee rate 1.0). The schedule does not name the one-person formation. Ask the notary which number applies | EUR 60 | No. 21200 Beurkundungsverfahren: "Unerheblich ist, ob eine Erklärung von einer oder von mehreren Personen abgegeben wird", then "mindestens 60,00 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/anlage_1.html |  |
+| Lowest fee for notarising a contract (no. 21100, fee rate 2.0). A formation by two or more founders is a contract | EUR 120 | No. 21100 Beurkundungsverfahren: "mindestens 120,00 €" | https://www.gesetze-im-internet.de/gnotkg/anlage_1.html |
+| Lowest fee for notarising other declarations (no. 21200, fee rate 1.0). The schedule does not name the one-person formation. Ask the notary which number applies | EUR 60 | No. 21200 Beurkundungsverfahren: "Unerheblich ist, ob eine Erklärung von einer oder von mehreren Personen abgegeben wird", then "mindestens 60,00 €" | same |
 
 **Notary fees: the single fee from Table B (the table notaries use)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/anlage_2.html |
-| Single fee (rate 1.0) for a business value up to EUR 25,000 | EUR 115 | Table B row "25 000 435,50 115,00". The first number is the value step, the second is Table A, the third is Table B |
-| Single fee (rate 1.0) for a business value up to EUR 30,000 | EUR 125 | Table B row "30 000 476,00 125,00" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/gnotkg/anlage_2.html |  |
+| Single fee (rate 1.0) for a business value up to EUR 25,000 | EUR 115 | Table B row "25 000 435,50 115,00". The first number is the value step, the second is Table A, the third is Table B | https://www.gesetze-im-internet.de/gnotkg/anlage_2.html |
+| Single fee (rate 1.0) for a business value up to EUR 30,000 | EUR 125 | Table B row "30 000 476,00 125,00" | same |
 
 How the notary fee is built: the fee rate from the schedule is applied to the single fee that Table B gives for the business value. Separate fees can come on top, for drafting the register application, for carrying out the filing and for producing the structured electronic data, plus outlays and VAT (fee schedule, no. 32014). These amounts are building blocks, not a quote. Agreements on the amount of notary costs are void, except where the next section allows one (§ 125 GNotKG): https://www.gesetze-im-internet.de/gnotkg/__125.html That exception (§ 126 GNotKG) covers only work as a mediator or conciliator, and official acts for which the statute sets no fee and that are not connected with other acts that carry a fee: https://www.gesetze-im-internet.de/gnotkg/__126.html Notarising the articles and certifying the register application have fees in the schedule, so the formation fee cannot be negotiated. Ask the notary to state it in advance.
 
@@ -345,13 +345,13 @@ The legacy version gave euro ranges for chamber contributions, accident insuranc
 
 **Court fees for later entries in the commercial register, division B (GmbH, UG, AG)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hreggebv/anlage.html |
-| Entry of one fact, for example a new managing director (this skill's example, the schedule gives none) (no. 2500) | EUR 105 | "2500 Eintragung einer Tatsache 105,00 €" |
-| Second and each further fact in the same application (no. 2501) | EUR 60 | "Eintragung der zweiten und jeder weiteren Tatsache aufgrund derselben Anmeldung: Die Gebühr 2500 beträgt jeweils 60,00 €" |
-| Entry of a fact with no economic significance (no. 2502). The schedule gives no examples | EUR 45 | "Die Eintragung betrifft eine Tatsache ohne wirtschaftliche Bedeutung: Die Gebühren 2500 und 2501 betragen 45,00 €" |
-| Receipt of a new shareholder list (no. 5002) | EUR 45 | "der Liste der Gesellschafter (§ 40 GmbHG) 45,00 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hreggebv/anlage.html |  |
+| Entry of one fact, for example a new managing director (this skill's example, the schedule gives none) (no. 2500) | EUR 105 | "2500 Eintragung einer Tatsache 105,00 €" | https://www.gesetze-im-internet.de/hreggebv/anlage.html |
+| Second and each further fact in the same application (no. 2501) | EUR 60 | "Eintragung der zweiten und jeder weiteren Tatsache aufgrund derselben Anmeldung: Die Gebühr 2500 beträgt jeweils 60,00 €" | same |
+| Entry of a fact with no economic significance (no. 2502). The schedule gives no examples | EUR 45 | "Die Eintragung betrifft eine Tatsache ohne wirtschaftliche Bedeutung: Die Gebühren 2500 und 2501 betragen 45,00 €" | same |
+| Receipt of a new shareholder list (no. 5002) | EUR 45 | "der Liste der Gesellschafter (§ 40 GmbHG) 45,00 €" | same |
 
 The retrieval fee (no. 6000, one third of the fee in question) comes on top of each of these as well. Capital measures and conversions have their own, higher fee numbers on the same page.
 
@@ -376,31 +376,31 @@ Sources for the table: https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-r
 
 A class applies when two or more of its three criteria are not exceeded. The legal effects normally start only when that holds on the balance sheet dates of two financial years in a row, but for a newly formed company the first balance sheet date is enough (§ 267(4) HGB). Apprentices are not counted as employees.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |
-| Small company: balance sheet total | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" |
-| Small company: revenue in the twelve months before the balance sheet date | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" |
-| Small company: yearly average number of employees, printed in words | fifty employees | § 267(1) HGB: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |  |
+| Small company: balance sheet total | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267.html |
+| Small company: revenue in the twelve months before the balance sheet date | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" | same |
+| Small company: yearly average number of employees, printed in words | fifty employees | § 267(1) HGB: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" | same |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |
-| Micro company: balance sheet total | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" |
-| Micro company: revenue in the twelve months before the balance sheet date | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" |
-| Micro company: yearly average number of employees, printed in words | ten employees | § 267a(1) HGB: "im Jahresdurchschnitt zehn Arbeitnehmer" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |  |
+| Micro company: balance sheet total | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267a.html |
+| Micro company: revenue in the twelve months before the balance sheet date | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" | same |
+| Micro company: yearly average number of employees, printed in words | ten employees | § 267a(1) HGB: "im Jahresdurchschnitt zehn Arbeitnehmer" | same |
 
 A small company files only the balance sheet and the notes. A micro company files only the balance sheet and may have it deposited instead of published, if it tells the register that it keeps within the micro criteria (§ 326 HGB): https://www.gesetze-im-internet.de/hgb/__326.html Pure holding companies, investment companies and equity participation companies cannot be micro companies (§ 267a(3) HGB).
 
 **Fine for not disclosing the annual accounts (Ordnungsgeld)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__335.html |
-| Lowest fine, printed in words. It is first threatened, with six weeks from receipt of the threat to comply or object (§ 335(3) HGB) | two thousand five hundred euros | § 335(1) HGB: "Das Ordnungsgeld beträgt mindestens zweitausendfünfhundert und höchstens fünfundzwanzigtausend Euro" |
-| Highest fine, printed in words. A capital-market company faces a higher ceiling (§ 335(1a) HGB) | twenty-five thousand euros | Same sentence |
-| Reduced fine when the accounts are filed after the six weeks have run out but before the Federal Office decides on the fine, for a micro company that used its deposit right | EUR 500 | § 335(4) HGB: "auf einen Betrag von 500 Euro, wenn die Beteiligten von dem Recht einer Kleinstkapitalgesellschaft" |
-| Reduced fine in the same late case for a small company | EUR 1,000 | § 335(4) HGB: "auf einen Betrag von 1 000 Euro, wenn es sich um eine kleine Kapitalgesellschaft" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__335.html |  |
+| Lowest fine, printed in words. It is first threatened, with six weeks from receipt of the threat to comply or object (§ 335(3) HGB) | two thousand five hundred euros | § 335(1) HGB: "Das Ordnungsgeld beträgt mindestens zweitausendfünfhundert und höchstens fünfundzwanzigtausend Euro" | https://www.gesetze-im-internet.de/hgb/__335.html |
+| Highest fine, printed in words. A capital-market company faces a higher ceiling (§ 335(1a) HGB) | twenty-five thousand euros | Same sentence | same |
+| Reduced fine when the accounts are filed after the six weeks have run out but before the Federal Office decides on the fine, for a micro company that used its deposit right | EUR 500 | § 335(4) HGB: "auf einen Betrag von 500 Euro, wenn die Beteiligten von dem Recht einer Kleinstkapitalgesellschaft" | https://www.gesetze-im-internet.de/hgb/__335.html |
+| Reduced fine in the same late case for a small company | EUR 1,000 | § 335(4) HGB: "auf einen Betrag von 1 000 Euro, wenn es sich um eine kleine Kapitalgesellschaft" | same |
 
 The costs of the procedure come on top: they are imposed together with the threat of the fine (§ 335(3) HGB). The fines go to the Federal Office of Justice, which runs the procedure. Its page describes the cycle: if the duty is still not met, the fine is set and the order is repeated under threat of a new fine, until the accounts are disclosed, with the fine normally raised step by step: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html
 
@@ -408,17 +408,17 @@ The costs of the procedure come on top: they are imposed together with the threa
 
 A GmbH or UG counts as a commercial company (§ 13(3) GmbHG), and so does an AG (§ 3 AktG). The rules for merchants apply to commercial companies (§ 6(1) HGB), so the company must keep books (§ 238 HGB): https://www.gesetze-im-internet.de/hgb/__238.html The two rules below are not for companies. They matter when the choice is between a company and a sole trader business.
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |
-| Sole merchants only: released from commercial-law bookkeeping while revenue stays within this limit | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" |
-| AND annual net profit stays within this limit. Both limits, on the balance sheet dates of two financial years in a row. For a new business the first balance sheet date is enough | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |  |
+| Sole merchants only: released from commercial-law bookkeeping while revenue stays within this limit | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" | https://www.gesetze-im-internet.de/hgb/__241a.html |
+| AND annual net profit stays within this limit. Both limits, on the balance sheet dates of two financial years in a row. For a new business the first balance sheet date is enough | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" | same |
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__141.html |
-| Tax-law bookkeeping duty for traders who are not already bound by other law: total turnover of more than this in the calendar year | EUR 800,000 | § 141(1) no. 1 AO: "von mehr als 800 000 Euro im Kalenderjahr" |
-| OR profit from the trade of more than this in the business year. Either test is enough. The duty starts only with the business year after the tax office's notice | EUR 80,000 | § 141(1) no. 4 AO: "einen Gewinn aus Gewerbebetrieb von mehr als 80 000 Euro im Wirtschaftsjahr" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/ao_1977/__141.html |  |
+| Tax-law bookkeeping duty for traders who are not already bound by other law: total turnover of more than this in the calendar year | EUR 800,000 | § 141(1) no. 1 AO: "von mehr als 800 000 Euro im Kalenderjahr" | https://www.gesetze-im-internet.de/ao_1977/__141.html |
+| OR profit from the trade of more than this in the business year. Either test is enough. The duty starts only with the business year after the tax office's notice | EUR 80,000 | § 141(1) no. 4 AO: "einen Gewinn aus Gewerbebetrieb von mehr als 80 000 Euro im Wirtschaftsjahr" | same |
 
 See `germany-bookkeeping` and `germany-financial-statements` for the detail.
 
@@ -526,32 +526,58 @@ The main bottleneck is the processing time at the register court, which varies b
 - Tax structuring: company or partnership, the option for a partnership to be taxed like a corporation (§ 1a KStG), holding structures and tax groups. Refer to a Steuerberater.
 - A company that is already in financial trouble. Insolvency duties are outside this skill.
 
+```oa-check
+name: DE GmbH 2026, least paid in before the register application
+inputs:
+  minimum_capital: 25000
+steps:
+  - paid_in: minimum_capital * 0.5
+expected:
+  paid_in: 12500.00
+```
+
+```oa-check
+name: DE GmbH 2026, trade tax, no allowance, multiplier 400%
+inputs:
+  trade_income: 50000
+  hebesatz: 4.0
+steps:
+  - base: trade_income * 0.035
+  - trade_tax: base * hebesatz
+expected:
+  trade_tax: 7000.00
+```
+
 ## Sources
 
-- GmbHG §§ 1 to 8, 10, 11, 13, 19, 35a, 40, 42a, 57c, 57e: https://www.gesetze-im-internet.de/gmbhg/__2.html and https://www.gesetze-im-internet.de/gmbhg/__35a.html and https://www.gesetze-im-internet.de/gmbhg/__5.html and https://www.gesetze-im-internet.de/gmbhg/__5a.html and https://www.gesetze-im-internet.de/gmbhg/__7.html and https://www.gesetze-im-internet.de/gmbhg/__8.html and https://www.gesetze-im-internet.de/gmbhg/__11.html
-- GmbHG model protocols, Annex 1 and Annex 2: https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf and https://www.gesetze-im-internet.de/gmbhg/anlage_2.html
-- AktG §§ 1, 2, 3, 7, 23, 30, 33, 33a, 36, 36a, 41, 95: https://www.gesetze-im-internet.de/aktg/__7.html and https://www.gesetze-im-internet.de/aktg/__36a.html and https://www.gesetze-im-internet.de/aktg/__33a.html
-- Handelsregisterverordnung § 3: https://www.gesetze-im-internet.de/hdlregvfg/__3.html
-- HGB §§ 1, 2, 6, 12, 19, 29, 105, 106, 107, 123, 126, 161, 162, 171, 176, 238, 241a, 264, 267, 267a, 325, 326, 335: https://www.gesetze-im-internet.de/hgb/__12.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__335.html
-- Civil Code §§ 705, 707, 707b, 719, 721 and PartGG §§ 1, 4, 8: https://www.gesetze-im-internet.de/bgb/__705.html and https://www.gesetze-im-internet.de/bgb/__719.html and https://www.gesetze-im-internet.de/bgb/__707b.html and https://www.gesetze-im-internet.de/partgg/__1.html
-- Beurkundungsgesetz §§ 16a, 16c: https://www.gesetze-im-internet.de/beurkg/__16a.html
-- Handelsregistergebührenverordnung, fee schedule: https://www.gesetze-im-internet.de/hreggebv/anlage.html
-- GNotKG §§ 34, 105, 107, 125, 126 and its two annexes: https://www.gesetze-im-internet.de/gnotkg/__105.html and https://www.gesetze-im-internet.de/gnotkg/__126.html and https://www.gesetze-im-internet.de/gnotkg/__107.html and https://www.gesetze-im-internet.de/gnotkg/anlage_1.html and https://www.gesetze-im-internet.de/gnotkg/anlage_2.html
-- GewO §§ 6, 14, 146: https://www.gesetze-im-internet.de/gewo/__6.html and https://www.gesetze-im-internet.de/gewo/__14.html
-- AO §§ 137, 138, 139c, 141, 149: https://www.gesetze-im-internet.de/ao_1977/__139c.html and https://www.gesetze-im-internet.de/ao_1977/__137.html and https://www.gesetze-im-internet.de/ao_1977/__138.html
-- UStG §§ 14, 18, 19, 27, 27a and UStDV § 33: https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustg_1980/__18.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__27a.html
-- KStG §§ 1, 1a, 23, SolzG § 4, GewStG §§ 2, 5, 11, 16: https://www.gesetze-im-internet.de/kstg_1977/__23.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html and https://www.gesetze-im-internet.de/gewstg/__11.html
-- GwG §§ 3, 19, 20, 56, 59: https://www.gesetze-im-internet.de/gwg_2017/__20.html
-- IHKG §§ 2, 3, SGB VII §§ 192, 209, DrittelbG § 1, Außenwirtschaftsverordnung § 55: https://www.gesetze-im-internet.de/ihkg/__3.html and https://www.gesetze-im-internet.de/sgb_7/__192.html
-- Federal Employment Agency, Betriebsnummern-Service: https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige
-- Start-up portal of the Federal Government, pages on the GmbH, the UG, the commercial register, the authorities, and registering a business: https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Gruendungswissen/Behoerden/Handelsregister/inhalt and https://www.existenzgruendungsportal.de/Navigation/DE/Gruendungswissen/Behoerden/behoerden and https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung
-- ELSTER, questionnaire for tax registration of a corporation: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg
-- BZSt, VAT identification number and business identification number: https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html and https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html
-- Federal Office of Justice, fine procedure for undisclosed accounts: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html
-- Register portal of the federal states and the company register: https://www.handelsregister.de/rp_web/welcome.xhtml and https://www.unternehmensregister.de/ureg/
-- German Social Accident Insurance (DGUV), page for businesses: https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp
-- Finance ministry, questions and answers on the compulsory e-invoice (Stand März 2026): https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html
+- GmbHG §§ 1 to 8, 10, 11, 13, 19, 35a, 40, 42a, 57c, 57e: https://www.gesetze-im-internet.de/gmbhg/__2.html and https://www.gesetze-im-internet.de/gmbhg/__35a.html and https://www.gesetze-im-internet.de/gmbhg/__5.html and https://www.gesetze-im-internet.de/gmbhg/__5a.html and https://www.gesetze-im-internet.de/gmbhg/__7.html and https://www.gesetze-im-internet.de/gmbhg/__8.html and https://www.gesetze-im-internet.de/gmbhg/__11.html (read 2026-10-31)
+- GmbHG model protocols, Annex 1 and Annex 2: https://www.gesetze-im-internet.de/normengrafiken/bgbl1_2021/j3364_0010.pdf and https://www.gesetze-im-internet.de/gmbhg/anlage_2.html (read 2026-10-31)
+- AktG §§ 1, 2, 3, 7, 23, 30, 33, 33a, 36, 36a, 41, 95: https://www.gesetze-im-internet.de/aktg/__7.html and https://www.gesetze-im-internet.de/aktg/__36a.html and https://www.gesetze-im-internet.de/aktg/__33a.html (read 2026-10-31)
+- Handelsregisterverordnung § 3: https://www.gesetze-im-internet.de/hdlregvfg/__3.html (read 2026-10-31)
+- HGB §§ 1, 2, 6, 12, 19, 29, 105, 106, 107, 123, 126, 161, 162, 171, 176, 238, 241a, 264, 267, 267a, 325, 326, 335: https://www.gesetze-im-internet.de/hgb/__12.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__335.html (read 2026-10-31)
+- Civil Code §§ 705, 707, 707b, 719, 721 and PartGG §§ 1, 4, 8: https://www.gesetze-im-internet.de/bgb/__705.html and https://www.gesetze-im-internet.de/bgb/__719.html and https://www.gesetze-im-internet.de/bgb/__707b.html and https://www.gesetze-im-internet.de/partgg/__1.html (read 2026-10-31)
+- Beurkundungsgesetz §§ 16a, 16c: https://www.gesetze-im-internet.de/beurkg/__16a.html (read 2026-10-31)
+- Handelsregistergebührenverordnung, fee schedule: https://www.gesetze-im-internet.de/hreggebv/anlage.html (read 2026-10-31)
+- GNotKG §§ 34, 105, 107, 125, 126 and its two annexes: https://www.gesetze-im-internet.de/gnotkg/__105.html and https://www.gesetze-im-internet.de/gnotkg/__126.html and https://www.gesetze-im-internet.de/gnotkg/__107.html and https://www.gesetze-im-internet.de/gnotkg/anlage_1.html and https://www.gesetze-im-internet.de/gnotkg/anlage_2.html (read 2026-10-31)
+- GewO §§ 6, 14, 146: https://www.gesetze-im-internet.de/gewo/__6.html and https://www.gesetze-im-internet.de/gewo/__14.html (read 2026-10-31)
+- AO §§ 137, 138, 139c, 141, 149: https://www.gesetze-im-internet.de/ao_1977/__139c.html and https://www.gesetze-im-internet.de/ao_1977/__137.html and https://www.gesetze-im-internet.de/ao_1977/__138.html (read 2026-10-31)
+- UStG §§ 14, 18, 19, 27, 27a and UStDV § 33: https://www.gesetze-im-internet.de/ustg_1980/__14.html and https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustg_1980/__18.html and https://www.gesetze-im-internet.de/ustg_1980/__27.html and https://www.gesetze-im-internet.de/ustg_1980/__19.html and https://www.gesetze-im-internet.de/ustg_1980/__27a.html (read 2026-10-31)
+- KStG §§ 1, 1a, 23, SolzG § 4, GewStG §§ 2, 5, 11, 16: https://www.gesetze-im-internet.de/kstg_1977/__23.html and https://www.gesetze-im-internet.de/solzg_1995/__4.html and https://www.gesetze-im-internet.de/gewstg/__11.html (read 2026-10-31)
+- GwG §§ 3, 19, 20, 56, 59: https://www.gesetze-im-internet.de/gwg_2017/__20.html (read 2026-10-31)
+- IHKG §§ 2, 3, SGB VII §§ 192, 209, DrittelbG § 1, Außenwirtschaftsverordnung § 55: https://www.gesetze-im-internet.de/ihkg/__3.html and https://www.gesetze-im-internet.de/sgb_7/__192.html (read 2026-10-31)
+- Federal Employment Agency, Betriebsnummern-Service: https://www.arbeitsagentur.de/unternehmen/betriebsnummern-service/alles-wichtige (read 2026-10-31)
+- Start-up portal of the Federal Government, pages on the GmbH, the UG, the commercial register, the authorities, and registering a business: https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/UG-haftungsbeschraenkt/inhalt and https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Gruendungswissen/Behoerden/Handelsregister/inhalt and https://www.existenzgruendungsportal.de/Navigation/DE/Gruendungswissen/Behoerden/behoerden and https://www.existenzgruendungsportal.de/Navigation/DE/So-gehts/Unternehmensanmeldung/unternehmensanmeldung (read 2026-10-31)
+- ELSTER, questionnaire for tax registration of a corporation: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg (read 2026-10-31)
+- BZSt, VAT identification number and business identification number: https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html and https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html (read 2026-10-31)
+- Federal Office of Justice, fine procedure for undisclosed accounts: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html (read 2026-10-31)
+- Register portal of the federal states and the company register: https://www.handelsregister.de/rp_web/welcome.xhtml and https://www.unternehmensregister.de/ureg/ (read 2026-10-31)
+- German Social Accident Insurance (DGUV), page for businesses: https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp (read 2026-10-31)
+- Finance ministry, questions and answers on the compulsory e-invoice (Stand März 2026): https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html (read 2026-10-31)
 - Finance ministry, instructions for the 2026 EÜR form, letter of 1 September 2026: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
+- [AO § 141](https://www.gesetze-im-internet.de/ao_1977/__141.html), read 2026-10-31
+- [GwG § 3](https://www.gesetze-im-internet.de/gwg_2017/__3.html), read 2026-10-31
+- [HGB § 241a](https://www.gesetze-im-internet.de/hgb/__241a.html), read 2026-10-31
+- [HGB § 267a](https://www.gesetze-im-internet.de/hgb/__267a.html), read 2026-10-31
 
 ## Disclaimer
 
