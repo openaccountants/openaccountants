@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por gastos de descendientes en centros de cero a tres años</title><meta name="ObjectId" content="6e4fe6181b839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='ae0fe6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunidad Autónoma del Principado de Asturias</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por gastos de descendientes en centros de cero a tres años</h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 14 bis <strong>Texto Refundido de las disposiciones legales del Principado de Asturias en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 2/2014, de 22 de octubre</strong></strong></p>
+<h2>A. En general</h2>
+<h3>Cuant&iacute;a y l&iacute;mite m&aacute;ximo de la deducci&oacute;n</h3>
+<ul>
+<li>
+<p><strong>El 15 por 100</strong> de las cantidades satisfechas en el per&iacute;odo impositivo en concepto de gastos de descendientes en centros de cero a tres a&ntilde;os.</p>
+</li>
+<li>
+<p><strong>El importe m&aacute;ximo de la deducci&oacute;n ser&aacute; de&nbsp;500&nbsp;euros anuales por cada descendiente</strong> que no supere la citada edad.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="letrita sangrado-izq">- El l&iacute;mite m&aacute;ximo de la deducci&oacute;n establecido respecto de cada hijo ha de aplicarse individualmente a cada uno de ellos.</p>
+<p class="letrita sangrado-izq">- En cuanto a la justificaci&oacute;n de las cantidades satisfechas, podr&aacute; realizarse mediante factura o cualquier otro medio del tr&aacute;fico jur&iacute;dico o econ&oacute;mico admitido en Derecho.</p>
+</li>
+<li>
+<p>El importe de la&nbsp;deducci&oacute;n <strong>deber&aacute; minorarse</strong>, por cada descendiente, en la cantidad correspondiente a las <strong>ayudas</strong> percibidas en el per&iacute;odo impositivo procedentes del Principado de Asturias asociadas a los gastos generados por el cuidado de hijos de cero a tres a&ntilde;os.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="letrita sangrado-izq">- Las ayudas percibidas en el per&iacute;odo impositivo procedentes del Principado de Asturias, asociadas a los gastos generados por el cuidado de hijos de cero a tres a&ntilde;os,<strong> minoran el importe de la deducci&oacute;n</strong>, por cada descendiente, una vez aplicado el l&iacute;mite m&aacute;ximo de la deducci&oacute;n.</p>
+<p class="letrita sangrado-izq">- Tales <strong>ayudas</strong> se regulan por Resoluci&oacute;n de 26 de junio de 2025, de la Consejer&iacute;a de Presidencia, Reto Demogr&aacute;fico, Igualdad y Turismo, por la que se aprueba la convocatoria p&uacute;blica de las ayudas a las familias con ni&ntilde;as y ni&ntilde;os de hasta doce a&ntilde;os de edad para la conciliaci&oacute;n. En el siguiente enlace se puede obtener informaci&oacute;n sobre las mismas:</p>
+<p class="letrita sangrado-izq"><a href="https://miprincipado.asturias.es/-/dboid-6269000052563114107573">Ayudas a las familias con ni&ntilde;as y ni&ntilde;os de hasta doce a&ntilde;os de edad para la conciliaci&oacute;n de la vida laboral, personal y familiar.</a></p>
+</li>
+</ul>
+<h3>Requisito espec&iacute;fico para la aplicaci&oacute;n de la deducci&oacute;n</h3>
+<p>Que la <strong>suma de las bases imponibles general y del ahorro, </strong>casillas <strong><em>[0435] </em></strong>y<strong><em> [0460] </em></strong>de la declaraci&oacute;n, <strong>no supere</strong> las siguientes cantidades:</p>
+<ul class="lista-sin-icono">
+<li>
+<p>-&nbsp; <strong>26.000 </strong><strong>euros </strong>en tributaci&oacute;n individual.</p>
+</li>
+<li>
+<p>-&nbsp; <strong>37.000 </strong><strong>euros </strong>en tributaci&oacute;n conjunta.</p>
+</li>
+</ul>
+<h2>B. Para contribuyentes con residencia habitual en concejos en riesgo de despoblamiento o en crisis demogr&aacute;fica</h2>
+<h3>Cuant&iacute;a y l&iacute;mite m&aacute;ximo de la deducci&oacute;n</h3>
+<ul>
+<li>
+<p>El <strong>30 por 100</strong> de las cantidades satisfechas en el per&iacute;odo impositivo en concepto de gastos de descendientes en centros de cero a tres a&ntilde;os.</p>
+</li>
+<li>
+<p><strong>El importe m&aacute;ximo de la deducci&oacute;n ser&aacute; de </strong><strong>1.000&nbsp;euros anuales&nbsp;<strong>por cada descendiente</strong> </strong>que no supere la citada edad.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="sangrado-izq letrita">- Este porcentaje y l&iacute;mite incrementado se aplicar&aacute; atendiendo a que el concejo en riesgo de despoblaci&oacute;n sea la residencia habitual del contribuyente en el ejercicio en que sea aplicable la deducci&oacute;n, con independencia de que, posteriormente, no se mantenga dicha residencia.</p>
+<p class="sangrado-izq letrita">- En cuanto a la residencia habitual, esta se determinar&aacute; con base a los criterios definidos en el art&iacute;culo 9 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, en relaci&oacute;n con el&nbsp;concejo&nbsp;que da derecho a la aplicaci&oacute;n del beneficio fiscal.</p>
+<p class="sangrado-izq letrita">- De acuerdo con lo anterior, el contribuyente debe aplicar a la totalidad de las cantidades satisfechas en el ejercicio por cada hijo, el porcentaje y el l&iacute;mite m&aacute;ximo de la deducci&oacute;n correspondiente al lugar en el que, seg&uacute;n los criterios definidos en el art&iacute;culo 9 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, se considere que ha sido su residencia fiscal durante el a&ntilde;o. De este modo, si por aplicaci&oacute;n de los citados criterios, durante el ejercicio el contribuyente ha residido en el concejo&nbsp;en riesgo de despoblaci&oacute;n, se aplicar&aacute; la deducci&oacute;n incrementada del 30 por 100 con el l&iacute;mite de 1.000 euros por cada descendiente que no supere 3 a&ntilde;os de edad. En otro caso, esto es, si el contribuyente ha tenido su residencia habitual en otra ubicaci&oacute;n del Principado de Asturias que no se considere concejo en riesgo de despoblaci&oacute;n, se aplicar&aacute; el porcentaje del 15 por 100 con el l&iacute;mite de 500 euros.</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><strong><em><span class="verde">Atenci&oacute;n:</span></em></strong><em> tendr&aacute;n la consideraci&oacute;n de <strong>concejos en riesgo de despoblamiento o en crisis demogr&aacute;fica </strong>los as&iacute; clasificados como tales seg&uacute;n lo dispuesto en el Decreto 83/2025, de 23 de junio, por el que establece la zonificaci&oacute;n demogr&aacute;fica y se regula el Indicador Sint&eacute;tico de Estado Demogr&aacute;fico del Principado de Asturias.</em></p>
+<p>Puede consultar la relaci&oacute;n de tales concejos en el enlace indicado al t&eacute;rmino de la presente deducci&oacute;n.</p>
+</div>
+</li>
+<li>
+<p>El importe de la&nbsp;deducci&oacute;n <strong>deber&aacute; minorarse</strong>, por cada descendiente, en la cantidad correspondiente a las ayudas percibidas en el per&iacute;odo impositivo procedentes del Principado de Asturias asociadas a los gastos generados por el cuidado de hijos de cero a tres a&ntilde;os.</p>
+</li>
+</ul>
+<div>
+<h3>Requisito espec&iacute;fico para la aplicaci&oacute;n de la deducci&oacute;n</h3>
+<p>Que la <strong>suma de las bases imponibles general y del ahorro, </strong>casillas <strong><em>[0435] </em></strong>y<strong><em> [0460] </em></strong>de la declaraci&oacute;n,<strong> no supere</strong> las siguientes cantidades:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>- 35.000 euros </strong>en tributaci&oacute;n individual.</p>
+</li>
+<li>
+<p><strong>- 45.000 euros </strong>en tributaci&oacute;n conjunta.</p>
+</li>
+</ul>
+</div>
+<h2>Otros requisitos y condiciones comunes para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>Que los progenitores, adoptantes, o tutores <strong>convivan</strong> con el menor.</p>
+<p>Esta deducci&oacute;n resultar&aacute; tambi&eacute;n aplicable en los supuestos de <strong>acogimiento</strong>.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="letrita sangrado-izq">- Para determinar el cumplimiento del requisito de la <strong>convivencia</strong>, esta debe determinarse en la <strong>fecha de devengo del impuesto</strong>.</p>
+<p class="letrita sangrado-izq">- En el caso de guarda y custodia compartida ambos padres pueden aplicar la deducci&oacute;n siempre y cuando justifiquen haber incurrido en el gasto aun cuando no se lleve a cabo convivencia efectiva a la fecha de devengo.</p>
+</li>
+<li>
+<p>Cuando exista <strong>m&aacute;s de un contribuyente con derecho</strong> a la aplicaci&oacute;n de la deducci&oacute;n, el importe de la deducci&oacute;n <strong>se prorratear&aacute; por partes iguales</strong> en la declaraci&oacute;n de cada uno de ellos.</p>
+<p class="letrita sangrado-izq"><strong>Siempre que exista convivencia de ambos padres o tutores con el menor el importe de la deducci&oacute;n se prorratear&aacute; entre ellos</strong>, aunque solo uno tenga derecho a su aplicaci&oacute;n por tener el otro una base imponible superior a 35.000 euros.</p>
+</li>
+<li>
+<p><strong>Especialidad: per&iacute;odo impositivo en el que el menor cumpla los tres a&ntilde;os.</strong></p>
+<p><strong>La deducci&oacute;n </strong>(15 o 30 por 100)<strong> y el l&iacute;mite a la misma </strong>(500 euros o 1.000 euros)<strong> en el per&iacute;odo impositivo en el que el menor cumpla los tres a&ntilde;os</strong> se calcular&aacute;n de forma <strong>proporcional al n&uacute;mero de meses</strong> en que se cumplan los requisitos que se indican en el siguiente apartado.</p>
+<p class="letrita sangrado-izq verde"><strong>Precisiones</strong>:</p>
+<p class="letrita sangrado-izq">- Para determinar el n&uacute;mero de meses en que se cumplen los requisitos <strong>deber&aacute; computarse el mes en que el menor cumpla tres a&ntilde;os</strong>.</p>
+<p class="letrita sangrado-izq">- Si en el a&ntilde;o se hubiera producido el <strong>fallecimiento del contribuyente y el descendiente hubiera cumplido tres a&ntilde;os antes del mismo</strong>, el prorrateo de la deducci&oacute;n en funci&oacute;n del n&uacute;mero de meses en los que el menor tiene menos de 3 a&ntilde;os se realizar&aacute; seg&uacute;n la proporci&oacute;n que representen los meses en los que se da esa circunstancia con respecto a los meses de duraci&oacute;n del per&iacute;odo impositivo (de 1 de enero hasta la fecha del fallecimiento), incluido el mes del fallecimiento del contribuyente.</p>
+<p class="letrita sangrado-izq">- Igualmente, resultar&aacute; de aplicaci&oacute;n la deducci&oacute;n en los supuestos de <strong>fallecimiento del descendiente previo al devengo del impuesto</strong>.</p>
+</li>
+</ul>
+<h2>Incompatibilidad</h2>
+<p>La presente deducci&oacute;n resulta <strong>incompatible</strong> con la aplicaci&oacute;n de la deducci&oacute;n auton&oacute;mica &ldquo;Por el cuidado de descendientes o adoptados de hasta 25 a&ntilde;os de edad&rdquo; prevista en el art&iacute;culo 14 duodecies del texto refundido.</p>
+<p class=" letrita sangrado-izq">La incompatibilidad entre ambas deducciones habr&aacute; de determinarse por contribuyente y ser&aacute; efectiva respecto de los mismos descendientes.</p><div class="my-2"><a  target="_blank" rel="noopener" href="/static_files/Sede/Biblioteca/Manual/Practicos/IRPF/IRPF-2025-Deducciones-autonomicas/CA_Principado_Asturias/Concejos_riesgo_despoblamiento_crisis_demografica.pdf">Concejos en riesgo de despoblamiento o en crisis demográfica<span class="small ml-1">(314 KB - <abbr title="Archivo pdf">pdf</abbr>)</span><i class="aeat-ico fa-ico-pdf ico-size-1 ml-1" role="presentation"></i><i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Saltar al contenido principal"></i></a></div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

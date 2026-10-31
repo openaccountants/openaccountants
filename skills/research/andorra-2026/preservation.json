@@ -1,0 +1,92 @@
+[
+  {
+    "path": "skills/international/andorra/README.md",
+    "old_bytes": 2528,
+    "new_bytes": 4860,
+    "size_change_percent": 92.25,
+    "old_sha256": "250a2f727e31b68eb8b365bf9083f9fe15c6c7bd75f8dd44cccc8ef1a9c05813",
+    "new_sha256": "dacc1e575b574cca3d83911aeb756855993d1f085a70ee18b6b698f105f24ffc",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/ad-company-formation.md",
+    "old_bytes": 3862,
+    "new_bytes": 3862,
+    "size_change_percent": 0.0,
+    "old_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+    "new_sha256": "145ece035cc8dd4d3e47628fc331e5ab985f0b46846a252c195474e774ddc0c2",
+    "cta_unchanged": true,
+    "supporting_unchanged": true
+  },
+  {
+    "path": "skills/international/andorra/ad-corporate-income-tax.md",
+    "old_bytes": 21380,
+    "new_bytes": 31464,
+    "size_change_percent": 47.17,
+    "old_sha256": "fd442bfecdb48a21732d57091096374572d02b5a5ae3564e15e51b1282419d33",
+    "new_sha256": "7eba190975a0eb66ea4b9c71f0cd300837f7286b5a573a78dd90ecde84473338",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/ad-income-tax.md",
+    "old_bytes": 52348,
+    "new_bytes": 31032,
+    "size_change_percent": -40.72,
+    "old_sha256": "a4ab4b8bc510f9ee41fcad9e1efcdf1df8fe2adfea55513eb5eca8288919213c",
+    "new_sha256": "f6a957038f00272d234c5b498dca4ab265b17aa99c24c066378a1f695bcad3f5",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/ad-non-resident-income-tax.md",
+    "old_bytes": 14773,
+    "new_bytes": 30854,
+    "size_change_percent": 108.85,
+    "old_sha256": "2c5ccde97d3e9541d9aab77106a970e6c35531e539bcf946aaf08665c6abbddd",
+    "new_sha256": "ce74d9a54334fbae835feab167078173b17507e231e263d850c3c46cf2964920",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/ad-payroll-social.md",
+    "old_bytes": 41890,
+    "new_bytes": 35126,
+    "size_change_percent": -16.15,
+    "old_sha256": "ca091b7cf301d1f88c09fec59a0e3cad8726b085fadc053babd2ea4fb2499e09",
+    "new_sha256": "7a8f69de77fb41d9830ce93a318bf22f269b7f432781dad216c33f435a8a65a0",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/ad-tax-overview.md",
+    "old_bytes": 3320,
+    "new_bytes": 3320,
+    "size_change_percent": 0.0,
+    "old_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+    "new_sha256": "d3e4933ac322c78b098dc5eb1566cbb48e877175527c8f4aded3a50ad50e5d0f",
+    "cta_unchanged": true,
+    "supporting_unchanged": true
+  },
+  {
+    "path": "skills/international/andorra/ad-transfer-pricing.md",
+    "old_bytes": 14783,
+    "new_bytes": 20381,
+    "size_change_percent": 37.87,
+    "old_sha256": "a3915de6a372aeabb85d98b4aea8b49fed2a550a0eb111b7bbefa3b3fa118065",
+    "new_sha256": "b9aaa0c0a4a57dcdb11dfc8a90b258c2ceff4ccb724845d5c9849bf4a422634c",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  },
+  {
+    "path": "skills/international/andorra/andorra-igi.md",
+    "old_bytes": 18608,
+    "new_bytes": 26384,
+    "size_change_percent": 41.79,
+    "old_sha256": "62354fe9b2ea06f3481f5112a1610f15dfd709169be819654f89892c0c320d65",
+    "new_sha256": "e8bc8295a2c06f3ac8bc4827b6f4f60c23db5e599b36f872db9da2c0f93e5453",
+    "cta_unchanged": true,
+    "supporting_unchanged": null
+  }
+]

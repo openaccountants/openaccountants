@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=101485&p=0",
+    "key": "self-employed-application",
+    "retrieved_utc": "2026-10-27T23:17:03.901425+00:00",
+    "status": 200,
+    "sha256": "5e8b3477a34de395d32b4f3082b8d3eae68aaddea7740771bfe331c80ef240f4",
+    "bytes": 594202,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/self-employed-application.pdf"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=197037&p=0",
+    "key": "non-employed-under-application",
+    "retrieved_utc": "2026-10-27T23:17:03.901962+00:00",
+    "status": 200,
+    "sha256": "75e66a376599f191e98f6e7513c3f7030d107a38dc7d48614963b458be19f42c",
+    "bytes": 174450,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/non-employed-under-application.pdf"
+  },
+  {
+    "url": "https://gov.gg/CHttpHandler.ashx?id=197038&p=0",
+    "key": "non-employed-over-application",
+    "retrieved_utc": "2026-10-27T23:17:03.902084+00:00",
+    "status": 200,
+    "sha256": "3c6621dc607be442586d9e67ba32821f4e78cf857660012392a5e5922a3b6c30",
+    "bytes": 172026,
+    "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/guernsey-continuation/country/../work/sources/non-employed-over-application.pdf"
+  }
+]

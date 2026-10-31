@@ -1,0 +1,7 @@
+# es-canary-islands-igic: writer handover
+
+Frozen HEAD 0b5e62451de50220ac6d80c7813d547d08108641. 104 source-quotation rows. The full current body inventory is in all-guide-units.json; 8 unquoted units are table headings/workflow introductions or client questions. Every substantive legal/numeric paragraph/table unit is represented, sometimes by several quotations. A represented compound paragraph is not a claim that one excerpt alone proves every condition: read the additional rows and the exact provision scopes together. Actual original-language quotations were read on 28 October 2026 from pinned retained sources. Tables preserve exact statutory cells; hypothetical inputs and computed outputs are labelled. No new law is inferred from the presence of a downloaded source.
+
+Old-topic table uses actual retained main where available. Otherwise the table explicitly identifies the earliest branch body as an additional comparator, not a previously published main. Changed or unsupported old wording is not represented as exact preservation. Existing source conflicts and precise ordinary reservations are carried in the frozen scope. Both original oa-check blocks pass (example-check.txt); this is a selected Guide check, not a repeated whole-pack audit. No Guide, Git state, generated content or platform content was changed.
+
+Writer evidence is ready for a different reviewer. It is not independent PASS, accountant attestation or country completion.

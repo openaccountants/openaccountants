@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por contratar de manera indefinida a personas afiliadas en el Sistema Especial de Empleados de Ho...</title><meta name="ObjectId" content="05e0e6181b839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="col pl-0 overflow-hidden"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede mx-1">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='d0b0e6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunitat Valenciana</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por contratar de manera indefinida a personas afiliadas en el Sistema Especial de Empleados de Hogar del Régimen General de la Seguridad Social para el cuidado de personas</h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 4.Uno.i), Cuatro y Cinco Ley 13/1997, de 23 de diciembre, por la que se regula el tramo auton&oacute;mico del&nbsp;Impuesto sobre la Renta de las Personas F&iacute;sicas y restantes tributos cedidos, de la Comunitat Valenciana</strong></p>
+<h2>Cuant&iacute;a de la deducci&oacute;n</h2>
+<p><strong>El 50 por 100 de las cuotas satisfechas</strong> por las cotizaciones efectuadas durante el periodo impositivo por la contrataci&oacute;n de una persona de manera indefinida para el cuidado de los <strong>descendientes o ascendientes a cargo del contribuyente</strong> que se indican, y que est&eacute; incluida en el Sistema Especial de Empleados de Hogar del R&eacute;gimen General de la Seguridad Social.</p>
+<p>El porcentaje del 50 por 100 se aplicar&aacute; sobre el importe de las cuotas satisfechas en los meses en cuyo &uacute;ltimo d&iacute;a se cumplan los siguientes requisitos que se indican a continuaci&oacute;n en el apartado &ldquo;Requisitos y otras condiciones para la aplicaci&oacute;n de la deducci&oacute;n&rdquo;.</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><span class="verde"><strong><em>Importante</em></strong></span><em><span class="verde">:</span> los contribuyentes con derecho a la deducci&oacute;n deber&aacute;n hacer constar el <abbr title="N&uacute;mero de Identificaci&oacute;n Fiscal">NIF</abbr> de&nbsp;</em><em>la persona empleada en el Anexo B.7 de la declaraci&oacute;n.&nbsp;</em></p>
+<h2>Requisitos y otras condiciones para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<p>El importe de esta deducci&oacute;n se aplicar&aacute; por las cotizaciones realizadas en los meses en cuyo &uacute;ltimo d&iacute;a se cumplan los siguientes requisitos:</p>
+<ul>
+<li>
+<p><strong>Que el contribuyente haya tenido a su cargo:</strong></p>
+<ol type="a">
+<li>
+<p><strong>una o varias personas de edad menor de 5 a&ntilde;os nacidas, adoptadas o acogidas</strong> que cumplan los requisitos de convivencia y renta que dan derecho a la aplicaci&oacute;n del <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-descendientes.html">m&iacute;nimo por descendientes</a>.</p>
+</li>
+<li>
+<p><strong>una o varias personas ascendientes en l&iacute;nea directa, por consanguinidad o adopci&oacute;n, que cumplan los requisitos de convivencia y renta </strong>que den derecho a la aplicaci&oacute;n del <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c14-adecuacion-impuesto-circunstancias-personales/minimo-ascendientes.html">m&iacute;nimo por ascendientes</a><strong>&nbsp;y sean:</strong></p>
+<p class="sangrado-izq"><strong>- Mayores de 75 a&ntilde;os, o </strong></p>
+<p class="sangrado-izq"><strong>- Mayores de 65 a&ntilde;os</strong> si tienen una discapacidad igual o superior al 65 por 100 o un grado de discapacidad intelectual o mental <strong>reconocido de manera permanente</strong> igual o superior al 33 por 100.</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Atenci&oacute;n</strong></span>: la exigencia de que el grado de discapacidad intelectual o mental igual o superior al 33 por 100 haya sido reconocido de manera permanente <strong>no resultar&aacute; aplicable</strong> a los contribuyentes fallecidos con anterioridad al 30 de diciembre de 2025.</em></p>
+</li>
+<li>
+<p><strong>ascendientes ligados por v&iacute;nculos de afinidad</strong> en los que, cumpliendo los requisitos anteriores (75 a&ntilde;os o 65 a&ntilde;os con un grado de discapacidad f&iacute;sica, org&aacute;nica o sensorial con un grado igual o superior al 65 por 100 o con discapacidad cognitiva, psicosocial, intelectual o del desarrollo con un grado igual o superior al 33 por 100), cumplan los requisitos de convivencia y renta que se exigen para generar el derecho a la aplicaci&oacute;n del m&iacute;nimo por ascendientes para familiares por consanguinidad o adopci&oacute;n.</p>
+<p>Esto es:</p>
+<p class="sangrado-izq">-Convivir con el contribuyente, al menos, la mitad del a&ntilde;o.</p>
+<p class="sangrado-izq">-No haber obtenido en el ejercicio rentas superiores a 8.000 euros anuales, excluidas las exentas del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+<p class="sangrado-izq">-No presentar declaraci&oacute;n del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> con rentas superiores a 1.800 euros.</p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Que el contribuyente desarrolle actividades por cuenta propia o ajena</strong> por las cuales perciba rendimientos del trabajo o de actividades econ&oacute;micas.</p>
+</li>
+<li>
+<p>Que la&nbsp;<strong>suma de la base liquidable general y de la base liquidable del ahorro</strong> (casillas<strong><em> [0500]</em></strong> y<strong><em> [0510]</em></strong> de la declaraci&oacute;n)<strong>&nbsp;no supere</strong> las siguientes cantidades:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>- 30.000 euros en declaraci&oacute;n individual.</strong></p>
+</li>
+<li>
+<p><strong>- 47.000 euros en declaraci&oacute;n conjunta.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cuando dos contribuyentes tengan derecho </strong>a la aplicaci&oacute;n de esta deducci&oacute;n,<strong> su l&iacute;mite se prorratear&aacute; entre ellos por partes iguales.</strong></p>
+<p class="sangrado-izq letrita">En la medida en la que la deducci&oacute;n se aplica por aquel contribuyente que satisfaga cantidades y figure como empleador, siempre que tenga a su cargo ascendientes y/o descendientes que cumplan los requisitos exigidos en la normativa, el prorrateo del l&iacute;mite solo proceder&aacute; si dos contribuyentes han contratado durante el a&ntilde;o a una o m&aacute;s personas para el cuidado de los mismos ascendientes/descendientes que cumplan los requisitos establecidos para que pueda generarse el derecho a la aplicaci&oacute;n del m&iacute;nimo por sus familiares directos.</p>
+</li>
+</ul>
+<h2>L&iacute;mites m&aacute;ximos de la deducci&oacute;n</h2>
+<p>El importe de esta deducci&oacute;n, calculado en funci&oacute;n de los meses en cuyo &uacute;ltimo d&iacute;a se cumplan los requisitos indicados, <strong>no podr&aacute; superar</strong> los siguientes l&iacute;mites:</p>
+<ul>
+<li>
+<p>Por descendientes a cargo:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>- 660 euros</strong> en caso de que el contribuyente tenga a su cargo un <strong>menor de 5 a&ntilde;os nacido, adoptado o acogido.</strong></p>
+</li>
+<li>
+<p><strong>- 1.100 euros</strong> en el supuesto de que el contribuyente tenga a su cargo <strong>dos menores o m&aacute;s o se trate de familias monoparentales.</strong></p>
+<p>A estos efectos, se estar&aacute; a lo dispuesto en el Decreto 19/2018, de 9 de marzo, del Consell, por el que se regula el reconocimiento de la condici&oacute;n de familia monoparental en la Comunitat Valenciana.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Por ascendientes a cargo:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>- 330 euros</strong> cuando el contribuyente tenga a su cargo <strong>un ascendiente</strong>.</p>
+</li>
+<li>
+<p><strong>- 550 euros </strong>en el supuesto de que tenga a su cargo <strong>dos o m&aacute;s ascendientes</strong>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p class="border border-primary rounded-sm border-size-1 p-3"><span class="verde"><strong><em>Importante:</em></strong></span><em> los importes y l&iacute;mites cuantitativos de esta deducci&oacute;n establecidos a efectos de la tributaci&oacute;n individual se aplicar&aacute;n en id&eacute;ntica cuant&iacute;a en la tributaci&oacute;n conjunta, sin que proceda su elevaci&oacute;n o multiplicaci&oacute;n en funci&oacute;n del n&uacute;mero de miembros de la unidad familiar</em>.</p>
+<h3>Ejemplo</h3>
+<p>Pareja formada por do&ntilde;a P.R.M&nbsp; y don J.S.R con dos hijos comunes por los que ambos aplican el m&iacute;nimo por descendientes. Con ellos convive durante todo el a&ntilde;o, adem&aacute;s, el padre de don J.S.R, por el que tiene derecho a aplicar m&iacute;nimo por descendientes.</p>
+<p>Do&ntilde;a P.R.M figura como empleadora de una persona que ha contratado el 1 de abril del ejercicio para el cuidado de sus hijos y de su ascendiente y por el que ha satisfecho en dicho a&ntilde;o cuotas por importe total de 2.541,42 euros.</p>
+<p>Determinar la deducci&oacute;n a aplicar.</p>
+<p><strong>Soluci&oacute;n</strong></p>
+<p><strong>Nota previa:</strong> solo tienen derecho a aplicar esta deducci&oacute;n do&ntilde;a P.R.M, ya que es la que figura como empleadora de la empleada de hogar en la Seguridad Social.</p>
+<p>Contribuyente do&ntilde;a P.R.M: 50% s/ 2.541,42 = 1.270,71</p>
+<p>L&iacute;mite m&aacute;ximo: 1.430 euros (1.100 por los dos hijos + 330 por ascendiente por afinidad que cumple los requisitos de convivencia y renta exigidos)</p>
+<p>Como 1.270,71 no supera el l&iacute;mite m&aacute;ximo tendr&aacute; derecho a deducir dicha cantidad (1.270,71 euros).</p>
+<h2>Aplicaci&oacute;n de los l&iacute;mites de la deducci&oacute;n seg&uacute;n base liquidable</h2>
+<ul>
+<li>
+<p>Los l&iacute;mites m&aacute;ximos de la deducci&oacute;n (660, 1.100, 330 o 550 euros, seg&uacute;n corresponda) solo ser&aacute;n aplicables a los contribuyentes cuya <strong>suma de la base liquidable general y de la base liquidable del ahorro sea inferior </strong><strong>a 27.000 euros, en tributaci&oacute;n individual, o a 44.000 euros, en tributaci&oacute;n conjunta.</strong></p>
+</li>
+<li>
+<p>Cuando <strong>la suma de la base liquidable general y de la base liquidable del ahorro del contribuyente est&eacute; comprendida entre </strong><strong>27.000 </strong><strong>y </strong><strong>30.000&nbsp;</strong><strong>euros</strong>, en tributaci&oacute;n individual, o <strong>entre </strong><strong>44.000 y 47.000&nbsp;</strong><strong>euros, </strong>en tributaci&oacute;n conjunta, <strong>los</strong> <strong>l&iacute;mites de la deducci&oacute;n </strong>ser&aacute;n los siguientes:</p>
+<ol type="a">
+<li>
+<p><strong>En tributaci&oacute;n individual, </strong>el resultado de multiplicar el l&iacute;mite m&aacute;ximo de la deducci&oacute;n (660, 1.100, 330 o 550 euros, seg&uacute;n corresponda) por un porcentaje obtenido de la aplicaci&oacute;n de la siguiente f&oacute;rmula:</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><strong>100 &times; (1 &ndash; el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 27.000)</strong></p>
+</li>
+<li>
+<p><strong>En tributaci&oacute;n conjunta</strong>, el resultado de multiplicar el l&iacute;mite m&aacute;ximo de la deducci&oacute;n (660, 1.100, 330 o 550 euros, seg&uacute;n corresponda) por un porcentaje obtenido de la aplicaci&oacute;n de la siguiente f&oacute;rmula:</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><strong>100 &times; (1 &ndash; el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 44.000)</strong></p>
+</li>
+</ol>
+</li>
+</ul>
+<h2>Incompatibilidad</h2>
+<p>Esta deducci&oacute;n resulta <strong>incompatible</strong> con la aplicaci&oacute;n de las deducciones auton&oacute;micas &ldquo;Por las cantidades destinadas a la custodia no ocasional en guarder&iacute;as y centros de primer ciclo de educaci&oacute;n infantil de hijos e hijas o personas adoptadas o acogidas o con delegaci&oacute;n de guarda con fines de adopci&oacute;n, menores de tres a&ntilde;os&rdquo;, "Por conciliaci&oacute;n del trabajo con la vida familiar "y "Por ascendientes mayores de 75 a&ntilde;os o mayores de 65 a&ntilde;os con discapacidad".</p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-09-29">29/septiembre/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

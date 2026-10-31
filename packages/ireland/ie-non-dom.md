@@ -4,14 +4,13 @@ description: "Use this skill for any question about Ireland's non-dom tax rules.
 version: 1.1
 jurisdiction: IE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-24
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
-verified_by: pending
 ---
 
 # Ireland: tax for people who are not domiciled in Ireland

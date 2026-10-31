@@ -1,0 +1,109 @@
+All 14 candidate oa-check expected maps independently matched:
+{
+  "mc-income-tax": [
+    {
+      "receipts": "62000",
+      "monaco_personal_tax": "0"
+    },
+    {
+      "days": "365",
+      "margin": "10",
+      "shortfall": "13"
+    }
+  ],
+  "mc-company-formation": [
+    {
+      "initial_minimum": "15000",
+      "remaining": "15000"
+    },
+    {
+      "quarter": "75000",
+      "initial_minimum": "150000",
+      "remaining": "150000"
+    }
+  ],
+  "mc-corporate-income-tax": [
+    {
+      "tax": "25000",
+      "advance": "4000",
+      "balance": "9000"
+    },
+    {
+      "used": "1500000",
+      "tax": "125000",
+      "remaining_loss": "500000"
+    }
+  ],
+  "mc-cross-border": [
+    {
+      "gross": "10000",
+      "credit": "1000",
+      "monaco_after": "1500"
+    },
+    {
+      "credit": "2500",
+      "monaco_after": "0",
+      "uncredited": "500"
+    }
+  ],
+  "mc-transfer-pricing": [
+    {
+      "adjustment": "20000",
+      "extra_isb": "5000"
+    },
+    {
+      "addback": "4000",
+      "extra_isb": "1000"
+    }
+  ],
+  "monaco-vat": [
+    {
+      "net": "1.000E+4",
+      "output": "2000",
+      "payable": "1400"
+    },
+    {
+      "output": "400",
+      "input_credit": "200",
+      "payable": "200"
+    }
+  ],
+  "mc-payroll-social": [
+    {
+      "ta": "3000",
+      "tb": "0",
+      "employer": "955.56",
+      "employee": "397.74",
+      "cash_net": "2602.26",
+      "cost_before_insurance": "3955.56"
+    },
+    {
+      "ta": "3971",
+      "tb": "8029",
+      "employer": "3716.11",
+      "employee": "1645.93",
+      "cash_net": "10354.07",
+      "cost_before_insurance": "15716.11"
+    }
+  ]
+}
+Independent substantive boundary calculations:
+Executive service T 125000 additional bands 0 ceiling 67680.00
+Executive service T 125000.01 additional bands 1 ceiling 118440.00
+Executive service T 1000000 additional bands 7 ceiling 423000.00
+Executive service T 1125000 additional bands 8 ceiling 477144.00
+Executive service T 3500000 additional bands 27 ceiling 1505880.00
+ECB 2.40 BdF 4.40 Monaco ceiling 6.40
+ECB 2.65 BdF 4.65 Monaco ceiling 6.65
+ECB 2.90 BdF 4.90 Monaco ceiling 6.90
+Finance net5m EBITDA10m cap 3000000 disallowed 2000000
+Thin capital net1.2m EBITDA8m cap 1000000 disallowed 200000 eligible carry 66666.66666666666666666666667
+Participation holding .20 capped quota 12000 deduction 88000
+Participation holding .35 capped quota 10000.0 deduction 90000.0
+Participation holding .50 capped quota 5000.00 deduction 95000.00
+VAT coefficients 0.82 0.67 0.55 VAT1000 recovery 550.00
+Annual fixed-asset adjustment -800.0 building -200.0
+Fuel VAT100 passenger petrol/diesel recovery 80.0 gas/LPG 50.0
+CCSS/CAR 2025 monthly/yearly 117600 73344 2026 October 120000 75312
+CMRC upper B 31768 32536
+Jan/Jun adult169h minima 2031.38 2080.39

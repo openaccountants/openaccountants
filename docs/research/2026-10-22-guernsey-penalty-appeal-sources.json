@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://gov.gg/taxpenalties",
+      "locator": "Calculation and appeal FAQ",
+      "sha256": "f4f9c04e665770a41ca4db017c4c8d12bac954c0e6127c58120b07283576bcd6"
+    },
+    {
+      "url": "https://gov.gg/CHttpHandler.ashx?id=101085&p=0",
+      "locator": "Form 690(b) 12/21 pages 1\u20132",
+      "sha256": "e9111c66af954df957c2ca19145c6565b81127d84f2007e4e9ee5550aef0adfb"
+    }
+  ]
+}

@@ -63,7 +63,18 @@ Not covered here: whether a logbook is required, how to apportion business versu
 private kilometres, the 80/20 PAYE inclusion on a travel allowance, or the
 interaction with codes 3701/3702/3703. Those are computation rules.
 
- | --- | --- | --- |
+---
+
+## Section 2 — Fixed cost table (deemed-cost method)
+
+Fuel and maintenance are stated in **cents per kilometre**, as SARS publishes them.
+Fixed cost is an annual rand amount. The band is set by the **determined value** of
+the vehicle.
+
+### Year of assessment 2023 (2022/23)
+
+| Determined value of vehicle | Fixed cost (per year) | Fuel cost | Maintenance cost |
+| --- | --- | --- | --- |
 | 0 – 95,000 | R29,504 | 141.6 c/km | 45.0 c/km |
 | 95,001 – 190,000 | R52,226 | 158.1 c/km | 56.3 c/km |
 | 190,001 – 285,000 | R75,039 | 171.8 c/km | 62.0 c/km |

@@ -29,6 +29,46 @@ receiving them. The corridor splits sharply by destination: a **zero-tax landing
 some territorial regimes) and a **high-tax landing** (most of Europe) produce nearly opposite
 optimal setups, and this Guide keeps both threads visible throughout.
 
+---
+
+## Part 1 — The two shields: FEIE vs Foreign Tax Credit
+
+US worldwide taxation is made livable by two mechanisms. Choosing between them is the single
+biggest recurring decision of American expat life.
+
+### 1.1 The Foreign Earned Income Exclusion (FEIE, §911 / Form 2555)
+Excludes **earned** income (salary, self-employment — never dividends, interest, gains,
+pensions) up to an inflation-adjusted cap — **$130,000 for 2025**, adjusted annually — plus a
+foreign **housing exclusion** above a base amount, capped by city. To qualify you must have a
+**tax home abroad** and pass either:
+- the **Physical Presence Test** — 330 full days outside the US in any rolling 365-day window
+  (count brutally; a partial day in the US is a US day), or
+- the **Bona Fide Residence Test** — a full calendar year as a genuine resident of another
+  country (facts-and-circumstances: home, family, local ties, local tax status).
+
+### 1.2 The Foreign Tax Credit (FTC, §901 / Form 1116)
+A dollar-for-dollar credit for **foreign income tax actually paid**, basketed by income type,
+with unused credits carried back 1 year and forward 10.
+
+### 1.3 The choice, by destination
+- **Zero-tax landing (UAE, Gulf):** there is no foreign tax to credit — the FTC is empty. The
+  FEIE is your only shield: the first ~$130k of salary escapes US tax; everything above it is
+  **fully US-taxed as if you lived in Ohio**. High earners in Dubai are often shocked to owe
+  the IRS six figures. (Self-employed: the FEIE does **not** reduce self-employment tax — see
+  Part 4.)
+- **High-tax landing (Germany, France, UK):** local tax exceeds US tax on the same income; the
+  FTC usually wipes the US bill entirely *and* banks carryforward credits. Most advisers prefer
+  FTC-only here — not least because taking the FEIE and later revoking it locks you out of
+  re-electing it for 5 years without IRS consent.
+- **Mixed lives** (Dubai salary + European rental + US portfolio) use both, in baskets — this
+  is precisely where a preparer who does expat returns daily earns their fee.
+
+**Timing note:** expats get an automatic filing extension to **June 15** (tax still accrues
+interest from April 15) and can extend to October 15; first-year FEIE claims often need Form
+2350 to wait out the presence tests.
+
+---
+
 ## Part 2 — The reporting web: forms that carry four-figure penalties
 
 For Americans abroad the *income* tax is often modest; the **information reporting** is where

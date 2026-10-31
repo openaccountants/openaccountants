@@ -1,0 +1,2051 @@
+
+
+        
+	
+    
+	
+
+Agencia Tributaria: Instrucciones
+
+
+
+	
+[[ID:body]]
+
+
+		
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+
+	  
+	  		
+		
+
+		
+	   	
+[[ID:topIzquierda]]
+
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+
+
+	  
+	
+	
+
+	
+	
+    
+   	
+
+
+
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+
+
+
+	           
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Impuesto sobre la Renta de No Residentes
+
+Modelo 210. IRNR. Impuesto sobre la Renta de no Residentes sin establecimiento permanente.
+
+
+
+
+			
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Instrucciones
+
+Modelo 210 - Impuesto sobre la Renta de no Residentes - No residentes sin establecimiento permanente 
+
+
+Instrucciones para cumplimentar la autoliquidación
+
+
+Importante: todos los importes monetarios solicitados deberán expresarse en euros, consignando en la parte izquierda de las correspondientes casillas la parte entera y en la derecha la parte decimal, que constará de dos dígitos en todo caso. 
+
+
+Las referencias a la Ley del Impuesto y al Reglamento, contenidas en las presentes instrucciones, se entienden efectuadas al texto refundido de la Ley del Impuesto sobre la Renta de no Residentes aprobado por Real Decreto Legislativo 5/2004 (BOE del 12 de marzo), y al Reglamento de dicho Impuesto, aprobado por el artículo único del Real Decreto 1776/2004, de 30 de julio (BOE de 5 de agosto). 
+
+
+Obligación de declarar
+
+
+Esta autoliquidación se utilizará para declarar las rentas obtenidas sin establecimiento permanente por los contribuyentes del Impuesto sobre la Renta de no Residentes.
+
+
+No estarán obligados a presentar autoliquidación respecto de las rentas sobre las que se hubiese practicado la retención o efectuado el ingreso a cuenta del Impuesto a que se refiere el artículo 31 de la Ley del Impuesto, salvo en el caso de ganancias patrimoniales derivadas del reembolso de participaciones en fondos de inversión regulados en la Ley 35/2003, de 4 de noviembre, de instituciones de inversión colectiva, cuando la retención practicada haya resultado inferior a la cuota tributaria calculada conforme a la previsto en los artículos 24 y 25 de la Ley del Impuesto.
+
+Tampoco estarán obligados a presentar autoliquidación respecto de las rentas sujetas a retención o ingreso a cuenta pero exentas en virtud del artículo 14 de la Ley del Impuesto o en un Convenio que resulte aplicable.
+
+
+En particular, subsiste la obligación de declarar en los siguientes casos de obtención de rentas:
+
+
+
+
+
+Rentas sujetas a tributación por el Impuesto sobre la Renta de no Residentes, pero exceptuadas de la obligación de retener e ingresar a cuenta de acuerdo con el artículo 10.3 del Reglamento del Impuesto. Entre ellas se encuentran, por ejemplo, las ganancias patrimoniales derivadas de la venta de acciones.
+
+
+
+
+
+
+Las personas físicas, por la renta imputada de bienes inmuebles urbanos.
+
+
+
+
+
+
+Rendimientos satisfechos por personas que no tengan la condición de retenedor. Por ejemplo, rendimientos obtenidos del arrendamiento de inmuebles cuando el arrendatario es una persona física y satisface dichos rendimientos fuera del ámbito de una actividad económica.
+
+
+
+
+
+
+Tratándose de rentas derivadas de transmisiones de bienes inmuebles situados en territorio español, los contribuyentes no residentes deberán declarar, e ingresar en su caso, el impuesto definitivo, compensando en la cuota el importe retenido o ingresado a cuenta por el adquirente a que se refiere el artículo 25.2 de la Ley del Impuesto.
+
+
+
+
+
+
+Para solicitar la devolución de un exceso de retención o ingreso a cuenta en relación con la cuota del impuesto.
+
+
+
+
+
+
+
+Estos contribuyentes tributan de forma separada por cada devengo total o parcial de rentas sometidas a gravamen y, por tanto, cuando estén obligados a declarar, utilizarán esta autoliquidación para declarar cada renta de forma separada.
+
+
+Podrán declarar en este modelo cualquier tipo de renta (rendimiento, renta imputada de bienes inmuebles, ganancias patrimoniales).
+
+
+No obstante, esta autoliquidación podrá ser utilizada para declarar de forma agrupada varias rentas obtenidas por un mismo contribuyente, siempre que correspondan al mismo código de tipo de renta, procedan del mismo pagador y les sea aplicable el mismo tipo de gravamen. Si además tales rentas derivan de un bien o derecho, deberán proceder del mismo bien o derecho. Sin embargo, tratándose de rendimientos de inmuebles arrendados o subarrendados no sujetos a retención podrán agruparse con esos mismos requisitos excepto el relativo a rentas que procedan del mismo pagador, si bien cuando se declaren rendimientos de inmuebles procedentes de varios pagadores será necesario indicar un código específico de tipo de renta, el 35.
+
+
+En relación con las rentas derivadas de transmisiones de bienes inmuebles: 
+
+
+
+en el caso de pérdidas, también se deberá presentar esta autoliquidación si se desea ejercer el derecho a la devolución de la retención que hubiese sido practicada.
+
+
+cuando el inmueble objeto de transmisión sea de titularidad compartida por un matrimonio en el que ambos cónyuges sean no residentes se podrá realizar una única autoliquidación.
+
+
+
+Solicitud de devolución por aplicación de convenio relativa al Gravamen Especial sobre premios de determinadas loterías y apuestas: Los contribuyentes no residentes sin establecimiento permanente que hubieran obtenido premios sujetos al Gravamen especial sobre los premios de determinadas loterías y apuestas establecido por la D.A. Quinta de la Ley del Impuesto, cuando hubieran ingresado en el Tesoro cantidades, o soportado retenciones a cuenta de ese gravamen especial, en cuantías superiores a las que se deriven de la aplicación de un convenio para evitar la doble imposición, podrán solicitar dicha aplicación y la devolución consiguiente mediante el modelo de autoliquidación 210, apartado 210 G, indicando en la casilla (2) “Tipo de renta” el código 31, y en la forma, lugar, plazos y con la documentación establecidos para esta autoliquidación. Si por aplicación de convenio los premios tributan de manera exclusiva en el país de residencia, se marcará en “Exenciones” la casilla (20) “Convenio” y se hará constar un cero en la casilla (21) “Tipo de gravamen Ley IRNR”.
+
+
+Imposición complementaria: En el caso de la Imposición complementaria aplicable a establecimientos permanentes a que se refiere el artículo 19.2 de la Ley del Impuesto, para su declaración e ingreso se utilizará el modelo 210, apartado 210 R, indicando en la casilla (02) “Tipo de renta” el código 27. La imposición complementaria no será aplicable a aquellos EP cuya casa central tenga su residencia fiscal en otro Estado de la Unión Europea, salvo que se trate de un país o territorio considerado como paraíso fiscal (con efectos desde el 11 de julio de 2021 las referencias efectuadas a paraísos fiscales se entienden efectuadas a la definición de jurisdicción no cooperativa), o en un Estado que haya suscrito con España un Convenio para evitar la doble imposición, en el que no se establezca expresamente otra cosa, siempre que exista un tratamiento recíproco. 
+
+
+Forma de presentación
+
+
+La presentación puede hacerse:
+
+
+
+de forma telemática por internet, con certificado de firma electrónica admitido por la Agencia Tributaria y, en el caso de personas físicas, también se podrá realizar la presentación mediante el sistema Cl@ve, o 
+
+
+en soporte papel generado al imprimir el formulario previamente cumplimentado en la Sede electrónica de la Agencia Tributaria.
+
+
+
+Documentación
+
+
+Se aportará la siguiente documentación:
+
+
+
+
+
+Certificados de residencia o formularios: cuando se practique la autoliquidación aplicando las exenciones de la normativa interna española, por razón de la residencia del contribuyente, se adjuntará un certificado de residencia, expedido por las autoridades fiscales del país de residencia, que justifique esos derechos.
+
+
+No obstante, cuando las entidades a que se refiere el apartado 1 de la disposición adicional tercera del Reglamento del Impuesto sobre la Renta de no Residentes (Fondos de pensiones e Instituciones de Inversión Colectiva residentes en la Unión Europea), apliquen la exención prevista en el artículo 14.1.c) del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes (relativa a intereses y ganancias patrimoniales derivadas de bienes muebles), la acreditación de la residencia podrá efectuarse conforme a lo dispuesto en dicha disposición adicional (en unos casos, mediante certificados emitidos por las autoridades de supervisión o registro del Estado de establecimiento y, en otros, mediante declaraciones de representantes de las entidades afectadas).
+
+
+Asimismo, cuando se apliquen las exenciones previstas en el artículo 14.1.k) y 14.1.l) del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, los fondos de pensiones o instituciones de inversión colectiva sometidos a un régimen específico de supervisión o registro administrativo, justificarán el derecho a la exención, en lugar de con el certificado de residencia, de la siguiente forma:
+
+
+
+
+
+En el caso de la exención del artículo 14.1.k), adjuntarán una declaración formulada por el representante del fondo de pensiones en la que se manifieste el cumplimiento de los requisitos legales, ajustada al modelo del anexo VI de la Orden EHA 3316/2010, de 17 de diciembre.
+
+
+No obstante, tratándose de una institución de previsión social regulada por la Directiva 2016/2341 del Parlamento Europeo y del Consejo de 14 de diciembre de 2016, relativa a las actividades y la supervisión de los fondos de pensiones de empleo, podrán adjuntar un certificado emitido por la autoridad competente del Estado en que la institución se encuentre establecida, en los mismos términos y con igual validez indefinida que el previsto en el apartado 2.a), segundo párrafo, de la disposición adicional tercera del Reglamento del Impuesto sobre la Renta de no Residentes.
+
+
+
+
+
+
+En el caso de la exención del artículo 14.1.l), adjuntarán un certificado emitido por la autoridad competente del Estado miembro de origen de la institución en el que se manifieste que dicha institución cumple las condiciones establecidas en la Directiva 2009/65/CE del Parlamento Europeo y del Consejo, de 13 de julio de 2009, por la que se coordinan las disposiciones legales, reglamentarias y administrativas sobre determinados organismos de inversión colectiva en valores mobiliarios (OICVM). La autoridad competente será la designada conforme a lo previsto en el artículo 97 de la citada Directiva.
+
+
+
+
+
+Cuando se practique la autoliquidación aplicando las exenciones o la reducción de la cuota por un límite de imposición de un Convenio para evitar la doble imposición suscrito por España, se adjuntará un certificado de residencia fiscal expedido por la autoridad fiscal correspondiente que justifique esos derechos, en el que deberá constar expresamente que el contribuyente es residente en el sentido definido en el Convenio. No obstante, cuando se practique la autoliquidación teniendo en cuenta un límite de imposición fijado en un Convenio desarrollado mediante una Orden en la que se establezca la utilización de un formulario específico, deberá aportarse el mismo en lugar del certificado.
+
+
+Cuando, conforme al artículo 24.6 de la Ley del Impuesto, se deduzcan gastos para la determinación de la base imponible, por tratarse de contribuyentes residentes en otro Estado miembro de la Unión Europea, o del Espacio Económico Europeo con efectivo intercambio de información tributaria (con efectos desde el 11 de julio de 2021, las referencias normativas a efectivo intercambio de información tributaria se entienden efectuadas a la existencia de normativa sobre asistencia mutua en materia de intercambio de información tributaria), se adjuntará certificado de residencia fiscal en el Estado que corresponda expedido por la autoridad fiscal de dicho Estado.
+
+
+Los certificados de residencia y las declaraciones ajustadas a los modelos de los anexos VI y VII de la Orden que aprueba este modelo tendrán un plazo de validez de un año a partir de la fecha de su expedición. No obstante, los certificados de residencia tendrán una validez indefinida cuando el contribuyente sea un Estado extranjero, alguna de sus subdivisiones políticas o administrativas o sus entidades locales. Asimismo, tendrá validez indefinida el certificado emitido por la autoridad competente del Estado miembro de origen de la institución de inversión colectiva a que se refiere la letra b) citada anteriormente en este mismo apartado, así como los certificados emitidos por las autoridades competentes previstos en la DA 3ª del Reglamento del Impuesto sobre la Renta de no Residentes, en tanto no se modifiquen los datos contenidos en los mismos.
+
+
+No obstante, en el supuesto de autoliquidaciones presentadas por responsables solidarios que sean depositarios de valores bastará con que los mismos conserven a disposición de la Administración Tributaria los certificados de residencia, las declaraciones y formularios a que se refieren los apartados anteriores, durante el período de prescripción del impuesto.
+
+
+Procedimiento especial: en el caso de entidades de gestión colectiva de derechos de la propiedad intelectual, si se trata de una solicitud de devolución mediante el procedimiento especial de declaración y acreditación previsto en el artículo 17 de la Orden de aprobación del modelo 210, se tendrá en cuenta lo dispuesto en dicho artículo. En estos casos, en la casilla (02) “Tipo de renta” se hará constar el código 32.
+
+
+Procedimiento especial: tratándose de ganancias exentas derivadas de la transmisión de derechos de suscripción procedentes de valores, respecto de las que se ha utilizado el procedimiento especial de declaración y acreditación previsto en el artículo 18 de la Orden de aprobación del modelo 210, se tendrá en cuenta lo dispuesto en dicho artículo. En estos casos, en la casilla (02) “Tipo de renta” se hará constar el código 36.
+
+
+
+
+
+
+Certificado de retenciones e ingresos a cuenta: cuando se deduzcan de la cuota retenciones o ingresos a cuenta se adjuntarán documentos justificativos de los mismos.
+
+
+Procedimiento especial: En el caso de que la renta declarada sea dividendos o intereses derivados de valores negociables, cuyo pago se realiza a través de una cadena de intermediarios financieros situados en España y en el extranjero, la Administración Tributaria podrá solicitar la acreditación de la trazabilidad de la cadena de pago en el extranjero.
+
+
+Para devengos desde 2024, se podrá acreditar la trazabilidad cuando conforme a lo dispuesto en los artículos 8 y 11 de la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 "Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso" y el modelo 296 "Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta", se presenten los Anexos al tipo de registro 2 del modelo 296 denominados “Valores negociables. Relación de pago a contribuyentes” y “Valores negociables. Relación de certificados de pago”, consignando en ellos el número de justificante de la autoliquidación modelo 210 con solicitud de devolución relativa al valor negociable, fecha de devengo y contribuyente.
+
+
+Los Anexos al registro de tipo 2 del modelo 296, denominados “Valores negociables. Relación de pago a contribuyentes” y “Valores negociables. Relación de certificados de pago” se utilizarán por mediadores en España que realicen los pagos de rentas de valores a intermediarios en el extranjero cuando soliciten la devolución de retenciones para los contribuyentes mediante el modelo de autoliquidación 210. Cuando la solicitud de devolución de retenciones se realice por contribuyentes o sus representantes, los mediadores en España que realicen los pagos de rentas de valores a intermediarios en el extranjero podrán incluir en los Anexos los registros de estos contribuyentes cuyos modelos 210 se hayan presentado.
+
+
+Cuando, conforme a lo dispuesto en el artículo 8 de la citada Orden EHA/3290/2008,  exista obligación de presentar los Anexos al tipo de registro 2 del modelo 296 denominados “Valores negociables. Relación de pago a contribuyentes” y “Valores negociables. Relación de certificados de pago”, las entidades obligadas deberán presentar dichos Anexos en el plazo previsto en el artículo 11 de dicha Orden, consignando en ellos el número de justificante de la autoliquidación modelo 210 con solicitud de devolución relativa al valor negociable, fecha de devengo y contribuyente, pudiéndose entender con ello acreditada la trazabilidad de la cadena de pago en el extranjero.
+
+
+
+
+
+
+Justificante acreditativo de la identificación y titularidad de la cuenta bancaria: en las autoliquidaciones a devolver, será preciso adjuntar el justificante acreditativo de la identificación y titularidad de la cuenta bancaria a la que se transfiera la devolución (ver apartado "Devolución" de las instrucciones del documento de ingreso o devolución).
+
+
+
+
+
+
+Acreditación de la representación: cuando la devolución se solicite en una cuenta cuyo titular sea el representante legal del contribuyente, será preciso adjuntar el documento que acredite la representación, en el que deberá constar una cláusula que faculte al citado representante legal para recibir la devolución a su nombre por cuenta del contribuyente.
+
+
+
+
+
+Persona que realiza la autoliquidación
+
+
+Con carácter general, pueden realizar esta autoliquidación el contribuyente, su representante, o un responsable solidario definido en el artículo 9 de la Ley del Impuesto. Además, si se trata de una solicitud de devolución por exceso de retención, el sujeto obligado a retener.
+
+
+En relación con las rentas imputadas de inmuebles urbanos, rentas derivadas de transmisiones de bienes inmuebles y, desde 16 de diciembre de 2023 (fecha de entrada en vigor de la Orden HFP/1338/2023, de 13 de diciembre), rentas de inmuebles arrendados o subarrendados (tipos de renta 01 ó 35), sólo se puede realizar esta autoliquidación por el contribuyente o, cuando el inmueble objeto de transmisión sea de titularidad compartida, por un matrimonio en el que ambos cónyuges sean no residentes.
+
+
+"NIF": Se consignará el número de identificación fiscal (NIF) asignado en España de la persona que realice la autoliquidación.
+
+
+"Apellidos y nombre, razón social o denominación":
+
+
+
+Para personas físicas, se consignará el primer apellido, el segundo apellido y el nombre completo, en este mismo orden.
+
+
+Para personas jurídicas y entidades, se consignará la razón social o la denominación completa de la entidad, sin anagramas.
+
+
+
+Señale con una "X" en el recuadro correspondiente en calidad de qué realiza la autoliquidación la persona o entidad identificada en este apartado. Si en la persona que realiza la autoliquidación concurren varias de estas condiciones, se marcarán los recuadros correspondientes a todas ellas.
+
+
+Devengo
+
+
+Las rentas se entienden devengadas:
+
+
+
+Los rendimientos, cuando resulten exigibles o en la fecha de cobro si fuera anterior.
+
+
+Las rentas imputadas a personas físicas titulares de inmuebles urbanos, el último día del año natural.
+
+
+Las ganancias patrimoniales, cuando tenga lugar la alteración patrimonial. En el caso de transmisiones de bienes inmuebles se indicará la fecha en que se realizó la transmisión.
+
+
+
+En el caso de solicitud de devolución por aplicación de convenio relativa al Gravamen Especial sobre premios de determinadas loterías y apuestas, se indicará el devengo correspondiente al Gravamen Especial. El Gravamen Especial se devenga en el momento en que se satisfaga o se abone el premio.
+
+
+Agrupación: Se permite agrupar varias rentas obtenidas por un mismo contribuyente, siempre que correspondan al mismo código de tipo de renta, procedan del mismo pagador y les sea aplicable el mismo tipo de gravamen. Si además tales rentas derivan de un bien o derecho, deberán proceder del mismo bien o derecho. No obstante, tratándose de rendimientos de inmuebles arrendados o subarrendados no sujetos a retención podrán agruparse con esos mismos requisitos excepto el relativo a rentas que procedan del mismo pagador, si bien cuando se declaren rendimientos de inmuebles procedentes de varios pagadores será necesario indicar un código específico de tipo de renta, el 35.
+
+
+En ningún caso las rentas agrupadas pueden compensarse entre sí.
+
+
+Si se trata de una autoliquidación con resultado a ingresar, marque una X en esta casilla cuando opte por agrupar las rentas devengadas en un mismo trimestre natural, excepto rentas, devengadas desde 2024, de arrendamientos de inmuebles cuyo período de agrupación será anual. En el recuadro "período/año" se indicará el trimestre natural (1T, 2T, 3T ó 4T) y el ejercicio al que se refiere la autoliquidación.
+
+
+Si se trata de una autoliquidación de cuota cero, con resultado a devolver o a ingresar, en el caso de rentas, devengadas desde 2024, de arrendamientos de inmuebles, marque una X en esta casilla cuando opte por agrupar las rentas devengadas durante el año natural. En el recuadro "período/año" se indicará "0A", cero A, y el ejercicio al que se refiere la autoliquidación.
+
+
+Fecha de devengo: Cuando esta autoliquidación se utilice para declarar rentas imputadas de bienes inmuebles urbanos, rentas derivadas de transmisiones de bienes inmuebles o cualquier otra renta de forma separada consigne la fecha de devengo de la renta declarada, en formato "día/mes/año". En el caso de dividendos o intereses derivados de valores negociables se indicará, respectivamente, la fecha de pago establecida en el acuerdo de distribución de dividendos o la fecha de vencimiento de los intereses. 
+
+
+En estos supuestos, además, en el recuadro "periodo/año", se indicará "0A" y el ejercicio al que corresponde la fecha de devengo.
+
+
+Renta obtenida
+
+
+Tipo de renta (2): indique la clave correspondiente al tipo de renta de entre los enumerados en la relación adjunta.
+
+
+Clave de divisa (3): de la relación adjunta de claves de divisas, se indicará la divisa utilizada para hacer los pagos.
+
+
+Contribuyente
+
+
+“NIF”: Si el contribuyente dispone de número de identificación fiscal (NIF) asignado en España, se consignará en esta casilla.
+
+
+“F/J”: Haga constar una F si el contribuyente es una persona física y una J si se trata de una persona jurídica o entidad.
+
+
+“Apellidos y nombre, razón social o denominación”:
+
+
+
+Para personas físicas, se consignará el primer apellido, el segundo apellido y el nombre completo, en este mismo orden.
+
+
+Para personas jurídicas y entidades, se consignará la razón social o la denominación completa de la entidad, sin anagramas.
+
+
+
+"NIF en el país de residencia": Si el contribuyente dispone de un número de identificación fiscal asignado en su país o territorio de residencia se consignará en esta casilla.
+
+
+"Fecha de nacimiento": cuando en la Casilla "F/J" se haga constar una F, se indicará la fecha de nacimiento del contribuyente (día/mes/año).
+
+
+"Lugar de nacimiento": cuando en la Casilla "F/J" se haga constar una F, se indicará el lugar de nacimiento del contribuyente. Este apartado se subdivide en dos:
+
+
+
+"Ciudad": se consignará el municipio y, en su caso, la provincia o región o departamento correspondiente al lugar de nacimiento.
+
+
+"Código país": se consignará el código del país o territorio correspondiente al lugar de nacimiento del contribuyente, de acuerdo con las claves de países que se relacionan en la hoja adjunta.
+
+
+
+"Residencia fiscal: Código País" (1): se consignará el Código del país o territorio de residencia fiscal del contribuyente, de acuerdo con las claves de países que se relacionan en la hoja adjunta.
+
+
+"Dirección en el país de residencia": se cumplimentarán los datos de la dirección en el país de residencia que procedan teniendo en cuenta las indicaciones particulares que seguidamente se señalan:
+
+
+
+"Domicilio" (49): se consignará la dirección correspondiente al domicilio en el país de residencia: tipo de vía (calle, plaza, avenida, carretera...), nombre de la vía pública, número de casa, o, en su caso, punto kilométrico, etc.
+
+
+"Datos complementarios del domicilio" (50): en su caso, se harán constar los datos adicionales que resulten necesarios para la completa identificación del domicilio.
+
+
+"Población/ciudad" (51): se consignará el nombre de la población o ciudad en la que se encuentra situado el domicilio.
+
+
+"Código postal (ZIP)" (53): se consignará el código postal correspondiente al domicilio.
+
+
+"Provincia/Región/Estado" (54): cuando sea necesario para una correcta identificación de la dirección del domicilio, se consignará el nombre de la Provincia, Región, Estado, Departamento o cualquier otra subdivisión política o administrativa, donde se encuentre situado el domicilio.
+
+
+
+"Código país" (56): se cumplimentará el código del país o territorio correspondiente al domicilio, de acuerdo con las claves de país o territorios que se relacionan en la hoja adjunta.
+
+
+"Teléfonos fijo y móvil" (57) y (58):  A fin de agilizar la resolución de las incidencias que eventualmente puedan surgir en la tramitación de la autoliquidación, consigne en las casillas (57) y (58) los números de los teléfonos, fijo y móvil, en los que pueda ser más fácilmente localizado en días y horas laborables.
+
+
+Procedimiento especial de declaración del artículo 18 de la Orden EHA/3316/2010: la cumplimentación del apartado “Contribuyente” será la siguiente: en el campo “Apellidos y nombre, razón social o denominación” se hará constar “PROCEDIMIENTO ARTÍCULO 18 ORDEN EHA/3316/2010” y en el campo “Residencia fiscal Código país” el que corresponda al de residencia de los contribuyentes, quedando el resto de campos de este apartado sin contenido.
+
+
+Representante del contribuyente o, en su caso, domicilio a efectos de notificaciones en territorio español
+
+
+Si el contribuyente ha nombrado un representante ante la Administración Tributaria, con domicilio en territorio español, en relación a sus obligaciones por este Impuesto, se hará constar en este apartado.
+
+
+En ausencia de representante, si el contribuyente dispone de un domicilio en territorio español, podrá comunicarlo en este apartado a efectos de notificaciones.
+
+
+Existe obligación de nombrar representante en los casos previstos en el artículo 10 de la Ley del Impuesto. En los demás casos, este nombramiento será voluntario.
+
+
+“NIF”: se consignará el número de identificación fiscal del representante.
+
+
+“F/J”: haga constar una F si el representante es una persona física y una J si se trata de una persona jurídica o entidad.
+
+
+“Apellidos y nombre, razón social o denominación”: 
+
+
+
+Para personas físicas, se consignará el primer apellido, el segundo apellido y el nombre completo, en este mismo orden.
+
+
+Para personas jurídicas y entidades, se consignará la razón social o la denominación completa de la entidad, sin anagramas.
+
+
+
+"Representante":
+
+
+
+Legal: marque una X en esta casilla cuando utilice este apartado para consignar los datos del representante legal.
+
+
+Voluntario: marque una X en esta casilla cuando utilice este apartado para consignar los datos del representante nombrado con carácter voluntario.
+
+
+
+"Domicilio": se cumplimentarán los datos del domicilio que procedan, teniendo en cuenta las indicaciones particulares que seguidamente se señalan:
+
+
+
+(31). Tipo de vía. Consigne la denominación correspondiente al tipo o clase de vía pública: calle, plaza, avenida, glorieta, carretera, bajada, cuesta, pasaje, paseo, rambla, etc.
+
+
+(33). Tipo de numeración. Indique el tipo de numeración que proceda: número (NÚM), kilómetro (KM), sin número (S/N), etc.
+
+
+(34). Número de casa. Número identificativo de la casa o, en su caso, punto kilométrico.
+
+
+(35). Calificador de número. En su caso, consigne el dato que completa el número de la casa (BIS, duplicado -DUP-, moderno -MOD-, antiguo -ANT-, etc.) o el punto kilométrico (metros).
+
+
+(41). Datos complementarios. En su caso, se harán constar los datos adicionales que resulten necesarios para la completa identificación del domicilio (por ejemplo: Urbanización El Alcotán, Edificio La Peñota, Residencial El Valle, Polígono Miralcampo, etc.).
+
+
+(42). Localidad/Población. Consigne en esta casilla el nombre de la localidad o población en la que se encuentra situado el domicilio, cuando sea distinto del Municipio.
+
+
+(46) y (47). Teléfonos, fijo y móvil. A fin de agilizar la resolución de las incidencias que eventualmente puedan surgir en la tramitación de la autoliquidación, consigne en las casillas (46) y (47) los números de los teléfonos, fijo y móvil, en los que pueda ser más fácilmente localizado en días y horas laborables.
+
+
+
+Pagador/Retenedor/Emisor/Adquirente del inmueble
+
+
+Tratándose de rendimientos, deberán consignarse los datos del pagador de los mismos.
+
+
+Si se declara una ganancia sometida a retención, se indicará en este apartado los datos del retenedor.
+
+
+Tratándose de transmisiones de valores, se indicará en este apartado los datos del emisor.
+
+
+En el caso de rentas derivadas de transmisiones de bienes inmuebles deberán consignarse los datos del adquirente del inmueble transmitido. Cuando sean varios los adquirentes se consignará el que figure como titular en el modelo 211 de ingreso de la retención.
+
+
+Atención: no se deberá cumplimentar este apartado cuando esta autoliquidación se utilice para declarar "rentas imputadas de inmuebles urbanos" (tipo de renta 02), “rendimientos de inmuebles arrendados o subarrendados no sujetos a retención cuando se agrupan los obtenidos de varios pagadores” (tipo de renta 35) o "imposición complementaria" (tipo de renta 27).
+
+
+Procedimiento especial del artículo 18 de la Orden EHA/3316/2010: se cumplimentará el apartado “Pagador/Retenedor/Emisor/ Adquirente del inmueble” con los datos del emisor de los valores.
+
+
+Situación del inmueble (sólo rentas de los tipos 01, 02, 28, 33, 34 y 35)
+
+
+Cuando esta autoliquidación se utilice para declarar "rentas imputadas de inmuebles urbanos", tipo de renta 02, "rendimientos de inmuebles arrendados o subarrendados", tipos de renta 01 y 35, o "ganancias patrimoniales de transmisiones de bienes inmuebles", tipos de renta 28, 33 y 34, en este apartado se harán constar los datos de situación del inmueble.
+
+
+Ver instrucciones relativas al "domicilio" del apartado "representante".
+
+
+Referencia catastral (60): deberá hacerse constar la referencia catastral del inmueble. Este dato figura en el recibo del Impuesto sobre Bienes Inmuebles (IBI). También puede obtenerse la referencia catastral en la sede electrónica del Catastro, en la dirección electrónica "http://www.sedecatastro.gob.es", o llamando a la Línea Directa del Catastro (teléfono 902 37 36 35).
+
+
+Determinación de la base imponible
+
+
+Los apartados I, R, G y H son alternativos entre sí y en cada autoliquidación sólo debe utilizarse uno de ellos, el que corresponda según el tipo de renta declarada. La parte inferior "Liquidación" es común.
+
+
+Con carácter general, conforme a lo previsto en el artículo 44 de la Ley del Impuesto, la cuota del Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes tendrá la consideración de gasto deducible a efectos de la determinación de la base imponible del impuesto.
+
+
+210 I Renta inmobiliaria imputada
+
+
+El apartado 210 I se utilizará exclusivamente para declarar las rentas imputadas de inmuebles urbanos destinados por personas físicas al uso propio. En la casilla (02) “Tipo de renta” se consignará el código 02.
+
+
+Base Imponible [4]: se consignará la cantidad resultante de aplicar el porcentaje que corresponda, de entre los citados más adelante, al valor catastral del inmueble.
+
+
+Porcentaje aplicable:
+
+
+
+
+
+Inmuebles localizados en municipios cuyo valor catastral haya sido revisado, modificado o determinado mediante un procedimiento de valoración colectiva de carácter general, de conformidad con la normativa catastral, y haya entrado en vigor en el período impositivo o en el plazo de los diez períodos impositivos anteriores: 1,1%.
+
+
+Durante los años 2023, 2024 y 2025, el porcentaje de imputación del 1,1% resultará de aplicación en el caso de inmuebles localizados en municipios en los que los valores catastrales hayan sido revisados, modificados o determinados mediante un procedimiento de valoración colectiva de carácter general, de conformidad con la normativa catastral, siempre que hubieran entrado en vigor a partir de 1 de enero de 2012.
+
+
+
+
+
+
+Restantes inmuebles: 2%.
+
+
+
+
+
+Sobre el importe resultante no procederá la deducción de ningún tipo de gasto.
+
+
+El importe resultante se entiende referido a todo el año natural. Se reducirá proporcionalmente al número de días, cuando no haya tenido la titularidad durante todo el año, o cuando durante parte del mismo haya estado arrendado.
+
+
+Si a la fecha de devengo del impuesto (31 de diciembre) los inmuebles carecieran de valor catastral o éste no hubiera sido notificado al titular, se tomará como base de imputación de los mismos el 50% del mayor de los siguientes valores: el precio, contraprestación o valor de adquisición del inmueble, o el valor del inmueble comprobado por la Administración a efectos de otros tributos. En estos casos, el porcentaje será del 1,1%.
+
+
+Cuando se trate de inmuebles en construcción y en los supuestos en que, por razones urbanísticas, el inmueble no sea susceptible de uso, no se estimará renta alguna.
+
+
+En los supuestos de derechos de aprovechamiento por turno de bienes inmuebles, la imputación se efectuará al titular del derecho real, prorrateando el valor catastral en función de la duración anual del período de aprovechamiento. Si a la fecha de devengo del impuesto los inmuebles carecieran de valor catastral, o éste no hubiera sido notificado al titular, se tomará como base de imputación el precio de adquisición del derecho de aprovechamiento. No procederá la imputación de renta inmobiliaria a los titulares de derechos de aprovechamiento por turno de bienes inmuebles cuando su duración no exceda de dos semanas por año.
+
+
+En los supuestos en que la titularidad corresponda a varias personas, la renta correspondiente al bien inmueble o derecho real de disfrute de que se trate, se considerará obtenida por cada una de ellas en proporción a su participación en dicha titularidad.
+
+
+Ver ejemplo en el apartado "Liquidación".
+
+
+210 R Rendimientos
+
+
+El apartado 210 R se utilizará para declarar todo tipo de rendimientos. El artículo 24 de la Ley del Impuesto diferencia los siguientes regímenes:
+
+
+
+
+
+Régimen General (artículo 24.1 de la Ley del Impuesto)
+
+
+Rendimientos íntegros (5): se consignará el rendimiento íntegro devengado.
+
+
+Exención aplicada dividendos (límite anual 1500 euros) (6): Esta exención está derogada en la actualidad; se aplicó exclusivamente respecto de dividendos devengados hasta el 31 de diciembre de 2014.
+
+
+Gastos deducibles (7): no se permite deducción de ningún gasto.
+
+
+Base imponible (8): consigne el importe reflejado en la casilla (5) excepto cuando se declaren dividendos que se descontará, si procede, la exención que corresponda (casilla 6).
+
+
+
+
+
+
+Actividades o explotaciones económicas con deducción de gastos (artículo 24.2 de la Ley del Impuesto)
+
+
+Rendimientos íntegros (5): se consignarán los ingresos íntegros
+
+
+Gastos deducibles (7): únicamente podrán deducirse los conceptos de gastos que figuran a continuación, con los requisitos que se establecen en el artículo 5 del Reglamento:
+
+
+
+Gastos de personal
+
+
+Gastos de aprovisionamiento
+
+
+Suministros
+
+
+
+Base imponible (8): es la diferencia entre el importe reflejado en la casilla (5) y el de la casilla (7).
+
+
+
+
+
+
+Contribuyentes residentes en otro Estado miembro de la Unión Europea y, para devengos desde el 1 de enero de 2015, en un Estado del Espacio Económico Europeo con el que exista un efectivo intercambio de información tributaria (con efectos desde 11 de julio de 2021 las referencias normativas a efectivo intercambio de información tributaria se entienden efectuadas a la existencia de normativa sobre asistencia mutua en materia de intercambio de información tributaria) (artículo 24.6 de la Ley del Impuesto)
+
+
+Comprende a los residentes en otros Estados miembros de la Unión Europea más los de Islandia, Noruega y, para devengos desde 11 de julio de 2021, Liechtenstein.
+
+
+Rendimientos íntegros (5): se consignarán los ingresos íntegros.
+
+
+Exención aplicada dividendos (límite anual 1500 euros) (6): Ver las instrucciones de esta misma casilla que se encuentran en el apartado del Régimen General.
+
+
+Gastos deducibles (7): se podrán deducir:
+
+
+
+En caso de personas físicas, los gastos previstos en la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas, siempre que el contribuyente acredite que están relacionados directamente con los rendimientos obtenidos en España y que tienen un vínculo económico directo e indisociable con la actividad realizada en España.
+
+
+En caso de entidades, los gastos deducibles de acuerdo con lo previsto en la Ley del Impuesto sobre Sociedades, siempre que el contribuyente acredite que están relacionados directamente con los rendimientos obtenidos en España y que tienen un vínculo económico directo e indisociable con la actividad realizada en España
+
+
+
+Base imponible (8): es la diferencia entre el importe reflejado en la casilla (5) y el de la casilla (7), excepto cuando se declaren dividendos que se descontará, si procede, la exención que corresponda (casilla 6).
+
+
+
+
+
+210 H Rentas derivadas de transmisiones de bienes inmuebles
+
+
+El apartado 210 H se utilizará para declarar las rentas derivadas de transmisiones de bienes inmuebles. En la casilla (02) “Tipo de renta” se consignará el código 28, salvo que se aplique exención por reinversión en vivienda habitual, en cuyo caso se consignará bien el código 33, o bien el 34.
+
+
+En las transmisiones de bienes inmuebles la obtención de una ganancia constituye una renta sometida a gravamen. La ganancia se determina por diferencia entre el valor de transmisión y el de adquisición.
+
+
+"C/O": cuando se trate de una autoliquidación única presentada por ambos cónyuges en esta casilla se indicará una "C". En los demás casos se hará constar una "O".
+
+
+A continuación indique el coeficiente de participación que le corresponde, en términos porcentuales, en la propiedad del inmueble.
+
+
+"Cónyuge": si se trata de una autoliquidación única presentada por ambos cónyuges, los datos de identificación de uno de ellos se harán constar en el espacio destinado a "contribuyente" y los del otro en este espacio de "cónyuge". En estos casos se indicarán las respectivas cuotas de participación, en porcentaje, en las casillas correspondientes.
+
+
+Valor de transmisión (9): se hará constar el importe por el que se ha transmitido el bien, del que se habrán restado los gastos y tributos inherentes a la transmisión que hubiesen sido satisfechos por el transmitente.
+
+
+Valor de adquisición (10): se consignará: el valor por el que se adquirió el bien objeto de la transmisión, al que se habrán sumado los gastos y tributos inherentes a la adquisición, excluidos los intereses, que se hubiesen satisfecho por el ahora transmitente. El valor así determinado se minorará, cuando proceda, en el importe de las amortizaciones reglamentariamente practicadas.
+
+
+Diferencia (11): es la diferencia entre el importe reflejado en la casilla (9) y el de la casilla (10). [(11) = (9) - (10)].
+
+
+Ganancia (12): habrá que diferenciar
+
+
+A) Régimen general
+
+En general, se hará constar el mismo importe reflejado en la casilla (11). No obstante, si resultase aplicable alguna de las exenciones citadas a continuación, se haría constar el importe de la ganancia que deba ser sometida a tributación.
+
+
+Exenciones:
+
+
+Exención parcial, en caso de inmuebles urbanos adquiridos a partir del 12-05-2012 y hasta el 31-12-2012: Están exentas en un 50 por ciento las ganancias patrimoniales derivadas de la venta de inmuebles urbanos situados en territorio español que hubiesen sido adquiridos a partir del 12 de mayo de 2012 y hasta el 31 de diciembre de 2012. Esta exención parcial no resulta aplicable: A) En el caso de personas físicas, cuando el inmueble se hubiera adquirido o transmitido a su cónyuge, a cualquier persona unida al contribuyente por parentesco, en línea recta o colateral, por consanguinidad o afinidad, hasta el segundo grado incluido, a una entidad respecto de la que se produzca, con el contribuyente o con cualquiera de las personas anteriormente citadas, alguna de las circunstancias establecidas en el artículo 42 del Código de Comercio, con independencia de la residencia y de la obligación de formular cuentas anuales consolidadas. B)En el caso de entidades, cuando el inmueble se hubiera adquirido o transmitido a una persona o entidad respecto de la que se produzca alguna de las circunstancias establecidas en el artículo 42 del Código de Comercio, con independencia de la residencia y de la obligación de formular cuentas anuales consolidadas, o al cónyuge de la persona anteriormente indicada o a cualquier persona unida a esta por parentesco, en línea recta o colateral, por consanguinidad o afinidad, hasta el segundo grado incluido.
+
+
+Exención por reinversión en vivienda habitual (contribuyentes UE más Islandia, Noruega y, para devengos desde 11 de julio de 2021, Liechtenstein): en el caso de contribuyentes residentes en un Estado miembro de la Unión Europea, o del Espacio Económico Europeo con efectivo intercambio de información tributaria (con efectos desde 11 de julio de 2021, las referencias normativas a efectivo intercambio de información tributaria se entienden efectuadas a la existencia de asistencia mutua en materia de intercambio de información tributaria), podrán excluirse de gravamen las ganancias patrimoniales obtenidas por la transmisión de la que haya sido su vivienda habitual en España, siempre que el importe total obtenido por la transmisión se reinvierta en la adquisición de una nueva vivienda habitual. Cuando el importe reinvertido sea inferior al total de lo percibido en la transmisión, únicamente se excluirá de tributación la parte proporcional de la ganancia patrimonial obtenida que corresponda a la cantidad reinvertida.
+
+
+Cuando la reinversión se haya producido con anterioridad a la fecha en la que se deba presentar la declaración, la reinversión, total o parcial, podrá tenerse en cuenta para determinar la deuda tributaria correspondiente. Se indicará como tipo de renta el código 33, si la reinversión se ha producido antes de la transmisión, o el código 34, cuando la reinversión se produce después de la transmisión.
+
+
+
+
+B) Régimen transitorio, aplicable exclusivamente si el transmitente es una persona física que haya adquirido el elemento patrimonial con anterioridad al 31 de diciembre de 1994 (DT única TR Ley IRNR y D.T. Novena Ley IRPF, en la redacción dada por la Ley 26/2014).
+
+
+Habrá que determinar si es aplicable una reducción a la ganancia. Si resulta aplicable una reducción de la ganancia, en la casilla (12) “Ganancia” se consignará la ganancia reducida que deba ser sometida a tributación. Si no resulta aplicable la reducción de la ganancia, se hará constar el mismo importe de la casilla (11) “Diferencia”.
+
+
+No obstante lo anterior, si resultase aplicable alguna de las exenciones antes citadas, se haría constar en la casilla (12) “Ganancia” el importe de la ganancia que deba ser sometida a tributación.
+
+
+Reglas del régimen transitorio: 
+
+
+Calculada la ganancia por diferencia entre los valores de transmisión y adquisición, se distinguirá la parte de la misma que se haya generado con anterioridad a 20 de enero de 2006. Esa parte se reducirá, en su caso, de la siguiente manera:
+
+
+
+
+
+Se calculará el número de años que medie entre la fecha de adquisición del elemento y el 31 de diciembre de 1996, redondeado por exceso.
+
+
+
+
+
+
+Se calculará el valor de transmisión de todos los elementos patrimoniales a cuya ganancia patrimonial le hubiera resultado de aplicación este mismo régimen transitorio, transmitidos desde 1 de enero de 2015 hasta la fecha de transmisión del elemento patrimonial (Cuando este resultado sea superior a 400.000 euros, no se practicará reducción alguna).
+
+
+
+
+
+
+Cuando sea inferior a 400.000 euros la suma del valor de transmisión del elemento patrimonial y la cuantía a que se refiere la letra b) anterior, la parte de la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 se reducirá en el importe resultante de aplicar el 11,11% por cada año de permanencia de los señalados en la letra a) anterior que exceda de dos.
+
+
+
+
+
+
+Cuando sea superior a 400.000 euros la suma del valor de transmisión del elemento patrimonial y la cuantía a que se refiere la letra b) anterior, pero el resultado de lo dispuesto en la letra b) anterior sea inferior a 400.000 euros, se practicará la reducción a la parte de la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 que proporcionalmente corresponda a la parte del valor de transmisión que sumado a la cuantía de la letra b) anterior no supere 400.000 euros.
+
+
+
+
+
+Ejemplo: Transmisión de un inmueble el 31 de diciembre de 2015 por importe de 300.000 euros, adquirido el 1 de enero de 1991 por importe equivalente a 100.000 euros. El contribuyente transmitió anteriormente, el 1 de febrero 2015 otro elemento patrimonial (cuyo valor de transmisión fue de 200.000 euros), a cuya ganancia se le aplicó el régimen transitorio.
+
+
+
+
+
+Importes
+Determinación de la ganancia
+
+
+
+
+
+
+Valor de transmisión (casilla 9): 300.000€
+
+
+Fecha de transmisión: 31/12/2015
+
+
+
+
+Valor de adquisición (casilla 10): 100.000€
+Fecha de adquisición: 01/01/1991
+
+
+
+
+Diferencia (casilla 11): 200.000€
+• Nº días transcurridos entre las fechas de compra y de venta: 9.130
+• Nº días transcurridos entre las fechas de compra y el 19/01/2006: 5.498
+Cálculo: (200.000x5.498)/9.130 = 120.438,11
+
+
+
+
+Ganancia susceptible de reducción: 80.292,07€
+• Límite de valores de transmisión: 400.000 €
+• Suma acumulada de valores de transmisión de otros bienes transmitidos desde 1 de enero de 2015 hasta la fecha de la actual transmisión: 200.000 €
+• Aunque el valor de la transmisión actual es de 300.000€, como del límite de 400.000 € ya se utilizaron en la anterior transmisión 200.000€, sólo restan 200.000 € para utilizar en la actual transmisión.
+Es susceptible de reducción la parte de la ganancia generada hasta el 19/01/2006 que corresponda proporcionalmente a un valor de transmisión de 200.000€.
+Cálculo: (120.438,11x200.000)/300.000 = 80.292,07
+
+
+
+
+Reducción : 35.681,79€
+• Período permanencia en el patrimonio anterior a 31-12-1996 (entre fecha de adquisición y 31/12/1996, redondeado por exceso): 6
+• Nº Años que exceden de 2: 6-2 = 4
+• Porcentaje de reducción: 4x11,11% = 44,44%
+• Cálculo: (80.292,07x44,44)/100 = 35.681,79
+
+
+
+
+Ganancia sometida a tributación (casilla 12): 164.318,20 €
+Cálculo: Diferencia-Reducción=200.000-35.681,79 = 164.318,20
+
+
+
+
+
+Si la persona física transmitente ha adquirido el inmueble en dos fechas distintas o el inmueble ha sido objeto de mejora en un año distinto al de su adquisición, habrá que efectuar los cálculos como si se tratara de dos ganancias patrimoniales. A estos efectos, se calculará separadamente en las casillas (13), (14), (15) y (16).
+
+
+Base imponible (17): se consignará el importe reflejado en la casilla 12 (ganancia) o, en su caso, la suma de (12) y (16).
+
+
+Fechas de adquisición/mejora o 2.ª adquisición: indique siempre las fechas de adquisición y, cuando proceda, la de mejora o 2.ª adquisición.
+
+
+Para ello haga constar el día, mes y año natural. Por ejemplo: 29 de septiembre de 2011 se indica 29/09/2011.
+
+
+Número de justificante del modelo 211: se transcribirá el número que aparece preimpreso en el ejemplar del modelo 211, en el lado superior derecho, que el adquirente debe entregar al transmitente no residente.
+
+
+210 G Ganancias patrimoniales (excepto bienes inmuebles)
+
+
+El apartado 210 G se utilizará para declarar las ganancias patrimoniales, con excepción de las derivadas de bienes inmuebles que se declaran en el apartado H.
+
+
+ Base imponible (18): habrá que diferenciar
+
+
+A) Régimen general
+
+La base imponible será la diferencia entre el valor de transmisión y el de adquisición del bien objeto de la transmisión. El valor de transmisión será el importe por el que se ha transmitido el bien, del que se habrán restado los gastos y tributos inherentes a la transmisión que hubiesen sido satisfechos por el transmitente. El valor de adquisición será el importe por el que se adquirió el bien objeto de transmisión, al que se sumarán los gastos y tributos inherentes a la adquisición, excluidos los intereses, que se hubieran satisfecho por el ahora transmitente.
+
+
+
+
+B) Régimen transitorio (aplicable exclusivamente si el transmitente es una persona física que haya adquirido el elemento patrimonial con anterioridad al 31 de diciembre de 1994).
+
+
+Una vez calculada la ganancia por diferencia entre el valor de transmisión y el de adquisición del bien objeto de la transmisión, habrá que determinar si, por aplicación del Régimen transitorio aplicable a las ganancias derivadas de elementos patrimoniales adquiridos con anterioridad a 31 de diciembre de 1994 (D.T. única TR Ley IRNR y D.T. Novena Ley IRPF, en la redacción dada por la Ley 26/2014), es aplicable una reducción a la ganancia. Si resulta aplicable una reducción de la ganancia, se consignará la ganancia reducida. Si no resulta aplicable la reducción de la ganancia, se hará constar el importe de la ganancia.
+
+
+Reglas del régimen transitorio:
+
+
+
+Calculada la ganancia por diferencia entre los valores de transmisión y adquisición, se distinguirá la parte de la misma que se haya generado con anterioridad a 20 de enero de 2006. Esa parte se reducirá, en su caso, de la siguiente manera:
+
+
+
+
+Se calculará el número de años que medie entre la fecha de adquisición del elemento y el 31 de diciembre de 1996, redondeado por exceso.
+
+
+
+
+
+
+Se calculará el valor de transmisión de todos los elementos patrimoniales a cuya ganancia patrimonial le hubiera resultado de aplicación este mismo régimen transitorio, transmitidos desde 1 de enero de 2015 hasta la fecha de transmisión del elemento patrimonial (Cuando este resultado sea superior a 400.000 euros, no se practicará reducción alguna).
+
+
+
+
+
+
+Cuando sea inferior a 400.000 euros la suma del valor de transmisión del elemento patrimonial y la cuantía a que se refiere la letra b) anterior, la parte de la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 se reducirá en el importe resultante de aplicar los siguientes porcentajes por cada año de permanencia de los señalados en la letra a) anterior que exceda de dos. Porcentajes: - 25%: acciones admitidas a negociación, con excepción de las acciones representativas del capital social de Sociedades de Inversión Mobiliaria e Inmobiliaria. - 14,28%: Para las restantes ganancias patrimoniales.
+
+
+
+
+
+
+Cuando sea superior a 400.000 euros la suma del valor de transmisión del elemento patrimonial y la cuantía a que se refiere la letra b) anterior, pero el resultado de lo dispuesto en la letra b) anterior sea inferior a 400.000 euros, se practicará la reducción a la parte de la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 que proporcionalmente corresponda a la parte del valor de transmisión que sumado a la cuantía de la letra b) anterior no supere 400.000 euros.
+
+
+
+
+
+
+
+En los casos de valores admitidos a negociación, sobre la ganancia patrimonial se efectuará la reducción que proceda de las siguientes:
+
+
+
+
+Si el valor de transmisión fuera igual o superior al que corresponda a los valores, a efectos del Impuesto sobre el Patrimonio del año 2005, la parte de la ganancia patrimonial que se hubiera generado con anterioridad a 20 de enero de 2006 se reducirá, en su caso, de acuerdo con lo previsto en la regla 1.ª) anterior. A estos efectos, la ganancia patrimonial generada con anterioridad a 20 de enero de 2006 será la parte de la ganancia patrimonial resultante de tomar como valor de transmisión el que corresponda a los valores a efectos del Impuesto sobre el Patrimonio del año 2005.
+
+
+
+
+
+
+Si el valor de transmisión fuera inferior al que corresponda a los valores a efectos del Impuesto sobre el Patrimonio del año 2005, se entenderá que toda la ganancia patrimonial se ha generado con anterioridad a 20 de enero de 2006 y se reducirá, en su caso, de acuerdo con lo previsto en la regla 1.ª) anterior.
+
+
+
+
+
+
+
+
+Liquidación
+
+
+Exenciones (19) y (20): En el caso de que se invoque exención, se indicará una “X” en el recuadro correspondiente al tipo de exención y se hará constar un cero en la casilla (21) “tipo de gravamen” excepto cuando se trate del supuesto de exención previsto en el artículo 14.1.l) de la Ley del Impuesto (dividendos y asimilados obtenidos sin mediación de establecimiento permanente por las instituciones de inversión colectiva reguladas por la Directiva 2009/65/CE) que se hará constar un 1 por 100.
+
+
+Cuando se aplique la exención por reinversión en vivienda habitual, no se marcará una "X" en la casilla (19), sino que se hará constar el código de tipo de renta, 33 o 34, según proceda, se hará constar en la casilla (21) “tipo de gravamen” el aplicable a estas ganancias patrimoniales y en la casilla (12) “Ganancia” el importe de la ganancia que deba someterse a tributación (si procede aplicar exención total, en la casilla (12) “Ganancia” se hará constar un cero).
+
+
+Tipo de gravamen Ley IRNR (21): determinada la base imponible en uno de los apartados anteriores, según el tipo de renta declarada, se aplicará el tipo de gravamen previsto en el artículo 25 de la Ley del Impuesto que corresponda a esa renta (ver hoja informativa). Si es un tipo de gravamen con decimales (1,5%) se indicará: 1,50.
+
+
+Cuota íntegra (22): se calculará aplicando el tipo de gravamen a la base imponible. Nunca podrá ser negativa. Cuando la cuantía reflejada en base imponible sea negativa, se consignará un cero en cuota íntegra.
+
+
+Deducción por donativos (23): se podrá practicar la deducción por los donativos efectuados, en los términos fijados en la Ley del Impuesto sobre la Renta de las Personas Físicas.
+
+
+Cuota Ley IRNR (24): es la diferencia entre las casillas (22) y (23).
+
+
+Porcentaje Convenio (25): si el Convenio aplicable fija un límite de imposición, generalmente para dividendos, intereses y cánones, dicho límite se hará constar en esta casilla en términos porcentuales.
+
+
+Límite Convenio (26): normalmente, en los Convenios el límite de imposición se fija en un porcentaje sobre los rendimientos brutos. Con carácter general, el importe de esta casilla se obtendrá aplicando el porcentaje de Convenio (casilla 25) sobre la cuantía reflejada en la casilla 5 "Rendimientos íntegros", salvo que el Convenio aplicable disponga que el porcentaje se aplique sobre una magnitud diferente.
+
+
+Reducción por Convenio (27): sólo si el importe de la casilla (26) "Límite Convenio" es inferior al importe de la casilla (24) "Cuota Ley IRNR" existirá derecho a una reducción de la cuota, para tener en consideración el límite de imposición del Convenio. La cuantía de la reducción es la diferencia entre las casillas (24) y (26).
+
+
+Cuota íntegra reducida (28): diferencia entre las casillas (24) y (27).
+
+
+Retenciones/ingresos a cuenta (29): se harán constar las retenciones que hayan sido efectivamente practicadas y otros pagos a cuenta efectuados.
+
+
+Ingreso/Devolución anterior (30): exclusivamente en el supuesto de autoliquidación complementaria, para determinar el importe a consignar en la casilla (31), se hará constar el resultado de la autoliquidación originariamente presentada por este mismo concepto, pero exclusivamente si en la autoliquidación anterior se ha realizado un ingreso o se ha percibido la devolución correspondiente a la misma.
+
+
+Si la autoliquidación originaria resultó a ingresar, se consignará en esta casilla el importe del resultado positivo de la misma precedida del signo menos (-).
+En su caso, se consignará también en esta casilla el importe de las cuotas a ingresar que figuren en las liquidaciones del IRNR, practicadas por la Administración tributaria en relación con la autoliquidación originaria y que hayan sido notificadas con anterioridad a la presentación de la autoliquidación complementaria.
+
+
+Si la Administración tributaria hubiera acordado una devolución como consecuencia de la tramitación de la autoliquidación del IRNR originaria, se consignará en esta casilla el importe de la devolución que haya sido acordada por la Administración previamente a la presentación de la autoliquidación complementaria precedida del signo más (+).
+
+
+De no haberse percibido la devolución en el momento de la presentación de la autoliquidación complementaria no se cumplimentará esta casilla.
+
+
+Resultado de la autoliquidación (31): consigne en esta casilla el resultado de la operación indicada en la autoliquidación:
+
+
+Si resulta una cantidad positiva será el importe a ingresar al presentar la autoliquidación.
+
+
+En el caso de que resulte una cantidad negativa será el importe a devolver al presentar la autoliquidación y se consignará precedida del signo menos (-).
+
+
+Ejemplos:
+
+
+Ejemplo 1: Dividendos.
+
+
+Dividendo obtenido el 25 de junio de 2018 de 2.500 euros por una persona física residente en Brasil. Se ha practicado retención al 19% por importe de 475 euros. El Convenio para evitar la doble imposición fija un límite de imposición del 15% sobre el importe bruto de los dividendos.
+
+
+Determinación de la base imponible
+
+
+210 R Rendimientos (Régimen General):
+
+
+Rendimientos íntegros (5): 2.500
+
+
+Gastos deducibles (7): 0
+
+
+Base imponible (8): 2.500
+
+
+Liquidación:
+
+
+Tipo de gravamen Ley IRNR (21): 19%
+
+
+Cuota íntegra (22): 475 (2.500 x 19%)
+
+
+Cuota Ley IRNR (24): 475
+
+
+Porcentaje Convenio (%) (25): 15%
+
+
+Límite Convenio (26): 375 (2.500 x 15%)
+
+
+Reducción por Convenio (27): 100 (El límite de Convenio es inferior a la Cuota Ley IRNR).
+
+
+Cuota íntegra reducida (28): 375
+
+
+Retenciones/ingresos a cuenta (29): 475
+
+
+Cuota diferencial (31): - 100 (375 - 475)
+
+
+Ejemplo 2: Renta inmobiliaria imputada.
+
+
+Contribuyente residente en Portugal es propietario de un apartamento situado en Málaga, que fue adquirido en 2001 por 130.000 euros, gastos e impuestos incluidos, y cuyo valor catastral, revisado en el ejercicio 2015, asciende en el ejercicio 2018 a 60.100 euros. En 2018, el apartamento no fue arrendado.
+
+
+El contribuyente deberá tributar en concepto de renta imputada, correspondiente al año 2018, la siguiente cantidad:
+
+
+Determinación de la base imponible
+
+
+210 I Renta inmobiliaria imputada:
+
+
+Base imponible [4] = 60.100 x 1,1% = 661,1
+
+
+Liquidación:
+
+
+Tipo de gravamen Ley IRNR (%) [21]: 19% (19% por ser un residente UE
+
+
+Cuota íntegra (22): 125,60 (661,1 x 19%)
+
+
+Deducción por donativos (23): 0
+
+
+Cuota Ley IRNR (22) - (23): 125,60
+
+
+Cuota íntegra reducida (28): 125,60 (1)
+
+
+Retenciones/ingresos a cuenta (29): 0
+
+
+Cuota diferencial (31): 125,60
+
+
+[[ID:(1)]]
+
+(1) No se cumplimentan las casillas (25), (26) y (27) debido a que, en general, los convenios, tratándose de rentas inmobiliarias, atribuyen la potestad tributaria al Estado en el que están situados sin fijar límite de imposición.
+
+
+Complementaria
+
+
+Si esta autoliquidación es complementaria de otra anterior indíquelo marcando una "X" en la casilla "Autoliquidación complementaria".
+
+
+Con carácter general, si una vez presentada la autoliquidación, se advierten errores u omisiones que hayan dado lugar a la realización de un ingreso inferior al que legalmente hubiera correspondido, o bien a la obtención de una devolución superior a la procedente, se deberá regularizar la situación tributaria mediante la presentación de una autoliquidación complementaria.
+
+
+La autoliquidación complementaria comprenderá la totalidad de los datos que proceda reflejar en la misma, incorporando, junto a los correctamente consignados en la autoliquidación originariamente presentada, los que deban ser objeto de nueva inclusión o modificación.
+
+
+En autoliquidaciones complementarias deberá cumplimentarse la casilla (30) y se hará constar el número de justificante de la autoliquidación que se complementa.
+
+
+Fecha y firma (presentación en formato papel)
+
+
+En el espacio reservado para la fecha y firma de la autoliquidación se harán constar ambas. Esta autoliquidación deberá ir firmada por la persona que realiza la autoliquidación o por su representante. Si se trata de una autoliquidación única presentada por ambos cónyuges, por ser el inmueble objeto de transmisión de titularidad compartida por un matrimonio en el que ambos cónyuges sean no residentes, esta autoliquidación deberá ser firmada por ambos cónyuges.
+
+HOJA INFORMATIVA 210 - TIPOS DE RENTA
+
+
+
+Tipo de renta
+Tipo
+
+
+
+
+RENDIMIENTOS DE INMUEBLES ARRENDADOS
+
+
+
+
+Rendimientos de inmuebles arrendados o subarrendados, excepto los supuestos indicados como tipo de renta 35
+01
+
+
+
+
+Rendimientos de inmuebles arrendados o subarrendados no sujetos a retención cuando se agrupan los obtenidos de varios pagadores
+35
+
+
+
+
+RENTAS IMPUTADAS DE INMUEBLES URBANOS
+02
+
+
+
+
+RENTAS DE ACTIVIDADES EMPRESARIALES
+03
+
+
+
+
+DIVIDENDOS Y OTROS RENDIMIENTOS DERIVADOS DE LA PARTICIPACIÓN EN LOS FONDOS PROPIOS DE ENTIDADES
+
+
+
+
+Dividendos y demás rendimientos por la participación en fondos propios de entidades, excepto los supuestos indicados como tipos de renta 29 y 30 
+04
+
+
+
+
+Dividendos y participaciones en beneficios, obtenidos por fondos de pensiones equivalentes a los regulados en el Texto Refundido de la Ley de Planes y Fondos de Pensiones (Real Decreto Legislativo 1/2002, de 29 de noviembre), exentos en los términos del artículo 14.1.k) de la Ley del Impuesto sobre la Renta de no Residentes
+29
+
+
+
+
+Dividendos y participaciones en beneficios, obtenidos por instituciones de inversión colectiva reguladas por la Directiva 2009/65/CE, del Parlamento Europeo y del Consejo, de 13 de julio de 2009, exentos en los términos del artículo 14.1. l) de la Ley del Impuesto sobre la Renta de no Residentes
+30
+
+
+
+
+INTERESES Y OTROS RENDIMIENTOS DERIVADOS DE LA CESIÓN DE CAPITALES PROPIOS
+
+
+
+
+Intereses y otros rendimientos
+05
+
+
+
+
+Exentos
+06
+
+
+
+
+Bonificados
+07
+
+
+
+
+Intereses y otros rendimientos obtenidos por fondos de pensiones o instituciones de inversión colectiva que hayan utilizado el procedimiento a que se refiere la D.A. Tercera RIRNR, exentos en aplicación del art. 14.1.c) de la Ley del IRNR
+37
+
+
+
+
+CÁNONES
+
+
+
+
+Propiedad industrial
+08
+
+
+
+
+Propiedad intelectual
+09
+
+
+
+
+Solicitud de devolución mediante procedimiento especial para entidades de gestión colectiva de derechos de propiedad intelectual
+32
+
+
+
+
+Arrendamientos de bienes muebles, negocios o mina
+10
+
+
+
+
+Know-how y transferencias de tecnología
+11
+
+
+
+
+Otros
+12
+
+
+
+
+ASISTENCIA TÉCNICA
+13
+
+
+
+
+RENTAS DE ACTIVIDADES ARTÍSTICAS
+14
+
+
+
+
+RENTAS DE ACTIVIDADES DEPORTIVAS
+15
+
+
+
+
+RENTAS DE ACTIVIDADES PROFESIONALES
+16
+
+
+
+
+RENTAS DEL TRABAJO
+17
+
+
+
+
+PENSIONES Y HABERES PASIVOS
+18
+
+
+
+
+REASEGUROS
+19
+
+
+
+
+ENTIDADES DE NAVEGACIÓN MARÍTIMA O AÉREA
+20
+
+
+
+
+SERVICIOS DE APOYO A LA GESTIÓN
+21
+
+
+
+
+OTRAS RENTAS
+22
+
+
+
+
+GANANCIAS PATRIMONIALES
+
+
+
+
+De acciones admitidas a negociación
+24
+
+
+
+
+De Instituciones de Inversión Colectiva (Fondos)
+25
+
+
+
+
+De transmisiones de bienes inmuebles, excepto los supuestos indicados como tipos de renta 33 y 34
+28
+
+
+
+
+De transmisión (por contribuyente de un estado UE, o de un estado del EEE con efectivo intercambio de información tributaria) de la que fue vivienda habitual, exenta por reinversión en una nueva vivienda habitual, cuando la reinversión se produce antes la transmisión
+33
+
+
+
+
+De transmisión (por contribuyente de un estado UE, o de un estado del EEE con efectivo intercambio de información tributaria) de la que fue vivienda habitual, exenta por reinversión en una nueva vivienda habitual, cuando la reinversión se produce después de la transmisión
+34
+
+
+
+
+Premios sobre determinadas loterías y apuestas sujetos al Gravamen especial (Disposición adicional quinta Ley IRNR), solicitud de devolución por aplicación de convenio
+31
+
+
+
+
+De transmisiones de derechos de suscripción cuya ganancia exenta se declara mediante el procedimiento especial previsto en el artículo 18 de la Orden EHA/3316/2010, de 17 de diciembre
+36
+
+
+
+
+Ganancias patrimoniales derivadas de bienes muebles obtenidas por los fondos de pensiones o las instituciones de inversión colectiva que hayan utilizado el procedimiento a que se refiere la D.A. Tercera RIRNR, exentas en aplicación del art. 14.1.c) de la Ley del IRNR
+38
+
+
+
+
+Otras ganancias
+26
+
+
+
+
+IMPOSICIÓN COMPLEMENTARIA (ARTÍCULO 19.2 LEY IRNR)
+27
+
+
+
+
+CLAVES DE DIVISAS
+
+
+
+DIVISA
+CLAVE
+
+
+
+
+Corona danesa
+208
+
+
+
+
+Corona noruega
+578
+
+
+
+
+Corona sueca
+752
+
+
+
+
+Dólar australiano
+036
+
+
+
+
+Dólar canadiense
+124
+
+
+
+
+Dólar neozelandés
+554
+
+
+
+
+Dólar USA
+840
+
+
+
+
+Franco suizo
+756
+
+
+
+
+Libra esterlina
+826
+
+
+
+
+Euro
+954
+
+
+
+
+Yen japonés
+392
+
+
+
+
+Otras monedas
+999
+
+
+
+
+
+Hoja informativa - Tipos de gravamen
+
+
+
+
+
+Con carácter general:
+
+
+
+Residentes UE, Islandia, Noruega y, desde 11-07-2021, Liechtenstein: 19%
+
+
+Resto de contribuyentes: 24%
+
+
+
+
+
+Pensiones y demás prestaciones similares
+
+Tipo medio resultante de la aplicación de la siguiente escala de gravamen: Tipo medio = (Cuota / Importe anual pensión) X 100
+
+
+
+
+
+Imorte anual pensión hasta
+
+Euros
+
+
+Cuota
+
+Euros
+
+
+Resto pensión hasta
+
+Euros
+
+
+Tipo aplicable
+
+Porcentaje
+
+
+
+
+
+
+0
+0
+12.000
+8
+
+
+
+
+12.000
+960
+6.700
+30
+
+
+
+
+18.700
+2.970
+en adelante
+40
+
+
+
+
+
+
+
+
+
+Intereses y otros rendimientos obtenidos por la cesión a terceros de capitales propios: 19%
+
+
+
+
+
+
+Dividendos y otros rendimientos derivados de la participación en los fondos propios de una entidad: 19%
+
+
+
+
+
+
+Rentas derivadas de trasmisiones o reembolso de acciones o participaciones representativas del capital o el patrimonio delas instituciones de inversión colectiva: 19%
+
+
+
+
+
+
+Resto de ganancias patrimoniales distintas de las incluidas en el punto anterior que se pongan de manifiesto con ocasión detransmisiones de elementos patrimoniales: 19%
+
+
+
+
+
+
+Rendimientos del trabajo percibidos por personas físicas no residentes en territorio español en virtud de un contrato deduración determinada para trabajadores de temporada, de acuerdo con lo establecido en la normativa laboral: 2%
+
+
+
+
+
+
+Rendimientos del trabajo de personas físicas no residentes en territorio español, siempre que no sean contribuyentes delIRPF, que presten sus servicios en Misiones Diplomáticas y Representaciones Consulares de España en el extranjero, cuandono proceda la aplicación de normas específicas derivadas de Tratados Internacionales en los que España sea parte: 8%
+
+
+
+
+
+
+Cánones satisfechos a una sociedad asociada residente en un Estado miembro de la UE o a un establecimiento permanentede dicha sociedad situado en otro Estado miembro de la UE, siempre que se cumplan determinados requisitos: 0%
+
+
+
+
+
+
+Rendimientos derivados de operaciones de reaseguro: 1,5%
+
+
+
+
+
+
+Las entidades de navegación marítima o aérea residentes en el extranjero, cuyos buques o aeronaves toquen territorioespañol: 4%
+
+
+
+
+
+
+Imposición complementaria (artículo 19.2 Ley IRNR): 19%
+
+
+
+
+
+Modelo 210 - Impuesto sobre la Renta de no Residentes - No residentes sin establecimiento permanente
+
+
+Documento de ingreso o devolución
+
+
+Importante: todos los importes monetarios solicitados deberán expresarse en euros, consignando en la parte izquierda de las correspondientes casillas la parte entera y en la derecha la parte decimal, que constará de dos dígitos en todo caso.
+
+
+Plazo de presentación
+
+
+El plazo de presentación y, en su caso, de ingreso, en función del tipo de renta declarada, será:
+
+
+
+
+
+Rentas derivadas de transmisiones de bienes inmuebles: las autoliquidaciones de rentas derivadas de transmisiones de bienes inmuebles se presentarán, con independencia del resultado de la autoliquidación, en el plazo de tres meses una vez transcurrido el plazo de un mes desde la fecha de la transmisión (fecha de devengo) del bien inmueble.
+
+
+
+
+
+
+Rentas imputadas de los bienes inmuebles situados en territorio español: el plazo de presentación e ingreso será el año natural siguiente a la fecha de devengo (31 de diciembre de cada año). En caso de presentación telemática por internet se podrá domiciliar el pago del importe a ingresar desde el día 1 de enero al 23 de diciembre.
+
+
+
+
+
+
+Resto de rentas:
+
+
+
+
+
+Autoliquidaciones con resultado a ingresar: el plazo de presentación e ingreso será los veinte primeros días naturales de los meses de abril, julio, octubre y enero, en relación con las rentas cuya fecha de devengo esté comprendida en el trimestre natural anterior excepto rentas derivadas del arrendamiento o subarrendamiento de inmuebles, devengadas desde 1 de enero de 2024, si se  opta por agrupar anualmente las rentas devengadas durante el año natural, el plazo de presentación e ingreso será los veinte primeros días naturales del mes de enero del año siguiente al de devengo.
+
+
+En caso de presentación telemática por internet se podrá domiciliar el pago del importe a ingresar desde el día 1 al 15 de abril, julio, octubre o enero, respectivamente.  En el caso de agrupación anual de rentas derivadas del arrendamiento o subarrendamiento de inmuebles, devengadas desde 1 de enero de 2024, desde el 1 al 15 de enero del año siguiente al de devengo
+
+
+
+
+
+
+Autoliquidaciones de cuota cero: el plazo de presentación será del 1 al 20 de enero del año siguiente al de devengo de las rentas declaradas.
+
+
+
+
+
+
+Autoliquidaciones con resultado a devolver: se presentarán a partir del 1 de febrero del año siguiente al de devengo de las rentas declaradas y dentro del plazo de cuatro años, contado desde el término del período de declaración e ingreso de la retención. Este plazo resultará aplicable a todas las autoliquidaciones, con independencia de si el origen de la devolución deriva de la norma interna o de un Convenio para evitar la doble imposición, incluso en aquellos supuestos en los que la Orden de desarrollo del Convenio fije un plazo inferior. Se entenderá concluido el plazo para la presentación de la autoliquidación en la fecha de su presentación.
+
+
+
+
+
+
+
+
+Persona que realiza la autoliquidación
+
+
+"N.I.F.": se consignará el número de identificación fiscal (N.I.F.) asignado en España de la persona que realice la autoliquidación.
+
+
+“Apellidos y nombre, razón social o denominación”:
+
+
+
+
+
+Para personas físicas, se consignará el primer apellido, el segundo apellido y el nombre completo, en este mismo orden.
+
+
+
+
+
+
+Para personas jurídicas y entidades, se consignará la razón social o la denominación completa de la entidad, sin anagramas.
+
+
+
+
+
+Devengo
+
+
+Las rentas se entienden devengadas:
+
+
+
+Los rendimientos, cuando resulten exigibles o en la fecha de cobro si fuera anterior.
+
+
+Las rentas imputadas a personas físicas titulares de inmuebles urbanos, el último día del año natural.
+
+
+Las ganancias patrimoniales, cuando tenga lugar la alteración patrimonial. En el caso de transmisiones de bienes inmuebles se indicará la fecha en que se realizó la transmisión.
+
+
+
+En el caso de solicitud de devolución por aplicación de convenio relativa al Gravamen Especial sobre premios de determinadas loterías y apuestas, se indicará el devengo correspondiente al Gravamen Especial. El Gravamen Especial se devenga en el momento en que se satisfaga o se abone el premio.
+
+
+Agrupación:
+
+
+Se permite agrupar varias rentas obtenidas por un mismo contribuyente, siempre que correspondan al mismo código de tipo de renta, procedan del mismo pagador y les sea aplicable el mismo tipo de gravamen. Si además tales rentas derivan de un bien o derecho, deberán proceder del mismo bien o derecho. No obstante, tratándose de rendimientos de inmuebles arrendados o subarrendados no sujetos a retención podrán agruparse con esos mismos requisitos excepto el relativo a rentas que procedan del mismo pagador, si bien cuando se declaren rendimientos de inmuebles procedentes de varios pagadores será necesario indicar un código específico de tipo de renta, el 35.
+
+
+En ningún caso las rentas agrupadas pueden compensarse entre sí.
+
+
+Si se trata de una autoliquidación con resultado a ingresar, marque una X en esta casilla cuando opte por agrupar los rendimientos devengados en un mismo trimestre natural, excepto rentas, devengadas desde 2024, de arrendamientos de inmuebles cuyo período de agrupación será anual. En el recuadro "período/año" se indicará el trimestre natural (1T, 2T, 3T ó 4T) y el ejercicio al que se refiere la autoliquidación
+
+
+Si se trata de una autoliquidación de cuota cero, con resultado a devolver o a ingresar, en el caso de rentas, devengadas desde 2024, de arrendamientos de inmuebles, marque una X en esta casilla cuando opte por agrupar los rendimientos devengados durante el año natural. En el recuadro "período/año" se indicará "0A", cero A, y el ejercicio al que se refiere la autoliquidación.
+
+
+Fecha de devengo: Cuando esta autoliquidación se utilice para declarar rentas imputadas de bienes inmuebles urbanos, rentas derivadas de transmisiones de bienes inmuebles o cualquier otra renta de forma separada consigne la fecha de devengo de la renta declarada, en formato "día/mes/año".
+
+
+Resultado de la autoliquidación
+
+
+Se hará constar el resultado de la autoliquidación practicada (casilla (31)). En el caso de que resultará una cantidad a devolver, se consignará precedida del signo menos (-).
+
+
+Ingreso
+
+
+Importe: cuando el resultado de la autoliquidación sea a ingresar (casilla [31]) se hará constar en esta casilla el importe resultante.
+
+
+Devolución
+
+
+Importe: cuando el resultado de la autoliquidación sea a devolver (casilla [31]) se hará constar en esta casilla el importe resultante.
+
+
+Las devoluciones se efectuarán mediante transferencia a la cuenta bancaria que se indique en el documento de ingreso/devolución y cuya titularidad puede ser una de las siguientes:
+
+
+
+La de la persona que realiza la autoliquidación. No obstante, en el supuesto de que se realice la autoliquidación por el representante del contribuyente sólo podrá ser titular de la cuenta bancaria de devolución si se trata del representante legal autorizado del contribuyente.
+
+
+La del propio contribuyente.
+
+
+
+Si el titular de la cuenta bancaria de devolución fuese una de las personas que realiza la autoliquidación, bien como responsable solidario, bien como retenedor o como representante legal autorizado, la cuenta bancaria ha de estar abierta en España. Sin embargo, si el titular de la cuenta de devolución es el propio contribuyente, la cuenta puede estar abierta en una entidad bancaria en España o en el extranjero.
+
+
+Cuando la devolución se efectúe mediante transferencia deberá identificarse la cuenta bancaria a la que deba efectuarse la misma.
+
+
+"Renuncia a la devolución": Si renuncia a la devolución, se indicará una X en esta casilla.
+
+
+Sin ingreso ni devolución
+
+
+Cuando no resulte cantidad a ingresar o a devolver, se marcará una X en la casilla de “cuota cero”.
+
+
+Fecha y firma (presentación en formato papel)
+
+
+En el espacio reservado para la fecha y firma se hará constar ambas.
+
+
+Este documento deberá ir firmado por la persona que realiza la autoliquidación o por su representante.
+
+
+Si se trata de una autoliquidación única presentada por ambos cónyuges, por ser el inmueble objeto de transmisión de titularidad compartida por un matrimonio en el que ambos cónyuges sean no residentes, esta autoliquidación deberá ser firmada por ambos cónyuges.
+
+
+Formas de presentación del modelo 210
+
+
+La presentación puede hacerse de forma telemática por internet, o en formato papel.
+
+
+Presentación en formato papel (predeclaración)
+
+
+Se puede presentar la autoliquidación en formato papel, generado al imprimir el formulario previamente cumplimentado en el portal de internet de la Agencia Tributaria (https://sede.agenciatributaria.gob.es). La ruta es: Inicio/ Todas las gestiones/Impuestos y tasas/Impuesto sobre la Renta de no Residentes/Modelo 210/ Predeclaración
+
+
+Si la persona que realiza la autoliquidación es el contribuyente y no dispone de Número de Identificación Fiscal (NIF), junto al campo "NIF" del formulario de predeclaración se ha habilitado un botón para obtener un código de identificación que enlaza con un procedimiento que permite la autoasignación de un código de identificación que se cargará en el campo "NIF".
+
+
+Se obtendrá un ejemplar del modelo de autoliquidación, que no será preciso presentar, así como los ejemplares del documento de ingreso/devolución. Será el ejemplar para la entidad colaboradora/Administración del documento de ingreso/devolución el que se utilice para llevar a cabo la presentación, junto con la documentación correspondiente.
+
+1. Presentación desde España
+
+En función del resultado de la autoliquidación, el documento de ingreso/devolución y la documentación que proceda adjuntar, se presentarán en los siguientes lugares:
+
+
+Autoliquidación con resultado a ingresar: La presentación e ingreso se realizarán en cualquier Entidad Colaboradora en la gestión recaudatoria (Banco, Caja de ahorros o Cooperativa de crédito) sita en territorio español. En general, una vez presentada la autoliquidación en la entidad colaboradora, no debe ensobrarse ni remitirse a la Agencia Estatal de Administración Tributaria.
+
+
+Cuando deba acompañarse documentación, se hará constar en la misma el concepto IMPUESTO SOBRE LA RENTA DE NO RESIDENTES y el número de justificante del documento de ingreso que figure en la autoliquidación y podrá presentarse en el registro presencial de la Oficina de la Agencia Tributaria competente o Administraciones dependientes de la misma o de la Delegación Central de Grandes Contribuyentes o de las Unidades de Gestión de Grandes Empresas correspondientes, en cuanto a las autoliquidaciones realizadas por obligados tributarios adscritos a las mismas, o en las formas previstas en el artículo 16.4 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+
+Autoliquidación a devolver o de cuota cero: La presentación se realizará, personalmente o por correo certificado, en la Delegación de la Agencia Tributaria competente (Ver apartado DELEGACIÓN O UNIDAD), o Administraciones dependientes de la misma, o en la Delegación Central de Grandes Contribuyentes o en las Unidades de Gestión de Grandes Empresas correspondientes, en cuanto a las realizadas por obligados tributarios adscritos a las mismas.
+No obstante, si realiza la autoliquidación el contribuyente y para ello se le hubiese asignado un código identificativo al cumplimentar el formulario en el portal de internet de la Agencia Tributaria y, además, no consta en la autoliquidación un representante o un domicilio a efectos de notificaciones en territorio español, se presentará, personalmente o por correo certificado, en la Oficina Nacional de Gestión Tributaria (Agencia Tributaria. Departamento de Gestión Tributaria. Oficina Nacional de Gestión Tributaria. IRNR modelo 210. C/ Lérida 32-34 [Registro General]; 28020-Madrid).
+
+
+Delegación o Unidad: Las autoliquidaciones se presentarán ante la Delegación de la Agencia Estatal de Administración Tributaria, o Administraciones dependientes de la misma, de acuerdo con las siguientes reglas:
+
+
+
+Tratándose de rendimientos inmobiliarios, rentas imputadas de bienes inmuebles urbanos, o rentas derivadas de la transmisión de bienes inmuebles: la correspondiente al lugar de situación del inmueble.
+
+
+En los restantes casos:
+
+
+
+
+Si la autoliquidación la realiza un representante: la Delegación correspondiente al domicilio fiscal el representante.
+
+
+
+
+
+
+Si la autoliquidación la realiza un responsable solidario: la Delegación correspondiente al domicilio fiscal de dicho responsable solidario.
+
+
+
+
+
+
+Si se trata de una autoliquidación con solicitud de devolución realizada por un sujeto obligado a retener: la Delegación del domicilio fiscal de dicho obligado.
+
+
+
+
+
+
+Si la autoliquidación la realiza el propio contribuyente: la Delegación del domicilio fiscal de su representante. En ausencia de representante:
+
+
+
+
+
+1º) Tratándose de rendimientos: la correspondiente al domicilio fiscal del pagador.
+
+
+
+
+
+
+2º) Tratándose de ganancias patrimoniales, si están sometidas a retención, la correspondiente al domicilio fiscal del obligado a retener; si no lo están, la que corresponda al domicilio fiscal del depositario o gestor de los bienes o derechos o, en su defecto, la Delegación de la Agencia Estatal de Administración Tributaria en Madrid.
+
+
+No obstante, se presentarán ante la Delegación Central de Grandes Contribuyentes y las Unidades de Gestión de Grandes Empresas cuando se trate de autoliquidaciones realizadas por obligados tributarios adscritos a las mismas o cuando se trate de autoliquidaciones realizadas por contribuyentes y, en aplicación de lo dispuesto en apartados anteriores el representante, el responsable solidario o el retenedor que determina la competencia sea un obligado tributario adscrito a esa Delegación o Unidades.
+
+
+
+
+
+
+
+
+
+
+2. Presentación desde el extranjero
+
+Dependiendo del resultado de la autoliquidación, podrá efectuarse la presentación desde el extranjero tal como se indica a continuación:
+
+
+Autoliquidación con resultado a ingresar: se podrá presentar la autoliquidación e ingresar la deuda tributaria resultante mediante una transferencia realizada desde el extranjero.
+
+
+Para autoliquidaciones presentadas desde 1 de junio de 2022 se establece un nuevo procedimiento.
+
+
+Como novedad más destacada en relación con el anterior procedimiento es que las transferencias se efectúan a una cuenta de titularidad de la AEAT que han abierto las entidades colaboradoras que se adhieran a este procedimiento, en lugar de realizarse a la cuenta bancaria abierta, hasta ese momento, en el Banco de España. No se admite el pago por transferencia desde cuentas abiertas en entidades colaboradoras de la AEAT.
+
+
+El nuevo procedimiento consiste en lo siguiente:
+
+
+En Sede electrónica de la AEAT se cumplimenta el formulario de predeclaración del modelo 210.
+
+
+Al cumplimentar el formulario, se deberán tener en cuenta los siguientes extremos:
+
+
+
+Deberá figurar el contribuyente como persona que realiza la autoliquidación.
+
+
+Será necesario consignar el NIF del contribuyente. En caso de no disponer del mismo, deberá obtener un Código Identificativo a través de la opción que para ello se facilite dentro del propio formulario.
+
+
+En el tipo de declaración se deberá elegir "A ingresar mediante transferencia bancaria desde el extranjero".
+
+
+
+Al generarse la predeclaración el sistema facilita al contribuyente los datos identificativos de la cuenta de titularidad de la AEAT abierta en una entidad colaboradora a la que debe realizar la transferencia y un identificador de pago que debe utilizarse en el campo “concepto” de la transferencia. La validez del identificador del pago caducará en el plazo de treinta días naturales, contados desde la fecha de su obtención.
+
+
+Una vez validado el formulario se genera un documento ajustado al modelo 210.
+
+
+La entidad colaboradora debe contrastar los datos proporcionados por la AEAT con la información que figure en la transferencia recibida.
+
+
+La fecha de pago será la del abono en la cuenta de titularidad de la AEAT que corresponda siempre que se hayan validado los datos de pago.
+
+
+Cumplidos los anteriores requisitos, el contribuyente podrá obtener un justificante de pago en Sede electrónica.
+
+
+En general, no debe ensobrarse ni remitirse la autoliquidación a la Agencia Estatal de Administración Tributaria.
+
+
+La documentación que, en su caso, proceda adjuntar se enviará, junto con el ejemplar para la entidad colaboradora/Administración del documento de ingreso/devolución, en un sobre ordinario dirigido a la Oficina Nacional de Gestión Tributaria. En dicho sobre se hará constar el número de modelo de autoliquidación (modelo 210), así como la denominación y dirección de dicho órgano (Agencia Tributaria. Departamento de Gestión Tributaria. Oficina Nacional de Gestión Tributaria. IRNR modelo 210; C/ Lérida 32-34 [Registro General] 28020-Madrid).
+
+
+Autoliquidaciones a devolver o cuota cero: La presentación se podrá realizar mediante el envío por correo certificado del documento de ingreso/devolución generado al cumplimentar el formulario en el portal de internet de la Agencia Tributaria, así como de la documentación que proceda, en un sobre ordinario dirigido a la Delegación o Unidad competente (Ver apartado DELEGACIÓN O UNIDAD).
+
+
+Si se trata de una autoliquidación realizada por un contribuyente al que se le hubiese asignado un código identificativo al cumplimentar el formulario y, además, no conste en la autoliquidación un representante o un domicilio a efectos de notificaciones en territorio español, el sobre se dirigirá a la Oficina Nacional de Gestión Tributaria (Agencia Tributaria. Departamento de Gestión Tributaria. Oficina Nacional de Gestión Tributaria. IRNR modelo 210; C/ Lérida 32-34 [Registro General] 28020-Madrid).
+
+
+Presentación telemática por internet
+
+
+La presentación del modelo, así como de la documentación que proceda, puede hacerse de forma telemática por internet, con un certificado de firma electrónica admitido por la Agencia Tributaria Tributaria y, en el caso de personas físicas, también se podrá realizar la presentación mediante el sistema Cl@ve. Para ello, deberá cumplimentar y transmitir unos formularios disponibles en la sede electrónica de la Agencia Tributaria (https://sede.agenciatributaria.gob.es). La ruta es: Inicio/ Todas las gestiones/Impuestos y tasas/Impuesto sobre la Renta de no Residentes/Modelo 210/ Presentaciones.
+
+
+Colaboración social: las personas o entidades autorizadas a presentar por vía telemática declaraciones en representación de terceras personas, podrán hacer uso de dicha facultad respecto de los modelos 210. Se requerirá el certificado electrónico del colaborador social.
+
+
+Apoderamiento: mediante la entrega por el poderdante de un poder en las oficinas de la Agencia Tributaria, se puede apoderar a una persona o entidad para la presentación telemática de los modelos de declaración a que se refiere este apartado. Dicha presentación requerirá el uso del certificado electrónico del apoderado.
+
+
+Autoliquidación con resultado a ingresar: La presentación e ingreso se puede realizar mediante ingreso en una entidad bancaria colaboradora sita en España; mediante domiciliación del ingreso en una cuenta bancaria o mediante transferencia bancaria desde el extranjero.
+
+
+
+
+
+Ingreso en una entidad bancaria colaboradora sita en España
+
+
+Con carácter previo a transmitir la autoliquidación, deberá establecer comunicación con una entidad bancaria colaboradora en la gestión recaudatoria, por vía telemática o acudiendo a sus oficinas, para efectuar el ingreso y obtener un NRC (Número de Referencia Completo), que deberá consignar también al presentar la autoliquidación.
+
+
+La Sede Electrónica ofrece la posibilidad de obtener un NRC a través de su pasarela de pago mediante cargo en cuenta o con cargo en tarjeta. Se deberá utilizar el botón "Realizar pago (Obtener NRC)" habilitado en el formulario para la presentación de la declaración al seleccionar la forma de pago “A ingresar”.
+
+
+
+
+
+
+Domiciliación del ingreso en una cuenta bancaria
+
+
+Con la excepción de las autoliquidaciones correspondientes a rentas derivadas de transmisiones de bienes inmuebles, en caso de presentación telemática, puede ser domiciliado el pago de las deudas resultantes de las autoliquidaciones 210.
+
+
+Desde el día 30 de noviembre de 2021 se permite un desdoblamiento en la cuenta de domiciliación. En todo caso, incluso cuando transmita la autoliquidación un colaborador social, la cuenta designada para el adeudo de la domiciliación ha de ser necesariamente de titularidad de la persona que realiza la autoliquidación (en cualquiera de sus figuras: contribuyente, representante o responsable solidario) o del contribuyente.
+
+
+Se puede ordenar domiciliaciones en cuentas abiertas en entidades bancarias colaboradoras en la gestión recaudatoria en España y, desde el 1 de febrero de 2024, en cuentas abiertas en entidades no colaboradoras de la Zona SEPA ( la Zona SEPA es la formada por los treinta y seis países siguientes: los veintisiete Estados miembros de la Unión Europea, Islandia, Liechtenstein, Noruega, Andorra, Mónaco, San Marino, Suiza, Reino Unido y Estado Ciudad del Vaticano).
+
+
+
+
+
+
+Transferencia bancaria desde el extranjero
+
+
+Siempre que el devengo corresponda al ejercicio 2019 o posterior, se podrá presentar la autoliquidación e ingresar la deuda tributaria resultante mediante una transferencia realizada desde el extranjero.
+
+
+Con carácter previo, se debe realizar la presentación telemática de la autoliquidación eligiendo la forma de pago «Reconocimiento de deuda y pago mediante transferencia».
+
+
+La AEAT recupera los datos de la presentación telemática previa de la autoliquidación salvo el referente al IBAN/código (o, en su caso, BIC/SWIFT) de la cuenta desde la que se va a efectuar la transferencia que deberá ser cumplimentado por el interesado.
+
+
+El sistema indicará el IBAN de la cuenta de destino y generará un Identificador del Pago (con un plazo de validez de 30 días naturales).
+
+
+En la transferencia desde la cuenta origen a la cuenta destino, se incluirá en el campo “Concepto Transferencia” el Identificador del Pago.
+
+
+Las transferencias, que deberán efectuarse obligatoriamente en euros, se efectúan a una cuenta “Cuenta de transferencias de la AEAT” que abrirán las entidades colaboradoras que se adhieran a este procedimiento teniendo en cuenta que la cuenta origen no puede ser una cuenta abierta en entidad colaboradora.
+
+
+Las entidades colaboradoras deben contrastar la información de la AEAT con las transferencias recibidas e incorporar a sus sistemas los datos de la operación para posterior envío a la AEAT. Además, una vez identificado el ingreso recibido, deben ingresar su importe en la cuenta restringida correspondiente.
+
+
+Si no es posible identificar los datos de la transferencia recibida, o si el Identificador del Pago no consta en el campo “Concepto transferencia” o es incompleto o inexacto o ha caducado su plazo de validez, o si el pago se realiza en moneda distinta al euro, la transferencia será devuelta al emisor, corriendo a cargo del ordenante los gastos y comisiones que pudieran producirse.
+
+
+A efectos recaudatorios, se considera que el ingreso en el Tesoro Público se produce en la fecha del abono en una de las cuentas restringidas siempre que se hayan validado correctamente los datos de la transferencia recibida.
+
+
+Cumplidos los anteriores requisitos, el contribuyente podrá obtener un justificante de pago en Sede electrónica.
+
+
+
+
+
+Autoliquidación a devolver o de cuota cero: La presentación del modelo, así como de la documentación que proceda, puede hacerse de forma telemática por internet a través de la cumplimentación de un formulario disponible en la Sede electrónica de la Agencia Tributaria.
+
+
+					
+
+			
+ 
+		
+
+		
+		
+		
+
+
+Accesibilidad
+
+
+[[ID:js-pie-fecha-social]]
+
+
+
+[[ID:last-update]]
+
+
+Página actualizada: 02/julio/2026
+
+
+
+
+
+	
+
+	
+
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+
+

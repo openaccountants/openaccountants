@@ -1,733 +1,234 @@
 ---
 name: slovenia-vat-return
-description: Use this skill whenever asked to prepare, review, or create a Slovenian VAT return (DDV-O form) for any client. Trigger on phrases like "prepare VAT return", "do the DDV", "fill in DDV-O", "create the return", "Slovenian VAT", or any request involving Slovenia VAT filing. Also trigger when classifying transactions for VAT purposes from bank statements, invoices, or other source data. This skill contains the complete Slovenian VAT classification rules, box mappings, deductibility rules, reverse charge treatment, and filing deadlines required to produce a correct return. ALWAYS read this skill before touching any VAT-related work for Slovenia.
+description: "Slovenian VAT (davek na dodano vrednost, DDV) for tax year 2026 under ZDDV-1. Covers the 22%, 9.5% and 5% rates and what falls in each, the EUR 60,000 small business exemption with its EUR 66,000 in-year ceiling, the EU SME cross-border exemption (EUR 100,000), monthly and quarterly periods (EUR 210,000 test), the DDV-O return by the last working day of the next month (the 20th for recapitulative statement filers, who still pay by the last working day), the VAT ledgers and prefilled return, domestic reverse charge, the RP-O recapitulative statement, VAT groups from 2026, fiscal cash registers, B2G e-invoices and B2B e-invoicing from 2028, fines and interest. Trigger phrases: DDV-O, Slovenian VAT, obračun DDV, evidenca obračunanega DDV, RP-O, PD-O, davčna blagajna. Out of scope: slovenia-income-tax, si-corporate-income-tax, slovenia-payroll, si-cross-border."
+version: 1.1
 jurisdiction: SI
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-24
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Slovenia VAT Return
-
-## Skill Metadata
-
-- **Jurisdiction** — Slovenia
-- **Jurisdiction Code** — SI
-- **Primary Legislation** — Zakon o davku na dodano vrednost (ZDDV-1, VAT Act, Official Gazette RS 13/11 as amended through 2025)
-- **Supporting Legislation** — Pravilnik o izvajanju ZDDV-1 (Implementing Regulation); EU VAT Directive 2006/112/EC; Act on Tax Procedure (ZDavP-2)
-- **Tax Authority** — Financna uprava Republike Slovenije (FURS -- Financial Administration of the Republic of Slovenia)
-- **Filing Portal** — https://edavki.durs.si (eDavki)
-- **Contributor** — Auto-generated draft -- requires validation
-- **Validated By** — Deep research verification, April 2026
-- **Validation Date** — 2026-04-10
-- **Skill Version** — 1.0
-- **Status** — validated
-- **Confidence Coverage** — Tier 1: box assignment, reverse charge, deductibility blocks, derived calculations. Tier 2: partial exemption pro-rata, real estate options, vehicle use, flat-rate agriculture. Tier 3: complex group structures, non-standard supplies, financial services.
-
-## Confidence Tier Definitions
-
-Every rule in this skill is tagged with a confidence tier:
-
-- **[T1] Tier 1 -- Deterministic.** Apply exactly as written. No reviewer judgement required.
-- **[T2] Tier 2 -- Reviewer Judgement Required.** Flag the issue and present options. A qualified davcni svetovalec must confirm before filing.
-- **[T3] Tier 3 -- Out of Scope / Escalate.** Skill does not cover this. Do not guess. Escalate to qualified adviser.
-
-## Step 0: Client Onboarding Questions
-
-Before classifying ANY transaction, you MUST know these facts about the client. Ask if not already known:
-
-1. **Entity name and DDV ID** [T1] -- SI + 8 digits (for VIES)
-2. **VAT registration status** [T1] -- Standard registered, flat-rate scheme (agriculture, Sec. 45), or exempt (small business under EUR 60,000)
-3. **Filing frequency** [T1] -- Monthly (turnover > EUR 210,000) or quarterly (turnover <= EUR 210,000)
-4. **Industry/sector** [T2] -- impacts deductibility (construction, transport, agriculture, tourism)
-5. **Does the business make exempt supplies?** [T2] -- If yes, partial attribution required (sorazmerni delež); reviewer must confirm
-6. **Does the business trade goods for resale?** [T1] -- impacts classification
-7. **Excess credit brought forward** [T1] -- from prior period (presežek DDV)
-8. **Deductible proportion (%)** [T2] -- if partial exemption applies
-9. **New reporting obligations (from July 2025)** [T1] -- Record of Charged DDV and Record of DDV Deduction submitted with DDV-O
-
-**If any of items 1-3 are unknown, STOP. Do not classify any transactions until confirmed.**
-
-### 1a. Determine Transaction Type [T1]
-
-- **Transaction type determination** — Sale (obračunani DDV -- output DDV) or Purchase (odbitni DDV -- input DDV / deductible DDV); Salaries, social contributions (ZPIZ, ZZZS), income tax, loan repayments, dividends, bank charges = OUT OF SCOPE  _(ZDDV-1 Art. 3-5 (taxable transactions), Art. 6 (supply of goods), Art. 14 (supply of services))_
-
-### 1b. Determine Counterparty Location [T1]
-
-- **Counterparty location determination** — Slovenia (domestic): supplier/customer country is SI. EU: AT, BE, BG, HR, CY, CZ, DK, EE, FI, FR, DE, GR, HU, IE, IT, LV, LT, LU, MT, NL, PL, PT, RO, SK, ES, SE. Non-EU: everything else. Note: UK is Non-EU post-Brexit. Serbia, Bosnia-Herzegovina, North Macedonia are Non-EU.
-
-### 1c. Determine VAT Rate [T1]
-
-**VAT rate table**
-
-| Rate | Category | Legislation |
-| --- | --- | --- |
-| 22% | Standard rate -- most goods and services | ZDDV-1 Art. 41(1) |
-| 9.5% | Reduced rate -- foodstuffs (Annex I), water supply, medicines, medical equipment, books, newspapers, accommodation, cultural/sporting events, renovation of private dwellings (conditions), funeral services, passenger transport, agricultural inputs | ZDDV-1 Art. 41(2), Annex I |
-| 5% | Super-reduced rate -- books (printed and electronic), newspapers | ZDDV-1 Art. 41(3), Annex Ia |
-| 0% | Zero-rated -- intra-EU supplies of goods (Art. 46), exports outside EU (Art. 52) | ZDDV-1 Art. 46-53 |
-| Exempt with credit | International transport, supplies connected to international trade | ZDDV-1 Art. 52-57 |
-| Exempt without credit | Financial services (Art. 44), insurance (Art. 43), healthcare (Art. 42(1)(a)), education (Art. 42(1)(b)), postal services, gambling, residential rental (Art. 44(2)), land except building plots, transfer of going concern | ZDDV-1 Art. 42-44 |
-
-- **Standard rate -- most goods and services** — 22%  _(ZDDV-1 Art. 41(1))_
-- **Reduced rate -- foodstuffs (Annex I), water supply, medicines, medical equipment, books, newspapers, accommodation, cultural/sporting events, renovation of private dwellings (conditions), funeral services, passenger transport, agricultural inputs** — 9.5%  _(ZDDV-1 Art. 41(2), Annex I)_
-- **Super-reduced rate -- books (printed and electronic), newspapers** — 5%  _(ZDDV-1 Art. 41(3), Annex Ia)_
-- **Zero-rated -- intra-EU supplies of goods (Art. 46), exports outside EU (Art. 52)** — 0%  _(ZDDV-1 Art. 46-53)_
-- **International transport, supplies connected to international trade** — Exempt with credit  _(ZDDV-1 Art. 52-57)_
-- **Financial services (Art. 44), insurance (Art. 43), healthcare (Art. 42(1)(a)), education (Art. 42(1)(b)), postal services, gambling, residential rental (Art. 44(2)), land except building plots, transfer of going concern** — Exempt without credit  _(ZDDV-1 Art. 42-44)_
-
-### 1d. Determine Expense Category [T1]
-
-- **Expense category determination** — Capital goods: tangible assets used for business, subject to adjustment on change of use. Immovable property: 20-year adjustment period (ZDDV-1 Art. 69). Movable capital goods: 5-year adjustment period (ZDDV-1 Art. 68). Resale: goods bought to resell. Overhead/services: everything else.  _(ZDDV-1 Art. 68-69 (adjustment of deduction for capital goods))_
-
-## Step 2: VAT Return Form Structure (DDV-O) [T1]
-
-**Legislation:** ZDDV-1 Art. 88-89; Implementing Regulation.
-
-### Section A -- Output DDV (Obracunani DDV)
-
-**Section A -- Output DDV table**
-
-| Field | Description | Rate | Notes |
-| --- | --- | --- | --- |
-| 11 | Domestic supplies at 22% -- taxable base | 22% | Standard-rated sales |
-| 12 | DDV on field 11 | 22% | Calculated |
-| 13 | Domestic supplies at 9.5% -- taxable base | 9.5% | Reduced-rated sales |
-| 14 | DDV on field 13 | 9.5% | Calculated |
-| 14a | Domestic supplies at 5% -- taxable base | 5% | Super-reduced sales |
-| 14b | DDV on field 14a | 5% | Calculated |
-| 15 | Intra-Community acquisitions of goods -- taxable base | Self-assessed | Reverse charge |
-| 16 | DDV on field 15 | Self-assessed | At applicable SI rate |
-| 17 | Services received from EU (reverse charge) -- taxable base | Self-assessed | B2B services from EU |
-| 18 | DDV on field 17 | Self-assessed | At applicable SI rate |
-| 19 | Imports -- taxable base | Self-assessed | From customs / self-assessment |
-| 20 | DDV on field 19 | Self-assessed | At applicable rate |
-| 21 | Other taxable transactions (domestic reverse charge, non-EU services) -- base | Self-assessed | Construction, waste, emissions, non-EU |
-| 22 | DDV on field 21 | Self-assessed | At applicable rate |
-| 23 | Total output DDV | Sum | 12 + 14 + 14b + 16 + 18 + 20 + 22 |
-| 24 | Exempt supplies with right of deduction (intra-EU supplies, exports) | -- | Zero-rated output |
-| 25 | Exempt supplies without right of deduction (financial, insurance, healthcare) | -- | No DDV charged |
-
-### Section B -- Input DDV (Odbitni DDV)
-
-**Section B -- Input DDV table**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 31 | Input DDV on domestic purchases | All domestic input at all rates |
-| 32 | Input DDV on intra-Community acquisitions | Mirrors Field 16 (if deductible) |
-| 33 | Input DDV on services from EU | Mirrors Field 18 |
-| 34 | Input DDV on imports | Mirrors Field 20 |
-| 35 | Input DDV on other (domestic reverse charge, non-EU services) | Mirrors Field 22 |
-| 36 | Flat-rate compensation (agriculture, Sec. 45) | For purchases from flat-rate farmers |
-| 37 | Adjustment of input DDV | Corrections, capital goods, pro-rata |
-| 38 | Total input DDV (deductible) | Sum: 31 + 32 + 33 + 34 + 35 + 36 + 37 |
-
-### Section C -- DDV Liability
-
-**Section C -- DDV Liability table**
-
-| Field | Description | Notes |
-| --- | --- | --- |
-| 41 | DDV to pay (Field 23 - Field 38, if positive) | Pay to FURS |
-| 42 | DDV excess / refund claim (Field 38 - Field 23, if positive) | Request refund or carry forward |
-| 51 | DDV liability (including any corrections/interest) | Final amount due |
-
-## Step 3: Transaction Classification Matrix [T1]
-
-### Purchases -- Domestic (Slovenian Supplier)
-
-**Purchases -- Domestic table**
-
-| VAT Rate | Category | Input Field | Notes |
-| --- | --- | --- | --- |
-| 22% | Overhead/services | Field 31 | Standard domestic |
-| 9.5% | Overhead/services | Field 31 | Food, accommodation, books |
-| 5% | Overhead/services | Field 31 | Basic foodstuffs |
-| 0% | Any | -- | No DDV to claim |
-| Any | Capital goods | Field 31 | Track for 5/20-year adjustment |
-| Any | Blocked category (vehicle, yacht, entertainment) | -- | No deduction |
-
-### Purchases -- EU Supplier (Reverse Charge)
-
-**Purchases -- EU Supplier table**
-
-| Type | Output Field | Input Field | Notes |
-| --- | --- | --- | --- |
-| Physical goods | Field 15/16 | Field 32 | Intra-EU acquisition |
-| Services (B2B) | Field 17/18 | Field 33 | EU service RC |
-| Out-of-scope (wages etc.) | -- | -- | NEVER reverse charge |
-| Local consumption (hotel, restaurant abroad) | -- | -- | Foreign VAT at source |
-
-### Purchases -- Non-EU Supplier
-
-**Purchases -- Non-EU Supplier table**
-
-| Type | Output Field | Input Field | Notes |
-| --- | --- | --- | --- |
-| Services (B2B) | Field 21/22 | Field 35 | Non-EU service import |
-| Physical goods (customs) | Field 19/20 | Field 34 | Import via customs |
-| Out-of-scope | -- | -- | NEVER reverse charge |
-
-### Sales -- Domestic
-
-**Sales -- Domestic table**
-
-| Rate | Field | Notes |
-| --- | --- | --- |
-| 22% | Field 11/12 | Standard-rated |
-| 9.5% | Field 13/14 | Reduced-rated |
-| 5% | Field 14a/14b | Super-reduced |
-| Exempt with credit | Field 24 | IC supply, exports |
-| Exempt without credit | Field 25 | Financial, insurance, healthcare |
-
-### Sales -- EU / Non-EU
-
-**Sales -- EU / Non-EU table**
-
-| Location | Type | Field | Notes |
-| --- | --- | --- | --- |
-| EU B2B goods | Intra-EU supply | Field 24 | Zero-rated, EC Sales List |
-| EU B2B services | Place of supply in customer MS | Included in Field 24 | VIES |
-| Non-EU | Export | Field 24 | Zero-rated, customs docs |
-
-## Step 4: Reverse Charge Mechanics [T1]
-
-**Legislation:** ZDDV-1 Art. 76-76c (reverse charge); Art. 25 (place of supply for services).
-
-### Intra-EU Acquisitions of Goods (Art. 11)
-
-- **Intra-EU acquisitions procedure** — 1. Report taxable base in Field 15 and self-assessed output DDV in Field 16 2. Claim input DDV in Field 32 3. Net effect: zero for fully taxable businesses 4. Report on EC Sales List (RP-O form)  _(ZDDV-1 Art. 11)_
-
-### EU Services Received -- B2B (Art. 25(1))
-
-- **EU services received procedure** — 1. Report in Field 17 (base) / Field 18 (output DDV) 2. Claim in Field 33 3. Net effect: zero  _(ZDDV-1 Art. 25(1))_
-
-### Non-EU Services Received
-
-- **Non-EU services received procedure** — 1. Report in Field 21 (base) / Field 22 (output DDV) 2. Claim in Field 35 3. Net effect: zero
-
-### Domestic Reverse Charge [T1]
-
-**Domestic reverse charge supply types table**  _(ZDDV-1 Art. 76(1)(c)-(f), Art. 76a-76c)_
-
-| Supply Type | Legislation | Notes |
-| --- | --- | --- |
-| Construction services related to immovable property | Art. 76a(1) | All construction, renovation, maintenance |
-| Supply of waste and scrap | Art. 76a(3), Annex III-a | Metals, paper, glass, plastic |
-| CO2 emission allowances | Art. 76a(4) | Greenhouse gas permits |
-| Supply of immovable property where seller opts to tax | Art. 76a(2) | Option to tax after exempt period |
-| Supply of gold material (raw/semi-finished) | Art. 76a(5) | Raw gold |
-
-- **Construction services related to immovable property** — Art. 76a(1)  _(All construction, renovation, maintenance)_
-- **Supply of waste and scrap** — Art. 76a(3), Annex III-a  _(Metals, paper, glass, plastic)_
-- **CO2 emission allowances** — Art. 76a(4)  _(Greenhouse gas permits)_
-- **Supply of immovable property where seller opts to tax** — Art. 76a(2)  _(Option to tax after exempt period)_
-- **Supply of gold material (raw/semi-finished)** — Art. 76a(5)  _(Raw gold)_
-- **Domestic reverse charge procedure** — 1. Report in Field 21 (base) / Field 22 (output DDV) 2. Claim in Field 35 (input DDV) 3. Net effect: zero
-
-### Exceptions to Reverse Charge [T1]
-
-- **Exceptions to reverse charge** — Out-of-scope categories: NEVER reverse charge. Local consumption abroad: NOT reverse charge; foreign VAT paid at source. EU supplier charged local VAT > 0%: NOT reverse charge. Construction services where one party is not DDV-registered: normal DDV applies.
-
-## Step 5: Deductibility Check
-
-### Blocked Categories [T1]
-
-**Blocked categories table**  _(ZDDV-1 Art. 66 (restrictions on input tax deduction))_
-
-| Category | DDV Recovery | Legislation | Notes |
-| --- | --- | --- | --- |
-| Passenger cars and motorcycles | 0% | Art. 66(1)(1) | Unless for: passenger transport, goods transport, leasing/rental as business, driving schools, combined public transport vehicles, vehicles exclusively for transporting deceased |
-| Fuel, lubricants, spare parts for blocked vehicles | 0% | Art. 66(1)(1) | Follows vehicle restriction |
-| Yachts and boats for sport/recreation | 0% | Art. 66(1)(2) | Unless: transport, leasing/rental, resale |
-| Aircraft | 0% | Art. 66(1)(3) | Unless: transport, leasing/rental, resale |
-| Entertainment and representation | 0% | Art. 66(1)(4) | Fully blocked [T2 -- some case law suggests partial deduction in specific sectors; confirm with reviewer] |
-| Personal use items | 0% | Art. 63(1) | No deduction for private use |
-| Supplies for exempt-without-credit activities | 0% | Art. 63(1) | Financial, insurance, education inputs |
-
-- **Passenger cars and motorcycles** — 0%  _(Unless for: passenger transport, goods transport, leasing/rental as business, driving schools, combined public transport vehicles, vehicles exclusively for transporting deceased)_
-- **Fuel, lubricants, spare parts for blocked vehicles** — 0%  _(Follows vehicle restriction)_
-- **Yachts and boats for sport/recreation** — 0%  _(Unless: transport, leasing/rental, resale)_
-- **Aircraft** — 0%  _(Unless: transport, leasing/rental, resale)_
-- **Entertainment and representation** — 0%  _(Fully blocked [T2 -- some case law suggests partial deduction in specific sectors; confirm with reviewer])_
-- **Personal use items** — 0%  _(No deduction for private use)_
-- **Supplies for exempt-without-credit activities** — 0%  _(Financial, insurance, education inputs)_
-
-### Vehicle Exceptions (Art. 66(1)(1)) [T1]
-
-**Vehicle exceptions table**
-
-| Exception | Deduction | Notes |
-| --- | --- | --- |
-| Taxi services | 100% | Vehicle used for licensed taxi |
-| Driving school | 100% | Vehicle used for driving instruction |
-| Car rental as business | 100% | Vehicles in rental fleet |
-| Delivery / goods transport | 100% | Vehicle used for goods delivery |
-| Public transport combined vehicles | 100% | Combined passenger/goods |
-| Hearse / transport of deceased | 100% | Funeral vehicles |
-| N1 category vans / trucks | 100% | Commercial vehicles (not blocked) |
-
-### Registration-Based Recovery [T1]
-
-**Registration-based recovery table**
-
-| Registration Type | Input DDV Recovery | Legislation |
-| --- | --- | --- |
-| Standard registered | Full recovery (subject to blocks) | Art. 63-66 |
-| Small business (under EUR 60,000) | NO recovery | Art. 94 |
-| Flat-rate agriculture (Sec. 45) | No standard input DDV; compensated via flat-rate mechanism | Art. 45 |
-
-### Partial Exemption [T2]
-
-- **Recovery % formula** — Recovery % = (Taxable Supplies + Zero-Rated Supplies) / Total Supplies * 100  _(ZDDV-1 Art. 65)_
-
-**Partial exemption rules table**
-
-| Rule | Detail | Legislation |
-| --- | --- | --- |
-| Rounding | Round to nearest whole percent | Art. 65(5) |
-| De minimis | If >= 95%, treated as 100% | Art. 65(6) |
-| Provisional | Use prior year proportion during year | Art. 65(7) |
-| Annual adjustment | True-up at year-end in last period | Art. 65(8) |
-| Excluded | Incidental financial/property transactions | Art. 65(4) |
-
-**Flag for reviewer: proportion must be confirmed. Annual adjustment required.**
-
-## Step 6: New Reporting Obligations (from July 2025) [T1]
-
-**Legislation:** ZDDV-1 Art. 88a-88b (as amended 2025).
-
-From 1 July 2025, taxable persons must submit two additional records alongside the DDV-O form:
-
-**New records table**
-
-| Record | Description | Deadline |
-| --- | --- | --- |
-| Record of Charged DDV (Evidenca obracunanega DDV) | Detailed list of all output DDV transactions | Same as DDV-O |
-| Record of DDV Deduction (Evidenca odbitka DDV) | Detailed list of all input DDV deductions claimed | Same as DDV-O |
-
-### Key Requirements
-
-- Electronic format submitted via eDavki
-- Must reconcile with DDV-O totals
-- Individual invoice-level detail required
-- Replaces the previous summary-only approach
-- Penalties for non-compliance: EUR 400 - EUR 10,000
-
-## Step 7: Flat-Rate Agriculture Scheme (Sec. 45) [T2]
-
-**Flat-rate agriculture scheme table**  _(ZDDV-1 Art. 45; Implementing Regulation Art. 125-128)_
-
-| Feature | Detail |
-| --- | --- |
-| Eligibility | Agricultural and forestry producers meeting criteria |
-| How it works | Flat-rate farmers do not charge DDV but receive a flat-rate compensation from buyers |
-| Compensation rate | 8% of purchase price (buyer pays on top of agreed price) |
-| Buyer treatment | Buyer records compensation in Field 36 (input DDV equivalent) |
-| Flat-rate farmer | Does not file DDV-O returns |
-| Threshold | Can opt for standard registration if desired |
-
-**Flag for reviewer: confirm farmer's registration status. If standard registered, flat-rate does not apply.**
-
-## Step 8: Key Thresholds
-
-**Key thresholds table**
-
-| Threshold | Value | Legislation |
-| --- | --- | --- |
-| Small business exemption | EUR 60,000 annual turnover (from 2025) | ZDDV-1 Art. 94 |
-| EU SME scheme (from 2025) | EUR 85,000 domestic + EUR 100,000 EU-wide | EU Directive 2020/285 |
-| Monthly filing threshold | Annual turnover > EUR 210,000 | ZDDV-1 Art. 88(1) |
-| EU distance selling threshold | EUR 10,000/calendar year | EU Directive 2017/2455 |
-| Intrastat arrivals | EUR 220,000 | SURS regulation |
-| Intrastat dispatches | EUR 270,000 | SURS regulation |
-| Capital goods -- movable | 5-year adjustment | ZDDV-1 Art. 68 |
-| Capital goods -- immovable | 20-year adjustment | ZDDV-1 Art. 69 |
-| Flat-rate agriculture compensation | 8% | ZDDV-1 Art. 45 |
-| Coefficient de minimis | >= 95% treated as 100% | ZDDV-1 Art. 65(6) |
-
-- **Small business exemption** — EUR 60,000 annual turnover (from 2025)  _(ZDDV-1 Art. 94)_
-- **EU SME scheme (from 2025)** — EUR 85,000 domestic + EUR 100,000 EU-wide  _(EU Directive 2020/285)_
-- **Monthly filing threshold** — Annual turnover > EUR 210,000  _(ZDDV-1 Art. 88(1))_
-- **EU distance selling threshold** — EUR 10,000/calendar year  _(EU Directive 2017/2455)_
-- **Intrastat arrivals** — EUR 220,000  _(SURS regulation)_
-- **Intrastat dispatches** — EUR 270,000  _(SURS regulation)_
-- **Capital goods -- movable** — 5-year adjustment  _(ZDDV-1 Art. 68)_
-- **Capital goods -- immovable** — 20-year adjustment  _(ZDDV-1 Art. 69)_
-- **Flat-rate agriculture compensation** — 8%  _(ZDDV-1 Art. 45)_
-- **Coefficient de minimis** — >= 95% treated as 100%  _(ZDDV-1 Art. 65(6))_
-
-## Step 9: VAT Registration [T1]
-
-**VAT registration table**
-
-| Feature | Detail | Legislation |
-| --- | --- | --- |
-| VAT number format | SI + 8 digits | ZDDV-1 Art. 78 |
-| Mandatory registration | Turnover > EUR 60,000 in 12 months | ZDDV-1 Art. 78(1) |
-| Registration deadline | Before exceeding threshold | ZDDV-1 Art. 78(2) |
-| Voluntary registration | May register below threshold | ZDDV-1 Art. 78(3) |
-| Flat-rate agriculture | Separate scheme, not standard registration | ZDDV-1 Art. 45 |
-| Deregistration | If turnover stays below threshold for 12 months | ZDDV-1 Art. 81 |
-| Fiscal representative | Required for non-EU businesses without Slovenian establishment | ZDDV-1 Art. 79 |
-| Group registration | Not available in Slovenia | -- |
-
-## Step 10: Filing Deadlines and Penalties
-
-### Filing Deadlines [T1]
-
-**Filing deadlines table**
-
-| Filing | Period | Deadline | Legislation |
-| --- | --- | --- | --- |
-| DDV-O (monthly) | Monthly | Last business day of month following tax period | ZDDV-1 Art. 88(1) |
-| DDV-O (quarterly) | Quarterly | Last business day of month following quarter end | ZDDV-1 Art. 88(2) |
-| Record of Charged DDV (from July 2025) | Same as DDV-O | Same deadline | ZDDV-1 Art. 88a |
-| Record of DDV Deduction (from July 2025) | Same as DDV-O | Same deadline | ZDDV-1 Art. 88b |
-| EC Sales List (RP-O) | Monthly | 20th of month following period | ZDDV-1 Art. 90 |
-| Intrastat | Monthly | 15th of following month | SURS regulation |
-| DDV payment | Same as return | Same as filing deadline | ZDavP-2 Art. 64 |
-
-### Penalties [T1]
-
-**Penalties table**
-
-| Violation | Penalty | Legislation |
-| --- | --- | --- |
-| Late filing of DDV-O | EUR 400 - EUR 10,000 (legal entity); EUR 200 - EUR 4,000 (individual) | ZDavP-2 Art. 396 |
-| Late payment of DDV | Interest at reference rate + 2% p.a. (min 2%) | ZDavP-2 Art. 95 |
-| Tax shortfall (additional assessment) | Up to 20% of additional tax | ZDavP-2 Art. 397 |
-| Failure to register | EUR 2,000 - EUR 50,000 + back-assessment | ZDavP-2 Art. 394 |
-| New records non-compliance (from July 2025) | EUR 400 - EUR 10,000 | ZDDV-1 Art. 88a-88b |
-| EC Sales List late/missing | EUR 400 - EUR 10,000 | ZDavP-2 Art. 396 |
-| Failure to issue invoice | EUR 1,000 - EUR 25,000 per invoice | ZDavP-2 Art. 395 |
-
-## Step 11: Derived Box Calculations [T1]
-
-- **Derived box calculations** — Field 23 = Field 12 + Field 14 + Field 14b + Field 16 + Field 18 + Field 20 + Field 22 Field 38 = Field 31 + Field 32 + Field 33 + Field 34 + Field 35 + Field 36 + Field 37 IF Field 23 > Field 38 THEN Field 41 = Field 23 - Field 38  -- Tax Payable Field 42 = 0 ELSE Field 41 = 0 Field 42 = Field 38 - Field 23  -- Excess Credit / Refund END Field 51 = Field 41 + corrections/interest (if any)
-
-## Step 12: Edge Case Registry
-
-### EC1 -- EU hotel / restaurant / taxi booked abroad [T1]
-
-**Situation:** Slovenian DDV-registered client pays for hotel in Italy. Invoice shows Italian 10% VAT.
-**Resolution:** NOT reverse charge. Foreign VAT was charged at source. No DDV fields. Italian VAT is irrecoverable cost.
-**Legislation:** ZDDV-1 Art. 27 -- place of supply for accommodation is where property is located.
-
-### EC2 -- SaaS subscription from non-EU provider (AWS, Google) [T1]
-
-**Situation:** Monthly charge from US company, no VAT on invoice.
-**Resolution:** Reverse charge. Field 21 (net base) / Field 22 (output DDV at 22%). Field 35 (input DDV at 22%). Net effect zero.
-**Legislation:** ZDDV-1 Art. 25(1) -- place of supply for B2B services is customer's establishment.
-
-### EC3 -- Construction services (domestic reverse charge) [T1]
-
-**Situation:** Slovenian construction company provides building services to another SI DDV-registered business. EUR 40,000.
-**Resolution:** Domestic reverse charge. Supplier invoices without DDV. Recipient: Field 21 = EUR 40,000, Field 22 = EUR 8,800 (22%). Field 35 = EUR 8,800. Net zero.
-**Legislation:** ZDDV-1 Art. 76a(1).
-
-### EC4 -- Passenger car purchase (blocked) [T1]
-
-**Situation:** Client purchases a private car EUR 25,000 + DDV EUR 5,500 (22%). Mixed use.
-**Resolution:** Input DDV is NOT deductible under Art. 66(1)(1). Full EUR 30,500 is cost. Exception only for: taxi, driving school, car rental, goods delivery, transport of deceased.
-**Legislation:** ZDDV-1 Art. 66(1)(1).
-
-### EC5 -- Fuel for blocked vehicle [T1]
-
-**Situation:** Client purchases fuel EUR 100 + DDV EUR 22 (22%) for a blocked passenger car.
-**Resolution:** Input DDV on fuel is also NOT deductible. Follows the vehicle restriction.
-**Legislation:** ZDDV-1 Art. 66(1)(1).
-
-### EC6 -- Export sale outside EU [T1]
-
-**Situation:** Client sells goods to US customer. EUR 15,000.
-**Resolution:** Zero-rated. Report in Field 24 (exempt with right of deduction). No output DDV. Input DDV on related costs fully recoverable.
-**Legislation:** ZDDV-1 Art. 52.
-
-### EC7 -- Credit notes [T1]
-
-**Situation:** Client receives a credit note from supplier.
-**Resolution:** Reverse the original entry. Reduce applicable input DDV field.
-**Legislation:** ZDDV-1 Art. 39 (correction of tax base).
-
-### EC8 -- Intra-Community acquisition of goods [T1]
-
-**Situation:** Client purchases goods from German supplier at 0% with valid VIES numbers.
-**Resolution:** Reverse charge. Field 15 (base) / Field 16 (output DDV at 22%). Field 32 (input DDV at 22%). Net zero. Report on EC Sales List (RP-O).
-**Legislation:** ZDDV-1 Art. 11.
-
-### EC9 -- New reporting obligations from July 2025 [T2]
-
-**Situation:** From 1 July 2025, taxable persons must submit Record of Charged DDV and Record of DDV Deduction alongside the DDV-O form.
-**Resolution:** Flag for reviewer: ensure client's accounting system can generate the required records in electronic format for eDavki submission. Penalties: EUR 400 - EUR 10,000.
-**Legislation:** ZDDV-1 Art. 88a-88b.
-
-### EC10 -- Flat-rate agriculture purchase [T1]
-
-**Situation:** DDV-registered business buys produce from a flat-rate farmer for EUR 1,000.
-**Resolution:** Business pays EUR 1,000 + EUR 80 flat-rate compensation (8%). Record EUR 80 in Field 36 as input DDV equivalent.
-**Legislation:** ZDDV-1 Art. 45.
-
-### EC11 -- Yacht purchase (blocked) [T1]
-
-**Situation:** Company buys pleasure yacht EUR 50,000 + DDV EUR 11,000.
-**Resolution:** Input DDV BLOCKED (Art. 66(1)(2)). Full EUR 61,000 is cost. Exception only for charter/rental/transport business.
-**Legislation:** ZDDV-1 Art. 66(1)(2).
-
-### EC12 -- Domestic reverse charge (waste/scrap) [T1]
-
-**Situation:** Slovenian company sells scrap metal to another SI DDV-registered company. EUR 5,000.
-**Resolution:** Domestic reverse charge. Seller invoices without DDV. Buyer: Field 21 = EUR 5,000, Field 22 = EUR 1,100 (22%). Field 35 = EUR 1,100. Net zero.
-**Legislation:** ZDDV-1 Art. 76a(3).
-
-### EC13 -- Immovable property sale (option to tax) [T2]
-
-**Situation:** Company sells a building more than 2 years after first occupation. Default: exempt without credit.
-**Resolution:** Seller may opt to tax (Art. 45(10)), in which case domestic reverse charge applies. Flag for reviewer: confirm option-to-tax election and buyer's agreement.
-**Legislation:** ZDDV-1 Art. 45(10) and Art. 76a(2).
-
-### EC14 -- Small business exceeds EUR 60,000 [T1]
-
-**Situation:** Small business (exempt) turnover exceeds EUR 60,000 during the year.
-**Resolution:** Must register for DDV from the supply that caused the breach. Must charge DDV on all subsequent supplies. Can claim input DDV from registration date.
-**Legislation:** ZDDV-1 Art. 94(2).
-
-### EC15 -- Import of physical goods via customs [T2]
-
-**Situation:** Client imports goods from China via Koper port.
-**Resolution:** DDV assessed by customs at the border. Import DDV appears on customs declaration. Report in Field 19 (base) / Field 20 (customs DDV) / Field 34 (input DDV). Flag for reviewer: confirm customs documentation.
-**Legislation:** ZDDV-1 Art. 34-36.
-
-### EC16 -- Mixed invoice from EU supplier [T1]
-
-**Situation:** German supplier invoice covers physical goods and consulting services.
-**Resolution:** Split by line item. Goods: Field 15/16/32. Services: Field 17/18/33. If not separated, [T2] flag for reviewer.
-**Legislation:** ZDDV-1 Art. 11 (goods) and Art. 25 (services).
-
-### EC17 -- Car rental business vehicle purchase [T1]
-
-**Situation:** Car rental company buys passenger car EUR 20,000 + DDV EUR 4,400 for rental fleet.
-**Resolution:** Full deduction: Field 31 += EUR 4,400. Car rental is an exception to Art. 66(1)(1) block.
-**Legislation:** ZDDV-1 Art. 66(1)(1) exception.
-
-### EC18 -- Super-reduced rate purchase (5%) [T1]
-
-**Situation:** Restaurant buys bread and milk EUR 210 gross, DDV EUR 10 (5%), net EUR 200.
-**Resolution:** Field 31 += EUR 10. Fully deductible (business input at 5% super-reduced rate).
-**Legislation:** ZDDV-1 Art. 41(3), Annex Ia.
-
-## Step 13: VAT Rates -- Detailed Supply Classification [T1]
-
-### 22% Standard Rate (Art. 41(1))
-
-**22% Standard Rate table**
-
-| Supply Category | Examples |
-| --- | --- |
-| General goods | Electronics, furniture, clothing, motor vehicles, household items |
-| Professional services | Legal, accounting, consulting, IT, advertising |
-| Telecommunications | Mobile, fixed-line, internet |
-| Alcohol | Beer, wine, spirits |
-| Tobacco | Cigarettes, cigars |
-| Construction materials | Cement, steel, timber |
-| Energy | Electricity, gas, fuel |
-
-### 9.5% Reduced Rate (Art. 41(2), Annex I)
-
-**9.5% Reduced Rate table**
-
-| Supply Category | Examples |
-| --- | --- |
-| Foodstuffs | Processed foods, meat, dairy, vegetables, fruit (general) |
-| Water supply | Drinking water distribution |
-| Medicines | Prescription and OTC pharmaceuticals |
-| Medical equipment | Hearing aids, prosthetics, wheelchairs |
-| Books and newspapers | Printed and electronic books, newspapers, periodicals |
-| Accommodation | Hotels, guesthouses, camping, Airbnb |
-| Cultural/sporting events | Theatre, cinema, museums, concerts, sports matches |
-| Funeral services | Cremation, burial, undertaker |
-| Passenger transport | Bus, train, taxi |
-| Renovation of private dwellings | Qualifying residential renovation work |
-| Agricultural inputs | Seeds, fertilizers, animal feed |
-
-### 5% Super-Reduced Rate (Art. 41(3), Annex Ia)
-
-**5% Super-Reduced Rate table**
-
-| Supply Category | Examples |
-| --- | --- |
-| Basic foodstuffs | Bread, flour, milk, butter, fresh fruit, fresh vegetables, eggs |
-
-## Step 14: Comparison with Malta
-
-**Comparison with Malta table**
-
-| Feature | Slovenia (SI) | Malta (MT) |
-| --- | --- | --- |
-| Standard rate | 22% | 18% |
-| Reduced rates | 9.5%, 5% | 12%, 7%, 5% |
-| Return form | DDV-O (~25 fields + records from July 2025) | Malta periodic VAT return (~45 boxes) |
-| Filing frequency | Monthly / Quarterly | Quarterly (Art. 10), Annual (Art. 11) |
-| Filing deadline | Last business day of following month | 21st of month after quarter |
-| Payment deadline | Same as filing | Same as filing |
-| Small enterprise threshold | EUR 60,000 | EUR 35,000 |
-| Capital goods movable | 5-year adjustment | > EUR 1,160 gross |
-| Capital goods immovable | 20-year adjustment | No specific adjustment period |
-| Blocked: passenger cars | Fully blocked (Art. 66(1)(1)) | Fully blocked (10th Schedule) |
-| Blocked: entertainment | Fully blocked (Art. 66(1)(4)) | Fully blocked (10th Schedule) |
-| Blocked: yachts/aircraft | Fully blocked | Blocked (10th Schedule) |
-| Domestic reverse charge | Construction, waste, emissions, gold, immovable property | No domestic reverse charge |
-| Flat-rate agriculture | 8% compensation scheme (Art. 45) | No equivalent |
-| New records (July 2025) | Record of Charged DDV + Record of DDV Deduction | No equivalent |
-| Coefficient de minimis | >= 95% treated as 100% | No de minimis |
-| Currency | EUR | EUR |
-| Tax authority | FURS | CFR |
-| Filing portal | eDavki | cfr.gov.mt |
-
-## Step 15: Reviewer Escalation Protocol
-
-When a [T2] situation is identified, output:
-
-```
-REVIEWER FLAG
-Tier: T2
-Transaction: [description]
-Issue: [what is ambiguous]
-Options: [list the possible treatments]
-Recommended: [which treatment is most likely correct and why]
-Action Required: Davcni svetovalec must confirm before filing.
+# Slovenia VAT (DDV): 2026
+
+Source-cited draft: not reviewed by an accountant, not for filing.
+
+Slovenian VAT is in the VAT Act (Zakon o davku na dodano vrednost, ZDDV-1) and its implementing rules (Pravilnik o izvajanju ZDDV-1). Fines are in ZDDV-1 arts. 140 to 142. Interest is in the Tax Procedure Act (Zakon o davčnem postopku, ZDavP-2). Fiscal cash registers are in the Fiscal Verification of Invoices Act (Zakon o davčnem potrjevanju računov, ZDavPR). Statute text below was read on PisRS (pisrs.si) on 2026-10-24 in the unofficial consolidated versions: ZDDV-1 NPB 20 (in use from 1 January 2025, last amended by ZDDV-1O, Uradni list RS 104/24), implementing rules NPB 30 (in use from 1 January 2026), ZDavPR NPB 4 and ZDavP-2 NPB 32. The authority is the Financial Administration (Finančna uprava Republike Slovenije, FURS). Everything is filed on eDavki.
+
+## Who this applies to
+
+- **Taxable person.** Anyone who carries on an economic activity independently, whatever the purpose or result (ZDDV-1 art. 5).
+- **Registration duty.** Every taxable person must tell FURS when it starts, changes or stops its activity and apply for a VAT number (art. 78(1)). The VAT number is the tax number with the prefix SI (art. 79(2)).
+- **No VAT number needed** (art. 78(2)) for:
+  - a Slovenian business under the EUR 60,000 small business exemption that expects to stay under it;
+  - a farmer under the art. 94.k exemption;
+  - a business making only exempt supplies without deduction;
+  - a non-established business whose only Slovenian supplies are reverse charged to the customer under art. 76(3);
+  - an EU business using the EU SME scheme from its home state.
+- **Always register** (art. 78(3) and (4)): a Slovenian business that supplies services in another member state where the customer pays the VAT, and a business that receives such services in Slovenia.
+- **Non-established businesses.** One established in another EU state may appoint a tax representative. One established outside the EU must appoint one, unless it only uses the special schemes for non-EU businesses (art. 76(2)).
+- **VAT groups, new from 1 January 2026.** Two or more Slovenian taxable persons (or Slovenian branches) that are linked financially, economically and organisationally can register as one VAT group (art. 5.a). The financial link is more than 50% of capital or voting rights (art. 5.a(2)). A group files monthly (art. 89(10)).
+- **Out of scope here.** Income tax of sole traders (slovenia-income-tax), corporate income tax (si-corporate-income-tax), payroll (slovenia-payroll), residence and withholding (si-cross-border).
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| Standard rate | 22% | 2026 | ZDDV-1 art. 41(1), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Reduced rate, Annex I | 9.5% | 2026 | ZDDV-1 art. 41(2), Annex I, https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Special reduced rate, Annex IV | 5% | 2026 | ZDDV-1 art. 41(2), Annex IV, https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| VAT fraction to take VAT out of a gross price | 18.0328% (22%), 8.6758% (9.5%), 4.7619% (5%) | 2026 | FURS, Stopnje DDV, 15th ed. October 2026, https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Stopnje_DDV.docx |
+| Small business exemption: turnover in Slovenia, previous and current year | EUR 60,000 | 2026 | ZDDV-1 art. 94(1), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Small business exemption: in-year ceiling before it ends | EUR 66,000 | 2026 | ZDDV-1 art. 94(3), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| EU SME cross-border exemption: Union turnover cap | EUR 100,000 | 2026 | ZDDV-1 art. 94.b(1)(a), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Quarterly period: previous-year taxable turnover up to | EUR 210,000 | 2026 | ZDDV-1 art. 89(2), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| EU distance sales and B2C digital services, home-country threshold | EUR 10,000 | 2026 | ZDDV-1 art. 30.f(1)(c), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Cash accounting scheme: taxable turnover in last 12 months up to | EUR 400,000 | 2026 | ZDDV-1 art. 131(1), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Zero-emission car: input VAT deductible if value with VAT and duties is up to | EUR 80,000 | 2026 | ZDDV-1 art. 66.b(1), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Flat-rate compensation for farmers, added by the buyer | 8% | 2026 | ZDDV-1 art. 95(3), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Interest on self-corrections and late self-filed returns | 3% a year | 2026 | ZDDV-1 arts. 88.b(2), 88.c(2), https://pisrs.si/pregledPredpisa?id=ZAKO4701 |
+| Interest on tax found in an inspection | 7% a year | 2026 | ZDavP-2 art. 95, https://pisrs.si/pregledPredpisa?id=ZAKO4703 |
+| Late payment interest, 1 January to 30 June 2026 | 10.15% a year | 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Minister of Finance notice, Uradni list RS 2/2026, https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011/visina-predpisane-obrestne-mere-zamudnih-obresti |
+| Late payment interest, 1 July to 31 December 2026 | 10.40% a year | 2026 | ZDavP-2 art. 96(1); ZPOMZO-1 art. 2; Minister of Finance notice, Uradni list RS 1124/2026, https://pisrs.si/api/uradni-list/objava/u20261124.pdf |
+
+What falls in each rate (ZDDV-1 Annexes I and IV, NPB 20):
+
+- **9.5% (Annex I).** Food for people and animals, including non-alcoholic drinks, but not drinks with added sugar or sweeteners or mixes for them. Water supply. Medicines, contraception and sanitary protection. Medical equipment and aids for disabled people. Passenger transport. Restaurant and catering services. Admission to shows, theatres, museums, cinemas, concerts, fairs, zoos and similar. Copyright of writers and composers and performers' services. Minor repairs of bicycles, shoes, leather goods, clothing and linen. Some sales of works of art. Social housing, including its building and repair, and renovation of private homes (except materials that are a large part of the value). Agricultural inputs and services (mineral fertilisers and chemical plant protection until 31 December 2031). Hotel and similar accommodation and camping pitches. Sports events and use of sports facilities. Funeral services. Public hygiene. Domestic care. Hairdressing. Pot plants, seedlings and cut flowers. Window cleaning and cleaning of private households.
+- **5% (Annex IV).** Books, newspapers and periodicals on paper or supplied electronically, including library lending (not material mainly for advertising or mainly video or audio music). Standard firefighting vehicles and equipment supplied to fire brigades.
+- **22%.** Everything else.
+
+The implementing rules (arts. 47 and following) tie the Annex items to Combined Nomenclature codes. FURS publishes rulings item by item in Stopnje DDV.
+
+## The taxable base
+
+- **What is taxed.** Supplies of goods and services in Slovenia for consideration, intra-EU acquisitions and imports. The base is everything the supplier receives, without VAT (art. 36).
+- **Exempt without credit.** Health, education, social, financial, insurance, most land and building transactions and similar (arts. 42 to 44). An option to tax exists for some property supplies to fully taxable customers (art. 45).
+- **Zero-rated with credit.** Exports and intra-EU supplies of goods to a VAT-registered customer (arts. 46 to 58).
+- **Input VAT.** Deductible on purchases used for taxed supplies (art. 63). Mixed use needs a deduction proportion (art. 65).
+- **Blocked input VAT** (art. 66): yachts and leisure boats, aircraft, passenger cars and motorcycles with their fuel, parts and services (unless used for transport, rental, resale or driving schools), entertainment, and food, drink and accommodation unless supplied in the course of the business. Zero-emission cars up to EUR 80,000 with VAT are deductible, with their running costs (art. 66.b).
+- **Excess credit.** Carried forward up to five years, or refunded on request within 21 days of the return (art. 73).
+- **Small business exemption.** No VAT charged, no input VAT deducted, and no VAT shown on invoices (art. 94(8)). Turnover counts taxed supplies, exports and intra-EU supplies, and property, financial and insurance transactions unless ancillary. Sales of the business's own fixed assets are left out (art. 94.a(3) and (4)). Related persons who split the same activity to avoid VAT are added together (art. 94(7)). Opting in to VAT binds for the current and the next calendar year (art. 94(9)).
+- **Cash accounting.** A business under EUR 400,000 may account on payments received and deduct on payments made (art. 131).
+
+## Deadlines and filing
+
+| Obligation | Who | Deadline | Source |
+|---|---|---|---|
+| VAT period: calendar month | Default; first 12 months after registration; non-established; VAT groups | n/a | ZDDV-1 art. 89(1), (3), (4), (10) |
+| VAT period: calendar quarter | Previous-year taxable turnover up to EUR 210,000, and no recapitulative statement duty | n/a | ZDDV-1 art. 89(2) |
+| VAT ledgers (evidenca obračunanega DDV, evidenca odbitka DDV) | Every taxable person, each period | By the return deadline; a correction within 3 working days if the return differs | ZDDV-1 art. 85.b |
+| Prefilled return | FURS prepares it from the ledgers if they arrive at least 3 working days before the deadline; it becomes the return if none is filed | Return deadline | ZDDV-1 art. 88.d |
+| DDV-O return | General | Last working day of the month after the period | ZDDV-1 art. 88(1) |
+| DDV-O return | Anyone who must file a recapitulative statement | 20th day of the month after the period | ZDDV-1 art. 88(3) |
+| VAT payment | General | Same day as the return | ZDDV-1 art. 77(1) |
+| VAT payment | Recapitulative statement filers | Last working day of the month after the period | ZDDV-1 art. 77(2) |
+| RP-O recapitulative statement | Intra-EU supplies of goods, call-off stock and B2B services taxed in another state | 20th day of the next month, monthly | ZDDV-1 arts. 90, 92 |
+| PD-O report of domestic reverse-charge supplies | Supplier under art. 76.a | Last working day of the next month, monthly | ZDDV-1 art. 92.a |
+| Bound invoice book data (cash businesses without an electronic device) | Cash businesses | 10th day of the next month | ZDavPR art. 11(2) |
+
+The FURS 2026 calendar shows, for January 2026, RP-O by 20 January and the ledgers, DDV-O and PD-O by 30 January (the 31st was a Saturday).
+
+**Domestic reverse charge (art. 76.a).** A Slovenian VAT-registered customer pays the VAT on:
+- construction work, including repair, cleaning, maintenance, reconstruction and demolition of property;
+- labour supplied for that work;
+- property supplies where the supplier opted to tax;
+- waste and scrap in Annex IIIa;
+- greenhouse gas emission allowances, until 31 December 2026 (FURS note on ZDDV-1N).
+
+From 1 January 2026 the implementing rules (art. 127.b) also put construction project organisation (SKD M/68.120) and cleaning of new buildings right after construction (SKD O/81.220) under the construction rule. Advance payments are taxed on the day paid (art. 33.a).
+
+**Cross-border reverse charge.** A Slovenian VAT-registered customer pays the VAT on B2B services from a non-established supplier (art. 76(1)(3)) and on any taxable supply by a non-established, unregistered supplier (art. 76(3)). Intra-EU acquisitions are self-assessed by the acquirer (art. 76(1)(5)).
+
+**Invoices and e-invoicing in 2026.**
+- Invoices follow ZDDV-1 arts. 81 to 84. Paper or electronic is the parties' choice in 2026.
+- **Cash sales.** Every invoice paid in cash, by card, cheque or any other way that is not a direct bank transfer must be fiscally confirmed with FURS and carry the unique invoice code (EOR). The seller uses an electronic device with a FURS certificate, or a bound invoice book with data sent by the 10th of the next month (ZDavPR arts. 1 to 4, 11).
+- **Sales to public bodies (B2G).** Budget users receive e-invoices only, through the UJP single entry point (ZOPSPU-1 art. 28).
+- **B2B e-invoicing is not in force in 2026.** The e-invoicing act (ZIERDED, Uradni list RS 85/25) makes e-invoices compulsory between businesses for supplies made in Slovenia from 1 January 2028. Its chapter 4 applies from 1 April 2027 (ZIERDED arts. 7 and 28).
+
+## Penalties and interest
+
+ZDDV-1 sets the VAT fines itself. ZDavP-2 sets the interest.
+
+| Offence | Company (small) | Company (medium or large) | Sole trader | Responsible person | Source |
+|---|---|---|---|---|---|
+| Late or wrong DDV-O; late VAT payment; not registering; missing or wrong invoice; missing or late ledgers; late or wrong RP-O or PD-O; wrongly using the small business exemption | EUR 4,000 to 75,000 | EUR 10,000 to 125,000 | EUR 3,000 to 50,000 | EUR 1,000 to 10,000 (EUR 1,200 to 10,000 in a medium or large company; EUR 800 to 10,000 for a sole trader's) | ZDDV-1 art. 141 |
+| Not charging VAT, wrong rate, wrong period, wrong exemption, wrong invoice data | EUR 1,200 to 15,000 | EUR 3,200 to 30,000 | EUR 800 to 10,000 | EUR 600 to 4,000 (EUR 800 to 4,000 in a medium or large company; EUR 400 to 4,000 for a sole trader's) | ZDDV-1 art. 140 |
+| Art. 141 offence that is especially serious (VAT loss over EUR 10,000 for a company, EUR 25,000 medium or large, EUR 8,000 sole trader, EUR 5,000 individual; or intent) | EUR 4,500 to 100,000 | EUR 10,500 to 150,000 | EUR 3,500 to 75,000 | EUR 1,200 to 20,000 (EUR 1,400 to 20,000 in a medium or large company; EUR 1,000 to 20,000 for a sole trader's) | ZDDV-1 art. 142 |
+| Fiscal cash register breaches (no EOR, unreported premises, wrong data) | EUR 4,000 to 75,000 | EUR 10,000 to 125,000 | EUR 3,000 to 50,000 | EUR 1,200 to 10,000 | ZDavPR art. 19 |
+
+- **Self-correction.** Before an inspection, an assessment or offence proceedings start, an error can go into the current return (art. 88.b) or a missed return can be filed late (art. 88.c). Interest is 3% a year from the day after the original deadline. No fine is imposed for the listed offences when a return is filed this way (art. 141.a).
+- **Inspection interest.** 7% a year from the original deadline to the assessment (ZDavP-2 art. 95).
+- **Late payment interest.** The statutory default rate (ZDavP-2 art. 96): the ECB main refinancing rate plus 8 points, fixed for each half-year (ZPOMZO-1 art. 2). The Minister of Finance published 10.15% for 1 January to 30 June 2026 (Uradni list RS 2/2026) and 10.40% for 1 July to 31 December 2026 (Uradni list RS 1124/2026).
+- **Late refunds.** FURS pays default interest when a requested refund is not paid within 21 days (art. 73(3)).
+
+## Cross-border points
+
+- **EU SME scheme.** A Slovenian business with Union turnover up to EUR 100,000 can use the small business exemption in other member states after notifying FURS and getting an EX number. It files quarterly reports (arts. 94.b to 94.f). An EU business with an EX number from its home state can use the Slovenian EUR 60,000 exemption (art. 94(2)).
+- **Distance sales and B2C digital services.** Below EUR 10,000 a year across the EU, the place of supply stays Slovenia. Above it, VAT is due where the customer is, usually through the OSS (art. 30.f).
+- **Intra-EU supplies.** Zero-rated with a valid customer VAT number and proof of transport (art. 46). They go on RP-O, and the return then falls due on the 20th.
+- **Imports.** VAT is paid as an import duty, unless the registered importer gives its VAT number and the VAT details in the customs declaration. It then accounts for the VAT in the return (art. 77(6)). A non-established importer needs a tax representative for this (art. 77(7)).
+- **Refunds to foreign businesses.** EU businesses claim through their home portal by 30 September of the year after the VAT was charged (art. 74.d(2)).
+- **Non-established suppliers.** File monthly (art. 89(4)). Non-EU businesses appoint a tax representative (art. 76(2)).
+
+## Worked examples
+
+### Example 1: a quarterly sole trader with two rates
+
+Mojca runs a café and catering business as a sole trader (s.p.). Her 2025 taxable turnover was EUR 150,000 and she has no intra-EU transactions, so she files quarterly (art. 89(2)). In April to June 2026 she sells EUR 30,000 of catering at 9.5% and EUR 8,000 of alcoholic drinks at 22%, both net of VAT. Input VAT on her purchases is EUR 2,100, none of it blocked.
+
+1. VAT on catering: 30,000 x 9.5% = EUR 2,850.
+2. VAT on drinks: 8,000 x 22% = EUR 1,760.
+3. Output VAT: EUR 4,610.
+4. VAT payable: 4,610 - 2,100 = EUR 2,510.
+5. She sends the two ledgers and files DDV-O by the last working day of July, Friday 31 July 2026, and pays the same day. If the ledgers arrive at least 3 working days before, FURS prepares a prefilled return (art. 88.d).
+6. Her card payments at the till need fiscally confirmed invoices with an EOR (ZDavPR art. 2 point 4).
+
+```oa-check
+name: Sole trader cafe, Q2 2026, catering at 9.5% and drinks at 22%
+inputs:
+  catering_net: 30000
+  drinks_net: 8000
+  input_vat: 2100
+steps:
+  - vat_catering: catering_net * 0.095
+  - vat_drinks: drinks_net * 0.22
+  - output_vat: vat_catering + vat_drinks
+  - payable: output_vat - input_vat
+expected:
+  vat_catering: 2850.00
+  vat_drinks: 1760.00
+  output_vat: 4610.00
+  payable: 2510.00
 ```
 
-When a [T3] situation is identified, output:
+### Example 2: a monthly company with an intra-EU sale and domestic reverse charge
 
+Gradnja d.o.o. is a Slovenian VAT-registered company. In October 2026 it makes domestic sales of EUR 100,000 at 22%. It also supplies goods of EUR 50,000 to a VAT-registered buyer in Austria. It buys construction work of EUR 40,000 from a Slovenian VAT-registered subcontractor, which invoices without VAT under art. 76.a. Other input VAT on purchases is EUR 12,000.
+
+1. Domestic output VAT: 100,000 x 22% = EUR 22,000.
+2. The Austrian sale is zero-rated (art. 46). It goes on the return and on RP-O and adds no VAT.
+3. Reverse charge on the construction work: 40,000 x 22% = EUR 8,800 as output VAT.
+4. The same EUR 8,800 is deductible input VAT, because the work is used for taxed supplies.
+5. Total input VAT: 12,000 + 8,800 = EUR 20,800.
+6. VAT payable: 22,000 + 8,800 - 20,800 = EUR 10,000.
+7. Because it must file RP-O, the company files the ledgers, DDV-O and RP-O by Friday 20 November 2026 (arts. 88(3), 92(2)). It pays by the last working day of November, Monday 30 November 2026 (art. 77(2)).
+8. The subcontractor reports the EUR 40,000 on PD-O by 30 November 2026 (art. 92.a).
+
+```oa-check
+name: Company, October 2026, intra-EU sale plus domestic reverse charge on construction
+inputs:
+  domestic_net: 100000
+  intra_eu_net: 50000
+  construction_net: 40000
+  other_input_vat: 12000
+steps:
+  - output_domestic: domestic_net * 0.22
+  - output_intra_eu: intra_eu_net * 0
+  - rc_output: construction_net * 0.22
+  - total_output: output_domestic + output_intra_eu + rc_output
+  - total_input: other_input_vat + rc_output
+  - payable: total_output - total_input
+expected:
+  output_domestic: 22000.00
+  output_intra_eu: 0.00
+  rc_output: 8800.00
+  total_output: 30800.00
+  total_input: 20800.00
+  payable: 10000.00
 ```
-ESCALATION REQUIRED
-Tier: T3
-Transaction: [description]
-Issue: [what is outside skill scope]
-Action Required: Do not classify. Refer to davcni svetovalec. Document gap.
-```
 
-## Step 16: Test Suite
+## Ask the client first
 
-### Test 1 -- Standard domestic purchase, 22% DDV [T1]
+1. Your taxable turnover in Slovenia in 2025 and so far in 2026, and whether a related business does the same work. This decides the EUR 60,000 exemption and the EUR 66,000 ceiling.
+2. Do you sell to businesses in other EU states? If yes, you file RP-O, file monthly, and the return is due on the 20th.
+3. Was your 2025 taxable turnover above EUR 210,000? This decides monthly or quarterly returns.
+4. Do customers pay you in cash or by card? If yes, every such invoice needs fiscal confirmation.
+5. Do you do construction work, deal in scrap, or sell property with an option to tax? If yes, the domestic reverse charge and PD-O apply.
+6. Do you own more than 50% of another Slovenian business, or does one own you? If yes, a VAT group is possible from 2026.
 
-**Input:** Slovenian supplier, office supplies, gross EUR 244, DDV EUR 44, net EUR 200. Registered taxpayer.
-**Expected output:** Field 31 += EUR 44. Fully recoverable.
+## Sources
 
-### Test 2 -- EU service, reverse charge [T1]
+| Source | URL | Read on |
+|---|---|---|
+| ZDDV-1, VAT Act, NPB 20 (arts. 5, 5.a, 30.f, 33.a, 41, 46, 63, 66, 66.b, 73, 74.d, 76 to 80, 85, 85.b, 87 to 92.a, 94 to 95, 131, 140 to 142; Annexes I and IV) | https://pisrs.si/pregledPredpisa?id=ZAKO4701 | 2026-10-24 |
+| Pravilnik o izvajanju ZDDV-1, implementing rules, NPB 30 (arts. 127.b, 150.b) | https://pisrs.si/pregledPredpisa?id=PRAV7542 | 2026-10-24 |
+| ZDavP-2, Tax Procedure Act, NPB 32 (arts. 95, 95.a, 96, 97) | https://pisrs.si/pregledPredpisa?id=ZAKO4703 | 2026-10-24 |
+| ZPOMZO-1, Act on the statutory default interest rate, NPB 2 (art. 2) | https://pisrs.si/pregledPredpisa?id=ZAKO3695 | 2026-10-24 |
+| ZDavPR, Fiscal Verification of Invoices Act, NPB 4 (arts. 1 to 4, 11, 19) | https://pisrs.si/pregledPredpisa?id=ZAKO7195 | 2026-10-24 |
+| ZOPSPU-1, Act on payment services for budget users, NPB 1 (art. 28) | https://pisrs.si/pregledPredpisa?id=ZAKO7120 | 2026-10-24 |
+| ZIERDED, Act on the exchange of e-invoices, Uradni list RS 85/25 (arts. 7, 28) | https://pisrs.si/pregledPredpisa?id=ZAKO9033 | 2026-10-24 |
+| FURS, Davek na dodano vrednost (2026 filing calendar) | https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_na_dodano_vrednost_ddv/ | 2026-10-24 |
+| FURS, Stopnje DDV, 15th edition, October 2026 | https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Stopnje_DDV.docx | 2026-10-24 |
+| FURS, Spremembe zakonodaje na področju DDV (updated 30 December 2025) | https://www.fu.gov.si/datoteka.php?src=fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Spremembe_zakonodaje_na_podrocju_DDV.zip | 2026-10-24 |
+| Minister of Finance, Višina predpisane obrestne mere zamudnih obresti, Uradni list RS 2/2026 (from 1 January 2026) | https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2026-01-0011/visina-predpisane-obrestne-mere-zamudnih-obresti | 2026-10-24 |
+| Minister of Finance, Višina predpisane obrestne mere zamudnih obresti, Uradni list RS 1124/2026 (from 1 July 2026) | https://pisrs.si/api/uradni-list/objava/u20261124.pdf | 2026-10-24 |
 
-**Input:** Austrian supplier, legal services EUR 1,000, no VAT. Registered taxpayer.
-**Expected output:** Field 17 = EUR 1,000, Field 18 = EUR 220 (22%). Field 33 = EUR 220. Net = zero.
+Not yet confirmed: the DDV-O box layout was not read from the form rules; how VAT applies to the supply that takes a small business over EUR 66,000 in the year was not checked against FURS guidance.
 
-### Test 3 -- Passenger car (blocked) [T1]
-
-**Input:** Registered client purchases car EUR 25,000 + DDV EUR 5,500 (22%). Mixed use.
-**Expected output:** Input DDV = EUR 0. Blocked under Art. 66(1)(1). Full EUR 30,500 is cost.
-
-### Test 4 -- EU B2B sale [T1]
-
-**Input:** Registered client sells goods to Croatian company EUR 5,000, 0% DDV.
-**Expected output:** Field 24 = EUR 5,000. No output DDV. Report on EC Sales List (RP-O).
-
-### Test 5 -- Small business, purchase [T1]
-
-**Input:** Small business (under EUR 60,000) purchases supplies EUR 1,220 including DDV EUR 220.
-**Expected output:** No DDV return entry. Small business cannot recover input DDV.
-
-### Test 6 -- Non-EU software, reverse charge [T1]
-
-**Input:** US supplier (Google), EUR 50/month, no VAT. Registered taxpayer.
-**Expected output:** Field 21 = EUR 50, Field 22 = EUR 11 (22%). Field 35 = EUR 11. Net = zero.
-
-### Test 7 -- Reduced rate domestic purchase [T1]
-
-**Input:** Slovenian supplier, books EUR 109.50 gross, DDV EUR 9.50 (9.5%), net EUR 100.
-**Expected output:** Field 31 += EUR 9.50. Fully recoverable.
-
-### Test 8 -- Construction services (domestic RC) [T1]
-
-**Input:** Slovenian subcontractor, renovation EUR 10,000. Both parties DDV registered.
-**Expected output:** Buyer: Field 21 = EUR 10,000, Field 22 = EUR 2,200 (22%). Field 35 = EUR 2,200. Net = zero.
-
-### Test 9 -- Flat-rate agriculture purchase [T1]
-
-**Input:** Registered business buys vegetables from flat-rate farmer EUR 500.
-**Expected output:** Pay EUR 500 + EUR 40 flat-rate compensation (8%). Field 36 += EUR 40.
-
-### Test 10 -- Export of goods [T1]
-
-**Input:** Slovenian company exports to US client EUR 8,000.
-**Expected output:** Field 24 = EUR 8,000. No output DDV. Zero-rated.
-
-### Test 11 -- Fuel for blocked vehicle [T1]
-
-**Input:** Fuel EUR 80 + DDV EUR 17.60 (22%) for a blocked passenger car.
-**Expected output:** Field 31 += EUR 0. DDV BLOCKED (follows vehicle rule). Full EUR 97.60 is cost.
-
-### Test 12 -- Entertainment expense (blocked) [T1]
-
-**Input:** Business dinner EUR 200 + DDV EUR 44 (22%). Client entertainment.
-**Expected output:** Field 31 += EUR 0. DDV BLOCKED under Art. 66(1)(4). Full EUR 244 is cost.
-
-## Step 17: Refund Process [T1]
-
-**Refund process table**
-
-| Feature | Detail | Legislation |
-| --- | --- | --- |
-| Refund request | Filed via DDV-O Field 42 (excess/refund claim) | ZDDV-1 Art. 73 |
-| Automatic refund | If excess DDV exists and no outstanding tax liabilities | ZDDV-1 Art. 73(1) |
-| Refund timeline | Within 21 days for monthly filers; within 60 days for quarterly filers | ZDDV-1 Art. 73(2) |
-| Carry forward | Credit can be carried forward to next period indefinitely | ZDDV-1 Art. 73(3) |
-| Audit-conditioned | FURS may audit before releasing refund | ZDavP-2 Art. 129 |
-| 8th Directive refund | EU businesses not established in SI | ZDDV-1 Art. 74 |
-| 13th Directive refund | Non-EU businesses | ZDDV-1 Art. 74a |
-
-## Step 18: Capital Goods Adjustment [T1]
-
-**Capital goods adjustment table**  _(ZDDV-1 Art. 68-69)_
-
-| Type | Adjustment Period | Trigger | Legislation |
-| --- | --- | --- | --- |
-| Movable capital goods | 5 years from acquisition | Change in deductible proportion | Art. 68 |
-| Immovable property | 20 years from acquisition or completion | Change in deductible proportion | Art. 69 |
-| Change in use | From taxable to exempt (or vice versa) | Annual recalculation required | Art. 68(2) |
-| Sale during adjustment | One-off adjustment required | Remaining period adjusted in year of sale | Art. 68(3) |
-| Partial exemption change | New coefficient vs original coefficient | Difference > 10 percentage points triggers adjustment | Art. 68(4) |
-
-## Step 19: Out of Scope -- Direct Tax (Reference Only) [T3]
-
-This skill does not compute income tax. The following is reference information only. Escalate to qualified adviser.
-
-- **Corporate income tax (davek od dohodkov pravnih oseb):** 22% on adjusted profit (ZDDPO-2)
-- **Personal income tax:** Progressive 16% / 26% / 33% / 39% / 45% / 50%
-- **Dividend tax:** 25% withholding (27.5% from 2023)
-- **Social contributions:** employer ~16.1%, employee ~22.1%
-- **Health insurance:** employer 6.56%, employee 6.36%
-- **Local taxes:** Property tax (NUSZ), motor vehicle tax
-- **Environmental contributions:** CO2 levy, packaging contributions
-- **Tourism tax (turisticna taksa):** Charged by accommodation providers per guest per night
-
-## PROHIBITIONS [T1]
-
-- **Prohibitions list** — - NEVER let AI guess VAT box -- it is 100% deterministic from facts - NEVER apply reverse charge to out-of-scope categories (wages, dividends, bank charges) - NEVER apply reverse charge to local consumption services abroad (hotel, restaurant, taxi) - NEVER allow small business (exempt) clients to claim input DDV - NEVER confuse zero-rated (exports/intra-EU, input DDV deductible) with exempt without credit (financial, input DDV NOT deductible) - NEVER apply reverse charge when EU supplier charged local VAT > 0% - NEVER allow input DDV deduction on passenger cars/motorcycles unless proven exception applies (Art. 66(1)(1)) - NEVER allow input DDV deduction on yachts/boats/aircraft unless proven business exception (Art. 66(1)(2-3)) - NEVER allow input DDV deduction on entertainment/representation (Art. 66(1)(4)) - NEVER ignore the new Record of Charged DDV / Record of DDV Deduction obligations from July 2025 - NEVER confuse flat-rate agriculture compensation (Field 36) with standard input DDV - NEVER compute any number -- all arithmetic is handled by the deterministic engine, not Claude
-
-## Contribution Notes
-
-This skill covers Slovenia's VAT system based on ZDDV-1 (Official Gazette RS 13/11 as amended). Key distinctive features include: the 22%/9.5%/5% three-tier rate structure, full blocking of passenger cars and entertainment, the flat-rate agriculture scheme (8% compensation), the new July 2025 record submission obligations (Record of Charged DDV and Record of DDV Deduction), domestic reverse charge for construction/waste/emissions, and quarterly filing for businesses under EUR 210,000. Validation by a qualified Slovenian davcni svetovalec or pooblasceni revizor is required before production use.
-
-**A skill may not be published without sign-off from a qualified practitioner in the relevant jurisdiction.**
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,53 @@
+{
+  "candidate": "115f7229aeab749a673e806cf8a98391d59ccd3c",
+  "checked_utc": "2026-10-28T00:13:00.324631+00:00",
+  "changed_schema": {
+    "guides": 9,
+    "warnings": 0,
+    "result": "pass"
+  },
+  "changed_calculations": {
+    "files": 53,
+    "blocks_including_archive_duplicates": 89,
+    "failures": 0
+  },
+  "main_controls": 18,
+  "original_archived_controls": 32,
+  "strict_metadata": {
+    "base": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
+    "changed_sources": 6,
+    "errors": 0,
+    "warnings": 0
+  },
+  "full_schema": {
+    "guides": 2267,
+    "generated_frontmatter_blocks": 6122,
+    "errors": 0,
+    "inherited_warning_groups": 3,
+    "index_freshness": "not checked; generated trees are untouched"
+  },
+  "unit_tests": {
+    "count": 129,
+    "result": "pass",
+    "environment": {
+      "TMPDIR": "/private/tmp/oa-guernsey-final-tests",
+      "RUNNER_TEMP": "/private/tmp/oa-guernsey-final-tests"
+    },
+    "initial_run": "1 failure (RUNNER_TEMP unbound),7 errors (macOS /var vs /private/var tempfile path); no code changes needed"
+  },
+  "other_initial_checks": "System python lacked PyYAML; used existing task venv. validate-guides --help is not a help flag and ran full validation with stale index; required --no-index-check passes. No generated data modified.",
+  "review": "fresh independent whole-pack and bounded repair closure accepted; no open material findings",
+  "publication": "Pre-push validation and accepted ten-blob manifest; country issue397 remains open for six exact ordinary-domain partials. Final remote/CI evidence recorded separately.",
+  "repair_candidate": "102a7bb82945633466c93002ba755e2b9c173cc7",
+  "changed_schema_after_repairs": {
+    "guides": 9,
+    "non_guide_markdown_skipped": 16,
+    "warnings": 0,
+    "result": "pass"
+  },
+  "changed_calculations_after_repairs": {
+    "files": 54,
+    "blocks_including_archive_duplicates": 89,
+    "failures": 0
+  }
+}

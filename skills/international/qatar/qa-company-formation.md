@@ -1,31 +1,133 @@
 ---
 name: qa-company-formation
-description: "Source-cited draft: company formation & entity choice for Qatar (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Qatar mainland company formation and entity choice for 2026, focused on
+  limited liability companies under Commercial Companies Law 11/2015 and foreign
+  investment approval under Law 1/2019. Use for Qatar LLC or WLL formation,
+  shareholder liability, number of partners, capital, constitutional documents,
+  foreign ownership above 49%, incorporation approvals and the distinction between
+  commercial registration and tax registration. Separates mainland approval from
+  Qatar Financial Centre and free-zone regimes and routes the new company's
+  corporate income tax, related-party, nonresident withholding and payroll
+  obligations to the current Qatar tax Guides. Excludes unverified fee quotes,
+  service turnaround promises and transaction-specific sector licensing advice.
+version: 0.1
 jurisdiction: QA
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-28
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
+category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Qatar Company Formation & Entity Choice
+# Qatar company formation and entity choice v0.1
 
-## Entity types and incorporation
+## Scope and entity choice
 
-The most common vehicle is the Limited Liability Company (LLC / WLL), governed by the Commercial Companies Law and registered with the Ministry of Commerce and Industry (MOCI). Since the 2019 foreign investment law, 100% foreign ownership is permitted for most activities. Note details below are practitioner guidance and should be confirmed against current MOCI fee schedules.
+For a mainland LLC/WLL, [Commercial Companies Law 11/2015 (CCL), art. 228](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5)
+permits one to fifty partners. A partner's liability is limited to their capital
+share; the interests are not negotiable securities. Art. 230 prohibits public
+subscription and negotiable shares/bonds. The LLC label therefore does not
+permit public fundraising as though the entity were a listed company.
 
-- **Most common entity type** — Limited Liability Company (LLC / WLL)  _(Commercial Companies Law No. 11 of 2015 (https://www.invest.qa/en/resources/laws-and-regulations/types-of-companies))_
-- **Other entity types** — Branch office, representative office, joint stock company (QSC/QPSC), and Qatar Financial Centre (QFC) and Qatar Free Zones entities  _(Commercial Companies Law No. 11 of 2015 (https://www.invest.qa/en/resources/laws-and-regulations/types-of-companies))_
-- **Foreign ownership limit** — Up to 100% foreign ownership permitted for most activities (some regulated sectors retain local-participation requirements)  _(Foreign Investment Law No. 1 of 2019 (https://www.klgates.com/Doing-Business-in-QatarA-Guide-for-Foreign-Investors-9-20-2024))_
-- **Minimum share capital (LLC)** — No fixed statutory minimum; QAR 200,000 is commonly declared in practice (approx — confirm; practice-based, not a fixed statutory figure) QAR (approx — confirm; practice-based, not a fixed statutory figure)  _(Commercial Companies Law No. 11 of 2015 (https://meembusiness.com/llc-company-formation-qatar-process-and-documents/))_
-- **Commercial registration fee (indicative)** — Approximately QAR 3,000–5,000 (approx — confirm against current MOCI schedule) QAR (approx — confirm against current MOCI schedule)  _(Ministry of Commerce and Industry (MOCI) fee schedule (https://www.moci.gov.qa/en/our-services/investor/commerce-faq/establishing-companies/))_
-- **Incorporation timeline (indicative)** — Commercial Registration typically issued within 2–5 working days after documents are submitted via the Single Window system (approx — confirm) (approx — confirm)  _(Ministry of Commerce and Industry (MOCI) (https://meembusiness.com/llc-company-formation-qatar-process-and-documents/))_
-- **Core incorporation steps** — 1) Reserve trade name and obtain initial approval from MOCI; 2) deposit declared capital and obtain a bank Capital Deposit Certificate; 3) submit documents and pay fees via the Single Window to obtain the Commercial Registration; 4) obtain a municipal trade license (Baladiya)  _(Commercial Companies Law No. 11 of 2015 (https://meembusiness.com/llc-company-formation-qatar-process-and-documents/))_
-- **Registration authority** — Ministry of Commerce and Industry (MOCI)  _(Commercial Companies Law No. 11 of 2015 (https://www.moci.gov.qa/en/our-services/investor/commerce-faq/establishing-companies/))_
-- **Annual compliance — CR renewal** — Commercial Registration and trade license must be renewed annually with MOCI / municipality (approx — confirm) (approx — confirm)  _(Commercial Companies Law No. 11 of 2015 (https://www.moci.gov.qa/en/our-services/investor/commerce-faq/establishing-companies/))_
-- **Annual compliance — tax registration & return** — Register with the GTA via the Dhareeba portal and file an annual tax return within 4 months of the accounting period end (audited financials required above prescribed thresholds)  _(Income Tax Law No. 24 of 2018 (https://taxsummaries.pwc.com/qatar))_
+QFC, free-zone entities, public shareholding companies, branches and
+representative offices have separate establishment and activity conditions.
+Choose the regime from the actual activity, regulated sector, investors and
+operating location before choosing a tax treatment. This Guide covers the
+ordinary mainland LLC route, not a licence to operate in every sector.
+
+## Foreign investment approval
+
+[Foreign Investment Law 1/2019, arts. 2–4](https://almeezan.qa/legislations/5181e3c0-8689-4d83-9fec-c9b560af090a) permits up to 100% foreign
+investment subject to that law and its approvals. A participation above 49%
+requires the art. 3 application, supporting documents and fees to the competent
+department. The decision period is 15 days after a complete application; silence
+means rejection. This is a statutory application-decision period, not a promised
+end-to-end incorporation turnaround.
+
+Art. 4 excludes banks and insurance unless the Cabinet permits them, commercial
+agencies and further sectors excluded by Cabinet decision. Do not describe
+100% foreign ownership as automatic for every activity, or apply a tax ownership
+exemption merely because an investment approval was obtained.
+
+## Capital and documents
+
+Under [CCL arts. 231–235](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5), partners determine the capital. These LLC
+provisions prescribe no universal QAR 200,000 minimum. Sector-specific capital
+and approval conditions still require their own applicable source. All cash and
+in-kind interests must be allocated and fully paid; art. 232 requires cash
+contributions in an approved Qatar bank, released to managers after evidence
+of commercial registration. Document in-kind contributions and their agreed
+value, including the statutory liability for overvaluation.
+
+The signed constitution identifies the legal form, name, purposes and seat;
+partners and nationalities/addresses; capital and interests, including in-kind
+assets; managers and any supervisory board; term; profit/loss allocation;
+transfer conditions; and notices: CCL art. 231. Art. 229 requires the LLC
+suffix. Maintain the partner register under art. 236 and record transfers as
+required by art. 237.
+
+## Registration sequence and continuing records
+
+The manager applies for commercial registration with the constitution and
+proof of full allocation/payment and delivery of in-kind interests. Amended
+[CCL art. 233](https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5) provides 15 days to decide a complete application and
+prohibits operating before commercial registration. Sector, premises and
+activity permissions must be identified for the actual business; commercial
+registration alone is not evidence that every regulated activity is licensed.
+
+Keep the commercial registration, constitution, partner register, capital proof,
+manager appointment, ownership approval and actual activity/sector permissions
+together. This Guide does not quote an unverified registration fee, a universal
+renewal period or a two-to-five-day service promise. Obtain the current applicable
+service requirement for the chosen legal form and activity before submission.
+
+## Tax and payroll handover
+
+Commercial incorporation does not complete tax registration or establish a
+blanket exemption. Under [income-tax ER arts. 25 and 29](https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35),
+register with GTA within 60 days of the earliest statutory trigger and file the
+ordinary annual return within four months after year end. Ownership exemptions,
+foreign income and evidence must be tested under the current law, not inferred
+from nationality or a licence alone.
+
+- [Corporate income tax](qa-corporate-income-tax.md): base, allowable costs,
+  ownership conditions, losses, returns and audited accounts.
+- [Individual business tax](qa-tax-overview.md): employment exclusion versus
+  taxable independent business income.
+- [Cross-border tax](qa-cross-border-tax.md): PE, foreign income, WHT and
+  approved-payer treaty relief.
+- [Transfer pricing](qa-transfer-pricing.md): related-party pricing and files.
+- [Payroll/social insurance](qa-payroll-social.md): covered Qatari employees,
+  GCC coordination, employer and employee registration.
+- [VAT status](qa-vat-gst.md): current non-implementation, not a future rate.
+
+## Ask before choosing the route
+
+- What exact activities, locations and regulated sectors will the company operate in?
+- Who are the legal/beneficial owners, their nationalities and intended percentages?
+- Is a mainland LLC required, or is another regime being considered for specified activities?
+- What cash/in-kind capital, managers, premises and activity approvals are proposed?
+- What employees, related-party transactions and foreign payments will begin on formation?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Commercial Companies Law 11/2015, current arts. 228–237 including amended art. 233 | https://almeezan.qa/legislations/66253e38-5696-4b73-84a8-e7696d9508e5 | 2026-10-24 |
+| Foreign Investment Law 1/2019, arts. 2–4 | https://almeezan.qa/legislations/5181e3c0-8689-4d83-9fec-c9b560af090a | 2026-10-24 |
+| Current income-tax ER, arts. 25 and 29 | https://almeezan.qa/legislations/afee272e-4654-41c7-9e76-2b42f13c9b35 | 2026-10-24 |
+
+Not yet confirmed: no service fee, universal renewal period or full formation
+turnaround is asserted. Sector-specific permissions and fees are outside this
+ordinary entity-choice scope and must be sourced for the actual application.
+
+Source-cited draft. A qualified Qatar professional must review the ownership,
+activity and licensing facts before submission or acting.
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,38 @@
+{
+  "scope": "Exact four independently reviewed tax Guides and country status. Published2026AEATadministrativeentry/electionroute;ordinarylowerstatutorybaseline/repealsandpreciselegalreconciliationboundaryretained. Notfullcountrycompletion,quota-schedulecompletionorattestation.",
+  "files": {
+    "es-vat-return.md": {
+      "before_sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f",
+      "candidate_sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+      "candidate_bytes": 76767
+    },
+    "spain-vat-return.md": {
+      "before_sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08",
+      "candidate_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "candidate_bytes": 26446
+    },
+    "es-estimated-tax.md": {
+      "before_sha256": "087e86703a885ddaf0c931261085b42a3b82f86e6bad903d46f40cc60ba83f94",
+      "candidate_sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+      "candidate_bytes": 34585
+    },
+    "es-income-tax.md": {
+      "before_sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+      "candidate_sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475",
+      "candidate_bytes": 85291
+    },
+    "README.md": {
+      "before_sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6",
+      "candidate_sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+      "candidate_bytes": 8688
+    }
+  },
+  "review_report_sha256": "1e3a8e7ed8ffc021a70c29634e7632324b5e90174cc1b353703d692d0ac47063",
+  "independent_controls": 45,
+  "old_units": 826,
+  "old_link_occurrences": 591,
+  "unchanged_original_oa_blocks": 8,
+  "root_controls": 71,
+  "findings_fixed": 5,
+  "tooling_note": "Initial fetch bootstrap failed before HTTP because bs4 unavailable in system and bundled Python. Replaced parser with standard library; all13officialfetchesthen200. FailedPDF404notused;actualAprilHTMLread."
+}

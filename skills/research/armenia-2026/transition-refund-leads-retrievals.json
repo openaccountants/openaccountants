@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://www.arlis.am/hy/acts/215611/latest",
+    "fetched_utc": "2026-10-26T16:58:08.730576+00:00",
+    "status": 200,
+    "final_url": "https://www.arlis.am/hy/acts/215611/latest",
+    "bytes": 3931381,
+    "sha256": "1125a8579d9f9e9680c9cbf17a59b69cc040fb29387873ea1bdbf3f2c75de294"
+  },
+  {
+    "url": "https://www.arlis.am/hy/acts/232103/latest",
+    "fetched_utc": "2026-10-26T16:58:15.212269+00:00",
+    "status": 200,
+    "final_url": "https://www.arlis.am/hy/acts/232103/latest",
+    "bytes": 65764,
+    "sha256": "4e421cf1a9af8d19a5d860395a24c6b8b4a0795aba39dadf4cb3e99dae8a7656"
+  }
+]

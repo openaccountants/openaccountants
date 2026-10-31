@@ -1,0 +1,153 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.6.14. Por gastos ocasionados al trasladar la residencia habitual a un municipio afectado por r...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.6. Cantabria
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.6.14. Por gastos ocasionados al trasladar la residencia habitual a un municipio afectado por riesgo de despoblamiento en Cantabria por motivos laborales por cuenta ajena o por cuenta propia 
+
+Cuantía
+
+500 euros en el periodo impositivo en el que se produzca el cambio de residencia y en el siguiente.
+
+El concepto de residencia habitual se determinará conforme a lo dispuesto en la LIRPF.
+
+Requisitos y condiciones
+
+El traslado de la residencia habitual a un municipio afectado por riesgo de despoblamiento debe venir motivado por la realización de una actividad laboral por cuenta ajena o por cuenta propia.
+
+Para consolidar el derecho a la deducción, el contribuyente debe permanecer en la nueva residencia habitual durante el año en que se produce el traslado y los tres siguientes.
+
+El incumplimiento de cualquiera de estos requisitos dará lugar a la integración de las deducciones indebidamente practicadas en la cuota líquida autonómica o complementaria devengada en el ejercicio en que se hayan incumplido los requisitos con los correspondientes intereses de demora.
+
+El importe de la deducción no podrá exceder de la parte autonómica de la cuota íntegra procedente de los rendimientos del trabajo y de actividades económicas del ejercicio en que resulte aplicable la deducción.
+
+En el supuesto de tributación conjunta, la deducción de 500 euros se aplicará, en cada uno de los periodos impositivos en que sea aplicable la deducción, por cada uno de los contribuyentes que traslade su residencia con el límite de la parte autonómica de la cuota íntegra procedente de rendimientos del trabajo y de actividades económicas que corresponda a los contribuyentes que generen derecho a la aplicación de la deducción.
+
+Cumplimentación
+
+Si conforme a lo expuesto anteriormente cumple los requisitos para tener derecho a la deducción marcará la casilla habilitada con este fin.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

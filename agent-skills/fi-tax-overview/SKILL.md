@@ -1,31 +1,66 @@
 ---
 name: fi-tax-overview
-description: "Source-cited draft: tax overview for Finland (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Find the existing Finland tax skills for 2026 preparation and identify their scope and review limits. Routes individual and corporate income tax, VAT, YEL, payroll, transfer-pricing documentation, cross-border residence, prepayments, country-by-country reporting and property-transfer questions to the relevant source skill. Use when a Finland tax question needs classification before any calculation, when checking which workpaper applies, or when reconciling the country pack's partial coverage. This overview supplies no standalone tax calculation of its own or current formation fee, and the country remains a source-cited draft with source-review evidence in the pack README; professional attestation is separate."
 license: "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
 metadata:
   source: openaccountants
   openaccountants_url: "https://www.openaccountants.com/skills/fi-tax-overview"
   jurisdiction: "FI"
-  tax_year: "2025"
-  last_updated: "2026-07-13"
+  tax_year: "2026"
+  last_updated: "2026-10-27"
   trust_label: "Built by Michael Cutajar and the OpenAccountants team"
   review_status: "pending_review"
 ---
 
-# Finland Tax Overview
+# Finland tax overview v0.4
 
-## Finnish tax system at a glance (2025)
+## Start with the question and the taxpayer
 
-- **Tax system overview** — Finland levies taxes at state, municipal and (for church members) parish level, administered by the Finnish Tax Administration (Verohallinto / Vero). The tax year is the calendar year and the currency is the euro.
-- **Tax year** — Calendar year (1 January – 31 December)  _(Act on Assessment Procedure (Laki verotusmenettelystä 1558/1995))_
-- **Currency** — Euro (EUR, €)  _(Currency Act / euro adoption (Finland is in the euro area))_
-- **Tax authority** — Finnish Tax Administration (Verohallinto / Vero), vero.fi; e-services via MyTax (OmaVero)  _([Act on the Finnish Tax Administration (Laki Verohallinnosta 503/2010)](https://www.vero.fi/en/))_
-- **Basis of taxation** — Residents taxed on worldwide income; non-residents taxed only on Finnish-source income  _(Income Tax Act (Tuloverolaki 1535/1992))_
-- **Personal income tax structure** — Progressive state tax on earned income (12.64%–44.25% in 2025), flat municipal tax (avg ~7.5%), separate flat capital-income tax (30%/34%) ((approx — confirm))  _(Income Tax Act (Tuloverolaki 1535/1992))_
-- **Corporate income tax rate** — 20% percent  _([Income Tax Act (Tuloverolaki 1535/1992)](https://taxsummaries.pwc.com/finland/corporate/taxes-on-corporate-income))_
-- **VAT (arvonlisävero, ALV) standard rate** — Yes — standard rate 25.5% in 2025 percent  _(Value Added Tax Act (Arvonlisäverolaki 1501/1993))_
-- **Individual return deadline** — Pre-completed return corrections due April/early May of the following year (dates such as 1, 14, 21 or 28 April 2026 for tax year 2025) ((approx — confirm exact personal date in MyTax))  _(Act on Assessment Procedure (Laki verotusmenettelystä 1558/1995))_
-- **Corporate return deadline** — Within 4 months from the end of the month in which the accounting period ends  _([Act on Assessment Procedure (Laki verotusmenettelystä 1558/1995)](https://taxsummaries.pwc.com/finland/corporate/tax-administration))_
+Use the existing topic skill and its source/read-date record before applying a figure. Distinguish tax residence, legal entity, income or transaction category and the relevant year. The [pack README](README.md) records coverage and remaining gaps; the revised ordinary pack’s review evidence is recorded there.
+
+| Question | Existing preparation skill | Remaining boundary |
+|---|---|---|
+| Resident individual tax or sole-trader income | [Individual income tax](fi-income-tax.md) | Includes deductions, mainland/Åland components, pensions, rent/gains and business allocation; special regimes are scoped separately. |
+| Company profits, losses or tax return | [Corporate income tax](fi-corporate-income-tax.md) | Use the book-to-tax, interest, group, loss and participation calculations; corporate cross-border is linked below. |
+| VAT classification and return | [VAT return](finland-vat-return.md) | Ordinary rates, EU/import, Åland and construction routes; special schemes require separate work. |
+| Self-employed pension insurance | [YEL](fi-yel-social.md) | Establish eligibility and provider decisions; this does not cover all social insurance. |
+| Employee deductions and employer reporting | [Payroll](fi-employer-payroll.md) | Includes benefit valuation and statutory employee/employer insurance bases; coverage facts control. |
+| Related-party documentation | [Transfer pricing](fi-transfer-pricing.md) | Documentation does not establish an arm's-length price. |
+| Arrival/departure and foreign tax relief | [Individual cross-border residence](fi-individual-cross-border-residence.md) | Includes source income, source/progressive tax and foreign relief; read the actual treaty for country-specific outcomes. |
+| Income-tax payments during the year | [Prepayments](fi-prepayments.md) | The issued decision and applicable taxpayer route control. |
+| Multinational reporting | [CbCR](fi-country-by-country-reporting.md) | Threshold, filer role and notification are separate checks. |
+| Corporate cross-border | [Corporate cross-border](fi-corporate-cross-border-tax.md) | Residence, PE, source withholding, credit and exit; treaty conditions remain case-specific. |
+| Annual property ownership | [Annual real-estate tax](fi-annual-real-estate-tax.md) | Uses preceding-year values and actual municipal rates, including Åland deviations. |
+| Acquisition of real estate or housing-company shares | [Property-transfer tax](fi-property-transfer-tax.md) | Acquisition base, debt, earnouts, filing and sanctions; annual tax and rent/gains use separate linked computations. |
+| Entity formation | [Formation draft](fi-company-formation.md) | Current PRH setup/fee and selected statutory checks; broader entity, accounting and specialist review remain open. |
+
+## Finland at a glance (2026)
+
+| Point | 2026 position | Where it is computed |
+|---|---|---|
+| Levels of tax | State income tax, municipal tax and, for church members, parish tax; administered by the Finnish Tax Administration (Vero), e-services in MyTax (OmaVero) | [Individual income tax](fi-income-tax.md) |
+| Tax year and currency | Calendar year; euro | [Individual income tax](fi-income-tax.md); [Corporate income tax](fi-corporate-income-tax.md) |
+| Basis | Residents on worldwide income; non-residents on Finnish-source income | [Individual cross-border residence](fi-individual-cross-border-residence.md); [Income Tax Act 1535/1992, sections 9–10][ita] |
+| Individual rates | Progressive state tax on earned income plus municipal/parish tax; capital income 30% up to EUR 30,000, 34% above | [Individual income tax](fi-income-tax.md); [Income Tax Act, section 124][ita] |
+| Corporate rate | 20% | [Corporate income tax](fi-corporate-income-tax.md); [Income Tax Act, section 124][ita] |
+| VAT rates | 25.5% general; 13.5% reduced from 1 January 2026 (formerly 14%); 10% newspapers/magazines | [VAT return](finland-vat-return.md); [VAT Act 1501/1993, sections 84–85a][vat] |
+| Individual return | Review and correct the pre-completed return in MyTax by the date allocated on it | [Individual income tax](fi-income-tax.md) |
+| Corporate return | Within four months after the end of the calendar month in which the financial period ends | [Corporate income tax](fi-corporate-income-tax.md) |
+
+## Workpaper handoff
+
+Record the facts, selected skill/version, source passages, assumptions, calculations and unresolved points together. Separate preparation from a return submitted or a payment made. File count, executable arithmetic and an HTTP success response do not establish country completeness or named accountant review.
+
+## Sources and review limits
+
+This router was reconciled to the existing Finland source pack on 26 October 2026. Tax rules and official URLs belong to the linked topic skills; no independent legal conclusion is supplied by this index. Earlier 2025 summary figures remain in Git history and must not substitute for current topic-source checks.
+
+The independent source review, corrections and remaining gaps are recorded in the [country README](README.md#evidence-and-next-action). See [OWNERS.md](../../../OWNERS.md) and [country issue #392](https://github.com/openaccountants/openaccountants/issues/392) for allocation and progress.
+
+[ita]: https://www.finlex.fi/fi/lainsaadanto/1992/1535
+[vat]: https://www.finlex.fi/fi/lainsaadanto/1993/1501
+
+> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 
@@ -47,4 +82,4 @@ version (and the professional behind it) is at
 
 ## Today's figures and who stands behind this skill
 
-This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-07-13. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.
+This file is an AI skill (tax rules your AI follows) from OpenAccountants, copied on 2026-10-27. Rates, thresholds and deadlines change. For the current version of this skill, its official sources and the named accountant (if any) who stands behind it, call `get_skill` with slug `fi-tax-overview` on the OpenAccountants connector (https://www.openaccountants.com/connect), or read https://www.openaccountants.com/skills/fi-tax-overview. If neither is available, confirm every figure against the official source pages cited above before relying on it.

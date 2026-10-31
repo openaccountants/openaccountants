@@ -1,0 +1,11 @@
+{
+  "before_sha256": "3a03158eba17ed8b79460e1c558a9c8c402c6d07ab4d2a3da89c7191a4a59547",
+  "after_sha256": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+  "changed_native_LF": [
+    4,
+    19,
+    161
+  ],
+  "read_on": "2026-10-28",
+  "scope": "Current ordinary neonatalhospitalisation condition/amount restored; priorhistoricaleventtransitions not silently settled."
+}

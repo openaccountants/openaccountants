@@ -1,0 +1,16 @@
+{
+  "Guide": "226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929",
+  "ledger": "f6523c92cd59a3894210cbe62f12c04b620e398c4ae0fe81cd0522ec452bf709",
+  "rows": 866,
+  "only_changed_rows": [
+    785,
+    789
+  ],
+  "S-L21_two_row_full_forward_inverse": true,
+  "all866_native_declared_quote_segments_match": true,
+  "normalisation": "Whitespace joined; displayed ellipsis segments tested in order. Not represented as raw contiguous quotations.",
+  "Guide_entire_frozen_exact": true,
+  "metadata_byline_CTA_examples_oldURLs": "Entire Guide unchanged, therefore all exact; prior whole-pack protection evidence reused.",
+  "unrepresented_units": 20,
+  "unrepresented_scope": "Table headings, workflow introductions and six factual client questions; no missing independent numerical method discovered."
+}

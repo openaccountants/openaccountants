@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>        
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Instrucciones</title><meta name="ObjectId" content="40ab6cc16a828810VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Todas las gestiones, Impuestos y tasas, Pagos a cuenta"/>
+<meta name="detalle" content="informacion"/>
+</head>
+<body>
+	<div id="body" data-template-id="0ed38fe8bc6fc610VgnVCM100000dc381e0aRCRD" class="s_Sede p_estandar t_informacion">
+		
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='ffba05224b5ad610VgnVCM100000dc381e0aRCRD' href='/Sede/todas-gestiones.html'>Todas las gestiones</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9d776194f06ad610VgnVCM100000dc381e0aRCRD' href='/Sede/impuestos-tasas.html'>Impuestos, tasas y prestaciones patrimoniales</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='48bfa506616ad610VgnVCM100000dc381e0aRCRD' href='/Sede/impuestos-tasas/pagos-cuenta.html'>Pagos a cuenta</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='8fffa506616ad610VgnVCM100000dc381e0aRCRD' href='/Sede/procedimientoini/GH01.shtml'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Modelo 111. Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades económicas, premios y determinadas ganancias patrimoniales e imputaciones de Renta. Autoliquidación.</a></li>
+</ol>
+</nav><div class="container-text js-container container-print print-p-0">
+			<div class="row mt-3">
+<main class="col-12 col-lg-7 col-print-12" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Instrucciones</h1><h2 class="texto_cen">MODELO 111</h2>
+<h2 class="texto_cen">RETENCIONES E INGRESOS A CUENTA DEL <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas" text="IRPF">IRPF</abbr>. RENDIMIENTOS DEL TRABAJO Y DE ACTIVIDADES ECON&Oacute;MICAS, PREMIOS Y DETERMINADAS GANANCIAS PATRIMONIALES E IMPUTACIONES DE RENTA.</h2>
+<p><strong>Informaci&oacute;n general sobre las formas de presentaci&oacute;n del modelo 111 y la cumplimentaci&oacute;n del mismo.</strong></p>
+<h3>CUESTIONES GENERALES.</h3>
+<p><strong>Importante:</strong> todos los importes monetarios solicitados en el modelo deber&aacute;n expresarse en euros, consignando la parte decimal, que constar&aacute; de dos d&iacute;gitos en todo caso, a la derecha de la l&iacute;nea vertical que divide cada una de las casillas. &gt;</p>
+<p><strong>Referencias normativas. </strong>Las menciones que en este documento se hacen a la Ley y al Reglamento del Impuesto deben entenderse hechas, respectivamente, a la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas F&iacute;sicas y de modificaci&oacute;n parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio (BOE del 29) y al Reglamento del Impuesto sobre la Renta de las Personas F&iacute;sicas, aprobado por el Real Decreto 439/2007, de 30 de marzo.</p>
+<h3>OBLIGADOS A PRESENTAR EL MODELO 111.</h3>
+<p>Est&aacute;n obligados a presentar el modelo 111 todas las personas y entidades obligadas a retener o ingresar a cuenta conforme a lo establecido en el art&iacute;culo 74 del Reglamento del Impuesto que satisfagan o abonen rentas, dinerarias o en especie, sujetas a retenci&oacute;n o a ingreso a cuenta correspondientes a alguna de las siguientes clases:</p>
+<ul>
+<li>
+<p>Rendimientos del trabajo.</p>
+</li>
+<li>
+<p>Rendimientos que sean contraprestaci&oacute;n de las siguientes actividades econ&oacute;micas:</p>
+</li>
+<li>
+<p>Actividades profesionales.</p>
+</li>
+<li>
+<p>Actividades agr&iacute;colas y ganaderas.</p>
+</li>
+<li>
+<p>Actividades forestales.</p>
+</li>
+<li>
+<p>Las actividades empresariales en estimaci&oacute;n objetiva previstas en el art&iacute;culo 95.6.2.&ordm; del Reglamento del Impuesto.</p>
+</li>
+<li>
+<p>Rendimientos procedentes de la propiedad intelectual e industrial, de la prestaci&oacute;n de asistencia t&eacute;cnica, del arrendamiento de bienes muebles, negocios o minas, del subarrendamiento sobre los bienes anteriores y de la cesi&oacute;n del derecho a la explotaci&oacute;n del derecho de imagen, a los cuales se refiere el art&iacute;culo 75.2.b) del Reglamento del Impuesto, cuando deriven de una actividad econ&oacute;mica desarrollada por su perceptor.</p>
+</li>
+<li>
+<p>Premios por la participaci&oacute;n en juegos, concursos, rifas o combinaciones aleatorias a que se refiere el art&iacute;culo 75.2.c) del Reglamento del Impuesto.</p>
+</li>
+<li>
+<p>Ganancias patrimoniales consistentes en percepciones obtenidas por los vecinos como consecuencia de los aprovechamientos forestales en montes p&uacute;blicos.</p>
+</li>
+<li>
+<p>Contraprestaciones a que se refiere el art&iacute;culo 92.8 de la Ley del Impuesto que sean consecuencia de cesiones de derechos de imagen a las que resulte de aplicaci&oacute;n el r&eacute;gimen especial de imputaci&oacute;n de rentas establecido en el citado art&iacute;culo.</p>
+</li>
+</ul>
+<h3>PRESENTACI&Oacute;N DEL MODELO 111 COMO AUTOLIQUIDACI&Oacute;N NEGATIVA.</h3>
+<ul>
+<li>
+<p>Deber&aacute; presentarse el modelo 111 como autoliquidaci&oacute;n negativa <strong>cuando, a pesar de haber satisfecho en el trimestre o en el mes anterior</strong>, seg&uacute;n corresponda, rentas sometidas a retenci&oacute;n o a ingreso a cuenta de las enumeradas anteriormente, <strong>no hubiera procedido, conforme a las normas aplicables para la determinaci&oacute;n de su importe, la pr&aacute;ctica efectiva de retenci&oacute;n o ingreso a cuenta</strong>, de forma que no proceda ingresar en el Tesoro p&uacute;blico cantidad alguna por este concepto.</p>
+</li>
+<li>
+<p>Sin embargo, <strong>no proceder&aacute; la presentaci&oacute;n del modelo 111 cuando</strong> no se hubiese satisfecho en el trimestre o en el mes anterior objeto de autoliquidaci&oacute;n, seg&uacute;n corresponda, ninguna renta sometida a retenci&oacute;n e ingreso a cuenta de las anteriormente mencionadas. Es decir, <strong>no deben presentarse modelos de autoliquidaci&oacute;n 111 con todas las casillas del apartado de liquidaci&oacute;n sin cumplimentar.</strong></p>
+<p>En este caso, <strong>deber&aacute; presentarse declaraci&oacute;n censal (modelo 036/037), de modificaci&oacute;n</strong>, comunicando la fecha en la que se produce la baja en la obligaci&oacute;n de practicar retenciones del trabajo a cuenta del Impuesto sobre la Renta. Dicha declaraci&oacute;n de modificaci&oacute;n (en la que se comunique la baja de la obligaci&oacute;n de retener) deber&aacute; presentarse en el plazo de un mes desde la finalizaci&oacute;n del per&iacute;odo al que hubiera correspondido la autoliquidaci&oacute;n.</p>
+<p class="letrita"><em><strong>RECUERDE:</strong></em> <em>En caso de volver a satisfacer rentas sujetas a retenci&oacute;n a cuenta del IRPF, deber&aacute; presentarse adem&aacute;s la correspondiente <strong>declaraci&oacute;n censal (modelo 036/037), de modificaci&oacute;n</strong>, comunicando el alta en la citada obligaci&oacute;n.</em></p>
+</li>
+</ul>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><strong>Importante:</strong> la autoliquidaci&oacute;n de retenciones e ingresos a cuenta, modelo 111, ser&aacute; &uacute;nica para cada retenedor u obligado a ingresar a cuenta y comprender&aacute; la totalidad de los datos que, debiendo incluirse en la misma, correspondan al per&iacute;odo, trimestral o mensual, por el que se presenta la autoliquidaci&oacute;n.</p>
+</div>
+<h3>PERIODICIDAD Y FORMAS DE PRESENTACI&Oacute;N DEL MODELO 111.</h3>
+<p>La periodicidad y la forma de presentaci&oacute;n de las autoliquidaciones de retenciones e ingresos a cuenta del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas" text="IRPF">IRPF</abbr> en el modelo 111 vienen determinadas por el tipo o categor&iacute;a en el que se encuentre encuadrado el obligado tributario de entre los que a continuaci&oacute;n se relacionan:</p>
+<ol type="a">
+<li>
+<p><strong>Grandes empresas.</strong> Tienen esta consideraci&oacute;n las personas o entidades obligadas a retener o a ingresar a cuenta en quienes concurra alguna de las circunstancias a que se refieren los n&uacute;meros 1.&ordm; y 2&ordm; del art&iacute;culo 71.3 del Reglamento del Impuesto sobre el Valor A&ntilde;adido, relativas al volumen de operaciones que determina que el per&iacute;odo de liquidaci&oacute;n de dicho impuesto coincida con el mes natural.</p>
+</li>
+<li>
+<p><strong>Personas o entidades adscritas a la Delegaci&oacute;n Central de Grandes Contribuyentes (DCGC) o a alguna de las Unidades de Gesti&oacute;n de Grandes Empresas</strong> dependientes del Departamento de Inspecci&oacute;n Financiera y Tributaria de la <abbr title="Agencia Estatal de Administraci&oacute;n Tributaria" text="AEAT">AEAT</abbr>.</p>
+</li>
+<li>
+<p><strong>Administraciones p&uacute;blicas con presupuesto anual superior a 6 millones de euros.</strong> Comprende todas aquellas entidades que tengan la consideraci&oacute;n de Administraciones p&uacute;blicas, incluida la Seguridad Social, cuyo &uacute;ltimo presupuesto anual aprobado con anterioridad al inicio de cada ejercicio supere la cantidad de 6 millones de euros.</p>
+</li>
+<li>
+<p><strong>Entidades con forma jur&iacute;dica de sociedad an&oacute;nima o de sociedad de responsabilidad limitada.</strong></p>
+</li>
+<li>
+<p><strong>Restantes obligados tributarios</strong>, entre los cuales cabe se&ntilde;alar:</p>
+<ul>
+<li>
+<p>Personas f&iacute;sicas que desarrollan actividades econ&oacute;micas, ya sean de naturaleza empresarial, incluidas las agr&iacute;colas, ganaderas, forestales o pesqueras, o profesional, incluidas las art&iacute;sticas y deportivas.</p>
+</li>
+<li>
+<p>Administraciones p&uacute;blicas cuyo &uacute;ltimo presupuesto anual aprobado con anterioridad al inicio del ejercicio no supere la cantidad de 6 millones de euros.</p>
+</li>
+<li>
+<p>Personas jur&iacute;dicas y dem&aacute;s entidades distintas de las sociedades an&oacute;nimas y de las sociedades de responsabilidad limitada: cooperativas, fundaciones, asociaciones, comunidades de propietarios, comunidades de bienes, sociedades civiles, herencias yacentes, etc.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Atendiendo al tipo de obligado tributario de que se trate</strong>, la periodicidad y forma de presentaci&oacute;n del modelo 111 ser&aacute;n las que en cada caso corresponda de las que se se&ntilde;alan en el siguiente cuadro:</p>
+<table class="margen-sup" summary="Periodicidad y forma de presentaci&oacute;n del modelo 111">
+<tbody>
+<tr>
+<th class="texto_cen">
+<p><strong>Tipo de Obligado tributario</strong></p>
+</th>
+<th class="texto_cen">
+<p><strong>Periodicidad</strong></p>
+</th>
+<th class="texto_cen">
+<p><strong>Forma de presentaci&oacute;n</strong></p>
+</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>
+<p>Grandes Empresas</p>
+</li>
+<li>
+<p>Administraciones P&uacute;blicas con presupuesto superior a 6 millones de euros</p>
+</li>
+</ul>
+</td>
+<td>
+<p class="texto_izq">Mensual</p>
+</td>
+<td rowspan="2">
+<p><strong>Obligatoriamente:</strong></p>
+<p><strong>Electr&oacute;nica</strong>, a trav&eacute;s de Internet con <strong>firma&nbsp;</strong><strong>electr&oacute;nica&nbsp; avanzada&nbsp;</strong>o un sistema de identificaci&oacute;n y autenticaci&oacute;n mediante&nbsp;<strong>certificado electr&oacute;nico.</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>
+<p>Sociedades an&oacute;nimas y Sociedades de responsabilidad limitada (excepto que tengan la consideraci&oacute;n de grandes empresas)</p>
+</li>
+<li>
+<p>Adscritos a la <abbr title="Delegaci&oacute;n Central de Grandes Contribuyentes" text="DCGC">DCGC</abbr> / UGGE (excepto que tengan la consideraci&oacute;n de grandes empresas)</p>
+</li>
+<li>
+<p>Resto de Administraciones P&uacute;blicas.</p>
+</li>
+</ul>
+</td>
+<td>
+<p class="texto_izq">Trimestral</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Personas F&iacute;sicas (excepto si est&aacute;n adscritas a la <abbr title="Delegaci&oacute;n Central de Grandes Contribuyentes" text="DCGC">DCGC</abbr>)</p>
+</td>
+<td>
+<p>Trimestral</p>
+</td>
+<td>
+<p><strong>Opcionalmente:</strong></p>
+<ol type="a">
+<li>
+<p>Electr&oacute;nica, a trav&eacute;s de Internet con sistema de&nbsp;&nbsp; firma con clave de acceso [Cl@ve M&oacute;vil (incluye Cl@ve)].</p>
+</li>
+<li>
+<p>Electr&oacute;nica, a trav&eacute;s de Internet con firma electr&oacute;nica avanzada o un sistema de identificaci&oacute;n y autenticaci&oacute;n mediante certificado electr&oacute;nico.</p>
+</li>
+<li>
+<p>Mediante papel impreso generado exclusivamente mediante la utilizaci&oacute;n del servicio de impresi&oacute;n desarrollado a estos efectos por la <abbr title="Agencia Estatal de Administraci&oacute;n Tributaria" text="AEAT">AEAT</abbr> en su sede electr&oacute;nica.</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td rowspan="5">
+<p>Restantes obligados tributarios (excepto que tengan la consideraci&oacute;n de grandes empresas)</p>
+</td>
+<td rowspan="5">
+<p>Trimestral</p>
+</td>
+<td>
+<p>Opcionalmente:</p>
+<ol type="a">
+<li>
+<p>Electr&oacute;nica, a trav&eacute;s de Internet con <br />firma electr&oacute;nica avanzada o un sistema de identificaci&oacute;n y autenticaci&oacute;n mediante certificado electr&oacute;nico.</p>
+</li>
+<li>
+<p>Mediante papel impreso generado exclusivamente mediante la utilizaci&oacute;n del servicio de impresi&oacute;n desarrollado a estos efectos por la <abbr title="Agencia Estatal de Administraci&oacute;n Tributaria" text="AEAT">AEAT</abbr> en su sede electr&oacute;nica.</p>
+</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>NORMAS PARA LA PRESENTACI&Oacute;N DEL MODELO 111 EN PAPEL IMPRESO GENERADO EXCLUSIVAMENTE MEDIANTE LA UTILIZACI&Oacute;N DEL SERVICIO DE IMPRESI&Oacute;N DESARROLLADO A ESTOS EFECTOS POR LA AGENCIA TRIBUTARIA EN SU SEDE ELECTR&Oacute;NICA.</h3>
+<p>En este caso, el modelo 111 consta &uacute;nicamente de dos ejemplares (para el declarante y para la Entidad colaboradora-<abbr title="Agencia Estatal de Administraci&oacute;n Tributaria" text="AEAT">AEAT</abbr>).&nbsp; Los dos ejemplares del modelo 111 obtenidos por este procedimiento incorporan los datos identificativos del declarante por medio de un c&oacute;digo de barras,</p>
+<p>En consecuencia:</p>
+<ul>
+<li>
+<p>si de la autoliquidaci&oacute;n resulta una cantidad a ingresar, la presentaci&oacute;n y el ingreso del modelo 111 se efectuar&aacute; en cualquier Entidad colaboradora autorizada .</p>
+</li>
+<li>
+<p>Si la autoliquidaci&oacute;n es negativa, el modelo 111 se presentar&aacute;, bien directamente o mediante env&iacute;o por correo certificado, en la Delegaci&oacute;n de la Agencia Tributaria correspondiente al domicilio fiscal del declarante sin necesidad de aportar documentaci&oacute;n adicional</p>
+</li>
+</ul>
+<h3><strong>NORMAS PARA LA PRESENTACI&Oacute;N ELECTR&Oacute;NICA DEL MODELO 111.</strong></h3>
+<p>La presentaci&oacute;n telem&aacute;tica por Internet del modelo 111, cualquiera que sea la periodicidad del mismo y con independencia de que dicha forma de presentaci&oacute;n sea obligatoria u opcional para el obligado tributario, deber&aacute; ajustarse a las condiciones y al procedimiento establecidos al efecto en la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentaci&oacute;n de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria (BOE del 26).</p>
+<h3><strong>PLAZOS DE PRESENTACI&Oacute;N DEL MODELO 111.</strong></h3>
+<p><strong>Autoliquidaci&oacute;n trimestral</strong>: durante los veinte primeros d&iacute;as naturales de los meses de abril, julio, octubre y enero, por las retenciones e ingresos a cuenta que correspondan al trimestre natural inmediato anterior.</p>
+<p><strong>Autoliquidaci&oacute;n mensual </strong>(Grandes empresas y Administraciones p&uacute;blicas con presupuesto anual superior a 6 millones de euros): durante los veinte primeros d&iacute;as naturales del mes siguiente al per&iacute;odo de autoliquidaci&oacute;n mensual que corresponda.</p>
+<p>Los vencimientos de plazo que coincidan con un s&aacute;bado o d&iacute;a inh&aacute;bil se considerar&aacute;n trasladados al primer d&iacute;a h&aacute;bil siguiente.</p>
+<h3><strong>CUMPLIMENTACI&Oacute;N DEL MODELO 111</strong></h3>
+<p><strong>Apartado &ldquo;IDENTIFICACI&Oacute;N&rdquo;</strong></p>
+<p>Introduzca el <abbr title="N&uacute;mero de Identificaci&oacute;n Fiscal" text="NIF">NIF</abbr> del declarante y los apellidos y nombre o bien la raz&oacute;n social de la persona o entidad.</p>
+<p><strong>Apartado &ldquo;DEVENGO&rdquo;</strong></p>
+<p><strong>Ejercicio</strong>: consigne las cuatro cifras del a&ntilde;o natural al que corresponde el per&iacute;odo por el que se efect&uacute;a la autoliquidaci&oacute;n.</p>
+<p><strong>Per&iacute;odo:</strong></p>
+<ul type="a">
+<li>
+<p>Si se trata de autoliquidaci&oacute;n trimestral, consigne:</p>
+<ul class="lista-sin-icono">
+<li>
+<p>1T: 1.er Trimestre</p>
+</li>
+<li>
+<p>2T: 2.&ordm; Trimestre</p>
+</li>
+<li>
+<p>3T: 3.er Trimestre</p>
+</li>
+<li>
+<p>4T: 4.&ordm; Trimestre</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Si se trata de autoliquidaci&oacute;n mensual (Grandes Empresas y Administraciones p&uacute;blicas con presupuesto anual superior a 6 millones de euros), consigne:</p>
+<ul class="enColumna4 lista-sin-icono">
+<li>
+<p>01: enero</p>
+</li>
+<li>
+<p>02: febrero</p>
+</li>
+<li>
+<p>03: marzo</p>
+</li>
+<li>
+<p>04: abril</p>
+</li>
+<li>
+<p>05: mayo</p>
+</li>
+<li>
+<p>06: junio</p>
+</li>
+<li>
+<p>07: julio</p>
+</li>
+<li>
+<p>08: agosto</p>
+</li>
+<li>
+<p>09: septiembre</p>
+</li>
+<li>
+<p>10: octubre</p>
+</li>
+<li>
+<p>11: noviembre</p>
+</li>
+<li>
+<p>12: diciembre</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Apartado &ldquo;LIQUIDACI&Oacute;N&rdquo; </strong></p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><strong>Recuerde:</strong>&nbsp;No deben presentarse modelos de autoliquidaci&oacute;n 111 con todas las casillas del apartado de &ldquo;liquidaci&oacute;n&rdquo; sin cumplimentar.</p>
+</div>
+<p><strong>I y II. Rendimientos del trabajo y rendimientos de actividades econ&oacute;micas. </strong></p>
+<p>Se har&aacute;n constar en cada uno de estos ep&iacute;grafes los datos referentes, respectivamente, a los rendimientos del trabajo y a los rendimientos de actividades econ&oacute;micas que, estando sujetos a retenci&oacute;n o a ingreso a cuenta, hayan sido satisfechos o abonados por el declarante durante el per&iacute;odo objeto de autoliquidaci&oacute;n, consignando por separado los correspondientes a los rendimientos dinerarios y a los rendimientos satisfechos en especie.</p>
+<p><strong>Rendimientos dinerarios. </strong></p>
+<p><strong>Casillas 01 y 07 </strong></p>
+<p><strong>N.&ordm; perceptores</strong>.- N&uacute;mero total de personas f&iacute;sicas y, en su caso, Entidades en r&eacute;gi&not;men de atribuci&oacute;n de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidaci&oacute;n retribuciones o contraprestaciones dinerarias sujetas a retenci&oacute;n a cuenta del IRPF en concepto de rendimientos del trabajo (casilla 01) y de actividades econ&oacute;micas (casilla 07).</p>
+<p><strong>Casillas 02 y 08 </strong></p>
+<p><strong>Importe de las percepciones.</strong>- Suma de las retribuciones o contraprestaciones dinerarias integras sujetas a retenci&oacute;n satisfechas por el declarante en el periodo objeto de autoliquidaci&oacute;n en concepto de rendimientos del trabajo (casilla 02) y de actividades econ&oacute;micas (casilla 08).</p>
+<p><strong>Casillas 03 y 09 </strong></p>
+<p><strong>Importe de las retenciones</strong>.- Importe total de las retenciones correspondientes a las percepciones dinerarias satisfechas por el declarante en el periodo objeto de autoliquidaci&oacute;n en concepto de rendimientos del trabajo (casilla 03) y de actividades econ&oacute;micas (casilla 09).</p>
+<p><strong>Rendimientos en especie. </strong></p>
+<p><strong>Casillas 04 y 10 </strong></p>
+<p><strong>N.&ordm; perceptores</strong>.- N&uacute;mero total de personas f&iacute;sicas y, en su caso, entidades en r&eacute;gimen de atribuci&oacute;n de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidaci&oacute;n retribuciones o contraprestaciones en especie sujetas a ingreso a cuenta del IRPF en concepto de rendimientos del trabajo (casilla 04) y de actividades econ&oacute;micas (casilla 10).</p>
+<p><strong>Casillas 05 y 11 </strong></p>
+<p><strong>Valor percepciones en especie</strong>.- Suma de las retribuciones o contraprestaciones en especie satisfechas en el periodo objeto de liquidaci&oacute;n, valoradas conforme a las reglas establecidas en el art&iacute;culo 43 de la Ley del Impuesto, en concepto de rendimientos del trabajo (casilla 05) y de actividades econ&oacute;micas (casilla 11).</p>
+<p><strong>Casillas 06 y 12 </strong></p>
+<p><strong>Importe de los ingresos a cuenta</strong>.- Importe total de los ingresos a cuenta que corresponda efectuar sobre las percepciones en especie satisfechas por el declarante en el periodo objeto de autoliquidaci&oacute;n en concepto de rendimientos del trabajo (casilla 06) y de actividades econ&oacute;micas (casilla 12).</p>
+<p><strong>III. Premios por la participaci&oacute;n en juegos, concursos, rifas o combinaciones aleatorias. </strong></p>
+<p>Se incluir&aacute;n en este ep&iacute;grafe los datos correspondientes a los premios sujetos a retenci&oacute;n o a ingreso a cuenta a que se refiere el art&iacute;culo 75.2.c) del Reglamento del Impuesto, que hayan sido entregados por el declarante en el periodo de autoliquidaci&oacute;n, salvo que constituyan rendimientos del capital mobiliario, en cuyo caso ser&aacute;n objeto de declaraci&oacute;n e ingreso en el modelo que proceda de los correspondientes a dicha clase de rendimientos.</p>
+<p>En las casillas 13, 14 y 15 se reflejar&aacute;n los datos referentes a los premios dinerarios y en las casillas 16, 17 y 18 los que correspondan a los premios en especie.</p>
+<p><strong>IV. Ganancias patrimoniales derivadas de los aprovechamientos forestales de los vecinos en montes p&uacute;blicos.</strong></p>
+<p>Se incluir&aacute;n en este ep&iacute;grafe los datos correspondientes a las percepciones satisfechas por la entidad declarante a los vecinos en el periodo objeto de autoliquidaci&oacute;n como consecuencia de los aprovechamientos forestales en montes p&uacute;blicos y que constituyan para los perceptores ganancias patrimoniales de las previstas por este concepto en el art&iacute;culo 75.1.d) del Reglamento del Impuesto.</p>
+<p>En las casillas 19, 20 y 21 se reflejar&aacute;n los datos referentes a las percepciones dinerarias y en las casillas 22, 23 y 24 los que, en su caso, correspondan a percepciones en especie.</p>
+<p><strong>V. Contraprestaciones por la cesi&oacute;n de derechos de imagen: ingresos a cuenta previstos en el art&iacute;culo 92.8 de la Ley del Impuesto. </strong></p>
+<p>Se incluir&aacute;n en este ep&iacute;grafe los datos correspondientes a las contraprestaciones sujetas a la obligaci&oacute;n de efectuar el ingreso a cuenta a que se refiere el art&iacute;culo 92.8 de la Ley del Impuesto, que hayan sido satisfechas por el declarante en el periodo al que se refiere la autoliquidaci&oacute;n.</p>
+<p><strong>Casilla 25 </strong></p>
+<p><strong>N.&ordm; perceptores</strong>.- N&uacute;mero total de personas f&iacute;sicas sometidas al r&eacute;gimen especial de imputaci&oacute;n de rentas por la cesi&oacute;n de derechos de imagen establecido en el art&iacute;culo 92 de la Ley del Impuesto, respecto de las cuales se hayan satisfecho las contraprestaciones objeto de autoliquidaci&oacute;n.</p>
+<p><strong>Casilla 26 </strong></p>
+<p><strong>Contraprestaciones satisfechas</strong>.- Suma de contraprestaciones, dinerarias o en especie, satisfechas por el declarante durante el periodo objeto de autoliquidaci&oacute;n a personas o entidades no residentes en territorio espa&ntilde;ol, que est&eacute;n sujetas a la obligaci&oacute;n de efectuar el ingreso a cuenta previsto en el art&iacute;culo 92.8 de la Ley del Impuesto.</p>
+<p><strong>Casilla 27 </strong></p>
+<p><strong>Importe de los ingresos a cuenta</strong>.- Importe total de los ingresos a cuenta que corresponda efectuar por las contraprestaciones a que se refiere la casilla anterior.</p>
+<p><strong>TOTAL LIQUIDACI&Oacute;N. </strong></p>
+<p><strong>Casilla 28 </strong></p>
+<p>Se consignar&aacute; en esta casilla la suma de las retenciones e ingresos a cuenta que, por todos los conceptos, se hayan hecho constar en los ep&iacute;grafes anteriores de este apartado.</p>
+<p><strong>Casilla 29 </strong></p>
+<p>Exclusivamente en el supuesto de autoliquidaci&oacute;n complementaria, se har&aacute; constar en esta casilla el resultado de la autoliquidaci&oacute;n o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y per&iacute;odo.</p>
+<p><strong>Casilla 30 </strong></p>
+<p>Consigne en esta casilla el resultado de efectuar la operaci&oacute;n indicada en el formulario de autoliquidaci&oacute;n. En caso de autoliquidaci&oacute;n complementaria, dicho resultado habr&aacute; de ser siempre una cantidad positiva.</p>
+<p><strong>Apartado &ldquo;INGRESO&rdquo;</strong></p>
+<p>Si el resultado consignado en la casilla 30 es una cantidad a ingresar, su importe se trasladar&aacute; a la clave &ldquo;<strong>I</strong>&rdquo;, marcando adem&aacute;s la casilla correspondiente a la forma de pago. Si se efect&uacute;a el ingreso mediante adeudo en cuenta o domiciliaci&oacute;n bancaria, cumplimente los datos completos de la cuenta de adeudo (C&oacute;digo IBAN)&nbsp;de la Entidad colaboradora o bien, <strong>como novedad en el caso de domiciliaci&oacute;n bancaria, a partir del 1 de febrero de 2024, los de una cuenta abierta en una entidad no colaboradora perteneciente a la Zona &Uacute;nica de Pagos en Euros (Zona SEPA)</strong>; en este &uacute;ltimo caso, el pago habr&aacute; de realizarse recurriendo a la intermediaci&oacute;n en el servicio de una entidad colaboradora en la gesti&oacute;n recaudatoria.</p>
+<p>El procedimiento para efectuar el ingreso de la cantidad resultante de la autoliquidaci&oacute;n ser&aacute; el establecido en la Orden HAP/2194/2013, de 22 de noviembre (art&iacute;culos 4 y 6 a 9), por la que se regulan los procedimientos y las condiciones generales para la presentaci&oacute;n de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria (BOE del 26). <span lang="ES-TRAD">Si la domiciliaci&oacute;n se realiza en una cuenta abierta en una entidad no colaboradora de la Zona SEPA, se ajustar&aacute; a lo dispuesto en el art&iacute;culo 5 bis de la Orden&nbsp;EHA/1658/2009, de 12 de junio.<o:p></o:p></span></p>
+<p><strong>Apartado &ldquo;AUTOLIQUIDACI&Oacute;N NEGATIVA&rdquo;</strong></p>
+<p>Se marcar&aacute; la casilla indicada a estos efectos cuando, a pesar de haber satisfecho en el periodo a que se refiere la autoliquidaci&oacute;n rentas sujetas a retenci&oacute;n o a ingreso a cuenta que deban ser incluidas en el modelo 111, no hubiera procedido la pr&aacute;ctica efectiva de retenci&oacute;n o ingreso a cuenta en virtud de las normas aplicables para la determinaci&oacute;n de su importe, de forma que no proceda ingresar cantidad alguna por este concepto en el Tesoro p&uacute;blico.</p>
+<p>En este caso, si la presentaci&oacute;n se efect&uacute;a mediante papel impreso generado exclusivamente mediante el servicio de impresi&oacute;n desarrollado por la Agencia Tributaria, deber&aacute; efectuarse, de acuerdo con lo dispuesto en el art&iacute;culo 4.5 de la Orden HAP/2194/2013, de 22 de noviembre, ya citada, directamente o mediante env&iacute;o por correo certificado, en la Delegaci&oacute;n o Administraci&oacute;n de la Agencia Estatal de Administraci&oacute;n Tributaria correspondiente al domicilio fiscal del obligado tributario.</p>
+<p>En caso de presentaci&oacute;n por v&iacute;a electr&oacute;nica a trav&eacute;s de internet, el procedimiento ser&aacute; el establecido en el art&iacute;culo 11 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentaci&oacute;n de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria.</p>
+<p><strong>Apartado &ldquo;COMPLEMENTARIA&rdquo;</strong></p>
+<p>Se marcar&aacute; esta casilla cuando esta autoliquidaci&oacute;n sea complementaria de otra u otras autoliquidaciones presentadas anteriormente por el mismo concepto y correspondientes al mismo ejercicio y per&iacute;odo. En tal supuesto, se har&aacute; constar tambi&eacute;n en este apartado el n&uacute;mero identificativo de 13 d&iacute;gitos que figura preimpreso junto al c&oacute;digo de barras de la autoliquidaci&oacute;n anterior. De haberse presentado anteriormente m&aacute;s de una autoliquidaci&oacute;n, se har&aacute; constar el n&uacute;mero identificativo de la &uacute;ltima de ellas.</p>
+<p>En la autoliquidaci&oacute;n complementaria se har&aacute;n constar por sus cuant&iacute;as correctas todos los datos a que se refieren las casillas 01 a 27 del modelo 111, que sustituir&aacute;n por completo a los reflejados en id&eacute;nticas casillas de la autoliquidaci&oacute;n anterior.</p>
+<p>Las autoliquidaciones complementarias deber&aacute;n formularse en el modelo oficial que estuviese vigente en el ejercicio y periodo al que corresponda la autoliquidaci&oacute;n anterior.</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><strong>Importante: &Uacute;nicamente proceder&aacute; la presentaci&oacute;n de autoliquidaci&oacute;n complementaria, de la que necesariamente habr&aacute; de resultar una cantidad a ingresar, cuando </strong>&eacute;sta tenga por objeto regularizar errores u omisiones de otra autoliquidaci&oacute;n anterior que hubieran dado lugar a un resultado inferior al debido.</p>
+<p><strong>La rectificaci&oacute;n por cualquier otra causa de autoliquidaciones presentadas anteriormente no dar&aacute; lugar a la presentaci&oacute;n de autoliquidaciones complementarias</strong>, sin perjuicio del derecho del contribuyente a solicitar de la Administraci&oacute;n tributaria la rectificaci&oacute;n de las mismas cuando considere que han perjudicado de cualquier modo sus intereses leg&iacute;timos o que su presentaci&oacute;n ha dado lugar a la realizaci&oacute;n de ingresos indebidos, de conformidad con lo establecido en los art&iacute;culos 120.3 y 221.4 de la Ley 58/2003, de 17 de diciembre, General Tributaria, siempre que no se haya practicado por la Administraci&oacute;n tributaria liquidaci&oacute;n definitiva o liquidaci&oacute;n provisional por el mismo motivo ni haya transcurrido el plazo de cuatro a&ntilde;os a que se refiere el art&iacute;culo 66 de la citada Ley General Tributaria.</p>
+</div></main>
+<aside class="col-12 col-lg-5 col-print-12">
+					</aside>
+
+			</div> 
+		</div>
+		
+		<!--googleoff: index-->
+		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-06-09">09/junio/2026</time></p></div></div></div></footer><!--googleon: index-->
+
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

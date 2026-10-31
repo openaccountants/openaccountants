@@ -1,0 +1,130 @@
+[
+  {
+    "key": "S7",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10270",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/2025-enactment.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/2025-enactment.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-ordinary.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-ordinary.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S10",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual-victimas-violencia-machista.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-victim.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-victim.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S13",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/tramo-autonomico-deduccion-inversion-vivienda-habitual.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-regional.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-regional.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S19",
+    "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/own-actual-primary-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/initial.pdf",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/initial.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S20",
+    "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9760/2172440.pdf",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/own-actual-primary-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/additional.pdf",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/additional.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S42",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_22-gastos-derivados-arrendamiento-viviendas.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-independent-review/own-source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S80",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familiares-dependientes-discapacidad.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-independent-review/own-source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S81",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/cuotas-satisfechas-seguridad-social-contratacion-hogar.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-independent-review/own-source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S100",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_15-inversiones-rehabilitacion-zonas-rurales.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-independent-review/own-source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-independent-review/sources/AEAT-completion.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-independent-review/sources/AEAT-completion.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S111",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/law-9-1999-original.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/law-9-1999-original.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S112",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/euro-conversion-reg.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/euro-conversion-reg.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S113",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/euro-law-current.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/sources/euro-law-current.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S124",
+    "url": "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction-r2/source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+    "capture_kind": "official browser AX, not HTTP response"
+  },
+  {
+    "key": "S127",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-independent-review/source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  },
+  {
+    "key": "S129",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+    "record": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-independent-review/source-read-ledger.json",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.html",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.reader.txt",
+    "capture_kind": "retained raw and separate reader"
+  }
+]

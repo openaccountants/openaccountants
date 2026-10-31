@@ -1,0 +1,604 @@
+
+
+
+
+
+
+[[ID:Head1]]
+
+    
+    
+    
+    
+	Agència Tributària de les Illes Balears - A.T.I.B. 413
+
+    
+
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+        
+    
+    
+
+    
+    
+    
+    
+[[ID:atib]]
+
+[[ID:modalPDF]]
+
+    
+
+    
+
+   
+    
+    
+
+
+
+[[ID:atibBody]]
+
+
+    
+[[ID:formCuerpo]]
+
+
+
+[[ID:__VIEWSTATE]]
+
+
+
+
+
+	
+[[ID:__VIEWSTATEGENERATOR]]
+
+	
+[[ID:__EVENTVALIDATION]]
+
+
+        
+[[ID:cookies]]
+
+            
+                
+                
+Este portal web utiliza exclusivamente cookies propias con finalidad técnica, imprescindibles para garantizar el correcto funcionamiento y la prestación de los servicios electrónicos disponibles, y no recaba ni cede datos de carácter personal de las personas usuarias sin su conocimiento. Asimismo, puede contener enlaces a sitios web de terceros con políticas de privacidad ajenas a la de la ATIB, cuyo acceso se realiza bajo la responsabilidad de la persona usuaria, que podrá decidir libremente si accede a ellos y acepta sus condiciones.
+
+                
+Consulte la Política de privacidad (Cookies)
+
+                
+            
+            
+                
+[[ID:bAceptarCookies]]
+
+            
+        
+        
+[[ID:global]]
+
+            
+[[ID:header]]
+
+                
+    
+
+
+
+
+    
+[[ID:logo]]
+
+        
+            
+[[ID:cabeceraWeb]]
+
+        
+    
+    
+        
+        
+[[ID:opciones]]
+
+            
+[[ID:idiomas]]
+
+                
+[[ID:cph_header_PageHeader1_lnkCatala]]
+
+Català
+
+                
+            
+
+            
+        
+		
+    
+    
+
+    
+    
+
+[[ID:menu]]
+
+
+[[ID:cph_header_PageMenu1_menu_index]]
+
+        Inicio
+
+
+[[ID:cph_header_PageMenu1_menu_atib]]
+Oficinas y servicios
+
+
+[[ID:cph_header_PageMenu1_menu_ta]]
+
+        Tributos autonómicos
+
+
+[[ID:cph_header_PageMenu1_menu_tl]]
+
+        Tributos locales - Multas
+
+
+
+[[ID:cph_header_PageMenu1_menu_consultas]]
+
+        Consultas y sugerencias
+
+
+[[ID:cph_header_PageMenu1_menu_contacto]]
+
+        Contacto
+
+
+
+    
+        
+[[ID:cph_header_cph_breadcrumbs_breadcrumbs]]
+
+            
+>>
+
+        
+Novedades y comunicados>>
+
+Medidas fiscales en la Ley 4/2026, de 11 de junio,...
+
+    
+
+            
+
+            
+[[ID:content]]
+
+                
+[[ID:main]]
+
+                    
+    
+    
+
+		
+
+           
+[[ID:cph_main_cph_main_lblTitulo]]
+Medidas fiscales en la Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas
+        
+
+		
+[[ID:cph_main_cph_main_lblFecha]]
+Fecha: 13/6/2026
+		
+
+           
+[[ID:cph_main_cph_main_lblTexto]]
+
+La Ley 4/2026, de 11 de junio, de medidas urgentes para acelerar proyectos estratégicos que contribuyan a la transformación económica de las Illes Balears y de otras medidas de simplificación y racionalización administrativas establece, con efectos a partir del 14 de junio de 2026, las siguientes medidas tributarias (disposición final sexagésima séptima):
+
+1. IMPUESTO SOBRE LA RENTA DE LAS PERSONAS FÍSICAS (se modifican los artículos 3 bis.3, 4 quater, 6 ter y 6 quater, y se introduce el artículo 3 sexties del Texto refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto legislativo 1/2014, de 6 de junio).
+
+1.1. Corrección de un error material en la deducción por alquiler de vivienda habitual. 
+
+Se modifica el artículo 3 bis.3 con la finalidad de de eliminar una referencia innecesaria y equívoca a las familias numerosas de categoría especial en el primer párrafo del precepto, dado que dicha referencia ya figuraba correctamente en el segundo párrafo. De este modo, se clarifica la regulación de la deducción autonómica por alquiler de vivienda habitual aplicable a determinados colectivos, entre ellos menores de 30 años, personas con discapacidad, familias numerosas, familias monoparentales y trabajadores autónomos.
+
+La deducción continúa permitiendo deducir el 20% de las cantidades satisfechas por el alquiler, con un máximo de 650 euros anuales, siempre que se cumplan los requisitos generales previstos en la norma. Asimismo, se mantienen los incrementos de los límites de renta en un 20% para familias numerosas y monoparentales y en un 30% para familias numerosas de categoría especial.
+
+1.2. Nueva deducción por ayudas percibidas por las personas afectadas por la talidomida en España durante el período 1950-1985.
+
+A partir del ejercicio fiscal 2023, los contribuyentes que hayan percibido ayudas públicas destinadas a las personas afectadas por la talidomida en España durante el período 1950-1985 y que deban integrar su importe en la base imponible general del IRPF podrán aplicar una deducción en la cuota íntegra autonómica consistente en el importe resultante de aplicar el tipo medio de gravamen al importe de la ayuda pública integrada en la base liquidable.
+
+1.3. Nueva deducción destinada a fomentar el alquiler asequible y estable. 
+
+Se establece una deducción autonómica equivalente al 50% del rendimiento neto obtenido por el arrendador, con un límite máximo de 800 euros anuales por vivienda y de 2.000 euros por contribuyente, en aquellos casos en que se produzca la renovación temporal de contratos de alquiler o la formalización de nuevos contratos antes de que hayan transcurrido seis meses desde la finalización del anterior, siempre que la renta exigida al arrendatario no se incremente o únicamente aumente de acuerdo con el índice legal de actualización de alquileres.
+
+Con esta medida se pretende incrementar la oferta de viviendas disponibles en régimen de alquiler, aumentar el número de viviendas incorporadas al programa de alquiler seguro de la Comunidad Autónoma y contribuir a moderar los precios del alquiler. Además, se introducen límites generales de renta para la aplicación de las deducciones reguladas en este artículo, exigiéndose que la base imponible total del contribuyente no supere los 52.800 euros en tributación individual ni los 84.480 euros en tributación conjunta.
+
+1.4. Incremento de las deducciones autonómicas por nacimiento y adopción de hijos. 
+
+Se modifican los artículos 6 ter y 6 quater del texto refundido con la finalidad de incrementar las cuantías de las deducciones aplicables por nacimientos y adopciones de hijos que den derecho a la aplicación del mínimo por descendientes.
+
+Las nuevas cuantías de la deducción pasan a ser las siguientes:
+
+- Primer hijo o hija: de 800 a 900 euros. 
+- Segundo hijo o hija: de 1.000 a 1.200 euros. 
+- Tercer hijo o hija: de 1.200 a 1.500 euros. 
+- Cuarto hijo o hija y siguientes: de 1.400 a 1.800 euros.
+
+ Información: Deducción autonómica del IRPF por nacimiento (abonos y reintegros).
+2. IMPUESTO SOBRE TRANSMISIONES PATRIMONIALES Y ACTOS JURÍDICOS DOCUMENTADOS: Transmisiones patrimoniale onerosas (se modifica el artículo 10 y se añade el artículo 14 septies al Decreto legislativo 1/2014, de 6 de junio).
+
+En el ámbito del impuesto sobre transmisiones patrimoniales onerosas (TPO), la reforma introduce modificaciones dirigidas principalmente a facilitar el acceso a la vivienda habitual y adaptar los beneficios fiscales al incremento de los precios del mercado inmobiliario balear.
+
+2.1. Modificación del tipo reducido aplicable a la adquisición de vivienda habitual por familias numerosas y familias monoparentales.
+
+Hasta ahora, la aplicación de este beneficio fiscal estaba condicionada a que el valor de la vivienda no superase determinados límites fijos. Con la reforma, estos límites pasan a vincularse al importe que se determine mediante orden del consejero competente en materia de hacienda, incrementado en un 15%, permitiendo así adaptar automáticamente estos beneficios a la evolución del mercado inmobiliario en cada isla.
+
+En estos casos, el tipo reducido del 2% se aplicará sobre los primeros 270.151,20 euros de la base imponible, tributando el exceso al tipo general del 8%. No obstante, para las familias monoparentales de categoría general se mantiene la limitación específica respecto del valor máximo de la vivienda.
+
+2.2. Bonificación autonómica del 50% de la cuota tributaria aplicable a las transmisiones onerosas de viviendas calificadas como viviendas de precio limitado (HPL), definidas en el artículo 2 de la Ley 3/2024, de 3 de mayo, de medidas urgentes en materia de vivienda. Esta medida tiene por finalidad fomentar el acceso a viviendas asequibles y potenciar el nuevo modelo autonómico de vivienda protegida.
+
+3. IMPUESTO SOBRE TRANSMISIONES PATRIMONIALES Y ACTOS JURÍDICOS DOCUMENTADOS: Actos jurídicos documentados (se modifica el artículo 17 y se añaden los artículos 19 quater y 19 quinquies al Decreto legislativo 1/2014, de 6 de junio).
+
+La reforma extiende diversos beneficios fiscales al ámbito del impuesto sobre actos jurídicos documentados (AJD), especialmente en relación con la adquisición de vivienda nueva.
+
+3.1. Nuevos tipos reducidos aplicables a las primeras copias de escrituras y actas notariales que documenten la adquisición de la primera vivienda habitual.
+
+Con carácter general, se establece un tipo reducido del 1% para aquellas adquisiciones en las que el valor de la vivienda no supere los 270.151,20 euros y el adquirente adquiera, en un porcentaje igual o superior al 50%, la plena propiedad o el derecho de uso o disfrute de la vivienda y, además, no sea titular o cotitular en un porcentaje igual o superior al 50% de ningún otro derecho de plena propiedad o de uso o disfrute sobre otra vivienda.
+
+Asimismo, se establece un tipo superreducido del 0,5% para determinados colectivos (jóvenes menores de 36 años, personas con discapacidad, familias numerosas y familias monoparentales). En el caso de las familias numerosas y monoparentales, se prevé que el límite máximo del valor de la vivienda no sea superior al resultado de incrementar en un 15% el importe que, en el ámbito territorial correspondiente, establezca la orden a que se refiere la disposición adicional quinta del Decreto Legislativo 1/2014, de 6 de junio.No obstante, en el caso de familias monoparentales de categoría general, el valor de la vivienda no podrá superar los 270.151,20 euros, sin perjuicio del importe que resulte de la aplicación de la citada orden..
+
+El tipo del 0,5% se aplicará sobre los primeros 270.151,20 euros, tributando el exceso al tipo general del 1,5%.
+
+3.2. Bonificación autonómica del 100% de la cuota del impuesto sobre actos jurídicos documentados para menores de 30 años y personas con discapacidad igual o superior al 33% que adquieran su primera vivienda habitual.
+
+Para beneficiarse de esta bonificación, el adquirente deberá haber tenido su residencia habitual en las Illes Balears durante, al menos, los tres años inmediatamente anteriores a la fecha de adquisición de la vivienda. Asimismo, la vivienda adquirida deberá constituir la primera vivienda respecto de la cual el contribuyente adquiera, en un porcentaje igual o superior al 50%, la plena propiedad, sin que pueda ser titular o cotitular, en este mismo porcentaje, de ningún otro derecho de plena propiedad o de uso y disfrute sobre otra vivienda.
+
+Igualmente, la vivienda adquirida deberá alcanzar la condición de vivienda habitual conforme a la definición y requisitos establecidos en cada momento por la normativa reguladora del IRPF. Además, el valor real de la vivienda, o el valor declarado cuando éste sea superior, no podrá exceder de 270.151,20 euros.
+
+
+Por otra parte, la base imponible total del contribuyente en el IRPF correspondiente al último período impositivo cuyo plazo de declaración haya finalizado no podrá superar los 52.800 euros en tributación individual ni los 84.480 euros en tributación conjunta.
+
+
+Finalmente, se exige que el adquirente haya formalizado con una entidad financiera un préstamo con garantía hipotecaria por un importe igual o superior al 60% del valor de tasación de la vivienda.
+
+Esta bonificación no exime de la obligación de presentar la correspondiente autoliquidación del impuesto.
+
+3.3. Bonificación autonómica del 50% de la cuota aplicable a las escrituras notariales que documenten la adquisición de viviendas de precio tasado, reguladas en el artículo 1.4 de la Ley 5/2008, de 14 de mayo, así como de viviendas de precio limitado (HPL) a que se refiere el artículo 2 de la Ley 3/2024, de 3 de mayo, de medidas urgentes en materia de vivienda. sta medida resulta especialmente relevante porque la primera transmisión de este tipo de viviendas está sujeta a IVA y AJD, y no a TPO, permitiendo trasladar también al ámbito del AJD los incentivos fiscales dirigidos a fomentar el acceso a la vivienda asequible.
+
+ Infomación: Impuesto sobre transmsiones patrimoniales y actos jurídicos documentados.
+
+NOTA IMPORTANTE: Se modifica la disposición adicional quinta del Decreto legislativo 1/2014, de 6 de junio. Esta modificación tiene una incidencia relevante en la aplicación de los tipos reducidos, bonificaciones y reducciones previstas en el impuesto sobre transmisiones patrimoniales y actos jurídicos documentados y en el impuesto sobre sucesiones y donaciones.
+
+Por una parte, se mantiene la habilitación al consejero competente en materia de hacienda para incrementar el límite general de 270.151,20 euros hasta un máximo del 40%, pudiendo establecer cuantías diferenciadas por islas, municipios o zonas geográficas en función de la evolución del mercado inmobiliario.
+
+Por otra parte, con la finalidad de evitar que el incremento del precio de la vivienda reduzca el alcance efectivo de los beneficios fiscales existentes, se fija un nuevo umbral mínimo obligatorio de 331.859,70 euros, equivalente al valor de una vivienda de precio limitado tipo 2 de 90 metros cuadrados útiles y calificación energética A, a 1 de enero de 2026.
+
+El umbral de 331.859,70 euros es aplicable a las viviendas situadas en Mallorca y Menorca. En el caso de las viviendas situadas en Ibiza y Formentera, resulta aplicable el umbral de 378.212 euros, de acuerdo con lo previsto en la  Orden 5/2026, del consejero de Economía, Hacienda e Innovación. de 16 de marzo, por la que se desarrolla la disposición adicional quinta del Texto refundido de las disposiciones legales de la Comunidad Autónoma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por el Decreto Legislativo 1/2014, de 6 de junio.
+
+		
+
+
+
+
+                
+                
+[[ID:rcolumn]]
+
+                    
+    
+    
+
+
+[[ID:banners]]
+
+            
+                
+        
+            
+[[ID:cph_rcolumn_Banners1_bannerCitaPrevia]]
+
+                
+    
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_turistico]]
+
+        
+    
+
+
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_bannerDenuncias]]
+
+        
+    
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_bannerServicioMensajes]]
+
+                
+    
+
+
+    
+        
+        
+            
+[[ID:cph_rcolumn_Banners1_bannerCID]]
+
+                
+    
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_dudas]]
+
+                
+    
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_comunicacion]]
+
+                
+    
+                
+                
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_embargos]]
+
+        
+    
+    
+        
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_m600]]
+
+        
+    
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_m620]]
+
+        
+    
+
+
+    
+        
+            
+[[ID:cph_rcolumn_Banners1_banner_subasta]]
+
+                
+    
+
+    
+         
+            
+[[ID:cph_rcolumn_Banners1_banner_ivtm]]
+
+               
+    
+
+
+    
+
+                
+                
+    
+    
+
+                
+            
+
+            
+[[ID:footer]]
+
+                
+    
+
+    
+Información ATIB
+
+    
+    
+
+[[ID:cph_footer_ctl00_A2]]
+
+        Naturaleza, objetivos y funciones
+
+
+[[ID:cph_footer_ctl00_A6]]
+
+        Normativa reguladora
+
+
+[[ID:cph_footer_ctl00_A3]]
+
+        Órganos y estructura
+
+
+
+
+[[ID:cph_footer_ctl00_A8]]
+
+        Carta marco de servicios
+
+
+[[ID:cph_footer_ctl00_lnkCartaDerechosContribuyente]]
+
+        Carta de derechos de los contribuyentes
+
+
+[[ID:cph_footer_ctl00_recursosHumanos]]
+
+        Recursos humanos
+
+
+
+
+
+    
+
+        Utilidades
+
+
+[[ID:cph_footer_ctl00_A4]]
+
+        Portal de transparencia
+
+
+[[ID:cph_footer_ctl00_A24]]
+
+        Perfil del contratante
+
+
+[[ID:cph_footer_ctl00_A26]]
+
+        Manual de identidad corporativa
+
+
+[[ID:cph_footer_ctl00_A5]]
+
+        Registro electrónico de documentos
+
+
+[[ID:cph_footer_ctl00_A9]]
+
+        Aplicación móvil ATIB (App ATIB)
+
+    
+
+
+    
+
+        Enlaces de interés
+
+   
+
+
+[[ID:cph_footer_ctl00_A19]]
+
+        Junta Superior de Hacienda
+    
+
+[[ID:cph_footer_ctl00_A7]]
+
+        Consejo Asesor Fiscal
+
+    
+ 
+    
+     
+
+[[ID:cph_footer_ctl00_A1]]
+
+        Agencia Estatal de Administración Tributaria
+
+
+[[ID:cph_footer_ctl00_A10]]
+
+        Fiscalidad autonómica y local
+
+
+[[ID:cph_footer_ctl00_A25]]
+
+        Instituciones y organismos
+
+
+
+
+
+            
+            
+[[ID:footer2]]
+
+                
+[[ID:A1]]
+Aviso legal|
+                    
+[[ID:A7]]
+Política de privacidad|                 
+                    
+[[ID:A2]]
+Accesibilidad|
+                    
+[[ID:A3]]
+Versión monocromática | 
+                    
+[[ID:A4]]
+Versión normal 
+                
+                
+[[ID:txtcopyright]]
+
+                    © Agència Tributària de les Illes Balears
+                    
+                        
+[[ID:conselleria]]
+
+                           Consejería de Economía, Hacienda e Innovación
+                        
+                    
+                    
+                        
+[[ID:govern]]
+Gobierno de las Illes Balears
+                        
+                    
+
+                
+            
+        
+
+        
+
+
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+    
+
+

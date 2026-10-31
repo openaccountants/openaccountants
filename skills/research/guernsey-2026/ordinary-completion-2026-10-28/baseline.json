@@ -1,0 +1,47 @@
+{
+  "published_head": "6ae8c8a270ef09b1e024575a241c57ea816a5c06",
+  "country_complete": false,
+  "issue_397_must_remain_open": true,
+  "files": [
+    {
+      "path": "skills/international/guernsey/gg-uk-treaty-employment-and-relief.md",
+      "sha256": "d5982c3b7040a0e2541778ee49187e81d00d3773420a0d8c5c384967fcfbb662"
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "sha256": "cf17eff62e9e284603e06ff6effd07371b69653b442f1b7db3f0f0187ff155d8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-formation.md",
+      "sha256": "163ad7d2b693b3287e9a208f58c59a9ad4b481acf3048fee7f3e604f5def1007"
+    },
+    {
+      "path": "skills/international/guernsey/gg-secondary-pensions.md",
+      "sha256": "757f38c5ba60ff5f8fcae3536fb930a1cdd5f0ce66c680f0b70e8111a65db8a2"
+    },
+    {
+      "path": "skills/international/guernsey/gg-gst-transition.md",
+      "sha256": "1611f398bb155f265e5998ed808be7a6a78ab4be3f546a1f75e0a40053e5f33d"
+    },
+    {
+      "path": "skills/international/guernsey/README.md",
+      "sha256": "d808b1b33df34d63460217b207f681417d9c27e03d2d8d62287cb7917e981dd8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "sha256": "130728de1cbf2ca27b91ea2ed7e6c2410b20c9149ea6e653f85ae38963da1d5f"
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "sha256": "e77c522e1e277e16134a505f7576831a2432afd189b2f54f62b33e903daadfd8"
+    },
+    {
+      "path": "skills/international/guernsey/gg-property-document-duty.md",
+      "sha256": "f40b6e738ee039ade43cfc7f72f913af9bb1989d002360144bcfcc5406a5513f"
+    },
+    {
+      "path": "skills/international/guernsey/gg-company-accounts-and-reporting.md",
+      "sha256": "f181d56e7efa895f16a6508785764c1a5ff7fa5f927729f06087a686320177c4"
+    }
+  ]
+}

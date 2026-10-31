@@ -1,0 +1,263 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por adquisición de vehículos nuevos pertenecientes a las categorías incluidas en la Orden 5/2020,...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunitat Valenciana
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por adquisición de vehículos nuevos pertenecientes a las categorías incluidas en la Orden 5/2020, de 8 de junio 
+
+Normativa: Art. 4.Uno.y), Cuatro y Cinco y disposición adicional decimosexta Ley 13/1997, de 23 de diciembre, por la que se regula el tramo autonómico del Impuesto sobre la Renta de las Personas Físicas y restantes tributos cedidos, de la Comunitat Valenciana
+
+Cuantía de la deducción
+
+El 10 por 100 de las cantidades destinadas por el contribuyente durante el periodo impositivo a la adquisición de vehículos nuevos pertenecientes a las categorías incluidas en la Orden 5/2020, de 8 de junio, de la Consellería de Política Territorial, Obras Públicas y Movilidad, por la cual se aprueban las bases reguladoras para el otorgamiento de subvenciones para la adquisición o electrificación de bicicletas urbanas y vehículos eléctricos de movilidad personal
+
+Requisitos para la aplicación de la deducción
+
+Ha de tratarse de vehículos nuevos pertenecientes a alguna de las siguientes categorías incluidas en la Orden 5/2020, de 8 de junio, de la Consellería de Política Territorial, Obras Públicas y Movilidad, por la cual se aprueban las bases reguladoras para el otorgamiento de subvenciones para la adquisición o electrificación de bicicletas urbanas y vehículos eléctricos de movilidad personal:
+
+Bicicletas convencionales –no electrificadas. Las bicicletas objeto de ayuda habrán de tener el carácter de urbano.
+
+Bicicletas eléctricas.
+
+Kits de electrificación de bicicletas urbanas.
+
+Vehículos de Movilidad Personal (VMP).
+
+La deducción solo podrán aplicarla los contribuyentes cuya suma de la base liquidable general y de la base liquidable del ahorro, casillas [0500] y [0510] de la declaración, no supere las siguientes cantidades:
+
+- 30.000 euros en declaración individual.
+
+- 47.000 euros en declaración conjunta.
+
+Base de deducción
+
+La base de deducción son las cantidades destinadas a la adquisición del vehículo.
+
+La aplicación de la deducción queda condicionada a que la entrega de los importes dinerarios derivada del acto o negocio jurídico que dé derecho a su aplicación se realice mediante tarjeta de crédito o débito, transferencia bancaria, cheque nominativo o ingreso en cuentas en entidades de crédito.
+
+Por período impositivo cada contribuyente podrá deducirse las cantidades destinadas a la adquisición de un único vehículo.
+
+Solo podrán aplicar la deducción los contribuyentes que figuren en la factura de compra del vehículo
+
+Base máxima de deducción
+
+La base máxima de la deducción estará constituida por el importe máximo subvencionable para cada tipo de vehículo, de acuerdo con la mencionada Orden 5/2020, de 8 de junio, incrementado en un 10 por 100, del que se excluirá la parte de la adquisición financiada con subvenciones o ayudas públicas.
+
+A efectos de determinar la cuantía máxima deducible, el importe de las ayudas públicas y subvenciones debe descontarse del importe total abonado por el contribuyente y el resultado de esta operación no podrá superar importe máximo subvencionable para cada tipo de vehículo, de acuerdo con la mencionada Orden 5/2020, de 8 de junio.
+
+De acuerdo con la citada Orden la tipología, requisitos y bases máximas de deducción serán las que se indican en el siguiente cuadro:
+
+Tipología
+Requisitos
+Base máxima de deducción
+
+Bicicletas convencionales
+Con carácter de urbano
+550€ o 770€ en el caso de bicicletas familiares con elemento de carga para transporte infantil.
+
+Bicicletas eléctricas
+
+Bicicleta urbana, con asistencia al pedaleo, y equipamiento estándar.
+
+Potencia del motor eléctrico inferior o igual a 250 W.
+
+Autonomía aproximada 50 km.
+
+Batería de ion litio, de 36 V y capacidad mínima de 9 A.h.
+
+La alimentación debe cortarse cuando la bicicleta alcance 25 km/ hora, o bien cuando la persona deja de pedalear.
+
+Cumplimiento de la norma UNE-EN 15194:2018. Ciclos con Asistencia Eléctrica. Bicicletas EPAC.
+
+1.540€
+
+Kits de electrificación de bicicletas urbanas
+Cumplirán las limitaciones señaladas para las bicicletas eléctricas.
+660€
+
+Vehículos de Movilidad Personal (VMP)
+
+Velocidad máxima 25 km/hora
+
+Autonomía mínima 30 km.
+
+Batería de ion litio, de capacidad mínima de 7,8 A.h
+
+495€
+
+Atención: téngase en cuenta que la deducción será aplicable a vehículos que se relacionan en la Orden 5/2020, de 8 de junio, aunque no hubieran tenido derecho a obtener ayudas por exceder su precio de compra de los importes máximos subvencionables previstos en la citada orden, si bien estos importes sirven de referencia para el límite máximo de base de la deducción.
+
+En el supuesto de que exista más de un contribuyente con derecho a aplicar la deducción sobre un mismo vehículo, la base máxima de la deducción debería prorratearse entre ellos.
+
+La base máxima de la deducción a aplicar en la declaración conjunta será idéntica que en tributación individual, sin que proceda su elevación o multiplicación en función del número de miembros de la unidad familiar. Esta base máxima es por contribuyente.
+
+Ejemplos
+
+Matrimonio formado por don M.T y doña R.V, en el que durante el ejercicio cada cónyuge adquirió una bicicleta eléctrica por un importe de 1.600 euros.
+
+De acuerdo con la Orden 5/2020, de 8 de junio, el precio de las bicicletas eléctricas no podrá ser superior a 1.400 €, IVA incluido, incrementado en un 10 por 100, esto es, 1.540 euros (importe máximo deducible).
+
+Por tanto, en la declaración conjunta el importe de la deducción aplicable será 10 por 100 de los importes máximos deducibles. Esto es 10% s/ (1.540 + 1.540) = 308 euros
+
+Nota: la única restricción que se establece es que en el mismo periodo impositivo cada contribuyente solo podrá deducirse las cantidades destinadas a la adquisición de un único vehículo. Aquí existen dos contribuyentes y la adquisición por cada uno de dos bicicletas eléctricas por lo que corresponde el 10% del importe máximo deducible (1.540 euros) por cada una de las bicicletas adquiridas.
+
+El mismo matrimonio que en el ejemplo anterior: si don M.T adquiere una bicicleta eléctrica por un importe de 1.600 euros y, doña R.V adquiere una bicicleta convencional por 700 euros. Don M.T recibe una ayuda pública para la adquisición de la bicicleta eléctrica por un importe de 200 euros.
+
+De acuerdo con la Orden 5/2020, de 8 de junio, el precio de las bicicletas eléctricas no podrá ser superior a 1400 euros, IVA incluido y el de las bicicletas convencionales (no eléctricas no podrá ser superior a 500 euros, IVA incluido, o 700 euros en el caso de bicicletas familiares con elemento de carga para transporte infantil.
+
+La base máxima será este importe máximo incrementado en un 10 por 100. Por tanto:
+
+Bicicletas eléctricas: (1.400 + 10% s/1.400) = 1.540
+
+Bicicletas convencionales: (500 + 10% s/500 = 550
+
+Por tanto, en la declaración conjunta el importe de la deducción aplicable será del 10 por 100 de las bases máximas.
+
+Esto es, 10% s/(1.540 - 200 ayuda) = 134 euros.
+
+10% s/550 = 55 euros.
+
+Total importe de la deducción: 134 + 55 = 189.
+
+El mismo matrimonio que en los ejemplos anteriores: si don M.T adquiere una bicicleta eléctrica por un importe de 1.200 euros y, doña R.V adquiere una bicicleta convencional por un importe de 350 euros.
+
+Como los importes satisfechos para la adquisición de las bicicletas son inferiores al precio máximo subvencionable que fija la Orden 5/2020, de 8 de junio (1.400 euros para las bicicletas eléctricas y 500 euros para las bicicletas convencional) incrementado en un 10 por 100 (esto es, 1.540 euros para bicicletas eléctricas y 550 euros para las bicicletas convencional) se tomarán los importe satisfechos.
+
+Por tanto, en la declaración conjunta podrá consignarse una deducción del 10 por 100 de los importes satisfechos para la adquisición de cada bicicleta. Esto es, 10% s/(1.200 + 350) = 155 euros
+
+Límite de la deducción según base liquidable
+
+El importe máximo de la deducción que resulte conforme a lo indicado en los apartados anteriores solo será aplicable por los contribuyentes cuya suma de la base liquidable general y de la base liqui­dable del ahorro sea inferior a 27.000 euros, en tributación individual, o inferior a 44.000 euros, en tributación conjunta.
+
+Cuando la suma de la base liquidable general y de la base liquidable del ahorro del contribuyente esté comprendida entre 27.000 y 30.000 euros, en tributación individual, o entre 44.000 y 47.000 euros, en tributación conjunta, los importes y límites de la deducción serán los siguientes:
+
+En tributación individual, el resultado de multiplicar el importe o límite máximo de la deducción por un porcentaje obtenido de la aplicación de la siguiente fórmula:
+
+100 × (1 – el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 27.000)
+
+En tributación conjunta, el resultado de multiplicar el importe o límite máximo de la deducción por un porcentaje obtenido de la aplicación de la siguiente fórmula:
+
+100 × (1 – el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 44.000)
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 18/agosto/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

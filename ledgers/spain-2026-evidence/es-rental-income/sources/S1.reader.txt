@@ -1,0 +1,213 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Concepto de rendimientos del capital inmobiliario
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 4. Rendimientos del capital inmobiliario
+
+Rendimientos del capital inmobiliario
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Concepto de rendimientos del capital inmobiliario
+
+Normativa: Art. 22.1 Ley IRPF 
+
+Tienen la consideración de rendimientos íntegros de capital inmobiliario los que deriven del arrendamiento o de la constitución o cesión de derechos o facultades de uso o disfrute sobre bienes inmuebles rústicos y urbanos o de derechos reales que recaigan sobre ellos, cuya titularidad corresponda al contribuyente y no se hallen afectos a actividades económicas realizadas por el mismo.
+
+Son derechos reales de uso o disfrute sobre el inmueble, entre otros, el usufructo, el derecho de uso y el de habitación, el derecho real de aprovechamiento por turno de bienes inmuebles, el derecho de superficie, servidumbres, censos y censo enfitéutico.
+
+La titularidad, plena o compartida, del derecho de propiedad o de derechos reales de disfrute sobre bienes inmuebles que no estén arrendados ni cedidos a terceros, ni tampoco estén afectos a actividades económicas, no genera rendimientos del capital inmobiliario, sino que da lugar a la aplicación del régimen especial de imputación de rentas inmobiliarias, con excepción de la vivienda habitual, los solares no edificados y los inmuebles de naturaleza rústica.
+
+Véanse al respecto, dentro del Capítulo 10, el epígrafe "Régimen de Imputación de rentas inmobiliarias", y los artículos 6.2.e) y 85 de la Ley del IRPF.
+
+Otras precisiones en relación con el concepto de rendimientos del capital inmobiliario
+
+1. Arrendamiento de inmueble como rendimiento del capital inmobiliario
+
+Normativa: Art. 27.2 Ley IRPF
+
+Los rendimientos derivados del arrendamiento de bienes inmuebles tienen la consideración de rendimientos del capital inmobiliario, salvo que el arrendamiento se realice como actividad económica.
+
+A estos efectos, se entiende que el arrendamiento de bienes inmuebles se realiza como actividad económica únicamente cuando para la ordenación de esta se utilice, al menos, una persona empleada con contrato laboral y a jornada completa.
+
+Para que los rendimientos derivados del arrendamiento se califiquen como rendimientos de capital inmobiliario, el alquiler se tiene que limitar a la mera puesta a disposición de un inmueble durante periodos de tiempo sin que se presten servicios propios de la industria hotelera (tales como restaurante, limpieza, lavado de ropa y otros análogos), ni se cumplan los requisitos previstos en el artículo 27.2 de la Ley del IRPF.
+
+En consecuencia, tendrá la consideración de rendimiento de actividades económicas si se da cualquiera de las siguientes circunstancias:
+
+Si el arrendador utiliza, al menos, una persona empleada con contrato laboral y a jornada completa en la gestión de la actividad.
+
+Este requisito sólo se entenderá cumplido si dicho contrato es calificado como laboral por la normativa laboral vigente y es a jornada completa. No obstante, en cualquier caso, dicho requisito implica que el arrendador utilice, al menos, una persona empleada con contrato laboral y a jornada completa en la gestión de la actividad, sin que pueda entenderse cumplido por las tareas de gestión realizadas por él mismo.
+
+Si el arrendamiento no se limita a la mera puesta a disposición del inmueble durante periodos de tiempo, sino que se complementa con la prestación de servicios propios de la industria hotelera.
+
+2. Subarrendamiento
+
+Normativa: Art. 25.4.c) Ley IRPF
+
+En el supuesto de subarrendamientos, las cantidades percibidas por el subarrendador se consideran rendimientos del capital mobiliario.
+
+Sin embargo, la participación del propietario o usufructuario del inmueble en el precio del subarriendo tiene la consideración de rendimientos del capital inmobiliario, sin que proceda aplicar sobre el rendimiento neto la reducción por arrendamiento de bienes inmuebles destinados a vivienda, establecida en el artículo 23.2 de la Ley del IRPF, que más adelante se comenta.
+
+3. Arrendamiento de negocios o minas
+
+Normativa: Art. 25.4.c) Ley IRPF
+
+Las cantidades percibidas por arrendamientos de negocios o minas tienen la consideración fiscal de rendimientos del capital mobiliario.
+
+Sin embargo, si el arrendamiento únicamente es de un local de negocio, los rendimientos obtenidos deben calificarse como del capital inmobiliario y cuantificarse aplicando las reglas que se comentan en este Capítulo.
+
+Debe distinguirse entre arrendamiento de un local de negocio y el arrendamiento de negocio: si el objeto del contrato de arrendamiento no son solo los bienes muebles e inmuebles, sino también una unidad económica con entidad propia susceptible de ser inmediatamente explotada, o pendiente para serlo de meras formalidades administrativas, el rendimiento percibido se computará entre los procedentes del capital mobiliario; si el objeto del arrendamiento es únicamente el local de negocio, el rendimiento se considerará procedente del capital inmobiliario.
+
+4. Indemnización por resolución anticipada del contrato de arrendamiento
+
+La indemnización satisfecha como consecuencia de la resolución anticipada del contrato de arrendamiento tiene para el propietario-arrendador la consideración de mejora y no la de gasto deducible para la determinación del rendimiento neto del capital inmobiliario. Para el arrendatario que la percibe constituye una ganancia patrimonial cuyo período de generación será el que corresponda en función de la antigüedad del contrato de arrendamiento.
+
+Rescisión anticipada de contrato
+Arrendador
+Arrendatario
+
+Cuadro resumen: tratamiento de la indemnización por resolución anticipada del contrato
+
+Voluntad del arrendador
+Indemnización satisfecha: Mejora
+Indemnización percibida: Ganancia patrimonial
+
+Voluntad del arrendatario
+Indemnización percibida: Rendimiento de capital inmobiliario
+Indemnización satisfecha: Pérdida patrimonial
+
+5. Inmueble con uso o destino simultáneo en el mismo período (arrendado y a disposición de sus titulares)
+
+Cuando un inmueble sea objeto en el mismo período impositivo de utilizaciones sucesivas o simultáneas diferentes, es decir, arrendado durante parte del año y a disposición de su titular el resto, la renta derivada del arrendamiento constituye rendimiento del capital inmobiliario y la correspondiente al período no arrendado o a la parte no arrendada tiene la consideración de renta imputada por la titularidad del inmueble , siempre que este no se convierta en la vivienda habitual del contribuyente.
+
+La imputación de rentas por los inmuebles que hayan estado durante el ejercicio, total o parcialmente, a disposición de sus propietarios o usufructuarios se comenta en el Capítulo 10.
+
+El importe de los rendimientos y de la renta imputada se determinará en proporción al número de días que se hayan encontrado arrendados o sin arrendar, respectivamente, los inmuebles dentro del ejercicio.
+
+Las rentas procedentes de bienes inmuebles, que no se encuentran arrendados ni subarrendados, pero que están destinados a serlo (inmuebles en expectativa de alquiler), tributan como rentas imputadas y no cabe deducir gastos correspondientes a ese periodo, en la medida en que durante él no se obtienen rendimientos de capital inmobiliario. Criterio interpretativo fijado por el Tribunal Supremo en su Sentencia núm. 270/2021, de 25 de febrero (ROJ: STS 910/2021).
+
+6. El arrendamiento de elementos comunes de un edificio
+
+El arrendamiento de elementos comunes de un edificio como, por ejemplo, parte de la fachada o de la cubierta, por la comunidad de propietarios da lugar a rendimientos del capital inmobiliario que se atribuirán a los copropietarios según su participación en la comunidad.
+
+El régimen de atribución de rentas obtenidas por determinadas entidades, incluidas las comunidades de propietarios, se comenta en el Capítulo 10.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

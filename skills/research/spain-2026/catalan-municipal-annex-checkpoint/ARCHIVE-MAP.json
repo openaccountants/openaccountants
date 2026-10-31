@@ -1,0 +1,1344 @@
+{
+  "baseline_head": "444c01503bce25a3e4fb39918b21a87e38af2983",
+  "verified_manifests": [
+    {
+      "role": "annex-source",
+      "report": "spain-Catalan-municipal-annex-source/report.md",
+      "report_sha256": "7d0261f37493356c578cff3df574dfdbb4d8ed264e6da98ad6f979bceeca40c3",
+      "manifest": "spain-Catalan-municipal-annex-source/artifact-manifest.json",
+      "manifest_sha256": "df29d0f026a29b0bc98b7bcdf428880c6e48ffa2bba6a178ebd297238f05dcb1",
+      "members_verified": 37
+    },
+    {
+      "role": "annex-delta",
+      "report": "spain-Catalan-municipal-annex-independent-review/report.md",
+      "report_sha256": "34c7034229c8c04e92cc79e75d9346169e01a7fb6e52860fd985116b78af7697",
+      "manifest": "spain-Catalan-municipal-annex-independent-review/artifact-manifest.json",
+      "manifest_sha256": "56e8bbbb3d1ca456a1700507000138f766b3fdefb8208beff9f21492d263b06b",
+      "members_verified": 81
+    }
+  ],
+  "scope": "Lossless bounded annex acquisition/read and exact independent delta review; complete acquisition and mechanical602-row extraction are distinct from selected legal reading. Other precise ordinary gaps remain.",
+  "files": [
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional-annex-rows.json",
+      "original_sha256": "6de71751769662154f231c1eb127b5c66cdd64a65eebc59d27599e9e4560f633",
+      "original_bytes": 765,
+      "stored_path": "archive/6d/6de71751769662154f231c1eb127b5c66cdd64a65eebc59d27599e9e4560f633.gz",
+      "stored_bytes": 342,
+      "stored_sha256": "23fa2bf40a5d6891cc3ff8f1d06570a6a1614476424dc508e5cedf40beaa35d4"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional-document.json",
+      "original_sha256": "0eec7d6e5e6b9fd7adbafb84a6a29a56d3b8bda33175d3bdc3ca1ab533c25445",
+      "original_bytes": 6711,
+      "stored_path": "archive/0e/0eec7d6e5e6b9fd7adbafb84a6a29a56d3b8bda33175d3bdc3ca1ab533c25445.gz",
+      "stored_bytes": 2117,
+      "stored_sha256": "ae375e393f1498a50ab263417b9710fbaa23e49f99d5866fd7b46f6cccd9b7e2"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional-locator-excerpts.json",
+      "original_sha256": "308ed3f23ddac648aed378d9feb29920612514a763817c87a30e8b0a26f2c2b8",
+      "original_bytes": 2190,
+      "stored_path": "archive/30/308ed3f23ddac648aed378d9feb29920612514a763817c87a30e8b0a26f2c2b8.gz",
+      "stored_bytes": 618,
+      "stored_sha256": "aab56aadee4af2029ae827e75796d15622b0aaad7c421f6cbce3dfd73310e45a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional-official-text.html",
+      "original_sha256": "240bbdf7b2e54232c1bad3e9c4c6ef45ce089e603e84a2d54f843d9b3951b2c0",
+      "original_bytes": 4706,
+      "stored_path": "archive/24/240bbdf7b2e54232c1bad3e9c4c6ef45ce089e603e84a2d54f843d9b3951b2c0.gz",
+      "stored_bytes": 1442,
+      "stored_sha256": "51ba0a384eda29489a88fe40771f3ffce2699ab7d2f898129897abf00bc6872c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional.html",
+      "original_sha256": "45f83428d817aae269d6fd4bfce1085d9b0512acc3a749eb20c1d2c86ef69c19",
+      "original_bytes": 77626,
+      "stored_path": "archive/45/45f83428d817aae269d6fd4bfce1085d9b0512acc3a749eb20c1d2c86ef69c19.gz",
+      "stored_bytes": 14818,
+      "stored_sha256": "3f1cef6ce599605b26274668b121cfde4a278c0e34c05f926e2a00191a5e09cc"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional.pdf",
+      "original_sha256": "263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90",
+      "original_bytes": 709333,
+      "stored_path": "archive/26/263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90.gz",
+      "stored_bytes": 508115,
+      "stored_sha256": "58612e95e8e86ac42a5d2b610f401ab3abec88326a437a098d181584ba065935"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/additional.reader.txt",
+      "original_sha256": "90c2fc7cfcde94280567076d81af7c1e24a6df15423f7a85992987a2e181bdce",
+      "original_bytes": 3691,
+      "stored_path": "archive/90/90c2fc7cfcde94280567076d81af7c1e24a6df15423f7a85992987a2e181bdce.gz",
+      "stored_bytes": 1461,
+      "stored_sha256": "c91d51a2efb1bd4ef2fd2d880b27c94a58f12bf6355138cd794963840c137eed"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/artifact-manifest.json",
+      "original_sha256": "df29d0f026a29b0bc98b7bcdf428880c6e48ffa2bba6a178ebd297238f05dcb1",
+      "original_bytes": 10063,
+      "stored_path": "archive/df/df29d0f026a29b0bc98b7bcdf428880c6e48ffa2bba6a178ebd297238f05dcb1.gz",
+      "stored_bytes": 1942,
+      "stored_sha256": "91b7fcaa25de1661216e76d7fd6260072c25554fd84f64be4039fa4a373c6f95"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/atc.html",
+      "original_sha256": "65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576",
+      "original_bytes": 225737,
+      "stored_path": "archive/65/65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576.gz",
+      "stored_bytes": 30830,
+      "stored_sha256": "5e414ce6563535ebe1820615eaaee8a90cf9d635e8a176405ace129392766d3a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/document-lookup-receipts.json",
+      "original_sha256": "7585cd044af9fc7bcd4844ac2ddc5cc6bf83c15e9b20e19ea3daed8eb6087367",
+      "original_bytes": 774,
+      "stored_path": "archive/75/7585cd044af9fc7bcd4844ac2ddc5cc6bf83c15e9b20e19ea3daed8eb6087367.gz",
+      "stored_bytes": 350,
+      "stored_sha256": "ce2517525d4c91540c98e4afdb2e5f0d848fe4b85327a19a58dd9372a0890ff9"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/dogc-constants.js",
+      "original_sha256": "1a0498ba97da6f82e51b5af671c52e7be1ac8dfd93ea367b8e261a6bd491cc93",
+      "original_bytes": 10411,
+      "stored_path": "archive/1a/1a0498ba97da6f82e51b5af671c52e7be1ac8dfd93ea367b8e261a6bd491cc93.gz",
+      "stored_bytes": 1763,
+      "stored_sha256": "0a158218ff417e0e5993c729e6e75733a2ed91d44a3e9d561e2d515dee976095"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/dogc-document.js",
+      "original_sha256": "1a7203deb8c2014278965cbb859afb9dd58ab74c45da3eca894b239d8d7fab3b",
+      "original_bytes": 43929,
+      "stored_path": "archive/1a/1a7203deb8c2014278965cbb859afb9dd58ab74c45da3eca894b239d8d7fab3b.gz",
+      "stored_bytes": 9606,
+      "stored_sha256": "7cdaef41990d734457b32ee422627bb4ce5aa650d0ea9b79c63cb29255bb4046"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/fetch-receipts.json",
+      "original_sha256": "d6976f2c228ee01918a0fca877097f6acd66a84cd30932e5a5dd278f6c28fca3",
+      "original_bytes": 941,
+      "stored_path": "archive/d6/d6976f2c228ee01918a0fca877097f6acd66a84cd30932e5a5dd278f6c28fca3.gz",
+      "stored_bytes": 352,
+      "stored_sha256": "53b0faf59a93a9e75a4ee7f2cc820c64c43ddac08a701d064787bf18f4df7987"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial-annex-rows.json",
+      "original_sha256": "7d4ee8392ce55b04fcff8c87031a36dd6fabaee8d2a4e94f1764a5193fe14972",
+      "original_bytes": 42365,
+      "stored_path": "archive/7d/7d4ee8392ce55b04fcff8c87031a36dd6fabaee8d2a4e94f1764a5193fe14972.gz",
+      "stored_bytes": 7644,
+      "stored_sha256": "d889dad75ef22296d089b8e4997d9412dfb06105ba44ae57e07afe6466295d88"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial-document.json",
+      "original_sha256": "aa45e822848808d5f1253921a9493c0fd6dd2c7a7f01088855d59abadb5a16c4",
+      "original_bytes": 102799,
+      "stored_path": "archive/aa/aa45e822848808d5f1253921a9493c0fd6dd2c7a7f01088855d59abadb5a16c4.gz",
+      "stored_bytes": 10392,
+      "stored_sha256": "6d61fd833ff77ce676b6f2638497dc8cc7ab2aa0cf6cbc1d94eaf1a0faf06ffd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial-locator-excerpts.json",
+      "original_sha256": "54031da21acf04252818941c6099d9d3bb41d62fb4eb27626cdc491e1b332c4c",
+      "original_bytes": 2190,
+      "stored_path": "archive/54/54031da21acf04252818941c6099d9d3bb41d62fb4eb27626cdc491e1b332c4c.gz",
+      "stored_bytes": 618,
+      "stored_sha256": "e9722d256a09f6dbefe316720d5d0b6b88f78b8a93d89525e0e060dba108952b"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial-official-text.html",
+      "original_sha256": "4f5bd30c7fea257d7140f4e8e4c716e36df8f3f4c824b3956afc2334ae4783cd",
+      "original_bytes": 96125,
+      "stored_path": "archive/4f/4f5bd30c7fea257d7140f4e8e4c716e36df8f3f4c824b3956afc2334ae4783cd.gz",
+      "stored_bytes": 9491,
+      "stored_sha256": "4c926411f253c379a7394c7f9e7799655bed05f53bb510d39be0ac510d056cfd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial.html",
+      "original_sha256": "59e9360bfc47a5d9c942fc0c3255367a7fdfd8455366e56357011b503e34900b",
+      "original_bytes": 77626,
+      "stored_path": "archive/59/59e9360bfc47a5d9c942fc0c3255367a7fdfd8455366e56357011b503e34900b.gz",
+      "stored_bytes": 14815,
+      "stored_sha256": "eb53dc89aba836904b03fd3029f58e03628f57ae763aba4de34fa4905124a22d"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial.pdf",
+      "original_sha256": "417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace",
+      "original_bytes": 1195097,
+      "stored_path": "archive/41/417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace.gz",
+      "stored_bytes": 635430,
+      "stored_sha256": "dd44f8c940e5fb151d11344b021d4e248ed6073a28e3f1300eef3589e5ba5330"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/initial.reader.txt",
+      "original_sha256": "4c687672842c9992701e45b75caa99c1b5181146de1cd25b7d641118b9fdb286",
+      "original_bytes": 27541,
+      "stored_path": "archive/4c/4c687672842c9992701e45b75caa99c1b5181146de1cd25b7d641118b9fdb286.gz",
+      "stored_bytes": 8378,
+      "stored_sha256": "9e2d5cc6e34299277ba0136c26564fd79a57e97566ee8700920de7ed44ebed3c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/municipality-lookup.json",
+      "original_sha256": "68c5951fba4ace80d8cb6c63d4f349352d33d8f365f8d0e97d25c774dfde8ab5",
+      "original_bytes": 111352,
+      "stored_path": "archive/68/68c5951fba4ace80d8cb6c63d4f349352d33d8f365f8d0e97d25c774dfde8ab5.gz",
+      "stored_bytes": 9210,
+      "stored_sha256": "85d2cf639143d45de81b41a6f80b8582a94efb3da7d3c72ecdc1124431aa28f8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/pdf-fetch-receipts.json",
+      "original_sha256": "3e7f08e0f96e8d34c5def18694fab0d432938c41fd05c1eaa61a7a3068ca3766",
+      "original_bytes": 693,
+      "stored_path": "archive/3e/3e7f08e0f96e8d34c5def18694fab0d432938c41fd05c1eaa61a7a3068ca3766.gz",
+      "stored_bytes": 324,
+      "stored_sha256": "e27e59084b38227fad03ae7d4e2b3423f3d99311e3e30f2ab5dbf6cfbe05ba09"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/proposed-guide-addition.md",
+      "original_sha256": "6186ba372309e718fa5ba0ea6372c9aeb442371f8ea44ffe1b646a552cf9b1d7",
+      "original_bytes": 2056,
+      "stored_path": "archive/61/6186ba372309e718fa5ba0ea6372c9aeb442371f8ea44ffe1b646a552cf9b1d7.gz",
+      "stored_bytes": 1092,
+      "stored_sha256": "bec108f91a0c6362b14a87618ad789a409826044c54ae1787b304e9216356d09"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/public-script-receipts.json",
+      "original_sha256": "08b3e9b32cb0cddae6da24453a5fe27b1d99695a3c301dda2afa1affcd240205",
+      "original_bytes": 548,
+      "stored_path": "archive/08/08b3e9b32cb0cddae6da24453a5fe27b1d99695a3c301dda2afa1affcd240205.gz",
+      "stored_bytes": 294,
+      "stored_sha256": "3c7466830a7bb68bfa789bed25ed99f2d27d5aca9797e026d40b3872c5cd561e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/report.md",
+      "original_sha256": "7d0261f37493356c578cff3df574dfdbb4d8ed264e6da98ad6f979bceeca40c3",
+      "original_bytes": 5853,
+      "stored_path": "archive/7d/7d0261f37493356c578cff3df574dfdbb4d8ed264e6da98ad6f979bceeca40c3.gz",
+      "stored_bytes": 2872,
+      "stored_sha256": "ed5e8f4356752f35e3340400497da50604abcdc359991d118b2dd3aeb9157910"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/selected-row-controls.json",
+      "original_sha256": "2dd72f94f50770117b50eac0d3cb973d6d1289f1b7dc76b356efbafd192a14fd",
+      "original_bytes": 1724,
+      "stored_path": "archive/2d/2dd72f94f50770117b50eac0d3cb973d6d1289f1b7dc76b356efbafd192a14fd.gz",
+      "stored_bytes": 481,
+      "stored_sha256": "532174b78f5742f90f024dc7236d5b6e5a563cdc484a65cbde1295aac684871a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/additional-1.png",
+      "original_sha256": "f41b826be1c56183b49939084cde777265b22f4af0d97b2d6c498c3d1cfc69c7",
+      "original_bytes": 205284,
+      "stored_path": "archive/f4/f41b826be1c56183b49939084cde777265b22f4af0d97b2d6c498c3d1cfc69c7.gz",
+      "stored_bytes": 185929,
+      "stored_sha256": "807f52008c1f7122e13de5e592d60ec133a89470da667283a264ce1f2d95b2ef"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/additional-1.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/additional-2.png",
+      "original_sha256": "2e2145ae8a6009e9039bcfa89306eae97bd5c6532ae5588c4b2dcf5d0258a72f",
+      "original_bytes": 73725,
+      "stored_path": "archive/2e/2e2145ae8a6009e9039bcfa89306eae97bd5c6532ae5588c4b2dcf5d0258a72f.gz",
+      "stored_bytes": 63066,
+      "stored_sha256": "b3a0b238facde8ee2b0efd2ef0d46b31ca82e765ca1b5d8e81025747b3c538d6"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/additional-2.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-1.png",
+      "original_sha256": "7a37fc5a492ed8ccb0f4ba1b5c79ff5adde5f92c6c384d6d349921af4a8321f2",
+      "original_bytes": 186213,
+      "stored_path": "archive/7a/7a37fc5a492ed8ccb0f4ba1b5c79ff5adde5f92c6c384d6d349921af4a8321f2.gz",
+      "stored_bytes": 167727,
+      "stored_sha256": "a3b950477ce31ba9ddb08d5db9a4701aa8c0c7e9d51747a3894e395a7291a8b4"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-1.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-22.png",
+      "original_sha256": "62b1d3d7f837f1c9aebb556f0a7f5df6ec126db30c81254cddf0e117fd853b53",
+      "original_bytes": 38142,
+      "stored_path": "archive/62/62b1d3d7f837f1c9aebb556f0a7f5df6ec126db30c81254cddf0e117fd853b53.gz",
+      "stored_bytes": 30925,
+      "stored_sha256": "0de49b955f5523e4ecf755b7d05a2b0f07a68cc09c1af00d3e7057f91a920f3e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-22.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-7.png",
+      "original_sha256": "cb847b877d59f3e12cd6249bc4ac7a2fe138f854449f1f39153c561989b355c4",
+      "original_bytes": 132275,
+      "stored_path": "archive/cb/cb847b877d59f3e12cd6249bc4ac7a2fe138f854449f1f39153c561989b355c4.gz",
+      "stored_bytes": 114157,
+      "stored_sha256": "7c897053eb6ea4c940b2e8460a253049d167ecbe69b418962d6b745c66c6ffea"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-7.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-9.png",
+      "original_sha256": "ec5fd6c96efab27dbbf9135fa5ac5e9ffd49610712ec01f9b6a2adb5247e6bc5",
+      "original_bytes": 121726,
+      "stored_path": "archive/ec/ec5fd6c96efab27dbbf9135fa5ac5e9ffd49610712ec01f9b6a2adb5247e6bc5.gz",
+      "stored_bytes": 104266,
+      "stored_sha256": "83f4182d9496da24beb8b7f1cd15aa176d2b6a4d33e2dc4fc830c8b4a751d272"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-source/visual/initial-9.render.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/README.md.diff",
+      "original_sha256": "86aa0247c363b40e68736a5781e3fd387f9cfdda1fc415cded3911e36415db03",
+      "original_bytes": 8559,
+      "stored_path": "archive/86/86aa0247c363b40e68736a5781e3fd387f9cfdda1fc415cded3911e36415db03.gz",
+      "stored_bytes": 2396,
+      "stored_sha256": "ffa4c9764025dd5b882bb9fcee5b01da6bd0ef41b4839118391d0407a11ef21e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/approved-review-identities.json",
+      "original_sha256": "2943341e31282e5aab27ae74f9c4e9078032f235771041e001ae6488fe4ac11a",
+      "original_bytes": 1046,
+      "stored_path": "archive/29/2943341e31282e5aab27ae74f9c4e9078032f235771041e001ae6488fe4ac11a.gz",
+      "stored_bytes": 448,
+      "stored_sha256": "eb063a7df9535f80ab0f461b3e2c5127673b2c1414de5d246e1e9c06ca763adf"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/artifact-manifest.json",
+      "original_sha256": "8d6ac9d08cabe96c5865f484cdfe61a92377f48f7a81ade002b25626d4c785a6",
+      "original_bytes": 12764,
+      "stored_path": "archive/8d/8d6ac9d08cabe96c5865f484cdfe61a92377f48f7a81ade002b25626d4c785a6.gz",
+      "stored_bytes": 2539,
+      "stored_sha256": "e6bb6ea6132d2283a64f46ca485e494c8b43d393fe20cd2a23718c12e689a22f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/candidate-README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/composition-manifest.json",
+      "original_sha256": "ceffbeb36cb9d258091b1d8b9031c28cea29ca94dc16415c082983d6e51b56be",
+      "original_bytes": 12767,
+      "stored_path": "archive/ce/ceffbeb36cb9d258091b1d8b9031c28cea29ca94dc16415c082983d6e51b56be.gz",
+      "stored_bytes": 2323,
+      "stored_sha256": "5bdbe439120eb069c2cb1fd1c9692cad1e4b6790ea056295fa6238fc9d64bd87"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/draft-options.md",
+      "original_sha256": "106346a27b409d73d88fe707f73296552d082096c1b9841e748c3fb543864e1f",
+      "original_bytes": 599,
+      "stored_path": "archive/10/106346a27b409d73d88fe707f73296552d082096c1b9841e748c3fb543864e1f.gz",
+      "stored_bytes": 373,
+      "stored_sha256": "9a8aa209d8157547a6a55e501996e4748fce282008b573c2b05942892ce8fc66"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/es-irpf-deductions.md.diff",
+      "original_sha256": "5c8ee09328122b371c9777b6c11d1241c18ab0529bdb6943e4335a59d5eb4a08",
+      "original_bytes": 8687,
+      "stored_path": "archive/5c/5c8ee09328122b371c9777b6c11d1241c18ab0529bdb6943e4335a59d5eb4a08.gz",
+      "stored_bytes": 3493,
+      "stored_sha256": "c5dfacfd632d6622014be8c7a5eebf732de46c6b839c98a213b607c0d0aab015"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/examples-actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/input-README.md",
+      "original_sha256": "ff06e7ac1b690dcd4517b5efc51d40ffb7e1941a73885b94f72c7928d9abfcde",
+      "original_bytes": 12775,
+      "stored_path": "archive/ff/ff06e7ac1b690dcd4517b5efc51d40ffb7e1941a73885b94f72c7928d9abfcde.gz",
+      "stored_bytes": 5093,
+      "stored_sha256": "c81a3a174fce6b2e4c4369511bb4b5a0bc4907e2daa31ddc3a023fbe31d92216"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/input-es-irpf-deductions.md",
+      "original_sha256": "ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc",
+      "original_bytes": 487121,
+      "stored_path": "archive/ec/ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc.gz",
+      "stored_bytes": 136550,
+      "stored_sha256": "71111957397473b45ff8293338768165b2d19786bf4af5e23505f7c81e8d35d8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/schema-actual-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_bytes": 11912,
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/validate.py",
+      "original_sha256": "c99eba16813145e39251de43d648d61c9627beb28c7b8353e9ec65155b1cefff",
+      "original_bytes": 2761,
+      "stored_path": "archive/c9/c99eba16813145e39251de43d648d61c9627beb28c7b8353e9ec65155b1cefff.gz",
+      "stored_bytes": 1328,
+      "stored_sha256": "ac8ceaf73583d91ecb01a9ec10d6c32c02a67c074bd88008efd297d25ba29249"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/validation.json",
+      "original_sha256": "caf5633f069b78350ac69b25e17e3bd098a71f9bd7f804a46bbb99c1322bec19",
+      "original_bytes": 283,
+      "stored_path": "archive/ca/caf5633f069b78350ac69b25e17e3bd098a71f9bd7f804a46bbb99c1322bec19.gz",
+      "stored_bytes": 195,
+      "stored_sha256": "78cba30c97e69caca1b54a6c0aec32d21b2b7b439f00350062175485864f18bc"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/writer-checks.json",
+      "original_sha256": "8e7f96be257632d53d3a807771a24e269ddb16c60da9a34cb31bb3fc8e764261",
+      "original_bytes": 5331,
+      "stored_path": "archive/8e/8e7f96be257632d53d3a807771a24e269ddb16c60da9a34cb31bb3fc8e764261.gz",
+      "stored_bytes": 2180,
+      "stored_sha256": "c4df4020dbe43f3eeb9d98f09554c5398b792c16be16ee8b7616fbe3943587e7"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-private-method/writer.py",
+      "original_sha256": "e3752f37188bfa697b238ef45e2604ed4673d591671d2d8a205c8b60d0f8cac4",
+      "original_bytes": 5680,
+      "stored_path": "archive/e3/e3752f37188bfa697b238ef45e2604ed4673d591671d2d8a205c8b60d0f8cac4.gz",
+      "stored_bytes": 2734,
+      "stored_sha256": "5abfd5c42e495119ee58d702ad42687cf75389d6ad2aeab7b4fb3a7dc9e26840"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/29-file-composition-identity.json",
+      "original_sha256": "9859e79f7429f2cb9b1c63b2b8df930d068a4c9ed7f47b46bf7591f298d7a2eb",
+      "original_bytes": 18996,
+      "stored_path": "archive/98/9859e79f7429f2cb9b1c63b2b8df930d068a4c9ed7f47b46bf7591f298d7a2eb.gz",
+      "stored_bytes": 2310,
+      "stored_sha256": "c3b9ec9168c5029b1f2175e41ac62b4ddd6d0d6ee2d8e5630eb532151e4e8eef"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/ATC-locator-actual-read-excerpts.txt",
+      "original_sha256": "e4c304a02dadbdc466dc42661661ba76f20a50dfe80b095c975ab1c1c5c77bc9",
+      "original_bytes": 5438,
+      "stored_path": "archive/e4/e4c304a02dadbdc466dc42661661ba76f20a50dfe80b095c975ab1c1c5c77bc9.gz",
+      "stored_bytes": 1514,
+      "stored_sha256": "06e2cb9915fe39e4434901bcfc9975d6179a5b485ddf3435ce454827e63d97c6"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/HEAD.actual-output.txt",
+      "original_sha256": "604329ce8b5aaae911ad6767e25d9b337cfc295a10b8e1a03e7d6d4ed83c04af",
+      "original_bytes": 41,
+      "stored_path": "archive/60/604329ce8b5aaae911ad6767e25d9b337cfc295a10b8e1a03e7d6d4ed83c04af.gz",
+      "stored_bytes": 59,
+      "stored_sha256": "c149b664324ea763279820e0224d7dc6f0156999f840bba6555b9b6012a54031"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/README.md.independent.diff",
+      "original_sha256": "3ad37d87829b656ccbd154a8429366fbd80e02f401a8436289e76e4114cb9708",
+      "original_bytes": 8549,
+      "stored_path": "archive/3a/3ad37d87829b656ccbd154a8429366fbd80e02f401a8436289e76e4114cb9708.gz",
+      "stored_bytes": 2389,
+      "stored_sha256": "1561b3d272c8b8d50bb436584c3dc26658d99a15f2c48852fed7551ec4d47852"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/actual-command-results.json",
+      "original_sha256": "b2f34be3f8ef3a3fb120cba19a3fdfa96c3c2c1eda472db118062818d803cdcb",
+      "original_bytes": 7426,
+      "stored_path": "archive/b2/b2f34be3f8ef3a3fb120cba19a3fdfa96c3c2c1eda472db118062818d803cdcb.gz",
+      "stored_bytes": 787,
+      "stored_sha256": "c669b603a5a33e1b58e7780847b066263a1f1dfa1bf010f08916f4e4d79b0b61"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/actual-derivative-commands.json",
+      "original_sha256": "f05c698cca9ace7be5773a3988557a7fbeeef16fd83d18e54f35ebdef3277b0a",
+      "original_bytes": 891,
+      "stored_path": "archive/f0/f05c698cca9ace7be5773a3988557a7fbeeef16fd83d18e54f35ebdef3277b0a.gz",
+      "stored_bytes": 261,
+      "stored_sha256": "301b6039398c6cd0873309fe4e9f50dc99591aaaeb6646d2e32f6f8765c615cf"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/artifact-manifest.json",
+      "original_sha256": "56e8bbbb3d1ca456a1700507000138f766b3fdefb8208beff9f21492d263b06b",
+      "original_bytes": 28588,
+      "stored_path": "archive/56/56e8bbbb3d1ca456a1700507000138f766b3fdefb8208beff9f21492d263b06b.gz",
+      "stored_bytes": 5230,
+      "stored_sha256": "d71caacc82d7a65a88e0bfcadea6599ec0b10a4721f769ca83e5d17725713578"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/baselines/README.md",
+      "original_sha256": "ff06e7ac1b690dcd4517b5efc51d40ffb7e1941a73885b94f72c7928d9abfcde",
+      "original_bytes": 12775,
+      "stored_path": "archive/ff/ff06e7ac1b690dcd4517b5efc51d40ffb7e1941a73885b94f72c7928d9abfcde.gz",
+      "stored_bytes": 5093,
+      "stored_sha256": "c81a3a174fce6b2e4c4369511bb4b5a0bc4907e2daa31ddc3a023fbe31d92216"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/baselines/es-irpf-deductions.md",
+      "original_sha256": "ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc",
+      "original_bytes": 487121,
+      "stored_path": "archive/ec/ec29536e88a15780172e35e2b86f6463327fd9d3c7fa3a74c656f82091fb7fbc.gz",
+      "stored_bytes": 136550,
+      "stored_sha256": "71111957397473b45ff8293338768165b2d19786bf4af5e23505f7c81e8d35d8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/changed-guide-oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/composition-manifest-original.json",
+      "original_sha256": "ceffbeb36cb9d258091b1d8b9031c28cea29ca94dc16415c082983d6e51b56be",
+      "original_bytes": 12767,
+      "stored_path": "archive/ce/ceffbeb36cb9d258091b1d8b9031c28cea29ca94dc16415c082983d6e51b56be.gz",
+      "stored_bytes": 2323,
+      "stored_sha256": "5bdbe439120eb069c2cb1fd1c9692cad1e4b6790ea056295fa6238fc9d64bd87"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/es-irpf-deductions.md.independent.diff",
+      "original_sha256": "33fdb6d27249d9a63d207a40042d06ee19d4b1ed0d32a5d0f305bdb2fb93628b",
+      "original_bytes": 8677,
+      "stored_path": "archive/33/33fdb6d27249d9a63d207a40042d06ee19d4b1ed0d32a5d0f305bdb2fb93628b.gz",
+      "stored_bytes": 3485,
+      "stored_sha256": "c47453221042ab3eb0ed6c5cc5c6ef85e8c836dfb62bb7035316e634d6a544e0"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/exact-two-file-change-and-preservation-ledger.json",
+      "original_sha256": "7ffae2a7ddc3bc1fa1d37acdfe97bc7488a0d7605e59ec3304c5ec585c315edb",
+      "original_bytes": 10729,
+      "stored_path": "archive/7f/7ffae2a7ddc3bc1fa1d37acdfe97bc7488a0d7605e59ec3304c5ec585c315edb.gz",
+      "stored_bytes": 3003,
+      "stored_sha256": "b3ab850bbc78b840bd6e67e611e0a75ade00d0dcf71dd6a98fff8100bcb6bac0"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/fresh-law-web.json",
+      "original_sha256": "b2961818dcd096ca333118ce0ca65a6677c4c6b227c8b8edca070855c1528c50",
+      "original_bytes": 31868,
+      "stored_path": "archive/b2/b2961818dcd096ca333118ce0ca65a6677c4c6b227c8b8edca070855c1528c50.gz",
+      "stored_bytes": 6855,
+      "stored_sha256": "cb464654b20376203653aacd1d36c2ae19afd62f4bf8c609e39d1610b952574c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/fresh-source-web.json",
+      "original_sha256": "653747f71f8bdf27c28643b9f97cee472c0755a0d6d3cd55b4e50d14340a1672",
+      "original_bytes": 13706,
+      "stored_path": "archive/65/653747f71f8bdf27c28643b9f97cee472c0755a0d6d3cd55b4e50d14340a1672.gz",
+      "stored_bytes": 5034,
+      "stored_sha256": "9e4eb582bca4bf87e1439ea1b3c4e315da30071e21a891fdd453e364359f29c2"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/harness-correction-history.txt",
+      "original_sha256": "cf9dc55df7c643b0d0baccdb6a2acc062401a259e5b08e98c0261eeb5c44e0fc",
+      "original_bytes": 421,
+      "stored_path": "archive/cf/cf9dc55df7c643b0d0baccdb6a2acc062401a259e5b08e98c0261eeb5c44e0fc.gz",
+      "stored_bytes": 279,
+      "stored_sha256": "28242b00d45c0f4fe3ca2d56aae4843b5e55aa7ddd18a2aee6863e72f4544220"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/independent-full-mechanical-602-code-extraction.json",
+      "original_sha256": "af292743eb79e4b8d8da9e750d7c7960090de32c02dc65388c301dcb1ffdb540",
+      "original_bytes": 122595,
+      "stored_path": "archive/af/af292743eb79e4b8d8da9e750d7c7960090de32c02dc65388c301dcb1ffdb540.gz",
+      "stored_bytes": 9830,
+      "stored_sha256": "8568f520ac8939c6317981dc1d9513c2e8973fc9da20cab8444feb9c99c7ab4e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/independent-selected-source-and-gate-controls.json",
+      "original_sha256": "0f2bda2fe0f72170271219d8c357c2e3c102951121bc3a5e632da71e3b6e6b7a",
+      "original_bytes": 8845,
+      "stored_path": "archive/0f/0f2bda2fe0f72170271219d8c357c2e3c102951121bc3a5e632da71e3b6e6b7a.gz",
+      "stored_bytes": 1011,
+      "stored_sha256": "41751ec2e23b1efa06d449adb8fd0a2e224beff90556da5e619f8654a2907e78"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/own-actual-primary-read-ledger.json",
+      "original_sha256": "e4c4a5f24ee45ff3c05a8a274eda93e91244dec868ebcefa109464338af1c594",
+      "original_bytes": 2596,
+      "stored_path": "archive/e4/e4c4a5f24ee45ff3c05a8a274eda93e91244dec868ebcefa109464338af1c594.gz",
+      "stored_bytes": 836,
+      "stored_sha256": "f9894ea0d62305e7e536dc368abd5eaf449514399fb0a1400e147f445ada565b"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/post-review-immutability.json",
+      "original_sha256": "aaeab3c6a246a00b745d92d6d1208545e32436c9ea51cca35d4e0919aa759ac2",
+      "original_bytes": 143,
+      "stored_path": "archive/aa/aaeab3c6a246a00b745d92d6d1208545e32436c9ea51cca35d4e0919aa759ac2.gz",
+      "stored_bytes": 122,
+      "stored_sha256": "9c7efdb8c58d719d7f8ed2cef96e85ca3f41093599aab3d59f2e3511bae55173"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_bytes": 11912,
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/private-pack/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/report.md",
+      "original_sha256": "34c7034229c8c04e92cc79e75d9346169e01a7fb6e52860fd985116b78af7697",
+      "original_bytes": 9939,
+      "stored_path": "archive/34/34c7034229c8c04e92cc79e75d9346169e01a7fb6e52860fd985116b78af7697.gz",
+      "stored_bytes": 4591,
+      "stored_sha256": "31d4e564bf185be480d2abae7b3bdd4d52a3416054ff5c8da4d8f955c4efe07c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/review.py",
+      "original_sha256": "d5ade8c2f25c5c35c0c264cfae723fe5976a36a9814ee317fddb378bdb0a1bbe",
+      "original_bytes": 13434,
+      "stored_path": "archive/d5/d5ade8c2f25c5c35c0c264cfae723fe5976a36a9814ee317fddb378bdb0a1bbe.gz",
+      "stored_bytes": 5581,
+      "stored_sha256": "3f4b4d38752b2130a1908b6316115245726d02bc21171b2ccb6f1035330728cd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/schema.actual-output.txt",
+      "original_sha256": "73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397",
+      "original_bytes": 72,
+      "stored_path": "archive/73/73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397.gz",
+      "stored_bytes": 84,
+      "stored_sha256": "86131cd39463087c4054c67e288825c7a0ff411e3b159f3839c14328916e0e69"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/source-writer-manifest-immutability.json",
+      "original_sha256": "ae3003de180fac0c16c00bfae1c7b050f0729fc9bb40171e72078fc84f7ec09d",
+      "original_bytes": 24266,
+      "stored_path": "archive/ae/ae3003de180fac0c16c00bfae1c7b050f0729fc9bb40171e72078fc84f7ec09d.gz",
+      "stored_bytes": 4462,
+      "stored_sha256": "0e52fbb90cab235a5a2620618d1da8d3705aa1e206286d6cd149cad8724b6edd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley11-2026-original.actual-read-excerpts.txt",
+      "original_sha256": "2d2ba9163983efd505e6d0de74f5b7bb8dd02f46a2626e67cc0398ce23efb948",
+      "original_bytes": 1073,
+      "stored_path": "archive/2d/2d2ba9163983efd505e6d0de74f5b7bb8dd02f46a2626e67cc0398ce23efb948.gz",
+      "stored_bytes": 561,
+      "stored_sha256": "fd7c3c83678b21197c67af39a5f66ecbd6fb062c4a3415b44fd9377d35f1ce6f"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley11-2026-original.pdf",
+      "original_sha256": "569eb43a1bc5478c761ddaaf5879f820eee6fd88aa3d15f84ad7713b0c1d5793",
+      "original_bytes": 4600310,
+      "stored_path": "archive/56/569eb43a1bc5478c761ddaaf5879f820eee6fd88aa3d15f84ad7713b0c1d5793.gz",
+      "stored_bytes": 987713,
+      "stored_sha256": "5bb67a73f465e4dd715b3637f335590685e8633fd5ec407ac297c9c1b6abeb57"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley11-2026-original.reader.txt",
+      "original_sha256": "96406151c9fd120b250a2cf413dfa8c2317ce67f75bdc2b1728bbc40640f9080",
+      "original_bytes": 652511,
+      "stored_path": "archive/96/96406151c9fd120b250a2cf413dfa8c2317ce67f75bdc2b1728bbc40640f9080.gz",
+      "stored_bytes": 148106,
+      "stored_sha256": "55470ec73ed48d75d89d53f85b173a1c2d1574efdbd0199d88063e07f82a784e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley8-2025.actual-read-excerpts.txt",
+      "original_sha256": "02daab168e6996985c4e633f933cdf7b6c735738766cba62a181a57ccaaf2899",
+      "original_bytes": 7760,
+      "stored_path": "archive/02/02daab168e6996985c4e633f933cdf7b6c735738766cba62a181a57ccaaf2899.gz",
+      "stored_bytes": 2467,
+      "stored_sha256": "0dab18ff1ad4de7974a1743264290885f40512ff94701671d690ee23f30f4e11"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley8-2025.body",
+      "original_sha256": "f90e736074209aae4abc2473e65ed61b50ae1afabb8e8919fe2b0fd31b745284",
+      "original_bytes": 221069,
+      "stored_path": "archive/f9/f90e736074209aae4abc2473e65ed61b50ae1afabb8e8919fe2b0fd31b745284.gz",
+      "stored_bytes": 45156,
+      "stored_sha256": "1ae5115be2d8c00e2dc885e52a319efc97e39ee6899b240b2ae5bc3f0f235e8a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/Ley8-2025.reader.txt",
+      "original_sha256": "db998c5d21eb83abbca8d2c2033b89d33a21f0e21e7a56c5a95d921a54b4f86c",
+      "original_bytes": 152519,
+      "stored_path": "archive/db/db998c5d21eb83abbca8d2c2033b89d33a21f0e21e7a56c5a95d921a54b4f86c.gz",
+      "stored_bytes": 37967,
+      "stored_sha256": "fbe6f85b8ccfb72b51477e48d136a8dfc2c330a40be895052c5695026499d124"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional-document.json",
+      "original_sha256": "0eec7d6e5e6b9fd7adbafb84a6a29a56d3b8bda33175d3bdc3ca1ab533c25445",
+      "original_bytes": 6711,
+      "stored_path": "archive/0e/0eec7d6e5e6b9fd7adbafb84a6a29a56d3b8bda33175d3bdc3ca1ab533c25445.gz",
+      "stored_bytes": 2117,
+      "stored_sha256": "ae375e393f1498a50ab263417b9710fbaa23e49f99d5866fd7b46f6cccd9b7e2"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional-official-text.html",
+      "original_sha256": "240bbdf7b2e54232c1bad3e9c4c6ef45ce089e603e84a2d54f843d9b3951b2c0",
+      "original_bytes": 4706,
+      "stored_path": "archive/24/240bbdf7b2e54232c1bad3e9c4c6ef45ce089e603e84a2d54f843d9b3951b2c0.gz",
+      "stored_bytes": 1442,
+      "stored_sha256": "51ba0a384eda29489a88fe40771f3ffce2699ab7d2f898129897abf00bc6872c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional.actual-read-pages.txt",
+      "original_sha256": "da3cb0c2dd95ffb2941c5f2e511d214737da2cbe20d315a1f130929a83f7afb5",
+      "original_bytes": 3684,
+      "stored_path": "archive/da/da3cb0c2dd95ffb2941c5f2e511d214737da2cbe20d315a1f130929a83f7afb5.gz",
+      "stored_bytes": 1462,
+      "stored_sha256": "91497b4d4d0f955e7ee2eac8144d730fbc92e7a5e42d7da494efedd422ad6332"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional.independent-layout.txt",
+      "original_sha256": "b3ccf07dfe29a64a9438a46a63c46825b77c0e1c5ec4c4bd22f52bedcdb658ee",
+      "original_bytes": 4824,
+      "stored_path": "archive/b3/b3ccf07dfe29a64a9438a46a63c46825b77c0e1c5ec4c4bd22f52bedcdb658ee.gz",
+      "stored_bytes": 1518,
+      "stored_sha256": "bf1630c27bcf2bb69af7443a688433c5b3d4bf82fb7b7406521dc10edddcc204"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional.pdf",
+      "original_sha256": "263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90",
+      "original_bytes": 709333,
+      "stored_path": "archive/26/263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90.gz",
+      "stored_bytes": 508115,
+      "stored_sha256": "58612e95e8e86ac42a5d2b610f401ab3abec88326a437a098d181584ba065935"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/additional.reader.txt",
+      "original_sha256": "90c2fc7cfcde94280567076d81af7c1e24a6df15423f7a85992987a2e181bdce",
+      "original_bytes": 3691,
+      "stored_path": "archive/90/90c2fc7cfcde94280567076d81af7c1e24a6df15423f7a85992987a2e181bdce.gz",
+      "stored_bytes": 1461,
+      "stored_sha256": "c91d51a2efb1bd4ef2fd2d880b27c94a58f12bf6355138cd794963840c137eed"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/atc.html",
+      "original_sha256": "65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576",
+      "original_bytes": 225737,
+      "stored_path": "archive/65/65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576.gz",
+      "stored_bytes": 30830,
+      "stored_sha256": "5e414ce6563535ebe1820615eaaee8a90cf9d635e8a176405ace129392766d3a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial-document.json",
+      "original_sha256": "aa45e822848808d5f1253921a9493c0fd6dd2c7a7f01088855d59abadb5a16c4",
+      "original_bytes": 102799,
+      "stored_path": "archive/aa/aa45e822848808d5f1253921a9493c0fd6dd2c7a7f01088855d59abadb5a16c4.gz",
+      "stored_bytes": 10392,
+      "stored_sha256": "6d61fd833ff77ce676b6f2638497dc8cc7ab2aa0cf6cbc1d94eaf1a0faf06ffd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial-official-text.html",
+      "original_sha256": "4f5bd30c7fea257d7140f4e8e4c716e36df8f3f4c824b3956afc2334ae4783cd",
+      "original_bytes": 96125,
+      "stored_path": "archive/4f/4f5bd30c7fea257d7140f4e8e4c716e36df8f3f4c824b3956afc2334ae4783cd.gz",
+      "stored_bytes": 9491,
+      "stored_sha256": "4c926411f253c379a7394c7f9e7799655bed05f53bb510d39be0ac510d056cfd"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial.actual-read-pages.txt",
+      "original_sha256": "faaf65faea53ffb80f03bc830671c4b921e6e2838a9d4b0a75e467727c6f136b",
+      "original_bytes": 6591,
+      "stored_path": "archive/fa/faaf65faea53ffb80f03bc830671c4b921e6e2838a9d4b0a75e467727c6f136b.gz",
+      "stored_bytes": 2520,
+      "stored_sha256": "b8be2e5a86292c8d68643bad6379a7117c5686a279cf317c5a8a966a5ef64274"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial.independent-layout.txt",
+      "original_sha256": "c81e78e0ef47727de49d460aa721a357f177f942bd3e4b8b5dbb0b910e6a1aa4",
+      "original_bytes": 71775,
+      "stored_path": "archive/c8/c81e78e0ef47727de49d460aa721a357f177f942bd3e4b8b5dbb0b910e6a1aa4.gz",
+      "stored_bytes": 10044,
+      "stored_sha256": "d9e106b65707c09ad57473e077c19c8ae739b3548776e25bfc59b9bd06e22667"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial.pdf",
+      "original_sha256": "417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace",
+      "original_bytes": 1195097,
+      "stored_path": "archive/41/417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace.gz",
+      "stored_bytes": 635430,
+      "stored_sha256": "dd44f8c940e5fb151d11344b021d4e248ed6073a28e3f1300eef3589e5ba5330"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/sources/initial.reader.txt",
+      "original_sha256": "4c687672842c9992701e45b75caa99c1b5181146de1cd25b7d641118b9fdb286",
+      "original_bytes": 27541,
+      "stored_path": "archive/4c/4c687672842c9992701e45b75caa99c1b5181146de1cd25b7d641118b9fdb286.gz",
+      "stored_bytes": 8378,
+      "stored_sha256": "9e2d5cc6e34299277ba0136c26564fd79a57e97566ee8700920de7ed44ebed3c"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/status.actual-output.txt",
+      "original_sha256": "ad742a00d0052ef91065bea9945a447814bd8451a06e593371e21994905daf39",
+      "original_bytes": 55,
+      "stored_path": "archive/ad/ad742a00d0052ef91065bea9945a447814bd8451a06e593371e21994905daf39.gz",
+      "stored_bytes": 74,
+      "stored_sha256": "fc369920fd248140c4afa3ae1bb56fe4eb855235c57753e265e52f2989a29f0a"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/summary.json",
+      "original_sha256": "bcdc8670a15c7e0e7ef5b1517361b5edc5692671f54e8dd2e454966c65799527",
+      "original_bytes": 1132,
+      "stored_path": "archive/bc/bcdc8670a15c7e0e7ef5b1517361b5edc5692671f54e8dd2e454966c65799527.gz",
+      "stored_bytes": 603,
+      "stored_sha256": "b03a1969317ac39830704c64355fbdd0b846ec48e96806a56f12c6391bb868f8"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/additional-1.png",
+      "original_sha256": "f41b826be1c56183b49939084cde777265b22f4af0d97b2d6c498c3d1cfc69c7",
+      "original_bytes": 205284,
+      "stored_path": "archive/f4/f41b826be1c56183b49939084cde777265b22f4af0d97b2d6c498c3d1cfc69c7.gz",
+      "stored_bytes": 185929,
+      "stored_sha256": "807f52008c1f7122e13de5e592d60ec133a89470da667283a264ce1f2d95b2ef"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/additional-2.png",
+      "original_sha256": "2e2145ae8a6009e9039bcfa89306eae97bd5c6532ae5588c4b2dcf5d0258a72f",
+      "original_bytes": 73725,
+      "stored_path": "archive/2e/2e2145ae8a6009e9039bcfa89306eae97bd5c6532ae5588c4b2dcf5d0258a72f.gz",
+      "stored_bytes": 63066,
+      "stored_sha256": "b3a0b238facde8ee2b0efd2ef0d46b31ca82e765ca1b5d8e81025747b3c538d6"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/initial-1.png",
+      "original_sha256": "7a37fc5a492ed8ccb0f4ba1b5c79ff5adde5f92c6c384d6d349921af4a8321f2",
+      "original_bytes": 186213,
+      "stored_path": "archive/7a/7a37fc5a492ed8ccb0f4ba1b5c79ff5adde5f92c6c384d6d349921af4a8321f2.gz",
+      "stored_bytes": 167727,
+      "stored_sha256": "a3b950477ce31ba9ddb08d5db9a4701aa8c0c7e9d51747a3894e395a7291a8b4"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/initial-22.png",
+      "original_sha256": "62b1d3d7f837f1c9aebb556f0a7f5df6ec126db30c81254cddf0e117fd853b53",
+      "original_bytes": 38142,
+      "stored_path": "archive/62/62b1d3d7f837f1c9aebb556f0a7f5df6ec126db30c81254cddf0e117fd853b53.gz",
+      "stored_bytes": 30925,
+      "stored_sha256": "0de49b955f5523e4ecf755b7d05a2b0f07a68cc09c1af00d3e7057f91a920f3e"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/initial-7.png",
+      "original_sha256": "cb847b877d59f3e12cd6249bc4ac7a2fe138f854449f1f39153c561989b355c4",
+      "original_bytes": 132275,
+      "stored_path": "archive/cb/cb847b877d59f3e12cd6249bc4ac7a2fe138f854449f1f39153c561989b355c4.gz",
+      "stored_bytes": 114157,
+      "stored_sha256": "7c897053eb6ea4c940b2e8460a253049d167ecbe69b418962d6b745c66c6ffea"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/visual/initial-9.png",
+      "original_sha256": "ec5fd6c96efab27dbbf9135fa5ac5e9ffd49610712ec01f9b6a2adb5247e6bc5",
+      "original_bytes": 121726,
+      "stored_path": "archive/ec/ec5fd6c96efab27dbbf9135fa5ac5e9ffd49610712ec01f9b6a2adb5247e6bc5.gz",
+      "stored_bytes": 104266,
+      "stored_sha256": "83f4182d9496da24beb8b7f1cd15aa176d2b6a4d33e2dc4fc830c8b4a751d272"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/whitespace.actual-output.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-Catalan-municipal-annex-independent-review/whole29-oa.actual-output.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "M": "9.375E+4",
+  "netback_after_20pct_PIT": "75000",
+  "half_M": "46875",
+  "5M": "4.6875E+5",
+  "10M": "9.3750E+5",
+  "15M": "1.40625E+6",
+  "140day_maternity_minimum_gross_before_rounding_PIT": "215871.71052631578947368421052632",
+  "interpretation": "Ordinary 20% PIT tax-only gross-up derived from Benefits22(1), MinimumWage1/4, Code150(1). Not a quoted Service calculation. Employer payment follows Service notice."
+}

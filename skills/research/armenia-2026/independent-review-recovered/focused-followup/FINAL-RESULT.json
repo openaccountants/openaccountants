@@ -1,0 +1,151 @@
+{
+  "reviewed_commit": "ed50628b03665c700b2ca62e0311cb04638c09a0",
+  "disposition": "PASS",
+  "archive_sha256": "b2ff61974673712683185b23b885a27231d33bf7089953be01c1cca72bddd551",
+  "checks": {
+    "FINAL-EXAMPLES": {
+      "exit_code": 0,
+      "log": "FINAL-EXAMPLES.log",
+      "output": "checked 11 files, 88 oa-check blocks, 0 failures, 0 missing",
+      "stderr": ""
+    },
+    "FINAL-VALIDATE": {
+      "exit_code": 0,
+      "log": "FINAL-VALIDATE.log",
+      "output": "changed-only mode: validating 86 changed guide file(s)\nchecked 10 guides (32 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))",
+      "stderr": ""
+    },
+    "FINAL-STRICT-SYNC": {
+      "exit_code": 0,
+      "log": "FINAL-STRICT-SYNC.log",
+      "output": "Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).",
+      "stderr": ""
+    }
+  },
+  "guide_files": [
+    {
+      "path": "skills/international/armenia/README.md",
+      "sha256": "c48359ec100d89c987d2c9819446df4b1d0e8df6c2791792cb41491e2722ac86",
+      "git_blob": "e73e6a0ce26d6080115a30f208bf54621b126906",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/am-company-formation.md",
+      "sha256": "f03d447c2128dc0e507cd053670f45dc3bb9567704a81acc89f3cb541e10b0e7",
+      "git_blob": "bb792939a27bf3652e5649644e9fa23815acdf85",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/am-corporate-income-tax.md",
+      "sha256": "8ca139b1d3aa249d235e6c5b1b4f2d93a8d98396055cf012ab9ce2d621f18684",
+      "git_blob": "74a857207397931860591ec6055eb2d5939484e7",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/am-cross-border.md",
+      "sha256": "7ce68a917567f8bdcd4dd823abd1b4ec92335728767bd52395ec2630fca85426",
+      "git_blob": "ff80c825fa52851b27169308a5446b07252b6c2f",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/am-tax-overview.md",
+      "sha256": "5c48531f2aed26abeb87115a71c3721061fb4975b767cdf7489bf7512fbdcb9f",
+      "git_blob": "29b48e659adfd77de27ad9d15c7aa1f888effefa",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/am-transfer-pricing.md",
+      "sha256": "3abd8c631ed0f0c13901a0d6850d627dec4ddd4f178f8d3127bafd85cdd4132c",
+      "git_blob": "7cf2ffe1c90406300a00ae6e566a26ed77ee783a",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-income-tax.md",
+      "sha256": "61e0e2e5a495e2bff4001ebfe8a4c774087ca474728d591115c7ab05405b53d8",
+      "git_blob": "ac0a74d114289bb71a4084cf05dfc2741a3defde",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-payroll.md",
+      "sha256": "458c22cae70351af88a1e5f593ecd123afe85e7701ee397085645e77087136b2",
+      "git_blob": "dfb9553915ed55c39d081eb8b050b9511c118f74",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-social-contributions.md",
+      "sha256": "283f6317c6d3d533b182ece0ca11a818a8e385ff23ae00d74912293cce822745",
+      "git_blob": "0c87c7b7d4b2cde954278182a25d3620b7c9498a",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-tax-optimization.md",
+      "sha256": "480b734536560042eeafd3f2bd84ed8754e852385e4aa1b7f5ab18029ff3aed5",
+      "git_blob": "d1282d2e8a7bd99632ba42c83f86164e560767d8",
+      "exact_commit_match": true
+    },
+    {
+      "path": "skills/international/armenia/armenia-vat.md",
+      "sha256": "e8c934f4cfe0d920f110901e52b4e09bd48b851dcb83259dcb85fa509ec54979",
+      "git_blob": "0916f4de9677aeb9d25018ee681bffd2a99ae63f",
+      "exact_commit_match": true
+    }
+  ],
+  "coverage": {
+    "code": "AM",
+    "name": "Armenia",
+    "region": "europe",
+    "owner": "michael",
+    "dir": "skills/international/armenia",
+    "skills": 10,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "missing": [],
+    "not_applicable": {},
+    "partial": {},
+    "has_readme": true,
+    "complete": true
+  },
+  "preservation": {
+    "original_files": 18,
+    "protected_sets": 8,
+    "original_blocks": 51,
+    "current_blocks": 88,
+    "all_original_blocks_byte_exact": true
+  },
+  "scope": "Whole-pack source-cited-draft ordinary-method review using prior full review plus focused primary delta; not professional attestation or live filing.",
+  "finalized_utc": "2026-10-26T22:34:22.265247+00:00",
+  "material_findings": [],
+  "ordinary_domains_complete": true,
+  "professional_attestation": false,
+  "live_filing_or_settlement_tested": false,
+  "review_report": "FINAL-WHOLE-PACK-REVIEW.md",
+  "focused_primary_finding": "FOCUSED-FINDING.md",
+  "receipt_index": "RECEIPTS-READ-SCOPES.json",
+  "review_basis": [
+    "Prior full independent review of ten Guides plus README at 9541fed2 and subsequent corrections through adebd6f0.",
+    "Every changed Armenia Guide/README passage from adebd6f0 to ed50628b read.",
+    "Focused fresh native primary-source review and all three current SRC specimen pages."
+  ],
+  "closed_findings": [
+    "Mortgage cohort and actual 1274-L forms",
+    "Numeric benefit M and Service assessment/payment",
+    "Current SRC treaty refund claimant/approval/bank instruction"
+  ],
+  "boundaries": [
+    "Named accountant attestation not obtained",
+    "Actual taxpayer treaty/MLI entitlement",
+    "No unconditional treaty refund cash clock or complete internal Treasury workflow",
+    "Exceptional late-export/health error/suspension/age-65 recoveries unverified",
+    "Specified specialist populations and portal/form discrepancies",
+    "No live filing/bank acceptance or settlement tested"
+  ]
+}
