@@ -1,0 +1,119 @@
+{
+  "article": "CAPITAL-COST-ACTUAL-ANNEX40-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/MF/anexa_40.doc",
+  "text": "Anexa \nla Ordinul Ministerului Finanțelor \nnr. 40 din 6 februarie 2018 \nПриложение \nк Приказу Министерства финансов\n№ 40  от 6 февраля 2018  г.\n \nLista documentelor confirmative ce reprezintă temei pentru confirmarea bazei valorice\n\nNr d/or\nModul de dobîndire a dreptului de proprietate\nDocumentele ce confirmă  baza valorică\n\n3\n4\n\n1\n\n\nProprietatea dobîndită prin cumpărare \nContractul de vânzare – cumpărare;\nContractul privind investițiile în construcții;\nÎn cazul în care preţul tranzacţiei nu a fost achitat în totalitate sau nu corespunde cu valoarea specificată la momentul încheierii contractelor menționate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului;\nDocumentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului;\nFactura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;\n\n2\n\nProprietate construită de sine stătător;\nContractul de vânzare – cumpărare;\nContractul de prestări servicii;\nÎn cazul în care preţul tranzacţiei nu a fost achitat în totalitate la momentul încheierii contractelor specificate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului;\nDocumentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului;\nFactura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;\nCertificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile \n3\nProprietate dobândită prin moştenire;\nCertificatul de moştenitor legal şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;\nCertificatul de moştenitor legal şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile; \n4\nProprietate dobândită prin donaţie;\n1) Contractul (actul) de donaţie şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de proprietate;\n2) Contractul (actul) de donaţie şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;\n5\n\n\nProprietate dobândită în temeiul Contractului de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă\n\nContractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;\nContractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;\n6\nProprietate dobândită prin schimb;\n\nContractul de schimb şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;\nContractul de schimb şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;\n7\nProprietatea dobândită prin cesiune de creanţă\n      Contractul de cesiune a creanţei şi actul confirmativ privind suma achitată pentru obţinerea statutului de cesionar  \n\n8\nAlt temei\nActele care confirmă  temeiul de dobîndire a dreptului de proprietate şi sumele achitate pentru dobîndirea dreptului de  proprietate\n9\nProprietatea dobândită în urma divorţului\nActele specificate modului de dobîndire a dreptului de proprietate menţionate supra în temeiul cărora a intrat în proprietatea soţilor/ unuia dintre soţi.\n",
+  "sha256": "942dc3b4438120dd7e5e672f32250633817afaffa52431a5343f76f15200afc4",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T02:12:34.450442+00:00",
+  "format": "Original official DOC retained unchanged; locally converted to DOCX for extraction/rendering",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/capital-cost-proof-order40.doc",
+  "binary_sha256": "ba2f9b6a01f335a759f104e441f07b6364edb54770c558c4ee5576b89b678beb",
+  "binary_size_bytes": 51712,
+  "full_binary_retained": true,
+  "source_points": {
+    "caption_and_heading": "Anexa \nla Ordinul Ministerului Finanțelor \nnr. 40 din 6 februarie 2018 \nПриложение \nк Приказу Министерства финансов\n№ 40  от 6 февраля 2018  г.\n \nLista documentelor confirmative ce reprezintă temei pentru confirmarea bazei valorice\n\n",
+    "route_1": " 1\n  Proprietatea dobîndită prin cumpărare \nContractul de vânzare – cumpărare; Contractul privind investițiile în construcții; În cazul în care preţul tranzacţiei nu a fost achitat în totalitate sau nu corespunde cu valoarea specificată la momentul încheierii contractelor menționate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului; Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului; Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;",
+    "route_1_document_1": "Contractul de vânzare – cumpărare;",
+    "route_1_document_2": "Contractul privind investițiile în construcții;",
+    "route_1_document_3": "În cazul în care preţul tranzacţiei nu a fost achitat în totalitate sau nu corespunde cu valoarea specificată la momentul încheierii contractelor menționate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului;",
+    "route_1_document_4": "Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului;",
+    "route_1_document_5": "Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;",
+    "route_2": " 2\n Proprietate construită de sine stătător;\nContractul de vânzare – cumpărare; Contractul de prestări servicii; În cazul în care preţul tranzacţiei nu a fost achitat în totalitate la momentul încheierii contractelor specificate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului; Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului; Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului; Certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile ",
+    "route_2_document_1": "Contractul de vânzare – cumpărare;",
+    "route_2_document_2": "Contractul de prestări servicii;",
+    "route_2_document_3": "În cazul în care preţul tranzacţiei nu a fost achitat în totalitate la momentul încheierii contractelor specificate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului;",
+    "route_2_document_4": "Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului;",
+    "route_2_document_5": "Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;",
+    "route_2_document_6": "Certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile ",
+    "route_3": "3\nProprietate dobândită prin moştenire;\nCertificatul de moştenitor legal şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Certificatul de moştenitor legal şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile; ",
+    "route_3_document_1": "Certificatul de moştenitor legal şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;",
+    "route_3_document_2": "Certificatul de moştenitor legal şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile; ",
+    "route_4": "4\nProprietate dobândită prin donaţie;\n1) Contractul (actul) de donaţie şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de proprietate; 2) Contractul (actul) de donaţie şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_4_document_1": "1) Contractul (actul) de donaţie şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de proprietate;",
+    "route_4_document_2": "2) Contractul (actul) de donaţie şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_5": "5  \nProprietate dobândită în temeiul Contractului de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă \nContractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Contractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_5_document_1": "Contractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;",
+    "route_5_document_2": "Contractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_6": "6\nProprietate dobândită prin schimb; \nContractul de schimb şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Contractul de schimb şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_6_document_1": "Contractul de schimb şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate;",
+    "route_6_document_2": "Contractul de schimb şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;",
+    "route_7": "7\nProprietatea dobândită prin cesiune de creanţă\n      Contractul de cesiune a creanţei şi actul confirmativ privind suma achitată pentru obţinerea statutului de cesionar   ",
+    "route_7_document_1": "      Contractul de cesiune a creanţei şi actul confirmativ privind suma achitată pentru obţinerea statutului de cesionar  ",
+    "route_8": "8\nAlt temei\nActele care confirmă  temeiul de dobîndire a dreptului de proprietate şi sumele achitate pentru dobîndirea dreptului de  proprietate",
+    "route_8_document_1": "Actele care confirmă  temeiul de dobîndire a dreptului de proprietate şi sumele achitate pentru dobîndirea dreptului de  proprietate",
+    "route_9": "9\nProprietatea dobândită în urma divorţului\nActele specificate modului de dobîndire a dreptului de proprietate menţionate supra în temeiul cărora a intrat în proprietatea soţilor/ unuia dintre soţi.",
+    "route_9_document_1": "Actele specificate modului de dobîndire a dreptului de proprietate menţionate supra în temeiul cărora a intrat în proprietatea soţilor/ unuia dintre soţi."
+  },
+  "table_cells": [
+    [
+      [
+        "Nr d/or",
+        "Modul de dobîndire a dreptului de proprietate",
+        "Documentele ce confirmă  baza valorică"
+      ],
+      [
+        "",
+        "3",
+        "4"
+      ],
+      [
+        " 1",
+        "  Proprietatea dobîndită prin cumpărare ",
+        "Contractul de vânzare – cumpărare; Contractul privind investițiile în construcții; În cazul în care preţul tranzacţiei nu a fost achitat în totalitate sau nu corespunde cu valoarea specificată la momentul încheierii contractelor menționate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului; Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului; Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului;"
+      ],
+      [
+        " 2",
+        " Proprietate construită de sine stătător;",
+        "Contractul de vânzare – cumpărare; Contractul de prestări servicii; În cazul în care preţul tranzacţiei nu a fost achitat în totalitate la momentul încheierii contractelor specificate la pct. 1), pct. 2) pe lîngă actele specificate la pct. 1), pct. 2) se va prezenta documentele care confirmă achitarea de fapt a preţului; Documentul internațional-invoice, declarația vamală aferentă sumei facturate şi actul confirmativ privind achitarea de fapt a preţului; Factura/factura de expediţie/factura fiscală şi actul confirmativ privind achitarea de fapt a preţului; Certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile "
+      ],
+      [
+        "3",
+        "Proprietate dobândită prin moştenire;",
+        "Certificatul de moştenitor legal şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Certificatul de moştenitor legal şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile; "
+      ],
+      [
+        "4",
+        "Proprietate dobândită prin donaţie;",
+        "1) Contractul (actul) de donaţie şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de proprietate; 2) Contractul (actul) de donaţie şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;"
+      ],
+      [
+        "5  ",
+        "Proprietate dobândită în temeiul Contractului de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă ",
+        "Contractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Contractul de înstrăinare a bunurilor cu condiţia întreţinerii pe viaţă şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;"
+      ],
+      [
+        "6",
+        "Proprietate dobândită prin schimb; ",
+        "Contractul de schimb şi raportul de evaluare emis de către un evaluator competent care confirmă valoarea de piaţă a activului la data dobîndirii dreptului de propietate; Contractul de schimb şi  certificatul privind valoarea bunului imobil emis de către entitatea responsabilă să ţină evidenţa de stat a bunurilor imobile;"
+      ],
+      [
+        "7",
+        "Proprietatea dobândită prin cesiune de creanţă",
+        "      Contractul de cesiune a creanţei şi actul confirmativ privind suma achitată pentru obţinerea statutului de cesionar   "
+      ],
+      [
+        "8",
+        "Alt temei",
+        "Actele care confirmă  temeiul de dobîndire a dreptului de proprietate şi sumele achitate pentru dobîndirea dreptului de  proprietate"
+      ],
+      [
+        "9",
+        "Proprietatea dobândită în urma divorţului",
+        "Actele specificate modului de dobîndire a dreptului de proprietate menţionate supra în temeiul cărora a intrat în proprietatea soţilor/ unuia dintre soţi."
+      ]
+    ]
+  ],
+  "rendered_pdf_relative_to_country_workspace": "validation/capital-cost-proof-order40-render/capital-cost-proof-order40.pdf",
+  "rendered_pdf_sha256": "d7485baedc588f53000969610e7256587265f753ea3bdf46837e4d06fdb620d4",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=105006&lang=ro",
+  "parent_header_and_attachment_link_rechecked": "2026-10-31; MF40approval16February2018singleversion/noamendmentshown; CET18Order150latestOMF53effective3April2026. Actual current-parent links used for bounded browser download-event/path.",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "portal_test": false,
+  "conversion_derivative_relative_to_country_workspace": "primary-attachments/capital-cost-proof-order40.docx",
+  "conversion_derivative_sha256": "0bcd0499809ebec0c38ccb30ce332eb7e48629395a38016a807bf83c3f9fed0b",
+  "conversion_note": "Original DOC retained as official binary. Installed LibreOffice conversion succeeded with fontcache warnings; complete one-page render visually inspected. Annex is unnumbered, although CET18instruction64 calls it annex1."
+}

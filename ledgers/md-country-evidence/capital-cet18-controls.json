@@ -1,0 +1,181 @@
+{
+  "status": "PASS five capital/CET18 computations and nine source lookups; independent legal review pending",
+  "cases": [
+    {
+      "name": "Capital-loss magnitude is deducted once, not subtracted as a negative",
+      "assumed_inputs": {
+        "already_recognised_disposals": [
+          {
+            "proceeds": 150000,
+            "adjusted_cost": 120000
+          },
+          {
+            "proceeds": 30000,
+            "adjusted_cost": 40000
+          }
+        ]
+      },
+      "actual": {
+        "gains": "30000",
+        "loss_magnitude": "10000",
+        "statutory_inclusion": "10000.0",
+        "incorrect_negative_loss_formula": "20000.0"
+      },
+      "expected": {
+        "gains": 30000,
+        "loss_magnitude": 10000,
+        "statutory_inclusion": 10000,
+        "incorrect_negative_loss_formula": 20000
+      },
+      "scope": "Recognisednonbusinesscapitaltransactions/legallyestablishedbasisassumed;notportalK7signcertificationoractualclientfacts.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Loss deduction is capped by recognised gains",
+      "assumed_inputs": {
+        "recognised_gains": 10000,
+        "recognised_losses": 30000
+      },
+      "actual": {
+        "allowed_capital_loss": "10000",
+        "inclusion": "0.0"
+      },
+      "expected": {
+        "allowed_capital_loss": 10000,
+        "inclusion": 0
+      },
+      "scope": "CurrentCode40(7)/41(1)workingpaper;nooffsetagainstsalaryandnocarry-forwardentitlementinferred.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Own and dependent-child education share the E7 statutory ceiling",
+      "assumed_inputs": {
+        "already_eligible_paid_own_education": 13000,
+        "already_eligible_paid_child_education": 11000,
+        "statutory_aggregate_limit": 20000
+      },
+      "actual": {
+        "documented_spending": "24000",
+        "E7_deductible": "20000",
+        "not_deducted": "4000"
+      },
+      "expected": {
+        "documented_spending": 24000,
+        "E7_deductible": 20000,
+        "not_deducted": 4000
+      },
+      "scope": "Actualprovider/beneficiary/payment/entitlementalreadyestablished;notseparate20000capsorliveportalvalidationofgenericinstruction34^7.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "CET18 resident income, relief/deduction and tax transfers",
+      "assumed_inputs": {
+        "already_taxable_C1": 100000,
+        "C2": 10000,
+        "C3_total": 20000,
+        "C4": 5000,
+        "already_allowed_D7": 10000,
+        "E7": 20000,
+        "other_E_fields": 0,
+        "donor_adjustment": 0,
+        "applicable_ordinary_rate": ".12",
+        "eligible_withholding": 9000,
+        "self_paid": 2000
+      },
+      "actual": {
+        "C5": "135000",
+        "DE": "30000",
+        "F1": "105000",
+        "F4": "105000",
+        "F5": "12600.00",
+        "F6": "3600.00",
+        "F7": "2000",
+        "F8": "1600.00",
+        "F9": "0"
+      },
+      "expected": {
+        "C5": 135000,
+        "DE": 30000,
+        "F1": 105000,
+        "F4": 105000,
+        "F5": 12600,
+        "F6": 3600,
+        "F7": 2000,
+        "F8": 1600,
+        "F9": 0
+      },
+      "scope": "Residenttaxpopulation/income/relief/creditsalreadyestablished;C3subtotalsnotaddedtwice;noteligibilityforactualdeductionsorforeigncredit.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "CET18 excess field uses magnitude of a negative balance",
+      "assumed_inputs": {
+        "already_established_F6": 3600,
+        "self_paid_F7": 6000
+      },
+      "actual": {
+        "balance": "-2400",
+        "F8": "0",
+        "F9": "2400"
+      },
+      "expected": {
+        "balance": -2400,
+        "F8": 0,
+        "F9": 2400
+      },
+      "scope": "PrintedF8/F9signbranchesonly;notproofrefundprocessed/approved.",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "source_lookups": [
+    {
+      "name": "All nine acquisition routes and22document subitems retained",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Inheritance and gift need their own acquisition document plus valuation route",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Assignment requires proof of actual amount to become assignee",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Divorce routes back to original acquisition evidence",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Code preserves self-built-property cadastral fallback",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "E7 actual form includes own education",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "InactiveD3fieldreallymarkedX",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Actual form separately includes education evidence table",
+      "status": "PASS SOURCE LOOKUP"
+    },
+    {
+      "name": "Current law caps capital losses by gains",
+      "status": "PASS SOURCE LOOKUP"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CAPITAL-COST-ACTUAL-ANNEX40-20261031.json": "681b7f48d90bc7ecac167ea74c82d7f528498699b01307b767f5a5ce9f75acdb",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CET18-ACTUAL-FORM-20261031.json": "b78396429ad1ae5aa0b2ed1e9a4361b72ecb0947134a597391b5aa09f60dacf2",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-40.json": "716ee0bb56c521ac400e733a6e56e0ac76874d6215661d3f5fbeb1ae4dbee83e",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-41.json": "5308d9d6ef4330f286fdab739697d4367c3b725304009038d155ea919606a406",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-42.json": "9e7a35da18799eb19a22747560cd3c3faab188a533c817d2f7ef0e9d5334716d",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-35s2.json": "72e538c43c541190f0374ee0c93a4f09855d720c39b046ac0c947346a4e402ca"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-income-tax.md": "c6896ef2a1c833369973426f6d9b47e6ddcca3f09536cd393fedec70c9f6c044"
+  },
+  "read_date": "2026-10-31",
+  "not_certified": "Actualdocumentauthenticity/basis/recognition/relief/treatyeligibility,portalK7sign/educationcap/codeencoding/acceptance,refundapproval,comprehensivecoverageorindependentreview"
+}

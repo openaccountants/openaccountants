@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: "2.10"
+version: "2.11"
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -8,7 +8,7 @@ covered_by:
   TP: md-transfer-pricing
   XB: md-cross-border
 partial:
-  IT-IND: "2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual forms, remaining commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending."
+  IT-IND: "2026 individual-income, overview and planning drafts supply statutory residence populations, deduction evidence, personal-relief/capital methods and sourced IT-park/SME/distribution/worker comparisons; actual CET18 and full capital-cost evidence list are now mapped; remaining regime forms, commencement/implementation and taxpayer-specific gaps remain open; whole-country independent review is pending."
   IT-CORP: "2026 corporate and formation writer drafts supply ordinary deductions, travel/asset methods, SRL registration/contributions, the corrected SA capital screen and annual-accounts duties; company-disposal scope and enacted VEN12 TP-adjustment and fixed-asset-loss row identities are now reconciled; unapplied asset classes and remaining approved tax-return/update forms, statutory discrepancy procedures, capped-base and dividend-deferral implementation remain open; whole-country independent review is pending."
   VAT: "2026 VAT writer draft and figure ledger prepared with the current 24-box VAT12 mapping; commencement, prorata-rounding and ordinary source/procedure gaps remain explicit; whole-country independent review is pending."
   SC: "2026 social/medical writer draft and ledger include State-insured categories/status procedure, selected 2026 comparisons, the service medical top-up and the specific art.43^17 foreign-worker cumulative conditions; IPC21 code/field method is supplied in the payroll companion; other reporting/refund forms, remaining implementation/commencement gaps and whole-country independent review remain open."
@@ -48,6 +48,8 @@ The TP draft now maps the complete current information annex and approved APA ap
 The cross-border draft now supplies the actual INR14 nine-column method, gross-payment/withholding reconciliation and printed column-9 control sum. [All three current attachments](../../../ledgers/md-country-evidence/inr14-current-attachments.json), read 31 October 2026, are retained unchanged. The instructions’ monthly-period wording does not override the annual Code deadline; classifier caption/list anomalies, entity-country implementation and authenticated field acceptance remain explicit. Other ordinary forms and independent whole-country review remain open.
 
 The payroll and cross-border drafts now map the actual current IALS21 form/country list and IPC21 main form, insured-category catalogue and completion requirements, read 31 October 2026. [Five original official attachments](../../../ledgers/md-country-evidence/payroll-current-attachments.json) are retained unchanged, with the IALS21 DOC conversion documented. The method distinguishes numerical rows, income-source codes, ECO classifications, nominal social/benefit bases and annual control sums. Missing annual-prefix values, overlapping source rules and authenticated portal implementation remain explicit. Other ordinary gaps and independent whole-country review remain open.
+
+The individual draft now maps the complete MF Order40 capital-cost proof list and actual current CET18 form, read 31 October 2026. [Both official attachments](../../../ledgers/md-country-evidence/capital-cet18-current-attachments.json) are retained unchanged. The method links nine acquisition routes to documents, preserves the statutory self-built-property exception and maps actual E7 education, resident/nonresident and capital fields. K7 loss-sign, generic education-cap wording and authenticated portal limits remain explicit. Other ordinary gaps and independent whole-country review remain open.
 
 ## Domains
 
