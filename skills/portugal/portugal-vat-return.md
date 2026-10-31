@@ -1,10 +1,10 @@
 ---
 name: portugal-vat-return
-description: "Portuguese VAT (IVA) for tax year 2026: who must charge it, the mainland rates of 23%, 13% and 6%, the Azores (16%, 9%, 4%) and Madeira (22%, 12%, 4%) rates, the art. 53 small-business exemption at EUR 15,000 with its 25% margin, the EU small-business scheme (EUR 100,000), monthly or quarterly periodic returns (EUR 650,000 test), return due on the 20th and payment on the 25th of the second month after the period (20 and 25 September for June and Q2, with deadlines on a weekend moving to the next working day), refunds after 12 months or above EUR 3,000, blocked input VAT, the domestic reverse charge on construction, late interest and RGIT fines. Trigger on: Portuguese VAT, IVA, declaração periódica, regime de isenção artigo 53, IVA trimestral mensal, autoliquidação, reembolso de IVA, coima IVA, Açores Madeira IVA. Out of scope: invoicing software, ATCUD and SAF-T (portugal-einvoice), bookkeeping (portugal-bookkeeping), income tax (pt-income-tax), corporate tax (pt-corporate-tax)."
-version: 2.2
+description: "Portuguese VAT (IVA) for tax year 2026: who must charge it, the mainland rates of 23%, 13% and 6%, the Azores (16%, 9%, 4%) and Madeira (22%, 12%, 4%) rates, the art. 53 small-business exemption at EUR 15,000 with its 25% margin, the EU small-business scheme (EUR 100,000), monthly or quarterly periodic returns (EUR 650,000 test), return due on the 20th and payment on the 25th of the second month after the period (20 and 25 September for June and Q2, with deadlines on a weekend moving to the next working day), refunds after 12 months or above EUR 3,000, blocked input VAT, the domestic reverse charge on construction, late interest and RGIT fines. Trigger on: Portuguese VAT, Portuguese VAT return, IVA, IVA Portugal, declaração periódica, Declaração Periódica de IVA, regime de isenção artigo 53, IVA trimestral mensal, autoliquidação, reembolso de IVA, coima IVA, Açores Madeira IVA. Out of scope: invoicing software, ATCUD and SAF-T (portugal-einvoice), bookkeeping (portugal-bookkeeping), income tax (pt-income-tax), corporate tax (pt-corporate-tax)."
+version: 2.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -15,13 +15,13 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.2
+# Portugal VAT (IVA): rates, thresholds, returns and penalties, tax year 2026 v2.3
 
 > **Source-cited draft: not reviewed by an accountant.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any business's facts. Do not rely on it to file, pay or take a position without review by a qualified professional in Portugal.
 
 **What this skill does.** It sets out the law layer of Portuguese VAT for 2026: who is in, the rates on the mainland and in the autonomous regions, the small-business exemption, return frequency, deadlines, refunds and penalties. Figures come from the VAT Code (Código do IVA, "CIVA"), the General Tax Law ("LGT") and the General Regime for Tax Offences ("RGIT"), read on the Portal das Finanças, from AT circulars and from the Diário da República.
 
-**Sibling skills.** [pt-vat-return](pt-vat-return.md) is a pointer to this file. [portugal-einvoice](portugal-einvoice.md) covers certified invoicing software, ATCUD and SAF-T. [portugal-bookkeeping](portugal-bookkeeping.md), [pt-income-tax](pt-income-tax.md) and [pt-corporate-tax](pt-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
+**Sibling skills.** [portugal-einvoice](portugal-einvoice.md) covers certified invoicing software, ATCUD and SAF-T. [portugal-bookkeeping](portugal-bookkeeping.md), [pt-income-tax](pt-income-tax.md) and [pt-corporate-tax](pt-corporate-tax.md) cover the rest. Load `vat-workflow-base` and `eu-vat-directive` alongside.
 
 ## Who this applies to
 
