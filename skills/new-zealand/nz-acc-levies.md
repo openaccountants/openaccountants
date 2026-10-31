@@ -83,11 +83,11 @@ IRD announced on 11 March 2025 that "The ACC earners' levies have now been set f
 
 ### Maximum and minimum for the self-employed, 2026-27 ([IRD Payroll calculations and business rules specification, 1 April 2026 to 31 March 2027](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf))
 
-| What | 2026-27 | Source wording | Source |
-| --- | --- | --- | --- |
-| Maximum liable earnings, employees and private domestic workers (Work and Earners' Accounts) | $156,641 | Row "Employees and private domestic workers ... (Work and Earners' Accounts)": 2025/26 $152,790, 2026/27 $156,641 | https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf |
-| Maximum liable earnings, self-employed people (Work and Earners' Accounts) | $156,641 | same table | https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf |
-| Minimum liable earnings on which self-employed people pay the Work and Earners' levies | $50,501 | "To increase the minimum liable earnings that self-employed people pay Work and Earners' levies on to $50,501 in 2026/27" | https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf |
+| What | 2026-27 | Source wording |
+| --- | --- | --- |
+| Maximum liable earnings, employees and private domestic workers (Work and Earners' Accounts) | $156,641 | Row "Employees and private domestic workers ... (Work and Earners' Accounts)": 2025/26 $152,790, 2026/27 $156,641 |
+| Maximum liable earnings, self-employed people (Work and Earners' Accounts) | $156,641 | same table |
+| Minimum liable earnings on which self-employed people pay the Work and Earners' levies | $50,501 | "To increase the minimum liable earnings that self-employed people pay Work and Earners' levies on to $50,501 in 2026/27" |
 
 IR3G 2026 (PDF page 61) explains the minimum for 2025-26 returns: "If you were in full-time employment and have recorded a loss, or your earnings are below the minimum earnings threshold, you are still liable for ACC levies. These will be calculated at the minimum level." IRD does not say here who counts as working full time for this purpose, or whether part-time self-employed people are treated differently: **check** with ACC.
 
@@ -130,21 +130,21 @@ Lump sums (IR335, lump sum section): no earners' levy on redundancy or retiring 
 
 ### Who pays what, by situation ([IR3G 2026](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf))
 
-| Situation | Treatment | Source | Source |
-| --- | --- | --- | --- |
-| Employee only | Earners' levy inside PAYE. Employer pays the Work levy. No ACC invoice to the employee | IR335 page 18 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Contractor on schedular payments | No earners' levy deducted by the payer ("this is the worker's responsibility, not yours"). ACC invoices the contractor for levies on schedular payments | IR335 schedular payments section; IR3G PDF page 15 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Sole trader | "Income from self-employment is liable for ACC levies which ACC will invoice you for" | IR3G PDF page 35 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Partner | Active partnership income is liable and invoiced by ACC; salary paid to a working partner has the earners' levy deducted through PAYE only if it is paid under a binding written contract of service signed by all the partners, the contract states the amount payable, and the partner personally and actively performs the services | IR3G PDF page 26; IR335 pages 18 and 56 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| LTC owner, passive investor | No ACC levies on LTC income, including LTC income received as beneficiary income through a trustee owner | IRD LTC page | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| LTC owner, active | Self-employed for ACC; ACC invoices the owner directly | IRD LTC page | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| LTC working owner paid salary or wages | Earners' levy deducted as part of PAYE. IR335 page 61 treats the payment as salary or wages only if the owner is employed under a written contract of employment. The LTC is invoiced by ACC for levies on salary or wages paid to employees | IRD LTC page; IR335 page 61 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Close company, shareholder-employee paid with no PAYE | ACC invoices the company for the earners' levy on that remuneration, based on the shareholder-employee remuneration declared in the company's IR4 | IR335 page 18; IR3G PDF page 29 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Employee and self-employed (mixed income) | "you have to pay ACC levies on both sources of income, up to the maximum. ACC will invoice you for the amount you'll have to pay" | IR3G PDF page 61 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Shareholder-employee pay from two or more companies | A refund from ACC may be due if the combined total is over the maximum ($152,790 for 2025-26 returns) | IR3G PDF page 61 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Private domestic worker or other IR56 taxpayer | Earners' levy paid as part of their own PAYE; ACC invoices them as an employer for the other levies on IR56 income, and makes allowance for levies paid as an employer | IR3G PDF page 61 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| Loss, or earnings below the minimum | Still liable; levies calculated at the minimum level | IR3G PDF page 61 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
-| BIC code missing or wrong | ACC selects a code; the levy rate may be wrong. Fix the code in myIR or on the next return | IR3G PDF page 8; [IRD, updating a client's BIC code](https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf |
+| Situation | Treatment | Source |
+| --- | --- | --- |
+| Employee only | Earners' levy inside PAYE. Employer pays the Work levy. No ACC invoice to the employee | IR335 page 18 |
+| Contractor on schedular payments | No earners' levy deducted by the payer ("this is the worker's responsibility, not yours"). ACC invoices the contractor for levies on schedular payments | IR335 schedular payments section; IR3G PDF page 15 |
+| Sole trader | "Income from self-employment is liable for ACC levies which ACC will invoice you for" | IR3G PDF page 35 |
+| Partner | Active partnership income is liable and invoiced by ACC; salary paid to a working partner has the earners' levy deducted through PAYE only if it is paid under a binding written contract of service signed by all the partners, the contract states the amount payable, and the partner personally and actively performs the services | IR3G PDF page 26; IR335 pages 18 and 56 |
+| LTC owner, passive investor | No ACC levies on LTC income, including LTC income received as beneficiary income through a trustee owner | IRD LTC page |
+| LTC owner, active | Self-employed for ACC; ACC invoices the owner directly | IRD LTC page |
+| LTC working owner paid salary or wages | Earners' levy deducted as part of PAYE. IR335 page 61 treats the payment as salary or wages only if the owner is employed under a written contract of employment. The LTC is invoiced by ACC for levies on salary or wages paid to employees | IRD LTC page; IR335 page 61 |
+| Close company, shareholder-employee paid with no PAYE | ACC invoices the company for the earners' levy on that remuneration, based on the shareholder-employee remuneration declared in the company's IR4 | IR335 page 18; IR3G PDF page 29 |
+| Employee and self-employed (mixed income) | "you have to pay ACC levies on both sources of income, up to the maximum. ACC will invoice you for the amount you'll have to pay" | IR3G PDF page 61 |
+| Shareholder-employee pay from two or more companies | A refund from ACC may be due if the combined total is over the maximum ($152,790 for 2025-26 returns) | IR3G PDF page 61 |
+| Private domestic worker or other IR56 taxpayer | Earners' levy paid as part of their own PAYE; ACC invoices them as an employer for the other levies on IR56 income, and makes allowance for levies paid as an employer | IR3G PDF page 61 |
+| Loss, or earnings below the minimum | Still liable; levies calculated at the minimum level | IR3G PDF page 61 |
+| BIC code missing or wrong | ACC selects a code; the levy rate may be wrong. Fix the code in myIR or on the next return | IR3G PDF page 8; [IRD, updating a client's BIC code](https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code) |
 
 ### CoverPlus and CoverPlus Extra (**check**: ACC-only)
 
