@@ -45,14 +45,16 @@ Every figure comes from the official page, actually opened by the writer. Memory
 Every rate, threshold, deadline and penalty comes from the law itself (gazette or law register) or the tax authority's own pages, fetched by you, for the tax year the skill covers. Cite the act and article on the row ("ZKPO art. 20"). The statute wins over an authority page that disagrees with it; follow the law, cite it, note the outdated page. Never cite PwC, KPMG, Deloitte, EY, taxsummaries, blogs, law-firm notes or another AI; a secondary source may help you find the law, it is never the citation. `tax_year` is the current year; when a law changes mid-year, give both periods with their dates. The `## Sources` table carries the date each page was read.
 
 - **Evidence:** the 50 most used old skills had 2,318 figures checked on 16 and 17 Oct 2026: 58.5% right, 34.1% wrong or stale, none clean. Rewrites to this standard (DE, GB, NL, MT) came out at about 99%. In the shape test of 31 Oct 2026, two of the three confident-wrong answers came from a stale figure (a 1040 Free File limit of USD 89,000 against USD 95,000 in the law) and from a skill still on tax year 2025; a 2025 skill answers 2026 questions wrong even when the model reads all of it.
-- **Check:** `check_tax_year_current` (a) and `check_sources_read_dates` (b). Whether the figure matches the law: reviewer (line 12).
+- **Read dates:** a read date means the page was opened and read, by you, on that day. A server answering is not a read. Where a page failed, the row says so and is not dated as read. Where only part of a long document was read, the row says which part. A row tagged with a tax year links a page for that year, and the page itself names it.
+- **Check:** `check_tax_year_current` (a), `check_sources_read_dates` (b), `check_read_date_evidence` (k, warns on a future date, a date resting on a status code, or six or more rows on one day that do not say what was read) and `check_year_matches_link` (o, warns when the URL names an earlier year than the row; it reads the URL, not the page). Whether the figure matches the law: reviewer (line 12).
 
 ### 2. The official URL sits on the rates row itself
 
-Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
+Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. A figure whose source could not be opened says `unverified` at the start of a cell: it counts as unverified, not linked, and a row with neither a URL nor that word fails the check. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
 
 - **Evidence:** year-boundary test: a skill that points at the law plus a live fetch answered 4 of 5; stored facts with no link, 0 of 5. Citations to an official source 76% with the skill against 20% without (4 Aug 2026). The section-demand read of 31 Oct 2026 (453 loads in 28 days, 6.4% with any section held back) showed `get_skill` almost always sends the Sources table, so the row URL is for the other read paths, not for `get_skill`.
-- **Check:** `check_rates_rows_sourced` (c).
+- **Host and column:** the URL is the page that holds the row's figure, on the site of the authority the row names, in the column the header says. Citing a secondary host or a neighbour's domain in a one-country skill warns.
+- **Check:** `check_rates_rows_sourced` (c), `check_sources_columns` (l) and `check_source_hosts` (m), both warnings.
 
 ### 3. Every rule states its conditions next to the figure
 
@@ -72,15 +74,17 @@ A how-to section names the portal (where you log in), the form, and the box or f
 
 Every rule, rate, threshold, deadline, exemption, taxpayer group and edge case the old version covered is carried into the new one (checked against the law) or listed on the "Not yet confirmed:" line. Only boilerplate, duplicates and content with no official source may go. If the new file is more than 25% shorter, the PR lists every cut under "Removed and why:", and the independent review compares old against new and records "Lost content restored: N". A rewrite that shrinks more than 25% without that record does not merge.
 
+A merge is the same rule with two files. A PR that deletes a skill names it and lists every item the loser held in two tables in the PR body: `## Moved` (item, from, to, source URL) and `## Not moved` (item, why). "No content lost" is not a list.
+
 - **Evidence:** 39 rules lost in 11 rewrites before the rule; 431 restored in 49 PRs since (count to 31 Oct 2026).
 - **Check:** reviewer (the "Removed and why:" list and the "Lost content restored: N" comment). No script tests this yet.
 
 ### 6. One skill per country and job, named in the pack README; no duplicates
 
-One job in one country has one skill. The pack `README.md` names it under `covered_by` when the slug does not say the domain. A second skill for the same cell is retired with an alias, not kept beside the first.
+One job in one country has one skill. The pack `README.md` names it under `covered_by` when the slug does not say the domain. A second skill for the same cell is retired with an alias, not kept beside the first. Folder, `jurisdiction:` and body name one place: `ID` is Indonesia, Idaho is `US-ID`, and a state file never carries another country's currency or tax authority.
 
 - **Evidence:** the scoreboard set itself carried pairs: `malta-vat-return` with `mt-vat3-quarterly-return-malta`, `germany-vat-return` with `de-vat-annual-and-special-schemes`. Routing to the right skill was 64% to 70% (30 Oct 2026). The shape test of 31 Oct 2026 put the cost of routing at about 7 points: the same skill pasted in scored 50% (Claude) and 40% (GPT); the live arm, where the model picks the skill, 43% on both. In the wild, `netherlands-vat-return` and `nl-vat-return` were both being loaded (16 and 13 loads in 28 days).
-- **Check:** `scripts/build-register.py`, `duplicate` column: two or more slugs in one (country, domain) cell that `covered_by` does not name. `scripts/validate-guides.py` fails a PR that adds or renames a skill when another skill in that jurisdiction has the same job, unless the PR deletes that skill; a different job in an occupied cell only warns. A skill may declare `job:` (a short kebab id such as `30-percent-ruling`); otherwise the job comes from the slug without its country, year and numeric suffix (`scripts/job_identity.py`). `skills/DUPLICATES.md` lists the existing groups.
+- **Check:** `scripts/build-register.py`, `duplicate` column: two or more slugs in one (country, domain) cell that `covered_by` does not name. `scripts/validate-guides.py` fails a PR that adds or renames a skill when another skill in that jurisdiction has the same job, unless the PR deletes that skill; a different job in an occupied cell only warns. A skill may declare `job:` (a short kebab id such as `30-percent-ruling`); otherwise the job comes from the slug without its country, year and numeric suffix (`scripts/job_identity.py`). `skills/DUPLICATES.md` lists the existing groups. `check_jurisdiction_body` (n) warns when folder, frontmatter or body disagree.
 
 ### 7. The headings are one of the two canonical sets, verbatim, in order
 

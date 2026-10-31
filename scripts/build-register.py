@@ -44,6 +44,8 @@ skill_checks = _load("skill_checks", "skill_checks.py")
 DOMAIN_CODES = coverage.DOMAIN_CODES
 PSEUDO_CODES = coverage.PSEUDO_CODES
 
+NEARLY_DONE_PER_COUNTRY = 3
+
 # Old slug guess, kept only as `task_guess` for countries whose README has no
 # domain model. The domain column is the GOAL.md code; this is a hint.
 TASKS = [
@@ -74,6 +76,19 @@ def task_guess(skill, fm):
     return "unclassified"
 
 
+def nearly_done(tax_rows):
+    """Per country, the skills closest to check (c): fewest rows missing, then most rows."""
+    by_country = collections.defaultdict(list)
+    for r in tax_rows:
+        if r["_rates_missing"] and r["jurisdiction"] not in PSEUDO_CODES and r["jurisdiction"] != "?":
+            by_country[r["jurisdiction"]].append(r)
+    out = []
+    for code in sorted(by_country):
+        ranked = sorted(by_country[code], key=lambda r: (r["_rates_missing"], -r["rates_rows_total"], r["slug"]))
+        out += ranked[:NEARLY_DONE_PER_COUNTRY]
+    return out
+
+
 def load_jurisdiction_dirs():
     with open(SCRIPTS / "data" / "jurisdictions.json", encoding="utf-8") as fh:
         return {row["code"]: row.get("dir") or "" for row in json.load(fh)}
@@ -99,6 +114,7 @@ def main():
         has_model = applicable is not None or bool(not_applicable) or bool(covered_by)
         domains, named = coverage.cell_domains(s, covered_by)
         results = skill_checks.run_checks(s["path"], text, fm)
+        rates = skill_checks.rates_row_counts(text)
         row = {
             "slug": s["slug"],
             "jurisdiction": code,
@@ -115,6 +131,12 @@ def main():
             "last_updated": s.get("last_updated") or "",
             "category_raw": s.get("category") or "",
             "path": s["path"],
+            "rates_rows_total": rates["total"],
+            "rates_rows_linked": rates["linked"],
+            "rates_rows_unverified": rates["unverified"],
+            "rates_linked_pct": "" if rates["linked_pct"] is None else rates["linked_pct"],
+            "rates_unverified_pct": "" if rates["unverified_pct"] is None else rates["unverified_pct"],
+            "_rates_missing": rates["missing"],
             "_domains": domains,
             "_named": named,
         }
@@ -191,6 +213,15 @@ def main():
         failed = len(tax_rows) - passed
         rate = (100 * passed / len(tax_rows)) if tax_rows else 0
         lines.append(f"| ({letter}) | `{name}` | {passed} | {failed} | {rate:.0f}% |")
+    rates_total = sum(r["rates_rows_total"] for r in tax_rows)
+    rates_linked = sum(r["rates_rows_linked"] for r in tax_rows)
+    rates_unverified = sum(r["rates_rows_unverified"] for r in tax_rows)
+    lines += ["", "## Rates rows", "",
+              f"Tax skills only: {rates_total} rows, {rates_linked} linked "
+              f"({100 * rates_linked / max(rates_total, 1):.1f}%), {rates_unverified} marked unverified "
+              f"({100 * rates_unverified / max(rates_total, 1):.1f}%), "
+              f"{rates_total - rates_linked - rates_unverified} neither. "
+              "A row marked unverified is not counted as linked.", ""]
     lines += ["", "## By domain", "", "A skill covering two domains counts in both.", "",
               "| Domain | Skills | Signed |", "|---|---:|---:|"]
     for d in DOMAIN_CODES:
@@ -226,6 +257,17 @@ def main():
         lines += ["| Country | Domain | Skill |", "|---|---|---|"]
         for r in dup_skills:
             lines.append(f"| {r['jurisdiction']} | {r['duplicate']} | `{r['slug']}` |")
+    else:
+        lines.append("None.")
+    lines += ["", "## Nearly done", "",
+              f"For each country, the {NEARLY_DONE_PER_COUNTRY} tax skills with the fewest rates rows "
+              "neither linked nor marked unverified. A skill with no rates table or none missing is not listed.", ""]
+    nearly = nearly_done(tax_rows)
+    if nearly:
+        lines += ["| Country | Skill | Missing | Rows | Linked % | Unverified % |", "|---|---|---:|---:|---:|---:|"]
+        for r in nearly:
+            lines.append(f"| {r['jurisdiction']} | `{r['slug']}` | {r['_rates_missing']} | {r['rates_rows_total']} "
+                         f"| {r['rates_linked_pct']} | {r['rates_unverified_pct']} |")
     else:
         lines.append("None.")
     (ROOT / "skills" / "REGISTER.md").write_text("\n".join(lines) + "\n")

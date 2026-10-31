@@ -35,12 +35,19 @@ Checks (ERROR = exit 1, WARN = printed summary only):
      accounting-pack and router files. Rates-row URLs, the nine canonical
      headings and the "Not yet confirmed" line WARN in both modes until the
      backlog is cleared. The full run prints a count of failures per check.
+     The reviewer-lesson checks (k to o: read-date evidence, Sources columns,
+     source hosts, jurisdiction against body, row year against linked page)
+     WARN in both modes, so old content never fails on them.
   8. PR mode only: one job in one jurisdiction has one skill
      (docs/skill-template.md, scripts/job_identity.py). ERROR if an added or
      renamed skill has the job or stripped name of another skill there, unless
      the PR deletes that skill. WARN if its (country, domain) cell is occupied by
      a different job, or no domain can be classified. Pass --duplicates-report to
      write skills/DUPLICATES.md; existing groups are one WARN line on a full run.
+  9. PR mode only: a PR that deletes a skill is a merge or a retirement. ERROR
+     unless the PR body names it and has `## Moved` and `## Not moved` tables;
+     WARN for a heading of the deleted skill those tables do not cover. Outside
+     GitHub Actions there is no PR body, so it WARNs.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -313,6 +320,35 @@ def check_new_skill_jobs(bi, errors, warnings):
     warnings.extend(new_warnings)
 
 
+def pull_request_body():
+    """The PR description from the Actions event file; None outside a pull_request run."""
+    event = os.environ.get("GITHUB_EVENT_PATH")
+    if not event or not os.path.exists(event):
+        return None
+    with open(event, encoding="utf-8") as fh:
+        pull_request = json.load(fh).get("pull_request")
+    return None if pull_request is None else pull_request.get("body") or ""
+
+
+def check_merge_records(errors, warnings, pr_body=None, deleted=None, old_text=None):
+    """Line 5: a deleted skill's items are all accounted for in the PR body."""
+    deleted = added_and_deleted_vs_main()[1] if deleted is None else deleted
+    pr_body = pull_request_body() if pr_body is None else pr_body
+    for rel in sorted(deleted):
+        if not rel.startswith("skills/") or not rel.endswith(".md") or os.path.basename(rel) == "README.md":
+            continue
+        slug = os.path.splitext(os.path.basename(rel))[0]
+        if pr_body is None:
+            warnings.append(f"{rel}: deleted; list its items under ## Moved and ## Not moved in the PR body")
+            continue
+        text = old_text(rel) if old_text else subprocess.run(
+            ["git", "show", f"origin/main:{rel}"], cwd=REPO_ROOT, capture_output=True, text=True,
+        ).stdout
+        problems, notes = skill_checks.merge_record_problems(slug, text, pr_body)
+        errors.extend(f"{rel}: {p}" for p in problems)
+        warnings.extend(f"{rel}: {n}" for n in notes)
+
+
 def same_job_report(bi):
     return job_identity.same_job_groups(
         guides_with_jobs(bi), job_identity.load_jurisdiction_words(), load_coverage().PSEUDO_CODES
@@ -484,7 +520,7 @@ def check_guides(bi, errors, warnings, only_files=None):
         frontmatter = skill_checks.read_frontmatter(text)
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
-        for letter, name, _func in skill_checks.CHECKS:
+        for letter, name, _func in skill_checks.CHECKS + skill_checks.LESSON_CHECKS:
             problems = results[name]
             if not problems:
                 continue
@@ -631,11 +667,16 @@ def main():
             only = {f for f in changed if f.startswith(("skills/", "packages/"))}
             print(f"changed-only mode: validating {len(only)} changed guide file(s)")
             if not only:
+                check_merge_records(errors, warnings)
+                if errors:
+                    print("\n".join(f"ERROR: {e}" for e in errors))
+                    sys.exit(1)
                 print("no guide files changed — validation passed")
                 return
     check_guides(bi, errors, warnings, only_files=only)
     if changed_only:
         check_new_skill_jobs(bi, errors, warnings)
+        check_merge_records(errors, warnings)
     else:
         groups = same_job_report(bi)
         warnings.append(f"{len(groups)} same-job groups, see skills/DUPLICATES.md")

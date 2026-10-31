@@ -4,7 +4,8 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 jurisdiction: NL
 category: international
 tax_year: 2026
-last_updated: 2026-10-30
+version: 1.0
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -364,6 +365,34 @@ If the shortfall had been more than €1,000, the B&B would have filed a Supplet
 
 A submitted correction changes reported turnover but produces neither VAT payable nor a refund. The business later discovers that the turnover allocation still needs amendment. No decision is issued for the nil-result correction: fill in and submit the correction form again. Do not wait for a decision that will not arrive. Where a refund decision or additional assessment is issued, use the objection route instead.
 
+### Case 12: which should I choose, the KOR or normal VAT? ([KOR conditions](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden); [joining the KOR](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor), read 2026-10-31)
+
+A Dutch sole trader expects turnover of €18,000 at 21%, this year and last year under the €20,000 limit, and pays €1,200 of VAT on costs a year. In the KOR the business charges no VAT, files no normal returns and reclaims nothing.
+
+- **Customers are businesses that deduct VAT.** The price stays €18,000 net. Normal VAT: the customer pays €21,780, the business pays over €3,780 less €1,200 and keeps €19,200. KOR: it keeps €18,000. Normal VAT is €1,200 better. The deciding figure is the input VAT.
+- **Customers are consumers paying €18,000 all in.** Normal VAT: output VAT is 18,000 x 21/121 = €3,123.97, less €1,200 is €1,923.97 payable, and the business keeps €16,076.03. KOR: it keeps €18,000. The KOR is €1,923.97 better. The deciding figure is the net VAT payable.
+- **Before joining,** count the lock: after leaving, the business cannot rejoin for the rest of that calendar year and the next. An earlier deduction on investment goods may need revision. A quarterly filer joining from 1 January 2027 needs the application in by 3 December 2026.
+
+```oa-check
+name: KOR against normal VAT, EUR 18,000 turnover
+inputs:
+  turnover: 18000
+  input_vat: 1200
+steps:
+  - keep_b2b_normal: turnover + input_vat
+  - b2b_gain_normal: keep_b2b_normal - turnover
+  - output_consumer: round(turnover * 21 / 121, 2)
+  - payable_consumer: output_consumer - input_vat
+  - keep_consumer_normal: turnover - payable_consumer
+  - consumer_gain_kor: turnover - keep_consumer_normal
+expected:
+  b2b_gain_normal: 1200
+  output_consumer: 3123.97
+  payable_consumer: 1923.97
+  keep_consumer_normal: 16076.03
+  consumer_gain_kor: 1923.97
+```
+
 ### Further decision checks
 
 - **First-year adjustment:** an investment's actual first-year taxable use differs from the initial deduction assumption. Reconcile the first-use and year-end deduction; do not apply the later-year tolerance to suppress this adjustment. [Investment revision](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/belaste_en_vrijgestelde_omzet/inschatting_van_het_gebruik2/herziening_aftrek_bij_investeringsgoederen2/herziening_aftrek_bij_investeringsgoederen)
@@ -428,6 +457,22 @@ Returns filed with software can be sent from the 24th of the last month of the p
 ### ICP listing deadlines (Dutch-established businesses) ([ICP notes 2026](https://download.belastingdienst.nl/belastingdienst/docs/toelichting-digitale-opgaaf-intracomm-pres-ob1291t62fd.pdf))
 
 The listing must be received within 1 month after the chosen period: quarterly by 30 April, 31 July, 31 October and 31 January of the next year; monthly by the end of the next month. Annual ICP needs permission. A late or wrong listing can bring a penalty and loss of the 0% rate.
+
+### How to file in Mijn Belastingdienst Zakelijk and pay, step by step
+
+**What you need first:** the VAT number, the login below, the sales and purchase records for the period, the compliant invoices behind box 5b, and the return period and deadline in your account.
+
+1. **Get the right login.** A sole trader or zzp'er logs in with DigiD. A company or other organisation, a fiscal unity, or an intermediary uses eHerkenning. A sole trader authorises a helper at machtigen.digid.nl; an intermediary for a business uses a ketenmachtiging ([Belastingdienst: help logging in](https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/hulp-inloggen-belastingdienst-zakelijk), read 2026-10-31).
+2. **Log in to Mijn Belastingdienst Zakelijk and open the return for the period** ([Belastingdienst: filling in and sending](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/hoe-btw-aangifte-invullen-en-versturen), read 2026-10-31).
+3. **Fill in the boxes:** 1a, 1b, 1d, 1e, 2a, 3a, 3b, 3c, 4a, 4b and 5b, using the method above, in whole euros. Let the program calculate the total. Enter a nil return with no activity.
+4. **In the last return of the year, add the annual adjustments,** such as private use ([Belastingdienst: filling in and sending](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/hoe-btw-aangifte-invullen-en-versturen), read 2026-10-31).
+5. **Send it.** You get a receipt (ontvangstbevestiging) in Mijn Belastingdienst Zakelijk; a tax adviser gets it digitally. Filing through accounting software or a tax service provider is also allowed ([Belastingdienst: filling in and sending](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/hoe-btw-aangifte-invullen-en-versturen), read 2026-10-31).
+6. **Pay without waiting for an assessment.** After login you see the last payment date. Transfer to IBAN NL04 RABO 0200 1122 44, name Belastingdienst, with the betalingskenmerk. Without it the payment cannot be processed. Find it in Mijn Belastingdienst Zakelijk, in the return, or with Zoekhulp betalingskenmerk or the Btw-Alert app. A return filed there can also be paid by iDEAL or Wero ([Belastingdienst: paying or receiving VAT](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw_betalen), read 2026-10-31). The money must be on the account by the date, so allow a few days for your bank ([Belastingdienst: filling in and sending](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/hoe-btw-aangifte-invullen-en-versturen), read 2026-10-31).
+7. **If it is a refund,** a letter comes within 8 weeks of the Belastingdienst receiving the return, and the money within 1 week of that letter's date ([Belastingdienst: paying or receiving VAT](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw_betalen), read 2026-10-31).
+8. **File the ICP listing** for box 3b if it applies, by the date under "ICP listing deadlines".
+9. **To correct it:** EUR 1,000 or less goes in the next return; more goes on a Suppletie form in Mijn Belastingdienst Zakelijk, within 8 weeks of finding the error ([Belastingdienst: correcting a return](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren), read 2026-10-31, and "Corrections" above).
+
+**Stop and get a professional when:** anything under "When to refuse or refer" applies.
 
 ## Completion checklist
 
@@ -494,8 +539,14 @@ This skill is not tax advice. Check the linked Belastingdienst pages for the per
 | Belastingdienst, bijzondere situaties boetes btw | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/boetes/uitzonderlijke_of_bijzondere_situaties | 2026-09-27 |
 | Belastingdienst, belastingrente bij btw | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/belastingrente_betalen_bij_loonbelasting_btw_en_overdrachtsbelasting | 2026-09-27 |
 | Belastingdienst, overzicht percentages belastingrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente | 2026-09-27 |
+| Belastingdienst, btw-aangifte invullen en versturen | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/hoe-btw-aangifte-invullen-en-versturen | 2026-10-31 |
+| Belastingdienst, btw betalen (IBAN, betalingskenmerk, iDEAL, refund timing) | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw_betalen | 2026-10-31 |
+| Belastingdienst, hulp bij inloggen op Mijn Belastingdienst Zakelijk | https://www.belastingdienst.nl/wps/wcm/connect/nl/home/content/hulp-inloggen-belastingdienst-zakelijk | 2026-10-31 |
+| Belastingdienst, aanmelden KOR | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor | 2026-10-31 |
+| Belastingdienst, KOR voorwaarden | https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden | 2026-10-31 |
+| Belastingdienst, aangifte corrigeren | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren | 2026-10-31 |
 
-Not yet confirmed: the decree that sets the 5% belastingrente for 2026 (only the Belastingdienst overview was read; AWR art. 30hb delegates the rate to a decree); the statutory source of the €1,883 and €10,000 annual-return conditions, of the €50 minimum payment penalty, and of the car private-use percentages (2.7%, 1.5%) and their cap (Belastingdienst pages only); whether belastingrente is charged on an error of €1,000 or less that is corrected in a return filed more than 3 months after the year.
+Not yet confirmed: the decree that sets the 5% belastingrente for 2026 (only the Belastingdienst overview was read; AWR art. 30hb delegates the rate to a decree); the statutory source of the €1,883 and €10,000 annual-return conditions, of the €50 minimum payment penalty, and of the car private-use percentages (2.7%, 1.5%) and their cap (Belastingdienst pages only); whether belastingrente is charged on an error of €1,000 or less that is corrected in a return filed more than 3 months after the year. How-to: the on-screen labels inside Mijn Belastingdienst Zakelijk were not read, because they sit behind login. 
 
 <!-- openaccountants-cta-block -->
 
