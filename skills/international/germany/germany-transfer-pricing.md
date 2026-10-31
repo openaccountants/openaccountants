@@ -1,10 +1,10 @@
 ---
 name: germany-transfer-pricing
 description: Use this skill whenever asked about Germany transfer pricing rules, documentation requirements, or Verrechnungspreise compliance. Trigger on phrases like "transfer pricing Germany", "German TP documentation", "Verrechnungspreise", "master file Germany", "local file Germany", "CbCR Germany", "APA Germany", "§90 AO", "transaction matrix Germany", "BZSt", or any question about intercompany pricing for German entities.
-version: 1.0
+version: 1.3
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -18,9 +18,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 How Germany prices and documents dealings between a business and its related parties abroad: the arm's length rule, the records a business must keep, the master file, the country-by-country report, what must be handed over in a tax audit and when, the surcharges, and advance pricing procedures. It is for German companies, partnerships and permanent establishments that deal with related parties abroad, and for their advisers. Figures are for tax year 2026. The statute figures are read from the consolidated federal law pages as they stood in September 2026. Four finance ministry papers are also used, each dated another year: the administrative principles on transfer pricing of 12 December 2024, the information sheet on the transaction matrix of 2 April 2025, the application decree on advance pricing procedures of 26 June 2024, and the administrative principles on documentation duties of 3 December 2020. The 2020 paper is older than the changes that apply from 1 January 2025. This Guide uses it only for points that the later law did not change, and names it each time.
 
-## Germany Transfer Pricing Guide v1.0
+## Germany Transfer Pricing Guide v1.3
 
-Version 1.0 of this Guide, refreshed against the official pages for 2026.
+Version 1.3 of this Guide, refreshed against the official pages for 2026.
 
 ## Section 1: Quick Reference
 
@@ -39,7 +39,7 @@ Version 1.0 of this Guide, refreshed against the official pages for 2026.
 | Effective date (current regime) | Records regulation: financial years beginning after 31 December 2016 (§ 7 GAufzV). Transaction matrix, the 30-day handover and the current surcharge rule: from 1 January 2025 (Art. 97 § 37(5) EGAO). Current § 1 AStG: from assessment period 2022. The financing rules in § 1(3d) and (3e) AStG: from assessment period 2024 (§ 21 AStG) |
 | Currency | EUR |
 | Documentation language | German. The tax office can allow another language on application (§ 2(5) GAufzV) |
-| Guide version | 1.0 |
+| Guide version | 1.3 |
 
 The law pages behind this table: § 1 AStG at https://www.gesetze-im-internet.de/astg/__1.html and § 90 AO at https://www.gesetze-im-internet.de/ao_1977/__90.html
 
@@ -171,8 +171,8 @@ From 1 January 2025 (Fourth Bureaucracy Relief Act, BEG IV). The law's own word 
 | Who files | A business with its seat or management in Germany that draws up consolidated accounts, or must do so under rules other than tax law (German group parent), if both are true: the group accounts include at least one foreign business or foreign permanent establishment, AND the revenue test in the table above is met (§ 138a(1) AO) |
 | Who does not | A German business that is itself included in the consolidated accounts of another business, unless it is appointed or the fallback rule applies (§ 138a(1) sentence 2 AO) |
 | Appointed company | A foreign group parent can appoint an included German group company to file for the group. That company then files with the BZSt (§ 138a(3) AO) |
-| Fallback | If the BZSt has not received the report of a group with a foreign parent, an included German group company must as a rule file it. When one German company files, the others are free. A company that cannot get or make the report must tell the BZSt within the filing period and give all the data it has or can get (§ 138a(4) AO). The same duties apply to the German permanent establishment of a foreign business that is included in consolidated accounts as foreign group parent or as included foreign group company (§ 138a(4) sentence 5 AO) |
-| Filing deadline | At the latest one year after the end of the financial year that the report covers (§ 138a(6) AO) |
+| Fallback | If the BZSt has not received the report of a group with a foreign parent, an included German group company must as a rule file it. When one German company files, the others are free. A company that cannot get or make the report must tell the BZSt within the filing period and give all the data it has or can get (§ 138a(4) AO). The same duties apply to the German permanent establishment of a foreign business that is included in consolidated accounts as foreign group parent or as included foreign group company (§ 138a(4) sentence 5 AO) If that company could reasonably expect timely transmission and later learns that transmission failed without its fault, it must fulfil the report duty or the unavailable-report notice/data duty within one month after learning of the non-transmission (§ 138a(4) sentence 4 AO). This exception also extends to the specified German permanent establishment under sentence 5; it does not excuse a culpable failure. |
+| Filing deadline | Ordinarily at the latest one year after the end of the financial year that the report covers. For the justified-expectation, no-fault fallback in § 138a(4) sentence 4 AO, the deadline is instead one month after learning of the non-transmission, including the specified German permanent establishment (§ 138a(6) AO). It is not another twelve-month period. |
 | Filing method | Electronic, in the officially prescribed data set. The BZSt takes the data as an XML file through its bulk data interface (DIP) or by file upload in the BZSt online.portal. See https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/ElektronischeDatenuebermittlung/elektronische_Datenuebermittlung.html |
 | Notification | There is no separate yearly notice to the BZSt. A German business states in its tax return whether it is a German group parent, an appointed company, or an included German company of a group with a foreign parent. In the last case it also states which business files the report and with which authority. If that statement is missing, the included German company must itself file the report on time (§ 138a(5) AO). The same applies to such a German permanent establishment (§ 138a(5) sentence 4 AO). The BZSt's questions and answers page says the BZSt need not be told in advance which group company will file: https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/FAQ/FAQ_node.html Its page on tax return statements says the corporate tax return takes these entries in Anlage WA: https://www.bzst.de/DE/Unternehmen/Intern_Informationsaustausch/CountryByCountryReporting/Steuererklaerungen/steuererklaerungen_node.html |
 | Content | Per tax jurisdiction: revenue with related and with unrelated businesses, income tax paid and accrued, profit before income tax, equity, retained earnings, number of employees, tangible assets. Plus a list of all businesses and permanent establishments with their main activities (§ 138a(2) AO) |
@@ -244,7 +244,7 @@ The ministry says the list is not closed and that a mix of methods can be right 
 | Extraordinary transactions | 30 days from the announcement of the audit order, without being asked | § 90(4) sentence 3 AO, https://www.gesetze-im-internet.de/ao_1977/__90.html |
 | Local File submission | 30 days from the request | § 90(4) sentence 2 AO, same page |
 | Longer period | Possible in justified single cases | § 90(4) sentence 4 AO, same page |
-| CbCR filing | At the latest one year after the end of the financial year | § 138a(6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |
+| CbCR filing | Ordinarily at the latest one year after the end of the financial year. For the qualifying justified-expectation, no-fault fallback, fulfil the report or unavailable-report notice/data duty within one month after learning of the non-transmission; the specified German permanent establishment is included | § 138a(4) sentences 3–5 and (6) AO, https://www.gesetze-im-internet.de/ao_1977/__138a.html |
 | Corporate tax return | Seven months after the end of the calendar year. Where a tax adviser prepares the return: the last day of February of the second calendar year after the tax period. The tax office can call for it earlier in listed cases | § 149(2) to (4) AO, https://www.gesetze-im-internet.de/ao_1977/__149.html |
 
 ## Section 6: Penalties
@@ -391,6 +391,44 @@ Germany has no formal safe harbour. The documentation thresholds lower the paper
 9. Where certainty is wanted in advance and a tax treaty applies, consider an advance pricing procedure under § 89a AO with the BZSt. Weigh the fee in Section 7 and the waiver of legal remedies. https://www.gesetze-im-internet.de/ao_1977/__89a.html
 10. If records were missed or are late, read § 162(3) and (4) AO before answering the tax office: late usable records and missing records lead to different surcharges, and an excusable failure leads to none. https://www.gesetze-im-internet.de/ao_1977/__162.html
 
+## Worked examples
+
+### Example 1: eligible low-value support service
+
+These are fictional 2026 inputs. A German group service company supplies bookkeeping support to its foreign related group company. The recipient receives an independently established business benefit and would pay for the service or perform it itself. The service is supportive, is not the group's principal external business, neither uses nor creates unique or valuable intangibles, and neither assumes nor controls significant risks nor creates them. It is not manufacturing, R&D, sales, marketing or distribution. The eligible service cost base has been established at EUR 100,000, with no pass-through costs or excluded shareholder/duplicated activity in this example. The multinational group demonstrably applies the 5% mark-up consistently in practice. These facts satisfy the selected administrative low-value-service route; a bookkeeping label alone does not establish eligibility. Under BMF administrative principles of 12 December 2024, paragraphs 3.74–3.77, the illustrative price is EUR 100,000 + EUR 5,000 = EUR 105,000. [Official BMF text](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1).
+
+```oa-check
+name: Fictional eligible low-value bookkeeping support, option A
+inputs:
+  eligible_service_cost: 100000
+steps:
+  - mark_up: eligible_service_cost * 0.05
+  - service_price: eligible_service_cost + mark_up
+expected:
+  mark_up: 5000
+  service_price: 105000
+```
+
+### Example 2: matched independent CUP sale and German income correction
+
+These are fictional 2026 inputs, not a benchmark for a real client. A German company owns 60% of its foreign customer and sells it 1,000 identical units at EUR 100 per unit. The same German seller has a genuinely comparable independent sale at EUR 120 per unit. The example stipulates matched timing, market, currency, quantities, functions, risks, assets, delivery, payment, warranty and other economically material terms, with no adjustment required. The comparability study establishes that this CUP is the best-fitting method on these facts. The independent price is an example input; it is not a statutory price or an automatic preference for CUP. The related-party sale reduces German income, so § 1(1) AStG restores the income that would have arisen at arm's length. Related-party revenue is EUR 100,000, arm's-length revenue EUR 120,000, and the income increase EUR 20,000. This computes the income correction only, not corporation tax, trade tax, customs, VAT or a foreign corresponding adjustment. [AStG § 1(1)–(3)](https://www.gesetze-im-internet.de/astg/__1.html); [BMF paragraph 3.9](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Internationales_Steuerrecht/Allgemeine_Informationen/2024-12-12-vwg-verrechnungspreise-2024.pdf?__blob=publicationFile&v=1).
+
+```oa-check
+name: Fictional matched CUP sale income correction, option A
+inputs:
+  units: 1000
+  charged_unit_price: 100
+  independent_unit_price: 120
+steps:
+  - charged_revenue: units * charged_unit_price
+  - arm_length_revenue: units * independent_unit_price
+  - income_increase: arm_length_revenue - charged_revenue
+expected:
+  charged_revenue: 100000
+  arm_length_revenue: 120000
+  income_increase: 20000
+```
+
 ## Ask the client first
 
 - Who are the related parties abroad: holdings of at least one quarter, control, or a shared parent? Is there a permanent establishment abroad, or is the client the German permanent establishment of a foreign business?
@@ -403,7 +441,7 @@ Germany has no formal safe harbour. The documentation thresholds lower the paper
 ## When to refuse or refer
 
 - Setting or defending an actual price: benchmarking studies, database searches, choice of comparables. Refer to a German Steuerberater with transfer pricing experience.
-- A relocation of functions and the valuation of a transfer package or of intangibles. See § 1a AStG at https://www.gesetze-im-internet.de/astg/__1a.html
+- A relocation of functions and the valuation of a transfer package or of intangibles. See § 1(3b) and (3c) AStG at https://www.gesetze-im-internet.de/astg/__1.html. The price-adjustment rule for intangibles is in § 1a AStG at https://www.gesetze-im-internet.de/astg/__1a.html
 - The public income tax information report under §§ 342b and following HGB is a separate duty with its own revenue test. It is outside this Guide. See https://www.gesetze-im-internet.de/hgb/__342b.html
 - Financing inside the group: loans, guarantees, cash pools, group ratings under § 1(3d) and (3e) AStG.
 - Profit allocation to permanent establishments under § 1(5) AStG and its regulation.
@@ -417,6 +455,8 @@ Germany has no formal safe harbour. The documentation thresholds lower the paper
 ## Sources
 
 - AStG § 1 (arm's length rule), § 1a (price adjustment clause for intangibles) and § 21 (start dates): https://www.gesetze-im-internet.de/astg/__1.html and https://www.gesetze-im-internet.de/astg/__1a.html and https://www.gesetze-im-internet.de/astg/__21.html
+- Referral scope rechecked on 29 October 2026: AStG § 1(3b) on transfer packages, § 1(3c) on intangible remuneration and § 1a on price adjustment; official links are above.
+- Worked-example source contexts rechecked on 29 October 2026: AStG § 1(1)–(3), BMF paragraphs 3.9 and 3.74–3.77; the numerical transaction inputs are fictional, not statutory prices.
 - AO § 90 (records, handover), § 162 (estimates, surcharges), § 138a (country-by-country report), § 379 (fine), § 89a (advance pricing procedures), § 149 (return deadlines): https://www.gesetze-im-internet.de/ao_1977/__90.html and https://www.gesetze-im-internet.de/ao_1977/__162.html and https://www.gesetze-im-internet.de/ao_1977/__138a.html and https://www.gesetze-im-internet.de/ao_1977/__379.html and https://www.gesetze-im-internet.de/ao_1977/__89a.html and https://www.gesetze-im-internet.de/ao_1977/__149.html
 - EGAO Art. 97 § 37 (start of the 2025 rules) and § 31 (start of the country-by-country report): https://www.gesetze-im-internet.de/aoeg_1977/art_97__37.html and https://www.gesetze-im-internet.de/aoeg_1977/art_97__31.html
 - GAufzV § 1 to § 6 and the annex to § 5: https://www.gesetze-im-internet.de/gaufzv_2017/__1.html and https://www.gesetze-im-internet.de/gaufzv_2017/__2.html and https://www.gesetze-im-internet.de/gaufzv_2017/__3.html and https://www.gesetze-im-internet.de/gaufzv_2017/__4.html and https://www.gesetze-im-internet.de/gaufzv_2017/__5.html and https://www.gesetze-im-internet.de/gaufzv_2017/__6.html and https://www.gesetze-im-internet.de/gaufzv_2017/anlage.html

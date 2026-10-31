@@ -1,10 +1,10 @@
 ---
 name: de-crypto-tax
-description: Use this skill whenever asked about German cryptocurrency taxation. Trigger on phrases like "Krypto Steuer", "crypto tax Germany", "Haltefrist", "§23 EStG", "private Veräußerungsgeschäfte", "Freigrenze", "staking tax Germany", "mining income Germany", "BMF Schreiben", "DeFi tax Germany", "FIFO crypto", or any question about buying, selling, staking, mining, or lending crypto as a German tax resident. This skill covers the 1-year holding period, €1,000 Freigrenze, staking/mining classification, DeFi treatment, and the BMF guidance of 10.05.2022. ALWAYS read this skill before advising on German crypto taxation.
-version: 1.0
+description: Use this skill whenever asked about German cryptocurrency taxation. Trigger on phrases like "Krypto Steuer", "crypto tax Germany", "Haltefrist", "§23 EStG", "private Veräußerungsgeschäfte", "Freigrenze", "staking tax Germany", "mining income Germany", "BMF Schreiben", "DeFi tax Germany", "FIFO crypto", or any question about buying, selling, staking, mining, or lending crypto as a German tax resident. This skill covers the 1-year holding period, €1,000 Freigrenze, staking/mining classification, DeFi treatment, and the BMF guidance of 06.03.2025. ALWAYS read this skill before advising on German crypto taxation.
+version: 1.3
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-29
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -57,7 +57,7 @@ How Germany taxes an individual who is fully liable to German income tax and hol
 | Same limit for years up to and including 2023 (late or corrected returns only) | n/a | n/a | Rn 53: "bis Veranlagungszeitraum 2023: 600 €" |
 | Freigrenze for all income from services (§ 22 Nr. 3), tested after costs; a cliff | EUR 256 | EUR 256 | [§ 22 Nr. 3 sentence 2 EStG](https://www.gesetze-im-internet.de/estg/__22.html): "weniger als 256 Euro im Kalenderjahr" |
 | Employees: untaxed side income that forces an assessment if MORE than | EUR 410 | EUR 410 | [§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html) |
-| Employees who are assessed: side income is deducted again if NOT MORE than | EUR 410 | EUR 410 | § 46(3) EStG |
+| Assessed employees: eligible non-withheld income ceiling before the actual § 46(3) exclusions/reductions below; not an unconditional full deduction | EUR 410 | EUR 410 | § 46(3) EStG |
 | Record retention of six years applies if positive surplus income is MORE than | EUR 500,000 | EUR 500,000 | [§ 147a AO](https://www.gesetze-im-internet.de/ao_1977/__147a.html); Rn 105 |
 | The same threshold from 1 January 2027 | EUR 750,000 from 2027 | n/a | § 147a AO footnote; Rn 105 |
 | Late-filing surcharge per started month (tax less prepayments and withholding) | 0.25%, at least EUR 25 | same | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
@@ -69,7 +69,7 @@ The two Freigrenzen are separate tests. They are never added together, and using
 
 - **What is taxed.** Crypto held privately is an "anderes Wirtschaftsgut". A gain on a sale is taxable income from a private sale if not more than one year lies between purchase and sale (Rn 53, citing the Federal Fiscal Court judgment of 14 February 2023, IX R 3/22). The intention to make a profit is not tested (Rn 53).
 - **A purchase and a sale are both needed (Rn 54).** A purchase is getting the coin from a third party for something in return: for euro, goods, services or other coins, and also coins received from mining or forging, lending, passive staking, and, where it applies, an ICO or an airdrop. A sale is the mirror image: a swap into euro, goods, services or other coins.
-- **Swaps.** Coin for coin is a sale of the coin given up and a purchase of the coin received. The sale price is the market price of the coin RECEIVED at the time of the swap; if that cannot be found, the market price of the coin given up is accepted (Rn 58). That market price, plus incidental purchase costs, is also the purchase cost of the coin received (Rn 59). "Die Veräußerungsfristen ... beginnen nach jedem Tausch neu" (Rn 55).
+- **Swaps.** Coin for coin is a sale of the coin given up and a purchase of the coin received. The sale price is the market price of the coin RECEIVED at the time of the swap; if that cannot be found, the market price of the coin given up is accepted (Rn 58). The market price of the coin GIVEN UP, plus incidental purchase costs, is the purchase cost of the coin received (Rn 59). "Die Veräußerungsfristen ... beginnen nach jedem Tausch neu" (Rn 55).
 - **Paying for goods or services.** The sale price is the euro price agreed; if none was stated, the market price of the coin given up (Rn 60). This includes a crypto card that sells coins at the till; the card statement is normally enough as a record (Rn 103).
 - **Costs.** Transaction fees on the sale are deductible (Rn 59). Costs must be split between taxable sales and sales that are not taxable, such as sales after more than one year (Rn 57).
 - **Change outputs.** For coins on the UTXO model, the "change" that flows back to the client's own key keeps the original purchase data (Rn 56).
@@ -136,7 +136,7 @@ This matches de-capital-gains.
 
 ### NFTs
 
-The letter says: "Auf die Besonderheiten nicht-fungibler Kryptowerte (sog. Non-Fungible-Token, NFT) wird in der vorliegenden Fassung des BMF-Schreibens nicht eingegangen" (Rn 5). The ministry's notice page for the letter also says NFTs and liquidity mining are not yet covered and that the letter will be added to over time. The law is therefore unsettled: the private-sales rule for "other assets" in § 23 EStG is the obvious starting point for an NFT bought and sold privately, but the ministry has not confirmed it, and income from creating or licensing NFTs may be business or other income. Refer, and check the ministry's site for a newer version of the letter.
+The letter says: "Auf die Besonderheiten nicht-fungibler Kryptowerte (sog. Non-Fungible-Token, NFT) wird in der vorliegenden Fassung des BMF-Schreibens nicht eingegangen" (Rn 5). The ministry's notice page for the letter also says NFTs and liquidity mining are not yet covered and that the letter will be added to over time. Those sources do not supply an NFT-specific treatment: the private-sales rule for "other assets" in § 23 EStG is the obvious starting point for an NFT bought and sold privately, but the ministry has not confirmed it, and income from creating or licensing NFTs may be business or other income. Refer, and check the ministry's site for a newer version of the letter.
 
 ### Other points the letter does not settle
 
@@ -179,13 +179,13 @@ The enacted Kryptowerte-Steuertransparenz-Gesetz (KStTG) implements DAC8 and the
 | Lot cannot be identified | First in, first out for holding period; average cost for value (or first in, first out) | Rn 61 |
 | Same coin in two wallets | Separate lots and methods per wallet | Rn 62 |
 | Gift received | Giver's purchase date and cost carry over | § 23(1) s. 3 EStG; Rn 75 |
-| Inherited coins | "Check" as a whole: § 23(1) s. 3 names only the single successor (Einzelrechtsnachfolger, a gift), not an heir. Refer | § 23(1) s. 3 EStG |
+| Inherited coins | Ordinary simple inheritance: actual 2025 ELSTER help expressly attributes the predecessor's acquisition to the successor, including inheritance and gifts. Selected 2026 unchanged-law/admin-method continuation under § 23(1) sentence 3, § 23(3) and BMF paragraph 75: obtain predecessor acquisition date/cost and ownership records; test the actual predecessor acquisition rather than restarting at death or assuming a market-value step-up. Separate estate division, consideration-paid heir-share acquisition, disputed history and inheritance-tax questions require their own facts/method. | Actual 2025 help; current § 23 and paragraph 75, not a claim to have read a 2026 form |
 | Hard fork coins | No income; cost split by market prices; original purchase date | Rn 67, 68 |
 | Airdrop with no service | No § 22 Nr. 3 income; gift tax may apply. Refer | Rn 74 |
 | Airdrop with no market price at receipt | Value zero accepted | Rn 73 |
 | Unclaimed staking rewards at 31 December | Count at the latest at year end | Rn 48a |
 | Redeeming a utility token for its product | Not a sale | Rn 79 |
-| Spouses assessed jointly | Each spouse's own sales and services are tested against the limits; the allowed official sources for this skill do not print that sentence. "Check" | § 23(3) s. 5; § 22 Nr. 3 EStG |
+| Spouses assessed jointly | Actual 2025 ELSTER help expressly gives the EUR 1,000 private-sales and EUR 256 service thresholds to each person. For the 2026 unchanged-statute/admin-method continuation, apply each person's own income and limit separately; do not pool a joint EUR 2,000 or EUR 512 allowance. Two spouses each with EUR 900 private-sales gains or EUR 200 service income are separately below their respective limits; one person's EUR 1,800 gains or EUR 400 service income is not sheltered by pooling. | Current § 23(3) sentence 5 and § 22 no. 3; actual 2025 help, not a 2026 form read |
 
 ## Worked cases (rules: [BMF letter](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2), [§ 23 EStG](https://www.gesetze-im-internet.de/estg/__23.html))
 
@@ -228,9 +228,9 @@ Amounts below are example inputs, not official figures. Fees are ignored unless 
 
 ## Filing and payment
 
-- **Who must file.** A person with no wages must file if total income is above the basic allowance (twice that for spouses assessed jointly) ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)). A return is also compulsory if a remaining loss deduction was formally determined at the end of the previous year, for example a private-sales loss carried forward (§ 56 sentence 2 EStDV). An employee must be assessed if untaxed side income, such as taxable crypto gains or staking income, is more than the § 46(2) no. 1 EStG amount in the figures table; for an employee who is assessed, such income is deducted again if it is not more than that amount in total, and above it a regulation softens the step up to full taxation (§ 46(3) and (5), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).
+- **Who must file.** A person with no wages must file if total income is above the basic allowance (twice that for spouses assessed jointly) ([§ 56 EStDV](https://www.gesetze-im-internet.de/estdv_1955/__56.html)). A return is also compulsory if a remaining loss deduction was formally determined at the end of the previous year, for example a private-sales loss carried forward (§ 56 sentence 2 EStDV). An employee must be assessed if untaxed side income, such as taxable crypto gains or staking income, is more than the § 46(2) no. 1 EStG amount in the figures table; for an employee assessed under § 46(2), § 46(3) deducts only eligible non-withheld taxable income totalling not more than EUR 410, excluding income subjected to the tariff under § 32d(6). Reduce that deduction by the statutory excess Altersentlastungsbetrag over the § 24a percentage of wages excluding § 19(2) pension receipts, and by the § 13(3) amount. Stipulated eligible income of EUR 400 with a EUR 100 statutory reduction gives EUR 300 deduction; with neither reduction it gives EUR 400. Above EUR 410, apply the separately gated § 70 EStDV hardship route/qualified freelancer companion rather than promising a full deduction (§ 46(3) and (5), [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)).
 - **Where.** Anlage SO of the income tax return, filed through ELSTER: the "Leistungen" block for staking, lending, private mining and airdrops, the private-sales block for sales and swaps. Business mining goes on Anlage G with the profit statement. Follow the labels of the form for the year.
-- **Gains below the limits and losses.** Declare losses from private sales so they can be carried; whether gains below the limits must be entered is set by the form instructions for each year ("check" on the current form).
+- **Gains below the limits and losses: actual 2025 form answer.** ELSTER's 2025 Anlage SO help expressly says service income below EUR 256 and total private-sales gains below EUR 1,000 need not be entered in that form; exactly EUR 256 or EUR 1,000 is outside those non-entry statements. It asks for losses from the respective activities/private sales within scope to be entered. These are actual 2025 instructions, not evidence of the future 2026 form layout. For 2026 use the unchanged-law tax thresholds and actual released form instructions for entry/layout; this dated non-entry statement does not cancel an overall filing duty, other-income reporting or § 153 correction duty.
 - **Payment.** The tax on private crypto sales and rewards is set in the income tax assessment notice and paid as that notice says.
 
 | Return | Deadline | Source |
@@ -253,11 +253,14 @@ The office can ask for an adviser-prepared return earlier (§ 149(4) AO). Late f
 - [ ] Forks and airdrops handled under Rn 67 to 75.
 - [ ] Tax report settings and manual changes documented (Rn 90).
 - [ ] Filing duty and deadline checked; late-filing surcharge considered; earlier years checked for § 153 AO corrections.
+- [ ] Employee § 46(3) exclusions/reductions established; each spouse's income/ownership recorded separately; simple inheritance uses actual predecessor dates/costs and any distinct paid estate transaction is classified separately. Actual form year is recorded, rather than relabelling 2025 help as 2026.
 - [ ] § 147a AO retention checked; records kept for as long as any unit bought is still held.
 
 ## Sources
 
 - BMF letter of 6 March 2025 on crypto assets ([PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2)).- EStG, EStDV, AO and KStTG sections on gesetze-im-internet.de, each linked where it is used above.
+
+- Additional selected source scopes actually read on 29 October 2026: current EStG §§ 46(3)/(5),23(1)/(3),22 no. 3 and BMF paragraph 75; [ELSTER 2025 income-tax help, Anlage SO](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025), exact service/private-sales inheritance/per-person/non-entry/loss clauses. The labelled 2026 continuation above uses unchanged current law, not a claimed read of a future 2026 form.
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
 
