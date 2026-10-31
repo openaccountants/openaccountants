@@ -1,0 +1,17 @@
+{
+  "status": "WRITER REPAIRS APPLIED; EXACT INDEPENDENT REPAIR VERIFICATION PENDING",
+  "original_reviewed_candidate": "89507147db70dad74f1389f9abdb03616bd33613",
+  "as_of_utc": "2026-10-30T12:14:19.393487+00:00",
+  "closures": {
+    "F1": "TP36d foreign/domestic documents, refusal gates, three-month finality trigger and distinct124a reopening; XB links to actual TP procedure.",
+    "F2": "Corporate42 request deadline/payment and exceptional route;42a mandatory electronic program/submission/passcode/attachments.",
+    "F3": "VAT Sources valid separate entries; all8officialURL targets/read limits retained.",
+    "F4": "LI-VAT-024 label expressly says foreign supplier NOT REGISTERED in MD/JSON."
+  },
+  "additional_source_groups": 9,
+  "original_groups_preserved": 663,
+  "repaired_groups": 672,
+  "additional_editorial_scope": "All8Guide introductions link the current/historical review registers; metadata/CTA preserved. TP21a suffix spacing corrected. Old-topic destinations and Guide hashes refreshed.",
+  "review_register": "ledgers/li-pack-review-evidence/README.md",
+  "actual_publication": "No new push; PR785 remains unchanged."
+}
