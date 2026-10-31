@@ -1,0 +1,22 @@
+{
+  "base": "b41220632936e5c1a211254030b6acb659f6870a",
+  "original_rules": 121,
+  "unchanged_original_rules": true,
+  "new_rules": 21,
+  "old_topic_objects": 94,
+  "old_topic_objects_equal": true,
+  "explicit_successor_map_equal": true,
+  "old_two_examples_exact": true,
+  "metadata_changes": {
+    "version": [
+      0.3,
+      0.4
+    ]
+  },
+  "cta_exact": true,
+  "cta_extraction": "## Talk to an accountant\n\nFind the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).\n",
+  "source_table_rows_preserved": true,
+  "old_reference_urls_preserved": true,
+  "duplicate_reference_definitions": [],
+  "unresolved_references": []
+}
