@@ -1,6 +1,6 @@
 ---
 name: de-estimated-tax
-description: "German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer, de-self-employed-income-tax), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax)."
+description: "German income tax prepayments (Einkommensteuer-Vorauszahlungen, § 37 EStG) for individuals, tax year 2026. Covers who pays them, the four due dates (10 March, 10 June, 10 September, 10 December), how the tax office sets the amount from the last assessment, the EUR 400 and EUR 100 minimums, the EUR 600 small-deductions rule, increases, reductions and the 15-month adjustment window, the solidarity surcharge (EUR 20,350 / 40,700 limits, 5.5%, 11.9% mitigation) and church tax riding on prepayments, the year-end balance, the 1% late payment surcharge and 1.8% interest after assessment, and new businesses. Trigger on: Vorauszahlungen, Vorauszahlungsbescheid, estimated tax Germany, quarterly tax Germany, Herabsetzung Vorauszahlungen, Säumniszuschlag, Nachzahlungszinsen. Out of scope: the tariff and the return (de-einkommensteuer-freelancer), trade tax prepayments (de-trade-tax), VAT advance payments (germany-vat-return), corporate tax (de-corporate-tax), non-residents (de-non-resident-tax)."
 version: 2.5
 jurisdiction: DE
 tax_year: 2026
@@ -8,7 +8,7 @@ last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
-  - de-self-employed-income-tax
+  - de-einkommensteuer-freelancer
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)

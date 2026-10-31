@@ -9,7 +9,7 @@ authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
-  - de-self-employed-income-tax
+  - de-einkommensteuer-freelancer
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
