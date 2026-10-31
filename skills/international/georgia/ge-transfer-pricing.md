@@ -45,7 +45,7 @@ Most Georgian companies pay profit tax only when profit leaves the company (see 
 | Profit tax on an adjustment (distributed-profit model) | 15% of adjustment / 0.85 | 2026 | Tax Code arts. 97(10), 98(1), 98^1(4)(b), same Tax Code URL |
 | Profit tax on an adjustment (banks and other annual-profit taxpayers) | 20% of taxable profit | 2026 | Tax Code arts. 98(4), 127(3), same Tax Code URL |
 | Preferential tax country test | profit tax exemption, no profit tax, or a rate not over 1/3 of the Georgian rate | 2026 | Tax Code art. 98^2(5), (6), same Tax Code URL |
-| Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 50 countries (art. 98^2(6) cases) | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
+| Preferential tax country list | Part 1: 15 jurisdictions; Part 2: 49 countries (art. 98^2(6) cases) | 2026 | Government Ordinance No 615 of 29 December 2016, https://matsne.gov.ge/ka/document/view/3523434 |
 | Interquartile range | 25th to 75th percentile, both included | 2026 | Instruction art. 2(gh), (q), (sh), same Instruction URL |
 | 25th and 75th percentile positions | 1/4 and 3/4 of (number of results + 1) | 2026 | Instruction art. 2(q), (sh), same Instruction URL |
 | Adjustment point when outside the range | the median, unless facts clearly point to another point | 2026 | Instruction art. 10(3), same Instruction URL |
@@ -54,7 +54,7 @@ Most Georgian companies pay profit tax only when profit leaves the company (see 
 | Prior years of data that may be considered | the 4 financial years before the year of the transaction | 2026 | Instruction art. 13(b), same Instruction URL |
 | Unilateral advance pricing agreement: longest term | 3 years | 2026 | Instruction art. 22, same Instruction URL |
 | Advance pricing agreement: minimum transaction volume | none since 2021 (the old GEL 50,000,000 floor was removed) | 2026 | Order No 45 of 2 March 2021, art. 1(2)(a), https://matsne.gov.ge/ka/document/view/5114015 |
-| Loan treated as capital: criteria needed | at least 3 of the 12 listed, one of them from (f) to (h) | 2026 | Instruction art. 14^1(5), added by Order No 331 of 2 October 2024, https://matsne.gov.ge/ka/document/view/6281431 |
+| Loan treated as capital: criteria needed | at least 3 of the 12 listed, one of them (f) or (g) | 2026 | Instruction art. 14^1(5), added by Order No 331 of 2 October 2024, https://matsne.gov.ge/ka/document/view/6281431 |
 | Country-by-country report: group threshold | consolidated group revenue of EUR 750,000,000 or more in the prior fiscal year | 2026 | Tax Code art. 70^1(3)(b), same Tax Code URL |
 | Country-by-country report: deadline | 12 months after the end of the accounting year | 2026 | Tax Code art. 70^1(1), same Tax Code URL |
 | Late or incomplete country-by-country report | fine of GEL 5,000 | 2026 | Tax Code art. 279^1, same Tax Code URL |
@@ -101,7 +101,7 @@ Shareholder activities cannot be charged. These include the parent's own shareho
 
 **Intangibles.** Licences and transfers of intangibles are priced from the view of both the transferor and the transferee. The test takes into account the expected benefit, geographic limits, exclusivity and the right to develop the asset further (Instruction art. 16).
 
-**Loans treated as capital (from 1 January 2025).** In an international controlled transaction, a loan can be treated in whole or in part as a capital contribution (Instruction art. 14^1, added by Order No 331 of 2024). "Loan" here includes credit, overdrafts, letters of credit, credit lines, guarantees and debt securities (art. 14^1(2)). The Revenue Service needs at least three of twelve criteria, at least one of them from (f) to (h), and must write a reasoned conclusion (art. 14^1(5)). The criteria (art. 14^1(3)) are:
+**Loans treated as capital (from 1 January 2025).** In an international controlled transaction, a loan can be treated in whole or in part as a capital contribution (Instruction art. 14^1, added by Order No 331 of 2024). "Loan" here includes credit, overdrafts, letters of credit, credit lines, guarantees and debt securities (art. 14^1(2)). The Revenue Service needs at least three of twelve criteria, at least one of them (f) or (g), and must write a reasoned conclusion (art. 14^1(5)). The criteria (art. 14^1(3)) are:
 
 - (a) no fixed repayment schedule;
 - (b) no interest obligation, or interest not actually charged;
@@ -123,7 +123,7 @@ The test applies as at the time of the transaction (art. 14^1(4)). It does not a
 **Preferential tax countries.** A country, or a separate territory of a country, has preferential tax treatment if a legal person there is exempt from profit tax, or pays no profit tax, or pays at a rate not over 1/3 of the Georgian rate (art. 98^2(5), (6)). With the 15% rate that is 5% or less. The Government publishes the list (art. 98^2(10)). The list in force is Ordinance No 615 of 29 December 2016, in force from 1 January 2017.
 
 - **Part 1** (15 jurisdictions): Anguilla, Bahamas, Bahrain, Bermuda, British Virgin Islands, Guernsey, Vanuatu, Cayman Islands, Curaçao, Isle of Man, Marshall Islands, Micronesia, Palau, Sark, Turks and Caicos Islands.
-- **Part 2** lists 50 countries treated as preferential under art. 98^2(6), where a regime for some legal persons meets the test. Examples are Andorra, the United Arab Emirates, Cyprus, Hong Kong, Jersey, Liechtenstein, Luxembourg, Malaysia, Panama and Seychelles.
+- **Part 2** lists 49 countries treated as preferential under art. 98^2(6), where a regime for some legal persons meets the test. Examples are Andorra, the United Arab Emirates, Cyprus, Hong Kong, Jersey, Liechtenstein, Luxembourg, Malaysia, Panama and Seychelles.
 - **Treaty countries.** Note 3 of the list matters. If Georgia has a ratified tax treaty in force with a listed country, that country is treated as preferential only for the profit tax rules in art. 98^1(2)(e) (foreign dividends passed on) and art. 98^2(3)(a) to (e) (debt securities, fines, advances, loans and claims). So for art. 127(5) an unrelated counterparty in a treaty country on the list is not caught by the preferential rule.
 
 For an unrelated counterparty in a preferential tax country, the Instruction says the terms are treated as arm's length if the Revenue Service considers the parties are not related under art. 126(1) (Instruction art. 4).
@@ -138,6 +138,7 @@ For an unrelated counterparty in a preferential tax country, the Instruction say
 | Advance pricing agreement application | before the transactions start | Tax Code art. 129^1(1); Instruction art. 20(2) |
 | Pre-filing meeting for an advance pricing agreement | if the Revenue Service considers one needed, it contacts the company within 14 days of the request to fix a time and place | Instruction art. 23(4), as amended by Order No 45 of 2021 |
 | Advance pricing agreement annual compliance report | for each calendar year of the agreement, before 1 April of the following year, on the form in Annex 4 | Instruction art. 31, as amended by Order No 45 of 2021 |
+| Notice to the Revenue Service of a breach of an advance pricing agreement | within 30 days of finding the facts | Instruction art. 30(2)(b), as amended by Order No 45 of 2021 |
 | Revenue Service answer on a corresponding adjustment request | within 6 months of receiving the request | Instruction art. 37 |
 | Country-by-country report (Georgian ultimate parent) | within 12 months after the end of the accounting year | Tax Code art. 70^1(1) |
 | Notice that a Georgian group member is the ultimate or surrogate parent | before the end of the accounting year | Tax Code art. 70^1(2) |
@@ -183,7 +184,8 @@ The Tax Code has no separate penalty for missing transfer pricing documentation.
 | Late payment | penalty interest 0.05% of the unpaid tax per day, including the day of payment | art. 272(4) |
 | Penalty interest time limit | not charged once 3 years have passed from the day the obligation to charge it arose | art. 272(2^1) |
 | Late or incomplete country-by-country report | GEL 5,000 | art. 279^1 |
-| Acting within an advance pricing agreement | no tax or sanction contrary to the agreement | art. 129^1(3), (7) |
+| Acting within an advance pricing agreement | no decision, tax or sanction contrary to the agreement | art. 129^1(3) |
+| Breach of an advance pricing agreement condition where the declared price is still arm's length | no liability for the breach alone | art. 129^1(7) |
 
 Documentation is the taxpayer's answer to a request to explain why its profit is arm's length (art. 129(1)). The request is satisfied if the documentation was prepared under the Instruction and handed over within 30 calendar days (Instruction art. 17(1)).
 
