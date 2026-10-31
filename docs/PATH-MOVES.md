@@ -10819,3 +10819,11 @@ Use this to update `skills.github_path` on the platform.
 | skills/us-states/wy/wy-formation.md | skills/us/states/wy/wy-formation.md |
 | skills/us-states/wy/wy-sales-tax.md | skills/us/states/wy/wy-sales-tax.md |
 | skills/us-states/wy/wyoming-sales-tax.md | skills/us/states/wy/wyoming-sales-tax.md |
+| skills/im/README.md | skills/isle-of-man/README.md |
+| skills/im/im-company-formation.md | skills/isle-of-man/im-company-formation.md |
+| skills/im/im-corporate-income-tax.md | skills/isle-of-man/im-corporate-income-tax.md |
+| skills/im/im-income-tax.md | skills/isle-of-man/im-income-tax.md |
+| skills/im/im-non-resident-income-tax.md | skills/isle-of-man/im-non-resident-income-tax.md |
+| skills/im/im-payroll-social.md | skills/isle-of-man/im-payroll-social.md |
+| skills/im/im-related-party-uk-treaty.md | skills/isle-of-man/im-related-party-uk-treaty.md |
+| skills/im/im-tax-overview.md | skills/isle-of-man/im-tax-overview.md |
