@@ -7,21 +7,21 @@ All notable changes to OpenAccountants will be documented in this file.
 ### Guides are now called AI skills
 
 - **Renamed** the product from "Guides" to **AI skills** (tax rules your AI follows) in the README, CONTRIBUTING, START-HERE, CLAUDE.md, llms.txt, docs, issue and PR templates, and the `agent-skills/` footer. Machines already used the word: the `skills/` folder, the `get_skill` tools, and the openaccountants.com `/skills` URLs are unchanged.
-- **Unchanged:** the licence and its legal name (OpenAccountants Guide License v1.0; see the note in [`LICENSING.md`](LICENSING.md)), `index.json` keys (`guides[]`, `counts.guides`), file paths, workflow and check names.
+- **Unchanged:** the licence and its legal name (OpenAccountants Guide License v1.0; see the note in [`LICENSING.md`](../LICENSING.md)), `index.json` keys (`guides[]`, `counts.guides`), file paths, workflow and check names.
 - **Generators:** `scripts/build-index.py` now writes "AI skills across" in the llms.txt counts sentence and still recognises the old wording; `scripts/build-llms-full.py` heads the inventory "Skill inventory". Skill bodies written by the OpenAccountants team follow through the nightly sync.
 
 ## [2.3.0] — 2026-07-16
 
 ### Mixed-licence restructure (Guides move to a source-available licence)
 
-- **Split code from content.** Software (`mcp/`, `scripts/`, `tools/`, `plugins/`) is now **AGPL-3.0-only**; the Guides (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) move to the new source-available **OA Guide License** (`LICENSES/LicenseRef-OA-Guide-License-1.0.txt`). Commercial embedding / RAG / model-training / bulk redistribution of the Guides now requires a commercial licence. See [`LICENSING.md`](LICENSING.md).
+- **Split code from content.** Software (`mcp/`, `scripts/`, `tools/`, `plugins/`) is now **AGPL-3.0-only**; the Guides (`skills/`, `packages/`, `workflows/`, `index.json`, `llms*.txt`) move to the new source-available **OA Guide License** (`LICENSES/LicenseRef-OA-Guide-License-1.0.txt`). Commercial embedding / RAG / model-training / bulk redistribution of the Guides now requires a commercial licence. See [`LICENSING.md`](../LICENSING.md).
 - **Removed `LICENSE-ADDITIONAL.md`** (the Section 7 output-attribution additional term), which was causing GitHub to report "unknown licenses" and reached beyond what GPL §7 reliably permits.
 - **Standardised on `AGPL-3.0-only`** (was a mix of `AGPL-3.0` / `AGPL-3.0-or-later`) across `glama.json`, `mcp/pyproject.toml`, `CITATION.cff`, and the plugin manifest.
 - **Renamed** `COMMERCIAL_LICENSE.md` → `COMMERCIAL-LICENSING.md` and rewrote it for the two-track model.
 - **Added `REUSE.toml`** for machine-readable per-path licence mapping.
 - **Added a CLA status check** (`.github/workflows/cla.yml`).
 
-> **Note:** Guides that incorporate third-party AGPL/GPL material remain under those copyleft terms; the Guide License applies to the rest (see [`LICENSING.md`](LICENSING.md) § "Third-party copyleft material").
+> **Note:** Guides that incorporate third-party AGPL/GPL material remain under those copyleft terms; the Guide License applies to the rest (see [`LICENSING.md`](../LICENSING.md) § "Third-party copyleft material").
 
 ## [2.2.0] — 2026-07-04
 

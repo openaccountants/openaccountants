@@ -8,7 +8,7 @@ Every freelancer and small business in every jurisdiction faces the same account
 
 **Domains (the columns):**
 
-[GOAL.md](../GOAL.md) goes deep on tax first. The seven tax domains are what the coverage report counts; a jurisdiction's pack is complete when it has one skill in the deep-tax shape for each domain that applies there.
+[GOAL.md](GOAL.md) goes deep on tax first. The seven tax domains are what the coverage report counts; a jurisdiction's pack is complete when it has one skill in the deep-tax shape for each domain that applies there.
 
 | Code | Domain | What it answers |
 |------|--------|-----------------|

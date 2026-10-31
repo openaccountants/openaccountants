@@ -1,6 +1,6 @@
 # How to write a skill: the standard
 
-**This file is the one standard for every skill in this repository.** It applies to every writer, human or AI (Claude, ChatGPT, Codex, Gemini or anything else), and to every accountant who contributes. `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` and `OWNERS.md` point here. If another document says something different, this file wins; fix the other document in the same PR.
+**This file is the one standard for every skill in this repository.** It applies to every writer, human or AI (Claude, ChatGPT, Codex, Gemini or anything else), and to every accountant who contributes. `CLAUDE.md`, `AGENTS.md`, `CONTRIBUTING.md` and `docs/OWNERS.md` point here. If another document says something different, this file wins; fix the other document in the same PR.
 
 The repository is treated as tax law. Every figure must be traceable to the law that sets it.
 

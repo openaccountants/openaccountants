@@ -19,7 +19,7 @@ Rules:
 python3 scripts/coverage-report.py --summary
 ```
 
-The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](../GOAL.md) and says, per jurisdiction, which are present and which are missing. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](../OWNERS.md).
+The report reads the skill tree through `build-index.py` in memory, so it never lags the committed `index.json`. It counts the seven tax domains from [GOAL.md](GOAL.md) and says, per jurisdiction, which are present and which are missing. `--markdown` is the weekly issue; `--json` feeds `open-coverage-issues.py`; `--owner <name>` filters by [OWNERS.md](OWNERS.md).
 
 Two other sources exist and disagree with each other, because they count different things:
 
@@ -36,10 +36,10 @@ The coverage report keeps a canonical list of pseudo-codes (`PSEUDO_CODES` in `s
 
 `NONE`, `GENERAL`, `GLOBAL`, `INTL`, `EU`, `EU-27`, `EU/EEA/CH/UK`, `EG-AE`, `EG-SA`
 
-A skill under one of these is a cross-border, regional or template skill. Michael Cutajar maintains them (see [OWNERS.md](../OWNERS.md)).
+A skill under one of these is a cross-border, regional or template skill. Michael Cutajar maintains them (see [OWNERS.md](OWNERS.md)).
 
 ## How to update
 
 - Platform figures: nothing to do; the nightly sync restamps the README block.
 - Repository figures: the sync runs `python3 scripts/build-index.py`, which rewrites `index.json` and restamps the `llms.txt` sentence. In a pull request, do not commit `index.json`; it is generated.
-- Dated figures in `GOAL.md` and `OWNERS.md`: regenerate with the coverage report when you edit those files.
+- Dated figures in `docs/GOAL.md` and `docs/OWNERS.md`: regenerate with the coverage report when you edit those files.
