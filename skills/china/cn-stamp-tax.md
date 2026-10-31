@@ -31,7 +31,7 @@ Who pays (Law Art. 1):
 
 The tax is a **positive list**. Only documents in the rate table attached to the law are taxable: certain written contracts, property-transfer documents, business account books, plus securities trading (Law Art. 2-3). A document that is not on the list is not taxed, whatever it is called.
 
-Out of scope: Hong Kong, Macao and Taiwan; deed tax (契税) and land appreciation tax on property; VAT and surcharges; stamp tax audits and disputes. Related Skills: **cn-vat** and **china-vat** (VAT, which is excluded from the stamp tax base when stated separately), **cn-corporate-tax** (the small low-profit enterprise test used by the halving relief), and **cn-iit** (individual income tax on share and property sales).
+Out of scope: Hong Kong, Macao and Taiwan; deed tax (契税) and land appreciation tax on property; VAT and surcharges; stamp tax audits and disputes. Related Skills: **cn-vat** (VAT, which is excluded from the stamp tax base when stated separately), **cn-corporate-tax** (the small low-profit enterprise test used by the halving relief), and **cn-iit** (individual income tax on share and property sales).
 
 
 ### What is current for 2026 ([MOF/STA announcement 2023 No. 39](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html); [MOF/STA announcement 2024 No. 14](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202409/t473303.html); [Caishui 2025 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html))

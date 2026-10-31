@@ -29,7 +29,7 @@ Use the mainland China routes below for 2026 work. Hong Kong, Macao and Taiwan n
 | TP, transfer pricing | `cn-transfer-pricing` | Source-cited draft |
 | XB, cross-border residence, source and foreign credits | `cn-cross-border` | Source-cited draft |
 
-`cn-stamp-tax` is the additional 2026 stamp-duty route. Legacy `china-pit`, `china-vat`, `china-to-singapore-relocation-tax`, `cn-fapiao-einvoice`, `cn-formation`, `cn-freelance-intake`, `cn-return-assembly` and the references document remain preserved. Their presence is not evidence of current 2026 tax coverage or of a fresh review. The public website currently redirects the older `china-vat` route to `cn-vat`.
+`cn-stamp-tax` is the additional 2026 stamp-duty route. Legacy `china-pit`, `china-to-singapore-relocation-tax`, `cn-fapiao-einvoice`, `cn-formation`, `cn-freelance-intake`, `cn-return-assembly` and the references document remain preserved. Their presence is not evidence of current 2026 tax coverage or of a fresh review.
 
 Non-Shanghai contribution rates and bases, local benefit calculations, worker-category exceptions and the explicitly excluded specialist procedures need the actual current authority rule. Do not use Shanghai figures as a national default. Issue #504 remains open for the ordinary social-contributions gap. Accounting, formation and e-invoicing material remains a separate milestone.
 
