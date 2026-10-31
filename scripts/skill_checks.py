@@ -61,6 +61,18 @@ HEADING_ALIASES = {
     "The base": {"The taxable base"},
     "Two worked examples that recompute": {"Worked examples"},
 }
+#: The second canonical set (the October method shape, ~250 skills). Six required headings, in
+#: order; three optional ones may sit between them. docs/skill-template.md line 7 lists both
+#: sets; the shape test of 31 Oct 2026 measured them within noise of each other.
+METHOD_HEADINGS = [
+    "Scope",
+    "Ask the client first",
+    "The method, step by step",
+    "Worked cases",
+    "When to refuse or refer",
+    "Talk to a verified accountant",
+]
+METHOD_ALIASES = {"Scope": {"Scope and who this is for"}}
 
 #: Skills that keep the general template (accounting packs). The checks still
 #: run on them, but the caller treats a failure as a warning, never an error.
@@ -252,14 +264,11 @@ def check_rates_rows_sourced(path, text, fm):
     return []
 
 
-def check_canonical_headings(path, text, fm):
-    """(d) the nine deep-tax headings appear, verbatim, in order; ``## Sources`` is the last of them."""
-    found = _headings(text)
-    titles = [t for t, _ in found]
+def _heading_set_problems(titles, required, aliases):
     positions = []
     missing = []
-    for canon in CANONICAL_HEADINGS:
-        accepted = {canon} | HEADING_ALIASES.get(canon, set())
+    for canon in required:
+        accepted = {canon} | aliases.get(canon, set())
         idx = next((i for i, t in enumerate(titles) if t in accepted), None)
         if idx is None:
             missing.append(canon)
@@ -271,6 +280,23 @@ def check_canonical_headings(path, text, fm):
     if positions != sorted(positions):
         problems.append("headings out of order")
     return problems
+
+
+def check_canonical_headings(path, text, fm):
+    """(d) the headings are one of the two canonical sets, verbatim, in order.
+
+    The reference set is the nine CANONICAL_HEADINGS; the method set is the six
+    METHOD_HEADINGS. A skill passes if either set passes. The failure message
+    reports the set it came closest to."""
+    titles = [t for t, _ in _headings(text)]
+    ref = _heading_set_problems(titles, CANONICAL_HEADINGS, HEADING_ALIASES)
+    if not ref:
+        return []
+    method = _heading_set_problems(titles, METHOD_HEADINGS, METHOD_ALIASES)
+    if not method:
+        return []
+    uses_method = "The method, step by step" in titles
+    return [("method set: " if uses_method else "reference set: ") + p for p in (method if uses_method else ref)]
 
 
 def check_two_oa_checks(path, text, fm):

@@ -22,7 +22,7 @@ Tax skills only (the deep-tax shape applies to them). One column per check in `R
 | (a) | `tax_year_current` | 853 | 1205 | 41% |
 | (b) | `sources_read_dates` | 485 | 1573 | 24% |
 | (c) | `rates_rows_sourced` | 209 | 1849 | 10% |
-| (d) | `canonical_headings` | 396 | 1662 | 19% |
+| (d) | `canonical_headings` | 438 | 1620 | 21% |
 | (e) | `two_oa_checks` | 421 | 1637 | 20% |
 | (f) | `version_numeric` | 1214 | 844 | 59% |
 | (g) | `tier_honest` | 1920 | 138 | 93% |
