@@ -1,7 +1,7 @@
 ---
 name: india-gst
 description: Use this skill whenever asked to prepare, review, classify, or advise on India's Goods and Services Tax (GST) for a self-employed individual, freelancer, or small business. Trigger on phrases like "GST return", "GSTR-1", "GSTR-3B", "GSTR-9", "file GST", "GST classification", "HSN code", "SAC code", "input tax credit", "ITC", "reverse charge", "e-invoicing", "e-way bill", "CGST", "SGST", "IGST", "inter-state supply", "intra-state supply", "place of supply", or any request involving Indian indirect tax compliance. This skill covers regular (non-composition) GST-registered taxpayers with a single state GSTIN only. Composition scheme, multi-state, SEZ, e-commerce operator, and ISD registrations are in the refusal catalogue. ALWAYS read this skill before touching any India GST work.
-version: 2.1
+version: 2.2
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-10-31
@@ -319,7 +319,7 @@ For a registered business, a service bought from a supplier outside India is an 
 
 ## Section 4: Worked examples
 
-Six classifications from a hypothetical HDFC Bank statement of a Mumbai-based self-employed software consultant registered in Maharashtra. Amounts in the bank lines are hypothetical. The tax columns are left for the working paper (Section 7), which computes them from the invoice; this Guide does not compute tax.
+Six classifications, then two tax calculations, from a hypothetical HDFC Bank statement of a Mumbai-based self-employed software consultant registered in Maharashtra. Amounts in the bank lines are hypothetical. In Examples 1 to 6 the tax columns are left for the working paper (Section 7), which computes them from the invoice. Examples 7 and 8 show the calculation at a rate printed in Section 1.
 
 ### Example 1: Foreign SaaS under reverse charge (Notion)
 
@@ -381,6 +381,42 @@ Six classifications from a hypothetical HDFC Bank statement of a Mumbai-based se
 | --- | --- | --- | --- | --- | --- |
 | 28.01.2026 | MARUTI SUZUKI | -8,50,000 | BLOCKED, section 17(5)(a) | Y | "Is the vehicle used to carry passengers for a fare, resold, or used for driving training?" |
 
+### Example 7: Intra-State invoice at the standard rate
+
+A supplier in Maharashtra invoices a client in Maharashtra INR 10,000 before tax for a supply at the standard rate of 18% (Section 1). Supplier and place of supply are in the same State, so the tax is split into central and State tax at 9% each (Section 5.2).
+
+```oa-check
+name: Intra-State invoice, INR 10,000 at 18%
+inputs:
+  taxable_value: 10000
+steps:
+  - cgst: pct(taxable_value, 9)
+  - sgst: pct(taxable_value, 9)
+  - total_tax: cgst + sgst
+  - invoice_total: taxable_value + total_tax
+expected:
+  cgst: 900.00
+  sgst: 900.00
+  total_tax: 1800.00
+  invoice_total: 11800.00
+```
+
+### Example 8: Inter-State invoice at the merit rate
+
+A supplier in Karnataka invoices a client in Maharashtra INR 10,000 before tax for a supply at the merit rate of 5% (Section 1). The States differ, so the whole tax is IGST (Section 5.2).
+
+```oa-check
+name: Inter-State invoice, INR 10,000 at 5%
+inputs:
+  taxable_value: 10000
+steps:
+  - igst: pct(taxable_value, 5)
+  - invoice_total: taxable_value + igst
+expected:
+  igst: 500.00
+  invoice_total: 10500.00
+```
+
 ## Section 5: Rules
 
 Each rule names its legal source. Apply silently when the data is unambiguous.
@@ -401,6 +437,15 @@ Central tax (CGST Act section 9(1)) and State tax are levied on intra-State supp
 | Import of goods | IGST through customs |
 | Import of services by a business | IGST under reverse charge |
 | Export, or supply to an SEZ unit or developer for authorised operations | Zero-rated (Section 5.11) |
+
+An intra-State supply splits the rate equally between central tax and State or Union territory tax; IGST carries the whole rate.
+
+| Total rate | CGST | SGST or UTGST | IGST | Source |
+| --- | --- | --- | --- | --- |
+| 18% | 9% | 9% | 18% | Central rate: GST Council December 2025 newsletter, "Schedule II (9%)" (Section 1). Total rate: 56th Council press release |
+| 5% | 2.5% | 2.5% | 5% | Central rate: Notification 01/2025-Central Tax (Rate), "Schedule I - 2.5%", under the earlier schedule (https://gstcouncil.gov.in/sites/default/files/2025-01/ctr01-2025.pdf). Total rate: 56th Council press release |
+
+The State share is the total rate less the central rate; no State notification was read.
 
 Working check, not the legal test (the test is the supplier's location and the place of supply, IGST Act Chapter V): compare the State code at the start of the supplier's GSTIN with the client's. For a buyer with no GSTIN, use the place of supply rules, not the billing address alone. Online information and database access services from abroad to a person who is not registered (a "non-taxable online recipient") are taxed on the foreign supplier, not the customer (IGST Act section 14).
 
@@ -676,7 +721,7 @@ Export of goods or services, and supply to an SEZ unit or developer for authoris
 
 | Option | Mechanism | Refund |
 | --- | --- | --- |
-| Under bond or Letter of Undertaking, without paying IGST (section 16(3)) | File the LUT in Form GST RFD-11 before export (rule 96A) | Refund of unutilised ITC (section 54) |
+| Under bond or Letter of Undertaking, without paying IGST (section 16(3)) | File the LUT in Form GST RFD-11 before export (rule 96A) | Refund of unutilised ITC (section 54), claimed under rule 89 in Form GST RFD-01 |
 | On payment of IGST (section 16(4)) | Only for a class of persons, or of goods or services, notified by the Government (substituted section, in force from 1 October 2023) | Refund of IGST paid |
 
 Under an LUT, the exporter binds itself to pay the tax with interest within fifteen days after three months from the export invoice if the goods are not exported (or a longer period the Commissioner allows), and, for services, within fifteen days after one year or the FEMA period, whichever is later, if payment is not received in convertible foreign exchange, or in Indian rupees where the Reserve Bank of India permits (rule 96A(1)). Report exports in GSTR-3B table 3.1(b) and GSTR-1 table 6. Before using the IGST-payment route, confirm the client falls in a notified class; the earlier Guide presented it as open to every exporter.
@@ -983,12 +1028,13 @@ Team rewrite of October 2026. Every figure was re-proven on a CBIC or GST Counci
 - NEVER issue a B2B invoice without IRN and QR code where e-invoicing applies.
 - NEVER treat an export as zero-rated without an LUT or bond, or proof of IGST paid under a notified class.
 - NEVER present a 57th GST Council recommendation as law.
-- NEVER compute a figure from two others: no combined central-plus-State late fee, no effective rate. Arithmetic in the working paper is done by the spreadsheet engine.
+- NEVER guess or derive a rate or fee: no combined central-plus-State late fee, no effective rate. Tax on a value at a rate this Guide prints is plain arithmetic and is allowed (Section 4, Examples 7 and 8).
 
 ### Change log
 
 - **October 2026 (team rewrite):** rates moved to the 56th Council structure with start dates; electricity and individual life and health insurance corrected to exempt; GSTR-1 B2C large limit corrected; late fees rewritten as central tax with the turnover-band caps and the GSTR-9 bands; ITC conditions expanded (GSTR-2B, rules 36(4), 37, 37A, 88C, 88D); section 17(5) rewritten from the current text; credit use order corrected under rule 88A; import-of-services credit moved to table 4(A)(2); export on payment of IGST limited to notified classes; QRMP, IFF, GSTR-1A and the three-year bar added; residential and commercial rent reverse charge added; 57th Council recommendations marked pending.
 - **31 October 2026 (v2.1, merge):** the duplicate Guide `in-gst-return` (the April 2026 v2.0 text this Guide was rewritten from) was merged in and retired. Added from it, each re-proven on an official page on 31 October 2026: security services under reverse charge (Notification 29/2018-Central Tax (Rate)), the e-invoicing years test (Notification 70/2020-Central Tax), named 40%, 5% and nil items from the 56th Council press release, the GSTIN format check, and the portal addresses. Not carried over: its 12% and 28% slabs, electricity at 18%, combined central-plus-State late fees with the old INR 10,000 cap, the INR 2.5 lakh B2C large limit, the IGST-then-CGST-then-SGST credit order, the "transport of goods" motor vehicle exception, and the computed tax figures in its worked examples; each is superseded or wrong, as this Guide's sections note.
+- **31 October 2026 (v2.2, merge):** restored from `in-gst-return`, each checked on an official page: the CGST and SGST split at 18% and 5%, and rule 89 with Form GST RFD-01. Added two recomputed invoice examples. The rule on arithmetic now bars guessing rates, not calculating tax.
 - **v2.0 (April 2026):** Rewrite to the three-tier structure (quick reference, supplier pattern library, worked examples, Tier 1 and Tier 2 rules, working paper, bank statement guide, onboarding fallback, five refusals).
 - **v1.0 (April 2026):** Initial version.
 
@@ -1002,7 +1048,7 @@ Items 1 to 6 were read on 16 or 17 October 2026; items 7 and 8 on 31 October 202
 4. GST Council: 56th meeting press release and FAQ; December 2025 newsletter; 57th meeting press release (links in Sections 1 and 5.16).
 5. Notifications (GST Council copies): 2/2017, 13/2017, 05/2022, 15/2022, 09/2024 and 07/2025-Central Tax (Rate); 13/2017, 4/2018, 76/2018, 78/2020, 83/2020, 19/2021, 20/2021, 07/2023, 10/2023, 32/2023 and 12/2024-Central Tax (links in the tables above).
 6. CBIC, "GST: An Update" (1 June 2019): https://cbic-gst.gov.in/pdf/01062019-GST-An-Update.pdf
-7. Notifications added at the merge: 29/2018-Central Tax (Rate), security services under reverse charge (link in Section 5.4); 70/2020-Central Tax, e-invoicing years test (link in Section 5.5).
+7. Notifications added at the merge: 29/2018-Central Tax (Rate), security services under reverse charge (link in Section 5.4); 70/2020-Central Tax, e-invoicing years test (link in Section 5.5); 01/2025-Central Tax (Rate), central rate of 2.5% (link in Section 5.2). CGST Rules, rule 89: https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter10/rule89_v1.00.html
 8. Portals: GST common portal https://www.gst.gov.in ; Invoice Registration Portal (e-invoice) https://einvoice1.gst.gov.in ; e-way bill https://ewaybillgst.gov.in
 9. Named by the earlier Guide `in-gst-return` and not read for this version: Circular 98/17/2019-GST (order of credit use; rule 88A is used above instead), Circular 140/10/2020-GST (director services under reverse charge), Circular 164/20/2021-GST (restaurant services), Notification 10/2017-Integrated Tax (Rate) (import of services under reverse charge), Notification 84/2020-Central Tax (QRMP entry test).
 
