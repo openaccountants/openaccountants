@@ -73,7 +73,7 @@ Owner: Jeff Watts
 
 | Country | State | Skills | On 2026 | Accountant-reviewed |
 |---|---|---:|---:|---:|
-| [Alberta](canada/alberta/) | Needs writing | 2 | 2 | 0 |
+| [Alberta](canada/alberta/) | Needs writing | 4 | 2 | 0 |
 | [Antigua And Barbuda](antigua-and-barbuda/) | Needs writing | 3 | 3 | 0 |
 | [Argentina](argentina/) | Needs writing | 9 | 0 | 0 |
 | [Aruba](aruba/) | Needs writing | 3 | 3 | 0 |
@@ -83,7 +83,7 @@ Owner: Jeff Watts
 | [Bermuda](bermuda/) | Needs writing | 7 | 0 | 0 |
 | [Bolivia](bolivia/) | Needs writing | 5 | 0 | 0 |
 | [Brazil](brazil/) | Needs writing | 12 | 1 | 0 |
-| [British Virgin Islands](british-virgin-islands/) | Needs writing | 5 | 0 | 0 |
+| [British Virgin Islands](british-virgin-islands/) | Needs writing | 6 | 0 | 0 |
 | [Canada](canada/) | Needs updating | 19 | 5 | 1 |
 | [Cayman Islands](cayman-islands/) | Needs writing | 6 | 0 | 0 |
 | [Chile](chile/) | Needs writing | 8 | 0 | 0 |
@@ -138,10 +138,10 @@ Owner: Ryan Duguid
 | [Bhutan](bhutan/) | Needs writing | 6 | 0 | 0 |
 | [Brunei](brunei/) | Needs writing | 7 | 0 | 0 |
 | [Cambodia](cambodia/) | Needs writing | 6 | 0 | 0 |
-| [China](china/) | Needs writing | 14 | 5 | 0 |
+| [China](china/) | Needs writing | 16 | 9 | 0 |
 | [Fiji](fiji/) | Needs writing | 6 | 0 | 0 |
 | [Hong Kong](hong-kong/) | Needs writing | 7 | 0 | 0 |
-| [India](india/) | Needs writing | 19 | 14 | 0 |
+| [India](india/) | Needs writing | 18 | 14 | 0 |
 | [Indonesia](indonesia/) | Needs writing | 12 | 1 | 0 |
 | [Japan](japan/) | Needs writing | 17 | 0 | 0 |
 | [Kazakhstan](kazakhstan/) | Needs writing | 15 | 9 | 0 |
@@ -188,7 +188,7 @@ Owner: Michael Cutajar
 | [Oman](oman/) | Needs writing | 6 | 0 | 0 |
 | [Qatar](qatar/) | Needs signature | 8 | 8 | 0 |
 | [Saudi Arabia](saudi-arabia/) | Needs writing | 12 | 0 | 0 |
-| [United Arab Emirates](uae/) | Needs writing | 7 | 5 | 0 |
+| [United Arab Emirates](uae/) | Needs writing | 9 | 7 | 0 |
 
 ## Africa
 

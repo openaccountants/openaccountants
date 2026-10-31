@@ -28,6 +28,7 @@ SPDX-License-Identifier = "AGPL-3.0-only"
 [[annotations]]
 path = [
   "skills/**",
+  "evidence/research/**",
   "packages/**",
   "workflows/**",
   "agent-skills/**/SKILL.md",

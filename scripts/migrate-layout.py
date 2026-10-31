@@ -202,6 +202,9 @@ def main():
     for old, new in pending.items():
         os.makedirs(os.path.dirname(os.path.join(ROOT, new)), exist_ok=True)
         git("mv", old, new)
+    for parent, _, _ in os.walk(os.path.join(ROOT, "skills"), topdown=False):
+        if not os.listdir(parent):
+            os.rmdir(parent)  # folders emptied by the moves
     for old, text in edits.items():
         with open(os.path.join(ROOT, moves.get(old, old)), "w", encoding="utf-8", newline="") as fh:
             fh.write(text)

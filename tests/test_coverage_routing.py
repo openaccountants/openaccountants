@@ -24,14 +24,14 @@ class TexasCoverageRoutingTest(unittest.TestCase):
                          if row["code"] == "US-TX")
 
     def test_report_routes_texas_to_state_pack(self):
-        self.assertEqual(self.texas["dir"], "skills/us-states/tx")
+        self.assertEqual(self.texas["dir"], "skills/us/states/tx")
         self.assertTrue(os.path.isfile(os.path.join(
             cr.REPO_ROOT, self.texas["dir"], "README.md")))
 
     def test_issue_body_points_contributors_to_texas_pack_readme(self):
         body = oci.body_for(self.texas)
-        self.assertIn("Pack: `skills/us-states/tx`", body)
-        self.assertIn("`skills/us-states/tx/README.md`", body)
+        self.assertIn("Pack: `skills/us/states/tx`", body)
+        self.assertIn("`skills/us/states/tx/README.md`", body)
         self.assertNotIn("skills/orchestrator", body)
 
 

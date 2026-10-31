@@ -18,7 +18,7 @@ import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PACKS = ROOT / "skills" / "international"
+SKILLS = ROOT / "skills"
 
 
 def _load(name, filename):
@@ -29,6 +29,7 @@ def _load(name, filename):
 
 
 coverage = _load("coverage_report", "coverage-report.py")
+repo_layout = _load("repo_layout", "repo_layout.py")
 DOMAIN_NAMES = {
     "IT-IND": "individual income tax", "IT-CORP": "corporate income tax", "VAT": "indirect tax",
     "SC": "social contributions", "PR": "payroll withholding", "TP": "transfer pricing", "XB": "cross-border",
@@ -120,7 +121,7 @@ def main():
     a = ap.parse_args()
     skip = {s for s in a.skip.split(",") if s}
     wrote, empty = 0, []
-    for pack in sorted(p for p in PACKS.iterdir() if p.is_dir()):
+    for pack in repo_layout.country_dirs(SKILLS):
         if pack.name in skip or (pack / "README.md").exists():
             continue
         text = build(pack)
