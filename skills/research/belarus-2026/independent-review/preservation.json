@@ -1,0 +1,74 @@
+[
+  {
+    "path": "skills/international/belarus/belarus-income-tax.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "d1e011e09f8cc42b225793cc5d73dda0d328d8cdd0cd34cc0445f2440abcf50d",
+    "new_sha256": "42a04c12e962864d8d8ba62485532810f35d6ad45451b8b0f72e5264cfc0ddc7",
+    "same_entire_file": false
+  },
+  {
+    "path": "skills/international/belarus/belarus-payroll.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "e756447b61e5a05583e3b3e7ea4971a74c5ceda3c74c5439d07a993a9f273bc6",
+    "new_sha256": "03712dd87ac894f031cd555a758ae8a652e880b68e5e78738f3c17bd4fe0d771",
+    "same_entire_file": false
+  },
+  {
+    "path": "skills/international/belarus/belarus-social-contributions.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "a67228534127eb44e9190b2a7a1120f882d35508e59dac6a4c5fcbffe52f9e11",
+    "new_sha256": "e110647a2e2a1e15a975306737c292ae6682d41272e0cb01c2a61159ebf08fd4",
+    "same_entire_file": false
+  },
+  {
+    "path": "skills/international/belarus/belarus-tax-optimization.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "d129405cf1b040918a8ce753b56118b3b6fffb1234e52c22d3a9de21a61e2316",
+    "new_sha256": "d129405cf1b040918a8ce753b56118b3b6fffb1234e52c22d3a9de21a61e2316",
+    "same_entire_file": true
+  },
+  {
+    "path": "skills/international/belarus/belarus-vat.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "e19037d4bd2d26ebcb81e429f2891dae17c05cd72ce52c7b899f49c6f255fe10",
+    "new_sha256": "134e4fb0f36f4569479bde086c55db63d40fc07cdef7587a820011fe427e1160",
+    "same_entire_file": false
+  },
+  {
+    "path": "skills/international/belarus/by-company-formation.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "8927e0b19ec0ac58dff7e7eccd527e8b089f8a8ebdd40b9c8219be3bd1fcb78f",
+    "new_sha256": "8927e0b19ec0ac58dff7e7eccd527e8b089f8a8ebdd40b9c8219be3bd1fcb78f",
+    "same_entire_file": true
+  },
+  {
+    "path": "skills/international/belarus/by-corporate-income-tax.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "c8674fa37a49ba7fc85865688e4fac492784e107cff22c9d6a50c669eb85d85e",
+    "new_sha256": "d132a6420248612a366b4acfd926911fa7715ac97d39f49777d7aab4cb374470",
+    "same_entire_file": false
+  },
+  {
+    "path": "skills/international/belarus/by-tax-overview.md",
+    "exists": true,
+    "platform_equal": true,
+    "cta_equal": true,
+    "old_sha256": "8cd908a980888f8339926245595148447fb5079208f62ceb0b291065afbeb532",
+    "new_sha256": "8cd908a980888f8339926245595148447fb5079208f62ceb0b291065afbeb532",
+    "same_entire_file": true
+  }
+]
