@@ -29,7 +29,7 @@ Owner: Michael Cutajar
 | [Finland](finland/) | Needs signature | 14 | 14 | 0 |
 | [France](france/) | Needs signature | 21 | 20 | 0 |
 | [Georgia](georgia/) | Needs signature | 10 | 10 | 0 |
-| [Germany](germany/) | Needs signature | 28 | 27 | 0 |
+| [Germany](germany/) | Needs signature | 27 | 26 | 0 |
 | [Gibraltar](gibraltar/) | Needs writing | 5 | 5 | 0 |
 | [Greece](greece/) | Needs signature | 15 | 15 | 0 |
 | [Guernsey](guernsey/) | Needs writing | 10 | 10 | 0 |
@@ -47,7 +47,7 @@ Owner: Michael Cutajar
 | [Moldova](moldova/) | Needs writing | 10 | 10 | 0 |
 | [Monaco](monaco/) | Needs signature | 8 | 8 | 0 |
 | [Montenegro](montenegro/) | Needs writing | 10 | 10 | 0 |
-| [Netherlands](netherlands/) | Needs updating | 26 | 25 | 0 |
+| [Netherlands](netherlands/) | Needs updating | 25 | 24 | 0 |
 | [North Macedonia](north-macedonia/) | Needs writing | 10 | 10 | 0 |
 | [Norway](norway/) | Needs signature | 12 | 12 | 0 |
 | [Poland](poland/) | Needs signature | 12 | 11 | 0 |
