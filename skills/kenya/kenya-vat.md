@@ -1,10 +1,10 @@
 ---
 name: kenya-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Kenya VAT return (VAT-3), classify transactions for Kenyan VAT purposes, or advise on VAT registration and filing in Kenya. Trigger on phrases like "Kenya VAT", "KRA VAT", "VAT-3 Kenya", "input tax Kenya", "output tax Kenya", "Kenya Revenue Authority VAT", or any Kenya VAT request. ALWAYS read this skill before touching any Kenya VAT work.
-version: 2.0
+description: Use this skill whenever asked to prepare, review, or classify transactions for a Kenya VAT return (VAT-3), classify transactions for Kenyan VAT purposes, or advise on VAT registration and filing in Kenya. Trigger on phrases like "Kenya VAT", "KRA VAT", "VAT-3 Kenya", "input tax Kenya", "output tax Kenya", "Kenya Revenue Authority VAT", or any Kenya VAT request. Also covers the former ke-vat-return slug. ALWAYS read this skill before touching any Kenya VAT work.
+version: 3.0
 jurisdiction: KE
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,98 +14,59 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Kenya VAT
 
-## Section 1 — Quick reference
+# Kenya VAT v3.0
 
-**Quick reference table**
+> **General reference only.** This document does not constitute tax, legal, or
+> financial advice. Verify figures against the cited primary sources or with a
+> licensed professional before relying on them.
 
-| Field | Value |
-| --- | --- |
-| Country | Kenya (Republic of Kenya) |
-| Tax | VAT (Value Added Tax) |
-| Currency | KES (Kenyan Shilling / Ksh) |
-| Tax year | Calendar year (1 Jan – 31 Dec) |
-| Standard rate | 16% |
-| Zero rate | 0% (exports; certain agricultural inputs; medicines; specified goods under Second Schedule) |
-| Exempt | Financial services, education, medical services, agricultural products (raw), passenger transport |
-| Registration threshold | KES 5,000,000 per year |
-| Tax authority | KRA (Kenya Revenue Authority) |
-| Return form | VAT-3 (monthly) |
-| Filing portal | iTax (https://itax.kra.go.ke) |
-| Filing deadline | 20th of the month following the tax period |
-| Tax invoice | ETR (Electronic Tax Register) receipt or e-Invoice required |
-| PIN | Personal Identification Number — tax registration |
-| Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Kenyan CPA(K) or tax practitioner |
-| Skill version | 2.0 |
+This skill also replaces the former `ke-vat-return` slug. The law is the VAT Act (Cap. 476, formerly No. 35 of 2013) as at 1 July 2025, amended by the Finance Act 2026 (No. 19 of 2026), most of which took effect on 1 July 2026. A 2026 period straddles that date: use the old rule before it and the new rule after it.
 
-### Key VAT-3 return fields
+## Who this applies to
 
-**Key VAT-3 return fields**
+- A person who made, or expects to make, taxable supplies of KES 5,000,000 or more in any 12 months must apply to register within 30 days of becoming liable (s. 34(1)). Capital asset sales and sales made solely because the business is ending stay out of the test (s. 34(2)). Below the limit, registration is voluntary, on conditions (KRA).
+- A person supplying imported digital services over the internet, an electronic network or a digital marketplace registers whatever its turnover (s. 34(1) proviso; s. 5(7)).
+- Skill use: month-by-month preparation of the return from a bank statement, ETR receipts and invoices, with a KRA PIN. Minimum input: the month's bank statement and PIN. Recommended: purchase invoices, sales invoices, prior excess credit. Ideal: iTax registers, import entries, asset register. No bank statement is a hard stop. All credits stay provisional until the documents are seen.
+- Refuse and refer: R-KE-1 non-registered vendor (only a registered person charges VAT, confirm registration); R-KE-2 partial exemption without full-year data; R-KE-3 large withholding VAT reconciliations; R-KE-4 non-resident digital suppliers; property and land transactions.
 
-| Field | Meaning |
-| --- | --- |
-| Section A | Standard-rated sales at 16% |
-| Section B | Zero-rated sales |
-| Section C | Exempt sales |
-| Section D | Total output tax |
-| Section E | Standard-rated purchases (input tax) |
-| Section F | Zero-rated purchases |
-| Section G | Total input tax |
-| Section H | Net VAT payable (D − G) |
-| Section I | Excess credit c/f or refund |
+## Rates, bands and thresholds
 
-### Conservative defaults
+| Item | Amount | Conditions | Tax year | Official URL |
+| --- | --- | --- | --- | --- |
+| Standard rate | 16% | Every taxable supply, import and imported taxable service not zero-rated (s. 5(2)(b)) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Zero rate | 0% | Second Schedule Part A, in the course of a registered person's business, not hotel, restaurant or entertainment services | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Registration threshold | KES 5,000,000 | Any 12 months, s. 34(1) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Withholding VAT | 2% of taxable value | Appointed agents, TPA s. 42A; replaces the 6% in the earlier skill | 2026 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Refund claim, excess from zero-rating or withholding | 12 months | From the date the tax is due and payable, s. 17(5) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Input tax claim window | 6 months | After the end of the period of the supply or import, s. 17(2) | 2026 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Bad debt relief wait | 3 years | Was 2 years, s. 31(1), Finance Act 2026 s. 29 | 2026 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf |
 
-**Conservative defaults**
+Zero-rated (Second Schedule Part A, paragraph): exported goods (1), exported taxable services (23), supplies to EPZ businesses (2) and SEZ enterprises (12), ship stores (3), international air passengers (5), services to international carriers (6), goods in transit services (10), ordinary bread (13A), listed milk and cream (15), Kenyan-origin goods carried abroad (20), LPG (27). Finance Act 2026 s. 33 deleted paragraphs 11 and 35 and narrowed paragraphs 31 and 32 by tariff heading.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 16% standard |
-| Unknown counterparty country | Domestic Kenya |
-| Unknown export qualification | 16% until evidence confirmed |
-| Unknown business-use % | 0% input tax |
-| Unknown ETR/e-Invoice availability | No input credit |
-| Unknown whether exempt or taxable | Taxable at 16% |
+Exempt (First Schedule): financial services, insurance (excluding consultancy, actuaries, assessors), education, medical, veterinary, dental, ambulance and nursing services, agricultural services, burial, passenger transport except international air and hired or chartered conveyances, land and residential letting, postal stamps (Part II paras 1 to 8, 29). Goods include listed medicaments and fertilizers of Chapter 31 (Part I para 151). The earlier skill called medicines, fertilizers and ambulances zero-rated: the Act makes them exempt, so no refund of input tax. Added from 1 July 2026: dialyzers, scrap metal, pharmaceutical inputs on recommendation, BEV stoves, credit and sale of repossessed collateral (Part I paras 158 to 161, 166). Electricity and water do not appear in the schedules, so they stand at 16%.
 
-### Red flag thresholds
+## The base
 
-**Red flag thresholds**
+- Output tax: 16% of taxable value; on a VAT-inclusive receipt, tax is gross x 16/116.
+- Labour and outsourcing: from 1 July 2026 salaries, wages and statutory deductions are disbursements for the client, outside the value (s. 13(5A), (5B)).
+- Hire purchase: finance charges leave the value only if the supplier is licensed and the agreement is registered under the Hire Purchase Act (s. 13(6)(a)).
+- Payment services: money transfer stays exempt, but processing, settlement, merchant acquiring, gateway and aggregation fees by a payment service provider are not (First Schedule Part II para 1(b), Finance Act 2026 s. 32(b)).
+- Input tax: deductible only to the extent the purchase makes taxable supplies (s. 17(1)), with an original invoice or certified copy, or customs entry and receipt (s. 17(3)), unless the supplier has declared the invoice.
+- Blocked: passenger cars and minibuses with their repairs, unless dealt in or hired as the business; entertainment, restaurant and accommodation, unless that is the business or the recipient is away from home on business (s. 17(4)).
+- Excess input tax carries forward (s. 17(5)). From 1 July 2026 input tax on supplies to the KDF, its welfare services, NIS and Police is deductible with documents and not apportioned (s. 17(5)(e), (7), (8)).
+- Newly exempt supplies: on the date supplies become exempt, pay back input tax on unsold stock in that period's return (s. 17A).
+- Invoices: one showing tax only for a taxable supply (s. 42(2)).
+- Withholding VAT: a client appointed as agent pays over 2% of taxable value. Record full output tax, take the 2% as a credit on its certificate. Excess from withholding is refundable or set off (s. 17(5)).
+- Imported services: tax falls on the recipient (s. 5(6)), but "supply of imported services" covers a registered recipient only where it would not have full input tax (s. 2). A fully taxable registered business has no entry. An exempt or partly exempt one, or a non-registered recipient, is liable on the disallowed position; refer R-KE-2.
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | KES 500,000 |
-| HIGH tax delta on single default | KES 80,000 |
-| MEDIUM counterparty concentration | >40% |
-| MEDIUM conservative default count | >4 per return |
-| LOW absolute net VAT position | KES 200,000 |
+### Supplier pattern library (bank statement classification)
 
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable** — bank statement for the month. KRA PIN (tax PIN).
-- **Recommended** — ETR receipts or e-invoices for all purchases, sales invoices issued, prior period excess credit.
-- **Ideal** — complete purchase/sales register from iTax, import entry documents (IDF/Entry), asset register.
-- **Refusal if minimum missing** — SOFT WARN. No bank statement = hard stop. "Input tax requires ETR receipts or compliant e-invoices. All credits provisional pending verification."
-
-### Refusal catalogue
-
-- **R-KE-1 — Non-registered vendor** — "Only KRA VAT-registered taxpayers (above KES 5M threshold) can charge and recover VAT. Confirm registration."
-- **R-KE-2 — Partial exemption** — "Businesses with both taxable and exempt supplies must apportion input tax. Out of scope without full-year data."
-- **R-KE-3 — Withholding VAT (WHT-VAT)** — "Government agencies withhold 6% (or 100%) of VAT on payments to suppliers. Track WHT-VAT certificates — escalate if significant."
-- **R-KE-4 — Digital marketplace suppliers** — "Non-resident digital service providers must register for Kenyan VAT. Complex cross-border treatment — escalate for non-resident client situations."
-
-## Section 3 — Supplier pattern library
-
-### 3.1 Kenyan banks — fees (exempt / exclude)
-
-**Kenyan banks — fees table**
+#### 3.1 Kenyan banks: fees (exempt / exclude)
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| KENYA COMMERCIAL BANK, KCB | EXCLUDE (fees) | Financial service — exempt |
+| KENYA COMMERCIAL BANK, KCB | EXCLUDE (fees) | Bank charges for lending and money dealing are exempt (First Schedule Part II para 1); check any fee invoice showing VAT |
 | EQUITY BANK, EQUITY GROUP | EXCLUDE (fees) | Same |
 | COOPERATIVE BANK, CO-OP BANK | EXCLUDE (fees) | Same |
 | ABSA BANK KENYA | EXCLUDE (fees) | Same |
@@ -113,96 +74,82 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | NCBA BANK, NCBA GROUP | EXCLUDE (fees) | Same |
 | I&M BANK | EXCLUDE (fees) | Same |
 | DIAMOND TRUST BANK, DTB | EXCLUDE (fees) | Same |
-| MPESA, M-PESA (SAFARICOM) | EXCLUDE (fees) | Mobile money — financial service |
-| AIRTEL MONEY | EXCLUDE (fees) | Same |
-| BANK CHARGES, INTEREST | EXCLUDE | Bank fee/interest — exempt |
+| MPESA, M-PESA (SAFARICOM) | EXCLUDE (person-to-person transfer fees); Input 16% (Lipa na M-Pesa or other merchant, gateway, processing fees from 1 July 2026) | Finance Act 2026 s. 32(b) |
+| AIRTEL MONEY | Same as M-Pesa | Same |
+| BANK CHARGES, INTEREST | EXCLUDE | Bank fee or interest, exempt |
 
-### 3.2 Kenyan government and statutory (exclude)
-
-**Kenyan government and statutory table**
+#### 3.2 Kenyan government and statutory (exclude)
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
 | KENYA REVENUE AUTHORITY, KRA | EXCLUDE | Tax payment |
 | NATIONAL SOCIAL SECURITY FUND, NSSF | EXCLUDE | Social insurance |
-| NATIONAL HOSPITAL INSURANCE FUND, NHIF | EXCLUDE | Health insurance |
+| NATIONAL HOSPITAL INSURANCE FUND, NHIF | EXCLUDE | Health insurance contribution |
 | NITA, NATIONAL INDUSTRIAL TRAINING | EXCLUDE | Statutory levy |
 | NTSA, NATIONAL TRANSPORT AND SAFETY | EXCLUDE | Regulatory fee |
 
-### 3.3 Kenyan utilities (taxable at 16%)
-
-**Kenyan utilities table**
+#### 3.3 Kenyan utilities (taxable at 16%)
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| KENYA POWER, KPLC | Input 16% | 16% | Electricity — taxable |
-| NAIROBI CITY WATER, NCWSC | Input 16% | 16% | Water — taxable |
-| SAFARICOM (data/voice) | Input 16% | 16% | Telecom — taxable |
-| AIRTEL KENYA | Input 16% | 16% | Mobile — taxable |
-| TELKOM KENYA, TELKOM | Input 16% | 16% | Telecom — taxable |
-| ZUKU FIBER, WANANCHI GROUP | Input 16% | 16% | Internet — taxable |
-| LIQUID TELECOM KENYA | Input 16% | 16% | Internet — taxable |
+| KENYA POWER, KPLC | Input 16% | 16% | Electricity: taxable |
+| NAIROBI CITY WATER, NCWSC | Input 16% | 16% | Water: taxable |
+| SAFARICOM (data/voice) | Input 16% | 16% | Telecom: taxable |
+| AIRTEL KENYA | Input 16% | 16% | Mobile: taxable |
+| TELKOM KENYA, TELKOM | Input 16% | 16% | Telecom: taxable |
+| ZUKU FIBER, WANANCHI GROUP | Input 16% | 16% | Internet: taxable |
+| LIQUID TELECOM KENYA | Input 16% | 16% | Internet: taxable |
 
-### 3.4 Transport and logistics
-
-**Transport and logistics table**
+#### 3.4 Transport and logistics
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| KENYA AIRWAYS, KQ | Check route | 0%/16% | International 0%; domestic 16% |
-| JAMBOJET | Input 16% | 16% | Domestic — 16% |
-| AFRICAAIRWAYS | Check route | 0%/16% | Check |
-| UBER KENYA | Input 16% | 16% | Ride-hailing — taxable |
-| BOLT KENYA | Input 16% | 16% | Ride-hailing — taxable |
-| LITTLE CAB | Input 16% | 16% | Ride-hailing — taxable |
-| DHL KENYA | Input 16% | 16% | Courier — taxable |
-| FEDEX KENYA | Input 16% | 16% | Courier — taxable |
-| G4S KENYA, WELLS FARGO (courier) | Input 16% | 16% | Security/courier — taxable |
-| POSTA KENYA (parcel) | Input 16% | 16% | Parcel — taxable |
-| POSTA KENYA (stamps) | EXEMPT | 0% | Universal stamps — exempt |
+| KENYA AIRWAYS, KQ | Check route | 0%/exempt | International 0% (Second Schedule para 5); domestic exempt (First Schedule Part II para 7), no input tax |
+| JAMBOJET | Exempt | None | Domestic passenger carriage, First Schedule Part II para 7 |
+| AFRICAAIRWAYS | Check route | 0%/exempt | Same as Kenya Airways |
+| UBER KENYA | Check invoice | Exempt/16% | Passenger carriage exempt unless the conveyance is hired or chartered (para 7); the platform commission is a separate supply |
+| BOLT KENYA | Check invoice | Exempt/16% | Same |
+| LITTLE CAB | Check invoice | Exempt/16% | Same |
+| DHL KENYA | Input 16% | 16% | Courier: taxable |
+| FEDEX KENYA | Input 16% | 16% | Courier: taxable |
+| G4S KENYA, WELLS FARGO (courier) | Input 16% | 16% | Security/courier: taxable |
+| POSTA KENYA (parcel) | Input 16% | 16% | Parcel: taxable |
+| POSTA KENYA (stamps) | EXEMPT | None | First Schedule Part II para 29 |
 
-### 3.5 Food and retail
-
-**Food and retail table**
+#### 3.5 Food and retail
 
 | Pattern | Treatment | Rate | Notes |
 | --- | --- | --- | --- |
-| NAKUMATT, NAIVAS SUPERMARKET | Input 16%/0% | Mixed | Non-food 16%; basic food may be zero-rated |
+| NAKUMATT, NAIVAS SUPERMARKET | Input 16%/0% | Mixed | Non-food 16%; ordinary bread and listed milk are zero-rated (Second Schedule paras 13A, 15). Read the itemised receipt |
 | QUICKMART SUPERMARKET | Input 16%/0% | Mixed | Same |
 | CARREFOUR KENYA | Input 16%/0% | Mixed | Same |
-| CHANDARANA FOODPLUS | Input 16%/0% | Mixed | Supermarket — split |
+| CHANDARANA FOODPLUS | Input 16%/0% | Mixed | Supermarket: split |
 | TUSKYS SUPERMARKET | Input 16%/0% | Mixed | Same |
-| KWAL, DEL MONTE KENYA (packaged food) | Input 16% | 16% | Processed food — 16% |
-| UNGA LIMITED (maize flour) | Input 0% | 0% | Basic staple — zero-rated |
+| KWAL, DEL MONTE KENYA (packaged food) | Input 16% | 16% | Processed food: 16% |
+| UNGA LIMITED (maize flour) | Check invoice | Per invoice | Rate not confirmed, see Sources |
 
-### 3.6 SaaS — international suppliers
+#### 3.6 SaaS: international suppliers
 
-Foreign digital service providers must register with KRA if providing services to Kenyan consumers/businesses.
-
-**SaaS international suppliers table**
+A non-resident supplying imported digital services must register whatever its turnover (VAT Act s. 34(1) proviso). If the invoice shows a KRA PIN and VAT, treat it as a Kenyan taxable purchase. If not, see "Imported services" under The base.
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| GOOGLE (Workspace, Ads) | Reverse charge 16% | Self-assess if not KRA-registered |
-| MICROSOFT (365, Azure) | Reverse charge 16% | Same |
-| META, FACEBOOK ADS | Reverse charge 16% | Same |
-| ZOOM, SLACK, NOTION | Reverse charge 16% | Same |
-| AWS | Reverse charge 16% | Same |
+| GOOGLE (Workspace, Ads) | Imported services rule | Registered and fully taxable recipient: no entry |
+| MICROSOFT (365, Azure) | Imported services rule | Same |
+| META, FACEBOOK ADS | Imported services rule | Same |
+| ZOOM, SLACK, NOTION | Imported services rule | Same |
+| AWS | Imported services rule | Same |
 
-### 3.7 Payment processors (exempt)
-
-**Payment processors table**
+#### 3.7 Payment processors (16% from 1 July 2026)
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| MPESA TRANSACTION FEE | EXCLUDE | Financial service — exempt |
-| PESAPAL (fees) | EXCLUDE | Payment gateway — exempt |
-| STRIPE (fees) | EXCLUDE | Same |
-| PAYPAL (fees) | EXCLUDE | Same |
+| MPESA TRANSACTION FEE | EXCLUDE | Bank charges for lending and money dealing are exempt (First Schedule Part II para 1); check any fee invoice showing VAT |
+| PESAPAL (fees) | Input 16% | Finance Act 2026 s. 32(b): gateway and aggregation fees are outside the exemption |
+| STRIPE (fees) | Input 16% or imported services rule | Non-resident supplier: see 3.6 |
+| PAYPAL (fees) | Input 16% or imported services rule | Same |
 
-### 3.8 Internal transfers and exclusions
-
-**Internal transfers and exclusions table**
+#### 3.8 Internal transfers and exclusions
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
@@ -210,123 +157,43 @@ Foreign digital service providers must register with KRA if providing services t
 | LOAN, REPAYMENT | EXCLUDE | Loan principal |
 | SALARY, PAYROLL | EXCLUDE | Outside VAT scope |
 | DIVIDEND | EXCLUDE | Out of scope |
-| ATM, CASH WITHDRAWAL | Tier 2 — ask | Default exclude |
+| ATM, CASH WITHDRAWAL | Tier 2: ask | Default exclude |
 
-## Section 4 — Worked examples
 
-Six classifications from a hypothetical Nairobi-based IT consultant. Format: KCB Bank statement.
+### Bank statement reading guide
 
-### Example 1 — Domestic B2B revenue (16%)
+#### Common Kenyan bank formats
 
-**Input line:**
-`15/04/2025  Credit  SAFARICOM PLC  Invoice KE-2025-041  Ksh 1,160,000  Ksh 5,000,000`
+| Bank | Key columns | Date format | Amount |
+| --- | --- | --- | --- |
+| KCB | Date, Description, Debit, Credit, Balance | DD/MM/YYYY | KES |
+| Equity Bank | Date, Narrative, Withdrawal, Deposit, Balance | DD/MM/YYYY | KES |
+| Co-op Bank | Date, Description, Debit, Credit, Balance | DD/MM/YYYY | KES |
+| ABSA Kenya | Date, Description, Amount, Balance | DD/MM/YYYY | KES |
 
-**Reasoning:**
-Incoming Ksh 1,160,000 from Safaricom for IT consulting. Standard 16%. Gross 1,160,000 includes VAT. Net = Ksh 1,000,000 + Ksh 160,000 output VAT. Issue ETR receipt or e-invoice; report on VAT-3 Section A.
+#### Key Kenyan banking terms
 
-**Classification:** Output tax 16% — Ksh 160,000. Net: Ksh 1,000,000.
+| Term | Meaning | Hint |
+| --- | --- | --- |
+| Credit / Deposit | Incoming | Potential revenue |
+| Debit / Withdrawal | Outgoing | Potential expense |
+| M-PESA | Mobile money | Check if fee or transfer |
+| Bank Charges | Fee | Exempt |
+| Interest | Interest | Exempt |
+| Balance | Balance | Ignore |
 
-### Example 2 — Export service (zero-rated)
 
-**Input line:**
-`22/04/2025  Credit  ACME CORP USA  Consulting USD 5,000 (Ksh 645,000)  Ksh 5,645,000`
+## Deadlines and filing
 
-**Reasoning:**
-USD from foreign client for services. Zero-rated if services exported outside Kenya. Evidence: contract, FX payment. Report Ksh 645,000 on Section B. Output tax: Ksh 0.
+Monthly. Log in to iTax (https://itax.kra.go.ke) with the PIN, complete the VAT return for the period, submit, generate the payment slip and pay.
 
-**Classification:** Zero-rated — Ksh 645,000. Output tax: Ksh 0.
+| Obligation | Due | Source |
+| --- | --- | --- |
+| Return | 20th day after the end of the period, s. 44 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
+| Payment | 20th of the following month | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax |
+| Registration | 30 days after liability, s. 34(1) | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 |
 
-### Example 3 — Electricity (16%)
-
-**Input line:**
-`10/04/2025  Debit  KENYA POWER  April bill  -Ksh 11,600  Ksh 4,988,400`
-
-**Reasoning:**
-Kenya Power electricity. 16% VAT. Gross Ksh 11,600. Net = Ksh 10,000 + Ksh 1,600 input tax. ETR receipt from KPLC — input credit Ksh 1,600.
-
-**Classification:** Input tax 16% — Ksh 1,600. Net: Ksh 10,000.
-
-### Example 4 — M-Pesa transaction fee (exempt)
-
-**Input line:**
-`08/04/2025  Debit  SAFARICOM M-PESA  Transaction fees  -Ksh 232  Ksh 4,988,168`
-
-**Reasoning:**
-M-Pesa transaction fee. Mobile money is a financial service — exempt from VAT. No input tax. EXCLUDE from VAT-3.
-
-**Classification:** EXEMPT — no input tax.
-
-### Example 5 — International SaaS (reverse charge)
-
-**Input line:**
-`05/04/2025  Debit  GOOGLE IRELAND  Workspace April  -Ksh 3,480  Ksh 4,984,688`
-
-**Reasoning:**
-Google Workspace. If Google is not KRA-registered for digital services, the Kenyan business must self-assess 16% VAT. Ksh 3,480 net; self-assessed VAT = Ksh 557. Both output and input in same period for fully taxable business.
-
-**Classification:** Reverse charge — self-assess Ksh 557 output and input. Net: Ksh 0.
-
-### Example 6 — Domestic courier (16%)
-
-**Input line:**
-`12/04/2025  Debit  DHL KENYA  Shipping invoice  -Ksh 5,800  Ksh 4,978,888`
-
-**Reasoning:**
-DHL courier. 16% VAT. Gross Ksh 5,800. Net = Ksh 5,000 + Ksh 800 input tax. DHL Kenya issues ETR receipts — input credit Ksh 800.
-
-**Classification:** Input tax 16% — Ksh 800. Net: Ksh 5,000.
-
-## Section 5 — Tier 1 rules (compressed)
-
-### 5.1 Standard rate 16%
-
-- **Standard rate** — 16%
-
-### 5.2 Zero rate
-
-- **Zero rate goods and services** — Second Schedule goods and services: exports, certain agricultural inputs (fertilizers, seeds), medicines, textbooks, ambulance services.  _(VAT Act 2013 Second Schedule)_
-
-### 5.3 Exempt supplies
-
-- **Exempt supplies** — First Schedule: financial services, education, medical/health services, raw agricultural products sold by farmers, passenger transport.  _(VAT Act 2013 First Schedule)_
-
-### 5.4 ETR / e-Invoice requirement
-
-- **ETR / e-Invoice requirement** — Electronic Tax Register (ETR) receipts required for retail; e-invoices via iTax for B2B. Input tax credit requires a compliant ETR or e-invoice from a KRA VAT-registered supplier.
-
-### 5.5 Withholding VAT
-
-- **Withholding VAT** — Government departments and designated agents withhold 6% VAT on payments to suppliers; 100% on payments to foreign entities not registered in Kenya. Track withholding tax certificates (WHT-VAT form).
-
-### 5.6 Filing deadlines
-
-**Filing deadlines table**
-
-| Obligation | Due date |
-| --- | --- |
-| VAT-3 return | 20th of following month |
-| VAT payment | 20th of following month |
-| Late penalty | 5% of unpaid tax + 1% per month interest |
-
-## Section 6 — Tier 2 catalogue
-
-### 6.1 Withholding VAT from government clients
-
-- **Withholding VAT from government clients** — **What it shows:** Payment from government that appears less than invoiced. **What's missing:** WHT-VAT certificate amount. **Conservative default:** Record full output tax on invoice; offset WHT-VAT certificate. **Question to ask:** "Do you have the WHT-VAT withholding certificate from the government agency?"
-
-### 6.2 Export service qualification
-
-- **Export service qualification** — **What it shows:** Revenue from a foreign client. **What's missing:** Evidence services were exported. **Conservative default:** 16%. **Question to ask:** "Foreign client contract + FX payment evidence available?"
-
-### 6.3 Zero-rated vs. exempt food items
-
-- **Zero-rated vs. exempt food items** — **What it shows:** Grocery or agricultural purchase. **What's missing:** Whether the specific items are zero-rated (Second Schedule) or simply out of scope. **Conservative default:** 16% on all. **Question to ask:** "What exactly was purchased? Itemised receipt available?"
-
-### 6.4 International SaaS — KRA registration status
-
-- **International SaaS — KRA registration status** — **What it shows:** Payment to foreign digital provider. **What's missing:** Whether provider is KRA-registered. **Conservative default:** Self-assess 16% reverse charge. **Question to ask:** "Does the foreign provider's invoice show a KRA PIN? If yes, treat as standard. If no, self-assess."
-
-## Section 7 — Excel working paper template
+Working paper (our labels, not iTax box numbers):
 
 ```
 KENYA VAT-3 WORKING PAPER
@@ -337,13 +204,13 @@ A. OUTPUT TAX
   A2. Output tax (A1 × 16%)                    ___________
   A3. Zero-rated exports                       ___________
   A4. Exempt sales                             ___________
-  A5. Reverse charge output self-assessed      ___________
+  A5. Imported services tax, recipient liable    ___________
 
 B. INPUT TAX
   B1. Standard-rated purchases 16% (net)       ___________
   B2. Input tax (B1 × 16%)                     ___________
   B3. Import input tax                         ___________
-  B4. Reverse charge input self-assessed       ___________
+  B4. Imported services input, if deductible   ___________
   B5. Total input (B2+B3+B4)                  ___________
   B6. WHT-VAT credits                          ___________
 
@@ -357,96 +224,94 @@ REVIEWER FLAGS:
   [ ] ETR/e-invoices confirmed?
   [ ] Export evidence held?
   [ ] WHT-VAT certificates collected?
-  [ ] Reverse charge self-assessed?
+  [ ] Imported services reviewed?
 ```
 
-## Section 8 — Bank statement reading guide
+## Penalties and interest
 
-### Common Kenyan bank formats
-
-**Common Kenyan bank formats table**
-
-| Bank | Key columns | Date format | Amount |
-| --- | --- | --- | --- |
-| KCB | Date, Description, Debit, Credit, Balance | DD/MM/YYYY | KES |
-| Equity Bank | Date, Narrative, Withdrawal, Deposit, Balance | DD/MM/YYYY | KES |
-| Co-op Bank | Date, Description, Debit, Credit, Balance | DD/MM/YYYY | KES |
-| ABSA Kenya | Date, Description, Amount, Balance | DD/MM/YYYY | KES |
-
-### Key Kenyan banking terms
-
-**Key Kenyan banking terms table**
-
-| Term | Meaning | Hint |
+| Item | Amount | Official URL |
 | --- | --- | --- |
-| Credit / Deposit | Incoming | Potential revenue |
-| Debit / Withdrawal | Outgoing | Potential expense |
-| M-PESA | Mobile money | Check if fee or transfer |
-| Bank Charges | Fee | Exempt |
-| Interest | Interest | Exempt |
-| Balance | Balance | Ignore |
+| Late or missing VAT return | Higher of 5% of tax payable or KES 10,000, TPA s. 83(1)(c) | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Late payment penalty | 5% of tax due, TPA s. 83A | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Late payment interest | 1% a month or part, TPA s. 38 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Deliberate tax shortfall | 75% of the shortfall, TPA s. 84(2)(a) | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 |
+| Non-filing from the VAT Special Table | No penalty, per KRA | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax |
 
-## Section 9 — Onboarding fallback
+## Cross-border points
 
+- Exported services are zero-rated (para 23). Hold the contract and payment evidence; without it use 16%. Exported goods need customs documents.
+- Imports: VAT applies on taxable goods (s. 5(1)(b)); deduct with the customs entry and receipt.
+- Non-resident digital suppliers: see Who this applies to.
+- Returning residents: the para 99 limit rose to USD 2,000 from USD 300 (Finance Act 2026 s. 32(a)(vi)).
+
+## Two worked examples that recompute
+
+Example 1, ordinary month. IT consultant in Nairobi. Safaricom pays KES 1,160,000 gross for consulting; a foreign client pays KES 645,000 for an exported service (0%). Kenya Power KES 11,600 and DHL KES 5,800 gross, both 16%. Google Workspace without VAT on the invoice: fully taxable, so no entry. M-Pesa person-to-person fee KES 232: exempt. If Safaricom were a withholding agent, it would withhold 2% of KES 1,000,000.
+
+```oa-check
+name: Kenya monthly VAT with withholding credit
+inputs:
+  sales_gross: 1160000
+  power_gross: 11600
+  courier_gross: 5800
+steps:
+  - output: sales_gross * 16 / 116
+  - input: (power_gross + courier_gross) * 16 / 116
+  - withheld: (sales_gross - output) * 0.02
+  - payable: output - input - withheld
+expected:
+  output: 160000
+  input: 2400
+  withheld: 20000
+  payable: 137600
 ```
-KENYA VAT ONBOARDING — MINIMUM QUESTIONS
-1. KRA PIN (Personal Identification Number)?
-2. VAT registration number?
-3. Month covered by this bank statement?
-4. Export sales (zero-rated)? Evidence held?
-5. Government clients who withhold VAT? WHT-VAT certificates?
-6. International SaaS subscriptions — self-assess reverse charge?
-7. Prior period excess credit carried forward?
+
+Example 2, decision: file now unpaid, or file and pay late? March VAT of KES 150,000 is three months late. Not filing and not paying costs the filing penalty (higher of 5% and KES 10,000), the payment penalty and 3% interest. Filing on time and paying late saves KES 10,000.
+
+```oa-check
+name: Late VAT return and payment, three months
+inputs:
+  tax: 150000
+  months: 3
+steps:
+  - filing: max(tax * 0.05, 10000)
+  - payment: tax * 0.05
+  - interest: tax * 0.01 * months
+  - total_late_both: filing + payment + interest
+  - total_filed_on_time: payment + interest
+  - saving: total_late_both - total_filed_on_time
+expected:
+  filing: 10000
+  total_late_both: 22000
+  total_filed_on_time: 12000
+  saving: 10000
 ```
 
-## Section 10 — Reference material
+## Ask the client first
 
-**Reference material table**
+1. KRA PIN and VAT registration?
+2. Month covered by the statement?
+3. Exports: contract and payment evidence?
+4. Government or other clients who withhold VAT? Certificates?
+5. Foreign subscriptions: does the invoice show a KRA PIN? Any exempt sales?
+6. Prior excess credit?
+7. Itemised receipts for mixed groceries? ATM withdrawals: what for?
 
-| Topic | Reference |
-| --- | --- |
-| VAT Act | VAT Act 2013 (No. 35 of 2013) |
-| Standard rate | Section 5 |
-| Zero rate | Second Schedule |
-| Exemptions | First Schedule |
-| Withholding VAT | Section 17 |
-| ETR requirement | Section 27 |
-| Penalties | Section 53 |
+Defaults when unanswered: unknown sale rate 16%; unknown counterparty domestic; unproven export 16%; unknown business use 0% input; no invoice no input; exempt or taxable unclear, 16%. Review flags: single item above KES 500,000; tax effect above KES 80,000; counterparty above 40%; more than 4 defaults in a return; net position above KES 200,000.
 
-### Known gaps
+Never claim input tax without the document, never zero-rate without evidence, never ignore withholding certificates, and never present the result as final: a CPA(K) or tax practitioner reviews it.
 
-- Partial exemption apportionment — escalate
-- WHT-VAT reconciliation for large government contracts — specialist
-- Digital marketplace complex cross-border — escalate
-- Property/land transactions — escalate
+## Sources
 
-### Self-check
-
-- [ ] ETR/e-invoices held for all input credits
-- [ ] Export evidence confirmed
-- [ ] WHT-VAT certificates collected from government clients
-- [ ] Reverse charge self-assessed for foreign digital services
-- [ ] Prior credit carried forward correctly
-
-### Changelog
-
-**Changelog table**
-
-| Version | Date | Change |
+| Source | URL | Read |
 | --- | --- | --- |
-| 1.0 | 2024 | Initial |
-| 2.0 | April 2026 | v2.0 rewrite |
+| VAT Act, Cap. 476, version of 1 July 2025 | https://new.kenyalaw.org/akn/ke/act/2013/35/eng@2025-07-01 | 2026-10-31 (ss. 2, 5, 17, 34, 44 and Schedules, by keyword reading of the PDF) |
+| Finance Act 2026, No. 19 of 2026, ss. 25 to 33, 48 | https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf | 2026-10-31 |
+| Tax Procedures Act, Cap. 469B, version of 1 July 2025, ss. 38, 42A, 83, 83A, 84 | https://new.kenyalaw.org/akn/ke/act/2015/29/eng@2025-07-01 | 2026-10-31 |
+| KRA VAT page | https://www.kra.go.ke/individual/filing-paying/types-of-taxes/value-added-tax | 2026-10-31 |
+| KRA, Finance Act 2026 summary | https://www.kra.go.ke/popular-links/finance-act-2026-what-it-means-for-you | 2026-10-31 |
 
-## Prohibitions
-
-- NEVER claim input credit without ETR receipt or compliant e-invoice
-- NEVER zero-rate exports without customs documentation or FX evidence
-- NEVER ignore WHT-VAT from government clients
-- NEVER present calculations as definitive — direct to CPA(K)
-
-## Disclaimer
-
-This skill is for informational purposes only. All outputs must be reviewed by a qualified professional. Updated version at openaccountants.com.
+Not yet confirmed: the conditions in the TPA s. 42A(1) proviso, including the KES 2 billion investment text, and the earlier skill's 100% withholding on foreign entities; whether a later version of the Act exists beyond the 1 July 2025 text plus Finance Act 2026; VAT Act s. 31 full conditions; s. 17(6) apportionment wording; iTax return box numbers (the earlier skill's Sections A to I are dropped from the body until read); ETR and eTIMS rules (earlier skill cited s. 27, not read), and whether a non-eTIMS invoice bars input tax; the rate on maize flour and textbooks (earlier skill: 0%, not found in the Second Schedule passages read); ride-hailing treatment under para 7; any 2026 petroleum rate change; effective dates that differ from 1 July 2026 for individual VAT items; supplier statuses in the pattern tables, which are unaudited; the Finance Act 2026 s. 86 TPA replacement on electronic tax systems.
 
 ## Disclaimer
 
@@ -460,7 +325,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
