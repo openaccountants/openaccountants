@@ -1,7 +1,7 @@
 ---
 name: de-einkommensteuer-freelancer
 description: "German income tax (Einkommensteuer) on the profit of one self-employed person resident in Germany, tax year 2026. Covers Freiberufler (§ 18 EStG) versus trade (§ 15 EStG), the cash-basis profit (EÜR, § 4(3)) with Anlage EÜR and Anlage S or G, sorting a year of bank transactions into receipts and costs, business expenses including the § 4(5) limits (entertainment 70%, gifts EUR 50, fines), the home office flat rate and the EUR 6 day rate, business cars (1% rule, commuting adjustment), business loan interest (§ 4(4a)), low-value assets, the Sammelposten pool and depreciation (§§ 6, 7, including the § 7(2a) electric vehicle schedule), the Investitionsabzugsbetrag (§ 7g), the 2026 tariff with the EUR 12,348 Grundfreibetrag (§ 32a), splitting, the solidarity surcharge, church tax, pension and health special expenses and the § 10c lump sum, losses (§ 10d), prepayments (§ 37), the § 35 trade tax credit and the Hebesatz floor, filing deadlines with and without a Steuerberater (§ 149 AO), the late-filing surcharge (§ 152 AO), interest, the 1% late payment surcharge and the § 370 and § 378 AO offences. Trigger on: Freiberufler, Selbständige, Einkommensteuer Selbständige, EÜR, Anlage EÜR, Anlage S, Betriebsausgaben, Bewirtung, Arbeitszimmer, Homeoffice-Pauschale, GWG, Investitionsabzugsbetrag, Vorauszahlungen, Gewerbesteuer Anrechnung, German freelancer tax. Out of scope: trade tax (de-trade-tax), investments (de-capital-gains), social contributions (de-social-contributions), partners and part-year residents (de-partners-and-part-year), non-residents (de-non-resident-tax)."
-version: 1.7
+version: 1.8
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -38,13 +38,13 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 
 ### The 2026 tariff (§ 32a EStG)
 
-| Zone of taxable income (single) | From | To | Formula ([§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html)) |
-| --- | --- | --- | --- |
-| 1, basic allowance (Grundfreibetrag) | 0 | EUR 12,348 | tax = 0 |
-| 2 | EUR 12,349 | EUR 17,799 | (914.51 * y + 1400) * y |
-| 3 | EUR 17,800 | EUR 69,878 | (173.10 * z + 2397) * z + 1034.87 |
-| 4 | EUR 69,879 | EUR 277,825 | 0.42 * x - 11135.63 |
-| 5 | EUR 277,826 | none | 0.45 * x - 19470.38 |
+| Zone of taxable income (single) | From | To | Formula ([§ 32a(1) EStG](https://www.gesetze-im-internet.de/estg/__32a.html)) | Source |
+| --- | --- | --- | --- | --- |
+| 1, basic allowance (Grundfreibetrag) | 0 | EUR 12,348 | tax = 0 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| 2 | EUR 12,349 | EUR 17,799 | (914.51 * y + 1400) * y | same |
+| 3 | EUR 17,800 | EUR 69,878 | (173.10 * z + 2397) * z + 1034.87 | same |
+| 4 | EUR 69,879 | EUR 277,825 | 0.42 * x - 11135.63 | same |
+| 5 | EUR 277,826 | none | 0.45 * x - 19470.38 | same |
 
 - **x** is taxable income rounded down to a full euro; **y** is one ten-thousandth of x above the basic allowance; **z** is one ten-thousandth of x above EUR 17,799 (§ 32a(1) sentence 4). Round the tax down to a full euro. The statute prints a decimal comma and a space between thousands.
 - **Splitting.** Spouses assessed together pay twice the tax on half their joint taxable income (§ 32a(5)), if both are fully liable to German tax and do not live apart for good ([§ 26 EStG](https://www.gesetze-im-internet.de/estg/__26.html)); registered partners count as spouses (§ 2(8)). § 32a(6) extends it to a widowed person for the year after the death, and to some years in which a marriage ended.
@@ -68,7 +68,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Or trade profit in the financial year more than | EUR 80,000 | 2026 | https://www.gesetze-im-internet.de/ao_1977/__141.html |
 | Kleinunternehmer: previous year's turnover not above | EUR 25,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
 | And current year's turnover not above | EUR 100,000 | 2026 | https://www.gesetze-im-internet.de/ustg_1980/__19.html |
-| Start-up year: that year's turnover not above (ministry reading) | EUR 25,000 | 2026 | EÜR instructions 2026, line 12 (Sources) |
+| Start-up year: that year's turnover not above (ministry reading) | EUR 25,000 | 2026 | EÜR instructions 2026, line 12 (Sources), https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 | Home office that is the centre of all work: yearly flat amount instead of actual costs | EUR 1,260 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |
 | Home office day rate, per calendar day worked mainly at home | EUR 6 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |
 | Yearly cap on day rates | EUR 1,260 | 2026 | https://www.gesetze-im-internet.de/estg/__4.html |
@@ -76,7 +76,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Yearly cap on that, not for one's own or a provided car | EUR 4,500 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |
 | Meals in Germany: full 24-hour day away | EUR 28 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |
 | Meals: arrival and departure day with overnight stay, each; or a day over eight hours away without one | EUR 14 | 2026 | https://www.gesetze-im-internet.de/estg/__9.html |
-| Meals abroad, example Austria: full day / arrival, departure or over eight hours | EUR 50 / EUR 33 | 2026 | BMF letter of 5 December 2025 (Sources) |
+| Meals abroad, example Austria: full day / arrival, departure or over eight hours | EUR 50 / EUR 33 | 2026 | BMF letter of 5 December 2025 (Sources), https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 |
 | Business trips in a private car, per full km (or actual cost share) | EUR 0.30 | 2026 | EÜR instructions 2026, line 72 (the highest BRKG rate, § 5(2): https://www.gesetze-im-internet.de/brkg_2005/__5.html) |
 | Business car, private use under the list-price method: per calendar month, share of the domestic list price at first registration; only if business use is over 50% | 1% | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 4) |
 | Business entertainment (Bewirtung): deductible share of the reasonable cost, with a proper receipt | 70% | 2026 | https://www.gesetze-im-internet.de/estg/__4.html (§ 4(5) no. 2) |
@@ -86,16 +86,16 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 | Low-value asset (GWG): expensed in full if cost reduced by contained input VAT for the eligibility test is not more than | EUR 800 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |
 | Running register needed if a GWG is worth more than | EUR 250 | 2026 | https://www.gesetze-im-internet.de/estg/__6.html |
 | Pool (Sammelposten) instead of GWG: assets costing more than EUR 250 and not more than EUR 1,000, written off one fifth a year over five years | EUR 250 to EUR 1,000; 20% a year | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(2a)) |
-| Computer hardware and software: useful life that may be taken, full cost in the year bought, still listed on Anlage AVEÜR | One year | 2026 | EÜR instructions 2026, line 34, citing the BMF letter of 22 February 2022 (Sources) |
+| Computer hardware and software: useful life that may be taken, full cost in the year bought, still listed on Anlage AVEÜR | One year | 2026 | EÜR instructions 2026, line 34, citing the BMF letter of 22 February 2022 (Sources), https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 | Declining balance, movable assets bought 1 July 2025 to 31 December 2027: up to three times straight-line, not more than | 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html |
 | Electric vehicles bought 1 July 2025 to 31 December 2027: year bought, then each following year | 75%, then 10%, 5%, 5%, 3%, 2% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(2a)) |
 | § 7g investment deduction: share of a future asset's expected cost | 50% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g profit limit: profit calculated without investment deductions or § 7g(2) add-backs not more than | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g cap on open deductions (this year and three before), per business | EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g special depreciation over the year bought and four after, in total | 40% | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
-| "Almost only" business use for § 7g means at least | 90% | 2026 | EÜR instructions 2026, line 89 |
-| Writing or journalism as main work: flat expense share of receipts, cap EUR 3,600 | 30% | 2026 | EÜR instructions 2026, line 24 |
-| Scientific, artistic or writing side work, side-line teaching and examining: flat share, cap EUR 900 | 25% | 2026 | EÜR instructions 2026, line 24 |
+| "Almost only" business use for § 7g means at least | 90% | 2026 | EÜR instructions 2026, line 89, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Writing or journalism as main work: flat expense share of receipts, cap EUR 3,600 | 30% | 2026 | EÜR instructions 2026, line 24, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
+| Scientific, artistic or writing side work, side-line teaching and examining: flat share, cap EUR 900 | 25% | 2026 | EÜR instructions 2026, line 24, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 |
 | Pension contributions within the cap deductible | 100% | 2026 | https://www.gesetze-im-internet.de/estg/__10.html |
 | Miners' pension insurance ceiling, per year | EUR 124,800 | 2026 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
 | Miners' pension insurance rate | 24.7% | 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html |
@@ -121,7 +121,7 @@ How Germany taxes the profit of one self-employed person in tax year 2026, the c
 
 | Item (tax year 2025) | Value | Source |
 | --- | --- | --- |
-| Basic allowance | EUR 12,096 | Ministry tax booklet 2025 (Sources) |
+| Basic allowance | EUR 12,096 | Ministry tax booklet 2025 (Sources), https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 |
 | Top rate zone starts | EUR 68,481 | Same |
 | Surcharge limit, single / splitting | EUR 19,950 / EUR 39,900 | Same |
 
@@ -452,12 +452,13 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | SVBezGrV 2026 § 4 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-24 |
 | RVBeitrSBek 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | BGBl. 2024 I Nr. 108, Art. 6 (loss share back to 60% from 2028) | https://www.recht.bund.de/bgbl/1/2024/108/VO.html | 2026-10-24 |
-| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-26 |
-| BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2025-12-05-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-26 |
-| BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-24 |
+| BMF letter of 1 September 2026: Anlage EÜR 2026 and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-10-31-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-31 |
+| BMF letter of 5 December 2025: meal and overnight amounts abroad from 1 January 2026 | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Lohnsteuer/2026-10-31-steuerliche-behandlung-reisekosten-2026.pdf?__blob=publicationFile&v=5 | 2026-10-31 |
+| BMF, Steuern von A bis Z, 2025 edition | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-31 |
 | ELSTER help, 2025 income tax return | https://www.elster.de/eportal/helpGlobal?themaGlobal=help_est_ufa_10_2025 | 2026-10-24 |
 | EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
 | EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |
+| EStG § 32a | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-31 |
 
 Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24); the one-year life for computers and software, which rests on the BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, line 34, not on the statute.
 

@@ -1,10 +1,10 @@
 ---
 name: germany-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements (Jahresabschluss) for a German company. Trigger on phrases like "Jahresabschluss", "HGB", "Handelsgesetzbuch", "Bundesanzeiger", "Unternehmensregister", "Offenlegung", "Bilanz", "GuV", "GmbH accounts", "Kapitalgesellschaft", "audit Germany", "Kleinstkapitalgesellschaft", "kleine Kapitalgesellschaft", or any question about preparing and filing statutory accounts under German commercial law. Covers HGB frameworks, size thresholds, required statements, formats, notes, filing deadlines, and audit requirements.
-version: 1.0
+version: 1.1
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-09-19
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -22,18 +22,18 @@ How a German business draws up, has audited and publishes its annual financial s
 
 ## Section 1: Quick Reference
 
-| Field | Value |
-| --- | --- |
-| Country | Germany (Bundesrepublik Deutschland) |
-| Currency | Euro. The statements are drawn up in German and in euro (§ 244 HGB) |
-| Filing authority | The company register (Unternehmensregister), for financial years that begin after 31 December 2021. Statements for earlier financial years go to the operator of the Bundesanzeiger (§ 325 HGB, Art. 88 EGHGB) |
-| Primary legislation | Handelsgesetzbuch (HGB), Third Book (Handelsbücher), §§ 238 to 342r |
-| Supporting legislation | GmbHG; AktG; PublG (Publizitätsgesetz); EGHGB (start dates and transition rules) |
-| Accounting standards | HGB (German GAAP). IFRS as adopted by the EU for the consolidated accounts of listed parent companies (§ 315e HGB) |
-| Financial year | Not longer than twelve months (§ 240(2) HGB). The Federal Office of Justice notes that it is the calendar year in most cases |
-| Filing deadline | One year after the balance sheet date. Four months for capital-market companies. It cannot be extended. See Section 9 |
-| Late filing penalty | An administrative fine (Ordnungsgeld) plus procedure costs. See the fine tables in Section 9 |
-| Digital filing | Electronic only. Orders are sent through the publication platform of the Bundesanzeiger and the company register (publikations-plattform.de) or through a software interface. See Section 9 |
+| Field | Value | Source |
+| --- | --- | --- |
+| Country | Germany (Bundesrepublik Deutschland) | same |
+| Currency | Euro. The statements are drawn up in German and in euro (§ 244 HGB) | https://www.gesetze-im-internet.de/hgb/__244.html |
+| Filing authority | The company register (Unternehmensregister), for financial years that begin after 31 December 2021. Statements for earlier financial years go to the operator of the Bundesanzeiger (§ 325 HGB, Art. 88 EGHGB) | https://www.gesetze-im-internet.de/hgb/__325.html |
+| Primary legislation | Handelsgesetzbuch (HGB), Third Book (Handelsbücher), §§ 238 to 342r | https://www.gesetze-im-internet.de/hgb/__342r.html |
+| Supporting legislation | GmbHG; AktG; PublG (Publizitätsgesetz); EGHGB (start dates and transition rules) | same |
+| Accounting standards | HGB (German GAAP). IFRS as adopted by the EU for the consolidated accounts of listed parent companies (§ 315e HGB) | https://www.gesetze-im-internet.de/hgb/__315e.html |
+| Financial year | Not longer than twelve months (§ 240(2) HGB). The Federal Office of Justice notes that it is the calendar year in most cases | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html |
+| Filing deadline | One year after the balance sheet date. Four months for capital-market companies. It cannot be extended. See Section 9 | same |
+| Late filing penalty | An administrative fine (Ordnungsgeld) plus procedure costs. See the fine tables in Section 9 | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html |
+| Digital filing | Electronic only. Orders are sent through the publication platform of the Bundesanzeiger and the company register (publikations-plattform.de) or through a software interface. See Section 9 | https://www.unternehmensregister.de/de/so-gehts/uebermitteln |
 
 ## Section 2: Reporting Framework
 
@@ -58,11 +58,11 @@ Sources for this table: https://www.gesetze-im-internet.de/hgb/__242.html and ht
 
 **Release for sole merchants (Einzelkaufleute)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |
-| Revenue on each of two balance sheet dates in a row: not more than | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" |
-| Annual net profit (Jahresüberschuss) on each of the same two dates: not more than | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__241a.html |  |
+| Revenue on each of two balance sheet dates in a row: not more than | EUR 800,000 | § 241a HGB: "nicht mehr als jeweils 800 000 Euro Umsatzerlöse" | https://www.gesetze-im-internet.de/hgb/__241a.html |
+| Annual net profit (Jahresüberschuss) on each of the same two dates: not more than | EUR 80,000 | § 241a HGB: "jeweils 80 000 Euro Jahresüberschuss" | same |
 
 - **Both limits must be kept**, on the balance sheet dates of two financial years in a row. For a new business the first balance sheet date is enough.
 - **Sole merchants only.** Partnerships and companies cannot use the release, whatever their size.
@@ -77,25 +77,25 @@ The size class decides the layouts, the notes, the management report, the audit 
 
 **Small and medium-sized companies**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |
-| Small company (kleine Kapitalgesellschaft): balance sheet total not more than | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" |
-| Small company: revenue in the twelve months before the balance sheet date not more than | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" |
-| Small company: yearly average number of staff not more than | fifty employees | § 267(1) HGB prints the number in words: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" |
-| Medium-sized company (mittelgroße Kapitalgesellschaft): balance sheet total not more than | EUR 25,000,000 | § 267(2) HGB: "25 000 000 Euro Bilanzsumme" |
-| Medium-sized company: revenue in the twelve months before the balance sheet date not more than | EUR 50,000,000 | § 267(2) HGB: "50 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" |
-| Medium-sized company: yearly average number of staff not more than | two hundred and fifty employees | § 267(2) HGB prints the number in words: "Im Jahresdurchschnitt zweihundertfünfzig Arbeitnehmer" |
-| Large company (große Kapitalgesellschaft) | goes over at least two of the three medium-sized limits | § 267(3) HGB |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267.html |  |
+| Small company (kleine Kapitalgesellschaft): balance sheet total not more than | EUR 7,500,000 | § 267(1) HGB: "7 500 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267.html |
+| Small company: revenue in the twelve months before the balance sheet date not more than | EUR 15,000,000 | § 267(1) HGB: "15 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" | same |
+| Small company: yearly average number of staff not more than | fifty employees | § 267(1) HGB prints the number in words: "Im Jahresdurchschnitt fünfzig Arbeitnehmer" | same |
+| Medium-sized company (mittelgroße Kapitalgesellschaft): balance sheet total not more than | EUR 25,000,000 | § 267(2) HGB: "25 000 000 Euro Bilanzsumme" | same |
+| Medium-sized company: revenue in the twelve months before the balance sheet date not more than | EUR 50,000,000 | § 267(2) HGB: "50 000 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlußstichtag" | same |
+| Medium-sized company: yearly average number of staff not more than | two hundred and fifty employees | § 267(2) HGB prints the number in words: "Im Jahresdurchschnitt zweihundertfünfzig Arbeitnehmer" | same |
+| Large company (große Kapitalgesellschaft) | goes over at least two of the three medium-sized limits | § 267(3) HGB | same |
 
 **Micro companies (Kleinstkapitalgesellschaften)**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |
-| Balance sheet total not more than | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" |
-| Revenue in the twelve months before the balance sheet date not more than | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" |
-| Yearly average number of staff not more than | ten employees | § 267a(1) HGB prints the number in words: "im Jahresdurchschnitt zehn Arbeitnehmer" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__267a.html |  |
+| Balance sheet total not more than | EUR 450,000 | § 267a(1) HGB: "450 000 Euro Bilanzsumme" | https://www.gesetze-im-internet.de/hgb/__267a.html |
+| Revenue in the twelve months before the balance sheet date not more than | EUR 900,000 | § 267a(1) HGB: "900 000 Euro Umsatzerlöse in den zwölf Monaten vor dem Abschlussstichtag" | same |
+| Yearly average number of staff not more than | ten employees | § 267a(1) HGB prints the number in words: "im Jahresdurchschnitt zehn Arbeitnehmer" | same |
 
 - **Size classification rule: two of three.** A company belongs to a class when it does not go over at least two of that class's three limits. A medium-sized company goes over at least two of the small limits and stays within at least two of the medium-sized limits.
 - **Two balance sheet dates in a row.** The legal effects of a class start only when its limits are crossed, upwards or downwards, on the balance sheet dates of two financial years in a row (§ 267(4) HGB). So one year over the limits does not by itself change the class. When the limits are crossed on a second balance sheet date in a row, the new class applies to the statements for that second financial year. The statute does not say this in so many words. It follows from its second sentence, under which the effects for a new or converted company start already at the first balance sheet date.
@@ -362,29 +362,29 @@ Sources for this table: https://www.gesetze-im-internet.de/hgb/__325.html and ht
 
 **The fine for not publishing: as the Federal Office of Justice prints it**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html |
-| Minimum penalty in the normal case | EUR 2,500 | "Das Ordnungsgeld beträgt im Regelfall mindestens 2.500 Euro und höchstens 25.000 Euro" |
-| Maximum penalty in the normal case, per fine | EUR 25,000 | Same sentence. § 335(1) HGB prints both amounts in words |
-| Fee for the procedure, charged with the first threat notice | EUR 100 | "100 Euro Gebühr nach Nr. 1210 des Kostenverzeichnisses des Justizverwaltungskostengesetzes" |
-| Delivery costs, charged on top | EUR 3.50 | "zuzüglich 3,50 Euro Auslagen für die Zustellung" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html |  |
+| Minimum penalty in the normal case | EUR 2,500 | "Das Ordnungsgeld beträgt im Regelfall mindestens 2.500 Euro und höchstens 25.000 Euro" | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html |
+| Maximum penalty in the normal case, per fine | EUR 25,000 | Same sentence. § 335(1) HGB prints both amounts in words | same |
+| Fee for the procedure, charged with the first threat notice | EUR 100 | "100 Euro Gebühr nach Nr. 1210 des Kostenverzeichnisses des Justizverwaltungskostengesetzes" | https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html |
+| Delivery costs, charged on top | EUR 3.50 | "zuzüglich 3,50 Euro Auslagen für die Zustellung" | same |
 
 **Reduced fine when the duty is met late: the statute**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__335.html |
-| The company used the micro company right to deposit its balance sheet (§ 326(2) HGB) | EUR 500 | § 335(4) no. 1 HGB: "auf einen Betrag von 500 Euro, wenn die Beteiligten von dem Recht einer Kleinstkapitalgesellschaft" |
-| The company is a small company (§ 267(1) HGB) | EUR 1,000 | § 335(4) no. 2 HGB: "auf einen Betrag von 1 000 Euro, wenn es sich um eine kleine Kapitalgesellschaft" |
-| Any other company, if a higher fine had been threatened | EUR 2,500 | § 335(4) no. 3 HGB: "auf einen Betrag von 2 500 Euro, wenn ein höheres Ordnungsgeld angedroht worden ist" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/hgb/__335.html |  |
+| The company used the micro company right to deposit its balance sheet (§ 326(2) HGB) | EUR 500 | § 335(4) no. 1 HGB: "auf einen Betrag von 500 Euro, wenn die Beteiligten von dem Recht einer Kleinstkapitalgesellschaft" | https://www.gesetze-im-internet.de/hgb/__335.html |
+| The company is a small company (§ 267(1) HGB) | EUR 1,000 | § 335(4) no. 2 HGB: "auf einen Betrag von 1 000 Euro, wenn es sich um eine kleine Kapitalgesellschaft" | same |
+| Any other company, if a higher fine had been threatened | EUR 2,500 | § 335(4) no. 3 HGB: "auf einen Betrag von 2 500 Euro, wenn ein höheres Ordnungsgeld angedroht worden ist" | same |
 
 **Further fee when another fine is set: the cost schedule**
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/jvkostg/anlage.html |
-| Fee for setting a second and each further fine (no. 1211 of the cost schedule of the Justizverwaltungskostengesetz) | EUR 100 | "jedes weiteren Ordnungsgelds jeweils .......... 100,00 €" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/jvkostg/anlage.html |  |
+| Fee for setting a second and each further fine (no. 1211 of the cost schedule of the Justizverwaltungskostengesetz) | EUR 100 | "jedes weiteren Ordnungsgelds jeweils .......... 100,00 €" | https://www.gesetze-im-internet.de/jvkostg/anlage.html |
 
 - **Each person separately.** If the procedure runs against several persons, the fees arise for each person on their own (preliminary note 1.2.1 of the same cost schedule).
 
@@ -440,12 +440,12 @@ Source for this table: https://www.gesetze-im-internet.de/hgb/__316.html
 
 ### PublG Thresholds (Publizitätsgesetz)
 
-| What | Value | Note |
-| --- | --- | --- |
-| Source | all figures below | https://www.gesetze-im-internet.de/publg/__1.html |
-| Balance sheet total at the balance sheet date: more than | EUR 65 million | § 1(1) no. 1 PublG: "übersteigt 65 Millionen Euro" |
-| Revenue in the twelve months before the balance sheet date: more than | EUR 130 million | § 1(1) no. 2 PublG: "übersteigen 130 Millionen Euro" |
-| Average number of staff in the twelve months before the balance sheet date: more than | five thousand employees | § 1(1) no. 3 PublG prints the number in words: "durchschnittlich mehr als fünftausend Arbeitnehmer" |
+| What | Value | Note | Source |
+| --- | --- | --- | --- |
+| Source | all figures below | https://www.gesetze-im-internet.de/publg/__1.html |  |
+| Balance sheet total at the balance sheet date: more than | EUR 65 million | § 1(1) no. 1 PublG: "übersteigt 65 Millionen Euro" | https://www.gesetze-im-internet.de/publg/__1.html |
+| Revenue in the twelve months before the balance sheet date: more than | EUR 130 million | § 1(1) no. 2 PublG: "übersteigen 130 Millionen Euro" | same |
+| Average number of staff in the twelve months before the balance sheet date: more than | five thousand employees | § 1(1) no. 3 PublG prints the number in words: "durchschnittlich mehr als fünftausend Arbeitnehmer" | same |
 
 - **PublG applicability thresholds: two of three, three dates in a row.** The enterprise must meet at least two of the three tests at a balance sheet date and at the two balance sheet dates that follow. It must then account under the PublG for the first time for the third of these dates. See § 2(1) PublG at https://www.gesetze-im-internet.de/publg/__2.html
 - **Who is covered.** Only these legal forms: partnerships for which no statements under § 264a or § 264b HGB are drawn up, sole merchants, associations whose purpose is a commercial business, foundations under civil law that run a trade, and public-law bodies that are merchants. See § 3(1) PublG at https://www.gesetze-im-internet.de/publg/__3.html
@@ -502,27 +502,28 @@ Source for this table: https://www.gesetze-im-internet.de/hgb/__316.html
 
 ## Sources
 
-- HGB index (structure of the Third Book): https://www.gesetze-im-internet.de/hgb/
-- HGB § 9, § 240, § 241a, § 242, § 243, § 244, § 245, § 247 (register access, inventory, release, duty to draw up, language, signature, content): https://www.gesetze-im-internet.de/hgb/__9.html and https://www.gesetze-im-internet.de/hgb/__240.html and https://www.gesetze-im-internet.de/hgb/__241a.html and https://www.gesetze-im-internet.de/hgb/__242.html and https://www.gesetze-im-internet.de/hgb/__243.html and https://www.gesetze-im-internet.de/hgb/__244.html and https://www.gesetze-im-internet.de/hgb/__245.html and https://www.gesetze-im-internet.de/hgb/__247.html
-- HGB § 246, § 249, § 250, § 251, § 252, § 253, § 256, § 256a, § 257 (recognition, valuation, retention): https://www.gesetze-im-internet.de/hgb/__246.html and https://www.gesetze-im-internet.de/hgb/__249.html and https://www.gesetze-im-internet.de/hgb/__250.html and https://www.gesetze-im-internet.de/hgb/__251.html and https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/hgb/__253.html and https://www.gesetze-im-internet.de/hgb/__256.html and https://www.gesetze-im-internet.de/hgb/__256a.html and https://www.gesetze-im-internet.de/hgb/__257.html
-- HGB § 264, § 264a, § 264b, § 264d, § 265, § 266, § 267, § 267a, § 268 (companies, partnerships, layouts, size classes): https://www.gesetze-im-internet.de/hgb/__264.html and https://www.gesetze-im-internet.de/hgb/__264a.html and https://www.gesetze-im-internet.de/hgb/__264b.html and https://www.gesetze-im-internet.de/hgb/__264d.html and https://www.gesetze-im-internet.de/hgb/__265.html and https://www.gesetze-im-internet.de/hgb/__266.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__267a.html and https://www.gesetze-im-internet.de/hgb/__268.html
-- HGB § 274, § 274a, § 275, § 276, § 277 (deferred tax, P&L): https://www.gesetze-im-internet.de/hgb/__274.html and https://www.gesetze-im-internet.de/hgb/__274a.html and https://www.gesetze-im-internet.de/hgb/__275.html and https://www.gesetze-im-internet.de/hgb/__276.html and https://www.gesetze-im-internet.de/hgb/__277.html
-- HGB § 284, § 285, § 286, § 288, § 289, § 289b (notes, management report): https://www.gesetze-im-internet.de/hgb/__284.html and https://www.gesetze-im-internet.de/hgb/__285.html and https://www.gesetze-im-internet.de/hgb/__286.html and https://www.gesetze-im-internet.de/hgb/__288.html and https://www.gesetze-im-internet.de/hgb/__289.html and https://www.gesetze-im-internet.de/hgb/__289b.html
-- HGB § 290, § 293, § 297, § 315e (groups, IFRS): https://www.gesetze-im-internet.de/hgb/__290.html and https://www.gesetze-im-internet.de/hgb/__293.html and https://www.gesetze-im-internet.de/hgb/__297.html and https://www.gesetze-im-internet.de/hgb/__315e.html
-- HGB § 316, § 316a, § 318, § 319, § 321 (audit): https://www.gesetze-im-internet.de/hgb/__316.html and https://www.gesetze-im-internet.de/hgb/__316a.html and https://www.gesetze-im-internet.de/hgb/__318.html and https://www.gesetze-im-internet.de/hgb/__319.html and https://www.gesetze-im-internet.de/hgb/__321.html
-- HGB § 325, § 325a, § 326, § 327, § 328, § 329, § 334, § 335, § 335b (publication, fines): https://www.gesetze-im-internet.de/hgb/__325.html and https://www.gesetze-im-internet.de/hgb/__325a.html and https://www.gesetze-im-internet.de/hgb/__326.html and https://www.gesetze-im-internet.de/hgb/__327.html and https://www.gesetze-im-internet.de/hgb/__328.html and https://www.gesetze-im-internet.de/hgb/__329.html and https://www.gesetze-im-internet.de/hgb/__334.html and https://www.gesetze-im-internet.de/hgb/__335.html and https://www.gesetze-im-internet.de/hgb/__335b.html
-- EGHGB Art. 88, Art. 92 and Art. 93 (start of the register rule, start of the § 241a amounts, start of the size limits): https://www.gesetze-im-internet.de/hgbeg/art_88.html and https://www.gesetze-im-internet.de/hgbeg/art_92.html and https://www.gesetze-im-internet.de/hgbeg/art_93.html
-- PublG § 1, § 2, § 3, § 5, § 6, § 9: https://www.gesetze-im-internet.de/publg/__1.html and https://www.gesetze-im-internet.de/publg/__2.html and https://www.gesetze-im-internet.de/publg/__3.html and https://www.gesetze-im-internet.de/publg/__5.html and https://www.gesetze-im-internet.de/publg/__6.html and https://www.gesetze-im-internet.de/publg/__9.html
-- GmbHG § 42a, AktG § 175, WPO § 66a: https://www.gesetze-im-internet.de/gmbhg/__42a.html and https://www.gesetze-im-internet.de/aktg/__175.html and https://www.gesetze-im-internet.de/wipro/__66a.html
-- EStG § 5, § 5b (tax limits on provisions, E-Bilanz): https://www.gesetze-im-internet.de/estg/__5.html and https://www.gesetze-im-internet.de/estg/__5b.html
-- JVKostG cost schedule (fee for a second and further fine under § 335 HGB): https://www.gesetze-im-internet.de/jvkostg/anlage.html
-- Bundesamt für Justiz, fine procedure: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html
-- Bundesamt für Justiz, publication duties: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html
-- Bundesamt für Justiz, questions and answers: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Fragen/Fragen_node.html
-- Bundesamt für Justiz, news on the move to the company register: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Aktuelles/Aktuelles_node.html
-- Bundesamt für Justiz, parts of the statements by size: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Verstoesse/InhaltJahresabschluss/Bestandteile/Bestandteile_node.html
-- Company register, how to send documents: https://www.unternehmensregister.de/de/so-gehts/uebermitteln
-- Deutsche Bundesbank, discount rates under § 253(2) HGB: https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-renditen/abzinsungszinssaetze/abzinsungszinssaetze-772396
+- HGB index (structure of the Third Book): https://www.gesetze-im-internet.de/hgb/ (read 2026-10-31)
+- HGB § 9, § 240, § 241a, § 242, § 243, § 244, § 245, § 247 (register access, inventory, release, duty to draw up, language, signature, content): https://www.gesetze-im-internet.de/hgb/__9.html and https://www.gesetze-im-internet.de/hgb/__240.html and https://www.gesetze-im-internet.de/hgb/__241a.html and https://www.gesetze-im-internet.de/hgb/__242.html and https://www.gesetze-im-internet.de/hgb/__243.html and https://www.gesetze-im-internet.de/hgb/__244.html and https://www.gesetze-im-internet.de/hgb/__245.html and https://www.gesetze-im-internet.de/hgb/__247.html (read 2026-10-31)
+- HGB § 246, § 249, § 250, § 251, § 252, § 253, § 256, § 256a, § 257 (recognition, valuation, retention): https://www.gesetze-im-internet.de/hgb/__246.html and https://www.gesetze-im-internet.de/hgb/__249.html and https://www.gesetze-im-internet.de/hgb/__250.html and https://www.gesetze-im-internet.de/hgb/__251.html and https://www.gesetze-im-internet.de/hgb/__252.html and https://www.gesetze-im-internet.de/hgb/__253.html and https://www.gesetze-im-internet.de/hgb/__256.html and https://www.gesetze-im-internet.de/hgb/__256a.html and https://www.gesetze-im-internet.de/hgb/__257.html (read 2026-10-31)
+- HGB § 264, § 264a, § 264b, § 264d, § 265, § 266, § 267, § 267a, § 268 (companies, partnerships, layouts, size classes): https://www.gesetze-im-internet.de/hgb/__264.html and https://www.gesetze-im-internet.de/hgb/__264a.html and https://www.gesetze-im-internet.de/hgb/__264b.html and https://www.gesetze-im-internet.de/hgb/__264d.html and https://www.gesetze-im-internet.de/hgb/__265.html and https://www.gesetze-im-internet.de/hgb/__266.html and https://www.gesetze-im-internet.de/hgb/__267.html and https://www.gesetze-im-internet.de/hgb/__267a.html and https://www.gesetze-im-internet.de/hgb/__268.html (read 2026-10-31)
+- HGB § 274, § 274a, § 275, § 276, § 277 (deferred tax, P&L): https://www.gesetze-im-internet.de/hgb/__274.html and https://www.gesetze-im-internet.de/hgb/__274a.html and https://www.gesetze-im-internet.de/hgb/__275.html and https://www.gesetze-im-internet.de/hgb/__276.html and https://www.gesetze-im-internet.de/hgb/__277.html (read 2026-10-31)
+- HGB § 284, § 285, § 286, § 288, § 289, § 289b (notes, management report): https://www.gesetze-im-internet.de/hgb/__284.html and https://www.gesetze-im-internet.de/hgb/__285.html and https://www.gesetze-im-internet.de/hgb/__286.html and https://www.gesetze-im-internet.de/hgb/__288.html and https://www.gesetze-im-internet.de/hgb/__289.html and https://www.gesetze-im-internet.de/hgb/__289b.html (read 2026-10-31)
+- HGB § 290, § 293, § 297, § 315e (groups, IFRS): https://www.gesetze-im-internet.de/hgb/__290.html and https://www.gesetze-im-internet.de/hgb/__293.html and https://www.gesetze-im-internet.de/hgb/__297.html and https://www.gesetze-im-internet.de/hgb/__315e.html (read 2026-10-31)
+- HGB § 316, § 316a, § 318, § 319, § 321 (audit): https://www.gesetze-im-internet.de/hgb/__316.html and https://www.gesetze-im-internet.de/hgb/__316a.html and https://www.gesetze-im-internet.de/hgb/__318.html and https://www.gesetze-im-internet.de/hgb/__319.html and https://www.gesetze-im-internet.de/hgb/__321.html (read 2026-10-31)
+- HGB § 325, § 325a, § 326, § 327, § 328, § 329, § 334, § 335, § 335b (publication, fines): https://www.gesetze-im-internet.de/hgb/__325.html and https://www.gesetze-im-internet.de/hgb/__325a.html and https://www.gesetze-im-internet.de/hgb/__326.html and https://www.gesetze-im-internet.de/hgb/__327.html and https://www.gesetze-im-internet.de/hgb/__328.html and https://www.gesetze-im-internet.de/hgb/__329.html and https://www.gesetze-im-internet.de/hgb/__334.html and https://www.gesetze-im-internet.de/hgb/__335.html and https://www.gesetze-im-internet.de/hgb/__335b.html (read 2026-10-31)
+- EGHGB Art. 88, Art. 92 and Art. 93 (start of the register rule, start of the § 241a amounts, start of the size limits): https://www.gesetze-im-internet.de/hgbeg/art_88.html and https://www.gesetze-im-internet.de/hgbeg/art_92.html and https://www.gesetze-im-internet.de/hgbeg/art_93.html (read 2026-10-31)
+- PublG § 1, § 2, § 3, § 5, § 6, § 9: https://www.gesetze-im-internet.de/publg/__1.html and https://www.gesetze-im-internet.de/publg/__2.html and https://www.gesetze-im-internet.de/publg/__3.html and https://www.gesetze-im-internet.de/publg/__5.html and https://www.gesetze-im-internet.de/publg/__6.html and https://www.gesetze-im-internet.de/publg/__9.html (read 2026-10-31)
+- GmbHG § 42a, AktG § 175, WPO § 66a: https://www.gesetze-im-internet.de/gmbhg/__42a.html and https://www.gesetze-im-internet.de/aktg/__175.html and https://www.gesetze-im-internet.de/wipro/__66a.html (read 2026-10-31)
+- EStG § 5, § 5b (tax limits on provisions, E-Bilanz): https://www.gesetze-im-internet.de/estg/__5.html and https://www.gesetze-im-internet.de/estg/__5b.html (read 2026-10-31)
+- JVKostG cost schedule (fee for a second and further fine under § 335 HGB): https://www.gesetze-im-internet.de/jvkostg/anlage.html (read 2026-10-31)
+- Bundesamt für Justiz, fine procedure: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html (read 2026-10-31)
+- Bundesamt für Justiz, publication duties: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Pflichten/Pflichten_node.html (read 2026-10-31)
+- Bundesamt für Justiz, questions and answers: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Fragen/Fragen_node.html (read 2026-10-31)
+- Bundesamt für Justiz, news on the move to the company register: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Aktuelles/Aktuelles_node.html (read 2026-10-31)
+- Bundesamt für Justiz, parts of the statements by size: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Verstoesse/InhaltJahresabschluss/Bestandteile/Bestandteile_node.html (read 2026-10-31)
+- Company register, how to send documents: https://www.unternehmensregister.de/de/so-gehts/uebermitteln (read 2026-10-31)
+- Deutsche Bundesbank, discount rates under § 253(2) HGB: https://www.bundesbank.de/de/statistiken/geld-und-kapitalmaerkte/zinssaetze-und-renditen/abzinsungszinssaetze/abzinsungszinssaetze-772396 (read 2026-10-31)
+- [HGB § 342r](https://www.gesetze-im-internet.de/hgb/__342r.html), read 2026-10-31
 
 ## Disclaimer
 

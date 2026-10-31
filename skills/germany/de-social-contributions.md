@@ -1,10 +1,10 @@
 ---
 name: de-social-contributions
 description: "German social insurance contributions for 2026, written for the self-employed and voluntary members. Covers voluntary statutory health insurance (minimum base EUR 1,318.33, ceiling EUR 5,812.50 a month, 14.0% or 14.6% plus the fund's additional rate, average 2.9%), long-term care at 3.6% with the childless surcharge and child reductions, compulsory pension insurance for the self-employed groups in § 2 SGB VI (teachers, carers, midwives, craftspeople, one-client workers) with the 18.6% rate, standard, start-phase and income-based bases, exemptions, voluntary pension contributions, the Künstlersozialkasse and the 4.9% artists' levy, accident and unemployment insurance on application, the status procedure, due dates, late surcharges and the income tax deduction, plus a short employee summary. Trigger on: Krankenkasse freiwillig, Mindestbeitrag, KSK, Künstlersozialabgabe, Rentenversicherungspflicht Selbständige, Pflegeversicherung Kinderlosenzuschlag, Statusfeststellung. Out of scope: the payroll run (de-payroll), benefits in kind and managing directors (de-payroll-benefits), income tax (de-einkommensteuer-freelancer)."
-version: 2.3
+version: 2.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -96,28 +96,28 @@ All figures are for 2026 unless the row says otherwise. Amounts marked "check" u
 
 **Reference values and ceilings** ([SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3))
 
-| What | Per year | Per month |
-| --- | --- | --- |
-| Reference amount (Bezugsgröße), [§ 1 SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) | EUR 47,460 | EUR 3,955 |
-| General JAEG (employees only) | EUR 77,400 | EUR 6,450 |
-| Special JAEG (privately insured on 31 December 2002), also the health and care ceiling | EUR 69,750 | EUR 5,812.50 |
-| Pension and unemployment ceiling | EUR 101,400 | EUR 8,450 |
-| Pension ceiling, miners' scheme | EUR 124,800 | EUR 10,400 |
+| What | Per year | Per month | Source |
+| --- | --- | --- | --- |
+| Reference amount (Bezugsgröße), [§ 1 SVBezGrV 2026](https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3) | EUR 47,460 | EUR 3,955 |  |
+| General JAEG (employees only) | EUR 77,400 | EUR 6,450 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html |
+| Special JAEG (privately insured on 31 December 2002), also the health and care ceiling | EUR 69,750 | EUR 5,812.50 | same |
+| Pension and unemployment ceiling | EUR 101,400 | EUR 8,450 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
+| Pension ceiling, miners' scheme | EUR 124,800 | EUR 10,400 | same |
 
 **Worked-out amounts**
 
-| What | 2026 | Working |
-| --- | --- | --- |
-| Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html)) |
-| Voluntary member's minimum base, per month | EUR 1,318.33 | 1/90 of EUR 3,955 per day x 30 = EUR 3,955 / 3 ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)) |
-| KSK member's minimum health base, per month | EUR 659.17 | 1/180 per day x 30 = EUR 3,955 / 6 ([§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html)) |
-| Health, lowest and highest, 14.0% + 2.9% = 16.9% | EUR 222.80 and EUR 982.31 (check) | EUR 1,318.33 and EUR 5,812.50 x 16.9% |
-| Health with sick pay, 14.6% + 2.9% = 17.5% | EUR 230.71 and EUR 1,017.19 (check) | Same bases x 17.5% |
-| Care at 3.6%, lowest and highest (a notice can differ by a cent) | EUR 47.46 and EUR 209.25 | Same bases x 3.6% ([§ 57(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__57.html)) |
-| Pension, lowest and highest monthly contribution | EUR 112.16 and EUR 1,571.70 | EUR 603 and EUR 8,450 x 18.6% ([§ 165](https://www.gesetze-im-internet.de/sgb_6/__165.html), [§ 167 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__167.html)) |
-| Pension, standard and half standard (self-employed) | EUR 735.63 and EUR 367.82 | EUR 3,955 and EUR 3,955 / 2 x 18.6% |
-| Unemployment on application, full and start phase | EUR 102.83 and EUR 51.42 | EUR 3,955 and EUR 3,955 / 2 x 2.6% ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)) |
-| Tax cap for pension contributions, single (doubled for spouses assessed jointly) | EUR 30,826 | EUR 124,800 x 24.7% = EUR 30,825.60, rounded up to a full euro ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) |
+| What | 2026 | Working | Source |
+| --- | --- | --- | --- |
+| Minijob limit, per month | EUR 603 | EUR 13.90 minimum wage x 130 / 3 = EUR 602.33, rounded up ([§ 8(1a) SGB IV](https://www.gesetze-im-internet.de/sgb_4/__8.html), [MiLoV5](https://www.gesetze-im-internet.de/milov5/__1.html)) |  |
+| Voluntary member's minimum base, per month | EUR 1,318.33 | 1/90 of EUR 3,955 per day x 30 = EUR 3,955 / 3 ([§ 240(4) SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)) |  |
+| KSK member's minimum health base, per month | EUR 659.17 | 1/180 per day x 30 = EUR 3,955 / 6 ([§ 234(1) SGB V](https://www.gesetze-im-internet.de/sgb_5/__234.html)) |  |
+| Health, lowest and highest, 14.0% + 2.9% = 16.9% | EUR 222.80 and EUR 982.31 (check) | EUR 1,318.33 and EUR 5,812.50 x 16.9% | https://www.bundesgesundheitsministerium.de/beitraege |
+| Health with sick pay, 14.6% + 2.9% = 17.5% | EUR 230.71 and EUR 1,017.19 (check) | Same bases x 17.5% | same |
+| Care at 3.6%, lowest and highest (a notice can differ by a cent) | EUR 47.46 and EUR 209.25 | Same bases x 3.6% ([§ 57(4) SGB XI](https://www.gesetze-im-internet.de/sgb_11/__57.html)) | same |
+| Pension, lowest and highest monthly contribution | EUR 112.16 and EUR 1,571.70 | EUR 603 and EUR 8,450 x 18.6% ([§ 165](https://www.gesetze-im-internet.de/sgb_6/__165.html), [§ 167 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__167.html)) |  |
+| Pension, standard and half standard (self-employed) | EUR 735.63 and EUR 367.82 | EUR 3,955 and EUR 3,955 / 2 x 18.6% | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html |
+| Unemployment on application, full and start phase | EUR 102.83 and EUR 51.42 | EUR 3,955 and EUR 3,955 / 2 x 2.6% ([§ 345b SGB III](https://www.gesetze-im-internet.de/sgb_3/__345b.html)) |  |
+| Tax cap for pension contributions, single (doubled for spouses assessed jointly) | EUR 30,826 | EUR 124,800 x 24.7% = EUR 30,825.60, rounded up to a full euro ([§ 10(3) EStG](https://www.gesetze-im-internet.de/estg/__10.html)) |  |
 
 **KSK thresholds**
 
@@ -443,9 +443,12 @@ expected:
 | Sozialversicherungs-Rechengrößenverordnung 2026 | https://www.recht.bund.de/bgbl/1/2025/278/regelungstext.pdf?__blob=publicationFile&v=3 | 2026-10-24 |
 | Beitragssatzbekanntmachung Rentenversicherung 2026 | https://www.gesetze-im-internet.de/rvbeitrsbek_2026/BJNR1230A0025.html | 2026-10-24 |
 | Pflegeversicherungs-Beitragssatzanpassungsverordnung 2025 | https://www.gesetze-im-internet.de/pbav_2025/__1.html | 2026-10-24 |
-| Federal Health Ministry, Beiträge (2026 average additional rate 2.9%) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-24 |
+| Federal Health Ministry, Beiträge (2026 average additional rate 2.9%) | https://www.bundesgesundheitsministerium.de/beitraege | 2026-10-31 |
 | Mindestlohnverordnung (MiLoV5) | https://www.gesetze-im-internet.de/milov5/__1.html | 2026-10-24 |
 | VVG § 193; EStG § 10 | https://www.gesetze-im-internet.de/vvg_2008/__193.html | 2026-10-24 |
+| svbezgrv_2026 § 1 | https://www.gesetze-im-internet.de/svbezgrv_2026/__1.html | 2026-10-31 |
+| svbezgrv_2026 § 2 | https://www.gesetze-im-internet.de/svbezgrv_2026/__2.html | 2026-10-31 |
+| svbezgrv_2026 § 4 | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-31 |
 
 Not yet confirmed: the 2025 artists' levy rate (the ordinance setting it was not found; take it from the KSK notice); the due date of a voluntary health member's contribution (fund statute; ordinarily the 15th of the next month); the due date of unemployment insurance on application (agency notice); whether a lower proven income can be used in the pension start phase; whether the owner's own accident contribution is a business expense; the 2027 ceilings (next ordinance, expected late 2026); accident insurance rates (set by each insurer); each fund's own additional rate.
 

@@ -1,10 +1,10 @@
 ---
 name: germany-vat-return
 description: "German VAT for tax year 2026, centred on the monthly or quarterly advance return (Umsatzsteuer-Voranmeldung, form USt 1 A) under standard taxation. Covers the 19% and 7% rates, including the 7% rate on restaurant and catering services (drinks excluded) from 1 January 2026; the small business limits of § 19 UStG (EUR 25,000 and EUR 100,000); monthly or quarterly filing (EUR 9,000 and EUR 2,000), the 10th-day deadline, the one-month extension and the 1/11 special prepayment; the annual return deadline; reverse charge under § 13b; the recapitulative statement; e-invoices (receiving since 2025, issuing by 2027 or 2028); late filing and late payment surcharges and interest; and the 2026 box numbers. Trigger on: Umsatzsteuer-Voranmeldung, UStVA, Vorsteuer, Kennzahl, Dauerfristverlängerung, Zusammenfassende Meldung, E-Rechnung, Säumniszuschlag, German VAT return. Out of scope: the annual return in detail, § 19, § 20 cash basis, partial exemption and OSS (de-vat-annual-and-special-schemes), e-invoice formats (germany-einvoice), income tax (de-income-tax)."
-version: 2.4
+version: 2.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -38,7 +38,7 @@ This skill explains German VAT (Umsatzsteuer) for 2026 and how to fill in the ad
 | Standard rate | 19% | 2026 | § 12(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Reduced rate (Annex 2 goods, books, water, hotel rooms, local transport and the other § 12(2) items) | 7% | 2026 | § 12(2) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Restaurant and catering services, except the supply of drinks | 7% from 1 January 2026 | 2026 | § 12(2) no. 15 UStG, inserted by Art. 4 no. 2 of the Steueränderungsgesetz 2025 of 22 December 2025 (BGBl. 2025 I Nr. 363), in force 1 January 2026 (Art. 12(2)), https://www.recht.bund.de/bgbl/1/2025/363/VO.html ; BMF letter of 22 December 2025, https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 |
-| Combined food and drinks price (buffet, all-inclusive): drinks share the tax office accepts | 30% of the package price | 2026 | UStAE 10.1(12), BMF letter of 22 December 2025 (same URL) |
+| Combined food and drinks price (buffet, all-inclusive): drinks share the tax office accepts | 30% of the package price | 2026 | UStAE 10.1(12), BMF letter of 22 December 2025 (same URL), https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 |
 | Qualifying solar modules/components/storage supplied to the PV operator; qualifying acquisition, import or installation under § 12(3) | 0% | 2026 | § 12(3) UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Solar: conditions treated as met where the registered gross output is not more than | 30 kilowatts peak | 2026 | § 12(3) no. 1 sentence 2 UStG, https://www.gesetze-im-internet.de/ustg_1980/__12.html |
 | Farmers' and foresters' average rates (§ 24, out of scope): forestry products other than sawmill products / sawmill products and drinks not in Annex 2 / all other supplies under the scheme | 5.5% / 19% / 7.8% | 2026 | § 24(1) UStG, https://www.gesetze-im-internet.de/ustg_1980/__24.html |
@@ -301,7 +301,7 @@ expected:
 | AO § 233a (interest period) | https://www.gesetze-im-internet.de/ao_1977/__233a.html | 2026-10-24 |
 | AO § 238 (interest rate and rounding) | https://www.gesetze-im-internet.de/ao_1977/__238.html | 2026-10-24 |
 | AO § 240 (late payment surcharge) | https://www.gesetze-im-internet.de/ao_1977/__240.html | 2026-10-24 |
-| BMF letter of 22 December 2025, 7% on restaurant and catering services from 1 January 2026 (UStAE 10.1(12), 12.16(12)) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-12-22-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 | 2026-10-24 |
+| BMF letter of 22 December 2025, 7% on restaurant and catering services from 1 January 2026 (UStAE 10.1(12), 12.16(12)) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2026-10-31-verpflegungsdienstleistungen.pdf?__blob=publicationFile&v=5 | 2026-10-31 |
 | BMF letter of 15 October 2025, mandatory e-invoices between domestic businesses (UStAE 14.1) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5 | 2026-10-24 |
 | BMF letter of 29 December 2025, 2026 advance return form USt 1 A, form USt 1 H and instructions | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/2025-12-29-vordruckmuster-USt-voranmeldung-2026.pdf?__blob=publicationFile&v=2 | 2026-10-24 |
 | Deemed supplies, acquisition-cost threshold and currency: UStG § 3(1b), (9a); § 10(4); § 16(6); distance-sale establishment gate § 3c(4) | https://www.gesetze-im-internet.de/ustg_1980/__3.html ; https://www.gesetze-im-internet.de/ustg_1980/__10.html ; https://www.gesetze-im-internet.de/ustg_1980/__16.html ; https://www.gesetze-im-internet.de/ustg_1980/__3c.html | 2026-10-29 |

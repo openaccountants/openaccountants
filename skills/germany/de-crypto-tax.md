@@ -1,10 +1,10 @@
 ---
 name: de-crypto-tax
 description: Use this skill whenever asked about German cryptocurrency taxation. Trigger on phrases like "Krypto Steuer", "crypto tax Germany", "Haltefrist", "§23 EStG", "private Veräußerungsgeschäfte", "Freigrenze", "staking tax Germany", "mining income Germany", "BMF Schreiben", "DeFi tax Germany", "FIFO crypto", or any question about buying, selling, staking, mining, or lending crypto as a German tax resident. This skill covers the 1-year holding period, €1,000 Freigrenze, staking/mining classification, DeFi treatment, and the BMF guidance of 06.03.2025. ALWAYS read this skill before advising on German crypto taxation.
-version: 1.3
+version: 1.4
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -54,12 +54,12 @@ How Germany taxes an individual who is fully liable to German income tax and hol
 | Figure | 2026 | 2025 | Source |
 | --- | --- | --- | --- |
 | Freigrenze for all private sales of the year (a cliff: the total must be BELOW it) | EUR 1,000 | EUR 1,000 | [§ 23(3) sentence 5 EStG](https://www.gesetze-im-internet.de/estg/__23.html): "weniger als 1 000 Euro"; Rn 53 |
-| Same limit for years up to and including 2023 (late or corrected returns only) | n/a | n/a | Rn 53: "bis Veranlagungszeitraum 2023: 600 €" |
+| Same limit for years up to and including 2023 (late or corrected returns only) | n/a | n/a | Rn 53: "bis Veranlagungszeitraum 2023: 600 €", https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2 |
 | Freigrenze for all income from services (§ 22 Nr. 3), tested after costs; a cliff | EUR 256 | EUR 256 | [§ 22 Nr. 3 sentence 2 EStG](https://www.gesetze-im-internet.de/estg/__22.html): "weniger als 256 Euro im Kalenderjahr" |
 | Employees: untaxed side income that forces an assessment if MORE than | EUR 410 | EUR 410 | [§ 46(2) no. 1 EStG](https://www.gesetze-im-internet.de/estg/__46.html) |
-| Assessed employees: eligible non-withheld income ceiling before the actual § 46(3) exclusions/reductions below; not an unconditional full deduction | EUR 410 | EUR 410 | § 46(3) EStG |
+| Assessed employees: eligible non-withheld income ceiling before the actual § 46(3) exclusions/reductions below; not an unconditional full deduction | EUR 410 | EUR 410 | § 46(3) EStG, https://www.gesetze-im-internet.de/estg/__46.html |
 | Record retention of six years applies if positive surplus income is MORE than | EUR 500,000 | EUR 500,000 | [§ 147a AO](https://www.gesetze-im-internet.de/ao_1977/__147a.html); Rn 105 |
-| The same threshold from 1 January 2027 | EUR 750,000 from 2027 | n/a | § 147a AO footnote; Rn 105 |
+| The same threshold from 1 January 2027 | EUR 750,000 from 2027 | n/a | § 147a AO footnote; Rn 105, https://www.gesetze-im-internet.de/ao_1977/__147a.html |
 | Late-filing surcharge per started month (tax less prepayments and withholding) | 0.25%, at least EUR 25 | same | [§ 152(5) AO](https://www.gesetze-im-internet.de/ao_1977/__152.html) |
 | Flat tax on investment income, for contrast only: it does NOT apply to currency-token gains | 25% | 25% | [§ 32d(1) EStG](https://www.gesetze-im-internet.de/estg/__32d.html) |
 
@@ -256,11 +256,37 @@ The office can ask for an adviser-prepared return earlier (§ 149(4) AO). Late f
 - [ ] Employee § 46(3) exclusions/reductions established; each spouse's income/ownership recorded separately; simple inheritance uses actual predecessor dates/costs and any distinct paid estate transaction is classified separately. Actual form year is recorded, rather than relabelling 2025 help as 2026.
 - [ ] § 147a AO retention checked; records kept for as long as any unit bought is still held.
 
+```oa-check
+name: DE crypto 2026, private sale gain within one year
+inputs:
+  proceeds: 5000
+  cost: 3200
+  fee: 50
+steps:
+  - gain: proceeds - cost - fee
+expected:
+  gain: 1750.00
+```
+
+```oa-check
+name: DE employee 2026, non-withheld income under the EUR 410 ceiling
+inputs:
+  other_income: 300
+  ceiling: 410
+steps:
+  - deducted: min(other_income, ceiling)
+  - assessed: other_income - deducted
+expected:
+  assessed: 0.00
+```
+
 ## Sources
 
 - BMF letter of 6 March 2025 on crypto assets ([PDF](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2025-03-06-einzelfragen-kryptowerte-bmf-schreiben.pdf?__blob=publicationFile&v=2)).- EStG, EStDV, AO and KStTG sections on gesetze-im-internet.de, each linked where it is used above.
 
-- Additional selected source scopes actually read on 29 October 2026: current EStG §§ 46(3)/(5),23(1)/(3),22 no. 3 and BMF paragraph 75; [ELSTER 2025 income-tax help, Anlage SO](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025), exact service/private-sales inheritance/per-person/non-entry/loss clauses. The labelled 2026 continuation above uses unchanged current law, not a claimed read of a future 2026 form.
+- Additional selected source scopes actually read on 29 October 2026: current EStG §§ 46(3)/(5),23(1)/(3),22 no. 3 and BMF paragraph 75; [ELSTER 2025 income-tax help, Anlage SO](https://www.elster.de/elsterweb/helpGlobal?themaGlobal=help_est_ufa_10_2025), exact service/private-sales inheritance/per-person/non-entry/loss clauses. The labelled 2026 continuation above uses unchanged current law, not a claimed read of a future 2026 form. (read 2026-10-31)
+- [AO § 147a](https://www.gesetze-im-internet.de/ao_1977/__147a.html), read 2026-10-31
+- [EStG § 46](https://www.gesetze-im-internet.de/estg/__46.html), read 2026-10-31
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
 
