@@ -28,6 +28,13 @@ Checks (ERROR = exit 1, WARN = printed summary only):
   6. ERROR if a deprecated inventory file reappears (skills/manifest.json,
      packages/manifest.json). index.json is the single canonical inventory;
      the old manifests had no consumers and were removed so they can't drift.
+  7. The mechanical lines of docs/skill-template.md (scripts/skill_checks.py):
+     current tax_year, read dates in `## Sources`, two oa-check blocks, a
+     numeric version, honest tier/reviewer keys, no em dash. ERROR on a PR
+     (--changed-only) for a tax skill; WARN on the full tree and for
+     accounting-pack and router files. Rates-row URLs, the nine canonical
+     headings and the "Not yet confirmed" line WARN in both modes until the
+     backlog is cleared. The full run prints a count of failures per check.
 
 Install scripts/requirements-validation.txt, then run:
 python3 scripts/validate-guides.py
@@ -40,10 +47,26 @@ import re
 import subprocess
 import sys
 
+import skill_checks
 from frontmatter_yaml import FrontmatterError, load_frontmatter
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BUILD_INDEX = os.path.join(REPO_ROOT, "scripts", "build-index.py")
+
+#: scripts/skill_checks.py checks that fail a PR (changed-only mode) when a tax
+#: skill breaks them. On the full tree they are warnings, so the backlog shows
+#: without blocking the nightly run. Accounting-pack and router files only warn.
+PR_ERROR_CHECKS = {
+    "tax_year_current",    # (a)
+    "sources_read_dates",  # (b)
+    "two_oa_checks",       # (e)
+    "version_numeric",     # (f)
+    "tier_honest",         # (g)
+    "no_em_dash",          # (h)
+}
+#: Warnings in both modes for now: rates_rows_sourced (c), canonical_headings (d),
+#: not_yet_confirmed (i) and reviewed_on (j). They become errors once the backlog is cleared
+#: (pass rates are in skills/REGISTER.md).
 
 # Legacy guides that predate the description requirement. Grandfathered so CI
 # can be strict for everything new. Never add to this list — remove entries as
@@ -269,6 +292,7 @@ def check_guides(bi, errors, warnings, only_files=None):
     from collections import Counter
     from datetime import date
     warn_counts = Counter({"jurisdiction (jurisdiction-agnostic dirs)": 0})
+    check_counts = Counter()  # skill_checks failures that are warnings in this mode
     per_file_warnings = []
     today = date.today()
     guides = skipped = 0
@@ -336,9 +360,27 @@ def check_guides(bi, errors, warnings, only_files=None):
             warn_counts["fresh figures (last_updated within a year, tax_year current)"] += 1
             if only_files is not None:
                 per_file_warnings.append(f"{rel}: {problem}")
+        # The standard's mechanical lines (scripts/skill_checks.py). A PR that
+        # touches a tax skill must pass PR_ERROR_CHECKS; everything else warns.
+        frontmatter = skill_checks.read_frontmatter(text)
+        scope = skill_checks.scope_of(rel, frontmatter)
+        results = skill_checks.run_checks(rel, text, frontmatter)
+        for letter, name, _func in skill_checks.CHECKS:
+            problems = results[name]
+            if not problems:
+                continue
+            message = f"{rel}: ({letter}) {name}: {'; '.join(problems)}"
+            if only_files is not None and scope == "tax" and name in PR_ERROR_CHECKS:
+                errors.append(message)
+            else:
+                check_counts[f"({letter}) {name}"] += 1
+                if only_files is not None:
+                    per_file_warnings.append(message)
     for key, count in sorted(warn_counts.items()):
         if count:
             warnings.append(f"{count} guides missing `{key}`")
+    for key, count in sorted(check_counts.items()):
+        warnings.append(f"{count} guides fail check {key}")
     warnings.extend(per_file_warnings)
     print(f"checked {guides} guides ({skipped} non-guide .md files skipped)")
 

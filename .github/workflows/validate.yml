@@ -103,7 +103,18 @@ jobs:
           EVENT_NAME: ${{ github.event_name }}
         run: |
           if [ "$EVENT_NAME" = "pull_request" ]; then
-            python3 scripts/check-examples.py --changed-only
+            # --require: a changed tax skill with no oa-check block fails the PR
+            python3 scripts/check-examples.py --changed-only --require
           else
             python3 scripts/check-examples.py
           fi
+      - name: Cross-skill contradictions (advisory, never blocks)
+        # One figure, one home: two skills in one jurisdiction stating different
+        # values for the same concept. Printed for the reviewer; becomes a gate
+        # once the backlog in the report is cleared.
+        continue-on-error: true
+        run: |
+          python3 scripts/detect-contradictions.py --all --out contradictions.md
+          echo "## Cross-skill contradictions" >> "$GITHUB_STEP_SUMMARY"
+          cat contradictions.md >> "$GITHUB_STEP_SUMMARY"
+          cat contradictions.md
