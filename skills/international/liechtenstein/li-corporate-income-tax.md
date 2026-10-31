@@ -1,16 +1,17 @@
 ---
 name: li-corporate-income-tax
 description: >
-  Prepare 2026 Liechtenstein corporate profit-tax workpapers for ordinary legal
-  entities. Use for residence and source screening, the book-to-tax bridge,
-  modified-equity interest deduction, loss use, the minimum-tax exception, tax
-  return attachments and provisional/final reconciliation. It replaces the earlier
-  approximate secondary-source summary with selected current Tax Act and Tax
-  Ordinance provisions. Confirm the entity, period, income, deduction eligibility,
-  balances and notices before calculating. This draft does not complete
-  participation exemptions, groups, PVS, GloBE, restructuring, foreign relief,
-  specialised entities or live return filing. A worked assumption is not an
-  approved tax position or named local accountant review.
+  Prepare 2026 Liechtenstein corporate income tax (Ertragssteuer) workpapers for
+  ordinary legal entities under the Tax Act (SteG) and Tax Ordinance (SteV).
+  Covers residence (seat or actual management), the 12.5% rate, the CHF 1,800
+  minimum tax and its CHF 500,000 balance-sheet exception, the book-to-tax
+  bridge, the equity deduction on modified equity at the 4% Sollertrag with the
+  6% asset deduction and excess-liquidity rules, the participation exemption and
+  its anti-abuse tests, loss use capped at 70%, the 12% source tax on nonresident
+  board fees, electronic filing, extensions, provisional and final tax, 4%
+  interest and fines. Trigger on: Liechtenstein corporate tax, Ertragssteuer,
+  Eigenkapitalzinsabzug, Mindestertragssteuer, Liechtenstein GmbH tax return.
+  Out of scope: PVS, groups, GloBE top-up tax, restructurings and special entities.
 jurisdiction: LI
 tax_year: 2026
 last_updated: 2026-10-30
@@ -24,11 +25,9 @@ version: 0.4
 
 # Liechtenstein corporate income tax v0.4
 
-Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
-
 ## Who this applies to
 
-Use this 2026 source-cited draft for an ordinary legal entity after establishing its classification. SteG article 44 makes seat **or** actual management in Liechtenstein a resident-tax gate; foreign entities have the specified domestic-source categories. Article 46 controls commencement/cessation. Exemption, PVS, special entities and treaty/PE attribution require separate analysis. A foreign registration address does not by itself decide tax residence. [Tax Act, articles 44–46][law]
+Use this skill for 2026 for an ordinary legal entity after establishing its classification. SteG article 44 makes seat **or** actual management in Liechtenstein a resident-tax gate; foreign entities have the specified domestic-source categories. Article 46 controls commencement/cessation. Exemption, PVS, special entities and treaty/PE attribution require separate analysis. A foreign registration address does not by itself decide tax residence. [Tax Act, articles 44–46][law]
 
 ## Rates, bands and thresholds
 
@@ -40,6 +39,9 @@ Use this 2026 source-cited draft for an ordinary legal entity after establishing
 | Ordinary brought-forward loss use | At most 70% of positive taxable net income | SteG article 57(1); exceptions in 57(1a) |
 | Equity deduction reference rate | 4% Sollertrag in SteG article 5 for 2026 | SteG articles 5 and 54; [Act 2024/483, commencement II(2)][amendment] |
 | Late-payment interest | 4% under current SteV article 45, applied to the correct liability/payment period | SteG article 114; SteV article 45 |
+| Source tax on nonresident legal entities' board-function income | 12% | SteG article 63a |
+| Withholding tax on dividends, interest and royalties | None: not a source-tax category | SteG articles 24, 63a |
+| Payment | Within 30 days after the tax falls due | SteG article 114(1) |
 
 Do not apply a CHF 1,800 minimum to every entity without classification: article 62 distinguishes specified source-tax-finalised cases, its commercial-business exception and assessed versus unassessed payment routes. A short liability period does not itself prorate the statutory minimum. Startups without three completed years and disputed purpose/balance classifications need separate confirmation. [SteG, article 62][law]
 
@@ -47,7 +49,7 @@ Do not apply a CHF 1,800 minimum to every entity without classification: article
 
 Start from the relevant PGR financial statements. SteG article 47 requires taxable net income, not gross receipts or cash balance; its listed adjustments include non-business expenses, unsupported depreciation/provisions, hidden distributions, tax expense and non-arm's-length related-party financing. Map each line to the actual rule and avoid double-counting tax adjustments already in the accounts. Limited taxpayers need the domestic-income expense link in article 47(5). The accounting-period end determines the tax year under SteV article 4 for noncalendar accounts. [SteG, article 47][law]; [SteV, article 4][ordinance]
 
-Article 48 contains exemptions and anti-abuse conditions; do not treat every participation receipt, disposal, foreign PE result or property item as exempt from a one-line summary. The ordinary screens below now supplement that caution; specialised and disputed application remains open. Likewise, an ordinary 12.5% calculation does not compute a GloBE top-up liability: the latter has its own legislation and scope. The earlier blanket zero-withholding summary is not used as a classifier for every payment; for example article 63a has a distinct 12% source-tax rule for specified nonresident corporate board-function income. Treaty and recipient facts remain necessary. [SteG, articles 1, 44, 48 and 63a][law]
+Article 48 contains exemptions and anti-abuse conditions; do not treat every participation receipt, disposal, foreign PE result or property item as exempt from a one-line summary. The ordinary screens below apply them. An ordinary 12.5% calculation does not compute a GloBE top-up liability: that has its own legislation and scope. SteG articles 24 and 63a list the payments subject to source tax (wages, replacement income, board fees, specified pensions and, for nonresident legal entities, board-function income at 12%); dividends, interest and royalties are not among them, so the Tax Act levies no withholding tax on those payments. [SteG, articles 1, 24, 44, 48 and 63a][law]
 
 ### Equity deduction: establish modified equity first
 
@@ -82,22 +84,22 @@ This supplies the ordinary statutory screens. It does not establish a particular
 
 After the relevant current-income adjustments, reconcile the opening assessed loss balance, current loss, amount used and closing balance. Ordinary use is limited to 70% of positive taxable net income; no loss amount is manufactured merely from the percentage. Article 57(1a) removes the cap for its liquidation/all-assets-exit cases. Foreign PE losses have separate nonduplication, recapture and five-year/earlier-cessation rules in article 57(2). Groups under article 58 require a separate method. Do not apply the ordinary example to those cases. [SteG, articles 57–58][law]
 
-### Retained predecessor controls
+### Further checks
 
-The [exact original-control annex](../../../ledgers/li-corporate-income-tax-evidence/retained-original-controls.md) preserves all four predecessor executable blocks. Their substantive cases remain here:
+Further cases, recomputed:
 
-- The former book-to-tax case assumes CHF100,000 profit, CHF5,000 addbacks, CHF500,000 already reconciled modified equity and CHF60,000 opening losses. The CHF20,000 equity deduction leaves CHF85,000; the ordinary loss cap allows CHF59,500, leaving CHF25,500 taxable, CHF3,187.50 tax and CHF500 losses carried forward. It does not establish the modified-equity base.
-- The minimum-tax case remains executable below: CHF1,250 ordinary tax leads to CHF1,800 total, not CHF3,050, when the minimum applies.
-- With CHF10,000 positive profit and CHF500,000 established modified equity, the raw CHF20,000 equity amount is limited to CHF10,000; profit is zero and no current loss is created. The minimum is a later test.
-- Three qualifying balance-sheet totals of CHF400,000, CHF500,000 and CHF600,000 average exactly CHF500,000. That passes only the numerical “not exceeding” screen; exclusive commercial purpose and all other conditions still require evidence.
+- The former book-to-tax case assumes CHF 100,000 profit, CHF 5,000 addbacks, CHF 500,000 already reconciled modified equity and CHF 60,000 opening losses. The CHF 20,000 equity deduction leaves CHF 85,000; the ordinary loss cap allows CHF 59,500, leaving CHF 25,500 taxable, CHF 3,187.50 tax and CHF 500 losses carried forward. It does not establish the modified-equity base.
+- The minimum-tax case remains executable below: CHF 1,250 ordinary tax leads to CHF 1,800 total, not CHF 3,050, when the minimum applies.
+- With CHF 10,000 positive profit and CHF 500,000 established modified equity, the raw CHF 20,000 equity amount is limited to CHF 10,000; profit is zero and no current loss is created. The minimum is a later test.
+- Three qualifying balance-sheet totals of CHF 400,000, CHF 500,000 and CHF 600,000 average exactly CHF 500,000. That passes only the numerical “not exceeding” screen; exclusive commercial purpose and all other conditions still require evidence.
 
 ## Deadlines and filing
 
 1. Retain incorporation/management, legal-form/status, accounting-period and ownership records; the PGR accounts and trial balance; the detailed adjustment, equity and loss workpapers; income-category/treaty evidence; and the actual filing/payment notices.
 2. SteG article 94 requires a complete, truthful, signed return even without a personal form/notice. SteV article 41 identifies attachments: detailed accounts with comparatives, required auditor/review report, beneficial-owner/related-party loan accounts, provisions/accruals register, profit-allocation resolution and signed completeness confirmation. Its attachment language/currency permissions are not a general waiver of the return's requirements.
-3. Check the current allocated filing deadline. The still-linked March 2012 provisional-tax leaflet gives 1 July as the normal following-year filing date, but is historical administrative evidence; this draft has not verified the 2027 calendar for 2026 income. SteV article 42 permits a reasoned written six-month filing extension. Submit the request no later than 30 days after the general maturity date under SteG 113(3); the provisional bill must be paid. A further exceptional request must precede the first extension’s expiry and satisfy its exceptional-justification condition. Keep the actual general-maturity notice and decision. This is not an automatic tax-payment extension.
+3. Check the current allocated filing deadline. The Steuerverwaltung sets the general due date (SteG article 113(3)) and the filing date. The still-linked March 2012 provisional-tax leaflet gives 1 July of the following year as the normal filing date; it is an old leaflet, so take the 2026 date from the authority's notice. SteV article 42 permits a reasoned written six-month filing extension. Submit the request no later than 30 days after the general maturity date under SteG 113(3); the provisional bill must be paid. A further exceptional request must precede the first extension’s expiry and satisfy its exceptional-justification condition. Keep the actual general-maturity notice and decision. This is not an automatic tax-payment extension.
 
-4. SteV article 42a requires the return to be prepared with the electronic program provided on the tax authority website and submitted electronically. The information letter supplies a passcode; the required article 41(2) attachments accompany the return electronically. Preserve the actual correct-year return/access, transmission receipt and attachments. No authenticated filing was performed. [SteV article 42a][ordinance]
+4. SteV article 42a requires the return to be prepared with the electronic program provided on the tax authority website and submitted electronically. The information letter supplies a passcode; the required article 41(2) attachments accompany the return electronically. Keep the transmission receipt and attachments. [SteV article 42a][ordinance]
 
 5. Under SteG article 127 and SteV article 47, reconcile provisional tax based on the submitted return, estimate or last final assessment with the final assessment. The provisional amount is credited; excess is refunded and a shortfall collected. SteG articles 113–114 distinguish legal due date, ordinary 30-day payment period and exceptions. Preserve actual notice/delivery dates before computing interest; the 2012 leaflet's specific calendar is not proof of the current assigned dates.
 
@@ -105,11 +107,11 @@ The [exact original-control annex](../../../ledgers/li-corporate-income-tax-evid
 
 Article 135's procedural fine requires its intentional/negligent noncompliance after reminder; ordinary maximum CHF 1,000 and serious/repeat maximum CHF 10,000 are ceilings, not automatic charges. Evasion, false accounts, collection, appeals and other sanctions require their own analysis. [SteG, articles 94, 113–114, 127 and 135][law]; [SteV, articles 41–42, 45 and 47][ordinance]; [historical provisional leaflet][provisional]
 
-Late-payment interest is 4% under SteV article45 for the applicable period. Retain actual due, receipt and payment facts and distinguish a filing extension from an approved payment arrangement. The exact interest day-count and full sanctions/appeal application remain unresolved. [SteG articles113–114][law]; [SteV article45][ordinance]
+Late-payment interest is 4% under SteV article 45 for the applicable period. Retain actual due, receipt and payment facts and distinguish a filing extension from an approved payment arrangement. [SteG articles 113–114][law]; [SteV article 45][ordinance]
 
 ## Cross-border points
 
-Separate unlimited liability, domestic-source limited liability and treaty/PE allocation before computing. The article 63a source-tax example in The base is a payment-specific rule; it is not a universal withholding result. Use the [cross-border Guide](li-cross-border.md) for the distinct foreign-credit, claim and exit workpapers, and the [TP Guide](li-transfer-pricing.md) for article 63/124a corresponding adjustments. Each retains its actual treaty, domestic-tax mapping, foreign-finality and procedure limits. Ordinary participation exemption screens above do not complete those processes. [SteG articles44,48,51,63–63a][law]
+Separate unlimited liability, domestic-source limited liability and treaty/PE allocation before computing. The article 63a source-tax example in The base is a payment-specific rule; it is not a universal withholding result. Use the [cross-border skill](li-cross-border.md) for the distinct foreign-credit, claim and exit workpapers, and the [TP skill](li-transfer-pricing.md) for article 63/124a corresponding adjustments. Each retains its actual treaty, domestic-tax mapping, foreign-finality and procedure limits. Ordinary participation exemption screens above do not complete those processes. [SteG articles 44, 48, 51, 63–63a][law]
 
 ## Two worked examples that recompute
 
@@ -117,9 +119,9 @@ All case facts are assumptions. Arithmetic does not establish an allowed classif
 
 ### Build the ordinary liquidity, equity and loss base
 
-Assume a full-year ordinary operating company, CHF1.2 million net turnover, no capital movements, no resolved distribution and no special equity adjustment. Assume these liquidity amounts give the same deduction at each relevant valuation point. The documented liquidity inputs are CHF800,000 short-term receivables/accrual assets/liquid funds, CHF300,000 qualifying third-party short-term liabilities, CHF100,000 qualifying related-party liabilities and CHF400,000 liquid funds. The weighted balance is CHF220,000; the under-CHF10m cash/turnover route gives CHF100,000, so CHF100,000 is the presumed excess-liquidity amount.
+Assume a full-year ordinary operating company, CHF 1.2 million net turnover, no capital movements, no resolved distribution and no special equity adjustment. Assume these liquidity amounts give the same deduction at each relevant valuation point. The documented liquidity inputs are CHF 800,000 short-term receivables/accrual assets/liquid funds, CHF 300,000 qualifying third-party short-term liabilities, CHF 100,000 qualifying related-party liabilities and CHF 400,000 liquid funds. The weighted balance is CHF 220,000; the under-CHF 10 million cash/turnover route gives CHF 100,000, so CHF 100,000 is the presumed excess-liquidity amount.
 
-Assume CHF800,000 opening tax-adjusted paid equity/reserves and documented annual-average deductions of CHF20,000 own shares, CHF100,000 participations and CHF100,000 excess liquidity, with no other nonbusiness asset. The residual asset pool after those categories is CHF1 million; its 6% deduction is CHF60,000. Modified equity is CHF520,000 and the 4% equity amount CHF20,800. Assume CHF100,000 book profit before tax plus CHF5,000 established addbacks and CHF60,000 assessed opening losses. Profit after equity is CHF84,200; loss use is limited to CHF58,940. Taxable profit is CHF25,260, ordinary tax CHF3,157.50 and closing losses CHF1,060. The applicable CHF1,800 minimum does not increase that tax. [SteG articles 54,57,61–62][law]; [SteV articles 32–32a][ordinance]
+Assume CHF 800,000 opening tax-adjusted paid equity/reserves and documented annual-average deductions of CHF 20,000 own shares, CHF 100,000 participations and CHF 100,000 excess liquidity, with no other nonbusiness asset. The residual asset pool after those categories is CHF 1 million; its 6% deduction is CHF 60,000. Modified equity is CHF 520,000 and the 4% equity amount CHF 20,800. Assume CHF 100,000 book profit before tax plus CHF 5,000 established addbacks and CHF 60,000 assessed opening losses. Profit after equity is CHF 84,200; loss use is limited to CHF 58,940. Taxable profit is CHF 25,260, ordinary tax CHF 3,157.50 and closing losses CHF 1,060. The applicable CHF 1,800 minimum does not increase that tax. [SteG articles 54, 57, 61–62][law]; [SteV articles 32–32a][ordinance]
 
 ```oa-check
 name: Liechtenstein assumed operating liquidity modified equity and loss bridge
@@ -195,21 +197,19 @@ expected:
 
 ## Ask the client first
 
-Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity movements and related-party balances; assessed loss history; three-year minimum-tax data and purpose; current forms, notices and elections. Refer participation/exemption anti-abuse, NID special cases, groups, foreign PE loss/credit, exit/restructuring, PVS, GloBE, source tax and live filing. Corporate/XB coverage, full legal/amendment chain and named accountant review remain open.
+Obtain actual management, legal form/exemption/PVS status, full period and income source; all accounts/equity movements and related-party balances; assessed loss history; three-year minimum-tax data and purpose; current forms, notices and elections. Refer participation/exemption anti-abuse, NID special cases, groups, foreign PE loss/credit, exit/restructuring, PVS, GloBE, source tax and live filing.
 
 ## Sources
 
-Historical selected reads on 24 October 2026:
+| Source | URL | Read on |
+|---|---|---|
+| Steuergesetz (SteG), LR 640.0, consolidated 1 July 2026, articles 5, 24, 44-49, 51, 54, 57-58, 61-63a, 94, 113-114, 127, 135 | https://www.gesetze.li/konso/pdf/2010340000 | 2026-10-30 |
+| Steuerverordnung (SteV), consolidated 1 July 2026, articles 4, 18, 21, 32-32a, 41-42a, 45, 47 | https://www.gesetze.li/konso/pdf/2010437000 | 2026-10-30 |
+| LGBl. 2024 Nr. 483, amendment of the SteG (4% Sollertrag in article 5 from 2026) | https://www.gesetze.li/chrono/pdf/2024483000 | 2026-10-24 |
+| Steuerverwaltung, Ertragssteuer | https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-juristische-personen/ertragssteuer | 2026-10-24 |
+| Steuerverwaltung, provisional collection of corporate tax, leaflet (March 2012) | https://www.llv.li/servicekonto/steuerverwaltung/provisorischer-bezug-der-ertragssteuer-merkblatt.pdf | 2026-10-24 |
 
-- [Tax Act, consolidated 1 July 2026][law], selected articles 5, 44–47, 49, 54, 57, 61–63a, 94, 113–114, 127 and 135. Article 48/group/special provisions are not fully reconciled by this Guide.
-- [Tax Ordinance, consolidated 1 July 2026][ordinance], articles 4, 32–32a, 41–42, 45 and 47.
-- [Act 2024/483][amendment], article 5 and commencement II(2): 1 January 2026/first 2026 assessments for the statutory Sollertrag rule.
-- [Current corporate-tax authority summary][authority], 12.5%/CHF 1,800 headline only; statutory exceptions control.
-- [March 2012 provisional collection leaflet][provisional], retained as historical explanation, not renewed confirmation of every present deadline.
-
-The current Tax Act and Ordinance were refetched on 30 October 2026 and matched the saved consolidations. Selected passages used by the ledger include corporate articles5,44,46–49,54,57–58,61–63a,94,113–114,127,135 and SteV4,18,21,32–32a,41–42,45,47, read that day. The ordinary methods above use those passages. Administrative summary/2012 leaflet dates are not renewed, and this is not a complete special-regime/amendment audit.
-
-SteV42 and42a were read 30 October 2026 following independent review. Article42a first applies to 2024 returns under the consolidation’s note75.
+Not yet confirmed: the 2026 general due date and filing date set by the Steuerverwaltung; the GloBE Act and its 15% minimum tax for large groups; group taxation (article 58); PVS; restructurings; the exact interest day-count.
 
 [law]: https://www.gesetze.li/konso/pdf/2010340000
 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000

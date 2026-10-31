@@ -1,18 +1,20 @@
 ---
 name: li-transfer-pricing
 description: >
-  Prepare 2026 Liechtenstein related-party and permanent-establishment pricing
-  workpapers. Use for the arm's-length rule, connected persons, method selection,
-  Master File and Local File screening, the separate company-size route, transaction
-  thresholds, documentation requests and reconciliation to corporate taxable profit.
-  Read the actual Tax Act, Tax Ordinance and company-size cross-reference before
-  treating a documentation threshold as an exemption. This Guide distinguishes
-  formal documentation from the residual evidence duty. It does not supply a
-  benchmark, approved margin, every foreign CbC filing, APA, dispute outcome or an
-  accountant's approval. All example prices, margins and transaction facts are
-  assumptions requiring separate evidence.
+  Prepare 2026 Liechtenstein transfer pricing workpapers under SteG article 49,
+  SteV articles 31a-31b and 36d, and the Country-by-Country Reporting Act.
+  Covers the arm's-length rule for related parties and permanent establishments,
+  related persons, the OECD methods, the Master File and Local File for groups
+  over CHF 900 million (goods over CHF 1 million, other items over CHF 250,000),
+  the separate route for entities exceeding all PGR article 1064(2) size criteria
+  (CHF 500,000 / CHF 125,000), the residual evidence duty, the 60-day request
+  deadline, CbC reporting (registration, 12-month filing, XML upload, fines up to
+  CHF 250,000) and corresponding adjustments. Trigger on: Liechtenstein transfer
+  pricing, Verrechnungspreise Liechtenstein, Master File, Local File, CbCR
+  Liechtenstein. Out of scope: benchmarks, APAs, MAP and public CbC reporting.
 jurisdiction: LI
 category: transfer-pricing
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tax_year: 2026
 tier: 2
 last_updated: 2026-10-30
@@ -21,11 +23,9 @@ version: 0.4
 
 # Liechtenstein transfer pricing v0.4
 
-Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
-
 ## Who this applies to
 
-SteG article 49 requires related-party and PE dealings to use conditions that independent parties would agree in comparable circumstances, and documentation for material transactions. SteV article 31b implements the methods and evidence routes. These are Liechtenstein rules; no Swiss documentation exemption is imported. This source-cited draft supplies preparation, not an accepted benchmark or complete TP coverage. [Tax Act][law]; [Tax Ordinance][ordinance]
+SteG article 49 requires related-party and PE dealings to use conditions that independent parties would agree in comparable circumstances, and documentation for material transactions. SteV article 31b implements the methods and evidence routes. These are Liechtenstein rules; no Swiss documentation exemption is imported. This skill prepares the file; it supplies no benchmark. [Tax Act][law]; [Tax Ordinance][ordinance]
 
 ## Rates, bands and thresholds
 
@@ -52,7 +52,7 @@ Create a transaction register by party/PE, country, relationship, category, year
 Article 31b(1) applies the current OECD TP Guidelines and requires the most suitable method for the actual transaction facts. It lists CUP, resale price, cost plus, TNMM and profit split; another method is permitted if the listed methods cannot suitably represent the arm's-length result. Do not select a method merely because a markup is easy to compute. [SteV, article 31b(1)][ordinance]
 
 1. Delineate what the parties actually did and identify comparable circumstances, tested transactions, functions, risks and assets.
-2. Explain the selected method and rejected alternatives, data reliability, comparability adjustments and limitations. Preserve the underlying search/financial evidence. This draft supplies no local benchmark or safe-harbour margin.
+2. Explain the selected method and rejected alternatives, data reliability, comparability adjustments and limitations. Preserve the underlying search/financial evidence. This skill supplies no local benchmark or safe-harbour margin.
 3. Reconcile the method's base and profit measure to the accounts. A gross cost-plus markup on cost is different from a net return on cost or profit as a percentage of sales; the example below illustrates the denominator distinction only.
 4. Reconcile any proposed adjustment to SteG article 49 and corporate income, with the actual tax, loss, equity-deduction and foreign/treaty implications separately assessed. A ledger correction is not an agreed corresponding adjustment abroad.
 5. Retain contracts, evidence, calculations, file contents, approval/authority communications and the annual refresh record. Apply the separate CbC workflow below; specialist pricing transactions and public corporate-transparency reporting need their own rules.
@@ -69,16 +69,15 @@ Collect the report's jurisdictional revenue, pretax profit/loss, paid and accrue
 
 Use the **current 2026 CbC Ordinance annex** to establish the partner, first eligible reporting period and permanent non-reciprocal status for each relevant jurisdiction. Article 2(2) requires reporting all constituent entities, even those in nonpartners or permanently non-reciprocal jurisdictions; partner jurisdictions with constituent entities are ReceivingCountry recipients, but permanently non-reciprocal states are excluded from that recipient field. Do not remove their entities from the report or use a treaty-signature list as an exchange-status test. Actual systemic-failure notices and case-specific partner eligibility still require confirmation. [CbC Ordinance article 2 and annex][cbc-ordinance]
 
-Article 3 refers to OECD Action 13 AnnexIII and the current OECD CbC XML schema. The authority currently links an **XML schema 2.0 upload** and its July 2020 local technical supplement. The public first step requires the authority-issued CbC reporting number, PEID and PIN; obtain these from the authorised filer and keep secrets outside the research record. Validate the completed report against the applicable OECD XSD/user guide and current local instructions, retain original/correction identifiers and the filing receipt. A successful first-step page read is not an authenticated upload or an accepted filing. Full payload/schema testing, correction execution and the separate public CbCR transparency regime are not completed here. [CbC Ordinance article 3][cbc-ordinance]; [authority reporting page][cbc-authority]; [upload landing page][cbc-upload]; [local supplement][cbc-technical]
+Article 3 refers to OECD Action 13 Annex III and the current OECD CbC XML schema. The authority currently links an **XML schema 2.0 upload** and its July 2020 local technical supplement. The public first step requires the authority-issued CbC reporting number, PEID and PIN; obtain these from the authorised filer and keep secrets outside the research record. Validate the completed report against the applicable OECD XSD/user guide and current local instructions, retain original/correction identifiers and the filing receipt. A successful first-step page read is not an authenticated upload or an accepted filing. Full payload/schema testing, correction execution and the separate public CbCR transparency regime are not completed here. [CbC Ordinance article 3][cbc-ordinance]; [authority reporting page][cbc-authority]; [upload landing page][cbc-upload]; [local supplement][cbc-technical]
 
 
-### Retained separate-size route workpaper
+### Further check
 
 #### Separate-size route category aggregation
 
 Assume the separate-size route and relationship conditions are established, with two cross-border service expenses in the same category to one party, CHF 80,000 and CHF 60,000. CHF 140,000 exceeds CHF 125,000 by CHF 15,000. This does not establish the company-size or relationship gates.
 
-The original executable control remains in the [retained-controls annex](../../../ledgers/li-transfer-pricing-evidence/retained-original-controls.md).
 
 ## Deadlines and filing
 
@@ -98,15 +97,15 @@ For ordinary administrative orders under the CbC procedure section, article 18 p
 
 ## Cross-border points
 
-SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Articles 124a and the actual foreign finality/treaty facts need separate review before seeking a change to a final assessment. This draft does not promise double-tax relief, an APA, a MAP result or an accepted transfer-price range.
+SteG article 63 addresses treaty/reciprocity relief and specified corresponding adjustments. Articles 124a and the actual foreign finality/treaty facts need separate review before seeking a change to a final assessment. This skill does not promise double-tax relief, an APA, a MAP result or an accepted transfer-price range.
 
 For a non-treaty foreign TP correction, SteG article 63(2) requires an application and proof both that the taxpayer could assume its original price complied with article 49 and that the foreign correction itself satisfies arm's length and was appropriately challenged abroad. Article 63(3) supplies a distinct application route for the recipient of a domestic related-party upward correction, with its original-price reliance gate. Article 124a changes a final assessment only for its article 63(2) situation: apply within 90 days of foreign-assessment finality and no later than 10 years after the relevant tax year ends. Keep the foreign final decision, challenge record, pricing evidence and service/finality dates; no universal corresponding adjustment or reopening right is promised. Actual treaty/MAP and foreign counterpart decisions remain separate. [SteG articles 63 and 124a][law]
 
 ### Corresponding-adjustment application and finality clocks
 
-SteV article 36d supplies the procedure for article 63 applications. For a foreign article 63(2) correction, submit the complete facts, the original pricing/arm’s-length documentation, the foreign authority’s pricing/correction documentation, proof that all reasonable foreign challenge measures were taken, and the final foreign assessment. The stated rejection gates concern the original price’s defensible article 49 legal basis, whether the foreign correction is arm’s length, and whether reasonable foreign measures were taken. A domestic article 63(3) application instead needs 36d(1)(a)–(b)’s facts/original-price material and has its stated36d(2)(a) rejection gate. [SteV article 36d(1)–(3)][ordinance]
+SteV article 36d supplies the procedure for article 63 applications. For a foreign article 63(2) correction, submit the complete facts, the original pricing/arm’s-length documentation, the foreign authority’s pricing/correction documentation, proof that all reasonable foreign challenge measures were taken, and the final foreign assessment. The stated rejection gates concern the original price’s defensible article 49 legal basis, whether the foreign correction is arm’s length, and whether reasonable foreign measures were taken. A domestic article 63(3) application instead needs 36d(1)(a)–(b)’s facts/original-price material and has its stated 36d(2)(a) rejection gate. [SteV article 36d(1)–(3)][ordinance]
 
-Both applications are due **within three months after finality of the assessment of the taxpayer whose taxable profit was increased by the TP correction**. Retain that taxpayer’s actual finality evidence; do not substitute the applicant’s own assessment date. If a final Liechtenstein assessment also requires reopening under SteG 124a for a foreign article 63(2) correction, meet its separate 90-day foreign-finality and 10-year outer limits as well. Three calendar months and 90 days are distinct periods. Actual finality/service/holiday questions remain case-specific. [SteV article 36d(4)][ordinance]; [SteG article124a][law]
+Both applications are due **within three months after finality of the assessment of the taxpayer whose taxable profit was increased by the TP correction**. Retain that taxpayer’s actual finality evidence; do not substitute the applicant’s own assessment date. If a final Liechtenstein assessment also requires reopening under SteG 124a for a foreign article 63(2) correction, meet its separate 90-day foreign-finality and 10-year outer limits as well. Three calendar months and 90 days are distinct periods. Actual finality/service/holiday questions remain case-specific. [SteV article 36d(4)][ordinance]; [SteG article 124a][law]
 
 ## Two worked examples that recompute
 
@@ -149,27 +148,28 @@ expected:
 
 ## Ask the client first
 
-Obtain the full group/benefit/relationship chart, turnover and consolidation evidence, both years' company-size data, currency, all party/category transactions, PE facts and actual authority requests. Require the functions/risks/assets record, method/comparable support and accounts reconciliation. Refer financing, guarantees, intangibles, restructurings, PE allocation, contested aggregation/size tests, foreign CbC demands/currency/systemic-failure, public CbCR transparency, advance agreements and cross-border disputes. Full legal/application and named local accountant review remain open; TP coverage is partial.
+Obtain the full group/benefit/relationship chart, turnover and consolidation evidence, both years' company-size data, currency, all party/category transactions, PE facts and actual authority requests. Require the functions/risks/assets record, method/comparable support and accounts reconciliation. Refer financing, guarantees, intangibles, restructurings, PE allocation, contested aggregation/size tests, foreign CbC demands/currency/systemic-failure, public CbCR transparency, advance agreements and cross-border disputes.
 
 ## Sources
 
-Historical 24 October review scope is retained. The legal provisions cited below were fetched and read again on 30 October 2026 for the current writer ledger; this is not an independent review:
+| Source | URL | Read on |
+|---|---|---|
+| Steuergesetz (SteG), LR 640.0, consolidated 1 July 2026, articles 49, 63, 124a, 135 | https://www.gesetze.li/konso/pdf/2010340000 | 2026-10-30 |
+| Steuerverordnung (SteV), consolidated 1 July 2026, articles 31a-31b, 36d | https://www.gesetze.li/konso/pdf/2010437000 | 2026-10-30 |
+| Personen- und Gesellschaftsrecht (PGR), consolidated 1 September 2026, article 1064 | https://www.gesetze.li/konso/pdf/1926004000 | 2026-10-30 |
+| CbC Act (Gesetz über den internationalen automatischen Austausch länderbezogener Berichte multinationaler Konzerne), consolidated 1 January 2026, articles 2-9, 14-23 | https://www.gesetze.li/konso/pdf/2016502000 | 2026-10-30 |
+| CbC Ordinance, consolidated 1 January 2026, articles 2-3 and annex | https://www.gesetze.li/konso/pdf/2016510000 | 2026-10-30 |
+| Steuerverwaltung, CbC reporting | https://www.llv.li/de/landesverwaltung/steuerverwaltung/internationaler-informationsaustausch/cbcreporting | 2026-10-30 |
+| Steuerverwaltung, CbC upload | https://formulare.llv.li/formserver_CBC/start.do?generalid=STV_CBC_MM | 2026-10-30 |
+| Steuerverwaltung, CbC XML technical supplement (July 2020) | https://www.llv.li/serviceportal2/amtsstellen/steuerverwaltung/int_cbc_xml_zusatzspezifikation.pdf | 2026-10-30 |
 
-- [SteG, current 1 July 2026 consolidation][law], selected articles 49, 63, 124a and 135. The ordinary adjustment/finality route is supplied above; treaty/foreign application remains case-specific.
-- [SteV, current 1 July 2026 consolidation][ordinance], full articles 31a–31b. Older search-index versions are not substituted for this text.
-- [PGR, current 1 September 2026 consolidation][pgr], article 1064 only for the size cross-reference; whole-statute retrieval is not whole-statute verification.
-
-- [CbC Act, consolidated 1 January 2026][cbc-law], articles 2–9,14–23; [CbC Ordinance, consolidated 1 January 2026][cbc-ordinance], articles 2–3 and annex; [current authority workflow][cbc-authority], [upload landing page][cbc-upload] and [currently linked July 2020 technical supplement][cbc-technical], read 30 October 2026. No login, upload or submission was performed.
-
-Not yet confirmed: contested size/period/currency interactions; actual transaction comparables and special methods; actual foreign partner/systemic-failure facts; full XSD/payload/correction execution; public CbCR transparency obligations; specific treaty/MAP/APA and professional attestation. These remain explicit limits, not completed coverage.
+Not yet confirmed: size, period and currency interactions for entities reporting in a currency other than CHF; comparables and special methods (financing, intangibles, restructurings); a foreign jurisdiction's partner or systemic-failure status in a given case; public CbC transparency reporting; APA and MAP procedure.
 
 [cbc-law]: https://www.gesetze.li/konso/pdf/2016502000
 [cbc-ordinance]: https://www.gesetze.li/konso/pdf/2016510000
 [cbc-authority]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/internationaler-informationsaustausch/cbcreporting
 [cbc-upload]: https://formulare.llv.li/formserver_CBC/start.do?generalid=STV_CBC_MM
 [cbc-technical]: https://www.llv.li/serviceportal2/amtsstellen/steuerverwaltung/int_cbc_xml_zusatzspezifikation.pdf
-
-SteV 36d was read 30 October 2026 following independent review; its application requirements and separate three-month deadline are supplied above. The consolidation notes first apply36d to 2025 assessments.
 
 [law]: https://www.gesetze.li/konso/pdf/2010340000
 [ordinance]: https://www.gesetze.li/konso/pdf/2010437000

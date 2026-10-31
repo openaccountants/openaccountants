@@ -1,16 +1,18 @@
 ---
 name: liechtenstein-vat
 description: >
-  Prepare 2026 Liechtenstein VAT workpapers for ordinary registered businesses.
-  Use for MWST registration, eMWST, rate selection, domestic sales, qualifying
-  service acquisition tax, input deductions, period reconciliation and corrections.
-  Establish the responsible authority, actual supply and evidence before using a
-  return field. This Guide replaces the earlier blanket Swiss-filing instruction
-  and merchant-name defaults with Liechtenstein law and authority instructions.
-  It does not decide all cross-border supplies, platform sales, margin or net-tax
-  methods, property, groups, sector exemptions or complex partial recovery. Bank
-  statements alone do not establish VAT treatment. The source-cited draft remains
-  subject to named local accountant review.
+  Prepare 2026 Liechtenstein VAT (MWST) workpapers for ordinary registered
+  businesses under the Liechtenstein VAT Act (MWSTG) and Ordinance (MWSTV).
+  Covers who must register (CHF 100,000 worldwide turnover, CHF 250,000 for
+  non-profit clubs), the 8.1%, 2.6% and 3.8% rates, the common VAT territory
+  with Switzerland, acquisition tax on foreign services (Bezugsteuer, CHF 10,000),
+  input tax and mixed use, input-tax corrections on a change of use, quarterly,
+  half-yearly, monthly and annual reporting (CHF 5,005,000), the net tax rate
+  method limits (CHF 5,024,000 / CHF 108,000), the 60-day filing and payment
+  deadline, eMWST, 4% interest for 2026 and fines. Trigger on: Liechtenstein
+  VAT, MWST Liechtenstein, eMWST, Bezugsteuer Liechtenstein, Steuerverwaltung
+  MWST. Out of scope: platforms, margin taxation, groups, property and sector
+  schemes. Bank statements alone do not establish VAT treatment.
 version: 2.4
 jurisdiction: LI
 tax_year: 2026
@@ -24,13 +26,11 @@ category: international
 
 # Liechtenstein VAT preparation v2.4
 
-Historical source/editorial evidence is in the [24 October review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md), confined to its exact predecessor and scope. The [current country review register](../../../ledgers/li-pack-review-evidence/README.md) identifies the 30 October review, repairs and exact-file verification. Named Liechtenstein accountant review remains open.
-
 ## Who this applies to
 
-Use this 2026 source-cited draft for an ordinary business whose VAT affairs belong to the Liechtenstein Tax Administration. The country has its own [VAT Act, consolidated 1 January 2026][law]. Swiss ESTV practice applies by analogy with local deviations; it is not a replacement for Liechtenstein law, authority allocation or filing access. [Official practice-publications page][practice]
+Use this skill for 2026 for an ordinary business whose VAT affairs belong to the Liechtenstein Tax Administration. The country has its own [VAT Act, consolidated 1 January 2026][law]. Swiss ESTV practice applies by analogy with local deviations; it is not a replacement for Liechtenstein law, authority allocation or filing access. [Official practice-publications page][practice]
 
-The earlier Guide's merchant-name classification, unknown-country/rate defaults and universal Swiss-portal instruction are superseded. Their history remains in Git. An invoice, contract, supply/location evidence, registration decision, deduction record and actual reporting period are required; a bank statement or the customer's name cannot establish taxable supply, export or recovery.
+Do not classify a transaction from a merchant name, and do not apply a default rate or country. An invoice, contract, supply/location evidence, registration decision, deduction record and actual reporting period are required; a bank statement or the customer's name cannot establish taxable supply, export or recovery.
 
 ## Rates, bands and thresholds
 
@@ -43,15 +43,18 @@ The earlier Guide's merchant-name classification, unknown-country/rate defaults 
 | Specified nonprofit bodies | Separate **less than CHF 250,000** test | Article 10(2)(c), not every business |
 | Registered domestic taxpayer: acquisition tax | Assess each qualifying acquisition; no CHF 10,000 exemption | Article 45(2)(a) |
 | Recipient not already liable under article 10 | Acquisition-tax screen for qualifying acquisitions **over CHF 10,000** in the calendar year | Articles 45(2)(b), 47(2), 53(3) |
+| Annual reporting, on application | Taxable turnover **not more than CHF 5,005,000** a year | Article 35(1a)(b) |
+| Net tax rate method (Saldosteuersatz), on application | Taxable turnover **not more than CHF 5,024,000** a year and tax at the net rate **not more than CHF 108,000** in the same period | Article 37(1) |
+| Filing and payment | Within **60 days** after the reporting period ends | Articles 58(1), 76(1) |
 
 These tests do not alone establish liability: review the foreign-supplier, domestic/foreign-only and exempt-activity provisions in article 10. Article 14 distinguishes activity commencement, the end of exemption when prior-year turnover reaches the limit or a 12-month exceedance is foreseeable on commencement/expansion, and deregistration. Do not import another country's crossing-sale rule. Preserve a dated turnover forecast and authority registration decision. Compute the turnover limit from agreed consideration **excluding VAT**. Article 10(2)(d) separately exempts a Liechtenstein-established enterprise making only foreign supplies, with a possible article 11 waiver. For a foreign enterprise, article 10(2)(b) separately exempts the stated exclusively exempt/service/energy supplies; its article 8(1) service category does not exempt telecommunications/electronic supplies to non-taxable recipients. Establish the actual supply mix rather than deciding registration from the CHF 100,000 total alone. [MWSTG, articles 10–14][law]
 
 | Additional 2026 control | Figure/rule | Official source |
 |---|---|---|
-| Annual movable/service input-tax use-change reduction |One fifth of the relevant input VAT per counted year; actual timing rules below |[MWSTG articles 31–32][law] |
-| Annual immovable input-tax use-change reduction |One twentieth per counted year; property-base/special rules remain necessary |[MWSTG articles 31–32][law] |
-| Late-payment and ordinary domestic refund interest |4% per year from 1 January 2026 |[MWSTV articles 142–143][ordinance]; [enacted 2025/548][interest-amendment] |
-| Collection/payment threshold for those interest amounts |CHF 100 interest amount, not the underlying VAT/refund principal |[MWSTV articles 142(3),143(3)][ordinance] |
+| Annual movable/service input-tax use-change reduction | One fifth of the relevant input VAT per counted year; actual timing rules below | [MWSTG articles 31–32][law] |
+| Annual immovable input-tax use-change reduction | One twentieth per counted year; property-base/special rules remain necessary | [MWSTG articles 31–32][law] |
+| Late-payment and ordinary domestic refund interest | 4% per year from 1 January 2026 | [MWSTV articles 142–143][ordinance]; [enacted 2025/548][interest-amendment] |
+| Collection/payment threshold for those interest amounts | CHF 100 interest amount, not the underlying VAT/refund principal | [MWSTV articles 142(3), 143(3)][ordinance] |
 
 ## The base
 
@@ -59,7 +62,7 @@ For every line retain seller and recipient, registration details, supply type an
 
 1. **Find the supply and place.** Articles 7–8 control goods and services. Article 8(1) normally looks to the receiving business/establishment; special rules cover property/accommodation, restaurant, transport and other services. A foreign hotel or an EU customer's name does not establish domestic acquisition tax or export. Preserve the applicable rule and evidence.
 2. **Choose the category and rate.** Article 25(3) applies the normal rate to restaurant services. Qualifying takeaway/delivery food needs the stated organisational separation to use the reduced rate. Do not split a dine-in bill's food to 2.6% merely because groceries can be reduced. Alcohol is outside the reduced food category. The supply date/period, rather than invoice/payment date alone, controls a rate transition. [Rate page][rates]; [MWSTG, article 25][law]
-3. **Test exemption/option separately.** Articles 21–23 distinguish excluded supplies, options and exempt supplies. No generic bank, government, SaaS, restaurant or internal-transfer label decides the legal treatment. Exports need goods-movement and statutory evidence; services to a foreign customer require their own place rule.
+3. **Test exemption/option separately.** Articles 21–23 distinguish excluded supplies, options and exempt supplies. Supplies excluded from tax without input-tax deduction under article 21(2) include hospital and medical treatment (items 2-4), education (item 11), cultural and sporting admissions (items 14-16), insurance (item 18), most financial services (item 19), transfers of and rights in land (item 20) and letting of land and buildings (item 21); an option to tax is possible for some under article 22. No generic bank, government, SaaS, restaurant or internal-transfer label decides the legal treatment. Exports need goods-movement and statutory evidence; services to a foreign customer require their own place rule.
 4. **Assess acquisition tax only when its gates hold.** For an ordinary article 8(1) service, establish domestic place, a foreign supplier not entered in the relevant register, and no article 45a exclusion. Article 45 contains other acquisition categories too; article 46 applies the ordinary base/rates. Registration of the recipient and the CHF 10,000 test differ as shown above. Telecom/electronic consumer supplies and emission rights need separate screens. Under article 48, the tax point depends on payment or, for an article-10 taxpayer using agreed consideration, receipt of the invoice. Do not classify every foreign debit as an import of services. [Articles 45–48][law]
 5. **Determine input entitlement.** Articles 28–30 require the qualifying business purpose and exclude inputs for exempt supplies without an option, with specified exceptions. Preserve article 28(3) payment proof, invoice/import-assessment evidence and the use allocation. Article 30 corrects mixed use; article 31 addresses later loss of entitlement. Acquisition output and input can both be reportable even when the net is zero. No universal entertainment half-deduction, vehicle percentage or automatic zero-net recovery is supplied here. [Articles 26, 28–31][law]
 6. Reconcile the supported bases/tax to the actual eMWST return fields and method. Under effective accounting, article 36 combines domestic/acquisition tax and the stated deferred-import tax with eligible input credits. The ordinary effective method must not be mixed with approved net-tax or flat-rate methods. Net-tax rates are not customer invoice rates. [Articles 36–38][law]
@@ -75,42 +78,41 @@ For the ordinary time-value method, reduce the relevant input VAT by **one fifth
 For immovables, article 70(1)'s valuation excludes land and distinguishes value-enhancing from maintenance expenditure; major renovations have their own article 71 rule. Self-manufactured assets, property reconstruction/renovation, disputed values, special schemes and successive mixed-use changes still need their actual detailed method. The ordinary movable example below does not decide those cases. [MWSTV articles 69–72][ordinance]
 
 
-### Retained predecessor rate and acquisition workpapers
+### Further rate and acquisition checks
 
 #### Qualifying reduced goods and accommodation
 
-Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qualifying accommodation. A restaurant meal is not included in the reduced goods assumption.
+Assume separately classified domestic supplies: CHF 1,000 net qualifying reduced-rate goods and CHF 200 net qualifying accommodation. Output VAT is CHF 26 at 2.6% and CHF 7.60 at 3.8%, CHF 33.60 in total. A restaurant meal is not included in the reduced goods assumption.
 
-The original executable block remains in the [retained-controls annex](../../../ledgers/liechtenstein-vat-evidence/retained-original-controls.md).
 
 #### Acquisition tax with supported partial input entitlement
 
 Assume an article-10 registered recipient, an established domestic article 8(1) service from a qualifying unregistered foreign supplier, no article 45a exclusion, a CHF 1,000 net base and documented 70% input entitlement under the effective method. Assess CHF 81 acquisition tax, with CHF 56.70 deductible and CHF 24.30 remaining. The supplier brand does not establish these gates.
 
-The original executable block remains in the [retained-controls annex](../../../ledgers/liechtenstein-vat-evidence/retained-original-controls.md).
 
 #### Invoice food versus restaurant classification
 
 The same CHF 500 net food value gives CHF 13 at 2.6% only on established qualifying goods/takeaway facts, versus CHF 40.50 for a normal-rate restaurant service. The CHF 27.50 difference is a classification control, not an election for the cheaper result.
 
-The original executable block remains in the [retained-controls annex](../../../ledgers/liechtenstein-vat-evidence/retained-original-controls.md).
 
 ## Deadlines and filing
 
-- Article 35 provides quarterly periods, half-years for the net-tax method, and application routes for monthly regular input-credit cases or annual reporting where taxable annual turnover does not exceed CHF 5,005,000. Obtain the actual approval; article 35a adds annual-method restrictions. Annual filing does not mean there are no interim payments: article 76a provides authority-set instalments. This draft does not select an election for the taxpayer.
+- Article 35 provides quarterly periods, half-years for the net-tax method, and application routes for monthly regular input-credit cases or annual reporting where taxable annual turnover does not exceed CHF 5,005,000. Obtain the actual approval; article 35a adds annual-method restrictions. Annual filing does not mean there are no interim payments: article 76a provides instalments set and invoiced by the tax administration from the last period's tax: on the effective method each instalment is a quarter, due 150, 240 and 330 days after the start of the tax period; on the net tax rate method it is half, due 240 days after the start. Annual reporting must be kept for at least one full tax period; after leaving it, the taxpayer waits three tax periods to return (article 35a). Obtain the approval; do not assume an election.
 - Article 53 requires ordinary registration within 30 days of liability; solely acquisition-tax-liable recipients have the separate year-end 60-day registration/declaration route. Follow the mandatory current eMWST channel. For the acquisition-tax-only route, the authority instructs the recipient to select and submit **„Anmeldung Bezugsteuer“** in eMWST; the former register number was deactivated from 1 January 2025 and acquisition-tax return forms are no longer supplied automatically. Retain the actual period and submission evidence instead of waiting for an old paper form. [Current eMWST instructions, read 30 October 2026][portal]
-- File within 60 days after the allocated period under article 58; article 76 separately requires payment within 60 days. Reconcile any authority extension notice: a filing extension does not prove payment was extended. Confirm actual calendar/holiday treatment and period-specific notices; this Guide does not assign unverified 2026 exceptional dates.
+- File within 60 days after the allocated period under article 58; article 76 separately requires payment within 60 days. Reconcile any authority extension notice: a filing extension does not prove payment was extended. For calendar quarters the 60th day after 31 March is 30 May, after 30 June is 29 August, after 30 September is 29 November and after 31 December is 1 March.
 - Article 59 requires annual-account errors to be corrected by the return covering the 180th day after year-end, and known past-period errors to be corrected within the stated finality/limitation rules. Use the authority-prescribed correction form in eMWST. The actual current field workflow remains to be exercised; preserve both original and corrective evidence.
 
 ## Penalties and interest
 
-- Article 77 imposes late-payment interest without reminder, with its stated no-loss exception; the 2026 rate and threshold are now supplied below. Article 86 permits a fine up to CHF 10,000 for its specified intentional/negligent procedural breaches, including late filing after reminder. It is not an automatic charge on every late return. Tax evasion, estimates, interest, payment enforcement and criminal cases require separate analysis. [MWSTG, cited articles][law]
+- Article 77 imposes late-payment interest without reminder, with its stated no-loss exception; the 2026 rate and threshold are now supplied below. Article 86 permits a fine up to CHF 10,000 for its specified intentional/negligent procedural breaches, including late filing after reminder. It is not an automatic charge on every late return. Tax evasion under article 87 carries a fine up to CHF 400,000, or up to CHF 800,000 where the evaded tax was passed on in a form that allows input-tax deduction; wrong tax treatment of correctly declared facts carries up to CHF 200,000 if intentional and up to CHF 20,000 if negligent; evasion in an audit or administrative procedure up to CHF 800,000. If no or an obviously insufficient payment is made, the administration fixes the provisional tax by decision and enforces it (article 76(2)). [MWSTG articles 76, 77, 86 and 87][law]
 
 MWSTV articles 142–143 set the 2026 late-payment and article 78(4) ordinary refund rates at **4% per year from 1 January 2026**. Their preceding 2024–2025 rate is 4.5%; split a period crossing the rate change by the applicable dates instead of applying today's rate to every earlier day. Article 77 also covers late/incomplete instalments under annual reporting and exempts its stated error-with-no-tax-loss reassessment case. Establish tax amount, due/receipt/payment dates and the applicable interest duration before calculating; the exact day-count convention is not supplied here. [MWSTG article 77][law]; [MWSTV articles 142–143][ordinance]; [enacted amendment 2025/548][interest-amendment]
 
-Late interest is collected, and the stated refund interest is paid, only from an **interest amount of CHF 100**. The threshold concerns interest, not the amount of tax owed or principal refund. For ordinary taxable-person refunds under MWSTG article 78(4), interest runs from the 61st day after receipt of the return or written refund request until payment; the Act reserves its set-off/security routes. This is not the separate foreign-business reimbursement timetable. [MWSTG article 78][law]; [MWSTV articles 142(3),143(3)][ordinance]
+Late interest is collected, and the stated refund interest is paid, only from an **interest amount of CHF 100**. The threshold concerns interest, not the amount of tax owed or principal refund. For ordinary taxable-person refunds under MWSTG article 78(4), interest runs from the 61st day after receipt of the return or written refund request until payment; the Act reserves its set-off/security routes. This is not the separate foreign-business reimbursement timetable. [MWSTG article 78][law]; [MWSTV articles 142(3), 143(3)][ordinance]
 
 ## Cross-border points
+
+"Inland" in the Liechtenstein VAT Act means Liechtenstein plus the foreign territories named by treaty (article 3(a)); the Steuerverwaltung treats a business as foreign only when its seat is outside both Liechtenstein and Switzerland ("ausserhalb FL und CH"). Supplies between Liechtenstein and Switzerland are therefore domestic supplies, not imports or exports. [Registration guidance][registration] Goods brought in from any other country, including EU states, are imports: import VAT follows the Swiss rules that apply under the 1994 Treaty (article 50). A supply of goods sent directly abroad is exempt with input-tax deduction, with export evidence (article 23(2)(1)). EU member states are outside this territory, so trade with them is cross-border trade, not intra-EU trade. [MWSTG articles 3, 23 and 50][law]
 
 For a foreign enterprise established outside Liechtenstein/Switzerland, the authority says an existing Swiss VAT registration or taxable Swiss supplies put collection with the Swiss ESTV; additional Liechtenstein sales are accounted for there. Check the actual registration/authority allocation before choosing a portal. A Liechtenstein-administered taxpayer uses [eMWST][portal], mandatory since January 2025 for registration, returns, corrections and communications; old lilog accounts/authorisations are not sufficient. Retain current access and representation evidence. [Registration guidance][registration]; [eMWST instructions][portal]
 
@@ -160,18 +162,22 @@ expected:
 
 ## Ask the client first
 
-Obtain the registration/authority decision, approved method/period, portal representation, invoices, contracts, location/transport/customs evidence, VAT bases and actual use. Retain prior returns, advance payments and notices. Refer uncertain supply location, foreign enterprise allocation, agency/platform transactions, exemption/option, groups, property, partial exemption, method changes, foreign/special refunds, disputed interest periods and contested tax. No actual return, payment or production account was accessed. Complete special-case/amendment scope, operational field testing and named accountant review remain open; VAT coverage stays partial.
+Obtain the registration/authority decision, approved method/period, portal representation, invoices, contracts, location/transport/customs evidence, VAT bases and actual use. Retain prior returns, advance payments and notices. Refer uncertain supply location, foreign enterprise allocation, agency/platform transactions, exemption/option, groups, property, partial exemption, method changes, foreign/special refunds, disputed interest periods and contested tax.
 
 ## Sources
 
-The 24 October reviewed scope remains pinned to its predecessor. The selected 30 October statutory and actual browser reads below support the new writer methods; they do not extend the historical independent review.
+| Source | URL | Read on |
+|---|---|---|
+| Mehrwertsteuergesetz (MWSTG), LR 641.20, consolidated 1 January 2026, articles 3, 7-8, 10-14, 21-38, 45-48, 50, 52-54, 58-59, 76-78, 86-87 | https://www.gesetze.li/konso/pdf/2009330000 | 2026-10-30 |
+| Mehrwertsteuerverordnung (MWSTV), consolidated 1 January 2026, articles 65-72, 142-143 | https://www.gesetze.li/konso/pdf/2009340000 | 2026-10-30 |
+| LGBl. 2025 Nr. 548, amendment of the MWSTV (interest from 1 January 2026) | https://www.gesetze.li/chrono/pdf/2025548000 | 2026-10-30 |
+| Steuerverwaltung, eMWST | https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst | 2026-10-30 |
+| Steuerverwaltung, who is liable to VAT | https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig | 2026-10-30 |
+| Steuerverwaltung, publications on VAT practice | https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/publikationen-zur-mehrwertsteuerpraxis | 2026-10-30 |
+| Landesverwaltung, VAT rates | https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze | 2026-10-24 |
+| Steuerverwaltung, changes from 1 January 2025 | https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/aenderungen-ab-01012025 | 2026-10-24 |
 
-- [Liechtenstein MWSTG, consolidated1 January 2026][law]: historical 24 October selected articles3,7–8,10–14,25–31,35–38,45–48,52–54,58–59,66,76–77 and86. The ledger separately records the 30 October ordinary registration/input-use-change/tax-period/payment/refund passages, including32–34 and78. Official PDF/text retrieval is distinguished from web-reader transport; neither is a complete amendment/exemption/treaty audit.
-- [MWSTV, consolidated1 January 2026][ordinance], selected 65–72 and142–143, and [enacted 2025/548][interest-amendment], effective1 January 2026, read 30 October 2026 for the ordinary input-correction and interest method.
-- [Actual eMWST channel][portal], [registration/authority allocation][registration] and [Swiss-practice-by-analogy page][practice]: selected relevant paragraphs read in the normal browser30October2026, with exact selected excerpts retained in the ledger evidence. This does not assert every page, every accordion or private portal field was audited.
-- [Current rate categories][rates] and [2025 changes][changes]: historical 24 October access retained; no fresh whole-page read claimed. The original direct bulk HTML attempt met HTTP 403; successful web/browser observations remain separately identified.
-
-Not yet confirmed: complete special-supply/sector/group/property/renovation/self-manufactured methods; contested successive changes, valuations and allocation evidence; exact interest day-count/application; current authenticated return fields, upload/correction execution and final calendar adjustments. Source access and writer checks do not establish comprehensive coverage or accountant attestation.
+Not yet confirmed: the net tax rates themselves (set by the Steuerverwaltung); special-supply, sector, group, property, renovation and self-manufactured methods; the exact interest day-count; the current eMWST return fields and correction form.
 
 [ordinance]: https://www.gesetze.li/konso/pdf/2009340000
 [interest-amendment]: https://www.gesetze.li/chrono/pdf/2025548000

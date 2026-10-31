@@ -1,6 +1,6 @@
 ---
 jurisdiction: LI
-version: 0.7
+version: 0.8
 last_updated: 2026-10-30
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,71 +13,41 @@ covered_by:
   TP: li-transfer-pricing
   XB: li-cross-border
 partial:
-  IT-IND: "2026 statutory tariffs/minimum income, ordinary wealth/debt/rounding, employee expenses, deduction screens and extension method drafted; actual municipal rates, detailed unquoted/actuarial and special/foreign cases, final tax rounding/current assigned calendar remain open; review status is in the country review register."
-  IT-CORP: "2026 ordinary liquidity/modified-equity computation, participation-exemption screens, minimum and loss methods drafted; actual tax-value/anti-abuse/foreign facts, groups, GloBE and current filing application remain open. Review status is in the country review register."
-  VAT: "2026 registration/authority, acquisition tax, shared-input allocation, ordinary use-change timing and current interest methods drafted; actual supply/allocation, exact day-count, operational fields and independent pack review remain open."
-  SC: "2026 employee, ordinary self-employed rounding/minimum and non-employed category/table methods drafted; actual capital-base reconciliation, mixed-status, exact duration/rounding, continued-work and insurance/interest chain remain open. Review status is in the country review register."
-  PR: "2026 resident/nonresident wage withholding, schedule and remittance preparation added; treaty, benefit, exact calendar, full statutory and named local accountant review remain open."
-  TP: "Statutory documentation routes, ordinary CbC reporting/registration/exchange and corresponding-adjustment procedure supplied as writer drafts; contested size/currency/period, benchmarks, actual foreign/systemic-failure/treaty and full payload/correction/public-transparency scope remain open. Review status is in the country review register."
-  XB: "Domestic residence/source/PE, ordinary nonresident assessment, 2026 surcharge, distinct individual/business foreign-credit and corporate exit methods drafted; actual treaties, individual-business tax mapping, special cases and operational claims remain open."
+  IT-IND: "the 2026 municipal surcharge of each municipality is not yet published by the Steuerverwaltung (its page lists surcharges up to 2025), so a resident's total tax cannot be finished; the 2026 filing date is also not yet set"
 ---
 
-# Liechtenstein tax pack
+# Liechtenstein: tax pack
 
-Accountable owner: Michael. Active writer: this Codex chat (`01a162b7-fe36-7491-8fb0-5702819d9e06`), local branch `codex/liechtenstein-persistent`, continuing existing country [PR #785](https://github.com/openaccountants/openaccountants/pull/785) and [issue #406](https://github.com/openaccountants/openaccountants/issues/406). The branch includes current main at `b0882619b`. Preserve the 24 October exact-scope review. The 30 October whole-pack review and repair verification are recorded in the [country review register](../../../ledgers/li-pack-review-evidence/README.md). One country update follows completed local work and exact-repair verification.
+Calendar tax year, Swiss franc. The Steuerverwaltung administers individual wealth-and-income tax (a state tax of up to 8% plus a municipal surcharge, with net wealth taxed as a 4% deemed yield), corporate income tax (12.5%, CHF 1,800 minimum tax), wage withholding and VAT. Liechtenstein has its own VAT Act, but it forms one VAT territory with Switzerland and follows Swiss VAT practice by analogy. Social insurance (AHV/IV/FAK, ALV) is run by the AHV-IV-FAK institutions at Liechtenstein rates, not Swiss ones. There is no withholding tax on dividends, interest or royalties.
 
-The tax authority is the Liechtenstein Steuerverwaltung. Use the country's own tax and VAT Acts and its actual authority allocation. Swiss VAT practice applies by analogy with local deviations; it does not send every Liechtenstein taxpayer to the Swiss filing system. The historical source list below was read on 24 October 2026; all eight writer ledgers record their 30 October source reads separately.
+## Domains
 
-## Domains and existing work
-
-| Domain | Source Guide | Status and next gap |
+| Domain | Skill | Status |
 |---|---|---|
-| IT-IND | [li-income-tax](li-income-tax.md) | Source-cited draft; ordinary bases, deduction/expense and extension methods drafted; precise actual/special cases remain open |
-| IT-CORP | [li-corporate-income-tax](li-corporate-income-tax.md) | Source-cited draft; ordinary equity/liquidity and exemption screens drafted, actual application/specialist scope open |
-| VAT | [liechtenstein-vat](liechtenstein-vat.md) | Source-cited draft; ordinary input allocation/use-change/interest and acquisition-only portal methods drafted |
-| SC | [li-payroll-social](li-payroll-social.md) | Source-cited draft; ordinary employee, self-employed and non-employed methods drafted; precise remaining social/insurance and fresh review gaps retained |
-| PR | [li-payroll-social](li-payroll-social.md) | Source-cited draft; residents also subject to wage withholding, with current schedule/source exceptions |
-| TP | [li-transfer-pricing](li-transfer-pricing.md) | Source-cited draft; 2026 documentation/method preparation, application gaps open |
-| XB | [li-cross-border](li-cross-border.md) | Source-cited draft; 2026 domestic/relief method, actual treaty application open |
+| IT-IND, individual income tax | li-income-tax | checked against the law |
+| IT-CORP, corporate income tax | li-corporate-income-tax | checked against the law |
+| VAT | liechtenstein-vat | checked against the law |
+| SC, social contributions | li-payroll-social | checked against the law |
+| PR, payroll withholding | li-payroll-social | checked against the law |
+| TP, transfer pricing | li-transfer-pricing | checked against the law |
+| XB, cross-border | li-cross-border | checked against the law |
 
-The [formation](li-company-formation.md) Guide now reconciles selected GmbH/capital, current size/assurance and electronic-reporting rules; the [overview](li-tax-overview.md) is a router with no standalone rates or liability calculation. Their existence does not resolve any core-domain gap. All eight Guides remain tier 2; no named Liechtenstein accountant review is claimed.
+Also in the pack: [li-tax-overview](li-tax-overview.md) (router and headline figures) and [li-company-formation](li-company-formation.md) (legal forms, capital, accounts and review).
 
-## Source preparation and next action
-
-The original 24 October country checkpoint provided 25 executable calculations across seven preparation Guides; the overview is a router. The current country files contain 14 executable blocks. All 25 predecessor cases remain in the current text and six evidence annexes. The annexes preserve 23 original blocks byte-for-byte, including seven also retained in current Guides. With two new cross-border examples, one new VAT example, one new corporate example and one new individual-income example, the combined check executes 37 blocks representing 30 distinct cases. A successful calculation or source response does not establish legal applicability or comprehensive coverage.
-
-The [24 October independent whole-pack review](../../../docs/research/2026-10-24-liechtenstein-pack-review.md) is preserved unchanged. Apply its exact revision and scope limits; it does not cover the 30 October drafts. Complete the remaining ledgers, resolve ordinary-method gaps and obtain a fresh independent whole-pack review before one update to existing country PR #785. Issue #406 stays open and the PR stays draft. Named local accountant attestation and actual filing remain separate unresolved matters.
-
-## 30 October local writer checkpoint
-
-| Current ledger | Rule/control groups | Private writer controls |
-|---|---:|---:|
-| [Payroll/social](../../../ledgers/li-payroll-social.md) | 168 | 28 |
-| [Transfer pricing](../../../ledgers/li-transfer-pricing.md) | 87 | 19 |
-| [Cross-border](../../../ledgers/li-cross-border.md) | 71 | 17 |
-| [VAT](../../../ledgers/liechtenstein-vat.md) | 77 | 25 |
-| [Corporate income](../../../ledgers/li-corporate-income-tax.md) | 86 | 30 |
-| [Individual income](../../../ledgers/li-income-tax.md) | 121 | 36 |
-| [Formation](../../../ledgers/li-company-formation.md) | 51 | 19 |
-| [Overview routing/scope](../../../ledgers/li-tax-overview.md) | 11 | Included in formation preservation/link checks |
-
-Each ledger has original-language quotations, act/article references, official URLs/read dates and a complete predecessor-topic destination table. All 32 non-employed contribution-table rows match the official 2026 source. All 174 writer controls pass; all 27 personal-tax tariff rows match the original Act. The 672 ledger groups include legal rules, source/old-topic controls, assumed arithmetic and routing/scope entries; they are not a count of independently verified legal facts. These are writer checks, **not independent review**.
-
-All six tax preparation Guides now have the nine authored sections and exactly two executable examples. Formation keeps two original funding examples; the overview is a calculation-free router. Their original blocks remain unchanged in the [payroll annex](../../../ledgers/li-payroll-social-evidence/retained-original-controls.md), [TP annex](../../../ledgers/li-transfer-pricing-evidence/retained-original-controls.md), [cross-border annex](../../../ledgers/li-cross-border-evidence/retained-original-controls.md), [VAT annex](../../../ledgers/liechtenstein-vat-evidence/retained-original-controls.md), [corporate annex](../../../ledgers/li-corporate-income-tax-evidence/retained-original-controls.md) and [individual annex](../../../ledgers/li-income-tax-evidence/retained-original-controls.md). All substantive predecessor cases remain in the current Guides.
-
-The payroll draft supplies ordinary self-employed/non-employed methods, capital-interest linkage, pension-entry/risk/saving dates and appeal routes. The TP draft supplies CbC reporting-role, revenue, registration/filing, exchange/channel and sanctions methods, plus the ordinary SteG63/124a corresponding adjustment. The cross-border draft adds ordinary nonresident assessment, the enacted 2026 article23(5)(b) surcharge and distinct individual/business credit computations and claim rules. The VAT draft adds direct/shared-use allocation, ordinary permanent/temporary input-use changes, annual tax-period timing, current interest rules and the acquisition-tax-only portal process. The corporate draft builds ordinary excess liquidity and modified equity from documented inputs and supplies the statutory participation-exemption screens. The individual draft adds ordinary wealth/debt/rounding and expense/deduction/extension methods and corrects the personal business-capital reference. Formation supplies current size/assurance/waiver and electronic-disclosure screens; the overview points to country PR #785. Each Guide retains its precise unresolved application questions.
-
-All eight writer ledgers and predecessor-topic destination tables are prepared. The independent whole-pack review of the original 663 groups completed with four findings. The writer applied the corresponding-adjustment procedure, corporate electronic-filing/deadline, VAT bibliography and supplier-label repairs, adding nine source groups. Exact-repair verification is tracked in the [review register](../../../ledgers/li-pack-review-evidence/README.md) and is required before publication. Current partial entries remain in force. No new content has been pushed to PR #785 at this checkpoint. Every domain remains partial; source preparation and writer controls do not establish comprehensive coverage or accountant attestation.
+Out of scope: VAT platform, margin, group and net-tax-rate schemes; expenditure (lump-sum) taxation; trusts and foundations; GloBE top-up tax; the terms of individual tax treaties.
 
 ## Official sources
 
-Read 24 October 2026, scoped to the research record:
-
-- [Tax Act, current consolidation 1 July 2026](https://www.gesetze.li/konso/pdf/2010340000), selected withholding, arm's-length, loss and rate/minimum-tax provisions. This is not a complete annual amendment audit.
-- [Liechtenstein VAT Act, current consolidation 1 January 2026](https://www.gesetze.li/konso/pdf/2009330000), selected ordinary registration, supply, rates, deduction and procedure provisions.
-- [2026 contribution bulletin](https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf), ordinary coverage, rates and contribution bases.
-- [Wage-withholding bulletin, February 2026](https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf), with January 2026 treaty annex.
-- [AHVV consolidated 1 January 2026](https://www.gesetze.li/konso/pdf/1982035000), articles16–17,20–26,30–31,34–39 and66; [BPVG](https://www.gesetze.li/konso/pdf/1988012000), articles3–4 and6–7; [UVersG](https://www.gesetze.li/konso/pdf/1990046000), article79. These selected payroll/social provisions were read30October2026; new methods are unreviewed writer changes.
-- [eMWST route](https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst), [registration and authority allocation](https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig), [rate categories](https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze) and [Swiss practice by analogy](https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/publikationen-zur-mehrwertsteuerpraxis).
-
-Additional selected statutory reads on 30 October 2026: [Finance Act 2026, article2](https://www.gesetze.li/konso/pdf/2025556000), [current VAT ordinance, articles65–72 and142–143](https://www.gesetze.li/konso/pdf/2009340000), and [enacted VAT interest amendment2025/548](https://www.gesetze.li/chrono/pdf/2025548000). The VAT ledger separately preserves selected actual browser observations from the registration, practice and eMWST pages read that day.
+- Steuergesetz (SteG), consolidated 1 July 2026: https://www.gesetze.li/konso/pdf/2010340000 (read 2026-10-30)
+- Steuerverordnung (SteV), consolidated 1 July 2026: https://www.gesetze.li/konso/pdf/2010437000 (read 2026-10-30)
+- Finanzgesetz für das Jahr 2026: https://www.gesetze.li/konso/pdf/2025556000 (read 2026-10-30)
+- Mehrwertsteuergesetz (MWSTG), consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/2009330000 (read 2026-10-30)
+- Mehrwertsteuerverordnung (MWSTV), consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/2009340000 (read 2026-10-30)
+- AHVG, consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/1952029000 (read 2026-10-30)
+- AHVV, consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/1982035000 (read 2026-10-30)
+- BPVG, consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/1988012000 (read 2026-10-30)
+- AHV-IV-FAK, bulletin 1.01 contributions, 1 January 2026: https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf (read 2026-10-30)
+- Steuerverwaltung, source tax / wage tax bulletin, February 2026: https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf (read 2026-10-30)
+- CbC Act, consolidated 1 January 2026: https://www.gesetze.li/konso/pdf/2016502000 (read 2026-10-30)
+- Personen- und Gesellschaftsrecht (PGR), consolidated 1 September 2026: https://www.gesetze.li/konso/pdf/1926004000 (read 2026-10-30)
+- Steuerverwaltung: https://www.llv.li/de/landesverwaltung/steuerverwaltung (read 2026-10-31)
