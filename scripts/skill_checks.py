@@ -93,6 +93,9 @@ HEADING_RE = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 NUMBER_PREFIX_RE = re.compile(r"^(?:section\s+)?\d+[.):]?\s*(?:[-:]\s*)?", re.IGNORECASE)
 FENCE_RE = re.compile(r"^```.*?^```[ \t]*$", re.MULTILINE | re.DOTALL)
 AMOUNT_COLUMN_RE = re.compile(r"amount|rate|figure|value|threshold", re.IGNORECASE)
+#: A cell that opens with this word marks the row unverified (rule 2). Only the
+#: start of a cell counts, so "unverified payees" inside a rule is not a mark.
+UNVERIFIED_MARK_RE = re.compile(r"^[\s*_`\[(]*unverified\b", re.IGNORECASE)
 EM_DASH = "—"
 
 
@@ -238,29 +241,65 @@ def check_sources_read_dates(path, text, fm):
     return []
 
 
-def check_rates_rows_sourced(path, text, fm):
-    """(c) every row of the rates table carries an official URL (``same`` inherits the row above)."""
+def _rates_rows(text):
+    """``(where, rows)``: the rates table, or failing that every amount table."""
     section = _section(text, lambda t: t.lower() == "rates, bands and thresholds")
     rows = _table_rows(section) if section else []
-    where = "rates table"
-    if not rows:
-        where = "amount table"
-        rows = [
-            (h, c) for h, c in _table_rows(_body(text))
-            if any(AMOUNT_COLUMN_RE.search(col) for col in h)
-        ]
-    if not rows:
+    if rows:
+        return "rates table", rows
+    return "amount table", [
+        (h, c) for h, c in _table_rows(_body(text))
+        if any(AMOUNT_COLUMN_RE.search(col) for col in h)
+    ]
+
+
+def _row_status(header, cells, previous):
+    """``linked``, ``unverified`` or ``missing`` for one row.
+
+    A cell that opens with the word ``unverified`` marks the row, and the mark
+    beats a URL. ``same`` takes the status of the row above in the same table,
+    so it can never lift a row above what it inherits; with nothing above it
+    the row is missing."""
+    if any(UNVERIFIED_MARK_RE.match(cell) for cell in cells):
+        return "unverified"
+    if URL_RE.search(" | ".join(cells)):
+        return "linked"
+    if cells and cells[-1].lower().startswith("same") and previous and previous[0] is header:
+        return previous[1]
+    return "missing"
+
+
+def rates_row_counts(text):
+    """Row counts for the rates table: total, linked, unverified, missing, and
+    ``linked_pct`` and ``unverified_pct`` (of total; ``None`` with no rows)."""
+    where, rows = _rates_rows(text)
+    counts = {"linked": 0, "unverified": 0, "missing": 0}
+    previous = None
+    for header, cells in rows:
+        status = _row_status(header, cells, previous)
+        counts[status] += 1
+        previous = (header, status)
+    total = len(rows)
+    return {
+        "where": where,
+        "total": total,
+        "linked_pct": round(100 * counts["linked"] / total, 1) if total else None,
+        "unverified_pct": round(100 * counts["unverified"] / total, 1) if total else None,
+        **counts,
+    }
+
+
+def check_rates_rows_sourced(path, text, fm):
+    """(c) every row of the rates table is linked to an official URL (``same``
+    inherits the row above) or explicitly marked unverified. An unmarked row fails."""
+    c = rates_row_counts(text)
+    if not c["total"]:
         return ["no rates table"]
-    unsourced = 0
-    for _header, cells in rows:
-        line = " | ".join(cells)
-        if URL_RE.search(line):
-            continue
-        if cells and cells[-1].lower().startswith("same"):
-            continue
-        unsourced += 1
-    if unsourced:
-        return [f"{unsourced} of {len(rows)} {where} row(s) without a URL"]
+    if c["missing"]:
+        return [
+            f"{c['missing']} of {c['total']} {c['where']} row(s) without a URL or an unverified mark "
+            f"({c['linked_pct']:g}% linked, {c['unverified_pct']:g}% unverified)"
+        ]
     return []
 
 

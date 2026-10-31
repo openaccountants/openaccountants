@@ -49,7 +49,7 @@ Every rate, threshold, deadline and penalty comes from the law itself (gazette o
 
 ### 2. The official URL sits on the rates row itself
 
-Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
+Every row of the rates table carries the URL of the official text it comes from. A row may say `same` to inherit the row above. A figure whose source could not be opened says `unverified` at the start of a cell: it counts as unverified, not linked, and a row with neither a URL nor that word fails the check. The Sources table at the end is not enough on its own: `search_rules` and partial fetches return rows without it, so a figure with no URL on its row reaches the model with no citation.
 
 - **Evidence:** year-boundary test: a skill that points at the law plus a live fetch answered 4 of 5; stored facts with no link, 0 of 5. Citations to an official source 76% with the skill against 20% without (4 Aug 2026). The section-demand read of 31 Oct 2026 (453 loads in 28 days, 6.4% with any section held back) showed `get_skill` almost always sends the Sources table, so the row URL is for the other read paths, not for `get_skill`.
 - **Check:** `check_rates_rows_sourced` (c).
