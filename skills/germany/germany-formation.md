@@ -1,7 +1,7 @@
 ---
 name: germany-formation
 description: Use this skill whenever asked about forming, incorporating, or registering a company in Germany. Trigger on phrases like "set up a company in Germany", "GmbH formation", "UG gründen", "Handelsregister", "German company formation", "register a business Germany", "Gesellschaft mit beschränkter Haftung", "Unternehmergesellschaft", "German notary", "Gewerbeanmeldung", or any question about starting a business entity in Germany. Covers entity types (GmbH, UG, AG, GbR, KG), registration process, capital requirements, costs, post-formation compliance, and bank account opening. ALWAYS read this skill before advising on German company formation.
-version: 1.1
+version: 1.2
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -29,7 +29,7 @@ Read Section 2 to pick the legal form, Section 3 for the steps in order, Section
 | --- | --- | --- |
 | Country | Germany (Federal Republic of Germany) | same |
 | Currency | Euro | same |
-| Company registrar | Handelsregister, kept by the local court (Amtsgericht) where the company has its seat. It has two divisions: A for sole merchants, OHG and KG, B for the AG, GmbH and other corporations (§ 3 HRV): https://www.gesetze-im-internet.de/hdlregvfg/__3.html The joint register portal of the federal states carries the commercial register and the other company registers: https://www.handelsregister.de/rp_web/welcome.xhtml |  |
+| Company registrar | Handelsregister, kept by the local court (Amtsgericht) where the company has its seat. It has two divisions: A for sole merchants, OHG and KG, B for the AG, GmbH and other corporations (§ 3 HRV): https://www.gesetze-im-internet.de/hdlregvfg/__3.html The joint register portal of the federal states carries the commercial, cooperative, partnership, civil-law partnership (Gesellschaftsregister) and association registers of all the states, and the register notices. Its structured data is a non-binding service: https://www.handelsregister.de/rp_web/welcome.xhtml |  |
 | Key legislation | GmbH-Gesetz (GmbHG); Handelsgesetzbuch (HGB); Aktiengesetz (AktG). For partnerships also §§ 705 and following of the Civil Code (BGB) and the PartGG | https://www.gesetze-im-internet.de/gmbhg/__5.html |
 | Typical formation time | Legacy estimate: 3 to 6 weeks from the notary to the register entry. No official page states a duration |  |
 | Taxes on a GmbH, UG or AG | Corporate income tax, solidarity surcharge and trade tax. The three tables below give the parts. No official page prints one combined rate, so this skill does not state one | https://www.existenzgruendungsportal.de/_noch_neu_einordnen/DE/Gruendung-vorbereiten/Rechtsformen/Gesellschaft-mit-beschraenkter-Haftung-GmbH/inhalt.html |
@@ -340,7 +340,7 @@ The legacy version gave euro ranges for chamber contributions, accident insuranc
 | IHK membership | Set by each chamber's own rules (§ 3 IHKG). No federal amount. See Step 8 |
 | Berufsgenossenschaft | Worked out by the accident insurer after the end of each business year. No federal amount. See https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp |
 | Steuerberater | Agreed with the adviser. No official figure |
-| Disclosure of annual accounts | Sent electronically to the company register (§ 325 HGB, see Section 6). The register's own page explains where and how to file: https://www.unternehmensregister.de/ureg/ No fee was found on the pages read |
+| Disclosure of annual accounts | Sent electronically to the company register (§ 325 HGB, see Section 6). The register's home page sends publication and deposit orders to its publication platform, where the help on placing an order sits: https://www.unternehmensregister.de/de No fee was found on the pages read |
 | Handelsregister changes | See the table below |
 
 **Court fees for later entries in the commercial register, division B (GmbH, UG, AG)**
@@ -570,7 +570,7 @@ expected:
 - ELSTER, questionnaire for tax registration of a corporation: https://www.elster.de/eportal/formulare-leistungen/alleformulare/fsekapg (read 2026-10-31)
 - BZSt, VAT identification number and business identification number: https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Umsatzsteuer-Identifikationsnummer/Vergabe_USt_IdNr/vergabe_ust_idnr_node.html and https://www.bzst.de/DE/Unternehmen/Identifikationsnummern/Wirtschafts-Identifikationsnummer/wirtschaftsidentifikationsnummer_node.html (read 2026-10-31)
 - Federal Office of Justice, fine procedure for undisclosed accounts: https://www.bundesjustizamt.de/DE/Themen/OrdnungsgeldVollstreckung/Jahresabschluesse/Offenlegung/Verfahren/Verfahren_node.html (read 2026-10-31)
-- Register portal of the federal states and the company register: https://www.handelsregister.de/rp_web/welcome.xhtml and https://www.unternehmensregister.de/ureg/ (read 2026-10-31)
+- Register portal of the federal states and the company register: https://www.handelsregister.de/rp_web/welcome.xhtml and https://www.unternehmensregister.de/de (read 2026-10-31)
 - German Social Accident Insurance (DGUV), page for businesses: https://www.dguv.de/de/ihr_partner/unternehmen/index.jsp (read 2026-10-31)
 - Finance ministry, questions and answers on the compulsory e-invoice (Stand März 2026): https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html (read 2026-10-31)
 - Finance ministry, instructions for the 2026 EÜR form, letter of 1 September 2026: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2
