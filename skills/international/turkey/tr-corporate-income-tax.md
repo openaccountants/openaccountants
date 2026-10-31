@@ -22,7 +22,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 - **Full liability** (art. 3(1)): an entity whose legal seat or business seat is in Türkiye is taxed on its worldwide income.
 - **Limited liability** (art. 3(2)-(3)): an entity with neither its legal seat nor its business seat in Türkiye is taxed only on Turkish income, mainly business profits made through a Turkish workplace or permanent representative, and listed Turkish-source income.
 - **Global minimum tax** (ek art. 1): group entities of multinational groups whose ultimate parent's consolidated revenue exceeded EUR 750 million in at least two of the four previous accounting periods are also subject to the domestic and global top-up taxes.
-- **Out of this skill:** transfer pricing rules and documentation (KVK art. 13); CFC rules in detail (art. 7); free-zone, technology-zone and investment-incentive regimes; individuals and partnerships taxed as individuals (see [turkey-pit](turkey-pit.md)).
+- **Out of this skill:** transfer pricing rules and documentation (KVK art. 13); CFC rules in detail (art. 7); free-zone, technology-zone and investment-incentive regimes; the 2026-2027 voluntary disclosure of foreign and off-book assets (provisional art. 19, Law 7582); individuals and partnerships taxed as individuals (see [turkey-pit](turkey-pit.md)).
 
 ## Rates, bands and thresholds
 
@@ -31,7 +31,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 | Corporate tax rate | 25% | 2026 | KVK art. 32(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
 | Banks, financial leasing, factoring and financing companies, payment and e-money institutions, authorised FX dealers, asset management companies, capital market institutions, insurance, reinsurance and pension companies, and build-operate-transfer and public-private partnership project companies | 30% | 2026 | KVK art. 32(1) |
 | Profits made only from exports | 5 points lower (20%) | 2026 | KVK art. 32(7) |
-| Profits made only from manufacturing by companies with an industry registry certificate | 1 point lower (24%) in 2026 | 2026 | KVK art. 32(8) before Law 7582, archived text https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf |
+| Profits made only from manufacturing by companies with an industry registry certificate | 1 point lower (24%) in 2026 | 2026 | KVK art. 32(8) before Law 7582, archived text https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf; GİB, Kurumlar vergisi oranları, 2026 ve 2025 hesap dönemi, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkurumlar-vergisi-oranlari.pdf |
 | Manufacturing and agricultural production profits, from 2027 periods | 12.5% | 2027 | KVK art. 32(8) as amended by Law 7582 art. 8; in force for 2027 and later periods |
 | Companies first listed on Borsa İstanbul with at least 20% floated | 2 points lower for five periods | 2026 | KVK art. 32(6) |
 | Domestic minimum corporate tax | Tax may not be less than 10% of profit before deductions and exemptions | 2026 | KVK art. 32/C(1) |
@@ -43,6 +43,11 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 | Loss carry-forward | 5 years | 2026 | KVK art. 9(1)(a) |
 | Thin capitalisation | Shareholder and related-party debt above 3 times equity | 2026 | KVK art. 12(1) |
 | Withholding on dividends paid to non-residents | 15% | 2026 | KVK art. 30(3); Presidential Decision 9286 art. 3, https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf |
+| Withholding on professional fees paid to non-resident companies | 20% (5% for oil exploration) | 2026 | KVK art. 30(1)(b); Decision 2009/14593; GİB table of art. 30 rates, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf |
+| Withholding on rent paid to non-resident companies | 20% (1% under financial leasing) | 2026 | KVK art. 30(1)(c); Decision 2009/14593; GİB table of art. 30 rates |
+| Withholding on royalties and payments for intangible rights to non-resident companies | 20% | 2026 | KVK art. 30(2); GİB table of art. 30 rates |
+| Withholding on loan interest to non-resident companies | 0% on loans from foreign states, international bodies and foreign banks or lenders that lend to the public; 5% on deferred-payment charges for goods; 10% on other loans | 2026 | KVK art. 30(1)(ç); Decision 2009/14593; GİB table of art. 30 rates |
+| Withholding on construction work of more than one year by non-residents | 5% (1% for rail systems, shipbuilding and nuclear plants) | 2026 | KVK art. 30(1)(a); GİB table of art. 30 rates |
 | Foreign participation exemption, minimum holding | 10% for at least one year, foreign tax burden at least 15% | 2026 | KVK art. 5(1)(b) |
 | Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf |
 
@@ -54,7 +59,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 
 **Thin capitalisation** (art. 12). Debt from shareholders or persons related to them that exceeds three times equity at any time in the period is thin capital. Borrowings from a related bank or similar credit institution acting in its main business count at 50%. Interest and exchange losses on thin capital are not deductible (art. 11(1)(b)) and are treated as a distributed dividend (or, for a branch, a remittance to head office) on the last day of the period (art. 12).
 
-**Exemptions.** Dividends from another fully liable Turkish company are exempt (art. 5(1)(a)). Dividends from a foreign joint-stock or limited company are exempt if the Turkish company holds at least 10% of its paid-in capital for at least a year, the subsidiary bears a total tax of at least 15% (at least the Turkish rate for finance, insurance and securities businesses), and the dividend is brought to Türkiye by the return deadline (art. 5(1)(b)).
+**Exemptions.** Dividends from another fully liable Turkish company are exempt (art. 5(1)(a)). A Turkish company paying a dividend to a fully liable Turkish company withholds nothing: the 15% dividend withholding in GVK art. 94(6)(b)(i) applies only to distributions to resident individuals, non-taxpayers and exempt persons (GİB table of art. 94 rates). Dividends from a foreign joint-stock or limited company are exempt if the Turkish company holds at least 10% of its paid-in capital for at least a year, the subsidiary bears a total tax of at least 15% (at least the Turkish rate for finance, insurance and securities businesses), and the dividend is brought to Türkiye by the return deadline (art. 5(1)(b)).
 
 **Losses** (art. 9). Tax losses from earlier years are deducted for up to five years, each year shown separately on the return. Losses taken over in a merger or full demerger are deductible only up to the equity taken over, and only if the last five years' returns were filed on time and the business carries on for at least five years. Foreign losses need an audited report from the foreign country.
 
@@ -66,8 +71,10 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 
 ## Deadlines and filing
 
-- **Annual return.** KVK art. 14(3) says the return is filed from the 1st to the 25th of the fourth month after the period ends. GİB's current table says from the first to the last day of that month, 23:59. For a calendar year, that is April 2027 for 2026. The tax is paid by the end of the month the return is filed (art. 21; GİB table).
-- **Provisional tax.** Paid quarterly at the corporate tax rate on cumulative quarterly profit, under the GVK rules (art. 32(2); GVK mükerrer art. 120). GİB's table gives the 17th of the second month after each quarter for filing and payment: 17 May, 17 August, 17 November and 17 February. The minimum tax applies to provisional periods too.
+- **Annual return.** The return is filed from the 1st to the 25th of the fourth month after the period ends (KVK art. 14(3)): for a calendar year, by 25 April 2027 for 2026. The tax is paid by the end of the month the return is filed (art. 21(1)).
+  - Note: GİB's current table says from the first to the last day of the fourth month, 23:59, so 30 April 2027, with payment in the same period. GİB may move the last day of a filing or payment period by up to one month from the statutory date (VUK mükerrer art. 28). Source: GİB, Beyanname verme ve ödeme süreleri, read 2026-10-31.
+- **Provisional tax.** Paid quarterly at the corporate tax rate on cumulative quarterly profit, under the GVK rules (art. 32(2); GVK mükerrer art. 120): declared by the 14th and paid by the 17th of the second month after each quarter (14 and 17 May, August, November and February). The minimum tax applies to provisional periods too.
+  - Note: GİB's table gives the 17th for both filing and payment: 17 May, 17 August, 17 November and 17 February (VUK mükerrer art. 28). Source: GİB, Beyanname verme ve ödeme süreleri, read 2026-10-31.
 - **Domestic top-up tax return.** By the last day of the twelfth month after the period ends, paid in the same period (KVK ek art. 10; GİB table).
 - **Global top-up tax return and GloBE information return.** By the last day of the fifteenth month after the period ends; for the 2024 period, the eighteenth month (KVK ek art. 8, provisional art. 17(1)(b); GİB table).
 - **Leaving Türkiye.** Where the taxpayer leaves the country, the return is filed within the 15 days before it leaves (GİB table).
@@ -81,7 +88,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 
 ## Cross-border points
 
-- **Withholding on non-residents** (art. 30). Payers withhold corporate tax on Turkish construction profits spread over more than one year, professional fees, rental income, investment income other than dividends, and listed digital marketplace payments. The law rate is 15%; the President sets the actual rates by type of payment. Royalties and payments for the sale of intangible rights are also withheld. Dividends paid to non-resident companies are withheld at 15% (Decision 9286). Payments to companies in countries the President lists as harmful tax regimes are withheld at 30%.
+- **Withholding on non-residents** (art. 30). Payers withhold corporate tax on Turkish construction profits spread over more than one year, professional fees, rental income, investment income other than dividends, and listed digital marketplace payments. The law rate is 15%; the President sets the actual rates by type of payment. The 2026 rates in GİB's table (Decision 2009/14593 as amended) are in the rates table: 20% on professional fees, rent and royalties; 10% on most loan interest; 5% on long-term construction; 15% on payments for online advertising; 1% on payments by e-commerce intermediaries. Dividends paid to non-resident companies are withheld at 15% (Decision 9286). Payments to companies in countries the President lists as harmful tax regimes are withheld at 30% (art. 30(7)).
 - **Branch remittances.** A non-resident's Turkish branch withholds 15% on profit after tax transferred to head office (art. 30(6)).
 - **Foreign tax credit** (art. 33). Foreign corporate tax on foreign profits is credited up to the Turkish tax on those profits; unused credit can be carried for three periods. A Turkish company holding at least 25% of a foreign subsidiary can also credit the underlying foreign tax on dividends. Documents must be certified by the Turkish consulate.
 - **Treaties.** A tax treaty can lower Turkish withholding; treaty rates are not covered here.
@@ -90,7 +97,7 @@ Turkish corporate income tax is charged under the Kurumlar Vergisi Kanunu no. 55
 
 ### Example 1: Trading company, standard rate, 2026
 
-A Turkish limited company has a commercial profit of TRY 10,000,000 for 2026 and TRY 500,000 of non-deductible expenses. It has no exemptions or losses. Its taxable base is TRY 10,500,000 and corporate tax at 25% is TRY 2,625,000. The minimum tax is 10% of TRY 10,500,000, TRY 1,050,000, so the normal tax applies. It paid TRY 2,000,000 of provisional tax during the year, so TRY 625,000 is due with the return in April 2027.
+A Turkish limited company has a commercial profit of TRY 10,000,000 for 2026 and TRY 500,000 of non-deductible expenses. It has no exemptions or losses. Its taxable base is TRY 10,500,000 and corporate tax at 25% is TRY 2,625,000. The minimum tax is 10% of TRY 10,500,000, TRY 1,050,000, so the normal tax applies. It paid TRY 2,000,000 of provisional tax during the year, so TRY 625,000 is due with the return, by 25 April 2027 under the law (GİB's table allows filing until 30 April) and paid by 30 April 2027.
 
 ```oa-check
 name: Limited company, base TRY 10.5 million at 25% (2026)
@@ -149,14 +156,17 @@ expected:
 |---|---|---|
 | Kurumlar Vergisi Kanunu no. 5520, consolidated (to Law 7590): arts. 1, 3, 5, 6, 9, 11, 12, 14, 16, 21, 30, 32, 32/C, 33, ek 1, ek 6, ek 8, ek 10, provisional art. 17, amendment table | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
 | KVK, archived consolidated text of 6 October 2024 (art. 32(8) before Law 7582) | https://web.archive.org/web/20241006151859/https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5520.pdf | 2026-10-31 |
-| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
+| Vergi Usul Kanunu no. 213, consolidated: provisional art. 37 (inflation accounting), arts. mükerrer 28, 344, 352, table 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
 | Gelir Vergisi Kanunu no. 193, mükerrer art. 120 (provisional tax) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.193.pdf | 2026-10-31 |
 | Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
 | Presidential Decision 9286 (dividend withholding 10% to 15%), Official Gazette 22 December 2024 no. 32760 | https://www.resmigazete.gov.tr/eskiler/2024/12/20241222-15.pdf | 2026-10-31 |
+| GİB, Gelir Vergisi Kanununun 94 üncü maddesinde yer alan kesinti oranları (dividend withholding scope) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fgelir-vergisi-kanununun-94uncu-maddesinde-yer-alan-kesinti-oranlari.pdf | 2026-10-31 |
+| GİB, Kurumlar vergisi oranları, 2026 ve 2025 hesap dönemi (25%, 30%, IPO 23%, export 20%, manufacturing 24%) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkurumlar-vergisi-oranlari.pdf | 2026-10-31 |
+| GİB, Kurumlar vergisi tevkifat oranları (KVK art. 30 and Decision 2009/14593 rates for non-resident companies) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkvk-nun-30-ve-gecici14-ile-gvk-nun-gecici-67inci-maddeleri-uyarinca-dar-mukellef.pdf | 2026-10-31 |
 | GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
 | Yerel ve Küresel Asgari Tamamlayıcı Kurumlar Vergisi Uygulama Genel Tebliği, Official Gazette 26 December 2025 no. 33119 (scope and definitions only) | https://www.resmigazete.gov.tr/eskiler/2025/12/20251226-9.pdf | 2026-10-31 |
 
-Not yet confirmed: withholding rates set by Decision 2009/14593 for interest, royalties, fees and rent paid to non-residents (the old version gave 10% interest and 20% royalties from a Big Four site); the list of harmful-tax countries under art. 30(7); withholding on payments to residents under art. 15 and Decision 2009/14594 (other than dividends); the share of financing costs disallowed under art. 11(1)(i) (set by Presidential decision, not read) and art. 11(1)(j); the reduced rate for investment incentive certificates (art. 32/A) and contribution rates; the property and share sale exemption (art. 5(1)(e)); the art. 10 deductions (R&D, venture capital, cash capital increase); the CFC rule (art. 7) in detail; transfer pricing (art. 13), a separate domain; Pillar Two computation detail from the 26 December 2025 communiqué; whether the 30% rate list changed for 2026 beyond Law 7524; the Law 7412 deduction referred to in art. 32/C(2)(d).
+Not yet confirmed: whether the President has published any list of harmful-tax countries under art. 30(7) (none was found); withholding on payments to residents under art. 15 and Decision 2009/14594 (other than dividends); the share of financing costs disallowed under art. 11(1)(i) (set by Presidential decision, not read) and art. 11(1)(j); the reduced rate for investment incentive certificates (art. 32/A) and contribution rates; the property and share sale exemption (art. 5(1)(e)); the art. 10 deductions (R&D, venture capital, cash capital increase); the CFC rule (art. 7) in detail; transfer pricing (art. 13), a separate domain; Pillar Two computation detail from the 26 December 2025 communiqué; whether the 30% rate list changed for 2026 beyond Law 7524; the Law 7412 deduction referred to in art. 32/C(2)(d); the new art. 10(1)(i) and (j) deductions for foreign trading and qualified service centres (Law 7582); the text of the GİB circular behind the end-of-month return date.
 <!-- openaccountants-cta-block -->
 
 ---
