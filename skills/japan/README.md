@@ -31,7 +31,6 @@ Tax years in this pack: 16 on 2025.
 - japan-financial-statements
 - japan-formation
 - japan-tax-optimization
-- jp-bookkeeping
 - jp-estimated-tax
 - jp-etax-filing
 - jp-incorporation
