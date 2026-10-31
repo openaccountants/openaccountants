@@ -1,10 +1,10 @@
 ---
 name: new-zealand-crypto-tax
 description: Use this skill whenever asked about New Zealand cryptocurrency or cryptoasset taxation. Trigger on phrases like "crypto tax New Zealand", "crypto tax NZ", "Bitcoin NZ tax", "IRD crypto", "cryptoassets NZ", "cryptocurrency gains NZ", "crypto income NZ", "staking NZ", "mining income NZ", "NFT tax NZ", "DeFi NZ tax", "IR3 crypto", "purpose of disposal crypto", "intention test crypto NZ", "GST crypto NZ", or any question about the income tax or GST treatment of cryptocurrency, tokens, or digital assets for New Zealand tax residents or NZ-source crypto income. Covers IRD cryptoasset guidance, the purpose-of-disposal test under s CB 4, GST exemption, cost basis, DeFi/staking/mining, and IR3 reporting. ALWAYS read this skill before touching any New Zealand crypto work.
-version: 1.0
+version: 1.1
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-09-22
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -181,7 +181,7 @@ The legacy Guide printed the current bands for this year. Wrong: the page in 3.1
 | Source | all figures below | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir200---ir299/ir295/ir295.pdf |
 | Standard rate, for example on NFT sales to New Zealand buyers | 15% | "The current rate is 15%." |
 
-- **GST amendment.** The definitions of "goods" and "services" in s 2(1) GST Act exclude cryptocurrency, retrospectively from 1 January 2009 (Tax Information Bulletin Vol 34 No 5). The legacy Guide named the wrong amending Act (the 2024-25 rates Act). See `new-zealand-gst` and `nz-gst-return`.
+- **GST amendment.** The definitions of "goods" and "services" in s 2(1) GST Act exclude cryptocurrency, retrospectively from 1 January 2009 (Tax Information Bulletin Vol 34 No 5). The legacy Guide named the wrong amending Act (the 2024-25 rates Act). See `nz-gst-return` and `nz-gst-return`.
 
 ## Section 4: Cost Basis Methods
 
@@ -421,6 +421,21 @@ Rate:      added to salary; each dollar taxed at its band rate (3.1)
 Return:    "other income" box of the IR3, due 7 July 2027
 ~~~
 
+With illustrative amounts: salary NZD 70,000 and a crypto profit of NZD 12,000. The first NZD 8,100 of profit is in the 30% band, the rest in the 33% band.
+
+```oa-check
+name: Crypto profit on top of salary, 2027 income year
+inputs:
+  salary: 70000
+  profit: 12000
+steps:
+  - in_30: min(salary + profit, 78100) - salary
+  - in_33: profit - in_30
+  - tax: in_30 * 0.30 + in_33 * 0.33
+expected:
+  tax: 3717.00
+```
+
 ### Example 2: Staking Rewards with Non-Disposal Purpose on Underlying
 
 A resident bought a staking coin in May 2026 after forecasting staking income against sale gains, and sold some rewards in February 2027.
@@ -431,6 +446,22 @@ Rewards sold:     gain = proceeds less value taxed on receipt
 Original coins:   not sold. If sold later, the client may argue a passive
                   income purpose ("Selina"); the onus is on the client.
 ~~~
+
+With illustrative amounts: rewards worth NZD 1,000 when received, later sold for NZD 1,300, in the 33% band. Income is NZD 1,000 plus a NZD 300 gain.
+
+```oa-check
+name: Staking rewards taxed on receipt and on sale
+inputs:
+  received: 1000
+  proceeds: 1300
+  rate: 0.33
+steps:
+  - gain: proceeds - received
+  - tax: (received + gain) * rate
+expected:
+  gain: 300.00
+  tax: 429.00
+```
 
 ### Example 3: Long-Term Holder (legacy said NOT Taxable)
 
@@ -496,22 +527,24 @@ Refer:    only clear and compelling evidence could support a nil position.
 
 ## Sources
 
-- [Cryptoassets] https://www.ird.govt.nz/cryptoassets
-- [Profit-making scheme] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme
-- [Trading] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading
-- [Mining] https://www.ird.govt.nz/cryptoassets/individual/mining
-- [Airdrops and forks] https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks
-- [New residents] https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning
-- [Taxing] https://www.ird.govt.nz/cryptoassets/taxing
-- [Records] https://www.ird.govt.nz/cryptoassets/taxing/record-keeping
-- [NFTs] https://www.ird.govt.nz/cryptoassets/non-fungible-tokens
-- [CARF] https://www.ird.govt.nz/international-tax/exchange-of-information/crypto-asset-reporting-framework/crypto-asset-reporting-framework-overview
-- [IR3] https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3
+- [Cryptoassets] https://www.ird.govt.nz/cryptoassets (read 2026-10-31)
+- [Profit-making scheme] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/profit-making-scheme (read 2026-10-31)
+- [Trading] https://www.ird.govt.nz/cryptoassets/individual/buying-selling/trading (read 2026-10-31)
+- [Mining] https://www.ird.govt.nz/cryptoassets/individual/mining (read 2026-10-31)
+- [Airdrops and forks] https://www.ird.govt.nz/cryptoassets/individual/airdrops-and-hard-forks (read 2026-10-31)
+- [New residents] https://www.ird.govt.nz/cryptoassets/individual/tax-residence/new-returning (read 2026-10-31)
+- [Taxing] https://www.ird.govt.nz/cryptoassets/taxing (read 2026-10-31)
+- [Records] https://www.ird.govt.nz/cryptoassets/taxing/record-keeping (read 2026-10-31)
+- [NFTs] https://www.ird.govt.nz/cryptoassets/non-fungible-tokens (read 2026-10-31)
+- [CARF] https://www.ird.govt.nz/international-tax/exchange-of-information/crypto-asset-reporting-framework/crypto-asset-reporting-framework-overview (read 2026-10-31)
+- [IR3] https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3 (read 2026-10-31)
 - Linked in the method steps: [Buying and selling], [Acquiring to sell], [Tax residence], [Calculating income], [Crypto and GST], [Declare], QB 21/06
 - Rate, GST, IR3 and provisional tax pages: linked in their tables
-- Technical decision summary 25/23: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051
-- IRRUIP18: https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18
-- Tax Information Bulletin Vol 34 No 5: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927
+- Technical decision summary 25/23: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tds/2025/tds-25-23.pdf?modified=20251006020051 (read 2026-10-31)
+- IRRUIP18: https://www.taxtechnical.ird.govt.nz/consultations/2026/irruip18 (read 2026-10-31)
+- Tax Information Bulletin Vol 34 No 5: https://www.taxtechnical.ird.govt.nz/-/media/project/ir/tt/pdfs/tib/volume-34---2022/tib-vol-34-no5.pdf?modified=20220803034927&modified=20220803034927 (read 2026-10-31)
+
+Not yet confirmed: none beyond the points this skill refers out.
 
 ## Disclaimer
 

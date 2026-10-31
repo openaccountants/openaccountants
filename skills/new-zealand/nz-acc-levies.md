@@ -1,10 +1,10 @@
 ---
 name: nz-acc-levies
 description: Use this skill whenever asked about New Zealand ACC levies for self-employed individuals. Trigger on phrases like "ACC levy", "earner levy", "work levy", "CoverPlus", "CoverPlus Extra", "accident compensation", "ACC invoice", "classification unit", or any question about ACC obligations for sole traders in New Zealand. Covers earner levy, work levy by classification unit (CU), CoverPlus/CoverPlus Extra, maximum liable earnings, and payment schedules. ALWAYS read this skill before touching any NZ ACC work.
-version: 2.0
+version: 2.1
 jurisdiction: NZ
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -21,7 +21,7 @@ Figures are for the levy year 1 April 2026 to 31 March 2027 (tax year 2026-27; I
 
 What this skill can and cannot source. Inland Revenue (IRD) collects the Earners' levy through PAYE and passes income details to ACC, so IRD publishes the Earners' levy rate, the maximum and the self-employed minimum. ACC itself publishes the Work levy rate for each classification unit, the Working Safer levy rate, and the CoverPlus and CoverPlus Extra terms. ACC's website is not a source this skill may cite, so any point that only ACC publishes is marked **check**: confirm it on the client's ACC invoice or with ACC before relying on it. This skill prints no Work levy rate for any industry.
 
-Companion Skills: income tax on the business itself is in `nz-income-tax-ir3` (and `nz-provisional-tax`); GST registration and input tax are in `new-zealand-gst`.
+Companion Skills: income tax on the business itself is in `nz-income-tax-ir3` (and `nz-provisional-tax`); GST registration and input tax are in `nz-gst-return`.
 
 ## Scope
 
@@ -73,11 +73,11 @@ Source for the self-employed list: IRD, "I am coming to work or study in New Zea
 
 IRD prints this table under the words "These amounts include GST." The rate is a flat rate on each dollar of liable earnings up to the maximum. The maximum is a ceiling, not a cliff: earnings above it carry no levy, and earnings below it are not affected.
 
-| Levy year | Rate (includes GST) | Maximum liable earnings | Maximum levy payable | Use |
-| --- | --- | --- | --- | --- |
-| 1 April 2026 to 31 March 2027 | $1.75 per $100 (1.75%) | $156,641 | $2,741.22 | **This skill's year** |
-| 1 April 2025 to 31 March 2026 | $1.67 per $100 (1.67%) | $152,790 | $2,551.59 | Returns being filed now for 2025-26 |
-| 1 April 2027 to 31 March 2028 | $1.83 per $100 (1.83%) | $160,244 | $2,932.47 | Next year only. Never for 2026-27 |
+| Levy year | Rate (includes GST) | Maximum liable earnings | Maximum levy payable | Use | Source |
+| --- | --- | --- | --- | --- | --- |
+| 1 April 2026 to 31 March 2027 | $1.75 per $100 (1.75%) | $156,641 | $2,741.22 | **This skill's year** | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
+| 1 April 2025 to 31 March 2026 | $1.67 per $100 (1.67%) | $152,790 | $2,551.59 | Returns being filed now for 2025-26 | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
+| 1 April 2027 to 31 March 2028 | $1.83 per $100 (1.83%) | $160,244 | $2,932.47 | Next year only. Never for 2026-27 | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
 
 IRD announced on 11 March 2025 that "The ACC earners' levies have now been set for the 2025-26, 2026-27 and 2027-28 tax years" ([IRD news](https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set)).
 
@@ -93,14 +93,14 @@ IR3G 2026 (PDF page 61) explains the minimum for 2025-26 returns: "If you were i
 
 ### Earners' levy through PAYE, 2026-27 ([IR335 Employer's guide, September 2026](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf))
 
-| What | Tax year ending 31 March 2027 |
-| --- | --- |
-| Earners' levy rate, already inside PAYE | 1.75% |
-| Maximum earnings per weekly pay | $3,012 |
-| Maximum earnings per fortnightly pay | $6,024 |
-| Maximum earnings per 4-weekly pay | $12,048 |
-| Maximum earnings per monthly pay | $13,053 |
-| Non-notified rate (ND tax code), includes the earners' levy | 46.75% |
+| What | Tax year ending 31 March 2027 | Source |
+| --- | --- | --- |
+| Earners' levy rate, already inside PAYE | 1.75% | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Maximum earnings per weekly pay | $3,012 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Maximum earnings per fortnightly pay | $6,024 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Maximum earnings per 4-weekly pay | $12,048 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Maximum earnings per monthly pay | $13,053 | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Non-notified rate (ND tax code), includes the earners' levy | 46.75% | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
 
 IR335 page 18: the maximum does not apply to PAYE on regular secondary income, casual agricultural employee payments, election day workers' earnings, or earnings where the non-notified rate is used.
 
@@ -112,17 +112,17 @@ No figure. ACC sets the Work levy rate for each classification unit and publishe
 
 ### Which payments carry the Earners' levy through PAYE ([IR335 page 18](https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf))
 
-| Deduct the earners' levy from | Do not deduct the earners' levy from |
-| --- | --- |
-| Salary and wages | Schedular payments |
-| Overtime pay | Retirement payments |
-| Backpay and holiday pay | Redundancy payments |
-| Long-service leave pay | Employee share scheme benefits |
-| Bonuses or gratuities | Jury fees |
-| Taxable allowances | Witness fees |
-| Shareholder-employee salaries with PAYE deductions | Taxable and non-taxable pensions |
-| Salaries to partners in a partnership | Tax-free allowances |
-| Salaries to working owners of a look-through company | Shareholder-employee salaries with no PAYE deductions (ACC invoices the company instead) |
+| Deduct the earners' levy from | Do not deduct the earners' levy from | Source |
+| --- | --- | --- |
+| Salary and wages | Schedular payments | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Overtime pay | Retirement payments | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Backpay and holiday pay | Redundancy payments | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Long-service leave pay | Employee share scheme benefits | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Bonuses or gratuities | Jury fees | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Taxable allowances | Witness fees | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Shareholder-employee salaries with PAYE deductions | Taxable and non-taxable pensions | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Salaries to partners in a partnership | Tax-free allowances | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
+| Salaries to working owners of a look-through company | Shareholder-employee salaries with no PAYE deductions (ACC invoices the company instead) | https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf |
 
 Read the two columns separately. The PDF's flattened text runs them together, which is how an earlier version of this skill came to say that LTC working owners' salaries are excluded. They are in the "deduct" column.
 
@@ -159,7 +159,7 @@ These are ACC products; no allowed official page describes them, so treat the po
 ### GST
 
 - The Earners' levy rates IRD prints include GST ("These amounts include GST"), and the payroll specification describes the rate as "incl. GST". Do not add GST on top.
-- How GST is shown on the Work levy and Working Safer levy lines of an ACC invoice, and whether a GST-registered person can claim that GST as input tax, is not stated on an allowed page: **check** before claiming. See `new-zealand-gst` for input tax generally.
+- How GST is shown on the Work levy and Working Safer levy lines of an ACC invoice, and whether a GST-registered person can claim that GST as input tax, is not stated on an allowed page: **check** before claiming. See `nz-gst-return` for input tax generally.
 
 ## Worked cases
 
@@ -173,12 +173,36 @@ A self-employed web designer has liable earnings of $90,000 for 2026-27, on Cove
 - Work levy and Working Safer levy: ask for the ACC invoice; the rate depends on the classification unit set from the BIC code.
 - Timing: ACC invoices from the IR3, and IRD says "ACC will begin invoicing self-employed levies from September" (IR3G 2026, PDF page 60).
 
+```oa-check
+name: Earners' levy below the maximum
+inputs:
+  earnings: 90000
+  rate: 0.0175
+  cap: 156641
+steps:
+  - levy: min(earnings, cap) * rate
+expected:
+  levy: 1575.00
+```
+
 ### Case 2: high earner above the maximum ([IRD rates](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates))
 
 A consultant has liable self-employed earnings of $200,000 for 2026-27.
 
 - Liable earnings are capped at $156,641, for both the Earners' levy and the Work levy.
 - Earners' levy: $156,641 x 1.75% = $2,741.22, the maximum levy IRD prints. Not the 2027-28 figures ($160,244 and 1.83%), and not the 2025-26 figures ($152,790 and 1.67%).
+
+```oa-check
+name: Earners' levy above the maximum
+inputs:
+  earnings: 200000
+  rate: 0.0175
+  cap: 156641
+steps:
+  - levy: min(earnings, cap) * rate
+expected:
+  levy: 2741.22
+```
 
 ### Case 3: self-employed with a loss ([IRD payroll specification](https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf))
 
@@ -220,7 +244,7 @@ An LTC owner works in the business, is paid a salary under a written employment 
 - Several entities or activities that may fall in different classification units: refer; the choice of BIC code for the main activity decides the rate.
 - Whether GST on an ACC invoice can be claimed as input tax: not confirmed on an allowed page; refer until confirmed.
 - Shareholder-employee refunds for pay from two or more companies over the maximum: ACC process; refer to ACC.
-- Income tax on the business: see `nz-income-tax-ir3` and `nz-provisional-tax`. GST generally: see `new-zealand-gst`.
+- Income tax on the business: see `nz-income-tax-ir3` and `nz-provisional-tax`. GST generally: see `nz-gst-return`.
 
 ## Filing and payment
 
@@ -236,11 +260,11 @@ An LTC owner works in the business, is paid a salary under a written employment 
 
 For the year 1 April 2025 to 31 March 2026 (IR3G 2026 and the [IRD rates table](https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates)):
 
-| What | 2025-26 |
-| --- | --- |
-| Earners' levy rate (includes GST) | 1.67% |
-| Maximum liable earnings | $152,790 |
-| Maximum levy payable | $2,551.59 |
+| What | 2025-26 | Source |
+| --- | --- | --- |
+| Earners' levy rate (includes GST) | 1.67% | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
+| Maximum liable earnings | $152,790 | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
+| Maximum levy payable | $2,551.59 | https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates |
 
 An employee amending the tax deducted on an IR3 works out the earners' levy with the IR3G worksheet: liable salary and wages, capped at $152,790, multiplied by 1.67%. Self-employed invoices are worked out from IR3 income, so an invoice issued from September 2026 may use 2025-26 income. Check which levy year and which rates each invoice line uses (**check** on the invoice).
 
@@ -259,16 +283,18 @@ An employee amending the tax deducted on an IR3 works out the earners' levy with
 
 ## Sources
 
-- IRD, ACC earners' levy rates: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates
-- IRD news, ACC earners' levies set (11 March 2025): https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set
-- IRD, Employer's guide IR335 (September 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf
-- IRD, Payroll calculations and business rules specification, 1 April 2026 to 31 March 2027: https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf
-- IRD, Individual income tax return guide IR3G 2026: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf
-- IRD, IR3B Schedule of business income (July 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3b/ir3b-2026.pdf
-- IRD, ACC levies for a look-through company: https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/look-through-companies/acc-levies-for-a-look-through-company
-- IRD, I am coming to work or study in New Zealand: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand
-- IRD, Updating a client's BIC code: https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code
-- IRD, Information sharing with ACC: https://www.ird.govt.nz/about-us/information-sharing/mous/acc
+- IRD, ACC earners' levy rates: https://www.ird.govt.nz/income-tax/income-tax-for-individuals/acc-clients-and-carers/acc-earners-levy-rates (read 2026-10-31)
+- IRD news, ACC earners' levies set (11 March 2025): https://www.ird.govt.nz/updates/news-folder/2025/acc-earners-levies-set (page returned 404 when tried on 2026-10-31; not read)
+- IRD, Employer's guide IR335 (September 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir300---ir399/ir335/ir335.pdf (read 2026-10-31)
+- IRD, Payroll calculations and business rules specification, 1 April 2026 to 31 March 2027: https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/software-providers/payroll-calculations-business-rules-specifications/payroll-calculations-and-business-rules-specification.pdf (read 2026-10-31)
+- IRD, Individual income tax return guide IR3G 2026: https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3g/ir3g-2026.pdf (read 2026-10-31)
+- IRD, IR3B Schedule of business income (July 2026): https://www.ird.govt.nz/-/media/project/ir/home/documents/forms-and-guides/ir1---ir99/ir3b/ir3b-2026.pdf (read 2026-10-31)
+- IRD, ACC levies for a look-through company: https://www.ird.govt.nz/income-tax/income-tax-for-businesses-and-organisations/income-tax-for-companies/look-through-companies/acc-levies-for-a-look-through-company (read 2026-10-31)
+- IRD, I am coming to work or study in New Zealand: https://www.ird.govt.nz/situations/work-or-study-in-new-zealand (read 2026-10-31)
+- IRD, Updating a client's BIC code: https://www.ird.govt.nz/roles/tax-agents/updating-client-bic-code (read 2026-10-31)
+- IRD, Information sharing with ACC: https://www.ird.govt.nz/about-us/information-sharing/mous/acc (read 2026-10-31)
+
+Not yet confirmed: the 11 March 2025 IRD news page returned 404 on 2026-10-31, so its quotation is not re-read; the rates it announced match the IRD rates table read that day. ACC-only points marked **check** in the text.
 
 This skill is general information, not tax advice. Confirm ACC-only points with ACC and have a New Zealand chartered accountant review the position before acting.
 
