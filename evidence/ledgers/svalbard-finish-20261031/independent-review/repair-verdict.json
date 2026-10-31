@@ -1,0 +1,21 @@
+{
+  "verdict": "pass_for_staged_delta_with_explicit_limits",
+  "candidate_commit": "d89d6877bea2fdf0dd9d8cbe11dd942bae425dc6",
+  "checked_utc": "2026-10-31T19:54:52.698252+00:00",
+  "initial_findings": {
+    "F1": "closed",
+    "F2": "closed"
+  },
+  "legal_rows_reviewed_initially": 47,
+  "legal_rows_unchanged": 47,
+  "examples_recomputed": 4,
+  "new_findings": [],
+  "country_complete": false,
+  "filing_ready": false,
+  "accountant_attestation": false,
+  "scope": "two new levy Guides plus their unchanged reviewed README delta; existing partial gaps remain",
+  "guide_sha256": {
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": "5557dc93766583516b1f7b86aef349a9e36d172dff2750f1d3a43b3730d2c8a6",
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": "abb4372e13d8d4ede15d4896efce5cfdefc5553f8ad6a3d6fbdac7da873f16e4"
+  }
+}
