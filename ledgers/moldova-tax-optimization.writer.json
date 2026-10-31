@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; remainingprocedure/form/case-specificgaps andwhole-countryreviewpending",
   "slug": "moldova-tax-optimization",
   "Guide_path": "skills/international/moldova/moldova-tax-optimization.md",
-  "Guide_sha256": "4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa",
+  "Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
   "rows": [
     {
       "id": "MD-PLAN-001",
@@ -2756,7 +2756,7 @@
   ],
   "baseline_old_units": 30,
   "old_bytes": 5942,
-  "new_bytes": 34557,
+  "new_bytes": 34598,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Unsupported20–50%savingsrange andblanketbestentity/salarysubstitute claims notadopted;fulloriginaltext/hash preserved andactualconditionalcomparison supplied.",

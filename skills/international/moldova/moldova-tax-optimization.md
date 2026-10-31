@@ -1,7 +1,7 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited writer draft corrects unsupported savings and blanket prohibitions, preserves predecessor subjects and states remaining form, procedure and case-specific gaps. Independent whole-country review and accountant attestation remain pending."
-version: 0.4
+version: 0.5
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.4
+# Moldova tax planning and regime comparison, 2026 v0.5
 
 ## Who this applies to
 
@@ -199,7 +199,16 @@ expected:
 
 ## Ask the client first
 
-Obtain legal form/registrations and regime dates; actual products/services and CAEM/CSPM restrictions; park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence; membership/verification costs; VAT status and prior-year supply mix; consultancy/ownership/SME tests and election policy; actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash; owners' residence/type and profit-origin years; paid work, mandates and independent-service counterparty/control facts; foreign work/management and associated transactions; accepted filings and outstanding debt. Model the legally available choices using those numbers before presenting a saving.
+Obtain these six groups of facts:
+
+- legal form/registrations and regime dates; actual products/services and CAEM/CSPM restrictions.
+- park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence; membership/verification costs.
+- VAT status and prior-year supply mix; consultancy/ownership/SME tests and election policy.
+- actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash; owners' residence/type and profit-origin years.
+- paid work, mandates and independent-service counterparty/control facts; foreign work/management and associated transactions.
+- accepted filings and outstanding debt.
+
+Model the legally available choices using those numbers before presenting a saving.
 
 ## Sources
 
