@@ -393,3 +393,7 @@ Original 10653 bytes;draft 62173 bytes;more than25% shorter: False.
 - All three predecessor decision fixtures and prior legal-person treaty-evidence correction retained, with current-law scope expanded.
 
 Two current recomputing examples retained with hashes. Independent legal-assumption/source/old-topic review and any lost-content-restored count remain pending. Treaty inventories are discovery sources only; no rate, protocol-effect or MLI claim adopted from their listings.
+
+## Subsequently merged PR #793
+
+All 97 incoming units and the full file are retained in [the complete predecessor table](md-country-evidence/public-pr793-predecessor-reconciliation.md). This does not certify independent review or comprehensive coverage of the expanded draft.

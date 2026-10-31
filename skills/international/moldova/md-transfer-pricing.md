@@ -1,7 +1,7 @@
 ---
 name: md-transfer-pricing
 description: Use this Guide for Moldova transfer-pricing affiliation, local and cross-border scope, the aggregate information threshold, statutory exclusions, method selection, comparability intervals and adjustments for 2026. It explains requested master and local files, electronic information filing, advance pricing agreements, corresponding adjustments and period-specific sanctions. Trigger on Moldova TP, affiliated transactions, the MDL20 million threshold, transfer-pricing information, an SFS file request or an APA. Reconcile actual transaction values and evidence rather than using net balances or an expired automatic file tier. Current source and implementation gaps remain explicit; this is a writer draft awaiting independent country-pack review.
-version: 0.5
+version: 0.6
 jurisdiction: MD
 category: transfer-pricing
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova transfer pricing v0.5
+# Moldova transfer pricing v0.6
 
 2026 writer draft, primary law read 30 October 2026; the current information annex and APA application model read 31 October 2026. The24October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use.
 
@@ -228,6 +228,8 @@ Map the offence and period, rather than multiplying one late-return fine by ever
 |False file causing understatement/evasion|MDL150,000–200,000; special commencement below|260(11)|
 
 Figures: [Code260(7)–(12)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro). **Law214/2024 artXVII(2)** applies260(8),(11) in SFS audits of fiscal periods beginning with2028; do not charge those two penalties as2026-period sanctions merely because their amounts appear in the Code. This does not postpone the ordinary late/non-submission duties or the underlying tax/interest. The separate2024 file transition is in Law187 artXXVI(3). [Law214 official text](https://www.legis.md/cautare/getResults?doc_id=144601&lang=ro), [Law187](https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro).
+
+For the specific **article228(2^1) self-correction route**, the late charge is capped at the corresponding additional tax obligation. The paragraph covers discovery of errors/omissions followed by a corrected return, and the stated no-return-duty case where erroneous calculation/payment creates an additional obligation. Establish those conditions before applying the cap; it is not a universal cap on every audit debt, sanction or late charge. [Code art.228(2^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); exact source context is retained in ledger rowMD-TP-088.
 
 Additional income/expense adjustments can change the relevant income/single tax. General understatement/evasion and self-correction provisions are in261(4)–(5)/188; establish the actual offence and interaction before stacking sanctions. Art228 charges late-payment interest from after due date through payment using its prior-November BNM base-rate-plus-five-points annual formula; case-specific relief and any applicable special single-tax rate must be established. An objection does not automatically suspend collection under252(2). [Code228,252,261,188](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 

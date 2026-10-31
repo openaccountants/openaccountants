@@ -1,6 +1,6 @@
 ---
 jurisdiction: MD
-version: "2.16"
+version: "2.17"
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -60,6 +60,8 @@ Current IRM19/CAS18-AN reporting methods now use the actual Order126 attachments
 The social draft now supplies the [current CNAS refund procedure and actual application](moldova-social-contributions.md#cnas-refund-application-and-settlement), using the eight-page agency consolidation linked in its30October2026update. Arrears/returns, case-specific documents,30-day examination versus Treasury execution, and taxpayer application versus institutional decision/register are distinct. Separate amendment commencement, CNAM refunds and other named ordinary gaps remain open; no complete-coverage or independent-review claim is made.
 
 The social draft also supplies the [current CNAM fixed-medical-premium refund](moldova-social-contributions.md#cnam-fixed-medical-premium-refund-conditions-application-and-stages), reconciled to the actual10October2025amendment and current approved application. Strict paid-percentage benchmark, actual timely fixed payment, earlier proportional-day repeal and separate territorial/central/Treasury stages are explicit. Other named ordinary/correction/registration gaps and whole-country independent review remain open.
+
+PR #793 merged on31October2026. Its subsequently rewritten TP/XB Guides and README are preserved in the [complete predecessor reconciliation](../../../ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.md), with full incoming text and exact topic hashes. The deeper local methods, source limits, existing examples and all seven partial entries remain. Four open overlapping repair PRs (#1024/#1026/#1027/#1028) are recorded for coordination; this expansion still needs whole-country review and one agreed publication PR. The earlier merged batch does not establish review or completeness for these expanded drafts.
 
 ## Domains
 

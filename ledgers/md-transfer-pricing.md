@@ -2,7 +2,7 @@
 
 **Expanded2026 writer draft. Whole-country review, source/procedure gaps and accountant attestation remain open.**
 
-Guide SHA256: `b07a9c391a962ab2582a6a16cd2028afbb6d9cd6b6a6f66b8c087c4d0fea3720`. The JSON retains each short exact original-language quote, full context, URL, read date and source hash. Review the whole rule and its application, including linked conditions and the expressly retained source conflicts.
+Guide SHA256: `df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6`. The JSON retains each short exact original-language quote, full context, URL, read date and source hash. Review the whole rule and its application, including linked conditions and the expressly retained source conflicts.
 
 |ID|Rule/figure or exact source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
@@ -550,3 +550,7 @@ Read31October2026; writer source/field mapping, independent whole-country review
 | MD-TP-485 | Actual ITPARK-ORDER106-ENACTED order_header: ORDIN Nr. 106 din 10-10-2025 | Deadlines and filing: IT-park related-party adjustment return | [MFOrder106/2025 ITPARK-ORDER106-ENACTED-20261031; order_header](https://www.legis.md/cautare/getResults?doc_id=151376&lang=ro) | ORDIN Nr. 106 din 10-10-2025 | 2026-10-31 |
 | MD-TP-486 | Actual ITPARK-2024-SFS-DEADLINE deadline_paragraph: Potrivit art. XXVI alin. (4) din Legea nr. 187/2025, calculul și raportarea impozitului unic pentru aceste tranzacții se | Deadlines and filing: IT-park related-party adjustment return | [SFS notice15December2025 ITPARK-2024-SFS-DEADLINE-20261031; deadline_paragraph](https://www.sfs.md/ro/stiri/formularul-darii-de-seama-privind-impozitul-unic-pentru-tranzactii-cu-persoane-afiliate-pentru-anul-2024-disponibil-online) | Potrivit art. XXVI alin. (4) din Legea nr. 187/2025, calculul și raportarea impozitului unic pentru aceste tranzacții se efectuează prin prezentarea dării de seamă | 2026-10-31 |
 | MD-TP-487 | Actual ITPARK-CODE129-DEADLINE deadline_paragraph: 8) Termen de stingere a obligaţiei fiscale – perioadă, stabilită conform legislaţiei fiscale, în care trebuie să fie exe | Deadlines and filing: IT-park related-party adjustment return | [FiscalCode129(8) ITPARK-CODE129-DEADLINE-20261031; deadline_paragraph](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) | 8) Termen de stingere a obligaţiei fiscale – perioadă, stabilită conform legislaţiei fiscale, în care trebuie să fie executată obligaţia fiscală, incluzând şi ultima | 2026-10-31 |
+
+## Subsequently merged PR #793
+
+All 105 incoming units and the full file are retained in [the complete predecessor table](md-country-evidence/public-pr793-predecessor-reconciliation.md). This does not certify independent review or comprehensive coverage of the expanded draft.

@@ -1,10 +1,10 @@
 ---
 name: no-vat-return
 description: "Use this skill for Norwegian VAT (merverdiavgift, MVA) for 2026: registration, rates, deductions and the VAT return (skattemelding for merverdiavgift). It covers the NOK 50,000 registration limit (NOK 140,000 for charities, NOK 3 million for sports tickets), pre-registration, the 25% standard rate and the 15%, 12% and 11.11% reduced rates, exempt and zero-rated supplies, input VAT and the blocked items (entertainment, serving, passenger cars, staff benefits), the NOK 10,000 bank-payment rule, two-monthly and annual periods and their deadlines, imports, remote services bought from abroad, VOEC for low-value goods, corrections, enforcement fines, additional tax and interest. Norway is in the EEA but not the EU: there are no intra-community supplies. Trigger on: MVA, mva-melding, merverdiavgift, Norwegian VAT, VAT return Norway, VOEC, reverse charge Norway, import VAT Norway. Out of scope: no-income-tax, no-corporate-income-tax, no-employer-payroll, no-social-contributions, no-transfer-pricing; VAT compensation for public bodies and property adjustment are flagged only."
-version: 2.1
+version: 2.2
 jurisdiction: "NO"
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -204,8 +204,6 @@ expected:
 | Skatteetaten, Forsinkelsesrenter | https://www.skatteetaten.no/satser/forsinkelsesrenter/ | 2026-10-30 |
 
 Not yet confirmed: how a service bought abroad by the foreign part of an entity for its Norwegian part was treated before 1 July 2026; the conditions in regulations for the § 8-9 deduction and § 10-5 refund; whether a weekend or holiday deadline moves to the next working day for the VAT return; the full lists of exempt and zero-rated supplies (only the sections named are summarised); joint registration, VAT compensation and property adjustment.
-
-> Contributed by Michael Cutajar.
 
 <!-- openaccountants-cta-block -->
 

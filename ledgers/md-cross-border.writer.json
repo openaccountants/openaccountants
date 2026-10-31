@@ -5208,5 +5208,12 @@
     "All three predecessor decision fixtures and prior legal-person treaty-evidence correction retained, with current-law scope expanded."
   ],
   "independent_old_topic_comparison": "PENDING WHOLE-COUNTRY REVIEW;24October review applies only to earlier thin draft",
-  "remaining": "Guide Sources Not yet confirmed and country README authoritative; no publication/completeness claim"
+  "remaining": "Guide Sources Not yet confirmed and country README authoritative; no publication/completeness claim",
+  "subsequently_merged_public_PR793": {
+    "PR": 793,
+    "merged_main_commit": "eccd38cc124a7633c5ce44d2acac02ed718919c5",
+    "complete_destination_table": "ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.json",
+    "units": 97,
+    "status": "WRITER MAPPING ONLY; independentreviewpending"
+  }
 }

@@ -2,7 +2,7 @@
   "status": "LOCAL2026 WRITER DRAFT; ordinary source/procedure gaps remain; whole-country review pending",
   "slug": "md-transfer-pricing",
   "Guide_path": "skills/international/moldova/md-transfer-pricing.md",
-  "Guide_sha256": "b07a9c391a962ab2582a6a16cd2028afbb6d9cd6b6a6f66b8c087c4d0fea3720",
+  "Guide_sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
   "rows": [
     {
       "id": "MD-TP-001",
@@ -7251,7 +7251,7 @@
   ],
   "baseline_old_units": 25,
   "old_bytes": 10169,
-  "new_bytes": 56834,
+  "new_bytes": 57422,
   "shorter_by_more_than_25pct": false,
   "removed_and_why": [
     "Duplicated early headings and120day explanation consolidated into the canonical nine sections.",
@@ -7260,5 +7260,12 @@
     "All three old hypothetical threshold fixtures preserved; detailed scope, exclusions, actual methods, requested files and APA procedure expanded."
   ],
   "independent_old_topic_comparison": "PENDING WHOLE-COUNTRY REVIEW;24Oct review applies only to the earlier thin draft",
-  "remaining": "Guide Sources Not yet confirmed and country README authoritative; no publication/completeness claim"
+  "remaining": "Guide Sources Not yet confirmed and country README authoritative; no publication/completeness claim",
+  "subsequently_merged_public_PR793": {
+    "PR": 793,
+    "merged_main_commit": "eccd38cc124a7633c5ce44d2acac02ed718919c5",
+    "complete_destination_table": "ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.json",
+    "units": 105,
+    "status": "WRITER MAPPING ONLY; independentreviewpending"
+  }
 }
