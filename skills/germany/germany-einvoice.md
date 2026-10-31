@@ -1,7 +1,7 @@
 ---
 name: germany-einvoice
 description: Use this skill whenever asked about German e-invoicing, XRechnung, ZUGFeRD, ERechV, E-Rechnungsverordnung, Peppol BIS Billing Germany, Leitweg-ID, OZG-RE invoice portal, B2B e-invoicing mandate Germany, Wachstumschancengesetz, EN 16931 Germany, GoBD e-invoice archiving, or any question about issuing, receiving, validating, or archiving electronic invoices in Germany. Also trigger when preparing XRechnung XML invoices, configuring Peppol endpoints for German public-sector invoicing, handling B2B e-invoice reception requirements, or advising on ZUGFeRD profile selection. This skill covers XRechnung CIUS, ZUGFeRD hybrid format, Peppol transmission, mandatory fields, validation rules, GoBD archiving, penalties, and interaction with German VAT returns. ALWAYS read this skill before touching any German e-invoicing work.
-version: 1.3
+version: 1.4
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
@@ -123,7 +123,7 @@ When a German business must issue an e-invoice, when a paper or PDF invoice is s
 | No duty to invoice electronically for an invoice issued after a direct award (Direktauftrag) up to | EUR 1,000 | § 3(3) no. 1 ERechV: "die nach Erfüllung eines Direktauftrags bis zu einem Betrag von 1 000 Euro gestellt werden" | https://www.gesetze-im-internet.de/erechv/__3.html |
 
 - **Other ERechV exceptions:** invoice data that must be kept secret (§ 8), the foreign service and other purchases abroad (§ 9), and Organleihe cases (§ 3(3) no. 3).
-- **The ERechV does not say** whether its amount is net or gross.
+- **The ERechV does not say** whether its amount is net or gross. The federal e-invoicing site gives the line as "1.000 Euro netto": https://www.e-rechnung-bund.de/ (read 2026-10-31)
 - **Two sets of rules, side by side.** The ministry says there is no ranking between the UStG and the ERechV: each applies in its own field, and one can in practice narrow a choice the other leaves open (questions and answers, no. 4a). An invoice to a public body falls under the VAT e-invoice rules only when the body acts as a business.
 
 ### Receiving e-invoices
