@@ -1,7 +1,7 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited draft has a bounded source-review record linked under Sources and does not claim comprehensive coverage or accountant attestation."
-version: "0.13"
+version: "0.15"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.13
+# Moldova social contributions and medical insurance, 2026 v0.15
 
 ## Who this applies to
 
@@ -34,26 +34,26 @@ All amounts are MDL. Classify first; the same percentage does not make two categ
 
 | Category or measure | 2026 rate/amount and limits | Primary authority |
 |---|---|---|
-| Ordinary commercial private/state/municipal employers; specified higher-education and medical institutions | Employer social contribution 24% of the applicable base | [CNAS point 9.2; Law 489 annex 1, 1.1][instructions] |
-| Specified budgetary/public authorities and institutions | Employer social contribution 29%; check the higher-education/medical exceptions | [CNAS point 9.1; annex 1, 1.1][instructions] |
-| Listed civil-aviation special-condition roles | 39% in the specified public category; 32% in the specified private category. A general “hazardous” description does not establish either category | [CNAS points 10–10.2; annex 1, 1.2; Law 489 annex 2][instructions] |
-| Independent family physician | 24% of the defined professional income; employees follow their own employer category | [CNAS point 11; annex 1, 1.3][instructions] |
-| Qualifying agriculture | Total social tariff 24%: employer 18%, state-budget transfer 6%; qualifying CAEM 01.1–01.6 income must be at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][instructions] |
-| Employee social withholding in ordinary employment | The listed ordinary employer tariff is the employer's liability; do not deduct an additional old 6% employee social tariff | [CNAS points 9–10; annex 1, 1.1–1.2][instructions] |
-| Ordinary employee/covered civil-contract health premium | 9% of covered salary/other remuneration; ordinary employee premium is withheld by the payer | [Medical budget art. 4(1)][medicalbudget]; [Law 1593 arts. 4, 6, 12, 20 and annex 1][health] |
-| National minimum monthly wage used in the contribution floor | 6,300 from 1 January; contribution base at least the minimum proportionate to time worked; part-time/reduced-work social contribution at least 25% of the full-minimum contribution | [CNAS point 19.1][instructions]; [Law 489 art. 22(1), January version][socialjan] |
-| Forecast monthly average salary | 17,400 | [CNAS point 12.1 citing Government Decision 773/2025][instructions] |
-| IT-park insured employment income | 68% of forecast average salary = 11,832 a month for the specified insured-income purpose; this is not the worker's actual cash salary | [CNAS point 12.1][instructions] |
-| IT-park single-tax allocation to social budget | 54.7% of the single tax; distinct from the new service entrepreneur's allocation | [CNAS point 12.2][instructions] |
-| Specified founders, independent retailers, plant-product purchasers and patents | Annual fixed social amount 22,878; monthly amount 1,906.50, subject to the category/period/exemption rules | [Social budget art. 3(1)][socialbudget]; [CNAS points 15, 17][instructions] |
-| Justice professions | Annual fixed social amount 30,966; monthly 2,580.50, subject to the category, overlap and suspension rules | [Social budget art. 3(2)][socialbudget]; [CNAS point 16][instructions] |
-| Taxi-driver fixed social category | 1,906.50 monthly only January–June; from 1 July ordinary employer treatment and IPC21 replace this special category | [CNAS points 2.2, 18–18.3][instructions] |
-| Covered day worker | Social 6% of daily remuneration; the stated 169-hour monthly norm gives 37.28 hourly and 298.24 for eight hours in the 2026 instruction | [CNAS point 19.1][instructions] |
-| New independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on excess; 53.3% of that tax allocated to social budget. Do not impose the ordinary employer tariff on the same single-tax receipt | [CNAS points 2.1, 20; Law 489 annex 1, 1.10][instructions] |
-| Voluntary social contract | 22,878 annual; qualifying individually working agricultural landholder/tenant 5,827 annual; at least one twelfth monthly | [Social budget art. 3(3)][socialbudget]; [CNAS points 22–22.4][instructions] |
-| Fixed annual health premium | 12,636 for covered fixed categories, subject to the category and entry-date rules | [Medical budget art. 4(2)][medicalbudget] |
-| Eligible early-payment health amount | 2,527 for the stated annex-2 groups 1, 3 and 4 paid within the statutory deadline; exclude digital nomads and concurrent groups 2/2^1 | [Medical budget art. 4(3)][medicalbudget]; [Law 1593 art. 22][health] |
-| Fixed health groups 2/2^1 and digital nomads | 12,636 under the separate statutory conditions; no automatic early-payment reduction | [Medical budget art. 4(4), (6)][medicalbudget] |
+| Ordinary commercial private/state/municipal employers; specified higher-education and medical institutions | Employer social contribution 24% of the applicable base | [CNAS point 9.2; Law 489 annex 1, 1.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Specified budgetary/public authorities and institutions | Employer social contribution 29%; check the higher-education/medical exceptions | [CNAS point 9.1; annex 1, 1.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Listed civil-aviation special-condition roles | 39% in the specified public category; 32% in the specified private category. A general “hazardous” description does not establish either category | [CNAS points 10–10.2; annex 1, 1.2; Law 489 annex 2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Independent family physician | 24% of the defined professional income; employees follow their own employer category | [CNAS point 11; annex 1, 1.3](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Qualifying agriculture | Total social tariff 24%: employer 18%, state-budget transfer 6%; qualifying CAEM 01.1–01.6 income must be at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro); [CNAS points 13–13.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Employee social withholding in ordinary employment | The listed ordinary employer tariff is the employer's liability; do not deduct an additional old 6% employee social tariff | [CNAS points 9–10; annex 1, 1.1–1.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Ordinary employee/covered civil-contract health premium | 9% of covered salary/other remuneration; ordinary employee premium is withheld by the payer | [Medical budget art. 4(1)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 arts. 4, 6, 12, 20 and annex 1](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |
+| National minimum monthly wage used in the contribution floor | 6,300 from 1 January; contribution base at least the minimum proportionate to time worked; part-time/reduced-work social contribution at least 25% of the full-minimum contribution | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 art. 22(1), January version](https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro) |
+| Forecast monthly average salary | 17,400 | [CNAS point 12.1 citing Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| IT-park insured employment income | 68% of forecast average salary = 11,832 a month for the specified insured-income purpose; this is not the worker's actual cash salary | [CNAS point 12.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| IT-park single-tax allocation to social budget | 54.7% of the single tax; distinct from the new service entrepreneur's allocation | [CNAS point 12.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Specified founders, independent retailers, plant-product purchasers and patents | Annual fixed social amount 22,878; monthly amount 1,906.50, subject to the category/period/exemption rules | [Social budget art. 3(1)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS points 15, 17](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Justice professions | Annual fixed social amount 30,966; monthly 2,580.50, subject to the category, overlap and suspension rules | [Social budget art. 3(2)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS point 16](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Taxi-driver fixed social category | 1,906.50 monthly only January–June; from 1 July ordinary employer treatment and IPC21 replace this special category | [CNAS points 2.2, 18–18.3](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Covered day worker | Social 6% of daily remuneration; the stated 169-hour monthly norm gives 37.28 hourly and 298.24 for eight hours in the 2026 instruction | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| New independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on excess; 53.3% of that tax allocated to social budget. Do not impose the ordinary employer tariff on the same single-tax receipt | [CNAS points 2.1, 20; Law 489 annex 1, 1.10](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Voluntary social contract | 22,878 annual; qualifying individually working agricultural landholder/tenant 5,827 annual; at least one twelfth monthly | [Social budget art. 3(3)](https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro); [CNAS points 22–22.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Fixed annual health premium | 12,636 for covered fixed categories, subject to the category and entry-date rules | [Medical budget art. 4(2)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro) |
+| Eligible early-payment health amount | 2,527 for the stated annex-2 groups 1, 3 and 4 paid within the statutory deadline; exclude digital nomads and concurrent groups 2/2^1 | [Medical budget art. 4(3)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 art. 22](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |
+| Fixed health groups 2/2^1 and digital nomads | 12,636 under the separate statutory conditions; no automatic early-payment reduction | [Medical budget art. 4(4), (6)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro) |
 
 The medical-budget statute says **2,527**, whereas the Finance Ministry's January 2026 overview says 2,572. The statute controls. For the new service-entrepreneur top-up, Fiscal Code art. 69^26(2) refers to the annual fixed amount granted for timely payment to Law 1593 annex 2 point 1(b). The linked 2026 statutory benchmark is 2,527, not the overview's 2,572. Apply the separate allocation/difference method below; this reference does not reclassify the entrepreneur as an ordinary fixed-premium payer. [Fiscal Code art. 69^26(2)][code]. [Medical budget art. 4][medicalbudget]; [Finance Ministry overview][mfchanges].
 
@@ -422,7 +422,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below. The bounded source-review record is linked below; no accountant attestation or comprehensive country coverage is claimed. Platform metadata and CTA are preserved.
 

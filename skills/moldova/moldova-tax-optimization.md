@@ -1,7 +1,7 @@
 ---
 name: moldova-tax-optimization
 description: "Compare legally available Moldova tax regimes and owner extraction for 2026. Covers actual IT-park status and permitted activities, cumulative seventy-percent eligibility, the monthly sales base and employee minimum, included and separate taxes, annual verification, entry and exit, ordinary income tax, the eligible four-percent SME regime, dividends and employment classification. Use for Moldova tax planning, IT Park seven-percent tax, minimum per employee, non-IT revenue, small-business regime, SRL versus individual entrepreneur, dividend versus salary and a single-client contractor. This source-cited draft corrects unsupported savings and blanket prohibitions and states remaining form, procedure and case-specific gaps. A bounded source-review record is linked under Sources; accountant attestation remains pending."
-version: "0.6"
+version: "0.8"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova tax planning and regime comparison, 2026 v0.6
+# Moldova tax planning and regime comparison, 2026 v0.8
 
 ## Who this applies to
 
@@ -24,14 +24,14 @@ Read the connected [corporate](md-corporate-income-tax.md), [individual](moldova
 
 | Item | Verified 2026 rule/input | Primary source |
 |---|---|---|
-| Ordinary company or individual-entrepreneur income tax | **12% of the applicable taxable-income base**; the legal person and individual have different deductions/procedures | [Code art. 15(a)–(b)][code] |
-| Eligible SME accounting-income regime | **4% of the article-54^2 base**, not profit and not a general option for every small freelancer | [Code arts. 54^1–54^3][code] |
-| IT-park monthly single tax | Greater of **7% of monthly accounting sales revenue** and the statutory monthly employee minimum | [Code arts. 369–371][code] |
-| IT-park employee minimum | **30% × 17,400 = 5,220 MDL** for each employee counted under article 369(2) for the month | [Code arts. 369(2), 370(2)][code]; [enacted Government Decision 773/2025][wage] |
-| IT-park main-activity test | At least **70%** permitted-activity sales revenue, measured cumulatively each month from the statutory start; conditional relief for at most **two calendar months** | [Code art. 368(2)–(3)][code]; [Law 77 art. 2][park] |
-| Ordinary dividend to a resident individual | **6%** withholding; the specified undistributed **2008–2011** profits use **15%** | [Code art. 90^1(3^1)][code] |
-| Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)][code] |
-| IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)][park]; [Government Decision 773][wage] |
+| Ordinary company or individual-entrepreneur income tax | **12% of the applicable taxable-income base**; the legal person and individual have different deductions/procedures | [Code art. 15(a)–(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Eligible SME accounting-income regime | **4% of the article-54^2 base**, not profit and not a general option for every small freelancer | [Code arts. 54^1–54^3](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park monthly single tax | Greater of **7% of monthly accounting sales revenue** and the statutory monthly employee minimum | [Code arts. 369–371](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park employee minimum | **30% × 17,400 = 5,220 MDL** for each employee counted under article 369(2) for the month | [Code arts. 369(2), 370(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [enacted Government Decision 773/2025](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |
+| IT-park main-activity test | At least **70%** permitted-activity sales revenue, measured cumulatively each month from the statutory start; conditional relief for at most **two calendar months** | [Code art. 368(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [Law 77 art. 2](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro) |
+| Ordinary dividend to a resident individual | **6%** withholding; the specified undistributed **2008–2011** profits use **15%** | [Code art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary domestic nonresident dividend withholding | **6%**, with the specified **15%** historic-profit/capital rules; actual treaty relief needs its own evidence | [Code art. 91(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| IT-park insured salary basis | **68% × 17,400 = 11,832 MDL** monthly under the stated rule; this is distinct from the 5,220 tax minimum and actual cash salary | [Law 77 art. 16(1)](https://www.legis.md/cautare/getResults?doc_id=143443&lang=ro); [Government Decision 773](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro) |
 
 The independent-service and independent-retail regimes are different populations from an ordinary individual entrepreneur. For an **eligible registered service entrepreneur**, the single tax is **15% of its defined income base up to 1.2 million MDL**, and **35% only on the excess**. The statutory tax composition and annual medical allocation/top-up must be checked separately; “single tax” does not certify that no further amount can arise. For **eligible independent retail excluding excise goods**, the income-tax rate is **1%**, with the ordinary full-year **3,000 MDL minimum** and specific cessation/cash-register rules. Current article 69^13(3) limits that retail route to persons registered before **1 July 2026**; do not present it as an unrestricted new-entry option in October. The full amendment/commencement history remains a stated gap. Use the [individual](moldova-income-tax.md) and [social/medical](moldova-social-contributions.md) methods, actual registration and activity conditions before comparing either regime. [Code arts. 69^6–69^13, 69^20–69^26][code].
 
@@ -103,7 +103,7 @@ IT-park entry/exit changes the tax regime from the **month after** status acquis
 
 ### Complete the actual monthly IU17 return
 
-The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. The May 2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](../../../ledgers/md-country-evidence/itpark-current-attachments.json).
+The current Order 135 consolidation and all nine linked official DOCX attachments have now been read and retained unchanged, including all fourteen rendered pages. Its annex 2 completion instructions are published inline in the official order and were read there. The May 2026 amendment supplies the current monthly-sales wording; keep it separate from the January 2026 form change. [Current Order 135 and inline annex 2][parkorder]; [Order 59 point 2][iuamend]; [attachment/read-scope evidence](../../evidence/ledgers/md-country-evidence/itpark-current-attachments.json).
 
 Use the registered name/fiscal code, CAEM-2 activity, actual park registration code, four-character head-office CUATM, SFS office and submission date. The monthly period format is **L/NN/YYYY**, with month 1–12. This monthly period code does not replace the separate annual IUPT code or the annual salary-information year. Establish resident status and the applicable entry/exit month before selecting the return. [Order 135 annex 2 part I points 1–8][parkorder]; [actual IU17 header][iu17actual]; [Code arts. 368, 375][code].
 
@@ -212,7 +212,7 @@ Model the legally available choices using those numbers before presenting a savi
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Read 30 October 2026. The bounded source-review record is linked under Sources; accountant attestation remains pending.
 

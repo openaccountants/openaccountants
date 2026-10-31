@@ -1,7 +1,7 @@
 ---
 name: md-corporate-income-tax
 description: "Compute Moldova resident-company corporate income tax for 2026, including the ordinary taxable-profit reconciliation and the separate eligible non-VAT SME accounting-income regime. Use for regime and legal-category selection, business expenses, employee benefits, financing, depreciation, losses, foreign-tax credits, instalments, distributions and withholding. Distinguish company tax from shareholder withholding and the dividend-linked payment-deferral option. Establish actual tax-period, VAT, ownership, activity, profit-origin and payment facts before calculating. This source-cited draft preserves the earlier Guide subjects, states exact remaining ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not claim accountant attestation or comprehensive coverage."
-version: "0.14"
+version: "0.16"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Moldova corporate income tax, 2026 v0.14
+# Moldova corporate income tax, 2026 v0.16
 
 ## Who this applies to
 
@@ -28,19 +28,19 @@ Amounts are MDL unless stated otherwise. A percentage does not establish which r
 
 | Item | 2026 rule | Primary authority |
 |---|---|---|
-| Ordinary company profit tax | 12% of taxable income | [Art. 15(b)][code] |
-| Statutory peasant-farm category | 7% of taxable income | [Art. 15(c)][code] |
-| Individual entrepreneur | 12% of annual taxable income | [Art. 15(a)][code] |
-| Income estimated under arts. 225 or 225^1 | 15% of the excess of the estimated income over the business's booked gross income; this is not the ordinary company rate | [Art. 15(d)][code] |
-| Eligible non-VAT SME regime | 4% of the defined accounting-income base, not ordinary taxable profit | [Arts. 54^2–54^3][code] |
-| SME election/mandatory-general threshold in art. 54^1(3)(a), (3^1) | 1.5 million in the text operative from 1 January through 26 March; 1.7 million from 27 March 2026. These tests use the specified previous-year supply income and conditions | [January Code][jan]; [Law 41/2026 art. I(1), X(1)][amend]; [27 March Code][mar] |
-| Business/management consultancy exclusion from SME regime | Prior-year CAEM 70.22 service income above 60% of sales income | [Art. 54^1(1)][code] |
-| SME shareholding interaction | A holder above 25% in more than 3 SMEs triggers selection of the entity/entities moving to general taxation from the relevant quarter | [Art. 54^1(3^2)][code] |
-| Basic depreciable tangible asset test | Business-use balance-sheet property with useful life above 1 year and value above 12,000 | [Art. 26^1(2)][code] |
-| Ordinary tax loss carryforward | Following 5 tax periods; maintain origin order and remaining eligible balances | [Art. 32][code] |
-| Resident-individual dividend withholding | 6%; 15% for dividends from undistributed 2008–2011 profits | [Art. 90^1(3^1)][code] |
-| Nonresident dividend withholding | 6% ordinary domestic rate; 15% for the specified historic-profit/capital cases | [Art. 91(1)][code] |
-| Other covered nonresident-source payments | 12%, subject to the actual art. 71 category, statutory exclusions and applicable treaty | [Art. 91][code] |
+| Ordinary company profit tax | 12% of taxable income | [Art. 15(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Statutory peasant-farm category | 7% of taxable income | [Art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Individual entrepreneur | 12% of annual taxable income | [Art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Income estimated under arts. 225 or 225^1 | 15% of the excess of the estimated income over the business's booked gross income; this is not the ordinary company rate | [Art. 15(d)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Eligible non-VAT SME regime | 4% of the defined accounting-income base, not ordinary taxable profit | [Arts. 54^2–54^3](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| SME election/mandatory-general threshold in art. 54^1(3)(a), (3^1) | 1.5 million in the text operative from 1 January through 26 March; 1.7 million from 27 March 2026. These tests use the specified previous-year supply income and conditions | [January Code](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [Law 41/2026 art. I(1), X(1)](https://www.legis.md/cautare/getResults?doc_id=153667&lang=ro); [27 March Code](https://www.legis.md/cautare/getResults?doc_id=153668&lang=ro) |
+| Business/management consultancy exclusion from SME regime | Prior-year CAEM 70.22 service income above 60% of sales income | [Art. 54^1(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| SME shareholding interaction | A holder above 25% in more than 3 SMEs triggers selection of the entity/entities moving to general taxation from the relevant quarter | [Art. 54^1(3^2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Basic depreciable tangible asset test | Business-use balance-sheet property with useful life above 1 year and value above 12,000 | [Art. 26^1(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary tax loss carryforward | Following 5 tax periods; maintain origin order and remaining eligible balances | [Art. 32](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Resident-individual dividend withholding | 6%; 15% for dividends from undistributed 2008–2011 profits | [Art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Nonresident dividend withholding | 6% ordinary domestic rate; 15% for the specified historic-profit/capital cases | [Art. 91(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Other covered nonresident-source payments | 12%, subject to the actual art. 71 category, statutory exclusions and applicable treaty | [Art. 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 
 Law 41's SME amendment took effect on publication, 27 March. Its separate medical-device VAT amendment took effect on 1 May. Do not use the latter date for the SME threshold or confuse the SME test with VAT registration. The change is a regime-eligibility/election rule, not a daily apportionment of the 4% rate. [Law 41 arts. I(1), I(4), X][amend].
 
@@ -402,7 +402,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with each date below.
 

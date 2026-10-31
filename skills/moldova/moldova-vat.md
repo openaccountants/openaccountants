@@ -1,7 +1,7 @@
 ---
 name: moldova-vat
 description: Use this Guide for Moldova VAT (TVA) registration, output tax, input credits, mixed supplies, imports, exported services, tax points and the monthly VAT12 reconciliation for 2026. It covers ordinary registered businesses and explains separate obligations for unregistered service importers, specified property purchasers, energy traders and nonresident electronic-service suppliers. Trigger on Moldova VAT, TVA Moldova, VAT12, imported SaaS, input deduction or SFS VAT filing. Load alongside vat-workflow-base v0.1 or later. Check the dated registration thresholds, actual supply classification and evidence before calculating. Remaining source and implementation gaps are explicit; the country draft has a bounded source-review record linked under Sources.
-version: "2.5"
+version: "2.6"
 jurisdiction: MD
 category: international
 tax_year: 2026
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova VAT v2.5
+# Moldova VAT v2.6
 
 2026 draft, law read 30–31 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. The bounded source-review record is linked under Sources; accountant attestation is not provided.
 
@@ -100,6 +100,8 @@ Documented price changes, returns and later discounts adjust the taxable value u
 Ordinary excess input carries forward under 101(2). A cash refund is conditional:101(3) has the listed bread/dairy producer cap, 101(5) the exempt-with-credit supply cap, 101(5^1) the energy simplification cap, 101(6) the leasing cap; 101^1 covers qualifying capital expenditure with exclusions and an in-use production-building route. Art. 101^6 concerns qualifying e-Factura/connected-register transactions from 1 January 2023 and Government limits; 101^8 covers its listed renewable-storage tariffs. The ordinary statutory refund routes generally state 45-days, or 60-days where the taxpayer has filed disagreement with the audit act, but the Government evidence/application rules must also be satisfied. Use a refund decision first against public-budget debt, then permitted future liabilities or the taxpayer's own bank/payment account; do not assign the refund to creditors. An unregistered qualifying 22-plus-passenger vehicle investor has a distinct 101^3 route. Do not fill box 24 merely because a credit exists. The detailed Government procedures and 2026 refund programmes are not confirmed in this draft. [Code arts. 101–101^8](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
 ## Deadlines and filing
+
+For a refund or tax-offset request, use the [VAT refund application Guide](md-vat-refund.md), which supplies the current HG93 application, route-specific ceilings, paid/unpaid credit allocation, evidence and SFS/Treasury stages. VAT12 submission and the refund application are separate steps.
 
 ### Tax points and actual deadlines
 
@@ -285,7 +287,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 | Primary source actually read | Scope | Read date |
 |---|---|---|

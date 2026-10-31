@@ -1,7 +1,7 @@
 ---
 name: moldova-income-tax
 description: "Compute Moldova individual income tax for 2026 after classifying residence, citizenship, source, legal activity and the actual tax regime. Covers annual ordinary income, sole-trader and professional profit, personal/spouse/dependent exemptions, actual contribution and personal deductions, capital gains, final withholding, property rentals, foreign-tax credit and separate retail, plant-purchasing and independent-service regimes. Use for CET18, annual personal tax, self-employed tax, freelancer income, taxable investment receipts, exemption eligibility, foreign interest, capital disposals, fixed contributions and income-tax filing. This source-cited draft identifies ordinary and specialist gaps, and has a bounded source-review record linked under Sources. It does not certify every treaty or special-regime implementation or claim accountant attestation."
-version: "0.12"
+version: "0.14"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova individual income tax and self-employment, 2026 v0.12
+# Moldova individual income tax and self-employment, 2026 v0.14
 
 ## Who this applies to
 
@@ -34,30 +34,30 @@ All amounts are MDL. Rates apply only after the statutory category/base is estab
 
 | Item | 2026 rule | Primary authority |
 |---|---|---|
-| Ordinary individual/individual-entrepreneur/justice/medical professional income tax | 12% of annual taxable income | [Art. 15(a)][code] |
-| Day worker | 12% of taxable income without chapter-4 exemptions | [Art. 15(a^1)][code] |
-| Statutory peasant farm | 7% of taxable income; not a general agricultural-company or distribution rate | [Art. 15(c)][code] |
-| Standard personal exemption | 29,700 a year; annual taxable-income test strictly below 360,000, excluding art. 90^1 income and including the stated independent-retail/plant-purchasing income | [Art. 33(1)–(1^1)][code]; [January version][jan] |
-| Increased personal exemption | 34,620 a year for the exact statutory categories | [Art. 33(2)][code] |
-| Qualifying spouse exemption | 21,780 a year with art. 33(2)-category spouse and non-use conditions | [Art. 34][code] |
-| Ordinary qualifying dependent | 9,900 a year | [Art. 35(1)][code] |
-| Specified disabled dependent | 21,780 a year under the exact disability/relationship conditions | [Art. 35][code] |
-| Dependent's income condition | Not above 12,400 annually, excluding the specified State disability allowances | [Art. 35(2)(b)][code] |
-| Taxable capital-gain inclusion | 50% of recognised current-period gains exceeding recognised capital losses | [Arts. 40(7), 41][code] |
-| Ordinary resident-individual dividend withholding | 6%; historical 2008–2011 undistributed-profit category 15%; separate pre-2008 exemption/category check | [Art. 90^1(3^1), 20(z^10)][code] |
-| Royalty final withholding | 12% for the covered individual payment, with the independent-service-entrepreneur exception | [Art. 90^1(3^1)][code] |
-| Specified domestic bank/credit-issuer and similar interest | 6% final withholding under the stated payer/category rule, excluding art. 20(z^20) cases | [Art. 90^1(3^7)][code] |
-| Other covered interest and preliminary resident withholding | 12% advance/creditable route under arts. 89–90, rather than assuming every interest receipt is finally taxed at 6% | [Arts. 89–90][code] |
-| Property use paid by art. 90 payers | 12% final withholding for the covered movable/immovable use, excluding agricultural land rent | [Art. 90^1(3)][code] |
-| Covered resident non-business immovable-property letting to other specified tenants | 7% of monthly contract value, with registration/payment duties | [Art. 90^1(3^4)][code] |
-| Covered gambling | 18%, with the exact lottery/sports-bet exemption; 1% of the standard personal exemption = 297 is the relevant statutory lottery/sports reference, not a universal deduction from every gambling receipt | [Arts. 90^1(3^3), 20(p^1)][code] |
-| Promotional-campaign winnings | 12% on the part above the standard personal exemption, 29,700 | [Arts. 90^1(3^3), 20(p^2)][code] |
-| Independent retail | 1% of its income base; ordinary full-year minimum 3,000, with 750 quarterly and 250-per-active-month rules as applicable | [Arts. 69^10–69^12][code] |
-| Retail eligibility measures | Resident individual without legal organisational form; non-excise retail; commercial area up to 50 m² and period income not above 1.2 million; current art. 69^13 adds its 1 July 2026 registration cut-off | [Arts. 69^6–69^7, 69^13][code]; [January comparison][jan] |
-| Plant-product purchasing regime | 6% final withholding by covered business purchaser; annual 1.2-million ceiling and separate 12% excess route | [Arts. 69^14–69^19][code] |
-| Registered independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on the excess | [Arts. 69^20–69^26][code] |
-| Personal medical/insurance/first-home interest reference caps | One forecast monthly average salary, 17,400, for the separate statutory routes and actual conditions below | [Art. 35^2(3)–(5)][code]; [CNAS point 12.1, Government Decision 773/2025][cnas] |
-| Own training/education and dependent-child education deduction | 20,000 cumulatively for the covered institutions/beneficiaries, not 20,000 per child/provider | [Art. 35^2(6), effective 1 January version][jan]; [current Code][code] |
+| Ordinary individual/individual-entrepreneur/justice/medical professional income tax | 12% of annual taxable income | [Art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Day worker | 12% of taxable income without chapter-4 exemptions | [Art. 15(a^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Statutory peasant farm | 7% of taxable income; not a general agricultural-company or distribution rate | [Art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Standard personal exemption | 29,700 a year; annual taxable-income test strictly below 360,000, excluding art. 90^1 income and including the stated independent-retail/plant-purchasing income | [Art. 33(1)–(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |
+| Increased personal exemption | 34,620 a year for the exact statutory categories | [Art. 33(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Qualifying spouse exemption | 21,780 a year with art. 33(2)-category spouse and non-use conditions | [Art. 34](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary qualifying dependent | 9,900 a year | [Art. 35(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Specified disabled dependent | 21,780 a year under the exact disability/relationship conditions | [Art. 35](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Dependent's income condition | Not above 12,400 annually, excluding the specified State disability allowances | [Art. 35(2)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Taxable capital-gain inclusion | 50% of recognised current-period gains exceeding recognised capital losses | [Arts. 40(7), 41](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary resident-individual dividend withholding | 6%; historical 2008–2011 undistributed-profit category 15%; separate pre-2008 exemption/category check | [Art. 90^1(3^1), 20(z^10)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Royalty final withholding | 12% for the covered individual payment, with the independent-service-entrepreneur exception | [Art. 90^1(3^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Specified domestic bank/credit-issuer and similar interest | 6% final withholding under the stated payer/category rule, excluding art. 20(z^20) cases | [Art. 90^1(3^7)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Other covered interest and preliminary resident withholding | 12% advance/creditable route under arts. 89–90, rather than assuming every interest receipt is finally taxed at 6% | [Arts. 89–90](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Property use paid by art. 90 payers | 12% final withholding for the covered movable/immovable use, excluding agricultural land rent | [Art. 90^1(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Covered resident non-business immovable-property letting to other specified tenants | 7% of monthly contract value, with registration/payment duties | [Art. 90^1(3^4)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Covered gambling | 18%, with the exact lottery/sports-bet exemption; 1% of the standard personal exemption = 297 is the relevant statutory lottery/sports reference, not a universal deduction from every gambling receipt | [Arts. 90^1(3^3), 20(p^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Promotional-campaign winnings | 12% on the part above the standard personal exemption, 29,700 | [Arts. 90^1(3^3), 20(p^2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Independent retail | 1% of its income base; ordinary full-year minimum 3,000, with 750 quarterly and 250-per-active-month rules as applicable | [Arts. 69^10–69^12](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Retail eligibility measures | Resident individual without legal organisational form; non-excise retail; commercial area up to 50 m² and period income not above 1.2 million; current art. 69^13 adds its 1 July 2026 registration cut-off | [Arts. 69^6–69^7, 69^13](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [January comparison](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro) |
+| Plant-product purchasing regime | 6% final withholding by covered business purchaser; annual 1.2-million ceiling and separate 12% excess route | [Arts. 69^14–69^19](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Registered independent service entrepreneur | Single tax 15% up to annual income 1.2 million and 35% on the excess | [Arts. 69^20–69^26](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Personal medical/insurance/first-home interest reference caps | One forecast monthly average salary, 17,400, for the separate statutory routes and actual conditions below | [Art. 35^2(3)–(5)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [CNAS point 12.1, Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Own training/education and dependent-child education deduction | 20,000 cumulatively for the covered institutions/beneficiaries, not 20,000 per child/provider | [Art. 35^2(6), effective 1 January version](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [current Code](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 
 The January/current selected Code comparison confirms the personal/spouse/dependent amounts, strict personal-exemption gate and the 20,000 education limit. It does not certify every 2026 amendment interaction. The old claim that retail 1% expired at the end of 2025 is wrong: chapter 10^2 remains in the current Code. Keep its July registration condition distinct from the new chapter-10^4 service regime, VAT thresholds and any actual cessation. [Arts. 33–35^2, 69^6–69^26][code]; [January Code][jan].
 
@@ -385,7 +385,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below.
 

@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: "0.5"
+version: "0.7"
 ---
 
-# Moldova tax overview, 2026 v0.5
+# Moldova tax overview, 2026 v0.7
 
 ## Who this applies to
 
@@ -24,11 +24,11 @@ The **Serviciul Fiscal de Stat (SFS)** administers taxes and other covered publi
 
 | Ordinary headline | Rate or period | Primary source |
 |---|---|---|
-| Individual/individual-entrepreneur and listed professional income tax | **12% of annual taxable income**, with the actual taxpayer/base/regime classification | [Code art. 15(a)][code] |
-| Legal-person income tax | **12% of taxable income**, subject to actual special/exempt regimes | [Code art. 15(b)][code] |
-| Standard VAT | **20%** of the taxable value; reduced rates and exemptions require their own conditions | [Code art. 96(a)–(b)][code] |
-| Ordinary income-tax period | Calendar year; first-year, liquidation, reorganisation, IT-park and permitted non-calendar-period rules are separate | [Code art. 12^1][code] |
-| Ordinary VAT period | Calendar month; article 94(d)'s specified electronic-services category has a quarterly period | [Code art. 114(1)–(1^1)][code] |
+| Individual/individual-entrepreneur and listed professional income tax | **12% of annual taxable income**, with the actual taxpayer/base/regime classification | [Code art. 15(a)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Legal-person income tax | **12% of taxable income**, subject to actual special/exempt regimes | [Code art. 15(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Standard VAT | **20%** of the taxable value; reduced rates and exemptions require their own conditions | [Code art. 96(a)–(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary income-tax period | Calendar year; first-year, liquidation, reorganisation, IT-park and permitted non-calendar-period rules are separate | [Code art. 12^1](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Ordinary VAT period | Calendar month; article 94(d)'s specified electronic-services category has a quarterly period | [Code art. 114(1)–(1^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
 
 These figures do not replace the [individual](moldova-income-tax.md), [corporate](md-corporate-income-tax.md), [VAT](moldova-vat.md), [payroll](moldova-payroll.md) or [social/medical](moldova-social-contributions.md) calculations. Classification comes before applying a percentage. A business's legal form does not by itself select the small-business, independent-service, IT-park or other special regime. [Code arts. 13–15, 83, 96][code].
 
@@ -36,13 +36,13 @@ These figures do not replace the [individual](moldova-income-tax.md), [corporate
 
 | Topic | Headline and qualifying boundary | Full method |
 |---|---|---|
-| Peasant-farm income tax | **7%** belongs to the statutory farmer-household category, not every agricultural company | [Code art. 15(c)][code]; [individual](moldova-income-tax.md) / [corporate](md-corporate-income-tax.md) |
-| Standard personal exemption | **29,700 MDL** annually for the qualifying resident individual with the article-33 annual taxable-income measure **strictly below 360,000**; the statutory exclusions/inclusions and increased-relief categories still apply | [Code art. 33][code]; [individual](moldova-income-tax.md) |
-| Eligible non-VAT SME | **4%** of the defined accounting-income base; actual supply mix, consultancy, ownership, election and dates control | [Code arts. 54^1–54^4][code]; [corporate](md-corporate-income-tax.md) |
-| Actual IT-park resident | Greater of **7% of monthly sales** and the counted-employee minimum; **5,220 MDL per counted employee** in 2026 from **30% × 17,400**. Only the specified taxes/payments are included | [Code arts. 369–372][code]; [enacted forecast][wage]; [planning](moldova-tax-optimization.md) |
-| Ordinary dividends | **6%** for resident-individual/nonresident recipients, with the specified **15%** historic-profit/capital exceptions. Resident-company receipts have article 20(z^19)’s separate treatment and historic exception | [Code arts. 20(z^19), 90^1, 91][code]; [corporate](md-corporate-income-tax.md) / [cross-border](md-cross-border.md) |
-| Other nonresident-source payments | **12%** only for the actual covered category, with statutory exclusions and evidenced treaty treatment | [Code arts. 71, 79^3, 91][code]; [cross-border](md-cross-border.md) |
-| VAT registration | The ordinary statutory test moves from **1.5 million** to **1.7 million MDL on 1 March 2026**; exclude/include supplies as article 112 requires. This is distinct from the SME threshold’s 27 March amendment | [Code art. 112][code]; [Law 12/2026][vatamend]; [VAT](moldova-vat.md) |
+| Peasant-farm income tax | **7%** belongs to the statutory farmer-household category, not every agricultural company | [Code art. 15(c)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [individual](moldova-income-tax.md) / [corporate](md-corporate-income-tax.md) |
+| Standard personal exemption | **29,700 MDL** annually for the qualifying resident individual with the article-33 annual taxable-income measure **strictly below 360,000**; the statutory exclusions/inclusions and increased-relief categories still apply | [Code art. 33](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [individual](moldova-income-tax.md) |
+| Eligible non-VAT SME | **4%** of the defined accounting-income base; actual supply mix, consultancy, ownership, election and dates control | [Code arts. 54^1–54^4](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [corporate](md-corporate-income-tax.md) |
+| Actual IT-park resident | Greater of **7% of monthly sales** and the counted-employee minimum; **5,220 MDL per counted employee** in 2026 from **30% × 17,400**. Only the specified taxes/payments are included | [Code arts. 369–372](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [enacted forecast](https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro); [planning](moldova-tax-optimization.md) |
+| Ordinary dividends | **6%** for resident-individual/nonresident recipients, with the specified **15%** historic-profit/capital exceptions. Resident-company receipts have article 20(z^19)’s separate treatment and historic exception | [Code arts. 20(z^19), 90^1, 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [corporate](md-corporate-income-tax.md) / [cross-border](md-cross-border.md) |
+| Other nonresident-source payments | **12%** only for the actual covered category, with statutory exclusions and evidenced treaty treatment | [Code arts. 71, 79^3, 91](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [cross-border](md-cross-border.md) |
+| VAT registration | The ordinary statutory test moves from **1.5 million** to **1.7 million MDL on 1 March 2026**; exclude/include supplies as article 112 requires. This is distinct from the SME threshold’s 27 March amendment | [Code art. 112](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [Law 12/2026](https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro); [VAT](moldova-vat.md) |
 
 For residence, Code article 5(5) distinguishes an individual’s permanent domicile or **at least 183 days** in the fiscal year from a company’s organisation/management or principal-place-of-activity test. Establish the actual facts and any treaty instead of applying an individual day count to every entity. The income-object populations below are a separate question. [Code art. 5(5)][code]; [individual](moldova-income-tax.md) / [cross-border](md-cross-border.md).
 
@@ -142,7 +142,7 @@ Establish legal form and registrations; residence and citizenship where relevant
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below. This overview does not complete a partial specialist domain or substitute for independent whole-country review.
 

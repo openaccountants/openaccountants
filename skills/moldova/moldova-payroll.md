@@ -1,7 +1,7 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited draft corrects the former employee social deduction and exemption assumptions, and has a bounded source-review record linked under Sources. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: "0.10"
+version: "0.12"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.10
+# Moldova payroll withholding, 2026 v0.12
 
 ## Who this applies to
 
@@ -32,24 +32,24 @@ Amounts are MDL. The statutory rate does not establish the tax base or entitleme
 
 | Item | 2026 rule | Primary source |
 |---|---|---|
-| Ordinary personal employment tax | 12% of the taxable base, withheld using the cumulative method | [Code art. 15(a), 88][code]; [regulation points 36–44][reg] |
-| Day-worker income tax | 12%, without chapter-4 exemptions | [Art. 15(a^1)][code]; [regulation point 9^2][reg] |
-| Ordinary private/commercial employer social contribution | 24% of the applicable contribution base | [CNAS point 9.2][cnas]; [IPC21 table 2, row 1.1(b)][ipc] |
-| Specified budgetary/public employer social contribution | 29%, with the stated higher-education/medical exceptions | [CNAS point 9.1][cnas]; [IPC21 row 1.1(a)][ipc] |
-| Listed aviation special conditions | Specified public category 39%; specified private category 32%; check the exact annex-2 occupation | [CNAS points 10–10.2][cnas]; [Law 489 annex 2][social] |
-| Qualifying agriculture | Employer 18% plus State 6%, total 24%; qualifying CAEM 01.1–01.6 income at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)][social]; [CNAS points 13–13.4][cnas] |
-| Ordinary employee social deduction | No additional employee 6% under these employer-category tariffs | [CNAS points 9–10][cnas] |
-| Ordinary employee medical premium | 9% of covered gross remuneration, withheld by the payer; do not split into an assumed 4.5%/4.5% | [Medical budget art. 4(1)][medicalbudget]; [Law 1593 arts. 4, 6, 12, 20][health] |
-| National minimum monthly salary input | 6,300 from 1 January; apply actual worked time and the separate social floor | [CNAS point 19.1][cnas]; [Law 489 art. 22][social] |
-| Part-time/reduced-work social floor | Contribution at least 25% of the contribution on the full national minimum, alongside the time-proportionate minimum base | [Law 489 art. 22(1)][social] |
-| Forecast monthly average salary | 17,400; reference input, not an automatic contractual wage or ceiling | [CNAS point 12.1 citing Government Decision 773/2025][cnas] |
-| Standard personal exemption | 29,700 annually; monthly twelfth 2,475 for an eligible month. Resident's annual taxable-income test is strictly below 360,000, excluding art. 90^1 income and including the specified retail/plant-purchasing income | [Code art. 33(1)–(1^1), January comparison][jan]; [current art. 33][code]; [regulation points 10–10^1, 18][reg] |
-| Increased personal exemption | 34,620 annually; monthly twelfth 2,885, only for the statutory categories and documented entitlement | [Art. 33(2)][code]; [regulation points 30–32][reg] |
-| Qualifying spouse exemption | 21,780 annually; monthly twelfth 1,815. Spouse must be in art. 33(2)'s category and not use the personal exemption; not a universal spouse allowance | [Art. 34][code]; [regulation points 11–13, 33][reg] |
-| Ordinary qualifying dependent | 9,900 annually; monthly twelfth 825 | [Art. 35(1)][code]; [regulation points 14–15, 34–35][reg] |
-| Specified disabled dependent | 21,780 annually; monthly twelfth 1,815; apply the actual statutory disability/relationship conditions | [Art. 35][code] |
-| Dependent's income condition | Income not above 12,400 annually, with the specified disability-State-allowance exclusion | [Art. 35(2)(b)][code] |
-| Employer-owned property for personal use | Statutory benefit uses 0.0373% per day of the prescribed tax-undepreciated value fixed from the start month | [Art. 19(e)][code]; [regulation point 8(5)][reg] |
+| Ordinary personal employment tax | 12% of the taxable base, withheld using the cumulative method | [Code art. 15(a), 88](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 36–44](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Day-worker income tax | 12%, without chapter-4 exemptions | [Art. 15(a^1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation point 9^2](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Ordinary private/commercial employer social contribution | 24% of the applicable contribution base | [CNAS point 9.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [IPC21 table 2, row 1.1(b)](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) |
+| Specified budgetary/public employer social contribution | 29%, with the stated higher-education/medical exceptions | [CNAS point 9.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [IPC21 row 1.1(a)](https://www.legis.md/cautare/getResults?doc_id=154168&lang=ro) |
+| Listed aviation special conditions | Specified public category 39%; specified private category 32%; check the exact annex-2 occupation | [CNAS points 10–10.2](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 annex 2](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |
+| Qualifying agriculture | Employer 18% plus State 6%, total 24%; qualifying CAEM 01.1–01.6 income at least 70% of operating income | [Law 489 art. 17(3^1)–(3^2)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro); [CNAS points 13–13.4](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Ordinary employee social deduction | No additional employee 6% under these employer-category tariffs | [CNAS points 9–10](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Ordinary employee medical premium | 9% of covered gross remuneration, withheld by the payer; do not split into an assumed 4.5%/4.5% | [Medical budget art. 4(1)](https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro); [Law 1593 arts. 4, 6, 12, 20](https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro) |
+| National minimum monthly salary input | 6,300 from 1 January; apply actual worked time and the separate social floor | [CNAS point 19.1](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf); [Law 489 art. 22](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |
+| Part-time/reduced-work social floor | Contribution at least 25% of the contribution on the full national minimum, alongside the time-proportionate minimum base | [Law 489 art. 22(1)](https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro) |
+| Forecast monthly average salary | 17,400; reference input, not an automatic contractual wage or ceiling | [CNAS point 12.1 citing Government Decision 773/2025](https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf) |
+| Standard personal exemption | 29,700 annually; monthly twelfth 2,475 for an eligible month. Resident's annual taxable-income test is strictly below 360,000, excluding art. 90^1 income and including the specified retail/plant-purchasing income | [Code art. 33(1)–(1^1), January comparison](https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro); [current art. 33](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 10–10^1, 18](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Increased personal exemption | 34,620 annually; monthly twelfth 2,885, only for the statutory categories and documented entitlement | [Art. 33(2)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 30–32](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Qualifying spouse exemption | 21,780 annually; monthly twelfth 1,815. Spouse must be in art. 33(2)'s category and not use the personal exemption; not a universal spouse allowance | [Art. 34](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 11–13, 33](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Ordinary qualifying dependent | 9,900 annually; monthly twelfth 825 | [Art. 35(1)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation points 14–15, 34–35](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
+| Specified disabled dependent | 21,780 annually; monthly twelfth 1,815; apply the actual statutory disability/relationship conditions | [Art. 35](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Dependent's income condition | Income not above 12,400 annually, with the specified disability-State-allowance exclusion | [Art. 35(2)(b)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro) |
+| Employer-owned property for personal use | Statutory benefit uses 0.0373% per day of the prescribed tax-undepreciated value fixed from the start month | [Art. 19(e)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [regulation point 8(5)](https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro) |
 
 Both the January and current Code retain the cited personal/spouse/dependent amounts and the strict personal-exemption gate. At exactly 360,000, do not apply a rule written as “less than”. Do not substitute annualised contractual gross alone for the statutory annual-income test. Dependent/spouse relief has its own conditions; loss of the standard personal exemption does not automatically erase every other documented exemption. The employer is not obliged to track loss of the personal-exemption right; the employee's annual liability and application duties remain separate. [Arts. 33–35, 88(1)][code]; [regulation points 10^1, 16][reg].
 
@@ -365,7 +365,7 @@ expected:
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Primary-source reads on 30–31 October 2026, with individual dates below.
 

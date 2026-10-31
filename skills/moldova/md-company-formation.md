@@ -9,10 +9,10 @@ trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
-version: "0.7"
+version: "0.9"
 ---
 
-# Moldova company formation and entity choice, 2026 v0.7
+# Moldova company formation and entity choice, 2026 v0.9
 
 ## Who this applies to
 
@@ -26,15 +26,15 @@ An ordinary SRL has no general numerical member cap. The article-11(4) exception
 
 | Item | Current rule or quoted agency tariff | Primary source |
 |---|---|---|
-| Ordinary SRL capital | Amount set in the statute and/or registered in the State Register. Article 21 states no fixed numerical minimum; this is not a certified universal **1 MDL** minimum or an exemption from sector-specific capital rules | [Law 135 art. 21][srl] |
-| SRL contributions | Each member must pay the subscribed contribution in full within **six months after registration**; total contributions cannot be below subscribed capital | [Law 135 art. 22(2), (6)–(8)][srl] |
-| SA minimum capital | **600,000 MDL** under the currently operative general SA law. | [Law 1134 art. 38(1)–(6)][sa] |
-| Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff][asp]; [Law 220 art. 4][register] |
-| Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff][asp]; [Law 220 art. 4(6)][register] |
-| Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service][aspii] |
-| Paid name-service tracks | **71 MDL / three working days; 142 / 24 hours; 213 / four hours; 284 / one hour** | [ASP name-service tariff][aspname] |
-| Name reservation | On request, up to **six months**; name availability is checked before an online filing | [Law 220 art. 9(7)–(8)][register] |
-| Ordinary registration clock | **24 hours on a working day**, calculated from the working day immediately after the necessary documents were submitted | [Law 220 art. 5(2)][register] |
+| Ordinary SRL capital | Amount set in the statute and/or registered in the State Register. Article 21 states no fixed numerical minimum; this is not a certified universal **1 MDL** minimum or an exemption from sector-specific capital rules | [Law 135 art. 21](https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro) |
+| SRL contributions | Each member must pay the subscribed contribution in full within **six months after registration**; total contributions cannot be below subscribed capital | [Law 135 art. 22(2), (6)–(8)](https://www.legis.md/cautare/getResults?doc_id=153674&lang=ro) |
+| SA minimum capital | **600,000 MDL** under the currently operative general SA law. | [Law 1134 art. 38(1)–(6)](https://www.legis.md/cautare/getResults?doc_id=154797&lang=ro) |
+| Standard company registration | ASP displays **1,149 MDL / 24 hours**; eligibility for its listed fee relief must be checked separately | [ASP current company-registration tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1); [Law 220 art. 4](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |
+| Urgent company registration | ASP displays **4,596 MDL / four hours**; Law 220 has a **four-times** fee rule for the specified urgent registrations | [ASP tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-1); [Law 220 art. 4(6)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |
+| Individual-entrepreneur registration | ASP displays **364 MDL / 24 hours** or **1,456 MDL / four hours**. Its separate relief footnote is conditional | [ASP individual-registration service](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/211-3-ii) |
+| Paid name-service tracks | **71 MDL / three working days; 142 / 24 hours; 213 / four hours; 284 / one hour** | [ASP name-service tariff](https://www.asp.gov.md/ro/servicii/persoane-juridice/inregistrare-afacere/223) |
+| Name reservation | On request, up to **six months**; name availability is checked before an online filing | [Law 220 art. 9(7)–(8)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |
+| Ordinary registration clock | **24 hours on a working day**, calculated from the working day immediately after the necessary documents were submitted | [Law 220 art. 5(2)](https://www.legis.md/cautare/getResults?doc_id=155438&lang=ro) |
 
 The published agency fee is not a quotation for legal advice, translation, apostille, name services, bank charges or every ancillary service. ASP's relief footnote names Law 220 article 4, SME Law 179/2016 article 15, Law 39/2006 article 3 and Government Decision 707/2025 point 2. The sourced statutory relief categories are explained below; the remaining programme/first-year evidence and unquoted service routes are not established here. Law 220 article 4(1) permits Government-set electronic/counter tariffs within the annex ceiling; use the current service and applicant category, not the old approximate “under 1,500” estimate. [Law 220 art. 4][register]; [ASP tariff and relief footnote][asp].
 
@@ -230,7 +230,7 @@ Obtain the activities and regulated permissions; founders' legal form, countries
 
 ## Sources
 
-**Bounded source review, 31 October 2026.** The [independent review record](../../../ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
+**Bounded source review, 31 October 2026.** The [independent review record](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covers the stated source/claim scope. Ordinary gaps below remain unresolved. This Guide remains a source-cited draft, without accountant attestation or comprehensive coverage.
 
 Sources read 30 October 2026.
 
