@@ -44,7 +44,7 @@ What gets backfilled (missing keys only):
                   jurisdiction-specific file in an otherwise GLOBAL dir; the
                   us- filename prefix convention matches skills/us/federal).
                 Dirs whose existing convention is "no jurisdiction key"
-                (skills/cross-border/treaty-corridors, skills/foundation/intelligence,
+                (skills/cross-border/treaty-corridors and
                 skills/foundation/intelligence) are LEFT ALONE and reported — we do not
                 invent a convention.
 
