@@ -1,6 +1,6 @@
 ---
 name: dk-transfer-pricing
-description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (dk-vat-return)."
+description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (denmark-vat-return)."
 version: 0.1
 jurisdiction: DK
 tax_year: 2026
@@ -28,7 +28,7 @@ Tax year: income year 2026 (indkomståret 2026). Currency: Danish kroner (DKK). 
 
 The same law added LL § 2 B (Amount B, see Cross-border points).
 
-See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, dk-vat-return.
+See also: dk-corporate-tax (rates, base, interest limitation, return and payment), dk-income-tax (individuals), dk-capital-gains, denmark-vat-return.
 
 ## Who this applies to
 
