@@ -1,10 +1,10 @@
 ---
 name: uk-capital-gains-sa108
 description: Use this skill whenever asked about UK capital gains tax for individuals. Trigger on phrases like "SA108", "capital gains tax", "CGT UK", "annual exempt amount", "disposal", "chargeable gain", "crypto CGT UK", "share sale UK", "property disposal CGT", "PPR relief", "principal private residence", "BADR", "BADR 18%", "Business Asset Disposal Relief", "Entrepreneurs' Relief", "Investors Relief 18%", "carried interest April 2026", "CGT 18% 24%", "bed and breakfasting", "30-day rule", "Section 104 pool", "negligible value claim", "CGT losses", "60-day reporting", "residential property CGT", or any question about computing, filing, or reporting capital gains on the UK Self Assessment return. Covers SA108 form, CGT rates, reliefs, crypto as CGT asset, share matching rules, property CGT reporting, and loss treatment. ALWAYS read this skill before touching any UK CGT work.
-version: 2.0
+version: 2.1
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -71,10 +71,10 @@ Out of scope, refer: companies (Corporation Tax on gains), trusts and estates be
 
 | Disposal date | Individuals: within basic rate band / above | Residential property | BADR or Investors' Relief gains | Trustees and personal representatives | Carried interest (individuals) |
 | --- | --- | --- | --- | --- | --- |
-| 6 April 2026 onwards (2026/27) | 18% / 24% | 18% / 24% | 18% | 24% | Not CGT: Income Tax and National Insurance |
-| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 18% / 24% | 14% | 24% | 32% |
-| 30 October 2024 to 5 April 2025 | 18% / 24% | 18% / 24% | 10% | 24% | 18% / 28% |
-| 6 April 2024 to 29 October 2024 | 10% / 20% | 18% / 24% | 10% | 20% (residential 24%) | 18% / 28% |
+| 6 April 2026 onwards (2026/27) | 18% / 24% | 18% / 24% | 18% | 24% | Not CGT: Income Tax and National Insurance Source: https://www.gov.uk/capital-gains-tax/print (tax year 2026) (read 2026-10-31) |
+| 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 18% / 24% | 14% | 24% | 32% Source: https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (tax year 2026) (read 2026-10-31) |
+| 30 October 2024 to 5 April 2025 | 18% / 24% | 18% / 24% | 10% | 24% | 18% / 28% Source: https://www.gov.uk/business-asset-disposal-relief/print (tax year 2026) (read 2026-10-31) |
+| 6 April 2024 to 29 October 2024 | 10% / 20% | 18% / 24% | 10% | 20% (residential 24%) | 18% / 28% Source: https://www.gov.uk/business-asset-disposal-relief/print (tax year 2026) (read 2026-10-31) |
 
 - From 30 October 2024 residential property and other assets are taxed at the same main rates. Before 30 October 2024, residential property was 18%/24% and other assets 10%/20%.
 - 2024/25 split year: the 2024/25 return did not automatically calculate the new main rates for disposals on or after 30 October 2024, so an adjustment was needed ([2024/25 adjustment](https://www.gov.uk/guidance/work-out-your-capital-gains-tax-adjustment-for-the-2024-to-2025-tax-year)). Check this on any 2024/25 amendment or late return.
@@ -93,8 +93,8 @@ Out of scope, refer: companies (Corporation Tax on gains), trusts and estates be
 
 | Threshold | Figure |
 | --- | --- |
-| SA108 needed if chargeable assets disposed of were worth more than | £50,000 (2023/24 onwards) |
-| SA108 needed if gains before losses were more than | £3,000 (the annual exempt amount) |
+| SA108 needed if chargeable assets disposed of were worth more than | £50,000 (2023/24 onwards) Source: https://assets.publishing.service.gov.uk/media/6a02e5df4fb0713aa63ea77c/SA108-Notes-2026.pdf (tax year 2026) (read 2026-10-31) |
+| SA108 needed if gains before losses were more than | £3,000 (the annual exempt amount) Source: https://assets.publishing.service.gov.uk/media/6a02e5df4fb0713aa63ea77c/SA108-Notes-2026.pdf (tax year 2026) (read 2026-10-31) |
 | Chattels (tangible movable property): gain exempt if the consideration does not exceed | £6,000; above that, the chargeable gain is capped at five-thirds of the excess over £6,000 ([TCGA 1992 s.262](https://www.legislation.gov.uk/ukpga/1992/12/section/262)) |
 | Anti-forestalling: no excluded-contract claim needed if total gains under excluded contracts do not exceed | £100,000 ([CG10250](https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg10250)) |
 | Late 60-day property return, first penalty | £100 ([FA 2009 Sch 55 para 3](https://www.legislation.gov.uk/ukpga/2009/10/schedule/55/paragraph/3)) |
@@ -375,6 +375,43 @@ Claim codes (boxes 8, 13.6, 20, 28, 36): PRR, LET, GHO (gift hold-over), ROR, PR
 - [ ] Right SA108 section and box for each asset, including crypto (13.1 to 13.8).
 - [ ] Claims and deadlines diaried: BADR/IR by 31 January 2028 for 2025/26; return and payment by 31 January 2027.
 - [ ] Computations, valuations and estimates attached; figures labelled as estimates until confirmed.
+
+## Checked examples
+
+```oa-check
+name: Basic rate gain GBP 23,000, annual exempt amount GBP 3,000 (2026/27)
+inputs:
+  gain: 23000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 18)
+expected:
+  taxable: 20000
+  tax: 3600
+```
+
+```oa-check
+name: Higher rate gain GBP 23,000, annual exempt amount GBP 3,000 (2026/27)
+inputs:
+  gain: 23000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 24)
+expected:
+  taxable: 20000
+  tax: 4800
+```
+
+## Sources
+
+- https://www.gov.uk/capital-gains-tax/print (read 2026-10-31)
+- https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (read 2026-10-31)
+- https://www.gov.uk/business-asset-disposal-relief/print (read 2026-10-31)
+- https://assets.publishing.service.gov.uk/media/6a02e5df4fb0713aa63ea77c/SA108-Notes-2026.pdf (read 2026-10-31)
+
+Not yet confirmed: nothing outstanding from this pass.
 
 <!-- openaccountants-cta-block -->
 

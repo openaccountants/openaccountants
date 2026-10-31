@@ -1,10 +1,10 @@
 ---
 name: uk-crypto-tax
 description: Use this skill whenever asked about UK cryptocurrency or digital asset taxation. Trigger on phrases like "crypto tax UK", "Bitcoin UK tax", "HMRC crypto", "cryptoassets UK", "crypto capital gains UK", "staking tax UK", "mining tax UK", "NFT tax UK", "DeFi tax UK", "SA108 crypto", "crypto CGT", "bed and breakfasting crypto", "S104 pool", "crypto loss UK", "Coinbase UK tax", "Binance UK tax", "Revolut crypto UK", "crypto income UK", "DAC8 UK", "CARF crypto", "crypto reporting 2026", "18% 24% crypto", "HMRC cryptoassets manual", or any question about the income tax, capital gains tax, or reporting treatment of cryptocurrency, tokens, or digital assets for UK tax residents. Covers HMRC's Cryptoassets Manual (CRYPTO10000+), S104 pooling, same-day and 30-day matching rules, DeFi lending/staking, NFTs, mining, SA108 reporting, and the Crypto Asset Reporting Framework (CARF) from 2026. ALWAYS read this skill before touching any UK crypto work.
-version: 2.0
+version: 2.1
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -59,7 +59,7 @@ Out of scope, refer: companies and other businesses holding tokens (Corporation 
 | 6 April 2026 to 5 April 2027 (2026/27) | 18% / 24% | 24% | £3,000 / £1,500 |
 | 6 April 2025 to 5 April 2026 (2025/26) | 18% / 24% | 24% | £3,000 / £1,500 |
 | 30 October 2024 to 5 April 2025 | 18% / 24% | 24% | £3,000 / £1,500 (one allowance for the whole of 2024/25) |
-| 6 April 2024 to 29 October 2024 | 10% / 20% | 20% | (as above) |
+| 6 April 2024 to 29 October 2024 | 10% / 20% | 20% | (as above) Source: https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (tax year 2026) (read 2026-10-31) |
 
 - Crypto is taxed at the same main rates as other assets. The 2026/27 basic rate band is £37,700 of taxable income (income after the Personal Allowance).
 - The allowance can be set against the gains charged at the highest rates. It is not transferable and cannot be carried forward. No allowance is due for a year in which the FIG regime or Overseas Workday Relief is claimed.
@@ -69,10 +69,10 @@ Out of scope, refer: companies and other businesses holding tokens (Corporation 
 
 | Band | Taxable income | Rate |
 | --- | --- | --- |
-| Personal Allowance | Up to £12,570 | 0% |
-| Basic rate | £12,571 to £50,270 | 20% |
-| Higher rate | £50,271 to £125,140 | 40% |
-| Additional rate | Over £125,140 | 45% |
+| Personal Allowance | Up to £12,570 | 0% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Basic rate | £12,571 to £50,270 | 20% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Higher rate | £50,271 to £125,140 | 40% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
+| Additional rate | Over £125,140 | 45% Source: https://www.gov.uk/income-tax-rates (tax year 2026) (read 2026-10-31) |
 
 The Personal Allowance goes down by £1 for every £2 of adjusted net income above £100,000. Scotland has different bands: refer.
 
@@ -316,6 +316,41 @@ The UK rules implement the OECD CARF through the regulations above. Questions ab
 - [ ] Client told about CARF: details given to every platform; HMRC will receive 2026 data from 2027.
 - [ ] Earlier unpaid tax: Cryptoasset Disclosure Service considered.
 - [ ] Figures labelled as estimates until records are confirmed.
+
+## Checked examples
+
+```oa-check
+name: Crypto gain GBP 12,000, basic rate taxpayer (2026/27)
+inputs:
+  gain: 12000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 18)
+expected:
+  taxable: 9000
+  tax: 1620
+```
+
+```oa-check
+name: Crypto gain GBP 12,000, higher rate taxpayer (2026/27)
+inputs:
+  gain: 12000
+  aea: 3000
+steps:
+  - taxable: gain - aea
+  - tax: pct(taxable, 24)
+expected:
+  taxable: 9000
+  tax: 2160
+```
+
+## Sources
+
+- https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances (read 2026-10-31)
+- https://www.gov.uk/income-tax-rates (read 2026-10-31)
+
+Not yet confirmed: three capital gains rows, GBP 1,500 trustee allowance not on the pages read.
 
 <!-- openaccountants-cta-block -->
 
