@@ -1,0 +1,1031 @@
+{
+  "method": "Independent Decimal AST evaluator authored for this review; no writer scripts or repository checker imported. Semantic and legal assumptions assessed separately in full-pack-review.md.",
+  "executions": 37,
+  "distinct_exact_blocks": 30,
+  "expected_fields": 138,
+  "results": [
+    {
+      "file": "skills/international/liechtenstein/li-income-tax.md",
+      "line": 206,
+      "name": "Liechtenstein assumed full-year single minimum-income screen",
+      "block_sha256": "27b8cca3512d4c775629c29750c8f915b68b5cce6532ded6d3162888dd85b21e",
+      "checks": {
+        "annual_gross_minimum": {
+          "computed": "25200",
+          "expected": "25200",
+          "pass": true
+        },
+        "income_below_minimum": {
+          "computed": "1200",
+          "expected": "1200",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-income-tax.md",
+      "line": 226,
+      "name": "Liechtenstein assumed employee expense pension and wealth bridge",
+      "block_sha256": "78408c308ab32ef2b30b64a3f74a6ba9bf477feb8b7d56084675dd11c1d9ea93",
+      "checks": {
+        "annual_commuting_km": {
+          "computed": "13200",
+          "expected": "13200",
+          "pass": true
+        },
+        "commuting_cost": {
+          "computed": "6280.0",
+          "expected": "6280",
+          "pass": true
+        },
+        "supported_job_costs": {
+          "computed": "7380.0",
+          "expected": "7380",
+          "pass": true
+        },
+        "earning_cost_deduction": {
+          "computed": "7380.0",
+          "expected": "7380",
+          "pass": true
+        },
+        "pension_cap": {
+          "computed": "16200.00",
+          "expected": "16200",
+          "pass": true
+        },
+        "allowed_pension": {
+          "computed": "7000",
+          "expected": "7000",
+          "pass": true
+        },
+        "allowed_private_premiums": {
+          "computed": "2500",
+          "expected": "2500",
+          "pass": true
+        },
+        "adjusted_employment_income": {
+          "computed": "68120.0",
+          "expected": "68120",
+          "pass": true
+        },
+        "rounded_wealth": {
+          "computed": "300000",
+          "expected": "300000",
+          "pass": true
+        },
+        "deemed_wealth_income": {
+          "computed": "12000.00",
+          "expected": "12000",
+          "pass": true
+        },
+        "rounded_taxable_income": {
+          "computed": "80120",
+          "expected": "80120",
+          "pass": true
+        },
+        "state_tax": {
+          "computed": "2262.00",
+          "expected": "2262",
+          "pass": true
+        },
+        "municipal_tax": {
+          "computed": "3393.000",
+          "expected": "3393",
+          "pass": true
+        },
+        "combined_before_credits": {
+          "computed": "5655.000",
+          "expected": "5655",
+          "pass": true
+        },
+        "assumed_balance": {
+          "computed": "655.000",
+          "expected": "655",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "line": 127,
+      "name": "Liechtenstein assumed standard VAT inclusive invoice",
+      "block_sha256": "1b59507f6ba58867a6794d7aa9184dc16ab4e6bfb2b7ccf3601b659d6006493a",
+      "checks": {
+        "net_price": {
+          "computed": "1.0E+4",
+          "expected": "10000",
+          "pass": true
+        },
+        "output_vat": {
+          "computed": "810",
+          "expected": "810",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/liechtenstein-vat.md",
+      "line": 144,
+      "name": "Liechtenstein assumed movable asset partial use change calendar periods",
+      "block_sha256": "3e7701dd449fc6019f2bb83525bcdc37507bdb387640fe1739a7d57beadb8b87",
+      "checks": {
+        "cumulative_vat_reduction_fraction": {
+          "computed": "0.6",
+          "expected": "0.6",
+          "pass": true
+        },
+        "remaining_vat_fraction": {
+          "computed": "0.4",
+          "expected": "0.4",
+          "pass": true
+        },
+        "remaining_time_value_vat": {
+          "computed": "4000.0",
+          "expected": "4000",
+          "pass": true
+        },
+        "required_partial_correction": {
+          "computed": "2000.00",
+          "expected": "2000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-cross-border.md",
+      "line": 152,
+      "name": "Liechtenstein assumed individual wealth income foreign credit base",
+      "block_sha256": "53915343c1b8f049d2a8e769ea95197c6b3e5750e8dc41b05e22790ce3d5cd48",
+      "checks": {
+        "net_relevant_assets": {
+          "computed": "150000",
+          "expected": "150000",
+          "pass": true
+        },
+        "relevant_deemed_yield": {
+          "computed": "6000.00",
+          "expected": "6000",
+          "pass": true
+        },
+        "net_credit_income_base": {
+          "computed": "5000.00",
+          "expected": "5000",
+          "pass": true
+        },
+        "domestic_credit_ceiling": {
+          "computed": "600.0000",
+          "expected": "600",
+          "pass": true
+        },
+        "allowed_credit": {
+          "computed": "600.0000",
+          "expected": "600",
+          "pass": true
+        },
+        "uncredited_foreign_tax": {
+          "computed": "300.0000",
+          "expected": "300",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-cross-border.md",
+      "line": 181,
+      "name": "Liechtenstein assumed business foreign credit net base",
+      "block_sha256": "00c84b053ce7d46e6b5bfb8bfc6a7722b44aa35d60230a292af9889df70e9733",
+      "checks": {
+        "net_foreign_credit_base": {
+          "computed": "15000",
+          "expected": "15000",
+          "pass": true
+        },
+        "domestic_credit_ceiling": {
+          "computed": "1500.0",
+          "expected": "1500",
+          "pass": true
+        },
+        "allowed_credit": {
+          "computed": "1500.0",
+          "expected": "1500",
+          "pass": true
+        },
+        "uncredited_foreign_tax": {
+          "computed": "500.0",
+          "expected": "500",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-payroll-social.md",
+      "line": 209,
+      "name": "Liechtenstein 2026 assumed employee contribution split",
+      "block_sha256": "c8c026a539f811638bfe2bb1f7e3decc39d1fae3415c87f729383a2894391c01",
+      "checks": {
+        "ahv_iv_fak_deduction": {
+          "computed": "2940.000",
+          "expected": "2940",
+          "pass": true
+        },
+        "alv_base": {
+          "computed": "60000",
+          "expected": "60000",
+          "pass": true
+        },
+        "alv_deduction": {
+          "computed": "300.000",
+          "expected": "300",
+          "pass": true
+        },
+        "specified_employee_deductions": {
+          "computed": "3240.000",
+          "expected": "3240",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-payroll-social.md",
+      "line": 232,
+      "name": "Liechtenstein 2026 assumed employer contribution and ALV ceiling",
+      "block_sha256": "9666c3261b2a355c9494dd3e3b7b7226fd2c207f75a64b8c82672eebedea68ba",
+      "checks": {
+        "ahv_iv_fak_vk_charge": {
+          "computed": "11077.50000",
+          "expected": "11077.5",
+          "pass": true
+        },
+        "alv_base": {
+          "computed": "126000",
+          "expected": "126000",
+          "pass": true
+        },
+        "alv_charge": {
+          "computed": "630.000",
+          "expected": "630",
+          "pass": true
+        },
+        "specified_employer_charges": {
+          "computed": "11707.50000",
+          "expected": "11707.5",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-transfer-pricing.md",
+      "line": 113,
+      "name": "Liechtenstein assumed group route goods threshold",
+      "block_sha256": "bf33ffecd4bdaf3b789bef431adaebfdfe05f2ed6e3e2fc2eaffe3b73c645e90",
+      "checks": {
+        "party_year_purchases": {
+          "computed": "1100000",
+          "expected": "1100000",
+          "pass": true
+        },
+        "excess_over_threshold": {
+          "computed": "100000",
+          "expected": "100000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-transfer-pricing.md",
+      "line": 131,
+      "name": "Liechtenstein assumed gross cost plus denominator control",
+      "block_sha256": "afdb683e0d67f634a4e0218fd7d14498c019afcefab35bd8f7ad0764d96bbb0d",
+      "checks": {
+        "gross_profit": {
+          "computed": "8000.00",
+          "expected": "8000",
+          "pass": true
+        },
+        "transaction_revenue": {
+          "computed": "108000.00",
+          "expected": "108000",
+          "pass": true
+        },
+        "profit_as_percent_of_sales": {
+          "computed": "7.407407407407407407407407407",
+          "expected": "7.407407407407407",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "line": 123,
+      "name": "Liechtenstein assumed operating liquidity modified equity and loss bridge",
+      "block_sha256": "3a5a15dd5f758d9b8e8eb0d73945f26b57688b59e7c6d8a19848da09a63c0b9e",
+      "checks": {
+        "liquidity_balance": {
+          "computed": "220000.0",
+          "expected": "220000",
+          "pass": true
+        },
+        "turnover_cash_excess": {
+          "computed": "100000.00",
+          "expected": "100000",
+          "pass": true
+        },
+        "presumed_excess_liquidity": {
+          "computed": "100000.00",
+          "expected": "100000",
+          "pass": true
+        },
+        "residual_asset_deduction": {
+          "computed": "60000.00",
+          "expected": "60000",
+          "pass": true
+        },
+        "modified_equity": {
+          "computed": "520000.00",
+          "expected": "520000",
+          "pass": true
+        },
+        "profit_before_equity": {
+          "computed": "105000",
+          "expected": "105000",
+          "pass": true
+        },
+        "allowed_equity_deduction": {
+          "computed": "20800.0000",
+          "expected": "20800",
+          "pass": true
+        },
+        "profit_before_losses": {
+          "computed": "84200.0000",
+          "expected": "84200",
+          "pass": true
+        },
+        "losses_used": {
+          "computed": "58940.00000",
+          "expected": "58940",
+          "pass": true
+        },
+        "taxable_profit": {
+          "computed": "25260.00000",
+          "expected": "25260",
+          "pass": true
+        },
+        "ordinary_tax": {
+          "computed": "3157.50000000",
+          "expected": "3157.5",
+          "pass": true
+        },
+        "resulting_income_tax": {
+          "computed": "3157.50000000",
+          "expected": "3157.5",
+          "pass": true
+        },
+        "closing_loss_balance": {
+          "computed": "1060.00000",
+          "expected": "1060",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-corporate-income-tax.md",
+      "line": 179,
+      "name": "Liechtenstein assumed applicable minimum tax comparison",
+      "block_sha256": "0b673346eb09a9e8a0b1015a33277ab542589343a613974cfaad42375f4db5c0",
+      "checks": {
+        "ordinary_tax": {
+          "computed": "1250.000",
+          "expected": "1250",
+          "pass": true
+        },
+        "resulting_income_tax": {
+          "computed": "1800",
+          "expected": "1800",
+          "pass": true
+        },
+        "increase_due_to_minimum": {
+          "computed": "550.000",
+          "expected": "550",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-company-formation.md",
+      "line": 90,
+      "name": "Liechtenstein assumed GmbH contribution total",
+      "block_sha256": "72e444f2584230c5ac6483c8ec72107213955f7ed6fdcb7dbf3435e1f9363856",
+      "checks": {
+        "total_capital": {
+          "computed": "10000",
+          "expected": "10000",
+          "pass": true
+        },
+        "capital_shortfall": {
+          "computed": "0",
+          "expected": "0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "skills/international/liechtenstein/li-company-formation.md",
+      "line": 109,
+      "name": "Liechtenstein assumed AG contribution and statutory minimum",
+      "block_sha256": "afb496011551e5ddd36ed6074edc01cf56315988e0db218dbac893232701af5d",
+      "checks": {
+        "assumed_fractional_payment": {
+          "computed": "25000.00",
+          "expected": "25000",
+          "pass": true
+        },
+        "required_funding_screen": {
+          "computed": "50000",
+          "expected": "50000",
+          "pass": true
+        },
+        "assumed_unpaid_subscribed_amount": {
+          "computed": "50000",
+          "expected": "50000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-transfer-pricing-evidence/retained-original-controls.md",
+      "line": 9,
+      "name": "Liechtenstein assumed group route goods threshold",
+      "block_sha256": "bf33ffecd4bdaf3b789bef431adaebfdfe05f2ed6e3e2fc2eaffe3b73c645e90",
+      "checks": {
+        "party_year_purchases": {
+          "computed": "1100000",
+          "expected": "1100000",
+          "pass": true
+        },
+        "excess_over_threshold": {
+          "computed": "100000",
+          "expected": "100000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-transfer-pricing-evidence/retained-original-controls.md",
+      "line": 27,
+      "name": "Liechtenstein assumed separate size route service category",
+      "block_sha256": "7bd9cdc9c179e050b8ea2816d87d7ff6a4404291d272c5858e7958c1b76d5b79",
+      "checks": {
+        "party_category_year_total": {
+          "computed": "140000",
+          "expected": "140000",
+          "pass": true
+        },
+        "excess_over_threshold": {
+          "computed": "15000",
+          "expected": "15000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-transfer-pricing-evidence/retained-original-controls.md",
+      "line": 45,
+      "name": "Liechtenstein assumed gross cost plus denominator control",
+      "block_sha256": "afdb683e0d67f634a4e0218fd7d14498c019afcefab35bd8f7ad0764d96bbb0d",
+      "checks": {
+        "gross_profit": {
+          "computed": "8000.00",
+          "expected": "8000",
+          "pass": true
+        },
+        "transaction_revenue": {
+          "computed": "108000.00",
+          "expected": "108000",
+          "pass": true
+        },
+        "profit_as_percent_of_sales": {
+          "computed": "7.407407407407407407407407407",
+          "expected": "7.407407407407407",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/liechtenstein-vat-evidence/retained-original-controls.md",
+      "line": 11,
+      "name": "Liechtenstein assumed standard VAT inclusive invoice",
+      "block_sha256": "1b59507f6ba58867a6794d7aa9184dc16ab4e6bfb2b7ccf3601b659d6006493a",
+      "checks": {
+        "net_price": {
+          "computed": "1.0E+4",
+          "expected": "10000",
+          "pass": true
+        },
+        "output_vat": {
+          "computed": "810",
+          "expected": "810",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/liechtenstein-vat-evidence/retained-original-controls.md",
+      "line": 28,
+      "name": "Liechtenstein assumed reduced goods and accommodation rates",
+      "block_sha256": "d9a8dce06eabd4cfb2991839a949758428e2a05933a3cabd4dd299a0d781c73d",
+      "checks": {
+        "reduced_vat": {
+          "computed": "26.000",
+          "expected": "26",
+          "pass": true
+        },
+        "accommodation_vat": {
+          "computed": "7.600",
+          "expected": "7.6",
+          "pass": true
+        },
+        "combined_output_vat": {
+          "computed": "33.600",
+          "expected": "33.6",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/liechtenstein-vat-evidence/retained-original-controls.md",
+      "line": 49,
+      "name": "Liechtenstein assumed acquisition tax with partial input entitlement",
+      "block_sha256": "ccf1791edc5685f9df0e18d23adc9405c190fd4a7ae9dd54eeef301b8f5ace70",
+      "checks": {
+        "acquisition_tax": {
+          "computed": "81.000",
+          "expected": "81",
+          "pass": true
+        },
+        "deductible_input": {
+          "computed": "56.7000",
+          "expected": "56.7",
+          "pass": true
+        },
+        "net_tax_effect": {
+          "computed": "24.3000",
+          "expected": "24.3",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/liechtenstein-vat-evidence/retained-original-controls.md",
+      "line": 69,
+      "name": "Liechtenstein assumed food supply classification comparison",
+      "block_sha256": "c577280c55f94b57ed7b83125a802891ab4cd4013b7fb8be5638eb712075e424",
+      "checks": {
+        "qualifying_goods_vat": {
+          "computed": "13.000",
+          "expected": "13",
+          "pass": true
+        },
+        "restaurant_vat": {
+          "computed": "40.500",
+          "expected": "40.5",
+          "pass": true
+        },
+        "difference": {
+          "computed": "27.500",
+          "expected": "27.5",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-corporate-income-tax-evidence/retained-original-controls.md",
+      "line": 5,
+      "name": "Liechtenstein assumed corporate equity and loss bridge",
+      "block_sha256": "b723f5d770f082a47f94ff2cabc9fe8b2ad94f01b6b00b7403661fd5b8dc7348",
+      "checks": {
+        "profit_before_equity": {
+          "computed": "105000",
+          "expected": "105000",
+          "pass": true
+        },
+        "equity_deduction": {
+          "computed": "20000.00",
+          "expected": "20000",
+          "pass": true
+        },
+        "profit_before_losses": {
+          "computed": "85000.00",
+          "expected": "85000",
+          "pass": true
+        },
+        "losses_used": {
+          "computed": "59500.000",
+          "expected": "59500",
+          "pass": true
+        },
+        "taxable_profit": {
+          "computed": "25500.000",
+          "expected": "25500",
+          "pass": true
+        },
+        "ordinary_tax": {
+          "computed": "3187.500000",
+          "expected": "3187.5",
+          "pass": true
+        },
+        "income_tax_with_minimum": {
+          "computed": "3187.500000",
+          "expected": "3187.5",
+          "pass": true
+        },
+        "closing_loss_balance": {
+          "computed": "500.000",
+          "expected": "500",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-corporate-income-tax-evidence/retained-original-controls.md",
+      "line": 36,
+      "name": "Liechtenstein assumed applicable minimum tax comparison",
+      "block_sha256": "0b673346eb09a9e8a0b1015a33277ab542589343a613974cfaad42375f4db5c0",
+      "checks": {
+        "ordinary_tax": {
+          "computed": "1250.000",
+          "expected": "1250",
+          "pass": true
+        },
+        "resulting_income_tax": {
+          "computed": "1800",
+          "expected": "1800",
+          "pass": true
+        },
+        "increase_due_to_minimum": {
+          "computed": "550.000",
+          "expected": "550",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-corporate-income-tax-evidence/retained-original-controls.md",
+      "line": 52,
+      "name": "Liechtenstein assumed equity deduction no new loss",
+      "block_sha256": "545f3ae2a501f69c7a1dbdf3ad3fecce94d1bea4c91ba50c2a6806428ff63888",
+      "checks": {
+        "raw_equity_amount": {
+          "computed": "20000.00",
+          "expected": "20000",
+          "pass": true
+        },
+        "allowed_equity_deduction": {
+          "computed": "10000",
+          "expected": "10000",
+          "pass": true
+        },
+        "profit_after_equity": {
+          "computed": "0",
+          "expected": "0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-corporate-income-tax-evidence/retained-original-controls.md",
+      "line": 68,
+      "name": "Liechtenstein assumed three year minimum tax balance screen",
+      "block_sha256": "1619936dc42beae77e561e8a32782b46919852d9d53e74a6e05b0cc78cbd1161",
+      "checks": {
+        "three_year_average": {
+          "computed": "500000",
+          "expected": "500000",
+          "pass": true
+        },
+        "remaining_limit": {
+          "computed": "0",
+          "expected": "0",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-cross-border-evidence/retained-original-controls.md",
+      "line": 9,
+      "name": "Liechtenstein assumed eligible foreign tax credit ceiling",
+      "block_sha256": "b9f0854f9c339c25a8910781ab96eb7d95aeb301bf01585653e369fe7d246a21",
+      "checks": {
+        "available_credit": {
+          "computed": "1200",
+          "expected": "1200",
+          "pass": true
+        },
+        "uncredited_foreign_tax": {
+          "computed": "400",
+          "expected": "400",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-cross-border-evidence/retained-original-controls.md",
+      "line": 26,
+      "name": "Liechtenstein assumed specified nonresident board withholding",
+      "block_sha256": "279053cb982187c73011b92f8725b13916557cd95ef51082d6375fe390ea1ba0",
+      "checks": {
+        "source_tax": {
+          "computed": "1200.00",
+          "expected": "1200",
+          "pass": true
+        },
+        "cash_after_source_tax_only": {
+          "computed": "8800.00",
+          "expected": "8800",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-cross-border-evidence/retained-original-controls.md",
+      "line": 43,
+      "name": "Liechtenstein assumed corporate asset exit uplift",
+      "block_sha256": "195b21fa13551584e76ba43bbcfd11da8f5dad54b7604ca92e774493f2706d0f",
+      "checks": {
+        "assumed_taxable_uplift": {
+          "computed": "40000",
+          "expected": "40000",
+          "pass": true
+        },
+        "isolated_tax_before_other_rules": {
+          "computed": "5000.000",
+          "expected": "5000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/retained-original-controls.md",
+      "line": 5,
+      "name": "Liechtenstein assumed full-year single minimum-income screen",
+      "block_sha256": "27b8cca3512d4c775629c29750c8f915b68b5cce6532ded6d3162888dd85b21e",
+      "checks": {
+        "annual_gross_minimum": {
+          "computed": "25200",
+          "expected": "25200",
+          "pass": true
+        },
+        "income_below_minimum": {
+          "computed": "1200",
+          "expected": "1200",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/retained-original-controls.md",
+      "line": 19,
+      "name": "Liechtenstein assumed ordinary tax with deemed wealth yield",
+      "block_sha256": "6a691f6e6b147c21f32b0170fb6f5f0f65e2276deba459b1b2aa97d998be37a3",
+      "checks": {
+        "deemed_wealth_income": {
+          "computed": "20000.00",
+          "expected": "20000",
+          "pass": true
+        },
+        "combined_taxable_income": {
+          "computed": "100000.00",
+          "expected": "100000",
+          "pass": true
+        },
+        "state_tax": {
+          "computed": "3256.0000",
+          "expected": "3256",
+          "pass": true
+        },
+        "municipality_tax": {
+          "computed": "4884.00000",
+          "expected": "4884",
+          "pass": true
+        },
+        "combined_tax_before_credits": {
+          "computed": "8140.00000",
+          "expected": "8140",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/retained-original-controls.md",
+      "line": 42,
+      "name": "Liechtenstein assumed joint state formula and municipality tax",
+      "block_sha256": "0393a4a703ea6d7d7d79c2050570cf46684e3f772a3815f3bd6eb9857e674f7e",
+      "checks": {
+        "state_tax": {
+          "computed": "6512.00",
+          "expected": "6512",
+          "pass": true
+        },
+        "municipality_tax": {
+          "computed": "11721.600",
+          "expected": "11721.6",
+          "pass": true
+        },
+        "combined_tax_before_credits": {
+          "computed": "18233.600",
+          "expected": "18233.6",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/retained-original-controls.md",
+      "line": 59,
+      "name": "Liechtenstein assumed qualifying single parent formula",
+      "block_sha256": "82fa7ba58ffd87550ced2141a119d212beb08f20e3bf055106e80209aeecbedc",
+      "checks": {
+        "state_tax": {
+          "computed": "4884.00",
+          "expected": "4884",
+          "pass": true
+        },
+        "municipality_tax": {
+          "computed": "9768.00",
+          "expected": "9768",
+          "pass": true
+        },
+        "combined_tax_before_credits": {
+          "computed": "14652.00",
+          "expected": "14652",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-income-tax-evidence/retained-original-controls.md",
+      "line": 76,
+      "name": "Liechtenstein assumed ordinary individual business loss cap",
+      "block_sha256": "3f1c046ee38c5496e10e6ce2e37bbf947d48c8b26db48e557f3c2d404221edff",
+      "checks": {
+        "ordinary_loss_limit": {
+          "computed": "70000.0",
+          "expected": "70000",
+          "pass": true
+        },
+        "losses_used": {
+          "computed": "70000.0",
+          "expected": "70000",
+          "pass": true
+        },
+        "relevant_income_after_loss": {
+          "computed": "30000.0",
+          "expected": "30000",
+          "pass": true
+        },
+        "losses_remaining": {
+          "computed": "20000.0",
+          "expected": "20000",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-payroll-social-evidence/retained-original-controls.md",
+      "line": 9,
+      "name": "Liechtenstein 2026 assumed employee contribution split",
+      "block_sha256": "c8c026a539f811638bfe2bb1f7e3decc39d1fae3415c87f729383a2894391c01",
+      "checks": {
+        "ahv_iv_fak_deduction": {
+          "computed": "2940.000",
+          "expected": "2940",
+          "pass": true
+        },
+        "alv_base": {
+          "computed": "60000",
+          "expected": "60000",
+          "pass": true
+        },
+        "alv_deduction": {
+          "computed": "300.000",
+          "expected": "300",
+          "pass": true
+        },
+        "specified_employee_deductions": {
+          "computed": "3240.000",
+          "expected": "3240",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-payroll-social-evidence/retained-original-controls.md",
+      "line": 32,
+      "name": "Liechtenstein 2026 assumed employer contribution and ALV ceiling",
+      "block_sha256": "9666c3261b2a355c9494dd3e3b7b7226fd2c207f75a64b8c82672eebedea68ba",
+      "checks": {
+        "ahv_iv_fak_vk_charge": {
+          "computed": "11077.50000",
+          "expected": "11077.5",
+          "pass": true
+        },
+        "alv_base": {
+          "computed": "126000",
+          "expected": "126000",
+          "pass": true
+        },
+        "alv_charge": {
+          "computed": "630.000",
+          "expected": "630",
+          "pass": true
+        },
+        "specified_employer_charges": {
+          "computed": "11707.50000",
+          "expected": "11707.5",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-payroll-social-evidence/retained-original-controls.md",
+      "line": 55,
+      "name": "Liechtenstein bulletin part year ALV example",
+      "block_sha256": "def96ac9fbde44459e349335b93e0494be36e2d2edf8ddaea3db21e310de8e5d",
+      "checks": {
+        "period_cap": {
+          "computed": "88900",
+          "expected": "88900",
+          "pass": true
+        },
+        "liable_wage": {
+          "computed": "88900",
+          "expected": "88900",
+          "pass": true
+        },
+        "employee_contribution": {
+          "computed": "444.500",
+          "expected": "444.5",
+          "pass": true
+        },
+        "employer_contribution": {
+          "computed": "444.500",
+          "expected": "444.5",
+          "pass": true
+        },
+        "combined_contribution": {
+          "computed": "889.000",
+          "expected": "889",
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "file": "ledgers/li-payroll-social-evidence/retained-original-controls.md",
+      "line": 81,
+      "name": "Liechtenstein assumed confirmed ordinary wage withholding",
+      "block_sha256": "6858f8ae2fa23bfda1994562f59721ee5f3cad8ac48bf3e055e933694eaf0e79",
+      "checks": {
+        "wage_withholding": {
+          "computed": "675.00",
+          "expected": "675",
+          "pass": true
+        }
+      },
+      "pass": true
+    }
+  ]
+}
