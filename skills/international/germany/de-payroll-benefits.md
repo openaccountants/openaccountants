@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax reference material for AI-assisted work. It has not been reviewed for any specific employer's or employee's facts. A Steuerberater or payroll accountant should confirm the treatment before a real payroll run.
 
-**Sibling skills.** The monthly wage tax and contribution run (tax classes, the 2026 PAP, rates, ceilings, Minijobs, filing and payment dates): [de-payroll](de-payroll.md). [germany-payroll](germany-payroll.md) is an older version of that run. The employee's own annual return: [de-employee-income-tax](de-employee-income-tax.md). Contributions of the self-employed: [de-social-contributions](de-social-contributions.md). Non-residents: [de-non-resident-tax](de-non-resident-tax.md).
+**Sibling skills.** The monthly wage tax and contribution run (tax classes, the 2026 PAP, rates, ceilings, Minijobs, filing and payment dates): [de-payroll](de-payroll.md). The employee's own annual return: [de-employee-income-tax](de-employee-income-tax.md). Contributions of the self-employed: [de-social-contributions](de-social-contributions.md). Non-residents: [de-non-resident-tax](de-non-resident-tax.md).
 
 ## Who this applies to
 

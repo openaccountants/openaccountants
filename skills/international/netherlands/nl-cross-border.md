@@ -1,6 +1,6 @@
 ---
 name: nl-cross-border
-description: "Hub skill for crossing the Dutch border in tax year 2026. Covers tax residence for individuals (facts and circumstances, AWR art. 4) and companies (seat by circumstances plus the incorporation fiction in Wet Vpb art. 2(5)); arriving under the expat scheme (30% ruling) with the 2026 salary norm and the fall to 27% from 2027; non-residents taxed on Dutch box 1, box 2 and box 3 income and qualifying non-resident status; leaving, with the protective assessment (conserverende aanslag) on box 2 shares and pensions; the M return for the migration year; 15% dividend tax and the conditional withholding tax at 25.8% on payments to low-tax jurisdictions; treaty relief. Trigger on: moving to the Netherlands, leaving the Netherlands, emigrating, non-resident, expat, exit tax, conserverende aanslag, M-formulier, digital nomad, bronbelasting. Out of scope: 30% ruling detail (netherlands-30-percent-ruling), payroll (nl-payroll-tax), corporate tax (nl-corporate-tax), resident income tax (nl-income-tax)."
+description: "Hub skill for crossing the Dutch border in tax year 2026. Covers tax residence for individuals (facts and circumstances, AWR art. 4) and companies (seat by circumstances plus the incorporation fiction in Wet Vpb art. 2(5)); arriving under the expat scheme (30% ruling) with the 2026 salary norm and the fall to 27% from 2027; non-residents taxed on Dutch box 1, box 2 and box 3 income and qualifying non-resident status; leaving, with the protective assessment (conserverende aanslag) on box 2 shares and pensions; the M return for the migration year; 15% dividend tax and the conditional withholding tax at 25.8% on payments to low-tax jurisdictions; treaty relief. Trigger on: moving to the Netherlands, leaving the Netherlands, emigrating, non-resident, expat, exit tax, conserverende aanslag, M-formulier, digital nomad, bronbelasting. Out of scope: 30% ruling detail (nl-30-percent-ruling), payroll (nl-payroll-tax), corporate tax (nl-corporate-tax), resident income tax (nl-income-tax)."
 version: 0.2
 jurisdiction: NL
 tax_year: 2026
@@ -19,10 +19,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 This is the hub for the Dutch cross-border (XB) domain. It summarises and links rather than repeating other skills:
 
-- The expat scheme (30% ruling) in full: [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md) and [nl-30-percent-ruling](nl-30-percent-ruling.md).
+- The expat scheme (30% ruling) in full: [nl-30-percent-ruling](nl-30-percent-ruling.md).
 - Resident income tax, boxes and credits: [nl-income-tax](nl-income-tax.md), [nl-deductions](nl-deductions.md).
 - Corporate tax, participation exemption and fiscal unity: [nl-corporate-tax](nl-corporate-tax.md).
-- Payroll withholding for incoming and outgoing employees: [nl-payroll-tax](nl-payroll-tax.md), [netherlands-payroll](netherlands-payroll.md).
+- Payroll withholding for incoming and outgoing employees: [nl-payroll-tax](nl-payroll-tax.md).
 - Transfer pricing: [netherlands-transfer-pricing](netherlands-transfer-pricing.md). Objections: [nl-tax-objection](nl-tax-objection.md).
 
 Tax year: the calendar year. 2026 figures apply to 1 January to 31 December 2026.
@@ -74,7 +74,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 - **Box 2:** income from a substantial interest in a company established in the Netherlands (art. 7.1(b)).
 - **Box 3:** a deemed return on Dutch assets only: Dutch real estate, rights relating to it, and profit shares in a business managed in the Netherlands, less related debts (art. 7.7). A non-resident's foreign bank accounts and shares are outside it. Every non-resident gets the box 3 tax-free allowance for these assets (Belastingdienst, Fiscale informatie 2026, "U woont buiten Nederland").
 
-**Arriving: the expat scheme.** An employee recruited or seconded from abroad, who lived more than 150 km from the Dutch border for more than 16 of the 24 months before the first working day in the Netherlands (Handboek 2026 §19.4), and who meets the salary norm, can receive up to 30% of wage including the allowance tax-free for at most 60 months. The detail, including the cap, part years and the annual salary test, is in [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md). The headline history, from the Handboek Loonheffingen 2026 §19.4:
+**Arriving: the expat scheme.** An employee recruited or seconded from abroad, who lived more than 150 km from the Dutch border for more than 16 of the 24 months before the first working day in the Netherlands (Handboek 2026 §19.4), and who meets the salary norm, can receive up to 30% of wage including the allowance tax-free for at most 60 months. The detail, including the cap, part years and the annual salary test, is in [nl-30-percent-ruling](nl-30-percent-ruling.md). The headline history, from the Handboek Loonheffingen 2026 §19.4:
 
 - 2024: the law cut the maximum to 30% for the first 20 months, 20% for the next 20 and 10% for the last 20.
 - 2025: that 30/20/10 path was largely reversed. The maximum is 30% in 2025 and 2026 for every incoming employee.
@@ -106,7 +106,7 @@ The 2026 box 1 bands apply to people under AOW (state pension) age. People at AO
 - **Intentional or grossly negligent errors:** up to 100% of the tax involved. For assessment taxes: art. 67d (return not filed or incorrect, intent) and art. 67e (assessment too low through intent or gross negligence). For taxes paid on a return: art. 67f (intent or gross negligence).
 - **Tax interest (belastingrente):** 5% from 1 January 2026 (6.5% in 2025). Corporate tax now uses the same rate: the higher corporate tax percentage was dropped after the Hoge Raad ruling of 16 January 2026. Benefits (toeslagen) are not covered by this rate ([Belastingdienst belastingrente](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/belastingrente/overzicht_percentages_belastingrente)).
 - **Collection interest (invorderingsrente)** on late payment of an assessment: 4.3% from 1 January 2026 ([Belastingdienst invorderingsrente](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente)). It does not run during an approved deferral of a protective assessment.
-- **Expat scheme failure:** if the wage falls to or below the salary norm, the ruling lapses back to 1 January of that year and the payroll returns must be corrected; see [netherlands-30-percent-ruling](netherlands-30-percent-ruling.md).
+- **Expat scheme failure:** if the wage falls to or below the salary norm, the ruling lapses back to 1 January of that year and the payroll returns must be corrected; see [nl-30-percent-ruling](nl-30-percent-ruling.md).
 
 ## Cross-border points
 
