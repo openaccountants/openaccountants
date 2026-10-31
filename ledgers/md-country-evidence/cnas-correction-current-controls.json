@@ -1,0 +1,105 @@
+{
+  "status": "PASS writer arithmetic/source wording; independent countryreview/portal/case-specificaccount evidence pending",
+  "cases": [
+    {
+      "name": "Executed supported payment correction conserves the recorded amount",
+      "inputs": {
+        "assumed_recorded_source_credit": 12000,
+        "supported_executed_transfer": 9000,
+        "separate_overclaim_request": 15000
+      },
+      "actual": {
+        "source_remaining": 3000,
+        "target_movement": 9000,
+        "combined_after": 12000,
+        "overclaim_exceeds_recorded_credit": true
+      },
+      "expected": {
+        "source_remaining": 3000,
+        "target_movement": 9000,
+        "combined_after": 12000,
+        "overclaim_exceeds_recorded_credit": true
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Sourcecredit/righttorequest and actualexecution expressly assumed. Overclaimcomparison does not authorise automaticpartialposting or an actualrefund. No real economic/locality codes invented."
+    }
+  ],
+  "source_lookups": [
+    {
+      "point": "point6",
+      "checked_exact_text": "e-Cerere Corectarea",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point7",
+      "checked_exact_text": "codul fiscal greșit, codul fiscal corect",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point9",
+      "checked_exact_text": "lit.",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point10",
+      "checked_exact_text": "lit. b)",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point11",
+      "checked_exact_text": "lit. a) şi lit. b)",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point16",
+      "checked_exact_text": "în limita sumelor înregistrate",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point17",
+      "checked_exact_text": "10 zile lucrătoare",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point18",
+      "checked_exact_text": "data executării",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point20",
+      "checked_exact_text": "„999”",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point22",
+      "checked_exact_text": "data înregistrării",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point27",
+      "checked_exact_text": "data înregistrării",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point29",
+      "checked_exact_text": "Agenţia Servicii Publice",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "annex1",
+      "checked_exact_text": "bugetului public",
+      "status": "PASS source wording identity only"
+    },
+    {
+      "point": "point31",
+      "checked_exact_text": "în perioada în care au fost efectuate",
+      "status": "PASS source wording identity only"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CNAS-CORRECTION-CURRENT-20261031.json": "dd52c55817d14a0d48921a8a6c2367200a41e58dc4e6990c9a3aa793e3f1064d"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-social-contributions.md": "548b6a45f9732c3ae165ef841c7bad9c7f8ca87239e1526e5732ce5a686bc6d4"
+  }
+}

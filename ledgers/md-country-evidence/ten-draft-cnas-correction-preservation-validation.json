@@ -1,0 +1,102 @@
+{
+  "status": "PASS writer preservation/source/control/predecessor checks only; other ordinary gaps and whole-country independent review remain open",
+  "checked_on": "2026-10-31",
+  "base_commit": "f854c8cb0",
+  "checks": [
+    {
+      "slug": "md-corporate-income-tax",
+      "source_rows": 555,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-social-contributions",
+      "source_rows": 480,
+      "appended_rows": 33,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-income-tax",
+      "source_rows": 636,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-payroll",
+      "source_rows": 615,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-vat",
+      "source_rows": 354,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-transfer-pricing",
+      "source_rows": 487,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-cross-border",
+      "source_rows": 337,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-company-formation",
+      "source_rows": 209,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "md-tax-overview",
+      "source_rows": 55,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    },
+    {
+      "slug": "moldova-tax-optimization",
+      "source_rows": 137,
+      "appended_rows": 0,
+      "previous_rows_cases_destinations": "UNCHANGED",
+      "source_hash_quote_context_read_dates": "PASS",
+      "structure_metadata_CTA": "PASS"
+    }
+  ],
+  "total_source_groups": 3865,
+  "new_source_groups": 33,
+  "original_country_topic_units": 745,
+  "previous_subsequent_topic_units": 229,
+  "new_PR793_topic_units": 220,
+  "total_preserved_topic_units": 1194,
+  "previous_oa_check_blocks": 50,
+  "previous_arithmetic_cases": 57,
+  "new_arithmetic_cases": 1,
+  "new_source_lookups": 14,
+  "actual_new_official_binaries": 1,
+  "rendered_pages_read": 6,
+  "original_and_subsequent_topics": "UNCHANGED with destinations; merged793fulltext/220units preserved",
+  "scope": "CurrentCNAScorrection31points/actualannex1 fullyread, originalPDF/all6renderedpages retained. Fiscalcode/type/balance procedures, sourcecreditlimit, Treasury10workingdaydispatch and distinctrecordingdates supplied; no authenticatedposting or refundclaimed.",
+  "publication": "No new push or PR; PR793merged. CoordinateoneexistingopenMDPR after whole-countryreadiness/review; other4PRs notclosed/overwritten."
+}
