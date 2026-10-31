@@ -1,10 +1,10 @@
 ---
 name: uk-financial-statements
 description: Use this skill when preparing, reviewing, or advising on annual financial statements for a UK company. Trigger on phrases like "Companies House accounts", "FRS 102", "FRS 105", "micro-entity accounts", "small company accounts", "abbreviated accounts", "directors' report UK", "filing accounts UK", "audit exemption UK", "year-end adjustments UK", "iXBRL", "abridged accounts", "identity verification Companies House", "software filing April 2028", or any question about preparing statutory accounts under the Companies Act 2006. Covers FRS 102/105 frameworks (Periodic Review 2024 in force from 1 January 2026), the size thresholds raised for financial years beginning on or after 6 April 2025, required statements, P&L and balance sheet formats, notes, filing deadlines, late filing penalties, audit requirements, and the Economic Crime and Corporate Transparency Act changes in force in 2026 or due from April 2028. Position at 30 October 2026.
-version: 1.1
+version: 1.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -57,11 +57,11 @@ These figures were re-read against the Companies Act 2006 and the regulations on
 | Filing authority | Companies House |
 | Primary legislation | Companies Act 2006 |
 | Supporting regulations | The Small Companies and Groups (Accounts and Directors' Report) Regulations 2008; The Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008 |
-| Accounting standards | FRS 102 (full / Section 1A); FRS 105 (micro); UK-adopted IFRS (listed/choice). Periodic Review 2024 amendments apply to periods beginning on or after 1 January 2026 |
-| Financial year | Usually 12 months; an accounting reference period may not be extended beyond 18 months (CA 2006 s.392(5)) |
-| Filing deadline | 9 months after the end of the accounting reference period (private); 6 months (public) |
-| Late filing penalty | £150 to £1,500 (private); £750 to £7,500 (public); doubled if the previous year's accounts were also late |
-| Digital filing | HMRC: accounts and CT600 in iXBRL through commercial software from 1 April 2026. Companies House: software, WebFiling or paper today; software only (iXBRL) for accounts from April 2028 |
+| Accounting standards | FRS 102 (full / Section 1A); FRS 105 (micro); UK-adopted IFRS (listed/choice). Periodic Review 2024 amendments apply to periods beginning on or after 1 January 2026 Source: https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/ (tax year 2026) (read 2026-10-31) |
+| Financial year | Usually 12 months; an accounting reference period may not be extended beyond 18 months (CA 2006 s.392(5)) Source: https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf (tax year 2026) (read 2026-10-31) |
+| Filing deadline | 9 months after the end of the accounting reference period (private); 6 months (public) Source: https://www.gov.uk/government/publications/filing-your-companies-house-accounts (tax year 2026) (read 2026-10-31) |
+| Late filing penalty | £150 to £1,500 (private); £750 to £7,500 (public); doubled if the previous year's accounts were also late Source: https://www.legislation.gov.uk/uksi/2008/497/regulation/4 (tax year 2026) (read 2026-10-31) |
+| Digital filing | HMRC: accounts and CT600 in iXBRL through commercial software from 1 April 2026. Companies House: software, WebFiling or paper today; software only (iXBRL) for accounts from April 2028 Source: https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return (tax year 2026) (read 2026-10-31) |
 | Identity verification | Compulsory for directors and PSCs since 18 November 2025 (Section 11) |
 
 ## Section 2 -- Reporting Framework
@@ -327,19 +327,19 @@ This skill and its outputs are provided for informational and computational purp
 | Companies Act 2006 s.442 (period for filing) | https://www.legislation.gov.uk/ukpga/2006/46/section/442 | 2026-10-30 |
 | Companies Act 2006 s.444 (filing: small companies) | https://www.legislation.gov.uk/ukpga/2006/46/section/444 | 2026-10-30 |
 | Companies Act 2006 s.453 (civil penalty) | https://www.legislation.gov.uk/ukpga/2006/46/section/453 | 2026-10-30 |
-| SI 2008/497 reg 4 (late filing penalties) | https://www.legislation.gov.uk/uksi/2008/497/regulation/4 | 2026-10-30 |
+| SI 2008/497 reg 4 (late filing penalties) | https://www.legislation.gov.uk/uksi/2008/497/regulation/4 | 2026-10-31 |
 | GOV.UK, Penalties for late filing | https://www.gov.uk/annual-accounts/penalties-for-late-filing | 2026-10-30 |
 | Companies Act 2006 s.476, s.477, s.478, s.479A (audit) | https://www.legislation.gov.uk/ukpga/2006/46/section/477 | 2026-10-30 |
 | Charities Act 2011 s.144 (charity audit) | https://www.legislation.gov.uk/ukpga/2011/25/section/144 | 2026-10-30 |
 | SI 2026/427, Charities Acts 1992 and 2011 (Substitution of Sums) Order 2026 | https://www.legislation.gov.uk/uksi/2026/427/made | 2026-10-30 |
-| FRC, FRS 102 page (Periodic Review 2024, small entity directors' remuneration, 2027 amendments) | https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/ | 2026-10-30 |
+| FRC, FRS 102 page (Periodic Review 2024, small entity directors' remuneration, 2027 amendments) | https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-102/ | 2026-10-31 |
 | FRC, Amendments to FRS 102 and other FRSs: Periodic Review 2024 (summary) | https://www.frc.org.uk/documents/7128/Amendments_to_FRS_102_and_other_FRSs.pdf | 2026-10-30 |
 | Companies House, news story "Companies House update to accounts filing from April 2028", published 23 October 2026 | https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 | 2026-10-30 |
 | Companies House, When you need to verify your identity | https://www.gov.uk/guidance/when-you-need-to-verify-your-identity-for-companies-house | 2026-10-30 |
 | Companies House, Filing your Companies House information online | https://www.gov.uk/guidance/filing-your-companies-house-information-online | 2026-10-30 |
-| Companies House, Filing your Companies House accounts | https://www.gov.uk/government/publications/filing-your-companies-house-accounts | 2026-10-30 |
-| HMRC, Closure of the service to file company accounts and tax return | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-30 |
-| FRC, FRS 102 (September 2024 edition), paras 1AC.35, 11.21, 13.4, 17.19, 18.8H, 21.4, 24.4, 28.6, 29.6 | https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf | 2026-10-30 |
+| Companies House, Filing your Companies House accounts | https://www.gov.uk/government/publications/filing-your-companies-house-accounts | 2026-10-31 |
+| HMRC, Closure of the service to file company accounts and tax return | https://www.gov.uk/guidance/closure-of-the-service-to-file-your-company-accounts-and-tax-return | 2026-10-31 |
+| FRC, FRS 102 (September 2024 edition), paras 1AC.35, 11.21, 13.4, 17.19, 18.8H, 21.4, 24.4, 28.6, 29.6 | https://www.frc.org.uk/documents/7668/FRS_102_September_2024_tmKYWO6.pdf | 2026-10-31 |
 | FRC, FRS 101 Reduced Disclosure Framework | https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/uk-accounting-standards/frs-101/ | 2026-10-30 |
 | SI 2008/409 Schedule 1 (formats) | https://www.legislation.gov.uk/uksi/2008/409/schedule/1 | 2026-10-30 |
 | Companies Act 2006 s.393 (true and fair view; micro-entities) | https://www.legislation.gov.uk/ukpga/2006/46/section/393 | 2026-10-30 |

@@ -1,10 +1,10 @@
 ---
 name: uk-rental-sa105
 description: Use this skill whenever asked about UK property income or rental income for individuals. Trigger on phrases like "SA105", "rental income UK", "property income", "buy-to-let", "letting income", "landlord tax UK", "rent-a-room", "mortgage interest relief", "Section 24", "property allowance", "non-resident landlord scheme", "NRLS", "furnished holiday let", "FHL abolished", "FHL abolition", "repairs deduction", "letting agent fees", "property expenses", "UK property pages", "April 2026 property tax", "property income hike", "MTD ITSA landlord", or any question about computing, filing, or reporting UK property income on a Self Assessment tax return. Covers SA105 form structure, allowable expenses, mortgage interest restriction, Rent-a-Room relief, property income allowance, non-resident landlord scheme, the abolition of FHL rules, and the April 2026 property income rate change announced at Autumn Budget 2025. ALWAYS read this skill before touching any UK rental income work.
-version: 1.1
+version: 1.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -74,11 +74,11 @@ Out of scope: companies, partnership and trust returns, overseas property (the "
 
 | Item | Figure | Years |
 | --- | --- | --- |
-| Property allowance | £1,000 a year | Each tax year from 6 April 2017, including 2025/26 and 2026/27 |
-| Rent-a-Room limit | £7,500 (£3,750 if someone else also gets letting income from the same property) | 2025/26 (HS223 2026); HMRC's current guidance gives the same figure |
-| Cash basis ceiling | Receipts £150,000 or less | 2017/18 onwards |
-| Consolidated expenses (one figure in box 29) | Property income before expenses below £90,000 | 2025/26 return |
-| Loss set against total income (capital allowances or agricultural losses only) | Relief capped at the greater of £50,000 or 25% of adjusted total income | 2025/26 return |
+| Property allowance | £1,000 a year | Each tax year from 6 April 2017, including 2025/26 and 2026/27 Source: https://www.gov.uk/guidance/tax-free-allowances-on-property-and-trading-income (tax year 2026) (read 2026-10-31) |
+| Rent-a-Room limit | £7,500 (£3,750 if someone else also gets letting income from the same property) | 2025/26 (HS223 2026); HMRC's current guidance gives the same figure Source: https://www.gov.uk/government/publications/rent-a-room-for-traders-hs223-self-assessment-helpsheet/hs223-rent-a-room-scheme-2026 (tax year 2026) (read 2026-10-31) |
+| Cash basis ceiling | Receipts £150,000 or less | 2017/18 onwards Source: https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim1092 (tax year 2026) (read 2026-10-31) |
+| Consolidated expenses (one figure in box 29) | Property income before expenses below £90,000 | 2025/26 return Source: https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (tax year 2026) (read 2026-10-31) |
+| Loss set against total income (capital allowances or agricultural losses only) | Relief capped at the greater of £50,000 or 25% of adjusted total income | 2025/26 return Source: https://assets.publishing.service.gov.uk/media/69cbb66fa60a12ca3913c62a/UK_property_notes.pdf (tax year 2026) (read 2026-10-31) |
 
 ### Mileage for landlords ([PIM2220](https://www.gov.uk/hmrc-internal-manuals/property-income-manual/pim2220))
 
