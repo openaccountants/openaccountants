@@ -144,7 +144,7 @@ For a trade and for self-employed work the taxed income is the profit (§ 2(2) E
 - **Year end.** Regularly recurring receipts and payments made a short time before or after the year end count in the year they belong to (§ 11 EStG).
 - **Not pure cash** ([§ 4(3) EStG](https://www.gesetze-im-internet.de/estg/__4.html)). Depreciation and the low-value asset rules apply. Fixed assets that do not wear out, shares, securities, and land and buildings held as current assets count only when sold or withdrawn, and go into a running register. Money collected and paid out in another's name and for their account is left out.
 - **Paper EÜR only in hardship cases** (EÜR instructions 2026).
-- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG); records that call trade tax an expense are wrong for any year since 2008. Church tax paid is a special expense instead (§ 10(1) no. 4 EStG). Fines, administrative fines and warning fines from a German court or authority (§ 4(5) no. 8 EStG).
+- **Never deductible.** Income tax and other personal taxes ([§ 12 no. 3 EStG](https://www.gesetze-im-internet.de/estg/__12.html)) and trade tax (§ 4(5b) EStG); records that call trade tax an expense are wrong for any year since 2008. Church tax paid is a special expense instead (§ 10(1) no. 4 EStG). Fines, administrative fines and warning fines set by a German court or authority, an EU member state or an EU body (§ 4(5) no. 8 EStG).
 
 ### Sorting a year of bank transactions
 
