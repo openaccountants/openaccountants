@@ -1,6 +1,6 @@
 ---
 name: nl-payroll-tax
-description: "Dutch work-cost scheme (werkkostenregeling, WKR) and employer final levies for tax year 2026: whether a benefit is wage, the targeted exemptions and nil valuations, designating final-levy wage, the customary test (30% and EUR 2,400 per person), the free space of 2.00% up to EUR 400,000 and 1.18% above, the 80% final levy, the group (concern) election, settlement in the second return period of 2027, gifts to non-employees (45% / 75%), the van final levy and grossed-up final levy on assessments. Trigger phrases: werkkostenregeling, WKR, vrije ruimte, eindheffing, eindheffingsloon, gerichte vrijstelling, nihilwaardering, concernregeling, gebruikelijkheidstoets, kerstpakket, onbelaste vergoeding, reiskostenvergoeding, thuiswerkvergoeding. Out of scope: running payroll, tables, credits, premiums, the return calendar and penalties (netherlands-payroll); company car (nl-company-car); expat scheme (netherlands-30-percent-ruling); premiums in depth (nl-social-contributions); cross-border (nl-cross-border)."
+description: "Dutch work-cost scheme (werkkostenregeling, WKR) and employer final levies for tax year 2026: whether a benefit is wage, the targeted exemptions and nil valuations, designating final-levy wage, the customary test (30% and EUR 2,400 per person), the free space of 2.00% up to EUR 400,000 and 1.18% above, the 80% final levy, the group (concern) election, settlement in the second return period of 2027, gifts to non-employees (45% / 75%), the van final levy and grossed-up final levy on assessments. Trigger phrases: werkkostenregeling, WKR, vrije ruimte, eindheffing, eindheffingsloon, gerichte vrijstelling, nihilwaardering, concernregeling, gebruikelijkheidstoets, kerstpakket, onbelaste vergoeding, reiskostenvergoeding, thuiswerkvergoeding. Out of scope: running payroll, tables, credits, premiums, the return calendar and penalties (netherlands-payroll); company car (nl-company-car); expat scheme (nl-30-percent-ruling); premiums in depth (nl-social-contributions); cross-border (nl-cross-border)."
 version: 1.1
 jurisdiction: NL
 tax_year: 2026
@@ -23,7 +23,7 @@ Every Dutch withholding agent (inhoudingsplichtige) that gives employees allowan
 
 Use the Handboek Loonheffingen 2026 (March 2026), chapter 10, paragraph 4.2 and chapters 22 to 25, with the rates appendix, edition 4 of 25 June 2026. Edition 4 raised the tax-free mileage allowance to EUR 0.25 from 1 January 2026.
 
-Running payroll itself (tables, credits, employee and employer premiums, return calendar, corrections, penalties, customary wage of a director, minimum wage and holiday pay) is in netherlands-payroll; this skill does not repeat it. Company car private use: nl-company-car. The 30% expat allowance (a targeted exemption): netherlands-30-percent-ruling. Annual income tax of the employee: nl-income-tax.
+Running payroll itself (tables, credits, employee and employer premiums, return calendar, corrections, penalties, customary wage of a director, minimum wage and holiday pay) is in netherlands-payroll; this skill does not repeat it. Company car private use: nl-company-car. The 30% expat allowance (a targeted exemption): nl-30-percent-ruling. Annual income tax of the employee: nl-income-tax.
 
 ## Rates, bands and thresholds
 
@@ -78,7 +78,7 @@ Work through each allowance, benefit or facility in six steps (handbook para. 10
 ## Cross-border points
 
 - The free space is computed on the Dutch fiscal wage in the wage ledger. Wage for which the Netherlands has no taxing right and which is not in column 14 does not count. Check the ledger rather than adding foreign payroll.
-- **Expat allowance (30% ruling):** a targeted exemption under art. 31a. From 1 January 2026 the transitional rule ended and the allowance is capped at 30% of the WNT norm (EUR 262,000), and some costs of incoming employees (higher cost of living abroad, private calls home) can no longer be reimbursed tax-free. Detail: netherlands-30-percent-ruling.
+- **Expat allowance (30% ruling):** a targeted exemption under art. 31a. From 1 January 2026 the transitional rule ended and the allowance is capped at 30% of the WNT norm (EUR 262,000), and some costs of incoming employees (higher cost of living abroad, private calls home) can no longer be reimbursed tax-free. Detail: nl-30-percent-ruling.
 - **Gifts to foreign business contacts** can use the 45% / 75% final levy if given at the same time and occasion to the employer's own employees.
 - Insurance and tax allocation for employees working abroad: nl-cross-border.
 
