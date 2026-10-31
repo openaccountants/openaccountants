@@ -43,7 +43,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Who | An entrepreneur natural person, that is a registered individual entrepreneur (Tax Code art. 88(1)). The Code sets no residence or citizenship condition. |
 | Rate | **1%** of taxable income (art. 90(1)). **3%** from the start of the month in which gross income passes GEL 500,000 (GEL 700,000 for wine tourism and agro tourism operators) until the end of that calendar year (art. 90(2)) |
 | Taxable income | Georgian-source income, excluding salary and the income types excluded by the Government (art. 90(3)) |
-| Income not taxed under the regime and not counted toward the limit | Rent; loan income; gambling winnings; gifts; gains on real estate, vehicles and securities; inheritance; dividends; interest; royalties; debt forgiveness; gains on selling a partner's share (Resolution 415, annex 5). These are taxed under the general rules. |
+| Income not taxed under the regime and not counted toward the limit | Rent of property; loan income; gambling winnings; gifts; gains on real estate, vehicles and securities; inheritance; dividends; interest; royalties; debt forgiveness; gains on selling a partner's share (Resolution 415, annex 5, items 1 to 11). From 1 February 2025, also income from construction services (National Classifier SEK 006-2016 group 41.2 buildings, division 42 civil engineering, division 43 specialised construction) supplied to an enterprise, an organisation or an individual entrepreneur (annex 5, item 12, added by Resolution No 436 of 23 December 2024). These are taxed under the general rules. |
 | Employees | Allowed. Salaries up to GEL 6,000 in total for the year are not taxed at source if the person became a small business that year, or had gross income of no more than GEL 50,000 the year before (art. 94(4)) |
 | Loss of status | If gross income exceeds GEL 500,000 (GEL 700,000 for wine and agro tourism) in each of 2 calendar years, the status ends from the start of the next year (art. 89(2)(a), (3)). It also ends for a barred activity, for 3 or more cash-register fines in a year (from the start of that year), or on the person's own request (from the next month) (art. 89(2), (3^1), (4)). |
 | Reporting | Monthly return and payment by the 15th of the following month (art. 93(1^1)) |
@@ -54,7 +54,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## Section 3 -- Micro Business Status (0%)
 
 - **Micro Business Status eligibility and rate**: an individual with no hired staff who works independently. Gross income must not exceed GEL 30,000 in the calendar year (Tax Code art. 84(1)). The Government lists some activities to which the GEL 30,000 limit does not apply (art. 84(2); Resolution 415, annex 1). A micro business pays no income tax (art. 86). The Code says "natural person" here, not "entrepreneur natural person" as for small business (arts. 84(1), 88(1)).
-- **Barred activities**: those needing a licence or permit; activities whose income could exceed GEL 30,000 a year; currency exchange; medical, architectural, advocacy or notary, audit and consulting work (including tax consultants); gambling (Resolution 415, annex 2).
+- **Barred activities**: those needing a licence or permit, except the Tbilisi taxi (M1) permit; activities whose income could exceed GEL 30,000 a year; currency exchange; medical work (except a village doctor or nurse in the state programme), architectural, advocacy or notary, audit and consulting work (including tax consultants); gambling (Resolution 415, annex 2, as amended by Resolutions No 368 of 11 July 2018 and No 98 of 11 March 2021).
 - **Loss of status**: on the person's request; if a stock count shows inventory over GEL 45,000; or on VAT registration (art. 85(2)). A person who passes GEL 30,000 must apply for small business status within 15 days, or loses the status (art. 85(3)).
 - **Return**: an annual return before 1 April of the following year (art. 93(1); Georgian "1 აპრილამდე", so by 31 March).
 - **Effect on business customers**: a company that buys from a micro business is taxed on that cost as a cost unrelated to its business. This does not apply where the micro business is taxed under the general rule, or where a consignment note or the prescribed document is issued (art. 98^2(1)(c)). Expect business customers to ask for the document.
@@ -84,7 +84,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## Section 7 -- Red Lines (do not cross)
 
 - **Prohibited activities**: Small Business Status is barred for:
-  - activities that need a licence or permit;
+  - activities that need a licence or permit, except the Tbilisi taxi (M1) permit under art. 24(26^1) of the Law on Licences and Permits (Resolution No 368 of 11 July 2018);
   - activities that need significant investment (production of excisable goods);
   - currency exchange;
   - medical, architectural, advocacy or notary, audit and consulting work, including tax consultants;
@@ -93,9 +93,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
   - production of excisable goods.
   
   (Resolution 415, annex 4; Tax Code arts. 88(2), 89(2)(c).) Carrying on a barred activity ends the status from the start of the year and draws a GEL 500 fine (arts. 89(4), 288). AUDIT FLASH POINT.
+- **Construction for business customers**: since 1 February 2025, construction services (SEK 006-2016 group 41.2, divisions 42 and 43) supplied to an enterprise, organisation or individual entrepreneur are outside the 1% regime and taxed under the general rules (Resolution 415, annex 5, item 12). A builder with Small Business Status pays 1% only on construction work for private individuals. AUDIT FLASH POINT.
 - **Genuine self-employment**: salary is not taxable income under Small Business Status (art. 90(3)). If a single-client contract is in substance employment, the income is salary taxed at 20% (art. 81(1)). Check the facts.
 - **Two-year cap manipulation**: do not move income between years or between related people to stay under GEL 500,000. The rate rises to 3% from the month the GEL 500,000 is passed in any year (art. 90(2)), and the status ends after two such years (art. 89(2)(a)).
-- **Monthly filing**: a small business files and pays monthly by the 15th (art. 93(1^1)). A late return costs 5% of the tax due for each month or part month, capped at 30%. More than 2 months late, the fine is 10%. There is no fine where the tax due is zero (art. 274). Late payment carries penalty interest of 0.05% a day (art. 272(4)).
+- **Monthly filing**: a small business files and pays monthly by the 15th (art. 93(1^1)). A return up to 2 months late costs 5% of the tax due. More than 2 months late, the fine is 10% (art. 274(1), (2), Georgian text; the English translation still shows an older per-month wording). There is no fine where the tax due is zero (art. 274). Late payment carries penalty interest of 0.05% a day (art. 272(4)).
 - **International company and virtual zone scope**: income from activities outside the international company list costs the status for the whole year (art. 23(3)). Virtual zone relief does not cover IT supplied inside Georgia.
 
 ## PROHIBITIONS
@@ -117,11 +118,12 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Source | URL | Read on |
 |---|---|---|
 | Tax Code of Georgia, consolidated English text, publication of 15 October 2026 (arts. 8(35), 23, 81, 84 to 94, 97, 98, 98^2, 99, 130, 165, 166, 272, 274, 288) | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
-| Tax Code of Georgia, Georgian original, same publication (art. 90(2) 3% period; art. 93(1) "before 1 April") | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
-| Government of Georgia Resolution No 415 of 29 December 2010, On special tax regimes (consolidated, annexes 1, 2, 4, 5) | https://matsne.gov.ge/ka/document/view/1164635?publication=14 | 2026-10-31 |
+| Tax Code of Georgia, Georgian original, same publication (art. 90(2) 3% period; art. 93(1) "before 1 April"; art. 274 fines) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
+| Government of Georgia Resolution No 415 of 29 December 2010, On special tax regimes, initial text (annexes 1, 2, 4, 5; matsne shows the consolidated text, publication 14 of 24 January 2025, only after login) | https://matsne.gov.ge/ka/document/view/1164635?publication=14 | 2026-10-31 |
+| Amending Resolutions to No 415: No 368 of 11 July 2018 (taxi permit exception, annexes 2 and 4); No 268 of 6 June 2019 and No 98 of 11 March 2021 (village doctor exception, annex 2); No 436 of 23 December 2024 (construction services, annex 5 item 12, from 1 February 2025); No 19 of 24 January 2025 (art. 1(5), GEL 700,000 limit) | https://matsne.gov.ge/ka/document/view/4262127 ; https://matsne.gov.ge/ka/document/view/4583057 ; https://matsne.gov.ge/ka/document/view/5120243 ; https://matsne.gov.ge/ka/document/view/6344539 ; https://matsne.gov.ge/ka/document/view/6391057 | 2026-10-31 |
 | Law of Georgia on Information Technology Zones No 4064 (arts. 2, 3, 5) | https://matsne.gov.ge/en/document/view/1152405 | 2026-10-31 |
 
-Not yet confirmed: the Government ordinance listing international company activities and its conditions (not read); which body now grants virtual zone status (the Law says a person the Government designates); whether a small business must file a nil return in a month with no income (the old version said yes, and its "GEL 100 fine per declaration" was not found in the Code: art. 274 fines are a percentage of the tax due); the place-of-supply rules for services to non-residents (see georgia-vat); funded pension contributions for individual entrepreneurs (see georgia-social-contributions).
+Not yet confirmed: the Government ordinance listing international company activities and its conditions (not read); which body now grants virtual zone status (the Law says a person the Government designates); whether a small business must file a nil return in a month with no income (the old version said yes; its "GEL 100 fine per declaration" is not in the Code, where art. 274 fines are a percentage of the tax due); any change to the Resolution 415 annexes not shown in the amending acts listed above (the consolidated text is behind a login); the place-of-supply rules for services to non-residents (see georgia-vat); funded pension contributions for individual entrepreneurs (see georgia-social-contributions).
 
 <!-- openaccountants-cta-block -->
 
