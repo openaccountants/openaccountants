@@ -1,0 +1,16 @@
+[
+  {
+    "prior": "05.pdf",
+    "refetch": "37-steg-corporate-refetch.pdf",
+    "sha256": "de8b7f43fa98b22a06c8916180c64543ab6e0f771bb6c1652a8c21bf2ae32173",
+    "identical": true,
+    "read_date": "2026-10-30"
+  },
+  {
+    "prior": "06.pdf",
+    "refetch": "38-stev-corporate-refetch.pdf",
+    "sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553",
+    "identical": true,
+    "read_date": "2026-10-30"
+  }
+]
