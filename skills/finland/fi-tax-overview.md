@@ -56,7 +56,7 @@ Classify the question with the Scope table, open the named skill, and take the c
 
 ### Finland at a glance (2026)
 
-| Point | 2026 position | Where it is computed | Official source |
+| Point | 2026 rate or position | Where it is computed | Official source |
 |---|---|---| --- |
 | Levels of tax | State income tax, municipal tax and, for church members, parish tax; administered by the Finnish Tax Administration (Vero), e-services in MyTax (OmaVero) | [Individual income tax](fi-income-tax.md) | https://www.finlex.fi/fi/lainsaadanto/1992/1535 |
 | Tax year and currency | Calendar year; euro | [Individual income tax](fi-income-tax.md); [Corporate income tax](fi-corporate-income-tax.md) | same |
