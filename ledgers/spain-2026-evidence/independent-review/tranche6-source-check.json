@@ -1,0 +1,1592 @@
+{
+  "source_checks": [
+    {
+      "key": "L",
+      "kind": "raw",
+      "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "matches": true
+    },
+    {
+      "key": "L",
+      "kind": "reader",
+      "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "matches": true
+    },
+    {
+      "key": "R",
+      "kind": "raw",
+      "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "matches": true
+    },
+    {
+      "key": "R",
+      "kind": "reader",
+      "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "matches": true
+    },
+    {
+      "key": "N",
+      "kind": "raw",
+      "sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+      "matches": true
+    },
+    {
+      "key": "N",
+      "kind": "reader",
+      "sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+      "matches": true
+    },
+    {
+      "key": "NR",
+      "kind": "raw",
+      "sha256": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+      "matches": true
+    },
+    {
+      "key": "NR",
+      "kind": "reader",
+      "sha256": "61ae2b2294c8299fb1a13b4e9431c06d1f9cd861fcdd3ab08392d72bf2a2853f",
+      "matches": true
+    },
+    {
+      "key": "O210",
+      "kind": "raw",
+      "sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+      "matches": true
+    },
+    {
+      "key": "O210",
+      "kind": "reader",
+      "sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+      "matches": true
+    },
+    {
+      "key": "LGT",
+      "kind": "raw",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "matches": true
+    },
+    {
+      "key": "LGT",
+      "kind": "reader",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "matches": true
+    },
+    {
+      "key": "Nold",
+      "kind": "raw",
+      "sha256": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+      "matches": true
+    },
+    {
+      "key": "Nold",
+      "kind": "reader",
+      "sha256": "08f2f2bc70ce7e88fe606cf526c988787cc680c060ee0881dd7535abc21029e8",
+      "matches": true
+    },
+    {
+      "key": "Ownership",
+      "kind": "raw",
+      "sha256": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+      "matches": true
+    },
+    {
+      "key": "Ownership",
+      "kind": "reader",
+      "sha256": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+      "matches": true
+    },
+    {
+      "key": "D29",
+      "kind": "raw",
+      "sha256": "6e3590efdf1ef621987422b34f5b13f00d9ef321cf3cbdf9cc9271d6cc2161fe",
+      "matches": true
+    },
+    {
+      "key": "D29",
+      "kind": "reader",
+      "sha256": "b665054d26b266518028f419e4cf72618d526e762becee90155f8f12e584be82",
+      "matches": true
+    },
+    {
+      "key": "D26",
+      "kind": "raw",
+      "sha256": "c2ba5f5c1ddb46bd29ff8fb9e6b329f830d1ed11a7606bd2a49d59a6126dc5b5",
+      "matches": true
+    },
+    {
+      "key": "D26",
+      "kind": "reader",
+      "sha256": "28352fbd44ceaa7b0e50288de10ce59da7990a370b553104004ae91e3b41ba0a",
+      "matches": true
+    },
+    {
+      "key": "Repeal",
+      "kind": "raw",
+      "sha256": "3b7d30b2eff92db1cdb47d25e21376e1ee7c5f420860e3dcb48ee1893b418783",
+      "matches": true
+    },
+    {
+      "key": "Repeal",
+      "kind": "reader",
+      "sha256": "2c48717f0b45ccf2aea876eda44320a33fff177b825cf58519bcacee1989c066",
+      "matches": true
+    },
+    {
+      "key": "RDL18",
+      "kind": "raw",
+      "sha256": "1dea7ab99aa3a6c7fed2a5ed163fd9f11fabdb0c97a963bdf3a38aaa0b40d98c",
+      "matches": true
+    },
+    {
+      "key": "RDL18",
+      "kind": "reader",
+      "sha256": "d6361740dcb5219d7509d7284394c6efad01e05dabd4f9b0f7207027668168a4",
+      "matches": true
+    }
+  ],
+  "quote_checks": [
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4960,
+        4963
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4965,
+        4968
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4970,
+        4973
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4975,
+        4978
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4980,
+        4983
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5716,
+        5719
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5721,
+        5724
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5726,
+        5729
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5731,
+        5734
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5736,
+        5739
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3160,
+        3160
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3160,
+        3160
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3795,
+        3795
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        2831,
+        2831
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3186,
+        3186
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3164,
+        3164
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3220,
+        3220
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4312,
+        4312
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4314,
+        4314
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        4985,
+        4985
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3902,
+        3902
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3904,
+        3904
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3912,
+        3912
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3230,
+        3230
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3232,
+        3232
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3226,
+        3226
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3234,
+        3234
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3218,
+        3218
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3216,
+        3216
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3222,
+        3222
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3306,
+        3306
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3308,
+        3308
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3308,
+        3308
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3314,
+        3314
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3312,
+        3312
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2599,
+        2599
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2599,
+        2599
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3336,
+        3336
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3338,
+        3338
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3340,
+        3340
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3369,
+        3369
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3369,
+        3369
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3383,
+        3383
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3379,
+        3379
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3379,
+        3379
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3381,
+        3381
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3381,
+        3381
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3381,
+        3381
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3377,
+        3377
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3369,
+        3369
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3373,
+        3373
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3373,
+        3373
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3371,
+        3371
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3439,
+        3439
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        12139,
+        12139
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        12139,
+        12139
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        12139,
+        12139
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2613,
+        2613
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2625,
+        2625
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2631,
+        2631
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2633,
+        2633
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2629,
+        2629
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2619,
+        2619
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3204,
+        3204
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3204,
+        3204
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Ownership.reader.txt",
+      "LF": [
+        13,
+        13
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Ownership.reader.txt",
+      "LF": [
+        14,
+        14
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Ownership.reader.txt",
+      "LF": [
+        14,
+        14
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2659,
+        2659
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2663,
+        2663
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2673,
+        2673
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2713,
+        2713
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2721,
+        2721
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2737,
+        2737
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2715,
+        2715
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2717,
+        2717
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2717,
+        2717
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2725,
+        2725
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2725,
+        2725
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2725,
+        2725
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2727,
+        2727
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2729,
+        2729
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2731,
+        2731
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2733,
+        2733
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2735,
+        2735
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2739,
+        2739
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        7092,
+        7092
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        7094,
+        7094
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        7462,
+        7462
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        7102,
+        7140
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2673,
+        2673
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2673,
+        2673
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2673,
+        2673
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2673,
+        2673
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2675,
+        2675
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2675,
+        2675
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D29.reader.txt",
+      "LF": [
+        2238,
+        2238
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D29.reader.txt",
+      "LF": [
+        2424,
+        2424
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D29.reader.txt",
+      "LF": [
+        2426,
+        2426
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D29.reader.txt",
+      "LF": [
+        2455,
+        2455
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D26.reader.txt",
+      "LF": [
+        2218,
+        2218
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D26.reader.txt",
+      "LF": [
+        2404,
+        2404
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D26.reader.txt",
+      "LF": [
+        2406,
+        2406
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/D26.reader.txt",
+      "LF": [
+        2435,
+        2435
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Repeal.reader.txt",
+      "LF": [
+        85,
+        85
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Repeal.reader.txt",
+      "LF": [
+        94,
+        94
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11533,
+        11533
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11537,
+        11537
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11543,
+        11543
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11553,
+        11553
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11555,
+        11555
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11557,
+        11557
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11559,
+        11559
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11549,
+        11549
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11551,
+        11551
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11561,
+        11561
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11569,
+        11569
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11575,
+        11575
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        11547,
+        11547
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        3861,
+        3861
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5259,
+        5259
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        5281,
+        5281
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        10072,
+        10072
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        10072,
+        10072
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        10074,
+        10074
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        10076,
+        10076
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        2760,
+        2760
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        2760,
+        2760
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        2918,
+        2918
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Nold.reader.txt",
+      "LF": [
+        94,
+        94
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Nold.reader.txt",
+      "LF": [
+        100,
+        100
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Nold.reader.txt",
+      "LF": [
+        102,
+        102
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Nold.reader.txt",
+      "LF": [
+        104,
+        104
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/Nold.reader.txt",
+      "LF": [
+        110,
+        110
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        1857,
+        1857
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        7226,
+        7226
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2637,
+        2637
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/R.reader.txt",
+      "LF": [
+        2637,
+        2637
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/NR.reader.txt",
+      "LF": [
+        978,
+        978
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/NR.reader.txt",
+      "LF": [
+        986,
+        986
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/NR.reader.txt",
+      "LF": [
+        988,
+        988
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/O210.reader.txt",
+      "LF": [
+        628,
+        628
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/O210.reader.txt",
+      "LF": [
+        628,
+        628
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2209,
+        2209
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2213,
+        2213
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        8191,
+        8191
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2136,
+        2136
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/LGT.reader.txt",
+      "LF": [
+        2268,
+        2268
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        1843,
+        1843
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        1849,
+        1849
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/N.reader.txt",
+      "LF": [
+        1722,
+        1722
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/L.reader.txt",
+      "LF": [
+        1319,
+        1319
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/RDL18.reader.txt",
+      "LF": [
+        486,
+        486
+      ],
+      "present": true
+    },
+    {
+      "reader": "sources/RDL18.reader.txt",
+      "LF": [
+        1396,
+        1396
+      ],
+      "present": true
+    }
+  ],
+  "coverage_remainder": [
+    {
+      "lf": 1,
+      "text": "---"
+    },
+    {
+      "lf": 2,
+      "text": "name: es-capital-gains"
+    },
+    {
+      "lf": 3,
+      "text": "description: Use this Guide to compute Spanish common-territory individual capital gains and losses for 2026. It covers transfer versus non-transfer classification, acquisition and disposal values, fees, improvements, depreciation, homogeneous-security identification, main-home reinvestment, over-65 relief, insured life annuities, pre-1994 abatement, repurchase-deferred losses, annual savings-pool integration and the current savings scale. Trigger phrases include capital gains Spain, ganancia patrimonial, sell shares, property gain, reinversi\u00f3n vivienda habitual, coeficientes de abatimiento, p\u00e9rdida por recompra and compensaci\u00f3n de p\u00e9rdidas. Obtain the actual residence, asset and lot records, prices, eligible costs, prior-loss and repurchase history and relief evidence. The computation uses the taxpayer\u2019s whole annual savings position and minimum allocation rather than taxing each sale through fresh first bands. Non-resident and special incoming-worker cases follow their companion routes."
+    },
+    {
+      "lf": 4,
+      "text": "version: 1.4"
+    },
+    {
+      "lf": 5,
+      "text": "jurisdiction: ES"
+    },
+    {
+      "lf": 6,
+      "text": "tax_year: 2026"
+    },
+    {
+      "lf": 7,
+      "text": "last_updated: 2026-10-28"
+    },
+    {
+      "lf": 8,
+      "text": "review_status: pending_review"
+    },
+    {
+      "lf": 9,
+      "text": "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+    },
+    {
+      "lf": 10,
+      "text": "drafted_by: OpenAccountants"
+    },
+    {
+      "lf": 11,
+      "text": "approved_by: pending"
+    },
+    {
+      "lf": 12,
+      "text": "category: international"
+    },
+    {
+      "lf": 13,
+      "text": "tier: 2"
+    },
+    {
+      "lf": 14,
+      "text": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+    },
+    {
+      "lf": 15,
+      "text": "---"
+    },
+    {
+      "lf": 17,
+      "text": "# Spain: individual capital gains and losses v1.4"
+    },
+    {
+      "lf": 21,
+      "text": "## Who this applies to"
+    },
+    {
+      "lf": 29,
+      "text": "## Rates, bands and thresholds"
+    },
+    {
+      "lf": 31,
+      "text": "| 2026 resident savings-base slice | Combined marginal rate | Quota at lower boundary | Source |"
+    },
+    {
+      "lf": 32,
+      "text": "|---|---:|---:|---|"
+    },
+    {
+      "lf": 41,
+      "text": "| Relief/loss item | Amount or period | Official source |"
+    },
+    {
+      "lf": 42,
+      "text": "|---|---|---|"
+    },
+    {
+      "lf": 52,
+      "text": "## The base"
+    },
+    {
+      "lf": 54,
+      "text": "### Identify and value the transaction"
+    },
+    {
+      "lf": 68,
+      "text": "### Ordinary listed and unlisted share disposals"
+    },
+    {
+      "lf": 82,
+      "text": "### Main-home and annuity relief"
+    },
+    {
+      "lf": 94,
+      "text": "### Dated main-home status extensions"
+    },
+    {
+      "lf": 106,
+      "text": "### Pre-1994 abatement"
+    },
+    {
+      "lf": 116,
+      "text": "### Loss pools and final tax"
+    },
+    {
+      "lf": 124,
+      "text": "### Urban property acquired in 2012 and non-resident old assets"
+    },
+    {
+      "lf": 130,
+      "text": "## Deadlines and filing"
+    },
+    {
+      "lf": 138,
+      "text": "## Penalties and interest"
+    },
+    {
+      "lf": 142,
+      "text": "## Cross-border points"
+    },
+    {
+      "lf": 148,
+      "text": "## Two worked examples that recompute"
+    },
+    {
+      "lf": 150,
+      "text": "### 1. Ordinary disposal with costs"
+    },
+    {
+      "lf": 173,
+      "text": "### 2. Repurchase deferral and capped loss offset are different ledgers"
+    },
+    {
+      "lf": 197,
+      "text": "## Ask the client first"
+    },
+    {
+      "lf": 206,
+      "text": "## Sources"
+    },
+    {
+      "lf": 208,
+      "text": "| Official source | Scope read | Read on |"
+    },
+    {
+      "lf": 209,
+      "text": "|---|---|---|"
+    },
+    {
+      "lf": 230,
+      "text": "<!-- openaccountants-cta-block -->"
+    },
+    {
+      "lf": 232,
+      "text": "---"
+    },
+    {
+      "lf": 234,
+      "text": "## Talk to a verified accountant"
+    },
+    {
+      "lf": 236,
+      "text": "This guide is maintained by the OpenAccountants network \u2014 accountants who put"
+    },
+    {
+      "lf": 237,
+      "text": "their name behind the tax answers AI gives people. The live, always-current"
+    },
+    {
+      "lf": 238,
+      "text": "version (and the professional behind it) is at"
+    },
+    {
+      "lf": 239,
+      "text": "[openaccountants.com](https://www.openaccountants.com)."
+    },
+    {
+      "lf": 241,
+      "text": "- Use it in your AI: https://www.openaccountants.com/connect"
+    },
+    {
+      "lf": 242,
+      "text": "- Meet the accountants: https://www.openaccountants.com/network"
+    },
+    {
+      "lf": 244,
+      "text": "> **General reference only.** This document does not constitute tax, legal, or"
+    },
+    {
+      "lf": 245,
+      "text": "> financial advice. Verify figures against the cited primary sources or with a"
+    },
+    {
+      "lf": 246,
+      "text": "> licensed professional before relying on them."
+    }
+  ]
+}

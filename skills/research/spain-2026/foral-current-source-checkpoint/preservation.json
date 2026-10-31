@@ -1,0 +1,19 @@
+{
+  "live_guides_unchanged": true,
+  "guides": [
+    {
+      "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f",
+      "bytes": 97950,
+      "scope": "Complete bytes: metadata, all units, URLs, two oa-check blocks, byline and CTA."
+    },
+    {
+      "sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "bytes": 67660,
+      "scope": "Complete bytes: metadata, all units, URLs, two oa-check blocks, byline and CTA."
+    }
+  ],
+  "no_candidate": true,
+  "no_live_readme_edit": true,
+  "no_git_commands": true,
+  "no_new_oa_example": true
+}

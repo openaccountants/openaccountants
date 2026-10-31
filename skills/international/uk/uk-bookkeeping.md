@@ -1,10 +1,10 @@
 ---
 name: uk-bookkeeping
 description: Use this skill whenever asked about UK bookkeeping for sole traders, micro-entities, or small companies. Trigger on phrases like "chart of accounts", "nominal codes", "bookkeeping", "profit and loss", "balance sheet", "FRS 105", "FRS 102 Section 1A", "Making Tax Digital", "MTD", "MTD ITSA bookkeeping", "April 2026 quarterly", "VAT threshold £90,000", "bank reconciliation", "double-entry", "expense categories", "revenue recognition", "depreciation", "capital allowances", "micro-entity accounts", "small company accounts", "accrual basis", "cash basis", "general ledger", or any question about day-to-day transaction recording, financial statement preparation, or account coding for a UK business.
-version: 1.1
+version: 1.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -190,7 +190,7 @@ At least two of three conditions; after the first year a change counts only if i
 | Balance sheet total | £500,000 | £7.5 million | same sections |
 | Average employees | 10 | 50 | same sections |
 
-Public companies and others in section 9.2 of https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts cannot use micro-entity accounts. A micro-entity claims audit exemption as a small company (https://www.legislation.gov.uk/ukpga/2006/46/section/477), subject to the exclusions on that Companies House page. For now, small companies and micro-entities can file their accounts at Companies House omitting the profit and loss account (same page). From 1 April 2028 micro-entities and small companies must deliver their profit and loss account to Companies House but may opt out of publishing it: "From 1 April 2028, it will be mandatory for small companies to deliver a copy of the profit and loss account to Companies House. Small companies will be able to opt out of publishing this on the register." Abridged accounts end on the same date: "From 1 April 2028, new legislation means companies will no longer be able to file abridged accounts." (same page)
+Public companies and others in section 9.2 of https://www.gov.uk/government/publications/life-of-a-company-annual-requirements/life-of-a-company-part-1-accounts cannot use micro-entity accounts. A micro-entity claims audit exemption as a small company (https://www.legislation.gov.uk/ukpga/2006/46/section/477), subject to the exclusions on that Companies House page. Small companies and micro-entities can file their accounts at Companies House omitting the profit and loss account (same page). On 23 October 2026 Companies House paused the planned requirement for small companies and micro-entities to file a profit and loss account from April 2028, so abridged accounts and "filleting" the profit and loss account stay available after 1 April 2028: "the government will continue to allow companies to file abridged accounts and retain the option for smaller companies to remove, or 'fillet', their profit and loss information from the accounts filed at Companies House after 1 April 2028." From April 2028 every company files its accounts in iXBRL using commercial software, and web and paper filing close for accounts (https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028). Company accounts filing is covered in uk-financial-statements.
 
 ## Boundary and exception table
 
@@ -290,6 +290,7 @@ Our own working convention, not an official list: HMRC and Companies House presc
 - https://www.gov.uk/simpler-income-tax-cash-basis
 - https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax
 - https://www.gov.uk/charge-reclaim-record-vat/keeping-vat-records
+- https://www.gov.uk/government/news/companies-house-update-to-accounts-filing-from-april-2028 (Companies House news story, 23 October 2026, read on 2026-10-30)
 - Every other page is linked in its table or step above.
 
 ## Disclaimer

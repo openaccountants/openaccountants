@@ -1,0 +1,2072 @@
+{
+  "baseline_head": "7bd7850cf1d74255be658fb21b308aa6f4cd75fc",
+  "verified_reviews": [
+    {
+      "role": "corporate-exact",
+      "report": "spain-extraordinary-profit-positive-independent-review/report.md",
+      "report_sha256": "1c40f27e75bbcc1e238bde03ecec80aef205ef03c1d2da228e0df1b867f50f3f",
+      "manifest": "spain-extraordinary-profit-positive-independent-review/manifest.json",
+      "manifest_sha256": "b242d5e8fce1159265750766cb4281361111f0cc0c631645b3bdbae1a6ef8136",
+      "members_verified": 7
+    },
+    {
+      "role": "Balearic-exact",
+      "report": "spain-Balearic-ordinary-rental-independent-review/report.md",
+      "report_sha256": "8797583f41bd14232d8b12bcdf99a8bdb477eebb2969c39a74fa70ecee556861",
+      "manifest": "spain-Balearic-ordinary-rental-independent-review/manifest.json",
+      "manifest_sha256": "d50546e0f27c309d41934a4c32da30a797e22002d1a5cecfb0c911d584fc2780",
+      "members_verified": 6
+    },
+    {
+      "role": "VAT-exact",
+      "report": "spain-delayed-first-use-VAT-reference-independent-review/report.md",
+      "report_sha256": "03788f1bd3ac8a975c25453e9f58fe156cec7595299cf0dfcbd349346c3bd963",
+      "manifest": "spain-delayed-first-use-VAT-reference-independent-review/artifact-manifest.json",
+      "manifest_sha256": "e2ca1d36c71ffe2521093ae1c96ce18a986a0e8be44bd2df952a683986dc1f18",
+      "members_verified": 22
+    },
+    {
+      "role": "crypto-exact",
+      "report": "spain-crypto-owned-units-fee-ledger-independent-review/report.md",
+      "report_sha256": "2b992f5112e9cfab29e3f65ea761ebdbcca4331f973f368f42d9a7bfbbbce85f",
+      "manifest": "spain-crypto-owned-units-fee-ledger-independent-review/artifact-manifest.json",
+      "manifest_sha256": "2f6a94c049468e42af317ef8f63465598fc9bfd82b6cb8043ad472096b383931",
+      "members_verified": 47
+    }
+  ],
+  "scope": "Finite independently reviewed corporate/PE, crypto, delayed-use VAT and Balearic rental methods; exact legal uncertainties and original VAT table finding/fix preserved; separate SC public-route negative inquiry. No country readiness/attestation.",
+  "files": [
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/A-reg-text-scan.json",
+      "original_sha256": "84e3076a9e58607089f19871ddebed772328c2e2c555799ee4308fd64aa31c1e",
+      "original_bytes": 323,
+      "stored_path": "archive/84/84e3076a9e58607089f19871ddebed772328c2e2c555799ee4308fd64aa31c1e.gz",
+      "stored_bytes": 241,
+      "stored_sha256": "75615ecda79b895cd780e0d6aa039eccc9ec4b70a5d083241ba79f079b6dc34b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/README.md.diff",
+      "original_sha256": "cb1b6765ca839e701ca8e893bd65bbc08a5955c6036938c61667398513044481",
+      "original_bytes": 9915,
+      "stored_path": "archive/cb/cb1b6765ca839e701ca8e893bd65bbc08a5955c6036938c61667398513044481.gz",
+      "stored_bytes": 3627,
+      "stored_sha256": "3631f7fd82ac934b41ff7a445c8dc9be902e2f61e8539d63d52a594572ddc092"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/actual-read-scopes.json",
+      "original_sha256": "19a80ccd4871387e1f7b39a2c1ff31831c3ecaae6435695af822292a091602c5",
+      "original_bytes": 10862,
+      "stored_path": "archive/19/19a80ccd4871387e1f7b39a2c1ff31831c3ecaae6435695af822292a091602c5.gz",
+      "stored_bytes": 1319,
+      "stored_sha256": "c6e8a88a83a9724c01d136e22a9414c2448556ddaa519337ba0af1c391d5e62d"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/artifact-manifest.json",
+      "original_sha256": "400eb91fc298030fd722e4716f30aea08a5da8d92cce001f6d7a694b1d4bbb0a",
+      "original_bytes": 7374,
+      "stored_path": "archive/40/400eb91fc298030fd722e4716f30aea08a5da8d92cce001f6d7a694b1d4bbb0a.gz",
+      "stored_bytes": 2638,
+      "stored_sha256": "9729e85b2c3caa022e2eb83a996cfc8220ab5814a2634a6839be626fbcc6d17d"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/baseline-identities.json",
+      "original_sha256": "09a7fed1826146df8e445b6d6f6dd3b7602ed0bffd9f2af79b59a16d4a232e53",
+      "original_bytes": 621,
+      "stored_path": "archive/09/09a7fed1826146df8e445b6d6f6dd3b7602ed0bffd9f2af79b59a16d4a232e53.gz",
+      "stored_bytes": 312,
+      "stored_sha256": "e8fc2edb394fcc457b7db9bcb9f9171311cfd76ee3a00f47b417d44cb8dfddbd"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/baselines/README.md",
+      "original_sha256": "29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a",
+      "original_bytes": 15166,
+      "stored_path": "archive/29/29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a.gz",
+      "stored_bytes": 5901,
+      "stored_sha256": "0a6a37386e8d2d6f64ff0c3bede30cacaf8e2f42a66b55c34e6f7aae6874727e"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/baselines/es-foral-corporate-tax.md",
+      "original_sha256": "e47382cc0a594bf2713c4095c0629a5ff7a8263e328a95e7aacc5fae2dfb74da",
+      "original_bytes": 116493,
+      "stored_path": "archive/e4/e47382cc0a594bf2713c4095c0629a5ff7a8263e328a95e7aacc5fae2dfb74da.gz",
+      "stored_bytes": 32719,
+      "stored_sha256": "7bc8887e09b5a23c04f7a115d8897b3dd4a124d5b0408daf32196d42d1b62436"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/baselines/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/candidates/README.md",
+      "original_sha256": "317683b49baa676058469e40081bdc8d5d9234b43b1b5671125e16bbe75c3807",
+      "original_bytes": 15617,
+      "stored_path": "archive/31/317683b49baa676058469e40081bdc8d5d9234b43b1b5671125e16bbe75c3807.gz",
+      "stored_bytes": 6045,
+      "stored_sha256": "7111bdf67d5d118a825a33ce197dc3e1ac47bd5d8c246dd34923afc486f2e8ff"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/candidates/es-foral-corporate-tax.md",
+      "original_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "original_bytes": 122089,
+      "stored_path": "archive/c9/c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1.gz",
+      "stored_bytes": 34716,
+      "stored_sha256": "db8fc112c0acb6c32149aac425abcd5e07950cea05ee62b97a1b6744a414a1b0"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/candidates/es-foral-non-resident-tax.md",
+      "original_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+      "original_bytes": 69256,
+      "stored_path": "archive/5c/5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9.gz",
+      "stored_bytes": 20933,
+      "stored_sha256": "2ed450bbc4c9ea320d2cfe38a7b1816311ef0529b0fd47405cbc5cf5f6ff90a2"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/compose.py",
+      "original_sha256": "dc435dd437c1bf1861f7846329ecae56048d652a69f397e9eb7da1278db8e655",
+      "original_bytes": 16094,
+      "stored_path": "archive/dc/dc435dd437c1bf1861f7846329ecae56048d652a69f397e9eb7da1278db8e655.gz",
+      "stored_bytes": 5800,
+      "stored_sha256": "2523fc17b83b4299b4075ec79d20093aa792a4651c669c7670ea942af6936d5f"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/controls.json",
+      "original_sha256": "447e91e94df71a91b8bc06ac1698877d8a0c5556b13ec1b739e37eba7aa3f7bf",
+      "original_bytes": 9469,
+      "stored_path": "archive/44/447e91e94df71a91b8bc06ac1698877d8a0c5556b13ec1b739e37eba7aa3f7bf.gz",
+      "stored_bytes": 1494,
+      "stored_sha256": "1c65b1f34a8b4b561154e67ae326ff74cdd0be2306a6d342cd90e6749b50aad0"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/controls.py",
+      "original_sha256": "1f0eda922e10147ca84f721d544764dabc7d8fda96fb14cf546da6bc32bee18e",
+      "original_bytes": 4925,
+      "stored_path": "archive/1f/1f0eda922e10147ca84f721d544764dabc7d8fda96fb14cf546da6bc32bee18e.gz",
+      "stored_bytes": 2018,
+      "stored_sha256": "2f3ece4b4c24a0e463926863077b47ef52fa61246c1ec3d2215e2b2cd13e361f"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/es-foral-corporate-tax.md.diff",
+      "original_sha256": "c17fcc4955d51a8e05b1946b43548b298254e05fde08e2059efd6997d1254433",
+      "original_bytes": 11972,
+      "stored_path": "archive/c1/c17fcc4955d51a8e05b1946b43548b298254e05fde08e2059efd6997d1254433.gz",
+      "stored_bytes": 4562,
+      "stored_sha256": "ab21013fba63019ca26697578048ac74411d29eca3acde441f907b3fff4c35b4"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/es-foral-non-resident-tax.md.diff",
+      "original_sha256": "96a6e60d95f6a76f28ddb7c3e7ab1bb75ea424d81bb83519343be995f7e1f49b",
+      "original_bytes": 7798,
+      "stored_path": "archive/96/96a6e60d95f6a76f28ddb7c3e7ab1bb75ea424d81bb83519343be995f7e1f49b.gz",
+      "stored_bytes": 3017,
+      "stored_sha256": "74e85bc2ba0cc29f50affd573731515103064e3502d6d9be5470c62bfde51b03"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/options.md",
+      "original_sha256": "2f4d8890f6d48f17485e9dc2dd1f2b4a6cc1c77cd22737952254196afaf7351f",
+      "original_bytes": 2238,
+      "stored_path": "archive/2f/2f4d8890f6d48f17485e9dc2dd1f2b4a6cc1c77cd22737952254196afaf7351f.gz",
+      "stored_bytes": 1196,
+      "stored_sha256": "56c5219f24840cb7b96dc019816c26b3dbd9249c53267b3a3bd88434473d8796"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/preservation-proof.json",
+      "original_sha256": "6d3a76c741fb23b38aef04c9ac3c01df75824a1c413d44d8b8bf80a3a8c7e3bc",
+      "original_bytes": 1370,
+      "stored_path": "archive/6d/6d3a76c741fb23b38aef04c9ac3c01df75824a1c413d44d8b8bf80a3a8c7e3bc.gz",
+      "stored_bytes": 540,
+      "stored_sha256": "94a8bae7ccc3c4d2604fa541af465d180530c7244cfb995c88a5c40d1d9a12f4"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/replacement-ledger.json",
+      "original_sha256": "368e8812af77f2b4f7cecab2bf12063608d161d1448ffc7d795e0bf839dfe85f",
+      "original_bytes": 15232,
+      "stored_path": "archive/36/368e8812af77f2b4f7cecab2bf12063608d161d1448ffc7d795e0bf839dfe85f.gz",
+      "stored_bytes": 5209,
+      "stored_sha256": "f9d00517e75091b93b68650f014e508e26605ceccc723aa0b677b8d06204f9bf"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/report.md",
+      "original_sha256": "a1e02983520a300173e2fef0faf1e8da5ca7cfb8bf8bd51831566aa6f1e77b01",
+      "original_bytes": 5703,
+      "stored_path": "archive/a1/a1e02983520a300173e2fef0faf1e8da5ca7cfb8bf8bd51831566aa6f1e77b01.gz",
+      "stored_bytes": 2742,
+      "stored_sha256": "8c1d0779bafed7beb79822ee37f1773342ece8acf3e0b0540521b5e5b89b70c9"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/source-freeze.json",
+      "original_sha256": "ff82dc8bacf73cc3a5d467d1995cd01ffca207ed8d8ac6bd8df0fdd9bc02d204",
+      "original_bytes": 1695,
+      "stored_path": "archive/ff/ff82dc8bacf73cc3a5d467d1995cd01ffca207ed8d8ac6bd8df0fdd9bc02d204.gz",
+      "stored_bytes": 676,
+      "stored_sha256": "a1794506eb5c7e99651ec5afbc92230921219f1cf62acc62442ee8f603007cd2"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/source-map.json",
+      "original_sha256": "1fbb0db8f849f84922658ed77a5e8a7c685033d4d110a1a7d16e2b81533a0970",
+      "original_bytes": 5638,
+      "stored_path": "archive/1f/1fbb0db8f849f84922658ed77a5e8a7c685033d4d110a1a7d16e2b81533a0970.gz",
+      "stored_bytes": 1811,
+      "stored_sha256": "4ad4e5038df7ee8d272da8e7f6914764d37e364fdf1455edcff2027a62a7a737"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-index-current.html",
+      "original_sha256": "5d60d58be6d69c23a4601f9c6802d606e2c082f770dc09567ae33eb135f07c1e",
+      "original_bytes": 347461,
+      "stored_path": "archive/5d/5d60d58be6d69c23a4601f9c6802d606e2c082f770dc09567ae33eb135f07c1e.gz",
+      "stored_bytes": 45560,
+      "stored_sha256": "f8b8242d502e36e7a5667fc9243c2521cd244161189a418e0cbe2bd701cc7d7b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-index-current.reader.txt",
+      "original_sha256": "40b8e53c295b39e60368b7dfb93f47d2cb0e3e1ad9cc11cbc69633159a51f017",
+      "original_bytes": 220778,
+      "stored_path": "archive/40/40b8e53c295b39e60368b7dfb93f47d2cb0e3e1ad9cc11cbc69633159a51f017.gz",
+      "stored_bytes": 29512,
+      "stored_sha256": "0ac4edde19d64d74b66f8f2c39e2bbb9b64bf08712fe12eb9d714953df723496"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-irnr.pdf",
+      "original_sha256": "ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe",
+      "original_bytes": 446013,
+      "stored_path": "archive/ef/ef422d5fa1c3c9d14c83aa3d74134e3a60094caa803099e031893280b9dda4fe.gz",
+      "stored_bytes": 382286,
+      "stored_sha256": "f37317e6b5159407d9a0e12d84019435ecf4924c952ab7565e79ed2825d1b3d3"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-irnr.txt",
+      "original_sha256": "3c85c539f3744b1c23654d5e3b0db98d123f8e805466bb04cab0f9ad2286cc09",
+      "original_bytes": 144639,
+      "stored_path": "archive/3c/3c85c539f3744b1c23654d5e3b0db98d123f8e805466bb04cab0f9ad2286cc09.gz",
+      "stored_bytes": 34250,
+      "stored_sha256": "02b3e2504b6e9b2add59755b17fc44bde9cb5caf0b632ee6579e38d801de08bd"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-law.pdf",
+      "original_sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+      "original_bytes": 1609894,
+      "stored_path": "archive/21/21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6.gz",
+      "stored_bytes": 1304290,
+      "stored_sha256": "1fd222ab0782bd9139400cb04ace86ddd86ba9d07e00e6e4d1565695f5a05b39"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-law.txt",
+      "original_sha256": "40b92636adfca1d852afd36c3f090d3ee70b98ffbcf398e6d588f70e276874b8",
+      "original_bytes": 808605,
+      "stored_path": "archive/40/40b92636adfca1d852afd36c3f090d3ee70b98ffbcf398e6d588f70e276874b8.gz",
+      "stored_bytes": 186482,
+      "stored_sha256": "b388c2f9428fc51a0823b6cf06aa6431618ada5edf6c42b3f2f8c03aeae34355"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-reg.pdf",
+      "original_sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09",
+      "original_bytes": 533045,
+      "stored_path": "archive/98/988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09.gz",
+      "stored_bytes": 431446,
+      "stored_sha256": "a5b6e4823ed2e1fd143bb28da7da1b4922b51a2f74249ae039282c8701e49340"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/alava-reg.txt",
+      "original_sha256": "0644a7dae1c06de8de625bd451d93cb04a496704241b372ffbaf201211862404",
+      "original_bytes": 216811,
+      "stored_path": "archive/06/0644a7dae1c06de8de625bd451d93cb04a496704241b372ffbaf201211862404.gz",
+      "stored_bytes": 52702,
+      "stored_sha256": "9e39d6032fc5823659bd882cd01e57543f394677a8fe78bb25dd3f4be55efc80"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-irnr.pdf",
+      "original_sha256": "b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1",
+      "original_bytes": 236552,
+      "stored_path": "archive/b6/b68aba30a5e3a43151466d52d8b4b1d21c84afbc9679dae0f9ee6e7ffe1c13e1.gz",
+      "stored_bytes": 219949,
+      "stored_sha256": "97d31f31fcb143de48fc8cda8d6792fe997050748bb9533aca60e154cb2c94bf"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-irnr.txt",
+      "original_sha256": "9516608dbc3f30df99a2ef1462d4f4ae5c9e503083edcfd84ff6ae1e52d482cf",
+      "original_bytes": 153991,
+      "stored_path": "archive/95/9516608dbc3f30df99a2ef1462d4f4ae5c9e503083edcfd84ff6ae1e52d482cf.gz",
+      "stored_bytes": 35731,
+      "stored_sha256": "2546df87fed4f18c4a90f13c905a46af0b2cb3e92aa736861246ce49277644c2"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-law.pdf",
+      "original_sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+      "original_bytes": 1322692,
+      "stored_path": "archive/e2/e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe.gz",
+      "stored_bytes": 1235285,
+      "stored_sha256": "b20b7729bd52672006b79e35255793aa5a52204d4a71e8401209c45fd5cbb835"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-law.txt",
+      "original_sha256": "7233bb875bf415bad3b3b39190f382af096a223664cd8419a8e5cdc489923937",
+      "original_bytes": 849299,
+      "stored_path": "archive/72/7233bb875bf415bad3b3b39190f382af096a223664cd8419a8e5cdc489923937.gz",
+      "stored_bytes": 194850,
+      "stored_sha256": "43c967414bd6a38328a68b18e3f5e52c781d98725af5c39d265efa258669250b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-original-NF2-2025.pdf",
+      "original_sha256": "66ae81b5fa19bf9be496d10f20160c61e7a7231b3d873b7daba55e817bf13a8b",
+      "original_bytes": 2786018,
+      "stored_path": "archive/66/66ae81b5fa19bf9be496d10f20160c61e7a7231b3d873b7daba55e817bf13a8b.gz",
+      "stored_bytes": 475952,
+      "stored_sha256": "69a7c66555e428b0d3204fc60077a6dbb47f38d0b9c7d6ea3c0bc8873623e6bd"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-original-NF2-2025.txt",
+      "original_sha256": "f26dc6258d3166182a66cab09987c6b17bfe644cb93b45e77247036a02300d6e",
+      "original_bytes": 273621,
+      "stored_path": "archive/f2/f26dc6258d3166182a66cab09987c6b17bfe644cb93b45e77247036a02300d6e.gz",
+      "stored_bytes": 65565,
+      "stored_sha256": "b71f68e74ddb83197863e8b878d4f48b935cf8f05f92071457e2925b7dfe6b1b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-reg.pdf",
+      "original_sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339",
+      "original_bytes": 460049,
+      "stored_path": "archive/b3/b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339.gz",
+      "stored_bytes": 432261,
+      "stored_sha256": "6e55866a0cdd7a807dc935da7655319ba9cd9a07359e92498e3c62b22a102787"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/bizkaia-reg.txt",
+      "original_sha256": "ca473c46b1bec0944a59d741b2cfec8a0eb806983de8df3f165ad4f8beaad27e",
+      "original_bytes": 277130,
+      "stored_path": "archive/ca/ca473c46b1bec0944a59d741b2cfec8a0eb806983de8df3f165ad4f8beaad27e.gz",
+      "stored_bytes": 66207,
+      "stored_sha256": "777e667c34e0c74984af97662bb1699e41050e19c5ccded4ac56e818f7d5b56b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-irnr.pdf",
+      "original_sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+      "original_bytes": 799094,
+      "stored_path": "archive/25/255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d.gz",
+      "stored_bytes": 721976,
+      "stored_sha256": "58f3460e8f193415597480774187ca8082b2c2d195ab59ed0df27195e81e8585"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-irnr.txt",
+      "original_sha256": "783a2ff80e73ebc6283ed662f9a48de4ca0de667f7fec332f1ada68c13836246",
+      "original_bytes": 211514,
+      "stored_path": "archive/78/783a2ff80e73ebc6283ed662f9a48de4ca0de667f7fec332f1ada68c13836246.gz",
+      "stored_bytes": 42535,
+      "stored_sha256": "ba476fa51e9e8955fbefa1238928fbd2f8f03731dfb2ea9a6bca96c0996520b6"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-law.pdf",
+      "original_sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+      "original_bytes": 2587573,
+      "stored_path": "archive/a3/a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44.gz",
+      "stored_bytes": 2265094,
+      "stored_sha256": "28579c2b8b841a76d6fdf43cabe12b187ddc52037d074f1ca81c0f1cd0fe26cf"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-law.txt",
+      "original_sha256": "2a106c8f27797afd43fcb6b9a1c4f128f0b74a9b910ca41a38cc3ee81ef036fe",
+      "original_bytes": 1104835,
+      "stored_path": "archive/2a/2a106c8f27797afd43fcb6b9a1c4f128f0b74a9b910ca41a38cc3ee81ef036fe.gz",
+      "stored_bytes": 232561,
+      "stored_sha256": "277395bb85012e79e10fdfe102a29adeac2bf48334e1d469b83b76f067d8d777"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-reg.pdf",
+      "original_sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c",
+      "original_bytes": 1066738,
+      "stored_path": "archive/0a/0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c.gz",
+      "stored_bytes": 950557,
+      "stored_sha256": "49bc5020f8d92080f5772a58ebe303b28ca7c6f1f4bbe4e8388d794ce434ed3a"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/sources/gipuzkoa-reg.txt",
+      "original_sha256": "ebac85d2d7602d2dd77a92d1b12a57e199eb41535a379b7b1059c72efb6c6731",
+      "original_bytes": 337292,
+      "stored_path": "archive/eb/ebac85d2d7602d2dd77a92d1b12a57e199eb41535a379b7b1059c72efb6c6731.gz",
+      "stored_bytes": 76328,
+      "stored_sha256": "c1015e188c43ca64a6a5cd744e2e667087b7c32eb54aecd43715af509388d590"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/validate-targets.py",
+      "original_sha256": "911bc09e42d0cc308e4c55bc7e6cbdcdf4810b1135db9c8529307682e36b1367",
+      "original_bytes": 1771,
+      "stored_path": "archive/91/911bc09e42d0cc308e4c55bc7e6cbdcdf4810b1135db9c8529307682e36b1367.gz",
+      "stored_bytes": 908,
+      "stored_sha256": "0cff118eb4ce182f326ca6df6b323937041f8729f17683e6e78f7d252feb4ac3"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-private-method/validation.json",
+      "original_sha256": "ad14ec213eacac1e39633c86ec689f8a97b8c83272d11ba42e72dd4685bb757e",
+      "original_bytes": 4488,
+      "stored_path": "archive/ad/ad14ec213eacac1e39633c86ec689f8a97b8c83272d11ba42e72dd4685bb757e.gz",
+      "stored_bytes": 1517,
+      "stored_sha256": "27a1dc947e6edf700b818a6d29d1da373e479a2cc65f9de442966ec62cc8977b"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/manifest.json",
+      "original_sha256": "b242d5e8fce1159265750766cb4281361111f0cc0c631645b3bdbae1a6ef8136",
+      "original_bytes": 1162,
+      "stored_path": "archive/b2/b242d5e8fce1159265750766cb4281361111f0cc0c631645b3bdbae1a6ef8136.gz",
+      "stored_bytes": 556,
+      "stored_sha256": "fad4c1117d6480bb4f7c46a6fda607a3ce270ff4fd28f5c2020c2013eb7e0e06"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/own-controls.json",
+      "original_sha256": "2600f997dbe3a6108db8ce6b50192c3db4649ede8ad89684b31a4fa3e4fd8b39",
+      "original_bytes": 2497,
+      "stored_path": "archive/26/2600f997dbe3a6108db8ce6b50192c3db4649ede8ad89684b31a4fa3e4fd8b39.gz",
+      "stored_bytes": 481,
+      "stored_sha256": "541256fdb835f6d762bd795d495215849724ac61557711f11e4b82a1e379edae"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/own-examples.txt",
+      "original_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "original_bytes": 58,
+      "stored_path": "archive/3d/3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "e65352876bd72620127c53e4681c3a78ca040b0f86df5c896ad37f72b46e3a1f"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/preservation-checks.json",
+      "original_sha256": "a6e68fe5825ac2cd0015dc52bb1326c8b8f74affe537ae252eade35687ba6e54",
+      "original_bytes": 1245,
+      "stored_path": "archive/a6/a6e68fe5825ac2cd0015dc52bb1326c8b8f74affe537ae252eade35687ba6e54.gz",
+      "stored_bytes": 509,
+      "stored_sha256": "961748ddb831f6c541a4ea73927e6988cd564a593e07ff2ff6f07111612d9934"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/report.md",
+      "original_sha256": "1c40f27e75bbcc1e238bde03ecec80aef205ef03c1d2da228e0df1b867f50f3f",
+      "original_bytes": 4067,
+      "stored_path": "archive/1c/1c40f27e75bbcc1e238bde03ecec80aef205ef03c1d2da228e0df1b867f50f3f.gz",
+      "stored_bytes": 2076,
+      "stored_sha256": "31f653b7029bbae246fb5c43ca30c65e455f35d951e23f4e40f00e017edc3423"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/source-read-ledger.json",
+      "original_sha256": "8a2b872110980df6f2e0ce38b4929fced686136abafad104d010bc1fc49a2766",
+      "original_bytes": 11011,
+      "stored_path": "archive/8a/8a2b872110980df6f2e0ce38b4929fced686136abafad104d010bc1fc49a2766.gz",
+      "stored_bytes": 2326,
+      "stored_sha256": "162b5132f2aa18edb33c4f5583bca8245c85f6624b2399ab2e9ffa1af41351bf"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/verify.py",
+      "original_sha256": "ab149c6d1552a18ece101ac5cca5db86fa17b8e0633deda7a25bb1bea84624f9",
+      "original_bytes": 4961,
+      "stored_path": "archive/ab/ab149c6d1552a18ece101ac5cca5db86fa17b8e0633deda7a25bb1bea84624f9.gz",
+      "stored_bytes": 2316,
+      "stored_sha256": "ba0c88f1bd9a82b6127d6caa59ab0d8c79c87adfcddd7f4d9e0654de068f6c05"
+    },
+    {
+      "original_path": "spain-extraordinary-profit-positive-independent-review/writer-binding.json",
+      "original_sha256": "1ca730c52eb79e8a904e17bc46e58fdfa51306b97b4313cd0b20f270beafe534",
+      "original_bytes": 1621,
+      "stored_path": "archive/1c/1ca730c52eb79e8a904e17bc46e58fdfa51306b97b4313cd0b20f270beafe534.gz",
+      "stored_bytes": 676,
+      "stored_sha256": "fa1a00b5347440429f9281ce9ebdf28f062149489b7fcc854678bd96da91adfa"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/README.md.diff",
+      "original_sha256": "820795693a18bb79a86313fb65ca01273ea2e06be9a1733335921c44dec10455",
+      "original_bytes": 12628,
+      "stored_path": "archive/82/820795693a18bb79a86313fb65ca01273ea2e06be9a1733335921c44dec10455.gz",
+      "stored_bytes": 3340,
+      "stored_sha256": "e6d5c3b071445daf4ad633bef5e9964ec1aa85ca88d25c5d0a329045432d83fe"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/actual-read-excerpts.txt",
+      "original_sha256": "81f6ed03fa0cb3a759d1c907344a4c96fa98aa96a49ac36e5ab7b2f22dd5dccb",
+      "original_bytes": 128884,
+      "stored_path": "archive/81/81f6ed03fa0cb3a759d1c907344a4c96fa98aa96a49ac36e5ab7b2f22dd5dccb.gz",
+      "stored_bytes": 26848,
+      "stored_sha256": "53441e019fdf5c3b2a00b6d55981623f13b30aa9dab67d9e6a291b3c633b509b"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/artifact-manifest.json",
+      "original_sha256": "1b6b748de4c9a8b25687aa3c28ae9225553b6a66320c838d8862044e6494bd0a",
+      "original_bytes": 17703,
+      "stored_path": "archive/1b/1b6b748de4c9a8b25687aa3c28ae9225553b6a66320c838d8862044e6494bd0a.gz",
+      "stored_bytes": 3377,
+      "stored_sha256": "2f2fc55daedb25da9786c0f28700eebd4fdf5f038bb91216ea84b1c63884b0b5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/baseline/README.md",
+      "original_sha256": "29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a",
+      "original_bytes": 15166,
+      "stored_path": "archive/29/29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a.gz",
+      "stored_bytes": 5901,
+      "stored_sha256": "0a6a37386e8d2d6f64ff0c3bede30cacaf8e2f42a66b55c34e6f7aae6874727e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/baseline/es-foral-income-tax.md",
+      "original_sha256": "e3bb8c58da1b5964ed3b1a4ef77a00df675ee66b44e6e201e514c793885e7e3e",
+      "original_bytes": 316734,
+      "stored_path": "archive/e3/e3bb8c58da1b5964ed3b1a4ef77a00df675ee66b44e6e201e514c793885e7e3e.gz",
+      "stored_bytes": 85894,
+      "stored_sha256": "6f7fb664de901fa76f35278352f92fdfd0ea9323893b4d4427d695d2d52dee3f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/baseline/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/browser-read-note.md",
+      "original_sha256": "6312ccb502e585ab7f7e956c44fc1aba8a13285b2ce5071219acb8e868783e23",
+      "original_bytes": 1339,
+      "stored_path": "archive/63/6312ccb502e585ab7f7e956c44fc1aba8a13285b2ce5071219acb8e868783e23.gz",
+      "stored_bytes": 808,
+      "stored_sha256": "4d5627bb371a5809010fdd4376ce96f89739fd63e9ea6504fd0bb53a4361c5a5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/candidate-README.md",
+      "original_sha256": "4c9bc2a117fe387c927c86e3cddebdc41f19182a032cb4e83a2ad0e5c85c3bc4",
+      "original_bytes": 15479,
+      "stored_path": "archive/4c/4c9bc2a117fe387c927c86e3cddebdc41f19182a032cb4e83a2ad0e5c85c3bc4.gz",
+      "stored_bytes": 6031,
+      "stored_sha256": "373e2840740e530438e805f83cda4f6574e8ac0f6d4493cc4babb0e6a1b3d7fe"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/candidate-es-foral-income-tax.md",
+      "original_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "original_bytes": 323879,
+      "stored_path": "archive/1b/1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40.gz",
+      "stored_bytes": 88232,
+      "stored_sha256": "853ec2ffe06919e458ead9bc51b594164969933540381c8c901b84eda46fddc1"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/candidate-spain-crypto-tax.md",
+      "original_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "original_bytes": 37994,
+      "stored_path": "archive/1c/1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c.gz",
+      "stored_bytes": 13435,
+      "stored_sha256": "fe9e4c173112d711b165d47f110f0a8abea881b98babd88a14fa8dbb41ad5c2e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/changes.json",
+      "original_sha256": "5ed79ed52e14605252e3317d42eee17c66e83b4b850ccf5e72afb2ef3f1f361a",
+      "original_bytes": 22621,
+      "stored_path": "archive/5e/5ed79ed52e14605252e3317d42eee17c66e83b4b850ccf5e72afb2ef3f1f361a.gz",
+      "stored_bytes": 7304,
+      "stored_sha256": "8f8987341520962d587798f37e206b6b20e31b996d39919deb89a2792ddbbb35"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/es-foral-income-tax.md.diff",
+      "original_sha256": "a944d033cc16e43363bf7970c9db57435f94b2d2efac55a6411eb1aa41ea0e5e",
+      "original_bytes": 20154,
+      "stored_path": "archive/a9/a944d033cc16e43363bf7970c9db57435f94b2d2efac55a6411eb1aa41ea0e5e.gz",
+      "stored_bytes": 6900,
+      "stored_sha256": "b6c3d9f4a59c56b6a3e7cf0ce27c55e86f848aafec7eb0c2bbd9e23e70a9a3da"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/foral-reservation-to-inspect.txt",
+      "original_sha256": "b3894549cf44ef5dd5d4165b5d1d3bb45821e13fda23e0245d5cd6fa6dc7be23",
+      "original_bytes": 1550,
+      "stored_path": "archive/b3/b3894549cf44ef5dd5d4165b5d1d3bb45821e13fda23e0245d5cd6fa6dc7be23.gz",
+      "stored_bytes": 842,
+      "stored_sha256": "31690c2cda4958bc1bb07036ba8c3f0db71ef01aa4c373609a5fc3aaf30f719d"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/freeze.json",
+      "original_sha256": "56235bb70a24784ea0104066293b14e84a1dfad645d0d93445e49b47b975a34b",
+      "original_bytes": 2098,
+      "stored_path": "archive/56/56235bb70a24784ea0104066293b14e84a1dfad645d0d93445e49b47b975a34b.gz",
+      "stored_bytes": 713,
+      "stored_sha256": "d25906f11c15cf6ba2b94d1c3ef7495c1defaa58a775ff9b8014bcf53b763637"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/oa.actual-output.txt",
+      "original_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "original_bytes": 58,
+      "stored_path": "archive/3d/3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "e65352876bd72620127c53e4681c3a78ca040b0f86df5c896ad37f72b46e3a1f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/options-before-edit.md",
+      "original_sha256": "436219e32c9e40f682965ec586d3af3adb1543940dc05898472bc07485133341",
+      "original_bytes": 1622,
+      "stored_path": "archive/43/436219e32c9e40f682965ec586d3af3adb1543940dc05898472bc07485133341.gz",
+      "stored_bytes": 843,
+      "stored_sha256": "17934808896fa63ae2beb075b2c1abc2272d77bba79fbafb8c274d7de5c122df"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/prepare.py",
+      "original_sha256": "d32792fd9d8f0b3c868af51fdba761cba090c9ea99ff5b2ba3b14cbeac3181a9",
+      "original_bytes": 22132,
+      "stored_path": "archive/d3/d32792fd9d8f0b3c868af51fdba761cba090c9ea99ff5b2ba3b14cbeac3181a9.gz",
+      "stored_bytes": 7630,
+      "stored_sha256": "e7b732686064033f01f274c935d082c00148bf2d81bdb5fcfdbb743f59f3a204"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/preservation-proof.json",
+      "original_sha256": "b563b25608659bdb002014b0da86b82d3c5ef8f2773a807367d24b9c729c1138",
+      "original_bytes": 1775,
+      "stored_path": "archive/b5/b563b25608659bdb002014b0da86b82d3c5ef8f2773a807367d24b9c729c1138.gz",
+      "stored_bytes": 585,
+      "stored_sha256": "cc42d01b13c80b51faa1e0da5b9fa057dda49616edeb623c14a6a69068032a19"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/report.md",
+      "original_sha256": "fc20f16f49c778565cc4b1e7aad88873302577f640f0827c1cfc90c2fd321910",
+      "original_bytes": 6067,
+      "stored_path": "archive/fc/fc20f16f49c778565cc4b1e7aad88873302577f640f0827c1cfc90c2fd321910.gz",
+      "stored_bytes": 3045,
+      "stored_sha256": "33210119fc5f04aa7a2f51269e1b7ff89c7497fdd8b0b741cbde26a044e85c6f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/retained-source-identity.json",
+      "original_sha256": "9849a642c16b7d44b1b6cd4c369ab6f1faa4436bc6dd49f05043e5bb501e2f9c",
+      "original_bytes": 6864,
+      "stored_path": "archive/98/9849a642c16b7d44b1b6cd4c369ab6f1faa4436bc6dd49f05043e5bb501e2f9c.gz",
+      "stored_bytes": 1762,
+      "stored_sha256": "7cce7e018db09fb1066fd2da817a011d29e6c46f530c73b27cf1c67e8b80225b"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/schema.actual-output.txt",
+      "original_sha256": "2ccb30970e46a9251e917deb21af78ee7e9eecf977fbeaa8681800b7313cb770",
+      "original_bytes": 71,
+      "stored_path": "archive/2c/2ccb30970e46a9251e917deb21af78ee7e9eecf977fbeaa8681800b7313cb770.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "42eef68b02dc16428ba3d0ae82991a5e39edf3829ba740d99a4e56b03ccbb3fc"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "original_bytes": 323879,
+      "stored_path": "archive/1b/1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40.gz",
+      "stored_bytes": 88232,
+      "stored_sha256": "853ec2ffe06919e458ead9bc51b594164969933540381c8c901b84eda46fddc1"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "original_bytes": 37994,
+      "stored_path": "archive/1c/1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c.gz",
+      "stored_bytes": 13435,
+      "stored_sha256": "fe9e4c173112d711b165d47f110f0a8abea881b98babd88a14fa8dbb41ad5c2e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/source-read-scopes.json",
+      "original_sha256": "740ff06507500b906dbdfccc2ba0d9bac19197903915408c77c46a8c030f4453",
+      "original_bytes": 14036,
+      "stored_path": "archive/74/740ff06507500b906dbdfccc2ba0d9bac19197903915408c77c46a8c030f4453.gz",
+      "stored_bytes": 3185,
+      "stored_sha256": "5bc3c0bf25a07ba5adfb672f24719418084c712761497ce8c1942a748a5326a8"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/15-B13-2013-current.pdf",
+      "original_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+      "original_bytes": 1542148,
+      "stored_path": "archive/ad/ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a.gz",
+      "stored_bytes": 1469730,
+      "stored_sha256": "183e244913f0d0cad624913e18ab046c324e3c8a6a7b65a27f49908775301284"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/15-B13-2013-current.txt",
+      "original_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+      "original_bytes": 627342,
+      "stored_path": "archive/c8/c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b.gz",
+      "stored_bytes": 143734,
+      "stored_sha256": "dab6f9c6df25aed60a2fafeac44d9419cd833d141986cdcaeec59dcb26f4144a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/16-A33-2013-current.pdf",
+      "original_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+      "original_bytes": 1602000,
+      "stored_path": "archive/72/72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3.gz",
+      "stored_bytes": 1256870,
+      "stored_sha256": "7523c3225aedc7a8d40f3644e356395262e8405bc20475a62be5bab730da653a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/16-A33-2013-current.txt",
+      "original_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+      "original_bytes": 677286,
+      "stored_path": "archive/9f/9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26.gz",
+      "stored_bytes": 154297,
+      "stored_sha256": "b77b8c0144b7d6455092abb6a5841b487992c2a8c56d207af06f645eaa169404"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/17-G3-2014-current.pdf",
+      "original_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+      "original_bytes": 2290042,
+      "stored_path": "archive/fa/fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704.gz",
+      "stored_bytes": 1994054,
+      "stored_sha256": "87b893f1857e9d8e0298cb06b90e85af41037a8fbf697d0a208b1cc9125fc6ee"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/17-G3-2014-current.txt",
+      "original_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+      "original_bytes": 996408,
+      "stored_path": "archive/f0/f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347.gz",
+      "stored_bytes": 193874,
+      "stored_sha256": "09c8902cadced5c88c0cda69ece9ad7a8fc179823c46f2fa595f3c41986f89a5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/18-5e033e9a0e183de4a2e9.body",
+      "original_sha256": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+      "original_bytes": 1063863,
+      "stored_path": "archive/09/094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0.gz",
+      "stored_bytes": 166873,
+      "stored_sha256": "07ef4c57bf6d0357ac248bad06215a12a382e2a5e05a77393a506c4807a5baa2"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/18-5e033e9a0e183de4a2e9.reader.txt",
+      "original_sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+      "original_bytes": 673599,
+      "stored_path": "archive/46/46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b.gz",
+      "stored_bytes": 137822,
+      "stored_sha256": "8fe6f31b1ac7d56f1380ce2e78699014885abe0efb96d073c9a1b3aaf1450f85"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/19-B2026.pdf",
+      "original_sha256": "49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb",
+      "original_bytes": 1491909,
+      "stored_path": "archive/49/49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb.gz",
+      "stored_bytes": 500577,
+      "stored_sha256": "a14ad32c9c55a6c84afa07af0faefb9bbf58442411f0b8048fb0e6b57914ac92"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/19-B2026.reader.txt",
+      "original_sha256": "4416d3904b47f1115b7b3f378bcc35f1f44de80231701ec2f0a258f510a2115c",
+      "original_bytes": 662692,
+      "stored_path": "archive/44/4416d3904b47f1115b7b3f378bcc35f1f44de80231701ec2f0a258f510a2115c.gz",
+      "stored_bytes": 158967,
+      "stored_sha256": "c426d1ff8d81344348a90193ea1aaa6d3fdd505a5af965590e95fd0443e26dd7"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/20-A2024.pdf",
+      "original_sha256": "cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a",
+      "original_bytes": 719539,
+      "stored_path": "archive/cd/cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a.gz",
+      "stored_bytes": 662288,
+      "stored_sha256": "becd0af8efa1d970429289c1a40d940436a6fa7a7014234f26a715b5c03e0fb5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/20-A2024.reader.txt",
+      "original_sha256": "9b7d8bcd58fd24a8a9211b468073c8d6c3b9552f006642dceb6045d62701ac0c",
+      "original_bytes": 252992,
+      "stored_path": "archive/9b/9b7d8bcd58fd24a8a9211b468073c8d6c3b9552f006642dceb6045d62701ac0c.gz",
+      "stored_bytes": 67702,
+      "stored_sha256": "a2f68b2ccccc8bb6d38a5068ff876f2afc6a7b54ee2fb78c9b22d17e6d91c66e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/21-A2025manual.pdf",
+      "original_sha256": "ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d",
+      "original_bytes": 2821713,
+      "stored_path": "archive/ae/ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d.gz",
+      "stored_bytes": 2222137,
+      "stored_sha256": "0f542bca138dc4e3df7aaf732ffcbd19a6491ec26c61416901c8e21c555c6277"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/21-A2025manual.reader.txt",
+      "original_sha256": "26066a9bc1b4e74c979fe16c90fff7f3efb5c39276e539daa31704dd3d797935",
+      "original_bytes": 788901,
+      "stored_path": "archive/26/26066a9bc1b4e74c979fe16c90fff7f3efb5c39276e539daa31704dd3d797935.gz",
+      "stored_bytes": 191463,
+      "stored_sha256": "5d61b9f2f2cbdcba0ed8b7784b32682e7ee9416c187b8dfcffb7f40dfb40c652"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/22-G2025manual.pdf",
+      "original_sha256": "86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17",
+      "original_bytes": 3004901,
+      "stored_path": "archive/86/86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17.gz",
+      "stored_bytes": 2214616,
+      "stored_sha256": "ea4fb677d42e5be471d551cf860824813c2007b2067b76d9ef4335c497441bf9"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/22-G2025manual.txt",
+      "original_sha256": "02036cc348354f9f4a25536bb5e4815020f31348b8a0b3c74fe1bc49467805b2",
+      "original_bytes": 1416962,
+      "stored_path": "archive/02/02036cc348354f9f4a25536bb5e4815020f31348b8a0b3c74fe1bc49467805b2.gz",
+      "stored_bytes": 287391,
+      "stored_sha256": "cba98010416f6165a22767bab1910a9934703a34ea4271ef6e3621f29e5d9e73"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/23-5f1cb085d3190b3da13a.body",
+      "original_sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+      "original_bytes": 2360617,
+      "stored_path": "archive/dd/dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f.gz",
+      "stored_bytes": 2208723,
+      "stored_sha256": "8731c62e84f8b686154f0245b024e1fd532d86138dea8c910fac2ba2f9f0c424"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/23-5f1cb085d3190b3da13a.pdf.reader.txt",
+      "original_sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+      "original_bytes": 1281620,
+      "stored_path": "archive/23/23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0.gz",
+      "stored_bytes": 308892,
+      "stored_sha256": "54e624c3bdc1cb7aa67d47b1c32ecb49f44ece2345e6c8dd7160932be415d194"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/A2026-coeff.pdf",
+      "original_sha256": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+      "original_bytes": 167655,
+      "stored_path": "archive/01/01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc.gz",
+      "stored_bytes": 57541,
+      "stored_sha256": "d5837a4d78eb9ba7cbb907e73cbc28ed7823160db1012509a3d468badca07fad"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/A2026-coeff.reader.txt",
+      "original_sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+      "original_bytes": 16100,
+      "stored_path": "archive/bd/bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a.gz",
+      "stored_bytes": 3436,
+      "stored_sha256": "e0a59cf0a695d3545efc4da1a4a30c17b55a085cefd915f70825d4dca847b976"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/A21-2025-original.pdf",
+      "original_sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+      "original_bytes": 621844,
+      "stored_path": "archive/2c/2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4.gz",
+      "stored_bytes": 334625,
+      "stored_sha256": "e06b9bdad796eb76c6774ef2f240898c4157e30b04084b1c53331625bd2ed8f4"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/A21-2025-original.txt",
+      "original_sha256": "69493ba8fdbf207469b08849ae379e51891c104f985d48523519900f728c37e9",
+      "original_bytes": 186396,
+      "stored_path": "archive/69/69493ba8fdbf207469b08849ae379e51891c104f985d48523519900f728c37e9.gz",
+      "stored_bytes": 33067,
+      "stored_sha256": "879d945b62a539d86bbc7a1c56ba913a7637d3872eec71984ff75df00244be1f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/AEAT2025-investor.html",
+      "original_sha256": "c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1",
+      "original_bytes": 23852,
+      "stored_path": "archive/c5/c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1.gz",
+      "stored_bytes": 6431,
+      "stored_sha256": "275b21c2a445a4566c8911567b89407f1d0f0011a01423f3a262ea146e5efacd"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/AEAT2025-investor.reader.txt",
+      "original_sha256": "41b3e83e8d60e0428ddd8a8717528fce425befe49ada383d5d7786016d658ab2",
+      "original_bytes": 12900,
+      "stored_path": "archive/41/41b3e83e8d60e0428ddd8a8717528fce425befe49ada383d5d7786016d658ab2.gz",
+      "stored_bytes": 3704,
+      "stored_sha256": "29818aea9b8d85d2e7c7266fa88dce3ab5b112d7c1eabcc8872e4d47e03e2b7a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/B2026-coeff.pdf",
+      "original_sha256": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+      "original_bytes": 234488,
+      "stored_path": "archive/cb/cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f.gz",
+      "stored_bytes": 88111,
+      "stored_sha256": "1bd79e62c6ec3ef209f0780e2c34f722e0c6de3e0b30c1ef3125be1a18614a12"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/B2026-coeff.reader.txt",
+      "original_sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+      "original_bytes": 12131,
+      "stored_path": "archive/db/db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888.gz",
+      "stored_bytes": 2699,
+      "stored_sha256": "511b792e761c544d793412497a865d59b1ed401371ae575b3f424ad98b29c0ed"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/LIRPF.html",
+      "original_sha256": "575643adfe60fd6bb0a7e9a6404465400a40cccac0fc50550318a67ea1cb080f",
+      "original_bytes": 2028806,
+      "stored_path": "archive/57/575643adfe60fd6bb0a7e9a6404465400a40cccac0fc50550318a67ea1cb080f.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "26a32c9f975661d3a6e868216265959516c23bf30595b4e969fab037c94500e4"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/sources/LIRPF.html.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/spain-crypto-tax.md.diff",
+      "original_sha256": "c38d5a4915f84824e9c8a0e01f51d8720b60ed0ee7b48912180ef3cedfc52b27",
+      "original_bytes": 16877,
+      "stored_path": "archive/c3/c38d5a4915f84824e9c8a0e01f51d8720b60ed0ee7b48912180ef3cedfc52b27.gz",
+      "stored_bytes": 6333,
+      "stored_sha256": "38c66897239e95310fb5e55f682b165a1420ca020b54bd65e9d56bb45912c12d"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/target-manifest.json",
+      "original_sha256": "021409dc7a34d1e6d54abedff3888c2d2b65d30f4df3482c035839a06d874f76",
+      "original_bytes": 2111,
+      "stored_path": "archive/02/021409dc7a34d1e6d54abedff3888c2d2b65d30f4df3482c035839a06d874f76.gz",
+      "stored_bytes": 728,
+      "stored_sha256": "aecf1de6c725073d0438d5775b66a3b87b48bf91ec70638a16fe65b82e7c673d"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/verify.py",
+      "original_sha256": "dbde0c47d0b637e52729ee287b42179794a326bc048a29912622ba94921d2774",
+      "original_bytes": 7002,
+      "stored_path": "archive/db/dbde0c47d0b637e52729ee287b42179794a326bc048a29912622ba94921d2774.gz",
+      "stored_bytes": 3059,
+      "stored_sha256": "69b4cb32242cb9d1cf83c18d3398495bd8d92d5cef40e6d88c09fda71d6eb53d"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-private-method/writer-controls.json",
+      "original_sha256": "78e33d94340c119b9c9e4438c59e0f108e145b700a0fc0dc82e45dff27ac6d6d",
+      "original_bytes": 5788,
+      "stored_path": "archive/78/78e33d94340c119b9c9e4438c59e0f108e145b700a0fc0dc82e45dff27ac6d6d.gz",
+      "stored_bytes": 768,
+      "stored_sha256": "30aacd03826bf349c5ca190e2b9934241718b3d47572619cc15d3c34828e09fd"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/DGT-V0386-24-fresh-AX.txt",
+      "original_sha256": "06bd1c276551766b124a82d0cb09fa25224811618161631bd692c782c53dd3fc",
+      "original_bytes": 42241,
+      "stored_path": "archive/06/06bd1c276551766b124a82d0cb09fa25224811618161631bd692c782c53dd3fc.gz",
+      "stored_bytes": 10799,
+      "stored_sha256": "a880664c1018383035113e65206af49605e0fb14b46bef1c2bd69b387d73444d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/DGT-V0386-24-search-results-only-AX.txt",
+      "original_sha256": "900709c4cf361c9fb948e77fd2d0757f30975e6f61c6f4bb7a4ccc922d9a581d",
+      "original_bytes": 6966,
+      "stored_path": "archive/90/900709c4cf361c9fb948e77fd2d0757f30975e6f61c6f4bb7a4ccc922d9a581d.gz",
+      "stored_bytes": 2194,
+      "stored_sha256": "3cff48938e58106b2e312ebceb46d80b138d001fbe4542c65f4fd93fbf9c51b7"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/baseline-README.md",
+      "original_sha256": "29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a",
+      "original_bytes": 15166,
+      "stored_path": "archive/29/29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a.gz",
+      "stored_bytes": 5901,
+      "stored_sha256": "0a6a37386e8d2d6f64ff0c3bede30cacaf8e2f42a66b55c34e6f7aae6874727e"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/baseline-es-vat-return.md",
+      "original_sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "original_bytes": 86372,
+      "stored_path": "archive/d1/d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3.gz",
+      "stored_bytes": 27330,
+      "stored_sha256": "d263a05e1a4415163d908350642f86edfe1d52fbf8547bf94b2bd1e010c7cee1"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/baseline-identity.json",
+      "original_sha256": "de17771fd58a88cc891210eb9f5061fee74ea2035967a6766216cf3c6bf887ae",
+      "original_bytes": 751,
+      "stored_path": "archive/de/de17771fd58a88cc891210eb9f5061fee74ea2035967a6766216cf3c6bf887ae.gz",
+      "stored_bytes": 419,
+      "stored_sha256": "df5c2d5d8db9f523281c289b383f5dbc68423852a258580140b6f8f0f228094b"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/baseline-spain-vat-return.md",
+      "original_sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "original_bytes": 26631,
+      "stored_path": "archive/70/70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2.gz",
+      "stored_bytes": 9603,
+      "stored_sha256": "c0d3d8ac1757b74d57fa2fca2df0c13a13c2f4f51a7bc14d2ee8e69d641ec6ff"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/candidate-README.md",
+      "original_sha256": "eb83cd86d0ce5f79887fd59ee145c62b60e94345db868ae69956514ab248fffd",
+      "original_bytes": 15385,
+      "stored_path": "archive/eb/eb83cd86d0ce5f79887fd59ee145c62b60e94345db868ae69956514ab248fffd.gz",
+      "stored_bytes": 5987,
+      "stored_sha256": "6ce961d63d3cceeeceae1c820c8efe8895503dd6b0d0decbd6481224e37a64e5"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/candidate-es-vat-return.md",
+      "original_sha256": "eabf873b2f7cb01f7ce6b2f6a6b81c32cb1495c6b7e7a4fedf2cc77c1780915c",
+      "original_bytes": 89531,
+      "stored_path": "archive/ea/eabf873b2f7cb01f7ce6b2f6a6b81c32cb1495c6b7e7a4fedf2cc77c1780915c.gz",
+      "stored_bytes": 28239,
+      "stored_sha256": "2a81cc64dd24c16abf36f092d618ae01b04acfe9883cf277723afc10219dc6d6"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/candidate-spain-vat-return.md",
+      "original_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "original_bytes": 27072,
+      "stored_path": "archive/46/468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1.gz",
+      "stored_bytes": 9744,
+      "stored_sha256": "59238bd1b7c62a49397828d004fbd518eea258414b204df6178b35778ca37d3d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/compose-and-check.py",
+      "original_sha256": "0d13450df05c841261b25e0b6328950757f9a7670f8a412991a80f9202bdd254",
+      "original_bytes": 9308,
+      "stored_path": "archive/0d/0d13450df05c841261b25e0b6328950757f9a7670f8a412991a80f9202bdd254.gz",
+      "stored_bytes": 3685,
+      "stored_sha256": "431c4c3b3ba291100c1648c6aaf1ba8852d01d6b3a51f78957595ca724b543da"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/draft-options.md",
+      "original_sha256": "b156ea71471c7ec467fcc7cb3664d6640ad7799536c219952071899120dcd27f",
+      "original_bytes": 2258,
+      "stored_path": "archive/b1/b156ea71471c7ec467fcc7cb3664d6640ad7799536c219952071899120dcd27f.gz",
+      "stored_bytes": 1190,
+      "stored_sha256": "9602ea5bf9fe49936a5a654039009fe14955888c7cf03274d1a1bc6a7f2d867b"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/exact-replacements.json",
+      "original_sha256": "d99d74d96ff19eee596a4f6dd6f2343fda185828b6066b3064437b1075039e9f",
+      "original_bytes": 7225,
+      "stored_path": "archive/d9/d99d74d96ff19eee596a4f6dd6f2343fda185828b6066b3064437b1075039e9f.gz",
+      "stored_bytes": 2521,
+      "stored_sha256": "613211200cb339a5954a2f78208e320fe3d5344844fe107e049246f6f983daee"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/manifest.json",
+      "original_sha256": "abdd262dced974e379ca17517e2f843c753100e8685d41d6650a48852373418e",
+      "original_bytes": 2980,
+      "stored_path": "archive/ab/abdd262dced974e379ca17517e2f843c753100e8685d41d6650a48852373418e.gz",
+      "stored_bytes": 1210,
+      "stored_sha256": "1f3eebfc182af07edf92127ed3ce6a55597da5455662cc2cb55311c203d033fc"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/own-controls.json",
+      "original_sha256": "170646ba37ad0014e45eb8df9fb9e30dab92b0a620a837758323674564fd0f92",
+      "original_bytes": 2234,
+      "stored_path": "archive/17/170646ba37ad0014e45eb8df9fb9e30dab92b0a620a837758323674564fd0f92.gz",
+      "stored_bytes": 402,
+      "stored_sha256": "cea4e277cbe01547e0a4dba190e8df9c18608a5eb0a616df13c6ed624b2f43ea"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/own-examples.txt",
+      "original_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "original_bytes": 58,
+      "stored_path": "archive/3d/3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "e65352876bd72620127c53e4681c3a78ca040b0f86df5c896ad37f72b46e3a1f"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/preservation-checks.json",
+      "original_sha256": "e92bd43550f81f01a19d97cc783d4139250c9f027a9416f645c2bb7cf3577406",
+      "original_bytes": 1212,
+      "stored_path": "archive/e9/e92bd43550f81f01a19d97cc783d4139250c9f027a9416f645c2bb7cf3577406.gz",
+      "stored_bytes": 485,
+      "stored_sha256": "3afa0c26c23c5496326baa49e63c1caeba7efae41647a29baa73f048cb2a09c6"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/retained-calculator-controls.json",
+      "original_sha256": "67b659a19394f2f23deb2965aa95c3a029747482df4134e5510d188c192fc213",
+      "original_bytes": 1785,
+      "stored_path": "archive/67/67b659a19394f2f23deb2965aa95c3a029747482df4134e5510d188c192fc213.gz",
+      "stored_bytes": 665,
+      "stored_sha256": "7dd6e45dac41f425d0db58187e3759f205d3b735439905c02b595b7d93f27486"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/source-read-ledger.json",
+      "original_sha256": "190b914c71e4ab5df8d378b1236da99824ae8db77d1f3fbaf7616eea516e1e40",
+      "original_bytes": 3717,
+      "stored_path": "archive/19/190b914c71e4ab5df8d378b1236da99824ae8db77d1f3fbaf7616eea516e1e40.gz",
+      "stored_bytes": 1365,
+      "stored_sha256": "c781f234b2b712f1c01f706a23ab85b58886c1e49db04416f5ecb525f812ed4c"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-private-method/writer-report.md",
+      "original_sha256": "b373dabdfc511370b7b041a163982ca2a0a315685d3af723627c470ddcc8d25c",
+      "original_bytes": 4860,
+      "stored_path": "archive/b3/b373dabdfc511370b7b041a163982ca2a0a315685d3af723627c470ddcc8d25c.gz",
+      "stored_bytes": 2439,
+      "stored_sha256": "a308e789b24f677122f7c46421af4313ae59b15df4ca17d3ef9303b56cce6988"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/candidate-README.md",
+      "original_sha256": "eb83cd86d0ce5f79887fd59ee145c62b60e94345db868ae69956514ab248fffd",
+      "original_bytes": 15385,
+      "stored_path": "archive/eb/eb83cd86d0ce5f79887fd59ee145c62b60e94345db868ae69956514ab248fffd.gz",
+      "stored_bytes": 5987,
+      "stored_sha256": "6ce961d63d3cceeeceae1c820c8efe8895503dd6b0d0decbd6481224e37a64e5"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/candidate-es-vat-return.md",
+      "original_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "original_bytes": 89529,
+      "stored_path": "archive/67/677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e.gz",
+      "stored_bytes": 28238,
+      "stored_sha256": "439a1401c8a6dac0be3a71e3f372245d5e246a15e1d5a867e863903b0c9c1844"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/candidate-spain-vat-return.md",
+      "original_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "original_bytes": 27072,
+      "stored_path": "archive/46/468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1.gz",
+      "stored_bytes": 9744,
+      "stored_sha256": "59238bd1b7c62a49397828d004fbd518eea258414b204df6178b35778ca37d3d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/exact-replacements.json",
+      "original_sha256": "9fbaf47e71584c35102531de662b77eb7f4bf34bb3eeaddbda0a9d473116c0b8",
+      "original_bytes": 9407,
+      "stored_path": "archive/9f/9fbaf47e71584c35102531de662b77eb7f4bf34bb3eeaddbda0a9d473116c0b8.gz",
+      "stored_bytes": 2750,
+      "stored_sha256": "ebbbf65afaf112324a2eba979bc6910e2cd464e760e8c1ef8a33155448a59754"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/manifest.json",
+      "original_sha256": "5dd86f83c4a939367000bbe9bae4c98d29723bdd4b3fc2a6e3ba10569996b621",
+      "original_bytes": 1044,
+      "stored_path": "archive/5d/5dd86f83c4a939367000bbe9bae4c98d29723bdd4b3fc2a6e3ba10569996b621.gz",
+      "stored_bytes": 516,
+      "stored_sha256": "994bb063a3045db472202f82a5e77a621f1daabc47a772c3d3e77ce6cdba9562"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/prior-binding.json",
+      "original_sha256": "a9fe8943ecc4ea1148901437ed558ad70c1e151922f5d056c4d82bfe10ba004f",
+      "original_bytes": 528,
+      "stored_path": "archive/a9/a9fe8943ecc4ea1148901437ed558ad70c1e151922f5d056c4d82bfe10ba004f.gz",
+      "stored_bytes": 374,
+      "stored_sha256": "631543b037b7424d9eafcef1614924092a7f17cc64b397a82ac11111a1cb8868"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-table-fix/report.md",
+      "original_sha256": "1163ad883fc4a86668a75f728c3b1fcf168c060f964cc80a8f9d11fbfc52439b",
+      "original_bytes": 553,
+      "stored_path": "archive/11/1163ad883fc4a86668a75f728c3b1fcf168c060f964cc80a8f9d11fbfc52439b.gz",
+      "stored_bytes": 385,
+      "stored_sha256": "57e3ed96f710798439f28f55ffcfbece1a9014238e03da30d511775c25368cc6"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/acquisition.json",
+      "original_sha256": "3a8a94fc56b1e25d5f1bc4c4bcc61e6942dd50265594ad41d8080ec7fd205b8d",
+      "original_bytes": 2283,
+      "stored_path": "archive/3a/3a8a94fc56b1e25d5f1bc4c4bcc61e6942dd50265594ad41d8080ec7fd205b8d.gz",
+      "stored_bytes": 689,
+      "stored_sha256": "b0aba2cf83250da00857677d5251a1df1f6a5fb743da6464cce9b17c64a53bfa"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/baseline-README.md",
+      "original_sha256": "29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a",
+      "original_bytes": 15166,
+      "stored_path": "archive/29/29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a.gz",
+      "stored_bytes": 5901,
+      "stored_sha256": "0a6a37386e8d2d6f64ff0c3bede30cacaf8e2f42a66b55c34e6f7aae6874727e"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "23f1bf5dfb19fbd6ae72cca60334b4c9500f1c9c28a6ef854c486611cfed761b",
+      "original_bytes": 492727,
+      "stored_path": "archive/23/23f1bf5dfb19fbd6ae72cca60334b4c9500f1c9c28a6ef854c486611cfed761b.gz",
+      "stored_bytes": 138231,
+      "stored_sha256": "44009aaae93e7850c8274898231a35d72f8dd20ff20465dbd7829b1a510ea2a3"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/candidate-README.md",
+      "original_sha256": "ac2f6aedda6f4262b6bb8f7b6be1b651ee1b18506f5a30f4240196dd247b93bf",
+      "original_bytes": 15452,
+      "stored_path": "archive/ac/ac2f6aedda6f4262b6bb8f7b6be1b651ee1b18506f5a30f4240196dd247b93bf.gz",
+      "stored_bytes": 5998,
+      "stored_sha256": "2e9904d0534b1221fdbaaec008947dc6193b0224b122b37bc60dcdc1f68987dc"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/draft-options.md",
+      "original_sha256": "eb3d2370f2df0248bbc860871de94f203eb908ae52f573a78ee577ecbf8da7f5",
+      "original_bytes": 1152,
+      "stored_path": "archive/eb/eb3d2370f2df0248bbc860871de94f203eb908ae52f573a78ee577ecbf8da7f5.gz",
+      "stored_bytes": 693,
+      "stored_sha256": "2462ff959779cb0e5537db2fdc129c63f4a10e9aa4e4ce313268530aca252807"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/exact-replacements.json",
+      "original_sha256": "72eb80fcb397c70c4b27ed3e1ffde2045fdc1855f442ea62b97d174ea8c74652",
+      "original_bytes": 4921,
+      "stored_path": "archive/72/72eb80fcb397c70c4b27ed3e1ffde2045fdc1855f442ea62b97d174ea8c74652.gz",
+      "stored_bytes": 2011,
+      "stored_sha256": "eda77095bf019c724c44ebe14133209fdbc0beb33f09081d03f68e3a1151c7e1"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/manifest.json",
+      "original_sha256": "55763a3e31857dc13aff06626d320ff0096d188708f7c61281d8e73f3bf592b5",
+      "original_bytes": 2849,
+      "stored_path": "archive/55/55763a3e31857dc13aff06626d320ff0096d188708f7c61281d8e73f3bf592b5.gz",
+      "stored_bytes": 1138,
+      "stored_sha256": "7b82035ff2e6f41dcfb4b4e2f91afecf9b41228d12513ed094b0bdb2c95a0cfb"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/own-controls.json",
+      "original_sha256": "977fb3cd8cba4b42a4749b1b4229b0525e24edc0c85f5376a264c6151199a2ef",
+      "original_bytes": 268,
+      "stored_path": "archive/97/977fb3cd8cba4b42a4749b1b4229b0525e24edc0c85f5376a264c6151199a2ef.gz",
+      "stored_bytes": 171,
+      "stored_sha256": "ac18c3379d6e72c975ae6b2a77fae5786af08695a2789c7c40a4c71eee8f4b33"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/preservation-checks.json",
+      "original_sha256": "218381ccc4ca4c31a0d3b9daf122f05966d02a904e1cbd90639acf72fdbe4780",
+      "original_bytes": 504,
+      "stored_path": "archive/21/218381ccc4ca4c31a0d3b9daf122f05966d02a904e1cbd90639acf72fdbe4780.gz",
+      "stored_bytes": 264,
+      "stored_sha256": "ce62f0601e3a3f412a28c4172107eb01f7def19e08282a437b391778ae7cf590"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/report.md",
+      "original_sha256": "a402289bfc9e71bfdd1e486fcbf251668c5121e8d0469d758b63f54879482a70",
+      "original_bytes": 1800,
+      "stored_path": "archive/a4/a402289bfc9e71bfdd1e486fcbf251668c5121e8d0469d758b63f54879482a70.gz",
+      "stored_bytes": 1053,
+      "stored_sha256": "1aa296a82934ca76d10c695942d7cc97f8ba1fda03fa4b368e013bd5cee72390"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/source-read-ledger.json",
+      "original_sha256": "f28e16640b6b45c80ee8bfd7f471edbc8d89584350b2be32fa5bcdfe8a806aa7",
+      "original_bytes": 3222,
+      "stored_path": "archive/f2/f28e16640b6b45c80ee8bfd7f471edbc8d89584350b2be32fa5bcdfe8a806aa7.gz",
+      "stored_bytes": 904,
+      "stored_sha256": "df2324bd84cbfc42726c1793f941f7d0d75db94943717b22760ae7f8c324673d"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/LIRPF-current.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/law-4-2026-original.html",
+      "original_sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+      "original_bytes": 737136,
+      "stored_path": "archive/33/33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96.gz",
+      "stored_bytes": 152216,
+      "stored_sha256": "115fd57238e13e27e9fdb6b4879ccc40bc79486b9d37a090e7a3837995e90f4e"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/law-4-2026-original.reader.txt",
+      "original_sha256": "1f5b9765042c6a4251877fd54f0cbd26762dd4a7c5d57e7c36acb29e37f0dcd7",
+      "original_bytes": 600736,
+      "stored_path": "archive/1f/1f5b9765042c6a4251877fd54f0cbd26762dd4a7c5d57e7c36acb29e37f0dcd7.gz",
+      "stored_bytes": 141646,
+      "stored_sha256": "bc94ab935e5780dceed335351633298336e54429fbc1d464af9fe41ee73bd6f0"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/law-current.html",
+      "original_sha256": "922c1871ce9e83f67054f32cb0f87cd57528b0b32a20442345bd43e9e8911e21",
+      "original_bytes": 718564,
+      "stored_path": "archive/92/922c1871ce9e83f67054f32cb0f87cd57528b0b32a20442345bd43e9e8911e21.gz",
+      "stored_bytes": 85029,
+      "stored_sha256": "ce43acc4c0113d7f7f33bc376e2285f98848cfaa5f0b7ac5f080ec3664e9db63"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-source-method/sources/law-current.reader.txt",
+      "original_sha256": "5dc7ebe4eb631ad73816dd2cf0e1596ae37f1eeafc59ccbb20293ce0ef6c80f6",
+      "original_bytes": 303236,
+      "stored_path": "archive/5d/5dc7ebe4eb631ad73816dd2cf0e1596ae37f1eeafc59ccbb20293ce0ef6c80f6.gz",
+      "stored_bytes": 58326,
+      "stored_sha256": "7d16154eb1907c98f9be3e938d73b835394f94a786be6a405b85043ddf5ae644"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/manifest.json",
+      "original_sha256": "d50546e0f27c309d41934a4c32da30a797e22002d1a5cecfb0c911d584fc2780",
+      "original_bytes": 1016,
+      "stored_path": "archive/d5/d50546e0f27c309d41934a4c32da30a797e22002d1a5cecfb0c911d584fc2780.gz",
+      "stored_bytes": 511,
+      "stored_sha256": "2f344217cf69cdd15441180bb8c2af90a51dbd4ff0b9fdf7bebf46f481089d4e"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/own-controls.json",
+      "original_sha256": "327e359ff8b6986d95808cafa76b9c7db0ebb201d2f7b227b69cd0a2a4b503e5",
+      "original_bytes": 1888,
+      "stored_path": "archive/32/327e359ff8b6986d95808cafa76b9c7db0ebb201d2f7b227b69cd0a2a4b503e5.gz",
+      "stored_bytes": 412,
+      "stored_sha256": "d8ab199bb65c2f7278acd52fadd4ff46a70b8f001ea901bc8df4493c77a3574e"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/preservation-checks.json",
+      "original_sha256": "824853de6c56bbb971aac1ad90438f174dfc42cd89a839e13a745c9f91d19e47",
+      "original_bytes": 755,
+      "stored_path": "archive/82/824853de6c56bbb971aac1ad90438f174dfc42cd89a839e13a745c9f91d19e47.gz",
+      "stored_bytes": 388,
+      "stored_sha256": "9d2e07126c68c30e0c4c243373f313d53c7be1083ac83ab25e07e53152819b8a"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/report.md",
+      "original_sha256": "8797583f41bd14232d8b12bcdf99a8bdb477eebb2969c39a74fa70ecee556861",
+      "original_bytes": 3559,
+      "stored_path": "archive/87/8797583f41bd14232d8b12bcdf99a8bdb477eebb2969c39a74fa70ecee556861.gz",
+      "stored_bytes": 1932,
+      "stored_sha256": "721a9972b9254385c4ceaebbb5f4c9e4c6e767deeabf17241dda7739b59e9a10"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/source-read-ledger.json",
+      "original_sha256": "14b8698e38adb6740e6a429b23495fe54f5fa815bbe95d63747c04568a7a2580",
+      "original_bytes": 2744,
+      "stored_path": "archive/14/14b8698e38adb6740e6a429b23495fe54f5fa815bbe95d63747c04568a7a2580.gz",
+      "stored_bytes": 787,
+      "stored_sha256": "10468a6a190653e2d064bbd046c890b127620472919afd64427281a01621e615"
+    },
+    {
+      "original_path": "spain-Balearic-ordinary-rental-independent-review/verify.py",
+      "original_sha256": "6e7106225ade7b5de45f9c17e728457a157160ff0a8c8658434c16c9da559eca",
+      "original_bytes": 3857,
+      "stored_path": "archive/6e/6e7106225ade7b5de45f9c17e728457a157160ff0a8c8658434c16c9da559eca.gz",
+      "stored_bytes": 1850,
+      "stored_sha256": "914ccccbc6767d4dd745c43270098f485dd3bbaedd459c4be65bbd799b25c1a5"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/acquisition.json",
+      "original_sha256": "7d1d28fe07767afaeed2b451b15072833f495676b526a20243941eabc5ed059d",
+      "original_bytes": 1612,
+      "stored_path": "archive/7d/7d1d28fe07767afaeed2b451b15072833f495676b526a20243941eabc5ed059d.gz",
+      "stored_bytes": 627,
+      "stored_sha256": "fc62663eeb763af101d24139239d03f93836e0d69c2062a4bf4f45388fe86889"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/manifest.json",
+      "original_sha256": "312914dc125ca735be39cd2a85ac396dbf6babc1d92461044f4b12476064a2b4",
+      "original_bytes": 1242,
+      "stored_path": "archive/31/312914dc125ca735be39cd2a85ac396dbf6babc1d92461044f4b12476064a2b4.gz",
+      "stored_bytes": 555,
+      "stored_sha256": "72f41ee436a1ebeb36acc943b701c1215b8017fad71121917e502307dece1a7a"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/report.md",
+      "original_sha256": "7875ece936394619f845d479912a5112fb70d23665e220b0d6fa30a330fd8388",
+      "original_bytes": 1664,
+      "stored_path": "archive/78/7875ece936394619f845d479912a5112fb70d23665e220b0d6fa30a330fd8388.gz",
+      "stored_bytes": 942,
+      "stored_sha256": "77d763343c4ad344b8802f09f635400de6fd872165cd64e234ec2db67276c40f"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/source-read-ledger.json",
+      "original_sha256": "52f960e76cdeffa2a40ffbb44b6a69e29fedf5a769f27d386d625b116709bffe",
+      "original_bytes": 2013,
+      "stored_path": "archive/52/52f960e76cdeffa2a40ffbb44b6a69e29fedf5a769f27d386d625b116709bffe.gz",
+      "stored_bytes": 745,
+      "stored_sha256": "c297c81089011401108f5c66a24d7a199d8424f51c66a884006e4c14ef68cf0b"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/sources/public-simulator.html",
+      "original_sha256": "9c99988ed6f6504faab3204769c769d455ec3c9f878e11058ff96b9b87b6be5f",
+      "original_bytes": 38852,
+      "stored_path": "archive/9c/9c99988ed6f6504faab3204769c769d455ec3c9f878e11058ff96b9b87b6be5f.gz",
+      "stored_bytes": 11871,
+      "stored_sha256": "45589f55f2f80b2d83fe278e65499e24bbbd6af3bf4922bdaf041a906c5da1a8"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/sources/public-simulator.reader.txt",
+      "original_sha256": "53938d4d62a25f7f15f404f4bbb4c446d7da7d924c034c151590a8bec25bf667",
+      "original_bytes": 3214,
+      "stored_path": "archive/53/53938d4d62a25f7f15f404f4bbb4c446d7da7d924c034c151590a8bec25bf667.gz",
+      "stored_bytes": 1526,
+      "stored_sha256": "fd18367b7a03a39b9af7eb769fe4d1d2fb99e12faf9b7e44b6ba39b74e3a9d26"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/sources/registration-guide.html",
+      "original_sha256": "fe5a90c39a6492c3b0e458152b09f4a18f958d58b35a1b5b6d4ad0cb032ceee5",
+      "original_bytes": 147504,
+      "stored_path": "archive/fe/fe5a90c39a6492c3b0e458152b09f4a18f958d58b35a1b5b6d4ad0cb032ceee5.gz",
+      "stored_bytes": 25372,
+      "stored_sha256": "0b977cfcac6891f554736ed88e988b8c843102e7e0878d25fee0dc0385c0ca47"
+    },
+    {
+      "original_path": "spain-RETA-application-current-inquiry/sources/registration-guide.reader.txt",
+      "original_sha256": "8be72aba95bfed3533d2476a91ebfd0b827c4958f64d0b162c2786549f549f1f",
+      "original_bytes": 6955,
+      "stored_path": "archive/8b/8be72aba95bfed3533d2476a91ebfd0b827c4958f64d0b162c2786549f549f1f.gz",
+      "stored_bytes": 2745,
+      "stored_sha256": "9d813fb46db6ce2a9ba867bcb7a502cf50ed4b7b0b937e3e6e45896c365b4ca2"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/composition-manifest.json",
+      "original_sha256": "63de9885e92f20243137695c7828a80becb6fec3e25fa71b635ce07a066d9013",
+      "original_bytes": 17827,
+      "stored_path": "archive/63/63de9885e92f20243137695c7828a80becb6fec3e25fa71b635ce07a066d9013.gz",
+      "stored_bytes": 3253,
+      "stored_sha256": "bfb7f7198b6897dd7095cecbd04d29b3bcd30acdc598c54441137d612cb516a5"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/es-foral-corporate-tax.md",
+      "original_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "original_bytes": 122089,
+      "stored_path": "archive/c9/c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1.gz",
+      "stored_bytes": 34716,
+      "stored_sha256": "db8fc112c0acb6c32149aac425abcd5e07950cea05ee62b97a1b6744a414a1b0"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/es-foral-income-tax.md",
+      "original_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "original_bytes": 323879,
+      "stored_path": "archive/1b/1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40.gz",
+      "stored_bytes": 88232,
+      "stored_sha256": "853ec2ffe06919e458ead9bc51b594164969933540381c8c901b84eda46fddc1"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/es-foral-non-resident-tax.md",
+      "original_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+      "original_bytes": 69256,
+      "stored_path": "archive/5c/5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9.gz",
+      "stored_bytes": 20933,
+      "stored_sha256": "2ed450bbc4c9ea320d2cfe38a7b1816311ef0529b0fd47405cbc5cf5f6ff90a2"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/es-vat-return.md",
+      "original_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "original_bytes": 89529,
+      "stored_path": "archive/67/677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e.gz",
+      "stored_bytes": 28238,
+      "stored_sha256": "439a1401c8a6dac0be3a71e3f372245d5e246a15e1d5a867e863903b0c9c1844"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/exact-replacements.json",
+      "original_sha256": "ef84965d49ba099f49e1a95fd0238457f1225f466116afe9e7b8b8316af2377e",
+      "original_bytes": 52817,
+      "stored_path": "archive/ef/ef84965d49ba099f49e1a95fd0238457f1225f466116afe9e7b8b8316af2377e.gz",
+      "stored_bytes": 15549,
+      "stored_sha256": "ac4280dd511bf6da2b8e967eb745d73afbe5b4929746f7fa2f4531da396a9690"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/report.md",
+      "original_sha256": "001696b71ccbcc853ddbda5a90fa6a95a71c4c7595646a221369c91ab97988d7",
+      "original_bytes": 568,
+      "stored_path": "archive/00/001696b71ccbcc853ddbda5a90fa6a95a71c4c7595646a221369c91ab97988d7.gz",
+      "stored_bytes": 383,
+      "stored_sha256": "272644c3ef0147ec6988b66bcc3150d0e41fee3f0bf3f33a72b9ee13955c54b2"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/spain-crypto-tax.md",
+      "original_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "original_bytes": 37994,
+      "stored_path": "archive/1c/1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c.gz",
+      "stored_bytes": 13435,
+      "stored_sha256": "fe9e4c173112d711b165d47f110f0a8abea881b98babd88a14fa8dbb41ad5c2e"
+    },
+    {
+      "original_path": "spain-crypto-corporate-VAT-Balearic-final-composition/spain-vat-return.md",
+      "original_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "original_bytes": 27072,
+      "stored_path": "archive/46/468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1.gz",
+      "stored_bytes": 9744,
+      "stored_sha256": "59238bd1b7c62a49397828d004fbd518eea258414b204df6178b35778ca37d3d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/artifact-manifest.json",
+      "original_sha256": "e2ca1d36c71ffe2521093ae1c96ce18a986a0e8be44bd2df952a683986dc1f18",
+      "original_bytes": 7416,
+      "stored_path": "archive/e2/e2ca1d36c71ffe2521093ae1c96ce18a986a0e8be44bd2df952a683986dc1f18.gz",
+      "stored_bytes": 1619,
+      "stored_sha256": "43589bb382531f2481174b32a872d89c4898a9f99f199f33eefb53a566c29468"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/component-manifest-rehash.json",
+      "original_sha256": "ac44533eb9332e71f2b6caaa8fce0d3f9e8f4a0bf84f9e6356c861110f3f6c9e",
+      "original_bytes": 6576,
+      "stored_path": "archive/ac/ac44533eb9332e71f2b6caaa8fce0d3f9e8f4a0bf84f9e6356c861110f3f6c9e.gz",
+      "stored_bytes": 1374,
+      "stored_sha256": "e1b8c183de17df1792096c14c88f0c16b1e8b5fe66fa4f7b6f6be201638deffa"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/format-finding-original.md",
+      "original_sha256": "23222f55fcc121a178a9e6fb1be22dfd05a17587e566398ae1f9b71930a5f9d5",
+      "original_bytes": 643,
+      "stored_path": "archive/23/23222f55fcc121a178a9e6fb1be22dfd05a17587e566398ae1f9b71930a5f9d5.gz",
+      "stored_bytes": 414,
+      "stored_sha256": "6b70abe1ac0b064c5d7cae92aa7ea423ea32dd92be54d3135b2eb57875d8004b"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/format-successor-proof.json",
+      "original_sha256": "33e2c816403b2c99cd0e756473adc97dbe9d63c4404bf7ea711385f36c425b7e",
+      "original_bytes": 408,
+      "stored_path": "archive/33/33e2c816403b2c99cd0e756473adc97dbe9d63c4404bf7ea711385f36c425b7e.gz",
+      "stored_bytes": 283,
+      "stored_sha256": "2984378bb55790f4f59ca1ee450c2648f97a980473ee94c0f866d89d3de42d02"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/freeze.json",
+      "original_sha256": "659fa0be557b30c06081b89e61f3ebd86442fd1b4b37b7a36b2d9992e912a330",
+      "original_bytes": 2364,
+      "stored_path": "archive/65/659fa0be557b30c06081b89e61f3ebd86442fd1b4b37b7a36b2d9992e912a330.gz",
+      "stored_bytes": 766,
+      "stored_sha256": "0f37c0b9afed3c8112b8863992d3fc8799ebc4844d12dd77d16cbf54ece74437"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/independent-controls.json",
+      "original_sha256": "655cd4d1507826349c673655995c5bf20b47938b35f94ebc05096419a0f3fd8c",
+      "original_bytes": 4070,
+      "stored_path": "archive/65/655cd4d1507826349c673655995c5bf20b47938b35f94ebc05096419a0f3fd8c.gz",
+      "stored_bytes": 745,
+      "stored_sha256": "54c6175ae2331b51fc8126f9dc900c5b17cdbb62c00744a2a33069d37381f96e"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/oa.actual-output.txt",
+      "original_sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+      "original_bytes": 58,
+      "stored_path": "archive/3d/3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "e65352876bd72620127c53e4681c3a78ca040b0f86df5c896ad37f72b46e3a1f"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/own-actual-read-excerpts.txt",
+      "original_sha256": "fe2a5b1d0e109966156c6656d11a532e6e2692dac1a8cb643a8de32625962b99",
+      "original_bytes": 55550,
+      "stored_path": "archive/fe/fe2a5b1d0e109966156c6656d11a532e6e2692dac1a8cb643a8de32625962b99.gz",
+      "stored_bytes": 13835,
+      "stored_sha256": "152d62df7b7620c57052509cf08f170136df871512d0e8abf94603bbddacaf0d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/own-source-read-scopes.json",
+      "original_sha256": "38536ed57a7c01f8183d0464bc5c812c8b4a72fc6adb4908397d728f49120397",
+      "original_bytes": 4936,
+      "stored_path": "archive/38/38536ed57a7c01f8183d0464bc5c812c8b4a72fc6adb4908397d728f49120397.gz",
+      "stored_bytes": 1472,
+      "stored_sha256": "a1e391037b07e79e0671a91d8bbf4f03e57658ad4a0f64c852121ebf52e92067"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/preservation-proof.json",
+      "original_sha256": "2446d34e38eae915721cf6f0fb1c70c613efff46f63cd5c5d0151c65465d52c4",
+      "original_bytes": 2056,
+      "stored_path": "archive/24/2446d34e38eae915721cf6f0fb1c70c613efff46f63cd5c5d0151c65465d52c4.gz",
+      "stored_bytes": 643,
+      "stored_sha256": "c16f47f88878781486a565338d83106c8651b7f43b7060251513202c2996723a"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/report.md",
+      "original_sha256": "03788f1bd3ac8a975c25453e9f58fe156cec7595299cf0dfcbd349346c3bd963",
+      "original_bytes": 6031,
+      "stored_path": "archive/03/03788f1bd3ac8a975c25453e9f58fe156cec7595299cf0dfcbd349346c3bd963.gz",
+      "stored_bytes": 3035,
+      "stored_sha256": "b96568404f99f3fad8b7ec126f5c9eba265cc8e60ac4d3609c454758df881d68"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/review.py",
+      "original_sha256": "8cd4ec48ca813aca37e5be8ba659311671c8bfccacff5320a7681ecd0184a819",
+      "original_bytes": 7298,
+      "stored_path": "archive/8c/8cd4ec48ca813aca37e5be8ba659311671c8bfccacff5320a7681ecd0184a819.gz",
+      "stored_bytes": 3155,
+      "stored_sha256": "aa4a4d88689f8fc0cb3c863227e396936ad391ebe626baa9164bccdf30b5a859"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/schema.actual-output.txt",
+      "original_sha256": "2ccb30970e46a9251e917deb21af78ee7e9eecf977fbeaa8681800b7313cb770",
+      "original_bytes": 71,
+      "stored_path": "archive/2c/2ccb30970e46a9251e917deb21af78ee7e9eecf977fbeaa8681800b7313cb770.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "42eef68b02dc16428ba3d0ae82991a5e39edf3829ba740d99a4e56b03ccbb3fc"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/skills/international/spain/es-vat-return.md",
+      "original_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "original_bytes": 89529,
+      "stored_path": "archive/67/677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e.gz",
+      "stored_bytes": 28238,
+      "stored_sha256": "439a1401c8a6dac0be3a71e3f372245d5e246a15e1d5a867e863903b0c9c1844"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "original_bytes": 27072,
+      "stored_path": "archive/46/468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1.gz",
+      "stored_bytes": 9744,
+      "stored_sha256": "59238bd1b7c62a49397828d004fbd518eea258414b204df6178b35778ca37d3d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/source-copy-identity.json",
+      "original_sha256": "aff0c273c0354470578c5efbf6868fe9e4e2061df70076297e376f9d6d743d39",
+      "original_bytes": 3311,
+      "stored_path": "archive/af/aff0c273c0354470578c5efbf6868fe9e4e2061df70076297e376f9d6d743d39.gz",
+      "stored_bytes": 723,
+      "stored_sha256": "603d4e4b1016dac0162e8a03080261981899e3c4a6ae0588e910fa384540a2ac"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/0-liva-current.html",
+      "original_sha256": "10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41",
+      "original_bytes": 1769466,
+      "stored_path": "archive/10/10b53a80fe78652bb5c179eb3f3da59067b3858d2c67bde4a1158f8756187d41.gz",
+      "stored_bytes": 219148,
+      "stored_sha256": "508805d6362211841e127124c951537eb7d60dd9205ab09b0519551d74d8d304"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/0-liva-current.reader.txt",
+      "original_sha256": "9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa",
+      "original_bytes": 766667,
+      "stored_path": "archive/9d/9dee5f9e4879826a9ad6c47a48991e71a9db6571c093a8d63678a783a1284afa.gz",
+      "stored_bytes": 162789,
+      "stored_sha256": "ac271992079f0ca640ffb6bff9c6ddcb404308c745e132e3735ac24c87d9baa4"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/1-c5d17a2bb6181c4f353a.body",
+      "original_sha256": "93587d52d9d772b8b12c6234c85f1f5e1fdd6ab0882c03d3ca2c9fe67e877f52",
+      "original_bytes": 128011,
+      "stored_path": "archive/93/93587d52d9d772b8b12c6234c85f1f5e1fdd6ab0882c03d3ca2c9fe67e877f52.gz",
+      "stored_bytes": 18541,
+      "stored_sha256": "b529da7ae2759e2a9f34774e53c6cca9775ff9294d93186d61f8f6e0b927fa38"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/1-c5d17a2bb6181c4f353a.reader.txt",
+      "original_sha256": "f3abab223c3375bae92e945b2d8a2b304a56d91295303556c7f85e3ab6bcc0f9",
+      "original_bytes": 34439,
+      "stored_path": "archive/f3/f3abab223c3375bae92e945b2d8a2b304a56d91295303556c7f85e3ab6bcc0f9.gz",
+      "stored_bytes": 6579,
+      "stored_sha256": "777e2cba0c78d9b55dfe5925af804c5ca8244f9ce527aa278ec46e5d245375ba"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/2-ee3e0f67a5f8dd73c56f.body",
+      "original_sha256": "58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8",
+      "original_bytes": 12035,
+      "stored_path": "archive/58/58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8.gz",
+      "stored_bytes": 3859,
+      "stored_sha256": "f5efa42a47201622609bb9d38d841dd4099601d64bd4ee2d63c9b0871bb97377"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/2-ee3e0f67a5f8dd73c56f.reader.txt",
+      "original_sha256": "8cadbf63d65ad50161efe8ab5171eed667d239d0d31a9cfc039ea3ce0d450671",
+      "original_bytes": 4053,
+      "stored_path": "archive/8c/8cadbf63d65ad50161efe8ab5171eed667d239d0d31a9cfc039ea3ce0d450671.gz",
+      "stored_bytes": 1611,
+      "stored_sha256": "8a2a17cc12cd202833ae04fffceb8d1a99a3d2f8dc85a99fa2d1e8371fe639e7"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/sources/DGT-V0386-24-fresh-AX.txt",
+      "original_sha256": "06bd1c276551766b124a82d0cb09fa25224811618161631bd692c782c53dd3fc",
+      "original_bytes": 42241,
+      "stored_path": "archive/06/06bd1c276551766b124a82d0cb09fa25224811618161631bd692c782c53dd3fc.gz",
+      "stored_bytes": 10799,
+      "stored_sha256": "a880664c1018383035113e65206af49605e0fb14b46bef1c2bd69b387d73444d"
+    },
+    {
+      "original_path": "spain-delayed-first-use-VAT-reference-independent-review/writer-manifest-rehash.json",
+      "original_sha256": "c78daacf4760ea2481397454f92883d423edde156d4a24f46c8a045ac7369298",
+      "original_bytes": 6524,
+      "stored_path": "archive/c7/c78daacf4760ea2481397454f92883d423edde156d4a24f46c8a045ac7369298.gz",
+      "stored_bytes": 1261,
+      "stored_sha256": "ad5464c773e3b2e2b75ed38eef3262367ed4845fb6610b240820d0c05a0e573b"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/README-composition-only.json",
+      "original_sha256": "d9aff374d139f819917b622ac51b603aef31491aabeed1d1ec3df09d218a2f02",
+      "original_bytes": 3978,
+      "stored_path": "archive/d9/d9aff374d139f819917b622ac51b603aef31491aabeed1d1ec3df09d218a2f02.gz",
+      "stored_bytes": 1099,
+      "stored_sha256": "a610994e6e5ec0b94eda99ebfe4d99c018638dd308358fefe5406b53662b01b7"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/actual-read-scopes.json",
+      "original_sha256": "4f0b3a8c61b8caf32ae0b7c051e866160a4fa4b322c9d81f5af2db2050ad9a89",
+      "original_bytes": 14942,
+      "stored_path": "archive/4f/4f0b3a8c61b8caf32ae0b7c051e866160a4fa4b322c9d81f5af2db2050ad9a89.gz",
+      "stored_bytes": 1686,
+      "stored_sha256": "15cb5aeffb3fbd7123bcd3449fc9fda28aee6e122d3476b0c2ebbeb13c9fcca5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/artifact-manifest.json",
+      "original_sha256": "2f6a94c049468e42af317ef8f63465598fc9bfd82b6cb8043ad472096b383931",
+      "original_bytes": 7863,
+      "stored_path": "archive/2f/2f6a94c049468e42af317ef8f63465598fc9bfd82b6cb8043ad472096b383931.gz",
+      "stored_bytes": 2800,
+      "stored_sha256": "b99bf6c66aba6a33fb757d1750edf1573995d88c9c2e6aea428115fe53e3a5db"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/baselines/README.md",
+      "original_sha256": "29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a",
+      "original_bytes": 15166,
+      "stored_path": "archive/29/29f31a1febd894f74d6878955990458cdc2d96063d71015c4c87f4e0aa74139a.gz",
+      "stored_bytes": 5901,
+      "stored_sha256": "0a6a37386e8d2d6f64ff0c3bede30cacaf8e2f42a66b55c34e6f7aae6874727e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/baselines/es-foral-income-tax.md",
+      "original_sha256": "e3bb8c58da1b5964ed3b1a4ef77a00df675ee66b44e6e201e514c793885e7e3e",
+      "original_bytes": 316734,
+      "stored_path": "archive/e3/e3bb8c58da1b5964ed3b1a4ef77a00df675ee66b44e6e201e514c793885e7e3e.gz",
+      "stored_bytes": 85894,
+      "stored_sha256": "6f7fb664de901fa76f35278352f92fdfd0ea9323893b4d4427d695d2d52dee3f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/baselines/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/check-README-composition.py",
+      "original_sha256": "02686658888395c875c756c55fc1f96272c838f42fee94e5e9e65f4f4110cc5b",
+      "original_bytes": 2260,
+      "stored_path": "archive/02/02686658888395c875c756c55fc1f96272c838f42fee94e5e9e65f4f4110cc5b.gz",
+      "stored_bytes": 1026,
+      "stored_sha256": "a59e56f8687babea8849bdc98329553af5c9ac8a08edd96ab9578afceaf44fed"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/check-preservation.py",
+      "original_sha256": "2c5ac939dba779414156a46c371c8e5a0a41dce057397c4808ad2d0d2081bdd8",
+      "original_bytes": 4004,
+      "stored_path": "archive/2c/2c5ac939dba779414156a46c371c8e5a0a41dce057397c4808ad2d0d2081bdd8.gz",
+      "stored_bytes": 1882,
+      "stored_sha256": "aa81c0031c52f06d07a4b3cfdd5919bec9c95071e25666aba550181e24cebc5c"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/independent-controls.json",
+      "original_sha256": "f550525fc4700663900d6396336a149a8e0706a94e92dfe4d15dacf5eeb5fdbd",
+      "original_bytes": 11425,
+      "stored_path": "archive/f5/f550525fc4700663900d6396336a149a8e0706a94e92dfe4d15dacf5eeb5fdbd.gz",
+      "stored_bytes": 1506,
+      "stored_sha256": "51fbc54fdee74f5665cbc2902dc490f066ffde8eebb84021b0fad5fd19ac8143"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/independent-controls.py",
+      "original_sha256": "58ae808840523a215841da5e3c867c85a869dae0d40802a3b181e84d3958f787",
+      "original_bytes": 4425,
+      "stored_path": "archive/58/58ae808840523a215841da5e3c867c85a869dae0d40802a3b181e84d3958f787.gz",
+      "stored_bytes": 2011,
+      "stored_sha256": "17e4eb6ee2240a13a4b0fa10ea8a9cffa3a5c6724e248bc4dfa31d8446c45b1c"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/own-source-map.json",
+      "original_sha256": "9d8f1ad31275637d2e2b0cf28551913258dc230732997308bad11bd83550c606",
+      "original_bytes": 7176,
+      "stored_path": "archive/9d/9d8f1ad31275637d2e2b0cf28551913258dc230732997308bad11bd83550c606.gz",
+      "stored_bytes": 2327,
+      "stored_sha256": "66f41e69457d78d23ef84e0990eeeafb2de2da3dc389e417b1c6e3e93bb543b4"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/preservation-and-validation.json",
+      "original_sha256": "ba66d862028ce57e53bf87fb1c9a0d19a1b91db3a65930e7941127fe3f945ce0",
+      "original_bytes": 15296,
+      "stored_path": "archive/ba/ba66d862028ce57e53bf87fb1c9a0d19a1b91db3a65930e7941127fe3f945ce0.gz",
+      "stored_bytes": 3335,
+      "stored_sha256": "beea297513693f3d7e97840ad01043d48cd649c6c8e0e7b6bfa78cdb6944dc6b"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/report.md",
+      "original_sha256": "2b992f5112e9cfab29e3f65ea761ebdbcca4331f973f368f42d9a7bfbbbce85f",
+      "original_bytes": 5151,
+      "stored_path": "archive/2b/2b992f5112e9cfab29e3f65ea761ebdbcca4331f973f368f42d9a7bfbbbce85f.gz",
+      "stored_bytes": 2693,
+      "stored_sha256": "0c81775dabaadab2a6f1e0942d48712a27f74dd8c3013b1def72e204bf3129ac"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/review-freeze.json",
+      "original_sha256": "7d00ed0866910b140a7f3989cdb9ecb65e6ad934f93e5ddb6a07257f76c878de",
+      "original_bytes": 2115,
+      "stored_path": "archive/7d/7d00ed0866910b140a7f3989cdb9ecb65e6ad934f93e5ddb6a07257f76c878de.gz",
+      "stored_bytes": 732,
+      "stored_sha256": "3387e8b6b0dcd974fd548ef1882d02218926275881a7823aab1045db14b8b3d6"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/15-B13-2013-current.pdf",
+      "original_sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+      "original_bytes": 1542148,
+      "stored_path": "archive/ad/ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a.gz",
+      "stored_bytes": 1469730,
+      "stored_sha256": "183e244913f0d0cad624913e18ab046c324e3c8a6a7b65a27f49908775301284"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/15-B13-2013-current.txt",
+      "original_sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+      "original_bytes": 627342,
+      "stored_path": "archive/c8/c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b.gz",
+      "stored_bytes": 143734,
+      "stored_sha256": "dab6f9c6df25aed60a2fafeac44d9419cd833d141986cdcaeec59dcb26f4144a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/16-A33-2013-current.pdf",
+      "original_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+      "original_bytes": 1602000,
+      "stored_path": "archive/72/72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3.gz",
+      "stored_bytes": 1256870,
+      "stored_sha256": "7523c3225aedc7a8d40f3644e356395262e8405bc20475a62be5bab730da653a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/16-A33-2013-current.txt",
+      "original_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+      "original_bytes": 677286,
+      "stored_path": "archive/9f/9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26.gz",
+      "stored_bytes": 154297,
+      "stored_sha256": "b77b8c0144b7d6455092abb6a5841b487992c2a8c56d207af06f645eaa169404"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/17-G3-2014-current.pdf",
+      "original_sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+      "original_bytes": 2290042,
+      "stored_path": "archive/fa/fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704.gz",
+      "stored_bytes": 1994054,
+      "stored_sha256": "87b893f1857e9d8e0298cb06b90e85af41037a8fbf697d0a208b1cc9125fc6ee"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/17-G3-2014-current.txt",
+      "original_sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+      "original_bytes": 996408,
+      "stored_path": "archive/f0/f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347.gz",
+      "stored_bytes": 193874,
+      "stored_sha256": "09c8902cadced5c88c0cda69ece9ad7a8fc179823c46f2fa595f3c41986f89a5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/18-5e033e9a0e183de4a2e9.body",
+      "original_sha256": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+      "original_bytes": 1063863,
+      "stored_path": "archive/09/094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0.gz",
+      "stored_bytes": 166873,
+      "stored_sha256": "07ef4c57bf6d0357ac248bad06215a12a382e2a5e05a77393a506c4807a5baa2"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/18-5e033e9a0e183de4a2e9.reader.txt",
+      "original_sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+      "original_bytes": 673599,
+      "stored_path": "archive/46/46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b.gz",
+      "stored_bytes": 137822,
+      "stored_sha256": "8fe6f31b1ac7d56f1380ce2e78699014885abe0efb96d073c9a1b3aaf1450f85"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/19-B2026.pdf",
+      "original_sha256": "49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb",
+      "original_bytes": 1491909,
+      "stored_path": "archive/49/49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb.gz",
+      "stored_bytes": 500577,
+      "stored_sha256": "a14ad32c9c55a6c84afa07af0faefb9bbf58442411f0b8048fb0e6b57914ac92"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/19-B2026.reader.txt",
+      "original_sha256": "4416d3904b47f1115b7b3f378bcc35f1f44de80231701ec2f0a258f510a2115c",
+      "original_bytes": 662692,
+      "stored_path": "archive/44/4416d3904b47f1115b7b3f378bcc35f1f44de80231701ec2f0a258f510a2115c.gz",
+      "stored_bytes": 158967,
+      "stored_sha256": "c426d1ff8d81344348a90193ea1aaa6d3fdd505a5af965590e95fd0443e26dd7"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/20-A2024.pdf",
+      "original_sha256": "cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a",
+      "original_bytes": 719539,
+      "stored_path": "archive/cd/cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a.gz",
+      "stored_bytes": 662288,
+      "stored_sha256": "becd0af8efa1d970429289c1a40d940436a6fa7a7014234f26a715b5c03e0fb5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/20-A2024.reader.txt",
+      "original_sha256": "9b7d8bcd58fd24a8a9211b468073c8d6c3b9552f006642dceb6045d62701ac0c",
+      "original_bytes": 252992,
+      "stored_path": "archive/9b/9b7d8bcd58fd24a8a9211b468073c8d6c3b9552f006642dceb6045d62701ac0c.gz",
+      "stored_bytes": 67702,
+      "stored_sha256": "a2f68b2ccccc8bb6d38a5068ff876f2afc6a7b54ee2fb78c9b22d17e6d91c66e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/22-G2025manual.pdf",
+      "original_sha256": "86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17",
+      "original_bytes": 3004901,
+      "stored_path": "archive/86/86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17.gz",
+      "stored_bytes": 2214616,
+      "stored_sha256": "ea4fb677d42e5be471d551cf860824813c2007b2067b76d9ef4335c497441bf9"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/22-G2025manual.txt",
+      "original_sha256": "02036cc348354f9f4a25536bb5e4815020f31348b8a0b3c74fe1bc49467805b2",
+      "original_bytes": 1416962,
+      "stored_path": "archive/02/02036cc348354f9f4a25536bb5e4815020f31348b8a0b3c74fe1bc49467805b2.gz",
+      "stored_bytes": 287391,
+      "stored_sha256": "cba98010416f6165a22767bab1910a9934703a34ea4271ef6e3621f29e5d9e73"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/23-5f1cb085d3190b3da13a.body",
+      "original_sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+      "original_bytes": 2360617,
+      "stored_path": "archive/dd/dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f.gz",
+      "stored_bytes": 2208723,
+      "stored_sha256": "8731c62e84f8b686154f0245b024e1fd532d86138dea8c910fac2ba2f9f0c424"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/23-5f1cb085d3190b3da13a.pdf.reader.txt",
+      "original_sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+      "original_bytes": 1281620,
+      "stored_path": "archive/23/23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0.gz",
+      "stored_bytes": 308892,
+      "stored_sha256": "54e624c3bdc1cb7aa67d47b1c32ecb49f44ece2345e6c8dd7160932be415d194"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/A2026-coeff.pdf",
+      "original_sha256": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+      "original_bytes": 167655,
+      "stored_path": "archive/01/01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc.gz",
+      "stored_bytes": 57541,
+      "stored_sha256": "d5837a4d78eb9ba7cbb907e73cbc28ed7823160db1012509a3d468badca07fad"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/A2026-coeff.reader.txt",
+      "original_sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+      "original_bytes": 16100,
+      "stored_path": "archive/bd/bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a.gz",
+      "stored_bytes": 3436,
+      "stored_sha256": "e0a59cf0a695d3545efc4da1a4a30c17b55a085cefd915f70825d4dca847b976"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/A21-2025-original.pdf",
+      "original_sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+      "original_bytes": 621844,
+      "stored_path": "archive/2c/2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4.gz",
+      "stored_bytes": 334625,
+      "stored_sha256": "e06b9bdad796eb76c6774ef2f240898c4157e30b04084b1c53331625bd2ed8f4"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/A21-2025-original.txt",
+      "original_sha256": "69493ba8fdbf207469b08849ae379e51891c104f985d48523519900f728c37e9",
+      "original_bytes": 186396,
+      "stored_path": "archive/69/69493ba8fdbf207469b08849ae379e51891c104f985d48523519900f728c37e9.gz",
+      "stored_bytes": 33067,
+      "stored_sha256": "879d945b62a539d86bbc7a1c56ba913a7637d3872eec71984ff75df00244be1f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/AEAT2025-investor.html",
+      "original_sha256": "c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1",
+      "original_bytes": 23852,
+      "stored_path": "archive/c5/c5586c9c05e9abc06d3ad16253aac9b9db43933db9fa8a60e412be09847585d1.gz",
+      "stored_bytes": 6431,
+      "stored_sha256": "275b21c2a445a4566c8911567b89407f1d0f0011a01423f3a262ea146e5efacd"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/AEAT2025-investor.reader.txt",
+      "original_sha256": "41b3e83e8d60e0428ddd8a8717528fce425befe49ada383d5d7786016d658ab2",
+      "original_bytes": 12900,
+      "stored_path": "archive/41/41b3e83e8d60e0428ddd8a8717528fce425befe49ada383d5d7786016d658ab2.gz",
+      "stored_bytes": 3704,
+      "stored_sha256": "29818aea9b8d85d2e7c7266fa88dce3ab5b112d7c1eabcc8872e4d47e03e2b7a"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/B2026-coeff.pdf",
+      "original_sha256": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+      "original_bytes": 234488,
+      "stored_path": "archive/cb/cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f.gz",
+      "stored_bytes": 88111,
+      "stored_sha256": "1bd79e62c6ec3ef209f0780e2c34f722e0c6de3e0b30c1ef3125be1a18614a12"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/B2026-coeff.reader.txt",
+      "original_sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+      "original_bytes": 12131,
+      "stored_path": "archive/db/db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888.gz",
+      "stored_bytes": 2699,
+      "stored_sha256": "511b792e761c544d793412497a865d59b1ed401371ae575b3f424ad98b29c0ed"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/LIRPF.html",
+      "original_sha256": "575643adfe60fd6bb0a7e9a6404465400a40cccac0fc50550318a67ea1cb080f",
+      "original_bytes": 2028806,
+      "stored_path": "archive/57/575643adfe60fd6bb0a7e9a6404465400a40cccac0fc50550318a67ea1cb080f.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "26a32c9f975661d3a6e868216265959516c23bf30595b4e969fab037c94500e4"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/sources/LIRPF.html.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/target-read-scope.json",
+      "original_sha256": "2be6296ca10830d89a00adfc997c3c5af595e8595374218604490d330677895e",
+      "original_bytes": 1615,
+      "stored_path": "archive/2b/2be6296ca10830d89a00adfc997c3c5af595e8595374218604490d330677895e.gz",
+      "stored_bytes": 845,
+      "stored_sha256": "4425672f78edb627de25cfb1ed686b01be25ddb90eb5ea56b2f102bbf8c82575"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/targets/candidate-README.md",
+      "original_sha256": "4c9bc2a117fe387c927c86e3cddebdc41f19182a032cb4e83a2ad0e5c85c3bc4",
+      "original_bytes": 15479,
+      "stored_path": "archive/4c/4c9bc2a117fe387c927c86e3cddebdc41f19182a032cb4e83a2ad0e5c85c3bc4.gz",
+      "stored_bytes": 6031,
+      "stored_sha256": "373e2840740e530438e805f83cda4f6574e8ac0f6d4493cc4babb0e6a1b3d7fe"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/targets/candidate-es-foral-income-tax.md",
+      "original_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "original_bytes": 323879,
+      "stored_path": "archive/1b/1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40.gz",
+      "stored_bytes": 88232,
+      "stored_sha256": "853ec2ffe06919e458ead9bc51b594164969933540381c8c901b84eda46fddc1"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/targets/candidate-spain-crypto-tax.md",
+      "original_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "original_bytes": 37994,
+      "stored_path": "archive/1c/1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c.gz",
+      "stored_bytes": 13435,
+      "stored_sha256": "fe9e4c173112d711b165d47f110f0a8abea881b98babd88a14fa8dbb41ad5c2e"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/writer-artifact-manifest.json",
+      "original_sha256": "1b6b748de4c9a8b25687aa3c28ae9225553b6a66320c838d8862044e6494bd0a",
+      "original_bytes": 17703,
+      "stored_path": "archive/1b/1b6b748de4c9a8b25687aa3c28ae9225553b6a66320c838d8862044e6494bd0a.gz",
+      "stored_bytes": 3377,
+      "stored_sha256": "2f2fc55daedb25da9786c0f28700eebd4fdf5f038bb91216ea84b1c63884b0b5"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/writer-changes.json",
+      "original_sha256": "5ed79ed52e14605252e3317d42eee17c66e83b4b850ccf5e72afb2ef3f1f361a",
+      "original_bytes": 22621,
+      "stored_path": "archive/5e/5ed79ed52e14605252e3317d42eee17c66e83b4b850ccf5e72afb2ef3f1f361a.gz",
+      "stored_bytes": 7304,
+      "stored_sha256": "8f8987341520962d587798f37e206b6b20e31b996d39919deb89a2792ddbbb35"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/writer-report.md",
+      "original_sha256": "fc20f16f49c778565cc4b1e7aad88873302577f640f0827c1cfc90c2fd321910",
+      "original_bytes": 6067,
+      "stored_path": "archive/fc/fc20f16f49c778565cc4b1e7aad88873302577f640f0827c1cfc90c2fd321910.gz",
+      "stored_bytes": 3045,
+      "stored_sha256": "33210119fc5f04aa7a2f51269e1b7ff89c7497fdd8b0b741cbde26a044e85c6f"
+    },
+    {
+      "original_path": "spain-crypto-owned-units-fee-ledger-independent-review/writer-source-read-scopes.json",
+      "original_sha256": "740ff06507500b906dbdfccc2ba0d9bac19197903915408c77c46a8c030f4453",
+      "original_bytes": 14036,
+      "stored_path": "archive/74/740ff06507500b906dbdfccc2ba0d9bac19197903915408c77c46a8c030f4453.gz",
+      "stored_bytes": 3185,
+      "stored_sha256": "5bc3c0bf25a07ba5adfb672f24719418084c712761497ce8c1942a748a5326a8"
+    }
+  ]
+}

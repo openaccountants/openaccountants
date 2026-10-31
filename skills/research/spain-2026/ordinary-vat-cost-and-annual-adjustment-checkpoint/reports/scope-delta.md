@@ -1,0 +1,21 @@
+# Exact three-file VAT delta: independent PASS
+
+The exact private implementation passes for the ordinary initial acquisition-value component and either-separate-gate annual U/P adjustment. This closes F-V1/F-V2 and carries the separate F-VS1 mirror-scope correction only for the three candidate identities below. It does not declare VAT, Spain, a return or accountant attestation complete. The delayed-first-use later-reference branch remains open.
+
+| Candidate | SHA256 | Bytes |
+|---|---|---:|
+| es-vat-return.md | d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3 |86372|
+| spain-vat-return.md |70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2|26631|
+| README.md |6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a|13131|
+
+Candidates are in `output/europe-closeout-2026-10-27/spain-VAT-ordinary-acquisition-and-adjustment-private/`. All three complete actual unified deltas were read, including metadata, Sources and README scope. The original frozen22 tax bodies/README were already read fully in this review. All29 composition identities were compared with live0f31d1b5b3e0a1b16603e6ffa2c0f79cbbab84f8; only these three differ and their baselines exactly match live. No live edit occurred in this review.
+
+The source conclusion was checked against actual retained full selected V0055-19 answer81–158, PGC reader795–814/1367–1373, LIVA1084238–4246 and the actual KA01732 screenshot. The screenshot shows supported630 and deductible630. DGT invokes PGC acquisition value for108; NRV2.1/12 defines the irrecoverable-tax component. The candidate correctly labels the application as a combined-source interpretation, preserves the actual commissioning-cost holding, independently proved recovery rights and autonomous108 tests, and distinguishes a later lawful adjustment from an original error/price change. Zero legal recovery does not create a deduction merely because capital value passes the threshold. No express DGT adjudication of the changed irrecoverable-tax facts is invented.
+
+For the annual adjustment, actual current LIVA95reader3877–3901,1044128–4142 and106–1094200–4260 were independently read. Separate strict>10point gates follow107 and95's substitution. Once either opens,109's hypothetical current-year deduction supports the labelled use of both current restrictions. The text gives no direction to freeze the factor whose gate did not open. This is a reasoned primary-text construction, not a claim of an express one-gate DGT algebra or matching official software. The candidate preserves that distinction, gross supported VAT versus already restricted input, original reference/window, one correction and signed repayment. It explicitly retains the observed525calculator result and the need to verify entered-field semantics. It does not infer a delayed first-use reset, startup adjustment, self-supply or price-error method from the annual construction.
+
+Fifteen independent Decimal controls pass: eight gate/drift/sign cases, four independently established recovery fractions and three settled irrecoverable-cent boundary cases. They include inactive-factor drift, exactly10points and opposite-direction movement, so unchanged-factor examples are not silently generalised. The candidate's52.50 and246.75repayment cases match the independently reconstructed calculations. These controls establish arithmetic under the identified interpretation, not the taxpayer's recovery facts.
+
+Own composition example run:22files,44oa-checkblocks,0failures,0missing. All prior URL occurrences survive in relative order; H2s, both original executable examples per changed Guide, complete CTA suffixes and metadata other than authorised version/date are exact. README retains all five partial domains and narrows only the supplied VAT components. The writer's28schema0/0 result is attributed to the writer, not claimed as this reviewer's rerun. `checks.json`, own diffs, `own22-examples.txt` and live/composition binding contain the direct evidence.
+
+No concrete defect was found in these exact delta bytes. Any subsequent change requires a new identity comparison and review of its actual difference. The separate frozen whole-pack verdict remains NEEDS FIXES.

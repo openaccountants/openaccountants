@@ -4,7 +4,7 @@ description: Use this skill whenever asked about forming, incorporating, or regi
 version: 1.0
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-10-30
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -34,8 +34,8 @@ This skill covers starting a business in the Netherlands in tax year 2026 (calen
 It does not compute the corporate tax bill, VAT returns or payroll. Route those to:
 
 - **nl-corporate-tax**: corporate income tax (vennootschapsbelasting, VPB) for the BV;
-- **nl-vat-return** / **netherlands-vat-return**: filing VAT returns;
-- **netherlands-payroll**: running payroll, the expat scheme (known as the thirty-percent ruling)
+- **nl-vat-return**: filing VAT returns;
+- **nl-payroll-tax**: running payroll, the expat scheme (known as the thirty-percent ruling)
   and employer contributions.
 
 The current law was checked on 28 September 2026. This guide does not approve a filing, notarial transaction or bank application. Sources are belastingdienst.nl and wetten.overheid.nl (Burgerlijk Wetboek Book 2, Handelsregisterwet
@@ -252,7 +252,7 @@ number** and an **Aangiftebrief loonheffingen** that sets the return periods (re
 usually within 1 week. If employee-insurance premiums are due, a sector letter follows (within at most 8
 weeks, usually 3) and the Whk premium letter within 4 weeks
 ([aanmelden als werkgever](https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/aanmelden-als-werkgever)).
-Running payroll: **netherlands-payroll**.
+Running payroll: **nl-payroll-tax**.
 
 **The DGA is on the payroll.** A BV withholds payroll taxes on the salary of its director-major
 shareholder like any employee
@@ -443,9 +443,9 @@ The customary salary is at least the highest of the comparable-job salary, €64
 - **Refer to KVK (check)** for fees, online steps, UBO filing mechanics and public access to UBO data.
 - **Refer to nl-corporate-tax** for the BV's VPB computation, fiscal unity, participation exemption and
   the choice between salary and dividend.
-- **Refer to netherlands-payroll** for running payroll, the expat scheme, employee insurance and the
+- **Refer to nl-payroll-tax** for running payroll, the expat scheme, employee insurance and the
   Whk premium.
-- **Refer to nl-vat-return / netherlands-vat-return** for VAT returns, the EU-KOR and cross-border supplies.
+- **Refer to nl-vat-return** for VAT returns, the EU-KOR and cross-border supplies.
 - **Refuse to confirm ondernemer status** as certain: it is a facts-and-circumstances test decided by the
   Belastingdienst after registration. Give the criteria and the risk.
 - **Refer to a specialist** for converting an eenmanszaak into a BV (tax-neutral transfer), holding and
@@ -460,7 +460,7 @@ The customary salary is at least the highest of the comparable-job salary, €64
 | Obligation | Who | When |
 | --- | --- | --- |
 | VAT return and payment | VAT entrepreneurs not in the KOR | By the last day of the month after the period. Quarterly 2026: Q3 by 31 October 2026, Q4 by 31 January 2027. Annual filers: the 2026 return by 31 March 2027. Businesses established abroad have other dates ([dates](https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/uiterste-aangifte-en-betaaldatums)) |
-| Payroll tax return | Employers, including a BV paying its DGA | Periods set in the Aangiftebrief loonheffingen; see netherlands-payroll |
+| Payroll tax return | Employers, including a BV paying its DGA | Periods set in the Aangiftebrief loonheffingen; see nl-payroll-tax |
 | Income tax return | Eenmanszaak owner, each VOF partner | By the date in the letter, usually 1 May; with an extension, use the actual granted date |
 | VPB return | BV | Calendar-year BV: before 1 June of the next year; otherwise within 5 months of year-end; a short year ending on 31 December: by 1 June of the next year, ending in another month: before 1 April of the next calendar year; extension can be requested ([aangifte vpb](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/aangifte-vennootschapsbelasting-doen)) |
 | Annual accounts prepared | BV board | Within five months of year-end, extendable by the general meeting by up to five months for special reasons (BW 2:210 lid 1) |
@@ -520,7 +520,7 @@ customary salary floor was €56,000.
 - [ ] Startersaftrek eligibility checked (previous five years; at most two earlier claims; no silent return
       from a BV).
 - [ ] Filing calendar set: VAT, payroll, income tax or VPB, annual accounts.
-- [ ] Hand-offs made to nl-corporate-tax, netherlands-payroll and the VAT Guides where relevant.
+- [ ] Hand-offs made to nl-corporate-tax, nl-payroll-tax and the VAT Guides where relevant.
 
 <!-- openaccountants-cta-block -->
 

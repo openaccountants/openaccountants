@@ -1,10 +1,10 @@
 ---
 name: turkey-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Turkey VAT (KDV — Katma Değer Vergisi) return or advise on Turkish VAT registration, filing, and reporting. Trigger on phrases like "prepare KDV return", "Turkish VAT", "KDV beyannamesi", "ÖKC fatura", or any Turkey VAT request. ALWAYS read this skill before touching any Turkey KDV-related work.
-version: 2.0
+description: "Turkish value added tax (katma değer vergisi, KDV) for tax year 2026 under the VAT Law no. 3065 and the KDV General Implementation Communiqué, for companies, sole traders and foreign suppliers. Covers what is taxable, who must register (no threshold), place of supply and services used in Türkiye, the 20% general rate and the 10% and 1% list rates, export and other exemptions, input VAT deduction and its time limit, blocked VAT on passenger cars, excess VAT carried forward, refunds for exempt supplies, reverse charge on services bought from abroad (return no. 2), electronic services sold to consumers by foreign suppliers, monthly returns by the 28th, payment, penalties and late-payment interest. Trigger on: KDV, Turkish VAT, KDV beyannamesi, 1 No.lu, 2 No.lu, sorumlu sıfatıyla KDV, KDV iadesi, ihracat istisnası. Out of scope: income tax (turkey-pit), company tax (tr-corporate-income-tax), payroll (tr-payroll-social), special consumption tax (ÖTV), customs duty."
+version: 2.1
 jurisdiction: TR
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,429 +14,158 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Turkey VAT
+# Türkiye: VAT (katma değer vergisi, KDV) (2026) v2.1
 
-## Turkey VAT (KDV — Katma Değer Vergisi) Skill v2.0
+Turkish VAT is charged under the Katma Değer Vergisi Kanunu no. 3065 and collected by the Revenue Administration (GİB). The KDV General Implementation Communiqué (KDV Genel Uygulama Tebliği, KDVGUT) sets the detailed rules. Figures below come from the consolidated law on mevzuat.gov.tr, which includes the 2026 amending laws 7573, 7577, 7578, 7587 and 7590, from the consolidated KDVGUT, and from GİB's current table of filing and payment dates.
 
-## Section 1 — Quick reference
+## Who this applies to
 
-**Quick reference**
+- **Taxable transactions** (art. 1): supplies of goods and services made in Türkiye in the course of commercial, industrial, agricultural or professional activity; imports of all goods and services; and listed other supplies (post and telecoms, broadcasting, gambling, shows with professional artists or athletes, auction sales, pipeline transport and others).
+- **Made in Türkiye** (art. 6): goods are supplied in Türkiye if they are in Türkiye when delivered. Services are supplied in Türkiye if they are performed in Türkiye or used (benefited from) in Türkiye.
+- **Who is liable** (art. 8): the supplier of the goods or services; the importer; the person letting property and rights listed in GVK art. 70; and anyone who shows VAT on an invoice without the right to do so (they must pay it).
+- **No registration threshold.** Liability follows from making taxable supplies in the course of business (art. 1, 8). There is no turnover test in the law. Businesses taxed under the simple method (basit usul) for income tax are exempt under art. 17(4)(a) unless they opt out (KDVGUT V/B-1).
+- **Foreign suppliers.** Where the supplier has no domicile, workplace, legal seat or business seat in Türkiye, the Turkish customer is made responsible for the VAT and pays it by reverse charge (art. 9(1); KDVGUT I/C-2.1.2.1). A foreign supplier of electronic services to Turkish individuals who are not VAT taxpayers registers and pays the VAT itself (art. 9(1)).
+- **Out of this skill:** special consumption tax (ÖTV) and customs duty; full withholding (tam tevkifat); special VAT bases (özel matrah); investment incentive and tourism VAT refund schemes.
 
-| Field | Value |
-| --- | --- |
-| Country | Turkey (Türkiye Cumhuriyeti) |
-| Tax | Katma Değer Vergisi (KDV) |
-| Currency | TRY (Turkish Lira) |
-| Standard rate | 20% (effective 10 July 2023; previously 18%) |
-| Reduced rates | 10% (food, medicines, medical equipment, hotels, restaurants); 1% (basic foodstuffs, agricultural goods, residential property sales) |
-| Zero rate | 0% (exports, diplomatic supplies, international transport) |
-| Exempt | Financial services, insurance, education, healthcare, land sales, certain capital market transactions |
-| Registration threshold | No threshold — any business making taxable supplies must register |
-| Tax authority | Gelir İdaresi Başkanlığı (GİB) — Revenue Administration |
-| Filing portal | İnteraktif Vergi Dairesi — https://ivd.gib.gov.tr |
-| Return form | KDV Beyannamesi (1 No'lu KDV Beyannamesi for monthly; 2 No'lu for withholding) |
-| Filing frequency | Monthly (all registered businesses) |
-| Deadline | 28th of the following month (electronic filing via GİB) |
-| E-invoice | e-Fatura mandatory for businesses exceeding TRY 3M annual turnover; e-Arşiv for others |
-| Contributor | Open Accountants Community |
-| Validated by | Pending — requires sign-off by a Turkey-licensed YMM (Yeminli Mali Müşavir) |
-| Open-source credits | [ozgurg/vergihesaplayici.com](https://github.com/ozgurg/vergihesaplayici.com) (AGPL-3.0, gelir vergisi calculator); [mlevent/fatura](https://github.com/mlevent/fatura) (MIT, GİB e-Arşiv e-invoice); [saidsurucu/borsapy](https://github.com/saidsurucu/borsapy) (Apache-2.0, financial markets/fund tax categories); [berkaygure/gelir-vergisi-kesintisi-hesaplama](https://github.com/berkaygure/gelir-vergisi-kesintisi-hesaplama) (income tax withholding brackets) |
-| Skill version | 2.0 |
+## Rates, bands and thresholds
 
-### Key return form boxes
+| Item | Rate or amount | Year | Source |
+|---|---|---|---|
+| General rate (goods and services on no list) | 20% | 2026 | Decision 2007/13033 art. 1(1)(a) as amended by Presidential Decision 7346, in force 10 July 2023, https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-11.pdf |
+| Reduced rate, list (II) | 10% | 2026 | Decision 2007/13033 art. 1(1)(c) as amended by Decision 7346 |
+| Reduced rate, list (I) | 1% | 2026 | Decision 2007/13033 art. 1(1)(b); GİB consolidated text of Decision 2007/13033 with lists (I) and (II), https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf |
+| Food and non-alcoholic drink served in restaurants, cafés, patisseries and takeaways (not bars, casinos, discos and similar) | 10% (alcoholic drinks 20%) | 2026 | Decision 2007/13033 list (II) item 24; KDVGUT, reduced-rate section |
+| Partial withholding (kısmi tevkifat) by the buyer, main ratios | Construction 4/10; consulting, design and audit 9/10; labour supply 9/10; cleaning and garden care 9/10; repairs of machinery and vehicles 7/10; catering and events 5/10; freight transport 2/10; commercial advertising 3/10; scrap and waste 7/10; other services listed 5/10; other goods listed 2/10 | 2026 | KDVGUT I/C-2.1.3.2 and 2.1.3.3; GİB table of partial withholding ratios, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdvde-kismi-tevkifat-uygulamasinda-tevkifat-oranlari.pdf |
+| Partial withholding does not apply if the VAT-inclusive amount does not exceed | TRY 12,000 (the 2026 invoice limit in VUK art. 232) | 2026 | KDVGUT I/C-2.1.3.4.1; VUK art. 232 with Communiqué 588 |
+| Statutory rate the President may vary | 10% in the law, range 1% to four times | 2026 | KDV Law art. 28, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf |
+| Registration threshold | None | 2026 | KDV Law art. 1, 8 |
+| Tax period | Calendar month for real-method taxpayers (quarters for some transport businesses, housing co-operatives and simple-method opt-ins) | 2026 | KDV Law art. 39; KDVGUT V/B-1 |
+| Return no. 1 (KDV 1) | Filed by the 24th and paid by the 26th of the following month. Note: GİB's table gives the 28th, 23:59, for both (VUK Circular 149) | 2026 | KDV Law art. 41(1), 46(1); GİB filing table, https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf |
+| Return no. 2 (reverse charge and withholding, sorumlu sıfatıyla) | Filed by the 21st and paid by the 23rd of the following month. Note: GİB's table gives the 25th for both (VUK Circular 164) | 2026 | KDV Law art. 41(1), 46(1) as amended by Law 7491; KDVGUT; GİB filing table |
+| Return no. 3 (foreign electronic service providers) | Filed by the 24th of the following month. Note: GİB's table gives the 28th, paid in the same period (VUK Circular 149) | 2026 | KDVGUT I/C-2.1.2.1.2.3; GİB filing table |
+| Input VAT time limit | By the end of the calendar year after the year of the tax point | 2026 | KDV Law art. 29(3) |
+| Refund claim for exempt supplies with deduction | By the end of the second calendar year after the transaction | 2026 | KDV Law art. 32 |
+| Late-payment surcharge | 3.7% a month | 2026 | Law 6183 art. 51, Presidential Decision 10556, https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf |
+| Missing invoice | 10% of the amount, at least TRY 17,000 for the first finding | 2026 | VUK art. 353(1), https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf |
 
-**Key return form boxes**
+## The taxable base
 
-| Box | Meaning |
-| --- | --- |
-| 101 | Taxable sales at 20% (net) |
-| 102 | Taxable sales at 10% (net) |
-| 103 | Taxable sales at 1% (net) |
-| 104 | Zero-rated exports (net) |
-| 105 | Exempt supplies (net) |
-| 106 | Total output KDV (calculated) |
-| 107 | Input KDV deductible (purchases at 20%) |
-| 108 | Input KDV deductible (purchases at 10%) |
-| 109 | Input KDV deductible (purchases at 1%) |
-| 110 | Reverse-charge KDV (services from abroad — 2 No'lu beyanname) |
-| 111 | Total input KDV (calculated) |
-| 112 | KDV payable (106 − 111; if positive) |
-| 113 | Excess input KDV carried forward (if 111 > 106) |
+**Exempt with the right to deduct.** Exports of goods and related services, services for customers abroad, toll processing for free-zone customers and inbound roaming are exempt, and the VAT on related purchases stays deductible (art. 11(1)(a), art. 32). A supply of goods is an export if it is made to a customer abroad (or in a free zone, or to a duty-free shop or authorised bonded warehouse) and the goods leave the Turkish customs area (art. 12(1)). A service is for a customer abroad only if the customer's domicile, workplace, legal seat and business seat are abroad (or it is a foreign branch of a Turkish firm acting on its own account) **and** the service is used abroad (art. 12(2)). Foreign passengers can recover VAT on goods they take out of the country (art. 11(1)(b)).
 
-### Conservative defaults
+**What sits on the reduced-rate lists.** The lists are annexes to Decision 2007/13033. The main items, from GİB's consolidated text:
 
-**Conservative defaults**
+- **List (I), 1%:** basic food by customs tariff chapter: live animals, poultry, red meat, fish, milk and dairy, eggs, vegetables, fruit, nuts, coffee, tea and spices, cereals, flour and milled products, edible oils, prepared meat and fish, sugar and sugar confectionery, cocoa and chocolate, bread, pasta and bakery goods, prepared vegetables and fruit, other food preparations, water, vinegar and listed soft drinks. Also wheat, rice, pulses, olives, olive oil and other farm products; certified seeds and seedlings; newspapers and magazines (not electronic sales); used passenger cars (20% where the seller could deduct the VAT when buying the car, and for second-hand car dealers who bought at 20% or use the special base); dwellings in urban transformation projects under Law 6306, up to 150 m² net, and dwellings on land designed for housing by municipalities and TOKİ under 150 m² net; construction contracts for housing co-operatives and for social security bodies and municipalities (dwellings up to 150 m²); funeral services; certain leasing of exempt vehicles and incentive machinery; holy books; refurbished mobile phones. Food subject to special consumption tax (ÖTV) is taxed at 10%, not 1% (art. 1(3) of the Decision).
+- **List (II), 10%:** cotton, wool, yarn and fabrics; clothing, leather goods, shoes, bags and carpets; toll textile and footwear work; cash registers and tachographs; newsprint and printing paper; printed books and school supplies (not e-books or tablets); education by universities and private schools, school transport and private dormitories; cinema, theatre, opera, ballet and museum tickets; vaccines and blood products; human medicines and special medical foods; plant protection products and veterinary medicines; human and animal health services and ambulances; medical devices and their hire (not goods subject to ÖTV or phones); restaurant and café services (above); hotel and similar overnight stays; care homes and orphanages; municipal waste-water services; listed agricultural machinery; build-operate-transfer bridge and tunnel tolls; LPG other than autogas; legal aid and certain lawyers' services in family, consumer, child and labour cases; furniture in listed tariff positions (seats, office, kitchen and bedroom furniture and others in item 33); electricity for households and farm irrigation; dwellings, for the part of the net area up to 150 m²; land and plots; toothbrushes, toothpaste and floss; sanitary pads and nappies (tariff 9619.00).
+- Everything else is at 20%. The lists name goods by customs tariff position, so classify a product by its tariff code before applying a reduced rate.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 20% standard |
-| Unknown whether food qualifies for 10% | 20% until confirmed |
-| Unknown whether basic foodstuff qualifies for 1% | 10% until confirmed |
-| Unknown whether export documentation complete | Treat as domestic 20% |
-| Unknown business-use % (vehicle, phone, home) | 0% input credit |
-| Unknown whether e-Fatura issued | Assume not issued — flag for compliance |
-| Foreign digital service (B2B vs B2C) | B2B — buyer self-assesses via 2 No'lu beyanname |
+**Splitting a VAT-inclusive amount.** Net = gross / 1.20 at 20%, gross / 1.10 at 10%, gross / 1.01 at 1%; the VAT is gross less net.
 
-### Red flag thresholds
+**Exempt without the right to deduct (main items).** Transactions within the scope of the banking and insurance transactions tax (BSMV) and insurance intermediaries' transactions with insurers (art. 17(4)(e)); lettings of immovable property that is not part of a business (art. 17(4)(d)); supplies by simple-method businesses (art. 17(4)(a)); sales by companies of participations held for at least two full years (art. 17(4)(r)). VAT on purchases used for exempt-without-deduction supplies is not deductible (art. 30(a)).
 
-**Red flag thresholds**
+**Input VAT deduction** (art. 29). A taxpayer deducts, against the output VAT of the period: VAT shown on invoices for goods and services bought for the business; VAT paid on imports of goods and services; and, from the January 2024 period, VAT it declared and paid itself as the responsible party (reverse charge or withholding) (art. 29(1)(a), (b), (ç)). VAT declared on return no. 2 is deducted on the return no. 1 for the period in which it is paid. If return no. 2 is filed and paid on time and before return no. 1 for the same month, the VAT is deducted on that month's return no. 1 (KDVGUT III/C-1). The deduction must be taken in the period the invoice is entered in the books, and no later than the end of the calendar year after the tax point (art. 29(3)). If deductible VAT is more than output VAT, the excess is carried forward and is not refunded, except under the special rules for reduced-rate supplies and exempt supplies (art. 29(2), 32).
 
-| Threshold | Value |
-| --- | --- |
-| HIGH single transaction | TRY 500,000 |
-| HIGH tax delta on single conservative default | TRY 50,000 |
-| MEDIUM counterparty concentration | >40% of output or input |
-| MEDIUM conservative default count | >4 per return |
-| LOW absolute net KDV position | TRY 1,000,000 |
+**Blocked input VAT** (art. 30). Not deductible: VAT on purchases for exempt-without-deduction supplies; VAT on passenger cars (binek otomobil) of the business, unless the business rents out or operates passenger cars; VAT on goods lost (except in declared disasters); VAT on expenses that are not deductible for income or corporate tax; and VAT on receivables written off as worthless and not paid by the buyer.
 
-## Section 2 — Required inputs and refusal catalogue
+**Partial withholding (kısmi tevkifat).** For the services and goods listed in KDVGUT I/C-2.1.3.2 and 2.1.3.3, the buyer pays part of the VAT itself as the responsible party on return no. 2, and the seller declares only the rest. The buyers who must withhold are VAT taxpayers for some items, and a list of designated buyers (public bodies, banks, insurers, companies listed on Borsa İstanbul, organised industrial zones and others in KDVGUT I/C-2.1.3.1(b)) for others. Each item's section says which. Construction is withheld only where the buyer is a designated buyer, or a VAT taxpayer and the contract is TRY 5 million or more including VAT (KDVGUT I/C-2.1.3.2.1). Nothing is withheld where the VAT-inclusive amount is TRY 12,000 or less, and the amount cannot be split to avoid the limit (KDVGUT I/C-2.1.3.4.1). The ratios are in the rates table.
 
-### Required inputs
+**Refunds.** VAT that cannot be deducted because of exports and other art. 11, 13, 14 and 15 exemptions is refunded, if claimed by the end of the second calendar year after the transaction (art. 32). The refund procedure and documents are in KDVGUT part IV and are not covered here.
 
-- **Required inputs before starting Turkey KDV work** — 1. GİB taxpayer number (Vergi Kimlik Numarası — VKN, 10 digits) or TC ID for sole traders 2. KDV registration certificate confirming registration status and type 3. Monthly bank statements in TRY (all accounts used for business) 4. e-Fatura / e-Arşiv Fatura downloads from GİB portal (gib.gov.tr/efatura) — XML or PDF 5. Supplier invoices with VKN, KDV rate, and ÖKC (POS) receipts for retail purchases 6. Import documents (Gümrük beyannamesi — customs declarations) for imported goods 7. Prior month KDV return (for carried-forward excess input credit) 8. 2 No'lu KDV beyannamesi data for any foreign digital/service purchases  _(Section 2 — Required inputs and refusal catalogue)_
+## Deadlines and filing
 
-### Refusal catalogue
+- **Monthly return no. 1 (KDV 1).** The return is filed by the 24th of the following month and the VAT is paid by the 26th (art. 41(1), 46(1)). A taxpayer files even in a month with no taxable transactions (art. 40(3)).
+  - Note: GİB's current table sets the 28th, 23:59, for both filing and payment, citing VUK Circular 149. GİB may move the last day of a filing or payment period by up to one month from the statutory date (VUK mükerrer art. 28). Source: GİB, Beyanname verme ve ödeme süreleri, read 2026-10-31.
+- **Return no. 2 (KDV 2).** The Turkish buyer who must pay VAT as the responsible party (reverse charge on services from abroad, full or partial withholding) files return no. 2 for the month the transaction took place, and only in months with such transactions. It is filed by the 21st and paid by the 23rd of the following month (art. 41(1), 46(1), as amended by Law 7491 from 2024; KDVGUT). A late invoice from the supplier does not delay the filing (KDVGUT I/C-2.1.1.1).
+  - Note: GİB's table sets the 25th of the following month for filing and payment, citing VUK Circular 164 (VUK mükerrer art. 28). Source: GİB, Beyanname verme ve ödeme süreleri, read 2026-10-31.
+- **Return no. 3 (foreign e-service providers).** Filed by the 24th of the following month, in TRY, through the internet tax office; no return is needed for a month with nothing to declare (KDVGUT I/C-2.1.2.1.2.3).
+  - Note: GİB's table sets the 28th, with payment in the same period, citing VUK Circular 149. Source: GİB, Beyanname verme ve ödeme süreleri, read 2026-10-31.
+- **Ceasing business.** The return is filed by the 24th of the month after the business stops (art. 41(4)).
+- **Imports.** VAT on imports is declared on the customs declaration and paid with customs duty (art. 40(4), 46(2)).
 
-- **Refuse and escalate to a YMM** — Partial exemption calculations (businesses with mixed taxable/exempt supplies); KDV withholding (tevkifat) — special rules for construction, cleaning, security, scrap metal; Intra-group transactions and transfer pricing KDV implications; Tourism VAT refund scheme (Türkiye'ye gelen yabancılara KDV iadesi); Capital goods KDV adjustment scheme (Düzeltme); KDV exemption certificates (İstisna belgesi) for exporters; Özel Matrah (special taxable base) — used for auctions, used vehicles, gold; Investment incentive certificates (Yatırım Teşvik Belgesi) KDV exemptions  _(Section 2 — Required inputs and refusal catalogue)_
+## Penalties and interest
 
-## Section 3 — Supplier pattern library
+- **Late return.** A first-degree irregularity (VUK art. 352): in 2026, TRY 35,000 for capital companies, TRY 17,000 for other first-class traders and professionals, TRY 8,700 for second-class traders (VUK table 1, Communiqué 588).
+- **Tax loss.** One times the VAT lost; three times where fake or misleading documents are used; halved for a late return filed before an audit starts; increased by 50% for unregistered business (VUK art. 344).
+- **Late payment.** 3.7% a month, daily for part months (Law 6183 art. 51).
+- **Invoices.** For each invoice not issued or not received, or issued on paper when it had to be electronic, a special irregularity penalty of 10% of the amount, at least TRY 17,000 for the first finding in a calendar year (VUK art. 353(1)).
 
-### 3.1 Banking and payment processors
+## Cross-border points
 
-**Banking and payment processors**
+- **Services bought from abroad.** Services performed in Türkiye, or performed abroad but used in Türkiye, by a supplier with no domicile, workplace, legal seat or business seat in Türkiye are taxable. The Turkish customer computes VAT on the price and declares and pays it on return no. 2 (KDV Law art. 6(b), 9(1); KDVGUT I/C-2.1.2.1). It is then deductible as above.
+- **Services sold abroad.** A Turkish business selling services to a customer abroad charges no VAT only if both tests in art. 12(2) are met: the customer is abroad and the service is used abroad. A service used in Türkiye is taxed at the normal rate even if the customer is foreign.
+- **Foreign e-service providers to consumers.** A provider with no Turkish presence that sells electronic services to individuals who are not VAT taxpayers declares and pays the VAT itself on return no. 3 (art. 9(1); KDVGUT I/C-2.1.2.1.2).
+- **Imports of goods.** Taxed at customs with customs duty (art. 46(2)). Deductible as import VAT (art. 29(1)(b)).
+- **Foreign transport businesses and fair participants** may recover VAT on purchases for transport activity or for fairs and exhibitions, on a reciprocal basis (art. 11(1)(b)).
 
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| İş Bankası (Türkiye İş Bankası A.Ş.) | BSMV — Banka Sigorta Muameleleri Vergisi | Exempt (BSMV not KDV) | No |
-| Garanti BBVA | Bank fees, wire transfer charges | Exempt | No |
-| Akbank | Account maintenance, EFT fees | Exempt | No |
-| Ziraat Bankası | State bank — loan interest, fees | Exempt | No |
-| Halkbank | SME banking fees | Exempt | No |
-| VakıfBank | Mortgage, commercial banking | Exempt | No |
-| Yapı Kredi Bankası (YKB) | Credit card processing fees | Exempt | No |
-| Papara | Digital wallet — transfer fees | Exempt (payment service) | No |
-| İyzico | Payment gateway — commission | 20% | Yes |
-| PayTR | E-commerce payment processing | 20% | Yes |
+## Worked examples
 
-### 3.2 Electricity and utilities
+### Example 1: Monthly return no. 1 with a carried-forward credit
 
-**Electricity and utilities**
+A trading company in Istanbul sells goods for TRY 500,000 at 20% and restaurant meals for TRY 200,000 at 10% in March 2026 (net of VAT). Output VAT is TRY 100,000 plus TRY 20,000, so TRY 120,000. Its purchase invoices for March show TRY 60,000 of deductible VAT, and it carried forward TRY 5,000 of excess VAT from February. VAT payable for March is TRY 55,000. The return is due by 24 April 2026 and the tax by 26 April 2026 (GİB's table allows both until 28 April).
 
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| TEDAŞ (Türkiye Elektrik Dağıtım A.Ş.) | Electricity distribution | 20% | Yes (business use) |
-| BAŞKENT EDAŞ / ENERJİSA | Electricity — Ankara/Central | 20% | Yes (business use) |
-| IGDAŞ / BAŞKENTGAZ | Natural gas — Istanbul/Ankara | 20% | Yes (business use) |
-| İSKİ (İstanbul Su ve Kanalizasyon İdaresi) | Water — Istanbul | 1% | Yes (business use) |
-| ASKİ (Ankara Su ve Kanalizasyon İdaresi) | Water — Ankara | 1% | Yes (business use) |
-
-### 3.3 Telecommunications
-
-**Telecommunications**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Turkcell | Mobile, data, roaming | 20% | Yes (business use) |
-| Vodafone Turkey | Mobile, business lines | 20% | Yes (business use) |
-| Türk Telekom | Fixed line, fiber internet, mobile | 20% | Yes (business use) |
-| Türksat | Satellite TV (if business subscription) | 20% | Yes |
-
-### 3.4 Transport and travel
-
-**Transport and travel**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Türk Hava Yolları (THY — Turkish Airlines) | Domestic flights | 10% | Yes |
-| Türk Hava Yolları (THY) | International flights | 0% (export) | No input credit applicable |
-| Pegasus Airlines | Domestic flights | 10% | Yes |
-| AnadoluJet | Domestic budget flights | 10% | Yes |
-| TCDD (Türkiye Cumhuriyeti Devlet Demiryolları) | Train tickets | 10% | Yes |
-| İstanbul Metro / Metrobüs (İETT) | Public transit — İstanbul | 1% | Yes (business use) |
-| Uber Turkey | Ride-hailing | 10% | Yes (business use only) |
-| BiTaksi | Turkish taxi app | 10% | Yes (business use only) |
-
-### 3.5 Logistics and courier
-
-**Logistics and courier**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Yurtiçi Kargo | Domestic courier | 20% | Yes |
-| MNG Kargo | Domestic courier | 20% | Yes |
-| Aras Kargo | Domestic courier | 20% | Yes |
-| PTT Kargo (Posta ve Telgraf Teşkilatı) | State postal service | 20% | Yes |
-| DHL Turkey | International courier | 0% (export) / 20% (domestic) | Yes |
-| UPS Turkey | International courier | 0% (export) / 20% (domestic) | Yes |
-
-### 3.6 Retail and office supplies
-
-**Retail and office supplies**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| BİM (Birleşik Mağazacılık) | Grocery — basic foodstuffs | 1%/10% mixed | Partial |
-| A101 | Discount grocery retail | 1%/10%/20% mixed | Partial |
-| Migros | Supermarket — mixed goods | 1%/10%/20% mixed | Partial |
-| Teknosa | Electronics retailer | 20% | Yes |
-| Media Markt Turkey | Electronics | 20% | Yes |
-| Kırtasiyeci / Ofis Depot | Office supplies | 20% | Yes |
-
-### 3.7 Software and digital services
-
-**Software and digital services**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Foriba | e-Fatura integration platform | 20% | Yes |
-| Logo Yazılım | ERP/accounting software (Turkish) | 20% | Yes |
-| Mikro Yazılım | SME accounting software | 20% | Yes |
-| Nebim Winner | Retail ERP | 20% | Yes |
-| Microsoft Turkey (Azure, M365) | Cloud services — B2B | 20% (buyer self-assesses) | Yes (via 2 No'lu) |
-| Google Turkey (Workspace, Ads) | Digital services — B2B | 20% (buyer self-assesses) | Yes (via 2 No'lu) |
-| Zoom Turkey | Video conferencing — B2B | 20% (buyer self-assesses) | Yes (via 2 No'lu) |
-| Amazon Web Services (AWS) Turkey | Cloud — B2B | 20% (buyer self-assesses) | Yes (via 2 No'lu) |
-
-### 3.8 Professional services
-
-**Professional services**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Serbest Muhasebeci Mali Müşavir (SMMM) | Accounting and tax advisory | 20% | Yes |
-| Avukatlık bürosu | Legal services | 20% | Yes |
-| Mühendislik / Mimarlık bürosu | Engineering/architecture consulting | 20% | Yes |
-| Reklam ajansı | Advertising agency | 20% | Yes |
-| Yeminli Mali Müşavir (YMM) | Certified public accountant | 20% | Yes |
-
-### 3.9 Insurance
-
-**Insurance**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Allianz Turkey | Property, vehicle, liability insurance | Exempt (BSMV applies) | No |
-| Axa Sigorta | Insurance premiums | Exempt | No |
-| Güneş Sigorta | Insurance premiums | Exempt | No |
-| Mapfre Turkey | Insurance premiums | Exempt | No |
-
-### 3.10 Healthcare
-
-**Healthcare**
-
-| Supplier | Typical description | KDV rate | Input credit |
-| --- | --- | --- | --- |
-| Özel hastane (private hospital) | Medical treatment | Exempt | No |
-| Eczane (pharmacy) | Medicines (prescription) | 1% | Yes |
-| Medikal malzeme (medical devices) | Medical equipment | 10% | Yes |
-
-## Section 4 — Worked examples
-
-### Example 1 — Standard KDV on domestic sale
-
-**Scenario:** IT consulting firm (İstanbul) issues invoice to Turkish corporate client.
-
-**Bank statement line (Garanti BBVA format):**
-```
-Tarih       : 15/04/2025
-İşlem       : Havale/EFT Alındı
-Açıklama    : YAZILIM DANIŞMANLIK HİZMETİ - FATURA NO: YD-2025-041
-Tutar       : +240.000,00 TRY
+```oa-check
+name: Monthly KDV 1, TRY 700,000 sales at 20% and 10% (March 2026)
+inputs:
+  sales_20: 500000
+  sales_10: 200000
+  input_vat: 60000
+  carried_forward: 5000
+steps:
+  - output_vat: sales_20 * 0.20 + sales_10 * 0.10
+  - payable: output_vat - input_vat - carried_forward
+expected:
+  output_vat: 120000
+  payable: 55000
 ```
 
-**Working:**
-- Invoice net: TRY 200,000.00
-- KDV 20%: TRY 40,000.00
-- Invoice total: TRY 240,000.00
-- Return entry: Box 101 — TRY 200,000 | Output KDV: TRY 40,000
+### Example 2: Reverse charge on a foreign service, and a passenger car
 
-### Example 2 — Reverse-charge on foreign digital service (2 No'lu)
+A software company sells TRY 300,000 of services to Turkish customers in May 2026 (20% output VAT, TRY 60,000). It buys a cloud service for TRY 100,000 from a supplier with no Turkish presence, used in Türkiye, so it must declare TRY 20,000 of VAT on return no. 2 by 21 June and pay it by 23 June (GİB's table allows both until 25 June). It has TRY 25,000 of VAT on domestic purchase invoices. It also buys a passenger car for the managers for TRY 1,000,000 plus TRY 200,000 VAT; that VAT is blocked by art. 30(b). Because return no. 2 is filed and paid on time and before return no. 1, the TRY 20,000 is deducted on the May return no. 1. Deductible VAT is TRY 45,000 and VAT payable on return no. 1 is TRY 15,000. Total VAT cash for May is TRY 35,000.
 
-**Scenario:** Company subscribes to Microsoft Azure (monthly billing from Ireland entity).
-
-**Bank statement line (İş Bankası format):**
-```
-Tarih       : 01/04/2025
-İşlem Türü  : Yurt Dışı Ödeme
-Alıcı       : MICROSOFT IRELAND OPERATIONS LTD
-Açıklama    : AZURE CLOUD SERVICES - INV#MS-2025-04
-Tutar       : -18.000,00 TRY
-```
-
-**Working:**
-- Service: cloud hosting from foreign provider — taxable in Turkey where customer is established
-- File 2 No'lu KDV Beyannamesi: Box 110 — TRY 18,000 base; KDV 20% = TRY 3,600
-- Simultaneously claim TRY 3,600 as input in 1 No'lu return (net zero effect for fully taxable business)
-
-### Example 3 — Reduced rate (10%) restaurant purchase
-
-**Scenario:** Client pays restaurant bill for business lunch.
-
-**Bank statement line (Yapı Kredi format):**
-```
-Tarih       : 12/04/2025
-Kanal       : POS
-Açıklama    : ASITANE RESTAURANT ISTANBUL
-Tutar       : -2.200,00 TRY
+```oa-check
+name: KDV 2 reverse charge plus blocked car VAT (May 2026)
+inputs:
+  sales_20: 300000
+  domestic_input_vat: 25000
+  foreign_service: 100000
+  car_net: 1000000
+steps:
+  - output_vat: sales_20 * 0.20
+  - reverse_charge_vat: foreign_service * 0.20
+  - blocked_car_vat: car_net * 0.20
+  - deductible_vat: domestic_input_vat + reverse_charge_vat
+  - payable_kdv1: output_vat - deductible_vat
+  - total_cash: reverse_charge_vat + payable_kdv1
+expected:
+  reverse_charge_vat: 20000
+  blocked_car_vat: 200000
+  deductible_vat: 45000
+  payable_kdv1: 15000
+  total_cash: 35000
 ```
 
-**Working:**
-- Receipt shows: net TRY 2,000 + KDV 10% TRY 200 = TRY 2,200
-- Input KDV: TRY 200 — deductible if business meal documented with attendees
-- Return entry: Box 108 — TRY 2,000 purchase; Input KDV TRY 200
+## Ask the client first
 
-### Example 4 — Domestic export (0%)
+1. Are you taxed under the real method (gerçek usul) or the simple method (basit usul) for income tax, and do you file monthly?
+2. What do you sell, and are any of your goods or services on list (I) at 1% or list (II) at 10%?
+3. Do you sell to customers abroad, and is the service used abroad? Do you have customs export declarations for goods?
+4. Do you buy services from suppliers with no Turkish presence (software, advertising, cloud, consulting)? Were the 2 No.lu returns filed and paid on time?
+5. Do you buy or lease passenger cars, or have expenses that are not deductible for income or corporate tax?
+6. Do you have excess VAT carried forward, or a refund claim from exports?
 
-**Scenario:** Software company exports SaaS to a US client. Payment received from abroad.
+## Sources
 
-**Bank statement line (Akbank format):**
-```
-Tarih       : 20/04/2025
-İşlem       : Swift / Döviz Alındı
-Açıklama    : ABC TECHNOLOGIES INC USA - SAAS SUBSCRIPTION APR2025
-Tutar       : +750.000,00 TRY (USD 25.000)
-```
+| Source | URL | Read on |
+|---|---|---|
+| Katma Değer Vergisi Kanunu no. 3065, consolidated (to Law 7590): arts. 1, 6, 8, 9, 11, 12, 17(4), 28, 29, 30, 32, 39, 40, 41, 46 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.3065.pdf | 2026-10-31 |
+| GİB, Güncel KDV oranları: consolidated Decision 2007/13033 with lists (I) and (II), latest change shown Decision 9126 (in force 15 November 2024) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdv-oranlari.pdf | 2026-10-31 |
+| GİB, KDV'de kısmi tevkifat uygulamasında tevkifat oranları (partial withholding ratios) | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2Fkdvde-kismi-tevkifat-uygulamasinda-tevkifat-oranlari.pdf | 2026-10-31 |
+| KDV Genel Uygulama Tebliği, consolidated: I/C-2.1 (withholding and reverse charge, including 2.1.2.1.2.3 and 2.1.3), III/C-1 (deduction), V/B-1 (tax period), reduced-rate section | https://www.mevzuat.gov.tr/File/GeneratePdf?mevzuatNo=19631&mevzuatTur=Teblig&mevzuatTertip=5 | 2026-10-31 |
+| Presidential Decision 7346 amending Decision 2007/13033 (18% to 20%, 8% to 10%), Official Gazette 7 July 2023 no. 32241 | https://www.resmigazete.gov.tr/eskiler/2023/07/20230707-11.pdf | 2026-10-31 |
+| GİB, Beyanname verme ve ödeme süreleri | https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fyardim-kaynaklar%2Fyararli-bilgiler%2FBeyannameVermeveOdemeSureleri.pdf | 2026-10-31 |
+| Vergi Usul Kanunu no. 213, consolidated: arts. mükerrer 28, 232, 344, 352, 353, table 1 (2026 amounts, Communiqué 588) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
+| Law 6183, art. 51 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.6183.pdf | 2026-10-31 |
 
-**Working:**
-- Export of service to non-Turkey entity used and enjoyed outside Turkey — 0% KDV
-- Requires export declaration or service export exemption certificate (İhracat istisnası belgesi)
-- Return entry: Box 104 — TRY 750,000 | KDV: TRY 0
-
-### Example 5 — Mixed invoice (1% basic food + 20% non-food)
-
-**Scenario:** Client purchases groceries and cleaning products from BİM.
-
-**Bank statement line (Ziraat format):**
-```
-Tarih       : 08/04/2025
-Kanal       : POS Hareketi
-Açıklama    : BIM MAGAZALAR A.S. ISTANBUL
-Tutar       : -3.500,00 TRY
-```
-
-**Working:**
-- Fiscal receipt (ÖKC) shows: bread/rice/vegetables TRY 2,000 × 1% KDV = TRY 20; cleaning supplies TRY 1,480 × 20% KDV = TRY 296; Total TRY 3,500
-- Input credit if business: TRY 316 (split between Box 109 and Box 107)
-- If ÖKC receipt not available: 0% input credit — conservative default
-
-### Example 6 — Electricity bill (business premises)
-
-**Scenario:** Office electricity from ENERJİSA for April 2025.
-
-**Bank statement line (Halkbank format):**
-```
-Tarih       : 25/04/2025
-İşlem       : Otomatik Ödeme
-Açıklama    : ENERJİSA ELEKTRIK PERAKENDE SATIS — NISAN 2025 FATURU
-Tutar       : -36.000,00 TRY
-```
-
-**Working:**
-- e-Fatura from GİB portal: net TRY 30,000 + KDV 20% TRY 6,000 = TRY 36,000
-- 100% business use (office premises) — full input credit
-- Return entry: Box 107 — TRY 30,000 | Input KDV: TRY 6,000
-
-## Section 5 — Tier 1 rules (compressed)
-
-- **Rate assignment** — 20% standard: most goods and services not listed below; 10%: food/non-alcoholic beverages (restaurant/café service), hotels, medicines, medical equipment, domestic airline tickets, train tickets, tourism services; 1%: basic foodstuffs (bread, rice, pasta, flour, sugar, salt, fresh fruit/veg), residential property first sale, agricultural goods; 0%: exports of goods with customs declaration, services exported to non-residents used outside Turkey, international transport; Exempt: financial services (BSMV applies instead), insurance (BSMV), medical treatment, education, leasing of residential property, land sales, social services  _(Section 5 — Tier 1 rules (compressed))_
-- **Input credit** — Credit allowed on all taxable purchases used for taxable business activities; No credit on exempt purchases (e.g., financial services); No credit on personal/non-business expenditure; Vehicle purchase: input credit blocked for private passenger cars (binek otomobil); allowed for commercial vehicles (ticari araç); Entertainment: fully deductible if documented; 50% blocked if personal element present; 2 No'lu reverse-charge: output and input net to zero for fully taxable businesses  _(Section 5 — Tier 1 rules (compressed))_
-- **Filing mechanics** — File 1 No'lu KDV Beyannamesi monthly via GİB İnteraktif Vergi Dairesi by 28th; File 2 No'lu KDV Beyannamesi in same month as the foreign service payment; e-Fatura mandatory above TRY 3M annual turnover — use Foriba, Logo, or GİB's free portal; Excess input KDV carries forward indefinitely (refund rarely granted for domestic supplies); Export KDV refund (iade): available for exporters with sustained credit position — requires YMM certification  _(Section 5 — Tier 1 rules (compressed))_
-
-## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
-
-These items require specific facts from the client before classification. Do not guess.
-
-## Section 6 — Tier 2 catalogue (genuinely data-unknowable items)
-
-**Tier 2 catalogue table**
-
-| Item | Why unknowable | What to ask |
-| --- | --- | --- |
-| Vehicle purchase/lease | Binek otomobil (private car) has blocked input KDV; ticari araç (commercial) does not — requires registration document (ruhsat) | "What is the vehicle's registration type — binek or ticari? Provide ruhsat." |
-| Home office expenses | KDV input credit only for business portion — ratio unknown | "What % of your home is used exclusively for business?" |
-| Mobile phone contract | Personal vs business use split | "Is this a dedicated business line? What % business use?" |
-| Restaurant/entertainment | Documentation requirements — must prove business purpose and attendees | "Who attended? What was the business purpose?" |
-| Mixed-use property purchase | Residential (exempt) vs commercial (taxable) classification | "Is the property classified as residential or commercial in the tapu (title deed)?" |
-| Export qualification | Whether service actually used and enjoyed outside Turkey | "Where is the client located? Do you have evidence they used the service outside Turkey?" |
-| Software subscription (foreign) | B2B (buyer self-assesses) vs B2C — depends on whether buyer is a KDV-registered business | "Does the supplier have your VKN on file? Are you receiving a B2B invoice?" |
-| Agricultural goods | 1% rate applies only to specific listed products — item detail needed | "What specific agricultural products were purchased? Provide itemised receipt." |
-
-## Section 7 — Excel working paper
-
-**Columns:** Date | Supplier Name | VKN | Invoice No | e-Fatura? (Y/N) | Net Amount (TRY) | KDV Rate % | KDV Amount (TRY) | Return Box | Input/Output | Tier 2 flag | Notes
-
-**Tab structure:**
-1. `Output_Sales` — all sales by KDV rate
-2. `Input_Purchases_Local` — domestic purchases
-3. `Input_ReverseCharge` — foreign services (2 No'lu)
-4. `KDV_Summary` — box totals feeding into beyanname
-5. `Tier2_Items` — flagged items awaiting client response
-
-- **Box 112 — KDV payable** — =IF(Total_Output_KDV - Total_Input_KDV > 0, Total_Output_KDV - Total_Input_KDV, 0)  _(Section 7 — Excel working paper)_
-- **Box 113 — excess credit c/f** — =IF(Total_Input_KDV - Total_Output_KDV > 0, Total_Input_KDV - Total_Output_KDV, 0)  _(Section 7 — Excel working paper)_
-
-## Section 8 — Bank statement reading guide
-
-### Garanti BBVA format
-
-```
-Tarih       : 15/04/2025
-İşlem       : Havale/EFT Alındı
-Açıklama    : YAZILIM DANIŞMANLIK HİZMETİ - FATURA NO: YD-2025-041
-Tutar       : +240.000,00 TRY
-```
-Fields: Tarih (date) | İşlem (transaction type) | Açıklama (description) | Tutar (amount, TRY, comma = decimal)
-
-### İş Bankası format
-
-```
-Tarih       : 15/04/2025
-İşlem Türü  : Havale Alındı
-Açıklama    : DANISMANLIK HIZMET BEDELI FATURA 041/2025
-Tutar       : +240.000,00 TRY
-Bakiye      : 1.240.000,00 TRY
-```
-
-### Ziraat Bankası format
-
-```
-Tarih       : 15/04/2025
-Kanal       : EFT/Havale
-Açıklama    : TICARI DANISMANLIK HIZMETI
-Tutar       : +240.000,00 TRY
-```
-
-### Key patterns:
-
-- **Turkish number format:** Period = thousands separator; comma = decimal (TRY 240.000,00 = TRY 240,000.00)
-- **POS transactions:** Usually show merchant name + city — match to receipt for KDV rate
-- **Yurt Dışı Ödeme:** Foreign payment — check if reverse-charge applies (2 No'lu)
-- **Otomatik Ödeme:** Direct debit — utility bills, subscriptions; match to e-Fatura
-- **EFT/Havale Alındı:** Domestic wire received — match to issued invoice
-
-## Section 9 — Onboarding fallback
-
-- **When client cannot provide e-Fatura / ÖKC receipts** — 1. Use bank statement amounts as total (KDV-inclusive) and back-calculate: Net = Total ÷ 1.20 (for 20% rate); Net = Total ÷ 1.10 (for 10% rate); Net = Total ÷ 1.01 (for 1% rate) 2. Apply conservative default for all unverified items: 20% output; 0% input credit 3. Flag every conservative default in the Tier2_Items tab 4. Issue a one-page data request to client listing missing e-Fatura references 5. For clients above TRY 3M turnover missing e-Fatura: escalate — non-compliance risk (GİB can impose penalties of TRY 10,000+ per missing e-Fatura)  _(Section 9 — Onboarding fallback)_
-
-## Section 10 — Reference material
-
-**Reference material**
-
-| Resource | URL / Reference |
-| --- | --- |
-| GİB İnteraktif Vergi Dairesi (filing portal) | https://ivd.gib.gov.tr |
-| KDV Kanunu (KDV Law No. 3065) | gib.gov.tr — Mevzuat section |
-| e-Fatura portal | https://www.efatura.gov.tr |
-| KDV rates table (GİB) | gib.gov.tr/kdv-oranlari |
-| KDV Genel Uygulama Tebliği | Official Gazette — KDV implementation circular |
-| 2 No'lu KDV Beyannamesi guide | GİB official guidance on reverse-charge |
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
+Not yet confirmed: whether any Presidential Decision after Decision 9126 (November 2024) changed lists (I) or (II) (GİB's consolidated table shows none); the rate on domestic flights and city transport (the old version gave 10% and 1% without a source; neither is on the lists as read, which would put them at 20%); the e-invoice (e-Fatura) and e-archive thresholds under VUK Communiqué 509 (the old version said TRY 3 million); the return boxes on KDV 1 (the old version listed boxes 101 to 113 without a source); the full list of buyers and conditions for each partial withholding item, and full withholding (tam tevkifat); the export refund procedure, documents and the role of a YMM report; the input VAT rule for entertainment (the old version gave a 50% block without a source); exemptions for education, health, land and residential first sales; the transitional rules for dwellings with building permits before 1 April 2022 (Decision 5359); the capital goods adjustment; special bases (özel matrah) for used cars and gold; the tourism VAT refund to foreigners; the text of VUK Circulars 149 and 164 behind GİB's 28th and 25th dates (the power to move the dates is VUK mükerrer art. 28).
 <!-- openaccountants-cta-block -->
 
 ---

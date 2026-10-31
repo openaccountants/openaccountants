@@ -1,0 +1,1600 @@
+{
+  "baseline_head": "bafc0f62bb889781dd24aead563eccdd785c4725",
+  "verified_manifests": [
+    {
+      "role": "scope-delta",
+      "report": "spain-ownership-SC-scope-independent-review/report.md",
+      "report_sha256": "5e80ddc39d06c35500f5f58b3c55cc6e84a7e3c55172a928a89053d0c541ded4",
+      "manifest": "spain-ownership-SC-scope-independent-review/artifact-manifest.json",
+      "manifest_sha256": "ec3e621e883eb7887f251a6d8802382bd3779d8e2c3cff42fccfbf5055b50001",
+      "members_verified": 113
+    }
+  ],
+  "scope": "Lossless ownership administrative source and supplied-SC-route scope correction, with exact independent review. Acquisition and actual reading are distinguished; five ordinary domain partials remain.",
+  "files": [
+    {
+      "original_path": "spain-mainhome-ownership-source/AEAT-mainhome-ownership.html",
+      "original_sha256": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+      "original_bytes": 12458,
+      "stored_path": "archive/fa/fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348.gz",
+      "stored_bytes": 3913,
+      "stored_sha256": "de4d6c716c5a19ebf289839a3d7c0a2021fb023d551902932cba1ba3f62b081d"
+    },
+    {
+      "original_path": "spain-mainhome-ownership-source/AEAT-mainhome-ownership.reader.txt",
+      "original_sha256": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+      "original_bytes": 2241,
+      "stored_path": "archive/28/28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7.gz",
+      "stored_bytes": 1037,
+      "stored_sha256": "1ebf5075daba17ad67dcd5847d8469eb362f90dc261acf3abd077b77dc268b8f"
+    },
+    {
+      "original_path": "spain-mainhome-ownership-source/artifact-manifest.json",
+      "original_sha256": "643325bd72f195bd5f2f3a5e4803d34bf30f31bf3484729e048fea5abfaa8968",
+      "original_bytes": 1089,
+      "stored_path": "archive/64/643325bd72f195bd5f2f3a5e4803d34bf30f31bf3484729e048fea5abfaa8968.gz",
+      "stored_bytes": 420,
+      "stored_sha256": "cd24039173191ebb6d5346d551a3a354762c4e41b0f76a6a83f0da630629217b"
+    },
+    {
+      "original_path": "spain-mainhome-ownership-source/fetch-receipt.json",
+      "original_sha256": "78d7492ad103a7a0ae90917518fb85d729af125251ba1f182f924f609b8307e7",
+      "original_bytes": 452,
+      "stored_path": "archive/78/78d7492ad103a7a0ae90917518fb85d729af125251ba1f182f924f609b8307e7.gz",
+      "stored_bytes": 238,
+      "stored_sha256": "73b426e8c6dfc70c22bf77252a3553fc7347947ce986358e86e5b3d82aa4abb4"
+    },
+    {
+      "original_path": "spain-mainhome-ownership-source/report.md",
+      "original_sha256": "76c1a49d4d3565ea504039d62c8a1952eb64a80851a033c3711b2ef8b651d3d7",
+      "original_bytes": 4136,
+      "stored_path": "archive/76/76c1a49d4d3565ea504039d62c8a1952eb64a80851a033c3711b2ef8b651d3d7.gz",
+      "stored_bytes": 2125,
+      "stored_sha256": "cf5ead5d75693e8b3e95ead9c128f140fd158e431e5790048289afe08d08235e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/README.md.diff",
+      "original_sha256": "56c8f9c1fbc98b23580d136c2d2f771eafa896756cf2a06b7cd36389c7329dc8",
+      "original_bytes": 5914,
+      "stored_path": "archive/56/56c8f9c1fbc98b23580d136c2d2f771eafa896756cf2a06b7cd36389c7329dc8.gz",
+      "stored_bytes": 2557,
+      "stored_sha256": "f6fde2e48f33c5aa32645d1b8cfbe0f6261beb42a1b4984c745c07fb8a668bb7"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/artifact-manifest.json",
+      "original_sha256": "acfdb9b1450e7f8a106153d369fc6b9eada3d980b6c4ade319a9f6629e6f8fb9",
+      "original_bytes": 12278,
+      "stored_path": "archive/ac/acfdb9b1450e7f8a106153d369fc6b9eada3d980b6c4ade319a9f6629e6f8fb9.gz",
+      "stored_bytes": 2484,
+      "stored_sha256": "6212069e74f29609e7304073a99792e9c64f403a7f775a82f8fa7726c94282ee"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/candidate-README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/candidate-es-capital-gains.md",
+      "original_sha256": "da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f",
+      "original_bytes": 35655,
+      "stored_path": "archive/da/da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f.gz",
+      "stored_bytes": 12177,
+      "stored_sha256": "e8e2910774e7d3b34318329a69719f7198ed525b393044890697a4917f37d97c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/composition-manifest.json",
+      "original_sha256": "4f5476201e9adb069e7eff563cf1f23f0465c3b35e9faed715721dbf88e08353",
+      "original_bytes": 12757,
+      "stored_path": "archive/4f/4f5476201e9adb069e7eff563cf1f23f0465c3b35e9faed715721dbf88e08353.gz",
+      "stored_bytes": 2317,
+      "stored_sha256": "ee38972fddb1c14504517c3a4dcfa8df3150c7b3b6546094fc7e00ea5fd79180"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/draft-options.md",
+      "original_sha256": "d41b487fda13e06813d6563e59ba529001355d8d4560c38336020810a19347ca",
+      "original_bytes": 500,
+      "stored_path": "archive/d4/d41b487fda13e06813d6563e59ba529001355d8d4560c38336020810a19347ca.gz",
+      "stored_bytes": 321,
+      "stored_sha256": "c993ea91647a73bb0aef0fac7fd11314963a091c1919fc7c185e1c35f310731e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/es-capital-gains.md.diff",
+      "original_sha256": "265f3f8e06c6134359d19027308e2732e3beee9af2c2f2e5a05e414c876b6f6b",
+      "original_bytes": 9096,
+      "stored_path": "archive/26/265f3f8e06c6134359d19027308e2732e3beee9af2c2f2e5a05e414c876b6f6b.gz",
+      "stored_bytes": 3453,
+      "stored_sha256": "cfef8f6f376c78b51d6bae1c1d47855fdb3456f366249c1f401583e5340967ee"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/examples-actual-output.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/input-README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/input-es-capital-gains.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_bytes": 11912,
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/schema-actual-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f",
+      "original_bytes": 35655,
+      "stored_path": "archive/da/da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f.gz",
+      "stored_bytes": 12177,
+      "stored_sha256": "e8e2910774e7d3b34318329a69719f7198ed525b393044890697a4917f37d97c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/validation.json",
+      "original_sha256": "bf14a8cabaf87175b35f56eb2cf5f02a1ec07bd4bb6cc7a4f91433eeb0f5287b",
+      "original_bytes": 278,
+      "stored_path": "archive/bf/bf14a8cabaf87175b35f56eb2cf5f02a1ec07bd4bb6cc7a4f91433eeb0f5287b.gz",
+      "stored_bytes": 195,
+      "stored_sha256": "da7242ce8fb7f316ce78ccf8c3d4e29f41d25fed084a576609198fe32c63d7f7"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/writer-checks.json",
+      "original_sha256": "501a8770a6e598daa4bdda83f32f82da5f66d932c2ad7b10320a4e4baeb9294c",
+      "original_bytes": 4812,
+      "stored_path": "archive/50/501a8770a6e598daa4bdda83f32f82da5f66d932c2ad7b10320a4e4baeb9294c.gz",
+      "stored_bytes": 1773,
+      "stored_sha256": "c35c7a02e314a0bf4bf4a534c2c4254d5ad5e92249be429c8fcf74338a6150b2"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-private-method/writer.py",
+      "original_sha256": "8f467e3e12d63ea67ffefdb0fb5bb6223f90016729007fd55ad6069eed884c67",
+      "original_bytes": 7342,
+      "stored_path": "archive/8f/8f467e3e12d63ea67ffefdb0fb5bb6223f90016729007fd55ad6069eed884c67.gz",
+      "stored_bytes": 3042,
+      "stored_sha256": "70987556a9946673db83b1497b46606aed3300e107180602fe006a12b2f233ec"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/approved-review-identities.json",
+      "original_sha256": "afb6eccf5546377839ad936c219068bd2f80455feefd1709e7a50c85ff02b36d",
+      "original_bytes": 618,
+      "stored_path": "archive/af/afb6eccf5546377839ad936c219068bd2f80455feefd1709e7a50c85ff02b36d.gz",
+      "stored_bytes": 311,
+      "stored_sha256": "eff9ae60a103373145e9af8af5e3bc6bd163319f4cb238552946219224d66608"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/candidate-es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/composition-manifest.json",
+      "original_sha256": "d14902ab0c69f4c8bc48b0af19c5ac40a63d9041b33c6f5f8f9431ce5c2f690e",
+      "original_bytes": 12758,
+      "stored_path": "archive/d1/d14902ab0c69f4c8bc48b0af19c5ac40a63d9041b33c6f5f8f9431ce5c2f690e.gz",
+      "stored_bytes": 2330,
+      "stored_sha256": "20895b127145828a03bbd1cd6e790d2a78c58bbfc115672fd4844fc933e9c552"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/examples-actual-output.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/move-only-proof.json",
+      "original_sha256": "346d0f1801e72fc825d742a0c85409c068f7588817515344dbcf917965d877d0",
+      "original_bytes": 390,
+      "stored_path": "archive/34/346d0f1801e72fc825d742a0c85409c068f7588817515344dbcf917965d877d0.gz",
+      "stored_bytes": 281,
+      "stored_sha256": "49a2ab013010f47e70007985077181ee30e911dfdb173ef171d4156bc0343627"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/schema-actual-output.txt",
+      "original_sha256": "a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f",
+      "original_bytes": 81,
+      "stored_path": "archive/a6/a67c62ec79683a20af549b5af669aedb87decf52d77dcc0860dcda8c74a0184f.gz",
+      "stored_bytes": 92,
+      "stored_sha256": "37074c7f0ce427dd3941d03d8814120721af7d96574363999ed5d9452166a3f9"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-table-precision/validation.json",
+      "original_sha256": "b14c03586cd5d690733d3aa3c9e4b83cf77ba23c712b239b3a2dde3b7985e79d",
+      "original_bytes": 263,
+      "stored_path": "archive/b1/b14c03586cd5d690733d3aa3c9e4b83cf77ba23c712b239b3a2dde3b7985e79d.gz",
+      "stored_bytes": 188,
+      "stored_sha256": "396fde4c5efa3e8b9ec4c695adee3b5f67744845f2446157cf40de9a91661077"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/29-file-composition-identity.json",
+      "original_sha256": "337ea4ddd2573d17a9dd22c845f565fd9dfc8c3e9ff1046a347033d8154c62dd",
+      "original_bytes": 18851,
+      "stored_path": "archive/33/337ea4ddd2573d17a9dd22c845f565fd9dfc8c3e9ff1046a347033d8154c62dd.gz",
+      "stored_bytes": 2303,
+      "stored_sha256": "423baeda8010e056a23da6eb2644777818f17280fdc4020f03150db344da04a7"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/HEAD.actual-output.txt",
+      "original_sha256": "801bf1b90c637129583c15ed91018cc72652369e6ddb6e8acc18d299cdc5f8c0",
+      "original_bytes": 41,
+      "stored_path": "archive/80/801bf1b90c637129583c15ed91018cc72652369e6ddb6e8acc18d299cdc5f8c0.gz",
+      "stored_bytes": 59,
+      "stored_sha256": "395d6cb54cec07d4cf9b28c1877a98240af4dfa734aa3510b3442c2cfdcea237"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/README.md.independent.diff",
+      "original_sha256": "5017c54f5781bf1f9874be4fac79ea17b27da1165ba2280a77e48c83ae626b31",
+      "original_bytes": 5908,
+      "stored_path": "archive/50/5017c54f5781bf1f9874be4fac79ea17b27da1165ba2280a77e48c83ae626b31.gz",
+      "stored_bytes": 2554,
+      "stored_sha256": "b7ffc8cf3961451b99c8af547ad27eecc990e46d85b2b8bca2bf54859386a106"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/actual-command-results.json",
+      "original_sha256": "e7db65c260a1d2da7abf39dff96c07c7a1cbd0e59d5de00f6f6ed20fc0354072",
+      "original_bytes": 7251,
+      "stored_path": "archive/e7/e7db65c260a1d2da7abf39dff96c07c7a1cbd0e59d5de00f6f6ed20fc0354072.gz",
+      "stored_bytes": 776,
+      "stored_sha256": "dff3928b03ce8ab4928a2e995726b57c691a935c1cf62dc2435d8d6bc55addef"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/all29-oa.actual-output.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/artifact-manifest.json",
+      "original_sha256": "ec3e621e883eb7887f251a6d8802382bd3779d8e2c3cff42fccfbf5055b50001",
+      "original_bytes": 40573,
+      "stored_path": "archive/ec/ec3e621e883eb7887f251a6d8802382bd3779d8e2c3cff42fccfbf5055b50001.gz",
+      "stored_bytes": 5456,
+      "stored_sha256": "b09468a9af1f00e697d8f734e6de8c9a695ab3bff6f514816ff33e201bbe2fb8"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/baselines/README.md",
+      "original_sha256": "8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82",
+      "original_bytes": 12827,
+      "stored_path": "archive/8d/8d77bc25c1af56bef743f955e35dbea03b5ff8ce7bcc681f49a198e047debb82.gz",
+      "stored_bytes": 5119,
+      "stored_sha256": "2ee6691175c2ff3ecb0dc2df8d0da71c97663f51ffcdadd73cba8efbe20d0f0f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/baselines/es-capital-gains.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_bytes": 11912,
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/capital-oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/check-final-move.py",
+      "original_sha256": "9ef2206d293827a68bcfee4fcb079104f6090be90981bed51bc7aa861e0e9bf2",
+      "original_bytes": 5144,
+      "stored_path": "archive/9e/9ef2206d293827a68bcfee4fcb079104f6090be90981bed51bc7aa861e0e9bf2.gz",
+      "stored_bytes": 2405,
+      "stored_sha256": "9b6c38347a85deb775b390dddf5707cbba84f6ff191d85ed6d2dc718c8339373"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/composition-manifest-original.json",
+      "original_sha256": "4f5476201e9adb069e7eff563cf1f23f0465c3b35e9faed715721dbf88e08353",
+      "original_bytes": 12757,
+      "stored_path": "archive/4f/4f5476201e9adb069e7eff563cf1f23f0465c3b35e9faed715721dbf88e08353.gz",
+      "stored_bytes": 2317,
+      "stored_sha256": "ee38972fddb1c14504517c3a4dcfa8df3150c7b3b6546094fc7e00ea5fd79180"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/es-capital-gains.md.independent.diff",
+      "original_sha256": "43a3f56a4edfcd59044bed37adaf9bab6165dc46d09c803744a8af0df7a57ac3",
+      "original_bytes": 9090,
+      "stored_path": "archive/43/43a3f56a4edfcd59044bed37adaf9bab6165dc46d09c803744a8af0df7a57ac3.gz",
+      "stored_bytes": 3449,
+      "stored_sha256": "ac009c19e0a661f3eabd89d608d4c257096de11c391558ec914961d05a2e5ce6"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/exact-source-row-move-proof.json",
+      "original_sha256": "d49a4ed5da56faa1fd2842c13b6526da0921f1d78eced4f148e4c475262ffa9c",
+      "original_bytes": 397,
+      "stored_path": "archive/d4/d49a4ed5da56faa1fd2842c13b6526da0921f1d78eced4f148e4c475262ffa9c.gz",
+      "stored_bytes": 280,
+      "stored_sha256": "43ceb4d5651cc88e7436c005eb048877c8a6c44f410d3bac4c7559e73f53d1ba"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-actual-command-results.json",
+      "original_sha256": "0790a9862edaecbf9dd156b30a8a33815c2f538ca651af652cef952145361c86",
+      "original_bytes": 7072,
+      "stored_path": "archive/07/0790a9862edaecbf9dd156b30a8a33815c2f538ca651af652cef952145361c86.gz",
+      "stored_bytes": 674,
+      "stored_sha256": "dcdde1f602a0de5a92fcddfa1c963ad6dd9d707917e13596f4974ff43d6a1c20"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-all29-oa.actual-output.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "original_bytes": 60,
+      "stored_path": "archive/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_bytes": 73,
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-capital-oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-composition-manifest-original.json",
+      "original_sha256": "d14902ab0c69f4c8bc48b0af19c5ac40a63d9041b33c6f5f8f9431ce5c2f690e",
+      "original_bytes": 12758,
+      "stored_path": "archive/d1/d14902ab0c69f4c8bc48b0af19c5ac40a63d9041b33c6f5f8f9431ce5c2f690e.gz",
+      "stored_bytes": 2330,
+      "stored_sha256": "20895b127145828a03bbd1cd6e790d2a78c58bbfc115672fd4844fc933e9c552"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-post-report-immutability.json",
+      "original_sha256": "9eac61993717b9bad8f697817876805753359b4dd5682a4b2fd1a654f95baead",
+      "original_bytes": 13490,
+      "stored_path": "archive/9e/9eac61993717b9bad8f697817876805753359b4dd5682a4b2fd1a654f95baead.gz",
+      "stored_bytes": 2813,
+      "stored_sha256": "82e969995a014695f075919d5d0e278ecdb8975a42a3699568248b3ae4b2e1a4"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97",
+      "original_bytes": 35655,
+      "stored_path": "archive/68/68cf44dfa49c22d16ae570775b20916ae4429073c72976e41f608a5a9c966b97.gz",
+      "stored_bytes": 12176,
+      "stored_sha256": "530741463b16d523a6fbab425757f5762b692d63e12ab7f006c2160fad5cae68"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-private-pack/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-schema.actual-output.txt",
+      "original_sha256": "73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397",
+      "original_bytes": 72,
+      "stored_path": "archive/73/73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397.gz",
+      "stored_bytes": 84,
+      "stored_sha256": "86131cd39463087c4054c67e288825c7a0ff411e3b159f3839c14328916e0e69"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-summary.json",
+      "original_sha256": "893b6b86b454e71802af04bb6d9d2391d05f5e3f4f559978c68097b442318d18",
+      "original_bytes": 572,
+      "stored_path": "archive/89/893b6b86b454e71802af04bb6d9d2391d05f5e3f4f559978c68097b442318d18.gz",
+      "stored_bytes": 364,
+      "stored_sha256": "862ddb3c001ec5d5df5dcb63cb47e94b7f966b536e7f72adceb1fc9ea32ceac7"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final-whitespace.actual-output.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/final29-composition-identity.json",
+      "original_sha256": "489b90a6a796415506989ca830bd9e96bc30b361be11f99bd470ae557d49edb2",
+      "original_bytes": 7240,
+      "stored_path": "archive/48/489b90a6a796415506989ca830bd9e96bc30b361be11f99bd470ae557d49edb2.gz",
+      "stored_bytes": 1815,
+      "stored_sha256": "c3fe14071ba89813489ddeb126649f80d4a62872db04dbced6007e47b903631f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/findings-final-disposition.json",
+      "original_sha256": "09244726c24b34b29ead7014ecbef242429ca867ed787fad26c56691958320d0",
+      "original_bytes": 970,
+      "stored_path": "archive/09/09244726c24b34b29ead7014ecbef242429ca867ed787fad26c56691958320d0.gz",
+      "stored_bytes": 586,
+      "stored_sha256": "51fb1ba10b817346a6a4834b26fe3241152af83d67290ae0b6345eb0ee430134"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/findings.json",
+      "original_sha256": "ed17b628d8e25186c7d868c36bfecf262760cbbecf18f13d3d5f2ebbc6183fb3",
+      "original_bytes": 885,
+      "stored_path": "archive/ed/ed17b628d8e25186c7d868c36bfecf262760cbbecf18f13d3d5f2ebbc6183fb3.gz",
+      "stored_bytes": 552,
+      "stored_sha256": "51f8e8b42ddbaec3ea0e74700516b044df7ee35e37092f58699f417848a4d3b9"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/fresh-SC-official-find.json",
+      "original_sha256": "9bbb3ecaa0f8a8a861d98df42ad8898522d3d13d4fe6a3565a1d274338e66cef",
+      "original_bytes": 31726,
+      "stored_path": "archive/9b/9bbb3ecaa0f8a8a861d98df42ad8898522d3d13d4fe6a3565a1d274338e66cef.gz",
+      "stored_bytes": 8140,
+      "stored_sha256": "a69e39c957866882206b2144a94ddd28332ca14b4f95cfc2d4ff9c040bb87ec0"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/fresh-official-web.json",
+      "original_sha256": "b4b4e3ce8192b13ab5751e0d7f3fe5e395609872155c67aa3edbc015e349dce2",
+      "original_bytes": 13481,
+      "stored_path": "archive/b4/b4b4e3ce8192b13ab5751e0d7f3fe5e395609872155c67aa3edbc015e349dce2.gz",
+      "stored_bytes": 4771,
+      "stored_sha256": "fafb58ad2239e0ead24508e869943f013e911ac3c89a7c65dce75cd951b80413"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/independent-source-and-scope-controls.json",
+      "original_sha256": "2e22260dc0f767e80d097ef5505fb3b6b6c277770aacdd7302110f5a1d0ed9c6",
+      "original_bytes": 6704,
+      "stored_path": "archive/2e/2e22260dc0f767e80d097ef5505fb3b6b6c277770aacdd7302110f5a1d0ed9c6.gz",
+      "stored_bytes": 1043,
+      "stored_sha256": "0325cb00597049655cf41c124bec14cf68b50fdc8ba6d0ee2b6856374f172411"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/own-actual-primary-read-ledger.json",
+      "original_sha256": "e62cbcf134c1889592aa698b952c7e0505d79a15297bce9de076929b622a928e",
+      "original_bytes": 5961,
+      "stored_path": "archive/e6/e62cbcf134c1889592aa698b952c7e0505d79a15297bce9de076929b622a928e.gz",
+      "stored_bytes": 1592,
+      "stored_sha256": "17da76226831773210a633f19c0bd3651027a6d268e7a045d4de1d5a70c43bdc"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/README.md",
+      "original_sha256": "efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d",
+      "original_bytes": 12967,
+      "stored_path": "archive/ef/efac24ff3ccc93cfc6bb38574ca70c6ff29fcbc1c4f120d9eccaa8d577d12e4d.gz",
+      "stored_bytes": 5164,
+      "stored_sha256": "170048d22cdeed701d18c41c8da769c86cb7d4e34c45f27bd7fbeac6d05e982d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-autonomous-worker.md",
+      "original_sha256": "23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9",
+      "original_bytes": 34385,
+      "stored_path": "archive/23/23267de73f1524100d61ab7914f0893a2eb489be839b06892d721968fb308ce9.gz",
+      "stored_bytes": 12032,
+      "stored_sha256": "1ff0c167baeecd847c8f16c45d0519346a6feb59d7ce76688c2bedd768bd832b"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-beckham.md",
+      "original_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "original_bytes": 23234,
+      "stored_path": "archive/0e/0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325.gz",
+      "stored_bytes": 7981,
+      "stored_sha256": "e72a40dfce215aed4081de8b0a1e0768481bec4cb31cc6205241a80c5def5e16"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-canary-islands-igic.md",
+      "original_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "original_bytes": 33282,
+      "stored_path": "archive/5e/5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25.gz",
+      "stored_bytes": 11732,
+      "stored_sha256": "f414144d35e327adbf84206ab4c7058d90afe71c717dfddc1f5b91e610bd169f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-capital-gains.md",
+      "original_sha256": "da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f",
+      "original_bytes": 35655,
+      "stored_path": "archive/da/da70ecb842ba9e80b9e36f9822e25824c868f215c6421aa902cb7665a1abdc9f.gz",
+      "stored_bytes": 12177,
+      "stored_sha256": "e8e2910774e7d3b34318329a69719f7198ed525b393044890697a4917f37d97c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-ceuta-melilla-ipsi.md",
+      "original_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "original_bytes": 50091,
+      "stored_path": "archive/b2/b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d.gz",
+      "stored_bytes": 14041,
+      "stored_sha256": "96f3947bf588cefc82409adbf91ea73709c1956f73186b8827c13712ea8a16df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-corporate-tax.md",
+      "original_sha256": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+      "original_bytes": 43177,
+      "stored_path": "archive/d8/d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce.gz",
+      "stored_bytes": 14327,
+      "stored_sha256": "934171890bc140f606714a2115da88b688b7f7e47431ee486949eafbc8838876"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-estimated-tax.md",
+      "original_sha256": "74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2",
+      "original_bytes": 36716,
+      "stored_path": "archive/74/74a4960a0c9b5bdbcbebb1539e04adf92e2842c97c4600836801af3008f19ed2.gz",
+      "stored_bytes": 11474,
+      "stored_sha256": "1c99ea185eb0d0784c7b6a96090594e11ebe5923517bfbf30b247832c20de4c1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-foral-corporate-tax.md",
+      "original_sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "original_bytes": 112395,
+      "stored_path": "archive/00/00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27.gz",
+      "stored_bytes": 31443,
+      "stored_sha256": "c7fffbd1d8d1268c9bbd43978964c94ce3cd31e474ca08f45ecbca5d2c77c73f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-foral-income-tax.md",
+      "original_sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "original_bytes": 265659,
+      "stored_path": "archive/d4/d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19.gz",
+      "stored_bytes": 71013,
+      "stored_sha256": "b732091a4a2e1c06dcd3c5b66de993cc4764cb3463122a3784c7cc98689eed60"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-foral-non-resident-tax.md",
+      "original_sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "original_bytes": 67660,
+      "stored_path": "archive/58/588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152.gz",
+      "stored_bytes": 20647,
+      "stored_sha256": "f2359c85e2a1f0a9b5b679f92bb06dacf7393c5384979f596c7f9a1a20cf43ae"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-foral-payroll.md",
+      "original_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "original_bytes": 54518,
+      "stored_path": "archive/4e/4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f.gz",
+      "stored_bytes": 12020,
+      "stored_sha256": "6b4d26cb1e02f8e6c49bec346fa64ab11535d3423f6407dacb4eaf4a6427ebe1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-income-tax.md",
+      "original_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "original_bytes": 85291,
+      "stored_path": "archive/07/07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564.gz",
+      "stored_bytes": 23364,
+      "stored_sha256": "4f7f4d81ad7576b88cb42f0d4e06fc49b30cbbba30c176b83d672a5ada162a1f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "original_bytes": 489578,
+      "stored_path": "archive/c7/c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7.gz",
+      "stored_bytes": 137512,
+      "stored_sha256": "b0732bcdcc9586250932eb136f7c19acbbe33c5a9e59dd1e266ac5416573d5e1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-modelo-111.md",
+      "original_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "original_bytes": 25444,
+      "stored_path": "archive/ca/cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982.gz",
+      "stored_bytes": 8571,
+      "stored_sha256": "e780530457995af64df650884064112133238663e538f87e2de8b74e80895342"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+      "original_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "original_bytes": 33442,
+      "stored_path": "archive/f2/f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4.gz",
+      "stored_bytes": 11505,
+      "stored_sha256": "21cd63693b587b76c6fc3ae6ab9230691ebaa1234bbffe91b8b2f31b47ba3302"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-rental-income.md",
+      "original_sha256": "99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b",
+      "original_bytes": 38930,
+      "stored_path": "archive/99/99666b87b930e0a89321d37defa8d6e8c88a3a4bacf313e1b25b5c4df326be9b.gz",
+      "stored_bytes": 12522,
+      "stored_sha256": "cad4e74e023576660a081c2a6cf39c2276d34bc8b45ca3435fff484ac7e15f7e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-social-contributions.md",
+      "original_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "original_bytes": 68625,
+      "stored_path": "archive/f7/f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1.gz",
+      "stored_bytes": 20877,
+      "stored_sha256": "126c136d50b8d08284bac1cf99cdd3284d1113d56001042beeb2bccd53de72cd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/es-vat-return.md",
+      "original_sha256": "18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca",
+      "original_bytes": 82395,
+      "stored_path": "archive/18/18c03cb74d99e17b52d02eca74ac39ee5ce2810a59b3fd40492528eab61a51ca.gz",
+      "stored_bytes": 26121,
+      "stored_sha256": "f1532daec18a5435b372cfba8e182d3959efd6869fff56b80aebd20c8911f161"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/references.md",
+      "original_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "original_bytes": 3537,
+      "stored_path": "archive/f1/f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874.gz",
+      "stored_bytes": 1701,
+      "stored_sha256": "a6162ab0e458c12cf1db34bbf08e1be237e7cfbe9aa972265f44c0382944d4c3"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-bookkeeping.md",
+      "original_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "original_bytes": 73678,
+      "stored_path": "archive/24/2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2.gz",
+      "stored_bytes": 24061,
+      "stored_sha256": "b651f304d582c4151e46148969bc54a48d76c0e1ba57d0fae23d256bb91b9846"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-crypto-tax.md",
+      "original_sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "original_bytes": 31385,
+      "stored_path": "archive/f5/f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c.gz",
+      "stored_bytes": 11188,
+      "stored_sha256": "09cdf177cee9cc4e62f91ae686894cd8647b67f942eef4689e8c0e8259405d9e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-einvoice.md",
+      "original_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "original_bytes": 53944,
+      "stored_path": "archive/8f/8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30.gz",
+      "stored_bytes": 16863,
+      "stored_sha256": "bb0f51dcb1274360dc40cc06458bd42452ae9f765645e5288efafccf8bf96218"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-financial-statements.md",
+      "original_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "original_bytes": 51863,
+      "stored_path": "archive/4b/4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d.gz",
+      "stored_bytes": 16412,
+      "stored_sha256": "0c92c2a075a35e0e908a0eb7b5d0b9eb97a47fc374e8a4e268d8f4a57c173a4e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-formation.md",
+      "original_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "original_bytes": 11892,
+      "stored_path": "archive/a6/a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787.gz",
+      "stored_bytes": 4807,
+      "stored_sha256": "ad48a4689e885e1a41c705eae2d61a44fa32b85f3949127deebb57fbfedaa0f8"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-payroll.md",
+      "original_sha256": "01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110",
+      "original_bytes": 51985,
+      "stored_path": "archive/01/01b265bfec50f1d0d8c00b934b2cb4417bbc3d3d8d7655972be0594ecfdf3110.gz",
+      "stored_bytes": 16965,
+      "stored_sha256": "ff52c5155b2aabcef92c6370e2cfd3181521b85af190706b42d85c8adab2269c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-tax-optimization.md",
+      "original_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "original_bytes": 20281,
+      "stored_path": "archive/2f/2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89.gz",
+      "stored_bytes": 8036,
+      "stored_sha256": "485be917bf8423c53a84e55e73de6f8d7b5148dbc1cf115364b5420bf9d0c994"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-transfer-pricing.md",
+      "original_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "original_bytes": 31683,
+      "stored_path": "archive/5d/5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d.gz",
+      "stored_bytes": 10415,
+      "stored_sha256": "757603f1f3badb4a1bebdde7d382af49ab607f4d1c208a4e74e1e329c3129f01"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/private-pack/skills/international/spain/spain-vat-return.md",
+      "original_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "original_bytes": 26446,
+      "stored_path": "archive/f8/f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977.gz",
+      "stored_bytes": 9523,
+      "stored_sha256": "a1f1721429ddc1e14589b50074caf37891c1e13c9ee10edfbe8268b19d6101df"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/report.md",
+      "original_sha256": "5e80ddc39d06c35500f5f58b3c55cc6e84a7e3c55172a928a89053d0c541ded4",
+      "original_bytes": 9979,
+      "stored_path": "archive/5e/5e80ddc39d06c35500f5f58b3c55cc6e84a7e3c55172a928a89053d0c541ded4.gz",
+      "stored_bytes": 4505,
+      "stored_sha256": "179d5e5566f5116fdc84056137adb80957bdec3dbed3d876f574ec444502febd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/review.py",
+      "original_sha256": "08894a104789c4dc42e6931c940f035366ffacdde58825b827701607090eeaf2",
+      "original_bytes": 11758,
+      "stored_path": "archive/08/08894a104789c4dc42e6931c940f035366ffacdde58825b827701607090eeaf2.gz",
+      "stored_bytes": 5137,
+      "stored_sha256": "645cb3261021daf097796c0349a2ab4e23109f83b61d531403b3e55570c8d153"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/schema.actual-output.txt",
+      "original_sha256": "73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397",
+      "original_bytes": 72,
+      "stored_path": "archive/73/73c2b9bad96e9a5fa2577b2e312f53a5c7fee6d51a35bc8d11c6aae05c027397.gz",
+      "stored_bytes": 84,
+      "stored_sha256": "86131cd39463087c4054c67e288825c7a0ff411e3b159f3839c14328916e0e69"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/scope-and-metadata-invariants.json",
+      "original_sha256": "ce3921967df773f6c2f1ae8a161283f8758eaa72b647155d761c1204ced95ede",
+      "original_bytes": 350,
+      "stored_path": "archive/ce/ce3921967df773f6c2f1ae8a161283f8758eaa72b647155d761c1204ced95ede.gz",
+      "stored_bytes": 228,
+      "stored_sha256": "112544eefcdc4925f19236b0033a8c630bfaa16bd809b164ad4c16657a8021cb"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/seal-review.py",
+      "original_sha256": "94317ac3c100e58d63f61375d43ae818205b142f386424f156b293ecc2199253",
+      "original_bytes": 11855,
+      "stored_path": "archive/94/94317ac3c100e58d63f61375d43ae818205b142f386424f156b293ecc2199253.gz",
+      "stored_bytes": 5267,
+      "stored_sha256": "34ecc4ff533d083cd064237d111c02a3796be791553911fa5ebc1ab36aaf4d05"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/source-writer-evidence-immutability.json",
+      "original_sha256": "1959b7aa22dc4dea455c716368e201a63feb212ffe2d370456a8f032d512c338",
+      "original_bytes": 14464,
+      "stored_path": "archive/19/1959b7aa22dc4dea455c716368e201a63feb212ffe2d370456a8f032d512c338.gz",
+      "stored_bytes": 2894,
+      "stored_sha256": "14a67e4b3614763a9db7ab4094fd1a1c253739381f9449cdcd6f6af6e7173489"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/AEATownership.actual-read-excerpts.txt",
+      "original_sha256": "af8c8ef81008ebc1d3e62daf2c6dcbdc1b2d8d84e0fd62a250be199fbc083c2a",
+      "original_bytes": 2341,
+      "stored_path": "archive/af/af8c8ef81008ebc1d3e62daf2c6dcbdc1b2d8d84e0fd62a250be199fbc083c2a.gz",
+      "stored_bytes": 1132,
+      "stored_sha256": "ca50dffd8126bf9665dcec3b024a547b28bb1252d7b3793ddb0062ccda14404e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/AEATownership.body",
+      "original_sha256": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+      "original_bytes": 12458,
+      "stored_path": "archive/fa/fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348.gz",
+      "stored_bytes": 3913,
+      "stored_sha256": "de4d6c716c5a19ebf289839a3d7c0a2021fb023d551902932cba1ba3f62b081d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/AEATownership.reader.txt",
+      "original_sha256": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+      "original_bytes": 2241,
+      "stored_path": "archive/28/28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7.gz",
+      "stored_bytes": 1037,
+      "stored_sha256": "1ebf5075daba17ad67dcd5847d8469eb362f90dc261acf3abd077b77dc268b8f"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LETA.actual-read-excerpts.txt",
+      "original_sha256": "b6cc4187c80dcbc9b87d28d786e7deafed598eeb5a2f62e583f4b6041cdaf61f",
+      "original_bytes": 7365,
+      "stored_path": "archive/b6/b6cc4187c80dcbc9b87d28d786e7deafed598eeb5a2f62e583f4b6041cdaf61f.gz",
+      "stored_bytes": 2291,
+      "stored_sha256": "ee56240c397f65cdd9f177aaebc2320b43cfb8a52f6074bd60d74f8a93db957d"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LETA.body",
+      "original_sha256": "1cc0fd43329b73c5b82fc7d648e5b543071b34adf2008ff8c166753308b968ed",
+      "original_bytes": 500808,
+      "stored_path": "archive/1c/1cc0fd43329b73c5b82fc7d648e5b543071b34adf2008ff8c166753308b968ed.gz",
+      "stored_bytes": 60082,
+      "stored_sha256": "700ed016f24e6b15e23585169b81b6ead31f80fdec5f35f4c3f2d8b72e93bfca"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LETA.reader.txt",
+      "original_sha256": "73507e33a186bc1de3487e7e7d144feece66287c934160ebc3be51b0f4330241",
+      "original_bytes": 191299,
+      "stored_path": "archive/73/73507e33a186bc1de3487e7e7d144feece66287c934160ebc3be51b0f4330241.gz",
+      "stored_bytes": 42360,
+      "stored_sha256": "faf30e3c4b87442b8f506d57a0557411adda5ac0ec8cb3f189ba2384c80d1922"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LIRPF.actual-read-excerpts.txt",
+      "original_sha256": "c5ab24b7134250457deaf4f54a77be9aa1af70368071e162c7f616e8fe9f26b3",
+      "original_bytes": 862,
+      "stored_path": "archive/c5/c5ab24b7134250457deaf4f54a77be9aa1af70368071e162c7f616e8fe9f26b3.gz",
+      "stored_bytes": 473,
+      "stored_sha256": "57fcf7336905cfe9e54b80bbe95a745ac768c606abab6bdd853a1005087c6cc2"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LIRPF.body",
+      "original_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "original_bytes": 2028806,
+      "stored_path": "archive/78/780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "1c6b02f3d86dffbba797defbb393a563eddddb30be0de5581b52349c70a25492"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/LIRPF.reader.txt",
+      "original_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "original_bytes": 940163,
+      "stored_path": "archive/6b/6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5.gz",
+      "stored_bytes": 193839,
+      "stored_sha256": "1adfdf6a07b105237bca6eda8b98743a5e54f202099c52e209fa0c1009b6149e"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RD2064.actual-read-excerpts.txt",
+      "original_sha256": "ea6af1d2909ac69f06540481082cdf40ad09d5b719c6b3af6eb104311020fc0a",
+      "original_bytes": 7219,
+      "stored_path": "archive/ea/ea6af1d2909ac69f06540481082cdf40ad09d5b719c6b3af6eb104311020fc0a.gz",
+      "stored_bytes": 2373,
+      "stored_sha256": "19a9ff14e4adf9876a65053b7d3837dbc807531a0b8603441f0c9d1f1d45edaa"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RD2064.body",
+      "original_sha256": "b5257a40de72c87ee7482ff6b30dad29780ce3a2c83c87a76eaf1d9baec2fdc1",
+      "original_bytes": 988922,
+      "stored_path": "archive/b5/b5257a40de72c87ee7482ff6b30dad29780ce3a2c83c87a76eaf1d9baec2fdc1.gz",
+      "stored_bytes": 88525,
+      "stored_sha256": "f2497eddd6b1fb285337469e72c019690d9af254271ae7351e16a32aa0493ff6"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RD2064.reader.txt",
+      "original_sha256": "7e1bda5c76f949dd8b335f2cca182ce6bb2df0459c41f33445803568bca93d9f",
+      "original_bytes": 286849,
+      "stored_path": "archive/7e/7e1bda5c76f949dd8b335f2cca182ce6bb2df0459c41f33445803568bca93d9f.gz",
+      "stored_bytes": 59837,
+      "stored_sha256": "c43be8dfda527421cd63fa64f9d589e8e3202cc4d86b7b2ef07ea3db64234dcd"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RIRPF.actual-read-excerpts.txt",
+      "original_sha256": "98d506eaee70ddb9c3c9cf93948b9008108dba5d3cd87a655dcaacb3683c000d",
+      "original_bytes": 3859,
+      "stored_path": "archive/98/98d506eaee70ddb9c3c9cf93948b9008108dba5d3cd87a655dcaacb3683c000d.gz",
+      "stored_bytes": 1470,
+      "stored_sha256": "f1141b51ab2d4fbf83ca987d782a746bed0fb1f03c1e70b837879247b0d541d0"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RIRPF.body",
+      "original_sha256": "0ea63dcff4dc3a45b239f152d54083721620cdb6fd8d922fd28e3e990065b745",
+      "original_bytes": 1000017,
+      "stored_path": "archive/0e/0ea63dcff4dc3a45b239f152d54083721620cdb6fd8d922fd28e3e990065b745.gz",
+      "stored_bytes": 137311,
+      "stored_sha256": "d27003c3ceff430ce2ac481abed475d2bfd59ee4a44502f114c5ab4106a79a6a"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/RIRPF.reader.txt",
+      "original_sha256": "a42074b2f0b0e9ff3f699b11332e70e16d21825f8af5d1760ddddf6251f07907",
+      "original_bytes": 500221,
+      "stored_path": "archive/a4/a42074b2f0b0e9ff3f699b11332e70e16d21825f8af5d1760ddddf6251f07907.gz",
+      "stored_bytes": 106811,
+      "stored_sha256": "38f93ee724616cd526120ec814cea309add49a73864fd487f859eeb4985f21ea"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/TGSS.actual-read-excerpts.txt",
+      "original_sha256": "85acdb7ffbec75e2b345a8e625e69de6849687cbe4b434697ec4b7de16d535a6",
+      "original_bytes": 992,
+      "stored_path": "archive/85/85acdb7ffbec75e2b345a8e625e69de6849687cbe4b434697ec4b7de16d535a6.gz",
+      "stored_bytes": 549,
+      "stored_sha256": "c5781c5ef9a9fb50be1eb47d056dab0cfe646b68b090172d3aa4b3edc84533fe"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/TGSS.body",
+      "original_sha256": "594959c4840854deedba04ff40fe5455d65a2b4fb4cd22133d67c9b70d6bac9f",
+      "original_bytes": 87853,
+      "stored_path": "archive/59/594959c4840854deedba04ff40fe5455d65a2b4fb4cd22133d67c9b70d6bac9f.gz",
+      "stored_bytes": 20526,
+      "stored_sha256": "c678724ac70bc06b8e9f45c77009f3ddac2c143254de2990cfea490b435952c1"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/sources/TGSS.reader.txt",
+      "original_sha256": "b717d974c07fa9c851d0ab673b01d558a9526e012c40c74b0bcb5a1a3caa3493",
+      "original_bytes": 19861,
+      "stored_path": "archive/b7/b717d974c07fa9c851d0ab673b01d558a9526e012c40c74b0bcb5a1a3caa3493.gz",
+      "stored_bytes": 6313,
+      "stored_sha256": "2c2d9cdc29cdebcd3f2e9421e4c60a346c464244babd939164375b12fa7b2028"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/status.actual-output.txt",
+      "original_sha256": "d510428a88eba5403667da4fa074de3e8818879507fdd1941581e7fb6a7c7144",
+      "original_bytes": 55,
+      "stored_path": "archive/d5/d510428a88eba5403667da4fa074de3e8818879507fdd1941581e7fb6a7c7144.gz",
+      "stored_bytes": 74,
+      "stored_sha256": "45dd9b195461ee8f30b84521ea0b65e4838ee255e52799d9e6190a5cf35ffe7c"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/summary.json",
+      "original_sha256": "01e64d4f5f083aa78209098c95df3b95d63be8dd2a12ef937da629d5f4112eec",
+      "original_bytes": 934,
+      "stored_path": "archive/01/01e64d4f5f083aa78209098c95df3b95d63be8dd2a12ef937da629d5f4112eec.gz",
+      "stored_bytes": 490,
+      "stored_sha256": "d5c355fbe54da559445fd23720e6cb589d76cb998952a65eca0debe3dcc83ecc"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/two-file-preservation-and-exact-edit-ledger.json",
+      "original_sha256": "c621bd32ee18877a43acf71708758cbc4c56c254dabee534689663f0c41c5910",
+      "original_bytes": 5475,
+      "stored_path": "archive/c6/c621bd32ee18877a43acf71708758cbc4c56c254dabee534689663f0c41c5910.gz",
+      "stored_bytes": 1624,
+      "stored_sha256": "6f5c205386a3ce4acfefb4233878b4ae3395401d285c0bfb3266d66aed53ea87"
+    },
+    {
+      "original_path": "spain-ownership-SC-scope-independent-review/whitespace.actual-output.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_bytes": 20,
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    }
+  ]
+}

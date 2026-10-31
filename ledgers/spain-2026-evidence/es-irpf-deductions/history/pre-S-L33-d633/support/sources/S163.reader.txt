@@ -1,0 +1,1077 @@
+
+
+
+
+[[ID:ctl00_Head1]]
+
+	DYCTEA
+
+    
+    
+    
+    
+    
+
+
+
+[[ID:header]]
+
+    
+    
+        
+[[ID:headerEscudo]]
+
+        
+[[ID:lnkLogo]]
+
+            
+[[ID:imgLogo]]
+
+         
+        
+        
+[[ID:headerTitle]]
+
+        
+[[ID:ctl00_Titulo]]
+
+Doctrina y Criterios de los Tribunales Económico-Administrativos
+
+        
+        
+[[ID:headerEscudoTea]]
+
+            
+            
+[[ID:img1]]
+
+            
+        
+    
+    
+
+
+
+    
+[[ID:aspnetForm]]
+
+
+
+[[ID:__VIEWSTATE]]
+
+
+
+
+
+	
+[[ID:__VIEWSTATEGENERATOR]]
+
+
+    
+        
+[[ID:ctl00_pnAyuda]]
+
+	
+        
+        
+        Ayuda
+        
+        
+        
+        
+
+        
+
+    Volver
+
+
+
+
+
+[[ID:ctl00_contentBody_pnCriterio]]
+
+	
+    
+[[ID:criterioBloque]]
+
+        
+[[ID:criterioDatos]]
+
+            
+[[ID:criterioDatosTitulo]]
+
+                Criterio 1 de 1 de la resolución: 00/00765/2023/00/00
+            
+            
+[[ID:criterioDatosCalificacion]]
+
+                Calificación: Doctrina
+            
+            
+[[ID:criterioDatosUnidad]]
+
+                Unidad resolutoria: TEAC
+            
+            
+[[ID:criterioDatosFecha]]
+
+                Fecha de la resolución: 22/04/2024
+            
+        
+        
+[[ID:criterioContenido]]
+
+            
+[[ID:criterioDatosAsunto]]
+
+                Asunto: 
+
+IRPF. Disposición Transitoria 18 LIRPF. Deducción por inversión en vivienda habitual. Contribuyentes que no hubieran practicado ni consignado tal deducción en ninguno de los años o períodos anteriores al 2013 desde que la adquirieron.
+
+            
+            
+[[ID:criterioDatosContenido]]
+
+                Criterio: 
+
+                
+El TEAC acuerda unificar criterio que va a alcanzar a la posible aplicación de la deducción por inversión en vivienda habitual en los años o períodos posteriores al 2012 por parte de contribuyentes que hubieran adquirido su vivienda habitual antes del 01/01/2013 y que no hubieran practicado ni consignado tal deducción en ninguno de los años o períodos anteriores al 2013 desde que la adquirieron.
+
+Siendo el criterio que se fija el siguiente:
+
+Primero.- Que podrán aplicarla, aquéllos que no hubieran practicado ni consignado la deducción antes de 2013 porque no hubieran presentado declaración por no resultar obligado a ello por razón de las rentas obtenidas.
+
+Segundo.- Que podrán aplicarla, aquéllos que no hubieran practicado ni consignado la deducción antes de 2013 porque estando obligados a presentar declaración por razón de las rentas y habiéndola presentado, no hubieran tenido en ninguno de tales períodos cuota íntegra para poder aplicarla.
+
+Tercero.- Que no podrán aplicarla, aquéllos que estando obligado a presentar declaración por razón de las rentas y habiéndola presentado, no hubieran practicado la deducción antes de 2013 a pesar de haber tenido en alguno de tales períodos cuotas íntegras a las que poder aplicarla.
+
+Cuarto.- Que cuando la falta de cuotas que impidió la práctica de la deducción antes de 2013 obedezca a un error, habrá que estar las circunstancias del caso, en los términos antes expuestos.
+
+ 
+
+UNIFICACIÓN DE CRITERIO
+
+                    
+            
+[[ID:criterioDatosNormas]]
+
+                Referencias normativas: 
+
+                
+[[ID:referenciasNormativas]]
+
+Ley 35/2006 Impuesto sobre la Renta de las Personas Físicas IRPF                                                                                                                                                                                                
+DT.18                                                                                                                           
+
+
+            
+            
+[[ID:criterioDatosConceptos]]
+
+                Conceptos: 
+
+                
+Deducciones
+
+Impuesto sobre la Renta de las Personas Físicas IRPF
+
+Inversión
+
+Período impositivo
+
+Vivienda habitual
+
+            
+        
+        
+[[ID:criterioDatosResolucion]]
+
+            Texto de la resolución: 
+
+
+	 
+
+
+
+	 
+
+
+
+	
+
+
+
+[[ID:datosOrgano]]
+
+	
+
+		Tribunal Económico-Administrativo Central
+
+	
+
+		SALA PRIMERA
+
+	
+
+		FECHA: 22 de abril de 2024
+
+
+
+[[ID:datosTarea]]
+
+	
+[[ID:IN_0]]
+
+		
+
+			RECURSO: 00-00765-2023
+
+		
+
+			CONCEPTO: IMPUESTO RENTA PERSONAS FÍSICAS. IRPF
+
+		
+
+			NATURALEZA: ALZADA UNIF. DE CRITERIO
+
+		
+
+			RECURRENTE: PRESIDENTE DEL TEAC - NIF S2826022B
+
+		
+
+			DOMICILIO: CALLE (MADRID) - España
+
+	
+
+
+[[ID:antecedentes&fundamentos]]
+
+	
+[[ID:PI_7114898]]
+
+		
+
+			En Madrid, en el procedimiento para la adopción de resolución en unificación de criterio previsto en el artículo 229.1. letra d) de la Ley 58/2003, de 17 de diciembre, General Tributaria, incoado por acuerdo del Presidente del Tribunal Económico-Administrativo Central, de 6 de febrero de 2023, por iniciativa del Presidente del Tribunal Económico-Administrativo Regional de Cataluña.
+
+		
+
+			 
+
+		
+
+			                                                                                                                                    ANTECEDENTES DE HECHO
+
+		
+
+			 
+
+		
+
+			PRIMERO.- El Tribunal Económico-Administrativo Regional (T.E.A.R.) de Cataluña dictó el 27/10/2022 una resolución con la que resolvió la reclamación n° 25-608-2021, relativa a la tributación de un obligado por el I.R.P.F. del periodo 2019.
+
+		
+
+			Reclamación en la que la cuestión que se había planteado consistía en determinar si ese obligado tenía derecho, o no, a la deducción por adquisición de vivienda en ese período 2019, en razón de una vivienda que había adquirido antes del 01/01/2013, pero teniendo en cuenta que él no se había practicado tal deducción en ningún período impositivo devengado con anterioridad al 01/01/2013, períodos en los que no estuvo obligado a presentar declaraciones del I.R.P.F.
+
+		
+
+			Habiendo resuelto al respecto el T.E.A.R. de Cataluña lo siguiente :
+
+		
+
+			< CUARTO.- La oficina gestora ha regularizado la deducción por adquisición de vivienda habitual al no haber aplicado la deducción por inversión en vivienda habitual en los ejercicios anteriores a 2013. 
+
+		
+
+			A la vista del expediente se desprende que el interesado, habiendo adquirido su vivienda habitual con anterioridad a 2013, no consta que haya practicado las correspondientes deducciones ni ha ejercido el derecho a la deducción en ninguno de los cuatro ejercicios anteriores a 2013. 
+
+		
+
+			Sin embargo, es lo cierto que el reclamante no estaba obligado a presentar declaración en dicho ejercicio o anteriores y de acuerdo con una interpretación finalista, habiendo adquirido la vivienda con anterioridad al ejercicio 2013 y gozando del derecho a la deducción, si bien no pudo ser ejercido al no disponer de rentas, procede admitir el derecho a la deducción en el presente ejercicio y estimar, en consecuencia la reclamación. >
+
+		
+
+			SEGUNDO.- Cuestión sobre la que otros T.E.A.R.'s se han pronunciado en sentidos distintos.
+
+		
+
+			1º.- Antes, el T.E.A.R. de la Comunidad Valenciana en una resolución de 30/07/2020 recaída en la reclamación nº. 03/4893/2019, consideró que la interesada de su reclamación no tenía derecho a disfrutar de la deducción porque no había cumplido el requisito que recoge la D.T. decimoctava de la Ley 35/2006 de haberse practicado la deducción por inversión en vivienda habitual con anterioridad a 1/01 /2013, sin que tuviera incidencia el hecho de que no lo hubiera hecho -el aplicársela- por no haber estado obligada a presentar declaración en virtud de la normativa del impuesto, ya que, en todo caso, debería haber presentado tal declaración, aunque no estuviera obligada a ello, para poder acogerse a la dispuesto en tal D.T. decimoctava.
+
+		
+
+			2º.- También ya antes, el T.E.A.R. de Aragón, en una resolución de 23/12/2021 recaída en las reclamaciones nºs. 50-01591-2019 y acumuladas, en un supuesto en el que un contribuyente había adquirido su vivienda habitual  28/12/2012, y presentado autoliquidación de 2012 sin práctica de deducción, concluye que ese contribuyente sí tiene derecho a la aplicación de la deducción por adquisición de vivienda habitual en los ejercicios 2014 a 2017, ya que:
+
+		
+
+			< la inclusión o no de los importes relativos a la deducción por adquisición de vivienda habitual en la declaración por el Impuesto sobre la Renta de las Personas Físicas, ejercicio 2012, no producía ningún efecto material, ya que, al no haber obtenido la reclamante ingresos durante el ejercicio 2012, no había cuota íntegra sobre la que practicar la deducción por adquisición de vivienda habitual, por lo que, en este caso concreto, la inclusión de la deducción se trata de un requisito meramente formal. >
+
+		
+
+			< la falta de inclusión de los importes correspondientes a la deducción por adquisición de vivienda habitual en la declaración del ejercicio 2012 se considera el incumplimiento de un requisito meramente formal que no puede impedir la aplicación de la deducción en ejercicios posteriores. >
+
+		
+
+			3º.- Y ya después el T.E.A.R. de Andalucía, en una resolución de 27/10/2023 recaída en la reclamación nº. 41-6236- 2022, en la que lo que se planteaba era, si para la aplicación del régimen transitorio previsto en la D.T. decimoctava de la Ley 35/2006, era necesario haber practicado la deducción en un periodo impositivo devengado con anterioridad al 01/01/2013, o si era suficiente haber tenido derecho a aplicarla con anterioridad a dicha fecha, siendo indiferente que se hubiese aplicado efectivamente o no, ese T.E.A.R. concluyó que:
+
+		
+
+			< Este Tribunal considera que la interpretación meramente literal o gramatical de la condición impuesta por el legislador en la DT 18ª para poder acogerse al régimen transitorio encerrado en la misma (deducciones practicadas) no es suficiente juridicamente, por no adecuarse a la propia lógica de la misma, a su interpretación sistemática con el régimen transitorio de la deducción por alquiler, y sobre todo, por ser contraría a los principios constitucionales de seguridad jurídica (articulo 9.3 CE) e igualdad (artículo 14 CE). No puede ignorarse la doctrina del Tribunal Constitucional que impone a todo intérprete el deber de interpretar las normas en su sentido más conforme con la Constitución. Y este Tribunal, en el ejercicio de dicha labor, entiende que la interpretación más conforme con la propia lógica del precepto, con su interpretación sistemática con el régimen transitorio de la deducción por alquiler de vivienda habitual y, sobre todo, con los antedichos principios constitucionales de seguridad y igualdad conducen a entender que la condición a la que la DT 18ª somete la aplicación del régimen transitorio contenido en la misma es que «el contribuyente hubiera tenido derecho a la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013», con independencia de que se lo haya practicado o no, lo que impone que las eventuales comprobaciones no se limiten a constatar el hecho expuesto (que el contribuyente haya practicado deducción con anterioridad a 2013) sino a corroborar que éste tenía derecho a ello antes del 1 de enero de 2013, cuestión que en este caso ni se ha cuestionado ni se ha verificado, lo que impone un pronunciamiento estimatorio a la pretensión del reclamante, anulándose, por ello, la liquidación impugnada. >
+
+	
+	
+[[ID:AH_7114899]]
+
+		
+
+			TERCERO.- A la vista de los antecedentes anteriores y de la propuesta formulada al respecto por el Presidente del T.E.A.R. de Cataluña, el 06/02/2023 el Presidente de este T.E.A.C. acordó iniciar el procedimiento para la adopción de una resolución en unificación de criterio, previsto en el art. 229.1.d) de la Ley 58/2003, otorgando, con carácter previo a la adopción de tal resolución, trámite de alegaciones por plazo de un mes tanto a la Directora General de Tributos del Ministerio de Hacienda como a la Directora del Departamento de Gestión Tributaria de la A.E.A.T.   
+
+		
+
+			CUARTO.- En las alegaciones que presentó en el trámite que se le concedió a tal efecto, la Directora General de Tributos del Ministerio de Hacienda, tras resumir lo dicho por esos cuatro T.E.A.R.'s: el de Cataluña y los tres citados en el Antecedente de Hecho segundo, terminó concluyendo lo siguiente: 
+
+		
+
+			< 8º. Este Centro Directivo, examinadas la resolución adoptada por cada uno de los Tribunales económico-administrativo referidos, manifiesta la disconformidad con el criterio manifestado por los TEAR de Cataluña, Andalucía y Aragón. 
+
+		
+
+			Por ninguno de los Tribunales se discute que el significado del precepto debatido sea claro o que admita dudas en cuanto a su significado literal, pero que una interpretación "finalista" (TEAR de Cataluña) o basada en criterios de constitucionalidad (TEAR de Andalucía), puede, según dichos Tribunales, llevar a determinar un alcance de la norma diferente al que esta establece de forma clara. 
+
+		
+
+			En ese sentido, debe tenerse en cuenta que el legislador exige "En todo caso" el cumplimiento del requisito, que resalta como "necesario" de "que el contribuyente hubiera practicado la deducción" en ejercicio precedente a 2013, estableciendo de forma expresa y clara una única excepción: que no se hubiera practicado la deducción por aplicación de lo previsto en el artículo 68.1.2º de la LIRPF (que establece que, en el caso de deducciones por viviendas previas, no se practicará la deducción hasta que las cantidades satisfechas por la nueva vivienda superen las bases de las deducciones practicadas por las precedentes, y en su caso, la ganancia patrimonial exenta por aplicación de la exención por reinversión). 
+
+		
+
+			Por ello, se considera que si bien el artículo 3.1 del Código Civil no establece una jerarquía o preferencia entre los distintos criterios interpretativos enunciados en dicho artículo y, como indica el TEAR de Andalucía, los límites en su aplicación, el intérprete de la norma siempre quedará obligado en su interpretación a acatar el principio de sometimiento a las leyes y el principio de legalidad normativa, no pudiendo ampararse en la aplicación de un determinado criterio interpretativo para inaplicar o sustituir un requisito legal, como en este caso este Centro Directivo considera que ocurre. 
+
+		
+
+			Así, en la Sentencia del Tribunal Supremo de 21 de noviembre de 1934, citada por la doctrina como el inicio de la jurisprudencia que acoge la tesis de que los elementos gramaticales y lógicos no son suficientes para desarrollar la labor interpretativa, y que tendrá su reflejo en múltiples sentencias de las décadas posteriores y en la redacción actual del artículo 3 del Código Civil, dada por el Decreto 1836/1974, de 31 de mayo, por el que se sanciona con fuerza de Ley el texto articulado del título preliminar del Código Civil (BOE de 9 de julio), se manifiesta: 
+
+		
+
+			"...aun sin acoger todas las conclusiones propugnadas por los partidarios del llamado método histórico-evolutivo de interpretación de las normas jurídicas, puede admitirse hoy, como doctrina ponderada y de muy general aceptación, la de que no bastan para realizar cumplidamente la función interpretativa, los elementos gramaticales y lógicos, pues si la ley ha de estar en contacto con las exigencias de la vida real, que constituyen su razón de ser, es preciso reforzados y controlados por la aplicación del que suele llamarse elemento sociológico, integrado por aquella serie de factores -ideológicos, morales y económicos- que revelan y plasman las necesidades y el espíritu de la comunidad en cada momento histórico; y si bien es cierto que estos factores, aparte de que no pueden nunca autorizar al intérprete para modificar o inaplicar la norma y sí sólo suavizarla hasta donde permita el contenido del texto que entra en juego, requieren en su utilización mucho tino y prudencia, porque envuelve grave riesgo de arbitrariedad el entregar el criterio subjetivo del juez apreciaciones tan delicadas como la de la conciencia moral de un pueblo, se ha de reconocer que su aplicación se hace más segura y decisiva cuando se trata, no de estados de conciencia nebulosos o en vías de formación, sino de tendencias o ideas que han penetrado ya en el sistema de la legislación positiva o han obtenido su reconocimiento, de manera inequívoca, en la Ley suprema del Estado". 
+
+		
+
+			Considera el Tribunal Supremo, por tanto, que, si bien la interpretación lógica o gramatical no es suficiente para el desarrollo de la función interpretativa, la utilización de otros criterios -en el caso analizado en dicha Sentencia, el sociológico- no pueden nunca "...;autorizar al intérprete para modificar o inaplicar la norma...;", -Así, entre otras muchas Sentencias, en el Fundamento Jurídico Primero de la Sentencia del Tribunal Supremo 307/2005, de 28 de abril, se manifiesta que "de ningún modo cabe tergiversar" la ley mediante la realización de la labor interpretativa, como en el presente caso se considera que efectúan los TEAR de Andalucía, Cataluña y Aragón, al inaplicar el requisito establecido por el legislador para la aplicación del referido régimen transitorio, consistente en que "En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013...;", salvo que resultara de aplicación el artículo 68.1.2º antes referido, única excepción que el legislador prevé para el cumplimiento de dicho requisito. 
+
+		
+
+			Pero es que, además, ninguno de los tres Tribunales referidos realiza un análisis fundamentado de la aplicación de los criterios interpretativos establecidos en el artículo 3.1 del Código Civil que lleve a los respectivos Tribunales a concluir que la disposición transitoria decimoctava de la LIRPF tiene un significado y alcance distinto al expreso, claro y terminante que en ella se contiene. 
+
+		
+
+			Así, los TEAR no parecen discutir en ningún momento que el sentido propio de las palabras de la disposición transitoria decimoctava lleve a una interpretación diferente, tampoco analizan los fundamentos de una posible interpretación "en relación con el contexto, los antecedentes históricos y legislativos, y la realidad social del tiempo en que han de ser aplicadas" -criterios interpretativos del artículo 3.1 del Código Civil- que les lleve a considerar que el alcance de la norma es diferente según dichos criterios al que se deduce clara y expresamente de su redacción. 
+
+		
+
+			El TEAR de Cataluña se limita a manifestar que una interpretación finalista le lleva a considerar inaplicable el requisito de haberse practicado la deducción en años anteriores, pero en ningún momento justifica por qué considera que la finalidad de la norma es diferente a la que se deduce de su redacción, más allá de considerarse a juicio del Tribunal preferible que el legislador hubiera exigido para la aplicación de la deducción que el contribuyente hubiera tenido derecho a practicarla, y no que la hubiera practicado. 
+
+		
+
+			El TEAR de Aragón fundamenta su fallo en la resolución del TEAC nº 3277/2006, de 18 de diciembre de 2008, en la que se discute sobre las formalidades necesarias para optar por la aplicación de la exención por reinversión en vivienda habitual de la ganancia patrimonial obtenida por la transmisión de vivienda habitual. 
+
+		
+
+			Sin embargo, la cuestión actualmente debatida se considera esencialmente diferente. El TEAC, en la referida resolución, señala que el hecho de no tributar por el IRPF por la ganancia patrimonial generada en la transmisión de la vivienda habitual en la autoliquidación del ejercicio en la que se obtiene, y, a su vez, en la misma no reflejar referencia alguna a dicha transmisión, no revela que la intención del contribuyente sea la de no elegir la opción de acogerse a la exención, al disponer de dos años para materializar la reinversión; a lo que se une que el TEAC considera que no resultan claras en la normativa del IRPF las consecuencias de la no inclusión del reflejo de dicha opción en la declaración. 
+
+		
+
+			Así, en dicha resolución se manifiesta: 
+
+		
+
+			"Sobre las consecuencias del incumplimiento de estos requisitos formales tan solo encontramos lo dicho por el apartado 4 del artículo 39 del Reglamento del Impuesto, cuyo primer párrafo indica que "4.- El incumplimiento de cualquiera de las condiciones establecidas en este artículo determinará el sometimiento a gravamen de la parte de la ganancia patrimonial correspondiente". Esta consecuencia, la falta de efectos de la opción por la exención por reinversión, parece que podría referirse también a la falta de mención de la información pedida en la segunda frase del párrafo primero del apartado 2 del mismo artículo (la advertencia de la intención de reinvertir en los ejercicios siguientes), si consideramos la cumplimentación de este apartado del modelo de declaración como una de las "condiciones" de aplicación de la opción por la exención por reinversión. 
+
+		
+
+			No obstante, esta conclusión dista mucho de ser evidente, porque el siguiente párrafo del citado artículo 39.4 parece indicarnos que en realidad las "condiciones" a las que se refiere el precepto son las condiciones materiales de la reinversión futura y a incumplimientos posteriores a la declaración del ejercicio en el que se obtuvo la ganancia: "En tal caso, el contribuyente imputará la parte de la ganancia patrimonial no exenta al año de su obtención, practicando declaración liquidación complementaria, con inclusión de los intereses de demora, y se presentará en el plazo que medie entre la fecha en que se produzca el incumplimiento y la finalización del plazo reglamentario de declaración correspondiente al período impositivo en que se produzca dicho incumplimiento". 
+
+		
+
+			Todo lo contrario de la claridad con la que se establece como requisito necesario y en todo caso, en la disposición transitoria decimoctava de la LIRPF, la práctica anterior de la deducción por inversión en vivienda habitual para la aplicación del régimen transitorio. 
+
+		
+
+			Así, el TEAR de Andalucía reconoce que el precepto debatido es claro y que, en consecuencia, no cabe su interpretación. No obstante, se contradice a renglón seguido al considerar que debe efectuarse una interpretación basada en los criterios del artículo 3.1 del Código Civil y que dicha interpretación lleva a considerar un alcance de la norma diferente a su significado, que, como se ha dicho, considera claro. 
+
+		
+
+			Así, manifiesta: 
+
+		
+
+			"Qué duda cabe que el tenor literal de la referida disposición resulta claro, de tal forma que "in claris non fit interpretatio"; sin embargo, tampoco debe caber duda alguna de que el Código civil no restringe la interpretación de las normas al sentido propio de sus palabras, sino que éstas han de interpretarse «...en relación con el contexto, los antecedentes históricos y legislativos, y la realidad social del tiempo en que han de ser aplicadas, atendiendo fundamentalmente al espíritu y finalidad de aquellas» (artículo 3.1. C.c. aplicable al ámbito fiscal por el artículo 12.1 de la LGT).". 
+
+		
+
+			Sin embargo, el Tribunal, en su labor interpretativa, no analiza, como se ha dicho, la aplicación de los diferentes criterios interpretativos del artículo 3.1 del Código Civil al precepto debatido, sino que enuncia un criterio interpretativo genérico: el deber de interpretar las normas en su sentido más conforme con la Constitución. 
+
+		
+
+			Frente a dicha consideración, debe tenerse en cuenta que la interpretación de la norma en su sentido más conforme a la Constitución no puede llevar, como se ha referido al hacer mención a la jurisprudencia del Tribunal Supremo, a la inaplicación de un requisito establecido por el legislador como necesario en todo caso para aplicar un régimen transitorio, sin que el Tribunal justifique por qué dicho requisito sería inconstitucional, aparte de no ser competente para ello, o por qué la interpretación que hace el Tribunal es más acorde con la Constitución que la literalidad del precepto debatido, ya que, para justificar su juicio de constitucionalidad, el Tribunal utiliza argumentos subjetivos de razonabilidad, haciendo únicamente referencias genéricas al principio de seguridad jurídica y al de igualdad.
+
+		
+
+			Analizando cada uno de los argumentos expuestos, se manifiesta: 
+
+		
+
+			- En lo que respecta a la postura inicial de la Subdirección General de Información y Asistencia Tributaria de la Agencia Tributaria en cuanto a la aplicación del referido precepto, debe indicarse que la corrección posterior de su postura inicial queda justificada por el hecho de que dicha postura suponía inaplicar, parcialmente, la disposición transitoria decimoctava de la LIRPF, en cuanto esta exige para la aplicación del régimen transitorio el requisito establecido de forma expresa como necesario por el legislador, consistente en la práctica de la deducción con anterioridad, por lo que dicha corrección no puede considerarse justificación de que la postura inicial fuera la correcta. 
+
+		
+
+			- Por lo que respecta a la consideración realizada por el Tribunal de que la exigencia establecida en la disposición transitoria decimoctava de la LIRPF, de haber practicado la deducción en ejercicios anteriores, resultaría contraria al principio de seguridad jurídica consagrado en el artículo 9.3 de la Constitución Española, debe indicarse que no corresponde al TEAR de Andalucía determinar la constitucionalidad de un precepto legal, y que, en caso de valorar su posible inconstitucionalidad, no puede dicho Tribunal acordar su inaplicación mediante el establecimiento de un requisito diferente al establecido por el legislador. A lo que se une que no puede compartirse el argumento de que el establecimiento legal de dicho requisito supone que el contribuyente vea "...;truncadas sus legítimas y razonables expectativas...;", en contra del principio de seguridad jurídica, ya que, como indica el Tribunal, el legislador podría haber suprimido la deducción por inversión en vivienda habitual sin establecer un régimen transitorio, lo que considera el Tribunal que hubiera sido válido constitucionalmente, por lo que resulta contradictorio considerar que la supresión de la deducción por inversión en vivienda habitual sin régimen transitorio no suponga haber truncado expectativas del contribuyente en contra del principio de seguridad jurídica, y sí lo sea la opción más favorable al contribuyente consistente en el establecimiento de un régimen transitorio sometido a determinados requisitos, entre los cuales se encuentra el debatido. 
+
+		
+
+			- En cuanto a la consideración realizada por el TEAR de Andalucía, de que el criterio manifestado por la Agencia Tributaria y este Centro Directivo de la validez de la rectificación de la declaración ya presentada o su presentación transcurrido el plazo de declaración en periodo voluntario, reflejando la deducción, a efectos del cumplimiento de los requisitos establecidos en la disposición transitoria decimoctava de la LIRPF, supondría que la Agencia Tributaria y este Centro Directivo admitirían suavizar los requisitos establecidos por la disposición transitoria decimoctava de la LIRPF, debe indicarse que dicho criterio no contradice la literalidad de la disposición, en cuanto esta exige que se "...;hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013...;" lo cual puede realizarse, tanto mediante la declaración efectuada en el plazo de declaración en periodo voluntario, como mediante rectificación de la declaración en su día presentada, o mediante declaración relativa a dicho ejercicio anterior, realizada con posterioridad a la finalización del plazo establecido para la presentación de la declaración en periodo voluntario, siempre que dicha rectificación o declaración posterior sean válidas, por haber sido presentadas dentro de los plazos previstos legalmente para su admisibilidad. - El hecho de que el legislador, en relación con el régimen transitorio de la deducción por alquiler haya exigido "...;que el contribuyente hubiera tenido derecho a la deducción por alquiler de la vivienda habitual en relación con las cantidades satisfechas por el alquiler de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2015...;" (disposición transitoria decimoquinta de la LIRPF), y que en relación con el régimen transitorio de la deducción por inversión en vivienda habitual exija que este "...;hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013...;" (disposición transitoria decimoctava de la LIRPF) no hace más que confirmar el hecho de que el legislador ha querido tratar de forma diferente los requisitos de ambos regímenes transitorios, habida cuenta de las diferencias entre una y otra deducción, tomando en consideración que la deducción por inversión en vivienda habitual incluye, a efectos del cumplimiento de dicho requisito, supuestos tan dispares como la adquisición o la construcción, muy diferentes en cuanto a sus requisitos, acreditación y naturaleza o situación jurídica o económica en que se encuentra el contribuyente y su control, sin que el criterio del TEAR de que hubiera sido razonable el tratamiento igual de ambos requisitos, pueda justificar la inaplicación del establecido por el legislador para la deducción por inversión en vivienda y su sustitución por el establecido para la deducción por alquiler. En conclusión, por las razones antes expuestas, se considera que las Resoluciones de los TEAR de Andalucía, Cataluña y Aragón son contrarias a la disposición transitoria decimoctava de la LIRPF, sin que en ellas se fundamente su inaplicación en cuanto al requisito debatido exigido por dicho precepto. >
+
+		
+
+			QUINTO.- Mientras que en el trámite que a ella se le concedió para ello, la Directora del Departamento de Gestión Tributaria de la A.E.A.T. alegó que:
+
+		
+
+			< PRIMERA. - Planteamiento de la cuestión controvertida. El origen de la controversia se encontraría en la supresión, con efectos desde el 01/01/2013, de la deducción por inversión en vivienda habitual regulada en la Ley del Impuesto sobre la Renta de las Personas Físicas (en adelante, IRPF), artículos 68.1, 70 y 78, con la aprobación de la Ley 16/2012, de 27 de diciembre, la cual introdujo un régimen transitorio, regulado en la DT 18ª LIRPF, que regula la aplicación de la citada deducción por inversión en vivienda habitual con posterioridad a 31/12/2012 para determinados contribuyentes: Disposición transitoria decimoctava. Deducción por inversión en vivienda habitual. 1. Podrán aplicar la deducción por inversión en vivienda habitual en los términos previstos en el apartado 2 de esta disposición: a) Los contribuyentes que hubieran adquirido su vivienda habitual con anterioridad a 1 de enero de 2013 o satisfecho cantidades con anterioridad a dicha fecha para la construcción de la misma. b) Los contribuyentes que hubieran satisfecho cantidades con anterioridad a 1 de enero de 2013 por obras de rehabilitación o ampliación de la vivienda habitual, siempre que las citadas obras estén terminadas antes de 1 de enero de 2017. c) Los contribuyentes que hubieran satisfecho cantidades para la realización de obras e instalaciones de adecuación de la vivienda habitual de las personas con discapacidad con anterioridad a 1 de enero de 2013 siempre y cuando las citadas obras o instalaciones estén concluidas antes de 1 de enero de 2017. En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013, salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1. 2.ª de esta Ley en su redacción vigente a 31 de diciembre de 2012. 2. La deducción por inversión en vivienda habitual se aplicará conforme a lo dispuesto en los artículos 67.1, 68.1, 70.1, 77.1, y 78 de la Ley del Impuesto, en su 5 redacción en vigor a 31 de diciembre de 2012, sin perjuicio de los porcentajes de deducción que conforme a lo dispuesto en la Ley 22/2009 hayan sido aprobados por la Comunidad Autónoma. 3. Los contribuyentes que por aplicación de lo establecido en esta disposición ejerciten el derecho a la deducción estarán obligados, en todo caso, a presentar declaración por este Impuesto y el importe de la deducción así calculada minorará el importe de la suma de la cuota íntegra estatal y autonómica del Impuesto a los efectos previstos en el apartado 2 del artículo 69 de esta Ley (...;) En síntesis, la DT 18ª de la LIRPF establece los siguientes requisitos para poder aplicar el régimen transitorio establecido en la misma con posterioridad a 31/12/2012, siendo el segundo de ellos el que da origen a la existencia de criterios dispares en su interpretación: - Que la adquisición de la vivienda se produjera con anterioridad al 1 de enero de 2013. - Que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013, salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1.2." de esta Ley en su redacción vigente a 31 de diciembre de 2012 
+
+		
+
+			SEGUNDA. - Alegaciones Departamento de Gestión Tributaria.
+
+		
+
+			La aplicación del régimen transitorio previsto en la DT 18ª plantea dudas en relación con el requisito que establece que el contribuyente debe haber practicado la deducción por inversión en vivienda habitual en el ejercicio 2012 o anteriores (con anterioridad a 1 de enero de 2013). 6 En opinión de este Departamento de Gestión Tributaria es necesario efectuar una distinción entre los contribuyentes que están y los que no están obligados a presentar declaración: 
+
+		
+
+			* Contribuyentes no obligados a presentar declaración de IRPF en el ejercicio 2012 o en ejercicios anteriores: En este caso se podrá aplicar el régimen transitorio siempre que se cumplan todos los requisitos exigidos en la normativa vigente a 31/12/2012 para tener derecho a aplicar la deducción por adquisición de vivienda habitual, aunque no se hubiese presentado declaración de IRPF. 
+
+		
+
+			* Contribuyentes que, estando obligados a presentar declaración de IRPF, en el ejercicio 2012 o en ejercicios anteriores presentaron declaración, pero no consignaron la deducción por inversión en vivienda habitual. 
+
+		
+
+			En este caso se podrá aplicar el régimen transitorio siempre que se haya consignado en la declaración de IRPF presentada la deducción por inversión en vivienda habitual, incluso en aquellos casos en que su cuota íntegra fuera cero antes de la aplicación de la deducción. 
+
+		
+
+			Sin embargo, la posibilidad de presentar una solicitud de rectificación de la declaración de IRPF permanece inalterada: Artículo 120.3 de la Ley 58/2003, General Tributaria (en adelante, LGT): (...;)
+
+		
+
+			Es decir, si el contribuyente, una vez presentada una declaración de IRPF, advirtiera errores u omisiones en los datos declarados (por ejemplo, si olvidó deducir algún gasto fiscalmente admisible u omitió alguna deducción a la que tenía derecho) y, en consecuencia, se hubiera producido un perjuicio para sus intereses legítimos, podrá solicitar la rectificación de su autoliquidación, siempre que la Administración tributaria no haya practicado liquidación definitiva o liquidación provisional por el mismo motivo ni haya transcurrido el plazo de cuatro años a que se refiere el art. 66 de la citada LGT (plazo de prescripción). 
+
+		
+
+			CONCLUSIÓN 
+
+		
+
+			En consecuencia, se considera que el contribuyente podría solicitar una rectificación de su declaración de IRPF, justificando suficientemente el derecho a la deducción por vivienda habitual omitida en la autoliquidación y, en ese caso, resultaría aplicable el régimen transitorio previsto en la DT 18ª LIRPF, siempre que se cumplan todos los requisitos exigidos en la normativa vigente a 31/12/2012 para tener derecho a aplicar la deducción por adquisición de vivienda habitual. >
+
+	
+	
+[[ID:FUNDAMENTOS DE DERECHO]]
+
+		
+
+			FUNDAMENTOS DE DERECHO
+
+	
+	
+[[ID:FD_7114900]]
+
+		
+
+			PRIMERO: El art. 229 "Competencias de los órganos económico-administrativos" de la Ley 58/2003 en su apartado 1.d) dispone que:
+
+	
+	
+		
+
+			"1. El Tribunal Económico-Administrativo Central conocerá:
+
+		
+
+			d) Como consecuencia de su labor unificadora de criterio, de los recursos extraordinarios de alzada para unificación de criterio previstos en el artículo 242 de esta Ley. 
+
+		
+
+			Asimismo y, como consecuencia de esta labor unificadora, cuando existan resoluciones de los Tribunales económico-administrativos Regionales o Locales que apliquen criterios distintos a los contenidos en resoluciones de otros Tribunales económico-administrativos, o que revistan especial trascendencia, el Presidente o la Vocalía Coordinadora del Tribunal Económico-Administrativo Central, por iniciativa propia o a propuesta de cualquiera de los Vocales del Tribunal Económico-Administrativo Central o de los Presidentes de los Tribunales Económico-Administrativos Regionales o Locales, podrán promover la adopción de una resolución en unificación de criterio, por la Sala o por el Pleno del Tribunal Económico-Administrativo Central, que tendrá los mismos efectos que la resolución del recurso regulado en el artículo 242 de esta Ley. Con carácter previo a la resolución de unificación de criterio, se dará trámite de alegaciones por plazo de un mes, contado desde que se les comunique el acuerdo de promoción de la resolución en unificación de criterio, a los Directores Generales del Ministerio de Hacienda y Administraciones Públicas, a los Directores de Departamento de la Agencia Estatal de Administración Tributaria y a los órganos equivalentes o asimilados de las Comunidades Autónomas y de las Ciudades con Estatuto de Autonomía respecto a las materias de su competencia".
+
+		
+
+			A la vista de lo dispuesto en ese precepto, y del acuerdo de inicio del pertinente procedimiento adoptado por el Presidente de este Tribunal el 06/02/2023, esta Sala del Tribunal Económico-Administrativo Central es competente para adoptar la resolución en unificación de criterio que proceda en dicho procedimiento.
+
+		
+
+			SEGUNDO.- El precepto cuya aplicación ha dado lugar a los criterios divergentes dichos es el apartado 1 de la D.T. Decimoctava "Deducción por inversión en vivienda habitual" de la Ley 35/2006, de 28 de noviembre, del I.R.P.F., en la redacción que a la misma le dio la Ley 16/2012, de 27 de diciembre, por la que se adoptan diversas medidas tributarias dirigidas a la consolidación de las finanzas públicas y al impulso de la actividad económica, y que dispone:
+
+		
+
+			"1. Podrán aplicar la deducción por inversión en vivienda habitual en los términos previstos en el apartado 2 de esta disposición:
+
+		
+
+			a) Los contribuyentes que hubieran adquirido su vivienda habitual con anterioridad a 1 de enero de 2013 o satisfecho cantidades con anterioridad a dicha fecha para la construcción de la misma.
+
+		
+
+			b) Los contribuyentes que hubieran satisfecho cantidades con anterioridad a 1 de enero de 2013 por obras de rehabilitación o ampliación de la vivienda habitual, siempre que las citadas obras estén terminadas antes de 1 de enero de 2017.
+
+		
+
+			c) Los contribuyentes que hubieran satisfecho cantidades para la realización de obras e instalaciones de adecuación de la vivienda habitual de las personas con discapacidad con anterioridad a 1 de enero de 2013 siempre y cuando las citadas obras o instalaciones estén concluidas antes de 1 de enero de 2017.
+
+		
+
+			En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013, salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1.2.ª de esta Ley en su redacción vigente a 31 de diciembre de 2012.
+
+		
+
+			Y más concretamente el último párrafo de ese apartado 1, y, con una concreción todavía aún mayor, lo que recoge ese último párrafo en sus dos primeros incisos:
+
+		
+
+			"En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013".
+
+		
+
+			Previamente al análisis de ese precepto, párrafo e incisos, vamos a situar esa norma en su contexto y a recordar algunas de las notas que caracterizaban a la figura tributaria a la que alcanza, destacando determinados elementos de la misma que van a ser ciertamente relevantes de cara a lo que aquí hemos de resolver.
+
+		
+
+			TERCERO.- La deducción por inversión en vivienda habitual era un beneficio fiscal de uso generalizado, que comenzó con la Ley 44/1978, de 8 de septiembre, del Impuesto sobre la Renta de las Personas Físicas, que ya la contemplaba en su art. veintinueve.f) y que terminó cuando de la actual Ley del Impuesto -la Ley 35/2006- la suprimió la Ley 16/2012, de 27 de diciembre, que fue la que introdujo la redacción de la D.T. decimoctava cuya interpretación y aplicación aquí nos van a ocupar; D.T. decimoctava que prorrogó la vigencia de la deducción para los que ya tuvieran de antes derecho a la misma, gracias a lo cual todavía numerosos contribuyentes siguen disfrutando de esa deducción.
+
+		
+
+			Según lo dicho, la deducción por inversión en vivienda habitual estuvo vigente en España con plena vigencia más de 34 años, y lleva ya más de otros once con una vigencia prorrogada y a extinguir.
+
+		
+
+			Una deducción regulada sucesivamente: 
+
+		
+
+			.- En el ya dicho art. veintinueve.f) de la Ley 44/1978.
+
+		
+
+			.- En el art. 78.cuatro.b) de la Ley 18/1991, de 6 de junio, del Impuesto sobre la Renta de las Personas Físicas.
+
+		
+
+			.- En el art. 55.1 de la Ley 40/1998, de 9 de diciembre, del Impuesto sobre la Renta de las Personas Físicas y otras Normas Tributarias.
+
+		
+
+			.- En el art. 69.1 del T.R. de la Ley del Impuesto sobre la Renta de las Personas Físicas (R.D. Leg. 3/2004, de 5 de marzo).
+
+		
+
+			.- Y, hasta que desapareció, en el art. 68.1 de la actual ley del I.R.P.F., la Ley 35/2006.
+
+		
+
+			.- Y que ha quedado con una vigencia prorrogada en la D.T. Decimoctava de la Ley 35/2006, precepto que es el que aquí nos va a ocupar.
+
+		
+
+			Una deducción que, aunque con ciertas variaciones, en lo esencial ha funcionado siempre de la misma manera: al que había invertido en la adquisición de su vivienda habitual, el Estado le permitía deducirse de lo que tuviera que contribuir por el I.R.P.F. un porcentaje de lo que hubiera satisfecho en el año respectivo en razón de tal adquisición, aunque siempre con un determinado límite: bien absoluto, bien porcentual sobre el total de la renta del período. En suma y a efectos prácticos, si podía aplicarse la deducción por existir cuota para ello, el Estado se hacía cargo de pagar una parte de lo que hubiera tenido que satisfacer en el año o período de que se tratara para la adquisición de su vivienda habitual.
+
+		
+
+			La deducción también resultaba de aplicación cuando, sin todavía haber adquirido la vivienda, se depositaban cantidades en cuentas bancarias, cuyos saldos se terminarían destinando a la adquisición de la misma.
+
+		
+
+			La deducción por inversión en vivienda habitual ha sido siempre un incentivo fiscal "de aplicación voluntaria", pues los que reunían los requisitos para aplicársela siempre han podido hacerlo, o no, a su libre albedrío; y de ahí el inequívoco "podrán" omnipresente en todas las normas que la han regulado. 
+
+		
+
+			En los respectivos preceptos que han dedicado a regularla, a la hora de decir en qué consistía, para apelar a disfrutar o a hacer uso de la misma, tanto la Ley 40/1998, como el T.R. del R.D. Leg. 3/2004 y la Ley 35/2006 han hablado siempre de "aplicar" la deducción:
+
+		
+
+			El art. 55.1.1º de la Ley 40/1998:
+
+		
+
+			"1.º Los contribuyentes podrán aplicar una deducción por inversión en su vivienda habitual con arreglo a ..."¿
+
+		
+
+			El art. 69.1.1º del R.D. Leg. 3/2004:
+
+		
+
+			"1.º Los contribuyentes podrán aplicar una deducción por inversión en su vivienda habitual con arreglo a ...".
+
+		
+
+			El art. 68.1.1º de la Ley 350/2006:
+
+		
+
+			"1. Deducción por inversión en vivienda habitual.
+
+		
+
+			1.º Los contribuyentes podrán deducirse el 7,5 por ciento de las cantidades satisfechas en el período de que se trate por la adquisición o rehabilitación de la vivienda ...
+
+		
+
+			.../... 
+
+		
+
+			También podrán aplicar esta deducción por las cantidades que se depositen en entidades de crédito, en cuentas que cumplan los requisitos de formalización y disposición que se establezcan reglamentariamente, y siempre que se destinen a la primera adquisición o rehabilitación de la vivienda habitual, ..."
+
+		
+
+			Una deducción que, según todos esos preceptos y también en sus predecesores de las Leyes 44/1978 y 18/1991, se tenía que aplicar siempre "año a año" o "período a período", es decir que en cada año podía aplicarse lo que correspondiera en función exclusivamente de lo satisfecho en ese año o período, de suerte que si en un determinado período el contribuyente concernido no tenía rentas o las rentas que tenía no generaban cuota suficiente para poder aplicar la deducción en todo o en parte, la deducción que podría haberse aplicado en ese año o período pero no se había aplicado efectivamente se perdía, pues no podía trasladarse a otro año o período.
+
+		
+
+			Pues la aplicación de deducción exigía inexcusablemente la existencia de una cuota íntegra en la que poder aplicarla, ya fuera toda la que pudiera ser aplicada o sólo una parte de la misma; pues en todo caso, para poder aplicar la deducción, lo inexcusable era la existencia de cuota, y sin cuota en que poder aplicarla nunca podía decirse que la deducción se hubiera aplicado.
+
+		
+
+			Existencia de cuota que requería la existencia de rentas, pero la existencia de rentas era una condición necesaria pero no suficiente, pues si las rentas no llegaban a deparar cuota íntegra por la existencia de los mínimos no sometidos a tributación, ya no cabría la aplicar la deducción. Y existencia de cuota a estos efectos que era ajena a la obligación de tener que declarar (de presentar declaración) o no, pues había rentas como las del capital inmobiliario que exigían presentar declaración en todo caso, incluso aunque las mismas fuesen de un importe escaso, de suerte que no devengasen cuota alguna a ingresar.
+
+		
+
+			Y una deducción que para cada contribuyente era "única para toda la vida", en el sentido de que, el que cambiaba de vivienda habiendo disfrutado de la deducción en una o varias viviendas anteriores, la deducción sólo podía aplicarla cuando lo que pagaba excediera de las cantidades que hubieran sido antes bases de la deducción, y una deducción no aplicable si lo que se invertía era un importe que habiéndose obtenido como ganancia por la venta de una vivienda anterior hubiese quedado exento por reinversión; extremos que ya recogió con toda claridad la Ley 40/1998, de 9 de diciembre, en el número 2º de su art. 55.1:
+
+		
+
+			"2.º Cuando se adquiera una vivienda habitual habiendo disfrutado de la deducción por adquisición de otras viviendas habituales anteriores, no se podrá practicar deducción por la adquisición o rehabilitación de la nueva en tanto las cantidades invertidas en la misma no superen las invertidas en las anteriores, en la medida en que hubiesen sido objeto de deducción.
+
+		
+
+			Cuando la enajenación de una vivienda habitual hubiera generado una ganancia patrimonial exenta por reinversión, la base de deducción por la adquisición o rehabilitación de la nueva se minorará en el importe de la ganancia patrimonial a la que se aplique la exención por reinversión. En este caso, no se podrá practicar deducción por la adquisición de la nueva mientras las cantidades invertidas en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducción, como la ganancia patrimonial exenta por reinversión." 
+
+		
+
+			Las normas posteriores atinentes a la cuestión, los arts. 69.2 del T.R. del R.D. Leg. 3/2004 y 68.2 de la Ley 35/2006, vinieron luego a disponer literal y exactamente lo mismo que ese número 2º del art. 55.1 de la Ley 40/1998 trascrito.
+
+		
+
+			Normas, y ya lo hemos resaltado al transcribir ese art. 55.1, que, como es de ver, para referirse a disfrutar o a hacer uso de la deducción también han hablado de "practicar".
+
+		
+
+			Una última cuestión, mientras estuvo plenamente vigente la deducción (hasta el 2012 inclusivo) el hecho de hacer uso efectivo de la misma en un año o período, el "aplicar" o "practicar" la misma de manera efectiva en un período, era un hecho que determinaba por sí solo la obligación de tener que presentar la declaración del I.R.P.F. de tal período, como así se desprende de lo que entonces disponían los arts. 96.4 de la Ley 35/2006 y 61.1 del Reglamento del Impuesto (R.D. 439/2007):
+
+		
+
+			"96.4.- Estarán obligados a declarar en todo caso los contribuyentes que tengan derecho a deducción por inversión en vivienda, por cuenta ahorro-empresa, por doble imposición internacional o que realicen aportaciones a patrimonios protegidos de las personas con discapacidad, planes de pensiones, planes de previsión asegurados o mutualidades de previsión social, planes de previsión social empresarial y seguros de dependencia que reduzcan la base imponible, en las condiciones que se establezcan reglamentariamente."
+
+		
+
+			"61.1.- Los contribuyentes estarán obligados a presentar y suscribir declaración por este Impuesto en los términos previstos en el artículo 96 de la Ley del Impuesto. A efectos de lo dispuesto en el apartado 4 de dicho artículo, estarán obligados a declarar en todo caso los contribuyentes que tengan derecho a deducción por inversión en vivienda, por cuenta ahorro-empresa, por doble imposición internacional o que realicen aportaciones a patrimonios protegidos de las personas con discapacidad, planes de pensiones, planes de previsión asegurados, planes de previsión social empresarial, seguros de dependencia o mutualidades de previsión social que reduzcan la base imponible, cuando ejerciten tal derecho." 
+
+		
+
+			"Cuando ejerciten tal derecho", es decir que tal autónoma obligación de declarar sólo existía cuando se ejercitase efectivamente el derecho a disfrutar de la deducción, es decir, cuando la deducción se aplicara o practicara de manera efectiva.
+
+		
+
+			Una obligación si se quiere redundante, pues sin declaración mal podría aplicarse la deducción, pero una obligación sin duda enderezada a que, en caso de disfrute efectivo de la deducción, la Administración tuviera conocimiento de todos los extremos que debían declararse para hacerlo: ubicación de tal vivienda habitual, cantidad invertida para la misma en el período, e importes de las dos partes -estatal y autonómica- de la deducción.
+
+		
+
+			CUARTO.- La deducción se suprimió en 2012, supresión que llevó a cabo la  la Ley 16/2012, de 27 de diciembre, por la que se adoptan diversas medidas tributarias dirigidas a la consolidación de las finanzas públicas y al impulso de la actividad económica; ley cuyo preámbulo comenzaba como sigue:
+
+		
+
+			"PREÁMBULO
+
+		
+
+			I
+
+		
+
+			En los últimos meses se vienen introduciendo diversas medidas en el ámbito tributario con el fin de consolidar las finanzas públicas y, de este modo, corregir lo antes posible los principales desequilibrios que afectan a la economía española, principalmente la reducción del déficit público, todo ello con el fin último de contribuir a la recuperación de aquella, que se han incorporado al ordenamiento, básicamente, mediante el Real Decreto-ley 20/2011, de 30 de diciembre, de medidas urgentes en materia presupuestaria, tributaria y financiera para la corrección del déficit público, el Real Decreto-ley 12/2012, de 30 de marzo, por el que se introducen diversas medidas tributarias y administrativas dirigidas a la reducción del déficit público, y el Real Decreto-ley 20/2012, de 13 de julio, de medidas para garantizar la estabilidad presupuestaria y de fomento de la competitividad.
+
+		
+
+			Sin embargo, la evolución de los ingresos públicos sigue requiriendo la adopción de medidas adicionales que, reforzando estos, y complementando las anteriores, permitan fijar las bases de una recuperación económica estable y duradera.
+
+		
+
+			II
+
+		
+
+			En el ámbito del Impuesto sobre la Renta de las Personas Físicas, con el objetivo de contribuir a la consolidación fiscal, se adoptan varias medidas.
+
+		
+
+			En primer lugar, se suprime la deducción por inversión en vivienda habitual a partir de 1 de enero de 2013.
+
+		
+
+			No obstante, se establece un régimen transitorio por el que podrán continuar practicando la deducción por inversión en vivienda en ejercicios futuros todos aquellos contribuyentes que hubieran adquirido antes de 31 de diciembre de 2012 su vivienda habitual o satisfecho cantidades antes de dicha fecha para la construcción, ampliación, rehabilitación o realización de obras por razones de discapacidad en su vivienda habitual.
+
+		
+
+			En segundo lugar, ..."
+
+		
+
+			Por tanto, la deducción se eliminó de futuro, para los que adquiriesen la vivienda a partir del 01/01/2013, mientras que con un régimen transitorio se mantuvo para los que la hubieran adquirido antes de esa fecha, lo que se hizo extensivo a los que hubieran satisfecho cantidades antes de dicha fecha para la construcción, ampliación, rehabilitación o realización de obras por razones de discapacidad en su vivienda habitual, que también podrían seguir disfrutando de la deducción..
+
+		
+
+			Régimen transitorio que se implementó dando una nueva redacción a la D.T. decimoctava de la Ley del Impuesto, que antes había regulado la "Deducción por inversión en vivienda habitual adquirida con anterioridad a 1 de enero de 2011" y a la que el R.D. Ley 20/2011, de 30 de diciembre,  de medidas urgentes en materia presupuestaria, tributaria y financiera para la corrección del déficit público había dejado vacía, al suprimirla.
+
+		
+
+			D.T. decimoctava de la que ya se ha trascrito su apartado 1 en el Fundamento de Derecho segundo, y con la que se pretendía lo que se había ya anunciado en el Preámbulo, de permitir que pudieran disfrutar de la deducción todos aquellos contribuyentes que hubieran adquirido su vivienda habitual o satisfecho cantidades para  la construcción, ampliación, rehabilitación o realización de obras por razones de discapacidad en su vivienda habitual antes del 01/01/2013.
+
+		
+
+			Una cuestión si se quiere anecdótica. Como es de ver, hay una manifiesta imprecisión entre lo que se recoge en el Preámbulo de la Ley 16/2012, y lo que dispone la repetida D.T. decimoctava, pues mientras que aquél sitúa el corte en viviendas adquiridas antes del 31/12/2012, la D.T. lo ubica en viviendas adquiridas antes del 01/01/2013; que es sólo un día de diferencia, pero que no es lo mismo; no obstante, este Tribunal entiende que el corte debe entenderse ubicado en la fecha que señala la D.T., porque según el art. 1 de la Ley 16/2012, las modificaciones que dicha Ley incorporó a la Ley 35/206 lo fueron "Con efectos desde 1 de enero de 2013 ...". 
+
+		
+
+			La Ley 16/2012, que eliminó la deducción e introdujo el régimen transitorio, también eliminó la obligación de tener que presentar la declaración del I.R.P.F. de un determinado año o período por el solo hecho de haber "aplicado" o "practicado" efectivamente la deducción en tal período (arts. 96.4 de la Ley y 61.1 del Reglamento del Impuesto), en los términos recogidos al final de Fundamento de Derecho tercero.
+
+		
+
+			Para poder seguir disfrutando de la deducción a partir del 01/01/2013, esa D.T. decimoctava exige el cumplimiento de dos condiciones: (I) que el contribuyente concernido hubiera adquirido su vivienda habitual antes del 01/01/2013, y (II):
+
+		
+
+			"En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013, salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1.2.ª de esta Ley en su redacción vigente a 31 de diciembre de 2012."
+
+		
+
+			Segunda condición, cuyo alcance y efectos "en parte", son el objeto del criterio que aquí este Tribunal Central va a unificar; y hemos dicho "en parte" por lo que explicamos en el Fundamento de Derecho siguiente.
+
+		
+
+			QUINTO.- Segunda condición cuyo cumplimiento, como a la vista está, se excepciona para los casos que se regulan en el inciso final:
+
+		
+
+			"salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1.2.ª de esta Ley en su redacción vigente a 31 de diciembre de 2012."
+
+		
+
+			Concretísima cuestión, ésa, sobre la que ha fijado doctrina el T.S. en una reciente sentencia de 04/12/2023 dictada en el Rec. de casación núm. 6555/2022; en la que ha dejado sentado lo siguiente:
+
+		
+
+			< 4. La interpretación que realiza la Sala de instancia es compartida por este Tribunal. 
+
+		
+
+			El examen del régimen de la deducción por inversión en vivienda habitual debe ceñirse a los requisitos específicos establecidos al efecto por la citada D.T. 18ª, que remite a la excepción prevista en el art. 68.1.2ª en su redacción vigente a 31 de diciembre de 2012. 
+
+		
+
+			Hemos dicho con reiteración que la interpretación literal, fundada en lo que quieren decir las palabras en sí mismas, es necesario punto de partida en toda labor de exégesis ( STS de 21 de diciembre de 2021, rec. cas. núm. 4013/2020), sin perjuicio, obvio es, de que ningún precepto establezca una regla limitativa que excluya la posibilidad de interpretar un precepto conforme a su sentido y finalidad, según imponga la realidad social o atendiendo a criterios lógicos, históricos o sistemáticos. 
+
+		
+
+			En el caso examinado una interpretación literal y finalista de las disposiciones concernidas resultará acorde con el alcance de los requisitos exigidos para disfrutar de la deducción. 
+
+		
+
+			En efecto, el último párrafo de la DT 18ª.1 LIRPF es claro al exigir, para que se pueda aplicar la deducción por adquisición de vivienda habitual, a pesar de su supresión con carácter general desde 2013, no solo que la vivienda se haya adquirido antes de ese año -" Los contribuyentes que hubieran adquirido su vivienda habitual con anterioridad a 1 de enero de 2013.."-, sino también que el contribuyente se haya deducido las cantidades satisfechas por "dicha vivienda", en un periodo impositivo devengado antes del 1 de enero de 2013 -" un periodo impositivo devengado con anterioridad a 1 de enero de 2013"-, salvo que no hubiera podido hacerlo en base al art. 68.1.2ª LIRPF. 
+
+		
+
+			Se advierte, pues, que los términos de la disposición examinada son concluyentes al exigir que "en todo caso", será "necesario" que el contribuyente "hubiera practicado" la deducción de las cantidades satisfechas para la adquisición de "dicha vivienda" en un período impositivo devengado con anterioridad a 1 de enero de 2013, "salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1. 2.ª". 
+
+		
+
+			Esto es, no basta con que el contribuyente haya adquirido su vivienda habitual antes del 1 de enero de 2013, sino que es, además, necesario que haya practicado la deducción por la adquisición de dicha vivienda -por lo que no se tienen en cuenta las deducciones practicadas relativas a la adquisición de otra vivienda habitual anterior- en periodos impositivos devengados con anterioridad a dicha fecha -1 de enero de 2013-. 
+
+		
+
+			Ahora bien, la disposición transitoria examinada contempla una excepción a la exigencia de la deducción en periodos impositivos devengados con anterioridad al 1 de enero de 2013, que es la recogida en el artículo 68.1. 2.ª LIRPF, en la redacción vigente a 31 de diciembre de 2012, relativa al supuesto de la adquisición de una vivienda habitual cuando ya se haya disfrutado de la deducción correspondiente por la adquisición precedente de otra vivienda habitual, precepto que dispone que no cabe practicar la deducción por la adquisición de la nueva vivienda hasta el momento en que las cantidades invertidas en la misma superen las invertidas en la adquisición de las precedentes que hayan sido objeto de deducción. 
+
+		
+
+			5. Una interpretación teleológica de la disposición examinada respalda nuestras consideraciones, pues la finalidad de la DT 18ª es atender la situación de los contribuyentes que, antes de la supresión de la deducción por adquisición de vivienda habitual, habían adquirido dicha vivienda y venían deduciéndose las cantidades invertidas -salvo la excepción prevista-, a fin de no verse privados bruscamente de una deducción a la que tenían derecho. 
+
+		
+
+			En este sentido, una interpretación adecuada y orientada a su finalidad nos conduce a considerar que se trata de un derecho que se mantiene transitoriamente, una vez suprimido con carácter general, en favor de los contribuyentes que hayan adquirido su vivienda habitual antes del 31 de diciembre de 2012 y que se hayan deducido de forma efectiva las cantidades satisfechas por dicha vivienda en un período impositivo devengado con anterioridad al 1 de enero de 2013. 
+
+		
+
+			La única excepción, como se ha expuesto, para extender la deducción a contribuyentes que no la venían aplicando con anterioridad a dicha fecha -1 de enero de 2013- es la del art. 68.1.2ª LIRPF -" 2.º Cuando se adquiera una vivienda habitual habiendo disfrutado de la deducción por adquisición de otras viviendas habituales anteriores, no se podrá practicar deducción por la adquisición o rehabilitación de la nueva en tanto las cantidades invertidas en la misma no superen las invertidas en las anteriores, en la medida en que hubiesen sido objeto de deducción"-, cuya apreciación dependerá de las circunstancias concretas del caso y de la valoración que de éstas haga la Sala de instancia. 
+
+		
+
+			En este punto no puede compartirse la alegación del Abogado del Estado, atinente a que el hecho de que la norma contemple esta excepción no permite incluir en ella a contribuyentes que pensaron o que erróneamente creyeron que no podían aplicarse la deducción a la vista de este precepto. 
+
+		
+
+			Frente a ello, considera este Tribunal que la apreciación de la excepción dependerá de las circunstancias concretas del caso, correspondiendo a la Sala de instancia valorar la interpretación del contribuyente sobre el cálculo de la inversión efectuada en la anterior vivienda habitual y su incidencia en la excepción al requisito del ejercicio efectivo del derecho a la deducción en los ejercicios anteriores a 2013, a fin de determinar si la interpretación realizada resulta razonable atendiendo a las circunstancias concurrentes.
+
+		
+
+			En suma, la fórmula legal contenida en la D.T. 18ª y el artículo 68.1.2ª LIRPF, permite, sin necesidad de un esfuerzo dialéctico excesivo -que conduciría, además, a la misma conclusión-, alcanzar la idea, que debe servir de fundamento a nuestra doctrina, de que para poder aplicar la deducción por inversión en vivienda habitual a partir del año 2013 se exige que el contribuyente se haya deducido, de forma efectiva, cantidades por ese concepto con anterioridad a dicho ejercicio. No obstante, cabrá aplicar dicha deducción en el supuesto de que la falta de aplicación derive de sobrepasar la inversión realizada en otra vivienda habitual, correspondiendo a la Sala de instancia valorar la interpretación del contribuyente sobre el cálculo de la inversión efectuada en la anterior vivienda habitual y su incidencia en la excepción al requisito del ejercicio efectivo del derecho a la deducción en los ejercicios anteriores a 2013, a fin de determinar si la interpretación realizada resulta razonable atendiendo a las circunstancias concurrentes. 
+
+		
+
+			CUARTO. Respuesta a la cuestión interpretativa planteada en el auto de admisión. 
+
+		
+
+			Con las consideraciones efectuadas en los fundamentos anteriores estamos en disposición de dar respuesta a la cuestión que se nos plantea en el auto de admisión del recurso. 
+
+		
+
+			La respuesta a dicha cuestión, conforme a lo que hemos razonado, debe ser que para poder aplicar la deducción por inversión en vivienda habitual a partir del año 2013 se exige que el contribuyente haya adquirido su vivienda habitual antes del 31 de diciembre de 2012 y que se haya deducido, de forma efectiva, cantidades por ese concepto con anterioridad a dicho ejercicio. No obstante, cabrá aplicar dicha deducción en el supuesto de que la falta de aplicación derive de sobrepasar la inversión realizada en otra vivienda habitual, correspondiendo a la Sala de instancia valorar la interpretación del contribuyente sobre el cálculo de la inversión efectuada en la anterior vivienda habitual y su incidencia en la excepción al requisito del ejercicio efectivo del derecho a la deducción en los ejercicios anteriores a 2013, a fin de determinar si la interpretación realizada resulta razonable atendiendo a las circunstancias concurrentes. 
+
+		
+
+			QUINTO. Resolución de las pretensiones deducidas en el proceso. 
+
+		
+
+			A la luz de los anteriores criterios interpretativos, no procede acoger las pretensiones articuladas por la parte recurrente en este recurso de casación, debiendo confirmarse la sentencia de instancia, cuyos razonamientos se completan con los realizados en esta resolución. 
+
+		
+
+			En efecto, complementando lo expuesto en la sentencia de instancia, se desprende que las alegaciones y pruebas aducidas comportan que no hubo una voluntad del contribuyente de no aplicarse la deducción, tal y como expuso la Sala de Cantabria, sino una interpretación, que si bien pudiera tildarse de "errónea" o no acertada, en tanto entendió que la inversión del artículo 68.1.2ª LIRPF debía entenderse como inversión efectiva, esto es, amortización del capital del préstamo concedido sin tener en cuenta los intereses, sin embargo debe considerarse razonable para colegir que le resultaba de aplicación la excepción recogida en el referido precepto en cuanto a los límites de la inversión. 
+
+		
+
+			Conforme a lo expuesto, y en la medida en que la sentencia impugnada en casación reconoce al hoy recurrido, Sr. Jose Francisco, el derecho a aplicar en su IRPF del ejercicio 2015 la deducción por inversión en vivienda habitual, toda vez que había adquirido la vivienda antes del 1 de enero de 2013, y si bien no se había deducido cantidades por ella antes de esa fecha, era por haber interpretado razonablemente que le era aplicable el límite del art. 68.1.2ª LIRPF, debe concluirse que la interpretación de la Sala de instancia resulta conforme a la D.T. 18ª y al artículo 68.1.2ª LIRPF y, por tanto, resulta conforme a Derecho. >
+
+		
+
+			Y con ello el T.S. ha dado respuesta a esa concreta cuestión relativa al alcance que debe darse a la mención de "salvo que hubiera resultado de aplicación lo dispuesto en el artículo 68.1.2.ª de esta Ley en su redacción vigente a 31 de diciembre de 2012".
+
+		
+
+			Sin embargo, a juicio de este Tribunal Central lo que el T.S. no ha abordado en esa sentencia, es lo que alcanza a lo dispuesto en los dos primeros incisos de esa D.T. decimoctava, que es lo que concretamente aquí nos ocupa.
+
+		
+
+			SEXTO.- Dos primeros incisos de esa D.T. Decimoctava que disponen:
+
+		
+
+			"En todo caso, resultará necesario que el contribuyente hubiera practicado la deducción por inversión en vivienda habitual en relación con las cantidades satisfechas para la adquisición o construcción de dicha vivienda en un período impositivo devengado con anterioridad a 1 de enero de 2013".
+
+		
+
+			Dos incisos que conforman un precepto con el que distintos T.E.A.R.'s han llegado a conclusiones distintas en los términos recogidos en los Antecedentes de Hecho primero y segundo; y distintas son también las conclusiones a las que llegan la Directora General de Tributos y la Directora de Gestión Tributaria de la A.E.A.T.  
+
+		
+
+			Pues bien, para determinar cuál debe prevalecer de entre esas distintas soluciones, el problema que hemos de resolver se constriñe a determinar cómo ha de interpretarse el precepto que nos ocupa, formado por los dos repetidos primeros incisos de la D.T. Decimoctava de la Ley 35/2006.
+
+		
+
+			De cara a lo cual, comenzamos por recordar que el art. 12.1 de la Ley 58/2003 dispone que:
+
+		
+
+			"1. Las normas tributarias se interpretarán con arreglo a lo dispuesto en el apartado 1 del artículo 3 del Código Civil."
+
+		
+
+			Art. 3.1 del Código civil que, a su vez, señala que:
+
+		
+
+			"1. Las normas se interpretarán según el sentido propio de sus palabras, en relación con el contexto, los antecedentes históricos y legislativos, y la realidad social del tiempo en que han de ser aplicadas, atendiendo fundamentalmente al espíritu y finalidad de aquellas." 
+
+		
+
+			A la vista de lo cual, y como es de sobra sabido, interpretar una determinada norma tributaria no supone nada más, ni nada menos, que realizar una interpretación jurídica de tal norma; interpretación que ha de hacerse con esos cánones hermenéuticos que recoge ese art. 3.1 del Código civil; el primero de los cuales, es el "literal" -"el sentido propio de sus palabras"-, primero en aplicarse, habiendo casos en que puede que tal cosa llegue a ser suficiente, pues si la literalidad de la norma es clara, es posible que no haya que ir más allá para interpretar la misma de manera adecuada y suficiente; aunque el canon hermenéutico señalado como fundamental, pues "fundamentalmente" dice ese art. 3.1 del Código civil, es el "teleológico" o "finalista", que es el que apela "al espíritu y finalidad" de la norma de se trate.
+
+		
+
+			Lo que lleva a este Tribunal a recordar lo que dejamos dicho en otra resolución en unificación de criterio prevista en el art. 229.1.d) de la Ley 58/2003, y también relativa a la aplicación de la deducción por inversión en la vivienda habitual, la R.G. 0629/2021 de 23/11/2021, sobre la necesaria consideración en esta materia de la jurisprudencia del Tribunal Supremo y, en particular, de la STS de 17 de febrero de 2020 (rec. Casación 5609/2017):
+
+		
+
+			<< - Esta conclusión es acorde con el enfoque seguido por el Tribunal Supremo a la hora de resolver las dudas que puedan plantear las normas reguladoras de la deducción por inversión en vivienda habitual, que habrá de hacerse en todo caso desde la interpretación más favorable a su reconocimiento. Así, en efecto, la reciente sentencia del Tribunal Supremo de 17 de febrero de 2020 (rec. cas. 5609/2017) dispone (el énfasis es nuestro): 
+
+		
+
+			"1.- La deducción por inversión en vivienda habitual regulada por el artículo 68.1 de la Ley 35/2006, de 28 de noviembre, sobre la Renta de las Personas Físicas -LIRPF- 2006 (en la versión vigente durante los hechos litigiosos), es un mecanismo por el cual el Estado, al amparo de lo establecido en el artículo 47 de la Constitución, cumple con la imposición que este último precepto hace recaer sobre los poderes públicos de que promuevan lo necesario para hacer efectivo del derecho de todos los españoles a disfrutar de una vivienda digna y adecuada. 
+
+		
+
+			2.- Dicho mecanismo, por esa finalidad a la que iba dirigido, encarna uno de los principios rectores de la política social y económica que se enuncian en el Capítulo III del Título I de la Carta Magna; y le es de aplicación el artículo 53.3 del mismo texto constitucional, en lo que dispone sobre que el reconocimiento, el respeto y la protección de aquellos principios informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos.
+
+		
+
+			Lo cual determina que las dudas que puedan surgir sobre las normas reguladoras de esta deducción tributaria de ayuda a la vivienda hayan de ser resueltas desde las pautas hermenéuticas y aplicativas que expresamente señala el antes citado artículo 53.3 CE (RCL 1978, 2836); esto es, en el sentido más favorable a su reconocimiento y protección. 
+
+		
+
+			3.- Es coherente con lo anterior la Exposición de Motivos de la Ley 35/2006, que alude expresamente a que son razones de cohesión social las que determinan que se dé continuidad al apoyo fiscal a la adquisición de la vivienda habitual. 
+
+		
+
+			4.- El texto de ese antes mencionado artículo 68.1 LIRPF 2006 que resulta aquí aplicable manifiesta una clara voluntad de ampliar, en la mayor manera posible, las modalidades de inversiones destinadas a vivienda habitual que deben considerarse encuadrables en el apoyo fiscal de que se viene hablando; lo cual demuestra la apuesta del legislador por asumir, como una importante meta, el favorecer la eficacia del principio rector de política social que comporta el acceso del derecho a la vivienda. Así se constata si se tiene en cuenta que la deducción está prevista, tanto respecto de las cantidades ya satisfechas para la adquisición o rehabilitación de la vivienda habitual, como respecto de las cantidades depositadas en entidades de crédito que se destinen a la adquisición o rehabilitación de la vivienda habitual; y si se pondera, así mismo, que también se permite la deducción en los supuestos de adquisición de una posterior vivienda habiendo disfrutado de la deducción en viviendas habituales anteriores, si bien impidiendo su práctica mientras las cantidades invertidas en la posterior vivienda no superen las invertidas en las anteriores que hubiesen sido objeto de deducción ...">>
+
+		
+
+			Debiéndose tener asimismo en cuenta las consideraciones generales realizadas por el Tribunal Supremo en la citada sentencia de 4 de diciembre de 2023, rec. Casación 6555-2022.
+
+		
+
+			Pues bien, a la luz de esa hermenéutica, para un caso de un contribuyente que hubiera adquirido su vivienda habitual antes del 01/01/2013, y que en los años o períodos anteriores al 2013 no hubiera practicado en ninguno de ellos la deducción por vivienda habitual porque no hubiera presentado declaración por no resultar obligado a ello por razón de las rentas obtenidas, este Tribunal Central estima más ajustado a Derecho, tal y como asimismo señala la Directora del Departamento de Gestión Tributaria de la A.E.A.T en sus alegaciones, considerar que ese contribuyente sí que tendría derecho a disfrutar de la deducción en los años o períodos posteriores al 2013, de tener en éstos rentas bastantes para ello.
+
+		
+
+			Esta interpretación "teleológica" o "finalista" resulta la más favorable de cara al reconocimiento de la deducción, que, como se ha recogido, es la orientación interpretativa que debe seguirse : "las dudas que puedan surgir sobre las normas reguladoras de esta deducción tributaria de ayuda a la vivienda hayan de ser resueltas desde las pautas hermenéuticas y aplicativas que expresamente señala el antes citado artículo 53.3 CE (RCL 1978, 2836); esto es, en el sentido más favorable a su reconocimiento y protección"(STS de 17-2-2020 (rec. Casación 5609/2017); y que además se compadece de la manera más natural con lo que recogió en su Preámbulo la Ley 16/2012, de 27 de diciembre, que suprimió la deducción e introdujo la D.T. decimoctava, de que:
+
+		
+
+			"En primer lugar, se suprime la deducción por inversión en vivienda habitual a partir de 1 de enero de 2013.
+
+		
+
+			No obstante, se establece un régimen transitorio por el que podrán continuar practicando la deducción por inversión en vivienda en ejercicios futuros todos aquellos contribuyentes que hubieran adquirido antes de 31 de diciembre de 2012"
+
+		
+
+			Compartiendo este Tribunal Central, como señala el Tribunal Superior de Justicia de Madrid en su sentencia de 22 de diciembre de 2023, recurso contencioso-administrativo n.º 413-2022, que es un hecho notorio que los contribuyentes asocian su obligación de declarar por el IRPF a la obtención de determinadas rentas en los términos legalmente previstos para cada ejercicio. Si un contribuyente no hubiera presentado declaración en relación con los ejercicios fiscales anteriores a 2013 al estimar que no se encontraba obligado a ello por razón de las rentas obtenidas, tal circunstancia no debe privarle del derecho a la deducción por inversión en vivienda habitual en los ejercicios fiscales posteriores.
+
+		
+
+			Y de igual forma y a la luz de esa hermenéutica, porque en los términos antes expuestos, nos hemos de inclinar por la interpretación que resulte más favorable de cara al reconocimiento de la deducción, es por lo que, para un caso de un contribuyente que hubiera adquirido su vivienda habitual antes del 01/01/2013, y que en los años o períodos anteriores al 2013 estando obligado a presentar declaración por razón de las rentas y habiéndola presentado, no hubiera consignado en ninguno de ellos la deducción por vivienda habitual porque no hubiera tenido rentas generadoras de cuotas a las que aplicar las deducciones que les habrían correspondido de haber tenido tales cuotas, es decir, siendo su cuota íntegra cero antes de la aplicación de la deducción, este Tribunal Central estima más ajustado a Derecho, en contra del criterio manifestado tanto por la Directora del Departamento de Gestión Tributaria de la A.E.A.T como por la Directora General de Tributos del Ministerio de Hacienda, considerar que ese contribuyente sí que tendría derecho a disfrutar de la deducción en los años o períodos posteriores al 2013, de tener en éstos cuota íntegra bastante para ello.
+
+		
+
+			Repárese que los contribuyentes de este tipo no habían podido disfrutar nunca de la deducción en esos periodos anteriores a 2013 porque, aun presentando la declaración y consignando la deducción, no habían tenido cuotas íntegras para poder aplicarla. El considerar que en estos casos en que la cuota íntegra fuera cero antes de la aplicación de la deducción, únicamente se podría aplicar el régimen transitorio si se hubiera consignado en la declaración del IRPF presentada la deducción por inversión en vivienda habitual, supondría que también "practica" la deducción el que se limita a acreditarla, aunque no la disfrute efectivamente; algo que se aparta de lo que siempre se ha venido entendiendo que significa "practicar" la deducción, que es: aplicar efectivamente la deducción, disfrutar de la misma, o hacer uso de ella de manera efectiva.
+
+		
+
+			Pero, lo que acabamos de resolver, evidentemente no resultará de aplicación a los casos de contribuyentes que hubieran adquirido su vivienda habitual antes del 01/01/2013, y que, en los años o períodos anteriores al 2013 desde que la hubieran adquirido, estando obligados a presentar declaración por razón de las rentas obtenidas y presentándola, habiendo tenido en alguno, algunos o todos de esos periodos cuota integra en que poder aplicar la deducción, no la hubieran aplicado en ninguno de ellos; en suma, contribuyentes que en esos años o períodos anteriores al 2013 estando obligados a presentar declaración por razón de las rentas obtenidas y habiendo tenido cuota integra en que poder aplicar la deducción, no hubieran disfrutado de la deducción en ninguno de ellos sencilla y llanamente porque no hubiesen querido; cosa que podrían haber hecho perfectamente, pues, como hemos recogido en el Fundamento de Derecho tercero, estamos ante un beneficio fiscal que es de aplicación "voluntaria". Casos, éstos, en el que lo dispuesto en el precepto que nos viene ocupando, impediría que tales contribuyentes pudieran aplicar la deducción en los años o períodos 2013 y siguientes.
+
+		
+
+			Casos distintos, serán los de los contribuyentes que en los años o períodos anteriores al 2013 desde que hubieran adquirido su vivienda habitual:
+
+		
+
+			-estando obligados a presentar declaración por razón de las rentas obtenidas y habiéndola presentado, no hubieran tenido cuota íntegra para poder aplicar la deducción, pero que esa falta de cuotas íntegras se debiese a que hubieran omitido una (s) renta (s) que sí que tendrían que haber declarado; de suerte tal, que sí la (s) hubiesen declarado correctamente, sí que habrían tenido cuota y podrían haber aplicado la deducción en algún período anterior al 2013. 
+
+		
+
+			-estando obligados a presentar declaración por razón de las rentas obtenidas, no la hubieran presentado, al haber omitido renta (s) que determinarían su obligación de presentar declaración y de las que resultaría cuota íntegra en que poder aplicar la deducción,
+
+		
+
+			Casos, éstos, a los que este Tribunal considera que ha de aplicarse una solución basada en el argumento que el T.S. desplegó en la sentencia de 04/12/2023 dictada en el recurso de casación núm. 6555/2022; es decir, que la posibilidad de que esos contribuyentes puedan aplicar la deducción en los años o períodos 2013 y siguientes deberá ser admitida, o no, en función de las circunstancias concretas de cada caso; en el sentido, de que deberá admitirse o no en función de lo razonables que resulten las explicaciones que cada uno de esos contribuyente pueda dar sobre el porqué de la incorrección de haber omitido la (s) renta (s) de que se trate; siendo de ese contribuyente la carga de acreditar en qué consistió la incorrección cometida y que fueron razonables y aceptables las razones que le llevaron a la misma.
+
+		
+
+			Por todo ello, este TRIBUNAL ECONÓMICO-ADMINISTRATIVO CENTRAL, EN SALA, en el procedimiento para la adopción de resolución en unificación de criterio previsto en el artículo 229.1. letra d) de la Ley 58/2003, de 17 de diciembre, General Tributaria, incoado mediante acuerdo del Presidente del Tribunal Económico-Administrativo Central, de 6 de febrero de 2023, por iniciativa del Presidente del Tribunal Económico-Administrativo Regional de Cataluña, acuerda unificar criterio en el sentido siguiente:
+
+		
+
+			Criterio que va a alcanzar a la posible aplicación de la deducción por inversión en vivienda habitual en los años o períodos posteriores al 2012 por parte de contribuyentes que hubieran adquirido su vivienda habitual antes del 01/01/2013 y que no hubieran practicado ni consignado tal deducción en ninguno de los años o períodos anteriores al 2013 desde que la adquirieron.
+
+		
+
+			Siendo el criterio que se fija el siguiente:
+
+		
+
+			Primero.- Que podrán aplicarla, aquéllos que no hubieran practicado ni consignado la deducción antes de 2013 porque no hubieran presentado declaración por no resultar obligado a ello por razón de las rentas obtenidas.
+
+		
+
+			Segundo.- Que podrán aplicarla, aquéllos que no hubieran practicado ni consignado la deducción antes de 2013 porque estando obligados a presentar declaración por razón de las rentas y habiéndola presentado, no hubieran tenido en ninguno de tales períodos cuota íntegra para poder aplicarla.
+
+		
+
+			Tercero.- Que no podrán aplicarla, aquéllos que estando obligado a presentar declaración por razón de las rentas y habiéndola presentado, no hubieran practicado la deducción antes de 2013 a pesar de haber tenido en alguno de tales períodos cuotas íntegras a las que poder aplicarla.
+
+		
+
+			Cuarto.- Que cuando la falta de cuotas que impidió la práctica de la deducción antes de 2013 obedezca a un error, habrá que estar las circunstancias del caso, en los términos antes expuestos.
+
+		
+
+			
+
+			 
+
+	
+
+
+	 
+
+        
+    
+
+
+
+
+    Volver
+
+
+    
+    
+
+
+
+
+[[ID:pie]]
+
+    
+        
+Ministerio de Hacienda y Administraciones Públicas
+
+        
+            
+[[ID:textos]]
+
+	            
+                
+Accesibilidad
+
+            	
+            
+            
+[[ID:iconosacc]]
+
+	            
+
+
+
+
+
+
+
+
+	            
+            
+            
+[[ID:textos2]]
+
+	            
+                
+(NIPO: 225-24-144-1)
+		
+            	
+            			
+        
+    
+
+
+
+

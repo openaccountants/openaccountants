@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-27T23:37:36.031620Z",
+  "verdict": "BOUNDED PASS",
+  "artifacts": [
+    {
+      "path": "es-income-tax.md",
+      "bytes": 85291,
+      "sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564"
+    },
+    {
+      "path": "independent-controls.json",
+      "bytes": 596,
+      "sha256": "8e9516ea7311e34955a20e9e12b37e00fb4faf99e98b326e7467e19b29dde7bc"
+    },
+    {
+      "path": "independent-heading.diff",
+      "bytes": 565,
+      "sha256": "5340cdbafe9c7b91e04bbb3488bde767ed526a3dbeeb5caeda37f86959707b76"
+    },
+    {
+      "path": "independent-oa.log",
+      "bytes": 58,
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "independent-report.md",
+      "bytes": 1346,
+      "sha256": "248bb3e5aa2a04e7a10f75647417c5431a86786ebb2ee0747c7316f280b1ad47"
+    },
+    {
+      "path": "options.md",
+      "bytes": 532,
+      "sha256": "7ac6f618cf62491312ee0c71e19078e83e366eb9e2ca8b94b3f1d7c400f22a1f"
+    },
+    {
+      "path": "proposed-hash.json",
+      "bytes": 280,
+      "sha256": "667eb1bfac3ceb4a3b048393ca5aff5a9eeb211bea896340418ad46c55745cf3"
+    }
+  ]
+}

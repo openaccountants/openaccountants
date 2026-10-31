@@ -1,0 +1,592 @@
+{
+  "baseline_head": "f88ec3d9009a772711af78458dae353c7c49e89b",
+  "components": [
+    {
+      "name": "Cantabria-signed-rent",
+      "folder": "spain-Cantabria-signed-rent-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Cantabria-signed-rent-table-successor/candidate-es-irpf-deductions.md",
+          "sha256": "78ea5824432266359f70343d17daa7a69d0c91d30b4c3eb44676628773c24c0b",
+          "bytes": 500689
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Cantabria-signed-rent-table-successor/candidate-README.md",
+          "sha256": "ae00cc15d63f1ecdd0997459a1c11dc72a5513249578060cad4b1eae504cbd95",
+          "bytes": 16594
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "The ordinary individual positive-employment/bank-interest implementation is supplied below; other income populations remain specifically reserved.",
+          "new": "The ordinary individual positive-employment/bank-interest method and the bounded individual progressivity-exempt/current-share-loss extension are supplied below; other income populations remain specifically reserved."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Exempt income, negative-category/integration or prior-year offsets remain unconfirmed for this denominator.",
+          "new": "Those original controls did not test exempt income or loss/offset interactions; the additional bounded individual population tested below extends that evidence, without a universal denominator rule."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Exempt income, losses/offsets and other family/entitlement combinations remain to verify.",
+          "new": "For joint claims, exempt income, losses/offsets and other family/entitlement combinations remain to verify."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Home works can concern an owned Cantabrian home",
+          "new": "**Individual current-share-loss and progressivity-exempt extension, observed administrative method.** Keep all existing eligibility, documented contract-holder payment, strict10%test and regional-tax conditions. This additional bounded population has a positive verified employment-income amount `W` entering general BI, positive taxable bank-interest income `B`, and a current-year fully computable listed-share disposal loss `L`, with no other taxable income/gains/losses or prior-year loss carry used. A separately established general-base **exempt income with progressivity** amount `E` can also be present. The loss must actually qualify for current integration, including the [33.5(f) homogeneous-share restriction](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a33); an economic loss with deferred tax recognition is not an eligible `L`.\n\nFirst apply [LIRPF49.1(b)](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a49): `C=min(L,25%\u00d7B)`, leaving savings BI `B\u2212C`; the unused current loss `L\u2212C` is separately tracked under article49, not subtracted again this year. For this observed population, the rent-burden denominator is `R=W+B\u2212C`. Do not add `E` to this bounded denominator or subtract pension/base-liquidable reductions or personal/family minima. Exempt-progressivity income remains relevant to the tax-rate calculation under [DA20](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-20); excluding it from this observed rent test does not eliminate that separate tax effect. Require `eligible rent>10%\u00d7R`, then individual credit=`min(10%\u00d7eligible rent,300)`, within available regional tax. This combines the statutory integration rules with actual regional software observations; neither the regional statute nor its manual expressly defines a universal `R=BI` formula or a clamp for every signed category.\n\n**Separating fictional controls, actually observed28October2026 in RentaWEBOpen2025 version1.19OPEN.** A single eligible claimant born1January1995 has verified employment income25,000 entering general BI, bank interest10,000 and pension reduction1,500. Adding10,000of general-base exempt income with progressivity leaves rent3,500 failing and3,500.01 giving300, while the simulator separately changes the tax-rate/quota calculation. Adding a currently computable listed-share loss8,000, from a1,000sale/9,000acquisition with no homogeneous-share reacquisition, permits a2,500current offset against the10,000interest; savings BI becomes7,500 and `R=32,500`. Rent3,250 fails;3,250.01 gives300. The remaining5,500loss does not reduce this year's denominator. The raw signed total27,000, unoffset35,000, pension-reduced combined BL31,000 and exempt-inclusive42,500 would give different separating outcomes; none replaces the observed32,500. Actual tax bases, active exempt input, loss recognition, retained rent inputs and recalculated credit were read; no filing or login occurred.\n\nThe software is2025 implementation evidence for the unchanged income-comparison wording of [current2026 Cantabria2.1](https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028#a2), not an observed2026campaign or a statutory definition of every income population. The existing positive individual and married-joint methods remain as supplied. Other exempt categories, savings-side exempt-progressivity treatment, negative general income, other current-category combinations, prior-year offsets and joint/family combinations beyond their existing supplied methods remain unconfirmed; no universal BI clamp, full-economic-loss subtraction or zero credit is inferred ([official public simulator](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB)).\n\nHome works can concern an owned Cantabrian home"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "ordinary-rent exempt-income/loss/offset denominator and joint family/entitlement combinations beyond the supplied positive individual/married joint methods",
+          "new": "ordinary-rent other exempt-category, savings-side progressivity-exempt, negative-general/current-category and prior-year-offset denominator, and joint family/entitlement combinations beyond the supplied positive individual/married-joint and bounded individual progressivity-exempt/current-share-loss methods"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\n**Not yet confirmed:**",
+          "new": "\n| [Cantabria2.1](https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028#a2), [LIRPF49/DA20](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a49), [actual RentaWEBOpen2025](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB) | Observed individual general-base progressivity-exempt and current listed-share-loss offset denominator. Own25000/10000/8000/10000inputs separate3250equality from3250.01/300credit.2025software evidence for unchanged2026comparison, not a universal signed-income rule |2026-10-28 |\n\n**Not yet confirmed:**"
+        },
+        {
+          "file": "README.md",
+          "old": "including Cantabria exempt-income/loss/offset and joint entitlement combinations beyond the supplied ordinary married method",
+          "new": "including Cantabria other exempt-category, negative-general/current-category, prior-year-offset and joint entitlement combinations beyond the supplied positive married method and the bounded individual general-base progressivity-exempt/current-listed-share-loss administrative method"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\n| [Cantabria2.1]",
+          "new": "\n| Source | What it supports | Checked |\n|---|---|---|\n| [Cantabria2.1]"
+        }
+      ]
+    },
+    {
+      "name": "Balearic-under-six-household",
+      "folder": "spain-Balearic-under-six-household-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Balearic-under-six-sharing-pointer-fix/candidate-es-irpf-deductions.md",
+          "sha256": "161b9a350572c6b81239a1750db8872d769a74beafe462b63ff09019001c4881",
+          "bytes": 500284
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Balearic-under-six-sharing-pointer-fix/candidate-README.md",
+          "sha256": "0040fa1f105f72c2b14fa031db4b26635a35ada11a871102f524077cfd808e4f",
+          "bytes": 16774
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Keep full precision until the return's monetary display; these amounts do not prescribe a special statutory rounding convention.",
+          "new": "Keep full precision until the return's monetary display; these amounts do not prescribe a special statutory rounding convention.\n\n**Unequal payments and different personal rates on individual returns.** Apply the published AEAT administrative worksheet separately to each entitled claimant and each child. Establish that both taxpayers meet the existing work, income, child/service and payment conditions and file individual returns. Use the claimant's **own evidenced eligible payments** `Eij`, their own rate `ri` (40% or50%) and their own annual maximum `Li` (660 or900). With that child's qualifying-day fraction `fj` established above, calculate `creditij = min(ri \u00d7 Eij, Li \u00d7 fj /2)`; add the child results for that claimant. If only one taxpayer is entitled, the two-entitled-person sharing condition does not apply. Do not divide the claimant's own payment by two again, transfer the other payer's expense, or reallocate an unused half-cap. A shared bank account does not itself prove an unequal personal-payment allocation. The [practical manual](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html) expressly divides the **maximum** for two entitled individual filers; the existing return instructions expressly require payments by the titular, entitled-person count and child-day inputs. This supplies the ordinary published administrative method under current6bis, continued from the2025 instructions where the relevant statutory rate/sharing provisions are unchanged; it does not assume a2027 form box or procedure.\n\nFor one full-year child and two ordinary40%claimants, actual own payments of1,500and500give `min(600,330)=330` and `min(200,330)=200`, **530total**. Pooling2,000then dividing a660credit into330each would give the smaller payer130more than this own-payment method. If the500payer independently qualifies for the50%/900enhancement through at least183days in the relevant self-employed Social Security regime and the1,500payer remains ordinary, their results are `min(250,450)=250` and `min(600,330)=330`, **580total**. Reversing which payer has the enhancement gives `min(750,450)=450` and `min(200,330)=200`, **650total**. These are individual-return household totals before available regional quota, with all separate eligibility gates assumed established. The statutory enhancement is tested for the actual claimant; one person's age/registration condition does not automatically upgrade the other person's rate. Actual public Renta2025OPEN1.19 inputs corroborate each of the330/200/250/450claimant amounts; this is2025 software evidence, not a binding ruling or a2026-income simulator claim.\n\n**Precise sharing interpretation boundary.** Current [6bis(4)](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a6-12) refers to the deduction being shared equally, while the practical manual expressly shares the maximum and the form asks for own payments. The positive worksheet above states that published administrative application; it does not claim that the statutory wording was amended or that a contrary whole-credit-sharing challenge has been authoritatively decided. The existing same-rate/equal-payment and joint examples remain as stated above. A mixed-personal-rate joint return needs its own supported joint attribution and cannot be computed merely by pooling individual rates or transferring half-caps; that narrower joint interaction remains unconfirmed here.\n"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "mixed-rate/unequal-payment under-six household allocation and the stated statutory/presentation wording distinction",
+          "new": "mixed-personal-rate joint under-six attribution and authoritative resolution of a contrary whole-credit-sharing interpretation beyond the supplied administrative own-payment/half-maximum individual-return worksheet"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "| Explicit per-child expense/day inputs and prorated caps, overlapping child periods and same-rate equal-parent/joint controls; source wording distinction retained |2026-10-27 |",
+          "new": "| Explicit per-child expense/day inputs and prorated caps, overlapping child periods and preserved same-rate equal-parent/joint controls; own-payment/person-count inputs support the added unequal-payment/mixed-personal-rate individual worksheet, with the broader statutory wording and mixed-rate joint boundary retained |2026-10-28 |"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "| [Balearic art6bis](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a6-12), [exact AEAT10.4.18 child-by-child return method](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html) | Explicit per-child expense/day inputs and prorated caps, overlapping child periods and preserved same-rate equal-parent/joint controls; own-payment/person-count inputs support the added unequal-payment/mixed-personal-rate individual worksheet, with the broader statutory wording and mixed-rate joint boundary retained |2026-10-28 |",
+          "new": "| [Balearic art6bis](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a6-12), [exact AEAT10.4.18 child-by-child return method](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html); [AEAT practical maximum-sharing instruction](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html), [public OPEN simulator](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB) | Explicit per-child expense/day inputs and prorated caps, overlapping child periods and preserved same-rate equal-parent/joint controls; own-payment/person-count inputs support the added unequal-payment/mixed-personal-rate individual worksheet, with the broader statutory wording and mixed-rate joint boundary retained |2026-10-28 |"
+        },
+        {
+          "file": "README.md",
+          "old": "A labelled Balearic renewal-credit method supplies positive net yield before national percentage reductions, home/taxpayer caps and the full-tax-period ceiling for the stated sole-owner post-commencement branch; mixed-contract/ownership and short-period attribution remain unconfirmed.",
+          "new": "A labelled Balearic renewal-credit method supplies positive net yield before national percentage reductions, home/taxpayer caps and the full-tax-period ceiling for the stated sole-owner post-commencement branch; mixed-contract/ownership and short-period attribution remain unconfirmed. Balearic under-six unequal payments and mixed personal rates on individual returns use the supplied published own-payment/half-maximum administrative worksheet, preserving the equal-payment and child-day calculations. Mixed-personal-rate joint attribution and a contrary whole-credit-sharing interpretation remain precise ordinary limits."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "The numerical sharing controls above assume equally paying, equally entitled parents at the same rate. They do not transfer enhanced status between parents or establish entitlement for a non-paying parent; unequal payments and mixed contributor rates require their own allocation analysis.",
+          "new": "The original equal-payment sharing controls above assume equally paying, equally entitled parents at the same rate. For unequal payments or different personal rates on individual returns, use the supplied individual-return worksheet above. Neither set of controls transfers enhanced status between parents or establishes entitlement for a non-paying parent. The mixed-rate joint-return and statutory-interpretation boundaries remain as stated above."
+        }
+      ]
+    },
+    {
+      "name": "Galicia-binding-school",
+      "folder": "spain-Galicia-binding-school-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-binding-school-private-method/candidate-es-irpf-deductions.md",
+          "sha256": "2146d428ad577861f66a562f432a661e9f710be4054210b805639eff259a53c2",
+          "bytes": 500064
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-binding-school-private-method/candidate-README.md",
+          "sha256": "078ffd7251150f7a66bc9c015535d563dd5d9dffbdf5ce2c6f15fdbaceca7e1a",
+          "bytes": 16689
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "the binding expense-unit/allocation question remains reserved, while the supplied nonbinding-ceiling method below requires no such allocation.",
+          "new": "the annual claimant-return pool reading below supplies a labelled binding-ceiling method, alongside the preserved nonbinding-ceiling calculation. The alternative per-child unit and cap-sensitive allocation remain precisely distinguished."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Where the total material or PE ceiling binds across several children or claimants, retain the precise expense-unit/allocation qualification below. The ordinary formula above still supplies the claimant/child credit once each eligible expense base has been established.",
+          "new": "Where a material or PE ceiling binds, use the expressly labelled annual-pool method next within its input bounds. The preserved claimant/child formula still applies once each eligible expense base is established; it does not itself choose a disputed ceiling unit or an allocation that changes a binding child-credit cap."
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\n### Galicia: home works, previously empty rentals and aid\n",
+          "new": "\n**Binding material ceilings: labelled annual claimant-return pool interpretation.** Read the Order's art. 4 limit on *total* material spending \u201cpor per\u00edodo impositivo\u201d as one annual pool in the claimant's return, contrasted with the statute's express **105 per descendant** tax-credit ceiling. This is a reasoned own-text interpretation, not a claim that the Order expressly says \u201cper return\u201d or that an administrative ruling has resolved the unit. For each individually filing payer, include only that payer's actual qualifying payments for eligible children. First cap the payer's combined eligible PE material at 150; add their other eligible materials and cap the total at 300. Textbooks are outside that material pool. Do not halve the 300/150 ceilings simply because two taxpayers qualify: [AEAT](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/adquisicion-libros-texto-material-escolar.html) expressly confines its sharing instruction to the 105 credit ceiling and uses each payer's actual costs. A joint return uses one 300/150 pool under the unchanged monetary-limit rule in [LIRPF84.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a84), rather than multiplying that pool by spouses or children. The descendant-specific 105 ceiling still follows the supplied child/entitled-payer calculation.\n\n**Binding two-child example.** All children, claimants, invoices, payment, school, income and no-aid conditions pass; the children have no textbooks in this fixture. One sole claimant pays 200 other materials and 100 PE for each of two children. Aggregate other materials are 400 and PE is 200. The PE pool admits 150; the resulting 550 material amount is capped at **300**, giving **45 credit**, subject to regional quota. Even allocating the entire 300 base to one child would produce only 45, below that child's 105 ceiling, so the total does not require an arbitrary child allocation. Giving each child separate 300/150 pools would instead give 90 and is the competing per-child reading, not the selected interpretation. These are derived results, not printed agency examples.\n\nFor two separately filing entitled parents, if **each actually pays** that same 600 total for the two children, apply each parent's own 300/150 pool: each has **45**, total **90**. Each child's individual credit cap is 105/2 = 52.50; even the largest possible material-only credit from one payer's entire 300 pool is 45, so neither child's sharing cap can change that payer's result. Do not divide their own expenses or their pool a second time. If those parents instead file jointly, the combined spending uses one 300/150 pool and gives **45**, with the joint child ceilings intact. The result concerns those stated actual payment and filing facts, not a universal choice of filing mode.\n\nFor general child records, let `M[t] = min(300, other_materials[t] + min(150, PE[t]))`. Where child-credit caps cannot bind, the material-only aggregate is `15% \u00d7 M[t]`; the example demonstrates both binding expense ceilings. Textbooks and a binding 105-per-child or shared child ceiling can make allocation of a capped material pool consequential. No arbitrary proportional split or tax-optimised choice is prescribed for that separate case. The governing per-return versus per-child interpretation and such cap-sensitive allocation remain exact ordinary legal limits; retain the adopted source reading and actual child/payer ledger. This method does not invent zero relief, a universally doubled pool, or a 2026 July-only invoice restriction ([own5.Veinticinco](https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161#a5); [Order arts2\u20134](https://www.xunta.gal/dog/Publicados/2026/20260327/AnuncioG0597-260326-0002_gl.html)).\n\n### Galicia: home works, previously empty rentals and aid\n"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "the unit and allocation of a binding school-material/PE expense ceiling across several children or separately filing payers beyond the supplied nonbinding-ceiling method",
+          "new": "authoritative resolution of the school-material/PE expense-ceiling unit and cap-sensitive child allocation beyond the supplied labelled annual claimant-return pool method and its binding material-only child/payer controls"
+        }
+      ]
+    },
+    {
+      "name": "Murcia-preserved-home",
+      "folder": "spain-Murcia-preserved-home-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/candidate-es-irpf-deductions.md",
+          "sha256": "84d69c804e78c39ec3ac992b07821ef2eec331429713e1588be3ccb02e731e7f",
+          "bytes": 500616
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/candidate-README.md",
+          "sha256": "167ad2462ef45d360319261abd14b953225e8a1867d8779f7333da4900eb73b8",
+          "bytes": 16673
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "The detailed 1998\u20132000 original-law base/cap remains unconfirmed, so no generic 300 cap or another new-home base is imposed on that preserved cohort",
+          "new": "The incorporated original-law base/cap is supplied below; do not substitute the current youth route's 300 cap"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\n### Murcia: water, renewable energy and electric transport\n",
+          "new": "\n**1998\u20132000 preserved-home base and cap, source-derived incorporation method.** Current DT1.1 expressly requires the **rest of original Ley9/1999 art1.Uno**, not just its new-construction condition. The [original operative text](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844) includes acquisition/qualifying rehabilitation costs borne by the taxpayer and, for borrowing, principal repayment, interest and other financing costs. It also imports the previous-home/reinvestment, joint-filing and net-wealth conditions. An acquisition must be the first transfer after the declaration of new construction, within three years of that declaration; protected rehabilitation has its own original/successor qualification. Establish the old regional claim for this same home and the actual continuing habitual-home conditions. Current DT1.1 supplies today's 2%/3% income test, so do not reuse the original 2,500,000/250,000-peseta income bands.\n\nFor the ordinary sole-owner continuing-home case, record total qualifying current payments `T`, and the amount `N` constituting the national home-deduction base. Under the original national-reference ceiling/subtraction wording, use `B=max(0,min(T,9,040)\u2212N)` with an identified reconciliation of the national and regional amounts, rather than deducting the same payments twice. The 9,040 reference comes from the currently preserved national investment-home limit: [DT18](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#dtdecimoctava) keeps the relevant [68.1 wording](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1#a68). This is a reasoned application of the old provision's national-law reference to the surviving 2026 limit, not a claim that the 1999 text printed 9,040 euros. Do not use the national percentage credit as `N`: it is the **base** being subtracted. Keep national eligibility and actual amount used separately established.\n\nThe original combined credit ceiling is **41,000 pesetas**, increased to **46,000** if the declarant is under 30 at the relevant accrual. [EU2866/98 art1](https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362) fixes one euro at166.386pesetas; [Law46/1998 arts11/26](https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216#a11) supplies redenomination and rounding. The converted whole monetary ceilings are **246.41 / 276.47 euros**. They are not the current youth-credit 300 limit. Apply `min(rate\u00d7B, applicable converted ceiling)` and the available regional-quota limit, retaining the incorporated combined-cap/joint/other-condition evidence. This calculation concerns the surviving habitual-home claim, not a newly granted second-home10% deduction from the repealed original cohort law.\n\n**Separating controls.** A sole owner aged50 has a proved qualifying regional claim in2000 for this same new home, continues to satisfy the habitual-home and original requirements, and has20,000 qualifying2026 principal/interest costs. If the verified national home base is6,000, `B=9,040\u22126,000=3,040`. With current generalBI minus minimum20,000 and savingsBI1,000, the3%gate passes: **91.20 regional credit**, below246.41. If the verified national base is0, `B=9,040`, giving271.20before the original cap and **246.41 after it**. At the2%rate the same base gives **180.80**. If total qualifying payments are8,000 and national base6,000, the remaining regional base is2,000 and the3%credit **60**, not91.20: reconcile the actual payment pool before the subtraction. A national base9,040 exhausts the common ceiling and leaves0 regional base. Each national amount is a stated verified input; the examples do not establish eligibility, waive a claim requirement or recommend giving up a more valuable national credit. These are statutory-chain computations, not printed2026 agency examples.\n\nThe [AEAT transitional summary](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/regimen-transitorio-deduccion-inversion-vivienda-habitual.html) states the rates/new-home condition and compatibility with the separate large-family route, but omits these incorporated base/cap details. That omission is not an express administrative contrary cap or repeal. No live2026software parity or case-specific allocation across different homes/owners is asserted; those need their actual records and applicable rules. Preserve the statutory incorporation if a worksheet appears to award more.\n\n### Murcia: water, renewable energy and electric transport\n"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "original 1998\u20132000 housing base/cap",
+          "new": "operational or disputed original1998\u20132000 home-base attribution across different homes/owners beyond the supplied sole-owner continuing-home incorporation method"
+        }
+      ]
+    },
+    {
+      "name": "LaRioja-childcare",
+      "folder": "spain-LaRioja-childcare-private-method",
+      "ledger": "replacement-ledger.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-LaRioja-childcare-private-method/candidate-es-irpf-deductions.md",
+          "sha256": "22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c",
+          "bytes": 499260
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-LaRioja-childcare-private-method/candidate-README.md",
+          "sha256": "7914d83cad7eb1165d90513338dc057991929841be6dcf892a1c8cacb2f360c2",
+          "bytes": 16736
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Do not silently stack the 30% and 20% routes on the same expense: their detailed same-expense interaction remains an identified gap",
+          "new": "**Same-expense computation, labelled interpretation:** arts. 32.3 and 32.6 establish separate credits and separate 600-per-child ceilings, without a mutual exclusion. Where the same unsubsidised nursery invoice independently meets both routes, calculate each credit on its own eligible base and add the results; do not replace them with a single 600 combined cap. This is an interpretation of those own provisions, corroborated by the actual AEAT public calculation described below"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Art.32.5 and the exact AEAT monthly-credit instructions use \u201c0 a 3\u201d without defining whether the third birthday ends eligibility or the completed third year is included. That precise age interpretation remains unresolved; the separately worded nursery-credit exclusion is not applied to this monthly amount",
+          "new": "**Published administrative age method:** although art. 32.5 and the static instructions say \u201c0 a 3\u201d, the official Renta 2025 OPEN 1.19 monthly-credit dialog expressly requires the child to be \u201cmenor de tres a\u00f1os\u201d on the last day of the month. Apply that under-three month-end test: a child born 15 June 2023 gives five age-eligible months in 2026, January\u2013May, and 500 for a sole entitled parent or 250 each on two entitled parents\u2019 individual returns. A third birthday on 30 June has the same five-month result; a third birthday on 1 January gives no age-eligible month that year. The birthday month is excluded, rather than extending relief through the completed third year. This is the published AEAT administrative reading of the unchanged provision, not a new enacted definition or an inference imported from the nursery credit"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Internet and electricity/gas require a taxpayer **under 36 at period end**",
+          "new": "**Separate nursery-credit example and source bridge.** For one child under three throughout the year, a sole minimum-entitled parent with qualifying outside-home work, qualifying residence established during the year in a current Annex I municipality and retained at accrual, qualifying half-day regional nursery care, BLG 18,000 and savings BL 0 pays 1,000 of unsubsidised eligible nursery fees. Both sets of conditions hold: rural credit `min(30% \u00d7 1,000,600) = 300`; ordinary credit `min(20% \u00d7 1,000,600) = 200`; total 500 before the available regional-quota limit. With two minimum-entitled parents who each meet both routes\u2019 conditions and file separately, divide the eligible cost and each credit\u2019s cap equally: 150 rural plus 100 ordinary for each parent. A Social Security-registered household carer can satisfy the rural route but does not become an infant centre for the ordinary route. The official fictional 2025 test returned 300+200=500 and reduced regional quota 724.30 to 224.30; it also displayed the monthly credit\u2019s express under-three footnote. The 2026 method rests on current arts. 32.3/5/6, whose wording is unchanged by Ley 9/2025, and that observed administrative implementation. Use the **current 2026 Annex I**, amended by that law, rather than automatically reusing the 2025 municipal list. No 2026 calculator parity or court adjudication is claimed. Retain the article 32.16 incompatibility with the regional Patronage Law fiscal credit ([own current statute](https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750#a3-4); [Ley 9/2025 art. 1 and commencement](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-991); [official public Renta2025OPEN](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB)).\n\nInternet and electricity/gas require a taxpayer **under 36 at period end**"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Month-end conditions and precise unresolved \u201c0 a3\u201d age interpretation; no transplantation of nursery cut-off",
+          "new": "Month-end conditions; statute/static-help \u201c0 a 3\u201d wording retained and reconciled by the separately observed official monthly dialog\u2019s express under-three instruction; no transplantation of nursery cut-off"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "La Rioja same-expense rural/ordinary childcare compatibility, third-birthday monthly-credit boundary, combined current small-municipality/youth housing claims",
+          "new": "La Rioja combined current small-municipality/youth housing claims"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "| [AEAT LaRioja exact monthly-child calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_14_la-rioja/10_14_9-hijo-0-3-anos-municipios.html), [regional fiscal-benefits document](https://larioja.org/larioja-client/cm/tributos/images?idMmedia=1691508) | Month-end conditions; statute/static-help \u201c0 a 3\u201d wording retained and reconciled by the separately observed official monthly dialog\u2019s express under-three instruction; no transplantation of nursery cut-off |2026-10-27 |",
+          "new": "| [AEAT LaRioja exact monthly-child calculation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_14_la-rioja/10_14_9-hijo-0-3-anos-municipios.html), [regional fiscal-benefits document](https://larioja.org/larioja-client/cm/tributos/images?idMmedia=1691508) | Month-end conditions; statute/static-help \u201c0 a 3\u201d wording retained and reconciled by the separately observed official monthly dialog\u2019s express under-three instruction; no transplantation of nursery cut-off |2026-10-27 |\n| [Official Renta 2025 OPEN 1.19](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB), [own current art. 32.3/5/6/16](https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750#a3-4), [Ley 9/2025 art. 1/DF](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-991) | Actual monthly-dialog under-three-at-month-end instruction and fictional 300+200 same-expense calculation, labelled administrative/inferred methods bridged to unchanged 2026 substantive wording and current Annex I; no 2026 runtime or court claim |2026-10-28 |"
+        },
+        {
+          "file": "README.md",
+          "old": "La Rioja third-birthday interpretation and lower-base minimum allocation",
+          "new": "lower-base minimum allocation"
+        },
+        {
+          "file": "README.md",
+          "old": "La Rioja third-birthday boundary and lower-base annuity/progression allocation",
+          "new": "lower-base annuity/progression allocation"
+        },
+        {
+          "file": "README.md",
+          "old": "The actual Catalan initial municipal annex",
+          "new": "La Rioja\u2019s same-expense rural/ordinary nursery calculation is supplied as a labelled own statute interpretation corroborated by the official public 2025 calculation; its monthly credit uses the published under-three-at-month-end administrative instruction under unchanged 2026 substantive wording and current Annex I, without claiming 2026 software parity or court adjudication. The actual Catalan initial municipal annex"
+        }
+      ]
+    },
+    {
+      "name": "Asturias-landlord-reference",
+      "folder": "spain-Asturias-landlord-reference-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/candidate-es-irpf-deductions.md",
+          "sha256": "f9a35e6360cebdb6be1f8878177bc185233f847f78eef29b98a1cd299157db4d",
+          "bytes": 500396
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/candidate-README.md",
+          "sha256": "e65bfc86be57b6897a6e22efcfb5ca3cc24a6560dcf566e95ccdb6b1fb327464",
+          "bytes": 16714
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "The guidance gives conflicting instructions for owner charges passed to the tenant, including IBI/community charges; that allocation remains unresolved here and must be settled before computing such a lease",
+          "new": "The guidance gives conflicting instructions for owner charges passed to the tenant, including IBI/community charges; the expressly labelled included-charge worksheet below supplies a bounded administrative route while preserving the contrary exclusion and its exact effect"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\nLiving-expense categories are housing and associated utilities",
+          "new": "\n**Landlord reference gate: included-owner-charge administrative worksheet.** Where the claim-year reference is established under the state fallback and the dwelling is within SERPAVI, let `R` be the documented monthly dwelling rent at the relevant measurement date and `C` the itemised monthly owner charges contractually passed to the tenant. Use `R+C <= U`, where `U` is the applicable verified upper monthly SERPAVI reference. The [official completion help10.3.22](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_22-gastos-derivados-arrendamiento-viviendas.html) expressly includes passed-on owner IBI/community charges, agreeing with the first reference-test paragraph of the [practical manual](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-derivados-arrendamiento-viviendas.html). This selects that published administrative route; it is not a ruling that resolves the same manual's later contrary instruction to exclude charges/tributes contractually borne by the tenant, which names IBI and community charges too. In the crossing band `R <= U < R+C`, the two instructions give different eligibility outcomes. Preserve both calculations and the source conflict for any challenge or request for clarification; do not represent the selected worksheet as universally settled law.\n\nUse actual charge obligations and the contract's recovery schedule, not every amount received from a tenant. A tenant's own separately contracted electricity or water is not automatically an owner charge passed on. Do not uplift rent by an estimated percentage or divide an annual bill arbitrarily: retain the lease and annexes, owner IBI assessment/community demand, actual agreed instalments and rent/charge receipts. Keep the claim-year reference report with the dwelling's address/cadastral identity, characteristics, upper value and applicable date, plus evidence that the state fallback rather than an applicable regional reference governs. Also retain habitual-home use, capital-income classification, eligible-cost invoices/payments and available regional quota. IBI/community reimbursements used in the reference comparison do not thereby become eligible repair, formalisation, insurance or energy-certificate costs.\n\n**Separating fixed full-year example.** A sole ordinary landlord has an evidenced continuing habitual-home lease throughout2026, unchanged monthly sums, and a verified applicable upper reference `U=700`. The rent is `R=610`; the contract recovers owner IBI in12actual monthly instalments of30 (assessment360) and community charges in12monthly instalments of60 (demand720), so `C=90`. Tenant-contracted utilities80are separate. The selected comparison is **610+30+60=700**, meeting the reference at equality; it is neither610alone nor780including tenant-own utilities. Assume all other conditions pass, this is the claimant's only eligible letting-cost credit, eligible paid repairs400+insurance160+energy certificate80=**640**, and sufficient regional quota. The credit is **min(640,500)=500**. The landlord's actual cost ledger, rather than rent or passed-on charges, supplies that credit base.\n\nChange only contractual dwelling rent to620: **620+90=710>700**, so this lease fails the selected included-charge gate and no credit is entered under that worksheet. The contrary exclusion instruction would compare620to700and admit the500cost credit on the same remaining facts. That difference is retained as the precise unresolved administrative conflict, not silently converted into a categorical zero legal entitlement. These derived examples assume an actually established reference and constant sums for all occupied months; they do not invent a reference for an uncovered dwelling, alter the existing measurement dates or settle mid-year change/partial-period attribution.\n\nLiving-expense categories are housing and associated utilities"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "Age-30 overlap resolved by authority; landlord reference method and conflicting passed-charge treatment identified",
+          "new": "Age-30 overlap resolved by authority; landlord reference method and labelled included-owner-charge administrative worksheet, with contrary charge exclusion retained"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "landlord passed-charge/reference implementation and years combining",
+          "new": "authoritative resolution of the landlord owner-charge inclusion/exclusion conflict beyond the supplied itemised included-charge administrative worksheet and fixed full-year reference controls, mid-year/partial-period charge attribution and years combining"
+        }
+      ]
+    },
+    {
+      "name": "Canarias-overlapping-contributions",
+      "folder": "spain-Canarias-overlapping-contributions-private-method",
+      "ledger": "exact-replacements.json",
+      "targets": [
+        {
+          "file": "es-irpf-deductions.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/candidate-es-irpf-deductions.md",
+          "sha256": "4fb8520c3f68e5c667e3dc0c240a7d478e235be0be68951652bcf808dd14ad7b",
+          "bytes": 500326
+        },
+        {
+          "file": "README.md",
+          "candidate_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/candidate-README.md",
+          "sha256": "c530574150a7e85e2c634fe2b379b5d22ece9f764eab33ac90f8fb681b154a01",
+          "bytes": 16696
+        }
+      ],
+      "normalized_ops": [
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "The interaction with the dependent-disability assistance route remains to confirm before using both for one worker",
+          "new": "The same-worker/same-payment interaction with dependent-disability assistance is supplied by the expressly labelled statutory interpretation below"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "\n### Canarias: donations, investment and historical relief\n",
+          "new": "\n**Same worker and payment: labelled two-credit statutory interpretation.** Where the same claimant independently qualifies for both art.16quater.4 and16quinquies, compute each contribution credit on that claimant's own qualifying paid contributions, applying its separate20%rate and500annual cap. This is a combined-text compatibility inference: [the current two articles](https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008#a1-6) each grant the amount, use matching employer/gananciales attribution, and contain neither mutual exclusion nor a rule making one contribution base residual after the other. Art.17defines income references; it does not impose a shared contribution ceiling. Art.18.1still limits aggregate regional credits to regional gross tax, and18.3reduces each affected expense base for matching exempt public aid. Art.18.2's same-*asset* restriction is not a universal same-payment ban; a household employee or disabled dependant is not an asset to which that property-credit rule can simply be transferred. This method does not remove that rule for credits actually concerning the same asset.\n\nThe exact [AEAT assistance instructions](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familiares-dependientes-discapacidad.html) and [household-contribution instructions](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/cuotas-satisfechas-seguridad-social-contratacion-hogar.html) separately reproduce20%/500and matching payment attribution, without prescribing cross-article mutual exclusion or base sharing. Their express compatibility statement for the fixed600dependent amount plus art.16quater.4concerns those two components only; it is not an express agency ruling about16quinquies. The two-contribution-credit method here therefore remains labelled as our reading of the actual statutory grants and common limits, not an expressly printed same-remittance worked ruling or an observed2026filing-software result. No general anti-double-credit rule or forced50:50split is invented.\n\n**Binding single-employer ledger.** In2026an individually filing, non-ganancial claimant has combined general/savings BI30,000and qualifying employment income, and is the sole person entitled to the descendant and disability/assistance minima for a cohabiting descendant with certified disability of at least65%and documented need for third-person assistance. All minimum, cohabitation and other entitlement conditions pass. The taxpayer is the sole registered household employer; the same identified worker performs the qualifying household/assistance work in the employer's habitual home. Actual TGSS/payment records establish **3,000of contributions independently eligible under both articles**, with no matching exempt aid. This is one paid-contribution ledger, not two payments or an estimated annual wage amount. Retain employer registration, the worker's NIF/NIE, contribution and bank records, habitual-home/work evidence and the minimum/disability/assistance documents.\n\nArt.16quater.4gives `min(20% \u00d7 3,000,500)=500`; art.16quinquies independently gives `min(20% \u00d7 3,000,500)=500`. Both caps bind: the combined contribution credit is **1,000**. A compulsory split of that one3,000payment into1,500perroute would instead give300+300=600and is not the selected statutory method. This is not a second500allowance for another worker within either article. Separately, the claimant on these facts qualifies for the existing fixed600dependent credit; AEAT expressly permits that amount alongside its assistance component. With regional gross tax2,000, no other deductions and all stated conditions, the ledger is600fixed+500assistance+500general contributions=**1,600**, leaving**400**regional tax. Do not separately allow each credit against the same remaining tax and thereby exceed art.18.1. If either contribution route's own eligibility fails, that route is absent; eligibility for the other is tested independently. Ganancial payment attribution remains exactly as stated above; this example does not allocate a whole3,000base to each spouse or invent a general rule for other credit pairs.\n\n### Canarias: donations, investment and historical relief\n"
+        },
+        {
+          "file": "es-irpf-deductions.md",
+          "old": "signed-income/loss allocation of the inter-island move tax cap beyond the supplied mixed/minimum method, in-kind gift valuation, overlapping household/disabled-assistance contribution claims",
+          "new": "signed-income/loss allocation of the inter-island move tax cap beyond the supplied mixed/minimum method, in-kind gift valuation"
+        }
+      ]
+    }
+  ],
+  "shared_readme_suffixes_in_declared_order": [
+    {
+      "name": "Galicia-binding-school",
+      "suffix": " A labelled Galicia annual claimant-return material/PE pool interpretation supplies binding material-only calculations across children and paying individual/joint claimants; the alternative ceiling unit and cap-sensitive child allocation remain explicit."
+    },
+    {
+      "name": "Murcia-preserved-home",
+      "suffix": " Murcia's preserved1998\u20132000 sole-owner continuing-home method supplies the incorporated national-reference base/subtraction and original peseta-cap conversion; different-home/owner attribution and software parity remain precise limits."
+    },
+    {
+      "name": "Asturias-landlord-reference",
+      "suffix": " An Asturias landlord administrative worksheet compares contractual rent plus itemised owner-charge pass-through with the verified reference and calculates eligible costs separately; the contradictory exclusion instruction and mid-year/partial-period attribution remain explicit."
+    },
+    {
+      "name": "Canarias-overlapping-contributions",
+      "suffix": " A labelled Canarias statutory compatibility interpretation supplies the same-employer/same-worker contribution ledger for independently qualifying household and disabled-dependent assistance credits, with separate500caps and the aggregate regional-tax ceiling."
+    }
+  ],
+  "files": [
+    {
+      "file": "README.md",
+      "baseline_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "candidate_sha256": "5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be",
+      "candidate_bytes": 18266,
+      "changed": true,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-seven-regional-final-composition/README.md"
+    },
+    {
+      "file": "es-autonomous-worker.md",
+      "baseline_sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "candidate_sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "candidate_bytes": 34420,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-autonomous-worker.md"
+    },
+    {
+      "file": "es-beckham.md",
+      "baseline_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "candidate_sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "candidate_bytes": 23234,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-beckham.md"
+    },
+    {
+      "file": "es-canary-islands-igic.md",
+      "baseline_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "candidate_sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "candidate_bytes": 33282,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-canary-islands-igic.md"
+    },
+    {
+      "file": "es-capital-gains.md",
+      "baseline_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "candidate_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "candidate_bytes": 35690,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-capital-gains.md"
+    },
+    {
+      "file": "es-ceuta-melilla-ipsi.md",
+      "baseline_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "candidate_sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "candidate_bytes": 50091,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-ceuta-melilla-ipsi.md"
+    },
+    {
+      "file": "es-corporate-tax.md",
+      "baseline_sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "candidate_sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "candidate_bytes": 43212,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-corporate-tax.md"
+    },
+    {
+      "file": "es-estimated-tax.md",
+      "baseline_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "candidate_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "candidate_bytes": 36751,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-estimated-tax.md"
+    },
+    {
+      "file": "es-foral-corporate-tax.md",
+      "baseline_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "candidate_sha256": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+      "candidate_bytes": 122089,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-corporate-tax.md"
+    },
+    {
+      "file": "es-foral-income-tax.md",
+      "baseline_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "candidate_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+      "candidate_bytes": 323879,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-income-tax.md"
+    },
+    {
+      "file": "es-foral-non-resident-tax.md",
+      "baseline_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+      "candidate_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+      "candidate_bytes": 69256,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-non-resident-tax.md"
+    },
+    {
+      "file": "es-foral-payroll.md",
+      "baseline_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "candidate_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "candidate_bytes": 54518,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-foral-payroll.md"
+    },
+    {
+      "file": "es-income-tax.md",
+      "baseline_sha256": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+      "candidate_sha256": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+      "candidate_bytes": 95592,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-income-tax.md"
+    },
+    {
+      "file": "es-irpf-deductions.md",
+      "baseline_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "candidate_sha256": "83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07",
+      "candidate_bytes": 525428,
+      "changed": true,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-seven-regional-final-composition/es-irpf-deductions.md"
+    },
+    {
+      "file": "es-modelo-111.md",
+      "baseline_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "candidate_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "candidate_bytes": 25444,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-modelo-111.md"
+    },
+    {
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "baseline_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "candidate_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "candidate_bytes": 33442,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-non-resident-income-tax-irnr-and.md"
+    },
+    {
+      "file": "es-rental-income.md",
+      "baseline_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "candidate_sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "candidate_bytes": 38965,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-rental-income.md"
+    },
+    {
+      "file": "es-social-contributions.md",
+      "baseline_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "candidate_sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "candidate_bytes": 68625,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-social-contributions.md"
+    },
+    {
+      "file": "es-vat-return.md",
+      "baseline_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "candidate_sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+      "candidate_bytes": 89529,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-vat-return.md"
+    },
+    {
+      "file": "references.md",
+      "baseline_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "candidate_sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "candidate_bytes": 3537,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/references.md"
+    },
+    {
+      "file": "spain-bookkeeping.md",
+      "baseline_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "candidate_sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "candidate_bytes": 73678,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-bookkeeping.md"
+    },
+    {
+      "file": "spain-crypto-tax.md",
+      "baseline_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "candidate_sha256": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+      "candidate_bytes": 37994,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-crypto-tax.md"
+    },
+    {
+      "file": "spain-einvoice.md",
+      "baseline_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "candidate_sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "candidate_bytes": 53944,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-einvoice.md"
+    },
+    {
+      "file": "spain-financial-statements.md",
+      "baseline_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "candidate_sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "candidate_bytes": 51863,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-financial-statements.md"
+    },
+    {
+      "file": "spain-formation.md",
+      "baseline_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "candidate_sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "candidate_bytes": 11892,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-formation.md"
+    },
+    {
+      "file": "spain-payroll.md",
+      "baseline_sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "candidate_sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "candidate_bytes": 52020,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-payroll.md"
+    },
+    {
+      "file": "spain-tax-optimization.md",
+      "baseline_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "candidate_sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "candidate_bytes": 20281,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-tax-optimization.md"
+    },
+    {
+      "file": "spain-transfer-pricing.md",
+      "baseline_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "candidate_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "candidate_bytes": 31683,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-transfer-pricing.md"
+    },
+    {
+      "file": "spain-vat-return.md",
+      "baseline_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "candidate_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+      "candidate_bytes": 27072,
+      "changed": false,
+      "source": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/spain-vat-return.md"
+    }
+  ],
+  "all21_component_pairs_commute": true,
+  "complete_inverse_exact": true,
+  "no_live_changes": true
+}

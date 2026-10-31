@@ -1,0 +1,20 @@
+{
+  "slug": "es-foral-income-tax",
+  "path": "skills/international/spain/es-foral-income-tax.md",
+  "bytes": 323948,
+  "sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "prior_main_exists": false,
+  "prior_main_sha256": null,
+  "H2": [
+    "## Who this applies to",
+    "## Rates, bands and thresholds",
+    "## The base",
+    "## Deadlines and filing",
+    "## Penalties and interest",
+    "## Cross-border points",
+    "## Two worked examples that recompute",
+    "## Ask the client first",
+    "## Sources"
+  ],
+  "parent_repair": "v0.7 ownGcharity30%baseLIQUIDABLE at LF497, version LF18; exact predecessor retained"
+}

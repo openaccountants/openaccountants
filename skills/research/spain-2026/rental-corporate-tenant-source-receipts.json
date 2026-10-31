@@ -1,0 +1,39 @@
+[
+  {
+    "key": "teac-5138-2013",
+    "url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F05138%2F2013%2F00%2F0%2F1",
+    "final_url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F05138%2F2013%2F00%2F0%2F1",
+    "status": 200,
+    "bytes": 56052,
+    "sha256": "c455f8a730ae9626aae87607d6308857d4c8e991c9b19ad1b74dfc21e5269d09",
+    "fetched_utc": "2026-10-27T17:07:35.404001+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "c455f8a730ae9626aae87607d6308857d4c8e991c9b19ad1b74dfc21e5269d09",
+    "actual_full_body_read": true
+  },
+  {
+    "key": "aeat-housing-2025",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/arrendamiento-inmuebles-destinados-vivienda.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/arrendamiento-inmuebles-destinados-vivienda.html",
+    "status": 200,
+    "bytes": 23774,
+    "sha256": "4a32b2b2dd3830b1a7a8bc6353a58dfea8d8d33d3f3039912c5b0b0ba2487928",
+    "fetched_utc": "2026-10-27T17:07:35.733597+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "4a32b2b2dd3830b1a7a8bc6353a58dfea8d8d33d3f3039912c5b0b0ba2487928",
+    "actual_full_body_read": true
+  },
+  {
+    "key": "lirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "bytes": 2028806,
+    "fetched_utc": "2026-10-27T17:02:58.744517+00:00",
+    "read_on": "2026-10-27",
+    "verified_sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "actual_body_read": true,
+    "reused_path": "[local cached body: lirpf-current.html]"
+  }
+]

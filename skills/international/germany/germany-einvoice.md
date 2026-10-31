@@ -1,10 +1,10 @@
 ---
 name: germany-einvoice
 description: Use this skill whenever asked about German e-invoicing, XRechnung, ZUGFeRD, ERechV, E-Rechnungsverordnung, Peppol BIS Billing Germany, Leitweg-ID, OZG-RE invoice portal, B2B e-invoicing mandate Germany, Wachstumschancengesetz, EN 16931 Germany, GoBD e-invoice archiving, or any question about issuing, receiving, validating, or archiving electronic invoices in Germany. Also trigger when preparing XRechnung XML invoices, configuring Peppol endpoints for German public-sector invoicing, handling B2B e-invoice reception requirements, or advising on ZUGFeRD profile selection. This skill covers XRechnung CIUS, ZUGFeRD hybrid format, Peppol transmission, mandatory fields, validation rules, GoBD archiving, penalties, and interaction with German VAT returns. ALWAYS read this skill before touching any German e-invoicing work.
-version: 1.0
+version: 1.2
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-09-19
+last_updated: 2026-10-29
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
@@ -29,7 +29,7 @@ When a German business must issue an e-invoice, when a paper or PDF invoice is s
 | What an e-invoice is | An invoice that is issued, sent and received in a structured electronic format and that allows electronic processing (§ 14(1) UStG). Paper, a plain PDF, an image file or the text of an e-mail is an "other invoice" (sonstige Rechnung) |
 | National CIUS | XRechnung. The ministry says it meets the European standard EN 16931 and § 14(1) sentence 6 no. 1 UStG |
 | Hybrid format | ZUGFeRD from version 2.0.1, without the profiles MINIMUM and BASIC-WL: a PDF that carries the structured XML data in the same file |
-| Current XRechnung version | The tax administration's own e-invoice viewer at ELSTER says it uses "die aktuell gültige XRechnung Version 3.0.1". KoSIT publishes the versions. See Section 3 |
+| Current XRechnung version | KoSIT lists the current 3.0.2 bundle. ELSTER’s viewer still describes its own version as 3.0.1; that viewer label does not set the normative version. See Section 3 and Sources |
 | Governing body | Bundesministerium der Finanzen (BMF) for the VAT rules |
 | Standards body | Koordinierungsstelle für IT-Standards (KoSIT) for XRechnung. Forum elektronische Rechnung Deutschland (FeRD) for ZUGFeRD |
 | Key legislation | § 14, § 14b and § 27(38) UStG as changed by the Wachstumschancengesetz (Growth Opportunities Act); §§ 33, 34 and 34a UStDV; the E-Rechnungsverordnung (ERechV) for federal public contracts; GoBD (last changed 14 July 2025) |
@@ -39,7 +39,7 @@ When a German business must issue an e-invoice, when a paper or PDF invoice is s
 | B2B issuance | A duty in law since 1 January 2025. Relief for sales made in 2025 and 2026: every issuer, until 31 December 2026. Relief for sales made in 2027: only issuers within the turnover limit in Section 2, or EDI, until 31 December 2027. From 2028 no relief |
 | B2C | Not subject to the e-invoicing duty |
 | Current status | Invoicing federal authorities: in force. Receiving between businesses: in force. Issuing between businesses: in its transition |
-| Guide version | Refreshed against the official pages on 19 September 2026 |
+| Guide version | Core tax clauses retain their recorded source history. The selected technical clauses and federal portal sources below were read on 29 October 2026 |
 
 **Five things older material gets wrong**
 
@@ -131,7 +131,7 @@ When a German business must issue an e-invoice, when a paper or PDF invoice is s
 All from the ministry's letter of 15 October 2025, decree section 14.1(4) and (5): https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
 
 - **The duty.** "Inländische Unternehmer müssen die technischen Voraussetzungen zum Empfang einer E-Rechnung schaffen." This also applies to a recipient under § 19 UStG.
-- **No consent.** Issuing an e-invoice to another German business does not need the recipient's consent.
+- **Apply the consent table.** No consent is needed for the domestic e-invoice duty, or the stated domestic business-to-business § 33/34/34a UStDV cases. Remaining voluntary cases, including consumers, the stated exempt supplies and a supplier or customer abroad, require the recipient's consent.
 - **E-mail.** E-invoices may come by e-mail. The letter says: "Bei einem Empfang mittels E-Mail ist kein gesondertes E-Mail-Postfach nur für den Empfang von E-Rechnungen erforderlich." The ministry's questions and answers page goes one step further and says an e-mail inbox is already enough to receive (nos. 8 and 12).
 - **Refusing does not help.** A business that cannot receive an e-invoice, or refuses it, has no right to an other invoice instead. The issuer's VAT duties then count as met if it issued an e-invoice and can show that it tried to send it properly, for example with a send log.
 - **Receiving is not processing.** The recipient need not process the data electronically beyond what storage demands (questions and answers, no. 9).
@@ -161,7 +161,7 @@ All from § 27(38) UStG: https://www.gesetze-im-internet.de/ustg_1980/__27.html
 | 2027 | With the recipient's consent, an invoice in another electronic format that is sent by EDI | 31 December 2027 | Every issuer. No turnover test (no. 3) |
 | 2028 onward | Nothing. An e-invoice is due wherever § 14(2) sentence 2 no. 1 UStG demands one | Not applicable | The lasting exceptions stay: small invoices, tickets, Kleinunternehmer, exempt supplies under § 4 nos. 8 to 29 UStG, non-German parties |
 
-- **Two dates in each rule.** The statute ties each relief to when the supply was made AND to the day by which the invoice is sent. Read literally, an invoice sent in January 2027 for a sale made in December 2026 fits neither the first row (sent too late) nor the second (sale made too early). The pages read for this Guide do not settle that case. The ministry's questions and answers page (no. 11) describes the first relief the same way, as a period in which the invoice is issued, from 1 January 2025 to 31 December 2026. Invoice 2026 sales before the year ends, or refer.
+- **Two dates and the default duty: selected combined-law interpretation.** Each § 27(38) relief tests both the supply date and the last transmission date. For an ordinary taxable domestic business-to-business supply made in December 2026, first invoiced in January 2027, the default § 14(2) e-invoice duty applies if both parties meet the domestic-establishment test, the recipient acquires for its business, the invoice total is above EUR 250, and no Kleinunternehmer, ticket or other permanent exemption applies. This fixture assumes no previously issued qualifying advance or standing invoice; those follow their specific rules below. No. 1 relief ended on 31 December 2026; nos. 2 and 3 concern supplies made after that date, so neither low issuer turnover nor the December supply date rescues this January invoice. This is a labelled reading of the own default and transition clauses, not a separate ruling. The same December supply first sent by 31 December 2026 can use paper or an agreed PDF under no. 1. A supply made on 1 January 2027 instead enters no. 2's own prior-year-turnover test and 2027 transmission window. The ministry applies the principles to post-2024 supplies, subject to the actual transition. Reapply these exact duty/relief gates to other late invoices rather than inferring a gap in all invoicing rules.
 - **Issuing only.** § 27(38) UStG relieves issuers. There is no relief for receiving.
 - **The issuer decides.** The choice to use the relief lies with the issuer. The ministry adds that the rules leave a recipient free to pick a supplier that, for now, still issues paper invoices (questions and answers, no. 11).
 - **An other invoice still works while it is allowed.** As long as an other invoice may be issued, it remains a proper invoice for the input tax deduction (questions and answers, no. 2).
@@ -203,7 +203,7 @@ All from § 27(38) UStG: https://www.gesetze-im-internet.de/ustg_1980/__27.html
 
 ### XRechnung Technical Details
 
-The identifiers in this table come from KoSIT's XRechnung specification. KoSIT's site is not an allowed host for this Guide, so these values are carried over from the legacy Guide and were not checked on a page that can be linked here.
+The identifiers below are checked against KoSIT’s XRechnung 3.0.2 specification and the schemas in its bundle dated 31 August 2026. The UBL namespace is also in OASIS’s UBL 2.1 schema. These are technical source checks, not a validator execution; exact Sources and limits are below.
 
 | Parameter | Value |
 | --- | --- |
@@ -220,16 +220,16 @@ The identifiers in this table come from KoSIT's XRechnung specification. KoSIT's
 
 ### ZUGFeRD Profiles
 
-The profile names come from FeRD, which publishes ZUGFeRD. Its site is not an allowed host. The one official statement is the ministry's: ZUGFeRD from version 2.0.1 is allowed, "ausgenommen die Profile MINIMUM und BASIC-WL".
+FeRD publishes the profile definitions below. Its current FAQ distinguishes the EN 16931 (COMFORT) profile, the BASIC subset and the EXTENDED profile, and the XRECHNUNG reference profile. The ministry allows ZUGFeRD from version 2.0.1, excluding MINIMUM and BASIC-WL. Acceptance under federal ERechV remains a separate condition.
 
-| Profile | EN 16931 Compliant | Use Case |
+| Profile | Source-backed format scope | Use Case |
 | --- | --- | --- |
 | Minimum | No. Excluded by the ministry | Not an e-invoice for VAT |
 | Basic WL | No. Excluded by the ministry | Without line detail. Not an e-invoice for VAT |
-| Basic | Yes, per the legacy Guide (if fully populated) | Standard use |
-| Comfort (EN 16931) | Yes, per the legacy Guide | Full compliance |
-| Extended | Yes, per the legacy Guide (superset) | Additional business information |
-| XRechnung | Yes, per the legacy Guide | XRechnung rules inside a ZUGFeRD container |
+| Basic | A subset of EN 16931 for simple UStG-conforming invoices; BMF permits the profile | Standard use with the required invoice data |
+| Comfort (EN 16931) | Fully represents EN 16931-1, according to FeRD | Full core invoice data |
+| Extended | Extends EN 16931 with additional information; FeRD says to agree its exchange with the recipient | Additional business information |
+| XRechnung | Reference profile for an XML file conforming to the current XRechnung specification; FeRD permits CII only inside this reference profile | XRechnung XML inside a ZUGFeRD container |
 
 - **Profile selection guidance.** For invoices between businesses, any ZUGFeRD profile from version 2.0.1 other than the two excluded ones falls under the allowed formats. For invoices to federal authorities the ERechV asks for XRechnung, or another standard that meets the European norm (§ 4(1) ERechV). Which ZUGFeRD profile a given authority accepts is not on the pages read for this Guide: ask the authority.
 
@@ -246,7 +246,7 @@ From the ministry's letter of 15 October 2025 (decree sections 14.1(2), 14.1(11)
 
 ## Section 4: Mandatory Fields
 
-The field codes (BT numbers) come from the European standard and from KoSIT's specification. Neither is on an allowed host, so both are named, not linked. The "Required" columns were checked on 19 September 2026 against KoSIT's XRechnung specification, version 3. The scheme identifiers 0204 and 9930 and the Leitweg-ID pattern in the description cells were not checked.0.2. The ministry's questions and answers page (no. 16) says KoSIT and FeRD publish a joint table that maps the VAT details to the BT fields; use that table for the mapping.
+The field codes and cardinalities below are checked against KoSIT’s XRechnung 3.0.2 specification. The scheme examples 0204 and 9930 are checked against KoSIT’s identifier guidance dated 2 January 2025. The exact Leitweg-ID validation pattern is not supplied here: use the identifier assigned by the recipient under § 5 ERechV. The ministry’s FAQ no. 16 also points to the joint KoSIT/FeRD mapping of VAT details to BT fields.
 
 ### EN 16931 Core Fields (Required by XRechnung)
 
@@ -289,7 +289,7 @@ The field codes (BT numbers) come from the European standard and from KoSIT's sp
 
 ### B2G Transmission
 
-The ERechV demands a federal administration portal and a user account set up before the first invoice (§ 4(3) ERechV, https://www.gesetze-im-internet.de/erechv/__4.html). A formally faulty invoice is rejected automatically and the sender is told. An invoice that cannot be matched to a user account is rejected without notice (§ 4(4) ERechV). The channels below are from the legacy Guide and from the federal e-invoicing information site named in the ministry's questions and answers page (e-rechnung-bund.de, run by the procurement office of the interior ministry). That site is not an allowed host for this Guide, so it is not linked, and the portal address in the legacy Guide was removed.
+The ERechV demands a federal administration portal and a user account set up before the first invoice (§ 4(3) ERechV, https://www.gesetze-im-internet.de/erechv/__4.html). A formally faulty invoice is rejected automatically and the sender is told. An invoice that cannot be matched to a user account is rejected without notice (§ 4(4) ERechV). The channels below are from the legacy Guide and from the federal e-invoicing information site named in the ministry's questions and answers page (e-rechnung-bund.de, run by the procurement office of the interior ministry). Its current upload and e-mail instructions and its September 2025 consolidation statement were read on 29 October 2026 and are linked in Sources. No user account was opened or invoice submitted.
 
 | Channel | Description |
 | --- | --- |
@@ -317,7 +317,7 @@ Germany does not prescribe a transmission channel for e-invoices between busines
 
 ### Peppol in Germany
 
-These four points are carried over from the legacy Guide. They rest on Peppol and KoSIT material, which is not on an allowed host, and were not checked on an official page.
+KoSIT’s own Peppol explanation and identifier guidance support the four points below. The identifiers address the recipient; they do not prove that a particular recipient is currently connected or that an invoice was delivered.
 
 - KoSIT manages the German Peppol Authority
 - Public authorities connected to OZG-RE are reachable via Peppol
@@ -335,7 +335,7 @@ These four points are carried over from the legacy Guide. They rest on Peppol an
 
 ### KoSIT Validator
 
-The layer table is carried over from the legacy Guide and was not checked on an official page. The ministry's questions and answers page (no. 16) confirms only that KoSIT provides open source components, among them a validator and a test suite.
+The current KoSIT bundle describes its validator as a Java tool, with configuration resources for XML schemas, EN 16931 Schematron and XRechnung CIUS/extension Schematron. The layers below describe those supplied components; no particular invoice or validator run has been tested here.
 
 | Layer | Description |
 | --- | --- |
@@ -350,9 +350,9 @@ Carried over from the legacy Guide, with the ministry's view added where it has 
 
 | Issue | Resolution |
 | --- | --- |
-| Missing BT-23 (ProfileID) | Mandatory since XRechnung 3.0.1, per the legacy Guide. Always populate |
-| Missing BT-34 / BT-49 (electronic addresses) | Mandatory since XRechnung 3.0.1, per the legacy Guide. Include with the correct scheme ID |
-| Invalid Leitweg-ID format | Must follow pattern: numeric segments separated by hyphens with check digit |
+| Missing BT-23 (ProfileID) | Mandatory in the checked XRechnung 3.0.2 specification. Populate the business-process identifier |
+| Missing BT-34 / BT-49 (electronic addresses) | Mandatory in the checked XRechnung 3.0.2 specification. Include each with its scheme ID |
+| Invalid Leitweg-ID format | Use the exact identifier assigned by the recipient (§ 5 ERechV). Not yet confirmed here: the full validation pattern. The legacy numeric-only description is not a verified constraint |
 | Missing BT-10 (Buyer reference) | A mandatory field of an XRechnung. For VAT the gap is a business rule error without effect, and between businesses a placeholder is enough. A federal portal can still reject the file |
 | Tax calculation inconsistency | The tax amount must agree with the stated rate. The ministry gives exactly this as its example of a business rule error, and on a VAT detail it is also a content error |
 | Wrong CustomizationID | Must match the URN of the XRechnung version in use exactly |
@@ -360,10 +360,10 @@ Carried over from the legacy Guide, with the ministry's view added where it has 
 
 ### OZG-RE Additional Checks
 
-- Validates Leitweg-ID against the registered directory
-- Verifies that the recipient authority is connected and active
-- Returns structured error messages for rejected invoices
-- These three points are from the legacy Guide. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(3) ERechV)
+- **Not yet confirmed:** whether the platform validates a Leitweg-ID against a registered directory.
+- **Not yet confirmed:** whether the platform verifies that the recipient is currently connected and active.
+- **Not yet confirmed:** the exact structured error-message format for rejected invoices.
+- These three retained technical topics are not established by the source clauses read. The ERechV itself says only that invoices sent through the portal are checked automatically for formal correctness and that a faulty one is rejected with a notice to the sender (§ 4(3) ERechV)
 
 ## Section 7: Tax Computation Rules
 
@@ -385,9 +385,9 @@ Carried over from the legacy Guide, with the ministry's view added where it has 
 
 ### Rounding
 
-These points describe the data format, not the tax law. The first point is carried over from the legacy Guide and was not checked. The others were checked on 19 September 2026 against KoSIT's XRechnung specification, version 3.0.2 (named, not linked). The specification of the format in use decides.
+These points describe the data format. The amount datatype and line-net formula are checked against XRechnung 3.0.2 sections 8.1 and 12.5 (PEPPOL-EN16931-R120); the tax-group rule is BR-CO-17. The specification of the format in use decides, and no rounding mode is inferred.
 
-- **Line-level rounding:** net amount = quantity × unit price, rounded to 2 decimal places
+- **Line net amount (BT-131):** quantity × (item net price / price-base quantity), plus line charges, less line allowances (PEPPOL-EN16931-R120). Amounts are expressed with two decimal places (section 8.1). Quantity × unit price alone describes only the case with a price-base quantity of one and no line charges or allowances.
 - **Tax amount rounding:** the format has no tax amount per line. The tax is worked out once per VAT breakdown group (BG-23), that is per tax category and rate: the group's taxable amount (BT-116) times its rate (BT-119), divided by 100, rounded to two decimal places (rule BR-CO-17). The legacy Guide's tax amount per line was wrong
 - **Category totals:** for each tax category and each rate within it, the taxable amount (BT-116) must equal the sum of the line net amounts (BT-131) with that category and rate, plus document level charges, less document level allowances with that category and rate (rule BR-S-8 for category S)
 - **Validation tolerance:** the legacy Guide stated a one-cent tolerance per tax subtotal group. No allowed page prints it, so the amount was removed
@@ -396,10 +396,10 @@ These points describe the data format, not the tax law. The first point is carri
 
 ### Multi-Rate Invoice Handling
 
-Carried over from the legacy Guide (data format, not checked on an official page), except where a law or KoSIT's specification is named.
+The following ordinary German invoice categories are checked against the named XRechnung rules and the current bundle’s code list. The list is not an exhaustive method for every foreign VAT system.
 
 - **Separate tax subtotal group per rate:** each VAT rate requires a separate tax subtotal group (BG-23). The law demands the net amount broken down by tax rate and by exemption (§ 14(4) no. 7 UStG)
-- **Tax category codes:** KoSIT's XRechnung specification allows only S (Standard rate), Z (Zero rated goods), E (Exempt from tax), AE (VAT Reverse Charge), K (intra-Community supply), G (export, tax not charged), O (outside scope of tax), and L and M for the Canary Islands and for Ceuta and Melilla. The legacy Guide's code AA for the reduced rate is not in that list. A reduced-rate line carries S with its own rate: rule BR-S-5 asks only that the rate under S be greater than zero
+- **Tax category codes:** For ordinary German invoices, the codes are S (Standard rate), Z (Zero rated goods), E (Exempt from tax), AE (VAT Reverse Charge), K (intra-Community supply), G (export, tax not charged), O (outside scope of tax), and L and M for the Canary Islands and for Ceuta and Melilla. The current validator also recognises code B under its Italian-only conditions; that foreign method is outside this Guide. The legacy Guide's code AA for the reduced rate is not in that list. A reduced-rate line carries S with its own rate: rule BR-S-5 asks only that the rate under S be greater than zero
 - **Reverse charge category code:** for reverse charge (§ 13b UStG), use category code AE with a rate of zero. The invoice must carry the words "Steuerschuldnerschaft des Leistungsempfängers", and no tax is shown (§ 14a(5) UStG). The e-invoice duty applies to reverse-charge supplies between two German businesses (decree section 14.1(4))
 - **Tax exemption reason population:** the tax exemption reason (BT-120/BT-121) must be given for the categories E, AE, G and O (rules BR-E-10, BR-AE-10, BR-G-10, BR-O-10) and must NOT be given for the zero rated category Z (rule BR-Z-10). The law demands a note that an exemption applies (§ 14(4) no. 8 UStG)
 - **Partly exempt invoices.** If only part of what is billed falls under the e-invoice duty, for example taxable and § 4 nos. 8 to 29 exempt items together, the whole invoice must be an e-invoice (decree section 14.1(4))
@@ -432,13 +432,13 @@ German VAT law (§ 14(4) UStG, https://www.gesetze-im-internet.de/ustg_1980/__14
 | Format | Keep the invoice in the format in which it was received (decree section 14b.1(1); GoBD paragraph 131). For an e-invoice, at least the structured part must be kept so that it is unchanged and in its original form, and the tax office must be able to evaluate it by machine (decree section 14b.1(5)) |
 | GoBD compliance | The GoBD (ministry letter of 28 November 2019, changed on 11 March 2024 and 14 July 2025) apply for income tax and bookkeeping purposes. For VAT alone, the ministry says that storing e-invoices outside a GoBD-compliant system is as a rule ("regelmäßig") no breach of § 14b(1) UStG (decree section 14b.1(1)) |
 | Hybrid invoices (ZUGFeRD) | It is enough to keep the structured part. The human-readable part must be kept only if it holds extra or different information that matters for tax, for example booking notes or qualified electronic signatures (GoBD paragraphs 119 and 131). The XML must not be lost through a format change, for example to TIFF (GoBD paragraph 125) |
-| Outgoing invoices | With an invoicing program, no picture copy of the outgoing invoice (a PDF, or the PDF part of a hybrid file) needs to be stored, if an identical copy can be produced on request at any time (GoBD paragraph 76) |
+| Outgoing invoices | GoBD 76 permits omitting the outgoing image/PDF copy only under the preceding full-content/highest-machine-evaluability conditions and if an identical copy can be produced on request at any time. The actually processed format must carry the full content with the highest machine evaluability; otherwise keep both formats. Among the additional requirements, continuously historise master data and terms; document which terms and original format applied; retain the original layout as a template and historise changes; keep invoicing data machine-evaluable and immutable. Reproducing a current-looking image while overwriting historical customer/terms/layout data does not establish the waiver. This does not remove the separate structured-original/XML duties. |
 | Content, not picture | Vouchers received as structured data need to match in content only, not in appearance (GoBD paragraph 118) |
 | Immutability | Authenticity of origin, integrity of content and legibility must be secured for the whole period (§ 14b(1) sentence 2 with § 14(3) UStG). For an e-invoice, legible means machine-readable; a human-readable copy is not required (decree section 14.4(3)). A qualified electronic signature, if used, must be kept too (decree section 14b.1(6)) |
-| Verfahrensdokumentation | The legacy Guide says written procedural documentation of the e-invoice process (receipt, processing, archiving) is mandatory. That comes from the GoBD main letter of 28 November 2019, which is not among the pages read for this Guide. Carried over, not checked |
+| Verfahrensdokumentation | GoBD 150–155 requires clear, current process documentation allowing a knowledgeable third party to understand and check the system within reasonable time; its extent depends on the actual business/system complexity. Describe creation, indexing, processing, storage, retrieval, machine evaluation, security and reproduction. Documentation must correspond to the programme versions actually used, with traceable dated/version history retained as long as needed to understand the records. Under paragraph 155, missing or inadequate documentation is not a substantive formal defect justifying rejection of the books where traceability and verifiability are not impaired; no automatic penalty or universal certification follows. |
 | Storage location | In Germany. Electronic storage elsewhere in the EU is allowed if full online access, download and use of the data are secured; the tax office must then be told the place (§ 14b(2) and (4) UStG). Outside the EU only under § 146(2b) AO, which needs the tax office's approval on application (§ 14b(5) UStG) |
 | Audit access | Three forms under § 147(6) AO: the tax office inspects the stored data and uses the system itself (Z1, direct access); it demands that the data be evaluated by machine as it specifies (Z2, indirect access); or it demands that the data be handed over in a machine-readable format (Z3, data handover, for example on a data carrier or through a data exchange platform). The legacy Guide still called Z3 a data carrier handover; the GoBD change of 11 March 2024 renamed it |
-| Conversion | Converting an incoming electronic document to another format is allowed only under the conditions of GoBD paragraph 135 (GoBD paragraph 131). Paragraph 135 itself is in the main letter, which was not read. The legacy Guide's summary: the original must also be kept and the conversion documented |
+| Conversion | Under GoBD 135, the default for in-house conversion is to retain both versions, assign them to the same record/index and mark the converted one. Converted-only retention is permitted only if no image/content changes, no other retention-required information is lost, proper lossless conversion is documented, and machine evaluability/tax-authority access is unrestricted. This general exception does not permit losing mandatory original structured invoice data or the XML barred from loss by GoBD 125; keep the independent VAT structured-original rule above. Actual conversion and compliance require records, not a software-brand assumption. |
 | Validation report | The ministry advises keeping it as proof (decree section 14.5(1)) |
 
 Sources for this section: § 14b UStG at https://www.gesetze-im-internet.de/ustg_1980/__14b.html , § 147 AO at https://www.gesetze-im-internet.de/ao_1977/__147.html , and the GoBD change letter of 14 July 2025 at https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4
@@ -452,7 +452,7 @@ Sources for this section: § 14b UStG at https://www.gesetze-im-internet.de/ustg
 | Not issuing an invoice, or not in time, against § 14(2) sentence 2 UStG, intentionally or recklessly (§ 26a(2) no. 1 UStG) | Fine of up to five thousand euros ("bis zu fünftausend Euro", § 26a(3) UStG) |
 | Not keeping a copy of an issued invoice or a received invoice for at least eight years, intentionally or recklessly (§ 26a(2) no. 2 UStG) | Fine of up to five thousand euros |
 | A private recipient not keeping the invoice or proof of a property-related service for at least two years, intentionally or recklessly (§ 26a(2) no. 3 UStG) | Fine of up to one thousand euros ("bis zu tausend Euro") |
-| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not a proper invoice under §§ 14 and 14a UStG, so in principle it gives no right to deduct input tax (decree section 15.2a(1)). The issuer can cure this by issuing an e-invoice afterwards that refers specifically and clearly to the first invoice (15.2a(7)). Without that, the decree's paragraph 15.2a(1a), on deducting input tax without a proper invoice, also applies to this case, and the ministry adds that a correct and complete other invoice will "regelmäßig" meet its conditions. The earlier sentences of 15.2a(1a), which set those conditions, are not in the letter and were not read |
+| Other invoice where an e-invoice was due: input VAT deduction | The invoice is not proper under §§ 14/14a, so it gives no deduction in principle (UStAE 15.2a(1)). A later e-invoice referring specifically and clearly to it supplies the ordinary cure (15.2a(7)). Without cure, the full 15.2a(1a) strict-evidence route requires an actual invoice, although formally faulty, and objective evidence allowing easy, unambiguous verification of every material condition: actual goods/services supplied by another entrepreneur for the claimant's taxable outputs and VAT actually paid. An invoice or copy openly showing VAT is necessary to prove payment of that tax; an invoice cannot be dispensed with entirely. Establish supply timing rather than automatically assuming it equals the invoice date where there are doubts. The authority need not find missing information itself; doubts and gaps fall on the claimant. Sentences 12–14 expressly apply this to wrong-format invoices and say an otherwise correct, complete invoice regularly meets the conditions. Stipulated ordinary domestic taxable supply above the small-invoice limit: a complete PDF showing EUR 1,000 net/EUR 190 legally due VAT, actual business supply and EUR 1,190 payment, all otherwise eligible under § 15 with objective records, can support EUR 190 input despite the wrong format. A missing invoice/open VAT, unproved supply/payment or other failed material gate is not presumed to support that deduction. Contested evidence requires actual resolution; neither any-PDF credit nor all-PDF denial is the method. |
 | Estimated tax assessment | The tax office estimates the tax base where books or records that must be kept cannot be presented (§ 162(2) AO) |
 | GoBD non-compliance | § 158 AO makes books and records the basis of taxation if they meet §§ 140 to 148 AO, and not so far as there is reason to doubt that they are correct. Where they are not taken as the basis, the tax office estimates (§ 162(2) AO). The legacy Guide's "safety margins" and "penalty surcharges" are not on the pages read and were removed |
 | Repeated/wilful violations | Tax evasion (Steuerhinterziehung) under § 370 AO for deliberate cases. Refer to a specialist |
@@ -497,7 +497,7 @@ Sources for this section: § 14b UStG at https://www.gesetze-im-internet.de/ustg
 ### GoBD and Tax Audit
 
 - Tax auditors may use Z1 (direct access), Z2 (machine evaluation by the taxpayer as the office specifies) or Z3 (data handover) for archived e-invoices: see Section 8
-- Verfahrensdokumentation must describe the e-invoice workflow from receipt to archiving (legacy statement, from the GoBD main letter, not checked)
+- Verfahrensdokumentation follows the actual GoBD 150–155 process/version-history method and paragraph 155 qualification in Section 8. The documentation and archive/implementation records must describe the actual workflow; no universal software certification is asserted.
 - If the archive cannot be produced in an audit, the tax office can estimate (§ 162 AO, https://www.gesetze-im-internet.de/ao_1977/__162.html), and a delay payment can be set when data access is not granted: see Section 9
 
 ## Section 11: Cases the ministry has settled
@@ -525,7 +525,7 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 3. Check the lasting exceptions: small invoices (§ 33 UStDV), passenger tickets (§ 34 UStDV), invoices of a Kleinunternehmer (§ 34a UStDV). These may always be other invoices. https://www.gesetze-im-internet.de/ustdv_1980/__33.html and https://www.gesetze-im-internet.de/ustdv_1980/__34.html and https://www.gesetze-im-internet.de/ustdv_1980/__34a.html
 4. Check the transition relief in § 27(38) UStG: the year of the supply, the day the invoice is sent and, for 2027 sales, the issuer's total turnover of the previous calendar year. If the relief applies and the issuer wants to use it: paper, or with the recipient's consent another electronic format. https://www.gesetze-im-internet.de/ustg_1980/__27.html
 5. If an e-invoice is due or wanted, pick an allowed format: XRechnung, ZUGFeRD from version 2.0.1 without MINIMUM and BASIC-WL, another format that meets the European standard, or an agreed format that allows full extraction. Put every detail of § 14(4) and § 14a UStG into the structured part. Ministry letter of 15 October 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-10-15-einfuehrung-obligatorische-e-rechnung.pdf?__blob=publicationFile&v=5
-6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. The customer's consent to the e-invoice is not needed. Keep proof of sending. Same letter as step 5.
+6. Validate the file, keep the validation report, and send it by a channel agreed with the customer. Apply the consent table before transmission: no consent for the domestic duty or its stated domestic § 33/34/34a cases; obtain consent for the remaining voluntary cases. Keep proof of sending. Same letter as step 5.
 7. On the receiving side: make sure e-invoices can be received, display the XML with a viewer (the tax administration offers one at https://www.elster.de/eportal/e-rechnung ), and check the invoice details before deducting input tax under § 15 UStG. https://www.gesetze-im-internet.de/ustg_1980/__15.html
 8. Correct a faulty invoice under § 31(5) UStDV with a document that refers specifically and clearly to it. Where an e-invoice was due, the correction is an e-invoice too. https://www.gesetze-im-internet.de/ustdv_1980/__31.html
 9. Store the structured part unchanged, in the format received, for the period in § 14b(1) UStG, and keep it machine-readable for the tax office. https://www.gesetze-im-internet.de/ustg_1980/__14b.html
@@ -550,7 +550,7 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 - Fine proceedings and anything that may be tax evasion.
 - Disputes between the parties over format or channel: the ministry treats these as civil law.
 - Self-billing and the 2027 turnover test, VAT groups, and any case where it is unclear whose turnover counts.
-- An invoice sent after 31 December 2026 for a sale made in 2025 or 2026: the statute's wording gives no relief, and the pages read do not discuss it.
+- For an ordinary December 2026 supply first invoiced in January 2027, apply the selected default-duty method in Section 2, not a blanket referral. For other late 2025/2026 invoices, test the actual § 14 duty and § 27(38) supply/transmission dates; refer only unresolved establishment, exemption, prior advance/standing-invoice or other facts outside the stated ordinary fixture.
 - E-invoicing duties of other countries, and invoices under § 14(7) UStG that follow another member state's rules.
 - GoBD procedural documentation and the choice of an archive system.
 - The planned reporting system: there is no law yet.
@@ -567,6 +567,12 @@ All from the letter of 15 October 2025 (decree sections in brackets) at https://
 - Finance ministry, GoBD change letters of 11 March 2024 and 14 July 2025: https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/AO-Anwendungserlass/2024-03-11-aenderung-gobd.pdf?__blob=publicationFile&v=4 and https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Weitere_Steuerthemen/Abgabenordnung/2025-07-14-GoBD-2-aenderung.pdf?__blob=publicationFile&v=4
 - Finance ministry, tax booklet (Steuern von A-Z), 2025 edition: https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9
 - ELSTER, e-invoice viewer of the tax administration, and the document upload function: https://www.elster.de/eportal/e-rechnung and https://www.elster.de/eportal/formulare-leistungen/alleformulare/belegnachreichung
+- Technical sources read on 29 October 2026: [KoSIT XRechnung 3.0.2 specification](https://xeinkauf.de/app/uploads/2024/07/302-XRechnung-2024-06-20.pdf), selected fields, amount datatype and PEPPOL-EN16931-R120; [current version list and bundle](https://xeinkauf.de/xrechnung/versionen-und-bundles/), whose selected schema and configuration members establish namespaces and validation layers. No full bundle execution is claimed.
+- [KoSIT identifier guidance, 2 January 2025](https://xeinkauf.de/app/uploads/2025/01/2025-01-02_Germany_Identifier_v.1.1_eng.pdf), selected 0204/9930 addressing clauses; [FeRD profile FAQ](https://www.ferd-net.de/standards/zugferd-faq), selected profile definitions. These are technical publisher statements, separate from the VAT law.
+- Federal procurement office: [current platform and consolidation explanation](https://e-rechnung-bund.de/), [upload instructions](https://e-rechnung-bund.de/ubertragungskanale/upload/) and [e-mail instructions](https://e-rechnung-bund.de/ubertragungskanale/e-mail/), selected operational clauses read on 29 October 2026. No registration, login or submission was used.
+- [Official BMF 2026 AO annex, GoBD 76/135/150–155/185](https://usth.bundesfinanzministerium.de/ao/2026/Anhaenge/BMF-Schreiben-und-gleichlautende-Laendererlasse/Anhang-33/inhalt.html): selected operative conditions/effect actually read on 29 October 2026. This completes the stated outgoing-copy, conversion and documentation scopes; no full archive-system audit is claimed.
+- Selected legal clauses actually read on 29 October 2026: UStG §§ 14(1)/(2),27(38),26a(2)/(3); ERechV 4(3); BMF 15 October 2025 consent/input/effect clauses. The complete strict input-evidence conditions were actually read in the [retained full UStAE, section 15.2a(1a)](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=2), not inferred from the amending letter alone.
+- Not yet confirmed: the exact Leitweg-ID validation pattern and the three additional portal checks identified in Section 6; and whether wrong-format invoicing attracts the non-issue fine. These limits are not resolved by technical schema conformity.
 
 ## Disclaimer
 

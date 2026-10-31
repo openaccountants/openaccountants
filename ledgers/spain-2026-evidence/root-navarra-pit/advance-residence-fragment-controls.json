@@ -1,0 +1,9 @@
+{
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "fragment_sha256": "ef44723a1cf476882249592ea656c507b48ab2922e6ac35e600bbde11f502bb3",
+  "current_units": 23,
+  "rows": 198,
+  "selected_article_subsection_scopes": 31,
+  "actual_original_language_native_checks": "all output rows pass literal LF comparison",
+  "status": "Writer fragment only, no independent PASS; root Navarra finite fragment complete; payments/business/returnthreshold independently owned by writerB; full Guide ledger owned by writerB"
+}

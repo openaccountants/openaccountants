@@ -1,11 +1,11 @@
 ---
 name: de-income-tax
 description: "Use this skill to turn a German self-employed person's year of bank transactions into profit (Anlage EÜR) and the 2026 income tax, for a Freiberufler (Anlage S) or a sole trader (Anlage G) resident in Germany. Tax year 2026, filed in 2027. Covers sorting receipts and costs, the § 4(5) EStG limits (entertainment 70%, gifts EUR 50, home office EUR 6 a day up to EUR 1,260), cars, low-value assets (EUR 800), depreciation, § 7g, the § 19 UStG small-business limits (EUR 25,000 / 100,000), the 2026 tariff, solidarity surcharge, church tax, the § 35 trade tax credit, prepayments, deadlines and penalties. Trigger on: Einkommensteuer Selbständige, Anlage EÜR, Betriebsausgaben, Bewirtung, Arbeitszimmer, GWG, Vorauszahlungen, Gewerbesteuer Anrechnung, Freiberufler tax. Out of scope: employees (de-employee-income-tax), non-residents (de-non-resident-tax), trade tax computation (de-trade-tax), companies (de-corporate-tax), partnerships."
-version: 2.1
+version: 2.6
 jurisdiction: DE
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-23
+last_updated: 2026-10-29
 category: international
 depends_on:
   - income-tax-workflow-base
@@ -57,15 +57,15 @@ See also, and do not repeat here:
 | Home office day rate (Tagespauschale) | EUR 6 per day worked mainly at home without going to an outside place of work, max EUR 1,260 a year | 2026 | Same, § 4(5) no. 6c |
 | Home office room that is the centre of all work | Actual cost, or EUR 1,260 a year flat (one twelfth less per month not met) | 2026 | Same, § 4(5) no. 6b |
 | Home to own premises | EUR 0.38 per full km one way, per day; cap EUR 4,500 unless a car is used | 2026 | https://www.gesetze-im-internet.de/estg/__9.html (§ 9(1) sentence 3 no. 4), applied by § 4(5) no. 6 EStG |
-| Meals on business trips | EUR 28 for a full day away; EUR 14 for arrival, departure, or more than 8 hours away | 2026 | Same, § 9(4a), applied by § 4(5) no. 5 EStG |
+| Meals on business trips | EUR 28 for a full 24-hour day away; EUR 14 for arrival/departure if an overnight away from home occurs on that, preceding or following day, or for a non-overnight day more than 8 hours away | 2026 | Same, § 9(4a), applied by § 4(5) no. 5 EStG |
 | Business trips in a private car | EUR 0.30 per km, or the actual cost share | 2026 | BMF, 2026 Anlage EÜR instructions, line 72 (URL in Sources) |
 | Business car, private use | 1% of list price per month, only if business use is over 50% | 2026 | https://www.gesetze-im-internet.de/estg/__6.html (§ 6(1) no. 4) |
-| Low-value asset (GWG) | Expensed at once if cost net of deductible VAT is at most EUR 800; register if over EUR 250 | 2026 | Same, § 6(2) |
+| Low-value asset (GWG) | Expensed at once if cost reduced by contained input VAT for the eligibility test is at most EUR 800; the expense includes irrecoverable VAT; register if over EUR 250 | 2026 | Same, § 6(2) |
 | Pool (Sammelposten), instead | Assets over EUR 250 up to EUR 1,000, one fifth a year over five years | 2026 | Same, § 6(2a) |
 | Computer hardware and software | Useful life of one year may be taken: full cost in the year bought, still listed on Anlage AVEÜR | 2026 | BMF, 2026 Anlage EÜR instructions, line 34, citing the BMF letter of 22 February 2022 |
 | Declining balance | Movable assets bought 1 July 2025 to 31 December 2027: up to 3 × straight-line rate, max 30% | 2026 | https://www.gesetze-im-internet.de/estg/__7.html (§ 7(2)) |
 | Electric vehicles bought 1 July 2025 to 31 December 2027 | 75% in the year bought, then 10%, 5%, 5%, 3%, 2% | 2026 | Same, § 7(2a) |
-| Investment deduction (§ 7g) | Up to 50% of expected cost; profit before it not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
+| Investment deduction (§ 7g) | Up to 50% of expected cost; profit calculated without investment deductions or § 7g(2) add-backs not over EUR 200,000; open deductions per business not over EUR 200,000 | 2026 | https://www.gesetze-im-internet.de/estg/__7g.html |
 | § 7g special depreciation | Up to 40% in total over the year bought and the four after | 2026 | Same, § 7g(5) |
 | Pension contributions | 100% within a cap of EUR 30,826 (EUR 61,652 joint) | 2026 | https://www.gesetze-im-internet.de/estg/__10.html (§ 10(3)); ceiling https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html |
 | Health, care and other insurance | Cap EUR 2,800 (EUR 1,900 with tax-free help towards cover, such as the Künstlersozialkasse); basic health and care cover always in full; statutory health with sick pay cut by 4% | 2026 | Same, § 10(1) no. 3 and § 10(4) |
@@ -89,11 +89,15 @@ See also, and do not repeat here:
 | Income tax, surcharge, church tax, prepayments | Never a business expense (§ 12 no. 3 EStG). Church tax paid is a special expense in Step 2 (§ 10(1) no. 4 EStG) |
 | Trade tax (Gewerbesteuer) | Never deductible (§ 4(5b) EStG). Records that call it an expense are wrong for any year since 2008 |
 | Fines from a court or authority | Not deductible (§ 4(5) no. 8 EStG) |
-| Transfers between own accounts, loan principal, private withdrawals | Leave out. Interest on a business loan is an expense |
+| Transfers between own accounts, loan principal, private withdrawals | Leave out of ordinary cash receipts/expenses, but record withdrawals and deposits separately. Business-loan interest is subject to § 4(4a) EStG, also under EÜR: overwithdrawals are withdrawals exceeding profit plus deposits. The statutory add-back is 6% of current plus prior overwithdrawals less prior underwithdrawals, capped at the year's interest less EUR 2,050. Profit for this test excludes the add-back itself. Interest on fixed-asset acquisition/production loans is unaffected. The complete multi-year balance and mixed-debt allocation method is not set out here |
 | Wages, rent received, interest, dividends | Not business income. Other forms (Anlage N, V, KAP) |
 | Cash withdrawals | Ask what the cash paid for. Default: leave out |
 
-**Cars.** A car used more than 50% for business can be a business asset: all costs are expenses and private use is added back at 1% of the gross list price per month (§ 6(1) no. 4 EStG), or by logbook. A private car used for business trips: EUR 0.30 per km or the actual cost share. Trips from home to the own office count only at EUR 0.38 per km one way. Electric and hybrid cars have special rules: refer.
+**Cars.** A car used more than 50% for business can be a business asset: all costs are expenses and private use is added back at 1% of the gross list price per month (§ 6(1) no. 4 EStG), or by logbook. A private car used for business trips: EUR 0.30 per km or the actual cost share. Home-to-premises travel uses the commuting allowance and, for a business car, the additional adjustment below. Electric and hybrid cars have special rules: refer.
+
+**Business-car commuting adjustment, ordinary combustion car.** In addition to the separate private-use add-back, § 4(5) no. 6 EStG disallows `max(0, D − A)` for travel between home and the business premises. Under the list-price method, `D = 0.0003 × domestic list price at first registration × full one-way kilometres × calendar months`. `A` is the statutory commuting allowance: for this ordinary car case, `EUR 0.38 × full one-way kilometres × actual commuting days`, applying the § 9(1) no. 4 distance and benefit-reduction conditions. When private use is valued under § 6(1) no. 4 sentence 1 or 3, including the logbook method, use the actual documented costs of these commuting trips as `D` instead. Electric/hybrid reductions and family-home trips need their separate rules.
+
+For a stipulated ordinary car with a EUR 40,000 list price, 20 full km, 12 months and 200 commuting days, `D = 2,880`, `A = 1,520`, and the extra nondeductible amount is EUR 1,360. With actual/logbook commuting costs of EUR 1,000 the extra amount is zero; with EUR 2,000 it is EUR 480. These amounts are separate from the private-use add-back.
 
 **Phone and internet.** Deduct the business share shown by records. The employee flat rate from the wage tax guidelines is not a rule for the self-employed.
 
@@ -103,7 +107,7 @@ See also, and do not repeat here:
 
 **Step 3: tax.** Apply the tariff (or splitting). For a trader, subtract the § 35 credit: the lowest of 4.0 × Messbetrag, the tax that falls on trade income (positive trade income / all positive income × tariff tax), and the trade tax actually payable. Unused credit is lost. Then the surcharge on the tax after the credit, and church tax on the tax before the credit (§ 51a(2) EStG). Subtract prepayments paid.
 
-**Losses.** A loss offsets other income of the same year, then goes back one year or forward without time limit (§ 10d EStG; see de-einkommensteuer-freelancer).
+**Losses.** A loss offsets other income of the same year, then can be carried back, subject to the statutory cap, to the immediately preceding year and any remainder to the second preceding year, or forward without time limit (§ 10d EStG; see de-einkommensteuer-freelancer).
 
 ## Deadlines and filing
 
@@ -127,7 +131,7 @@ See also, and do not repeat here:
 
 - **Non-residents.** A person without a German home or habitual abode is taxed only on German income, including profit from a German permanent establishment or self-employed work done in Germany (§ 49 EStG). Use de-non-resident-tax.
 - **Foreign clients.** Fees from foreign clients for work done in Germany by a resident are German income in full. VAT on cross-border services: germany-vat-return.
-- **Foreign tax, foreign establishment, moving in or out.** Foreign tax credits are in de-non-resident-tax (§ 34c EStG). A treaty may exempt profit of a foreign establishment, which then raises the rate (§ 32b EStG): refer. Departure with shares: leaving-germany-exit-tax.
+- **Foreign tax, foreign establishment, moving in or out.** Foreign tax credits are in de-non-resident-tax (§ 34c EStG). If a treaty exempts profit of a foreign establishment, test progression separately under § 32b EStG, including its statutory exceptions; exemption does not itself establish progression. Refer for that treaty and progression assessment. Departure with shares: leaving-germany-exit-tax.
 - **§ 7g abroad.** The investment deduction needs the asset used in a German establishment (§ 7g(1) EStG).
 
 ## Worked examples
@@ -215,7 +219,7 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 1. What exactly is the work, and is a trade registered? This decides Anlage S or G, trade tax and the § 35 credit.
 2. VAT status: turnover in 2025 and expected in 2026, and whether the small-business rule is used. This decides gross or net figures.
 3. Home office: days worked mainly at home, and whether a separate room is the centre of all work.
-4. Car: business asset or private, business-use share, and logbook or 1% method.
+4. Car: business asset or private, business-use share, logbook or 1% method, domestic list price at first registration, months used, full one-way distance, actual commuting days and attributable actual costs if using actual/logbook valuation.
 5. Health and pension cover: statutory, private or Künstlersozialkasse, and the insurer's annual certificates.
 6. Married and assessed jointly? Church member, and in which state?
 
@@ -256,5 +260,7 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | SVBezGrV 2026 § 4 (miners' pension ceiling EUR 124,800) | https://www.gesetze-im-internet.de/svbezgrv_2026/__4.html | 2026-10-23 |
 | BMF, Anlage EÜR 2026 form and instructions (letter of 1 September 2026) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Einkommensteuer/2026-09-01-anlage-EUER-2026.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
 | BMF booklet "Steuern von A bis Z" (Stand January 2025; church tax 8 or 9%) | https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/steuern-von-a-z.pdf?__blob=publicationFile&v=9 | 2026-10-23 |
+| EStG § 4(5) nos. 5–6 (business-car commuting adjustment and meal incorporation), selected operative clauses read | https://www.gesetze-im-internet.de/estg/__4.html | 2026-10-29 |
+| EStG § 9(1) no. 4 and (4a) (distance allowance and qualifying meal branches), selected clauses read | https://www.gesetze-im-internet.de/estg/__9.html | 2026-10-29 |
 
 Not yet confirmed: which states charge 8% and which 9% church tax, and their rounding (state church tax rules, not on a federal page); the one-year life for computers rests on a BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, not on the statute; the EUR 0.30 per km rate for business trips rests on the same instructions; the 2026 main form and Anlage S and G line numbers (ELSTER's 2026 guide is not yet published).

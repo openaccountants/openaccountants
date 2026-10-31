@@ -1,0 +1,626 @@
+{
+  "created_at": "2026-10-28T00:04:06.171621+00:00",
+  "scope": "Selected public primary-source and bounded independent-review evidence. Private writer manifests also describe omitted full canonical snapshots and helper scripts. No whole-pack review or country readiness claim.",
+  "candidate_sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+  "baseline_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "files": [
+    {
+      "original_path": "actual-operative-web-reads.json",
+      "stored_path": "actual-operative-web-reads.json.gz",
+      "original_bytes": 29860,
+      "original_sha256": "0dea6fbbb84a5cfd36c01f397aab409a12b13c135a9990aaa82177c5474aca0e",
+      "stored_bytes": 8992,
+      "stored_sha256": "1eb5275e355c19c020760660a2327b339ee257e511e62ba8be19e941c3ff2488",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "actual-read-receipts.json",
+      "stored_path": "actual-read-receipts.json",
+      "original_bytes": 2434,
+      "original_sha256": "df3980eeca4bb53dff4f090e84690c86257ee8940f3c13a11844111a7451562f",
+      "stored_bytes": 2434,
+      "stored_sha256": "df3980eeca4bb53dff4f090e84690c86257ee8940f3c13a11844111a7451562f",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "addition.md",
+      "stored_path": "addition.md.gz",
+      "original_bytes": 5669,
+      "original_sha256": "b50dd14cf079a457798e1b37c68f6a54165ebe78fbfdc166451af8e23d07b1fa",
+      "stored_bytes": 2401,
+      "stored_sha256": "600e50717e4eff3b778ff3c2148562c1dcdcaf268331e85d632b8a893976c890",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "candidate.diff",
+      "stored_path": "candidate.diff.gz",
+      "original_bytes": 19708,
+      "original_sha256": "6521e8c96f946308d6bb33a747b74b6e17867e465283c12375efd0c260120b19",
+      "stored_bytes": 7098,
+      "stored_sha256": "76332a6a6e58b4b1dabcb98ab66e7310c22c5362f01ebba1ab6a52f9223f83b3",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "controls.json",
+      "stored_path": "controls.json",
+      "original_bytes": 5574,
+      "original_sha256": "f1a39a5b7dbc7f54f60c9b07aab1be7e0d8827922261a9ff46abeea0a3d66aaa",
+      "stored_bytes": 5574,
+      "stored_sha256": "f1a39a5b7dbc7f54f60c9b07aab1be7e0d8827922261a9ff46abeea0a3d66aaa",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "court-correction-web-read.json",
+      "stored_path": "court-correction-web-read.json.gz",
+      "original_bytes": 11569,
+      "original_sha256": "22a93c4a48abc90ab10bf54a281cb519b9ead118d6cd7212bdc04f141fdbccfb",
+      "stored_bytes": 3182,
+      "stored_sha256": "61714b78f85b1ac820bd648b72886f4b707f81322d7f2da52ec521b87c450283",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "draft-options.md",
+      "stored_path": "draft-options.md",
+      "original_bytes": 970,
+      "original_sha256": "2366bec9b206dbc65c6211daeed628a1cc826d039a4a18656c17ba2d13459dfc",
+      "stored_bytes": 970,
+      "stored_sha256": "2366bec9b206dbc65c6211daeed628a1cc826d039a4a18656c17ba2d13459dfc",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "extra-fetch-receipts.json",
+      "stored_path": "extra-fetch-receipts.json",
+      "original_bytes": 1856,
+      "original_sha256": "8e015ab5ce0668b4ea56694cf8e68a8558949f7268157ad6a51e44321a5cf44e",
+      "stored_bytes": 1856,
+      "stored_sha256": "8e015ab5ce0668b4ea56694cf8e68a8558949f7268157ad6a51e44321a5cf44e",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "frozen-manifest.json",
+      "stored_path": "frozen-manifest.json",
+      "original_bytes": 9484,
+      "original_sha256": "b7068457d7efe4847c72cbdb30f876d9279eba9edfebeb54b9b7e611c05312c4",
+      "stored_bytes": 9484,
+      "stored_sha256": "b7068457d7efe4847c72cbdb30f876d9279eba9edfebeb54b9b7e611c05312c4",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/addition.md",
+      "stored_path": "history/first-freeze-3bf4425f/addition.md.gz",
+      "original_bytes": 5187,
+      "original_sha256": "f876a32f33be683ac7d8e06572d906f3b56b164197e25c08341b02fbfffbf7d5",
+      "stored_bytes": 2252,
+      "stored_sha256": "e74d20425bae7a6acbacd1f27f195ca03bb2531220e7c0ec8af226a65661a557",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/candidate.diff",
+      "stored_path": "history/first-freeze-3bf4425f/candidate.diff.gz",
+      "original_bytes": 19226,
+      "original_sha256": "02b4fc1668bc9e2ac67061929a2d49ce59f6671c546a82c663a0773c0b5359dd",
+      "stored_bytes": 6957,
+      "stored_sha256": "98502cb455d4a2cf4cfc40a7edbd9e3ec1bc8c40b319ded0fd5d4861981d1018",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/controls.json",
+      "stored_path": "history/first-freeze-3bf4425f/controls.json",
+      "original_bytes": 4951,
+      "original_sha256": "51a1578cf7db2391bc095e925b993944fa6217823c2772daec899ec4e6989676",
+      "stored_bytes": 4951,
+      "stored_sha256": "51a1578cf7db2391bc095e925b993944fa6217823c2772daec899ec4e6989676",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/frozen-manifest.json",
+      "stored_path": "history/first-freeze-3bf4425f/frozen-manifest.json",
+      "original_bytes": 7029,
+      "original_sha256": "59a11653264831c59f055c30aa9c2eff5dd9893ff799fabd602dff24f4fe39e0",
+      "stored_bytes": 7029,
+      "stored_sha256": "59a11653264831c59f055c30aa9c2eff5dd9893ff799fabd602dff24f4fe39e0",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/oa-check-output.txt",
+      "stored_path": "history/first-freeze-3bf4425f/oa-check-output.txt.gz",
+      "original_bytes": 58,
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/preservation.json",
+      "stored_path": "history/first-freeze-3bf4425f/preservation.json",
+      "original_bytes": 842,
+      "original_sha256": "6c5305f989dc76731ca47905f74549cc95d9aa403ea233c1313e79ec7e46edf3",
+      "stored_bytes": 842,
+      "stored_sha256": "6c5305f989dc76731ca47905f74549cc95d9aa403ea233c1313e79ec7e46edf3",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/report.md",
+      "stored_path": "history/first-freeze-3bf4425f/report.md",
+      "original_bytes": 4807,
+      "original_sha256": "b2abb53895487881262417e73b9c10f9b23614ced46712a1ea72060658f9be04",
+      "stored_bytes": 4807,
+      "stored_sha256": "b2abb53895487881262417e73b9c10f9b23614ced46712a1ea72060658f9be04",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "history/first-freeze-3bf4425f/source-rows.md",
+      "stored_path": "history/first-freeze-3bf4425f/source-rows.md",
+      "original_bytes": 964,
+      "original_sha256": "a924c40492f061e405855abf2a90f886910cfde8527342ee4644b843a89774bc",
+      "stored_bytes": 964,
+      "stored_sha256": "a924c40492f061e405855abf2a90f886910cfde8527342ee4644b843a89774bc",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "oa-check-output.txt",
+      "stored_path": "oa-check-output.txt.gz",
+      "original_bytes": 58,
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "operative-extract-manifest.json",
+      "stored_path": "operative-extract-manifest.json",
+      "original_bytes": 1913,
+      "original_sha256": "d4994c1282d5f0a37c4b9de44ecfb2269ae052da327fa8370bf5a070e3bcbecb",
+      "stored_bytes": 1913,
+      "stored_sha256": "d4994c1282d5f0a37c4b9de44ecfb2269ae052da327fa8370bf5a070e3bcbecb",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "parent-review-corrections.diff",
+      "stored_path": "parent-review-corrections.diff.gz",
+      "original_bytes": 8925,
+      "original_sha256": "298e38f7941ae9d1cea72f8e44a65f6f7eda1f75125bc5dfdde717eb309493d2",
+      "stored_bytes": 2607,
+      "stored_sha256": "67370bb41250f164b08793b529e35f12763796af2c62f4dced395431dddc3486",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "preservation.json",
+      "stored_path": "preservation.json",
+      "original_bytes": 842,
+      "original_sha256": "203ec7a275836d04e8c82f359f35f91654c234da7966dfb3ee851e4ccb2a7a91",
+      "stored_bytes": 842,
+      "stored_sha256": "203ec7a275836d04e8c82f359f35f91654c234da7966dfb3ee851e4ccb2a7a91",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "raw-fetch-receipts.json",
+      "stored_path": "raw-fetch-receipts.json",
+      "original_bytes": 2324,
+      "original_sha256": "e044d7981d62db1390ae059da6394758fd85edbad2a214f224b2dba100afff5b",
+      "stored_bytes": 2324,
+      "stored_sha256": "e044d7981d62db1390ae059da6394758fd85edbad2a214f224b2dba100afff5b",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "report.md",
+      "stored_path": "report.md",
+      "original_bytes": 5621,
+      "original_sha256": "f55e16bed965e01073f71b617f065d2861d2a7b9b7a0ab4a9b158e7cc75fb8be",
+      "stored_bytes": 5621,
+      "stored_sha256": "f55e16bed965e01073f71b617f065d2861d2a7b9b7a0ab4a9b158e7cc75fb8be",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "review-fix-options.md",
+      "stored_path": "review-fix-options.md",
+      "original_bytes": 845,
+      "original_sha256": "535e904b738b82de973b3896912c882899ab8b5d812e2078238fb241a34819d2",
+      "stored_bytes": 845,
+      "stored_sha256": "535e904b738b82de973b3896912c882899ab8b5d812e2078238fb241a34819d2",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "root-independent/AEAT-2025-expenses.html",
+      "stored_path": "root-independent/AEAT-2025-expenses.html.gz",
+      "original_bytes": 27375,
+      "original_sha256": "7c6a40a40036dfc728dd6bf1ab58bd7e7f4b1350233bf58f2c908fdb0d64b58a",
+      "stored_bytes": 7924,
+      "stored_sha256": "9f66aebf0dca48499260b915c644ad7714bae8c51a80c53a0e3c5600614e1d4b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/AEAT-2025-expenses.txt",
+      "stored_path": "root-independent/AEAT-2025-expenses.txt.gz",
+      "original_bytes": 14903,
+      "original_sha256": "4d7315279bd899d6cbe260d902381e491de703f56a532f0ff799ee13cf0e9071",
+      "stored_bytes": 4716,
+      "stored_sha256": "76d968476093b69a50ff344502f5b3ecc2e7c8f736826141f9cfed88c2fedb2b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/ATIB-enactment.html",
+      "stored_path": "root-independent/ATIB-enactment.html.gz",
+      "original_bytes": 39170,
+      "original_sha256": "24ec50892d7c0f1050e2076dca745e5017de0eb992a785b2796b756b5a5fa54d",
+      "stored_bytes": 10468,
+      "stored_sha256": "bbc9e290f25fb936bc5a791ba741e978cce9d06330adc534f3ed5a9e81c9efab",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/ATIB-enactment.txt",
+      "stored_path": "root-independent/ATIB-enactment.txt.gz",
+      "original_bytes": 13720,
+      "original_sha256": "8278c6a3f787ae8660009fb31db949a53a550043332dc060b666f98a08ee24e8",
+      "stored_bytes": 4744,
+      "stored_sha256": "38753fa20d319d8d1c9badc07cbeb8cda5cfcd1bf632d89f6fd221b6b2f4dd6b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/Balearic-Law4-2026.html",
+      "stored_path": "root-independent/Balearic-Law4-2026.html.gz",
+      "original_bytes": 737136,
+      "original_sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+      "stored_bytes": 152216,
+      "stored_sha256": "115fd57238e13e27e9fdb6b4879ccc40bc79486b9d37a090e7a3837995e90f4e",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/Balearic-Law4-2026.txt",
+      "stored_path": "root-independent/Balearic-Law4-2026.txt.gz",
+      "original_bytes": 600801,
+      "original_sha256": "437129ff415433110904c9a8c7c602e9ea429af6a7b9094a093782a71cb03bdc",
+      "stored_bytes": 141665,
+      "stored_sha256": "7b5d074eef38b0d56fff543430a69601a3d358c043899dce0321fb2d7c15693f",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/Balearic-corrigendum.html",
+      "stored_path": "root-independent/Balearic-corrigendum.html.gz",
+      "original_bytes": 17511,
+      "original_sha256": "195c871add1302d762cef31c54adfa7397b39f8a55ab2a0f7d6f21df29a5ea22",
+      "stored_bytes": 4281,
+      "stored_sha256": "90d90fdc984db325ab5079c626c2252981172de566efd472276a2590cd6fb6b7",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/Balearic-corrigendum.txt",
+      "stored_path": "root-independent/Balearic-corrigendum.txt.gz",
+      "original_bytes": 3874,
+      "original_sha256": "d545c099456634bb41ad5a00ee0ca0d836113586f246f1848c77cc767395baea",
+      "stored_bytes": 1489,
+      "stored_sha256": "92a26e68f931de1e41f52ef85c16ee021e83ee62b194adecea4e6430e00dd066",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/LIRPF.html",
+      "stored_path": "root-independent/LIRPF.html.gz",
+      "original_bytes": 2028806,
+      "original_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "stored_bytes": 249841,
+      "stored_sha256": "1c6b02f3d86dffbba797defbb393a563eddddb30be0de5581b52349c70a25492",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/LIRPF.txt",
+      "stored_path": "root-independent/LIRPF.txt.gz",
+      "original_bytes": 900904,
+      "original_sha256": "513fd01d6cbec8efaf3d8ff48ccc1861585ef279e54e5be1ada34654584d5967",
+      "stored_bytes": 188240,
+      "stored_sha256": "11a44c33c37d843eb63edaf7129de3ee36225ea918cccf9435635e825e596d9a",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/RIRPF.html",
+      "stored_path": "root-independent/RIRPF.html.gz",
+      "original_bytes": 1000017,
+      "original_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "stored_bytes": 137311,
+      "stored_sha256": "6ee9508ad6ff8f79534f422a2e24507f918b486e6185d6a3ec6c3ef87efa32ad",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/RIRPF.txt",
+      "stored_path": "root-independent/RIRPF.txt.gz",
+      "original_bytes": 499774,
+      "original_sha256": "a4a09caf8dd9c0add4ac7d73df4e5937b29f444863290c582482b58c615a3ca5",
+      "stored_bytes": 106553,
+      "stored_sha256": "3a36dca03e293d4a6c8a67adb595cd5d08aef08d462f035e7d645016eca997d0",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "root-independent/application.json",
+      "stored_path": "root-independent/application.json",
+      "original_bytes": 374,
+      "original_sha256": "76dfa11bc0a85c42e673aa7b58b83b0f9d005e4747cdb7fcf49f4f9229cb8ac5",
+      "stored_bytes": 374,
+      "stored_sha256": "76dfa11bc0a85c42e673aa7b58b83b0f9d005e4747cdb7fcf49f4f9229cb8ac5",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "root-independent/checks.json",
+      "stored_path": "root-independent/checks.json",
+      "original_bytes": 7945,
+      "original_sha256": "c95625ea3c473e86ffc97b4fe2c9fcd90728a0cb4b1d536ef12096553012b28d",
+      "stored_bytes": 7945,
+      "stored_sha256": "c95625ea3c473e86ffc97b4fe2c9fcd90728a0cb4b1d536ef12096553012b28d",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "root-independent/report.md",
+      "stored_path": "root-independent/report.md",
+      "original_bytes": 3251,
+      "original_sha256": "e19b62516cb7025a6ba28608d8023d7c54970a067afdc2a80cd8ddb0123ab540",
+      "stored_bytes": 3251,
+      "stored_sha256": "e19b62516cb7025a6ba28608d8023d7c54970a067afdc2a80cd8ddb0123ab540",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "root-independent/source-receipts.json",
+      "stored_path": "root-independent/source-receipts.json",
+      "original_bytes": 3184,
+      "original_sha256": "71de61cd4e354bad77c165bdab2d76a3b23e34cbcb3872f7f95086186651717d",
+      "stored_bytes": 3184,
+      "stored_sha256": "71de61cd4e354bad77c165bdab2d76a3b23e34cbcb3872f7f95086186651717d",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "source-map.md",
+      "stored_path": "source-map.md",
+      "original_bytes": 3534,
+      "original_sha256": "82c603ca657845e6ba7ed8ee812a05f087407636fb2b02023be194fa71e2cb01",
+      "stored_bytes": 3534,
+      "stored_sha256": "82c603ca657845e6ba7ed8ee812a05f087407636fb2b02023be194fa71e2cb01",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "source-rows.md",
+      "stored_path": "source-rows.md",
+      "original_bytes": 964,
+      "original_sha256": "a924c40492f061e405855abf2a90f886910cfde8527342ee4644b843a89774bc",
+      "stored_bytes": 964,
+      "stored_sha256": "a924c40492f061e405855abf2a90f886910cfde8527342ee4644b843a89774bc",
+      "lossless_gzip": false
+    },
+    {
+      "original_path": "sources/aeat-employment-expenses-fresh.html",
+      "stored_path": "sources/aeat-employment-expenses-fresh.html.gz",
+      "original_bytes": 27375,
+      "original_sha256": "7c6a40a40036dfc728dd6bf1ab58bd7e7f4b1350233bf58f2c908fdb0d64b58a",
+      "stored_bytes": 7924,
+      "stored_sha256": "9f66aebf0dca48499260b915c644ad7714bae8c51a80c53a0e3c5600614e1d4b",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/aeat-employment-expenses-fresh.html.txt",
+      "stored_path": "sources/aeat-employment-expenses-fresh.html.txt.gz",
+      "original_bytes": 14987,
+      "original_sha256": "795377c814db7b8f9b3a0f1c731a1d359903326d04e8ee781d7b0c5ed0459853",
+      "stored_bytes": 4721,
+      "stored_sha256": "0eff8adfee3ed50609b03dd81a6bbbb3f946b48b2e8962969fe027f1a6492ab0",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/atib-enactment.html",
+      "stored_path": "sources/atib-enactment.html.gz",
+      "original_bytes": 39170,
+      "original_sha256": "5873be5c6a339175ee94c55024cce13e69dc0d35a7ed86034946e0a0f900c985",
+      "stored_bytes": 10476,
+      "stored_sha256": "dc14540fd740d36046c74e1a85c9e602392dfe2a659f6deff1a31f99cdea22c5",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/atib-enactment.html.txt",
+      "stored_path": "sources/atib-enactment.html.txt.gz",
+      "original_bytes": 14181,
+      "original_sha256": "e98abf9c2ab8f404986427947913fce9b7374214c839f66351e12f559ff21920",
+      "stored_bytes": 4806,
+      "stored_sha256": "f90da72f3b86423f2c53feeadf9c6933b9701cc33234548e7dc38273331a1a01",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/balearic-DF67.txt",
+      "stored_path": "sources/balearic-DF67.txt.gz",
+      "original_bytes": 18869,
+      "original_sha256": "85856afae8b5d7db7abdddb037ade7efe811b00362ad37830b4e1f5ef7ebfee0",
+      "stored_bytes": 4742,
+      "stored_sha256": "66f1a8008c33cb6f26232a650d8693805b81831d23793fddc48f34580977f477",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/balearic-DF72.txt",
+      "stored_path": "sources/balearic-DF72.txt.gz",
+      "original_bytes": 650,
+      "original_sha256": "085bf2339bf35aea8f9b712c06ed3a7fd744a27b368607389642c4a2570cff82",
+      "stored_bytes": 418,
+      "stored_sha256": "665a8c0accdd696401f88367c3aed7e1f116f9a2059f1de4a49b982dd5c380c4",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/balearic-corrigendum.html",
+      "stored_path": "sources/balearic-corrigendum.html.gz",
+      "original_bytes": 17511,
+      "original_sha256": "195c871add1302d762cef31c54adfa7397b39f8a55ab2a0f7d6f21df29a5ea22",
+      "stored_bytes": 4281,
+      "stored_sha256": "90d90fdc984db325ab5079c626c2252981172de566efd472276a2590cd6fb6b7",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/balearic-corrigendum.html.txt",
+      "stored_path": "sources/balearic-corrigendum.html.txt.gz",
+      "original_bytes": 4119,
+      "original_sha256": "51bf251f2b897fa11d4d245b730bf7586dbf5a05e24c62c1b834c6f36fc4488d",
+      "stored_bytes": 1542,
+      "stored_sha256": "381ce37acd76106db688958a03d39fb02fad0b203078fd29b7b7417ffa2ba044",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/balearic-enactment-fresh.html",
+      "stored_path": "sources/balearic-enactment-fresh.html.gz",
+      "original_bytes": 737136,
+      "original_sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+      "stored_bytes": 152216,
+      "stored_sha256": "115fd57238e13e27e9fdb6b4879ccc40bc79486b9d37a090e7a3837995e90f4e",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/lirpf-fresh.html",
+      "stored_path": "sources/lirpf-fresh.html.gz",
+      "original_bytes": 2028806,
+      "original_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "stored_bytes": 249841,
+      "stored_sha256": "1c6b02f3d86dffbba797defbb393a563eddddb30be0de5581b52349c70a25492",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/lirpf-fresh.html-a19.txt",
+      "stored_path": "sources/lirpf-fresh.html-a19.txt.gz",
+      "original_bytes": 2375,
+      "original_sha256": "7fb33809ee2734655de5673695633fd765a00bb7d16f4565f99a10da2f92410e",
+      "stored_bytes": 1093,
+      "stored_sha256": "b043c31bf5dd28a8184c6082fd77b9cab4ea2c010047f2579ea33a59719f4a43",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/lirpf-fresh.html-a20.txt",
+      "stored_path": "sources/lirpf-fresh.html-a20.txt.gz",
+      "original_bytes": 3106,
+      "original_sha256": "0400cce5130af0977ae7d6af23df4a5ffcc6b14289ba743533acd24212f9cf4d",
+      "stored_bytes": 962,
+      "stored_sha256": "e567d4f0e465f5fe309784637004cf42464510d29a4d8ceba69847ced1a1b865",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/lirpf-fresh.html-a84.txt",
+      "stored_path": "sources/lirpf-fresh.html-a84.txt.gz",
+      "original_bytes": 4685,
+      "original_sha256": "2c512563344886d92fea4d674ea3c8476a7d09327e56b80dcbdbcb19d0aee682",
+      "stored_bytes": 1631,
+      "stored_sha256": "8d03b55bd65c45a6745a1032bda1021749f1b7817195d4f09f91e56c84acb380",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-annulment.html",
+      "stored_path": "sources/rd574-annulment.html.gz",
+      "original_bytes": 19171,
+      "original_sha256": "3206258faef5e19a1d8a6fdaf8cdd82a6eb081b8f1924805a7a6b1c0c8d97b43",
+      "stored_bytes": 4817,
+      "stored_sha256": "be5d5fb42f05e6d138b4ad8434ead0c8065c0f8dcf666e461a1f1a7d2e848a70",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-annulment.html.txt",
+      "stored_path": "sources/rd574-annulment.html.txt.gz",
+      "original_bytes": 4529,
+      "original_sha256": "1cb32551ab9fcff6472861328f58cf0c87a5de60a61599656617c7b074e622d9",
+      "stored_bytes": 1834,
+      "stored_sha256": "0a286ef5d1a1b659b17ce1da84af7a4b20285d7b42d7e7c129d8cdae2000f6fc",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-correcting-order.html",
+      "stored_path": "sources/rd574-correcting-order.html.gz",
+      "original_bytes": 16564,
+      "original_sha256": "ee1ca4afb42f35274ec5a5b959868a53b99740bc11aedcc7a535465c7eb370d8",
+      "stored_bytes": 4431,
+      "stored_sha256": "b98fd08c9ebe5809924b2444d7cd99b051191732c46a9e4a9cf1861ba1254036",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-correcting-order.html.txt",
+      "stored_path": "sources/rd574-correcting-order.html.txt.gz",
+      "original_bytes": 3621,
+      "original_sha256": "d0a03db27e5bd7f4ef80171d013481d2679f98664bf3fcd62cd48205547bfe30",
+      "stored_bytes": 1680,
+      "stored_sha256": "8d1b5fa3b942fe7c6b032bb67c9eea5e07320c79e478621216fc3393cd549b7c",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-original.html",
+      "stored_path": "sources/rd574-original.html.gz",
+      "original_bytes": 53880,
+      "original_sha256": "f71db1dc17b2187790433623eba9f62621b48a7001231883f2c649c6034b5d25",
+      "stored_bytes": 11582,
+      "stored_sha256": "5b8c0379528ad699d53ac533ce77737b0b68575b0720151e0b72174c767d8da9",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rd574-original.html.txt",
+      "stored_path": "sources/rd574-original.html.txt.gz",
+      "original_bytes": 26712,
+      "original_sha256": "acb4522f2d55a29a03793e814f40f22c437a3ef799cb39af4ccc431cf63d94c2",
+      "stored_bytes": 7672,
+      "stored_sha256": "c0180462e528bf126aa382c9e2ed501a2890f1bd3d72b2c17a87180ae3493e53",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rirpf-fresh.html",
+      "stored_path": "sources/rirpf-fresh.html.gz",
+      "original_bytes": 1000017,
+      "original_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "stored_bytes": 137311,
+      "stored_sha256": "6ee9508ad6ff8f79534f422a2e24507f918b486e6185d6a3ec6c3ef87efa32ad",
+      "lossless_gzip": true
+    },
+    {
+      "original_path": "sources/rirpf-fresh.html-a11.txt",
+      "stored_path": "sources/rirpf-fresh.html-a11.txt.gz",
+      "original_bytes": 2286,
+      "original_sha256": "a843adfe05b5b03d5f2d0945b97aeb21475032a3976f5a6b4857bf6993c0de3d",
+      "stored_bytes": 960,
+      "stored_sha256": "180ddacd84695790a58c3656dbc71b457b7f3d7cfc106bbb875672cbd82b94c3",
+      "lossless_gzip": true
+    }
+  ],
+  "omitted": [
+    {
+      "path": "baseline.md",
+      "sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+      "bytes": 470201,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "build-candidate.py",
+      "sha256": "b6fb2feae07d73c8e96a967f4f8d7a604991ec0ca1d0324711aadcc9e3e15061",
+      "bytes": 10554,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "fetch.py",
+      "sha256": "455dc17e07f7149586d82f9b425ff4f8f4fb6ffef7cf79e48c1b8ad80fed0fce",
+      "bytes": 1518,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "finish-evidence.py",
+      "sha256": "84654b9092248d4d03d7c22a9261af7701791da46c36348b42ec51f52e468177",
+      "bytes": 7414,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "history/first-freeze-3bf4425f/build-candidate.py",
+      "sha256": "0cb1f2fcbb574a70876e992f55c095e21278017e582f213194108c758fe95262",
+      "bytes": 9828,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "history/first-freeze-3bf4425f/finish-evidence.py",
+      "sha256": "80a52be527e41f6a79a476187a7ced894a19b71f11537ae7dfc8a374b1581043",
+      "bytes": 6764,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "history/first-freeze-3bf4425f/proposed-v1.5.md",
+      "sha256": "3bf4425fc974c9dae9e45e3b82f035e6ca05b259a34dabc9fabd86441a7af1a6",
+      "bytes": 476353,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    },
+    {
+      "path": "proposed-v1.5.md",
+      "sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+      "bytes": 476835,
+      "reason": "Full canonical Guide snapshot or writer helper; private manifest deliberately has wider scope"
+    }
+  ],
+  "packaging_note": "Raw originals unchanged. Binary primary bodies and artifacts flagged for blank-at-EOF are stored as verified lossless gzip to pass full staged whitespace checks."
+}
