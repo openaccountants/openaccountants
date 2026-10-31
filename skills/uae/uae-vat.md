@@ -372,20 +372,20 @@ expected:
 
 | Source | URL | Read on |
 | --- | --- | --- |
-| VAT Law, consolidated to Decree-Law No. 16 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-10-31 |
-| Executive Regulation, consolidated 09-2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-10-31 |
-| FTA VAT Returns User Guide | https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf | 2026-10-31 |
-| Tax Procedures Law, consolidated | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf | 2026-10-31 |
-| Cabinet Decision No. 74 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2074%20of%202023%20on%20Executive%20Regulation%20of%20Federal%20Decree-Law%20No.%2028%20of%202022%20on%20Tax%20Procedures%20-%20For%20Publishing.pdf | 2026-10-31 |
-| Cabinet Decision No. 40 of 2017 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-10-31 |
-| Cabinet Decision No. 106 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20106%20of%202025.pdf | 2026-10-31 |
-| Ministerial Decision No. 244 of 2025 | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-10-31 |
-| Ministerial Decision No. 66 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-10-31 |
-| FTA Profit Margin Scheme Guide VATGPM1 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Profit%20Margin-Scheme-EN-02-01-2026-re.pdf | 2026-10-31 |
-| Cabinet Decision No. 149 of 2026 (this link returned 404 on 2026-10-31; last read when the skill was written) | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-09-25 |
-| Executive Regulation as at October 2025 (this link returned 404 on 2026-10-31; last read when the skill was written) | https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf | 2026-09-25 |
+| VAT Law, consolidated to Decree-Law No. 16 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%208%20of%202017%20and%20amendments%20-%20publishing%2028%2011%202025.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: 5% rate |
+| Executive Regulation, consolidated 09-2026 | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: AED 375,000 and 187,500 thresholds; cash input tax block; Decision 149 footnotes |
+| FTA VAT Returns User Guide | https://tax.gov.ae/DataFolder/Files/Pdf/VAT%20Returns%20User%20GuideEnglishV40%2015%2008%202021%20SEP2021.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: Box 1 and Box 10 descriptions |
+| Tax Procedures Law, consolidated | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Federal%20Decree-Law%20No.%2028%20of%202022%20-%20publishing%2003%2012%202025.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: 20 Business Days duties |
+| Cabinet Decision No. 74 of 2023 | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet%20Decision%20No.%2074%20of%202023%20on%20Executive%20Regulation%20of%20Federal%20Decree-Law%20No.%2028%20of%202022%20on%20Tax%20Procedures%20-%20For%20Publishing.pdf | 2026-09-25; 2026-10-31, link opened, not re-read |
+| Cabinet Decision No. 40 of 2017 and amendments | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%2040%20of%202017%20and%20its%20amendments%20-%20publishing%2011%202025.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: AED 10,000 and 20,000 penalties |
+| Cabinet Decision No. 106 of 2025 | https://tax.gov.ae/Datafolder/Files/Legislation/2025/Cabinet%20Decision%20No.%20106%20of%202025.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: issue and effective dates |
+| Ministerial Decision No. 244 of 2025 | https://mof.gov.ae/wp-content/uploads/2025/09/Ministerial-Decision-No.-244-of-2025-on-the-Implementation-of-the-Electronic-Invoicing-System.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: pilot 1 July 2026; AED 50,000,000 phase |
+| Ministerial Decision No. 66 of 2026 | https://mof.gov.ae/wp-content/uploads/2026/05/Ministerial-Resolution-No.-66-of-2026-Amending-Certain-Provisions-of-Ministerial-Resolution-No.-244-of-2025-Regarding-the-Implementation-of-the-Electronic-Invoicing-System-En-20260514.pdf | 2026-09-25; 2026-10-31, opened, spot-checked only: 1 January 2027 date |
+| FTA Profit Margin Scheme Guide VATGPM1 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/Guide/Profit%20Margin-Scheme-EN-02-01-2026-re.pdf | 2026-09-25; 2026-10-31, link opened, not re-read |
+| Cabinet Decision No. 149 of 2026 (link returned 404 to fetch on 2026-10-31; not re-read, unverified at this link; its changes appear as footnotes in the consolidated 09-2026 Regulation) | https://mof.gov.ae/wp-content/uploads/2026/09/Cabinet-Decision-No.-149-of-2026-Amending-Certain-Provisions-of-The-Executive-Regulation-of-VAT-EN.pdf | 2026-09-25 |
+| Executive Regulation as at October 2025 (404 to fetch and in a browser on 2026-10-31; not re-read, unverified at this link; superseded by the consolidated 09-2026 Regulation) | https://mof.gov.ae/wp-content/uploads/2025/10/Cabinet-Decision-No.-52-of-2017-of-the-Executive-Regulation-of-the-Federal-Decree-Law-No.-8-of-2017-on-Value-Added-Tax-and-its-amendments.pdf | 2026-09-25 |
 
-Not yet confirmed: the Minister's decision setting the value for the cash-payment input tax block; whether the penalties table in force from 14 April 2026 applies to violations that began before that date.
+Not yet confirmed: the dates above state what was read, 2026-09-25 is the date the skill gives for its full reading; the Minister's decision setting the value for the cash-payment input tax block; whether the penalties table in force from 14 April 2026 applies to violations that began before that date.
 
 <!-- openaccountants-cta-block -->
 
