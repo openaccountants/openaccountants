@@ -40,6 +40,7 @@ An employer in Moldova withholds income tax and the employee's health insurance 
 | Special working conditions: private / public | 32% / 39% | 2026 | annex 1 pt. 1.2, same URL |
 | Agricultural employers (70% test) | 18% employer + 6% state budget | 2026 | annex 1 pt. 1.5, same URL |
 | Day labourers' social insurance, paid by the beneficiary | 6% of daily pay | 2026 | annex 1 pt. 1.9, same URL |
+| Minimum social insurance base per employee | the minimum wage, in proportion to time worked; part-time or reduced hours: at least 25% of the contribution on the minimum wage | 2026 | Law 489/1999 art. 22(1), same URL |
 | Minimum wage, full time (169 hours a month on average) | MDL 6,300 a month, MDL 37.28 an hour | from 1 Jan 2026 | Government Decision 771/2025, https://www.legis.md/cautare/getResults?doc_id=152064&lang=ro |
 | Forecast average monthly wage | MDL 17,400 | 2026 | Government Decision 773/2025, https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro |
 | IT park single tax minimum per employee per month | 30% of MDL 17,400 = MDL 5,220 | 2026 | Fiscal Code art. 370(2); HG 773/2025 |
@@ -52,7 +53,7 @@ An employer in Moldova withholds income tax and the employee's health insurance 
 1. Start from gross salary, including bonuses and benefits from the employer (art. 88(1); art. 18 c)).
 2. Health premium: 9% of salary and other rewards before any tax is withheld (Law 1593/2002 art. 6).
 3. Income tax: the employer calculates the tax taking account of the exemptions the employee claimed and of deductions, by the method set by the Government (art. 88(1)). The employee's health premium is a deduction (art. 35^2(1)). Over the year, tax = 12% x (gross pay - health premiums - exemptions claimed).
-4. Employer social insurance: the employer's rate applies to the full monthly salaries and rewards (Law 489/1999 annex 1 pt. 1.1). It is not deducted from the employee's pay.
+4. Employer social insurance: the employer's rate applies to the full monthly salaries and rewards (Law 489/1999 annex 1 pt. 1.1). It is not deducted from the employee's pay. The monthly base for each employee may not be lower than the minimum wage, in proportion to time worked; for part-time or reduced hours, the contribution is at least 25% of the contribution on the minimum wage (Law 489/1999 art. 22(1)). At 24% that is MDL 1,512 a month at full time and at least MDL 378 for part-time.
 
 **Exemptions are claimed by application.** To get exemptions, the employee gives the employer a signed application, with copies of the supporting documents, no later than the first day of work. An employee who stays with the same employer does not reapply each year, unless he gains or loses a right. When the exemption amount changes during the year, the employee files a new application within 10 days. The application may be on paper or electronic (art. 88(2)-(3)). Spouse and dependant exemptions start in the month after the right arises (art. 34(3), 35(4)).
 
@@ -89,10 +90,10 @@ An employer in Moldova withholds income tax and the employee's health insurance 
 
 ## Cross-border points
 
-- **Non-resident employees.** The 12% non-resident withholding in art. 91(1) does not apply to the income in art. 71(1) n) and o) from which tax is withheld under art. 88 (art. 91(2) b)). When that income comes from a payer that is not a withholding agent, it is taxed at the art. 15 a) rate with no deductions or exemptions (art. 74(1)).
+- **Non-resident employees.** Art. 71(1) n) covers salaries and similar pay of non-resident individuals under an employment contract, and payments to administrators, founders and board or management members of a resident; art. 71(1) o) covers benefits under art. 19 given to non-resident individuals by a resident employer or a permanent establishment. The 12% non-resident withholding in art. 91(1) does not apply to this income when tax is withheld under art. 88 (art. 91(2) b)). When that income comes from a payer that is not a withholding agent, it is taxed at the art. 15 a) rate with no deductions or exemptions (art. 74(1)).
 - **Foreign staff and health insurance.** Foreigners with a Moldovan employment contract pay the health premium like Moldovan citizens unless a treaty provides otherwise (Law 1593/2002 art. 10(1)).
 - **International organisations.** Moldovan citizens employed by international projects and organisations are covered by employer social insurance unless a treaty exempts them (Law 489/1999 annex 1 pt. 1.1; annex 3 pt. 6).
-- **Posted workers and treaties**: see the pack's cross-border skill (md-cross-border, in preparation).
+- **Posted workers and treaties**: treaty relief on employment income is in the pack's cross-border skill, [md-cross-border](md-cross-border.md); social security agreements are not covered yet.
 
 ## Worked examples
 
@@ -170,7 +171,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Codul fiscal nr. 1163/1997, consolidated to LP235/2026: arts. 15, 18, 33, 34, 35, 35^2, 71, 74, 83, 87, 88, 91, 92, 228, 260, 261, 370, 372, 377 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
-| Law 489/1999, consolidated to LP201/2026: annex 1 (as replaced, MO 659-661/2025), annex 3, art. 28 | https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro | 2026-10-31 |
+| Law 489/1999, consolidated to LP201/2026: annex 1 (as replaced, MO 659-661/2025), annex 3, arts. 22, 28 | https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro | 2026-10-31 |
 | Law LP320/2025, state social insurance budget 2026: art. 4 | https://www.legis.md/cautare/getResults?doc_id=156540&lang=ro | 2026-10-31 |
 | Law 1593/2002 on compulsory health insurance premiums: arts. 4, 6, 10, 12, 20; annex 1 | https://www.legis.md/cautare/getResults?doc_id=152955&lang=ro | 2026-10-31 |
 | Law LP321/2025, compulsory health insurance funds 2026: art. 4 | https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro | 2026-10-31 |
@@ -178,7 +179,7 @@ expected:
 | Government Decision 773/2025: forecast average monthly wage 2026 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-31 |
 | National Bank of Moldova, Inflation Report no. 4, 2025 | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 | 2026-10-31 |
 
-Not yet confirmed: the Government's method for monthly withholding from salary (art. 88(1)), including whether annual exemptions are spread as one twelfth a month; the name and layout of the monthly return (the old version called it IPC21) and the year-end report forms; a minimum social insurance base equal to the minimum wage (MDL 6,300, 25% for part-time), which the old version took from a secondary source; the special working conditions job list (annex 2 to Law 489/1999); the valuation of benefits in kind and meal tickets (Fiscal Code art. 19 not read in full); the content of art. 88^1, repealed from 1 July 2026 by Law LP318/2025; sector or real-economy minimum wages; the exact wording of art. 71(1) n) and o) (not read); whether non-resident employees may claim exemptions through payroll; posted workers and social security agreements.
+Not yet confirmed: the Government's method for monthly withholding from salary (art. 88(1)), including whether annual exemptions are spread as one twelfth a month; the name and layout of the monthly return (the old version called it IPC21) and the year-end report forms; the special working conditions job list (annex 2 to Law 489/1999); the valuation of benefits in kind and meal tickets (Fiscal Code art. 19 not read in full); the content of art. 88^1, repealed from 1 July 2026 by Law LP318/2025; sector or real-economy minimum wages; whether non-resident employees may claim exemptions through payroll; posted workers and social security agreements.
 
 <!-- openaccountants-cta-block -->
 
