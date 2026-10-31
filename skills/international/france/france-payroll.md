@@ -15,7 +15,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# French payroll: pay, contributions, PAS and DSN (2026, v1.1)
+# French payroll: pay, contributions, PAS and DSN (2026, v1.3)
 
 How a French employer runs a monthly payroll for an employee: the social contributions taken from gross pay, the employer contributions on top, the single degressive relief that now sits over them, income tax withheld at source (prélèvement à la source), the mandatory payslip, and the monthly DSN filing. Figures are for tax year 2026. The income tax scale in Section 2 is the one applied in 2026 to income of 2025 declared in 2026; every other figure in this skill (the withholding grid, social contributions, the Smic, the ceilings and the payroll reliefs) is the one in force during 2026, and where a figure changed inside 2026 the row gives its start date. The rules on contributions and the DSN are those checked on 29 October 2026. The Smic rose on 1 June 2026, so this skill gives both the January value and the June value, and the default withholding grid shown is the one in force from 1 May 2026.
 

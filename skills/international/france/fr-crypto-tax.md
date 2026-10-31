@@ -20,7 +20,7 @@ How France taxes an individual on digital assets: the flat tax on occasional dis
 
 > Based on work by Romain Simon (@romainsimon), licensed under MIT. Adapted for the OpenAccountants format.
 
-## France: Crypto-Asset Taxation (Particuliers) v1.2
+## France: Crypto-Asset Taxation (Particuliers) v1.3
 
 ## Section 1: Quick Reference
 

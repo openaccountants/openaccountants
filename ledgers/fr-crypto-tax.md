@@ -2,7 +2,7 @@
 
 Independent AI source/calculation review: completed31October2026. The writer-status sentence below records the earlier handover; the [pack review](../docs/research/2026-10-31-france-pack-review.md) records the final outcome. This is not accountant attestation.
 
-Current Guide SHA256 `259a53e8ea7928cc4e49f2b65ce98bfb626d3646a2ca3f76933c74d47a790d8d`, 38999 bytes. Bounded writer successor31October2026, not an independent verdict. Unchanged exact claims reuse prior completed actual independent source reads; changed rules have selected actual writer rereads31October. Acquired hashes alone are not reading. Raw sources stay private.
+Current Guide SHA256 `556ed6df70d22676631eacd6ffc9aeb11b2e4d0af518cb6c3fb4e5c6ea9df602`, 38999 bytes. Bounded writer successor31October2026, not an independent verdict. Unchanged exact claims reuse prior completed actual independent source reads; changed rules have selected actual writer rereads31October. Acquired hashes alone are not reading. Raw sources stay private.
 
 | Guide LF | Section | Exact current wording | Act/article and official URL | Exact original-language quote or non-rule classification | Read date |
 |---|---|---|---|---|---|
