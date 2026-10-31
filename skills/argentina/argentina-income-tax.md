@@ -1,5 +1,5 @@
 ---
-name: ar-income-tax
+name: argentina-income-tax
 description: >
   Use this skill whenever asked about Argentine income tax (Impuesto a las Ganancias) for self-employed individuals (autónomos / profesionales independientes). Trigger on phrases like "Ganancias", "impuesto a las ganancias", "autónomo Argentina", "monotributo vs responsable inscripto", "cuarta categoría", "deducciones personales", "ganancia no imponible", "bienes personales", "DDJJ Ganancias", "ARCA", "AFIP", "CUIT", "income tax Argentina", "anticipos ganancias", or any question about filing or computing income tax for a self-employed client in Argentina. This skill covers progressive rates (5-35%), personal deductions (ganancia no imponible, cargas de familia, deducción especial), Bienes Personales interaction, advance payments (anticipos), percepciones as credits, and ARCA filing. ALWAYS read this skill before touching any Argentine income tax work.
 version: 2.0

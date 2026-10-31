@@ -34,7 +34,7 @@ Each group is two or more skills in one jurisdiction with the same job (docs/ski
 | KE | income-tax | `ke-income-tax`, `ke-income-tax-2` |
 | KE | vat-gst | `ke-vat-return`, `kenya-vat` |
 | MA | auto-entrepreneur | `ma-auto-entrepreneur`, `ma-auto-entrepreneur-4` |
-| MA | income-tax | `ma-income-tax`, `morocco-income-tax` |
+| MA | income-tax | `morocco-professional-income-tax`, `morocco-income-tax` |
 | MM | income-tax | `mm-income-tax`, `myanmar-personal-income-tax-2`, `myanmar-personal-income-tax-4` |
 | MM | vat-gst | `mm-vat-gst`, `myanmar-vat-gst`, `myanmar-vat-gst-2` |
 | NG | income-tax | `ng-income-tax`, `ng-personal-income-tax` |

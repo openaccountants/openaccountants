@@ -1,6 +1,6 @@
 ---
 name: ma-auto-entrepreneur-4
-description: Use this skill whenever asked about Morocco's auto-entrepreneur regime — the simplified turnover-based tax and social-cover status for freelancers and micro-businesses. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers turnover ceilings, the 0.5%/1% liberatory IR, the single-client 80,000 MAD anti-disguised-salary withholding, dedicated CNSS/AMO cover, registration via the RNAE (Poste Maroc / ae.gov.ma), excluded regulated professions, and exit on ceiling breach. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and ma-income-tax for alternatives.
+description: Use this skill whenever asked about Morocco's auto-entrepreneur regime — the simplified turnover-based tax and social-cover status for freelancers and micro-businesses. Trigger on phrases like "auto-entrepreneur Maroc", "Morocco freelancer tax", "régime auto-entrepreneur", "micro business Morocco tax", "RNAE", "statut auto-entrepreneur", "تاجر ذاتي", "freelance Maroc impôt". Covers turnover ceilings, the 0.5%/1% liberatory IR, the single-client 80,000 MAD anti-disguised-salary withholding, dedicated CNSS/AMO cover, registration via the RNAE (Poste Maroc / ae.gov.ma), excluded regulated professions, and exit on ceiling breach. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-cpu and morocco-professional-income-tax for alternatives.
 jurisdiction: MA
 tax_year: 2025
 last_updated: 2026-10-31
@@ -54,7 +54,7 @@ When data is missing or ambiguous, the agent applies the **conservative default*
 - **Activity mix unknown** → treat the activity as **services (1%)**, the higher rate, until the user confirms it is commercial/industrial/artisanal (0.5%).
 - **Turnover near a ceiling** → assume the ceiling is **breached** and warn about exit consequences rather than assume continued eligibility.
 - **Single-client revenue near MAD 80,000** → assume the **30% withholding** on the excess applies, and tell the user to confirm with the paying client.
-- **Eligibility uncertain (possible regulated profession)** → assume the activity is **excluded** and route to `ma-cpu` / `ma-income-tax` until confirmed.
+- **Eligibility uncertain (possible regulated profession)** → assume the activity is **excluded** and route to `ma-cpu` / `morocco-professional-income-tax` until confirmed.
 - **2026 figures** → all rates and ceilings carry "verify current value"; check the **Loi de Finances 2026** and the DGI before finalising any number.
 
 ## 2. Eligibility & Excluded Activities
@@ -65,7 +65,7 @@ When data is missing or ambiguous, the agent applies the **conservative default*
 
 ### Excluded activities (professions réglementées and others)
 
-- **Excluded activities** — The AE status is **not available** to **regulated/liberal professions** and a list of other activities, including (non-exhaustive — confirm against the regulatory list): - **Liberal professions:** lawyers (avocats), notaries (notaires), doctors and health professionals (médecins, dentistes, pharmaciens), chartered accountants / experts-comptables, architects, engineers in regulated practice, court officers (huissiers, adouls), etc. - **Financial / insurance** intermediation. - **Real-estate development** (promotion immobilière). - **Regulated transport** operators. - Activities subject to **special licensing or excise** (e.g. tobacco, alcohol). > **Default rule:** if there is *any* doubt that the activity is a regulated profession, treat it as **excluded** and route the user to `ma-cpu` (Contribution Professionnelle Unique) or `ma-income-tax` (régime du résultat net simplifié / réel). Do **not** assert eligibility for a borderline profession.
+- **Excluded activities** — The AE status is **not available** to **regulated/liberal professions** and a list of other activities, including (non-exhaustive — confirm against the regulatory list): - **Liberal professions:** lawyers (avocats), notaries (notaires), doctors and health professionals (médecins, dentistes, pharmaciens), chartered accountants / experts-comptables, architects, engineers in regulated practice, court officers (huissiers, adouls), etc. - **Financial / insurance** intermediation. - **Real-estate development** (promotion immobilière). - **Regulated transport** operators. - Activities subject to **special licensing or excise** (e.g. tobacco, alcohol). > **Default rule:** if there is *any* doubt that the activity is a regulated profession, treat it as **excluded** and route the user to `ma-cpu` (Contribution Professionnelle Unique) or `morocco-professional-income-tax` (régime du résultat net simplifié / réel). Do **not** assert eligibility for a borderline profession.
 
 ## 3. Rates & Computation
 
@@ -161,8 +161,8 @@ Khadija resells handmade goods (commercial/artisanal). 2026 collected turnover *
 Omar (services) collects **MAD 230,000** in 2026, exceeding the 200,000 services ceiling.
 
 - One year over is **tolerated**; the AE is generally **radiated only if the ceiling is exceeded two consecutive years** *(verify the current grace rule)*.
-- On exit, Omar moves to **`ma-cpu` (CPU)** or the **`ma-income-tax`** régimes (résultat net simplifié / réel) and ordinary IR/TVA obligations may begin.
-- Action: model the post-exit position with `ma-cpu` and `ma-income-tax` and advise on TVA registration thresholds.
+- On exit, Omar moves to **`ma-cpu` (CPU)** or the **`morocco-professional-income-tax`** régimes (résultat net simplifié / réel) and ordinary IR/TVA obligations may begin.
+- Action: model the post-exit position with `ma-cpu` and `morocco-professional-income-tax` and advise on TVA registration thresholds.
 
 ## 7. Tier 2 — Reviewer Judgement Required
 
@@ -187,15 +187,15 @@ The agent must **never** present these as settled; it presents the computation, 
 ### Short test suite
 
 1. **Q:** Service freelancer, MAD 90,000 turnover, no client over 80k. **A:** IR = 90,000 × 1% = **MAD 900**; within ceiling; CNSS per bracket.
-2. **Q:** Commercial AE, MAD 600,000 turnover. **A:** **Ceiling breached** (>500,000) — flag exit, route to `ma-cpu` / `ma-income-tax`.
+2. **Q:** Commercial AE, MAD 600,000 turnover. **A:** **Ceiling breached** (>500,000) — flag exit, route to `ma-cpu` / `morocco-professional-income-tax`.
 3. **Q:** Services AE, single client pays MAD 130,000. **A:** 80,000 at 1% (MAD 800); **50,000 × 30% = MAD 15,000** withheld by client *(verify rate)*; flag disguised-employment risk.
-4. **Q:** Doctor wants AE status. **A:** **Excluded** (regulated profession) — route to `ma-income-tax`.
+4. **Q:** Doctor wants AE status. **A:** **Excluded** (regulated profession) — route to `morocco-professional-income-tax`.
 5. **Q:** Zero turnover this quarter. **A:** Still file a **déclaration néant**; **minimum CNSS** (~MAD 300/quarter, verify) still due.
 6. **Q:** Activity mix not stated. **A:** Default to **services / 1%** and the 200,000 ceiling until confirmed.
 
 ## PROHIBITIONS
 
-- **Do NOT** confirm eligibility for any **regulated/liberal profession** (lawyer, doctor, notary, expert-comptable, architect, etc.) — default to **excluded**. - **Do NOT** apply the AE liberatory rates to turnover **above a ceiling** — once breached, the regime no longer applies; route to `ma-cpu` / `ma-income-tax`. - **Do NOT** ignore the **single-client > MAD 80,000** rule for services — apply the 30% withholding on the excess *(verify rate)* and flag disguised-employment risk. - **Do NOT** deduct business expenses — the base is **turnover collected**, gross. - **Do NOT** invent CNSS **T1–T8** bracket amounts — quote the minimum floor and send the user to cnss.ma / ae.gov.ma for the exact figure. - **Do NOT** state any rate, ceiling, or deadline as final without the **"verify current value"** caveat against the **Loi de Finances 2026** and the DGI. - **Do NOT** advise on **TVA**, employees/payroll, multi-state, or company forms (SARL/SA) under this skill — route to the relevant skill. - **Do NOT** issue a return as filed without **expert-comptable** sign-off.
+- **Do NOT** confirm eligibility for any **regulated/liberal profession** (lawyer, doctor, notary, expert-comptable, architect, etc.) — default to **excluded**. - **Do NOT** apply the AE liberatory rates to turnover **above a ceiling** — once breached, the regime no longer applies; route to `ma-cpu` / `morocco-professional-income-tax`. - **Do NOT** ignore the **single-client > MAD 80,000** rule for services — apply the 30% withholding on the excess *(verify rate)* and flag disguised-employment risk. - **Do NOT** deduct business expenses — the base is **turnover collected**, gross. - **Do NOT** invent CNSS **T1–T8** bracket amounts — quote the minimum floor and send the user to cnss.ma / ae.gov.ma for the exact figure. - **Do NOT** state any rate, ceiling, or deadline as final without the **"verify current value"** caveat against the **Loi de Finances 2026** and the DGI. - **Do NOT** advise on **TVA**, employees/payroll, multi-state, or company forms (SARL/SA) under this skill — route to the relevant skill. - **Do NOT** issue a return as filed without **expert-comptable** sign-off.
 
 ## Disclaimer
 

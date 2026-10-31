@@ -1,6 +1,6 @@
 ---
 name: de-partners-and-part-year
-description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (de-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit-tax)."
+description: "Use this skill for two German income tax cases in tax year 2026. Part 1, partners: how a partnership's profit (OHG, KG, GmbH & Co. KG, GbR, PartG) is fixed in the separate and uniform determination (gesonderte und einheitliche Feststellung, § 180 AO), the partnership return and its deadline, how each partner's share, Sondervergütungen and Sonderbetriebsausgaben reach the partner's own return, § 15a loss limits for limited partners, the § 35(2) trade tax credit split, the § 34a retained-profits option, and freelancer partnerships. Part 2, the year of moving to or from Germany: one resident assessment for the whole year (§ 2(7) EStG) with foreign-period income raising the rate (§ 32b). Trigger on: Mitunternehmer, Feststellungserklärung, ESt 1 B, Sondervergütung, Kommanditist Verlust, Thesaurierung, Zuzug, Wegzug, Progressionsvorbehalt. Out of scope: sole traders (germany-income-tax), trade tax computation (de-trade-tax), non-residents (de-non-resident-tax), exit tax (leaving-germany-exit-tax)."
 version: 0.2
 jurisdiction: DE
 tax_year: 2026
@@ -19,7 +19,7 @@ This skill covers two gaps the other Germany skills leave open. Part 1 is the pa
 
 See also, and do not repeat here:
 
-- **de-income-tax**: the 2026 tariff, special expenses, solidarity surcharge, church tax, the § 35 credit for a sole trader, deadlines and penalties for the partner's own return.
+- **germany-income-tax**: the 2026 tariff, special expenses, solidarity surcharge, church tax, the § 35 credit for a sole trader, deadlines and penalties for the partner's own return.
 - **de-trade-tax**: trade tax at partnership level (add-backs, reductions, the EUR 24,500 allowance, multiplier), Abfärbung and gewerbliche Prägung in detail.
 - **de-employee-income-tax**: wages, Werbungskosten, joint assessment, Anlage N-AUS.
 - **de-non-resident-tax**: limited liability, German-source income (§ 49 EStG), the § 1(3) option, foreign tax credits (§ 34c EStG).
@@ -49,7 +49,7 @@ For an otherwise qualifying separable professional partnership, total net receip
 
 | Item | Rate or amount | Year | Source |
 |---|---|---|---|
-| Tariff, basic allowance, splitting | See de-income-tax; basic allowance EUR 12,348, zones 2 to 5 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
+| Tariff, basic allowance, splitting | See germany-income-tax; basic allowance EUR 12,348, zones 2 to 5 | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
 | Basic allowance in the year of moving | In full, not cut by months: one resident assessment for the whole year | 2026 | https://www.gesetze-im-internet.de/estg/__2.html (§ 2(7)) |
 | Special rate (progression clause) | Tax on taxable income plus the foreign income, divided by that sum; the rate is applied to taxable income alone | 2026 | https://www.gesetze-im-internet.de/estg/__32b.html (§ 32b(1) and (2)) |
 | Special rate, rounding | Cut (not rounded) to four decimal places of a percent, as in the official example (2,540 / 37,000 = 6.86486% shown as 6.8648%) | 2025 | https://esth.bundesfinanzministerium.de/esth/2025/A-Einkommensteuergesetz/IV-Tarif-31-34b/Paragraf-32b/inhalt.html (H 32b "Allgemeines") |
@@ -75,7 +75,7 @@ For an otherwise qualifying separable professional partnership, total net receip
 4. **The split.** Profit share by the partnership agreement, plus the partner's own items from 2 and 3.
 5. **Other items**: income exempt under a treaty that matters for the partners' rate (§ 180(5) no. 1 AO), and tax withheld to be credited (§ 180(5) no. 2 AO); for a commercial partnership, the § 35 figures (Step 3).
 
-**Step 2: the partner's own return.** The partner takes the determined share into their own return as business income (trade or self-employed), adds any other income, and from there follows de-income-tax: special expenses, tariff, surcharge, church tax. The partner does not recompute the share; if it is wrong, the determination notice is what gets challenged.
+**Step 2: the partner's own return.** The partner takes the determined share into their own return as business income (trade or self-employed), adds any other income, and from there follows germany-income-tax: special expenses, tariff, surcharge, church tax. The partner does not recompute the share; if it is wrong, the determination notice is what gets challenged.
 
 **Step 3: trade tax and the § 35 credit.** A commercial partnership pays trade tax itself (§ 5 GewStG; see de-trade-tax). Its trade income starts from the profit fixed in Step 1, Sondervergütungen and special items included (§ 7 GewStG). A partner's share of profit from another partnership is taken out again (§ 9 no. 2 GewStG), because that partnership pays its own trade tax. The base amount, the trade tax actually payable and each partner's share of both are fixed in the same determination (§ 35(2) sentence 1 and (4) EStG). Each partner's share follows the general profit-sharing key, ignoring advance shares (§ 35(2) sentence 2). The BMF letter on § 35 says the same for Sondervergütungen and for results of special and supplementary balance sheets (BMF 3 November 2016, Rn. 22), and a partner that cannot use the credit, such as a GmbH general partner, still takes its key share (Rn. 24). A managing partner's Sondervergütung therefore gives no extra credit. The partner's credit is the lowest of: 4 × share of the base amount; the tax on trade income in the partner's own return (positive trade income / all positive income × tariff tax, § 35(1) sentence 2); the share of trade tax actually payable. Unused credit is lost.
 
@@ -102,7 +102,7 @@ For an otherwise qualifying separable professional partnership, total net receip
 
 **Step 4: the amount added (§ 32b(2)).** Foreign income is computed under German rules: profit or surplus, not gross receipts. For foreign pay, the EUR 1,230 employee lump sum is deducted only to the extent it was not already deducted against German pay, and actual Werbungskosten only so far as all Werbungskosten together exceed the lump sum (§ 32b(2) sentence 2 (a) and (b)). Extraordinary income in it counts at one fifth. Foreign losses lower the rate and can bring it to zero (EStH 2025, H 32b "Ausländische Verluste"). Contributions to the Swiss AHV do not reduce the amount added (same, citing BFH 18 April 2012).
 
-**Step 5: the tax.** Tariff tax on (taxable income + amount added), divided by that sum, cut to four decimal places of a percent = special rate. Special rate × taxable income, rounded down = income tax. Then the surcharge and church tax on that tax (de-income-tax).
+**Step 5: the tax.** Tariff tax on (taxable income + amount added), divided by that sum, cut to four decimal places of a percent = special rate. Special rate × taxable income, rounded down = income tax. Then the surcharge and church tax on that tax (germany-income-tax).
 
 **Joint assessment in the year of moving.** Spouses may choose it if both were fully liable and not permanently separated at some time in the year (§ 26(1) EStG). If both move together, the year qualifies.
 
@@ -114,14 +114,14 @@ For an otherwise qualifying separable professional partnership, total net receip
 | Partnership return deadline, own preparation | Seven months after year end (§ 149(2) AO, applied by § 181(1) AO): 31 July 2027 is a Saturday, so Monday 2 August 2027 (§ 108(3) AO) |
 | Partnership return deadline, tax adviser | Last day of February of the second year after: 29 February 2028 (§ 149(3) no. 5 AO). The office can ask for it earlier (§ 149(4) AO) |
 | Trade tax return of a commercial partnership | Same deadlines (§ 149(3) no. 3 AO); see de-trade-tax |
-| Partner's own return | Deadlines in de-income-tax (2 August 2027, or 29 February 2028 with an adviser) |
+| Partner's own return | Deadlines in germany-income-tax (2 August 2027, or 29 February 2028 with an adviser) |
 | Changes flow through | A change to the determination changes the partner's assessment; a change to profit changes the trade tax base amount notice (§ 35b(1) GewStG) |
-| Year of moving | One return for the whole year, on the normal deadlines in de-income-tax. Foreign pay of the other period goes on Anlage N-AUS (de-employee-income-tax). Arrival and departure dates and foreign income must be declared |
+| Year of moving | One return for the whole year, on the normal deadlines in germany-income-tax. Foreign pay of the other period goes on Anlage N-AUS (de-employee-income-tax). Arrival and departure dates and foreign income must be declared |
 
 ## Penalties and interest
 
 - **Late partnership return (§ 152(6) and (7) AO).** The late-filing surcharge rules for tax returns apply. Amount: 0.0625% of the positive sum of the determined income for each started month late, at least EUR 25 a month, rounded down to whole euros, at most EUR 25,000 (§ 152(10) AO). It must be set if the return is not filed within 14 months after the end of the year (for 2026: by 29 February 2028), unless the deadline was extended (§ 152(2) and (3) no. 1 AO, applied by § 152(6)). The nil-tax let-outs of § 152(3) nos. 2 and 3 do not apply to this return. It is set first against the partnership if it has legal capacity (§ 152(4) sentence 3 AO).
-- **Partner's own return.** Late filing, interest (0.15% a month from 1 April 2028) and late payment: see de-income-tax.
+- **Partner's own return.** Late filing, interest (0.15% a month from 1 April 2028) and late payment: see germany-income-tax.
 - **Interest is charged on the partner, not the partnership.** The determination sets no tax, so § 233a AO interest runs only on each partner's income tax.
 - **Wrong figures.** Tax evasion (§ 370 AO) and reckless understatement (§ 378 AO): refer.
 

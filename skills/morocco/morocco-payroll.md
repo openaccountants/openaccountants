@@ -190,7 +190,7 @@ All figures are **illustrative 2026** computations to **verify** before filing. 
 | Tools & risk | Employer provides tools, bears risk | Worker bears own commercial risk |
 | Remuneration | Fixed monthly salary | Invoices, facture, often with VAT |
 
-- **Faux indépendant risk** — A genuine **independent** (auto-entrepreneur, TNS, or company) invoices the contributor and handles **their own** CNSS-TNS / AMO and IR — see `ma-social-contributions` and `ma-income-tax`. **Disguising an employee as an independent** ("faux indépendant") risks **requalification**, back-contributions, IR, and penalties. **Default to employee treatment when subordination is present.**
+- **Faux indépendant risk** — A genuine **independent** (auto-entrepreneur, TNS, or company) invoices the contributor and handles **their own** CNSS-TNS / AMO and IR — see `ma-social-contributions` and `morocco-professional-income-tax`. **Disguising an employee as an independent** ("faux indépendant") risks **requalification**, back-contributions, IR, and penalties. **Default to employee treatment when subordination is present.**
 
 ### Bulletin de paie — required contents
 

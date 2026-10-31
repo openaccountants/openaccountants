@@ -57,7 +57,7 @@ in the user's chosen language.
 | Uncapped employee branches | AMO, allocations familiales, taxe de formation professionnelle (whole salary) *(verify)* |
 | Filing & payment (TNS / AE) | **Quarterly**, online via cnss.ma / ae.gov.ma *(verify exact dates)* |
 | Filing & payment (employer) | **Monthly** DAMANCOM teledeclaration *(verify)* |
-| Cross-references | `ma-auto-entrepreneur`, `ma-cpu`, `ma-income-tax`, `morocco-vat` |
+| Cross-references | `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `morocco-vat` |
 | Contributor | Open Accountants Community |
 | Quality tier | **Research-verified — pending sign-off by a Moroccan expert-comptable** |
 | Version | 1.0 |
@@ -245,7 +245,7 @@ Escalate to the **Moroccan expert-comptable** reviewer when:
 - The user **hires staff** — full employer payroll/CNSS setup, DAMANCOM, and the
   capped/uncapped branch allocation (see `payroll`-type work).
 - **Auto-entrepreneur ceiling breach** or exit (re-route via `ma-auto-entrepreneur` /
-  `ma-cpu` / `ma-income-tax`), including how social cover changes on exit.
+  `ma-cpu` / `morocco-professional-income-tax`), including how social cover changes on exit.
 - **Cross-border / detachement** (a TNS working abroad, or a foreign self-employed
   person in Morocco) and CNSS social-security agreements.
 - **Arrears, benefit eligibility, or the 3-month AMO stage / pension vesting** (3,240
@@ -283,7 +283,7 @@ assumptions, and the open items for the reviewer to sign off.
 
 ## PROHIBITIONS
 
-- **Prohibitions list** — - **Do NOT** transplant one category's **forfaitaire base** onto another — each TNS category has its **own décret base**. - **Do NOT** invent auto-entrepreneur **T1–T8 bracket** amounts — quote the **~MAD 300 minimum** floor and send the user to cnss.ma / ae.gov.ma. - **Do NOT** apply the **MAD 6,000 ceiling** to AMO, family allowances, or the training tax — the ceiling is **only** for the capped prestations-sociales branch. - **Do NOT** conflate **TNS / auto-entrepreneur** self-cover with the **employer/employee** computation — a person who hires has **both**, computed separately. - **Do NOT** assume "no income → no contribution" — a **minimum** applies regardless. - **Do NOT** state any rate, base multiple, ceiling, SMIG, or minimum as final without the **"verify current value"** caveat against the **Loi de Finances 2026** and the relevant **décret**. - **Do NOT** advise on **employee payroll mechanics, IR withholding, TVA, or company forms** under this skill — route to the relevant skill (`ma-income-tax`, `morocco-vat`, etc.). - **Do NOT** confirm a profession's **roll-out / effective date** without checking cnss.ma — escalate if uncertain. - **Do NOT** issue any filing or computation as final without **Moroccan expert-comptable** sign-off.
+- **Prohibitions list** — - **Do NOT** transplant one category's **forfaitaire base** onto another — each TNS category has its **own décret base**. - **Do NOT** invent auto-entrepreneur **T1–T8 bracket** amounts — quote the **~MAD 300 minimum** floor and send the user to cnss.ma / ae.gov.ma. - **Do NOT** apply the **MAD 6,000 ceiling** to AMO, family allowances, or the training tax — the ceiling is **only** for the capped prestations-sociales branch. - **Do NOT** conflate **TNS / auto-entrepreneur** self-cover with the **employer/employee** computation — a person who hires has **both**, computed separately. - **Do NOT** assume "no income → no contribution" — a **minimum** applies regardless. - **Do NOT** state any rate, base multiple, ceiling, SMIG, or minimum as final without the **"verify current value"** caveat against the **Loi de Finances 2026** and the relevant **décret**. - **Do NOT** advise on **employee payroll mechanics, IR withholding, TVA, or company forms** under this skill — route to the relevant skill (`morocco-professional-income-tax`, `morocco-vat`, etc.). - **Do NOT** confirm a profession's **roll-out / effective date** without checking cnss.ma — escalate if uncertain. - **Do NOT** issue any filing or computation as final without **Moroccan expert-comptable** sign-off.
 
 ## Disclaimer
 

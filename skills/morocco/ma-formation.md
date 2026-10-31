@@ -1,6 +1,6 @@
 ---
 name: ma-formation
-description: Use this skill whenever asked about registering or forming a business in Morocco as a self-employed person — choosing and obtaining a legal status, the identifiers every business needs, and the tax regime picked at registration. Trigger on phrases like "register auto-entrepreneur Morocco", "créer auto-entrepreneur", "comment s'inscrire auto-entrepreneur Maroc", "ICE Maroc", "obtenir un IF", "Registre de Commerce Maroc", "start business Morocco", "créer une SARL Maroc", "patente / taxe professionnelle", "كيفاش نسجل مقاول ذاتي", "تسجيل شركة المغرب". Covers RNAE auto-entrepreneur registration (ae.gov.ma / Poste Maroc), obtaining the ICE, the IF (Identifiant Fiscal) from the DGI, the RC (Registre de Commerce), the taxe professionnelle (ex-patente) and its new-business exemption, regulated professions, choosing the regime (auto-entrepreneur vs CPU vs RNR/RNS), VAT registration, and forming a SARL / SARL-AU via the CRI / OMPIC, with timing and cost. Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms. Cross-reference ma-auto-entrepreneur, ma-cpu, ma-income-tax, and morocco-vat for the downstream tax detail.
+description: Use this skill whenever asked about registering or forming a business in Morocco as a self-employed person — choosing and obtaining a legal status, the identifiers every business needs, and the tax regime picked at registration. Trigger on phrases like "register auto-entrepreneur Morocco", "créer auto-entrepreneur", "comment s'inscrire auto-entrepreneur Maroc", "ICE Maroc", "obtenir un IF", "Registre de Commerce Maroc", "start business Morocco", "créer une SARL Maroc", "patente / taxe professionnelle", "كيفاش نسجل مقاول ذاتي", "تسجيل شركة المغرب". Covers RNAE auto-entrepreneur registration (ae.gov.ma / Poste Maroc), obtaining the ICE, the IF (Identifiant Fiscal) from the DGI, the RC (Registre de Commerce), the taxe professionnelle (ex-patente) and its new-business exemption, regulated professions, choosing the regime (auto-entrepreneur vs CPU vs RNR/RNS), VAT registration, and forming a SARL / SARL-AU via the CRI / OMPIC, with timing and cost. Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms. Cross-reference ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, and morocco-vat for the downstream tax detail.
 version: 1.0
 jurisdiction: MA
 tax_year: 2025
@@ -25,7 +25,7 @@ This skill walks a self-employed person through **starting and registering** a b
 - **RC** — *Registre de Commerce* — commercial-register number (commerçants only).
 - **TP** — *taxe professionnelle*, the local business tax formerly called the **patente**.
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, ICE, IF, RC, patente, CRI, OMPIC, DGI, CNSS) and explain them in the chosen language. It is a **formation / registration** skill; for ongoing tax computation route to `ma-auto-entrepreneur`, `ma-cpu`, `ma-income-tax`, `morocco-vat`, and `ma-social-contributions`.
+This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, ICE, IF, RC, patente, CRI, OMPIC, DGI, CNSS) and explain them in the chosen language. It is a **formation / registration** skill; for ongoing tax computation route to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `morocco-vat`, and `ma-social-contributions`.
 
 ## 1. Quick Reference
 
@@ -126,14 +126,14 @@ The status you register under determines which **income-tax regime** applies. La
 | --- | --- | --- | --- |
 | **Auto-entrepreneur** | Individual under the AE ceilings, non-excluded activity | **0.5% / 1%** liberatory on **collected** turnover | Lightest; CNSS bundled. → `ma-auto-entrepreneur` |
 | **CPU** (Contribution Professionnelle Unique) | Individual, turnover ≤ **MAD 500,000** (comm./ind./artisanal) or ≤ **200,000** (services), not on excluded list | **10%** on **turnover × profession coefficient** + droit complémentaire | Replaces forfait; **exempt from TP & TSC**. → `ma-cpu` |
-| **RNR** (Résultat Net Réel) | Higher turnover or by election | **Net profit**, progressive IR scale | Full accounting. → `ma-income-tax` |
-| **RNS** (Résultat Net Simplifié) | Mid-range turnover | Simplified net profit, progressive IR | → `ma-income-tax` |
+| **RNR** (Résultat Net Réel) | Higher turnover or by election | **Net profit**, progressive IR scale | Full accounting. → `morocco-professional-income-tax` |
+| **RNS** (Résultat Net Simplifié) | Mid-range turnover | Simplified net profit, progressive IR | → `morocco-professional-income-tax` |
 
 **Decision pointers.**
 - Very small, expense-light freelancing → **auto-entrepreneur** is usually simplest.
 - Small trade/craft with a known profession coefficient → compare **CPU**.
 - Significant expenses, or activity excluded from AE/CPU, or above ceilings → **RNR / RNS**.
-- A **regulated / liberal profession** (doctor, lawyer, architect, notaire, accountant, etc.) is generally **excluded from AE and CPU** and needs its **ordre professionnel / authorisation** — route to `ma-income-tax`.
+- A **regulated / liberal profession** (doctor, lawyer, architect, notaire, accountant, etc.) is generally **excluded from AE and CPU** and needs its **ordre professionnel / authorisation** — route to `morocco-professional-income-tax`.
 
 ### 4.2 Regulated professions & authorisations
 
@@ -200,14 +200,14 @@ A self-employed person who wants **limited liability** or to scale beyond the in
 2. **Q:** "What is the ICE and how many digits?" **A:** *Identifiant Commun de l'Entreprise*, **15 digits**, universal across administrations; from **OMPIC** (companies) or **DGI** (individuals); recover at `ice.gov.ma`.
 3. **Q:** Pure services provider — do they need an RC? **A:** **Often no** — RC is for **commerçants**; services/professions libérales usually skip RC but still need **IF + ICE + TP** *(verify per activity)*.
 4. **Q:** "How long is the patente exemption for a new business?" **A:** **5 years** from start of activity, automatic (taxe professionnelle) *(verify)*.
-5. **Q:** Lawyer wants to register as auto-entrepreneur. **A:** **Excluded** (regulated/liberal profession needs the ordre); route to `ma-income-tax`.
+5. **Q:** Lawyer wants to register as auto-entrepreneur. **A:** **Excluded** (regulated/liberal profession needs the ordre); route to `morocco-professional-income-tax`.
 6. **Q:** SARL minimum capital? **A:** **No legal minimum** since Loi 24-10; blocking only if capital **> MAD 100,000** *(verify)*.
 7. **Q:** Activity commercial vs services unknown. **A:** **Ask** — it changes RC requirement, the AE/CPU ceiling (500k vs 200k), and the VAT threshold.
-8. **Q:** Trader expects CA MAD 1.2M. **A:** Over AE/CPU ceilings → **RNR/RNS** (or SARL); **VAT applies** — route to `ma-income-tax` + `morocco-vat`.
+8. **Q:** Trader expects CA MAD 1.2M. **A:** Over AE/CPU ceilings → **RNR/RNS** (or SARL); **VAT applies** — route to `morocco-professional-income-tax` + `morocco-vat`.
 
 ## PROHIBITIONS
 
-- **Prohibitions list** — - **Do NOT** auto-select a **legal status or tax regime** — present auto-entrepreneur vs CPU vs RNR/RNS vs SARL and let the user choose; the choice drives RC, VAT, and TP outcomes. - **Do NOT** confirm a **regulated / liberal profession** as eligible for auto-entrepreneur or CPU — **default to excluded / needs authorisation** and route to `ma-income-tax`. - **Do NOT** state any **fee, ceiling, threshold, rate, or processing time** as final — they change with the Loi de Finances and by region; append **"verify against the Loi de Finances 2026 and the DGI / OMPIC / CRI"**. - **Do NOT** assume a **services** provider needs an **RC** — RC is for **commerçants**; verify per activity. - **Do NOT** claim a business is **outside VAT** without checking the activity-type threshold (500,000 vs 200,000) — and remember **companies are VAT-liable from creation**. - **Do NOT** invent the **AE/CPU excluded-professions list** or a **profession coefficient** — read them from the official RNAE list / CGI annex. - **Do NOT** compute **corporate tax (IS)** or full company tax under this skill — flag it as out of scope and route to an expert-comptable. - **Do NOT** provide **AE / CPU / VAT / income-tax computation** here — route to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-vat`, `ma-income-tax`, and `ma-social-contributions`. - **Do NOT** treat this skill's output as a **filed registration** — final registration and any tax position require **Moroccan expert-comptable** sign-off.
+- **Prohibitions list** — - **Do NOT** auto-select a **legal status or tax regime** — present auto-entrepreneur vs CPU vs RNR/RNS vs SARL and let the user choose; the choice drives RC, VAT, and TP outcomes. - **Do NOT** confirm a **regulated / liberal profession** as eligible for auto-entrepreneur or CPU — **default to excluded / needs authorisation** and route to `morocco-professional-income-tax`. - **Do NOT** state any **fee, ceiling, threshold, rate, or processing time** as final — they change with the Loi de Finances and by region; append **"verify against the Loi de Finances 2026 and the DGI / OMPIC / CRI"**. - **Do NOT** assume a **services** provider needs an **RC** — RC is for **commerçants**; verify per activity. - **Do NOT** claim a business is **outside VAT** without checking the activity-type threshold (500,000 vs 200,000) — and remember **companies are VAT-liable from creation**. - **Do NOT** invent the **AE/CPU excluded-professions list** or a **profession coefficient** — read them from the official RNAE list / CGI annex. - **Do NOT** compute **corporate tax (IS)** or full company tax under this skill — flag it as out of scope and route to an expert-comptable. - **Do NOT** provide **AE / CPU / VAT / income-tax computation** here — route to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-vat`, `morocco-professional-income-tax`, and `ma-social-contributions`. - **Do NOT** treat this skill's output as a **filed registration** — final registration and any tax position require **Moroccan expert-comptable** sign-off.
 
 ## Disclaimer
 

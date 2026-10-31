@@ -14,7 +14,7 @@ Tax years: not stated (1 skill), 2025 (8 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](ar-income-tax.md) | not stated | Needs updating |
+| Income tax | [Income tax](argentina-income-tax.md) | not stated | Needs updating |
 | Company tax | [Corporate income tax](ar-corporate-income-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [VAT return](ar-vat-return.md) | 2025 | Needs updating |
 | Social contributions | [Social contributions](ar-social-contributions.md) | 2025 | Needs updating |
@@ -26,7 +26,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 
 ## What still needs doing
 
-- Income tax: bring [Income tax](ar-income-tax.md) up to the current tax year.
+- Income tax: bring [Income tax](argentina-income-tax.md) up to the current tax year.
 - Company tax: bring [Corporate income tax](ar-corporate-income-tax.md) up to the current tax year.
 - VAT or sales tax: bring [VAT return](ar-vat-return.md) up to the current tax year.
 - Social contributions: bring [Social contributions](ar-social-contributions.md) up to the current tax year.

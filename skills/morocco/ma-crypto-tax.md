@@ -79,7 +79,7 @@ If a **Moroccan tax resident** has **realised** a gain (sold crypto for fiat, sw
 
 ### 3.2 Habitual activity → *revenus professionnels*
 
-- **Habitual activity analogy** — If the activity is **habitual, organised, and speculative** (frequent trading, mining as a business, running it like a profession), the DGI could instead treat it as **revenus professionnels** (business / professional income) taxed on **net profit** through the **progressive IR scale**, with the **cotisation minimale** and bookkeeping obligations that implies. For how professional income is computed, see **`ma-income-tax`**. Whether a given pattern crosses into "habitual" is a **facts-and-circumstances** judgement for the reviewer — do not decide it mechanically.  _(see ma-income-tax)_
+- **Habitual activity analogy** — If the activity is **habitual, organised, and speculative** (frequent trading, mining as a business, running it like a profession), the DGI could instead treat it as **revenus professionnels** (business / professional income) taxed on **net profit** through the **progressive IR scale**, with the **cotisation minimale** and bookkeeping obligations that implies. For how professional income is computed, see **`morocco-professional-income-tax`**. Whether a given pattern crosses into "habitual" is a **facts-and-circumstances** judgement for the reviewer — do not decide it mechanically.  _(see morocco-professional-income-tax)_
 
 ### 3.3 What this skill will and will not say
 
@@ -117,7 +117,7 @@ Verify **every** figure, date, and classification before use. Primary > secondar
 - **Direction Générale des Impôts (DGI)** — tax.gov.ma — the **Code Général des Impôts (CGI)**; confirm there is (or is not) any crypto-specific provision or circular; categories *profits de capitaux mobiliers* and *revenus professionnels*.
 - **Secrétariat Général du Gouvernement (SGG)** / **Bulletin Officiel** — to confirm whether **projet de loi n°42.25** and its **décrets d'application** have been **adopted and published**.
 - **PwC Worldwide Tax Summaries — Morocco** — for the general IR framework and any note on crypto *(verify whether PwC has yet added a crypto section)*.
-- **Companion skills:** `ma-income-tax` (professional income / IR computation), `morocco-vat` (TVA), `ma-bookkeeping` (records).
+- **Companion skills:** `morocco-professional-income-tax` (professional income / IR computation), `morocco-vat` (TVA), `ma-bookkeeping` (records).
 
 ## PROHIBITIONS
 

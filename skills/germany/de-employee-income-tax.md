@@ -1,6 +1,6 @@
 ---
 name: de-employee-income-tax
-description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll), self-employed income (de-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals (de-non-resident-tax)."
+description: "Use this skill for the annual German income tax return of an employee resident in Germany (Einkommensteuererklärung with Anlage N), tax year 2026, filed in 2027. Covers when an employee must file (§ 46 EStG: tax classes III/V or IV with factor, side income or wage replacement benefits over EUR 410, several employers) and when filing is voluntary (four years), the 2026 tariff, Arbeitnehmer-Pauschbetrag, Werbungskosten (commuting allowance at EUR 0.38 from the first km, home office day allowance, work equipment, training, union dues), Vorsorgeaufwendungen, Kinderfreibetrag against Kindergeld, Ehegattensplitting, single parent relief, household services (§ 35a), extraordinary burdens, solidarity surcharge, church tax, deadlines, late-filing surcharge and interest. Trigger on: Steuererklärung Arbeitnehmer, Anlage N, Werbungskosten, Pendlerpauschale, Homeoffice-Pauschale, Lohnsteuer Erstattung, tax refund Germany employee, Steuerklasse III V Pflichtveranlagung, Splittingtarif. Out of scope: payroll withholding (de-payroll), self-employed income (germany-income-tax), capital income (de-capital-gains), rent (de-rental-income), non-resident individuals (de-non-resident-tax)."
 version: 0.4
 jurisdiction: DE
 tax_year: 2026
@@ -20,7 +20,7 @@ This skill works out the annual income tax of an employee who lives in Germany, 
 See also, and do not repeat here:
 
 - **de-payroll**: how the employer withholds Lohnsteuer, tax classes, the Vorsorgepauschale in payroll, social insurance rates and ceilings.
-- **de-income-tax** and **de-einkommensteuer-freelancer**: self-employed and trade income (Anlage S, G, EÜR).
+- **germany-income-tax** and **de-einkommensteuer-freelancer**: self-employed and trade income (Anlage S, G, EÜR).
 - **de-capital-gains**: investment income and the flat tax (Anlage KAP).
 - **de-rental-income**: letting income (Anlage V).
 - **de-social-contributions**: social insurance for the self-employed.

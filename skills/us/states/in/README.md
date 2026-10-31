@@ -13,7 +13,7 @@
 ## Files in this folder
 | File | What it covers |
 |---|---|
-| `in-income-tax.md` | Indiana individual income tax (flat 2.95% state rate + county income taxes) for self-employed / sole proprietors. Form IT-40. |
+| `indiana-income-tax.md` | Indiana individual income tax (flat 2.95% state rate + county income taxes) for self-employed / sole proprietors. Form IT-40. |
 | `in-sales-tax.md` | Indiana sales and use tax — 7% flat statewide rate, no local sales taxes. |
 
 ## What's NOT covered
