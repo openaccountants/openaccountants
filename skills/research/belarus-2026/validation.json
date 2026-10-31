@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-24",
+  "checked_source_commit": "d2ccb587628dfbee6f2e2817cef6ed5d05e5aceb",
+  "base_commit": "73d40eb7cf70181e54e3d10aabab016d5186cbcf",
+  "results": {
+    "examples": {
+      "files_with_examples": 7,
+      "blocks": 14,
+      "failures": 0,
+      "missing": 0
+    },
+    "changed_schema": {
+      "guides": 7,
+      "errors": 0,
+      "warning_groups": 0
+    },
+    "full_schema": {
+      "guides": 2248,
+      "generated_frontmatter_blocks": 6104,
+      "passed": true,
+      "existing_warning_groups": [
+        "826 guides missing sourced Sources section",
+        "5 guides missing fresh figures",
+        "5 jurisdiction-agnostic guides missing jurisdiction"
+      ]
+    },
+    "strict_metadata": {
+      "guides": 7,
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0
+    },
+    "repository_tests": {
+      "initial_total": 129,
+      "initial_passed": 128,
+      "initial_failures": 1,
+      "cause": "RUNNER_TEMP absent from local environment in ingest workflow test",
+      "affected_test_rerun": 2,
+      "rerun_passed": 2,
+      "environment_fix": "TMPDIR=/private/tmp RUNNER_TEMP=/private/tmp",
+      "software_changed": false
+    },
+    "mcp_tests": {
+      "total": 40,
+      "passed": 40
+    },
+    "git_diff_check": {
+      "passed": true
+    },
+    "author_identity": {
+      "all_branch_commits": "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>",
+      "AI_trailers": false
+    },
+    "scope": {
+      "source_only": "skills/**",
+      "generated_files_changed": false,
+      "original_paths_preserved": 8,
+      "original_platform_and_CTA_preserved": true,
+      "supporting_guides_byte_identical": 3
+    }
+  },
+  "log_hashes": {
+    "examples": {
+      "sha256": "c1a0bbe06c594219f795c72864367ae2775d22c16bd692beca73339bfe5da695",
+      "log_name": "examples-final.log"
+    },
+    "changed_schema": {
+      "sha256": "0367f3895179aee90ac32c32b6c0c5ebd82303015752dc3df2960d95da681b21",
+      "log_name": "schema-changed-final.log"
+    },
+    "full_schema": {
+      "sha256": "3f52513b9373569bdcfef96712367ea362b0c5bf593c0cbc94a89df239512dae",
+      "log_name": "schema-full.log"
+    },
+    "strict_metadata": {
+      "sha256": "1198becbbc784a43b7740e5660d36ba7ba457d50f03a4d5c6a8c72f90f89f160",
+      "log_name": "audit-final.log"
+    },
+    "repo_initial": {
+      "sha256": "6061c5bdf7d553b52107c10c265dcbd26a0ac56e1866d9ffbe735d53d2357ffb",
+      "log_name": "repo-tests.log"
+    },
+    "repo_environment_recheck": {
+      "sha256": "037702357de10ae3ec9424352aa7f62d31d2edafca51c7b0028476d2f7cf50b9",
+      "log_name": "ingest-recheck.log"
+    },
+    "mcp": {
+      "sha256": "2a97c4be4aa8c87e76c97cd78eaf8934f876a9b4a2f2c3cd0fdd3b6960171276",
+      "log_name": "mcp-tests.log"
+    }
+  },
+  "limits": [
+    "Full schema was run on initial candidate794b7dc8; later changes were body/source corrections and were covered by final changed-schema checks.",
+    "No repository/MCP software changed. Broad suites were not repeated after tax-text-only corrections.",
+    "Examples/schema/tests are separate from independent primary-law review and do not confer professional attestation."
+  ]
+}
