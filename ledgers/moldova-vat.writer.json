@@ -2,7 +2,7 @@
   "status": "LOCAL 2026 WRITER DRAFT; whole-country independent review and ordinary gaps pending",
   "slug": "moldova-vat",
   "Guide_path": "skills/international/moldova/moldova-vat.md",
-  "Guide_sha256": "ad52a74372fc263bc1a03909ca41405efe624e2307e9a32e142201107c6480d9",
+  "Guide_sha256": "ac2cfb3c9d304f50ac660d4cf69a8739253f611c51d375a6387fb1ea48edc26e",
   "rows": [
     {
       "id": "MD-VAT-001",
@@ -8507,6 +8507,7 @@
     "main": "3d521d986bb983a2e364fa897668e95b8d38aef0",
     "complete_destination_table": "ledgers/md-country-evidence/public-merged-repair-predecessor-reconciliation.json",
     "units": 81,
-    "review_scope": "Original smaller-file review retained; expanded whole-country review pending"
+    "review_scope": "Original smaller-file review retained; expanded whole-country review pending",
+    "revision_note": "Version2.3/last_updated31October records actual current-main predecessor reconciliation. Tax methods and original source-read dates unchanged."
   }
 }

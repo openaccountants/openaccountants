@@ -2,7 +2,7 @@
 
 **Writer draft only. Whole-country independent review and source/procedure gaps remain open.**
 
-Guide SHA256: `ad52a74372fc263bc1a03909ca41405efe624e2307e9a32e142201107c6480d9`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
+Guide SHA256: `ac2cfb3c9d304f50ac660d4cf69a8739253f611c51d375a6387fb1ea48edc26e`. Exact quotations, full statutory paragraph contexts, original-language text, source hashes, URLs and read dates are retained in the JSON. Review each whole rule and its Guide application; one row can contain linked legal conditions.
 
 |ID|Rule/figure or original source-rule opening|Guide section|Act/article and official source|Short exact original-language quote|Read|
 |---|---|---|---|---|---|
