@@ -1,0 +1,60 @@
+# Liechtenstein country reconciliation, 24 October 2026
+
+Status: writer-prepared local source-cited draft, not independent review or named accountant approval. Country issue #406 remains open; consolidated PR #514 remains draft. No Liechtenstein content from this batch is pushed.
+
+## Allocation and preserved work
+
+The support chat takes Liechtenstein under Michael's published ChatGPT Europe allocation, recorded before writing at https://github.com/openaccountants/openaccountants/issues/406#issuecomment-6383170064 . Starting published shared head: `af8d6057f62b05ddf766fe27b010e206ae120e44`. Local writer branch: `codex/liechtenstein-country-completion`. The primary chat remains on Bosnia and Herzegovina. Finland, Iceland, Norway, Guernsey and Gibraltar are parked with their existing evidence and remaining gaps preserved.
+
+Read the country issue, all six existing source Guides, the published assignment, source inventory and open PR list. No active Liechtenstein country PR was found. The original six files and platform attribution/licence fields are retained; earlier bodies remain in Git history. Added the two missing TP and XB source Guides and an explicit README mapping all seven domains as partial. Generated trees were not edited.
+
+Two drafting options were considered: A, preserve the existing Guide paths and correct their scope, adding only missing topics; B, split the combined payroll/social material into extra files. A was selected to preserve existing entry points and keep the country review together.
+
+## Corrections and new methods
+
+- Payroll/social: replaced Swiss approximations with the actual 2026 Liechtenstein bulletin, including the new employee FAK contribution, different AHV shares, administration and ALV cap. Added the institution's part-year ALV example. Resident wages also have source withholding. The February 2026 wage bulletin controls the CHF 25,200 education exception; the still-linked 2019 orientation says CHF 24,000. The two are not silently combined. Current ordinary maximum withholding schedules, actual annualisation and payer/remittance categories are distinct from final individual tax and social bases.
+- VAT: replaced the universal Swiss filing instruction with Liechtenstein authority allocation and its mandatory eMWST route; Swiss ESTV practice applies by analogy with local deviations. Removed merchant-name/default-country/rate classifiers. The country's own 2026 VAT Act supports the ordinary supply/registration/rate/acquisition/input/period/correction method. Its article numbering differs from Switzerland. Restaurant versus qualifying goods/takeaway, acquisition eligibility and input entitlement are explicit assumptions, not inferred from brand names. Annual filing and net-tax thresholds are separate; actual approval and instalments remain required.
+- Individual: reproduced current statutory ordinary, qualifying single-parent and joint state formulas. Integrated the 4% wealth yield with actual-return exclusions; municipality surcharge is a separate percentage of state tax. The legal 150%–250% bounds are distinguished from any unverified 2026 municipality list. All deductions, values, special incomes and the actual annual calendar remain unresolved scope.
+- Corporate: added the book-to-tax bridge, modified-equity deduction and no-new-loss condition, ordinary 70% loss cap, minimum-tax exception and provisional/final reconciliation. Sollertrag is fixed in article 5 for the 2026 tax year by the explicit amending-Act commencement. The historical 2012 provisional-tax leaflet is labelled historical; current statutes and actual notices control. No blanket investment/exemption, PVS, GloBE, source-tax or live-filing conclusion is supplied.
+- TP: new Guide reads SteG49 and SteV31a–31b, distinguishes strict group turnover and separate all-size-criteria routes, party/category thresholds, formal files versus residual suitable evidence, request/language conditions and supported methods. PGR's ordinary two-of-three company classification is not substituted for SteV's express all-criteria cross-reference. Actual comparables and contested size/aggregation/application need further work; the CHF900m TP screen is not held out as a CbCR threshold.
+- XB: new domestic liability/residence/source/PE method, individual withholding/treaty confirmation, selected nonbusiness foreign-credit bases/application limits, and corporate asset/departure screen. No particular treaty entitlement, general 183-day exemption, credit carryforward or automatic exit deferral is asserted. Business credit, all treaty applications and operational claims remain open.
+- Formation: replaced approximate GmbH capital and blanket payment/timing claims with selected current PGR provisions and the Office of Justice's fact sheet. GmbH minimum is 10,000 in the chosen statutory nominal currency; AG minimum and per-share conditions are separate. Simplified GmbH, qualified governance, review waiver and disclosure need the actual legal conditions and evidence. No fixed fee/timeline or universal resident-director instruction is supplied.
+- Overview: a router only, with the obsolete rate/deadline summary retained in history and no standalone calculation.
+
+## Source identity and access limits
+
+`2026-10-24-liechtenstein-source-retrieval.json` records hashes of six directly retrieved official PDFs, selected provisions read, current consolidation dates and the scoped web-reader evidence. Local raw/text snapshots are in `/private/tmp/oa-li-sources/`. Statutory content was read in German; the draft is an editorial interpretation, not a certified translation or professional approval.
+
+Current Tax Act and Tax Ordinance PDFs identify 1 July 2026; PGR identifies 1 September 2026; VAT Act identifies 1 January 2026. Search-index URLs with older `version=` parameters were not used as current law. Whole-document retrieval does not mean every section was verified.
+
+A direct bulk HTML read encountered HTTP 403 and produced no success manifest. Direct downloads of the current wage bulletin and GmbH fact sheet also returned 403; both documents' text was read through the web reader. These are content-read/access distinctions, not dead-link or successful-transport claims. Some statute PDFs failed in the web reader but were available by direct official download. No authenticated portal, client filing, payment or production database was used.
+
+## Validation and publication gates
+
+At the first local preparation pass, all 24 country controls pass across seven computation/preparation Guides and the 129 repository unit tests pass. Strict source metadata audit against `af8d6057` reports eight Guides with zero errors/warnings/notices. Changed-only schema validation before the checkpoint inspected the committed earlier workstream, so it must be rerun after this new checkpoint to cover the eight new country changes; its inherited Gibraltar freshness warning is not a Liechtenstein issue.
+
+Next: finish writer reconciliation and exact-checkpoint checks, obtain fresh independent whole-pack review, fix and close its findings, then fetch/reconcile only the published shared branch and make one combined country content push. Exact pushed-head CI is a later separate check. All eight Guides remain tier 2, all seven domains remain partial, and named Liechtenstein accountant review remains open. Do not close issue #406, mark comprehensive coverage or represent this local draft as published.
+
+## Exact-checkpoint follow-up
+
+After source checkpoint `46b6da5a`, contributor schema validation covers 105 changed source Guides across the consolidated workstream, including all eight Liechtenstein Guides, and passes with the inherited Gibraltar 2024 freshness warning. The eight-Guide strict audit and all 24 country calculations pass. The coverage report deliberately reports LI as partial/missing in all seven domains because README preserves those gaps; file presence is not completion.
+
+Writer QA narrowed the cross-border treaty-refund clock to the due date of the source-withholding amounts, matching article 26(3), rather than ambiguous payment maturity; that Guide advances to v0.2. No calculation block changed.
+
+The 23-URL transport audit records nine direct HTTP 200 responses and fourteen direct HTTP 403 responses, with scoped web-reader content evidence retained separately. Two restricted URLs are general source-register entry points, not assertions that every underlying treaty/source was read. No direct 403 is relabelled as a successful HTTP response. The report is `2026-10-24-liechtenstein-source-reachability.json`.
+
+## Independent-review corrective candidate
+
+One fresh reviewer was explicitly authorised by Michael on 24 October. Its original full-pack scope is frozen at `d1faf74d`. The reviewer independently recomputed all original 24 controls and reported two actionable findings while finishing the legal/source pass: the individual Guide omitted the separate resident minimum-income exemption, and six inherited CTAs made an unsupported always-current/professional promise while calling the firm a network.
+
+The writer read current SteG 15(2)(i)/19 and SteV 8 plus its amendment notes. The corrected individual Guide screens total article 14 income, part-year annualisation and the full family/child threshold table before applying the tariff; this is an exemption test, not a second deduction. One threshold/headroom control is added, bringing the country total to 25. All seven preparation Guides pass those 25 controls. The six inherited CTAs use the neutral wording already present in TP/XB. All eight Guide versions/headings advance for the corrective/status changes; professional metadata remains `pending_review`, tier 2.
+
+Source-review status text now points to the dated whole-pack report's exact revision and limits, leaving named accountant review and all seven partial domains open. README preserves the published Montenegro handover and parked Bosnia/Finland. Published shared update `7775cf6a` touched only OWNERS and was reconciled in local merge `a2ee5eb6`; the original country blobs were unchanged by that merge. The source hash manifests are refreshed for this corrective candidate without re-dating the earlier URL transport results. Correction closure and publication are still pending at this local checkpoint.
+
+## Exact-source correction closure and final local checks
+
+The fresh reviewer completed the full eight-Guide/README pass and closed both P2 findings plus the workflow reconciliation at exact country source `ede184f9d5b0ba4fdd35e8178d49e30df377d95d`. Its final report is copied without alteration to `2026-10-24-liechtenstein-pack-review.md`. It independently recalculated all 25 final controls; the original 24 blocks remain byte-identical. The report includes the full final nine-blob manifest, operative primary passages read, access limits and unresolved specialist/professional scope.
+
+On that committed candidate, contributor validation covers 105 source Guides across the full consolidated workstream and passes with the inherited Gibraltar2024 freshness warning. Strict metadata audit versus both published `7775cf6a` and original review source `d1faf74d` covers eight Guides with zero errors/warnings/notices. All 25 country controls pass the repository checker, and all 129 local repository tests pass (14.459 seconds, TMPDIR=/private/tmp). Whitespace and generated-tree checks pass. Local MCP tests were not separately run; the GitHub unit-test job installs MCP dependencies and must pass on the exact pushed head.
+
+The final evidence commit preserves all nine reviewed country blobs, adds the report, identifies the exact source checkpoint in the existing hash manifests and reconciles OWNERS status. No URL is newly checked or re-dated by this evidence-only change. Publication is one combined country content push after fetching and preserving published shared work; its exact-head CI and issue/PR record are subsequent external checks. All Guides remain tier 2, all seven domains remain partial, the country issue stays open and named Liechtenstein accountant review is unresolved.

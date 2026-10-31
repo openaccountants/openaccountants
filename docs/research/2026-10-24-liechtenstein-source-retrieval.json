@@ -1,0 +1,141 @@
+{
+  "read_on": "2026-10-24",
+  "purpose": "Writer source retrieval and selected legal-content reconciliation. Not independent review, accountant approval or complete legal coverage.",
+  "direct_pdf_sources": [
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T10:35:52.725703+00:00",
+      "source_version": "2026-07-01",
+      "raw_sha256": "de8b7f43fa98b22a06c8916180c64543ab6e0f771bb6c1652a8c21bf2ae32173",
+      "extracted_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Selected provisions: 2, 5–8, 9–16, 18–19, 22–29, 44–47, 49, 51, 54, 57, 61–63a, 75, 94, 113–114, 124a, 127 and 135. Detailed exemptions/groups, all personal deductions and specialist chains remain incomplete."
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T10:46:16.140340+00:00",
+      "source_version": "2026-07-01",
+      "raw_sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553",
+      "extracted_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Selected provisions: 4, 6, 8, 18a–18c, 31a–31b, 32–32a, 41–42, 45 and 47. Business-credit 36a–36c and full filing/ordinance interactions remain open. Article 8 and amendment notes additionally read to correct the separate minimum-income exemption screen during independent review."
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2009330000",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T10:38:31.225686+00:00",
+      "source_version": "2026-01-01",
+      "raw_sha256": "8ea497ccf56427cb13631b9f695f6ac770568f43524c7ebf41f7c97bbd92bcef",
+      "extracted_text_sha256": "60faa90d915232e0154919df4a1e92918805d42daefb4015908d8a79bbe1c77f",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Selected provisions: 3, 7–8, 10–14, 25–31, 35–38, 45–48, 52–54, 58–59, 66, 76–77 and 86. Every exemption/option, import, treaty, ordinance and special transaction is not audited."
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T10:47:31.056438+00:00",
+      "source_version": "2026-09-01",
+      "raw_sha256": "5851b543646ab11f235bd220478f60f06a90c6fa6c3795e7eb1af27ab46ebdcc",
+      "extracted_text_sha256": "2ae903b95ae97464370e80ab0f0865810a6f4869011072fe6c19fb0a787701c3",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Selected provisions only: 122, 180a, 261, 284, 390–391, 394, 552 section 13, 1058a, 1064 and 1122. Whole-document retrieval is not whole-PGR review."
+    },
+    {
+      "url": "https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T10:35:52.002440+00:00",
+      "source_version": "2026-01-01",
+      "raw_sha256": "441e0d2849d083d973ce7bcdf0d11f75d3e0dfdf7b711376511b95d5b4121297",
+      "extracted_text_sha256": "23f6cbd41200880a9fe61624ce2bded163a9df339d2eb48ae4c25726444d5dfa",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Contribution bulletin sections 1–14 read; employee rates/table, wage-base distinctions and partial-year ALV example compared with the draft. Not a full insurance/statutory/benefit audit."
+    },
+    {
+      "url": "https://www.gesetze.li/chrono/pdf/2024483000",
+      "read_on": "2026-10-24",
+      "direct_retrieval": "curl -f -L success; raw PDF retained locally",
+      "retrieved_at_utc": "2026-10-24T11:01:03.763738+00:00",
+      "source_version": "2026-01-01 for article 5 only; general amendment 2025",
+      "raw_sha256": "1ff70b755a4ec75c652f79ef5ec7f2cb7d8fe87bc08128cec701e5a623698435",
+      "extracted_text_sha256": "b667da6049064d66c48316dbb3f9cd2df782adab8cd9fba067e9aaa29aabb076",
+      "extraction": "pdftotext -layout",
+      "selected_read_scope": "Selected article 5, 19, 57(1a), 63, 94, 124a and commencement read with web reader; final commencement expressly separates 2025 general application from 2026 article 5."
+    }
+  ],
+  "web_reader_sources": [
+    {
+      "url": "https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf",
+      "document": "February 2026 wage bulletin, January 2026 treaty annex",
+      "scope": "Six-page text read through web reader. Direct curl returned HTTP 403. No local PDF/text hash asserted. The exact student threshold and schedule were compared with the older linked 2019 orientation; treaty entitlement remains case-specific."
+    },
+    {
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf",
+      "document": "Office of Justice GmbH fact sheet 07/2025",
+      "scope": "Five-page text read through web reader, including capital, formation, governance and disclosure. Direct curl returned HTTP 403. No local PDF/text hash asserted."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst",
+      "scope": "Current mandatory local portal and representation instructions read through web reader; no authenticated portal action."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig",
+      "scope": "Registration and foreign enterprise authority allocation read through web reader."
+    },
+    {
+      "url": "https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze",
+      "scope": "Current rates/categories and supply-period rate gate read through web reader."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/publikationen-zur-mehrwertsteuerpraxis",
+      "scope": "Swiss practice applies by analogy with local deviations, rather than an identical-law/administration claim."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/aenderungen-ab-01012025",
+      "scope": "Selected 2025 changes read; not every platform/net-tax/sector change implemented."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/lohn-quellensteuer-personalvorsorge/lohn-quellensteuer",
+      "scope": "Resident/nonresident withholding and actual current bulletin links read."
+    },
+    {
+      "url": "https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/krankenversicherung/praemien-beitraege",
+      "scope": "2026 adult/youth employer amounts, part-time and age-transition gates distinguished from 2027 amounts."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-juristische-personen/ertragssteuer",
+      "scope": "Headline rate/minimum and official source links only; current statutory exceptions separately read."
+    },
+    {
+      "url": "https://www.llv.li/servicekonto/steuerverwaltung/provisorischer-bezug-der-ertragssteuer-merkblatt.pdf",
+      "scope": "March 2012 source explicitly treated as historical administration; current statute/ordinance control, 2027 calendars not established."
+    },
+    {
+      "url": "https://www.llv.li/de/privatpersonen/beruf-und-arbeitsplatz/handelsregister/eintragungen/gesellschaft-mit-beschraenkter-haftung",
+      "scope": "Models/forms entry point read; no live registration executed."
+    }
+  ],
+  "access_limits": [
+    "Bulk direct HTML reader failed with HTTP 403; its attempted run did not produce a success manifest. Web reader supplied the stated content.",
+    "Some gesetze.li PDF pages failed in web reader but direct official PDF retrieval and extracted statute text were available.",
+    "Tax Act and Tax Ordinance current 1 July 2026, PGR current 1 September 2026; exact within-year amendment applicability still needs full reconciliation."
+  ],
+  "country_source_sha256": {
+    "skills/international/liechtenstein/README.md": "e0cfae3ca936c69e7eb77d943cc258ee45aa9bd1654e0c6022ac0ee93dd5eb0e",
+    "skills/international/liechtenstein/li-company-formation.md": "e49bb1dceee91a3540c56300039a0a317efa7e25e07bed76aec08bec28a4c0da",
+    "skills/international/liechtenstein/li-corporate-income-tax.md": "72981e14840831bf1b1f36f48261ad83a50678ead66fc7df0a3c81ee35f6d4b6",
+    "skills/international/liechtenstein/li-cross-border.md": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
+    "skills/international/liechtenstein/li-income-tax.md": "a02a901fbcb0378ecef7961f9003c7c85fd892e4be94a21ad4a82c1e728fb0e2",
+    "skills/international/liechtenstein/li-payroll-social.md": "45a891f3ce5cc96b215e94ac67be228cab1bab379fd6db30dd1062336d096a3c",
+    "skills/international/liechtenstein/li-tax-overview.md": "46f0b8fd74d307ebd7460fafe700cd9adc6435eea7e45cf099f3c6d4f111a9ba",
+    "skills/international/liechtenstein/li-transfer-pricing.md": "f7755802012c5e899838daa4742613f848724ad48c1d0a4b5f09e3ae448fe8c4",
+    "skills/international/liechtenstein/liechtenstein-vat.md": "11a44408c8bace284b69f22bb4475cc9a5c29577be99cc6d41d53bfe23934db8"
+  },
+  "country_source_checkpoint": "ede184f9d5b0ba4fdd35e8178d49e30df377d95d"
+}
