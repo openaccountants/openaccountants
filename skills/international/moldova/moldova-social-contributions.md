@@ -1,7 +1,7 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, requires whole-country independent review and does not claim comprehensive coverage or accountant attestation."
-version: 0.6
+version: 0.7
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.6
+# Moldova social contributions and medical insurance, 2026 v0.7
 
 ## Who this applies to
 
@@ -214,7 +214,29 @@ The working paper records employer/person identity; tax year; each payer categor
 
 IT-park reporting uses IU17 for the single tax and IPC21 nominal insured-income information; ordinary civil-contract contributions remain separate. The specified employer, physician, agriculture and justice groups use IPC21 table 2. When no employee and no social contribution is calculated, the instruction gives the stated no-monthly-return exception; check whether any other liability/reporting duty remains. Submit electronically with the appropriate signature and retain SFS-to-CNAS reconciliation. [CNAS points 23–25.2, 31][instructions].
 
-Liquidation IPC21/IU17 filing has the instruction's maximum 10 days after approval of the liquidation balance; CAS18-AN liquidation uses its separate 3-day period from initiating deletion. Pension-request and other termination cases have their own stated reporting timing. Historical corrections preserve the relevant form: IPC18 for January 2018–December 2020, earlier BASS/REV5 material to CNAS. Full current approved annex/codes and reorganisation procedures remain open below. [CNAS points 28–29, 33][instructions].
+Liquidation IPC21/IU17 filing has the instruction's maximum 10 days after approval of the liquidation balance; CAS18-AN liquidation uses its separate 3-day period from initiating deletion. Pension-request and other termination cases have their own stated reporting timing. Historical corrections preserve the relevant form: IPC18 for January 2018–December 2020, earlier BASS/REV5 material to CNAS. Actual IPC21/IU17 and current CAS18-AN/IRM19 methods are supplied here or in the payroll/planning companions; other liquidation/reorganisation implementation remains open below. [CNAS points 28–29, 33][instructions].
+
+### Actual CAS18-AN: annual fixed contributions and changes of employer status
+
+Current Order 126 annexes **5,6,9**, including the **30 April 2026** Order 56 amendment, supply the actual CAS18-AN form, instructions and categories. The current instruction covers individual entrepreneurs, **including peasant-farm founders**, without employment-contract employees. CNAS point 25 confirms that population; with employees, IPC21 includes both employee and founder contributions. Apply the actual no-contribution/no-CAS exception in point 25.1. The current order's historical IPC18 title does not revive IPC18 for 2026 payroll. [Actual form][employ5]; [instructions 5–6][employ6]; [classifier][employ9]; [CNAS 25–25.1][instructions]; [Order 56 points 1,3](https://www.legis.md/cautare/getResults?doc_id=154136&lang=ro).
+
+**Select the months first.** CAS18-AN is due by **15 January following the reporting year**. When employer status changes during the year, report periods **with employees through IPC21**, and periods **without employees through CAS18-AN**. Do not charge the same founder/month again merely because both forms occur that year. Instruction 6's opening sentence describes hiring but then reverses the direction of the status change; its final with/without-employee allocation is explicit and agrees with CNAS 25. For an insured risk, instruction 7 requires the affected person's months from year start to the risk date for determining the benefit right; a subsequent corrected annual return covers other founders when required by the stated 15 January date. This is not a grant of a benefit or a new general payment deadline. [Instructions5–7][employ6]; [CNAS 25,29][instructions].
+
+Use the registered name/fiscal code, CNAS payer code, SFS office, **four-character CUATM**, **four-digit activity code**, actual submission date, primary/corrected flag and **A/YYYY** annual period. The actual form has **nine columns**:
+
+| CAS18-AN columns | Completion and reconciliation |
+|---|---|
+| 1;2 | Person's serial number, repeated for that person's multiple entries; contribution month matching the dates in 6–7. It is not a new person for every monthly row. |
+| 3;4;5 | Identity-document name; IDNP; CPAS. If IDNP is missing, instruction 6's completion rules say not to insert other characters. Do not import IRM19's zero exception into this field. |
+| 6;7 | Start/end of activity **within the reported month**, preserving actual contribution/status dates. |
+| 8 | Applicable insured-category code. Annex 9 prints **127** for an individual-enterprise founder. Its **167** retail code is unused from 2024; **173** plant-purchaser code is unused from 2026. Do not reuse 173 for the farms now expressly included in the payer instruction; the current farm-specific category implementation remains a stated check. |
+| 9;Total | Monthly fixed contribution under the **current year's** social budget; annual Total sums column 9. It is neither gross insured income nor a payroll percentage. |
+
+Sources: [actual nine-column form][employ5]; [complete instructions, section II][employ6]; [current categories/notes][employ9]. Annex 9 still captions its tariff column “2021”, but its asterisk sends the amount to the annual budget. Use the 2026 category/eligibility/exemption and fixed-amount rules already supplied above, rather than deriving a 2026 amount from that old caption. A full-year eligible fixed payer at **1,906.50 per month** totals **22,878**; first establish the charged months and statutory exceptions. [2026 budget art.3][socialbudget]; [CNAS fixed-payer method][instructions]; [annex 9 footnote][employ9].
+
+File CAS18-AN electronically under Code 187; corrections follow Code 188 and replace the prior version, including nonmonetary category/function/activity-period corrections. For a tax-audit adjustment, mark **“După controlul fiscal”** and change only the months whose liability changed. Pre-2018 late/corrective returns keep their historical forms and administering body. Retain the source return, accepted receipt, monthly liability/payment schedules and audit/correction evidence. Actual fields do not prove electronic acceptance or a refund. [Instructions2–4 and section II][employ6].
+
+IRM19's event fields, all current employment/termination/risk classifiers, 10-working-day clock and missing-IDNP additional CNAM paper route are supplied in the [payroll Guide](moldova-payroll.md). Those event records do not replace monetary payroll/social reporting or establish every benefit entitlement.
 
 Payment is considered made when received into the Ministry of Finance Treasury account, not merely when a bank instruction is prepared. Part payments allocate to insured accounts under the statutory proportional rule. Match the actual account, liability period, receipt and payment allocation; incorrect/overpaid social payments require the separate CNAS request/correction/refund procedure. [Law 489 art. 20(6)–(7), 24][social]; [CNAS point 45][instructions].
 
@@ -333,7 +355,9 @@ Primary-source reads on 30–31 October 2026, with individual dates below. The r
 | [HCC 8/2023][healthcourt] | Operative point 2's specific lawyer disability/four-child-parent qualification; no general all-professions exemption | 2026-10-30 |
 | [Finance Ministry 2026 overview][mfchanges] | Corroboration only; the 2,572 medical figure conflicts with the 2,527 statute and is not adopted | 2026-10-30 |
 
-Not yet confirmed: full 2026 amendment/effective-date comparison beyond the current directly retained annex-1 tariff and selected statutory comparisons; all Government benefit/travel/food/training and special-condition implementing procedures; complete current IPC21/IU17/IRM19/CAS18-AN annex/code and liquidation/reorganisation instructions; CNAM director-level application/refund forms, actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; full IT-park eligibility, 7%-turnover/30%-minimum/headcount and entry/exit methods; bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
+| [Order126 actual CAS18-AN form][employ5], [full instructions][employ6] and [category list][employ9] | All original files/full5renderedpages read. Annual/month/person/amount method, status-period split, corrections and current2026payer/code changes mapped; farm-specific category, source wording and authenticated implementation limits explicit | 2026-10-31 |
+
+Not yet confirmed: full 2026 amendment/effective-date comparison beyond the current directly retained annex-1 tariff and selected statutory comparisons; all Government benefit/travel/food/training and special-condition implementing procedures; CAS18-AN farm-specific category mapping, other liquidation/reorganisation implementation and authenticated current return/correction acceptance; the actual IPC21/IU17/IRM19/CAS18-AN forms and classifiers are now mapped here or in companion Guides;  CNAM director-level application/refund forms, actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; remaining IT-park registration/verification/fees and historical entry/exit implementation beyond the planning/payroll/TP companion methods;  bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
 
 [social]: https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro
 [socialjan]: https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro
@@ -355,6 +379,12 @@ Not yet confirmed: full 2026 amendment/effective-date comparison beyond the curr
 [healthcourt]: https://constcourt.md/ccdocview.php?docid=825&l=ro&tip=hotariri
 
 [socialtariff]: https://www.legis.md/UserFiles/Image/RO/2025/mo659-661ro/an_1_489md.docx
+
+[employ5]: https://www.legis.md/UserFiles/Image/RO/2020/mo199-204md/anexa%20nr_5_126.doc
+
+[employ6]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_6_126md.docx
+
+[employ9]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_9_126md.docx
 
 <!-- openaccountants-cta-block -->
 

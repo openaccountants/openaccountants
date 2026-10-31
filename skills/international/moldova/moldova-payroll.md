@@ -1,7 +1,7 @@
 ---
 name: moldova-payroll
 description: "Compute Moldova payroll withholding for 2026 using the cumulative income-tax method, documented exemption months and separate social/medical contribution bases. Covers ordinary private and public employers, listed aviation conditions, qualifying agriculture, joiners, leavers, advances, benefits, corrections, IT-park transitions, nonresident source rules and treaty evidence. Use for salary tax, gross to net, CNAS, CNAM, IPC21, IRM19, personal and dependent exemptions, payment timing and payroll reconciliation. This source-cited writer draft corrects the former employee social deduction and exemption assumptions, preserves predecessor topics through explicit destinations, and requires whole-country independent review. Its stated implementation gaps keep the domain partial; it does not claim accountant attestation or comprehensive coverage."
-version: 0.8
+version: 0.9
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova payroll withholding, 2026 v0.8
+# Moldova payroll withholding, 2026 v0.9
 
 ## Who this applies to
 
@@ -135,6 +135,38 @@ For table 2, a missing IDNP is entered as zero if the valid CPAS is available; a
 A corrected IPC21 is the complete prescribed replacement/version, not an ad hoc delta. Identity/category/occupation/period corrections, fiscal-control social recalculations and corrections to previously controlled periods have different checkboxes and scope; do not select mutually incompatible declaration types. The fiscal-control nominal recalculation route has the stated 30-calendar-day submission rule. The no-return exception requires no payments to individuals, no calculated social contributions **and no employees**, not merely zero bank salary. Pre-2021 corrections use the historic forms/administration rather than forcing IPC21. [IPC21 instruction points 2–7 and preamble][ipc].
 
 IT-park, day-worker, dual-education, sickness, holiday, agriculture and fixed-founder reporting need the correct nominal categories and periods. Do not use an undated category table or a draft proposal as enacted law. The actual current IPC21 form/annex-3/4 codes and IALS21 form/classifier are now retained and mapped below. Ambiguous exception rules, authenticated technical validation, the missing annual prefix, historical form transitions and the complete liquidation procedure remain explicit gaps. The [social Guide](moldova-social-contributions.md) retains the verified ordinary/liquidation CNAS deadlines and the January–June taxi versus July ordinary transition. A successful filing receipt and treasury allocation are required before treating an obligation as settled.
+
+### Actual IRM19: employment events, insured-risk periods and corrections
+
+Current Order 126 annexes **3,4,4^1,7,8,9** provide IRM19's actual 12-column form, full instructions, technical requirements and three different classifiers. The form prints “IRM2019”; the order/instructions call it IRM19. Order 56, published and effective **30 April 2026**, changes strict risk/date checks; use the amended attachments. Its old IPC18 caption does not make IPC18 a current salary return. All original attachments and their rendered pages were read. [Form][employ3]; [instructions][employ4]; [technical requirements][employ4s1]; [Order 56 points 1,3](https://www.legis.md/cautare/getResults?doc_id=154136&lang=ro).
+
+Report prescribed hiring, employment changes/termination and childcare/paternal orders within **10 working days**, counted from the **day after the date indicated in the order**. When a person is hired and leaves within 10 days of hiring, make **two entries**, preserving both events. The special-pension occupation assignment is also reportable; instruction 3(c) expressly says no employer order is made for that case. Correction under Code 188 records the **original information-system document number** in the correction header, rather than inventing a new linkage or silently overwriting the source event. [Annex 4 general instructions 2–5][employ4].
+
+Use registered employer name/IDNO, SFS office, CNAS code, actual submission date, primary/corrected flag and responsible-person signature. **Telephone and email are mandatory**. The fields are:
+
+| IRM19 columns | Meaning and current constraints |
+|---|---|
+| 1;2 | Entry number; identity-document name in uppercase Latin letters with applicable diacritics/hyphen. |
+| 3;4 | IDNP:13 digits and population-register match; CPAS:11 digits and insured-register match. Technical requirements expressly permit **0 as an exception** for either field. Match both to the same person; where one is 0, match the other to the name. Do not manufacture an identifier or treat every missing-IDNP case as a hiring prohibition. |
+| 5;6;7 | Insured-risk category and its start/end dates, completed **together**; no ordinary hiring/termination values in these fields. Dates use **dd.mm.yyyy**, with start **earlier than** end; permitted childcare/adoption/guardianship/paternal periods can cross the reporting year. The form duplicates a start-date caption, but the instructions identify 6 as start and 7 as end. |
+| 8;9;10 | Employment-relation code; termination-reason code **only when 8 is 02 or 08**, otherwise 9 is blank; date that relation code applies, required with 8 and not before **1 April 2019**. |
+| 11;12 | CNAS special-pension occupation code and its assignment date, for the specified assignments/transfers. This is a separate occupation classifier, not the ordinary payroll insured-category or contribution tariff. Its full current occupation list remains to be verified. |
+
+Sources: [actual form][employ3]; [annex 4 completion rules and note][employ4]; [technical requirements 1–11][employ4s1]. Without IDNP, the instruction additionally requires the IRM19 information **on paper to territorial CNAM agencies/representatives**. Preserve that separate delivery evidence; zero in the electronic field does not discharge this paper route. [Annex 4 final note][employ4].
+
+Technical requirement 12 generally separates risk fields 5–7 from relation/date fields 8–10 and special-occupation fields 11–12. Preserve its **specific category 158 exception**: selecting 158 automatically sets relation 8 to **03** and date 10 to date 6. Do not generalise this automatic combination to the other risk categories. For paternal leave, the current technical requirement permits a declared period of **5–45 days**. That is a form-validation bound, not proof that every person is entitled to 45 paid days or benefits. The attachment does not settle the inclusive/exclusive day-count boundary algorithm; no authenticated portal result is claimed. [Requirements 5–6,12 and note][employ4s1]; [Order 56 point 1](https://www.legis.md/cautare/getResults?doc_id=154136&lang=ro).
+
+Keep the three code sets distinct:
+
+| Classifier | Actual current codes and scope |
+|---|---|
+| Employment relations, annex 7 | **01** indefinite hire; **05** fixed-term hire; **02** termination; **03** suspension; **04** cancellation of suspension. **06/07/08/09/10** are the respective military indefinite/fixed-term/termination/suspension/cancellation codes for the specified military/special-service population only. |
+| Termination reasons, annex 8 | **111** unit liquidation; **112** individual-employer cessation; **113** staff/headcount reduction; **114** resignation; **115** Labour Code 82 termination except (b); **116** other Labour Code dismissal; **211** individual-employer death/declaration of death/missing. Public-service **311/312/313/314** distinguish liquidation/reduction/resignation/other; special public-service **411/412/413** distinguish entity liquidation or post reduction/resignation/other specified grounds. |
+| Insured risks, annex 9 | **157** childcare to 3; **158** additional unpaid childcare 3–4; **165** paternal; **175** partially paid pre-adoption entrustment; **176** paid adoption or guardianship-placement leave; **177** partially paid care for adopted/placed child to 3; **178** corresponding care for an adopted/placed child over 3. |
+
+Sources: [annex 7 complete bilingual table/footnotes][employ7]; [annex 8 complete bilingual table][employ8]; [annex 9 IRM table][employ9]. Annex 7's 03 footnote excludes the stated circumstances outside the parties' will, employee-initiated medically certified care for an ill family member up to 2 years, and partially paid childcare to 3. Apply the actual event/medical-status rules; a reporting code does not itself prove a lawful dismissal, leave entitlement or benefit award. Blank 2019 amendment captions in annexes 7/8, annex 9's Russian 2019 caption and tariff-year 2021 heading are retained as source defects, not treated as current effective dates or rates.
+
+Do not duplicate the **risk-category information already reported through IRM19 column 5** in IPC21 table 2. This limited instruction does not cancel required salary/contribution records for that person. Pre-1 April 2019 IPC18/DSA19 directions are historical. CAS18-AN's annual fixed-founder/month/person/correction method and its different missing-IDNP rule are in the [social Guide](moldova-social-contributions.md); it is not an employment-event replacement. [Annex 4 general instructions 6–7][employ4]; [CAS instructions][employ6].
 
 ### Complete the actual IPC21 attachments
 
@@ -358,7 +390,9 @@ Primary-source reads on 30–31 October 2026, with individual dates below. [The 
 
 | [Current ISAPTI17 form][isaptiactual]/[instructions][isaptiinstructions] and [employee statement][parkemployee]/[instructions][parkemployeeinstructions] | Allfour originalDOCX/allfourrenderedpages read. Header/record/paid-salary/month fields, monetarycontrolsum, signatures and separateemployee-delivery evidence mapped; cross-regime month counts and authenticated implementation remain explicit | 2026-10-31 |
 
-Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current and IALS21 May-amendment checks; IALS21 omitted annual-prefix values and atypical country entries, IPC21 duplicated date/field-mask and part-II exclusion conflicts, authenticated portal validation, all liquidation/historical correction routes and case-specific nominal special-category implementation; remaining Government benefit/travel/food/training implementation, meal-ticket nominal amount and non-cash exceptions; foreign-currency/FX-linked loan benchmark choice, missing-observation handling, exact transaction-day/conversion/final-rounding and no-cash-wages remittance; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
+| [Order126 IRM19 form][employ3], [instructions][employ4], [technical requirements][employ4s1] and [relations][employ7]/[termination][employ8]/[risk][employ9] classifiers | Original files/full11renderedpages read; event/deadline/identity/field/code/correction methods and30April2026changes applied. Specific158exception, additionalCNAMpaper route and source/portal limits explicit; sharedannex9also supportsCAS | 2026-10-31 |
+
+Not yet confirmed: full 2026 commencement/form-version comparison beyond the selected January/current, IALS21 May and actual IRM19/CAS18-AN April-amendment checks; full current CNAS special-pension occupation list, paternal technical boundary-day counting and authenticated IRM19 correction/automatic158-field behaviour;  IALS21 omitted annual-prefix values and atypical country entries, IPC21 duplicated date/field-mask and part-II exclusion conflicts, authenticated portal validation, all liquidation/historical correction routes and case-specific nominal special-category implementation; remaining Government benefit/travel/food/training implementation, meal-ticket nominal amount and non-cash exceptions; foreign-currency/FX-linked loan benchmark choice, missing-observation handling, exact transaction-day/conversion/final-rounding and no-cash-wages remittance; statutory entitlement computation for contractual wage/leave/sickness/severance and execution deductions; taxpayer-specific pre-2026 medical-penalty transition and arrears-account allocation; complete IT-park/software-occupation eligibility and historical entry/exit treatment; treaty-by-treaty employment/social coverage. The old 2025 figures 5,500 minimum and 16,100 forecast, employee 6%/27% net-pay model, universal 32% hazardous-work default, blanket missing-IDNP refusal, automatic personal exemption without application, non-cumulative monthly formula and assumed 2026 continuity are corrected or retained as historical subjects, not certified current rules. The old dividend/farming/winnings summary belongs to the individual/corporate income classifications; a statutory peasant-farm 7% income-tax rate is not a general payroll or farming-distribution withholding rate. All old examples/tests remain in the archive with their legal-assumption corrections. The payroll domain stays partial until ordinary gaps and whole-country independent review are closed.
 
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [jan]: https://www.legis.md/cautare/getResults?doc_id=149766&lang=ro
@@ -388,6 +422,20 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 [isaptiinstructions]: https://www.legis.md/UserFiles/Image/RO/2025/mo544-546ro/an_4_135md.docx
 [parkemployee]: https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_5_135md.docx
 [parkemployeeinstructions]: https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_6_135md.docx
+
+[employ3]: https://www.legis.md/UserFiles/Image/RO/2024/mo%20282-285ro/a_3_126md.docx
+
+[employ4]: https://www.legis.md/UserFiles/Image/RO/2025/mo297-300ro/an_4_126md.docx
+
+[employ4s1]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_4-1_126md.docx
+
+[employ6]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_6_126md.docx
+
+[employ7]: https://www.legis.md/UserFiles/Image/RO/2019/mo59-65md/anexa%20nr_7_126.doc
+
+[employ8]: https://www.legis.md/UserFiles/Image/RU/2022/mo%20267-273%20ru/an_8_126.doc
+
+[employ9]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_9_126md.docx
 
 <!-- openaccountants-cta-block -->
 
