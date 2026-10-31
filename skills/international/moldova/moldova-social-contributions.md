@@ -1,7 +1,7 @@
 ---
 name: moldova-social-contributions
 description: "Compute Moldova social contributions and compulsory medical insurance for 2026. Distinguish ordinary private and public employers, special aviation roles, agricultural relief, IT-park insured income, independent physicians and justice professions, fixed-contribution categories, patents, taxi transitions, day workers and independent service entrepreneurs. Apply the social minimum base and separate part-time contribution floor, and distinguish salary accrual from medical-premium payment timing. Use for CNAS, CNAM, IPC21, fixed social insurance, health premiums, payroll contribution reconciliation, status overlaps, payment deadlines and arrears. This source-cited writer draft preserves predecessor subjects through explicit destinations and gaps, requires whole-country independent review and does not claim comprehensive coverage or accountant attestation."
-version: "0.10"
+version: "0.11"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
@@ -14,7 +14,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Moldova social contributions and medical insurance, 2026 v0.10
+# Moldova social contributions and medical insurance, 2026 v0.11
 
 ## Who this applies to
 
@@ -313,6 +313,21 @@ Sources: [Regulation 7–14 and actual annex 1][cnascorrection]. Keep the paymen
 
 Point 31 places payment-type corrections in the period in which they occur in the named aggregate contribution report. It does not rename that report IPC21 or establish that a payment correction has amended the underlying insured-income liability. Correct reporting errors through the separately applicable return procedure. The statutory late-charge treatment for documented inter-account transfers also needs its own Law 489 article 28 test; these booking dates alone do not create or waive an interest liability. Keep the accepted request, account check, Treasury/system execution evidence and reconciled before/after accounts. Authenticated portal acceptance and case-specific economic-code/penalty treatment remain untested. [Regulation 30–31][cnascorrection]; [Law 489 art.28][social].
 
+### CNAM correction application: fields and evidence
+
+The actual legal-representative application linked on CNAM’s current forms page was read in full on 31 October 2026. Its annex heading concerns erroneous/excess payments of **fixed medical premiums and/or contraventional sanctions**. Keep this field method separate from the statutory fixed-premium refund above and percentage-payroll adjustments. The complete Order 322-A regulation and its operative compatibility remain unverified; this blank form alone does not establish entitlement, the filing channel or a processing deadline. [Official forms list][cnamforms]; [actual application][cnamcorporateform].
+
+| Request component | Actual fields and evidence |
+|---|---|
+| Applicant and represented payer | Applicant name/IDNP; actual representative or administrator capacity; represented person/entity name and IDNP/IDNO; telephone, email and address. |
+| Payment being corrected | Amount in figures and words, actual payment date and economic classification. The form prints 122200/143140; confirm the applicable current account rather than treating these printed codes as a current Treasury instruction. |
+| Wrong identifier | Separate wrong IDNP/IDNO, correct IDNP/IDNO and amount. |
+| Transfer between payment types | Source payment date/ECO/amount in lei, separately from destination IBAN/Treasury account and amount. Do not replace the destination account with the source economic code. |
+| Refund bank details | Beneficiary name/IDNP, IBAN and bank. The printed footnote says completion is not mandatory **if bank details are attached**; retain that attachment instead of requiring duplicate entries. |
+| Supporting record | Document name, number, date and page count; printed responsibility and personal-data declarations; application date/signature and stamp field. A printed stamp box alone does not establish a universal legal stamp obligation. |
+
+All field mappings: [actual annex 1 application][cnamcorporateform]. Reconcile the requested operation to payment and account evidence; selecting a refund field is not evidence that a refund has been approved or paid. The form’s footer still cites Law 133/2011. That historical footer is preserved as source evidence and is not certified here as current 2026 privacy law. Current correction/refund entitlement, institutional stages and compatible operative forms remain explicit gaps.
+
 The old annual CET18/PIT deadlines are not interchangeable with these social and medical returns. Annual individual filing and foreign-citizen departure cases require the individual Guide's own current-law check. Do not certify that an IPC21 alone discharges every person's annual income-tax obligation.
 
 ## Penalties and interest
@@ -436,7 +451,11 @@ Primary-source reads on 30–31 October 2026, with individual dates below. The r
 
 | [Current CNAS payment-correction regulation/actual annex1][cnascorrection] | Full originalPDF/all6pages text-read and visually inspected; request parts, source/destination limits, Treasury dispatch versus distinct recording dates, unidentified999 and code/reorganisation balance methods supplied. Portal/economic-code/penalty cases remain explicit | 2026-10-31 |
 
-Not yet confirmed: full 2026 amendment/effective-date comparison beyond the current directly retained annex-1 tariff and selected statutory comparisons; all Government benefit/travel/food/training and special-condition implementing procedures; CAS18-AN farm-specific category mapping, other liquidation/reorganisation implementation and authenticated current return/correction acceptance; the actual IPC21/IU17/IRM19/CAS18-AN forms and classifiers are now mapped here or in companion Guides;  CNAS standalone192-Acommencement/earlier2026application ; current CNAS inter-classification/fiscal-code/balance correction is now mapped below;  other CNAM corporate/inter-account correction procedures and case-specific prior-year/setoff implementation beyond the current fixed-premium refund method; actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; remaining IT-park registration/verification/fees and historical entry/exit implementation beyond the planning/payroll/TP companion methods;  bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
+| Source | Read scope | Read on |
+|---|---|---|
+| [CNAM actual legal-representative correction/refund application][cnamcorporateform] | Full original DOC text and all3 rendered pages read; actual fields and optional bank-detail attachment mapped. Underlying regulation/current entitlement and deadlines remain unverified | 2026-10-31 |
+
+Not yet confirmed: full 2026 amendment/effective-date comparison beyond the current directly retained annex-1 tariff and selected statutory comparisons; all Government benefit/travel/food/training and special-condition implementing procedures; CAS18-AN farm-specific category mapping, other liquidation/reorganisation implementation and authenticated current return/correction acceptance; the actual IPC21/IU17/IRM19/CAS18-AN forms and classifiers are now mapped here or in companion Guides;  CNAS standalone192-Acommencement/earlier2026application ; current CNAS inter-classification/fiscal-code/balance correction is now mapped below;  full CNAM corporate/inter-account correction regulation, entitlement and institutional deadlines beyond the now-read actual application fields and case-specific prior-year/setoff implementation beyond the current fixed-premium refund method; actual initial-registration/electronic-identity application documents and the separate EU/Schengen free-movement/insurance interaction beyond the sourced art. 43^17 cumulative-condition method, and unusual retrospective salary/fixed overlap or refund cases beyond the sourced category/status rules; any taxpayer-specific pre-2026 penalty transition and arrears-account allocation; new service-entrepreneur eligibility/registration, monthly cumulative-band adjustments and medical-allocation rounding, partial-year/status-overlap and correction implementation beyond the sourced annual-difference method; remaining IT-park registration/verification/fees and historical entry/exit implementation beyond the planning/payroll/TP companion methods;  bilateral social-security agreements/certificates; full benefit-entitlement and labour-law computation. The old 2025 social amount 20,518 and monthly 1,709.84, minimum 5,500, average salary 16,100, net-pay test fixtures, personal allowance 29,700/2,475 and 360,000 gate, major 34,620, spouse/disability-dependent 21,780 and ordinary-dependent 9,900 figures, annual CET18/30-April and three-day foreign-citizen departure-return claims, and other-tax context (corporate/entrepreneur 12%, statutory farming 7%, SME 4%, VAT 20%/8%/6%, old VAT-registration 1.2/1.5/1.7-million thresholds and their asserted dates, and withholding) are archived predecessor subjects pending their own period/source reconciliation or companion Guide. They are not certified current rules here. The earlier defaults of assuming 24%, applying percentage rates to every self-payer, treating every ambiguous bank debit as a settled contribution, and compounding all arrears are replaced by explicit classification, evidence and debt-movement checks. All ordinary gaps keep the domain partial.
 
 [social]: https://www.legis.md/cautare/getResults?doc_id=156677&lang=ro
 [socialjan]: https://www.legis.md/cautare/getResults?doc_id=151170&lang=ro
@@ -474,6 +493,9 @@ Not yet confirmed: full 2026 amendment/effective-date comparison beyond the curr
 [cnamrefundform]: https://www.legis.md/UserFiles/Image/RO/2025/mo%20526-528%20ro/anexa_300md.doc
 
 [cnascorrection]: https://cnas.gov.md/sites/default/files/2026-04/publicpublications7203459mdregulamentcor.pdf
+
+[cnamforms]: https://cnam.md/beneficiari/formulare/
+[cnamcorporateform]: https://cnam.md/?wpdocs_dl=7594&wpdocs_nonce=9f81a95c7a
 
 <!-- openaccountants-cta-block -->
 
