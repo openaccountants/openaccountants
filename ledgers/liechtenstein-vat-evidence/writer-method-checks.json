@@ -1,0 +1,186 @@
+{
+  "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "guide_sha256": "98ae4b745216e9a9992f48395c51cefab7a1b76e33a906c41c811a5040a41bd2",
+  "controls": [
+    {
+      "name": "Direct eligible plus documented shared-use recovery",
+      "actual": "720.0",
+      "expected": "720",
+      "basis": "MWSTG30; MWSTV65\u201368; assumed supported 70% shared use",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Excluded plus unsupported shared fraction",
+      "actual": "280.0",
+      "expected": "280",
+      "basis": "Case reconciliation; no duplicate deduction",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Input pools reconcile to total",
+      "actual": "1000.0",
+      "expected": "1000",
+      "basis": "Case arithmetic",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Full provisional recovery less final entitlement",
+      "actual": "280.0",
+      "expected": "280",
+      "basis": "MWSTG30(2); route eligibility assumed, final correction reconciles",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "December first use counts full first tax period",
+      "actual": "3",
+      "expected": "3",
+      "basis": "MWSTV70(2); MWSTG34",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Anniversary method would incorrectly count only two",
+      "actual": "2",
+      "expected": "2",
+      "basis": "Negative comparator, not the statutory VAT method",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Period-last-day change includes that year",
+      "actual": "4",
+      "expected": "4",
+      "basis": "MWSTV70(2), calendar periods",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Movable remaining fraction after three fifths",
+      "actual": "0.4",
+      "expected": "0.4",
+      "basis": "MWSTG31(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Movable remaining input VAT",
+      "actual": "4000.0",
+      "expected": "4000",
+      "basis": "Original VAT is a case input",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Half use permanently loses entitlement",
+      "actual": "2000.00",
+      "expected": "2000",
+      "basis": "MWSTV69(4); no previous correction assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Movable recovery does not become negative after useful period",
+      "actual": "0",
+      "expected": "0",
+      "basis": "Time-value arithmetic, six counted periods assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Ordinary immovable reduction uses twentieths",
+      "actual": "8500.00",
+      "expected": "8500",
+      "basis": "MWSTG31(3); correct original input VAT and ordinary property facts assumed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Partial permanent correction differs from full recapture",
+      "actual": "2000.0",
+      "expected": "2000",
+      "basis": "MWSTV69(4)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Temporary use uses assumed arm-length rental VAT",
+      "actual": "81.000",
+      "expected": "81",
+      "basis": "MWSTG31(4); rental consideration and rate assumed applicable",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "2026 four-percent one-year late interest",
+      "actual": "400.00",
+      "expected": "400",
+      "basis": "MWSTV142",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "2025 four-and-half-percent one-year rate",
+      "actual": "450.000",
+      "expected": "450",
+      "basis": "MWSTV142",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Cross-rate duration arithmetic",
+      "actual": "325.0000",
+      "expected": "325",
+      "basis": "Assumed half-year 2025 plus quarter-year 2026; no statutory day-count asserted",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Interest just below collection threshold",
+      "actual": "False",
+      "expected": "False",
+      "basis": "MWSTV142(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Interest exactly at collection threshold",
+      "actual": "True",
+      "expected": "True",
+      "basis": "MWSTV142(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Refund interest exactly at payment threshold",
+      "actual": "True",
+      "expected": "True",
+      "basis": "MWSTV143(3)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Small interest threshold leaves refund principal intact",
+      "actual": "50",
+      "expected": "50",
+      "basis": "MWSTV143 threshold concerns interest; principal is not suppressed",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Non-article10 acquisition screen at exactly10000",
+      "actual": "False",
+      "expected": "False",
+      "basis": "MWSTG45(2)(b); all other gates separate",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Non-article10 acquisition screen above10000",
+      "actual": "True",
+      "expected": "True",
+      "basis": "MWSTG45(2)(b); all other gates separate",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Ordinary exemption strictly below100000",
+      "actual": "False",
+      "expected": "False",
+      "basis": "MWSTG10(2)(a)",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    },
+    {
+      "name": "Annual filing turnover screen includes exact5005000",
+      "actual": "True",
+      "expected": "True",
+      "basis": "MWSTG35; application, approval and other conditions remain required",
+      "status": "WRITER CONTROL; INDEPENDENT CHECK PENDING"
+    }
+  ],
+  "all_four_original_blocks_preserved_exact": true,
+  "original_gross_case_current_exact": true,
+  "nine_sections_two_current_examples": true,
+  "metadata_CTA_unchanged": true,
+  "remaining": "Actual supply/allocation, special property/renovation and successive changes, exact interest day-count, authenticated forms and full independent review remain open."
+}

@@ -1,415 +1,144 @@
 ---
 name: belarus-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Belarus VAT (NDS) return for any client. Trigger on phrases like "Belarus VAT", "Belarusian NDS", "MNS filing", or any request involving Belarusian VAT. This skill covers standard NDS payers filing monthly/quarterly returns. Simplified taxation and individual entrepreneur special regimes are in the refusal catalogue. MUST be loaded alongside vat-workflow-base v0.1 or later. ALWAYS read this skill before touching any Belarus VAT work.
-version: 2.0
+description: Compute ordinary Belarus value-added tax for the 2026 calendar year for domestic organisations and foreign permanent establishments, with specific routing for individual entrepreneurs and simplified taxpayers. Trigger on Belarus NDS, VAT registration, place of supply, reverse charge, input tax, electronic invoices, exports, monthly or quarterly VAT returns and import VAT. The skill sets out the standard, reduced and telecom rates, distinguishes exemptions from zero-rated turnover, explains signed electronic-invoice evidence and mixed-use credit allocation, and provides filing, payment, refund and correction rules with two recomputing examples. Foreign digital-consumer and distance-selling registrations and specialist sector schemes require their separate statutory procedures. Use alongside the corporate and cross-border skills; tier 2, checked against the law.
+version: 2.1
 jurisdiction: BY
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+category: international
 ---
 
-# Belarus VAT
-
-## Section 1 — Quick reference
-
-**Quick reference field table**
-
-| Field | Value |
-| --- | --- |
-| Country | Belarus (Republic of Belarus) |
-| Tax name | NDS (Nalog na Dobavlennuyu Stoimost / VAT) |
-| Standard rate | 20% |
-| Reduced rates | 10% (certain food, children's goods, agricultural produce) |
-| Zero rate | 0% (exports, international transport) |
-| Return form | NDS declaration (electronic) |
-| Filing portal | https://www.portal.nalog.gov.by |
-| Authority | Ministry of Taxes and Duties (MNS) |
-| Currency | BYN (Belarusian Ruble) only |
-| Filing frequency | Monthly or quarterly (quarterly if revenue below threshold) |
-| Deadline | 20th of the month following the reporting period |
-| EAEU membership | Yes — special rules for intra-EAEU trade (Russia, Kazakhstan, Armenia, Kyrgyzstan) |
-| Companion skill | **vat-workflow-base v0.1 or later — MUST be loaded** |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending local practitioner validation |
-| Validation date | April 2026 |
-
-**Key NDS return boxes**
-
-| Box | Meaning |
-| --- | --- |
-| 1 | Taxable supplies at 20% — base |
-| 2 | Output NDS at 20% |
-| 3 | Taxable supplies at 10% — base |
-| 4 | Output NDS at 10% |
-| 5 | Zero-rated supplies (exports) |
-| 6 | Exempt supplies |
-| 7 | Reverse charge on imported services — base |
-| 8 | Output NDS on reverse charge |
-| 9 | EAEU goods imports — base |
-| 10 | NDS on EAEU imports |
-| 11 | Total output NDS |
-| 12 | Input NDS on domestic purchases |
-| 13 | Import NDS (customs or EAEU) |
-| 14 | Input NDS on reverse charge (creditable) |
-| 15 | Total input NDS |
-| 16 | Net NDS payable or credit |
-| 17 | Credit brought forward |
-| 18 | Net payable |
-
-**Conservative defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 20% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Belarus |
-| Unknown EAEU vs non-EAEU origin | Non-EAEU (customs import) |
-| Unknown business-use proportion | 0% recovery |
-| Unknown SaaS billing entity | Reverse charge (Box 7/8/14) |
-| Unknown blocked-input status | Blocked |
-
-**Red flag thresholds**
-
-| Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | BYN 15,000 |
-| HIGH tax-delta on a single default | BYN 1,000 |
-| MEDIUM counterparty concentration | >40% |
-| MEDIUM conservative-default count | >4 |
-| LOW absolute net NDS position | BYN 30,000 |
-
-## Section 2 — Required inputs and refusal catalogue
-
-### Required inputs
-
-- **Minimum viable input** — Bank statement for the period. Acceptable from: Belarusbank, Belinvestbank, Priorbank, BPS-Sberbank, Alfa-Bank Belarus, MTBank, or any other.
-- **Recommended input** — Sales/purchase invoices, ESHF (electronic invoices) register, client UNP (TIN).
-- **Ideal input** — Complete ESHF register, EAEU trade documentation, prior period declaration.
-
-### Refusal catalogue
-
-- **R-BY-1 — Simplified taxation** — "Simplified taxation payers have different NDS obligations. Out of scope." (Trigger: client on simplified regime.)  _(R-BY-1)_
-- **R-BY-2 — Individual entrepreneur special regime** — "IE special regimes may not require NDS returns. Out of scope." (Trigger: IE on special regime without NDS obligations.)  _(R-BY-2)_
-- **R-BY-3 — Partial exemption** — "Input NDS apportionment required. Use a qualified practitioner." (Trigger: mixed taxable and exempt.)  _(R-BY-3)_
-- **R-BY-4 — Free economic zone** — "FEZ entities have special NDS rules. Out of scope." (Trigger: FEZ entity.)  _(R-BY-4)_
-- **R-BY-5 — EAEU complex transactions** — "Complex EAEU transactions require specialist analysis. Out of scope." (Trigger: complex intra-EAEU supply chains (triangulation, tolling).)  _(R-BY-5)_
-- **R-BY-6 — Sanctions-related** — "Sanctions compliance is outside this skill's scope. Seek legal advice." (Trigger: transaction involves sanctioned entities or restricted goods.)  _(R-BY-6)_
-
-## Section 3 — Supplier pattern library
-
-### 3.1 Belarusian banks (fees exempt — exclude)
-
-**Belarusian banks pattern table**
+# Belarus VAT, 2026 v2.1
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BELARUSBANK | EXCLUDE | Financial service, exempt |
-| BELINVESTBANK, BELINVEST | EXCLUDE | Same |
-| PRIORBANK, PRIOR | EXCLUDE | Same |
-| BPS-SBERBANK, ALFA-BANK BY | EXCLUDE | Same |
-| MTBANK, BELGAZPROMBANK | EXCLUDE | Same |
-| PROTSENTY, INTEREST | EXCLUDE | Interest, out of scope |
-| KREDIT, LOAN | EXCLUDE | Loan principal |
+## Who this applies to
 
-### 3.2 Government and statutory bodies (exclude)
+2026 ordinary domestic VAT on supplies by organisations and relevant foreign businesses, plus import and purchaser tax-agent obligations. Art. 112 generally excludes Belarus individual entrepreneurs from VAT on their domestic sales, apart from the specified art. 129(7) case. It does not remove import or foreign-supplier purchaser obligations. Simplified organisations generally replace domestic-sales VAT under art. 326(1.2), while import/purchaser VAT remains. Do not invent a universal small-business turnover-registration threshold for ordinary organisations. [Code arts. 112, 114, 129(7), 326(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-**Government and statutory bodies pattern table**
+General registration is under General Code arts. 69-70. A payer's domestic obligation follows legal status/regime and taxable operations; low turnover alone is not deregistration. On liquidation or a valid regime change, determine the effective cessation and final obligations under General Code art. 44 and Special Code arts. 127-137. Foreign digital-consumer and distance-selling registration under arts. 141-141-1 is a separate route, outside the computations here. [General Code arts. 44, 69-70](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 127-141-1](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| MNS, NALOG, TAX INSPECTORATE | EXCLUDE | Tax payment |
-| TAMOZHNYA, CUSTOMS | EXCLUDE | Duty (see import NDS separately) |
-| FSZN, SOCIAL PROTECTION | EXCLUDE | Social contributions |
-| BELGOSSTRAKH (mandatory insurance) | EXCLUDE | Statutory insurance |
+## Rates, bands and thresholds
 
-### 3.3 Utilities
+| Item | Amount | Tax year | Official act/article |
+|---|---|---|---|
+| Standard domestic supplies and imports, including electronic services | 20% | 2026 | [Code art. 122(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Eligible listed food/children's goods, qualifying agricultural and medical products | 10%, only within statutory goods/registration conditions | 2026 | [Art. 122(2), Annex 26](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Telecommunications services | 25% | 2026 | [Art. 122(4)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Documented export goods and qualifying related services | 0% | 2026 | [Arts. 122(1), 123-126](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Ordinary reporting period | Month by default; eligible quarterly election; telecom monthly | 2026 | [Art. 127](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Input allocation ratio precision | At least 4 decimal places in percentage share | 2026 | [Art. 134(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Ordinary electronic invoice issue deadline | 10th of following month, subject to specific exceptions | 2026 | [Art. 131(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
 
-**Utilities pattern table**
+## The base
+
+1. **Classify the supply and place.** Domestic taxable turnover and imports are within art. 115, subject to exclusions. Goods use art. 116, including where located or dispatched. For services, art. 117 takes priority by category: immovable-property location, physical movable-property work, specified actually performed services, customer location for listed consultancy/accounting/legal/advertising/IP and similar services, then the residual supplier-location rule. Do not apply a single B2B customer-location rule to every service. EAEU transactions require the applicable treaty/indirect-tax protocol as well. [Arts. 115-117](https://pravo.by/document/?guid=3871&p0=hk0900071).
+2. **Separate taxable, exempt and zero-rated turnover.** Art. 118 exemptions, including qualifying health, education and financial services, have their own conditions. Zero rating requires the evidence and deadlines in arts. 123-126; a foreign customer is not proof of zero rating. Keep export goods, transport and other services distinct. [Arts. 118, 122-126](https://pravo.by/document/?guid=3871&p0=hk0900071).
+3. **Set the base and tax point.** Ordinarily base equals consideration including excise but excluding VAT (art. 120). Include statutory price supplements, contractual sanctions and relevant noncash/free transfers under arts. 115/120. Use shipment/performance and the specific timing rules of art. 121, not an assumed receipt rule for all domestic supplies. For tax-exclusive value, output VAT is base times rate; for tax-inclusive value, VAT is gross times rate divided by one plus rate. Track returns, cancellations, price changes and currency conversion under arts. 120-121/129-130 and issue corrected/additional invoices under art. 131. [Arts. 120-121, 128-131](https://pravo.by/document/?guid=3871&p0=hk0900071).
+4. **Purchaser tax-agent VAT.** Where a foreign supplier is not registered and the supply is located in Belarus, the Belarus purchaser fulfils the obligation under art. 114 even when not an ordinary domestic VAT payer. Determine the base/rate and tax point under the applicable statutory provisions and create the purchaser electronic invoice. Claim purchaser input VAT only when the art. 132-133 payment, accounting and document conditions are met; no automatic immediate offset. [Arts. 114, 120-122, 129, 131-133](https://pravo.by/document/?guid=3871&p0=hk0900071).
+5. **Establish credits.** Domestic input tax requires a seller invoice received and signed with the purchaser's electronic signature, accounted acquisition and, if elected, entry in the purchase book. Import tax requires payment and the customs or EAEU return/payment documents plus the portal invoice. Purchaser-agent tax requires the return and portal invoice and statutory payment conditions. An ordinary unpaid domestic supplier invoice is not disallowed solely because unpaid, subject to exceptions. Do not claim undocumented or exempt-use input tax. [Art. 132(1),(3)-(5)](https://pravo.by/document/?guid=3871&p0=hk0900071).
+6. **Allocate mixed credits.** Use the accounting-policy separate-accounting or turnover-share method consistently through the calendar year; turnover share is default if no policy specifies the method. Under art. 134(3), the denominator and relevant turnover are VAT-inclusive, including statutory base adjustments. Allocate exempt-use ordinary input tax to costs under art. 133(3), distinguish capital/intangible credits, and apply art. 135's ordering and output-tax limits. Retain unutilised limited credits. Special eligible zero/reduced-rate credits are deductible beyond output tax under arts. 133(27)/135(2); do not call every excess a refundable cash balance. [Arts. 133-135](https://pravo.by/document/?guid=3871&p0=hk0900071).
+7. **Net and reconcile.** Compute cumulative output VAT less allowable credits, adjusting for earlier period calculations/payments. Follow art. 137 for eligible excess-credit set-off/refund: apply to the inspectorate, reconcile arrears and retain the supporting documents. Under art. 137(2), with the VAT return on file, the decision is due within two working days of the written application, electronic acceptance confirmation or completion of the applicable check, and is sent within five working days. An ordinary verification inspection under art. 137(3) is appointed within two working days and the verification period is no more than fifteen working days from the refund application; liquidation and exported-oil-product cases have distinct timing. The ordinary set-off period is thirty calendar days after the decision; the remaining eligible balance is refunded within five working days after that period, subject to budget/tax debts. Art. 137(5-1) delays payment for an evidence notice or later inspection: apply its ten-working-day period after accepted evidence/desk-audit act, or five working days after the later inspection act, and never earlier than the ordinary refund deadline. Keep the return, application acceptance, decision, notices, offsets and payment trace. [Arts. 128, 135, 137](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| ENERGOSBYT, ENERGO, MINSK ENERGIA | Domestic 20% | 12 | Electricity |
-| MINSKVODOKANAL, VODOKANAL | Domestic 20% | 12 | Water |
-| MINGAZ, GAZSNABZHENIE | Domestic 20% | 12 | Gas |
-| A1, MTS BELARUS, LIFE:) | Domestic 20% | 12 | Telecoms |
-| BELTELECOM | Domestic 20% | 12 | Fixed telecoms/internet |
+**Non-EAEU customs imports.** For ordinary release for domestic consumption, Special Code art. 138(2),(5) gives `import VAT base = customs value + payable import duty + payable excise`, and `VAT = base × applicable Belarus VAT rate`. Establish customs value/classification and verify art. 119 exemptions and any procedure-specific relief before calculation. The declarant's obligation arises when customs registers the goods declaration; pay before release for domestic consumption unless a different lawful deadline/deferment applies. Use the customs declaration/payment/release process, retaining valuation, tariff, excise, payment and release records for the paid-import VAT credit under art. 132. The domestic-return 22nd-day deadline is not the customs-import payment deadline. Special procedures, conditional exemptions and release before declaration require their separate customs provisions. [Special Code arts. 119, 122, 132, 138](https://pravo.by/document/?guid=3871&p0=hk0900071); [EAEU Customs Code arts. 135, 136(1),(9), official treaty publication](https://docs.eaeunion.org/documents/236/2895/).
 
-### 3.4 Insurance (exempt — exclude)
+**25 July-31 December 2026 deferral.** Council Resolution 369 of 23 July 2026 permits legal entities an interest-free import-VAT deferral of no more than three months, counted from the day after release for domestic consumption, provided payment is secured. The goods declaration containing the required deferral information is the application. The act was published 24 July, takes effect after publication and runs through 30 June 2027. Before its 25 July commencement use the ordinary customs rules or another separately established relief. Record the granted due date and security; deferred VAT is not paid VAT for input-credit purposes until its payment conditions are met. [Resolution 369 paras. 1-2, official one-page PDF](https://pravo.by/document/?guid=12551&p0=C22600369); [Special Code art. 132](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-**Insurance pattern table**
+**EAEU imports.** The owner importing goods from another EAEU member accounts for indirect tax even if it uses a special regime. Under EAEU Treaty Annex 18 paras. 13-20, take the contract purchase price plus excise where applicable at accounting acceptance, converting foreign currency at the National Bank rate on that date. Apply Belarus's relevant 20%/10% rate, then file the import indirect-tax return and pay by the 20th of the following month. This is monthly and separate from the domestic quarterly election. Submit the import-and-indirect-tax statement (four paper copies plus electronic version, or the prescribed signed electronic format), payment bank extract unless the authority confirms payment, transport/shipping evidence, invoices and contracts, plus the conditional intermediary/information documents in para. 20. Retain the authority's statement confirmation for the exporter's zero-rate evidence and the paid-import-VAT credit; do not claim ordinary domestic credit solely from the foreign seller's invoice. Non-EAEU customs imports instead use art. 138. [Special Code arts. 132, 138-139](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS official EAEU Treaty and Annex 18 publication](https://nalog.gov.by/eec/).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| BELGOSSTRAKH, BROSCO, PROMTRANSINVEST | EXCLUDE | Exempt |
-| STRAKHOVANIE, INSURANCE | EXCLUDE | Same |
+## Deadlines and filing
 
-### 3.5 Food and entertainment (blocked)
+| Obligation | Rule | Official source |
+|---|---|---|
+| Ordinary return/payment | Return by 20th, payment by 22nd of month after reporting period | [Art. 136(1)-(2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Quarterly election | Mark previous-year return by 20 January; one correction by 20 February; new entities notify by 20th following registration month; specific first-object/transition cases follow art. 127 | [Art. 127(3)-(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Ordinary seller electronic invoice | Not before shipment/performance and by 10th following month; specific unconfirmed-document and transaction exceptions apply | [Art. 131(5)-(8)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
+| Legal-entity import-VAT deferral from 25 July 2026 | Up to three months from day after release; interest-free with security; declaration is application; act runs through 30 June 2027 | [Resolution 369 paras. 1-2](https://pravo.by/document/?guid=12551&p0=C22600369) |
+| Customs import VAT, ordinary domestic-consumption release | Pay before release unless a different lawful customs deadline applies; goods declaration/customs release process | [EAEU Customs Code art. 136(1),(9)](https://docs.eaeunion.org/documents/236/2895/) |
+| EAEU import VAT | Return and payment by 20th of month after accounting acceptance; import statement and evidence accompany it | [Art. 139](https://pravo.by/document/?guid=3871&p0=hk0900071); [EAEU Treaty Annex 18 paras. 19-20](https://nalog.gov.by/eec/) |
+| Liquidation/reorganisation | Final returns under General Code art. 44; seller invoices by the specific cessation/reorganisation dates in art. 131(7) | [General Code art. 44](https://pravo.by/document/?guid=3871&p0=hk0200166); [art. 131(7)](https://pravo.by/document/?guid=3871&p0=hk0900071) |
 
-**Food and entertainment pattern table**
+Use MNS electronic returns and the electronic-invoice portal. Retain sales, purchases, signed invoices, customs/import records, export proof and policy allocations. Correct the return for the legally affected period; an invoice correction alone does not automatically amend a filed return. Tax nonworking-day extensions follow General Code art. 4. [General Code arts. 4, 40](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 131-137](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| EUROOPT, GREEN, KORONA, SANTA | Default BLOCK | Personal provisioning |
-| RESTORAN, KAFE, BAR | Default BLOCK | Entertainment blocked |
+## Penalties and interest
 
-### 3.6 SaaS — non-resident (reverse charge)
+Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).
 
-**SaaS non-resident pattern table**
+For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091). The basic unit is BYN 45 from 1 January 2026 ([Council Resolution 651 of 20 November 2025](https://pravo.by/document/?guid=12551&p0=C22500651)).
 
-| Pattern | Box | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE, META | 7/8/14 | Reverse charge at 20% |
-| SLACK, ZOOM, NOTION, AWS, ANTHROPIC, OPENAI | 7/8/14 | Same |
+Foreign purchaser-agent defaults require Administrative Code art. 14.5 analysis. Apply the specific electronic-service foreign-payer grace provisions only to the taxpayers described in the notes to arts. 14.2/14.4; they are not a domestic VAT grace period. [Administrative Code arts. 14.2, 14.4-14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).
 
-### 3.7 EAEU suppliers (special treatment)
+## Cross-border points
 
-**EAEU suppliers pattern table**
+Non-EAEU imports involve customs VAT under art. 138; EAEU imports involve art. 139 and the indirect-tax treaty procedure. Export zero rating requires the respective customs or EAEU evidence under arts. 123-124. Foreign service purchases require the place/purchaser analysis above. Foreign digital-consumer and distance-selling cases must be routed to arts. 141-141-1 before assuming no Belarus registration or tax. Direct-tax treaty business-profit relief does not settle VAT. [Arts. 114, 117, 123-124, 138-141-1](https://pravo.by/document/?guid=3871&p0=hk0900071).
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| Russian, Kazakh, Armenian, Kyrgyz suppliers | EAEU import — Box 9/10 | NDS paid via EAEU protocol, not customs |
+## Two worked examples that recompute
 
-### 3.8 Professional services
+### 1. Ordinary domestic sales and fully supported credits
 
-**Professional services pattern table**
+Tax-exclusive standard-rate sales are BYN 100,000 and eligible signed-invoice ordinary input VAT is 12,000. The credit is below output VAT and all use is taxable. Output VAT 20,000 less credit 12,000 leaves 8,000 payable.
 
-| Pattern | Treatment | Box | Notes |
-| --- | --- | --- | --- |
-| NOTAR, NOTARIUS | Domestic 20% | 12 | If business purpose |
-| AUDITOR, BUKHGALTER | Domestic 20% | 12 | Deductible |
-| ADVOKAT, LAWYER | Domestic 20% | 12 | If business matter |
+```oa-check
+name: BY 2026 standard VAT with supported credit
+inputs:
+  sales: 100000
+  eligible_input: 12000
+steps:
+  output: sales * 0.20
+  payable: output - eligible_input
+expected:
+  output: 20000
+  payable: 8000
+```
 
-### 3.9 Payroll and exclusions
+### 2. VAT-inclusive mixed turnover
 
-**Payroll and exclusions pattern table**
+The elected turnover-share method applies to BYN 10,000 common ordinary input tax, with no capital assets or special full-credit categories. Taxable sales are BYN 120,000 inclusive of 20,000 VAT, and exempt turnover is 80,000. Taxable share is 120,000 / 200,000 = 60%, rather than a ratio using taxable net sales. Credit is 6,000, exempt-use input cost 4,000 and VAT payable 14,000. All figures are cumulative for the same period.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ZARPLATA, SALARY | EXCLUDE | Wages |
-| DIVIDEND | EXCLUDE | Out of scope |
-| VNUTRENNIY, INTERNAL | EXCLUDE | Internal transfer |
-| BANKOMAT, ATM | TIER 2 — ask | Default exclude |
-
-## Section 4 — Worked examples
-
-### Example 1 — Non-resident SaaS reverse charge
-
-**Input line:** `03.04.2026 ; NOTION LABS INC ; DEBIT ; Subscription ; USD 16.00 ; BYN 52.80`
-
-**Reasoning:** US entity. Reverse charge at 20%. Box 7 (base), Box 8 (output NDS), Box 14 (input credit). Net zero.
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 03.04.2026 | NOTION LABS INC | -52.80 | -52.80 | 10.56 | 20% | 14 | 7/8 | N |
-
-### Example 2 — EAEU import (from Russia)
-
-**Input line:** `10.04.2026 ; OOO TECHNOPARK MOSCOW ; DEBIT ; Server equipment ; -8,500.00 ; BYN`
-
-**Reasoning:** Russian supplier (EAEU). EAEU import protocol — NDS self-assessed, not at customs. Box 9 (base), Box 10 (NDS). Input credit if for taxable supplies.
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box (in) | Box (out) | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | OOO TECHNOPARK | -8,500 | -8,500 | 1,700 | 20% | 13 | 9/10 | N |
-
-### Example 3 — Entertainment blocked
-
-**Input line:** `15.04.2026 ; RESTORAN VASILKI ; DEBIT ; Business dinner ; -350.00 ; BYN`
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTORAN VASILKI | -350.00 | -350.00 | 0 | — | — | Y | "Entertainment: blocked" |
-
-### Example 4 — Export (zero-rated)
-
-**Input line:** `22.04.2026 ; TECHCORP GMBH ; CREDIT ; IT services ; +12,000.00 ; BYN`
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Question? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | TECHCORP GMBH | +12,000 | +12,000 | 0 | 0% | 5 | Y | "Verify export docs" |
-
-### Example 5 — Motor vehicle blocked
-
-**Input line:** `28.04.2026 ; ATLANT-M ; DEBIT ; Car lease ; -1,800.00 ; BYN`
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | ATLANT-M | -1,800.00 | -1,800.00 | 0 | — | — | Y | "Vehicle: blocked" |
-
-### Example 6 — Reduced rate purchase (10%)
-
-**Input line:** `20.04.2026 ; AGROKOMBINAT ; DEBIT ; Agricultural produce ; -2,200.00 ; BYN`
-
-**Reasoning:** Agricultural produce at 10% reduced rate. Input NDS deductible.
-
-**Worked example table**
-
-| Date | Counterparty | Gross | Net | VAT | Rate | Box | Default? |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 20.04.2026 | AGROKOMBINAT | -2,200 | -2,000 | -200 | 10% | 12 | N |
-
-## Section 5 — Tier 1 classification rules (compressed)
-
-### 5.1 Standard rate 20% (Tax Code Article 122)
-
-- **Standard rate** — 20%
-
-### 5.2 Reduced rate 10%
-
-- **Reduced rate** — 10% (Certain food products, children's goods, agricultural produce (listed in Tax Code). Sales to Box 3/4.)  _(listed in Tax Code)_
-
-### 5.3 Zero rate
-
-- **Zero rate application** — Exports, international transport. Box 5. Requires customs/export documentation.
-
-### 5.4 Exempt supplies
-
-- **Exempt supply categories** — Financial services, insurance, medical, educational, residential rental, postal, cultural.
-
-### 5.5 Reverse charge — non-resident services
-
-- **Reverse charge treatment** — Self-assess at 20%. Box 7/8 (output), Box 14 (input credit). Net zero.
-
-### 5.6 EAEU imports
-
-- **EAEU import treatment** — Goods from Russia, Kazakhstan, Armenia, Kyrgyzstan: NDS self-assessed under EAEU protocol (not at customs). Box 9/10. Separate EAEU import declaration required by 20th of month following import.
-
-### 5.7 Non-EAEU imports
-
-- **Non-EAEU import treatment** — At customs. Base = customs value + duties. Box 13. Recoverable.
-
-### 5.8 Blocked input NDS
-
-- **Blocked input categories** — Passenger vehicles, entertainment, personal consumption, no valid invoice/ESHF.
-
-### 5.9 Electronic invoicing (ESHF)
-
-- **ESHF requirement** — Mandatory electronic invoicing system. All VAT invoices must be issued via ESHF portal. Input NDS credit requires ESHF-registered invoice.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel/vehicles — *Default:* 0%. *Question:* "Car or commercial?"
-
-- **Fuel/vehicles default and question** — Default: 0%. Question: "Car or commercial?"
-
-### 6.2 Entertainment — *Default:* block.
-
-- **Entertainment default** — Default: block.
-
-### 6.3 SaaS entities — *Default:* reverse charge. *Question:* "Check invoice."
-
-- **SaaS entities default and question** — Default: reverse charge. Question: "Check invoice."
-
-### 6.4 EAEU vs non-EAEU supplier — *Default:* non-EAEU. *Question:* "Is supplier from EAEU country?"
-
-- **EAEU vs non-EAEU default and question** — Default: non-EAEU. Question: "Is supplier from EAEU country?"
-
-### 6.5 Owner transfers — *Default:* exclude.
-
-- **Owner transfers default** — Default: exclude.
-
-### 6.6 Foreign incoming — *Default:* zero-rated. *Question:* "Export docs?"
-
-- **Foreign incoming default and question** — Default: zero-rated. Question: "Export docs?"
-
-### 6.7 Large purchases — *Question:* "Fixed asset?"
-
-- **Large purchases question** — Question: "Fixed asset?"
-
-### 6.8 Mixed-use phone — *Default:* 0%.
-
-- **Mixed-use phone default** — Default: 0%.
-
-### 6.9 Cash withdrawals — *Default:* exclude.
-
-- **Cash withdrawals default** — Default: exclude.
-
-### 6.10 Rent — *Default:* no NDS. *Question:* "Commercial with NDS?"
-
-- **Rent default and question** — Default: no NDS. Question: "Commercial with NDS?"
-
-## Section 7 — Excel working paper template
-
-Per `vat-workflow-base` Section 3 with Belarus-specific box codes.
-
-## Section 8 — Belarusian bank statement reading guide
-
-**CSV conventions.** Belarusbank and Belinvestbank exports use semicolon delimiters, DD.MM.YYYY dates. Priorbank may use comma delimiters.
-
-- **Russian/Belarusian terms** — Zarplata (salary), protsenty (interest), kredit (loan), nalichnye (cash), vnutrenniy (internal), tamozhnya (customs), strakhovanie (insurance), bukhgalter (accountant).
-- **Internal transfers** — Between client's accounts. Always exclude.
-- **Foreign currency** — Convert to BYN at the National Bank of Belarus rate.
-- **IBAN prefix** — BY = Belarus.
-- **EAEU trade indicators** — Payments to/from Russian, Kazakh, Armenian, Kyrgyz counterparties or IBANs (RU, KZ, AM, KG) indicate potential EAEU protocol treatment.
-
-## Section 9 — Onboarding fallback
-
-### 9.1 Entity type — *Fallback:* "Sole trader (IE) or company (OOO/OAO)?"
-
-- **Entity type fallback** — Fallback: "Sole trader (IE) or company (OOO/OAO)?"
-
-### 9.2 NDS registration — *Fallback:* "Standard NDS payer?"
-
-- **NDS registration fallback** — Fallback: "Standard NDS payer?"
-
-### 9.3 UNP — *Fallback:* "What is your UNP?"
-
-- **UNP fallback** — Fallback: "What is your UNP?"
-
-### 9.4 Period — *Inference:* statement dates. *Fallback:* "Monthly or quarterly? Which period?"
-
-- **Period inference and fallback** — Inference: statement dates. Fallback: "Monthly or quarterly? Which period?"
-
-### 9.5 Industry — *Fallback:* "What does the business do?"
-
-- **Industry fallback** — Fallback: "What does the business do?"
-
-### 9.6 EAEU trade — *Inference:* RU/KZ/AM/KG counterparties. *Fallback:* "Do you trade with EAEU countries?"
-
-- **EAEU trade inference and fallback** — Inference: RU/KZ/AM/KG counterparties. Fallback: "Do you trade with EAEU countries?"
-
-### 9.7 Exempt supplies — *If yes, R-BY-3 fires.*
-
-- **Exempt supplies condition** — If yes, R-BY-3 fires.
-
-### 9.8 Credit B/F — *Always ask.*
-
-- **Credit brought forward** — Always ask.
-
-## Section 10 — Reference material
-
-### Sources
-
-- **Sources list** — 1. Tax Code of Belarus — Chapter 14 (NDS) 2. EAEU Treaty, Annex on Indirect Taxes 3. MNS portal — https://www.portal.nalog.gov.by 4. National Bank of Belarus rates — https://www.nbrb.by
-
-### Known gaps
-
-- **Known gaps list** — 1. EAEU triangulation/tolling not covered. 2. Simplified regime not covered. 3. Sanctions impact on cross-border classification not analyzed.
-
-### Change log
-
-- **v2.0 (April 2026)** — Full rewrite to Malta v2.0 10-section structure.
-
-## End of Belarus VAT (NDS) Skill v2.0
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+```oa-check
+name: BY 2026 mixed-use VAT-inclusive allocation
+inputs:
+  taxable_gross: 120000
+  exempt_turnover: 80000
+  common_input: 10000
+steps:
+  output: taxable_gross * 0.20 / 1.20
+  share: taxable_gross / (taxable_gross + exempt_turnover)
+  credit: common_input * share
+  exempt_cost: common_input - credit
+  payable: output - credit
+expected:
+  credit: 6000
+  exempt_cost: 4000
+  payable: 14000
+```
+
+## Ask the client first
+
+- What are the entity status, domestic regime, UNP and effective regime-change dates?
+- What exactly is supplied, where are goods/property and customers, and who contracts/pays?
+- Which supplies are exempt, reduced-rate or zero-rated, and what documents prove that treatment?
+- Are input invoices signed, acquisitions accounted and import/purchaser VAT paid?
+- Which reporting-period election and allocation policy were validly filed/adopted?
+- Are there imports, foreign suppliers, returns, advances, old credits, arrears or pending refunds?
+
+## Sources
+
+| Source and read scope | Official URL | Read on |
+|---|---|---|
+| Tax Code Special Part, arts. 112-141-1, 326(1.2), Annex 26 | https://pravo.by/document/?guid=3871&p0=hk0900071 | 2026-10-24 |
+| Tax Code General Part, arts. 4, 40, 44, 55, 69-70 | https://pravo.by/document/?guid=3871&p0=hk0200166 | 2026-10-24 |
+| Council Resolution 369 of 23 July 2026, paras. 1-2, official PDF p. 1; publication/commencement and secured import-VAT deferral | https://pravo.by/document/?guid=12551&p0=C22600369 | 2026-10-24 |
+| EAEU Customs Code, treaty of 11 April 2017, arts. 135, 136(1),(9), official PDF physical pp. 340-350 (clause 9 on printed p. 347) | https://docs.eaeunion.org/documents/236/2895/ | 2026-10-24 |
+| EAEU Treaty of 29 May 2014, Annex 18 paras. 13-20; official treaty PDF linked from MNS | https://nalog.gov.by/eec/ | 2026-10-24 |
+| Administrative Code, arts. 14.2, 14.4-14.5 | https://pravo.by/document/?guid=3871&p0=hk2100091 | 2026-10-24 |
+| Council Resolution 651 of 20 November 2025, paras. 1, 3, official PDF, basic unit BYN 45 from 1 January 2026 | https://pravo.by/document/?guid=12551&p0=C22500651 | 2026-10-31 |
+
+Pravo consolidated HTML was read in a normal browser after scripted access returned HTTP 403. Published PDFs were read in the official browser PDF viewer. Checked against the law (tier 2); no licensed Belarusian accountant has signed it off.
+
+Not yet confirmed: Foreign digital-consumer, marketplace, tax-free retail and special sector workflows are outside this ordinary domestic/EAEU-import scope; no absence of tax or registration is inferred. Ordinary input credit, mixed allocation, filing and EAEU-import procedure are supplied.
 
 <!-- openaccountants-cta-block -->
 
