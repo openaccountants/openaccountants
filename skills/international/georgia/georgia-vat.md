@@ -90,7 +90,7 @@ Returns are filed electronically with the Revenue Service (rs.ge).
 | Trading without VAT registration | 5% of the taxable supplies made while unregistered; the late filing and understatement fines then do not apply to those periods | Tax Code art. 282(1), (4) |
 | Not issuing a tax invoice when the buyer asks | 100% of the VAT on the supply | art. 282(2) |
 | Invoice for a fictitious or non-commodity transaction, or a fake invoice | 200% of the VAT shown | art. 282(3) |
-| Late return, up to 2 months | 5% of the tax on the return for each month or part month, at most 30% | art. 274(1) |
+| Late return, up to 2 months | 5% of the tax on the return (Georgian text of art. 274(1); the English translation still shows an older wording of 5% a month capped at 30%) | art. 274(1) |
 | Late return, more than 2 months | 10% of the tax on the return | art. 274(2) |
 | Understated VAT, or overstated deduction or refund | 10% (up to 5% understated), 25% (over 5% to 20%), 50% otherwise | art. 275(2)-(3) |
 | Late payment | 0.05% of the unpaid tax a day | art. 272(4) |
@@ -173,7 +173,7 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Tax Code of Georgia, English, consolidated publication 247 (to the law of 15 October 2026): arts. 15, 63, 85, 92, 156-181^1, 272-275, 282 | https://matsne.gov.ge/en/document/view/1043717?publication=247 | 2026-10-31 |
-| Tax Code of Georgia, Georgian text, publication 247 (cross-check of arts. 165, 166, 168, 171, 172) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
+| Tax Code of Georgia, Georgian text, publication 247 (cross-check of arts. 165, 166, 168, 171, 172, 274; art. 274(1) followed where the English differs) | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 
 Not yet confirmed: arts. 170-172 were amended by laws of June and November 2025 that the English translation does not show in full, so the full exemption lists were read only in summary (the items named above appear in both texts); the Minister of Finance rules on non-resident suppliers to consumers (art. 165^2(2)(e)), reverse-charge reporting (art. 161(4)) and tax invoices (art. 180(5)); whether residential lease is taxable (not listed among the exemptions in arts. 170-172 as read); the old version blocked input VAT on cars and fuel for personal use, which art. 178 does not list (deduction then follows the use test in art. 175); Virtual Zone and Free Industrial Zone rules; the rs.ge return boxes; refund procedure under art. 63; excise and wine rules; the exchange rate for supplies invoiced in foreign currency (the old version named the National Bank of Georgia rate; the article was not read).
 
