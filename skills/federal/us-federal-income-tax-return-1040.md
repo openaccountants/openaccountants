@@ -3,7 +3,8 @@ name: us-federal-income-tax-return-1040
 description: A drafting guide to the tax year 2026 Form 1040 rates, standard deductions and filing deadlines for individual US taxpayers, and the IRS-described filing method, for accountants preparing US individual income tax returns.
 jurisdiction: US
 tax_year: 2026
-last_updated: 2026-10-19
+last_updated: 2026-10-31
+version: 1.1
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -17,7 +18,7 @@ Form 1040 is the annual US individual income tax return. The IRS says Form 1040 
 
 ## Who this is for
 
-This skill is for preparers of a federal individual income tax return on Form 1040 or Form 1040-SR for tax year 2026. The IRS filing page says: "If you have wages, file Form 1040, U.S. Individual Income Tax Return or Form 1040-SR, U.S. Income Tax Return for Seniors", and that a person with a business or side income files Form 1040 with a Schedule C ([File your tax return](https://www.irs.gov/filing/individuals/how-to-file)). It does not cover nonresident aliens, entity returns (partnership, corporation, trust or estate), amended returns, estimated tax payments, or state and local income tax returns.
+This skill is for preparers of a federal individual income tax return on Form 1040 or Form 1040-SR for tax year 2026. The IRS filing page says: "If you have wages, file Form 1040, U.S. Individual Income Tax Return or Form 1040-SR, U.S. Income Tax Return for Seniors", and that a person with a business or side income files Form 1040 with a Schedule C ([File your tax return](https://www.irs.gov/filing/individuals/how-to-file)). The IRS says "To file federal taxes, you need a taxpayer identification number (TIN)" ([Individual tax filing](https://www.irs.gov/individual-tax-filing)). It does not cover nonresident aliens, entity returns (partnership, corporation, trust or estate), amended returns, estimated tax payments, or state and local income tax returns.
 
 ## Rates, thresholds and deadlines
 
@@ -129,7 +130,25 @@ The IRS page still prints the tax year 2025 filing thresholds. The tax year 2026
 | 65 or older at the end of 2025: single; head of household | USD 17,550 or more; USD 25,625 or more | "Single $17,550 or more Head of household $25,625 or more" |
 | 65 or older at the end of 2025: married filing jointly, both 65 or older | USD 34,700 or more | "$34,700 or more (both spouses 65 or older)" |
 
-Dependants have their own table on the same page. Gross income there is "Earned plus unearned income".
+Dependants have their own table on the same page. Gross income there is "Earned plus unearned income". Publication 501 prints the same tests for a single dependant, and the gross income test for being claimed as a dependant:
+
+| What | Value | Note |
+|---|---|---|
+| Source | all figures below | https://www.irs.gov/publications/p501 |
+| Year the publication covers | tax year 2025 | "For use in preparing 2025 Returns" |
+| Gross income above which a person usually cannot be claimed as a dependant, unless a qualifying child | USD 5,200 or more | "If your gross income was $5,200 or more, you usually can't be claimed as a dependent unless you are a qualifying child." |
+| Single dependant, under 65 and not blind, must file: unearned income | more than USD 1,350 | "Your unearned income was more than $1,350." |
+| Single dependant, under 65 and not blind, must file: earned income | more than USD 15,750 | "Your earned income was more than $15,750." |
+| Single dependant, 65 or older or blind, must file: unearned income | more than USD 3,350 (USD 5,350 if 65 or older and blind) | "Your unearned income was more than $3,350 ($5,350 if 65 or older and blind)." |
+| Single dependant, 65 or older or blind, must file: earned income | more than USD 17,750 (USD 19,750 if 65 or older and blind) | "Your earned income was more than $17,750 ($19,750 if 65 or older and blind)." |
+
+The self-employment threshold is worded two ways on IRS pages. The filing-check page above says "over $400"; the IRS fact sheet and the statute say USD 400 or more:
+
+| What | Value | Note |
+|---|---|---|
+| Source | all figures below | https://www.irs.gov/newsroom/who-needs-to-file-a-tax-return |
+| Self-employment: return and quarterly estimated tax required | net earnings from self-employment of USD 400 or more | "Self-employed individuals are required to file an annual return and pay estimated tax quarterly if they had net earnings from self-employment of $400 or more." The page is FS-2023-02; its filing-threshold table is for tax year 2022 and is not used here |
+| Statute | USD 400 or more | 26 U.S. Code § 6017: "Every individual (other than a nonresident alien individual) having net earnings from self-employment of $400 or more" must file ([LII mirror](https://www.law.cornell.edu/uscode/text/26/6017)). Treat exactly USD 400 as a filing duty |
 
 ### Filing deadlines and extension
 
@@ -145,6 +164,14 @@ Dependants have their own table on the same page. Gross income there is "Earned 
 | Living and working outside the United States and Puerto Rico, or on military or naval duty outside them | may qualify for an automatic 2-month extension to file and pay without Form 4868 | "you may qualify for an automatic 2-month extension to file and pay the tax without filing Form 4868" ; interest is charged on tax not paid by the original due date |
 | Combat zone or contingency operation | generally at least 180 days after leaving the area to file and pay | "You generally have at least 180 days after you leave the designated combat zone or contingency operation to file and pay taxes" |
 | Disaster | up to one year after the due date, as the IRS specifies | "you may have up to one year after the due date of your return to file and pay taxes, depending on the deadline specified by the Service" |
+
+The 2026 IRS Tax Calendar names the extended date for the 2025 return:
+
+| What | Value | Note |
+|---|---|---|
+| Source | all figures below | https://www.irs.gov/pub/irs-pdf/p509.pdf |
+| Extended due date after Form 4868, 2025 return | October 15 | "October 15 Individuals. If you have an automatic 6-month extension to file your income tax return for 2025, file Form 1040 or Form 1040-SR and pay any tax, interest, and penalties due." |
+| Living and working outside the United States and Puerto Rico: further extension | Form 4868 by June 15 gives 4 more months, to October 15 | June 15 entry: "If you want additional time to file your return, file Form 4868 to obtain 4 additional months to file and pay what you estimate you owe in tax to avoid penalties and interest. Then, file Form 1040 or Form 1040-SR by October 15." |
 
 For a calendar-year 2026 return the general rule points to April 15, 2027, subject to the weekend and holiday rule and to any later IRS announcement. Confirm the date on the IRS page once it is printed.
 
@@ -168,7 +195,7 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 ## The method, step by step
 
 1. Decide whether a return is required. Use the filing thresholds at [Check if you need to file a tax return](https://www.irs.gov/individuals/check-if-you-need-to-file-a-tax-return). That page prints the 2025 thresholds (table above). For 2026, wait for the 2026 version of that page or the 2026 Instructions for Form 1040. Net earnings from self-employment over the amount in that table create a filing duty on their own. Filing can still pay when there was withholding or a refundable credit.
-2. Confirm the person files Form 1040 at all. A nonresident alien does not use this skill. A taxpayer 65 or older may use Form 1040-SR instead, with the same schedules ([About Form 1040](https://www.irs.gov/forms-pubs/about-form-1040)).
+2. Confirm the person has a taxpayer identification number, since "To file federal taxes, you need a taxpayer identification number (TIN)" ([Individual tax filing](https://www.irs.gov/individual-tax-filing)), and that the person files Form 1040 at all. A nonresident alien does not use this skill. A taxpayer 65 or older may use Form 1040-SR instead, with the same schedules ([About Form 1040](https://www.irs.gov/forms-pubs/about-form-1040)).
 3. Fix the filing status for the year: single, married filing jointly, married filing separately, head of household, or qualifying surviving spouse. Status picks the rate schedule, the standard deduction and most thresholds in the tables above. Married filing separately loses the senior, tips and overtime deductions, because the Act allows them to a married taxpayer only on a joint return ([Public Law 119-21](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm)).
 4. Gather the documents and report income. Follow the IRS sequence at [How to file your taxes: step by step](https://www.irs.gov/filing/individuals/how-to-file). Business or side income goes on Schedule C. Use Schedule 1 for additional income (such as unemployment compensation, prize or award money, gambling winnings) and deductions (such as student loan interest, self-employment tax, educator expenses) ([About Form 1040](https://www.irs.gov/forms-pubs/about-form-1040)).
 5. Take the deductions. Compare the 2026 standard deduction, plus any additional amount for age or blindness, with itemized deductions on Schedule A (table from [Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)). For an itemizer in 2026, apply the state and local tax cap, the charitable floor and, in the 37% bracket, the § 68 reduction, all from the Act table above. For a non-itemizer in 2026, add the cash charitable deduction. Claim the senior, tips, overtime and vehicle loan interest deductions on Schedule 1-A, whether or not the taxpayer itemizes, applying each income reduction ([About Form 1040](https://www.irs.gov/forms-pubs/about-form-1040)).
@@ -176,8 +203,8 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 7. Take the credits. The child tax credit and earned income credit amounts are in the second table ([Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf)). Use Schedule 3 for credits not claimed on Form 1040 itself, such as the foreign tax credit, education credits and the general business credit, and for other payments such as an amount paid with an extension request or excess social security tax withheld ([About Form 1040](https://www.irs.gov/forms-pubs/about-form-1040)).
 8. Assemble and sign a paper return as [Topic no. 301](https://www.irs.gov/taxtopics/tc301) says. Attach a copy of all Forms W-2 to the front. Attach Forms W-2G, 1099-R and any other income document to the front if federal income tax was withheld, plus any form the instructions say goes on the front (for example Form 2439). Put related schedules and forms behind the return in sequence-number order. If a Form W-2c was received, attach it and a copy of the original Form W-2. On a joint paper return both spouses sign; the page sets out how one spouse signs for the other in limited cases.
 9. File by the due date in the deadline table. E-filing is timed by transmission; a paper return by postmark. A paper return goes to the address in the form instructions ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)).
-10. If more time is needed, file Form 4868 by the original due date for the automatic extension, and still pay by the original due date ([When to file](https://www.irs.gov/filing/individuals/when-to-file)). Check first whether the client qualifies for the automatic 2-month rule for people abroad, combat zone relief, or a disaster postponement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)).
-11. Pay any balance due. The IRS Make a payment page covers card, digital wallet, other electronic options and cash; if the client cannot pay in full, the IRS may agree a payment arrangement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)).
+10. If more time is needed, file Form 4868 by the original due date for the automatic extension, and still pay by the original due date ([When to file](https://www.irs.gov/filing/individuals/when-to-file)). The extended return is due October 15 ([Publication 509](https://www.irs.gov/pub/irs-pdf/p509.pdf)). Check first whether the client qualifies for the automatic 2-month rule for people abroad, combat zone relief, or a disaster postponement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)).
+11. Pay any balance due. The IRS Make a payment page covers card, digital wallet, other electronic options and cash; if the client cannot pay in full, the IRS may agree a payment arrangement ([Topic no. 301](https://www.irs.gov/taxtopics/tc301)). The IRS tells those who cannot pay in full that they "should pay what they can now and apply for an online payment plan", and that "An extension to file is not an extension to pay" ([IR-2026-44](https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension)).
 12. If returns for earlier years are outstanding, the IRS says to file them as soon as possible ([When to file](https://www.irs.gov/filing/individuals/when-to-file)). Each earlier year uses that year's figures, not the 2026 tables.
 
 ## Ask the client first
@@ -189,6 +216,8 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 - Does the client expect to itemize, and how much state and local tax and how many charitable gifts (cash or other) were paid in 2026?
 - Was the client living and working outside the United States and Puerto Rico on the due date, in a combat zone, or in a declared disaster area? This changes the deadline.
 - Will the balance be paid by the original due date, or is an extension or a payment arrangement needed?
+- Can another taxpayer claim the client as a dependant, and if so, what were the client's gross, earned and unearned income for the year? Separate filing thresholds apply, and the dependant's standard deduction is capped.
+- Does the client have foreign earned income to exclude? The exclusion amount in the deductions table applies, and the client may also qualify for the automatic 2-month extension for people abroad.
 
 ## When to refuse or refer
 
@@ -196,6 +225,7 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 - Amended returns: the IRS uses Form 1040-X. See the skill `us-amended-return-form-1040-including-capital`.
 - Estimated tax payments for the year: see the skill `us-quarterly-estimated-tax`.
 - State or local income tax returns of any state.
+- A decedent's final return, gift tax (Form 709), and expatriation filings (Form 8854): these involve rules not addressed here.
 - Tax years other than 2026, except the rows marked 2025: each other year has its own figures.
 - A return that turns on the exact tax year 2026 filing thresholds: the IRS page prints only 2025 thresholds today.
 - Disaster postponements: use the deadline the IRS sets for that disaster.
@@ -214,6 +244,12 @@ For a calendar-year 2026 return the general rule points to April 15, 2027, subje
 - https://www.irs.gov/filing/individuals/when-to-file (fiscal year filers, Form 4868, earlier years)
 - https://www.irs.gov/filing/individuals/how-to-file (forms by income type, free filing options)
 - https://www.irs.gov/forms-pubs/about-form-1040 (Form 1040 and 1040-SR, Schedules 1, 1-A, 2 and 3)
+- https://www.irs.gov/publications/p501 (Publication 501, tax year 2025: dependant filing thresholds and the gross income test for dependants)
+- https://www.irs.gov/newsroom/who-needs-to-file-a-tax-return (FS-2023-02: self-employment USD 400 or more)
+- https://www.law.cornell.edu/uscode/text/26/6017 (LII mirror of 26 U.S. Code § 6017: self-employment return requirement)
+- https://www.irs.gov/pub/irs-pdf/p509.pdf (Publication 509, 2026 Tax Calendar: October 15 extended due date)
+- https://www.irs.gov/individual-tax-filing (taxpayer identification number required to file)
+- https://www.irs.gov/newsroom/act-now-to-file-pay-or-request-an-extension (IR-2026-44: pay what you can and apply for an online payment plan)
 
 This skill has not been reviewed or approved by a named accountant.
 
