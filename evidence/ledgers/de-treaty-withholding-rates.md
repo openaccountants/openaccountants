@@ -1,6 +1,8 @@
-# de-treaty-withholding-rates: R58/R59 precise successor ledger
+# de-treaty-withholding-rates: figure and rule ledger
 
-Guide `c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8`, 32880 bytes; predecessor Guide `e0af931443833336734547a462ee47978d568c247571d2691fad966c5b0e5ecf` / ledger `913ed9fe8b178e2f406e99eaf454ce83fe0149f313c81cd65872a280fe949acc`. Original seal unchanged. Source quotes and all actual original read dates remain byte-exact at [/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/germany-DE-R57-R60-treaty-writer-successor-2026-10-29/source-quotes.md](germany-2026-evidence/views/af32247cd7abf6244f98-source-quotes.md); hash-bound source-index-reference.json. Own actual three selected rereads29October2026 in own-read-receipt.json. Writer correction, exact independent review pending.
+Guide: [de-treaty-withholding-rates](../../skills/germany/de-treaty-withholding-rates.md). Accepted Guide SHA-256: `c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8`.
+Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
+Original published ledger SHA-256: `145b606742499809b3df74e59aeaa6cbd407e1fe8d5a389f183a50bfccc7625d`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 
 | ID | Section/nativeLF | Exact current wording | Source IDs/disposition |
 |---|---|---|---|
@@ -504,3 +506,8 @@ Guide `c00779b73dc6a31a1d8d5bfe153800399bf7a332c9be77159953aeb05f4813e8`, 32880 
 | 62b7639a5a68324a83a96bb0190fff8b7c76f8c5 LF247 | The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024. | Exact wording retained at currentLF249, Sources  |
 | 62b7639a5a68324a83a96bb0190fff8b7c76f8c5 LF249 | Not yet confirmed: whether the BZSt in practice applies the Italian, US and Czech limits to tax and surcharge together (those treaties do not name supplements; the refund formula assumes they do); the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the BZSt table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above). | DE-L18 source wording corrected at currentLF100/249: Czech historiccorporation-taxErgaenzungsabgabe expressly named, while currentSolidarity-surcharge coverage and all other precise reservations remain. R57: labelledcombined-primarycurrentSoli coverage interpretation suppliesordinarycombinedcap, separatelyretainedBZStcountrypractice notclaimed. R60: positiveentitlementrequiresactualremittance/assessmentpayment, notcertificate/withholdingalone. |
 | 62b7639a5a68324a83a96bb0190fff8b7c76f8c5 LF251 | > Contributed by Ryan Duguid. | Exact wording retained at currentLF253, Sources  |
+
+## Official source excerpts
+
+| Source ID / operative unit | Official source | Short exact original-language excerpt | Read on | Reviewed unit SHA-256 |
+| --- | --- | --- | --- | --- |

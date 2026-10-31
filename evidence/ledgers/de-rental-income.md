@@ -1,6 +1,8 @@
-# de-rental-income R109–111 successor ledger
+# de-rental-income: figure and rule ledger
 
-Guide `6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e`, 51133 bytes. Original Guide7723c03d / ledger800b72f5 and163-member root seal unchanged. Writer correction, independent review pending. Source IDs bind exact original-language quotations/officialURLs/nativeLF/read dates in source-quote-index.json and source-quotes.md; original root source-identities.json remains referenced without duplicate bodies.
+Guide: [de-rental-income](../../skills/germany/de-rental-income.md). Accepted Guide SHA-256: `6f97644830c828129f0e7343809d7d42022297e444ff4e840a2f35594f36715e`.
+Repackaged from the completed [independent country review](https://github.com/openaccountants/openaccountants/blob/bceaf70083a8c8573ba8558a339ab11b1b4095bf/ledgers/germany-2026-evidence/independent-review/report.md) at `bceaf70083a8c8573ba8558a339ab11b1b4095bf`. The Guide bytes, all current ledger claims and all original-topic destinations are preserved. This is a packaging change; it does not claim a new legal review or accountant attestation.
+Original published ledger SHA-256: `2302bb3ddb1e1197523d20d77c817624b8134644cc77ddce1eae4628f537a838`. Full source captures, earlier versions, scripts and review chains remain in the original archive; none is added by this replacement. Source excerpts below retain their actual read dates. Short excerpts identify the previously reviewed operative unit; they do not replace its complete conditions.
 
 | ID/native LF | Section | Exact wording | Source IDs/classification |
 |---|---|---|---|
@@ -851,3 +853,8 @@ All550 actual old origins and exact original wording retained with original dest
 | main62b7639a baseline / 356 | > **General reference only.** This document does not constitute tax, legal, or | [360] / ['> **General reference only.** This document does not constitute tax, legal, or'] |
 | main62b7639a baseline / 357 | > financial advice. Verify figures against the cited primary sources or with a | [361] / ['> financial advice. Verify figures against the cited primary sources or with a'] |
 | main62b7639a baseline / 358 | > licensed professional before relying on them. | [362] / ['> licensed professional before relying on them.'] |
+
+## Official source excerpts
+
+| Source ID / operative unit | Official source | Short exact original-language excerpt | Read on | Reviewed unit SHA-256 |
+| --- | --- | --- | --- | --- |
