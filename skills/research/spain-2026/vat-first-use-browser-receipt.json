@@ -1,0 +1,46 @@
+{
+  "read_utc": "2026-10-27T17:01:54.750484+00:00",
+  "method": "Independent actual browser interaction in separate Brave review tab1623102540; selected full-document table identity, not merely search field or address bar.",
+  "raw_substantive_hash_claimed": false,
+  "rulings": [
+    {
+      "number": "V0386-24",
+      "date": "12/03/2024",
+      "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24",
+      "case": "Individual buying land and building a clinic; asks acquisition versus first-use prorrata and investment regularisation.",
+      "actual_full_body_read": true,
+      "key_sections": {
+        "2\u20135": "Existing-activity branch, initial intention proof, invoice-supported ordinary deduction timing; partial investment-good allocation.",
+        "6": "First-use-year definitive percentage and deduction after adjustment become subsequent reference; productive integration after installation/testing; fact-based commencement; nine later building years; later threshold.",
+        "7\u20139": "Separate pre-activity or new differentiated-sector111\u2013113 route, before1July count and four-year global percentage.",
+        "10": "Final89.1 binding clause."
+      }
+    },
+    {
+      "number": "V3000-11",
+      "date": "22/12/2011",
+      "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3000-11",
+      "case": "Existing dwelling lessor self-constructing industrial letting unit after full input deduction.",
+      "actual_full_body_read": true,
+      "key_sections": {
+        "1\u20133": "Historical deduction/prorrata/election discussion; historical20% trigger and December procedure not imported as2026 law.",
+        "4": "Integration into normal productive process after installation/testing; paid letting and separately usable components on these facts; quotes107/109 but no numerical first-use correction.",
+        "5": "Final expressly non-binding89.2 clause; V0386 characterization does not alter that actual clause."
+      }
+    },
+    {
+      "number": "V3307-17",
+      "date": "28/12/2017",
+      "url": "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3307-17",
+      "case": "Promoted dwellings under lease-purchase and another development changing from sale to exempt letting; special prorrata.",
+      "actual_full_body_read": true,
+      "key_sections": {
+        "1\u20132": "Lease-option, first delivery and self-supply context; not carried as generic2026 tax rates.",
+        "3": "Completion or later actual-use window; reasonable whole-property marketing as commencement evidence on this case; no universal unfinished-building deemed use.",
+        "4\u20135": "Other sector/self-supply and first-delivery questions, not an initial delayed-use amount/divisor solution.",
+        "6": "Final89.1 binding clause."
+      }
+    }
+  ],
+  "limitations": "DGT site can retain first URL after in-place search. I verified actual selected document number/date/case in every body. No empty/shell-fetch hash is offered as the substantive ruling. No independent CJEU computational conclusion is required or adopted for the Guide delta."
+}

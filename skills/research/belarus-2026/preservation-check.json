@@ -1,0 +1,53 @@
+{
+  "base": "73d40eb7cf70181e54e3d10aabab016d5186cbcf",
+  "checks": [
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": false
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": false
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": false
+    },
+    {
+      "path": "skills/international/belarus/belarus-tax-optimization.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": true
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": false
+    },
+    {
+      "path": "skills/international/belarus/by-company-formation.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": true
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": false
+    },
+    {
+      "path": "skills/international/belarus/by-tax-overview.md",
+      "cta_identical": true,
+      "platform_fields_identical": true,
+      "supporting_file_identical": true
+    }
+  ]
+}

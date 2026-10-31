@@ -1,0 +1,110 @@
+{
+  "scope": "ActualrootUIobservationsandexplicitsecondaryarithmeticcorrection;noscreenshot/AXmodified",
+  "files": [
+    {
+      "path": "J1-joint-quota-components.ax.txt",
+      "bytes": 40825,
+      "sha256": "0902b457418915e54de5ec46bac520e6263a21202d6c337c490f94c4fdfa9732"
+    },
+    {
+      "path": "J1-joint-quota-components.png",
+      "bytes": 135729,
+      "sha256": "8949874de6713c744b8ec087b7c757d7fea9cb4cfb645438971f8f6a2fff8dec"
+    },
+    {
+      "path": "J1-joint-summary.ax.txt",
+      "bytes": 20558,
+      "sha256": "0bdb4d063797e3d051a72a31539828e9f4b108beebea9eb63ebe4aba5eacb745"
+    },
+    {
+      "path": "J1-joint-summary.png",
+      "bytes": 130124,
+      "sha256": "24f82b7edf61a7abfa6d3e1a0a6ccfe48379a7311f77aa285683b3c2d5836622"
+    },
+    {
+      "path": "J1-repeat-spouse-not-entitled.ax.txt",
+      "bytes": 32165,
+      "sha256": "1afa27dff95c722bfbfde759a281c13bb73e5ffca75c1901eb4fdde8e22a255f"
+    },
+    {
+      "path": "J1-repeat-summary.ax.txt",
+      "bytes": 20558,
+      "sha256": "27e721213b57c1f49a49a05772baea21ec661aacc1a2aeb084388f57888eb09f"
+    },
+    {
+      "path": "J1-repeat-tax-summary.png",
+      "bytes": 136387,
+      "sha256": "5a8826a188fdb703fe4fb0b0bdfd425de35a57c630fe371cb44bcf6a1b67f320"
+    },
+    {
+      "path": "J2-both-eligible-input.ax.txt",
+      "bytes": 32378,
+      "sha256": "4ad7391d4eece7dfeb420b0817b764eeffc5d43fa2d9b64f8fff12dbb176e3fe"
+    },
+    {
+      "path": "J2-both-eligible-input.png",
+      "bytes": 99581,
+      "sha256": "5d9c3129286e2ac71978d1360a33ea2ff62fd49b6202f7048319d83580ccb43a"
+    },
+    {
+      "path": "J2-joint-summary.ax.txt",
+      "bytes": 20560,
+      "sha256": "b0c0fb3ca3e878686c6c5943f7e3b6194450def0dd8e002337bc43a6131bb10d"
+    },
+    {
+      "path": "J2-joint-summary.png",
+      "bytes": 130206,
+      "sha256": "3ca2e2445cdc743f93fa1fdf1f61dd0bb68da32cc0f1eeceec9ba3d77f6a2644"
+    },
+    {
+      "path": "J3-gain2000-input.ax.txt",
+      "bytes": 24675,
+      "sha256": "7dd1a2120fa1af291e0554ebe89cb8f30712532a0ad9b3cede33d56af55e89cf"
+    },
+    {
+      "path": "J3-gain2000-input.png",
+      "bytes": 166896,
+      "sha256": "8361be622253ea016749a76bc58bc75b4cc577b59a87dca302f6a4179963ea77"
+    },
+    {
+      "path": "J3-joint-summary.ax.txt",
+      "bytes": 20558,
+      "sha256": "69e0afee7487850dc1d7451e7267f0c8bb92436e4c7d2a465ff104acafb9f30a"
+    },
+    {
+      "path": "J3-joint-summary.png",
+      "bytes": 130279,
+      "sha256": "1aefc65777e8e82d40192ce254d9cd697cc23a13df0a8cc162749f19e63e99b9"
+    },
+    {
+      "path": "ROOT-UI-OBSERVATIONS-before-diagnostic-correction.json",
+      "bytes": 3327,
+      "sha256": "6189b7ce095f772a2794e7bbbe1f3ab0764ccaada9e3daa75dd76230e9e6565f"
+    },
+    {
+      "path": "ROOT-UI-OBSERVATIONS.json",
+      "bytes": 3565,
+      "sha256": "a14b482925bccc8a33b1f29faa3559aa2ac791154cb3e706272a37a5f44cab25"
+    },
+    {
+      "path": "claimant-move-input.ax.txt",
+      "bytes": 32355,
+      "sha256": "3a69cf29ce2ce13c5925218081a4ace5b544eda74940d3b9847ca1074a22d70a"
+    },
+    {
+      "path": "claimant-move-input.png",
+      "bytes": 99613,
+      "sha256": "d56ecb32eb3e865c3eb879c665660dfebfecab8d7473d2ce0610517acb575c49"
+    },
+    {
+      "path": "spouse-loss-input.ax.txt",
+      "bytes": 36061,
+      "sha256": "f706c9cb3a476c532fb2a3a2fda9a1f491c068ccee64f3a07fd8bbb4b5c478b7"
+    },
+    {
+      "path": "spouse-loss-input.png",
+      "bytes": 144725,
+      "sha256": "b60b6eb17b532d3981664288a0a9932e2347dd748809066c9961caea0f96a7ce"
+    }
+  ]
+}

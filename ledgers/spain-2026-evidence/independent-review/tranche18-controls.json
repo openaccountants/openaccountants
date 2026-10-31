@@ -1,0 +1,727 @@
+{
+  "method": "Independent Decimal/Fraction/calendar calculations from actually assessed Guide/source premises, not imported writer evaluation. Inference/counter-reading controls do not resolve preserved legal uncertainty.",
+  "count": 120,
+  "failures": 0,
+  "controls": [
+    {
+      "name": "Balearic 184-day rational 660",
+      "actual": "24288/73",
+      "expected": "24288/73",
+      "pass": true
+    },
+    {
+      "name": "Balearic 184-day cents 660",
+      "actual": "332.71",
+      "expected": "332.71",
+      "pass": true
+    },
+    {
+      "name": "Balearic 184-day rational 900",
+      "actual": "33120/73",
+      "expected": "33120/73",
+      "pass": true
+    },
+    {
+      "name": "Balearic 184-day cents 900",
+      "actual": "453.70",
+      "expected": "453.70",
+      "pass": true
+    },
+    {
+      "name": "Balearic 1July to31Dec actual days",
+      "actual": "184",
+      "expected": "184",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (2000, '.4', 660)",
+      "actual": "330.00",
+      "expected": "330",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (1000, '.4', 660)",
+      "actual": "330.00",
+      "expected": "330",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (1000, '.5', 900)",
+      "actual": "450.00",
+      "expected": "450",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (1500, '.4', 660)",
+      "actual": "330.00",
+      "expected": "330",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (500, '.4', 660)",
+      "actual": "200.00",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (500, '.5', 900)",
+      "actual": "250.00",
+      "expected": "250",
+      "pass": true
+    },
+    {
+      "name": "Balearic ownpayer (1500, '.5', 900)",
+      "actual": "450.00",
+      "expected": "450",
+      "pass": true
+    },
+    {
+      "name": "Balearic unequal household 530",
+      "actual": "530",
+      "expected": "530",
+      "pass": true
+    },
+    {
+      "name": "Balearic unequal household 580",
+      "actual": "580",
+      "expected": "580",
+      "pass": true
+    },
+    {
+      "name": "Balearic unequal household 650",
+      "actual": "650",
+      "expected": "650",
+      "pass": true
+    },
+    {
+      "name": "Balearic two child periods 660",
+      "actual": "665.42",
+      "expected": "665.42",
+      "pass": true
+    },
+    {
+      "name": "Balearic two child periods 900",
+      "actual": "907.40",
+      "expected": "907.40",
+      "pass": true
+    },
+    {
+      "name": "Balearic enhanced selfemployed183days 182",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Balearic enhanced selfemployed183days 183",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Balearic enhanced selfemployed183days 184",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Valencia prior foster ordering greater183 183",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Valencia prior foster ordering greater183 184",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Valencia newborn does not inherit foster183day gate",
+      "actual": "2026",
+      "expected": "2026",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (100, 200, 200)",
+      "actual": "60.00",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (700, 200, 0)",
+      "actual": "105.00",
+      "expected": "105",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (0, 200, 0)",
+      "actual": "30.00",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (0, 200, 100)",
+      "actual": "45.00",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (0, 200, 200)",
+      "actual": "45.00",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "name": "Galicia child (0, 0, 300)",
+      "actual": "22.50",
+      "expected": "22.5",
+      "pass": true
+    },
+    {
+      "name": "Galicia binding separate children135",
+      "actual": "135.00",
+      "expected": "135",
+      "pass": true
+    },
+    {
+      "name": "Galicia two children90",
+      "actual": "90.00",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "name": "Galicia PE inside total cap",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "Galicia actual payer cap52.5 200",
+      "actual": "30.00",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "name": "Galicia actual payer cap52.5 100",
+      "actual": "15.00",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "name": "Galicia actual payer cap52.5 400",
+      "actual": "52.50",
+      "expected": "52.50",
+      "pass": true
+    },
+    {
+      "name": "Galicia actual payer household90",
+      "actual": "90",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "name": "Galicia use old350",
+      "actual": "350",
+      "expected": "350",
+      "pass": true
+    },
+    {
+      "name": "Galicia use new150",
+      "actual": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "name": "Galicia current carry300",
+      "actual": "300",
+      "expected": "300",
+      "pass": true
+    },
+    {
+      "name": "Galicia credit2025 expiry",
+      "actual": "2029",
+      "expected": "2029",
+      "pass": true
+    },
+    {
+      "name": "Galicia credit2026 expiry",
+      "actual": "2030",
+      "expected": "2030",
+      "pass": true
+    },
+    {
+      "name": "Galicia singlehome expense2025 expiry",
+      "actual": "2027",
+      "expected": "2027",
+      "pass": true
+    },
+    {
+      "name": "Galicia fixed2026 current carry",
+      "actual": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "name": "Galicia multi home base chosen",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "Galicia multi home credit900",
+      "actual": "900.00",
+      "expected": "900",
+      "pass": true
+    },
+    {
+      "name": "Galicia allyears base21000",
+      "actual": "21000",
+      "expected": "21000",
+      "pass": true
+    },
+    {
+      "name": "Galicia all credit3150",
+      "actual": "3150.00",
+      "expected": "3150",
+      "pass": true
+    },
+    {
+      "name": "Galicia 2028credit expiry",
+      "actual": "2032",
+      "expected": "2032",
+      "pass": true
+    },
+    {
+      "name": "Murcia peseta redenomination 41000",
+      "actual": "246.41",
+      "expected": "246.41",
+      "pass": true
+    },
+    {
+      "name": "Murcia peseta redenomination 46000",
+      "actual": "276.47",
+      "expected": "276.47",
+      "pass": true
+    },
+    {
+      "name": "Murcia old home (20000, 6000, '.03')",
+      "actual": "91.20",
+      "expected": "91.20",
+      "pass": true
+    },
+    {
+      "name": "Murcia old home (20000, 0, '.03')",
+      "actual": "246.41",
+      "expected": "246.41",
+      "pass": true
+    },
+    {
+      "name": "Murcia old home (20000, 0, '.02')",
+      "actual": "180.80",
+      "expected": "180.80",
+      "pass": true
+    },
+    {
+      "name": "Murcia old home (8000, 6000, '.03')",
+      "actual": "60.00",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "Murcia old home (20000, 9040, '.03')",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Murcia 35000 agency4500",
+      "actual": "4500.00",
+      "expected": "4500",
+      "pass": true
+    },
+    {
+      "name": "Murcia statutory alternative6000",
+      "actual": "6000.00",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "Murcia binding common7000 .225",
+      "actual": "7000.00",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "Murcia binding common7000 .3",
+      "actual": "7000.00",
+      "expected": "7000",
+      "pass": true
+    },
+    {
+      "name": "Murcia charger owncap (Decimal('0.5'), Decimal('0.5'))",
+      "actual": "(Decimal('3000.0'), Decimal('3000.0'))",
+      "expected": "(Decimal('3000'), Decimal('3000'))",
+      "pass": true
+    },
+    {
+      "name": "Murcia charger owncap (Decimal('0.75'), Decimal('0.25'))",
+      "actual": "(Decimal('4000'), Decimal('1500.00'))",
+      "expected": "(Decimal('4000'), Decimal('1500'))",
+      "pass": true
+    },
+    {
+      "name": "Murcia equal contrary commoncap",
+      "actual": "2000.0",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "Murcia charger current usage/carry",
+      "actual": "(2000, 1000)",
+      "expected": "(2000, 1000)",
+      "pass": true
+    },
+    {
+      "name": "Murcia vehicle carry",
+      "actual": "(1500, 2029)",
+      "expected": "(1500, 2029)",
+      "pass": true
+    },
+    {
+      "name": "Ext rented200",
+      "actual": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "name": "Ext offered75",
+      "actual": "75",
+      "expected": "75",
+      "pass": true
+    },
+    {
+      "name": "Ext denominator275",
+      "actual": "275",
+      "expected": "275",
+      "pass": true
+    },
+    {
+      "name": "Ext grant net total",
+      "actual": "16000",
+      "expected": "16000",
+      "pass": true
+    },
+    {
+      "name": "Ext grant certified year",
+      "actual": "8000",
+      "expected": "8000",
+      "pass": true
+    },
+    {
+      "name": "Ext actual day fraction872.73",
+      "actual": "872.73",
+      "expected": "872.73",
+      "pass": true
+    },
+    {
+      "name": "Ext counter365657.53",
+      "actual": "657.53",
+      "expected": "657.53",
+      "pass": true
+    },
+    {
+      "name": "Ext annual cap before days986.18",
+      "actual": "986.18",
+      "expected": "986.18",
+      "pass": true
+    },
+    {
+      "name": "Ext advertisement not actual rent",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Ext ceiling householdincome",
+      "actual": "9000.0",
+      "expected": "9000",
+      "pass": true
+    },
+    {
+      "name": "Ext offer700 annualised",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "Rioja separate credits",
+      "actual": "(Decimal('300.0'), Decimal('200.0'))",
+      "expected": "(300, 200)",
+      "pass": true
+    },
+    {
+      "name": "Rioja same invoice total",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "Rioja two entitled each",
+      "actual": "250",
+      "expected": "250",
+      "pass": true
+    },
+    {
+      "name": "Rioja remaining quota",
+      "actual": "224.30",
+      "expected": "224.30",
+      "pass": true
+    },
+    {
+      "name": "Rioja lastmonth age 2023-06-15",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "Rioja amount 2023-06-15",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "Rioja lastmonth age 2023-06-30",
+      "actual": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "name": "Rioja amount 2023-06-30",
+      "actual": "500",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "Rioja lastmonth age 2023-01-01",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Rioja amount 2023-01-01",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Canarias independent 20%caps",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "Canarias plus fixed dependent",
+      "actual": "1600",
+      "expected": "1600",
+      "pass": true
+    },
+    {
+      "name": "Canarias quota remainder",
+      "actual": "400",
+      "expected": "400",
+      "pass": true
+    },
+    {
+      "name": "Work cap quota ratio 1660.50",
+      "actual": "79.07",
+      "expected": "79.07",
+      "pass": true
+    },
+    {
+      "name": "Work cap quota ratio 1480.25",
+      "actual": "70.49",
+      "expected": "70.49",
+      "pass": true
+    },
+    {
+      "name": "Work cap quota ratio 1564.21",
+      "actual": "74.49",
+      "expected": "74.49",
+      "pass": true
+    },
+    {
+      "name": "Aid rounded BL then rate .1585",
+      "actual": "156.24",
+      "expected": "156.24",
+      "pass": true
+    },
+    {
+      "name": "Aid rounded BL then rate .1464",
+      "actual": "144.31",
+      "expected": "144.31",
+      "pass": true
+    },
+    {
+      "name": "Aid rounded BL then rate .1549",
+      "actual": "152.69",
+      "expected": "152.69",
+      "pass": true
+    },
+    {
+      "name": "Gal aid rounding separator",
+      "actual": "152.79",
+      "expected": "152.79",
+      "pass": true
+    },
+    {
+      "name": "Val direct includedBI source rule",
+      "actual": "74.20",
+      "expected": "74.20",
+      "pass": true
+    },
+    {
+      "name": "Bal aid adjusted generalBL",
+      "actual": "166.47",
+      "expected": "166.47",
+      "pass": true
+    },
+    {
+      "name": "CLM own lower bracket minimum 3500",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "CLM own lower bracket minimum 7000",
+      "actual": "137.75",
+      "expected": "137.75",
+      "pass": true
+    },
+    {
+      "name": "CLM own lower bracket minimum 8000",
+      "actual": "232.75",
+      "expected": "232.75",
+      "pass": true
+    },
+    {
+      "name": "CLM own lower bracket minimum 8600",
+      "actual": "289.75",
+      "expected": "289.75",
+      "pass": true
+    },
+    {
+      "name": "CLM own lower bracket minimum 9600",
+      "actual": "384.75",
+      "expected": "384.75",
+      "pass": true
+    },
+    {
+      "name": "CLM single mover NaboveG capped quota",
+      "actual": "289.75",
+      "expected": "289.75",
+      "pass": true
+    },
+    {
+      "name": "CLM both movers unresolved diagnostic",
+      "actual": "265.60",
+      "expected": "265.60",
+      "pass": true
+    },
+    {
+      "name": "Savings minimum spillover",
+      "actual": "2050",
+      "expected": "2050",
+      "pass": true
+    },
+    {
+      "name": "Savings tax with spillover",
+      "actual": "755.25",
+      "expected": "755.25",
+      "pass": true
+    },
+    {
+      "name": "Cantabria current shareloss25percent",
+      "actual": "2500.00",
+      "expected": "2500",
+      "pass": true
+    },
+    {
+      "name": "Cantabria included annual income",
+      "actual": "32500",
+      "expected": "32500",
+      "pass": true
+    },
+    {
+      "name": "Cantabria strict10pct equality",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "Cantabria strict cent pass",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "National startup wealth neutral",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "National startup retained price gain excluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "National startup actual new wealth",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "National startup credit",
+      "actual": "10000.00",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "NationalEV base and credit",
+      "actual": "3000.00",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "NationalEV25percent deposit",
+      "actual": "5000.00",
+      "expected": "5000",
+      "pass": true
+    },
+    {
+      "name": "National2026 deposit final year",
+      "actual": "2028",
+      "expected": "2028",
+      "pass": true
+    },
+    {
+      "name": "Nationalcharger base",
+      "actual": "600.00",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "Ordinary regional quota no refund",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Unabsorbed100 needs independent carry authority",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    }
+  ]
+}

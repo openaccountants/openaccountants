@@ -1,0 +1,12 @@
+{
+  "V0835-25": {
+    "rejected_raw": "OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6a3b1c9f5d2a1afde3e7.body",
+    "reason": "Search-shell only1088readercharacters, no rulinganswer; cannot support legalquotation",
+    "selected_answer": "V0835-25-actual-answer-AX.txt",
+    "representation": "ActualofficialbrowserAX, not rawHTTP; exactcapture preserved and derivativeprefix-removal documented in selectedreceipt"
+  },
+  "V0386-24": {
+    "rejected_raw": "OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b83870f0f28a6d33815f.body",
+    "reason": "Search-shell only; actualV0386AX retained separately"
+  }
+}

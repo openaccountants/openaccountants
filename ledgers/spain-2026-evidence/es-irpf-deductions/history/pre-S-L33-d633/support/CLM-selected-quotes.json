@@ -1,0 +1,3622 @@
+{
+  "CLM1": [
+    {
+      "source": "S33",
+      "article": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 595,
+      "LF_end": 595,
+      "quote": "Siempre que generen el derecho a la aplicación del mínimo por descendientes establecido en la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, los contribuyentes podrán deducirse de la cuota íntegra autonómica las siguientes cantidades por hijos nacidos o adoptados en el periodo impositivo:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 597,
+      "LF_end": 597,
+      "quote": "a) 100 euros en el caso de partos o adopciones de un hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 599,
+      "LF_end": 599,
+      "quote": "b) 500 euros en el caso de partos o adopciones de dos hijos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "1",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 601,
+      "LF_end": 601,
+      "quote": "c) 900 euros en el caso de partos o adopciones de tres o más hijos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM2": [
+    {
+      "source": "S33",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 611,
+      "LF_end": 611,
+      "quote": "1. Los contribuyentes que a la fecha de devengo del impuesto tengan reconocida la condición de familia numerosa, de conformidad con lo establecido en la Ley 40/2003, de 18 de noviembre, de Protección a las Familias Numerosas, podrán deducirse de la cuota íntegra autonómica las siguientes cantidades:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 613,
+      "LF_end": 613,
+      "quote": "a) Familias numerosas de categoría general: 200 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 615,
+      "LF_end": 615,
+      "quote": "b) Familias numerosas de categoría especial: 400 euros",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 617,
+      "LF_end": 617,
+      "quote": "2. Las deducciones serán de 300 y 900 euros, respectivamente, cuando alguno de los cónyuges o descendientes a los que sea de aplicación el mínimo personal y familiar del impuesto, tenga acreditado un grado de discapacidad igual o superior al 65 por ciento y generen el derecho a la aplicación del mínimo por discapacidad establecido en la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM2 bis": [
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 627,
+      "LF_end": 627,
+      "quote": "1. El padre o la madre que a la fecha de devengo del impuesto formen parte de una familia monoparental, podrán deducirse de la cuota íntegra autonómica la cantidad de 200 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 629,
+      "LF_end": 629,
+      "quote": "2. A los efectos de esta deducción, y sin perjuicio del concepto legal que pueda establecer la legislación básica estatal, o en su caso, la normativa regional, tendrá la consideración de familia monoparental la formada por la madre o el padre separados legalmente o sin vínculo matrimonial y las hijas e hijos que convivan y dependan económicamente de forma exclusiva de una u otro y que reúnan alguno de los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 631,
+      "LF_end": 631,
+      "quote": "a) Ser menores de edad, con excepción de quienes, con el consentimiento de los padres, vivan independientes de estos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 633,
+      "LF_end": 633,
+      "quote": "b) Ser mayores de edad que tengan establecidas alguna de las medidas de apoyo para el ejercicio de su capacidad jurídica de acuerdo con la legislación civil.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 635,
+      "LF_end": 635,
+      "quote": "Se entenderá que hay dependencia económica de forma exclusiva, cuando la madre o el padre tenga derecho a la totalidad del mínimo por descendiente previsto en la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, respecto de las hijas e hijos que integran la familia monoparental y no perciba anualidades por alimentos por las hijas e hijos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "2 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 637,
+      "LF_end": 637,
+      "quote": "3. A los efectos de esta deducción, en ningún caso se considerará familia monoparental la persona viuda o en situación equiparada que hubiere sido condenada por sentencia firme por la comisión de un delito doloso de homicidio en cualquiera de sus formas, cuando la víctima fuera su cónyuge o ex-cónyuge o persona que hubiera estado ligada a ella por una análoga relación de afectividad.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM3": [
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 651,
+      "LF_end": 651,
+      "quote": "1. Se establecen las siguientes deducciones por gastos de adquisición de libros de texto, por enseñanza de idiomas y por otros gastos relacionados con la educación:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 653,
+      "LF_end": 653,
+      "quote": "a) Los contribuyentes podrán deducirse de la cuota íntegra autonómica las cantidades satisfechas por los gastos destinados a la adquisición de libros de texto editados para las enseñanzas que ofrece el sistema educativo conforme al artículo 3.2 de la Ley Orgánica 2/2006, de 3 de mayo, de Educación, o norma que la sustituya.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 655,
+      "LF_end": 655,
+      "quote": "b) Los contribuyentes podrán deducirse el 15 por ciento de las cantidades satisfechas durante el período impositivo, por cada una de las actividades que se relacionan a continuación, desarrolladas por sus hijos o descendientes durante las etapas correspondientes a las enseñanzas que ofrece el sistema educativo conforme al artículo 3.2 de la Ley Orgánica 2/2006, de 3 de mayo, o norma que la sustituya:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 657,
+      "LF_end": 657,
+      "quote": "1.º Por la enseñanza de idiomas recibida como actividad extraescolar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 659,
+      "LF_end": 659,
+      "quote": "2.º Por aquellas actividades relacionadas con el aprendizaje fuera de los centros educativos como refuerzo o apoyo de las enseñanzas en las que estén matriculados.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 661,
+      "LF_end": 661,
+      "quote": "3.º Por los gastos de acceso a las nuevas tecnologías necesarios para las enseñanzas en las que estén matriculados los hijos o descendientes. A tal efecto, se considerarán únicamente las cuantías satisfechas como cuota de alta a internet y la cuota de línea del primer mes, siempre que no se trate de un cambio de compañía y la línea no esté vinculada a una actividad económica.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 663,
+      "LF_end": 663,
+      "quote": "4.º Por los gastos de estudio y residencia de hijos o descendientes fuera del municipio de residencia de la unidad familiar, siempre que el municipio donde se cursen los estudios se encuentre en Castilla-La Mancha y que en el lugar de residencia de la unidad familiar no exista dicha oferta educativa. Igualmente será aplicable esta deducción cuando el municipio donde se realicen los estudios se encuentre fuera de Castilla-La Mancha y no exista en la región oferta educativa para los estudios cursados.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 665,
+      "LF_end": 665,
+      "quote": "2. La cantidad total a deducir por los gastos señalados en el apartado anterior no excederá de las cuantías máximas que se indican a continuación:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 667,
+      "LF_end": 667,
+      "quote": "a) Declaraciones conjuntas:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 669,
+      "LF_end": 669,
+      "quote": "1.º Los contribuyentes que no tengan la condición legal de familia numerosa, para los que la cantidad resultante de la suma de la base imponible general y de la base imponible del ahorro menos el mínimo por descendientes se encuentre comprendida en los tramos que se indican a continuación, podrán deducirse hasta las siguientes cuantías:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 671,
+      "LF_end": 671,
+      "quote": "Hasta 12.000,00 euros: 200 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 673,
+      "LF_end": 673,
+      "quote": "Entre 12.000,01 y 20.000,00 euros: 100 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 675,
+      "LF_end": 675,
+      "quote": "Entre 20.000,01 y 25.000,00 euros: 75 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 677,
+      "LF_end": 677,
+      "quote": "2.º Los contribuyentes que tengan la condición legal de familia numerosa, para los que la cantidad resultante de la suma de la base imponible general y de la base imponible del ahorro menos el mínimo por descendientes se encuentre comprendida en el tramo que se indica a continuación, podrán deducirse hasta las siguientes cuantías:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 679,
+      "LF_end": 679,
+      "quote": "Hasta 40.000 euros: 300 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 681,
+      "LF_end": 681,
+      "quote": "b) Declaraciones individuales:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 683,
+      "LF_end": 683,
+      "quote": "1.º Los contribuyentes que no tengan la condición legal de familia numerosa, para los que la cantidad resultante de la suma de la base imponible general y la base imponible del ahorro menos el mínimo por descendientes se encuentre comprendida en los tramos que se indican a continuación, podrán deducirse hasta las siguientes cuantías:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 685,
+      "LF_end": 685,
+      "quote": "Hasta 6.500 euros: 100 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 687,
+      "LF_end": 687,
+      "quote": "Entre 6.500,01 y 10.000,00 euros: 75 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 689,
+      "LF_end": 689,
+      "quote": "Entre 10.000,01 y 12.500,00 euros: 50 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 691,
+      "LF_end": 691,
+      "quote": "2.º Los contribuyentes que tengan la condición legal de familia numerosa, para los que la cantidad resultante de la suma de la base imponible general y la base imponible del ahorro menos el mínimo por descendientes se encuentre comprendida en el tramo que se indica a continuación, podrán deducirse la siguiente cuantía:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 693,
+      "LF_end": 693,
+      "quote": "Hasta 30.000 euros: 150 euros por hijo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 695,
+      "LF_end": 695,
+      "quote": "3. Las deducciones resultantes de la aplicación de los apartados anteriores se minorarán en el importe de las becas y ayudas concedidas en el periodo impositivo de que se trate por la Administración de la Junta de Comunidades de Castilla-La Mancha, o por cualquier otra Administración Pública, que cubran la totalidad o parte de los gastos señalados en el apartado 1 del presente artículo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 697,
+      "LF_end": 697,
+      "quote": "4. A los efectos de la aplicación de estas deducciones, sólo tendrán derecho a practicar la deducción los padres o ascendientes respecto de aquellos hijos o descendientes escolarizados que den derecho a la reducción prevista, en concepto de mínimo por descendientes, en el artículo 58 de la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 699,
+      "LF_end": 699,
+      "quote": "5. Los contribuyentes que deseen gozar de la deducción establecida en este artículo deberán estar en posesión de los justificantes acreditativos del pago de los conceptos objeto de deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM3 bis": [
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 721,
+      "LF_end": 721,
+      "quote": "1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica el 30 por ciento de las cantidades satisfechas en el periodo impositivo por los gastos de custodia de hijas o hijos menores de 3 años en guarderías o centros de educación infantil, con un máximo de 500 euros por cada hija o hijo inscrito en dichas guarderías o centros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 723,
+      "LF_end": 723,
+      "quote": "Para la aplicación de la presente deducción solo se tendrán en cuenta aquellas hijas o aquellos hijos que den derecho a la aplicación del mínimo por descendientes en el artículo 58 de la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 725,
+      "LF_end": 725,
+      "quote": "De las cantidades satisfechas se deben minorar el importe de las becas o ayudas obtenidas de cualquier Administración Pública que cubran todos o parte de los gastos de custodia. Esta minoración se aplicará de forma individual para cada hija o hijo que se beneficie de las becas o ayudas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 727,
+      "LF_end": 727,
+      "quote": "A estos efectos se entenderán por gastos de custodia las cantidades satisfechas a guarderías y centros de educación infantil por la preinscripción y matrícula de dichos menores, la asistencia, en horario general y ampliado, y la alimentación, siempre que se hayan producido por meses completos y no tuvieran la consideración de rendimientos del trabajo en especie exentos por aplicación de lo dispuesto en las letras b) o d) del apartado 3 del artículo 42 de la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 729,
+      "LF_end": 729,
+      "quote": "2. Cuando las hijas o los hijos que den derecho a la deducción convivan con más de un contribuyente, el importe de la deducción se prorrateará conforme al hecho de que aquellas o aquellos den derecho al mínimo por descendientes a más de un contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 731,
+      "LF_end": 731,
+      "quote": "3. El límite de la misma, en el período impositivo en el que la hija o el hijo cumpla los 3 años de edad, será de 250 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "3 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 733,
+      "LF_end": 733,
+      "quote": "4. A los efectos de aplicación de esta deducción, se entenderá como guardería o centro de educación infantil todo centro autorizado por la consejería competente en materia de educación que tenga por objeto la custodia o el primer ciclo de educación infantil, de niñas y niños menores de 3 años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM4": [
+    {
+      "source": "S33",
+      "article": "4",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 759,
+      "LF_end": 759,
+      "quote": "Los contribuyentes que tengan un grado de discapacidad acreditado igual o superior al 65 por ciento y tengan derecho a la aplicación del mínimo por discapacidad del contribuyente, previsto en la Ley 35/2006, de 28 de noviembre, podrán deducirse de la cuota íntegra autonómica la cantidad de 300 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM5": [
+    {
+      "source": "S33",
+      "article": "5",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 769,
+      "LF_end": 769,
+      "quote": "Los contribuyentes podrán deducirse de la cuota íntegra autonómica la cantidad de 300 euros por cada ascendiente o descendiente, con un grado de discapacidad acreditado igual o superior al 65 por ciento, siempre que estos generen el derecho a la aplicación del mínimo por discapacidad de ascendientes o descendientes, respectivamente, establecido en la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM6": [
+    {
+      "source": "S33",
+      "article": "6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 779,
+      "LF_end": 779,
+      "quote": "1. Los contribuyentes mayores de 75 años podrán deducirse de la cuota íntegra autonómica la cantidad de 150 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 781,
+      "LF_end": 781,
+      "quote": "2. Los contribuyentes podrán deducirse de la cuota íntegra autonómica la cantidad de 150 euros por el cuidado de cada ascendiente mayor de 75 años, siempre que cause derecho a la aplicación del mínimo por ascendientes mayores de 75 años previsto en la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 783,
+      "LF_end": 783,
+      "quote": "3. No procederán las deducciones previstas en los anteriores apartados cuando los mayores de 75 años que generen el derecho a las mismas residan, durante más de treinta días naturales del período impositivo en Centros Residenciales de Mayores de la Junta de Comunidades de Castilla-La Mancha o en plazas concertadas o subvencionadas por esta en otros centros, a excepción de las estancias temporales derivadas de convalecencias debidamente acreditadas por el Servicio de Salud de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM7": [
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 793,
+      "LF_end": 793,
+      "quote": "1. Los contribuyentes podrán deducirse, por cada menor en régimen de acogimiento familiar no remunerado temporal, permanente o por delegación de guarda para la convivencia preadoptiva, por acuerdo administrativo o judicial, siempre que convivan con el menor durante más de ciento ochenta y tres días del período impositivo, las siguientes cantidades:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 795,
+      "LF_end": 795,
+      "quote": "a) 500 euros si se trata del primer menor en régimen de acogimiento familiar no remunerado o por delegación de guarda para la convivencia preadoptiva.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 797,
+      "LF_end": 797,
+      "quote": "b) 600 euros si se trata del segundo menor o sucesivo en régimen de acogimiento familiar no remunerado o por delegación de guarda para la convivencia preadoptiva.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 799,
+      "LF_end": 799,
+      "quote": "2. A efectos de determinación del número de orden del menor acogido solamente se computarán aquellos menores que hayan permanecido en dicho régimen durante más de ciento ochenta y tres días del período impositivo. En ningún caso, se computarán los menores que hayan sido adoptados durante dicho período impositivo por el contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 801,
+      "LF_end": 801,
+      "quote": "3. No dará lugar a esta deducción el supuesto de acogimiento familiar temporal o por delegación de guarda para la convivencia preadoptiva, cuando se produjera la adopción del menor durante el período impositivo, sin perjuicio de la aplicación de la deducción establecida en el artículo 1 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 803,
+      "LF_end": 803,
+      "quote": "4. En el supuesto de acogimiento de menores por matrimonios o uniones de hecho, el importe de la deducción se prorrateará por partes iguales en la declaración de cada uno de ellos si optaran por tributación individual.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 805,
+      "LF_end": 805,
+      "quote": "5. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 807,
+      "LF_end": 807,
+      "quote": "a) Que la suma de la base imponible general y la del ahorro del contribuyente no sea superior a 12.500 euros en tributación individual o a 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "7",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 809,
+      "LF_end": 809,
+      "quote": "b) Que se acredite, por la Consejería competente en la materia, la formalización del acogimiento, así como que el contribuyente no ha recibido ayudas de la Administración de la Junta de Comunidades de Castilla-La Mancha vinculadas con el acogimiento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM8": [
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 831,
+      "LF_end": 831,
+      "quote": "1. Los contribuyentes podrán deducirse 600 euros por cada persona mayor de 65 años o con un grado de discapacidad acreditado igual o superior al 33 por ciento, que conviva con el contribuyente durante más de ciento ochenta y tres días al año en régimen de acogimiento sin contraprestación, cuando por ello no hayan obtenido ayudas o subvenciones de la Comunidad Autónoma de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 833,
+      "LF_end": 833,
+      "quote": "2. No se podrá practicar la presente deducción, en el supuesto de acogimiento de mayores de 65 años, cuando el acogido esté ligado al contribuyente por un vínculo de parentesco de consanguinidad o de afinidad hasta el cuarto grado incluido.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 835,
+      "LF_end": 835,
+      "quote": "3. Cuando la persona acogida genere el derecho a la deducción para más de un contribuyente simultáneamente, el importe de la misma se prorrateará por partes iguales en la declaración de cada uno de ellos si optaran por tributación individual.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 837,
+      "LF_end": 837,
+      "quote": "4. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 839,
+      "LF_end": 839,
+      "quote": "a) Que la suma de la base imponible general y la del ahorro del contribuyente no sea superior a 12.500 euros en tributación individual o a 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "8",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 841,
+      "LF_end": 841,
+      "quote": "b) Que se acredite, por la Consejería competente en la materia, que ni el contribuyente ni la persona acogida han recibido ayudas de la Administración de la Junta de Comunidades de Castilla-La Mancha vinculadas con el acogimiento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM9": [
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 853,
+      "LF_end": 853,
+      "quote": "2. La anterior deducción podrá llegar hasta el 20 por ciento de las cantidades satisfechas por el arrendamiento de la vivienda que constituya o vaya a constituir su residencia habitual durante el período impositivo, con un máximo de 612 euros, en los siguientes supuestos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 855,
+      "LF_end": 855,
+      "quote": "a) Cuando el contribuyente tenga su domicilio habitual en un municipio de Castilla-La Mancha de hasta 2.500 habitantes.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 857,
+      "LF_end": 857,
+      "quote": "b) Cuando el contribuyente tenga su domicilio habitual en un municipio de Castilla-La Mancha con población superior a 2.500 habitantes y hasta 10.000 habitantes, que se encuentre a una distancia mayor de 30 kilómetros de un municipio con población superior a 50.000 habitantes.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 859,
+      "LF_end": 859,
+      "quote": "A estos efectos, para determinar el número de habitantes de cada municipio se tomará el establecido en el padrón municipal de habitantes en vigor a 1 de enero del año de devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 861,
+      "LF_end": 861,
+      "quote": "3. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 863,
+      "LF_end": 863,
+      "quote": "a) Que el contribuyente sea menor de treinta y seis años a la fecha del devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 865,
+      "LF_end": 865,
+      "quote": "b) Que la suma de la base imponible general y la del ahorro del contribuyente menos el mínimo por descendientes no supere la cuantía de 12.500 euros en tributación individual y 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 867,
+      "LF_end": 867,
+      "quote": "c) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de identificación fiscal del arrendador de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 869,
+      "LF_end": 869,
+      "quote": "4. El concepto de vivienda habitual será el fijado por la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas vigente a la fecha de devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM9 bis": [
+    {
+      "source": "S33",
+      "article": "9 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 899,
+      "LF_end": 899,
+      "quote": "a) Que el contrato de arrendamiento esté vinculado a una operación de adjudicación de la vivienda habitual en pago de la totalidad de la deuda pendiente del préstamo o crédito garantizados mediante hipoteca de la citada vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 901,
+      "LF_end": 901,
+      "quote": "b) Que la suma de la base imponible general y de la base imponible del ahorro del contribuyente menos el mínimo por descendientes, no supere la cuantía de 12.500 euros en tributación individual o de 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 903,
+      "LF_end": 903,
+      "quote": "c) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de identificación fiscal del arrendador de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 905,
+      "LF_end": 905,
+      "quote": "2. El concepto de vivienda habitual será el fijado por la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas vigente a la fecha del devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 907,
+      "LF_end": 907,
+      "quote": "3. El límite de esta deducción se prorrateará por el número de días en los que permanezca vigente el arrendamiento dentro del periodo impositivo y, además, cuando dos o más contribuyentes declarantes del impuesto tengan derecho a la aplicación de esta deducción por una misma vivienda, el límite se prorrateará entre ellos a partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM9 ter": [
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 923,
+      "LF_end": 923,
+      "quote": "2. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 925,
+      "LF_end": 925,
+      "quote": "a) Que la suma de la base imponible general y la del ahorro del contribuyente menos el mínimo por descendientes no supere la cuantía de 12.500 euros en tributación individual y 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 927,
+      "LF_end": 927,
+      "quote": "b) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de identificación fiscal del arrendador de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 929,
+      "LF_end": 929,
+      "quote": "c) Que a la fecha del devengo del impuesto tenga reconocida la condición de familia numerosa y se esté en posesión del título acreditativo de dicha condición.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 931,
+      "LF_end": 931,
+      "quote": "3. El concepto de vivienda habitual será el fijado por la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas vigente a la fecha de devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 933,
+      "LF_end": 933,
+      "quote": "4. El límite de esta deducción se prorrateará por el número de días en los que permanezca vigente el arrendamiento dentro del periodo impositivo y, además, cuando dos o más contribuyentes declarantes del impuesto tengan derecho a la aplicación de esta deducción por una misma vivienda, el límite se prorrateará entre ellos a partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM9 quáter": [
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 949,
+      "LF_end": 949,
+      "quote": "2. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 951,
+      "LF_end": 951,
+      "quote": "a) Que la suma de la base imponible general y la del ahorro del contribuyente menos el mínimo por descendientes no supere la cuantía de 12.500 euros en tributación individual y 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 953,
+      "LF_end": 953,
+      "quote": "b) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de identificación fiscal del arrendador de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 955,
+      "LF_end": 955,
+      "quote": "3. El concepto de vivienda habitual será el fijado por la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas vigente a la fecha de devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 957,
+      "LF_end": 957,
+      "quote": "4. El límite de esta deducción se prorrateará por el número de días en los que permanezca vigente el arrendamiento dentro del periodo impositivo y, además, cuando dos o más contribuyentes declarantes del impuesto tengan derecho a la aplicación de esta deducción por una misma vivienda, el límite se prorrateará entre ellos a partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quáter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 959,
+      "LF_end": 959,
+      "quote": "5. Se aplicarán a esta deducción lo dispuesto en los apartados 2 y 3 del artículo 2 bis, relativos a lo que ha de considerarse familia monoparental.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM9 quinquies": [
+    {
+      "source": "S33",
+      "article": "9 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 975,
+      "LF_end": 975,
+      "quote": "2. Para la aplicación de la deducción será necesario que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 977,
+      "LF_end": 977,
+      "quote": "a) Que la suma de la base imponible general y la del ahorro del contribuyente menos el mínimo por descendientes no supere la cuantía de 12.500 euros en tributación individual y 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 979,
+      "LF_end": 979,
+      "quote": "b) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de identificación fiscal del arrendador de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 981,
+      "LF_end": 981,
+      "quote": "3. El concepto de vivienda habitual será el fijado por la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas vigente a la fecha de devengo del impuesto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "9 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 983,
+      "LF_end": 983,
+      "quote": "4. El límite de esta deducción se prorrateará por el número de días en los que permanezca vigente el arrendamiento dentro del periodo impositivo y, además, cuando dos o más contribuyentes declarantes del impuesto tengan derecho a la aplicación de esta deducción por una misma vivienda, el límite se prorrateará entre ellos a partes iguales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM10": [
+    {
+      "source": "S33",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 997,
+      "LF_end": 997,
+      "quote": "1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica el 15 por ciento de las donaciones dinerarias efectuadas durante el período impositivo, destinadas a fundaciones, organizaciones no gubernamentales, asociaciones de ayuda a personas con discapacidad y otras entidades, siempre que estas tengan la consideración de entidades sin fines lucrativos de conformidad con lo establecido en los artículos 2 y 3 de la Ley 49/2002, de 23 de diciembre, de régimen fiscal de las entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo, que dentro de sus fines principales estén la cooperación internacional, la lucha contra la pobreza y la ayuda a personas con discapacidad y la exclusión social y que se hallen inscritas en los registros correspondientes de la Comunidad Autónoma de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 999,
+      "LF_end": 999,
+      "quote": "2. En el caso de las fundaciones, será preciso que además de su inscripción en el Registro de Fundaciones de Castilla-La Mancha, rindan cuentas al órgano de Protectorado correspondiente y que este haya ordenado su depósito en el Registro de Fundaciones.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1001,
+      "LF_end": 1001,
+      "quote": "3. La efectividad de la aportación efectuada deberá acreditarse mediante certificación del órgano competente de la entidad donataria.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "10",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1003,
+      "LF_end": 1003,
+      "quote": "4. La base de la deducción a la que refieren los apartados anteriores del presente artículo, no podrá exceder del 10 por ciento de la base liquidable del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM11": [
+    {
+      "source": "S33",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1013,
+      "LF_end": 1013,
+      "quote": "1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica del impuesto el 15 por ciento, hasta el límite del 10 por ciento de dicha cuota, de las donaciones dinerarias efectuadas durante el período impositivo a favor de cualquiera de las siguientes entidades:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1015,
+      "LF_end": 1015,
+      "quote": "a) La Administración de la Junta de Comunidades de Castilla-La Mancha y los organismos y entidades públicas dependientes de la misma cuya finalidad sea la investigación y el desarrollo científico y la innovación empresarial.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1017,
+      "LF_end": 1017,
+      "quote": "b) Las entidades sin fines lucrativos a que se refieren los artículos 2 y 3 de la Ley 49/2002, de 23 de diciembre, siempre que entre sus fines principales se encuentren la investigación y el desarrollo científico y la innovación empresarial y se hallen inscritas en los registros correspondientes de la Comunidad Autónoma de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1019,
+      "LF_end": 1019,
+      "quote": "2. La efectividad de la aportación efectuada deberá acreditarse mediante certificación de la entidad donataria.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM11 bis": [
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1029,
+      "LF_end": 1029,
+      "quote": "1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica del impuesto, el 15% de las donaciones puras y simples efectuadas durante el período impositivo de bienes que, formando parte del patrimonio cultural de Castilla-La Mancha, se encuentren inscritos en el Inventario del Patrimonio Cultural de Castilla-La Mancha, de acuerdo con la Ley 4/2013, de 16 de mayo, de Patrimonio Cultural de Castilla-La Mancha, siempre que se realicen a favor de cualquiera de las siguientes entidades:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1031,
+      "LF_end": 1031,
+      "quote": "a) La Junta de Comunidades de Castilla-La Mancha y las Corporaciones Locales de la Región, así como las Entidades Públicas de carácter cultural dependientes de cualquiera de ellas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1033,
+      "LF_end": 1033,
+      "quote": "b) Las universidades que desarrollen su actividad docente e investigadora en el territorio de la Región, los Centros de Investigación y los Centros Superiores de Enseñanzas Artísticas de la Región.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1035,
+      "LF_end": 1035,
+      "quote": "c) Las Entidades sin fines lucrativos reguladas en los apartados a) y b) del artículo 2 de la Ley 49/2002, de 23 de diciembre, de Régimen Fiscal de las Entidades sin Fines Lucrativos y de los Incentivos Fiscales al Mecenazgo, siempre que persistan fines de naturaleza exclusivamente cultural y se hallen inscritas en los correspondientes registros de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1037,
+      "LF_end": 1037,
+      "quote": "2. Los contribuyentes podrán deducirse de la cuota íntegra autonómica del impuesto, el 15 por ciento de las cantidades destinadas a la conservación, reparación y restauración de bienes pertenecientes al patrimonio cultural de Castilla-La Mancha, inscritos en el Inventario del Patrimonio Cultural de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1039,
+      "LF_end": 1039,
+      "quote": "3. Los contribuyentes podrán deducirse de la cuota íntegra autonómica del impuesto, el 15 por ciento de las cantidades donadas para fines culturales establecidos en la Ley de Mecenazgo Cultural de Castilla-La Mancha, realizadas a las entidades que se establecen en el artículo 3.1 de dicha ley, incluidos en el plan de mecenazgo cultural de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1041,
+      "LF_end": 1041,
+      "quote": "4. La suma de las bases de las deducciones establecidas en los apartados 1, 2 y 3 no podrá exceder del 10 por ciento de la base liquidable del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "11 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1043,
+      "LF_end": 1043,
+      "quote": "5. Las deducciones establecidas en este artículo resultarán incompatibles con el crédito fiscal a que se refiere la Ley de Mecenazgo Cultural de Castilla-La Mancha, en tanto el referido crédito fiscal permanezca vigente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12": [
+    {
+      "source": "S33",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1059,
+      "LF_end": 1059,
+      "quote": "Los contribuyentes menores de 40 años podrán deducirse de la cuota íntegra autonómica las cantidades satisfechas durante el período impositivo en concepto de intereses por la financiación ajena concertada para la adquisición de la primera vivienda habitual, siempre que el préstamo o crédito sea a interés variable, con los siguientes límites:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1061,
+      "LF_end": 1061,
+      "quote": "a) 150 euros, para los contribuyentes cuya suma de la base imponible general y de la base imponible del ahorro del periodo impositivo no sea superior a 12.500 euros en tributación individual o a 25.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1063,
+      "LF_end": 1063,
+      "quote": "b) 100 euros, para los contribuyentes cuya suma de la base imponible general y de la base imponible del ahorro del periodo impositivo no sea superior a 27.000 euros en tributación individual o a 36.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 bis": [
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1085,
+      "LF_end": 1085,
+      "quote": "1. Los contribuyentes que teniendo su residencia habitual en alguno de los municipios incluidos en las zonas a que se refieren los artículos 12 y 13 de la Ley 2/2021, de 7 de mayo, de Medidas Económicas, Sociales y Tributarias frente a la Despoblación y para el Desarrollo del Medio Rural en Castilla-La Mancha, cumplan además el requisito de estancia efectiva en el mismo en los términos previstos en el artículo 5 de la ley antes citada, podrán aplicarse en la cuota íntegra autonómica la que corresponda de las siguientes deducciones:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1087,
+      "LF_end": 1087,
+      "quote": "a) Por residencia habitual en un municipio incluido en una zona de intensa despoblación:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1089,
+      "LF_end": 1089,
+      "quote": "– Si el municipio tiene una población inferior a 2.000 habitantes: 20 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1091,
+      "LF_end": 1091,
+      "quote": "– Si el municipio tiene una población igual o superior a 2.000 e inferior a 5.000 habitantes: 15 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1093,
+      "LF_end": 1093,
+      "quote": "b) Por residencia habitual en un municipio incluido en una zona de extrema despoblación:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1095,
+      "LF_end": 1095,
+      "quote": "– Si el municipio tiene una población inferior a 2.000 habitantes: 25 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1097,
+      "LF_end": 1097,
+      "quote": "– Si el municipio tiene una población igual o superior a 2.000 e inferior a 5.000 habitantes: 20 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1099,
+      "LF_end": 1099,
+      "quote": "c) Por residencia habitual en un municipio incluido en una zona en riesgo de despoblación:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1101,
+      "LF_end": 1101,
+      "quote": "– Si el municipio tiene una población inferior a 2.000 habitantes: 15 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1103,
+      "LF_end": 1103,
+      "quote": "– Si el municipio tiene una población igual o superior a 2.000 e inferior a 5.000 habitantes: 10 %.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 bis",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1105,
+      "LF_end": 1105,
+      "quote": "2. El incumplimiento de cualquiera de los requisitos indicados en el apartado anterior dará lugar a la integración de las cantidades deducidas en la cuota íntegra autonómica del ejercicio en que se produzca el incumplimiento, con los correspondientes intereses de demora.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 ter": [
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1131,
+      "LF_end": 1131,
+      "quote": "1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica el 15 por ciento de las cantidades que durante el período impositivo satisfagan por la adquisición o rehabilitación de la vivienda que constituya o vaya a constituir su residencia habitual, siempre que se cumplan, simultáneamente, los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1133,
+      "LF_end": 1133,
+      "quote": "a) Que la vivienda esté situada en alguno de los municipios incluidos en las zonas a que se refiere el artículo 12 de la Ley 2/2021, de 7 de mayo, de Medidas Económicas, Sociales y Tributarias frente a la Despoblación y para el Desarrollo del Medio Rural en Castilla-La Mancha, y que la población del mismo sea inferior a 5.000 habitantes.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1135,
+      "LF_end": 1135,
+      "quote": "b) Que la adquisición o rehabilitación de la vivienda se haya producido a partir del 1 de enero de 2021.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1137,
+      "LF_end": 1137,
+      "quote": "2. La base de esta deducción estará constituida por las cantidades satisfechas para la adquisición o rehabilitación de la vivienda, incluidos los gastos originados que hayan corrido a cargo del adquirente y, en el caso de financiación ajena, la amortización, los intereses, el coste de los instrumentos de cobertura del riesgo de tipo de interés variable de los préstamos hipotecarios regulados en el artículo decimonoveno de la Ley 36/2003, de 11 de noviembre, de Medidas de Reforma Económica, y demás gastos derivados de la misma. En caso de aplicación de los citados instrumentos de cobertura, los intereses satisfechos por el contribuyente se minorarán en las cantidades obtenidas por la aplicación del citado instrumento.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1139,
+      "LF_end": 1139,
+      "quote": "La base máxima total de la deducción será de 180.000 euros, o el importe de adquisición o rehabilitación de la vivienda que da origen a la deducción si este fuera menor, minorado por los importes recibidos de la Junta de Comunidades de Castilla-La Mancha en concepto de subvenciones por la adquisición o rehabilitación de la vivienda. A su vez, la base máxima a aplicar en cada ejercicio será de 12.000 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1141,
+      "LF_end": 1141,
+      "quote": "3. Cuando se adquiera una vivienda habitual habiendo disfrutado ya de la deducción prevista en este artículo, la base máxima total de la deducción se minorará en las cantidades invertidas en la adquisición de las viviendas anteriores, en tanto dichas cantidades hubieran sido objeto de deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1143,
+      "LF_end": 1143,
+      "quote": "Cuando con ocasión de la enajenación de una vivienda habitual por la que se hubiera practicado la deducción prevista en este artículo se genere una ganancia patrimonial exenta por reinversión, la base de deducción por la adquisición o rehabilitación de la nueva vivienda se minorará en el importe de la ganancia patrimonial a la que se aplique la exención por reinversión. En este caso, no se podrá practicar deducción por la adquisición de la nueva mientras las cantidades invertidas en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducción, como la ganancia patrimonial exenta por reinversión.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1145,
+      "LF_end": 1145,
+      "quote": "4. En los supuestos de nulidad matrimonial, divorcio o separación judicial, el contribuyente podrá seguir practicando esta deducción, en los términos previstos en la normativa estatal del impuesto sobre la renta de las personas físicas, por las cantidades satisfechas en el período impositivo para la adquisición de la que fue durante la vigencia del matrimonio su vivienda habitual, siempre que continúe teniendo esta condición para los hijos comunes y el progenitor en cuya compañía queden.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1147,
+      "LF_end": 1147,
+      "quote": "5. La aplicación de esta deducción requerirá que el importe comprobado del patrimonio del contribuyente al finalizar el período de la imposición exceda del valor que arrojase su comprobación al comienzo del mismo al menos en la cuantía de las inversiones realizadas, sin computar los intereses y demás gastos de financiación. A estos efectos, no se computarán los incrementos o disminuciones de valor experimentados durante el período impositivo por los elementos patrimoniales que al final del mismo sigan formando parte del patrimonio del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1149,
+      "LF_end": 1149,
+      "quote": "6. Para la aplicación de la deducción prevista en este artículo se tendrán en cuenta los siguientes conceptos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1151,
+      "LF_end": 1151,
+      "quote": "a) Con carácter general se considera vivienda habitual del contribuyente la edificación que constituya su residencia durante un plazo continuado de, al menos, tres años. No obstante, se entenderá que la vivienda tuvo el carácter de habitual cuando, a pesar de no haber transcurrido dicho plazo, se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente exijan el cambio de domicilio, tales como celebración de matrimonio, separación matrimonial, traslado laboral, obtención del primer empleo, o cambio de empleo, u otras análogas justificadas. Para que la vivienda constituya la residencia habitual del contribuyente deberá ser habitada de manera efectiva y con carácter permanente por éste, en un plazo de doce meses, contados a partir de la fecha de adquisición o terminación de las obras. No obstante, se entenderá que la vivienda no pierde el carácter de habitual cuando se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente impidan la ocupación de la vivienda, en los términos previstos en el párrafo anterior. Cuando sean de aplicación las excepciones previstas en los dos párrafos anteriores, la deducción por adquisición de vivienda se practicará hasta el momento en que se den las circunstancias que necesariamente exijan el cambio de vivienda o impidan la ocupación de la misma.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1153,
+      "LF_end": 1153,
+      "quote": "b) Se entenderá por adquisición de vivienda habitual, la adquisición en sentido jurídico del derecho de propiedad o pleno dominio de la misma, aunque éste sea compartido, siendo indiferente el negocio jurídico que la origine.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1155,
+      "LF_end": 1155,
+      "quote": "Se asimilan a la adquisición de vivienda la construcción o ampliación de la misma, en los siguientes términos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1157,
+      "LF_end": 1157,
+      "quote": "Ampliación de vivienda: Cuando se produzca el aumento de su superficie habitable, mediante cerramiento de parte descubierta o por cualquier otro medio, de forma permanente y durante todas las épocas del año.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1159,
+      "LF_end": 1159,
+      "quote": "Construcción: Cuando el contribuyente satisfaga directamente los gastos derivados de la ejecución de las obras, o entregue cantidades a cuenta al promotor de aquéllas, siempre que el certificado final de obra se emita en un plazo no superior a cuatro años desde el inicio de la inversión.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 ter",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1161,
+      "LF_end": 1161,
+      "quote": "c) Se considerarán obras de rehabilitación de la vivienda habitual aquellas que tengan por objeto principal la reconstrucción de la vivienda mediante la consolidación y el tratamiento de las estructuras, fachadas o cubiertas y otras análogas siempre que el coste global de las operaciones de rehabilitación exceda del 25 por ciento del precio de adquisición si se hubiese efectuado ésta durante los dos años inmediatamente anteriores al inicio de las obras de rehabilitación o, en otro caso, del valor de mercado que tuviera la vivienda en el momento de dicho inicio. A estos efectos, se descontará del precio de adquisición o del valor de mercado de la vivienda la parte proporcional correspondiente al suelo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 quater": [
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1175,
+      "LF_end": 1175,
+      "quote": "1. El contribuyente podrá deducirse 500 euros en la cuota íntegra autonómica en el periodo impositivo en el que se produzca el cambio de residencia, así como en el siguiente, por los gastos ocasionados al trasladar la residencia habitual por motivos laborales a un municipio de Castilla-La Mancha de los incluidos en las zonas a que se refiere el artículo 12 de la Ley 2/2021, de 7 de mayo, de Medidas Económicas, Sociales y Tributarias frente a la Despoblación y para el Desarrollo del Medio Rural en Castilla-La Mancha, en las siguientes circunstancias:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1177,
+      "LF_end": 1177,
+      "quote": "a) La base liquidable del periodo impositivo en el que se hubieran comenzado a aplicar las deducciones aludidas en el punto anterior, deberá ser inferior a 22.946 euros en tributación individual o a 31.485 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1179,
+      "LF_end": 1179,
+      "quote": "b) El importe de la deducción no podrá exceder de la parte autonómica de la cuota íntegra procedente de los rendimientos del trabajo y de las actividades económicas del ejercicio en que resulte aplicable la deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1181,
+      "LF_end": 1181,
+      "quote": "c) En el supuesto de tributación conjunta, la deducción de 500 euros se aplicará, en cada uno de los periodos impositivos en que sea aplicable la deducción, por cada uno de los contribuyentes que traslade su residencia en los términos anteriormente comentados, con el límite de la parte autonómica de la cuota íntegra procedente de rendimientos del trabajo y de actividades económicas que corresponda a los contribuyentes que generen derecho a la aplicación de la deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1183,
+      "LF_end": 1183,
+      "quote": "d) Para consolidar el derecho a la deducción, es preciso que el contribuyente permanezca en la nueva residencia habitual durante el año en que se produce el traslado y los tres siguientes.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quater",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1185,
+      "LF_end": 1185,
+      "quote": "2. El incumplimiento de cualquiera de los dos requisitos anteriores dará lugar a la devolución de las cantidades deducidas de la cuota íntegra autonómica del ejercicio en que se produzca el incumplimiento, con los correspondientes intereses de demora.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 quinquies": [
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1199,
+      "LF_end": 1199,
+      "quote": "1. Únicamente en el periodo impositivo de 2022, los contribuyentes podrán aplicarse una deducción en la cuota íntegra autonómica por las cantidades satisfechas en la adquisición de los bienes y servicios que integran la cesta de la compra a que se refiere el Instituto Nacional de Estadística, con los siguientes límites:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1201,
+      "LF_end": 1201,
+      "quote": "a) 200 euros, para los contribuyentes cuya suma de la base imponible general y de la base imponible del ahorro del periodo impositivo sea inferior a 12.500 euros. Este límite podrá incrementarse en 50 euros por cada hijo o descendiente a cargo del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1203,
+      "LF_end": 1203,
+      "quote": "b) 150 euros, para los contribuyentes cuya suma de la base imponible general y de la base imponible del ahorro del periodo impositivo sea inferior a 21.000 euros. Ese límite podrá incrementarse en 37,50 euros por cada hijo o descendiente a cargo del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1205,
+      "LF_end": 1205,
+      "quote": "c) 100 euros, para los contribuyentes cuya suma de la base imponible general y de la base imponible del ahorro del periodo impositivo sea inferior a 30.000 euros. Este límite podrá incrementarse en 25 euros por cada hijo o descendiente a cargo del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1207,
+      "LF_end": 1207,
+      "quote": "2. A efectos de la aplicación de la presente deducción se tomarán en consideración únicamente los gastos satisfechos por el contribuyente en los siguientes grupos que componen la cesta de la compra del Índice de Precios de Consumo: 01 (alimentos y bebidas no alcohólicas), 03 (vestido y calzado), 04 (vivienda, agua, electricidad, gas y otros combustibles) y 06 (sanidad).",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 quinquies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1209,
+      "LF_end": 1209,
+      "quote": "3. Para la aplicación del incremento de los límites de la presente deducción solo se tendrán en cuenta aquellas hijas o aquellos hijos o descendientes que den derecho a la aplicación del mínimo por descendientes en el artículo 58 de la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 sexies": [
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1223,
+      "LF_end": 1223,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del 20 por ciento de las cantidades invertidas durante el ejercicio por la adquisición de acciones o participaciones sociales, como consecuencia de acuerdos de constitución de sociedades o de ampliación de capital en las sociedades mercantiles que revistan la forma de Sociedad Anónima, Sociedad de Responsabilidad Limitada, Sociedad Anónima Laboral, Sociedad de Responsabilidad Limitada Laboral o Sociedad Cooperativa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1225,
+      "LF_end": 1225,
+      "quote": "El límite de deducción aplicable será de 4.000 euros anuales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1227,
+      "LF_end": 1227,
+      "quote": "2. Para la aplicación de la deducción deberán cumplirse los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1229,
+      "LF_end": 1229,
+      "quote": "a) Que, como consecuencia de la participación adquirida por el contribuyente, computada junto con la que posean de la misma entidad su cónyuge o personas unidas al contribuyente por razón de parentesco, en línea recta o colateral, por consanguinidad o afinidad hasta el tercer grado incluido, no se llegue a poseer durante ningún día del año natural más del 40 por ciento del total del capital social de la entidad o de sus derechos de voto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1231,
+      "LF_end": 1231,
+      "quote": "b) Las participaciones adquiridas deben mantenerse en el patrimonio del contribuyente durante un período mínimo de tres años, siguientes a la constitución o ampliación, y este no debe ejercer funciones ejecutivas ni de dirección en la entidad.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1233,
+      "LF_end": 1233,
+      "quote": "c) Que la entidad de la que se adquieran las acciones o participaciones cumpla los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1235,
+      "LF_end": 1235,
+      "quote": "1.º Que tenga su domicilio social y fiscal en la Comunidad Autónoma de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1237,
+      "LF_end": 1237,
+      "quote": "2.º Que desarrolle una actividad económica. A estos efectos no se considerará que desarrolla una actividad económica cuando tenga por actividad principal la gestión de un patrimonio mobiliario o inmobiliario, de acuerdo con lo establecido en el artículo 4. Ocho Dos. a) de la Ley 19/1991, de 6 de junio, del Impuesto sobre el Patrimonio.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1239,
+      "LF_end": 1239,
+      "quote": "3.º Que, para el caso en que la inversión efectuada corresponda a la constitución de la entidad, desde el primer ejercicio fiscal esta cuente al menos con una persona con contrato laboral a jornada completa o con dos personas con contrato laboral a tiempo parcial, siempre que el cómputo total de horas en el supuesto de contrato laboral a tiempo parcial sea igual o superior al establecido para una persona con contrato laboral a jornada completa. En cualquier caso, los trabajadores deberán estar dados de alta en el Régimen correspondiente de la Seguridad Social y las condiciones del contrato deberán mantenerse durante al menos 24 meses.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1241,
+      "LF_end": 1241,
+      "quote": "4.º Que, para el caso en que la inversión efectuada corresponda a una ampliación de capital de la entidad, dicha entidad hubiera sido constituida dentro de los tres años anteriores a la ampliación de capital y la plantilla media de la entidad durante los dos ejercicios fiscales posteriores al de la ampliación se incremente respecto de la plantilla media que tuviera en los doce meses anteriores al menos en una persona con los requisitos del párrafo 3.º anterior, y dicho incremento se mantenga durante al menos otros veinticuatro meses.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1243,
+      "LF_end": 1243,
+      "quote": "Para el cálculo de la plantilla media total de la entidad y de su incremento se computará el número de personas empleadas, en los términos que disponga la legislación laboral, teniendo en cuenta la jornada contratada en relación con la jornada completa.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1245,
+      "LF_end": 1245,
+      "quote": "d) Las operaciones que generen el derecho a la deducción deberán formalizarse en escritura pública, en la que se deberá especificar la identidad de los inversores y el importe de la inversión respectiva.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 sexies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1247,
+      "LF_end": 1247,
+      "quote": "3. El incumplimiento de los requisitos exigidos en el apartado anterior dará lugar a la integración de las cantidades deducidas en la cuota íntegra autonómica del ejercicio en que se produzca el incumplimiento, con los correspondientes intereses de demora.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM12 septies": [
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1261,
+      "LF_end": 1261,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción de la cuota íntegra autonómica del 20 por ciento de las cantidades invertidas durante el periodo impositivo en las aportaciones realizadas con la finalidad de ser socio en entidades que formen parte de la economía social a que se refiere el apartado siguiente. El importe máximo de esta deducción es de 4.000 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1263,
+      "LF_end": 1263,
+      "quote": "2. La aplicación de esta deducción está sujeta al cumplimiento de los requisitos y condiciones siguientes:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1265,
+      "LF_end": 1265,
+      "quote": "2.1 La participación alcanzada por el contribuyente, computada junto con las del cónyuge o personas unidas por razón de parentesco, en línea directa o colateral, por consanguinidad o afinidad hasta el tercer grado incluido, no podrá ser superior al 40 por ciento del capital de la entidad objeto de la inversión o de sus derechos de voto.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1267,
+      "LF_end": 1267,
+      "quote": "2.2 La entidad en la que debe materializarse la inversión tendrá que cumplir los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1269,
+      "LF_end": 1269,
+      "quote": "a) Formar parte de la economía social, en los términos previstos en la Ley 5/2011, de 29 de marzo, de Economía Social.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1271,
+      "LF_end": 1271,
+      "quote": "b) Tener su domicilio social y fiscal en Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1273,
+      "LF_end": 1273,
+      "quote": "c) Contar, como mínimo, con una persona ocupada con contrato laboral y a jornada completa, y dada de alta en el régimen general de la Seguridad Social.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1275,
+      "LF_end": 1275,
+      "quote": "2.3 Las operaciones en las que sea de aplicación la deducción deberán formalizarse en escritura pública, en la que se hará constar la identidad de los inversores y el importe de la inversión respectiva.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1277,
+      "LF_end": 1277,
+      "quote": "2.4 Las aportaciones habrán de mantenerse en el patrimonio del contribuyente durante un periodo mínimo de cinco años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1279,
+      "LF_end": 1279,
+      "quote": "2.5 Los requisitos establecidos en el apartado 2.2 deberán cumplirse durante un periodo mínimo de cinco años a contar desde la aportación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1281,
+      "LF_end": 1281,
+      "quote": "3. El incumplimiento de los requisitos y condiciones establecidos en el apartado anterior, a excepción del punto 2.3, comportará la pérdida del beneficio fiscal y, en tal caso, el contribuyente deberá incluir en la declaración del impuesto correspondiente al ejercicio en que se haya producido el incumplimiento la parte del impuesto que se hubiera dejado de pagar como consecuencia de la deducción practicada, junto con los intereses de demora devengados.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "12 septies",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1283,
+      "LF_end": 1283,
+      "quote": "4. Esta deducción será incompatible, para las mismas inversiones, con la regulada en el artículo 12 sexies.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM13": [
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1297,
+      "LF_end": 1297,
+      "quote": "1. Las deducciones establecidas en los artículos anteriores se aplicarán conforme la normativa reguladora del Impuesto sobre la Renta de las Personas Físicas por el orden con el que se regulan en la presente ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1299,
+      "LF_end": 1299,
+      "quote": "2. La aplicación de las deducciones a que se refieren los artículos 1, 2, 2 bis, 3 bis, 4, 5 y 6 de esta ley sólo podrá realizarse por aquellos contribuyentes cuya base imponible, entendiendo como tal la suma de la base imponible general y la del ahorro, no sea superior a 27.000 euros en tributación individual o a 36.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1301,
+      "LF_end": 1301,
+      "quote": "3. Las siguientes deducciones son incompatibles entre sí:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1303,
+      "LF_end": 1303,
+      "quote": "a) Las previstas en los artículos 2 y 9 ter.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1305,
+      "LF_end": 1305,
+      "quote": "b) Las previstas en los artículos 2 bis y 9 quater.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1307,
+      "LF_end": 1307,
+      "quote": "c) Las previstas en los artículos 4 y 9 quinquies.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1309,
+      "LF_end": 1309,
+      "quote": "d) Las previstas en los artículos 4 y 5 son incompatibles entre sí respecto de una misma persona. En los casos de tributación conjunta, la deducción aplicable por descendientes con discapacidad será la establecida en el artículo 5 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1311,
+      "LF_end": 1311,
+      "quote": "e) Las previstas en el artículo 6 con las establecidas en los artículos 4 y 5, respecto de la misma persona mayor de 75 años. En los supuestos en los que la persona mayor de 75 años tenga un grado de discapacidad acreditado igual o superior al 65 por ciento, se aplicarán las deducciones establecidas en los artículos 4 o 5 que, en su calidad de contribuyente o de ascendiente del contribuyente, respectivamente, le corresponda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1313,
+      "LF_end": 1313,
+      "quote": "f) Las previstas en los artículos 9, 9 bis, 9 ter, 9 quáter y 9 quinquies.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1315,
+      "LF_end": 1315,
+      "quote": "4. Para la aplicación de las deducciones establecidas en los artículos 1, 2, 2 bis, 3, 3 bis, 4, 5 y 6 se tendrán en cuenta las normas para la aplicación del mínimo del contribuyente, por descendientes, ascendientes y discapacidad contenidas en la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "13",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 1317,
+      "LF_end": 1317,
+      "quote": "No obstante, cuando dos o más contribuyentes tengan derecho a la aplicación de las deducciones previstas en los artículos 1, 2, 5 y 6.2 de esta ley, respecto de los mismos ascendientes, descendientes o personas mayores de 75 años, y alguno de ellos no cumpla el requisito establecido en el apartado 2 de este artículo, el importe de la deducción para los demás contribuyentes quedará reducido a la proporción que resulte de la aplicación de las normas para el prorrateo del mínimo por descendientes, ascendientes y discapacidad previstas en la Ley 35/2006, de 28 de noviembre.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Joint": [
+    {
+      "source": "S0",
+      "article": "84.2",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 6192,
+      "LF_end": 6192,
+      "quote": "2. Los importes y límites cuantitativos establecidos a efectos de la tributación individual se aplicarán en idéntica cuantía en la tributación conjunta, sin que proceda su elevación o multiplicación en función del número de miembros de la unidad familiar.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Nat67": [
+    {
+      "source": "S0",
+      "article": "Artículo\\s+67\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5110,
+      "LF_end": 5110,
+      "quote": "1. La cuota líquida estatal del Impuesto será el resultado de disminuir la cuota íntegra estatal en la suma de:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+67\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5112,
+      "LF_end": 5112,
+      "quote": "a) Las deducciones previstas en el apartado 1 y 6 del artículo 68 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+67\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5114,
+      "LF_end": 5114,
+      "quote": "b) El 50 por ciento del importe total de las deducciones previstas en los apartados 2, 3, 4 y 5 del artículo 68 de esta ley.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+67\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5116,
+      "LF_end": 5116,
+      "quote": "2. El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "Nat77": [
+    {
+      "source": "S0",
+      "article": "Artículo\\s+77\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5811,
+      "LF_end": 5811,
+      "quote": "1. La cuota líquida autonómica será el resultado de disminuir la cuota íntegra autonómica en la suma de:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+77\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5813,
+      "LF_end": 5813,
+      "quote": "a) El 50 por ciento del importe total de las deducciones previstas en los apartados 2, 3, 4 y 5 del artículo 68 de esta Ley, con los límites y requisitos de situación patrimonial previstos en sus artículos 69 y 70.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+77\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5815,
+      "LF_end": 5815,
+      "quote": "b) El importe de las deducciones establecidas por la Comunidad Autónoma en el ejercicio de las competencias previstas en la Ley 22/2009, de 18 de diciembre, por la que se regula el sistema de financiación de las Comunidades Autónomas de régimen común y Ciudades con Estatuto de Autonomía y se modifican determinadas normas tributarias.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S0",
+      "article": "Artículo\\s+77\\.",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+      "reader": "sources/S0.reader.txt",
+      "LF_start": 5817,
+      "LF_end": 5817,
+      "quote": "2. El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLM2026rent": [
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 903,
+      "LF_end": 903,
+      "quote": "Uno. Se modifica el apartado 1 del artículo 9 que queda redactado de la siguiente forma:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 905,
+      "LF_end": 905,
+      "quote": "“1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica el 15 por ciento de las cantidades satisfechas",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 906,
+      "LF_end": 906,
+      "quote": "por el arrendamiento de la vivienda que constituya o vaya a constituir su residencia habitual en Castilla-La Mancha",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 907,
+      "LF_end": 907,
+      "quote": "durante el período impositivo, con un máximo de 500 euros”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 909,
+      "LF_end": 909,
+      "quote": "Dos. Se modifica el apartado 1 del artículo 9 bis que queda redactado de la siguiente forma:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 911,
+      "LF_end": 911,
+      "quote": "“1. Los contribuyentes podrán deducirse de la cuota íntegra autonómica el 15 por 100 de las cantidades satisfechas",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 912,
+      "LF_end": 912,
+      "quote": "durante el ejercicio correspondiente por el arrendamiento de la vivienda habitual situada en Castilla-La Mancha y que",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 913,
+      "LF_end": 913,
+      "quote": "constituya su residencia habitual, con un máximo de 500 euros, siempre que se cumplan los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 914,
+      "LF_end": 914,
+      "quote": "a) Que el contrato de arrendamiento esté vinculado a una operación de adjudicación de la vivienda habitual en pago",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 915,
+      "LF_end": 915,
+      "quote": "de la totalidad de la deuda pendiente del préstamo o crédito garantizados mediante hipoteca de la citada vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 916,
+      "LF_end": 916,
+      "quote": "\fAÑO XLV Núm. 61                                  30 de marzo de 2026                                             10675",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 918,
+      "LF_end": 918,
+      "quote": "b) Que la suma de la base imponible general y de la base imponible del ahorro del contribuyente menos el mínimo",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 919,
+      "LF_end": 919,
+      "quote": "por descendientes, no supere la cuantía de 12.500 euros en tributación individual o de 25.000 euros en tributación",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 920,
+      "LF_end": 920,
+      "quote": "conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 921,
+      "LF_end": 921,
+      "quote": "c) Que en la autoliquidación del Impuesto sobre la Renta de las Personas Físicas se consigne el número de",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 922,
+      "LF_end": 922,
+      "quote": "identificación fiscal del arrendador de la vivienda”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 924,
+      "LF_end": 924,
+      "quote": "Tres. Se modifica el apartado 1 del artículo 9 ter que queda redactado de la siguiente forma:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 926,
+      "LF_end": 926,
+      "quote": "“1. Los contribuyentes que integren una familia numerosa, reconocida como tal de conformidad con lo establecido",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 927,
+      "LF_end": 927,
+      "quote": "en la Ley 40/2003, de 18 de noviembre, de Protección a las Familias Numerosas, podrán deducirse de la cuota",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 928,
+      "LF_end": 928,
+      "quote": "íntegra autonómica el 15 por ciento de las cantidades satisfechas por el arrendamiento de la vivienda que constituya",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 929,
+      "LF_end": 929,
+      "quote": "o vaya a constituir su residencia habitual en Castilla-La Mancha durante el período impositivo, con un máximo de",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 930,
+      "LF_end": 930,
+      "quote": "500 euros”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 932,
+      "LF_end": 932,
+      "quote": "Cuatro. Se modifica el apartado 1 del artículo 9 quáter que queda redactado de la siguiente forma:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 934,
+      "LF_end": 934,
+      "quote": "“1. El padre o la madre que integre una familia monoparental podrá deducirse de la cuota íntegra autonómica el 15",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 935,
+      "LF_end": 935,
+      "quote": "por ciento de las cantidades satisfechas por el arrendamiento de la vivienda que constituya o vaya a constituir su",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 936,
+      "LF_end": 936,
+      "quote": "residencia habitual en Castilla-La Mancha durante el período impositivo, con un máximo de 500 euros”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 938,
+      "LF_end": 938,
+      "quote": "Cinco. Se modifica el apartado 1 del artículo 9 quinqies que queda redactado de la siguiente forma:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 940,
+      "LF_end": 940,
+      "quote": "“1. Los contribuyentes que tengan un grado de discapacidad acreditado igual o superior al 65 por ciento y tengan",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 941,
+      "LF_end": 941,
+      "quote": "derecho a la aplicación el mínimo por discapacidad del contribuyente, previsto en la Ley 35/2006, de 28 de noviembre,",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 942,
+      "LF_end": 942,
+      "quote": "podrán deducirse de la cuota íntegra autonómica el 15 por ciento de las cantidades satisfechas por el arrendamiento",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 943,
+      "LF_end": 943,
+      "quote": "de la vivienda que constituya o vaya a constituir su residencia habitual en Castilla-La Mancha durante el período",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.1–5 amended9/9bis/9ter/9quater/9quinquies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 944,
+      "LF_end": 944,
+      "quote": "impositivo, con un máximo de 500 euros”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMSavings": [
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 948,
+      "LF_end": 948,
+      "quote": "“Artículo 12 octies. Deducción por ahorro-inversión en la adquisición o construcción de la primera vivienda habitual.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 949,
+      "LF_end": 949,
+      "quote": "1. Los contribuyentes menores de 36 años podrán deducirse de la cuota íntegra autonómica un 15 por ciento de",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 950,
+      "LF_end": 950,
+      "quote": "las cantidades que se depositen durante el período impositivo en cuentas de entidades de crédito siempre que el",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 951,
+      "LF_end": 951,
+      "quote": "importe depositado que haya generado el derecho a la deducción se destine, antes del transcurso de 6 años a partir",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 952,
+      "LF_end": 952,
+      "quote": "de la fecha de apertura de la cuenta, a la adquisición o construcción de su primera vivienda habitual. En cualquier",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 953,
+      "LF_end": 953,
+      "quote": "caso, esta deberá estar ubicada en el territorio de la Comunidad Autónoma de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 954,
+      "LF_end": 954,
+      "quote": "A los efectos de esta deducción se entenderá por adquisición de vivienda, la adquisición en sentido jurídico del",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 955,
+      "LF_end": 955,
+      "quote": "derecho de propiedad o pleno dominio de la misma, sin que tal consideración quede desvirtuada porque esta",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 956,
+      "LF_end": 956,
+      "quote": "propiedad se comparta con otros cotitulares.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 957,
+      "LF_end": 957,
+      "quote": "2. La deducción máxima total será de 3.000 euros y la deducción máxima anual de 750 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 958,
+      "LF_end": 958,
+      "quote": "3. En la aplicación de esta deducción se tendrán en cuenta las siguientes condiciones:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 959,
+      "LF_end": 959,
+      "quote": "a) Podrán incluirse en la deducción las aportaciones que el obligado realice en la cuenta dentro del ejercicio en el",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 960,
+      "LF_end": 960,
+      "quote": "que cumpla los 36 años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 961,
+      "LF_end": 961,
+      "quote": "b) Las cuentas en las que se efectúe el depósito de las cantidades base de la deducción deberán estar separadas",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 962,
+      "LF_end": 962,
+      "quote": "de cualquier otro tipo de imposición, pudiendo únicamente cada contribuyente mantener una cuenta de este tipo.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 963,
+      "LF_end": 963,
+      "quote": "En el caso de tributación conjunta el importe de la deducción se prorrateará entre los contribuyentes en función a la",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 964,
+      "LF_end": 964,
+      "quote": "aportación realizada por cada uno de ellos.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 965,
+      "LF_end": 965,
+      "quote": "c) Será requisito que el saldo de la cuenta a fecha de devengo del impuesto sea superior a la fecha de devengo del",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 966,
+      "LF_end": 966,
+      "quote": "periodo impositivo anterior, al menos por el mismo importe que ha dado derecho a practicarse la deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 967,
+      "LF_end": 967,
+      "quote": "d) Se entenderá que no se incumple el requisito de disposición cuando las cantidades depositadas que hayan",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 968,
+      "LF_end": 968,
+      "quote": "generado el derecho a la deducción se repongan o se aporten íntegramente, con anterioridad al devengo del",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 969,
+      "LF_end": 969,
+      "quote": "Impuesto, a una cuenta de la misma o de otra entidad de crédito que cumpla la misma finalidad y condiciones.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 970,
+      "LF_end": 970,
+      "quote": "e) No se entenderá incumplido el requisito del destino del importe de la cuenta a la adquisición de la vivienda habitual",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 971,
+      "LF_end": 971,
+      "quote": "en el supuesto de fallecimiento del contribuyente antes de la finalización de los plazos a que se refieren el apartado 1.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 972,
+      "LF_end": 972,
+      "quote": "f) Las cantidades depositadas en las cuentas que hayan generado el derecho a la deducción no podrán volver a ser",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 973,
+      "LF_end": 973,
+      "quote": "objeto de deducción cuando se destinen a la adquisición de la vivienda habitual.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 974,
+      "LF_end": 974,
+      "quote": "g) Las cuentas deberán identificarse separadamente en la autoliquidación del impuesto, incluyendo además la fecha",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 975,
+      "LF_end": 975,
+      "quote": "de apertura y el incremento de saldo correspondiente al ejercicio.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 976,
+      "LF_end": 976,
+      "quote": "\fAÑO XLV Núm. 61                                    30 de marzo de 2026                                           10676",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 978,
+      "LF_end": 978,
+      "quote": "4. A los efectos de este impuesto, con carácter general se considera vivienda habitual del contribuyente la definida",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 979,
+      "LF_end": 979,
+      "quote": "en el apartado 6.a) del artículo 12 ter.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 980,
+      "LF_end": 980,
+      "quote": "5. La aplicación de la deducción prevista en este artículo requerirá que la persona contribuyente tenga una base",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 981,
+      "LF_end": 981,
+      "quote": "imponible, entendiendo como tal la suma de la base imponible general y la del ahorro, no superior a 27.000 euros",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 982,
+      "LF_end": 982,
+      "quote": "en tributación individual o a 36.000 euros en tributación conjunta.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 983,
+      "LF_end": 983,
+      "quote": "6. En el caso de que se produzca un incumplimiento que origine la pérdida del derecho a las deducciones ya practicadas,",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.6 new12octies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 984,
+      "LF_end": 984,
+      "quote": "deberá procederse a la regularización de acuerdo con lo establecido en la normativa estatal del impuesto”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMDogs": [
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 988,
+      "LF_end": 988,
+      "quote": "“Artículo 12 nonies. Deducción por gastos derivados de controles veterinarios y vacunación por la tenencia de perros",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 989,
+      "LF_end": 989,
+      "quote": "de asistencia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 990,
+      "LF_end": 990,
+      "quote": "1. Los contribuyentes podrán aplicar una deducción en la cuota íntegra autonómica del impuesto del 30 por ciento",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 991,
+      "LF_end": 991,
+      "quote": "de las cantidades satisfechas en el periodo impositivo en concepto de gastos veterinarios y vacunación derivados",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 992,
+      "LF_end": 992,
+      "quote": "de la tenencia de perros de asistencia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 993,
+      "LF_end": 993,
+      "quote": "2. El importe máximo de la deducción será de 100 euros anuales por contribuyente y será aplicable durante todo el",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 994,
+      "LF_end": 994,
+      "quote": "periodo de tenencia del animal por parte del contribuyente.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 995,
+      "LF_end": 995,
+      "quote": "3. A los efectos de este artículo, se entenderá por perros de asistencia, los definidos en la letra cc) del artículo 3 de",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 996,
+      "LF_end": 996,
+      "quote": "la Ley 7/2023, de 28 de marzo, de protección de los derechos y el bienestar de los animales y en los artículos 2.h)",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 997,
+      "LF_end": 997,
+      "quote": "y 4 de la Ley 5/2018, de 21 de diciembre, de acceso al entorno de las personas con discapacidad acompañadas de",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 998,
+      "LF_end": 998,
+      "quote": "perros de asistencia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 999,
+      "LF_end": 999,
+      "quote": "4. Tendrán la consideración de gastos deducibles siempre que hayan sido efectivamente satisfechos por el",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1000,
+      "LF_end": 1000,
+      "quote": "contribuyente, los relativos a vacunaciones, desparasitación, esterilización y demás tratamientos que resulten",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1001,
+      "LF_end": 1001,
+      "quote": "obligatorios conforme a la normativa específica aplicable a los perros de asistencia.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1002,
+      "LF_end": 1002,
+      "quote": "5. La deducción solo será aplicable cuando concurran los siguientes requisitos:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1003,
+      "LF_end": 1003,
+      "quote": "a) Que se haya reconocido la unidad de vinculación entre el sujeto pasivo y el perro de asistencia por parte de la",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1004,
+      "LF_end": 1004,
+      "quote": "Consejería competente en materia de bienestar social, conforme a la Ley 5/2018, de 21 de diciembre, o por otra",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1005,
+      "LF_end": 1005,
+      "quote": "comunidad autónoma.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1006,
+      "LF_end": 1006,
+      "quote": "b) Que los gastos estén debidamente justificados mediante factura expedida por profesional o centro veterinario",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.7 new12nonies",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1007,
+      "LF_end": 1007,
+      "quote": "legalmente autorizado.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMIncompat": [
+    {
+      "source": "S32",
+      "article": "18.8 new13.3g",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1009,
+      "LF_end": 1009,
+      "quote": "d) Que no se superen los importes previstos en el artículo 13.2 relativos a la base imponible”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.8 new13.3g",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1011,
+      "LF_end": 1011,
+      "quote": "Ocho. Se añade una nueva letra g) al apartado 3 del artículo 13 que tendrá la siguiente redacción:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "18.8 new13.3g",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1013,
+      "LF_end": 1013,
+      "quote": "“g) Las previstas en los artículos 12 y 12 ter”.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMEffect": [
+    {
+      "source": "S32",
+      "article": "DF6 IRPFeffect1Jan2025",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1409,
+      "LF_end": 1409,
+      "quote": "Disposición final sexta. Entrada en vigor.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "DF6 IRPFeffect1Jan2025",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1411,
+      "LF_end": 1411,
+      "quote": "La presente ley entrará en vigor el día siguiente al de su publicación en el Diario Oficial de Castilla-La Mancha, con",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "DF6 IRPFeffect1Jan2025",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1412,
+      "LF_end": 1412,
+      "quote": "excepción de las deducciones fiscales sobre el Impuesto sobre la Renta de las Personas Físicas previstas en su",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "DF6 IRPFeffect1Jan2025",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1413,
+      "LF_end": 1413,
+      "quote": "artículo 18, que se aplicarán a hechos imponibles producidos a partir del periodo impositivo iniciado el 1 de enero",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S32",
+      "article": "DF6 IRPFeffect1Jan2025",
+      "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+      "reader": "sources/S32.reader.txt",
+      "LF_start": 1414,
+      "LF_end": 1414,
+      "quote": "de 2025.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMRural5": [
+    {
+      "source": "S34",
+      "article": "5.1g effective stay",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 785,
+      "LF_end": 785,
+      "quote": "1.º Certificación de tarjeta sanitaria, adscrita a alguno de los centros de salud del municipio al que pertenezca el centro de salud asignado en la zona básica de salud de pertenencia del municipio donde se encuentra empadronada.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "5.1g effective stay",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 787,
+      "LF_end": 787,
+      "quote": "En defecto de lo anterior, en el caso de mutualistas y demás beneficiarios adscritos a entidades de seguro de asistencia sanitaria concertada, certificación emitida por el Servicio de Salud de Castilla-La Mancha acreditativa de que la prestación sanitaria se realiza por parte del mismo en alguno de los centros de la zona básica de salud de pertenencia del municipio donde se encuentra empadronada, en los términos, con el contenido y alcance recogidos en las cláusulas del convenio vigente suscrito entre la Mutualidad General de Funcionarios Civiles del Estado, el Instituto Social de las Fuerzas Armadas y la Mutualidad General Judicial (Muface, Isfas y Mugeju) y el Servicio de Salud de Castilla-La Mancha, para la prestación en zonas rurales de determinados servicios sanitarios.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "5.1g effective stay",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 789,
+      "LF_end": 789,
+      "quote": "2.º Certificación, en su caso, de que las personas menores de edad, en edad de escolarización obligatoria, cuentan con una matrícula en alguno de los centros educativos de la localidad de referencia, para el municipio donde se encuentren empadronadas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "5.1g effective stay",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 791,
+      "LF_end": 791,
+      "quote": "h) Economía plateada: Conjunto de las oportunidades derivadas del impacto económico y social de las actividades realizadas y demandadas por la población mayor de 55 años.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "5.1g effective stay",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 793,
+      "LF_end": 793,
+      "quote": "i) Contrato programa de formación: Acuerdo suscrito entre la Administración Regional y el alumnado de enseñanzas de Formación Profesional y/o universitarias, mediante el cual éste recibe ayudas para la realización de dichas enseñanzas, a cambio del mantenimiento de la estancia efectiva de la unidad familiar en una zona escasamente poblada o en riesgo de despoblación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMRural12": [
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 945,
+      "LF_end": 945,
+      "quote": "Artículo 12. Zonas escasamente pobladas.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 947,
+      "LF_end": 947,
+      "quote": "1. Como zonas escasamente pobladas se clasificarán aquellas agrupaciones de municipios o núcleos de población integradas mayoritariamente por municipios de pequeño tamaño, con una densidad conjunta de población de menos de 12,5 habitantes por km2, altas tasas de envejecimiento y pérdidas intensas de población, con un importante aislamiento geográfico con respecto a municipios de más de 30.000 habitantes, un alto porcentaje de suelo de uso forestal, y una elevada significación de la actividad agraria.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 949,
+      "LF_end": 949,
+      "quote": "2. En consideración al grado de despoblación, se establecen las siguientes categorías de zonas escasamente pobladas:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 951,
+      "LF_end": 951,
+      "quote": "a) Zonas de intensa despoblación: Aquellas agrupaciones de municipios con densidad superior a 8 habitantes por km2.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 953,
+      "LF_end": 953,
+      "quote": "b) Zonas de extrema despoblación: Aquellas agrupaciones de municipios con densidad de población menor de 8 habitantes por km2.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 961,
+      "LF_end": 961,
+      "quote": "Artículo 13. Zonas en riesgo de despoblación.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "12/13 approved rural categories",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 963,
+      "LF_end": 963,
+      "quote": "Se clasificarán como zonas en riesgo de despoblación aquellas agrupaciones de municipios o núcleos de población con densidad de población menor de 20 habitantes por km2, pero mayor de 12,5 habitantes por km2, altas tasas de envejecimiento y una evolución negativa de su población, con una accesibilidad media o baja con respecto a municipios de más de 30.000 habitantes, con elevada significación del empleo agrario, con más del 75 % de su población residiendo en municipios menores de 2.000 habitantes, con usos del suelo tanto agrícolas como forestales.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMRuralDA6": [
+    {
+      "source": "S34",
+      "article": "DA6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 2339,
+      "LF_end": 2339,
+      "quote": "Disposición adicional sexta. Ampliación del destino de las medidas de incentivación positiva, de las medidas de apoyo económico y de las medidas tributarias.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S34",
+      "article": "DA6",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+      "reader": "sources/S34.reader.txt",
+      "LF_start": 2341,
+      "LF_end": 2341,
+      "quote": "Los municipios de las zonas rurales intermedias con predominio de la actividad agrícola, con población inferior a 2.000 habitantes, que hayan perdido población durante los cinco años anteriores a 1 de enero de 2021, disfrutarán de las medidas de incentivación positiva, de las medidas de apoyo específico y de las medidas tributarias que se destinen a las zonas rurales en riesgo de despoblación, en aplicación del artículo 22.1 de esta ley y del artículo 12 bis de la Ley 8/2013, de 21 de noviembre, de Medidas Tributarias de Castilla-La Mancha.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMDA2": [
+    {
+      "source": "S33",
+      "article": "DA2 population protection",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 2213,
+      "LF_end": 2213,
+      "quote": "Disposición adicional segunda. Actualización de núcleos de población en los que se aplican los artículos 12 bis, 12 ter y 12 quater.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "DA2 population protection",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 2215,
+      "LF_end": 2215,
+      "quote": "A efectos de aplicación de las deducciones previstas en los artículos 12 bis, 12 ter y 12 quater se tomará como población de los municipios la que, conforme a su respectivo padrón municipal, tuvieran a 1 de enero de cada año.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S33",
+      "article": "DA2 population protection",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+      "reader": "sources/S33.reader.txt",
+      "LF_start": 2217,
+      "LF_end": 2217,
+      "quote": "No obstante, a los efectos indicados en el párrafo anterior no se tomarán en consideración las variaciones de población respecto al padrón municipal de 2021 que supongan una minoración o inaplicación de las deducciones que conforme al mismo resultasen procedentes. En tales casos, dichas deducciones podrán seguir aplicándose en las condiciones y cuantías que resultasen procedentes conforme a la población del expresado padrón municipal.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ],
+  "CLMRuralManual": [
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 120,
+      "LF_end": 120,
+      "quote": "Base máxima total de la deducción",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 122,
+      "LF_end": 122,
+      "quote": "a) Por todos los ejercicios en que se aplique la deducción:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 124,
+      "LF_end": 124,
+      "quote": "Será la menor de:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 126,
+      "LF_end": 126,
+      "quote": "180.000 euros, o",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 128,
+      "LF_end": 128,
+      "quote": "Atención: en el caso de viviendas adquiridas por varios contribuyentes la cuantía de 180.000 euros, está referida a la vivienda, por lo que dicho importe deberá ser distribuido entre los adquirentes en proporción al porcentaje de titularidad que tengan en la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 130,
+      "LF_end": 130,
+      "quote": "El importe de adquisición o rehabilitación de la vivienda que da origen a la deducción, minorado por los importes recibidos de la Junta de Comunidades de Castilla-La Mancha en concepto de subvenciones por la adquisición o rehabilitación de la vivienda.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 132,
+      "LF_end": 132,
+      "quote": "b) En cada ejercicio:",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 134,
+      "LF_end": 134,
+      "quote": "La base máxima a aplicar en cada ejercicio será de 12.000 euros.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    },
+    {
+      "source": "S35",
+      "article": "AEAT annual/aggregateperhome ceiling unchanged2025manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+      "reader": "sources/S35.reader.txt",
+      "LF_start": 136,
+      "LF_end": 136,
+      "quote": "Esta base máxima anual de la deducción será de 12.000 euros tanto en tributación individual como en conjunta. Esto es, en tributación conjunta la base máxima anual (12.000 euros) se aplica con independencia del número de miembros de la unidad familiar que satisfagan los importes que dan derecho a aplicar la deducción.",
+      "read_on": "2026-10-28",
+      "line_convention": "literal LF"
+    }
+  ]
+}

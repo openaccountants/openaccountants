@@ -1,0 +1,7 @@
+{
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-18828",
+  "raw_sha256": "499eeadfdc515811ae9a8ef1d846f27fb17b86084b79c6a1f1da116613453bfd",
+  "parser": "stdlib HTMLParser text nodes separated byLF; untouched HTTPbody retained",
+  "sandbox_failure": "DNSresolutionfailure; exacttarget curl escalation succeeded",
+  "failed_bs4_attempt": "moduleabsent beforeanynetworkorwrite"
+}

@@ -1,0 +1,317 @@
+[
+  {
+    "id": "distinguishing-middle",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "all-equality",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "all-zero",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb0-delta-.01",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb0-delta0",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb0-delta.01",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb1-delta-.01",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb1-delta0",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb1-delta.01",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb2-delta-.01",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb2-delta0",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "threshold-limb2-delta.01",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "middle-fails-ordinary-baseline",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "six-month-annualisation-100000",
+    "actual": "200000",
+    "expected": "200000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "six-month-annualisation-50000",
+    "actual": "100000",
+    "expected": "100000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "six-month-annualisation-110000",
+    "actual": "220000",
+    "expected": "220000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "annualisation-crosses-total",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "annualisation-equality",
+    "actual": "250000",
+    "expected": "250000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "qualifying-family-total",
+    "actual": "260000",
+    "expected": "260000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "aggregated-fails-total",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "family-gates-11110",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "family-gates-11101",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "family-gates-11100",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "family-gates-11011",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "family-gates-10111",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "family-gates-01111",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/order3: both main conditions; shared personnel OR material"
+  },
+  {
+    "id": "subcontracting-in-purchases",
+    "actual": "250000",
+    "expected": "250000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "extra-subcontract-excludes",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "capital-asset-excluded-from-purchase-limb",
+    "actual": "200000",
+    "expected": "200000",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "farm-receipts-equality",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "farm-receipts-excess",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "LIRPF31/LIVA122; AEAT current2026eligibility"
+  },
+  {
+    "id": "exceptional-window-2026-02-04",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RDL2/2026art11(1),4February publication"
+  },
+  {
+    "id": "exceptional-window-2026-02-05",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RDL2/2026art11(1),4February publication"
+  },
+  {
+    "id": "exceptional-window-2026-02-15",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RDL2/2026art11(1),4February publication"
+  },
+  {
+    "id": "exceptional-window-2026-02-16",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RDL2/2026art11(1),4February publication"
+  },
+  {
+    "id": "exceptional-window-2026-02-17",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RDL2/2026art11(1),4February publication"
+  },
+  {
+    "id": "jan30-not-preserved-by-jan-vigencia-limb",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RDL2art11(2); RDL16repeal published28January; another route not decided"
+  },
+  {
+    "id": "established-implicit-q1-timelyTrue",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RIRPF33(1)(b)/RIVA33(2), timely first calendar quarter"
+  },
+  {
+    "id": "established-implicit-q2-timelyTrue",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RIRPF33(1)(b)/RIVA33(2), timely first calendar quarter"
+  },
+  {
+    "id": "established-implicit-q1-timelyFalse",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RIRPF33(1)(b)/RIVA33(2), timely first calendar quarter"
+  },
+  {
+    "id": "zero-first-quarter-declaration-still-filing-act",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RIRPF33: timely presentation, no positive-cash condition"
+  },
+  {
+    "id": "new-activity-first-requiredTrue-timelyTrue",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RIVA33(2),actual startup; IRPFfirst activity-quarter separately"
+  },
+  {
+    "id": "new-activity-first-requiredFalse-timelyTrue",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RIVA33(2),actual startup; IRPFfirst activity-quarter separately"
+  },
+  {
+    "id": "new-activity-first-requiredTrue-timelyFalse",
+    "actual": "False",
+    "expected": "False",
+    "pass": true,
+    "source": "RIVA33(2),actual startup; IRPFfirst activity-quarter separately"
+  },
+  {
+    "id": "same-year-new-activity-does-not-automatically-recast-old",
+    "actual": "True",
+    "expected": "True",
+    "pass": true,
+    "source": "RIVA33(2)/RIRPF35; separate coordination effects remain"
+  }
+]

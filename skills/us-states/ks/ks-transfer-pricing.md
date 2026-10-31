@@ -9,14 +9,18 @@ description: >
   "Kansas related party", "Kansas addback", "Kansas unitary".
   Source-cited draft; consolidated-return and allocation-authority rules
   cited to archived statutes; addback rules not yet confirmed.
-jurisdiction: US-KS
-category: transfer-pricing
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.1
+jurisdiction: US-KS
+tax_year: 2026
+last_updated: 2026-10-29
+authored_by: Jeff Watts
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - ks-corporate-income-tax
+category: transfer-pricing
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Kansas transfer pricing, tax year 2026
@@ -130,6 +134,8 @@ expected:
 | K.S.A. 79-32,142 (consolidated returns) | https://ksrevisor.gov/statutes/chapters/ch79/079_032_0142.html | 2026-10-28 |
 
 Not yet confirmed: that Kansas has no standalone transfer-pricing documentation statute and no state country-by-country report; the combined-report ownership test (v0.1 expected an 80%-type test) and form ID (v0.1 named K-120M); whether Kansas has an intangible / royalty addback for payments to related low-tax affiliates, its statute (v0.1 guessed the 79-32.140 series) and scope; a management-fee / service-fee addback; any related-party interest addback beyond federal §163(j); whether combined reporting applies to S corporations; the accuracy-penalty tiers under K.S.A. 79-32 and whether any Kansas-specific TP documentation penalty exists; the linkage between federal §6662(e) documentation and Kansas penalties.
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 

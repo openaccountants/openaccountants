@@ -1,0 +1,264 @@
+{
+  "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "guide_sha256": "4d669a8f4f9f845f17081898fe64d1abf85c9c8b5fe7d331b6445068576aa775",
+  "controls": [
+    {
+      "name": "Annual established commuting distance",
+      "actual": "13200",
+      "expected": "13200",
+      "basis": "SteV14;220actual eligible days/60daily return km assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "First10000km cost",
+      "actual": "5000.0",
+      "expected": "5000",
+      "basis": "SteV14(1)(c)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Excess3200km cost",
+      "actual": "1280.0",
+      "expected": "1280",
+      "basis": "SteV14(1)(c)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Total commuting amount",
+      "actual": "6280.0",
+      "expected": "6280",
+      "basis": "Case arithmetic",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Supported commute plus eligible full-year meals",
+      "actual": "7380.0",
+      "expected": "7380",
+      "basis": "SteV12\u201316; meal conditions assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Allowance plus only excess, no double claim",
+      "actual": "7380.0",
+      "expected": "7380",
+      "basis": "SteV12(2)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Supported costs below flat allowance",
+      "actual": "1600",
+      "expected": "1600",
+      "basis": "SteV12",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "First band exact10000km",
+      "actual": "5000.0",
+      "expected": "5000",
+      "basis": "SteV14",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "One additional kilometre uses lower excess rate",
+      "actual": "5000.4",
+      "expected": "5000.4",
+      "basis": "SteV14",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Daily200km cap",
+      "actual": "200",
+      "expected": "200",
+      "basis": "SteV14(1)(a)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Ordinary220day cap",
+      "actual": "220",
+      "expected": "220",
+      "basis": "SteV14(1)(b)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Teacher200day cap",
+      "actual": "200",
+      "expected": "200",
+      "basis": "SteV14(1)(b)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pension18% specified-income ceiling",
+      "actual": "16200.00",
+      "expected": "16200",
+      "basis": "SteG16(3)(e)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Actual eligible pension below ceiling",
+      "actual": "7000",
+      "expected": "7000",
+      "basis": "SteG16(3)(e)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pension above ceiling capped",
+      "actual": "16200",
+      "expected": "16200",
+      "basis": "SteG16(3)(e); actual cap base assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Private premium actual below single cap",
+      "actual": "2500",
+      "expected": "2500",
+      "basis": "SteG16(3)(d)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Private premium above single cap",
+      "actual": "3700",
+      "expected": "3700",
+      "basis": "SteG16(3)(d)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Employment after established deductions",
+      "actual": "68120.0",
+      "expected": "68120",
+      "basis": "Case assumptions, no extra allowance",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Deemed wealth yield",
+      "actual": "12000.00",
+      "expected": "12000",
+      "basis": "SteG5/14(2)(l)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Combined income before whole10 floor",
+      "actual": "80120.0",
+      "expected": "80120",
+      "basis": "Case arithmetic",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Wealth rounded down100",
+      "actual": "300000",
+      "expected": "300000",
+      "basis": "SteG18(1)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Income rounded down10",
+      "actual": "80120",
+      "expected": "80120",
+      "basis": "SteG18(1)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Actual selected ordinary tariff formula",
+      "actual": "2262.00",
+      "expected": "2262",
+      "basis": "SteG19(1)(a)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Assumed municipal150% of state",
+      "actual": "3393.000",
+      "expected": "3393",
+      "basis": "SteG75; rate assumed verified, not a town assertion",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Combined tax less assumed certified credit",
+      "actual": "655.000",
+      "expected": "655",
+      "basis": "SteG29/75; exact withholding-interest and final rounding not asserted",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Partial domestic debt share",
+      "actual": "200000",
+      "expected": "200000",
+      "basis": "SteG11(2); values assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Allocated taxable wealth",
+      "actual": "100000",
+      "expected": "100000",
+      "basis": "SteG11; domestic/gross debt bases assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Debt cannot create negative wealth",
+      "actual": "0",
+      "expected": "0",
+      "basis": "SteG11(2)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Eligible shared-custody child half amount",
+      "actual": "6350",
+      "expected": "6350",
+      "basis": "SteG16(3)(a); qualifying facts assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Medical exactly300 does not exceed receipt threshold",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteG16(3)(g); threshold does not reduce expense by300",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Medical300.01 exceeds receipt threshold",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG16(3)(g)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Donation exactly100 fails individual-gift amount screen",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteG16(3)(h); recipient and cap separate",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Donation100.01 passes amount screen only",
+      "actual": "True",
+      "expected": "True",
+      "basis": "SteG16(3)(h)",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Extension exactly1month no extra80% condition from40(2)",
+      "actual": "False",
+      "expected": "False",
+      "basis": "SteV40(2); other application conditions remain",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Prior tax10000 required80% advance",
+      "actual": "8000.0",
+      "expected": "8000",
+      "basis": "SteV40(2); extension over1month assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Half-year fixed-franc child amount",
+      "actual": "6350.0",
+      "expected": "6350",
+      "basis": "SteG16(4); exact half-year duration assumed",
+      "status": "WRITER CONTROL; INDEPENDENT RECOMPUTATION PENDING"
+    }
+  ],
+  "official_tariff_rows_compared": 27,
+  "original_five_blocks_preserved_exact": true,
+  "minimum_case_current_exact": true,
+  "nine_sections_two_examples": true,
+  "protected_metadata_CTA_unchanged": true,
+  "remaining": "Actual tax/deduction/family/municipal and foreign facts, detailed valuations/special regimes, exact final tax rounding/withholding interest and real current-year filing remain open."
+}

@@ -1,10 +1,15 @@
 ---
 name: iceland-social-contributions
-description: Use this skill whenever asked about Iceland (Ísland) social security contributions, payroll levies, and mandatory pension for employers, employees, and self-employed individuals. Trigger on phrases like "how much social security do I pay in Iceland", "tryggingagjald", "social security contribution Iceland", "payroll tax Iceland", "lífeyrissjóður", "mandatory pension fund", "occupational pension contribution", "4% employee pension", "11.5% employer pension", "séreignarsparnaður", "additional voluntary pension", "A1 certificate Iceland", "fishermen social security", "staðgreiðsla withholding", "self-employed pension reiknað endurgjald", or any question about Icelandic social/payroll contribution obligations. Also trigger when classifying bank statement transactions for tryggingagjald remittances, pension fund (lífeyrissjóður) debits, or Skatturinn withholding payments from Landsbankinn, Íslandsbanki, Arion banki, or other Icelandic banks. This skill covers the 6.35% general payroll levy (tryggingagjald), fishermen and A1 reduced rates, the 15.5% mandatory occupational pension split (4% employee / 11.5% employer), voluntary pension, self-employed contributions, employer pension tax-free caps, the monthly PAYE/staðgreiðsla remittance cycle, bank statement classification, and edge cases. ALWAYS read this skill before touching any Icelandic social contribution work.
-version: 0.1
+description: >
+  Iceland 2026 employer social levy (tryggingagjald), mandatory occupational
+  pension, contribution bases, self-employed calculated remuneration,
+  filing, separate pension deadlines and A1 evidence. Use for payroll social
+  costs, pension deductions, employer pension, seamen and contribution
+  remittance reconciliation. Includes source conflicts and recomputable cases.
+version: 0.7
 jurisdiction: IS
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-10-30
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,489 +19,211 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Iceland Social Security Contributions and Mandatory Pension
+# Iceland social contributions and mandatory pension v0.7
 
-## Iceland Social Security Contributions and Mandatory Pension -- Skill v0.1
+Tax year 2026, amounts in ISK. This method separates the employer levy, employee pension and employer pension, and produces contribution workpapers. General reference only: check the facts of each case against the cited law. The [payroll skill](iceland-payroll.md) handles income-tax withholding and net pay. The linked statutes are Alþingi's 1 October 2026 compilation (158a).
 
-Tier 2 (research-verified) skill. Figures are drawn from Skatturinn (Iceland Revenue and Customs) official Key Rates 2025 and 2026 pages, KPMG Icelandic Tax Facts 2025, PwC Worldwide Tax Summaries, and the Central Bank of Iceland. This skill has NOT yet been signed off by an Icelandic licensed accountant/tax adviser. All outputs require professional review before filing. Items marked [RESEARCH GAP — reviewer to confirm] were not pinned to an authoritative English-language source in research and must be verified.
+## Who this applies to
 
-## Section 1 -- Quick reference
+The levy applies to employers paying or calculating taxable remuneration, including individuals, companies, public bodies, foreign contractors and self-employed people. Intermediaries handling wage payments have reporting/payment responsibilities. An owner-manager's calculated remuneration is included. Check any statutory exemption before calculating. [Act 113/1990, Articles 4–6](https://www.althingi.is/lagas/nuna/1990113.html)
 
-**Quick reference field table**
+Employees and self-employed people must acquire occupational pension rights from age 16 until 70. The 2026 employer notice states that no employee or employer contribution is paid for an employee aged 70 or over, and that children aged 15 or younger do not pay into a pension fund. Determine the actual applicable special law, collective agreement, employment contract and fund before selecting the contribution split. The statutory minimum total does not itself prescribe one universal employer/employee split. [Act 129/1997, Articles 1–3](https://www.althingi.is/lagas/nuna/1997129.html), [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf)
 
-| Field | Value |
-| --- | --- |
-| Country | Iceland (Ísland / Republic of Iceland) |
-| Primary legislation | Act No. 113/1990 on Social Security Contribution (Lög nr. 113/1990 um tryggingagjald) |
-| Supporting legislation | Act No. 129/1997 on Mandatory Pension Insurance and Pension Funds; Act No. 45/1987 on Withholding of Public Levies (PAYE / staðgreiðsla); Act No. 90/2003 on Income Tax; Act No. 50/1988 on VAT |
-| Tax / levy authority | Skatturinn — Iceland Revenue and Customs (Ríkisskattstjóri) |
-| Pension supervision | Central Bank of Iceland (Fjármálaeftirlitið) — pension fund oversight |
-| Benefits administration | Tryggingastofnun (Social Insurance Admin.) and Vinnumálastofnun (Directorate of Labour) |
-| General payroll levy (tryggingagjald) | 6.35% of total gross remuneration, employer-paid, NO ceiling (2025 & 2026 unchanged) (Skatturinn Key Rates 2025/2026; KPMG sec 4.2) |
-| Fishermen/seamen levy | 7.00% (6.35% + 0.65% surcharge) (KPMG sec 4.2) |
-| A1-certificate (EU/EEA) reduced levy | 0.425% (KPMG sec 4.2 & fn 6) |
-| Mandatory pension — employee | 4% of total wages (deductible from income-tax base) (PwC; KPMG sec 4.2/13.1) |
-| Mandatory pension — employer | 11.5% of total wages (minimum) (PwC; KPMG fn 7) |
-| Mandatory pension — total minimum | 15.5% (4% + 11.5%) (PwC; Central Bank of Iceland) |
-| Pension age range | Ages 16–70 (mandatory obligation) (PwC; Central Bank of Iceland) |
-| Self-employed | Pays tryggingagjald 6.35% AND full pension 15.5% on reckoned remuneration (KPMG sec 13.1 fn 31 & 4.2) |
-| Remittance cycle | Monthly PAYE/staðgreiðsla; due by the 15th of the following month (PwC tax admin; Skatturinn) |
-| Currency | ISK only (Icelandic króna) |
-| Validated by | Pending — requires sign-off by an Icelandic licensed accountant/tax adviser |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Self-employment requires a supported calculated-remuneration determination, not an arbitrary percentage of turnover or drawings. Use the current occupational category, working time and facts; carry that determination into both the contribution and income-tax workpapers. [Income Tax Act, Article 58](https://www.althingi.is/lagas/nuna/2003090.html) and [2026 calculated-remuneration guidance](https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026)
 
-**Contribution overview (per ISK 100 of gross wages, general case)**
+## Rates, bands and thresholds
 
-| Contributor | Item | Rate | Notes |
+| Item | Amount / boundary | Period and conditions | Official source |
 | --- | --- | --- | --- |
-| Employer | Tryggingagjald (payroll levy) | 6.35% | On total gross remuneration, no ceiling |
-| Employer | Mandatory pension | 11.5% | Minimum statutory |
-| **Employer total** |  | **17.85%** | 6.35% + 11.5% |
-| Employee | Mandatory pension | 4.00% | Deductible from income-tax base |
-| **Employee total** |  | **4.00%** | (income tax is separate, see Section 10) |
-| **Combined total** |  | **21.85%** | 17.85% employer + 4.00% employee |
+| General aggregate payroll levy | 6.35% | 2026 ordinary base; this includes the following four components, not four additions to 6.35%. | [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| General component | 4.90% | 2026 | [Act 113/1990, Article 2](https://www.althingi.is/lagas/nuna/1990113.html) |
+| Employment-insurance component | 1.35% | 2026 | [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| Wage-guarantee fund and market fees | 0.05% each | 2026; already included in aggregate | [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| Fishing-vessel seamen's additional insurance | 0.65 percentage points; aggregate 7.00% | 2026 where the additional insurance applies; annual guidance provides for an operator that has cancelled this insurance. Obtain the applicable insurance evidence. | [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf), [annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/) |
+| Mandatory pension total | At least 15.5% | Employees and self-employed people alike; current law; transitional 12% only where the qualifying current collective agreement still provides it, until a new agreement takes effect | [Act 129/1997, Article 2 and transitional provision V](https://www.althingi.is/lagas/nuna/1997129.html) |
+| Ordinary payroll illustration | Employee 4%; employer adjustable default 11.5% | 2026 employer instructions; confirm actual terms rather than imposing this split | [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| Mandatory pension age | From 16 until 70 | Employer notice: no contributions for an employee aged 70 or over; none for children aged 15 or younger. Fund/contract terms and date-of-birth records control the actual payroll period | [Act 129/1997, Article 1](https://www.althingi.is/lagas/nuna/1997129.html), [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| Employee income-tax deduction | Up to 4% mandatory plus a separate up to 4% qualifying additional contribution | Contributions paid regularly to eligible recipients; these limits do not create an employer matching obligation | [Income Tax Act, Article 30(A)(4)–(5)](https://www.althingi.is/lagas/nuna/2003090.html) |
+| Employer pension income-tax boundary | 12% of contribution base plus 2,000,000 a year | Article 28(5), subject to the collective-agreement/statutory exception below | [Income Tax Act, Article 28(5)](https://www.althingi.is/lagas/nuna/2003090.html) |
+| Self-employed annual levy-base floor | 748,224 | Whole-year Article 6(3) floor for full-time work; not a replacement for a higher properly calculated remuneration base | [Act 113/1990, Article 6](https://www.althingi.is/lagas/nuna/1990113.html) |
+| Small-payroll payment exception | Average below 42,000 monthly; annual 504,000 trigger (annual filing where the year's total does not reach 504,000) | Apply Article 15 conditions, not a general exemption from liability | [Act 113/1990, Article 15](https://www.althingi.is/lagas/nuna/1990113.html) |
+| A1 reduced levy | No 2026 rate published (see Not yet confirmed) | Authority page gives 0.425% for wage years 2014–2023 and 0.293% for 2024 and 2025 only; without a valid A1 certificate the full levy applies | [A1 administrative guidance](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald) |
 
-Arithmetic check: employer 6.35 + 11.50 = 17.85; combined 17.85 + 4.00 = 21.85. ✓
+The general levy has no contribution ceiling in Articles 6–8. Do not truncate its base at a pension-income, income-tax or foreign-social-security ceiling. [Act 113/1990](https://www.althingi.is/lagas/nuna/1990113.html)
 
-**Conservative defaults**
+## The base
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown employer levy category | Apply general tryggingagjald 6.35% (not fishermen 7.00% or A1 0.425%) |
-| Unknown pension rate | Apply statutory minimum split: 4% employee / 11.5% employer |
-| Unknown A1 certificate status | Assume employee is socially insured in Iceland (full levy) until A1 produced |
-| Unknown employment status | Treat the individual as an employee; flag self-employed (reiknað endurgjald) question for reviewer |
-| Unknown personal tax credit allocation (income tax only) | Assume primary employer applies full credit; secondary employer applies none |
-| Minimum wage needed | Defer to applicable collective agreement; treat any single figure as indicative — Iceland has NO statutory minimum wage |
-| Unknown whether DSS/Skatturinn debit is levy or penalty | Classify as levy/withholding; flag for reviewer |
+### 1. Establish separate bases
 
-## Section 2 -- Required inputs and refusal catalogue
+**Levy.** Start with taxable work remuneration, including bonus, holiday pay, taxable benefits and owner-manager remuneration. Include employer pension contributions under Article 7(1). Employee pension withholding does not reduce this employer base. Benefits use the authority's tax valuation, with market value for other benefits. Vehicle allowances and per diems need their specific statutory treatment, not one blanket reimbursement exemption. [Act 113/1990, Articles 6–8](https://www.althingi.is/lagas/nuna/1990113.html)
 
-### Required inputs
+Article 9 excludes specified pensions, social benefits, insured accident compensation, unemployment benefits and other named payments. Match the legal payment category to the underlying statement before excluding it. A bank reference containing “pension” does not establish whether the payment is a pension contribution, a benefit or a wage cost. [Act 113/1990, Article 9](https://www.althingi.is/lagas/nuna/1990113.html)
 
-- **Required inputs levels** — Minimum viable — gross remuneration (monthly or annual) and the contributor's role (employer, employee, or self-employed). Without gross remuneration, STOP. Do not compute contributions. Recommended — employer levy category (general / fishermen / A1-certificate holder), age (to confirm the 16–70 pension obligation), and whether the worker pays into the standard or an alternative/private pension fund. Ideal — payslip (launaseðill), the monthly staðgreiðsla return, employment contract or collective agreement reference, and (for self-employed) the reckoned remuneration (reiknað endurgjald) figure.
+**Pension.** Article 3 uses remuneration for work, but excludes benefits paid in kind (for example clothing, food and housing) and reimbursements of incurred costs (for example vehicle allowances, per diems and meal money). Pension and levy bases therefore differ. The pension statute also excludes specified benefits and includes unemployment benefits; do not copy the levy-exemption list into the pension calculation. [Act 129/1997, Article 3](https://www.althingi.is/lagas/nuna/1997129.html)
 
-### Refusal catalogue
+For the stated 2026 car, food, housing and other benefit valuations, use the [payroll skill's benefit workpaper](iceland-payroll.md). Carry the supported tax value into the levy base under Article 8, while testing the statutory minimum pension exclusion and actual contractual base separately. The car/payroll example demonstrates this split; the benefit's noncash tax value is not a second cash wage or proof of the employer's actual benefit cost. [Levy Act, Articles 7–8](https://www.althingi.is/lagas/nuna/1990113.html); [Pension Act, Article 3](https://www.althingi.is/lagas/nuna/1997129.html)
 
-- **R-IS-SSC-1 — Gross remuneration unknown** — Trigger: gross pay or reckoned remuneration not provided. Message: "Gross remuneration is mandatory for tryggingagjald and pension computation. Both the 6.35% levy and the 15.5% pension are percentages of total wages with no ceiling. Cannot proceed without this figure."
-- **R-IS-SSC-2 — Penalty / arrears quantification** — Trigger: client has overdue tryggingagjald or withholding and wants the penalty quantified. Message: "Icelandic default-interest (dráttarvextir) and the statutory mark-up (álag) are set by law and re-set periodically by the Central Bank; the exact current percentage was not confirmed from an English-language authoritative source [RESEARCH GAP — reviewer to confirm]. Do not estimate penalties. Escalate to an Icelandic licensed accountant with the Skatturinn statement of account."
-- **R-IS-SSC-3 — A1 certificate / posted worker** — Trigger: worker claims to remain insured abroad under an EU/EEA A1 certificate. Message: "Reduced tryggingagjald (0.425%) applies only on production of a valid A1 certificate confirming the worker is socially insured in another EU/EEA state. Pension and social-security coordination for posted workers is fact-specific. Escalate to a reviewer; do not apply the reduced levy without sighting the A1."
-- **R-IS-SSC-4 — Employer pension tax-free cap / fringe benefit** — Trigger: employer contributes above the statutory minimum, or client asks whether the employer's pension contribution is taxable to the employee. Message: "Employer pension contributions are tax-free to the employee only up to 12% of remuneration AND ISK 2,000,000 per year; the excess is taxable employee income (PwC; KPMG fn 8). Confirm the contribution structure with a reviewer before treating any portion as tax-free."
+### 2. Calculate ordinary contributions
 
-## Section 3 -- Payment pattern library
+For a documented ordinary arrangement at employee 4% and employer 11.5%, without other contributions or sector charges:
 
-This is the deterministic pre-classifier for bank statement transactions related to social/payroll contributions. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess. How to read this table. Match by case-insensitive substring on the counterparty/reference as it appears in the bank statement. Tryggingagjald and pension remittances are statutory employer/employee obligations — they EXCLUDE from any VAT return. Tryggingagjald and the employer's pension portion ARE deductible business payroll costs for the employer; the employee's 4% pension is deductible from the employee's income-tax base.
-
-### 3.1 Tryggingagjald and withholding remittances to Skatturinn
-
-**Pattern table 3.1**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| SKATTURINN, RSK, RÍKISSKATTSTJÓRI | EXCLUDE from VAT — Skatturinn remittance | Could bundle withheld income tax + tryggingagjald; split per return |
-| STAÐGREIÐSLA, STADGREIDSLA | EXCLUDE from VAT — PAYE remittance | Monthly withholding (income tax + levy) |
-| TRYGGINGAGJALD | EXCLUDE from VAT — employer payroll levy | Deductible employer payroll cost |
-| SKILAGREIN, SKILAGREIN STAÐGREIÐSLU | EXCLUDE from VAT — withholding return payment | Monthly skilagrein remittance |
-
-### 3.2 Pension fund (lífeyrissjóður) debits
-
-**Pattern table 3.2**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| LÍFEYRISSJÓÐUR, LIFEYRISSJODUR | EXCLUDE from VAT — pension contribution | 4% employee + 11.5% employer remitted to fund |
-| LÍFEYRIR, LIFEYRIR | EXCLUDE from VAT — pension contribution | Generic "pension" reference |
-| SÉREIGN, SEREIGN, SÉREIGNARSPARNAÐUR | EXCLUDE from VAT — voluntary pension | Additional voluntary (séreignarsparnaður) |
-| GILDI, LSR, FRJÁLSI, BIRTA, STAPI (named funds) | EXCLUDE from VAT — pension contribution | Named Icelandic pension funds |
-
-### 3.3 Income tax and other levies (NOT social/pension contributions — do not confuse)
-
-**Pattern table 3.3**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TEKJUSKATTUR | EXCLUDE from VAT — income tax | National income tax, not a contribution |
-| ÚTSVAR, UTSVAR | EXCLUDE from VAT — municipal income tax | Municipal tax, not a contribution |
-| ÚTVARPSGJALD, UTVARPSGJALD | EXCLUDE from VAT — broadcasting fee | ISK 21,400 (2025) / 22,200 (2026) per individual |
-| FRAMKVÆMDASJÓÐUR ALDRAÐRA | EXCLUDE from VAT — Construction Fund for the Elderly | ISK 14,093 (2025) / 14,614 (2026) |
-
-### 3.4 Salary and payroll (exclude from contribution classification)
-
-**Pattern table 3.4**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| LAUN, LAUNAGREIÐSLA (outgoing) | EXCLUDE — gross salary payroll expense | Not itself a contribution |
-| LAUN (incoming) | EXCLUDE — employment income received | Not a contribution payment |
-| STÉTTARFÉLAG, FÉLAGSGJALD (union dues) | EXCLUDE from VAT — union dues | Deducted with payroll; not tryggingagjald/pension |
-
-### 3.5 Benefits received (NOT contributions paid)
-
-**Pattern table 3.5**
-
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| TRYGGINGASTOFNUN, TR (incoming) | EXCLUDE from VAT — benefit/pension received | Inbound benefit, not a contribution paid |
-| ELLILÍFEYRIR (incoming) | EXCLUDE from VAT — old-age pension received | Taxable income, not a contribution |
-| FÆÐINGARORLOF (incoming) | EXCLUDE from VAT — parental leave benefit | Financed by the levy; benefit received |
-
-## Section 4 -- Worked examples
-
-Six bank-statement / payroll classifications for a hypothetical Reykjavík employer and its employees (figures use the 2025 income year; switch to 2026 thresholds where noted). All ISK.
-
-### Example 1 — Monthly tryggingagjald remittance (general 6.35%)
-
-Input line: `15.02.2025 ; SKATTURINN STAÐGREIÐSLA ; DEBIT ; TRYGGINGAGJALD JAN ; -127,000 ; ISK`
-
-Reasoning: Matches "TRYGGINGAGJALD" (pattern 3.1). For January wages of ISK 2,000,000 the general levy is 2,000,000 × 6.35% = ISK 127,000, remitted by the 15th of February (the month after payment) (Skatturinn; KPMG sec 4.2). Employer payroll cost; exclude from VAT.
-
-Classification: EXCLUDE from VAT. Deductible employer payroll levy. Arithmetic: 2,000,000 × 0.0635 = 127,000. ✓
-
-### Example 2 — Pension fund remittance (4% + 11.5%)
-
-Input line: `10.02.2025 ; GILDI LÍFEYRISSJÓÐUR ; DEBIT ; LÍFEYRIR JAN ; -310,000 ; ISK`
-
-Reasoning: Matches "LÍFEYRISSJÓÐUR" (pattern 3.2). On ISK 2,000,000 of wages the mandatory pension is 15.5% = ISK 310,000, split 4% employee (ISK 80,000, withheld from pay) + 11.5% employer (ISK 230,000) (PwC; KPMG fn 7; Central Bank of Iceland). Exclude from VAT.
-
-Classification: EXCLUDE from VAT. Employer portion is a payroll cost; employee 4% is deductible from the employee's income-tax base. Arithmetic: 2,000,000 × 0.155 = 310,000; 80,000 + 230,000 = 310,000. ✓
-
-### Example 3 — Fishermen surcharge (7.00%)
-
-Input line: `15.03.2025 ; SKATTURINN ; DEBIT ; TRYGGINGAGJALD SJÓMENN FEB ; -70,000 ; ISK`
-
-Reasoning: Reference flags "SJÓMENN" (seamen/fishermen). For fishermen the levy is 7.00% (6.35% general + 0.65% surcharge) (KPMG sec 4.2). On ISK 1,000,000 of fishermen wages: 1,000,000 × 7.00% = ISK 70,000. Do NOT apply the general 6.35% here.
-
-Classification: EXCLUDE from VAT. Deductible employer payroll levy at the fishermen rate. Arithmetic: 1,000,000 × 0.07 = 70,000. ✓
-
-### Example 4 — A1-certificate posted worker (0.425%)
-
-Input line: `15.04.2025 ; SKATTURINN ; DEBIT ; TRYGGINGAGJALD A1 MAR ; -2,125 ; ISK`
-
-Reasoning: Reference flags "A1". Where the employee holds a valid EU/EEA A1 certificate and remains socially insured abroad, the reduced levy of 0.425% applies (KPMG sec 4.2 & fn 6). On ISK 500,000 of remuneration: 500,000 × 0.425% = ISK 2,125. Do NOT apply this without sighting the A1 (see R-IS-SSC-3).
-
-Classification: EXCLUDE from VAT. Reduced-rate levy — reviewer must confirm A1 certificate on file. Arithmetic: 500,000 × 0.00425 = 2,125. ✓
-
-### Example 5 — Income tax remittance (NOT a contribution)
-
-Input line: `15.02.2025 ; SKATTURINN ; DEBIT ; STAÐGREIÐSLA TEKJUSKATTUR + ÚTSVAR ; -119,461 ; ISK`
-
-Reasoning: Reference flags "TEKJUSKATTUR + ÚTSVAR" (pattern 3.3) — withheld personal income tax (national + municipal), NOT a social/pension contribution. For an employee on ISK 600,000 monthly gross (2025): pension 4% = 24,000; income-tax base = 600,000 − 24,000 = 576,000; tax = 472,005 × 31.49% + (576,000 − 472,005) × 37.99% − 68,691 personal credit = 148,644 + 39,508 − 68,691 = ISK 119,461 (Skatturinn Tax-brackets 2025; Key Rates 2025).
-
-Classification: EXCLUDE from VAT. Withheld income tax — do NOT count as tryggingagjald or pension. Arithmetic: 472,005 × 0.3149 = 148,644.37; 103,995 × 0.3799 = 39,507.70; sum 188,152.07; less 68,691 = 119,461.07 → ISK 119,461. ✓
-
-### Example 6 — Self-employed contributions (reiknað endurgjald)
-
-Input line: `15.05.2025 ; SKATTURINN ; DEBIT ; SJÁLFSTÆTT TRYGGINGAGJ + LÍFEYRIR ; -217,500 ; ISK`
-
-Reasoning: A self-employed person pays tryggingagjald 6.35% on reckoned remuneration AND the full pension 15.5% (both employee 4% and employer 11.5% parts) (KPMG sec 13.1 fn 31 & 4.2). On reckoned monthly remuneration of ISK 1,000,000: tryggingagjald 1,000,000 × 6.35% = 63,500; pension 1,000,000 × 15.5% = 155,000; total monthly = 218,500. The statement line shows ISK 217,500 — flag the ISK 1,000 difference for reviewer (rounding or partial period).
-
-Classification: EXCLUDE from VAT. Self-employed levy + pension. Flag the discrepancy. Arithmetic check: 63,500 + 155,000 = 218,500 (not 217,500) → reviewer flag. ✓
-
-## Section 5 -- Tier 1 rules
-
-These rules apply when payroll/bank-statement data is clear and all required inputs are available. Apply exactly as written.
-
-### Rule 1 — Tryggingagjald formula (general)
-
-- **Tryggingagjald formula** — Tryggingagjald = total_gross_remuneration × 6.35%. No floor, no ceiling. Employer-paid; self-employed pay it on reckoned remuneration.  _(Skatturinn Key Rates 2025/2026; KPMG sec 4.2)_
-
-### Rule 2 — Levy category overrides the general rate
-
-- **Levy category overrides** — Fishermen/seamen: 7.00% (6.35% + 0.65% surcharge). Employee with valid EU/EEA A1 certificate: 0.425%. All other employment: 6.35% (default).  _(KPMG sec 4.2 & fn 6)_
-
-### Rule 3 — Mandatory pension split
-
-- **Mandatory pension formula** — Mandatory pension = total_wages × 15.5% = employee 4% + employer 11.5% (minimum). The employee's 4% is deductible from the employee's income-tax base; the employer's 11.5% is a payroll cost.  _(PwC; KPMG sec 4.2/13.1; Central Bank of Iceland)_
-
-### Rule 4 — Alternative/private pension fund adds 2% employer
-
-- **Alternative fund 2% addition** — If the employee pays into an alternative/private pension fund instead of the standard fund, the employer must pay an extra 2% to that fund.  _(KPMG fn 7)_
-
-### Rule 5 — Voluntary pension (séreignarsparnaður)
-
-- **Voluntary pension rule** — Employee may contribute up to an additional 4% (deductible), with the employer typically matching 2%. Optional — do not assume it applies unless stated.  _(KPMG sec 4.2)_
-
-### Rule 6 — Self-employed pay both pension parts plus the levy
-
-- **Self-employed rule** — Self-employed pay tryggingagjald (6.35%) themselves AND the full 15.5% pension (4% + 11.5%) on reckoned remuneration (reiknað endurgjald).  _(KPMG sec 13.1 fn 31 & 4.2)_
-
-### Rule 7 — Pension obligation age range
-
-- **Pension obligation age range rule** — Mandatory pension applies to wage earners and self-employed aged 16–70.  _(PwC; Central Bank of Iceland)_
-
-### Rule 8 — Employer pension tax-free cap
-
-- **Employer pension tax-free cap rule** — Employer pension contributions are tax-free to the employee unless they exceed 12% of remuneration AND ISK 2,000,000 per year — the excess is taxable employee income.  _(PwC; KPMG fn 8)_
-
-### Rule 9 — Remittance schedule (PAYE / staðgreiðsla)
-
-- **Remittance schedule rule** — Employer withholds income tax and tryggingagjald monthly; the remittance (skilagrein staðgreiðslu) is due by the 15th of the month following the wage-payment month (14 days after wages paid).  _(PwC tax admin; Skatturinn)_
-
-### Rule 10 — Contributions are not VAT supplies
-
-- **VAT exclusion rule** — Tryggingagjald, pension contributions, withheld income tax, and union dues are statutory/payroll obligations — never VAT-able supplies. Exclude from any VAT (VSK) return.
-
-## Section 6 -- Tier 2 catalogue
-
-When data is ambiguous or client circumstances are unclear, flag these situations for reviewer confirmation.
-
-### T2-1 — Levy category uncertainty (fishermen vs general)
-
-- **T2-1** — Trigger: Worker is in fishing/maritime sector but the role on the bank line is ambiguous. Issue: Fishermen attract 7.00% vs general 6.35% — a 0.65 pp difference. Action: Flag for reviewer; confirm whether the worker falls within the statutory fishermen/seamen category.
-
-### T2-2 — A1 certificate validity and coverage period
-
-- **T2-2** — Trigger: Worker claims A1 coverage from another EU/EEA state. Issue: Reduced 0.425% applies only for the period the A1 is valid and only if produced. Action: Flag for reviewer; do not apply 0.425% without sighting the certificate and its validity dates.
-
-### T2-3 — Employer contribution above tax-free cap
-
-- **T2-3** — Trigger: Employer contributes more than 11.5%, or total employer pension nears 12% / ISK 2,000,000/year. Issue: Excess over 12% of remuneration AND ISK 2,000,000/year becomes taxable employee income (PwC; KPMG fn 8). Action: Flag for reviewer to quantify the taxable fringe benefit.  _(PwC; KPMG fn 8)_
-
-### T2-4 — Self-employed reckoned remuneration (reiknað endurgjald)
-
-- **T2-4** — Trigger: Self-employed person's reckoned remuneration is below Skatturinn's minimum tables or disputed. Issue: The base for both the levy and pension is the reckoned remuneration, which Skatturinn can challenge. Action: Flag for reviewer to confirm the reiknað endurgjald category before computing.
-
-### T2-5 — Overdue levy/withholding (penalty exposure)
-
-- **T2-5** — Trigger: Monthly remittance not paid by the 15th. Issue: Default interest (dráttarvextir) and a statutory mark-up (álag) apply; the exact percentages were not confirmed from an English authoritative source [RESEARCH GAP — reviewer to confirm]. Action: Do not estimate. Escalate to a reviewer with the Skatturinn statement of account.
-
-### T2-6 — Minimum-wage / collective-agreement floor
-
-- **T2-6** — Trigger: Need to test whether wages meet a legal floor. Issue: Iceland has NO statutory minimum wage; floors are set by collective agreements (ASÍ/SA) and vary by sector. Action: Flag for reviewer; identify the applicable collective agreement. Treat any single figure (e.g. ~ISK 425,985/month under some 2025 SGS agreements — union/secondary source) as indicative only [RESEARCH GAP — reviewer to confirm against the live agreement].
-
-## Section 7 -- Excel working paper template
-
-When producing an Iceland contribution computation, structure the working paper as follows:
-
-```
-ICELAND SOCIAL CONTRIBUTIONS -- WORKING PAPER
-Client / Employer: [name]
-Worker:            [name]
-Income year:       [2025 / 2026]
-Prepared:          [date]
-
-INPUT DATA
-  Role:                          [Employer / Employee / Self-employed]
-  Levy category:                 [General / Fishermen / A1-certificate]
-  A1 certificate sighted:        [YES / NO]
-  Age (16-70 pension?):          [____]
-  Monthly gross remuneration:    ISK [____]
-  Alternative pension fund?:     [YES / NO]
-  Voluntary pension elected?:    [YES / NO]
-
-CONTRIBUTION COMPUTATION
-  Tryggingagjald rate:           [6.35% / 7.00% / 0.425%]
-  Tryggingagjald (employer):     ISK [____]   = gross x rate
-  Pension employee (4%):         ISK [____]
-  Pension employer (11.5%):      ISK [____]
-  Extra 2% to alt. fund:         ISK [____]   (if applicable)
-  Voluntary employee (<=4%):     ISK [____]   (if elected)
-  Voluntary employer (2%):       ISK [____]   (if elected)
-  ----------------------------------------------------
-  Employer total cost:           ISK [____]
-  Employee deductions:           ISK [____]
-
-INCOME-TAX BASE INTERACTION (see iceland-income-tax skill)
-  Gross less 4% pension:         ISK [____]   = income-tax base
-  (income tax computed in the income-tax skill)
-
-REMITTANCE
-  Wage payment month:            [____]
-  Skilagrein staðgreiðslu due:   [15th of following month]
-
-REVIEWER FLAGS
-  [List any Tier 2 flags here]
-
-CONSERVATIVE DEFAULTS APPLIED
-  [List any defaults applied and their impact]
+```text
+employee pension = established pension base × 4%
+employer pension = established pension base × 11.5%
+levy base = remuneration and benefits within levy scope + employer pension
+levy = established levy base × 6.35%
+employer social cost = employer pension + levy
+pension fund remittance = employee pension + employer pension
 ```
 
-## Section 8 -- Bank statement reading guide
+The levy is an employer cost, not a deduction from employee pay. The employee contribution is withheld from pay and remitted with the employer contribution to the pension provider. Income-tax withholding goes to Skatturinn separately. [Act 113/1990, Articles 4, 7 and 10](https://www.althingi.is/lagas/nuna/1990113.html), [Act 129/1997, Article 7](https://www.althingi.is/lagas/nuna/1997129.html)
 
-### How contribution payments appear on Icelandic bank statements
+At these assumed rates, employer social cost is **18.58025% of cash wages**, not 17.85%: 11.5% + (100% + 11.5%) × 6.35%. This is an illustration, not a universal total employment-cost rate. Other contractual, insurance, holiday, benefit or sector charges require their own evidence. For financial-services employers, use the [corporate skill's financial-sector method](is-corporate-income-tax.md) to screen and compute the separate remuneration tax, including its employer-pension base and statutory exclusions. The ordinary cost illustration above does not include that charge. [Act 165/2011, Articles 2–6](https://www.althingi.is/lagas/nuna/2011165.html)
 
-Landsbankinn / Íslandsbanki / Arion banki (main retail banks):
-- Tryggingagjald + withholding: "SKATTURINN", "RSK", "STAÐGREIÐSLA", "SKILAGREIN"
-- Pension: "LÍFEYRISSJÓÐUR" or the named fund (Gildi, LSR, Frjálsi, Birta, Stapi, etc.)
-- Voluntary pension: "SÉREIGN" / "SÉREIGNARSPARNAÐUR"
-- Union dues: "STÉTTARFÉLAG" / "FÉLAGSGJALD"
+### 3. Additional contributions and income-tax treatment
 
-Key identification tips:
-1. Contribution remittances are outgoing (DEBIT). Inbound credits from TRYGGINGASTOFNUN or TR are benefits received, not contributions.
-2. Tryggingagjald and withheld income tax may be bundled into one Skatturinn remittance — split using the staðgreiðsla return (skilagrein), not the bank line alone.
-3. Tryggingagjald should equal gross wages × 6.35% (or 7.00% fishermen / 0.425% A1). If it does not divide cleanly, check the levy category.
-4. Pension remittances should equal gross × 15.5% (4% + 11.5%) for the standard fund.
-5. Remittances cluster around the 15th of each month (the staðgreiðsla due date).
-6. Do NOT confuse ÚTSVAR (municipal income tax), ÚTVARPSGJALD (broadcasting fee), or FRAMKVÆMDASJÓÐUR ALDRAÐRA (Construction Fund for the Elderly) with social/pension contributions.
+Record supplementary contributions from the actual agreement and fund instructions. A different recipient, a private-pension label or the income-tax deduction ceiling does not alone prove an automatic additional employer 2% obligation. The pension statute allows additional protection agreements; identify the governing terms before adding a match. Skatturinn describes supplementary pension savings (viðbótarlífeyrissparnaður) as a 4% employee contribution with a 2% employer contribution; whether the 2% employer part is owed comes from the applicable collective agreement or contract, not from Act 129/1997. [Act 129/1997, Articles 2 and 8–10](https://www.althingi.is/lagas/nuna/1997129.html), [withholding 2026](https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026)
 
-### Icelandic terminology quick-reference
+Article 28(5) of the Income Tax Act frames the employer-contribution tax boundary as **12% of the base plus 2,000,000 a year**. It is not the lower of those amounts and not two independent limits. Contributions provided by collective agreement or fixed by law are expressly excluded from taxable income. Establish the contractual/statutory category before computing any taxable excess; an exceptional contribution needs its own legal workpaper. Example: a voluntary employer contribution of 14% on annual remuneration of 2,500,000 is 350,000; the boundary is 12% × 2,500,000 + 2,000,000 = 2,300,000, so no part of it is taxable to the employee. [Income Tax Act, Article 28(5)](https://www.althingi.is/lagas/nuna/2003090.html)
 
-**Terminology table**
+For self-employed people, establish remuneration and the applicable pension arrangement first. The self-employed person pays the whole statutory minimum of 15.5% on the own-remuneration base (Act 129/1997, Articles 1–3): the personal part (deductible up to 4%, plus up to 4% supplementary, under Income Tax Act Article 30(A)(5)) and the remainder as the counter-contribution on own remuneration, which is entered on RSK 4.05 and forms part of the levy base with the remuneration. Reconcile the personal and business pension components and include the applicable employer pension in the levy base. Deduct supported business payroll costs and the eligible personal pension separately, without deducting the same contribution twice. [Act 129/1997, Articles 1–3](https://www.althingi.is/lagas/nuna/1997129.html), [Act 113/1990, Article 7](https://www.althingi.is/lagas/nuna/1990113.html), [Income Tax Act, Articles 30–31](https://www.althingi.is/lagas/nuna/2003090.html), [starting a business: counter-contribution on RSK 4.05](https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/)
 
-| Icelandic | English |
-| --- | --- |
-| Tryggingagjald | Social security contribution / general payroll levy |
-| Lífeyrissjóður | Pension fund |
-| Lífeyrir | Pension |
-| Séreignarsparnaður | Additional voluntary (private) pension savings |
-| Staðgreiðsla | PAYE withholding at source |
-| Skilagrein staðgreiðslu | Monthly withholding return |
-| Reiknað endurgjald | Calculated/reckoned remuneration (self-employed) |
-| Launaseðill | Payslip |
-| Sjómenn | Fishermen / seamen |
-| Stéttarfélag / Félagsgjald | Union / union dues |
-| Tryggingastofnun | Social Insurance Administration (benefits) |
+## Deadlines and filing
 
-## Section 9 -- Onboarding fallback
-
-If the client provides only a bank statement and no other information:
-
-1. Scan for Skatturinn / pension debits — identify all outgoing payments matching Section 3 patterns.
-2. Separate the streams — Skatturinn remittances (levy + income tax) vs lífeyrissjóður (pension) vs ÚTSVAR/broadcasting/Construction-Fund (not contributions).
-3. Reverse-engineer the base:
-   - If a pension debit is present, implied gross ≈ pension debit ÷ 0.155 (standard 15.5%).
-   - If a tryggingagjald line is present, implied gross ≈ levy ÷ 0.0635 (general) — but check for fishermen 7.00% or A1 0.425% first.
-4. Flag for reviewer: "Contribution classification derived from bank statement amounts only. Levy category (general/fishermen/A1), pension fund type, and the split between withheld income tax and tryggingagjald have not been independently verified. Reviewer must confirm against the staðgreiðsla returns before filing."
-
-## Section 10 -- Reference material
-
-### Tryggingagjald rates (employer payroll levy)
-
-**Tryggingagjald rates table**
-
-| Category | Rate | Source |
+| Obligation | Method and deadline | Official source |
 | --- | --- | --- |
-| General | 6.35% (2025 & 2026 unchanged) | Skatturinn Key Rates 2025/2026; KPMG sec 4.2 |
-| Fishermen / seamen | 7.00% (6.35% + 0.65%) | KPMG sec 4.2 |
-| A1-certificate (EU/EEA) | 0.425% | KPMG sec 4.2 & fn 6 |
+| Monthly levy | Calendar-month period; due first of following month, final due date 14 days later. Reconcile current calendar/claim for non-working days. Submit with payroll reporting through the taxpayer service or supported software. | [Act 113/1990, Article 10](https://www.althingi.is/lagas/nuna/1990113.html), [2026 employer notice](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf) |
+| Pension | Contribution period no longer than a month; due tenth of following month, final due date the last day of that month. Pay the fund/provider, not the tax authority; also check fund rules and agreement. | [Act 129/1997, Article 7](https://www.althingi.is/lagas/nuna/1997129.html) |
+| Small-payroll exception | Where Article 15 applies, first report/pay when combined annual remuneration/wages reaches 504,000, then each due date. If below 504,000 for the year, one annual settlement treated as December is permitted. | [Act 113/1990, Article 15](https://www.althingi.is/lagas/nuna/1990113.html) |
+| Annual levy reconciliation | File the required wage information and reconcile assessed levy to monthly reporting and payments. Legal entities use their applicable electronic tax return; sole-trader reconciliation uses the appropriate personal/business schedules. Annual return instructions labelled 2026 relate to 2025 wages, not a published 2027 deadline. | [Act 113/1990, Article 12](https://www.althingi.is/lagas/nuna/1990113.html), [annual wage-return guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/) |
+| Levy outside withholding | Article 12(6): due 1 June for individuals and 1 November for legal entities, final due date one month later; Article 16 runs default interest from those due dates. | [Act 113/1990, Articles 12 and 16](https://www.althingi.is/lagas/nuna/1990113.html) |
 
-Internal-composition note: KPMG (sec 1.3) describes the 6.35% total as bundling the social-security component, the Bankruptcy Wage Guarantee Fund contribution, and the market charge. A Bloomberg Tax report of the Ministry of Finance's 2026 announcement separately cites a "4.9% general social security tax rate", which appears to be the social-security sub-component within the 6.35% total. This skill uses 6.35% as the employer's total payroll levy; reviewers reconciling to a "4.9%" figure should treat it as the sub-component, not the headline levy [RESEARCH GAP — reviewer to confirm the exact internal breakdown].
+**Out-of-date authority pages.** The general levy page says 1 July for payments outside withholding; the collections page says 1 June for individuals and 1 October for legal entities. Current Article 12(6) says 1 June and 1 November, and the statute governs. Normal taxable benefits remain in monthly reporting. [Levy page](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald), [collections page](https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/), [Act 113/1990](https://www.althingi.is/lagas/nuna/1990113.html)
 
-### Mandatory pension contributions
+Each payroll period needs: wage/benefit components, separate pension and levy bases, employee and employer pension, levy category, filed return and acceptance, payment claim, bank settlement and fund allocation. Match all of them to the ledger. The broadcasting fee (útvarpsgjald) and the Senior Citizens' Construction Fund fee are per-person charges assessed with income tax, not social contributions; the [income tax skill](iceland-income-tax.md) covers them. A bank debit to SKATTURINN/RSK can bundle several liabilities; split it from the return/account statement. A fund debit (for example Gildi, LSR or Birta) needs its contribution statement; a name match alone does not prove pension cost, period or payment allocation. Unmatched amounts remain a reconciliation difference, not an assumed deductible expense.
 
-**Mandatory pension contributions table**
+## Penalties and interest
 
-| Contributor | Rate | Notes | Source |
-| --- | --- | --- | --- |
-| Employee | 4% of total wages | Deductible from income-tax base | PwC; KPMG sec 4.2/13.1 |
-| Employer | 11.5% of total wages (min) | + 2% extra to alt./private fund | PwC; KPMG fn 7 |
-| **Total minimum** | **15.5%** | 4% + 11.5% | PwC; Central Bank of Iceland |
-| Voluntary employee | up to +4% (deductible) | optional (séreignarsparnaður) | KPMG sec 4.2 |
-| Voluntary employer match | typically +2% | optional | KPMG sec 4.2 |
-| Self-employed | 15.5% (both parts) | on reckoned remuneration | KPMG sec 13.1 fn 31 |
+**Do not apply the PAYE daily surcharge to the levy.** Act 113/1990 Article 10 expressly excludes the 1%-per-day surcharge in Act 45/1987 Article 28(2)(1). If monthly levy remains unpaid at the final due date, default interest runs from the first due date. The authority's collections guidance also states that no surcharge is calculated on this levy. [Act 113/1990, Articles 10–11](https://www.althingi.is/lagas/nuna/1990113.html), [collection rules](https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/)
 
-Arithmetic check: employee 4% + employer 11.5% = 15.5% total. ✓
+Missing or deficient reports can lead to estimates, collection and other statutory sanctions. Annual assessment/reassessment procedures use the Income Tax Act where applicable; keep a separate analysis for an assessment-base surcharge or offence, rather than treating the monthly levy exclusion as immunity from all sanctions. [Act 113/1990, Articles 11 and 14](https://www.althingi.is/lagas/nuna/1990113.html)
 
-### Income tax brackets (context — computed in the iceland-income-tax skill)
+Pension contributions have their own due dates and provider collection rules. Obtain the fund statement and applicable rules for pension arrears; do not import the tax authority's daily surcharge into a pension calculation. A quantified default-interest calculation needs the dated rate, principal, statutory starting date, payment allocation and applicable collection method. This skill does not fix a variable interest rate. [Act 129/1997, Article 7](https://www.althingi.is/lagas/nuna/1997129.html)
 
-The 4% employee pension is deductible from the income-tax base; the figures below are provided so contribution work reconciles with payslip net pay. Rates are combined national + average municipal (útsvar 14.94% avg; municipal range 12.44%–14.94%).
+## Cross-border points
 
-**Income year 2025 bracket table**  _(Skatturinn Tax-brackets 2025)_
+Social-security coverage, pension coverage and income-tax residence are distinct determinations. Skatturinn applies a reduced levy to EEA nationals hired for a year or less whose employer presents an A1 certificate issued by the home state showing the worker stays insured there; retain the certificate, authority, named worker and covered dates. Without a valid A1 for the dates, the full levy applies. The authority's A1 table gives 0.425% for wage years 2014 to 2023 and 0.293% for 2024 and 2025, and has no 2026 rate. **No 2026 reduced levy is computed here.** Report qualifying non-Iceland-insured remuneration separately. [A1 guidance](https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald), [annual reporting guidance](https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/)
 
-| Band | Monthly ISK | Combined rate |
-| --- | --- | --- |
-| 1 | 0 – 472,005 | 31.49% |
-| 2 | 472,006 – 1,325,127 | 37.99% |
-| 3 | over 1,325,127 | 46.29% |
+The statute behind the historical rates: Act 113/1990, Article 3(2)(4) allocates 0.325% of the levy base to pension-fund disability equalisation, and transitional provision III lowered that allocation to 0.193% for 2024 and 2025 only. The authority has not published how this applies to A1 workers for 2026, so the 2026 A1 rate stays on the "Not yet confirmed" line. [Act 113/1990, Article 3 and transitional III](https://www.althingi.is/lagas/nuna/1990113.html), [2026 fee components](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf)
 
-**Income year 2026 bracket table**  _(Skatturinn Key Rates 2026; PwC; Bloomberg Tax MOF 23 Dec 2025)_
+For outbound work, Article 7(5) includes remuneration paid by Icelandic parties to Iceland-domiciled people for work abroad. Do not exclude it solely because the workdays are foreign. A social-security agreement, coverage determination and occupational pension treatment must be considered for the actual countries and dates before calculating a final cross-border result. The [cross-border skill](is-cross-border.md) supplies income-tax screening, not a substitute coverage decision. [Act 113/1990, Article 7](https://www.althingi.is/lagas/nuna/1990113.html)
 
-| Band | Monthly ISK | Combined rate |
-| --- | --- | --- |
-| 1 | 0 – 498,122 | 31.49% |
-| 2 | 498,123 – 1,398,450 | 37.99% |
-| 3 | over 1,398,450 | 46.29% |
+## Worked examples
 
-- **Personal tax credit** — 2025 ISK 68,691/month (824,288/year); 2026 ISK 72,492/month (869,898/year)  _(Skatturinn Key Rates)_
-- **Capital income tax** — flat 22% for individuals  _(Skatturinn; PwC)_
+Hypothetical ordinary arrangements below assume confirmed pension bases and a documented 4% employee / 11.5% employer split. Exact decimal results validate arithmetic; follow the accepted service/fund rounding for actual reporting. None proves benefit classification or a foreign exemption.
 
-### Thresholds
+### 1. Ordinary monthly cash wages
 
-**Thresholds table**
+Cash wages 600,000 produce employee pension 24,000 and employer pension 69,000. The levy base is **669,000**, not 600,000; levy is **42,481.50**. Employer pension plus levy is **111,481.50**; total employer wage/contribution cost is **711,481.50**. Pension remittance is **93,000**. The authority's example rounds levy to 42,482; preserve that reporting result separately from this decimal control. [2026 employer example](https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf)
 
-| Item | Value | Source |
-| --- | --- | --- |
-| VAT (VSK) registration | ISK 2,000,000 taxable turnover in any rolling 12 months; register (RSK 5.02) within 8 days | Skatturinn VAT; Avalara |
-| Pension obligation age range | 16–70 | PwC; Central Bank of Iceland |
-| Employer pension tax-free cap | excess over BOTH 12% of remuneration AND ISK 2,000,000/year is taxable | PwC; KPMG fn 8 |
-| Construction Fund for the Elderly | ISK 14,093 (assessment 2025) / 14,614 (assessment 2026), individuals 16–69 | Skatturinn Key Rates 2025/2026 |
-| National Broadcasting fee (Útvarpsgjald) | ISK 21,400 (assessment 2025) / 22,200 (assessment 2026); 2026 income threshold ISK 2,617,618 | Skatturinn Key Rates 2025/2026; PwC |
-| Children's income flat rate | 6% on a child's (born 2010+) income over ISK 300,000/year (2026, up from 180,000) | Skatturinn Key Rates 2026; Bloomberg Tax |
-| Minimum wage | NONE statutory — collective-agreement floors only (~ISK 425,985/month under some 2025 SGS agreements, indicative) | Union/secondary **[RESEARCH GAP — reviewer to confirm]** |
+```oa-check
+name: Iceland ordinary monthly pension and levy, 2026
+inputs:
+  cash_wages: 600000
+steps:
+  - employee_pension: cash_wages * 0.04
+  - employer_pension: cash_wages * 0.115
+  - levy_base: cash_wages + employer_pension
+  - levy: levy_base * 0.0635
+  - employer_social_cost: employer_pension + levy
+  - employer_total: cash_wages + employer_social_cost
+  - fund_remittance: employee_pension + employer_pension
+expected:
+  employee_pension: 24000
+  employer_pension: 69000
+  levy_base: 669000
+  levy: 42481.50
+  employer_social_cost: 111481.50
+  employer_total: 711481.50
+  fund_remittance: 93000
+```
 
-### Forms
+### 2. Taxable benefit with a different pension base
 
-**Forms table**
+Cash wages 400,000 plus an already correctly valued taxable in-kind benefit of 20,000: assume that benefit falls within the Article 3 pension exclusion and Article 8 levy inclusion. Pension stays on 400,000: employee 16,000, employer 46,000. Levy base becomes **466,000**, levy **29,591**. This is not a claim that the benefit's actual employer cost equals its tax valuation. [Act 129/1997, Article 3](https://www.althingi.is/lagas/nuna/1997129.html), [Act 113/1990, Articles 7–8](https://www.althingi.is/lagas/nuna/1990113.html)
 
-| Form | Purpose | Deadline | Source |
-| --- | --- | --- | --- |
-| Skilagrein staðgreiðslu | Monthly withholding return (income tax + tryggingagjald) | 15th of month following wage payment | PwC tax admin; Skatturinn |
-| Individual income tax return (framtal) | Annual personal return | by 14 March of following year; final assessment by 31 May | PwC tax admin; KPMG |
-| RSK 5.02 | VAT registration application | within 8 days of crossing ISK 2,000,000 / 12 months | Skatturinn; Avalara |
-| Corporate income tax return | Annual company return | 31 May (set annually; was 31 May 2025) | KPMG Tax Facts 2025 |
+```oa-check
+name: Iceland in-kind benefit separates pension and levy bases
+inputs:
+  cash_wages: 400000
+  taxable_benefit: 20000
+steps:
+  - employee_pension: cash_wages * 0.04
+  - employer_pension: cash_wages * 0.115
+  - levy_base: cash_wages + taxable_benefit + employer_pension
+  - levy: levy_base * 0.0635
+  - fund_remittance: employee_pension + employer_pension
+expected:
+  employee_pension: 16000
+  employer_pension: 46000
+  levy_base: 466000
+  levy: 29591
+  fund_remittance: 62000
+```
 
-### Penalties
+### 3. Self-employed remuneration and a short bank payment
 
-**Penalties table**
+For established monthly remuneration 1,000,000 and documented pension components 40,000 personal plus 115,000 business/employer, levy base is 1,115,000 and levy **70,802.50**. Total pension plus levy is **225,802.50**. If supported statements show only 217,500 paid against these liabilities, the unresolved difference is **8,302.50**; it is not assumed rounding, waived liability or an extra expense. Classify and reconcile each recipient before concluding what is unpaid. [Act 113/1990, Articles 6–7](https://www.althingi.is/lagas/nuna/1990113.html), [Act 129/1997, Article 3](https://www.althingi.is/lagas/nuna/1997129.html)
 
-| Penalty | Detail | Source |
-| --- | --- | --- |
-| Default interest (dráttarvextir) | Statutory rate (Central Bank base + premium) on overdue claims; cannot be negotiated. Exact % not in an English authoritative source **[RESEARCH GAP — reviewer to confirm]** | Skatturinn Collection of Liabilities |
-| Surcharge / mark-up (álag) | Statutory mark-up added to principal in defined circumstances (income-tax álag commonly up to 25% of understated tax); exact % unconfirmed **[RESEARCH GAP — reviewer to confirm]** | Skatturinn Collection of Liabilities |
-| Late withholding remittance | Triggers penalty interest + possible surcharge; persistent default → collection action | Skatturinn; PwC |
+```oa-check
+name: Iceland self-employed contribution reconciliation
+inputs:
+  remuneration: 1000000
+  statement_payments: 217500
+steps:
+  - personal_pension: remuneration * 0.04
+  - employer_pension: remuneration * 0.115
+  - levy: (remuneration + employer_pension) * 0.0635
+  - contributions: personal_pension + employer_pension + levy
+  - difference: contributions - statement_payments
+expected:
+  personal_pension: 40000
+  employer_pension: 115000
+  levy: 70802.50
+  contributions: 225802.50
+  difference: 8302.50
+```
 
-### Test suite
+## Ask the client first
 
-Employee, gross ISK 1,000,000/month, general category. → Tryggingagjald (employer) = 1,000,000 × 6.35% = ISK 63,500. Pension employee 4% = ISK 40,000; employer 11.5% = ISK 115,000; total pension ISK 155,000. (40,000 + 115,000 = 155,000 ✓)
+- Which payer, worker, dates, age, work locations and employment/self-employment classification apply?
+- Which contract, collective agreement, fund and pension components govern, including any supplementary contribution or transitional arrangement?
+- What cash wages, benefits, reimbursements, calculated remuneration and exclusions are supported by source records?
+- Does a valid foreign-coverage/A1 determination cover these exact dates, and what current levy decision applies?
+- What returns, assessments, bank/fund statements, corrections and arrears reconcile to the period's liabilities?
 
-Fisherman, gross ISK 1,000,000/month. → Tryggingagjald = 1,000,000 × 7.00% = ISK 70,000 (not 63,500). Pension unchanged: ISK 155,000.
-
-A1-certificate employee, gross ISK 500,000/month, A1 sighted. → Tryggingagjald = 500,000 × 0.425% = ISK 2,125. (Pension treatment depends on coordination — flag if insured abroad.)
-
-Self-employed, reckoned remuneration ISK 800,000/month. → Tryggingagjald 800,000 × 6.35% = ISK 50,800; pension 800,000 × 15.5% = ISK 124,000; total monthly = ISK 174,800. (50,800 + 124,000 = 174,800 ✓)
-
-Employee, gross ISK 600,000/month, 2025. Income-tax base = 600,000 − 24,000 (4% pension) = 576,000. Tax = 472,005 × 31.49% + (576,000 − 472,005) × 37.99% − 68,691 = 148,644.37 + 39,507.70 − 68,691 = ISK 119,461. Net pay = 600,000 − 24,000 − 119,461 = ISK 456,539. (600,000 − 143,461 = 456,539 ✓)
-
-Employer contributes 14% pension on ISK 2,500,000/year remuneration. → 14% of 2,500,000 = 350,000; tax-free cap is the LOWER bound of (12% of remuneration AND ISK 2,000,000). Here 350,000 < 2,000,000, but 14% > 12%, so the excess over 12% (i.e. 2% × 2,500,000 = ISK 50,000) is taxable employee income only if BOTH conditions are breached — since the ISK 2,000,000/year ceiling is NOT exceeded, no taxable benefit arises. Flag for reviewer (T2-3) to confirm the conjunctive test.
-
-Bank line "STAÐGREIÐSLA" bundling income tax + tryggingagjald. → Split using the skilagrein return; do not treat the whole debit as either one. Flag if the return is unavailable.
-
-Worker aged 72. → Mandatory pension obligation runs 16–70; flag for reviewer whether contributions are still due (PwC; Central Bank of Iceland).
-
-### Prohibitions
-
-- NEVER apply the general 6.35% to fishermen (7.00%) or A1-certificate workers (0.425%) without confirming the category.
-- NEVER apply the reduced 0.425% A1 levy without sighting a valid A1 certificate.
-- NEVER treat the 4% employee pension as anything other than deductible from the EMPLOYEE'S income-tax base.
-- NEVER apply a ceiling to tryggingagjald or to the mandatory pension — there is none.
-- NEVER estimate dráttarvextir (default interest) or álag (surcharge) — exact percentages are unconfirmed; escalate.
-- NEVER quote a "statutory minimum wage" for Iceland — there is none; defer to the collective agreement.
-- NEVER treat an employer pension contribution above 11.5% as automatically tax-free — test the 12% / ISK 2,000,000 conjunctive cap.
-- NEVER confuse ÚTSVAR (municipal income tax), ÚTVARPSGJALD, or the Construction Fund for the Elderly with social/pension contributions.
-- NEVER present contribution figures as definitive — label as estimated and direct the client to their staðgreiðsla returns and pension fund statement.
-- NEVER include contributions in a VAT (VSK) return.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+**When to refer.** Refer A1 and coordination cases, fund contract and arrears disputes, complex benefit classification and sector cases outside the stated financial-sector workpaper. Do not reuse the historical 0.425% A1 rate or the former wages-only cost percentages (17.85% / 21.85%) for a 2026 result.
 
 <!-- openaccountants-cta-block -->
 
----
+## Talk to an accountant
 
-## Talk to a verified accountant
+For advice on your facts, [contact OpenAccountants](https://www.openaccountants.com/contact).
 
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
+## Sources
 
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
+| Source | URL | Read on |
+| --- | --- | --- |
+| Social Security Levy Act 113/1990, Articles 1–16 and transitional III (components 4.90% / 1.35%, base, floor 748,224, exclusions, monthly and annual collection, 42,000 / 504,000) | https://www.althingi.is/lagas/nuna/1990113.html | 2026-10-30 |
+| Mandatory Pension Act 129/1997, Articles 1–3, 7–10 and transitional V (15.5%, ages 16 to 70, base, due dates) | https://www.althingi.is/lagas/nuna/1997129.html | 2026-10-30 |
+| Income Tax Act 90/2003, Articles 28(5), 30(A)(4)–(5), 31 and 58 | https://www.althingi.is/lagas/nuna/2003090.html | 2026-10-30 |
+| Skatturinn, employer notice RSK 6.01 no. 1/2026 (rates, 11.5% default, ages, 600,000 example) | https://www.skatturinn.is/media/2026/rsk_0601_1_2026.is.pdf | 2026-10-30 |
+| Skatturinn, withholding 2026 (levy breakdown, pension deduction, supplementary pension 4% / 2%) | https://www.skatturinn.is/einstaklingar/stadgreidsla/stadgreidsla/2026 | 2026-10-30 |
+| Skatturinn, social security levy (tryggingagjald): A1 rates by year, 1 July date | https://www.skatturinn.is/atvinnurekstur/skattar-og-gjold/tryggingagjald | 2026-10-30 |
+| Skatturinn, collection of all taxes and duties (no surcharge on the levy, 1 October date) | https://www.skatturinn.is/innheimta/skattar-og-gjold/allir-skattar-og-gjold/ | 2026-10-30 |
+| Skatturinn, wage slips and annual wage return (launamiðar og launaframtal) | https://www.skatturinn.is/atvinnurekstur/framtal-og-alagning/launamidar-og-launaframtal/ | 2026-10-30 |
+| Skatturinn, starting a business (counter-contribution on own remuneration, RSK 4.05) | https://www.skatturinn.is/atvinnurekstur/ad-hefja-rekstur/stofna-rekstur/ | 2026-10-30 |
+| Skatturinn, calculated remuneration 2026 (reiknað endurgjald) | https://www.skatturinn.is/atvinnurekstur/stadgreidsla-og-reiknad-endurgjald/reiknad-endurgjald/2026 | 2026-10-30 |
+| Financial Activities Tax Act 165/2011, Articles 2–6 | https://www.althingi.is/lagas/nuna/2011165.html | 2026-10-23 |
 
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: the reduced levy rate for A1-certificate workers for 2026; whether a 2% employer match on supplementary pension savings, or an extra 2% employer contribution where the employee chooses another pension fund, is owed in a given case (set by collective agreements, not by statute); the old version's statements that Iceland has no statutory minimum wage and that collective agreements set wage floors (not checked against an official source).

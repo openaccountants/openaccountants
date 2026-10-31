@@ -1,9 +1,10 @@
 ---
 name: leaving-germany-exit-tax
+version: 0.1
 description: "German exit tax (Wegzugsteuer, Wegzugsbesteuerung, section 6 AStG) when a shareholder leaves Germany, for example a GmbH owner moving to Dubai: who it covers, the shareholding test, the triggers, how the deemed gain is taxed, seven yearly instalments, coming back, reporting after leaving, and the extended limited tax liability under section 2 AStG after a move to a low-tax country such as the UAE."
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-15
+last_updated: 2026-10-29
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -19,7 +20,7 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 ## The method, step by step
 
-1. Test the shares. § 6 AStG reaches only shares within § 17(1) sentence 1 EStG: shares in a corporation (Kapitalgesellschaft) where the person held, directly or indirectly, at least the share of capital in the § 17 table below at any time within the last five years. The test is about the company's capital, not about the company's country, so shares in a German GmbH and in a foreign company both count. See [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html).
+1. Test the shares. § 6 AStG refers to shares within § 17(1) sentence 1 EStG. Test the holder's own direct or indirect minimum participation within the last five years, and the recent free-acquisition/predecessor exception below. This uses the combined-source reading of § 6(1) AStG with § 17(1) sentence 4 EStG described under "Which shares". The test concerns the company's capital, so shares in a German GmbH and in a foreign company both count. See [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html).
 2. Test the person. § 6 applies only to a natural person who was fully taxable in Germany (unbeschränkt steuerpflichtig under § 1(1) EStG) for at least seven years in total within the twelve years before the triggering event. For shares received free of charge (gift or inheritance), the periods of the giver count too, and overlapping periods count once. See [§ 6(2) AStG](https://www.gesetze-im-internet.de/astg/__6.html).
 3. Identify the trigger and its date. There are three triggers in § 6(1) AStG: the end of full tax liability because the person gives up the German residence or habitual abode (taxed at the moment liability ends); a free transfer of the shares to a person who is not fully taxable in Germany (taxed at the moment of transfer); and any other exclusion or restriction of Germany's right to tax the gain on the shares (taxed immediately before that happens). See [§ 6(1) AStG](https://www.gesetze-im-internet.de/astg/__6.html).
 4. Compute the deemed gain. The trigger counts as a sale of the shares at their fair market value (gemeiner Wert). The gain is that value less sale costs less acquisition cost (§ 17(2) EStG), and it is business income (§ 17(1) EStG). Apply the partial-income method: the exempt share in the § 3 table below (§ 3 no. 40 letter c EStG); sale costs and the acquisition cost just used to compute the gain are themselves deductible only at the share in the § 3c table below, because § 3c(2) EStG's second half-sentence extends the same limit to acquisition cost taken into account in determining income. Then apply the § 17(3) allowance, which is scaled to the share sold and shrinks as the gain grows. See [§ 17 EStG](https://www.gesetze-im-internet.de/estg/__17.html), [§ 3 EStG](https://www.gesetze-im-internet.de/estg/__3.html) and [§ 3c EStG](https://www.gesetze-im-internet.de/estg/__3c.html).
@@ -43,10 +44,12 @@ The rules of the arrival country must be checked separately. For a move to the U
 
 **Which shares.** Shares within § 17(1) sentence 1 EStG. § 17(1) sentence 3 defines them: shares (Aktien), GmbH shares, profit participation rights (Genussscheine) and similar participations, rights to acquire such shares, and shares in a company that opted to be taxed as a corporation under § 1a KStG. Shares in a cooperative also count (§ 17(7) EStG). § 6(1) AStG applies subject to the rules of the Income Tax Act, the Corporation Tax Act and the Reorganisation Tax Act, so shares held as business assets need a separate check (see "When to refuse or refer").
 
+**Recent free acquisition: combined-source interpretation.** Read § 6(1) AStG's reference to § 17(1) sentence 1 EStG together with § 17(1) sentence 4, which expressly applies sentence 1 to the following predecessor case. If the relevant share was acquired free of charge within the five years before the deemed disposal, a holder who did not personally meet the 1% test must still be tested where the predecessor, or an earlier predecessor in a chain of free transfers, met that participation test within the relevant five-year period under sentence 1. Record the acquisition and each relevant transfer date, direct/indirect holdings and the predecessor's qualifying holding dates. A recent gift or inheritance of a 0.5% share therefore does not fail solely because the current holder never reached 1%, if the qualifying predecessor test is met. This is a separate shareholding rule from the residence-period aggregation in § 6(2) AStG; all other person, trigger and tax-chain conditions still apply.
+
 | Item | Value | Note |
 |---|---|---|
 | Source | all figures below | https://www.gesetze-im-internet.de/estg/__17.html |
-| Minimum shareholding, directly or indirectly, at any time within the last five years | 1% | "innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war" |
+| Ordinary personal minimum shareholding, directly or indirectly, at any time within the last five years; recent free acquisitions also use the predecessor rule above | 1% | "innerhalb der letzten fünf Jahre am Kapital der Gesellschaft unmittelbar oder mittelbar zu mindestens 1 Prozent beteiligt war" |
 | Allowance against the gain, the part matching the share sold | EUR 9,060 | "soweit er den Teil von 9 060 Euro übersteigt, der dem veräußerten Anteil" |
 | The allowance is reduced by the amount by which the gain exceeds the part matching the share sold of | EUR 36,100 | "um den der Veräußerungsgewinn den Teil von 36 100 Euro übersteigt" |
 
@@ -167,7 +170,7 @@ All facts here are hypothetical. Anna is a German citizen. She has lived in Germ
 ## Ask the client first
 
 - In how many of the last twelve years were you fully taxable in Germany, and did you receive any of the shares as a gift or inheritance?
-- Which company shares do you hold, what percentage of each company's capital, and what are your estimates of their value today and of what you paid for them?
+- Which company shares do you hold, what percentage of each company's capital, and what are your estimates of their value today and of what you paid for them? What were the highest direct or indirect holdings in the last five years? For a recent gift or inheritance, obtain exact acquisition/transfer dates and the relevant predecessor holdings and dates, including any chain of free transfers.
 - Which country are you moving to, and on what date will you give up your German home and habitual abode?
 - Will you keep German income, a German home, a German business or the shares in a German company after you leave?
 - Might you come back to Germany within seven years, and will the company pay dividends or return capital in the meantime?
@@ -192,6 +195,8 @@ All facts here are hypothetical. Anna is a German citizen. She has lived in Germ
 - [§ 17 EStG, Veräußerung von Anteilen an Kapitalgesellschaften](https://www.gesetze-im-internet.de/estg/__17.html)
 - [§ 3 EStG, steuerfreie Einnahmen (no. 40)](https://www.gesetze-im-internet.de/estg/__3.html)
 - [§ 3c EStG, Anteilige Abzüge](https://www.gesetze-im-internet.de/estg/__3c.html)
+
+Selected § 6(1)–(2) AStG and § 17(1) EStG clauses re-read on 29 October 2026 for the predecessor share test and its distinct residence-period conditions; the combined-source interpretation is labelled above.
 
 <!-- openaccountants-cta-block -->
 

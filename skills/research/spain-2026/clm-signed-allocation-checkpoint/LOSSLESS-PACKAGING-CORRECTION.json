@@ -1,0 +1,13 @@
+{
+  "scope": "Full-added-file whitespace audit found raw evidence formatting/binary-PDF flags that tracked-Guide-only pre-stage diff did not inspect. Original bytes preserved exactly by lossless gzip; prior immutable author/reviewer manifests keep original names and are resolved through this selected-evidence map. No Guide bytes, legal methods or review scope changed.",
+  "changes": [
+    {
+      "old_path": "root-independent/DOCM-Law1-2026.pdf",
+      "new_path": "root-independent/DOCM-Law1-2026.pdf.gz",
+      "original_sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+      "compressed_sha256": "1a0f952b09b850df1a988ecdeae20ad45eeaedab4421ef1377f28b9e9b4ec426",
+      "original_bytes": 454855,
+      "compressed_bytes": 300791
+    }
+  ]
+}

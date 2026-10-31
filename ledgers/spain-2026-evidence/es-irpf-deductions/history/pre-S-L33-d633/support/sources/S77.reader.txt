@@ -1,0 +1,167 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por gasto de enfermedad (general)
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad Autónoma de Canarias
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por gasto de enfermedad (general)
+
+Normativa: Art. 16 ter Texto Refundido de las disposiciones legales vigentes dictadas por la Comunidad Autónoma de Canarias en materia de tributos cedidos, aprobado por Decreto-Legislativo 1/2009, de 21 de abril
+
+Cuantía de la deducción
+
+El 12 por 100 de los gastos y honorarios profesionales abonados durante el periodo impositivo por la prestación de servicios realizada por quienes tengan la condición de profesionales médicos o sanitarios, excepto farmacéuticos, conforme a lo dispuesto en los artículos 2 y 3 de la Ley 44/2003, de 21 de noviembre, de ordenación de las profesiones sanitarias, por motivo de la prevención, diagnóstico y tratamiento de enfermedades, salud dental, embarazo y nacimiento de hijos, accidentes e invalidez, tanto propios como de las personas que se incluyan en el mínimo familiar.
+
+Importante: en ningún caso se incluye la asistencia con fines estéticos, excepto cuando constituyan la reparación de daños causados por accidentes o intervenciones que afecten a las personas y los tratamientos destinados a la identidad sexual.
+
+Tampoco se integran en la base de la deducción las primas satisfechas por seguros médicos ni el importe de las prestaciones médicas que sean reintegrables por la seguridad social o las entidades que la sustituyan.
+
+El 12 por 100 de los gastos en la adquisición de aparatos y complementos, incluidas las gafas graduadas y las lentillas, que por sus características objetivas solo puedan destinarse a suplir las deficiencias físicas de las personas.
+
+Límites máximos de la deducción
+
+Cuando la suma de la base imponible general y la base imponible del ahorro, casillas [0435] y [0460] de la declaración correspondiente al ejercicio en que se origina el derecho a la deducción, no sea superior a:
+
+- 46.455 euros en tributación individual.
+
+- 61.770 euros en tributación conjunta.
+
+La deducción tendrá un límite anual de 500 euros en tributación individual y 700 euros en tributación conjunta, que se incrementarán en 100 euros en tributación individual cuando el contribuyente sea una persona mayor de 65 años o con discapacidad y acredite un grado de discapacidad igual o superior al 65 por 100.
+
+Cuando la suma de la base imponible general y la base imponible del ahorro sea superior a 46.455 euros en tributación individual o a 61.770 euros en tributación conjunta el límite de deducción será de 150 euros por contribuyente.
+
+Otras condiciones para la aplicación de la deducción
+
+La base conjunta de esta deducción estará constituida por las cantidades justificadas con factura, que deberá cumplir todas las condiciones establecidas en el Reglamento por el que se regulan las obligaciones de facturación aprobado por el Real Decreto 1619/2012, de 30 de noviembre.
+
+La factura recibida por el contribuyente deberá conservarse durante el plazo de prescripción.
+
+La deducción solo la podrán aplicar las personas titulares de las facturas y que, a su vez, realicen el pago por los medios establecidos. No obstante, si se trata de matrimonios en régimen de gananciales las cantidades satisfechas se atribuirán a ambos cónyuges por partes iguales, por lo que ambos padres podrían aplicar la deducción sobre la mitad de las cantidades satisfechas por los gastos originados por los hijos, aunque la factura esté a nombre de uno solo de ellos. En el resto de los casos (separación de bienes, parejas de hecho, etc.) se deberá acreditar quien ha satisfecho los gastos (a priori se entiende que el gasto lo ha satisfecho el titular de la factura, pero se admite prueba que acredite que ha sido otro de los progenitores) que será quien pueda aplicar la deducción y por la totalidad de las cantidades satisfechas por él.
+
+Cuando se trate de gastos y honorarios abonados a profesionales médicos o sanitarios, la aplicación de la deducción queda condicionada a la declaración por parte del contribuyente del número de identificación fiscal del prestador de cada servicio y de su importe anual.
+
+La base de la deducción se minorará en el importe de las ayudas concedidas por las Administraciones Públicas en el periodo impositivo de que se trate, que cubran la totalidad o parte de los gastos que dan derecho a la deducción, siempre que tales ayudas tengan la consideración de renta exenta a los efectos del IRPF.
+
+Importante: una vez introducida por los contribuyentes con derecho a la deducción la información necesaria para su cálculo, será automáticamente trasladada al apartado "Información adicional a la deducción autonómica de Canarias por gasto de enfermedad" del Anexo B.13 de la declaración. 
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

@@ -1,7 +1,7 @@
 # OpenAccountants — GitHub Skills Repository
 
 <!-- The counts sentence below is restamped from the `counts` block of index.json by scripts/build-index.py on every default build; do not edit its figures by hand. The README stats block carries the platform-wide totals. -->
-> Open-source AI skills (tax rules your AI follows) for AI agents. 2,272 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
+> Open-source AI skills (tax rules your AI follows) for AI agents. 2,282 AI skills across 274 jurisdictions in this repository, 33 of them accountant-reviewed and signed off by named Partners (CPAs/CAs/EAs). Live counts: the `counts` block of `index.json`.
 
 ## What this repo is
 
@@ -141,7 +141,7 @@ https://www.openaccountants.com
 
 ========================================================================
 
-## Skill inventory (2272 skills, 274 jurisdictions, 33 accountant-reviewed)
+## Skill inventory (2282 skills, 274 jurisdictions, 33 accountant-reviewed)
 
 - us-1099-k-and-payment-processors | US | tier 2 | reviewed_by -
 - us-education-credits-8863 | US | tier 2 | reviewed_by -
@@ -1478,7 +1478,6 @@ https://www.openaccountants.com
 - mozambique-payroll | MZ | tier 2 | reviewed_by -
 - mozambique-social-contributions | MZ | tier 2 | reviewed_by -
 - mozambique-vat | MZ | tier 2 | reviewed_by -
-- check-out-mr-moe-lwin-tun-johndoe-john-smith-s-profile-on-linkedin-https-mm-linkedin-com-in-mr-moe-lwin-tun-johndoe-john-smith-2b649b428 | MM | tier 2 | reviewed_by -
 - mm-company-formation | MM | tier 2 | reviewed_by -
 - mm-income-tax | MM | tier 2 | reviewed_by -
 - mm-payroll-social | MM | tier 2 | reviewed_by -
@@ -1867,9 +1866,15 @@ https://www.openaccountants.com
 - ss-vat-gst | SS | tier 2 | reviewed_by -
 - es-autonomous-worker | ES | tier 2 | reviewed_by -
 - es-beckham | ES | tier 2 | reviewed_by -
+- es-canary-islands-igic | ES | tier 2 | reviewed_by -
 - es-capital-gains | ES | tier 2 | reviewed_by -
+- es-ceuta-melilla-ipsi | ES | tier 2 | reviewed_by -
 - es-corporate-tax | ES | tier 2 | reviewed_by -
 - es-estimated-tax | ES | tier 2 | reviewed_by -
+- es-foral-corporate-tax | ES | tier 2 | reviewed_by -
+- es-foral-income-tax | ES | tier 2 | reviewed_by -
+- es-foral-non-resident-tax | ES | tier 2 | reviewed_by -
+- es-foral-payroll | ES | tier 2 | reviewed_by -
 - es-income-tax | ES | tier 2 | reviewed_by -
 - es-irpf-deductions | ES | tier 2 | reviewed_by -
 - es-modelo-111 | ES | tier 2 | reviewed_by -
@@ -2270,8 +2275,13 @@ https://www.openaccountants.com
 - in-payroll | US-IN | tier 2 | reviewed_by -
 - in-sales-tax | US-IN | tier 2 | reviewed_by -
 - indiana-sales-tax | US-IN | tier 2 | reviewed_by -
+- ks-corporate-income-tax | US-KS | tier 2 | reviewed_by -
+- ks-cross-border | US-KS | tier 2 | reviewed_by -
 - ks-income-tax | US-KS | tier 2 | reviewed_by -
+- ks-payroll | US-KS | tier 2 | reviewed_by -
 - ks-sales-tax | US-KS | tier 2 | reviewed_by -
+- ks-social-contributions | US-KS | tier 2 | reviewed_by -
+- ks-transfer-pricing | US-KS | tier 2 | reviewed_by -
 - ky-income-tax | US-KY | tier 2 | reviewed_by -
 - ky-payroll | US-KY | tier 2 | reviewed_by -
 - ky-sales-tax | US-KY | tier 2 | reviewed_by -

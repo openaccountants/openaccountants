@@ -10,14 +10,18 @@ description: >
   Kansas", "K-40PN", "Kansas reciprocity", "moving to Kansas".
   Source-cited draft; KDOR withholding-residence rule verified 2026-10-28;
   form IDs and credit mechanics not yet confirmed.
-jurisdiction: US-KS
-category: cross-border
-tax_year: 2026
-tier: 2
-last_updated: 2026-10-28
 version: 0.1
+jurisdiction: US-KS
+tax_year: 2026
+last_updated: 2026-10-29
+authored_by: Jeff Watts
+review_status: pending_review
+trust_label: Accountant-authored
 depends_on:
   - ks-income-tax
+category: cross-border
+tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Kansas cross-border taxation, tax year 2026
@@ -124,6 +128,8 @@ expected:
 | KDOR 2025 individual income tax booklet (due dates) | https://www.ksrevenue.gov/incomebook25.html | 2026-10-28 |
 
 Not yet confirmed: K-40PN vs K-40 + Schedule S Part B form routing for nonresidents (K.S.A. 79-32,150 page at kslegislature.org/li served only a JS shell); the nonresident base and Schedule S Part B allocation detail; part-year allocation detail; the statute, cap and ordering of the resident credit for taxes paid to other states; that Kansas has no reciprocity agreement with Missouri, Nebraska, Oklahoma, Colorado or any other state; that Kansas imposes no exit or departure tax; whether KDOR honours the federal extension for individuals; the individual late-filing and late-payment penalty tiers under K.S.A. 79-32; military residence-retention (MMRA) treatment in Kansas.
+
+> Contributed by Jeff Watts.
 
 <!-- openaccountants-cta-block -->
 
