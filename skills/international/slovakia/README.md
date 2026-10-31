@@ -27,7 +27,7 @@ Calendar tax year. Authority: the Financial Administration (Finančná správa S
 
 ## Out of scope
 
-- VAT: the annual § 50 input-tax coefficient where included-supplies turnover is zero, and the first-breach sanction for a late control statement. Ask a Slovak tax adviser for these.
+- VAT: the annual § 50 input-tax coefficient where included-supplies turnover is zero, and the sanction for a first breach of the control-statement duty. Ask a Slovak tax adviser for these.
 
 ## Official sources
 
