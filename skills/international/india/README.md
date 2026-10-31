@@ -10,7 +10,7 @@ partial: {}
 
 This map is generated from the skill files. All seven domains are listed as applicable until someone has checked which ones exist here against the law.
 
-Tax years in this pack: 14 on 2026, 3 on 2025.
+Tax years in this pack: 14 on 2026, 2 on 2025.
 
 ## Domains
 
@@ -18,7 +18,7 @@ Tax years in this pack: 14 on 2026, 3 on 2025.
 |---|---|---|
 | IT-IND, individual income tax | in-income-tax (2025), in-tds-freelance (2026) | sourced from the law |
 | IT-CORP, corporate income tax | (missing) | |
-| VAT, indirect tax | in-gst-return (2025), india-gst (2026) | sourced from the law |
+| VAT, indirect tax | india-gst (2026) | sourced from the law |
 | SC, social contributions | (missing) | |
 | PR, payroll withholding | india-payroll (2026) | sourced from the law |
 | TP, transfer pricing | india-transfer-pricing (2026) | sourced from the law |
