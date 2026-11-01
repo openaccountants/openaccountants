@@ -10,7 +10,7 @@ description: >
   Congolese group transactions, intercompany pricing, documentation thresholds
   and an initial filing workpaper. Implementing templates, exchange lists and
   authenticated submission steps remain unconfirmed. This is a source-cited
-  draft for independent review, not accountant attestation or a completed
+  draft, not accountant attestation or a completed
   benchmarking study.
 jurisdiction: CD
 category: transfer-pricing
@@ -148,4 +148,4 @@ expected:
 | Budget Ministry, rectifying Act 26/032: tax-amendment chapter and arts. 49–51; original unamended provisions retained. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01 |
 | DGI IS information page, public online declaration/payment link only; no authenticated TP workflow read. | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01 |
 
-Not yet confirmed: current ministerial master/local-file content and prescribed pricing-method/range rules; current annual electronic TP form, field mapping, upload and acknowledgement/payment steps; CbC format, exchange-partner list, conversion instruction and notifications; Congolese non-cooperative list; detailed general interest, combined-penalty and dispute treatment; treaty/corresponding-adjustment procedures; specialist sector rules. The six retained 2025 Guides are not validated by this new method. Independent review is pending.
+Not yet confirmed: current ministerial master/local-file content and prescribed pricing-method/range rules; current annual electronic TP form, field mapping, upload and acknowledgement/payment steps; CbC format, exchange-partner list, conversion instruction and notifications; Congolese non-cooperative list; detailed general interest, combined-penalty and dispute treatment; treaty/corresponding-adjustment procedures; specialist sector rules. The retained 2025 Guides are not validated by this new method.

@@ -12,7 +12,7 @@ covered_by:
   XB: cd-cross-border
 partial:
   IT-IND: "IRPP residence/global-income/selected base/scale/reporting rewrite accepted as conditional source-faithful research only; carried law, full category calculations, special workers, family/minimum interactions and authenticated filing remain unresolved."
-  IT-CORP: "Ordinary 2026 IS calculation/selected expense/loss/payment preparation rewrite accepted as conditional source-faithful research only; complete allowances, interest, special regimes, transition, rounding and authenticated filing remain unverified."
+  IT-CORP: "Ordinary 2026 IS calculation/selected expense/loss/payment preparation rewrite accepted as conditional source-faithful research only; complete allowances, interest, special regimes, transition and authenticated filing remain unverified."
   VAT: "The retained 2025 Guide has not been reconciled with the original and August rectifying 2026 Finance Acts or current invoicing procedures."
   SC: "The retained 2025 payroll/social Guide and its social-security, training and employment contributions have not been checked against current primary law."
   PR: "The retained 2025 payroll/social Guide has not been rebuilt for IRPP withholding and the current expatriate-employer levy."
@@ -22,7 +22,7 @@ partial:
 
 # DR Congo: tax pack
 
-**Partial pack, 1 November 2026.** Four existing 2025 Guides remain byte-for-byte unchanged. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f05e8c9785a0573787887e403e07daf20a41e75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde60a16e113f9056297e6d6ae09d0294bec075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
+**Partial pack, 1 November 2026.** Four existing 2025 Guides remain byte-for-byte unchanged. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f 05e 8c 9785a 0573787887e 403e 07 daf 20a 41e 75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde 60a 16e 113f 9056297e 6d 6 ae 09d 0294 bec 075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -39,7 +39,7 @@ A current-year label or a passed source review of one job does not establish com
 ## What still needs doing
 
 - Income tax: preserve the completed 42-row independent source review and 14-topic destination map; resolve carried law, complete category calculations, family/minimum and other stated interactions before claiming completion.
-- Company tax: preserve the completed independent source review of the ordinary IS workpaper and its 41-row ledger; resolve complete allowances/interest, specialist regimes, reform transitions, rounding and authenticated filing before claiming completion.
+- Company tax: preserve the completed independent source review of the ordinary IS workpaper and its 41-row ledger; resolve complete allowances/interest, specialist regimes, reform transitions and authenticated filing before claiming completion.
 - VAT or sales tax: bring [VAT or GST](cd-vat-gst.md) up to the current tax year.
 - Social contributions: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
 - Payroll: bring [Payroll social](cd-payroll-social.md) up to the current tax year.
@@ -52,6 +52,8 @@ The [writer ledgers](../../evidence/ledgers/cd-transfer-pricing.md) and [payment
 
 Tracked in [\[CD\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/448).
 
+After that review, a maintainer check on 1 November 2026 corrected the article 150 rounding text against the scan; the earlier "unusual wording" hold was a misquote.
+
 ## Other skills
 
 - [Company formation](cd-company-formation.md) (2025)
@@ -59,10 +61,10 @@ Tracked in [\[CD\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Corporate expansion: conditional source review accepted
 
-The [corporate ledger](../../evidence/ledgers/cd-corporate-income-tax.md) records41new rule rows. The [corporate old-topic destination map](../../evidence/ledgers/dr-congo-corporate-old-topics.md) accounts for all16old bold-rule topics and supersedes only the initial map’s unchanged-corporate statement for this rewrite. The original86-topic map and prior review evidence remain historical records. New source reading covers ordinary IS scope, selected expense and loss conditions, minimum tax, provisional payments, annual return/attachments and assembly minutes. The authenticated portal/form/receipt path and stated legal gaps remain open. The [fresh independent expansion review](../../evidence/ledgers/dr-congo-expansion-review-20261101/review.md) accepted source fidelity within the conditional research scope. It does not establish currentness, a completed domain or publication.
+The [corporate ledger](../../evidence/ledgers/cd-corporate-income-tax.md) records 41 new rule rows. The [corporate old-topic destination map](../../evidence/ledgers/dr-congo-corporate-old-topics.md) accounts for all 16 old bold-rule topics and supersedes only the initial map’s unchanged-corporate statement for this rewrite. The original 86-topic map and prior review evidence remain historical records. New source reading covers ordinary IS scope, selected expense and loss conditions, minimum tax, provisional payments, annual return/attachments and assembly minutes. The authenticated portal/form/receipt path and stated legal gaps remain open. The [fresh independent expansion review](../../evidence/ledgers/dr-congo-expansion-review-20261101/review.md) accepted source fidelity within the conditional research scope. It does not establish currentness, a completed domain or publication.
 
-The corporate expansion also carries an explicit research hold for unreconciled original2025 provisions imported by the2026Finance Law. The actual2025rectifying article9 has been read, but does not replace the missing original chain. The rewrite and its examples remain conditional research; no final2026liability or live filing approval is claimed.
+The corporate expansion also carries an explicit research hold for unreconciled original 2025 provisions imported by the 2026 Finance Law. The actual 2025 rectifying article 9 has been read, but does not replace the missing original chain. The rewrite and its examples remain conditional research; no final 2026 liability or live filing approval is claimed.
 
 ## Individual expansion: conditional source review accepted
 
-The [IRPP ledger](../../evidence/ledgers/cd-income-tax.md) records42rows and the [individual old-topic map](../../evidence/ledgers/dr-congo-income-old-topics.md) accounts for14old topics. The rewrite distinguishes the individual30April return from the employer31March salary report, preserves actual residence/source conditions, and replaces the old salary-only architecture with global-income research. Both examples pass but are conditional research, not2026liability approval. The fresh review checked all 42 individual and 41 corporate ledger rows, independently recomputed all four examples and checked all 30 destination rows. Four untouched 2025 Guides remain outside the new review scope.
+The [IRPP ledger](../../evidence/ledgers/cd-income-tax.md) records 42 rows and the [individual old-topic map](../../evidence/ledgers/dr-congo-income-old-topics.md) accounts for 14 old topics. The rewrite distinguishes the individual 30 April return from the employer 31 March salary report, preserves actual residence/source conditions, and replaces the old salary-only architecture with global-income research. Both examples pass but are conditional research, not 2026 liability approval. The fresh review checked all 42 individual and 41 corporate ledger rows, independently recomputed all four examples and checked all 30 destination rows. Four untouched 2025 Guides remain outside the new review scope.
