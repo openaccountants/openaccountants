@@ -1,0 +1,166 @@
+[
+  {
+    "id": "apim",
+    "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/",
+    "sha256": "f9742f695e81c33bc67917bf1554a24e86c9e08d4553109ec561e71293865c40",
+    "bytes": 476426,
+    "read_scope": "Full creation page: legal forms, common/specific documents, complete-file timing and FAQ/online link. No private Khidmaty account or live submission.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "bcm-enterprise",
+    "url": "https://education-financiere.bcm.mr/fr/espace-entreprise/guide-entrepreneur/",
+    "sha256": "86687a0e30dceaef7f1c30297d86582ba3fe1f8a043304b52123d7119e48c384",
+    "bytes": 106597,
+    "read_scope": "Full entrepreneur guide: entity types/capital/liability and four registration steps. Primary administrative explanation; underlying Commercial Code not read.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "cgi2023",
+    "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf",
+    "sha256": "2972be620009381468a05ee21295c8b5b01cdebc15e4a7692c1fcdf861edd71f",
+    "bytes": 2524626,
+    "read_scope": "Official version cover/amendment list and selected CGI arts. 1–14, 23–24, 40–46, 49–67, 68–98, 99–118, 119–137, 150–157, 209–215 (exemption list introductory categories only), 216–221, 227–250, 253–254, LPF L.131–L.139. Not the entire 168-page code or full sector/special regimes.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "cnam-affiliation",
+    "url": "https://www.cnam.mr/fr/procedures_affiliation_des_employes/",
+    "sha256": "56a80d4678e21f894e5c5796149280d65293cc15f79691d090e98dfd1abc5f8a",
+    "bytes": 181398,
+    "read_scope": "Live affiliation steps 2–5, dossier, submission, estimated processing and listed rates. No current online payment/form screens.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "cnam-decree2012",
+    "url": "https://www.finances.gov.mr/Recueil_des_textes_relatifs_a_la_mission_du_Ministere/TEXTES/ASSURANCES/D%C3%A9cret%202012-261%20St%C3%A9%20priv%C3%A9es%20CNAM.pdf",
+    "sha256": "04f65e45fecbd49e71e24e9b83f0c7ddc02818bcb089be7543537351b332ca2b",
+    "bytes": 201542,
+    "read_scope": "All arts. 1–10, both physical pages, especially worker/company definitions, contribution table/base and monthly payment rule.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "cnss-ministry",
+    "url": "https://www.fonctionpublique.gov.mr/fr/node/47",
+    "sha256": "2bcb4eaca671e2dbf5c44ab7f91187ab05e118ae05e2fccbe4d18a2b861a278e",
+    "bytes": 45499,
+    "read_scope": "Full CNSS institution page: covered population, contribution financing/rates, wage floor and ceiling. Current administrative page, not the underlying rate decree or all remittance/penalty rules.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "creation-procedure",
+    "url": "https://www.procedures.gov.mr/fr/procedure/790",
+    "sha256": "1baad94ca1ba5d4ae75f5047463d75769c71f06506c9df003c6a20148b34415a",
+    "bytes": 17215,
+    "read_scope": "Full procedure 790 including page update 17 October 2023, dated published fees, 48-hour process and legal references. 2026 fee continuation not established.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "is-form",
+    "url": "https://impots.gov.mr/DGI/files/IS-RN-RI-fr-pdf.pdf",
+    "sha256": "e2d65a125801f34633cbfdb7557fb0a8db3383298423a167b6120ec945610ffd",
+    "bytes": 422009,
+    "read_scope": "Full one-page DGI form C/D/E and notes",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lfi2024",
+    "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf",
+    "sha256": "0a2da7342dd4ef22fc6364314d88104b65c21a520cf5ce3f31027cd43d12f742",
+    "bytes": 34368087,
+    "read_scope": "OCR physical pp. 6–21; tax amendment provisions, especially replacement arts. 66–67, 120/125 and LPF L.3/L.25/L.131. Physical p. 8 visually inspected for duplicated wording. Not budget appropriations or full annexes.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lfi2026",
+    "url": "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf",
+    "sha256": "81deb4bef7b582121c1d59b5d1b7e2b0bddf954995c7719bbdaba9b9a3692c79",
+    "bytes": 5536358,
+    "read_scope": "Art. 3.1 financial-operations/electronic-transaction tax text, printed pp. 3–5, and introductory provisions. Law-number/date in selectable text unresolved; no upload-date commencement inference.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lfr2023",
+    "url": "https://www.finances.gov.mr/sites/default/files/2023-08/LFR%202023-FR%20Final%201%20-%20Copie_0.pdf",
+    "sha256": "9a1b83ebd18ef1f3ded0fbabafafae92838d8cc1215fcf3739340f83d577329c",
+    "bytes": 42549293,
+    "read_scope": "Art. 3.1 replacement art. 230, annual-return art. 59 addition and telecommunication-tax text, printed pp. 4–6. Front tax-page enactment scan not read; no asserted date of commencement.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lfr2026",
+    "url": "https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf",
+    "sha256": "7f41cb8f67b8fc6af16551aac7d8861220089272267796a2cab516109bfbce17",
+    "bytes": 6712151,
+    "read_scope": "Art. 3.1 comparison text printed pp. 6–18, covering art. 14, 210, 219, 221/221bis, 249bis/ter, 293decies, LPF L.8/L.8bis/L.16bis/L.20/L.25/L.26. Operative commencement and implementing texts not established.",
+    "captured_on": "2026-11-01",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "lfi2025",
+    "url": "https://www.finances.gov.mr/sites/default/files/2025-01/LOI%20DE%20FINANCES%20POUR%20L%27ANNEE%202025.pdf",
+    "sha256": "995f596f617f4b5301db360fb4d75a653c5d6277c014bbcbfe82a88f8444e053",
+    "bytes": 13502447,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "lfr2025",
+    "url": "https://www.finances.gov.mr/sites/default/files/2025-08/LOI%20DE%20FINANCES%20RECTIFICATIVE%20POUR%20L%E2%80%99ANN%C3%89E%202025.pdf",
+    "sha256": "cc0455418dce5c0ffea59f3f5644976ff4393a92c8dd52c2f8b8c42e44eb74d7",
+    "bytes": 10101385,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "lfr2024",
+    "url": "https://www.finances.gov.mr/sites/default/files/2024-10/LFR%202024%20FR%20VF%20.pdf",
+    "sha256": "2b18b3bd1876742bfa53159a7e432f8e7ec7ef4078d0340d59e78dee45aba759",
+    "bytes": 19000773,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "apim-guide",
+    "url": "https://apim.gov.mr/wp-content/uploads/2022/12/Dossier-Creation_FR_18112022_FV-2.pdf",
+    "sha256": "e2ff1c870c7675b8aa6b1b0ad957167479de807204ca13b1759be11988ddfcce",
+    "bytes": 473301,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "lfi2023",
+    "url": "https://www.finances.gov.mr/sites/default/files/2023-01/LFI%202023%20%20FR.pdf",
+    "sha256": "9fdfbbef041a4f247a7a795db68fa1b87d6279dd3f3e13ae3fbf88a4c8b60e72",
+    "bytes": 76143842,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "cgi2024",
+    "url": "https://impots.gov.mr/DGI/files/CGI%20-%20RIM%20-%20FR%20-%202024.pdf",
+    "sha256": "8a60b1614cd6a569b4a0db26e7ac68f6252a109b4fdff5c5de0597bb04799025",
+    "bytes": 261908483,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  },
+  {
+    "id": "cbcr-order",
+    "url": "https://impots.gov.mr/DGI/files/arretes_fr/Arr%C3%AAt%C3%A9%20n%C2%B000204%20-%20D%C3%A9claration%20pays%20par%20pays.pdf",
+    "sha256": "06a23cc3a9d9e71453b9cc9ab736745b12014b94bcdda0412ee6fedf965823bd",
+    "bytes": 4130817,
+    "read_scope": "Captured only, not a source for an operative legal claim. CGI2024 download is structurally invalid/truncated; LFI2023 front law page not readable without OCR; CbCR order not yet read.",
+    "captured_on": "2026-11-01"
+  }
+]

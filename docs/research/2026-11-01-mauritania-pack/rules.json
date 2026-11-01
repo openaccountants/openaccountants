@@ -1,0 +1,1098 @@
+{
+  "base_commit": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "rules": [
+    {
+      "id": "C01",
+      "title": "Tax and legal persons",
+      "text": "IS replaces IBIC and IMF. Capital companies, including a single-member SARL, fall within IS; classify other entities under arts. 2–4 before computing.",
+      "article": "CGI arts. 1–4",
+      "quote": "cet impôt, désigné sous le nom d’impôt sur les sociétés (IS), remplace",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C02",
+      "title": "Territorial business profits",
+      "text": "Use profits of enterprises operated in Mauritania and profits allocated by a double-tax agreement. Residence means registered office or effective management in Mauritania; nonresident enterprises with a local permanent establishment are included.",
+      "article": "CGI art. 5",
+      "quote": "dont le siège social ou le lieu de direction effective est situé en Mauritanie",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C03",
+      "title": "Normal regime",
+      "text": "Annual turnover excluding tax above MRU 5,000,000 brings the normal real regime. Prorate the limit for a start or cessation during the year; a fall below the limit needs two consecutive years before moving down.",
+      "article": "CGI art. 44",
+      "quote": "supérieur à cinq millions (5.000.000) d’Ouguiya",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C04",
+      "title": "Intermediate regime",
+      "text": "A company at or below MRU 5,000,000 annual turnover excluding tax uses the intermediate real regime, subject to the normal-regime transition rule. Crossing above moves it to normal the following year.",
+      "article": "CGI art. 46",
+      "quote": "inférieur ou égale à cinq millions (5.000.000) d’Ouguiya",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C05",
+      "title": "Normal IS calculation",
+      "text": "For an ordinary normal-regime company, compare 25% of taxable net profit, 2% of taxable products under art. 8 excluding transfers and reversals of charges, and the MRU 100,000 minimum. Pay the greatest before credits. This is not a universal 2.5% turnover formula.",
+      "article": "CGI art. 51(1)",
+      "quote": "l’impôt sur les sociétés dû est égal à 25 % du bénéfice net imposable ou à 2 %",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C06",
+      "title": "Intermediate IS calculation",
+      "text": "Compare 25% of taxable net profit with 2.5% of taxable products under art. 8 excluding transfers and reversals of charges. Do not import the normal-regime fixed minimum into this paragraph. Special art. 225 margin businesses need their separate base.",
+      "article": "CGI art. 51(2)",
+      "quote": "égal à 25 % du bénéfice net imposable ou à 2,5 % des produits imposables",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C07",
+      "title": "Accounting bridge and rounding",
+      "text": "Start with the net result of all operations, including disposals, and reconcile net assets, contributions and withdrawals under art. 7. Round taxable net profit or taxable products down to the nearest MRU 10. Art. 8 products use the accrued-right principle.",
+      "article": "CGI arts. 7–9",
+      "quote": "est arrondi à la dizaine d’Ouguiya inférieure",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C08",
+      "title": "Ordinary deductible expenses",
+      "text": "Expenses must serve the business, be real, documented with a regular invoice or import declaration bearing the supplier NIF, be booked as expenses, reduce net assets, not create exempt income and belong to the period. The later 2026 replacement of art. 14 needs its commencement resolved before this baseline can support a filing.",
+      "article": "CGI art. 14(1)",
+      "quote": "L’absence de la mention du numéro d’identification fiscale (NIF) du fournisseur",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C09",
+      "title": "Cash-payment exclusion",
+      "text": "An expense paid in cash to another business is not deductible where its unit amount exceeds MRU 200,000; the limit is MRU 50,000 for fishery-product exporting and processing businesses. Do not split a payment to assume deductibility.",
+      "article": "CGI art. 14(3)",
+      "quote": "leur montant unitaire excède 200.000 MRU",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C10",
+      "title": "Accounting year",
+      "text": "Close accounts at 31 December. A new enterprise can close its first balance sheet at the following year-end, but must prepare a provisional operating account at the first 31 December, tax it immediately and deduct that tax from the first balance-sheet assessment.",
+      "article": "CGI art. 50(3)–(5)",
+      "quote": "arrêter chaque année leurs comptes à la date du 31 décembre",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C11",
+      "title": "Return and payment calendar",
+      "text": "Declare the previous 31 December result by 31 March. For ordinary normal/intermediate IS, pay 40% by 31 March, 30% by 30 June and the balance by 30 September of the following year, using the prescribed return and financial statements.",
+      "article": "CGI arts. 58(1), 59(1)",
+      "quote": "Il représente 40 % du montant de l’impôt sur les sociétés dû",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C12",
+      "title": "Return attachments",
+      "text": "Normal-regime attachments include prescribed annual financial statements and annexes, annual salary declaration, third-party fee declaration, partner/distribution declaration, depreciation/provision table and detailed rent schedule. Intermediate companies attach simplified prescribed financial statements and annexes. Both provide constitutional amendments where relevant and statutory-body minutes within seven months of closing.",
+      "article": "CGI arts. 61(1)–(2), 62",
+      "quote": "dans les sept (7) mois de la clôture de l’exercice",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C13",
+      "title": "Withholding credits",
+      "text": "IRCM and IRF withheld on income included in business profits are creditable against IS; unused credits carry forward. Credits relating to an IS exemption are definitively retained by the Treasury. Keep certificates and match income before claiming.",
+      "article": "CGI arts. 53–54",
+      "quote": "Lorsque le montant du crédit ne peut pas être imputé",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C14",
+      "title": "Privileged-tax jurisdictions",
+      "text": "Deducted payments to a recipient in a privileged-tax jurisdiction must be added back unless the enterprise proves a real transaction and an amount that is neither abnormal nor excessive. The comparison is tax payable less than half the ordinary Mauritanian equivalent, not a country-name blacklist.",
+      "article": "CGI art. 23",
+      "quote": "des opérations réelles et ne présentent pas un caractère anormal ou exagéré",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C15",
+      "title": "Annual filing sanctions",
+      "text": "The baseline LPF L.131(3) imposes 1% of tax-inclusive turnover for a missing/late annual return or mandatory document, with ordinary minimums MRU 50,000 normal and MRU 35,000 intermediate, and separate exempt/convention-company minimums MRU 150,000 and MRU 75,000. Confirm which failure is assessed; do not silently substitute a generic late-payment percentage.",
+      "article": "LPF art. L.131(3)",
+      "quote": "1 % du chiffre d’affaires toutes taxes comprises",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "C16",
+      "title": "Recovery penalty trigger",
+      "text": "For a spontaneous-payment tax covered by a recovery notice, L.136(1) gives a 10% principal surcharge, counted from the fourth day after notification of that notice. It is not a daily interest rate or an automatic charge starting on the ordinary return due date.",
+      "article": "LPF art. L.136(1)",
+      "quote": "à partir du quatrième jour suivant la notification de l’avis de mise",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I01",
+      "title": "Separate individual business tax",
+      "text": "IBAPP taxes habitual own-account profit-making activity of natural persons and qualifying persons outside IS. Use Mauritanian profits and treaty allocations under art. 71, rather than applying one worldwide-income statement to every category of personal income.",
+      "article": "CGI arts. 68–71",
+      "quote": "en tenant compte uniquement des bénéfices réalisés en Mauritanie",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I02",
+      "title": "IBAPP regimes",
+      "text": "Normal applies above MRU 5,000,000 turnover excluding tax; intermediate from MRU 3,000,000 to MRU 5,000,000; forfait strictly below MRU 3,000,000. Importers cannot use forfait. Read two-year downward transitions, next-year normal transition, immediate forfait crossing, prorating and elections under arts. 73, 77–82.",
+      "article": "CGI arts. 73, 77–82",
+      "quote": "Les importateurs ne peuvent pas relever du régime du forfait",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I03",
+      "title": "IBAPP real-regime computation",
+      "text": "Ordinary normal/intermediate IBAPP compares 30% of taxable profit with 2.5% of art. 8 taxable products excluding transfers/reversals of charges, then the respective MRU 125,000/MRU 75,000 minimum. Transport, art. 225 margin businesses, retail petroleum and artisanal fisheries have separate rules in art. 87(3), (4), (6).",
+      "article": "CGI art. 87",
+      "quote": "cent vingt-cinq mille (125.000) Ouguiya",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I04",
+      "title": "Forfait computation",
+      "text": "Qualifying forfait taxpayers pay 3% of declared turnover using a DGI-issued or approved form by 31 March. Keep the receipts/expenses register under art. 84; this is not permission to treat an importer as forfait.",
+      "article": "CGI arts. 81, 84, 88",
+      "quote": "égal à 3 % du chiffre d’affaires déclaré au plus tard le 31 mars",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I05",
+      "title": "IBAPP tax base",
+      "text": "Art. 74 imports IS profit rules but excludes specified exchange gains/losses, head-office charges, gifts/subsidies, deferred depreciation in loss periods, accelerated/declining depreciation and provisions. Property in the business balance sheet can enter an irrevocable IRF election under art. 75, with related expenses no longer deductible from IBAPP.",
+      "article": "CGI arts. 74–75",
+      "quote": "les résultats imposables sont déterminés dans les conditions prévues en matière d’impôt sur les sociétés",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I06",
+      "title": "IBAPP filing and payments",
+      "text": "Declare by 31 March for the previous 31 December year. Ordinary real-regime IBAPP pays 40% by 31 March, 30% by 30 June and the balance by 30 September; forfait is fully payable when the return is delivered, by 31 March.",
+      "article": "CGI arts. 90, 94–96",
+      "quote": "d’acquitter leur cotisation d’impôt sur les bénéfices d’affaires dès la remise de leur déclaration",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I07",
+      "title": "Employment territorial scope",
+      "text": "ITS covers salary for work in Mauritania; it also covers a domiciled employee even where work or employer is abroad, and an employee domiciled abroad where the work is in Mauritania, subject to treaties. Fiscal domicile is a permanent home, or, without such a home, the centre of vital interests.",
+      "article": "CGI art. 111",
+      "quote": "le centre de leurs intérêts vitaux",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I08",
+      "title": "Employment base and exemption",
+      "text": "Use cash remuneration and salary supplements, art. 113 benefit-in-kind treatment, compulsory pension/social deductions and art. 110 exemptions. Art. 110(1)(c) excludes MRU 6,000 monthly remuneration before the art. 114 scale. The scale thresholds refer to the resulting taxable remuneration, not unadjusted gross salary.",
+      "article": "CGI arts. 109–114",
+      "quote": "un montant de six mille (6.000) Ouguiya par mois de la rémunération",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I09",
+      "title": "ITS formulas",
+      "text": "After base adjustments, round taxable monthly remuneration RI down to MRU 10. If RI is at most 9,000, tax = RI × 15%; above 9,000 through 21,000, tax = RI × 25% minus 900; above 21,000, tax = RI × 40% minus 4,050. Fraction-month pay is prorated; nonmonthly pensions/annuities are converted to monthly.",
+      "article": "CGI art. 114",
+      "quote": "I = (R.I. x 0.40) - 4.050",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I10",
+      "title": "Employment exceptions",
+      "text": "Professional expense allowances other than housing, transport, responsibility and office allowances have a combined MRU 1,000 monthly exemption under art. 110(1)(b); family-related allocations and listed war/disability pensions have their own exemptions. Art. 110(4) exempts real-value benefits in kind not exceeding 20% of cash remuneration; art. 113 otherwise refers to 40% benefit inclusion. Obtain a category-by-category benefit reconciliation before using that interaction.",
+      "article": "CGI arts. 110, 113",
+      "quote": "qui n’excèdent pas 20 % de la rémunération perçue",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I11",
+      "title": "Salary withholding and annual schedule",
+      "text": "The payer withholds when paying and reports/remits by the 15th of the next month using the prescribed form with NIF, period, remuneration and total withholding. The annual per-beneficiary salary schedule is due in the first fifteen days of February; art. 117(2) sets MRU 200 per omission/inaccuracy.",
+      "article": "CGI arts. 115–117",
+      "quote": "dans les quinze premiers jours du mois de février de chaque année",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I12",
+      "title": "Foreign employer/direct payment",
+      "text": "An employee covered by art. 111(2)(a) declares and pays ITS on taxable income by the 15th of the month after receipt using the prescribed form at the Treasury accountant for their domicile. This is not a universal annual March salary return.",
+      "article": "CGI art. 118",
+      "quote": "au plus tard le 15 du mois suivant leur perception",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "I13",
+      "title": "Property income",
+      "text": "IRF applies to rent and covered property gains outside taxable business profit, subject to the art. 75 election. Ordinary rent base is rent accrued whether received or not; subletting uses the rent difference. Art. 102(4) exempts annual rental income at most MRU 6,000 only where it is exclusive of all other income. IRF is 10%; the ordinary rent declaration/payment is before 1 March.",
+      "article": "CGI arts. 99, 102, 105–106",
+      "quote": "Le taux de l’impôt sur les revenus fonciers est fixé à 10 %",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "P01",
+      "title": "CNSS covered workers and rates",
+      "text": "The supervising ministry identifies workers under the Labour/Maritime Labour Codes, state contract/nonpermanent personnel, vocational pupils, interns, apprentices, domestic, temporary and occasional workers. Its current CNSS page states employer 13%, employee 1%, on monthly pay capped at MRU 15,000 and not below the stated MRU 4,500 SMIG. Do not reuse the old 15% total or its inconsistent branch components.",
+      "article": "Ministry CNSS page, population/source-of-financing sections",
+      "quote": "Des cotisations patronales (13%) et ouvrière (1%).",
+      "source": "cnss-ministry",
+      "url": "https://www.fonctionpublique.gov.mr/fr/node/47"
+    },
+    {
+      "id": "P02",
+      "title": "Private-sector CNAM scope",
+      "text": "For this decree, employees are Labour/Maritime Labour Code workers on indefinite employment contracts; private companies must be registered in the commercial register, affiliated to social security and hold a NIF. Do not extrapolate these rules to every short-term worker, public employee or self-employed person.",
+      "article": "Decree 2012-261 arts. 1–3",
+      "quote": "sur la base d’un contrat de travail à durée indéterminée",
+      "source": "cnam-decree2012",
+      "url": "https://www.finances.gov.mr/Recueil_des_textes_relatifs_a_la_mission_du_Ministere/TEXTES/ASSURANCES/D%C3%A9cret%202012-261%20St%C3%A9%20priv%C3%A9es%20CNAM.pdf"
+    },
+    {
+      "id": "P03",
+      "title": "Private-sector CNAM computation",
+      "text": "Covered private-company employees contribute 4% and the employer 5%, based on all gross remuneration including allowances and bonuses. Private retirement pensions use 2.5% insured contribution. The decree states no CNSS-style wage ceiling for this base.",
+      "article": "Decree 2012-261 art. 4",
+      "quote": "assises sur l’ensemble des rémunérations brutes perçues par les employés y compris les indemnités et primes.",
+      "source": "cnam-decree2012",
+      "url": "https://www.finances.gov.mr/Recueil_des_textes_relatifs_a_la_mission_du_Ministere/TEXTES/ASSURANCES/D%C3%A9cret%202012-261%20St%C3%A9%20priv%C3%A9es%20CNAM.pdf"
+    },
+    {
+      "id": "P04",
+      "title": "CNAM payment",
+      "text": "Pay each monthly contribution by the 10th of the following month to a CNAM account at the Treasury or a national bank. Separate that date from the ITS 15th deadline; the CNSS remittance calendar is not established by this decree.",
+      "article": "Decree 2012-261 art. 5",
+      "quote": "au plus tard le 10 du mois suivant",
+      "source": "cnam-decree2012",
+      "url": "https://www.finances.gov.mr/Recueil_des_textes_relatifs_a_la_mission_du_Ministere/TEXTES/ASSURANCES/D%C3%A9cret%202012-261%20St%C3%A9%20priv%C3%A9es%20CNAM.pdf"
+    },
+    {
+      "id": "P05",
+      "title": "CNAM affiliation workflow",
+      "text": "The live CNAM procedure requires a company dossier including proof of the last quarter CNSS contribution and a company contact, deposited at the Cellule du Recouvrement. CNAM checks the dossier and registers the company/employees/dependants; its stated 14 working days is an estimate. Then declare employees and remit contributions.",
+      "article": "CNAM affiliation procedure sections 2–5",
+      "quote": "Le dossier doit être déposé au niveau de la Cellule du Recouvrement",
+      "source": "cnam-affiliation",
+      "url": "https://www.cnam.mr/fr/procedures_affiliation_des_employes/"
+    },
+    {
+      "id": "P06",
+      "title": "Apprenticeship levy",
+      "text": "Real-regime IS/IBAPP employers owe apprenticeship tax at 0.60% of annual staff remuneration including benefits in kind, with the base rounded down to MRU 10. Qualifying apprenticeship relief is MRU 40 per apprentice present on 1 January under a regular contract, capped at 50% of the levy; discretionary education-related exemption needs application before 1 February.",
+      "article": "CGI arts. 150–153",
+      "quote": "Le taux de taxe est fixé à 0,60 %.",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "P07",
+      "title": "Apprenticeship calendar",
+      "text": "File the annual employer/base declaration before 1 February and pay by the declaration due date. A cessation, transfer or death triggers a declaration within 30 days. It is not a monthly 15th contribution.",
+      "article": "CGI arts. 155–157",
+      "quote": "chaque année, avant le 1",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V01",
+      "title": "Ordinary VAT scope",
+      "text": "VAT covers independent taxable operations under arts. 209–211. Ordinary authority to invoice VAT begins at annual turnover excluding tax of MRU 3,000,000 or more; importers are subject regardless of turnover. Below-threshold release requires two consecutive years below.",
+      "article": "CGI art. 211",
+      "quote": "supérieur ou égal à 3.000.000 MRU",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V02",
+      "title": "Threshold crossing",
+      "text": "If turnover crosses the limit during the year, VAT is due from the day of crossing. Notify DGI before the end of the following month; declare/pay VAT on the crossing month no later than the VAT for that following month. Do not charge retrospectively on every earlier sale solely because the year total exceeds the limit.",
+      "article": "CGI art. 211(3)",
+      "quote": "la taxe est due à compter du jour où s’est produit ce dépassement",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V03",
+      "title": "Rates",
+      "text": "The ordinary rate is 16% and taxable-person exports of goods/services use 0%; the 2023 rectifying Act adds 18% for telephony. Zero rating preserves deduction subject to the deduction rules; exemption is a separate classification.",
+      "article": "CGI art. 230 as replaced by LFR2023 art. 3.1",
+      "quote": "Taux majoré : 18 % pour la téléphonie",
+      "source": "lfr2023",
+      "url": "https://www.finances.gov.mr/sites/default/files/2023-08/LFR%202023-FR%20Final%201%20-%20Copie_0.pdf"
+    },
+    {
+      "id": "V04",
+      "title": "Supply location",
+      "text": "Goods are located where present at delivery, with the imported-goods and installed-goods rules in art. 217; real-property works are located where executed. Services are taxable where performed or, if performed abroad, used/exploited in Mauritania; export-service treatment and immovable/event exceptions require art. 219. Without proof of foreign location, art. 220 deems location Mauritania.",
+      "article": "CGI arts. 216–220",
+      "quote": "utilisée ou exploitée en Mauritanie, l’imposition est faite en Mauritanie",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V05",
+      "title": "Exclusions and exemptions",
+      "text": "Art. 214 excludes operations subject to financial-operations tax/special insurance tax and, in the baseline text, nonresident services subject to art. 132 withholding. Art. 215 exempts specified medical/hospital services, approved education and listed foods with detailed conditions. Do not turn those lists into a universal basic-food or imported-service exemption. The 2026 digital-services changes need separate reconciliation.",
+      "article": "CGI arts. 214–215",
+      "quote": "les opérations soumises à la taxe sur les opérations financières",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V06",
+      "title": "VAT point and cash/debit distinction",
+      "text": "For goods, follow delivery; imports become payable on release for consumption; services normally become payable on receipt of price/advances; works on execution or earlier receipt. Express DGI authorisation is needed for debit accounting, applying to all operations, from the next month; read its duration/revocation rules.",
+      "article": "CGI arts. 227–229",
+      "quote": "Pour les prestations de services, au moment de l’encaissement du prix ou des acomptes.",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V07",
+      "title": "Input VAT controls",
+      "text": "Deduct only tax attributable to eligible taxable activity under arts. 231–243. Keep paid import entries or separately stated regular invoices; a taxable supplier must give a VAT-liability certificate to a taxable customer, and without that certificate the customer cannot deduct. Read exclusions and mixed-use allocation before computing.",
+      "article": "CGI arts. 231–243",
+      "quote": "En l’absence d’attestation d’assujettissement à la taxe sur la valeur ajoutée",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V08",
+      "title": "Returns, payment and deduction schedule",
+      "text": "File monthly, including a Néant return where no activity, and pay by the 15th of the following month. The return records turnover, taxable operations, eligible input and net tax, with signed/stamped purchase/import deduction details under art. 249. An omitted/incorrect deduction schedule causes disallowance that the text bars from later corrective/repeated deduction.",
+      "article": "CGI arts. 249–250, 254",
+      "quote": "La déclaration d’un mois donné doit être déposée au plus tard, le 15 du mois suivant",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V09",
+      "title": "Credits and refunds",
+      "text": "Carry excess input tax forward under art. 244. Refunds are limited to art. 245 eligible cases, notably exporters and loss of taxable status, subject to art. 246: written request, at least MRU 100,000, three preceding credit returns and no current spot/general audit. Do not promise every credit a cash refund.",
+      "article": "CGI arts. 244–247",
+      "quote": "les trois dernières déclarations de taxe sur la valeur ajoutée soient créditrices",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "V10",
+      "title": "Nil/credit return penalty",
+      "text": "A late nil/credit VAT return costs MRU 2,000 per month; MRU 10,000 where prior-year turnover exceeds MRU 30,000,000. Omissions/inaccuracies are separately covered by L.133 at 40% of compromised tax, rising to 80% where good faith cannot be accepted.",
+      "article": "LPF arts. L.131(2), L.133",
+      "quote": "une amende de 2.000 MRU par mois",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X01",
+      "title": "Domestic permanent establishment",
+      "text": "A fixed place through which a nonresident carries on business is a PE. Construction/assembly and service projects require more than six months for ordinary businesses or more than twelve months for petroleum subcontractors/operators. Read fixed-place, agency, insurance and preparatory/auxiliary rules before applying a duration shortcut. Control of a company alone does not create a PE.",
+      "article": "CGI art. 6",
+      "quote": "six (6) mois pour les autres",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X02",
+      "title": "Nonresident service withholding",
+      "text": "Subject to treaty/special-code provisions, payments to a nonresident without a local PE for services furnished or used in Mauritania bear 15% withholding. The listed payers include real-regime businesses, government/public bodies, projects/programmes and NGOs/associations/foundations. The base includes ancillary amounts/costs paid for the provider.",
+      "article": "CGI arts. 132–133(1)",
+      "quote": "Le taux de la retenue à la source est fixé à 15 %",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X03",
+      "title": "Equipment, exchange and remittance",
+      "text": "Convert foreign-currency service payments at the rate on the payment date. Separately invoiced equipment sales within a service contract are excluded from service withholding. Remit monthly withholding by the next 15th; for an accrued unpaid service charge, pay within three months after year-end. Attach the annual supplier recap to the annual result return.",
+      "article": "CGI art. 133(3)–(7)",
+      "quote": "sous réserve que l’opération de vente soit facturée distinctement",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X04",
+      "title": "PE withholding interaction",
+      "text": "A nonresident continuing through a real local PE enters the ordinary regime. Withholding remains until filing/payment obligations are met; when they are met, withholding is a credit against the resulting tax. A fictitious local presence does not remove withholding.",
+      "article": "CGI art. 133(9)–(11)",
+      "quote": "ladite retenue constitue un crédit d’impôt imputable",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X05",
+      "title": "Dividends, interest and special capital gains",
+      "text": "Classify capital income under arts. 119–125, including exemptions in art. 122. Subject to treaties, IRCM is 10% in ordinary cases; the 20% exception concerns securities gains of a seller in a privileged-tax jurisdiction, not every dividend or interest payment.",
+      "article": "CGI arts. 119–126",
+      "quote": "10 % dans tous les autres cas.",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X06",
+      "title": "Capital withholding calendar",
+      "text": "Withhold capital income on payment and remit by the 15th of January, April, July or October for the preceding quarter. Annual distributions/bénéficiaire statements are due before 1 April. Deemed PE distributions have the special quarter following annual-return filing rule; securities/mining disposals have their own rules.",
+      "article": "CGI arts. 127–130",
+      "quote": "au plus tard le 15 des mois de janvier, avril, juillet et octobre",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X07",
+      "title": "Resident professional withholding",
+      "text": "Real-regime payers withhold 2.5% on qualifying resident liberal professionals subject to IBAPP, on invoiced tax-exclusive sums excluding disbursements. Remit by the next 15th. Credit to the professional’s IBAPP, carrying excess forward. This is not a general withholding on all resident suppliers.",
+      "article": "CGI art. 131",
+      "quote": "à l’exception des débours.",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X08",
+      "title": "Rent withholding",
+      "text": "Public/private legal persons and real-regime individual business taxpayers occupying premises withhold 18% of rent: 10% IRF plus 8% built-property contribution. Remit by the next 15th with landlord NIF/property/month details and give the landlord the tax receipt.",
+      "article": "CGI art. 137",
+      "quote": "correspondant à 10 % au titre de l’impôt sur les revenus fonciers et à 8 %",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "X09",
+      "title": "Withholding-agent liability",
+      "text": "A person required to withhold who fails or withholds too little is personally liable for the missing withholding and related penalties. Treaty relief must be demonstrated for the actual recipient/payment rather than assumed from nationality.",
+      "article": "LPF art. L.139; CGI arts. 126, 132",
+      "quote": "est personnellement redevable du montant de la retenue non effectuée",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "T01",
+      "title": "Arm’s length adjustment",
+      "text": "CGI art. 40 compares connected businesses with independent conditions and adds indirectly shifted profits back. It covers links within Mauritania and abroad, with majority ownership, de facto decision power or common control. For privileged-tax-jurisdiction dealings under art. 23, a control link is not required.",
+      "article": "CGI arts. 23, 40",
+      "quote": "Les bénéfices indirectement transférés sont déterminés par comparaison",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "T02",
+      "title": "Annual TP disclosure",
+      "text": "A Mauritanian legal person discloses annually if its tax-exclusive turnover or gross assets are at least MRU 30,000,000, or if it holds/is held by more than half the capital/votes of another entity meeting that test. Declaration under art. 65 is due with the art. 59 annual return. Do not treat it as the same obligation as keeping documentation or filing CbCR.",
+      "article": "CGI art. 65",
+      "quote": "supérieur ou égal à trente millions (30.000.000) d’Ouguiya",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "T03",
+      "title": "Disclosure content",
+      "text": "The annual TP declaration describes group activity/policy/intangibles, the local activity, related transactions by amount/nature/counterparty/jurisdiction/method, related loans, no-cash/no-consideration dealings and foreign APAs/rulings on those transactions. Use the prescribed DGI format.",
+      "article": "CGI art. 65(2)",
+      "quote": "des informations sur les prêts et emprunts avec des personnes liées",
+      "source": "cgi2023",
+      "url": "https://finances.gov.mr/sites/default/files/2023-03/CGI-Fr-2023.pdf"
+    },
+    {
+      "id": "T04",
+      "title": "Documentation perimeter after 2024",
+      "text": "The replacement art. 66 requires eligible Mauritanian legal persons to support transactions with associated enterprises in Mauritania or abroad. Eligibility uses own turnover/gross assets of at least MRU 30,000,000, or majority capital/vote ownership links to an entity meeting that test. This broadens the older foreign-transactions-only wording.",
+      "article": "LFI2024 art. 3.1 replacing CGI art. 66(1)–(2), physical pp. 7–8",
+      "quote": "établies en Mauritanie ou hors de Mauritanie",
+      "source": "lfi2024",
+      "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf"
+    },
+    {
+      "id": "T05",
+      "title": "Documentation readiness and cure",
+      "text": "Keep general group and specific local documentation, with content fixed by ministerial order, available when the on-site audit begins; it does not replace transaction evidence. If absent/partial, the written formal notice identifies missing items and gives 15 days to supply/complete. The revised text contains duplicated words and an inconsistent penalty cross-reference; use L.131(6) itself for the amount, not the art. 66 reference alone.",
+      "article": "LFI2024 replacement CGI art. 66(3)–(5), physical pp. 7–8",
+      "quote": "dans un délai de quinze (15) jours",
+      "source": "lfi2024",
+      "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf"
+    },
+    {
+      "id": "T06",
+      "title": "CbCR ultimate-parent test after 2024",
+      "text": "Replacement art. 67 requires electronic CbCR within twelve months after year-end for a Mauritanian ultimate parent satisfying consolidation/control tests and prior-year tax-exclusive consolidated turnover of at least MRU 25,000,000,000. The old MRU 22 billion number in the 2023 code is superseded. Do not substitute a EUR 750 million threshold.",
+      "article": "LFI2024 replacement CGI art. 67(1), physical pp. 8–9",
+      "quote": "vingt-cinq milliards (25.000.000.000) Ouguiya",
+      "source": "lfi2024",
+      "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf"
+    },
+    {
+      "id": "T07",
+      "title": "CbCR local filing and substitution",
+      "text": "Replacement art. 67(2)–(5) adds local filing for specified foreign-parent nonfiling/nonexchange/systemic-failure situations. A non-ultimate local entity escapes via substitute filing only if all six listed conditions hold: similar filing law, automatic exchange agreement in force by due date, no notified systemic failure, actual exchange, reporting entity designation notified abroad, and local DGI notification of reporting identity/jurisdiction. Multiple eligible local entities can designate one with DGI notification.",
+      "article": "LFI2024 replacement CGI art. 67(2)–(5), physical pp. 9–11",
+      "quote": "sous réserve que les conditions cumulatives suivantes soient remplies",
+      "source": "lfi2024",
+      "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf"
+    },
+    {
+      "id": "T08",
+      "title": "TP and CbCR penalties",
+      "text": "As amended in 2024, L.131(5) charges MRU 2,500,000 for late/missing, incomplete or inaccurate annual TP declarations. L.131(6) charges 0.5% of affected transactions per audited year after unanswered/incomplete formal notice, minimum MRU 500,000. L.131(7) charges MRU 4,000,000 for late/missing, incomplete or inaccurate CbCR. Do not add these automatically to an arm’s-length profit adjustment without identifying each breach.",
+      "article": "LFI2024 replacement LPF L.131(5)–(7), physical pp. 14–15",
+      "quote": "la production de manière incomplète ou inexacte",
+      "source": "lfi2024",
+      "url": "https://www.finances.gov.mr/sites/default/files/2024-01/LFI%20%202024%20FR%20.pdf"
+    },
+    {
+      "id": "F01",
+      "title": "Entity choice and liability",
+      "text": "APIM offers individuals, companies including SARL/SA, branches and GIE. The central bank’s entrepreneur guide says an individual business has no separate legal personality/unlimited personal responsibility, while SARL liability is limited to contributions and its capital is freely set by members. Do not quote the old unsupported MRU 1,000,000 SARL minimum.",
+      "article": "APIM creation page; BCM entrepreneur guide, Types d’entreprises",
+      "quote": "Capital social : Capital librement fixé par les associés",
+      "source": "bcm-enterprise",
+      "url": "https://education-financiere.bcm.mr/fr/espace-entreprise/guide-entrepreneur/"
+    },
+    {
+      "id": "F02",
+      "title": "SARL membership",
+      "text": "The central bank’s entrepreneur guide gives SARL membership from one through fifty, with natural or legal persons. It does not establish a universal SA minimum total share capital; its SA statement concerns an amount per share, so the old MRU 5,000,000 figure remains unconfirmed.",
+      "article": "BCM entrepreneur guide, Société à responsabilité limitée",
+      "quote": "Nombre d’associés : Minimum 1 et Maximum 50",
+      "source": "bcm-enterprise",
+      "url": "https://education-financiere.bcm.mr/fr/espace-entreprise/guide-entrepreneur/"
+    },
+    {
+      "id": "F03",
+      "title": "APIM registrations and timing",
+      "text": "APIM’s Guichet Unique handles commercial-register, tax and social-security registrations. Its 48 working hours is conditional on submission of complete documents, not an unconditional end-to-end promise including bank/notarial/regulatory steps.",
+      "article": "APIM creation page, Aperçu/enregistrement",
+      "quote": "48 heures ouvrables, sous réserve de la soumission de tous les documents complets.",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "F04",
+      "title": "Common application dossier",
+      "text": "Prepare the completed/signed single form, valid founder identification/passports, address evidence, activity authorisation where needed, court-registry fee payment through the stated mobile-banking accounts and declared employee IDs where relevant. The site links Khidmaty for online creation and also permits the physical Guichet Unique.",
+      "article": "APIM creation page, Préparez votre application",
+      "quote": "Formulaire unique de création d’entreprise dûment rempli et signé",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "F05",
+      "title": "Company-specific dossier",
+      "text": "APIM lists one certified copy plus three photocopies of statutes, the court-registry deposit certificate and capital-deposit proof or paid-capital declaration where capital exceeds MRU 10,000. Treat this document trigger as distinct from statutory minimum share capital.",
+      "article": "APIM creation page, Documents spécifiques/personne morale",
+      "quote": "Justificatif de dépôt de capital ou déclaration de capital libéré (si supérieur à 10 000 MRU)",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "F06",
+      "title": "Other legal forms",
+      "text": "APIM requires GIE agreement/member registry/statute/manager documents, and for a branch current parent registry extract, certified parent statutes where a legal person, plus certified branch-creation/manager-appointment decision. Obtain the actual form’s current checklist before submission.",
+      "article": "APIM creation page, Documents spécifiques",
+      "quote": "Copie certifiée conforme de la décision de création de la succursale et de nomination de son directeur",
+      "source": "apim",
+      "url": "https://apim.gov.mr/fr/services-aux-investisseurs/creation-dentreprise/"
+    },
+    {
+      "id": "F07",
+      "title": "Published registry fees",
+      "text": "The government procedures page, last updated 17 October 2023, describes the service as free except court-registry fees of MRU 200 for individuals and MRU 500 for legal persons. These are the page’s dated published fees, not a verified 2026 full incorporation price or an amount including banking/notary charges.",
+      "article": "Government procedure 790, Frais/last update",
+      "quote": "200 MRU pour les personnes physiques et 500 MRU pour les personnes morales",
+      "source": "creation-procedure",
+      "url": "https://www.procedures.gov.mr/fr/procedure/790"
+    },
+    {
+      "id": "F08",
+      "title": "Completion documents",
+      "text": "The central bank procedure says pay court fees, receive a deposit receipt, then collect the commercial-register registration, tax identification number and CNSS affiliation. Reconcile legal name/address/manager across these documents and retain the submitted dossier and proof of payment.",
+      "article": "BCM entrepreneur guide, Étapes 2–4",
+      "quote": "Immatriculation au registre de commerce",
+      "source": "bcm-enterprise",
+      "url": "https://education-financiere.bcm.mr/fr/espace-entreprise/guide-entrepreneur/"
+    },
+    {
+      "id": "N01",
+      "title": "2026 initial financial tax/TTE changes",
+      "text": "The Ministry’s January 2026 text replaces CGI art. 278 financial-operations-tax rates and creates electronic-transaction tax under arts. 293 octies–terdecies. It is distinct from ordinary VAT. The exact promulgation/publication and within-year operation of the later rectifying text remain required before transaction advice.",
+      "article": "LFI2026 art. 3.1, printed pp. 3–5",
+      "quote": "Taxe sur les Transactions Électroniques (TTE)",
+      "source": "lfi2026",
+      "url": "https://www.finances.gov.mr/sites/default/files/2026-01/Loi%20de%20Finances%20pour%20l%E2%80%99ann%C3%A9e%202026.pdf"
+    },
+    {
+      "id": "N02",
+      "title": "2026 rectifying changes requiring commencement reconciliation",
+      "text": "The Ministry’s August 2026 publication contains replacement expense/NIF controls, digital-service place/liability/platform rules, a TTE cap, supplier reports and professional-account/audit rules. Its comparison columns are headed current provisions/proposed changes and its law-number field is blank. Keep this text in the amendment file; do not choose an operative date from its upload date.",
+      "article": "Ministry LFR2026 art. 3.1, printed pp. 6–18",
+      "quote": "Modifications envisagées",
+      "source": "lfr2026",
+      "url": "https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf"
+    },
+    {
+      "id": "C17",
+      "title": "Corporate return fields",
+      "text": "DGI IMPRIME 20213611: A identification/regime; B profit/products; C1–C4 greatest profit/products/minimum; D1–D6 credits, D7 net tax, D8 carry; E1–E3 instalments and receipt details.",
+      "article": "DGI IS form IMPRIME 20213611",
+      "quote": "D-7 = C4  -  Somme (D1:D6)",
+      "source": "is-form",
+      "url": "https://impots.gov.mr/DGI/files/IS-RN-RI-fr-pdf.pdf"
+    }
+  ],
+  "placements": [
+    {
+      "id": "C03",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C04",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C05",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C06",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C01",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C02",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C07",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C08",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C09",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C10",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C13",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C14",
+      "section": "The base",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C11",
+      "section": "Deadlines and filing",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C12",
+      "section": "Deadlines and filing",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C15",
+      "section": "Penalties and interest",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "C16",
+      "section": "Penalties and interest",
+      "slug": "mr-corporate-income-tax"
+    },
+    {
+      "id": "I02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I03",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I04",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I09",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I13",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I01",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I05",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I07",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I08",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I10",
+      "section": "The base",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I06",
+      "section": "Deadlines and filing",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I11",
+      "section": "Deadlines and filing",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "I12",
+      "section": "Deadlines and filing",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "C15",
+      "section": "Penalties and interest",
+      "slug": "mr-income-tax"
+    },
+    {
+      "id": "P01",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P03",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P06",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P02",
+      "section": "The base",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "I11",
+      "section": "Deadlines and filing",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P04",
+      "section": "Deadlines and filing",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P05",
+      "section": "Deadlines and filing",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "P07",
+      "section": "Deadlines and filing",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "X09",
+      "section": "Penalties and interest",
+      "slug": "mr-payroll-social"
+    },
+    {
+      "id": "V01",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V03",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V04",
+      "section": "The base",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V05",
+      "section": "The base",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V06",
+      "section": "The base",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V07",
+      "section": "The base",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V08",
+      "section": "Deadlines and filing",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V09",
+      "section": "Deadlines and filing",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "V10",
+      "section": "Penalties and interest",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "C16",
+      "section": "Penalties and interest",
+      "slug": "mr-vat-gst"
+    },
+    {
+      "id": "T02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T04",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T06",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T01",
+      "section": "The base",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T03",
+      "section": "The base",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T07",
+      "section": "The base",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T05",
+      "section": "Deadlines and filing",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "T08",
+      "section": "Penalties and interest",
+      "slug": "mr-transfer-pricing"
+    },
+    {
+      "id": "X01",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X05",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X07",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X08",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "C02",
+      "section": "The base",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X03",
+      "section": "The base",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X04",
+      "section": "The base",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X06",
+      "section": "Deadlines and filing",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "X09",
+      "section": "Penalties and interest",
+      "slug": "mr-cross-border"
+    },
+    {
+      "id": "F01",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F03",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F05",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F07",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F04",
+      "section": "The base",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F06",
+      "section": "The base",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "F08",
+      "section": "The base",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "C10",
+      "section": "Deadlines and filing",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "C11",
+      "section": "Deadlines and filing",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "C12",
+      "section": "Deadlines and filing",
+      "slug": "mr-company-formation"
+    },
+    {
+      "id": "C10",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-tax-overview"
+    },
+    {
+      "id": "N01",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-tax-overview"
+    },
+    {
+      "id": "N02",
+      "section": "Rates, bands and thresholds",
+      "slug": "mr-tax-overview"
+    },
+    {
+      "id": "C01",
+      "section": "The base",
+      "slug": "mr-tax-overview"
+    },
+    {
+      "id": "I01",
+      "section": "The base",
+      "slug": "mr-tax-overview"
+    },
+    {
+      "id": "C17",
+      "section": "Deadlines and filing",
+      "slug": "mr-corporate-income-tax"
+    }
+  ]
+}
