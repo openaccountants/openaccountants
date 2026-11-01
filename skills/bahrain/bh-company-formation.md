@@ -45,6 +45,34 @@ Reserve the name, apply on Sijilat with documents, select activities, obtain int
 
 W.L.L.: general assembly, auditor, financial report (or auditor solvency letter unless losses reach 50% of capital), management report, UBO, Economic Substance Report, AML, reserve capital, books for 10 years. B.S.C.: also four board meetings, governance report and officer; a public B.S.C. publishes results. A non-profit W.L.L. (N.P.C.) may not distribute profits.
 
+## Worked cases
+
+Closed B.S.C. at the BHD 50,000 minimum: at least 50% is deposited at the start.
+
+```oa-check
+name: Closed BSC initial deposit
+inputs:
+  capital: 50000
+steps:
+  - deposit: capital * 0.5
+expected:
+  deposit: 25000.00
+```
+
+Decision: W.L.L. or closed B.S.C. for a founder with BHD 10,000? A W.L.L. has no minimum; a closed B.S.C. leaves a capital shortfall.
+
+```oa-check
+name: Capital shortfall, closed BSC against WLL
+inputs:
+  funds: 10000
+steps:
+  - bsc_gap: max(50000 - funds, 0)
+  - wll_gap: max(0 - funds, 0)
+expected:
+  bsc_gap: 40000.00
+  wll_gap: 0.00
+```
+
 ## Sources
 
 | Source | URL | Read on |
