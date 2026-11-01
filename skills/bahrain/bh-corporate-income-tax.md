@@ -1,10 +1,10 @@
 ---
 name: bh-corporate-income-tax
-description: "Company taxation in Bahrain, tax year 2026: no general corporate income tax, the 46% tax on hydrocarbon companies under Legislative Decree No. 22 of 1979, and the 15% Domestic Minimum Top-up Tax for multinational groups with revenue of EUR 750 million or more. Use for questions like does a company pay tax in Bahrain, Bahrain corporate tax rate, does DMTT apply to us, or Bahrain oil company tax."
+description: "Bahrain hydrocarbon income tax and Domestic Minimum Top-up Tax (DMTT) screening and simplified computations for tax year 2026. Covers statutory taxpayer scope, adjusted income, returns and penalties. Current general corporate-tax enactment status and electronic filing/payment workflows remain unconfirmed."
 jurisdiction: BH
 tax_year: 2026
 last_updated: 2026-11-01
-version: 0.3
+version: 0.4
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Corporate Income Tax v0.3
+# Bahrain Corporate Income Tax v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -24,14 +24,14 @@ Bahrain hydrocarbon taxpayers under Legislative Decree 22/1979 and Bahrain entit
 
 | Item | Rate or condition | Year | Official source |
 |---|---|---|---|
-| Hydrocarbon income tax, art. 2 | 46% of statutory income for direct exploration/production from Bahrain land, or refining in own Bahrain facilities of crude owned by the taxpayer or others, wherever extracted | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 |
+| Hydrocarbon income tax, art. 2 | 46% of statutory income for direct exploration/production for the taxpayer's own account from Bahrain land, or refining in own Bahrain facilities of crude owned by the taxpayer or others, wherever extracted | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 |
 | DMTT minimum rate, art. 1 | 15%, applied through the jurisdictional effective-rate and top-up calculation, not flat tax on each company's accounting profit | Fiscal years from 1 January 2025 | https://www.lloc.gov.bh/Legislation/HTM/L1124 |
 | DMTT revenue test, art. 3(C)-(D) | At least EUR 750 million consolidated revenue in at least two of the four immediately preceding fiscal years; prorate the threshold for years other than twelve months; include excluded entities' revenue | 2026 fiscal years | same |
 | DMTT return, ER art. 66(A)-(C) | Filing Constituent Entity: within 15 months of reporting fiscal year end, in the NBR form and manner | 2026 fiscal years | https://www.lloc.gov.bh/Legislation/HTM/RFNE17224 |
 
 ## The base
 
-Hydrocarbon income is gross receipts from the activities in art. 1(d), less art. 4 deductions. Deduct reasonable production costs and business expenses without double counting; apply the statute's capital-cost/depreciation and loss provisions, rather than using book profit unchanged. Articles 5 to 7 govern asset cost, accounting year and accounting method. The Gregorian accounting year applies unless the Minister approves an alternative (art. 6).
+For this activity test, Bahrain land includes territorial subsoil and seabed (art. 1(f)). Hydrocarbon income is gross receipts from the activities in art. 1(d), less art. 4 deductions. Deduct reasonable production costs and business expenses without double counting; apply the statute's capital-cost/depreciation and loss provisions, rather than using book profit unchanged. Articles 5 to 7 govern asset cost, accounting year and accounting method. The Gregorian accounting year applies unless the Minister approves an alternative (art. 6).
 
 DMTT scope includes Bahrain Constituent Entities and qualifying joint ventures/subsidiaries (art. 3); review the multinational-group definition and excluded-entity provisions (arts. 1, 4) before computing. Under arts. 8 to 10, aggregate adjusted covered taxes and net Constituent Entity income for the relevant Bahrain jurisdictional pool; divide to find the effective rate. The top-up percentage is the positive gap to the minimum rate. Apply it to net income less substance-based income exclusion, floored at zero, then add any current additional tax and permanent-difference top-up. Special investment, stateless and minority pools require their own analysis. Do not treat the simplified example as a complete GloBE model.
 

@@ -1,0 +1,94 @@
+[
+  {
+    "guide": "bh-income-tax",
+    "case": "Salary personal-tax screen",
+    "outputs": {
+      "pit": "0"
+    },
+    "decision": "Personal-tax screen only, not take-home pay"
+  },
+  {
+    "guide": "bh-income-tax",
+    "case": "Deduction belongs in payroll not PIT",
+    "outputs": {
+      "before": "0",
+      "after": "0",
+      "pit_saving": "0"
+    },
+    "decision": "Both PIT outcomes zero; retain payroll deductions in reconciliation"
+  },
+  {
+    "guide": "bh-tax-overview",
+    "case": "Overview individual routing",
+    "outputs": {
+      "pit": "0",
+      "payroll_reconciliation": "58000"
+    },
+    "decision": "Route payroll separately"
+  },
+  {
+    "guide": "bh-tax-overview",
+    "case": "DMTT revenue screening comparison",
+    "outputs": {
+      "higher_excess": "50000000",
+      "lower_shortfall": "50000000"
+    },
+    "decision": "Two of four prior twelve-month years at800m satisfy revenue test; all700m fail. Arithmetic block alone does not test count; prose count independently checked."
+  },
+  {
+    "guide": "bh-corporate-income-tax",
+    "case": "Hydrocarbon statutory income",
+    "outputs": {
+      "income": "1000000",
+      "tax": "460000.00"
+    },
+    "decision": "Only for art2 taxpayer; missing own-account wording separately held"
+  },
+  {
+    "guide": "bh-corporate-income-tax",
+    "case": "DMTT below versus at minimum",
+    "outputs": {
+      "etr_a": "0.1",
+      "etr_b": "0.15",
+      "topup_a": "50000.00",
+      "topup_b": "0.00"
+    },
+    "decision": "Already eligible single pool, zero exclusion/additional components:50000 versus0"
+  },
+  {
+    "guide": "bh-payroll-social",
+    "case": "EOSB eligible second year",
+    "outputs": {
+      "employer_eosb": "37.800"
+    },
+    "decision": "Eligible covered employee, first three employer-service years"
+  },
+  {
+    "guide": "bh-payroll-social",
+    "case": "EOSB service boundary comparison",
+    "outputs": {
+      "first_period": "37.800",
+      "later_period": "75.600",
+      "increase": "37.800"
+    },
+    "decision": "Required rate selection by service length; not an employee replacement recommendation"
+  },
+  {
+    "guide": "bh-company-formation",
+    "case": "Closed BSC initial capital",
+    "outputs": {
+      "initial": "25000.0",
+      "balance": "25000.0"
+    },
+    "decision": "Half deposited now; remaining capital within three years"
+  },
+  {
+    "guide": "bh-company-formation",
+    "case": "Entity minimum-capital choice",
+    "outputs": {
+      "closed_bsc_shortfall": "40000",
+      "wll_statutory_shortfall": 0
+    },
+    "decision": "40000 versus0 statutory shortfall; excludes operating adequacy, fees, activities"
+  }
+]

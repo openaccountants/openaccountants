@@ -4,7 +4,7 @@ description: "Bahrain private-sector payroll screening for 2026, including sourc
 jurisdiction: BH
 tax_year: 2026
 last_updated: 2026-11-01
-version: 0.3
+version: 0.4
 category: payroll
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -12,7 +12,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Payroll and Social Insurance v0.3
+# Bahrain Payroll and Social Insurance v0.4
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -26,7 +26,7 @@ Private-sector employment covered by Social Insurance Law arts. 2 to 4. Establis
 |---|---|---|---|
 | Employee pension share, Social Insurance art. 33 as amended by Law 14/2022 | 7% for covered pension-insured employees; do not apply to a person outside that branch | 2026 | https://www.lloc.gov.bh/Legislation/HTM/K1422 |
 | Unemployment employee share, art. 6 | 1% of insured wage for covered workers under arts. 1 to 2, including covered foreign workers; this is not work-injury insurance | 2026 | https://www.lloc.gov.bh/FullAr/L7806.docx |
-| Work-injury employer share, Social Insurance arts. 47 to 49 | Base rate 3%, employer alone; authorised reductions and safety-related increases require the relevant decision | 2026 | https://www.lloc.gov.bh/FullAr/L2476.docx |
+| Work-injury employer share, Social Insurance arts. 47 and 49; Law 14/2022 art. 9 | Base rate 3%, employer alone; safety-related increases require the art. 49 decision. Art. 48 reductions are repealed | 2026 | https://www.lloc.gov.bh/FullAr/L2476.docx ; https://www.lloc.gov.bh/Legislation/HTM/K1422 |
 | Insurable wage ceiling, art. 17 | BHD 4,000 monthly for contributions under the Social Insurance Law; do not import it into EOSB wage definition | 2026 | same |
 | EOSB, Regulation art. 5 | Employer alone: 4.2% of defined wage for first three years with that employer, 8.4% thereafter | From 1 March 2024, including 2026 | https://www.lloc.gov.bh/Legislation/HTM/RCAB10923 |
 | EOSB transition, art. 13 | Service already exceeding three years before commencement: 8.4% from commencement | 2026 | same |
@@ -38,7 +38,9 @@ Private-sector employment covered by Social Insurance Law arts. 2 to 4. Establis
 
 Social Insurance art. 17 starts with total monthly wages and its statutory ceiling. January wage can determine monthly contributions through the year; for later entrants use entry-month wage through December. Articles 18 to 26 cover daily/piece/hourly workers, minimum base, concurrent employers, interrupted pay, secondment, joining/leaving months and rounding. Do not calculate from bank net pay. Article 28 makes the employer responsible for both shares and permits deduction of the employee share when paying wages; a missed deduction cannot be recovered later.
 
-A new art. 19 bis was added by Decree-Law 44/2026, published 8 October 2026 and effective the next day. It applies to people first satisfying registration conditions after commencement and requires a Cabinet-set minimum base for pension-covered branches. The implementing amount is held. Stop a base calculation for that group until the applicable Cabinet decision is obtained.
+Law 14/2022 art. 9 repeals Social Insurance art. 48. It also repeals Decree-Law 15/1987 and its implementing decisions. The consolidated DOCX still prints art. 48; follow the original repealer and do not apply that reduction route. Articles 47 and 49 remain separate base-rate and safety-increase provisions.
+
+A new art. 19 bis was added by Decree-Law 44/2026, published 8 October 2026 and effective the next day. It applies to people first satisfying registration conditions after commencement and requires a Cabinet-set minimum base for all insurance branches for persons covered by non-occupational old-age, disability and death insurance. The implementing amount is held. Stop a base calculation for that group until the applicable Cabinet decision is obtained.
 
 Unemployment art. 6 provides an employer share but expressly makes the Labour Fund bear the private-sector employers' share. Do not add it again as an employer payroll cost. The predecessor's claim that a foreign employee pays work-injury insurance and has no unemployment coverage is incorrect.
 
@@ -89,7 +91,7 @@ expected:
 - Nationality, sector, covered branches and any GCC extension certificate?
 - First registration date, employment start/end dates and payroll month?
 - Gross and insured wage, January/entry wage, contractual increases and social allowance?
-- Any minimum-base, work-injury reduction/increase or other SIO decision?
+- Any minimum-base, work-injury increase or other SIO decision?
 - Any transfer, secondment, pre-commencement service or missed deduction?
 
 ## Sources

@@ -115,3 +115,7 @@ Read on 2026-11-01. Writer record only; no independent acceptance claimed. Quote
 ## Non-operative holds and predecessor destinations
 
 See [exact old-topic destination table](bh-company-formation-old-topics.md) and the Guide's final Sources line. No held predecessor assertion authorises calculation or submission.
+
+## Additive focused correction disposition
+
+Original ledger above is preserved. Current operative interpretation for BH-R05 is superseded or clarified by [corrections-01/report.md](corrections-01/report.md) and its exact source/correction records. In S09, the art.48 reduction route is NON-OPERATIVE because Law14/2022 art.9 repeals it. Only the corrected Guide text may be applied. Independent closure remains pending.

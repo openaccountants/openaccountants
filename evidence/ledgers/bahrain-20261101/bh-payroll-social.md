@@ -203,3 +203,7 @@ See [exact old-topic destination table](bh-payroll-social-old-topics.md) and the
 > التاريخ : 8-أكتوبر-2026
 
 Enactment art.4 says the next day after publication. Read together, first-registration commencement is9October2026; the Cabinet amount remains a NON-OPERATIVE hold.
+
+## Additive focused correction disposition
+
+Original ledger above is preserved. Current operative interpretation for BH-R02, BH-R04 is superseded or clarified by [corrections-01/report.md](corrections-01/report.md) and its exact source/correction records. In S09, the art.48 reduction route is NON-OPERATIVE because Law14/2022 art.9 repeals it. Only the corrected Guide text may be applied. Independent closure remains pending.
