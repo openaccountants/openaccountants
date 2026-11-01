@@ -1,0 +1,34 @@
+{
+  "skills/libya/ly-company-formation.md": {
+    "sha256": "2ed3096a361c022110945778074fc79f57a4e01163f9184670cdb41b6998ada0",
+    "bytes": 13689
+  },
+  "skills/libya/ly-corporate-income-tax.md": {
+    "sha256": "cbc9e4b026eb6b225b328a7b4c3190387a49dd6c527d760fd74c110446e1e20f",
+    "bytes": 12385
+  },
+  "skills/libya/ly-cross-border-tax.md": {
+    "sha256": "15e30011e27757edb6197f95cdd21568860bf19f166fe58a33d591745d50bf96",
+    "bytes": 12545
+  },
+  "skills/libya/ly-income-tax.md": {
+    "sha256": "d339de7e2165a1fb8211fba00a1fd3debdc98a3423189f24d59edc85f90b275b",
+    "bytes": 13224
+  },
+  "skills/libya/ly-payroll-social.md": {
+    "sha256": "e028bd073edf7a80e07645467ac9dda679d9640b10ce666102901169a6ec2a68",
+    "bytes": 13132
+  },
+  "skills/libya/ly-tax-overview.md": {
+    "sha256": "f29e0d8d2ad7c5a5d6ca09cfccce3d79b00ae0eee942fa191cd9335a115d0742",
+    "bytes": 11727
+  },
+  "skills/libya/ly-transfer-pricing.md": {
+    "sha256": "c72c40bda40d7e02f93d315a859167916678e13792922e733c8066591a32af89",
+    "bytes": 11374
+  },
+  "skills/libya/ly-vat-gst.md": {
+    "sha256": "2aa36fa31bfa0adff5d78f5aa610b3ebe7c34e476a35453b226b3e7011469403",
+    "bytes": 10976
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "file": "tax-encyclopedia-2016.pdf",
+    "official_url": "https://tax.gov.ly/assets/m2016.pdf",
+    "sha256": "2bbd8962f6d55ac6a2f7306b36e8e99dc80b4a7e25a210c50c7cd0f35d4338e0",
+    "bytes": 84536475,
+    "pdf_pages": 227,
+    "read_on": "2026-11-01",
+    "source_kind": "Arabic scanned Tax Authority compilation, published as 2016; PDF metadata modified2019.",
+    "actual_read_scope": "OCR rendered PDF pp.1-100,115-160,190-227; actual substantive reading: Law7 arts1-105 PDF 11-35, Reg592 arts1-82 PDF 36-60, selected Forms1,4,5,7,8,9 and receipt/certificate forms; stamp arts1-21 PDF 122-127, schedule PDF 141-146, Reg156 arts1-4 PDF 147-150, solidarity PDF 191-192, social law/allocation PDF 203-207. Other extracted pages not treated as read law.",
+    "visual_check": "Selected images actually inspected: PDF16,19,20,24,25,26,28,29,37,53,54,146,207. Numeric claims checked visually against those pages; additional rules read in OCR with neighbouring articles. OCR can contain errors; independent review required."
+  },
+  {
+    "file": "commercial23.pdf",
+    "official_url": "https://ssf.gov.ly/wp-content/uploads/2012/09/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%B1%D9%82%D9%85-23-%D9%84%D9%84%D8%B9%D8%A7%D9%85-2010-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%86%D8%B4%D8%A7%D8%B7-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A.pdf",
+    "sha256": "fbe1c853619fc6d58eace3353295bc3d4ce3b58473b01f585a3f98662b9f7cec",
+    "bytes": 1701947,
+    "pdf_pages": 358,
+    "read_on": "2026-11-01",
+    "source_kind": "Commercial Activity Law 23/2010 original Arabic hosted by official Social Security Fund.",
+    "actual_read_scope": "PDF26-30 arts99-112; PDF75-80 arts269-296. Extra OCR PDF37-43 and86-93 was read as context but is not a completed entire-law or amendment-chain review.",
+    "visual_check": "Page images70 and75 inspected. Remaining selected pages read through Arabic OCR; current operative ministerial capital/foreign participation decisions not resolved."
+  },
+  {
+    "file": "social-law13-amendments.pdf",
+    "official_url": "https://ssf.gov.ly/wp-content/uploads/2017/11/%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B6%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A-%D8%B1%D9%82%D9%85-13-%D9%84%D8%B3%D9%86%D8%A9-80-%D9%85-%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+    "sha256": "a5d2e709c8035bbeeffe3e942cd4b857e19889a9673f16d838bd2c415765d8ba",
+    "bytes": 2671862,
+    "pdf_pages": 505,
+    "read_on": "2026-11-01",
+    "source_kind": "SSF2017 law/amendments publication; not a 2026 consolidation.",
+    "actual_read_scope": "PDF22-33 arts31-44 relevant coverage/base/recovery material, PDF35 art46 repeal footnote, PDF189 enforcement paragraph, PDF427 Law16/2013 arts1-3. Not all 505 pages read.",
+    "visual_check": "PDF427 and428 images inspected;427 contains actual repeal law,428 begins unrelated next law. No current total contribution rate inferred."
+  },
+  {
+    "file": "uk-libya-treaty.pdf",
+    "official_url": "https://assets.publishing.service.gov.uk/media/5a819e9ded915d74e33ff2ef/uk-libya-dtc_-_in_force.pdf",
+    "sha256": "73f5ffda2cf7ad8c82dc5545f6d666e2340f1a16ad4769bf9e4b4bf05d3479b6",
+    "bytes": 102886,
+    "pdf_pages": 42,
+    "read_on": "2026-11-01",
+    "source_kind": "HMRC in-force2008 convention; English original.",
+    "actual_read_scope": "Actual treaty text arts1-5,8,10-17,19-20,23,26; PDF4-12,15,17-26,28-29,32-36; status/effective-date page onGOV.UK read separately.",
+    "visual_check": "Text extraction read locally with neighbouring exceptions. Other treaty corridors and later modification chain not closed."
+  },
+  {
+    "file": "treaty-index.pdf",
+    "official_url": "https://tax.gov.ly/assets/ET.pdf",
+    "sha256": "3b108e17e50261268bc26e1768b70f27caccfc9c2616e3892b7ab443bf0fbab4",
+    "bytes": 893626,
+    "pdf_pages": 1,
+    "read_on": "2026-11-01",
+    "source_kind": "Official single-page Arabic convention index.",
+    "actual_read_scope": "Names and entry-into-force dates read from actual PDF rendering returned by web tool; not treaty articles or an exhaustive2026list.",
+    "visual_check": "No rate, treatybenefit or treatyabsence claim inferred from index."
+  }
+]
