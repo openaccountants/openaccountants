@@ -24,9 +24,9 @@ Companies and other bodies liable under CGI art. 2 to 5. Profit made in Cameroon
 
 | Item | Rate or amount | Source |
 |---|---|---|
-| Standard rate | 30% | CGI art. 17(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| Turnover up to XAF 3 billion | 25% | CGI art. 17 bis: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
-| CAC on instalments and minimum | 10% | CGI art. 21, 22(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Standard rate | 30% (33% with CAC) | CGI art. 17(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| Turnover up to XAF 3 billion | 25% (27.5% with CAC) | CGI art. 17 bis: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| CAC on company tax, instalments and minimum | 10% of principal and of surcharges | CGI art. C 83(1), (3), 21, 22(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Monthly instalment, real regime | 2% of turnover (2.2% with CAC) | CGI art. 21(1)a: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Distributors of price-margin products | 14% of gross margin plus CAC | CGI art. 21: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Not on a tax centre file | 10%; forestry without permit 20% | CGI art. 21(1)e: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
@@ -70,12 +70,16 @@ inputs:
   profit: 200000000
 steps:
   - tax: profit * 0.25
+  - cac: tax * 0.10
+  - total: tax + cac
   - instalments: turnover * 0.022
-  - balance: tax - instalments
+  - balance: total - instalments
 expected:
   tax: 50000000
+  cac: 5000000
+  total: 55000000
   instalments: 44000000
-  balance: 6000000
+  balance: 11000000
 ```
 
 ```oa-check
@@ -84,16 +88,16 @@ inputs:
   turnover: 5000000000
   profit: 40000000
 steps:
-  - tax: profit * 0.30
+  - tax: profit * 0.33
   - minimum: turnover * 0.022
   - due: max(tax, minimum)
 expected:
-  tax: 12000000
+  tax: 13200000
   minimum: 110000000
   due: 110000000
 ```
 
-The examples apply no CAC to the 25% or 30% rate.
+Both examples include the 10% CAC of art. C 83(1). The second treats 5 billion as prior-year turnover, the art. 23 base.
 
 ## Ask the client first
 
@@ -107,6 +111,6 @@ The examples apply no CAC to the 25% or 30% rate.
 
 | Source | URL | Read on |
 |---|---|---|
-| Code General des Impots, Edition 2026 (DGI): arts. 2, 5, 7, 8 bis, 8 ter, 12, 17, 17 bis, 18, 21 to 23, L 95 to L 99, L 106 | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
+| Code General des Impots, Edition 2026 (DGI): arts. 2, 5, 7, 8 bis, 8 ter, 12, 17, 17 bis, 18, 21 to 23, C 82, C 83, L 95 to L 99, L 106 | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
 
-Not yet confirmed: whether CAC is added to the 25% or 30% rate (art. 17 does not state it; the old VAT skill's 33% is not confirmed for companies); depreciation rates; the Finance Law 2026 circular, a scan not read; portal steps.
+Not yet confirmed: depreciation rates; the Finance Law 2026 circular, a scan not read; portal steps.

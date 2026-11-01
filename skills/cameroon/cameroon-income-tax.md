@@ -65,7 +65,7 @@ Salaried, passive-income and non-professional taxpayers are covered by art. 93 u
 | CRTV audiovisual fee, monthly pay over XAF 1,000,000 | XAF 13,000 | CGI annex law art. 3: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | CNPS pension | Unverified: 4.2% employee, 4.2% employer, ceiling XAF 750,000 a month. cnps.cm did not open | n/a |
 | CNPS family and work risk | Unverified: 7% and 1.75% to 5% employer; voluntary 8.4% | n/a |
-| Development tax, top band | Unverified: XAF 2,520 a month over XAF 500,000 (old figure, not read in art. C 86 to C 88) | n/a |
+| Development tax, employees, base pay over XAF 500,000 a month | XAF 30,000 a year; lower bands from XAF 3,000 start at XAF 62,000 | CGI art. C 86: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Minimum wage | Unverified: XAF 60,000 non-agricultural, 45,000 agricultural, 43,969 State | n/a |
 
 ## The base
@@ -87,6 +87,7 @@ Dividends are taxed on the gross amount (art. 44). Salaried taxpayers do not ite
 | Recap return: staff of large, medium and specialised-centre employers | 30 September | CGI |
 | Recap return: other individuals | 31 October | CGI |
 | Monthly instalment | 15th of next month (art. 21) | CGI |
+| Salary tax withheld by employer | 15th of next month (art. 82) | CGI |
 | IGS return and payment | 15 April, or within 15 days of each quarter end on option (art. C 41) | CGI |
 | Statistical and fiscal return (DSF) for IGS | 15 May | CGI |
 | Credit Foncier and FNE | First 20 days of next month (annex law art. 7) | CGI |
@@ -173,7 +174,7 @@ Reasoning:
 - IRPP: cumulative to 5,000,000 = 935,000; excess = 8,022,000 - 5,000,000 = 3,022,000 @ 38.5% = 1,163,470.
 - Total IRPP = 935,000 + 1,163,470 = 2,098,470.
 
-Classification: Annual IRPP = XAF 2,098,470. Council tax band XAF 2,520/mo and CRTV up to XAF 13,000 apply separately.
+Classification: Annual IRPP = XAF 2,098,470. Development tax XAF 30,000 a year at most and CRTV up to XAF 13,000 apply separately.
 
 ### Example 3 -- Dividend / investment income (schedular flat rate)
 
@@ -319,7 +320,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | CNPS, COTISATION SOCIALE, PREVOYANCE SOCIALE | Social contribution | Employee portion reduces salary IRPP base (Section 3 social table) |
 | CREDIT FONCIER, CFC | Housing fund | Employee 1% / employer 1.5% (Section 4) |
 | FNE, FONDS NATIONAL EMPLOI | Employment fund | Employer 1% only |
-| TAXE COMMUNALE, REDEVANCE COMMUNALE | Council tax (poll) | Flat band -- up to XAF 2,520/mo (Section 2 other-taxes) |
+| TAXE COMMUNALE, REDEVANCE COMMUNALE | Council tax (poll) | Development tax: up to XAF 30,000 a year (art. C 86) |
 | RAV, REDEVANCE CRTV, AUDIOVISUEL | CRTV royalty | Up to XAF 13,000 graduated (Section 2 other-taxes) |
 | TVA, PAIEMENT TVA | EXCLUDE | VAT liability payment, not an expense |
 
@@ -381,7 +382,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 ## Section 7 -- Excel Working Paper Template
 
 CAMEROON IRPP -- WORKING PAPER
-Tax Year: 2025
+Tax Year: 2026
 Client: ___________________________
 Taxpayer type: Salaried / Self-employed (IGS) / Self-employed (actual-earnings)
 Residency: Resident / Non-resident (STOP if non-resident)
@@ -392,7 +393,7 @@ A. SALARIED COMPUTATION (skip if self-employed)
   A3. Less CNPS employee 4.2% (cap base 9,000,000) ___________
   A4. Net taxable (A1 - A2 - A3), round down 1,000 ___________
   A5. IRPP per progressive scale (Section 1)       ___________
-  A6. Council tax (up to 2,520/mo)                 ___________
+  A6. Development tax (up to 30,000/yr)             ___________
   A7. CRTV royalty (up to 13,000)                  ___________
   A8. Credit Foncier employee 1% (A1 x 1%)         ___________
 
@@ -402,15 +403,15 @@ B. INVESTMENT INCOME (flat 16.5%)
 
 C. SELF-EMPLOYED -- IGS (turnover < 50,000,000)
   C1. Annual VAT-exclusive turnover                ___________
-  C2. IGS per band table unverified            ___________
+  C2. IGS per art. C 40 class table             ___________
   C3. CGA member? halve C2 -> IGS due              ___________
 
 D. SELF-EMPLOYED -- ACTUAL-EARNINGS (turnover >= 50,000,000)
   D1. Turnover (VAT-exclusive)                     ___________
   D2. Less deductible business expenses            ___________
   D3. Net profit (D1 - D2)                         ___________
-  D4. IRPP (flat 33%, or scale per reviewer)       ___________
-  D5. Minimum tax (2.2% or 5.5% of turnover)       ___________
+  D4. IRPP (33% with CAC)                          ___________
+  D5. Minimum tax (2.2% of turnover)               ___________
   D6. Tax due = max(D4, D5)                        ___________
 
 E. TOTAL TAX (pass to deterministic engine)        ___________
@@ -419,7 +420,7 @@ REVIEWER FLAGS:
   [ ] Taxpayer type and residency confirmed?
   [ ] CNPS ceiling applied correctly (9,000,000/yr base)?
   [ ] 30% professional deduction mechanics confirmed?
-  [ ] IGS band table confirmed against 2025 CGI?
+  [ ] IGS band table confirmed against 2026 CGI?
   [ ] CGA membership certificate verified?
   [ ] Occupational-risk class confirmed?
   [ ] Investment income kept at flat 16.5% (not progressive)?
@@ -530,11 +531,11 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 
 | Source | URL | Read on |
 |---|---|---|
-| CGI Edition 2026 (DGI): arts. 17, 21, 25, 30 to 34, 44, 56, 58, 69 to 74 bis, 90 to 93 undecies, C 38 to C 46, L 95 to L 98, L 106, Credit Foncier and CRTV annex laws | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
+| CGI Edition 2026 (DGI): arts. 17, 21, 25, 30 to 34, 44, 56, 58, 69 to 74 bis, 82, 90 to 93 undecies, C 38 to C 46, C 86, L 95 to L 98, L 106, Credit Foncier and CRTV annex laws | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
 | Arrete 00001/MINFI/DGI of 5 Jan 2026 on withholding: arts. 1 to 9 | https://www.impots.cm/sites/default/files/documents/arr%C3%AAt%C3%A9%20RTS%202026%20VF.pdf | 2026-11-01 |
-| CNPS site | https://www.cnps.cm | Refused: 403 to fetch, no page text in browser |
+| CNPS site | https://www.cnps.cm | 2026-11-01 (refused: 403 to fetch, no page text in browser) |
 
-Not yet confirmed: CNPS rates and ceiling (site did not open); development tax bands; minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre.
+Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-year record retention and the XAF 1,000 rounding of net income carried from the old skill; whether the 25% rate of art. 17 bis reaches individuals under art. 69(2) (the text cites art. 17 only); how art. C 41 (one payment or quarterly option) and art. C 42(2) (quarterly) fit together; the Finance Law 2026 circular, a scan not read; DGI's portal steps for the IRPP declaration; the old rule on quarterly regularisation dates by tax centre.
 
 ## Disclaimer
 

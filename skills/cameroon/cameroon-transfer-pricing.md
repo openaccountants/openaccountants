@@ -50,16 +50,16 @@ Treaties may give a mutual agreement route; check the treaty. An advance agreeme
 ## Two worked examples that recompute
 
 ```oa-check
-name: Royalty 500 million, arm's length 300 million, 30 percent rate
+name: Royalty 500 million, arm's length 300 million, 33 percent with CAC
 inputs:
   paid: 500000000
   arm: 300000000
 steps:
   - addback: paid - arm
-  - tax: addback * 0.30
+  - tax: addback * 0.33
 expected:
   addback: 200000000
-  tax: 60000000
+  tax: 66000000
 ```
 
 ```oa-check
@@ -69,11 +69,13 @@ inputs:
 steps:
   - tax: addback * 0.25
   - penalty: tax * 0.30
-  - total: tax + penalty
+  - cac: (tax + penalty) * 0.10
+  - total: tax + penalty + cac
 expected:
   tax: 50000000
   penalty: 15000000
-  total: 65000000
+  cac: 6500000
+  total: 71500000
 ```
 
 ## Ask the client first

@@ -27,7 +27,7 @@ Cameroon payers of non-residents, non-resident digital businesses, and individua
 | Special income tax (TSR), general | 15% | CGI art. 225 ter: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | TSR, one-off material services, firms waiving filing | 10% | same |
 | TSR, reduced (public orders, digital audiovisual access, oil research phase, listed shipping, money transfer commissions) | 3% | same |
-| CAC on TSR | 5% of principal | CGI Titre III, centimes additionnels: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
+| CAC on TSR | 5% of principal | CGI art. C 83(2): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Passive income to a tax haven | 30% | CGI art. 70(1): https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Digital presence, billing | Over XAF 50,000,000 a year | CGI art. 5 ter: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
 | Digital presence, users | Over 1,000 | CGI art. 5 ter: https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf |
@@ -39,7 +39,7 @@ TSR applies to royalties, software, technical and financial assistance, consulti
 
 ## Deadlines and filing
 
-Digital non-residents file gross turnover monthly and pay by the 15th of the next month on the DGI portal (art. 23 bis). Other withheld tax follows its own article; the art. 226 to 228 dates were not read.
+Digital non-residents file gross turnover monthly and pay by the 15th of the next month on the DGI portal (art. 23 bis). The payer pays TSR to the tax office by the 15th of the month after the taxable event (art. 228).
 
 ## Penalties and interest
 
@@ -88,6 +88,6 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Code General des Impots, Edition 2026 (DGI): arts. 5 ter, 8 ter, 21, 23 bis, 25, 70, 225, 225 ter, L 106, CAC articles of Titre III | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
+| Code General des Impots, Edition 2026 (DGI): arts. 5 ter, 8 ter, 21, 23 bis, 25, 70, 225, 225 ter, 228, L 106, C 83 | https://www.impots.cm/sites/default/files/documents/CODE%20GENERAL%20DES%20IMPOTS%202026%20SITE%20DGI%20VERSION%20FRANCAISE.pdf | 2026-11-01 |
 
-Not yet confirmed: treaty texts and rates; exact article number of the 5% CAC on TSR; TSR payment date; whether the digital CAC applies; rules on dividends and interest paid to non-residents beyond art. 70.
+Not yet confirmed: treaty texts and rates; whether the digital CAC applies; rules on dividends and interest paid to non-residents beyond art. 70.
