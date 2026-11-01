@@ -24,7 +24,7 @@ partial:
 
 # Somalia tax pack
 
-**Partial local source-baseline draft,1 November 2026.** Two new working-paper Guides are actual drafts from opened enacted law. They are **not accepted current-year coverage**: the Income Tax Regulations 0141/2025 and applicable transitional directions have not been read. Both stop before final 2026 tax treatment. Independent source review is pending, and no accountant has attested. [Issue 486](https://github.com/openaccountants/openaccountants/issues/486) remains incomplete.
+**Partial local source-baseline draft,1 November 2026.** Two new working-paper Guides are actual drafts from opened enacted law. They are **not accepted current-year coverage**: the Income Tax Regulations 0141/2025 and applicable transitional directions have not been read. Both stop before final 2026 tax treatment. Independent source review accepted repaired candidate `6477855a1c61821b0f70b8c15bf9473fe2edde4c` within the historical statutory-baseline scope only. No operative 2026 approval follows, and no accountant has attested. [Issue 486](https://github.com/openaccountants/openaccountants/issues/486) remains incomplete.
 
 The new Income Tax Act 37/2025 replaces the legacy income-tax framework. The six old 2025 Guides remain byte-identical to preserve research and topics; their figures are not recertified for 2026. In particular, do not apply an old Guide's bands, corporate scale, residence summary or no-capital-gains assertion as current law. This batch does not select replacement tax rates from conflicting summaries.
 
@@ -57,3 +57,7 @@ Article 105(7) permits regulations to delay or modify operation. The manual's ge
 Full gazette PDFs, scans, OCR and HTML remain privately in the sibling sources directory outside Git. The Attorney General's observed public download links worked normally. The ministry English manual opened through its current publication/Download link in the web reader; local fetching remained 403. The regulation was too large for that reader and 403 locally; the official archive fallback was also blocked. No access control or certificate warning was bypassed.
 
 Remaining work includes current regulations/transitional conditions, complete income/corporate/payroll rebuilding, sales-tax/social coverage, territorial administration, complete filing/payment workflows, treaty and PE/source/withholding/credit work, exit/entry tax computations and accountant attestation. No push, publication or merge forms part of this local freeze.
+
+## Independent review checkpoint
+
+The [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) checked all 46 substantive ledger rules and found one exact-quotation transcription defect. The [focused closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md) confirms its correction against the actual Act 37 scan. Four examples pass, all 71 historical topics remain mapped, and six original Guides and CTA blocks remain unchanged. Acceptance is restricted to the cited statutory baseline; regulation and transition gaps still prevent operative 2026 acceptance or country completion.
