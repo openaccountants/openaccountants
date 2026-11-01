@@ -1,0 +1,24 @@
+{
+  "prior_accepted_head": "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+  "guide_count": 1,
+  "ledger_rows": 36,
+  "case_count": 2,
+  "independent_review": "pending",
+  "files": {
+    "skills/benin/bj-property-gains-tax.md": "830ea66a059b1a39e1fb710aaab9666a7544df03bded864338a196caeb1c0bcf",
+    "skills/benin/README.md": "3e2ec478b667203c9d8ad3aebc4771878b5b33c05089586b08c1e2a35a88a719",
+    "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.json": "136d33e2446d5c9bbb25488dacf3b23b21250f04bf6b2e7e607a33791e760033",
+    "evidence/ledgers/benin-tpvi-20261101/bj-property-gains-tax.md": "ae1bab5afcd300a5fe217816a1d28de27b36419a756d9dd4a1a79904bab2863c",
+    "evidence/ledgers/benin-tpvi-20261101/initial-shape-failure.json": "772e404f3f6c9806127abf878fb2fdac7a60ab4260ee10e86837a50bc308078d",
+    "evidence/ledgers/benin-tpvi-20261101/old-topics.json": "29bc213747b61322832aa73d92afdb41659811e15c0a226ff966e9284c0ddda9",
+    "evidence/ledgers/benin-tpvi-20261101/old-topics.md": "c599231e3f62bf8fd86a62f43a5a5dadbb74ae770324bb7726942d6cdd1de79f",
+    "evidence/ledgers/benin-tpvi-20261101/preservation-baseline.json": "56c2ffdc03e45ece8183941a059aa873b09766d280f9a49576c993078bd5603b",
+    "evidence/ledgers/benin-tpvi-20261101/source-identities.json": "10db37cec26ccf2cab637e968024aea94d8a7d231d19db839493ce42d3974f95",
+    "evidence/ledgers/benin-tpvi-20261101/visual-read-manifest.json": "446b8083cd2f05b8882b03869dbb61aea06a6d8e72480ccf85af772a15676109",
+    "evidence/ledgers/benin-tpvi-20261101/writer-preservation.json": "79a226991b0ffbad7bb34166fb32d9817e4cd664840d8472670e174ba5c2fbb6",
+    "evidence/ledgers/benin-tpvi-20261101/writer-quote-checks.json": "a0c19f84a3527d5a9d669be15b7a7b8bb06339082620ad3d3ba16c31116427f4",
+    "evidence/ledgers/benin-tpvi-20261101/writer-record.md": "2151d28d86c72924b9075ec8fe27a4fa661a9a26c3fcd20483f972b03aa2bb0e",
+    "evidence/ledgers/benin-tpvi-20261101/writer-working-checks.json": "f5f3ad6cb3a5ac6ba15381921b7738763a0ba7dd44a8f922424ed68128d06eef"
+  },
+  "self_and_later_committed_validation_receipt_excluded": true
+}
