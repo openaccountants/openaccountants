@@ -37,3 +37,7 @@ Read2026-11-01. Original six-row ledger evidence/ledgers/gn-property-tax.md rema
 | C31 | Filing:15Februaryannualrents/withholdingstatement | CGI268IV | https://itie-guinee.org/wp-content/uploads/2022/01/NOUVEAU-CODE-GENERAL-DES-IMPOTS.pdf | « au plus tard le 15 février de chaque année » | 2026-11-01 |
 | C32 | Penalties:rentseizurethirdpartydebtnotice,nopenaltyrateestablished | CGI267III | https://itie-guinee.org/wp-content/uploads/2022/01/NOUVEAU-CODE-GENERAL-DES-IMPOTS.pdf | « un avis à tiers détenteur » | 2026-11-01 |
 | C33 | Crossborder: Guineaowners irrespectiveofresidence/nationality | DGI2026§4.1.1.1 | https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx | « de nationalité guinéenne ou non, résidente fiscale ou non » | 2026-11-01 |
+
+## Review correction: governing-version coverage
+
+The expanded prerequisite covers CGI 257-264 and 266-272 plus the March CGI 265 replacement and continuing applicability of the April DGI interpretation. An unresolved governing version stops live liability, valuation, withholding, filing and payment conclusions. This does not resolve the current-law gap or silently extend earlier acceptance.
