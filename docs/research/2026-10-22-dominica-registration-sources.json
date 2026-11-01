@@ -1,0 +1,59 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-rules.pdf",
+      "bytes": 53457,
+      "sha256": "508f574a6a6c9f89d7b00535fa6c5a6889589053a5927e038d844f67e31f7a0c"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-act4-2008.pdf",
+      "bytes": 33541,
+      "sha256": "ea1d422ac491d2784bc981c502ed3e9dbdb10f39085797a98991d631dff53ad7"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/forms/bnc/Application-Incorporation-companies-act.pdf",
+      "bytes": 99674,
+      "sha256": "0e2f595bbebca6d43f0acee9b80d845e9a5f6a957e99ce6f9e4e5ef0765e5afb"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/businesses-and-companies/companies/",
+      "bytes": 15296,
+      "sha256": "aeefb92bc0e0c3065277184895e95e5db7f910105bd8c5b93fcd28ea3a1dcd7c"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-act.pdf",
+      "bytes": 326951,
+      "sha256": "13bc7b7a63a85aea85d3ae88cb56e38176841b419096778dc7b1ed2feacf1a7a"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-name-registration.pdf",
+      "bytes": 776670,
+      "sha256": "742cb75fd8edfb717b967ea1708bf9f6886fb2532647c11a40a32707bfabe119"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/files/business-names-rules-2001.pdf",
+      "bytes": 300718,
+      "sha256": "e6745a7476c4b42cde7bfa81827443b7582436eb59cb91cf0bf2dbcfc1c25d23"
+    },
+    {
+      "url": "https://www.cipo.gov.dm/fees/business-names/",
+      "bytes": 7897,
+      "sha256": "7ee5c704df9b704bcd48114487c0ade5f6498601e83e6e3046866976cfa5712f"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "All five instruments on CIPO business-name law index read; completeness beyond that index not certified",
+    "Corporate eligibility, annual returns and beneficial ownership",
+    "Current Form 9A and online submission completion",
+    "Company and sector fees and permissions"
+  ],
+  "access_notes": [
+    "Old images/forms URLs returned 404; current forms/bnc Form 1 resolved",
+    "Form 9A returned 502 in web fetch; not substantively inspected",
+    "Act 4 of 2008 text extraction incomplete; no operative definition inferred",
+    "Base Act scanned: OCR checked against rendered pages 7 and 10; 2001 amendment page 2 visually checked. Current CIPO fee page returned 502; current amounts not certified.",
+    "Follow-up: direct HTTP fetch recovered current fee page. SRO 35 of 2001 rendered and visually checked, including amounts missing from extracted text. Both pages of Act 4 of 2008 visually checked: definition and deemed commencement resolved. Earlier failure notes describe historical attempts, not remaining access gaps."
+  ]
+}
