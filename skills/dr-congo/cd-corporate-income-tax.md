@@ -7,13 +7,13 @@ last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.1
 tax_year_notes: "Income earned in 2026 under the IS reform; ordinary calculation and filing preparation only. Earlier IBP periods, transition cases and the full carried-2025 measure chain require separate work; no final 2026 liability or live filing approval."
 ---
 
-# DR Congo corporate income tax: ordinary IS workpaper v 1.1
+# DR Congo corporate income tax: ordinary IS workpaper v1.1
 
 ## Who this applies to
 
@@ -161,7 +161,7 @@ expected:
 | Laws 23/052 and 23/053 of 30 November 2023, official combined gazette copy | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01: this expansion read procedure art.13 PDF4–5; IS arts.3–13 PDF12–15, art.20 PDF17, arts.46–57 PDF23–26 and final arts.150–153 PDF44. Cited scope checked visually against the scanned pages; detailed capital-allowance rules not reconstructed. |
 | Finance Law 25/060 of 29 December 2025, 2026 revenue volume | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01: expansion read articles 16–31 in relevant OCR, with articles 18–19 PDF17, 23–24 PDF19 and 31 PDF27 visually checked. Other source portions retain their separate prior read receipts. |
 | Rectifying Finance Law 26/032 of 7 August 2026 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01: tax/commencement portions screened in actual captured OCR for changes to this job, including arts 14–19 and 49–51. Passive-income changes belong to the separate payment Guide; no claim that every annex or later instrument has been checked. |
-| Rectifying Finance Law 25/044 of 28 June 2025, carriedarticle 9 | https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf | 2026-11-01: actual PDF12–13 read,PDF12 visually checked. The carriedarticle 9 concerns mediation/re-examination procedures; it does not supply the missing original 24/011 fiscal provisions. No complete 2025 law reconciliation claimed. |
+| Rectifying Finance Law 25/044 of 28 June 2025, carried article 9 | https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf | 2026-11-01: actual PDF12–13 read,PDF12 visually checked. The carried article 9 concerns mediation/re-examination procedures; it does not supply the missing original 24/011 fiscal provisions. No complete 2025 law reconciliation claimed. |
 | Ministry, IS/IRPP direct-tax reform | https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp | 2026-11-01: reform commencement field, 1 January 2026, actually opened in web reader. |
 | DGI, IS public declaration instructions | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01: taxpayer, deadline, form/signature/bank-attestation instructions and observed public service links; no authenticated submission read. |
 

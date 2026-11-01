@@ -7,13 +7,13 @@ last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v 1.0 (content)
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.0
 tax_year_notes: "Intended 2026 IRPP research workpaper only. Original 2025 carried provisions and stated legal/procedure gaps remain unresolved; no final 2026 liability or live-filing approval."
 ---
 
-# DR Congo individual income tax: IRPP research workpaper v 1.0
+# DR Congo individual income tax: IRPP research workpaper v1.0
 
 ## Who this applies to
 
@@ -33,10 +33,10 @@ Annual net global income is rounded down to the lower CDF 1000 before applying t
 
 | Item | Cited rule and conditions | Research period | Official source |
 |---|---|---|---|
-| First annual band | 3% from CDF 0 to 1, 944, 000; ordinary scale has no zero-rate band, but exemptions and special regimes still require screening | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
-| Second annual band | 15% on the slice CDF 1, 944, 001–21, 600, 000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
-| Third annual band | 30% on the slice CDF 21, 600, 001–43, 200, 000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
-| Highest annual band | 40% on the slice above CDF 43, 200, 000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
+| First annual band | 3% from CDF 0 to 1,944,000; ordinary scale has no zero-rate band, but exemptions and special regimes still require screening | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
+| Second annual band | 15% on the slice CDF 1,944,001–21,600,000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
+| Third annual band | 30% on the slice CDF 21,600,001–43,200,000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
+| Highest annual band | 40% on the slice above CDF 43,200,000 | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
 | Scale ceiling | Article 118 says total tax cannot exceed 30% of taxable income; interaction with the business minimum and family relief must be resolved where it changes the result | 2026 | [Law 23/053 art.118](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
 | Family relief | 2% of eligible scale tax for each qualifying family member, maximum 9; no relief on tax relating to income above the third band; family status is at 1 January | 2026 | [Law 23/053 arts.123–125](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
 | Business-income minimum | Global IRPP cannot be less than 1% of turnover where declared global income includes industrial/commercial/property/artisan, noncommercial or agricultural profits; microenterprises excluded | 2026 | [Law 23/053 art.122](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
@@ -71,7 +71,7 @@ Article 150 sets statutory rounding: a decimal goes to the franc above if the fi
 |---|---|---|
 | Individual annual declaration | No later than 30 April following the income year, at the tax service for the individual's residence; the 2026 replacement article 17 does not reproduce the earlier salary-only waiver | [Finance Law 25/060 art.20 replacing Procedures Law 004/2003 art.17,PDF17–18](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf) |
 | Employer annual salary report | Specified corporate/other-entity and real/small-business individuals report salaries paid by 31 March, with individual sheets sorted by province/alphabetically; this is separate from the individual's declaration | [Finance Law 25/060 art.22 replacing Procedures Law art.22 ter,PDF18](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf) |
-| Monthly salary withholding | Employer retains monthly under article 119; the cited Procedures Law article 18 requires remittance no later than 15 th of the next month after payment/availability, with a declaration even for nil pay | [Law 23/053 art.119 and Law 23/052 art.1 replacing Procedures Law art.18,PDF5](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
+| Monthly salary withholding | Employer retains monthly under article 119; the cited Procedures Law article 18 requires remittance no later than 15th of the next month after payment/availability, with a declaration even for nil pay | [Law 23/053 art.119 and Law 23/052 art.1 replacing Procedures Law art.18,PDF5](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf) |
 
 For 2026 income the ordinary individual-return date from that rule is 30 April 2027; the employer's separate salary-report date is 31 March 2027, before any independently established extension. The old 30 March statement must not route either obligation. The public DGI IRPP page confirms the global-income architecture and scale, but does not establish the actual return form, field numbers or authenticated completion sequence. [DGI IRPP page](https://dgi.gouv.cd/impot-sur-le-revenu-des-personnes-physiques-irpp/).
 
@@ -97,7 +97,7 @@ These are conditional demonstrations of the cited text, not approved 2026 tax bi
 
 ### 1. Salary-only annual reconciliation
 
-Assume ordinary salary-only net global income of CDF 20, 000, 499 after all supported category/global deductions. Round the scale base down to CDF 20, 000, 000. The first-band tax is CDF 58, 320 and second-band tax CDF 2, 708, 400, total CDF 2, 766, 720, below the CDF 6 million ceiling. No business minimum applies. The whole-franc amount rounds to CDF 2, 766, 700 under the hundred rule. With CDF 2, 600, 000 independently established withholding, the indicative balance is CDF 166, 700. Do not infer a salary-only annual-filing exemption from that withholding.
+Assume ordinary salary-only net global income of CDF 20,000,499 after all supported category/global deductions. Round the scale base down to CDF 20,000,000. The first-band tax is CDF 58,320 and second-band tax CDF 2,708,400, total CDF 2,766,720, below the CDF 6 million ceiling. No business minimum applies. The whole-franc amount rounds to CDF 2,766,700 under the hundred rule. With CDF 2,600,000 independently established withholding, the indicative balance is CDF 166,700. Do not infer a salary-only annual-filing exemption from that withholding.
 
 ```oa-check
 name: Annual salary IRPP base rounding and withholding reconciliation
@@ -123,7 +123,7 @@ expected:
 
 ### 2. Decision: ordinary real-regime business minimum
 
-Assume an individual with an independently established valid real-regime election, CDF 200 million turnover and CDF 10 million final net global income including qualifying business profit. The scale yields CDF 1, 266, 720; the 1% turnover minimum is CDF 2 million. The latter is still below the CDF 3 million scale ceiling, so this case does not decide a ceiling-versus-minimum conflict. With no family relief and CDF 1.5 million independently supported creditable payments, the indicative balance is CDF 500, 000. Without the real-regime election/classification, stop and determine the applicable regime first.
+Assume an individual with an independently established valid real-regime election, CDF 200 million turnover and CDF 10 million final net global income including qualifying business profit. The scale yields CDF 1,266,720; the 1% turnover minimum is CDF 2 million. The latter is still below the CDF 3 million scale ceiling, so this case does not decide a ceiling-versus-minimum conflict. With no family relief and CDF 1.5 million independently supported creditable payments, the indicative balance is CDF 500,000. Without the real-regime election/classification, stop and determine the applicable regime first.
 
 ```oa-check
 name: Real-regime business minimum exceeds scale within ceiling
@@ -164,7 +164,7 @@ expected:
 | Source | Official URL | Read on and scope |
 |---|---|---|
 | Laws 23/052 and 23/053, official combined gazette | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01: procedure art.18PDF5; IRPP arts.58–71PDF26–30,art.80PDF32,art.89PDF34,regime/election arts.107–113PDF38,arts.116–128PDF39–41 and final arts.150–153PDF44. Relevant scanned pages read visually; full other-category computations not reconstructed. |
-| Finance Law 25/060, 2026 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01: carried-measure art.16, replacement individual-return art.20PDF17–18 and employer-report art.22PDF18 read, including actual scan. Original 2025 carried provisions remain unreconciled. |
+| Finance Law 25/060,2026 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01: carried-measure art.16, replacement individual-return art.20PDF17–18 and employer-report art.22PDF18 read, including actual scan. Original 2025 carried provisions remain unreconciled. |
 | Rectifying Law 26/032, 7 August 2026 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01: art.19 changing financial-income categories read in captured OCR; art.80 interaction and exact application across the change are not resolved. |
 | Ministry, direct-tax reform | https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp | 2026-11-01: commencement field actually opened;1 January 2026. |
 | DGI, public IRPP presentation | https://dgi.gouv.cd/impot-sur-le-revenu-des-personnes-physiques-irpp/ | 2026-11-01: scope, six income categories, scale/cap and public links read; no actual authenticated return observed. |
