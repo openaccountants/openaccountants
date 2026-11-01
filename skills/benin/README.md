@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: bj-cross-border-withholding
 partial:
-  IT-IND: "Monthly salary ITS refreshed; Rental IRF and annual TFU jobs added as pending-review drafts; business/capital and exceptional-pay computations remain open."
+  IT-IND: "Monthly salary ITS refreshed; Rental IRF and annual TFU jobs added as independently source-reviewed partial drafts; business/capital and exceptional-pay computations remain open."
   IT-CORP: "Ordinary IS working paper refreshed; all special expense/incentive/sector and authenticated filing cases not completed."
   VAT: "Monthly working paper refreshed; threshold ministerial order, product classification and authenticated workflows remain open."
   SC: "CNSS source failed in direct/web/ordinary browser; current bases, rates, ceilings and CNSS filing not verified."
@@ -39,6 +39,6 @@ The [initial review](../../evidence/ledgers/benin-review-20261101/review.md) che
 
 ## Property and rental additions, 1 November 2026
 
-Two distinct pending-review jobs supplement the eight preserved Guides: [annual property TFU](bj-property-tfu.md) and [rental IRF/withholding](bj-rental-income-tax.md). TFU uses its own rights-holder, valuation, communal rate, exemption and payment rules. Rental IRF separates the landlord’s annual base from tenant/platform withholding. The June platform text is recorded, but its first operative withholding period remains held. No lease-registration duty or property-gain computation is claimed.
+Two distinct partial jobs supplement the eight preserved Guides, with [independent source review](../../evidence/ledgers/benin-property-review-20261101/review.md) accepted for 42 ledger rows and four examples: [annual property TFU](bj-property-tfu.md) and [rental IRF/withholding](bj-rental-income-tax.md). TFU uses its own rights-holder, valuation, communal rate, exemption and payment rules. Rental IRF separates the landlord’s annual base from tenant/platform withholding. The June platform text is recorded, but its first operative withholding period remains held. No lease-registration duty or property-gain computation is claimed.
 
 All seven domains remain partial. These additions have writer checks only; they do not inherit the independent review of the earlier eight Guides and do not constitute accountant attestation or a certified filing. Source/rule ledgers and the immutable preservation baseline are in `evidence/ledgers/benin-property-20261101/`.
