@@ -1,0 +1,13 @@
+# Saudi PR1200 bounded repair handoff
+
+Immutable base: `46c01152da0fdd1b722f61190c88413d0a195d02`. Starting head: `9bf8293fcf9757b59f22cdf631a57d7fd43b2d2e`. Existing branch: `refresh/saudi-arabia-2026-team-skills`. The two team Guides only; ten named-contributor Guides unchanged. README clarification only; no generated exports.
+
+Writer evidence: 92 rule-ledger rows: 62 official-source/correction rows, 6 stipulated arithmetic/workflow rows, 24 explicit non-operative hold topics. Each per-Guide ledger contains its applicable rows; quote-checks identifies normalized original-text matches and visual-read rows. Authentic raw PDFs/HTML are outside Git in the adjacent `sources` cache. Source manifests identify original URL, hash and actual read scope. Direct normal TLS was used. BOE live law failed TLS and ordinary browser; a dated 2026-02-15 official-law archive was obtained and read, distinctly marked. Later amendment coverage is not asserted.
+
+All four prior blockers are no longer operative: no EBITDA proxy, no specialist gas-rate selection, no deemed mandatory VAT for an estimated band, and no foreign-owner Hijri refusal. Additional inherited unverified rules are held at their local uses and in Sources. WHT nil-month/partnership exceptions, rate conditions and period-scaled Zakat are explicit. Exact30-day penalty example avoids a remainder assumption; illustrative annual dates are before holiday adjustment. A hold cannot support a final return or automatic refusal/overdue conclusion. Historical topics and changelogs remain.
+
+Old-topic evidence: 254 intake and 430 assembly predecessor units, including every nonempty table row, paragraph, code block and heading, with immutable original text/range/hash and candidate destination. Baselines capture the full original merge-base files. This writer mapping is not independent acceptance; a fresh reader must inspect every ledger row and spot-check topic destinations before acceptance.
+
+**REMAINING GATE: no new every-row independent review was performed.** The earlier partial review was held and is not acceptance. No auto-merge, approval, merge or public acceptance statement is authorised by this writer record. Root coordinates the remaining independent review and repository approval gates. Local checks are reported separately against the committed head.
+
+Removed and why: duplicate question/runbook/quick-reference lines mapped to one surviving workflow home; superseded booking boilerplate mapped to the unchanged platform closing block; unsupported operative numerical statements replaced by explicitly named holds, not dropped topics. Neither Guide shrank against merge base. Independent lost-content restoration count is pending, never asserted as zero by the writer.

@@ -1,0 +1,374 @@
+[
+  {
+    "id": "Z01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "No. (1007) and dated 19/08/1445 H"
+  },
+  {
+    "id": "Z02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "who are accorded similar treatment as Saudi nationals."
+  },
+  {
+    "id": "Z03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Resident Saudi person, who practices an Activity under a license within the Kingdom."
+  },
+  {
+    "id": "Z04",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "no less than 30 days"
+  },
+  {
+    "id": "Z05",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Its principal headquarters is in the Kingdom"
+  },
+  {
+    "id": "Z06",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "according to its owners and the property shares at the end of the Zakat year"
+  },
+  {
+    "id": "Z07",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Zakat shall be levied at (2.5%) of Zakat Base for Hijri year."
+  },
+  {
+    "id": "Z08",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Percentage of Zakat = (2.5% ÷ number of days of the Hijri year) x number of days"
+  },
+  {
+    "id": "Z09",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "The fiscal period less than (354) days as of the activity conclusion shall not be subject"
+  },
+  {
+    "id": "Z10",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Pursuant to the provisions of Articles (27) & (28)"
+  },
+  {
+    "id": "Z11",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "The minimum for the base set out herein shall be an alternate base"
+  },
+  {
+    "id": "Z12",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "the deadline extends to the first working day following the holiday."
+  },
+  {
+    "id": "Z13",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Paying Zakat dues shall be through a bank transfer via the “Sadad” system"
+  },
+  {
+    "id": "Z14",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "five (5) years from the deadline for submitting the Zakat Return"
+  },
+  {
+    "id": "Z15",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "within the Kingdom for a period of no less than (10) ten years."
+  },
+  {
+    "id": "I01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Shares of non-Saudi partners in resident capital companies."
+  },
+  {
+    "id": "I02",
+    "normalised_quote_found": false,
+    "visual_evidence": true,
+    "quote": "Resident Capital Company"
+  },
+  {
+    "id": "I03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "approved form."
+  },
+  {
+    "id": "I04",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "1- Natural person"
+  },
+  {
+    "id": "I05",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "1% of total revenue, capped at a maximum of SAR 20,000."
+  },
+  {
+    "id": "I06",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "5% of the unpaid tax if the delay does not exceed 30 days."
+  },
+  {
+    "id": "I07",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "1% of the unpaid tax for every 30 days of delay."
+  },
+  {
+    "id": "I08",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "with the intent to evade tax"
+  },
+  {
+    "id": "W01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "amounts paid to non-residents by natural persons for personal use are not subject"
+  },
+  {
+    "id": "W02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Management fees"
+  },
+  {
+    "id": "W03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Royalties"
+  },
+  {
+    "id": "W04",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Land transport within the Kingdom"
+  },
+  {
+    "id": "W05",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Loan charges (income from debt claims)"
+  },
+  {
+    "id": "W06",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Amounts paid to international telecommunications companies for international roaming services."
+  },
+  {
+    "id": "W07",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "are not subject to Tax Withholding."
+  },
+  {
+    "id": "W08",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "for a maximum period of 90 days"
+  },
+  {
+    "id": "W09",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "for shipping goods from abroad to ports in the Kingdom."
+  },
+  {
+    "id": "W10",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "If there are no amounts subject to Tax Withholding, the person is not obligated to submit the monthly statement."
+  },
+  {
+    "id": "W11",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "except for partnerships, which must submit the form within 60 days"
+  },
+  {
+    "id": "W12",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "the withheld tax shall be deducted from the tax due from the taxpayer"
+  },
+  {
+    "id": "W13",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "no less than 10 years after payment"
+  },
+  {
+    "id": "W14",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "1% of the unpaid tax for every 30 days of delay."
+  },
+  {
+    "id": "W15",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "pursuant to an international agreement to prevent double taxation"
+  },
+  {
+    "id": "C01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "within 120 days after the end of the business’s fiscal year"
+  },
+  {
+    "id": "C02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "October 31 is the last date to submit and pay the quarterly VAT for the third quarter of 2026"
+  },
+  {
+    "id": "C03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "March 31 is the last date to submit and pay Excise Tax for January and February 2026"
+  },
+  {
+    "id": "P01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "whose annual supplies of goods and services exceed SAR 40 million"
+  },
+  {
+    "id": "E01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "whose revenues subject to VAT exceeded (SAR 187,500) during 2022, 2023,2024 or 2025."
+  },
+  {
+    "id": "E02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "by no later than February 1, 2027."
+  },
+  {
+    "id": "E03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "at least six months before their Integration Date."
+  },
+  {
+    "id": "X01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "بحسب كمية السكر الإجمالي في كل (100 مل)"
+  },
+  {
+    "id": "V01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "5% - 25% of the value of the Tax that would have had to be declared"
+  },
+  {
+    "id": "V02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "5% of the value of the unpaid Tax for each month or part thereof"
+  },
+  {
+    "id": "V03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "50% of the value of the difference between the calculated Tax and the Tax due"
+  },
+  {
+    "id": "F01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "July 1 to December 31, 2026"
+  },
+  {
+    "id": "F02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Fines for returns due that must be submitted to ZATCA after June, 30 2026."
+  },
+  {
+    "id": "M01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "This shall not apply to investments in securities that are"
+  },
+  {
+    "id": "M02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "The provisions of this Law shall not prejudice the laws of other agencies applicable to"
+  },
+  {
+    "id": "M03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "Upon receiving a notification of completed registration from the Ministry, the foreign investor can then issue a commercial registration"
+  },
+  {
+    "id": "M04",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "There are no additional requirements for existing investors to comply with."
+  },
+  {
+    "id": "M05",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "the particulars of the owners, shareholders, persons having control over a foreign investor"
+  },
+  {
+    "id": "IR01",
+    "normalised_quote_found": false,
+    "visual_evidence": true,
+    "quote": "وتستثنى البنوك من تطبيق هذه المعادلة."
+  },
+  {
+    "id": "B01",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "أ - سعر الضريبة على الوعاء الضريبي هو عشرون بالمائة (20%)"
+  },
+  {
+    "id": "B02",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "2 - إتاوة أو ريع 15% 3 - أتعاب إدارة 20%"
+  },
+  {
+    "id": "B03",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "ب - يجب تقديم الإقرار الضريبي خلال مائة وعشرين يوما"
+  },
+  {
+    "id": "B04",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في مجال استثمار الغاز الطبيعي هو عشرون بالمائة (20%)"
+  },
+  {
+    "id": "B05",
+    "normalised_quote_found": true,
+    "visual_evidence": false,
+    "quote": "يجوز للمكلف استخدام فترة اثني عشر شهرا مختلفة"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "named_contributor_files": {
+    "skills/saudi-arabia/sa-excise-tax.md": {
+      "base_sha256": "518be559f689167fe323ea8bb621e17887edf3e527f3b80759253bcb1da40bb9",
+      "candidate_sha256": "518be559f689167fe323ea8bb621e17887edf3e527f3b80759253bcb1da40bb9",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/saudi-arabia-vat.md": {
+      "base_sha256": "a6de216f4dc4f029e273f927de77660afb4f5ddf10ae16bac5705011a855a180",
+      "candidate_sha256": "a6de216f4dc4f029e273f927de77660afb4f5ddf10ae16bac5705011a855a180",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-zakat.md": {
+      "base_sha256": "faa293f8547006b88722ccbc0d1badb1a454080e029546f443b948e2c875167f",
+      "candidate_sha256": "faa293f8547006b88722ccbc0d1badb1a454080e029546f443b948e2c875167f",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-corporate-tax.md": {
+      "base_sha256": "a3f2d025c5718f9a55ee09ac844cf5c48cab623d1bd074b0abb402e969b3cf50",
+      "candidate_sha256": "a3f2d025c5718f9a55ee09ac844cf5c48cab623d1bd074b0abb402e969b3cf50",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-rett.md": {
+      "base_sha256": "53aed71ceade3075ff4444a90625866ede92e228898f77a92514f4055a496cb6",
+      "candidate_sha256": "53aed71ceade3075ff4444a90625866ede92e228898f77a92514f4055a496cb6",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/references.md": {
+      "base_sha256": "9cbeeb92009d3aa40e2a5913c9d00583f27288ca7db41cc8899fcf181f593574",
+      "candidate_sha256": "9cbeeb92009d3aa40e2a5913c9d00583f27288ca7db41cc8899fcf181f593574",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-gosi-saudization.md": {
+      "base_sha256": "2517783690b6ca475700c74525d59f1ec1cd4b347b67bcf84b872711981e9bb1",
+      "candidate_sha256": "2517783690b6ca475700c74525d59f1ec1cd4b347b67bcf84b872711981e9bb1",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-formation.md": {
+      "base_sha256": "dda777d2e3421a8802c4473e4592bcbb3eab84bf0fa174896148060e7f8f0ef7",
+      "candidate_sha256": "dda777d2e3421a8802c4473e4592bcbb3eab84bf0fa174896148060e7f8f0ef7",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/sa-withholding-tax.md": {
+      "base_sha256": "41f8a09ec665b39bbc6d6054b04d173aa430274e5ba1e939e69ae2a663284486",
+      "candidate_sha256": "41f8a09ec665b39bbc6d6054b04d173aa430274e5ba1e939e69ae2a663284486",
+      "unchanged": true
+    },
+    "skills/saudi-arabia/saudi-einvoice.md": {
+      "base_sha256": "3459a9687cfe8eb751c573ab6f4411b0dd7f39d0d7303cbed31ba1667e752077",
+      "candidate_sha256": "3459a9687cfe8eb751c573ab6f4411b0dd7f39d0d7303cbed31ba1667e752077",
+      "unchanged": true
+    }
+  },
+  "platform": {
+    "sa-freelance-intake": {
+      "platform_fields": {
+        "review_status": "review_status: pending_review",
+        "trust_label": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
+        "license": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "authored_by": null,
+        "drafted_by": null,
+        "approved_by": null,
+        "validation_status": null,
+        "validated": null,
+        "reviewed_by": null,
+        "verified_by": null
+      },
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_and_cta_unchanged": true,
+      "guide_sha256": "e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b790aef72340"
+    },
+    "sa-return-assembly": {
+      "platform_fields": {
+        "review_status": "review_status: pending_review",
+        "trust_label": "trust_label: Built by Michael Cutajar and the OpenAccountants team",
+        "license": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "authored_by": null,
+        "drafted_by": null,
+        "approved_by": null,
+        "validation_status": null,
+        "validated": null,
+        "reviewed_by": null,
+        "verified_by": null
+      },
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_and_cta_unchanged": true,
+      "guide_sha256": "405b3e318200581231850a43474204a0578fe71abd226b6c965f1253e2860dc9"
+    }
+  }
+}
