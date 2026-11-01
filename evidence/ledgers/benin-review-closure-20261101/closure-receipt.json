@@ -1,0 +1,420 @@
+{
+  "initial_candidate": "a61fda399fa613455862d3cc72d5c403cd330ccc",
+  "repaired_head": "3a14e7b7bbb9ac80425e046325b0b946e66fb927",
+  "actual_head": "3a14e7b7bbb9ac80425e046325b0b946e66fb927",
+  "pinned_base": "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297",
+  "guides": {
+    "bj-company-formation.md": {
+      "sha256": "54d0ea8a89471609ddd3afed1f008ef09a6646d777eb24986dbf698e2b1f0c41",
+      "description_words": 102,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin SARL and SA formation working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-corporate-income-tax.md": {
+      "sha256": "6512023da176e375199a72b35f984a1ab580349297178ec2824138fb12829099",
+      "description_words": 105,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin corporate IS working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-cross-border-withholding.md": {
+      "sha256": "44cb594832380b8b7580e82faeab3eb23388e867701b6d7018b8dcfb71a3b71f",
+      "description_words": 108,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin cross-border withholding working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-income-tax.md": {
+      "sha256": "667232b7bb8753ac3a9f0fae5f0af6ce7a33f0b49ed08c014e61d013d9765de6",
+      "description_words": 105,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin monthly salary ITS working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-payroll-social.md": {
+      "sha256": "b1f8c33b112149d05121eda16812697dfec796d7500b8b072a5a2bb17b45e3d1",
+      "description_words": 105,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin employer payroll tax VPS working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-tax-overview.md": {
+      "sha256": "38fbf678be1873b5a1c31b5d9eb8b418f543d2afa6c58d97ab6ed5545047b65b",
+      "description_words": 112,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin tax preparation map v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-transfer-pricing.md": {
+      "sha256": "98eb611a0f7ba6e0d7ff22f8ce1fb9e07ff63d79d1814d7f6afcf13e771f47c2",
+      "description_words": 109,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin transfer-pricing and reporting screen v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    },
+    "bj-vat-gst.md": {
+      "sha256": "5c1f55f074516d1320cb247d0e0f72faa02c9939bcaac1a0f61f87ddecf4d695",
+      "description_words": 104,
+      "description_pass": true,
+      "version": "0.2",
+      "heading": "# Benin monthly VAT working paper v0.2",
+      "title_version_pass": true,
+      "changed_frontmatter_keys": [
+        "description",
+        "version"
+      ],
+      "only_description_version_metadata_changed": true,
+      "all_other_frontmatter_preserved": {
+        "name": true,
+        "tax_year": true,
+        "review_status": true,
+        "jurisdiction": true,
+        "last_updated": true,
+        "category": true,
+        "tier": true,
+        "license": true,
+        "trust_label": true
+      },
+      "examples_byte_identical": true,
+      "example_count": 2,
+      "cta_tail_exact": true
+    }
+  },
+  "initial_writer_evidence": {
+    "source-capture-manifest.json": {
+      "sha256": "631b0b4a652bd73725a84db99d657addccde7671c45e5f485e3fbe4b79d642fc",
+      "identical_to_initial": true
+    },
+    "candidate-hashes.json": {
+      "sha256": "c1b79e1c8102268ceb98681fa647eb42a3ea193227d6466245cdbd3e46dcf318",
+      "identical_to_initial": true
+    },
+    "writer-checks.py": {
+      "sha256": "ebcade8c134853ab2b07656c97abdf0d00bfade68098d388144b7bebf4dc9e81",
+      "identical_to_initial": true
+    },
+    "pinned-validation.py": {
+      "sha256": "62cd0bdabd32a25d29bc2111f574e0ec1a41f4773d06b01292e86bf4ad7615fa",
+      "identical_to_initial": true
+    },
+    "check-results.json": {
+      "sha256": "13c52c132d4079f1dfaccca94fd2240aa582e4c2e9b435a557b5d076263df69e",
+      "identical_to_initial": true
+    },
+    "writer-record.md": {
+      "sha256": "54159bad21b58563165962628293f21225fe6ae545a332db9ea7ada283cfa6b0",
+      "identical_to_initial": true
+    }
+  },
+  "initial_review_evidence": {
+    "source-verification.json": {
+      "sha256": "2bd56e0beab4a4c8012349e0008e37391686ca7dff575df31897c0d93682c3e6",
+      "identical_to_committed_record": true
+    },
+    "mechanical-preservation.json": {
+      "sha256": "5902356b0c9c978f775d8ee83c5702f6ce4c7cc3825781ecb7c69977411197a7",
+      "identical_to_committed_record": true
+    },
+    "text-extraction.json": {
+      "sha256": "348e342cd085f94f2b2a3699c26a2f2d23d9643192dfe48bd8d9dd19777556e3",
+      "identical_to_committed_record": true
+    },
+    "source-verification-network.json": {
+      "sha256": "eca6ccafc99961d217d8ad7ea9e02639944cd3e06969c81006d7e1fd6abc1b80",
+      "identical_to_committed_record": true
+    },
+    "independent-checks.py": {
+      "sha256": "1a43af6d65b6b68936fadae7e45c838ca4914f17ae2f4e316d54de0d6899db1b",
+      "identical_to_committed_record": true
+    },
+    "review.md": {
+      "sha256": "cec48a278d5f3ade12af975d02520eba141690d6798c9f5e847d63396b17aaef",
+      "identical_to_committed_record": true
+    },
+    "row-checks.md": {
+      "sha256": "82b329cb0aaa823182ba78ea7b69016fefe03c439380bb17647da88d623ff6cb",
+      "identical_to_committed_record": true
+    },
+    "build-row-receipt.py": {
+      "sha256": "c5b02ecccc0f65f7c6cdca31bf752b33a7f4d78684364edf229fe69840ca89cc",
+      "identical_to_committed_record": true
+    }
+  },
+  "repair_receipt_hashes": {
+    "preservation.json": "f131cd188f3f63de9b4f41a6ff314286002f92037ad8a792d424e70763f9db82",
+    "writer-repair.json": "d82723aa42309d6f4912f662e0614342c5cfe8cbcb489cf05311f2dd6db7e947"
+  },
+  "changed_ledger_rows": [
+    {
+      "file": "bj-cross-border-withholding.md",
+      "row": 7,
+      "old": "| 7 | Interestgrossrecognition and classification | The base | CGI 2026, art. 85 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=48 | « montant brut des intérêts » | 2026-11-01 |",
+      "new": "| 7 | Gross-interest classification; tax arises on payment OR debit/credit accounting entry, including sums not yet paid | Rates; The base; Deadlines | CGI 2026, art. 85(1)–(2) | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=48 | « même si les sommes concernées ne sont pas encore payées » | 2026-11-01 |"
+    },
+    {
+      "file": "bj-transfer-pricing.md",
+      "row": 10,
+      "old": "| 10 | Onsite2/4month limits, latter4extension, reasoned 3daynotice | Deadlines | LFR2026art17 | https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5 | « au moins trois (3) jours avant l’échéance » | 2026-11-01 |",
+      "new": "| 10 | On-site 2/4-month limits; declared turnover for any tax in any year under audit, including current year; latter 4-month extension and reasoned 3-day notice | Deadlines | LFR2026art17 | https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=5 | « l’une quelconque des années sous contrôle, y compris celle en cours » | 2026-11-01 |"
+    }
+  ],
+  "ledger_count": 113,
+  "topic_map": {
+    "rows": 81,
+    "original_topic_cells_unchanged": true,
+    "reason_cells_unchanged": true,
+    "changes": [
+      {
+        "topic": "bj-vat-gst.md: - **Reverse charge on imported services** — VAT on services supplied by a non-resident to a Benin customer is self-assessed by the recipient (reverse charge / TVA pour compte de tiers) ((approx — confirm))  _(Code Général des Impôts (Bénin) — TVA sur prestations de non-résidents)_",
+        "new_target": "bj-vat-gst.md#cross-border-points",
+        "target_exists": true
+      },
+      {
+        "topic": "bj-vat-gst.md: - **VAT on foreign digital / e-services** — Benin extends VAT to electronically supplied services and digital platforms supplied to Benin consumers  _([Code Général des Impôts (Bénin) — TVA services numériques](https://www.anrok.com/vat-software-digital-services/benin))_",
+        "new_target": "bj-vat-gst.md#cross-border-points",
+        "target_exists": true
+      },
+      {
+        "topic": "bj-vat-gst.md: - **Input VAT recovery** — Registered (real-regime) taxpayers may deduct input VAT on business purchases against output VAT, subject to exclusions  _(Code Général des Impôts (Bénin) — droit à déduction)_",
+        "new_target": "bj-vat-gst.md#the-base",
+        "target_exists": true
+      },
+      {
+        "topic": "bj-corporate-income-tax.md: - **Tax base** — Net accounting profit (per SYSCOHADA accounts) adjusted for tax add-backs and deductions  _(Code Général des Impôts (Bénin) — détermination du bénéfice imposable)_",
+        "new_target": "bj-corporate-income-tax.md#the-base",
+        "target_exists": true
+      },
+      {
+        "topic": "bj-corporate-income-tax.md: - **Advance payments (acomptes)** — IS is paid by advance installments (acomptes) during the year, with the balance settled on filing ((approx — confirm number/dates of installments))  _(Code Général des Impôts (Bénin) — acomptes IS)_",
+        "new_target": "bj-corporate-income-tax.md#deadlines-and-filing",
+        "target_exists": true
+      },
+      {
+        "topic": "bj-tax-overview.md: - **Corporate income tax (IS) annual return deadline** — By 30 April of the year following the financial year ((approx — confirm))  _(Code Général des Impôts (Bénin) — Impôt sur les Sociétés)_",
+        "new_target": "bj-corporate-income-tax.md#deadlines-and-filing",
+        "target_exists": true
+      }
+    ]
+  },
+  "official_pdf_integrity": [
+    {
+      "file": "cgi2026.pdf",
+      "url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+      "sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "matches_independent_same_day_official_fetch": true,
+      "original_fetch_utc": "2026-11-01T10:18:09.192739+00:00"
+    },
+    {
+      "file": "lfr2026.pdf",
+      "url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+      "sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "matches_independent_same_day_official_fetch": true,
+      "original_fetch_utc": "2026-11-01T10:18:09.192739+00:00"
+    }
+  ],
+  "readme_byte_identical_to_initial": true,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/benin/bj-company-formation.md",
+        "skills/benin/bj-corporate-income-tax.md",
+        "skills/benin/bj-cross-border-withholding.md",
+        "skills/benin/bj-income-tax.md",
+        "skills/benin/bj-payroll-social.md",
+        "skills/benin/bj-tax-overview.md",
+        "skills/benin/bj-transfer-pricing.md",
+        "skills/benin/bj-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/benin/bj-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-cross-border-withholding.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-tax-overview.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-company-formation.md",
+        "skills/benin/bj-corporate-income-tax.md",
+        "skills/benin/bj-cross-border-withholding.md",
+        "skills/benin/bj-income-tax.md",
+        "skills/benin/bj-payroll-social.md",
+        "skills/benin/bj-tax-overview.md",
+        "skills/benin/bj-transfer-pricing.md",
+        "skills/benin/bj-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "evidence/ledgers/benin-draft-20261101/pinned-validation.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Pinned base: a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297; comparison includes candidate working tree\nchanged-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-cross-border-withholding.md: BJ PR also holds bj-payroll-social, with a different job\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "--cached"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "passed": true
+}

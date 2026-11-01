@@ -16,7 +16,7 @@ partial:
 
 # Benin: partial 2026 tax pack
 
-Six legacy Guides have local 2026 replacements and two missing jobs have local drafts. All seven tax domains remain partial. Independent pack review is pending. No accountant has attested to this version, and no authenticated filing is certified.
+Six legacy Guides have local 2026 replacements and two missing jobs have local drafts. All seven tax domains remain partial. Independent AI source review and focused repair closure passed on 1 November 2026 for the bounded jobs at candidate `3a14e7b7bbb9ac80425e046325b0b946e66fb927`. No accountant has attested to this version, and no authenticated filing is certified.
 
 | Domain | Guide | Reviewed job boundary |
 |---|---|---|
@@ -32,3 +32,7 @@ Six legacy Guides have local 2026 replacements and two missing jobs have local d
 The official 2026 CGI was fetched from the tax authority's current website-configured document host, along with the signed June rectifying law. The code only consolidates the original finance law, so the relevant rectifying-law overlays were read separately. Read scopes and dates are stated in each Guide. Source retrieval is not treated as a whole-document review. Full source captures remain outside Git.
 
 Tracked by [BJ issue #446](https://github.com/openaccountants/openaccountants/issues/446). This is one local country batch; no generated bundles or inventory files are edited.
+
+## Independent source review
+
+The [initial review](../../evidence/ledgers/benin-review-20261101/review.md) checked 113 ledger rows, 81 legacy-topic destinations and 16 examples. The [focused closure](../../evidence/ledgers/benin-review-closure-20261101/review.md) closes its three findings and six destination corrections. Both original findings and separate repair evidence are preserved. Acceptance covers the stated partial preparation jobs only. All seven domains remain partial, CNSS remains unverified, and neither accountant attestation nor an authenticated filing is claimed.
