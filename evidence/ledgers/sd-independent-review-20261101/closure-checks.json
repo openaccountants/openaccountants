@@ -1,0 +1,75 @@
+[
+  {
+    "argv": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/sudan/sd-capital-gains.md",
+      "skills/sudan/sd-company-formation.md",
+      "skills/sudan/sd-corporate-income-tax.md",
+      "skills/sudan/sd-cross-border-residence.md",
+      "skills/sudan/sd-income-tax.md",
+      "skills/sudan/sd-payroll-social.md",
+      "skills/sudan/sd-tax-overview.md",
+      "skills/sudan/sd-transfer-pricing.md",
+      "skills/sudan/sd-vat-gst.md"
+    ],
+    "exit": 0,
+    "log": "closure-check-1.txt",
+    "scope": "actual working-tree files; CLI discovery includes all nine filenames from original base-to-HEAD changes"
+  },
+  {
+    "argv": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/sudan/sd-capital-gains.md",
+      "skills/sudan/sd-company-formation.md",
+      "skills/sudan/sd-corporate-income-tax.md",
+      "skills/sudan/sd-cross-border-residence.md",
+      "skills/sudan/sd-income-tax.md",
+      "skills/sudan/sd-payroll-social.md",
+      "skills/sudan/sd-tax-overview.md",
+      "skills/sudan/sd-transfer-pricing.md",
+      "skills/sudan/sd-vat-gst.md"
+    ],
+    "exit": 0,
+    "log": "closure-check-2.txt",
+    "scope": "actual working-tree files; CLI discovery includes all nine filenames from original base-to-HEAD changes"
+  },
+  {
+    "argv": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "exit": 0,
+    "log": "closure-check-3.txt",
+    "scope": "actual working-tree files; CLI discovery includes all nine filenames from original base-to-HEAD changes"
+  },
+  {
+    "argv": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+      "--worktree",
+      "--mode",
+      "audit",
+      "--strict-metadata"
+    ],
+    "exit": 0,
+    "log": "closure-check-4.txt",
+    "scope": "actual working-tree files; CLI discovery includes all nine filenames from original base-to-HEAD changes"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0,
+    "log": "closure-check-5.txt",
+    "scope": "actual working-tree files; CLI discovery includes all nine filenames from original base-to-HEAD changes"
+  }
+]

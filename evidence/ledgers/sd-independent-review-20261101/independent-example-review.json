@@ -1,0 +1,146 @@
+[
+  {
+    "guide": "sd-capital-gains",
+    "case": "Capital gain net cost bridge",
+    "independent_recomputation": "1,000,000\u2212600,000\u2212100,000\u221220,000=280,000;\u00d73%=8,400; gross\u00d73%=30,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-capital-gains",
+    "case": "Capital loss eligible versus held",
+    "independent_recomputation": "200,000\u2212150,000=50,000;\u00d73%=1,500; held200,000\u00d73%=6,000; difference4,500",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-company-formation",
+    "case": "Company founder and board count screen",
+    "independent_recomputation": "3\u22652 founders,2\u22652 board,1\u22651 natural,1\u22651 resident: four gaps0",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-company-formation",
+    "case": "Single person structure missing statutory roles",
+    "independent_recomputation": "2\u22121=1 founder and board;1\u22120=1 resident role",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "case": "2019 company sector classification comparison",
+    "independent_recomputation": "1,000,000\u00d720%=200,000;\u00d715%=150,000; difference50,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "case": "Loss support versus unsupported carryforward",
+    "independent_recomputation": "500,000\u2212300,000=200,000 supported; held500,000; difference300,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "case": "Residence exceeding183 boundary",
+    "independent_recomputation": "183\u2212183=0;184\u2212183=1; only latter satisfies strict limb",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "case": "Income scope residence comparison",
+    "independent_recomputation": "100,000+20,000=120,000 versus100,000; difference20,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-income-tax",
+    "case": "2021 resident annual employment scale",
+    "independent_recomputation": "1,200+2,400+36,000+15,200=54,800",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-income-tax",
+    "case": "Rental actual versus standard expense route",
+    "independent_recomputation": "100,000\u221230,000=70,000;100,000\u00d775%=75,000; difference5,000",
+    "arithmetic_pass": true,
+    "condition_finding": "SD-R1: add election lock/initial or approved-change assumption",
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-payroll-social",
+    "case": "Health basic versus total wage conflict",
+    "independent_recomputation": "basic4,000/6,000; total5,600/8,400; combined difference4,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-payroll-social",
+    "case": "Labour section60 twelve year tranches",
+    "independent_recomputation": "10+2\u00d71.5=13monthly wages;\u00d720,000=260,000 below36month cap",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-tax-overview",
+    "case": "Importer employer tax job routing",
+    "independent_recomputation": "1+1+1+1=4;plus1+1=6 owners; routing only",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-tax-overview",
+    "case": "Release gate evidence count",
+    "independent_recomputation": "5\u22124=1unresolved;5\u22125=0; evidence count only",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "case": "Controlled sale real value bridge",
+    "independent_recomputation": "1,000\u00d7100\u22121,000\u00d780=20,000",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "case": "Ownership threshold gap without independence shortcut",
+    "independent_recomputation": "50\u221249.9=0.1percentage point;50\u221250=0; alternative association still checked",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-vat-gst",
+    "case": "VAT historical general-rate month",
+    "independent_recomputation": "17,000\u22126,800=10,200",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  },
+  {
+    "guide": "sd-vat-gst",
+    "case": "Mixed versus directly taxable input",
+    "independent_recomputation": "10,000\u00d760,000/100,000=6,000shared;4,000disallowed;10,000ifdirecttaxable",
+    "arithmetic_pass": true,
+    "condition_finding": null,
+    "operative_2026_cleared": false
+  }
+]

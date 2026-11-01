@@ -1,6 +1,6 @@
 # Sudan complete legacy-topic destination map
 
-Pinned original base `c61d7ae58017ab9bb896a76027f2678c21b4f312`. All six original Guides were read. This additive record preserves every nonboilerplate old heading-unit, including its tables, figures, procedures, groups and exceptions. Original source/URL lists are retained as provenance; secondary hosts are not tax authority for the rewrite. These excerpts are OLD GUIDE TEXT, not quotations from law and not operative rules. The corresponding Guide Sources control explicitly holds every residual claim. Supported replacements are in the cited baseline and writer ledger. No old tax assertion is silently promoted or erased.
+Pinned original base `c61d7ae58017ab9bb896a76027f2678c21b4f312`. All six original Guides were read. The 154 original heading-units remain exact. Additive control SD-OLD-155 below separately accounts for the previously excluded payroll introductory exchange-rate assertion. This additive record preserves every nonboilerplate old heading-unit, including its tables, figures, procedures, groups and exceptions. Original source/URL lists are retained as provenance; secondary hosts are not tax authority for the rewrite. These excerpts are OLD GUIDE TEXT, not quotations from law and not operative rules. The corresponding Guide Sources control explicitly holds every residual claim. Supported replacements are in the cited baseline and writer ledger. No old tax assertion is silently promoted or erased.
 
 Removed and why: old noncanonical section scaffolding and generic duplicated warnings were replaced by canonical sections; secondary-source recommendations are retained below only as provenance; stale numeric examples are replaced by executable source-period examples. The six platform CTA blocks and platform-key lines remain byte-identical to the base. No source PDF/full OCR is committed. No Guide was deleted. Independent reviewer must report lost content restored and resolve any missing topic.
 
@@ -160,6 +160,7 @@ Removed and why: old noncanonical section scaffolding and generic duplicated war
 | SD-OLD-152 | sd-vat-gst: Section 8 — Self-checks | [sd-vat-gst Sources](../../skills/sudan/sd-vat-gst.md#sources); supported replacement above, residual old claims HELD under SD-OLD-152 |
 | SD-OLD-153 | sd-vat-gst: Section 9 — Reference material | [sd-vat-gst Sources](../../skills/sudan/sd-vat-gst.md#sources); supported replacement above, residual old claims HELD under SD-OLD-153 |
 | SD-OLD-154 | sd-vat-gst: PROHIBITIONS | [sd-vat-gst Sources](../../skills/sudan/sd-vat-gst.md#sources); supported replacement above, residual old claims HELD under SD-OLD-154 |
+| SD-OLD-155 | sd-payroll-social: introductory currency note, outside original heading-units | [sd-payroll-social Sources](../../skills/sudan/sd-payroll-social.md#sources); unsupported secondary-source historical exchange assertion HELD under SD-OLD-155, not a usable rate |
 
 ## SD-OLD-001 Section 1 — Scope statement
 
@@ -2926,5 +2927,16 @@ Original `sd-vat-gst`; destination `sd-vat-gst` Sources control. Replaced by cit
 - Do NOT claim import VAT as input credit without confirming the importer is VAT-registered.
 - Do NOT cancel voluntary registration within 2 years — automatic bar.
 - Do NOT present output as final without flagging "verify current rate" for special rates.
+
+</details>
+
+## SD-OLD-155 Payroll introductory currency note
+
+Original `sd-payroll-social`, introductory line before the first mapped heading; destination `sd-payroll-social` Sources control. Removed from usable calculations because it is an unsupported secondary-source historical exchange-rate assertion, not primary current exchange-rate evidence. The original 154 heading-units remain intact; this is an additional provenance control, not a newly verified figure.
+
+<details>
+<summary>Exact historical introductory assertion, not current exchange-rate authority</summary>
+
+> **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Exchange rate reference: US$1.00 = SDG 47 (SSA 2019 data — verify current rate). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
 
 </details>

@@ -2,7 +2,7 @@
 name: sd-cross-border-residence
 description: >
   Prepare Sudan cross-border residence and income source workpapers for 2026 intake from the actual Income Tax Act, with specific statutory alternatives and missing implementing instruments recorded. Match Sudan tax residency, 183 days, foreign company, branch, nonresident withholding, double tax treaty, foreign income and الإقامة الضريبية questions. Covers individuals and entities, ordinary residence, multi-period presence, local agents, foreign income discretion and ministerial treaty orders. Do not equate domicile, citizenship or incorporation with the complete residence test. The later enacted chain, payment rate orders, treaty texts and full income regulations remain unresolved. Build the evidence and routing decision first, and stop before applying an assumed withholding percentage, treaty benefit or foreign tax credit.
-version: 0.1
+version: 0.2
 jurisdiction: SD
 tax_year: 2026
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
@@ -11,7 +11,7 @@ category: cross-border
 tier: 2
 ---
 
-# Sudan residence foreign income and withholding intake v 0.1
+# Sudan residence foreign income and withholding intake v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,7 +30,7 @@ Individuals and non-individuals with Sudan/foreign facts, payers to foreign comp
 | Territorial charge | Resident Sudan and foreign income; nonresident Sudan-source income. Foreign-income exemption for tax paid abroad requires ministerial exercise, not automatic credit. | [s.9; PDF22–23](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
 | Treaty priority | An effective ministerial order giving effect to actual double-tax arrangements is required; no list/count or specific rate certified. | [s.33; PDF55](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
 | Nonresident-company collection rate | unverified: s.65(1)(k) delegates gross-income percentage to ministerial order. No universal 14%,15% or final-tax treatment assumed. | [s.65(1)(a)–(k); PDF94–96](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
-| On-account remittance/credit | Deposit within 1 month under s.65; certificate and audited-return/payment-evidence conditions matter. This is not a universal monthly PAYE due date. | [s.65(1)(i)–(j),(2); PDF96–97](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
+| On-account remittance/credit | Deposit within 1 month under s.65(1)(i). Credit uses validated audited accounts OR an s.38 income return, plus supporting deduction/payment documents under s.65(2). Section 65(1)(j) certificates/receipts satisfy tax up to proved amounts even if the collector fails to remit. This is not a universal monthly PAYE due date. | [s.65(1)(i)–(j),(2); PDF96–97](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
 
 ## The base
 
@@ -38,7 +38,7 @@ Individuals and non-individuals with Sudan/foreign facts, payers to foreign comp
 2. Test ordinary residence separately. For deemed residence,183 exact days does not satisfy the express exceeding 183 limb. The three-period limb also requires presence in each of the specified periods and more than 12 months total, not merely a generic rolling-year total. Domicile is a different defined term; do not treat intention to settle as an automatic third numeric test.
 3. For an entity, document where supervision and management actually occur, distinguishing registration, shareholders and operational decision makers. Do not import an effective-management treaty tie-breaker without the treaty.
 4. Map each receipt to Sudan or foreign source and the appropriate statutory income category. Residents' foreign income is within the domestic charge; ministerial foreign-income exemption is discretionary. A foreign tax receipt alone does not create a mechanical foreign-tax credit.
-5. Identify Sudan agent/branch exposure under s.34 and payment collection under s.65. Obtain the actual ministerial rate order and payer/payee scope before withholding. Reconcile on-account certificates to the return; do not assume finality or treaty reduction.
+5. Identify Sudan agent/branch exposure under s.34 and payment collection under s.65. Obtain the actual ministerial rate order and payer/payee scope before withholding. For s.65(2) credit, use validated audited accounts OR an income return under s.38, plus supporting deduction/payment documents. Section 65(1)(j) protects proved certificate/receipt amounts even if the collector fails to remit. Do not assume finality or treaty reduction.
 6. For relief, obtain the operative treaty/order, entry-into-force dates, eligible person and income article, residence certificate, beneficial-entitlement conditions and claim procedure. No 17 treaty count, six-month PE rule or automatic local-agent exemption is established.
 
 ## Deadlines and filing

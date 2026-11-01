@@ -2,7 +2,7 @@
 name: sd-tax-overview
 description: >
   Route Sudan tax questions and assemble a coordinated 2026 intake workpaper across personal income, company profits, VAT, payroll, formation, associated pricing and cross-border income. Match Sudan tax overview, business tax obligations, tax registration, compliance calendar, new business, foreign investor and الضرائب في السودان requests. This Guide identifies the source chain, evidence owners and unresolved release gates, while linking each figure to its single calculation home. Official statutes and amendments replace legacy unsourced assumptions, but the later enacted chain remains incomplete. Use this pack for broad source baseline preparation and a reviewable issue list. Neither current year metadata nor passing examples authorises filing, publication certification or a country complete claim.
-version: 0.2
+version: 0.3
 jurisdiction: SD
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan tax workpaper routing and release gates v 0.2
+# Sudan tax workpaper routing and release gates v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -121,7 +121,7 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| income-en; selected ss.2,15; PDF 11,27; s.82; PDF 114–115; s.38; PDF 58–61; s.39(4)–(6); PDF 62–63; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| income-en; selected ss.2,15; PDF 11,27; s.82; PDF 114–115; s.38(1),(3)(a)–(b); PDF 58–61, taxpayer definition PDF 59; s.39(4)–(6); PDF 62–63; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
 | law 38-39; selected Income Tax Amendment 2022 s.2(1), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf | 2026-11-01 |
 | company-notice; selected notice 5 July 2025 read; not a full current consolidation | https://moj.gov.sd/posts/post/998 | 2026-11-01 |
 

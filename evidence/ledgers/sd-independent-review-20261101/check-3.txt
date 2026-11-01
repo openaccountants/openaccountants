@@ -1,0 +1,6 @@
+changed-only mode: validating 10 changed guide file(s)
+checked 9 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: skills/sudan/sd-capital-gains.md: SD IT-IND also holds sd-income-tax, with a different job
+
+validation passed (1 warning group(s))

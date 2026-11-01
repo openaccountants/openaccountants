@@ -1,0 +1,384 @@
+{
+  "writer_receipt_sha256": "6acd68cc7986adb8ccdbcf577053a6a6a9449dc3d6db5d07cbdb6dee1543714f",
+  "writer_candidate_digest": "0b555ba77286f156e2a25f132767a155091fbced11a106a3b7f053a451d89ba2",
+  "substantive_findings_closed": [
+    "SD-R1",
+    "SD-R2",
+    "SD-R3",
+    "SD-R4",
+    "SD-R5",
+    "SD-R6"
+  ],
+  "provenance_control_closed": "SD-OLD-155",
+  "findings_closed_for": "opened historical source-baseline only; currentness and filing holds retained",
+  "metadata": {
+    "skills/sudan/sd-capital-gains.md": {
+      "yaml_version": "0.2",
+      "title_version": "0.2",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 110,
+      "sha256": "edcbd2eb83f0e874038cd727f9c292961ca18ee30beee153dcf7ddb242e31aaf",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-company-formation.md": {
+      "yaml_version": "0.2",
+      "title_version": "0.2",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 107,
+      "sha256": "0b6abceb9cec92b51397298f27edd4587243ad330f265d27961ef1ba93ab117b",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-corporate-income-tax.md": {
+      "yaml_version": "0.3",
+      "title_version": "0.3",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 108,
+      "sha256": "5616362e4654ebcf56f2d96ada211fdbc2e3f6adf168273424c961f68e8a970b",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-cross-border-residence.md": {
+      "yaml_version": "0.2",
+      "title_version": "0.2",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 111,
+      "sha256": "6e102b54792e348634deada599a6cff66feff695a63728acf749f0a525e45ce7",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-income-tax.md": {
+      "yaml_version": "0.3",
+      "title_version": "0.3",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 103,
+      "sha256": "8a7576d2a7abe60f20806ea7cf6c0ff426ba94559191241c726718c5369c7d8f",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-payroll-social.md": {
+      "yaml_version": "0.3",
+      "title_version": "0.3",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 106,
+      "sha256": "ed46b89ee6ba2fc6e9a5470b0fa72a6b81ec6401e0e642f71d07e3c9fa2badc6",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-tax-overview.md": {
+      "yaml_version": "0.3",
+      "title_version": "0.3",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 109,
+      "sha256": "d389deeea13508ab169048bd047bb8ef8e367ccebd8cdaf6e49b2c17f58aa219",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-transfer-pricing.md": {
+      "yaml_version": "0.2",
+      "title_version": "0.2",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 110,
+      "sha256": "2ad49edd7b5ebfd3ac74250da8781df740459471f48ffa9ab610aa180c460163",
+      "all_nonversion_frontmatter_unchanged": true
+    },
+    "skills/sudan/sd-vat-gst.md": {
+      "yaml_version": "0.3",
+      "title_version": "0.3",
+      "title_matches_yaml": true,
+      "description_unchanged": true,
+      "description_words": 106,
+      "sha256": "607c7a50c0b4537850bbfef351d421f36890ad7d4055065e19676692404ef9d9",
+      "all_nonversion_frontmatter_unchanged": true
+    }
+  },
+  "capture_hashes_unchanged": [
+    {
+      "file": "capital-gains-ar.pdf",
+      "match": true
+    },
+    {
+      "file": "capital-gains-en.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-425.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-441.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-465.response",
+      "match": true
+    },
+    {
+      "file": "gazette-470.response",
+      "match": true
+    },
+    {
+      "file": "gazette-474.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-475.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-480.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-481.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-482.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-483.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-489.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-493.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-494.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-495.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-496.pdf",
+      "match": true
+    },
+    {
+      "file": "gazette-497.pdf",
+      "match": true
+    },
+    {
+      "file": "income-ar.pdf",
+      "match": true
+    },
+    {
+      "file": "income-en.pdf",
+      "match": true
+    },
+    {
+      "file": "income-regs-2021.pdf",
+      "match": true
+    },
+    {
+      "file": "income-regs-2022.pdf",
+      "match": true
+    },
+    {
+      "file": "law10_12.pdf",
+      "match": true
+    },
+    {
+      "file": "law13_14.pdf",
+      "match": true
+    },
+    {
+      "file": "law15_18.pdf",
+      "match": true
+    },
+    {
+      "file": "law19_20.pdf",
+      "match": true
+    },
+    {
+      "file": "law1_2.pdf",
+      "match": true
+    },
+    {
+      "file": "law20.pdf",
+      "match": true
+    },
+    {
+      "file": "law21.pdf",
+      "match": true
+    },
+    {
+      "file": "law22.pdf",
+      "match": true
+    },
+    {
+      "file": "law23.pdf",
+      "match": true
+    },
+    {
+      "file": "law24-27.pdf",
+      "match": true
+    },
+    {
+      "file": "law28-30.pdf",
+      "match": true
+    },
+    {
+      "file": "law31-37.pdf",
+      "match": true
+    },
+    {
+      "file": "law32-34.pdf",
+      "match": true
+    },
+    {
+      "file": "law38-39.pdf",
+      "match": true
+    },
+    {
+      "file": "law3_4.pdf",
+      "match": true
+    },
+    {
+      "file": "law40-42.pdf",
+      "match": true
+    },
+    {
+      "file": "law45-50.pdf",
+      "match": true
+    },
+    {
+      "file": "law5_9.pdf",
+      "match": true
+    },
+    {
+      "file": "stamp-ar.pdf",
+      "match": true
+    },
+    {
+      "file": "stamp-en.pdf",
+      "match": true
+    },
+    {
+      "file": "vat-ar.pdf",
+      "match": true
+    },
+    {
+      "file": "vat-en.pdf",
+      "match": true
+    },
+    {
+      "file": "vat-regs-2017.pdf",
+      "match": true
+    },
+    {
+      "file": "investment-procedures.pdf",
+      "match": true
+    },
+    {
+      "file": "investment-guide.pdf",
+      "match": true
+    },
+    {
+      "file": "companies-2015.html",
+      "match": true
+    },
+    {
+      "file": "labour-1997.html",
+      "match": true
+    },
+    {
+      "file": "social-1990.html",
+      "match": true
+    },
+    {
+      "file": "expat-social-1997.html",
+      "match": true
+    },
+    {
+      "file": "laws-ar.html",
+      "match": true
+    },
+    {
+      "file": "laws-en.html",
+      "match": true
+    },
+    {
+      "file": "gazettes.html",
+      "match": true
+    },
+    {
+      "file": "income-page.html",
+      "match": true
+    },
+    {
+      "file": "bpt-page.html",
+      "match": true
+    },
+    {
+      "file": "social-about.html",
+      "match": true
+    },
+    {
+      "file": "health-guidance.html",
+      "match": true
+    },
+    {
+      "file": "health-registration.html",
+      "match": true
+    },
+    {
+      "file": "company-2025-notice.html",
+      "match": true
+    },
+    {
+      "file": "moj-law-reader.html",
+      "match": true
+    }
+  ],
+  "initial_review_files_unchanged": {
+    "evidence/ledgers/sd-independent-review-20261101/old-topic-audit.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/independent-example-review.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/result.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/check-5.txt": true,
+    "evidence/ledgers/sd-independent-review-20261101/check-4.txt": true,
+    "evidence/ledgers/sd-independent-review-20261101/check-1.txt": true,
+    "evidence/ledgers/sd-independent-review-20261101/check-3.txt": true,
+    "evidence/ledgers/sd-independent-review-20261101/check-2.txt": true,
+    "evidence/ledgers/sd-independent-review-20261101/checks.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/capture-integrity.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/ledger-row-review.json": true,
+    "evidence/ledgers/sd-independent-review-20261101/review.md": true,
+    "evidence/ledgers/sd-independent-review-20261101/guide-freeze.json": true
+  },
+  "candidate_hash_verification": {
+    "evidence/ledgers/sd-capital-gains.md": true,
+    "evidence/ledgers/sd-company-formation.md": true,
+    "evidence/ledgers/sd-corporate-income-tax.md": true,
+    "evidence/ledgers/sd-cross-border-residence.md": true,
+    "evidence/ledgers/sd-income-tax.md": true,
+    "evidence/ledgers/sd-old-topic-map.md": true,
+    "evidence/ledgers/sd-payroll-social.md": true,
+    "evidence/ledgers/sd-source-manifest.json": true,
+    "evidence/ledgers/sd-source-read-record.md": true,
+    "evidence/ledgers/sd-tax-overview.md": true,
+    "evidence/ledgers/sd-transfer-pricing.md": true,
+    "evidence/ledgers/sd-vat-gst.md": true,
+    "evidence/ledgers/sd-writer-checks.json": true,
+    "evidence/ledgers/sd-writer-checks.md": true,
+    "skills/sudan/README.md": true,
+    "skills/sudan/sd-capital-gains.md": true,
+    "skills/sudan/sd-company-formation.md": true,
+    "skills/sudan/sd-corporate-income-tax.md": true,
+    "skills/sudan/sd-cross-border-residence.md": true,
+    "skills/sudan/sd-income-tax.md": true,
+    "skills/sudan/sd-payroll-social.md": true,
+    "skills/sudan/sd-tax-overview.md": true,
+    "skills/sudan/sd-transfer-pricing.md": true,
+    "skills/sudan/sd-vat-gst.md": true
+  }
+}

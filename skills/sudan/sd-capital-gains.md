@@ -2,7 +2,7 @@
 name: sd-capital-gains
 description: >
   Prepare Sudan capital asset disposal workpapers for 2026 intake under the separate Capital Gains Tax Act 1986 and its opened signed 2019 rate amendment. Match Sudan capital gains, property sale, share disposal, gifts, deemed market value, loss carryforward and ضريبة الأرباح الرأسمالية questions. Covers individuals, companies, nonresident agents and estates, with cost evidence, representative liability, residential relief conditions and tax clearance before registration. Distinguish assets already within income tax balancing treatment from the separate capital gains charge. The later enacted chain and current forms remain unresolved. This Guide supports a broad source baseline calculation and document handoff, with explicit stops before assuming an exemption, transfer clearance or operative 2026 rate.
-version: 0.1
+version: 0.2
 jurisdiction: SD
 tax_year: 2026
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
@@ -11,7 +11,7 @@ category: international
 tier: 2
 ---
 
-# Sudan capital asset disposal gains v 0.1
+# Sudan capital asset disposal gains v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -30,7 +30,7 @@ Actual/deemed transfers of capital assets under a SEPARATE Act, including real p
 | Sole home/land individual relief | 25% of SALE VALUE, only on the ScheduleI residential-plan/replacement conditions, once in lifetime; not an automatic 25% gain exemption. | [ScheduleI; PDF15](https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf) |
 | In-kind revaluation condition | ScheduleI relief condition prohibits relevant asset/share disposal for 4 years; obtain all other conditions. | [ScheduleI; PDF15](https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf) |
 | Payment/clearance | Pay within 30 days of assessment letter, subject to valid extension; obtain clearance before asset registration/transfer. | [ss.22–24; PDF12–13](https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf) |
-| Initial objection | Written objection within 30 days with reasons and return as required; further stages have separate payment/time conditions. | [ss.20–21; PDF11–12](https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf) |
+| Initial objection | Written notice to the Secretary General within 30 days OF THE ASSESSMENT DATE, precisely stating the grounds, under s.20(1). That provision does not require a return for the initial objection; current additional form requirements remain unresolved. Further stages have separate payment/time conditions. | [s.20(1)–(2), s.21; PDF12](https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf) |
 
 ## The base
 
@@ -110,7 +110,7 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| capital-gains-en; selected ss.3,5; PDF 5–7; s.6; PDF 7; s.7; PDF 7–8; s.8; PDF 8; ss.22–24; PDF 12–13; ScheduleI; PDF 15; ss.20–21; PDF 11–12; ss.11–16; PDF 9–10 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf | 2026-11-01 |
+| capital-gains-en; selected ss.3,5; PDF 5–7; s.6; PDF 7; s.7; PDF 7–8; s.8; PDF 8; ss.22–24; PDF 12–13; ScheduleI; PDF 15; s.20(1)–(2), s.21; PDF 12; ss.11–16; PDF 9–10 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf | 2026-11-01 |
 | law 23; selected Capital Gains Tax Amendment 2019 s.2; PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law23.pdf | 2026-11-01 |
 
 Writer short-quote ledger: [evidence/ledgers/sd-capital-gains.md](../../evidence/ledgers/sd-capital-gains.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.

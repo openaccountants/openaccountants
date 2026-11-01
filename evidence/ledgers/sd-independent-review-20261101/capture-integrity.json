@@ -1,0 +1,429 @@
+[
+  {
+    "file": "capital-gains-ar.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/05/\u0642\u0627\u0646\u0648\u0646-\u0636\u0631\u064a\u0628\u0629-\u0627\u0644\u0623\u0631\u0628\u0627\u062d-\u0627\u0644\u0631\u0623\u0633\u0645\u0627\u0644\u064a\u0629.pdf",
+    "expected_sha256": "7020a734cb2dc7cab7e04eb03b3b6f1af111b6778c0c5398ff02b9b0ea4b7235",
+    "actual_sha256": "7020a734cb2dc7cab7e04eb03b3b6f1af111b6778c0c5398ff02b9b0ea4b7235",
+    "match": true
+  },
+  {
+    "file": "capital-gains-en.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "expected_sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b",
+    "actual_sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b",
+    "match": true
+  },
+  {
+    "file": "gazette-425.pdf",
+    "url": "https://moj.gov.sd/files/download/425",
+    "expected_sha256": "ae76233c736c4c8b7ad8b5ded36a93e60bd5b770d0db738a3be3acd6fdfc9f16",
+    "actual_sha256": "ae76233c736c4c8b7ad8b5ded36a93e60bd5b770d0db738a3be3acd6fdfc9f16",
+    "match": true
+  },
+  {
+    "file": "gazette-441.pdf",
+    "url": "https://moj.gov.sd/files/download/441",
+    "expected_sha256": "4c841c8106b8717fc93dc220ab82ba579fdb0994a915fa95af137efdbd7aef4a",
+    "actual_sha256": "4c841c8106b8717fc93dc220ab82ba579fdb0994a915fa95af137efdbd7aef4a",
+    "match": true
+  },
+  {
+    "file": "gazette-465.response",
+    "url": "https://moj.gov.sd/files/download/465",
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "match": true
+  },
+  {
+    "file": "gazette-470.response",
+    "url": "https://moj.gov.sd/files/download/470",
+    "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "match": true
+  },
+  {
+    "file": "gazette-474.pdf",
+    "url": "https://moj.gov.sd/files/download/474",
+    "expected_sha256": "8775de22613dca7ca4bac27b05c2985384da42a813b3c51c80240c1b9de4aa59",
+    "actual_sha256": "8775de22613dca7ca4bac27b05c2985384da42a813b3c51c80240c1b9de4aa59",
+    "match": true
+  },
+  {
+    "file": "gazette-475.pdf",
+    "url": "https://moj.gov.sd/files/download/475",
+    "expected_sha256": "f1b19d90ad69424787054237be5646bee23cc30d9c305a4db9bc46b10bedc6d0",
+    "actual_sha256": "f1b19d90ad69424787054237be5646bee23cc30d9c305a4db9bc46b10bedc6d0",
+    "match": true
+  },
+  {
+    "file": "gazette-480.pdf",
+    "url": "https://moj.gov.sd/files/download/480",
+    "expected_sha256": "26248a4ca3524f45e1695a2df14be335f1eedf6c6604538df4d401c4d8d17462",
+    "actual_sha256": "26248a4ca3524f45e1695a2df14be335f1eedf6c6604538df4d401c4d8d17462",
+    "match": true
+  },
+  {
+    "file": "gazette-481.pdf",
+    "url": "https://moj.gov.sd/files/download/481",
+    "expected_sha256": "26248a4ca3524f45e1695a2df14be335f1eedf6c6604538df4d401c4d8d17462",
+    "actual_sha256": "26248a4ca3524f45e1695a2df14be335f1eedf6c6604538df4d401c4d8d17462",
+    "match": true
+  },
+  {
+    "file": "gazette-482.pdf",
+    "url": "https://moj.gov.sd/files/download/482",
+    "expected_sha256": "ec2d9fe92a3e9cdb485d62a621a64cfaa7eb6137a174ee7ebe9976c9c7b2f669",
+    "actual_sha256": "ec2d9fe92a3e9cdb485d62a621a64cfaa7eb6137a174ee7ebe9976c9c7b2f669",
+    "match": true
+  },
+  {
+    "file": "gazette-483.pdf",
+    "url": "https://moj.gov.sd/files/download/483",
+    "expected_sha256": "fe80d455867a3a22c962aeb6fdb322529d95014768575d53eaf6e4b9b0c70588",
+    "actual_sha256": "fe80d455867a3a22c962aeb6fdb322529d95014768575d53eaf6e4b9b0c70588",
+    "match": true
+  },
+  {
+    "file": "gazette-489.pdf",
+    "url": "https://moj.gov.sd/files/download/489",
+    "expected_sha256": "a72a1ec9eb5f28386c4e27d59dacc0f0c8ee9b3c28f37330294764918db917b1",
+    "actual_sha256": "a72a1ec9eb5f28386c4e27d59dacc0f0c8ee9b3c28f37330294764918db917b1",
+    "match": true
+  },
+  {
+    "file": "gazette-493.pdf",
+    "url": "https://moj.gov.sd/files/download/493",
+    "expected_sha256": "8f622c83f13f81f6425828bbb08e7d145c572f1dfbcd6d6edb4d5db24e2cf60b",
+    "actual_sha256": "8f622c83f13f81f6425828bbb08e7d145c572f1dfbcd6d6edb4d5db24e2cf60b",
+    "match": true
+  },
+  {
+    "file": "gazette-494.pdf",
+    "url": "https://moj.gov.sd/files/download/494",
+    "expected_sha256": "2afd46a476b74665b9250fc3e15659ee3c2dd332193046974169c9e665923372",
+    "actual_sha256": "2afd46a476b74665b9250fc3e15659ee3c2dd332193046974169c9e665923372",
+    "match": true
+  },
+  {
+    "file": "gazette-495.pdf",
+    "url": "https://moj.gov.sd/files/download/495",
+    "expected_sha256": "2afd46a476b74665b9250fc3e15659ee3c2dd332193046974169c9e665923372",
+    "actual_sha256": "2afd46a476b74665b9250fc3e15659ee3c2dd332193046974169c9e665923372",
+    "match": true
+  },
+  {
+    "file": "gazette-496.pdf",
+    "url": "https://moj.gov.sd/files/download/496",
+    "expected_sha256": "f053fbdc8b5c3ec9d5b576201aadbbe396af45002d36a7918441ad70cd8f237f",
+    "actual_sha256": "f053fbdc8b5c3ec9d5b576201aadbbe396af45002d36a7918441ad70cd8f237f",
+    "match": true
+  },
+  {
+    "file": "gazette-497.pdf",
+    "url": "https://moj.gov.sd/files/download/497",
+    "expected_sha256": "c6f9f3e36d4af0899faffe9d991a7080fd3104819e3cfabb8a92e67c2907cb2e",
+    "actual_sha256": "c6f9f3e36d4af0899faffe9d991a7080fd3104819e3cfabb8a92e67c2907cb2e",
+    "match": true
+  },
+  {
+    "file": "income-ar.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/income1.pdf",
+    "expected_sha256": "02252eb18ec00007586168f2e328810dc8af4b052b45a72849a3a686d4815fd3",
+    "actual_sha256": "02252eb18ec00007586168f2e328810dc8af4b052b45a72849a3a686d4815fd3",
+    "match": true
+  },
+  {
+    "file": "income-en.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "expected_sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de",
+    "actual_sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de",
+    "match": true
+  },
+  {
+    "file": "income-regs-2021.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/The-Income-Tax-Act-1986.pdf",
+    "expected_sha256": "77b3ef0223ac3f4de043a0c179e588354fbe2aae9ffa70deac180e5a11be4856",
+    "actual_sha256": "77b3ef0223ac3f4de043a0c179e588354fbe2aae9ffa70deac180e5a11be4856",
+    "match": true
+  },
+  {
+    "file": "income-regs-2022.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/list43-44.pdf",
+    "expected_sha256": "5e799f7e2dd363916afde0ad428e597e1ff17845b8456c0ad45c7f56bf63b84d",
+    "actual_sha256": "5e799f7e2dd363916afde0ad428e597e1ff17845b8456c0ad45c7f56bf63b84d",
+    "match": true
+  },
+  {
+    "file": "law10_12.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law10_12.pdf",
+    "expected_sha256": "741bdf50ee88af54af1af540763f9913529c171ba85f49d3ca8d525bd9c611fc",
+    "actual_sha256": "741bdf50ee88af54af1af540763f9913529c171ba85f49d3ca8d525bd9c611fc",
+    "match": true
+  },
+  {
+    "file": "law13_14.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law13_14.pdf",
+    "expected_sha256": "76bf7fe4f5d2bb0806e6c83823cf81b8c64b151e82df4fa4f958469ea6a120ec",
+    "actual_sha256": "76bf7fe4f5d2bb0806e6c83823cf81b8c64b151e82df4fa4f958469ea6a120ec",
+    "match": true
+  },
+  {
+    "file": "law15_18.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law15_18.pdf",
+    "expected_sha256": "0a8df3dff8e79c6cfa9094b479deb5786b345cf3d85dacfb60e4c994b8ce0a6f",
+    "actual_sha256": "0a8df3dff8e79c6cfa9094b479deb5786b345cf3d85dacfb60e4c994b8ce0a6f",
+    "match": true
+  },
+  {
+    "file": "law19_20.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law19_20.pdf",
+    "expected_sha256": "3c412dd41f6ec0ef5c666714cfa53b53c7819783b92d71c72b99bfe6c0fb7801",
+    "actual_sha256": "3c412dd41f6ec0ef5c666714cfa53b53c7819783b92d71c72b99bfe6c0fb7801",
+    "match": true
+  },
+  {
+    "file": "law1_2.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law1_2.pdf",
+    "expected_sha256": "fbe8138afcbc76687a290e72809bedb7958dd8fcc0c3cde56f7cb2d3b4f9d741",
+    "actual_sha256": "fbe8138afcbc76687a290e72809bedb7958dd8fcc0c3cde56f7cb2d3b4f9d741",
+    "match": true
+  },
+  {
+    "file": "law20.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law20.pdf",
+    "expected_sha256": "625a045ccf1334b1f35d9e30db1e1b715a612bc20f858054f40a31e53947c8bf",
+    "actual_sha256": "625a045ccf1334b1f35d9e30db1e1b715a612bc20f858054f40a31e53947c8bf",
+    "match": true
+  },
+  {
+    "file": "law21.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf",
+    "expected_sha256": "a8152b093c29603e8c19dea38d9ae39d3c32dd5e9c0374618dbf2da2dd110b73",
+    "actual_sha256": "a8152b093c29603e8c19dea38d9ae39d3c32dd5e9c0374618dbf2da2dd110b73",
+    "match": true
+  },
+  {
+    "file": "law22.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law22.pdf",
+    "expected_sha256": "bd5c6b529d988bd7ef47a76e8dd5a96b7417cb0bef49dd703c3aff9ee63e9639",
+    "actual_sha256": "bd5c6b529d988bd7ef47a76e8dd5a96b7417cb0bef49dd703c3aff9ee63e9639",
+    "match": true
+  },
+  {
+    "file": "law23.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law23.pdf",
+    "expected_sha256": "dfa6b170f11b47d8455d4425776022591e69c7a6a28bb77f7e73a12d370d0b53",
+    "actual_sha256": "dfa6b170f11b47d8455d4425776022591e69c7a6a28bb77f7e73a12d370d0b53",
+    "match": true
+  },
+  {
+    "file": "law24-27.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law24-27.pdf",
+    "expected_sha256": "3810e3d9fa6f0a1be6b6d031e031a802a87289e0c5ac3969786b804d66cfb768",
+    "actual_sha256": "3810e3d9fa6f0a1be6b6d031e031a802a87289e0c5ac3969786b804d66cfb768",
+    "match": true
+  },
+  {
+    "file": "law28-30.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law28-30.pdf",
+    "expected_sha256": "ff17329e8d71df615b4d092994c6c0ea3486ce4870380518794593f57bd89e23",
+    "actual_sha256": "ff17329e8d71df615b4d092994c6c0ea3486ce4870380518794593f57bd89e23",
+    "match": true
+  },
+  {
+    "file": "law31-37.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law31-37.pdf",
+    "expected_sha256": "fc737328e4e37d27fe161824b1edc8fa79c32f4a3a958aa1c69ed697e1bcbee8",
+    "actual_sha256": "fc737328e4e37d27fe161824b1edc8fa79c32f4a3a958aa1c69ed697e1bcbee8",
+    "match": true
+  },
+  {
+    "file": "law32-34.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf",
+    "expected_sha256": "ba5ee04e2701f4dd877e7f37a91e2a556cf0c3440b26d7ce74b8379b60f82bbf",
+    "actual_sha256": "ba5ee04e2701f4dd877e7f37a91e2a556cf0c3440b26d7ce74b8379b60f82bbf",
+    "match": true
+  },
+  {
+    "file": "law38-39.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "expected_sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903",
+    "actual_sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903",
+    "match": true
+  },
+  {
+    "file": "law3_4.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law3_4.pdf",
+    "expected_sha256": "e8492998148df326dc6ea5739fd82e27aa0f2ae863eac13012d2014101f4b335",
+    "actual_sha256": "e8492998148df326dc6ea5739fd82e27aa0f2ae863eac13012d2014101f4b335",
+    "match": true
+  },
+  {
+    "file": "law40-42.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law40-42.pdf",
+    "expected_sha256": "79f1472e7e302c315c14b4442308732f13b0949dd8eaa19685f5e90aa0f877ed",
+    "actual_sha256": "79f1472e7e302c315c14b4442308732f13b0949dd8eaa19685f5e90aa0f877ed",
+    "match": true
+  },
+  {
+    "file": "law45-50.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law45-50.pdf",
+    "expected_sha256": "b7edc16b2c63bb2a318115d160666775bd5559b2b37340060e72eb11244f5769",
+    "actual_sha256": "b7edc16b2c63bb2a318115d160666775bd5559b2b37340060e72eb11244f5769",
+    "match": true
+  },
+  {
+    "file": "law5_9.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/law5_9.pdf",
+    "expected_sha256": "d231ca1e9e3af6c2bd105ccbc4392f14a360b0c16f5a82171424d747ead061cb",
+    "actual_sha256": "d231ca1e9e3af6c2bd105ccbc4392f14a360b0c16f5a82171424d747ead061cb",
+    "match": true
+  },
+  {
+    "file": "stamp-ar.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/05/\u0642\u0627\u0646\u0648\u0646-\u0631\u0633\u0645-\u0627\u0644\u062f\u0645\u063a\u0647.pdf",
+    "expected_sha256": "1f3fdea665b3c0139c82ef704cde8f85506ada969d1ff2ea3a405beec6d8e5ce",
+    "actual_sha256": "1f3fdea665b3c0139c82ef704cde8f85506ada969d1ff2ea3a405beec6d8e5ce",
+    "match": true
+  },
+  {
+    "file": "stamp-en.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/The-Stamp-Duty-1.pdf",
+    "expected_sha256": "f52e5351114be546a9b32fc2ed9dfbd2b4ca301773fcfb79e616c82f9219b2cd",
+    "actual_sha256": "f52e5351114be546a9b32fc2ed9dfbd2b4ca301773fcfb79e616c82f9219b2cd",
+    "match": true
+  },
+  {
+    "file": "vat-ar.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf",
+    "expected_sha256": "0d4dda9caa93a6fcb125dd70edcb9049dd90681606f190544bd1e8d57132252f",
+    "actual_sha256": "0d4dda9caa93a6fcb125dd70edcb9049dd90681606f190544bd1e8d57132252f",
+    "match": true
+  },
+  {
+    "file": "vat-en.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/The-Value-Add-tax.pdf",
+    "expected_sha256": "afa0f4f160d81e92665f08a911588b614de38a0f7a6f421833465aca7d2897e4",
+    "actual_sha256": "afa0f4f160d81e92665f08a911588b614de38a0f7a6f421833465aca7d2897e4",
+    "match": true
+  },
+  {
+    "file": "vat-regs-2017.pdf",
+    "url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "expected_sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611",
+    "actual_sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611",
+    "match": true
+  },
+  {
+    "file": "investment-procedures.pdf",
+    "url": "https://minv.gov.sd/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%A7%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-1.pdf",
+    "expected_sha256": "0d2d61e84cdfdaeb5adc8a8e45a8abfa53f6a95737c918d2e6df0d471cf98bef",
+    "actual_sha256": "0d2d61e84cdfdaeb5adc8a8e45a8abfa53f6a95737c918d2e6df0d471cf98bef",
+    "match": true
+  },
+  {
+    "file": "investment-guide.pdf",
+    "url": "https://minv.gov.sd/wp-content/uploads/2025/11/%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84-%D8%A8%D8%A7%D9%84%D8%B4%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF.pdf",
+    "expected_sha256": "15a43cb10947ded89ede031b282dfd7393f887bd0718e47498171a47622bdb60",
+    "actual_sha256": "15a43cb10947ded89ede031b282dfd7393f887bd0718e47498171a47622bdb60",
+    "match": true
+  },
+  {
+    "file": "companies-2015.html",
+    "url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "expected_sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788",
+    "actual_sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788",
+    "match": true
+  },
+  {
+    "file": "labour-1997.html",
+    "url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html",
+    "expected_sha256": "7f06b6e01de3d9b01ef6c023cf3f9edd5de6a3d2255e6e0942ca267b201a3ea2",
+    "actual_sha256": "7f06b6e01de3d9b01ef6c023cf3f9edd5de6a3d2255e6e0942ca267b201a3ea2",
+    "match": true
+  },
+  {
+    "file": "social-1990.html",
+    "url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/sn7tha.html",
+    "expected_sha256": "03e94bbf6baf4c7607a8b5b6d8f8189a748ccea2058487bea51299a89dd0ba15",
+    "actual_sha256": "03e94bbf6baf4c7607a8b5b6d8f8189a748ccea2058487bea51299a89dd0ba15",
+    "match": true
+  },
+  {
+    "file": "expat-social-1997.html",
+    "url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/st2yxf.html",
+    "expected_sha256": "cc9f9d46ab1d3100f3d1430d8e17851728ce79976c5e01b255eeb91f71e64b1a",
+    "actual_sha256": "cc9f9d46ab1d3100f3d1430d8e17851728ce79976c5e01b255eeb91f71e64b1a",
+    "match": true
+  },
+  {
+    "file": "laws-ar.html",
+    "url": "https://tax.gov.sd/laws/",
+    "expected_sha256": "2b19dd2a0f73f8eb0b3fdb21a1aa3ff9a2688a8207e00a0d0c8d8b6d278bf94a",
+    "actual_sha256": "2b19dd2a0f73f8eb0b3fdb21a1aa3ff9a2688a8207e00a0d0c8d8b6d278bf94a",
+    "match": true
+  },
+  {
+    "file": "laws-en.html",
+    "url": "https://tax.gov.sd/en/tax-laws/",
+    "expected_sha256": "d2d700fa6358edb2ea93b1554cb0172d7b05a5120d5cc8d3203d18bbe590167c",
+    "actual_sha256": "d2d700fa6358edb2ea93b1554cb0172d7b05a5120d5cc8d3203d18bbe590167c",
+    "match": true
+  },
+  {
+    "file": "gazettes.html",
+    "url": "https://moj.gov.sd/files/index/28%20",
+    "expected_sha256": "e110c1cf2ddc10758a7d0c0d95eb97ebba47bc9ec319f53c8356e554bcf4b972",
+    "actual_sha256": "e110c1cf2ddc10758a7d0c0d95eb97ebba47bc9ec319f53c8356e554bcf4b972",
+    "match": true
+  },
+  {
+    "file": "income-page.html",
+    "url": "https://tax.gov.sd/income/",
+    "expected_sha256": "24d67d0679230247b65bea86e380592e8646870deb51cfc33341e4b70b445ddb",
+    "actual_sha256": "24d67d0679230247b65bea86e380592e8646870deb51cfc33341e4b70b445ddb",
+    "match": true
+  },
+  {
+    "file": "bpt-page.html",
+    "url": "https://tax.gov.sd/bpt/",
+    "expected_sha256": "d1446e322ee8ef5a5445c81a83a86570c0bbde260ff78e7aaef8bdbc8ac5bc86",
+    "actual_sha256": "d1446e322ee8ef5a5445c81a83a86570c0bbde260ff78e7aaef8bdbc8ac5bc86",
+    "match": true
+  },
+  {
+    "file": "social-about.html",
+    "url": "https://hrsw.gov.sd/?page_id=1360",
+    "expected_sha256": "8dc04471d271c70761d5a06e6804139cb62761c38390f295650667ff86f6bae2",
+    "actual_sha256": "8dc04471d271c70761d5a06e6804139cb62761c38390f295650667ff86f6bae2",
+    "match": true
+  },
+  {
+    "file": "health-guidance.html",
+    "url": "https://hrsw.gov.sd/?page_id=482",
+    "expected_sha256": "7d7435bea8864dabb62ff0385e214980cbde4792dcb76d588f821b9d52d23548",
+    "actual_sha256": "7d7435bea8864dabb62ff0385e214980cbde4792dcb76d588f821b9d52d23548",
+    "match": true
+  },
+  {
+    "file": "health-registration.html",
+    "url": "https://hrsw.gov.sd/?page_id=239",
+    "expected_sha256": "ad1f43976bbb45cbd0f532bf765e76bc7e53281f896ce9d247422ec117d1cf1e",
+    "actual_sha256": "ad1f43976bbb45cbd0f532bf765e76bc7e53281f896ce9d247422ec117d1cf1e",
+    "match": true
+  },
+  {
+    "file": "company-2025-notice.html",
+    "url": "https://moj.gov.sd/posts/post/998",
+    "expected_sha256": "ec33bff83c4e01444f5d53ef8e90c75460bd3fac25e2e80482e9f77d346fec6b",
+    "actual_sha256": "ec33bff83c4e01444f5d53ef8e90c75460bd3fac25e2e80482e9f77d346fec6b",
+    "match": true
+  },
+  {
+    "file": "moj-law-reader.html",
+    "url": "https://moj.gov.sd/sudanlaws/",
+    "expected_sha256": "011e01a5fa7bdbd08efb87c2e9240cb137fecbdb1e22c11cbed6cb507f9a69c0",
+    "actual_sha256": "011e01a5fa7bdbd08efb87c2e9240cb137fecbdb1e22c11cbed6cb507f9a69c0",
+    "match": true
+  }
+]

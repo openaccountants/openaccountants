@@ -1,0 +1,39 @@
+{
+  "review_scope": "focused closure of initial findings on historical opened-source baseline",
+  "decision": "accepted_for_explicit_source_baseline_scope_only",
+  "candidate_head": "e937be8648aa5da358796fca477e6d1807126106",
+  "candidate_is_uncommitted_working_tree": true,
+  "candidate_content_sha256": "0b555ba77286f156e2a25f132767a155091fbced11a106a3b7f053a451d89ba2",
+  "candidate_digest_method": "SHA256 of UTF8 json.dumps(candidate_file_hashes,sort_keys=True,separators=(comma,colon))",
+  "all_candidate_file_hashes_match": true,
+  "findings": {
+    "SD-R1": "closed",
+    "SD-R2": "closed",
+    "SD-R3": "closed",
+    "SD-R4": "closed",
+    "SD-R5": "closed",
+    "SD-R6": "closed",
+    "SD-OLD-155": "closed",
+    "body-title-version-mismatch": "closed"
+  },
+  "initial_13_review_files_unchanged": true,
+  "source_61_hashes_unchanged": true,
+  "all_9_titles_match_yaml": true,
+  "six_original_ctas_byte_equal": {
+    "skills/sudan/sd-payroll-social.md": true,
+    "skills/sudan/sd-vat-gst.md": true,
+    "skills/sudan/sd-company-formation.md": true,
+    "skills/sudan/sd-corporate-income-tax.md": true,
+    "skills/sudan/sd-tax-overview.md": true,
+    "skills/sudan/sd-income-tax.md": true
+  },
+  "original_mapped_units_preserved": 154,
+  "additional_intro_held": 1,
+  "mapped_content_lost": 0,
+  "examples_unchanged": 18,
+  "country_complete": false,
+  "operative_2026_approved": false,
+  "accountant_attestation": false,
+  "all_seven_domains_partial": true,
+  "no_commit_push_merge_by_reviewer": true
+}

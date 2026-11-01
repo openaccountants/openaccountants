@@ -2,7 +2,7 @@
 name: sd-transfer-pricing
 description: >
   Prepare Sudan associated person transaction workpapers for 2026 intake under the express Income Tax Act section 22 A and neighbouring nonresident pricing provisions. Match Sudan transfer pricing, related parties, arm length pricing, management charges, intercompany loans, associated companies and أسعار التحويل questions. Covers domestic and cross-border dealings, taxable and exempt parties, family and ownership relationships, pricing evidence and adjustment direction. The opened Act contradicts the legacy assertion that Sudan has no formal transfer pricing legislation. Full implementing regulations, agreed methods, documentation duties and later amendments remain unresolved. This Guide builds a transaction and evidence analysis while refusing invented annual thresholds, filing deadlines, safe harbours, master files or country reporting obligations.
-version: 0.1
+version: 0.2
 jurisdiction: SD
 tax_year: 2026
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
@@ -11,7 +11,7 @@ category: transfer-pricing
 tier: 2
 ---
 
-# Sudan associated person pricing v 0.1
+# Sudan associated person pricing v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -101,7 +101,7 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| income-en; selected s.22 A(1); PDF 40; s.22 A(2)–(3); PDF 40–41; s.22 A(3); PDF 41; s.22(1); PDF 39–40; s.16; PDF 27–28 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| income-en; selected s.22 A(1); PDF 40; s.22 A(2)–(3); PDF 40–41; s.22 A(3); PDF 41; s.22(1); PDF 39–40; s.16(1)–(2); PDF 27–28 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
 
 Writer short-quote ledger: [evidence/ledgers/sd-transfer-pricing.md](../../evidence/ledgers/sd-transfer-pricing.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.
 

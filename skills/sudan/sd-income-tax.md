@@ -2,7 +2,7 @@
 name: sd-income-tax
 description: >
   Prepare Sudan individual income tax workpapers for 2026 intake using the official Income Tax Act and the particular amendments actually opened. Covers employees, sole traders, professionals, landlords and nonresidents with local income, while separating employment bands from business profits. Match Sudan personal income tax, PAYE brackets, freelance tax, rental deductions and ضريبة الدخل questions. Identify income categories, evidence deductions, test mixed income and document the applicable source period before calculating. The later enacted chain, complete income regulations and current forms remain unresolved. This Guide supports source baseline preparation and referral, with explicit stops before filing or treating historical figures as operative 2026 law.
-version: 0.2
+version: 0.3
 jurisdiction: SD
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan personal and unincorporated income tax v 0.2
+# Sudan personal and unincorporated income tax v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -33,7 +33,7 @@ Individuals with employment, professional, business or rental income. Establish 
 |---|---|---|
 | Employment, resident annual source-period scale | First SDG 36,000 nil; next 24,000 at 5%; next 24,000 at 10%; next 240,000 at 15%; excess 20%. Nonresident exempt-threshold exclusion needs separate calculation, not a flat 20% shortcut. | [Income Tax Amendment 2021 s.2(f), replacement Schedule III(B), PDF2](https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf) |
 | Business/professional individual annual source-period scale | First 3000 nil; next 3000 at 5%; next 4000 at 10%; excess 30%, following the 2019 amendment. Do not substitute the employment scale. | [Income Tax Amendment 2019 s.2(2)(a), PDF1; principal Schedule III(A)(a), PDF136](https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf) |
-| Rental standard expenses | 25% after 2021 amendment, only under s.25 conditions; compare substantiated actual expenses and contractual allocation. | [Income Tax Amendment 2021 s.2(a), PDF1; principal s.25](https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf) |
+| Rental standard expenses | 25% after 2021 amendment, subject to s.25(1)(c): audited actual expenses or the eligible standard route. A previously chosen method can change only with Secretary General approval after the no-tax-evasion check; expense allocation still applies. | [Principal s.25(1)(c), PDF46–47](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf); [2021 amendment s.2(a), PDF1](https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf) |
 | Mixed income boundary | Other income no more than one quarter of personal income: total enters personal scale; above that, schedules separate with statutory threshold interaction. | [s.30; PDF52–53](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
 | Older age/service exemptions | Schedule I 2(c)(first and second) deleted in 2022. Do not grant the old over 50 exemption. | [Income Tax Amendment 2022 s.2(5), PDF2; principal Schedule I2(c)](https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf) |
 
@@ -42,13 +42,13 @@ Individuals with employment, professional, business or rental income. Establish 
 1. Reconcile salary, allowances, benefits, reimbursements and credited amounts under s.26; retain approval evidence for exclusions. Employer housing needs the s.27 valuation prescription, not a flat percentage. See the cited principal Act ss.26–28.
 2. Record pension/insurance/post-service deductions and termination gratuity separately under s.28. Do not automatically deduct every employee contribution or apply a generic allowance in addition to a band exemption.
 3. Prepare a distinct business/professional schedule from business receipts less s.18 allowable production expenses. Remove private/capital costs, tax and unsupported reserves. Capital allowances and loss conditions are owned by [company business-profit computation](sd-corporate-income-tax.md).
-4. Prepare a rental schedule under s.25. Obtain rent contracts, expense allocation and audited actual-expense records before comparing the standard allowance; do not award expenses borne by a tenant.
+4. Prepare a rental schedule under s.25(1)(c). Obtain rent contracts, expense allocation, validated audited actual-expense records or an accurate qualifying return, and the prior method election. Once a method is chosen, changing it requires Secretary General approval after ascertainment that the change is not for tax evasion. Compare methods only for a permissible initial election or an approved change; do not award expenses borne by a tenant. [Principal s.25(1)(c), PDF 46–47](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf).
 5. Apply s.30 to mixed income. The quarter boundary is a classification rule, not authority to tax every receipt at the employment scale. Reconcile tax already deducted using evidence, not assumed finality.
 
 ## Deadlines and filing
 
 1. Obtain TIN, period, income schedules, employer certificate, contracts, expense proof and assessment/return notices. The principal return-notice framework is s.38; the actual current self-assessment filing form and boxes are unresolved.
-2. Under the opened principal s.38, a person with no notice within three months after basis-period end must notify within the next fourteen days. Do not relabel this as a universal 31 March return date.
+2. Under s.38(3), a person subject to tax who receives no s.38(1) return notice within three months after basis-period end must notify within the next fourteen days. For this duty, s.38(3)(a) covers companies, partnerships, trustees, executors and administrators, resident or nonresident, and nonresident individuals regardless of income amount. Section 38(3)(b) covers resident individuals only where total income exceeds the Schedule III exempt threshold; no current numeric threshold is established here. Do not relabel this as a universal 31 March return date. [s.38(3), PDF 59](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf).
 3. Retain income-tax books/support for the statutory period and approved Arabic translations as required by the 2022 addition. Present the employer annual list under s.41 where applicable; it does not establish monthly PAYE remittance timing.
 4. Stop before submitting or paying until the current return, regulation, deadline and payment reference are established. Save acknowledgement, assessment and payment receipt when an authorised filing is eventually completed. No portal login or actual filing was tested.
 
@@ -80,9 +80,9 @@ expected:
   tax: 54800
 ```
 
-### Choose rental expense route from evidence
+### Permissible initial rental method comparison
 
-For a source-period eligible landlord bearing the relevant expenses, rent100,000 and substantiated audited allowable expenses30,000 give actual base70,000, compared with75,000 under the standard25% route. Actual evidence reduces the base5,000. If the tenant bears those expenses, this comparison is invalid; do not elect it from arithmetic alone.
+Assume a source-period eligible landlord bearing the relevant expenses is making a permissible initial method election, or has Secretary General approval to change the prior method after the statutory no-tax-evasion check. Rent 100,000 and substantiated validated audited allowable expenses 30,000 give actual base 70,000, compared with 75,000 under the eligible standard 25% route. The base difference is 5,000. A cheaper result alone does not permit switching a previously chosen method. If the tenant bears those expenses, this comparison is invalid.
 
 ```oa-check
 name: Rental actual versus standard expense route
@@ -104,14 +104,14 @@ expected:
 - Residence evidence and travel dates; ordinary residence facts, not passport alone.
 - Exact basis/accounting period, employment and other income separately.
 - Contracts, benefit valuation and reimbursement proof; employer withholding certificates.
-- Business books, audited rental expenses and which party bears each cost.
+- Business books, audited rental expenses, which party bears each cost, prior method election and any Secretary General approval to change it.
 - Age/service exemption relied upon, notices already received and foreign taxes paid.
 
 ## Sources
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| income-en; selected s.9; PDF 22–23; s.26; PDF 48–50; ss.26(b),27; PDF 50–51; s.28; PDF 51; s.30; PDF 52–53; s.18(1); PDF 29–30; s.18(2); PDF 30–32; s.38; PDF 58–61; s.39(4)–(6); PDF 62–63; s.41; PDF 66–67; s.62(1),(6); PDF 90–91; s.63; PDF 92 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| income-en; selected s.9; PDF 22–23; s.26; PDF 48–50; ss.26(b),27; PDF 50–51; s.28; PDF 51; s.30; PDF 52–53; s.25(1)(c); PDF 46–47; s.18(1); PDF 29–30; s.18(2); PDF 30–32; s.38(1),(3)(a)–(b); PDF 58–61, taxpayer definition PDF 59; s.39(4)–(6); PDF 62–63; s.41; PDF 66–67; s.62(1),(6); PDF 90–91; s.63; PDF 92 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
 | law 32-34; selected Income Tax Amendment 2021 s.2(f), replacement Schedule III(B), PDF 2; Income Tax Amendment 2021 s.2(a), PDF 1; principal s.25 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf | 2026-11-01 |
 | law 21; selected Income Tax Amendment 2019 s.2(2)(a), PDF 1; principal Schedule III(A)(a), PDF 136 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf | 2026-11-01 |
 | law 38-39; selected Income Tax Amendment 2022 s.2(5), PDF 2; principal Schedule I 2(c); Income Tax Amendment 2022 s.2(1), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf | 2026-11-01 |

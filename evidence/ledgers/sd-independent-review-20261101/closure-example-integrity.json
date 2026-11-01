@@ -1,0 +1,47 @@
+[
+  {
+    "guide": "skills/sudan/sd-capital-gains.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-company-formation.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-corporate-income-tax.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-cross-border-residence.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-income-tax.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-payroll-social.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-tax-overview.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-transfer-pricing.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  },
+  {
+    "guide": "skills/sudan/sd-vat-gst.md",
+    "cases": 2,
+    "executable_blocks_byte_equal": true
+  }
+]

@@ -2,7 +2,7 @@
 name: sd-payroll-social
 description: >
   Prepare Sudan employer payroll workpapers for 2026 intake while separating verified source wording from unresolved current payroll operation. Covers employee data, taxable remuneration links, social contribution guidance, contradictory health insurance bases, employment leave and termination evidence. Match Sudan payroll, PAYE, social insurance, NSIF, health insurance, maternity, sick pay and severance questions. The official ministry describes contribution splits but the full current 2016 statute and implementing limits were not obtained. The opened Labour Act supplies a historical employment baseline, with later law interactions still held. Use the two calculations to expose the effect of base and termination facts, and stop before net pay, filing or remittance approval.
-version: 0.2
+version: 0.3
 jurisdiction: SD
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan payroll and employment contribution intake v 0.2
+# Sudan payroll and employment contribution intake v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -152,6 +152,8 @@ Legacy-topic controls below refer to the exact original material and line-indepe
 - SD-OLD-102: Section 9 - Self-checks. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
 - SD-OLD-103: Section 10 - Reference material. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
 - SD-OLD-104: PROHIBITIONS. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+
+- SD-OLD-155: Introductory currency note. The historical SSA 2019 exchange-rate assertion is unsupported secondary-source material and held in the exact old-topic map; it is removed from usable calculations and is not a current exchange rate.
 
 Not yet confirmed: Full current 2016 pensions/social-insurance statute and amendments, benefit eligibility and any insured wage floor/ceiling; current health statutory base, coverage, exclusions and mandatory employer size; current monthly contribution/PAYE due dates and online routes; expatriate/diplomatic, self-employed, agricultural, domestic and informal-worker coverage. Legacy pensions 1/50 peryear,80%maximum, early-pension 20 years, invalidity 1/50 with 15 yearminimum, injury 80%, disability/lump-sum percentages, survivor shares, funeral/severance benefit formulas and no-ceiling claims remain held. Labour 1997 amendment/2016 interaction, resignation percentages, maternity/sickness currentness and resignation/retirement/death treatment need completion. No final net-pay approval follows from this draft. Residual claims in all legacy-topic controls listed above remain held until individually reconciled.
 

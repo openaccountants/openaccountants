@@ -1,6 +1,6 @@
 # Sudan payroll and employment contribution intake: writer figure and rule ledger
 
-Read date: 2026-11-01. Pinned base `c61d7ae58017ab9bb896a76027f2678c21b4f312`. Candidate version 0.2. These rows verify individual opened source provisions, not a current consolidated2026 position. The Guide has an explicit no-filing/currentness gate; full later chain and listed implementing instruments remain unresolved. No independent acceptance or accountant attestation is claimed. PDF pages are one-based.
+Read date: 2026-11-01. Pinned base `c61d7ae58017ab9bb896a76027f2678c21b4f312`. Candidate version 0.3. These rows verify individual opened source provisions, not a current consolidated2026 position. The Guide has an explicit no-filing/currentness gate; full later chain and listed implementing instruments remain unresolved. No independent acceptance or accountant attestation is claimed. PDF pages are one-based.
 
 | Row | Rule / figure and conditions | Guide destination | Act/article and actual read page | Official source | Short exact source-language locator | Read on |
 |---|---|---|---|---|---|---|

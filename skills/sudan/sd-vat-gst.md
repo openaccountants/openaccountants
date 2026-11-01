@@ -2,7 +2,7 @@
 name: sd-vat-gst
 description: >
   Prepare Sudan VAT registration and monthly return workpapers for 2026 intake using the official Arabic Act, the 2017 regulations and identified amendments actually opened. Covers ordinary traders, manufacturers, importers, exporters and service businesses, with invoices, input attribution, nil returns, adjustments and export refunds. Match Sudan VAT, value added tax, Form 1 registration, Form 3 return, import services and ضريبة القيمة المضافة requests. Historical rate cells and the unconfirmed current turnover threshold are explicitly separated from filing authority. Map source documents to the actual annexed form while checking current instructions before use. This Guide stops before submission where the enacted amendment chain or live procedure remains unresolved.
-version: 0.2
+version: 0.3
 jurisdiction: SD
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan VAT registration and monthly workpapers v 0.2
+# Sudan VAT registration and monthly workpapers v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -36,9 +36,9 @@ Taxable goods, services and works in Sudan, imports and exports, including free-
 | Tobacco/cigarette category | 40% under 2018 amendment, not a general VAT rate. | [VAT Amendment 2018 s.2, PDF1–2](https://tax.gov.sd/wp-content/uploads/2025/02/law13_14.pdf) |
 | Exports | Zero rate requires qualifying export and evidence; a foreign customer alone is insufficient. | [s.14 and amendment footnote, PDF12](https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf) |
 | Registration amount | unverified: current numeric compulsory turnover threshold. Importer/exporter rule is independent of size under reg.5. | [reg.5, PDF4](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
-| Monthly filing | Form 3 within 15 days of month end, including nil returns, under the opened 2017 regulation 11; extension requires approval. | [reg.11, PDF8](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
+| Monthly filing | Form 3 within 15 days of month end, including nil returns, under the opened 2017 regulation 11; extension requires approval. | [reg.11, PDF9](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
 | Voluntary cancellation wait | 2 years under reg.6, not a universal permission to cancel all registrations. | [reg.6, PDF4–5](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
-| VAT records | 5 years under reg.10; cancellation records also have reg.8 conditions. Income-tax records have a separate rule. | [reg.10, PDF7–8](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
+| VAT records | 5 years following the end of the financial year of the entries under reg.10(5), PDF 9; cancellation records also have reg.8 conditions. Income-tax records have a separate rule. | [reg.10, PDF8–9](https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf) |
 
 ## The base
 
@@ -122,7 +122,7 @@ expected:
 | vat-ar; selected ss.12,15; PDF 11,13; s.14 and amendment footnote, PDF 12; s.28(5), PDF 20 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf | 2026-11-01 |
 | law 40-42; selected VAT Amendment 2022 s.2(a), PDF 1 and attestation PDF 2; s.2(b)–(c), PDF 1–2 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law40-42.pdf | 2026-11-01 |
 | law 13_14; selected VAT Amendment 2018 s.2, PDF 1–2 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law13_14.pdf | 2026-11-01 |
-| vat-regs-2017; selected reg.5, PDF 4; reg.6, PDF 4–5; reg.7, PDF 5; reg.8, PDF 5–6; reg.9, PDF 6–7; reg.10, PDF 7–8; reg.11, PDF 8; reg.29, PDF 18–19; regs.29,31, PDF 18,21; reg.30, PDF 20; regs.32–33, PDF 21–23; annex Form 3, PDF 30–33 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf | 2026-11-01 |
+| vat-regs-2017; selected reg.5, PDF 4; reg.6, PDF 4–5; reg.7, PDF 5; reg.8, PDF 5–6; reg.9, PDF 6–7; reg.10, PDF 8–9; reg.11, PDF 9; reg.29, PDF 18–19; regs.29,31, PDF 18,21; reg.30, PDF 20; regs.32–33, PDF 21–23; annex Form 3, PDF 30–33 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf | 2026-11-01 |
 
 Writer short-quote ledger: [evidence/ledgers/sd-vat-gst.md](../../evidence/ledgers/sd-vat-gst.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.
 

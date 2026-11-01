@@ -1,0 +1,2001 @@
+[
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Separate Capital Gains Tax Act 1986 covers actual/deemed disposals of land/buildings, vehicles, factories, intangibles and company/partnership shares; assets subject to income-tax balancing additions/deductions are excluded.",
+    "writer_reference": "ss.3,5; PDF5–7",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "every defacto, or de jure gain",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Transfers other than to spouse, children, parents, grandchildren or public purpose are deemed market-price sales under s.6; check all other charging provisions rather than assume gifts are always exempt.",
+    "writer_reference": "s.6; PDF7",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "assessed at the market price",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Gain deducts evidenced purchase/build costs, improvements, selling costs, specified planning-price difference and prescribed costs.",
+    "writer_reference": "s.7; PDF7–8",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "costs of enhancement",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Capital-gain losses carry forward no more than 3 years; not the income-tax business-loss rule.",
+    "writer_reference": "s.8; PDF8",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "three years",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Signed 2019 amendment replaces ScheduleII 2% with 3% of taxable gains. The old 20% capital-gain assertion is not supported by this Act.",
+    "writer_reference": "Capital Gains Tax Amendment2019 s.2; PDF1",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law23.pdf",
+    "source_capture": {
+      "file": "law23.pdf",
+      "sha256": "dfa6b170f11b47d8455d4425776022591e69c7a6a28bb77f7e73a12d370d0b53"
+    },
+    "writer_quote": "ويستعاض عنها",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Capital-gain tax payable within 30 days of assessment letter; Secretary General can extend reasonably. Clearance is required before capital-asset registration/transfer.",
+    "writer_reference": "ss.22–24; PDF12–13",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "thirty days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Sole residential home/land individual relief is 25% of SALE VALUE subject to the residential-plan or replacement-within 1 year conditions, only once in lifetime. In-kind revaluation condition restricts asset/share disposal for 4 years.",
+    "writer_reference": "ScheduleI; PDF15",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "throughout the life of the individual",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Initial written capital-gain assessment objection within 30 days, reasons and return required; further committee/court stages and payment conditions must be checked before filing.",
+    "writer_reference": "ss.20–21; PDF11–12",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "within thirty days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R3"
+    ],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-capital-gains",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "Nonresident agent, donor, estate and representative liability rules govern who is assessed and required to retain assets sufficient to pay.",
+    "writer_reference": "ss.11–16; PDF9–10",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Capital-Gains-.pdf",
+    "source_capture": {
+      "file": "capital-gains-en.pdf",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    "writer_quote": "within the limits of any assets",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent reading of full sixteen-page official English principal Act including all schedules and appeal/payment neighbours"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Companies Act 2015 allows two or more founders, subject to capacity and written guardian-consent restrictions. Do not treat the old one-member LLC claim as established.",
+    "writer_reference": "s.5",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "يجوز لأي شخصين أو أكثر",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "A private company cannot invite public subscription; articles MAY limit membership to 50 and restrict transfers. The 50 member provision is permissive, not a universal compulsory cap.",
+    "writer_reference": "s.8",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "ويجوز لها بحكم لوائحها أن تحدد عدد أعضائها بخمسين",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Memorandum states capital divided into shares except guarantee companies, name/liability, registered place/postal/email, and objects; each subscriber takes at least 1 share and signs before authenticator. Guarantee-company assets/income cannot be distributed to members.",
+    "writer_reference": "ss.7,14(1)–(5)",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "لا يجوز لأي من الموقعين على عقد التأسيس المساهمة بأقل من سهم",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Required competent-authority permission must be obtained BEFORE the company begins the relevant licensed object. Incorporation does not grant every sector licence.",
+    "writer_reference": "s.14(6)",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "أن تحصل على تلك الموافقة قبل مزاولة ذلك الغرض",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Submit proposed memorandum/articles and statutory compliance declaration; registrar rejects unlawful/noncompliant objects, issues signed dated sealed certificate and publishes registration notice in Gazette.",
+    "writer_reference": "ss.15–16",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "شهادة بتوقيعه مؤرخة ومختومة بخاتمه",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Known registered office in Sudan required; notify registrar on application and any change within 7 days.",
+    "writer_reference": "s.24",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "خلال سبعة أيام",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Foreign company registers before operating: certified constitution, director list, Sudan resident service representative and authority, office/address updates and contract where relevant; s.34 contract branch is limited to work and duration of that contract.",
+    "writer_reference": "ss.33–35",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "قبل البدء في مزاولة أي عمل",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Changed branch documents require registrar report within 2 months; office-address changes have their own 7 day rule.",
+    "writer_reference": "ss.35(1)(e),36",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "خلال شهرين من تاريخ ذلك التغيير",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "Board requires at least 2 persons, including at least 1 natural person; at least 1 member must reside in Sudan.",
+    "writer_reference": "s.39",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "على أن يكون أحدهما شخصاً طبيعياً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 10,
+    "ledger_line": 16,
+    "rule": "Company must hold an annual general meeting at least once per year with no more than 15 months after the preceding AGM.",
+    "writer_reference": "s.62",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "خمسة عشر شهراً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 11,
+    "ledger_line": 17,
+    "rule": "Annual members list/summary is prepared within 21 days after first/ordinary AGM and then lodged, signed/certified. Private companies also send no-public-subscription certificate.",
+    "writer_reference": "s.93",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "خلال واحد وعشرين يوماً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 12,
+    "ledger_line": 18,
+    "rule": "Companies keep regular original-supported books at registered office. Company/foreign branch financial statements include balance sheet, income, cash flows and equity, with auditor report to AGM; board approval/signature and registrar deposit follow ss.156–158.",
+    "writer_reference": "ss.153–158",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/ss7jp8.html",
+    "source_capture": {
+      "file": "companies-2015.html",
+      "sha256": "f6dc770aa591ad41f2edc5651bbea67dc300fdb9de97e7af9ee6436ae32a0788"
+    },
+    "writer_quote": "وعرضها مع تقرير المراجع القانوني",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic clauses incl neighbour rules, with known2025/2026 amendment hold retained"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 13,
+    "ledger_line": 19,
+    "rule": "Justice Ministry 5 July 2025 notice expressly calls Companies Act 2015 amended in 2025; full 2025 amendment was not obtained, and 2026 temporary amendment also needs incorporation before current formation advice.",
+    "writer_reference": "notice5July2025",
+    "source_url": "https://moj.gov.sd/posts/post/998",
+    "source_capture": {
+      "file": "company-2025-notice.html",
+      "sha256": "ec33bff83c4e01444f5d53ef8e90c75460bd3fac25e2e80482e9f77d346fec6b"
+    },
+    "writer_quote": "تعديل لسنة 2025",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent official notice main-body reading confirms5July2025/Companies2015amended2025; does not supply amendment"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 14,
+    "ledger_line": 20,
+    "rule": "Official 2025 investment procedures request proposed names, memorandum/articles, approved registered office, tax/Zakat-stamped articles and capital/declaration/publication forms; branch documents need parent evidence and authentication. This is a procedure aid, not statutory capital/holiday certification.",
+    "writer_reference": "PDF2–4",
+    "source_url": "https://minv.gov.sd/wp-content/uploads/2025/11/الاجراءات-بالشعار-الجديد-1.pdf",
+    "source_capture": {
+      "file": "investment-procedures.pdf",
+      "sha256": "0d2d61e84cdfdaeb5adc8a8e45a8abfa53f6a95737c918d2e6df0d471cf98bef"
+    },
+    "writer_quote": "إحضار لائحة التأسيس مختومة من الضرائب والزكاة من ثلاث نسخ",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent actual procedure text PDF2–4; form numbers not inferred; authentication/threecopy conditions checked"
+  },
+  {
+    "guide": "sd-company-formation",
+    "ledger_row": 15,
+    "ledger_line": 21,
+    "rule": "Persons carrying on commercial, industrial, professional, occupational, service or non-commercial activity must apply to the Chamber for a Tax Identification Number; prescribed data/form and validity decision apply.",
+    "writer_reference": "s.82; PDF114–115",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "submit an application to the Chamber",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Basis period is the twelve months before the assessment year; assessment year begins 1 January. Accounting-period departures require s.15 treatment.",
+    "writer_reference": "ss.2,15; PDF11,27",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "twelve months preceding the assessment year",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "2019 amendment changes general company business-profit rate 15% to 20% and industrial rate 10% to 15%, subject to category and later-law gate.",
+    "writer_reference": "Income Tax Amendment 2019 s.2(2)(c)–(d), PDF1",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf",
+    "source_capture": {
+      "file": "law21.pdf",
+      "sha256": "a8152b093c29603e8c19dea38d9ae39d3c32dd5e9c0374618dbf2da2dd110b73"
+    },
+    "writer_quote": "ويستعاض عنه بالرقم",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "2021 amendment charges telecom and similar stated digital-service company categories at 30% of NET income, replacing the old gross-turnover treatment.",
+    "writer_reference": "Income Tax Amendment 2021 s.2(e), PDF2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf",
+    "source_capture": {
+      "file": "law32-34.pdf",
+      "sha256": "ba5ee04e2701f4dd877e7f37a91e2a556cf0c3440b26d7ce74b8379b60f82bbf"
+    },
+    "writer_quote": "من صافي الدخل",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "2022 amendment sets agricultural classification from zero to 2%, with the Secretary General to classify taxpayers; do not select a universal agricultural rate or base without that classification and intervening provisions.",
+    "writer_reference": "Income Tax Amendment 2022 s.2(6)(b), PDF2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "source_capture": {
+      "file": "law38-39.pdf",
+      "sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903"
+    },
+    "writer_quote": "من صفر الى 2%",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Deduct only expenses wholly and actually incurred in producing income in the basis period. Paid Zakat is deductible outside personal income, subject to payment proof.",
+    "writer_reference": "s.18(1); PDF29–30",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "incurred totally in obtaining such income",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Private/family, capital, compensated loss, income tax and reserves are excluded subject to the detailed statutory exceptions.",
+    "writer_reference": "s.18(2); PDF30–32",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "any expenditure spent on the living of his family",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Employee-incentive deduction is restricted to three months salary annually; do not treat every bonus as deductible.",
+    "writer_reference": "s.18(2); PDF32",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "salary of three months annually",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Capital allowances follow s.20 and Schedule II, including the distinction between repair and capital outlay; do not use an unverified universal machinery allowance.",
+    "writer_reference": "s.20; PDF33–37",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "Schedule II hereto",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "Business losses carry forward up to five years, requiring the specified books, supporting return documents and validated accounts for each relevant period; force-majeure continuity exception applies. Unaudited loss accepted for the current year does not itself qualify for carryforward.",
+    "writer_reference": "s.21; PDF37–39",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "shall not exceed five years",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 10,
+    "ledger_line": 16,
+    "rule": "Secretary General can counter arrangements with a basic tax avoidance/reduction object; s.16(2) has the resident-company business-vesting exception.",
+    "writer_reference": "s.16; PDF27–28",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "one of the basic objects",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R2"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 11,
+    "ledger_line": 17,
+    "rule": "Commercial-profit taxation overrides other exemptions under s.9(2), but s.9(3) excepts activity under the stated Zakat and endowments laws; registered-charity reimbursement uses the discretionary ministerial process.",
+    "writer_reference": "s.9(3)–(4); PDF23",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "shall not apply to any commercial activity under the Zakat Act",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 12,
+    "ledger_line": 18,
+    "rule": "Principal s.38 uses return notices; if no notice is received within three months after basis-period end, notify within fourteen days after those months. The full 2021 filing regulations and current return fields were not obtained.",
+    "writer_reference": "s.38; PDF58–61",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within fourteen days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 13,
+    "ledger_line": 19,
+    "rule": "Income-tax business books and supporting documents must be retained at least six years after the accounting period; principal text permits Arabic or English, subject to the later translation addition.",
+    "writer_reference": "s.39(4)–(6); PDF62–63",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "not less than six years",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 14,
+    "ledger_line": 20,
+    "rule": "2022 amendment requires an approved Arabic translation for non-Arabic data, information, records or documents submitted to the Chamber.",
+    "writer_reference": "Income Tax Amendment 2022 s.2(1), PDF1",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "source_capture": {
+      "file": "law38-39.pdf",
+      "sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903"
+    },
+    "writer_quote": "ترجمة معتمدة باللغة العربية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 15,
+    "ledger_line": 21,
+    "rule": "Income-tax payment date is prescribed by regulations; tax on hard-currency income is collected in hard currency or, if difficult, local currency at the Central Bank rate at payment.",
+    "writer_reference": "s.62(1),(6); PDF90–91",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "at such date, as the regulations. may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 16,
+    "ledger_line": 22,
+    "rule": "The Act provides late-payment sanctions prescribed in regulations, discretionary waiver, audits, recovery and offence powers; no current flat penalty amount or universal monthly percentage is certified.",
+    "writer_reference": "s.63; PDF92",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "as the regulations may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-corporate-income-tax",
+    "ledger_row": 17,
+    "ledger_line": 23,
+    "rule": "Section 65 on-account amounts must be deposited within one month of collection with taxpayer details; payer certificate/receipt rules and audited-return/payment-evidence conditions govern credit. Do not label every collection a final tax.",
+    "writer_reference": "s.65(1)(i)–(j),(2); PDF96–97",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within one month",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R6"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Basis period is the twelve months before the assessment year; assessment year begins 1 January. Accounting-period departures require s.15 treatment.",
+    "writer_reference": "ss.2,15; PDF11,27",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "twelve months preceding the assessment year",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Ordinary residence is a separate limb, excluding a reasonable temporary absence accepted by the Secretary General; deemed residence also arises from presence exceeding 183 days, or presence in the current and both preceding basis periods exceeding twelve months in total. Domicile is separately defined.",
+    "writer_reference": "s.2 resident/domiciled; PDF12,14–16",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "exceeding in total one hundred and eighty three days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "For a non-individual, residence is supervision and management exercised in Sudan.",
+    "writer_reference": "s.2 resident; PDF16",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "supervision of the business of such person and management thereof are exercised",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Resident: income from Sudan and abroad; nonresident: income arising in Sudan. The Minister can exempt foreign income already taxed abroad; this is not an automatic foreign-tax credit.",
+    "writer_reference": "s.9; PDF22–23",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "any place outside the Sudan, in case of resident person",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Effective double-tax arrangements require a ministerial order; covered income, agency/branch attribution and associated-person allocation can override domestic law. No treaty count, specific treaty or preferential rate established.",
+    "writer_reference": "s.33; PDF55",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "by an order therefrom",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Nonresident income can be assessed and collected on its Sudan agent; vessel/aircraft representative rules also apply. This is not proof of a six-month construction PE rule.",
+    "writer_reference": "s.34; PDF56",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "on his agent in the Sudan",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Section 65 lists public/private purchase/sale/market/customs and other on-account collections. Nonresident-company gross withholding percentage requires a ministerial order; no universal rate inferred.",
+    "writer_reference": "s.65(1)(a)–(k); PDF94–96",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "specified by the Minister under an order",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Section 65 on-account amounts must be deposited within one month of collection with taxpayer details; payer certificate/receipt rules and audited-return/payment-evidence conditions govern credit. Do not label every collection a final tax.",
+    "writer_reference": "s.65(1)(i)–(j),(2); PDF96–97",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within one month",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R6"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "Income-tax payment date is prescribed by regulations; tax on hard-currency income is collected in hard currency or, if difficult, local currency at the Central Bank rate at payment.",
+    "writer_reference": "s.62(1),(6); PDF90–91",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "at such date, as the regulations. may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-cross-border-residence",
+    "ledger_row": 10,
+    "ledger_line": 16,
+    "rule": "Persons carrying on commercial, industrial, professional, occupational, service or non-commercial activity must apply to the Chamber for a Tax Identification Number; prescribed data/form and validity decision apply.",
+    "writer_reference": "s.82; PDF114–115",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "submit an application to the Chamber",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Resident: income from Sudan and abroad; nonresident: income arising in Sudan. The Minister can exempt foreign income already taxed abroad; this is not an automatic foreign-tax credit.",
+    "writer_reference": "s.9; PDF22–23",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "any place outside the Sudan, in case of resident person",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Personal income includes salary, leave pay, fees, commission, grants and allowances; wholly income-producing reimbursement is excluded on Secretary General satisfaction. Benefits are included subject to the specific travel, approved retirement-fund and medical exceptions.",
+    "writer_reference": "s.26; PDF48–50",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "any wage, salary, leave pay, sick leave pay",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Employer housing value uses Secretary General prescription, with director market-value and part-period/employee-rent adjustments; other benefits use employer cost or market value, whichever greater. No universal fringe percentage is established.",
+    "writer_reference": "ss.26(b),27; PDF50–51",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "whichever is the greater",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Personal-income deductions include pension, insurance-fund and other post-service-scheme deductions and gratuity at service termination, subject to s.28 wording.",
+    "writer_reference": "s.28; PDF51",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "pension deductions",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "2021 replacement annual personal-income scale: first SDG 36000 nil; next 24000 at 5%; next 24000 at 10%; next 240000 at 15%; excess 20%. Nonresidents do not enjoy the exempt threshold. Source-period scale only.",
+    "writer_reference": "Income Tax Amendment 2021 s.2(f), replacement Schedule III(B), PDF2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf",
+    "source_capture": {
+      "file": "law32-34.pdf",
+      "sha256": "ba5ee04e2701f4dd877e7f37a91e2a556cf0c3440b26d7ce74b8379b60f82bbf"
+    },
+    "writer_quote": "لا يتمتع الأفراد غير المقيمين",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "2019 amendment raises the top individual business/professional band from 15% to 30%; principal lower annual bands are first 3000 nil, next 3000 at 5%, next 4000 at 10%. These are different from the later personal-employment scale.",
+    "writer_reference": "Income Tax Amendment 2019 s.2(2)(a), PDF1; principal Schedule III(A)(a), PDF136",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf",
+    "source_capture": {
+      "file": "law21.pdf",
+      "sha256": "a8152b093c29603e8c19dea38d9ae39d3c32dd5e9c0374618dbf2da2dd110b73"
+    },
+    "writer_quote": "تعدل الفئة",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "The s.25 standard rental-expense deduction was amended from 35% to 25%; audited actual-expense route and which party bears expenditure remain relevant.",
+    "writer_reference": "Income Tax Amendment 2021 s.2(a), PDF1; principal s.25",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf",
+    "source_capture": {
+      "file": "law32-34.pdf",
+      "sha256": "ba5ee04e2701f4dd877e7f37a91e2a556cf0c3440b26d7ce74b8379b60f82bbf"
+    },
+    "writer_quote": "خمسة وعشرون",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R1"
+    ],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Mixed personal/business/rental income: if other income does not exceed one quarter of personal income, apply personal scale to total; above that boundary separate the schedules with the prescribed exemption-threshold interaction.",
+    "writer_reference": "s.30; PDF52–53",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "does not exceed one-quarter",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "2022 amendment deletes Schedule I 2(c)(first and second), the older public/private age 50/service 25 personal-income exemptions. Do not continue the legacy blanket over 50 exemption.",
+    "writer_reference": "Income Tax Amendment 2022 s.2(5), PDF2; principal Schedule I2(c)",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "source_capture": {
+      "file": "law38-39.pdf",
+      "sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903"
+    },
+    "writer_quote": "في الجدول الأول تحذف",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 10,
+    "ledger_line": 16,
+    "rule": "Deduct only expenses wholly and actually incurred in producing income in the basis period. Paid Zakat is deductible outside personal income, subject to payment proof.",
+    "writer_reference": "s.18(1); PDF29–30",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "incurred totally in obtaining such income",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 11,
+    "ledger_line": 17,
+    "rule": "Private/family, capital, compensated loss, income tax and reserves are excluded subject to the detailed statutory exceptions.",
+    "writer_reference": "s.18(2); PDF30–32",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "any expenditure spent on the living of his family",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 12,
+    "ledger_line": 18,
+    "rule": "Principal s.38 uses return notices; if no notice is received within three months after basis-period end, notify within fourteen days after those months. The full 2021 filing regulations and current return fields were not obtained.",
+    "writer_reference": "s.38; PDF58–61",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within fourteen days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R5"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 13,
+    "ledger_line": 19,
+    "rule": "Income-tax business books and supporting documents must be retained at least six years after the accounting period; principal text permits Arabic or English, subject to the later translation addition.",
+    "writer_reference": "s.39(4)–(6); PDF62–63",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "not less than six years",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 14,
+    "ledger_line": 20,
+    "rule": "2022 amendment requires an approved Arabic translation for non-Arabic data, information, records or documents submitted to the Chamber.",
+    "writer_reference": "Income Tax Amendment 2022 s.2(1), PDF1",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "source_capture": {
+      "file": "law38-39.pdf",
+      "sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903"
+    },
+    "writer_quote": "ترجمة معتمدة باللغة العربية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 15,
+    "ledger_line": 21,
+    "rule": "Principal s.41 requires the qualifying employer salaries/benefits/pensions list by 31 January following the basis period, with prescribed details and Secretary General exceptions; this is an annual list, not a confirmed monthly PAYE due date.",
+    "writer_reference": "s.41; PDF66–67",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "thirty first of January",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 16,
+    "ledger_line": 22,
+    "rule": "Income-tax payment date is prescribed by regulations; tax on hard-currency income is collected in hard currency or, if difficult, local currency at the Central Bank rate at payment.",
+    "writer_reference": "s.62(1),(6); PDF90–91",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "at such date, as the regulations. may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-income-tax",
+    "ledger_row": 17,
+    "ledger_line": 23,
+    "rule": "The Act provides late-payment sanctions prescribed in regulations, discretionary waiver, audits, recovery and offence powers; no current flat penalty amount or universal monthly percentage is certified.",
+    "writer_reference": "s.63; PDF92",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "as the regulations may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Undated official ministry guidance describes the 2016 law effective 3 August 2016 and 25% of CONTRIBUTION WAGE, employer 17% and worker 8%; self-employed 25% of declared contribution income. Current floors/caps and full 2016 statute remain unresolved.",
+    "writer_reference": "About insurance, paragraphs on2016 law/contributions",
+    "source_url": "https://hrsw.gov.sd/?page_id=1360",
+    "source_capture": {
+      "file": "social-about.html",
+      "sha256": "8dc04471d271c70761d5a06e6804139cb62761c38390f295650667ff86f6bae2"
+    },
+    "writer_quote": "صاحب العمل 17%",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent actual official HTML main-body wording; source labelled undated and source/base conflict retained"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Official ministry health guidance says 10% of BASIC salary, worker 4% and employer 6%. Undated guidance, not a verified 2026 statutory base.",
+    "writer_reference": "Financing paragraph",
+    "source_url": "https://hrsw.gov.sd/?page_id=482",
+    "source_capture": {
+      "file": "health-guidance.html",
+      "sha256": "7d7435bea8864dabb62ff0385e214980cbde4792dcb76d588f821b9d52d23548"
+    },
+    "writer_quote": "المرتب الأساسي",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent actual official HTML main-body wording; source labelled undated and source/base conflict retained"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Separate official health registration page says 10% of TOTAL wage, worker 4% and employer 6%, and requests establishment/employee forms plus last wage statement. This conflicts with the basic-pay page.",
+    "writer_reference": "registration steps",
+    "source_url": "https://hrsw.gov.sd/?page_id=239",
+    "source_capture": {
+      "file": "health-registration.html",
+      "sha256": "ad1f43976bbb45cbd0f532bf765e76bc7e53281f896ce9d247422ec117d1cf1e"
+    },
+    "writer_quote": "أجمالي اجر العامل",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent actual official HTML main-body wording; source labelled undated and source/base conflict retained"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Labour Act 1997 baseline: maternity after 6 months employment,8 weeks full pay,4 before/4 after or 2 before/6 after; medical proof and related sickness/job-protection provisions apply.",
+    "writer_reference": "s.46",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html",
+    "source_capture": {
+      "file": "labour-1997.html",
+      "sha256": "7f06b6e01de3d9b01ef6c023cf3f9edd5de6a3d2255e6e0942ca267b201a3ea2"
+    },
+    "writer_quote": "أربعة أسابيع قبل الوضع وأربعة أسابيع بعد الوضع",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic ss46–47,60–63 and adjacent entitlement conditions"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Labour Act 1997 baseline: after 3 months continuous service and medical evidence,3 months full,3 half,3 quarter pay; lower-pay entitlement requires annual leave exhaustion, with medical-board and misconduct conditions.",
+    "writer_reference": "s.47",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html",
+    "source_capture": {
+      "file": "labour-1997.html",
+      "sha256": "7f06b6e01de3d9b01ef6c023cf3f9edd5de6a3d2255e6e0942ca267b201a3ea2"
+    },
+    "writer_quote": "ثلاثة أشهر بأجر كامل",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic ss46–47,60–63 and adjacent entitlement conditions"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Labour Act 1997 s.60 subject to Social Insurance Act/better rights: eligible service at least 3 years; first 10 years 1 monthly basic/year,next 5 years 1.5,above 15 years 1.75,cap 36 months; resignation reductions in s.61 require separate treatment.",
+    "writer_reference": "ss.60–61",
+    "source_url": "https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html",
+    "source_capture": {
+      "file": "labour-1997.html",
+      "sha256": "7f06b6e01de3d9b01ef6c023cf3f9edd5de6a3d2255e6e0942ca267b201a3ea2"
+    },
+    "writer_quote": "ثلاث سنوات في الخدمة المستمرة",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct official statutory HTML Arabic ss46–47,60–63 and adjacent entitlement conditions"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Principal s.41 requires the qualifying employer salaries/benefits/pensions list by 31 January following the basis period, with prescribed details and Secretary General exceptions; this is an annual list, not a confirmed monthly PAYE due date.",
+    "writer_reference": "s.41; PDF66–67",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "thirty first of January",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Income-tax payment date is prescribed by regulations; tax on hard-currency income is collected in hard currency or, if difficult, local currency at the Central Bank rate at payment.",
+    "writer_reference": "s.62(1),(6); PDF90–91",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "at such date, as the regulations. may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-payroll-social",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "The Act provides late-payment sanctions prescribed in regulations, discretionary waiver, audits, recovery and offence powers; no current flat penalty amount or universal monthly percentage is certified.",
+    "writer_reference": "s.63; PDF92",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "as the regulations may specify",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Basis period is the twelve months before the assessment year; assessment year begins 1 January. Accounting-period departures require s.15 treatment.",
+    "writer_reference": "ss.2,15; PDF11,27",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "twelve months preceding the assessment year",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Persons carrying on commercial, industrial, professional, occupational, service or non-commercial activity must apply to the Chamber for a Tax Identification Number; prescribed data/form and validity decision apply.",
+    "writer_reference": "s.82; PDF114–115",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "submit an application to the Chamber",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Principal s.38 uses return notices; if no notice is received within three months after basis-period end, notify within fourteen days after those months. The full 2021 filing regulations and current return fields were not obtained.",
+    "writer_reference": "s.38; PDF58–61",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within fourteen days",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R5"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Income-tax business books and supporting documents must be retained at least six years after the accounting period; principal text permits Arabic or English, subject to the later translation addition.",
+    "writer_reference": "s.39(4)–(6); PDF62–63",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "not less than six years",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "2022 amendment requires an approved Arabic translation for non-Arabic data, information, records or documents submitted to the Chamber.",
+    "writer_reference": "Income Tax Amendment 2022 s.2(1), PDF1",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf",
+    "source_capture": {
+      "file": "law38-39.pdf",
+      "sha256": "80203dad111ead70c77fa0b499d13f72e6afa637fcae344fd528473f7baed903"
+    },
+    "writer_quote": "ترجمة معتمدة باللغة العربية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Section 65 on-account amounts must be deposited within one month of collection with taxpayer details; payer certificate/receipt rules and audited-return/payment-evidence conditions govern credit. Do not label every collection a final tax.",
+    "writer_reference": "s.65(1)(i)–(j),(2); PDF96–97",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "within one month",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R6"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-tax-overview",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Justice Ministry 5 July 2025 notice expressly calls Companies Act 2015 amended in 2025; full 2025 amendment was not obtained, and 2026 temporary amendment also needs incorporation before current formation advice.",
+    "writer_reference": "notice5July2025",
+    "source_url": "https://moj.gov.sd/posts/post/998",
+    "source_capture": {
+      "file": "company-2025-notice.html",
+      "sha256": "ec33bff83c4e01444f5d53ef8e90c75460bd3fac25e2e80482e9f77d346fec6b"
+    },
+    "writer_quote": "تعديل لسنة 2025",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent official notice main-body reading confirms5July2025/Companies2015amended2025; does not supply amendment"
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "Associated-person conditions that reduce the tax base or shift tax burden permit real-value adjustment, irrespective of residence or exemption.",
+    "writer_reference": "s.22A(1); PDF40",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "whether resident or non-resident",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Real value is the price between unrelated persons in the natural course of dealing; implementing method rules and agreements are tied to regulations.",
+    "writer_reference": "s.22A(2)–(3); PDF40–41",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "the natural cause of matters",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Association includes relationships affecting taxable income, spouse/ascendants/descendants, direct or indirect ownership of at least 50% by number or value, and partnership/partners. Ownership is not the only test.",
+    "writer_reference": "s.22A(3); PDF41",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "at least 50%",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "Nonresident producer/exporter provisions use favourable wholesale value, with the statutory allowance and profit cap; this is separate from the broader associated-person rule.",
+    "writer_reference": "s.22(1); PDF39–40",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "sold wholesale, in the most favourable conditions",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-transfer-pricing",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "Secretary General can counter arrangements with a basic tax avoidance/reduction object; s.16(2) has the resident-company business-vesting exception.",
+    "writer_reference": "s.16; PDF27–28",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf",
+    "source_capture": {
+      "file": "income-en.pdf",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    "writer_quote": "one of the basic objects",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R2"
+    ],
+    "quote_substring_whitespace_normalised": true,
+    "method": "independent reading of cited complete clauses and adjacent conditions in official selectable English Act; Arabic residence image additionally checked"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 1,
+    "ledger_line": 7,
+    "rule": "VAT applies to local/imported goods, services and works except a specific exclusion; imports/free-zone domestic entry have distinct rules.",
+    "writer_reference": "ss.12,15; PDF11,13",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf",
+    "source_capture": {
+      "file": "vat-ar.pdf",
+      "sha256": "0d4dda9caa93a6fcb125dd70edcb9049dd90681606f190544bd1e8d57132252f"
+    },
+    "writer_quote": "تفرض الضريبة على مبيعات السلع المحلية والمستوردة",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic principal clauses/adjacent conditions; rate footnote PDF12 and residence parallel independently viewed; other cited clauses from cached Arabic reading"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 2,
+    "ledger_line": 8,
+    "rule": "Principal VAT text footnote records Cabinet decision 19 June 2012 amending general rate to 17%; this is an opened historical rate, not a 2026 consolidation certificate. Exports zero-rated under s.14 with evidence.",
+    "writer_reference": "s.14 and amendment footnote, PDF12",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf",
+    "source_capture": {
+      "file": "vat-ar.pdf",
+      "sha256": "0d4dda9caa93a6fcb125dd70edcb9049dd90681606f190544bd1e8d57132252f"
+    },
+    "writer_quote": "بفئة (صفر)",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic principal clauses/adjacent conditions; rate footnote PDF12 and residence parallel independently viewed; other cited clauses from cached Arabic reading"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 3,
+    "ledger_line": 9,
+    "rule": "Signed 2022 VAT amendment replaces telecommunications 35% with 40%; source-period category-specific rate, not a default for every service.",
+    "writer_reference": "VAT Amendment 2022 s.2(a), PDF1 and attestation PDF2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law40-42.pdf",
+    "source_capture": {
+      "file": "law40-42.pdf",
+      "sha256": "79f1472e7e302c315c14b4442308732f13b0949dd8eaa19685f5e90aa0f877ed"
+    },
+    "writer_quote": "ويستعاض عنها",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 4,
+    "ledger_line": 10,
+    "rule": "2018 VAT amendment raises tobacco/cigarette category to 40%; do not apply that category rate to ordinary supplies.",
+    "writer_reference": "VAT Amendment 2018 s.2, PDF1–2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law13_14.pdf",
+    "source_capture": {
+      "file": "law13_14.pdf",
+      "sha256": "76bf7fe4f5d2bb0806e6c83823cf81b8c64b151e82df4fa4f958469ea6a120ec"
+    },
+    "writer_quote": "التبغ والسجائر",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 5,
+    "ledger_line": 11,
+    "rule": "2017 regulation 5 covers threshold-based compulsory registration and importer/exporter registration regardless of size; the actual current numerical threshold is unresolved.",
+    "writer_reference": "reg.5, PDF4",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "المستورد والمصدر",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 6,
+    "ledger_line": 12,
+    "rule": "Below-limit voluntary registration is available under regulation 6; cancellation cannot be requested before two years of registration under that route.",
+    "writer_reference": "reg.6, PDF4–5",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "سنتين",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R4"
+    ],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 7,
+    "ledger_line": 13,
+    "rule": "Registration Form 1 goes to the local office, certificate Form 2 must be displayed at principal place and branches; notify changes within 30 days.",
+    "writer_reference": "reg.7, PDF5",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "ثلاثين يوماً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 8,
+    "ledger_line": 14,
+    "rule": "Cancellation needs the Secretary General written decision; notify business cessation/liquidation within 30 days, return certificate and retain cancellation records/invoices for 2 years; relevant remaining stock is subject to the deemed-supply rule.",
+    "writer_reference": "reg.8, PDF5–6",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "سنتين من تاريخ إلغاء التسجيل",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 9,
+    "ledger_line": 15,
+    "rule": "Tax invoices must identify invoice/date/serial, registration and taxpayer identifiers, parties, supply, rate, tax and total. Computer/fiscal-machine rules are conditional; no universal current einvoice approval is established.",
+    "writer_reference": "reg.9, PDF6–7",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "الفاتورة الضريبية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 10,
+    "ledger_line": 16,
+    "rule": "VAT regulation 10 requires books/invoices and relevant customs, export, stock and adjustment evidence for 5 years; record transactions continuously, not an invented FIFO inventory valuation rule.",
+    "writer_reference": "reg.10, PDF7–8",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "سنوات",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R4"
+    ],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 11,
+    "ledger_line": 17,
+    "rule": "Form 3 monthly VAT return is due within 15 days after month end, including nil trading; same-period extension requires Secretary General approval.",
+    "writer_reference": "reg.11, PDF8",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "خمسة عشر يوماً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "correction_required",
+    "operative_2026_cleared": false,
+    "finding_ids": [
+      "SD-R4"
+    ],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 12,
+    "ledger_line": 18,
+    "rule": "Deduct input tax supported by valid invoices/customs evidence for taxable activity; no deduction for personal/exempt uses. Direct attribution first, then shared-input taxable-output proportion, with monthly carryforward.",
+    "writer_reference": "reg.29, PDF18–19",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "للاستخدام الشخصي",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 13,
+    "ledger_line": 19,
+    "rule": "Goods-return deduction requires actual return and refund plus the numbered/dated adjustment documentation; error correction goes in the next monthly return with documents.",
+    "writer_reference": "regs.29,31, PDF18,21",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "الإقرار الشهري اللاحق",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 14,
+    "ledger_line": 20,
+    "rule": "Export refunds require written application, tax invoice and customs evidence; exported services require foreign/nonresident customer, use outside Sudan, contract and payment transferred to Sudan. Conditional response within 3 months; claim bar 24 months from tax-period end.",
+    "writer_reference": "reg.30, PDF20",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "وعشرين شهراً",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 15,
+    "ledger_line": 21,
+    "rule": "Exemptions distinguish natural-state agricultural output, specified food/medicines, financial, education and medical services and customs-linked diplomatic/treaty goods; item definitions and later revocations matter. No blanket sector exemption.",
+    "writer_reference": "regs.32–33, PDF21–23",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "لا تعتبر المنتجات الزراعية أنها بيعت بحالتها الطبيعية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 16,
+    "ledger_line": 22,
+    "rule": "Resident contracting taxable services/works with a nonresident that has no Sudan registered legal entity must add and remit VAT to the Chamber. Confirm classification, place of use, rate and current procedure separately.",
+    "writer_reference": "s.28(5), PDF20",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat2001.pdf",
+    "source_capture": {
+      "file": "vat-ar.pdf",
+      "sha256": "0d4dda9caa93a6fcb125dd70edcb9049dd90681606f190544bd1e8d57132252f"
+    },
+    "writer_quote": "غير مقيم وليس له كيان قانوني مسجل في السودان",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic principal clauses/adjacent conditions; rate footnote PDF12 and residence parallel independently viewed; other cited clauses from cached Arabic reading"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 17,
+    "ledger_line": 23,
+    "rule": "2022 VAT amendment requires approved Arabic translation of submitted non-Arabic material and permits mandated electronic returns and foreign-currency remittance where tax collected in that currency.",
+    "writer_reference": "s.2(b)–(c), PDF1–2",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/law40-42.pdf",
+    "source_capture": {
+      "file": "law40-42.pdf",
+      "sha256": "79f1472e7e302c315c14b4442308732f13b0949dd8eaa19685f5e90aa0f877ed"
+    },
+    "writer_quote": "ترجمة باللغة العربية",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent direct image reading of original Arabic signed amendment/order and attestation; numbers not accepted from OCR alone"
+  },
+  {
+    "guide": "sd-vat-gst",
+    "ledger_row": 18,
+    "ledger_line": 24,
+    "rule": "2017 annex Form 3 has identification/period page, instructions and numbered sales 1–6, purchases 7–14 and balance 15–19 lines. Printed historical rate cells are not current rate authority.",
+    "writer_reference": "annex Form3, PDF30–33",
+    "source_url": "https://tax.gov.sd/wp-content/uploads/2025/02/vat_list.pdf",
+    "source_capture": {
+      "file": "vat-regs-2017.pdf",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    },
+    "writer_quote": "رصيد الضريبة المدين",
+    "quote_is_locator_not_full_condition": true,
+    "review_result": "supported_opened_source_baseline_only",
+    "operative_2026_cleared": false,
+    "finding_ids": [],
+    "method": "independent Arabic regulation clauses/adjacent conditions; original images PDF8,9,19,20,32 plus OCR/extracted remaining cited pages; historical form31 resolves value-based shared-input attribution"
+  }
+]

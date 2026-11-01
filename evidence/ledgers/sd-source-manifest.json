@@ -31,7 +31,8 @@
       "acquired_on": "2026-11-01",
       "read_on": "2026-11-01",
       "actual_read_scope": "All16pages actually read in selectable text: title/contents and operative ss.1–28 plus SchedulesI–II, with costing, losses, taxpayer/agent/donor/estate liability, appeals, pay/clearance and exemptions. Older2% ScheduleII reconciled with actual signed2019 amendment. Later chain still unresolved.",
-      "entire_document_read": true
+      "entire_document_read": true,
+      "focused_correction_read_scope": "Reread actual PDF12 s.20(1) initial written objection, precise grounds and30days from assessment date; no return prerequisite in that subsection. Further s.20(2)/s.21 stages remain separate. 2026-11-01."
     },
     {
       "name": "gazette-425",
@@ -295,7 +296,8 @@
       "acquired_on": "2026-11-01",
       "read_on": "2026-11-01",
       "actual_read_scope": "Selected actual English Act pages11–16,22–23,27–41,46–53,55–67,90–98,114–115,120–122,136–139, concentrating on the ledger sections. These are the officially published English words, not a fresh2026 consolidation. No cover-to-cover140page reading claimed.",
-      "entire_document_read": false
+      "entire_document_read": false,
+      "focused_correction_read_scope": "Reread actual PDF27–28 s.16(1) exception; PDF46–47 s.25(1)(c) election/change conditions; PDF58–61 s.38(3) taxpayer scope, especially PDF59; PDF96–97 ss.65(1)(j),65(2) alternative accounts/return and certificate protection. 2026-11-01."
     },
     {
       "name": "income-regs-2021",
@@ -669,7 +671,7 @@
       "extracted_chars": 49516,
       "acquired_on": "2026-11-01",
       "read_on": "2026-11-01",
-      "actual_read_scope": "All34pages rendered/OCR. Selected regs4–12,24–33 and Form1/2/3 annexes read; PDF4 registration and PDF32 Form3 visually inspected. Ledger uses actual regs5–11,29–33 and Form3 pages30–33. Printed rate cells are historical, not current rate authority. No full amended consolidation certified.",
+      "actual_read_scope": "All34pages rendered/OCR. Selected regs4–12,24–33 and Form1/2/3 annexes read; PDF4 registration and PDF32 Form3 visually inspected. Focused correction reread visually inspected PDF5 reg.6 exact two-year wording, PDF8–9 reg.10 and PDF9 reg.11. Five-year retention is reg.10(5), PDF9; monthly/nil filing is reg.11, PDF9. Ledger uses actual regs5–11,29–33 and Form3 pages30–33. Printed rate cells are historical, not current rate authority. No full amended consolidation certified.",
       "entire_document_read": false
     },
     {

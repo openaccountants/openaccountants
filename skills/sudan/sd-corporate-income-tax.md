@@ -2,7 +2,7 @@
 name: sd-corporate-income-tax
 description: >
   Prepare Sudan company business profit workpapers for 2026 intake from the official Income Tax Act and identified amendments, without treating an incomplete historical chain as current certification. Covers ordinary resident companies, industrial businesses, foreign branches and sector classification, with expense, capital allowance, loss and collection controls. Match Sudan corporate income tax, business profits tax, BPT, taxable profits, company losses and ضريبة أرباح الأعمال requests. Separate general company profit from telecom net income, agriculture and concession arrangements. Document accounting periods, audited evidence, withholding credits and unresolved regulations. This Guide supports a broad statutory baseline computation and review handoff, with a firm stop before an operative filing or rate conclusion.
-version: 0.2
+version: 0.3
 jurisdiction: SD
 tax_year: 2026
 last_updated: 2026-11-01
@@ -17,7 +17,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan company business profits v 0.2
+# Sudan company business profits v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -45,7 +45,7 @@ Ordinary company business-profit preparation, including industrial classificatio
 3. Replace book depreciation with statutory s.20/ScheduleII allowances only after the actual asset class, qualifying cost and applicable regulations are established. The catalogue's alleged 2021 regulations PDF is another Act copy; the full governing regulations remain unread. No flat 20% machinery allowance is approved.
 4. Separate revenue bad debts and recoveries, capital balancing adjustments and disposal gains. [Capital gains](sd-capital-gains.md) excludes company assets already within income-tax balancing treatment; avoid double taxation by classifying first.
 5. Apply loss schedules only with the s.21 proof and continuity conditions. Keep each loss-year cohort and expiry separate; current unaudited accepted loss is not automatically carried forward.
-6. Record associated payments and avoidance arrangements for the dedicated TP/antiavoidance review. Commercial charity activity is not automatically exempt. Reconcile on-account collections to audited return and payment evidence, retaining certificates.
+6. Record associated payments and avoidance arrangements for the dedicated TP/antiavoidance review. Commercial charity activity is not automatically exempt. For on-account credit, retain validated audited accounts OR an income return under s.38, plus supporting deduction/payment documents under s.65(2). Section 65(1)(j) certificates/receipts satisfy tax up to proved amounts even if the collecting person fails to remit; an audited return or actual collector remittance is not universally prerequisite.
 
 ## Deadlines and filing
 
@@ -110,7 +110,7 @@ expected:
 
 | Source and actual read scope | Official URL | Read on |
 |---|---|---|
-| income-en; selected ss.2,15; PDF 11,27; s.18(1); PDF 29–30; s.18(2); PDF 30–32; s.18(2); PDF 32; s.20; PDF 33–37; s.21; PDF 37–39; s.16; PDF 27–28; s.9(3)–(4); PDF 23; s.38; PDF 58–61; s.39(4)–(6); PDF 62–63; s.62(1),(6); PDF 90–91; s.63; PDF 92; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| income-en; selected ss.2,15; PDF 11,27; s.18(1); PDF 29–30; s.18(2); PDF 30–32; s.18(2); PDF 32; s.20; PDF 33–37; s.21; PDF 37–39; s.16(1)–(2); PDF 27–28; s.9(3)–(4); PDF 23; s.38(1),(3)(a)–(b); PDF 58–61, taxpayer definition PDF 59; s.39(4)–(6); PDF 62–63; s.62(1),(6); PDF 90–91; s.63; PDF 92; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
 | law 21; selected Income Tax Amendment 2019 s.2(2)(c)–(d), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf | 2026-11-01 |
 | law 32-34; selected Income Tax Amendment 2021 s.2(e), PDF 2 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf | 2026-11-01 |
 | law 38-39; selected Income Tax Amendment 2022 s.2(6)(b), PDF 2; Income Tax Amendment 2022 s.2(1), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf | 2026-11-01 |
