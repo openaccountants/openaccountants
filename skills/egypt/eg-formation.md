@@ -1,237 +1,190 @@
 ---
 name: eg-formation
 description: Use this skill whenever asked about how to register, form, or set up a business in Egypt as a self-employed person, freelancer, professional, sole proprietor, or small company. Trigger on phrases like "register a business Egypt", "tax card Egypt", "how to start a business Egypt", "sole proprietor Egypt", "freelance registration Egypt", "GAFI LLC Egypt", "commercial register Egypt", "open a tax file Egypt", "register with the ETA", "البطاقة الضريبية", "السجل التجاري", "تسجيل منشأة فردية", "فتح ملف ضريبي", "تأسيس شركة ذات مسؤولية محدودة", "نقابة مهنية", "التأمينات الاجتماعية للعمل الحر". Covers obtaining a tax card and tax file with the Egyptian Tax Authority (ETA), the commercial register, professional syndicate (نقابة) membership, choosing the simplified vs general regime at registration, VAT and e-invoicing registration, social insurance registration, and forming an LLC via GAFI. AI replies in the user's language (English or Arabic).
-version: 1.0
+version: 1.1
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
-category: international
+category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # EG Formation
 
-## Egypt — Business Formation & Registration for the Self-Employed
+**General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This skill walks a self-employed person in Egypt through **getting legally set up**: obtaining a **tax card** (البطاقة الضريبية) and opening a **tax file** (ملف ضريبي) with the **Egyptian Tax Authority — ETA** (مصلحة الضرائب المصرية), entering the **commercial register** (السجل التجاري) where required, joining a **professional syndicate** (نقابة) for regulated professions, choosing a tax regime at the point of registration, registering for **VAT** and **e-invoicing**, registering for **social insurance** (التأمينات الاجتماعية), and — if it makes sense — forming a **limited liability company** (شركة ذات مسؤولية محدودة) through **GAFI** (الهيئة العامة للاستثمار).
+Tax year 2026, law as read on 1 November 2026. Reply in the user's language (English or Arabic) and keep the native terms: البطاقة الضريبية (tax card), السجل التجاري (commercial register), منشأة فردية (sole proprietorship), نقابة (professional syndicate), الهيئة العامة للاستثمار (GAFI).
 
-> Respond in the user's language. If the user writes in Arabic, reply in Arabic and keep the native legal terms (e.g. البطاقة الضريبية = tax card, السجل التجاري = commercial register, منشأة فردية = sole proprietorship / individual establishment, نقابة = professional syndicate, الهيئة العامة للاستثمار = GAFI).
+## Scope
 
-## 1. Quick Reference
+This skill sets up a self-employed person in Egypt: tax card (البطاقة الضريبية) and tax file (ملف ضريبي) with the Egyptian Tax Authority (ETA), commercial register where the activity needs it, syndicate membership for regulated professions, regime choice, then VAT, e-invoicing and social insurance. It also outlines forming a limited liability company (شركة ذات مسؤولية محدودة) through GAFI.
 
-**Quick Reference table**
+Authorities: ETA (tax card, tax file, VAT, e-invoicing), GAFI (companies), the commercial register, NOSI (الهيئة القومية للتأمينات الاجتماعية), and the relevant syndicate. Currency: EGP. Laws: Income Tax Law No. 91 of 2005; Law No. 6 of 2025; VAT Law No. 67 of 2016; Social Insurance Law No. 148 of 2019; Law No. 152 of 2020 (MSME development).
 
-| Field | Value |
-| --- | --- |
-| Country | Egypt (EG) |
-| What this covers | Registering as a self-employed individual / sole proprietor and (briefly) forming an LLC |
-| Currency | EGP (Egyptian Pound) |
-| Authorities | **ETA** (Egyptian Tax Authority — tax card, tax file, VAT, e-invoicing); **GAFI** (companies / LLCs); **Commercial Register** (السجل التجاري / GAFI); **NOSI** (National Organisation for Social Insurance — التأمينات الاجتماعية); relevant **professional syndicate** (نقابة) |
-| Tax card | البطاقة الضريبية — mandatory ETA tax identification document |
-| Income tax law (general) | Income Tax Law **No. 91 of 2005** (as amended) |
-| Simplified regime | **Law No. 6 of 2025** turnover-based system for turnover ≤ **EGP 20,000,000** (see `eg-sme-tax`) |
-| VAT law | VAT Law **No. 67 of 2016** (as amended) — standard rate **14%** |
-| VAT registration threshold | Historically **EGP 500,000** turnover; **lowered to EGP 250,000** effective **1 Jan 2026** per **Resolution No. 281 of 2025** — **verify current value with ETA** |
-| Social insurance | Law **No. 148 of 2019** — self-employed contribute (commonly cited) **~21%** of a chosen reference wage — **verify current rate/bands** |
-| Quality tier | **Research-verified — pending sign-off by an Egyptian accountant** |
-| Version | 1.0 |
+Owned elsewhere: VAT figures in `egypt-vat`; Law 6 mechanics in `eg-sme-tax`; contribution rates in `eg-social-insurance`; books in `eg-bookkeeping`; company accounts in `eg-financial-statements`.
 
-### Conservative defaults
+## Ask the client first
 
-- **Default to registering, not waiting.** Operating without a tax card / tax file is non-compliant. If income is at or near any threshold, assume registration is required and confirm with ETA.
-- **Default to the lower VAT threshold.** Treat **EGP 250,000** (effective 2026) as the trigger to register for VAT and e-invoicing, and flag "verify current value" — do not assume the old EGP 500,000 figure still applies.
-- **Default to "syndicate first" for regulated professions.** Lawyers, doctors, engineers, accountants and similar professions generally **cannot practise lawfully** without syndicate (نقابة) membership — treat it as a prerequisite, not optional.
-- **Default to sole proprietorship (منشأة فردية) for a solo freelancer** unless there is a specific reason for an LLC (see Section 5). Do not recommend an LLC by default.
-- **Never present a fee, threshold, rate, or procedure as final** without an Egyptian accountant's sign-off and a same-day check against ETA / GAFI portals. Fees and thresholds change frequently by decree.
+- What is the activity: trade or industry, craft, or a profession? Is it a regulated profession?
+- Is the client an Egyptian national? If not, what passport, residence permit and approvals are held?
+- What turnover is expected in the first year?
+- One owner, or partners and outside investors?
+- Does the client need to issue invoices before licensing is finished?
+- Do 90% or more of expected consultancy fees come from one or two clients?
 
-## 2. Sole-proprietor registration step-by-step
+## The method, step by step
 
-A self-employed individual in Egypt typically operates as a **منشأة فردية** (individual establishment / sole proprietorship) or simply as a registered individual taxpayer / professional. There is **no separate legal entity** — the individual and the business are the same person, with unlimited personal liability.
+### Rates and thresholds
 
-### Step 1 — National ID and eligibility
+| Item | Amount | Tax year | Conditions | Official URL |
+|---|---|---|---|---|
+| Law 6 turnover tax, turnover under EGP 500,000 | 0.4% of turnover | 2026 | Business asked for Law 6; turnover not above EGP 20 million (Art. 10) | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
+| Law 6, EGP 500,000 to under EGP 2,000,000 | 0.5% | 2026 | same conditions | same |
+| Law 6, EGP 2,000,000 to under EGP 3,000,000 | 0.75% | 2026 | same conditions | same |
+| Law 6, EGP 3,000,000 to under EGP 10,000,000 | 1% | 2026 | same conditions | same |
+| Law 6, EGP 10,000,000 to EGP 20,000,000 | 1.5% | 2026 | same conditions | same |
 
-- **Eligibility requirements** — Egyptian nationals: a valid national ID (الرقم القومي), age 21+ and legal capacity. The national ID number is the backbone of the tax and registration records. Foreign nationals: valid passport, residence permit, and sometimes activity-specific approvals — escalate; foreigners are out of the simple default path. Verify current procedure.
+### Sole proprietor registration
 
-### Step 2 — Proof of place of activity
+A sole proprietor has no separate legal personality. The person and the business are one, with unlimited personal liability.
 
-- **Proof of place of activity** — A lease/rental contract (عقد إيجار) or ownership document for the business address. Many activities require a registered address even for home-based work. Verify whether the specific activity permits a residential address.
+1. **Identity.** Egyptian national: national ID (الرقم القومي). Foreign national: refer (see below).
+2. **Place of activity.** Lease (عقد إيجار) or ownership document for the business address.
+3. **Tax file and tax card.** Register at the competent tax office (المأمورية) for the address or through the ETA portal (eta.gov.eg, بوابة الممول). The tax card carries the tax registration number, needed to invoice and to register for VAT.
+4. **Temporary tax card, if set-up is unfinished.** Ask the ETA for a temporary tax card valid for eight months to finish founding and licensing the activity ([Law No. 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf), new Article 27 bis of the Unified Tax Procedures Law, in force from 29 July 2026). It cannot be used to issue e-receipts or e-invoices. Amounts due to the ETA in its life are payable from its expiry.
+5. **Commercial register or syndicate.** Commercial and industrial activity goes on the commercial register. Regulated professions join their syndicate first: lawyers (نقابة المحامين), doctors, dentists and pharmacists (their medical syndicates), engineers (نقابة المهندسين, Law No. 66 of 1974).
+6. **Regime.** Compare Law 6 and the normal basis (below). To join Law 6, file form 10/1 (طلبات) on the ETA website ([MoF Decision No. 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf), Article 1).
+7. **VAT.** Register once the threshold in `egypt-vat` is met. It is measured on turnover, not profit.
+8. **E-invoice or e-receipt.** Registration and onboarding are in `eg-bookkeeping`. A tax file does not by itself register anyone for these.
+9. **Social insurance.** Register with NOSI as self-employed at a chosen contribution wage; see `eg-social-insurance`. It is separate from income tax and VAT, and Law 6 does not replace it.
 
-### Step 3 — Open a tax file and obtain the tax card (البطاقة الضريبية)
+Books start on day one: regular books under Article 38, or the simplified set in Law 6 (`eg-bookkeeping`). The first return filed counts as notice of starting the activity ([Law No. 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf), Article 31).
 
-- **Tax file and tax card procedure** — Register with the ETA to open a tax file (ملف ضريبي) at the competent tax office (المأمورية) for the business address, or via the ETA e-services portal (eservice.incometax.gov.eg / eta.gov.eg). Verify which steps can be done fully online vs in person. Typical documents: national ID copy, proof of address (lease), and a description of the activity. Verify the current document checklist with the local tax office. ETA issues the tax card (البطاقة الضريبية) — the tax identification document carrying the Tax ID Number (TIN). This is mandatory and is required to invoice clients, contract with companies/government, and register for VAT.
+### Regime choice at registration
 
-### Step 4 — Commercial register (السجل التجاري) — for commercial/industrial activity
+| Factor | Law 6 of 2025 | Normal basis, Law 91 of 2005 |
+|---|---|---|
+| Turnover | Up to EGP 20,000,000 | Any; required above the cap |
+| Margin | High margin favours a tax on turnover | Thin margin or a loss favours a tax on profit |
+| Records | Simplified set | Regular books under Commercial Law |
+| Large documented costs | No benefit | Lower the tax |
+| Commitment | No exit for five years | Year to year |
 
-- **Commercial register requirement** — The commercial register is required for commercial and industrial activities (e.g. trading, retail, manufacturing, most goods-based businesses). Pure liberal/professional activities (المهن الحرة) — e.g. a lawyer, doctor, engineer, accountant practising their profession — are generally registered via their syndicate and may not require a commercial register entry. Verify per activity — the line between "commercial" and "professional" determines which register applies. Commercial register entry for a sole proprietorship is administered via the commercial registry office / GAFI. Fees reported as nominal (e.g. an entry fee in the low tens of EGP, a small annual subscription scaled to declared capital, a name-reservation fee, and a certificate fee) — all amounts must be verified, as they change and vary by office.
+Enrolment is not automatic. Model both before filing form 10/1.
 
-### Step 5 — Professional syndicate (نقابة) — for regulated professions
+### Sole proprietor or company
 
-- **Syndicate membership requirements by profession** — For regulated professions, syndicate membership is a legal precondition to practise: Lawyers → Bar Association (نقابة المحامين). Doctors / dentists / pharmacists → respective medical syndicates. Engineers → Engineers Syndicate (نقابة المهندسين) — regulated under Law No. 66 of 1974. Accountants / auditors → Syndicate of Commercial Professions / registration with the Ministry of Finance accountants & auditors register and the relevant society (e.g. ESAA). Verify the exact body and registration path for public accounting practice. Membership usually requires the relevant degree, fees, and sometimes training. Verify current requirements and fees with the specific syndicate.  _(Law No. 66 of 1974 (Engineers Syndicate))_
+| Factor | Sole proprietor | LLC through GAFI |
+|---|---|---|
+| Legal personality | None | Separate entity |
+| Liability | Unlimited personal | Limited to capital contributed |
+| Set-up | ETA, plus register or syndicate | GAFI electronic incorporation service |
+| Income tax | Personal income tax or Law 6 | Corporate tax; Law 6 by its own conditions |
+| Accounts | `eg-bookkeeping` | `eg-financial-statements` |
 
-### Step 6 — Choose the tax regime (see Section 3) and register for VAT / e-invoicing / social insurance (see Section 4)
+Choose an LLC for limited liability, partners or investors, or clients who require a company. Otherwise a solo freelancer starts as a sole proprietor.
 
-- **Order of operations** — At or around the time of opening the tax file, decide between the simplified turnover-based regime (Law No. 6 of 2025) and the general system, then complete VAT, e-invoicing, and social insurance registrations as applicable. > **Order of operations (typical):** national ID → proof of address → ETA tax file + tax card → (commercial register **or** syndicate, per activity) → regime choice → VAT / e-invoicing if over threshold → social insurance. **Verify the exact sequence**, as some offices require the commercial register or syndicate card before issuing the tax card for certain activities.
+### Forming an LLC through GAFI
 
-## 3. Choosing the regime at registration (simplified vs general)
+GAFI lists these digital services: electronic incorporation, certificate of non-confusion for the company name, digital submission of required documents, and approved investor representatives ([GAFI Digital Services](https://gafi.gov.eg/en/contenttemplate/b208989f-efbc-486f-9f92-761ac716007f)). "Register Your Company" on the GAFI site starts the process.
 
-At registration the taxpayer is, in effect, choosing how their income tax will be computed. The integrated simplified regime under Law No. 6 of 2025 taxes a flat percentage of turnover (رقم الأعمال), while the general system (Income Tax Law No. 91 of 2005) taxes net profit under progressive brackets.
+1. Get the certificate of non-confusion for the name.
+2. Submit the incorporation application and documents digitally.
+3. After incorporation, complete the commercial register entry and company tax card.
+4. Register for VAT, e-invoicing and social insurance as they apply.
 
-> Full simplified-regime mechanics, band rates, eligibility, exclusions, and the 5-year lock-in live in **`eg-sme-tax`**. Use this section only for the **registration-time decision**.
+### Closing down
 
-### Decision table
+Tell the ETA and close the tax file, file final returns and settle income tax and VAT. Cancel the commercial register entry or syndicate membership and stop contributions with NOSI. An LLC follows liquidation.
 
-**Decision table — Simplified vs General**
+## Boundary and exception table
 
-| Factor | Lean **Simplified** (Law 6/2025) | Lean **General** (Law 91/2005) |
-| --- | --- | --- |
-| Annual turnover | ≤ **EGP 20,000,000** (eligibility cap) | Any; required if over the cap |
-| Profit margin | **High margin** — turnover tax (0.4%–1.5% of turnover) beats profit tax | **Thin margin / loss-making** — % of turnover can exceed tax on small/zero profit |
-| Bookkeeping appetite | Wants **simpler** filing & quarterly VAT | Can maintain **full accounts** and substantiate expenses |
-| Deductible expenses | Few real, documentable expenses | **Large documentable expenses** that lower net profit |
-| Stability | Comfortable with a **5-year commitment** | Wants flexibility year to year |
-| Activity status | Eligible activity (not excluded/regulated-out) | Excluded from the simplified regime |
+| Situation | Rule | Source |
+|---|---|---|
+| Needs to invoice while on a temporary card | Permanent card and system registration first | [Law 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf) Art. 2 |
+| Exactly EGP 20,000,000 turnover | Still inside Law 6 ("does not exceed") | [Law 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf) Art. 10 |
+| Consultant, 90% or more from one or two clients | Excluded from Law 6 | [Law 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf) Art. 4 |
+| Splitting a business to stay under a cap | Improper entry to Law 6 | [Law 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf) Art. 4 |
+| Leaving Law 6 | Form 1/11, after at least five years from the day after the request | [MoF 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf) Art. 1 |
 
-### Rule of thumb
+## Worked cases
 
-**Rule of thumb:** a low-cost solo freelancer with a high margin usually pays **less under the simplified turnover regime**; a low-margin reseller or a business with heavy documentable costs may pay **less under the general system**. **Model both** and get accountant sign-off before electing — the simplified regime is a **5-year lock-in** and enrolment is **not automatic** (a request to ETA must be submitted and accepted). See `eg-sme-tax`.
+**Case 1: freelance designer, EGP 180,000 a year.** Tax file and card. No syndicate. Under EGP 500,000, so Law 6 tax would be 0.4%: EGP 720. VAT per `egypt-vat`. Register with NOSI.
 
-## 4. VAT, e-invoicing and social insurance registration
-
-These are **separate** from income tax and from the tax card — registering for a tax file does **not** by itself register a person for VAT, e-invoicing, or social insurance.
-
-### 4.1 VAT registration (VAT Law No. 67 of 2016)
-
-- **Standard VAT rate** — 14% percent (special/table rates apply to some goods/services — out of scope here)  _(VAT Law No. 67 of 2016)_
-- **VAT registration threshold** — Historically EGP 500,000 of annual taxable turnover; under Resolution No. 281 of 2025, lowered to EGP 250,000 effective 1 January 2026, with a registration deadline reported as 31 March 2026 for those who exceeded EGP 250,000 in 2025. Verify the current value and deadline with ETA before relying on it. EGP (⚠ verify current value and deadline with ETA)  _(Resolution No. 281 of 2025)_
-- **VAT threshold measurement and registration process** — The threshold is measured on gross revenue (turnover), not profit. Register via the ETA portal once turnover crosses (or is expected to cross) the threshold. Voluntary registration below the threshold may be possible — verify. Within the simplified regime, VAT returns are filed quarterly (vs monthly in the general system). See `eg-sme-tax`.
-
-### 4.2 E-invoicing / e-receipt registration (ETA portal)
-
-- **E-invoicing/e-receipt system and obligations** — Egypt operates a mandatory electronic invoicing (الفاتورة الإلكترونية) and electronic receipt (الإيصال الإلكتروني) system on the ETA platform. Resolution No. 281 of 2025 is reported to expand e-invoicing/e-receipt obligations to smaller businesses in step with the lowered EGP 250,000 threshold, with B2C e-receipt obligations expanding through 2025–2026. Verify the exact phase-in dates and who is in scope. Registration requires an ETA portal account and (typically) a digital signature / e-seal and onboarding of an invoicing solution. Verify the current technical onboarding steps. Penalties for non-registration/non-compliance are significant — sources cite fixed fines plus daily penalties and, ultimately, loss of the ability to issue valid invoices. Verify current penalty figures with ETA.  _(Resolution No. 281 of 2025)_
-
-### 4.3 Social insurance registration (التأمينات الاجتماعية — Law No. 148 of 2019)
-
-- **Social insurance registration for self-employed** — Law No. 148 of 2019 extended social insurance to the self-employed (أصحاب الأعمال / المهن الحرة), sole-proprietor owners, freelancers of specified trades, craftsmen, merchants, and others. Register with the National Organisation for Social Insurance (NOSI / الهيئة القومية للتأمينات الاجتماعية). Self-employed contributions are commonly cited at ~21% of a chosen contribution (reference) wage, selected from a statutory reference table, between a minimum and maximum contribution wage that is uplifted annually. Verify the current rate, the reference-wage table, and the min/max caps — these change each January. This is separate from income tax and VAT and is not covered by the simplified turnover tax. See `eg-social-insurance` for the detailed computation.  _(Law No. 148 of 2019)_
-
-## 5. Sole proprietor vs LLC comparison
-
-Most solo freelancers should default to a sole proprietorship (منشأة فردية). An LLC (شركة ذات مسؤولية محدودة) formed through GAFI adds cost and compliance but provides limited liability and a separate legal personality.
-
-**Sole proprietor vs LLC comparison table**
-
-| Factor | Sole proprietor (منشأة فردية) | LLC (ش.ذ.م.م) via GAFI |
-| --- | --- | --- |
-| Legal personality | None — same as the individual | Separate legal entity |
-| Liability | **Unlimited personal** liability | **Limited** to capital contributed |
-| Owners | One individual | One+ (single-member LLC is possible — **verify**) |
-| Set-up authority | ETA + commercial register / syndicate | **GAFI** (الهيئة العامة للاستثمار) |
-| Minimum capital | N/A | **No statutory minimum** reported (verify) |
-| Set-up cost | Low (nominal register fees) | Higher — GAFI incorporation fees, notarisation, bank account, lawyer/accountant |
-| Compliance | Lighter; can use simplified regime | Heavier; audited accounts, corporate filings |
-| Income tax | Personal income tax (general) or simplified turnover regime | Corporate income tax (the SME turnover regime may apply if eligible — **verify**) |
-| Best for | Solo freelancers, professionals, small traders | Businesses wanting liability protection, partners/investors, larger contracts, scaling |
-
-### When an LLC makes sense
-
-- You want **limited liability** (e.g. higher-risk contracts, debt exposure).
-- You have or plan **partners or outside investors**.
-- **Clients/tenders require** a company rather than an individual.
-- You are **scaling** beyond a one-person practice.
-
-### Forming an LLC via GAFI (overview only)
-
-- **LLC formation steps via GAFI** — 1. Create an account on the GAFI e-portal and reserve a company name. 2. Submit the incorporation application with the articles of association, founders' IDs/passports, and required approvals; pay incorporation fees. 3. Obtain the commercial register entry and the company tax card / tax file from ETA. 4. Register for VAT/e-invoicing (if applicable) and social insurance for the company and any employees. > Incorporation fees are reported in the **low hundreds of USD** range depending on entity type, plus professional fees. **Verify all current GAFI fees, capital rules, and the document checklist** — these change. Forming an LLC should be done with a credentialed Egyptian lawyer/accountant.
-
-## 6. Worked examples
-
-> All figures illustrative. Verify current thresholds, fees, rates, and procedures before relying on any output.
-
-### Example 1 — Freelance graphic designer, EGP 180,000/year, solo
-
-- **Path:** Register an individual tax file + obtain the **tax card** at ETA. Likely **no commercial register** (a service/professional activity) — **verify**. No syndicate (unregulated profession).
-- **VAT:** Turnover **below** the EGP 250,000 (2026) threshold → **no mandatory VAT registration** yet. Watch the threshold; e-invoicing may still be encouraged — **verify scope**.
-- **Income tax:** Eligible for the **simplified turnover regime**; high margin → likely cheapest. Compare with general system. See `eg-sme-tax`.
-- **Social insurance:** Should register with **NOSI** as self-employed at a chosen reference wage — **verify rate/bands**.
-
-### Example 2 — Software developer/contractor, EGP 900,000/year, one big client
-
-- **Path:** Tax file + **tax card**. Service activity — check commercial register vs professional treatment. No syndicate.
-- **VAT:** **Above** EGP 250,000 → **must register for VAT (14%)** and for **e-invoicing** on the ETA portal; verify the 31 Mar 2026 deadline if 2025 turnover exceeded the threshold.
-- **Income tax:** Eligible for simplified regime (≤ EGP 20m). **Flag client concentration** — single-client dependence can raise exclusion/abuse questions in the simplified regime; escalate to `eg-sme-tax`.
-- **Social insurance:** Register with NOSI; choose reference wage.
-
-### Example 3 — Licensed engineer starting a consultancy
-
-- **Path:** **Engineers Syndicate (نقابة المهندسين) membership is a precondition to practise** (Law No. 66 of 1974). Then ETA tax file + **tax card**. Professional activity → likely registered via syndicate rather than the commercial register — **verify**.
-- **VAT / e-invoicing / social insurance:** as per thresholds in Section 4.
-- **Regime:** Compare simplified vs general; engineering services are typically high margin. Confirm the activity is **not excluded** from the simplified regime.
-
-### Example 4 — Two founders launching a product company, expecting investment
-
-- **Path:** Form an **LLC (ش.ذ.م.م) via GAFI** — limited liability, room for partners/investors, credibility for contracts. Reserve name → articles of association → incorporation → company tax card + commercial register → VAT / e-invoicing / social insurance.
-- **Why not sole proprietorship:** multiple owners and outside capital make a sole proprietorship unsuitable. Use a credentialed lawyer/accountant for incorporation.
-
-## 7. Tier 2, Reference, and checklist
-
-### Tier 2 — escalate to a credentialed Egyptian accountant/lawyer when
-
-- The activity may sit on the **commercial vs professional** line (which register/syndicate applies).
-- A **regulated profession** is involved (syndicate licensing nuances).
-- The taxpayer is a **foreign national** or has cross-border / free-zone / SEZ considerations.
-- Turnover is near the **VAT threshold** or the **EGP 20m** simplified-regime cap.
-- The taxpayer is **choosing between sole proprietorship and an LLC**, or forming an LLC at all.
-- There is **single-client concentration** or business **fragmentation** (simplified-regime exclusion risk — see `eg-sme-tax`).
-- **Prior-year non-registration**, back taxes, or penalty exposure exists.
-
-### Reference (verify each before relying on it)
-
-- **Income Tax Law No. 91 of 2005** (as amended) — general system.
-- **Law No. 6 of 2025** — integrated simplified turnover-based regime (≤ EGP 20m); see `eg-sme-tax`.
-- **Law No. 152 of 2020** — MSME Development Law (size definitions/incentives).
-- **VAT Law No. 67 of 2016** (as amended) — 14% rate; registration threshold (historically EGP 500,000; **EGP 250,000 from 1 Jan 2026 per Resolution No. 281 of 2025 — verify**).
-- **Resolution No. 281 of 2025** — lowered VAT/e-invoicing threshold and expanded e-receipt obligations — **verify scope, dates, and penalties**.
-- **Law No. 148 of 2019** — social insurance (incl. self-employed); see `eg-social-insurance`.
-- **GAFI** (gafi.gov.eg) — LLC incorporation, name reservation, fees, document lists.
-- **ETA** (eta.gov.eg; eservice.incometax.gov.eg) — tax file, tax card, VAT, e-invoicing portals.
-- Professional commentary used for this skill: EY, WTS, Andersen Egypt, Deel, and Egyptian law-firm alerts (2025–2026).
-
-### Registration checklist (verify each item before filing)
-
-- [ ] National ID (or passport + residence permit for foreigners).
-- [ ] Proof of business address (lease/ownership) — confirm activity allows it.
-- [ ] **ETA tax file opened** + **tax card (البطاقة الضريبية)** issued.
-- [ ] **Commercial register** entry (commercial/industrial activity) **or** confirm professional/syndicate path applies.
-- [ ] **Syndicate (نقابة) membership** secured (regulated professions).
-- [ ] **Regime chosen** — simplified (Law 6/2025) vs general — modelled and signed off.
-- [ ] **VAT registration** done if over the (verified) threshold.
-- [ ] **E-invoicing / e-receipt** onboarding done if in scope.
-- [ ] **Social insurance (NOSI)** registration done; reference wage chosen.
-- [ ] **(LLC only)** GAFI incorporation, articles of association, name reservation, company tax card, bank account.
-
-### Deregistration / closing down
-
-- **Deregistration process** — To stop activity, notify the ETA and close the tax file, settle any outstanding income tax / VAT and file final returns, cancel the commercial register entry and/or syndicate membership, and stop social insurance contributions with NOSI. For an LLC, follow the GAFI liquidation/strike-off procedure. Deregistering for VAT requires meeting ETA conditions. Verify the current step-by-step deregistration procedure and any clearance requirements — closing badly leaves dormant liabilities and penalties.
-
-## PROHIBITIONS
-
-- **Do NOT** tell anyone they can operate without a **tax card / tax file** — that is non-compliant.
-- **Do NOT** state the **VAT threshold** as EGP 500,000 without flagging the **EGP 250,000 (from 1 Jan 2026)** change and "verify current value" — do not present either figure as settled without an ETA check.
-- **Do NOT** quote any **fee, threshold, rate, penalty, or deadline** (commercial register fees, GAFI incorporation fees, social-insurance rate/bands, e-invoicing penalties) as final without same-day verification — flag with "verify current value/procedure".
-- **Do NOT** tell a member of a **regulated profession** they can practise without the relevant **syndicate (نقابة)** membership.
-- **Do NOT** assume an activity is "professional" vs "commercial" (and thus which register applies) — verify per activity.
-- **Do NOT** recommend an **LLC by default**; recommend a sole proprietorship for a solo freelancer unless there is a clear reason (Section 5).
-- **Do NOT** advise **splitting/fragmenting** a business to stay under a threshold (abuse risk).
-- **Do NOT** treat **foreign-national** registration as the simple default path — escalate.
-- **Do NOT** present any registration plan as final without **sign-off from a qualified Egyptian accountant/lawyer**.
+```oa-check
+name: Designer, Law 6 tax at EGP 180,000
+inputs:
+  turnover: 180000
+  rate: 0.004
+steps:
+  - tax: turnover * rate
+expected:
+  tax: 720.00
+```
+
+**Case 2: decision, Law 6 or normal basis for a developer, EGP 900,000 a year.** Law 6 tax at 0.5% is EGP 4,500. If tax on actual profit under `eg-income-tax` is EGP 60,000 (illustration), Law 6 saves EGP 55,500 a year, or EGP 277,500 over the five-year lock-in. If the developer has one client paying consultancy fees of 90% or more, Law 6 is closed and the question falls away. VAT and e-invoicing follow `egypt-vat` and `eg-bookkeeping`.
+
+```oa-check
+name: Decision, developer, five-year saving under Law 6
+inputs:
+  turnover: 900000
+  rate: 0.005
+  normal_tax: 60000
+  years: 5
+steps:
+  - law6_tax: turnover * rate
+  - saving: normal_tax - law6_tax
+  - five_year: saving * years
+expected:
+  law6_tax: 4500.00
+  five_year: 277500.00
+```
+
+**Case 3: licensed engineer.** Engineers Syndicate membership first, then tax file and card. Confirm the activity is not an excluded consultancy before choosing Law 6.
+
+**Case 4: two founders with investors.** LLC through GAFI: multiple owners and outside capital rule out a sole proprietorship.
+
+## When to refuse or refer
+
+Refer to a credentialed Egyptian accountant or lawyer when the activity sits between commercial and professional, a regulated profession raises licensing questions, the client is a foreign national or in a free zone or special economic zone, turnover is near a threshold, the client is choosing sole proprietor or LLC, there is single-client concentration or fragmentation, or there are unregistered prior years, back taxes or penalties.
+
+Never tell anyone they can operate without a tax card and tax file. Never tell a regulated professional they can practise without syndicate membership. Never advise splitting a business to stay under a threshold. Never recommend an LLC by default.
+
+## Filing and payment
+
+Annual return: individuals before 1 April; companies before 1 May or within four months of the financial year end ([Law No. 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf), Article 31).
+
+## Completion checklist
+
+- [ ] National ID (or passport and residence permit).
+- [ ] Proof of business address.
+- [ ] Tax file opened and tax card issued, or temporary card with its eight-month limit noted.
+- [ ] Commercial register entry or syndicate membership.
+- [ ] Regime modelled; form 10/1 filed if Law 6.
+- [ ] VAT, e-document and NOSI registrations done as they apply.
+- [ ] LLC only: name certificate, GAFI incorporation, company tax card, bank account.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law No. 150 of 2026 (Arts 1 to 3), gazette, rendered pages read | https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf | 2026-11-01 |
+| Correction notice for Laws 149, 150, 151 of 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
+| Unified Tax Procedures Law No. 206 of 2020, Arts 31, 38, 69 to 71, gazette text | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law No. 6 of 2025, Arts 7 to 10, 12, 13 | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
+| MoF Decision No. 420 of 2025, Arts 1 to 4 | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-01 |
+| GAFI Digital Services page, real browser | https://gafi.gov.eg/en/contenttemplate/b208989f-efbc-486f-9f92-761ac716007f | 2026-11-01 |
+
+Not yet confirmed: EGP 250,000 VAT threshold and 31 March 2026 deadline attributed to Resolution No. 281 of 2025 (`egypt-vat` carries EGP 500,000); age 21 and other eligibility rules; ETA document checklist and which steps are online; whether a residential address is allowed; commercial register and GAFI fees; "low hundreds of USD" incorporation fees; absence of minimum LLC capital; single-member LLC rule under Law 159 of 1981; GAFI step order and articles of association rules (the GAFI portal page failed to load on 2026-11-01); accountants' registration path (Ministry of Finance register, Syndicate of Commercial Professions, ESAA); the rule that a professional needs no commercial register entry; VAT voluntary registration; e-invoice penalty figures; deregistration clearances. Rates of 21% for the self-employed were not reread here; see `eg-social-insurance`.
 
 ## Disclaimer
 
-This skill is **research-verified** against the Egyptian Tax Authority (eta.gov.eg), GAFI (gafi.gov.eg), and reputable Egyptian and international tax/legal publications (EY, WTS, Andersen Egypt, Deel, and Egyptian law-firm alerts), current to **May 2026**. It is **not** a substitute for professional advice and has **not yet been signed off by a qualified Egyptian accountant**. Egyptian registration procedures, fees, the VAT rate/threshold (notably the EGP 500,000 → EGP 250,000 change for 2026), e-invoicing scope and penalties, social-insurance rates/bands, and GAFI rules are subject to change by decree. Always verify current figures and procedures with ETA, GAFI, the relevant commercial registry, the relevant syndicate (نقابة), and NOSI, and obtain sign-off from a credentialed Egyptian tax/legal professional before registering, filing, or relying on any output. Provided by **openaccountants.com** as open-source guidance, without warranty.
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
 
 <!-- openaccountants-cta-block -->
 
