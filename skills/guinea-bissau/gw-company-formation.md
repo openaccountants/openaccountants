@@ -40,6 +40,33 @@ The DCI-SMT instructions refer to the minimum treasury system of art. 13 of the 
 
 See [corporate tax](gw-corporate-income-tax.md), [VAT](gw-vat-gst.md) and [payroll](gw-payroll-social.md).
 
+## Worked checks
+
+A new company with no profit and forecast turnover of FCFA 80,000,000 still owes the 1% minimum tax: 800,000.
+
+```oa-check
+name: Minimum tax in a loss year
+inputs:
+  turnover: 80000000
+steps:
+  - ci: max(0, turnover * 0.01)
+expected:
+  ci: 800000
+```
+
+The same company charges IVA, as forecast turnover passes FCFA 40,000,000. A month of FCFA 6,000,000 sales with FCFA 300,000 input IVA: 1,140,000 less 300,000 = 840,000.
+
+```oa-check
+name: First IVA month
+inputs:
+  sales: 6000000
+  input_vat: 300000
+steps:
+  - due: sales * 0.19 - input_vat
+expected:
+  due: 840000
+```
+
 ## Sources
 
 | Source | URL | Read on |

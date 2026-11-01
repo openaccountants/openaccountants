@@ -41,6 +41,34 @@ Every taxpayer gets a número de identificação fiscal, used on all returns and
 | Self-employed return | 28 February |
 | Company return | April |
 
+## Worked checks
+
+Company with profit FCFA 10,000,000 and turnover FCFA 200,000,000: 25% is 2,500,000, the 1% minimum is 2,000,000, so 2,500,000 is due, plus 200,000 derrama.
+
+```oa-check
+name: Headline company tax
+inputs:
+  profit: 10000000
+  turnover: 200000000
+steps:
+  - ci: max(profit * 0.25, turnover * 0.01)
+  - total: ci + profit * 0.02
+expected:
+  total: 2700000
+```
+
+Price of FCFA 1,190,000 including 19% IVA: 1,190,000 / 119 x 100 = 1,000,000 before tax.
+
+```oa-check
+name: IVA out of an inclusive price
+inputs:
+  price: 1190000
+steps:
+  - base: price / 119 * 100
+expected:
+  base: 1000000
+```
+
 ## Sources
 
 | Source | URL | Read on |
