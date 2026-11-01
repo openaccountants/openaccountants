@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-01",
+  "status": "Writer checks only; independent review pending",
+  "candidate_files": {
+    "skills/sierra-leone/sl-transfer-pricing.md": "886693a27fb7b7d45890ca6e8246364ea9c2d31ff6535af3a19690d82b0b96ab",
+    "skills/sierra-leone/README.md": "d1f12157d0deaba548d5fbf2247c3b30439f7184067ebaa38dc3c9e6df12a00c"
+  },
+  "checks": {
+    "per_guide_shape": "15 checks pass",
+    "examples": "2 blocks, zero failures/missing",
+    "description_words": 115,
+    "strict_metadata_worktree": "1 new Guide, zero findings",
+    "old_files": "6 byte-identical hashes,69 exact old topic destinations",
+    "branch_diff_whitespace": "pass"
+  }
+}
