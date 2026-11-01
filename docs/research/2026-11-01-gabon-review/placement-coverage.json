@@ -1,0 +1,2571 @@
+[
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les bénéfices imposables sont les bénéfices réalisés par les entreprises exploitées ou sur les opérations réalisées au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "C-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les bénéfices imposables sont les bénéfices réalisés par les entreprises exploitées ou sur les opérations réalisées au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les bénéfices imposables sont les bénéfices réalisés par les entreprises exploitées ou sur les opérations réalisées au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-BASE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le bénéfice imposable est le bénéfice net déterminé",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-DEDUCT",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "être exposés dans l'intérêt direct de l'exploitation",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-INVOICE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "être appuyés de factures électroniques normalisées ou de documents en tenant lieu, admis par voie règlementaire.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-LOSS",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "jusqu’au cinquième exercice qui suit l’exercice déficitaire",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-YEAR",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "douze mois correspondant à l’exercice budgétaire, c’est-à-dire l’année civile",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-YEAR",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "douze mois correspondant à l’exercice budgétaire, c’est-à-dire l’année civile",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-RATE",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le taux est fixé à 30 %.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "arrondi au millier FCFA inférieur.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-RATE",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le taux est fixé à 30 %.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "arrondi au millier FCFA inférieur.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-SECTOR",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Ce taux est porté à 35 % pour les entreprises du secteur pétrolier et minier.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-SECTOR",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Ce taux est porté à 35 % pour les entreprises du secteur pétrolier et minier.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-RETURN",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "avant le 30 avril de l’année suivante",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-RETURN",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "avant le 30 avril de l’année suivante",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-INSTAL",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le premier est égal au quart, le deuxième au tiers",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "le 30 novembre et le 30 janvier.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "le 30 avril au plus tard.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-MIN",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "1 % à la base de référence",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "500.000 FCFA correspondant au minimum de perception.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "La base ainsi obtenue est arrondie au millier FCFA inférieur.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-MIN",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "1 % à la base de référence",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "500.000 FCFA correspondant au minimum de perception.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "La base ainsi obtenue est arrondie au millier FCFA inférieur.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-RELIEF",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "au titre des deux premiers exercices en cas de déficit",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "la durée d’exonération est de trois ans pour les PME/PMI",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au moins deux ans avant leur immatriculation.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-BOOKS",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "suivant le système comptable OHADA",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "C-BOOKS",
+    "sections": [
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "suivant le système comptable OHADA",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "ou y ayant séjourné au moins 183 jours dans l’année",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "une résidence habituelle au Gabon",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "pour leurs revenus ayant leur origine au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "I-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "ou y ayant séjourné au moins 183 jours dans l’année",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "une résidence habituelle au Gabon",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "pour leurs revenus ayant leur origine au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "I-SCOPE",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "ou y ayant séjourné au moins 183 jours dans l’année",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "une résidence habituelle au Gabon",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "pour leurs revenus ayant leur origine au Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-WORLD",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "sans qu’il y ait lieu de distinguer que ces revenus ont leur source au Gabon ou hors du Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "I-WORLD",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "sans qu’il y ait lieu de distinguer que ces revenus ont leur source au Gabon ou hors du Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "I-WORLD",
+    "sections": [
+      "Who this applies to",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "sans qu’il y ait lieu de distinguer que ces revenus ont leur source au Gabon ou hors du Gabon",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-HOUSE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "le contribuable peut demander des impositions distinctes pour ses enfants",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-ROUND",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "arrondi au millier de francs CFA inférieur",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-SHARES",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "célibataire, divorcé ou veuf sans enfant à charge : 1",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "marié sans enfant à charge, célibataire ou divorcé ayant un enfant à charge : 2",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans la limite de six enfants.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BANDS",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "11.000.001 FCFA et plus",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BASE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "après déduction des retenues de cotisations sociales obligatoires",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "I-BASE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "après déduction des retenues de cotisations sociales obligatoires",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-FEES",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les frais professionnels évalués forfaitairement à 20 %, mais limités à 10.000.000 FCFA",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "L’abattement forfaitaire de 20 % s’applique lorsque les revenus perçus ont été déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "les indemnités allouées aux parlementaires et aux Ministres.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "I-FEES",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les frais professionnels évalués forfaitairement à 20 %, mais limités à 10.000.000 FCFA",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "L’abattement forfaitaire de 20 % s’applique lorsque les revenus perçus ont été déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "les indemnités allouées aux parlementaires et aux Ministres.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-RETURN",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "avant le 1er mars de l’année",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "avant le 30 avril de l’année qui suit celle de la réalisation de ces revenus",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-MIN",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Les contribuables soumis à l’impôt synthétique libératoire sont exonérés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "taux de 1 %",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "à la somme de 500.000 FCFA",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au titre des deux premiers exercices en cas de déficit",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-RENT",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Il est perçu au taux de 5% du montant des loyers imposables.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-WITHHOLD",
+    "sections": [
+      "Deadlines and filing",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les quinze premiers jours du mois suivant",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "P-WITHHOLD",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les quinze premiers jours du mois suivant",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-TCS",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "La part de revenu inférieure ou égale à 150.000 FCFA par mois est exonérée",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "Le taux de la taxe complémentaire sur les traitements et salaires est fixé à 5 %.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans la limite annuelle et globale de 4.000.000 FCFA.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-CNSS",
+    "sections": [
+      "Who this applies to",
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Assurance vieillesse, invalidité et décès: 16%, soit 11% part employeur et 5% part travailleur.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "y compris les indemnités, primes et gratifications, commissions",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "à l'exclusion des remboursements de frais et des prestations sociales.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-START",
+    "sections": [
+      "Who this applies to",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Date d’effet : Depuis le 1er janvier 2026.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-HEALTH",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Cotisations patronales : 4,1%",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "Assiette des éléments imposables à l’Impôt sur le Revenu des Personnes Physiques (IRPP)",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-HEALTHFILE",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Déclaration Trimestrielle des Rémunérations",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-HOUSING",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le taux du prélèvement pour le Fonds National de l’Habitat est fixé à 3%.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "à l’exception de l’Etat",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans la limite du plafond fixé",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-CAR",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans la limite de 100.000 FCFA par mois.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-SCOPE",
+    "sections": [
+      "Who this applies to"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "si leur chiffre d’affaires hors taxes est supérieur ou égal à 60.000.000 FCFA.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "restent assujettis à la TVA sur une période de 2 ans.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "être une personne morale",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "V-SCOPE",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "si leur chiffre d’affaires hors taxes est supérieur ou égal à 60.000.000 FCFA.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "restent assujettis à la TVA sur une période de 2 ans.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "être une personne morale",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-NONRES",
+    "sections": [
+      "Who this applies to",
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "quel que soit leur chiffre d’affaires réalisé au Gabon.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "V-NONRES",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "quel que soit leur chiffre d’affaires réalisé au Gabon.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-BASE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "La base d’imposition est arrondie au millier de francs CFA inférieur.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-RATESLF",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Taux normal : 18%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-RATESLFR",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "fer à béton fabriqué au Gabon.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-EXEMPT",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "L’importation et la commercialisation des véhicules électriques.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-INPUT",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "ou tout document en tenant lieu admis par voie règlementaire.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "jusqu’au douzième mois",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "lorsque la taxe devient exigible chez le fournisseur.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au cours de l’exercice d’assujettissement.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-PRORATA",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Si le prorata est inférieur ou égal à 10%, aucune déduction n’est admise",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "s’il est supérieur à 90%, l’intégralité du droit à déduction peut être exercée.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "supérieur à 10% et inférieur à 90%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-FILE",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "au plus tard le 20 du mois suivant",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "V-FILE",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "au plus tard le 20 du mois suivant",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-RC",
+    "sections": [
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "doit être payée par la personne cliente pour le compte",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-DIGITAL",
+    "sections": [
+      "Deadlines and filing",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les vingt premiers jours suivant chaque trimestre",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne disposent pas du droit à déduction de la TVA",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "n’est pas susceptible de constituer un établissement stable",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au dernier jour du mois fiscal concerné",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "V-DIGITAL",
+    "sections": [
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les vingt premiers jours suivant chaque trimestre",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne disposent pas du droit à déduction de la TVA",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "n’est pas susceptible de constituer un établissement stable",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au dernier jour du mois fiscal concerné",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-CSS",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le taux de la CSS est de 1 %",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au plus tard le 20 de chaque mois",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "à l’exclusion de la TVA et de la CSS elle-même.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-WHT",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le taux de la retenue à la source est fixé à 25 %",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les quinze premiers jours du mois qui suit le paiement",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-DIV",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dont le taux est fixé à 20 %",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les trente jours qui suivent la mise en paiement",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au taux de 15 %.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "prélèvement libératoire au taux de 10 %",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-OCAM",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "A compter du 1er janvier 2026",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "X-OCAM",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "A compter du 1er janvier 2026",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Cross-border points"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-PE",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "supérieure à trois mois",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "plus de cent quatre-vingt-trois jours",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "période quelconque de douze mois.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-EXIT",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "au moins trente jours avant la date de départ",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "des deux premiers mois de l’année fiscale suivant celle du départ.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "X-GAIN",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "prélèvement libératoire de 25 %",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-ADJUST",
+    "sections": [
+      "Who this applies to",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "les bénéfices indirectement transférés",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-BENEFIT",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "L’intérêt général du groupe ne suffit pas à lui seul",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-START",
+    "sections": [
+      "Who this applies to",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Au début de chaque exercice fiscal",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-DOC",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le fichier local doit être finalisé et déposé",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans un délai de soixante jours",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans la langue officielle de la République Gabonaise.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-CBCR",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "491.967.750.000 FCFA.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les douze mois de la clôture de l’exercice fiscal",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "au plus tard le dernier jour de l’exercice fiscal imposable.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-EXTRA",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "y compris le bilan et le compte de résultat.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-PEN",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "avec un minimum de 65.000.000 FCFA par exercice fiscal.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "à 5 % du montant global des échanges intragroupes",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-CBCRPEN",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "plafonné à 100.000.000 FCFA par exercice fiscal.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "0,5 ‰ (0,5 pour mille)",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-FORMS",
+    "sections": [
+      "Who this applies to",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "La société à responsabilité limitée est une société",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Who this applies to",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-SARL",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Sauf dispositions nationales contraires, le capital social doit être",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "de la moitié au moins de leur valeur nominale.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "deux (2) ans à compter de l'immatriculation",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-SA",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dix millions (10.000.000) de francs CFA.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "d'un quart au moins de leur valeur nominale.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "trois (3) ans à compter de l'immatriculation",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-SAS",
+    "sections": [
+      "Rates, bands and thresholds",
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le montant du capital social ainsi que celui du nominal des actions est fixé par les statuts.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-OFFICE",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Le siège social ne peut pas être constitué uniquement par une domiciliation à une boite postale.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-DEPOSIT",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "ou en l'étude d'un notaire.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-RCCM",
+    "sections": [
+      "The base"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "à compter de son immatriculation au registre du commerce et du",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "The base"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-ANPI",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Soumission du dossier sur GNI",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-TAX",
+    "sections": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les quarante-cinq jours qui suivent le début de ses activités.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds",
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "F-TAX",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "dans les quarante-cinq jours qui suivent le début de ses activités.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "F-UBO",
+    "sections": [
+      "Deadlines and filing"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "l’identité du détenteur ultime des parts ou actions sociales",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Deadlines and filing"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "G-DELAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "5 % des droits déclarés.",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "10 % des droits déclarés",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "dans les sept jours suivant la mise en demeure",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "G-INTEREST",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "intérêt de retard de 1,5 % par mois, plafonné à 50 %",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-cross-border",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-company-formation",
+    "rule_id": "G-PAY",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "G-PAY",
+    "sections": [
+      "Penalties and interest"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "une pénalité de 10% et de l’intérêt de retard prévu à l’article P-996",
+        "present_in_independent_extraction": true
+      },
+      {
+        "quote": "ne s’appliquent pas lorsque le contribuable est passible de la pénalité pour défaut ou retard de déclaration",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Penalties and interest"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND1",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 0 à 1.500.000 FCFA 0",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND2",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 1.500.001 à 1.920.000 FCFA 5 % x Q - 75.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND3",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 1.920.001 à 2.700.000 FCFA 10 % x Q - 171.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND4",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 2.700.001 à 3.600.000 FCFA 15 % x Q - 306.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND5",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 3.600.001 à 5.160.000 FCFA 20 % x Q - 486.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND6",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 5.160.001 à 7.500.000 FCFA 25 % x Q - 744.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND7",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "De 7.500.001 à 11.000.000 FCFA 30 % x Q - 1.119.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-income-tax",
+    "rule_id": "I-BAND8",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "11.000.001 FCFA et plus 35 % x Q - 1.669.000",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-CNSSFAM",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Prestations familiales et prestations de maternité : 5%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-CNSSACC",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Accident de travail et maladies professionnelles : 2%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-CNSSCAP",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "1.500.000 francs CFA par mois.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-HEALTHCAP",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "2 500 000 FCFA.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-payroll-social",
+    "rule_id": "P-HEALTHWORK",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Cotisations salariales : 2%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-transfer-pricing",
+    "rule_id": "T-CBCRRATE",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "0,5 ‰ (0,5 pour mille)",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-corporate-income-tax",
+    "rule_id": "C-FLOOR",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "500.000 FCFA correspondant au minimum de perception.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-tax-overview",
+    "rule_id": "C-FLOOR",
+    "sections": [
+      "The base / Rates, bands and thresholds (supporting evidence for the linked article)"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "500.000 FCFA correspondant au minimum de perception.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": []
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-TEN",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Taux réduit : 10%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-FIVE",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Taux réduit : 5%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-THREE",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Taux réduit : 3%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-ZERO",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "Taux zéro : 0%",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-DOMCAP",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "60.000.000 FCFA.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-FORESTCAP",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "500.000.000 FCFA",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  },
+  {
+    "guide": "ga-vat-gst",
+    "rule_id": "V-CSSCAP",
+    "sections": [
+      "Rates, bands and thresholds"
+    ],
+    "ledger_block_present": true,
+    "quotes": [
+      {
+        "quote": "au moins à 30.000.000 FCFA.",
+        "present_in_independent_extraction": true
+      }
+    ],
+    "declared_sections_present": [
+      "Rates, bands and thresholds"
+    ]
+  }
+]

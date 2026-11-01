@@ -7,14 +7,14 @@ category: payroll
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Gabon payroll and social contributions v0.1
+# Gabon payroll and social contributions v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -42,7 +42,7 @@ Employers paying taxable salary and employees within the relevant private-sector
 
 Keep separate reconciliations for cash salary, benefits in kind, expense reimbursements, exempt allowances, CNSS remuneration, CNAMGS base and article 92 salary base. The pension branch is not computed on uncapped gross pay. Do not reuse the old combined employer or employee totals. [Decree0487/PR/MASI arts2-4](https://journal-officiel.ga/22255-0487-pr-masi-/) (ledger P-CNSS); [CNAMGS employer page, assessment and private-sector rates](https://cnamgs.ga/payement-des-cotisations-employeurs/) (ledger P-HEALTH).
 
-For salary IRPP, follow the [income-tax](ga-income-tax.md) annual household rules after establishing article 92 mandatory deductions and article 94 professional expenses. Calculate TCS on its own statutory net base, then account for its deductibility under article 351; do not calculate every levy from the same gross salary. [CGI art92](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-BASE); [CGI art94](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-FEES); [CGI arts346-351](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger P-TCS). July limits the car-allowance exemption to qualifying own-vehicle professional use, without an employer-provided or maintained vehicle. [LFR002/2026 art4, CGI art91bis](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger P-CAR).
+For salary IRPP, follow the [income-tax](ga-income-tax.md) annual household rules after establishing article 92 mandatory deductions and article 94 professional expenses. Calculate TCS on its own statutory net base, then account for its deductibility under article 351; do not calculate every levy from the same gross salary. [CGI art92](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-BASE); [CGI art94](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger I-FEES); [CGI arts346-351](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger P-TCS). July limits the car-allowance exemption to qualifying own-vehicle professional use, without an employer-provided or maintained vehicle. The adjacent baseline article91bis prohibits combining car/maintenance and displacement allowances. [CGI art91bis](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger P-CAR). The full current-law and precise July-commencement holds remain. [LFR002/2026 art4, CGI art91bis](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger P-CAR).
 
 ## Deadlines and filing
 

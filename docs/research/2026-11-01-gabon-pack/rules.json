@@ -352,7 +352,7 @@
     "source": "CGI",
     "act_article": "CGI art170",
     "exact_original_language_quote": "célibataire, divorcé ou veuf sans enfant à charge : 1",
-    "rule": "Ordinary single/no dependants1share, married/no child2; married1child2.5,2children3,3children3.5, then0.5 per child up to6; extra shares and dependent rules in171-173 must be checked.",
+    "rule": "Ordinary single/no dependants1share, married/no child2; married1child2.5,2children3,3children3.5, then0.5 per child up to six children; extra shares and dependent rules in171-173 must be checked.",
     "read_on": "2026-11-01",
     "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
     "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
@@ -540,7 +540,7 @@
     "source": "CNSS",
     "act_article": "Decree0487/PR/MASI arts2-4",
     "exact_original_language_quote": "Assurance vieillesse, invalidité et décès: 16%, soit 11% part employeur et 5% part travailleur.",
-    "rule": "CNSS family/maternity5%, occupational2%, pension16%(11%employer5%worker); employer total18%, worker5%; remuneration incl benefits excludes expenses/social benefits; XAF1500000monthly cap.",
+    "rule": "CNSS family/maternity5%, occupational2%, pension16%(11%employer5%worker); aggregate employer allocation unresolved; no total certified; remuneration incl benefits excludes expenses/social benefits; XAF1500000monthly cap.",
     "read_on": "2026-11-01",
     "official_url": "https://journal-officiel.ga/22255-0487-pr-masi-/",
     "source_sha256": "95b41f5246eb0fab6bbcd817299f0fbcee1fe5189f908596262ba49d91d2ec13",
@@ -640,7 +640,7 @@
     "source": "LFR",
     "act_article": "LFR002/2026 art4, CGI art91bis",
     "exact_original_language_quote": "dans la limite de 100.000 FCFA par mois.",
-    "rule": "Car allowance exemption up toXAF100000monthly only own vehicle used professionally and no employer-provided/maintained vehicle; precise midyear application hold.",
+    "rule": "Car allowance exemption up toXAF100000monthly only own vehicle used professionally and no employer-provided/maintained vehicle; precise midyear application hold. The car/maintenance allowance and displacement allowance cannot be combined under adjacent baseline art91bis; currentness and July commencement remain held.",
     "read_on": "2026-11-01",
     "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
     "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
@@ -650,7 +650,18 @@
       "ga-payroll-social": [
         "The base"
       ]
-    }
+    },
+    "supporting_sources": [
+      {
+        "act_article": "CGI91bis",
+        "pdf_page_1_based": 40,
+        "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+        "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+        "exact_original_language_quote": "L’indemnité de voiture ou d’entretien de véhicule et l’indemnité de déplacement ne sont pas cumulables.",
+        "read_on": "2026-11-01",
+        "actual_read_scope": "Read full adjacent article and conditions on actual selectable PDF page; historical2025baseline only, full currentness not proved."
+      }
+    ]
   },
   {
     "id": "V-SCOPE",
@@ -792,7 +803,7 @@
     "source": "LFR",
     "act_article": "LFR002/2026 art4, CGI art227",
     "exact_original_language_quote": "Si le prorata est inférieur ou égal à 10%, aucune déduction n’est admise",
-    "rule": "July prorata <=10%no deduction; >90%full; strictly between10and90 actual ratio. Text leaves exact90% boundary unresolved; do not infer it.",
+    "rule": "Directly attribute inputs first under CGI226: exclusively taxable credit, exclusively non-creditable no credit, shared inputs only use prorata. July prorata <=10%no deduction; >90%full; strictly between10and90 actual ratio. Text leaves exact90% boundary unresolved; do not infer it.",
     "read_on": "2026-11-01",
     "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
     "source_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
@@ -806,7 +817,18 @@
       "ga-vat-gst": [
         "The base"
       ]
-    }
+    },
+    "supporting_sources": [
+      {
+        "act_article": "CGI226",
+        "pdf_page_1_based": 84,
+        "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+        "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+        "exact_original_language_quote": "seule la fraction de la taxe qui les a grevées est déductible par application d’un prorata",
+        "read_on": "2026-11-01",
+        "actual_read_scope": "Read full adjacent article and conditions on actual selectable PDF page; historical2025baseline only, full currentness not proved."
+      }
+    ]
   },
   {
     "id": "V-FILE",
@@ -1794,7 +1816,7 @@
     "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
     "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
     "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
-    "pdf_page_1_based": 53,
+    "pdf_page_1_based": 73,
     "guide_sections": {
       "ga-vat-gst": [
         "Rates, bands and thresholds"
@@ -1811,7 +1833,7 @@
     "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
     "source_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
     "read_scope": "Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.",
-    "pdf_page_1_based": 69,
+    "pdf_page_1_based": 73,
     "guide_sections": {
       "ga-vat-gst": [
         "Rates, bands and thresholds"

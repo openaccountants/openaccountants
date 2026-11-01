@@ -61,7 +61,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 ## P-CNSS
 
 - Guide sections: Who this applies to; Rates, bands and thresholds; The base.
-- Rule: CNSS family/maternity5%, occupational2%, pension16%(11%employer5%worker); employer total18%, worker5%; remuneration incl benefits excludes expenses/social benefits; XAF1500000monthly cap.
+- Rule: CNSS family/maternity5%, occupational2%, pension16%(11%employer5%worker); aggregate employer allocation unresolved; no total certified; remuneration incl benefits excludes expenses/social benefits; XAF1500000monthly cap.
 - Act/article: Decree0487/PR/MASI arts2-4
 - Official URL: https://journal-officiel.ga/22255-0487-pr-masi-/
 - Exact French quote: « Assurance vieillesse, invalidité et décès: 16%, soit 11% part employeur et 5% part travailleur. »
@@ -196,7 +196,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 ## P-CAR
 
 - Guide sections: The base.
-- Rule: Car allowance exemption up toXAF100000monthly only own vehicle used professionally and no employer-provided/maintained vehicle; precise midyear application hold.
+- Rule: Car allowance exemption up toXAF100000monthly only own vehicle used professionally and no employer-provided/maintained vehicle; precise midyear application hold. The car/maintenance allowance and displacement allowance cannot be combined under adjacent baseline art91bis; currentness and July commencement remain held.
 - Act/article: LFR002/2026 art4, CGI art91bis
 - Official URL: https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf
 - Exact French quote: « dans la limite de 100.000 FCFA par mois. »
@@ -205,6 +205,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 - Source SHA-256: `85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941`.
 - PDF page (1-based, main quote): 3.
 - Currency: 2025 code and 2014 company-law rows remain historical baselines; enacted2026 texts do not establish the complete intervening and implementing chain.
+- Additional baseline condition: CGI91bis, PDF40; https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf; SHA256 `69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9`; read2026-11-01, exact quote « L’indemnité de voiture ou d’entretien de véhicule et l’indemnité de déplacement ne sont pas cumulables. ». Full later-law chain unresolved.
 
 ## G-DELAY
 

@@ -27,7 +27,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 - Read on: 2026-11-01.
 - Actual read scope: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.
 - Source SHA-256: `69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9`.
-- PDF page (1-based, main quote): 53.
+- PDF page (1-based, main quote): 73.
 - Currency: 2025 code and 2014 company-law rows remain historical baselines; enacted2026 texts do not establish the complete intervening and implementing chain.
 
 ## V-FORESTCAP
@@ -40,7 +40,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 - Read on: 2026-11-01.
 - Actual read scope: Read the cover amendment list and selected passages from arts 2-3, 4-7 (including PE thresholds and exceptions), 8-11 introduction and 11-IV, 12-28, 73-80, 90-96, 108-114, 162-178bis, 206-209, 211-224, 235-243ter, 346-351, P-816-819, P-826-832, P-996-1010ter and TFNC CSS arts 13-27. Exact read rules are the matched ledger quotes; this is not a claim that every paragraph across those ranges was read.
 - Source SHA-256: `69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9`.
-- PDF page (1-based, main quote): 69.
+- PDF page (1-based, main quote): 73.
 - Currency: 2025 code and 2014 company-law rows remain historical baselines; enacted2026 texts do not establish the complete intervening and implementing chain.
 
 ## V-NONRES
@@ -179,7 +179,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 ## V-PRORATA
 
 - Guide sections: The base.
-- Rule: July prorata <=10%no deduction; >90%full; strictly between10and90 actual ratio. Text leaves exact90% boundary unresolved; do not infer it.
+- Rule: Directly attribute inputs first under CGI226: exclusively taxable credit, exclusively non-creditable no credit, shared inputs only use prorata. July prorata <=10%no deduction; >90%full; strictly between10and90 actual ratio. Text leaves exact90% boundary unresolved; do not infer it.
 - Act/article: LFR002/2026 art4, CGI art227
 - Official URL: https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf
 - Exact French quote: « Si le prorata est inférieur ou égal à 10%, aucune déduction n’est admise »
@@ -190,6 +190,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 - Source SHA-256: `85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941`.
 - PDF page (1-based, main quote): 7.
 - Currency: 2025 code and 2014 company-law rows remain historical baselines; enacted2026 texts do not establish the complete intervening and implementing chain.
+- Additional baseline condition: CGI226, PDF84; https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf; SHA256 `69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9`; read2026-11-01, exact quote « seule la fraction de la taxe qui les a grevées est déductible par application d’un prorata ». Full later-law chain unresolved.
 
 ## V-FILE
 

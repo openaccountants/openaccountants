@@ -59,7 +59,7 @@ Writer research draft, 2026-11-01. No independent review or accountant attestati
 ## I-SHARES
 
 - Guide sections: Rates, bands and thresholds; The base.
-- Rule: Ordinary single/no dependants1share, married/no child2; married1child2.5,2children3,3children3.5, then0.5 per child up to6; extra shares and dependent rules in171-173 must be checked.
+- Rule: Ordinary single/no dependants1share, married/no child2; married1child2.5,2children3,3children3.5, then0.5 per child up to six children; extra shares and dependent rules in171-173 must be checked.
 - Act/article: CGI art170
 - Official URL: https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf
 - Exact French quote: « célibataire, divorcé ou veuf sans enfant à charge : 1 »

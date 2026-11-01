@@ -7,14 +7,14 @@ category: international
 tax_year: 2026
 tax_year_notes: "2026 research draft; CGI 2025 baseline plus enacted finance laws read; currency and commencement holds remain"
 last_updated: 2026-11-01
-version: 0.1
+version: 0.2
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 tier: 2
 ---
 
-# Gabon VAT and turnover taxes v0.1
+# Gabon VAT and turnover taxes v0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
@@ -43,7 +43,7 @@ Independent economic activity under articles 207-209, including sales, imports a
 
 Use the supply, invoice, payment, import and place-of-use evidence. Sales are generally exigible on delivery; services on collection with debit-authorisation exceptions. Consideration excludes VAT and CSS; the statutory taxable base is rounded down to 1,000. [CGI arts212-220](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger V-BASE). July moves specified goods to exemption, including natural mineral water produced in Gabon and electric vehicles. A zero-rate label is not a substitute for exemption classification. The July text also says parts of the earlier lists remain unchanged. Do not decide an omitted product merely from these selected examples. [LFR002/2026 art4, CGI art210](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-EXEMPT); [LFR002/2026 art4, CGI art221](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-RATESLFR).
 
-Input tax needs normalized electronic-invoice or permitted substitute evidence and an actual right to deduct. July changes supplier-exigibility timing and inventory-entry conditions. Partial activities need the statutory ratio: no credit at or below 10%, full credit above 90%, actual ratio strictly between those values. The exact 90% boundary is not resolved by the quoted wording and remains on hold. [LFR002/2026 art4, CGI arts222-224](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-INPUT); [LFR002/2026 art4, CGI art227](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-PRORATA). CSS is separately assessed with its own exemptions, place and receipt rules; do not add it to the VAT base. [TFNC section7 CSS arts13-27](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger V-CSS).
+Input tax needs normalized electronic-invoice or permitted substitute evidence and an actual right to deduct. July changes supplier-exigibility timing and inventory-entry conditions. Directly attribute inputs under CGI article226 first: inputs exclusively serving deductible operations are deductible, those exclusively serving non-deductible operations are not, and only shared inputs use prorata. [CGI art226](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger V-PRORATA). For those shared inputs, apply the statutory ratio: no credit at or below10%, full credit above90%, actual ratio strictly between those values. The exact 90% boundary is not resolved by the quoted wording and remains on hold. [LFR002/2026 art4, CGI arts222-224](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-INPUT); [LFR002/2026 art4, CGI art227](https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf) (ledger V-PRORATA). CSS is separately assessed with its own exemptions, place and receipt rules; do not add it to the VAT base. [TFNC section7 CSS arts13-27](https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf) (ledger V-CSS).
 
 ## Deadlines and filing
 
