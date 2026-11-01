@@ -109,15 +109,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
-| Income Tax (Amendment) Act No. 10 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf | 2026-11-01 |
-| ZRA Payment Due Dates page; read: full text of the pages listed | https://www.zra.org.zm/payment-due-dates/ | 2026-11-01 |
-| ZRA Penalties page (penalty unit K0.30: stale against the 2026 leaflets); read: full text of the pages listed | https://www.zra.org.zm/penalties/ | 2026-11-01 |
-| ZRA Guide to Filing Tax Returns (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
-| ZRA leaflet Introduction to Income Tax (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-Income-Tax.pdf | 2026-11-01 |
-| ZRA Practice Notes 2023, section 48 tax rates (latest notes found); read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2023/02/Practice-Notes-2023.pdf | 2026-11-01 |
-| ZRA DTA rates table; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2023/09/DTA-Rates.pdf | 2026-11-01 |
-| ZRA Advance Income Tax on remittances leaflet (2026), first page; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
+| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act No. 10 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf | 2026-11-01 |
+| ZRA Payment Due Dates page; read for the figures cited | https://www.zra.org.zm/payment-due-dates/ | 2026-11-01 |
+| ZRA Penalties page (penalty unit K0.30: stale against the 2026 leaflets); read for the figures cited | https://www.zra.org.zm/penalties/ | 2026-11-01 |
+| ZRA Guide to Filing Tax Returns (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
+| ZRA leaflet Introduction to Income Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-Income-Tax.pdf | 2026-11-01 |
+| ZRA Practice Notes 2023, section 48 tax rates (latest notes found); read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/02/Practice-Notes-2023.pdf | 2026-11-01 |
+| ZRA DTA rates table; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/09/DTA-Rates.pdf | 2026-11-01 |
+| ZRA Advance Income Tax on remittances leaflet (2026), first page; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
 
 Not yet confirmed: the MAT regulations under s. 14A(6), and when MAT is paid; WHT on royalties and management fees (old file 15% and 20%); WHT on resident interest (old 15%); telecoms threshold (old file said higher rate above a threshold, 2023 note says a single 35%); old 15% agriculture rate (ZRA now says 10%); consolidated Income Tax Act not opened; whether 5% late payment still applies beside new s. 78(2A).
 

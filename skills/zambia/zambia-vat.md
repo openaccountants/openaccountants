@@ -128,13 +128,13 @@ Minimum input: a bank statement.
 
 | Source | URL | Read on |
 |---|---|---|
-| VAT (Amendment) Act No. 19 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2019%20of%202025%20The%20Value%20Added%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
-| ZRA leaflet Introduction to VAT (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf | 2026-11-01 |
-| ZRA leaflet Claiming Input Tax (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Claiming-input-tax.pdf | 2026-11-01 |
-| ZRA leaflet Reverse VAT (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Reverse-VAT.pdf | 2026-11-01 |
-| ZRA Guide to Filing Tax Returns (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
-| ZRA leaflet Post-Registration Requirements (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
-| ZRA Smart Invoice FAQs (2026), scope questions; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/08/Smart-Invoice-FAQs.pdf | 2026-11-01 |
+| VAT (Amendment) Act No. 19 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2019%20of%202025%20The%20Value%20Added%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
+| ZRA leaflet Introduction to VAT (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf | 2026-11-01 |
+| ZRA leaflet Claiming Input Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Claiming-input-tax.pdf | 2026-11-01 |
+| ZRA leaflet Reverse VAT (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Reverse-VAT.pdf | 2026-11-01 |
+| ZRA Guide to Filing Tax Returns (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
+| ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
+| ZRA Smart Invoice FAQs (2026), scope questions; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Smart-Invoice-FAQs.pdf | 2026-11-01 |
 
 Not yet confirmed: the VAT Act and the Exemption and Zero-Rating Orders themselves were not opened; ZRA leaflets stand in, so old claims that basic foodstuffs, agricultural inputs, medical equipment and domestic electricity are zero rated, and that financial, residential rental, public transport, postal and domestic water supplies are exempt, are unconfirmed; bad debt relief after 12 months; old blocked items club subscriptions and invoices without TPIN; refund after 4 months of excess credits; old box numbers 1 to 20 (replaced, only lines 8 to 11 read here); whether the K800,000 annual and K200,000 quarterly tests apply together; withholding VAT at 100% of VAT with a return credit, and the date of suspension; old filing penalty of 1,000 units; 5% a month late payment charge (the old file figure conflicts with the leaflet).
 

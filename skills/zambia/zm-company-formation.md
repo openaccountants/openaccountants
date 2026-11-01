@@ -89,11 +89,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Companies (Amendment) Act No. 23 of 2025, ss. on annual return; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2023%20of%202025%2C%20The%20Companies%20%28Amendment%29.pdf | 2026-11-01 |
-| ZRA Tax Information page, Turnover Tax and PAYE sections; read: full text of the pages listed | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
-| ZRA leaflet Turnover Tax (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Turnover-Tax.pdf | 2026-11-01 |
-| ZRA leaflet Post-Registration Requirements (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
-| ZRA step-by-step applications guide; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2023/09/STEP-BY-STEP-GUIDE-ON-THE-ZRA-DOMESTIC-TAXES-APPLICATIONS.pdf | 2026-11-01 |
+| Companies (Amendment) Act No. 23 of 2025, ss. on annual return; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2023%20of%202025%2C%20The%20Companies%20%28Amendment%29.pdf | 2026-11-01 |
+| ZRA Tax Information page, Turnover Tax and PAYE sections; read for the figures cited | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
+| ZRA leaflet Turnover Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Turnover-Tax.pdf | 2026-11-01 |
+| ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
+| ZRA step-by-step applications guide; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/09/STEP-BY-STEP-GUIDE-ON-THE-ZRA-DOMESTIC-TAXES-APPLICATIONS.pdf | 2026-11-01 |
 
 Not yet confirmed: shareholder cap of 50; PACRA timeline of 1 to 5 days; PACRA Act No. 4 of 2020 citation; all fees; share capital; company law text beyond the 2025 amendment.
 

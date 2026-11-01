@@ -101,15 +101,15 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
-| National Pension Scheme Act 2026, ss. 1, 18, 24; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2072%2C%20The%20National%20Pension%20Scheme%20Act%20%281%29.pdf | 2026-11-01 |
-| ZRA Tax Information page, Turnover Tax and PAYE sections; read: full text of the pages listed | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
-| ZRA Payment Due Dates page; read: full text of the pages listed | https://www.zra.org.zm/payment-due-dates/ | 2026-11-01 |
-| ZRA Penalties page (penalty unit K0.30: stale against the 2026 leaflets); read: full text of the pages listed | https://www.zra.org.zm/penalties/ | 2026-11-01 |
-| ZRA leaflet PAYE (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/PAYE.pdf | 2026-11-01 |
-| ZRA Guide to Filing Tax Returns (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
-| ZRA leaflet Post-Registration Requirements (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
-| ZRA leaflet Skills Development Levy (2023); read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2023/06/Skills-Development-Levy.pdf | 2026-11-01 |
+| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
+| National Pension Scheme Act 2026, ss. 1, 18, 24; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2072%2C%20The%20National%20Pension%20Scheme%20Act%20%281%29.pdf | 2026-11-01 |
+| ZRA Tax Information page, Turnover Tax and PAYE sections; read for the figures cited | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
+| ZRA Payment Due Dates page; read for the figures cited | https://www.zra.org.zm/payment-due-dates/ | 2026-11-01 |
+| ZRA Penalties page (penalty unit K0.30: stale against the 2026 leaflets); read for the figures cited | https://www.zra.org.zm/penalties/ | 2026-11-01 |
+| ZRA leaflet PAYE (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/PAYE.pdf | 2026-11-01 |
+| ZRA Guide to Filing Tax Returns (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Guide-to-Filing-Tax-Returns.pdf | 2026-11-01 |
+| ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
+| ZRA leaflet Skills Development Levy (2023); read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/06/Skills-Development-Levy.pdf | 2026-11-01 |
 
 Not yet confirmed: NAPSA rate, ceiling and remittance date (napsa.co.zm opens only its home page; no contribution page found); commencement of the 2026 Act; NHIMA rate and base (no official rate page found; Act 25 of 2026 only changes the Board); minimum wage orders; levy exemption wording (a K800,000 employer test appears in the leaflet but the OCR is partial); levy wilful default rate (ZRA page prints 5%, likely a typo).
 

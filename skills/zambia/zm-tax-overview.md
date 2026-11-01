@@ -94,17 +94,17 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
-| Income Tax (Amendment) Act No. 10 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf | 2026-11-01 |
-| VAT (Amendment) Act No. 19 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2019%20of%202025%20The%20Value%20Added%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
-| Property Transfer Tax (Amendment) Act No. 21 of 2025, whole Act; read: full text of the pages listed | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2021%20of%202025%2C%20The%20Property%20Transfer%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
-| ZRA Tax Information page, Turnover Tax and PAYE sections; read: full text of the pages listed | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
-| ZRA leaflet Introduction to VAT (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf | 2026-11-01 |
-| ZRA leaflet Introduction to Income Tax (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-Income-Tax.pdf | 2026-11-01 |
-| ZRA leaflet Post-Registration Requirements (2026), OCR read; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
-| ZRA leaflet Property Transfer (2026), rates part; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/06/Property-Transfer.pdf | 2026-11-01 |
-| ZRA DTA rates table; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2023/09/DTA-Rates.pdf | 2026-11-01 |
-| ZRA Advance Income Tax on remittances leaflet (2026), first page; read: full text of the pages listed | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
+| Income Tax (Amendment) (No. 2) Act No. 17 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2017%20of%202025%2C%20The%20Income%20Tax%20%28Amendment%29%28No.%202%29%20Act.pdf | 2026-11-01 |
+| Income Tax (Amendment) Act No. 10 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2010%20of%202025%20-%20The%20Income%20Tax%20%28Amendment%29-Act.pdf | 2026-11-01 |
+| VAT (Amendment) Act No. 19 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2019%20of%202025%20The%20Value%20Added%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
+| Property Transfer Tax (Amendment) Act No. 21 of 2025, whole Act; read for the figures cited | https://www.parliament.gov.zm/sites/default/files/documents/acts/Act%20No.%2021%20of%202025%2C%20The%20Property%20Transfer%20Tax%20%28Amendment%29%20Act.pdf | 2026-11-01 |
+| ZRA Tax Information page, Turnover Tax and PAYE sections; read for the figures cited | https://www.zra.org.zm/tax-information/ | 2026-11-01 |
+| ZRA leaflet Introduction to VAT (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-VAT.pdf | 2026-11-01 |
+| ZRA leaflet Introduction to Income Tax (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Introduction-to-Income-Tax.pdf | 2026-11-01 |
+| ZRA leaflet Post-Registration Requirements (2026), OCR read; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Post-Registration-Requirements.pdf | 2026-11-01 |
+| ZRA leaflet Property Transfer (2026), rates part; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/06/Property-Transfer.pdf | 2026-11-01 |
+| ZRA DTA rates table; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2023/09/DTA-Rates.pdf | 2026-11-01 |
+| ZRA Advance Income Tax on remittances leaflet (2026), first page; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Refunds-of-Advance-Income-Tax-on-Remittance.pdf | 2026-11-01 |
 
 Not yet confirmed: resident taxation of foreign interest and dividends; whether individual dividend WHT is final in this comparison.
 
