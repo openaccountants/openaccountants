@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.10"
+last_updated: 2026-11-01
+version: "0.11"
 sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=122165&p=0"
     title: "Tribunal guidance: February 2022 law, reviewed April 2023"
@@ -45,9 +45,9 @@ sources:
   - url: "https://gov.gg/revenue-service/personal-tax-returns"
     title: "Personal returns and agency guidance"
     as_of: "2026-10-22"
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -338,8 +338,6 @@ The legal-library consolidation is expressly non-authoritative; authentic enactm
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

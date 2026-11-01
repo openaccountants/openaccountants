@@ -2,13 +2,13 @@
 name: aw-social-contributions
 description: >
   Aruba social contribution reference for 2026 covering AOV and AWW employee and employer rates, AZV health contribution allocation and the new pensioner relief. Includes annual contribution examples, income-limit distinctions, employer-only sickness and accident insurance rates, and the annual Cessantia amount. Use for Aruba payroll insurance, SVB rates, pensioner AZV or employer contribution questions. The scope is rate calculation once insured status and contribution income have been established. It excludes net-pay calculations, individual coverage decisions, partial-year limits, benefit entitlement and unresolved sickness or accident threshold mechanics.
-version: 0.1
+version: 0.2
 jurisdiction: AW
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -46,8 +46,6 @@ For an ordinary insured worker with established full-year contribution income of
 The [October 2026 DIMP calendar](https://www.impuesto.aw/kalender-digitale-aangifte-oktober-2026) lists 15 October for September LB and SV filing/payment. Do not use that calendar as evidence for separate SVB remittance deadlines.
 
 Resolve contribution-base deductions, multiple employers, age transitions, insurance exemptions and ZV/OV coverage mechanics before using this reference to run payroll. Retain the insured-status decision and separate employer/employee reconciliations. General research guidance only, not a complete payroll compliance pack.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

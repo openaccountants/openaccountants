@@ -1,13 +1,13 @@
 ---
 name: hu-cross-border
 description: "Hub skill for crossing the Hungarian border in tax year 2026. Covers individual tax residence under Szja tv. 3. § 2. (citizenship, EEA nationals present 183 days, long-term residence permits, then permanent home, centre of vital interests and habitual abode); non-residents taxed only on Hungarian-source income; the payer's 15% withholding on dividends, interest and royalties paid to foreign individuals and the treaty rate at source with a residence certificate and beneficial owner statement (Szja tv. 7. számú melléklet); no withholding on payments to foreign companies; the foreign tax credit (Szja tv. 32. §, 90%) and treaty exemption; the corporate exit tax with five instalments for EU and EEA moves (Tao. tv. 16/A. §); A1 certificates; penalties. Trigger phrases: külföldi illetőségű, belföldi illetőség, kettős adóztatás, illetőségigazolás, exit tax Hungary, moving to Hungary, leaving Hungary, non-resident dividend Hungary. Out of scope: hu-corporate-tax, hu-transfer-pricing, hu-income-tax, hu-social-contributions, hungary-vat-return."
-version: 0.2
+version: 0.3
 jurisdiction: HU
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -232,8 +232,6 @@ expected:
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1995-117-00-00 | 2026-10-23: unreachable; the same database answered at njt.jog.gov.hu |
 
 Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájékoztató" page named in information sheet 4) was not read, so this skill names no treaty partner or treaty rate other than the US position; which Hungarian treaties use the credit method rather than exemption for employment income; whether the NAV office handling non-resident refund claims is still the one named on NAV's 2017 English page (not relied on); the absence of an individual exit tax rests on two independent full-text searches of the 2026 Szja tv. including its annexes (the only deemed-gain rule found, 65/C. §, covers transfers into a trust or private foundation), not on a NAV statement; payroll withholding for non-resident employees is left to the pack's payroll skill.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

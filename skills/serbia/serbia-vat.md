@@ -1,10 +1,10 @@
 ---
 name: serbia-vat
 description: "Serbian value added tax (porez na dodatu vrednost, PDV) for 2026 under the Zakon o porezu na dodatu vrednost, consolidated to Law 80/2026. Covers who must register (the RSD 8,000,000 threshold in Article 38) and small taxpayers; the 20% general rate and the 10% special rate and what each covers; exemptions with and without input deduction; input tax and blocked items; monthly and quarterly tax periods and the 15-day return and payment deadline; the PPPDV return with its POPDV schedule; the SEF e-invoicing system and the e-VAT records (EEO and EPP) due by the 12th; reverse charge and the tax debtor rules; refunds; penalties under the ZPPPA; and which 80/2026 changes start in 2027. Trigger on: Serbia VAT, PDV Srbija, PPPDV, POPDV, SEF, e-faktura, Serbian reverse charge, Serbian VAT refund. Out of scope: corporate tax (rs-corporate-tax), income tax (serbia-income-tax), payroll (serbia-payroll), cross-border structuring (rs-cross-border)."
-version: 0.1
+version: 0.2
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -187,8 +187,6 @@ expected:
 | efaktura.gov.rs, electronic recording of VAT (EEO) and input tax (EPP) | https://www.efaktura.gov.rs/tekst/4071/elektronsko-evidentiranje-obracuna-pdv-u-sef.php | 2026-10-23 |
 
 Not yet confirmed: the PDV Rulebook (Pravilnik o PDV) text for the POPDV fields, which the Tax Administration page did not display. The current NBS reference rate is not stated; take it from nbs.rs on the day.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

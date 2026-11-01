@@ -1,13 +1,13 @@
 ---
 name: it-cross-border
 description: "Italy cross-border tax for tax year 2026: who is resident (TUIR art. 2 as reformed from 2024, 183 days counting part days, civil-law residence, domicile as the centre of personal and family relations, physical presence; company residence under art. 73), AIRE registration, arriving under the impatriati regime, the EUR 300,000 flat tax on foreign income and the 7% pensioners' option, leaving (exit tax under art. 166 for companies and anyone carrying on a business), non-residents with Italian income, withholding on outbound dividends, interest, royalties and fees, and the foreign tax credit (art. 165). Trigger on: moving to Italy, leaving Italy, non-resident Italy, expat Italy, Italian tax residence, AIRE, exit tax Italy, imposizione in uscita, digital nomad Italy, ritenuta non residenti. Out of scope, see sibling skills: it-impatriati (full regime rules), it-income-tax, italy-payroll, it-inps-contributions, italy-transfer-pricing, italy-crypto-tax."
-version: 0.1
+version: 0.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -270,8 +270,6 @@ All read on 2026-10-22. Normattiva texts are the versions in force on 30 June 20
 - Agenzia delle Entrate, IRPEF rates and the 2026 change to 33%: https://www.agenziaentrate.gov.it/portale/imposta-sul-reddito-delle-persone-fisiche-irpef-/aliquote-e-calcolo-dell-irpef
 
 Not yet confirmed: the taxable part of royalties paid to non-resident companies (TUIR art. 54-octies reduces royalties by 25% for individual authors and inventors, which would give 22.5% of the gross, but we did not confirm the same base for companies); the late-payment interest rate and the interest rate on exit tax instalments (D.Lgs. 241/1997 art. 20); any AIRE non-registration penalty; and the Regulation (EC) 883/2004 text, which we could not fetch from EUR-Lex today.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,10 +1,10 @@
 ---
 name: gr-cross-border
 description: "Greece cross-border tax for tax year 2026 (calendar year). Covers tax residence tests for individuals (home, centre of vital interests, more than 183 days in any 12 months) and companies (Greek incorporation, registered seat, place of effective management); arriving under the special inbound regimes (art. 5A EUR 100,000 lump sum for high-net-worth movers, art. 5B 7% flat tax on foreign income of pensioners, art. 5C 50% exemption on Greek employment or business income for 7 years); leaving (deregistration procedure, the company exit tax of art. 66A); non-residents with Greek-source income such as rent or salary; withholding on outbound dividends, interest, royalties and fees, with the EU directive exemptions; treaty relief and the foreign tax credit. Trigger phrases: moving to Greece, leaving Greece, non-resident, expat, exit tax, digital nomad, Greek non-dom, 5A 5B 5C, golden visa tax. Out of scope: self-employed income tax (gr-income-tax), company tax (gr-corporate-income-tax), EFKA contributions of the self-employed (gr-efka) and of employees and employers (gr-employee-contributions), VAT (gr-vat-return)."
-version: 0.2
+version: 0.3
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
@@ -258,8 +258,6 @@ All read on 2026-10-22. The Income Tax Code arts. 62 and 64 were read again on 2
 Note: AADE's English page "Income categories and income taxation in Greece" still shows the pre-2026 scale (9/22/28/36/44%). The 2026 scale in this skill is from the law text (art. 15 as replaced by ν. 5246/2025, applying from tax year 2026).
 
 Not yet confirmed: the percentage of the late-payment interest rate in decision ΔΠΕΙΣ 1198598 ΕΞ 2013 (Β' 19/2014), which Α.1120/2025 keeps in force (the decision itself was not read on an official page); any amendments to the Income Tax Code after ν. 5264/2025 or to the Tax Procedure Code after ν. 5259/2025 made during 2026; whether the art. 16(2) phase-out for a 5C taxpayer is measured on the taxable half or on the whole salary; the A1 certificate rules in Regulation (EC) 987/2009; the list of states with an administrative cooperation agreement on tax with Greece; the Greece-Germany treaty treatment of rent in Example 2.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

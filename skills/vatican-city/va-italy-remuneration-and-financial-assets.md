@@ -2,13 +2,13 @@
 name: va-italy-remuneration-and-financial-assets
 description: >
   Vatican City and Holy See cross-border tax reference distinguishing qualifying remuneration under the Lateran Treaty from financial assets held by Italian tax residents at Vatican financial institutions. Covers eligibility for the 2015 convention's fiscal-representative mechanism, financial-income rate selection, conditional monitoring relief, central-entity exclusions and the separation of historic regularization from ongoing compliance. Includes evidence-led examples rather than a general claim of tax-free Vatican income. This source-cited draft does not determine personal residence, all employer statuses, pension classification, social contributions or current Italian asset-specific tax rates and requires independent review before application.
-version: 0.1
+version: 0.2
 jurisdiction: VA
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -66,8 +66,6 @@ Article 1 permits exchange of foreseeably relevant tax information; banking cust
 Articles 3–4 contain historic regularization/transitional provisions. The 2016 implementation act's 180-day application window must not be presented as a newly available 2026 election. Confirm the current article 2 operational process separately. [Implementation act, article 2](https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2016/10/17/0743/01656.html).
 
 Source-cited draft awaiting independent source and professional review. Employer status, pensions, residence, social security, VAT/customs, property privileges, entity formation and comprehensive domestic coverage remain separate work. No full subsequent-amendment or current filing-form audit is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

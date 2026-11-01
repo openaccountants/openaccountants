@@ -2,13 +2,13 @@
 name: fo-cross-border-payments
 description: >
   Prepare evidence and claim-timing checks for Faroese royalties and dividend refunds in 2026. This draft does not provide a treaty-rate matrix, a complete PE opinion or an unconditional withholding exemption. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
-version: 0.1
+version: 0.2
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -59,8 +59,6 @@ Verify treaty eligibility, domestic dividend withholding, participation exemptio
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
