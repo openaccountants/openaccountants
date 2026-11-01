@@ -1,0 +1,20 @@
+{
+  "git_fetch": {
+    "command": "git fetch origin",
+    "exit_code": 128,
+    "result": "Could not resolve host: github.com; local frozen HEAD and origin/main merge-base checked directly."
+  },
+  "web_access": {
+    "LF": "Official original PDF opened/read through web tool on 2026-11-01",
+    "CGI": "Official URL inaccessible through web tool; pinned original local PDF read independently",
+    "LFR": "Official URL inaccessible through web tool; pinned original local PDF read independently"
+  },
+  "incidental_unscoped_validation": {
+    "command": "python3 scripts/validate-guides.py --help",
+    "exit_code": 1,
+    "explanation": "Script has no help parser: --help was treated as full-tree validation. It reported index.json counts and llms-full.txt stale plus backlog warnings. No generated files edited. Correct required committed changed-only --no-index-check run then passed; see receipt.",
+    "output": "checked 21 guides (3 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: 8 guides missing a Sources section with a URL\nWARN: 12 guides fail each of tax_year_current, sources_read_dates, rates_rows_sourced, canonical_headings, two_oa_checks, version_numeric, no_em_dash, not_yet_confirmed\nWARN: 0 same-job groups\nERROR: index.json is stale (counts differs)\nERROR: llms-full.txt is stale (embedded docs or inventory changed)\nvalidation FAILED: 2 errors, 10 warning groups"
+  },
+  "first_metadata_help_probe": "not run because shell && chain stopped after incidental validator failure",
+  "first_review_readme_probe": "No docs/research/2026-11-01-gabon-review/README.md exists. Read CLOSURE.json and preserved actual review files; no inherited evidence invented."
+}

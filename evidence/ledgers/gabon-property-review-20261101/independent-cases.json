@@ -1,0 +1,45 @@
+[
+  {
+    "id": "P-CASE1",
+    "eligible_facts": "Hypothetical individual January title holder; relevant text governs assessment; official zone2 proved; built accepted25million and separate wholly taxable nonagricultural450m2; all permanent/temporary/agricultural/discretionary relief absent. No operative-period inference.",
+    "built_interval": [
+      20000001,
+      30000000
+    ],
+    "built_zone": 2,
+    "built_tariff": 31250,
+    "land_interval": [
+      401,
+      500
+    ],
+    "land_zone": 2,
+    "land_tariff": 25313,
+    "independently_computed_total": 56563,
+    "guide_expected": 56563,
+    "verdict": "pass predicates, independent row selection and arithmetic"
+  },
+  {
+    "id": "P-CASE2",
+    "eligible_facts": "Same currentness/title/zone/no-relief predicates, nonagricultural bare plot; alternative independently surveyed500/501m2, not taxpayer election or rounding.",
+    "alternative_1": {
+      "surface": 500,
+      "interval": [
+        401,
+        500
+      ],
+      "zone2_tariff": 25313
+    },
+    "alternative_2": {
+      "surface": 501,
+      "interval": [
+        501,
+        600
+      ],
+      "zone2_tariff": 37969
+    },
+    "independently_computed_surface_difference": 1,
+    "independently_computed_annual_difference": 12656,
+    "guide_expected_difference": 12656,
+    "verdict": "pass predicates, thresholds, independent row selection and arithmetic"
+  }
+]

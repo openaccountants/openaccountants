@@ -1,0 +1,4 @@
+Command: python3 scripts/check-sync-integrity.py --base 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 --worktree --mode audit --strict-metadata
+Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).
+
+Exit: 0
