@@ -1,0 +1,174 @@
+{
+  "review_date": "2026-11-01",
+  "reviewed_commit": "3fc0d47e51a7f337732c9744a7abe04fbc4799d5",
+  "base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "candidate_manifest": {
+    "skills/somalia/README.md": {
+      "sha256": "0c18de54995e8ae6b1923616da05af64f9d4fc6bf55daa18728a81f6abd7c036",
+      "matches": true
+    },
+    "skills/somalia/so-transfer-pricing.md": {
+      "sha256": "a1f5b5d1705ff8d518460b67d9ca9bdb0554c0ef7096a3365c1e453bc668415d",
+      "matches": true
+    },
+    "skills/somalia/so-cross-border-residence.md": {
+      "sha256": "250f31d48ed6c89e0719708c0b6c29f446c94077aeb9e05f2448c90494b1a1c6",
+      "matches": true
+    },
+    "evidence/ledgers/so-transfer-pricing.md": {
+      "sha256": "84ea0dba940a9ce8c334e68e823202d25ffc74aa2c012948965dc87932741c4d",
+      "matches": true
+    },
+    "evidence/ledgers/so-cross-border-residence.md": {
+      "sha256": "8aa4670cafd9e9be80068ff221b3392eeeaa22085e5349a46fca3bc8637ba4fe",
+      "matches": true
+    },
+    "evidence/ledgers/somalia-old-topics.md": {
+      "sha256": "5128943da8ef5d881b77d8948bcde51e6e6ccbf6852c78d6a6afc419e6d8ffa0",
+      "matches": true
+    },
+    "evidence/ledgers/somalia-source-read-20261101.md": {
+      "sha256": "5e3bd1396cc0c54be8804a9220b4ce884808ba6ab2c6e3c2b93f2d8a77ccd60e",
+      "matches": true
+    }
+  },
+  "legacy": {
+    "skills/somalia/so-company-formation.md": {
+      "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 12,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-corporate-income-tax.md": {
+      "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-income-tax.md": {
+      "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-payroll-social.md": {
+      "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 10,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-tax-overview.md": {
+      "sha256": "bb8d862f5b79f351769eb68a73a0587ca819786b48e09b8a244e4262013bb516",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-vat-gst.md": {
+      "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+      "manifest_matches": true,
+      "base_byte_identical": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 10,
+      "topics_missing_from_map": []
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/somalia/so-transfer-pricing.md",
+        "skills/somalia/so-cross-border-residence.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/somalia/so-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-cross-border-residence.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/somalia/so-transfer-pricing.md",
+        "skills/somalia/so-cross-border-residence.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "map_rows": 71,
+  "ledger_rows": {
+    "evidence/ledgers/so-transfer-pricing.md": 23,
+    "evidence/ledgers/so-cross-border-residence.md": 23
+  },
+  "source_downloads": {
+    "/private/tmp/somalia-review-act37.pdf": {
+      "sha256": "ee02cdda1b14270ac385469f2db90c3cc8c233b3b08c62f49e96180a4beaf85a",
+      "size_bytes": 49409999
+    },
+    "/private/tmp/somalia-review-authority56.pdf": {
+      "sha256": "a83fe74d9119c53144c9aa076b3a67bd3e8f2728030e1fbc2cdb37bc9e14c80b",
+      "size_bytes": 7308742
+    },
+    "/private/tmp/somalia-review-budget44.pdf": {
+      "sha256": "dbd8759b9a080e5056fe9a6155157eeb719c8be215977711cdd3d25b9e703d57",
+      "size_bytes": 3483027
+    }
+  },
+  "manual_recomputations": {
+    "sales_recorded": 80000,
+    "sales_supported": 100000,
+    "sales_income_increase": 20000,
+    "aggregate_voting_rights": 50,
+    "purchase_recorded": 60000,
+    "purchase_supported": 50000,
+    "purchase_income_increase": 10000,
+    "exact_presence_days": 183,
+    "short_presence_days": 182,
+    "shortfall": 1
+  }
+}
