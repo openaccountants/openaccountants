@@ -98,7 +98,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **R-SN-SOC-2 -- CSS work-injury rate**: The CSS accidents-du-travail rate (1%, 3%, or 5%) is set by the Caisse de Sécurité Sociale per risk category on the employer's registration. Do not assume a rate; obtain the CSS registration certificate. Defaulting to 5% conservatively and flagging. (Trigger: work-injury rate not provided.)
 - **R-SN-SOC-3 -- IPM rate/ceiling ambiguity**: [RESEARCH GAP: reviewer to confirm] PwC's individual and corporate pages describe IPM differently (2%–7.5% each vs 6% split 3%/3%) and the precise rate/ceiling depends on the specific IPM fund the employer joined. Do not present IPM as definitive: confirm against the actual IPM scheme. (Trigger: IPM computation requested.)
 - **R-SN-SOC-4 -- Family parts**: Parts give a reduction on the tax (CGI art. 174), not a division of income; maximum 5 parts. Without evidence of family situation, compute on 1 part and flag. (Trigger: IRPP requested with dependants.)
-- **R-SN-SOC-5 -- Arrears / back-contributions**: Late social-contribution and IRPP regularisation carries 5% interest plus 0.5% per month of delay (PwC). Do not quantify arrears without the institution's statement. Escalate to a Senegalese expert-comptable. (Trigger: unpaid prior-period contributions.)
+- **R-SN-SOC-5 -- Arrears / back-contributions**: Late IRPP carries 5% interest plus 0.5% per further month or part-month (CGI art. 665). That article covers taxes only; surcharges on late social contributions come from the institutions and were not read. Do not quantify arrears without the institution's statement. Escalate to a Senegalese expert-comptable. (Trigger: unpaid prior-period contributions.)
 
 ## Section 3 -- Payment pattern library
 
@@ -298,7 +298,7 @@ Apply exactly as written when inputs are clear.
 | 4,000,001 – 8,000,000 | 35% | 2,324,000 |
 | 8,000,001 – 13,500,000 | 37% | 4,359,000 |
 | 13,500,001 – 50,000,000 | 40% | 18,959,000 |
-| Over 50,000,000 | 43% |: |
+| Over 50,000,000 | 43% | n/a |
 
 > **Cumulative check:** 174,000 + 30%×2,500,000 = 924,000 ✓; + 35%×4,000,000 = 2,324,000 ✓; + 37%×5,500,000 = 4,359,000 ✓; + 40%×36,500,000 = 18,959,000 ✓.
 
@@ -355,7 +355,7 @@ Flag these for reviewer confirmation when data is ambiguous.
 
 ### T2-6 -- Arrears / late regularisation
 
-- **Arrears / late regularisation**: Trigger: Unpaid prior-period IRPP or contributions. Issue: 5% interest + 0.5%/month of delay (PwC). Penalties compound. Action: Do not estimate; obtain institution statements; escalate to an expert-comptable.  _(PwC)_
+- **Arrears / late regularisation**: Trigger: Unpaid prior-period IRPP or contributions. Issue: IRPP bears 5% interest + 0.5%/month of delay (CGI art. 665) plus art. 671 penalties; surcharges on social contributions were not read. Action: Do not estimate; obtain institution statements; escalate to an expert-comptable.  _(CGI arts. 665, 671)_
 
 ## Section 7 -- Excel working paper template
 
@@ -516,7 +516,7 @@ If only a bank statement is provided and no payroll detail:
 | Code general des impots, edition January 2025 (DGID): arts. 60, 168, 173 to 199, 263 to 269, 275 to 282, 665 to 671 read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
 | CLEISS, Senegal contributions at 1 January 2026: table and notes read | https://www.cleiss.fr/docs/cotisations/senegal.html | 2026-11-01 |
 
-Not yet confirmed: IPRES, CSS and IPM rates rest on CLEISS and PwC, because ipres.sn and secusociale.sn did not open; the health contribution includes a 2% AMO levy per CLEISS, and the split inside each IPM is not read; the cadre base (old text charges 6% on pay up to 1,296,000, while CLEISS says the base lies between 432,000 and 1,296,000); SMIG decree not read; filing dates for IPRES and CSS returns not read.
+Not yet confirmed: whether art. 276 means the TRIMF band amount is charged twice for a spouse without income (it does not say "twice"; a Senegal accountant must confirm); IPRES, CSS and IPM rates rest on CLEISS and PwC, because ipres.sn and secusociale.sn did not open; the health contribution includes a 2% AMO levy per CLEISS, and the split inside each IPM is not read; the cadre base (old text charges 6% on pay up to 1,296,000, while CLEISS says the base lies between 432,000 and 1,296,000); SMIG decree not read; filing dates for IPRES and CSS returns not read.
 
 ## Disclaimer
 

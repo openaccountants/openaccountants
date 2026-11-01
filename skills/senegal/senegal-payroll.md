@@ -29,7 +29,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Republic of Senegal (République du Sénégal) |
 | Currency | West African CFA franc: XOF / FCFA only |
 | Standard pay frequency | Monthly (mensuel) |
-| Tax year | Calendar year (1 January: 31 December) |
+| Tax year | Calendar year (1 January to 31 December) |
 | Income tax system | IRPP: progressive bands on the whole income (CGI art. 173), then a family reduction on the tax by parts (art. 174), withheld at source (arts. 181, 183) |
 | Fixed local salary tax | TRIMF (Taxe Représentative de l'Impôt du Minimum Fiscal): CGI arts. 275 to 282 |
 | Tax authority | Direction Générale des Impôts et des Domaines (DGID) |
@@ -74,7 +74,7 @@ Order of the calculation:
 | 4,000,001 – 8,000,000 | 35% | 2,324,000 |
 | 8,000,001 – 13,500,000 | 37% | 4,359,000 |
 | 13,500,001 – 50,000,000 | 40% | 18,959,000 |
-| 50,000,001 + | 43% |: |
+| 50,000,001 + | 43% | n/a |
 
 **Cumulative-tax arithmetic check (recomputed):**
 - 630,000 → 0
@@ -119,7 +119,7 @@ The old "MPIT floor" does not exist as a floor on IRPP. Arts. 173 and 174 set no
 
 ## Section 3: TRIMF (Taxe Représentative de l'Impôt du Minimum Fiscal)
 
-A separate fixed **annual** tax on salaries and pensions, withheld at source by the employer and paid with the salary withholding (CGI arts. 181, 183.3, 275). It funds local authorities. It is due by anyone resident in Senegal receiving salary or pension (art. 275). Technical assistance staff of a foreign State or international body, and pensioners paid from abroad, are outside it (art. 277).
+A separate fixed **annual** tax on salaries and pensions, withheld at source by the employer and paid with the salary withholding (CGI arts. 181, 183.3, 275). It funds local authorities. It is due by anyone resident in Senegal receiving salary or pension (art. 275). Technical assistance staff of a foreign State or international body, and pensioners paid from abroad, are outside it (art. 277). The exemptions in art. 271 points 1 to 7 also apply (art. 278), such as blind people and people with a 50% work-accident or war disability.
 
 **TRIMF annual table (art. 282)**
 
@@ -137,6 +137,8 @@ The band is read directly from gross income, before the abatement. Amounts are p
 **Spouse:** the employee is taxed at the rate for his or her band for himself or herself and for a spouse without income (art. 276). If the spouse has no income, charge the band amount twice. If the spouse has income, charge it once.
 
 The employer regularises at the last payment of the year, on the year's salary with benefits (art. 281). Over-withheld TRIMF is reclaimed before 1 April of the next year (art. 281).
+
+The doubling is our reading of art. 276, which does not say "twice"; see Not yet confirmed.
 
 ## Section 4: Social Contributions: IPRES (Pensions)
 
@@ -253,7 +255,7 @@ Always present payroll outputs as estimated, label every gap, and direct the use
 | Family parts asserted but not evidenced | Default to 1 part rather than grant unevidenced relief; maximum is 5 (art. 174) |
 | User asks for an exact IPM deduction | IPM-specific; refuse without the IPM's own schedule |
 | User asks to apply a 6% "expat CFCE" | Art. 267 has one rate; CFCE is 3% |
-| Non-resident employee | Withholding still applies where the employer is in Senegal (art. 183), maximum 1.5 parts (art. 176); treaty questions go to an expert-comptable |
+| Non-resident employee | Withholding still applies where the employer is in Senegal (art. 183), maximum 1.5 parts (art. 176); TRIMF is due only from residents (art. 275); treaty questions go to an expert-comptable |
 | Request to treat the output as final/filed advice | This is a Tier-2 unverified estimate; require accountant sign-off |
 
 ## Section 10: Transaction / Payment Pattern Library (Deterministic)
@@ -510,6 +512,7 @@ When onboarding a new Senegal payroll client and information is incomplete:
 | December withholding | Paid within the time for the art. 191 statement | CGI art. 186 |
 | Individual annual income tax return | Before 1 May. Compulsory for an employee with several employers, or with non-salary income not taxed finally, or where withholding was omitted (arts. 60, 196). Otherwise only on request (art. 197) | CGI |
 | Refund of over-withheld IRPP | Claim before 1 April of the next year | CGI art. 187 |
+| Employee leaving Senegal for good | Employer regularises the tax during the year and gives a certificate stamped by the tax office, or owes the balance | CGI art. 187 |
 | Pay records | Keep to the end of the 11th following year | CGI art. 184 |
 
 Source: https://www.dgid.sn/storage/docs/CGI-2025.pdf.
@@ -525,6 +528,7 @@ Source: https://www.dgid.sn/storage/docs/CGI-2025.pdf.
 | Failure to declare or pay | 25% of the tax | Art. 671 I |
 | Tax withheld and not paid over, bad faith, or assessment ex officio | 50% of the tax | Art. 671 III |
 | Repeat breach or undeclared activity | 100% of the tax | Art. 671 IV |
+| Repeat offence | Fines and penalties are doubled | Art. 671 VII |
 | Employer did not withhold, or too little | Pays the missing amount personally, recovers it from staff, and bears the art. 671 penalty, which cannot be recovered | Art. 188 |
 
 ## Section 19: Minimum Wage (SMIG / SMAG)
@@ -550,10 +554,10 @@ An older figure of 52,500 FCFA/month (303.49 FCFA/hour) is widely repeated but p
 
 ### 20.2 Test Suite (recompute each before relying on the skill)
 
-- **IRPP cumulative @4,000,000/part**: 924,000. Check: 174,000 + (4,000,000 − 1,500,000) × 30% = 174,000 + 750,000 = 924,000. ✓
-- **IRPP cumulative @8,000,000/part**: 2,324,000. Check: 924,000 + 4,000,000 × 35% = 2,324,000. ✓
-- **IRPP cumulative @13,500,000/part**: 4,359,000. Check: 2,324,000 + 5,500,000 × 37% = 4,359,000. ✓
-- **IRPP cumulative @50,000,000/part**: 18,959,000. Check: 4,359,000 + 36,500,000 × 40% = 18,959,000. ✓
+- **IRPP cumulative @4,000,000**: 924,000. Check: 174,000 + (4,000,000 − 1,500,000) × 30% = 174,000 + 750,000 = 924,000. ✓
+- **IRPP cumulative @8,000,000**: 2,324,000. Check: 924,000 + 4,000,000 × 35% = 2,324,000. ✓
+- **IRPP cumulative @13,500,000**: 4,359,000. Check: 2,324,000 + 5,500,000 × 37% = 4,359,000. ✓
+- **IRPP cumulative @50,000,000**: 18,959,000. Check: 4,359,000 + 36,500,000 × 40% = 18,959,000. ✓
 - **IPRES Régime Général total**: 14.0%. Check: 5.6 + 8.4. ✓
 - **IPRES Cadres total**: 6.0%. Check: 2.4 + 3.6. ✓
 - **Example A IRPP**: 228,000/yr (19,000/mo) on base 1,680,000. Check: 174,000 + 180,000 × 30% = 228,000. ✓
@@ -584,7 +588,7 @@ An older figure of 52,500 FCFA/month (303.49 FCFA/hour) is widely repeated but p
 | Code general des impots, edition January 2025 (DGID): arts. 60, 165 to 199, 263 to 269, 275 to 282, 665 to 671 read in the PDF text | https://www.dgid.sn/storage/docs/CGI-2025.pdf | 2026-11-01 |
 | CLEISS, Senegal contributions at 1 January 2026: table and notes read | https://www.cleiss.fr/docs/cotisations/senegal.html | 2026-11-01 |
 
-Not yet confirmed: IPRES, CSS and IPM rates rest on CLEISS and PwC, because ipres.sn and secusociale.sn did not open; SMIG and SMAG decrees not read; dividing the annual tax by 12 is our working method for monthly withholding, the articles read give no monthly formula; the text of Loi 2025-17 was not opened; the cadre base (old text charges 6% on pay up to 1,296,000, while CLEISS says the base lies between 432,000 and 1,296,000).
+Not yet confirmed: whether art. 276 means the TRIMF band amount is charged twice for a spouse without income (the article says the employee is taxed "pour lui-même et son conjoint ne disposant pas de revenus" and a Senegal accountant must confirm); IPRES, CSS and IPM rates rest on CLEISS and PwC, because ipres.sn and secusociale.sn did not open; SMIG and SMAG decrees not read; dividing the annual tax by 12 is our working method for monthly withholding, the articles read give no monthly formula; the text of Loi 2025-17 was not opened; the cadre base (old text charges 6% on pay up to 1,296,000, while CLEISS says the base lies between 432,000 and 1,296,000).
 
 ## Disclaimer
 
