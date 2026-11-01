@@ -3,7 +3,12 @@ jurisdiction: JO
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {}
+partial:
+  IT-IND: "2026 amendment currentness and filing procedure not cleared."
+  IT-CORP: "2026 amendment currentness, investment zones and filing procedure not cleared."
+  VAT: "2026 amendment currentness, registration thresholds, schedules and filing procedure not cleared."
+  SC: "2026 amendment currentness and current penalty assessment not cleared."
+  PR: "2026 amendment currentness, PAYE instructions and portal procedure not cleared."
 ---
 
 # Jordan: tax pack
@@ -14,21 +19,21 @@ Tax years: 2026 (5 skills), 2025 (1 skill).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](jo-income-tax.md) | 2026 | Ready |
-| Company tax | [Corporate income tax](jo-corporate-income-tax.md) | 2026 | Ready |
-| VAT or sales tax | [GST](jordan-gst.md) | 2026 | Ready |
-| Social contributions | [Payroll social](jo-payroll-social.md) | 2026 | Ready |
-| Payroll | [Payroll social](jo-payroll-social.md) | 2026 | Ready |
+| Income tax | [Income tax](jo-income-tax.md) | 2026 | Partial |
+| Company tax | [Corporate income tax](jo-corporate-income-tax.md) | 2026 | Partial |
+| VAT or sales tax | [GST](jordan-gst.md) | 2026 | Partial |
+| Social contributions | [Payroll social](jo-payroll-social.md) | 2026 | Partial |
+| Payroll | [Payroll social](jo-payroll-social.md) | 2026 | Partial |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Partial means the draft targets 2026 but names source or core workflow holds. Its conditional extracts and examples are not cleared filing instructions. No accountant has reviewed this pack. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
 - Write the transfer pricing skill.
 - Write the cross-border skill.
-- Company formation: still on 2025; no official source read.
+- Company formation: unchanged inherited 2025 draft, entirely on hold. No official company-law source was read; do not use its capital, ownership, timing, procedure or annual-compliance claims as operative advice.
 
 Tracked in [\[JO\] Complete the pack](https://github.com/openaccountants/openaccountants/issues/437).
 

@@ -1,7 +1,7 @@
 ---
 name: jo-tax-overview
-description: "Overview of the Jordan tax system for tax year 2026, for anyone needing the map before a specific job: which tax applies, who administers it, the main rates and the annual calendar. Covers income tax under Law No. 34 of 2014, company rates, General Sales Tax under Law No. 6 of 1994, social security, and links to the detailed Jordan skills. Use when asked what taxes exist in Jordan, how Jordan taxes foreign income, what the tax year is, or who the tax authority is. The Income and Sales Tax Department (ISTD) under the Ministry of Finance administers income tax and sales tax; the Social Security Corporation runs contributions. Trigger phrases: Jordan tax overview, taxes in Jordan, Jordan tax system."
-version: 1.0
+description: "Conditional overview of Jordan tax sources for a 2026 refresh. Routes individual income tax, company tax, General Sales Tax and social security questions to the existing detailed Jordan Guides. Gives source-text headline rates and calendar illustrations with the conditions in those Guides. All source-currentness and filing-procedure holds carry through to this overview. Includes two executable arithmetic examples for a standard company and an ordinary full-coverage employee. Use for Jordan tax overview research, taxes in Jordan, ISTD, social security and the Jordan tax calendar. Do not treat the target tax year as clearance of a current filing position."
+version: 1.1
 jurisdiction: JO
 category: international
 tax_year: 2026
@@ -15,6 +15,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 # Jordan Tax Overview
 
 ## Who this applies to
+
+**Source currentness hold.** This is a source-cited research draft for the 2026 refresh, not a cleared filing instruction. The clause extracts below are conditional reference material. Before using them for a 2026 position, close the amendment and procedure gaps named in Sources. A read date records the stated read scope, not verification of every later amendment.
 
 Income arising in Jordan is taxed wherever it is paid; a resident's foreign income is taxed only where it arises from funds or deposits from Jordan (art. 3). ISTD runs income tax and sales tax; the Social Security Corporation runs contributions. Currency is the Jordanian dinar (JOD).
 
@@ -43,7 +45,7 @@ Late income tax and GST payment costs 0.4% per week or part of a week. Contribut
 
 ## Cross-border points
 
-Payments to non-residents carry 10% withholding; see [jo-corporate-income-tax](jo-corporate-income-tax.md).
+For non-exempt income due or paid to a non-resident, the art. 12(b) extract requires withholding at the earlier date; treaty relief is outside this draft. See [jo-corporate-income-tax](jo-corporate-income-tax.md).
 
 ## Two worked examples that recompute
 
@@ -59,7 +61,7 @@ expected:
   total: 10500.00
 ```
 
-Edge: employer cost on a JOD 5,000 wage, capped at the 2026 ceiling of JOD 3,733.
+Edge: ordinary full-coverage worker subject to the ordinary ceiling, wage JOD 5,000, with no protected legacy wage, hazardous addition or approved reduction. The conditional employer-cost calculation uses JOD 3,733; see the coverage and currentness holds in [payroll](jo-payroll-social.md).
 
 ```oa-check
 name: Employer cost above the ceiling
@@ -84,11 +86,11 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36 read | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
-| General Sales Tax Law No. 6 of 1994 as amended, ISTD scan read by OCR: rate, registration, return, deduction, refund and penalty articles read | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf | 2026-11-01 |
-| Social Security Law No. 1 of 2014, SSC English text (amendments to 16 Apr 2023): arts. 20, 22, 24, 42, 48, 59 read | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf | 2026-11-01 |
+| Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
+| General Sales Tax Law No. 6 of 1994 as amended, ISTD scan: inherited original-author OCR reading of rate, registration, return, deduction, refund and penalty clauses; closeout reread cached output, fresh scan unavailable | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf | 2026-11-01 |
+| Social Security Law No. 1 of 2014, SSC official translation through 16 Apr 2023: arts. 3-7, 19-24, 42-49, 59, 64 read; original Arabic source/pages recorded in closeout ledger | https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf | 2026-11-01 |
 
-Not yet confirmed: calendar tax year as the rule for all taxpayers; the dinar peg to the US dollar (no Central Bank of Jordan page read); amendments after the texts above.
+Not yet confirmed: calendar tax year as the rule for all taxpayers; the dinar peg to the US dollar (no Central Bank of Jordan page read); amendments after the texts above. This overview inherits JO-IT-CURRENT, JO-GST-CURRENT and JO-SSC-CURRENT from the detailed Guides; its headline figures and examples are non-operative until the relevant hold closes.
 
 <!-- openaccountants-cta-block -->
 
