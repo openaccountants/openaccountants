@@ -6,7 +6,7 @@ covered_by:
   VAT: [gn-vat-gst, gn-vat-invoice-control]
 partial:
   IT-IND: "Legacy 2025 Guide unchanged; all bands, bases, residence and filing require current enacted-law research."
-  IT-CORP: "Legacy 2025 Guide unchanged; ordinary/mining rates, minimum tax, base, withholding and deadlines unresolved for 2026."
+  IT-CORP: "Ordinary IS/IMF, profit bridge, loss limit, instalments and credits expanded from enacted/amended sources and April guidance; currentness, specialised deductions/reliefs, complete withholding and foreign/sector methods remain unresolved."
   VAT: "New 2026 invoice-field control only; legacy rate/threshold/return and cross-border claims are not confirmed current law."
   SC: "2026 ordinary full-month CNSS base/contribution method added; deadline conflict, parameter instruments, special categories, partial months and multi-employer cap allocation remain unresolved."
   PR: "Current salary-tax withholding, employer salary/apprenticeship taxes and tax remittance remain unresolved; CNSS is computed separately."
@@ -42,3 +42,5 @@ The expanded [payroll/social Guide](gn-payroll-social.md) now computes ordinary 
 The rewritten [formation Guide](gn-company-formation.md) adds entity choice, capital funding, route-specific APIP fees, incorporation evidence, foreign-branch controls and annual approval/registry deposit. Guinea capital/formality instruments, some fee applicability and full reporting/tax duties remain explicit gaps. Its [new ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-company-formation.md) and [immutable predecessor map](../../evidence/ledgers/guinea-remaining-20261101/predecessor-destinations.json) preserve the old scope and holds. Review pending.
 
 The expanded [property Guide](gn-property-tax.md) now adds ordinary liability, exemptions, occupied-property valuation, owner payment and qualifying rental-withholding procedures from the enacted CGI base and April 2026 DGI guidance. The March rate table and original two examples are preserved exactly. The [additive property ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-property-tax.md) does not extend prior acceptance; review is pending, and the actual-period governing-version prerequisite remains. Vacant-property estimation, allocation, relief, sanctions and filing-screen gaps remain explicit.
+
+The rewritten [corporate Guide](gn-corporate-income-tax.md) adds ordinary IS/IMF scope, the2% prior-year IMF with bounds, accounting-to-tax bridge, loss limitation, instalments and separate credit buckets. It corrects the old unqualified dividend/interest defaults and keeps recipient/treaty/filing limits explicit. [Corporate ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-corporate-income-tax.md). Independent review pending; source-version and special-method gaps remain.

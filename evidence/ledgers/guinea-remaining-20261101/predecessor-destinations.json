@@ -3,7 +3,7 @@
   "prepared_on": "2026-11-01",
   "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
-  "destination_status": "Payroll and formation mapped to new methods/explicit holds. Other four historical Guides remain byte-identical. Earlier 65-topic map is retained as history, not changed acceptance.",
+  "destination_status": "Payroll, formation and corporate mapped to new methods or exact holds. Other three historical Guides remain unchanged pending research.",
   "guides": [
     {
       "path": "skills/guinea/gn-company-formation.md",
@@ -339,11 +339,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 13,
-            "line_end_at_pinned_base": 13,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -361,11 +360,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 15,
-            "line_end_at_pinned_base": 15,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; The base: profit bridge; IMF method",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -383,11 +381,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 17,
-            "line_end_at_pinned_base": 17,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; The base: profit bridge; IMF method",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -405,11 +402,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 19,
-            "line_end_at_pinned_base": 19,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates, bands and thresholds: CGI229 rows",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -427,11 +423,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 20,
-            "line_end_at_pinned_base": 20,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates, bands and thresholds: CGI229 rows",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -449,11 +444,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 21,
-            "line_end_at_pinned_base": 21,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates and The base:2% prior-year IMF method; worked cases",
+            "status": "corrected_superseded_3_percent",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -471,11 +465,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 22,
-            "line_end_at_pinned_base": 22,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base: accounting-to-tax bridge, losses and distinct IMF base",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -493,11 +486,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 23,
-            "line_end_at_pinned_base": 23,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -515,11 +507,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 24,
-            "line_end_at_pinned_base": 24,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -537,11 +528,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 25,
-            "line_end_at_pinned_base": 25,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Cross-border points: recipient-specific15% defaults, residentIS exclusion and complete filing/treatyhold",
+            "status": "corrected_and_explicit_withholding_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -559,11 +549,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 26,
-            "line_end_at_pinned_base": 26,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step6; Sources: disposal/reinvestment/share/merger specific method holds",
+            "status": "ordinary_gains_confirmed_general_15_percent_rejected",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -581,11 +570,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 27,
-            "line_end_at_pinned_base": 27,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing; IMF credit buckets; two worked examples",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         },
         {
@@ -603,11 +591,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-corporate-income-tax.md",
-            "line_start_at_pinned_base": 28,
-            "line_end_at_pinned_base": 28,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing; IMF credit buckets; two worked examples",
+            "status": "expanded_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact old source retained; use only new sourced rule and condition."
           }
         }
       ],
