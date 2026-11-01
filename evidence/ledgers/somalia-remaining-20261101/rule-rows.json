@@ -296,7 +296,7 @@
     "provision": "90(1)",
     "pdf_page": 109,
     "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
-    "quote": "loo shageeye Dalka deegan ku ah (oo ay kujirto xarun ganacsi oo joogta ah ee Soomaaliyeed)",
+    "quote": "loo shaqeeye Dalka deegan ku ah (oo ay kujirto xarun ganacsi oo joogta ah ee Soomaaliyeed)",
     "read_date": "2026-11-01",
     "id": "SO-022"
   },
@@ -460,7 +460,7 @@
     "provision": "Schedule1 art.1(2)",
     "pdf_page": 127,
     "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
-    "quote": "bogolkiiba labaatan (20%) oo ah boqolleey siman",
+    "quote": "boqolkiiba labaatan (20%) oo ah boqolleey siman",
     "read_date": "2026-11-01",
     "id": "SO-034"
   },
@@ -473,7 +473,7 @@
     "provision": "Schedule1 art.1(3)",
     "pdf_page": 127,
     "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
-    "quote": "bogolkiiba shan iyo toban (15%)",
+    "quote": "boqolkiiba shan iyo toban (15%)",
     "read_date": "2026-11-01",
     "id": "SO-035"
   },
@@ -487,7 +487,7 @@
     "provision": "Schedule1 arts.1(4),5(1)(b)",
     "pdf_page": 127,
     "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
-    "quote": "bogolkiiba siddeed iyo toban (18%) oo ah boqolleey siman",
+    "quote": "boqolkiiba siddeed iyo toban (18%) oo ah boqolleey siman",
     "read_date": "2026-11-01",
     "id": "SO-036"
   },
@@ -500,7 +500,7 @@
     "provision": "Schedule1 arts.3–4",
     "pdf_page": 128,
     "url": "https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf",
-    "quote": "bogolkiiba shan iyo toban (15%) oo ah boqolleey siman",
+    "quote": "boqolkiiba shan iyo toban (15%) oo ah boqolleey siman",
     "read_date": "2026-11-01",
     "id": "SO-037"
   },
@@ -742,6 +742,331 @@
     "pdf_page": "37",
     "url": "https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf",
     "quote": "at their choice and without penalty",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-056",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Who this applies to",
+    "rule": "Instrument dated9December2023; article8 signature commencement, archive15April2025; not complete amendment audit",
+    "provision": "RegMOF/OM/0089/23 arts.1,8",
+    "pdf_page": "1–5",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "December 9, 2023",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-057",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "Expands specified retail/professional/other sectors and broadcatchall; other payroll/profittaxesunaffected;notallcurrently5%",
+    "provision": "Regarts.1–2",
+    "pdf_page": "2",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "ma saamaynayo canshuurta ku waajibtay mushaarka, faa’iidada, iyo canshuuraha kale",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-058",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base / Worked examples",
+    "rule": "General5%valuegoodsservices;conditional ordinarydomesticapplication,notuniversalcurrentsectorrate",
+    "provision": "Regart.3(1)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "Tacriifada Canshuurta Gadidda waa 5% qiimaha badeecada ama adeegyada lagu kala gatay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-059",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Sellerbusiness/companyliableatcompletionofexchange/services;notcurrentreturnpaymentdeadline",
+    "provision": "Regart.3(1)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "mar allaale markii is dhaafsiga badeecada ama bixinta adeega la dhammeeyo",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-060",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Invoiceeachsale,showvalueand5%tax;inclusive/exclusivealgebraonlyifactualcontractsoagrees",
+    "provision": "Regart.3(2)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "waa in ay sameeyaan qaansheegto markasta oo ay cid badeeco ama adeeg ka iibayaan",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-061",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Consecutiveinvoice sequence starts1eachyear;showdate",
+    "provision": "Regart.3(3)",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "iyagoo ka bilaabanayo kow (1) sanad walba",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-062",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "The base",
+    "rule": "Produceinvoicesonrequestresponsiblerevenueofficers;nostatutoryretentionperiodasserted",
+    "provision": "Regart.4",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "inuu u soo bandhigo mar kasta oo ay waydiistaan Saraakiisha Dakhliga",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-063",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Penalties and interest",
+    "rule": "Penaltiesdonotextinguishtax;numericregsanctionsandreconciliationheld",
+    "provision": "Regart.5",
+    "pdf_page": "3",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "markasta waajib ku tahay bixinta canshuurtii ku baaqatay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-064",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Penalties and interest",
+    "rule": "Complaintcommittee/courtappealdescribed,butcurrentroute/deadlineheld",
+    "provision": "Regart.7",
+    "pdf_page": "4",
+    "url": "https://www.revenuedirectorate.gov.so/sites/default/files/pdf/Xeer-Nidaamiyaha%20Balaarinta%20Nuucyada%20Ganacsiyada%20iyo%20Shirkadaha%20Lagu%20Dabaqayo%20Canshuurta%20Gadidda_0001.pdf",
+    "quote": "wuxuu rafcaan u qaadan karaa maxkamadda awooda u leh",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-065",
+    "guides": [
+      "so-vat-gst"
+    ],
+    "section": "Rates, bands and thresholds / Sources",
+    "rule": "Authoritygeneralgoods5%,sectorconflicts;notadoptedunsupportedsectorrates",
+    "provision": "Directorate indirecttax",
+    "pdf_page": "HTML",
+    "url": "https://www.revenuedirectorate.gov.so/indirect-tax",
+    "quote": "Telecomunications services",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-066",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Who this applies to / The base",
+    "rule": "RegistrarwithinMOCI,domesticcompanyversusforeignbranch,certificate/licence/sectorpermitdistinct",
+    "provision": "Reg001/2021 arts.1,6–9,19",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "hoos yimaadda Wasaarada Ganacsiga iyo Warshadaha",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-067",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Registrarnameapplication applicantname/address/proposedname;checkrestrictions;reservationmax90days",
+    "provision": "Regarts.10–11",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "muddo ugu badnaan 90 maalmood ah",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-068",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / The base",
+    "rule": "Certificate1workingdayaftersubmissionANDacceptance;notwholeprocesspromise;certificatecontentsanddeficiencyresponse",
+    "provision": "Regart.6(1)–(4)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "hal (1) maalin shaqo gudaheed ka dib marka dukumentiga codsiga la soo gudbiyey lana aqbalay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-069",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Approvedapplication,memorandum/articles shareholdernames/type/quota,founder/shareholderpassports,additionalrequestedinformation",
+    "provision": "Regart.8",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "Lifaaq baasaboorrada aasaasayaasha iyo saamileyda shirkadda",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-070",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Company/directoraddresses,eachboardmemberpassport/phone/email/bankstatement",
+    "provision": "Regart.13",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "caddeyn xisaabta bankiga (bank account statement) ee xubin kasta ee golaha maamulka",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-071",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Cross-border points",
+    "rule": "Foreignbranch4notarisedembassy-certifieddocumentcategoriespluspassports/localdirectors/representative;foreigninvestmentlawpreserved",
+    "provision": "Regart.19(1)–(3)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "oo nootaayeysan lagana soo tastiiqay Safaaradda Soomaaliya ee dalka shirkadda shisheeye ka diiwaangashan tahay",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-072",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Onlineapplicationpermitted;notproofofactualauthenticatedscreens",
+    "provision": "Regart.17",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "ayadoo la isticmaalaayo form khad toos ah (online form)",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-073",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Deadlines and filing",
+    "rule": "Certificatevalidcompanylifesubjectmajorchanges/reregistration;notuniversalannuallicencerenewal",
+    "provision": "Regart.6(5),7",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "ilaa iyo muddada ay shirkaddu jirto",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-074",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base",
+    "rule": "Regulatedsectorcannotstartuntilrequiredotheragencyapprovaldespitecertificate/licence",
+    "provision": "Regart.9",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waa in aysan bilaabin hawlahooda ganacsi",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-075",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Worked examples",
+    "rule": "Reg100incorporationfeevslive50servicefeeforlistedtypes;holdoperativeamount,notautomaticcheaperchoice",
+    "provision": "Regart.14;livefee table",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "boqol dollar ($100 USD) waqtiga diiwaangelinta koowaad",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-076",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Sources",
+    "rule": "Live50companyregistrationserviceentry;activitylicencefeesdifferent;notwhole149licencetableaudit",
+    "provision": "Registry currentfees",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/fees",
+    "quote": "50 USD",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-077",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Rates, bands and thresholds / Deadlines and filing",
+    "rule": "Somali30daysafteranniversary;Englishomitsanniversary;indexedPDFconflictunread;exactoperativedeadlineheld",
+    "provision": "Regart.15(1)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "muddo 30 maalmood gudahood ah oo ka bilaabaneynsa maalinta sanad-guurada",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-078",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Annualreportname,addresses,management,type/activity,shares,changes,licensedactivity;prescribedforms",
+    "provision": "Regart.15(2)–(3)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "Xafiiska Diiwaanhayaha Shirkadaha ayaa bixin doona foomam",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-079",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "Deadlines and filing",
+    "rule": "Notifydirectors/shareholders/officers/businessactivitychanges;numericdeadlineunverified",
+    "provision": "Regart.12(2)",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waxaa sidoo kale loo gudbin doonaa Diiwaanhayaha Shirkadaha",
+    "read_date": "2026-11-01"
+  },
+  {
+    "id": "SO-080",
+    "guides": [
+      "so-company-formation"
+    ],
+    "section": "The base / Penalties and interest",
+    "rule": "CompaniesLawprevails;numericpenalties/currentappealrouteheld",
+    "provision": "Regarts.6(2),15(4),18,21–22",
+    "pdf_page": "HTML",
+    "url": "https://ebusiness.gov.so/knowledge-base/resource/xeer-nidaamiyaha-sharciga-shirkadaha-sharci-l-18-ee-26-12-20190001",
+    "quote": "waxaana markasta hortabin leh Sharciga Shirkadaha",
     "read_date": "2026-11-01"
   }
 ]

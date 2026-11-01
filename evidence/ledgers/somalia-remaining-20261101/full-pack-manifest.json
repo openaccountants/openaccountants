@@ -1,0 +1,28 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "read_date": "2026-11-01",
+  "review_status": "full five-Guide review pending",
+  "files": {
+    "skills/somalia/README.md": "628155a7423adf521ffb73bce71f91d438f900514a6fc5deaf60be91f6d93f23",
+    "skills/somalia/so-company-formation.md": "4c4d24b03de54a068e3320eeec28b0b260eb38bd31fb18f0d62a0906970d1f4f",
+    "skills/somalia/so-corporate-income-tax.md": "b6eb4157ca39425e7ae9d53b4dc8e8b55e590a43bdeb6e16bd905268cf08d744",
+    "skills/somalia/so-cross-border-residence.md": "3316b7247e777f3f32325d44b82e559fe5822c87b3430efc50495e32e9ccbbfc",
+    "skills/somalia/so-income-tax.md": "2ec355180b95cdde13636656ac80ed6fd8e49182ff5a3554f3519390a412b6f2",
+    "skills/somalia/so-payroll-social.md": "144c7f7a87c9dc858ea3ebf3391b6d101f04ced8509b70854959d13e7787cf6e",
+    "skills/somalia/so-tax-overview.md": "bb8d862f5b79f351769eb68a73a0587ca819786b48e09b8a244e4262013bb516",
+    "skills/somalia/so-transfer-pricing.md": "24cfca52c38f913740004e616af6280f4ef1ab92c43f98e06b899072bb858cdd",
+    "skills/somalia/so-vat-gst.md": "3d9a46423f35a8d954635abf80c7fa7abf636595b20ab93caffbe32ac3488ca2"
+  },
+  "history": {
+    "evidence/ledgers/so-cross-border-residence.md": "43cc1a6ba8527e84ecb3786207dfdb057373f346d7f86b32b5532a4a94ba63d4",
+    "evidence/ledgers/so-transfer-pricing.md": "84ea0dba940a9ce8c334e68e823202d25ffc74aa2c012948965dc87932741c4d",
+    "evidence/ledgers/somalia-candidate-manifest.json": "ae240aebb77cc9bd384ed18b09fd242e761c1850f6bf6de1959fb1be0013c2e4",
+    "evidence/ledgers/somalia-old-topics.md": "5128943da8ef5d881b77d8948bcde51e6e6ccbf6852c78d6a6afc419e6d8ffa0",
+    "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": "71d25ce8a4da622a266c85f48d9fc44ec8b635fe9a3873c35cc2a86df97973f9",
+    "evidence/ledgers/somalia-review-20261101/review.md": "a8f14fde33fd650ca5c414e1a31c832752c0a2ec40470ca50331563429c3765f",
+    "evidence/ledgers/somalia-review-closure-20261101/closure-checks.json": "8834773551f3f73c5577dd675f8fc91efb1fba8f60cbf4a9f3fdcbe021853b02",
+    "evidence/ledgers/somalia-review-closure-20261101/closure.md": "508ff5c799edf15c990bdee18f12a69be2473703beba1a80d4f544283cbdb172",
+    "evidence/ledgers/somalia-source-read-20261101.md": "c59840a7a121f1c3989e53a31b8e25064a5396e03c1be0457ccf6f5ded9e7e21",
+    "evidence/ledgers/somalia-writer-checks-20261101.md": "66049547622c3156d91b2a9bd45c9d8969add2ce238839c549e69e1e5070c098"
+  }
+}
