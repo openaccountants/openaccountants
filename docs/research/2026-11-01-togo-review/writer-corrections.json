@@ -1,0 +1,19 @@
+{
+  "reviewed_freeze": "0c5d4df4fbf8b4ff9696178f6383fe03cf80024b",
+  "correction_date": "2026-11-01",
+  "R1": "Narrowed excluded taxes, retained ordinary tax deduction and later relief treatment.",
+  "R2": "Separated quarterly domestic supplier list, added CFA5m annual customer threshold and fields.",
+  "R3": "Restored collective personnel workplace condition.",
+  "R4": "Registered operator performs transformation.",
+  "R5": "Added export domestic-taxability, ordinary input timing and catch-up limit.",
+  "R6": "Actually read signed OHADA art323 original page80 and corrected manifest scope. Added art.323 to formation Guide Sources as well.",
+  "candidate_files": {
+    "skills/togo/tg-corporate-income-tax.md": "d18f9a6fb692c15cac35f527643a23b39669e44db534876d9914576283c1b58c",
+    "skills/togo/tg-vat-gst.md": "ada6b6fde1ae30edfca3b0efc3b7ca065a528f6452c97bc3b501ebf047933dc3",
+    "docs/research/2026-11-01-togo-pack/sources.json": "4cefe58fa9f507b3453bdab88b5bb5be27ffdb0e40fb5d889f446ae996b390c6",
+    "docs/research/2026-11-01-togo-pack/ledgers/tg-corporate-income-tax.md": "93a310220e6e757c9e053923fdec2a03a300a6b7fb996e8457479571f3ec129e",
+    "docs/research/2026-11-01-togo-pack/ledgers/tg-vat-gst.md": "77c0f9111e1f7cd598be697569613e242522368833ac211f59c8905e39b76ab5",
+    "skills/togo/tg-company-formation.md": "784849b39cb0b97fc15a425689e3d6d54dd6ee57dd693868d4bbc0ff16d6471c"
+  },
+  "status": "Awaiting independent focused closure; initial review preserved unchanged."
+}

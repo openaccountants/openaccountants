@@ -1,0 +1,157 @@
+{
+  "review_date": "2026-11-01",
+  "reviewed_commit": "6477855a1c61821b0f70b8c15bf9473fe2edde4c",
+  "original_reviewed_commit": "3fc0d47e51a7f337732c9744a7abe04fbc4799d5",
+  "base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "only_ledger_change_is_offered_exact_quote": true,
+  "corrected_quote": "laguma dabaqaayo hantida maxalliga ah",
+  "source_pdf_sha256": "ee02cdda1b14270ac385469f2db90c3cc8c233b3b08c62f49e96180a4beaf85a",
+  "source_page": 93,
+  "source_article": "78(3)",
+  "current_freeze_content_hashes": {
+    "skills/somalia/README.md": {
+      "sha256": "0c18de54995e8ae6b1923616da05af64f9d4fc6bf55daa18728a81f6abd7c036",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    },
+    "skills/somalia/so-transfer-pricing.md": {
+      "sha256": "a1f5b5d1705ff8d518460b67d9ca9bdb0554c0ef7096a3365c1e453bc668415d",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    },
+    "skills/somalia/so-cross-border-residence.md": {
+      "sha256": "250f31d48ed6c89e0719708c0b6c29f446c94077aeb9e05f2448c90494b1a1c6",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    },
+    "evidence/ledgers/so-transfer-pricing.md": {
+      "sha256": "84ea0dba940a9ce8c334e68e823202d25ffc74aa2c012948965dc87932741c4d",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    },
+    "evidence/ledgers/so-cross-border-residence.md": {
+      "sha256": "43cc1a6ba8527e84ecb3786207dfdb057373f346d7f86b32b5532a4a94ba63d4",
+      "unchanged_from_original_freeze": false,
+      "matches_historical_initial_manifest": false
+    },
+    "evidence/ledgers/somalia-old-topics.md": {
+      "sha256": "5128943da8ef5d881b77d8948bcde51e6e6ccbf6852c78d6a6afc419e6d8ffa0",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    },
+    "evidence/ledgers/somalia-source-read-20261101.md": {
+      "sha256": "5e3bd1396cc0c54be8804a9220b4ce884808ba6ab2c6e3c2b93f2d8a77ccd60e",
+      "unchanged_from_original_freeze": true,
+      "matches_historical_initial_manifest": true
+    }
+  },
+  "prior_review_preservation": {
+    "evidence/ledgers/somalia-review-20261101/review.md": {
+      "sha256": "a8f14fde33fd650ca5c414e1a31c832752c0a2ec40470ca50331563429c3765f",
+      "unchanged_from_repair_commit": true,
+      "matches_original_reviewer_hash": true
+    },
+    "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": {
+      "sha256": "71d25ce8a4da622a266c85f48d9fc44ec8b635fe9a3873c35cc2a86df97973f9",
+      "unchanged_from_repair_commit": true,
+      "matches_original_reviewer_hash": true
+    }
+  },
+  "legacy": {
+    "skills/somalia/so-company-formation.md": {
+      "sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 12,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-corporate-income-tax.md": {
+      "sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-income-tax.md": {
+      "sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-payroll-social.md": {
+      "sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 10,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-tax-overview.md": {
+      "sha256": "bb8d862f5b79f351769eb68a73a0587ca819786b48e09b8a244e4262013bb516",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 13,
+      "topics_missing_from_map": []
+    },
+    "skills/somalia/so-vat-gst.md": {
+      "sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+      "base_byte_identical": true,
+      "original_review_byte_identical": true,
+      "manifest_matches": true,
+      "platform_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "topic_count": 10,
+      "topics_missing_from_map": []
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/somalia/so-transfer-pricing.md",
+        "skills/somalia/so-cross-border-residence.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "ledger_rows": {
+    "evidence/ledgers/so-transfer-pricing.md": 23,
+    "evidence/ledgers/so-cross-border-residence.md": 23
+  },
+  "old_topic_map_rows": 71,
+  "manual_recomputations": {
+    "sales_recorded": 80000,
+    "sales_supported": 100000,
+    "sales_income_increase": 20000,
+    "aggregate_voting_rights": 50,
+    "purchase_recorded": 60000,
+    "purchase_supported": 50000,
+    "purchase_income_increase": 10000,
+    "exact_presence_days": 183,
+    "short_presence_days": 182,
+    "shortfall": 1
+  }
+}

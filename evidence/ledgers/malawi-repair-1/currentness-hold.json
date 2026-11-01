@@ -1,0 +1,26 @@
+{
+  "pre_hold_candidate": "6d2d3a47fc6c343bc89b6d0accc7ba1a6c6d16f5",
+  "before_sha256": {
+    "skills/malawi/mw-company-formation.md": "e60f51c700f6055f03d53a038451827e05bb8f29800adf3821ae86655521b112",
+    "skills/malawi/mw-corporate-income-tax.md": "33a9ec6e271dd768c89eac15ca7821cfe0c978beb4776c00dbea039536373305",
+    "skills/malawi/mw-income-tax.md": "c1c97400695493a75895cfed4ed0af1a757efef50fb7577d5dadd67cbf46c13c",
+    "skills/malawi/mw-payroll-social.md": "6a22a09779d892306b8330ad9f6c4e70bec500418ab43a0b96071d4e1bcf7b44",
+    "skills/malawi/mw-tax-overview.md": "17eecf0b6efd0228beeab47859a162356cce22fbe435fc83c7789262804f4598",
+    "skills/malawi/mw-transfer-pricing.md": "476f97f5afff0f31565139191c00f6e0142328bd414efc675cc4bc681dd24afa",
+    "skills/malawi/mw-vat-gst.md": "a91f1d84d1b971fd89360693f903a4d1e6ae3674b155e4bbc973e33b901ad0a3",
+    "skills/malawi/README.md": "370d3aafea0e6aa330016744943413ab667fd0ba174fbfcd658c921ddd9a0174"
+  },
+  "after_sha256": {
+    "skills/malawi/mw-company-formation.md": "bd7a3f418b29f838cf3d177076ad5c8e39f662878ffa0968e264bc5e21841357",
+    "skills/malawi/mw-corporate-income-tax.md": "4e7a59276089115c3bc8191a4b7e3b141ee90b10747c1bf5ada1bd678f9e28ff",
+    "skills/malawi/mw-income-tax.md": "ae1e4ff96352d701086cec8d56608675e3f8dffa88efeaa91276f6bdb8bd42e6",
+    "skills/malawi/mw-payroll-social.md": "81a68db0aad5fc65c6a884b142be830a9f6a02b0920eeda0ded7df5578994b6f",
+    "skills/malawi/mw-tax-overview.md": "d9e640183d44914d3688b51358c01dfe17fc5280c90b6da2dda081e4ae2796a7",
+    "skills/malawi/mw-transfer-pricing.md": "3241bd33dd3efd12048dfe633aba76dfac5b0566875332424fb82bf611907a79",
+    "skills/malawi/mw-vat-gst.md": "ad8e2913dc11e7ec83360e37f8e710f5b9159a36962962e776edf7973e548056",
+    "skills/malawi/README.md": "e73cd39e9f0c377e972a2046081b03ec61dc08efb47ddc96e22b1d547755be55"
+  },
+  "purpose": "Prominent live-use hold while required currentness evidence remains unread, not a substitute for resolving it.",
+  "remaining_finding": "4 still open; no 2026 acceptance requested.",
+  "preserved": "Original review, initial source/candidate manifests, all ledger legal rows,14oa blocks and original CTA/platformfields."
+}

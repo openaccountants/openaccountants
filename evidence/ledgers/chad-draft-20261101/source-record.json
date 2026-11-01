@@ -1,0 +1,27 @@
+{
+  "read_on": "2026-11-01",
+  "sources": [
+    {
+      "file": "arrete-135-2026.pdf",
+      "url": "https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf",
+      "sha256": "f92a1e4568b8ac1fead585400209de4ec327a18bd5a9728e1687f59c05758f5a",
+      "bytes": 668632,
+      "actually_read": "Entire two-page order, preamble and arts1\u20133. Both rendered pages visually checked; signature9September2026.",
+      "private_capture": "../sources/arrete-135-2026.pdf"
+    }
+  ],
+  "not_read_as_source": [
+    "CGI2025 certificate failure",
+    "MESRS finance-law PDF403 and blank ordinarybrowservisit"
+  ],
+  "additional_capture_scope": "Ministry2026finance law fetched; selective OCR reading underway, not source for this narrow Guide.",
+  "legacy_sha256": {
+    "td-company-formation.md": "d848cc81cd32e0db312720124b51a8dd909a9c18ffb3569bb2d7b4dc9b39d713",
+    "td-corporate-income-tax.md": "563eed97ec6923d94f756992f2a2a0fe2952680d112879f4bdd9766b4c248825",
+    "td-income-tax.md": "afeb8d9a2fa372788d0ab72d52e9dc4eec301e1b9f6926a22289d1ccaa5979e5",
+    "td-payroll-social.md": "28f5a767820194e5a203489b5dd7f3c07b91d65358cbfcdc688154e0e0b52787",
+    "td-tax-overview.md": "f608ec557c514d9c69cf695ebac3bd29ae694e9981ac1addefddf69f4fd67f08",
+    "td-vat-gst.md": "93bd9d26f0639167651c7f9aea090133cffb5c8a416ce30684aa565dd9bfed13"
+  },
+  "publication": "No push/PR/merge; independent review pending"
+}

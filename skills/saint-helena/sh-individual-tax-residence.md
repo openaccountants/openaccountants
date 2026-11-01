@@ -1,8 +1,8 @@
 ---
 name: sh-individual-tax-residence
 description: >
-  Saint Helena island individual income-tax residence reference checked in 2026. Explains the three alternative statutory residence tests, exact day-count boundaries, employment-contract route, arrival and departure provisions, and the Commissioner’s limited travel discretion. Separates tax residence from immigration and from the source of income. Identifies discrepancies between the published residency leaflet and the official law, including the non-resident employment allowance. Use with documented travel dates, contracts and residence evidence. Does not cover Ascension or Tristan da Cunha, treaty residence, immigration permission, or a complete later-amendment audit. Independent accountant review remains pending.
-version: 0.2
+  Saint Helena island individual tax residence for tax year 2026 (1 April 2026 to 31 March 2027). Covers the three section 2 tests (more than 90 days with a normal abode, more than 183 days, a contract of at least 183 days), arrival and departure, the one-tenth travel discretion, the source rule, and where the official leaflet conflicts with the statute. Use for residence, days on island or part-year allowance questions on St Helena. Does not apply to Ascension or Tristan da Cunha.
+version: 0.3
 jurisdiction: SH
 tax_year: 2026
 last_updated: 2026-11-01
@@ -14,45 +14,100 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Saint Helena island: individual tax residence
+# Saint Helena island: individual tax residence v0.3
 
-## Island and year
+> **General reference only.** This skill is general tax reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts. It covers Saint Helena island only, not Ascension or Tristan da Cunha, which have separate laws.
 
-These rules concern Saint Helena island. Ascension and Tristan da Cunha have separate laws, as the [official legislation introduction](https://www.sainthelena.gov.sh/st-helena/government/legislation/laws-of-st-helena/) explains. The SH jurisdiction code must not be read as extending this Guide to those islands.
+## Who this applies to
 
-The tax year starts on 1 April and runs for twelve months. This Guide addresses the rules checked during 2026, including the tax year 1 April 2026 to 31 March 2027. [Income Tax Ordinance, section 2](https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021).
+Individuals asking whether they are resident for income tax on Saint Helena island. Ascension and Tristan da Cunha have separate laws, as the [legislation introduction](https://www.sainthelena.gov.sh/st-helena/government/legislation/laws-of-st-helena/) explains. The SH code does not extend this skill to those islands. Tax residence does not establish immigration status (Tax Guide 12).
 
-## Three alternative tests
+## Rates, bands and thresholds
 
-Section 2's definition of residence provides three routes for an individual. Meeting one is sufficient, subject to its provisos:
+| Item | Figure and conditions | Tax year | Official URL |
+|---|---|---|---|
+| Normal abode route | Normal place of abode in Saint Helena and present for more than 90 days of the tax year (s.2) | 2026 | https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021 |
+| Physical presence route | Present for periods exceeding in aggregate 183 days in the tax year (s.2) | 2026 | same |
+| Employment contract route | Present in the year fulfilling a contract of employment exercised in Saint Helena specified to be of not less than 183 days (s.2) | 2026 | same |
+| Travel discretion | Commissioner may disregard up to one tenth of the relevant days if presence resulted only from infrequent travel opportunities (s.2 first proviso) | 2026 | same |
+| Monthly allowance | 1/12 of £7,000 for each month resident, or each month receiving Saint Helena employment income if non-resident (s.10(3)) | 2026 | same |
 
-| Route | Statutory condition |
-|---|---|
-| Normal abode | Normal place of abode in Saint Helena and presence for **more than 90 days** in the tax year |
-| Physical presence | Presence for periods **exceeding 183 days in aggregate** in the tax year |
-| Employment contract | Presence in the year fulfilling employment exercised in Saint Helena under a contract specified to last **not less than 183 days** |
+## The base
 
-These boundaries differ. Exactly 90 days does not satisfy the first route; exactly 183 days does not satisfy the second. A contract of exactly 183 days satisfies the duration element of the third route, but the other employment and presence conditions still apply. Do not decide non-residence merely because one test fails. [Section 2, definition of resident in St Helena](https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021).
+Meeting one route is sufficient. The boundaries differ: exactly 90 days does not meet the first, exactly 183 days does not meet the second, and a contract of exactly 183 days meets the duration part of the third, though the other conditions still apply. Do not decide non-residence because one test fails.
 
-## Arrival, departure and travel disruption
+Arrival and departure: a person resident this year but not last year is resident only from the first day present. A person resident this year but not next year is resident only to the last day present. A final conclusion can depend on an adjacent year.
 
-Under the same definition, a person resident in the current year but not the preceding year is treated as resident only from their first day present in the current year. A current-year resident who is not resident in the following year is treated as resident only through their last day present in the current year. A final conclusion can therefore depend on an adjacent year's facts.
+The travel discretion is not an automatic adjustment. Keep evidence and any determination with the calculation.
 
-The Commissioner can disregard a period no greater than one tenth of the relevant day count if satisfied that presence resulted only from infrequent opportunities to travel. This is a statutory discretion, not an automatic traveller adjustment. Keep evidence and any determination with the calculation. [Section 2 provisos](https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021).
+Residence does not replace the source test. Section 8 charges income in or from Saint Helena. Employment exercised on the island is within scope even if paid overseas, and income of a resident from service on certain vessels is included (s.2). Do not reduce this to a rule that overseas-paid income is exempt.
 
-## Residence does not replace the source test
+## Deadlines and filing
 
-Section 8 charges income earned, accrued or derived in or from Saint Helena, with section 2 providing detailed source inclusions. For example, employment exercised on the island can be within scope even when payment occurs overseas. Certain income from services on vessels is also specifically included. Do not reduce this to a rule that all overseas-paid income is exempt. [Sections 2 and 8](https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021).
+There is no separate residence filing. Residence feeds the allowance and the return.
 
-## Conflicting leaflet
+1. Build a day count for 1 April to 31 March.
+2. Test each route, then the adjacent years.
+3. Employees: declare the expected duration if not ordinarily or only temporarily resident (Regulation 6(4)), and on starting or ceasing employment (Regulation 6(3)).
+4. If a boundary turns on the travel discretion, ask the Commissioner at the Income Tax Office before filing.
+5. Enter the months resident on the [personal return](sh-personal-income-tax.md).
 
-The [official residency leaflet](https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-1-Residency-in-St-Helena) describes the normal-abode test as at least 90 days and states that non-residents receive no personal allowance. The statutory text above says more than 90 days. Section 10(3)(b) also expressly provides a monthly allowance entitlement for non-residents receiving Saint Helena employment income. Use the statutory wording, and resolve an individual boundary case before filing. Tax residence does not itself establish immigration status; the leaflet expressly separates the two.
+Suggested evidence: travel ledger, accommodation and normal-abode facts, signed employment contract, actual place of work, previous and following year residence, and any Commissioner direction.
 
-Suggested evidence: travel ledger, accommodation and normal-abode facts, signed employment contract, actual place of work, previous/following-year residence and any Commissioner direction. This is a preparation checklist, not a substitute residence test.
+## Penalties and interest
 
-## Verification boundary
+Residence has no penalty of its own. A wrong claim in a return falls under s.68: 75% if knowing or reckless, 20% otherwise.
 
-Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
+## Cross-border points
+
+The official Tax Guides conflict with the statute at two points. Guide 1 states the normal-abode test as at least 90 days, and Guides 1 and 12 say non-residents receive no personal allowance. The statute says more than 90 days, and s.10(3)(b) gives non-resident employees a monthly allowance. The statute wins; resolve a boundary case with the office before filing. Treaty tie-breakers: see [cross-border points](sh-cross-border.md).
+
+## Two worked examples that recompute
+
+Example 1: the most the Commissioner may disregard against the 183-day count.
+
+```oa-check
+name: Travel discretion ceiling
+inputs:
+  days: 183
+  share: 0.1
+steps:
+  - ceiling: days * share
+expected:
+  ceiling: 18.30
+```
+
+Example 2: resident six months of the year.
+
+```oa-check
+name: Part-year allowance
+inputs:
+  allowance: 7000
+  months: 6
+steps:
+  - part: allowance * months / 12
+expected:
+  part: 3500.00
+```
+
+
+## Ask the client first
+
+- Days present in this tax year and the two adjacent years?
+- Normal place of abode?
+- Contract length, and where the work is done?
+- Any travel disruption, and any Commissioner direction?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Ordinance 2012 and Income Tax Regulations 2012, consolidation authoritative at 1 October 2021, read for the sections and regulations cited | https://www.sainthelena.gov.sh/documents/Income-Tax-Ord-Updated-011021 | 2026-11-01 |
+| Tax Guide 1, Residency in St Helena, read for the residence tests and allowance | https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-1-Residency-in-St-Helena | 2026-11-01 |
+| Tax Guide 12, Questions on Taxes and Allowances (April 2024), read in full | https://www.sainthelena.gov.sh/documents/Tax-Guide-No.-12-Questions-on-Taxes-Allowances-on-St-Helena | 2026-11-01 |
+| Laws of St Helena index, read in full | https://www.sainthelena.gov.sh/st-helena/government/legislation/laws-of-st-helena/ | 2026-11-01 |
+
+Not yet confirmed: Any instrument after the 1 October 2021 consolidation: the Laws index, press pages and 2026 Income Tax Office page show no enacted change to these rates, and a full Gazette audit was not done. How part months count toward the 1/12 allowance. How days of arrival and departure are counted.
 
 <!-- openaccountants-cta-block -->
 

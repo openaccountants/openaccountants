@@ -1,0 +1,36 @@
+tg-company-formation.md: 110 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 2be80a7fb82e42cf01acb0e9c6f8882cbd1eaf57313d0f6ff29739b5b72868fa
+Independent recomputation PASS: Capital funding choice between SARL and SA {'sarl_min_paid': 300000.0, 'sa_min_paid': 2500000.0, 'sarl_headroom': 100000.0, 'sa_shortfall': 2100000.0}
+Independent recomputation PASS: Fee category changes residual formation budget {'national_balance': 21750, 'foreign_balance': 16750, 'fee_difference': 5000}
+tg-corporate-income-tax.md: 106 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 aaef024978f2ea443c40cb958ff4bacfb91a34e2c724670ab907c02b78fcec48
+Independent recomputation PASS: Ordinary IS after capped losses {'used_loss': 10000000.0, 'profit_tax': 2700000.0, 'mfp': 1800000.0, 'liability': 2700000.0, 'loss_balance': 4000000.0}
+Independent recomputation PASS: Minimum-tax decision in a low-profit year {'profit_tax': 270000.0, 'mfp': 800000.0, 'liability': 800000.0, 'uplift': 530000.0}
+tg-cross-border.md: 109 description words; metadata/title/notice PASS; new; no platform/trust/attribution keys or copied CTA; sha256 487c1a42a8474a3f8d434ff1fa18a9518c3c852964c41731f141e18829084de5
+Independent recomputation PASS: Gross contractual fee under domestic withholding {'withheld': 200000.0, 'cash_to_supplier': 800000.0}
+Independent recomputation PASS: Gross versus net contract decision {'grossed_fee': 1250000.0, 'withheld': 250000.0, 'extra_cost': 250000.0}
+tg-income-tax.md: 103 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 5751e99a51586ce0f0fa2ed1040a165d9ee351e9782c109378d73f51ac11de71
+Independent recomputation PASS: Annual salary taxable base before scale {'tax': 163000}
+Independent recomputation PASS: TPU classification changes the answer {'production_tax': 800000.0, 'services_tax': 3200000.0, 'difference': 2400000.0}
+tg-payroll-social.md: 111 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 e84cfeca4f26eba222b88de643e5d4d344fbab104a319f142923e0d1293181cd
+Independent recomputation PASS: Monthly employee and employer contribution schedules {'employee_total': 27000.0, 'employer_total': 67500.0}
+Independent recomputation PASS: Annual employment deduction and dependant decision {'with_family': 2118000, 'tax_with': 36540, 'tax_without': 43740, 'saving': 7200}
+tg-tax-overview.md: 108 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 44f73f2d512162ecd581e90d84bebffdcf11d42cf384272944bb825ebf18fa65
+Independent recomputation PASS: Working paper from records to business profit {'book_profit': 3000000, 'tax_profit_before_other_adjustments': 3200000}
+Independent recomputation PASS: Cash reserve after verified tax schedules {'income_balance': 700000, 'reserve': 826000, 'overreserve_if_instalments_ignored': 2000000}
+tg-transfer-pricing.md: 111 description words; metadata/title/notice PASS; new; no platform/trust/attribution keys or copied CTA; sha256 455cf875208e38431e1d07b092cbb8d11bd7d6c21486b7ec12c59d8cbebc4477
+Independent recomputation PASS: Arm length sale adjustment {'adjustment': 20000, 'adjusted_profit': 60000, 'incremental_is': 5400.0}
+Independent recomputation PASS: Documentation penalty floor versus percentage {'small_percentage': 2500000.0, 'small_fine': 10000000, 'large_fine': 15000000.0}
+tg-vat-gst.md: 108 description words; metadata/title/notice PASS; old platform keys / entire CTA exact; sha256 06d63c3c23bdd3968b083bc35f2ecbcb6db155db80dcdea7f730d5ea0ad216fd
+Independent recomputation PASS: Ordinary month with eligible inputs {'output_tax': 180000.0, 'vat_payable': 126000.0}
+Independent recomputation PASS: Deductibility changes the invoice decision {'restaurant_vat': 18000.0, 'correct_payable': 126000.0, 'incorrect_payable': 108000.0, 'understatement': 18000.0}
+README: seven applicable domains remain partial; all routes resolve
+Six pinned old Guide blobs and SHA256 values independently match
+65 old-topic destination rows; six retained source Guides; no shrink over 25%
+Scoped validator: errors=[]; warnings=[]
+tg-company-formation.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-corporate-income-tax.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-cross-border.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-income-tax.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-payroll-social.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-tax-overview.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-transfer-pricing.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}
+tg-vat-gst.md skill checks: {'tax_year_current': [], 'sources_read_dates': [], 'rates_rows_sourced': [], 'canonical_headings': [], 'two_oa_checks': [], 'version_numeric': [], 'tier_honest': [], 'no_em_dash': [], 'not_yet_confirmed': [], 'reviewed_on': [], 'read_date_evidence': [], 'sources_columns': [], 'source_hosts': [], 'jurisdiction_body': [], 'year_matches_link': []}

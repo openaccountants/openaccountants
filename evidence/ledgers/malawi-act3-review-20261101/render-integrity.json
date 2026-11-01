@@ -1,0 +1,41 @@
+{
+  "renderer": "pdftoppm -png actual-PDF temp-prefix",
+  "pages": [
+    {
+      "page": "page-1.png",
+      "independent_render_sha256": "ae2e1b0ab0aff1d30bc49d8386c6bdc28711783ce45e7d853637f85e792dec03",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-1.png"
+    },
+    {
+      "page": "page-2.png",
+      "independent_render_sha256": "4b9d7ea9d173cc4ede6960518e3bb9cbebe91367187e21466c6e963560959680",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-2.png"
+    },
+    {
+      "page": "page-3.png",
+      "independent_render_sha256": "66b92dea2d526d79949712bcb65a5f132eacd60070f8de07012f64b7060d4b03",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-3.png"
+    },
+    {
+      "page": "page-4.png",
+      "independent_render_sha256": "3bcdbb663a79e9fba7066dfeb3d173612f026aaf60e0d61b9cf1576ba968605d",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-4.png"
+    },
+    {
+      "page": "page-5.png",
+      "independent_render_sha256": "b9ac2eafb40cf23a9d02069ee57c7fc8f8268a0e6b5657f5a552b9b7f7d6be76",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-5.png"
+    },
+    {
+      "page": "page-6.png",
+      "independent_render_sha256": "2e379866490a7d54cb8291c566e096a4745fa87a84073ecfa05cef056e79e3a6",
+      "matches_read_capture": true,
+      "temporary_render": "/var/folders/pj/vg667pq518b5j2_99qg505n00000gp/T/mw-act3-review-ll4fa81l/page-6.png"
+    }
+  ]
+}
