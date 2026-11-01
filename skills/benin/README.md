@@ -51,6 +51,6 @@ The numerical TPS eligibility order, June exemption-transition timing, special i
 
 ## Property-disposal TPVI addition, 1 November 2026
 
-The [property-disposal TPVI working paper](bj-property-gains-tax.md) adds ordinary private immovable-sale computation, the separate business-balance-sheet exemption, land/construction split, gain-based tax versus sale-price minimum, and registration/payment responsibility. Property-rich securities and mining titles are screened without inventing their missing specialist bases or treaty outcomes. The 36-row source ledger and two executable examples are pending independent source review.
+The [property-disposal TPVI working paper](bj-property-gains-tax.md) adds ordinary private immovable-sale computation, the separate business-balance-sheet exemption, land/construction split, gain-based tax versus sale-price minimum, and registration/payment responsibility. Property-rich securities and mining titles are screened without inventing their missing specialist bases or treaty outcomes. The [independent TPVI source review](../../evidence/ledgers/benin-tpvi-review-20261101/review.md) checked all 36 ledger rows and both executable examples on 1 November 2026.
 
 All eleven preceding Guide bodies and prior Benin evidence remain exact. All seven domains remain partial. Current reference-acquisition-value instruments, noncash/loss and securities/mining interactions, registration due-day/form details and full later-law currentness remain held. This does not reopen the accepted property/rental or IBA review.
