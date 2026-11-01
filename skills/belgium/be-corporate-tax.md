@@ -1,13 +1,13 @@
 ---
 name: be-corporate-tax
 description: "Belgian corporate income tax (vennootschapsbelasting / impôt des sociétés) for income year 2026 (assessment year 2027): companies resident in Belgium and Belgian permanent establishments of foreign companies (belasting niet-inwoners). Covers the 25% rate and the 20% small-company rate on the first EUR 100,000 with the 2026 director pay test (EUR 51,000), the 20% cap on flat-rate benefits in kind, the taxable base, the dividends received deduction, the capital gains exemption on shares, the 70% basket rule above EUR 1m, loss carry-forward, the group contribution, the interest limit, advance payments and the 6.75% increase, Biztax filing, penalties, 30% withholding and the parent-subsidiary exemption. Trigger on: vennootschapsbelasting, VenB, impôt des sociétés, ISoc, verlaagd tarief, bedrijfsleidersbezoldiging, DBI, RDT, korf, groepsbijdrage, voorafbetalingen, Biztax, roerende voorheffing. Out of scope: be-income-tax, be-capital-gains, belgium-payroll, be-vat-return, belgium-financial-statements."
-version: 0.1
+version: 0.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -238,8 +238,6 @@ expected:
 | FOD Financiën, investeringsaftrek | https://financien.belgium.be/nl/ondernemingen/vennootschapsbelasting/belastingvoordelen/investeringsaftrek | 2026-10-22 |
 
 Not yet confirmed: the Biztax filing deadline for AY 2027 (31 December 2026 year-ends), not published on 22 October 2026; the exact periods to which the earlier temporary 40% basket share applied (the 70% text in force for 2026 was confirmed, the 40% history was not); the size thresholds of art. 1:24 WVV (the FOD Financiën advance payments page shows EUR 9,000,000 turnover and EUR 4,500,000 balance sheet, which may be out of date, so this skill does not rely on them); and the AY 2028 advance payment percentages that follow from the law of 15 July 2026.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

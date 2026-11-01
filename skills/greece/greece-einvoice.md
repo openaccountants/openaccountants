@@ -1,10 +1,10 @@
 ---
 name: greece-einvoice
 description: Use this skill whenever asked about e-invoicing in Greece, myDATA platform, AADE electronic books, MARK unique registration number, real-time tax book reporting, e-invoicing providers in Greece, myDATA API, income/expense classification, QR code on Greek invoices, or any question about issuing, transmitting, validating, or archiving electronic invoices under Greek law. Trigger on phrases like "myDATA", "AADE", "MARK number", "Greek e-invoice", "electronic books Greece", "myDATA API", "SendInvoices", "e-timologio", "AFM tax number", "income classification", "expense classification", or "Greek VAT invoice", "mandatory e-invoicing Greece 2026", "timologio". Covers tax year 2026, including the mandatory B2B and B2G e-invoicing dates (2 March 2026 and 2 November 2026). VAT rates and returns are in greece-vat-return. ALWAYS read this skill before touching any Greece invoicing compliance work.
-version: 1.1
+version: 1.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -332,8 +332,6 @@ Not yet confirmed: the B2G format and channel rules outside Α.1128/2025 (Peppol
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
 The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

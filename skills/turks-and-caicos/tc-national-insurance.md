@@ -2,13 +2,13 @@
 name: tc-national-insurance
 description: >
   Turks and Caicos National Insurance Board contribution reference checked for 2026 for ordinary private-sector employment. Covers the employee and employer shares, monthly insurable earnings ceiling, payroll examples and employer registration and remittance responsibilities. Uses the Board’s current administrative rate page and distinguishes national insurance from the separate health-insurance plan. Use after the worker’s coverage and insurable earnings have been established. Public officers, self-employed workers, voluntary contributions, age transitions and detailed wage classifications require their own assessment. Conflicting self-employed figures on official pages are recorded rather than resolved by assumption. This source-cited draft awaits legislative reconciliation and independent accountant review.
-version: 0.1
+version: 0.2
 jurisdiction: TC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -45,8 +45,6 @@ Suggested closing controls: match worker identifiers to the contribution schedul
 The contribution page states 11% for self-employed persons, while the institutional page describes 10% from April 2024. The current effective date and legal instrument for that category have not been reconciled. No self-employed calculation is supplied here.
 
 This is an administrative-source draft. The National Insurance Ordinance and subsequent contribution amendments, the exact remittance deadline, weekly limits, earnings inclusions, age boundaries and multiple-employer treatment still need legislative verification. No benefit entitlement is inferred from the examples. Independent accountant review remains pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

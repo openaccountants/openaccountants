@@ -2,13 +2,13 @@
 name: sx-wage-tax-tables
 description: >
   Sint Maarten wage-tax table reference for 2026 based on Annex II to AB 2026 number 11. Covers pay-period selection, the column-thirteen wage-tax base, exact nil-withholding thresholds, the embedded basic credit and the top-of-table calculation. Includes the official low-pay and high-pay examples and distinguishes extraordinary-payment rates from normal salary withholding. Explains why the source’s conditional AOV/AWW illustration does not establish a complete contribution regime. Applies to Dutch Sint Maarten only. Benefits, coverage, employer registration, complete reporting and social-insurance rates need separate verification. Independent accountant review remains outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: SX
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -71,8 +71,6 @@ Annex II has a separate table for bijzondere beloningen, with income thresholds 
 As recommended working papers, retain the pay-period choice, column 13 computation, applicable threshold or table row, deduction evidence and tax result. Reconcile these to the employee wage statement and remittance records. A zero wage-tax result does not establish zero AOV/AWW, medical insurance or other payroll obligations.
 
 Checked 22 October 2026 from downloaded regulation and Annex II; the threshold/example page was visually inspected. Full payroll coverage, benefits in kind, social contributions, registration, remittance, annual reporting, later changes and independent accountant review remain open. This draft does not provide a complete payroll implementation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

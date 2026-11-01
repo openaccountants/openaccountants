@@ -2,13 +2,13 @@
 name: sj-svalbard-company-income-tax
 description: >
   Svalbard company income-tax scope and rate reference for 2026. Covers local office and management, nonresident business duration, property income, allocation between Svalbard and mainland activity, ordinary sixteen-percent taxation and the special twenty-two-percent profit band. Uses the enacted annual decision rather than a budget proposal and includes numerical examples showing how payroll and physical assets affect the higher-rate slice. Distinguishes companies from sole proprietors and employee residence. Filing guidance is included with scope limits. Formation, detailed deductions, international relief, withholding procedures and independent accountant review remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -69,8 +69,6 @@ The annual decision's section 6 specifies **20%** for dividends within its cross
 ## Verification limits
 
 Svalbard only; Jan Mayen is outside this Guide. Checked 22 October 2026 against the consolidated Act and enacted annual decision. Formation, accounts, detailed deductions and losses, special company regimes, withholding administration, VAT/customs, treaties, payment and independent accountant review remain outstanding. These three initial topics do not constitute comprehensive jurisdiction coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

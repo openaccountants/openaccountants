@@ -2,13 +2,13 @@
 name: sh-personal-income-tax
 description: >
   Saint Helena island ordinary personal income tax reference checked for 2026. Covers the April-to-March tax year, personal allowance, statutory monthly eligibility, ordinary chargeable-income bands and worked annual examples. Distinguishes the rejected 2026 allowance proposal from enacted law and separates employee refund returns from business and property filing duties. Uses the Income Tax Ordinance and the government’s 2026 filing reminder. Excludes mixed preferential business income, dividend calculations, gains, pension allowance calculations and overseas tax credits. Does not apply to Ascension or Tristan da Cunha. Later-instrument reconciliation and independent accountant review remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -51,8 +51,6 @@ Schedule 1 has separate rules for dividends, gains and specified production acti
 ## Verification boundary
 
 Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

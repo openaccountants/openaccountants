@@ -1,13 +1,13 @@
 ---
 name: uk-scottish-income-tax
 description: "Scottish income tax for UK resident individuals, tax year 2026/27 (6 April 2026 to 5 April 2027), with the 2025/26 bands for returns filed now. Covers who is a Scottish taxpayer (Scotland Act 1998 ss 80D to 80F: close connection, main home, midnight days count), the six Scottish rates and band limits set by the Scottish Rate Resolution 2026-27, why savings and dividends stay on UK rates and the UK basic rate limit, the Personal Allowance taper, how the SA100 computes it, Gift Aid and relief-at-source pension extensions of the Scottish limits, and PAYE S codes (S1257L, SBR, SD0 to SD3). Trigger phrases: Scottish taxpayer, Scottish income tax, intermediate rate 21%, S tax code, live in Scotland tax return, moving to Scotland tax. Out of scope: UK-wide rules and allowances (uk-income-tax-sa100), self-employment profits (uk-self-employment-sa103), National Insurance (uk-national-insurance), payroll running (uk-payroll), residence (uk-statutory-residence-test)."
-version: 0.1
+version: 0.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -240,8 +240,6 @@ expected:
 | Finance Act 2026 s 4 (dividend ordinary and upper rates from 2026-27) | https://www.legislation.gov.uk/ukpga/2026/11/section/4 | 2026-10-23 |
 
 Not yet confirmed: the SA100 and SA100 notes box wording for Scottish status (the form itself was not read); the rest of HMRC's Scottish Taxpayer Technical Guidance (only STTG4100, 4400 and 4500 were read); whether the Scottish Parliament has set separate Scottish property rates for 2027/28 under s 80C(2B).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
