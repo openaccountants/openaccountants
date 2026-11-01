@@ -1,0 +1,18 @@
+{
+  "prior_head": "53b95072b58d3b4e4756181f7925322635c7a3ee",
+  "reason": "Committed-diff publication whitespace check found new blank line at EOF. No legal text, examples, metadata, platform suffix or historical review record changed.",
+  "files": {
+    "skills/madagascar/mg-cross-border.md": {
+      "before_sha256": "d67ea7b31c1acdaf2f9bda9c02246e52dcf938a010e32321404c1053034de43a",
+      "after_sha256": "d40fd1d124817b234c91f581665534f040705921f29e21c94968c4b0329cdcfd",
+      "removed_bytes": 1,
+      "identical_except_terminal_newlines": true
+    },
+    "skills/madagascar/mg-transfer-pricing.md": {
+      "before_sha256": "036ea4951556876ea5aaff3b391ad13d9c55e35641b6bdd5b5ba130d39c13d27",
+      "after_sha256": "b2c65f884bad056ff1fd37560f15dec21932c17847b69e322372a40c27dc3a28",
+      "removed_bytes": 1,
+      "identical_except_terminal_newlines": true
+    }
+  }
+}
