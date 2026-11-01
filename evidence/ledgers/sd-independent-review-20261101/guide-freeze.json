@@ -1,0 +1,170 @@
+{
+  "skills/sudan/sd-capital-gains.md": {
+    "sha256": "e184da3ca1e4fa8cb03e4bcc5275e6cf85bf1d49b1856acfc1aa1672e484d722",
+    "description_words": 110,
+    "version": 0.1,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "no_new_platform_fields": true
+  },
+  "skills/sudan/sd-company-formation.md": {
+    "sha256": "872eddda2a6ed805c1868470d375f1656f9641a2c9d6dd18681fefd54d109e5d",
+    "description_words": 107,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "5c98c24c6083836328b67b6d4846bbafb786c5668eef2a4c3ea319b1cf65c466",
+    "old_chars": 19570,
+    "new_chars": 16555
+  },
+  "skills/sudan/sd-corporate-income-tax.md": {
+    "sha256": "e403606344ace773375d5a281c13e7d2abc075f3db1d36c19b21e651a10f182b",
+    "description_words": 108,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "2a69cb4e5b7482e8174a02b17fa687f3bdca1b39078b7ff633b2004d67739a9f",
+    "old_chars": 17792,
+    "new_chars": 14982
+  },
+  "skills/sudan/sd-cross-border-residence.md": {
+    "sha256": "9c48912984f1c4078811aa50a1c461829d755fa51e073c1ed03df235071d6613",
+    "description_words": 111,
+    "version": 0.1,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "no_new_platform_fields": true
+  },
+  "skills/sudan/sd-income-tax.md": {
+    "sha256": "ba7c4156a354fce1a7f705c11eb1fe0cf67050ece887087035198d1c873f8ce1",
+    "description_words": 103,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "24d6e789c4d66cdcbc50e35768f6b49635b152c5d81b70baba0c4fd8529c2686",
+    "old_chars": 18199,
+    "new_chars": 15794
+  },
+  "skills/sudan/sd-payroll-social.md": {
+    "sha256": "99842cb1d20a35274333c7b5a63667be424d621c9827c37d2f003d29baa0de66",
+    "description_words": 106,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "b86a3e6e103f55257fb2f30db727d6b7176233c26605fdf6363e9076dddaf688",
+    "old_chars": 17571,
+    "new_chars": 16137
+  },
+  "skills/sudan/sd-tax-overview.md": {
+    "sha256": "1c0ecfd0b90d11b2682fd3f8b8364788115d8035dbf4a11cb196b7714caa9869",
+    "description_words": 109,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "b49b1023f99a5a725e33685438f5f69fe8a0d8b6ec6b55089af20bb5edac9db9",
+    "old_chars": 18599,
+    "new_chars": 14020
+  },
+  "skills/sudan/sd-transfer-pricing.md": {
+    "sha256": "7b26a2723ce67bb87cec3223d91ac0128c2c1c6cc1de853952366187e3b2bc7f",
+    "description_words": 110,
+    "version": 0.1,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "no_new_platform_fields": true
+  },
+  "skills/sudan/sd-vat-gst.md": {
+    "sha256": "fae1e4d7f6cd4065d8678cefb5757ad7251659d3a9a3f7da5c81080a9bf6f393",
+    "description_words": 106,
+    "version": 0.2,
+    "examples": 2,
+    "opening_notice": true,
+    "later_chain_hold": true,
+    "not_yet_confirmed": true,
+    "platform_fields_equal": {
+      "authored_by": true,
+      "review_status": true,
+      "trust_label": true,
+      "reviewed_by": true,
+      "verified_by": true,
+      "tier": true,
+      "license": true,
+      "depends_on": true
+    },
+    "cta_byte_equal": true,
+    "old_sha256": "cae3c29029013ecf0d68db10797e1c4a2e7c8e2ae1e8b3ec6fb689b090407255",
+    "old_chars": 20608,
+    "new_chars": 17552
+  }
+}

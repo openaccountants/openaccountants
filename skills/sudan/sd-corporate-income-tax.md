@@ -1,10 +1,11 @@
 ---
 name: sd-corporate-income-tax
-description: Use this skill whenever asked about Sudanese corporate income tax (Business Profits Tax) for resident companies, branches of foreign companies, and petroleum operations — to compute, review, or explain BPT liability, sector rates, deductions, losses, free zones, and the petroleum PSA regime. Trigger on phrases like "Sudan corporate tax", "Sudan BPT", "business profits tax Sudan", "ضريبة أرباح الأعمال السودان", "Sudan petroleum tax", or any request to prepare or check a Sudanese corporate tax return. ALWAYS read this skill before touching any Sudan corporate tax work.
-version: 0.1
+description: >
+  Prepare Sudan company business profit workpapers for 2026 intake from the official Income Tax Act and identified amendments, without treating an incomplete historical chain as current certification. Covers ordinary resident companies, industrial businesses, foreign branches and sector classification, with expense, capital allowance, loss and collection controls. Match Sudan corporate income tax, business profits tax, BPT, taxable profits, company losses and ضريبة أرباح الأعمال requests. Separate general company profit from telecom net income, agriculture and concession arrangements. Document accounting periods, audited evidence, withholding credits and unresolved regulations. This Guide supports a broad statutory baseline computation and review handoff, with a firm stop before an operative filing or rate conclusion.
+version: 0.3
 jurisdiction: SD
-tax_year: 2025
-last_updated: 2026-07-22
+tax_year: 2026
+last_updated: 2026-11-01
 authored_by: Ahmed Hassan
 review_status: pending_review
 trust_label: Accountant-authored
@@ -13,275 +14,133 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan Corporate Income Tax (Business Profits Tax — BPT) Skill v0.1
+# Sudan company business profits v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Currency note:** All monetary figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
-> **YMYL — verify before relying.** Sudan's tax legislation has been subject to amendments, and the political situation (post-2021 military takeover, ongoing conflict since April 2023) has disrupted tax administration. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), PwC Worldwide Tax Summaries, or a qualified Sudan accountant before filing.
+> **2026 intake, partial statutory baseline.** Figures below reproduce identified opened instruments, not a completed operative 2026 consolidation. Before filing, paying, granting relief or advising registration, reconcile later enacted amendments and obtain the missing regulations, current forms and directions named in Sources. Passing arithmetic or format checks does not clear this gate. Amounts are source-period SDG; no currency redenomination or indexation is assumed.
 
----
+## Who this applies to
 
-## Section 1 — Scope statement
+Ordinary company business-profit preparation, including industrial classification and foreign-company intake. Use [cross-border](sd-cross-border-residence.md) for residence/source/agent questions and [transfer pricing](sd-transfer-pricing.md) for associated dealings. Investment licences, concessions, banks, insurance and extractive activities require their own operative terms. Do not infer a single general rate for every sector.
 
-This skill covers:
+## Rates, bands and thresholds
 
-- Business Profits Tax (BPT) rates and sector differentiation for resident companies
-- Taxable income determination (accounting profit -> taxable profit adjustments)
-- Allowable and disallowed deductions (Income Tax Act 1986, Art 18)
-- Loss carryforward rules
-- Withholding tax obligations on outbound payments (dividends, interest, royalties, services)
-- Free Zones Act 2001 and investment incentive regime (Investment Incentive Law 2021)
-- Petroleum production sharing agreement (PSA) regime — special tax treatment
-- Filing requirements and self-assessment
+| Item | Opened source wording and conditions | Official source |
+|---|---|---|
+| General company | 20% source-period business profit after 2019 amendment; classification and later-law gate apply. | [Income Tax Amendment 2019 s.2(2)(c)–(d), PDF1](https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf) |
+| Industrial company | 15% source-period business profit after 2019 amendment; industrial qualification requires evidence. | [Income Tax Amendment 2019 s.2(2)(c)–(d), PDF1](https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf) |
+| Telecom and specified similar companies | 30% NET income under 2021 amendment, replacing older gross-turnover treatment. | [Income Tax Amendment 2021 s.2(e), PDF2](https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf) |
+| Agriculture | 2022 zero-to 2% classification range; Secretary General classes, base and intervening rules unresolved. Do not automatically use zero. | [Income Tax Amendment 2022 s.2(6)(b), PDF2](https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf) |
+| Business losses | Up to 5 years, with statutory books, returns, validated accounts and continuity/force-majeure conditions. | [s.21; PDF37–39](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
+| Employee incentive deduction | Restricted to 3 months salary annually under the opened principal provision. | [s.18(2); PDF32](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
 
-This skill does NOT cover:
+## The base
 
-- Personal income tax for individuals — see `sd-income-tax`
-- VAT — see `sd-vat-gst`
-- Payroll and social insurance — see `sd-payroll-social`
-- Company formation and registration — see `sd-company-formation`
-- Capital gains tax — separate schedule under Income Tax Act 1986
-- Zakat — separate religious obligation under Zakat Act 2001
+1. Reconcile financial statements and tax basis period, identifying each revenue source and sector. The assessment year follows the basis period; an approved different accounting period is not a different tax country.
+2. Start with accounting profit. Add private/capital charges, income tax, unsupported reserves and compensated losses; deduct only wholly and actually income-producing expenses under s.18. Record paid Zakat and proof separately. Do not convert a tax incentive into an accounting expense.
+3. Replace book depreciation with statutory s.20/ScheduleII allowances only after the actual asset class, qualifying cost and applicable regulations are established. The catalogue's alleged 2021 regulations PDF is another Act copy; the full governing regulations remain unread. No flat 20% machinery allowance is approved.
+4. Separate revenue bad debts and recoveries, capital balancing adjustments and disposal gains. [Capital gains](sd-capital-gains.md) excludes company assets already within income-tax balancing treatment; avoid double taxation by classifying first.
+5. Apply loss schedules only with the s.21 proof and continuity conditions. Keep each loss-year cohort and expiry separate; current unaudited accepted loss is not automatically carried forward.
+6. Record associated payments and avoidance arrangements for the dedicated TP/antiavoidance review. Commercial charity activity is not automatically exempt. For on-account credit, retain validated audited accounts OR an income return under s.38, plus supporting deduction/payment documents under s.65(2). Section 65(1)(j) certificates/receipts satisfy tax up to proved amounts even if the collecting person fails to remit; an audited return or actual collector remittance is not universally prerequisite.
 
----
+## Deadlines and filing
 
-## Section 2 — Filing requirements
+Obtain TIN, approved period, accounts, capital-allowance and loss schedules, advance/on-account certificates and all notices. Follow the principal s.38 return-notice framework and s.62 payment-date rule; the full current 2021 regulations, self-assessment forms, boxes, instalment dates and electronic submission workflow are not established. Do not claim Act 38(2) contains a universal modern self-assessment rule. Preserve records under s.39 and the later Arabic-translation addition. Before filing, require the actual applicable return/codes, due date, payment route/reference and evidence of submission/payment. This pack does not authorise a taxpayer action.
 
-| Item | Rule | Source |
-|------|------|--------|
-| **Who must file** | All resident companies, branches of foreign companies, and PEs of non-residents deriving Sudan-source income | Income Tax Act 1986, Art 4 |
-| **Tax year** | Calendar year (1 Jan – 31 Dec); companies may use a different accounting period with approval | Income Tax Act 1986, Art 10 |
-| **Return form** | Business Profits Tax return (إقرار ضريبة أرباح الأعمال) via Sudan Taxation Chamber | Income Tax Act 1986, Art 38 |
-| **Filing deadline** | Within the period specified by the Secretary-General; commonly 4 months after year-end (verify current deadline) | Income Tax Act 1986, Art 38(1) |
-| **Self-assessment** | Every person under self-assessment must submit return and pay tax due at time of filing; additional tax not exceeding 2x the understated amount may be imposed | Income Tax Act 1986, Art 38(2) |
-| **Audited accounts** | Companies audited by the General Auditor submit return for the same period; companies with non-calendar year-end submit within the prescribed period | Income Tax Act 1986, Art 38(1) |
-| **Record retention** | Accounting books (journal, ledger, inventory) must be kept for minimum 6 years in Arabic or English | Income Tax Act 1986, Art 39(3-5) |
+## Penalties and interest
 
----
+Sections 44,62–63 and recovery provisions supply an enforcement framework. Current regulatory percentages, amended amounts, failure-to-file sanction and appeal/payment interactions need their actual instruments. Do not apply an unsourced flat monthly penalty or a universal twice-tax surcharge.
 
-## Section 3 — Rates and thresholds
+## Cross-border points
 
-### Sector-differentiated BPT rates
+Foreign branches and resident foreign income need the residence, agent, treaty-order and withholding analysis in [cross-border](sd-cross-border-residence.md). A foreign-owned company is not automatically nonresident. Do not substitute a six-month PE threshold or assumed branch-remittance exemption. On-account credit is conditional and not always final.
 
-| Sector | Rate | Source |
-|--------|------|--------|
-| **Standard (general/industrial companies)** | 15% | Income Tax Act 1986, Schedule; PwC Worldwide Tax Summaries — Sudan; Trading Economics |
-| **Banks and financial institutions** | 30% | Income Tax Act 1986, Schedule; Britacom tax profile |
-| **Tobacco / cigarette companies** | 30% | Income Tax Act 1986, Schedule; Britacom tax profile |
-| **Petroleum and natural resources operations** | 30% (under PSA terms; may vary by concession agreement) | Income Tax Act 1986, Schedule; Britacom tax profile |
-| **Agricultural companies** | Exempt (0%) | Income Tax Act 1986, Schedule |
-| **Capital gains (corporate)** | 20% | Income Tax Act 1986; Britacom tax profile |
-| **Sole proprietorship / partnership (progressive)** | 0% – 20% (progressive rates, same as personal income tax) | Income Tax Act 1986; Britacom tax profile |
+## Two worked examples that recompute
 
-### Withholding tax rates on payments
+### General versus industrial classification
 
-| Payment type | Rate | Character | Source |
-|-------------|------|-----------|--------|
-| **Interest (to non-residents)** | 7% | Final | Income Tax Act 1986; PwC |
-| **Royalties (to non-residents)** | 15% | Final | Income Tax Act 1986 |
-| **Technical / management services (to non-residents)** | 15% | Final | Income Tax Act 1986 |
-| **Dividends** | No separate dividend WHT | — | Income Tax Act 1986 (verify current treatment) |
-| **Payments to resident taxpayers** | 4% – 15% | Credit / advance payment | Income Tax Act 1986; Britacom |
-| **Payments to non-resident taxpayers** | 14% | Standard WHT on contracts | Income Tax Act 1986; Britacom |
-| **Imports of goods (resident payer)** | 2% | Creditable | Income Tax Act 1986 |
+On hypothetical eligible taxable profit 1,000,000, the opened 2019 general rate produces 200,000 and the industrial rate 150,000. The 50,000 difference makes verified classification essential. This comparison gives no right to industrial treatment and no 2026 rate approval.
 
----
-
-## Section 4 — Computation rules
-
-### Step 1 — Determine taxable income
-
-Tax base is **net profit** (accounting profit adjusted for tax) of the enterprise. *(Income Tax Act 1986, Art 4)*
-
-```
-Net profit = Gross income (business profits + rental + personal income + gross income)
-           - Allowable deductions
+```oa-check
+name: 2019 company sector classification comparison
+inputs:
+  profit: 1000000
+steps:
+  - general: profit*0.20
+  - industrial: profit*0.15
+  - difference: general-industrial
+expected:
+  general: 200000
+  industrial: 150000
+  difference: 50000
 ```
 
-### Step 2 — Apply sector rate
+### Loss evidence decision
 
+A business with pre-loss profit500,000 and a300,000 unexpired loss supported by all s.21 conditions has illustrative base200,000. Without the required proof, this workpaper cannot apply that loss: the provisional base remains500,000 and the300,000 claim is held. The example compares evidence outcomes, not discretionary approval.
+
+```oa-check
+name: Loss support versus unsupported carryforward
+inputs:
+  preloss: 500000
+  claimed_loss: 300000
+steps:
+  - supported_base: max(preloss-claimed_loss,0)
+  - held_base: preloss
+  - base_difference: held_base-supported_base
+expected:
+  supported_base: 200000
+  held_base: 500000
+  base_difference: 300000
 ```
-BPT = Net profit x Sector rate (15% standard / 30% banks, tobacco, petroleum / 0% agriculture)
-```
 
-### Step 3 — Apply deductions and credits
+## Ask the client first
 
-```
-Tax payable = BPT - WHT credits - Advance payments
-```
+- Entity, sector, incorporation and supervision/management facts.
+- Basis and accounting periods; all notices, concession or investment approvals.
+- Audited accounts, income streams, paid Zakat and expense support.
+- Asset register and evidence for each allowance; loss-year books and continuity.
+- Related parties, foreign payments, on-account certificates and actual payment proof.
 
-### Step 4 — Loss carryforward
+## Sources
 
-Business losses are computed similarly to profits and may be carried forward (verify carryforward period — commonly 5 years under standard practice). *(Income Tax Act 1986, terminology: "Loss" in relation to business profits means a loss computed in a similar manner to profits)*
+| Source and actual read scope | Official URL | Read on |
+|---|---|---|
+| income-en; selected ss.2,15; PDF 11,27; s.18(1); PDF 29–30; s.18(2); PDF 30–32; s.18(2); PDF 32; s.20; PDF 33–37; s.21; PDF 37–39; s.16(1)–(2); PDF 27–28; s.9(3)–(4); PDF 23; s.38(1),(3)(a)–(b); PDF 58–61, taxpayer definition PDF 59; s.39(4)–(6); PDF 62–63; s.62(1),(6); PDF 90–91; s.63; PDF 92; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| law 21; selected Income Tax Amendment 2019 s.2(2)(c)–(d), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law21.pdf | 2026-11-01 |
+| law 32-34; selected Income Tax Amendment 2021 s.2(e), PDF 2 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law32-34.pdf | 2026-11-01 |
+| law 38-39; selected Income Tax Amendment 2022 s.2(6)(b), PDF 2; Income Tax Amendment 2022 s.2(1), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf | 2026-11-01 |
 
-### Allowable deductions (Income Tax Act 1986, Art 18(1)(A))
+Writer short-quote ledger: [evidence/ledgers/sd-corporate-income-tax.md](../../evidence/ledgers/sd-corporate-income-tax.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.
 
-1. Expenses related to the activity and necessary for its operation
-2. Communication expenses (telephone, telex, fax, internet) — work-related fully deductible
-3. Subscriptions to trade chambers, scientific journals, bulletins related to work
-4. Advertising expenses as determined by the Secretary-General
-5. Hospitality and entertainment expenses related to work (as determined by Secretary-General)
-6. Rent paid for the workplace
-7. **Depreciation of fixed assets** at rates specified in the First Schedule
-8. Legal expenses related to the work
-9. Professional allowance (subject to Art 18 and Art 38 declaration)
-10. Salaries, wages, and similar payments (subject to personal income tax payment)
-11. **Zakat paid** during the accounting period (subject to proof of payment)
-12. Bonuses, grants, and rewards to employees — not exceeding 3 months' salary per year
-13. Repair costs for buildings, machinery, and equipment (not capital expenditure; no depreciation allowed under Second Schedule)
-14. **Bad debts** — must be: (a) supported by audited accounts; (b) related to the activity; (c) of specific value in accounts; (d) legal action taken and decision issued
+Legacy-topic controls below refer to the exact original material and line-independent destination records in [the complete old-topic map](../../evidence/ledgers/sd-old-topic-map.md). Each control retains its original rules, figures, groups, procedures and exceptions for source reconciliation. Supported content is replaced above with citations; any remaining original claim under that control is explicitly unconfirmed, not a usable default.
 
-### Non-deductible expenses
+- SD-OLD-024: Section 1 - Scope statement. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-025: Section 2 - Filing requirements. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-026: Sector-differentiated BPT rates. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-028: Step 1 - Determine taxable income. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-029: Step 2 - Apply sector rate. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-030: Step 3 - Apply deductions and credits. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-031: Step 4 - Loss carryforward. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-032: Allowable deductions (Income Tax Act 1986, Art 18(1)(A)). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-033: Non-deductible expenses. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-034: Initial depreciation allowance. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-035: Free Zones and Investment Incentives. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-036: Petroleum Production Sharing Agreement (PSA) regime. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-038: Currency conversion. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-039: Tax exemptions (Schedule 1 and ministerial orders). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-041: Example 1 - Standard manufacturing company. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-042: Example 2 - Bank operating in Sudan. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-043: Example 3 - Company in a Free Zone (investment incentive). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-045: Section 7 - Self-checks. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-046: Section 8 - Reference material. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-047: PROHIBITIONS. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
 
-1. Expenses not related to the activity or not necessary for its operation
-2. Must be actual expenses supported by documents (except customary undocumented expenses like internal travel, hospitality, routine maintenance)
-3. Must relate to the relevant base period (not previous or subsequent years)
-4. Must relate to an activity subject to tax for the relevant base period
-
-### Initial depreciation allowance
-
-Newly purchased machinery and equipment receive **20% initial depreciation** of purchase price after being put into production. *(Investment Incentive Law 2021)*
-
----
-
-## Section 5 — Edge cases and special rules
-
-### Free Zones and Investment Incentives
-
-- Investment projects economically aligned with the **Investment Incentive Law 2021** are **exempt from corporate income tax** starting from the date of commercial production, for a period **not exceeding 5 years**
-- Capital equipment of qualifying investment projects is **exempt from VAT** (list approved by Ministry of Investment and International Cooperation)
-- Free Trade Zones and Duty-Free Zones enjoy customs exemptions and tax incentives
-- Projects in designated underdeveloped areas receive special preferences
-- Exporters of goods and providers of taxable services enjoy **zero VAT rate** with input VAT refund entitlement
-
-**AUDIT FLASH POINT:** Free zone exemptions are time-limited (5 years max). Track the commercial production start date carefully — the exemption clock starts then, not at company registration.
-
-### Petroleum Production Sharing Agreement (PSA) regime
-
-- Petroleum operations are taxed at **30%** BPT rate
-- However, most petroleum operations are conducted under **PSA terms** that govern the fiscal regime:
-  - The state (via Sudan National Petroleum Corporation / Sudapet) and the contractor (international oil company) share production
-  - **Cost oil** — contractor recovers costs from a portion of produced oil
-  - **Profit oil** — remaining oil is split between government and contractor per negotiated terms
-  - Tax is typically paid by the contractor on its profit oil share
-  - The PSA terms may override standard BPT provisions — each concession agreement must be reviewed individually
-- A flat 5% royalty is referenced in some investment documents for companies already exempt from tax under the Investment Law
-
-**AUDIT FLASH POINT:** PSA terms are confidential and concession-specific. Never assume standard BPT applies to petroleum operations without verifying the specific concession agreement. The 30% rate is the statutory fallback, not necessarily the effective rate.
-
-### Transfer pricing
-
-Sudan does not have formal transfer pricing legislation comparable to OECD guidelines. Related-party transactions should follow arm's length principle as a matter of general tax administration practice. No formal CbCR or TP documentation requirements are currently in force — verify with the Taxation Chamber.
-
-### Currency conversion
-
-Documents or invoices in a currency other than SDG must be converted at the **exchange rate at the time of the transaction**, with the exchange rate used stated. *(Income Tax Act 1986, Art 39(3-5))*
-
-### Tax exemptions (Schedule 1 and ministerial orders)
-
-- Pensions paid to members of municipal services or disciplinary departments
-- Payments and transfers to envoys, diplomats, and employees of international organizations
-- Interest from bank deposits, savings accounts, and postal savings funds
-- Personal income of employees **over 50 years old** working in government or private sectors (capped at highest government salary)
-- Charitable bodies (Minister may reimburse taxes collected from legally registered charities)
-- Activities under the **Zakat Act 2001** and **Islamic Endowments Act 1996** are outside the Income Tax Act's scope
-- Expatriate personnel working on major development projects (oil industry, dams, roads, bridges) may receive tax exemption benefits
-
-### Double taxation treaties
-
-As of January 2024, Sudan has concluded and brought into force double taxation agreements with 17 countries and regions. *(Britacom tax profile)* Verify treaty availability and rates before applying.
-
----
-
-## Section 6 — Worked examples
-
-### Example 1 — Standard manufacturing company
-
-**Scenario:** Khartoum-based manufacturing company with taxable profit of SDG 50,000,000.
-
-- BPT = 50,000,000 x 15% = **SDG 7,500,000**
-- Less WHT credits on imports (2%): assume SDG 500,000
-- Tax payable = 7,500,000 - 500,000 = **SDG 7,000,000**
-
-### Example 2 — Bank operating in Sudan
-
-**Scenario:** Foreign-owned bank with taxable profit of SDG 200,000,000.
-
-- BPT = 200,000,000 x 30% = **SDG 60,000,000**
-- No special deductions apply; bank profits are not eligible for investment incentives
-- WHT on interest paid to non-residents: 7% final tax
-
-### Example 3 — Company in a Free Zone (investment incentive)
-
-**Scenario:** Manufacturing company established in a free zone, commenced commercial production in January 2021. Taxable profit SDG 30,000,000 for tax year 2025.
-
-- Investment incentive exemption: 5 years from commercial production (Jan 2021 - Dec 2025)
-- Tax year 2025 falls within the exemption period — **BPT = SDG 0**
-- Exemption expires Dec 2025; from 2026, standard 15% rate applies
-- **AUDIT FLASH POINT:** Maintain a calendar tracking the exemption expiry; the tax position changes dramatically in 2026
-
-### Example 4 — Withholding on payment to non-resident contractor
-
-**Scenario:** Sudanese company pays SDG 10,000,000 to a non-resident technical services provider.
-
-- WHT = 10,000,000 x 15% = **SDG 1,500,000** (final tax on the non-resident)
-- The Sudanese company must withhold and remit within the prescribed period
-- The non-resident cannot claim the personal allowance on WHT-taxed income
-
----
-
-## Section 7 — Self-checks
-
-Before delivering output, verify:
-
-- [ ] Sector rate correctly identified (15% standard, 30% banks/tobacco/petroleum, 0% agriculture)
-- [ ] All deductions claimed are on the allowable list (Art 18(1)(A))
-- [ ] Bad debts meet all 4 conditions (audited accounts, activity-related, specific value, legal action)
-- [ ] Depreciation rates match the First Schedule
-- [ ] Free zone exemption period traced to commercial production start date
-- [ ] Petroleum operations checked against specific PSA terms (not just the 30% statutory rate)
-- [ ] Currency conversions use transaction-date exchange rates
-- [ ] Zakat payments are separately claimed and supported by proof of payment
-- [ ] Record retention compliance (6 years minimum, Arabic or English)
-- [ ] DTA treaty consulted for cross-border payments before applying WHT rates
-
----
-
-## Section 8 — Reference material
-
-| Resource | Reference |
-|----------|-----------|
-| Sudan Taxation Chamber | https://tax.gov.sd/en/income-tax-2/ |
-| Income Tax Act 1986 (PDF) | https://tax.gov.sd/wp-content/uploads/2025/02/ — legislation section |
-| PwC Worldwide Tax Summaries — Sudan | https://taxsummaries.pwc.com/sudan |
-| Britacom tax profile | https://www.britacom.org/zt/BRPolicies/Sudan/ |
-| US State Dept Investment Climate Statement | https://www.state.gov/reports/2022-investment-climate-statements/sudan/ |
-| Investment Incentive Law 2021 | Ministry of Investment and International Cooperation, Sudan |
-| Trading Economics — Sudan corporate tax rate | https://tradingeconomics.com/sudan/corporate-tax-rate |
-
----
-
-## PROHIBITIONS
-
-- Do NOT advise on, enable, or overlook tax evasion, under-declaration of profits, or fictitious expenses.
-- Do NOT apply a 15% standard rate to banks, tobacco, or petroleum operations without checking the 30% sector rate.
-- Do NOT compute petroleum operation tax without reviewing the specific PSA / concession agreement terms.
-- Do NOT assume free zone exemption is permanent — it is capped at 5 years from commercial production.
-- Do NOT finalise a tax figure when current-year rates cannot be verified against the Sudan Taxation Chamber — give the formula and flag "verify current value."
-- Do NOT apply DTA rates without confirming the specific treaty is in force.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in Sudan) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-**Sources:** Income Tax Act 1986 (Sudan) — tax.gov.sd; PwC Worldwide Tax Summaries — Sudan; Britacom tax profile; Trading Economics; US State Department Investment Climate Statement 2022; Investment Incentive Law 2021.
-
-> Contributed by Ahmed Hassan.
+Not yet confirmed: Complete later enacted chain and current sector rates, full 2021 income regulations, depreciation implementation, agricultural classification/base, petroleum 35%, tobacco 30%, banking 30% and insurance special treatment, current concessions and production-sharing agreements; investment 5 year holidays, free-zone/customs/VAT incentives and 20% initial allowance; group consolidation, specific bad-debt conditions, audited-return exceptions, current self-assessment and instalment timetable; resident 4–15%/nonresident 14% collection rates, dividend/interest/royalty finality and specific foreign credits. All those legacy topics remain held rather than silently omitted. Current forms, payment channels and sanctions also remain incomplete. Residual claims in all legacy-topic controls listed above remain held until individually reconciled.
 
 <!-- openaccountants-cta-block -->
 

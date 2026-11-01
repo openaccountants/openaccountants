@@ -1,0 +1,25 @@
+{
+  "candidate": "e937be8648aa5da358796fca477e6d1807126106",
+  "base": "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+  "decision": "corrections_required_for_source_baseline_acceptance",
+  "guide_count": 9,
+  "ledger_placements": 107,
+  "unique_rule_descriptions": 84,
+  "mapped_historical_units": 154,
+  "mapped_units_exact": 154,
+  "historical_high_risk_units_spot_read": 23,
+  "lost_mapped_content_restored": 0,
+  "additional_intro_provenance_issue": "historical payroll USD1=SDG47 excluded from154unitmap",
+  "examples_arithmetic_passed": 18,
+  "findings": [
+    "SD-R1",
+    "SD-R2",
+    "SD-R3",
+    "SD-R4",
+    "SD-R5",
+    "SD-R6"
+  ],
+  "operative_2026_approved": false,
+  "country_complete": false,
+  "accountant_attestation": false
+}

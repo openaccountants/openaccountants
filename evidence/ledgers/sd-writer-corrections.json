@@ -1,0 +1,442 @@
+{
+  "date": "2026-11-01",
+  "original_pinned_base": "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+  "reviewed_candidate": "e937be8648aa5da358796fca477e6d1807126106",
+  "git_head": "e937be8648aa5da358796fca477e6d1807126106",
+  "working_tree_repair": true,
+  "committed": false,
+  "decision": "Writer repairs ready for focused independent closure; no acceptance claimed",
+  "operative_2026_approval": false,
+  "country_complete": false,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/sudan/sd-capital-gains.md",
+        "skills/sudan/sd-company-formation.md",
+        "skills/sudan/sd-corporate-income-tax.md",
+        "skills/sudan/sd-cross-border-residence.md",
+        "skills/sudan/sd-income-tax.md",
+        "skills/sudan/sd-payroll-social.md",
+        "skills/sudan/sd-tax-overview.md",
+        "skills/sudan/sd-transfer-pricing.md",
+        "skills/sudan/sd-vat-gst.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 9 files, 18 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "e937be8648aa5da358796fca477e6d1807126106",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "guides": {
+    "skills/sudan/sd-capital-gains.md": {
+      "sha256": "edcbd2eb83f0e874038cd727f9c292961ca18ee30beee153dcf7ddb242e31aaf",
+      "description_whitespace_words": 110,
+      "shape_checks_passed": 15,
+      "ledger_rows": 9,
+      "version": "0.2",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": false,
+      "new_guide_no_platform_keys": true
+    },
+    "skills/sudan/sd-company-formation.md": {
+      "sha256": "0b6abceb9cec92b51397298f27edd4587243ad330f265d27961ef1ba93ab117b",
+      "description_whitespace_words": 107,
+      "shape_checks_passed": 15,
+      "ledger_rows": 15,
+      "version": "0.2",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    },
+    "skills/sudan/sd-corporate-income-tax.md": {
+      "sha256": "5616362e4654ebcf56f2d96ada211fdbc2e3f6adf168273424c961f68e8a970b",
+      "description_whitespace_words": 108,
+      "shape_checks_passed": 15,
+      "ledger_rows": 17,
+      "version": "0.3",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    },
+    "skills/sudan/sd-cross-border-residence.md": {
+      "sha256": "6e102b54792e348634deada599a6cff66feff695a63728acf749f0a525e45ce7",
+      "description_whitespace_words": 111,
+      "shape_checks_passed": 15,
+      "ledger_rows": 10,
+      "version": "0.2",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": false,
+      "new_guide_no_platform_keys": true
+    },
+    "skills/sudan/sd-income-tax.md": {
+      "sha256": "8a7576d2a7abe60f20806ea7cf6c0ff426ba94559191241c726718c5369c7d8f",
+      "description_whitespace_words": 103,
+      "shape_checks_passed": 15,
+      "ledger_rows": 17,
+      "version": "0.3",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    },
+    "skills/sudan/sd-payroll-social.md": {
+      "sha256": "ed46b89ee6ba2fc6e9a5470b0fa72a6b81ec6401e0e642f71d07e3c9fa2badc6",
+      "description_whitespace_words": 106,
+      "shape_checks_passed": 15,
+      "ledger_rows": 9,
+      "version": "0.3",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    },
+    "skills/sudan/sd-tax-overview.md": {
+      "sha256": "d389deeea13508ab169048bd047bb8ef8e367ccebd8cdaf6e49b2c17f58aa219",
+      "description_whitespace_words": 109,
+      "shape_checks_passed": 15,
+      "ledger_rows": 7,
+      "version": "0.3",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    },
+    "skills/sudan/sd-transfer-pricing.md": {
+      "sha256": "2ad49edd7b5ebfd3ac74250da8781df740459471f48ffa9ab610aa180c460163",
+      "description_whitespace_words": 110,
+      "shape_checks_passed": 15,
+      "ledger_rows": 5,
+      "version": "0.2",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": false,
+      "new_guide_no_platform_keys": true
+    },
+    "skills/sudan/sd-vat-gst.md": {
+      "sha256": "607c7a50c0b4537850bbfef351d421f36890ad7d4055065e19676692404ef9d9",
+      "description_whitespace_words": 106,
+      "shape_checks_passed": 15,
+      "ledger_rows": 18,
+      "version": "0.3",
+      "last_updated": "2026-11-01",
+      "legacy_platform_and_cta_exact": true,
+      "new_guide_no_platform_keys": false
+    }
+  },
+  "initial_independent_review_preserved": {
+    "files": 13,
+    "sha256": {
+      "evidence/ledgers/sd-independent-review-20261101/old-topic-audit.json": "51c170e52ff9efd9789d732542998d2b51f741fe768065a38c7d162453f9051c",
+      "evidence/ledgers/sd-independent-review-20261101/independent-example-review.json": "60105e91211b7762257ddb0dff51a4fce82b5319ea0c4da920059dc3c5768ad3",
+      "evidence/ledgers/sd-independent-review-20261101/result.json": "56872b3e5e06eeb7e9daba30517c5a5551fae3806b359bd0143533d88d7b7a72",
+      "evidence/ledgers/sd-independent-review-20261101/check-5.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evidence/ledgers/sd-independent-review-20261101/check-4.txt": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e",
+      "evidence/ledgers/sd-independent-review-20261101/check-1.txt": "70ed7eab8e3bbc53222468ce342afece52d2f070c1245b2846517f5502ddaea5",
+      "evidence/ledgers/sd-independent-review-20261101/check-3.txt": "7b92473881dfaf519bf190e09ff8f2daaccfd4be62094e1823b1d06e650ffea6",
+      "evidence/ledgers/sd-independent-review-20261101/check-2.txt": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7",
+      "evidence/ledgers/sd-independent-review-20261101/checks.json": "9b10e33404476bb90e82d14427a81d2a96e149a74741a4102fb454bab99f1a04",
+      "evidence/ledgers/sd-independent-review-20261101/capture-integrity.json": "d1a41f96f0f44444005e3056dc313a4780543273d112a36275c4bf4a90748497",
+      "evidence/ledgers/sd-independent-review-20261101/ledger-row-review.json": "48687ce7dda43cbadcccad892c4912a2c34e4d0c98f08d102248f4f04720a517",
+      "evidence/ledgers/sd-independent-review-20261101/review.md": "2f153d422a8cdb8cc7a5a8b5d91b1a2b76be0749bb52d9040bb99dda97b297a8",
+      "evidence/ledgers/sd-independent-review-20261101/guide-freeze.json": "61fda17276447c55f25c92b201d5218e6977ab691db6f8803cdce5417ed04f2c"
+    }
+  },
+  "initial_writer_receipts_preserved": true,
+  "actual_primary_reread": [
+    {
+      "file": "income-en.pdf",
+      "pages": [
+        27,
+        28,
+        46,
+        47,
+        58,
+        59,
+        60,
+        61,
+        96,
+        97
+      ],
+      "sections": "s16(1)–(2); s25(1)(c); s38(1),(3); s65(1)(i)–(j),(2)",
+      "method": "actual official selectable source text including surrounding clauses",
+      "sha256": "ed008d97b27f6008cb07454ef2a6f7b8e78925081a769a3b3b54f5351d81a8de"
+    },
+    {
+      "file": "capital-gains-en.pdf",
+      "pages": [
+        12
+      ],
+      "sections": "s20(1)–(2), s21",
+      "method": "actual official selectable source text",
+      "sha256": "6aeebec63945a948870ebe03c978a175ea79cfa844e98ade311b809c1cbb812b"
+    },
+    {
+      "file": "vat-regs-2017.pdf",
+      "pages": [
+        5,
+        8,
+        9
+      ],
+      "sections": "reg6,reg10(1)–(8),reg11",
+      "method": "actual original page PNGs visually inspected; short quote قبل مضي عامين checked on PDF5",
+      "sha256": "9dcefbbeb697c7553fbfd3a4926d53ac346295e9df0751a127633de87feae611"
+    }
+  ],
+  "legacy_preservation": {
+    "original_heading_units_exact": 154,
+    "all_original_destination_holds_present": true,
+    "additional_intro_control": "SD-OLD-155",
+    "extra_original_intro_exact": true,
+    "exchange_rate_usable": false,
+    "six_cta_and_platform_blocks_exact": true
+  },
+  "source_capture_hashes_unchanged": 61,
+  "findings": {
+    "SD-R1": {
+      "status": "repaired_pending_independent_closure",
+      "guide": "sd-income-tax",
+      "ledger_rows": {
+        "sd-income-tax": [
+          7
+        ]
+      },
+      "change": "Prior rental method choice and Secretary General approval after no-evasion check restored to rate row, base, client inputs and example; example assumes permissible initial election or approved change; principal and amendment URLs/quotes both present.",
+      "source": "Income Tax Act s25(1)(c), PDF46–47;2021 rate amendment unchanged."
+    },
+    "SD-R2": {
+      "status": "repaired_pending_independent_closure",
+      "guide_sources": [
+        "sd-corporate-income-tax",
+        "sd-transfer-pricing"
+      ],
+      "ledger_rows": {
+        "sd-corporate-income-tax": [
+          10
+        ],
+        "sd-transfer-pricing": [
+          5
+        ]
+      },
+      "change": "Resident-company business-vesting exception correctly placed in final part of s16(1); s16(2) identified as adjustment powers.",
+      "source": "Income Tax Act PDF27–28."
+    },
+    "SD-R3": {
+      "status": "repaired_pending_independent_closure",
+      "guide": "sd-capital-gains",
+      "ledger_rows": {
+        "sd-capital-gains": [
+          8
+        ]
+      },
+      "change": "Initial written notice/precise grounds within30days from assessment DATE; invented return prerequisite removed. Later stage clocks/payment conditions remain separate and held; current additional forms unresolved.",
+      "source": "Capital Gains Tax Act s20(1)–(2),s21,PDF12."
+    },
+    "SD-R4": {
+      "status": "repaired_pending_independent_closure",
+      "guide": "sd-vat-gst",
+      "ledger_rows": {
+        "sd-vat-gst": [
+          6,
+          10,
+          11
+        ]
+      },
+      "change": "Exact reg6 quote قبل مضي عامين; retention reg10 PDF8–9 with five-year clock following financial year end; monthly/nil reg11 PDF9. Repeated Guide/Sources/manifest/read scopes updated.",
+      "source": "VAT Regulations2017 actual PNGs PDF5,8,9."
+    },
+    "SD-R5": {
+      "status": "repaired_pending_independent_closure",
+      "guide": "sd-income-tax",
+      "ledger_rows": {
+        "sd-income-tax": [
+          12
+        ],
+        "sd-corporate-income-tax": [
+          12
+        ],
+        "sd-tax-overview": [
+          3
+        ]
+      },
+      "change": "No-notice duty limited to s38(3) subject-to-tax groups, with companies/partnerships/trustees/executors/administrators/nonresident individuals and resident-individual exempt-threshold condition stated; no new numeric threshold.",
+      "source": "Income Tax Act s38(1),(3)(a)–(b),PDF58–61,especially59."
+    },
+    "SD-R6": {
+      "status": "repaired_pending_independent_closure",
+      "guides": [
+        "sd-corporate-income-tax",
+        "sd-cross-border-residence"
+      ],
+      "ledger_rows": {
+        "sd-corporate-income-tax": [
+          17
+        ],
+        "sd-cross-border-residence": [
+          8
+        ],
+        "sd-tax-overview": [
+          6
+        ]
+      },
+      "change": "Validated audited accounts OR s38 income return plus supporting deduction/payment documents; certificate/receipt satisfaction to proved amounts even if collector fails to remit. No audited-return or universal collector-remittance prerequisite.",
+      "source": "Income Tax Act ss65(1)(j),65(2)(a)–(b),PDF96–97."
+    },
+    "SD-INTRO-PROVENANCE": {
+      "status": "accounted_for_pending_independent_closure",
+      "guide": "sd-payroll-social",
+      "control": "SD-OLD-155",
+      "change": "Exact original introductory USD1=SDG47 SSA2019 assertion preserved only in historical map, explicitly unsupported secondary-source removal/hold. Not adopted as usable exchange rate. Original154heading units unchanged."
+    }
+  },
+  "actual_worktree_scoped_validator": {
+    "paths": [
+      "skills/sudan/sd-capital-gains.md",
+      "skills/sudan/sd-company-formation.md",
+      "skills/sudan/sd-corporate-income-tax.md",
+      "skills/sudan/sd-cross-border-residence.md",
+      "skills/sudan/sd-income-tax.md",
+      "skills/sudan/sd-payroll-social.md",
+      "skills/sudan/sd-tax-overview.md",
+      "skills/sudan/sd-transfer-pricing.md",
+      "skills/sudan/sd-vat-gst.md"
+    ],
+    "errors": [],
+    "warnings": [
+      "skills/sudan/sd-capital-gains.md: SD IT-IND also holds sd-income-tax, with a different job"
+    ],
+    "method": "Actual validator functions on nine explicit working-tree paths; full CLI would still compare old committed HEAD and is not misrepresented as testing this repair."
+  },
+  "readme_partials_unchanged": {
+    "IT-IND": "Later enacted chain, full income regulations, nonresident bands, allowances and current forms remain unresolved; source baseline only.",
+    "IT-CORP": "Later enacted chain, depreciation regulations, agricultural classification and current return/payment implementation remain unresolved.",
+    "VAT": "Later enacted chain, numeric registration threshold, current Form 3/rates and special valuation/exemption implementation remain unresolved.",
+    "SC": "Full current 2016 statute, coverage/caps and conflicting official health contribution bases remain unresolved.",
+    "PR": "Current monthly PAYE/fund forms and remittance directions, benefit valuation and labour/social-insurance interaction remain unresolved.",
+    "TP": "Express associated-person pricing law read; actual methods/documentation regulations, later chain and compliance procedures remain unresolved.",
+    "XB": "Later chain, actual withholding rate orders, treaty instruments and foreign-credit/PE procedures remain unresolved."
+  },
+  "versions_advanced": "Eight repaired Guide YAML versions advanced; reviewer identified eight stale body-title numbers. Parent matched all nine H1 titles to actual YAML using canonical v0.x spelling; formation title spelling changed only, version remains0.2.",
+  "candidate_file_hashes": {
+    "evidence/ledgers/sd-capital-gains.md": "c62dceb2d1f2d7840e3726e02355cd03a55fac12a40e3b1555ac5b109488c979",
+    "evidence/ledgers/sd-company-formation.md": "34f5fe0c0998090c1399f2687bb497e7e5614aa81680d5e687c2ace3804dea10",
+    "evidence/ledgers/sd-corporate-income-tax.md": "257d529050ae74321f0beefb33ecf25dcdfda3a1567484ec3699626b0c045c6a",
+    "evidence/ledgers/sd-cross-border-residence.md": "eb2c1c681bdf4e7e6c720d3149080f42ffc836b49c2355e0708ee0f1440c0131",
+    "evidence/ledgers/sd-income-tax.md": "dba547f4e70d8531ab611521a1de405064ec7e1eb42cafbae879fab67f335074",
+    "evidence/ledgers/sd-old-topic-map.md": "0d18203c46dd73a7eb8b230054333bc753b1ad961e10dbefb004a594ae7ced9a",
+    "evidence/ledgers/sd-payroll-social.md": "77c57a5aa754107061b3aac2b35f64d4e60ad0bf95b7b9dc008106ebe56a843b",
+    "evidence/ledgers/sd-source-manifest.json": "90c4d93d39f220416ada3657158ec96ea26af1cd169029f9db43d44fb7cc4f7d",
+    "evidence/ledgers/sd-source-read-record.md": "245cad892f9d2b72496889ebab267bdb4af4b28fa9e037161a2f0a258595e7b1",
+    "evidence/ledgers/sd-tax-overview.md": "c6ebbee56c5a59f9bcede3f6550b47f372472cc73f58b18f298731fede057a98",
+    "evidence/ledgers/sd-transfer-pricing.md": "8ebebe4b870f3e3180d825c8750e5eb2def4da5e69b01b71d0372437b0bcc1ca",
+    "evidence/ledgers/sd-vat-gst.md": "3a6050a73cbf73df6089cc849be0dcfa7060d9212b98986ef6521f2ec0a78928",
+    "evidence/ledgers/sd-writer-checks.json": "bb9e3ded63314fa5b300e69c8eab734714a4827404858c21e5b8504daa906ebf",
+    "evidence/ledgers/sd-writer-checks.md": "7c6b4f75a05d3df2272b894d402e58b0aa411224f3b9db935570f746163bc1b3",
+    "skills/sudan/README.md": "6ca425559033e763e2cdf0cb5fd6d4b9e22205c18f47635cb4f0c41c702aa1c5",
+    "skills/sudan/sd-capital-gains.md": "edcbd2eb83f0e874038cd727f9c292961ca18ee30beee153dcf7ddb242e31aaf",
+    "skills/sudan/sd-company-formation.md": "0b6abceb9cec92b51397298f27edd4587243ad330f265d27961ef1ba93ab117b",
+    "skills/sudan/sd-corporate-income-tax.md": "5616362e4654ebcf56f2d96ada211fdbc2e3f6adf168273424c961f68e8a970b",
+    "skills/sudan/sd-cross-border-residence.md": "6e102b54792e348634deada599a6cff66feff695a63728acf749f0a525e45ce7",
+    "skills/sudan/sd-income-tax.md": "8a7576d2a7abe60f20806ea7cf6c0ff426ba94559191241c726718c5369c7d8f",
+    "skills/sudan/sd-payroll-social.md": "ed46b89ee6ba2fc6e9a5470b0fa72a6b81ec6401e0e642f71d07e3c9fa2badc6",
+    "skills/sudan/sd-tax-overview.md": "d389deeea13508ab169048bd047bb8ef8e367ccebd8cdaf6e49b2c17f58aa219",
+    "skills/sudan/sd-transfer-pricing.md": "2ad49edd7b5ebfd3ac74250da8781df740459471f48ffa9ab610aa180c460163",
+    "skills/sudan/sd-vat-gst.md": "607c7a50c0b4537850bbfef351d421f36890ad7d4055065e19676692404ef9d9"
+  },
+  "candidate_content_sha256": "0b555ba77286f156e2a25f132767a155091fbced11a106a3b7f053a451d89ba2",
+  "limits": [
+    "Focused independent closure pending; no legal acceptance asserted",
+    "No new unrelated tax research",
+    "No commit, push, new PR, merge, production or taxpayer action",
+    "No operative2026 or country-complete approval",
+    "Original writer/reviewer evidence retained as historical first-candidate records",
+    "Full engineering tests and generated output checks outside focused Guide/evidence scope; no production exporter CAS token obtained"
+  ],
+  "prior_versions_advanced_claim": "Eight repaired Guides advanced one numeric step with matching body titles and ledger headers; unchanged formation remains0.2. Currentness scope not narrowed.",
+  "metadata_correction": {
+    "review_finding": "Eight stale H1 versions were missed by original space-separated v syntax; original passing check outputs do not prove title agreement.",
+    "heading_changes": [
+      {
+        "path": "skills/sudan/sd-capital-gains.md",
+        "old_heading": "# Sudan capital asset disposal gains v 0.1",
+        "corrected_heading": "# Sudan capital asset disposal gains v0.2"
+      },
+      {
+        "path": "skills/sudan/sd-company-formation.md",
+        "old_heading": "# Sudan company and foreign branch formation v 0.2",
+        "corrected_heading": "# Sudan company and foreign branch formation v0.2"
+      },
+      {
+        "path": "skills/sudan/sd-corporate-income-tax.md",
+        "old_heading": "# Sudan company business profits v 0.2",
+        "corrected_heading": "# Sudan company business profits v0.3"
+      },
+      {
+        "path": "skills/sudan/sd-cross-border-residence.md",
+        "old_heading": "# Sudan residence foreign income and withholding intake v 0.1",
+        "corrected_heading": "# Sudan residence foreign income and withholding intake v0.2"
+      },
+      {
+        "path": "skills/sudan/sd-income-tax.md",
+        "old_heading": "# Sudan personal and unincorporated income tax v 0.2",
+        "corrected_heading": "# Sudan personal and unincorporated income tax v0.3"
+      },
+      {
+        "path": "skills/sudan/sd-payroll-social.md",
+        "old_heading": "# Sudan payroll and employment contribution intake v 0.2",
+        "corrected_heading": "# Sudan payroll and employment contribution intake v0.3"
+      },
+      {
+        "path": "skills/sudan/sd-tax-overview.md",
+        "old_heading": "# Sudan tax workpaper routing and release gates v 0.2",
+        "corrected_heading": "# Sudan tax workpaper routing and release gates v0.3"
+      },
+      {
+        "path": "skills/sudan/sd-transfer-pricing.md",
+        "old_heading": "# Sudan associated person pricing v 0.1",
+        "corrected_heading": "# Sudan associated person pricing v0.2"
+      },
+      {
+        "path": "skills/sudan/sd-vat-gst.md",
+        "old_heading": "# Sudan VAT registration and monthly workpapers v 0.2",
+        "corrected_heading": "# Sudan VAT registration and monthly workpapers v0.3"
+      }
+    ],
+    "legal_rules_or_examples_changed": false
+  },
+  "prior_candidate_content_sha256": "0db5c51d4416ed29de9b1038e391f7fa8f45ef58c7df95f1c35ac40beda59b80",
+  "candidate_digest_method": "SHA256 of UTF8 json.dumps(candidate_file_hashes,sort_keys=True,separators=(comma,colon))"
+}

@@ -1,0 +1,1388 @@
+[
+  {
+    "id": "SD-OLD-001",
+    "heading": "Section 1 \u2014 Scope statement",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "62986c608ea230dd84c42c5a19d901139c34a287f06275de61db5fedb5afd7ba",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-002",
+    "heading": "Section 2 \u2014 Quick reference",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d1d5b5ee1ce45d9e59032f10580903ef477147f8ede0d97ec902bd72d391eeaf",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-003",
+    "heading": "Common entity types",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "45312db2bb439409a9b9421d330846fc3d202e449f4eb321a8154da83635111b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-004",
+    "heading": "Incorporation steps (typical LLC)",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "810c3ab4cbd856bbdf523c27f2f74c18059a2d4dd842f79e126549716fd1e8f3",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-005",
+    "heading": "Typical timeline",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "221c6b104d7058f8758fea3c38c7fc19dcf8a2c93c536c77db227a983b4495e9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-006",
+    "heading": "Section 5 \u2014 Capital requirements",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "65ae8338452fd906cfcbc56010d55bdec2fa23a94195df790a3ba473891b4058",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-007",
+    "heading": "Initial depreciation and investment incentives",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "a089d9ddc7c6818efe0ea11a3eba47d6944cd3888b4e25c564e07c5a1e4359d5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-008",
+    "heading": "Income tax registration (Tax Authority)",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "083c268a390679d413df7d4726c559de4d456e8ae677fa40c7f03a56bddb1f5a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-009",
+    "heading": "VAT registration (if applicable)",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "233ad29ea8f5ee4905eca7b14706fad45bcffc0e4a2e39273cbc2711efb67f48",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-010",
+    "heading": "Social insurance registration (NSIF / NHIF)",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e4ca18e511572e88b291b7ec39236205dabb27f43ad7c82220c962fb57c89fc5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-011",
+    "heading": "Section 7 \u2014 Sectoral licensing",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "980964f53fcb6db8d1333af9c87a6ed4d1168bfaf63f30225641b7f2d1891450",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-012",
+    "heading": "Free Zones Act / framework",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e5c8ca7b0b4deff7a7458a169cd25a29bdfa9514922b3e150ba40522a24971b4",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-013",
+    "heading": "Key incentives",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d4644f1a31fc4a8d1489ff817ed604d0376a492f152132a68c8b4768867f9d5a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-014",
+    "heading": "Annual return and renewal",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "cdc6a8b5be85fa5dbb7efeaa7c7de1e3709e82fffa4ee6fe3f8a562be07fd361",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-015",
+    "heading": "Audit requirement",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "23983e7c796866ecc78d1e30ba273ac4b45adf5964831be8e098eca77bc9150f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-016",
+    "heading": "Charter requirements",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "cb795010e20d57949fe72a50f67c20c49bef901fecdead49a80d415b15752b56",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-017",
+    "heading": "Section 10 \u2014 Refusal catalogue",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "4cc944a2a86ad10ff4f656b028640a5db76cdb7ea7a4b586714b695c9829e75f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-018",
+    "heading": "Example 1 \u2014 Standard domestic LLC",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "be121182f0a02c558ff3c00d8ef7314c89e3870c51543c26d8a48f64c5c869c7",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-019",
+    "heading": "Example 2 \u2014 Foreign-owned branch",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "6df469337eba46ef1ec938fba4998af3fc19ebd40750f1a19ee5077eecdea829",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-020",
+    "heading": "Example 3 \u2014 Free zone manufacturing",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "61c0d115d3a739e1634ff09613543b386b652c234d8833894a82f5b79993cee7",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-021",
+    "heading": "Section 12 \u2014 Self-checks",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "64287c80a550c39a8bc860fc04828182c8f688514ccc6b561353f9e0d759e4d6",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-022",
+    "heading": "Section 13 \u2014 Reference material",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "980afeab00f30828477f69849a6fc2f123764221cf42a325a55001a11766c244",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-023",
+    "heading": "PROHIBITIONS",
+    "original": "sd-company-formation",
+    "destination": "sd-company-formation",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b0a4e22ba538e42e81e291db6d2d64c9b6555f0a8976be74eac02be1f292d1ae",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-024",
+    "heading": "Section 1 \u2014 Scope statement",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "930e812376481377cf9080a14b80ad1b022f7891009a19b776344cc39a161585",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-025",
+    "heading": "Section 2 \u2014 Filing requirements",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "6a183d281c9b5ecac00e5eb054eb5aeb9fc62b91edc4a4bf35449133227138ec",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-026",
+    "heading": "Sector-differentiated BPT rates",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "445a16cec92202243a7e33f9fb784b9fa9b546ae7c4c6d2b3eb6d599e7dcf6f6",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-027",
+    "heading": "Withholding tax rates on payments",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "952734878a9fe0f01212054e4bb0fc23e3e558c6043d1a5d0aea7921e8e8b3de",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-028",
+    "heading": "Step 1 \u2014 Determine taxable income",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c65ed44a949457ff6109a5a5dfd8c7177f786a7e05250d46ae0a8f959a090bc5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-029",
+    "heading": "Step 2 \u2014 Apply sector rate",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c813fe318d81be07129a830c835fc1d3540d54a89617d50b081e256d9b37051c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-030",
+    "heading": "Step 3 \u2014 Apply deductions and credits",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c8bd5967690924661cbf11408f1a752ece89ca07a54b5dabf76da3e9a89c1df9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-031",
+    "heading": "Step 4 \u2014 Loss carryforward",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f320e2fafb403969326c117bfc027e06ccfca9552ae16577b90d469c0e2225af",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-032",
+    "heading": "Allowable deductions (Income Tax Act 1986, Art 18(1)(A))",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7b677546226e008da635184a8dda285f9681c28a6d3c647c6341bae23512d538",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-033",
+    "heading": "Non-deductible expenses",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "eec93f63254bd12e4508a63d5f08cfb0b4015e910f7103ae3db8ec64c588062b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-034",
+    "heading": "Initial depreciation allowance",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "62a88f9b3b387a27868865b534982096510307051724731e948dc34a3d3172b2",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-035",
+    "heading": "Free Zones and Investment Incentives",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b6c5a1feb319d8d7b9b9b0c4120eeff56e61964098af2ce0b0aee0cbaa442fe3",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-036",
+    "heading": "Petroleum Production Sharing Agreement (PSA) regime",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f7f5df1523d7ed3643faa97261710e03045242d20970b63c538bfe58a68e53d0",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-037",
+    "heading": "Transfer pricing",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-transfer-pricing",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "0df99be0377ac5949ad5d5a176038ab1d33bf6180ed6781ea8b766566897b02e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-038",
+    "heading": "Currency conversion",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "aa72d46d45030710f7e693d9125c0aba9d19e22554f1ad0c3d02675899c3aaa6",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-039",
+    "heading": "Tax exemptions (Schedule 1 and ministerial orders)",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "dd66933afcef6f698fa8d8c29ccf2ff29b85d830c7cbd4ac907a24970ad45b66",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-040",
+    "heading": "Double taxation treaties",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "78983855c1a5fb3efe15c168398edc7e0ea4b2132e8e738801768e5136f171f8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-041",
+    "heading": "Example 1 \u2014 Standard manufacturing company",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "95d5c7e748978cd1f839a27570ecb21dcfb919ebaa4e54492b190cb8f5ebea83",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-042",
+    "heading": "Example 2 \u2014 Bank operating in Sudan",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e936e71f712604838fc2479ac00e9d97978fd26d6f0f02c39803cc47c6631fee",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-043",
+    "heading": "Example 3 \u2014 Company in a Free Zone (investment incentive)",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "6f0eac6930e966aa91bea92f4efec7538abdfe3bd329683f38e3a6a0212183c9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-044",
+    "heading": "Example 4 \u2014 Withholding on payment to non-resident contractor",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b6f53d244a5b4cc58ef87b61ecc1c5dfd2f56e850fdb99a1805acbae55bc9938",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-045",
+    "heading": "Section 7 \u2014 Self-checks",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d4279769a7972a87d77b0a9e9d489a89a8b6918cf35a9ffc7a5ad3a045856e69",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-046",
+    "heading": "Section 8 \u2014 Reference material",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7426cb8ec128a7090dc80aa38dac806ebcce9a4c884f0ad14c62cab77c4e111e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-047",
+    "heading": "PROHIBITIONS",
+    "original": "sd-corporate-income-tax",
+    "destination": "sd-corporate-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b76dc3373960d16cc6d4188b76559c978cc5d10b04898b3bd4b82dceca497d22",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-048",
+    "heading": "Section 1 \u2014 Scope statement",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c7c59700e2d0afc469358a49db6870bda6a9701b20f7355e33a0ca71a26f6e9d",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-049",
+    "heading": "Required inputs",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f882db43cccb8b7c192c88bf9e0cbfdb256825b1594d2b3bd0e2969b804a83c8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-050",
+    "heading": "Refusal catalogue",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "ee0587ede9d9e0c754c0c3d4461f283f6dd83ca3dba9c744cf9c154dd299a257",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-051",
+    "heading": "Personal income tax rates (employment / salary)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "fc5590dd3618cd0921afbe357c9a4f96c001027508fcd6ffe377b0ef0449e861",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-052",
+    "heading": "Personal tax-free allowance (exemption)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "9076435e129f6a1c513ee305bb51ed309a26b380559ce92782831aac047cb3e4",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-053",
+    "heading": "PAYE withholding",
+    "original": "sd-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e4365e5012f2396546ede3251a513783331a0fd47d9f958863cb65d86ec9c964",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-054",
+    "heading": "Individual annual return deadline",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c29ea8bb34a47469cae0e45fb345862113bf57b51f0dfd67b051c22b9eef9103",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-055",
+    "heading": "Conservative defaults",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e2fb8e8f3368b61c063648550dfbecda4cb8be8b26e70c62efaefdb19745ebb8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-056",
+    "heading": "Step 1 \u2014 Determine residency",
+    "original": "sd-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "2f69dfc4eb5a8a6475dc42ec6b410cedb3973c9c8e00278a3136df22f0d788cc",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-057",
+    "heading": "Step 2 \u2014 Classify income",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "618c708c487abe8f2c910c4f8ac7cebfb0ce0ef74a5685b081904f65825a74c9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-058",
+    "heading": "Step 3 \u2014 Apply personal allowance",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f1ea3f74e8f6ccdf1cee194d04edf217d8a94935aa7e994c4a5a4664587005bf",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-059",
+    "heading": "Step 4 \u2014 Compute tax on progressive scale",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "101a10b88fda20f4ffd434a42a83df1d0f6d3c9478068c35e51da8d2c19f2b8f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-060",
+    "heading": "Step 5 \u2014 Apply credits",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b5ed9e7d7cdd8cd603a2261a00b1e68c7bd54d87dbe4ec9bda9a16b4171ce9b9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-061",
+    "heading": "Tax exemption categories (Schedule 1, Income Tax Act 1986)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "2095ccd9ac530ebd7f52287d454661dbb6ed54236658d4ee9b0c8555bd9a7a18",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-062",
+    "heading": "Residence \u2014 non-individual (companies)",
+    "original": "sd-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c9ad3c48b36126ae22d3d129194489651643c46e5a5730627861f08f5793186c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-063",
+    "heading": "Currency conversion",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "aa72d46d45030710f7e693d9125c0aba9d19e22554f1ad0c3d02675899c3aaa6",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-064",
+    "heading": "Income subject to tax (Art 4, Income Tax Act 1986)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "70d2058dd134e7371a0b4a7621e5bc2ec5c1e5ad07b8eec5bff5858e77570c7a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-065",
+    "heading": "Record-keeping",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b9f67d61f1e3cbac64192ce889faba00e00200c42423a341ca22bc3482b69b38",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-066",
+    "heading": "Self-assessment and penalties",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "30c99786ce6354229f26e2c4bc8b7971edda58a6f2ef00115838f3ecf48a63cf",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-067",
+    "heading": "Example 1 \u2014 Resident employee, moderate income",
+    "original": "sd-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7e619219228e17596004208b6dc27ce25dd00c938269ad45e7dbc2da2391fd0b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-068",
+    "heading": "Example 2 \u2014 Non-resident consultant",
+    "original": "sd-income-tax",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "709257124fac9b28279374d4e70396b8cb001a78ce802b559c464b1ed43f3f42",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-069",
+    "heading": "Example 3 \u2014 Rental income",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "1e4f9996de1392bb13e2922483dcef63bcd3a7afd8870f6d1d675f425cfd6115",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-070",
+    "heading": "Example 4 \u2014 Sole proprietor (commercial activity)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "2dc72974bdd561ab56a0fb99f08de273f7c70fb1ded0c2b7ce3e824b39fc6b5e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-071",
+    "heading": "Example 5 \u2014 Employee over 50 years old (exemption)",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7f1d3136777dd8a48bf83f93749d3eccbf9f85f82077209f83843fc229a6e1c9",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-072",
+    "heading": "Section 7 \u2014 Self-checks",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "55ca5aac6c3b4455a13a6cbfb25a7cac35b7e42c22c040c9c9c8e000fa940a91",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-073",
+    "heading": "Section 8 \u2014 Bank statement reading guide",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b613de963210f14b0247a168991a5270feb825f11c447ec5968025f7ccfcc658",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-074",
+    "heading": "Key Arabic banking terms",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7dbc10572a9951216fbc134d981fb0b8d2983347986e0c99ea69aff270665e9a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-075",
+    "heading": "Section 9 \u2014 Reference material",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "a5a352e6b8672ec4b8d58d0136d9b7915c43373b2e0f036f746f48e675c4d250",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-076",
+    "heading": "PROHIBITIONS",
+    "original": "sd-income-tax",
+    "destination": "sd-income-tax",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "822bd37732ab97d4d94c78bfdecae350b66c8e63dbb1f7cbf719cc6fcd495f5b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-077",
+    "heading": "Section 1 \u2014 Scope statement",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "abc9f380f2cd59d04ab4bdf6344b2565311cf1a976fcea9a78845aef0b936ced",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-078",
+    "heading": "Regulatory framework",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c3e505698c039b196e2ce380e09cdb65bc061cfa789dafb40666e4aeba7f0c2d",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-079",
+    "heading": "Coverage",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "0f744a8864c260b068508814446b519976d94fbbe2d4b9041d8d6bebc06fbe24",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-080",
+    "heading": "Old Age, Disability, and Survivors (pension)",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d0f3a256f5fc398649e8e2b6cd1230b18fa6d48b29c1ef2ce1e3e2f9f3462530",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-081",
+    "heading": "Contribution wage base",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "71473964acf28d44b170cc7973b7cb295cd0748e0edc5ef0965316bf37bd801a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-082",
+    "heading": "Sickness and Maternity",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "0ebd52bca449cd210100ae899395a9577b092a07592156374b840ca0e9427c97",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-083",
+    "heading": "Work Injury",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "4ec0e2ebba19fd2b40ac1582dff0998c20717b8cce87085fad810298deda8b5f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-084",
+    "heading": "Employment income tax (PAYE)",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "2ee98c71fe666690f9e95b9db8686179355a7acab96d4c4b0d24defcec1f2751",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-085",
+    "heading": "Employer monthly payroll obligations",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7e040bbc899e6a0e0d02b4569295ac8b0a957b7ec500bd2ef1d5b5bfed4f5242",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-086",
+    "heading": "NSIF contribution remittance",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "38e3363b31fb7e0e834d2f6398219bbf513869f5d3a63f142e8a72e75561666f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-087",
+    "heading": "Old-age pension",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "21fec3fe20a7b542fd35dc119458b039638f17a4c6877a5be19d79d9d39341b7",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-088",
+    "heading": "Disability pension",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "4d28d45ddd8b0e8de2bc5a7567311311c61d65e9dba7226f5edbb87bc1fa4b8d",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-089",
+    "heading": "Survivor pension",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "625dbc627a121d1801101479962dd894ccd048a7fb2b323d1c22312aa5d7f90f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-090",
+    "heading": "Death grant",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "61e4b3118c51fef1b19ced1040d485788424f6d29cd83fe512bc665f675e43aa",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-091",
+    "heading": "Sickness benefit (employer liability)",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "4d6564079fb17f03192cdf82f73766e0062c07b5d47bc8aa3c68ba14c3408631",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-092",
+    "heading": "Maternity benefit (employer liability)",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "48e3fb8bf1eb4eebb6cde4f191e19c375f043a8f1b26f24f5706719fa66ba988",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-093",
+    "heading": "Severance pay (unemployment, labor code 1997)",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e40d8c74b7ac5449f1c2eefdfbe92c49ee6e90a9c06f671786bfce7fe52f9502",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-094",
+    "heading": "Example 1 \u2014 Standard employee payroll",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "2b34fba4bca7c1fd5298f01830930ade10271a95d4bd1eee1444c016e84ac3d4",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-095",
+    "heading": "Example 2 \u2014 NSIF contribution with wage cap",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f2c4dbc52d48d335ce2c6909664af02ce8bdbbf043ffed40933b4d9b1c3d169d",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-096",
+    "heading": "Example 3 \u2014 Self-employed social insurance",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "5749349355404d5a91ca2321884f0fbc469e6c61c6a7d05a88b72563fa4b23b0",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-097",
+    "heading": "Example 4 \u2014 Severance calculation",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e7cf3428e6fb92664729d1c2e499a129588a8df73abc9b7e586163077784ebc5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-098",
+    "heading": "Employer record requirements",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "feb895d04f92fe560cc087056d0903f3753966a0d444da62658ea6d80753289a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-099",
+    "heading": "Registration requirements",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "8f380dca057c232ea4501a3d3650c5779b3a26093618de59a9e5a1f314e407d0",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-100",
+    "heading": "Penalties for non-compliance",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "5c7c477a09ceccc455b34379dc0f5e664eedb0bb8e90b5cb5a574968fc0c3fc5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-101",
+    "heading": "Section 8 \u2014 Audit flash points",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "105a14b6c746678c39b08be30f393d3280d0c6a5916a099fc80d43712ade94b1",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-102",
+    "heading": "Section 9 \u2014 Self-checks",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "fa6e86e00465f0895fc061177b320a11636fe222c2ceb1f4d717b3569b578649",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-103",
+    "heading": "Section 10 \u2014 Reference material",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "58ac803b8e78d1b9b5da0df00945eb684989d2616eebccc8a8a43b61d38b7d99",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-104",
+    "heading": "PROHIBITIONS",
+    "original": "sd-payroll-social",
+    "destination": "sd-payroll-social",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "001dd311ab8caa2dbdff422645825580692f1ca2ed42143adbad1ee3b41805a6",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-105",
+    "heading": "Section 1 \u2014 Quick reference",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "65200610f8bc2f27e904fde238d84bede8dea7f08d4908978ae1a0cb5d55a5e8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-106",
+    "heading": "Section 2 \u2014 Tax structure map",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "6f2df42d80a4195a9355f01fb6ca83df52a3d0375475ca33c92bb6bd1a1d33b8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-107",
+    "heading": "Category 1 \u2014 Goods and Services Taxes",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "1b43ab58d2f129b4d315025887bf055b3cf0afbfbdbfae8d4430f0e6e79fa258",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-108",
+    "heading": "Category 2 \u2014 Income Taxes",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d29a49886cd65750d2aade21583c9f6044dfafdbb2c38dc7fedabcff627057f7",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-109",
+    "heading": "Category 3 \u2014 Property and Transaction Taxes",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "d87e9f6ad19a6111fcf76c783958b265d18ac03be58f5821ee6c7ec7c092af3f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-110",
+    "heading": "Category 4 \u2014 Sector-specific and contractual",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c95672fbb60f9fec4b99b66c271738f516661f1203d4e3dc71eb8da2a5729a39",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-111",
+    "heading": "Sudan Taxation Chamber (\u0645\u0635\u0644\u062d\u0629 \u0627\u0644\u0636\u0631\u0627\u0626\u0628 \u0627\u0644\u0633\u0648\u062f\u0627\u0646\u064a\u0629)",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "0b7c98dc3da8b5c991b3c84ffec30e6f2bf4c11387522e8a03eeb90ac8527873",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-112",
+    "heading": "Related fiscal agencies",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "fe83f95645e2ed06673eeab72f9deef974b625145e667bd133482b851ab96ddc",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-113",
+    "heading": "Section 4 \u2014 Sudan vs. South Sudan",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "559b5dfb5eed78066e3c07f2b57614e490447b5b42e1b25eb6d832ab10f4f1b5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-114",
+    "heading": "Territorial + person hybrid",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c4cf7b442ea0e68b9dc85dd2420ef109d17bfd196c2a4247423c31e302bca596",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-115",
+    "heading": "Residency tests",
+    "original": "sd-tax-overview",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "304efd36ef86441fad89de038c7c5854c70b8886ce26985451c84d8046d6eda1",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-116",
+    "heading": "Reform timeline",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "e9051d427b00ecfe6ee499eed3c1d181a279d452789c4d81480d2bb718991bd8",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-117",
+    "heading": "Current status (as of 2026-07)",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "4a711844d6d1b86d0778d20459be7a5bcdd4755e7ab5b00037f687f7825ec30a",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-118",
+    "heading": "Section 7 \u2014 Currency and denomination considerations",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b549aba1b8d6b64e60d926c43d02bdb44fa7efdfd9a382b52bf3e0fba27a8aec",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-119",
+    "heading": "Section 8 \u2014 Audit flash points summary",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "98de932568a2f352ca135eff09930b29b7a2e91a42f1e0e75c0d3ffd51c62632",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-120",
+    "heading": "Section 9 \u2014 Reference material",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "fb15e7656dbe2451b4f43b5515ff0847d8720a46100dc4ce2329941eeed4f5f5",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-121",
+    "heading": "Section 10 \u2014 Risk-classified treatment summary",
+    "original": "sd-tax-overview",
+    "destination": "sd-cross-border-residence",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "f44fead30e82ae72fe7e7e063aa89b3226c709e858af7c45ce092d7cef6b08cf",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-122",
+    "heading": "PROHIBITIONS",
+    "original": "sd-tax-overview",
+    "destination": "sd-tax-overview",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "6377af9a26c02be0fbf2ff9a23f32daff119704a6e9a83496d9a73addce1a63c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-123",
+    "heading": "Sudan VAT (\u0636\u0631\u064a\u0628\u0629 \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0636\u0627\u0641\u0629) Skill v0.1",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "5a656c0a317d7abca5e9e596ca4c8f6f298bfba54b9b1092d82400b40b1ab580",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-124",
+    "heading": "Section 1 \u2014 Scope statement",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "11f2db9e56a53f212b13f9121328adaf9737c4639a1ee5165e2f33ee0c3b709e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-125",
+    "heading": "Section 2 \u2014 Quick reference",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "320588c3d61dc595d332804ac3643106be9ee762437daaaebbd3c6af65576a9d",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-126",
+    "heading": "Key return sections (Form 3)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "189decda3207bf61759f54b39f9fa947f441d55597d3d564866cbc5118106a61",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-127",
+    "heading": "Conservative defaults",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "8b424a8aa1027515396c241ec53f9e13fa170754d1a81350f77ebf951a1399e0",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-128",
+    "heading": "Section 3 \u2014 Rates and thresholds",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "82c524de7d9112c91d3932ec34f038308ba48294c987b6203281ceaf3a681b1c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-129",
+    "heading": "Who must register",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b9d8cac2c619bb743741c53922a227154f5fe1d251c48eef77a6c75ba7178826",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-130",
+    "heading": "Registration procedure (Form 1, Form 2)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "1d3d2eae88c920210f2b1e94a8ae43ac19bd85fb6f1e167b9fb7c7edcf980007",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-131",
+    "heading": "Registration cancellation",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "1f3a8d77a8182cc61ceb50d508c0640055c4a6ed6177dfb0afcb13d8a40985db",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-132",
+    "heading": "Changes to registration data",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "bec6d62e4ac4829fbfa4af7e7d9775972a5f0ca0dbd6317597c22969ee20a99b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-133",
+    "heading": "Filing and payment",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "27c574b233252efde5fec1ba9ae0839f405380a0c69093476588ee6958777375",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-134",
+    "heading": "Filing and payment",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "ed91f3b02bbd0837339b5c2f5517164a33780ae7ea442acb244ee55ce3054209",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-135",
+    "heading": "Books and records",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "c1b748e815f7e13681fe8866e6a617e802bb368062a6304243b0dedee1e2b9c2",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-136",
+    "heading": "Step 1 \u2014 Compute output VAT",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "7f2c4b6844dacafce5e34798a176e643252c1aab91a5934c3ddfdb924cf5443b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-137",
+    "heading": "Step 2 \u2014 Compute input VAT (only recoverable if registered)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "575769c57897d3d85c0baaa2544362712135d5460783a2fccd5fe85919aa33d3",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-138",
+    "heading": "Step 3 \u2014 Net VAT payable",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "32e978423b2bc9500b8b4523d2f3cd423cdea38f7449c8f09e3e9847bd90245e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-139",
+    "heading": "Reverse-charge on imported services",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "76170793f22dc65c7f344280fa2dbcb464328e9a567dba6aed49110e1a35139e",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-140",
+    "heading": "Tax invoice requirements",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b72b9a20456805f753868b36780291d911fdd109258c1c146afcd7ed4b1f9a02",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-141",
+    "heading": "Special-rate supplies",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "3a99a624f37d1f4f68506fbb7fcae6ee4e326cdebbea4c65b723fceb34807fbd",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-142",
+    "heading": "Voluntary registration",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "0526ae168a1f89622537c2558fdade79cc1db7767e63026cf6758bfd21e537df",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-143",
+    "heading": "Sanctions for non-payment",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "cdc9b3a2b95292c81969fedc90b070a4b92bbd8a68d3e6339820e546400d551b",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-144",
+    "heading": "Refunds for exporters",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "a2e0d92aedf931825875751e07bf22caf9617104b0a9945eed06f2fb3f986605",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-145",
+    "heading": "Imports",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "81522f78bf26fe3bc370eb89bd75c74b591f45f695eed6e78b8ca27e990556e2",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-146",
+    "heading": "Example 1 \u2014 Standard domestic sale",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "1d54ab5cbb2a672f0b4d802ebe9741ae4f5b4e9d7854f8ecc882a19a4e3fc658",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-147",
+    "heading": "Example 2 \u2014 Telecom sale (special rate)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "a38faa6d5b00c511a104af95cedc825fcfe586bd0355f8b3f4699d803791f383",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-148",
+    "heading": "Example 3 \u2014 Export of goods (zero-rated)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "b9fe77bfd5c44c14adf9ed4674a9b544fdc38490cf2ef4cb0d98258cf303011c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-149",
+    "heading": "Example 4 \u2014 Reverse charge on foreign SaaS subscription",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "a249bb485e0b7e5e9a70b7f6727a757fa8b7e702e19c182a43fbb14d6777601c",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-150",
+    "heading": "Example 5 \u2014 Import of goods (customs VAT)",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "62581af8990abe784f89181e8c84fb442e06e8b57fbea14453981a672df2c120",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-151",
+    "heading": "Example 6 \u2014 Monthly return summary",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "10353968d5e74b20946c41de79026de47957544187ac834654ea37d11fb18a08",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-152",
+    "heading": "Section 8 \u2014 Self-checks",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "8efcccce0c07d8882973ae6ca4e03956b1c4b3fe501ff1d929a19c89d8edda3f",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-153",
+    "heading": "Section 9 \u2014 Reference material",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "5c0fc4e8d9d2d5ddf5b87566bbadb9173c583ba7cecc4b6f635e3d88ad589f87",
+    "destination_hold_present": true
+  },
+  {
+    "id": "SD-OLD-154",
+    "heading": "PROHIBITIONS",
+    "original": "sd-vat-gst",
+    "destination": "sd-vat-gst",
+    "exact_body_in_pinned_original": true,
+    "body_sha256": "99fe3e74dbc8418e814a3c59185c6a945559424f9674d53484e73a857571e2f5",
+    "destination_hold_present": true
+  }
+]

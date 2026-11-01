@@ -1,0 +1,913 @@
+{
+  "base": "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+  "branch": "codex/sudan-tax-2026",
+  "date": "2026-11-01",
+  "description_rule": "YAML safe_load description whitespace split,80–150 inclusive",
+  "guides": {
+    "skills/sudan/sd-capital-gains.md": {
+      "sha256": "e184da3ca1e4fa8cb03e4bcc5275e6cf85bf1d49b1856acfc1aa1672e484d722",
+      "description_words": 110,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 9,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": false,
+      "new_no_platform_keys": true,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-company-formation.md": {
+      "sha256": "872eddda2a6ed805c1868470d375f1656f9641a2c9d6dd18681fefd54d109e5d",
+      "description_words": 107,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 15,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-corporate-income-tax.md": {
+      "sha256": "e403606344ace773375d5a281c13e7d2abc075f3db1d36c19b21e651a10f182b",
+      "description_words": 108,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 17,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-cross-border-residence.md": {
+      "sha256": "9c48912984f1c4078811aa50a1c461829d755fa51e073c1ed03df235071d6613",
+      "description_words": 111,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 10,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": false,
+      "new_no_platform_keys": true,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-income-tax.md": {
+      "sha256": "ba7c4156a354fce1a7f705c11eb1fe0cf67050ece887087035198d1c873f8ce1",
+      "description_words": 103,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 17,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-payroll-social.md": {
+      "sha256": "99842cb1d20a35274333c7b5a63667be424d621c9827c37d2f003d29baa0de66",
+      "description_words": 106,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 9,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-tax-overview.md": {
+      "sha256": "1c0ecfd0b90d11b2682fd3f8b8364788115d8035dbf4a11cb196b7714caa9869",
+      "description_words": 109,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 7,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-transfer-pricing.md": {
+      "sha256": "7b26a2723ce67bb87cec3223d91ac0128c2c1c6cc1de853952366187e3b2bc7f",
+      "description_words": 110,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 5,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": false,
+      "new_no_platform_keys": true,
+      "version": "0.1",
+      "last_updated": "2026-11-01"
+    },
+    "skills/sudan/sd-vat-gst.md": {
+      "sha256": "fae1e4d7f6cd4065d8678cefb5757ad7251659d3a9a3f7da5c81080a9bf6f393",
+      "description_words": 106,
+      "shape_check_count": 15,
+      "shape_failures": [],
+      "ledger_rows": 18,
+      "examples": 2,
+      "legacy_platform_and_cta_exact": true,
+      "new_no_platform_keys": false,
+      "version": "0.2",
+      "last_updated": "2026-11-01"
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "skills/sudan/sd-capital-gains.md",
+        "skills/sudan/sd-company-formation.md",
+        "skills/sudan/sd-corporate-income-tax.md",
+        "skills/sudan/sd-cross-border-residence.md",
+        "skills/sudan/sd-income-tax.md",
+        "skills/sudan/sd-payroll-social.md",
+        "skills/sudan/sd-tax-overview.md",
+        "skills/sudan/sd-transfer-pricing.md",
+        "skills/sudan/sd-vat-gst.md",
+        "--require"
+      ],
+      "returncode": 0,
+      "stdout": "checked 9 files, 18 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "c61d7ae58017ab9bb896a76027f2678c21b4f312",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "scoped_validator": {
+    "paths": [
+      "skills/sudan/sd-capital-gains.md",
+      "skills/sudan/sd-company-formation.md",
+      "skills/sudan/sd-corporate-income-tax.md",
+      "skills/sudan/sd-cross-border-residence.md",
+      "skills/sudan/sd-income-tax.md",
+      "skills/sudan/sd-payroll-social.md",
+      "skills/sudan/sd-tax-overview.md",
+      "skills/sudan/sd-transfer-pricing.md",
+      "skills/sudan/sd-vat-gst.md"
+    ],
+    "errors": [],
+    "warnings": [
+      "skills/sudan/sd-capital-gains.md: SD IT-IND also holds sd-income-tax, with a different job"
+    ],
+    "method": "Actual validator functions on nine explicit working-tree paths; added paths derived from pinned base. CLI after commit validates committed changes."
+  },
+  "readme": {
+    "applicable": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "covered_by": {
+      "IT-IND": "sd-income-tax",
+      "IT-CORP": "sd-corporate-income-tax",
+      "VAT": "sd-vat-gst",
+      "SC": "sd-payroll-social",
+      "PR": "sd-payroll-social",
+      "TP": "sd-transfer-pricing",
+      "XB": "sd-cross-border-residence"
+    },
+    "partial": {
+      "IT-IND": "Later enacted chain, full income regulations, nonresident bands, allowances and current forms remain unresolved; source baseline only.",
+      "IT-CORP": "Later enacted chain, depreciation regulations, agricultural classification and current return/payment implementation remain unresolved.",
+      "VAT": "Later enacted chain, numeric registration threshold, current Form 3/rates and special valuation/exemption implementation remain unresolved.",
+      "SC": "Full current 2016 statute, coverage/caps and conflicting official health contribution bases remain unresolved.",
+      "PR": "Current monthly PAYE/fund forms and remittance directions, benefit valuation and labour/social-insurance interaction remain unresolved.",
+      "TP": "Express associated-person pricing law read; actual methods/documentation regulations, later chain and compliance procedures remain unresolved.",
+      "XB": "Later chain, actual withholding rate orders, treaty instruments and foreign-credit/PE procedures remain unresolved."
+    },
+    "country_complete": false
+  },
+  "quote_locators": {
+    "unique_rules": 84,
+    "ledger_rows": 107,
+    "normalised_text_matches": 73,
+    "visual_ocr_exceptions": 11,
+    "checks": {
+      "basis": {
+        "source": "income-en",
+        "reference": "ss.2,15; PDF11,27",
+        "short_quote": "twelve months preceding the assessment year",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "residence": {
+        "source": "income-en",
+        "reference": "s.2 resident/domiciled; PDF12,14–16",
+        "short_quote": "exceeding in total one hundred and eighty three days",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "entity-res": {
+        "source": "income-en",
+        "reference": "s.2 resident; PDF16",
+        "short_quote": "supervision of the business of such person and management thereof are exercised",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "scope": {
+        "source": "income-en",
+        "reference": "s.9; PDF22–23",
+        "short_quote": "any place outside the Sudan, in case of resident person",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "charity": {
+        "source": "income-en",
+        "reference": "s.9(3)–(4); PDF23",
+        "short_quote": "shall not apply to any commercial activity under the Zakat Act",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "avoid": {
+        "source": "income-en",
+        "reference": "s.16; PDF27–28",
+        "short_quote": "one of the basic objects",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "expenses": {
+        "source": "income-en",
+        "reference": "s.18(1); PDF29–30",
+        "short_quote": "incurred totally in obtaining such income",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "disallow": {
+        "source": "income-en",
+        "reference": "s.18(2); PDF30–32",
+        "short_quote": "any expenditure spent on the living of his family",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "incentive": {
+        "source": "income-en",
+        "reference": "s.18(2); PDF32",
+        "short_quote": "salary of three months annually",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "depreciation": {
+        "source": "income-en",
+        "reference": "s.20; PDF33–37",
+        "short_quote": "Schedule II hereto",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "loss": {
+        "source": "income-en",
+        "reference": "s.21; PDF37–39",
+        "short_quote": "shall not exceed five years",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "export": {
+        "source": "income-en",
+        "reference": "s.22(1); PDF39–40",
+        "short_quote": "sold wholesale, in the most favourable conditions",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "tp": {
+        "source": "income-en",
+        "reference": "s.22A(1); PDF40",
+        "short_quote": "whether resident or non-resident",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "tp-value": {
+        "source": "income-en",
+        "reference": "s.22A(2)–(3); PDF40–41",
+        "short_quote": "the natural cause of matters",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "tp-rel": {
+        "source": "income-en",
+        "reference": "s.22A(3); PDF41",
+        "short_quote": "at least 50%",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "rent": {
+        "source": "law32-34",
+        "reference": "Income Tax Amendment 2021 s.2(a), PDF1; principal s.25",
+        "short_quote": "خمسة وعشرون",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law32-34-001-enhanced.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "wages": {
+        "source": "income-en",
+        "reference": "s.26; PDF48–50",
+        "short_quote": "any wage, salary, leave pay, sick leave pay",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "housing": {
+        "source": "income-en",
+        "reference": "ss.26(b),27; PDF50–51",
+        "short_quote": "whichever is the greater",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "pension-deduct": {
+        "source": "income-en",
+        "reference": "s.28; PDF51",
+        "short_quote": "pension deductions",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "mixed": {
+        "source": "income-en",
+        "reference": "s.30; PDF52–53",
+        "short_quote": "does not exceed one-quarter",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "employment-bands": {
+        "source": "law32-34",
+        "reference": "Income Tax Amendment 2021 s.2(f), replacement Schedule III(B), PDF2",
+        "short_quote": "لا يتمتع الأفراد غير المقيمين",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law32-34-002-enhanced.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "business-bands": {
+        "source": "law21",
+        "reference": "Income Tax Amendment 2019 s.2(2)(a), PDF1; principal Schedule III(A)(a), PDF136",
+        "short_quote": "تعدل الفئة",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law21-001.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "company-rate": {
+        "source": "law21",
+        "reference": "Income Tax Amendment 2019 s.2(2)(c)–(d), PDF1",
+        "short_quote": "ويستعاض عنه بالرقم",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "telecom": {
+        "source": "law32-34",
+        "reference": "Income Tax Amendment 2021 s.2(e), PDF2",
+        "short_quote": "من صافي الدخل",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law32-34-002-enhanced.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "agriculture": {
+        "source": "law38-39",
+        "reference": "Income Tax Amendment 2022 s.2(6)(b), PDF2",
+        "short_quote": "من صفر الى 2%",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law38-39-002.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "age-repeal": {
+        "source": "law38-39",
+        "reference": "Income Tax Amendment 2022 s.2(5), PDF2; principal Schedule I2(c)",
+        "short_quote": "في الجدول الأول تحذف",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law38-39-002.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "treaty": {
+        "source": "income-en",
+        "reference": "s.33; PDF55",
+        "short_quote": "by an order therefrom",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "agent": {
+        "source": "income-en",
+        "reference": "s.34; PDF56",
+        "short_quote": "on his agent in the Sudan",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "returns": {
+        "source": "income-en",
+        "reference": "s.38; PDF58–61",
+        "short_quote": "within fourteen days",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "records": {
+        "source": "income-en",
+        "reference": "s.39(4)–(6); PDF62–63",
+        "short_quote": "not less than six years",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "translation": {
+        "source": "law38-39",
+        "reference": "Income Tax Amendment 2022 s.2(1), PDF1",
+        "short_quote": "ترجمة معتمدة باللغة العربية",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law38-39-001.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "employer-return": {
+        "source": "income-en",
+        "reference": "s.41; PDF66–67",
+        "short_quote": "thirty first of January",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "paydate": {
+        "source": "income-en",
+        "reference": "s.62(1),(6); PDF90–91",
+        "short_quote": "at such date, as the regulations. may specify",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "penalties": {
+        "source": "income-en",
+        "reference": "s.63; PDF92",
+        "short_quote": "as the regulations may specify",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "withholding": {
+        "source": "income-en",
+        "reference": "s.65(1)(a)–(k); PDF94–96",
+        "short_quote": "specified by the Minister under an order",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "withholding-remit": {
+        "source": "income-en",
+        "reference": "s.65(1)(i)–(j),(2); PDF96–97",
+        "short_quote": "within one month",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "tin": {
+        "source": "income-en",
+        "reference": "s.82; PDF114–115",
+        "short_quote": "submit an application to the Chamber",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-charge": {
+        "source": "vat-ar",
+        "reference": "ss.12,15; PDF11,13",
+        "short_quote": "تفرض الضريبة على مبيعات السلع المحلية والمستوردة",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-general": {
+        "source": "vat-ar",
+        "reference": "s.14 and amendment footnote, PDF12",
+        "short_quote": "بفئة (صفر)",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-telecom": {
+        "source": "law40-42",
+        "reference": "VAT Amendment 2022 s.2(a), PDF1 and attestation PDF2",
+        "short_quote": "ويستعاض عنها",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law40-42-001.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "vat-tobacco": {
+        "source": "law13_14",
+        "reference": "VAT Amendment 2018 s.2, PDF1–2",
+        "short_quote": "التبغ والسجائر",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-registration": {
+        "source": "vat-regs-2017",
+        "reference": "reg.5, PDF4",
+        "short_quote": "المستورد والمصدر",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "vat-regs-2017-004.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "vat-voluntary": {
+        "source": "vat-regs-2017",
+        "reference": "reg.6, PDF4–5",
+        "short_quote": "سنتين",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-form1": {
+        "source": "vat-regs-2017",
+        "reference": "reg.7, PDF5",
+        "short_quote": "ثلاثين يوماً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-cancel": {
+        "source": "vat-regs-2017",
+        "reference": "reg.8, PDF5–6",
+        "short_quote": "سنتين من تاريخ إلغاء التسجيل",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-invoice": {
+        "source": "vat-regs-2017",
+        "reference": "reg.9, PDF6–7",
+        "short_quote": "الفاتورة الضريبية",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-records": {
+        "source": "vat-regs-2017",
+        "reference": "reg.10, PDF7–8",
+        "short_quote": "سنوات",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-deadline": {
+        "source": "vat-regs-2017",
+        "reference": "reg.11, PDF8",
+        "short_quote": "خمسة عشر يوماً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-input": {
+        "source": "vat-regs-2017",
+        "reference": "reg.29, PDF18–19",
+        "short_quote": "للاستخدام الشخصي",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-adjust": {
+        "source": "vat-regs-2017",
+        "reference": "regs.29,31, PDF18,21",
+        "short_quote": "الإقرار الشهري اللاحق",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-refund": {
+        "source": "vat-regs-2017",
+        "reference": "reg.30, PDF20",
+        "short_quote": "وعشرين شهراً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-exempt": {
+        "source": "vat-regs-2017",
+        "reference": "regs.32–33, PDF21–23",
+        "short_quote": "لا تعتبر المنتجات الزراعية أنها بيعت بحالتها الطبيعية",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-import-service": {
+        "source": "vat-ar",
+        "reference": "s.28(5), PDF20",
+        "short_quote": "غير مقيم وليس له كيان قانوني مسجل في السودان",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "vat-translate": {
+        "source": "law40-42",
+        "reference": "s.2(b)–(c), PDF1–2",
+        "short_quote": "ترجمة باللغة العربية",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law40-42-002.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "vat-form3": {
+        "source": "vat-regs-2017",
+        "reference": "annex Form3, PDF30–33",
+        "short_quote": "رصيد الضريبة المدين",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-scope": {
+        "source": "capital-gains-en",
+        "reference": "ss.3,5; PDF5–7",
+        "short_quote": "every defacto, or de jure gain",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-related": {
+        "source": "capital-gains-en",
+        "reference": "s.6; PDF7",
+        "short_quote": "assessed at the market price",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-base": {
+        "source": "capital-gains-en",
+        "reference": "s.7; PDF7–8",
+        "short_quote": "costs of enhancement",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-loss": {
+        "source": "capital-gains-en",
+        "reference": "s.8; PDF8",
+        "short_quote": "three years",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-rate": {
+        "source": "law23",
+        "reference": "Capital Gains Tax Amendment2019 s.2; PDF1",
+        "short_quote": "ويستعاض عنها",
+        "normalised_text_match": false,
+        "visually_checked_source_png_if_ocr_unmatched": "law23-001.png",
+        "method": "actual rendered clause visually read; OCR corrupts the short fragment"
+      },
+      "cg-pay": {
+        "source": "capital-gains-en",
+        "reference": "ss.22–24; PDF12–13",
+        "short_quote": "thirty days",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-relief": {
+        "source": "capital-gains-en",
+        "reference": "ScheduleI; PDF15",
+        "short_quote": "throughout the life of the individual",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-appeal": {
+        "source": "capital-gains-en",
+        "reference": "ss.20–21; PDF11–12",
+        "short_quote": "within thirty days",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "cg-represent": {
+        "source": "capital-gains-en",
+        "reference": "ss.11–16; PDF9–10",
+        "short_quote": "within the limits of any assets",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "members": {
+        "source": "companies-2015",
+        "reference": "s.5",
+        "short_quote": "يجوز لأي شخصين أو أكثر",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "private": {
+        "source": "companies-2015",
+        "reference": "s.8",
+        "short_quote": "ويجوز لها بحكم لوائحها أن تحدد عدد أعضائها بخمسين",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "memo": {
+        "source": "companies-2015",
+        "reference": "ss.7,14(1)–(5)",
+        "short_quote": "لا يجوز لأي من الموقعين على عقد التأسيس المساهمة بأقل من سهم",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "sector": {
+        "source": "companies-2015",
+        "reference": "s.14(6)",
+        "short_quote": "أن تحصل على تلك الموافقة قبل مزاولة ذلك الغرض",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "registration": {
+        "source": "companies-2015",
+        "reference": "ss.15–16",
+        "short_quote": "شهادة بتوقيعه مؤرخة ومختومة بخاتمه",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "office": {
+        "source": "companies-2015",
+        "reference": "s.24",
+        "short_quote": "خلال سبعة أيام",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "branch": {
+        "source": "companies-2015",
+        "reference": "ss.33–35",
+        "short_quote": "قبل البدء في مزاولة أي عمل",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "branch-change": {
+        "source": "companies-2015",
+        "reference": "ss.35(1)(e),36",
+        "short_quote": "خلال شهرين من تاريخ ذلك التغيير",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "board": {
+        "source": "companies-2015",
+        "reference": "s.39",
+        "short_quote": "على أن يكون أحدهما شخصاً طبيعياً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "agm": {
+        "source": "companies-2015",
+        "reference": "s.62",
+        "short_quote": "خمسة عشر شهراً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "annual-return": {
+        "source": "companies-2015",
+        "reference": "s.93",
+        "short_quote": "خلال واحد وعشرين يوماً",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "company-accounts": {
+        "source": "companies-2015",
+        "reference": "ss.153–158",
+        "short_quote": "وعرضها مع تقرير المراجع القانوني",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "company-amendment": {
+        "source": "company-notice",
+        "reference": "notice5July2025",
+        "short_quote": "تعديل لسنة 2025",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "investment-procedure": {
+        "source": "procedures",
+        "reference": "PDF2–4",
+        "short_quote": "إحضار لائحة التأسيس مختومة من الضرائب والزكاة من ثلاث نسخ",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "social-rate": {
+        "source": "social",
+        "reference": "About insurance, paragraphs on2016 law/contributions",
+        "short_quote": "صاحب العمل 17%",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "health-basic": {
+        "source": "health-basic",
+        "reference": "Financing paragraph",
+        "short_quote": "المرتب الأساسي",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "health-total": {
+        "source": "health-total",
+        "reference": "registration steps",
+        "short_quote": "أجمالي اجر العامل",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "maternity": {
+        "source": "labour-1997",
+        "reference": "s.46",
+        "short_quote": "أربعة أسابيع قبل الوضع وأربعة أسابيع بعد الوضع",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "sickness": {
+        "source": "labour-1997",
+        "reference": "s.47",
+        "short_quote": "ثلاثة أشهر بأجر كامل",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      },
+      "severance": {
+        "source": "labour-1997",
+        "reference": "ss.60–61",
+        "short_quote": "ثلاث سنوات في الخدمة المستمرة",
+        "normalised_text_match": true,
+        "visually_checked_source_png_if_ocr_unmatched": null,
+        "method": "actual clause read plus source-text locator"
+      }
+    },
+    "limitation": "Writer evidence only; quotation locator success does not replace independent legal inference/condition verification."
+  },
+  "old_topics": {
+    "heading_units": 154,
+    "legacy_files": 6,
+    "all_exact_old_units_preserved_in_map": true,
+    "all_ids_held_in_destination_sources": true,
+    "cta_blocks_exact": 6,
+    "reviewer_lost_content_restored": "Not yet independently reviewed; no zero-loss attestation inferred from map matching."
+  },
+  "source_hash_check": {
+    "capture_hashes_checked": 61,
+    "pdfs": 45,
+    "pdf_pages": 908,
+    "statute_chapters": 4,
+    "official_html": 10
+  },
+  "production_sync": "Not run. No authentic platform database CAS/content_revision was obtained or invented. Successful --strict-metadata command is the local pinned-base audit, not production sync permission.",
+  "skipped": [
+    "Independent pack review pending",
+    "No operative2026 consolidated-law or country-completion acceptance",
+    "Full engineering suite outside Guide-only scope",
+    "Generated index.json/llms-full.txt freshness skipped by contributor policy",
+    "No taxpayer submission/payment or production CAS/write",
+    "No push, PR, merge or publication by writer"
+  ]
+}
