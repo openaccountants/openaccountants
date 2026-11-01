@@ -27,6 +27,32 @@ Federal tax is run by the General Commission for Taxes (GCT). The Kurdistan Regi
 - Oil contractors: Law 19 of 2010.
 - Returns: individuals before 1 June, companies by 31 May.
 
+## Two worked examples that recompute
+
+Rented property, annual rent IQD 12,000,000. Tax IQD 1,080,000 at 9% in effect.
+
+```oa-check
+name: Rent tax
+inputs:
+  rent: 12000000
+steps:
+  - tax: (rent - rent * 0.10) * 0.10
+expected:
+  tax: 1080000
+```
+
+Company with profit IQD 100m at the standard rate.
+
+```oa-check
+name: Company tax
+inputs:
+  profit: 100000000
+steps:
+  - tax: profit * 0.15
+expected:
+  tax: 15000000
+```
+
 ## Sources
 
 | Source | URL | Read on |
@@ -44,7 +70,7 @@ Not yet confirmed: Territorial wording in the old skill conflicts with art. 13 a
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).

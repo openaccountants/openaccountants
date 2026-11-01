@@ -38,8 +38,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Refusal catalogue:**
 
-- **R-IQ-1 -- Oil sector** — Oil sector taxation is T3. Escalate.  _(R-IQ-1 -- Oil sector.)_
-- **R-IQ-2 -- Kurdistan Region** — KRI has separate tax administration. Escalate for dual-filing obligations.  _(R-IQ-2 -- Kurdistan Region.)_
+- **R-IQ-1 -- Oil sector**: Oil sector taxation is T3. Escalate.  _(R-IQ-1 -- Oil sector.)_
+- **R-IQ-2 -- Kurdistan Region**: KRI has separate tax administration. Escalate for dual-filing obligations.  _(R-IQ-2 -- Kurdistan Region.)_
 
 ### 3.1 Iraqi banks
 
@@ -74,31 +74,31 @@ Importer brings alcohol into Iraq. 300% sales tax at customs plus customs duties
 
 ### 5.1 No VAT system
 
-- **No VAT system** — Iraq has no VAT registration, filing, collection, or invoicing requirements.  _(Section 5.1 No VAT system)_
+- **No VAT system**: Iraq has no VAT registration, filing, collection, or invoicing requirements.  _(Section 5.1 No VAT system)_
 
 ### 5.2 Specific sales taxes
 
 See [VAT or GST](iq-vat-gst.md) for rates.
 
-- **Nature of specific sales taxes** — These are excise-type levies on enumerated goods only. No input credit. No staged collection. No registration system.  _(Section 5.2 Specific sales taxes)_
+- **Nature of specific sales taxes**: These are excise-type levies on enumerated goods only. No input credit. No staged collection. No registration system.  _(Section 5.2 Specific sales taxes)_
 
 ### 5.3 Corporate income tax
 
-- **Corporate income tax - standard** — 15% percent (flat on net profits from Iraqi-source income)  _(Section 5.3 Corporate income tax)_
-- **Oil & gas sector corporate tax rate** — 35% for activities under Law 19 of 2010  _(GCT return guide)_
-- **Agricultural income** — Agricultural income: exempt.  _(Section 5.3 Corporate income tax)_
+- **Corporate income tax - standard**: 15% percent (flat on net profits from Iraqi-source income)  _(Section 5.3 Corporate income tax)_
+- **Oil & gas sector corporate tax rate**: 35% for activities under Law 19 of 2010  _(GCT return guide)_
+- **Agricultural income**: Agricultural income: exempt.  _(Section 5.3 Corporate income tax)_
 
 ## Section 6 -- Return form structure
 
-- **Return form structure** — No VAT return exists. CIT return filed annually by 31 May, paper-based at GCT offices. Financial statements in Arabic must accompany.  _(Section 6 -- Return form structure)_
+- **Return form structure**: No VAT return exists. CIT return filed annually by 31 May, paper-based at GCT offices. Financial statements in Arabic must accompany.  _(Section 6 -- Return form structure)_
 
 ## Section 7 -- No reverse charge
 
-- **No reverse charge** — No VAT system means no reverse charge mechanism exists.  _(Section 7 -- No reverse charge)_
+- **No reverse charge**: No VAT system means no reverse charge mechanism exists.  _(Section 7 -- No reverse charge)_
 
 ## Section 8 -- No input deductibility
 
-- **No input deductibility** — No input credit system for sales taxes. Tax on alcohol/tobacco is embedded cost.  _(Section 8 -- No input deductibility)_
+- **No input deductibility**: No input credit system for sales taxes. Tax on alcohol/tobacco is embedded cost.  _(Section 8 -- No input deductibility)_
 
 ## Section 9 -- Filing, deadlines, and penalties
 
@@ -150,6 +150,32 @@ REVIEWER FLAG / ESCALATION REQUIRED
 - NEVER file without Arabic documentation
 - NEVER compute numbers -- engine handles arithmetic
 
+## Worked examples
+
+Company with profit IQD 100m at the standard rate.
+
+```oa-check
+name: Company tax
+inputs:
+  profit: 100000000
+steps:
+  - tax: profit * 0.15
+expected:
+  tax: 15000000
+```
+
+Importer of alcohol at declared value IQD 10m, 300% sales tax.
+
+```oa-check
+name: Alcohol sales tax
+inputs:
+  value: 10000000
+steps:
+  - tax: value * 3
+expected:
+  tax: 30000000
+```
+
 ## Sources
 
 | Source | URL | Read on |
@@ -172,7 +198,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
