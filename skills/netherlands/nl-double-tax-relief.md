@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.1
+# Netherlands: double tax relief, treaty dividend rates and international return deadlines (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl or belastingdienst.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
