@@ -1,0 +1,62 @@
+{
+  "reviewed_head": "5ca4e55e6d601b99dad0d1b73e3f5d2688e4717a",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "outcome": "changes_required",
+  "findings": [
+    {
+      "id": "F01",
+      "priority": 2,
+      "rule_ids": [
+        "I15"
+      ],
+      "file": "skills/republic-of-congo/cg-income-tax.md",
+      "line": 50,
+      "title": "Missing widow(er) condition in family parts",
+      "source": "LF page65 CGI116B",
+      "repair": "Add the non-deceased-marriage child exception; update Guide, writer ledger and register."
+    },
+    {
+      "id": "F02",
+      "priority": 2,
+      "rule_ids": [
+        "C07"
+      ],
+      "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+      "line": 44,
+      "title": "Unresolved depreciation carryforward contradiction",
+      "source": "LF page41 CGI53 versus page43 CGI75",
+      "repair": "Keep ordinary losses; hold interaction of deferred depreciation provisions explicitly."
+    },
+    {
+      "id": "F03",
+      "priority": 2,
+      "rule_ids": [
+        "V01",
+        "V02",
+        "C10",
+        "P03",
+        "V08",
+        "F03",
+        "F06",
+        "F14"
+      ],
+      "file": "skills/republic-of-congo/cg-vat-gst.md",
+      "line": 30,
+      "title": "Mixed-source authority labels link only one instrument",
+      "source": "CGI page309; LF pages77-78; other source pairs in review.md",
+      "repair": "Give separate direct official hyperlinks for every named supporting instrument in these rows."
+    },
+    {
+      "id": "F04",
+      "priority": 2,
+      "rule_ids": [
+        "C11"
+      ],
+      "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+      "line": 54,
+      "title": "Missing constitution-based existence-declaration limit",
+      "source": "LF page47 CGI86E versus page66 CGI128",
+      "repair": "State both three months from definitive constitution and at latest 15 days from commencement; cite both clauses."
+    }
+  ]
+}

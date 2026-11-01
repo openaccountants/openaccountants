@@ -46,7 +46,7 @@ Use I18 for employer withholding versus annual multi-source reconciliation. The 
 
 | Item | Rule and conditions | Authority |
 |---|---|---|
-| Calendar evidence and conflicting social split | The official 2026 ACPCE calendar lists combined CNSS 24.28%, CAMU employee 2.27%/employer 4.55%, and monthly 15th entries. The preceding enacted 2025 Gazette art 9 instead prints CNSS employee 4.55% with employer 20.28%. This contradiction is unresolved; none of those split rates, ceilings or remittance routes is certified as an operative 2026 payroll calculation here. | [ACPCE2026calendar p2; compare2025 Gazette art9](https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf); ledger P03 |
+| Calendar evidence and conflicting social split | The official 2026 ACPCE calendar lists combined CNSS 24.28%, CAMU employee 2.27%/employer 4.55%, and monthly 15th entries. The preceding enacted 2025 Gazette art 9 instead prints CNSS employee 4.55% with employer 20.28%. This contradiction is unresolved; none of those split rates, ceilings or remittance routes is certified as an operative 2026 payroll calculation here. | [ACPCE2026 calendar p2](https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf); [2025 Gazette art9](https://www.sgg.cg/JO/2024/congo-jo-2024-15-sp.pdf); ledger P03 |
 
 ## Penalties and interest
 

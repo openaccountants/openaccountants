@@ -98,18 +98,29 @@
     "id": "C07",
     "section": "base",
     "item": "Losses",
-    "rule": "Ordinary losses carry forward through the fifth year after the loss year. Depreciation booked during losses is treated as ordinary losses. Losses from IS-exempt years cannot carry forward.",
-    "act_article": "CGI75",
+    "rule": "Ordinary losses carry forward through the fifth year after the loss year. Losses from IS-exempt years cannot carry forward. Deferred depreciation is unresolved: article 53 permits properly recorded and declared deferred depreciation without a duration limit, while article 75 treats depreciation booked during loss years as ordinary losses. Hold that interaction; do not assume either unlimited carryforward or ordinary-loss expiry without a controlling reconciliation.",
+    "act_article": "CGI53,75",
     "quote_fr": "jusqu’au cinquième exercice qui suit l’exercice déficitaire",
     "source": "LF",
     "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
     "read_on": "2026-11-01",
     "additional_quotes_fr": [
       "Les amortissements régulièrement comptabilisés en période déficitaire",
-      "ne peuvent pas être reportés"
+      "ne peuvent pas être reportés",
+      "déductibles sans limitation de durée",
+      "Ils sont déclarés dans le tableau des amortissements"
     ],
     "guide_placements": [
       "cg-corporate-income-tax"
+    ],
+    "supporting_sources": [
+      {
+        "source": "LF",
+        "act_article": "CGI53,75: deferred-depreciation conflict",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -162,20 +173,49 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-corporate-income-tax"
+    ],
+    "supporting_sources": [
+      {
+        "source": "LF",
+        "act_article": "CGI86F–G",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "CAL",
+        "act_article": "ACPCE2026 calendar",
+        "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+        "source_sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
     "id": "C11",
     "section": "filing",
     "item": "Existence and filing package",
-    "rule": "Submit the existence declaration within15days of beginning operations. The annual DSF follows the prescribed model, with financial statements, tax reconciliation and identification schedules. CGI131 specifies3complete sets plus electronic statements. CGI130 requires real-regime electronic declaration/payment and appropriate accountant certification where no statutory auditor exists. Portal, current form version and field numbers remain unconfirmed.",
-    "act_article": "CGI128,130–131",
+    "rule": "For the corporate entities within 86E, make the declarations within 3 months of definitive constitution and at latest within 15 days of beginning activity; retain the separate 128 operation-start obligation. The annual DSF follows the prescribed model, with financial statements, tax reconciliation and identification schedules. CGI131 specifies 3 complete sets plus electronic statements. CGI130 requires real-regime electronic declaration/payment and appropriate accountant certification where no statutory auditor exists. Portal, current form version and field numbers remain unconfirmed.",
+    "act_article": "CGI86E,128,130–131",
     "quote_fr": "dans les quinze jours du début de leurs opérations",
     "source": "LF",
     "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-corporate-income-tax"
+    ],
+    "additional_quotes_fr": [
+      "dans les trois mois de leur constitution définitive",
+      "au plus tard dans les quinze jours du commencement d’activité"
+    ],
+    "supporting_sources": [
+      {
+        "source": "LF",
+        "act_article": "CGI86E,128,130–131",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -458,7 +498,7 @@
     "id": "I15",
     "section": "base",
     "item": "Family quotient",
-    "rule": "Round net taxable salary down to XAF1,000 before dividing by parts; tax the quotient and multiply by parts. Basic parts: single/divorced/widowed without dependants1; married without dependants2; single/divorced with1child2; married/widowed with1child2.5; each additional child adds0.5, maximum6.5. Separate-employed spouses are each treated as married, children assigned to husband absent express exception. A childless widow(er) is treated as married for2years following death. Special116C situations remain a referral.",
+    "rule": "Round net taxable salary down to XAF 1,000 before dividing by parts; tax the quotient and multiply by parts. Basic parts: single/divorced/widowed without dependants 1; married without dependants 2; single/divorced with one child 2; married/widowed with one child 2.5; each additional child adds 0.5, maximum 6.5. A widow(er) supporting children not born of the marriage with the deceased spouse is treated as single with the same number of dependent children under 116B. Separately employed spouses are each treated as married, children assigned to the husband absent express exception. A childless widow(er) is treated as married for 2 years following death. Special 116C situations remain a referral.",
     "act_article": "CGI116A–116C",
     "quote_fr": "jusqu’à un maximum de 6,5 parts",
     "source": "LF",
@@ -469,7 +509,8 @@
       "2 parts",
       "2,5 parts",
       "une demi-part par enfant",
-      "pendant les deux années"
+      "pendant les deux années",
+      "non issus de son mariage avec le conjoint décédé"
     ],
     "guide_placements": [
       "cg-income-tax"
@@ -941,6 +982,22 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-vat-gst"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CGI",
+        "act_article": "Historical VAT17,36B",
+        "url": "https://www.finances.gouv.cg/sites/default/files/documents/CGI%20Tome%20I.pdf",
+        "source_sha256": "4e4cb79135782817fc26c18e0c8418c789888564b9576e92493676ecb7ff1f52",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "LF",
+        "act_article": "Finance Act2026 7.2.4(d)",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -955,6 +1012,22 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-vat-gst"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CAL",
+        "act_article": "ACPCE2026 calendar p2",
+        "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+        "source_sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "LF",
+        "act_article": "Finance Act2026 VAT Annexes3,5",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -1039,6 +1112,22 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-vat-gst"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CGI",
+        "act_article": "Historical VAT31–31bis",
+        "url": "https://www.finances.gouv.cg/sites/default/files/documents/CGI%20Tome%20I.pdf",
+        "source_sha256": "4e4cb79135782817fc26c18e0c8418c789888564b9576e92493676ecb7ff1f52",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "CAL",
+        "act_article": "ACPCE2026 calendar",
+        "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+        "source_sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -1099,6 +1188,22 @@
     ],
     "guide_placements": [
       "cg-payroll-social"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CAL",
+        "act_article": "ACPCE2026 calendar p2",
+        "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+        "source_sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "LF25",
+        "act_article": "2025 Gazette art9",
+        "url": "https://www.sgg.cg/JO/2024/congo-jo-2024-15-sp.pdf",
+        "source_sha256": "63dacfc2e3f0f1517156829b4acfd06eee44231eeaa36603c9a822e90f10e8ef",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -1162,6 +1267,22 @@
     ],
     "guide_placements": [
       "cg-company-formation"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CO",
+        "act_article": "OHADA311-1",
+        "url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+        "source_sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "SARL",
+        "act_article": "Congo Decree2017-41 arts6–7",
+        "url": "https://acpce.cg/wp-content/uploads/2024/08/congo-decret_2017-41_sarl.pdf",
+        "source_sha256": "94d3a632f1a0c272d0cc89d7aa135ddad4de4ddea21b062fcc5f12b66159ad91",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -1210,6 +1331,22 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-company-formation"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CO",
+        "act_article": "OHADA25",
+        "url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+        "source_sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "ACPCE",
+        "act_article": "ACPCE creation checklist",
+        "url": "https://acpce.cg/creer-une-societe/",
+        "source_sha256": "55ba8525926afe55746ad959c9de048f79ccfb8bc55a69ed4f613539a4d4cbb9",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
@@ -1334,6 +1471,22 @@
     "read_on": "2026-11-01",
     "guide_placements": [
       "cg-company-formation"
+    ],
+    "supporting_sources": [
+      {
+        "source": "CO",
+        "act_article": "OHADA694",
+        "url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+        "source_sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+        "read_on": "2026-11-01"
+      },
+      {
+        "source": "LF",
+        "act_article": "CGI130–131",
+        "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+        "source_sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+        "read_on": "2026-11-01"
+      }
     ]
   },
   {
