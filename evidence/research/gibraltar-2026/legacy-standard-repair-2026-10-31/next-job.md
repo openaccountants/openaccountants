@@ -1,0 +1,9 @@
+# Next actual missing job: special individual statuses
+
+Selected for the next resumed writing turn: Category 2 qualification, computation and IT1C workflow, followed by HEPSS as a separate employment-status job if its method warrants a separate Guide. This is a work selection, not verified coverage or a new Guide. The ordinary individual Guide expressly excludes Category 2 and HEPSS (description and Who this applies to).
+
+Applicability was checked on 31 October 2026 against the [Income Tax Office catalogue](https://www.gibraltar.gov.gi/income-tax-office), which lists both statuses and a 2026 Category 2 IT1C return. The [Category 2 official legislation index](https://www.gibraltarlaws.gov.gi/index.php/legislations/qualifying-category-2-individuals-rules-2004-682) marks its current version updated 22 June 2026 and lists the 2026/127 amendment. This identifies a live law and filing job absent from the ordinary computation method.
+
+Before any writing: fetch/read the current consolidated Category 2 rules and 2026 amendment; reconcile eligibility/certificate scope, effective/transitional rules, minimum/maximum tax and part-year treatment; read the actual IT1C fields and guidance; verify interaction with domestic residence, deductions, excluded income, credits and treaty allocation. Then construct a full rule ledger and substantive examples. No current threshold or entitlement is inferred from the index, a secondary summary or silence. HEPSS needs its own current operative rules and employer/application/PAYE procedures.
+
+The parent requested this candidate be frozen first to permit independent review. No additional Guide bytes were changed for this future job. All seven country partials and their complete remaining work list remain in the pack README and accepted completion-stage evidence.

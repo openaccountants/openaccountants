@@ -1,0 +1,27 @@
+{
+  "read_on": "2026-10-28",
+  "scope": "Finite final ordinary domestic documentation and relief-submission check; no claim submitted",
+  "current_guide_basis": "Existing accepted pricing/foreign Guides remain unchanged. Existing bookkeeping Guide already states s63/63A ordinary record duties.",
+  "documentation": {
+    "checked": [
+      "Income Tax Act6 written information notice, at least30days, extracts by agreement and6month underlying examination right, objections/privilege limits",
+      "Income Tax Act40 OECD consistency and additions ofPartV/Schedule4",
+      "Income Tax Act63/63A full-return records, sixyears and notice/enquiry extensions, prescribed documents and language, penalty/appeal",
+      "Current official corporate page and targeted official documentation search"
+    ],
+    "finding": "Ordinary record duties and notice powers are sourced and already addressed by existing Guides. This finite check did not establish a separate mandatory domestic local-file form/deadline or comprehensive specialised reporting regime. Do not turn absence of a located form into a legal exemption."
+  },
+  "foreign_relief": {
+    "checked": [
+      "Section37 claim and later-adjustment clocks/foreign tax certificate",
+      "Current corporate page published CT1/CT2 route",
+      "Current-linked December2024 CT100 instructions and postJune2024 CT1 workbook/cells",
+      "Targeted official foreign-credit claim/correction searches; MAP and UKtreaty relief results distinguished from domestic section37"
+    ],
+    "finding": "CT1/CT100 do not identify a distinct domestic foreign-tax-credit field or claim/correction submission route in the material checked. The general corporate return/computation route is not proof of that mechanism. Domesticclaim/correction, FX, assessed-but-unpaid and exitdeferral operational limits remain genuine and explicit."
+  },
+  "individual_route_correction": "Current ITO maintenance notice and linked2026 IT1/guide supply a bounded interim email/PDF route. Corrected individual candidate and its complete ledger rowIND60; no future-year release or receipt inferred.",
+  "new_independent_acceptance": false,
+  "published": false,
+  "country_complete": false
+}

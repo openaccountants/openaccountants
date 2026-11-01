@@ -1,0 +1,9 @@
+{
+  "merge_commit": "c22bacd3f6422cdefef089108f7e3da570b9cb8f",
+  "main": "22dc67a25ce90288dcf8654b9d76cbcebb1a3a7e",
+  "Gibraltar_merge_diff_empty": true,
+  "conflicts": [],
+  "validator": "zero errors/31 warning groups",
+  "strict_metadata": "18 Guides/zero errors, warnings or notices",
+  "minimum_tax_sha256": "c990bb86a134fbc3a20efb13f05f04cf7b3c8623f7e882c28dc835e990f39b26"
+}

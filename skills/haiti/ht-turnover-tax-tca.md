@@ -2,13 +2,13 @@
 name: ht-turnover-tax-tca
 description: >
   Haiti turnover-tax reference under the replacement Code effective 1 October 2026. Covers territorial scope, the ten-percent rate, the small-business franchise, supply timing, taxable consideration, restricted input deductions, invoices, monthly declarations and credit carry-forward. Includes worked examples for resale inventory, service advances and import valuation. Distinguishes the return deadline from the payment-slip due date and explains why investment equipment is not automatically creditable. Does not establish all exemption classifications, registration implementation, cross-border collection procedures, excises or professional attestation; threshold-period and transition questions remain explicit research gaps.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -98,8 +98,6 @@ Registration procedures, threshold measurement and transition instructions remai
 ## Disclaimer
 
 General research reference, not a filing-ready opinion or professional attestation. Obtain the outstanding implementation evidence before acting for a particular taxpayer.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,13 +1,13 @@
 ---
 name: at-cross-border
 description: "Use this skill for Austrian tax when a person or company crosses the Austrian border. Covers unlimited and limited tax liability for individuals (home, habitual abode, the six-month rule, the 70-day second-home rule) and for companies (seat or place of management); the inbound Zuzugsbegünstigung for researchers (30% allowance for five years); the exit tax on leaving (Wegzugsbesteuerung) with deferral or instalments for EU/EEA moves; non-residents with Austrian employment, rental or capital income and the add-on of EUR 11,077; withholding on outbound payments (KESt 27.5% and 25%, the § 99 EStG withholding of 20%); treaty relief and the refund route; tax year 2026 (calendar year). Trigger phrases: moving to Austria, leaving Austria, non-resident Austria, expat, exit tax, Wegzug, Zuzug, digital nomad, beschränkte Steuerpflicht. Out of scope: the full tariff and E 1 return (at-income-tax), corporate tax (at-corporate-income-tax), SVS contributions (at-svs-contributions), VAT (at-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -230,8 +230,6 @@ All read on 2026-10-22.
 - USP, social insurance when posting to EU/EEA states: https://www.usp.gv.at/themen/mitarbeiter-und-gesundheit/einstellung-mitarbeiter-und-arten-der-beschaeftigung/weitere-informationen-einstellen-von-personal/arbeiten-im-ausland/entsendung-in-eu-ewr-staaten-aus-oesterreich/sozialversicherung--entsendung-.html
 
 Not yet confirmed: the text of Regulation (EC) No 883/2004 itself (EUR-Lex blocked the fetch; the posting rules above come from the USP page); the E 7 guide for 2026 (only the 2025 guide was published at the fetch); the current KESt rate that § 93(1a) EStG lets a payer withhold for a corporate recipient (see `at-corporate-income-tax`); a statutory split-year rule (none found); the entry into force of the 2026 Austria-Switzerland protocol; any named form for the Zuzugsbegünstigung application.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

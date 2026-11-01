@@ -1,0 +1,20 @@
+{
+  "current_commit_last_checked": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "total": 3913,
+  "read": 3913,
+  "no_issue_in_checked_scope": 3913,
+  "failed_quote_context_pending": 0,
+  "unread": 0,
+  "identified_analogous_unread_IND_barequote_rows": "IND245/246focusedbindingrepairpassed4a39d66;bodyreviewunread",
+  "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+  "examples": {
+    "currentGuide_manual": 20,
+    "all_retained_oa_check_blocks": 50,
+    "standalone_arithmetic": 58,
+    "standalone_legal_scopes": 58,
+    "standalone_unrecomputed": 0
+  },
+  "open_findings": [],
+  "note": "All3913 rows read at stated claim/source scope;001\u2013015 corrections focused-passed. Machine provenance separate. Header/field-only rows certify only printed source evidence; excluded full procedures/historical chain remain unconfirmed.",
+  "specific_incomplete": "No unread ledger/case review remains. Parent active status-only update and independent metadata/hash delta recheck pending; coverage gaps remainpartial."
+}

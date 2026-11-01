@@ -1,0 +1,6087 @@
+[
+  {
+    "file": "README.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "4829c8b79636dca5e27cb06779a5fed8fe7e1afa15ebf0f6b01fd670e9835ff0",
+    "current_sha256": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d",
+    "same_bytes": false,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "950c9fea6b7c75d57e4daa8fa8aed03204492fc9405b4a25fbd050b65749fb8b",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "c184db4edd39962281d378aec46f92bb4e7d8000d364dbf62211aea36e1cf29e",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "c851539fd1319fdff12ecb487ec49457833fcb60a670e087aad1ce72fe6e8772",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "39703983fb29e6be2b73c8d8430cb317b71d7b5b44c90da9159914e974a53662",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "4b3b961a9bd84847602c732a50481abafb92c3b747e99363add471aca8c93308",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "e7328eb83708d0ceab396e2c01a250174bac5fd88d50fb7f43a886e0279cf253",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "922da8a13573d95ca57232a01ad9c30ffd20df5f4dc05650ecf6bc9bd492812d",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "558854e96cc560ee2f0a925545310e09940df26fbb06b66c7da714fa1d771275",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "3dd32a52ffa07099a28fedb2e2a62c66b0a2773ccc43849e68ab3de1d8aed829",
+        "new_lines": [
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 12,
+        "old_sha256": "94c4860519e5e20bf5fad407fb38b30a3f8883287013edfe9e94c178a84d9b80",
+        "new_lines": [
+          12
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "d7041f3f8fbbcdc918a0a921e8e443484a22dc0c311d7e5960330a97673d3c88",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 14,
+        "old_sha256": "cc322d5fff18653a9c0995b3b78b56c34a51c4806bad04a9aa6bd1b6457d4ea8",
+        "new_lines": [
+          14
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "edd0f32c703a00e9cf6a67e0485afdccd0346753d67736937d9c826b518cf5bd",
+        "new_lines": [
+          15
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 16,
+        "old_sha256": "de133ced54215efa39894cd9fded34293f6d713730b7efd355e76b1c7557da83",
+        "new_lines": [
+          16
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "44dd4f4458e988ff1fb3004d3102ec66956472f24aa2e956e28672d80d132900",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_text": "Svalbard has a separate Norwegian tax system, administered by Skatteetaten, using NOK and the calendar year. Gross salary withholding and separately assessed ordinary income are distinct. All six Guides are **source-cited drafts**, not accountant-reviewed. Ordinary scope has been expanded, but the three explicit coverage gaps above keep issue #424 open.",
+        "new_lines": [
+          21
+        ],
+        "status": "README count/source-date narration updated; previous six-Guide review and actual dates preserved explicitly"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "d0e3078463c572f017b52fcdc291359e386bc03d129703c81d3031529659df2a",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "443796223524b1094e05ed5eb793377f52d0313f1908aec81e5830bcad5aa135",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "03637770c6fd5eedc1cc1bb2ec32000206b4cd94ac46439eb00f59588cea9070",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 28,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          28,
+          44,
+          59
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "c68b0601fdd9081a980edd1a6e2b6187cc1e5c1b05c0d43728e4817014200551",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "721a298ad8fec13a5a79f14628304ed2cf5b83d96a131a1d32c6e8f03fa6cab6",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "b2adec4fb5bdfbc6f42b49d3d16e5f45f2cd7e042d486556c7e942a64bb5d7bf",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "ed1a4725a50ab5e1f02367d6b688bdf444b82bda473f95e4c5eb1b10ce840095",
+        "new_lines": [
+          32
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "86930e2d380940514966109c00fd3945e5c85e92e5e83879473d0a8df3c2648d",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "1aec12b3f51615a9983dd6e059a441a0ecf6e065f451d716f3741b6e1b976379",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 35,
+        "old_sha256": "c97accd55c3932c27f00aaf6af8c713949fc0bc5a603b0e1bbfb0458a962d37f",
+        "new_lines": [
+          35
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 37,
+        "old_sha256": "8f3eb983a439df7e4e6c2c9c73dce6e0132b2dfacb3c490e9de87c0cdcff1af8",
+        "new_lines": [
+          37
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 39,
+        "old_sha256": "5156346a06ad31e9041af3361b0513d6ce522178045f67a91a4de1070fc52730",
+        "new_lines": [
+          52
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 41,
+        "old_sha256": "37606b87fb5ef4d86625a8fed3100cc1e9ce4fed92895b58600d9234656e9d40",
+        "new_lines": [
+          54
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 43,
+        "old_text": "All read afresh on **24 October 2026**; article-level tables and full source lists are in each Guide.",
+        "new_lines": [
+          56
+        ],
+        "status": "README count/source-date narration updated; previous six-Guide review and actual dates preserved explicitly"
+      },
+      {
+        "old_line": 45,
+        "old_sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
+        "new_lines": [
+          58
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 46,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          28,
+          44,
+          59
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 47,
+        "old_sha256": "269e636ed13d592851428b97ac75b1915e5ab0cf4eab869e16bf28bbd3374423",
+        "new_lines": [
+          60
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 48,
+        "old_sha256": "937e30a93428db5f353fc99b39fce4cbad81f3027530601522330f7383bc76c5",
+        "new_lines": [
+          61
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 49,
+        "old_sha256": "368428ee382072a79be6caa349d33880733d057ec95e4244bc4a2dd6572e852e",
+        "new_lines": [
+          62
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 50,
+        "old_sha256": "1a69c9a9d92e01496fd5be6c62f0f3f59be54d940475b9e07a101bcb9ee1e8ae",
+        "new_lines": [
+          63
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 51,
+        "old_sha256": "591149933a95d14acc407c6906b771b8913fd75545c9aeb0344bde76b021efe2",
+        "new_lines": [
+          64
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 52,
+        "old_sha256": "d51d66addc637309c38cc3bc9b333c7425d504b9f25ff0e967c0f5f7c126ab41",
+        "new_lines": [
+          65
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 53,
+        "old_sha256": "d3d0b2e1516499f1c4aba3c320f5ea2d70a14664357bdfb864c46dd08b188835",
+        "new_lines": [
+          66
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 54,
+        "old_sha256": "6cf418a1339362576d200aeae023124db268774f67e9e64390a1157b177a8939",
+        "new_lines": [
+          67
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 55,
+        "old_sha256": "f0498152da2686d1519aad2b24f12465907d43917fef289e2b2e7ab3ebb968e3",
+        "new_lines": [
+          68
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 56,
+        "old_sha256": "c5f738cc4b39a671b996137148b207d4af17f46a8d987a7e03d4df3c23e436bc",
+        "new_lines": [
+          69
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 57,
+        "old_sha256": "1a19a478ef260adec1609c3a65f883ded7a43eb0b8b73596bc2a77f136f4bd45",
+        "new_lines": [
+          70
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 59,
+        "old_sha256": "62e055c58a290771e23280272db824e01d97df4acddc96ef54c08834b776fee0",
+        "new_lines": [
+          78
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-company-income-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+    "current_sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          154
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "be983ca226a7639ded26bb29d5760b3310777e037229c7d093a4b573cdd918b8",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "d58bacde1bfe12b29901154b31f10da4e65d9188955eb42fffefca281ddeee74",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "7c2efb5e79c49ae56085797fabc28903fb9dbb567629aa407e0c8257fc472148",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "180b28de5d680dddf4d6b769c5231ba2e166dde10ccebfa66c5191314b9c8d0d",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "c829c00daed817adc3bedc10a12367ca7e32d98a59a2a41351beee7fa15894a8",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "383f3f07c7291c34824197085c13868fccf3ec89331311cdf933856ff282d5a1",
+        "new_lines": [
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 12,
+        "old_sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+        "new_lines": [
+          12
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 14,
+        "old_sha256": "b77970a894370f7563ecfa0888c3a39cc3da828882b467c81e830e26de101fb7",
+        "new_lines": [
+          14
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          154
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "48f65b51df0fd09cc7e7112e0a78d2157d3063bb39591fd397a046e7700504a1",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "eb1d379c415ec1b09b5cccf73339398e360a791adc391c4ed999cfe6ee5540e4",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "57880830d1e6337b141fc7d4f20d2e52771221985e61acf4a98ad59f6041a4a1",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "cecd1030e80fbee2356e470f2939087ee2eb96405189c4a2725135fd4dd962d9",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "6a215a61b92242ebd1b69d18952f3236a3abcc945c3e415e018e43937aae1fe4",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "b8ed95266c8c2700df0af21af0c7208f21d7eea30bc57d683dd51656bb2fc63d",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "e1600235a2161ba04e935dd9192b4faaa37af30b718208e88df04b4254109f83",
+        "new_lines": [
+          32
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "b9d0e338ec6fb6e22e598b3d4adcb505f92932584155409537e13999e857df34",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "739fd1c014c718790218cf793944fdcd7e712ec5d755dcf18e17eba1aff08511",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 35,
+        "old_sha256": "1cf77a90a3d45761420a3af7e81f57e801e4beef52927eb1f9d77afcd7a8ab0e",
+        "new_lines": [
+          35
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 36,
+        "old_sha256": "a01ce22f4f54ce209fa468e4d33cbef970ce5cdef46966826a97bcf3de4de169",
+        "new_lines": [
+          36
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 37,
+        "old_sha256": "4ebcf6e24306a6c54d94f0d3b579afe70112c592c8545eea6e7968bae04e31d3",
+        "new_lines": [
+          37
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 39,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          39
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 41,
+        "old_sha256": "5c1b7ff98440e71ba6e5c0ef92dddd503caf68a62b7893da4edd4501200559f2",
+        "new_lines": [
+          41
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 43,
+        "old_sha256": "bf2555c10e8aef3fa328bdc4461b0e8c59a1f35ba9ff7c7c22748ffa753c468a",
+        "new_lines": [
+          43
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 45,
+        "old_sha256": "953e821b4df7e8a7911ed1c58e859063eedac07e68ceb58028f888b5a7915124",
+        "new_lines": [
+          45
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 47,
+        "old_sha256": "26c1948ed976a1d73552dcbcdee43b9361b8ffdd324f512fae073faf6e7f3184",
+        "new_lines": [
+          47
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 49,
+        "old_sha256": "68410a59211852d354c6127ebbc5687a4e8920fec728cee95e99e9da49be3395",
+        "new_lines": [
+          49
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 51,
+        "old_sha256": "18f119e9c392ff10b6a6e663b412be00ec75a757e71aaf37cb746e7571f09cc2",
+        "new_lines": [
+          51
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 53,
+        "old_sha256": "a6d130242d7c43bcdae41328971d6b053b9e8dd69a25c4fe56110c85373aad56",
+        "new_lines": [
+          53
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 55,
+        "old_sha256": "cec8f10e7a8417c9986b385495727168ee473f81db403a49264c58012e22d2d1",
+        "new_lines": [
+          55
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 57,
+        "old_sha256": "e80cfda1fdbe60cbd25713fcbffb52604e9dbd4af0420c6c63d05a719ab39ac8",
+        "new_lines": [
+          57
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 59,
+        "old_sha256": "9683043cffb86e4027b041a958f4b7abbeefc84afb0b85a345f428071eb87d9f",
+        "new_lines": [
+          59
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 61,
+        "old_sha256": "7f20b23ed22a90ec07dfa27955e2d2295f67e0f0cfa07744a39e84f99b7a4349",
+        "new_lines": [
+          61
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 63,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          63
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 65,
+        "old_sha256": "43a5d25402c103e288a868d7c4ef0730d3ed7860a7069d7f1da091c334a9e3cf",
+        "new_lines": [
+          65
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 67,
+        "old_sha256": "03cbf6006313d2b8605d03007e82ebd8ab3f5d09340afa9fc9ca5da28ddbb45e",
+        "new_lines": [
+          67
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 69,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          69
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 71,
+        "old_sha256": "1b2967723d82615e5d3ed0e6f054e104b13426aef5c391c0e1dd6b1ff03448e2",
+        "new_lines": [
+          71
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 73,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          73
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 75,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          75
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 77,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          77
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 79,
+        "old_sha256": "ee9e50b51e1a7e0c4f15e82b1423ccf0ba846d787fcaf726634b14c26a5ffcd5",
+        "new_lines": [
+          79
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 81,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          81
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 83,
+        "old_sha256": "a51c619063e51eaa3d9a06c33042112e892c5c602dc3cf0989fe6578dbc8c58d",
+        "new_lines": [
+          83
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 85,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          85,
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "b13270b604ed2602bf69057ab2471fa324ea7e3a8a5a92ed29280caf5e8adbb2",
+        "new_lines": [
+          86
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 87,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          87,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "549a192b3225b6ab05a837b1ca991327b7feb798932061c5c2ea032a8871dcb8",
+        "new_lines": [
+          88
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 89,
+        "old_sha256": "41076ec96cf7ca7bf2f4cce67b2ed765c30f6b88053b721880fd465c504d99be",
+        "new_lines": [
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "313281d626c997d16d34afdc2f5d418118824c5e83ddef57567a1557ea7a5aa3",
+        "new_lines": [
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "9be1ed29d158c124c39b50036366f43a7cd3bc90ec98197fc096c5f664971682",
+        "new_lines": [
+          91
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          92,
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "d010f4e8b42a979cb4450fb2fa67c7680396120f3003f5b2ff88b01ced2f423a",
+        "new_lines": [
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "5e59ef5182d23da6acae814fe16fd2df6ae9724f89d4c46d0bb33a4c3b68d9e5",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          95,
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 96,
+        "old_sha256": "9e185e8bd59ee7a809432b601ddad05141253c0d1c4f8b8ac662fc7a7159bd85",
+        "new_lines": [
+          96
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 97,
+        "old_sha256": "01e1fcd673c064cfdfe83d9eaf1c2554a49cd281fe725773588777d66674b385",
+        "new_lines": [
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 98,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          98,
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "a1a2b41d63b7b9f0807c299e7ad2fbbe72f8220cce104de47c0951e4a2bd1cd0",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          85,
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "904721c3a407f4fb08f93b035bdda95c18d0d5af828e155d4eedc34d22255451",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          87,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 105,
+        "old_sha256": "cde4f3caec24245bf1830325f529f8da94cf0998894ec92e1298e562181d6c70",
+        "new_lines": [
+          105
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "4c3a68492761d6782ed53d309bdc849ef661bcc6f596c3172510fd0f3fe2ba5e",
+        "new_lines": [
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 107,
+        "old_sha256": "7d65c7fc901105e06883c60de0342b2a2e9e83a0a94b6e7ce205a0b272886d30",
+        "new_lines": [
+          107
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          92,
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "02cd7c7ffb5fb08039fd2a89b005981f11212867bb50bbc92a47b3af28cc60b8",
+        "new_lines": [
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 110,
+        "old_sha256": "0a5d0ab1e2875bcee8108cc08b263c18879a6ae8353f403b83717a61bd10ed1f",
+        "new_lines": [
+          110
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "359a1066a406720df29343d3577aa42c696962c1000fa527f1a3da7cffe2fe68",
+        "new_lines": [
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 112,
+        "old_sha256": "2143c2fe1e285ecbf88bf3481d216e32a1409369fe589c9a3373334ae4afbddb",
+        "new_lines": [
+          112
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          95,
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "f62855f5e6157e9686121d367eb29fb8ec7eade0cdb45909a3716431afea140e",
+        "new_lines": [
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "ab24b838fa0da59a80ae027405c73c28d1c60f15ca26f7d6fd33ad3a356bd1b8",
+        "new_lines": [
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "beaf2115dea826d4302c51cca211819181c177a07c8d2566c8042ff69d11e3c5",
+        "new_lines": [
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 117,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          98,
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 119,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 121,
+        "old_sha256": "851b93225e44ca97fac384138f127a6f20da099c948ded91fc6e16901ad00d74",
+        "new_lines": [
+          121
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 122,
+        "old_sha256": "9b048dc84f09dd7da6ad166b4e8852eba2bcc83f916f60ed332420e162235d1b",
+        "new_lines": [
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 123,
+        "old_sha256": "a95d49e1b73818f5a61576f4c831f3d54d5ef0a2150a2482782d54ae24295ec3",
+        "new_lines": [
+          123
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "8363a5b1774f3c510bd3df2021aa2ffe5aa1fd9aea5108ee85b099d53b375315",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 125,
+        "old_sha256": "6cf2ef0f76a30c179283883e4c48a7958fcd367d0ede21209605b6116ae702f8",
+        "new_lines": [
+          125
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 127,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          127
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 129,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          129
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 130,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          130
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 131,
+        "old_sha256": "8a546c39dd1282efd4be56d7fdc6cb6dc97591719888aeceb47545ec381fce2d",
+        "new_lines": [
+          131
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 132,
+        "old_sha256": "f1f964282f2cc4273d5d5cdd0c8678a306ffe62b8613756f2c58c9fca3e73830",
+        "new_lines": [
+          132
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 133,
+        "old_sha256": "89cc728d4b38fc15f0ac328e1a7f3df296f3cbc9ade73e12db9a954697f4abf1",
+        "new_lines": [
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 134,
+        "old_sha256": "60deaf15bed36e20cfb4cab67757e80f935de065a89c9d02ad7d1cae93df06ff",
+        "new_lines": [
+          134
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 135,
+        "old_sha256": "bcbe38f98f7103dff39e92918834a647107711dab9e2a08ce5ccb81f57df9f7c",
+        "new_lines": [
+          135
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 136,
+        "old_sha256": "6aa944027dc833c9f5f9edb1361f955c14bdc5e5644c219e214da2ce00d2291e",
+        "new_lines": [
+          136
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 137,
+        "old_sha256": "0d13d2ef7d153581dbadd18f167aca72858e7dc46a381239d6d32a5afe3d9c55",
+        "new_lines": [
+          137
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 138,
+        "old_sha256": "8d8db9b70e69a3a569dd61df878319840b1ff29d781f3ed6a8343ad814fa7db3",
+        "new_lines": [
+          138
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 139,
+        "old_sha256": "0a94ffb6eb9c986ab02b726f154aec553514755bcee9b5505d022f6ce151e1e2",
+        "new_lines": [
+          139
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 140,
+        "old_sha256": "707524bcf3c2a22bd279f07e0c5a2c7345110a1168969c5688d9dfdffbb7762d",
+        "new_lines": [
+          140
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 141,
+        "old_sha256": "e5341b82b3dc9cdba0d17ec39e2711cf4005aabc8d87edbe15c141af1f54c1e6",
+        "new_lines": [
+          141
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 142,
+        "old_sha256": "61698a0f095627957e4a8c586fb3b1ee225c562ef1b9d81a1b1abec478cfcd64",
+        "new_lines": [
+          142
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 143,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          143
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 144,
+        "old_sha256": "ec5ef82c1b71860a4c147047a8fc05bf38b67e6555afaf185174af61b4d64f12",
+        "new_lines": [
+          144
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 146,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          146
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 148,
+        "old_sha256": "df9cc2e27374844a521788cad6882aea3b811e55254580e4d5344c57173ea216",
+        "new_lines": [
+          148
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 150,
+        "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0",
+        "new_lines": [
+          150
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 152,
+        "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "new_lines": [
+          152
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 154,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          154
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 156,
+        "old_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "new_lines": [
+          156
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 158,
+        "old_sha256": "d41a05f6c45a661160201e47359bbc3a7bb7ef83e6450478028330da4d2a64bc",
+        "new_lines": [
+          158
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 159,
+        "old_sha256": "ee1ef748aa1f4dfaa8bf75796a1df67343ea61efb442fa32d53c762b561d35ea",
+        "new_lines": [
+          159
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 160,
+        "old_sha256": "2cbb389a9ad595bff6a6dde37f81891540f15ca35a6a96d9e6418f81909a2462",
+        "new_lines": [
+          160
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 161,
+        "old_sha256": "2c0ebe83a888dc3ad5132525cb98eb28b4ce17af1c395357b932c48166c61e32",
+        "new_lines": [
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 163,
+        "old_sha256": "9fc15ca082913c558496e5718d0d7c592aad71a788fcf7c9812f1c8b37c4220d",
+        "new_lines": [
+          163
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 164,
+        "old_sha256": "6c37a9410c003ec947955e9498c578db511a7cdbf09a32f8503fcb98a89bf507",
+        "new_lines": [
+          164
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 166,
+        "old_sha256": "0b2b38bb62f73a28b897bc076bd07876ed3504e40cd386a55f639102a0c61c1c",
+        "new_lines": [
+          166
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 167,
+        "old_sha256": "e7f5a191c8f011d89816d0c3b2048a8b05726936fe01595dafb16eb648aed28f",
+        "new_lines": [
+          167
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 168,
+        "old_sha256": "29043232012f2c6d33f540f3f92ca4af42009dbfb4c3a98036c325dca2e96f9c",
+        "new_lines": [
+          168
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-income-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+    "current_sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "bf784f341f1f13e6fab0024397e9cf34d7ff20c8c158b965c509dd0820ab43e4",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "5db1617765bc44a1f43d827ea1150c2f83aebacedeabb64574cd32db4f9a3e87",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "b4bb302453d7da121d1c0ab63c48e2328dcfaeff27aba05234733b9cfe153010",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          15
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "c1216739c1ee39535c864ecf6fd2d2143f7dbd6b1a79ad2de77610de6676079d",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "5991c52e65bda582584d8bc0583937198ab3c43875523df3e682e9e15d46a49d",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "d8611ff8a11833ff44561260079fcb2e94552f33d001b6f016719ba86b08e56b",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 26,
+        "old_sha256": "6a215a61b92242ebd1b69d18952f3236a3abcc945c3e415e018e43937aae1fe4",
+        "new_lines": [
+          26
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "4447e7535f16ed70f2ae3f21f1eb21dd25358990730c7cd0ed753760b9ab2703",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 28,
+        "old_sha256": "a8fdb457a5e26be347abe0e4636f350c0306ced5a1bbf48d6d0349cc44161cd3",
+        "new_lines": [
+          28
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "7c06224a7e1e270eb21ee8f58ce1aecb524bc79092d3bfce32a4fe7d63b31aa6",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "7920741be0f61b122a79152652b28b777216fa97e545e9487e2811dd252e66ce",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "46d603ef3cc2d1629ece67d56d415dbf96a7c81b5a5bc4dc680afff6c1d5537f",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "0db87d5ee6a8bdc309613f525a415b33a0216d3abc0eae3c8899f5c4d237155c",
+        "new_lines": [
+          32
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "94e20b1c525c24655b99f4f3fd32b6c65ec24f7ee380df2e96f6241b0883d633",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "43c8498ab7a8adf0e4802792107758483190c9c8d6d22b01b989ac3b3ee1d44d",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 36,
+        "old_sha256": "a0a9798ddf3ee74029047d441eb05e3e0bfd9a35ddadd64439843fc7d7a50d2d",
+        "new_lines": [
+          36
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 38,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          38
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 40,
+        "old_sha256": "02e34940108411ad907a2499c6f36c69d7927ac6b3de1fdaeeab00451d5add3e",
+        "new_lines": [
+          40
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 42,
+        "old_sha256": "01d32bc2c080f689a689bc33029c506fc1986702bb102e27ccb2cee411ec56f4",
+        "new_lines": [
+          42
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 43,
+        "old_sha256": "81c28da178f97b9b2c41a5a35f0e2cff651a3cad12a3490c4785bf4753e7b426",
+        "new_lines": [
+          43
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 44,
+        "old_sha256": "3a52cf178d9ff41805a23535e4d68794e4d78b1e3ace81ac4b04034623b74d32",
+        "new_lines": [
+          44
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 46,
+        "old_sha256": "2feff2e823c3ed367358b226952877c1f4411d3e48af0309c8b85cd812be2d29",
+        "new_lines": [
+          46
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 48,
+        "old_sha256": "3656112d6d9a508e984adfb0f6adc2590e035f77bf43ab617e1470e2b4bb5392",
+        "new_lines": [
+          48
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 50,
+        "old_sha256": "0c7f10659217980feb00d2812f62000cb0296c1c7983bdd5d9dcd4b49bd1c656",
+        "new_lines": [
+          50
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 52,
+        "old_sha256": "ec6e2b0dbf237e0746b40a5e6a77e00a801c9780aed81525dea9bc9802f7cefe",
+        "new_lines": [
+          52
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 54,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          54
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 56,
+        "old_sha256": "c5e5df3771ad8bb5ff357061a7e79b9bc61f779b4e51a54a53ce924f21ff611a",
+        "new_lines": [
+          56
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 58,
+        "old_sha256": "2a73dc9aa28dc2ab50a9672801067aa53d068bde7e412d1b7e5680195f315272",
+        "new_lines": [
+          58
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 60,
+        "old_sha256": "f49941fbdbcbc7ac27789e84a1af8d47a3872fd3603341157530f5ce815c7ce5",
+        "new_lines": [
+          60
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 62,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          62
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 64,
+        "old_sha256": "1b2967723d82615e5d3ed0e6f054e104b13426aef5c391c0e1dd6b1ff03448e2",
+        "new_lines": [
+          64
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 66,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          66
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 68,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          68
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 70,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          70
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 72,
+        "old_sha256": "33967f322748a236ce74a795ff8af91d9d6ac90d276b35eb32a485e7cea02582",
+        "new_lines": [
+          72
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 74,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          74
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 76,
+        "old_sha256": "1250953a79d7eba37bc3be467900f98302830c304cf991ac8e7a215b2484b044",
+        "new_lines": [
+          76
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 78,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          78,
+          99
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 79,
+        "old_sha256": "6b43e6d574a3a7c1f26b53153db544eb50cd84ddc717d19f9cfd1104d22b86ac",
+        "new_lines": [
+          79
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 80,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          80,
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 81,
+        "old_sha256": "1ede11b11066a17ba07a09e7a9bb95d316a2cc2a4897151ea49a7647ee4464cd",
+        "new_lines": [
+          81
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 82,
+        "old_sha256": "32ef6fcc93e7a19e9b21e3c9ec43255449e7e67ba6b694941e7c7177a189c5a3",
+        "new_lines": [
+          82
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 83,
+        "old_sha256": "112f63b652347711631d15610fb7337d763aa152304425c336f71d17cda75a48",
+        "new_lines": [
+          83
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 84,
+        "old_sha256": "232d656e82202c7064c3ac0509ddb85ff39025a286f98a65d17599479d0e00e1",
+        "new_lines": [
+          84
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 85,
+        "old_sha256": "9c524562ef116a8e9663ad05080c4e70f0d8ef824f9569ee326f42a1ed0b7624",
+        "new_lines": [
+          85
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          86,
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 87,
+        "old_sha256": "592707bb76f5414b245c332741e141d35914d31bbe05799bb8b998e8ccf47f5a",
+        "new_lines": [
+          87
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "7fd9d9832297ab0fc46195b99a915285b3c7f39370e6af840d5c9cd125bde7dd",
+        "new_lines": [
+          88
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 89,
+        "old_sha256": "b0960f92d053b738e30280cbbd9bb99c29a0695fa399881b90086f1fd95fa5a5",
+        "new_lines": [
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "0e9e224b9049ed23baee06e0d42c15b15b2df884d6566676f501ed4b086ba9d5",
+        "new_lines": [
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          91,
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "b43be9419039b127f5ccc9006eb5aacc8b5f31a90483bc6b38ab1a1d3955e171",
+        "new_lines": [
+          92
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "f8128a5f6f352cc20b0c1e6b6de8fcf8e5f7297ba0cdea31b4e4ba287e05ff0e",
+        "new_lines": [
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "e2c4a46e6447548fba30bef23d5f2df2908f5a3ed557f7ca394b757fd8da1757",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          95,
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 97,
+        "old_sha256": "42b5f1928662bf68bfb26aadab06bc1d953926cecd3f18ceb738b4edd4e710f3",
+        "new_lines": [
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 99,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          78,
+          99
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "870fdc03254070ad863122c11b94a6dfb8228d9c21263f9971d6638ea08648e6",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 101,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          80,
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "6fea2c0e65a2709d5f482a2211e382c31e1bd6d7c79bf8d49a8d3785c5be4572",
+        "new_lines": [
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "63aa72afc02b093580c95c395ef57d02482b2658ffb9a1e85999361061d98fdf",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "db490ab718d1b8edea510c29401079fdc5460ebfe794548a03ed0a95b4e4b688",
+        "new_lines": [
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 105,
+        "old_sha256": "2d6c55cc1627a65d652e11d5c2dcf7f3074971d1a16b47562ef2bcc4eec0d34f",
+        "new_lines": [
+          105
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          86,
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 107,
+        "old_sha256": "0864d3ba4492173120f6cb665e36b3832deec5e0b84f91796ad3bff1c1c383c9",
+        "new_lines": [
+          107
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "7c564f7701c064178c3a0d7f1b566bb929f1b59f5388824d0fb699dd510797df",
+        "new_lines": [
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "bf4d2a1da67e971024fd1e7e4323e17675ee2562d16e66156fa4cd1452caeb39",
+        "new_lines": [
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 110,
+        "old_sha256": "ec09d83f36718f96978e37de608d412c52da2291d6f040a8f7080159581b4d5d",
+        "new_lines": [
+          110
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          91,
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 112,
+        "old_sha256": "f1cd4dbf2ca177e3ce0f3c9df75a9034660266f623925f05cb07a64b566ccd13",
+        "new_lines": [
+          112
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "a74775b2f077c4052ca41d33eaa8804e53552d6ae66fed0db0d77889291b5d06",
+        "new_lines": [
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "0841b792c27b7466dbd0248542d59920288a34888428b7b74fbb617ec5923cef",
+        "new_lines": [
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "69785e0897f1eff2b1d91ef4e69c28f21e513146fefb18adbd709e8ef9c9f262",
+        "new_lines": [
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          95,
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 118,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          118
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 120,
+        "old_sha256": "5897780af6bd62de51d343197b8e40ea36a328854be46b15ec304cdfae09c8ed",
+        "new_lines": [
+          120
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 121,
+        "old_sha256": "718f4fa36dd1ecf959747de376f30818476bc2d53de522eaaacb4a0af7300dc4",
+        "new_lines": [
+          121
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 122,
+        "old_sha256": "1d5e93d54bf65c2b3b50ff0566005c9a6db655f16313e4e1028b98354d3cf06b",
+        "new_lines": [
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 123,
+        "old_sha256": "7db9e2da3ff4d70c44f52c256f2674576b6a6f757159e1d3119e3f773c49f8f3",
+        "new_lines": [
+          123
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "69d08ee760882ff525f7ed32d9e546906e1322983c3fb79390f0cacfcd2af8d7",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 126,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          126
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 128,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          128
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 129,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          129
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 130,
+        "old_sha256": "3df2ed585856b9dd666b6a8a47ce71ccb1f99f3c30c10426f52173625cbd19bc",
+        "new_lines": [
+          130
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 131,
+        "old_sha256": "eef860c375aaa9e8c2672cdae085165b081d0b8ed8d3ec93cf05e7caee41c88c",
+        "new_lines": [
+          131
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 132,
+        "old_sha256": "162ce26508ff606f7d1bb86c4a7dc96703bf1ea1d7a2ac1244ce76267b1b5c82",
+        "new_lines": [
+          132
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 133,
+        "old_sha256": "f74dc030847a469a76792303d45192d2d1b0797fcd9a08d1610dbbbef421e394",
+        "new_lines": [
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 134,
+        "old_sha256": "a3713587dd11f4f4dbe22addf65087c9a945c2e29d999b686bb230dcd812be9c",
+        "new_lines": [
+          134
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 135,
+        "old_sha256": "2e813e3405e5814523ed3335f881ef102978e9d1d74a98e73d9f0dc25eef842c",
+        "new_lines": [
+          135
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 136,
+        "old_sha256": "31cd480c42488e8c4556fd32386ffb480635b90dc79cf6b523d4a63b9c2d619f",
+        "new_lines": [
+          136
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 137,
+        "old_sha256": "f2484d517081d524b802fcd0e27c71ae23a05148b3201989d8477bc88c23208d",
+        "new_lines": [
+          137
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 138,
+        "old_sha256": "075b5aa99db1e8bbd904146e7181bd670df4c75a845c9e19602e85851f65a7ac",
+        "new_lines": [
+          138
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 139,
+        "old_sha256": "3cfc4cb87660e70cf3d40bf5ba02f2b7fe6ad8df75518b089da20d30bfb05fd0",
+        "new_lines": [
+          139
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 140,
+        "old_sha256": "0a94ffb6eb9c986ab02b726f154aec553514755bcee9b5505d022f6ce151e1e2",
+        "new_lines": [
+          140
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 141,
+        "old_sha256": "b36b7b41b021aba917792ad461b912ecdc892b7db79597c90cf56cb08193f1d1",
+        "new_lines": [
+          141
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 142,
+        "old_sha256": "0b43f764af25054f6c945451434a4f5f29c3cb60328bffd513a8d99dd151adda",
+        "new_lines": [
+          142
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 143,
+        "old_sha256": "61698a0f095627957e4a8c586fb3b1ee225c562ef1b9d81a1b1abec478cfcd64",
+        "new_lines": [
+          143
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 144,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          144
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 145,
+        "old_sha256": "fcd6fb5ad0d3b00251d0d5f24b2adb1774749b923b72004a8117e90c49711346",
+        "new_lines": [
+          145
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 146,
+        "old_sha256": "19c56e28719acb8968ad13ab6c8dab7834eb4378c3d0ab23dfe81f27e6af8113",
+        "new_lines": [
+          146
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 147,
+        "old_sha256": "4ca473656d4e9ed03792aa55cde7b4824e2f74e1ffa1f27258751b3d96d5f74c",
+        "new_lines": [
+          147
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 148,
+        "old_sha256": "5ff4d01000a90c7af08fe50d199754716b86bfc3dc9ccd059daae4845a348c56",
+        "new_lines": [
+          148
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 150,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          150
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 152,
+        "old_sha256": "c4fef92522586cdbf266d9f858b7cdccc1eb56877d75d7cb45a2271a5cf592ab",
+        "new_lines": [
+          152
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-payroll-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+    "current_sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "c3542e96131bd28f8b24ebc6833a7c2c0af19fac1c349a6f58fb0b81aba1a350",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "15227bbef44a7284b6f8c23c7406d0afe3952c0ecf856a579e7391fffbc0a4a3",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "7c2efb5e79c49ae56085797fabc28903fb9dbb567629aa407e0c8257fc472148",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "180b28de5d680dddf4d6b769c5231ba2e166dde10ccebfa66c5191314b9c8d0d",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "c829c00daed817adc3bedc10a12367ca7e32d98a59a2a41351beee7fa15894a8",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "383f3f07c7291c34824197085c13868fccf3ec89331311cdf933856ff282d5a1",
+        "new_lines": [
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 12,
+        "old_sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+        "new_lines": [
+          12
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 14,
+        "old_sha256": "b77970a894370f7563ecfa0888c3a39cc3da828882b467c81e830e26de101fb7",
+        "new_lines": [
+          14
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "3c39edf04e264ed26f8a9c906ba1d0669362a2f4bcb39c2cdf24d1d72573c09f",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "cf29b07be309b50d9df9fe913b08a905be46f52d5ecf30dca95ca210046e44b7",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "c44f0fa6519b7a263c0e1757f4141126354b21c8fac5c7537065a4fef251c454",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 28,
+        "old_sha256": "6a215a61b92242ebd1b69d18952f3236a3abcc945c3e415e018e43937aae1fe4",
+        "new_lines": [
+          28
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "cf11321fc8cd53050c5ae5bf06f1d0f9a787e9b94240f8315af62c354ec18d5b",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "2ec7550bcd2eb8c10afe02a2013a53f8b7112b240fdf2d3b7b69c4137ce5e759",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "0d26d120339867645e0b07b1ca9088b4cf367bf321221770fcdea456b9029735",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "139d9a8359e3c6df92fcaaf23eea401c10af9f3b8459654490078695c740c945",
+        "new_lines": [
+          32
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "e193de6fbba8b8e2838a666557cdff60b84ac8c3d23a1799ee50cca23e223c47",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "63e8c0f983cbb0c118f6449ce6d09c1607351d3c8f42a668a2899bf9c85e3c28",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 35,
+        "old_sha256": "210a32009712fa941b809394b5e63df67ae136d7a20226baf2ef58087b250ce9",
+        "new_lines": [
+          35
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 36,
+        "old_sha256": "a8bc3444baca07d81b364cba79967a58d303b6966d9d7a7e0f592ccde492640b",
+        "new_lines": [
+          36
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 37,
+        "old_sha256": "725c04bdfd292dc886a9dc612c46eca68d6a325c91170227a0c360dad9bfbbd2",
+        "new_lines": [
+          37
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 38,
+        "old_sha256": "56a876115938246b66870565f573cbff0dc98a8288a72515a2fd5e9d2b0ae7b9",
+        "new_lines": [
+          38
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 39,
+        "old_sha256": "7789dee1232c62c45b0c874b0f7225fa8148f040cc60392963441398f94f9e27",
+        "new_lines": [
+          39
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 40,
+        "old_sha256": "5581f4fa45844ff532e9a0c4f7887a79c739c9566364e809fe0bceeadd02b5bf",
+        "new_lines": [
+          40
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 41,
+        "old_sha256": "7c01d4779b98bac5d604a0c6c74a9803eed75b9ffb5e4c8fb529fa9492bb1254",
+        "new_lines": [
+          41
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 43,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          43
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 45,
+        "old_sha256": "71ee2b750da9456a93fb02f6611b5e57219d34a2d8d7b4c3f5632424ffba58ef",
+        "new_lines": [
+          45
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 47,
+        "old_sha256": "a20811fa2d9e4cfc73ebeb4c89c9512c771b831c06343ceff66df62b9ef41a4d",
+        "new_lines": [
+          47
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 49,
+        "old_sha256": "d68ff4ca246965ffb5a8703501b23f29504902199cb692fe2a61568f519be020",
+        "new_lines": [
+          49
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 51,
+        "old_sha256": "31f29a2fd3b04d33bf191cd23091ee69a112dbb5faac102f5e61463fa1cd0eb9",
+        "new_lines": [
+          51
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 53,
+        "old_sha256": "48fd83d9e46e0227af271e57f179a1c2c2e6068cb5a0983a20ad073c860578f1",
+        "new_lines": [
+          53
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 55,
+        "old_sha256": "dedd4ae54c196c326e459aa1ea0d9471774f0c677813679fa542470fa6553db5",
+        "new_lines": [
+          55
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 57,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          57
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 59,
+        "old_sha256": "28484a0e3efd5647494bcfeefa1b7e6d0e1524f8bc8b5241fb47cc644ef2065e",
+        "new_lines": [
+          59
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 61,
+        "old_sha256": "75adbab2edc26193c7d99dc25a5312bfb123e8a25c9fa650543b42749cda7ab1",
+        "new_lines": [
+          61
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 63,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          63
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 65,
+        "old_sha256": "2b4642722705dafa17994f04e138e11d229248d5428f35d3b2aeb99ab2ce6c45",
+        "new_lines": [
+          65
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 67,
+        "old_sha256": "a168a56fd0012d294b34e4494a8ddb4c9240e26fe1ae9691da4951a95944efba",
+        "new_lines": [
+          67
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 69,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          69
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 71,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          71
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 73,
+        "old_sha256": "953eefed6bc4b81db47bf3207cd9286a3428b7349ff662a112e5de59e74526b2",
+        "new_lines": [
+          73
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 75,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          75
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 77,
+        "old_sha256": "840458680a487ed101ffd68330e4394171be9135d2b06cb74d10c88140965457",
+        "new_lines": [
+          77
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 79,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          79
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 81,
+        "old_sha256": "18256ea0914b6951d51666e96e9c417003c1c981c6385dd5ca565996a9942b87",
+        "new_lines": [
+          81
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 83,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          83,
+          99
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 84,
+        "old_sha256": "1d7c675efd411f16b1b651bd39673cda7ee4c3d981ac5d7f2e070a06f267f2ac",
+        "new_lines": [
+          84
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 85,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          85,
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "642dd2cb2c50fb15a8f34823cb54ff70c70acefd462460d509cb7289c0f63816",
+        "new_lines": [
+          86
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 87,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          87,
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "2d22e32459b008878db27d8f81311b6779b17b35083805326b77d4d1bb368992",
+        "new_lines": [
+          88
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 89,
+        "old_sha256": "3213030d46074b11d6061b9ba853198b6733b9e368400e630f960f3aa3208b59",
+        "new_lines": [
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "ffa1509a4d09d2ef81ce661375919df85a94d1ef9f54577a9f03e6aa11e9d0a8",
+        "new_lines": [
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          91,
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "12caf90c4dc5ebc78af29bed7f91b6fad15c941a78f200d9436eb4061eeaebd0",
+        "new_lines": [
+          92
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "f2853e95a3a772bbfa8f3994ffe92ab17e8eab1b719877b1358098adcbbede0f",
+        "new_lines": [
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "c9bec111fc7ad7cfa327aa8898f90c4f7bb0be5626d73a277ea17b1e8a233be4",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          95,
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 97,
+        "old_sha256": "1cc2538f3067c8c08ac129816f0550eb72d46d16bf0cb34be388003353920804",
+        "new_lines": [
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 99,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          83,
+          99
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "f286fefbf43a0a363865c85587bd4a8a9832797a92af798b6847374ec72da474",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 101,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          85,
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "0b507a938657b7b65d871931fe5b6c9ad4ad7e3becbe881202b107ee2e7db7b6",
+        "new_lines": [
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "975b578422061112415796d01ff1b2675ac69f55b4769d66e4d5bc28d4be0758",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "11f5d27dbcb790ed491a6780df21eff4f61b1ddfd2384fc5b7c8f46921c0f971",
+        "new_lines": [
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 105,
+        "old_sha256": "9c524562ef116a8e9663ad05080c4e70f0d8ef824f9569ee326f42a1ed0b7624",
+        "new_lines": [
+          105
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          87,
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 107,
+        "old_sha256": "7a5baec106bdec1587e63976b14f91b1a920e09eb7b63534781fe9608f40e41a",
+        "new_lines": [
+          107
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "b0960f92d053b738e30280cbbd9bb99c29a0695fa399881b90086f1fd95fa5a5",
+        "new_lines": [
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "345adc50e4280bfd07e26d1965eeecbc3e2d203b6b5a7532abe762a959c2436d",
+        "new_lines": [
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 110,
+        "old_sha256": "a84fba50e2fe63fda254cbc0d8e668993b3320a73c5ce592f0a2d72eb57c9373",
+        "new_lines": [
+          110
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "e809e74869b04a79a9aa9c56528b81cd320cab73fdc1e40e46f8e3bdc90a41dc",
+        "new_lines": [
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 112,
+        "old_sha256": "594327988b59949ed0397e74e7f5bf5530842496ec32e5732c2aee1de5b4c20f",
+        "new_lines": [
+          112
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "be379322c01cfaca6de5d38f043bb80c6948b53f245ad422c321e4caae84002f",
+        "new_lines": [
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "8d2614092802284a175f535d2a5faf6c1b2d471904442ea6a070b172a4882ece",
+        "new_lines": [
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          91,
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "d7405a43fc1095c2b95e949a6f9cfb14e6f0c9e8469c06f97dde5a0bde5e0641",
+        "new_lines": [
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 117,
+        "old_sha256": "1f623ab3502c06cd53f49958256ae45c47a345c6870bbcce137dbed1532f2cc1",
+        "new_lines": [
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 118,
+        "old_sha256": "87f8fe138b3701122daa4ffc97cb5d92ed276dc732a06df04e01dbbe0aa7e778",
+        "new_lines": [
+          118
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 119,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          95,
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 121,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          121
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 123,
+        "old_sha256": "330d2ba153f25577059a80f03b2c588c81441a341d4e9c5012d5d329affe601f",
+        "new_lines": [
+          123
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "61762a4a45e600aef61feddf5938d2e4c7ac2247af115467164c0d22e2b697fa",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 125,
+        "old_sha256": "9edc5ce6646493d863237be08b332e4503062b5f4fb6097f7e0efdb7c1f16de2",
+        "new_lines": [
+          125
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 126,
+        "old_sha256": "204e0d419490deecb4c34101798bfe16f0fd106b9a03d0a2fd3b16ec9f9d46c8",
+        "new_lines": [
+          126
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 127,
+        "old_sha256": "0f3d4a5abdda29820c84aa6ce34d1fd9aa0153f5373f8e2acc1bfd54cfedea33",
+        "new_lines": [
+          127
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 129,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          129
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 131,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          131
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 132,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          132
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 133,
+        "old_sha256": "3df2ed585856b9dd666b6a8a47ce71ccb1f99f3c30c10426f52173625cbd19bc",
+        "new_lines": [
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 134,
+        "old_sha256": "a67beec2804e46c73c0e8c2a527f809474801f4fc0ab5788c3f285e027659de9",
+        "new_lines": [
+          134
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 135,
+        "old_sha256": "a4bb1a1bbaf1a556c6823bc295383692ebfa30f67be53b445eb50d37ca7aaab3",
+        "new_lines": [
+          135
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 136,
+        "old_sha256": "f74dc030847a469a76792303d45192d2d1b0797fcd9a08d1610dbbbef421e394",
+        "new_lines": [
+          136
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 137,
+        "old_sha256": "47fe03a06a34c55c6617dd00bd58665a330d695bfec3478c2595520ba06ac3a4",
+        "new_lines": [
+          137
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 138,
+        "old_sha256": "49a9ecd560b4b4c43b087bfdad90f41c38c2f5dbb39ab2755966b9b61bac837f",
+        "new_lines": [
+          138
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 139,
+        "old_sha256": "915291db9c15f5ba6391190766d12692541157ebbde3bcc867aa7a45e7664fb1",
+        "new_lines": [
+          139
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 140,
+        "old_sha256": "eca75365ff8701d256268e6ad0052e2afac30c40cb4d3988ba8f04b51e1a7541",
+        "new_lines": [
+          140
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 141,
+        "old_sha256": "8599ad94ad23d81c2d8cc9cc1cd75b39c0421449666cca9a7bc6367d40b016ff",
+        "new_lines": [
+          141
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 142,
+        "old_sha256": "5312c4ae5fb8fba9d273face31ca7eead9ed38cc85eedeb870eccfeed7111129",
+        "new_lines": [
+          142
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 143,
+        "old_sha256": "18d6d091a833ddd2edb7b21d077eead894df889e24d1e8d1a152d152fb07b56c",
+        "new_lines": [
+          143
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 144,
+        "old_sha256": "6d69ebf52a912fd21cbc6e295466b8fe8cccdbeb35eccd85bf7446494047b690",
+        "new_lines": [
+          144
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 145,
+        "old_sha256": "f813f00c269bfb5fa065cc203518c121ed98e0e0e69f276025181d1648193ce2",
+        "new_lines": [
+          145
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 146,
+        "old_sha256": "7380478d8bd982bf5de2b069b698ba43edef6b5f7495882db30a8140cf8026f6",
+        "new_lines": [
+          146
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 147,
+        "old_sha256": "3dbc980d21e1945acf45f2211b2998d825297ecb09f72688a16846baa27043d5",
+        "new_lines": [
+          147
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 148,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          148
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 149,
+        "old_sha256": "a5242c502148f7f1591fcf6d6756b3fc56e2ba1455ac2f9975668a398cc5ad0e",
+        "new_lines": [
+          149
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 150,
+        "old_sha256": "3f2a49d4c97acf594f9884e1c23d5060ba7c5fe669e79b6c114940f21a66dbe8",
+        "new_lines": [
+          150
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 151,
+        "old_sha256": "d4c896d1bf83c307807a633b508198ec12bef59ff0518fac1f619a1e0bf3dbaa",
+        "new_lines": [
+          151
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 153,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          153
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 155,
+        "old_sha256": "7f14fc83e2e51a18f479921677b110762367a79c005a18db3b26225e4041bd5e",
+        "new_lines": [
+          155
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 157,
+        "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0",
+        "new_lines": [
+          157
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 159,
+        "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "new_lines": [
+          159
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 161,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 163,
+        "old_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "new_lines": [
+          163
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 165,
+        "old_sha256": "d41a05f6c45a661160201e47359bbc3a7bb7ef83e6450478028330da4d2a64bc",
+        "new_lines": [
+          165
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 166,
+        "old_sha256": "ee1ef748aa1f4dfaa8bf75796a1df67343ea61efb442fa32d53c762b561d35ea",
+        "new_lines": [
+          166
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 167,
+        "old_sha256": "2cbb389a9ad595bff6a6dde37f81891540f15ca35a6a96d9e6418f81909a2462",
+        "new_lines": [
+          167
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 168,
+        "old_sha256": "2c0ebe83a888dc3ad5132525cb98eb28b4ce17af1c395357b932c48166c61e32",
+        "new_lines": [
+          168
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 170,
+        "old_sha256": "9fc15ca082913c558496e5718d0d7c592aad71a788fcf7c9812f1c8b37c4220d",
+        "new_lines": [
+          170
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 171,
+        "old_sha256": "6c37a9410c003ec947955e9498c578db511a7cdbf09a32f8503fcb98a89bf507",
+        "new_lines": [
+          171
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 173,
+        "old_sha256": "0b2b38bb62f73a28b897bc076bd07876ed3504e40cd386a55f639102a0c61c1c",
+        "new_lines": [
+          173
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 174,
+        "old_sha256": "e7f5a191c8f011d89816d0c3b2048a8b05726936fe01595dafb16eb648aed28f",
+        "new_lines": [
+          174
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 175,
+        "old_sha256": "29043232012f2c6d33f540f3f92ca4af42009dbfb4c3a98036c325dca2e96f9c",
+        "new_lines": [
+          175
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-social-contributions.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+    "current_sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "d80ede221d107aca4b3304686161f8ed094499b96e60d28d24ed6b7dc8e82dc2",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "4cd27d78d3b97f5bb1aa0f0537d911d9d127ecf7e226c8c9997bcf0ef9ef6384",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "eec1e60c57b90deeac31b98fea9e46a3e3ecc0dd7b48331677902201bc9876d0",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          15
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "9e22a270f4521dce9b3bdf5f77a6f256e589100e5e83b7ae62a2763d7cd36c9a",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "efd380128b17c23aabd19a74bccdb4c1069c814c77c42c4a05c67a7dc05b4362",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "d8611ff8a11833ff44561260079fcb2e94552f33d001b6f016719ba86b08e56b",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 26,
+        "old_sha256": "6a215a61b92242ebd1b69d18952f3236a3abcc945c3e415e018e43937aae1fe4",
+        "new_lines": [
+          26
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "a3799f62d37b259e4f15611342f9e51effe5aad8b088b6b7a34903db5c4d6b69",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 28,
+        "old_sha256": "71c7a38ab4a7706cfb8f0009c850e6f2b4ab900b31040a1000a781886a707fc9",
+        "new_lines": [
+          28
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "20a4677d6d1f49481d76b1e605ef9fc88296d1cd5aeacb0ed6258f4df983a61c",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "1509a35a398440ecd8b0d18250eb1b4ba5809383cdb1540658cc196951da2493",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "d08ec1e8f724b8de16be0ef9f2b566ae0cc27acde43f31a990c32d0102ca441e",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "6c8eacc18be7b707d5dff81c9b565d440cb250e3683691ee59c64c8632f7ec7d",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 35,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          35
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 37,
+        "old_sha256": "9c7924cdf4742b77b97d56b1c58eae82efcd34342ff38bd2980155ebe4662196",
+        "new_lines": [
+          37
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 39,
+        "old_sha256": "128cd510473c661a034a9ff8e6ac8a678fbed3d42729dfd3fa1996e2dc1628f6",
+        "new_lines": [
+          39
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 41,
+        "old_sha256": "1025cc7cd198966d58368a7e3d60da2c0c74f282288f4ae87ed9312edb5aff20",
+        "new_lines": [
+          41
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 43,
+        "old_sha256": "673967159fbb4e63258d4333c5dad7ddf5484a1033b193f419d49559192e450b",
+        "new_lines": [
+          43
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 45,
+        "old_sha256": "307c99f5497756c2d0948e86c08862566213bbdbbaad51c07d5a511519781bb8",
+        "new_lines": [
+          45
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 47,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          47
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 49,
+        "old_sha256": "8e059d4f5525ce117243de4622f666f0d7bc59b5cf811c64dae8c1a6e0c817ca",
+        "new_lines": [
+          49
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 51,
+        "old_sha256": "003047b67b474da3cb78fed66010479eb84dbda1ad96c65f4ea136a00215c2bc",
+        "new_lines": [
+          51
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 53,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          53
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 55,
+        "old_sha256": "2b4642722705dafa17994f04e138e11d229248d5428f35d3b2aeb99ab2ce6c45",
+        "new_lines": [
+          55
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 57,
+        "old_sha256": "a168a56fd0012d294b34e4494a8ddb4c9240e26fe1ae9691da4951a95944efba",
+        "new_lines": [
+          57
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 59,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          59
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 61,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          61
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 63,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          63
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 65,
+        "old_sha256": "6023ee19841924166aabbf950874567661fc99e218d21035590823c88edcc95e",
+        "new_lines": [
+          65
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 67,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          67
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 69,
+        "old_sha256": "9e6bfcd54b23a226ca0642f9ef6801e9c53b1e09dc93f98551ba0ff37d1d5fb3",
+        "new_lines": [
+          69
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 71,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          71,
+          85
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 72,
+        "old_sha256": "c46411405272e616e950ad26ff01ec4c26b33988709e406dd6315ff21e99b0f1",
+        "new_lines": [
+          72
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 73,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          73,
+          87
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 74,
+        "old_sha256": "a640a6bca6d194d8156e2af6af9e5328c4638d2aa681f06a5fb7919929034d86",
+        "new_lines": [
+          74
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 75,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          75,
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 76,
+        "old_sha256": "78dc87ebda58bc5b06d80cc617cb988066c8825d0214bb778bf3db9f38fb09bc",
+        "new_lines": [
+          76
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 77,
+        "old_sha256": "20e330706f750cda7f02304ef35160e3aa66323ea5dbaa0e15ec12df94fd18c8",
+        "new_lines": [
+          77
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 78,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          78,
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 79,
+        "old_sha256": "fa81f77f8a819e1aca89b4d1782bd1b2e72e1619125b7cf5c3168242e4bf50e0",
+        "new_lines": [
+          79
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 80,
+        "old_sha256": "c8d10f6961663a3798f60fc64b26a37ea3938105bede015e1d3ece8a6baf90ce",
+        "new_lines": [
+          80
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 81,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          81,
+          96
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 83,
+        "old_sha256": "2b8eb49396a94dd591abce19346f772fe7d8947f32b0d618c55f721ce11afea8",
+        "new_lines": [
+          83
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 85,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          71,
+          85
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "30b2aa6d8ae39f1091535611563d1712647c324d4994a2902838f34f1f21e15b",
+        "new_lines": [
+          86
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 87,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          73,
+          87
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "1368c84de9bdf7b0df8c8ed1ce9d5d44fdce3b6ca45e2b1ec2f7115811e9ff8e",
+        "new_lines": [
+          88
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 89,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          75,
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "91d81693fa4fd4d9924ebf18c364e35bf7a02e459cc998def153c3a8d92786f1",
+        "new_lines": [
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "13b141ec3bb822f4d0d47fb2d4e42bc0666f4e3bdaaab07ceee77fb305cb2fa3",
+        "new_lines": [
+          91
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "f150ae4587c0471885cf74e5350da4298e6c8dd27b6b74618492073ca33037a8",
+        "new_lines": [
+          92
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          78,
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "ee464650eb181c5382428908ae8ed428b27ad2a7f9a6f91136468f35ce5f3003",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "4824f801276a843a5d27f149ee25ef4bc0aa2fa1be8e19bbb60387415ded19d6",
+        "new_lines": [
+          95
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 96,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          81,
+          96
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 98,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          98
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "ece1962c6c6159df0e12fe21d0eed8d2b522e8cbe839a671d1157dc10139f46e",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 101,
+        "old_sha256": "108b28df039221d30e2770a80c2bcedc68416c02b8e8a7ea2c8473600fb71997",
+        "new_lines": [
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "d789e0092a90d909173baea351d78674a3983e28821effeba129e99080fd4885",
+        "new_lines": [
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "f692f0b9037428bdb3823b9e1692576dd82c0fea29bb4c375248a9a34a92b77c",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "b0b4413f59adcea3df5c42d7022a18f93186a3affda0846d35edb163e6194317",
+        "new_lines": [
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 110,
+        "old_sha256": "de00fbd19b9a08ade3c140c04fd72d0d083754f6478680d2b439122515944141",
+        "new_lines": [
+          110
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "49a9ecd560b4b4c43b087bfdad90f41c38c2f5dbb39ab2755966b9b61bac837f",
+        "new_lines": [
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 112,
+        "old_sha256": "25682c591dca90f80050549b337e753ba4a1059a551f537f6fd41da2a8ba6ebb",
+        "new_lines": [
+          112
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "3c9c428b79761f086a461baa65dc4ade4a865066eacb11494b99a8cf48d8baba",
+        "new_lines": [
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "aea176255dfb8ef4a209a6ee7a44eccd258e9c5aff9a5844c0db3e712dcd4d7b",
+        "new_lines": [
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "8da47decb04c3584eeebd66aca4bd1e0a5ac1123b2967d81ec1b9e65b1a66b15",
+        "new_lines": [
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "da1a19c45652eb7f1cae2551a455b54145ea244e6e4d7185f7488cd841986b84",
+        "new_lines": [
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 117,
+        "old_sha256": "0a94ffb6eb9c986ab02b726f154aec553514755bcee9b5505d022f6ce151e1e2",
+        "new_lines": [
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 118,
+        "old_sha256": "0b43f764af25054f6c945451434a4f5f29c3cb60328bffd513a8d99dd151adda",
+        "new_lines": [
+          118
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 119,
+        "old_sha256": "61698a0f095627957e4a8c586fb3b1ee225c562ef1b9d81a1b1abec478cfcd64",
+        "new_lines": [
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 120,
+        "old_sha256": "f278543a7705ab26500262fe684a8483559d6dc6ba14f9f32a2ee4b28f64086c",
+        "new_lines": [
+          120
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 121,
+        "old_sha256": "baaafbbbc093a0a3c436d82e7d382f51cc14a1d3a0034b281f16459e9e2872d5",
+        "new_lines": [
+          121
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 122,
+        "old_sha256": "7380478d8bd982bf5de2b069b698ba43edef6b5f7495882db30a8140cf8026f6",
+        "new_lines": [
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 123,
+        "old_sha256": "3dbc980d21e1945acf45f2211b2998d825297ecb09f72688a16846baa27043d5",
+        "new_lines": [
+          123
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 126,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          126
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 128,
+        "old_sha256": "21e9069c14d44d38adde34cc16cca524aceabd296fbec74989878ea0c71e0f37",
+        "new_lines": [
+          128
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-tax-residence.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+    "current_sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "119321d2918cc758bb0936f745c4b99e64c570d18a5f1bac0a0dc317620502c9",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "815da4c76ab1ae4f603e6c7ff7d0a1f6f4380c413fb22b898fe7005154e2b2b4",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "7c2efb5e79c49ae56085797fabc28903fb9dbb567629aa407e0c8257fc472148",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "180b28de5d680dddf4d6b769c5231ba2e166dde10ccebfa66c5191314b9c8d0d",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "c829c00daed817adc3bedc10a12367ca7e32d98a59a2a41351beee7fa15894a8",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "383f3f07c7291c34824197085c13868fccf3ec89331311cdf933856ff282d5a1",
+        "new_lines": [
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 12,
+        "old_sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+        "new_lines": [
+          12
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 14,
+        "old_sha256": "b77970a894370f7563ecfa0888c3a39cc3da828882b467c81e830e26de101fb7",
+        "new_lines": [
+          14
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "d41f28a1aa5938c61f53d8e82de1137e055ff044484275b2b8f38c04f81bec63",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "18bbbe89ebd4e5d11a69cb2941621a72b362b83d937a4db708309fcb6d8b87d3",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "aa8a629ca837dd815be5eea9084db3431f85582e73860dbe01acb41fc77621be",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "cbc5ba20ce41282918f44e38d38e480e677c853e46061eff402190209f751cd5",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "131e2943e64cb69ba25a911bf35bad055065bfc5a266bcb6669cc4b5dd3accef",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          32,
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 33,
+        "old_sha256": "b34b0d205aa1b3057a927787a65090ed3132443d7d031257bae14d21faf031eb",
+        "new_lines": [
+          33
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "58a63445e6fabe269bbe21db7f2f5c2f4fe54233ecae7c3ad30171c49b4e5d70",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 35,
+        "old_sha256": "a59bf9c342a2bf80fda98ed2655001e5455a343e1ad1d2ac1bc8c3870e186f14",
+        "new_lines": [
+          35
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 36,
+        "old_sha256": "943de409aa6b4f7158a95c80c130a32cc960e720418f6ce29aa56c728760041f",
+        "new_lines": [
+          36
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 37,
+        "old_sha256": "f12732c0f982b75ae3297a477dad9ec4faceb730c92f3eeb1d169a32ed12ea41",
+        "new_lines": [
+          37
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 38,
+        "old_sha256": "5c738c46ca56425a1746953c5d87c9c1475174b390862c82ccec05990854b92c",
+        "new_lines": [
+          38
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 39,
+        "old_sha256": "b82857a5c422354b94201b62a828ffd6e73119cf4d3b280998039013483ae1a0",
+        "new_lines": [
+          39
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 40,
+        "old_sha256": "819318927f0bbb34adcab8453e59005febedddb3dfb804464c2033f1841a5f1e",
+        "new_lines": [
+          40
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 42,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          42
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 44,
+        "old_sha256": "4e1f1d3e84ddd10ffa869a2be12db020f061ee506104ef533e89ec9e52aecb66",
+        "new_lines": [
+          44
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 46,
+        "old_sha256": "2795118975b6eb7fcbf6c429ec409badc2ff6fc2b58bafb90d059089e62e3998",
+        "new_lines": [
+          46
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 48,
+        "old_sha256": "44455c7a47228965292db335b9b9f3f78210cf9ff41e732f59e5f5ae9fea9e4a",
+        "new_lines": [
+          48
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 50,
+        "old_sha256": "6d1506d4087bbd92c449a8d992bb312eb9c43beab4d242652314267280f8c55b",
+        "new_lines": [
+          50
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 52,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          52
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 54,
+        "old_sha256": "e76299dc32a5a7413e196193aebce7a2072f09e0ecc3e90d7e072f7cbb0e0e08",
+        "new_lines": [
+          54
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 56,
+        "old_sha256": "4fbe6e00abf96d039d7e0c025e26788c21c4b364628a5d7095f73436ccbe7416",
+        "new_lines": [
+          56
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 58,
+        "old_sha256": "ce576e2957c3f7eb0501bec63d43e157bcc8ce12a1caa4177fab1e906c2301ba",
+        "new_lines": [
+          58
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 60,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          60
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 62,
+        "old_sha256": "1b2967723d82615e5d3ed0e6f054e104b13426aef5c391c0e1dd6b1ff03448e2",
+        "new_lines": [
+          62
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 64,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          64
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 66,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          66
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 68,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          68
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 70,
+        "old_sha256": "4c3969f5b217affae58035acbf6067bc527897c838aed98091fd64bc3db2eac9",
+        "new_lines": [
+          70
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 72,
+        "old_sha256": "65575bc0136b276f18ace3969eabd3f485a5e9537ea8823bd1d0622e7e8a21a8",
+        "new_lines": [
+          72
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 74,
+        "old_sha256": "5da09b967030ce391aa7d4af56bfdd73a468e8c862fd50be4bba0bbe455888e0",
+        "new_lines": [
+          74
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 76,
+        "old_sha256": "354bfefa1798b8f5bbdaa8aa8131f72fe12996f9294e84c58b4fd5ae5e3f8f8b",
+        "new_lines": [
+          76
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 78,
+        "old_sha256": "7d4499a712c2014c4b7c75e43448ed142fbe02ab5542a573baeb42ddc8660d73",
+        "new_lines": [
+          78
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 80,
+        "old_sha256": "754d6079461af0cbb168bc4cbb643ff4e7f3f76d468e6f2ac7e7f0225fedb45f",
+        "new_lines": [
+          80
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 82,
+        "old_sha256": "9380f6d00b163058906232c2af3d6b21beaf8744b87d957670eb9d72de9b8162",
+        "new_lines": [
+          82
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 84,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          84
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "a7abd8ee12b7eba260e62f01a18d6f3594533446718942174c40f23cee7d661d",
+        "new_lines": [
+          86
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          88,
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 89,
+        "old_sha256": "37ff184e519dd328b981d32136ea711d4fb98cc760c77739cdf2520ea19e9396",
+        "new_lines": [
+          89
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          90,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "69c2e1cfb7f30c96be9206afec570aca1cce5b070a1d3ea78b07fb8665f63d09",
+        "new_lines": [
+          91
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          92,
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "6863609b6cdd748807b3722e2c29fb48b994b7fe47889b6c3ba34a3929ebecc5",
+        "new_lines": [
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "4f1074709e2c60373a657b99dde4889329541070db4070f68f8754197c8aa7c2",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          95,
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 96,
+        "old_sha256": "136189bd62bc4ffa119f7e5d7b4a76da08ca2116c0776e2e12b49a26c772128c",
+        "new_lines": [
+          96
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 97,
+        "old_sha256": "d1aa344fbe3706e3d3915ff50bd9434609f5e6d4dad68763c0f3f88b6d2d5452",
+        "new_lines": [
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 98,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          98,
+          120
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "832000b9222af810015585a954f990cf0a7895a24e1839b42d6c96e6e4395f8f",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          88,
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "95e3f9ee5778c7a2f1696a4c32921f2c68dacdfbca3b517d9d0cd8d8ff161a09",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          90,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 105,
+        "old_sha256": "002ff4ff8e5ed1c0e288243dc4747dae7061a945376e6759d96ec83229bc80ab",
+        "new_lines": [
+          105
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "a654b09ae7300bc550cf95e55f0345efdbf3a62e962bc6ebbaea22694498c1c3",
+        "new_lines": [
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 107,
+        "old_sha256": "114a2358d7046beb17d7f00f33e2716fb2cf0ec2a3387b6a2965642b0a3dc117",
+        "new_lines": [
+          107
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          92,
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "1de0992859d53d129849b4a816ff36d2655c9242a8e701f95b8efde1fb0c276c",
+        "new_lines": [
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 110,
+        "old_sha256": "4b57cdcafb9c1aa941d842586d3aa6af8595070aca0a8542b0b417971955873c",
+        "new_lines": [
+          110
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "b05279f3e5b5a87176824318d93fa3e1d9fece896d94f1120f467fa015529043",
+        "new_lines": [
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 112,
+        "old_sha256": "a9cf70e9775363a05d4dcd2452f0f9004f847004117b694cc00ae2abbb7539a1",
+        "new_lines": [
+          112
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "858d066e5e2b641f4596bcc6aa895affb04479b9a4ab49b10ea43d3db465cc6c",
+        "new_lines": [
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          95,
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "8e9926b5226c2b18a783cc0aa6b87cec15c8788f67433919906c40c79f0f5aa2",
+        "new_lines": [
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "edc0dbf2d8bf00a49e9654c413dbf7661093999aafcda3391375c30081a38644",
+        "new_lines": [
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 117,
+        "old_sha256": "ab71f7c634d73c6c6257850ba5ba0dfab5f73772d478871a53522d7813a28f7d",
+        "new_lines": [
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 118,
+        "old_sha256": "a70371abd9ec60f766b0bf5bcdf6d0cf6451a2a39ffb0a66175dae35d1b35f6e",
+        "new_lines": [
+          118
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 119,
+        "old_sha256": "36f962d08e6b1d84866f309fcd668d52312604c65149bb713b1e4d6df06107f1",
+        "new_lines": [
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 120,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          98,
+          120
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 122,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "8c20dfcb73cb1a5fa18a6e9609073f84debabc58b1806250c9e3e2d081110a71",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 125,
+        "old_sha256": "cabea3d564cc1aa2f82a16c495a9f0370c5d4087f401893b32873cbb7af1ca50",
+        "new_lines": [
+          125
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 126,
+        "old_sha256": "31c715b0427a1859d9aff6ac4f623dcd1965cf1d22171383ebeab0ead19c7561",
+        "new_lines": [
+          126
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 127,
+        "old_sha256": "6ae97b6b9b21a3a04227812341ab7c956687f928bc7b677c71c6a7f37aca5edb",
+        "new_lines": [
+          127
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 128,
+        "old_sha256": "6b1fa4b64e1578ce7ef9fd6ce61373589bfa591e753cc8ac1080e885dcf45b98",
+        "new_lines": [
+          128
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 130,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          130
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 132,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          132
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 133,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          32,
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 134,
+        "old_sha256": "200263de1e223ba5e5858a7bf8a05dd9cae93f9e0c98484015f55083f6564d86",
+        "new_lines": [
+          134
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 135,
+        "old_sha256": "dcccae72dc56c43286164c6fc5b19fde1a94d126827130abb991a8471ee34129",
+        "new_lines": [
+          135
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 136,
+        "old_sha256": "84715c671e84a67ce7fb593ecac6cf47ddd1c96a166d3a24bda305c662c23672",
+        "new_lines": [
+          136
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 137,
+        "old_sha256": "ec5ef82c1b71860a4c147047a8fc05bf38b67e6555afaf185174af61b4d64f12",
+        "new_lines": [
+          137
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 138,
+        "old_sha256": "c103fe163b7234c7ecd2698175b55268e507bf91d327e7e095089d67bb8da361",
+        "new_lines": [
+          138
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 139,
+        "old_sha256": "e453f394fa62203b21464626a656cbec2be4ec7a7f1649812e61af4b60e388dd",
+        "new_lines": [
+          139
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 140,
+        "old_sha256": "5ff4d01000a90c7af08fe50d199754716b86bfc3dc9ccd059daae4845a348c56",
+        "new_lines": [
+          140
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 141,
+        "old_sha256": "7ad86048eb04e977bf769427183a1e68b54c1876d8d71c3c6f5450f789c3068f",
+        "new_lines": [
+          141
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 142,
+        "old_sha256": "053b9d20764d37e40794b51efb24719d828c43821add96ffd57e1db6320bb5f5",
+        "new_lines": [
+          142
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 143,
+        "old_sha256": "b447035ab45a7ece8e2a52d91c41ea378f335bdbd198a0e9ba99af9db2099d50",
+        "new_lines": [
+          143
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 144,
+        "old_sha256": "8599ad94ad23d81c2d8cc9cc1cd75b39c0421449666cca9a7bc6367d40b016ff",
+        "new_lines": [
+          144
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 145,
+        "old_sha256": "5a34059ffdacdc70d94d818cdd6f76b72e04553b8fbdb0a7250fd35921c1131b",
+        "new_lines": [
+          145
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 146,
+        "old_sha256": "0a94ffb6eb9c986ab02b726f154aec553514755bcee9b5505d022f6ce151e1e2",
+        "new_lines": [
+          146
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 147,
+        "old_sha256": "b36b7b41b021aba917792ad461b912ecdc892b7db79597c90cf56cb08193f1d1",
+        "new_lines": [
+          147
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 148,
+        "old_sha256": "18d6d091a833ddd2edb7b21d077eead894df889e24d1e8d1a152d152fb07b56c",
+        "new_lines": [
+          148
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 149,
+        "old_sha256": "61698a0f095627957e4a8c586fb3b1ee225c562ef1b9d81a1b1abec478cfcd64",
+        "new_lines": [
+          149
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 150,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          150
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 151,
+        "old_sha256": "cd803d984f7ec1630c454a46d8bd1d6683d705e4450e4644755faa884ef8629c",
+        "new_lines": [
+          151
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 153,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          153
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 155,
+        "old_sha256": "78067c5f849a22a08fad2eab662b21fae6ada8cd1c05ba664620a7d47d474a35",
+        "new_lines": [
+          155
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 157,
+        "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0",
+        "new_lines": [
+          157
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 159,
+        "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+        "new_lines": [
+          159
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 161,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          15,
+          161
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 163,
+        "old_sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+        "new_lines": [
+          163
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 165,
+        "old_sha256": "d41a05f6c45a661160201e47359bbc3a7bb7ef83e6450478028330da4d2a64bc",
+        "new_lines": [
+          165
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 166,
+        "old_sha256": "ee1ef748aa1f4dfaa8bf75796a1df67343ea61efb442fa32d53c762b561d35ea",
+        "new_lines": [
+          166
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 167,
+        "old_sha256": "2cbb389a9ad595bff6a6dde37f81891540f15ca35a6a96d9e6418f81909a2462",
+        "new_lines": [
+          167
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 168,
+        "old_sha256": "2c0ebe83a888dc3ad5132525cb98eb28b4ce17af1c395357b932c48166c61e32",
+        "new_lines": [
+          168
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 170,
+        "old_sha256": "9fc15ca082913c558496e5718d0d7c592aad71a788fcf7c9812f1c8b37c4220d",
+        "new_lines": [
+          170
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 171,
+        "old_sha256": "6c37a9410c003ec947955e9498c578db511a7cdbf09a32f8503fcb98a89bf507",
+        "new_lines": [
+          171
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 173,
+        "old_sha256": "0b2b38bb62f73a28b897bc076bd07876ed3504e40cd386a55f639102a0c61c1c",
+        "new_lines": [
+          173
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 174,
+        "old_sha256": "e7f5a191c8f011d89816d0c3b2048a8b05726936fe01595dafb16eb648aed28f",
+        "new_lines": [
+          174
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 175,
+        "old_sha256": "29043232012f2c6d33f540f3f92ca4af42009dbfb4c3a98036c325dca2e96f9c",
+        "new_lines": [
+          175
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  },
+  {
+    "file": "sj-svalbard-transfer-pricing.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+    "current_sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+    "same_bytes": true,
+    "old_topic_destinations": [
+      {
+        "old_line": 1,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 2,
+        "old_sha256": "a69f15e40f9002bb8f2727cdf7b28ab88fb4a92b0ea6e27487a0ab1594d610cc",
+        "new_lines": [
+          2
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 3,
+        "old_sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+        "new_lines": [
+          3
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 4,
+        "old_sha256": "842b1381ca87757ebe01ffbcc9370e79abbd2a368c90df2a5f81a3af7f02eb2c",
+        "new_lines": [
+          4
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 5,
+        "old_sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+        "new_lines": [
+          5
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 6,
+        "old_sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+        "new_lines": [
+          6
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 7,
+        "old_sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+        "new_lines": [
+          7
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 8,
+        "old_sha256": "3adeeb2d2f1f75767f56e75c95c447301e0307507980c9d1d45752d35d139e8d",
+        "new_lines": [
+          8
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 9,
+        "old_sha256": "61029fdbf190ee426c4c02dd0e2f8dadbb6d8d046f39442e193b426cad0f2a13",
+        "new_lines": [
+          9
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 10,
+        "old_sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+        "new_lines": [
+          10
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 11,
+        "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+        "new_lines": [
+          1,
+          11
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 13,
+        "old_sha256": "bf55651c40871deac549d76843f8619e38c41897d86bc79093a30382d7045c28",
+        "new_lines": [
+          13
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 15,
+        "old_sha256": "24a8bd9365c9f3d6479687b53b32d343f2727f7a2f485f170ef56fd10a28bbc8",
+        "new_lines": [
+          15
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 17,
+        "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+        "new_lines": [
+          17
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 19,
+        "old_sha256": "2e032745e5ebfa7f8d972443f93a96cd22152297822e6124e9fa7d27ee37303c",
+        "new_lines": [
+          19
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 21,
+        "old_sha256": "16a23f32518ea1b38eb9315d99b8e3a863e85f97aee145fc6fb4bec34e477759",
+        "new_lines": [
+          21
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 23,
+        "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+        "new_lines": [
+          23
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 25,
+        "old_sha256": "60deb12cf6b4e0050dc82ff1b0bf34313bb5833f039a92175c51956d57f17203",
+        "new_lines": [
+          25
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 26,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          26,
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 27,
+        "old_sha256": "b19e0ffa9056707d1d06130def5eac540b5afae1a98b5871044da7f5fd8deb9e",
+        "new_lines": [
+          27
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 28,
+        "old_sha256": "a5c692264e0bc8ee3a247998fef8ee39ec311dc4043bfeaa7f30a9ca6c1ae1ec",
+        "new_lines": [
+          28
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 29,
+        "old_sha256": "d5257071ad233e96262fad59737d4ed75096d0330ef49d239199065ca4161f0a",
+        "new_lines": [
+          29
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 30,
+        "old_sha256": "fccdfae9161e12d46222806e4442c20190c1e3190eec02dd0f729a007b3a7647",
+        "new_lines": [
+          30
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 31,
+        "old_sha256": "0cab6f81330388b490ac9596774b419319c4752a1dcf7b19c7d3086052533fbf",
+        "new_lines": [
+          31
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 32,
+        "old_sha256": "17323fcd8e795b5b5ed562e139db44f4201ce036eb01c0d1b3e91ca8c45174b9",
+        "new_lines": [
+          32
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 34,
+        "old_sha256": "b5868bafb7953aaab192f55061e2cde596afabd858203ed8e2c6da5699c99a7a",
+        "new_lines": [
+          34
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 36,
+        "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+        "new_lines": [
+          36
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 38,
+        "old_sha256": "016a8193059cb21cb73789307355aaa59e7f37ee6fbf6dfb47cc2ec56faf8436",
+        "new_lines": [
+          38
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 40,
+        "old_sha256": "8dd2e68773a48a09e7d33137c58e68a1769544fdca69deb0de0a71a81de09657",
+        "new_lines": [
+          40
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 42,
+        "old_sha256": "63854167fda45246c1e0d6c7c6a8f78fed8a367995c32fc22169ec9f860ca1d2",
+        "new_lines": [
+          42
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 44,
+        "old_sha256": "270fabe3420a32c5daf592d312c829db6fefad6f59741d5c8d719b75651df228",
+        "new_lines": [
+          44
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 46,
+        "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+        "new_lines": [
+          46
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 48,
+        "old_sha256": "5e942ad92590b60568fa2493cb01f7360e8707bf8138faf29b4dc12ec9ff3d62",
+        "new_lines": [
+          48
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 50,
+        "old_sha256": "b45049fdf2fcf7d1d4b3540cb1e79250b467cbfa7ca7637f7f2646b071572457",
+        "new_lines": [
+          50
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 52,
+        "old_sha256": "57f79a1a96613f7142f33f3222ac5017d08a4df02deed53e7aee8abc2707eb0c",
+        "new_lines": [
+          52
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 54,
+        "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+        "new_lines": [
+          54
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 56,
+        "old_sha256": "1b2967723d82615e5d3ed0e6f054e104b13426aef5c391c0e1dd6b1ff03448e2",
+        "new_lines": [
+          56
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 58,
+        "old_sha256": "ae0f17eaa591ef6ea7cff57dd366f9670c77beb87e4df32f2cc84d60c3ccc7f8",
+        "new_lines": [
+          58
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 60,
+        "old_sha256": "d506b6e712a068dcec9d719b312b7cf4627c8518975bc880d75e6638012313ce",
+        "new_lines": [
+          60
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 62,
+        "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+        "new_lines": [
+          62
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 64,
+        "old_sha256": "e543c0017deb2be668b0cfc3d7ca0b8f3e83e05bd2c403c563f273b2ada5e47a",
+        "new_lines": [
+          64
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 66,
+        "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+        "new_lines": [
+          66
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 68,
+        "old_sha256": "539c983eed9809f6a47904d1f5e979bdd50d9bfd00cd2be4b60361d151cea82b",
+        "new_lines": [
+          68
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 70,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          70,
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 71,
+        "old_sha256": "704ab56cb2b0aa65ae600353645465c5860801512a28231960e4445cc5391359",
+        "new_lines": [
+          71
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 72,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          72,
+          92
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 73,
+        "old_sha256": "6d1ac7c1e8ca520185f5309100864b5a94496be5d6e10d5cd410c14a152c1ead",
+        "new_lines": [
+          73
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 74,
+        "old_sha256": "3e9672fde960490f3e2447b377ad6a69d37a3aaf13ccd5b717112865982e6781",
+        "new_lines": [
+          74
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 75,
+        "old_sha256": "8ed12e724f8df8f26aad7c60e690b03041c1a96675f549ebd106d617716e9042",
+        "new_lines": [
+          75
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 76,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          76,
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 77,
+        "old_sha256": "6e066ffceec46939f26af8be8b141bc2d17af9d1333665c22a67733f5570c6f7",
+        "new_lines": [
+          77
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 78,
+        "old_sha256": "98b54433c0aa75e0e7a9ab9af7de0524b36c10efca6bd636ad7963586716c37d",
+        "new_lines": [
+          78
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 79,
+        "old_sha256": "97cd10b40ba3814f2423bd96830694b8184faa259e211617c4f361b66b429c5f",
+        "new_lines": [
+          79
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 80,
+        "old_sha256": "452243c14b272cce961fc75753a650d42c10928a5f17330ffd85ca60fd44b3dc",
+        "new_lines": [
+          80
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 81,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          81,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 82,
+        "old_sha256": "0d97b8f5cc85003d725427de7e1f79794809a0839f64bbe40861df7df339240a",
+        "new_lines": [
+          82
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 83,
+        "old_sha256": "cd2804f93d6eae0bdc12aef421340ac668e1bd1f97887483aed1643ecdc6862a",
+        "new_lines": [
+          83
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 84,
+        "old_sha256": "a53b530a769c701ffa6916dfbab0168d82cf44d44858fe95445c3bd0ab4cc4dc",
+        "new_lines": [
+          84
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 85,
+        "old_sha256": "ca1e1a872de7d739df86d998635985ba2f1a897173b54d77ef57eac983ed8462",
+        "new_lines": [
+          85
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 86,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          86,
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 88,
+        "old_sha256": "a342e6e94f8130d4bd333accfd3e77247d3834817ddef97afc9667a8cd9ae984",
+        "new_lines": [
+          88
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 90,
+        "old_sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+        "new_lines": [
+          70,
+          90
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 91,
+        "old_sha256": "65cf7374ffaea0cfd659ed6d99d1b29f90cac47341affaa1b277b5250b9ca388",
+        "new_lines": [
+          91
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 92,
+        "old_sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+        "new_lines": [
+          72,
+          92
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 93,
+        "old_sha256": "b136d98fd08321af08d6822b0499b75c13b21a182592961dcb549676618d38ec",
+        "new_lines": [
+          93
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 94,
+        "old_sha256": "8a71be6c55fbd8b703ae416a9d6a29a7c1cd6097012662822d3e3d73fb2c4c15",
+        "new_lines": [
+          94
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 95,
+        "old_sha256": "3a477a36d4817752d03adf022c57806c5d895ed45b2e25337771f9ddd9e064ee",
+        "new_lines": [
+          95
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 96,
+        "old_sha256": "72cfb975adcd6cb9a50c65a23f3d887e0db33367123bb170311af9db9ce377e4",
+        "new_lines": [
+          96
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 97,
+        "old_sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+        "new_lines": [
+          76,
+          97
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 98,
+        "old_sha256": "61afaccce94e2f1294a8756af1f41208d0af96fc30ab8783e0144a4005308692",
+        "new_lines": [
+          98
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 99,
+        "old_sha256": "aa4ab5bb03d1497256394cd174f9a9f3382261a99a731676636664b691e00c34",
+        "new_lines": [
+          99
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 100,
+        "old_sha256": "dc044ca8ea5b17dc772221ff5ae572550c52d3b0dca14478a54dcf9be560825d",
+        "new_lines": [
+          100
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 101,
+        "old_sha256": "23b7d3958ac98cec3d202bc755571e9af9637a9cd51db78ab9bc3efe9d1a7797",
+        "new_lines": [
+          101
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 102,
+        "old_sha256": "c6191d5813ba7cd164faff46e6f50536c18615b8f568a5ed0624750c49aa16ac",
+        "new_lines": [
+          102
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 103,
+        "old_sha256": "518c1c6e3c124374c0b4548f859eb77cbf3a3593147e4a62887e9d41d3b36a00",
+        "new_lines": [
+          103
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 104,
+        "old_sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+        "new_lines": [
+          81,
+          104
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 105,
+        "old_sha256": "77d5da5c0f94aa304a158e49b25194f7658fbb2d2a20fc3c53bb94cfedaa07a6",
+        "new_lines": [
+          105
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 106,
+        "old_sha256": "d5392d929bc334c241c2be16be49a67482d0feee7884183a39a989501fd4164b",
+        "new_lines": [
+          106
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 107,
+        "old_sha256": "11024b7e346fbc3eb7342d01e1c1d838436f385672e855de6ad1cccea7983e6c",
+        "new_lines": [
+          107
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 108,
+        "old_sha256": "6051eec60fe1fcf44f357d757dff3921647fcf30428b0585f54d7f994d0dacaf",
+        "new_lines": [
+          108
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 109,
+        "old_sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+        "new_lines": [
+          86,
+          109
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 111,
+        "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+        "new_lines": [
+          111
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 113,
+        "old_sha256": "e826c671a77daafb7a28038588e508d2701bda7799ef017e6a87dc6c9d0fddbe",
+        "new_lines": [
+          113
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 114,
+        "old_sha256": "5934f391d35038f515be0e7ba9940d751d523a08700eb9bf286c75701ec3e6a1",
+        "new_lines": [
+          114
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 115,
+        "old_sha256": "ec884733612b762b46346e55219150b611844aa18f72debcd033ca6bd96c638a",
+        "new_lines": [
+          115
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 116,
+        "old_sha256": "b69f1fbf4ab143cb76279f0c9b64aa897e671b928eb889cda2e9c8a53603aa1b",
+        "new_lines": [
+          116
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 117,
+        "old_sha256": "f7cf49bb57eaad60a2f38ff39fc4f3ca3f8034bb68da3de2c33a7872977b747f",
+        "new_lines": [
+          117
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 119,
+        "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+        "new_lines": [
+          119
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 121,
+        "old_sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+        "new_lines": [
+          121
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 122,
+        "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+        "new_lines": [
+          26,
+          122
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 123,
+        "old_sha256": "81cc4a68be94423d00fac3ba3ee26fa14a57f2d1ea275b4b55ff529d27f678da",
+        "new_lines": [
+          123
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 124,
+        "old_sha256": "6aa944027dc833c9f5f9edb1361f955c14bdc5e5644c219e214da2ce00d2291e",
+        "new_lines": [
+          124
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 125,
+        "old_sha256": "b10ffdb72e178a5350f501d94fad39127ed76681e1fac667f67ccb1ef2f4f0ee",
+        "new_lines": [
+          125
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 126,
+        "old_sha256": "d2233e0efff9dfd7bf65d1b28b777510e5386bea9cd3b77df245b67f18e18d97",
+        "new_lines": [
+          126
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 127,
+        "old_sha256": "18d6d091a833ddd2edb7b21d077eead894df889e24d1e8d1a152d152fb07b56c",
+        "new_lines": [
+          127
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 128,
+        "old_sha256": "ff9fac093f8725698afb125052fdf667acc333384f1e5bc393f926b8717e6a36",
+        "new_lines": [
+          128
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 129,
+        "old_sha256": "61698a0f095627957e4a8c586fb3b1ee225c562ef1b9d81a1b1abec478cfcd64",
+        "new_lines": [
+          129
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 130,
+        "old_sha256": "0647b32c58e963054bc651b048497f0fb94732f1f81ae122c03a290689f7962b",
+        "new_lines": [
+          130
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 131,
+        "old_sha256": "57703a2a47dc28978fbf16dddc2fb5869fa974fbd20225a1cc5b2289fe49568f",
+        "new_lines": [
+          131
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 133,
+        "old_sha256": "38ffc68a52e702d6b4a76d0ec1d28828a2a3064b1218f715092b0ef3934f2d25",
+        "new_lines": [
+          133
+        ],
+        "status": "byte-exact line retained"
+      },
+      {
+        "old_line": 135,
+        "old_sha256": "9633520a78d49da3937c9752473307c505ffc5de6476d15fa5da9ea2ff9f2c4b",
+        "new_lines": [
+          135
+        ],
+        "status": "byte-exact line retained"
+      }
+    ]
+  }
+]

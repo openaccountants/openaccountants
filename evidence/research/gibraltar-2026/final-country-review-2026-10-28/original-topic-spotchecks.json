@@ -1,0 +1,202 @@
+{
+  "full_destination_maps": 346,
+  "spotchecks": [
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P025",
+      "topic": "Intercompany interest and connected-borrower aggregation",
+      "destination": "Guide: The base > Interest, royalties and overseas movable-property income",
+      "result": "retained_with_express_limits",
+      "check": "Retained in main base section with strict less-than100,000 threshold; no lender-borrower connection prerequisite invented."
+    },
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P053",
+      "topic": "Plant/computer first-year allowances",
+      "destination": "Guide: The base > Capital allowances: equipment purchases and pools",
+      "result": "retained_with_express_limits",
+      "check": "30,000/50,000 ordinary amounts and closed2021–23 enhanced window retained."
+    },
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P069",
+      "topic": "Cessation-stock purchaser condition",
+      "destination": "Guide: The base > Trading stock when a trade ends",
+      "result": "retained_with_express_limits",
+      "check": "Buyer Gibraltar-trade/deductible-cost test and alternative open-market case retained."
+    },
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P084",
+      "topic": "Mixed protected/restricted losses",
+      "destination": "Guide: Two worked examples that recompute > Example 2: mixed protected and restricted loss pools",
+      "result": "retained_with_express_limits",
+      "check": "Original reasoned interpretation and cap ordering retained; main section7 now holds its unchanged two mixed-pool computations. No Commissioner ruling asserted."
+    },
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P096",
+      "topic": "CT4 predecessor uncertainty",
+      "destination": "Guide: Deadlines and filing > Applying to reduce instalments",
+      "result": "retained_with_express_limits",
+      "check": "Old blanket unknown-fields limit is replaced only by source-supported published fields/route; receipt/decision limits remain."
+    },
+    {
+      "guide": "corporate",
+      "original_paragraph_id": "CORP-P016",
+      "topic": "Original treaty share control",
+      "destination": "Research: preserved-corporate-controls.md",
+      "result": "retained_with_express_limits",
+      "check": "Byte-exact block relocated to preserved-corporate-controls, linked from unchanged explanatory example."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P009",
+      "topic": "Part-year cross-reference",
+      "destination": "Guide: Rates, bands and thresholds",
+      "result": "retained_with_express_limits",
+      "check": "Old uncertainty preserved with repealed/current section34 and conditional Schedule9 continuity; no invented full resident entitlement."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P014",
+      "topic": "Health-insurance deductions",
+      "destination": "Guide: Health-insurance deductions and family-policy restrictions",
+      "result": "retained_with_express_limits",
+      "check": "ABS/GIBS caps, approval and spouse/self-only rules retained."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P039",
+      "topic": "QNUPS revised XML version",
+      "destination": "Guide: Section 14B: evidence for the UK scheme requirements",
+      "result": "retained_with_express_limits",
+      "check": "Original revised XML SHA retained; route-specific70percent/UKtiming conditions kept."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P049",
+      "topic": "Pre-death assessment deadline",
+      "destination": "Guide: Death during the tax year",
+      "result": "retained_with_express_limits",
+      "check": "End of third following assessment year retained; no anniversary substituted."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P033",
+      "topic": "Future-year submission caveat",
+      "destination": "Guide: Payments on account and the balance",
+      "result": "retained_with_express_limits",
+      "check": "Public current2026interimroute added while future2026/27authenticatedfields remain unverified; GI-R1 corrects current type/year context."
+    },
+    {
+      "guide": "individual",
+      "original_paragraph_id": "IND-P018",
+      "topic": "Original health arithmetic control",
+      "destination": "preserved-individual-controls.md",
+      "result": "retained_with_express_limits",
+      "check": "Full original executable block remains unchanged in supplement."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P020",
+      "topic": "Monthly table discrepancy",
+      "destination": "Guide: Rates, bands and thresholds > Table-versus-guidance discrepancies",
+      "result": "retained_with_express_limits",
+      "check": "Dated note/table conflict disclosed, rendered code35/pay1623–1624 checked; no source silently harmonised."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P055",
+      "topic": "Self-employed annual calendar",
+      "destination": "Guide: Deadlines and filing > Self-employed forms, payment route and annual reconciliation",
+      "result": "retained_with_express_limits",
+      "check": "2026/27period,November2027deadline and eight-day finalweek retained; quarterly law interaction remains open."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P070",
+      "topic": "UK social-security agreement scope",
+      "destination": "Guide: Cross-border points",
+      "result": "retained_with_express_limits",
+      "check": "Single-system/24month/similar-activity route remains distinct from income-tax183day rule."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P087",
+      "topic": "Concurrent employment uncertainty",
+      "destination": "Guide: Sources > Questions requiring an operational ruling",
+      "result": "retained_with_express_limits",
+      "check": "First-employer statutory rule and certificate-dependent guidance remain explicitly unresolved outside max-in-primary form case."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P106",
+      "topic": "Old missing-benefit limitation",
+      "destination": "Guide: Sources > Evidence and exclusions",
+      "result": "retained_with_express_limits",
+      "check": "Narrowed to new ordinary sourced methods plus threshold/pension/specialist limits, without removing employment-law exclusions."
+    },
+    {
+      "guide": "payroll",
+      "original_paragraph_id": "PAY-P023",
+      "topic": "Original daily table calculation",
+      "destination": "preserved-payroll-controls.md",
+      "result": "retained_with_express_limits",
+      "check": "Byte-exact control retained in supplement; current0.96cell and grey instruction visually checked."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P013",
+      "topic": "Rate calendar",
+      "destination": "Guide: Rates, bands and thresholds",
+      "result": "retained_with_express_limits",
+      "check": "Baseline15/16/17date sequence retained with treaty provisional-application chain and unchanged-future-law assumptions."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P031",
+      "topic": "Certificate transition",
+      "destination": "Guide: Cross-border points > Transitional goods",
+      "result": "retained_with_express_limits",
+      "check": "Certificate duration,transmission,quantity and treaty limits retained rather than a blanket stock exemption."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P037",
+      "topic": "Initial90day deduction",
+      "destination": "Guide: The base > Transitional business deduction",
+      "result": "retained_with_express_limits",
+      "check": "15July–12October2026confirmed; extension remains unsupported and explicitly excluded absent notice."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P045",
+      "topic": "Aid declaration and constraints",
+      "destination": "Guide: The base > Transitional business deduction",
+      "result": "retained_with_express_limits",
+      "check": "Old aid/aggregation gap narrowed only to sourced ordinary EU2023/2831 chain; currency/headroom/sector case evidence still required."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P046",
+      "topic": "Outstanding old limits",
+      "destination": "Guide: Sources",
+      "result": "retained_with_express_limits",
+      "check": "Refundchannel,extension,commodity/traveller and transition boundary limitations retained in Sources."
+    },
+    {
+      "guide": "consumption",
+      "original_paragraph_id": "CON-P021",
+      "topic": "Original import valuation arithmetic",
+      "destination": "Guide: Two worked examples that recompute > Example 1: import valuation",
+      "result": "retained_with_express_limits",
+      "check": "Original import block remains byte-exact in the main Guide; no valuation method or no-duplicate-freight condition removed."
+    }
+  ],
+  "lost_content_restored": 0,
+  "original_guides_preserved": 18,
+  "original_research_byte_exact": 121,
+  "frozen_accepted_research_byte_exact": 32,
+  "original_oa_checks_byte_exact": 47
+}

@@ -1,10 +1,20 @@
 ---
 name: ma-bookkeeping
-description: Use this skill whenever asked about record-keeping, bookkeeping, or invoicing obligations for self-employed people and micro-businesses in Morocco — which books or registers each tax regime must keep, what must appear on an invoice, the ICE identifier, the move toward e-invoicing, document retention, and when a taxpayer must move up to full accounting. Trigger on phrases like "Morocco bookkeeping", "comptabilité Maroc", "facture ICE", "e-invoicing Morocco", "facturation électronique Maroc", "registre des recettes", "tenue de comptabilité Maroc", "mentions obligatoires facture", "محاسبة المغرب", "فاتورة ICE". Covers the auto-entrepreneur receipts register, the CPU register of receipts and purchases, RNS / RNR full accounting under the CGNC and Code de Commerce, mandatory invoice mentions, the DGI e-invoicing roadmap, the SIMPL teleservices, and the 10-year retention rule. Reply in the user's language (English, French, or Moroccan Arabic / Darija). Cross-reference ma-auto-entrepreneur, ma-cpu, and morocco-professional-income-tax for the tax computation.
-version: 1.0
+description: >
+  Use this skill whenever asked about record-keeping, bookkeeping or invoicing obligations in
+  Morocco for tax year 2026: which books or registers each tax regime must keep, what must appear
+  on an invoice, the ICE identifier, electronic accounting, the invoicing system under CGI Art.
+  145-IX, retention, audit production, and when a taxpayer moves to the real net income regime.
+  Trigger on phrases like "Morocco bookkeeping", "comptabilite Maroc", "facture ICE",
+  "e-invoicing Morocco", "facturation electronique Maroc", "registre des recettes", "tenue de
+  comptabilite Maroc", "mentions obligatoires facture", "محاسبة المغرب", "فاتورة ICE". Covers
+  auto-entrepreneur, CPU, RNS, RNR and companies. Reply in the user's language (English, French,
+  or Moroccan Arabic / Darija). Cross-reference ma-auto-entrepreneur, ma-cpu,
+  morocco-professional-income-tax and morocco-vat for the tax computation.
+version: 2.0
 jurisdiction: MA
-tax_year: 2025
-last_updated: 2026-10-31
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,187 +24,183 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# MA Bookkeeping
+# MA Bookkeeping v2.0
 
-## Morocco — Record-Keeping & Bookkeeping for the Self-Employed (Comptabilité)
+## Scope
 
-This skill tells an AI agent what books, registers, and invoices a self-employed Moroccan taxpayer must keep, and for how long — organised by tax regime. It does not compute the tax (that is ma-auto-entrepreneur, ma-cpu, and morocco-professional-income-tax); it governs the underlying comptabilité and facturation.
+This skill tells an AI what books, registers and invoices a Moroccan taxpayer must keep for 2026, and for how long, by tax regime. It does not compute the tax: that is ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax and morocco-vat. All article numbers refer to the Code General des Impots (CGI) 2026, DGI edition, which includes Finance Law 50-25. Reply in the user's language and keep the native terms (comptabilite, facture, ICE, registre, DGI).
 
-The depth of obligation rises with the regime:
+Covered: individuals under the auto-entrepreneur regime (AE), the contribution professionnelle unique (CPU), the resultat net simplifie (RNS) and the resultat net reel (RNR), and companies. Non-resident companies with a permanent activity in Morocco are covered at Art. 147 level.
 
-- Auto-entrepreneur (AE) — a simple register of receipts (registre des recettes); no double-entry accounting.
-- Contribution Professionnelle Unique (CPU) — a register of receipts and purchases (registre des recettes et des achats), with supporting purchase vouchers; exempt from full accounting.
-- Résultat Net Simplifié (RNS) / Résultat Net Réel (RNR) — full accounting (comptabilité régulière) under the Code Général de Normalisation Comptable (CGNC) and the Code de Commerce.
+## Ask the client first
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (comptabilité, CGNC, facture, ICE, registre, DGI, SIMPL) and explain them in the user's chosen language.
+1. Which regime applies: company, RNR, RNS, CPU or AE?
+2. Activity type: commercial, industrial or craft, or services?
+3. Turnover for each of the last two years, and for AE, turnover collected.
+4. Is the taxpayer subject to VAT?
+5. Are the books kept by electronic process?
+6. Are the customers businesses or private individuals?
 
-## 1. Quick Reference
+If the regime is unknown, assume the higher standard: Art. 145 records, 10 years' retention. If turnover is near a ceiling, apply the two-year test below rather than assume a breach.
 
-**Quick Reference Table**
+## The method, step by step
 
-**Quick Reference Table**
+### Step 1. Figures and limits ([CGI 2026](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
-| Field | Value |
-| --- | --- |
-| Country | Morocco (MA) |
-| Scope | Record-keeping, registers, invoicing, retention by regime |
-| Currency | MAD (dirham marocain, DH) |
-| Authority | **Direction Générale des Impôts (DGI)** — tax.gov.ma |
-| AE records | **Register of receipts** (registre des recettes) — receipts only, no expenses |
-| CPU records | **Register of receipts and purchases** + purchase vouchers (CGI Art. 145 bis) *(verify model/format set by regulation)* |
-| RNS / RNR records | **Full accounting** under the **CGNC** + Code de Commerce (livre-journal, grand-livre, livre d'inventaire) |
-| Trigger to full accounts | Turnover exceeds the CPU/RNS ceiling for **2 consecutive years**, or option for RNR/RNS, or company form *(verify thresholds below)* |
-| Mandatory invoice ID | **ICE** — Identifiant Commun de l'Entreprise, **15 digits** *(verify length 9+4+2)* |
-| Invoice legal basis | **CGI Art. 145** (mandatory mentions) *(verify article)* |
-| E-invoicing (facturation électronique) | Legal basis **CGI Art. 145-IX**; **CTC / pre-clearance** model via DGI platform; **implementing decree not yet published as of April 2026 — dates and thresholds pending** *(verify on publication)* |
-| Free e-invoice tool (small businesses) | `fatourati.gov.ma` *(verify)* |
-| Teleservices | **SIMPL** (SIMPL-IR, SIMPL-TVA, SIMPL-IS) on tax.gov.ma; e-filing/e-payment mandatory since **1 Jan 2017** *(verify)* |
-| Retention period | **10 years** — accounting records & supporting documents (CGI Art. 211) *(verify)* |
-| Retention penalty | Fixed fine **MAD 50,000 per fiscal year** for failure to retain *(verify amount)* |
-| Contributor | Open Accountants Community |
-| Quality tier | **Research-verified — pending sign-off by a Moroccan accountant (expert-comptable)** |
-| Version | 1.0 |
-| Last research update | May 2026 |
+| Item | Amount | Tax year | Conditions | Official URL |
+|---|---|---|---|---|
+| RNS ceiling, trade, industry, craft, fishing vessel owners | MAD 2,000,000 excl. VAT | 2026 | Art. 39; option holds until exceeded for two consecutive years | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
+| RNS ceiling, services and Art. 30 (1 c, 2) | MAD 500,000 excl. VAT | 2026 | Art. 39; same test | same |
+| CPU ceiling, trade, industry, craft | MAD 2,000,000 | 2026 | Art. 41-II-A; two consecutive years over means RNR from 1 January following | same |
+| CPU ceiling, services | MAD 500,000 | 2026 | Art. 41-II-A; same test | same |
+| AE ceiling, trade, industry, craft | MAD 500,000 collected | 2026 | Art. 42 ter-II-A, 43-4 | same |
+| AE ceiling, services | MAD 200,000 collected | 2026 | Art. 42 ter-II-A; two consecutive years over means RNR from 1 January following, unless RNS or CPU is opted for, and AE is lost | same |
+| Retention | 10 years | 2026 | Art. 211; all taxpayers and withholding agents, at the place of taxation | same |
+| Loss of records notice | 15 days, 30 for force majeure | 2026 | Art. 211; registered letter to the inspector from the date the loss is found | same |
+| No retention | MAD 50,000 per year | 2026 | Art. 185 bis-I; issued without procedure | same |
+| ICE omitted or wrong | MAD 100 per item | 2026 | Art. 198 ter; breach of Art. 145-VIII | same |
+| Books not on electronic support at audit | MAD 50,000 per year | 2026 | Art. 191 bis; those keeping books by electronic process | same |
+| Documents not produced, or audit refused | MAD 2,000, plus MAD 100 a day up to MAD 1,000 | 2026 | Art. 191-I; for income tax the fine is MAD 500 to 2,000; procedure in Art. 229 | same |
+| False invoices, false entries, repeated sales without invoice, destroying records | MAD 5,000 to 50,000, plus 1 to 3 months in prison | 2026 | Art. 192-I; intent to evade, procedure in Art. 231 | same |
+| Non-traceable settlement | 6% of the transaction | 2026 | Art. 193; MAD 20,000 or more, charged on the seller, for example company to business | same |
+| Cash expense limit | MAD 5,000 a day per supplier | 2026 | Art. 11-II, 106-II; above it, unless paid by a traceable method; capped at MAD 50,000 a month per supplier | same |
 
-### Conservative defaults
+### Step 2. Records by regime
 
-- **Regime unknown** — Assume the taxpayer must keep the higher standard (register of receipts and purchases, retain everything 10 years) until the regime is confirmed.
-- **Turnover near a ceiling** — Assume the ceiling is breached and warn that full accounting under the CGNC may become mandatory next year.
-- **Invoice missing the client ICE (B2B)** — Treat the invoice as non-compliant; warn that the buyer may lose deductibility of the charge and VAT.
-- **E-invoicing dates** — Never state a firm go-live date for a category; say the implementing decree is pending and the user must verify with the DGI.
-- **Any figure marked (verify)** — Present as provisional; the reviewer confirms against the current CGI / Loi de Finances 2026 before relying on it.
+| Regime | Records | Source |
+|---|---|---|
+| Company, RNR | Accounting under the law in force, in Art. 145-I; year-end detailed stock inventories, in quantities and values (Art. 145-II); full invoices (III) | Art. 145 |
+| RNS | One or more regular registers of all sums received from sales, works and services, and all sums paid for purchases, staff and other operating costs; invoices to business customers; year-end list of debtors and creditors; stock inventories; depreciation register | Art. 145-VI |
+| CPU individual | Art. 145 does not apply. Purchases must be real and backed by a regular invoice in the taxpayer's name; on inspection DGI can ask for purchase invoices or other evidence | Art. 145-XI, 146 bis, 210 |
+| AE individual | Art. 145 does not apply. Declares turnover collected monthly or quarterly | Art. 145-XI, 82 bis |
+| Anyone subject to VAT | Regular accounting that shows turnover and deductible VAT; split by activity where VAT treatment differs | Art. 118 |
+| Non-resident company with permanent activity | Accounts of all Moroccan operations at the main Moroccan establishment; livre-journal and livre d'inventaire numbered and initialled by the commercial court or, failing that, stamped by the local tax service | Art. 147-I |
+| Non-resident on flat-rate option | Register of receipts and transfers, salary register stamped by the labour inspector, register of fees and commissions | Art. 147-II |
 
-## 2. Records by Regime
+Art. 145 bis, once cited for a CPU register, is repealed. Do not cite it. Art. 145-VI is the tax rule for RNS: registers, not automatically full double entry. A merchant's duties under accounting law 9-88 are separate; see the Not yet confirmed line.
 
-**Records by Regime Table**
+The RNS depreciation register is stamped by the head of the local tax service, has numbered pages, and shows for each asset: nature, use and location, purchase invoice reference, cost, rate, annual charge, and net value after each charge. A depreciation charge is deductible only if entered there (Art. 145-VI-3).
 
-| Regime | Core records required | Double-entry? | Legal frame |
-| --- | --- | --- | --- |
-| **Auto-entrepreneur (AE)** | Register of receipts (registre des recettes), invoices issued | No | Loi 114-13; CGI |
-| **CPU** | Register of receipts **and** purchases + purchase vouchers | No | CGI Art. 145 bis *(verify)* |
-| **RNS** | Full accounting (simplified presentation of statements) | Yes | CGNC; Code de Commerce |
-| **RNR** | Full accounting (complete financial statements) | Yes | CGNC; Code de Commerce |
+Art. 211 names the books DGI expects where they exist: grand livre, livre d'inventaire, detailed inventories, livre-journal, and customer and supplier cards.
 
-### 2.1 Auto-entrepreneur — register of receipts (registre des recettes)
+### Step 3. The invoice (Art. 145-III and VIII)
 
-- Keep a chronological register of receipts (turnover collected, day by day).
-- No expense deduction — the impôt libératoire is on gross collected turnover, so there is no obligation to book purchases for tax.
-- Still issue invoices / receipts to clients and keep copies; the ICE applies (see §3).
-- No livre-journal, grand-livre, balance sheet, or income statement.
+Pre-numbered from a continuous series, or issued by a computer system in a continuous series, showing:
 
-### 2.2 CPU — register of receipts and purchases (registre des recettes et des achats)
+1. Seller's identity.
+2. Tax identification number and business tax (taxe professionnelle) number.
+3. Date of the operation.
+4. Customer's name or company name, address and ICE.
+5. Price, quantity and nature of goods, works or services.
+6. VAT shown separately. For Art. 91, 92 and 94 operations, state the exemption or suspensive regime instead.
+7. Payment references and method.
+8. Any other mention required by law.
+9. The seller's ICE, on invoices and on all tax returns.
 
-- **CPU register content** — Keep a register recording, day by day, both: sums collected from sales, works, and services; and sums paid for purchases, supported by probative vouchers (pièces justificatives probantes).  _(CGI Art. 145 bis (verify article))_
+A till receipt can replace the invoice for sales of goods to private individuals, showing date, seller, description, quantity and price with any VAT. Clinics split fees between clinic and doctors (Art. 145-IV). Tour sellers show the customer's business tax number unless they file the sales statement by customer (Art. 145-V). Non-merchants put their tax numbers on all documents (Art. 145-VII).
 
-- The model of the register and the recording rules are set by regulation (voie réglementaire) — confirm the current official form *(verify)*.
-- CPU taxpayers are exempt from the full accounting of CGI Art. 145, but the register and the duty to justify purchases remain.
-- No double-entry accounting, balance sheet, or CGNC financial statements.
+Purchase side: a purchase invoice must carry the same Art. 145-III and VIII mentions and be regular and probative (Art. 146). Deduction is refused for an invoice from a listed defaulting supplier with no real activity, or from an inactive company (Art. 146, 228 bis). VAT on a purchase without an invoice meeting Art. 146 is not deductible (Art. 106-I-9), and Art. 146 includes the ICE mentions. Businesses need an ICE for exemptions (Art. 164-I). Annual returns attach a sales statement with ICE by customer (Art. 20-I, 82-I).
 
-### 2.3 RNS / RNR — full accounting under the CGNC
+### Step 4. Electronic accounting and invoicing
 
-- **RNS/RNR accounting requirements** — Taxpayers under Résultat Net Simplifié (RNS) or Résultat Net Réel (RNR) must keep a régulière comptabilité under the CGNC (made mandatory by the accounting law, Loi 9-88, dahir 25 Dec 1992) and the Code de Commerce: Livre-journal (general journal) — entries recorded day by day; Grand-livre (general ledger) — postings by account; Livre d'inventaire (inventory book) — balance sheet and income statement of each year transcribed; Supporting auxiliary journals and ledgers as the size of the business needs; A plan comptable conforming to the CGNC; an annual inventory.  _(Loi 9-88; CGNC; Code de Commerce)_
-- **Difference between RNR and RNS** — RNR — complete financial statements and full accounting entries. RNS — same accounting foundation but a simplified presentation of the annual statements (abbreviated balance sheet / income statement) *(verify the exact reduced filing set against the current CGI)*.
+- Art. 145-I: taxpayers must also keep accounts in electronic format under the law and regulations in force. Art. 247 ties this to criteria set by regulation. Those taxpayers hand over a copy of the accounting entries file at audit (Art. 210) and retain documents on electronic support (Art. 211).
+- Art. 145-IX: companies, RNR and RNS taxpayers and those subject to VAT must have a computer invoicing system meeting DGI's technical criteria, with terms set by regulation for each sector. The law gives no date.
+- Art. 145-X: every taxpayer must hold an email address of their choice. This one duty also binds CPU and AE individuals (Art. 145-XI).
 
-An expert-comptable or comptable agréé is typically engaged for RNS/RNR; the agent prepares and organises but does not substitute for the professional.
+### Step 5. Retention and audit
 
-## 3. Invoicing Rules (ICE, Mandatory Mentions, E-Invoicing Roadmap)
+Keep sales invoice copies or till receipts, expense and investment evidence, and accounting documents 10 years. RNS invoice copies run 10 years after the year of issue (Art. 145-VI-1). The scope includes registers, invoices issued and received, and any other document required by law.
 
-- **Invoicing rules section intro** — Section header only; content in subsections 3.1-3.3.
+At audit, documents missing during a verification are requested with 30 days to produce, extendable to the end of the check, and cannot first appear before the commissions (Art. 210). Where no accounts are presented, Art. 229 gives 15 days, then a fine notice and 15 more days, then assessment by default. Serious irregularities let DGI set the base itself: no Art. 145 accounting, no inventories, hidden purchases or sales, serious repeated errors, missing evidence, unrecorded or fictitious operations (Art. 213). With computerised books the check covers data, processing and system documentation (Art. 212).
 
-### 3.1 The ICE — Identifiant Commun de l'Entreprise
+## Boundary and exception table
 
-- **ICE digit structure** — 15-digit identifier (commonly 9 enterprise + 4 establishment + 2 control key) digits ((verify structure))
-- **ICE mandatory scope** — Mandatory for the seller and, in B2B, for the client as well.
-- **Consequence of missing/invalid ICE** — A missing or invalid ICE can cost the buyer the deductibility of the charge (IS/IR) and of the related VAT, and exposes the seller to a fine (reported as MAD 100 per omission, capped per fiscal year) *(verify amounts and article)*.
+| Situation | Result | Source |
+|---|---|---|
+| Over ceiling in one year only | Regime stands | Art. 39, 41, 43-4 |
+| Over ceiling two consecutive years, CPU | RNR from 1 January following | Art. 41-II |
+| RNS or RNR wants CPU or RNS | Turnover under the limit for three consecutive years | Art. 43-2, 43-3 |
+| Two activities, two limits | Each activity within its limit, or total within the main activity's limit | Art. 43-1, 43-5 |
+| RNS sale to a private individual | Art. 145-VI-1 invoice duty is for business customers | Art. 145-VI |
+| CPU or AE and ICE | Art. 145-VIII does not bind them; a business customer's own Art. 146 needs still apply | Art. 145-XI, 146 |
 
-### 3.2 Mandatory mentions on an invoice (facture)
+## Worked cases
 
-- **Mandatory invoice mentions list** — A compliant facture under CGI Art. 145 generally carries *(verify the full official list against the current CGI)*: 1. Seller identity — name / raison sociale, address, IF (identifiant fiscal), taxe professionnelle (TP), RC (registre de commerce) where applicable, and ICE. 2. Client identity — name, address, and ICE in B2B. 3. A sequential invoice number (numérotation chronologique et continue). 4. Date of issue. 5. Description, quantity, unit price of goods/services. 6. Price excl. VAT, VAT rate and amount, price incl. VAT (HT / TVA / TTC), or the exemption / non-applicability mention where relevant. 7. Payment terms and any other regulated mention.  _(CGI Art. 145)_
+**Case 1. Freelance designer, AE.** MAD 150,000 collected, under the MAD 200,000 service limit. Art. 145 does not apply. She declares collected turnover under Art. 82 bis, holds an email address, and keeps her documents 10 years. No CGNC books are required by the CGI.
 
-Auto-entrepreneurs and CPU taxpayers who are outside VAT still issue invoices but mark them accordingly (e.g. "TVA non applicable") *(verify the correct wording and VAT status against ma-auto-entrepreneur / morocco-vat)*.
+**Case 2. Neighbourhood shop, CPU.** Under MAD 2,000,000. Keeps purchase invoices in its name; those are what DGI asks for under Art. 210. No Art. 145 accounts.
 
-### 3.3 E-invoicing roadmap (facturation électronique) — STATUS PENDING
+**Case 3. IT consultant, CPU, over MAD 500,000 in 2024 and 2025.** RNR applies to income from 1 January 2026: Art. 145 accounting, inventories and full invoices. Recommend an expert-comptable.
 
-- **E-invoicing legal basis** — Legal basis — CGI Art. 145-IX *(verify)*.  _(CGI Art. 145-IX)_
-- **E-invoicing model** — Model — a clearance / CTC (Continuous Transaction Controls) system: invoices are pre-validated by the DGI platform before they reach the client *(verify)*.
-- **E-invoicing formats** — Formats — structured XML (UBL 2.1 and CII); a plain PDF is not sufficient *(verify)*.
-- **E-invoicing phasing** — Phasing — expected to start with large enterprises (B2B), then extend to SMEs / TPEs and finally B2C.
-- **Critical status of decree** — As of April 2026 the implementing decree was not yet published — so the exact go-live dates, the category calendar, and the turnover thresholds are NOT confirmed. Do not state a firm date for any taxpayer category. Tell the user the decree is pending and to verify with the DGI *(verify on publication of the décret / Loi de Finances texts)*.
+**Case 4. Audit fines.** A company has 12 invoices without a correct ICE and did not keep records for 2 years.
 
-### 4.1 Document retention — 10 years
+```oa-check
+name: ICE omissions and two years without retention
+inputs:
+  omissions: 12
+  ice_fine: 100
+  years: 2
+  retention_fine: 50000
+steps:
+  - ice: omissions * ice_fine
+  - retention: years * retention_fine
+  - total: ice + retention
+expected:
+  total: 101200.00
+```
 
-- **Retention obligation** — Taxpayers subject to IS, IR, or TVA must keep all accounting documents and supporting documents used to determine the tax base for 10 years.  _(CGI Art. 211 (verify))_
-- **Scope of retained documents** — This covers the registers (AE, CPU), the CGNC books (RNS/RNR), invoices issued and received, purchase vouchers, bank statements, and contracts.
-- **Retention penalty** — Reported penalty for failure to retain: a fixed fine of MAD 50,000 per fiscal year *(verify amount and article)*.
-- **Audit-ready form** — Keep records in a form that can be produced on tax audit (contrôle fiscal); for e-invoiced documents, retain the structured electronic original *(verify e-archiving rules once the decree publishes)*.
+**Case 5. Decision: take MAD 25,000 in cash or by transfer?** A company sells to a business for MAD 25,000. Cash means an Art. 193 fine on the seller of MAD 1,500. Bank transfer means none. Transfer wins by MAD 1,500.
 
-### 4.2 SIMPL teleservices (tax.gov.ma)
+```oa-check
+name: Cash against transfer on MAD 25,000
+inputs:
+  amount: 25000
+  rate: 0.06
+steps:
+  - cash_fine: amount * rate
+  - transfer_fine: 0
+  - saving: cash_fine - transfer_fine
+expected:
+  saving: 1500.00
+```
 
-SIMPL is the DGI's online portal for télédéclaration and télépaiement: SIMPL-IR (income tax), SIMPL-TVA (VAT), SIMPL-IS (corporate tax). E-filing and e-payment have been mandatory since 1 January 2017 *(verify)*. The taxpayer adheres (adhésion) to obtain access codes; the portal lets users import accounting data to generate and file returns. Bookkeeping feeds SIMPL: the registers/accounts produce the figures that are télédéclarés. Auto-entrepreneurs file via the dedicated AE channel (see ma-auto-entrepreneur), not necessarily the general SIMPL flow *(verify)*.
+## When to refuse or refer
 
-## 5. Worked Examples
+Refer to a licensed Moroccan expert-comptable or comptable agree: a regime change, the RNS filing set, whether a merchant must keep 9-88 books, electronic archiving, and any VAT classification on an invoice (morocco-vat).
 
-### Example 1 — Freelance graphic designer, auto-entrepreneur
+- Never state a go-live date or threshold for e-invoicing unless a published text gives it.
+- Never tell a company or RNR taxpayer to skip Art. 145 accounting.
+- Never tell an AE or CPU individual that Art. 145 binds them.
+- Never confirm a business invoice as compliant if an Art. 145-III or VIII mention is missing.
+- Never advise retention under 10 years.
+- Never cite Art. 145 bis.
+- Never compute the tax here.
+- Never replace a licensed professional.
 
-Activity: design services; turnover collected ≈ MAD 150,000/year (below the services ceiling).
-Records: a register of receipts only (date, client, amount collected). Issues invoices marked "TVA non applicable" with her ICE and IF; keeps copies. No purchase register required for tax, no CGNC accounts.
-Retention: keep the register and invoice copies 10 years.
-Agent output: confirms AE register suffices; flags that if turnover exceeds the ceiling for two consecutive years she moves up a regime (verify ceiling in ma-auto-entrepreneur).
+## Filing and payment
 
-### Example 2 — Small retailer under CPU
+Bookkeeping feeds the returns. All businesses must file (Art. 155) and pay (Art. 169) electronically from 1 January 2017, under regulatory terms. AE turnover goes to the designated body, monthly before the end of the following month, or quarterly before the end of the month after the quarter (Art. 82 bis). CPU files an annual return before 1 April, electronically or on paper (Art. 82 quater). Requests and certificates go through electronic teleservices (Art. 169 bis).
 
-Activity: neighbourhood shop (commercial); under the CPU ceiling.
-Records: a register of receipts and purchases recording sales collected and purchases paid day by day, with purchase vouchers retained (CGI Art. 145 bis). Exempt from CGNC full accounting.
-Issues invoices/tickets with ICE; in B2B sales must also carry the client's ICE.
-Retention: register + vouchers + invoices 10 years.
-Agent output: confirms register + purchase justification; warns that missing purchase vouchers undermine the regime and that breaching the ceiling two years running triggers RNS/RNR full accounts *(verify thresholds)*.
+## Completion checklist
 
-### Example 3 — Consultant who exceeded the ceiling → RNR
+- Regime and two-year turnover test confirmed.
+- Records match the Step 2 row.
+- Sample invoices carry every Step 3 mention.
+- Email address held.
+- 10-year retention in place, electronic where required.
+- Items on the Not yet confirmed line flagged.
 
-Activity: IT consultant; turnover exceeded the service ceiling for two consecutive years, now under RNR.
-Records: must now keep full accounting under the CGNC — livre-journal, grand-livre, livre d'inventaire, a CGNC-compliant plan comptable, annual inventory, and complete financial statements; compliant invoices with ICE.
-Files via SIMPL-IR (and SIMPL-TVA if VAT-registered).
-Retention: all books and supporting documents 10 years.
-Agent output: flags the upgrade trigger, recommends engaging an expert-comptable, and prepares the books for the professional to review and sign off.
+## Sources
 
-## 6. Tier 2 — Reviewer Judgement Required
+| Source | URL | Read on |
+|---|---|---|
+| DGI, Code General des Impots 2026 (French), Art. 11, 20, 30, 39, 41, 42 bis, 42 ter, 43, 82 bis, 82 quater, 91, 92, 94, 106, 118, 145, 146, 146 bis, 147, 155, 164, 169, 169 bis, 185 bis, 191, 191 bis, 192, 193, 198 ter, 210 to 213, 228 bis, 229, 231, 247; these extracts read from a local text copy of the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
+| DGI home page; read for any e-invoicing notice, none shown | https://www.tax.gov.ma/wps/portal/DGI/Accueil | 2026-11-01 |
+| ICE portal; page read, gives no digit count or legal basis | https://www.ice.gov.ma/ICE/ | 2026-11-01 |
 
-Escalate to the human expert-comptable / comptable agréé (do not auto-decide):
+Not yet confirmed: accounting law 9-88 and the Code de Commerce (official text could not be opened), so the old skill's rules that RNS must keep full CGNC accounts, the three commercial books, the plan comptable and the annual inventory under that law are out of the steps; the RNS reduced statements; an AE register of receipts and a CPU register of receipts and purchases and any official model (the CGI has neither, and Art. 145 bis is repealed; Loi 114-13 and regulations not read); ICE length and 9+4+2 structure; any annual cap on the ICE fine (Art. 198 ter states none); whether a missing ICE alone costs the buyer the income tax deduction of the charge (the VAT loss is in Step 3); whether the registre de commerce number goes on invoices (Art. 145-III does not name it); whether AE and CPU individuals must issue invoices and keep copies (Art. 145 does not bind them); bank statements and contracts in the retention scope (Art. 211 names neither); the wording "TVA non applicable" for AE and CPU invoices; the e-invoicing clearance model, UBL 2.1 and CII formats, phasing from large firms to SMEs and B2C, the free tool at fatourati.gov.ma, e-archiving rules, and whether the implementing decree is published (press only: under review in April 2026, no decree found on 1 November 2026); what Finance Law 50-25 changed in Art. 145-I and X; the regulatory criteria for electronic accounting; SIMPL-IR, SIMPL-TVA, SIMPL-IS portal steps, adhesion and data import; the AE filing channel; the body named under Art. 82 bis.
 
-- Which regime applies and whether a ceiling was breached for two consecutive years — the trigger that forces CGNC full accounting.
-- The exact RNS reduced filing set vs full RNR statements.
-- The official CPU register model and acceptable purchase vouchers.
-- The exact, current ICE structure, invoice-mention list, and penalty amounts — confirm against the live CGI / Loi de Finances 2026.
-- E-invoicing applicability and dates — pending the implementing decree; never commit a taxpayer to a go-live date without DGI confirmation.
-- E-archiving of electronic invoices and the audit-readiness of digital records.
-- Any VAT classification on invoices — defer to morocco-vat.
-
-### Legal & source references
-
-- CGI (Code Général des Impôts) — Art. 145 (tenue de comptabilité / facture mentions), 145 bis (register for forfait/CPU purchases), 145-IX (e-invoicing basis), 211 (retention) — all article numbers to verify against the current consolidated CGI and Loi de Finances 2026.
-- CGNC (Code Général de Normalisation Comptable) — accounting law Loi 9-88, dahir 25 Dec 1992 (livre-journal, grand-livre, livre d'inventaire).
-- Code de Commerce — commercial books and registre de commerce.
-- Loi 114-13 — auto-entrepreneur status (see ma-auto-entrepreneur).
-- DGI — tax.gov.ma; SIMPL teleservices; e-invoicing platform (fatourati.gov.ma) *(verify)*.
-- Secondary commentary (PwC Morocco, Upsilon, Baker Tilly, Deloitte LF 2026) used for cross-checking — not primary authority.
-
-### Short test suite
-
-1. "I'm an auto-entrepreneur — what do I need to keep?" → register of receipts + invoice copies; no CGNC accounts; retain 10 years.
-2. "CPU shopkeeper — do I need full accounting?" → no; register of receipts and purchases + vouchers (Art. 145 bis); exempt from CGNC full accounts.
-3. "When am I forced into full accounting?" → broadly, when the CPU/RNS ceiling is exceeded two consecutive years, or on option/company form → CGNC books (verify thresholds).
-4. "What must be on my invoice?" → CGI Art. 145 mentions incl. ICE (seller + B2B client), sequential number, date, HT/TVA/TTC.
-5. "Is e-invoicing mandatory now?" → moving to mandatory CTC e-invoicing under CGI Art. 145-IX, but the implementing decree is pending (April 2026) — dates and thresholds not confirmed; verify with DGI.
-6. "How long do I keep records?" → 10 years (CGI Art. 211).
-7. "What is SIMPL?" → DGI teleservices (SIMPL-IR/TVA/IS) for télédéclaration and télépaiement; e-filing mandatory since 2017.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - Do NOT state a firm e-invoicing go-live date or category threshold — the implementing decree was unpublished as of April 2026; say it is pending and direct the user to the DGI. - Do NOT tell an RNS/RNR taxpayer they may skip CGNC double-entry accounting. - Do NOT tell an auto-entrepreneur they must keep CGNC books, a balance sheet, or a purchase ledger for tax — the AE keeps a register of receipts only. - Do NOT confirm an invoice as compliant if the ICE (seller, or B2B client) is missing or invalid. - Do NOT advise retention shorter than 10 years. - Do NOT quote ICE structure, invoice-mention lists, penalty amounts, or thresholds as settled — present items marked (verify) as provisional pending reviewer confirmation against the current CGI / Loi de Finances 2026. - Do NOT compute the tax itself here — defer to ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, and morocco-vat. - Do NOT replace a licensed Moroccan expert-comptable / comptable agréé.
-
-## Disclaimer
-
-This skill is research-verified from public sources (DGI / tax.gov.ma, the CGNC, the CGI, the Code de Commerce, the Loi de Finances 2026, and reputable professional commentary) and is pending sign-off by a licensed Moroccan expert-comptable. It is general information, not accounting or tax advice, and does not create a professional engagement. Figures, article numbers, thresholds, penalty amounts, and especially the e-invoicing roadmap change with each Loi de Finances and implementing decree — every item marked (verify) must be confirmed against current DGI texts before reliance. Always have a licensed Moroccan expert-comptable or the DGI review before filing or relying on this output. Part of openaccountants.com — open-source tax skills for the self-employed.
+Removed and why: Secondary commentary list (not a permitted citation). Contributor, quality tier and last research rows (metadata). Conservative default that a near ceiling counts as breached (Art. 41 tests two actual years). Everything else is carried above or on the Not yet confirmed line.
 
 <!-- openaccountants-cta-block -->
 

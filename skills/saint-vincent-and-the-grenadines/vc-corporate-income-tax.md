@@ -2,13 +2,13 @@
 name: vc-corporate-income-tax
 description: >
   Saint Vincent and the Grenadines corporate income tax reference checked for 2026. Covers the standard company rate, financial-year filing deadline and the distinction between estimated instalments and the final balance. Uses the enacted Finance Act of 2023, current Inland Revenue guidance and the Income Tax Act’s instalment provisions. Includes a worked chargeable-income calculation and a calendar-year payment example. Use after residence, taxable scope and chargeable income have been determined. Does not establish capital allowances, loss relief, incentives, treaty treatment or a special-sector rate. The remaining amendment audit and independent accountant review are outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: VC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -50,8 +50,6 @@ For a closing review, reconcile the submitted computation to the financial state
 ## Open work
 
 The historical consolidated Income Tax Act and its later amendments, including the Tax Administration Act, need a complete reconciliation before merge. Residence, source, special sectors, incentives, deductions, loss relief and cross-border transactions remain outside this focused draft. Independent accountant review has not occurred.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

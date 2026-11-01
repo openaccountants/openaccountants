@@ -1,0 +1,57 @@
+{
+  "direct_normative_and_council_attempts": [
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=145681&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=151864&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=149718&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=96024&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=155986&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://boscana.sat.md/wp-content/uploads/sites/14/2026/02/Cotele-impozitului-funciar-si-pe-bunurile-imobiliare-2026.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "final_url": "https://boscana.sat.md/wp-content/uploads/sites/14/2026/02/Cotele-impozitului-funciar-si-pe-bunurile-imobiliare-2026.pdf",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/moldova-pack-2026-10-30/independent-property-wealth-private/boscana-rate-2026.pdf",
+      "sha256": "752ab7f12d7ecb8cf037622e953558ef3a3e7d821174654e2494d463510dca3f",
+      "bytes": 185059
+    }
+  ],
+  "normal_browser_attempt": {
+    "url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "result": "Automatic security-verification page, subsequent AX snapshot timed out. No CAPTCHA interaction or bypass."
+  },
+  "independent_web_procedure_read": {
+    "urls": [
+      "https://mpay.gov.md/Order/Search/SFS03",
+      "https://mpay.gov.md/Order/Search/SFS06",
+      "https://www.egov.md/ro/content/serviciul-declaratia-electronica"
+    ],
+    "result": "Public fields/actions and electronic-declaration description agree with retained captures; no taxpayer queried. CTIF web attempt timed out; retained complete official FAQ read.",
+    "full_response_private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/moldova-pack-2026-10-30/independent-property-wealth-private/procedural-web-response.json",
+    "sha256": "1d9fa762b313f741c7471e778742ba5051ba1bceed131b3e83d7a98a5b41a4fe"
+  },
+  "law_read_scope": "Complete retained dated official operative text/forms and neighbours; direct/web source attempts failed, so no independently fresh successful law fetch is claimed.",
+  "publication_clearance": false
+}

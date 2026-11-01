@@ -1,0 +1,15 @@
+{
+  "status": "WRITER ARITHMETIC ONLY; independent review pending",
+  "cases": [
+    {
+      "name": "official export",
+      "formula": "input3500-output2000=excess1500; unpaid2200-output2000=200; paid1300; min1500,1300,1200=1200; remaining300(100paid+200unpaid)",
+      "expected_refund": 1200
+    },
+    {
+      "name": "1016paid-excess/offset",
+      "formula": "25000-10000=15000; output10000*70%=7000; refund7000; arrears1500; bank5500; carry8000",
+      "expected_refund": 7000
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 ---
 name: ro-payroll-social
 description: "Use this skill to run Romanian payroll for tax year 2026: registering employees in REGES ONLINE (the successor to REVISAL) the day before they start, the monthly gross-to-net (employee pension contribution CAS 25%, health contribution CASS 10%, income tax 10% after the personal deduction), the minimum gross wage (RON 4,050 to 30 June 2026, RON 4,325 from 1 July 2026), the tax-free RON 300 then RON 200 a month for full-time minimum-wage staff under OUG 89/2025, the employer work insurance contribution (CAM 2.25%), meal vouchers and other non-taxable benefits, the minimum CAS and CASS on part-time contracts, D112 filing and payment by the 25th, quarterly filers, annual duties and penalties. Trigger phrases: salarizare, stat de plata, D112, CAM, salariul minim 2026, tichete de masa, REGES, Romanian payroll, employer cost Romania. Out of scope: self-employed CAS and CASS (ro-cas-cass), the employee's own income tax questions and other income (ro-employee-income-tax, ro-income-tax), residence and posted workers (ro-cross-border)."
-version: 0.1
+version: 0.2
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -255,8 +255,6 @@ Not yet confirmed:
 - ANAF guidance confirming that the RON 300 or 200 relief counts in gross pay when choosing the personal deduction band (Example 2 follows the text of OUG 89/2025 and norm 14(1)).
 - Fines for late or missing REGES entries (HG 295/2025).
 - Any emergency ordinance after Legea 170/2026 that changes these rules for the rest of 2026.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

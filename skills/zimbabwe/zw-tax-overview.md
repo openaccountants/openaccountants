@@ -1,30 +1,39 @@
 ---
 name: zw-tax-overview
-description: "Source-cited draft: tax overview for Zimbabwe (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Overview of the Zimbabwe tax system for tax year 2026: tax authority ZIMRA, calendar tax year, USD and ZWG, income tax, company tax, the 15.5% VAT, AIDS levy, monthly and quarterly dates, and new 2026 taxes. Use as the starting point for any Zimbabwe tax question.
+version: 1.0
 jurisdiction: ZW
-tax_year: 2025
-last_updated: 2026-07-13
+category: orchestrator
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Zimbabwe Tax Overview
+# Zimbabwe tax overview
 
-## Zimbabwe tax system at a glance
+- **Authority:** ZIMRA, https://www.zimra.co.zw/. Filing is through TaRMS at mytaxselfservice.zimra.co.zw.
+- **Tax year:** calendar year, 1 January to 31 December (Public Notice 58 of 2026).
+- **Currencies:** USD and ZWG tables exist. Over 50% foreign currency income uses the 50:50 basis for provisional tax.
+- **Basis:** Zimbabwe source or deemed source; see [income tax](zw-income-tax.md).
+- **Personal top rate:** see [income tax](zw-income-tax.md).
+- **Company rate:** see [corporate income tax](zw-corporate-income-tax.md).
+- **VAT:** see [VAT](zimbabwe-vat.md). The rate rose to 15.5% on 1 January 2026.
+- **Payroll:** see [payroll](zw-payroll-social.md).
+- **Monthly:** returns by the 5th and payment by the 10th for PAYE, withholding taxes, royalties and similar; VAT by the 10th and 15th.
+- **New in 2026:** presumptive rental income tax, digital services withholding tax, gaming operators tax, top-up tax, special capital gains tax.
 
-- **Tax system overview** — Zimbabwe operates a source-based tax system administered by the Zimbabwe Revenue Authority (ZIMRA). Tax is assessed in the currency of earning under a dual-currency regime (USD and Zimbabwe Gold, ZiG), and most figures below have separate USD and ZiG schedules.
-- **Tax year (year of assessment)** — Calendar year, 1 January to 31 December  _(Income Tax Act (Chapter 23:06))_
-- **Currencies of assessment** — USD and Zimbabwe Gold (ZiG); tax is assessed and paid in the currency in which income is earned ((approx — confirm dual-currency mechanics))  _(Finance Act, 2025)_
-- **Tax authority** — Zimbabwe Revenue Authority (ZIMRA)  _(Revenue Authority Act (Chapter 23:11), https://www.zimra.co.zw/)_
-- **Basis of taxation** — Source-based: income from a source within (or deemed within) Zimbabwe is taxable, with limited deemed-source rules for certain foreign interest/dividends  _(Income Tax Act (Chapter 23:06))_
-- **Top marginal personal income tax rate** — 40 percent (before 3% AIDS levy on tax)  _(Finance Act, 2025)_
-- **Standard corporate income tax rate** — 25 percent (before 3% AIDS levy on tax)  _(Finance Act, 2025, https://www.zimra.co.zw/domestic-taxes/corporate/tax-rates)_
-- **AIDS levy** — 3 percent (of the income tax chargeable (applied to both individuals and companies))  _(Finance Act (Chapter 23:04))_
-- **Does VAT exist** — Yes — Value Added Tax applies, standard rate 15% in 2025 (rising to 15.5% from 1 January 2026) ((approx — 15% in 2025 per VAT Act; confirm 2025 vs 2026 rate))  _(Value Added Tax Act (Chapter 23:12))_
-- **PAYE remittance deadline** — By the 10th of the month following the month of deduction  _(Income Tax Act (Chapter 23:06))_
-- **Annual corporate income tax return deadline** — Return (ITF12C) due 30 April following the tax year; QPDs paid quarterly during the year ((approx — confirm filing date for the year of assessment))  _(Income Tax Act (Chapter 23:06))_
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Finance Act No. 7 of 2025 (Veritas copy of the Government Printer text), whole Act | https://www.veritaszim.net/sites/veritas_d/files/Finance%20Act%2C%20Act%20No.%207%20of%202025.pdf | 2026-11-01 |
+| ZIMRA Public Notices 5, 7, 11, 49, 50, 58, 61 of 2026 (list page; each PDF opened) | https://www.zimra.co.zw/public-notices | 2026-11-01 |
+
+Not yet confirmed: details listed in each linked skill.
 
 <!-- openaccountants-cta-block -->
 

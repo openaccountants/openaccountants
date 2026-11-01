@@ -1,0 +1,1076 @@
+{
+  "slug": "sj-svalbard-coal-export-duty",
+  "guide_sha256": "2a548f1eb056eef5d04e1a18e1b3f968c2a85ce124ca16ac0e922db927d2df48",
+  "legal_rows": [
+    {
+      "id": "R001",
+      "section": "Who this applies to",
+      "rule": "Only duties actually imposed activate Act machinery",
+      "act_article": "Act §1",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 92,
+      "original_quote": "Forsåvidt der er lagt avgift til statskassen på kull, jordoljer og andre mineraler og bergarter som utføres fra Svalbard, kommer de i nærværende lov og de i henhold til denne gitte bestemmelser til anvendelse."
+    },
+    {
+      "id": "R002",
+      "section": "The base",
+      "rule": "Exporter liability and seasonal achieved average FOB",
+      "act_article": "Act §2 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 96,
+      "original_quote": "Avgiften erlegges av utskiberen efter verdien av kull, jordoljer og andre mineraler og bergarter, som han i skibningssesongen har utført. Verdien fastsettes ved utløpet av skibningssesongen på grunnlag av den opnådde gjennemsnittlige fob-pris pr. tonn."
+    },
+    {
+      "id": "R003",
+      "section": "The base",
+      "rule": "CIF freight/insurance; actual charter costs; discretionary own-ship or unknown freight",
+      "act_article": "Act §2 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 97,
+      "original_quote": "Ved cif-salg beregnes fob-prisen ved fradrag av den betalte frakt og assuranse. Benyttes ved cif-salg leiede eller tidsbefraktede skib, fastsettes gjennemsnittsfrakten pr. tonn ved utløpet av skibningssesongen på grunnlag av de virkelig hatte utgifter. Kan utgiften ikke bestemmes, eller benyttes egne skib, fastsettes gjennemsnittsfrakten skjønnsmessig under hensyntagen til de frakter, som ellers er betalt, og forholdene for øvrig."
+    },
+    {
+      "id": "R004",
+      "section": "The base",
+      "rule": "Actual own/hired/time-chartered ship bunker exemption",
+      "act_article": "Act §2 third paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 98,
+      "original_quote": "Fritatt for avgift er bunkerkull, som utskiberen bruker i egne, leiede eller tidsbefraktede skib."
+    },
+    {
+      "id": "R005",
+      "section": "The base",
+      "rule": "Shipment security can be required; no invented percentage",
+      "act_article": "Act §2 fourth paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 99,
+      "original_quote": "For avgiften kan utskiberen ved utskibningen pålegges å stille sikkerhet svarende til en prosent av ladningens antagelige verdi. De nærmere regler herom gis av Kongen."
+    },
+    {
+      "id": "R006",
+      "section": "Deadlines and filing",
+      "rule": "Book contents, evidence,31December, Norwegian representative",
+      "act_article": "Act §3 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 103,
+      "original_quote": "Enhver utskiber av kull, jordoljer og andre mineraler eller bergarter fra Svalbard skal for hver skibningssesong føre en bok inneholdende opgave over det utførte gods med angivelse av art, mengde og produsent, de opnådde priser og de med skibningen forbundne utgifter i sådan form, som vedkommende departement foreskriver. Boken innsendes til skattekontoret innen 31 desember, ledsaget av de bevisligheter, departementet foreskriver. Ved innsendelsen skal utskiberen i tilfelle opgi en fullmektig i Norge."
+    },
+    {
+      "id": "R007",
+      "section": "Who this applies to",
+      "rule": "Producer corresponding joint liability, separate accounts and31December",
+      "act_article": "Act §3 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 104,
+      "original_quote": "Ved utførsel av kull, jordoljer og andre mineraler og bergarter, som er produsert av en annen enn utskiberen, er produsenten medansvarlig for betalingen av den tilsvarende del av avgiften. Produsenten har å føre nøiaktig regnskap over de til utskiberen leverte varer i den form, som vedkommende departement foreskriver. Avskrift av regnskapet innsendes til skattekontoret innen 31 desember."
+    },
+    {
+      "id": "R008",
+      "section": "The base",
+      "rule": "Tax office assesses and can require further information",
+      "act_article": "Act §4 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 109,
+      "original_quote": "Skattekontoret beregner avgiften og i tilfelle de beløp for hvilke produsentene er medansvarlige på grunnlag av de meddelte opgaver. Det kan også forlange ytterligere oplysninger, som måtte være nødvendige for beregningen."
+    },
+    {
+      "id": "R009",
+      "section": "Penalties and interest",
+      "rule": "Record/information failure can bar appeal; sufficient-excuse exception",
+      "act_article": "Act §4 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 110,
+      "original_quote": "Undlater den avgiftspliktige å føre eller til bestemt tid å innsende boken med bilag til skattekontoret, eller undlater han å efterkomme en opfordring fra skattemyndighetene for Svalbard om å meddele oplysninger, taper han retten til å inngi klage, med mindre han godtgjør omstendigheter, som finnes fyldestgjørende til undskyldning for forsømmelsen. Det samme gjelder når produsenten undlater å føre eller innsende pliktig regnskap eller å gi krevede oplysninger."
+    },
+    {
+      "id": "R010",
+      "section": "Deadlines and filing",
+      "rule": "Registered calculation letter or statutory office-availability event",
+      "act_article": "Act §5 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 115,
+      "original_quote": "Når avgiften er beregnet skal skattekontoret sende beregningen i rekommandert brev til den opgitte adresse i Norge for den avgiftspliktige selv (i tilfelle både utskiber og produsent) eller hans fullmektig. Har en avgiftspliktig, som ikke er hjemmehørende i Norge, undlatt å opgi fullmektig, utlegges brevet til avhentning på skattekontoret."
+    },
+    {
+      "id": "R011",
+      "section": "Deadlines and filing",
+      "rule": "Appeal received within6weeks; extension by application",
+      "act_article": "Act §5 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 116,
+      "original_quote": "Klage over beregningen må være innkommet til skattekontoret innen 6 uker fra den dag, da beregningen i overensstemmelse med forrige ledd blev sendt den avgiftspliktige eller hans fullmektig eller utlagt på skattekontoret. Dog kan skattemyndighetene på andragende innrømme forlengelse av klagefristen."
+    },
+    {
+      "id": "R012",
+      "section": "Deadlines and filing",
+      "rule": "Tax appeals board and further statement",
+      "act_article": "Act §5 third paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 117,
+      "original_quote": "Klager, som ikke helt imøtekommes av skattekontoret, skal det oversende til skatteklagenemnda for Svalbard til avgjørelse. Før avgjørelse treffes skal der gis den avgiftspliktige anledning til fornyet uttalelse."
+    },
+    {
+      "id": "R013",
+      "section": "Deadlines and filing",
+      "rule": "Payment within6weeks",
+      "act_article": "Act §6 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 122,
+      "original_quote": "Avgiften innbetales til skattekontoret innen 6 uker fra den dag, da beregningen blev sendt den avgiftspliktige eller hans fullmektig eller utlagt på skattekontoret."
+    },
+    {
+      "id": "R014",
+      "section": "Penalties and interest",
+      "rule": "Overdue amount at leastNOK100; annually set rate",
+      "act_article": "Act §6 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 123,
+      "original_quote": "Av avgiftsbeløp på 100 kroner eller derover, som ikke betales i rett tid, erlegges renter efter en prosentsats, som for hvert år fastsettes av vedkommende departement."
+    },
+    {
+      "id": "R015",
+      "section": "Deadlines and filing",
+      "rule": "Appeal does not suspend payment; excess refunded",
+      "act_article": "Act §6 third paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 124,
+      "original_quote": "Avgiften skal innbetales med det beregnede beløp, selv om klage er inngitt. Hvis avgiften ved endelig beslutning blir nedsatt, erholdes det for meget erlagte tilbakebetalt."
+    },
+    {
+      "id": "R016",
+      "section": "Penalties and interest",
+      "rule": "Supplementary assessment and30April interest start",
+      "act_article": "Act §7 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 129,
+      "original_quote": "Har en utskiber helt eller for en vesentlig del undgått avgiftsberegning, kan efterberegning foretas, når vedkommende departement begjærer det. Reglene i §§ 5 og 6 får tilsvarende anvendelse. Renter svares fra 30 april det år, da avgiften skulde ha vært betalt."
+    },
+    {
+      "id": "R017",
+      "section": "Penalties and interest",
+      "rule": "5year/10year request clocks and2year death/dissolution condition",
+      "act_article": "Act §7 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 130,
+      "original_quote": "Rett til sådan efterberegning tapes, hvis begjæring derom ikke fremkommer innen 5 år, regnet fra utgangen av det år, hvori beregningen skulde ha vært foretatt. Foreligger straffbart forhold fra den skattepliktiges side, er fristen 10 år. Er disse frister ikke utløpet, kan efterberegning også begjæres efter den avgiftspliktiges død eller selskapets opløsning, dog ikke hvis der er hengått mer enn 2 år derefter."
+    },
+    {
+      "id": "R018",
+      "section": "Penalties and interest",
+      "rule": "Enforceability",
+      "act_article": "Act §8",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 134,
+      "original_quote": "Avgiften er tvangsgrunnlag for utlegg."
+    },
+    {
+      "id": "R019",
+      "section": "Penalties and interest",
+      "rule": "Fines for book/account/information failures",
+      "act_article": "Act §9",
+      "read_date": "2026-10-31",
+      "source": "coal-law",
+      "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+      "reader_line": 139,
+      "original_quote": "Undlatelse av å føre eller til bestemt tid å innsende den i § 3, første ledd omhandlede bok med bilag eller det i § 3, annet ledd omhandlede regnskap samt undlatelse av på forlangende å meddele nærmere oplysninger til skattemyndighetene straffes med bøter."
+    },
+    {
+      "id": "R020",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 67,
+      "original_quote": "1,0 pst. av verdien for dei første 100 000 tonna"
+    },
+    {
+      "id": "R021",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 68,
+      "original_quote": "0,9 pst. av verdien for dei neste 200 000 tonna"
+    },
+    {
+      "id": "R022",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 69,
+      "original_quote": "0,8 pst. av verdien for dei neste 300 000 tonna"
+    },
+    {
+      "id": "R023",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 70,
+      "original_quote": "0,7 pst. av verdien for dei neste 400 000 tonna"
+    },
+    {
+      "id": "R024",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 71,
+      "original_quote": "0,6 pst. av verdien for dei neste 500 000 tonna"
+    },
+    {
+      "id": "R025",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 72,
+      "original_quote": "0,5 pst. av verdien for dei neste 600 000 tonna"
+    },
+    {
+      "id": "R026",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 73,
+      "original_quote": "0,4 pst. av verdien for dei neste 700 000 tonna"
+    },
+    {
+      "id": "R027",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 74,
+      "original_quote": "0,3 pst. av verdien for dei neste 800 000 tonna"
+    },
+    {
+      "id": "R028",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 75,
+      "original_quote": "0,2 pst. av verdien for dei neste 900 000 tonna"
+    },
+    {
+      "id": "R029",
+      "section": "Rates, bands and thresholds",
+      "rule": "Enacted rate and successive band width",
+      "act_article": "2026 decision, complete charging schedule",
+      "read_date": "2026-10-31",
+      "source": "coal-2026",
+      "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+      "reader_line": 76,
+      "original_quote": "0,1 pst. av verdien for dei neste 1 000 000 tonna"
+    }
+  ],
+  "derived_controls": [
+    {
+      "id": "EX1",
+      "section": "Two worked examples that recompute",
+      "kind": "fictional assumptions and derived control; not an enacted figure",
+      "exact_block": "name: Svalbard coal export duty first band 2026\ninputs:\n  tonnes: 50000\n  fob_per_tonne: 1000\nsteps:\n  band_value: tonnes*fob_per_tonne\n  duty: band_value*0.01\nexpected:\n  band_value: 50000000\n  duty: 500000",
+      "legal_premises": "R001–R029"
+    },
+    {
+      "id": "EX2",
+      "section": "Two worked examples that recompute",
+      "kind": "fictional assumptions and derived control; not an enacted figure",
+      "exact_block": "name: Svalbard coal CIF bunker and second-band decision 2026\ninputs:\n  outward_tonnes: 155000\n  qualifying_bunker_tonnes: 5000\n  taxable_sales_cif: 165000000\n  paid_freight: 15000000\n  paid_insurance: 3000000\nsteps:\n  taxable_tonnes: outward_tonnes-qualifying_bunker_tonnes\n  fob_value: taxable_sales_cif-paid_freight-paid_insurance\n  average_fob: fob_value/taxable_tonnes\n  first_band: min(taxable_tonnes,100000)*average_fob*0.01\n  second_band: max(0,min(taxable_tonnes,300000)-100000)*average_fob*0.009\n  duty: first_band+second_band\n  incorrect_flat_duty: fob_value*0.01\n  overstatement: incorrect_flat_duty-duty\nexpected:\n  taxable_tonnes: 150000\n  fob_value: 147000000\n  average_fob: 980\n  first_band: 980000\n  second_band: 441000\n  duty: 1421000\n  overstatement: 49000",
+      "legal_premises": "R001–R029"
+    }
+  ],
+  "old_topic_status": "New tax job; no existing Guide rewritten or retired. All six prior Guides remain byte-exact at this stage.",
+  "new_units": [
+    {
+      "line": 1,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:1",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 2,
+      "sha256": "ae2ca96c96c8f6fe8ae81e81f67dbfe36380ef04bc28cde23e36e333a5ed5cdb",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:2",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 3,
+      "sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:3",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 4,
+      "sha256": "fc214667b29eb8b71b488467be6145bd8751a8d2ca1e3ac1df8736043f16e8a7",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:4",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 5,
+      "sha256": "c8dae5716b1dfc6fb57fc5d2d5a3d47991a6d5b29a498c636aec0f6e8c130982",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:5",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 6,
+      "sha256": "184fdbf91392f20fd51c9639bd7903e5bc2a5627ba5b6c50ab9241b49b6406f2",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:6",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 7,
+      "sha256": "fa16c3b66228b4e041add56fc250763bb6ef8f2135399fdb9cac1f17eef399da",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:7",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 8,
+      "sha256": "23d68e3ef6276d11f6f66e174be3c420b8280e6b2f1b8d0e25f5305e7bd9fd9f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:8",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 9,
+      "sha256": "3d1f848fd0aff9a8dacf17038345bbf2beb510a4cd183855b1eda7c7ef715be7",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:9",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 10,
+      "sha256": "e50b1999713e6e9e01ac00325b1aef8899193934f43597e69a830cf77b4aa404",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:10",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 11,
+      "sha256": "883e773910ef9a542b483d93f540847daa5571b9e4b251950323876461dee949",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:11",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 12,
+      "sha256": "195b0c6f3005bf2eaef64270c64ebf0fd022317615edafb2e220a42bf806c0ef",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:12",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 13,
+      "sha256": "9db02e78675d3ceee40d50ab95f66546bf70f00b038647da09d68529d5490b54",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:13",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 14,
+      "sha256": "43a7e6bebb4252c244d8819b6d2e7e808a8306f1aef83b4641307f602fe3a501",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:14",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 15,
+      "sha256": "fadd6dd9f04f5f5f5b0ca6008710060b1fb199cc01fe7a46ee2adf6bd8e72212",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:15",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 16,
+      "sha256": "7a11598bcbd189adaf124290da6fd3c7a0ef38c3a708a3a5905fda9090cbe976",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:16",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 17,
+      "sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:17",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 18,
+      "sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:18",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 19,
+      "sha256": "fe2498d3fb99facac65ee71a0eb6b1f147a1745ccd6fe92bb93ed3b77930da22",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:19",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 20,
+      "sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:20",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 21,
+      "sha256": "4b95fa1da6be88eeabed851b54d26a5ed11d294a82cfeeaa0050a420d1b670f3",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:21",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 22,
+      "sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:22",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 23,
+      "sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:23",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 24,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:24",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 26,
+      "sha256": "c623a25e0875b594083091bace05b0ca665882b93e51c18aa29126119d8e7c62",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:26",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 28,
+      "sha256": "e09fe14e2946e4d4e09152564ff8d0fef85299e8e14c6ec37aca206fdd227b0f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:28",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 30,
+      "sha256": "cb108c54439d126c114d52ff1d5304c8a9f9fcbb3c892f9c6c4929520cc0d5ee",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:30",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 32,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:32",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 34,
+      "sha256": "bf4eb5d0254da555d75ce99df27c57c369ecb97e1e9a0fccf8e5261bd417c041",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:34",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 36,
+      "sha256": "97f1b541ba470e73451cc7b3dc3eb2fb0a7624c3b37df0579045e219454ab994",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:36",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 38,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:38",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 40,
+      "sha256": "c789b23bd422ec635715aa6093a1699c467c38a7ea96f3106b650155bb545014",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:40",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 42,
+      "sha256": "dba362d14ab396593e8ae219fd23240bc1dc256d49a881167393f9ed679c12ae",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:42",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 43,
+      "sha256": "b4ce127a1063d190bcd5fcc4ed37dec033670a604abc6724cafc27034f51b4ee",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:43",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 44,
+      "sha256": "9118f29505bd9a2863c6c44f98414806cdfb3f426bc92d5d1178c88a69502209",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:44",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 45,
+      "sha256": "5289718dd792958d8f45d5e0e4eff3cb7066d70e70e52963d5c3e088d040a776",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:45",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 46,
+      "sha256": "30e5f57c59e6372c1e63ade25889b5fa595317adce5cb5fcc50dd9d9034dbc3e",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:46",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 47,
+      "sha256": "92a4c0dcfe86b15b9687b8a328a93c597121c24124b42b998616a34602eae21a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:47",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 48,
+      "sha256": "f2ad99b814170d1af60e5266a69e025d19d3c91fd4adda333f5c6e1d64d7ca9a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:48",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 49,
+      "sha256": "a2d85392d60ecc1c649d043ce9819d61f063854213793e4b917cb72203dea5dd",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:49",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 50,
+      "sha256": "5b6558078ed7017281f98d6c621ba6bed2cd8eb1e897785abb50598c812a43b8",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:50",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 51,
+      "sha256": "88e54a76b9484d62db77eb7e061873afa795a5395e183ab93ddd722f4026330d",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:51",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 52,
+      "sha256": "74b8cb56e2270a8504a8a946b6f49765ffe776cbb44ebde87adb46ba0ba1d90c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:52",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 53,
+      "sha256": "24479c45a97a149e90695d8d1369e522ecf81dbda13f2d825ecd40ce4a9284e9",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:53",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 54,
+      "sha256": "09f9b0d9eadcd0162784ab77cf916043a0f21e0408a54344b37088e1e66d16a7",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:54",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 55,
+      "sha256": "528a0466e237969a7bc0a25281f8c9db90359e9fe20b996cb34d533b0cd58a7a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:55",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 57,
+      "sha256": "69291556eadde0b850168bd0d0667afc21a629aa3ddd3e695095c88f55143cd8",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:57",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 59,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:59",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 61,
+      "sha256": "a5067b0cd8ec0a9a2e0c05821bf16a76371588f27919a50e19f8a33f0d5c90ce",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:61",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 63,
+      "sha256": "2dd5a6ba259e3ab7598d6028b21509c283b19501b5e0849d9e0b0a46b846e621",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:63",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 64,
+      "sha256": "f8b346ce1d59ebab43f4b0e98da5c0e3c95e2dededdfb89ef132ae01b65cc2da",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:64",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 65,
+      "sha256": "79e76186684fea84913ac2c2190e53e50a569d2954fd60c4a9de984c8da70021",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:65",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 66,
+      "sha256": "f083ef01c99089671fe4c43e774b068966ed3c2feb53b0579f8bbf85cbba420c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:66",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 67,
+      "sha256": "a8f61246e47a0dfeb01b2945b206bd82b4dc4a9f7f16087dda78ba38186abc24",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:67",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 68,
+      "sha256": "9a83f69f09af77e3533ffb9bd222d9fdce1c14f0dcf367cf0a13877221663db0",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:68",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 70,
+      "sha256": "7efe3592d92b005ef01deebdfe214d9646341ae37432db1600034b4694e35b65",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:70",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 72,
+      "sha256": "a764ce7a441f498f5ce9b704f9864f0fd8b2057b0e0ba097720cff07c9f9cd0a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:72",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 74,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:74",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 76,
+      "sha256": "80e8cda3fe62d04eb5298ae871567b100c9505c63aad89449bacb3f42ddeebb5",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:76",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 78,
+      "sha256": "8b4905800046300e43b2b656852d81ae639d5692e61cd0edd43974059de61df4",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:78",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 80,
+      "sha256": "dd3da76ad538206b48eb797678bc76c0b87995d41272af3529f833288afd7e19",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:80",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 82,
+      "sha256": "5ea7c7558f267396779df63ff3592b2e2c75ed4097963e500926c6ede58f156b",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:82",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 84,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:84",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 86,
+      "sha256": "97640493a76699a6df00939f0c5507811162c1dd7a86d65b2c55b952c8a031fa",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:86",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 88,
+      "sha256": "adea5dae82b9cac495980e709d6a8ff18a4051979f2d58528dfd6cd46ccd2b71",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:88",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 90,
+      "sha256": "83b2861ea334cbb974bbc66ef4f62b3818086fc76ed917fb4460a284e645102b",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:90",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 92,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:92",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 94,
+      "sha256": "04e75024bad407b6daaac1a9b8f69767ad145d26ae7f47ba6d16710f64a4153c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:94",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 96,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:96",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 98,
+      "sha256": "f896c727ef34548d7caa648b9e7526ccb406038845f641f57bf6736e158e49fb",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:98",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 100,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:100",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 101,
+      "sha256": "06c11031a9ab8c2f38a57e2096cf46055d659aef88296ad9c00a798e34157e0f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:101",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 102,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:102",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 103,
+      "sha256": "15e9fc179d9a8f669440fcb3b7729e79f6a46e00caef4b650db105280da015f7",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:103",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 104,
+      "sha256": "0415bd3fce2433ea7e7ed9b9b060ee794911c02312d58e442a76735152dd32ab",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:104",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 105,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:105",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 106,
+      "sha256": "e0b8939e70d7a4e74a66ab2284b6998ea03bb38fd95d484180d7ac023f629918",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:106",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 107,
+      "sha256": "c1c9685a34d8d903b7bc96d5b21e59d9dd3628a0ad36f051df92d01543728bbb",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:107",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 108,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:108",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 109,
+      "sha256": "7237fc1f58d6c790bafe58377751cb4a14139af566a149c4db4a23a359980d8c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:109",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 110,
+      "sha256": "5546cc2b63fe47206263f4fef46d0847ecad80156d1093dc760b61d2af8f5d04",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:110",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 111,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:111",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 113,
+      "sha256": "61331a5d60f56107f284faf533ccaa3a102d4f1b1096ddb7f302c1b17bb8aab5",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:113",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 115,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:115",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 116,
+      "sha256": "221a3a870f8be83f0fab258a3b899cd9da69c740c8e57631a23a84ef914864f2",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:116",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 117,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:117",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 118,
+      "sha256": "bea0c5f866b34e11bfaed5fa2324d34d0eacd56dfbbd10ae83466d9abded4342",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:118",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 119,
+      "sha256": "44334f6da65e430cb4dfacc2905f635c89503711ab7b9cac76a76c15e3c34ec2",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:119",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 120,
+      "sha256": "320b973ea3bad1f0907d2dd88a086de70aa15d6f4daad9d6a7d1e7a65ca3a38d",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:120",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 121,
+      "sha256": "7506e07082595995eac40a91d0cad995b0d275c2adfb226e5b7fe729b23338b2",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:121",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 122,
+      "sha256": "f842c4560929aff375f4cab1f8b4064b6c0e256ec8d195ee1fb0300bebe81387",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:122",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 123,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:123",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 124,
+      "sha256": "f2e2c5e135adedae730623f3d11f382670343000de46b1f8de353f9340d43ce3",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:124",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 125,
+      "sha256": "e395208a4954ae4caefe20562a36bfd20f37fda3dbe605394d835a34ef7fff00",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:125",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 126,
+      "sha256": "d29d154ca7e1dbb3afc8d206c260fa430744afc9e4d117effa37eaeac5ac5e68",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:126",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 127,
+      "sha256": "3cae53fee9669b6caab80f774e0d8ed8107357503c1d79446e8968b927954d3a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:127",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 128,
+      "sha256": "43fde85617dac5aa2fa4b2b5626edd5ad848cc19bf3b8e8849b4a1894a9b34af",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:128",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 129,
+      "sha256": "78d4a4a28f3808d8fdb348f090f634807205ca44da94c6fd33afd6e1164f43d2",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:129",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 130,
+      "sha256": "683461b5999a4a84983419b007edd3200e949c6506416660653592039ccfca46",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:130",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 131,
+      "sha256": "fe372dcd9c36b4e1c148880d25e731f4c437f1b16940fa39e4e5617e66f706f8",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:131",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 132,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:132",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 133,
+      "sha256": "84e2ccf8f2db518cce85061c57a005eb11416530330f921bf9eb83a102216e92",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:133",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 134,
+      "sha256": "d6635620cb04552c73747f624e491b9eef5c36ba29a7b01494f27dd347cd0269",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:134",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 135,
+      "sha256": "627dcedea9a53e849b5e720c40bd7a6a7a185742abaf2f275b9c14631167ccff",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:135",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 136,
+      "sha256": "840d29f19f069d074c8178815d3ec230352d255e480ac1179c04cf2257baa08f",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:136",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 137,
+      "sha256": "0aa271ac4f783255206bbae9b10218c4e8e7ed67d04873c689f9ee6df226bc7e",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:137",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 138,
+      "sha256": "f78ece30e9a326850a55d302bb502e9ab027fec9c58bdacc8c8a1d825204b7c6",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:138",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 139,
+      "sha256": "fd3f617b5ac495433339f4434d04fc8bd2902d37e766daa8e5600119972dd330",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:139",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 140,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:140",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 142,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:142",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 144,
+      "sha256": "93de92176bc64048279504e1220bd4decda29bcd315a3c8cc45f4ed620dedb1b",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:144",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 145,
+      "sha256": "ed390f87a50a4ecf7555f4d03f319bcb03595f73715de5a6db3f45c2d56629c0",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:145",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 146,
+      "sha256": "c14be54246558d06921e65ddb02e440f0cb5f787fc187a32197ba4672896a259",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:146",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 147,
+      "sha256": "76e0f98a4717c8fe4ec2696161e587f8ed959febe21920392944f5a375d5f570",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:147",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 148,
+      "sha256": "0928cac82e4357af3bbb53c7deb747f22cd9a7ee4ecec7e18a4c86e446b2df11",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:148",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 149,
+      "sha256": "7a7005cad4516f84e98d5378da2927237e51a631ea9c70c51dca7209e8483f6a",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:149",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 151,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:151",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 153,
+      "sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:153",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 154,
+      "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:154",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 155,
+      "sha256": "ea1f3fffd5122dd04d341ea3147924fdb88c7251b34dee189494fe58237b310c",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:155",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 156,
+      "sha256": "d19e7b34a3f37f8b4130fa67d82507202d7719a512b1e990e20f8fa4cb102eca",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:156",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 158,
+      "sha256": "5c2dcc235ebe08c165c96222a4a904ed9f9e43feac2ba95ccb11b2e18983bc54",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md:158",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    }
+  ]
+}

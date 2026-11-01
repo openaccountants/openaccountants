@@ -1,0 +1,358 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Kunngerð nr. 76 frá 26. juni 2024 um undantøku fyri gjaldsskyldu av heilsutrygdargjaldi
+26. juni 2024Nr. 76
+Kunngerð um undantøku fyri gjaldsskyldu av heilsutrygdargjaldi
+Við heimild í § 24, stk. 5 í løgtingslóg nr. 178 frá 22. desember 2009 um almenna heilsutrygd, sum seinast broytt við løgtingslóg nr. 50 frá 29. mai 2024, verður ásett:
+§ 1. Persónar, sum hava bústað í Føroyum, men rinda til sosiala trygging í øðrum Norðanlandi vísandi til Nordisk Konvention om social sikring, og sum ikki kunnu draga gjaldið frá, vísandi til skattalógina, kunnu eftir umsókn verða undantiknir at rinda heilsutrygdargjald frá inntøkuárinum 2024.
+§ 2. Umsókn um undantøku fyri at rinda heilsutrygdargjald skal latast Heilsutrygd. Seinasta freist at lata Heilsutrygd umsókn er 1. mai, árið eftir inntøkuárið, sum søkt verður fyri.
+Stk. 2. Umsøkjari skal skjalprógva, at hann hevur rætt til undantøku at rinda heilsutrygdargjald, undir hesum skjalprógva, at hann í inntøkuárinum, hevur arbeitt meira ella minni enn 25% í Føroyum, hvørjum limalondum hann arbeiðir í og hvørjum arbeiðsgevarum hann arbeiðir hjá. Harumframt skal umsøkjarin skjalprógva, at hann rindar til sosiala trygging í øðrum Norðanlandi. Skjalprógv skulu í seinasta lagi verða Heilsutrygd í hendi árið eftir inntøkuárið, sum søkt verður fyri.
+Stk. 3. Heilsutrygd viðger umsóknir um undantøku frá gjaldsskyldu. Í sambandi við viðger av umsóknum, kann Heilsutrygd útvega sær upplýsingar frá øðrum viðkomandi myndugleikum, undir hesum TAKS.
+Stk. 4. Tá ið umsøkjari ikki longur rindar heilsutrygdargjald í øðrum Norðanlandi, hevur hesin skyldu til at fráboða Heilsutrygd hesum, soleiðis at viðkomandi aftur skal gjalda heilsutrygdargjald í Føroyum.
+§ 3. Tá persónur byrjar arbeiði í Norðanlandi ella gevst at arbeiða í Norðanlandi og sambært Nordisk Konvention om social sikring skal rinda til sosialar tryggingar í arbeiðslandinum fyri einans ein part av einum inntøkuári, verður undantøka frá gjaldsskyldu veitt soleiðis:
+1)   Undantak frá gjaldsskyldu fyri fasta heilsutrygdargjaldið sambært § 24, stk. 1 í løgtingslóg um almenna heilsutrygd er galdandi frá og við tí mánaði, umsøkjarin fær rætt til undantøku, og er galdandi til mánaðin, tá umsøkjarin ikki longur hevur rætt til undantøku.
+2)   Undantak fyri prosentgjaldið sambært § 24, stk. 1 í løgtingslóg um almenna heilsutrygd er galdandi fyri tann part av skattskyldugu inntøkuni, sum er vunnin frá tí degi, umsøkjarin fær rætt til undantøku og er galdandi fyri tann part av skattskyldugu inntøkuni, sum er vunnin til tann dag, umsøkjari ikki longur hevur rætt til undantøku.
+Stk. 2. Inntøka, sambært stk. 1, nr. 2, sum ikki kann sigast at hoyra til eitt ávíst tíðarskeið í inntøkuárinum, verður deild í mánaðir við frítøku í mun til mánaðir uttan frítøku. Mánaðurin tá umsøkjarin fær rætt til undantøku, verður roknaður uppí tíðarskeiðið við frítøku, meðan mánaðurin har umsøkjarin ikki longur hevur rætt til undantøku verður roknaður uppí tíðarskeiðið uttan frítøku.
+Stk. 3. Um persónur hevur goldið ov nógv heilsutrygdargjald, rindar TAKS tað ov nógv goldnað gjaldið út, árið eftir, samstundis sum avlopsskattur verður útgoldin.
+Stk. 4. TAKS rindar heilsutrygdargjald út til persón á sama kontonummar, sum avlopsskattur verður rindaður á.
+§ 4. Um ein persónur hevur givið Heilsutrygd skeivar upplýsingar ella tagt um umstøður, sum hava týdning fyri gjaldsundantøku sambært § 24, stk. 2. í løgtingslóg um almenna heilsutrygd, kann Heilsutrygd eftirfylgjandi krevja inn gjaldið, ið viðkomandi av órøttum ikki hevur goldið.
+§ 5. Henda kunngerð kemur í gildi 1. juli 2024.
+Heilsumálaráðið, 26. juni 2024
+Margit Stórá (sign.)
+landsstýriskvinna
+/ Bjørgfríð Ludvig (sign.)
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Kunngerð
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Heilsu- og orkumálaráðið
+Útgávudagur: 28-06-2024
+Tilvísingar
+Heimildir
+Kunngerðablaðið
+Kunngerðarblað  2024 A - Kunngerð 76 frá 26. juni 2024
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

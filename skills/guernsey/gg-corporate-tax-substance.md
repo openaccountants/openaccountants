@@ -6,8 +6,8 @@ jurisdiction: GG
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "1.1"
+last_updated: 2026-11-01
+version: "1.2"
 sources:
   - url: "https://gov.gg/RStax-rates-and-allowances"
     title: "2026 changes: definition of a distribution"
@@ -30,13 +30,13 @@ sources:
   - url: "https://gov.gg/taxpenalties"
     title: "Penalty FAQ, current figures with stale introductory deadline"
     as_of: "2026-10-22"
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey corporate tax, distributions and substance v1.1
+# Guernsey corporate tax, distributions and substance v1.2
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -411,8 +411,6 @@ Not yet confirmed: mixed-rate distribution-credit mechanics beyond the cited sta
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

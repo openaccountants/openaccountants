@@ -2,13 +2,13 @@
 name: sx-turnover-tax
 description: >
   Sint Maarten turnover-tax reference checked in 2026 against the official statute and tax-administration guidance. Covers the five-percent rate, receipts-based timing, authorised invoice accounting, treatment of genuine customer disbursements, monthly returns and selected exemption conditions. Explains the special export boundary encompassing the French side of the island and statutory export-evidence requirements. Includes worked computations and distinguishes exemption from absence of filing duties. Flags conditional recipient liability for overseas suppliers rather than assuming a universal reverse charge. Applies to Dutch Sint Maarten. Complete sector-specific relief, amendment reconciliation and independent accountant review remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: SX
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -62,8 +62,6 @@ Article 11(2) can levy tax on the locally established business recipient in the 
 ## Verification limits
 
 Checked 22 October 2026. The official Dutch statutes support the rules above; this English explanation is not an official translation. Complete later-instrument reconciliation, special regimes, all exclusions and exemptions, refund/correction procedures, liability interactions and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive country coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

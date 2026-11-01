@@ -1,0 +1,37 @@
+[
+  {
+    "PR": 1024,
+    "slug": "moldova-income-tax",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "PR": 1026,
+    "slug": "moldova-social-contributions",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "PR": 1027,
+    "slug": "moldova-payroll",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "PR": 1028,
+    "slug": "moldova-vat",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "PR": 1029,
+    "slug": "README",
+    "returncode": 0,
+    "stdout": "checked 1 files, 0 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  }
+]
