@@ -37,7 +37,6 @@ Tracked in [\[MA\] Complete the pack](https://github.com/openaccountants/openacc
 
 ## Other skills
 
-- [Auto entrepreneur 4](ma-auto-entrepreneur-4.md) (2025)
 - [Auto entrepreneur](ma-auto-entrepreneur.md) (2026)
 - [Bookkeeping](ma-bookkeeping.md) (2026)
 - [Cpu](ma-cpu.md) (2026)
