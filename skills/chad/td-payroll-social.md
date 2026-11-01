@@ -67,7 +67,7 @@ Foreign employees' nationality alone does not remove CNPS coverage under the aut
 
 ### Ordinary full-month employer cost
 
-Full-month contributable and employer-tax gross pay is200,000, all supported; no exemption, benefit, rounding issue or other employer charge. Employer CNPS33,000, employee7,000; remit40,000. Taxe forfaitaire is15,000 and training2,400. Employer cost before other charges is250,400. Employee IRPP/net pay is not guessed.
+Full-month contributable and employer-tax gross pay is200,000, all supported; the employer is outside IGL and has no exemption, benefit, rounding issue or other employer charge. Employer CNPS33,000, employee7,000; remit40,000. Taxe forfaitaire is15,000 and training2,400. Employer cost before other charges is250,400. Employee IRPP/net pay is not guessed.
 
 ```oa-check
 name: Ordinary CNPS and separate employer taxes
