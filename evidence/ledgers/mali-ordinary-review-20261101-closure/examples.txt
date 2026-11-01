@@ -1,0 +1,4 @@
+Command: python3 scripts/check-examples.py --require skills/mali/ml-corporate-income-tax.md skills/mali/ml-income-tax.md skills/mali/ml-payroll-social.md skills/mali/ml-vat-gst.md
+checked 4 files, 8 oa-check blocks, 0 failures, 0 missing
+
+Exit: 0

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-01",
+  "initial_frozen_head": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "changes": [
+    "CGI86 additional floor condition added at rates/body and ledger corporate06: turnover at least real-regime threshold.",
+    "CGI159 CFE employer tax scope added at rates and example assumptions, with payroll09 source excerpt.",
+    "LPF119 XOF50000 minimum explicitly applies to pre-notice25%/5% and after-notice50%; VAT27 quote includes Dans tous les cas.",
+    "Payroll description dated government guidance corrected to undated.",
+    "LPF276 petrol-station0.20% coefficient now expressly requires sourcing exclusively on local market, in rates and ledger20 with original-language quote."
+  ],
+  "parent_actual_source_read": "Official cached DGI CGI86/86-A and neighbours at text1905\u20131933; CGI159\u2013163 at4207\u20134255; LPF118\u2013122 at10570\u201310623. No newer consolidation or current2026 opinion inferred.",
+  "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+  "candidate_files": {
+    "skills/mali/ml-corporate-income-tax.md": "4f147c3bab02e510ec729e239320d92e36fa451c5200eb424ee2ce55a27c0f1d",
+    "skills/mali/ml-payroll-social.md": "e2826b52b028f8e695801a2620bea57a0af40919a84a03b165ff163b564a2b50",
+    "skills/mali/ml-vat-gst.md": "1824291c5ca34e84a4bd005007d1bf2398e1d829a5447830a5578921a0de5b1c",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-corporate-income-tax.md": "f460d8553b13aa941bf29c1f13114cfa0eb7e2592c377e54039fba07842793b0",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-payroll-social.md": "47152e0013a6076c14356dcc6e5c00a5f6f24529f171b6a63892ce8afc81cb84",
+    "evidence/ledgers/mali-ordinary-draft-20261101/ledgers/ml-vat-gst.md": "4f65324bb4b423929a25710347561f8fccb90d94f84543ffedf5e7eec3217783"
+  },
+  "prior_evidence": "Preserved unchanged; initial review binds frozen commit, new closure should bind these candidates.",
+  "examples": "Arithmetic blocks unchanged, CFE case employer eligibility assumption clarified;8cases to be recomputed.",
+  "limits": "All7domains partial; ITS final relief, additional-floor calculation, currentchain/AnnexU/forms still held.",
+  "parent_additional_source_read": "LPF275\u2013277, cached DGI extraction12005\u201312041, actual instalment scope and neighbour conditions."
+}

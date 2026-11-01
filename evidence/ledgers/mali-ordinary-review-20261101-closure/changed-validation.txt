@@ -1,0 +1,8 @@
+Command: python3 evidence/ledgers/mali-ordinary-draft-20261101/pinned-validation.py --changed-only --no-index-check
+changed-only mode: validating 5 changed guide file(s)
+checked 4 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+
+validation passed (0 warning group(s))
+
+Exit: 0

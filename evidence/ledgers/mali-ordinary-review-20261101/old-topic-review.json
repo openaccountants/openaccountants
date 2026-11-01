@@ -1,0 +1,799 @@
+{
+  "candidate_commit": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "all_original_labels": 75,
+  "all_original_prose": 4,
+  "lost_content_restored": 0,
+  "map_sha256": "9b32364e68ff0ad82e9952f429020cc5a8d88f3d669aa7de5553e74b52a3d723",
+  "topics": [
+    {
+      "slug": "ml-company-formation",
+      "original_line": 13,
+      "label": "Mali Company Formation & Entity Choice",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file and section](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 15,
+      "label": "Entity types and incorporation",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file and section](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 19,
+      "label": "Société à Responsabilité Limitée (SARL)",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 20,
+      "label": "Société Anonyme (SA)",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 21,
+      "label": "Entreprise Individuelle",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 22,
+      "label": "SARL minimum share capital",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 23,
+      "label": "SA minimum share capital",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 24,
+      "label": "Commercial register",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 25,
+      "label": "Incorporation route",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 26,
+      "label": "Typical incorporation timeline",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 27,
+      "label": "Tax identification",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 28,
+      "label": "Core annual compliance — financial statements",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 29,
+      "label": "Core annual compliance — shareholders' meeting",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": 30,
+      "label": "Statutory auditor (commissaire aux comptes)",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-company-formation",
+      "original_line": "prose",
+      "label": "Company law in Mali follows the OHADA Uniform Act on Commercial Companies and Economic Interest Groups (AUSCGIE). The most common vehicles are the SARL (limited liability company) and SA (public limited company); registration is centralised through the one-stop shop (Guichet Unique) at the API-Mali / commercial registry (RCCM).",
+      "base_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "destination_disposition": "[Exact unchanged prose; current law not recertified](../../../skills/mali/ml-company-formation.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Full paragraph read against named retained/scope-rebuilt destination."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 13,
+      "label": "Mali Corporate Income Tax",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Guide title v0.1](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 15,
+      "label": "Corporate income tax (Impôt sur les Sociétés)",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Who this applies to](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 19,
+      "label": "Standard corporate income tax rate",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt ordinary rate; no currentness assumed](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 20,
+      "label": "Mining sector rate",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Who this applies to; Sources: Removed unsupported universal mining25%; special legislation/convention hold retained](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 21,
+      "label": "Minimum lump-sum tax (Impôt Minimum Forfaitaire)",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Rates, bands and thresholds; The base: Rebuilt minimum with additional-floor and property-rental conditions](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 22,
+      "label": "Tax base",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[The base: Rebuilt accounting-to-tax bridge and deduction conditions](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 23,
+      "label": "Accounting framework for the base",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Deadlines and filing: Source SYSCOHADA package requirements; no current accounting-standard implementation claim](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 24,
+      "label": "Withholding tax on dividends (IRVM)",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Cross-border points: Source dividend instrument/listing distinction](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 25,
+      "label": "Withholding tax on interest",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Cross-border points: Removed uniform interest15%; source instrument-specific rates replace it](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 26,
+      "label": "Withholding tax on royalties/service fees to non-residents",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Cross-border points: Replaced gross-rate shorthand by scoped source net-base rules; treaty hold](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 27,
+      "label": "Corporate return filing deadline",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Deadlines and filing: Corrected unsupported general31March to source4months; insuranceexception](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": 28,
+      "label": "Advance payments",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Deadlines and filing: Source normal/simplified/new-business instalments, credit and balance](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-corporate-income-tax",
+      "original_line": "prose",
+      "label": "Companies pay the Impôt sur les Sociétés (IS) on net taxable profit; industrial, commercial and professional profits are computed under the IBIC/IBNC rules of the CGI. A turnover-based minimum tax ensures a floor liability even in loss years.",
+      "base_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "destination_disposition": "[Who this applies to; The base; Sources: scope rebuilt, uncertainty replaced with source-specific holds](../../../skills/mali/ml-corporate-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Full paragraph read against named retained/scope-rebuilt destination."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 13,
+      "label": "Mali Personal Income Tax",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Guide title v0.1](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 15,
+      "label": "Personal income tax (ITS) bands and rates",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Who this applies to](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 17,
+      "label": "Tax-free threshold (ITS)",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual firstslice0%](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 18,
+      "label": "ITS band 2",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual5%slice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 19,
+      "label": "ITS band 3",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual12%slice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 20,
+      "label": "ITS band 4",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual18%slice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 21,
+      "label": "ITS band 5",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual26%slice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 22,
+      "label": "ITS band 6",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual31%slice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 23,
+      "label": "ITS top band",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Rates, bands and thresholds: Source-rebuilt annual37%topslice](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 24,
+      "label": "Non-resident employment income",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Who this applies to; Cross-border points: Removed unsupported flat30%wage claim; source residence/work/payer conditions](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 25,
+      "label": "Individual residence test",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Who this applies to: Corrected universal183daypresence shorthand to exacthousing/principalstaylimbs](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 26,
+      "label": "Key deduction from gross salary",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[The base; Sources: Replaced all-social-contributions deduction claim with pensionceiling; AMO deductibility held](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 27,
+      "label": "Family situation relief",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[The base: Source-rebuilt family conditions/rates; added unresolved12-A/B finalstep hold](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 28,
+      "label": "ITS collection method",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Deadlines and filing: Employerwithholding/selfpaymentdistinction, payrolllink](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": 29,
+      "label": "Annual individual return deadline",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Deadlines and filing: Removed universal31March individual deadline; sourceJanuaryandfact-specificreporting](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-income-tax",
+      "original_line": "prose",
+      "label": "Salaries and wages are taxed under the Impôt sur les Traitements et Salaires (ITS), a progressive tax withheld monthly by employers. Published guides disagree on the exact band boundaries and top rate, so the bands below are flagged for accountant confirmation against the current CGI barème.",
+      "base_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "destination_disposition": "[Who this applies to; The base; Sources: scope rebuilt, uncertainty replaced with source-specific holds](../../../skills/mali/ml-income-tax.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Full paragraph read against named retained/scope-rebuilt destination."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 13,
+      "label": "Mali Payroll & Social Contributions",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Guide title v0.1](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 15,
+      "label": "Social security (INPS / AMO) and payroll taxes",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Who this applies to](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 17,
+      "label": "INPS employer contribution",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds: Source branchsplit replaces approximate aggregate](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 18,
+      "label": "INPS employee contribution",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds: Source employeeoldage rate](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 19,
+      "label": "AMO (mandatory health insurance) employer contribution",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds: Primary2010 AMOdecree privateemployerrate and diseasebranch inclusion](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 20,
+      "label": "AMO employee contribution",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds: Primary2010 AMOemployee rate](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 21,
+      "label": "Work-accident / occupational risk contribution (employer)",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds; The base: Authorityriskrange,actualnotifiedclassrequired](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 22,
+      "label": "Contribution Forfaitaire à la charge de l'employeur (CFE)",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds; The base: Source CFEscope/base/rateandconditionalexemptions](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 23,
+      "label": "Employer housing/training-type payroll levy (Taxe Logement)",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds: Removed mixedhousing/training3.5%claim; housing1%,training2%,TEJ2%source distinctions](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 24,
+      "label": "ANPE (employment agency) levy",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds; Sources: UndatedauthorityANPE1%retainedwithstatutorychainhold](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 25,
+      "label": "PAYE-equivalent wage tax",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[The base; Deadlines and filing: ITSlinkedtosibling; collectionmethod retained](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 26,
+      "label": "Monthly remittance deadline (ITS + social contributions)",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Deadlines and filing: SeparatedITS/CFEandheadcount-dependentAMO/INPS calendars](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-payroll-social",
+      "original_line": 27,
+      "label": "Contribution wage ceiling",
+      "base_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "destination_disposition": "[Rates, bands and thresholds; Sources: Removedunsupportedcapstatement; undatedauthoritynocapstatementwith2026hold](../../../skills/mali/ml-payroll-social.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 13,
+      "label": "Mali Tax Overview",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file and section](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 15,
+      "label": "Mali tax system at a glance",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file and section](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 19,
+      "label": "Standard tax year",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 20,
+      "label": "Currency",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 21,
+      "label": "Tax authority",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 22,
+      "label": "Basis of taxation for residents",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 23,
+      "label": "Top personal income tax (ITS) rate",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 24,
+      "label": "Standard corporate income tax rate",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 25,
+      "label": "Does Mali levy VAT?",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 26,
+      "label": "Annual income/corporate return deadline",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": 27,
+      "label": "Minimum lump-sum tax (Impôt Minimum Forfaitaire)",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged file/bullet; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-tax-overview",
+      "original_line": "prose",
+      "label": "Mali is a West African, francophone, civil-law jurisdiction whose tax rules sit in the Code Général des Impôts (CGI) and are administered by the Direction Générale des Impôts (DGI). It is a WAEMU/UEMOA member, uses the West African CFA franc, and harmonises company law and some indirect-tax rules through OHADA and WAEMU directives.",
+      "base_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "destination_disposition": "[Exact unchanged prose; current law not recertified](../../../skills/mali/ml-tax-overview.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Full paragraph read against named retained/scope-rebuilt destination."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 13,
+      "label": "Mali VAT / GST",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Guide title v0.1](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 15,
+      "label": "Value-added tax (TVA)",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Who this applies to](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 17,
+      "label": "Standard VAT rate",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Rates, bands and thresholds: Sourceordinary18%](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 18,
+      "label": "Reduced VAT rate",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Rates, bands and thresholds; Sources: Source5%designatedtariffscope; currentlistheld](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 19,
+      "label": "Zero-rated supplies",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Rates, bands and thresholds; Cross-border points: Replacedunconditional0%labelbysourceexportexemptionandconditionaldeduction](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 20,
+      "label": "Exempt supplies",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Rates, bands and thresholds: Specificstatutoryexemptionclasses;currentcomplete-listheld](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 21,
+      "label": "VAT registration / réel regime threshold",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Who this applies to; Rates, bands and thresholds: Rebuilt50mcategorythresholdwithimporterexception](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 22,
+      "label": "VAT return frequency",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Deadlines and filing: Replacedblanketmonthlywithreal-normal/simplifieddistinction](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 23,
+      "label": "Reverse charge on imported services",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[Cross-border points: Replacedgenericreverse-chargeassertionbyrepresentative/customermechanism](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    },
+    {
+      "slug": "ml-vat-gst",
+      "original_line": 24,
+      "label": "Input VAT recovery",
+      "base_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "destination_disposition": "[The base: Sourceinputeligibility/exclusions,attribution,documentation,timing,carryforward/refund](../../../skills/mali/ml-vat-gst.md)",
+      "verdict": "present_retained_corrected_or_explicitly_held",
+      "reviewer_check": "Read original full blob and destination Guide; unsupported old percentages/deadlines not recertified."
+    }
+  ]
+}

@@ -58,7 +58,7 @@ Prepare the supported sales/tax-point schedule, input-tax/exclusion schedule, sh
 
 ## Penalties and interest
 
-In the older monthly-return rules, late filing before notice carries 25%, reduced to 5% where delay does not exceed one month; after notice the stated rate is 50%, with XOF 50,000 minimum. Continued non-filing ten days after notice leads to official assessment and a 100% increase. A late nil return has XOF 50,000 penalty. These are separate branches, not simultaneous additions. [LPF art. 119](https://www.dgi.gouv.ml/CGI/).
+In the older monthly-return rules, late filing before notice carries 25%, reduced to 5% where delay does not exceed one month; after notice the stated rate is 50%. The XOF 50,000 minimum applies in all these late-filing branches, including pre-notice 25% and 5%, rather than only after notice. Continued non-filing ten days after notice leads to official assessment and a 100% increase. A late nil return has XOF 50,000 penalty. These are separate branches, not simultaneous additions. [LPF art. 119](https://www.dgi.gouv.ml/CGI/).
 
 Omissions/inaccuracies have 50% of tax compromised, or 100% if good faith cannot be accepted; abusive VAT invoicing has a separate double-tax fine. Late payment under article 328 adds 2% per month on the stated tax/penalty base, counting a fraction of a month as full and capped at 20%. The exact notice, assessment and source start-date cross-references must be examined before client calculation. Current amendments and all sanction combinations remain unresolved. [LPF arts. 120–122, 328–329](https://www.dgi.gouv.ml/CGI/).
 

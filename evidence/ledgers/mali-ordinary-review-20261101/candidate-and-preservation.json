@@ -1,0 +1,357 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "candidate_commit": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "review_date": "2026-11-01",
+  "guides": [
+    {
+      "path": "skills/mali/ml-company-formation.md",
+      "base_git_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "candidate_git_blob": "171081f563b98432825a3883002d91ff998007ed",
+      "base_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "candidate_sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "full_file_unchanged": true,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-corporate-income-tax.md",
+      "base_git_blob": "40b206b8ed49576d842669e856685c08c22f389a",
+      "candidate_git_blob": "d61a1950656a059859425a1b490e6127ab7ce7f0",
+      "base_sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "candidate_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "full_file_unchanged": false,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-income-tax.md",
+      "base_git_blob": "61ea79787ddd4c1c7178bdadbde3a19183dc90fe",
+      "candidate_git_blob": "c1c32a55f0ea02d6c21e1955f7e92c310205d884",
+      "base_sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "candidate_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "full_file_unchanged": false,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-payroll-social.md",
+      "base_git_blob": "4b03dae441486a9da98dacfac080db6c78546438",
+      "candidate_git_blob": "8dff065a8fac56acb0c6f0c4559a3817a76fb563",
+      "base_sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "candidate_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "full_file_unchanged": false,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-tax-overview.md",
+      "base_git_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "candidate_git_blob": "24b6e3abc7b612eb9aaa5abc4da458f35dd9a3c6",
+      "base_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "candidate_sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "full_file_unchanged": true,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-vat-gst.md",
+      "base_git_blob": "f05aff5a0a1e8cda07ccf94ab922332c526db456",
+      "candidate_git_blob": "917c9267f2e540f779517003c9676944ed1faa11",
+      "base_sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "candidate_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "full_file_unchanged": false,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    },
+    {
+      "path": "skills/mali/ml-solidarity-contribution.md",
+      "base_git_blob": "41131e8fad49a90703c62197b259a2250cac0a6e",
+      "candidate_git_blob": "41131e8fad49a90703c62197b259a2250cac0a6e",
+      "base_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "candidate_sha256": "a55602764f67c96ba59fad34edf597e04a8016134d779df9f7486ad94dba464f",
+      "full_file_unchanged": true,
+      "full_cta_unchanged": true,
+      "full_cta_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "platform_fields_unchanged": {
+        "review_status": [
+          "review_status: pending_review"
+        ],
+        "trust_label": [
+          "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+        ],
+        "license": [
+          "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+        ],
+        "authored_by": [],
+        "drafted_by": [],
+        "approved_by": [],
+        "validation_status": [],
+        "validated": [],
+        "verified_by": [],
+        "reviewed_by": [],
+        "reviewed_on": []
+      }
+    }
+  ],
+  "source_originals": {
+    "dgi-cgi.html": {
+      "official_url": "https://www.dgi.gouv.ml/CGI/",
+      "sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "bytes": 5882035
+    },
+    "rsu-inps.html": {
+      "official_url": "https://rsu.gouv.ml/portail/partenaires/inps/",
+      "sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "bytes": 190828
+    },
+    "impot-com-38.pdf": {
+      "official_url": "https://www.dgi.gouv.ml/wp-content/uploads/2025/12/IMPOT_COM-38.pdf",
+      "sha256": "d073e2c9e5c4c6a5e3bf32e3951f0a0fc5ab957934cc63420cf686917ebff934",
+      "bytes": 14941742
+    },
+    "canam-decret-10-578.pdf": {
+      "official_url": "https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf",
+      "sha256": "35656849ee8701b352501cb8078925d26fd48b350579bc5cfbced23b9f115835",
+      "bytes": 100047
+    },
+    "canam-decret-10-601.pdf": {
+      "official_url": "https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "bytes": 2812364
+    },
+    "jo-2016-19.pdf": {
+      "official_url": "https://sgg-mali.ml/JO/2016/mali-jo-2016-19.pdf",
+      "sha256": "d8adf8ecbb9c6b17d309d045368e8be4cb427daa99e86b3ff985a2a8d570b3ea",
+      "bytes": 313321
+    },
+    "jo-2025-33-5.pdf": {
+      "official_url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf",
+      "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+      "bytes": 1445924
+    }
+  },
+  "prior17records": [
+    {
+      "path": "evidence/ledgers/mali-old-topics.md",
+      "git_blob": "c12c0aa947683cb6aa44dc4b1b1857649aa28dab",
+      "sha256": "90bc114d7cbe73083da7fafeb7f4a17dff8513799ab06bdf3c05b14d709181b2",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-repair-1/writer-repair.json",
+      "git_blob": "46044d576e1eac8d6397373bf8f08b830feddcab",
+      "sha256": "fb3c790a42d3ef5acb67198bb333cf78dd247659f3a251616c8f61a0cce43a78",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/changed-validation.txt",
+      "git_blob": "dac893f8ece26dce684ab99a877aedbde482c660",
+      "sha256": "b9b114d23d107f8da8f3c83cd26e8b37c9841aaadeed3cd46dc97c4af869f486",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/closure-observed.json",
+      "git_blob": "fe92dd75123e791feb47cf3e32f493c219b166f6",
+      "sha256": "c09cd2e0d23fed0aac78bae50a4e32464bbbc9398392c8f63502bb9e88473a6c",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/closure.md",
+      "git_blob": "c0d27d453801f778fad10f5b93355b4421c17ed1",
+      "sha256": "43ad1b4e0096667d4d2234e96d93a1b2139493d91a787c6e2db5533d4196d7f0",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/examples.txt",
+      "git_blob": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+      "sha256": "c719803ba604203f617cbf5fa3cb9cff59f8b0c37ddd8a773b372ccb1676a739",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/repair-diff-check.txt",
+      "git_blob": "f779db68cc92f6ef910a6b243870dcf5d36fbc15",
+      "sha256": "8c81620f77b6122ca41aceea0105f8f7b5b89ea5a3d2c4ef0193da7a899df775",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101-closure/skill-checks.txt",
+      "git_blob": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+      "sha256": "f0aa722b6f7aa38bcc57880667c03515f4dcfd53431b30871f484c3527f044f6",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/candidate-observed.json",
+      "git_blob": "ca5178e549704878ac1669278fb5944d871f2f0e",
+      "sha256": "246e25efb26f39d7c9bb18f50ba0a2532bcea08682eb07434edbe51868284987",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/changed-validation.txt",
+      "git_blob": "dac893f8ece26dce684ab99a877aedbde482c660",
+      "sha256": "b9b114d23d107f8da8f3c83cd26e8b37c9841aaadeed3cd46dc97c4af869f486",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/coverage-mali.json",
+      "git_blob": "f09c266954f171ca5dced2147fd58b37603d55f8",
+      "sha256": "ce3472df757b00d4117093d7cf2eea0824b842d5365e66a455fc171b3b4e003f",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/diff-check.txt",
+      "git_blob": "5b01a473439774b43da6320a36c8d34059c0e845",
+      "sha256": "db4b9e52f888607fc78d478c5083654a050607364fe98762b1a27b39c8aae4b1",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/examples.txt",
+      "git_blob": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+      "sha256": "c719803ba604203f617cbf5fa3cb9cff59f8b0c37ddd8a773b372ccb1676a739",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/full-no-index-validation.txt",
+      "git_blob": "03a966c81d2d44b36ca2f44d06c6c21fa34d3e6f",
+      "sha256": "6311637189a1bec0bec14f5a33846293e5936286185a6fccafecb12478211b0d",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/review.md",
+      "git_blob": "e5676dbe9b204bdc1351a7c2ce00090f8904d746",
+      "sha256": "046ec080023ef53b5dc218773d1ef48a13c6caaa76c9b0b6fb68ba65a69808ed",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/mali-review-20261101/skill-checks.txt",
+      "git_blob": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+      "sha256": "f0aa722b6f7aa38bcc57880667c03515f4dcfd53431b30871f484c3527f044f6",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/ml-solidarity-contribution.md",
+      "git_blob": "5fade82c9a481995cdff3e4cb7f7e7b2a2eb6172",
+      "sha256": "b1b80b3b9aa1951c65a98c3ed2fc97479ed62015f6b23c9c3e6d27354aadbad7",
+      "unchanged": true
+    }
+  ],
+  "readme_sha256": "c1c28595931b8368a4419335ca99a94a1d2377acda58010a9df88eb1ebc94942",
+  "all7domains_partial": true,
+  "TP_XB_missing": true,
+  "CSS_historical2025_version02_preserved": true,
+  "attestation": false,
+  "fetch_attempt": "git fetch origin failed: Could not resolve host github.com. Review is bound to supplied immutable candidate/base rather than unverified remote state."
+}

@@ -1,7 +1,7 @@
 ---
 name: ml-payroll-social
 description: >
-  Mali payroll and social-contribution research draft for 2026, using older DGI provisions, the 2010 AMO decrees and dated government guidance without certifying their complete current amendment chain. Use it to build conditional employer workpapers for branch-by-branch INPS contributions, private-sector AMO, contribution bases, headcount-dependent payment calendars, employer payroll taxes and wage-withholding controls. It distinguishes the housing tax, professional-training tax, youth-employment tax and ANPE levy, which the former Guide mixed together. It links the wage-income Guide for ITS bands rather than copying them. Two executable examples test contribution splits and the payment-calendar decision. Current legal continuity, wage floors, risk classification, declaration forms and portal procedures remain held for verification.
+  Mali payroll and social-contribution research draft for 2026, using older DGI provisions, the 2010 AMO decrees and undated government guidance without certifying their complete current amendment chain. Use it to build conditional employer workpapers for branch-by-branch INPS contributions, private-sector AMO, contribution bases, headcount-dependent payment calendars, employer payroll taxes and wage-withholding controls. It distinguishes the housing tax, professional-training tax, youth-employment tax and ANPE levy, which the former Guide mixed together. It links the wage-income Guide for ITS bands rather than copying them. Two executable examples test contribution splits and the payment-calendar decision. Current legal continuity, wage floors, risk classification, declaration forms and portal procedures remain held for verification.
 jurisdiction: ML
 category: international
 tax_year: 2026
@@ -38,7 +38,7 @@ These are source-reference figures with the source ages stated, not approved ope
 | Occupational injury/disease | Employer 1%–4%; use notified class, not an arbitrary midpoint | [RSU INPS, branch-rate table and classification text](https://rsu.gouv.ml/portail/partenaires/inps/) |
 | AMO active employee | 3.06% | [Décret 10-578 art. 3](https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf#page=2) |
 | AMO private employer | 3.50%, including the former 2% INPS disease branch | [Décret 10-578 art. 5](https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf#page=2) |
-| CFE | Employer 3.5% of gross remuneration including actual benefits, base rounded down to XOF 1,000; statutory employee exemptions require separate proof | [CGI arts. 159–163](https://www.dgi.gouv.ml/CGI/) |
+| CFE | Individuals/companies liable to IS, IBIC or agricultural-profit tax under art.159: employer 3.5% of gross remuneration including actual benefits, base rounded down to XOF 1,000; statutory employee exemptions require separate proof | [CGI arts. 159–163](https://www.dgi.gouv.ml/CGI/) |
 | Professional training tax | 2% for the IS/IBIC/agricultural-profit persons in art. 183; gross remuneration including actual benefits, base rounded down to XOF 1,000 | [CGI arts. 183–185](https://www.dgi.gouv.ml/CGI/) |
 | Youth-employment tax, TEJ | 2% for the profit-tax/CFE employers in art. 185-A; gross remuneration including actual benefits, base rounded down to XOF 1,000 | [CGI arts. 185-A–185-D, Loi 2008-020](https://www.dgi.gouv.ml/CGI/) |
 | Housing tax | 1% of gross payroll for public/private employers, monthly; distinct from CFE/training | [DGI appendix, Loi 85-35 art. 2 and Décret 183/PG-RM art. 14](https://www.dgi.gouv.ml/CGI/) |
@@ -77,7 +77,7 @@ Determine domestic payroll registration, the wage-income source/residence result
 
 ## Two worked examples that recompute
 
-Both cases test the identified older/undated sources only. Assume ordinary permanent private staff, confirmed bases above the applicable wage floor, no exemptions, and no later amendments. They do not determine client 2026 payroll.
+Both cases test the identified older/undated sources only. Assume an employer within art.159 IS/IBIC/agricultural-profit scope and the stated other employer-tax scopes, ordinary permanent private staff, confirmed bases above the applicable wage floor, no exemptions, and no later amendments. They do not determine client 2026 payroll.
 
 **Separate employee deductions and employer cost.** For XOF 1 million cash payroll, assume each branch base equals that amount and a notified accident rate of 2%. Employee old-age plus AMO is XOF 66,600. Employer INPS plus AMO is XOF 189,000. CFE, training, TEJ, housing and authority-described ANPE total XOF 95,000. Total employer charge is XOF 284,000 and cost including gross salary XOF 1,284,000. ITS is excluded because its employee facts and monthly algorithm have not been provided. ANPE is shown once, outside the insurance subtotal.
 
