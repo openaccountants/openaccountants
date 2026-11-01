@@ -14,9 +14,9 @@ partial:
   XB: "No current cross-border job; residence, non-resident withholding, treaties and relief remain unverified."
 ---
 
-# Guinea: two bounded 2026 source drafts, country pack partial
+# Guinea: two conditional March-text workpapers, country pack partial
 
-Two new tier-2 drafts read from enacted Law L/2026/010/CNT and its signed promulgation decree on 1 November 2026. Independent review pending. No accountant attestation. Six historical 2025 Guides remain unchanged and do not supply confirmed 2026 values. Keep [issue 461](https://github.com/openaccountants/openaccountants/issues/461) open.
+Two new tier-2 workpapers read from enacted Law L/2026/010/CNT and its signed promulgation decree on 1 November 2026. Independent source review accepted candidate `8f84f15a2a89e62158c959d05d150dd9deb3090a` only as conditional March-text workpapers. This does not establish operative current-year law: users must confirm the version governing the actual period or invoice, including the October rectification effect, before live use. If unresolved, outputs remain hypothetical March-text analysis. No accountant attestation. Six historical 2025 Guides remain unchanged and do not supply confirmed 2026 values. Keep [issue 461](https://github.com/openaccountants/openaccountants/issues/461) open.
 
 | Job | Guide | Actual scope |
 |---|---|---|
@@ -30,3 +30,7 @@ The Ministry's CGI library returned 403 through direct fetch and an ordinary Bra
 [Legacy-topic destination map](../../evidence/ledgers/gn-old-topic-destinations.md) preserves every old topic. New-job ledgers sit beside that map; full captures, OCR and rendered pages remain privately outside Git.
 
 Historical Guides awaiting research: [individual](gn-income-tax.md), [corporate](gn-corporate-income-tax.md), [VAT](gn-vat-gst.md), [payroll/social](gn-payroll-social.md), [formation](gn-company-formation.md), [overview](gn-tax-overview.md). Their platform fields and CTA suffixes are preserved exactly. Company-law capital, fees and procedures also remain historical and unverified for 2026.
+
+## Independent source review
+
+The [initial review](../../evidence/ledgers/guinea-review-20261101/review.md) is preserved with its HOLD. The [focused closure](../../evidence/ledgers/guinea-closure-20261101/closure.md) accepts the repaired version within the conditional scope above. All 25 legal ledger rows and four examples carry forward unchanged; all seven domains remain partial. October promulgation, effect and the wider country gaps remain unresolved.
