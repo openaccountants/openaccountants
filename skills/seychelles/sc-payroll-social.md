@@ -115,7 +115,7 @@ expected:
 | Read for the figures cited: Revenue Law (Amendment) Act 2023 (Act 27 of 2023), ss 3, 4, 7 | https://src.gov.sc/wp-content/uploads/2024/12/Act-27-2023-Revenue-Law-Amendment-Act-2023.pdf | 2026-11-01 |
 | Read for the figures cited: SRC Tax System page, whole page read | https://src.gov.sc/seychelles-tax-system/ | 2026-11-01 |
 
-Not yet confirmed: SPF wage ceiling; SPF treatment of non-citizens; SPF late payment penalty; whether SPF contributions reduce taxable pay; employee status form date under the 2024 regulations; employer social security beyond SPF.
+Not yet confirmed: whether the 15% band in S.I. 26 of 2024 caps the non-exempt amount of bonus, as the worked example reads "Non-exempt amount of bonus, up to 15% of the annual basic salary", or the whole bonus, which would make the example's bonus tax SCR 3,200 and the saving SCR 4,800; SPF wage ceiling; SPF treatment of non-citizens; SPF late payment penalty; whether SPF contributions reduce taxable pay; employee status form date under the 2024 regulations; employer social security beyond SPF.
 
 <!-- openaccountants-cta-block -->
 
