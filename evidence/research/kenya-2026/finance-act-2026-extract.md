@@ -1,15 +1,7 @@
----
-name: ke-income-tax-2
-description: Use this skill whenever asked about Kenyan income tax for self-employed individuals. Trigger on phrases like "how much tax do I pay", "KRA", "iTax", "income tax return", "personal relief", "insurance relief", "turnover tax", "presumptive tax", "self-employed tax Kenya", or any question about filing or computing income tax for a self-employed or sole proprietor client in Kenya. ALWAYS read this skill before touching any Kenyan income tax work.
-jurisdiction: KE
-tax_year: 2025
-last_updated: 2026-08-27
-authored_by: Julian Njoroge Maina, CPA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
-license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
----
+# Finance Act, 2026 (Kenya): extract kept from the retired skill ke-income-tax-2
+
+Public statute text as held in `skills/kenya/ke-income-tax-2.md`, unchanged below this note. Extract contributed by CPA Julian Njoroge Maina, 25241. Checked 2026-11-01 against the KRA copy of Kenya Gazette Supplement No. 157 (Acts No. 19), https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf: all 55 sections present and every figure matches. Some entries are summaries, not the Gazette wording, so quote from the Gazette.
+
 
 # The Finance Act, 2026 — Kenya (Income Tax, VAT, Excise Duty, Tax Procedures)
 
@@ -318,23 +310,3 @@ PART IX-ROAD MAINTENANCE
 ## Sources
 
 Finance Act, 2026
-
-> Contributed by CPA Julian Njoroge Maina, 25241.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
