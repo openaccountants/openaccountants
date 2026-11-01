@@ -3,7 +3,7 @@ name: kw-corporate-income-tax
 description: "Corporate income tax, Zakat, National Labour Support Tax and the Domestic Minimum Top-up Tax in Kuwait for tax year 2026. Covers who is taxed at 15%, registration, tax card, Arabic return, instalments, 5% retention, fines, objections, and multinational groups at EUR 750m. Use for questions about a foreign branch or company in Kuwait, Kuwait corporate tax return, Kuwait DMTT, Pillar Two in Kuwait, retention release, tax clearance certificate, Zakat on shareholding companies, or NLST on listed companies. Read from the Ministry of Finance texts. Not signed off by an accountant."
 version: 0.2
 jurisdiction: KW
-category: corporate-tax
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -32,11 +32,11 @@ Foreign corporate bodies trading in Kuwait, Kuwaiti shareholding companies (Zaka
 | Registration | Within 30 days of starting activity or signing the contract; changes and cessation notified within 30 days (reg. art. 11) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Return deadline | On or before the 15th day of the 4th month after the taxable period ends, in Arabic, with an auditor report (reg. art. 13). Exempt bodies still file | 2026 | same |
 | Extension | Request by the 15th day of the 2nd month after period end; maximum 60 days; no reply within 30 days is a refusal (reg. art. 14) | 2026 | same |
-| Payment | One sum or four equal instalments (reg. art. 27), due on the 15th day of the 4th, 6th, 9th and 12th months after period end (Decree art. 8) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Q3_1955e.pdf |
+| Payment | One sum or four equal instalments (reg. art. 28), due on the 15th day of the 4th, 6th, 9th and 12th months after period end (Decree art. 8) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/Q3_1955e.pdf |
 | Assessment payment | Within 30 days of the assessment letter (reg. art. 20) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| Objection and appeal | Objection in 60 days; MOF decides in 90 days, silence is refusal; committee appeal in 30 days; court in 60 days (reg. arts. 24 to 28) | 2026 | same |
+| Objection and appeal | Objection in 60 days; MOF decides in 90 days, silence is refusal; committee appeal in 30 days; court in 60 days (reg. arts. 24 to 27) | 2026 | same |
 | Late filing and late payment fine | 1% per 30 days or part, on tax per return or assessment (reg. art. 34) | 2026 | same |
-| Retention by payers | 5% of the contract value or of each payment, held by ministries, public bodies, companies, associations and sole establishments until MOF clears release (reg. arts. 36 and 37) | 2026 | same |
+| Retention by payers | 5% of the contract value or of each payment, held by ministries, public bodies, companies, associations and sole establishments until MOF clears release (reg. arts. 37 and 38) | 2026 | same |
 | Retention, FY 2026/2027 public bodies | 5% held from contract start or each payment; not applied to entities under Decree-Law 157 of 2024 that show a valid tax card; money held for five years goes to MOF | 2026 | https://www.mof.gov.kw/Desicions/ExecBudgRules/PDF/mez-generalization-2027.pdf |
 | Fund and bank withholding | Investment companies and banks managing portfolios deduct income tax before paying a corporate body and remit it in 30 days (reg. art. 46) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Limitation | Five years from filing or from MOF learning of undisclosed items; refund claims five years (reg. arts. 41 and 42) | 2026 | same |
@@ -64,17 +64,17 @@ Income tax falls on gross income less necessary, real, documented costs (reg. ar
 3. File the Arabic return on the form attached to the executive rules, with the auditor report from an auditor on the MOF approved list, balance sheet and final accounts, asset schedule, subcontractor schedule with retention held, closing stock, contracts and trial balance (reg. art. 13).
 4. Pay in one sum or the first instalment.
 5. MOF assesses. Pay within 30 days of the letter or object within 60 days.
-6. Ask for the clearance certificate. Retained money is released only with MOF approval: not taxable, exempt or a loss; all tax paid; or a bank guarantee (reg. art. 37).
+6. Ask for the clearance certificate. Retained money is released only with MOF approval: not taxable, exempt or a loss; all tax paid; or a bank guarantee (reg. art. 38).
 
 DMTT: register within 120 days, file and pay within 15 months of period end, and send questions to DMTT@mof.gov.kw as named on the MOF DMTT page.
 
 ## Penalties and interest
 
-Income tax: 1% per 30 days or part. A payer that fails to retain or remit is liable for the tax itself (reg. art. 39), and unreported subcontractor payments are disallowed (reg. art. 36). MOF may assess on an estimated basis if no return is filed (reg. art. 19). DMTT: see the rates table; tax evasion carries up to three years in prison and a fine up to three times the tax (art. 36).
+Income tax: 1% per 30 days or part. A payer that fails to retain or remit is liable for the tax itself (reg. art. 39), and unreported subcontractor payments are disallowed (reg. art. 37). MOF may assess on an estimated basis if no return is filed (reg. art. 19). DMTT: see the rates table; tax evasion carries up to three years in prison and a fine up to three times the tax (art. 36).
 
 ## Cross-border points
 
-Tax is territorial as set out under The base. Treaties prevail within their terms (reg. art. 8). Non-residents are caught through agents. For DMTT a permanent establishment includes a site or services lasting over six months in any twelve (art. 1). Equipment may not be exported until a clearance certificate is shown (reg. art. 46).
+Tax is territorial as set out under The base. Exemptions under international agreements stand for their term (reg. art. 8). Non-residents are caught through agents. For DMTT a permanent establishment includes a site or services lasting over six months in any twelve (art. 1). Equipment may not be exported until a clearance certificate is shown (reg. art. 46).
 
 ## Two worked examples that recompute
 
@@ -95,7 +95,7 @@ expected:
   total: 15450.00
 ```
 
-**Example 2 (decision).** Tax per return is KWD 40,000. Paying in one sum puts KWD 40,000 out on the first date. Paying by instalments puts KWD 10,000 out on each of the four dates, with no fine if each date is met. Instalments win on cash unless the company prefers to close the liability. Where an extension is granted, all instalments already due are paid together when the return goes in (reg. art. 27).
+**Example 2 (decision).** Tax per return is KWD 40,000. Paying in one sum puts KWD 40,000 out on the first date. Paying by instalments puts KWD 10,000 out on each of the four dates, with no fine if each date is met. Instalments win on cash unless the company prefers to close the liability. Where an extension is granted, all instalments already due are paid together when the return goes in (reg. art. 28).
 
 ```oa-check
 name: Decision: pay in one sum or four instalments, tax KWD 40,000
@@ -124,7 +124,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 | MOF Executive Rules 2013, loss carry-forward rule, late-filing rules 51 and 52, NLST rule 11 on Gulf companies; those parts read in Arabic by OCR | https://www.mof.gov.kw/Desicions/Decree/PDF/IncomeTaxExecutiveRules2013.pdf | 2026-11-01 |
 | Income Tax Decree 3 of 1955 and regulations, English text, instalment and filing provisions read | https://www.mof.gov.kw/Desicions/Decree/PDF/Q3_1955e.pdf | 2026-11-01 |
 | Law 46 of 2006, English text, arts. 1 to 5 read | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf | 2026-11-01 |

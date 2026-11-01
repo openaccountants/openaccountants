@@ -3,7 +3,7 @@ name: kuwait-tax
 description: "Routing and bookkeeping treatment for Kuwait tax work in tax year 2026. Covers bank statement patterns for Kuwaiti banks, the Ministry of Finance, customs and PIFSS, how to classify them given no VAT, corporate income tax for a foreign branch, the 5% retention, Zakat, DMTT, and test cases. Use whenever asked to classify Kuwait transactions or handle Kuwait tax work, and for Kuwait VAT status. Kuwait has no VAT. Points to the detailed Kuwait skills for each tax. Not signed off by an accountant."
 version: 2.1
 jurisdiction: KW
-category: tax-overview
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -32,7 +32,7 @@ Minimum input: a bank statement from NBK, KFH, Gulf Bank, Burgan Bank, Al Ahli U
 | NLST | 2.5% of net profit, listed companies | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf |
 | DMTT | 15%, groups at EUR 750m or more, from 1 January 2025 | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf |
 | Personal income tax | None | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
-| Retention | 5% of the contract or each payment (reg. art. 36) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
+| Retention | 5% of the contract or each payment (reg. art. 37) | 2026 | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf |
 | Late filing | 1% per 30 days or part (reg. art. 34). No 50% cap appears in the text | 2026 | same |
 | KFAS | unverified: 1% of net profit, shareholding companies | 2026 | unverified |
 | Customs | unverified: 5% of CIF | 2026 | unverified |
@@ -87,7 +87,7 @@ expected:
   tax: 15000.00
 ```
 
-**Example 2 (decision).** A customer pays a foreign contractor KWD 50,000. Hold KWD 2,500 or become liable for the tax (reg. arts. 36 and 39). Holding is the only safe choice until MOF approves release.
+**Example 2 (decision).** A customer pays a foreign contractor KWD 50,000. Hold KWD 2,500 or become liable for the tax (reg. arts. 37 and 39). Holding is the only safe choice until MOF approves release.
 
 ```oa-check
 name: Retention
@@ -112,7 +112,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 | Law 46 of 2006, English text, arts. 1 to 5 read | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf | 2026-11-01 |
 | Law 19 of 2000, art. 12 read | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf | 2026-11-01 |
 | Decree-Law 157 of 2024, issuing articles and arts. 1, 16, 17, 19, 20, 22, 29 to 34, 36, 38; Kuwait Al-Youm supplement 1719, 31 Dec 2024; read in Arabic by OCR, pp. 10 and 11 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf | 2026-11-01 |

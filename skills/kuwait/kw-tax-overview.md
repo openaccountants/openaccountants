@@ -3,7 +3,7 @@ name: kw-tax-overview
 description: "Overview of the Kuwait tax system for tax year 2026. Covers which regime applies: 15% income tax on corporate bodies, 1% Zakat and contribution, 2.5% NLST, the 15% DMTT for large multinational groups, no tax on individual income from work, and no VAT. Use as the first stop for what taxes apply in Kuwait, how a company is taxed in Kuwait, Kuwait tax year, tax authority, main deadlines and routing to the detailed Kuwait skills. Read from the Ministry of Finance texts. Not signed off by an accountant."
 version: 0.2
 jurisdiction: KW
-category: tax-overview
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -88,7 +88,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 | Decree-Law 157 of 2024, issuing articles and arts. 1, 16, 17, 19, 20, 22, 29 to 34, 36, 38; Kuwait Al-Youm supplement 1719, 31 Dec 2024; read in Arabic by OCR, pp. 10 and 11 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf | 2026-11-01 |
 
 Not yet confirmed: Mixed ownership: how the 15% applies to a company part owned by Kuwaiti and part by foreign holders, and the Kuwaiti and Gulf exemption itself, including the earlier statements here that Gulf nationals are foreign and also exempt (the texts read define the taxpayer as any corporate body; Ministerial Decision 3 of 1989 on equal treatment of Gulf nationals is named in the NLST rule but the copy on the MOF site is a different document); KFAS 1% contribution; the 2.5% and 1% interaction with Free Trade Zone exemptions under Law 26 of 1995; the extension of the 5% retention rule beyond the FY 2026/2027 text for private payers; DMTT Executive Regulations detail (Ministerial Resolution 55 of 2025, not read beyond the title page); any business profits tax draft, for which no enacted text was found; the old cap of 50% on the late filing fine, which no text read supports

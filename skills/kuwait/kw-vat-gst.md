@@ -3,7 +3,7 @@ name: kw-vat-gst
 description: "VAT, GST, excise and customs position in Kuwait for tax year 2026. Kuwait has no VAT or GST law in the Ministry of Finance legislation lists, so there is no registration, return, invoice or reverse charge. Use for questions such as does Kuwait have VAT, should I charge VAT to a Kuwaiti customer, can I recover VAT in Kuwait, Kuwait excise, GCC VAT agreement and Kuwait, and customs duty on imports. Lists what is unverified because the customs site could not be opened. Not signed off by an accountant."
 version: 0.2
 jurisdiction: KW
-category: vat
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review

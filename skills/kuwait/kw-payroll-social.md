@@ -3,7 +3,7 @@ name: kw-payroll-social
 description: "Payroll and social contributions in Kuwait for tax year 2026. Covers the absence of tax on individual income from work, Public Institution for Social Security contributions for Kuwaiti nationals, Gulf nationals, expatriates and end-of-service pay. Use for questions on Kuwait payroll, PIFSS, employer cost, salary tax, gratuity or indemnity. The contribution figures are marked unverified because the PIFSS rate pages could not be opened in this review, and the reader must confirm them with PIFSS before payroll runs. Not signed off by an accountant."
 version: 0.2
 jurisdiction: KW
-category: payroll
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -94,7 +94,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 
 Not yet confirmed: All PIFSS figures: only the PIFSS home page opened on 2026-11-01 and it carries no rates; Social Security Law 61 of 1976 not read. Labour Law 6 of 2010 indemnity and its caps not read; manpower.gov.kw did not open. Secondary payroll sites disagree on the employee rate, and were not used. Any 2026 change to the ceiling and any employer unemployment contribution. PIFSS late-payment penalties.
 

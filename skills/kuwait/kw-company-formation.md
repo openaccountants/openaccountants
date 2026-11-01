@@ -3,7 +3,7 @@ name: kw-company-formation
 description: "Company formation and entity choice in Kuwait for tax year 2026, with the tax consequences. Covers WLL, closed and public shareholding companies, direct investment licences under Law 116 of 2013, tax exemption up to ten years, tax card and first registrations. Use for questions on setting up in Kuwait, foreign ownership, KDIPA licence, 100% ownership, which entity pays Zakat or NLST, or tax steps after incorporation. Company-law figures that could not be read at source are marked unverified. Not signed off by an accountant."
 version: 0.2
 jurisdiction: KW
-category: formation
+category: international
 tax_year: 2026
 last_updated: 2026-11-01
 review_status: pending_review
@@ -91,7 +91,7 @@ expected:
 |---|---|---|
 | Law 116 of 2013, English text, arts. 25 to 27 read | https://kdipa.gov.kw/wp-content/uploads/2021/08/law1162013.pdf | 2026-11-01 |
 | Law 46 of 2006, English text, arts. 1 to 5 read | https://www.mof.gov.kw/Desicions/Decree/PDF/Law46_2006e.pdf | 2026-11-01 |
-| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1, 2, 8 to 10, 11 to 16, 24, 26 to 28, 34, 36 to 39, 41, 42, 46, 47; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
+| Executive Regulations of Law 2 of 2008, Ministerial Resolution 29 of 2008, arts. 1 to 3, 8 to 14, 19, 20, 24 to 28, 34, 37 to 39, 41, 42, 46; all 23 pages read in Arabic by OCR, art. 9 by page image | https://www.mof.gov.kw/Desicions/Decree/PDF/la2-2008.pdf | 2026-11-01 |
 
 Not yet confirmed: Companies Law 1 of 2016 text: moci.gov.kw law pages gave no document link. Minimum capital for WLL, KSC and KSCP. The 51% partner rule. Timeline and step order. Chamber membership and licence renewal details. Whether the KFAS contribution falls on closed KSCs.
 
