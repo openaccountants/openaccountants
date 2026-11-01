@@ -32,6 +32,30 @@ Companies are registered with the Commercial Registry at the relevant court; cap
 | Core annual compliance | Audited financial statements, annual income tax return, payroll declarations, quarterly VAT returns (if registered), and NSSF declarations | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
 | Statutory auditor | SAL must appoint a statutory auditor; SARL above thresholds also require one (approx : confirm SARL audit thresholds) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
 
+## Two worked examples that recompute
+
+Entity choice: an SAL or SARL pays 17% on profit; a holding pays no income tax on profits, so a holding only fits if its activity is holding. On LL 1,000,000,000 of operating-style profit the SAL figure is below. Second case: 15% on a LL 200,000,000 gain on fixed assets.
+
+```oa-check
+name: SAL tax on profit
+inputs:
+  profit: 1000000000
+steps:
+  - tax: profit * 0.17
+expected:
+  tax: 170000000
+```
+
+```oa-check
+name: Gain on fixed assets
+inputs:
+  gain: 200000000
+steps:
+  - tax: gain * 0.15
+expected:
+  tax: 30000000
+```
+
 ## Sources
 
 | Source | URL | Read on |

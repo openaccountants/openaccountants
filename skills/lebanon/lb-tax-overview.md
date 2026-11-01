@@ -31,6 +31,30 @@ Lebanon operates a schedular tax system administered by the Ministry of Finance,
 | Corporate tax return filing deadline | 31 March (entities) / 31 May (capital companies) of the following year | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
 | Structure of income taxation | Schedular : separate taxes on business profits, salaries, and movable capital income | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
 
+## Two worked examples that recompute
+
+Corporate tax at 17% on LL 500,000,000, then 10% withholding on a full distribution of the balance. VAT on a sale uses the [VAT skill](lebanon-vat.md).
+
+```oa-check
+name: Corporate tax
+inputs:
+  profit: 500000000
+steps:
+  - tax: profit * 0.17
+expected:
+  tax: 85000000
+```
+
+```oa-check
+name: Dividend withholding
+inputs:
+  net: 415000000
+steps:
+  - wht: net * 0.10
+expected:
+  wht: 41500000
+```
+
 ## Sources
 
 | Source | URL | Read on |
