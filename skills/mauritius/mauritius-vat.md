@@ -44,7 +44,7 @@ A client with a Global Business Licence gets specific treatment: escalate rather
 
 Zero-rated, per the Fifth Schedule: exports under Customs control; rice, wheat flour, bread, edible oils, milk, sugar, unprocessed produce, poultry, meat, fish, tea, honey, spices, salt, fertiliser, animal feed, printed and electronic books; transport of people and goods by sea or air to or from Mauritius; duty-free shop sales; supplies to a freeport licensee for freeport activity; services to a non-resident outside Mauritius not consumed in Mauritius; CEB electricity and CWA water; photovoltaic systems; medical, hospital and dental services; public transport by public service vehicle and light rail; cooking gas up to 12 kg for domestic use; postal services (from 1 October 2026).
 
-Exempt, per the First Schedule: educational services and approved training; most banking and other listed financial services; sale of immovable property for residential purposes, and for other purposes unless sold by a VAT-registered developer to a VAT-registered person; burial and cremation; journals and periodicals; the other listed items. Management company services to global business clients became exempt from 1 October 2026 (item 97).
+Exempt, per the First Schedule: educational services and approved training; most banking and other listed financial services; sale of immovable property for residential purposes, and for other purposes unless sold by a VAT-registered developer to a VAT-registered person; renting of accommodation in a building used mainly as a family residence, for a continuous term over 90 days (item 46); the grant or surrender of an interest in land or a licence to occupy land, subject to item 48 (item 47); burial and cremation; journals and periodicals; the other listed items. Management company services to global business clients became exempt from 1 October 2026 (item 97).
 
 ## The base
 
@@ -163,7 +163,7 @@ expected:
 | MRA tax calendar, read in full | https://www.mra.mu/important-dates | 2026-11-01 |
 | MRA e-Services menu, read in full | https://www.mra.mu/index.php/e-services | 2026-11-01 |
 
-Not yet confirmed: the older Rs 2,300 minimum per invoice for tourist refunds, which is not in the Regulations we read; whether residential letting is exempt, as the old version said, which we did not find on our read of the First Schedule; the old 6 month wait for bad debts; the telecoms treatment rests on no exemption being found; the rule on freeport certificates. VAT Regulations text still mentions a 12 million rupee figure in a form template; the Second Schedule says Rs 10 million and governs. Old version said monthly filers meant large taxpayers on the 20th, and residential first sale was standard-rated; both replaced by the law above.
+Not yet confirmed: the older Rs 2,300 minimum per invoice for tourist refunds, which is not in the Regulations we read; the old 6 month wait for bad debts; the telecoms treatment rests on no exemption being found; the rule on freeport certificates. VAT Regulations text still mentions a 12 million rupee figure in a form template; the Second Schedule says Rs 10 million and governs. Old version said monthly filers meant large taxpayers on the 20th, and residential first sale was standard-rated; both replaced by the law above.
 
 <!-- openaccountants-cta-block -->
 
