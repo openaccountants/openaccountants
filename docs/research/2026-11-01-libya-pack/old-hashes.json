@@ -1,0 +1,37 @@
+{
+  "skills/libya/README.md": {
+    "sha256": "1fa0ba240f2503c997589c43f6a4dd733964e790c973af0dc1963ae2c885a7de",
+    "git_blob": "9934a0d92777a46a978c827c6bb3b618384f9c29",
+    "bytes": 1727
+  },
+  "skills/libya/ly-company-formation.md": {
+    "sha256": "608addd8a02e1ad4b14114f932a4a2248a661131eeaf50046df5758bd79c285a",
+    "git_blob": "942350e1bb7ea72a2595ee7123da7aa34940dfca",
+    "bytes": 3935
+  },
+  "skills/libya/ly-corporate-income-tax.md": {
+    "sha256": "69baa1fe90a36eaa58d79a4d45849b3e44533b0a9839fff2976bc24913f23a19",
+    "git_blob": "c03c8449b69d56dda2bb0723c389968f8370be12",
+    "bytes": 3732
+  },
+  "skills/libya/ly-income-tax.md": {
+    "sha256": "7bee08031025f6fedf4e98f0af7cc0078e9f72259ce3191e8797f8c2d07938fe",
+    "git_blob": "9ff9df75b547448d1a4c5f057bef0a5ba9bb23a2",
+    "bytes": 4304
+  },
+  "skills/libya/ly-payroll-social.md": {
+    "sha256": "8a1055d09b2567b7ba2e18ea49982c2dc170066cc5e9219a327c4e133c60a479",
+    "git_blob": "319b32beaeeed4a579f6f232bed408d3e2552388",
+    "bytes": 3583
+  },
+  "skills/libya/ly-tax-overview.md": {
+    "sha256": "a320892d35e645492c413010557282aed00edec71325f478d49cb1374857af10",
+    "git_blob": "3557b019f5233fa5968d5dac018741b378fe26d7",
+    "bytes": 3917
+  },
+  "skills/libya/ly-vat-gst.md": {
+    "sha256": "80a771a650a1fd1023dbaa6e273937a6deaec5237112187ea1211fddb944b0c3",
+    "git_blob": "b1e9a247e887bbbc235ddfbc190e9542e9b720e7",
+    "bytes": 2230
+  }
+}
