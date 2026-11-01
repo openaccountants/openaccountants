@@ -19,7 +19,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ## Who this applies to
 
 
-> **HEADLINE: Bahrain has NO personal income tax.** There is no PIT regime of any kind: no brackets, no rates, no personal tax return, no PIT filing deadline, and no PIT payment obligation: for any individual, whether employed, self-employed, resident, or non-resident. Income and capital gains earned outside Bahrain are likewise not taxed in Bahrain. There is no net-wealth tax, no estate/inheritance/gift tax, and no individual capital gains tax. (Source:.pwc.com/bahrain/individual/taxes-on-personal-income and .../other-taxes.)
+> **HEADLINE: Bahrain has NO personal income tax.** There is no PIT regime of any kind: no brackets, no rates, no personal tax return, no PIT filing deadline, and no PIT payment obligation, for any individual, whether employed, self-employed, resident, or non-resident. Income and capital gains earned outside Bahrain are likewise not taxed in Bahrain. There is no net-wealth tax, no estate/inheritance/gift tax, and no individual capital gains tax.
 >
 > This skill therefore does NOT compute income tax. It documents what DOES apply to an individual or self-employed person in Bahrain: **Social Insurance (SIO)** contributions, the expatriate **End-of-Service Benefit (EOSB)** funded scheme, **VAT** for business/self-employed turnover, the **Wage Protection System (WPS)**, and the **corporate-level taxes** that may reach a self-employed person who incorporates.
 
@@ -31,6 +31,9 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Personal income tax | None: the Income Tax Law taxes only bodies corporate, establishments and companies (art. 1(a)) | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
 | EOSB, non-Bahraini | 4.2% first three years, 8.4% after, employer alone | 2026 | https://web.archive.org/web/20250617002539/https://www.sio.gov.bh/en/end-of-service-benefits |
 | VAT mandatory registration | BHD 37,500 | 2026 | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration |
+| VAT voluntary registration | Above BHD 18,750 of annual supplies or expenses | 2026 | same |
+| VAT standard rate | 10% from 1 January 2022 | 2026 | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq |
+| VAT periods | Monthly above BHD 3,000,000 of current or expected annual supplies; quarterly otherwise; annual on application under BHD 100,000 | 2026 | https://web.archive.org/web/20260825060528/https://www.nbr.gov.bh/VAT/vat_return_filing/when_to_file |
 | unverified: SIO rates and ceiling | See bh-payroll-social; figures below repeat the prior version | 2026 | unverified |
 
 ## The base
@@ -52,10 +55,10 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Payroll compliance authority | Labour Market Regulatory Authority (LMRA), https://www.lmra.gov.bh |
 | PIT filing deadline | **N/A: no personal income tax return exists** |
 | SIO remittance frequency | Monthly (employer withholds and remits) |
-| VAT filing frequency | Quarterly (most businesses); monthly for large businesses |
+| VAT filing frequency | Quarterly; monthly above BHD 3,000,000 of annual supplies |
 | Validated by | Pending: requires sign-off by a Bahrain-qualified tax/payroll professional |
 | Validation date | Pending |
-| Skill version | 0.1 |
+| Skill version | 0.2 |
 
 #### Personal Income Tax Rate Table
 
@@ -80,7 +83,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 - **Employee total unchanged through phase-in**: Employee total = **8%** (7% pension + 1% unemployment), unchanged through the phase-in.
 - **Employer phase-in schedule**: Employer total = **17% from January 2025**, rising to **18% from 1 January 2026**, then **+1% per year until it reaches 21% in 2028**.
-- **Combined rate note**: Combined (employer + employee): **25% in 2025** (17% + 8%) → **26% in 2026** (18% + 8%). cites the 2025 snapshot of 17%/8%; for 2026 use the 18% employer figure.
+- **Combined rate note**: Combined (employer + employee): **25% in 2025** (17% + 8%) → **26% in 2026** (18% + 8%). For 2026 use the 18% employer figure.
 - **Insurable-earnings ceiling**: BHD 4,000 per month: contributions are computed on a salary capped at BHD 4,000/month.
 - **Contribution floor / minimum insurable wage**: **[RESEARCH GAP: reviewer to confirm]** (only the BHD 4,000 ceiling is well-sourced).
 
@@ -116,7 +119,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Standard rate | **10%** (raised from 5% effective 1 January 2022) |
 | Mandatory registration threshold | Annual taxable supplies **> BHD 37,500** |
 | Voluntary registration | Annual taxable supplies **BHD 18,750 -- 37,500** |
-| Filing frequency | **Quarterly** (most); **monthly** for large businesses (typically annual supplies > BHD 3,000,000: confirm: **[RESEARCH GAP: reviewer to confirm exact trigger]**) |
+| Filing frequency | **Quarterly** (most); **monthly** above BHD 3,000,000 of current or expected annual supplies |
 | Filing & payment deadline | Within **30 days** / by the last day of the month following the end of each tax period |
 
 #### Conservative Defaults
@@ -232,7 +235,7 @@ This is the deterministic pre-classifier. Because Bahrain has no PIT, there is n
 | Standard rate | 10% (since 1 January 2022) |
 | Mandatory registration | Annual taxable supplies > BHD 37,500 |
 | Voluntary registration | BHD 18,750 -- 37,500 |
-| Filing | Quarterly (monthly for large businesses) |
+| Filing | Quarterly (monthly above BHD 3,000,000 of annual supplies) |
 | Deadline | Within 30 days of period end |
 
 - **VAT as principal recurring obligation**: VAT is the principal recurring tax obligation for a self-employed person whose turnover crosses the threshold. It is administered separately from any (non-existent) income tax.
@@ -251,7 +254,7 @@ This is the deterministic pre-classifier. Because Bahrain has no PIT, there is n
 
 | Tax | Rate | Who it hits |
 | --- | --- | --- |
-| General corporate income tax | None |: |
+| General corporate income tax | None | None |
 | Hydrocarbon / oil & gas | 46% of net profits per accounting period | Companies extracting/refining fossil fuels in Bahrain |
 | Domestic Minimum Top-up Tax (DMTT) | 15% minimum effective rate | MNE groups with global consolidated revenue ≥ €750m in ≥2 of the preceding 4 fiscal years; effective for fiscal years beginning on/after 1 January 2025; excludes purely domestic businesses; administered by NBR |
 
@@ -275,7 +278,7 @@ This is the deterministic pre-classifier. Because Bahrain has no PIT, there is n
 
 #### 6.5 VAT Monthly-Filing Trigger
 
-- **Monthly filing trigger research gap**: Large businesses file monthly; the commonly cited trigger is annual supplies above BHD 3,000,000. **[RESEARCH GAP: reviewer to confirm exact trigger against the NBR VAT General Guide.]**
+- **Monthly filing trigger**: Monthly above BHD 3,000,000 of current or expected annual supplies; quarterly at or below it. A registered person under BHD 100,000, not in a VAT group, may apply for annual periods, and any person may apply for monthly returns; both need NBR approval.
 
 #### 6.6 VAT Penalties
 
@@ -283,7 +286,7 @@ This is the deterministic pre-classifier. Because Bahrain has no PIT, there is n
 
 #### 6.7 Municipal Tax on Expat Rentals
 
-- **Municipal tax research gap**: A municipal tax (commonly cited as ~10%) may apply to rental of property occupied by expatriates. **[RESEARCH GAP: reviewer to confirm the exact rate against the.]**
+- **Municipal tax research gap**: A municipal tax (commonly cited as ~10%) may apply to rental of property occupied by expatriates. **[RESEARCH GAP: reviewer to confirm the exact rate.]**
 
 #### 6.8 Incorporation Decision
 
@@ -589,9 +592,11 @@ ONBOARDING QUESTIONS -- BAHRAIN INDIVIDUAL / SELF-EMPLOYED
 |---|---|---|
 | Income Tax Law, art. 1(a), read for bh-cross-border-tax, not reopened | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
 | Decision No. 109 of 2023, EOSB Regulation (SIO, archive copy of 17 Jun 2025), arts. 5, 13 | https://web.archive.org/web/20250617002539/https://www.sio.gov.bh/en/end-of-service-benefits | 2026-11-01 |
-| NBR, VAT registration page, threshold paragraph (archive copy of 22 Apr 2025) | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration | 2026-11-01 |
+| NBR, VAT registration page, threshold paragraphs (archive copy of 22 Apr 2025) | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration | 2026-11-01 |
+| NBR, when to file VAT (archive copy of 25 Aug 2026) | https://web.archive.org/web/20260825060528/https://www.nbr.gov.bh/VAT/vat_return_filing/when_to_file | 2026-11-01 |
+| NBR, FAQ, VAT rate (archive copy, 2025) | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq | 2026-11-01 |
 
-Not yet confirmed: SIO rates and ceiling; voluntary VAT band BHD 18,750; WPS details (Resolution 68 of 2019, enhanced WPS 2026); minimum wage statements; absence of wealth, estate and capital gains tax on individuals from an official statement; municipal tax on expatriate rentals; VAT penalties.
+Not yet confirmed: SIO rates and ceiling; WPS details (Resolution 68 of 2019, enhanced WPS 2026); minimum wage statements; absence of wealth, estate and capital gains tax on individuals from an official statement; municipal tax on expatriate rentals; VAT penalties.
 
 ## Disclaimer
 

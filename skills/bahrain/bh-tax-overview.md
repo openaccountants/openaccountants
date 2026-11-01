@@ -28,7 +28,7 @@ Anyone asking which taxes apply in Bahrain in 2026, business or individual. Each
 | Hydrocarbon income tax | 46%. See bh-corporate-income-tax | 2026 | same |
 | DMTT Minimum Rate, in-scope groups only | 15%. See bh-corporate-income-tax | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
 | VAT mandatory registration | BHD 37,500 annual taxable supplies | 2026 | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration |
-| VAT standard rate | unverified: 10% per bahrain-vat, no NBR page opened | 2026 | unverified |
+| VAT standard rate | 10% from 1 January 2022 | 2026 | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq |
 | Social insurance | unverified: see bh-payroll-social | 2026 | unverified |
 
 ## The base
@@ -41,7 +41,7 @@ Anyone asking which taxes apply in Bahrain in 2026, business or individual. Each
 
 ## Deadlines and filing
 
-VAT: the NBR's example has a quarter ending 31 March due on 30 April, so the return is due by the end of the following month. Monthly returns need an application and NBR approval. Social insurance: within the first 15 days of the following month (bh-payroll-social). DMTT: see bh-transfer-pricing.
+VAT: the NBR's example has a quarter ending 31 March due on 30 April, so the return is due by the end of the following month. Monthly periods apply above BHD 3,000,000 of current or expected annual supplies; below that, monthly returns need an application and NBR approval. Annual periods need NBR approval and supplies under BHD 100,000. Social insurance: within the first 15 days of the following month (bh-payroll-social). DMTT: see bh-transfer-pricing.
 
 ## Penalties and interest
 
@@ -93,9 +93,10 @@ expected:
 | Income Tax Law, Legislative Decree No. 22 of 1979, read for bh-cross-border-tax, not reopened (page body did not load by script on 2026-11-01) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
 | DMTT Law and Regulations, read for bh-transfer-pricing and bh-cross-border-tax, not reopened (NBR returned 403 by script and browser on 2026-11-01) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
 | NBR, VAT registration page, threshold paragraph (archive copy of 22 Apr 2025) | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration | 2026-11-01 |
-| NBR, when to file VAT, examples paragraph (archive copy of 25 Aug 2026) | https://web.archive.org/web/20260825060528/https://www.nbr.gov.bh/VAT/vat_return_filing/when_to_file | 2026-11-01 |
+| NBR, when to file VAT, periods and examples (archive copy of 25 Aug 2026) | https://web.archive.org/web/20260825060528/https://www.nbr.gov.bh/VAT/vat_return_filing/when_to_file | 2026-11-01 |
+| NBR, FAQ, VAT rate (archive copy, 2025) | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq | 2026-11-01 |
 
-Not yet confirmed: the VAT standard rate from an NBR page; the fiscal year rule; excise rates; whether the draft corporate income tax law has been enacted.
+Not yet confirmed: the fiscal year rule; excise rates; whether the draft corporate income tax law has been enacted.
 
 <!-- openaccountants-cta-block -->
 
