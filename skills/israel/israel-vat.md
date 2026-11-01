@@ -403,6 +403,29 @@ Fields: תאריך (date) | סוג פעולה (transaction type) | תיאור (d
 | Heshbonit Mase requirements | Section 9 Ma'am Law |
 | Tourist refund scheme | ITA Form 1345 guidance |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: Invoice net ILS 200,000
+inputs:
+  n: 200000
+steps:
+  - v: n*0.18
+expected:
+  v: 36000
+```
+
+```oa-check
+name: Bimonthly net payable
+inputs:
+  o: 800000
+  i: 280000
+steps:
+  - p: (o-i)*0.18
+expected:
+  p: 93600
+```
+
 ## Sources
 
 | Source | URL | Read on |

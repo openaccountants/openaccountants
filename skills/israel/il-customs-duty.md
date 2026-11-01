@@ -214,6 +214,29 @@ Since CIF > €6,000, an EUR.1 movement certificate stamped by Italian customs i
 | Bank of Israel exchange rates | https://www.boi.org.il/en/economic-roles/financial-markets/exchange-rates/ |
 | CIFTA rules of origin | https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-5-6-eng.html |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: VAT on base NIS 803
+inputs:
+  b: 803
+steps:
+  - v: b*0.18
+expected:
+  v: 144.54
+```
+
+```oa-check
+name: VAT on CIF 12,000 plus 6% duty
+inputs:
+  c: 12000
+steps:
+  - d: c*0.06
+  - v: (c+d)*0.18
+expected:
+  v: 2289.6
+```
+
 ## Sources
 
 | Source | URL | Read on |

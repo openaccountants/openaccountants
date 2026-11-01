@@ -78,7 +78,7 @@ For the full 10-year period from the date of immigration/return:
 | Real property: residential | Complex (betterment levy, linear calculation) |
 | Inflation adjustment | Available (reduces the real gain) |
 
-## Sources
+## Earlier references
 
 - Income Tax Ordinance [New Version], §14(a) (new immigrants and returning residents)
 - ITO §97(b) (capital gains exemption for new immigrants)
@@ -86,6 +86,28 @@ For the full 10-year period from the date of immigration/return:
 - ITA Circular: guidance on returning residents
 
 > Working paper only. The interaction of the exemption with Israeli payroll (if employed by an Israeli employer) and with trust structures is complex. Have a qualified Israeli CPA (רואה חשבון) review before making employment or asset decisions.
+
+## Recomputed checks (2026)
+
+```oa-check
+name: One credit point a month
+inputs:
+  p: 1
+steps:
+  - v: p*2904/12
+expected:
+  v: 242
+```
+
+```oa-check
+name: Two credit points a year
+inputs:
+  p: 2
+steps:
+  - v: p*2904
+expected:
+  v: 5808
+```
 
 ## Sources
 

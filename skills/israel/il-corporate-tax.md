@@ -251,6 +251,30 @@ Compare with dividend on the same NIS 500,000: tax of ~NIS 230,500 (46.1%). The 
 | Bituach Leumi: contribution rates | https://www.btl.gov.il/Insurance/National%20Insurance/Pages/default.aspx |
 | Kol Zchut: income tax brackets | https://www.kolzchut.org.il/he/מדרגות_מס_הכנסה |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: Dividend from NIS 100,000 profit, 10% holder
+inputs:
+  p: 100000
+steps:
+  - c: p*0.23
+  - d: (p-c)*0.30
+  - t: c+d
+expected:
+  t: 46100
+```
+
+```oa-check
+name: Deemed interest, NIS 500,000 loan (2026)
+inputs:
+  l: 500000
+steps:
+  - i: l*0.0653
+expected:
+  i: 32650
+```
+
 ## Sources
 
 | Source | URL | Read on |

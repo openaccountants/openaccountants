@@ -240,6 +240,28 @@ The 2025–2026 Voluntary Disclosure Procedure expressly covers digital assets a
 - Cross-border transactions with foreign tax obligations
 - Voluntary disclosure consideration
 
+## Recomputed checks (2026)
+
+```oa-check
+name: Gain NIS 40,000 at 25%
+inputs:
+  g: 40000
+steps:
+  - t: g*0.25
+expected:
+  t: 10000
+```
+
+```oa-check
+name: Surtax on capital income NIS 800,000
+inputs:
+  p: 800000
+steps:
+  - s: (p-721560)*0.05
+expected:
+  s: 3922
+```
+
 ## Sources
 
 | Source | URL | Read on |

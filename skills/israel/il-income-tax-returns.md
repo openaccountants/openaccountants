@@ -297,6 +297,30 @@ Israeli law offers three options for taxing residential rental income:
 | Real estate taxation office | https://www.gov.il/he/departments/topics/land_taxation |
 | Income Tax Ordinance | https://www.nevo.co.il/law/70264 |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: Freelancer, net NIS 370,000, 5.75 points (2026)
+inputs:
+  p: 370000
+  pts: 5.75
+steps:
+  - tax: 84120*0.10+36600*0.14+107280*0.20+73200*0.31+(p-301200)*0.35
+  - net: tax-pts*2904
+expected:
+  net: 65066
+```
+
+```oa-check
+name: Surtax on employment income NIS 800,000
+inputs:
+  p: 800000
+steps:
+  - s: (p-721560)*0.03
+expected:
+  s: 2353.2
+```
+
 ## Sources
 
 | Source | URL | Read on |

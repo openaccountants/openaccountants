@@ -289,6 +289,28 @@ Introduced in 2024 under Income Tax Ordinance Section 17א.
 | Bituach Leumi: self-employed rates | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx |
 | ITA filing portal (Shaam Online) | https://www.misim.gov.il |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: Self-employed contributions, NIS 20,000 a month (2026)
+inputs:
+  m: 20000
+steps:
+  - c: 7703*0.077+(m-7703)*0.18
+expected:
+  c: 2806.59
+```
+
+```oa-check
+name: Exempt dealer projection (2026)
+inputs:
+  e: 95000
+steps:
+  - o: e/9*12-122833
+expected:
+  o: 3833.67
+```
+
 ## Sources
 
 | Source | URL | Read on |

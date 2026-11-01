@@ -214,6 +214,28 @@ If the freelancer provides a valid certificate showing 2% withholding:
 | Tax treaty list | https://www.gov.il/he/departments/guides/taxation-agreements |
 | ITA filing portal (Shaam) | https://www.misim.gov.il |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: No certificate, NIS 10,000 at 30%
+inputs:
+  g: 10000
+steps:
+  - t: g*0.70+g*0.18
+expected:
+  t: 8800
+```
+
+```oa-check
+name: Certificate at 2%
+inputs:
+  g: 10000
+steps:
+  - t: g*0.98+g*0.18
+expected:
+  t: 11600
+```
+
 ## Sources
 
 | Source | URL | Read on |

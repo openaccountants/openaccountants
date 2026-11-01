@@ -287,6 +287,28 @@ Without this fix, the employee will file the same refund every year for the same
 | Kol Zchut: disability exemption | https://www.kolzchut.org.il/he/פטור_ממס_הכנסה_לאנשים_עם_נכות |
 | Kol Zchut: Form 106 | https://www.kolzchut.org.il/he/טופס_106 |
 
+## Recomputed checks (2026)
+
+```oa-check
+name: 1.75 points
+inputs:
+  p: 1.75
+steps:
+  - v: p*2904
+expected:
+  v: 5082
+```
+
+```oa-check
+name: 6.25 points
+inputs:
+  p: 6.25
+steps:
+  - v: p*2904
+expected:
+  v: 18150
+```
+
 ## Sources
 
 | Source | URL | Read on |
