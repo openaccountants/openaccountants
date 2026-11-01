@@ -1,6 +1,6 @@
 ---
 jurisdiction: BF
-version: 0.3
+version: 0.4
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -15,8 +15,8 @@ covered_by:
 partial:
   IT-IND: "2026 ordinary IBICA/IBNC and CME draft; live form workflow, personal/foreign income and specialist execution remain incomplete; independent source corrections closed for the partial draft scope."
   IT-CORP: "2026 ordinary IS, MFP and advance-payment draft; current form workflow, specialist exemptions and PE attribution remain incomplete; independent source corrections closed for the partial draft scope."
-  VAT: "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt."
-  SC: "Legacy 2025 Guide retained unchanged; CNSS and separate AMU not rebuilt."
+  VAT: "2026 ordinary TVA workpaper draft; current forms, commodity/certificate execution, refund workflow and specialist methods incomplete; independent review pending."
+  SC: "2026 source-bound CNSS workpaper draft; controlling law/rate-decree text, penalties, SMIG, current portal and operative AMU remain unresolved; independent review pending."
   PR: "2026 IUTS/TPA draft; portal forms, administrative rounding, SMIG and current CNSS/AMU integration remain incomplete; independent source corrections closed for the partial draft scope."
   TP: "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent AI source review accepted for the stated draft scope."
   XB: "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent AI source review accepted for the stated draft scope."
@@ -24,21 +24,23 @@ partial:
 
 # Burkina Faso tax pack
 
-**Partial follow-on draft, 1 November 2026.** Three legacy Guides now have 2026 statutory computations, source ledgers and six executable cases, with independent source corrections closed for the exact repaired candidates. Five legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
+**Partial follow-on draft, 1 November 2026.** The corporate, business-income and payroll rewrites retain their accepted independent source corrections. VAT and CNSS now have additional 2026 workpaper drafts, four executable cases and source ledgers, pending a separate independent review. Three legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
 
 | Domain | Guide | Actual status |
 |---|---|---|
 | IT-IND | [Business income](bf-income-tax.md) | 2026 draft: IBICA/IBNC profit and minima, CME tariff/election, statutory preparation; independent source corrections closed for the partial draft scope |
 | IT-CORP | [Corporate tax](bf-corporate-tax.md) | 2026 draft: ordinary IS, MFP, deductions, advances and statutory preparation; independent source corrections closed for the partial draft scope |
-| VAT | [VAT](bf-vat.md) | Legacy 2025; needs full source rebuild |
-| SC | [Social contributions](bf-social-contributions.md) | Legacy 2025; needs full source rebuild |
+| VAT | [VAT](bf-vat.md) | 2026 draft: rates, place/base, deduction, withholding and refund boundaries; independent review pending |
+| SC | [Social contributions](bf-social-contributions.md) | 2026 CNSS workpaper draft: signed ceiling/base/risk orders and labelled authority/form instructions; controlling-text and AMU holds; independent review pending |
 | PR | [Payroll](bf-payroll.md) | 2026 draft: IUTS/TPA bases, current allowances, family reductions, payment frequency and annual statements; independent source corrections closed for the partial draft scope |
 | TP | [Transfer pricing](bf-transfer-pricing.md) | 2026 draft: controlled pricing, distinct declaration/documentation size tests, July 2026 documentation contents, audit request and fines |
 | XB | [Non-resident services withholding](bf-nonresident-services-withholding.md) | 2026 draft: payer/service scope, base, general and road-freight rates, declaration fields, remittance and default branches |
 
-The unchanged [overview](bf-tax-overview.md), [formation](bf-company-formation.md) and [optimisation](bf-tax-optimization.md) remain legacy 2025 content, not current country advice. The five retained legacy Guides also include VAT and social contributions. The [follow-on old-topic destinations](../../evidence/burkina-faso-remaining-20261101/old-topic-destinations.md) map all eight original legacy Guides against immutable main commit `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`, including every rewritten opening topic, bullet and table row. Retention does not validate an old figure.
+The unchanged [overview](bf-tax-overview.md), [formation](bf-company-formation.md) and [optimisation](bf-tax-optimization.md) remain legacy 2025 content, not current country advice. The new [VAT/social predecessor destinations](../../evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md) map all 102 original entries of those two Guides against frozen commit `f7076093d670d841cdcc4140743541ffa6d72c7b`. The [follow-on old-topic destinations](../../evidence/burkina-faso-remaining-20261101/old-topic-destinations.md) map all eight original legacy Guides against immutable main commit `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`, including every rewritten opening topic, bullet and table row. Retention does not validate an old figure.
 
 ## Evidence and limits
+
+The [VAT/social workpaper checkpoint](../../evidence/burkina-faso-vat-social-20261101/README.md) records 89 additional ledger rows, the actual signed texts and official guidance read, failed/mislabelled primary sources, four executable cases and exact preservation checks. Authority/form statements are labelled separately from signed statutory provisions; missing controlling articles and operative AMU remain holds. This pending review does not change any earlier acceptance.
 
 The [follow-on evidence](../../evidence/burkina-faso-remaining-20261101/README.md) contains the three new rewrite ledgers, source identity, preservation record and validation outputs. The prior accepted ledgers are [TP](../../evidence/ledgers/bf-transfer-pricing.md) and [non-resident services](../../evidence/ledgers/bf-nonresident-services-withholding.md). Every new rule maps to an act/article, an opened official URL, a short original-language quotation and an actual read date. Raw PDFs, text extraction and source images are kept outside the public repository.
 
