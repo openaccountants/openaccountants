@@ -1,0 +1,170 @@
+{
+  "frozen_candidate": "9adb1b3e9b05b38440ecd5b2d45f2d6348683704",
+  "prior_accepted_candidate": "416ec514979330e5980061eda4a38ab2cdef6e4a",
+  "prior_review_backup": "af75221ab",
+  "checked_utc": "2026-11-01T17:37:56.509698+00:00",
+  "frozen_file_sha256": {
+    "skills/chad/td-income-tax.md": "dbda410e0e89f243365635209589f13213fb2dfd968be80ae4991d04b5865ad2",
+    "skills/chad/td-payroll-social.md": "4d375d91b468c995575135168b786d7cbed831d70ec5628ac49d554cda3c2ba9",
+    "skills/chad/README.md": "208f4ae7ba98debd7aac2fe633fd9cead0e34a4d74c7060bb5dc75cad7a91fff",
+    "evidence/ledgers/chad-income-addendum-2026/ledger.md": "8bd3b00b9ccc63fb0d4875ba139cf20c656af6d51dcf60ac87f094768b531391",
+    "docs/research/chad-remaining-2026/business-income-source-addendum.md": "f86aabc35838035986c06baca0cd0b21ddbceecf4be8af2eb3cf10c6c407b0df"
+  },
+  "source_row_ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B23",
+    "B24",
+    "B25",
+    "B26",
+    "B27",
+    "B28",
+    "B29",
+    "B30",
+    "B31",
+    "B32",
+    "B33",
+    "PR07"
+  ],
+  "source_rows": 34,
+  "unchanged_guide_sha256": {
+    "skills/chad/td-corporate-income-tax.md": "aba119b2fb928b42f00b47eaa40385f89830fba4831b62ceeb9de519fb4650ed",
+    "skills/chad/td-vat-gst.md": "2c9b784f0cb01b20b3e2a05af946d6a91426184190925f7365dfaec25823b9d6",
+    "skills/chad/td-transfer-pricing.md": "f501de2349f5a31c42326142a5c431a1048dac81496aa2f07e3bdf018657489c",
+    "skills/chad/td-company-formation.md": "d39cb383033d3b129ca93504a86a444b72b59dec82edd8992d8bc4cd2d793b84",
+    "skills/chad/td-tax-overview.md": "018505d04c32d0e26befa64ee23d9846b6a3ef1272e3f0b6076ea02432814f23",
+    "skills/chad/td-import-exemption-eligibility.md": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6"
+  },
+  "preserved_prior_review_files": {
+    "evidence/ledgers/chad-remaining-2026/candidate-manifest.json": "f6b33d9324f9767338eb0ef2868ca348bf0b69e15210b707ff30e1cf98d9686c",
+    "evidence/ledgers/chad-remaining-2026/closure-candidate-manifest.json": "996531d8de015715b5fd09b4a68feb237c878a7d18e0c7762bfe8b8d6cff9a92",
+    "evidence/ledgers/chad-remaining-2026/committed-validation-initial.json": "f2afca26af503740f069fe391c092d030d0c49a5a0b61fe4903a2364f5f1c345",
+    "evidence/ledgers/chad-remaining-2026/committed-validation.json": "328966361e1c53b0ff1ebce0ef1cccbbeaf4558ffa5e521a0af5141bc1a1f24a",
+    "evidence/ledgers/chad-remaining-2026/independent-review-income-interim.md": "dee65c0c30accb6155b0f258b768be5d82c46ab199e43a9f3fc4b55c1e6e6d8c",
+    "evidence/ledgers/chad-remaining-2026/independent-review.md": "b1fa142369a692b49329898689367b9f1016c242e24f1b5e8767b845c6d00e80",
+    "evidence/ledgers/chad-remaining-2026/mechanical-results-interim.json": "f1285ba662a146bc27a324b4a1b6ced9121b5c4cfb5027e2a67d1842b4fab889",
+    "evidence/ledgers/chad-remaining-2026/mechanical-results.json": "dcba3df2a08e069abdb2b2e6cb64e11e19b61303859787a4a621d48971f1a38f",
+    "evidence/ledgers/chad-remaining-2026/old-topics.md": "a4a6db0b8c8709ea83d776b226f7aeeb208fc989591991477580729acee516d8",
+    "evidence/ledgers/chad-remaining-2026/predecessor-identities.json": "1e417e1000eaf781afd3349b10e0050c740f5f6a7402a1913375a04bd7583a7f",
+    "evidence/ledgers/chad-remaining-2026/review-checks.py": "df6ba09c54d7c71cf81cdda6871033a3ce532a11b1733c724fc83c67b23d8bab",
+    "evidence/ledgers/chad-remaining-2026/source-hashes.json": "4421c1068412520220c5fbe57585714ac5ce9be684cf1f7bff756beab0835b11",
+    "evidence/ledgers/chad-remaining-2026/td-company-formation.md": "7e4f8be2cea7204bfcf67c9e2928fcff9e9f6b71011234bc3cff34da94f8c254",
+    "evidence/ledgers/chad-remaining-2026/td-corporate-income-tax.md": "0ea85af0005924b1298a4e131dcb364c13b430c59b3cb1b5807b92d462926cba",
+    "evidence/ledgers/chad-remaining-2026/td-income-tax.md": "74c91b26f7e57e3b5e297a18c8196f394aa6b56b6903863c73ec7d4b1b9b5880",
+    "evidence/ledgers/chad-remaining-2026/td-payroll-social.md": "7c9e23db5c177c7b50c5d211ad2abc90ede9355343201ebce0b7453f83eb5d58",
+    "evidence/ledgers/chad-remaining-2026/td-tax-overview.md": "0c4eb488971154a7d8a547bbdf59c9d78b151b2e5bdd46920c5eb9c2ba311416",
+    "evidence/ledgers/chad-remaining-2026/td-transfer-pricing.md": "5edb55bf448512f508fb3874411c9dd72416c5b539c5ef2cc545be97eabd57a7",
+    "evidence/ledgers/chad-remaining-2026/td-vat-gst.md": "75368c821289525c8ccc6fb54b8ce91f147270264fa1bece247d6d5ebaadf92e",
+    "evidence/ledgers/chad-remaining-2026/validate-committed.py": "be53f4bb4d519210a737ca82f62b44afec404e0a88c8ed021c36bc698e9e6a60",
+    "evidence/ledgers/chad-remaining-2026/verdicts-income-interim.json": "17afd4bbdd97dcf085e3b3fa4970cbf7293d92e4c0fc102eb09753c4ce9eabff",
+    "evidence/ledgers/chad-remaining-2026/verdicts.json": "37c5920b41caa16533ce0deccfa91a223cba0fc9eb51d2d2593cc231f22e7a70",
+    "evidence/ledgers/chad-remaining-2026/writer-corrections.md": "e75696712929bf24982e09260daee568056c035bbc7a6c3884d134d34f638862"
+  },
+  "changed_guides": {
+    "skills/chad/td-income-tax.md": {
+      "sha256": "dbda410e0e89f243365635209589f13213fb2dfd968be80ae4991d04b5865ad2",
+      "inherited_platform_fields_preserved": true,
+      "full_cta_preserved": true,
+      "prior_two_oa_checks_preserved": true,
+      "oa_checks": 4
+    },
+    "skills/chad/td-payroll-social.md": {
+      "sha256": "4d375d91b468c995575135168b786d7cbed831d70ec5628ac49d554cda3c2ba9",
+      "inherited_platform_fields_preserved": true,
+      "full_cta_preserved": true,
+      "prior_two_oa_checks_preserved": true,
+      "oa_checks": 2
+    }
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/chad/td-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 2 files, 6 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/chad/td-company-formation.md",
+        "skills/chad/td-corporate-income-tax.md",
+        "skills/chad/td-import-exemption-eligibility.md",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md",
+        "skills/chad/td-tax-overview.md",
+        "skills/chad/td-transfer-pricing.md",
+        "skills/chad/td-vat-gst.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 8 files, 18 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "9adb1b3e9b05b38440ecd5b2d45f2d6348683704",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 7 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "9adb1b3e9b05b38440ecd5b2d45f2d6348683704"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "validated_head": "a9181d5a61df05b770a4fb39f8ffb8d7b29a6c5b",
+  "changed_guides": [
+    "skills/chad/td-company-formation.md",
+    "skills/chad/td-corporate-income-tax.md",
+    "skills/chad/td-income-tax.md",
+    "skills/chad/td-payroll-social.md",
+    "skills/chad/td-tax-overview.md",
+    "skills/chad/td-transfer-pricing.md",
+    "skills/chad/td-vat-gst.md"
+  ],
+  "changed_guide_count": 7,
+  "example_count": 16,
+  "metadata": {
+    "skills/chad/td-company-formation.md": "platform fields and complete CTA preserved",
+    "skills/chad/td-corporate-income-tax.md": "platform fields and complete CTA preserved",
+    "skills/chad/td-income-tax.md": "platform fields and complete CTA preserved",
+    "skills/chad/td-payroll-social.md": "platform fields and complete CTA preserved",
+    "skills/chad/td-tax-overview.md": "platform fields and complete CTA preserved",
+    "skills/chad/td-transfer-pricing.md": "new; no platform fields or stamped CTA",
+    "skills/chad/td-vat-gst.md": "platform fields and complete CTA preserved"
+  },
+  "historical_files_preserved": 13,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/chad/td-company-formation.md",
+        "skills/chad/td-corporate-income-tax.md",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md",
+        "skills/chad/td-tax-overview.md",
+        "skills/chad/td-transfer-pricing.md",
+        "skills/chad/td-vat-gst.md"
+      ],
+      "exit": 0,
+      "stdout": "skills/chad/td-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-tax-overview.md (scope: other)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/chad/td-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/chad/td-company-formation.md",
+        "skills/chad/td-corporate-income-tax.md",
+        "skills/chad/td-income-tax.md",
+        "skills/chad/td-payroll-social.md",
+        "skills/chad/td-tax-overview.md",
+        "skills/chad/td-transfer-pricing.md",
+        "skills/chad/td-vat-gst.md"
+      ],
+      "exit": 0,
+      "stdout": "checked 7 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "a9181d5a61df05b770a4fb39f8ffb8d7b29a6c5b",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 7 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "a9181d5a61df05b770a4fb39f8ffb8d7b29a6c5b"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "pinned existing validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit": 0,
+      "stdout": "changed-only mode: validating 8 changed guide file(s)\nchecked 7 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    }
+  ],
+  "all_pass": true
+}

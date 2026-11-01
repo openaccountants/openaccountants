@@ -1,0 +1,248 @@
+{
+  "reviewed_utc": "2026-11-01T17:39:55.038412+00:00",
+  "frozen_candidate": "9adb1b3e9b05b38440ecd5b2d45f2d6348683704",
+  "decision": "accepted only for the defined ordinary positive BIC/BNC, IGL routing/Zone1 table, collection evidence and linked payroll substitution scopes; all stated unresolved areas remain partial",
+  "rows": [
+    {
+      "id": "B01",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI16–17 original classification and furnished/business letting boundaries checked."
+    },
+    {
+      "id": "B02",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI5,42–43 allocated profits, actual-profit route and actual manager costs capped15% checked; no automatic salary deduction."
+    },
+    {
+      "id": "B03",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI19–20/25 period results and net-assets bridge checked, including contributions and withdrawals."
+    },
+    {
+      "id": "B04",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI25VI lower cost/closing market and cost of work in progress checked; statutory margin-turnover exception read."
+    },
+    {
+      "id": "B05",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI26II five cumulative conditions checked against original list."
+    },
+    {
+      "id": "B06",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI26XX/XXIX/XXXVIII hospitality and gifts limits and cash>=500000 checked; company-only travel not indiscriminately imported."
+    },
+    {
+      "id": "B07",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI29–30 three-year reinvestment conditions and real-value withdrawal treatment read; specialist computation held."
+    },
+    {
+      "id": "B08",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI31/37 original IGL substitution, natural-person boundary and third-party withholding checked; original printed17 scan confirms only Zone1 fixed column."
+    },
+    {
+      "id": "B09",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI38–40 and999 RSI/real wording checked; exact500m conflict and real option preserved."
+    },
+    {
+      "id": "B10",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI18VI/21–24 special agriculture thresholds, two-year average and<=10hectare provision read; genuine gaps remain held."
+    },
+    {
+      "id": "B11",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI49 original BNC classifications and separately taxed betting read; ordinary fee case stays within scope."
+    },
+    {
+      "id": "B12",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI50–52 actual fee receipts, advances and segregated client-fund exclusion checked; reimbursement not automatically exempt."
+    },
+    {
+      "id": "B13",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI53I–II necessary expense method and specified gains/expenses read with94 and1002; no invented universal timing election."
+    },
+    {
+      "id": "B14",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI53II(3–5)10% turnover outsideCEMAC cap, actual spouse work60000/month and training predicates visually checked on printed23."
+    },
+    {
+      "id": "B15",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI54 personal/capital/debt-principal/investment/criminal-fine exclusions checked; no unsupported import of26 cash cap."
+    },
+    {
+      "id": "B16",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI55–56 special three-year averaging and professional gain rules read; no general consultant election."
+    },
+    {
+      "id": "B17",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI57–58 BNC real/RSI including lower-band VAT permission read; boundary conflict held."
+    },
+    {
+      "id": "B18",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI59–60/123 and857–858 nonresident special bases/rates read; treaty and overlap held."
+    },
+    {
+      "id": "B19",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI998–1006 BIC books/results/calendar filing and1004 expert validation checked; no imported corporate final payment date."
+    },
+    {
+      "id": "B20",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI1002–1003 first-two-month BNC reporting and daily journal visually checked; conflicting general references explicitly held."
+    },
+    {
+      "id": "B21",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI1011 activity declaration30days, annual28February and immediate payment read alongside31 year-end language; no deferral permission inferred."
+    },
+    {
+      "id": "B22",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "LF16 new120 read against old block:4%, conditional15%, repeat30%, register and industry/import predicates checked."
+    },
+    {
+      "id": "B23",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "LF16 new120IV–V plus unchangedVI–X checked:3months, turnover500m/200m, new10/5employees and60%nationals, certificate/request/approval conditions."
+    },
+    {
+      "id": "B24",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "LF17 new121 checked; it does not amend123. CGI124/863 professional18% prepayment and collection timing checked."
+    },
+    {
+      "id": "B25",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI861–862 invoice/remittance/annual summary and LPFL147 statement checked; refund/credit-priority conflict remains held in Guide."
+    },
+    {
+      "id": "B26",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI149–152 scope16–17,2% base and annual IRPP credit checked; pure49BNC and aggregate/collection allocation held."
+    },
+    {
+      "id": "B27",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI842 includes individuals and monthly/quarterly periods;152/843–845 references read; final personal payment remains held."
+    },
+    {
+      "id": "B28",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "LF18 whole96–108 deletion independently verified from original headings/scans, superseding old income row30; no corporate-loss bridge imported."
+    },
+    {
+      "id": "B29",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI32–33 Zone1 categoryC15m–<20m,850000 checked against original fixed table and category text."
+    },
+    {
+      "id": "B30",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI32–33 Zone1 categoryD10m–<15m,600000 checked against original fixed table and category text."
+    },
+    {
+      "id": "B31",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI32–33 Zone1 categoryE5m–<10m,350000 checked against original fixed table and category text."
+    },
+    {
+      "id": "B32",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI32–33 Zone1 categoryF3m–<5m,160000 checked against original fixed table and category text."
+    },
+    {
+      "id": "B33",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI32–33 Zone1 categoryG2m–<3m,40000 checked against original fixed table and category text."
+    },
+    {
+      "id": "PR07",
+      "verdict": "pass_with_explicit_scope_limits",
+      "independent_basis": "CGI31/37 IGL substitutes the listed own TF/TA taxes but preserves third-party withholding. Payroll method and case now expressly apply the gate."
+    }
+  ],
+  "row_count": 34,
+  "frozen_file_sha256": {
+    "skills/chad/td-income-tax.md": "dbda410e0e89f243365635209589f13213fb2dfd968be80ae4991d04b5865ad2",
+    "skills/chad/td-payroll-social.md": "4d375d91b468c995575135168b786d7cbed831d70ec5628ac49d554cda3c2ba9",
+    "skills/chad/README.md": "208f4ae7ba98debd7aac2fe633fd9cead0e34a4d74c7060bb5dc75cad7a91fff",
+    "evidence/ledgers/chad-income-addendum-2026/ledger.md": "8bd3b00b9ccc63fb0d4875ba139cf20c656af6d51dcf60ac87f094768b531391",
+    "docs/research/chad-remaining-2026/business-income-source-addendum.md": "f86aabc35838035986c06baca0cd0b21ddbceecf4be8af2eb3cf10c6c407b0df"
+  },
+  "sources": {
+    "CGI2025_archived_ministry_PDF": "75b798bb621b7a66bc9e4c647e02743c6ed6a2af44bd68a38fd499e478a57a11",
+    "LF2026_enacted_official_PDF": "7bc46241a7c7586d9eece4fb5c95a6587ba637732480b7b4c8cfbf31112d7fd2"
+  },
+  "source_scope": "CGI5,16–60,94–108 historical deletion boundaries,116–124,149–152,842–845,861–863,995,998–1011 andLPFL146–147; LF16–18, with original/new blocks and relevant neighbours. Original scans CGI PDF18,24,33,36,188 andLF25 inspected. Earlier126rows not re-reviewed wholesale.",
+  "superseding_findings": [
+    {
+      "prior_row": "td-income-tax30",
+      "correction": "LF18 deletes96–108, including105 housing floor and106–108 arrival/departure/treaty-move rules. Their earlier operative acceptance is superseded.117(I) deleted98–99/global-credit references held;117(III–IV) separately conditional relief bounded."
+    }
+  ],
+  "independently_recomputed_new_cases": [
+    {
+      "case": "BIC ordinary positive base",
+      "turnover": 80000000,
+      "other_allowable": 49200000,
+      "hospitality_cap": 400000,
+      "hospitality_allowed": 400000,
+      "excluded_costs": 2000000,
+      "net_category": 30400000,
+      "separate_minimum_working_paper": 1600000,
+      "final_balance": "held"
+    },
+    {
+      "case": "BNC client funds/spouse work",
+      "fee_receipts": 60000000,
+      "separate_client_funds": 2000000,
+      "rent": 6000000,
+      "other_costs": 30000000,
+      "spouse_allowed": 720000,
+      "spouse_disallowed": 720000,
+      "net_category": 23280000,
+      "final_balance": "held"
+    }
+  ],
+  "retained_case_recomputations": {
+    "income_salary": 815000,
+    "income_labour_plus_capital": 2171000,
+    "payroll_outside_IGL_cost": 250400,
+    "payroll_capped_remittance": 100000,
+    "payroll_late_charge": 1000
+  },
+  "preservation": {
+    "prior_review_files_preserved": 23,
+    "other_guides_preserved": 6,
+    "existing_two_blocks_in_each_modified_guide_preserved": true,
+    "platform_fields_and_CTA_preserved": true,
+    "immutable159destination_map_unchanged": true
+  },
+  "defects_closed": [
+    "B01–B28missingfromfirstfrozenledgerrestored;actual34rowsasserted",
+    "payrollcaseexplicitoutsideIGL",
+    "individualbusinessfilingcrossreferencecorrected",
+    "twohistoricalutility/writernotesrestoredbyteforbyte;updatesmovedaddendum"
+  ],
+  "remaining_gaps": [
+    "individual losses and special gains",
+    "agricultural regime gaps and fixed IGL tariffs outsideZone1/belowG/specialactivities",
+    "BNC/general filing conflicts",
+    "minimum/aggregate labour/collection credit priority and final personal settlement",
+    "universal accrual/cash elections",
+    "live forms/screens/monthly payroll scale, treaty/nonresident/exit replacement and later-law/implementation completeness"
+  ]
+}
