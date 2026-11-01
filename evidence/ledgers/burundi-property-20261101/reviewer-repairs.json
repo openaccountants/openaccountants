@@ -1,0 +1,88 @@
+{
+  "frozen_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "findings": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "changes": [
+    {
+      "finding": "R4",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "These are not general exemptions from every property tax. [Registration arts. 14–15](https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf).",
+      "after": "These principal registration exemptions do not by themselves exempt every property tax. A separate 2026 budget overlay exempts **gifts granted to the State and its administrative subdivisions from all taxes, duties and charges**: January art. 207 applies in the first period and July art. 226 in the second. Confirm both the gift and qualifying beneficiary; this does not make an ordinary purchase exempt from all taxes or extend that gift rule to every religious/scientific/philanthropic body. Do not equate an administrative public establishment with an administrative subdivision without confirming its legal status. [Registration arts. 14–15](https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf); [January art. 207](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf); [July art. 226](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf)."
+    },
+    {
+      "finding": "R1",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "3. **Transfer notification:**",
+      "after": "**Separate weekly notary/public-officer reporting:** at the end of each week, without undue delay, the notary or public officer who authenticated or signed a transfer, mortgage-constitution or other real-property-right act sends the territorially competent registrar the list of those acts. Include the parties’ names and given names or business names; act number and object; total transaction price stipulated in the deed; parcel location; cadastral or parcel number; and title number if any. This is separate from the parties’ transfer-notification deadline below. [Registration art. 23, continuation](https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf).\n\n3. **Transfer notification:**"
+    },
+    {
+      "finding": "R2",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "7. **If building an urban house:** obtain the prior building authorisation and approved estimate, pay the building tax, then display the authorisation reference and proof of tax payment on the site. Read the applicable implementing order before an actual permit request. [January art. 139](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf); [July art. 147](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf).",
+      "after": "7. **If building an urban house:** obtain the prior building authorisation and approved estimate, pay the building tax, then display the authorisation reference and proof of tax payment on the site. The separate permit-insurance clauses make grant of the building permit conditional on an insurance certificate covering damage to the works and decennial and biennial liability **when the value of the work to be built is estimated at BIF 100,000,000**. The exact legislative condition is « lorsque la valeur de l’ouvrage à construire est estimée à cent millions »; it does not say “at least”. Do not invent a >= threshold or conclude that other estimates are exempt. Its broader application, current required insurance evidence and permit implementation remain held. This is distinct from the fire-insurance certificate for a built-property title transfer. Read the applicable implementing order before an actual permit request. [January arts. 139, 215](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf); [July arts. 147, 235](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf)."
+    },
+    {
+      "finding": "R1",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "## Penalties and interest\n\n",
+      "after": "## Penalties and interest\n\n- Refusal or delay in transmitting the separate weekly notary/public-officer list attracts **BIF 50,000 per untransmitted act plus 1% of duties due per week late**. Apply this art. 23 sanction to that reporting duty, separately from the parties’ art. 24 transfer-notification charge. [Registration art. 23, continuation](https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf).\n"
+    },
+    {
+      "finding": "R3/R2/R4",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "Modified 2025/26 budget: arts. 103–104; full arts. 138–143 with neighbours, art. 217 and art. 252; actual scans pp. 41–42 and final PDF p. 249/printed 246 inspected. Mortgage cap and per-mille construction symbol read visually",
+      "after": "Modified 2025/26 budget: arts. 94, 103–104; full arts. 138–143 with neighbours; arts. 207, 215, 217, 226–227 and 252. Property VAT clauses on pp. 30 and 54 actually read; gift and permit-insurance clauses read with neighbours and scans pp. 52–53 inspected. Scans pp. 41–42 and final PDF p. 249/printed 246 inspected, including mortgage cap and per-mille construction symbol"
+    },
+    {
+      "finding": "R2/R4",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "Enacted 2026/27 budget: full arts. 146–151 and neighbours; arts. 108–109, 237, property VAT gate arts. 95, 246–247, and art. 277; scans pp. 44–46 and final p. 267 inspected. No claim to have reviewed all budget appropriations",
+      "after": "Enacted 2026/27 budget: full arts. 146–151 and neighbours; arts. 108–109, 226, 235, 237, property VAT gate arts. 95, 246–247, and art. 277. Gift and permit-insurance clauses read with neighbours and scans pp. 58 and 60 inspected; scans pp. 44–46 and final p. 267 inspected. No claim to have reviewed all budget appropriations"
+    },
+    {
+      "finding": "R2",
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before": "construction implementing order and permit forms; interaction",
+      "after": "construction implementing order and permit forms, including broader interpretation of the exact BIF 100,000,000 permit-insurance condition and current required insurance evidence; interaction"
+    }
+  ],
+  "original_rows_preserved": 66,
+  "repaired_row_count": 72,
+  "new_rows": [
+    "P67",
+    "P68",
+    "P69",
+    "P70",
+    "P71",
+    "P72"
+  ],
+  "four_original_cases_preserved_sha256": "1f22a2ab5492b037e02713ca24fa0e6ebf8f29859992b0aac88af91b8dc94737",
+  "review_status": "focused independent closure pending",
+  "readme_changed": false,
+  "original_source_record_unchanged": true,
+  "changed_existing_files": [
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before_sha256": "0f16686a622456df42a3d335c1569ad7c872aff8fdf31b9c3edc27ed483d93f9",
+      "after_sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/bi-property-transactions.json",
+      "before_sha256": "e5cedf32c1ff186f0b7ad7fdc15581a80617d26fb1e7e3303916c48a8ff377ba",
+      "after_sha256": "33ada1d9a1635e302a5f9639b126afd9895a8a364bd8c3a5ffb272b9c8e334e7"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md",
+      "before_sha256": "1608e34b80942954db37b729ace5bbca0631dff0073a66be834e3a68e108cf3c",
+      "after_sha256": "7913338e454169036e7053cedbf69270a4189d8a0ecf5da6c44b5e84933817f5"
+    }
+  ],
+  "added_read_scope_file": {
+    "path": "evidence/ledgers/burundi-property-20261101/repaired-sources-read.json",
+    "sha256": "2a4e1e6f5625865c799580903945e46df757670ecaa3dcee6cbdeafe86051f35"
+  }
+}

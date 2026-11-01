@@ -34,7 +34,7 @@ Independent AI source review and focused repair closure passed for candidate `e4
 | XB | bi-cross-border-tax | sourced from the law; partial |
 | Entity formation | bi-company-formation | sourced from the law; partial |
 | Routing | bi-tax-overview | sourced from the law; partial |
-| Property transactions and title charges | bi-property-transactions | source-cited draft; independent review pending; partial |
+| Property transactions and title charges | bi-property-transactions | checked against the law; independent AI review passed; partial |
 
 ## Official sources
 
@@ -48,4 +48,4 @@ The [initial review](../../evidence/ledgers/burundi-review-20261101/README.md) c
 
 ## Property workpaper addition
 
-The new [property-transactions Guide](bi-property-transactions.md) separates the January and July 2026 budgets, including the mortgage fee cap change, purchaser wealth-tax boundary, secured-title fee/deadline and urban construction charge. Its [row-level ledger](../../evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md) and four recomputing cases are writer evidence pending a fresh independent review. The actual 2020 registration law was recovered from the official gazette, but a 2026-uploaded communal-law PDF proved to be the 2016 text; its annual property-tax rates are not treated as current. All eight earlier Guides and their review evidence remain unchanged. All seven tax domains remain partial.
+The new [property-transactions Guide](bi-property-transactions.md) separates the January and July 2026 budgets, including the mortgage fee cap change, purchaser wealth-tax boundary, secured-title fee/deadline and urban construction charge. Its [row-level ledger](../../evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md) and four recomputing cases passed independent AI source review and [focused repair closure](../../evidence/ledgers/burundi-property-review-20261101/closure.md) within the stated partial scope. The actual 2020 registration law was recovered from the official gazette, but a 2026-uploaded communal-law PDF proved to be the 2016 text; its annual property-tax rates are not treated as current. All eight earlier Guides and their review evidence remain unchanged. All seven tax domains remain partial.
