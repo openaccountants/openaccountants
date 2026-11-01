@@ -453,14 +453,15 @@ Operator’s personal-remuneration drawings, personal expenses and remuneration 
 
 ## bj-business-income-tax:42 | The base
 
-For asset-booked property assess professional usefulness; remove nonprofessional product from IBA to IRF and reconcile related charges under60(5); non-income-producing property charges are nondeductible. Precise partial-use allocation remains a supported separate schedule.
+For asset-booked property assess professional usefulness. Remove nonprofessional product from IBA to IRF under60(5), except amounts taken into account in determining gain or loss on disposal of a fixed asset, and reconcile related charges; non-income-producing property charges are nondeductible. Precise partial-use allocation remains a supported separate schedule.
 
-- Act/article: CGI art60(5); PDF page 35
+- Act/article: CGI art60(5); PDF pages 35–36
 - Official URL: https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35
 - Exact French quote: « dépend de son utilité à l’exercice de l’activité professionnelle »
 - Read on: 2026-11-01; source `cgi2026.pdf` SHA-256 `dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a`
 - Read scope: Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.
 - Additional decisive anchors: « Le produit ainsi distrait du bénéfice des affaires »; « Lorsque l’immeuble est improductif de revenu »; « ne sont pas »; « déductibles »
+- Additional decisive disposal exclusion: « à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé »
 
 ## bj-business-income-tax:43 | The base
 
@@ -566,7 +567,7 @@ Foreign related-party pricing and domestic foreign-payment withholding belong to
 
 - Act/article: CGI arts45,59; routing control; PDF page 28
 - Official URL: https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=28
-- Exact French quote: « pour l’établissement de l’impôt sur le revenu »
+- Exact French quote: « Pour l’établissement de l’impôt sur le revenu »
 - Read on: 2026-11-01; source `cgi2026.pdf` SHA-256 `dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a`
 - Read scope: Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.
 - Additional decisive anchors: « les bénéfices indirectement transférés »
