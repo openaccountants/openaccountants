@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Czech Republic: income tax for employees and other non-business income (2026) v0.1
+# Czech Republic: income tax for employees and other non-business income (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from the Income Taxes Act as published in e-Sbírka (version in force 1 August to 31 December 2026), the Tax Code, government regulations, MPSV and the Financial Administration, all read on 23 October 2026. It prepares working papers. It is not authority to file or pay.
 
