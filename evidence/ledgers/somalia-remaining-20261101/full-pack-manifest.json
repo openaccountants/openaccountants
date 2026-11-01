@@ -1,9 +1,9 @@
 {
   "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "read_date": "2026-11-01",
-  "review_status": "Full five-Guide source review complete; two quote fixes applied; targeted closure pending. Conditional baseline only.",
+  "review_status": "Full five-Guide review and targeted closure complete at source candidate2dd804ca1cde948dd5adcce2e2c3156fb3d58e0f; conditional source baseline only.",
   "files": {
-    "skills/somalia/README.md": "d61e35d5032ff72a831bf987e932bb9de1939efa55bdf3a3e762d7ee37396057",
+    "skills/somalia/README.md": "67316896151a6e52fbb40c24735465e47f2e4aca7c704e6ce888494697f2934e",
     "skills/somalia/so-company-formation.md": "c6761917261dcdd65d53e653d43ac61804a102af97981ca547977fc15a566629",
     "skills/somalia/so-corporate-income-tax.md": "f86a6cf8b1a158436e939372fc8ded863c10e237a638ba86297dc8df69a217bd",
     "skills/somalia/so-cross-border-residence.md": "3316b7247e777f3f32325d44b82e559fe5822c87b3430efc50495e32e9ccbbfc",
