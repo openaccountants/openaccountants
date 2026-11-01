@@ -38,7 +38,7 @@ Non-residents earning here, and local payers. Residence of individuals: see [Inc
 
 A permanent establishment is a fixed place of business, including a branch, office, warehouse, factory or well (art 40). Site work over 90 days and services by staff over 183 days in 12 months on one project also count (art 40.3). Storage only is excluded (art 40.4).
 
-Art 76 applies to gross invoices. Branch profits distributed are IRCM income on net profit (art 104.6). A parent adds back only 5% of a subsidiary's net dividends as costs only if it held over 25% for 365 days and both are in CEMAC (art 50).
+Art 76 applies to gross invoices. Branch profits distributed are IRCM income on net profit (art 104.6). For a capital company, a subsidiary's net dividends are taxed in the parent less a share of costs fixed at 5% (art 50.1; the wording leaves the mechanism to confirm). The conditions are over 25% held for the prior 365 days, both companies in CEMAC, shares kept registered and held for 2 years, and no exempt or preferential company tax for the subsidiary in the last 10 years (art 50.2).
 
 ## Deadlines and filing
 

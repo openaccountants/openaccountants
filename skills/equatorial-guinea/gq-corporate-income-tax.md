@@ -116,7 +116,7 @@ expected:
 
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
-Not yet confirmed: whether art 75.3 makes minimum tax final when it exceeds the tax, since art 80.6 turns the excess into a credit; the current BEAC reference rate; the old note that no provincial or local income taxes exist.
+Not yet confirmed: art 79.3 literally lifts the audit report for entities that do not meet two of the "not over" limits, and this skill reads it in the OHADA sense of not exceeding two; whether art 75.3 makes minimum tax final when it exceeds the tax, since art 80.6 turns the excess into a credit; the current BEAC reference rate; the old note that no provincial or local income taxes exist.
 
 <!-- openaccountants-cta-block -->
 

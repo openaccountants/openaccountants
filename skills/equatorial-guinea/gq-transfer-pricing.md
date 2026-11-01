@@ -41,7 +41,7 @@ The statement of gross related-party amounts goes with the DEF, in the form set 
 
 ## Penalties and interest
 
-Added-back profit bears tax at 25%, under-declaration sanctions of 10% to 25% (art 411.A) and interest of 2.5% a month (art 412). False or missing related-party notes are sanctioned under art 411.E.3.
+Added-back profit bears tax at 25%, under-declaration sanctions of 10% to 25% (art 411.A) and interest of 2.5% a month (art 412). False or fraudulent information, or missing notes on country-by-country or transfer pricing transactions, costs a fixed sanction by turnover if not put right within 30 working days of a demand (art 411.E.3, 411.E.5): 250,000 XAF up to 250,000,000; 5,000,000 XAF from 250,000,001 to 1,000,000,000; 25,000,000 XAF above 1,000,000,000.
 
 ## Cross-border points
 
@@ -96,7 +96,7 @@ expected:
 
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
-Not yet confirmed: a pricing method regulation; documentation content; the form for art 30.2; country report penalty amounts; art 74.3 reads "superior" where "inferior" is the expected sense, so confirm against a clean copy.
+Not yet confirmed: a pricing method regulation; documentation content; the form for art 30.2; whether the art 411.A 10% runs on the tax or on the undeclared amount ("la cantidad no declarada"), since the example uses the tax; art 74.3 reads "superior" on the page image, where "inferior" is the expected sense, so confirm whether a correction exists.
 
 <!-- openaccountants-cta-block -->
 

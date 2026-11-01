@@ -33,7 +33,7 @@ Anyone carrying on an economic activity for payment, regularly or occasionally (
 | Capital goods import self-assessment | Over 100,000,000 XAF (art 169) | 2026 | https://boe.gob.gq/files/LEY%20TRIBUTARIA.pdf |
 | Refund request minimum | 25,000,000 XAF credit (art 170.3.b) | 2026 | same |
 | Refund on capital investment | Over 100,000,000 XAF (art 170.2.d) | 2026 | same |
-| Withholding by public bodies | 100% high risk, 40% others, 0% Large Companies Unit residents (art 167.4) | 2026 | same |
+| VAT withholding, when the tax administration requires it of public bodies or private companies | 100% for significant fiscal risk, including individuals and non-residents; 40% others; 0% resident Large Companies Unit members (art 167.4) | 2026 | same |
 | Cash purchases | No input VAT over 300,000 XAF (art 158.1.h) | 2026 | same |
 | Records | Keep 10 years (art 166.2) | 2026 | same |
 
@@ -54,7 +54,7 @@ Return and payment are due by the 15th of the following month. A nil return is r
 
 The Regimen a Destajo form on the https://minhacienda-gob.com/formularios-de-declaraciones-fiscales page has output boxes only, with no input VAT.
 
-Credits carry forward (art 170.1). Refund or set-off within 3 months is open to companies that export, have structural credits from reduced rates, or invested over 100,000,000 XAF, and to diplomatic missions (art 170.2). Credits cannot be set against other taxes (art 170.6). Credit in a refund claim cannot be deducted the next month (art 170.5). Exporters attach export certificates and proof of repatriated funds (art 170.4).
+Credits carry forward (art 170.1). Refund or set-off within 3 months is open to legal persons, if compliant (art 170.3.a), that export, have structural credits from reduced rates, or invested over 100,000,000 XAF, and to diplomatic missions (art 170.2). Credits cannot be set against other taxes, except credits arising from a tax audit (art 170.6). Credit in a refund claim cannot be deducted the next month, and it is cancelled automatically if the refund is refused (art 170.5). Exporters attach export certificates and proof of repatriated funds, and the refund cannot exceed the VAT that the current rate would give on the period's exports (art 170.4).
 
 ## Penalties and interest
 
@@ -85,7 +85,7 @@ expected:
   total: 6450000
 ```
 
-**Decision: exporter with a credit, refund or carry forward.** A credit of 20,000,000 is under the minimum and carries forward. At 30,000,000 a refund claim is open, and that amount leaves the next return. Claim only if export VAT will not absorb it.
+**Decision: exporter with a credit, refund or carry forward.** A credit of 20,000,000 is under the minimum and carries forward. At 30,000,000 a refund claim is open, and that amount leaves the next return. If the refund is refused, the claimed credit is cancelled (art 170.5). Claim only if export VAT will not absorb it and the file is complete.
 
 ```oa-check
 name: Refund eligibility gap
