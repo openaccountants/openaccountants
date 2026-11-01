@@ -1,0 +1,141 @@
+Pinned base: aec6ba04066bb69d1168c8028ba11dd65cb90505
+Scoped pinned validator: 0 errors, 0 warnings
+Strict metadata: 8 descriptions 80-150 words; numeric version/title1.0; TG; year2026; tier2
+README: strict YAML, 7 named partial domains
+skills/togo/tg-company-formation.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-corporate-income-tax.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-cross-border.md: new Guide metadata and CTA integrity pass
+skills/togo/tg-income-tax.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-payroll-social.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-tax-overview.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-transfer-pricing.md: new Guide metadata and CTA integrity pass
+skills/togo/tg-vat-gst.md: old platform keys and CTA byte integrity pass
+skills/togo/tg-company-formation.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-corporate-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-cross-border.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-payroll-social.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-tax-overview.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-transfer-pricing.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+skills/togo/tg-vat-gst.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+checked 8 files, 16 oa-check blocks, 0 failures, 0 missing
