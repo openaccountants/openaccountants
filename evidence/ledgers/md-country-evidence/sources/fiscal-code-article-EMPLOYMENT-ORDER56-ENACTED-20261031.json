@@ -1,0 +1,19 @@
+{
+  "article": "EMPLOYMENT-ORDER56-ENACTED-20261031",
+  "official_url": "https://www.legis.md/cautare/getResults?doc_id=154136&lang=ro",
+  "text": "ORDIN Nr. 56\ndin 27-04-2026\n\nPublicat : 30-04-2026 în Monitorul Oficial Nr. 186-189 art. 334\n\nColoanele 5, 6 și 7 se completează concomitent.\n\nData începerii perioadei declarate (col.6) urmează să fie mai mică decât data încheierii perioadei declarate (col.7). Pentru concediul paternal perioada declarată poate fi nu mai mică de 5 zile și nu mai mare de 45 de zile.\n\n2) în Anexa nr.6, în punctul 5 textul „persoanele fizice care exercită activități în domeniul achizițiilor de produse din fitotehnie și/sau horticultură și/sau de obiecte ale regnului vegetal,” se substituie cu textul„ inclusiv fondatorii gospodăriilor țărănești (de fermier),”;\n\nNotă: Codul 173 nu se utilizează începând cu perioada fiscală 2026\n\nPrezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova.",
+  "sha256": "ed951bc1e52ee60fa409de7455673ecdec1913411c324015c4cf308e95ff4452",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T04:49:31.907938+00:00",
+  "source_points": {
+    "order_header": "ORDIN Nr. 56\ndin 27-04-2026",
+    "publication_header": "Publicat : 30-04-2026 în Monitorul Oficial Nr. 186-189 art. 334",
+    "point1_1a_group": "Coloanele 5, 6 și 7 se completează concomitent.",
+    "point1_1b_dates": "Data începerii perioadei declarate (col.6) urmează să fie mai mică decât data încheierii perioadei declarate (col.7). Pentru concediul paternal perioada declarată poate fi nu mai mică de 5 zile și nu mai mare de 45 de zile.",
+    "point1_2_farms": "2) în Anexa nr.6, în punctul 5 textul „persoanele fizice care exercită activități în domeniul achizițiilor de produse din fitotehnie și/sau horticultură și/sau de obiecte ale regnului vegetal,” se substituie cu textul„ inclusiv fondatorii gospodăriilor țărănești (de fermier),”;",
+    "point1_3_retired173": "Notă: Codul 173 nu se utilizează începând cu perioada fiscală 2026",
+    "point3_commencement": "Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova."
+  },
+  "format": "Selected exact browser DOM passages, layout whitespace normalized; full enacted body read. IPC21 amendments already separately applied; not duplicated here.",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

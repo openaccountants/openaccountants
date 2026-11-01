@@ -1,0 +1,53 @@
+[
+  {
+    "id": "MD-PW-001",
+    "priority": 2,
+    "file": "skills/moldova/md-property-tax.md",
+    "lines": [
+      32,
+      43,
+      57,
+      61,
+      120
+    ],
+    "finding": "Several precise article references point to the wrong or nonexistent paragraph, despite the narrated underlying rules being supported.",
+    "required_fix": [
+      "Fractional and undivided ownership: cite277(3)–(4), not277(2)–(3).",
+      "Neglect/uncultivated increase: cite280(1¹); no280(1²) exists in the retained current Code.",
+      "First in-year cadastral valuation before notice:281(1), not281(1¹).",
+      "Inheritance/donation predecessor debt and inherited-value cap:281(3), not281(4).",
+      "Transfer apportionment/new object/demolition:281(2),(2¹),(4), with281(3) for inheritance; remove nonexistent281(5).",
+      "Private nonresident-owned lease exception:277(1)(f), not277(1)(e¹)."
+    ],
+    "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro"
+  },
+  {
+    "id": "MD-PW-002",
+    "priority": 2,
+    "file": "skills/moldova/md-property-tax.md",
+    "lines": [
+      67,
+      69
+    ],
+    "finding": "Exemption summaries omit two limiting conditions and can expand the exempt population/assets.",
+    "required_fix": [
+      "Article283(1)(k) covers family members who permanently maintain/care for disabled persons. Say family members, rather than generic permanent carers.",
+      "Article283(5) expressly covers land/plots managed by free-zone administrations. State the land-only asset scope, rather than generic managed property."
+    ],
+    "responsive_original_quotes": [
+      "membrii familiilor care au la întreţinere şi îngrijire permanentă persoane cu dizabilităţi",
+      "De impozitul pe bunurile imobiliare (terenuri, loturi de pământ) sunt scutite administraţiile zonelor economice libere pe perioada aflării în gestiunea acestora a bunurilor imobiliare respective."
+    ],
+    "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro"
+  },
+  {
+    "id": "MD-PW-003",
+    "priority": 2,
+    "files": [
+      "skills/moldova/md-property-tax.md:24",
+      "skills/moldova/md-wealth-tax.md:24"
+    ],
+    "finding": "Both new H1 titles omit the content version. Frontmatter declares0.1; template requires the body opening to carry the version. No conflicting version is printed, but the new-file title contract is incomplete.",
+    "required_fix": "Appendv0.1 to both H1s, or the new content version used for the substantive repair. Keep heading and frontmatter equal. Do not change predecessor titles."
+  }
+]
