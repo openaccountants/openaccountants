@@ -243,4 +243,3 @@ Description of vacant premises also required.
 Loi 058-2017/AN, CGI official 2026 consolidation, art. 257(3), printed/physical p. 108; [official source](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf); read 2026-11-01; SHA256 `a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c`.
 
 > la consistance des locaux vacants.
-

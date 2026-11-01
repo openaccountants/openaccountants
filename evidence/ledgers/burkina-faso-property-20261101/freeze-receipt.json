@@ -19,8 +19,8 @@
     },
     {
       "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md",
-      "sha256": "1a84220013681f312000ee7457a05d8474184f513cdfb7063c7c524b3b76ca6c",
-      "bytes": 14813
+      "sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+      "bytes": 14812
     },
     {
       "path": "evidence/ledgers/burkina-faso-property-20261101/old-topic-destinations.json",
@@ -57,5 +57,6 @@
       "sha256": "24027a8d04fb74b51939f7778ccb89386226703c7333c4d51466302630644098",
       "bytes": 860
     }
-  ]
+  ],
+  "format_repair": "Human ledger trailing blank line removed; no Guide or ledger rule changed."
 }
