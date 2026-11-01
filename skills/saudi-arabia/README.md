@@ -4,7 +4,14 @@ applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
   SC: sa-gosi-saudization
-partial: {}
+partial:
+  IT-IND: "Intake/assembly are conditional research with residence/activity, ownership, source-currentness and portal holds; not complete individual tax coverage."
+  IT-CORP: "Named corporate Guide remains on 2025; current-law/base/special-sector holds unresolved."
+  VAT: "Named VAT Guide remains on 2025; registration and transaction-specific treatment held."
+  SC: "Named social Guide remains on 2025; applicable rates/entrant/employer rules unreviewed."
+  PR: "Named withholding/payroll material remains on 2025; no complete payroll coverage."
+  TP: "No complete transfer-pricing Guide; specialist thresholds held."
+  XB: "No complete cross-border Guide; treaty and specialist outcomes held."
 ---
 
 # Saudi Arabia: tax pack
@@ -15,7 +22,7 @@ Tax years: not stated (1 skill), 2026 (2 skills), 2025 (9 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Freelance intake](sa-freelance-intake.md), [Return assembly](sa-return-assembly.md) | 2026 | Ready |
+| Income tax | [Freelance intake](sa-freelance-intake.md), [Return assembly](sa-return-assembly.md) | 2026 | Partial |
 | Company tax | [Corporate tax](sa-corporate-tax.md) | 2025 | Needs updating |
 | VAT or sales tax | [VAT](saudi-arabia-vat.md) | 2025 | Needs updating |
 | Social contributions | [GOSI saudization](sa-gosi-saudization.md) | 2025 | Needs updating |
@@ -23,7 +30,7 @@ Tax years: not stated (1 skill), 2026 (2 skills), 2025 (9 skills).
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. The two team Guides are intake and assembly workflows with explicit legal holds; their current-year label does not certify the ten other Guides or resolve those holds. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Partial means the stated workflow remains conditional research with explicit unresolved legal or factual dependencies. A current tax-year label is not accountant attestation. The two team Guides are intake and assembly workflows with explicit legal holds; their current-year label does not certify the ten other Guides or resolve those holds. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
