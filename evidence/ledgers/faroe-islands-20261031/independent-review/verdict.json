@@ -1,0 +1,17 @@
+{
+  "head": "78741df60895885723c292a3f35b10037ef749cb",
+  "manifest_sha256": "f9de854cf1e3a54f76ab5c4ddc5867315bc5b355253d22008b3cba900b3f20b0",
+  "verdict": "ACCEPT_BOUNDED_PARTIAL_TIER2_DELTA",
+  "blocking_findings": 0,
+  "rows_checked": 47,
+  "levy_rows": 43,
+  "formation_rows": 4,
+  "guide_nonblank_units_preserved": 1520,
+  "historical_files_byte_exact": 310,
+  "examples_checked": 18,
+  "skill_checks_passed": 90,
+  "old_rules_removed": 0,
+  "professional_attestation": false,
+  "country_complete": false,
+  "all_18_inputs_still_match": true
+}

@@ -1,0 +1,474 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 61 frá 7. juni 2007 um fíggjarviðurskifti fólkakirkjunnar
+7. juni 2007Nr. 61
+Løgtingslóg um fíggjarviðurskifti fólkakirkjunnar
+Kapittul 1 Kirkjukassin
+Kapittul 2 Fíggjarætlan og roknskapur hjá kirkjukassanum
+Kapittul 3 Kirkjuskattur
+Kapittul 4 Kirkjugrunnurin
+Kapittul 5 Tiltaksgrunnurin
+Kapittul 6 Landskassastuðul
+Kapittul 7 Gildiskoma og skiftisreglur
+Samsvarandi samtykt Løgtingsins staðfestir og kunnger løgmaður hesa løgtingslóg:
+Kapittul 1
+Kirkjukassin
+§ 1. Kirkjuráðið umsitur kirkjukassan hjá kirkjuliðnum í kirkjusóknini.
+Stk. 2. Kirkjuráð, ið stjórnar fleiri kirkjum í somu kirkjusókn, kann gera av, at hvør kirkja hevur sín sjálvstøðuga kirkjukassa.
+§ 2. Inntøkurnar hjá kirkjukassanum eru avkast av ogn kirkjunnar, talvupeningur til frama fyri kirkjuna og gjøld fyri at nýta kirkjuna umframt avlopið í kirkjukassanum árið fyri.
+Stk. 2. Kirkjugrunnurin fíggjar tann partin av góðkendu útreiðslum kirkjukassans, sum inntøkurnar sbrt. stk. 1 ikki røkka til.
+Stk. 3. Kirkjukassin kann hava inntøkur av staðbundnum kirkjuskatti til ávís endamál, og av talvupeningi til ávís endamál, ið kunnu fara beinleiðis á kontuna sbrt. § 5.
+§ 3. Kirkjukassin fíggjar:
+1) viðlíkahald og rakstur av kirkju, gudstænastuhøli og bygningi til kirkjubrúk, og kirkjusýn hjá kirkjuráðnum,
+2) keyp av grundøki ella bygningi, umbygging, bygging, og niðurtøku av kirkju ella bygningi til kirkjubrúk,
+3) konfirmasjónsfyrireiking og konfirmasjón,
+4) samsýning og aðrar útreiðslur til hjálparfólk kirkjunnar og løn til fólk, sum eru sett í starv við kirkjuna við heimild í lóg,
+5) neyðugar útreiðslur í sambandi við lógarásetta virki kirkjuráðsins,
+6) luttøku í fakligum virksemi, sum hevur týdning fyri starvið sum kirkjuráðslimur ella hjálparfólk kirkjunnar,
+7) millumkirkjuligt samstarv,
+8) tiltøkupening.
+Stk. 2. Kirkjukassin kann fíggja útreiðslur til orgul, ljós, hita, hoyrnalikkju o. a. hoyriútgerð til kirkju, ið ikki er sjálvsogn.
+Stk. 3. Kirkjuráðið kann nýta tiltøkupening at fremja kirkjuliga lívið í kirkjusóknini, prestagjaldinum ella kommununi, ella til kirkjulig endamál, sum hava týdning fyri kirkjuna sum heild.
+Stk. 4. Kirkjuráðið ræður yvir tí, sum kemur inn, tá ið peningur verður savnaður inn í kirkjuni til at fremja arbeiðið í kirkjuliðnum.
+Stk. 5. Landsstýrismaðurin ásetir eftir tilmæli frá stiftsstjórnini neyvari reglur um viðurskiftini sambært stk. 1, nr. 3, 4, 5, 6 og 7. Ásett verður, hvør samsýning kann vera til hjálparfólk, hvussu nógvur tiltøkupeningurin kann vera í mun til støddina á kirkjusóknini og reglur fyri tann pening, sum verður savnaður inn í kirkjuni til at fremja arbeiðið í kirkjuliðnum.
+§ 4. Ikki er loyvt at skuldbinda ogn kirkjunnar uttan loyvi frá landsstýrismanninum.
+Stk. 2. Landsstýrismaðurin kann loyva skuldbinding eftir tilmæli frá stiftsstjórnini.
+§ 5. Kirkjukassin hevur serliga kontu at spara upp til ávís endamál.
+Stk. 2. Kirkjuráðið kann seta eina upphædd, ið samsvarar við í mesta lagi tað, sum er komið inn við gávum, innsavningum, staðbundnum kirkjuskatti og øðrum tiltøkum, á kontuna.
+Stk. 3. Landsstýrismaðurin ásetir í kunngerð, hvussu kontan verður nýtt.
+Kapittul 2
+Fíggjarætlan og roknskapur hjá kirkjukassanum
+§ 6. Kirkjuráðið ger eftir boðum frá próstadømisráðnum fíggjarætlan fyri inntøkur og útreiðslur og sendir próstadømisráðnum fíggjarætlanina til góðkenningar í seinasta lagi 1. juni í árinum undan fíggjarárinum, sum fíggjarætlanin er fyri.
+Stk. 2. Landsstýrismaðurin ásetir reglur fyri, hvussu kirkjuráðið ger fíggjarætlanina.
+§ 7. Próstadømisráðið boðar umboðum fyri kirkjuráðið til fíggjarætlanarsamráð.
+Stk. 2. Í fíggjarætlanarsamráðnum verða einstøku fíggjarætlanirnar viðgjørdar og raðfestar. Fíggjarætlanarsamráðið tekur ikki avgerð.
+§ 8. Við støði í viðgerðini í fíggjarætlanarsamráðnum gevur próstadømisráðið fyri 15. november stiftsstjórnini boð um, hvussu stór upphædd verður at krevja inn við landskirkjuskatti fyri at samsvara við góðkendu ynski kirkjukassanna í próstadøminum.
+Stk. 2. Tá ið próstadømisráðið roknar, hvussu stór upphæddin verður at krevja inn við landskirkjuskatti, roknar tað ikki útreiðslur eftir § 3, stk. 1, nr. 2 við fyri kirkjusókn, sum er størri enn 1000 kirkjufólk fyrr enn tað árið, tá ið kirkjuráðið hevur spart upp samsvarandi við í minsta lagi 1/3 av góðkenda byggikostnaðinum sbrt. lógini um bygningar fólkakirkjunnar. Fyri kirkjusókn, sum er minni enn 1000 kirkjufólk, roknar próstadømisráðið ikki útreiðslur eftir § 3, stk. 1, nr. 2 við fyrrenn tað árið, tá ið kirkjuráðið hevur spart samsvarandi við í minsta lagi 1/3 av góðkenda byggikostnaðinum sbrt. lógini um bygningar fólkakirkjunnar íroknað stuðulin, ið Kirkjugrunnurin veitir eftir § 20.
+Stk. 3. Góðkendu ynskini um pening at krevja inn sum landskirkjuskattur kunnu ikki uttan samtykki landsstýrismansins verða meira enn 10 prosent hægri enn miðal góðkendu ynskini um pening at krevja inn sum landskirkjuskattur til próstadømið seinastu 4 árini. Eru samtaldu tilmælti ynskini hjá próstadømisráðunum hægri enn 10 prosent, boðar stiftsstjórnin umboðum fyri próstadømisráðini til fíggjarætlanarsamráð.
+§ 9. Roknskaparárið hjá kirkjukassanum er álmanakkaárið.
+Stk. 2. Kirkjuráðið sendir próstadømisráðnum grannskoðaðan roknskap til góðkenningar fyri 1. apríl, aftaná at fíggjarárið er úti.
+Stk. 3. Landsstýrismaðurin setir reglur fyri, hvussu roknskapurin skal verða settur upp, um framløgu av roknskapinum, um nýtslu av roknskaparkønari hjálp í sambandi við gerð og framløgu av roknskapinum, um kassaeftirlit, um grannskoðan, um góðkenning av roknskapinum o.a.
+Stk. 4. Góðkenningin hjá próstadømisráðnum viðvíkjandi roknskapinum kann verða skotin inn fyri stiftsstjórnina í seinasta lagi 4 vikur eftir, at próstadømisráðið hevur tikið avgerð. Avgerðin hjá stiftsstjórnini viðvíkjandi roknskapinum kann ikki verða kærd til annan fyrisitingarmyndugleika.
+§ 10. Kirkjuráðið leggur ársroknskapin hjá kirkjukassanum alment fram.
+Kapittul 3
+Kirkjuskattur
+Landskirkjuskattur
+§ 11. Limur í fólkakirkjuni rindar landskirkjuskatt í mun til skattskyldugu inntøkuna.
+Stk. 2. Landskirkjuskattur verður roknaður í einum fyri alt landið og kravdur inn eftir somu reglum sum kommunuskattur. Tó verður prosentið ásett við 2 desimalum.
+§ 12. Landsstýrismaðurin ásetir kirkjuskattaprosentið eftir tilmæli frá stiftsstjórnini.
+Stk. 2. Landskirkjuskattaprosentið kann í mesta lagi vera 0,65.
+Staðbundin kirkjuskattur
+§ 13. Landsstýrismaðurin kann loyva, at limir fólkakirkjunnar í kirkjusóknini rinda staðbundnan kirkjuskatt eftir somu reglum sum landskirkjuskatt og saman við honum. Staðbundni kirkjuskatturin kann í mesta lagi vera 0,30 % av skattskyldugu inntøkuni.
+Stk. 2. Loyvið verður givið eftir tilmæli frá stiftsstjórnini, tá ið kirkjuni á staðnum tørvar pening til ávíst endamál í eitt ávíst áramál.
+Stk. 3. Kirkjuráðið metir um ávísa fíggjartørvin og søkir um próstadømisráðið stiftsstjórnina um loyvi til at krevja inn staðbundnan kirkjuskatt.
+Stk. 4. Staðbundin kirkjuskattur verður roknaður í einum fyri alla kirkjusóknina og kravdur inn eftir somu reglum sum kommunuskattur. Tó verður staðbundna kirkjuskattaprosentið ásett við 2 desimalum.
+Onnur viðurskifti
+§ 14. Tann, sum ikki er limur í fólkakirkjuni gevur Toll- og Skattstovu Føroya boð, ynskir viðkomandi at rinda landskirkjuskatt.
+Stk. 2. Skuldbindingar- og innheintingarreglurnar í kapitli 13 í løgtingslóg um landsskatt og kommunuskatt galda í sambandi við innkrevjing av landskirkjuskatti og staðbundnum kirkjuskatti.
+§ 15. Landsstýrismaðurin ásetir í kunngerð neyvari reglur um landskirkjuskatt og um staðbundnan kirkjuskatt. Somuleiðis kann landsstýrismaðurin áseta, hvussu økið, har staðbundin kirkjuskattur kann verða kravdur, verður ásett og eyðmerkt og onnur viðurskifti í sambandi við innkrevjingina og útgjaldið.
+Føroya Gjaldstova
+§ 16. Føroya Gjaldstova rindar eftir boðum frá stiftsstjórnini kirkjuráðnum partin av innkravda landskirkjuskattinum, sum samsvarar við upphæddina í góðkendu fíggjarætlanini.
+Stk. 2. Føroya Gjaldstova rindar Kirkjugrunninum tann partin av innkravda landskirkjuskattinum, sum er eftir, tá ið kirkjuráðini hava fingið sín part eftir stk. 1.
+§ 17. Føroya Gjaldstova rindar eftir boðum frá stiftsstjórnini viðkomandi kirkjuráði tað, sum kemur inn við staðbundnum kirkjuskatti í tí roknskaparári, sum líkningin fevnir um.
+Kapittul 4
+Kirkjugrunnurin
+§ 18. Stiftsstjórnin stjórnar Kirkjugrunninum.
+Stk. 2. Inntøkur og útreiðslur hjá Kirkjugrunninum verða ikki tiknar við á løgtingsfíggjarlógina.
+Stk. 3. Inntøkurnar hjá Kirkjugrunninum eru studningur sbrt. kapitli 6, avkast av ognum grunsins og sjálvboðin gjøld.
+Stk. 4. Tað, sum inntøkurnar eftir stk. 3 ikki nøkta, verður kravt inn sum landskirkjuskattur.
+Stk. 5. Inntøka hjá Kirkjugrunninum kann eisini vera útgjald úr Tiltaksgrunninum, tá ið serligar umstøður tala fyri tí.
+§ 19. Kirkjugrunnurin eigur og rekur prestagarðar og biskupsgarðin.
+Stk. 2. Kirkjugrunnurin rindar:
+1) løn til sóknarprest, próst og biskup,
+2) eftirútbúgving o. t. hjá sóknarprestum og øðrum starvsfólki, ið kirkjugrunnurin lønar,
+3) skrivstovuhald í sambandi við sóknarprestaembætið,
+4) flutnings- og aðrar útreiðslur í sambandi við sóknarprestaembætið.
+Stk. 3. Kirkjugrunnurin rindar fyri umsitingina hjá biskupi og stiftsstjórn, prósti og próstadømisráði.
+Stk. 4. Kirkjugrunnurin rindar útreiðslurnar til val til stiftsstjórnina og próstadømisráðini og til fundir teirra, herundir ferðaendurgjald og dagpengar til valdu limirnar.
+Stk. 5. Kirkjugrunnurin kann rinda útreiðslur til luttøku í fakligum virksemi, sum hevur týdning fyri starvið sum limur í stiftsstjórnini ella próstadømisráðnum. Stiftsstjórnin ásetir vegleiðandi reglur um, hvørjar útreiðslur koma undir ásetingina.
+Stk. 6. Kirkjugrunnurin rindar útreiðslur, sum viðvíkja virkseminum hjá kirkjuni yvir høvur.
+§ 20. Kirkjugrunnurin kann eftir umsókn frá kirkjuráði í kirkjusókn, sum hevur færri enn 1000 kirkjufólk, heilt ella lutvíst veita studning til at byggja, umbyggja ella taka niður kirkju, bønhús, guðstænastuhøli ella bygning til kirkjubrúk.
+Tiltøkupeningur
+§ 21. Stiftsstjórnin kann seta av ávísa, avmarkaða upphædd sum tiltøkupening at fremja kirkjuliga lívið í landinum ella til kirkjulig endamál, sum hava týdning fyri kirkjuna sum heild.
+Stk. 2. Landsstýrismaðurin kann áseta neyvari reglur um tiltøkupening, m.a. um hvørji endamál hann kann fara til, og hvussu nógvur hann kann vera í mun til raksturin.
+Avsetingar
+§ 22. Stiftsstjórnin kann seta av ávísa upphædd til gjaldføri Tiltaksgrunsins, er gjaldføri Tiltaksgrunsins minni enn 60 % av meðal landskirkjuskattinum undanfarnu 4 árini.
+Fíggjarætlan og roknskapur
+§ 23. Á hvørjum ári, innan eina freist, sum landsstýrismaðurin ásetir, sendir stiftsstjórnin landsstýrismanninum uppskot til fíggjarætlan hjá Kirkjugrunninum fyri komandi roknskaparár til góðkenningar.
+Stk. 2. Á fíggjarætlanini er samtaldi tørvurin fyri, hvat verður at krevja inn sum landskirkjuskattur, sbr. § 18, stk 3, íroknað tilmælini frá próstadømisráðunum um, hvussu nógvur peningur verður at krevja inn við landskirkjuskatti til kirkjukassarnar í próstadømunum, sbr. § 8.
+Stk. 3. Fíggjarætlanin kann, frároknað sáttmálabundnar lønarhækkingar, ikki vera meira enn 10 prosent hægri enn miðal fíggjarætlanin seinastu 4 árini
+Stk. 4. Eru inntøkurnar eftir § 18, stk. 2 størri, enn ætlað, ella eru útreiðslurnar eftir § 19 lægri, enn ætlað, roknar Kirkjugrunnurin í fíggjarætlanini við at lata Tiltaksgrunninum munin.
+Stk. 5. Eru inntøkurnar eftir § 18, stk. 2 minni, enn ætlað, ella gera viðurskifti, sum ikki bar til at meta um frammanundan, at útreiðslurnar eftir § 19 eru størri enn ætlað, roknar Kirkjugrunnurin í fíggjarætlanini við at fáa munin úr Tiltaksgrunninum.
+§ 24. Roknskaparárið hjá Kirkjugrunninum er álmanakkaárið.
+Stk. 2. Roknskapurin verður grannskoðaður av Landsgrannskoðanini.
+Stk. 3. Stiftsstjórnin leggur landsstýrismanninum roknskapin hjá Kirkjugrunninum til góðkenningar fyri 1. apríl í árinum aftaná, at figgjarárið er úti.
+§ 25. Landsstýrismaðurin ásetir í kunngerð reglur um Kirkjugrunnin. Ásett verður, hvussu stiftsstjórnin stjórnar Kirkjugrunninum, og hvussu virksemið hjá kirkjugrunninum skal verða skipað í mun til próstadømisráðini.
+Kapittul 5
+Tiltaksgrunnurin
+§ 26. Stiftsstjórnin stjórnar Tiltaksgrunninum.
+Stk. 2. Inntøkur og útreiðslur hjá Tiltaksgrunninum verða ikki tiknar við á løgtingsfíggjarlógina.
+Stk. 3. Inntøkurnar hjá Tiltaksgrunninum eru inngjald og avlop úr Kirkjugrunninum.
+Stk. 4. Tiltaksgrunnurin fíggjar serligan útreiðslutørv hjá Kirkjugrunninum, sbr. § 23.
+Stk. 5. Landsstýrismaðurin kann áseta neyvari reglur um Tiltaksgrunnin.
+§ 27. Roknskaparárið hjá Tiltaksgrunninum er álmanakkaárið.
+Stk. 2. Roknskapurin verður grannskoðaður av Landsgrannskoðanini.
+Stk. 3. Stiftsstjórnin leggur landsstýrismanninum roknskapin hjá Tiltaksgrunninum til góðkenningar fyri 1. apríl í árinum aftaná, at figgjarárið er úti.
+Kapittul 6
+Landskassastuðul
+§ 28. Landskassin veitir fólkakirkjuni stuðul til rakstur.
+§ 29. Umframt stuðulin eftir § 28, veitir landskassin fólkakirkjuni stuðul, ið samsvarar við minst 40% av lønunum til sóknarprestarnar, sum eru í starvi sum tænastumenn í fólkakirkjuni, og 100% av lønini til biskupin.
+Stk. 2. Landskassin rindar eftirløn hjá tænastumonnum í fólkakirkjuni.
+§ 30. Landskassin kann veita 1/3 av góðkenda byggikostnaðinum í stuðli, tá ið kirkja verður bygd ella umbygd.
+Stk. 2. Stuðulin eftir stk. 1 verður veittur, tá ið landsstýrismaðurin, sambært løgtingslóg um bygningar fólkakirkjunnar hevur givið endaligt loyvi til, at kirkja verður bygd.
+Kapittul 7
+Gildiskoma og skiftisreglur
+§ 31. Henda løgtingslóg kemur í gildi 29. juli 2007. Tó kemur § 19, stk. 2, nr. 3 í gildi 1. januar 2008.
+Stk. 2. Samstundis fer úr gildi “anordning nr. 887 af 8. desember 1999 om ikrafttræden for Færøerne af lov om folkekirkens økonomi”, sum seinast broytt við “anordning nr. 1602 af 20. december 2006 om ændring af anordning om ikrafttræden for Færøerne af lov om folkekirkens økonomi”.
+Stk. 3. Tann upphædd, sum síðan 1. januar 2007 er álíknað limum fólkakirkjunnar sbrt. § 20 í lov om folkekirkens økonomi, verður fyrisitin sbrt. hesari lóg.
+Stk. 4. Eftirregulering av kirkjuskatti til og við 2006 verður avroknað við Kirkjugrunnin.
+§ 32. Salda 29. juli 2007 í verandi “Færøernes kirkefond” verður 29. juli 2007 latin Kirkjugrunninum.
+Stk. 2. Kirkjugrunnurin rindar stuðul, sum “Færøernes kirkefond” hevur givið tilsøgn um, men ikki hevur veitt hin 29. juli 2007.
+§ 33. Fíggjarætlanir hjá kirkjukassunum fyri fíggjarárið 2007, sum góðkendar av stiftsstjórnini tann 29. november 2006, eru galdandi restina av fíggjarárinum.
+Tórshavn, 7. juni 2007
+Jóannes Eidesgaard (sign.)
+løgmaður
+/ Jógvan á Lakjuni (sign.)
+Lm. nr. 122/2006
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Mentamálaráðið
+Útgávudagur: 08-06-2007
+Tilvísingar
+Heimildir
+Avtøkur
+Løgtingsmál
+Løgtingsmál nr: 122/2006
+Kunngerðablaðið
+Kunngerðarblað 2007 A - Hefti 12 A frá 8. juni 2007
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

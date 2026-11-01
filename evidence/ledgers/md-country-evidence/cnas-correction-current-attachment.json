@@ -1,0 +1,42 @@
+{
+  "article": "CNAS-CORRECTION-CURRENT-20261031",
+  "official_url": "https://cnas.gov.md/sites/default/files/2026-04/publicpublications7203459mdregulamentcor.pdf",
+  "sha256": "433e8057da6b318bd93f1190a89f977915f84bf90baf9d778e9b00610baa61b9",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T08:23:53.638498+00:00",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/cnas-correction-current.pdf",
+  "binary_sha256": "790f7ce53efe884fc0844d951047df6bade96c6b5d6c3df6909b7d4e4ba2820e",
+  "binary_size_bytes": 583110,
+  "full_binary_retained": true,
+  "rendered_pages": 6,
+  "visually_read_rendered_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "rendered_page_paths_relative_to_country_workspace": [
+    "validation/cnas-correction-current-render/page-1.png",
+    "validation/cnas-correction-current-render/page-2.png",
+    "validation/cnas-correction-current-render/page-3.png",
+    "validation/cnas-correction-current-render/page-4.png",
+    "validation/cnas-correction-current-render/page-5.png",
+    "validation/cnas-correction-current-render/page-6.png"
+  ],
+  "rendered_page_sha256": [
+    "953e261171b2a8b7a4d96626e15b2717ff338a4328ced7bb738d9cadfd07e750",
+    "c2aae6c5a3cfd592b095bafde5a8bf76dd622ed4e8369bb402063f4065cb36da",
+    "f04ff19bb82692bf13af7c525464cfd79d5a251c1199f01974edace7319c3597",
+    "fbb5d421ccf106d0dc6cd4b3cc07075b4727cdc114499b24bb50b40b6e55953a",
+    "4f4369ff28fb937f7f3f034779d89677e5a7b1b33e2b32bfe205457943776647",
+    "8e951a99de3965e0c0ea5cce0e3acc168b2e6527c7b55c45d3dba1612b153c69"
+  ],
+  "format": "OriginalofficialPDFretainedunchanged; complete extractedtext/all6renderedpages read and visuallyinspected",
+  "parent_current_url": "https://cnas.gov.md/ro/servicii/servicii/pentru-platitorii-de-contributii/regulamente",
+  "current_version_observation": "Officialcurrentlistlink87read31October2026 points to this117-A/1July2025 amendedconsolidation; actual31points and annex1read.",
+  "scope_limits": "No authenticatedfiling, individualrequest or actualposting/refundverified.10workingdaydispatch differs from Treasuryexecution/systemrecording. Institution-specific currenteconomiccodes and case-specificpenaltyaccountinteraction require actualaccount evidence; no invented codes.",
+  "portal_test": false,
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

@@ -1,0 +1,126 @@
+{
+  "sources": [
+    {
+      "source_id": "A",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+      "raw_file_relative_to_work_sources": "allowances-rules-20260323.pdf",
+      "raw_sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+      "extracted_text_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+      "read_on": "2026-10-28",
+      "read_scope": "Amendment table and rules 3A, 6\u201322, 24\u201325 and 29. No claim to a complete read of rule 3 exemptions or every subsidiary instrument.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "T",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "raw_file_relative_to_work_sources": "income-tax-act-20260323.pdf",
+      "raw_sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "extracted_text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+      "read_on": "2026-10-28",
+      "read_scope": "Sections 14A\u201314B, 28(1)\u2013(2), 34(1)\u2013(3), 39(1)\u2013(3)/(5)\u2013(7), 47, 64, 65(1)\u2013(2)/(4)\u2013(5), s74 ordinary-residence/year definitions, Schedule 1 Tables A/B, Schedule 3 paragraphs 19A\u201319B and Schedule 9 paragraphs 13\u201318/20; not all 297 pages.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "R",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+      "raw_file_relative_to_work_sources": "rates-tax-rules-20240701.pdf",
+      "raw_sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+      "extracted_text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+      "read_on": "2026-10-28",
+      "read_scope": "Rules 2, 3, 3A and only the assessment-year scope sentence in rules 3B and 3C.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "O",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1952-11/1952-11o.pdf",
+      "raw_file_relative_to_work_sources": "income-tax-act-1952-repealed.pdf",
+      "raw_sha256": "b3a762d83ff98de67b53da49a286b117d390baa6c0e9fcfa5c8507a5f57e04c0",
+      "extracted_text_sha256": "65bee2172adf4dad233a0987eace19e3006e4c2e7cdc19c401d925c9e2f14741",
+      "read_on": "2026-10-28",
+      "read_scope": "Repealed section 34(3)\u2013(4); historical subject only, no current charging authority.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "H",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/home-purchase-deductions-rules-1989-398/download",
+      "raw_file_relative_to_work_sources": "individual/home-purchase-current.pdf",
+      "raw_sha256": "5528acd663a75f53881623f7d10c2ef2bb305546bbb61e8ff0d04100b0f0b62a",
+      "extracted_text_sha256": "31b35cc94e29165427fe0cc4f438067c634f6352bb4cfc1049147bfcf793b740",
+      "read_on": "2026-10-28",
+      "read_scope": "All operative rules 2\u20138, including historical conditions, allocation and forfeiture; full 9-page source read.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "P",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/home-purchase-special-deduction-rules-2004-412/download",
+      "raw_file_relative_to_work_sources": "individual/home-purchase-special-current.pdf",
+      "raw_sha256": "8bbb00340ecce3afb8abd263ad45ce1d5205d4596ef8a98f6550872e19a833c1",
+      "extracted_text_sha256": "8dac9761e7771a5600e8f2031055ec6d25902d4a423a549d65605eddf40764b5",
+      "read_on": "2026-10-28",
+      "read_scope": "All operative rules 2\u20134; full 5-page source read; printed historic entitlement conditions unresolved for new post-2019 case.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "N",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/paye",
+      "raw_file_relative_to_work_sources": "individual/paye-current.html",
+      "raw_sha256": "ba68a75a7e09799df7fc36c4599023e43444ff069b2ad120c9152009a935925f",
+      "extracted_text_sha256": "dc3c0191c4a0f7f57069d03f358ac3af4e265f63e4deca97ddadc32bc3ae4634",
+      "read_on": "2026-10-28",
+      "read_scope": "Property application documents/yearly interest letter, departure FAQ, public forms and period labels. No reliance on 2025/26 table for new 2026/27 statutory amount.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "E",
+      "url": "https://portal.egov.gi/services/tax",
+      "raw_file_relative_to_work_sources": "individual/tax-services-current.html",
+      "raw_sha256": "b9597ce5b105eb7b61a282b241bc30869d2673eb35f8f72d821b7e7db9f07b4d",
+      "extracted_text_sha256": "9601ff898a07ec06f4bc051dcca2eb0f02524f27cfb4052a77f035537118719d",
+      "read_on": "2026-10-28",
+      "read_scope": "Public service entries, account/identity/tax registration and taxpayer-reference notices. No login, form, payment or submission.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "SE",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed",
+      "raw_file_relative_to_work_sources": "individual/self-employed-current.html",
+      "raw_sha256": "1e5042ee3f618959b7fac82522c1c8de5251cde7848ff36ea20aa7cdb2bfac6c",
+      "extracted_text_sha256": "fbe5057b11b8f3c0609d63c4cf351b440a3b93dc4a171b7e4c550c5d16000641",
+      "read_on": "2026-10-28",
+      "read_scope": "Payments-on-account/balance FAQ and explicit old allowance-table period label; no reliance on old allowance figures.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "Q",
+      "url": "https://www.legislation.gov.uk/uksi/2010/51/data.xml",
+      "raw_file_relative_to_work_sources": "individual/qnups-revised.xml",
+      "raw_sha256": "bd6472b4eb7741dc1b5a83bdf82229084f4236bdb7ba3ce0895d8ec1e1da90f3",
+      "extracted_text_sha256": "7a86bb1ba043c68b7e65c242d0ff86468c86c75d458801cfe8742d93352337b5",
+      "read_on": "2026-10-28",
+      "read_scope": "Revised XML regulations 2\u20137 and Schedule; root RestrictStartDate and SHA matched to preserved 22 October receipt.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "HM",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm17025",
+      "raw_file_relative_to_work_sources": "individual/hmrc-ihtm17025.html",
+      "raw_sha256": "b14b48cb31be7c4eee42660d4393770c534aded48975138ec8940cf2a5238eab",
+      "extracted_text_sha256": "9d93f3dcc23de244331aad9d12dcf56fe663ef3bd29b5433fc7987f64584fa03",
+      "read_on": "2026-10-28",
+      "read_scope": "Identification of SI 2010/51 only; no new inheritance-tax conclusion.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    },
+    {
+      "source_id": "AI",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/income-tax-allowances-deductions-and-exemptions-rules-1992-405",
+      "raw_file_relative_to_work_sources": "individual/allowances-index-current.html",
+      "raw_sha256": "500ac450ffe3719cfb7c7fa42881c84de94254ad50babeb6f649d745816d23c8",
+      "extracted_text_sha256": "4118166dcc6588a41c602878a7783bb31e34a28aea38d5fcc2b43931bec206eb",
+      "read_on": "2026-10-28",
+      "read_scope": "Current-version date and related amendment index; PDF amendment table separately confirms commencement.",
+      "cache_policy": "Saved primary source reused; current public pages fetched once for this continuation. No repeated generic research required."
+    }
+  ],
+  "failed_url_avoided": "Old /income-tax/1952-11o.pdf returned404; retrieved verified /income-tax/1952-11/1952-11o.pdf instead.",
+  "read_scope_limits": "Neither whole Act nor all pension/filing instruments read. Prior research and independent review evidence retained; new writer content is not accepted."
+}

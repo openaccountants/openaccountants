@@ -1,0 +1,110 @@
+Tax and Royalties -Hopp til høvuðsinnihald (Skip to main content)
+Individuals Business TAKS
+Føroyskt
+Search
+Borgaragluggin
+Fyri at rita inn skalt tú hava Samleikan
+Hevur tú Samleikan?
+Rita inn Hevur tú ikki Samleikan?
+Stovna Samleikan
+Vinnugluggin
+Fyri at rita inn skalt tú hava ein brúkara og Samleikan
+Hevur tú tað?
+Rita inn
+Hevur tú ikki ein brúkara?
+Stovna brúkara
+Hevur tú ikki Samleikan?
+Stovna Samleikan
+Business
+Tax
+Tax and Royalties
+Read Print
+Tax and Royalties
+Royalties are payments made for the right to use another person’s copyright to a literary, artistic, or scientific work. The person who receives royalties must pay tax on them.
+Here we describe the tax rules and explain how the payer and the recipient should proceed. At the end, we briefly explain the concepts of a work and copyright.
+How royalties are taxed
+Royalties are taxed as ordinary income if the recipient is resident in the Faroe Islands
+This is in accordance with Sections 1 and 25 of the Tax Act. Royalty payments constitute B-income and must be reported to the Faroese Tax Authority (TAKS). See the section "Both the payer and the recipient must notify TAKS of royalty payments."
+Royalties are taxed at either 0% or 25%, if the recipient is resident abroad
+Whether the tax rate is 0% or 25% depends on whether the country in which the recipient is resident has a double taxation agreement with the Faroe Islands.
+If the recipient's country of residence has a double taxation agreement with the Faroe Islands, the tax rate is 0%. Under the agreement, the Faroe Islands are not entitled to tax royalty payments received by such recipients.
+If the recipient's country of residence does not have a double taxation agreement with the Faroe Islands, the tax rate is 25%. This is in accordance with Section 2(1)(c) of the Tax Act and Section 7 of the Withholding Tax Act. The tax is a gross withholding tax, meaning that the recipient is not entitled to deduct any business expenses that may have been incurred.
+The countries and territories that have double taxation agreements with the Faroe Islands are: Iceland, Denmark, Norway, Sweden, Finland, Greenland, England, Scotland, Wales, Northern Ireland, Switzerland, India, Guernsey, Jersey, the Cayman Islands, the Isle of Man, Bermuda, and the British Virgin Islands.
+Both individuals and companies may receive royalty payments
+In this text, the term "recipient" refers to both individuals and companies. Where the tax rules differ between individuals and companies, this is stated explicitly.
+Note the meaning of tax residence
+For an individual, being resident in a country means that they live there, have their personal ties there, and regard it as their home, or that they have been present in the country for more than 180 days during a 12-month period.
+For a company, being resident in a country means that its registered head office and its place of effective management are located in that country.
+The payer must withhold 25% of royalties if the recipient is resident abroad
+This is a tax that the payer must remit to an account held by the Faroese Tax Authority (TAKS). The obligation is imposed on the payer pursuant to Section 7 of the Withholding Tax Act. When making the payment, the payer must also provide the recipient's name, address, and personal or company identification number (P-tal/V-tal).
+The TAKS bank account numbers can be found in the bottom of this website.
+Recipients residing abroad may apply to TAKS for a refund of the tax
+The recipient may be entitled to a refund, if they are resident in a country, that has a double taxation agreement with the Faroe Islands.
+Applications must be submitted using the form "Application for Refund of Royalty Tax." The form can be downloaded from the files section on this page.
+The payer must withhold 25% of royalties if the recipient is resident abroad.
+The payer must withhold 25% of royalties if the recipient is living abroad.
+Both the payer and the recipient must notify TAKS of royalty payments
+How the payer reports royalty payments
+The payer must report royalty payments using the form "Notification of Royalty Payment."
+If there is only one recipient, use the form "Notification of Royalty Payment – Single Recipient." If there are multiple recipients, use the forms "Notification of Royalty Payment – Multiple Recipients" and "Recipients of Royalty Payments." These forms can be downloaded from the forms section on this page, completed, and submitted.
+The reporting deadline is 31 January of the year following the year in which the payment was made. The notification must be submitted annually.
+The payer's reporting obligation is laid down in Section 118(1)(c) of the Tax Act.
+How the recipient reports royalty payments
+Individuals who are not required to submit financial statements must report royalty income either by registering it as preliminary taxable income or by filing a tax return and entering the amount in box 260 – "Other income, often one-off income."
+Individuals who are required to submit financial statements must report the royalty income in their financial statements.
+Companies must likewise report royalty income in their financial statements.
+For more information about preliminary tax registration and tax returns, see the links on this page.
+About works and copyright
+Works
+In the context of royalties, the term works refers to literary, artistic, or scientific works. Examples include logos, names, designs, films, models, images, patterns, texts, broadcasts, drawings, melodies, computer software, confidential formulas and manufacturing processes, and information relating to commercial, industrial, or scientific experience.
+Copyright
+Copyright is the exclusive right of the creator of a work to control its use, including the right to reproduce, adapt, and make the work available to the public.
+Copyright always initially belongs to the creator of the work. It may subsequently be transferred, in whole or in part, to another person or entity through a legally binding agreement—for example, by sale or inheritance.
+The transfer of copyright ownership is not considered a royalty transaction. Only the right to use the copyright is subject to the royalty rules.
+Want to learn more about works and copyright?
+For further information, see the Copyright Act and the website of the Ministry of Children, Education, Research and Culture. Links are available in the links section on this page.
+Questions about royalties?
+Call our Customer Service on +298 35 26 00 Monday to Thursday between 10:00 a.m. and 12:00 p.a., or email us at taks@taks.fo. We are happy to help and provide guidance.
+You can also schedule a conversation, and we will call you back at a time that suits you.
+Questions about the legal aspects of works and copyright?
+If you have questions about the legal aspects of works and copyright, you should contact the Ministry of
+Children, Education, Research and Culture, which is responsible for this area. They will be able to assist you.
+Contact details are available on the Ministry's website: www.mmr.fo.
+Relevant links
+Ministry of children, education, research and culture
+Files
+Application for Refund of Royalty Tax
+Contact
+TAKS
+Smyrilsvegur 20
+Postboks 2151
+FO 110 Tórshavn
+Faroe Islands
+Tel.: +298 35 26 00
+Email: taks@taks.fo
+VAT-number: 443921
+Opening hours:
+Tel: Mon-Thu 10am-12pm
+Reception: Mon-Thu 10am-12pm
+Banks
+BankReg.AccountBIC/SWIFTIBAN
+Betri Banki9181152.861.2EIKBFOTFFO65 9181 0001 5286 12
+BankNordik6460101.104.0FIFBFOTXFO29 6460 0001 0110 40
+Norðoya Sparikassi9865100.188.9NOYAFO21FO09 9865 0001 0018 89
+Suðuroyar Sparikassi9870100.084.6SUSPFOT1FO21 9870 0001 0008 46
+Danske Bank3100169.349.92DABADKKKDK88 3000 0016 9349 92
+EAN/GLN nr.: 5797100000119
+Email bills to: rokning@taks.fo
+About TAKS
+Customer Service
+Data Protection
+Appeal Options
+Forms
+FAQ
+Follow Us
+LinkedIn
+Ment, forritað og sniðgivið hava Sansir
+x
+Hey, eg eiti Eyðei og eri nýggi TAKS-botturin.
+Hevur tú ein TAKS-spurning?
+Spyr meg bara.

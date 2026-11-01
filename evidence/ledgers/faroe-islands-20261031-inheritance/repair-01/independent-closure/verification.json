@@ -1,0 +1,561 @@
+{
+  "candidate": "99ddd1c3c1e7075528aa014977e9931dec90f831",
+  "manifest_sha256": "4051b7cb6a083afe736ec383743f5a63a566713e844bd7c3eac1f6778200f023",
+  "manifest_inputs": 81,
+  "manifest_mismatches": [],
+  "preservation": [
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/examples.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/final-report.md",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/findings.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-capital-correct.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-duty.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-accounts.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-calendar.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-filing.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-guidance.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-return.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-fetch-receipts.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-inheritance.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-rates.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-tax.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/shape.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/verification.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital-correct.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital-correct.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/closing-form-web.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/closing.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-380.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-477.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-584.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/duty.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/duty.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-accounts.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-accounts.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-calendar.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-calendar.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-filing.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-filing.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-guidance.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-guidance.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return-current-web.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/inheritance.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/inheritance.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/opening-d03-web.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/opening.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/rates.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/rates.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/tax.html",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/tax.reader.txt",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/README.md",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/fo-estate-income-tax.md",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/fo-inheritance-duty.md",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/preservation.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/quote-integrity.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/validation.json",
+      "sha256_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/writer-manifest.json",
+      "sha256_exact": true
+    }
+  ],
+  "initial_review_changed_files": [],
+  "original_ledger_file_preservation": [
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-inheritance-duty.rows.json",
+      "old_byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-estate-income-tax.rows.json",
+      "old_byte_exact": true
+    }
+  ],
+  "original_64_destinations": [
+    {
+      "id": "IH-001",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-002",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-003",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-004",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-005",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-006",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-007",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-008",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-009",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-010",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-011",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-012",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-013",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-014",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-015",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-016",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-017",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-018",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-019",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-020",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-021",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-022",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-023",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-024",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-025",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-026",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-027",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-028",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-029",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-030",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-031",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-032",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-033",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-034",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-035",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "IH-036",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-001",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-002",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-003",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-004",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-005",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-006",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-007",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-008",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-009",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-010",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-011",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-012",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-013",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-014",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-015",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-016",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-017",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-018",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-019",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-020",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-021",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-022",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-023",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-024",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-025",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-026",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-027",
+      "complete_claim_in_current_guide": true
+    },
+    {
+      "id": "ET-028",
+      "complete_claim_in_current_guide": true
+    }
+  ],
+  "links": [
+    {
+      "guide": "fo-inheritance-duty",
+      "key": "court",
+      "ref_exact": true,
+      "cell_exact": true,
+      "no_url_spaces": true
+    },
+    {
+      "guide": "fo-inheritance-duty",
+      "key": "opening",
+      "ref_exact": true,
+      "cell_exact": true,
+      "no_url_spaces": true
+    },
+    {
+      "guide": "fo-inheritance-duty",
+      "key": "closing",
+      "ref_exact": true,
+      "cell_exact": true,
+      "no_url_spaces": true
+    },
+    {
+      "guide": "fo-estate-income-tax",
+      "key": "opening",
+      "ref_exact": true,
+      "cell_exact": true,
+      "no_url_spaces": true
+    }
+  ],
+  "ET029_quote_parts_match": true,
+  "ET029_claim_matches": true,
+  "guides": [
+    {
+      "guide": "fo-inheritance-duty",
+      "sha256": "016885210094b6a657f989951b253eca653407b01794f27f550439f05ee006c0",
+      "frontmatter_version": "0.2",
+      "heading": "# Faroe Islands inheritance and succession duty v 0.1",
+      "category": "international",
+      "no_trust_label": true
+    },
+    {
+      "guide": "fo-estate-income-tax",
+      "sha256": "71bf0d38603d94ce671380538c13f7e98986cb0353d24c3cf8c3aacdcf7e87bb",
+      "frontmatter_version": "0.2",
+      "heading": "# Faroe Islands death-year and estate income tax v 0.1",
+      "category": "international",
+      "no_trust_label": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "shape",
+      "exit_code": 0,
+      "tail": [
+        "  (i) not_yet_confirmed    pass",
+        "  (j) reviewed_on          pass"
+      ]
+    },
+    {
+      "check": "examples",
+      "exit_code": 0,
+      "tail": [
+        "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing"
+      ]
+    }
+  ],
+  "residual": "Both H1s retain v 0.1 while metadata is0.2. Template requires agreement."
+}

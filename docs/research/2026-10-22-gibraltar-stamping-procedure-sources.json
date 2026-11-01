@@ -1,0 +1,26 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+      "locators": "sections4A\u20134B,11\u201316,19C;Schedule2",
+      "status": "Official PDF retrieved successfully; dated consolidation, later amendment status unresolved."
+    },
+    {
+      "url": "https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf",
+      "locators": "clauses2\u20133",
+      "status": "Bill, not verified enacted law."
+    },
+    {
+      "url": "https://www.parliament.gi/uploads/contents/agenda/2026/Revised%20Agenda%20-%20Monday%2016%20March%202026.pdf",
+      "locators": "first/second reading and committee/third-reading lists",
+      "status": "Agenda, not evidence of passage or commencement."
+    }
+  ],
+  "open": [
+    "Enacted B05/2025 successor and commencement",
+    "Any prescribed interest-rate change",
+    "Portal/payment and court filing details",
+    "Complete relief and property-gain computation"
+  ]
+}

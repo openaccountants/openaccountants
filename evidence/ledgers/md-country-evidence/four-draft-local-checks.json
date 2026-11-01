@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-10-30",
+  "scope": "Four Moldova writer drafts; independent whole-pack review pending",
+  "checks": [
+    {
+      "check": "22 recomputing examples and writer controls",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "cc64ed",
+        "wall_time_seconds": 1.127648375,
+        "exit_code": 0,
+        "original_token_count": 15,
+        "output": "checked 5 files, 22 oa-check blocks, 0 failures, 0 missing\n"
+      }
+    },
+    {
+      "check": "Changed Guide schema",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a018b7",
+        "wall_time_seconds": 3.8355384580000003,
+        "exit_code": 0,
+        "original_token_count": 48,
+        "output": "changed-only mode: validating 5 changed guide file(s)\nchecked 4 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+      }
+    },
+    {
+      "check": "Whitespace",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "21c749",
+        "wall_time_seconds": 0.824267792,
+        "exit_code": 0,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  ],
+  "country_complete": false,
+  "published": false
+}

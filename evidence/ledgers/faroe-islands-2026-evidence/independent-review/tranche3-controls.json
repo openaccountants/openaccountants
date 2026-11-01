@@ -1,0 +1,218 @@
+[
+  {
+    "id": "national65000",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "id": "national180000",
+    "actual": "14950",
+    "expected": "14950",
+    "pass": true
+  },
+  {
+    "id": "national330000",
+    "actual": "37450",
+    "expected": "37450",
+    "pass": true
+  },
+  {
+    "id": "national450000",
+    "actual": "61450",
+    "expected": "61450",
+    "pass": true
+  },
+  {
+    "id": "national600000",
+    "actual": "98950",
+    "expected": "98950",
+    "pass": true
+  },
+  {
+    "id": "national300000",
+    "actual": "32950",
+    "expected": "32950",
+    "pass": true
+  },
+  {
+    "id": "national240000",
+    "actual": "23950",
+    "expected": "23950",
+    "pass": true
+  },
+  {
+    "id": "national304100",
+    "actual": "33565",
+    "expected": "33565",
+    "pass": true
+  },
+  {
+    "id": "national150000",
+    "actual": "11050",
+    "expected": "11050",
+    "pass": true
+  },
+  {
+    "id": "ordinary municipal",
+    "actual": "51300",
+    "expected": "51300",
+    "pass": true
+  },
+  {
+    "id": "ordinary combined",
+    "actual": "84250",
+    "expected": "84250",
+    "pass": true
+  },
+  {
+    "id": "trader base",
+    "actual": "240000",
+    "expected": "240000",
+    "pass": true
+  },
+  {
+    "id": "trader national",
+    "actual": "13250",
+    "expected": "13250",
+    "pass": true
+  },
+  {
+    "id": "trader municipal",
+    "actual": "30900",
+    "expected": "30900",
+    "pass": true
+  },
+  {
+    "id": "capital net",
+    "actual": "40000",
+    "expected": "40000",
+    "pass": true
+  },
+  {
+    "id": "capital tax",
+    "actual": "14000",
+    "expected": "14000",
+    "pass": true
+  },
+  {
+    "id": "trader total",
+    "actual": "58150",
+    "expected": "58150",
+    "pass": true
+  },
+  {
+    "id": "consumption200000",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "id": "consumption260000",
+    "actual": "20000",
+    "expected": "20000",
+    "pass": true
+  },
+  {
+    "id": "consumption400000",
+    "actual": "60000",
+    "expected": "60000",
+    "pass": true
+  },
+  {
+    "id": "spouse20000",
+    "actual": "(30000, 290000)",
+    "expected": "(30000, 290000)",
+    "pass": true
+  },
+  {
+    "id": "spouse conserve20000",
+    "actual": "320000",
+    "expected": "320000",
+    "pass": true
+  },
+  {
+    "id": "spouse0",
+    "actual": "(30000, 270000)",
+    "expected": "(30000, 270000)",
+    "pass": true
+  },
+  {
+    "id": "spouse conserve0",
+    "actual": "300000",
+    "expected": "300000",
+    "pass": true
+  },
+  {
+    "id": "church30000017/2000",
+    "actual": "2295",
+    "expected": "2295",
+    "pass": true
+  },
+  {
+    "id": "church3000009/1000",
+    "actual": "2430",
+    "expected": "2430",
+    "pass": true
+  },
+  {
+    "id": "church30009917/2000",
+    "actual": "2295",
+    "expected": "2295",
+    "pass": true
+  },
+  {
+    "id": "church2999917/2000",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "id": "annual raw",
+    "actual": "912500/3",
+    "expected": "912500/3",
+    "pass": true
+  },
+  {
+    "id": "annual rounded",
+    "actual": "304100",
+    "expected": "304100",
+    "pass": true
+  },
+  {
+    "id": "annual muni",
+    "actual": "52079",
+    "expected": "52079",
+    "pass": true
+  },
+  {
+    "id": "annual total",
+    "actual": "85644",
+    "expected": "85644",
+    "pass": true
+  },
+  {
+    "id": "observed reduced2dp",
+    "actual": "42235.40",
+    "expected": "42235.40",
+    "pass": true
+  },
+  {
+    "id": "observed whole",
+    "actual": "42235",
+    "expected": "42235",
+    "pass": true
+  },
+  {
+    "id": "actual AM",
+    "actual": "4500",
+    "expected": "4500",
+    "pass": true
+  },
+  {
+    "id": "365day check",
+    "actual": "33850",
+    "expected": "33850",
+    "pass": true
+  }
+]

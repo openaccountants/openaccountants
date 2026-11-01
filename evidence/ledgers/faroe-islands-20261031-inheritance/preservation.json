@@ -1,0 +1,1500 @@
+{
+  "anchor": "a36aa428d39aa4a5e185092ae4d953b256292f43",
+  "all_nine_prior_guide_bytes_retained": true,
+  "old_topics_destinations": [
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "old_path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "new_path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "old_path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "new_path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "old_path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "new_path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "old_path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "new_path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "old_path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "new_path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "old_path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "new_path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "old_path": "skills/faroe-islands/fo-payroll-levy.md",
+      "new_path": "skills/faroe-islands/fo-payroll-levy.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "old_path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "new_path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "old_path": "skills/faroe-islands/fo-vat.md",
+      "new_path": "skills/faroe-islands/fo-vat.md",
+      "all_original_topics": "Retained byte-exact in the same Guide. No existing Guide edited."
+    }
+  ],
+  "all_prior_country_evidence_bytes_retained": true,
+  "evidence_files": [
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/F-L05-quote-correction.json",
+      "sha256": "8a3aaafca4bda051c0850032b77886478fa9100f879ee07418a1e6b1656fa330"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/F-L06-quote-correction.json",
+      "sha256": "b9109aca026ade862af558bd983e4ad79841cef9d3731471c0f8912b41de51f8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/F-L07-quote-corrections.json",
+      "sha256": "91cacf3b7dc8744457c099b9a11702d13827fe19361053899d7fa5b472c4d694"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/F-L08-quote-correction.json",
+      "sha256": "d5619db0cdcfd1d725fccfbd24332855f11abf5f685973e4532cfef506fd0547"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/PACKAGING-PATH-MAP.json",
+      "sha256": "18571451b7785c6bf634941157a453f0b2b154cab11a24ebc54d6669b307aa0b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ROOT-LEDGERS-README.md",
+      "sha256": "4d6a4a8fe76bdbba1cab29128cb3159daa75b7b573a303a19658ef6a7a7201f5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/baselines/fo-company-registration-reporting.original.txt",
+      "sha256": "271c04e38a53d5e2aaa62649f02f0bab5a4d34aefe140b46d466626c924be629"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/baselines/fo-payroll-contributions.original.txt",
+      "sha256": "9e034318979329a488d6ba0ce4a12aab08ce89d822b3fb51455a06828e46b477"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/build-payroll-formation-ledgers.py",
+      "sha256": "7199cb87e07a15b0ccf77190795f03db0aa644948c10aa89817242632cc88005"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/check-payroll-formation.py",
+      "sha256": "936d81c67906a50f60ef5f200a2b115e1a16914a814fed2daab855d0925a0037"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/checks.json",
+      "sha256": "220de98a461e876cc69d80ab277861951d27efd1da678a43140cb4b6c849b965"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/manifest.json",
+      "sha256": "3ef3f6ac91c6cfe850bd14d62335644e8e3a6c0f6b5ceed4f8d5fda00728d616"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/ordinary-gap-disposition.json",
+      "sha256": "5891733c2722c10c47aca9403f52098b6e65f6d3bbfc4550ae555648511748ba"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/ordinary-gap-disposition.md",
+      "sha256": "f655d805e730a9634d999a9dac6da16f690c5fe2cf359932edd0c29f3bc568c0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/packaging-check.py",
+      "sha256": "a755993d8ec561b5e163b541de5dd0577fc913be2d74646136f03d4949dcd19c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-independent-review/report.md",
+      "sha256": "ca8078a8f4cc1e38c5ea80b82994a0a7a2973c0352a1161bc7cd9d47abdd3d69"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/final-local-validation.json",
+      "sha256": "829e58d02472f5895c7eba3bebf1b421e40cdc5e10eaf0a9ab0dd4b4764eb7ed"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-company-registration-reporting.candidate.txt",
+      "sha256": "b6812fa88d586c353c8ca7fdfaed60591519226949223f0b12db55630009c72e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-cross-border-payments-supplementary-controls.md",
+      "sha256": "4c78aacacda0d35a31efa51117b76769210743d8b382c804bd81f9bed2fad8f6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-individual-income-tax-supplementary-controls.md",
+      "sha256": "a2488a9f9dad80a80a8624cca0176ab122ada6c18fe507cf675d3a4b8757d402"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-payroll-contributions.candidate.txt",
+      "sha256": "966f2af989d24fb363086d49b5c5040751b0673190db597ddbcb0f00d5091383"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-payroll-formation-supplementary-controls.md",
+      "sha256": "d181dba892a7277b452c73f0a62944c2572ac0043c4c63d09f683652ee02fd4f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/fo-vat-supplementary-controls.md",
+      "sha256": "770f93ecf86675fb64711f96a40ab0820bdc50f6cc937a13a1e1ae20c8d65a47"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/ordinary-gap-disposition.json",
+      "sha256": "5891733c2722c10c47aca9403f52098b6e65f6d3bbfc4550ae555648511748ba"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/ordinary-gap-disposition.md",
+      "sha256": "f655d805e730a9634d999a9dac6da16f690c5fe2cf359932edd0c29f3bc568c0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/preflight.json",
+      "sha256": "2dbe95f3aeae1859b65666cf3c0f4010f36d8495f23ef2b0ade9a6c428471600"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/source-failure-check-web.json",
+      "sha256": "4c7eda1ddb9b77e324d119a7255072f56d681311d06c4f59992fa70e4770fb47"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-controls.json",
+      "sha256": "b42a1528ffb9c68a62e6544edb40f96716dd617a7a3ab989937dab8702edaf5b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-controls.py",
+      "sha256": "f2e48c9c04d98a384b800d3e7a3c4a7c11cb9fb73e394ed4672c449267af789f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-finding-history.json",
+      "sha256": "75e308a46ca4fe65de24de4253a169092ab44f18490f811b18c1838462ddae93"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-manifest.json",
+      "sha256": "9d273b85c745c371798373a1066dde5d2d90d4b1ea27444e78d1790e7803ccb6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-preservation-coverage.json",
+      "sha256": "8bb447233c2a481831a849a6bd19e944010f60aebb1399bf989ad8537ee96aff"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-read-scope.json",
+      "sha256": "bb58de1b8c42b7bf0258a24d041746c59960708778907be4d8b9a05efe477e61"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-report.md",
+      "sha256": "5187562b2732a0e888001fead75b82c24a4bd85c21a8d2760bf16be904c17502"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche1-row-verdicts.json",
+      "sha256": "7ed5e79fb522196e8e17e65f10bd38c30e85bd4994b3cef73aee09d38b35e6b6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-checks.py",
+      "sha256": "f7d7f6502da385e9fdf760c7310ba20ddc02e856fc34b8d7f6e1bdcf45d201c7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-controls.json",
+      "sha256": "237cde4ec74d267525501e808c2fcff3d6178f384665375cae2e4ced2f690124"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-manifest.json",
+      "sha256": "954ff2c9e95bf06db7629ecf9e740e3f94b3112eb7d72fb6f805bd99669d4786"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-preservation.json",
+      "sha256": "2c0af077c34d243b9f796c6499b360c4b59c6cc32c5e2080c099e435fb8b5a3a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-quote-check.json",
+      "sha256": "ec17ddbd2466f5dd6c630acec6134b8094401653900c9422c16235214acd39a3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-read-scope.json",
+      "sha256": "e890da19cadc9a770455b87bf2ae01c84bc5daf0feba4ac79379feb6b7ab0b8a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-report.md",
+      "sha256": "5788bde2a1453789c3b5fb10c647f16fd4ed2aa36fd8a62aae3a4cc3123ad9cb"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche2-row-verdicts.json",
+      "sha256": "d270e3f4afdc86360fed295683bab8db8a7d24d04cd75dee8134c6768e5e456c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-checks.json",
+      "sha256": "3e2132cd22a136f44620ef93d723663452543e6969fa0ba7938b84a25b623a44"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-checks.py",
+      "sha256": "9e4afe05d38dff36fcda41e06dcb0c518da6f6687311253d54b593970d1a4c0b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-controls.json",
+      "sha256": "0868e5d7fb1e09f8be70b870fa22918bf4867dfa9eaaedd2e153bb828680c796"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-manifest.json",
+      "sha256": "5db09af83e00c39db8a328aa0ef4996939da390ca18436bbd9cf22261323c153"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-read-scope.json",
+      "sha256": "9ec25480e35408243353672dfa84071b291dfeaea42a06ec22a6b32b8e464b6d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche3-report.md",
+      "sha256": "46b155a37b19a01cc167354bce0f379741af45ebb1a99dea87644ebe30415f06"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-checks.py",
+      "sha256": "7ce8dd9e96bd9947a13de517f7bda0924cb3415ed0f1dac823fb36f25ba83323"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-controls.json",
+      "sha256": "bdc2438354962eba5b5a338585bd236f868126ba06c653121c5bfc0bd485b6f2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-manifest.json",
+      "sha256": "a9c2047fab32cbd1c85a7b0d5a6a41d1b4850fbd7cfdc7fd5ec43faa1d4ffbb0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-read-scope.json",
+      "sha256": "c13b8b35f8759a359c063eca241b44c86e4bdd260f198e29617d9a29b82383e2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-report.md",
+      "sha256": "18d7219d1a5ead58328d9498aa52fd2bd872f54e2cfdd9b3331f275c60e8a091"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/independent-review/tranche4-row-checks.json",
+      "sha256": "89a7ec67e21197ad172c48d324d2673c3199ff0307529ca45fd58ed840bad257"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/acquisition-limit.txt",
+      "sha256": "0413b282aa726c4cfdc3a8d0b0f93bd993a28bcafd578a4e3bcd56f1fd681f37"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/admin.html",
+      "sha256": "b320aa7e72fff866311e1487fec9c7864c077825b7c57c358382cac1310f9115"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/admin.reader.txt",
+      "sha256": "70770eb2ceee7d7da82d1424967b1ad6dce5abfe8996c1d75341954908b46ffc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/assessment.html",
+      "sha256": "274e5c894ae4a05b2373ee9858bf42c32ded6950faf5bf86bf2e7272eecc7d38"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/assessment.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/baseline-cit.md",
+      "sha256": "2d8e450d64432ea15bff7fa3ce683601f8c16eec898b50fd01ba64514b5ebab2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/build-ledger.py",
+      "sha256": "1ed43d902085f3a94189648738ff454bb8e7032bfd616bdf2f5ad1309a05af72"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/build-tp-cb-ledgers.py",
+      "sha256": "0936f975d2a1b3702316102c4872fd09d8fa02e651ba30a3bd451eb25ce2a37c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/capital.html",
+      "sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/capital.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/circular-web-response.json",
+      "sha256": "08e4c0d1baf16bacbb10df8ad7dc1ab42e075d23834681d857e47cbd9d1cd9b6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/claim-rows.json",
+      "sha256": "db2f053fcc0fb8546d33bf7732ee3990a7bf73b8041a1a5640469fc6126b19b3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/company.html",
+      "sha256": "cbe98e2377382138462fe6e24ee23d36e67f34a4218bae60f63bb9b59b868e8c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/company.reader.txt",
+      "sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/control-results.json",
+      "sha256": "fa3be58932b6e9f565a3ddb1fd6986893914c091327c8a08208ff51b88940972"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/controls.py",
+      "sha256": "f3033431a47fc334e873adb5ce00a583cce8f56fdc0533ab4e005cc4731cc735"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/depreciation.html",
+      "sha256": "689e5c100bb0af72262b5b2f94d44adbacd1a130d0e157d6f409bc04d149ef6d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/depreciation.reader.txt",
+      "sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/exact-operations.json",
+      "sha256": "924db99c268739a9cbf20c36de4cbd507699632a1a0b7666f14bc6fb6a04cf56"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/fo-country-by-country-reporting-baseline.md",
+      "sha256": "8681ec6ab52a515735ba82b222953afc5343f551a90c4f3f5bb612bdc25c7b8c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/fo-country-by-country-reporting-claim-rows.json",
+      "sha256": "9fbc98d1fb55cc3e88194da3619ba20dbb3af550720e6031dd875dffda616a83"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/fo-transfer-pricing-baseline.md",
+      "sha256": "6484b8867bd960e480f7b73cb0dcb48933de87d708247269ed1d01967bfafcae"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/fo-transfer-pricing-claim-rows.json",
+      "sha256": "cbb230461c200bdd11f4c0cac6a3a888b77a3dcdb8186ccdc11aa28b7dc93f59"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/group.html",
+      "sha256": "5805187f82228e0d7081e053913bef73cab44e965f589a239bc22fb8be7e746d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/group.reader.txt",
+      "sha256": "fc4012cdf76358c00a6d3c4ed519f5bba2912b7ef620c096776f28ebde106c0a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/indices-web-response.json",
+      "sha256": "201b07425692b305190db379a87e7e987df9df20104a2401d21a65ff1eb35b06"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/oa-output.txt",
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/regulation.html",
+      "sha256": "669935342f03a082b693db851db7eee02ec3063634c142571045e6b10661cacf"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/regulation.reader.txt",
+      "sha256": "738bfad66d22b7927b6a38fb09e091ee5768893943f9e8e0589d5851aaf5ddb4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/return-quote-correction.json",
+      "sha256": "887d289be126fc12b373d91377f9e36c58a47d9fefbec5299e849429a8423884"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/returns.html",
+      "sha256": "898fd1d2cb434246397302fc2d0fd434c624d3eb8982b5451e8e80ad71b61570"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/returns.reader.txt",
+      "sha256": "029ab6b1ceefd2463307e1d4dfb9bb4e2d2b1a8f5932bfdf06ada83ba0fa68a2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/source-identities-and-read-scopes.json",
+      "sha256": "2b8bb2117b5813ccaf3384ced3dc6adffcbcfce6100199e20dc30b848084ad63"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tax.html",
+      "sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tp-cb-oa-output.txt",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tp-cb-preservation-proof.json",
+      "sha256": "2718a20b83a537923ba8f9f25397ae8fdd614f04627ed6d3ec7f3ea6721e3c2a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tp-cb-source-read-identities.json",
+      "sha256": "9bf5df71c56b4e351bc9f50cac49e7f6fc24df5e14f39119c9c43410c7dbaa4e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/tp-cb-web-source-response.json",
+      "sha256": "4fcb3c3c6e399b061a6d50b6197f63c1002cefe4f528f4604fd41fdd3dfbee3d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/validator-output.txt",
+      "sha256": "071003baed821ab3b577aca6571e8e8be7e885a8c692f0d29224988bf5bb508b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/vls-N-Q-web-response.json",
+      "sha256": "5ffad5d4999b4570fb03fba8f17754acbe430e3b3fcf005a4c54f9cde4f3a1a5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/web-receipt-identities.json",
+      "sha256": "88849c4916529698e106b5f81aa56c1ffea18d433c15731a0bc5be21855f0656"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/write-cit.py",
+      "sha256": "83d0e0b873d2ff947748997c39fb9f2e954b889ed41fbab95cb034c9b5dd3150"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/cit-evidence/writer-report.md",
+      "sha256": "bcfda5e7ff46541590f9555743c1b26eba193cd13f87a483be2314639afe3c02"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-company-registration-reporting.md",
+      "sha256": "b7b6eb0327ee54c442b6467dfc6ada7dbf689e9501b347db4745272a33cd9d9e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-corporate-income-tax.md",
+      "sha256": "dfb164a2eab618f49fbebbf30b0271a944ff47ca61d0e2d59bb47c3724b9146f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-country-by-country-reporting.md",
+      "sha256": "45e6998c3404de6e51f6ec0ec9a961e9fc851513780d871e834c5f2a82465c21"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-cross-border-payments.md",
+      "sha256": "b43228e535125194b89501a1bf3ad0282db8f3ddb3e99028f2a9de36f2891dc8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-individual-income-tax.md",
+      "sha256": "9ed2ad6850251ea60d7765cb8f46e719e73f0c0048c08c8528c50c63b8559c27"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-payroll-contributions.md",
+      "sha256": "d331d7761c5501a284a9ce821edfcd651f5340bca27a171d17b320b28a9665db"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-transfer-pricing.md",
+      "sha256": "7133136945ccc3439b43d86682a74067a7fdd1e6a414289a17408a33147822d8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/fo-vat.md",
+      "sha256": "7a2a30cd19b4760218cfc705451eb3bc8f6911180bdd89d9527bdd60401af5c9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/20572441dcdae9ebd4c282597940338832ade34e-baseline.md",
+      "sha256": "29f3d16d3ca91b82f513b9c1a0a4629af08a95d016cc248a99c214a7e69fa9e3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/F-L04-quote-correction.json",
+      "sha256": "cf4fe7d20d4705844cb4447491e2ccf9ef698169d464652a84c0b15aad1cf1c6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/audit-2024-page-045.png",
+      "sha256": "423939ac463697a56edb870dd4e8532f6b593ec2619d74910289920f3bc72785"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/audit-2024.pdf",
+      "sha256": "b714cc60ae7361abc5facde1c8b2df0dbabc0c0348da376ed711f9af3012f71c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/audit-2024.reader.txt",
+      "sha256": "b3e8644a81fd19d96838b484dde81112b72d8d8139e2428c4b9a3106373ec167"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/build-ledger.py",
+      "sha256": "1b130b8ce389d2cd8da0eac9acb13b545a43738aaeaf57777703d89532d99ad0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/calculator-180days-150000.ax.txt",
+      "sha256": "b4dd0463406b592ea99e2da42201537872fe6fd432a91a0a1c984765e942aeed"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/calculator-180days-150000.png",
+      "sha256": "dee0159b89b8ef97a2812fd3de5a3f21b02e7508aea956770eb05d61fcb3576d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/calculator-365days-150000.ax.txt",
+      "sha256": "8bc645e3b42b82a8e80a5057258004832e06683f01d1e2c0e4ea0852ebcf6fa9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/capital.html",
+      "sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/capital.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/check-results.json",
+      "sha256": "aea17cb53a59ec5bc39bc0236872bc15ce72537ce6a2cc58c08163ccffe6075f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/checks.py",
+      "sha256": "5ac575e87d674ae0519d848df8282922dc956f9b5f80ee680704d564492059e1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/child.html",
+      "sha256": "638333a9b4fab8e66917bcc9e0b73e1b6cb964397499bc46ae653e073f4b4f28"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/child.reader.txt",
+      "sha256": "9e4fef13626016d9b24da3eb4462dcc45404b622ad5caa7b7622f7dde27611c3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/church.html",
+      "sha256": "a7093defb05042158a04c7d33b73a47ff40419f4dd0e188361e540f04655bb82"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/church.reader.txt",
+      "sha256": "8e21110bc2ae123a7675e4178c067c2d7f0177a0ff832588c49e85e3c62934b3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/claim-rows.json",
+      "sha256": "7eb4659984b6a039f80b0aaf83df9a41b13f2db1835dec0512602a635cc70ae4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/consumption.html",
+      "sha256": "c6d092a7f43292b450371d8b0138837967f13e8e78cd890a850e8080bdc8cae6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/consumption.reader.txt",
+      "sha256": "bdd531f5e52010dcb57f968315cde6c9af1f0494a64e27c5b8377122a12e194a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/depreciation.html",
+      "sha256": "689e5c100bb0af72262b5b2f94d44adbacd1a130d0e157d6f409bc04d149ef6d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/depreciation.reader.txt",
+      "sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/frozen-guide.md",
+      "sha256": "ebf5863b6f219368291d91aecbe0e260a304900634eaa64451094b44cb7a820c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/municipal.html",
+      "sha256": "31362eed49002cdb57ccdee3d6a47e090dabc7811e2942bbc20bc853d00730cd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/municipal.reader.txt",
+      "sha256": "d3fd68c6779bda1340cbcf20baff6026299b8375f1ddf54f6189bdb8b439aaac"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/national.html",
+      "sha256": "0c473793428343f069bd55146192f510c48bcc7d59e7aaefda7d1120453ee0fa"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/national.reader.txt",
+      "sha256": "c5ee6062ec3c3f1576779370049946b7ed74d2c64f35671592e5bcbce91af853"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/oa-output.txt",
+      "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/old-topic-map.json",
+      "sha256": "be0d222a6f28a6c24835d6f4e97f5b44d84b5da6aef0595f8b8b0b1394fdf03d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/origin-main-baseline.md",
+      "sha256": "5b42cd01eaf6227979754405fd9476f6420dc49f41365fd4b6ab7e647b3bce1c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/pension.html",
+      "sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/pension.reader.txt",
+      "sha256": "ed84f7d349a6aaccb0634da4e3e7f85bbde63fe42190c68b5c27ee64f72f4f64"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/rate.html",
+      "sha256": "30d85b62c859c57588cd35690a2bf3c9a1661e1344717c9a97132e4066b3e40e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/rate.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/rent.html",
+      "sha256": "cdbcbeb4c952bc76e4ba520e01366c0e4d9ae77b18f137e25d22f06fb854fe17"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/rent.reader.txt",
+      "sha256": "e1725158cae0c9d994dcbee82fd23db68e7cbf0c8c3c555e25dbd20bdd4fdd13"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/residence.html",
+      "sha256": "7ab705a6f9027687bbf1d619113a90bd7c4bd05e506626d3355c131d731f1a30"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/residence.reader.txt",
+      "sha256": "8096aa78420c7ac166ff7af80dc624a557b6ddef06c5c1441bbdd56ff79c9d5a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/returns.html",
+      "sha256": "898fd1d2cb434246397302fc2d0fd434c624d3eb8982b5451e8e80ad71b61570"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/returns.reader.txt",
+      "sha256": "029ab6b1ceefd2463307e1d4dfb9bb4e2d2b1a8f5932bfdf06ada83ba0fa68a2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/root-positive-edit-operations.json",
+      "sha256": "c5f60d9c96764323099cc4394856047bd7c1469737880fb8040dab1587c8e3eb"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/root-web-receipts.json",
+      "sha256": "2f5be635a379ddc27f47446a75e727cdd45a8b0c3687c484b0786de6b4bcbd83"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/source-identities-and-read-scopes.json",
+      "sha256": "8061d6727777efa94439715c014b917ef779aa8a3949754751d88bba8bfe5c73"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/spouse.html",
+      "sha256": "56eb96fc06f288355ffae1a47d31a32311802b80e7a17e1e94ef703b166bdeb4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/spouse.reader.txt",
+      "sha256": "f44ee1a5080cba769b1d0f75fe4e9d082856e0b4c92d1f85b81a52c42eaf6b6b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/support.html",
+      "sha256": "7a832819f7aeb6066d656225fd42d8306ac12bb23ba95f5fa01e7d1ee6eccbb8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/support.reader.txt",
+      "sha256": "fb0862bc2f01f57486f8a324ba678d729c47cc6008443441932a86a0537df07c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/tax.html",
+      "sha256": "db1f5c69a30b751417ab77ab6462cc8bc8c4f1dd68d46f5736eca16ec5595332"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/ledgers/pit-evidence/writer-report.md",
+      "sha256": "afa286d8235113eaa80cf2e5e1ae679375890dd4823169e313ce0e80bc709387"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-acquisition-limitations.json",
+      "sha256": "b23565a0ff90e0e676e53991092b7a5bf6085fe3ea38584c6aea3107599020bc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-critical-read-scopes.json",
+      "sha256": "d28dac5993b075ad66f56addf8659dbbbaa5a06734bc8b5f63ae0ecb5d37421e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-exact-replacements.json",
+      "sha256": "7dd2a16ca34cbd6626d7c76f10729ebe78d6468a6c31901cab3879fbe24e937a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-example-result.txt",
+      "sha256": "00b5c32dfc81ffb0980acdde9085aaf12eae535feba237e5c6b8c87c17b05f5c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-handover-identities.json",
+      "sha256": "b054c8494e41f4fe99923f8c698514d4a6d70b072bd580f5f1421bd77d8fc29d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-options.md",
+      "sha256": "6bb883af4e8aa844191dae8b7165d622965c69dd4eafc775bb6be3041d626ca8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-rule-specs.json",
+      "sha256": "4f85cb0f38ccb4f2d66fbce0b745179af180c812149bf9d75da414193aee70ea"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-source-read-ledger.json",
+      "sha256": "e70b9413d9f8883d3fe0de2aa9ad691ecedab915c48a1e0f7c0c2aaba0ef36fa"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/accounts.html",
+      "sha256": "d2daccf0b69b0145bf69792b3149f399d74e67057ab12a34b9403fd6fdc9d0ba"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/accounts.reader.txt",
+      "sha256": "12a4cfd946388614acb7060a4a441022d656320a167f3de4408a4c2866ea2e54"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire-extra.py",
+      "sha256": "891147fdd0af29bf5be3a83c4f2ad8954b5c1685f7bee831336893abd60cc7ab"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire-final.py",
+      "sha256": "5ea28798d796767d093ce51067e4314cef5e0577f13ee9e060235d0671d458e1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire-foreign-original.py",
+      "sha256": "993b9bedb4f9c54b970a1d9bb2f950f5ee7eaabfc530243ceefacb4f243acbb9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire-foreign.py",
+      "sha256": "373ec41f8612e472dbc0428a5be1bb5b80e925acb62c12cad81f40e85a6c787c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire-historical.py",
+      "sha256": "c06460ab06d3c387dfa309e4a5f37d40ae736642398e228081364f6e2fd2ccc5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquire.py",
+      "sha256": "9a6a51b766e5cdd8a8d01a34994c6d2ae30c42cab8eb279084edda32d75c69cd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/acquisition.json",
+      "sha256": "0ec97fddd573bdfb0b9ca18b7745ddb24c2ff00b96bc1ba5f42f00bed08b8a7e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/als.html",
+      "sha256": "75df5747cc15968b8f807a2180a5a11c46ba391d1924541ed39d2493d7a7dae1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/als.reader.txt",
+      "sha256": "a83f88da0774a0b4339d49122bf1c06cf7f804562422d314318ad829c514f458"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsjuly.html",
+      "sha256": "668fae72ae6e2f96b8e37131e594bb5de8539bce02862f2c299513b5e21e4bf7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsjuly.reader.txt",
+      "sha256": "baa4b26c34a068206b33b1bdd03a066227e340c57cc5d9632b75dd56a85f0e3f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsnotice.html",
+      "sha256": "c0dcbe95157e2dbbfef5b30aceef57772c08e4d16c3a680d63707b3dffb70322"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsnotice.reader.txt",
+      "sha256": "2aed4aff79c04dd4dc8793f7206c5b117022753d557af0094007fc1becccaf3c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsold.html",
+      "sha256": "16f8ec579089a8bd886ac3aaa996e3812c99cb2bd0f049911d293d32f6271432"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsold.reader.txt",
+      "sha256": "7dff2697a48c631deb61052bd9581fc59415038daac7f1c1d6c92f1a65abbecf"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsreg.html",
+      "sha256": "a6dce59021b177569ed19df0b3de7501d82ed3e3980c75220707d00552692357"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/alsreg.reader.txt",
+      "sha256": "fb3937e32faf301228d1cea7e9ebc077423b2ddffb4561b0720772684fb5372e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/ameg.html",
+      "sha256": "ce6715d3409fc6a2617d196efc2204bf6e2e723fb071a7c04e1d13a3eaf8211d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/ameg.reader.txt",
+      "sha256": "44a244439f6b2f5ca711668418e555f83bf33ede7f7f7baf32da2d7cddce48a2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/amegreg.html",
+      "sha256": "352d985dec155814f0aa35bc48bb4532e4b2da041f199b2d87822da1ad91aa10"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/amegreg.reader.txt",
+      "sha256": "250e5047f53f07c63bb886ccc46db408b1e17589f9f63a7439a070fd34698396"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/benefits.html",
+      "sha256": "27ccb12d79e2c99ce0e053a09bd1472c6df4432b7f0d02ff336b74ca28452d72"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/benefits.reader.txt",
+      "sha256": "39ee790dfefc647ff7fe7c0792914c067bdec6536d121ef8c2ac924ad88da0a4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/books.html",
+      "sha256": "07d62219e686fc8676e9a36fc7d8a22cbc25a9c259b36897f2cb0fb03bea1499"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/books.reader.txt",
+      "sha256": "1d59557947a76391414b45f76556f279ea706e73751f9fb0eefa458e475d31e7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/broadcast.html",
+      "sha256": "55871504aaf3b7e9791d0b9d5b4d80454daa12c3df084e2411c226f9258e2772"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/broadcast.reader.txt",
+      "sha256": "0aaa0f9e6b86bc895993d1d9e361d7767694f8ac0197d791c6526c7a75e02722"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/company.html",
+      "sha256": "cbe98e2377382138462fe6e24ee23d36e67f34a4218bae60f63bb9b59b868e8c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/company.reader.txt",
+      "sha256": "24c73365080dcba70178e230cece3787d8c7996767d21f352bb0890866b6f2d2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/employer.html",
+      "sha256": "c9a2f4ed4849eec115d6a9dbe01f90a86fd379cabf34106b49295ba55b551419"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/employer.reader.txt",
+      "sha256": "e6e10cfecaea68209f5c76025b7891afad050442ac63d22c71a54b4fca9ad298"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/extra-acquisition.json",
+      "sha256": "62c0cee0ab8853d39fe276c29aa104d9d81ce8c40fb08b8717f5a81dbe71b2a5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/extra-urls.json",
+      "sha256": "cff2cc758617ef01a8104a412f839ce503ed7811b163a56781db92a4367e7fcd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/final-acquisition.json",
+      "sha256": "f5c1bc38e35b9057891c927f37a87efc74a8a6b9e91110fa76c2a5b09ab2c059"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/final-urls.json",
+      "sha256": "39cf734a3b35339c30f78fe3334eaf9da9df47d349a1d9a5aab3d11cd5c96288"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign-exact-acquisition.json",
+      "sha256": "fc56836759effe8b994976c9151ad54e771bb23ce9d9003385aab320014dd605"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign-exact-urls.json",
+      "sha256": "afa84612c369eebc22c3b6e55b9308705c52aed9dc0f0ac4816318898d9d039c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign-index.html",
+      "sha256": "01e970de450fee7f983b0068aca7cdbcc01a533b037f7975f4a8c26415720357"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign-original-acquisition.json",
+      "sha256": "31ae440a83c2f223f274d6121ceb311644bb7a6cdf25a5815df413f386ebcadf"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023-exact.html",
+      "sha256": "cd02b592df2f5b9f6f31fd692b66c01efb6d2732125a25754fe9bb6af0bc7259"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023-exact.reader.txt",
+      "sha256": "fe40de548fa1d62c7bfa36d36b17c769118c895fea1158bd60f9dd3076fd760e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023-original-page1.png",
+      "sha256": "d5b6b1d1b4f0eb9d27350cdebe40a1611fb7de1aa2733401ec4aff26b8be2f24"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023-original.pdf",
+      "sha256": "732f3c4de3b228ee90aeb8f4c6474f3bd49769fa614510d55bd803df54428d8b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023-original.reader.txt",
+      "sha256": "d81d83a15aa9e2b98d832f02f2d1f1e81b855d6e55d67f331d38de5a64ce103c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023.html",
+      "sha256": "26d0ec8edd7a10277dc00972b9fc4e54c1b681d41e3d5d262de212692dad06ff"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreign2023.reader.txt",
+      "sha256": "80d39022a63f84148bb89f55bbc2f9eccdc6a5b83747276a22b8194f13927885"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreignaug.html",
+      "sha256": "4ae763cc55d09bb8fa326e8ba8011e2633410cb43caeae8d2241c4494531d3c0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/foreignaug.reader.txt",
+      "sha256": "8f87f761441e18bfb482662d73f2aca9dc157e36e3b3df64561b2c527adf6356"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/forms.html",
+      "sha256": "ee6a4c4c18046469bc8ab4bcacb66202c547a9c7dbbadff590dd37ddbe5ff9c7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/forms.reader.txt",
+      "sha256": "5890f7a3992ec872ddf3685e32c0c6147755f638470c88b2ab50e79f7a3f2f94"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/guarantee.html",
+      "sha256": "81e5165d9ec8558a0fffa912147e5ae4199c1a75e8706751f3b43b110ceee369"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/guarantee.reader.txt",
+      "sha256": "e15aaad2fbd8ba278012e4747282d13908e6261e0dc8fe957e179a975283a41d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/health.html",
+      "sha256": "f1fd06d3331540dae93788c2897cf2c608fb68eb966deb6d4f2ab36e01a23c5e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/health.reader.txt",
+      "sha256": "efee05345445921dc4ae739e88cefd60c4324696708c79ff31e747288a9750dd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/healthreg.html",
+      "sha256": "9090e1b9d3fa33aefcc05024dc9b3de47c866d0e99a9f0ac3a7d1c8e7cb71a3d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/healthreg.reader.txt",
+      "sha256": "c47caba002062fee36417d11edc47f4e7e17b478a0d81f11259b0a92b9d5cab9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/historical-acquisition.json",
+      "sha256": "f14e05a8d980012d97fd39a67e86ad77eda3ba1c33dc3b7d026f0e128cd2cbd4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/holiday-selected.txt",
+      "sha256": "a95e6298282ab53cf619070c1931d90be7d6b1fb5ea072ffa2671cdba75406dc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/holiday.html",
+      "sha256": "d78637bdb258f41abd33b34839b419a28ae85aaae6240d6dd1a903710d5b836e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/holiday.reader.txt",
+      "sha256": "a612f9c37a5a394a8ac53487f888a810864de69b65c9f17ac486d76e2039da09"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/injury.html",
+      "sha256": "2750be563e4659d3cf1107da26d2ab65d31ad64a507e18468c6759461880d172"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/injury.reader.txt",
+      "sha256": "827230d14fda2f20d9e0c7856d6ac10f84eed758250ba0714f3ca8dc011abc24"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/parental.html",
+      "sha256": "b44f3fb617776f63aeefc7e832df92d754e0cacb15a51b5313e408e704d5c54b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/parental.reader.txt",
+      "sha256": "d008f2de1e21cf86e0cdde4cf724a1bc2d239db8fb7ee233ec29cc0182da700e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension-original-page1.png",
+      "sha256": "ea68dbdd579ac01625c29e10835197f6b9bbdc60c621c09f4fc21787a5e930ae"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension-original.pdf",
+      "sha256": "a2d5be75110094fe5e41c63e2b38e9a4fbd7ea8488eea6276e263412cca9c056"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension-original.reader.txt",
+      "sha256": "5748694e2d0169b3a05c07f204c1bf4b3a9d539d83f40237a0c2d5015130a02b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension.html",
+      "sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension.reader.txt",
+      "sha256": "db890adf5eba22f3b149e0f0aecb29fd48a5e4a184bad301c25f1df2d1ae6e14"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2018.html",
+      "sha256": "2e7de7fa8fdff33e43d175ebd1c85fb6130bebcea43bd128ffd5764402c8b9f1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2018.reader.txt",
+      "sha256": "e11841b74ea517865cc5baab863b04443aba9ece94f80501eafe36f82cad1cc0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2020.html",
+      "sha256": "18875eeda35556b859304b5b077640b69f34305d82664d3d0e2a7d66beff8b28"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2020.reader.txt",
+      "sha256": "5d08fe670313eeaf07aa89e57d8e6fedc43046c5cce39304db85244971e310ad"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2021.html",
+      "sha256": "9c49c15f49878f30114b6655df8d4780432afc4978cf7288390b892b5f30eb8e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pension2021.reader.txt",
+      "sha256": "19bd27590b3ac19f7cfb483b1d5a170bea6aca59f6724097b29264c5e7dd9f34"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionfeb.html",
+      "sha256": "79738e723f584a9bad40ce0b75eefe8fe02f9425318e22a14c25af8130bd73f9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionfeb.reader.txt",
+      "sha256": "2bb298b9d90c409c25831ff0fd356cdb20a2041603a894c8c20679eff1abf490"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionoct.html",
+      "sha256": "419d993ec5ffa98108bc93a739cba52444d0f9ef2fa90ce759ebde660cf23a24"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionoct.reader.txt",
+      "sha256": "461900dca19b0fa9defd2f79e2c5f6014fca4c38387ee2b59f5599fc809d2d9b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionreg.html",
+      "sha256": "e675dcdbda64249afab44d98b0584d8e37bef9fefaa835b274fc2615dfa093d2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/pensionreg.reader.txt",
+      "sha256": "f93b09e968d6bbe57ada1356d8b8642de7e7b02f8bc5310d09a6476f51dbeae6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/prior.html",
+      "sha256": "97acb40907d21d5dd07e2c8df4f6f77b3e09e56a43538f72ddf4c6e4f0f7f6e5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/prior.reader.txt",
+      "sha256": "0168564e82d167f62725680ad9086eb6124c44f883b0bc8dfd67cbaa7076b135"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/start.html",
+      "sha256": "a82bdc425e327ba1498ae2d9f6ff8a9d20322e6fab7880d5d2467eae6216bed5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/start.reader.txt",
+      "sha256": "2549fa04d30af2e47058e5bdbb00970809cbdc260d877071cab18dc2a957a6c2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/tax-selected.txt",
+      "sha256": "ef8d36b43c8857225dc85ef5dc72106e7fd1e4210cf1ac67f92c0564ee32222a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/tax.html",
+      "sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/tax.reader.txt",
+      "sha256": "94477e906a110fd8be8056270dc2684cc6318a395df4cd6f24fab7c198d3588d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/urls.json",
+      "sha256": "ee633d8d0369e50b4374faa874468023f098c2d8b0dffe003c25cca47512827a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/values.html",
+      "sha256": "34344f9a5def1b028ba884bcf90d744f7767af0eba2345c22769cbec6a57653a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/values.reader.txt",
+      "sha256": "58e6e955ebb5df26fe53c9e996cc6c9712fcce55a69460be6248019c72ef63be"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/vlsd.html",
+      "sha256": "900ed6edf8e58c6c153790b6db7c296a562476f91d89d605f22053f7c068ac95"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-sources/vlsd.reader.txt",
+      "sha256": "06a60adfb8400024e15e3f2783122c42dba5d6fba59b8b36bd31f2ab84c1a0fc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-validation.json",
+      "sha256": "c78b39c8b9a78994b3c8ca1ed83a77c3e22ce412ed29c517b15c85ffa0a6103f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/payroll-formation-writer-report.md",
+      "sha256": "99f0399d58aa7b7be5250109bbf3384f8dd2f54c8cdab943e7488a006d791a40"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/admin.html",
+      "sha256": "b320aa7e72fff866311e1487fec9c7864c077825b7c57c358382cac1310f9115"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/admin.reader.txt",
+      "sha256": "70770eb2ceee7d7da82d1424967b1ad6dce5abfe8996c1d75341954908b46ffc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/calculator-180days-150000.ax.txt",
+      "sha256": "b4dd0463406b592ea99e2da42201537872fe6fd432a91a0a1c984765e942aeed"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/calculator-180days-150000.png",
+      "sha256": "dee0159b89b8ef97a2812fd3de5a3f21b02e7508aea956770eb05d61fcb3576d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/calculator-365days-150000.ax.txt",
+      "sha256": "8bc645e3b42b82a8e80a5057258004832e06683f01d1e2c0e4ea0852ebcf6fa9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/capital.html",
+      "sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/capital.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-cross-border-payments-20572441dcdae9ebd4c282597940338832ade34e.md",
+      "sha256": "4ce91bdc512ba573a0321e20fd8565ae579ef7b8b72b85d294e4803004dfd4d1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-cross-border-payments-origin-main.md",
+      "sha256": "0b3bd77746a3fd8b4b69fe8ba2f8aeeaec0ba8dfb9c380fbf044b15eef187772"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-cross-border-payments-rows.json",
+      "sha256": "2a71208d74f2b84bd861c9024903950f5ff2e196165ed12d91c104a2f9e7e51f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-vat-20572441dcdae9ebd4c282597940338832ade34e.md",
+      "sha256": "e98d5887ff2fb628b79bfe7fdf29f8b8570a06aa08df5aeae616db10f95b0f40"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-vat-origin-main.md",
+      "sha256": "bc16571ff5610909713141b54665035302085b6dfadd4f922ab2e8bfc4753a6a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fo-vat-rows.json",
+      "sha256": "b247919d565fd09103dba4a6c8702c61183d13e3280e4b25115b6c92e3edcd15"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fuel.html",
+      "sha256": "8c2e44e648bc3d9bf28a5e7c29add544b1860e04b974aa8fa0dac54fa711a83e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/fuel.reader.txt",
+      "sha256": "5a2a850017d119c033cfa922e532f4b740216d35f37de0ce778271d74a92a620"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/law.html",
+      "sha256": "9894b644b872c88353823b8bd91222e3d23f9ba10fa7cc37afd4620f3d452ad4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/law.reader.txt",
+      "sha256": "43b888ab0fb7d765263e4015daf4fcbe8e430b5dcf43b31f8c5a84ec6d5af644"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/rate.html",
+      "sha256": "274e5c894ae4a05b2373ee9858bf42c32ded6950faf5bf86bf2e7272eecc7d38"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/rate.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/refund.html",
+      "sha256": "fdd0cc3552841558137bc287365f09d949c5a127e580a86ff38ed7549c246f97"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/refund.reader.txt",
+      "sha256": "7972bae92c5bb7f438d656f579929920778f2d64e139f435f2d97e74d7ef4ff5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/reg.html",
+      "sha256": "b087762b7651c58ef79ad936e832a8b5c8b68ce83719d57ef23dd5bfd1ad22f0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/reg.reader.txt",
+      "sha256": "3b287022c2a74d08d119e924fa50f0e0a69b4ba4afd1cf49b8bf347976d6ad78"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/relief.html",
+      "sha256": "b74cd22fe7bdb9e5e32e299e34ffc6e3139796512248c7d37253bc8bb0488283"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/relief.reader.txt",
+      "sha256": "9da91f128b441a86f676d24c7eefdc410a75be7bd10a6cb91200f9cbc6162d0e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/residence.html",
+      "sha256": "7ab705a6f9027687bbf1d619113a90bd7c4bd05e506626d3355c131d731f1a30"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/residence.reader.txt",
+      "sha256": "8096aa78420c7ac166ff7af80dc624a557b6ddef06c5c1441bbdd56ff79c9d5a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/returns.html",
+      "sha256": "500ed72fd360ce3ce199d4c6c2cb5c8ee64afda1ae11ebdcdf5ca76fab382957"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/returns.reader.txt",
+      "sha256": "6977ecc0db0b729ce48a62e1ac091dd7ca6f609bef393a070e382976555afcfa"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/root-ledger-acquisitions.json",
+      "sha256": "59e68e22f35eaf8ff7b989e7b7b95083bcaa6899526107558cfe6a63a937ca58"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/root-positive-edit-operations.json",
+      "sha256": "c5f60d9c96764323099cc4394856047bd7c1469737880fb8040dab1587c8e3eb"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/root-source-identities.json",
+      "sha256": "6b463176b568792c51dcff3eda0a2b807561a08355db7bdbe8e5e8f66dbcf90f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/root-web-receipts.json",
+      "sha256": "2f5be635a379ddc27f47446a75e727cdd45a8b0c3687c484b0786de6b4bcbd83"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/royalty.html",
+      "sha256": "6a18c449fbe58ea9eb8a515255381b1625d1d3e09c8a381a4dcc345a897b9cb4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/royalty.reader.txt",
+      "sha256": "85d5a6a142b2588b91f53ad79ff1b530f69a589361e191454a38107f3fb25a14"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/tax.html",
+      "sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/tourism.html",
+      "sha256": "cb88cef5aa4a1d04fa07b170c537f1b1dcd5a4ec7512d3c20c0ce8556aa130d9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/root-evidence/tourism.reader.txt",
+      "sha256": "248fdd05d5f0cddb63716aac9ca9fb377b13cb7a80432cfc364a1db3e31fc291"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-2026-evidence/write-payroll-formation.py",
+      "sha256": "211d14a7480d9f01a3b48d9c8e58c829020c6c6c6f740297d1bccfaffedaca99"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/additional-sources.json",
+      "sha256": "12dc182ae086daa6a9f0f9dca0be05c8e103c0fa04c35fe9bf92225222b74afb"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/build-ledger.py",
+      "sha256": "f8ee49f5b1fe8e257b1e8997dc3256169c34ed11ecfd50ecc4b2948e45c84e27"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/check-preservation.py",
+      "sha256": "d62a819a2c844e90a593f543fdd29297db658aef0e7c8c45777e4349e9bcd88e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/citation-expansions.json",
+      "sha256": "a2d1ff14fd05397515c3c9db29d78b2b8ef28ca4e0d75411b603ac98cdbd8f20"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/example-checks.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.md",
+      "sha256": "dedc57c987434499c04e304a35f1939002185bd3071b91c3b97fcd91e0eaebd8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.rows.json",
+      "sha256": "cfe10c02ac4fc48aed4e107c51e867d1af3de76da6ae7099da1fa87d675773e1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/formation-delta-ledger.md",
+      "sha256": "b321dc3a7ae0bde9a3a5ced6b142181bf241e7746c045bad2e3e9c0c07cd8e0e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/formation-example-additions.txt",
+      "sha256": "c343debb506aa9e6bdf3f1dc3291c1f3b0fb17d0d33f932b659ecc6ca2a925d2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/example-checks.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/fresh-source-receipts.json",
+      "sha256": "70528563a1b0b1191b95a4c639b8207805c1adbbf8b756b101e8278c8835509f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/input-and-preservation-audit.json",
+      "sha256": "59ed5639cc19b4dbba4123a723674191de9b391d7fbc2d5efeb143086bca1f73"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/review.md",
+      "sha256": "ffe77df35fea38a205d96a6c4630eda1af3cfadee9e09dbf17203d2f241931f9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/skill-checks.txt",
+      "sha256": "55adbedcc91732635845b0ad5f1152f01891a5f87d0bae35cf3af345d83465db"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/independent-review/verdict.json",
+      "sha256": "5381f2dd9d057bd90c2185f60a65f61450ea1cf22a0527218cb825c8f3c84e39"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/preservation.json",
+      "sha256": "7c02df52bff1cf3d6fe3a218cca67afbc30cf110b1c6e9d2de482ddc3dcbac02"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/research-findings.md",
+      "sha256": "4bb43fafa66906c88c08a7df3cfa5dfdcf30301cb06d8d10974e6dbb754a4249"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/skill-checks.txt",
+      "sha256": "55adbedcc91732635845b0ad5f1152f01891a5f87d0bae35cf3af345d83465db"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources.json",
+      "sha256": "b0c10f47d56463e8790c18361526a88bd10a6f6a95300797bfd3de1030427f6c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/V01.web-extract.txt",
+      "sha256": "74ef7068e60d0eda04d40b276497f3f7e03e16830975f69157d7e4699ee7ff5d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/accounts.html",
+      "sha256": "541d3985f8ad609d7d19d69f447344dac8de7e1d58fbd850128ed2ec5985edd5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/accounts.reader.txt",
+      "sha256": "589c8213abf4e022e41ddff3f8f243cbc0cbb7b155e3eaa423e5e0072f000c77"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/companies.html",
+      "sha256": "852c34f2a4a7d8fc26b7ea444fc2a213bb3edc0f3983667ddc5b9a9741a48531"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/companies.reader.txt",
+      "sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/inheritance.html",
+      "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/inheritance.reader.txt",
+      "sha256": "ee27942a8aa9617cf7fae0aed9e53ffc45dca68f1c65898daf059c511542bbd1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/law-index.html",
+      "sha256": "cd7b0e078308b41b6ef39dfebede58723228301ab080c3fe573da9cb35f6b017"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/law-index.reader.txt",
+      "sha256": "b3fc4d01e815f20d0bc04150e0bb6a352b7f6d46c41ee85fb8cbeb0496bee306"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/payment-agreements.html",
+      "sha256": "5bd60f97f7312334f317f0c3e1f46265b6df738d3e29082e30eee59db7742a00"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/payment-agreements.reader.txt",
+      "sha256": "8de9192018c378d4e5ad6a20c3b0d853fb6f926b89d4c1c8e1d4d1820c65ed7f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/payroll-levy.html",
+      "sha256": "bd7f712993654a7a79e35e8d30d61b5bbd37d987aebb87c2634029faf232023d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/payroll-levy.reader.txt",
+      "sha256": "cce4c5fa3f007018bc1ee8c22cf3ff1ba5f2645ba89adced046f009c5486b046"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/registration-guidance.web-extract.txt",
+      "sha256": "26837fa0122385ec6bb2eac4dde8f24aaf4e4093871311ced43eaf466ff2bcd1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/start-business.html",
+      "sha256": "56d86abb073c683fc09bd10bff7737dba9ce25745c24d813185488cc020f5ade"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/start-business.reader.txt",
+      "sha256": "818e37e579b07d268c6e66637ad4c1994828800da46e77f6434d4414c08074f3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-bill-82-2004.pdf",
+      "sha256": "9859c359842950285a4a60176d4ea33252c44e92c0e9bd6e8dd8fb1ed259d2b6"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-bill-82-2004.reader.txt",
+      "sha256": "39d211ce6471cd10233637039abfabc36bcaf24aa21c2c4d332669b945f949f7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-current.html",
+      "sha256": "a398abdca8a86748815ecbe9e324cecf56b9da9460db35ea8be7fdb67d0be673"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-current.reader.txt",
+      "sha256": "43b888ab0fb7d765263e4015daf4fcbe8e430b5dcf43b31f8c5a84ec6d5af644"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-filing.html",
+      "sha256": "500ed72fd360ce3ce199d4c6c2cb5c8ee64afda1ae11ebdcdf5ca76fab382957"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources/vat-filing.reader.txt",
+      "sha256": "00207e273db600a7336da65988d4f9e9c6bb49bf99369df5d66e5553617fd776"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sync-integrity.txt",
+      "sha256": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/unit-tests.txt",
+      "sha256": "b21b1f888c1ad9af4741429e31c0529bd24fce22298aac1c43ceb6863c57b99e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/validate-changed.txt",
+      "sha256": "86a0de0018824e77654342e89003f5c0764150f32663dd7cdbb333a6a9ba6109"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/validation.json",
+      "sha256": "bb8e0e341007a383040cab33a7e9ca3a03edbb77760dffe55daa3039bde78676"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/writer-manifest.json",
+      "sha256": "f9de854cf1e3a54f76ab5c4ddc5867315bc5b355253d22008b3cba900b3f20b0"
+    },
+    {
+      "path": "evidence/ledgers/fo-company-registration-reporting.md",
+      "sha256": "b7b6eb0327ee54c442b6467dfc6ada7dbf689e9501b347db4745272a33cd9d9e"
+    },
+    {
+      "path": "evidence/ledgers/fo-corporate-income-tax.md",
+      "sha256": "dfb164a2eab618f49fbebbf30b0271a944ff47ca61d0e2d59bb47c3724b9146f"
+    },
+    {
+      "path": "evidence/ledgers/fo-country-by-country-reporting.md",
+      "sha256": "45e6998c3404de6e51f6ec0ec9a961e9fc851513780d871e834c5f2a82465c21"
+    },
+    {
+      "path": "evidence/ledgers/fo-cross-border-payments.md",
+      "sha256": "b43228e535125194b89501a1bf3ad0282db8f3ddb3e99028f2a9de36f2891dc8"
+    },
+    {
+      "path": "evidence/ledgers/fo-individual-income-tax.md",
+      "sha256": "9ed2ad6850251ea60d7765cb8f46e719e73f0c0048c08c8528c50c63b8559c27"
+    },
+    {
+      "path": "evidence/ledgers/fo-payroll-contributions.md",
+      "sha256": "d331d7761c5501a284a9ce821edfcd651f5340bca27a171d17b320b28a9665db"
+    },
+    {
+      "path": "evidence/ledgers/fo-transfer-pricing.md",
+      "sha256": "7133136945ccc3439b43d86682a74067a7fdd1e6a414289a17408a33147822d8"
+    },
+    {
+      "path": "evidence/ledgers/fo-vat.md",
+      "sha256": "7a2a30cd19b4760218cfc705451eb3bc8f6911180bdd89d9527bdd60401af5c9"
+    }
+  ],
+  "notes": [
+    "No existing Guide is rewritten; death-year/estate methods do not replace the personal Guide annualisation/capital methods or the cross-border Guide withholding/treaty methods.",
+    "README receives additive routing/status only. Seven partials and the rest of the primary-index job-family inventory remain."
+  ]
+}

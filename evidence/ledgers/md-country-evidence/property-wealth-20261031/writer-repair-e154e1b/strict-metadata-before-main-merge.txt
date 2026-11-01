@@ -1,0 +1,60 @@
+ERROR   skills/bahrain/bh-cross-border-tax.md -> skills/international/bahrain/bh-cross-border-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/bahrain/bh-transfer-pricing.md -> skills/international/bahrain/bh-transfer-pricing.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/eu/eu-vat-base.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-30
+ERROR   skills/eu/eu-vat-base.md: [unversioned-body-change] body changed without advancing last_updated or version (279ba29f0d88 -> bcfdd09d6b0c)
+ERROR   skills/eu/eu-vat-base.md: [version-regression] frontmatter version moved backwards: 2.2 -> 2.1
+ERROR   skills/eu/eu-vat-directive.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-30
+ERROR   skills/eu/eu-vat-directive.md: [unversioned-body-change] body changed without advancing last_updated or version (92f1284e602f -> f2777c46d712)
+ERROR   skills/eu/eu-vat-directive.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+ERROR   skills/finland/fi-tax-overview.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/finland/fi-tax-overview.md: [heading-version-regression] body heading version moved backwards: v0.5 -> v0.4
+ERROR   skills/finland/fi-tax-overview.md: [unversioned-body-change] body changed without advancing last_updated or version (2a24f33f96ec -> 38766e32925c)
+ERROR   skills/finland/fi-tax-overview.md: [version-regression] frontmatter version moved backwards: 0.5 -> 0.4
+ERROR   skills/germany/de-crypto-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-crypto-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (bf438023aa60 -> 198a7d701d71)
+ERROR   skills/germany/de-crypto-tax.md: [version-regression] frontmatter version moved backwards: 1.4 -> 1.3
+ERROR   skills/germany/de-einkommensteuer-freelancer.md: [unversioned-body-change] body changed without advancing last_updated or version (71b8f7760b7c -> ff86b82f997c)
+ERROR   skills/germany/de-einkommensteuer-freelancer.md: [version-regression] frontmatter version moved backwards: 1.8 -> 1.7
+ERROR   skills/germany/de-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (90e4a8645c87 -> beea5f8262e5)
+ERROR   skills/germany/de-income-tax.md: [version-regression] frontmatter version moved backwards: 2.7 -> 2.6
+ERROR   skills/germany/de-payroll.md: [unversioned-body-change] body changed without advancing last_updated or version (91af264bc14b -> a203bf5e0ac0)
+ERROR   skills/germany/de-payroll.md: [version-regression] frontmatter version moved backwards: 1.8 -> 1.7
+ERROR   skills/germany/de-social-contributions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-social-contributions.md: [unversioned-body-change] body changed without advancing last_updated or version (33ca44fdfef8 -> 55f0c172940b)
+ERROR   skills/germany/de-social-contributions.md: [version-regression] frontmatter version moved backwards: 2.4 -> 2.3
+ERROR   skills/germany/germany-bookkeeping.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-24
+ERROR   skills/germany/germany-bookkeeping.md: [unversioned-body-change] body changed without advancing last_updated or version (e7314b93d987 -> 2ea24dafc23b)
+ERROR   skills/germany/germany-bookkeeping.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/germany/germany-einvoice.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/germany-einvoice.md: [unversioned-body-change] body changed without advancing last_updated or version (23cd462a742a -> 7fa95b6bb6bf)
+ERROR   skills/germany/germany-einvoice.md: [version-regression] frontmatter version moved backwards: 1.3 -> 1.2
+ERROR   skills/germany/germany-financial-statements.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-19
+ERROR   skills/germany/germany-financial-statements.md: [unversioned-body-change] body changed without advancing last_updated or version (1e09f0917abd -> c600ed5e19ed)
+ERROR   skills/germany/germany-financial-statements.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/germany/germany-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-19
+ERROR   skills/germany/germany-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (8f3295eb9080 -> 3b3bdb710b17)
+ERROR   skills/germany/germany-formation.md: [version-regression] frontmatter version moved backwards: 1.1 -> 1.0
+ERROR   skills/germany/germany-vat-return.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/germany-vat-return.md: [unversioned-body-change] body changed without advancing last_updated or version (69a5711c2fde -> 5ec737763e50)
+ERROR   skills/germany/germany-vat-return.md: [version-regression] frontmatter version moved backwards: 2.5 -> 2.4
+ERROR   skills/germany/leaving-germany-exit-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/leaving-germany-exit-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (cefb1e7059bf -> fe8ce028d62f)
+ERROR   skills/germany/leaving-germany-exit-tax.md: [version-regression] frontmatter version moved backwards: 0.2 -> 0.1
+ERROR   skills/ireland/ie-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/ireland/ie-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (8d56a02309f8 -> a4eebb49b233)
+ERROR   skills/ireland/ie-formation.md: [version-removed] frontmatter version was removed
+ERROR   skills/ireland/ie-freelance-intake.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/ireland/ie-freelance-intake.md: [unversioned-body-change] body changed without advancing last_updated or version (033048a44069 -> f64262ec1e9e)
+ERROR   skills/ireland/ie-freelance-intake.md: [version-removed] frontmatter version was removed
+ERROR   skills/ireland/ie-return-assembly.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-27
+ERROR   skills/ireland/ie-return-assembly.md: [unversioned-body-change] body changed without advancing last_updated or version (a0d1d57b64b2 -> e12a8b1069be)
+ERROR   skills/new-zealand/new-zealand-crypto-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (897d34fefd83 -> ede3779a3740)
+ERROR   skills/new-zealand/new-zealand-crypto-tax.md: [version-regression] frontmatter version moved backwards: 1.2 -> 1.1
+ERROR   skills/orchestrator/de-freelance-intake.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/orchestrator/de-freelance-intake.md: [unversioned-body-change] body changed without advancing last_updated or version (4307c97f1b93 -> 53e6928619a7)
+ERROR   skills/orchestrator/de-freelance-intake.md: [version-regression] frontmatter version moved backwards: 0.2 -> 0.1
+ERROR   skills/orchestrator/de-return-assembly.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-09-20
+ERROR   skills/orchestrator/de-return-assembly.md: [unversioned-body-change] body changed without advancing last_updated or version (5f4e34da8d8f -> 1d381929b5df)
+ERROR   skills/orchestrator/de-return-assembly.md: [version-regression] frontmatter version moved backwards: 0.2 -> 0.1
+Sync integrity checked 42 source guide(s): 59 error(s), 0 warning(s), 0 notice(s).
