@@ -1,0 +1,58 @@
+{
+  "reviewed_head": "d84a11673404f6f808b8a98fc51f1414476a5672",
+  "accepted_baseline": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+  "files": [
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.json",
+      "sha256": "b8f2fe55470ed570081c1b07412ff7412640f684c87781a6afc071ec1a5211a7"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.md",
+      "sha256": "e5ef814156ab3ff640ce9b7c9f265167c2a1b703dabf27308ccc929f853b93eb"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/preservation.json",
+      "sha256": "23b822f2b042a86f7413f8ff95ba3a85944ffc30e1ff6a826ff4e6ee59b362f9"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/quote-check.json",
+      "sha256": "94bf64f7883185c97802fa1fdd75fd8bca2a0c2220b05a9c73a6bb02521d9781"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json",
+      "sha256": "0d04c22f9be1ccd751d2075fb1b916657903f6ae249acb296764e86c7fb27d27"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/shape-checks.json",
+      "sha256": "a3160dce8cd892b9c0f9f60b2aea4eddc3baa6bd041b7ebe1c28dd202ba9eb9d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md",
+      "sha256": "6a4074e7f91828b7702e3b2eeb225a6efd64c0c79c638140423d4ed3a5c55060"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-tax-overview.md",
+      "sha256": "8bf4bad3bc6177059419d7bb70f31ca7e03e821d1c9a81b7751db40ac8077301"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/source-read-manifest.json",
+      "sha256": "6fc44c0001a4d5967de811d1cb7ad71118851c955567d3b5966eb702aad9e4c7"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/validation-checkpoint.json",
+      "sha256": "34ea2bf47c3d3d6ff945be0c8a43715b34ae5d5373e7ebb3389d37cf9d76c36a"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-formation-overview-20261101/writer-record.md",
+      "sha256": "8ef1d118b7e993ad08c30f53f5095999f386cfca1e415ef10f0d7c0057d4bebd"
+    },
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "sha256": "f3d570268b7bcfb9b2dc41a0e80afa779c6032c770f69d480dcc836a2fb011bd"
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "sha256": "faba635e7b43042fa4a08e8df7e9a32234adf838ce7805708c9a24be096676b5"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # sl-tax-overview figure and rule ledger
 
-Writer source checks only. Independent review pending. Quotes are short exact source excerpts; a grouped record requires the reviewer to check every condition in its rule against the cited full provisions.
+Writer records with independent conditional source corrections closed. Quotes are short exact source excerpts; a grouped record requires the reviewer to check every condition in its rule against the cited full provisions.
 
 | ID | Guide section | Rule / condition | Act and article | Original quote | Actual source / read date |
 |---|---|---|---|---|---|

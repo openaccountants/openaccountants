@@ -1,0 +1,442 @@
+[
+  {
+    "id": "F01",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "2026 candidate cover",
+    "actual_read_pages": "1",
+    "review_note": "Visually inspected the cover: A BILL, [Date of Commencement], no adopted enacted replacement asserted."
+  },
+  {
+    "id": "F02",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "2026 candidate body s749",
+    "actual_read_pages": "702",
+    "review_note": "Read actual body s.749 on physical 702, plus repeal/savings physical 699-701. Gazette appointment is a held prerequisite; the contents numbering is not substituted."
+  },
+  {
+    "id": "F03",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NIB homepage Companies2026 section",
+    "actual_read_pages": "HTML",
+    "review_note": "Read cached current homepage promotion: labels reform an Act and advertises unified registry, five-day processing and ownership threshold. Draft does not adopt those advertised procedures."
+  },
+  {
+    "id": "F04",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NIB Act2022 s50",
+    "actual_read_pages": "5",
+    "review_note": "NIB s.50 expressly repeals Companies Act ss.2-14 and substitutes NIB for CAC. Corrects the predecessor OARG assertion."
+  },
+  {
+    "id": "F05",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NIB Act2022 s23",
+    "actual_read_pages": "17",
+    "review_note": "NIB s.23(1)-(2) assigns company administration and incorporation supervision to the Corporate Affairs Directorate."
+  },
+  {
+    "id": "F06",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s15(2); Amendment2014 s2",
+    "actual_read_pages": "15",
+    "review_note": "2009 s.15(2) permits one person for a private company; 2014 s.2 deletes the subject-to words in s.15(1), not the one-person limb. Officers remain a separate question."
+  },
+  {
+    "id": "F07",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 ss18-20",
+    "actual_read_pages": "16",
+    "review_note": "Read ss.18-20: shares/guarantee/unlimited liabilities and public/private categories are distinct."
+  },
+  {
+    "id": "F08",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s19",
+    "actual_read_pages": "16",
+    "review_note": "Read s.19(1)-(5). Member cap, specified employee exclusions and joint-holder treatment are preserved. No popularity inference is made."
+  },
+  {
+    "id": "F09",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s22; Amendment2014 s4",
+    "actual_read_pages": "2",
+    "review_note": "Read 2009 s.22 objects, distribution restrictions and 2014 s.4 replacement of (2). Historical existing-company transition does not establish a new current application rule."
+  },
+  {
+    "id": "F10",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Amendment2014 s5(a)",
+    "actual_read_pages": "2",
+    "review_note": "2014 s.5(a) replaces all s.23(2)(a), specifying private-company shares and 25% subscriptions, without repeating old fixed monetary amounts. No invented public minimum."
+  },
+  {
+    "id": "F11",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s85; Amendment2014 s21",
+    "actual_read_pages": "5",
+    "review_note": "2014 s.21 inserts public in s.85(2)-(3); does not change (1) or (4). Awkward payment language is expressly held."
+  },
+  {
+    "id": "F12",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s85(4)",
+    "actual_read_pages": "41",
+    "review_note": "Read 2009 s.85(4), s.85(3), and s.88 continuation physical 42-43. Subject-to branches remain qualified; no cash-payment assertion is inferred."
+  },
+  {
+    "id": "F13",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Amendment2014 s43; Companies Act2009 s211",
+    "actual_read_pages": "9",
+    "review_note": "Read s.211 and 2014 s.43. Public inserted only in (1)-(2); unchanged liability (3) is held, rather than silently extended or removed."
+  },
+  {
+    "id": "F14",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 ss249-251",
+    "actual_read_pages": "104-105",
+    "review_note": "Read ss.249-251. Secretary baseline, reasonable knowledge/experience steps, additional public-company qualifications and same-person joint-act prohibition are supported."
+  },
+  {
+    "id": "F15",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s23; Amendment2014 s5(b)",
+    "actual_read_pages": "2",
+    "review_note": "Read s.23(1)-(5) together with 2014 s.5. Memorandum particulars/witnessing supported; old deed-stamping subsection expressly repealed."
+  },
+  {
+    "id": "F16",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s31",
+    "actual_read_pages": "21",
+    "review_note": "Read s.31(1)-(4). Signed witnessed subscriptions, consecutive paragraphs and optional Table A adoption supported."
+  },
+  {
+    "id": "F17",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s32(2)",
+    "actual_read_pages": "22",
+    "review_note": "Read s.32(1)-(3): full office, first officers, subscription/compliance declarations, further lawful documents and no postal-box substitution."
+  },
+  {
+    "id": "F18",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Amendment2014 s10",
+    "actual_read_pages": "3",
+    "review_note": "2014 s.10 adds first-director valid ID/consent and subscriber-ID declaration. No new fabricated filing field."
+  },
+  {
+    "id": "F19",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s34",
+    "actual_read_pages": "23",
+    "review_note": "Read s.34(1)-(3): incorporation date creates personality; certificate prima facie rather than a guarantee of all licences."
+  },
+  {
+    "id": "F20",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Amendment2014 s11",
+    "actual_read_pages": "3",
+    "review_note": "2014 s.11 replaces refusal deadline with reasonable period. Draft correctly avoids treating it as a successful-incorporation turnaround promise."
+  },
+  {
+    "id": "F21",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 ss317-320(1)",
+    "actual_read_pages": "132-133",
+    "review_note": "Read ss.317-321 and 2014 ss.55-56. Distinct return classes, 28-day completion and signed forwarding supported. Printed s.318 certificate cross-reference held."
+  },
+  {
+    "id": "F22",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s185(1)-(3)",
+    "actual_read_pages": "79-80",
+    "review_note": "Read s.185(1)-(3). Annual/15-month and first 18-month qualification, extension exclusion and auditors/all voting members written dispensation supported; post-waiver filing held."
+  },
+  {
+    "id": "F23",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 ss281-282",
+    "actual_read_pages": "115-116",
+    "review_note": "Read ss.281-282: sufficient accounting, goods/stock records, in-country location and six years from creation; disposal-direction qualification remains in the source."
+  },
+  {
+    "id": "F24",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s288; Amendment2014 s54",
+    "actual_read_pages": "11",
+    "review_note": "Read s.288(1)-(5) and 2014 s.54. Annual IFRS, private content exceptions, general audit and literal notwithstanding (5) anomaly correctly held."
+  },
+  {
+    "id": "F25",
+    "verdict": "repair_required",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s302",
+    "actual_read_pages": "125",
+    "review_note": "REPAIR: the claimed all-conditions summary omits government/public corporation/agency nominees in s.302(1)(e), and s.302(2) prorates the turnover maximum where the company year is not a full year. Add these to Guide/ledger; current cap and audit cross-reference remain held."
+  },
+  {
+    "id": "F26",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 s296",
+    "actual_read_pages": "123-124",
+    "review_note": "Read s.296(1)-(5): first 18 months, then annual, nine-month freshness and annual-return delivery; reference to the particular unlimited exception avoids blanket exemption."
+  },
+  {
+    "id": "F27",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "physical11 left-column visual inspection",
+    "article": "Amendment2014 s55",
+    "actual_read_pages": "11",
+    "review_note": "2014 s.55 prints Le850,000 daily for company and each officer in default. Historical amount is explicitly not a payable current currency amount; ss.61-62 levying/priority interactions held."
+  },
+  {
+    "id": "F28",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Companies Act2009 ss484-486",
+    "actual_read_pages": "185-186",
+    "review_note": "Read ss.484-486: new establishment one month, commencement transition distinct, constitution/translation, addresses/officers/process recipient and existence evidence, later three-month changes, annual local balance sheet."
+  },
+  {
+    "id": "F29",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Revenue Administration Act2017 s21(1)-(4)",
+    "actual_read_pages": "16",
+    "review_note": "Read actual RAA s.21(1)-(5) across physical 16/15 and neighbouring ss.22-24. Fifteen-day income-activity trigger, no second TIN and separate GST registration supported."
+  },
+  {
+    "id": "F30",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NIB registrationpage",
+    "actual_read_pages": "HTML",
+    "review_note": "Read cached registration text and HTML anchors. One shareholder/director is website context, not stronger law. Main registration CTA href is #; separate header business-portal link is not treated as tested authenticated filing."
+  },
+  {
+    "id": "O01",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NRA Act2022 s2",
+    "actual_read_pages": "4",
+    "review_note": "Read NRA s.2 continuation/body corporate; no reliance only on repealed 2002 law."
+  },
+  {
+    "id": "O02",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NRA Act2022 ss15,42",
+    "actual_read_pages": "6,11-12",
+    "review_note": "Read NRA ss.15 and 42. Revenue administration/enforcement functions and repeal with saved instruments supported."
+  },
+  {
+    "id": "O03",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "BSL notice11August2021 denominationtable",
+    "actual_read_pages": "1",
+    "review_note": "Read entire one-page Bank notice, table and prospective wording. 1000:1 supported; no 2021 legal-introduction date inferred."
+  },
+  {
+    "id": "O04",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Income Tax Act2017 baseline ss45-47",
+    "actual_read_pages": "38-39",
+    "review_note": "Read ITA ss.45-47. Ordinary year, written application/Commissioner permission, substituted-year withdrawal and transitional period supported as baseline only."
+  },
+  {
+    "id": "O05",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Income Tax Act2017 baseline ss10-16",
+    "actual_read_pages": "20-22",
+    "review_note": "Read ITA ss.10-16. Ordinary/temporary/non-resident scope, individual time qualifications, company alternative residence grounds and separate PE treatment remain routed to preserved cross-border Guide."
+  },
+  {
+    "id": "O06",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Revenue Administration Act2017 s21",
+    "actual_read_pages": "16",
+    "review_note": "Same actual RAA s.21 reading as F29. Activity trigger is distinguished from incorporation and GST."
+  },
+  {
+    "id": "O07",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "2026 candidate cover/body749",
+    "actual_read_pages": "1,702",
+    "review_note": "Same visually inspected bill cover and body s.749 as F01-F02; company-law currentness is held."
+  },
+  {
+    "id": "O08",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "NIBregistrationpage",
+    "actual_read_pages": "HTML",
+    "review_note": "Cached registration page invokes 2009 law whereas homepage advertises replacement. Neither resolves enacted/commenced status."
+  },
+  {
+    "id": "O09",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  },
+  {
+    "id": "O10",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  },
+  {
+    "id": "O11",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  },
+  {
+    "id": "O12",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  },
+  {
+    "id": "O13",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  },
+  {
+    "id": "O14",
+    "verdict": "supported_as_conditional_source_draft",
+    "quote_found": true,
+    "source_identity_matches": true,
+    "quote_method": "actual cached text whitespace-normalized",
+    "article": "Preserved Guide and its source ledger; navigation assertion, no new tax rate",
+    "actual_read_pages": "full preserved Guide routing reference",
+    "review_note": "Read preserved owning Guide headings, Rates, Deadlines and Sources/holds as routing context; exact pinned Guide hash and title independently match. No new rate or renewed legal closure is inferred from navigation."
+  }
+]

@@ -1,6 +1,6 @@
 # Sierra Leone formation and overview writer checkpoint
 
-Status: conditional source drafts, independent review pending. These two additions are backed up before review under Michael's explicit draft-backup instruction. No accountant attestation or complete operative 2026 law is claimed.
+Status: conditional source drafts, independent conditional source corrections closed. These two additions are backed up before review under Michael's explicit draft-backup instruction. No accountant attestation or complete operative 2026 law is claimed.
 
 ## Scope and immutable baseline
 
@@ -34,4 +34,6 @@ The post-commit validation receipt records the actual committed changed-only val
 
 ## Open work
 
-Fresh independent review of these two additions; actual enacted/commenced reform status and full company-law chain; current forms, fees, small-company monetary limits, portal acceptance and filing methods; preserved unresolved tax domain conditions. All seven country tax domains remain partial. Refreshing the last two legacy tax-year labels does not establish comprehensive coverage.
+Independent conditional source corrections are closed. Remaining work includes actual enacted/commenced reform status and full company-law chain; current forms, fees, small-company monetary limits, portal acceptance and filing methods; preserved unresolved tax domain conditions. All seven country tax domains remain partial. Refreshing the last two legacy tax-year labels does not establish comprehensive coverage.
+
+The [independent formation/overview closure](../sierra-leone-formation-overview-review-20261101/CLOSURE.md) checks all 44 records, 29 old-topic entries and four independent computations. It closes the small-company condition omission and explicitly retains statutory-register work as a gap. The turnover-maximum adjustment applies to a reporting year that is not twelve months. Exact source fidelity is accepted within the stated limits; every current-law, form and partial-domain hold remains, and no accountant attestation is claimed.

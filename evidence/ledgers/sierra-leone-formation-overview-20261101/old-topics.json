@@ -98,7 +98,7 @@
   {
     "guide": "sl-company-formation",
     "old_topic": "- **Annual return** — File an annual return with the OARG and maintain statutory registers  _(Companies Act 2009)_",
-    "destination": "Deadlines: class-specificannualreturn",
+    "destination": "Deadlines: class-specific annual return. Sources Not yet confirmed: separate statutory-register suite explicitly held; accounting/stock records do not establish statutory-register maintenance.",
     "baseline_commit": "9166cb1accc12699a0e0d14858acefd4b26138fc",
     "git_blob": "62453e5a11c88c22f495f22acec43c2d4fbe204e",
     "old_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"

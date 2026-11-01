@@ -293,13 +293,18 @@
       "id": "F25",
       "guide": "sl-company-formation",
       "section": "Rates, bands and thresholds; The base; Examples",
-      "rule": "All small-company conditions apply: private share company, authority-fixed turnover/net-asset caps, citizen members only, no government/public-agency member and director ownership of at least 51%. Current monetary caps are not established.",
-      "article": "Companies Act2009 s302",
+      "rule": "All small-company conditions apply: private share company, authority-fixed turnover/net-asset caps, no non-citizen member, no Government/public corporation/agency or its nominee as a member, and director ownership of at least 51%. Proportionately adjust the turnover maximum for a company reporting year that is not twelve months under s.302(2). Current monetary caps remain unproved.",
+      "article": "Companies Act2009 s302(1)(a)–(f),(2)",
       "source_id": "C09",
       "pdf_pages": "125",
       "url": "https://bsl.gov.sl/Companies_Act_2009_05_pdf_67839.pdf",
       "quote": "51 percent of its equity share capital",
-      "read_on": "2026-11-01"
+      "read_on": "2026-11-01",
+      "additional_quotes": [
+        "or agency or its nominee",
+        "the maximum figure for turnover",
+        "shall be proportionately adjusted."
+      ]
     },
     {
       "id": "F26",

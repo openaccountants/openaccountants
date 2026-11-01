@@ -1,0 +1,132 @@
+{
+  "result": "accepted_conditional_source_fidelity",
+  "date": "2026-11-01",
+  "initial_frozen_head": "d84a11673404f6f808b8a98fc51f1414476a5672",
+  "accepted_six_guide_baseline": "9166cb1accc12699a0e0d14858acefd4b26138fc",
+  "accepted_candidate_files": {
+    "skills/sierra-leone/sl-company-formation.md": "923e7324322b36c1633ef91abd4b37e1c4f6d827b72d2ad5eb048540026601dc",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/rules.json": "bf16793e7bcc2fdd4da5f512f831ff0c72f9098e9ee1ab1175eb3975ac0bd6a3",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/sl-company-formation.md": "c44183075b4f2f4f5f9a37e629dad7ec93e677575ed29dd44bd5413fbf3460ce",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.json": "9b12cfe76fade728a0f81fb7879f1578437b09de364fcf0236cea1fa6cc154d0",
+    "evidence/ledgers/sierra-leone-formation-overview-20261101/old-topics.md": "ee759617e169fee3da245d26181af6fbfcdc9eb073a6b46e8591e9f1a6d7a962"
+  },
+  "overview_sha256": "faba635e7b43042fa4a08e8df7e9a32234adf838ce7805708c9a24be096676b5",
+  "findings": {
+    "SL-FO-1": "Closed: full nominee exclusion and proportionate turnover adjustment for company reporting years not twelve months in Guide table, example caveat and JSON/human ledger. Reviewer clarifies original short-year shorthand; longer non-twelve-month periods are not excluded.",
+    "SL-FO-2": "Closed: statutory-register suite explicitly retained as an unresolved predecessor job in Guide Sources and exact old-topic destination. Accounting/stock records are expressly not treated as proof."
+  },
+  "row_review": {
+    "total": 44,
+    "unchanged_since_initial": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18",
+      "F19",
+      "F20",
+      "F21",
+      "F22",
+      "F23",
+      "F24",
+      "F26",
+      "F27",
+      "F28",
+      "F29",
+      "F30",
+      "O01",
+      "O02",
+      "O03",
+      "O04",
+      "O05",
+      "O06",
+      "O07",
+      "O08",
+      "O09",
+      "O10",
+      "O11",
+      "O12",
+      "O13",
+      "O14"
+    ],
+    "rechecked": "F25 and additional exact quotes against actual physical125/printed229. All other initially accepted row/source conclusions retained."
+  },
+  "old_topics": {
+    "count": 29,
+    "only_changed_destination": 13,
+    "immutable_originals_unchanged": true,
+    "both_limbs_retained_or_explicitly_held": true
+  },
+  "preservation": {
+    "prior_files": 114,
+    "all_byte_exact": true,
+    "overview_exact": true,
+    "initial_review_evidence_unchanged": true,
+    "cta_platform": [
+      {
+        "path": "skills/sierra-leone/sl-company-formation.md",
+        "full_cta_exact": true,
+        "platform_exact": true
+      },
+      {
+        "path": "skills/sierra-leone/sl-tax-overview.md",
+        "full_cta_exact": true,
+        "platform_exact": true
+      }
+    ]
+  },
+  "checks": {
+    "shape": {
+      "skills/sierra-leone/sl-company-formation.md": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      },
+      "skills/sierra-leone/sl-tax-overview.md": {
+        "tax_year_current": [],
+        "sources_read_dates": [],
+        "rates_rows_sourced": [],
+        "canonical_headings": [],
+        "two_oa_checks": [],
+        "version_numeric": [],
+        "tier_honest": [],
+        "no_em_dash": [],
+        "not_yet_confirmed": [],
+        "reviewed_on": [],
+        "read_date_evidence": [],
+        "sources_columns": [],
+        "source_hosts": [],
+        "jurisdiction_body": [],
+        "year_matches_link": []
+      }
+    },
+    "four_independent_recomputations": "Initial calculations.json; all four blocks unchanged and re-executed successfully",
+    "whitespace_diff_check": "pass"
+  },
+  "limits": "No accountant attestation, full operative2026 chain, reform enactment/commencement, live filing, fees/current caps or comprehensive coverage. All existing substantive holds remain. Statutory registers remain explicitly partial."
+}
