@@ -2,13 +2,13 @@
 name: dm-social-contributions
 description: >
   Dominica Social Security contribution calculations and remittance reference for 2026. Covers employee and employer rates with and without redundancy coverage, the monthly earnings ceiling, capped examples, self-employed contributions and payment dates. Use for Dominica DSS, employer insurance contributions, redundancy contribution classification or self-employed social security. The dated 2026 notice and contribution schedule take precedence over older numerical examples in the FAQ. Coverage status, earnings classification and reciprocal-agreement exemptions need individual verification. Benefit calculations, voluntary contribution eligibility and partial-period payroll mechanics remain outside this draft. Monetary examples use Eastern Caribbean dollars.
-version: 0.1
+version: 0.2
 jurisdiction: DM
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -53,8 +53,6 @@ For established prior-year earnings of EC$60,000, annual contributions are EC$8,
 ## Self-check and exclusions
 
 Retain the coverage and redundancy classification, earnings reconciliation, ceiling calculation and payment receipt. Confirm age transitions, reciprocal-agreement exemptions, irregular pay and partial periods separately. Voluntary-contributor rates and benefit entitlements are not a substitute for a coverage decision. General research reference; independent review remains pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

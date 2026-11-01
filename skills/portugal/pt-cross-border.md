@@ -1,13 +1,13 @@
 ---
 name: pt-cross-border
 description: "Portuguese cross-border tax for tax year 2026: tax residence under CIRS art. 16 (183 days, habitual home, split years from the first day of presence, leavers kept resident for the whole year, nationals moving to listed low-tax places); non-residents' Portuguese-source income (25% final withholding on salary, pensions and business income, 28% on capital income, 25% or 28% on rent); the art. 17-A and 72(15) options to use resident bands; the tax representative; company residence and the IRC exit tax in five yearly instalments (CIRC art. 83 and 84); outbound withholding (25%, 28%, 35%) and EU directive exemptions; forms 21-RFI to 24-RFI; the A1 certificate. Trigger on: non-resident Portugal tax, moving to Portugal mid-year, leaving Portugal, artigo 17-A, representante fiscal, exit tax IRC, Modelo 21-RFI. Out of scope: pt-foreign-source-treaties, pt-nhr-ifici, pt-irs-employees-investment, pt-income-tax, portugal-crypto-tax, pt-corporate-tax, pt-transfer-pricing."
-version: 0.1
+version: 0.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -299,8 +299,6 @@ Not yet confirmed:
 - The list of low-tax jurisdictions (the portaria behind the 35% rates and art. 16(6)) was not read today.
 - Whether a person with no Portuguese income in the non-resident part of a split year must still file the second return under art. 57(6), or is exempt under art. 58.
 - The deadline for Modelo 30 and the late-payment interest rate for 2027 were not read today.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

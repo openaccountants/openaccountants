@@ -1,13 +1,13 @@
 ---
 name: gr-living-expense-presumptions
 description: "Greek deemed income from living-expense presumptions (τεκμήρια διαβίωσης) for tax year 2026 under the Income Tax Code, ν. 4172/2013 arts. 30 to 34, with the cuts made by ν. 5246/2025 from tax year 2025. Covers the annual deemed expense of the main and second homes, private cars, boats, aircraft, pools, private school fees and domestic staff; the minimum living expense (EUR 3,000 single, EUR 5,000 joint); asset purchases and loan repayments; how deemed income is compared with total income; the rebuttal and coverage grounds (savings of earlier years, loans, exempt income, gifts, asset sales); and how the difference is taxed on the scale. Trigger phrases: τεκμήρια, τεκμαρτό εισόδημα, διαφορά τεκμηρίων, deemed income Greece, Greek car presumption, living expenses tax Greece. Out of scope: the self-employed minimum income of art. 28A and the scale itself (gr-income-tax), non-residents and the 5A and 5C regimes (gr-cross-border), capital gains."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -243,8 +243,6 @@ expected:
 | AADE, E1 return instructions (2025 income, filed 2026) | https://www.aade.gr/sites/default/files/2026-03/Odigies_E1_2026_0.pdf | 2026-10-23 |
 
 Not yet confirmed: the annual minimum-wage base AADE uses for the 2026 art. 28A minimum (12 or 14 monthly wages; not found in the E1 instructions, AADE decision Α.1062/2026 (the E1 form for 2025 income) or AADE circulars Ο.3071/2023 and Ε.2027/2024, which repeat the law's "annual amount of the gross minimum wage"); that the art. 28A amount, where it applies, is the business income in "total income" for art. 30(3) (our reading of arts. 7, 28A and 30; no AADE text read on it); whether the art. 16 reduction applies to the tax on a difference taxed on the art. 15(1) scale outside art. 15(1A) (the examples avoid the point); whether the 55% prepayment of art. 69 is charged on a difference taxed under art. 29(1); the 2026 E1 form and its codes; the late-payment interest percentage under ΚΦΔ art. 52; any amendment to arts. 30 to 34 made during 2026 after ν. 5264/2025.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

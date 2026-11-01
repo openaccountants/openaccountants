@@ -1,13 +1,13 @@
 ---
 name: be-cross-border
 description: "Belgian cross-border tax for 2026: who is a Belgian tax resident (home or seat of wealth, the National Register presumption, and the company test of main establishment or seat of management); arriving under the special tax regime for inbound taxpayers and researchers (35% cost allowance, EUR 70,000 minimum pay, changed by the law of 18 December 2025); non-resident income tax (belasting der niet-inwoners, BNI) and the 75% rule; the new 10% exit tax on financial assets from 1 January 2026 and the company exit charge on moving the seat abroad, with EU/EEA deferral; 30% withholding tax on outbound dividends, interest and royalties; treaty relief and EU social security coordination. Tax year 2026 (assessment year 2027). Trigger on: moving to Belgium, leaving Belgium, expat Belgium, impatriate, BBIB, BBIO, non-resident Belgium, BNI, exit tax Belgium, roerende voorheffing non-resident, digital nomad Belgium. Out of scope: be-income-tax, be-social-contributions, belgium-payroll, be-capital-gains, belgium-crypto-tax."
-version: 0.1
+version: 0.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -239,8 +239,6 @@ All read on 2026-10-22.
 - Justel, list of 2025 and 2026 laws amending the WIB 92: https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=1992041032&table_name=wet
 
 Not yet confirmed: the filing date printed on the 2026 non-resident return for income 2025 (art. 308 WIB 92 leaves the date to the form; FPS Finance pages at fin.belgium.be were behind a human-verification check and could not be read, and the form model in the royal decree of 22 June 2026 does not print it; secondary references give 20 November 2026); the conditions of the domestic withholding exemptions for EU parent companies and associated companies (KB/WIB 92); whether municipal surcharges apply to the exit tax in the year of departure; the RSZ/ONSS treatment of the 35% inbound cost allowance.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

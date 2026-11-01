@@ -2,13 +2,13 @@
 name: mq-antilles-goods-movements
 description: >
   Martinique goods-movement reference for businesses dispatching or receiving goods within the Guadeloupe–Martinique single fiscal territory. Explains the distinction between ordinary cleared goods and suspensive regimes, accompanying evidence, the monthly dispatch declaration and its working-day deadline. Separates sold goods, own-stock movements and temporary movements, and identifies the records needed to reconcile dispatches. This narrow Guide uses the official July 2025 customs circular rather than assuming that no new customs clearance means no reporting. Product taxation, special excise controls, Guyane trade and complete territory coverage require separate work and independent review.
-version: 0.1
+version: 0.2
 jurisdiction: MQ
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -49,8 +49,6 @@ Reconcile imported goods subsequently dispatched separately from locally produce
 Reconcile movement month, departure office, arrival evidence, sale versus own-stock status, origin and recipient SIRET. Compute the actual deadline using the applicable working-day calendar; the tenth calendar day is not an adequate substitute. This Guide does not prescribe a particular calendar date without checking that calendar.
 
 Source-cited draft awaiting independent review. Current submission channels, any amendments after the 2025 circular, penalties, excise-specific requirements, product rates and VAT returns remain separate checks. For producer-threshold obligations, see the [Guadeloupe producer Guide](../guadeloupe/gp-producer-octroi-compliance.md). This is not comprehensive Martinique tax coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

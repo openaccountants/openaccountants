@@ -2,13 +2,13 @@
 name: aw-turnover-taxes
 description: >
   Aruba BBO, BAVP and BAZV turnover tax reference for businesses in 2026. Covers the combined rate components, an example on established taxable turnover, the sole-proprietor small-business threshold, threshold crossing, voluntary registration and the limited import-credit context. Includes a dated monthly filing and payment calendar reference. Use for Aruba turnover tax, small entrepreneur relief, BBO registration or import tax questions. It does not establish taxable turnover, place of supply, sector exemptions, reverse charge scope, customs valuation or complete import deduction eligibility. Indexed official sources require direct rechecking before release.
-version: 0.1
+version: 0.2
 jurisdiction: AW
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -45,8 +45,6 @@ The [October 2026 calendar](https://www.impuesto.aw/kalender-digitale-aangifte-o
 Document legal form, annual turnover, registration history, taxable-base analysis and import evidence before computing a return. Reconcile the three taxes separately. Check special sectors, exemptions, foreign services, reverse charge, customs valuation and deduction eligibility against their own rules. None is resolved by the headline 7% rate.
 
 General research reference only. Direct source verification and accountant review remain outstanding; this is not comprehensive Aruba coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

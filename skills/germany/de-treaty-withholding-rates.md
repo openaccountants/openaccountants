@@ -1,13 +1,13 @@
 ---
 name: de-treaty-withholding-rates
 description: "Use this skill when a German company, bank or licensee pays dividends, interest or royalties to a person outside Germany, tax year 2026. Covers the domestic withholding (Kapitalertragsteuer 25% plus 5.5% solidarity surcharge, 26.375% in all; § 50a 15% on royalties), the treaty limits for Germany's main partners (Austria, Switzerland, Netherlands, France, Italy, Spain, UK, Ireland, Luxembourg, US, Poland, Czech Republic) read from the treaty texts, the exemption certificate and refund at the BZSt (§ 50c EStG), the EU Parent-Subsidiary exemption (§ 43b), the Interest and Royalties exemption (§ 50g), the two-fifths refund for foreign companies (§ 44a(9)) and the anti-treaty-shopping rule (§ 50d(3)). Trigger on: Quellensteuer Deutschland, Kapitalertragsteuer Erstattung, Freistellungsbescheinigung, § 50c, § 43b, § 50g, § 50d Abs. 3, DBA Quellensteuersatz, German withholding tax rate treaty. Out of scope: assessing non-residents (de-non-resident-tax), foreign tax on a German resident's income (de-capital-gains), Swiss commuters (germany-to-switzerland-cross-border-tax)."
-version: 0.4
+version: 0.5
 jurisdiction: DE
 tax_year: 2026
-last_updated: 2026-10-29
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -249,8 +249,6 @@ Selected operative clauses actually read on 29 October 2026: treaty covered/late
 The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.
 
 Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

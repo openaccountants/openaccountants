@@ -2,13 +2,13 @@
 name: ht-payroll-withholding-and-employer-tax
 description: >
   Haiti payroll reference under the replacement Tax Code effective 1 October 2026. Separates employee income-tax withholding from employer payroll tax, distinguishes base salary from additional cash remuneration and boni, and explains director payments, monthly reporting and remittance evidence. Includes illustrative calculations and identifies the obsolete two-percent employer-tax page. The Guide cites the enacted three-percent charge and preserves the ministerial-circular qualification for occupational withholding changes. Social insurance, benefit valuation, transition cases, operational implementation decisions and independent accountant review remain outside this initial source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: HT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -52,8 +52,6 @@ Article 152 imposes **3%** on remuneration of every kind paid to personnel of pu
 On an assumed HTG 1,000,000 of remuneration wholly within article 152, employer tax is **HTG 30,000**. This is separate from employee income-tax deductions and is not a complete employment-cost calculation. [2026 Code, articles 152, page 49](https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf#page=49).
 
 The [older DGI TMS page](https://dgi.gouv.ht/ht/dgi_sev/taxe-sur-la-masse-salariale/) still states 2% and a broader exemption list. It is not the basis for the new-code rate or exemption scope. Obtain the legal basis for any additional exemption rather than carrying it forward automatically. Social insurance, valuation of benefits, special occupational circulars and cross-transition payments remain to be researched.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
