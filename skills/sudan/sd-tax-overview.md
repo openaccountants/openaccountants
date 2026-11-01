@@ -1,10 +1,11 @@
 ---
 name: sd-tax-overview
-description: Use this skill whenever asked for a high-level overview of the Sudanese tax system — the full structure of direct and indirect taxes, the administering authority, recent reform history, and where to start for a deeper dive. Trigger on phrases like "Sudan tax", "Sudan tax system", "Sudan taxation", "الضرائب في السودان", "taxes in Sudan", "Sudan corporate tax", or any request for a top-down summary of Sudan's tax regime. ALWAYS read this skill as the entry point before consulting any Sudan-specific tax skill.
-version: 0.1
+description: >
+  Route Sudan tax questions and assemble a coordinated 2026 intake workpaper across personal income, company profits, VAT, payroll, formation, associated pricing and cross-border income. Match Sudan tax overview, business tax obligations, tax registration, compliance calendar, new business, foreign investor and الضرائب في السودان requests. This Guide identifies the source chain, evidence owners and unresolved release gates, while linking each figure to its single calculation home. Official statutes and amendments replace legacy unsourced assumptions, but the later enacted chain remains incomplete. Use this pack for broad source baseline preparation and a reviewable issue list. Neither current year metadata nor passing examples authorises filing, publication certification or a country complete claim.
+version: 0.2
 jurisdiction: SD
-tax_year: 2025
-last_updated: 2026-07-22
+tax_year: 2026
+last_updated: 2026-11-01
 authored_by: Ahmed Hassan
 review_status: pending_review
 trust_label: Accountant-authored
@@ -13,283 +14,139 @@ depends_on:
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan Tax Overview Skill v0.1
+# Sudan tax workpaper routing and release gates v 0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
-> **YMYL — verify before relying.** Sudan's tax legislation has been subject to amendments and the political situation (post-2021 military takeover, ongoing conflict since April 2023) has disrupted tax administration. Where this skill says "verify current value," re-confirm against the Sudan Taxation Chamber (tax.gov.sd), PwC Worldwide Tax Summaries, or a qualified Sudan accountant.
+> **2026 intake, partial statutory baseline.** Figures below reproduce identified opened instruments, not a completed operative 2026 consolidation. Before filing, paying, granting relief or advising registration, reconcile later enacted amendments and obtain the missing regulations, current forms and directions named in Sources. Passing arithmetic or format checks does not clear this gate. Amounts are source-period SDG; no currency redenomination or indexation is assumed.
 
----
+## Who this applies to
 
-## Section 1 — Quick reference
+Individuals, employers, companies, foreign branches and investors planning ordinary Sudan tax work. This router does not duplicate every rate. Each linked Guide owns its calculation, conditions and quoted ledger. Sudan and South Sudan are separate jurisdictions. This is a 2026 intake/source-baseline pack with all seven mapped tax domains partial, not an operative 2026 law certification.
 
-| Field | Value |
-|-------|-------|
-| Country | Republic of Sudan (جمهورية السودان) — note: separate from South Sudan (Republic of South Sudan) since 2011 |
-| Capital | Khartoum (الخرطوم) |
-| Official language | Arabic; English common in business |
-| Currency | Sudanese Pound (SDG — ج.س) — multiple redenominations since 2007 |
-| Fiscal year | Calendar year (1 Jan – 31 Dec); companies may use different accounting period with approval |
-| Tax year | Calendar year |
-| Tax authority | Sudan Taxation Chamber (Diwan Al-Daraib / ديوان الضرائب) under the Ministry of Finance and Economic Planning |
-| Customs authority | Exercises and Customs General Administration (الجمارك) |
-| Banking authority | Bank of Sudan (البنك المركزي السوداني) |
-| Tax system type | Territorial + person principle combined; residents taxed worldwide, non-residents on Sudan-source |
-| Self-assessment | Yes — required for most taxpayers |
-| Default audit framework | Self-assessment system; Secretary-General issues additional assessments when needed |
-| Number of DTA treaties | 17 countries and regions (as of January 2024) |
-| ATAF mutual assistance | Implemented since September 2022 |
-| Top personal rate | 15% (resident employee); 20% (non-resident, fringe benefits) |
-| Standard corporate rate | 15% (general/industrial); 30% (banks, tobacco, petroleum) |
-| Standard VAT rate | 17% (40% telecom, 30% cigarettes special rates) |
-| Filed currency | SDG (foreign currency must be converted at transaction-date rate) |
+## Rates, bands and thresholds
 
----
+| Item | Opened source wording and conditions | Official source |
+|---|---|---|
+| Period | Basis/assessment-year distinction and accounting-period approvals belong to the company-profit and cross-border Guides. | [ss.2,15; PDF11,27](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
+| Income-tax registration | Specified activity requires TIN application; use actual prescribed form/data. | [s.82; PDF114–115](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
+| Income-tax records | Statutory retention plus 2022 approved Arabic translation addition; the company Guide owns the full record rule. | [Income Tax Amendment 2022 s.2(1), PDF1](https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf) |
+| Filing framework | Principal return-notice framework is not a confirmed universal 31 March self-assessment deadline. | [s.38; PDF58–61](https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf) |
+| Company currentness | Justice notice identifies 2025 amendment; full amended chain remains a formation release gate. | [notice5July2025](https://moj.gov.sd/posts/post/998) |
 
-## Section 2 — Tax structure map
+## The base
 
-Sudan classifies taxes into three categories:
+| Job | Calculation and evidence owner |
+|---|---|
+| Individual employment, business/professional and rent | [Personal income tax](sd-income-tax.md) |
+| Company profit, industrial classification, expenses, capital allowances and business losses | [Company profits](sd-corporate-income-tax.md) |
+| VAT registration, invoice, monthly Form 3, input and export refund | [VAT](sd-vat-gst.md) |
+| Social/health contribution bases, employment leave and termination | [Payroll](sd-payroll-social.md) |
+| Company/branch documents, board, licences and annual accounts | [Formation](sd-company-formation.md) |
+| Associated-person relationships and pricing | [Transfer pricing](sd-transfer-pricing.md) |
+| Residence, source, foreign agents, withholding orders and treaty claims | [Cross-border](sd-cross-border-residence.md) |
+| Capital disposals under separate Act | [Capital gains](sd-capital-gains.md) |
 
-### Category 1 — Goods and Services Taxes
+For every job, obtain the period and entity/fact classification, open the applicable operative instruments, reconcile amendments and identify the actual form/payment route BEFORE approving a computation. The official catalogue has principal Acts, regulations and annual amendments through 2022; its label is not proof of document identity or currentness. In particular the supposed 2021 regulations download is an Act copy, and the 2020 bundles contain cabinet approvals of proposed laws. The Justice Gazette index reaches October 2026, but an incomplete catalogue/read is not proof that no later tax changes occurred.
 
-| Tax | Authority | Rate | Notes |
-|-----|-----------|------|-------|
-| **Value Added Tax (VAT)** | Taxation Chamber | 17% standard; 40% telecom; 30% cigarettes; 5% reduced | VAT Act 2001 + 2017 Regulations — see `sd-vat-gst` |
-| **Excise Duty** | Taxation Chamber | Schedule-based (subject to Ministerial amendment) | Alcohol, tobacco, luxury items |
-| **Customs Duty** | Customs Administration | Schedule-based by HS code | Imports and exports |
-| **Special Tax on Services** | State / Local | 3%-10% on service supply; 5%-35% on goods production | Municipal/local taxes |
-| **Public Lighting Tax** | State / Local | 5% on alcohol/tobacco at first stage | |
-| **Accommodation / Hotel Tax** | State / Local | 2% on hotel accommodation | |
-| **Patent Tax** | State / Local | Fixed schedule | |
-| **Signboard Tax** | State / Local | Per decimeter-squared and height | |
+## Deadlines and filing
 
-### Category 2 — Income Taxes
+1. Collect identity/entity, TIN and registry/fund/VAT identifiers, contracts, books, invoices and prior notices. Link each registration to the appropriate Guide; one registration does not discharge all taxes.
+2. Create a calendar from the actual applicable statute/regulation/notice, not a copied generic date. Income tax, VAT, employer list, company AGM/annual return and fund remittances have different rules and unresolved items.
+3. Prepare a source-period computation and an issues table showing the missing enacted chain, applicable form/box, deadline, payment code and evidence required. Do not calculate an unsupported rate merely to fill a spreadsheet.
+4. Hold the filing/payment/formation approval until every job-specific release gate clears. Record the actual submission acknowledgement and payment/registration decision afterwards. This research did not log into a portal or make any taxpayer action.
+5. Save the source URL, article, short quote, read date and exact capture hash with the workpaper. Independent review and any later professional attestation are distinct from this writer record.
 
-| Tax | Authority | Rate | Notes |
-|-----|-----------|------|-------|
-| **Corporate Income Tax (BPT)** | Taxation Chamber | 15% standard; 30% sector rates | Income Tax Act 1986 — see `sd-corporate-income-tax` |
-| **Individual Income Tax** | Taxation Chamber | 5%-15% progressive (residents); 20% (non-residents/fringe) | Income Tax Act 1986 — see `sd-income-tax` |
-| **Capital Gains Tax** | Taxation Chamber | 20% | Separate schedule |
-| **Rental Income Tax** | Taxation Chamber | 10% | On real-estate lease income |
-| **Tax on Salary** | Employer withholds | Progressive | PAYE system |
-| **Withholding Tax** | Payer | 4%-15% (residents); 7%/15% (non-residents) | Final for non-residents |
+## Penalties and interest
 
-### Category 3 — Property and Transaction Taxes
+Each tax/registration has its own offence and recovery provisions. No single general fine, monthly interest percentage or universal objection deadline applies across this router. Obtain the actual law, notice and service facts through the owner Guide.
 
-| Tax | Authority | Rate | Notes |
-|-----|-----------|------|-------|
-| **Stamp Duty** | Taxation Chamber | Schedule (260+ instruments) | Stamp Duty Law 2019 |
-| **Real Estate Tax** | State / Local | 0.1% on immovable property | |
-| **Vehicle Tax** | State / Local | Schedule based on type | |
-| **Zakat** | Zakat Chamber | Religious obligation (Islamic tax) | Zakat Act 2001 — separate from Income Tax |
-| **Registration/Transfer Tax** | State / Local | 4% on ownership transfer of movable/immovable property | |
-| **Unused Land Tax** | State / Local | 2% on unused land | |
-| **Tax on Means of Transportation** | State / Local | Schedule based on vehicle type/cylinder/seats | |
+## Cross-border points
 
-### Category 4 — Sector-specific and contractual
+Start with [cross-border](sd-cross-border-residence.md), then route foreign-service VAT and associated pricing separately. A treaty claim needs the actual operative order/text; no blanket treaty count, foreign credit, PE duration or withholding finality is certified. Investment/free-zone, Zakat, stamp/customs, local levies and exchange controls remain distinct specialist jobs.
 
-| Regime | Authority | Detail |
-|---------|-----------|--------|
-| **Petroleum PSA (Production Sharing Agreement)** | Ministry of Petroleum | BPT 30% statutory, but actual fiscal regime governed by individual concession agreements |
-| **Mining / minerals** | Ministry of Minerals | Special mineral production sharing regimes |
-| **Free Zones** | Sudan Free Zones Authority | Free Zones Act 2001; corporate tax exemption up to 5 years; VAT exemption on capital equipment |
-| **Investment Incentives** | Ministry of Investment and International Cooperation | Investment Incentive Law 2021 — 5-year CIT exemption for qualifying projects |
-| **Sukuk (Islamic Finance)** | Central Bank of Sudan (Bank of Sudan) | Subject to regular corporate taxation unless specifically exempt |
+## Two worked examples that recompute
 
----
+### Ordinary importer-employer routing
 
-## Section 3 — Tax administration architecture
+A company importer with employees and no controlled/foreign service transaction needs company profit, VAT and payroll workpapers, plus formation/registration records. Four owners are routed. If a cross-border payment and controlled transaction are later found, two additional distinct owners are needed. Routing count does not approve any rate.
 
-### Sudan Taxation Chamber (مصلحة الضرائب السودانية)
+```oa-check
+name: Importer employer tax job routing
+inputs:
+  company: 1
+  vat: 1
+  payroll: 1
+  formation: 1
+  cross_border_added: 1
+  tp_added: 1
+steps:
+  - initial_owners: company+vat+payroll+formation
+  - expanded_owners: initial_owners+cross_border_added+tp_added
+expected:
+  initial_owners: 4
+  expanded_owners: 6
+```
 
-- **Affiliated with:** Ministry of Finance and Economic Planning (وزارة المالية والتخطيط الاقتصادي)
-- **Responsibilities:** Tax collection, registration, assessment, inspection, audit for resident and non-resident taxpayers
-- **Contact:** Phone 183: 7200555 / 0155771641 — Email executive.tax@tax.gov.sd
-- **Address:** Sudan, Khartoum, P.O. Box 2488
-- **Portal:** tax.gov.sd
+### Release-gate decision
 
-### Related fiscal agencies
+Assume five required evidence gates for a specific job: operative chain, classification, documents, current form and payment route. Four are resolved but operative chain is not: one remains and release is blocked. After source reconciliation all five can be marked resolved; arithmetic alone does not mark them resolved.
 
-| Agency | Role |
-|--------|------|
-| **Exercises and Customs General Administration** | Customs duty, customs VAT at import |
-| **General Administration of Finance and Budget** | Government budget oversight |
-| **Bank of Sudan** | Central bank, currency policy, Sukuk regulation |
-| **National Social Insurance Fund (NPSIF / NSIF)** | Old-age, disability, survivor, work injury contributions |
-| **National Health Insurance Fund (NHIF)** | Health insurance contributions |
-| **Free Zones Authority** | Free zone licensing and supervision |
-| **Ministry of Investment and International Cooperation** | Investment incentives, capital equipment VAT exemption approval |
-| **Zakat Chamber** | Religious Zakat collection (Islamic tax) |
+```oa-check
+name: Release gate evidence count
+inputs:
+  required: 5
+  resolved_before: 4
+  resolved_after: 5
+steps:
+  - open_before: max(required-resolved_before,0)
+  - open_after: max(required-resolved_after,0)
+expected:
+  open_before: 1
+  open_after: 0
+```
 
----
+## Ask the client first
 
-## Section 4 — Sudan vs. South Sudan
+- Person/entity, activities, employees, ownership and Sudan/foreign facts.
+- Basis/accounting periods and the exact proposed transaction or filing.
+- Current registrations, notices, prior returns and outstanding assessments.
+- Books, invoices, payroll components, licences and foreign contracts.
+- Source-period evidence and unresolved operative-law/form/payment questions.
 
-**Critical:** These are separate jurisdictions since South Sudan's independence in 2011.
+## Sources
 
-| Aspect | Sudan (Khartoum) | South Sudan (Juba) |
-|--------|------------------|---------------------|
-| Independence | Pre-2011 (older jurisdiction) | July 9, 2011 |
-| Currency | Sudanese Pound (SDG) | South Sudanese Pound (SSP) |
-| Tax year | Calendar year | Calendar year |
-| Standard corporate rate | 15% | 25% (legal persons) — verify current |
-| Personal rate range | 5%-15% resident | 0%-20% progressive (flat-rate scheme) |
-| DTA network | 17 countries | Limited — verify |
-| Tax authority | Taxation Chamber | National Revenue Authority (NRA) |
+| Source and actual read scope | Official URL | Read on |
+|---|---|---|
+| income-en; selected ss.2,15; PDF 11,27; s.82; PDF 114–115; s.38; PDF 58–61; s.39(4)–(6); PDF 62–63; s.65(1)(i)–(j),(2); PDF 96–97 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+| law 38-39; selected Income Tax Amendment 2022 s.2(1), PDF 1 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/law38-39.pdf | 2026-11-01 |
+| company-notice; selected notice 5 July 2025 read; not a full current consolidation | https://moj.gov.sd/posts/post/998 | 2026-11-01 |
 
-**AUDIT FLASH POINT:** Sources may congregate Sudan and South Sudan data. Verify all rates apply to **Sudan (Khartoum)**, not South Sudan (Juba), when researching this skill.
+Writer short-quote ledger: [evidence/ledgers/sd-tax-overview.md](../../evidence/ledgers/sd-tax-overview.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.
 
----
+Legacy-topic controls below refer to the exact original material and line-independent destination records in [the complete old-topic map](../../evidence/ledgers/sd-old-topic-map.md). Each control retains its original rules, figures, groups, procedures and exceptions for source reconciliation. Supported content is replaced above with citations; any remaining original claim under that control is explicitly unconfirmed, not a usable default.
 
-## Section 5 — Tax residence and basis
+- SD-OLD-105: Section 1 - Quick reference. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-106: Section 2 - Tax structure map. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-107: Category 1 - Goods and Services Taxes. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-108: Category 2 - Income Taxes. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-109: Category 3 - Property and Transaction Taxes. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-110: Category 4 - Sector-specific and contractual. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-111: Sudan Taxation Chamber (مصلحة الضرائب السودانية). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-112: Related fiscal agencies. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-113: Section 4 - Sudan vs. South Sudan. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-114: Territorial + person hybrid. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-116: Reform timeline. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-117: Current status (as of 2026-07). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-118: Section 7 - Currency and denomination considerations. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-119: Section 8 - Audit flash points summary. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-120: Section 9 - Reference material. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-122: PROHIBITIONS. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
 
-### Territorial + person hybrid
-
-Sudan combines the territoriality and person principles:
-- Residents taxed on income arising in Sudan AND any place outside Sudan (worldwide for residents)
-- Non-residents taxed on Sudan-source income only
-
-### Residency tests
-
-For an **individual**:
-- Present in Sudan for 183 days or more in the period, OR
-- Present in Sudan in the period and both preceding periods for 12 months or more, OR
-- Has taken Sudan as their place of residence and shown intention to settle
-
-For a **non-individual (company)**:
-- Control and management are exercised directly in Sudan in the period
-
-*(Income Tax Act 1986, terminology section)*
-
----
-
-## Section 6 — Reform history and recent changes
-
-### Reform timeline
-
-| Date | Event | Detail |
-|------|-------|--------|
-| **1974** | Social insurance law (consolidating 1919 pensions) | First modern social insurance |
-| **1986** | Income Tax Act | Current primary direct tax law |
-| **1999/2001** | VAT Act | Replaced earlier sales tax (Sales Tax Act 2000) |
-| **2001** | Zakat Act | Separate Islamic-religious tax regime |
-| **2001** | Free Zones Act | Special zones for export/manufacturing |
-| **2004** | Investment Act | Investment promotion framework |
-| **2017** | Companies Act | (Verify — Britacom cited 2015) — corporate registration |
-| **2019** | Stamp Duty Law | Modernization of stamp duty framework |
-| **2019** | Power transition (post-Bashir regime) | Civilian-Led Transitional Government under Juba Peace Agreement |
-| **2021** | Investment Incentive Law | 5-year CIT exemption for qualifying investment projects |
-| **October 25, 2021** | Military takeover | Government dissolved; reform momentum paused |
-| **September 2022** | ATAF mutual assistance | Cross-border tax cooperation framework |
-| **April 2023** | Conflict escalation | Ongoing war between SAF and RSF; government functions disrupted |
-
-### Current status (as of 2026-07)
-
-Sudan's tax administration continues to function in nominal terms but operates under disrupted conditions:
-- Taxation Chamber portal (tax.gov.sd) remains online
-- Currency has undergone multiple redenominations since the original SDG
-- Filing deadlines continue to be observed on paper for many non-digital returns
-- IFRS-equivalent accounting (Sudan Accounting Standards) follows IFRS with limited modifications
-- Sector-specific taxes (telecom 40%, cigarettes 30%) are commonly challenged by industry
-
-**AUDIT FLASH POINT:** Always verify current thresholds against the Sudan Taxation Chamber (tax.gov.sd) before relying on any rate for compliance purposes. Do not use stale historical SDG figures for filings.
-
----
-
-## Section 7 — Currency and denomination considerations
-
-Sudan's currency history is complex:
-
-| Year/Event | Currency note |
-|------------|---------------|
-| Pre-2007 | Sudanese dinar (SDD) — used historically |
-| 2007 | Trade currency in USD/EUR permitted in many contexts |
-| 2011 | South Sudan independence; shared currency briefly legal tender |
-| 2018-Present | Multiple redenominations of the Sudanese Pound (SDG) |
-| 2024-2026 | Highly volatile exchange rate; chronic shortage of banknotes drives partial informal dollarisation |
-
-**Practical implications:**
-- Tax computed in SDG but conversion to USD/EUR informally common in business
-- Bank transactions on paper records may use multiple currencies over the base period
-- Per Income Tax Act 1986, Art 39(3-5): invoices in other currencies must be converted at the **exchange rate at the time of the transaction**, with the rate used stated
-- The SDG 3,000 personal exemption was set in pre-redenomination currency; verify current value
-
-**AUDIT FLASH POINT:** When reviewing a client's books, ensure consistent transaction-date conversion methodology. Mixed-presentation across filings is a common audit finding.
-
----
-
-## Section 8 — Audit flash points summary
-
-1. **Sudan vs South Sudan** — verify every figure applies to Khartoum jurisdiction.
-2. **Currency redenomination** — the SDG figures (3,000 personal allowance, 1,200,000 VAT threshold, 1,500-20,000 NSIF wage base) are from older ordinances. Verify current value before filing.
-3. **Sector rates** — 30% applies to banks, tobacco, and petroleum; do not apply 15% standard rate to these sectors.
-4. **Telecom 40% and cigarettes 30% VAT** — special VAT rates override the 17% standard.
-5. **Self-assessment 2x penalty** — Income Tax Act 1986, Art 38(2) imposes additional tax up to 2x the understated amount; aggressive positions are penalized.
-6. **Records retention 6 years minimum** — Arabic or English permitted.
-7. **PAYE 15th of following month** — strict monthly remittance deadline.
-8. **NSIF vs NHIF** — pension and health contributions go to different funds.
-9. **Free zone 5-year clock** — exemption expires from commercial production date.
-10. **PSA confidentiality** — petroleum concession terms are confidential; never rely on statutory 30% without checking the agreement.
-
----
-
-## Section 9 — Reference material
-
-| Resource | Reference |
-|----------|-----------|
-| Sudan Taxation Chamber | https://tax.gov.sd/ |
-| Income Tax page | https://tax.gov.sd/en/income-tax-2/ |
-| Value Added Tax page | https://tax.gov.sd/en/value-added-tax-vat |
-| Capital Gains Tax page | https://tax.gov.sd/en/capital-gains-tax |
-| Stamp Duty page | https://tax.gov.sd/en/stamp-duty-tax |
-| PwC Worldwide Tax Summaries — Sudan | https://taxsummaries.pwc.com/sudan |
-| Britacom tax profile — Sudan | https://www.britacom.org/zt/BRPolicies/Sudan/ |
-| US State Department Investment Climate Statement | https://www.state.gov/reports/2022-investment-climate-statements/sudan/ |
-| ILO Social Protection — Sudan | https://www.social-protection.org/gimi/ShowCountryProfile.action?iso=SD |
-| SSA Social Security Worldwide — Sudan | https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/sudan.html |
-
----
-
-## Section 10 — Risk-classified treatment summary
-
-| Tax area | Complexity | Common audit finding | Recommended verification |
-|----------|------------|---------------------|---------------------------|
-| Standard BPT 15% | Low | Less common — supportability of expenses | Confirm sector eligibility |
-| Bank BPT 30% | Medium | Investment incentive misapplication | Confirm not in free zone |
-| Petroleum BPT (PSA) | High | PSA terms vs statutory rate discrepancy | Review specific concession agreement |
-| Personal income tax (resident) | Medium | Personal allowance applied incorrectly | Verify current SDG 3,000 figure |
-| Personal income tax (non-resident) | Low | 20% flat rate application | Confirm residency |
-| Rental income 10% | Medium | Net vs gross treatment | Confirm tax base |
-| VAT standard 17% | Medium | Reconciliation with invoices | Maintain 5 registers |
-| VAT telecom 40% | Medium | Misapplied to non-telecom services | Verify customer category |
-| VAT cigarettes 30% | Low | Industry-specific | Usually unambiguous |
-| NSIF contributions | Medium | Wage base misapplication (incl/excl allowances) | Confirm gross salary definition |
-| Stamp duty | High | 260+ instrument types | Consult Schedule directly |
-| Free zones | High | Expiry date miscalculation | Track from commercial production date |
-| Cross-border (DTA treaty) | High | Wrong WHT rate applied | Verify specific treaty in force |
-
----
-
-## PROHIBITIONS
-
-- Do NOT confuse the Republic of Sudan (Khartoum) with the Republic of South Sudan (Juba) — different tax jurisdictions since 2011.
-- Do NOT present current-year rates as final without flagging "verify current value" against the Sudan Taxation Chamber.
-- Do NOT apply the SDG 3,000 personal allowance, SDG 1,200,000 VAT threshold, or SDG 1,500/20,000 NSIF wage base without currency-redenomination verification.
-- Do NOT use sector rate (30%) for petroleum operations without reviewing the specific PSA / concession agreement.
-- Do NOT present Zakat as identical to income tax — Zakat is a religious obligation under the Zakat Act 2001, not part of the Income Tax Act 1986.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, tax attorney, or equivalent licensed practitioner in Sudan) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-**Sources:** Sudan Taxation Chamber (tax.gov.sd); Income Tax Act 1986; VAT Act 2001 / 2017 Regulations; Stamp Duty Tax Law 2019; Zakat Act 2001; Free Zones Act 2001; Companies Act; Investment Incentive Law 2021; PwC Worldwide Tax Summaries — Sudan; Britacom tax profile; US State Department Investment Climate Statement 2022; ILO Social Protection; SSA Social Security Worldwide.
-
-> Contributed by Ahmed Hassan.
+Not yet confirmed: Operative 2026 consolidated chain for every tax, complete 2021 income regulations, current tax/fund forms and payment instructions, company 2025/2026 amendments, contribution-base conflict, all current penalties and specific treaties. Legacy Zakat 2.5%/multiple zakat bases, stamp duty 0.1–15% and StampDuty 2019 title, customs 0–40%, property tax 10%, local 5–25%/5%levies, capital tax 0.1%, banking/insurance contributions, free-zone and investment holidays/initial allowances, tourism/digital/excise and special petroleum arrangements are not certified. These topics and all legacy source/procedure claims remain individually traceable in the destination map. No mechanical check establishes country completion. Residual claims in all legacy-topic controls listed above remain held until individually reconciled.
 
 <!-- openaccountants-cta-block -->
 

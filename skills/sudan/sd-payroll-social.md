@@ -1,10 +1,11 @@
 ---
 name: sd-payroll-social
-description: Use this skill whenever asked about Sudanese payroll, social insurance contributions (NSIF), employer withholding obligations, PAYE remittance, and employee/employer contribution rates. Trigger on phrases like "Sudan payroll", "Sudan social insurance", "NSIF contribution", "Sudan employer taxes", "ضمان اجتماعي السودان", "Sudan PAYE", or any request to compute or review Sudanese payroll deductions. ALWAYS read this skill before touching any Sudan payroll or social insurance work.
-version: 0.1
+description: >
+  Prepare Sudan employer payroll workpapers for 2026 intake while separating verified source wording from unresolved current payroll operation. Covers employee data, taxable remuneration links, social contribution guidance, contradictory health insurance bases, employment leave and termination evidence. Match Sudan payroll, PAYE, social insurance, NSIF, health insurance, maternity, sick pay and severance questions. The official ministry describes contribution splits but the full current 2016 statute and implementing limits were not obtained. The opened Labour Act supplies a historical employment baseline, with later law interactions still held. Use the two calculations to expose the effect of base and termination facts, and stop before net pay, filing or remittance approval.
+version: 0.2
 jurisdiction: SD
-tax_year: 2025
-last_updated: 2026-07-22
+tax_year: 2026
+last_updated: 2026-11-01
 authored_by: Ahmed Hassan
 review_status: pending_review
 trust_label: Accountant-authored
@@ -13,324 +14,146 @@ depends_on:
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tax_year_notes: "2026 intake; opened historical statutory baseline only; later enacted chain unresolved"
 ---
 
-# Sudan Payroll & Social Contributions Skill v0.1
+# Sudan payroll and employment contribution intake v 0.2
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-> **Currency note:** All figures are in Sudanese Pounds (SDG — ج.س). Exchange rate reference: US$1.00 = SDG 47 (SSA 2019 data — verify current rate). Sudan has undergone multiple currency redenominations; verify current SDG values before filing.
+> **2026 intake, partial statutory baseline.** Figures below reproduce identified opened instruments, not a completed operative 2026 consolidation. Before filing, paying, granting relief or advising registration, reconcile later enacted amendments and obtain the missing regulations, current forms and directions named in Sources. Passing arithmetic or format checks does not clear this gate. Amounts are source-period SDG; no currency redenomination or indexation is assumed.
+
+## Who this applies to
 
----
-
-## Section 1 — Scope statement
-
-This skill covers:
-
-- National Social Insurance Fund (NSIF) contribution rates for employers and employees
-- Employment income tax (PAYE) withholding mechanics
-- Monthly remittance deadlines for both PAYE and NSIF
-- Sickness, maternity, and work injury benefits framework
-- Severance pay (unemployment) rules under the labor code
-- Self-employed and voluntary social insurance contributions
-- Record-keeping and compliance requirements
-
-This skill does NOT cover:
-
-- Personal income tax computation (brackets, allowances) — see `sd-income-tax`
-- Corporate income tax — see `sd-corporate-income-tax`
-- VAT — see `sd-vat-gst`
-- Company formation — see `sd-company-formation`
-
----
-
-## Section 2 — Social insurance framework
-
-### Regulatory framework
-
-| Item | Detail | Source |
-|------|--------|--------|
-| **First laws** | 1919 (pensions ordinance); 1974 (social insurance) | SSA Social Security Worldwide |
-| **Current law** | 2016 (social insurance) — consolidating prior legislation | SSA Social Security Worldwide |
-| **Administering body** | National Pensions and Social Insurance Fund (NPSIF / NSIF) | SSA; ILO Social Protection |
-| **Supervising ministry** | Ministry of Insurance and Social Development | SSA Social Security Worldwide |
-| **Program type** | Social insurance system (old age, disability, survivors, sickness, maternity, work injury) | SSA Social Security Worldwide |
-
-### Coverage
-
-- Public- and private-sector employees
-- Self-employed persons (voluntary)
-- Citizens of Sudan working abroad (voluntary coverage)
-- **Exclusions:** Household workers, family labor, home-based workers, farmers, foresters, unpaid apprentices
-- Special systems for judges and military/police personnel
-
-**AUDIT FLASH POINT:** Excluded categories (household workers, agricultural labor) are commonly miss-classified. Verify actual job classification against the NSIF exclusion list before computing contributions.
-
----
-
-## Section 3 — Contribution rates and thresholds
-
-### Old Age, Disability, and Survivors (pension)
-
-| Contributor | Rate | Source |
-|------------|------|--------|
-| **Employer** | **17%** of gross monthly payroll (including cost-of-living, travel, and accommodation allowances) | SSA Social Security Worldwide — Sudan |
-| **Employee** | **8%** of gross monthly earnings (including cost-of-living, travel, and accommodation allowances) | SSA Social Security Worldwide — Sudan |
-| **Self-employed** | **25%** of monthly declared earnings (also finances work injury benefits) | SSA Social Security Worldwide — Sudan |
-| **Voluntarily insured (Sudanese working abroad)** | **23%** of declared earnings | SSA Social Security Worldwide — Sudan |
-| **Total (employer + employee, standard)** | **25%** of gross salary | NSIF regulations; confirmed by SSA |
-
-### Contribution wage base
-
-| Item | Amount (SDG) | Source |
-|------|-------------|--------|
-| **Minimum monthly earnings for contribution** | SDG 1,500 | SSA Social Security Worldwide (2019 data — verify current) |
-| **Maximum monthly earnings for contribution** | SDG 20,000 | SSA Social Security Worldwide (2019 data — verify current) |
-
-**AUDIT FLASH POINT:** The SDG 1,500 minimum and SDG 20,000 maximum figures are from 2019 SSA data. Sudan's currency redenominations and inflation mean these thresholds have likely changed. Verify current NSIF circular before computing.
-
-### Sickness and Maternity
-
-| Contributor | Rate | Source |
-|------------|------|--------|
-| **Employee (medical insurance)** | 4% of gross earnings | SSA; National Health Insurance Fund |
-| **Employer (medical insurance)** | 6% of gross payroll | SSA; National Health Insurance Fund |
-| **Employer (cash benefits)** | 100% of cost (employer liability system) | SSA; Labor code 1997 |
-
-### Work Injury
-
-| Contributor | Rate | Source |
-|------------|------|--------|
-| **Employee** | 0% (none) | SSA Social Security Worldwide |
-| **Employer** | Included in the 17% pension contribution (employer contributions also finance work injury) | SSA Social Security Worldwide |
-| **Self-employed** | Included in the 25% contribution | SSA Social Security Worldwide |
-
----
-
-## Section 4 — PAYE withholding
-
-### Employment income tax (PAYE)
-
-| Item | Rule | Source |
-|------|------|--------|
-| **Mechanism** | Employer withholds income tax at progressive rates from salaries | Income Tax Act 1986; tax.gov.sd |
-| **Remittance deadline** | On or before the **15th of the month following deduction** | Income Tax Act 1986; tax.gov.sd |
-| **Progressive rates** | 5% – 15% (resident); 20% (non-resident, fringe benefits) | Income Tax Act 1986; see `sd-income-tax` |
-| **Personal allowance** | SDG 3,000 (verify current value) | Income Tax Act 1986; Britacom |
-
-### Employer monthly payroll obligations
-
-| Obligation | Rate | Remittance deadline |
-|------------|------|---------------------|
-| PAYE income tax withholding | Progressive 5%-15% of employee gross salary | 15th of following month |
-| NSIF employer pension contribution | 17% of gross monthly payroll | Monthly (verify exact date) |
-| NSIF employee pension contribution (withheld) | 8% of gross monthly earnings | Monthly (verify exact date) |
-| Health insurance (employer) | 6% of gross payroll | Monthly (verify exact date) |
-| Health insurance (employee, withheld) | 4% of gross earnings | Monthly (verify exact date) |
-
-**Total employer cost above gross salary:** 17% (pension) + 6% (health) = **23%** of gross payroll
-
-**Total employee deductions:** 8% (pension) + 4% (health) + PAYE (5%-15%) = **17%-27%** of gross earnings
-
-### NSIF contribution remittance
-
-Employers must register with the NSIF, deduct employee contributions from wages, and remit both employer and employee shares **monthly**. Failure to remit or register can result in penalties and legal consequences.
-
-**AUDIT FLASH POINT:** NSIF remittance deadline is monthly but the exact date (15th vs end-of-month) should be confirmed against current NSIF regulations. Some sources reference monthly without specifying a date.
-
----
-
-## Section 5 — Benefit calculations
-
-### Old-age pension
-
-| Item | Rule | Source |
-|------|------|--------|
-| **Retirement age** | 65 (normal); reduced for arduous work | SSA |
-| **Early pension** | Age 50 with at least 20 years of contributions (any age if involuntarily unemployed due to economic factors) | SSA |
-| **Minimum contributions** | 20 years for old-age pension | SSA |
-| **Pension formula** | 2% of average monthly earnings (last 3 years) for every 12 months of contributions | SSA |
-| **Minimum pension** | 40% of average monthly earnings (last 3 years) | SSA |
-| **Maximum pension** | 83.33% of average monthly earnings (last 3 years) | SSA |
-| **Early pension reduction** | -15% if aged 50-54; -10% if aged 55-59 | SSA |
-
-### Disability pension
-
-- 50% of average monthly earnings (last 3 years before disability) OR 2% per 12 months of contributions, whichever is greater
-- Maximum: 83.33% of average monthly earnings
-- No minimum qualifying period
-
-### Survivor pension
-
-- Spouse: 30% of deceased's pension (50% if orphan/parent eligible; 75% if no orphan/parent but other survivors; 100% if no other survivors)
-- Orphan: 40% split equally (split among eligible orphans)
-- Parents: 30% (50% if widow/orphan eligible)
-- Maximum combined survivor pension: 100% of deceased's pension
-
-### Death grant
-
-- Lump sum of **4x average monthly earnings** (last 3 years before death) if insured at time of death
-- **2 months** of pension if deceased was a pensioner
-
-### Sickness benefit (employer liability)
-
-- First 3 months: 100% of last monthly earnings
-- Next 3 months: 50%
-- Up to 3 additional months: 25%
-- Thereafter: unpaid sick leave
-
-### Maternity benefit (employer liability)
-
-- 100% of last monthly earnings for **8 weeks** (must have at least 6 months employment)
-
-### Severance pay (unemployment, labor code 1997)
-
-| Years of service | Severance |
-|-----------------|-----------|
-| 3 – 9 years | 1 month's basic earnings per year |
-| 10 – 14 years | 1.5 months' basic earnings per year |
-| 15+ years | 1.75 months' basic earnings per year |
-| Maximum | 36 months of basic monthly earnings |
-
----
-
-## Section 6 — Worked examples
-
-### Example 1 — Standard employee payroll
-
-**Scenario:** Employee with gross monthly salary of SDG 25,000.
-
-| Item | Amount (SDG) | Rate |
-|------|-------------|------|
-| Gross salary | 25,000 | — |
-| NSIF employee pension (8%) | -2,000 | 8% |
-| Health insurance employee (4%) | -1,000 | 4% |
-| PAYE (estimate at ~12% effective) | -3,000 | ~12% (verify bracket) |
-| **Net pay** | **19,000** | — |
-| | | |
-| Employer NSIF (17%) | +4,250 | 17% |
-| Employer health insurance (6%) | +1,500 | 6% |
-| **Total employer cost** | **30,750** | — |
-
-*Flag: PAYE estimate requires confirmed bracket schedule. NSIF wage base capped at SDG 20,000 may reduce the actual contribution base — verify current cap.*
-
-### Example 2 — NSIF contribution with wage cap
-
-**Scenario:** Employee with gross monthly salary of SDG 35,000. NSIF maximum contribution base is SDG 20,000 (verify current).
-
-| Item | Amount (SDG) | Calculation |
-|------|-------------|------------|
-| NSIF employer contribution | 3,400 | 20,000 x 17% |
-| NSIF employee contribution | 1,600 | 20,000 x 8% |
-| Excess salary (35,000 - 20,000) | 15,000 | No NSIF contribution |
-| PAYE on full salary | Computed on 35,000 | No wage cap for PAYE |
-
-### Example 3 — Self-employed social insurance
-
-**Scenario:** Self-employed person declaring monthly earnings of SDG 18,000.
-
-- Monthly NSIF contribution: 18,000 x 25% = **SDG 4,500**
-- This covers pension, disability, survivors, AND work injury
-- Minimum contribution base: SDG 1,500 (verify current)
-- Maximum contribution base: SDG 20,000 (verify current)
-
-### Example 4 — Severance calculation
-
-**Scenario:** Employee with 12 years of service, basic monthly salary SDG 20,000.
-
-- Years 3-9 (7 years): 7 x 20,000 = SDG 140,000
-- Years 10-12 (3 years): 3 x 1.5 x 20,000 = SDG 90,000
-- Total severance: SDG 230,000
-
----
-
-## Section 7 — Record-keeping and compliance
-
-### Employer record requirements
-
-| Record type | Retention |
-|------------|-----------|
-| Individual employee records (name, ID, contract date, salary, deductions, contributions) | 5-7 years minimum |
-| Monthly payroll registers | 5-7 years |
-| Tax withholding documentation | 5-7 years |
-| Social contribution records (NSIF + health insurance) | 5-7 years |
-| Supporting documents (employment contracts, ID documents, authorization letters) | Duration of employment + 5-7 years |
-
-### Registration requirements
-
-1. **Employer NSIF registration:** Register with the National Social Insurance Fund before commencing employment
-2. **Tax registration:** Register with the Sudan Taxation Chamber for income tax withholding
-3. **Health insurance:** Register with the National Health Insurance Fund (NHIF)
-4. **Labor office:** Register with the Ministry of Labor
-
-### Penalties for non-compliance
-
-- Late payment penalties: percentage-based on unpaid amounts plus interest
-- Administrative fines: for late filing, incomplete returns, missing documentation
-- Legal consequences: potential criminal prosecution for serious violations or repeated non-compliance
-- Operational restrictions: license suspension or business closure for severe violations
-- Back payment requirements: employer remains liable for unpaid contributions + accumulated penalties
-
----
-
-## Section 8 — Audit flash points
-
-1. **Wage base cap:** The SDG 20,000 maximum contribution base (2019 figure) likely no longer reflects current SDG values due to inflation and redenomination. Verify current NSIF circular.
-2. **"Gross salary" definition:** Includes cost-of-living, travel, and accommodation allowances — not just basic salary. This materially affects contribution amounts.
-3. **Excluded worker categories:** Household workers, agricultural laborers, and family labor are excluded from NSIF. Misclassification is a common audit finding.
-4. **NSIF vs NHIF:** Pension contributions go to NSIF (National Pensions and Social Insurance Fund); health insurance contributions go to NHIF (National Health Insurance Fund). Do not confuse the two.
-5. **Employer liability for cash sickness/maternity:** The employer pays cash sickness and maternity benefits directly — this is above the NSIF contribution rate, not part of it.
-6. **Confusion with South Sudan:** Some sources congregate Sudan and South Sudan (which became independent in 2011). Verify all rates apply to Sudan (Khartoum), not South Sudan (Juba).
-
----
-
-## Section 9 — Self-checks
-
-Before delivering output, verify:
-
-- [ ] Employer and employee NSIF rates correctly stated (17% / 8%)
-- [ ] Wage base min/max (SDG 1,500 / 20,000) verified against current NSIF circular
-- [ ] "Gross salary" includes allowances (cost-of-living, travel, accommodation)
-- [ ] PAYE progressive rates applied correctly (5%-15% resident, 20% non-resident)
-- [ ] PAYE remittance deadline (15th of following month) stated
-- [ ] NSIF and NHIF contributions distinguished correctly
-- [ ] Health insurance rates (4% employee / 6% employer) applied
-- [ ] Excluded worker categories checked
-- [ ] Severance calculation uses correct tier (1x / 1.5x / 1.75x per service band)
-- [ ] Record retention period (5-7 years) communicated
-
----
-
-## Section 10 — Reference material
-
-| Resource | Reference |
-|----------|-----------|
-| Sudan Taxation Chamber — Income Tax | https://tax.gov.sd/en/income-tax-2/ |
-| SSA Social Security Worldwide — Sudan | https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/sudan.html |
-| ILO Social Protection — Sudan | https://www.social-protection.org/gimi/ShowCountryProfile.action?iso=SD |
-| National Health Insurance Fund (NHIF) Sudan | http://www.nhif.gov.sd/ |
-| Britacom tax profile — Sudan | https://www.britacom.org/zt/BRPolicies/Sudan/ |
-| Africarrieres — Employer Taxes Sudan | https://africarrieres.com/sudan/en/guide/employeur-entreprise/employer-taxes |
-
----
-
-## PROHIBITIONS
-
-- Do NOT confuse Sudan (Khartoum) with South Sudan (Juba) — separate jurisdictions with different tax systems since 2011.
-- Do NOT apply NSIF contribution rates without verifying the current wage base cap — the SDG 20,000 figure is from 2019 and likely outdated.
-- Do NOT compute employer total cost without including both NSIF (17%) and NHIF (6%).
-- Do NOT omit employer liability for cash sickness/maternity benefits (separate from contribution rates).
-- Do NOT present payroll figures as final without flagging "verify current value" for SDG thresholds.
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-**Sources:** Social Insurance Act 2016 (Sudan); SSA Social Security Programs Throughout the World — Sudan 2019; Income Tax Act 1986; ILO Social Protection; Britacom; Africarrieres.
-
-> Contributed by Ahmed Hassan.
+Employers and workers preparing remuneration and contribution records. [Personal income tax](sd-income-tax.md) owns employment tax bands, benefit inclusion and deductions. This Guide owns the distinct contribution-base conflict and historical labour-law calculations. It does not certify that a 1997 clause or undated agency page remained operative unchanged in 2026.
+
+## Rates, bands and thresholds
+
+| Item | Opened source wording and conditions | Official source |
+|---|---|---|
+| Social contribution guidance | Official ministry describes 25% of CONTRIBUTION WAGE, employer 17% and worker 8%; self-employed 25% of declared contribution income. Full current law, coverage, floors and ceilings unresolved. | [About insurance, paragraphs on2016 law/contributions](https://hrsw.gov.sd/?page_id=1360) |
+| Health guidance, basic-pay page | 10% of BASIC salary, worker 4% and employer 6%, on the opened undated ministry page. | [Financing paragraph](https://hrsw.gov.sd/?page_id=482) |
+| Health registration page | Same split but TOTAL wage base, conflicting with the basic-pay page. Do not approve a base or net payroll from these pages. | [registration steps](https://hrsw.gov.sd/?page_id=239) |
+| Maternity historical baseline | After 6 months employment,8 weeks full pay,4+4 or 2+6 before/after, with medical and job-protection conditions. | [s.46](https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html) |
+| Sickness historical baseline | After 3 months continuous service with qualifying medical evidence:3 months full,3 half,3 quarter pay; annual leave and medical-board conditions apply. | [s.47](https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html) |
+| Severance historical baseline | Minimum 3 years; first 10 years 1 monthly basic/year,next 5 years 1.5,above 15 years 1.75; cap 36 months. Social-insurance/better-rights and resignation rules apply. | [ss.60–61](https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html) |
+
+## The base
+
+1. Obtain contracts, employment dates, attendance, basic/contribution/total remuneration, benefits, medical certificates, leave and termination reason. Do not treat those three pay bases as interchangeable.
+2. Compute personal-income tax only through the dedicated [income-tax Guide](sd-income-tax.md), after its source-period and regulation gates clear. The legacy flat fringe-benefit charge and age-based exemption are not defaults.
+3. Build separate social and health contribution schedules. The social ministry guidance uses contribution wage, not an automatic gross-pay base. The health pages conflict on basic versus total wage. Hold the base choice, statutory coverage, exemptions and cap/floor until the actual 2016 law and current directions are obtained.
+4. The opened Labour Act s.46 maternity and s.47 sickness provisions have service, medical and other conditions. Keep full/partial-pay leave separate from tax deductions and the entitlement decision.
+5. For eligible non-resignation termination under s.60, calculate each service tranche, last monthly basic pay or the specific production-worker average, and the cap. Apply s.61 resignation reductions only after the exact service/termination facts and current law interaction are resolved. A Labour Act formula is not proof that social benefits are payable in addition.
+6. Obtain the actual fund registration/coverage decision, employer and worker identifiers, current payroll return and due-date directions before any final payslip, deduction or remittance approval.
+
+## Deadlines and filing
+
+The health-registration ministry page requests a joining letter, representative authorisation, establishment form, employee forms and latest wage statement. That is an opened procedure aid, not proof of a current filing portal. The social ministry page identifies the contribution scheme but does not establish current forms, codes or due dates. The principal Income Tax Act s.41 employer annual list is separate from monthly PAYE; payment dates are governed through regulations. Current PAYE, fund and health filing/remittance routes, contribution month, payment reference and confirmation workflow remain unconfirmed. Stop before submission and retain the eventual fund decision, employee schedules, acknowledgement and receipt.
+
+## Penalties and interest
+
+No current social/health late-registration fine, surcharge, minimum collection or enforcement timetable was obtained. Income-tax sanctions are distinct. Do not apply a universal payroll penalty from another law or from an undated summary.
+
+## Cross-border points
+
+The social ministry guidance refers to private-sector workers including foreigners with specified exclusions, but foreign-worker coverage, bilateral social agreements and expatriate pension interaction require the actual current law. The public legal library also contains older expatriate insurance law; it was acquired as a locator, not read as current coverage authority. Immigration permission and company registration do not decide contribution liability.
+
+## Two worked examples that recompute
+
+### Health base conflict, two outcomes
+
+For basic pay 100,000 and total pay 140,000, the basic-pay page implies worker 4,000/employer 6,000; the total-wage page implies 5,600/8,400. Difference 4,000 overall. This is a sensitivity workpaper showing why the legal base must be settled, not a choice offered to the employer.
+
+```oa-check
+name: Health basic versus total wage conflict
+inputs:
+  basic: 100000
+  total: 140000
+steps:
+  - worker_basic: basic*0.04
+  - employer_basic: basic*0.06
+  - worker_total: total*0.04
+  - employer_total: total*0.06
+  - combined_difference: worker_total+employer_total-worker_basic-employer_basic
+expected:
+  worker_basic: 4000
+  employer_basic: 6000
+  worker_total: 5600
+  employer_total: 8400
+  combined_difference: 4000
+```
+
+### Historical non-resignation severance
+
+Assume an eligible12year worker, last monthly basic20,000, no resignation reduction, no better contractual right and no social-insurance offset issue. Section60 historical tranches give10months +3months =13months, or260,000, below the36month cap. A resignation or overlapping statutory benefit requires a new legal calculation.
+
+```oa-check
+name: Labour section60 twelve year tranches
+inputs:
+  years: 12
+  monthly_basic: 20000
+steps:
+  - months: min(years,10)+min(max(years-10,0),5)*1.5+max(years-15,0)*1.75
+  - capped_months: min(months,36)
+  - amount: capped_months*monthly_basic
+expected:
+  months: 13
+  amount: 260000
+```
+
+## Ask the client first
+
+- Worker identity, nationality, employment status and fund registration evidence.
+- Contract, actual start date, employer category and basic/contribution/total wage components.
+- Tax residence and benefit/reimbursement evidence for the income-tax calculation.
+- Leave balances, medical certificates, termination reason and better contractual terms.
+- Current fund/health law, cap/floor, forms, due-date directions and prior payments.
+
+## Sources
+
+| Source and actual read scope | Official URL | Read on |
+|---|---|---|
+| social; selected About insurance, paragraphs on 2016 law/contributions read; not a full current consolidation | https://hrsw.gov.sd/?page_id=1360 | 2026-11-01 |
+| health-basic; selected Financing paragraph read; not a full current consolidation | https://hrsw.gov.sd/?page_id=482 | 2026-11-01 |
+| health-total; selected registration steps read; not a full current consolidation | https://hrsw.gov.sd/?page_id=239 | 2026-11-01 |
+| labour-1997; selected s.46; s.47; ss.60–61 read; not a full current consolidation | https://moj.gov.sd/sudanlaws/epub/EPUB/xhtml/s8zkcj.html | 2026-11-01 |
+| income-en; selected s.41; PDF 66–67; s.62(1),(6); PDF 90–91; s.63; PDF 92 read; not a full current consolidation | https://tax.gov.sd/wp-content/uploads/2025/02/Income-tax.pdf | 2026-11-01 |
+
+Writer short-quote ledger: [evidence/ledgers/sd-payroll-social.md](../../evidence/ledgers/sd-payroll-social.md). Source hashes and actual read scopes are in the Sudan source manifest/read record. Independent review is pending; preserved platform attribution is historical metadata, not a new review of this version.
+
+Legacy-topic controls below refer to the exact original material and line-independent destination records in [the complete old-topic map](../../evidence/ledgers/sd-old-topic-map.md). Each control retains its original rules, figures, groups, procedures and exceptions for source reconciliation. Supported content is replaced above with citations; any remaining original claim under that control is explicitly unconfirmed, not a usable default.
+
+- SD-OLD-077: Section 1 - Scope statement. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-078: Regulatory framework. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-079: Coverage. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-080: Old Age, Disability, and Survivors (pension). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-081: Contribution wage base. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-082: Sickness and Maternity. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-083: Work Injury. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-084: Employment income tax (PAYE). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-085: Employer monthly payroll obligations. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-086: NSIF contribution remittance. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-087: Old-age pension. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-088: Disability pension. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-089: Survivor pension. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-090: Death grant. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-091: Sickness benefit (employer liability). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-092: Maternity benefit (employer liability). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-093: Severance pay (unemployment, labor code 1997). Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-094: Example 1 - Standard employee payroll. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-095: Example 2 - NSIF contribution with wage cap. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-096: Example 3 - Self-employed social insurance. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-097: Example 4 - Severance calculation. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-098: Employer record requirements. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-099: Registration requirements. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-100: Penalties for non-compliance. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-101: Section 8 - Audit flash points. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-102: Section 9 - Self-checks. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-103: Section 10 - Reference material. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+- SD-OLD-104: PROHIBITIONS. Residual legacy claims: not yet confirmed; see exact old content and destination in the map.
+
+Not yet confirmed: Full current 2016 pensions/social-insurance statute and amendments, benefit eligibility and any insured wage floor/ceiling; current health statutory base, coverage, exclusions and mandatory employer size; current monthly contribution/PAYE due dates and online routes; expatriate/diplomatic, self-employed, agricultural, domestic and informal-worker coverage. Legacy pensions 1/50 peryear,80%maximum, early-pension 20 years, invalidity 1/50 with 15 yearminimum, injury 80%, disability/lump-sum percentages, survivor shares, funeral/severance benefit formulas and no-ceiling claims remain held. Labour 1997 amendment/2016 interaction, resignation percentages, maternity/sickness currentness and resignation/retirement/death treatment need completion. No final net-pay approval follows from this draft. Residual claims in all legacy-topic controls listed above remain held until individually reconciled.
 
 <!-- openaccountants-cta-block -->
 
