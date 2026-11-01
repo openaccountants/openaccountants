@@ -27,7 +27,7 @@ Anyone starting a Djibouti question. The tax authority is the Direction Generale
 | VAT | 10% | Art. 187 | https://www.journalofficiel.dj/texte-juridique/loi-n82-an-14-7eme-l-portant-budget-initial-de-letat-pour-lexercice-2015/ |
 | CNSS | 21.7% | Employer 15.7%, employee 6% | https://cnss.dj/declaration-et-versement-des-cotisations/ |
 | Dividends | 5% | Art. 90L | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
-| Non-resident payments | 10% | Art. 75 | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
+| Non-resident payments | 25% | Art. 75 as amended by LF 2024 art. 26 | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 
 ## The base
 
@@ -52,7 +52,7 @@ Tax year: calendar year (art. 27). Profits tax reaches profits made in Djibouti,
 
 ## Cross-border points
 
-Non-residents: 10% on service fees, 5% on dividends. VAT: representative needed. Conventions override (art. 25).
+Non-residents: 25% on service fees, 5% on dividends. VAT: representative needed. Conventions override (art. 25).
 
 ## Two worked examples that recompute
 

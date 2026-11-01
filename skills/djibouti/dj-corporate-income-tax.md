@@ -1,6 +1,6 @@
 ---
 name: dj-corporate-income-tax
-description: "Use for Djibouti business profits tax for tax year 2026: IBP 25%, minimum tax 1% with a 120,000 floor, three instalments, the 1 April return, dividends 5% and non-resident 10% withholding."
+description: "Use for Djibouti business profits tax for tax year 2026: IBP 25%, minimum tax 1% with a 120,000 floor, three instalments, the 1 April return, dividends 5% and non-resident 25% withholding."
 version: 2.0
 jurisdiction: DJ
 tax_year: 2026
@@ -26,7 +26,7 @@ Individuals and companies with commercial, industrial, craft or professional act
 | IMF floor | 120,000 | Art. 60. If patente is under 120,000, IMF equals the patente (art. 62) | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
 | Instalments | 3 at 25% each | Of last year's tax. None if that tax is 120,000 or less (LF 2023 art. 22, arts. 293 bis, 294 bis) | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n181-an-22-8eme-l-portant-budget-initial-de-letat-de-lexercice-2023/ |
 | Dividends and directors fees | 5% | Withheld on amounts distributed, residents and non-residents (art. 90L, LF 2024; art. 90G restored by LFR 2025 art. 7, without the old 10 million exemption). Free-zone and investment-code firms included. Undistributed profit not taxed | https://www.journalofficiel.dj/texte-juridique/loi-n-189-an-25-9eme-l-portant-budget-rectificatif-de-letat-pour-lexercice-2025/ |
-| Non-resident payments | 10% | Gross before VAT on fees, head-office charges, studies, technical assistance (arts. 72, 75). Art. 73 exemptions for dividends and for financial and insurance payments were repealed (LF 2025 art. 6) | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
+| Non-resident payments | 25% | Gross before VAT on fees, royalties, head-office charges, studies, technical assistance (arts. 72, 74; art. 75 al. 2 as amended by LF 2024 art. 26, was 10%). Art. 73 exemptions for dividends and for financial and insurance payments were repealed (LF 2025 art. 6) | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n-64-an-23-9eme-l-portant-budget-initial-de-letat-pour-lexercice-2024/ |
 | Outgoing international transfers | 0.2% | Withheld by banks, mobile and transfer firms; exempt under 53,316.3; cap 17,721 per operation; no cap on account-to-account inside one institution (LFR 2025 art. 6). Replaces the 2025 mobile money wording | https://www.journalofficiel.dj/texte-juridique/loi-n-189-an-25-9eme-l-portant-budget-rectificatif-de-letat-pour-lexercice-2025/ |
 | Simplified regime limit | 20,000,000 goods; 10,000,000 others | Art. 36 as amended 2013 | https://www.journalofficiel.dj/texte-juridique/loi-n197-an-12-6eme-l-portant-budget-de-letat-pour-lexercice-2013/ |
 | Financial income tax | 20% | Impot d incitation sociale, art. 82, on the art. 80 income | https://www.ministere-finances.dj/TVA/CGI%20%202010.pdf |
@@ -116,7 +116,7 @@ expected:
 | Arrete 2026-087/PR/MB on the transfer tax: full text read | https://www.journalofficiel.dj/texte-juridique/arrete-n2026-087-pr-mb-fixant-les-modalites-dapplication-de-declaration-et-de-recouvre-ment-de-la-taxe-sur-les-transferts-internationaux-sortants/ | 2026-11-01 |
 | Loi de finances 111/AN/20/8eme L, budget 2021: articles 6 to 20 read | https://www.journalofficiel.dj/texte-juridique/loi-de-finances-n111-an-20-8eme-l-portant-budget-initial-de-letat-pour-lexercice-2021/ | 2026-11-01 |
 
-Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. LF 2024 art. 7 repealed the art. 62(3) petroleum company IMF rule, and LF 2025 art. 8 then repealed that art. 7: whether art. 62(3) revived is unsettled. Interest and royalty withholding has no separate rate confirmed beyond the 10% on non-resident payments. The art. 90G restoration in LFR 2025 art. 7 refers to "article 7" of the 2025 law; read here as restoring 90G.
+Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. LF 2024 art. 7 repealed the art. 62(3) petroleum company IMF rule, and LF 2025 art. 8 then repealed that art. 7: whether art. 62(3) revived is unsettled. Interest and royalty withholding has no separate rate confirmed beyond the 25% on non-resident payments. The art. 90G restoration in LFR 2025 art. 7 refers to "article 7" of the 2025 law; read here as restoring 90G.
 
 <!-- openaccountants-cta-block -->
 
