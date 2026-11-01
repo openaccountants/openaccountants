@@ -1,0 +1,197 @@
+{
+  "inspected_head": "aad27695f4745cdbe3701b83fc8cc564ffe26df6",
+  "prior_repair_head": "136a5783c6dab634956fb39aaff94d48131f43ea",
+  "initial_review_head": "2cec36c47e29f010fe0884693d40018c1313df7e",
+  "merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "read_date": "2026-11-01",
+  "review_scope": "Final bounded closure of JR07 evidence-only repairs and unchanged accepted hashes; no full source review repeated.",
+  "verdict": "accepted_for_limited_conditional_source_baseline_publication",
+  "publication_disposition": "All seven independent-review correction requests are closed. Publication of this exact head as an explicitly partial, conditional source baseline is acceptable. This does not establish operative2026 law or filing readiness.",
+  "requests": {
+    "JR01": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR02": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR03": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR04": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR05": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR06": {
+      "status": "closed",
+      "closure_basis": "Prior substantive repair review at136a5783c; Guide bytes unchanged at accepted head"
+    },
+    "JR07": {
+      "status": "closed",
+      "closure_basis": "All three evidence-only repair actions and six associations independently checked at accepted head"
+    }
+  },
+  "remaining_review_correction_requests": [],
+  "counts": {
+    "original_requests_closed": 7,
+    "original_substantive_rows_repaired": 18,
+    "original_mapping_rows_repaired": 34,
+    "final_bounded_associations_checked": 6,
+    "current_association_keys_retained": 220,
+    "historical_rows_unchanged": 218,
+    "initial_receipts_preserved": 9,
+    "new_primary_excerpt_cache_derivations_verified": 2
+  },
+  "final_associations": {
+    "jordan-gst:C013": [
+      "GSTBASE",
+      "GST7"
+    ],
+    "jo-payroll-social:C002": [
+      "SSC3",
+      "SSC20",
+      "IT12"
+    ],
+    "jordan-gst:C008": [
+      "GST7",
+      "SCHEDULES"
+    ],
+    "jordan-gst:C009": [
+      "RATES",
+      "SCHEDULES"
+    ],
+    "jordan-gst:C049": [
+      "SCHEDULES"
+    ],
+    "jordan-gst:C050": [
+      "RATES"
+    ]
+  },
+  "bounded_checks": {
+    "file:docs/research/jordan-2026-closeout/claim-evidence-groups.json": {
+      "before": true,
+      "after": true
+    },
+    "file:docs/research/jordan-2026-closeout/source-manifest.json": {
+      "before": true,
+      "after": true
+    },
+    "file:docs/research/jordan-2026-closeout/author-repair-manifest.json": {
+      "before": true,
+      "after": true
+    },
+    "file:docs/research/jordan-2026-closeout/ledgers/jordan-gst.md": {
+      "before": true,
+      "after": true
+    },
+    "file:docs/research/jordan-2026-closeout/ledgers/jo-payroll-social.md": {
+      "before": true,
+      "after": true
+    },
+    "association:jordan-gst:C013": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "association:jo-payroll-social:C002": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "association:jordan-gst:C008": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "association:jordan-gst:C009": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "association:jordan-gst:C049": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "association:jordan-gst:C050": {
+      "explicit_json": true,
+      "ledger_exact_groups": true
+    },
+    "source:SCHEDULES": {
+      "parent_sha": true,
+      "cache_sha": true,
+      "all_nonblank_lines_in_parent_span_in_order": true,
+      "group_quote_matches_cache": true,
+      "official_source_ids_exact": true
+    },
+    "source:RATES-READ": {
+      "parent_sha": true,
+      "cache_sha": true,
+      "all_nonblank_lines_in_parent_span_in_order": true,
+      "group_quote_matches_cache": true,
+      "official_source_ids_exact": true
+    },
+    "all_guide_files_byte_unchanged": true,
+    "historical_tables_unchanged": true,
+    "initial_nine_receipt_hashes_unchanged": true,
+    "unaffected_groups_unchanged": true,
+    "all_220_association_keys_retained": true
+  },
+  "accepted_hashes_sha256": {
+    "skills/jordan/README.md": "2dcd6a453bbb2a4406af9300d73cdd32d2e2e80c16120609f338c6df25f78f06",
+    "skills/jordan/jo-company-formation.md": "4e55d33eb4e75ab05ef572c42653efcdc1b46fb436c0d6dd806a5306844b9dea",
+    "skills/jordan/jo-corporate-income-tax.md": "1673b23a7bccc3da2af684ddd4750b398a41f350c20036e2d89e8964dec2f6e5",
+    "skills/jordan/jo-income-tax.md": "cffd29391e10b1cc02a184b2340da8f311327656e4bdb4e56106973883533174",
+    "skills/jordan/jo-payroll-social.md": "778ae006d46ec41d60436d77aae58b7ccef7e112b755877d8f713e218070681d",
+    "skills/jordan/jo-tax-overview.md": "2003a6654bcf45068ef1f83d50b02ecee2abea333327ff1feef33b0b4671c9be",
+    "skills/jordan/jordan-gst.md": "89ab9c3c627fd82d30fffce8815cae72070da82b6ac96a96ddbbae175dd2a2d8",
+    "docs/research/jordan-2026-closeout/source-manifest.json": "c60939ffc1218d23c3ff557db88e209bc354d9aa5fd3499ca6ae0a1c9e9b0164",
+    "docs/research/jordan-2026-closeout/claim-evidence-groups.json": "9a532f090f0f8a2e6ee60c0df3a5bb96e9e52a775b7148be86d6612e1849ce77",
+    "docs/research/jordan-2026-closeout/author-repair-manifest.json": "2aed6a29a1cff9f1e824aed69e43d1d5faa3d3e2aa326ad892f953320ce323cc",
+    "docs/research/jordan-2026-closeout/final-evidence-repair.json": "d5ba7f03744fa497989a7f859980cc0c51789b9bf289b8a9d7790007b3e0777b",
+    "docs/research/jordan-2026-closeout/closure-attempt-136a5783c.md": "096609ce6fabf68fb9145d036b64b7a58de132c40a5ada77b96f94b340e10261",
+    "docs/research/jordan-2026-closeout/closure-attempt-136a5783c.json": "21a2530811b7552d729ae7cb4083df68d8623a26d836e79f8badfafc4a1cf483",
+    "docs/research/jordan-2026-closeout/independent-additional-primary-followup.json": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131",
+    "docs/research/jordan-2026-closeout/independent-additional-primary.json": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001",
+    "docs/research/jordan-2026-closeout/independent-additional-search.json": "f79aae14f56363c9dc7f54f9d9eaee787918db2f8cc30e4e20c31c501358f19d",
+    "docs/research/jordan-2026-closeout/independent-build-review.py": "0060f241f83971de26bf96307c59509b9b1f0283dcd3e05394c68ba246475b48",
+    "docs/research/jordan-2026-closeout/independent-correction-requests.json": "3a4f0f2f97e4b123f75eed38fc86c530393a72f78facb4f1dc8b289bdd400437",
+    "docs/research/jordan-2026-closeout/independent-integrity-checks.json": "20b260253e40783748c7c2cd5c1cf2de340b4bac29c1b5debd454190451581d5",
+    "docs/research/jordan-2026-closeout/independent-review.md": "4eec3debaed130bb5e9943e5a50a2a99a7dd539c03773f8ee660f7f89491c14a",
+    "docs/research/jordan-2026-closeout/independent-row-verdicts.json": "f446df17ed4cc3f63ee7eca2f0de1d4e746f7a251bb01dcf4ce18f89b233cb06",
+    "docs/research/jordan-2026-closeout/independent-validation.txt": "294a1e5dee0165053d6eb6e2301b8b891cefb0bab690e640a74523c2fa032aee"
+  },
+  "new_primary_excerpt_provenance": {
+    "SCHEDULES": {
+      "cache": "primary-schedule-list-titles.txt",
+      "sha256": "d7c4a89e909f20a2cdb660a31b5f5ec8064997182f3738e0589b1de2b5a7142e",
+      "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "parent_lines_1_based": [
+        1613,
+        1639
+      ]
+    },
+    "RATES-READ": {
+      "cache": "primary-rate-search-first-page.txt",
+      "sha256": "f5d13a659b4445cebf3e401f2a552695a117f8f63ce217ec428728086bff9905",
+      "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+      "parent_lines_1_based": [
+        2324,
+        2371
+      ]
+    }
+  },
+  "retained_application_holds": [
+    "JO-IT-CURRENT",
+    "JO-GST-CURRENT",
+    "JO-SSC-CURRENT",
+    "JO-SSC-REDUCTION",
+    "named registration/schedule/input/current-form/portal/investment-zone holds",
+    "unchanged company-formation2025 whole-Guide hold"
+  ],
+  "validation_scope": "Accepted prior exact-head author validation receipt for136a5783c:75shape checks,10examples,changed-guide validator,strictmetadata and whole-base whitespace. No expensive checks repeated; current change is evidence-only and all Guide bytes are unchanged. Root owns final native release gates.",
+  "native_github_approval_asserted": false,
+  "merge_or_commit_performed": false,
+  "source_fetches_or_agents_used_for_this_closure": false
+}

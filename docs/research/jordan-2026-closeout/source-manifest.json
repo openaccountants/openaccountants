@@ -1,0 +1,131 @@
+{
+  "IT": {
+    "url": "https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx",
+    "cache": "inherited-income-selected-clauses.txt",
+    "scope": "Historical 2026-11-01 original-author primary DOCX reading, recovered exact tool output; arts. 3, 9-12, 17-19 and neighbouring text reread 2026-11-01. Not a fresh DOCX fetch; current direct HTTPS returned 451 and ordinary browser could not open it. Consolidation identifies amendment 38/2018; later enactments/commencement not cleared.",
+    "read_date": "2026-11-01",
+    "sha256": "d70fa7979a8d47c1d2c6b976eafc05426d52089ce37685649f07d3a66c8192f6"
+  },
+  "IT-P": {
+    "url": "https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx",
+    "cache": "inherited-income-penalties.txt",
+    "scope": "Recovered original 2026-11-01 source-reading output; art. 36, art. 22 registration and art. 34 fragments reread 2026-11-01. Incomplete clauses remain held.",
+    "read_date": "2026-11-01",
+    "sha256": "16b5e418dec7ed50b5d0fe1744c6bcd97ccdafcefdbbeedfb9bf80d1078848e8"
+  },
+  "GST": {
+    "url": "https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf",
+    "cache": "inherited-gst-selected-clauses.txt",
+    "scope": "Recovered original 2026-11-01 ISTD scan/OCR reading; arts. 6-8, 13-20 and 26 excerpt plus Regulation 45 extract reread 2026-11-01. OCR article digits are damaged; not a fresh scan read or proof of 2026 currentness.",
+    "read_date": "2026-11-01",
+    "sha256": "9311b44fb636a18650ddc08e2eaa99adf7b471ab26ef8c2b4fcef890639471c5"
+  },
+  "GST-P": {
+    "url": "https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf",
+    "cache": "agent-a1aabfd173c8e5b70.jsonl.source-extracts.txt",
+    "scope": "Recovered 2026-11-01 original reviewer primary OCR output; imported-service payment clause and weekly late-charge clause reread. The original scan is unavailable on closeout. OCR article digits not established; exact quoted words preserved.",
+    "read_date": "2026-11-01",
+    "sha256": "d60528f22723660c94e1ab9ab610460b956312bfce26943de4ecb5c22be6e8fa"
+  },
+  "SSC": {
+    "url": "https://www.ssc.gov.jo/wp-content/uploads/2024/01/قانون-الضمان-الاجتماعي-رقم-١-لسنة-٢٠١٤-وفقاً-لآخر-التعديلات-حتى-تاريخ-١٦_٤_٢٠٢٣_compressed.pdf",
+    "cache": "ssc-law-ar.pdf",
+    "scope": "Fetched normally from link on SSC homepage 2026-11-01; original Arabic scan through 16 April 2023. PDF pages 29-32 (arts.19-23),35 (art.24),45-46 (arts.42-47),49-52 (arts.48-58),55-56 (arts.59-61),59-65 (art.64 and neighbours),89-90 read with OCR; pages29,31,55 also visually checked. English official translation checked against Arabic; later 2026 bill enactment/commencement remains unconfirmed.",
+    "read_date": "2026-11-01",
+    "sha256": "7bd6415d26a15ed0ecb3b0005d655f93455622f83a52c2375ef0bb53b975e8a6"
+  },
+  "SSC-EN": {
+    "url": "https://www.ssc.gov.jo/wp-content/uploads/2025/02/law-26.1.2025-compressed.pdf",
+    "cache": "ssc-law-en.pdf",
+    "scope": "Normal verified HTTPS fetch 2026-11-01. Cover and arts.3-7,19-24,42-49,59,64 and neighbours read in extracted text. Official translation through16 April2023, not the enacted Arabic original.",
+    "read_date": "2026-11-01",
+    "sha256": "6c163737e567fb21695c4103754441d6ab0d17f12047a20f9a8071e066a50c64"
+  },
+  "CAP": {
+    "url": "https://org.petra.gov.jo/Include/InnerPage.jsp?ID=348404&lang=ar&name=news",
+    "cache": "primary-web-read-2026-11-01.json",
+    "scope": "Closeout web-tool opening of Arabic Petra 14May2026 article, paragraphs1-3 and publication timestamp, read2026-11-01; cache contains returned primary-page text and other official first-page law reads. Direct ordinary HTTPS451. This is a web-tool response hash, not claimed as original HTML byte hash.",
+    "read_date": "2026-11-01",
+    "sha256": "7bbd3dbe8d3e135973e4550d189889d7232e8843f119add3b1057ceae3d34e6e"
+  },
+  "LISTS": {
+    "url": "https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "cache": "inherited-income-selected-clauses.txt",
+    "scope": "Original author first-page/file-list output2026-11-01, reread2026-11-01. Does not verify schedule contents, all reduced rates, or goods/service classification.",
+    "read_date": "2026-11-01",
+    "sha256": "d70fa7979a8d47c1d2c6b976eafc05426d52089ce37685649f07d3a66c8192f6"
+  },
+  "NONE": {
+    "url": "unverified",
+    "cache": null,
+    "scope": "No complete official clause read supporting this item. Explicit non-operative hold, investigation prompt or arithmetic assumption; not a verified legal rule.",
+    "read_date": "2026-11-01",
+    "sha256": null
+  },
+  "FORMS": {
+    "url": "https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original first-page official form titles reread2026-11-01; actual fields/screens not read.",
+    "read_date": "2026-11-01",
+    "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886"
+  },
+  "TP": {
+    "url": "https://www.istd.gov.jo/AR/List/%D9%85%D9%86%D8%B5%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D9%8A%D8%A9",
+    "cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original official TP file-list titles reread2026-11-01; regulation thresholds not read.",
+    "read_date": "2026-11-01",
+    "sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886"
+  },
+  "REDUCTION": {
+    "url": "https://www.ssc.gov.jo/wp-content/uploads/2024/12/%D9%86%D8%B8%D8%A7%D9%85-%D8%AA%D8%AE%D9%81%D9%8A%D8%B6-%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%D8%A7%D8%AA-%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D9%88%D8%AE%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%AC%D8%B2-%D9%88%D8%A7%D9%84%D9%88%D9%81%D8%A7%D8%A9-%D9%84%D9%84%D8%B9%D8%A7%D9%85%D9%84%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D8%A7%D9%84%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5.pdf",
+    "cache": "inherited-gst-selected-clauses.txt",
+    "cache_location": "sibling sources/",
+    "scope": "Original Regulation45/2024 Arabic OCR clauses1-6 reread2026-11-01; art3 rates incomplete, no entitlement cleared.",
+    "read_date": "2026-11-01",
+    "sha256": "9311b44fb636a18650ddc08e2eaa99adf7b471ab26ef8c2b4fcef890639471c5"
+  },
+  "MOIN": {
+    "url": "https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+    "cache": "independent-additional-primary.json",
+    "cache_location": "repository/docs/research/jordan-2026-closeout/",
+    "scope": "Independent fresh official PDF response pp0-3 read2026-11-01 and author reread retained response2026-11-01. Art4 baseline completed; no later-amendment clearance.",
+    "read_date": "2026-11-01",
+    "sha256": "f490c699f0c44aa61f178f1c8a7da261354864db24e50fbebd32c0d5dbe2c001"
+  },
+  "MOIN-FOLLOWUP": {
+    "url": "https://www.moin.gov.jo/ebv4.0/root_storage/ar/eb_list_page/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_%D8%B1%D9%82%D9%85_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.pdf",
+    "cache": "independent-additional-primary-followup.json",
+    "cache_location": "repository/docs/research/jordan-2026-closeout/",
+    "scope": "Independent fresh official PDF response pp9 and17, lines398-418 and675-683, read2026-11-01; author reread retained response. Art12 payer/exclusions and art36 both-timely conditions completed; no later-amendment clearance.",
+    "read_date": "2026-11-01",
+    "sha256": "857b9c37c0f147334ef9a98278bbbdded417966847756f1bec47de54eb20f131"
+  },
+  "SCHEDULES": {
+    "url": "https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+    "cache": "primary-schedule-list-titles.txt",
+    "sha256": "d7c4a89e909f20a2cdb660a31b5f5ec8064997182f3738e0589b1de2b5a7142e",
+    "scope": "Recovered original author tool output of the official list actually fetched/read; reread2026-11-01. Not a fresh retrieval; title/file-list scope only. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+    "read_date": "2026-11-01",
+    "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+    "parent_lines_1_based": [
+      1613,
+      1639
+    ]
+  },
+  "RATES-READ": {
+    "url": "https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+    "cache": "primary-rate-search-first-page.txt",
+    "sha256": "f5d13a659b4445cebf3e401f2a552695a117f8f63ce217ec428728086bff9905",
+    "scope": "Recovered original author official rate-search first-page read, not a schedule-content read. Cached original-author primary output reread 2026-11-01; no new network retrieval and no complete product schedule read.",
+    "read_date": "2026-11-01",
+    "parent_cache": "agent-a2a55474814cab15f.jsonl.source-extracts.txt",
+    "parent_sha256": "7306da4a428260389fef9754073974ff1c736f84a869191feea68c4e42f84886",
+    "parent_lines_1_based": [
+      2324,
+      2371
+    ]
+  }
+}
