@@ -1,0 +1,97 @@
+{
+  "validated_commit": "0793c062a8258cfddb264924cdc5b510f9f1aea8",
+  "actual_main_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 11 changed guide file(s)\nchecked 10 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/burkina-faso/bf-company-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/burkina-faso/bf-investment-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burkina-faso/bf-investment-income.md",
+        "skills/burkina-faso/bf-corporate-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_15_shape_checks_each": {
+    "skills/burkina-faso/bf-investment-income.md": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "skills/burkina-faso/bf-corporate-tax.md": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  "preservation_receipt_sha256": "11d42714ab13982c91ec6a5b8675347cf2158ce38b71afcc9728727222ebf198",
+  "status_receipt_sha256": "5faef91950146e3342ac48badd7af6037c75c8664b7a497c9aa75517300ee9e0",
+  "closure_json_sha256": "372efb6cb72b9cb0faa5f5e8a3ea7a15b931507c0585ae5c23c6624dea224054",
+  "final_Guide_sha256": "04f67d4c4626e77939a0f85f02e9ebea240d5fe3bcfeebb1fec9052207094df2",
+  "final_README_sha256": "bcbbf5ba68296cb8c31f1dbcbaede69e40b38bcfcee8af91f7911d8ba5123c79",
+  "scope": "Independent conditional source review closed F01; all seven domains and all holds remain partial. No accountant attestation or merge approval."
+}

@@ -1,0 +1,650 @@
+{
+  "base_commit": "f7076093d670d841cdcc4140743541ffa6d72c7b",
+  "date": "2026-11-01",
+  "guides": {
+    "bf-company-formation": {
+      "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
+      "baseline_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "candidate_sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-corporate-tax": {
+      "baseline_blob": "fe3ff10edbefd9187b8a3c807c883d07f2b6a7c0",
+      "baseline_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "candidate_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-income-tax": {
+      "baseline_blob": "5c7f032213be8e46f8710bedd16464110df88ce6",
+      "baseline_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "candidate_sha256": "ba4a1fb10dc61afcb4ce5672482b5b787245eb43d7add4ab6cc8900aebb96a13",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-nonresident-services-withholding": {
+      "baseline_blob": "5a6bfbf1af7c69761dab2647c3e6423d3d35caa0",
+      "baseline_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "candidate_sha256": "f26c2a33b78b68b4145d1385ec65811067024d4c9f761a2bc35320ecb0426bde",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true
+    },
+    "bf-payroll": {
+      "baseline_blob": "31b4d7d94e4cb34ffdbf13927e52ec1ddb6108d2",
+      "baseline_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "candidate_sha256": "9b44d1403476bed2a88ca434b654d4fbc546f89be880c77237e030f48d856d20",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-social-contributions": {
+      "baseline_blob": "586d8e8e25f9e5b33d229354e09eaa77765aadbe",
+      "baseline_sha256": "493295d81a9b41973bdc912ea794ef49721418559b11c0cce7a6922c73d15ab3",
+      "candidate_sha256": "91a57add55b88cf0dd7cdbc2a98d5a94e6c7c7b71713250465e86c8029a70ec8",
+      "unchanged": false,
+      "old_topics": [
+        {
+          "id": 1,
+          "line": 13,
+          "line_sha256": "819dc2579081e898218f5d2c583370ee2978bf02c234dfb56f6cb510a3ed082e"
+        },
+        {
+          "id": 2,
+          "line": 15,
+          "line_sha256": "f612fdcad819a4391cd7b77bf822d58daf40761d9c4ac15355b9313c333810a1"
+        },
+        {
+          "id": 3,
+          "line": 17,
+          "line_sha256": "6d9fbcee8662a62b6ed7c9ea27ce604efb5a9208137118d30111977009d9d855"
+        },
+        {
+          "id": 4,
+          "line": 19,
+          "line_sha256": "a77452c78c1041fdda1afd9c7d3cc3e9bc1afea8eb416a02857971bce5615453"
+        },
+        {
+          "id": 5,
+          "line": 21,
+          "line_sha256": "62f2dcad4a686a62f1f3fe1a1931ba15a18981d086e033b7b370b336bf41ee86"
+        },
+        {
+          "id": 6,
+          "line": 23,
+          "line_sha256": "1824849c9b30da5cac9f463382b2c0bdc0b6c6f9f15fc8e34fb2cd53cc6de0b5"
+        },
+        {
+          "id": 7,
+          "line": 25,
+          "line_sha256": "f2b5b82b9ba718dc3ddc898d12bddeefbf8c73942ee3cab761443894a0b740c8"
+        },
+        {
+          "id": 8,
+          "line": 26,
+          "line_sha256": "09166ca7f52aad67acf3a4b8290641c77038356eacd0cfab9c59d92c2bc204b6"
+        },
+        {
+          "id": 9,
+          "line": 27,
+          "line_sha256": "16cc159af63dac152adcb1aadec3c2e781b0bf88b7a12d1129c1d61f0d23ff59"
+        },
+        {
+          "id": 10,
+          "line": 28,
+          "line_sha256": "e4154628d48eec2057a0dfcdc24431b70c7c7d08d99c00f23bddb591d8d4ec53"
+        },
+        {
+          "id": 11,
+          "line": 29,
+          "line_sha256": "79c64a089a2d2c81b73fcaf9d943b869617c80b0353be6c9a1f37e3cd62c1f75"
+        },
+        {
+          "id": 12,
+          "line": 30,
+          "line_sha256": "d869d037d40ab3d8a6b0d32953ccd9424ab5b9317a2f32249a7546570321f119"
+        },
+        {
+          "id": 13,
+          "line": 31,
+          "line_sha256": "1ec2ed78085c4bb24efa35e443f73ea6624a0a38689c7b110a31481708a2b947"
+        },
+        {
+          "id": 14,
+          "line": 32,
+          "line_sha256": "4ce64a8a8450bec499b33a1be3e2ce188474f86971abad49e820bfd3a6ca12ef"
+        },
+        {
+          "id": 15,
+          "line": 33,
+          "line_sha256": "ea4ab7df94efb485428dd8b386e3b1e6f1f6eb4d6e0cdc412fda1eb143ab7c28"
+        },
+        {
+          "id": 16,
+          "line": 34,
+          "line_sha256": "baf091189d00429e581fb3cad2af34952a032a25ad192aae5ae5272e16e3642d"
+        },
+        {
+          "id": 17,
+          "line": 35,
+          "line_sha256": "6e7ee8523ddfef60a3b4f9b906fdd54d339026a26786fc658e0362153b534e89"
+        },
+        {
+          "id": 18,
+          "line": 36,
+          "line_sha256": "450390eaaa27efa5c8bff710aa83d819316503219fcc40adb0e62bdf90ceb2e3"
+        },
+        {
+          "id": 19,
+          "line": 37,
+          "line_sha256": "369d09511b04e6ad780618dcc027b346401a2595006cf1346db95bee9fa5838c"
+        },
+        {
+          "id": 20,
+          "line": 38,
+          "line_sha256": "17f2bada68eff0094fcab13b7c85cd64c57bf2e5888e995def486a948b607852"
+        },
+        {
+          "id": 21,
+          "line": 39,
+          "line_sha256": "c8d8c350d212dc35ff85f6305f11f3e35b03da2ee1015891bcb8117e9f08f828"
+        },
+        {
+          "id": 22,
+          "line": 40,
+          "line_sha256": "06ef7ef950e69e2f8e667324174c86771e1a70e08d37b6b071885a8bdfe33412"
+        },
+        {
+          "id": 23,
+          "line": 41,
+          "line_sha256": "6ca2394002d5290684ab4f5356a08e62d038a96dec61e49ed3a8c20fc41816fb"
+        },
+        {
+          "id": 24,
+          "line": 42,
+          "line_sha256": "c3bfbd793a80ce1ce852bc2a46ce7c370f6e005a91478a8f939d8f7edc85d319"
+        },
+        {
+          "id": 25,
+          "line": 43,
+          "line_sha256": "e945fb718e65741994df9b3c1213669e4f5595c70dd18c3c1fe98132ba77fabc"
+        },
+        {
+          "id": 26,
+          "line": 44,
+          "line_sha256": "a75a792ee8bd68079775783b128eef62daf31d08e34372d402e617b604c4fcc4"
+        },
+        {
+          "id": 27,
+          "line": 46,
+          "line_sha256": "f9fd425e466fa66c554f718514e622d676c4a79fa1a8832f58b05da30e078d9b"
+        },
+        {
+          "id": 28,
+          "line": 48,
+          "line_sha256": "adf190da1283d57683a3cf83bd435ca476d2a630e594ee0a19614dd19d74b366"
+        },
+        {
+          "id": 29,
+          "line": 50,
+          "line_sha256": "be872816cd995aaf38a49d97739e44176be51243681f680009ba21a1f90e69bd"
+        },
+        {
+          "id": 30,
+          "line": 52,
+          "line_sha256": "137e4a18ae5fa013a1926109e0f5883fdff18ba47c3d30d5593151b76938b7e8"
+        },
+        {
+          "id": 31,
+          "line": 53,
+          "line_sha256": "a8497a6b5955b473c4947d138e64c6c313db351eab5b447a937b77da48093177"
+        },
+        {
+          "id": 32,
+          "line": 54,
+          "line_sha256": "75e244838952faf7b32c772851b739b313567b7bad67eaf8900fc5a932604f1c"
+        },
+        {
+          "id": 33,
+          "line": 55,
+          "line_sha256": "1762dbf4ce8f038ba48b381abd41aec7c5d6aa9f82ba403d09245d300fec4fda"
+        },
+        {
+          "id": 34,
+          "line": 57,
+          "line_sha256": "52a8b1935fef5636cb3ab90e79452029ee1652318ed9df3cda4885f7c78cd10e"
+        },
+        {
+          "id": 35,
+          "line": 59,
+          "line_sha256": "cd25be2d02aaebcb3753c52d65b1d83f07761df8aa5cb3e97b3a443ad3991ac4"
+        },
+        {
+          "id": 36,
+          "line": 61,
+          "line_sha256": "cc35df42abd88ef6effb3c3bf89ed513e7744c33b04f11414f5869370b1f2132"
+        },
+        {
+          "id": 37,
+          "line": 62,
+          "line_sha256": "a016bc707558edefe6a5131cb59f845960d6a6fde42324d5fa141a635fa3e658"
+        },
+        {
+          "id": 38,
+          "line": 63,
+          "line_sha256": "238c208965e5ea586e4f274dbd6ae067e3bcf40800b7feb8e025b75a10ba09e6"
+        },
+        {
+          "id": 39,
+          "line": 65,
+          "line_sha256": "9d2ad141111a5b007c2f263d4a0cd0ebb242247ef9e4f7bcfbe42e11a1b42624"
+        },
+        {
+          "id": 40,
+          "line": 67,
+          "line_sha256": "42a46b2938a4af5ada6f3d8b449f2eb74ed3084bd8c6b5f27ff52d8600b75f0b"
+        },
+        {
+          "id": 41,
+          "line": 68,
+          "line_sha256": "973c55f99a184b721de28f93d10695d44a134a8aa32a4db5be42b9efeb4fa28d"
+        },
+        {
+          "id": 42,
+          "line": 69,
+          "line_sha256": "8c0206cff64f95de45ef8cb9d724014cb9ed694b2812ad53ebfeb4c3d8bd0fc8"
+        },
+        {
+          "id": 43,
+          "line": 71,
+          "line_sha256": "da9cf238a19b1aae3bd9c7df2060fcf2dcee8ad3c15d7b98c33f3d4be82049af"
+        },
+        {
+          "id": 44,
+          "line": 73,
+          "line_sha256": "a3f51c5887c5a0b7437f5a9f02eef7d2cf4765fd9bc88a0baa655b95d85920a3"
+        },
+        {
+          "id": 45,
+          "line": 74,
+          "line_sha256": "59e434211f448cbe8a13abc3bf524bf80b435321dad5d23c5fd0bbaa80ed5dd6"
+        },
+        {
+          "id": 46,
+          "line": 75,
+          "line_sha256": "dce05780ee366d465ede227dcbd7be2f0d0328db6be64d7693187666b75a641d"
+        },
+        {
+          "id": 47,
+          "line": 76,
+          "line_sha256": "0051ecdbed9a4426a8cbaacb0c166ca31c31f4c6d5cbb1ea10393861db86c905"
+        },
+        {
+          "id": 48,
+          "line": 77,
+          "line_sha256": "587ce1730ed46dd2ccf7425b82b4e353c5c7da01cd3351e54aff77e98577ac76"
+        }
+      ],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-tax-optimization": {
+      "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
+      "baseline_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "candidate_sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-tax-overview": {
+      "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
+      "baseline_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "candidate_sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    "bf-transfer-pricing": {
+      "baseline_blob": "c97e897cd388878a52012739cb58ebeaab81d46f",
+      "baseline_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "candidate_sha256": "6fa31292d8f57325d9a543afe6b42543295f0f7c353dbfcc28b48a1da1b7e9b4",
+      "unchanged": true,
+      "old_topics": [],
+      "platform_fields_identical": true
+    },
+    "bf-vat": {
+      "baseline_blob": "fb1039611a2c1be561f4bd6f27f2b04aa770a5b7",
+      "baseline_sha256": "f3c48fddfbef31b23daab6b26aa0a0f457a9689eb37cbf21d8a8490211e82656",
+      "candidate_sha256": "c9633208d7e6b759c44f1598b3bfe51b511d26604032971fa8f656ecd6b6fe22",
+      "unchanged": false,
+      "old_topics": [
+        {
+          "id": 1,
+          "line": 13,
+          "line_sha256": "76adc00ed5b3fa6d97b9e30bae2c393a13e6252e5eed3c07ffea4a3631cc9137"
+        },
+        {
+          "id": 2,
+          "line": 15,
+          "line_sha256": "dfc012e81e67ea8a9fec536da9a19034e56c8b5a7b780443b5237c105b245114"
+        },
+        {
+          "id": 3,
+          "line": 17,
+          "line_sha256": "bdbe0b9c4b393f176d7ecc5799929777f200b9fd1f9612fcced729aa9887f304"
+        },
+        {
+          "id": 4,
+          "line": 19,
+          "line_sha256": "a77452c78c1041fdda1afd9c7d3cc3e9bc1afea8eb416a02857971bce5615453"
+        },
+        {
+          "id": 5,
+          "line": 21,
+          "line_sha256": "3832f98b5038f09aaf3c3a94c3ce4d31c3f1d2e46e45cecf46652f6f47ec0ba8"
+        },
+        {
+          "id": 6,
+          "line": 23,
+          "line_sha256": "1824849c9b30da5cac9f463382b2c0bdc0b6c6f9f15fc8e34fb2cd53cc6de0b5"
+        },
+        {
+          "id": 7,
+          "line": 25,
+          "line_sha256": "f2b5b82b9ba718dc3ddc898d12bddeefbf8c73942ee3cab761443894a0b740c8"
+        },
+        {
+          "id": 8,
+          "line": 26,
+          "line_sha256": "09166ca7f52aad67acf3a4b8290641c77038356eacd0cfab9c59d92c2bc204b6"
+        },
+        {
+          "id": 9,
+          "line": 27,
+          "line_sha256": "4918cb6286c1d5af0761c2f7bbf2b423039126a0a78c4b243d64d808e88b476f"
+        },
+        {
+          "id": 10,
+          "line": 28,
+          "line_sha256": "c5d873a24096650fca62a78cc9ca6dbc25d6865ec8dcffdb1ccaac9752a21263"
+        },
+        {
+          "id": 11,
+          "line": 29,
+          "line_sha256": "d106cb5ece213ef6386866785ae54d6be05b2546612eefd7a871ba063edbd596"
+        },
+        {
+          "id": 12,
+          "line": 30,
+          "line_sha256": "d143fb2e39e58ff23908ae9532be7991b639ff65557f7a3298c789f3243c86cd"
+        },
+        {
+          "id": 13,
+          "line": 31,
+          "line_sha256": "f1513a88a57f3d5eb7367600ad6aa603846f5497b74a07307a3d6b080a4dccbb"
+        },
+        {
+          "id": 14,
+          "line": 32,
+          "line_sha256": "0a6accf4dce19c7d949d5bf6b79c54439ca721840884c52213fad902999b9e79"
+        },
+        {
+          "id": 15,
+          "line": 33,
+          "line_sha256": "9a18ddd89293f5c1ac29da0f5ad080d11b80a1c5c2d410b5a1ca85274ea08d95"
+        },
+        {
+          "id": 16,
+          "line": 34,
+          "line_sha256": "8d83e1ca3e181fefeb0c07986b092ec53174d006050f22e0de4415d10fb3fa1e"
+        },
+        {
+          "id": 17,
+          "line": 35,
+          "line_sha256": "3c575025f7c6893f47404efbbee3b6b886bb951897266736b5edcacb0435fc14"
+        },
+        {
+          "id": 18,
+          "line": 36,
+          "line_sha256": "8a9d5a56d497cd68348973f53982e9c9def4ac4d9d1f90bf608bf087c82be6b5"
+        },
+        {
+          "id": 19,
+          "line": 37,
+          "line_sha256": "eb4cfb65e3fca86e79a63b176da2d79e2aac7d581ab185cb8bdff14cbff287aa"
+        },
+        {
+          "id": 20,
+          "line": 38,
+          "line_sha256": "4a8d5c3bbf8dbc2aa7485942489b2c2bad1ec56c6f17de67ef88f86dec4c3ebd"
+        },
+        {
+          "id": 21,
+          "line": 39,
+          "line_sha256": "678ea08de3fcd68ac6820d4a89e34ecdf91427bce29d9ad395090265e374c666"
+        },
+        {
+          "id": 22,
+          "line": 40,
+          "line_sha256": "5ce09af9da47d828f728f88877d0dacb39f5e12de8dff9028ec9094305813062"
+        },
+        {
+          "id": 23,
+          "line": 41,
+          "line_sha256": "384d0ec79cac31f70cc44cd2c339e058d5b23137dc30577a4294aa7c757b54a6"
+        },
+        {
+          "id": 24,
+          "line": 42,
+          "line_sha256": "c3bfbd793a80ce1ce852bc2a46ce7c370f6e005a91478a8f939d8f7edc85d319"
+        },
+        {
+          "id": 25,
+          "line": 43,
+          "line_sha256": "e945fb718e65741994df9b3c1213669e4f5595c70dd18c3c1fe98132ba77fabc"
+        },
+        {
+          "id": 26,
+          "line": 44,
+          "line_sha256": "a75a792ee8bd68079775783b128eef62daf31d08e34372d402e617b604c4fcc4"
+        },
+        {
+          "id": 27,
+          "line": 46,
+          "line_sha256": "160a60d8e8b9083df018723af770acc5444f3052dffee53947e8549c0cb24d35"
+        },
+        {
+          "id": 28,
+          "line": 48,
+          "line_sha256": "11df2187145f96c65cf990f52ce51336caee59501ec138933e0a10e3ff02cb9a"
+        },
+        {
+          "id": 29,
+          "line": 49,
+          "line_sha256": "45115791d7b923b2721524bfa1012ffed628c3cb34987693582c1908568f7b50"
+        },
+        {
+          "id": 30,
+          "line": 50,
+          "line_sha256": "a7c5d73a6ae79a03bb360416c9e079c772bb775e4cc07738ae787da4471035fa"
+        },
+        {
+          "id": 31,
+          "line": 51,
+          "line_sha256": "d0ba8a4dce90ad9f22583227f62d73b5cec9ed24879f248d4795a8117cd788b2"
+        },
+        {
+          "id": 32,
+          "line": 53,
+          "line_sha256": "6ecd516c3018c3593e65d7d3d7de7bd0cd341041468f252021ec23945bc2aca2"
+        },
+        {
+          "id": 33,
+          "line": 55,
+          "line_sha256": "dbc8543c15e9c35389e921e517284a19a60823b24cae3ab60081d05f6817b2f1"
+        },
+        {
+          "id": 34,
+          "line": 56,
+          "line_sha256": "c736970bd4cd016c45410e78614db80415d1e8caadbaebd288012e2e24571afc"
+        },
+        {
+          "id": 35,
+          "line": 58,
+          "line_sha256": "003a31a42a989a4276db4b7518828c5f2f007def7a3ff179fc677cf6baca0609"
+        },
+        {
+          "id": 36,
+          "line": 60,
+          "line_sha256": "3cbfa9a5dda8c81f2c28f40dea4ec111afa6e0f66175570d1013d0f66cf81828"
+        },
+        {
+          "id": 37,
+          "line": 62,
+          "line_sha256": "41c93dfd863858a881d0bd2053beb80542b5ba802cfcadb98955522feb2fb6cc"
+        },
+        {
+          "id": 38,
+          "line": 64,
+          "line_sha256": "0341691b7e2cece7e4c190375247c061a5531c128f4f626b1050fad396955c9e"
+        },
+        {
+          "id": 39,
+          "line": 66,
+          "line_sha256": "4d2036c2784597b38d0d2d6c424db73cb65fdad9362143cb7fdbb83728ae1c4d"
+        },
+        {
+          "id": 40,
+          "line": 67,
+          "line_sha256": "9c74147c5b55526f2ed87279aace9f77c24e680dcb734eeea042aed6129f7bb0"
+        },
+        {
+          "id": 41,
+          "line": 68,
+          "line_sha256": "9122c44ab23e9e1fbe206e8ea372457a018e4098d50fb1f8a2e557ec3048ed65"
+        },
+        {
+          "id": 42,
+          "line": 70,
+          "line_sha256": "07f0d7e43331a2ff3b92dd41929036c1f7a073bb95c5f10416836365a8a2add4"
+        },
+        {
+          "id": 43,
+          "line": 72,
+          "line_sha256": "2398d1f9132e727a42d11b776452b80279cee3dbe7750910c39e19dba87d4548"
+        },
+        {
+          "id": 44,
+          "line": 74,
+          "line_sha256": "274969d4ba8982f1d0de0534668e3c19872680c464b5d2c9771ac105f844be01"
+        },
+        {
+          "id": 45,
+          "line": 76,
+          "line_sha256": "23be95213ba879cd0b2136b0d0cbe9f0cca4856023da692ba56a7da7d4df780c"
+        },
+        {
+          "id": 46,
+          "line": 78,
+          "line_sha256": "a90156430b6220aa494deb821e49b8fee1d354258b96e9fe251b77138f30e76e"
+        },
+        {
+          "id": 47,
+          "line": 79,
+          "line_sha256": "7709dafec0c2dbe380c1d7a5a519b54d26d516a2db7f37e05dabf1feab959d70"
+        },
+        {
+          "id": 48,
+          "line": 80,
+          "line_sha256": "a813fcb5111e023d57002017ae0e01c14b2503a26612bb945da15cd3396424bf"
+        },
+        {
+          "id": 49,
+          "line": 82,
+          "line_sha256": "d516163e3e217898bb2f244ec0459b768cff106e5db61d829c14507dd9a2cb13"
+        },
+        {
+          "id": 50,
+          "line": 84,
+          "line_sha256": "65de3d223b4c5c46367debb0d749c12170260ba0c0e6f3282740b246b7e4d4dd"
+        },
+        {
+          "id": 51,
+          "line": 85,
+          "line_sha256": "365a16bc0ee8b5ace70909c93373737373ad01895e7c1549b1492dfdd29661fc"
+        },
+        {
+          "id": 52,
+          "line": 86,
+          "line_sha256": "3fae492e41d69d7124aa0ea8fad5deca651863b2e55f8d990853eec1e4c56f71"
+        },
+        {
+          "id": 53,
+          "line": 87,
+          "line_sha256": "0051ecdbed9a4426a8cbaacb0c166ca31c31f4c6d5cbb1ea10393861db86c905"
+        },
+        {
+          "id": 54,
+          "line": 88,
+          "line_sha256": "8912b9bc6b08ea0bd14b47e15618ae9c57ab5308fe1f32cc568dce928a27468c"
+        }
+      ],
+      "platform_fields_identical": true,
+      "full_cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    }
+  },
+  "prior_evidence": {
+    "evidence/burkina-faso-remaining-20261101/README.md": "1829d80961c8168008df11d7092ebe133e1340c6",
+    "evidence/burkina-faso-remaining-20261101/examples.txt": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+    "evidence/burkina-faso-remaining-20261101/ledgers/bf-corporate-tax.md": "05b56c0cdf929d35cc32270657c16beb09bc6b85",
+    "evidence/burkina-faso-remaining-20261101/ledgers/bf-income-tax.md": "3ac6f68a7857cc9f3bd27632d8967e6012b45541",
+    "evidence/burkina-faso-remaining-20261101/ledgers/bf-payroll.md": "54445e02d35a9d7c0b5e757183105944b88a4c42",
+    "evidence/burkina-faso-remaining-20261101/old-topic-destinations.md": "35b6863ec2d1847f686042955ec5180793285c3a",
+    "evidence/burkina-faso-remaining-20261101/pack-scope-check.json": "f03cd36c02640bb1da47496dbd7f5713ebfea81e",
+    "evidence/burkina-faso-remaining-20261101/preservation-manifest.json": "9fd3ee87b8b0756176c973486a5efb2bb5ef52ae",
+    "evidence/burkina-faso-remaining-20261101/quote-checks.json": "c20364e94c0befa683446aea7cd3da31d9f53d26",
+    "evidence/burkina-faso-remaining-20261101/reviewer-corrections.json": "e450baa6fb8d33a14caaa8e35a93b892e04c0cc8",
+    "evidence/burkina-faso-remaining-20261101/skill-checks.txt": "909f1dc4d7806703427b8309178733e587b731ee",
+    "evidence/burkina-faso-remaining-20261101/sync-audit.txt": "956c7a1566f578f72ea9d2142c79411c267334e9",
+    "evidence/burkina-faso-remaining-20261101/validate-changed.txt": "d9c13854af7dcb43ac694b7e3a496e2c8d53f720",
+    "evidence/burkina-faso-remaining-20261101/validation-checkpoint.json": "87abc859eed6cd66202194aed51aba8be95e5e84",
+    "evidence/ledgers/bf-nonresident-services-withholding.md": "d6835210d0d2556da0e398fde12344fa925907b1",
+    "evidence/ledgers/bf-transfer-pricing.md": "be10ad8ab2735174eb438e025559831f48078e89",
+    "evidence/ledgers/burkina-faso-old-topics.md": "e27af8457b09aacdf54c7f62e0afdb627ef2fe67",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-manifest.json": "7aa659eb79c98d90eab62c3f77eb307f64b8ae7a",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-row-checks.json": "cd70aeaf17eaf9e3bb14535f43e6b63c3b46157b",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md": "f2f7c19cc9a7294ad16164099f7e25bc122875e0",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/example-checks.txt": "e635725cb2d6a973e5c83a1991a1f8c9695ba74b",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/independent-example-checks.json": "e546e9543d0e9ab7aeca3f065fcb10c39e04a934",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/old-topic-spot-checks.md": "4a59cdd7786a99ce349396287ece173a949c8095",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/preservation-checks.json": "ca1f1ec8fef4c884fdc39b1a66d216a0afe47c8e",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/review.md": "ec1db036a4246510773063e3858912dac54b1855",
+    "evidence/ledgers/burkina-faso-remaining-review-20261101/row-checks.json": "90789a48a23c9f496307420d50f708281486602d",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md": "a3f532f4ec5714006f54b3238abf53506c46f732",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json": "cb52981d86fbc9648368a69c5567153450016755",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json": "2b33c145bf03b2d77efaf558b2953dbc4d84f76b",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt": "595d2077124960ec0db98e87abd6306fc9df1079",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt": "968d8c7c5869fc8b2ead0e830cd390d44f26ca25",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt": "44a035a6428a4929330987f32351c41a0fc4c011",
+    "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt": "3a2f38a352363ad2ac17056913d3f30eaadd8ebc",
+    "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json": "2b79a3134ddab7a2a7eb0a280c4d8794a7f23467",
+    "evidence/ledgers/burkina-faso-review-20261101/review.md": "ff5dc4099b4b2d7d00cbc485a40450dd75b2a72d",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt": "595d2077124960ec0db98e87abd6306fc9df1079",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt": "f4ce53b5bd887176b7e399fdf98a76b6e6bc799e",
+    "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt": "0ce3110a8e45527c40d9b29777eb98b37b5ce251"
+  },
+  "old_topic_count": 102,
+  "unchanged_guide_count": 8,
+  "accepted_prior_guide_hashes_preserved": true
+}

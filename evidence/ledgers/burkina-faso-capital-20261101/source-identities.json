@@ -1,0 +1,162 @@
+[
+  {
+    "file": "cgi-2026.pdf",
+    "bytes": 3933091,
+    "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+    "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Full arts. 129–159 and neighbours 127–128/160; full 130/134 exemption clauses; arts. 93–94, 610–611 and neighbours, 669–673, 763–767. Pages 77–80 visually read. No whole-volume/later-law currentness certification.",
+    "cached_reader_files": [
+      {
+        "file": "cgi-2026-raw.txt",
+        "sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5",
+        "bytes": 1615971
+      },
+      {
+        "file": "capital-cgi-077.png",
+        "sha256": "78295ab9314a8bf3c5c7f6e61b241cc978ce51aeaf2ffd279dd5c1cf9b68784d",
+        "bytes": 360574
+      },
+      {
+        "file": "capital-cgi-078.png",
+        "sha256": "d78cb096bfd3282371433b0f0ff129eb89baec4e32f9d99aba3cd64849d4b42d",
+        "bytes": 365835
+      },
+      {
+        "file": "capital-cgi-079.png",
+        "sha256": "773d1788572aa09341cd7d01d79dc6b8e4958700a2e75a3761ae9c7e5b1dba70",
+        "bytes": 398094
+      },
+      {
+        "file": "capital-cgi-080.png",
+        "sha256": "bfa25a676e5e2491f7fc6dc60b1ae4550f79356381789d8c2944bb3727aacfaf",
+        "bytes": 389228
+      }
+    ]
+  },
+  {
+    "file": "finance-2026-gazette.pdf",
+    "bytes": 15892649,
+    "sha256": "24242939052ac8dc40b6b59e9dd5e89b5e72e5f29aaeed6362cefa97a02f7d6a",
+    "official_url": "https://dgi.bf/wp-content/uploads/2026/01/JOURNAL-OFFICIEL-N%C2%B001-SPECIAL-LOI-DE-FINANCES-2026.pdf",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Identity/promulgation pages and OCR amendment headings screened for arts. 14–36. No 129–159, 610–611 or 765–766 target identified; not a full reading of all finance-law provisions or a later-law search.",
+    "cached_reader_files": [
+      {
+        "file": "finance-2026-ocr/page-02.txt",
+        "sha256": "15f31eb6a40f77d74005d547e8addd36db7fac853f7a59832043f0a7465c6186",
+        "bytes": 1059
+      },
+      {
+        "file": "finance-2026-ocr/page-03.txt",
+        "sha256": "7ff651eaa1c3fb0325dc0d3e9afeea408e437ab6ef012638510ebd94c800eb78",
+        "bytes": 897
+      },
+      {
+        "file": "finance-2026-ocr/page-04.txt",
+        "sha256": "e3acf3cf7eab0c902bf326bbded57583af86977f5a3a67e079bce4fd98dca782",
+        "bytes": 2532
+      },
+      {
+        "file": "finance-2026-ocr/page-05.txt",
+        "sha256": "72c6c1bf7e909e42df2d68e913086c4cdb24dea0ec234bcca667487d2988b592",
+        "bytes": 2862
+      },
+      {
+        "file": "finance-2026-ocr/page-06.txt",
+        "sha256": "efdad211fc98df50de8d67316f5d9e4dd019f106168d1d55db3cb3c7de8cb02e",
+        "bytes": 2739
+      },
+      {
+        "file": "finance-2026-ocr/page-07.txt",
+        "sha256": "abb0f03a3e55ba5c17234f7611ddf7fa8176bae65481880bff5e804052ae58e2",
+        "bytes": 2674
+      },
+      {
+        "file": "finance-2026-ocr/page-08.txt",
+        "sha256": "479986779adb415cd279985118b629fe4061c2e8c4ff7cb6baf4e79308f7ef1e",
+        "bytes": 2946
+      },
+      {
+        "file": "finance-2026-ocr/page-09.txt",
+        "sha256": "05f7ebc2a03399aacf1a1a13406405df7410f3bf369dafc67e3482037f2d160e",
+        "bytes": 2369
+      },
+      {
+        "file": "finance-2026-ocr/page-10.txt",
+        "sha256": "ccb788c42e48c72449118d44479d18dde523eaeee0b6fc12018007228f55b090",
+        "bytes": 3110
+      },
+      {
+        "file": "finance-2026-ocr/page-11.txt",
+        "sha256": "6f26c1a3b8c87b5b08675c8647fe977623bd9991ad3bcb2531df981c122e79e2",
+        "bytes": 2048
+      },
+      {
+        "file": "finance-2026-ocr/page-12.txt",
+        "sha256": "ff9343246bcdf7b2019eef1cd900c64c68fa8d057a99dfed7a7a855520987004",
+        "bytes": 2133
+      },
+      {
+        "file": "finance-2026-ocr/page-13.txt",
+        "sha256": "f9f8b314033bc954dfb4e644213a20dbafcef7a56719e83cf17f0dd450584861",
+        "bytes": 2750
+      },
+      {
+        "file": "finance-2026-ocr/page-14.txt",
+        "sha256": "dcf6ae3e07a24a45329043999a7aa3e2745132c5f53cca576d3fa2735a02f4af",
+        "bytes": 2661
+      },
+      {
+        "file": "finance-2026-ocr/page-15.txt",
+        "sha256": "7b5efbab89db34e408e6f61f197de5fb73f2c122097787269bcdf3d1d76877ec",
+        "bytes": 2566
+      },
+      {
+        "file": "finance-2026-ocr/page-16.txt",
+        "sha256": "335265c1aab3db4af049c7c5bfa26b4565e8d0997e14535912bb94907aebf0e9",
+        "bytes": 3221
+      },
+      {
+        "file": "finance-2026-ocr/page-17.txt",
+        "sha256": "a05ff6f07892232cb9345a423b5993d577affd716408404898d67f2d25c67475",
+        "bytes": 3019
+      },
+      {
+        "file": "finance-2026-ocr/page-18.txt",
+        "sha256": "e46d705abaff3567a505d41513d109f3a43078418b72d050aa41ec0280142579",
+        "bytes": 3104
+      },
+      {
+        "file": "finance-2026-ocr/page-19.txt",
+        "sha256": "2fee7dc171ede442a88b957ba144a7d0e544ec4cbbdbbf3d6c3fb6e46adbe6b1",
+        "bytes": 2956
+      },
+      {
+        "file": "finance-2026-ocr/page-20.txt",
+        "sha256": "d376dd36eaefdd8235773a2057fb81b23626d5763f1287ff31456248093c3a65",
+        "bytes": 3043
+      },
+      {
+        "file": "finance-2026-ocr/page-21.txt",
+        "sha256": "47f38fac044d4f10fbbde2aa4327ad956717b44b0ada956195ff737c5359a392",
+        "bytes": 2608
+      },
+      {
+        "file": "finance-2026-ocr/page-22.txt",
+        "sha256": "43e4356c76c56cdc8f16a812591b3666b26629f4a0b5934f963835e277e30158",
+        "bytes": 2237
+      },
+      {
+        "file": "finance-2026-ocr/page-23.txt",
+        "sha256": "94c0d86e710f206095ebf30682fa1c171e561996b79373825c55d9d2a6ff479e",
+        "bytes": 1881
+      },
+      {
+        "file": "finance-2026-ocr/page-24.txt",
+        "sha256": "6cbe2c2c2b5a2768988d1e18fd3ab32eb4417028207c0670d738570a34340df8",
+        "bytes": 2235
+      }
+    ]
+  }
+]

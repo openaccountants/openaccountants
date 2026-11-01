@@ -1,0 +1,114 @@
+{
+  "head": "26e1b85c0cbb72923709586bdaa76b694e9f6873",
+  "cases": [
+    {
+      "guide": "bf-corporate-tax",
+      "name": "Ordinary IS and balance",
+      "articles": [
+        "87",
+        "89",
+        "91",
+        "92"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "rounded_profit": "12345000",
+        "is_tax": "3394875.000",
+        "mfp": "1000000.000",
+        "each_advance": "1000000.00",
+        "balance": "394875.000"
+      },
+      "expected_match": true
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "name": "Established versus first operating period",
+      "articles": [
+        "87",
+        "89",
+        "90"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "established_tax": "1000000",
+        "first_period_tax": "275000.000",
+        "difference": "725000.000"
+      },
+      "expected_match": true
+    },
+    {
+      "guide": "bf-income-tax",
+      "name": "IBICA progressive versus RSI minimum",
+      "articles": [
+        "13",
+        "23",
+        "24"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "rounded_profit": "2456000",
+        "progressive": "550400.000",
+        "mfp": "300000",
+        "tax": "550400.000"
+      },
+      "expected_match": true
+    },
+    {
+      "guide": "bf-income-tax",
+      "name": "CME versus RSI election",
+      "articles": [
+        "13",
+        "24",
+        "535",
+        "536"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "class": "3",
+        "cme": "120000",
+        "rsi_tax": "425000.000",
+        "additional_tax": "305000.000"
+      },
+      "expected_match": true
+    },
+    {
+      "guide": "bf-payroll",
+      "name": "Salary exemptions and TPA",
+      "articles": [
+        "106",
+        "111",
+        "112",
+        "113",
+        "228",
+        "229"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "defined_gross": "280000",
+        "housing_exempt": "56000.0",
+        "function_exempt": "14000.00",
+        "transport_exempt": "10000",
+        "taxable": "150000.00",
+        "band_tax": "18390.00000",
+        "iuts": "16551.000000",
+        "tpa": "8700.00"
+      },
+      "expected_match": true
+    },
+    {
+      "guide": "bf-payroll",
+      "name": "TPA threshold decision",
+      "articles": [
+        "230"
+      ],
+      "method": "Independent Decimal recomputation from stated facts, without evaluating the Guide oa-check steps.",
+      "results": {
+        "halfyear_eligible": "30000",
+        "accelerated": "25001",
+        "threshold_excess": "1"
+      },
+      "expected_match": true
+    }
+  ],
+  "interpretation_limits": "Payroll is the unrounded illustrative computation; final-tax rounding remains expressly unconfirmed. Case1 pension/social amounts are given inputs, not certification of CNSS rates. Election comparison is restricted to the named income/CME taxes and does not price wider compliance/VAT effects."
+}

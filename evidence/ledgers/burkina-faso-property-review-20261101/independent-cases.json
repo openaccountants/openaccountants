@@ -1,0 +1,32 @@
+{
+  "frozen_head": "13a38f884550d6d220f79100a8fbc1404842a1de",
+  "method": "Independent Decimal arithmetic, not evaluation of the Guide expressions; legal branches checked against full art.254 and art.256.",
+  "cases": [
+    {
+      "case": "Owner-occupied SARL",
+      "facts": "Enumerated SARL; January owner; own occupation; supported annual rental value includes immediate indispensable dependency; no exemption; ordinary deduction applies.",
+      "value": "6000000",
+      "deduction": "3000000.0",
+      "base": "3000000.0",
+      "tax": "300000.00",
+      "legal_decision": "Art.255(1) uses hypothetical rental value for self-occupation. Zero cash rent does not imply zero tax.",
+      "matches": true
+    },
+    {
+      "case": "Major-repairs decision",
+      "facts": "Otherwise comparable SA properties; supported annual value; January ownership; no exemption. Legal burden of grosses réparations controls.",
+      "owner_base": "6000000.0",
+      "owner_tax": "600000.00",
+      "tenant_base": "12000000",
+      "tenant_tax": "1200000.0",
+      "difference": "600000.00",
+      "legal_decision": "Art.254 second paragraph switches off the full 50% deduction when the tenant bears major repairs. This is classification of existing burden, not an election; disputed classification remains held.",
+      "matches": true
+    }
+  ],
+  "additional_floor_checks": {
+    "duties_300000_inaccuracy_penalty": "100000",
+    "duties_300000_taxation_office_penalty": "500000",
+    "note": "Distinct hypothetical branches, not accumulated. No actual first late day computed."
+  }
+}

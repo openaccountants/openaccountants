@@ -1,0 +1,72 @@
+{
+  "method": "Separate branch-by-branch Decimal recomputation,not execution of writer step expressions",
+  "cases": [
+    {
+      "name": "VAT ordinary balance/certified withholding",
+      "independent_computation": [
+        "10000000 ×18/100 =1800000",
+        "1800000 ×30/100 =540000",
+        "11800000 −540000 =11260000",
+        "1800000 −450000 −540000 =810000"
+      ],
+      "result": {
+        "output_vat": 1800000,
+        "withheld_vat": 540000,
+        "supplier_cash": 11260000,
+        "balance": 810000
+      },
+      "conditions": "Ordinary taxable supplies,valid450kinput,receipted certificate,no prior credit; art334supplier credit not a rate reduction."
+    },
+    {
+      "name": "VAT goods-export eligibility comparison",
+      "independent_computation": [
+        "50% is not more than50%; refund0,carry2000000",
+        "2000000 ×60/100 =1200000",
+        "2000000 −1200000 =800000"
+      ],
+      "result": {
+        "exact_threshold_refund": 0,
+        "exact_threshold_carry": 2000000,
+        "qualifying_refund": 1200000,
+        "unclaimed_remainder": 800000
+      },
+      "conditions": "Current/prior export shares match; no other category; authorised credit,dossier/timing assumed. Claimed credit cannot also offset later periods."
+    },
+    {
+      "name": "CNSS company vehicle/per-person ceiling",
+      "independent_computation": [
+        "12000000 ÷240 =50000",
+        "900000 +50000 =950000; genuine20000reimbursement excluded",
+        "min(950000,800000) =800000",
+        "800000 ×(6+1.5+8.5)/100 =128000",
+        "800000 ×5.5/100 =44000; total172000"
+      ],
+      "result": {
+        "vehicle_benefit": 50000,
+        "remuneration_base": 950000,
+        "contribution_base": 800000,
+        "employer": 128000,
+        "employee": 44000,
+        "combined": 172000
+      },
+      "conditions": "Fullmonth,enterprise-owned vehicle,ordinary affiliation,nosurcharge,singleemployer; rates authority-only; no AMU/IUTS/TPA total."
+    },
+    {
+      "name": "CNSS20worker payment schedule comparison",
+      "independent_computation": [
+        "300000 ×(6+1.5+8.5+5.5)/100 =64500",
+        "64500 ×20 =1290000 monthly",
+        "64500 ×19 =1225500 monthly accrual",
+        "1225500 ×3 =3676500 quarterly"
+      ],
+      "result": {
+        "total_per_worker": 64500,
+        "monthly_payment": 1290000,
+        "quarterly_monthly_accrual": 1225500,
+        "quarterly_payment": 3676500
+      },
+      "conditions": "Stable headcount and contribution bases; authority monthly/quarterly split correct; actual declaration/payment deadline interaction requires F1repair."
+    }
+  ],
+  "all_four_arithmetic_results_agree": true
+}

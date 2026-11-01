@@ -1,0 +1,9 @@
+# Exact repaired-candidate closure
+
+All five original findings are closed for the source-bound partial drafting scope. The original review and findings are preserved unchanged. This closure binds the five exact candidate hashes in `closure-manifest.json`, matching `reviewer-repairs.json`; it does not claim a new content commit.
+
+F1: the web page's thirty-day quarterly payment wording is distinguished from the recap's last-day-of-following-month declaration wording. Both forms' simultaneous-payment instructions are stated. The 30/31-day interaction remains expressly held, not certified as an extension. F2: the actual art.319 seat range, vehicle-use exceptions, staff lodging/transport/collective needs, decoration-equipment boundary and advertising-object threshold are now stated. F3: the BNTS's three physical pages are identified correctly. F4: the registration source has its actual scope and date. F5: the art.306 travel-ticket commission location rule is explicit.
+
+All 89 row identities are rebound in `closure-row-checks.json`. The 102 predecessor checks remain valid, with the quarterly conflict now explicitly disclosed. Eight other Guides, all five accepted prior workpapers, all 39 prior evidence blobs, platform fields and full CTA suffixes are preserved. All seven domains remain partial. The four independent arithmetic results are unchanged; the executable checker again reports four blocks, zero failures and zero missing.
+
+This is limited source-review acceptance of partial workpapers. The unread controlling social law/rate text, current CNSS sanctions, SMIG, operative AMU, repeated-risk inconsistency, authenticated forms/workflows and other named holds remain unresolved. No accountant attestation, complete current-law/filing approval, country completion, issue closure, merge or publication is approved. Status prose may accurately report this limited closure under the restrictions in the manifest; no substantive rule change is covered.

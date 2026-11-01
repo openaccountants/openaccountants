@@ -1,0 +1,42 @@
+{
+  "reviewed_head": "a22c17fe02db1b682133cd15c80987007fbada6c",
+  "content_commit": "573d2cff08532bb8a2ea21628777a2d2c617a7b7",
+  "prior_accepted_head": "60bba17a2c729f4369b7b7abf5488591b712aa99",
+  "files": {
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md": "b23e85288aba6ce3c6e540925a0671cba6c2a6efb67f5a37dbe8a4d8e510a68b",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md": "51078d14f6f4e72a925bc5f3b413ab9b840b5e5fad074aaa5e4cf91d45678e2f",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md": "6f1b94b743c27c587b762f0226b9124892ed5d4279137e6de56ba793971cb0cb",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/preservation.json": "1502bb5e4bf568db4e5ca2338198a2d3e4f065cb73de0bc0e9f552b8b37ec336",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-validation.json": "7dd1df3bfcf76afdd460282a017e1f5e8c27e90ef71451e913fed86573310faf",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/quote-location-check.json": "f6b8b75f62442378734f6d7c3e23ac939c47e75a9a378452d1474eaa530deb74",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md": "2144293ff8071d05c818d7bb53004373dc6948a2800fcb27e3c6fa583427c069",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/rules.json": "a6bef55d32ab971a1b1ddf339b26393923fec254527ad48d11255b031366de97",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/shape-checks.json": "66d1fd51543fa356f0a8f597642bace9572ef5fdc22c7c0bc7c23c58a4b2b9e9",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.json": "2f5bfafdcc13a4d8c9487085b2e967c5d827482bb2c172b23019e47570760899",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/source-identities.json": "8f2b38de7d90565f4039f1da500e8040c94fdff0c91857ec76e82a1a110ac140",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-record.md": "a5592fbac027bbb8633741be9551dd4d26eb1f88bc0425e48c6d3f996dd68cb4",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/frozen-candidate.json": "28b60bd7a93c10a657edf9f21a0f644256a8e3c557482faa6b0db4d9d0e79f86",
+    "skills/burkina-faso/bf-company-formation.md": "68ef07ba52b2bc5cce14dbe7bedf607a0dd99f6442843e5a178e597c5789006f",
+    "skills/burkina-faso/bf-tax-overview.md": "6596b89972bbe78de63d22d4dfce893b3ffadc3d03700f9a3d3815dedcaa4a0d",
+    "skills/burkina-faso/bf-tax-optimization.md": "30760e272d388a461371e0b15e3ccd83af78fcd382bafb382a41753e879aeb1e",
+    "skills/burkina-faso/README.md": "41c1a78c8bd058f2d1a1e05f4185d08d7be0330497e9458702a25d53dcd3e2a2"
+  },
+  "frozen_writer_hashes_match": true,
+  "source_identities": [
+    {
+      "file": "cgi-2026.pdf",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "actual_bytes": 3933091,
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "writer_identity_matches": true
+    },
+    {
+      "file": "formation-auscgie.pdf",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "actual_bytes": 16313466,
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "writer_identity_matches": true
+    }
+  ],
+  "status": "Initial independent review; corrections required, no acceptance or attestation"
+}

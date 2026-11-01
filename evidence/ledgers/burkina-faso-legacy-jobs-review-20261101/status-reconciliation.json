@@ -1,0 +1,116 @@
+{
+  "authority": "closure-manifest.json post_acceptance_status_only_allowance",
+  "files": [
+    {
+      "file": "skills/burkina-faso/README.md",
+      "before": "41c1a78c8bd058f2d1a1e05f4185d08d7be0330497e9458702a25d53dcd3e2a2",
+      "literal_changes": [
+        {
+          "before": "their separate independent review is pending.",
+          "after": "their separate independent conditional source corrections are closed.",
+          "count": 1
+        },
+        {
+          "before": "These three rewrites are pending independent source review.",
+          "after": "These three rewrites have completed independent conditional source review with four corrections closed.",
+          "count": 1
+        },
+        {
+          "operation": "append",
+          "before": "",
+          "after": "\nThe [independent final-three closure](../../evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure.md) checks all 50 records, 74 predecessor destinations and six independent computations. Four findings are closed against exact hashes. The TPA illustration is bounded to the article 228/229 calculation stage; the article 196 interaction remains unresolved. All stated company-law, form, incentive and partial-domain gaps remain. This accepts conditional source fidelity only, without accountant attestation or comprehensive coverage.\n"
+        }
+      ],
+      "after": "a6ab3925518cbea70b5e6abb7a3494e9496099eee86598703d612470a296a703"
+    },
+    {
+      "file": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-record.md",
+      "before": "a5592fbac027bbb8633741be9551dd4d26eb1f88bc0425e48c6d3f996dd68cb4",
+      "literal_changes": [
+        {
+          "before": "Three rewrites, pending fresh independent review.",
+          "after": "Three rewrites, with fresh independent conditional source corrections closed.",
+          "count": 1
+        },
+        {
+          "operation": "append",
+          "before": "",
+          "after": "\nThe [independent final-three closure](../burkina-faso-legacy-jobs-review-20261101/closure.md) checks all 50 records, 74 predecessor destinations and six independent computations. Four findings are closed against exact hashes. The TPA illustration is bounded to the article 228/229 calculation stage; the article 196 interaction remains unresolved. All stated company-law, form, incentive and partial-domain gaps remain. This accepts conditional source fidelity only, without accountant attestation or comprehensive coverage.\n"
+        }
+      ],
+      "after": "f190d48738e5ef27b22250221291ab1fb3adbcf7fd8b1bd89cd034dbed139363"
+    },
+    {
+      "file": "skills/burkina-faso/bf-company-formation.md",
+      "before": "c0ded24abf2c07f2d7ab6e779d78283ccf4af591b050a80c8f5bf398214110b6",
+      "literal_changes": [
+        {
+          "before": "Independent source review: pending for this rewrite.",
+          "after": "Independent source review: conditional source corrections closed for this rewrite.",
+          "count": 1
+        }
+      ],
+      "after": "7935047abccbe90cb5f9740e3a6aac24eb8f34a57c1c45c5e65cb392f9b1d09e"
+    },
+    {
+      "file": "skills/burkina-faso/bf-tax-overview.md",
+      "before": "1f61effdb5fcd42bdfef5ee82b69bab2df12d2956010a5555da95c1c45b88fde",
+      "literal_changes": [
+        {
+          "before": "Independent source review: pending for this rewrite.",
+          "after": "Independent source review: conditional source corrections closed for this rewrite.",
+          "count": 1
+        }
+      ],
+      "after": "8b48223540341f36e06387f79f98c807a74673d062ecd6c801d5ab0e5ee61800"
+    },
+    {
+      "file": "skills/burkina-faso/bf-tax-optimization.md",
+      "before": "ecf2ef442cc148da7c7ce690c97923c82610cf557f1b91aed7ade3fdc8f93fa2",
+      "literal_changes": [
+        {
+          "before": "Independent source review: pending for this rewrite.",
+          "after": "Independent source review: conditional source corrections closed for this rewrite.",
+          "count": 1
+        }
+      ],
+      "after": "39fff5caab7bffc655a31b7a90e2fbf8c7502b6f6491c7d283ba9b43b1fbaa6d"
+    },
+    {
+      "file": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md",
+      "before": "129381248d4bd264f2558fefad1df788d386455626463e3eef35292500b83bc3",
+      "literal_changes": [
+        {
+          "before": "Every record is pending independent review.",
+          "after": "Independent conditional source review is accepted for the stated records.",
+          "count": 1
+        }
+      ],
+      "after": "2fb6d95d37a398232a2d8e96984ba3422fa46d25f154bd5ad4a818b4924cca92"
+    },
+    {
+      "file": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md",
+      "before": "4b40817585388f01c1ae3ab596a99494d6331b45296bca8a38f14fd4e8f240fc",
+      "literal_changes": [
+        {
+          "before": "Every record is pending independent review.",
+          "after": "Independent conditional source review is accepted for the stated records.",
+          "count": 1
+        }
+      ],
+      "after": "ef701adebc650babac879cc1dfebdc586d1b0513e95f0084c4faac5e2d22eeaf"
+    },
+    {
+      "file": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md",
+      "before": "d9194834c0161cdd3e71d38e2048246c95fa027b096ce331c03946a7d4aa31ef",
+      "literal_changes": [
+        {
+          "before": "Every record is pending independent review.",
+          "after": "Independent conditional source review is accepted for the stated records.",
+          "count": 1
+        }
+      ],
+      "after": "e67929ad9cca9c64ae96c9eaf51468ba7fcbf2b36c9b5c51c0ded574caa574a9"
+    }
+  ]
+}

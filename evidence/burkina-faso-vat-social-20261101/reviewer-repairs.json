@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-01",
+  "scope": "Five initial findings repaired; parent re-read actual art306/319 and CNSS recap/BNTS/payment and registration source passages",
+  "candidate_files": {
+    "skills/burkina-faso/bf-vat.md": "d0a6e68f4f55869916431dc7c53930fb19fd49902497b487bb2322426dc3e30b",
+    "skills/burkina-faso/bf-social-contributions.md": "1deb8b0f8743fad13fbc701d08ac767b2c2a9814f7ad13a7ed914d4963b8d5b0",
+    "evidence/burkina-faso-vat-social-20261101/source-identities.json": "400b297c01b1fed3a5efa7bfd1a45356613bba338e85a90def0924542e248b73",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md": "7fc0141c18875aaff28f49746f09e1b22514c9f7b8c30ebbd5f4c881041d0b3d",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md": "6d6eb1b9bad4e5353989ed47f1ed9990472cdf71f025466e373a585c7b9f883c"
+  },
+  "limits": "Source-bound partial work only; no current-law/filing approval"
+}

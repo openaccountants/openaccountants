@@ -1,0 +1,128 @@
+{
+  "base_frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "parent_candidate_sha256": "3a70dbf5f69ede46ce4f259497b7d63a5b293eeb42cc6e718e042b4e4fbfbf17",
+  "initial_review_manifest_and_original_files_exact": true,
+  "three_original_writer_artifacts_recoverable_at_commit_and_blobs": true,
+  "other59rows_exact": true,
+  "C49_only_rule_and_added_quote_fragments_changed": true,
+  "human_ledger_only_C49_rule_and_added_fragments_changed": true,
+  "Guide_only_line72_changed": true,
+  "corporate_migration_and_IS_credit_exact": true,
+  "README_before_status_exact": true,
+  "ten_other_Guides_and130_prior_evidence_preserved": true,
+  "sparse_checkout_absent_paths_verified_as_skip_worktree_and_frozen_Git_blobs": [
+    "evidence/ledgers/bf-nonresident-services-withholding.md",
+    "evidence/ledgers/bf-transfer-pricing.md",
+    "evidence/ledgers/burkina-faso-old-topics.md",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json",
+    "evidence/ledgers/burkina-faso-review-20261101/review.md",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt",
+    "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt"
+  ],
+  "all_original_anchors_and3added_fragments_match_source_pages": true,
+  "source_CGI_hash_exact": true,
+  "4case_blocks_unchanged": true,
+  "shape_checks": {
+    "bf-investment-income": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "bf-corporate-tax": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burkina-faso/bf-investment-income.md",
+        "skills/burkina-faso/bf-corporate-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 11 changed guide file(s)\nchecked 10 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/burkina-faso/bf-company-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/burkina-faso/bf-investment-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--worktree",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 10 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "guide_exact_changed_lines": [
+    [
+      72,
+      "7. **Intermediary reporting.** Art. 610 professional/ancillary securities payers obtain identity and real domicile before payment/account opening, report beneficiary identities and net payments, and annex the true-owner list where coupons are presented for third parties. Keep supporting records to the end of the fourth year after payment, unless a longer duty applies. Art. 611 covered habitual securities custodians send prescribed account opening/closure notices within the first ten days of the next month and obtain the receipt; they report prior-year credited coupons before 1 February. These are distinct duties from paying IRCM. [CGI arts. 610–611](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf#page=260).",
+      "7. **Intermediary reporting.** Art. 610 professional/ancillary securities payers obtain identity and real domicile before payment/account opening, report beneficiary identities and net payments. Coupons are presumed to belong to the presenter unless proved otherwise. For third-party coupons, the presenter can supply a list giving the presenter’s and true owners’ names and real domiciles and each owner’s coupon amount; the payer must annex that list if supplied. Keep supporting records to the end of the fourth year after payment, unless a longer duty applies. Art. 611 covered habitual securities custodians send prescribed account opening/closure notices within the first ten days of the next month and obtain the receipt; they report prior-year credited coupons before 1 February. These are distinct duties from paying IRCM. [CGI arts. 610–611](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf#page=260)."
+    ]
+  ]
+}

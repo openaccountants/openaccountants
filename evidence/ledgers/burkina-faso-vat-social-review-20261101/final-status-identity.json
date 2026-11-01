@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-01",
+  "result": "Exact status-only delta accepted; earlier conditional source acceptance carries to these final bytes.",
+  "status_manifest_sha256": "54d433c3db523004b3b7d3e2db16f950b0f9e8c5ac700fd2d49ef4686736c228",
+  "status_checks": [
+    {
+      "path": "skills/burkina-faso/README.md",
+      "before_sha256": "86f2d4e902798ff5910d4f9c9cbc4583e4b75312b437c56d1031f14574bb5dcb",
+      "final_sha256": "8307d76a6a55acfaf7d4b3475880678f156b32e0f48ba2ccf96d8daa2f24fea2",
+      "check": "Only declared review-status replacements and the exact limited-acceptance closure-link paragraph change."
+    },
+    {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "before_sha256": "d0a6e68f4f55869916431dc7c53930fb19fd49902497b487bb2322426dc3e30b",
+      "final_sha256": "355d88b6e042a68637a244b40fc2582d833c863e9511dd5d58f64a4a0510e9ac",
+      "check": "Exactly one closing review-status phrase changes; all other bytes match the accepted source candidate.",
+      "frontmatter_cta_law_holds_examples_unchanged": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "before_sha256": "1deb8b0f8743fad13fbc701d08ac767b2c2a9814f7ad13a7ed914d4963b8d5b0",
+      "final_sha256": "8c2447d807a217f395c1d06c4d5cfdc72b327f4d942142d1f045d999a1414936",
+      "check": "Exactly one closing review-status phrase changes; all other bytes match the accepted source candidate.",
+      "frontmatter_cta_law_holds_examples_unchanged": true
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "before_sha256": "2fc7697e8b5f688876fb762b8cc19b7d45d3c4711ba5b428cc064b1401dd50f9",
+      "final_sha256": "a69bc31dec5f25869b4031bc88c515e647d6712f81fe9a297cfc42096117970b",
+      "check": "Only declared review-status replacements and the exact limited-acceptance closure-link paragraph change."
+    }
+  ],
+  "final_candidate_sha256": {
+    "skills/burkina-faso/bf-vat.md": "355d88b6e042a68637a244b40fc2582d833c863e9511dd5d58f64a4a0510e9ac",
+    "skills/burkina-faso/bf-social-contributions.md": "8c2447d807a217f395c1d06c4d5cfdc72b327f4d942142d1f045d999a1414936",
+    "evidence/burkina-faso-vat-social-20261101/source-identities.json": "400b297c01b1fed3a5efa7bfd1a45356613bba338e85a90def0924542e248b73",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md": "7fc0141c18875aaff28f49746f09e1b22514c9f7b8c30ebbd5f4c881041d0b3d",
+    "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md": "6d6eb1b9bad4e5353989ed47f1ed9990472cdf71f025466e373a585c7b9f883c",
+    "skills/burkina-faso/README.md": "8307d76a6a55acfaf7d4b3475880678f156b32e0f48ba2ccf96d8daa2f24fea2",
+    "evidence/burkina-faso-vat-social-20261101/README.md": "a69bc31dec5f25869b4031bc88c515e647d6712f81fe9a297cfc42096117970b"
+  },
+  "earlier_review_and_closure_receipts_unchanged_sha256": {
+    "review.md": "80648c0d8942bd3d3a52e32ec63d6dbe267223d80d49cb06eaa0421b402b2aa1",
+    "findings.json": "8b34965423f99c30d8215185f6e16542a3abfc001d334fb003b89fd47ee7fa09",
+    "input-manifest.json": "978ac7a4da493c8a8fc71c17ed337e144fd05956b62ec62d718e832e3fc43a8a",
+    "row-checks.json": "68e9426270eeaebbfec087db61d80be98a76a77e41d85e64923951f9a946922d",
+    "preservation-checks.json": "481f3153232fbe74223be6d5cc72b7ae176c30b6ff1e4bb2355cf0b69bcb2ffa",
+    "old-topic-checks.json": "9a2cc7da81b191bc3bc1be88cf43c783a5e2381cd4b55de81f66ba2576da30d1",
+    "independent-cases.json": "f3e75e5f8d8aa15ef0745373cf001dec663d9b30d2b1eae8e596d97dc9db27f6",
+    "closure.md": "f2a6d68aaab7d0a115378395b9b73e290f6e8735630b606d3394223307403c00",
+    "closure-manifest.json": "aeebbff8bfdd5b4ef87129c993b354611b5e941800819136af1965963b2c171e",
+    "closure-row-checks.json": "9e8fc886c395bd7cb06562ad23c90c63cbbba20d2bdf14e469ba21e01562fa2c",
+    "closure-preservation-checks.json": "571284b1643f6c838161ce9fb5a4e83c47a4a5c25d44852f6b70bcb93a23221a"
+  },
+  "preservation": "Eight other Guides and all 39 earlier evidence blobs unchanged; complete Guide frontmatter/CTA, law, holds and executable cases unchanged; seven domains remain partial.",
+  "limits": "No complete current-law certification, authenticated filing approval, professional attestation, issue closure, merge or production publication. Missing law/rate-decree text, CNSS sanctions, SMIG, AMU activation, risk recurrence, forms/authenticated workflow and all other stated holds remain unresolved.",
+  "method": "Exact inverse replacement of each Guide status phrase reproduces its accepted closure hash. README changes reconstructed from immutable frozen before files plus declared replacements and exact limited-scope paragraph. No new legal research or Guide edits."
+}

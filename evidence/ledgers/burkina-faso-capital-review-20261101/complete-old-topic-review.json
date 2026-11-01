@@ -1,0 +1,263 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "immutable_predecessor": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+  "complete_corporate_old_blocks": [
+    {
+      "predecessor_block": 1,
+      "exact_old_text": "---\nname: bf-corporate-tax\ndescription: >\n  Burkina Faso corporate income tax reference for the 2026 tax year, covering ordinary IS scope, partnership elections, taxable-profit adjustments, the minimum tax, advance payments and the annual return. Use for questions about the 27.5 percent company tax, loss-making companies, the RNI or RSI minimum, CGA reductions, first-year exemptions, head-office fees, donations and distributions. The Guide separates statutory preparation requirements from unverified form boxes and portal actions. It supplies two recomputing cases, including the minimum-tax decision, and identifies the official 2026 CGI articles read. It does not complete specialist exemptions, permanent-establishment attribution, treaty relief or authenticated filing.\njurisdiction: BF\ntax_year: 2026\nlast_updated: 2026-11-01\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\nversion: 1.1\n---",
+      "sha256": "786ef05975f31ee9a457b05b77046afef66fdb7363e416ae55f1926f867ff950",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md frontmatter",
+      "disposition": "Preserved frontmatter except permitted version 1.1 to 1.2"
+    },
+    {
+      "predecessor_block": 2,
+      "exact_old_text": "# Burkina Faso corporate tax (IS) v1.1",
+      "sha256": "7a19789605288e81afdb97dd794c6c13bfa5de4a9e874307b3bd0ad70004b406",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md H1",
+      "disposition": "Preserved H1 except permitted v1.1 to v1.2"
+    },
+    {
+      "predecessor_block": 3,
+      "exact_old_text": "> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.",
+      "sha256": "481fa9621b47496b2062888ab28d853a0595b5d11f10c2566b980173741afbcd",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 4,
+      "exact_old_text": "## Who this applies to",
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 5,
+      "exact_old_text": "This covers ordinary IS for 2026 profits in Burkina Faso. Under CGI arts. 42–44, IS applies by form to SA, SAS, SARL including single-member companies, SNC, SCS, sociétés en participation, GIE, cooperatives and assimilated bodies. Activity-based liability also covers the specified public bodies and civil companies. The listed SNC, SCS, participation/de facto companies and GIE members can elect IBICA, with all associates signing and notification within three months of the fiscal-year start (art. 44). This is an election out of the default IS treatment, not the reverse. Financial syndicates and professional civil companies have the separate irrevocable IS option in art. 43(3). Do not apply IS to a sole trader merely because turnover is high. [CGI arts. 42–44](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "4835f6ee5db8576c540294eb0e033b00460c378154441fb1d97c3786ae5109c3",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 6,
+      "exact_old_text": "CME can replace IS for an eligible microenterprise; determine the regime using [business income](bf-income-tax.md). Statutory exemptions in art. 45 and special sectors are outside this ordinary computation.",
+      "sha256": "453463612c0a3829e39802661f3888c618d45246bbab84359456042fdad10a76",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 7,
+      "exact_old_text": "## Rates, bands and thresholds",
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 8,
+      "exact_old_text": "| Item and conditions | Figure | Official source |\n|---|---|---|\n| Ordinary taxable company profit, before credits | 27.5%; disregard the profit fraction below XOF 1,000 | [CGI art. 87](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| MFP: annual turnover excluding VAT, rounded down to XOF 100,000 | 0.5%; RNI floor XOF 1,000,000, RSI floor XOF 300,000 | [CGI arts. 88–89](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Exclusive service-station managers or authorised prepaid-phone recharge distributors | Regime floor only; exclusivity required | [CGI art. 89](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| CGA members; MFP only | 50% reduction | [CGI art. 89](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| RSI undertaking with effective CGA membership; profit tax | 30% reduction | [CGI art. 196(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Newly created company; MFP only | Exempt for first operating accounting period | [CGI art. 90](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| IS advances; last closed year's IS, annualised if its period differs from twelve months | Three equal advances totalling 75%; first IS period exempt | [CGI art. 91](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Specified public-interest donations; positive taxable result before gift, required recipient/date/value schedule | Limit 3‰ of turnover excluding VAT | [CGI art. 71(1)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Justified gifts to State and its subdivisions; schedule also required | No quantitative limit | [CGI art. 71(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Head-office share plus linked-enterprise technical/accounting/financial assistance, studies and assimilated fees together | 10% of defined overheads; precise actual services, non-excessive charges | [CGI art. 62, amended by Loi 021-2025/ALT art. 14](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| Ordinary securities products, subject to treaty and specific rate | 12.5%; Burkina-issued bond interest 6% | [CGI art. 140(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| New company's distributed share/interest products | Half ordinary rate, hence 6.25%, first three social periods, total no more than 42 months; community companies have separate 3% branch | [CGI art. 141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |",
+      "sha256": "82974ee44372af20f1c478973372d899bdbce0242b63ac18064aee7e9feb489d",
+      "destination": "skills/burkina-faso/bf-investment-income.md Rates table for M01/M02; corporate table for all other rows",
+      "disposition": "All rate rows retained except complete two-row M01/M02 migration to C13-C16"
+    },
+    {
+      "predecessor_block": 9,
+      "exact_old_text": "## The base",
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 10,
+      "exact_old_text": "Start from accounts, reconcile to taxable profit, round that profit down to XOF 1,000, then apply IS, including the RSI CGA profit-tax reduction where art. 196 applies. Profit includes all operations and asset disposals; it is not cash received alone (arts. 48–51). A deductible expense must belong to the period, serve the direct business interest or normal management, be real, sufficiently documented and booked as an expense, reduce net assets, and generate non-exempt income. The specific conditions in arts. 54–84 still apply; the general test does not override them (art. 53). [CGI arts. 48–54](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "23f79f1485413527725a594e9a5587dcd73445fd5c082edc9e140634165fcf7f",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 11,
+      "exact_old_text": "Remuneration must correspond to actual work. For managing associates of capital companies and their spouses, excessive or fictitious remuneration makes the entire payment a deemed distribution, not just the excess (art. 56). Personnel charges cannot be provisioned; required remuneration declarations must be timely (art. 61). Tax/social/customs and other statutory fines, confiscations, penalties and surcharges are not deductible (art. 74(3)). A provision is not deductible just because booked; its art. 79 conditions and arts. 80–82 restrictions require separate examination. [CGI arts. 54, 56, 61, 74 and 79–82](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "a9c3993a43e7feb1cb212743ac12875cc98317e608a0df3c255f419eb345b47f",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 12,
+      "exact_old_text": "For art. 62, the overhead denominator means indirect operating/financial costs of ordinary management, excluding purchases, depreciation, provisions and exchange losses, not all expenses. Apply its combined fee cap only after proving the precise services and related-party scope. Do not treat the cap as permission to deduct unsupported fees.",
+      "sha256": "1ede2a2493a3d5cf5b04917069cd5ecd150552c5014ba9d9c82066cabd38576a",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 13,
+      "exact_old_text": "Compute the MFP separately, with its rounding, floor, exclusive-activity rule, CGA reduction and first-period exemption. Pay the larger of ordinary IS and applicable MFP, then reconcile valid advances and credits. Art. 92 carries excess advances forward, permits refund on cessation, and allows allocation to other direct State taxes on request. IRCM withheld on investment income included in taxable profits is creditable under arts. 93–94; unused credit carries forward, with cessation refund/requested offset rules, but an IS-exempt company's IRCM credit is acquired by the Treasury. [CGI arts. 87–94](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "6198d644a4c8425612769e9d4cb21c01f52efe0ed4ac52da13ee01fa07920a8e",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 14,
+      "exact_old_text": "## Deadlines and filing",
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 15,
+      "exact_old_text": "1. Close ordinary annual accounts at 31 December. A new company created no later than 30 June closes that year; one created later can close at the next year's 31 December. The first period rules affect both tax and exemption periods (art. 49).\n2. Prepare the administration's annual taxable-result declaration and art. 97 attachments: applicable normal SYSCOHADA/special-framework financial statements; tax package; detailed expense/income accounts; annual salary statement; commissions, brokerage, rebates, fees, royalties and other third-party remuneration; associates' remuneration/profit shares and other income; depreciation/provisions; premises rents with landlords; and bad debts identifying debtor, origin date, initial/outstanding/write-off amounts, guarantee nature/value, transfer date and collection stage. Financial statements are supplied in three copies under the statute. For statutory-audit companies obtain certified statements and execution attestation; otherwise check the visa requirement. Arrêté 2025-0148 art. 19 confines the transitional visa procedure to RNI companies. Obtain an appropriately authorised local professional for this step; the Guide is not a visa report. [CGI art. 97 and reproduced order arts. 18–19](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).\n3. File by 30 April following the closed year; insurance/reinsurance companies use 31 May. A 2026 calendar-year profit return therefore falls in 2027. DGE taxpayers attach the transfer instruction where applicable. Pay the balance by the declaration deadline (arts. 92, 95).\n4. During the year pay equal IS advances by 15 July, 15 October and 15 January; do not use the old Guide's 20th. Reconcile the payment against the taxpayer account. The statutory payee is the competent tax receiver; payment is governed by art. 671. [CGI arts. 91–92, 95](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "ee313caa59cf40e067d0cdc8a68e7506b05d111c213fe638ff606f5665203e05",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 16,
+      "exact_old_text": "The DGI's public source index links eSINTAX, but current return IDs, box numbers, upload sequence, confirmation and payment-reference screens have not been verified. Do not describe these preparation steps as a completed filing workflow. Industrial companies, mobile operators, importers, wholesalers and semi-wholesalers also check the customer-list obligation in art. 100; the covered customer threshold is XOF 5 million excluding tax. [CGI art. 100](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "c0d4b4ba39fa4e8c831282f3569a6b224fe486c9def19457ee47ac30db6b26d0",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 17,
+      "exact_old_text": "## Penalties and interest",
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 18,
+      "exact_old_text": "For a missing/late profit declaration, art. 754(1) imposes 10% of duties, minimum XOF 50,000; recurrence raises it to 25% with the same minimum. After formal notice, the filed-return branch is 25%, rising to 50% for the stated recurrence/assessment conditions. No filing within thirty days after notice triggers 100%, minimum XOF 100,000 (art. 754(2)–(3)). Incorrect bases bring 25% for good faith, 50% for established bad faith or 100% for fraud, doubled on recurrence (art. 755). Late/insufficient payment brings 10% plus 1% per month or fraction (art. 756). For the specified missing annual attachments/obligations, art. 757(1) sets XOF 200,000; art. 757(2) raises that fine to XOF 500,000 for loss-making taxpayers and XOF 1,500,000 for convention businesses or businesses with a temporary exemption regime. Separate transfer-pricing branches in art. 757(2)–(4) are not this ordinary-attachment fine; art. 758 imposes 25% for late advance declarations or 50% on assessment. Do not assume these sanctions replace one another or add them without examining the facts. [CGI arts. 754–758](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "405b30734a9566f6a1b5247acaa516f7c65c040e5d5267727f1c3d15a8e2dcca",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 19,
+      "exact_old_text": "## Cross-border points",
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 20,
+      "exact_old_text": "Art. 46 taxes Burkina-operated enterprise profits and profits allocated by treaty. Residence is based on seat/effective management; non-resident PEs and a complete commercial cycle are separate statutory routes, subject to treaty provisions. Detailed art. 47 PE tests and treaty-specific attribution remain outside this calculation. Use [transfer pricing](bf-transfer-pricing.md) for controlled transactions and [non-resident services withholding](bf-nonresident-services-withholding.md) for that withholding job. A dividend/interest rate in the table is not a treaty entitlement or a complete distribution-return procedure. [CGI arts. 46–47, 140–141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).",
+      "sha256": "daa3369ba86a065e241d0ef780f7e03dcdc8bb7cf0dacb716e22d577f3dee9ca",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 21,
+      "exact_old_text": "## Two worked examples that recompute",
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 22,
+      "exact_old_text": "**Ordinary IS and balance.** An established non-CGA RNI company has adjusted profit XOF 12,345,678 and turnover excluding VAT XOF 200,099,999. Rounded profit is XOF 12,345,000; IS is XOF 3,394,875. MFP is XOF 1,000,000 after turnover rounding and floor. IS prevails. If prior-year IS was XOF 4 million, each current advance is XOF 1 million and the balance, with no other credits, is XOF 394,875.",
+      "sha256": "9caf7fab14eb025ece17d62813ae69874431b7bbcf80208c593fa80bbbf1d9f1",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 23,
+      "exact_old_text": "```oa-check\nname: Ordinary company IS and advances\ninputs:\n  profit: 12345678\n  turnover: 200099999\n  prior_tax: 4000000\nsteps:\n  rounded_profit: floor(profit / 1000) * 1000\n  is_tax: rounded_profit * 0.275\n  mfp: max(floor(turnover / 100000) * 100000 * 0.005, 1000000)\n  tax: max(is_tax, mfp)\n  each_advance: prior_tax * 0.75 / 3\n  balance: tax - each_advance * 3\nexpected:\n  rounded_profit: 12345000\n  is_tax: 3394875\n  mfp: 1000000\n  each_advance: 1000000\n  balance: 394875\n```",
+      "sha256": "29698a1c3882f2952f1eda2c94320cf215727c180ab1c9000d81308a0551c02c",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 24,
+      "exact_old_text": "**Decision: which amount controls?** For an established non-CGA RNI company, turnover XOF 60 million and taxable profit XOF 1 million produce IS XOF 275,000 and MFP XOF 1 million. The MFP controls. For otherwise identical first-operating-period facts, art. 90 removes MFP, so IS XOF 275,000 controls. The XOF 725,000 difference is an exemption effect, not an optional tax election.",
+      "sha256": "06496ab59d73029199c59f919ca589a548a2c462da9d23e4ee50454622d0fd24",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 25,
+      "exact_old_text": "```oa-check\nname: Established versus first-period minimum\ninputs:\n  profit: 1000000\n  turnover: 60000000\nsteps:\n  is_tax: profit * 0.275\n  established_mfp: max(turnover * 0.005, 1000000)\n  established_tax: max(is_tax, established_mfp)\n  first_period_tax: max(is_tax, 0)\n  difference: established_tax - first_period_tax\nexpected:\n  established_tax: 1000000\n  first_period_tax: 275000\n  difference: 725000\n```",
+      "sha256": "709fa766e5a26e392ba3cc706deea42f98b72f4cc14e5e61cb78e3992155ea0b",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 26,
+      "exact_old_text": "## Ask the client first",
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 27,
+      "exact_old_text": "- What is the legal form, election history and actual activity, including any special exemption?\n- Which regime applies, and is CGA membership effective for this period?\n- When did operations start and which accounting period is being closed?\n- What are turnover excluding VAT, adjusted profit, related-party/head-office charges and gift evidence?\n- Which advances, withholding credits and losses are supported by the tax account?\n- Are there foreign operations, distributions or insurance/reinsurance activities?",
+      "sha256": "cdddec1380bfc8bca8b47220f00f3e598864f7a0e5bdfa63acb3991b183bca60",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 28,
+      "exact_old_text": "## Sources",
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 29,
+      "exact_old_text": "| Source | Actual reading scope | Read on |\n|---|---|---|\n| [DGI official CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | Edition statement; arts. 42–56, 61–62, 71, 74, 79–82, 85–95, 97, 100, 140–141, 196, 671 and 754–758; reproduced 2025-0148 visa order, especially arts. 18–19. Relevant provisions and neighbouring conditions read, not the entire code. | 2026-11-01 |",
+      "sha256": "5654c0f1cd9ab9add892f8346cf595d4b2e4d4ca09c7d11318850b6eb8ecaf04",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 30,
+      "exact_old_text": "Not yet confirmed: current forms, boxes, portal steps, payment confirmation/reference and any new administrative deadline concession; complete specialist exemptions, provision/loss schedules, PE attribution, treaty relief, IRCM scope for capital reimbursements and directors' tantièmes/attendance fees, distribution filing procedure and sanction cumulation. Independent review of this rewrite is pending; no accountant has attested to it.",
+      "sha256": "9838b6b1b4a2bcb65194ed1d9f2d09044cea087b1d5007f0cefc70f6e617c083",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 31,
+      "exact_old_text": "<!-- openaccountants-cta-block -->",
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 32,
+      "exact_old_text": "---",
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 33,
+      "exact_old_text": "## Talk to a verified accountant",
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 34,
+      "exact_old_text": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 35,
+      "exact_old_text": "- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network",
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    },
+    {
+      "predecessor_block": 36,
+      "exact_old_text": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/burkina-faso/bf-corporate-tax.md same section",
+      "disposition": "Exact retained block"
+    }
+  ],
+  "migration_receipt_json_sha256": "110a461789b0dc0021adbbd6f0c41d41f9f96f7a727868b9ad11fd2817d70ca4",
+  "migration_result": "M01 ordinary12.5%/Burkina bonds6% located C13/C14; M02 half6.25%/three periods/42months/community3% located C15/C16; complete conditions checked against 140-141. No substantive old topic discarded.",
+  "corporate_IS_credit_exact": true,
+  "ten_other_Guides": "Every byte checked in preservation-review.json; this is preservation, not re-review of their previously accepted tax content.",
+  "lost_content_restored": 0
+}

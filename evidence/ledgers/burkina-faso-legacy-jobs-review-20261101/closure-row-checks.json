@@ -1,0 +1,312 @@
+[
+  {
+    "id": "F1",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F2",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F3",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F4",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F5",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F6",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F7",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F8",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F9",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F10",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F11",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F12",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "repaired and source rechecked",
+    "findings_closed": [
+      "R2"
+    ]
+  },
+  {
+    "id": "F13",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F14",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F15",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F16",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F17",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F18",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F19",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F20",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "F21",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V1",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V2",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "repaired and source rechecked",
+    "findings_closed": [
+      "R3"
+    ]
+  },
+  {
+    "id": "V3",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V4",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V5",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V6",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V7",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "repaired and source rechecked",
+    "findings_closed": [
+      "R3"
+    ]
+  },
+  {
+    "id": "V8",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "V9",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P1",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P2",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P3",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P4",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P5",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P6",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P7",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P8",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P9",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P10",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P11",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P12",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P13",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "repaired and source rechecked",
+    "findings_closed": [
+      "R1"
+    ]
+  },
+  {
+    "id": "P14",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P15",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P16",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P17",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P18",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  },
+  {
+    "id": "P19",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "repaired and source rechecked",
+    "findings_closed": [
+      "R3"
+    ]
+  },
+  {
+    "id": "P20",
+    "verdict": "accepted bounded source fidelity",
+    "change_status": "exact original row retained; initial source check carries forward",
+    "findings_closed": []
+  }
+]

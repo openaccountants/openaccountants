@@ -1,0 +1,37 @@
+{
+  "content_commit": "2eb0e12e4d726f773782721b91f1cfeac78e58ca",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "date": "2026-11-01",
+  "shape_checks": {
+    "guides": 3,
+    "checks_each": 15,
+    "failures": 0
+  },
+  "examples": {
+    "files": 3,
+    "blocks": 6,
+    "failures": 0,
+    "missing": 0
+  },
+  "changed_validator": {
+    "selected_markdown_paths": 4,
+    "guides_checked": 3,
+    "warning_groups": 0,
+    "passed": true
+  },
+  "strict_committed_metadata_audit": {
+    "source_guides": 3,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "committed_diff_whitespace_passed": true,
+  "receipt_sha256": {
+    "examples.txt": "468b9754d01c9692e025f3bb55fb310e4138c78e87b8934093e78592f6afaa38",
+    "skill-checks.txt": "eab3ab395687b3c1d017d9ccf895534d931480eb161ae42015d3ca0499c4b044",
+    "sync-audit.txt": "285c06c16232e85f6cf4bde9dc36c9ccc61e32acb3e2e65bb60f781aa9a0c1c8",
+    "validate-changed.txt": "b17ee3a8c3c08951c968e9b2ddd7282ce4d2747583c231eaf19a50b9695f7338"
+  },
+  "independent_review": "pending",
+  "push_pr_merge": "none"
+}

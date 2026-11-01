@@ -1,0 +1,7 @@
+{
+  "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md",
+  "before_sha256": "1a84220013681f312000ee7457a05d8474184f513cdfb7063c7c524b3b76ca6c",
+  "after_sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+  "change": "remove one trailing blank line; no rule/body change",
+  "validator_warning": "New property job lies outside the seven domain slug classifier; pack README routes it explicitly and all seven existing domains remain partial."
+}

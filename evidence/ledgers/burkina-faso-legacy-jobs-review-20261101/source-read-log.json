@@ -1,0 +1,118 @@
+{
+  "read_date": "2026-11-01",
+  "pdf_skill": "/Users/michaelcutajar/.codex/plugins/cache/openai-primary-runtime/pdf/26.1020.11618/skills/pdf/SKILL.md",
+  "source_identities": [
+    {
+      "file": "cgi-2026.pdf",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "actual_bytes": 3933091,
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "writer_identity_matches": true
+    },
+    {
+      "file": "formation-auscgie.pdf",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "actual_bytes": 16313466,
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "writer_identity_matches": true
+    }
+  ],
+  "cached_actual_reads": {
+    "formation-auscgie.pdf": {
+      "physical_pages": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        28,
+        36,
+        76,
+        77,
+        78,
+        93,
+        95,
+        96,
+        207,
+        208
+      ],
+      "visual_pages": [
+        95,
+        96
+      ],
+      "visual_files": "/tmp/bf-legacy-review/ohada-095.png and ohada-096.png; not public repository",
+      "important_text_layer_omission": "Single-shareholder SA sentence on physical page 95 is visible in actual page image; article 389 quarter line and continuation on page 96 also visually checked."
+    },
+    "cgi-2026.pdf": {
+      "physical_pages": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        19,
+        23,
+        24,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        44,
+        45,
+        46,
+        47,
+        49,
+        50,
+        53,
+        54,
+        55,
+        63,
+        67,
+        90,
+        95,
+        96,
+        99,
+        100,
+        101,
+        130,
+        131,
+        132,
+        133,
+        163,
+        213,
+        214,
+        215,
+        220,
+        221,
+        225,
+        226,
+        227,
+        228,
+        229,
+        303,
+        304,
+        309
+      ],
+      "scope": "Selected provisions, adjacent conditions and routing headings only; full volume and all specialist/2026 implementation branches not read."
+    }
+  },
+  "failed_check_expanded_research": {
+    "trigger": "R1: no-cumulation claim not supported by cited CGI articles 196/228",
+    "official_url": "https://www.finances.gov.bf/fileadmin/user_upload/storage/fichiers/Rapport_EDF_2023_VF.pdf",
+    "document": "Ministry of Economy and Finance, tax expenditure evaluation, fiscal year 2023, September 2024 final version",
+    "actual_read_scope": "Web PDF parsed text: cover identity and full separate TPA measure cards, zero-based pages 38 and 144 (physical pages 39 and 145).",
+    "verified_short_quotes": [
+      "CGI Art. 196.2",
+      "CGI Art. 228.2"
+    ],
+    "result": "Separate tax reduction and base abatement cards; does not establish a no-cumulation rule or final 2026 interpretation. Keep unresolved rather than choose either result.",
+    "limits": "Native curl failed DNS in sandbox, then authorised ordinary TLS fetch failed SSL connection; no bypass used. Web PDF text was available. Web page screenshots failed cache miss. No local full-payload hash or visual card inspection is claimed.",
+    "other_search_hits": "DGI online code repeats statutory provisions. Secondary commercial/public summaries not relied upon; additional 2021 DGI report timed out."
+  }
+}

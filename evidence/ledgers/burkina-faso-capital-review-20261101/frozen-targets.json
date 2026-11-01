@@ -1,0 +1,86 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "actual_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.json",
+      "sha256": "507c9e10269c6ff9e856e822e14ffc506fa39f6b914ccf3af9cf97398b740d61",
+      "git_blob": "382553893fce4149f2689ba723e6ec0163c03624"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.md",
+      "sha256": "65177d2dba4b2cad8107e0f08ff36236bc3ce99a70b2ebc3571162fbea6dbdd6",
+      "git_blob": "2b16febe5d2c5ccb38cc7232e5413ad7d9e14b2d"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/committed-validation.json",
+      "sha256": "c44dbdb2935365785150c8170350fecf61a0129447ba1b9f75683d1ca79bb563",
+      "git_blob": "957290d42fe2cf4be1afcd60284c3fb86b4d9060"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/format-repair.json",
+      "sha256": "705af2b1b9ab453d5b935069d4648390d8e2d700b5048a9e4eebc8ccb1ae425b",
+      "git_blob": "a31349af67d3c9019c5d7ee9372bbce961c2edf9"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/freeze-receipt.json",
+      "sha256": "42925ddfaaffa15eebde9b1c9887d94828c2597c7bef7f8a0a16a60fc1f575af",
+      "git_blob": "d7179e69ac1dac86a96343b464be5ece6fab8d20"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/old-topic-destinations.json",
+      "sha256": "110a461789b0dc0021adbbd6f0c41d41f9f96f7a727868b9ad11fd2817d70ca4",
+      "git_blob": "4f3bf0bd36f927dc1732e5d02ca88a5c159d4b16"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/old-topic-destinations.md",
+      "sha256": "b657af9659e493c2e6153659ac6b01668ebdf94e23138309fc9bde5f162f2af2",
+      "git_blob": "9c93001a650eba51a033de8782a9fb2ab5e269c6"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/preservation-baseline.json",
+      "sha256": "ff8abec84bdcdccaccb8293bc1d754d3c31ba3b25aff7b2adcb255c46a62fb48",
+      "git_blob": "f10823f9f2c8e396f817a9a2b4e51ba1dbcd40db"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/readme-addition.json",
+      "sha256": "8f4ebdf9b784845bb4185963333bd35706b9702905cbdf862b47971c6fd9cc75",
+      "git_blob": "16415491b61bf082dafd35b0f4ad24242ffac31d"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/source-identities.json",
+      "sha256": "937264e74c6c83a0e6ff717928fb3bcac44923e4a82b2c0c60b83d5603324af6",
+      "git_blob": "98031cd81df208065830847609a0c09be9f45bf0"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-check.py",
+      "sha256": "34aa2814dcf0cac871fc0ae66796aab1b6f8f0c51fbd6ec9fbd7d57a6fcc6587",
+      "git_blob": "910205be47d2e0d28b7a414381e9116f4efed39f"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-checks.json",
+      "sha256": "c2407154c252522ea32ddd92a11618b21b07f364b970d0f9f7574b5600376d92",
+      "git_blob": "0549b87401335ca98ec984c23d93fb61bed0496b"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-20261101/writer-record.md",
+      "sha256": "aa11f8b8f6fb832433365ad2b3d2d8ea7273a3ee417e2c60bd7c069643ada71f",
+      "git_blob": "c22d930e608e67fd0737262b13dd0f36695d3e63"
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "git_blob": "afd66cedeae720f1b7756af2146377ab31c1105c"
+    },
+    {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "sha256": "55a386eae02d92195cce7d04e3fd2dce82f18edbdb6f1c41a396da1dd3a8e7eb",
+      "git_blob": "1be2d5572ac7c9ff9f1804cf038a1c74865c0514"
+    },
+    {
+      "path": "skills/burkina-faso/bf-investment-income.md",
+      "sha256": "530f1a6eb5c3a3ef37536edf262f026f2d0b9998019686bd1f30f2baa26ecaab",
+      "git_blob": "df0b2f3767c4cd26ae3cdf8b07189597ee0e7f35"
+    }
+  ]
+}

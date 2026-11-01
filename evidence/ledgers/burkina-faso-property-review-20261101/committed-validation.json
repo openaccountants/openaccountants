@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "ddf4eafb5d3e7adef764351d8467430d557fff19",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_only_validator": {
+    "guides": 9,
+    "result": "pass",
+    "warning_groups": 1,
+    "warning": "New property slug is outside seven-domain classification"
+  },
+  "strict_sync": {
+    "guides": 9,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "new_guide_examples": {
+    "files": 1,
+    "blocks": 2,
+    "failures": 0
+  },
+  "new_guide_shape_checks": 15,
+  "whole_base_whitespace": "pass",
+  "scope": "Conditional company-property-tax source review only; earlier accepted review history preserved."
+}

@@ -1,0 +1,47 @@
+{
+  "finding": "F01",
+  "state": "closed",
+  "decision": "Conditional source fidelity accepted for the selected new IRCM job and two corporate migrated rate rows, combining the initial 60-row review and this focused closure.",
+  "review_date": "2026-11-01",
+  "initial_frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "accepted_repaired_sha256": {
+    "skills/burkina-faso/bf-investment-income.md": "8473b609414d9399743f51608091dfa8250217e37ede31aeb59532b0fc990a2b",
+    "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.md": "03f7c107692a0b77113b03a74450a4b21bf4c60c73402ad8f7930e0429047192",
+    "evidence/ledgers/burkina-faso-capital-20261101/bf-investment-income.json": "a3f2a9cf89a3696e34ebcdff425e041fe8ed7da55478d4ab507407f6bbb07b51"
+  },
+  "accepted_corporate_sha256": "55a386eae02d92195cce7d04e3fd2dce82f18edbdb6f1c41a396da1dd3a8e7eb",
+  "source_article": "CGI article 610(1)-(2), physical/printed pages 260-261",
+  "source_pdf_sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+  "semantics": [
+    "Presenter presumed coupon owner absent contrary proof.",
+    "A third-party coupon presenter can supply a list naming presenter and true owners, their real domiciles and each owner’s coupon amount.",
+    "The paying institution must annex that list if supplied."
+  ],
+  "added_quote_fragments": [
+    "Les coupons présentés sont, sauf preuve contraire, réputés propriété du requérant.",
+    "il a la faculté de remettre à l’établissement payeur une liste",
+    "L’établissement payeur annexe cette liste au relevé"
+  ],
+  "residual_findings": [],
+  "original_review_evidence": "Preserved. The original open F01 finding remains historical; this separate closure resolves it at the repaired hashes.",
+  "permitted_status_replacements": [
+    {
+      "path": "skills/burkina-faso/bf-investment-income.md",
+      "replace_exact": "This new job and its two migrated corporate rows are pending independent source review; no accountant has attested to them.",
+      "with_exact": "This new job and its two migrated corporate rows have completed independent conditional source review, with one correction closed; no accountant has attested to them.",
+      "expected_occurrences": 1,
+      "accepted_before_status_sha256": "8473b609414d9399743f51608091dfa8250217e37ede31aeb59532b0fc990a2b",
+      "expected_after_status_sha256": "04f67d4c4626e77939a0f85f02e9ebea240d5fe3bcfeebb1fec9052207094df2"
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "replace_exact": "and two executable classification/distribution cases are pending independent source review.",
+      "with_exact": "and two executable classification/distribution cases have completed [independent conditional source review](../../evidence/ledgers/burkina-faso-capital-review-20261101/closure-review.md), with one correction closed.",
+      "expected_occurrences": 1,
+      "accepted_before_status_sha256": "d95e92f9a7670683e883e10a084ff2ce718383b75d6ce57709ee63917530020d",
+      "expected_after_status_sha256": "bcbbf5ba68296cb8c31f1dbcbaede69e40b38bcfcee8af91f7911d8ba5123c79"
+    }
+  ],
+  "scope_limits": "All seven domains remain partial and all original holds remain. No accountant attestation, currentness or amendment-chain certificate, country completion, merge or issue-closure approval.",
+  "reviewer_mutations": "Only new closure evidence; no content or status edits, commit, push or GitHub mutation."
+}

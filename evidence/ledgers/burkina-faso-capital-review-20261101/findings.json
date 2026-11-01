@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+      "finding_id": "F01",
+      "priority": "P2",
+      "state": "open",
+      "path": "skills/burkina-faso/bf-investment-income.md",
+      "line": 72,
+      "ledger_row": "C49",
+      "article": "CGI610(2)",
+      "source_pages": [
+        260,
+        261
+      ],
+      "source_pdf_sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "problem": "Unconditional third-party coupon owner/list requirement omits statutory ownership presumption and facultative list submission. Annexation is mandatory if list supplied.",
+      "repair": "State presenter ownership presumption absent contrary proof; presenter can supply true-owner list with identifying details and coupon amounts; payer annexes that list if supplied. Correct C49 while preserving writer originals and request independent closure."
+    }
+  ],
+  "other_fidelity_repairs": 0,
+  "review_acceptance": "Withheld pending F01 correction and hash-bound closure",
+  "accountant_attestation": false
+}
