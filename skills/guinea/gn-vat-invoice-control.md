@@ -1,21 +1,22 @@
 ---
 name: gn-vat-invoice-control
-description: "Guinea 2026 VAT invoice-field and arithmetic control under the full replacement of CGI 383 VI; taxability, rates, deduction entitlement and return filing are separate unresolved jobs."
+description: "Guinea VAT invoice-field and arithmetic control using the full March 2026 replacement of CGI article 383 VI. Use it to check the sixteen fields, their conditional branches, source identifiers and totals after independently establishing invoice duty and the governing version, including any October rectification effect. Registration, taxability, the correct rate and input-credit entitlement are separate jobs. The examples assume that the March version governs and use independently validated tax amounts rather than establishing a VAT rate. If currentness is unconfirmed, produce hypothetical March-text analysis only and stop before a live compliance conclusion or a legally required correction request. Filing, sanctions and wider VAT coverage remain partial."
 jurisdiction: GN
 category: international
 tax_year: 2026
 tax_year_notes: "Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed."
 tier: 2
 last_updated: 2026-11-01
-version: 1.0
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+version: 1.1
 ---
 
-# Guinea VAT invoice control v1.0
+# Guinea VAT invoice control v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.
 
 ## Who this applies to
+
+**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.
 
 Use to check a Guinea VAT invoice governed by CGI 383 VI after independently establishing that the invoicing duty applies. Article 13 of Law L/2026/010/CNT of 31 March 2026 replaces the full list of mandatory invoice fields. This Guide checks those fields and reconciles amounts; it does not determine VAT registration, taxability, the correct rate or input-credit entitlement. The official bundle contains the signed promulgation decree. Periods before the replacement and the final effect of the October rectifying bill remain unresolved. [Law art. 13, decree arts. 1–2, PDF pp. 20–21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).
 
@@ -44,6 +45,7 @@ The list has sixteen numbered requirements, some conditional. There is no moneta
 
 ## The base
 
+0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.
 1. Obtain the invoice, contract/order, supply or advance evidence, supplier registration details and independently established VAT treatment. Check invoice date and supply/advance dates against the source records.
 2. Check items 1°–3° and 7°–14° line by line, applying the date and exemption conditions in the table. Match the unique number against the supplier's chronological sequence where the records are available; a number printed on one invoice cannot prove continuity.
 3. Establish whether customer liability or a fiscal representative applies from a separately verified conclusion. Apply 4°–6° only when their stated conditions hold. The cross-referenced articles are not reproduced by this amendment, so this Guide cannot decide their scope.
@@ -64,6 +66,8 @@ The opened amendment sets invoice contents. It does not establish an invoice pen
 Items 4°–6° expressly address recipient liability and fiscal representatives, with references to CGI 373 bis and 373 quinquies. Check the required identifiers and liability reference when a separately verified cross-border conclusion triggers them. This list alone does not prove that every imported service is reverse charged or every foreign supplier must appoint a representative. [CGI 383 VI 4°–6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).
 
 ## Two worked examples that recompute
+
+Both cases assume the March version governs the relevant invoice. Without confirmed governing-version evidence, they are hypothetical arithmetic illustrations only and do not require a live invoice correction.
 
 First, two lines have net amounts of GNF 20,000,000 and GNF 30,000,000. The independently validated tax amounts supplied to this control are GNF 3,600,000 and GNF 5,400,000. Net total is GNF 50,000,000, total VAT is GNF 9,000,000 and gross total is GNF 59,000,000. The example does not establish a statutory VAT rate.
 
@@ -102,7 +106,7 @@ expected:
 
 ## Ask the client first
 
-Obtain the invoice and supporting supply/advance documents; supplier and customer identifiers; the separately verified registration/tax treatment and rate; any recipient-liability or representative conclusion; any debit-basis election or margin-regime evidence; and the invoice sequence and correction history.
+Obtain evidence establishing the governing version for the invoice, including any October effect; the invoice and supporting supply/advance documents; supplier and customer identifiers; the separately verified registration/tax treatment and rate; any recipient-liability or representative conclusion; any debit-basis election or margin-regime evidence; and the invoice sequence and correction history.
 
 ## Sources
 

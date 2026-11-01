@@ -12,3 +12,7 @@ Read on 2026-11-01. Sources are actual opened official documents, not search sni
 | 6 | Base: rental-value denominator is annual, not asset purchase price; distinction actual/estimated preserved | CGI265 full replacement | https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf | « valeur locative annuelle estimée » | 2026-11-01 |
 
 [Complete legacy-topic destination map](gn-old-topic-destinations.md).
+
+## Repair control after independent review
+
+The Guide now requires evidence that the March replacement governs the actual period/invoice, including any October rectification effect, before live use. Otherwise its only permitted output is hypothetical March-text analysis, with no live compliance, filing/payment or legally required correction conclusion. This is a workflow stop arising from an unresolved source chain, not a new assertion about October legislation. The existing legal rows and numerical rules are unchanged.
