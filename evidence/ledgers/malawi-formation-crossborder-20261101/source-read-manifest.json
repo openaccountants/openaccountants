@@ -7,16 +7,16 @@
     "pdf_bytes": 822241,
     "actually_read_scope": [
       "Taxation Act 11; pages 19",
-      "Taxation Act 123(1)\u2013(3); pages 80\u201381",
+      "Taxation Act 123(1)–(3); pages 80–81",
       "Taxation Act 123(3); pages 81",
       "Taxation Act 124; pages 81",
       "Taxation Act 27(1)(a); pages 25",
-      "Taxation Act 27(1)(b)\u2013(c); pages 25\u201326",
+      "Taxation Act 27(1)(b)–(c); pages 25–26",
       "Taxation Act 27(1)(d); pages 26",
       "Taxation Act 27(4); pages 26",
       "Taxation Act 27(5); pages 26",
-      "Taxation Act 27(6)\u2013(7); pages 26",
-      "Taxation Act 2; pages 14\u201315",
+      "Taxation Act 27(6)–(7); pages 26",
+      "Taxation Act 2; pages 14–15",
       "Taxation Act 76A(1); pages 54",
       "Taxation Act 76A(2); pages 54",
       "Taxation Act 76A(3); pages 54"
@@ -55,7 +55,7 @@
     "pdf_sha256": "116a8df31a5ecef5f39762ca51ebf2df41db90df8257da8fbf126a42e6cff3bb",
     "pdf_bytes": 898091,
     "actually_read_scope": [
-      "Act 12/2024 ss 1,4; pages 1\u20132"
+      "Act 12/2024 ss 1,4; pages 1–2"
     ],
     "whole_document_read": false,
     "reader_sha256": "410caeb10889afe7d8823a4cd41565f92fc47dab86bcccb927fa143d4e121b05"
@@ -67,7 +67,7 @@
     "pdf_sha256": "7d310218de44911d3a7cdbe610769c37fc2a50339b1bf3d8eb38c33d981d489f",
     "pdf_bytes": 87202,
     "actually_read_scope": [
-      "Act 14/2025 s 3; pages 1\u20132"
+      "Act 14/2025 s 3; pages 1–2"
     ],
     "whole_document_read": true,
     "reader_sha256": "b18e8b06f2cc7183b226bc01c96cc0864301e05bd2704c831be956dbe84c3e50"
@@ -79,7 +79,7 @@
     "pdf_sha256": "7b88a2aedc98847d243abfcd651869b5ff106df71e06f9cf5f0a9542a306fc46",
     "pdf_bytes": 164670,
     "actually_read_scope": [
-      "Act 36/2025 ss 3\u20136; pages 3\u20135"
+      "Act 36/2025 ss 3–6; pages 3–5"
     ],
     "whole_document_read": true,
     "reader_sha256": "ef2e34c30383ab72355e287d447c0b2ac681b50bd7b7ca3d8df98417c5747e84"
@@ -92,11 +92,11 @@
     "pdf_bytes": 396815,
     "actually_read_scope": [
       "TAA 129(1); pages 80",
-      "TAA 21\u201323; pages 20\u201321",
-      "TAA 28(2); pages 23\u201324",
-      "TAA 4(1)\u2013(2); pages 11",
-      "TAA 4(6)\u2013(7); pages 12",
-      "TAA 73(1)\u2013(6); pages 52"
+      "TAA 21–23; pages 20–21",
+      "TAA 28(2); pages 23–24",
+      "TAA 4(1)–(2); pages 11",
+      "TAA 4(6)–(7); pages 12",
+      "TAA 73(1)–(6); pages 52"
     ],
     "whole_document_read": false,
     "reader_sha256": "8168b6730e81197887f91051b4fcf6d2efb487fbda08263108c0ac6fee578f89"
@@ -110,44 +110,44 @@
     "actually_read_scope": [
       "Companies Act 15/2013 s 1; pages 16",
       "Companies Act 162; pages 94",
-      "Companies Act 164\u2013166; pages 95",
-      "Companies Act 2(5); pages 24\u201325",
-      "Companies Act 23, 63\u201364; pages 33\u201334,51",
+      "Companies Act 164–166; pages 95",
+      "Companies Act 2(5); pages 24–25",
+      "Companies Act 23, 63–64; pages 33–34,51",
       "Companies Act 245; pages 139",
-      "Companies Act 246\u2013249; pages 139\u2013140",
+      "Companies Act 246–249; pages 139–140",
       "Companies Act 248; pages 140",
       "Companies Act 24; pages 34",
-      "Companies Act 251; pages 140\u2013141",
+      "Companies Act 251; pages 140–141",
       "Companies Act 253; pages 142",
       "Companies Act 255; pages 142",
       "Companies Act 256; pages 143",
       "Companies Act 25; pages 34",
       "Companies Act 26; pages 34",
-      "Companies Act 28(1)(a)\u2013(c)(ii); pages 34",
-      "Companies Act 28(1)(c)(iii)\u2013(vii); pages 35",
-      "Companies Act 28(2)\u2013(4); pages 35\u201336",
+      "Companies Act 28(1)(a)–(c)(ii); pages 34",
+      "Companies Act 28(1)(c)(iii)–(vii); pages 35",
+      "Companies Act 28(2)–(4); pages 35–36",
       "Companies Act 28(3); pages 36",
       "Companies Act 29; pages 36",
       "Companies Act 2; pages 19",
       "Companies Act 30; pages 36",
-      "Companies Act 31\u201332; pages 36\u201337",
-      "Companies Act 33\u201335; pages 37\u201338",
+      "Companies Act 31–32; pages 36–37",
+      "Companies Act 33–35; pages 37–38",
       "Companies Act 35(2); pages 38",
-      "Companies Act 357\u2013358; pages 204\u2013205",
-      "Companies Act 360; pages 205\u2013206",
+      "Companies Act 357–358; pages 204–205",
+      "Companies Act 360; pages 205–206",
       "Companies Act 361(1); pages 206",
-      "Companies Act 362,365\u2013366; pages 207\u2013208",
-      "Companies Act 45\u201350; pages 41\u201343",
+      "Companies Act 362,365–366; pages 207–208",
+      "Companies Act 45–50; pages 41–43",
       "Companies Act 5,17; pages 26,32",
       "Companies Act 55; pages 45",
       "Companies Act 6(8); pages 27",
-      "Companies Act 65,144\u2013145; pages 51,85\u201386",
+      "Companies Act 65,144–145; pages 51,85–86",
       "Companies Act 66,244; pages 51,138",
       "Companies Act 68,223; pages 52,130",
       "Companies Act 69; pages 52",
       "Companies Act 72; pages 53",
-      "Companies Act 86,137\u2013138; pages 58,82",
-      "Companies Act 87(1)\u2013(4); pages 58"
+      "Companies Act 86,137–138; pages 58,82",
+      "Companies Act 87(1)–(4); pages 58"
     ],
     "whole_document_read": false,
     "original_reproduction": "ICAM hosts original Government Gazette Act15/2013; not narrative commentary",
@@ -169,9 +169,21 @@
     "pdf_sha256": "ebfda9d7b0d2731a0a83f7c5e4683a2b677cdeb348c313f7f8d208661758e680",
     "pdf_bytes": 2617646,
     "actually_read_scope": [
-      "Act 3/2026 ss 11\u201313; pages 1\u20136"
+      "Act 3/2026 ss 11–13; pages 1–6"
     ],
     "whole_document_read": true,
     "reader_sha256": "bd86894dbc75ae2fe8598307712eb58d2109bf9398c74acf257a5a082a629c88"
+  },
+  {
+    "source": "registry-resources",
+    "url": "https://registrargeneral.gov.mw/resources",
+    "read_on": "2026-11-01",
+    "cached_file": "registry-resources.html",
+    "html_sha256": "27bb8849621d41edf4f3da3f8a8be1226a7a63e53102f0f3f928ddc741bcbff0",
+    "html_bytes": 183983,
+    "actually_read_scope": [
+      "Cached public resource-list links and MBRS account/sign-in entry links only. Parent separately inspected these actual anchors during repair; linked resource PDFs/forms were not read by this HTML inspection. No authenticated current fields, fees, portal operation or statutory institutional mandate claimed."
+    ],
+    "whole_document_read": false
   }
 ]

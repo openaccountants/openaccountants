@@ -1,0 +1,63 @@
+{
+  "authority": "closure.json allowed_status_only_reconciliation",
+  "files": [
+    {
+      "file": "skills/malawi/README.md",
+      "before": "16f452f92a4276c2247ecc2d5f7186b43cd602864788c5e544fb019245772b38",
+      "literal_changes": [
+        {
+          "before": "fresh review pending",
+          "after": "conditional source corrections closed",
+          "count": 1
+        },
+        {
+          "before": "These are draft backups awaiting a fresh independent review.",
+          "after": "These draft backups now have independent correction closure for cited-text fidelity only; F4 and currentness acceptance remain open.",
+          "count": 1
+        },
+        {
+          "operation": "append",
+          "before": "",
+          "after": "\nThe [independent formation/cross-border correction closure](../../evidence/ledgers/malawi-formation-crossborder-review-20261101/closure.md) checks all 67 records, 25 old formation units and four computations. Three bounded findings are closed against exact hashes: service-agent eligibility, the foreign-tax-relief gate and registrar HTML source identity. This accepts only the cited-text fidelity of these additions. Every earlier F4, appointed-commencement, current-law, live-use and partial-domain hold remains open. No accountant attestation or current-year/publication acceptance follows.\n"
+        }
+      ],
+      "after": "f8da726c77435a75518a26ce0989df50375dbc8ad0ace9a4f407832bed6deb7f"
+    },
+    {
+      "file": "evidence/ledgers/malawi-formation-crossborder-20261101/writer-record.md",
+      "before": "573bad59133598864fcf4fc3b1b1f48a23c3b4a1ebe9553da74aaef978d4e750",
+      "literal_changes": [
+        {
+          "operation": "append",
+          "before": "",
+          "after": "\nThe [independent formation/cross-border correction closure](../malawi-formation-crossborder-review-20261101/closure.md) checks all 67 records, 25 old formation units and four computations. Three bounded findings are closed against exact hashes: service-agent eligibility, the foreign-tax-relief gate and registrar HTML source identity. This accepts only the cited-text fidelity of these additions. Every earlier F4, appointed-commencement, current-law, live-use and partial-domain hold remains open. No accountant attestation or current-year/publication acceptance follows.\n"
+        }
+      ],
+      "after": "98c3123f7ed9dfc273c7c0a5a956c68483b80d787e725a3240f476bd733b52aa"
+    },
+    {
+      "file": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-company-formation.md",
+      "before": "def49a87303f8cbadb4efa59c2b73017d8b8ad77e5aa3f55f05fd8413b6f9326",
+      "literal_changes": [
+        {
+          "before": "Status: writer draft, independent review pending.",
+          "after": "Status: writer records, independent conditional source corrections closed.",
+          "count": 1
+        }
+      ],
+      "after": "3911f5f1057c531dec32c0a81656c7b9960e524157b167e06a13b240bea6e8f5"
+    },
+    {
+      "file": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-cross-border-tax.md",
+      "before": "dcd4c30a6971b8ef59ffe1265371f7df6410240ac620fdf24bdebd93bfa7b06b",
+      "literal_changes": [
+        {
+          "before": "Status: writer draft, independent review pending.",
+          "after": "Status: writer records, independent conditional source corrections closed.",
+          "count": 1
+        }
+      ],
+      "after": "065c01406280a037c98019e3f5006afd4bcbaf34c521b22655933d50fabecae3"
+    }
+  ]
+}

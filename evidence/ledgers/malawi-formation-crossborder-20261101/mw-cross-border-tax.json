@@ -200,13 +200,17 @@
   {
     "id": "X19",
     "guide_section": "The base",
-    "rule": "No-agreement relief requires the stated domestic connection, proof of tax on the same income and a request; 123(3) caps apply.",
+    "rule": "No-agreement relief applies to a person in Malawi or a person outside Malawi deemed to derive Malawi-source income under 27(1)(c); proof of tax on the same income and a request are required, with 123(3) caps.",
     "source_key": "tax-principal",
     "act_article": "Taxation Act 124",
     "physical_or_printed_pages": "81",
     "url": "https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content",
     "short_exact_original_language_quote": "proves to the satisfaction of the Commissioner",
-    "read_on": "2026-11-01"
+    "read_on": "2026-11-01",
+    "additional_quotes": [
+      "any person in or any person outside Malawi",
+      "terms of section 27(1)(c)"
+    ]
   },
   {
     "id": "X20",
