@@ -1,5 +1,5 @@
 {
-  "status": "Unfinished writer draft; independent review pending",
+  "status": "Initial28source corrections closed; additional2018benefit-interaction hold pending independent delta review",
   "records": [
     {
       "id": "I01",
@@ -307,6 +307,17 @@
       "pdf_pages": "80",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
       "quote": "shall be remitted in United States Dollars",
+      "read_on": "2026-11-01"
+    },
+    {
+      "id": "I29",
+      "section": "The base; Sources",
+      "rule": "FA2018 s12 replaces176(9) with market value of all s23 benefits; older valuation methods not cleared for current payroll until interaction/later chain reconciled.",
+      "article": "FA2018 s12; ITA176(9)",
+      "source_id": "F18",
+      "pdf_pages": "5,printed9",
+      "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2018_1_b96b9c2841.pdf",
+      "quote": "be the market value of all such benefits",
       "read_on": "2026-11-01"
     }
   ],

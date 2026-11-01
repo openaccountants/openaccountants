@@ -97,5 +97,14 @@
     "bytes": 339997,
     "read_on": "2026-11-01",
     "actual_read_scope": "ActualPDFfirstpage/TCCtitleandguidelinesread;wrongdestinationasPAYEformevidence,noTCCoperatingapproval."
+  },
+  {
+    "id": "F18",
+    "file": "Finance_Act_2018_1_b96b9c2841.pdf",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2018_1_b96b9c2841.pdf",
+    "sha256": "a8a4a98eae248227803439af28089c80f48c2cf3f3426fdf6089fea5fb808c22",
+    "bytes": 54714,
+    "read_on": "2026-11-01",
+    "actual_read_scope": "Actual extracted physical5/printed9 s12 replacingITA176(9), with neighbouring s11rental/s13GSTcontext;2017ITA176(9)historicalbenefit-table passage also read. Not entire2018Act. Web reopening502; hash-bound existing official cache used."
   }
 ]

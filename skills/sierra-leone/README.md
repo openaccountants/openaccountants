@@ -11,7 +11,7 @@ covered_by:
   TP: sl-transfer-pricing
   XB: sl-cross-border
 partial:
-  IT-IND: "Source-bound2026 income/PAYE rewrite; independent source corrections closed; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen."
+  IT-IND: "Source-bound2026 income/PAYE rewrite; initial28source corrections closed; new2018benefit-interaction hold independently reviewed; actualformmislink,currentallowance/leave/annualprocedure andfullcurrentchain remainopen."
   IT-CORP: "Source-bound2026 corporate rewrite; independent source corrections closed; MAT schedule/currentness, full deductions/regimes and return fields remain open."
   VAT: "Existing 2025 Guide retained;2026 GST/digital, input, invoicing and filing changes not yet reconciled."
   SC: "NASSIT source-bound2026 rewrite,28ledger rows; source review closed; later amendments/exemptions/ceiling and current payment implementation remain unresolved."
@@ -49,6 +49,10 @@ The corporate delta maps all15oldtopics in [its preservation record](../../evide
 
 The new cross-border workpaper has [18 grouped source-ledger records](../../evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md); its presence does not close XB.
 
-The income/PAYE rewrite maps [all12oldtopics](../../evidence/ledgers/sierra-leone-income-20261101/old-topics.md) and records [28groupedsource rules](../../evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md). Its actual PAYE-form link failure is explicit, not treated as a completed filing method.
+The income/PAYE rewrite maps [all12oldtopics](../../evidence/ledgers/sierra-leone-income-20261101/old-topics.md) and records [29groupedsource rules](../../evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md). Its actual PAYE-form link failure is explicit, not treated as a completed filing method.
 
 Income/PAYE independent review checked all28groupedrules,12oldtopics and bothcases. Four corrections closed against the [exact repaired candidate](../../evidence/ledgers/sierra-leone-income-review-20261101/closure.json): domestic-assistant valuation, complying-fund deduction scope, employer annual-statement timing and monthly penalty classification. This accepts conditional source-reference work only; full2026chain and live forms remain open.
+
+A subsequent actual2018Act read identified the all-benefits market-value amendment in s.176(9). The added I29 row explicitly holds its interaction with older valuation methods; a narrow independent delta review is accepted for the exact source-bound hold. Earlier28-row acceptance stays bound to its original hashes and is not silently extended.
+
+The [I29 delta acceptance](../../evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/review.md) verifies the added2018source interaction, preserves the prior28rules and bothcases, and leaves all currentness/filing holds open.

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "F18",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Finance_Act_2018_1_b96b9c2841.pdf",
+    "sha256": "a8a4a98eae248227803439af28089c80f48c2cf3f3426fdf6089fea5fb808c22",
+    "bytes": 54714,
+    "actual_read_scope": "Cached official PDF physical4-6, printed6-11 text read including s12 replacement176(9), neighbouring rental/GST provisions; physical5 freshly rendered and visually read. Source says ALL benefits in kind in s23, market value during assessment year. No fresh HTTP download or independent 502 attempt claimed.",
+    "read_on": "2026-11-01"
+  },
+  {
+    "id": "ITA",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+    "bytes": 900613,
+    "actual_read_scope": "Cached unofficial2017 consolidation physical98-101 read around ss175-176, complete historical176(9) lower-of-value table ending2003/2004 and following FirstSchedule boundary. s23 original measures already independently read in initial review.",
+    "read_on": "2026-11-01"
+  }
+]
