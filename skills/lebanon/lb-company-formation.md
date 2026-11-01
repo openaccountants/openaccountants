@@ -1,37 +1,45 @@
 ---
 name: lb-company-formation
-description: "Source-cited draft: company formation & entity choice for Lebanon (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Company formation and entity choice in Lebanon, tax year 2026. Sources and unverified rows are marked per row."
+version: 1.1
 jurisdiction: LB
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Lebanon Company Formation & Entity Choice
-
-## Common entity types
-
-- **Overview of entity types** — The Lebanese Code of Commerce provides for several company forms; the joint-stock company (SAL) and limited-liability company (SARL) are the most common vehicles for business, alongside partnerships and the holding/offshore regimes.  _(Lebanese Code of Commerce)_
-- **Limited liability company (SARL)** — Société à Responsabilité Limitée — members' liability limited to capital contributions  _(Lebanese Code of Commerce)_
-- **Joint-stock company (SAL)** — Société Anonyme Libanaise — shareholding company, minimum 3 shareholders  _(Lebanese Code of Commerce)_
-- **Holding and Offshore companies** — Special SAL regimes governed by Decree-Law No. 45 and No. 46 of 1983 with preferential tax treatment  _(Decree-Law No. 45 of 1983 (Holding) and No. 46 of 1983 (Offshore))_
-- **Sole proprietorship / partnership** — Individual trader or general partnership taxed under personal business-income rules (4%–25%)  _(Lebanese Code of Commerce)_
-
-## Minimum capital, formation and compliance
+# Lebanon Company Formation and Entity Choice
 
 Companies are registered with the Commercial Registry at the relevant court; capital requirements and a Lebanese-lawyer retainer apply to SAL/SARL. Figures should be confirmed against current Commercial Registry fee schedules.
 
-- **Minimum share capital — SARL** — LL 5,000,000 LBP ((approx — nominal statutory figure; confirm current requirement))  _(Lebanese Code of Commerce)_
-- **Minimum share capital — SAL** — LL 30,000,000 LBP ((approx — nominal statutory figure; confirm current requirement))  _(Lebanese Code of Commerce)_
-- **Minimum shareholders — SAL** — 3 shareholders  _(Lebanese Code of Commerce)_
-- **Registration authority** — Commercial Registry at the competent first-instance court  _(Lebanese Code of Commerce)_
-- **Mandatory lawyer retainer** — SAL/SARL must retain a Lebanese lawyer (annual retainer) as a registration condition ((approx — confirm thresholds requiring a retainer))  _(Law Regulating the Legal Profession)_
-- **Typical incorporation timeline** — Approximately 2 to 4 weeks ((approx — confirm current timeline))  _([IDAL — Doing Business in Lebanon](https://investinlebanon.gov.lb/en/doing_business/tax_system))_
-- **Core annual compliance** — Audited financial statements, annual income tax return, payroll declarations, quarterly VAT returns (if registered), and NSSF declarations  _(Income Tax Law (Decree-Law No. 144 of 1959))_
-- **Statutory auditor** — SAL must appoint a statutory auditor; SARL above thresholds also require one ((approx — confirm SARL audit thresholds))  _(Lebanese Code of Commerce)_
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Holding and offshore taxes | see corporate income tax | 2026 | https://www.investinlebanon.gov.lb/en/doing_business/tax_system |
+| Overview of entity types | The Lebanese Code of Commerce provides for several company forms; the joint-stock company (SAL) and limited-liability company (SARL) are the most common vehicles for business, alongside partnerships and the holding/offshore regimes. | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Limited liability company (SARL) | Société à Responsabilité Limitée : members' liability limited to capital contributions | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Joint-stock company (SAL) | Société Anonyme Libanaise : shareholding company, minimum 3 shareholders | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Holding and Offshore companies | Special SAL regimes governed by Decree-Law No. 45 and No. 46 of 1983 with preferential tax treatment | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Decree-Law No. 45 of 1983 (Holding |
+| Sole proprietorship / partnership | Individual trader or general partnership taxed under personal business-income rules (4%-25%) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Minimum share capital : SARL | LL 5,000,000 (approx : nominal statutory figure; confirm current requirement) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Minimum share capital : SAL | LL 30,000,000 (approx : nominal statutory figure; confirm current requirement) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Minimum shareholders : SAL | 3 shareholders | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Registration authority | Commercial Registry at the competent first-instance court | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+| Mandatory lawyer retainer | SAL/SARL must retain a Lebanese lawyer (annual retainer) as a registration condition (approx : confirm thresholds requiring a retainer) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Law Regulating the Legal Profession |
+| Typical incorporation timeline | Approximately 2 to 4 weeks (approx : confirm current timeline) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; IDAL |
+| Core annual compliance | Audited financial statements, annual income tax return, payroll declarations, quarterly VAT returns (if registered), and NSSF declarations | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Income Tax Law (Decree-Law No. 144 of 1959 |
+| Statutory auditor | SAL must appoint a statutory auditor; SARL above thresholds also require one (approx : confirm SARL audit thresholds) | 2026 | unverified: Ministry of Finance site showed a CAPTCHA, law text not opened; Lebanese Code of Commerce |
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| IDAL, Doing Business, Tax System (whole page) | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
+| Ministry of Finance, finance.gov.lb tax pages | unverified: CAPTCHA, not read | not read |
+
+Not yet confirmed: every row marked unverified. finance.gov.lb returned a CAPTCHA during this refresh, which we did not solve; only archive indexes of it were read, and the text of 2026 Budget Law No. 40 of 10 Feb 2026 was not opened (the law number comes from a search summary, not an official page). Citizen Budget wording covers measures only, so anything else in that law is unread.
 
 <!-- openaccountants-cta-block -->
 
