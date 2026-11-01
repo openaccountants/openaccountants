@@ -233,6 +233,23 @@ If the client provides only a bank statement and no payroll detail:
 5. **Flag for reviewer:** "Payroll figures derived from bank statement totals only. Gross/basic/transport split, residency, and RAMA enrolment have not been verified. Reviewer must confirm before relying on the monthly declaration."
 
 
+### Carried: Quick checks and bank lines
+
+| Case (monthly) | Result |
+|---|---|
+| Gross 500,000 with transport 30,000, not enrolled | Pension 30,000; maternity 1,500; PAYE 114,000; CBHI 1,772.50; net 352,727.50. The old 362,192.93 deducted RSSB before PAYE and left transport out of maternity |
+| Employer on that gross | Pension 30,000; occupational hazards 10,000 (unverified 2%); maternity 1,500; total 41,500 |
+| Gross 55,000, not enrolled | PAYE 0; pension 3,300; maternity 165; CBHI 257.68; net 51,277.32 |
+| Casual, FRW 80,000 | 15% of 20,000 = 3,000 (art 56); flag RSSB. The old 12,000 missed the 0% slice |
+| Taxable 90,000 | PAYE 3,000 |
+| Taxable 150,000 | PAYE 14,000 |
+
+PAYE shortcut: to 60,000, nil; to 100,000, (B - 60,000) x 10%; to 200,000, 4,000 + (B - 100,000) x 20%; above, 24,000 + (B - 200,000) x 30%.
+
+Bank lines: `RWANDA REVENUE AUTHORITY ; E-TAX PAYE+RSSB` is a unified declaration payment, EXCLUDE, and split from the payroll journal. `RSSB CONTRIB ; ARREARS + INTEREST` is EXCLUDE; split principal from interest and escalate.
+
+Pension from 2027: totals are in the rates table. Equal shares of 7%, 8%, 9% and 10% are unverified. Maternity 0.6% in all.
+
 ## Deadlines and filing
 
 | Item | Deadline | Source |

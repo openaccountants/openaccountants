@@ -272,6 +272,75 @@ REVIEWER FLAGS:
 ```
 
 
+### Carried: Benefits in kind and rates by person
+
+| Item | Treatment | Source |
+|---|---|---|
+| Motor vehicle | 10% of employment income excluding benefits in kind (art 18) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Housing, with or without contents | 20% of employment income excluding benefits in kind (art 18) | same |
+| Loan or salary advance over 3 months' salary | Difference between interest at the National Bank's rate to commercial banks and interest actually paid, for the month the loan is received (art 18) | same |
+| Benefit to a related person, or by a company to a member | Treated as a benefit to the employee, where no service is rendered (art 18) | same |
+| House rent or vehicle paid directly by the employer | Taxed as ordinary employment income (arts 15, 18) | same |
+| Residents and non-residents | Same bands; a non-resident pays on Rwanda-source income only | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Monthly PAYE | unverified: annual tax / 12, rounded up (old file) | unverified |
+| Registration | unverified: not required under FRW 2,000,000 turnover (old file, RRA register page not reopened) | unverified |
+| RSSB | Rates and pension steps: see [rwanda-social-contributions](rwanda-social-contributions.md) | see that skill |
+
+### Carried: Quick checks
+
+| Input | Expected |
+|---|---|
+| Monthly taxable FRW 350,000 | PAYE 69,000 (4,000 + 20,000 + 45,000) |
+| Monthly taxable FRW 1,000,000 | PAYE 264,000 (4,000 + 20,000 + 240,000) |
+| Annual real regime profit FRW 9,000,000 | Tax 2,268,000 (48,000 + 240,000 + 1,980,000) |
+| Turnover FRW 1,500,000 | No declaration |
+| Turnover FRW 6,500,000 | Flat FRW 120,000 |
+| Turnover FRW 16,000,000 | 3%, FRW 480,000 |
+| Casual labourer, FRW 150,000 a month | 15% of 90,000 = FRW 13,500 |
+
+### Carried: Bank statement reading guide
+
+| Channel | Format | Key fields | Notes |
+|---|---|---|---|
+| Bank of Kigali (BK) | PDF, CSV | Date, Description, Debit, Credit, Balance | Description holds counterparty and reference |
+| I&M Bank Rwanda | PDF, CSV | Value Date, Description, Amount, Balance | |
+| Equity Bank Rwanda | PDF | Date, Particulars, Withdrawals, Deposits | |
+| MTN MoMo / Airtel Money | CSV or SMS export | Date, Counterparty, Amount, Type, Fee | Cash-in and cash-out lines |
+| BPR / Cogebanque | PDF | Date, Libelle, Debit, Credit | French terms |
+
+| Term | Language | English | Hint |
+|---|---|---|---|
+| MUSHAHARA | Kinyarwanda | Salary | Employment income |
+| KWISHYURA / KWISHYUZA | Kinyarwanda | Payment | Check direction |
+| KWIMURA / TRANSFER | Kinyarwanda | Transfer | Check direction |
+| INYUNGU | Kinyarwanda | Interest or profit | Investment income, or bank charge |
+| AMAFARANGA YA BANKI | Kinyarwanda | Bank charges | Deductible, real regime |
+| UBUKODE | Kinyarwanda | Rent | Rental income or office rent |
+| INGUZANYO | Kinyarwanda | Loan | Exclude principal |
+| VIREMENT | French | Transfer | Check direction |
+| FRAIS | French | Fees | Deductible, real regime |
+| LOYER | French | Rent | Rental income or rent expense |
+| SALAIRE | French | Salary | Employment income |
+
+### Carried: Onboarding fallback
+
+If the client cannot answer yet: classify with the pattern library, mark Tier 2 items pending, apply these defaults, give the working paper with flags, then ask:
+
+1. Rwanda tax resident, or non-resident with Rwanda-source income?
+2. Employee, self-employed, or both?
+3. If self-employed: annual turnover?
+4. If employed: split of basic, housing, transport and other pay?
+5. Any employer housing or vehicle?
+6. Casual labourer or regular employee?
+7. Agricultural or livestock income?
+8. Any KIFC exemption?
+9. Which RSSB schemes do you pay?
+10. Other income: rent, interest, dividends?
+
+Defaults: unknown residence or employment status, stop and ask; unknown business-use share, 0%; unknown expense, not deductible; unknown casual status, regular employee. Rwanda has no enforceable national minimum wage; assume none.
+
+Never: use the superseded 20% middle band; apply an 8%/4% pension split; let flat or lump-sum taxpayers deduct expenses; tax a casual labourer on the regular bands.
+
 ## Deadlines and filing
 
 | Item | Deadline | Source |
@@ -372,7 +441,7 @@ expected:
 | RRA, Calculate PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-01 |
 | RRA, Declare Income Tax page (whole page) | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1 | 2026-11-01 |
 
-Not yet confirmed: the 10% and 20% benefit rules for housing rest on the Handbook, as art 18 was read only in part; the road transport annex amounts were not captured from the PDF table, so use the annex directly; trading licence declaration by 31 January is carried from the old file and was not re-read; treatment of a home office, vehicle and phone in the real regime is our working practice and not a rule in the law; RRA rounding of monthly PAYE is not stated in the pages read.
+Not yet confirmed: the road transport annex amounts were not captured from the PDF table, so use the annex directly; trading licence declaration by 31 January is carried from the old file and was not re-read; treatment of a home office, vehicle and phone in the real regime is our working practice and not a rule in the law; RRA rounding of monthly PAYE is not stated in the pages read.
 
 <!-- openaccountants-cta-block -->
 

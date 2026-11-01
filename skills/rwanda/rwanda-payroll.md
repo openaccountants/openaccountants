@@ -193,6 +193,34 @@ If the engagement lacks key data:
 5. **Year ambiguity** → default 2026 table/rates; switch only for periods ≥ 1 Jan of a later year (pension steps up again in 2027).
 
 
+### Carried: Pension steps, shortcuts and quick checks
+
+| From | Total | Employer | Employee | Source |
+|---|---|---|---|---|
+| To 31 December 2024 | 6% | 3% | 3% | unverified: old file |
+| 1 January 2025 | 12% | 6% | 6% | https://www.rra.gov.rw/en/domestic-tax-services/rssb-contributions/pension-scheme-contribution |
+| 1 January 2027 | 14% | unverified: 7% | unverified: 7% | Order 086/01 sets the total only |
+| 1 January 2028 | 16% | unverified: 8% | unverified: 8% | same |
+| 1 January 2029 | 18% | unverified: 9% | unverified: 9% | same |
+| 1 January 2030 | 20% | unverified: 10% | unverified: 10% | same |
+
+PAYE shortcut: rate x gross less 6,000 in the 10% band, 16,000 in the 20% band, 36,000 in the 30% band. It ties out at 100,000 (4,000) and 200,000 (24,000). The 0% band rose from FRW 30,000 to 60,000 under Law 027/2022 (old file, unverified).
+
+CBHI base is gross less PAYE, pension and maternity. Medical is not subtracted. Same rates for residents and non-residents.
+
+| Case (monthly) | PAYE | Employee total | Net pay |
+|---|---|---|---|
+| Gross 50,000, no medical | 0 | 3,384.25 | 46,615.75 |
+| Gross 60,000, no medical | 0 | 4,061.10 | 55,938.90 |
+| Gross and basic 150,000, medical | 14,000 | 35,332.75 | 114,667.25 |
+| Gross and basic 500,000, medical | 114,000 | 184,772.50 | 315,227.50 |
+
+Employer cost on gross and basic 150,000, enrolled: 9,000 pension, 3,000 occupational hazards (unverified 2%), 450 maternity, 11,250 medical; total 173,700, or 15.8% on top of gross. Employee social shorthand where basic = gross: 6% + 0.3% + 7.5% + 0.5% = 14.3% as an upper bound, since CBHI is on net.
+
+Casual labourer paid FRW 80,000 in a month: 15% of 20,000 = FRW 3,000 (art 56). The old file charged 12,000 and missed the 0% slice.
+
+Never: compute a 2026 period at the old 3%/3% rate; deduct employee RSSB before PAYE; put occupational hazards on the employee; apply medical to gross when basic differs.
+
 ## Deadlines and filing
 
 | Item | Deadline | Source |
