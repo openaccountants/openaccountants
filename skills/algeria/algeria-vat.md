@@ -1,115 +1,126 @@
 ---
 name: algeria-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for an Algeria TVA (Taxe sur la Valeur Ajoutee) return (G50 declaration) for any client. Trigger on phrases like "prepare TVA return", "Algeria VAT", "G50 declaration", "declaration TVA", "DGI return", or any request involving Algeria VAT filing. Also trigger when classifying transactions for TVA purposes from bank statements, invoices, or other source data. This skill covers Algeria only and standard TVA-registered businesses under the regime reel. IFU (forfaitaire) taxpayers, hydrocarbon-sector entities, military procurement, and special conventions are in the refusal catalogue. ALWAYS read this skill before touching any Algeria TVA work.
-version: 2.0
+description: "Use this skill whenever asked to prepare, review, or classify transactions for an Algeria TVA (Taxe sur la Valeur Ajoutee) return (G50 declaration) for any client. Trigger on phrases like 'prepare TVA return', 'Algeria VAT', 'G50 declaration', 'declaration TVA', 'DGI return', or any request involving Algeria VAT filing. Also trigger when classifying transactions for TVA purposes from bank statements, invoices, or other source data. This skill covers Algeria only and standard TVA-registered businesses under the regime reel. IFU (forfaitaire) taxpayers, hydrocarbon-sector entities, military procurement, and special conventions are in the refusal catalogue. ALWAYS read this skill before touching any Algeria TVA work."
+version: 2.1
 jurisdiction: DZ
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Algeria VAT
+# Algeria VAT v2.1
 
-## Section 1 — Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference field table**
+Tax year 2026 (calendar year). Amounts in Algerian dinars (DA or DZD). Primary authority: Direction Generale des Impots (DGI).
 
-| Field | Value |
-| --- | --- |
-| Country | Algeria (People's Democratic Republic of Algeria) |
-| Standard rate | 19% (taux normal) |
-| Reduced rate | 9% (taux reduit: basic foodstuffs, pharmaceuticals, agricultural inputs, tourism/hotel, IT equipment, renewable energy) |
-| Exempt supplies | Bread, semolina, flour, fresh milk, financial services (interest), medical (public), education, exports (exempt with right to deduct) |
-| Return form | G50 (Serie G50 monthly declaration — includes TVA, TAP, and withholding sections) |
-| Filing portal | https://jibayatic.mf.gov.dz (Jibayatic) |
-| Authority | Direction Generale des Impots (DGI) |
-| Currency | DZD (Algerian Dinar) only |
-| Filing frequency | Monthly (regime reel); IFU taxpayers do not file TVA |
-| Deadline | 20th of the month following the period |
-| Contributor | Open Accountants Skills Registry |
-| Validated by | Pending — requires validation by a licensed commissaire aux comptes in Algeria |
-| Validation date | Pending |
+## Who this applies to
+
+Real-regime businesses filing TVA on the monthly G n° 50. IFU taxpayers do not charge TVA, because IFU replaces it (CIDTA art. 282 bis). Hydrocarbons, defence contracts, ANDI incentives, material prorata and special conventions go to a local professional.
+
+## Rates, bands and thresholds
+
+| Item | Rate or amount | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| Standard rate | 19% | Code TCA art. 21 | 2026 | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
+| Reduced rate | 9% | Listed items only, Code TCA art. 23 | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf |
+| New 9% wording: housing | 9% | Building new homes, their sale, servicing, and rehabilitating old homes | 2026 | same |
+| New 9% wording: health | 9% | Medical acts, and meals and lodging given to patients by health establishments | 2026 | same |
+| New 9% wording: education | 9% | State-approved education and training, including preschool, with their lodging and meals | 2026 | same |
+| New 9% wording: transport | 9% | Rail passengers and passengers by bus | 2026 | same |
+| Cash limit for input TVA | Invoices above 1,000,000 DA with tax paid in cash or bank deposit lose deduction | Code TCA | 2026 | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
+| Omitted deduction | Claim by 20 December of the next year | Code TCA art. 30 | 2026 | same |
+| IFU ceiling | 8,000,000 DA; the old 15,000,000 DA figure was wrong | CIDTA art. 282 ter | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf |
+| TAP | Removed; no longer on G n° 50 calculations | DGI circular, 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |
+
+
+## The base
+
+Output TVA arises on taxable sales; input TVA is deductible if the G n° 50 carries the supplier statement (Code TCA art. 29). Businesses with mixed sales file actual percentages by 20 March and adjust by the same date the next year (art. 40, LF 2026 art. 57). Businesses taking payment without invoices through software or a till must hold an editor's commitment or accredited certificate on data integrity (new art. 51 bis, LF 2026 art. 58).
+
+Purchase exemption (franchise): apply to your tax office; authorisations are issued yearly by the DGE, wilaya director or CDI head (art. 45 per https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee).
+
+### Carried from the earlier version, not checked against the law
+
+Patterns, defaults and refusal rules kept so no work is lost. Any figure here is unverified unless it also appears in the tables above; the tables win.
 
 **Key G50 TVA lines**
 
 | Line | Meaning |
-| --- | --- |
-| 1 | CA taxable a 19% (standard-rated sales net) |
-| 2 | CA taxable a 9% (reduced-rated sales net) |
-| 3 | CA exonere (exempt supplies net) |
-| 4 | Exportations (export sales net, exempt with deduction) |
-| 5 | Total CA (derived: 1+2+3+4) |
-| 6 | TVA collectee a 19% (output TVA on Line 1) |
-| 7 | TVA collectee a 9% (output TVA on Line 2) |
-| 8 | TVA sur autoliquidation (reverse charge output) |
-| 9 | Regularisations (adjustments) |
-| 10 | Total TVA brute (derived: 6+7+8+9) |
-| 11 | TVA sur achats de biens et services (input TVA on operating purchases) |
-| 12 | TVA sur immobilisations (input TVA on capital goods) |
-| 13 | TVA sur importations (customs TVA) |
-| 14 | TVA autoliquidation input (reverse charge input) |
-| 15 | Exclusions (blocked items) |
-| 16 | Total TVA deductible (derived: 11+12+13+14-15) |
-| 17 | TVA due (derived: 10-16) |
-| 18 | Precomptes (advance TVA withholdings received) |
-| 19 | Credit reporte (prior period credit) |
-| 20 | TVA a payer / Credit (derived: 17-18-19) |
+| -- | -- |
+| unverified: 1 | CA taxable a 19% (standard-rated sales net) |
+| unverified: 2 | CA taxable a 9% (reduced-rated sales net) |
+| unverified: 3 | CA exonere (exempt supplies net) |
+| unverified: 4 | Exportations (export sales net, exempt with deduction) |
+| unverified: 5 | Total CA (derived: 1+2+3+4) |
+| unverified: 6 | TVA collectee a 19% (output TVA on Line 1) |
+| unverified: 7 | TVA collectee a 9% (output TVA on Line 2) |
+| unverified: 8 | TVA sur autoliquidation (reverse charge output) |
+| unverified: 9 | Regularisations (adjustments) |
+| unverified: 10 | Total TVA brute (derived: 6+7+8+9) |
+| unverified: 11 | TVA sur achats de biens et services (input TVA on operating purchases) |
+| unverified: 12 | TVA sur immobilisations (input TVA on capital goods) |
+| unverified: 13 | TVA sur importations (customs TVA) |
+| unverified: 14 | TVA autoliquidation input (reverse charge input) |
+| unverified: 15 | Exclusions (blocked items) |
+| unverified: 16 | Total TVA deductible (derived: 11+12+13+14-15) |
+| unverified: 17 | TVA due (derived: 10-16) |
+| unverified: 18 | Precomptes (advance TVA withholdings received) |
+| unverified: 19 | Credit reporte (prior period credit) |
+| unverified: 20 | TVA a payer / Credit (derived: 17-18-19) |
 
 **Conservative defaults**
 
 | Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 19% |
+| -- | -- |
+| unverified: Unknown rate on a sale | 19% |
 | Unknown TVA status of a purchase | Not deductible |
 | Unknown counterparty country | Domestic Algeria |
-| Unknown business-use proportion | 0% recovery |
+| unverified: Unknown business-use proportion | 0% recovery |
 | Unknown blocked-input status | Blocked |
 | Unknown whether transaction is in scope | In scope |
-| Unknown SaaS billing entity | Reverse charge from non-resident (Line 8/14) |
+| unverified: Unknown SaaS billing entity | Reverse charge from non-resident (Line 8/14) |
 
 **Red flag thresholds**
 
 | Threshold | Value |
-| --- | --- |
-| HIGH single-transaction size | DZD 5,000,000 |
-| HIGH tax-delta on a single conservative default | DZD 500,000 |
-| MEDIUM counterparty concentration | >40% of output OR input |
-| MEDIUM conservative-default count | >4 across the return |
-| LOW absolute net TVA position | DZD 10,000,000 |
+| -- | -- |
+| unverified: HIGH single-transaction size | DZD 5,000,000 |
+| unverified: HIGH tax-delta on a single conservative default | DZD 500,000 |
+| unverified: MEDIUM counterparty concentration | >40% of output OR input |
+| unverified: MEDIUM conservative-default count | >4 across the return |
+| unverified: LOW absolute net TVA position | DZD 10,000,000 |
 
-## Section 2 — Required inputs and refusal catalogue
+#### Required inputs
 
-### Required inputs
+- **Minimum viable input**: Bank statement for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Algerian or international business bank: BNA, BEA, CPA, BADR, BDL, Societe Generale Algerie, AGB, Natixis Algerie, Al Baraka, or any other.
+- **Recommended input**: Sales invoices for the period, purchase invoices for any input TVA claim above DZD 500,000, the client's NIF (Numero d'Identification Fiscale) in writing.
+- **Ideal input**: Complete invoice register, prior period G50, reconciliation of credit reporte (Line 19).
+- **Refusal policy if minimum is missing**: SOFT WARN. If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This G50 was produced from bank statement alone. The reviewer must verify that input TVA claims above DZD 500,000 are supported by compliant invoices with valid NIF and that all reverse-charge classifications match the supplier's invoice."
 
-- **Minimum viable input** — Bank statement for the month in CSV, PDF, or pasted text. Must cover the full period. Acceptable from any Algerian or international business bank: BNA, BEA, CPA, BADR, BDL, Societe Generale Algerie, AGB, Natixis Algerie, Al Baraka, or any other.
-- **Recommended input** — Sales invoices for the period, purchase invoices for any input TVA claim above DZD 500,000, the client's NIF (Numero d'Identification Fiscale) in writing.
-- **Ideal input** — Complete invoice register, prior period G50, reconciliation of credit reporte (Line 19).
-- **Refusal policy if minimum is missing** — SOFT WARN. If no bank statement is available at all, hard stop. If bank statement only without invoices, proceed but record in the reviewer brief: "This G50 was produced from bank statement alone. The reviewer must verify that input TVA claims above DZD 500,000 are supported by compliant invoices with valid NIF and that all reverse-charge classifications match the supplier's invoice."
+#### Algeria-specific refusal catalogue
 
-### Algeria-specific refusal catalogue
+- **R-DZ-1: IFU (forfaitaire) taxpayer**: Trigger: client is under the Impot Forfaitaire Unique regime (turnover below DZD 8,000,000 (see the rates table)). Message: "IFU taxpayers do not file TVA. They pay the Impot Forfaitaire Unique instead. This skill covers regime reel TVA only. If you have exceeded the DZD 8,000,000 (see the rates table) threshold, you must register for TVA and switch to regime reel."
+- **R-DZ-2: Hydrocarbon sector**: Trigger: client operates in oil/gas exploration, production, or pipeline transport under the Hydrocarbons Law No. 19-13. Message: "Hydrocarbon-sector entities have a specific tax regime under the Hydrocarbons Law. Standard TVA rules do not apply. Please escalate to a specialist."
+- **R-DZ-3: Military procurement**: Trigger: client supplies goods or services to the Algerian military under a defence contract. Message: "Military procurement contracts have specific TVA exemptions and conventions. Out of scope."
+- **R-DZ-4: Partial exemption (prorata)**: Trigger: client makes both taxable and exempt supplies and the exempt proportion is material. Message: "Your input TVA must be apportioned using the prorata formula under Code TCA Art. 34. The annual prorata calculation requires the full-year turnover mix. Please use a commissaire aux comptes to determine the prorata rate before input TVA is claimed."  _(Code TCA Art. 34)_
+- **R-DZ-5: ANDI investment incentive capital goods**: Trigger: client holds an ANDI investment certificate and claims TVA exemption on imported capital goods. Message: "ANDI investment incentives require verification of certificate validity and scope. Flag for reviewer."
+- **R-DZ-6: Special conventions**: Trigger: client operates under a bilateral tax convention or special agreement with the Algerian government. Message: "Special conventions are outside this skill. Escalate to a qualified practitioner."
 
-- **R-DZ-1 — IFU (forfaitaire) taxpayer** — Trigger: client is under the Impot Forfaitaire Unique regime (turnover below DZD 15,000,000). Message: "IFU taxpayers do not file TVA. They pay the Impot Forfaitaire Unique instead. This skill covers regime reel TVA only. If you have exceeded the DZD 15,000,000 threshold, you must register for TVA and switch to regime reel."
-- **R-DZ-2 — Hydrocarbon sector** — Trigger: client operates in oil/gas exploration, production, or pipeline transport under the Hydrocarbons Law No. 19-13. Message: "Hydrocarbon-sector entities have a specific tax regime under the Hydrocarbons Law. Standard TVA rules do not apply. Please escalate to a specialist."
-- **R-DZ-3 — Military procurement** — Trigger: client supplies goods or services to the Algerian military under a defence contract. Message: "Military procurement contracts have specific TVA exemptions and conventions. Out of scope."
-- **R-DZ-4 — Partial exemption (prorata)** — Trigger: client makes both taxable and exempt supplies and the exempt proportion is material. Message: "Your input TVA must be apportioned using the prorata formula under Code TCA Art. 34. The annual prorata calculation requires the full-year turnover mix. Please use a commissaire aux comptes to determine the prorata rate before input TVA is claimed."  _(Code TCA Art. 34)_
-- **R-DZ-5 — ANDI investment incentive capital goods** — Trigger: client holds an ANDI investment certificate and claims TVA exemption on imported capital goods. Message: "ANDI investment incentives require verification of certificate validity and scope. Flag for reviewer."
-- **R-DZ-6 — Special conventions** — Trigger: client operates under a bilateral tax convention or special agreement with the Algerian government. Message: "Special conventions are outside this skill. Escalate to a qualified practitioner."
-
-## Section 3 — Supplier pattern library (the lookup table)
 
 This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly.
 
 **How to read this table.** Match by case-insensitive substring on the counterparty name as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules in Section 5.
 
-### 3.1 Algerian banks (fees exempt — exclude)
+#### 3.1 Algerian banks (fees exempt: exclude)
 
 **Algerian banks pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | BNA, BANQUE NATIONALE D'ALGERIE | EXCLUDE for bank charges/fees | Financial service, exempt |
 | BEA, BANQUE EXTERIEURE D'ALGERIE | EXCLUDE for bank charges/fees | Same |
 | CPA, CREDIT POPULAIRE D'ALGERIE | EXCLUDE for bank charges/fees | Same |
@@ -120,314 +131,197 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 | INTERETS, INTEREST, AGIOS | EXCLUDE | Interest income/expense, exempt |
 | PRET, CREDIT, EMPRUNT | EXCLUDE | Loan principal movement, out of scope |
 
-### 3.2 Algerian government and regulators (exclude entirely)
+#### 3.2 Algerian government and regulators (exclude entirely)
 
 **Algerian government and regulators pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | DGI, DIRECTION GENERALE DES IMPOTS | EXCLUDE | Tax payment, not a supply |
 | TRESOR PUBLIC | EXCLUDE | Government payment |
-| DOUANES, DIRECTION DES DOUANES | EXCLUDE for duty, but check for customs TVA (Line 13) |  |
+| unverified: DOUANES, DIRECTION DES DOUANES | EXCLUDE for duty, but check for customs TVA (Line 13) |  |
 | CNAS, CASNOS | EXCLUDE | Social security, out of scope |
 | CNRC, REGISTRE DE COMMERCE | EXCLUDE | Registration fee, sovereign act |
 | ANDI, ANADE | EXCLUDE | Government agency fee |
 
-### 3.3 Algerian utilities
+#### 3.3 Algerian utilities
 
 **Algerian utilities pattern table**
 
 | Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
-| SONELGAZ, SONALGAZ | Domestic 19% | 11 | Electricity and gas — operating expense |
-| SEAAL, ADE | Domestic 9% | 11 | Water supply — reduced rate |
-| ALGERIE TELECOM, AT, MOBILIS | Domestic 19% | 11 | Telecoms — overhead |
-| DJEZZY, OOREDOO | Domestic 19% | 11 | Mobile telecoms |
+| -- | -- | -- | -- |
+| unverified: SONELGAZ, SONALGAZ | Domestic 19% | 11 | Electricity and gas: operating expense |
+| unverified: SEAAL, ADE | Domestic 9% | 11 | Water supply: reduced rate |
+| unverified: ALGERIE TELECOM, AT, MOBILIS | Domestic 19% | 11 | Telecoms: overhead |
+| unverified: DJEZZY, OOREDOO | Domestic 19% | 11 | Mobile telecoms |
 
-### 3.4 Insurance (exempt — exclude)
+#### 3.4 Insurance (exempt: exclude)
 
 **Insurance pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | SAA, CAAR, CAAT, CASH ASSURANCES | EXCLUDE | Insurance, exempt |
 | ALLIANCE ASSURANCES, SALAMA | EXCLUDE | Same |
 | ASSURANCE, TAAWIN | EXCLUDE | All exempt |
 
-### 3.5 Post and logistics
+#### 3.5 Post and logistics
 
 **Post and logistics pattern table**
 
 | Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
+| -- | -- | -- | -- |
 | ALGERIE POSTE | EXCLUDE for standard postal | Universal postal service, exempt |  |
-| DHL ALGERIE, FEDEX, UPS | Domestic 19% | 11 | Express courier, taxable |
-| EMS ALGERIE | Domestic 19% | 11 | Express postal, taxable |
+| unverified: DHL ALGERIE, FEDEX, UPS | Domestic 19% | 11 | Express courier, taxable |
+| unverified: EMS ALGERIE | Domestic 19% | 11 | Express postal, taxable |
 
-### 3.6 Fuel and transport
+#### 3.6 Fuel and transport
 
 **Fuel and transport pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
-| NAFTAL | Domestic 19% for fuel (if business vehicle not blocked) | Check vehicle type |
-| ETUSA, TRAMWAY | EXCLUDE or 0% | Public transport |
-| AIR ALGERIE (domestic) | Domestic 9% | Tourism/transport reduced rate |
+| -- | -- | -- |
+| unverified: NAFTAL | Domestic 19% for fuel (if business vehicle not blocked) | Check vehicle type |
+| unverified: ETUSA, TRAMWAY | EXCLUDE or 0% | Public transport |
+| unverified: AIR ALGERIE (domestic) | Domestic 9% | Tourism/transport reduced rate |
 | AIR ALGERIE (international) | EXCLUDE / export | International flights |
 
-### 3.7 Food retail (blocked unless hospitality business)
+#### 3.7 Food retail (blocked unless hospitality business)
 
 **Food retail pattern table**  _(Code TCA Art. 30)_
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | UNO, ARDIS, PROMY CASH, HYPERMARCHE | Default BLOCK input TVA | Personal provisioning unless hospitality |
-| RESTAURANT, CAFE, TRAITEUR | Default BLOCK | Entertainment blocked under Code TCA Art. 30 |
+| unverified: RESTAURANT, CAFE, TRAITEUR | Default BLOCK | Entertainment blocked under Code TCA Art. 30 |
 
-### 3.8 SaaS — non-resident suppliers (reverse charge, Line 8/14)
+#### 3.8 SaaS: non-resident suppliers (reverse charge, Line 8/14)
 
 **SaaS non-resident suppliers pattern table**
 
 | Pattern | Billing entity | Line | Notes |
-| --- | --- | --- | --- |
-| GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | 8/14 | Reverse charge — autoliquidation |
-| MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) or US | 8/14 | Reverse charge |
-| ADOBE | Adobe Systems (IE or US) | 8/14 | Reverse charge |
-| META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 8/14 | Reverse charge |
-| ZOOM | Zoom Video Communications (US) | 8/14 | Reverse charge |
-| SLACK, ATLASSIAN, NOTION | Various non-resident | 8/14 | Reverse charge |
-| ANTHROPIC, OPENAI, CHATGPT | US entity | 8/14 | Reverse charge |
-| AWS, AMAZON WEB SERVICES | Various | 8/14 | Reverse charge |
+| -- | -- | -- | -- |
+| unverified: GOOGLE (Ads, Workspace, Cloud) | Google Ireland Ltd (IE) or Google LLC (US) | 8/14 | Reverse charge: autoliquidation |
+| unverified: MICROSOFT (365, Azure) | Microsoft Ireland Operations Ltd (IE) or US | 8/14 | Reverse charge |
+| unverified: ADOBE | Adobe Systems (IE or US) | 8/14 | Reverse charge |
+| unverified: META, FACEBOOK ADS | Meta Platforms Ireland Ltd (IE) | 8/14 | Reverse charge |
+| unverified: ZOOM | Zoom Video Communications (US) | 8/14 | Reverse charge |
+| unverified: SLACK, ATLASSIAN, NOTION | Various non-resident | 8/14 | Reverse charge |
+| unverified: ANTHROPIC, OPENAI, CHATGPT | US entity | 8/14 | Reverse charge |
+| unverified: AWS, AMAZON WEB SERVICES | Various | 8/14 | Reverse charge |
 
-### 3.9 Payment processors
+#### 3.9 Payment processors
 
 **Payment processors pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | STRIPE (transaction fees) | EXCLUDE (exempt) | Payment processing fees, financial service |
 | PAYPAL (transaction fees) | EXCLUDE (exempt) | Same |
 
-### 3.10 Professional services (Algeria)
+#### 3.10 Professional services (Algeria)
 
 **Professional services pattern table**
 
 | Pattern | Treatment | Line | Notes |
-| --- | --- | --- | --- |
-| NOTAIRE, MAITRE, HUISSIER | Domestic 19% | 11 | Deductible if business purpose |
-| EXPERT COMPTABLE, COMMISSAIRE | Domestic 19% | 11 | Always deductible |
-| AVOCAT, CABINET D'AVOCATS | Domestic 19% | 11 | Deductible if business legal matter |
+| -- | -- | -- | -- |
+| unverified: NOTAIRE, MAITRE, HUISSIER | Domestic 19% | 11 | Deductible if business purpose |
+| unverified: EXPERT COMPTABLE, COMMISSAIRE | Domestic 19% | 11 | Always deductible |
+| unverified: AVOCAT, CABINET D'AVOCATS | Domestic 19% | 11 | Deductible if business legal matter |
 
-### 3.11 Payroll and social security (exclude entirely)
+#### 3.11 Payroll and social security (exclude entirely)
 
 **Payroll and social security pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | CNAS, CASNOS | EXCLUDE | Statutory social security |
 | SALAIRE, PAIE, VIREMENT PERSONNEL | EXCLUDE | Wages, out of scope |
 | IRG, IMPOT SUR LE REVENU | EXCLUDE | Income tax |
 
-### 3.12 Internal transfers and exclusions
+#### 3.12 Internal transfers and exclusions
 
 **Internal transfers and exclusions pattern table**
 
 | Pattern | Treatment | Notes |
-| --- | --- | --- |
+| -- | -- | -- |
 | VIREMENT INTERNE, TRANSFER PROPRE | EXCLUDE | Internal movement |
 | DIVIDENDE | EXCLUDE | Dividend, out of scope |
 | REMBOURSEMENT PRET | EXCLUDE | Loan repayment, out of scope |
 | RETRAIT DAB, RETRAIT ESPECES | Ask | Default exclude; ask what cash was spent on |
 
-## Section 4 — Worked examples
+#### 5.3 Exempt supplies (Code TCA Art. 8-9)
 
-These are six fully worked classifications drawn from a hypothetical bank statement of an Algeria-based self-employed IT consultant.
+- **Exempt supplies**: Bread, semolina, flour (basic staples), fresh milk, financial services (loan interest, life insurance), medical (public sector), education (authorized institutions), agricultural production at primary stage. No output TVA, no input TVA deduction on related costs.  _(Code TCA Art. 8-9)_
 
-### Example 1 — Non-resident SaaS reverse charge (Notion)
+#### 5.4 Exports (Code TCA Art. 8)
 
-**Input line:**
-`05.04.2026 ; NOTION LABS INC ; DEBIT ; Monthly subscription ; USD 16.00 ; DZD 2,160`
+- **Exports**: Exempt with full right to deduct input TVA: effectively zero-rated. Requires customs export documentation. Report in Line 4.  _(Code TCA Art. 8)_
 
-**Reasoning:**
-Notion Labs Inc is a US entity (Section 3.8). No TVA on the invoice. This is a service received from a non-resident. The Algerian client applies autoliquidation under Code TCA Art. 14. Both output TVA (Line 8) and input TVA (Line 14) must be reported. Net effect zero for fully taxable business.
+#### 5.5 Reverse charge: autoliquidation (Code TCA Art. 14)
 
-**Output table**
+- **Reverse charge / autoliquidation**: When a TVA-registered person receives services from a non-resident: self-assess output TVA at applicable rate (19% or 9%) at Line 8, claim input TVA at Line 14. Net effect zero for fully taxable businesses.  _(Code TCA Art. 14)_
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line (input) | Line (output) | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 05.04.2026 | NOTION LABS INC | -2,160 | -2,160 | 410 | 19% | 14 | 8 | N | — | — |
+#### 5.6 Imports of goods
 
-### Example 2 — Standard domestic sale at 19%
+- **Imports of goods**: TVA paid at customs on imported goods. Report at Line 13. Deductible if goods are for taxable business activity.
 
-**Input line:**
-`10.04.2026 ; SARL TECHNOSOFT ; CREDIT ; Invoice 2026-041 IT consulting April ; +500,000 ; DZD`
+#### 5.7 Blocked input TVA (Code TCA Art. 29-33)
 
-**Reasoning:**
-Incoming payment from an Algerian company for IT consulting. Standard-rated at 19%. Report net in Line 1, output TVA in Line 6. The gross amount includes TVA: net = 500,000 / 1.19 = 420,168. TVA = 79,832.
+- **Blocked input TVA categories**: Zero recovery with no exceptions unless noted: - Vehicles for personal transport (< 9 seats) unless taxi/hire (Art. 30) - Accommodation and lodging (Art. 30) - Entertainment and reception (Art. 30) - Personal use goods and services (Art. 31) - Petroleum products for blocked vehicles (Art. 30) - Purchases without proper invoice with NIF (Art. 33)  _(Code TCA Art. 29-33)_
 
-**Output table**
+#### 5.8 Capital goods
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 10.04.2026 | SARL TECHNOSOFT | +500,000 | +420,168 | 79,832 | 19% | 1/6 | N | — | — |
+- **Capital goods classification**: Capital goods go to Line 12 (input TVA on immobilisations). Operating purchases go to Line 11. Classification based on useful life > 12 months and materiality.
 
-### Example 3 — Entertainment, fully blocked
+#### 5.9 Precompte TVA (Code TCA Art. 41 bis)
 
-**Input line:**
-`15.04.2026 ; RESTAURANT EL DJAZAIR ; DEBIT ; Business dinner ; -12,000 ; DZD`
+- **Precompte TVA**: Certain designated entities (government, state enterprises, large taxpayers) withhold a precompte (typically 25% of TVA). Supplier claims credit on Line 18.  _(Code TCA Art. 41 bis)_
 
-**Reasoning:**
-Restaurant transaction. Entertainment is blocked under Code TCA Art. 30. No input TVA recovery regardless of business purpose.
+#### 5.10 TAP distinction
 
-**Output table**  _(Code TCA Art. 30)_
+- **TAP (Taxe sur l'Activite Professionnelle)**: TAP (removed, see the rates table) is a separate turnover tax reported on the same G50 form. It is NOT TVA and is NOT recoverable as input tax. Never confuse TAP with TVA.
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 15.04.2026 | RESTAURANT EL DJAZAIR | -12,000 | -12,000 | 0 | — | — | Y | Q1 | "Entertainment: blocked" |
 
-### Example 4 — Capital goods purchase
+#### 6.1 Fuel and vehicle costs
 
-**Input line:**
-`18.04.2026 ; SPA DELL TECHNOLOGIES ; DEBIT ; Invoice Laptop XPS ; -250,000 ; DZD`
+- **Fuel and vehicle costs**: Pattern: Naftal, Shell, Total. Why insufficient: vehicle type unknown; if car, blocked regardless of use. Default: 0% recovery. Question: "Is this a passenger car (blocked) or a commercial vehicle used exclusively for business?"
 
-**Reasoning:**
-Capital goods purchase. Input TVA goes to Line 12 (immobilisations), not Line 11 (operating). Net = 250,000 / 1.19 = 210,084. TVA = 39,916.
+#### 6.2 Restaurants and entertainment
 
-**Output table**
+- **Restaurants and entertainment**: Pattern: any restaurant, cafe, traiteur. Why insufficient: entertainment is hard blocked. Default: block. Question: "Was this entertainment? (Note: blocked regardless.)"
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 18.04.2026 | SPA DELL TECHNOLOGIES | -250,000 | -210,084 | -39,916 | 19% | 12 | N | — | — |
+#### 6.3 Ambiguous SaaS billing entities
 
-### Example 5 — Export sale (exempt with right to deduct)
+- **Ambiguous SaaS billing entities**: Pattern: Google, Microsoft, Adobe, Meta, Slack, Zoom where the legal entity is not visible. Default: reverse charge Line 8/14. Question: "Could you check the invoice for the legal entity name and country?"
 
-**Input line:**
-`22.04.2026 ; STUDIO KREBS GMBH ; CREDIT ; Invoice DZ-2026-015 IT consulting ; +3,500 ; EUR (DZD 518,000)`
+#### 6.4 Round-number incoming transfers
 
-**Reasoning:**
-Export of services. Exempt with full right to deduct input TVA. Report in Line 4 (Exportations). No output TVA. Requires export documentation (service contract, proof of foreign consumption).
+- **Round-number incoming transfers**: Pattern: large round credit from owner-named counterparty. Default: exclude as owner injection. Question: "Is this a customer payment, your own capital injection, or a loan?"
 
-**Output table**
+#### 6.5 Incoming transfers from individual names
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 22.04.2026 | STUDIO KREBS GMBH | +518,000 | +518,000 | 0 | 0% | 4 | N | — | — |
+- **Incoming transfers from individual names**: Pattern: incoming from private-looking counterparties. Default: domestic sale at 19%, Line 1/6. Question: "Was it a sale? Which rate?"
 
-### Example 6 — Motor vehicle, blocked
+#### 6.6 Large one-off purchases (potential capital goods)
 
-**Input line:**
-`28.04.2026 ; SARL SOVAC ; DEBIT ; Monthly lease payment Renault Clio ; -45,000 ; DZD`
+- **Large one-off purchases**: Pattern: single large invoice. Default: if capital nature, Line 12; else Line 11. Question: "Is this a capital good (useful life > 12 months)?"
 
-**Reasoning:**
-Car lease payment. Input TVA on passenger vehicles (< 9 seats) is blocked under Code TCA Art. 30. Exception only for taxi and hire vehicles. An IT consultant does not qualify. Default: full block.
+#### 6.7 Mixed-use phone, internet, home office
 
-**Output table**  _(Code TCA Art. 30)_
+- **Mixed-use phone, internet, home office**: Pattern: Algerie Telecom, Mobilis personal lines. Default: 0% if mixed without declared %. Question: "Is this a dedicated business line or mixed-use?"
 
-| Date | Counterparty | Gross | Net | TVA | Rate | Line | Default? | Question? | Excluded? |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 28.04.2026 | SARL SOVAC | -45,000 | -45,000 | 0 | — | — | Y | Q2 | "Motor vehicle: blocked" |
+#### 6.8 Cash withdrawals
 
-## Section 5 — Tier 1 classification rules (compressed)
+- **Cash withdrawals**: Pattern: retrait DAB, retrait especes. Default: exclude as owner drawing. Question: "What was the cash used for?"
 
-### 5.1 Standard rate 19% (Code TCA Art. 21)
+#### 6.9 ANDI investment incentive imports
 
-- **Standard rate** — 19%  _(Code TCA Art. 21)_
+- **ANDI investment incentive imports**: Pattern: customs entry with ANDI certificate reference. Default: flag for reviewer. Question: "Do you hold a valid ANDI investment certificate? What is its scope?"
 
-### 5.2 Reduced rate 9% (Code TCA Art. 23)
+#### 6.10 Precompte calculation
 
-- **Reduced rate** — 9%  _(Code TCA Art. 23)_
-
-### 5.3 Exempt supplies (Code TCA Art. 8-9)
-
-- **Exempt supplies** — Bread, semolina, flour (basic staples), fresh milk, financial services (loan interest, life insurance), medical (public sector), education (authorized institutions), agricultural production at primary stage. No output TVA, no input TVA deduction on related costs.  _(Code TCA Art. 8-9)_
-
-### 5.4 Exports (Code TCA Art. 8)
-
-- **Exports** — Exempt with full right to deduct input TVA — effectively zero-rated. Requires customs export documentation. Report in Line 4.  _(Code TCA Art. 8)_
-
-### 5.5 Reverse charge — autoliquidation (Code TCA Art. 14)
-
-- **Reverse charge / autoliquidation** — When a TVA-registered person receives services from a non-resident: self-assess output TVA at applicable rate (19% or 9%) at Line 8, claim input TVA at Line 14. Net effect zero for fully taxable businesses.  _(Code TCA Art. 14)_
-
-### 5.6 Imports of goods
-
-- **Imports of goods** — TVA paid at customs on imported goods. Report at Line 13. Deductible if goods are for taxable business activity.
-
-### 5.7 Blocked input TVA (Code TCA Art. 29-33)
-
-- **Blocked input TVA categories** — Zero recovery with no exceptions unless noted: - Vehicles for personal transport (< 9 seats) unless taxi/hire (Art. 30) - Accommodation and lodging (Art. 30) - Entertainment and reception (Art. 30) - Personal use goods and services (Art. 31) - Petroleum products for blocked vehicles (Art. 30) - Purchases without proper invoice with NIF (Art. 33)  _(Code TCA Art. 29-33)_
-
-### 5.8 Capital goods
-
-- **Capital goods classification** — Capital goods go to Line 12 (input TVA on immobilisations). Operating purchases go to Line 11. Classification based on useful life > 12 months and materiality.
-
-### 5.9 Precompte TVA (Code TCA Art. 41 bis)
-
-- **Precompte TVA** — Certain designated entities (government, state enterprises, large taxpayers) withhold a precompte (typically 25% of TVA). Supplier claims credit on Line 18.  _(Code TCA Art. 41 bis)_
-
-### 5.10 TAP distinction
-
-- **TAP (Taxe sur l'Activite Professionnelle)** — TAP at 1% (production) or 2% (services/commerce) is a separate turnover tax reported on the same G50 form. It is NOT TVA and is NOT recoverable as input tax. Never confuse TAP with TVA.
-
-## Section 6 — Tier 2 catalogue (compressed)
-
-### 6.1 Fuel and vehicle costs
-
-- **Fuel and vehicle costs** — Pattern: Naftal, Shell, Total. Why insufficient: vehicle type unknown; if car, blocked regardless of use. Default: 0% recovery. Question: "Is this a passenger car (blocked) or a commercial vehicle used exclusively for business?"
-
-### 6.2 Restaurants and entertainment
-
-- **Restaurants and entertainment** — Pattern: any restaurant, cafe, traiteur. Why insufficient: entertainment is hard blocked. Default: block. Question: "Was this entertainment? (Note: blocked regardless.)"
-
-### 6.3 Ambiguous SaaS billing entities
-
-- **Ambiguous SaaS billing entities** — Pattern: Google, Microsoft, Adobe, Meta, Slack, Zoom where the legal entity is not visible. Default: reverse charge Line 8/14. Question: "Could you check the invoice for the legal entity name and country?"
-
-### 6.4 Round-number incoming transfers
-
-- **Round-number incoming transfers** — Pattern: large round credit from owner-named counterparty. Default: exclude as owner injection. Question: "Is this a customer payment, your own capital injection, or a loan?"
-
-### 6.5 Incoming transfers from individual names
-
-- **Incoming transfers from individual names** — Pattern: incoming from private-looking counterparties. Default: domestic sale at 19%, Line 1/6. Question: "Was it a sale? Which rate?"
-
-### 6.6 Large one-off purchases (potential capital goods)
-
-- **Large one-off purchases** — Pattern: single large invoice. Default: if capital nature, Line 12; else Line 11. Question: "Is this a capital good (useful life > 12 months)?"
-
-### 6.7 Mixed-use phone, internet, home office
-
-- **Mixed-use phone, internet, home office** — Pattern: Algerie Telecom, Mobilis personal lines. Default: 0% if mixed without declared %. Question: "Is this a dedicated business line or mixed-use?"
-
-### 6.8 Cash withdrawals
-
-- **Cash withdrawals** — Pattern: retrait DAB, retrait especes. Default: exclude as owner drawing. Question: "What was the cash used for?"
-
-### 6.9 ANDI investment incentive imports
-
-- **ANDI investment incentive imports** — Pattern: customs entry with ANDI certificate reference. Default: flag for reviewer. Question: "Do you hold a valid ANDI investment certificate? What is its scope?"
-
-### 6.10 Precompte calculation
-
-- **Precompte calculation** — Pattern: payment from state enterprise with precompte deducted. Default: flag for reviewer to verify precompte rate. Question: "What precompte rate was applied? Do you have the withholding certificate?"
-
-## Section 7 — Excel working paper template (Algeria-specific)
-
-### Sheet "Transactions"
-
-Columns: A (Date), B (Counterparty), C (Description), D (Gross DZD), E (Net DZD), F (TVA DZD), G (Rate), H (G50 Line), I (Default?), J (Question?), K (Excluded?), L (Notes).
-
-### Sheet "G50 Summary"
-
-One row per G50 line. Column A = line number, column B = description, column C = value computed via SUMIFS formula from Transactions sheet.
-
-### Sheet "Return Form"
-
-- **Final G50-ready figures** — Line 10 = Total TVA brute (output) Line 16 = Total TVA deductible (input) Line 17 = TVA due (10 - 16) Line 20 = TVA a payer / Credit (17 - 18 - 19)
-
-Positive Line 20 = payable to DGI. Negative = credit carried forward.
-
-## Section 8 — Algeria bank statement reading guide
+- **Precompte calculation**: Pattern: payment from state enterprise with precompte deducted. Default: flag for reviewer to verify precompte rate. Question: "What precompte rate was applied? Do you have the withholding certificate?"
 
 **CSV format conventions.** BNA and BEA exports typically use semicolon delimiters with DD/MM/YYYY dates. Common columns: Date, Libelle, Debit, Credit, Solde.
 
@@ -439,70 +333,121 @@ Positive Line 20 = payable to DGI. Negative = credit carried forward.
 
 **Foreign currency transactions.** Convert to DZD at the Bank of Algeria official rate for the transaction date.
 
-## Section 9 — Onboarding fallback (only when inference fails)
 
-### 9.1 Entity type and trading name
+#### 9.1 Entity type and trading name
 
-- **Entity type and trading name** — Inference rule: SARL, EURL, SPA, SNC in the name = company. Individual name = sole trader. Fallback: "Are you a sole trader or company?"
+- **Entity type and trading name**: Inference rule: SARL, EURL, SPA, SNC in the name = company. Individual name = sole trader. Fallback: "Are you a sole trader or company?"
 
-### 9.2 TVA registration status
+#### 9.2 TVA registration status
 
-- **TVA registration status** — Inference rule: if asking for G50, they are regime reel. Fallback: "Are you registered for TVA under the regime reel?"
+- **TVA registration status**: Inference rule: if asking for G50, they are regime reel. Fallback: "Are you registered for TVA under the regime reel?"
 
-### 9.3 NIF
+#### 9.3 NIF
 
-- **NIF** — Inference rule: search statement descriptions. Fallback: "What is your NIF?"
+- **NIF**: Inference rule: search statement descriptions. Fallback: "What is your NIF?"
 
-### 9.4 Filing period
+#### 9.4 Filing period
 
-- **Filing period** — Inference rule: first and last transaction dates. Fallback: "Which month does this cover?"
+- **Filing period**: Inference rule: first and last transaction dates. Fallback: "Which month does this cover?"
 
-### 9.5 Industry
+#### 9.5 Industry
 
-- **Industry** — Inference rule: counterparty mix. Fallback: "What does the business do?"
+- **Industry**: Inference rule: counterparty mix. Fallback: "What does the business do?"
 
-### 9.6 Exempt supplies
+#### 9.6 Exempt supplies
 
-- **Exempt supplies onboarding** — Inference rule: presence of medical/financial/educational income. Fallback: "Do you make any TVA-exempt sales?" If yes and material, R-DZ-4 fires.
+- **Exempt supplies onboarding**: Inference rule: presence of medical/financial/educational income. Fallback: "Do you make any TVA-exempt sales?" If yes and material, R-DZ-4 fires.
 
-### 9.7 Credit brought forward
+#### 9.7 Credit brought forward
 
-- **Credit brought forward** — Inference rule: not inferable. Always ask. Question: "Do you have any credit reporte from the previous month? (Line 19)"
+- **Credit brought forward**: Inference rule: not inferable. Always ask. Question: "Do you have any credit reporte from the previous month? (Line 19)"
 
-### 9.8 Precompte credits
+#### 9.8 Precompte credits
 
-- **Precompte credits** — Inference rule: presence of state enterprise counterparties. Fallback: "Do you have precompte withholding certificates to claim? (Line 18)"
+- **Precompte credits**: Inference rule: presence of state enterprise counterparties. Fallback: "Do you have precompte withholding certificates to claim? (Line 18)"
 
-## Section 10 — Reference material
+## Deadlines and filing
 
-### Validation status
+How to file and pay the monthly G50 (real regime):
+1. Log in to Jibaya'tic if your tax centre uses it, or take the paper Serie G n° 50 to the tax receiver for your head office or main establishment (https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee).
+2. Enter the month's taxable sales and output TVA, input TVA, and salary IRG withheld. Box numbers are unverified, so copy them from the form itself.
+3. Attach the supplier statement Code TCA art. 29 requires for input TVA (https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee).
+4. File within the first 20 days of the month after the period. Payment need not be on the same day as filing, but must fall inside the same time limit.
+5. Keep the stamped copy or online acknowledgement as proof. E-payment delayed up to 10 days through no fault of the taxpayer or bank carries no penalty.
 
-This skill is v2.0, rewritten in April 2026 to align with the 10-section OpenAccountants architecture. It supersedes v1.0. The Algeria-specific content (rate structure, G50 lines, blocked categories) requires validation by a licensed commissaire aux comptes in Algeria.
+| Obligation | Deadline | Official URL |
+|---|---|---|
+| G n° 50 monthly | First 20 days of next month; January 2026 extended to 10 March, February to 26 March | https://web.archive.org/web/20261008093610/https://www.mfdgi.gov.dz/about-us-ar/actu-ar/prorogation-delais-g50-taxeformation-taxe-apprentissage |
+| Instalment regime (acomptes) | Monthly 1/12 of last year's sales; year-end statement by 20 April; needs 6 months' activity and a permanent site | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
+| Prorata statement | 20 March | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf |
 
-### Sources
 
-1. Code des Taxes sur le Chiffre d'Affaires (Code des TCA), Ordonnance 76-104 as amended — Articles 2-3, 8-9, 14, 21, 23, 29-34, 36, 41 bis
-2. Code des Procedures Fiscales
-3. Loi de Finances annuelle
-4. DGI Jibayatic portal — https://jibayatic.mf.gov.dz
+## Penalties and interest
 
-### Known gaps
+| Failure | Result | Official URL |
+|---|---|---|
+| General TVA breach | 25,000 DA fine (art. 114) | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf |
+| Fraud | 100,000 DA | same |
+| No identification plates (art. 60) | 10,000 DA | same |
+| Art. 61 breach | 50,000 DA | same |
+| Late payment | CIDTA art. 402 penalties; 10%, then 3% a month, cap 25% | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
 
-1. Supplier pattern library covers most common Algerian counterparties but not every regional SME.
-2. Precompte rates vary by sector and designated entity — verify per DGI circular.
-3. ANDI incentive scope varies by certificate — always verify.
-4. The DZD 15,000,000 IFU threshold is as of current year — verify annually.
 
-### Change log
+## Cross-border points
 
-- **v2.0 (April 2026):** Full rewrite to 10-section architecture. Supplier pattern library added. Worked examples added. Tier tags removed from inline text.
-- **v1.0:** Initial skill with step-based structure.
+Exports and non-resident services: the old skill treats exports as exempt with deduction and imported services as reverse charged. The Code TCA text was not opened, so both are unverified; see the carried section. Hydrocarbon and treaty cases are out of scope.
 
-## Disclaimer
+## Two worked examples that recompute
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
+**Example 1, simple.** Sale of 500,000 DA including 19% TVA: net 420,168.07, TVA 79,831.93.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+```oa-check
+name: Standard sale, gross 500,000 DA
+inputs:
+  gross: 500000
+steps:
+  - net: round(gross / 1.19, 2)
+  - tva: gross - net
+expected:
+  net: 420168.07
+  tva: 79831.93
+```
+
+**Example 2, edge and decision: should a clinic supplier pay a 1,190,000 DA invoice in cash?** TVA 190,000 DA is lost in cash because the total exceeds 1,000,000 DA; by bank transfer or cheque it stays deductible. Cost of paying cash: 190,000 DA.
+
+```oa-check
+name: Cash limit on a 1,190,000 DA invoice
+inputs:
+  gross: 1190000
+steps:
+  - tva: gross - gross / 1.19
+  - lost_if_cash: tva
+expected:
+  lost_if_cash: 190000.00
+```
+
+## Ask the client first
+
+1. Real regime or IFU?
+2. Month covered?
+3. Any exempt or 9% sales?
+4. Any payment above 1,000,000 DA in cash?
+5. Credit carried forward and precompte certificates?
+6. Passenger cars, entertainment or foreign services bought?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Loi de finances pour 2026, JO n° 88 of 31 Dec 2025 (read: fiscal articles 5 to 29, 53 to 60); read for the rates and steps cited | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf | 2026-11-01 |
+| Loi de finances pour 2025, JO n° 84 of 26 Dec 2024 (read: arts. 7, 8, 22, 23, 26 to 29); read for the rates and steps cited | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf | 2026-11-01 |
+| DGI, TVA page, archived copy of 19 Feb 2025; dated 21 Oct 2023; read for the rates and steps cited | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee | 2026-11-01 |
+| DGI, circular notice on removing TAP, 13 Feb 2024, archived copy; read for the rates and steps cited | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap | 2026-11-01 |
+| DGI notice extending G50 and TFP/TA, archived copy of 8 Oct 2026; read for the rates and steps cited | https://web.archive.org/web/20261008093610/https://www.mfdgi.gov.dz/about-us-ar/actu-ar/prorogation-delais-g50-taxeformation-taxe-apprentissage | 2026-11-01 |
+
+mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
+
+Not yet confirmed: the exact Code TCA text for exemptions, reverse charge (art. 14 in the old skill), blocked input TVA (arts. 29 to 33 in the old skill), precompte (art. 41 bis, 25% in the old skill), prorata (art. 34) and exports; G50 line numbers 1 to 20 in the old skill, because no G50 form could be opened; standard rate on reduced-rate list items 1 to 4 and 6 to 36, which LF 2026 leaves unchanged and which we did not read in full; TVA treatment of each supplier in the pattern library; Jibayatic screen names and portal address.
 
 <!-- openaccountants-cta-block -->
 
