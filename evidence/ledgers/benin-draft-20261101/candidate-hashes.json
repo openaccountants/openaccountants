@@ -1,0 +1,77 @@
+{
+  "pinned_base": "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297",
+  "files": {
+    "evidence/ledgers/benin-old-topics.md": {
+      "bytes": 31569,
+      "sha256": "7c650e372fa11cc76b599154f02fdffee1a8315241170d74a36d4f93a113a915"
+    },
+    "evidence/ledgers/bj-company-formation.md": {
+      "bytes": 3945,
+      "sha256": "788833768f1c8bd8046cbbc7f7726f2a4475e533a15b266038eec465cf7c4c41"
+    },
+    "evidence/ledgers/bj-corporate-income-tax.md": {
+      "bytes": 4848,
+      "sha256": "591f3f9fcea1498e79e048abf323cae4e8396931f46320364c6ea058fcdc768f"
+    },
+    "evidence/ledgers/bj-cross-border-withholding.md": {
+      "bytes": 5389,
+      "sha256": "478a40f64d9d823222150a90b145c5fac4efbb838f961eb225c7a4a8d03b1831"
+    },
+    "evidence/ledgers/bj-income-tax.md": {
+      "bytes": 4761,
+      "sha256": "5a2d64e0e75fc051f7aea7588ffe212785b3e7a47e5eaf0e1410214829de723d"
+    },
+    "evidence/ledgers/bj-payroll-social.md": {
+      "bytes": 2875,
+      "sha256": "dee1670244aeb00645a94431bed507620bc002d1eb24238e2f2226baa525c070"
+    },
+    "evidence/ledgers/bj-tax-overview.md": {
+      "bytes": 4179,
+      "sha256": "9058c5299ee7ab8f7c238b53ce7ba6601fa4734248a1981ad93de21c97657130"
+    },
+    "evidence/ledgers/bj-transfer-pricing.md": {
+      "bytes": 4511,
+      "sha256": "6b6586a944663455fed2203a645f8dd195c4cca226b8475c206fd442d7037150"
+    },
+    "evidence/ledgers/bj-vat-gst.md": {
+      "bytes": 7598,
+      "sha256": "559ada49180ebad2aaa6802d5c4e424a3bc715bbb16871b11aae89394bc7185b"
+    },
+    "skills/benin/README.md": {
+      "bytes": 2985,
+      "sha256": "05ae288eb9ffdd8440d25d07eafda0984c6ace6e75489228873029a9937b9104"
+    },
+    "skills/benin/bj-company-formation.md": {
+      "bytes": 14477,
+      "sha256": "5666c2408c8f9d023089e1e1e5cb2137c9f560a163aa550bc91ae91fa02e8fc8"
+    },
+    "skills/benin/bj-corporate-income-tax.md": {
+      "bytes": 15320,
+      "sha256": "31f6db0a3e3af370a1c16c52ea0e56b54d2753bcab26d6e744e0289f5df620e0"
+    },
+    "skills/benin/bj-cross-border-withholding.md": {
+      "bytes": 16220,
+      "sha256": "b00076be897c04230bf309ab2226d083808e626eb4aeeeb955b556f83cdeef6a"
+    },
+    "skills/benin/bj-income-tax.md": {
+      "bytes": 12749,
+      "sha256": "a9613987e984276dc524205e440892663b12b0c60311315d11acf2e79b769a16"
+    },
+    "skills/benin/bj-payroll-social.md": {
+      "bytes": 11103,
+      "sha256": "9ce3b19c5edd8a1bf019c59615a8f2889daca55ce5748aa27a3074ede7eee9ab"
+    },
+    "skills/benin/bj-tax-overview.md": {
+      "bytes": 14937,
+      "sha256": "6c7d5b0376110aed5669375eca2b1d2fee671720e2015ec6dc74e40007b23a6d"
+    },
+    "skills/benin/bj-transfer-pricing.md": {
+      "bytes": 13339,
+      "sha256": "08efab742621ceb8b2cadc0a45a0626f0f4df3cb68b80bcef545267529a48473"
+    },
+    "skills/benin/bj-vat-gst.md": {
+      "bytes": 19474,
+      "sha256": "7d5495aafd3bdebc9ce663bb41fe12fd5c50aba6706cc308effaa48ce7c342e3"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "utc": "2026-11-01T10:17:42.960439+00:00",
+  "sources": [
+    {
+      "file": "cgi2026.pdf",
+      "url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf",
+      "capture_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "expected_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "lfr2026.pdf",
+      "url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf",
+      "capture_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "expected_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "lf2026.pdf",
+      "url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf",
+      "capture_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+      "expected_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "sarl-decree.pdf",
+      "url": "https://monentreprise.bj/Decret_N_2014_220_du_28_mars_2014_portant_modalites_de_creation_des_Societes_a_Responsabilite_Limitee_a73a58faf6.pdf",
+      "capture_sha256": "abc3fb1f0aef4938d36a0434b6a778cc4263798cf3270c50610b7d00e46dc746",
+      "expected_sha256": "abc3fb1f0aef4938d36a0434b6a778cc4263798cf3270c50610b7d00e46dc746",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "ohada-companies-2014.pdf",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "capture_sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "expected_sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "apiex-formation.html",
+      "url": "https://monentreprise.bj/creer/societe",
+      "capture_sha256": "8bb49c7938ab988e0ccb35b104b35cfcfc3f6a526cce7144d8fa92950c5006d3",
+      "expected_sha256": "8bb49c7938ab988e0ccb35b104b35cfcfc3f6a526cce7144d8fa92950c5006d3",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "apiex-prices.html",
+      "url": "https://monentreprise.bj/informer/couts-delais",
+      "capture_sha256": "6c13f6827de7875e5f64afc002bc4e4d8b0485b690ed84d8b135df102cf9874d",
+      "expected_sha256": "6c13f6827de7875e5f64afc002bc4e4d8b0485b690ed84d8b135df102cf9874d",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "apiex-process.html",
+      "url": "https://monentreprise.bj/informer/processus",
+      "capture_sha256": "cc43eb9fe6ff65b315c4171d367423b3f36ffb2ab0ca7499ef69d441e6ed9eb7",
+      "expected_sha256": "cc43eb9fe6ff65b315c4171d367423b3f36ffb2ab0ca7499ef69d441e6ed9eb7",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "apiex-certificates.html",
+      "url": "https://monentreprise.bj/informer/certificats",
+      "capture_sha256": "a6c0f69c29a5cb8dcf02f46169a140592a5616fee9f82d2491e3a3d7d2789d1d",
+      "expected_sha256": "a6c0f69c29a5cb8dcf02f46169a140592a5616fee9f82d2491e3a3d7d2789d1d",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "file": "apiex-pieces.html",
+      "url": "https://monentreprise.bj/informer/pieces-requises",
+      "capture_sha256": "2cf66edf5223d37ae06ba714e008e9580d0a7c7cd02f5dad1b528e1e18c3792d",
+      "expected_sha256": "2cf66edf5223d37ae06ba714e008e9580d0a7c7cd02f5dad1b528e1e18c3792d",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}
