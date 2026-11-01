@@ -1,10 +1,10 @@
 ---
 name: czech-republic-vat-return
 description: "Czech VAT (DPH) for tax year 2026 under the VAT Act (235/2004 Coll.) as in force from 1 January 2026. Covers who must register (calendar-year turnover over CZK 2,000,000 makes a payer from 1 January next year, over CZK 2,536,500 from the next day, 10 working days to apply), the 21% and 12% rates and what each covers, books exempt with credit, input VAT limits, the VAT return (přiznání k DPH), control statement (kontrolní hlášení) and EC sales list (souhrnné hlášení), monthly and quarterly periods and the 25-day deadlines, domestic and cross-border reverse charge, intra-EU supplies, unreliable payers and recipient liability, and penalties including control statement fines. Trigger on: DPH, přiznání k DPH, kontrolní hlášení, souhrnné hlášení, plátce DPH, registrace k DPH, nespolehlivý plátce, přenesení daňové povinnosti, Czech VAT. Out of scope: income tax (cz-income-tax, cz-corporate-income-tax) and non-residents generally (cz-cross-border). cz-vat-return points here."
-version: 2.1
+version: 2.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -258,8 +258,6 @@ Not yet confirmed:
 - Whether the temporary domestic reverse charge under § 92f and Regulation 361/2014 continues after 31 December 2026. Czech law sets no end date (§ 92f and Regulation 361/2014 as in force on 23 October 2026 contain none), but its EU basis, Article 199a of the VAT Directive, is reported to run to 31 December 2026 under Directive (EU) 2022/890, with a Commission proposal of 1 October 2026 to extend it to 30 June 2030; both were seen only in secondary reports, as EUR-Lex could not be read. It does not affect tax year 2026.
 - The cash-payment limit that triggers recipient liability under § 109(2)(c)(4) is set in a separate act, which was not read.
 - The current Czech National Bank repo rate was not read; take it from the CNB for each half-year when computing interest.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

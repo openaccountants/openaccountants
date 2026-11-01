@@ -1,10 +1,10 @@
 ---
 name: pl-zus-contributions
 description: "Polish ZUS social contributions and the health contribution for the self-employed (jednoosobowa działalność gospodarcza) for 2026. Covers the standard base of PLN 5,652 (60% of the PLN 9,420 forecast wage), the rates (pension 19.52%, disability 8%, voluntary sickness 2.45%, accident 1.67%, Labour Fund 1.0% and Solidarity Fund 1.45%), the start relief (ulga na start), the 24-month preferential base of PLN 1,441.80, Mały ZUS Plus, the one-month contribution holiday, the annual cap of PLN 282,600, and the health contribution by tax form: 9% of income on the scale, 4.9% on the flat tax, both with a PLN 432.54 monthly minimum, and three fixed ryczałt bands (PLN 498.35, 830.58, 1,495.04). Also the DRA due on the 20th, the annual health reconciliation and 10.50% late interest. Trigger on: składki ZUS, ZUS przedsiębiorcy 2026, mały ZUS plus, ulga na start, preferencyjny ZUS, składka zdrowotna 2026. Out of scope: income tax in pl-income-tax; employees in pl-payroll; contract workers in pl-civil-law-contracts; cross-border residence in pl-cross-border."
-version: 2.2
+version: 2.3
 jurisdiction: PL
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -197,8 +197,6 @@ expected:
 | Regulation (EC) No 883/2004 on social security coordination | https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32004R0883 | 2026-10-23 |
 
 Not yet confirmed: the minimum wage regulation (Dz.U. 2025 poz. 1242) is an image-only PDF, so PLN 4,806 is taken from zus.pl, not from the regulation text. The 1.67% accident rate applies to payers with up to 9 insured persons; others use their own rate from the Accident Insurance Act.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

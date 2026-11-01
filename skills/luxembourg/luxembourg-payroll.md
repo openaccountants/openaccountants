@@ -1,10 +1,10 @@
 ---
 name: luxembourg-payroll
 description: "Luxembourg payroll for employees for tax year 2026: monthly wage withholding (retenue d'impôt sur les salaires) from the electronic tax card using the ACD monthly scale built on the art. 118 LIR scale (23 bands, 0% to 42%) for tax classes 1, 1a and 2; the employment fund surcharge (7%, or 9% above EUR 150,000 in classes 1 and 1a and EUR 300,000 in class 2); the CIS, CI-CO2 and CISSM credits paid through payroll; CCSS contributions (pension 8.5% + 8.5%, sickness, dependency 1.4% after a quarter-SSM abatement, accident 0.65%, Mutualité des employeurs classes, occupational health); the 1 January and 1 June 2026 parameter sets; withholding and CCSS deadlines and penalties. Trigger on: Luxembourg payroll, gross to net Luxembourg, fiche de retenue, RTS, retenue d'impôt salaires, CCSS cotisations 2026, MDE classe, salaire social minimum 2026. Out of scope: luxembourg-income-tax, luxembourg-social-contributions, lu-cross-border, lu-corporate-tax."
-version: 0.3
+version: 0.4
 jurisdiction: LU
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -244,8 +244,6 @@ expected:
 | Guichet.lu, déclaration d'entrée | https://guichet.public.lu/fr/entreprises/ressources-humaines/securite-sociale/declaration-entree.html | 2026-10-23 |
 
 Not yet confirmed: the monthly social minimum wage for skilled workers (qualifié, SSM plus 20%) from 1 January and 1 June 2026; the CCSS notices and parameters page publish only the unskilled SSM, and no official 2026 figure for the skilled rate was found. Also whether the 0.6% monthly late-payment interest on the ACD page applies to late withholding payments in the same way as to assessed tax (the page speaks of tax due on an assessment).
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 
