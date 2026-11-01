@@ -277,7 +277,7 @@
   {
     "id": "F26",
     "guide_section": "The base",
-    "rule": "Director eligibility full list, written consent/non-disqualification",
+    "rule": "Director eligibility uses the full disqualification list, written consent and non-disqualification certification.",
     "source_key": "companies2013",
     "act_article": "Companies Act 164–166",
     "physical_or_printed_pages": "95",
@@ -288,7 +288,7 @@
   {
     "id": "F27",
     "guide_section": "Deadlines and filing",
-    "rule": "Constitution notice within14 days",
+    "rule": "A notice of adoption, alteration or revocation of the constitution is delivered within 14 days.",
     "source_key": "companies2013",
     "act_article": "Companies Act 35(2)",
     "physical_or_printed_pages": "38",
@@ -299,7 +299,7 @@
   {
     "id": "F28",
     "guide_section": "Deadlines and filing",
-    "rule": "Every-company financial statements within6 months; two/sole director signatures; extension",
+    "rule": "Every company prepares financial statements within six months; two directors or the sole director sign, subject to a Registrar extension.",
     "source_key": "companies2013",
     "act_article": "Companies Act 245",
     "physical_or_printed_pages": "139",
@@ -310,7 +310,7 @@
   {
     "id": "F29",
     "guide_section": "Deadlines and filing",
-    "rule": "Subsidiaries at balance-sheet date trigger group statements in6 months",
+    "rule": "Subsidiaries at the balance-sheet date trigger group statements within six months.",
     "source_key": "companies2013",
     "act_article": "Companies Act 248",
     "physical_or_printed_pages": "140",
@@ -321,7 +321,7 @@
   {
     "id": "F30",
     "guide_section": "Deadlines and filing",
-    "rule": "Annual report/accounts six months with private unanimous/one-person exceptions",
+    "rule": "Annual report and accounts have a six-month rule with private unanimous-resolution and one-person exceptions.",
     "source_key": "companies2013",
     "act_article": "Companies Act 251",
     "physical_or_printed_pages": "140–141",
@@ -332,7 +332,7 @@
   {
     "id": "F31",
     "guide_section": "Deadlines and filing",
-    "rule": "Annual report delivery14 days prior meeting subject unrevoked written waiver",
+    "rule": "Annual report delivery is at least 14 days before the meeting, subject to an unrevoked written waiver.",
     "source_key": "companies2013",
     "act_article": "Companies Act 253",
     "physical_or_printed_pages": "142",
@@ -343,7 +343,7 @@
   {
     "id": "F32",
     "guide_section": "Deadlines and filing",
-    "rule": "Nonprivate accounts filing28 days after required signing",
+    "rule": "Companies other than private companies file annual report/accounts within 28 days after required signing.",
     "source_key": "companies2013",
     "act_article": "Companies Act 255",
     "physical_or_printed_pages": "142",
@@ -354,7 +354,7 @@
   {
     "id": "F33",
     "guide_section": "Deadlines and filing",
-    "rule": "Annual return once yearly,28days meeting,branch eight weeks, signature,incorporation-year may-not wording",
+    "rule": "Annual returns are yearly, ordinarily within 28 days of the meeting, with a separate eight-week branch-register rule, signature and incorporation-year wording.",
     "source_key": "companies2013",
     "act_article": "Companies Act 256",
     "physical_or_printed_pages": "143",
@@ -365,7 +365,7 @@
   {
     "id": "F34",
     "guide_section": "Deadlines and filing",
-    "rule": "Standards/private alternatives; foreign currency approval with two conditions",
+    "rule": "Financial statement standards distinguish private companies; foreign-currency approval requires both statutory conditions.",
     "source_key": "companies2013",
     "act_article": "Companies Act 246–249",
     "physical_or_printed_pages": "139–140",
@@ -376,7 +376,7 @@
   {
     "id": "F35",
     "guide_section": "Deadlines and filing; Sources",
-    "rule": "Private audit wording anomaly, shareholder-demand trigger; meeting-free filing unresolved",
+    "rule": "Private audit wording and shareholder-demand conditions require separate treatment; meeting-free return procedure is unresolved.",
     "source_key": "companies2013",
     "act_article": "Companies Act 66,244",
     "physical_or_printed_pages": "51,138",
@@ -387,7 +387,7 @@
   {
     "id": "F36",
     "guide_section": "Penalties and interest",
-    "rule": "Registrar14-day default notice; prevailing schedule not fixed amount; fee/gazettedpenalty power",
+    "rule": "Registrar default notices allow 14 days; fees and penalties refer to the prescribed/gazetted schedule, not an assumed fixed amount.",
     "source_key": "companies2013",
     "act_article": "Companies Act 5,17",
     "physical_or_printed_pages": "26,32",
@@ -398,7 +398,7 @@
   {
     "id": "F37",
     "guide_section": "Cross-border points",
-    "rule": "Foreign company local business test and listed activities that alone do not qualify",
+    "rule": "Foreign-company local business tests have specified activities that alone do not constitute carrying on business.",
     "source_key": "companies2013",
     "act_article": "Companies Act 357–358",
     "physical_or_printed_pages": "204–205",
@@ -409,7 +409,7 @@
   {
     "id": "F38",
     "guide_section": "Cross-border points",
-    "rule": "30-day foreign registration documents,2resident service agents, authority and Englishtranslation",
+    "rule": "Foreign registration has a 30-day trigger, authenticated documents, at least two resident service agents, authority and possible English translation.",
     "source_key": "companies2013",
     "act_article": "Companies Act 360",
     "physical_or_printed_pages": "205–206",
@@ -420,7 +420,7 @@
   {
     "id": "F39",
     "guide_section": "Cross-border points",
-    "rule": "Foreign registered office4hours exceptweekends/publicholiday",
+    "rule": "Foreign registered offices open at least four hours except Saturdays, Sundays and public holidays.",
     "source_key": "companies2013",
     "act_article": "Companies Act 361(1)",
     "physical_or_printed_pages": "206",
@@ -431,7 +431,7 @@
   {
     "id": "F40",
     "guide_section": "Cross-border points",
-    "rule": "Listed alterations30days; foreign annual statements and business notice with exceptions",
+    "rule": "Listed foreign-company alterations have 30-day filings; annual statements and business notices have separate ministerial exceptions.",
     "source_key": "companies2013",
     "act_article": "Companies Act 362,365–366",
     "physical_or_printed_pages": "207–208",
@@ -442,7 +442,7 @@
   {
     "id": "F41",
     "guide_section": "The base; Rates, bands and thresholds",
-    "rule": "TIN potential liability/prescribed evidence,14-day issuance,one personalTIN true identity;21-day changes;use/prohibition",
+    "rule": "TIN rules cover potential business tax liability, prescribed evidence, 14-day issuance, one personal TIN/true identity, 21-day changes and use prohibitions.",
     "source_key": "taa-2021",
     "act_article": "TAA 21–23",
     "physical_or_printed_pages": "20–21",
@@ -453,7 +453,7 @@
   {
     "id": "F42",
     "guide_section": "Cross-border points",
-    "rule": "Registrable nonresident no fixedplace needs localtaxrepresentative",
+    "rule": "A registrable nonresident without a fixed business place appoints a local tax representative.",
     "source_key": "taa-2021",
     "act_article": "TAA 28(2)",
     "physical_or_printed_pages": "23–24",
