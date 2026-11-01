@@ -141,7 +141,67 @@ Bank and payslip patterns for sorting records:
 | Orange Money / Wave / Free Money | PAIEMENT, TRANSFERT, RETRAIT | Mobile money - separate from bank; business vs personal must be confirmed |
 
 
-Benefits-in-kind values from the old version are on the "Not yet confirmed:" line.
+**Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified unless it also appears in the tables above; the tables win.
+
+Required records. Minimum: bank statement or payslips for the full year, plus tax home, family situation and employment or self-employment status. Better: payroll summary (gross, IR and TRIMF withheld, IPRES and CSS), last year's assessment, cadre status. Ideal: income statement, invoices, asset register, benefits schedule, rental detail, CGU declaration. No income document at all: stop. Income document without records: proceed and warn the reviewer that parts, cadre status and every deduction still need support.
+
+| Unknown | Default |
+| -- | -- |
+| Family situation | Stop: do not take the family reduction without marital status and children |
+| Tax home | Stop until confirmed; non-residents go to review |
+| Cadre status | IPRES general scheme only until confirmed |
+| Business use of vehicle, phone, home | 0% until a documented share is given |
+| Expense category | Not deductible |
+| Benefit in kind value | Flag for reviewer; the art. 166 scale was not worked through |
+| Turnover near the CGU limit | Confirm activity and regime before computing |
+
+Refuse and refer:
+- R-SN-1: family situation unknown. Ask for marital status and children before computing.
+- R-SN-3: non-resident or dual-resident cases beyond the cross-border points above. Refer to a Senegalese expert-comptable.
+- R-SN-4: companies and partnerships. They pay corporate tax; use sn-corporate-income-tax.
+- R-SN-6: capital gains and property disposals. Refer.
+
+Self-employed on the real regime: net business profit, income less wholly business expenses, feeds the bands. Non-commercial professions, property income and several employers stay outside CGU. Only the business share of phone, internet and premises counts. Never deductible: entertainment and personal meals, living costs, fines and penalties, IR itself, drawings.
+
+Reviewer flags: cadre classification and ceiling base; each benefit in kind and any travel allowance exemption; home office share; CGU against real regime near the limit, and whether opting for real helps.
+
+Rental income: the old version took a 30% standard deduction from gross rent. unverified: confirm against the CGI before use.
+
+| unverified: benefit | Old notional value, FCFA a month (PwC, not official) |
+| -- | -- |
+| unverified: accommodation | 13,500 to 33,500 |
+| unverified: domestic staff | 35,600 to 92,500 |
+| unverified: utilities | 10,500 to 30,200 |
+| unverified: company car | 26,000 to 77,500 |
+| unverified: telephone | 67,000 |
+| unverified: statutory travel allowance | Exempt up to 26,000 |
+
+Payslip and bank terms:
+
+### Key Senegalese / French payroll & banking terms
+
+**Payroll & Banking Terms Table**
+
+| Term | English | Classification hint |
+| --- | --- | --- |
+| SALAIRE BRUT | Gross salary | IRPP base (before deductions) |
+| SALAIRE NET | Net salary | After tax + social withholdings |
+| VIREMENT / VIR | Transfer | Check direction for income/expense |
+| PRÉLÈVEMENT / PRLV | Direct debit | Regular expense |
+| AGIOS / FRAIS / COMMISSION | Bank charges | Deductible (business account) |
+| IPRES | Pension contribution | Not deducted; the abatement replaces it (art. 182) |
+| CSS | Social security | Employer-only (employee 0%) |
+| TRIMF | Minimum personal tax | Withheld; separate from barème |
+| CFCE | Employer payroll tax | Employer-only (exclude from employee) |
+| ABATTEMENT | Lump-sum deduction | 30%, capped 900,000 |
+| LOYER | Rent | Income (received) or expense (paid) |
+| HONORAIRES | Professional fees | Self-employment income |
+| ORANGE MONEY / WAVE / FREE MONEY | Mobile money | Confirm business vs personal |
+| RETRAIT / GAB | Cash withdrawal | Ask what cash was used for |
+
+Working paper lines: gross pay; benefits in kind; 30% abatement capped; taxable income rounded down; tax from bands; parts; family reduction; 43% cap test; TRIMF; IR withheld; balance. Reviewer ticks: parts evidenced, cadre status, benefits confirmed, CGU tested.
+
+If the client cannot answer yet: sort the records with the patterns above, mark review items pending, apply the defaults and give the working paper with flags, then ask: tax home; family situation; employee, real regime or CGU; cadre status; benefits in kind; rent, dividends or interest; turnover and goods or services; IPRES and CSS withheld; TRIMF withheld; other employers or income.
 
 ## Deadlines and filing
 
@@ -234,7 +294,7 @@ expected:
 | DGID communique: SENTAX for CME1, CME2 and CPR from 1 October 2026: full text read | https://www.dgid.sn/storage/uploads/communique-ouverture-de-la-plateforme-sentax-aux-contribuables-du-cme1-cme2-et-du-cpr-1790699194.pdf | 2026-11-01 |
 | DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
 
-Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. Benefit-in-kind scale (old version relied on PwC; art. 166 not worked through); statutory travel allowance; IPM, IPRES and CSS rates (sites unreachable, see senegal-social-contributions); property gains; real regime expense rules for individuals; IR return box numbers; old claims that income from land is taxed at 20% and wages at 11% found no support in art. 173.
+Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. Benefit-in-kind scale (old version relied on PwC, carried above; art. 166 not worked through); statutory travel allowance; 30% rental deduction; IPM, IPRES and CSS rates (sites unreachable, see senegal-social-contributions); property gains; real regime expense rules for individuals; IR return box numbers; old claims that income from land is taxed at 20% and wages at 11% found no support in art. 173.
 
 <!-- openaccountants-cta-block -->
 
