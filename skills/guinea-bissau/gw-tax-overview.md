@@ -1,32 +1,55 @@
 ---
 name: gw-tax-overview
-description: "Source-cited draft: tax overview for Guinea-Bissau (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Guinea-Bissau tax system for 2026: which taxes exist, headline rates, deadlines and the DGCI portal, from the official codes."
 jurisdiction: GW
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
+version: 1.0
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guinea-Bissau Tax Overview
+# Guinea-Bissau Tax Overview (2026)
+
+**Status of the 2026 budget text.** The Ministry of Finance publishes a document called OGE 2026, dated December 2025 (https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195). Its law number and date are blank (`Lei n.º ____/202`), and we could not confirm a vote, promulgation or Boletim Oficial publication. Each rule below marked "2026 budget text" applies only if that law is in force. Confirm that with the DGCI before relying on it.
 
 ## Tax system at a glance
 
-Guinea-Bissau is a WAEMU/UEMOA member state that uses the West African CFA franc and broadly follows the Lusophone/WAEMU tax framework. The tax year is the calendar year and the tax authority is the Direction Générale des Contributions et Impôts (DGCI).
+Guinea-Bissau is in UEMOA and ECOWAS and uses the CFA franc (XOF). The tax year is the calendar year (Contribuição Industrial code art. 23: "o ano económico coincide com o ano civil"). The authority is the Direcção-Geral das Contribuições e Impostos (DGCI) in the Ministry of Finance, and returns run through [Kontaktu](https://kontaktu.mef.gw). Income is taxed by source, not under one income tax.
 
-- **Standard tax (fiscal) year** — 1 January – 31 December (approx — confirm)  _(Código Geral Tributário (General Tax Code) — https://taxatlas.io/country/guinea-bissau)_
-- **Official currency** — West African CFA franc (XOF / FCFA)  _(WAEMU/UEMOA monetary union framework (BCEAO) — https://taxatlas.io/country/guinea-bissau)_
-- **National tax authority** — Direction Générale des Contributions et Impôts (DGCI)  _(Ministério das Finanças — DGCI mandate — https://taxatlas.io/country/guinea-bissau)_
-- **Basis of taxation for residents** — Residents taxed on worldwide income; non-residents taxed on Guinea-Bissau-source income only (approx — confirm)  _(Imposto sobre o Rendimento das Pessoas Singulares (IRPS) statute)_
-- **Top marginal personal income tax (IRPS) rate** — 20 percent  _(Imposto sobre o Rendimento das Pessoas Singulares (IRPS) statute — https://taxatlas.io/country/guinea-bissau)_
-- **Standard corporate income tax rate** — 25 percent  _([Imposto sobre o Rendimento das Pessoas Colectivas (IRPC) / Contribuição Industrial statute](https://taxatlas.io/country/guinea-bissau))_
-- **Does Guinea-Bissau have VAT?** — Yes — VAT (IVA) was introduced effective 1 January 2025, replacing the former 19% general sales tax (Imposto Geral sobre Vendas e Serviços)  _(Código do Imposto sobre o Valor Acrescentado (IVA) — https://www.vatupdate.com/2025/01/16/guinea-bissau-introduction-of-the-vat-regime/)_
-- **Standard VAT (IVA) rate** — 19 percent  _(Código do Imposto sobre o Valor Acrescentado (IVA) — https://www.vatupdate.com/2025/01/16/guinea-bissau-introduction-of-the-vat-regime/)_
-- **Main annual income-tax filing deadline** — 31 March of the year following the tax year (approx — confirm)  _(Código Geral Tributário (General Tax Code) — https://taxatlas.io/country/guinea-bissau)_
-- **Regional tax/economic bloc** — Member of WAEMU/UEMOA and ECOWAS; tax framework influenced by WAEMU harmonization directives  _(WAEMU/UEMOA tax harmonization directives)_
-- **Taxpayer identification requirement** — A NIF (Número de Identificação Fiscal) is required for all formal economic activity, payroll remittance and bank accounts  _(DGCI taxpayer registration rules (NIF) — https://remotesolutionsafrica.com/payroll-compliance-in-guinea-bissau-understanding-iur-irps-inps-and-nif-requirements/)_
+| Tax | Headline | Skill | Official URL |
+|---|---|---|---|
+| Imposto Profissional | Employees 1% to 20%; self-employed 10% to 25% | [Income tax](gw-income-tax.md) | https://kontaktu.mef.gw/legislation |
+| Contribuição Industrial | 25%; minimum 1% of turnover; derrama 2% | [Corporate tax](gw-corporate-income-tax.md) | same |
+| Imposto de Capitais | 5%, 10% or 15% | [Corporate tax](gw-corporate-income-tax.md) | same |
+| IVA | 19%, 10%, 0%; simplified 5% | [VAT](gw-vat-gst.md) | same |
+| Excise | Lei 6/2022 | none yet | same |
+| Contribuição Predial Urbana | Urban property; has its own code | none yet | same |
+| Employee social security | 8% in the DGCI return | [Payroll](gw-payroll-social.md) | https://kontaktu.mef.gw/api/public_files/BAo5g30BVxKCKoELsx7W.pdf |
+
+Every taxpayer gets a número de identificação fiscal, used on all returns and invoices (Lei Geral Tributária). The general limits are four years to assess (art. 82) and eight years for debts to prescribe (art. 45).
+
+## Main deadlines
+
+| Item | Date |
+|---|---|
+| Withholding return (DECIRF) | 10th of next month |
+| IVA, normal regime | 15th of next month |
+| Employer annual map | 31 January |
+| Self-employed return | 28 February |
+| Company return | April |
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Consolidated codes, DGCI Kontaktu legislation page | https://kontaktu.mef.gw/legislation | 2026-11-01 |
+| DECIRF instructions | https://kontaktu.mef.gw/api/public_files/BAo5g30BVxKCKoELsx7W.pdf | 2026-11-01 |
+| OGE 2026, tax chapter | https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195 | 2026-11-01 |
+
+Not yet confirmed: whether the 2026 budget text is in force; the Imposto Complementar. The old skill's top "IRPS" 20% and 31 March filing date are replaced by the official codes.
 
 <!-- openaccountants-cta-block -->
 
