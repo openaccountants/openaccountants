@@ -1,0 +1,513 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 178 frá 22. desember 2009 um almenna heilsutrygd (Heilsutrygdarlógin) , sum seinast broytt við løgtingslóg nr. 50 frá 29. mai 2024
+22. desember 2009Nr. 178
+Løgtingslóg um almenna heilsutrygd, sum seinast broytt við løgtingslóg nr. 50 frá 29. mai 2024
+(Heilsutrygdarlógin) 1)
+Kapittul 1
+Kapittul 2
+Kapittul 3
+Kapittul 4
+Kapittul 5
+Kapittul 1
+Rætturin til veitingar
+§ 1. Persónar, ið eru búsitandi í Føroyum, hava rætt til veitingar sambært hesi lóg.
+Stk. 2. 2) 3) Landsstýrismaðurin í heilsumálum kann áseta nærri reglur um, at persónar, sum fyribils uppihalda sær í Føroyum, kunnu fáa rætt til veitingar sambært hesi lóg.
+§ 2. 4) 2) (Strikað).
+Stk. 2. 2) (Strikað).
+Stk. 3. 2) (Strikað).
+Kapittul 2
+Veitingar
+§ 3. Allir persónar, ið lúka treytirnar í lógini, hava rætt til ókeypis viðgerð hjá kommunulækna.
+Stk. 2. Persónar í aldrinum 15 til 18 ár kunnu sjálvir velja kommunulækna uttan samtykki frá foreldrum ella verja.
+Stk. 3. Landsstýrismaðurin ásetur nærri reglur um val av kommunulækna.
+Stk. 4. 2) 5) Landsstýrismaðurin í heilsumálum ásetur nærri reglur um, at Heilsutrygd rindar útreiðslur til neyðugan tolk, herundir deyvatolk, í sambandi við viðtalu hjá kommunulækna ella serlækna.
+§ 4. 5) (Strikað).
+Stk. 2. 5) (Strikað).
+Stk. 3. 5) (Strikað).
+Endurgjald til ferðing til og frá lækna og jarðarmóður
+§ 5. Endurgjald kann vera veitt fyri flutning til og frá kommunulækna í sambandi við sjúkraviðgerð ella kanning.
+Stk. 2. Endurgjald fyri flutning til og frá serlækna verður bert veitt, um kommunulæknin hevur ávíst persónin til serlækna, og um henda sjúkraviðgerð ella kanning verður framd í Føroyum.
+Stk. 3. Heilsutrygd veitir persónum, sum eru fevndir av lógini, endurgjald fyri flutning til og frá jarðarmóður.
+Stk. 4. Endurgjald verður veitt, um flutningur fer fram við tí eftir umstøðunum bíligasta og fullgóða flutningsfarinum, og um flutningsseðil frá læknanum verður flýggjaður Heilsutrygd.
+Stk. 5. Landsstýrismaðurin ásetur reglur um endurgjald fyri flutning sambært stk. 1 - 4, og reglur um heintan og flutning av heilivági, blóðroyndir, fylgjarar til eldri fólk, óhjálpin og børn undir 18 ár og evstamark fyri endurgjaldi.
+(Strikað) 6)
+§ 6. 6) (Strikað).
+Stk. 2. 6) (Strikað).
+Gravarhjálp
+§ 7. Við deyða verður gravarhjálp veitt. Gravarhjálpin kann í mesta lagi vera 5.000 kr.
+Stk. 2. Landsstýrismaðurin í heilsumálum ásetur nærri reglur um útrokning og útgjald av gravarhjálpini.
+Ískoyti til gjald fyri ymiskar viðgerðir
+§ 8. 5) Ískoyti kann verða veitt til gjald fyri viðgerð hjá:
+1)   Tannlækna.
+2)   Kiropraktori.
+3)   Tannrøktara.
+Stk. 2. 5) Eftir ávísing frá lækna kann ískoyti verða veitt til gjald fyri viðgerð hjá:
+1)   Fysioterapeuti.
+2)   Ergoterapeuti.
+3)   Sálarfrøðingi.
+4)   Fótterapeuti.
+Stk. 3. 5) Eftir ávísing frá kommunulækna kann ókeypis viðgerð verða veitt hjá serlækna.
+Stk. 4. 5) Landsstýrismaðurin ásetur nærri reglur og treytir um ískoyti, viðgerðarsløg og ókeypis serlæknaviðgerð sbrt. stk. 1-3.
+Ískoyti til brillur
+§ 9. Ískoyti verður veitt til gjald fyri brillur.
+Stk. 2. Landsstýrismaðurin í heilsumálum ásetur treytirnar fyri og støddina á ískoytinum sambært stk. 1.
+Hjálparráð 2)
+§ 10. 2) 6) Landsstýrismaðurin setur eina hjálparráðsnevnd at taka avgerð sambært reglunum í stk. 4 og 5.
+Stk. 2. 6) Hjálparráðsnevndin er mannað við trimum føstum limum: einum umboði frá Heilsutrygd, einum umboði frá Apoteksverkinum og einum umboði frá Sjúkrahúsverkinum. Harumframt einum ella fleiri serkønum limum við læknafakligari útbúgving. Heilsutrygd veitir skrivara og rindar kostnaðin av hjálparráðsnevndini.
+Stk. 3. 2) 6) Landsstýrismaðurin ásetur nærri reglur um virksemi nevndarinnar, tá henda skal viðgera umsóknir um tilskot til hjálparráð.
+Stk. 4. 6) Heilsutrygd veitir ískoyti til hjálparráð, sum eru tilskotsheimilað í kunngerð.
+Stk. 5. 6) Heilsutrygd veitir ískoyti til hjálparráð, sum er liður í eini viðgerð, ella sum er til persónar, sum ikki hava varandi tørv á hjálparráði.
+Stk. 6. 6) Ískoyti verður veitt til gjald fyri hjálparráð at nýta í sambandi við heilivág.
+Stk. 7. 6) Landsstýrismaðurin ásetur nærri reglur um hjálparráð sambært hesi grein, m.a. møguligt egingjald ella depositum fyri hjálparráð, hvussu stórt tilskot verður veitt til tað einstaka hjálparráðið, og hvørji hjálparráð tilskot verður veitt til.
+Millumtjóðasáttmálar
+§ 11. Landsstýrismanninum verður heimilað at gera sáttmálar við onnur lond um sínámillum viðgerð, barnsburðar- og gravarhjálp til persónar, sum fyribils eru staddir uttanlands.
+Stk. 2. Samsvarandi teimum í stk. 1 gjørdu sáttmálum, kann landsstýrismaðurin áseta nærri reglur um:
+1)   at endurgjald kann verða veitt fyri viðgerð til aðrar heilsutrygdir í øðrum londum,
+2)   at gravarhjálp kann vera veitt í øðrum londum.
+Kapittul 3
+Landsapotekarin 7)
+§ 12. 7) Landsapotekarin viðger umsóknir um tilskot til heilivág.
+Stk. 2. 2) 7) Landsapotekarin kann útvega sær tann neyðuga fakkunnleikan til viðgerð av umsóknum um tilskot til heilivág.
+Stk. 3. 7) Landsstýrismaðurin ásetur nærri reglur um virksemið hjá Landsapotekaranum, tá hesin skal viðgera umsóknir um tilskot til heilivág.
+Heilivágur, sum er heimilaður tilskot
+§ 13. 7) Tilskot verður veitt til heilivág, sum av Landsapotekaranum er lýstur at vera heimilaður tilskot. Landsapotekarin hevur dagføring av skránni við tilskotsheimilaðum heilivági um hendi.
+Vanligt tilskot
+§ 14. Tilskot verður veitt til keyp av heilivági, fyriskipaðum á forskrift.
+Treytað tilskot
+§ 15. Tilskot til fyriskipaðan heilivág kann vera treytað av, at heilivágurin er ætlaður persónum við ávísum sjúkum ella bólkum av fólki.
+Stk. 2. Tilskot til tey heilivágssløg, sum í skránni eru tilætlað ávísar sjúkur, er treytað av, at sjúklingurin hevur eina av teimum sjúkum, sum nevndar eru í sambandi við heilivágssløgini. Tilskotið verður bert veitt, tá læknin á forskriftina hevur viðmerkt treytað tilskot: (T).
+Stk. 3. Tilskot til tey heilivágssløg, sum í skránni eru treytað av, at tey verða latin persónum, ið fáa fólkapensjón ella fyritíðarpensjón, verður bert veitt, tá ið læknin á forskriftina hevur viðmerkt pensjónistur: (P), ella tá henda upplýsing er skrásett hjá apotekinum.
+Einstaklingatilskot
+§ 16.8) 7) Í ávísum førum kann Landsapotekarin, eftir umsókn frá lækna, gera av, um tilskot kann veitast einum ávísum sjúklingi til keyp av heilivági, kostískoyti o.a., sum ikki er lýst at vera heimilað tilskot sambært § 13.
+§ 17. 8) (Strikað).
+Støddin á tilskotinum
+§ 18. 9) Støddin á tilskotum er ásett eftir tilskotsprísunum sambært § 21 til heilivág o.a., sum veittur verður sambært §§ 13-16, og sum viðkomandi persónur hevur keypt innan fyri eitt ár frá fyrsta keypi. Eitt nýtt tíðarskeið byrjar, tá viðkomandi persónur aftur keypir tilskotsheimilaðan heilivág, eftir at gamla tíðarskeiðið er farið.
+Stk. 2. 9) Fyri persónar í aldrinum 18 ár til pensjónsaldur verður onki tilskot veitt, um útreiðslurnar til heilivág innan fyri eitt ár eru undir 967 kr.
+Stk. 3. 2) 3) 4) 7) 9) Eru útreiðslurnar til heilivág innan fyri eitt ár yvir 967 kr., er tilskotið:
+1)   40% av tí partinum av útreiðslunum, sum er yvir 967 kr. og upp til 1.574 kr.
+2)   60% av tí partinum av útreiðslunum, sum er oman fyri 1.574 kr. og upp til 3.148 kr.
+3)   75% av tí partinum av útreiðslunum, sum er oman fyri 3.148 kr. og upp til 6.296 kr.
+4)   100% av tí partinum av útreiðslunum, sum fer upp um 6.296 kr.
+Stk. 4. 2) 3) 9) Fyri pensjónistar og fyritíðarpensjónistar verður onki tilskot veitt, um útreiðslurnar til heilivág innan fyri eitt ár eru undir 967 kr.
+Stk. 5. 3) 7) 9) Eru útreiðslurnar til heilivág innan fyri eitt ár yvir 967 kr., er tilskotið:
+1)   40% av tí partinum av útreiðslunum, sum er yvir 967 kr. og upp til 1.974 kr.
+2)   60% av tí partinum av útreiðslunum, sum er oman fyri 1.974 kr. og upp til 2.500 kr.
+3)   75% av tí partinum av útreiðslunum, sum er oman fyri 2.500 kr. og upp til 2.800 kr.
+4)   100% av tí partinum av útreiðslunum, sum fer upp um 2.800 kr.
+Stk. 6. 3) 9) Børn og ung, yngri enn 18 ár, gjalda ikki egingjald.
+Stk. 7. 9) 10) Um ein persónur fyllir 18 ár í tíðarskeiðinum, verður tilskotið roknað eftir stk. 6 fram til tíðarskeiðið endar.
+Stk. 8. 9) 10) Um ein persónur verður pensjónistur ella fyritíðarpensjónistur í tíðarskeiðinum, verður tilskotið roknað eftir stk. 2 og 3 fram til tíðarskeiðið endar.
+Stk. 9. 9) 1. januar á hvørjum ári verða upphæddirnar í stk. 2-5 prístalsviðgjørdar í kunngerð.
+Terminaltilskot
+§ 19. Terminalsjúklingar fáa neyðuga heilivágin v.m. útflýggjaðan ókeypis frá tí degi, læknin skrivliga hevur váttað, at sjúklingurin væntast at liva í stutta tíð afturat, og at lekjandi viðgerð verður mett at vera nyttuleys.
+Stk. 2. Váttanin frá læknanum skal sendast Landsapotekaranum og skal innihalda hesar upplýsingar:
+1)   Navn, bústaður og p-tal hjá sjúklinginum.
+2)   Navn og starvsstaður læknans.
+3)   Váttan frá læknanum um, at sjúklingurin væntast at liva í stutta tíð afturat, og at lekjandi viðgerð verður mett at vera nyttuleys.
+4)   Dagfesting fyri útskriving frá sjúkrahúsi til terminalrøkt.
+5)   Undirskrift læknans.
+Útjavnan
+§ 20. Um ov stórt tilskot er veitt í sambandi við keyp av heilivági sambært reglunum í § 18, stk. 2 og 3, skal upphæddin útjavnast við komandi keypi av tilskotsheimilaðum heilivági. Útjavningin kann tó í heilt serligum førum verða útsett til næstu ferð, viðkomandi keypir tilskotsheimilaðan heilivág.
+Stk. 2. Um ov lágt tilskot er veitt í sambandi við keyp av tilskotsheimilaðum heilivági sambært reglunum í § 18, stk. 2 og 3, skal upphæddin útjavnast við komandi keypi av tilskotsheimilaðum heilivági.
+Stk. 3. Doyr sjúklingurin, fellur kravið sambært stk. 1 um útjavnan burtur. Krøv í sambandi við ov lítið veitt tilskot skulu setast fram í seinasta lagi eitt ár eftir, at sjúklingurin er deyður.
+Skipan av heilivági
+§ 21. Landsapotekarin skipar heilivág, sum er ætlaður somu indikasjón og sum hevur líknandi viðgerðarárin, í tilskotsbólkar.
+Stk. 2. 7) Fyri heilivág, sum verður skipaður í tilskotsbólk samsvarandi stk. 1, verður tilskotið ásett í mun til lægsta søluprís í bólkinum. Landsapotekarin kann tó gera av, at ásettur tilskotsprísur skal standa við í ásetta tíðarbili, hóast bíligari heilivágur verður tøkur í ásetta tíðarbili.
+Stk. 3. Um sjúklingur bert fær part av heilivági úr einum pakka (skamtluting), verður tilskotsprísurin ásettur fyri hvørja heilivágseind (eindartilskotsprísur) við støði í tilskotsprísinum eftir stk. 1.
+Hækkað tilskot
+§ 22. 7) Landsapotekarin kann, hóast ásetingarnar í § 21, í heilt serligum førum taka avgerð um at veita einum ávísum persóni hækkað tilskot samsvarandi § 18. Landsapotekarin tekur avgerð hesum viðvíkjandi seinast 14 dagar eftir móttøku av umsókn frá lækna.
+Kapittul 4
+Fígging
+§ 23. Útreiðslurnar í sambandi við hesa lóg verða, har annað ikki er tilskilað, goldnar av landskassanum.
+Gjald til Heilsutrygd 4) 10)
+§ 24. 4) 11) 1) 8) 6) Øll, sum hava fylt 18 ár og sum eru fevnd av hesi løgtingslóg, gjalda 175 kr. um mánaðin, umframt 0,70% av skattskyldugu inntøku sínari til Heilsutrygd.
+Stk. 2. 10) Persónar, sum eru fevndir av stk. 1, men sum rinda heilsutrygdargjald í øðrum Norðanlandi vísandi til Nordisk Konvention om social sikring, og sum ikki kunnu draga gjaldið frá, vísandi til skattalógina, kunnu eftir umsókn verða undantiknir gjaldskyldu sambært stk. 1. Tá ið umsøkjarin ikki longur rindar heilsutrygdargjald í øðrum Norðanlandi, hevur hann skyldu at boða Heilsutrygd frá hesum.
+Stk. 3. 10) TAKS krevur gjaldið inn fyri Heilsutrygd. Heilsutrygd rindar kostnaðin av hesum.
+Stk. 4. 4) 10) Rindar ein persónur, ið er umfataður av lógini, ikki gjaldið innan ásettu freist, verður rentutilskriving framd. Rentutilskrivingin er 0,7 % fyri hvønn byrjaðan mánað. Sama er galdandi fyri skuldskrivaða rentu. Lønareftirhald og panting kann eisini fara fram sambært reglunum í skattalógini.
+Stk. 5. 10) Landsstýrisfólkið kann áseta nærri reglur um viðurskifti viðvíkjandi umsókn, um hvat ár og nær frá umsóknin skal vera galdandi fyri og fráboðanarskyldu sambært stk. 2.
+Umsiting av lógini
+§ 25. Landsstýrismaðurin kann skipa ein stovn, Heilsutrygd, ið skal taka sær av at umsita lógina.
+Upplýsingar
+§ 26. 10) Heilsutrygd kann krevja inn allar upplýsingar, ið eru neyðugar fyri at umsita lógina, m.a. hagtøl frá sjúkrahúsum, kommunum, klinikkum, læknum, tannlæknum v.m. Til nýtslu í sambandi við umsókn um gjaldsundantøku sambært § 24, stk. 2, kann Heilsutrygd útvega sær upplýsingar frá øðrum viðkomandi myndugleikum, undir hesum TAKS.
+Stk. 2. 10) Hevur persónur givið Heilsutrygd skeivar upplýsingar ella tagt um umstøður, sum hava týdning fyri gjaldsundantøku sambært § 24, stk. 2, kann Heilsutrygd eftirfylgjandi krevja inn gjaldið, ið viðkomandi av órøttum ikki hevur goldið.
+Stk. 3. 10) Rindar ein persónur, ið er fevndur av løgtingslógini, ikki gjaldið smbrt. stk. 2 innan ásettu freist, verður rentutilskriving framd. Rentutilskrivingin er 0,7% fyri hvønn byrjaðan mánað. Sama er galdandi fyri skuldskrivaða rentu.
+Innheinting av skuld 10)
+§ 26 a. 10) Heilsutrygdargjald, renta og innheintingarkostnaður smbrt. § 26, ið er fallið til gjaldingar, kann verða innheintað við panting.
+Stk. 2. TAKS fremur panting fyri heilsutrygdargjald, skuldskrivaða rentu og innheintingarkostnað eftir stk. 1 eftir reglunum fyri innkrevjing av skattum, tó er § 7, stk. 1 í lov for Færøerne om inddrivelse af skatter og afgifter til det offentlige m.m. ikki galdandi.
+Stk. 3. TAKS fær heimild at innkrevja skuld og innkrevjingarkostnað sambært hesi løgtingslóg við at afturhalda í A-inntøku hjá teimum gjaldskyldugu sambært reglunum um hetta í skattalógini.
+Samráðingar 2)
+§ 27. 2) Fíggjarmálaráðið stendur fyri sáttmálasamráðingum við avvarðandi fakfeløg.
+§ 28. 2) (Strikað).
+Stk. 2. 2) (Strikað).
+Stk. 3. 2) (Strikað).
+Stk. 4. 2) (Strikað).
+Stk. 5. 2) (Strikað).
+Stk. 6. 2) (Strikað).
+Kærurættur
+§ 29. 7) 6) 12) Avgerðir tiknar av Heilsutrygd, Landsapotekaranum ella Hjálparráðsnevndini sambært hesi løgtingslóg, kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at kærarin hevur fingið fráboðan um avgerðina.
+Stk. 2. 6) 12) (Strikað).
+Stk. 3. 6) 12) (Strikað).
+Kapittul 5
+§ 30. Henda lóg kemur í gildi 1. januar 2010, sbr. tó stk. 2 og 4. Samstundis fer úr gildi Afsnit I í lovbekendtgørelse nr. 514 af 21. juli 1989 om den offentlige sygeforsikring, sum seinast broytt við løgtingslóg nr. 5 frá 25. januar 2001. Tó verður kunngerð nr. 10 frá 11. februar 2000 verandi í gildi.
+Stk. 2. §§ 10 og 13 – 22 koma í gildi 1. apríl 2010. Samstundis fer úr gildi løgtingslóg nr. 115 frá 21. mai 1993 um útreiðslur sjúkrakassanna til heilivág og afturbering landskassans, sum seinast broytt við løgtingslóg nr. 28 frá 30. mars 2009. Frá 1. januar til 31. mars 2010 veitir Heilsutrygd stuðul til heilivág samsvarandi reglunum í løgtingslóg nr. 115 frá 21. mai 1993.
+Stk. 3. Galdandi sáttmálar millum yrkisfeløg og sjúkrakassarnar verða yvirtiknir av Heilsutrygd og verða verandi í gildi, til teir verða uppsagdir, og nýggir sáttmálar eru gjørdir.
+Stk. 4. § 2 kemur í gildi 1. januar 2011.
+Stk. 5. 11) Nevndin í hvørjum einstøkum góðkendum sjúkrakassa hevur ábyrgdina av, at øll fíggjarlig viðurskifti pr. 31. desember 2009 millum sjúkrakassan og landið, kommunulæknar, limir o.o. verða avgreidd sum skjótast. Útreiðslurnar av hesum verða goldnar av sjúkrakassanum.
+Stk. 6. 13) 11) Fæið, sum er eftir í føroysku sjúkrakassunum, tá øll viðurskifti sjúkrakassanna eru avgreidd, verður latið sum stovnsfæ í Sjúkrakassagrunn Føroya. Endamál grunsins er at veita stuðul til átøk og verkætlanir, sum kunnu menna heilsuøkið í Føroyum, men sum ikki eru ein partur av rakstrinum av heilsuverkinum annars. Grunnurin skal innan 1. apríl 2014 hava gjørt skrivligar leiðreglur fyri, hvat fæið skal latast sum stuðul til, og skal hava útgoldið alt fæið til Granskingargrunnin, ið hereftir hevur ábyrgd av umsitingini av fænum samsvarandi leiðreglunum, ið Sjúkrakassagrunnur Føroya hevur ásett.
+Tórshavn, 22 desember 2009
+Kaj Leo Johannesen (sign.)
+løgmaður
+Lm. nr. 72/2009
+1) Broytt við løgtingslóg nr. 67 frá 22. mai 2015, har § 2 ljóðar soleiðis: “Stk. 1. § 1, nr. 1 og 2 koma í gildi 1. juni 2015. Stk. 2. § 1, nr. 3 kemur í gildi 1. januar 2016.”
+2) Broytt við løgtingslóg nr. 52 frá 14. mai 2013, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. juni 2013.”
+3) Broytt við løgtingslóg nr. 117 frá 25. september 2013, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 1. juni 2013.”
+4) Broytt við løgtingslóg nr. 168 frá 23. desember 2011, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi 1. januar 2012. Stk. 2. § 1, nr. 6 kemur tó í gildi 30. desember 2011.”
+5) Broytt við løgtingslóg nr. 13 frá 16. mars 2015.
+6) Broytt við løgtingslóg nr. 170 frá 12. desember 2020, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2021.”
+7) Broytt við løgtingslóg nr. 36 frá 30. apríl 2018, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi 1. mai 2018. Stk. 2. Avgerðir tiknar av Tilskotsnevndini, áðrenn henda løgtingslóg kom í gildi, kunnu innan 4 vikur frá 1. mai 2018 kærast til Kærunevndina í almanna- og heilsumálum.”
+8) Broytt við løgtingslóg nr. 166 frá 24. desember 2015, har § 3 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2016.”
+9) Broytt við løgtingslóg nr. 159 frá 20. desember 2023, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2024.”
+10) Broytt við løgtingslóg nr. 50 frá 29. mai 2024, har § 2 ljóðar soleiðis: “Stk. 1. § 1, nr. 1 kemur í gildi dagin eftir, at henda løgtingslóg er kunngjørd. Stk. 2. § 1, nr. 2-7 koma í gildi 1. juli 2024, og hevur virknað frá inntøkuárinum 2024.”
+11) Broytt við løgtingslóg nr. 129 frá 14. desember 2012, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2013.”
+12) Broytt við løgtingslóg nr. 159 frá 10. desember 2021, har § 43 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2022. Samstundis fer løgtingslóg nr. 47 frá 23. mars 1993 um kærunevnd í almanna-, familju- og heilsumálum úr gildi.”
+13) Broytt við løgtingslóg nr. 44 frá 8. mai 2012.
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Heilsu- og orkumálaráðið
+Útgávudagur: 30-11-2009
+Tilvísingar
+Heimildir
+Avtøkur
+Broytingar
+Løgtingsmál
+Løgtingsmál nr: 72/2009
+Kunngerðablaðið
+Kunngerðarblað  2009 A - Hefti 35 A frá 30. desember 2009
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

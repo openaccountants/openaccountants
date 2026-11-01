@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+      "sha256": "9a8b7132e123524941165e9b68848da1bdde50318faf097c510fd7c553471db3",
+      "locators": "Sections 2\u201352, printed pages 4\u201323"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/global-minimum-tax-act-2024-7478",
+      "locators": "Both iframe fragment links resolve to 2024-20o.pdf; contradictory current/out-of-date labels"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf",
+      "locators": "Article1.1, printed page8; scope only"
+    },
+    {
+      "url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two.pdf",
+      "status": "404 on direct retrieval; not relied on for operational instructions"
+    }
+  ]
+}

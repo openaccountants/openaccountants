@@ -1,0 +1,22 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2010/51/data.xml",
+      "sha256": "bd6472b4eb7741dc1b5a83bdf82229084f4236bdb7ba3ce0895d8ec1e1da90f3",
+      "locators": "Regulations 2\u20137 and Schedule; revised XML valid 2020-12-31"
+    },
+    {
+      "url": "https://www.legislation.gov.uk/uksi/2010/51/pdfs/uksi_20100051_en.pdf",
+      "locators": "Original as-made text, pages 1\u20133; not treated as current consolidation"
+    },
+    {
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm17025",
+      "locators": "Identification of SI 2010/51; not used to assert blanket exemption"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "locators": "Section 14B(1)\u2013(5), printed pages 78\u201379"
+    }
+  ]
+}

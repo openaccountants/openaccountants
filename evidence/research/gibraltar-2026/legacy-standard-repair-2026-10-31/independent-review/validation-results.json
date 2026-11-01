@@ -1,0 +1,13 @@
+{
+  "tax_scoped_guides": 15,
+  "tax_only_exit": 0,
+  "tax_only_passes": 150,
+  "whole_country_failure_count": 15,
+  "general_failure_guide_names": [
+    "skills/gibraltar/gi-bookkeeping-and-tax-records.md",
+    "skills/gibraltar/gi-company-accounts-and-reporting.md",
+    "skills/gibraltar/gi-einvoice.md"
+  ],
+  "whole_country_exit": 1,
+  "whole_country_exit_reason": "skill_checks.py returns1 when any printed check fails;15 failures recorded across3 general Guides"
+}

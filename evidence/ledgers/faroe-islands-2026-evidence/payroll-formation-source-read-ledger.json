@@ -1,0 +1,786 @@
+[
+  {
+    "id": "tax",
+    "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/tax.html",
+    "raw_sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/tax.reader.txt",
+    "reader_sha256": "94477e906a110fd8be8056270dc2684cc6318a395df4cd6f24fab7c198d3588d",
+    "locator_native_LF": [
+      [
+        434,
+        438
+      ],
+      [
+        489,
+        499
+      ],
+      [
+        689,
+        690
+      ],
+      [
+        693,
+        718
+      ],
+      [
+        799,
+        801
+      ],
+      [
+        858,
+        869
+      ],
+      [
+        1043,
+        1046
+      ],
+      [
+        1057,
+        1076
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pension",
+    "url": "https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension.html",
+    "raw_sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension.reader.txt",
+    "reader_sha256": "db890adf5eba22f3b149e0f0aecb29fd48a5e4a184bad301c25f1df2d1ae6e14",
+    "locator_native_LF": [
+      [
+        307,
+        315
+      ],
+      [
+        330,
+        336
+      ],
+      [
+        412,
+        415
+      ],
+      [
+        434,
+        436
+      ],
+      [
+        447,
+        451
+      ],
+      [
+        457,
+        522
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "health",
+    "url": "https://logir.fo/Logtingslog/178-fra-22-12-2009-um-almenna-heilsutrygd-sum-seinast-broytt-vid-logtingslog-nr-129-fra",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/health.html",
+    "raw_sha256": "f1fd06d3331540dae93788c2897cf2c608fb68eb966deb6d4f2ab36e01a23c5e",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/health.reader.txt",
+    "reader_sha256": "efee05345445921dc4ae739e88cefd60c4324696708c79ff31e747288a9750dd",
+    "locator_native_LF": [
+      [
+        415,
+        426
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "parental",
+    "url": "https://logir.fo/Logtingslog/48-fra-03-04-2001-um-barsilsskipan-sum-seinast-broytt-vid-logtingslog-nr-123-fra-22",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/parental.html",
+    "raw_sha256": "b44f3fb617776f63aeefc7e832df92d754e0cacb15a51b5313e408e704d5c54b",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/parental.reader.txt",
+    "reader_sha256": "d008f2de1e21cf86e0cdde4cf724a1bc2d239db8fb7ee233ec29cc0182da700e",
+    "locator_native_LF": [
+      [
+        414,
+        450
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "alsreg",
+    "url": "https://logir.fo/Kunngerd/203-fra-18-12-2020-um-ALSgjald",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsreg.html",
+    "raw_sha256": "a6dce59021b177569ed19df0b3de7501d82ed3e3980c75220707d00552692357",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsreg.reader.txt",
+    "reader_sha256": "fb3937e32faf301228d1cea7e9ebc077423b2ddffb4561b0720772684fb5372e",
+    "locator_native_LF": [
+      [
+        298,
+        298
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "als",
+    "url": "https://logir.fo/Logtingslog/113-fra-13-06-1997-um-arbeidsloysistrygging-og-arbeidsavising-sum-seinast-broytt-vid-logtingslog-nr-79",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/als.html",
+    "raw_sha256": "75df5747cc15968b8f807a2180a5a11c46ba391d1924541ed39d2493d7a7dae1",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/als.reader.txt",
+    "reader_sha256": "a83f88da0774a0b4339d49122bf1c06cf7f804562422d314318ad829c514f458",
+    "locator_native_LF": [
+      [
+        310,
+        313
+      ],
+      [
+        333,
+        352
+      ],
+      [
+        354,
+        354
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "ameg",
+    "url": "https://logir.fo/Logtingslog/39-fra-07-05-1991-um-arbeidsmarknadareftirlonargrunn-sum-seinast-broytt-vid-logtingslog-nr149-fra-20-desember",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/ameg.html",
+    "raw_sha256": "ce6715d3409fc6a2617d196efc2204bf6e2e723fb071a7c04e1d13a3eaf8211d",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/ameg.reader.txt",
+    "reader_sha256": "44a244439f6b2f5ca711668418e555f83bf33ede7f7f7baf32da2d7cddce48a2",
+    "locator_native_LF": [
+      [
+        307,
+        310
+      ],
+      [
+        315,
+        315
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pensionfeb",
+    "url": "https://logir.fo/Logtingslog/23-fra-26-02-2026-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionfeb.html",
+    "raw_sha256": "79738e723f584a9bad40ce0b75eefe8fe02f9425318e22a14c25af8130bd73f9",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionfeb.reader.txt",
+    "reader_sha256": "2bb298b9d90c409c25831ff0fd356cdb20a2041603a894c8c20679eff1abf490",
+    "locator_native_LF": [
+      [
+        301,
+        312
+      ],
+      [
+        320,
+        322
+      ],
+      [
+        331,
+        348
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "injury",
+    "url": "https://logir.fo/Logtingslog/67-fra-25-05-2009-um-trygging-moti-avleidingunum-av-arbeidsskada-sum-broytt-vid-logtingslog-nr",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/injury.html",
+    "raw_sha256": "2750be563e4659d3cf1107da26d2ab65d31ad64a507e18468c6759461880d172",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/injury.reader.txt",
+    "reader_sha256": "827230d14fda2f20d9e0c7856d6ac10f84eed758250ba0714f3ca8dc011abc24",
+    "locator_native_LF": [
+      [
+        326,
+        332
+      ],
+      [
+        627,
+        631
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "employer",
+    "url": "https://www.taks.fo/fo/vinna/studul/almenn-gjoeld-hja-arbeidsgevarum",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/employer.html",
+    "raw_sha256": "c9a2f4ed4849eec115d6a9dbe01f90a86fd379cabf34106b49295ba55b551419",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/employer.reader.txt",
+    "reader_sha256": "e6e10cfecaea68209f5c76025b7891afad050442ac63d22c71a54b4fca9ad298",
+    "locator_native_LF": [
+      [
+        23,
+        36
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "guarantee",
+    "url": "https://logir.fo/Logtingslog/68-fra-09-06-1988-um-trygdargrunn-fyri-avreidingar-og-lonir-vm-sum-seinast-broytt-vid",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/guarantee.html",
+    "raw_sha256": "81e5165d9ec8558a0fffa912147e5ae4199c1a75e8706751f3b43b110ceee369",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/guarantee.reader.txt",
+    "reader_sha256": "e15aaad2fbd8ba278012e4747282d13908e6261e0dc8fe957e179a975283a41d",
+    "locator_native_LF": [
+      [
+        313,
+        317
+      ],
+      [
+        328,
+        330
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "holiday",
+    "url": "https://logir.fo/Logtingslog/30-fra-07-04-1986-um-fritid-vid-lon-sum-seinast-broytt-vid-logtingslog-nr-56",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/holiday.html",
+    "raw_sha256": "d78637bdb258f41abd33b34839b419a28ae85aaae6240d6dd1a903710d5b836e",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/holiday.reader.txt",
+    "reader_sha256": "a612f9c37a5a394a8ac53487f888a810864de69b65c9f17ac486d76e2039da09",
+    "locator_native_LF": [
+      [
+        319,
+        321
+      ],
+      [
+        325,
+        330
+      ],
+      [
+        333,
+        339
+      ],
+      [
+        342,
+        342
+      ],
+      [
+        353,
+        367
+      ],
+      [
+        370,
+        374
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "broadcast",
+    "url": "https://www.taks.fo/fo/vinna/skattur/kringvarpsgjald",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/broadcast.html",
+    "raw_sha256": "55871504aaf3b7e9791d0b9d5b4d80454daa12c3df084e2411c226f9258e2772",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/broadcast.reader.txt",
+    "reader_sha256": "0aaa0f9e6b86bc895993d1d9e361d7767694f8ac0197d791c6526c7a75e02722",
+    "locator_native_LF": [
+      [
+        24,
+        37
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "healthreg",
+    "url": "https://logir.fo/Kunngerd/76-fra-26-06-2024-um-undantoku-fyri-gjaldsskyldu-av-heilsutrygdargjaldi",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/healthreg.html",
+    "raw_sha256": "9090e1b9d3fa33aefcc05024dc9b3de47c866d0e99a9f0ac3a7d1c8e7cb71a3d",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/healthreg.reader.txt",
+    "reader_sha256": "c47caba002062fee36417d11edc47f4e7e17b478a0d81f11259b0a92b9d5cab9",
+    "locator_native_LF": [
+      [
+        298,
+        313
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "amegreg",
+    "url": "https://logir.fo/Kunngerd/45-fra-21-05-2024-um-gjald-til-arbeidsmarknadareftirlonargrunn",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/amegreg.html",
+    "raw_sha256": "352d985dec155814f0aa35bc48bb4532e4b2da041f199b2d87822da1ad91aa10",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/amegreg.reader.txt",
+    "reader_sha256": "250e5047f53f07c63bb886ccc46db408b1e17589f9f63a7439a070fd34698396",
+    "locator_native_LF": [
+      [
+        298,
+        306
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pensionreg",
+    "url": "https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionreg.html",
+    "raw_sha256": "e675dcdbda64249afab44d98b0584d8e37bef9fefaa835b274fc2615dfa093d2",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionreg.reader.txt",
+    "reader_sha256": "f93b09e968d6bbe57ada1356d8b8642de7e7b02f8bc5310d09a6476f51dbeae6",
+    "locator_native_LF": [
+      [
+        298,
+        310
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pension2020",
+    "url": "https://logir.fo/Logtingslog/78-fra-07-06-2020-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin-og-logtingslog-um-skatt",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2020.html",
+    "raw_sha256": "18875eeda35556b859304b5b077640b69f34305d82664d3d0e2a7d66beff8b28",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2020.reader.txt",
+    "reader_sha256": "5d08fe670313eeaf07aa89e57d8e6fedc43046c5cce39304db85244971e310ad",
+    "locator_native_LF": [
+      [
+        301,
+        303
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pension-original",
+    "url": "https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=12289",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension-original.pdf",
+    "raw_sha256": "a2d5be75110094fe5e41c63e2b38e9a4fbd7ea8488eea6276e263412cca9c056",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension-original.reader.txt",
+    "reader_sha256": "5748694e2d0169b3a05c07f204c1bf4b3a9d539d83f40237a0c2d5015130a02b",
+    "locator_native_LF": [
+      [
+        35,
+        41
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pension2021",
+    "url": "https://logir.fo/Logtingslog/35-fra-26-03-2021-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2021.html",
+    "raw_sha256": "9c49c15f49878f30114b6655df8d4780432afc4978cf7288390b892b5f30eb8e",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2021.reader.txt",
+    "reader_sha256": "19bd27590b3ac19f7cfb483b1d5a170bea6aca59f6724097b29264c5e7dd9f34",
+    "locator_native_LF": [
+      [
+        301,
+        303
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "foreign2023-original",
+    "url": "https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=38060",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-original.pdf",
+    "raw_sha256": "732f3c4de3b228ee90aeb8f4c6474f3bd49769fa614510d55bd803df54428d8b",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-original.reader.txt",
+    "reader_sha256": "d81d83a15aa9e2b98d832f02f2d1f1e81b855d6e55d67f331d38de5a64ce103c",
+    "locator_native_LF": [
+      [
+        18,
+        42
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "foreignaug",
+    "url": "https://logir.fo/Kunngerd/72-fra-20-08-2026-um-broyting-i-kunngerd-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreignaug.html",
+    "raw_sha256": "4ae763cc55d09bb8fa326e8ba8011e2633410cb43caeae8d2241c4494531d3c0",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreignaug.reader.txt",
+    "reader_sha256": "8f87f761441e18bfb482662d73f2aca9dc157e36e3b3df64561b2c527adf6356",
+    "locator_native_LF": [
+      [
+        298,
+        316
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "foreign2023-exact",
+    "url": "https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-exact.html",
+    "raw_sha256": "cd02b592df2f5b9f6f31fd692b66c01efb6d2732125a25754fe9bb6af0bc7259",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-exact.reader.txt",
+    "reader_sha256": "fe40de548fa1d62c7bfa36d36b17c769118c895fea1158bd60f9dd3076fd760e",
+    "locator_native_LF": [
+      [
+        305,
+        313
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "pensionoct",
+    "url": "https://logir.fo/Logtingslog/86-fra-09-10-2026-um-broyting-i-logtingslog-um-eftirlon-Eftirlonarlogin",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionoct.html",
+    "raw_sha256": "419d993ec5ffa98108bc93a739cba52444d0f9ef2fa90ce759ebde660cf23a24",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionoct.reader.txt",
+    "reader_sha256": "461900dca19b0fa9defd2f79e2c5f6014fca4c38387ee2b59f5599fc809d2d9b",
+    "locator_native_LF": [
+      [
+        298,
+        318
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "values",
+    "url": "https://www.taks.fo/fo/borgari/gjoeld-og-agodar/arligar-virdisasetingar-hja-taks",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/values.html",
+    "raw_sha256": "34344f9a5def1b028ba884bcf90d744f7767af0eba2345c22769cbec6a57653a",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/values.reader.txt",
+    "reader_sha256": "58e6e955ebb5df26fe53c9e996cc6c9712fcce55a69460be6248019c72ef63be",
+    "locator_native_LF": [
+      [
+        23,
+        27
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        36,
+        38
+      ],
+      [
+        42,
+        43
+      ],
+      [
+        47,
+        124
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "vlsd",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/d-skattskyldug-inntoeka-hja-loentakararum",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/vlsd.html",
+    "raw_sha256": "900ed6edf8e58c6c153790b6db7c296a562476f91d89d605f22053f7c068ac95",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/vlsd.reader.txt",
+    "reader_sha256": "06a60adfb8400024e15e3f2783122c42dba5d6fba59b8b36bd31f2ab84c1a0fc",
+    "locator_native_LF": [
+      [
+        52,
+        57
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "benefits",
+    "url": "https://www.taks.fo/fo/vinna/skattur/friir-agodar-og-skattafriar-veitingar-til-starvsfolk",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/benefits.html",
+    "raw_sha256": "27ccb12d79e2c99ce0e053a09bd1472c6df4432b7f0d02ff336b74ca28452d72",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/benefits.reader.txt",
+    "reader_sha256": "39ee790dfefc647ff7fe7c0792914c067bdec6536d121ef8c2ac924ad88da0a4",
+    "locator_native_LF": [
+      [
+        24,
+        31
+      ],
+      [
+        68,
+        71
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "alsold",
+    "url": "https://www.als.fo/um-als/kunngerdir",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsold.html",
+    "raw_sha256": "16f8ec579089a8bd886ac3aaa996e3812c99cb2bd0f049911d293d32f6271432",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsold.reader.txt",
+    "reader_sha256": "7dff2697a48c631deb61052bd9581fc59415038daac7f1c1d6c92f1a65abbecf",
+    "locator_native_LF": [
+      [
+        449,
+        453
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "alsjuly",
+    "url": "https://logir.fo/Kunngerd/69-fra-21-07-2026-um-broyting-i-kunngerd-um-ALSgjald",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsjuly.html",
+    "raw_sha256": "668fae72ae6e2f96b8e37131e594bb5de8539bce02862f2c299513b5e21e4bf7",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsjuly.reader.txt",
+    "reader_sha256": "baa4b26c34a068206b33b1bdd03a066227e340c57cc5d9632b75dd56a85f0e3f",
+    "locator_native_LF": [
+      [
+        305,
+        324
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "books",
+    "url": "https://logir.fo/Logtingslog/23-fra-20-03-2018-um-bokhald",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/books.html",
+    "raw_sha256": "07d62219e686fc8676e9a36fc7d8a22cbc25a9c259b36897f2cb0fb03bea1499",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/books.reader.txt",
+    "reader_sha256": "1d59557947a76391414b45f76556f279ea706e73751f9fb0eefa458e475d31e7",
+    "locator_native_LF": [
+      [
+        331,
+        359
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "company",
+    "url": "https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/company.html",
+    "raw_sha256": "cbe98e2377382138462fe6e24ee23d36e67f34a4218bae60f63bb9b59b868e8c",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/company.reader.txt",
+    "reader_sha256": "24c73365080dcba70178e230cece3787d8c7996767d21f352bb0890866b6f2d2",
+    "locator_native_LF": [
+      [
+        326,
+        327
+      ],
+      [
+        329,
+        332
+      ],
+      [
+        338,
+        338
+      ],
+      [
+        377,
+        377
+      ],
+      [
+        402,
+        405
+      ],
+      [
+        444,
+        475
+      ],
+      [
+        488,
+        488
+      ],
+      [
+        499,
+        509
+      ],
+      [
+        521,
+        527
+      ],
+      [
+        529,
+        532
+      ],
+      [
+        559,
+        574
+      ],
+      [
+        580,
+        582
+      ],
+      [
+        587,
+        602
+      ],
+      [
+        604,
+        608
+      ],
+      [
+        613,
+        613
+      ],
+      [
+        732,
+        737
+      ],
+      [
+        850,
+        855
+      ],
+      [
+        881,
+        881
+      ],
+      [
+        1346,
+        1354
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "accounts",
+    "url": "https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/accounts.html",
+    "raw_sha256": "d2daccf0b69b0145bf69792b3149f399d74e67057ab12a34b9403fd6fdc9d0ba",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/accounts.reader.txt",
+    "reader_sha256": "12a4cfd946388614acb7060a4a441022d656320a167f3de4408a4c2866ea2e54",
+    "locator_native_LF": [
+      [
+        406,
+        423
+      ],
+      [
+        437,
+        437
+      ],
+      [
+        449,
+        475
+      ],
+      [
+        481,
+        481
+      ],
+      [
+        522,
+        522
+      ],
+      [
+        756,
+        756
+      ],
+      [
+        1181,
+        1200
+      ],
+      [
+        1217,
+        1217
+      ],
+      [
+        1286,
+        1292
+      ],
+      [
+        1294,
+        1295
+      ],
+      [
+        1297,
+        1301
+      ],
+      [
+        1407,
+        1408
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "forms",
+    "url": "https://www.skraseting.fo/fo/feloeg/stovna-felag",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/forms.html",
+    "raw_sha256": "ee6a4c4c18046469bc8ab4bcacb66202c547a9c7dbbadff590dd37ddbe5ff9c7",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/forms.reader.txt",
+    "reader_sha256": "5890f7a3992ec872ddf3685e32c0c6147755f638470c88b2ab50e79f7a3f2f94",
+    "locator_native_LF": [
+      [
+        44,
+        49
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "start",
+    "url": "https://www.taks.fo/en/business/starting-a-business/starting-a-business",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/start.html",
+    "raw_sha256": "a82bdc425e327ba1498ae2d9f6ff8a9d20322e6fab7880d5d2467eae6216bed5",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/start.reader.txt",
+    "reader_sha256": "2549fa04d30af2e47058e5bdbb00970809cbdc260d877071cab18dc2a957a6c2",
+    "locator_native_LF": [
+      [
+        25,
+        37
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  },
+  {
+    "id": "prior",
+    "url": "https://www.logir.fo/Anordning/1355-fra-09-12-2007-om-ikrafttraeden-for-Faeroerne-af-arsregnskabsloven-sum-seinast-broytt-vid-logtingslog",
+    "raw": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/prior.html",
+    "raw_sha256": "97acb40907d21d5dd07e2c8df4f6f77b3e09e56a43538f72ddf4c6e4f0f7f6e5",
+    "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/prior.reader.txt",
+    "reader_sha256": "0168564e82d167f62725680ad9086eb6124c44f883b0bc8dfd67cbaa7076b135",
+    "locator_native_LF": [
+      [
+        1065,
+        1074
+      ],
+      [
+        1097,
+        1097
+      ],
+      [
+        1159,
+        1167
+      ]
+    ],
+    "actual_read_scope": "Selected exact excerpts in the figure/rule ledgers and separately recorded complete critical scopes. Locator ranges are not a claim to have read every intervening line.",
+    "read_on": "2026-10-28"
+  }
+]

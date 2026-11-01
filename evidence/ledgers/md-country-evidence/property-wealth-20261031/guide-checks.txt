@@ -1,0 +1,22 @@
+skills/moldova/md-property-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/moldova/md-wealth-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass

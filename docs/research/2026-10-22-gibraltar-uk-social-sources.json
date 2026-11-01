@@ -1,0 +1,26 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf",
+      "sha256": "5e811e757e74d6cb60323ba2ca527dd7dc6d6ea55b529f0ec8a1047f05a01c87",
+      "locators": "Order 2\u20134; agreement Articles 2, 9\u201314; pp10,12\u201315; schedule OCR with visual checks pp13\u201315"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland",
+      "locators": "Coming to UK from Gibraltar; certificate evidence; web retrieval"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers",
+      "locators": "Detached-worker contact only; web retrieval"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822",
+      "locators": "Before you start; required information; agents; extensions; online route; retrieved with web tool"
+    },
+    {
+      "url": "https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837",
+      "locators": "Eligibility; required information; extensions; online route; retrieved with web tool"
+    }
+  ]
+}

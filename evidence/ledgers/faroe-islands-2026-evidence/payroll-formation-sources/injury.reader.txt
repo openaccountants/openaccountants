@@ -1,0 +1,714 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 67 frá 25. mai 2009 um trygging móti avleiðingunum av arbeiðsskaða (Arbeiðsskaðatryggingarlógin), sum seinast broytt við løgtingslóg nr. 204 frá 11. desember 2025
+25. mai 2009Nr. 67
+Løgtingslóg um trygging móti avleiðingunum av arbeiðsskaða, sum seinast broytt við løgtingslóg nr. 204 frá 11. desember 2025
+(Arbeiðsskaðatryggingarlógin)
+PARTUR I Øki lógarinnar
+Kapittul 1
+Kapittul 2 Arbeiðsskaðar
+Kapittul 3 Tey tryggingarskyldugu og samhaldsfasta skipanin
+Kapittul 4 Arbeiðsskaðatryggingin
+PARTUR II Fráboðan, málsviðgerð og kæra
+Kapittul 5 Fráboðan um arbeiðsskaðar
+Kapittul 6 Málsviðgerðin
+Kapittul 7 Kæra
+PARTUR III Veitingarnar
+Kapittul 8 Um veitingarnar
+Kapittul 9 Sjúkuviðgerð, uppvenjing og hjálpitól o.a. undir málsviðgerðini
+Kapittul 10 Dagpeningur vegna sjúku aftan á arbeiðsskaða
+Kapittul 11 Endurgjald fyri mist vinnuføri
+Kapittul 12 Skaðabót fyri varandi mein
+Kapittul 13 Skiftisveiting til eftirsitandi
+Kapittul 14 Endurgjald fyri miss av uppihaldara
+PARTUR IV Almennar reglur
+Kapittul 15 Aftursóknarkrøv, revsing o.a.
+Partur V Vinnusjúkugrunnurin
+Kapittul 16 Vinnusjúkugrunnurin
+Kapittul 17 Revsiásetingar
+Kapittul 18 Gildiskoma og skiftisreglur
+PARTUR I
+Øki lógarinnar
+Kapittul 1
+§ 1. Endamálið við lógini er at veita endurgjald til persónar, ið koma fyri skaða, ella teirra avvarðandi orsakað av óhappi í sambandi við útinnan av arbeiði.
+Tryggjaður móti arbeiðsskaða
+§ 2. 1) Tann, sum fyri løn ella óløntur verður settur í starv hjá føroyskum arbeiðsgevara at arbeiða støðugt ella fyribils á føroyskum landøki, sjóøki ella loftrúmi yvir nevndu økjum, er tryggjaður móti avleiðingunum av arbeiðsskaða eftir hesi lóg, sbr. § 8.
+Stk. 2. Húski arbeiðsgevarans er bert tryggjað, um arbeiðsviðurskifti teirra kunnu javnmetast við vanlig arbeiðstakaraviðurskifti.
+Stk. 3. Hjúnafelagi arbeiðsgevarans er bert tryggjaður, um hjúnafelagarnir hava eina sínámillum lønaravtalu, sum, tá arbeiðsskaðin hendi, lýkur krøvini í skattalóggávuni.
+Stk. 4. Tryggingin fevnir um alt arbeiði fyri arbeiðsgevaran, haruppií arbeiði í virki hansara, uttan mun til, um tað er vinnuligt ella ikki, arbeiði í persónliga húsarhaldi arbeiðsgevarans, ella tá persónligar tænastur annars verða veittar arbeiðsgevaranum ella húski hansara.
+§ 3. Javnmett við teir í § 2 nevndu persónar eru sjófólk, sum arbeiða umborð á føroyskum skipi.
+Sjálvstøðugt vinnurekandi
+§ 4. 1) Øll sjálvstøðugt vinnurekandi, sum virka á føroyskum landøki, sjóøki ella loftrúmi, hava skyldu at tekna trygging fyri egnan persón og at rinda gjald til Vinnusjúkugrunnin, sbr. § 79.
+Onnur, ið eru tryggjað, og har landskassin rindar
+§ 5. Tryggjaðir eru eisini persónar:
+1)   í yrki teirra sum borgarligt ella kommunalt umboð,
+2)   í yrki sum álitisumboð fyri starvsfólkið á arbeiðsplássinum,
+3)   sum royna at bjarga mannalívi, fyribyrgja vanlukkum ella verja fyri stórvegis evnisligum ella mentanarligum missi, um royndin, hóast hon ikki kann metast sum partur av arbeiðinum, sbr. § 1, kortini verður framd í sambandi við vanliga arbeiði teirra,
+4)   sum royna at bjarga mannalívi á føroyskum landøki, sjóøki ella loftrúmi, hóast royndin ikki verður framd í sambandi við arbeiði teirra.
+§ 6. 2) Landsstýrisfólkið kann, samsvarandi reglum í galdandi millumtjóða sáttmálum, áseta reglur um, at eisini onnur koma undir hesa lóg, harímillum:
+1)   persónar, sum føroyskur arbeiðsgevari fyribils sendir út í onnur lond at arbeiða fyri seg,
+2)   persónar, sum fyri útlendskan arbeiðsgevara arbeiða her á landi ella umborð á útlendskt skrásettum skipi, boripalli ella líknandi á føroyskum sjóøki,
+3)   persónar undir útbúgving, og
+4)   persónar undir forsorg.
+Børn
+§ 7. Livandi føtt barn, sum í móðurlívi hevur fingið sjúku orsakað av arbeiðinum, sum móðirin hevði, meðan hon var við barn, er eisini tryggjað ímóti avleiðingunum av sjúkuni eftir hesi lóg.
+Stk. 2. Um tað seinni verður staðfest, at árin á foreldrini áðrenn gitnaðin ella eftir føðingina hava havt skaðiliga ávirkan á fostur ella barn, kunnu tílíkir skaðar koma undir lógina samsvarandi § 10.
+Kapittul 2
+Arbeiðsskaðar
+§ 8. 3) Við arbeiðsskaða í hesi løgtingslóg er at skilja vanlukka, sbrt. § 9, og vinnusjúka, sbrt. § 10, ið stendst av arbeiðinum ella teimum viðurskiftum, arbeitt verður undir.
+§ 9. 3) Við eina vanlukku er sambært hesi løgtingslóg at skilja ein persónskaði, ið er elvdur av einum tilburði ella eini ávirkan, sum hendir brádliga ella innan fyri 5 dagar.
+Stk. 2. 3) Fyri vanlukkur er rættarvirknaðurin í hesi løgtingslóg galdandi frá degnum, tá vanlukkan hendi, ella frá degnum, tá ávirkanin, sum hevur elvt til vanlukkuna, heldur uppat, um ikki annað er ásett í løgtingslógini.
+§ 10. Vinnusjúkur eru sjúkur, sum eftir læknafrøðiligum og tøkniligum royndum eru elvdar av serligum árinum, sum ávísir persónsbólkar, orsakað av arbeiði teirra ella viðurskiftunum, arbeitt verður undir, verða ávirkaðir av í størri mun enn persónar uttan tílíkt arbeiði. Harumframt sjúkur, sum livandi fødd børn hava fingið í móðurlívi orsakað av arbeiði, móðirin hevði, ímeðan hon var við barn.
+Stk. 2. 2) Landsstýrisfólkið ásetir í kunngerð, eftir tilmæli frá Vanlukkutryggingarráðnum, hvørjar sjúkur kunnu viðurkennast sum tílíkar vinnusjúkur. Landsstýrisfólkið kann í hesum sambandi áseta, at sjúkur bert eru fevndar av lógini, um tær eru elvdar av arbeiði í ávísum virkisøki, undir ávísum umstøðum, ella aðrar serligar treytir eru loknar.
+Stk. 3. 4) Vinnusjúka er eisini aðrar sjúkur, m.a. sjúkur, sum livandi fødd børn hava fingið í móðurlívi, um tað verður prógvað annaðhvørt, at sjúkan eftir nýggjastu læknafrøðiligu royndunum lýkur krøvini í § 10, stk. 1 og stk. 2, pkt. 2, ella sjúkan einans ella í høvuðsheitum verður hildin at vera elvd orsakað av serligum arbeiðsumhvørvi.
+Stk. 4. Sjúkur, elvdar av árinum á foreldrini framman undan gitnaðinum ella eftir føðingina, kunnu við broyting í kunngerðini, nevnd í stk. 2, verða viðurkendar sum vinnusjúkur ella viðurkendar sum vinnusjúkur sambært stk. 3, um tað seinni verður prógvað, at hesi árin á foreldrini hava havt skaðiliga ávirkan á fostrið ella barnið.
+Stk. 5. Um ikki annað er ásett í hesi lóg, hava vinnusjúkur rættarvirknað frá tí degi, sjúkan verður fráboðað sambært reglunum í 5. kapitli.
+Stk. 6. 4) Ein persónur, sum hevur fingið eina sjúku, ið er tikin við í vinnusjúkuskránni sbrt. § 10, stk. 2, kann krevja veitingar eftir lógini, uttan so at tað má metast, at sjúkan við mestu sannlíkindum er orsakað av øðrum viðurskiftum enn teimum vinnuligu.
+Kapittul 3
+Tey tryggingarskyldugu og samhaldsfasta skipanin
+Arbeiðsgevarar við tryggingarskyldu og skyldu um samhaldsfasta skipan
+§ 11. 1) Hvør tann, sum í starvi hevur persónar, sum eru nevndir í §§ 2, 3 og 7, er arbeiðsgevari í lógarinnar týdningi og hevur skyldu til at tryggja arbeiðsfólkið móti avleiðingunum av arbeiðsskaða, samsvarandi ásetingunum í hesi lóg, sbr. tó stk. 2, § 12 og § 15, stk. 2.
+Stk. 2. Tryggingarskylda er tó ikki fyri persónar, sum arbeiða í persónliga húsarhaldi arbeiðsgevarans, ella veita arbeiðsgevaranum ella húski hansara persónligar tænastur annars, um starvstíðin samanløgd er minni enn 100 tímar í 12 fylgjandi mánaðir.
+§ 12. Reiðari á skipi, sum er ella skal vera skrásett í Føroysku Skipaskránni ella Føroysku Altjóða Skipaskránni, hevur skyldu at tryggja sbrt. § 11, stk. 1, ein og hvønn persón, fevndur av §§ 2, 3 og 7, sum er settur í starv at arbeiða umborð á skipinum eftir skiparans ávísing, sjálvt um annar enn reiðarin hevur sett tey í starv ella lønir teimum, og sjálvt um arbeiðið fevnir um annað enn raksturin av skipinum.
+Stk. 2. Reiðarin hevur eisini skyldu sbrt. § 11, stk. 1 til at tryggja persónar, sum heilt ella partvíst eru eigarar av skipinum og sum arbeiða umborð á hesum, uttan so, at skipið einans verður nýtt til stuttleikasigling.
+§ 13. 3) Tryggingarskyldugur arbeiðsgevari er tann arbeiðsgevari, í hvørs tænastu arbeiðsskaðin hendi.
+Stk. 2. 3) (Strikað).
+§ 14. Ein arbeiðsgevari, ið hevur átikið sær eitt arbeiði, hevur skyldu til eisini at tryggja tey arbeiðsfólk, ið hin sáttmálaparturin letur honum til tess at útinna hetta arbeiðið.
+Stk. 2. Tann, ið rekur vinnuvirki, ella útinnir tryggingarskyldugt arbeiði, hevur skyldu at tryggja tey arbeiðsfólk, sum eru knýtt at virkinum ella arbeiðinum, sjálvt um arbeiðsfólkið er sett í starv av øðrum arbeiðsgevara, sum hevur átikið sær at útinna ein part av arbeiðinum. Hevur hesin seinni arbeiðsgevarin sjálvur tryggjað sítt arbeiðsfólk, er hann tryggingarskyldugur arbeiðsgevari.
+Kapittul 4
+Arbeiðsskaðatryggingin
+Tekning av arbeiðsskaðatrygging
+§ 15. 3) 1) Allir tryggingarskyldugir arbeiðsgevarar, haruppií allar tær føroysku kommunurnar, umframt øll sjálvstøðugt vinnurekandi, skulu lata ábyrgdarvandan fyri vanlukkur til tryggingarfelag, ið sambært løgtingslóg um tryggingarvirksemi hevur loyvi at tekna arbeiðsskaðatryggingar í Føroyum, sbr. tó § 16.
+Stk. 2. Landið hevur tó ikki skyldu til at lata ábyrgdarvandan sambært hesi lóg til eitt tryggingarfelag.
+§ 16. Tryggingarskyldan viðvíkjandi vinnusjúkum verður lokin við at rinda gjald til Vinnusjúkugrunnin sbrt. § 79.
+Mishald av tryggingarskylduni
+§ 17. 2) Tryggingarskyldugur arbeiðsgevari, sum ikki hava teknað tær sambært hesi lóg kravdu tryggingar, ella sum ikki hava varðveitt tílíkar tryggingar í gildi, skulu heilt ella partvíst rinda eina upphædd, svarandi til tryggingargjøldini, ið áttu at verið goldin einum tryggingarfelag, umframt rentu, ið er 1% yvir diskonto Tjóðbankans. Upphæddin verður samsvarandi nærri reglum, ásettar av landsstýrisfólkinum, lutfalsliga býtt ímillum tey tryggingarfeløg, ið tekna arbeiðsskaðatryggingar í Føroyum.
+Stk. 2. Er talan um sjálvstøðugt vinnurekandi, verða skyldug tryggingargjøld mótroknað í veitingunum sambært lógini, sum tann sjálvstøðugt vinnurekandi ella hansara eftirsitandi fáa útgoldið í sambandi við arbeiðsskaða.
+Stk. 3. Um serligar umstøður tala fyri tí, kann Vanlukkutryggingarráðið heilt ella partvíst frítaka tryggingarskylduga arbeiðsgevaran ella tann sjálvstøðugt vinnurekandi fyri at rinda skyldug tryggingargjøld. Somuleiðis kann Vanlukkutryggingarráðið í serligum førum avgera, at skyldug tryggingargjøld hjá sjálvstøðugt vinnurekandi heilt ella partvíst ikki skulu verða mótroknað í veitingum sambært lógini.
+Stk. 4. Tryggingarfelagønini hava útpantingarrætt fyri skyldug tryggingargjøld, rentur og aðrar útreiðslur hesum viðvíkjandi.
+Skyldur tryggingarfelagsins
+§ 18. Tá ið tryggingarfelagið ella Vinnusjúkugrunnurin hevur átikið sær ábyrgdarvandan hjá tryggingarskyldugum arbeiðsgevara ella sjálvstøðugt vinnurekandi, ábyrgdast tryggingarfelagið mótvegis tryggjaða, sjálvt um tað átók sær ábyrgdarvandan undir skeivum treytum.
+§ 19. Tryggingin í hesi lóg fevnir um tann persónsskaða, sum er elvdur av arbeiðsskaðanum, hóast skaðin í sjálvum sær er lítil í mun til samlaðu heilsustøðu hins tryggjaða.
+Stk. 2. Er ein persónsskaði ikki einans elvdur av fráboðaða tilburðinum, skal tryggjaði hava boð um hetta í seinasta lagi, tá Vanlukkutryggingarráðið sambært § 29 kunnar tryggjaða um, hvørt tilburðurin kann viðurkennast sum ein arbeiðsskaði.
+§ 20. Tryggjaðir eru ikki vanlukkutilburðir, ið standast av herstríði, burtursæð frá vanlukkutilburðum, ið henda á sjónum.
+§ 21. 3) 2) Er hend vanlukka, sum tryggingarskyldugur arbeiðsgevari ella sjálvstøðugt vinnurekandi ikki hevur tryggjað, verða útreiðslurnar, nevndar í § 22, stk. 1, § 28, stk. 4 og § 37, stk. 3, umframt veitingarnar, sbrt. § 38, rindaðar av øllum tryggingarfeløgunum, ið tekna arbeiðsskaðatryggingar í Føroyum, samsvarandi nærri reglum, ásettar av landsstýrisfólkinum. Er talan um sjálvstøðugt vinnurekandi, verða ásetingarnar, í § 17, stk. 2 og 3 eisini nýttar.
+Stk. 2. 3) Arbeiðsgevarin ella tann sjálvstøðugt vinnurekandi skal endurrinda útreiðslurnar hjá tryggingarfeløgunum í stk. 1, umframt rentu við 1% yvir diskonto Tjóðbankans, uttan so, at Vanlukkutryggingarráðið metir, at talan er um slíkar umberandi umstøður, at tann tryggingarskyldugi arbeiðsgevarin ella tann sjálvstøðugt vinnurekandi eigur heilt ella partvíst at frítakast fyri at endurrinda.
+Stk. 3. 3) 2) Upphæddin, sum endurrindast skal sbrt. stk. 2, verður ásett og innheintað av Vanlukkutryggingarráðnum og samsvarandi nærri reglum, ásettar av landsstýrisfólkinum, lutfalsliga býtt ímillum tryggingarfeløgini. Útpantingarrættur er fyri upphæddina, sum endurrindast skal, umframt rentur og aðrar útreiðslur hesum viðvíkjandi.
+Stk. 4. 3) Í tann mun, tað verður mett at vera rímiligt, kann Vanlukkutryggingarráðið geva arbeiðsgevaranum ella tí sjálvstøðugt vinnurekandi upphæddina eftir.
+Stk. 5. 3) Ásetingarnar í stk. 1 verða nýttar samsvarandi í sambandi við vanlukkur, ið henda persónum, sum arbeiðsgevarin, sbr. § 11, stk. 2, ikki hevur skyldu at tryggja.
+Stk. 6. 3) Ásetingarnar í stk. 1 verða nýttar samsvarandi, um ein ávísur tryggingarskyldugur arbeiðsgevari ikki kann ávísast eftir reglunum í § 13, stk. 2, ella um eitt ávíst tryggingarfelag ikki kann ávísast, tí arbeiðsgevarin er givin við virkseminum, eftir at vanlukkan er hend í tænastu hansara.
+Stk. 7. 3) Velur landið ikki at lata ábyrgdarvandan sambært hesi lóg til eitt tryggingarfelag, verða allar tær útreiðslur, sum annars vórðu rindaðar av tryggingarfeløgum, rindaðar av landinum.
+§ 22. Landskassin, sbrt. § 15, stk. 2, ella tryggingarfelagið rindar málsviðgerðarútreiðslurnar umframt veitingarnar til teir í § 6, nr. 1 nevndu persónar. Ásetingarnar í § 21 verða nýttar samsvarandi.
+Stk. 2. Tryggingarfelagið rindar málsviðgerðarútreiðslurnar umframt veitingarnar til teir í § 6, nr. 2 nevndu persónar. Ásetingarnar í § 21 verða nýttar samsvarandi.
+Stk. 3. Landskassin rindar málsviðgerðarútreiðslurnar umframt veitingarnar til teir í § 6, nr. 3 og nr. 4 nevndu persónar.
+Stk. 4. Reglurnar í stk. 1 og 2 viðvíkjandi skyldunum hjá tryggingarfeløgunum verða nýttar tilsvarandi upp á Vinnusjúkugrunnin.
+PARTUR II
+Fráboðan, málsviðgerð og kæra
+Kapittul 5
+Fráboðan um arbeiðsskaðar
+Fráboðanarfreistir
+§ 23. Ein og hvør tilburður, sum hildin verður tryggjaður sambært hesi lóg skal skjótast gjørligt og í seinasta lagi 9 yrkadagar eftir hendingina verða fráboðaður Vanlukkutryggingarráðnum.
+Stk. 2. Um tilburðurin ikki er fráboðaður samsvarandi stk. 1, og skaddi ella sjúki 5 vikur eftir hendingina framvegis ikki er førur fyri í fullan mun at taka upp aftur vanliga arbeiðið, skal tilburðurin innan 9 yrkadagar eftir hetta verða fráboðaður Vanlukkutryggingarráðnum.
+Stk. 3. Fyri vinnusjúkur, sbr. § 10 verður fráboðanarfreistin roknað frá tí degi, tann fráboðanarskyldugi gjørdist varugur við, at sjúkan kann vera treytað av arbeiðinum.
+Stk. 4. Vanlukkutryggingarráðið skal innan 48 tímar hava fráboðan um andlát, ið kunnu vera elvt av arbeiðsskaða, haruppií øll andlát, hend á arbeiðsplássum. Fráboðanarskyldan er galdandi, hóast tilburðurin, ið kann hava elvt til andlátið, longu frammanundan er ella skal verða fráboðaður ráðnum.
+Stk. 5. 4) 3) Er fráboðan ikki send inn rættstundis, kann tryggjaði ella tey eftirsitandi innan eitt ár, eftir at arbeiðsskaðin hendi, kortini seta fram krav um endurgjald eftir lógini. Fyri vinnusjúkur, sambært § 10, verður freistin roknað frá tí degi, tann tryggjaði ella avvarðandi hansara gjørdist varugur við, at sjúkan kann vera treytað av arbeiðinum. Síggjast kann burtur frá freistini, tá ið skjalprógv eru fyri, at tryggjaði hevur verið fyri einum arbeiðsskaða, sbrt. § 8, og tryggjaði ella tey eftirsitandi vegna arbeiðsskaðan havar rætt til endurgjald o.a. sbrt. § 38. § 39, stk. 2 verður ikki nýtt, tá ið mett verður um atvoldarsamband eftir hesari áseting.
+Tey fráboðanarskyldugu
+§ 24. 3) Tryggingarskyldugi arbeiðsgevarin og landið hava fráboðanarskylduna fyri vanlukkur viðvíkjandi starvsfólki sínum, herundir eisini teimum í § 11, stk. 2 nevndu persónum.
+Stk. 2. Er talan um sjálvstøðugt vinnurekandi, ella persón, sum roynir at bjarga mannalívi, sbr. § 5, nr. 4, hevur tryggjaði sjálvur ella hansara avvarðandi fráboðanarskylduna.
+Stk. 3. 3) Læknar og tannlæknar hava eisini skyldu til at boða Vanlukkutryggingarráðnum og øðrum avvarðandi eftirlitsstovnum frá øllum tilburðum, sum teir í yrki sínum gerast varugir við kunnu vera vinnusjúkur sbrt. § 10.
+Mannagongdin í sambandi við fráboðan um arbeiðsskaða
+§ 25. 1) Við fráboðan um arbeiðsskaða sambært hesi lóg skal fylgja læknaváttan, ið verður rindað av tryggingarfelagnum ella landinum, sbr. § 21, stk. 7, ella av Vinnusjúkugrunninum, sbr. § 78, stk. 3. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+Stk. 2. 2) Landsstýrisfólkið ásetir eftir tilmæli frá Vanlukkutryggingarráðnum nærri reglur um mannagongdina í sambandi við fráboðanir um arbeiðsskaðar og vinnusjúkur, haruppií hvussu fráboðanin skal fremjast, hvørji oyðubløð skulu nýtast, hvørjar læknaváttanir skulu fylgja við fráboðanini, og gjøldini fyri hesar læknaváttanir.
+Stk. 3. 2) Landsstýrisfólkið kann áseta nærri reglur um, at upplýsingar skulu skrásetast og sendast talgilt, og kann áseta nærri reglur um talgilda samskiftið.
+Kapittul 6
+Málsviðgerðin
+Vanlukkutryggingarráðið
+§ 26. Vanlukkutryggingarráðið tekur avgerð í málum um arbeiðsskaðatrygging sambært hesi lóg og í málum viðv. vinnusjúkum, hendar í sambandi við arbeiði, sbr. § 10.
+Stk. 2. 2) Eftir áheitan og móti einum av landsstýrisfólkinum ásettum gjaldi, kann Vanlukkutryggingarráðið eisini geva vegleiðandi ummæli um persónskaða, sum ikki er fevndur av hesi lóg.
+Stk. 3. Vanlukkutryggingarráðið kann móti gjaldi heita á danska Arbejdsskadestyrelsen um vegleiðandi úttalilsi viðvíkjandi málum sbrt. § 26, stk. 2.
+§ 27. 3) 2) Vanlukkutryggingarráðið hevur fimm limir, sum landsstýrisfólkið velur. Forfólkið skal hava lokið løgfrøðiligt embætisprógv, og ein limur skal vera útbúgvin lækni. Limirnir verða valdir fyri fýra ár í senn, tó so at limur verður sitandi, til nýggjur limur er valdur. Harumframt velur landsstýrisfólkið ein varalim fyri forfólkið, ein varalim fyri læknan og ein varalim fyri hinar tríggjar limirnar.
+Stk. 2. 2) Limir í Vanlukkutryggingarráðnum mugu ikki starvast hjá ella taka lut í leiðsluni í tryggingarfelag, sum teknar arbeiðsskaðatryggingar í Føroyum, vera limur í ella starvast í Vinnusjúkugrunninum ella starvast hjá Arbeiðs- og brunaeftirlitinum.
+Stk. 3. 2) Vanlukkutryggingarráðið skal hava skrivara, sum hevur lokið løgfrøðiligt embætisprógv. Vanlukkutryggingarráðið kann lata skrivaranum heimildir at taka avgerð í ávísum málum, har sum greið siðvenja er. Vanlukkutryggingarráðið skal regluliga kunnast um slíkar avgerðir.
+Stk. 4. 4) Vanlukkutryggingarráðið kann undir einstøku málsviðgerðini leita sær sakkøna hjálp. Útreiðslurnar, ið standast av hesum, verða rindaðar av viðkomandi tryggingarfelagi, Vinnusjúkugrunninum og av landinum.
+Stk. 5. 4) 2) Landsstýrisfólkið kann kunngera ásetingar um gjøld, sum standast av stk. 1 og 3, og rinda tryggingarfeløgini, sum tekna arbeiðsskaðatryggingar landið og Vinnusjúkugrunnurin, hesi gjøld.
+Stk. 6. 2) Vanlukkutryggingarráðið ger uppskot um reglugerð fyri virksemi sítt, sum skal góðkennast av landsstýrisfólkinum.
+§ 28. Vanlukkutryggingarráðið kann sum liður í málsviðgerðini krevja innlit í allar viðkomandi upplýsingar frá øllum myndugleikum, stovnum, arbeiðsgevarum, Vinnusjúkugrunninum, tryggjaða umframt øðrum, sum hava upplýsingar av týdningi fyri málið.
+Stk. 2. Vanlukkutryggingarráðið kann krevja líkuppskurð framdan eftir reglunum um loyvdar líkuppskurðir. Somuleiðis kann ráðið krevja rættarfrágreiðing samsvarandi ásetingunum í rættargangslógini, eins og ráðið kann senda sakkøn fólk at gera kanningar á arbeiðsplássum o.ø.
+Stk. 3. 4) Tryggjaði ella tann, sum hevur verið fyri vinnusjúku, hend í sambandi við arbeiði, og sum er góðkend sbrt. § 10, hevur skyldu til at gera eftir teimum boðum, sum Vanlukkutryggingarráðið heldur hava týdning fyri málsviðgerðina, haruppií lata seg kanna av lækna, lata seg innleggja á sjúkrahús og líknandi til nærri kanningar, lata seg arbeiðsroyna og at møta fyri ráðnum at geva nærri frágreiðing.
+Stk. 4. 1) Útreiðslurnar, ið standast av ásetingunum í stk. 1-3, haruppií útreiðslur til læknaváttanir, umframt ferðaútreiðslur, ið standast av boðum, givin sambært stk. 3, verða rindaðar av tryggingarfelagnum, av landinum, sbr. § 21, stk. 7, ella av Vinnusjúkugrunninum. Eisini rindar tryggingarfelagið ella landið, sbr. § 21, stk. 7, ella Vinnusjúkugrunnurin endurgjald fyri skjalprógvaða mista arbeiðsinntøku yvir 2 tímar í sambandi við, at tryggjaði lýkur sínar skyldur sambært stk. 3. Sum grundarlag fyri hesum endurgjaldi verður árslønin, sbr. § 42, nýtt. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+Freistir Vanlukkutryggingarráðsins
+§ 29. 3) Vanlukkutryggingarráðið skal í seinasta lagi 3 mánaðir eftir fráboðan um vanlukku, kunna tryggjaða ella hansara avvarðandi, um tilburðurin kann viðurkennast sum ein arbeiðsskaði, ið kann geva rætt til veitingar sambært lógini. Er talan um vinnusjúku, sbr. § 10, nr. 1, er freistin 9 mánaðir. Samstundis skal skaddi, um talan er um vinnusjúku, ella hansara avvarðandi og viðkomandi arbeiðsgevari kunnast um avgerðina.
+Stk. 2. 3) Fyri vinnusjúkur, nevndar í § 10, stk. 1 og stk. 3, galda einans tær í § 48, stk. 2 og § 56, stk. 2 ásettu freistir fyri støðutakanina til avleiðingarnar av einum viðurkendum arbeiðsskaða og ella vinnusjúku.
+Stk. 3. Somu freistir, sum ásettar í stk. 1, eru galdandi fyri fráboðan til avvarðandi, tá tryggjaði ella persónur fevndur av Vinnusjúkugrunninum doyr, eftir at ein tilburður honum viðvíkjandi er fráboðaður Vanlukkutryggingarráðnum. Í hesum førum verða freistirnar roknaðar frá tí degi, ráðið, sbr. § 23, stk. 4, fekk fráboðan um andlátið.
+Stk. 4. Vanlukkutryggingarráðið kann í serligum førum víkja frá tríggja mánaða freistini sambært stk. 1.
+§ 30. Hóast Vanlukkutryggingarráðið samsvarandi § 29 hevur viðurkent ein fráboðaðan tilburð sum arbeiðsskaða ella vinnusjúku av arbeiðinum sbrt. § 10, stk. 2, kann ráðið tó ikki uttan í heilt serligum førum játta tryggjaða ella persóni við vinnusjúku veitingar sambært lógini - tó burtursæð frá dagpeningi, sbr. 10. kapittul - fyrr enn kærufreistin í § 36, stk. 1 er runnin.
+Uppafturtøka av málinum
+§ 31. Hevur Vanlukkutryggingarráðið samsvarandi § 29 boðað frá, at ein fráboðaður tilburður ikki kann viðurkennast sum arbeiðsskaði sbrt. § 8, stk. 1, nr. 1-3, kann málið verða tikið upp til nýggja viðgerð innan 5 ár eftir hesa fráboðan.
+Stk. 2. 1) Hevur Vanlukkutryggingarráðið samsvarandi stk. 1 víst frá sær eina fráboðaða vinnusjúku sbrt. § 10, stk. 2, og hesin sjúkutilburður seinni verður tikin við í kunngerðini, sum gjørd er við heimild í § 10, stk. 2, kann málið takast upp til nýggja viðgerð, eisini eftir at 5 ára freistin er runnin.
+§ 32. Hevur Vanlukkutryggingarráðið boðað tryggjaða frá, at ein fráboðaður tilburður - hóast viðurkendur sum arbeiðsskaði - ikki hevur havt avleiðingar, sum geva rætt til veitingar sambært lógini, kunnu krøv hesum viðvíkjandi ikki verða sett fram seinni enn 5 ár eftir hesa fráboðan.
+Stk. 2. Tá heilt serligar umstøður tala fyri tí, kann Vanlukkutryggingarráðið síggja burtur frá 5 ára freistini í stk. 1.
+Missur av rættindum hins tryggjaða
+§ 33. Ger tryggjaði ikki eftir boðum, givin sambært § 28, stk. 3, ella forða hesir í aðrar mátar fyri heilsubata av skaðanum, kann Vanlukkutryggingarráðið gera av, at nevndu heilt ella partvíst missa rættin til veitingar sambært lógini.
+Stk. 2. Á sama hátt kunnu tey avvarðandi hjá einum, ið hevur latið lív orsakað av arbeiðsskaða, vinnusjúku, missa rættin til veitingar sambært hesi lóg, um tey sýta fyri einum sambært hesi lóg kravdum líkuppskurði.
+§ 34. Fær Vanlukkutryggingarráðið orsakað av viðurskiftum hins tryggjaða ella hansara avvarðandi ikki tikið støðu til, um ein fráboðaður tilburður kann viðurkennast sum ein arbeiðsskaði, fellur kravið um málsviðgerð burtur, tá 5 ár eru liðin, síðani tilburðurin av fyrsta sinni varð fráboðaður ráðnum.
+Kapittul 7
+Kæra
+Ankestyrelsen
+§ 35. Við Ankestyrelse er at skilja ein yvirskipaður danskur fyrisitingarstovnur, sum viðger avgerðir hjá einum lægri fyrisitingarstovni.
+Stk. 2. Avgerðir,sum Vanlukkutryggingarráðið tekur sambært hesi lóg, kunnu av tryggjaða, hansara avvarðandi, viðkomandi arbeiðsgevara, sjálvstøðugt vinnurekandi, viðkomandi tryggingarfelag, av landinum og av Vinnusjúkugrunninum kærast til Ankestyrelsen, tó ikki avgerðir, tiknar sambært § 26, stk. 2. Arbeiðsgevarin kann bert kæra avgerðir, tiknar sambært § 29.
+Stk. 3. Avgerðir, sum Ankestyrelsen tekur sambært hesi lóg, kunnu ikki kærast til annan fyrisitingarmyndugleika.
+Stk. 4. 3) Áðrenn Ankestyrelsen viðger eina kæru eftir stk. 2, skal Vanlukkutryggingarráðið taka støðu til, um grundarlag er fyri at geva kæraranum heilt ella partvíst viðhald. Kæran skal tí sendast Vanlukkutryggingarráðnum.
+Stk. 5. 3) Kann Vanlukkutryggingarráðið ikki geva kæraranum viðhald, verður kæran send víðari til Ankestyrelsen við grundgevingini hjá Vanlukkutryggingarráðnum fyri avgerðini og endurmetingini.
+Stk. 6. 3) Landsstýrisfólkið kann kunngera ásetingar um gjald fyri útreiðslur sum Ankestyrelsen hevur av kæruviðgerð sambært hesi lóg.
+Kærufreistir
+§ 36. Kærufreistin er 3 mánaðir frá tí degi, kærari fekk fráboðan um avgerðina hjá Vanlukkutryggingarráðnum.
+Stk. 2. Um serligar umstøður tala fyri tí, kann Ankestyrelsen síggja burtur frá kærufreistunum í stk. 1.
+Stk. 3. Kæra er bert steðgandi, um kærari er arbeiðsgevari, tryggingarfelag ella Vinnusjúkugrunnurin.
+Kæruviðgerðin
+§ 37. Myndugleikar, stovnar, haruppií Vinnusjúkugrunnurin, arbeiðsgevarar, tey tryggjaðu, umframt onnur hava eftir áheitan skyldu til at lata Ankestyrelsen allar tær upplýsingar, sum Ankestyrelsen heldur vera av týdningi fyri kæruviðgerðina. Somuleiðis kann Ankestyrelsen senda sakkøn fólk at gera kanningar á arbeiðsplássum o.ø.
+Stk. 2. Tryggjaði hevur skyldu til at gera eftir teimum boðum, sum Ankestyrelsen heldur vera av týdningi fyri kæruviðgerðina, haruppií lata seg kanna av lækna, ávístur av Ankestyrelsen, at lata seg innleggja á sjúkrahús og líknandi til nærri kanningar, at lata seg arbeiðsroyna og at geva Ankestyrelsen nærri frágreiðing í málinum.
+Stk. 3. 1) Útreiðslurnar, ið standast av ásetingunum í stk. 1 og 2, haruppií útreiðslur til læknaváttanir, umframt ferðaútreiðslur, ið standast av, at tryggjaði fylgir boðum, givin sambært stk. 2, verða rindaðar av ávikavist tryggingarfelagnum, av landinum, sbr. § 21, stk. 7, ella av Vinnusjúkugrunninum. Eisini rindar tryggingarfelagið, Vinnusjúkugrunnurin ella landið, sbr. § 21, stk. 7, endurgjald fyri próvførda mista arbeiðsinntøku yvir 2 tímar í sambandi við, at tryggjaði lýkur sínar skyldur eftir stk. 2. Sum grundarlag fyri hesum endurgjaldi verður árslønin, sbr. § 42, nýtt. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+PARTUR III
+Veitingarnar
+Kapittul 8
+Um veitingarnar
+§ 38. 1) Veitingarnar sambært hesi lóg eru:
+1)   Útreiðslur til hjálpitól, sjúkuviðgerð o.a. undir málsviðgerðini, sbr. 9. kapittul.
+2)   Dagpeningur undir málsviðgerðini, sbr. 10. kapittul.
+3)   Endurgjald fyri mist vinnuføri, sbr. 11. kapittul.
+4)   Skaðabót fyri varandi mein, sbr. 12. kapittul.
+5)   Skiftisveiting til eftirsitandi hjúnafelaga ella onnur, sbr. 13. kapittul.
+6)   Endurgjald til vaksin og børn fyri miss av uppihaldara, sbr. 14. kapittul.
+§ 39. Veitingarnar til tryggjaða sambært 9., 10., 11. og 12. kapitli verða ásettar í mun til avleiðingarnar av arbeiðsskaðanum og kunnu tí lækka ella, eftir umstøðunum, heilt detta burtur, um verandi heilsuliga og sosiala støðan ikki einans er elvd av arbeiðsskaðanum.
+Stk. 2. Verður mist vinnuføri ella varandi mein staðfest, ella letur persónur lív, verður hetta roknað sum avleiðing av arbeiðsskaða sambært hesi lóg, uttan so, at mestu sannlíkindini tala ímóti hesum.
+§ 40. Hevur tryggjaði við vilja ella við ólógligari gerð ella undanláti elvt til ella í stóran mun verið við at elvt til tryggingartilburðin, kann Vanlukkutryggingarráðið gera av, at rættur hins tryggjaða til endurgjald fyri mist vinnuføri, ella skaðabótin fyri varandi mein, lækkar ella heilt dettur burtur.
+Stk. 2. Tryggjaði skal nágreiniliga kunnast um avgerðir, tiknar eftir stk. 1.
+Ræðisrættur og renting
+§ 41. Veitingar sambært hesi lóg verða goldnar tí persóni, ið hevur rætt til veitingina.
+Stk. 2. Metir Vanlukkutryggingarráðið, at viðkomandi ikki eigur at hava ræðisrætt á veitingini, ger ráðið av, á hvønn hátt upphæddin skal koma viðkomandi til góðar.
+Stk. 3. 2) Verða játtaðar veitingar, nevndar í stk. 1, goldnar eftir, at kærufreistin sambært § 36 er runnin, verður renta, ið er 1% yvir diskonto Tjóðbankans, latin frá hesum tíðarskeiði, og til goldið verður. Í teimum í § 75 nevndu førum er freistin 14 dagar frá tí degi, Almannaverkið endaliga gav tí, sum skal gjalda endurgjaldið, fráboðan um aftursóknarkravið.
+Árslønin
+§ 42. Veitingarnar sambært 11. og 14. kapitli verða ásettar við grundarlagi í ársløn hins tryggjaða ella persóni, umfataður av Vinnusjúkugrunninum.
+Stk. 2. 4) 2) Árslønin hjá løntakarum er samlaða arbeiðsinntøkan árið frammanundan arbeiðsskaðan, sí tó stk. 3-5. Í árslønini skal íroknast virðið av fríum kosti og uppihaldi, umframt virðið av øðrum vøruveitingum, samsvarandi nærri reglum, ásettar av landsstýrisfólkinum eftir tilmæli frá Vanlukkutryggingarráðnum.
+Stk. 3. Árslønin hjá sjálvstøðugt vinnurekandi er seinasta álíknaða inntøkuárið.
+Stk. 4. Vanlukkutryggingarráðið ásetir tó árslønina eftir meting, um:
+1)   tryggjaði arbeiðir undir serligum setanarviðurskiftum,
+2)   tryggjaði vegna vinnusjúku ikki hevur verið í arbeiði fyri somu løn í øllum tí undanfarna árinum,
+3)   tryggjaði framman undan arbeiðsskaðanum ikki hevur verið á arbeiðsmarknaðinum í styttri ella longri tíðarskeiði ella
+4)   árslønin, roknað sambært stk. 2 ella 3 ikki gevur eina rættvísa mynd av vanligu ársløn hins tryggjaða.
+Stk. 5. Er tryggjaði yngri enn 21 ár ella undir útbúgving, tá arbeiðsskaðin hendir ella vinnusjúka bleiv kend, kann hædd takast fyri tí arbeiðsinntøku, sum viðkomandi væntandi hevði forvunnið, eftir at hann var fyltur 21 ár, ella eftir at útbúgvingin varð liðug, um arbeiðsskaðin ella vinnusjúkan ikki var hend.
+Stk. 6. Árslønin kann í mesta lagi verða ásett til 367.000 krónur, javnað sambært § 43.
+Javning av upphæddunum
+§ 43. 4) 2) Tær í § 42, stk. 6, § 57, stk. 2, og § 59, stk. 1 nevndu upphæddir verða javnaðar av landsstýrisfólkinum eftir tilmæli frá Vanlukkutryggingarráðnum við broytingini í tí til eina og hvørja tíð galdandi høvuðssáttmála millum Føroya Arbeiðarafelag og Føroya Arbeiðsgevarafelag og avrundaðar til nærmastu 100 kr.
+Stk. 2. Vanlukkutryggingarráðið skal innan 1. januar, eftir at sáttmálin, nevndur í stk. 1, er broyttur, almannakunngera tær soleiðis javnaðu upphæddirnar.
+Stk. 3. 1) Veitingarnar sambært lógini verða roknaðar við grundarlagi í upphæddunum, ið vóru galdandi, tá avgerðin um játtaðu veitingarnar verður tikin, sbr. tó stk. 4.
+Stk. 4. 1) 2) Endurgjald, ið verður veitt sum framhaldandi árlig veiting sbrt. § 50, verður javnað av landsstýrisfólkinum eftir tilmæli frá Vanlukkutryggingarráðnum eftir somu reglum sum ásett í stk. 1 og 2.
+Kapittul 9
+Sjúkuviðgerð, uppvenjing og hjálpitól o.a. undir málsviðgerðini 1)
+§ 44. 1) Er undir málsviðgerðini neyðugt við sjúkuviðgerð ella uppvenjing til tess at fáa best møguligan heilsubata, rindar tryggingarfelagið ella landið, sbr. § 21, stk. 7, ella Vinnusjúkugrunnurin útreiðslurnar í tann mun, tað ikki áliggur føroyska heilsuverkinum, sjúkrakassunum o.ø, at rinda hesar útreiðslur. Uppvenjing skal undir læknaligum eftirliti fremjast sum beinleiðis framhald av sjúkuviðgerðini. Tryggingarfelagið, Vinnusjúkugrunnurin ella landið, sbr. § 21, stk. 7, rindar allar útreiðslurnar til protesur, brillur og líknandi hjálpitól, sum eru neyðug til tess at tryggja útlitini fyri sjúkuviðgerðini ella uppvenjingini, minka um avleiðingarnar av arbeiðsskaðanum, ella gjølligari at kunna áseta varandi meinið ella missin av vinnuførinum. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+Stk. 2. 1) Í tann mun uppvenjing, hjálpitól o.a. kann tryggja útlitini fyri sjúkuviðgerðini og minka um avleiðingarnar av vinnusjúkuni, ella fyri gjølligari at kunna áseta varandi meinið ella missin av vinnuførinum, rindar Vinnusjúkugrunnurin allar útreiðslur til slík fremjandi endamál.
+Stk. 3. 3) Er eitt hjálparamboð sum nevnt í stk. 1 og 2 nýtt í sambandi við arbeiðið, og er hetta hjálparamboð vorðið skatt, orsakað av arbeiðinum ella teimum viðurskiftum, arbeitt verður undir, rindar tryggingarfelagið ella landið, sbrt. § 21, stk. 7, ella Vinnusjúkugrunnurin kostnaðin av at umvæla ella endurnýggja hjálparamboðið.
+Stk. 4. Ásetingarnar í stk. 1 verða nýttar samsvarandi, tá spurningurin um mist vinnuføri, sbr. § 53, og varandi mein, sbr. § 58, verður tikin upp til nýggja viðgerð.
+Stk. 5. 2) Landsstýrisfólkið ásetir nærri reglur um fulnaðin av útreiðslunum sambært stk. 1, stk. 2 og 3 haruppií reglur um, at nevndu útreiðslur undir serligum umstøðum kunnu rindast, sjálvt um málið ikki er til viðgerðar.
+Uppafturtøka av málinum
+§ 45. Spurningurin um útreiðslurnar, nevndar í § 44, stk. 1, 2 og 3, kann eftir áheitan frá skadda ella av Vanlukkutryggingarráðnum sjálvum verða tikin upp til nýggja viðgerð innan 5 ár eftir fyrstu avgerðina, treytað av, at munandi broytingar eru hendar í teimum viðurskiftum, ið vóru grundarlagið undir avgerðini.
+Stk. 2. Freistin fyri uppafturtøku kann verða longd, áðrenn 5 ára freistin í stk. 1 er runnin. Tá heilt serligar umstøður tala fyri tí, kann Vanlukkutryggingarráðið heilt síggja burtur frá 5 ára freistini.
+Kapittul 10
+Dagpeningur vegna sjúku aftan á arbeiðsskaða
+§ 46. 1) 2) Dagpeningur vegna sjúku aftan á arbeiðsskaða ella vinnusjúku, sbr. § 10, stk. 1, verður umsitin og útgoldin av Almannaverkinum sambært vanligu reglunum í løgtingslóg um dagpening vegna sjúku v.m.
+Stk. 2. 1) 2) Verður ein vinnusjúku- ella arbeiðsskaðatilburður, sum er fráboðaður Almannaverkinum sambært løgtingslóg um dagpening vegna sjúku v.m. ella Lønjavningargrunninum sambært løgtingslógini um sjúkratrygd fiskimanna, seinni viðurkendur sum arbeiðsskaði ella vinnusjúka sambært hesi lóg, verður útgjaldingin av dagpeningaveitingini endurgoldin av tryggingarfelagnum ella landinum, sbr. § 21, stk. 4, ella Vinnusjúkugrunninum fyri alt sjúkutíðarskeiðið, har tilburðurin er tryggjaður.
+Kapittul 11
+Endurgjald fyri mist vinnuføri
+Mist vinnuføri
+§ 47. Hevur arbeiðsskaðin ella vinnusjúka sbrt. § 10, stk. 1, ið er góðkend sbrt. § 10, stk. 2, havt við sær minkandi førleika hjá tryggjaða ella persóni, sum er umfataður av Vinnusjúkugrunninum, at forvinna sær inntøku við arbeiði, hevur viðkomandi rætt til endurgjald fyri mist vinnuføri. Endurgjald verður tó ikki veitt, um óvinnuførið verður ásett til minni enn 15%.
+Stk. 2. Tá mett verður um miss av vinnuføri, skal leggjast uppfyri, um tryggjaði ella persónur, sum er umfataður av Vinnusjúkugrunninum, hevur møguleika at útvega sær inntøku við tílíkum arbeiði, ið rímiligt er at krevja av honum eftir førimuni, útbúgving, aldri og møguleikunum fyri vinnuligari endurútbúgving og uppvenjing.
+Avgerðarfreistir
+§ 48. 1) Tá ið tað eftir sjúkuviðgerð, uppvenjing o.a. er grundarlag fyri at meta um framtíðar heilsustøðu og arbeiðsmøguleikar hins tryggjaða, ger Vanlukkutryggingarráðið av, um viðkomandi hevur rætt til endurgjald fyri mist vinnuføri.
+Stk. 2. Avgerðin eftir stk. 1 skal um møguligt takast innan 1 ár og í seinasta lagi 2 ár eftir fráboðanina um arbeiðsskaðan ella vinnusjúkuna.
+Stk. 3. Forskot upp á endurgjald fyri mist vinnuføri kann veitast tryggjaða. til endalig avgerð er tikin sambært stk. 2.
+Stk. 4. Er greiða ikki fingin á arbeiðs-viðurskiftum hins tryggjaða innan 2 ára freistina í stk. 2, skal Vanlukkutryggingarráðið játta tryggjaða eitt fyribils endurgjald fyri mist vinnuføri.
+Stk. 5. Endurgjald fyri miss av vinnuføri til barn við fosturskaða, sbr. § 10, stk. 3, ella til barn við sjúku, elvd av árinum á foreldrini áðrenn gitnaðin ella eftir føðingina, sbr. § 10, stk. 4, kann í fyrsta lagi verða veitt barninum frá 15. árinum.
+Upphædd og útgjaldingin
+§ 49. Hevur tryggjaði mist alt vinnuførið, verður veitt eitt endurgjald, ið svarar til 80% av ársløn hansara, roknað sambært § 42. Hevur tryggjaði partvíst mist vinnuførið, verður endurgjaldið lækkað lutfalsliga.
+§ 50. Endurgjald fyri mist vinnuføri verður veitt sum framhaldandi árlig veiting, uttan so, at veitingin verður roknað um til eina ávísa peningaupphædd sambært § 51.
+Stk. 2. Tann árliga veitingin verður goldin tryggjaða mánaðarliga frammanundan, og útgjaldingin byrjar, tá avgerðin er tikin, uttan so, at serligar umstøður tala fyri einum øðrum byrjanartíðarskeiði.
+Stk. 3. 1) Framhaldandi endurgjaldsveitingin heldur uppat seinast í mánaðinum, tá tryggjaði nær fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a., og tryggjaði fær tá í staðin eitt endaligt endurgjald fyri mist vinnuføri, ið svarar til tvær ferðir ta árligu endurgjaldsveitingina eftir § 49. Hevur tryggjaði longu nátt fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a., tá avgerðin um at veita honum endurgjald fyri mist vinnuføri verður tikin, verður endaliga veitingin somuleiðis tvær ferðir árliga gjaldið, roknað sbrt. § 49.
+Stk. 4. 1) Endurgjald fyri mist vinnuføri, ið verður veitt sum framhaldandi árlig veiting sbrt. stk. 1, verður javnað sbrt. § 43, stk. 4.
+Umrokning til eina ávísa peningaupphædd
+§ 51. Er óvinnuførið ásett til 50% ella lægri, verður tann framhaldandi árliga endurgjaldsveitingin roknað um til eina ávísa peningaupphædd. Er óvinnuførið ásett til 51% ella hægri, kann endurgjaldsveitingin undir serligum umstøðum og eftir áheitan frá tí, ið hevur rætt til upphæddina, roknast um til eina ávísa peningaupphædd. Fyribils endurgjald eftir § 48, stk. 4 kann tó í ongum førum roknast um til peningaupphædd.
+Stk. 2. 2) Umrokningin av framhaldandi árligum veitingum til peningaupphædd verður framd við grundarlagi í støddini á veitingini á umrokningardegnum samsvarandi nærri reglum, ásettar av landsstýrisfólkinum eftir tilráðing frá Vanlukkutryggingarráðnum.
+Stk. 3. Tá endalig avgerð er tikin um endurgjald fyri mist vinnuføri og tann, ið hevur rætt til endurgjaldið, hevur biðið um at fáa endurgjaldið umroknað til eina ávísa peningaupphædd, verður peningaupphæddin goldin til búgvið, um viðkomandi doyr, áðrenn veitingin verður goldin honum. Umrokningin verður framd við grundarlagi í støddini av upphæddini á andlátsdegnum.
+Mótrokning í øðrum veitingum
+§ 52. 1) Hevur tryggjaði orsakað av arbeiðsskaðanum rætt til eftirløn sambært løgtingslóg um tænastumannaeftirlønir, lækkar endurgjaldið fyri mist vinnuføri sambært hesi lóg við 2/3 av teirri upphædd, ið tænastumannaeftirlønin, orsakað av arbeiðsskaðanum, er hækkað upp um ta eftirløn, ið viðkomandi um hetta mundið sambært starvsaldri sínum annars hevði havt rætt til.
+Stk. 2. 1) Ásetingarnar í stk. 1 eru eisini galdandi fyri onnur tryggjað sambært hesi lóg, sum hava eftirlønarrættindi eftir samsvarandi reglum, sum løgtingslóg um tænastumannaeftirlønir ásetir. Í hesum førunum rindar viðkomandi tryggingarfelag ella landið, sbr. § 21, stk. 7, ella Vinnusjúkugrunnurin tí, sum er skyldugur at rinda eftirlønina, eina upphædd, ið svarar til ta minking, ið er hend veitingunum sambært hesi lóg.
+Uppafturtøka av málinum
+§ 53. Spurningurin um endurgjald fyri mist vinnuføri kann eftir áheitan frá tryggjaða ella av Vanlukkutryggingarráðnum sjálvum verða tikin upp til nýggja viðgerð innan 5 ár eftir fyrstu avgerðina, treytað av, at munandi broytingar eru hendar í teimum viðurskiftum, ið vóru grundarlagið undir avgerðini.
+Stk. 2. Freistin fyri uppafturtøku kann verða longd, áðrenn 5 ára freistin í stk. 1 er runnin. Tá heilt serligar umstøður tala fyri tí, kann Vanlukkutryggingarráðið heilt síggja burtur frá 5 ára freistini.
+Upplýsingarskylda hins tryggjaða
+§ 54. Tann, ið fær framhaldandi árliga veiting fyri mist vinnuføri, hevur skyldu til at boða Vanlukkutryggingarráðnum frá broytingum í viðurskiftum sínum.
+Stk. 2. Á sama hátt hava Vanlukkutryggingarráðið, tryggingarfelagið, landið, sbr. § 15, stk. 2, ella Vinnusjúkugrunnurin skyldu til at geva tí gætur, um viðurskifti hins tryggjaða broytast, sum ásett í stk. 1.
+Stk. 3. Hevur tryggjaði sbrt. stk. 2 ikki boðað frá viðkomandi broytingum, nevndar í stk. 1, kann Vanlukkutryggingarráðið áleggja honum - ella deyðsbúgvi hansara - at endurrinda tryggingarfelagnum, landinum, sbr. § 15, stk. 2, ella Vinnusjúkugrunninum ta upphædd, ið hann soleiðis av órøttum hevur móttikið. Skyldugar upphæddir kunnu mótroknast í framhaldandi veitingum sambært hesi lóg, tó undantikið veitingunum sambært 13. og 14. kapitli. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+Kapittul 12
+Skaðabót fyri varandi mein
+Varandi mein
+§ 55. Hevur tryggjaði fingið varandi mein av arbeiðsskaðanum ella av vinnusjúkuni, sbr. § 10, stk. 1, verður veitt ein skaðabót, um meinstigið er 5% ella hægri.
+Stk. 2. Meinstigið verður ásett við grundarlagi í læknafrøðiligari meting um slagið og støddina av arbeiðsskaðanum og við atliti at, hvussu hesi hava ávirkað persónligu tilveruna hjá viðkomandi.
+Avgerðarfreistir
+§ 56. 1) Tá ið tað eftir sjúkuviðgerð, uppvenjing o.a. er grundarlag fyri at meta um framtíðar heilsustøðu hins tryggjaða. ger Vanlukkutryggingarráðið av, um tryggjaði, hevur rætt til skaðabót fyri varandi mein.
+Stk. 2. Avgerðin eftir stk. 1 skal, um tilber, takast innan 1 ár og í seinasta lagi 2 ár eftir fráboðanina um arbeiðsskaðan.
+Stk. 3. Forskot upp á skaðabót fyri varandi mein kann veitast tryggjaða til endalig avgerð er tikin samsvarandi stk. 1 og 2.
+Upphædd og útgjalding
+§ 57. Skaðabót fyri varandi mein verður ásett til eina ávísa peningaupphædd og útgoldin í einum.
+Stk. 2. Er meinstigið 100%, verður skaðabótin 611.500 krónur, javnað sambært § 43. Er meinstigið lægri enn 100%, verður skaðabótin lutfalsligi parturin av 611.500 krónum. Í heilt serligum førum kann skaðabótin ásetast hægri, tó í mesta lagi til 120% av 611.500 krónum, samsvarandi við 733.800 krónur.
+Stk. 3. Var tryggjaði fyltur 60 ár, tá arbeiðsskaðin hendi, ella tá vinnusjúkan var kend, verður skaðabótin fyri varandi mein lækkað við 5% fyri hvørt árið, tryggjaði var eldri enn 59 ár, tá arbeiðsskaðin hendi, ella vinnusjúkan varð kend, tó ikki eftir at viðkomandi hevur fylt 69 ár.
+Uppafturtøka av endurgjaldsspurninginum
+§ 58. Spurningurin um skaðabót fyri varandi mein kann eftir áheitan frá tryggjaða ella av Vanlukkutryggingarráðnum sjálvum verða tikin upp til nýggja viðgerð innan 5 ár eftir fyrstu avgerðina, treytað av, at munandi broytingar eru hendar í teimum viðurskiftum, ið vóru grundarlagið undir avgerðini.
+Stk. 2. Freistin fyri uppafturtøku kann verða longd, áðrenn 5 ára freistin í stk. 1 er runnin. Tá heilt serligar umstøður tala fyri tí, kann Vanlukkutryggingarráðið heilt síggja burtur frá 5 ára freistini.
+Kapittul 13
+Skiftisveiting til eftirsitandi
+Hjúnafelagar
+§ 59. Letur tryggjaði lív orsakað av arbeiðsskaðanum ella vinnusjúkuni sbrt. § 10, stk. 1, fær eftirsitandi hjúnafelagi hins deyða eina skiftisveiting upp á 150.000 krónur, treytað av, at hjúnabandið var komið í lag, áðrenn arbeiðsskaðin ella vinnusjúkan hendi, og at hjúnafelagarnir framvegis livdu saman, tá andlátið hendi. Skiftisveitingin verður javnað sambært § 43.
+Stk. 2. Er hjúnabandið komið í lag, eftir at arbeiðsskaðin ella vinnusjúkan hendi, hevur eftirsitandi hjúnafelagin rætt til somu skiftisveiting, sum nevnd í stk. 1, treytað av, at hjúnabandið hevur varað 2 tey seinastu árini, áðrenn tryggjaði ella persónur, sum er umfataður av Vinnusjúkugrunninum, læt lív av arbeiðsskaðanum ella av vinnusjúkuni sbrt. § 10, stk. 1, og hjúnafelagarnir framvegis livdu saman, tá andlátið hendi.
+Ógift
+§ 60. Rætt til somu skiftisveiting, sum ásett í § 59, stk. 1, hevur eisini eftirsitandi persónur, sum framman undan arbeiðsskaðanum ella vinnusjúkuni sbrt. § 10, stk. 1 livdi saman við tí deyða undir hjúnabandslíknandi viðurskiftum, treytað av, at samlívið teirra millum uttan slit hevur varað 2 tey seinastu árini áðrenn andlátið.
+Onnur eftirsitandi
+§ 61. Er eingin eftirsitandi, sum hevur rætt til skiftisveiting samsvarandi § 59 ella § 60, kann skiftisveiting undir serligum umstøðum verða latin øðrum persóni, sum stóð hinum deyða nær.
+Freistir
+§ 62. Tá andlát er fráboðað Vanlukkutryggingarráðnum, skal avgerð um skiftisveiting samsvarandi §§ 59-61, um tilber, verða tikin innan 1 ár og í seinasta lagi 2 ár eftir fráboðanina.
+Kapittul 14
+Endurgjald fyri miss av uppihaldara
+Endurgjald til vaksin
+§ 63. Tann, ið sambært § 59 ella § 60 hevur rætt til skiftisveiting, og sum við deyða hins tryggjaða ella persóni, sum er umfataður av Vinnusjúkugrunninum, hevur mist uppihaldara, ella á annan hátt verður fyri versnaðum uppihaldsviðurskiftum orsakað av andlátinum, hevur rætt til endurgjald fyri miss av uppihaldara.
+§ 64. Endurgjaldið fyri miss av uppihaldara er ein framhaldandi tíðaravmarkað veiting, sum árliga samsvarar við 30% av ársløn hins deyða, roknað sambært § 42, og sum í mesta lagi kann verða veitt í 10 ár, sí tó § 66.
+Stk. 2. Árliga endurgjaldið sambært stk. 1 verður veitt frá deyðadegnum og goldið mánaðarliga frammanundan. Framhaldandi árliga veitingin kann eftir áheitan frá tí, sum hevur rætt til veitingina, roknast um til eina ávísa peningaupphædd, samsvarandi ásetingunum í § 51, stk. 2.
+Stk. 3. Fær viðkomandi eftirsitiløn orsakað av andlátinum, byrjar útgjaldingin av endurgjaldinum fyri miss av uppihaldara ikki, fyrr enn eftirsitilønartíðarskeiðið er runnið.
+Stk. 4. Fekk tann deyði framhaldandi veiting fyri miss av vinnuføri, sbr. § 50, kemur endurgjaldið fyri miss av uppihaldara ikki til útgjaldingar fyrr enn tann 1. í mánaðinum eftir andlátið.
+Stk. 5. Upphæddin sambært stk. 1 er óbroytt í ásetta tíðarskeiðinum, uttan so, at móttakarin biður um at fáa upphæddina roknaða um til eina ávísa peningaupphædd, sbr. stk. 2, ella móttakarin av veitingini doyr.
+§ 65. Tann, ið fær framhaldandi endurgjald fyri miss av uppihaldara, sbr. § 64, kann innan 5 ár eftir avgerðina biðja Vanlukkutryggingarráðið um at fáa veitingartíðarskeiðið longt, tó ikki longri enn í samanlagt 10 ár.
+§ 66. 1) Endurgjaldið fyri miss av uppihaldara heldur uppat seinast í tí mánaðinum, at tann, ið hevur rætt til veitingina, nær fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a., og veitt verður tá eitt endaligt endurgjald, ið samsvarar við tvær ferðir tað árliga endurgjaldið sambært § 64, stk. 1. Sama er galdandi, um viðkomandi, ið hevur rætt til veitingina, longu hevði rætt til fólkapensjón sbrt. løgtingslóg um almannapensjónir o.a., tá tryggjaði læt lív orsakað av arbeiðsskaðanum ella av vinnusjúkuni sbrt. § 10, stk. 1.
+Endurgjald til børn
+§ 67. Doyr annað av foreldrunum hjá børnum, ið viðkomandi sambært lóg hevði uppihaldsskyldu móti, orsakað av arbeiðsskaða ella vinnusjúku sbrt. § 10, stk. 1, men er hitt av foreldrunum á lívi, fær hvørt barnið, til tað fyllir 18 ár, eina framhaldandi árliga veiting, ið svarar til 10% av ársløn hins deyða, roknað sambært § 42. Var hin deyði einsamallur uppihaldari, er endurgjaldið tó 20% av ársløn hins deyða.
+Stk. 2. Eitt barn, sum fær endurgjald eftir stk. 1, og sum seinni missir hitt av foreldrunum, men ikki orsakað av arbeiðsskaða ella vinnusjúku, fær í restini av veitingartíðarskeiðinum, sbr. stk. 1, eina framhaldandi árliga veiting, ið svarar til 20% av árslønini hjá tí fyrr deyða av foreldrunum. Um hitt seinni deyða av foreldrunum eisini doyr orsakað av arbeiðsskaða ella vinnusjúku sbrt. § 10, stk. 1, er endurgjaldið í restini av veitingartíðarskeiðinum 20% av samlaðu ársinntøku foreldranna.
+Stk. 3. Missir eitt barn bæði foreldrini samstundis, har ið annað teirra letur lív orsakað av arbeiðsskaða ella vinnusjúku sbrt. § 10, stk. 1, verður endurgjaldið sambært stk. 1 ásett til 20% av ársinntøku hjá tí av foreldrunum, ið doyði orsakað av arbeiðsskaðanum. Doyggja bæði foreldrini samstundis orsakað av arbeiðsskaða, er endurgjaldið tó 20% av samlaðu ársinntøku foreldranna.
+Stk. 4. Er barnið undir útbúgving, tá ið tað fyllir 18 ár, og umstøðurnar annars tala fyri tí, kann veitingartíðarskeiðið leingjast, til útbúgvingin eigur at vera liðug, tó í longsta lagi til viðkomandi er fyltur 21 ár. Sama er galdandi, um viðkomandi longu framman undan deyða foreldranna var fyltur 18 ár og undir útbúgving.
+§ 68. Veitingar sambært § 67 verða veittar frá deyðadegnum og rindaðar mánaðarliga frammanundan.
+Stk. 2. Kemur eftirsitiløn til útgjaldingar vegna andlátið, byrjar útgjaldingin av endurgjaldinum tó ikki, fyrr enn eftirsitilønartíðarskeiðið er runnið.
+§ 69. Eru veitingarnar roknaðar eftir § 67 hægri enn 60% av ávikavist ársløn hins deyða, ella samlaðu ársløn foreldranna, roknað sambært § 42, verða einstøku veitingarnar lækkaðar til samanlagt 60% av árslønini.
+Stk. 2. Verður samstundis veitt endurgjald eftir § 63, lækka einstøku veitingarnar til børnini til samanlagt 50% av ársløn hins deyða.
+Endurgjald til onnur eftirsitandi
+§ 70. Eru samlaðu árligu veitingarnar til vaksin og børn sambært hesum kapitli lægri enn 70% av ársløn hins deyða, roknað sambært § 42, kann endurgjald innan hesar karmar undir serligum umstøðum verða veitt øðrum persónum enn omanfyri nevndu, treytað av, at tann deyði heilt ella partvíst uppihelt teimum um tað mundið, arbeiðsskaðin hendi.
+Stk. 2. Endurgjaldið eftir stk. 1, burtursæð frá endurgjaldinum til stjúkbørn undir 21 ár, kann eftir áheitan roknast um til eina ávísa peningaupphædd samsvarandi ásetingunum í § 51, stk. 2.
+Avgerðarfreistir
+§ 71. Tá andlát er fráboðað Vanlukkutryggingarráðnum, skal avgerð um endurgjald fyri miss av uppihaldara, sbr. §§ 63, 67 og 70, um tilber verða tikin innan 1 ár og í seinasta lagi 2 ár eftir fráboðanina.
+Mótrokning í øðrum veitingum
+§ 72. 1) Hava avvarðandi hins deyða, vegna arbeiðsskaðan ella vinnusjúku sbrt. § 10, stk. 1, rætt til eftirløn sambært løgtingslóg um tænastumannaeftirlønir, lækkar endurgjaldið fyri miss av uppihaldara sambært hesi lóg við 2/3 av teirri upphædd, ið tænastumannaeftirlønin er hækkað upp um ta eftirløn, sum á andlátsdegnum svarar til tænastualdur hins deyða.
+Stk. 2. 1) Ásetingarnar í stk. 1 eru eisini galdandi fyri onnur tryggjað sambært hesi lóg, sum hava rættindi eftir samsvarandi reglum, sum løgtingslóg um tænastumannaeftirlønir ásetir. Í hesum førinum rindar viðkomandi tryggingarfelag, landið, sbr. § 21, stk. 7, ella Vinnusjúkugrunnurin tí, sum er skyldugur at rinda eftirlønina, eina upphædd, ið svarar til ta minking, ið er hend veitingunum sambært hesi lóg.
+PARTUR IV
+Almennar reglur
+Kapittul 15
+Aftursóknarkrøv, revsing o.a. 1)
+Aftursóknarkrøv
+§ 73. Veitingar, latnar sambært hesi lóg, kunnu ikki vera grundarlag fyri aftursóknarkravi frá arbeiðsskaðatryggingarfelag móti skaðaelvara, sum er endurgjaldsskyldugur móti tí, sum hevur verið fyri arbeiðsskaða, ella hansara avvarðandi.
+Stk. 2. Endurgjaldskravið frá tryggjaða ella hansara avvarðandi móti skaðaelvaranum í sambandi við arbeiðsskaðan lækkar samsvarandi teirri upphædd, sum er ella skal verða goldin tryggjaða sambært hesi lóg.
+§ 74. Hevur endurgjalsskyldugur skaðaelvari ella hansara tryggingarfelag goldið tryggjaða ella avvarðandi teirra endurgjald fyri arbeiðsskaðan, hevur skaðaelvarin ávikavist hansara tryggingarfelag krav uppá frá arbeiðsskaðatryggingarfelagnum, landinum ella Vinnusjúkugrunninum at fáa ta endurgjaldsupphædd av sama slag, sum arbeiðsskaðatryggingarfelagið, landið ella Vinnusjúkugrunnurin hevur skyldu at rinda ta løtu, tá kravið verður sett fram.
+§ 75. 2) Hevur tryggjaði ella avvarðandi teirra fingið útgoldið almannaveitingar sambært almannalóggávuni fyri eitt tíðarskeið, ið tað seinni verður játtað framhaldandi endurgjald fyri miss av vinnuføri sambært 11. kapitli, ella endurgjald fyri miss av uppihaldara sambært 14. kapitli, hevur Almannaverkið eitt aftursóknarkrav móti viðkomandi tryggingarfelag ella landinum, sbr. § 21, stk. 4 ella Vinnusjúkugrunninum. Ásetingarnar í §§ 21 og 22 verða nýttar samsvarandi.
+Stk. 2. Aftursóknarkravið er munurin millum ta upphædd, ið er goldin sambært stk. 1, og ta upphædd, ið hevði verið goldin sambært hesi lóg, um upphæddin varð útgoldin samstundis sum almannaveitingarnar. Aftursóknarkravið kann tó ikki vera hægri enn tann upphædd, ið fyri sama tíðarskeið er játtað eftir hesi lóg.
+Ógildugar avtalur
+§ 76. Avtalur millum tey sambært hesi lóg tryggingarskyldugu og tryggjaðu eru ógildugar, um avtalan miðar ímóti ella hevur við sær:
+1)   at ásetingarnar í hesi lóg ikki skulu vera galdandi millum partarnar,
+2)   at tryggjaði skal rinda tryggingargjøld til tryggingarfelag, ið tað sambært hesi lóg áliggur tí tryggingarskylduga arbeiðsgevaranum at rinda,
+3)   at veitingar í sambandi við arbeiðsskaðar skulu roknast á øðrvísi hátt, enn ásett í hesi lóg, ella
+4)   at kostnaðurin av trygging arbeiðsgevarans skal afturhaldast í løn hins tryggjaða.
+§ 77. Krøv, heimilað í hesi lóg, kunnu ikki verða fyri lóghaldi, fíggjartøku ella aðrari rættarsókn. Rættargerðir, ið tryggjaði ella avvarðandi hansara fremja viðvíkjandi hesum krøvum, eru ógildugar.
+Partur V
+Vinnusjúkugrunnurin
+Kapittul 16
+Vinnusjúkugrunnurin
+§ 78. 5) Vinnusjúkugrunnurin hevur sum endamál at fíggja og rinda endurgjald fyri vinnusjúkur sbrt. § 10. Vinnusjúkugrunnurin virkar somuleiðis fyri upplýsing um vinnusjúkur og fyribyrging av vinnusjúkum.
+Stk. 2. Lógarbundnar inntøkur og útreiðslur og avkast av ognarrøkt hjá Vinnusjúkugrunninum verða ikki tiknar við á løgtings­fíggjarlógina. Útreiðslur til umsiting av Vinnusjúkugrunninum verða játtaðar á løgtingsfíggjarlógini og goldnar úr landskassanum. Vinnusjúkugrunnurin endurrindar landinum umsitingarútreiðslurnar
+Stk. 3. Innskotið í grunnin er 30 mió. kr. frá landskassanum, at nýta sum tiltakspeningur hjá grunninum sbr. § 80
+Stk. 4. 5) Inntøkur grunsins eru gjøld frá arbeiðsgevarum og sjálvstøðugt vinnurekandi sbr. § 79, og sum verða játtaðar grunninum á árligu fíggjarløgtingslógunum. Inntøkur grunsins skulu nýtast til endurgjald fyri vinnusjúkur, sum eru fráboðaðar í árinum, útreiðslur til umsiting, heruppií kostnað til Vanlukkutryggingarráðið, virksemi, sum hevur til endamáls at upplýsa um og fyribyrgja vinnusjúkum, og til avsetingar til tiltakspeningin.
+Stk. 5. Landsstýrimaðurin velur nevndina fyri grunnin. Nevndin hevur 3 limir, ein umboðandi arbeiðstakarar, ein umboðandi arbeiðsgevarar, og ein við búskaparligum ella løgfrøðilgum førleika. Starvtíðin hjá nevndini er 4 ár.
+Stk. 6. 2) Nevndin ger starvsskipan fyri virksemi sítt. Uppskotið til starvsskipan skal góðkennast av landsstýrisfólkinum.
+Stk. 7. Nevndin setur stjóra at hava dagligu umsitingina av grunninum. Nevndin kann eisini leggja dagligu umsitingina til ein annan almennan stovn.
+Stk. 8. 2) Landsstýrisfólkið ásetur í kunngerð nærri reglur um viðtøkur grunsins.
+Stk. 9. 2) Landsstýrisfólkið hevur eftilit við grunninum.
+Gjaldið
+§ 79. Allir arbeiðsgevarar, heruppií landi og kommunurnar og sjálvstøðugt vinnurekandi, skulu rinda gjald til Vinnsjúkugrunnin.
+Stk. 2. 5) Gjaldið, sum arbeiðsgevarar skulu rinda, er 0,05% av útgoldnum A-inntøkum.
+Stk. 3. 5) Galdið, sum sjálvstøðugt vinnurekandi skulu rindað, er 0,05% av skattskyldugu inntøkuni hjá sjálvstøðugt vinnurekandi sbrt. skattalógini fyri seinasta inntøkuár.
+Stk. 4. 3) Hevur arbeiðsgevarin ella tann sjálvstøðugt vinnurekandi ikki goldið tað í stk. 1 nevnda gjald, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað. Sama er galdandi fyri skuldskrivaða rentu. Rindar arbeiðgevarin ikki rættstundis, verður gjaldið kravt inn sum írestandi skattur sambært § 78 og § 135 í skattalógini.
+Stk. 5. 2) Landsstýrisfólkið ásetur í kunngerð nærri reglur um innkrevjingina av gjaldinum.
+Tiltakspeningur
+§ 80. Til tess at svara fyri endurgjaldið fyri vinnusjúku, sum ikki er ella kann verða endaliga avgreidd í sama ári, sum skaðin er staðfestur, skal grunurin savna saman mest møguligan tiltakspening. Tiltakspeningurin skal nýtast til:
+1)   Meirkostnaði av einum skaða, sum er fráboðaður árið frammanundan.
+2)   Vinnusjúkur sum verða tiknar upp aftur seinni sbrt. ásetingunum í lógini í sambandi við, at vinnusjúkustøðan hevur broytt seg og at veitingarnar tilsvarandi eru hækkaðar, og
+3)   Uppafturtøku av máli sbrt. § 31. stk. 2, § 32, stk. 2 § 45, § 48 og § 50.
+4)   Ikki fráboðaðum og ikki kendum tilburðum av vinnusjúkum, sum seinni vísa seg at vera vinnusjúkur sbrt. § 10, stk. 2
+5)   Samanfalli av fleiri vinnusjúkutilburðum av eini og somu hending (akkumulatión).
+6)   Tilburðum, sum ikki eru nevndir undir nr. 1-5, men sum hava sama líki og uppfylla ásetingarnar fyri endurgjaldi.
+Stk. 2. 2) Landsstýrisfólkið ásetir reglur fyri íløgurøkt hjá Vinnusjúkugrunninum, soleiðis at hesar verða í samsvari við íløgupolitikk landsins.
+Roknskapur
+§ 81. 1) Vinnusjúkugrunnurin hevur sjálvstøðugan roknsskap. Roknskaparhaldið skal fylgja løgtingslógini um landsins almenna roknskaparhald v.m. Roknskapurin verður grannskoðaður av løggildum grannskoðara, og verður lagdur við sum fylgiskjal til landsroknskapin.
+Stk. 2. 2) Grannskoðaði roknskapurin verður sendur landsstýrisfólkinum við frágreiðing um virksemið í farna árinum.
+Avtøka av grunninum
+§ 82. Verður grunnurin avtikin, fellur fæið í grunninum aftur til landskassan.
+Kapittul 17
+Revsiásetingar
+§ 83. Arbeiðsgevari og sjálvstøðugt vinnurekandi, sum lata vera at tekna trygging og at varðveita tær í gildi, ella sum ikki rinda gjald til Vinnusjúkugrunnin, verða revsaði við bót.
+Stk. 2. Tryggingarskyldugur arbeiðsgevari, sum ikki rættstundis fráboðar ein arbeiðsskaða, ella ikki viðvirkar at upplýsa málið viðvíkjandi einum fráboðaðum arbeisskaða, sbr. kapittul 6, verður revsaður við bót.
+Stk. 3. Fyri brot, sum lógfrøðiligir persónar, eitt nú feløg, felagsskapir, grunnar, kommunur og landið gera, kann verða álagt tí lógfrøðisliga persóni sum slíkur sektarábyrgd.
+Kapittul 18
+Gildiskoma og skiftisreglur 1)
+§ 84. Hendan løgtingslóg kemur í gildi 1. januar 2010. Tó koma § 78, stk. 2 og § 79 í gildi 1. september 2009.
+Stk. 2. Løgtingslógin fevnir um teir í lógini nevndu tilburður viðvíkjandi arbeiðsskaða, ið henda gildiskomudagin ella seinni.
+Stk. 3. Teir tilburðir, sum eru hendir ella fráboðaðir innan gildiskomudagin, eins og tey mál, sum framvegis eru undir viðgerð, tá henda lógin kemur í gildi, verða framhaldandi viðgjørd eftir ásetingunum í kongligu fyriskipanini um vanlukkutrygging.
+Stk. 4. Samstundis fer úr gildi Anordning nr. 389 frá 15. november 1966 om forsikring mod følger av ulykkestilfælde, sum seinast broytt við løgtingslóg nr. 57 frá 9. juni 2008.
+Tórshavn, 25. mai 2009
+Kaj Leo Johannesen (sign.)
+løgmaður
+Lm. nr. 153/2008
+1) Broytt við løgtingslóg nr. 108 frá 10. oktober 2023, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, sbr. tó stk. 2. Stk. 2. Endurgjøld, ið verða veitt sum framhaldandi árlig veiting sbrt. § 50, verða fyrstu ferð javnað, fyrstu ferð endurgjaldsupphæddirnar sbrt. § 43 verða javnaðar eftir gildiskomudagin sbrt. stk. 1. Stk. 3. Løgtingslógin er galdandi fyri øll endurgjøld, ið verða veitt sum framhaldandi árlig veiting sbrt. § 50, eftir at løgtingslógin kom í gildi, uttan mun til, nær endurgjaldið er tillutað. Endurgjøld, sum eru tillutað, áðrenn løgtingslógin kom í gildi, verða fyrstu ferð javnað við útgangsstøði í teirri upphædd, sum áður hevur verið útgoldin.”
+2) Broytt við løgtingslóg nr. 40 frá 25. mars 2025, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd.”
+3) Broytt við løgtingslóg nr. 51 frá 12. mai 2015, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. Løgtingslógin fær gildi fyri arbeiðsvanlukkur, ið henda á gildiskomudegnum ella aftaná gildiskomudagin, og vinnusjúkur, ið verða fráboðaðar á gildiskomudegnum ella aftaná gildiskomudagin.”
+4) Broytt við løgtingslóg nr. 48. frá 8. mai 2012.
+5) Broytt við løgtingslóg nr. 204 frá 11. desember 2025, har § 2 ljóðar soleiðis: “Hend løgtingslóg kemur í gildi 1. januar 2026.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Almanna- og bústaðamálaráðið
+Útgávudagur: 04-06-2009
+Tilvísingar
+Heimildir
+Avtøkur
+Broytingar
+Løgtingsmál
+Løgtingsmál nr: 153/2008
+Kunngerðablaðið
+Kunngerðarblað  2009 A - Hefti 14 A frá 4. juni 2009
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

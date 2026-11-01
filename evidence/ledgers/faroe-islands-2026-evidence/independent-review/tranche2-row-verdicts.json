@@ -1,0 +1,1000 @@
+[
+  {
+    "id": "VAT-001",
+    "LF": 29,
+    "wording_exact": true,
+    "source_tags": [],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-002",
+    "LF": 35,
+    "wording_exact": true,
+    "source_tags": [
+      "law-1",
+      "law-2",
+      "law-3"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-003",
+    "LF": 41,
+    "wording_exact": true,
+    "source_tags": [
+      "law-4",
+      "law-5",
+      "tourism-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-004",
+    "LF": 48,
+    "wording_exact": true,
+    "source_tags": [
+      "law-5",
+      "law-25"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-005",
+    "LF": 60,
+    "wording_exact": true,
+    "source_tags": [
+      "law-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-006",
+    "LF": 61,
+    "wording_exact": true,
+    "source_tags": [
+      "law-13",
+      "law-17"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-007",
+    "LF": 62,
+    "wording_exact": true,
+    "source_tags": [
+      "law-4"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-008",
+    "LF": 63,
+    "wording_exact": true,
+    "source_tags": [
+      "law-28"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-009",
+    "LF": 64,
+    "wording_exact": true,
+    "source_tags": [
+      "law-2",
+      "law-15",
+      "law-16",
+      "reg-1"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-010",
+    "LF": 65,
+    "wording_exact": true,
+    "source_tags": [
+      "law-12",
+      "law-15",
+      "law-16",
+      "tourism-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-011",
+    "LF": 66,
+    "wording_exact": true,
+    "source_tags": [
+      "reg-8",
+      "reg-10"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-012",
+    "LF": 67,
+    "wording_exact": true,
+    "source_tags": [
+      "reg-10"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-013",
+    "LF": 68,
+    "wording_exact": true,
+    "source_tags": [
+      "reg-11"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-014",
+    "LF": 69,
+    "wording_exact": true,
+    "source_tags": [
+      "law-28"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-015",
+    "LF": 71,
+    "wording_exact": true,
+    "source_tags": [
+      "fuel-1",
+      "fuel-2",
+      "law-12"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-016",
+    "LF": 84,
+    "wording_exact": true,
+    "source_tags": [
+      "law-7",
+      "law-8",
+      "law-9",
+      "law-11"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-017",
+    "LF": 92,
+    "wording_exact": true,
+    "source_tags": [
+      "law-2"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-018",
+    "LF": 101,
+    "wording_exact": true,
+    "source_tags": [
+      "law-12",
+      "tourism-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-019",
+    "LF": 111,
+    "wording_exact": true,
+    "source_tags": [
+      "law-13"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-020",
+    "LF": 121,
+    "wording_exact": true,
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "law-18",
+      "law-27",
+      "reg-1",
+      "reg-2"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-021",
+    "LF": 131,
+    "wording_exact": true,
+    "source_tags": [
+      "law-16",
+      "reg-3",
+      "reg-4"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-022",
+    "LF": 140,
+    "wording_exact": true,
+    "source_tags": [
+      "reg-5"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-023",
+    "LF": 151,
+    "wording_exact": true,
+    "source_tags": [
+      "reg-10",
+      "reg-11",
+      "reg-12",
+      "reg-13",
+      "reg-14",
+      "reg-15",
+      "reg-16"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-024",
+    "LF": 163,
+    "wording_exact": true,
+    "source_tags": [
+      "law-11",
+      "law-12",
+      "reg-9",
+      "reg-12",
+      "reg-13",
+      "reg-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-025",
+    "LF": 176,
+    "wording_exact": true,
+    "source_tags": [
+      "law-5"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-026",
+    "LF": 177,
+    "wording_exact": true,
+    "source_tags": [
+      "law-5"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-027",
+    "LF": 178,
+    "wording_exact": true,
+    "source_tags": [
+      "law-20"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-028",
+    "LF": 179,
+    "wording_exact": true,
+    "source_tags": [
+      "law-20"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-029",
+    "LF": 180,
+    "wording_exact": true,
+    "source_tags": [
+      "law-22"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-030",
+    "LF": 181,
+    "wording_exact": true,
+    "source_tags": [
+      "law-19"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-031",
+    "LF": 182,
+    "wording_exact": true,
+    "source_tags": [
+      "law-24"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-032",
+    "LF": 184,
+    "wording_exact": true,
+    "source_tags": [
+      "law-20",
+      "law-22",
+      "law-32",
+      "returns-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-033",
+    "LF": 193,
+    "wording_exact": true,
+    "source_tags": [
+      "law-20",
+      "law-24",
+      "law-35",
+      "returns-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-034",
+    "LF": 202,
+    "wording_exact": true,
+    "source_tags": [
+      "law-17",
+      "law-18",
+      "law-19"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-035",
+    "LF": 214,
+    "wording_exact": true,
+    "source_tags": [
+      "law-21"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-036",
+    "LF": 221,
+    "wording_exact": true,
+    "source_tags": [
+      "law-22",
+      "law-32",
+      "law-33",
+      "law-34"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-037",
+    "LF": 233,
+    "wording_exact": true,
+    "source_tags": [
+      "law-12",
+      "law-18",
+      "law-27"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-038",
+    "LF": 243,
+    "wording_exact": true,
+    "source_tags": [
+      "law-28"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-039",
+    "LF": 246,
+    "wording_exact": true,
+    "source_tags": [
+      "law-28"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-040",
+    "LF": 262,
+    "wording_exact": true,
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-16",
+      "law-28",
+      "reg-1"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-041",
+    "LF": 278,
+    "wording_exact": true,
+    "source_tags": [
+      "law-28"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-042",
+    "LF": 285,
+    "wording_exact": true,
+    "source_tags": [
+      "law-25"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-043",
+    "LF": 293,
+    "wording_exact": true,
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-17"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-044",
+    "LF": 298,
+    "wording_exact": true,
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-17"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-045",
+    "LF": 317,
+    "wording_exact": true,
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "reg-1",
+      "reg-10",
+      "reg-11",
+      "reg-12",
+      "reg-13",
+      "reg-14",
+      "reg-15",
+      "reg-16"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-046",
+    "LF": 327,
+    "wording_exact": true,
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "reg-1",
+      "reg-10",
+      "reg-11"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "VAT-047",
+    "LF": 350,
+    "wording_exact": true,
+    "source_tags": [],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-001",
+    "LF": 31,
+    "wording_exact": true,
+    "source_tags": [],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-002",
+    "LF": 35,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-1",
+      "tax-2",
+      "tax-25",
+      "capital-2",
+      "capital-2a",
+      "capital-2b",
+      "capital-2c",
+      "capital-2d",
+      "capital-2e",
+      "capital-2f",
+      "capital-15"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-003",
+    "LF": 37,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-1"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-004",
+    "LF": 43,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7",
+      "tax-2"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-005",
+    "LF": 44,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-15",
+      "capital-1",
+      "capital-5",
+      "capital-9"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-006",
+    "LF": 45,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-9",
+      "capital-15"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-007",
+    "LF": 46,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-008",
+    "LF": 47,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2a"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-009",
+    "LF": 48,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-14",
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-010",
+    "LF": 49,
+    "wording_exact": true,
+    "source_tags": [
+      "admin-8"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-011",
+    "LF": 50,
+    "wording_exact": true,
+    "source_tags": [
+      "admin-8",
+      "refund-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-012",
+    "LF": 56,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2",
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-013",
+    "LF": 58,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-014",
+    "LF": 60,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2",
+      "residence-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-015",
+    "LF": 62,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2",
+      "tax-31",
+      "tax-37b",
+      "rate-5",
+      "residence-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-016",
+    "LF": 66,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-2",
+      "tax-25",
+      "rate-7",
+      "royalty-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-017",
+    "LF": 68,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-018",
+    "LF": 70,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-019",
+    "LF": 74,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2a",
+      "capital-4",
+      "capital-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-020",
+    "LF": 76,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2a",
+      "capital-2b",
+      "capital-2c"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-021",
+    "LF": 78,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2c",
+      "capital-4",
+      "capital-14",
+      "capital-19"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-022",
+    "LF": 80,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2c",
+      "capital-4",
+      "capital-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-023",
+    "LF": 82,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2d",
+      "capital-2e"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-024",
+    "LF": 84,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2f"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-025",
+    "LF": 90,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-026",
+    "LF": 91,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-118"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-027",
+    "LF": 92,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-028",
+    "LF": 93,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15",
+      "capital-18",
+      "tax-100"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-029",
+    "LF": 94,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2b"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-030",
+    "LF": 95,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2c"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-031",
+    "LF": 97,
+    "wording_exact": true,
+    "source_tags": [
+      "admin-8",
+      "refund-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-032",
+    "LF": 99,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15",
+      "refund-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-033",
+    "LF": 101,
+    "wording_exact": true,
+    "source_tags": [
+      "royalty-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-034",
+    "LF": 105,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-035",
+    "LF": 107,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-15",
+      "capital-18"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-036",
+    "LF": 109,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2b",
+      "capital-2c"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-037",
+    "LF": 111,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-139",
+      "tax-140",
+      "tax-141"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-038",
+    "LF": 115,
+    "wording_exact": true,
+    "source_tags": [],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-039",
+    "LF": 117,
+    "wording_exact": true,
+    "source_tags": [
+      "tax-37a",
+      "tax-37b"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-040",
+    "LF": 119,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15",
+      "tax-2",
+      "rate-7",
+      "capital-2",
+      "capital-16",
+      "residence-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-041",
+    "LF": 123,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-1",
+      "capital-5",
+      "capital-9",
+      "capital-15",
+      "tax-25",
+      "tax-154",
+      "capital-19",
+      "relief-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-042",
+    "LF": 125,
+    "wording_exact": true,
+    "source_tags": [
+      "relief-page"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-043",
+    "LF": 127,
+    "wording_exact": true,
+    "source_tags": [
+      "relief-page",
+      "rate-1",
+      "rate-2",
+      "rate-3"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-044",
+    "LF": 136,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-045",
+    "LF": 138,
+    "wording_exact": true,
+    "source_tags": [
+      "rate-7"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-046",
+    "LF": 158,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2a",
+      "capital-4",
+      "capital-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-047",
+    "LF": 160,
+    "wording_exact": true,
+    "source_tags": [
+      "capital-2a",
+      "capital-4",
+      "capital-14"
+    ],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  },
+  {
+    "id": "XB-048",
+    "LF": 182,
+    "wording_exact": true,
+    "source_tags": [],
+    "verdict": "Supported within stated conditions / operational limitation; sources and arithmetic independently assessed"
+  }
+]

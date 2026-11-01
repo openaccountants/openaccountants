@@ -1,0 +1,103 @@
+{
+  "article": "EMPLOYMENT-ACTUAL-ANNEX7-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2019/mo59-65md/anexa%20nr_7_126.doc",
+  "text": "Anexa nr.7 la Ordinul Ministerului Finanțelor \nnr.126 din 4 octombrie 2017\nПриложение № 7 к Приказу Министерства финансов\n№ 126 от 4 октября 2017 г.\n\n(aprobată prin Anexa nr.3 la Ordinul Ministerului Finanțelor\nnr.____ din __  februarie 2019)\nПриложение № 3 к Приказу Министерства финансов\n№ ___ от ___ февраля 2019 г.\n\n\nCLASIFICATORUL RAPORTURILOR DE MUNCĂ\nКЛАССИФИКАТОР ТРУДОВЫХ ОТНОШЕНИЙ\n\nCod/        Код\nSituația privind raporturile de muncă/ \nCитуация o трудовых отношений\n01\nANGAJARE PE PERIOADĂ NEDETERMINATĂ/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК\n05\nANGAJARE PE PERIOADĂ DETERMINATĂ/ \nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК\n02\nÎNCETAREA RAPORTURILOR DE MUNCĂ/ \nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ\n03\nSUSPENDAREA CONTRACTULUI INDIVIDUAL DE MUNCĂ*/\nПРИОСТАНОВЛЕНИЕ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА*\n04\nANULAREA SUSPENDĂRII CONTRACTULUI INDIVIDUAL DE MUNCĂ/ \nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА\n06\nANGAJARE PE PERIOADĂ NEDETERMINATĂ, MILITAR**/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ\n07\nANGAJARE PE PERIOADĂ DETERMINATĂ, MILITAR/\nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ\n08\nÎNCETAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ\n09\nSUSPENDAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРИОСТАНОВЛЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ\n10\nANULAREA SUSPENDĂRII RAPORTURILOR DE MUNCĂ, MILITAR/\nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ\n\n* se utilizează în cazurile suspendării activității unității, încorporării în serviciul militar în termen, precum şi în cazurile de suspendare a contractului individual de muncă (cu excepția suspendării contractului individual de muncă în circumstanţe ce nu depind de voinţa părţilor, suspendării contractului individual de muncă din iniţiativa salariatului în caz de aflare în concediu pentru îngrijirea unui membru bolnav al familiei cu durata de pînă la doi ani, conform certificatului medical, şi în caz de aflare în concediu parţial plătit pentru îngrijirea copilului pînă la vîrsta de 3 ani)/ используется в случаях приостановления деятельности предприятия, призыва на срочную военную службу, также в случаях приостановления индивидуального трудового договора (за исключением случаев приостановления действия индивидуального трудового договора по обстоятельствам, не зависящим от воли сторон, случаев приостановления действия индивидуального трудового договора по инициативе работника в связи с нахождением в отпуске по уходу за больным членом семьи продолжительностью до двух лет, согласно медицинскому заключению и в частично оплачиваемом отпуске по уходу за ребенком в возрасте до трех лет.).\n\n** la categoria militari se atribuie personalul militar din cadrul Ministerului Apărării, funcționarii publici cu statut special, polițiștii de frontieră și militarii din cadrul Ministerului Afacerilor Interne și Administrației Naționale a Penitenciarelor, ofițerii de informație și securitate, ofițerii de protecție ai Serviciului de Protecție și Pază de Stat/ \nв военную категорию входят военнослужащие Министерства обороны, государственные служащие с особым статусом, пограничники и военные Министерства Внутренних Дел и Национальной Администрации Пенитенциарных Учреждений, офицеры информации и безопасности, офицеры охраны Службы государственной охраны.\n\nNotă: Codurile 06-10 se indică de către contribuabili doar în cazul militarilor/ \nПримечание: Коды 06-10 указываются налогоплательщиками только в случае военных.”",
+  "sha256": "65398d6e06634a052641b060b4cfb76a82f90402f160dc96269dfbac01a7f790",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T04:49:31.896084+00:00",
+  "format": "Original official DOC/DOCX retained unchanged; full XML text/tables read and all rendered pages visually inspected",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/employment-current-annex7.doc",
+  "binary_sha256": "fdeba97cddb563b6b9fd6b51db8b0632ea3398e2ff0bfe09b5d67c108a02a068",
+  "binary_size_bytes": 48640,
+  "full_binary_retained": true,
+  "source_points": {
+    "table_00_row_00": "Cod/        Код\nSituația privind raporturile de muncă/ \nCитуация o трудовых отношений",
+    "table_00_row_01": "01\nANGAJARE PE PERIOADĂ NEDETERMINATĂ/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК",
+    "table_00_row_02": "05\nANGAJARE PE PERIOADĂ DETERMINATĂ/ \nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК",
+    "table_00_row_03": "02\nÎNCETAREA RAPORTURILOR DE MUNCĂ/ \nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ",
+    "table_00_row_04": "03\nSUSPENDAREA CONTRACTULUI INDIVIDUAL DE MUNCĂ*/\nПРИОСТАНОВЛЕНИЕ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА*",
+    "table_00_row_05": "04\nANULAREA SUSPENDĂRII CONTRACTULUI INDIVIDUAL DE MUNCĂ/ \nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА",
+    "table_00_row_06": "06\nANGAJARE PE PERIOADĂ NEDETERMINATĂ, MILITAR**/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ",
+    "table_00_row_07": "07\nANGAJARE PE PERIOADĂ DETERMINATĂ, MILITAR/\nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ",
+    "table_00_row_08": "08\nÎNCETAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ",
+    "table_00_row_09": "09\nSUSPENDAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРИОСТАНОВЛЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ",
+    "table_00_row_10": "10\nANULAREA SUSPENDĂRII RAPORTURILOR DE MUNCĂ, MILITAR/\nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ",
+    "body_paragraph_000": "Anexa nr.7 la Ordinul Ministerului Finanțelor ",
+    "body_paragraph_001": "nr.126 din 4 octombrie 2017",
+    "body_paragraph_002": "Приложение № 7 к Приказу Министерства финансов",
+    "body_paragraph_003": "№ 126 от 4 октября 2017 г.",
+    "body_paragraph_005": "(aprobată prin Anexa nr.3 la Ordinul Ministerului Finanțelor",
+    "body_paragraph_006": "nr.____ din __  februarie 2019)",
+    "body_paragraph_007": "Приложение № 3 к Приказу Министерства финансов",
+    "body_paragraph_008": "№ ___ от ___ февраля 2019 г.",
+    "body_paragraph_011": "CLASIFICATORUL RAPORTURILOR DE MUNCĂ",
+    "body_paragraph_012": "КЛАССИФИКАТОР ТРУДОВЫХ ОТНОШЕНИЙ",
+    "body_paragraph_015": "* se utilizează în cazurile suspendării activității unității, încorporării în serviciul militar în termen, precum şi în cazurile de suspendare a contractului individual de muncă (cu excepția suspendării contractului individual de muncă în circumstanţe ce nu depind de voinţa părţilor, suspendării contractului individual de muncă din iniţiativa salariatului în caz de aflare în concediu pentru îngrijirea unui membru bolnav al familiei cu durata de pînă la doi ani, conform certificatului medical, şi în caz de aflare în concediu parţial plătit pentru îngrijirea copilului pînă la vîrsta de 3 ani)/ используется в случаях приостановления деятельности предприятия, призыва на срочную военную службу, также в случаях приостановления индивидуального трудового договора (за исключением случаев приостановления действия индивидуального трудового договора по обстоятельствам, не зависящим от воли сторон, случаев приостановления действия индивидуального трудового договора по инициативе работника в связи с нахождением в отпуске по уходу за больным членом семьи продолжительностью до двух лет, согласно медицинскому заключению и в частично оплачиваемом отпуске по уходу за ребенком в возрасте до трех лет.).",
+    "body_paragraph_017": "** la categoria militari se atribuie personalul militar din cadrul Ministerului Apărării, funcționarii publici cu statut special, polițiștii de frontieră și militarii din cadrul Ministerului Afacerilor Interne și Administrației Naționale a Penitenciarelor, ofițerii de informație și securitate, ofițerii de protecție ai Serviciului de Protecție și Pază de Stat/ ",
+    "body_paragraph_018": "в военную категорию входят военнослужащие Министерства обороны, государственные служащие с особым статусом, пограничники и военные Министерства Внутренних Дел и Национальной Администрации Пенитенциарных Учреждений, офицеры информации и безопасности, офицеры охраны Службы государственной охраны.",
+    "body_paragraph_020": "Notă: Codurile 06-10 se indică de către contribuabili doar în cazul militarilor/ ",
+    "body_paragraph_021": "Примечание: Коды 06-10 указываются налогоплательщиками только в случае военных.”"
+  },
+  "table_cells": [
+    [
+      [
+        "Cod/        Код",
+        "Situația privind raporturile de muncă/ \nCитуация o трудовых отношений"
+      ],
+      [
+        "01",
+        "ANGAJARE PE PERIOADĂ NEDETERMINATĂ/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК"
+      ],
+      [
+        "05",
+        "ANGAJARE PE PERIOADĂ DETERMINATĂ/ \nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК"
+      ],
+      [
+        "02",
+        "ÎNCETAREA RAPORTURILOR DE MUNCĂ/ \nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ"
+      ],
+      [
+        "03",
+        "SUSPENDAREA CONTRACTULUI INDIVIDUAL DE MUNCĂ*/\nПРИОСТАНОВЛЕНИЕ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА*"
+      ],
+      [
+        "04",
+        "ANULAREA SUSPENDĂRII CONTRACTULUI INDIVIDUAL DE MUNCĂ/ \nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ДЕЙСТВИЯ ИНДИВИДУАЛЬНОГО ТРУДОВОГО ДОГОВОРА"
+      ],
+      [
+        "06",
+        "ANGAJARE PE PERIOADĂ NEDETERMINATĂ, MILITAR**/\nТРУДОУСТРОЙСТВО НА НЕОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ"
+      ],
+      [
+        "07",
+        "ANGAJARE PE PERIOADĂ DETERMINATĂ, MILITAR/\nТРУДОУСТРОЙСТВО НА ОПРЕДЕЛЕННЫЙ СРОК, ВОЕННОСЛУЖАЩИЙ"
+      ],
+      [
+        "08",
+        "ÎNCETAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРЕКРАЩЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ"
+      ],
+      [
+        "09",
+        "SUSPENDAREA RAPORTURILOR DE MUNCĂ, MILITAR/\nПРИОСТАНОВЛЕНИЕ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ"
+      ],
+      [
+        "10",
+        "ANULAREA SUSPENDĂRII RAPORTURILOR DE MUNCĂ, MILITAR/\nАННУЛИРОВАНИЕ ПРИОСТАНОВЛЕНИЯ ТРУДОВЫХ ОТНОШЕНИЙ, ВОЕННОСЛУЖАЩИЙ"
+      ]
+    ]
+  ],
+  "rendered_pdf_relative_to_country_workspace": "validation/employment-current-annex7-render/employment-current-annex7.pdf",
+  "rendered_pdf_sha256": "a94f7a079a5744705264c48d7f3ec34a1321d4f73e4cffa737463d6b58bd115c",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154162&lang=ro",
+  "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder126; latestdisplayedOrder56/27April2026 effective30April2026. Actualeightcurrentannexlinks observed and downloadedthroughnormalbrowser event/path. HistoricalIPC18annexes1/2notdownloaded; December2020lastIPC18periodexplicit.",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "portal_test": false,
+  "source_limits": "IRM19 and CAS18-AN are different returns. The current category table still captions the tariff year2021 but refers to the annual budget; no2021amount carried forward. CAS instruction6 opening status-change wording is inconsistent; its explicit with-employees IPC21/without-employees CAS split retained. IRM risk158 auto03/date exception retained narrowly despite general field-group exclusion. IRM0identifier exception is not transferred to CAS missing-IDNP field. Paternal5–45days is a technical form constraint, not a full benefit-entitlement calculation; inclusive/exclusive boundary algorithm and authenticated portal not tested. No statutory dismissal/benefit entitlement inferred from classifier labels. Current separate CNAS special-pension occupation list not fully read.",
+  "conversion_derivative_relative_to_country_workspace": "primary-attachments/employment-current-annex7.docx",
+  "conversion_derivative_sha256": "7ebedf451ae0c5f8940d6c0fd0d67f7390cebc8ac839e7316aa40b017566eac3",
+  "conversion": "Local installed LibreOffice headless DOC-to-DOCX for read/render only; original retained unchanged"
+}

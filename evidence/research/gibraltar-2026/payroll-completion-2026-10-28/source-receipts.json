@@ -1,0 +1,384 @@
+{
+  "sources": [
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf",
+      "title": "ITO SE1 trade-income registration form, sections 3\u20139",
+      "name": "se1.pdf",
+      "ok": true,
+      "bytes": 97935,
+      "sha256": "4cb55d286d3efb4f276741ad0ebb0f48914bb3c3f4422e9264bf6c072a462718",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/SE%20CONTRIBUTION%20SCHEDULE%202627%20%28Fillable%29.pdf",
+      "title": "ITO self-employed contribution schedule 2026/27",
+      "name": "se-schedule202627.pdf",
+      "ok": true,
+      "bytes": 226195,
+      "sha256": "cf4fefac5bd5cc832d2a543896f51a9086dedff0432814ed456ccf34b3d3b8b9",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf",
+      "title": "ITO self-employed social insurance guidance effective July 2025, pages 4, 6 and 8",
+      "name": "se-guide.pdf",
+      "ok": true,
+      "bytes": 357117,
+      "sha256": "1ce3b5b26ca05d8f51c4f92f4ccc1fb8f95d7bc577e6c2cc21c04618b8245ad8",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822",
+      "title": "HMRC CA3822: temporary overseas employment certificate application, including Gibraltar",
+      "name": "ca3822-current.html",
+      "ok": true,
+      "bytes": 92222,
+      "sha256": "986e86e87b4563100b41860d80bb49e7388e9c03c6cb7c924dbc8feab2d2bd9e",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837",
+      "title": "HMRC CA3837: temporary overseas self-employment certificate application, including Gibraltar",
+      "name": "ca3837-current.html",
+      "ok": true,
+      "bytes": 90505,
+      "sha256": "54781cd537ad311b08d123de4549d270a372297f977e743b806869cd02012ec7",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf",
+      "title": "Social Security (United Kingdom) Order 2024, commencement and scheduled agreement Articles 2, 9\u201314, printed pages 10, 12\u201315",
+      "name": "uk-order.pdf",
+      "ok": true,
+      "bytes": 4796043,
+      "sha256": "5e811e757e74d6cb60323ba2ca527dd7dc6d6ea55b529f0ec8a1047f05a01c87",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland",
+      "title": "HMRC: contribution coverage for workers coming to the UK from Gibraltar; certificate evidence",
+      "name": "uk-inbound-current.html",
+      "ok": true,
+      "bytes": 92957,
+      "sha256": "a2b0584f55dc10c2768453164dd6cd1896697b244436cc801dd4db2f924a4101",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers",
+      "title": "Gibraltar Income Tax Office: detached-worker contact route",
+      "name": "detached-workers-current.html",
+      "ok": true,
+      "bytes": 71481,
+      "sha256": "583600d65f66416b437d603ec21159e1624f3afd7091408f53dd23387ca9fb65",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf",
+      "title": "Daily Part 1 codes 19\u201336, linked under 2026/27 employer tables",
+      "name": "daily-table.pdf",
+      "ok": true,
+      "bytes": 107277,
+      "sha256": "3f38b2e1cf268026f811831edb5e216752281ebad51943c3bdb4bbd1650e453d",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf",
+      "title": "Monthly Part 1 codes 19\u201336, linked under 2026/27 employer tables",
+      "name": "monthly-table.pdf",
+      "ok": true,
+      "bytes": 838640,
+      "sha256": "d5bf88e8144c1c321bfe7082c87a393a895a17cffb818b7c56df0887fdc06b53",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf",
+      "title": "Employment Injuries (Contributions) Regulations 2001, incorporated contribution procedures",
+      "name": "injuries-regulations.pdf",
+      "ok": true,
+      "bytes": 143581,
+      "sha256": "820c1ee74ebed75fa6b0110f66d6a340e5d7a6821867c4659b52159a74b9fdd0",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf",
+      "title": "Social Insurance (Contributions) Regulations: regulations 4, 4A\u20134C and 17A",
+      "name": "si-regulations.pdf",
+      "ok": true,
+      "bytes": 226397,
+      "sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf",
+      "title": "Social Security (Insurance) Act, 1 July 2025 consolidation: sections 5 and 7",
+      "name": "si-act.pdf",
+      "ok": true,
+      "bytes": 375589,
+      "sha256": "c0d17df7191c58288a98b452f8c1ad2456d8dcbbb9e504c2fbf4d21499a04368",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
+      "title": "Employer guidance 2025/26, social-insurance sections 11.1\u201311.2",
+      "name": "employer-notes.pdf",
+      "ok": true,
+      "bytes": 290737,
+      "sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf",
+      "title": "Income Tax (Pay As You Earn) Regulations 1989: 1 July 2023 consolidation",
+      "name": "paye-regulations.pdf",
+      "ok": true,
+      "bytes": 193507,
+      "sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers",
+      "title": "Income Tax Office: employer registration and obligations",
+      "name": "employers-current.html",
+      "ok": true,
+      "bytes": 144299,
+      "sha256": "1ddb90aab344b5b706c211128c23a24982290578afda78b26eaabd7eff20e3e8",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf",
+      "title": "Electronic P8 submission guidance 2025/2026",
+      "name": "p8-guide.pdf",
+      "ok": true,
+      "bytes": 705220,
+      "sha256": "cf95ae9850b5ad28ab0a9dcc22e9ee8dd72643caac1a8c4572db9d1651ca0070",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+      "title": "Social Insurance Contributions Class 2026/2027",
+      "name": "classes-202627.pdf",
+      "ok": true,
+      "bytes": 112631,
+      "sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
+      "text_ok": true,
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance",
+      "name": "social-insurance-current.html",
+      "title": "Current ITO social-insurance procedure page",
+      "ok": true,
+      "bytes": 74013,
+      "sha256": "295fcc9c935b3e106304b80950f2e44ba6ed5d329333e8d431507d3812d72e0a",
+      "read_on": "2026-10-28",
+      "read_scope": "Only the rule/paragraph/page/field units quoted in ledger.json; retrieval alone is not a full-document review. The social-insurance overview was read for its published directions, without new benefit-entitlement conclusions."
+    },
+    {
+      "name": "payroll/second-employment-exemption.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/contributions/4%29%20SOCIAL%20INSURANCE%20EXEMPTION.pdf",
+      "ok": true,
+      "bytes": 111728,
+      "sha256": "3cf7c9774cbb1667597164a3c25328f5a988cfb1e7768241185286d9fd344e44",
+      "read_on": "2026-10-28",
+      "read_scope": "Entire one-page application: maximum in primary job, three payslips, ID, both jobs, undertaking and approval fields; no claim submitted."
+    },
+    {
+      "name": "income-tax-act-20260323.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "ok": true,
+      "bytes": 1849515,
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "read_on": "2026-10-28",
+      "read_scope": "Schedule 7 paragraphs 1, 6\u201348 and 70\u201378 as quoted; not a full 297-page Act read. Paragraph 28 fuel 90% calculation and printed reference retained."
+    },
+    {
+      "name": "allowances-rules-20260323.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+      "ok": true,
+      "bytes": 356091,
+      "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+      "read_on": "2026-10-28",
+      "read_scope": "Rules 3(7)\u2013(10), 3(17) and 20A\u201320B only for this continuation."
+    },
+    {
+      "name": "individual/paye-current.html",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/paye",
+      "ok": true,
+      "bytes": 90179,
+      "sha256": "ba68a75a7e09799df7fc36c4599023e43444ff069b2ad120c9152009a935925f",
+      "read_on": "2026-10-28",
+      "read_scope": "Cached current starter, departure, benefit and pension FAQ sections; not new confirmation of an actual scheme/approval."
+    },
+    {
+      "name": "corporate/ito-contacts-current.html",
+      "url": "https://www.gibraltar.gov.gi/contacts/income-tax-office-76",
+      "ok": true,
+      "bytes": 70653,
+      "sha256": "dab68f7b94a76e1c044348ce749c6e6056a197eba9bb5038bdbd661a6044c130",
+      "read_on": "2026-10-28",
+      "read_scope": "Cached current social-insurance contact entry; no enquiry made."
+    },
+    {
+      "name": "uk-gibraltar-treaty-official.html",
+      "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+      "ok": true,
+      "bytes": 244951,
+      "sha256": "d20b012e4327f9c050363ca2885c998fc6a6f8e5f3fb9f838582af04b0d61202",
+      "read_on": "2026-10-28",
+      "read_scope": "Cached actual Article 14 body, distinguishing the income-tax 183-day rule from social-security coverage; not the empty table-of-contents entry."
+    }
+  ],
+  "complete_rendered_pages_checked": [
+    {
+      "render": "classes-202627.png",
+      "sha256": "e9564bae31084860d2ea0c44709561df4054cb3965044ff4757f14b58358c76e",
+      "read_on": "2026-10-28",
+      "scope": "Entire one-page annual/monthly/weekly table, class grouping and effective date"
+    },
+    {
+      "render": "daily-table-page1.png",
+      "sha256": "418213e90d7dd53cf37d7ba669ae345522b0e7374dff53dd516e50c750410d3a",
+      "read_on": "2026-10-28",
+      "scope": "Entire daily page 1: code24/pay35, grey row31 and footer"
+    },
+    {
+      "render": "monthly-table-page14.png",
+      "sha256": "f053e4d4ebbe2f23a4fddfc5385a630a3ad6bbcfbf680ff3e52fc60051b00fa6",
+      "read_on": "2026-10-28",
+      "scope": "Entire monthly page14: pay1623\u20131624/code35 and both SI columns"
+    },
+    {
+      "render": "uk-order-10.png",
+      "sha256": "3b03dcee86121ce886534e2aa7578e4393853255e8c5c5cb580dad9a9a32d4cb",
+      "read_on": "2026-10-28",
+      "scope": "Entire page; only the quoted Article 2/9\u201314 portions are claimed as rule evidence"
+    },
+    {
+      "render": "uk-order-12.png",
+      "sha256": "0705e76928891bbad1d3007a4121f771ce09943b0e1a9d4164a35a469adc3f65",
+      "read_on": "2026-10-28",
+      "scope": "Entire page; only the quoted Article 2/9\u201314 portions are claimed as rule evidence"
+    },
+    {
+      "render": "uk-order-13.png",
+      "sha256": "b2baaf5a5698dca37145e69fec58e25b8e5e5ba9e749600530c8b6819e8cee6c",
+      "read_on": "2026-10-28",
+      "scope": "Entire page; only the quoted Article 2/9\u201314 portions are claimed as rule evidence"
+    },
+    {
+      "render": "uk-order-14.png",
+      "sha256": "00dd00613687ab0e554a322717089fcd44ef2a54f78833d12db83b32b80ee3c4",
+      "read_on": "2026-10-28",
+      "scope": "Entire page; only the quoted Article 2/9\u201314 portions are claimed as rule evidence"
+    },
+    {
+      "render": "uk-order-15.png",
+      "sha256": "b4b99cd499826f915de1a35da6da9801840a7dcbb8d3501cd5f345f347097262",
+      "read_on": "2026-10-28",
+      "scope": "Entire page; only the quoted Article 2/9\u201314 portions are claimed as rule evidence"
+    }
+  ],
+  "earlier_primary_source_comparisons": [
+    {
+      "file": "uk-order.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf",
+      "earlier_sha256": "5e811e757e74d6cb60323ba2ca527dd7dc6d6ea55b529f0ec8a1047f05a01c87",
+      "current_sha256": "5e811e757e74d6cb60323ba2ca527dd7dc6d6ea55b529f0ec8a1047f05a01c87",
+      "byte_exact": true
+    },
+    {
+      "file": "daily-table.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf",
+      "earlier_sha256": "3f38b2e1cf268026f811831edb5e216752281ebad51943c3bdb4bbd1650e453d",
+      "current_sha256": "3f38b2e1cf268026f811831edb5e216752281ebad51943c3bdb4bbd1650e453d",
+      "byte_exact": true
+    },
+    {
+      "file": "monthly-table.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf",
+      "earlier_sha256": "d5bf88e8144c1c321bfe7082c87a393a895a17cffb818b7c56df0887fdc06b53",
+      "current_sha256": "d5bf88e8144c1c321bfe7082c87a393a895a17cffb818b7c56df0887fdc06b53",
+      "byte_exact": true
+    },
+    {
+      "file": "injuries-regulations.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf",
+      "earlier_sha256": "820c1ee74ebed75fa6b0110f66d6a340e5d7a6821867c4659b52159a74b9fdd0",
+      "current_sha256": "820c1ee74ebed75fa6b0110f66d6a340e5d7a6821867c4659b52159a74b9fdd0",
+      "byte_exact": true
+    },
+    {
+      "file": "si-regulations.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf",
+      "earlier_sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
+      "current_sha256": "1128ce3724f7647d691edda317ffb0d3324acab5b21c52a58b2ed6816a4a7dc3",
+      "byte_exact": true
+    },
+    {
+      "file": "si-act.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf",
+      "earlier_sha256": "c0d17df7191c58288a98b452f8c1ad2456d8dcbbb9e504c2fbf4d21499a04368",
+      "current_sha256": "c0d17df7191c58288a98b452f8c1ad2456d8dcbbb9e504c2fbf4d21499a04368",
+      "byte_exact": true
+    },
+    {
+      "file": "employer-notes.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
+      "earlier_sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
+      "current_sha256": "7a65f7d93bce5b43a2965fa82babff4465783ae3a1706a474d5146d2ea71c52d",
+      "byte_exact": true
+    },
+    {
+      "file": "paye-regulations.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf",
+      "earlier_sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
+      "current_sha256": "8e47e4fe1212b0e181c33732814c337efc49157286d940375413202918eff657",
+      "byte_exact": true
+    },
+    {
+      "file": "classes-202627.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+      "earlier_sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
+      "current_sha256": "8c975f5477405cb9b29410ad26736e91ba10cf3ebe58c48aaadfde80d3696822",
+      "byte_exact": true
+    }
+  ],
+  "current_employer_html_2026_27_link_section_verified": true,
+  "official_parent_versions_checked": {
+    "SIAct": "1 July 2025",
+    "SIContributions": "1 July 2015, including the listed retrospective 2017 amendment",
+    "PAYE": "1 July 2023"
+  },
+  "no_live_transaction_or_external_enquiry": true,
+  "OCR_policy": "Finder only; all scanned agreement quotations manually transcribed/checked against rendered original pages; raw OCR retained separately in work sources."
+}

@@ -1,0 +1,116 @@
+Tax return -Hopp til høvuðsinnihald (Skip to main content)
+Individuals Business TAKS
+Føroyskt
+Search
+Borgaragluggin
+Fyri at rita inn skalt tú hava Samleikan
+Hevur tú Samleikan?
+Rita inn Hevur tú ikki Samleikan?
+Stovna Samleikan
+Vinnugluggin
+Fyri at rita inn skalt tú hava ein brúkara og Samleikan
+Hevur tú tað?
+Rita inn
+Hevur tú ikki ein brúkara?
+Stovna brúkara
+Hevur tú ikki Samleikan?
+Stovna Samleikan
+Individuals
+Tax
+Tax return
+Read Print
+Tax return
+If you reside in the Faroe Islands and have an income and/or deduction from the Faroes or abroad, you are liable to pay tax and possibly also submit a tax return.
+There are three different groups of taxpayers in the Faroes: ordinary taxpayers, self-employed and companies.
+Ordinary taxpayers
+Most people fall into this category. These are individuals who receive salary/wages from their employer, paid via the automatic tax-withholding system. TAKS usually has the necessary information about these individuals, such as earned income, deductions and number of children.
+If you are an ordinary taxpayer, you are usually not required to submit a tax return, because the correct information has already been recorded in the preliminary tax assessment register. Instead, you will receive a pre-completed tax statement, which contains an overview of your income and deductions. If the statement is correct, you are not required to do anything, but if the statement is incorrect, you must complete and submit a tax return containing the correct information.
+Self-employed
+If you work for yourself rather than an employer, you are self-employed. This could be, for example, a sole proprietorship, a partnership, a jointly owned shipping firm, the estate of a deceased person, a landlord or a private limited company. What these have in common, are that they have a B-income, which is income from their own business that is not taxed at source, and that they have a duty to keep accounts. Another thing they have in common is that their taxes are linked to their p-tal, meaning that the private individual behind the business is directly taxed on the profit.
+Taxpayers in this category always receive a tax return, which they are required to submit along with their accounts and property statement.
+Companies etc.
+This category includes limited companies (P/F), private limited companies (Sp/F), investment funds, organisations, interest groups and estates of deceased persons. These are always registered with a V-tal (Faroese VAT number) and will always receive a tax return, which they are required to submit along with their accounts. Companies that have been granted a tax exemption are also required to submit a tax return along with their accounts.
+How and when to submit your tax return
+There are two ways to submit your tax return: online on Borgaragluggin or by post.
+Online on Borgaragluggin
+This is the simplest way to submit your tax return. The forms are ready to be completed digitally and can be submitted directly on Borgaragluggin.
+By post
+If you prefer to submit the tax return by post, you can print out the form, complete it and send it to TAKS, Postboks 2151, 110 Tórshavn. Find the tax return form under Forms.
+But please note, that if you are liable to submit your accounts, this must be done on Borgaragluggin.
+The deadline for submission is 1 May
+Ordinary taxpayers and self-employed are required to submit their tax return by 1 May.
+If you have not submitted your completed tax return by this date, TAKS is authorised to impose a fine of minimum DKK 1,000. If you still do not submit the tax return, TAKS will make a tax estimation and send a notice of hearing where you may bring forward comments on TAKS' estimation. This is usually done in September. If we do not hear from you, the tax will be appointed according to the notice of hearing. This will be carried out before 1 October.
+Limited companies etc. are required to submit their tax return by 1 July.
+Request a deadline extension
+You may request a deadline extension, if you have a valid reason, such as illness etc. Send the written application by post to TAKS, Postboks 2151, 110 Tórshavn. The deadline cannot be extended beyond 15 August.
+Please note:
+Individuals: each application can only be for one person. All previous tax returns, capital gains tax returns, accounts and property statements must have been submitted before 30 April.
+Companies: each application can only be for one company. All previous tax returns and accounts must have been submitted before 30 June.
+Submitting accounts
+If you are self-employed, you are liable to keep accounts.
+Self-employed have a duty to submit their accounts with the tax return. The accounts must be entered into TAKS' accounting template, which exists in six variations - find the templates under Forms. The accounts must be submitted with the tax return on Borgaragluggin in excel format. The accounts cannot be submitted in any other way.
+Property statement
+A property statement, in Faroese ognaruppgerð, is an outline of your possessions and debts. If you own property or are liable to keep accounts, and have full tax liability in the Faroes, you must enclose a property statement with your tax return.
+If you have a duty to keep accounts, you will receive the property statement from TAKS, which you must enclose with your tax return. If you are not obliged to keep accounts, but own property or financial rights, you should only submit a property statement if there have been any changes to your property or rights compared to the previous year. In this case, you can get the property statement from TAKS' customer service, tel. 35 26 00.
+The property statement should include:
+real property
+cars, boats, furniture and other movable property
+goods, commodities and machinery
+money, outstanding debt and shares in companies
+art, stamp collections and ornaments that are worth over DKK 25.000
+The property statement should not include:
+inheritance or presents where it is stipulated that another individual is the initial recipient of the income and that the holder does not control the property in the meantime
+inheritance or presents where it is stipulated that the income should at first be kept and that the holder does not control the property or income in the meantime
+tenure for limited-time payments or gains, such as pension rights, life annuity, rent-free residence etc.
+Property belonging to children under the age of 16 is included in the property statement of the parent who has custody.
+Want to change the account number for the tax refund?
+If you are due a tax refund from the previous tax year, you will usually receive it in March. If you want to change the bank account for the refund, you must do it well in advance.
+The easiest way to notify TAKS of a change of bank account is to use TAKS' online portal, Borgaragluggin, where you can change the bank account under Basic information > Contact information.
+Need help with the tax return?
+Feel free to call our customer service on tel. 35 26 00 Monday to Thursday from 10 am to 12 pm or send an e-mail to taks@taks.fo. We are happy to help.
+Relevant links
+Tax statement vocabulary
+Preliminary tax assessment
+Borgaragluggin (external link)
+Files
+Tax Return 2025 (PDF)
+Accounting template without salary and depreciation
+Accounting template with salary and/or depreciation
+Accounting template for agriculture
+Accounting template for rental income
+Accounting template for fishing
+Accounting template for taxi-cabs
+Contact
+TAKS
+Smyrilsvegur 20
+Postboks 2151
+FO 110 Tórshavn
+Faroe Islands
+Tel.: +298 35 26 00
+Email: taks@taks.fo
+VAT-number: 443921
+Opening hours:
+Tel: Mon-Thu 10am-12pm
+Reception: Mon-Thu 10am-12pm
+Banks
+BankReg.AccountBIC/SWIFTIBAN
+Betri Banki9181152.861.2EIKBFOTFFO65 9181 0001 5286 12
+BankNordik6460101.104.0FIFBFOTXFO29 6460 0001 0110 40
+Norðoya Sparikassi9865100.188.9NOYAFO21FO09 9865 0001 0018 89
+Suðuroyar Sparikassi9870100.084.6SUSPFOT1FO21 9870 0001 0008 46
+Danske Bank3100169.349.92DABADKKKDK88 3000 0016 9349 92
+EAN/GLN nr.: 5797100000119
+Email bills to: rokning@taks.fo
+About TAKS
+Customer Service
+Data Protection
+Appeal Options
+Forms
+FAQ
+Follow Us
+LinkedIn
+Ment, forritað og sniðgivið hava Sansir
+x
+Hey, eg eiti Eyðei og eri nýggi TAKS-botturin.
+Hevur tú ein TAKS-spurning?
+Spyr meg bara.

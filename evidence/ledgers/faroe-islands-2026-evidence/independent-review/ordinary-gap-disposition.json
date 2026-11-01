@@ -1,0 +1,110 @@
+[
+  {
+    "id": "FO-P1",
+    "domain": "IT-IND",
+    "disposition": "Supplied bounded ordinary method",
+    "supplied_method": "Tax24(2) annualisation plus actual2026 indicative calculator sequence;150000/180days gives42235.40 before whole-kr display.",
+    "remaining_scope": "Part-year credits/spouse and changing-membership interactions remain outside the no-credit/no-church fixture. National child-credit proportional reduction is already sourced, but the full combined part-year credit/ceiling implementation is not supplied.",
+    "materiality": "M for the named combined ordinary case; final settlement rounding/portal fields alone are L.",
+    "evidence": "Tax24/46/47; Assessment2; actual root calculator receipt; tranche3."
+  },
+  {
+    "id": "FO-P2",
+    "domain": "IT-IND",
+    "disposition": "Supplied bounded ordinary method",
+    "supplied_method": "Full-year cohabiting nonnegative spouse incomes: unused30000lower allowance transfer;20/300\u219230/290 and0/300\u219230/270.",
+    "remaining_scope": "Negative-income, separation/death and part-year spouse computations are expressly excluded.",
+    "materiality": "Named material exceptions remain conditional M; no need to invent all possible family intersections.",
+    "evidence": "Tax4; TAKS Hj\u00fanafr\u00e1dr\u00e1ttur23\u201326; tranche3."
+  },
+  {
+    "id": "FO-B1",
+    "domain": "IT-IND / PR / IT-CORP",
+    "disposition": "Partly closed",
+    "supplied_method": "Proved payment-to-employer floor-zero offset; below10000private-km proportion; ordinary computer/phone and temporary foreign-resident travel/housing gates.",
+    "remaining_scope": "Calendar-only part-year annual housing/electricity/heat values and combined car mileage/payment ordering remain undecided.",
+    "materiality": "M: e.g. a six-month taxable employer apartment with no exemption; annual value vs calendar fraction changes ordinary taxable benefit. Evidence that mileage/payment really occurred is L once the rule is known.",
+    "evidence": "Tax29; current2026TAKSvalues; VLS D52\u201357; employerbenefits64\u201371; tranche4."
+  },
+  {
+    "id": "FO-C1",
+    "domain": "IT-CORP",
+    "disposition": "Closed for identified ordinary branch",
+    "supplied_method": "Purchased goodwill/qualifying intangible fixed10-year or defined-right-duration schedule;100000/10=10000 and five-year right20000; disposal remaining cost/value rules preserved.",
+    "remaining_scope": "Other special assets, reorganisations or bespoke industry regimes were not the identified missing purchased-intangible method.",
+    "materiality": "No remaining original C1 ordinary computation gap identified. Specialist cases S.",
+    "evidence": "Tax35a; tranche1."
+  },
+  {
+    "id": "FO-C2",
+    "domain": "IT-CORP",
+    "disposition": "Closed ordinary operating-group allocation; separate limit retained",
+    "supplied_method": "Own regulation ordered pre-entry/group/current losses and proportional52/28allocation; total120000ordinary base/21600tax; settlement ledger reconciles.",
+    "remaining_scope": "Separate capital-group implementing permission/conditions are not established by the ordinary operating-group calculation. Actual case-specific approved membership/filing fields must be evidenced.",
+    "materiality": "Capital-group rule is conditional M where claimed; approved facts/return fields alone L. Do not withhold the supplied ordinary group method because every group intersection is not proved.",
+    "evidence": "GroupReg148/2015 \u00a7\u00a76/9; Assessment9; Capital9; tranche1."
+  },
+  {
+    "id": "FO-C3",
+    "domain": "IT-CORP",
+    "disposition": "Supplied ordinary indexed building-recapture method",
+    "supplied_method": "Prior-depreciation cap uses unindexed book comparison; separate indexed excess gain;900000sale/700000book/300000dep gives200000recapture, not zero because indexed cost1.1m.",
+    "remaining_scope": "Conflicting historical acquisition-index entries still require exact vintage resolution for an affected building. The worksheet does not choose an unsupported factor.",
+    "materiality": "Method closed; affected conflicting factor is conditional M, not a universal inability to compute every building sale.",
+    "evidence": "Depreciation25/26 and actual TAKS VLS N example; tranche1."
+  },
+  {
+    "id": "FO-V1",
+    "domain": "VAT",
+    "disposition": "Partly closed; concrete ordinary gap remains",
+    "supplied_method": "Foreign items7\u201313 supplier charge and actual customer input allocation supplied:10000invoice\u21922500VAT\u21921500recoverable at60%.",
+    "remaining_scope": "Items1\u20136 foreign consultancy/rights etc bought by a registered partly recovering recipient: quoted supplier limb lists7\u201313, buyer limb expressly addresses unregistered buyers. Liability/liable party for this ordinary branch remains unestablished.",
+    "materiality": "M. Neither a blanket reverse charge nor zero tax follows. Q2 statute/agency payment-date conflict is separate; scope disclosed and earlier statutory route supplied, so not absence of all VAT computation.",
+    "evidence": "VAT28(1)\u2013(6),15\u201317; Regulation1; tranche2."
+  },
+  {
+    "id": "FO-S1",
+    "domain": "SC",
+    "disposition": "Supplied earlier2026period ledger; precise transitions remain",
+    "supplied_method": "12% throughout2026; oldA/Bbelow30, newBbelow500 from28Feb; old foreign-plan conditions and Feb statutory12% overlay before25Aug regulation; Bdayswithoutduty/365.",
+    "remaining_scope": "Treatment after28Feb of an already approved temporary-stay exemption, oldBassessment/later-settlement cutover, zero-income annex endpoint remain exact named boundaries.",
+    "materiality": "Existing-approval/cutover can be M for an actual ordinary transitional claimant; operational guarantee/other invoice calendars L when rate/base/due-event route is supplied. Zero-income annex not silently assigned0or30.",
+    "evidence": "Pension originals, Acts78/2020,35/2021,23/2026,Reg52/2023 originals/72/2026, current2/12; tranche4."
+  },
+  {
+    "id": "FO-T1",
+    "domain": "TP",
+    "disposition": "Ordinary full documentation method available; exemption gap remains",
+    "supplied_method": "Arm\u2019s-length/FAR/contracts/comparability and statutory thin-capitalisation worksheet remain supplied with correct36m/72m/50staff criteria.",
+    "remaining_scope": "New-company application of the two-year documentation exemption and complex mixed/negative-equity debt allocation remain unproved. No startup exemption or Danish analogical replacement is adopted.",
+    "materiality": "Startup exemption is a real ordinary compliance-burden question, M for that claimant; current form fields/retention/assessed fine practice are L. Full documentation can be prepared without pretending the exemption is settled.",
+    "evidence": "Tax118a(6),37a/37b; retained TAKS TP guidance; tranche1."
+  },
+  {
+    "id": "FO-X1",
+    "domain": "XB",
+    "disposition": "Supplied bounded later-disposal method",
+    "supplied_method": "Original-cost gain and separate departure-value fall:140000sale\u219214000paid plus3500balance reduction, extinguishing17500.",
+    "remaining_scope": "Actual acquisition-basis loss, foreign loss deduction and rising-value/deferred-balance cases still require their separate2c clauses and calculations.",
+    "materiality": "M for those actual ordinary disposal facts; the positive supplied ledger is usable within its express fixture. Do not equate that example with a complete securities-life-cycle engine.",
+    "evidence": "Capital2a\u20132f, especially2c(2)\u2013(6); tranche2."
+  },
+  {
+    "id": "FO-X2",
+    "domain": "XB",
+    "disposition": "Supplied ordinary branch and interest methods",
+    "supplied_method": "Actual fixed-place/independent-enterprise bridge\u2192300000profit/54000tax; narrow genuine corporate-loan interest20k paid20k under defined domestic withholding scope. Ordinary positive-base foreign-tax credit also supplied.",
+    "remaining_scope": "Agency/treaty exceptions, internal finance/intangible attribution, project aggregation, company migration and foreign-credit nonpositive-base/refund cases need their actual scope.",
+    "materiality": "Ordinary fixed-place/standard loan/positive-credit gaps closed. Concrete nonpositive credit or additional attribution case can be M; every conceivable treaty and specialist instrument is S, not a prerequisite to the bounded ordinary method.",
+    "evidence": "Tax2/154; Assessment5/7; Capital15/16/19; TAKS C.2/O.1; tranche2."
+  },
+  {
+    "id": "FO-F1",
+    "domain": "Formation companion",
+    "disposition": "Premium branch supplied; companion limits retained",
+    "supplied_method": "Cash Sp/F specific33incorporation reading disclosed with40countertext;200kcapital+100kpremium\u219275k vs isolated150k; minimum50k+20k\u219270k.",
+    "remaining_scope": "First-year audit elections; holding/influence156(5) wording; detailed UBO implementing control thresholds; extended-review standard and transition execution.",
+    "materiality": "First-year audit and affected holding/control classification are real ordinary compliance questions M; form/fee execution and evidence transmission alone L. Foreign regulated entities/IFRS/insolvency S. Do not assert general two-year recurring size arithmetic settles first-year eligibility.",
+    "evidence": "Companies33/40/27/58a/58b/88; Accounts156\u2013158/203; tranche4."
+  }
+]

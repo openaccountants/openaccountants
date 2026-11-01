@@ -1,0 +1,22 @@
+{
+  "article": "264",
+  "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+  "text": "Articolul 264. Termenul de prescripţie pentru determinarea obligaţiilor fiscale (1) Cu excepţia cazurilor prevăzute la alin.(3), obligaţiile fiscale pot fi determinate de către contribuabil şi Serviciul Fiscal de Stat sau alte organe cu atribuţii de administrare fiscală în următoarele termene: a) impozitele, taxele, majorările de întârziere – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale respective sau pentru plata impozitului, taxei, majorării de întârziere (penalităţii), în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale; b) sancţiunile fiscale aferente unor impozite şi taxe concrete – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale privind impozitul şi taxa menţionată sau pentru plata impozitului şi taxei în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale; c) sancţiunile fiscale neaferente unor impozite şi taxe concrete – în cel mult 4 ani din data săvârșirii încălcării a legislației. (2) - abrogat. (3) Serviciul Fiscal de Stat poate extinde perioada supusă controlului prevăzută la alin. (1), dar care nu va depăși 6 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale, în cazul în care contribuabilul nu a prezentat darea de seamă fiscală sau în cazul în care solicită restituirea sumelor plătite în plus sau a sumelor care, conform legislației fiscale, urmează a fi restituite.",
+  "sha256": "b5a9be6e4412fa593f772df9274ed1856b6366bd104d55f4b7c6b71c55c134c7",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T09:18:24.960035+00:00",
+  "source_points": {
+    "(1) introductory scope": "(1) Cu excepţia cazurilor prevăzute la alin.(3), obligaţiile fiscale pot fi determinate de către contribuabil şi Serviciul Fiscal de Stat sau alte organe cu atribuţii de administrare fiscală în următoarele termene:",
+    "(1)(a)": "a) impozitele, taxele, majorările de întârziere – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale respective sau pentru plata impozitului, taxei, majorării de întârziere (penalităţii), în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale;",
+    "(1)(b)": "b) sancţiunile fiscale aferente unor impozite şi taxe concrete – în cel mult 4 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale privind impozitul şi taxa menţionată sau pentru plata impozitului şi taxei în cazul în care nu este prevăzută prezentarea unei dări de seamă fiscale;",
+    "(1)(c)": "c) sancţiunile fiscale neaferente unor impozite şi taxe concrete – în cel mult 4 ani din data săvârșirii încălcării a legislației. ",
+    "(2)": "(2) - abrogat. ",
+    "(3)": "(3) Serviciul Fiscal de Stat poate extinde perioada supusă controlului prevăzută la alin. (1), dar care nu va depăși 6 ani de la ultima dată stabilită pentru prezentarea dării de seamă fiscale, în cazul în care contribuabilul nu a prezentat darea de seamă fiscală sau în cazul în care solicită restituirea sumelor plătite în plus sau a sumelor care, conform legislației fiscale, urmează a fi restituite."
+  },
+  "header_observed": "LP235 din 02.10.26, MO539-542/30.10.26 art.578; în vigoare 30.10.26",
+  "capture_normalization": "Visible DOM text of actual articles, last occurrence after table of contents, whitespace collapsed to single spaces. Character count and codepoint sum independently returned by browser for transfer verification. Article266 capture includes the following chapter heading; it is not interpreted as part of the article.",
+  "browser_capture_characters": 1447,
+  "browser_capture_character_sum": 173190,
+  "scope": "Current operative consolidated text read in full. Assessment264, collection265 and refund266 clocks kept separate. Historical transitions, Civil Code interruption grounds and Government cancellation implementation not independently resolved.",
+  "independent_review": "Supplemental source capture read by reviewer; complete final Guide/ledger delta review pending"
+}

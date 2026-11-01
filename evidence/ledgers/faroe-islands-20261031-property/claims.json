@@ -1,0 +1,786 @@
+[
+  {
+    "id": "PT001",
+    "rule": "Transactions and protective effect",
+    "guide_section": "Who this applies to",
+    "claims": "Ownership-transfer scope, protection against agreements/enforcement, and deed definition including conditional or part transfers.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §1",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §§1,6",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Rættindi í føstum eigindómi skulu lýsast á tingi fyri at fáa gildi móti avtalum um eigindómin og móti rættargangi.\nStk. 2. Avtala ella rættargangur, sum skal kunna ota burtur ótinglýst rættindi, skal vera tinglýst og rættindahavarin eftir avtaluni í góðvari.\n\n§ 6. Sum skeyti er at skilja hvørt tað skjal, ið flytur eigindómsrættin til ein tilskilaðan fastan eigindóm ella part av tílíkum, treytaleyst ella treytað av rinding av keypspeninginum ella øðrum. Eigindómsavhending kann fara fram við flutningi á skeytið.\nKapitul 2.\nTinglýsingarinnar myndugleikar og mannagongd.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT002",
+    "rule": "Separate charges",
+    "guide_section": "Who this applies to; Rates, bands and thresholds",
+    "claims": "Duty is separate from the fixed fee: 1% of purchase price and DKK 1,000 per document.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §1",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §§1–2",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 1. 2) Fyri tinglýsing verður rindað eitt gjald, sum er 1.000 kr.\n\n§ 2. Gjaldið verður rindað fyri eitthvørt skjal, ið verður fráboðað til tinglýsing.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT003",
+    "rule": "Gift base",
+    "guide_section": "Rates, bands and thresholds; The base",
+    "claims": "Gift uses assessed property value with the 1% charging rule.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §§1,3",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.\n\n§ 3. Um føst ogn verður givin burtur, skal tinglýsingaravgjald latast av tí virði, sum ognin verður mett at hava.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT004",
+    "rule": "Property exchange",
+    "guide_section": "Rates, bands and thresholds; The base",
+    "claims": "Equal-value exchange has no duty; balancing cash is charged at 1%.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §§1–2",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.\n\n§ 2. Við makaskifti av fastari ogn skal einki avgjald rindast til landskassan, um ognirnar ganga líka upp hvør móti aðrari. Verður peningur rindaður umframt, skal tinglýsingaravgjald rindast av hesi upphædd.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT005",
+    "rule": "Inheritance relief is qualified",
+    "guide_section": "Rates, bands and thresholds",
+    "claims": "Relief is confined to the inherited portion for which inheritance duty is paid; it does not itself waive the fixed fee.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §1",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §§1–2,4",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 1. 2) Fyri tinglýsing verður rindað eitt gjald, sum er 1.000 kr.\n\n§ 2. Gjaldið verður rindað fyri eitthvørt skjal, ið verður fráboðað til tinglýsing.\n\n§ 4. Tinglýsing er ókeypis av\n1) adressubroytingum,\n2) myndugleikatøku og løgverjumálum, jbr. § 48 í løgtingslóg um tinglýsing,\n3) fráboðanum, sum nevndar í § 13 í løgtingslóg um tinglýsing,\n4) áheitan um búskilnað, jbr. § 43 í lóg um rættvirknað hjúnalagsins,\n5) sjálvræðisfrátøka sambært § 66 í lóg um skifti av deyðsbúgvi og felagsbúgvi og\n6) sjálvræðisfrátøka sambært § 26 í konkurslógini.\nStk. 2.3) Ókeypis er haraftrat áheitan um:\n1) avlýsing,\n2) avtøku av rættarviðmerkingum,\n3) freistarleingjan ella endaliga innføring í tingbókina av einum skjali, sum er tinglýst við freist, og\n4) striking av rættindum, sum ikki hava fingið fulnað við tvingsilssølu, sbrt. § 642 í rættargangslógini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT006",
+    "rule": "Mortgage nominal base and exclusion",
+    "guide_section": "Rates, bands and thresholds; The base",
+    "claims": "Mortgage duty is 1% of nominal secured principal; judicial liens are excluded.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(1)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 3 a. 2) 1) 3) Tá veð, tó ikki rættarveð, verður tinglýst, skal tinglýsingaravgjald rindast til landskassan. Avgjaldið er 1% av veðtryggjaðu upphæddini. Veðtryggjaða upphæddin er nominella virðið á høvuðsstólinum á veðbrævinum. Inniheldur veðbrævið ásetingar um uppskriving av høvuðsstólinum, er veðtryggjaða upphæddin tann hægsta upphædd, ið høvuðsstólurin kann uppskrivast til. Um hægsta upphæddin, ið høvuðsstólurin kann uppskrivast til, ikki framgongur beinleiðis av veðbrævinum, skal avgjaldskyldugi í veðbrævinum eftir bestu sannføring áseta hægstu upphædd, ið høvuðsstólurin kann uppskrivast til frá tinglýsingardegnum og 10 ár fram. Avgjald verður síðan ásett eftir hesi upphædd. Um avgjaldskyldugi ikki ger hesa meting sjálvur, ella eru ivamál annars, ásetir Umhvørvisstovan hesa upphædd.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT007",
+    "rule": "Escalating mortgage",
+    "guide_section": "The base",
+    "claims": "Use the highest escalated principal; if unstated, taxpayer states a ten-year best-belief maximum in the instrument. Agency fixes absent or doubtful estimates.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(1)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 3 a. 2) 1) 3) Tá veð, tó ikki rættarveð, verður tinglýst, skal tinglýsingaravgjald rindast til landskassan. Avgjaldið er 1% av veðtryggjaðu upphæddini. Veðtryggjaða upphæddin er nominella virðið á høvuðsstólinum á veðbrævinum. Inniheldur veðbrævið ásetingar um uppskriving av høvuðsstólinum, er veðtryggjaða upphæddin tann hægsta upphædd, ið høvuðsstólurin kann uppskrivast til. Um hægsta upphæddin, ið høvuðsstólurin kann uppskrivast til, ikki framgongur beinleiðis av veðbrævinum, skal avgjaldskyldugi í veðbrævinum eftir bestu sannføring áseta hægstu upphædd, ið høvuðsstólurin kann uppskrivast til frá tinglýsingardegnum og 10 ár fram. Avgjald verður síðan ásett eftir hesi upphædd. Um avgjaldskyldugi ikki ger hesa meting sjálvur, ella eru ivamál annars, ásetir Umhvørvisstovan hesa upphædd.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT008",
+    "rule": "Replacement eligibility",
+    "guide_section": "The base",
+    "claims": "Real-credit loans or bank loans with an original 10–30-year term; corresponding security in the same property. Owner’s mortgages and indemnity bonds excluded. Partial or multiple-document replacement permitted.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(2)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. 3) Tá veð verður tinglýst í fastari ogn, tó ikki veð sambært ognarveðbrævi ella skaðaloysisbrævi, sum trygd fyri láni í realkredittinstituttum ella láni í peningastovnum við upprunaligari afturgjaldingartíð á í minsta lagi 10 ár og hægst 30 ár, roknast tann parturin av láninum, ið verður tikin til at avloysa eitt lán við samsvarandi panti í somu ogn ikki til ta veðtryggjaðu upphæddina, sbr. stk. 1. Verður veðbrævið burturvíst av Umhvørvisstovuni, og skal veðbrævið ikki seinni tinglýsast, ella nýggja veðbrævið verður burturvíst sum ikki effektuerað innan 1 ár eftir tilmelding til tinglýsingar, er avgjaldsfyrimunurin eftir 1. pkt. dottin burtur. 1. pkt. kann verða nýtt, sjálvt um tað nýggja pantið er sum eitt ella fleiri veðbrøv, og sjálvt um tað nýggja pantið bert partvíst avloysir verandi lán. Verður veðbrævið avloyst við fleiri veðbrøvum, er tað ein treyt, at tey nýggju veðbrøvini í minsta lagi í eitt ár eftir tinglýsingina av nýggja pantinum hava pant í somu ogn. Fyri at kunna brúka ásetingina í 1. pkt. er tað ein treyt, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram, áðrenn verandi veð er avlýst, og at tað greitt verður tilskilað og váttað, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram treytað av, at verandi veð verður avlýst, og at verandi veð er avlýst í seinasta lagi 1 ár eftir tilmelding til tinglýsingar av tí nýggja pantinum.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT009",
+    "rule": "Replacement clocks and lapse",
+    "guide_section": "The base",
+    "claims": "New submission precedes old cancellation; express conditional certification; cancellation within one year of submission. Multiple new instruments retain same-property security for one year after registration. Specified rejection/non-effectuation causes relief to lapse.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(2)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. 3) Tá veð verður tinglýst í fastari ogn, tó ikki veð sambært ognarveðbrævi ella skaðaloysisbrævi, sum trygd fyri láni í realkredittinstituttum ella láni í peningastovnum við upprunaligari afturgjaldingartíð á í minsta lagi 10 ár og hægst 30 ár, roknast tann parturin av láninum, ið verður tikin til at avloysa eitt lán við samsvarandi panti í somu ogn ikki til ta veðtryggjaðu upphæddina, sbr. stk. 1. Verður veðbrævið burturvíst av Umhvørvisstovuni, og skal veðbrævið ikki seinni tinglýsast, ella nýggja veðbrævið verður burturvíst sum ikki effektuerað innan 1 ár eftir tilmelding til tinglýsingar, er avgjaldsfyrimunurin eftir 1. pkt. dottin burtur. 1. pkt. kann verða nýtt, sjálvt um tað nýggja pantið er sum eitt ella fleiri veðbrøv, og sjálvt um tað nýggja pantið bert partvíst avloysir verandi lán. Verður veðbrævið avloyst við fleiri veðbrøvum, er tað ein treyt, at tey nýggju veðbrøvini í minsta lagi í eitt ár eftir tinglýsingina av nýggja pantinum hava pant í somu ogn. Fyri at kunna brúka ásetingina í 1. pkt. er tað ein treyt, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram, áðrenn verandi veð er avlýst, og at tað greitt verður tilskilað og váttað, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram treytað av, at verandi veð verður avlýst, og at verandi veð er avlýst í seinasta lagi 1 ár eftir tilmelding til tinglýsingar av tí nýggja pantinum.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT010",
+    "rule": "Replacement evidence power",
+    "guide_section": "The base",
+    "claims": "Act authorises further evidence regulations, including outstanding-debt proof; an enabling power is not a verified form requirement.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(5)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "Stk. 5. 3) Landsstýrisfólkið kann áseta nærri reglur um skjalprógv fyri, at treytirnar eru loknar, herundir skjalprógv fyri støddini av eini møguligari restskuld.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT011",
+    "rule": "Adding other property",
+    "guide_section": "The base",
+    "claims": "Extending a mortgage to other property attracts full duty on the secured amount for each such registration.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(3)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "Stk. 3. Fyri tinglýsing av broytingum í veðbrævinum, har veðbrævið eisini skal fevna um veð í aðrari ella øðrum føstum ognum, verður fult avgjald av veðtryggjaðu upphæddini goldið fyri hvørja av hesum tinglýsingum, sbr. stk. 1.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT012",
+    "rule": "Increasing secured amount",
+    "guide_section": "The base",
+    "claims": "An increase is charged on the difference between outstanding debt and new secured amount at 1%; old nominal principal is not the outstanding balance.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §3a(1),(4)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 3 a. 2) 1) 3) Tá veð, tó ikki rættarveð, verður tinglýst, skal tinglýsingaravgjald rindast til landskassan. Avgjaldið er 1% av veðtryggjaðu upphæddini. Veðtryggjaða upphæddin er nominella virðið á høvuðsstólinum á veðbrævinum. Inniheldur veðbrævið ásetingar um uppskriving av høvuðsstólinum, er veðtryggjaða upphæddin tann hægsta upphædd, ið høvuðsstólurin kann uppskrivast til. Um hægsta upphæddin, ið høvuðsstólurin kann uppskrivast til, ikki framgongur beinleiðis av veðbrævinum, skal avgjaldskyldugi í veðbrævinum eftir bestu sannføring áseta hægstu upphædd, ið høvuðsstólurin kann uppskrivast til frá tinglýsingardegnum og 10 ár fram. Avgjald verður síðan ásett eftir hesi upphædd. Um avgjaldskyldugi ikki ger hesa meting sjálvur, ella eru ivamál annars, ásetir Umhvørvisstovan hesa upphædd.\n\nStk. 4. Fyri tinglýsing av hækkingum av tí veðtryggjaðu upphæddini skal avgjald rindast, sbr. stk. 1, av muninum millum restskuldina og ta nýggju veðtryggjaðu upphæddina.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT013",
+    "rule": "Fee exceptions",
+    "guide_section": "Rates, bands and thresholds",
+    "claims": "All six specified fee-free registrations and four fee-free requests, including cancellation, deadline extension and final entry.",
+    "quotes": [
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §4",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 4. Tinglýsing er ókeypis av\n1) adressubroytingum,\n2) myndugleikatøku og løgverjumálum, jbr. § 48 í løgtingslóg um tinglýsing,\n3) fráboðanum, sum nevndar í § 13 í løgtingslóg um tinglýsing,\n4) áheitan um búskilnað, jbr. § 43 í lóg um rættvirknað hjúnalagsins,\n5) sjálvræðisfrátøka sambært § 66 í lóg um skifti av deyðsbúgvi og felagsbúgvi og\n6) sjálvræðisfrátøka sambært § 26 í konkurslógini.\nStk. 2.3) Ókeypis er haraftrat áheitan um:\n1) avlýsing,\n2) avtøku av rættarviðmerkingum,\n3) freistarleingjan ella endaliga innføring í tingbókina av einum skjali, sum er tinglýst við freist, og\n4) striking av rættindum, sum ikki hava fingið fulnað við tvingsilssølu, sbrt. § 642 í rættargangslógini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT014",
+    "rule": "Copies fee",
+    "guide_section": "Rates, bands and thresholds",
+    "claims": "DKK 50 for a registry certificate, transcript, extract, photocopy or similar.",
+    "quotes": [
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §6",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 6. Fyri váttanir, avskriftir, útskriftir, fotoavrit ella líknandi, ið tinglýsingarskrivstovan ger, verða goldnar 50 kr.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT015",
+    "rule": "Authority and definite terms",
+    "guide_section": "Deadlines and filing",
+    "claims": "Private instrument issued by the register-authorised person or with consent; definitive conditional terms. Title condition limited to purchase-price payment by a date, followed by registered payment confirmation.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §10",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "§ 10. Um privat skjal skal kunna tinglýsast, skal tað eftir sínum innihaldi fastseta, stovna, broyta ella taka av rættindi í ávísum føstum eigindómi ella í felagseigindómi, ið hoyrir til ávísan fastan eigindóm, og sýna sum útgivið ella viðtikið sambært grannastevnulógini ella hagalógini av honum ella teimum, sum eftir tingbókini – ella fyri pantibræv sambært flutningi – eru heimilað at ráða yvir viðkomandi rættindum, ella sum útgivið við samtykki hansara.\nStk. 2. Í skeytum og pantibrøvum skal undirskrift útgevarans vera váttað av einum advokati ella tveimum øðrum sannvitnum. Sama regla er galdandi fyri samtykki eftir stk. 1. Vitnini skulu í orðum vátta, at undirskriftin er sonn, dagsetingin bein, og at útgevarin er myndigur. Starv og bústaður hjá vitnunum skulu tilskilast. Nevnda váttan tørvast ikki, tá ið skjalið er útgivið av almennum stovni.\nStk. 3. Skjalið kann vera treytað ella bundið til tíðarfrest, men tess innihald má vera endaliga fyrisett. Skaðaloysisbrøv kunnu tó gevast út við tilskiling av størstuhædd á skuldini.\nStk. 4. 3) Um eitt skeyti skal kunna tinglýsast sum heimild, má tað ikki vera treytað av øðrum enn rinding keypspeningsins innan nærri ásetta frest. Tinglýsingarárit Tinglýsingarstovunnar á skeyti skal tilskila, um skeytið er treytað ella endaligt, og tá ið seljarin seinni váttar, at keypspeningurin eftir treytaðum skeyti er goldin, skal við tinglýsing av hesum tilskilast í áriti sorinskrivarans, at skeytið er endaligt.\nStk. 5. Eitt servitutskjal skal altíð tilskila, hvør átalurætt hevur.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT016",
+    "rule": "First-page fields and identifiers",
+    "guide_section": "Deadlines and filing",
+    "claims": "Cadastral number; submitter contact and identifiers; legal address; party address and identifier requirements; authorised recipient and missing-data rejection.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §§9(3)–(4),14(2)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 3. 4) Skjøl eins og endurrit skulu ovast á fyrstu síðu siga frá eigindómsins matr. nr. og navni, bústaði og telefonnummari tilmeldarans. Skeytið og veðbrøv skulu haraftrat siga frá lógligari adressu. Eitt veðbræv skal siga frá bústaði veðsetarans og veðhavarans, um ikki hesin má metast at vera almannakunnigur, ella bústaðnum hjá einum, ið hevur rætt at taka ímóti tilsøgnum, frásøgnum og gjøldum vegna skuldara ella ognara. Viðvíkjandi likamligum persónum skal eitt skeyti siga frá p-tali ognarans, og eitt veðbræv skal siga frá p-tali veðsetarans. Viðvíkjandi løgfrøðiligum persónum skal eitt skeyti siga frá v-tali ognarans.\nStk. 4. 3) Til tann, sum uppgivin er sum tilmeldari, kann Tinglýsingarstovan við bindandi gildi senda allar frásagnir tinglýsingini viðvíkjandi.\n\nStk. 2. 4) Skjalið verður burturvíst, uttan so at skeivleikin ella brekið verður rættað av tilmeldaranum, um tilskilanin er skeiv, ella um skjalið ikki hevur tilskilan av:\n1) eigindómsins matr. nr.,\n2) navni, p-tali ella v-tali, bústaði og telefonnummari tilmeldarans,\n3) p-tali ella v-tali og bústaði veðsetarans ella veðhavarans, um so er, at hesin ikki má metast at vera almannakunnigur, ella navni og bústaði hjá einum fulltrúa, sbrt. § 9, stk. 3.\nLandsstýrismaðurin kann áseta, at aðrir skeivleikar og brek við skjalinum skulu hava somu fylgju. Hevur skjalið ikki undirskrift útgevarans, og skeytið og pantibravið ikki sannvitni, ella fylgir endurrit ikki við, verður tað burturvíst.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT017",
+    "rule": "Approved mortgage form and supply",
+    "guide_section": "Deadlines and filing",
+    "claims": "Mandatory approved mortgage form; institution-specific approvals possible; optional approved deed templates. Ordinary approved forms must be obtainable from the registry.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §50f(1)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "§ 50 f. 2) Pantibrøv, ið verða fráboðað til tinglýsingar, skulu vera skrivað á oyðubløð, ið eru góðkend av landsstýrinum.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §3(1),(6)–(8)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 3. Stk. 1. Pantibrøv, ið verða meldað til tinglýsingar, skulu vera skrivað á góðkend oyðubløð. Statsstovnar, stovnar undir landsstýri og løgtingi, føroyskir bankar og sparikassar og realkreditstovnar góðkendir av stati ella landsstýri kunna fáa serlig oyðubløð góðkend.\n\nStk. 6. 1 Til skeyti, lutaseðlar, gávubrøv, festibrøv, traðarleigusáttmálar og onnur meira vanlig skjøl kunna verða góðkend serlig oyðubløð við vegleiðandi prentaðum teksti. Reglurnar í stk. 2-3 koma ikki í nýtslu hesum oyðubløðumm viðvíkjandi.\nStk. 7. 1 Eftir ummæli frá tinglýsingarmyndugleikanum góðkennir landsstýrismaðurin tey í stk. 1 og 4-5 nevndu oyðubløð.\nStk. 8. 1 Landsstýrismaðurin avger, hvør ið loyvi skal hava at selja tey í hesi grein nevndu oyðubløð og ásetir søluprísin á teimum. Øll oyðubløð, sum ikki serliga viðvíkja teimum í stk. 1, pkt. 2, nevndu stovnum o.ø. skula kunna fáast til keyps frá tinglýsingarmyndugleikanum.\nIV. Endurrit og legitimatiónsskjøl o.a.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT018",
+    "rule": "Mortgage form order",
+    "guide_section": "Deadlines and filing",
+    "claims": "Particular terms on pages 1–2, fixed text on pages 3–4; debt first, then interest/payment/termination, collateral, priority and encumbrances; acknowledgement before signature. Changes to fixed text must also be included in particular terms.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §3(2)–(3)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. Hesi góðkendu oyðubløð skulu vera gjørd soleiðis, at skjalsins sertekstur kann verða settur á fyrstu og aðru síðu á oyðublaðnum, meðan tær ásetanir, ið eru felags fyri øll av tí slagnum (tann fasti teksturin), skal standa á 3. og 4. síðu í skjalinum. Beint oman fyri útgevarans undirskrift skal skjalsins sertekstur hava eina váttan um, at hann gevur seg undir tær ásetanir, sum standa í vanliga (prentaða) tekstinum. Serteksturin endar við undirskrift útgevarans og um neyðugt við áriti til vitnis. Í pantibrøvunum og skaðaloysisbrøvum skal í sertekstinum skuldin vera sett fyrst (í pantibrøvum eisini rentu-, gjalds- og uppsagnartreytir), og síðani kemur tað, ið pantsett er, prioritetsstøðan og møgulig frammanfyri standandi heftingar, servituttir og onnur tyngsl.\nStk. 3. Er sumt av sertekstinum (s. 1-2) í einum góðkendum oyðublaði prentað, so er hetta bert vegleiðandi, men tann í stk. 3 nevnda manngongd viðvíkjandi sertekstinum má ikki verða broytt. Um so er, at skoytt verður uppí, strikað verður út ella rættingar gjørdar í tí fasta tekstinum (s. 3-4), mega hesar broytingar eisini vera tiknar við í skjalsins serteksti (s. 1-2).",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT019",
+    "rule": "Endorsement pages",
+    "guide_section": "Deadlines and filing",
+    "claims": "Continuous page numbering; page count immediately before every signature; continuation sheets for preprinted form.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §3(4)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "Stk. 4. 1 Verður eitt pantibræv áteknað, skal síðutalsmerkingin halda fram, og talið á síðum skrivast beint áðrenn hvørja undirskrift. Er pantibrævið á forprentaðum oyðublaði, skal síðutalsmerkingin halda fram á viðheftum ørkum.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT020",
+    "rule": "Witnessing",
+    "guide_section": "Deadlines and filing",
+    "claims": "Lawyer or two attesting witnesses certify signature, date and capacity, stating occupation/address. Public-institution exception.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §10(2)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. Í skeytum og pantibrøvum skal undirskrift útgevarans vera váttað av einum advokati ella tveimum øðrum sannvitnum. Sama regla er galdandi fyri samtykki eftir stk. 1. Vitnini skulu í orðum vátta, at undirskriftin er sonn, dagsetingin bein, og at útgevarin er myndigur. Starv og bústaður hjá vitnunum skulu tilskilast. Nevnda váttan tørvast ikki, tá ið skjalið er útgivið av almennum stovni.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §11(1)(3)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 11. Stk. 1. 1 Áðrenn skjal kann verða innført í dagbókina, skulu hesar treytir verða loknar:\n1) Tað innlatna skjalið skal vera skrivað á góðkent oyðublað, um so er ásett sambært § 3. Við skjalinum skal fylgja endurrit skrivað á tað góðkenda endurritspappírið, og um tað í skjalinum verður víst til kort, ið ger tað lættari at skilja skjalið, skal endurrit av kortinum eisini fylgja við og vera skrivað á tað góðkenda endurritspappírið. Skjal og endurrit skulu vera skrivað samsvarandi ásetingarnar í §§ 3, 4 og 7 og hava við tørvandi upplýsingar fyri at kunna áseta gjaldið.\n2) Skjal og endurrit skulu ovast á fyrstu síðu siga frá navni, bústaði (skrivstovu) og telefonnummari tilmeldarans. Viðvíkur skjalið føstum eigindómi, skal eisini eigindómsins møguliga matr. nr. vera tilskilað, og á heimildarbrøvum og pantibrøvum (eisini skaðaloysisbrøvum) skulu eisini standa gøta og húsa-nr., har tílík eru.\n3) Á heimildarbrøvum og pantibrøvum (eisini skaðaloysisbrøvum), ið ikki eru útgivin av tí almenna, skal undirskrift útgevarans vera váttað av einum advokati ella tveimum øðrum sannvitnum. Starv og bústaður hjá vitnunum skal tilskilast, og skulu tey í orðum vátta, at undirskriftin er sonn, dagsetingin bein, og at útgevarin er myndigur.\n4) Í pantibrøvum (eisini skaðaloysisbrøvum) og flutningum og úttøkuáritum á tílíkum skal standa annaðhvørt kreditors bústaður ella bústaðurin hjá øðrum persóni ella stovni, ið hevur rætt at taka ímóti tilsøgnum ella frásøgnum kreditors vegna. Tílík tilskilan tørvar ikki, um bústaðurin er almannakunnigur.\n5) Tá ið pantibrøv (eisini skaðaloysisbrøv) í føstum eigindómi verða tinglýst, men heimild útgevarans verður ikki lýst samstundis, skal seinast tinglýsta heimildarbræv fylgja við, uttan so tilmeldarin leggur fram skrivliga váttan, ið sigur, at tað er blivið burtur, ella tað av aðrari gildari grund ikki fæst til vega. Í hesum føri má onnur legitimatión eftir nærri avgerð tinglýsingarmyndugleikans fylgja við, sum t.d. útgevarans handilsloyvi, starvsbræv, uppnevning, sveinabræv, fakfelagsbók, sjúkrakassabók, pass, koyrikort ella tílíkt ella fleiri skjøl av øðrum slagi, t.d. vígsluváttan, dópsváttan, brøv, kvittanir, limakort o.tl.\n6) Til avlýsing og eisini lutvísa avlýsing skal fylgja við endurrit av kvittanini og fulltrú og endurrit av henni, um kvittað verður sambært fulltrú.\n7) Tá ið flutningur av pantibrævi, ið er umfarsskjal, smbr. § 11 í lóg nr. 146 frá 13. apríl 1938 um skuldarbrøv, verður boðaður til tinglýsingar, skal flutningurin annaðhvørt verða skrivaður á skjalið ella fylgja við til at vísa fram fyri tinglýsingarmyndugleikanum. Tá tinglýst verður, fær skjalið átekning um, at flutningurin er lýstur. Sama er galdandi við øðrum átekningum um broytingar.\n8) Tá pantibræv (eisini skaðaloysisbræv) í leysafæ verur meldað til tinglýsingar, skal útgevarans fulla navn og føðingardagur standa í skjalinum Dópsváttan (navnaváttan), prógv fyri navnabroyting ella aðrar sannanir fyri navni og føðingardegi skulu fylgja við. Við hjúnasáttmálum skulu tær somu váttanir hjá báðum hjúnum fylgja við.\n9) Tá ið listi hoyrir við til skjalið, og hann hevur teir lutir við, sum skjalið viðvíkur, skal eisini listin vera undirskrivaður av pørtunum.\n10) Verður tað ikki í servitutbrævi um staðbundnan vegrætt víst til matrikulkortið, hvar vegurin gongur, skal við tilmeldanini av skjalinum til tinglýsingar fylgja við avrit av matrikulkortinum, sum vísir, hvar matrikulmyndugleikin hevur teknað vegin, og eitt endurrit av kortinum.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT021",
+    "rule": "Copies and deed evidence",
+    "guide_section": "Deadlines and filing",
+    "claims": "Instrument and copy; latest registered deed with mortgage, or written explanation and official supporting document. Approved, legible copy format and first typed/carbon restrictions.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §9(1)–(2)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "§ 9. 2) 3) Sum tinglýsingargrundarlag krevst eitt skjal, ið meldað verður til Tinglýsingarstovuna til tinglýsingar. Samstundis við skjalinum verður endurrit av tí latið inn. Við avlýsing verður endurrit av kvittanini latin inn og av hartil hoyrandi váttanum.\nStk. 2. 3) Við pantibrævi skal seinast tinglýsta skeyti til eigindómin fylgja. Verður tað upplýst fyri Tinglýsingarstovuni við skrivligari váttan frá tilmeldarum, at skeytið er burtur, ella tað av øðrum grundum ikki fæst til vega, skal í staðin verða lagt fram alment skjal, sum styðjar sanngildi pantibrævsins, eitt nú loyvisbræv útgevarans, starvsbræv, uppnevning ella tílíkt.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §4",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 4. Stk. 1. 1 Endurrit av teimum skjølum, sum verða latin til tinglesingar, skulu vera skrivað á endurritspappír góðkent av landsstýrismanninum. Endurritið skal vera týðuligt og gott at lesa. Er endurritið maskinskrivað, skal tað vera tað fyrsta eintakið ella tað fyrsta avritið úr maskinuni; endurritið av heimildarbrævi skal tó altíð vera tað fyrsta eintakið. Endurritið skal endurgeva tekstin, og ikki má vera longur millum linjurnar enn nýtist, eins og oyðusíður ikki mega kuta tekstin sundur.\nStk. 2. 1 Til endurrit av kortum verður nýtt endurritstilfar góðkent av landsstýrismanninum.\nStk. 3. 1 Er skjalið skrivað á tey í § 3 nevndu og av landsstýrismanninum góðkendu oyðubløð, skal endurritið eisini vera skrivað á oyðublað, sum landsstýrismaðurin hevur góðkent, smbr. § 3, stk. 6. Er oyðublaðið orðað samsvarandi reglurnar í § 3, stk. 2, skal bert serteksturin vera endurgivin í endurritinum.\nStk. 4. Til fútarættar- og uppboðssøluskeyti skal bert vera latið endurrit av sjálvum skeytinum og møguligum flutningum.\nStk. 5. Reglan í § 3, stk. 7, kemur á sama hátt í nýtslu viðvíkjandi endurritspappíri.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT022",
+    "rule": "Authority supporting papers",
+    "guide_section": "Deadlines and filing",
+    "claims": "Present powers and corporate/probate authority; supporting proof is not itself separately registered. Cancellation receipt/power copies required.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §6",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 6. Stk. 1. 1 Tá ið skjal verður tinglýst ella avlýst, skal tó eingin tinglýsing vera av legitimatiónsskjølum (útskrift úr handils- ella partafelagsskrá, útskrift úr nevndar- ella aðalfundarbók, eksekutorloyvi, verjumálsfyriskipan, fulltrú o.tl.). Tað sama er við skiftiútskrift, uttan so hon skal nýtast sum prógv fyri ognarrætti í føstum eigindómi. Tí skulu hesi skjøl ikki verða innførd í dagbók, tingbók ella persónbók, og heldur ikki skal endurrit vera latið av teimum, smbr. tó stk. 2. Afturímóti skal tinglýsingarmyndugleikin ansa eftir, at tørvandi legitimatiónsskjøl eru víst fram, áðrenn skjalið verður lýst ella avlýst, og skal á skjalið og endurritið viðmerkja, hvørji legitimatiónsskjøl eru víst fram. Legitimatiónsskjøl verða latin tilmeldaranum aftur samstundis við skjalinum.\nStk. 2. Til avlýsing – eisini lutvísa avlýsing – skal vera latin endurrit av kvittanini og endurrit av fulltrú, um kvittað er sambært eina tílíka.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT023",
+    "rule": "Multiple rights and extract",
+    "guide_section": "Deadlines and filing",
+    "claims": "Express request for each right; additional deed extract for easement or mortgage function, with relevant terms and priority.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §9(6)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 6. Um so er, at fleiri rættindi eru stovnað í einum skjali, skal tað við áriti á skjalið tilskilast, fyri hvørji rættindi tinglýsing verður kravd; tí annars verður skjalið bert at tinglýsa fyri tey rættindi, sum skjalið sjálvt tilskilar sum sítt høvuðsevni.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §5(3)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "Stk. 3. Tá ið biðið verður um at fáa skeyti (ognarskjal) eisini tinglýst servituttstovnandi, skal tilmeldarin umframt endurrit av skeytinum eisini lata úrdráttarendurrit av tí, og skal har standa tað, sum nevnt er í skeytinum um servituttir, og hvørja prioritetsstøðu teir hava. Er einki úrdráttarendurrit latið, kann skeytið ikki verða lýst servituttstovnandi. Sama gildir eisini, um skeytið verður biðið um at fáa tinglýst eisini pantstovnandi ella sum annað skjal eisini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT024",
+    "rule": "Subdivision and condominium preconditions",
+    "guide_section": "Deadlines and filing",
+    "claims": "First condominium title requires division submission and certified schedule/maps; post-subdivision deed requires certificates. Separate cadastral execution remains open.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §§10a,17",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 10 a. Áðrenn ella samstundis sum fyrsta skeytið upp á íbúð verður tinglýst, skal tilmelding um sundurlegging av eigindóminum í eigaraíbúðir ella lutaíbúðir latast inn.\nStk. 2. Við tilmeldingini skal liggja yvirlit yvir íbúðirnar og kort yvir hvørja íbúð og avrit av hesum. Í yvirlitinum skal tilskilast:\na) Hvar íbúðirnar liggja, tilskilað við matr. nr., gøtunavni, húsanr., hædd v.m.\nb) Nummar á íbúðunum.\nc) Vídd á íbúðunum.\nd) Býtistalið hjá eigaraíbúðunum, um so er, at tílíkt er ásett.\ne) Áljóðandi virði á lutum í vanligum lutaíbúðafeløgum.\nf) Ognarbrøkin fyri lutir í serstøkum lutaíbúðum.\nStk. 3. Bæði kortini yvir tær einstøku íbúðirnar og tær í stk. 2, litra a-c nevndu upplýsingar, skulu verða váttað av matrikulmyndugleikanum.\nStk. 4. Tær í stk. 2, litra e-f nevndu upplýsingar skulu verða váttaðar av skrásetingarmyndugleikanum.\nStk. 5. Tilmeldingin skal burturvísast, um so er, at tey fyriskrivaðu skjølini og váttanir ikki fylgja við ella eru ógreið.\n\n§ 17. 1 Áðrenn skeyti (heimildarbræv) aftaná sundurbýti verður ført í tingbókina, skulu hesar váttanir, árit og skjøl fyriliggja:\na) Váttan sambært § 22, stk. 1 í tinglýsingarlógini.\nb) Skrivlig ella elektronisk kunning um sundurbýtisgóðkenningina og dagfesting hennara, um vídd ella markatal á tí frábýtta lutinum og serligar treytir, sum góðkenningin møguliga er gjørd við, smbr. løgtingslóg um matrikulering og sundurbýti v.m. § 21. Tinglýsingarmyndugleikin tryggjar, at samsvar er ímillum nevndu kunning og tingbók.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT025",
+    "rule": "Duty liable person and advancepayment",
+    "guide_section": "Deadlines and filing",
+    "claims": "Taxpayer calculates and pays before registration: recipient of registered ownership right or mortgagor.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §4",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 4. 2) 3) Tinglýsingaravgjald skal rindast til Umhvørvisstovuna, áðrenn avgjaldskyldug skjøl sbrt. hesi løgtingslóg verða tinglýst.\nStk. 2. 2) Tað áliggur tí avgjaldskylduga at rokna og inngjalda avgjaldið. Tann avgjaldskyldugi er:\n1) Við eigaraskifti, tann ið fær síni rættindi tinglýst.\n2) Við veðseting, veðsetari av ognini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT026",
+    "rule": "Fixed fee due and nonpayment",
+    "guide_section": "Deadlines and filing; Penalties and interest",
+    "claims": "Fixed fee due on submission; register cash stamp; nonpayment causes rejection and fee obligation lapses.",
+    "quotes": [
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §5",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 5. Gjaldið fellur til gjaldingar, tá skjalið verður fráboðað til tinglýsing.\nStk. 2. Gjaldið verður rindað við, at skjalið verður stemplað við tinglýsingarskrivstovunnar kassa.\nStk. 3. Verður gjaldið ikki goldið samstundis við fráboðanina, verður skjalið burturvíst frá dagbókini. Um so er, fellur gjaldið burtur.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT027",
+    "rule": "Paper payment instruction",
+    "guide_section": "Deadlines and filing",
+    "claims": "Send documents to Umhvørvisstovan with money or a financial-institution receipt. Twenty website words quoted; full website is not published.",
+    "quotes": [
+      {
+        "source": "registry",
+        "act_article": "Agency registry page, Oyðubløð",
+        "url": "https://www.us.fo/tinglysing/",
+        "original_language": "fo",
+        "exact_quote": "Øll skjøl, sum skulu tinglýsast, verða at senda til Umhvørvisstovuna og samstundis skal peningur fylgja við ella kvittan frá peningastovni.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT028",
+    "rule": "Noon journal receipt",
+    "guide_section": "Deadlines and filing",
+    "claims": "Working-day 12:00 cutoff; same-day entry or next working day; office signs a submitter-prepared receipt on request.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §2(1)–(2)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "§ 2. 1 Skjøl til tinglýsingar verða latin inn gerandisdagar í seinasta lagi kl. 12.\nStk. 2. Skjøl, ið eru latin inn á skrivstovuna, áðrenn nevnda innlatingartíð er farin, koma sama dag í dagbókina, meðan skjøl, ið koma seinri á skrivstovuna, koma í dagbókina gerandisdagin eftir. Skrivstovan hevur skyldu eftir áheitan at undirskriva kvittan gjørd av innlataranum, at skjølini eru innlatin.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT029",
+    "rule": "Entry and priority",
+    "guide_section": "Deadlines and filing",
+    "claims": "Entry in land register, submission-day priority, equal same-day rank; returned document records date and journal number.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §§16(2),25",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. Tá skjalið er ført í tingbókina, fær tað og endurritið upplýsing um, at tað er tinglýst, um tann dagin, tað er innført í dagbókina, og um dagbóksnummar.\n\n§ 25. Eitt skjal verður roknað fyri tinglýst, tá tað er ført inn í tingbókina. Rættarfylgja tinglýsingarinnar verður roknað frá tí degi, skjalið er meldað til tinglýsingar, um ikki annað er fyrisett í hesi lóg. Skjøl, ið meldað verða til tinglýsingar sama dag, eru javnbjóðis.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT030",
+    "rule": "Ten-day examination and provisional clocks",
+    "guide_section": "Deadlines and filing",
+    "claims": "Examine as soon as possible and within ten days; provisional entry removed if not remedied. Agency can extend a proof deadline on request.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §§15(3),16(3)–(4)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 3. 3) Sýnist útgevarin av skjalinum at hava rætt at ráða yvir eigindóminum, men hevur ikki tilmeldað tørvandi prógv fyri tí (t. d. exekutorloyvisbræv, fultrúarbræv, skiftiútskrift, útskrift úr handils- ella partafelagsskrá og tílíkum), gevur Tinglýsingarstovan tilmeldaranum frest at útvega tørvandi prógv. Tinglýsingarstovan kann eftir áheitan frá tilmeldaranum framleingja frestina.\n\nStk. 3. Verður frest eftir § 15 sett at fáa brest burtur, verður skjalið fyribils innført í tingbókina við tilskiling av orðinum fyribils. Er bresturin ikki fingin burtur innan ásettan dag, verður tað fyribils innførda skjalið strikað í tingbókini.\nStk. 4. Kanningin av skjalinum og tess endaliga ella fyribils innførsla ella burturvísing skal fara fram skjótast gjørligt og seinast 10 dagar eftir tess tilmelding til dagbókina. Um burturvísing og fyribils innførslu fær tilmeldarin beinanvegin frásøgn við stuttari tilskiling av grundini. Tað innførda ella burturvísta skjalið verður aftursent tilmeldaranum ella honum, tilmeldarin hevur sett sum móttakara.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT031",
+    "rule": "Mortgage cancellation proof",
+    "guide_section": "Deadlines and filing",
+    "claims": "Discharged original or court proof; named institutional receipt exceptions. Cancellation copies and fee-free cancellation request.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §11(2)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. 3) Til strikingar av pantibrøvum krevst annaðhvørt skjalið sjálvt kvittað ella prógv fyri, at pantirætturin er burturdottin sambært dómsúrskurði. Pantibrøv til statskassan, landskassan, Føroya Jarðagrunn, Føroya vanlukkutryggingarráð (peningaogn hjá tí føroysku avlamistryggingini), Tryggingarsambandið Føroyar, føroyskar sparikassar og teir realkreditstovnar, sum eru góðtiknir av stati ella løgtingi, kunnu tó eftir avgerð Tinglýsingarstovunnar verða strikað móti kvittan frá honum, sum rættindi hevur eftir tingbókini.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §6(2)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. Til avlýsing – eisini lutvísa avlýsing – skal vera latin endurrit av kvittanini og endurrit av fulltrú, um kvittað er sambært eina tílíka.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §4(2)",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2.3) Ókeypis er haraftrat áheitan um:\n1) avlýsing,\n2) avtøku av rættarviðmerkingum,\n3) freistarleingjan ella endaliga innføring í tingbókina av einum skjali, sum er tinglýst við freist, og\n4) striking av rættindum, sum ikki hava fingið fulnað við tvingsilssølu, sbrt. § 642 í rættargangslógini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT032",
+    "rule": "Duty rejection and collection",
+    "guide_section": "Penalties and interest",
+    "claims": "Unpaid duty causes journal rejection; distraint and collection costs borne by taxpayer. Cited provisions state no fixed late-interest percentage.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §§5,5a",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 5. 2) 3) Avgjaldskyldug skjøl sbrt. hesi løgtingslóg verða burturvíst frá dagbókini, um tinglýsingaravgjald ikki er goldið.\n\n§ 5 a. 2) 3) Avgjøld sbrt. hesi løgtingslóg kunnu innheintast við panting. Peningurin fer í landskassan. Útreiðslur í sambandi við innheintan verða at rinda av tí avgjaldskylduga.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT033",
+    "rule": "Resubmission fee clock",
+    "guide_section": "Penalties and interest",
+    "claims": "No additional fee on resubmission within three months of first submission, except initial nonpayment rejection.",
+    "quotes": [
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §§3,5(3)",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 3. Verður eitt skjal, ið ikki kemur undir tað í § 5, stk. 3 nevnda føri, víst burtur, verður nýtt gjald ikki rindað, um skjalið verður fráboðað til tinglýsing av nýggjum innan 3 mánaðir roknað frá fyrstu fráboðanini til tinglýsing.\n\nStk. 3. Verður gjaldið ikki goldið samstundis við fráboðanina, verður skjalið burturvíst frá dagbókini. Um so er, fellur gjaldið burtur.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT034",
+    "rule": "Duty refund on rejection",
+    "guide_section": "Penalties and interest",
+    "claims": "Refund percentage duty on rejection from journal, land register or personal register.",
+    "quotes": [
+      {
+        "source": "registration-reg",
+        "act_article": "Reg63/1962 §37(2)",
+        "url": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+        "original_language": "fo",
+        "exact_quote": "Stk. 2. Er tinglýsingaravgjald goldið fyri skjal, sum verður víst burtur frá dagbók, tingbók ella persónbók, verður avgjaldið afturgoldið, og verður tað ført sum útreiðsla í avgjaldskassabókini við viðmerking í viðmerkingardeildina í dagbókini.\nXIV. Váttanir eftir T.L. § 23, stk. 2.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT035",
+    "rule": "Duty appeal",
+    "guide_section": "Penalties and interest",
+    "claims": "Written, reasoned duty appeal to Føroya Kærustovn within four weeks of notification; current law supersedes the older agency ministry route.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §5c",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 5 c. 3) Avgerðir eftir hesi løgtingslóg, sum eru tiknar av Umhvørvisstovuni, kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at kærarin hevur fingið fráboðan um avgerðina. Kæran skal vera skrivlig og grundgivin.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT036",
+    "rule": "Registration appeal",
+    "guide_section": "Penalties and interest",
+    "claims": "Registration Act decision appeals to Føroya Kærustovn within four weeks of notification. This does not establish the fixed service-fee appeal route.",
+    "quotes": [
+      {
+        "source": "registration-act",
+        "act_article": "Act55/1962 §36(1)",
+        "url": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+        "original_language": "fo",
+        "exact_quote": "§ 36. 3) 7) Avgerðir Tinglýsingarstovunnar sambært hesi løgtingslóg kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at viðkomandi hevur fingið fráboðan um avgerðina.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT037",
+    "rule": "Acquisition eligibility",
+    "guide_section": "Cross-border points",
+    "claims": "Permanent Faroese residence or five years aggregate past Faroese residence; Danish citizen with five years elsewhere in realm; Faroese headquarters. Other acquirers and foreign public authorities require permission subject to statutory exceptions.",
+    "quotes": [
+      {
+        "source": "acquisition",
+        "act_article": "Act158/2021 §§1–2",
+        "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Persónur, sum hevur fastan bústað í Føroyum ella áður hevur búð í Føroyum í samanlagt 5 ár, kann keypa fastogn uttan loyvi frá landsstýrismanninum. Tað sama er galdandi fyri persón við donskum ríkisborgaraskapi, sum hevur búð í øðrum parti av ríkinum í samanlagt 5 ár.\nStk. 2. Felag ella annar løgfrøðiligur persónur, sum hevur sítt høvuðssæti í Føroyum, kann keypa fastogn í Føroyum uttan loyvi frá landsstýrismanninum.\nLoyvisskipan\n\n§ 2. Persónur, sum ikki er fevndur av § 1, stk. 1, kann bara keypa ella á annan hátt ogna sær fastogn í Føroyum vð loyvi frá landsstýrismanninum, sbr. tó §§ 3 og 4.\nStk. 2. Felag ella annar løgfrøðiligur persónur, sum ikki er fevndur av § 1, stk. 2, kann bara keypa ella á annan hátt ogna sær fastogn í Føroyum við loyvi frá landsstýrismanninum, sbr. tó §§ 3 og 4.\nStk. 3. Útlendskir myndugleikar kunnu bara keypa ella á annan hátt ogna sær fastogn í Føroyum við loyvi frá landsstýrismanninum.\nStk. 4. Fyri at fylgja skyldum, sum Føroyar hava sambært sáttmála við onnur lond, kann landsstýrismaðurin áseta, at persónar, feløg og aðrir løgfrøðiligir persónar, hóast tey ikki lúka treytirnar í stk. 1 og 2, uttan loyvi frá landsstýrismanninum kunnu keypa ella á annan hátt ogna sær fastogn í Føroyum.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT038",
+    "rule": "Acquisition exemptions and deadlines",
+    "guide_section": "Cross-border points",
+    "claims": "Inheritance, undivided estate, community-property division and direct-line gifts excepted from permission. Application within six months of final agreement unless another has already taken over. Usufructuary pledge over six months also requires permission for otherwise restricted acquirers.",
+    "quotes": [
+      {
+        "source": "acquisition",
+        "act_article": "Act158/2021 §§3–5",
+        "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+        "original_language": "fo",
+        "exact_quote": "§ 3. Loyvi sambært § 2 krevst ikki, um fastogn verður ognað við arvi, við at sita í óskiftum búgvi ella við býti av felagsogn. Sama er galdandi fyri gávur til skyld í stígandi ella fallandi linju.\nUmsókn um loyvi\n\n§ 4. Umsókn um loyvi skal latast landsstýrismanninum í seinasta lagi 6 mánaðir eftir, at endalig avtala er gjørd um avhending av fastognini, um fastognin ikki frammanundan er yvirtikin av øðrum.\nFastogn sum nýtsluveð\n\n§ 5. Persónur, felag ella annar løgfrøðiligur persónur, ið sambært § 2 ikki uttan loyvi kann keypa ella ogna sær fastogn, kann heldur ikki uttan loyvi frá landsstýrismanninum yvirtaka fastogn sum nýtsluveð í meira enn 6 mánaðir.\nTreytir og tíðaravmarking",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT039",
+    "rule": "Title declarations and pending permission",
+    "guide_section": "Cross-border points",
+    "claims": "Individual/entity declaration choices or permission; absence causes rejection unless an application is certified as lodged. Registry deadline and removal if permission absent. Read §1 citizenship condition with §7.",
+    "quotes": [
+      {
+        "source": "acquisition",
+        "act_article": "Act158/2021 §§1,7",
+        "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Persónur, sum hevur fastan bústað í Føroyum ella áður hevur búð í Føroyum í samanlagt 5 ár, kann keypa fastogn uttan loyvi frá landsstýrismanninum. Tað sama er galdandi fyri persón við donskum ríkisborgaraskapi, sum hevur búð í øðrum parti av ríkinum í samanlagt 5 ár.\nStk. 2. Felag ella annar løgfrøðiligur persónur, sum hevur sítt høvuðssæti í Føroyum, kann keypa fastogn í Føroyum uttan loyvi frá landsstýrismanninum.\nLoyvisskipan\n\n§ 7. Tá ognarskifti verður fráboðað til tinglýsingar, skal persónur:\n1) vátta við trú og heiður á ognarheimildarskjalinum, at hann hevur fastan bústað í Føroyum,\n2) vátta við trú og heiður á ognarheimildarskjalinum, at hann áður hevur búð í Føroyum ella øðrum parti av ríkinum í samanlagt 5 ár,\n3) vátta við trú og heiður á ognarheimildarskjalinum, at fastognin er ognað sambært § 3, ella\n4) leggja loyvi frá landsstýrismanninum við, sbr. tó stk. 3.\nStk. 2. Felag ella annar løgfrøðiligur persónur skal á sama hátt:\n1) vátta við trú og heiður á ognarheimildarskjalinum, at høvuðssætið er í Føroyum,\n2) vátta við trú og heiður á ognarheimildarskjalinum, at fastognin er ognað sambært § 3, ella\n3) leggja loyvi frá landsstýrismanninum við, sbr. tó stk. 3.\nStk. 3. Verður ognarheimildarskjal fráboðað til tinglýsingar, uttan at persónur, felag ella annar løgfrøðiligur persónur samstundis váttar ella leggur við loyvi sambært stk. 1 ella 2, verður skjalið burturvíst uttan so, at viðkomandi váttar við trú og heiður, at umsóknin er latin landsstýrismanninum sambært § 4. Er umsóknin latin landsstýrismanninum sambært § 4, ásetir Tinglýsingin sambært §§ 15, stk. 3 og 16, stk. 3 í løgtingslóg um tinglýsing freist at leggja fram loyvið. Um loyvið ikki er Tinglýsingini í hendi, tá freistin er farin, verður skjalið strikað.\nFráboðan til landsstýrismannin",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT040",
+    "rule": "Acquisition sanctions",
+    "guide_section": "Cross-border points",
+    "claims": "Conditional or time-limited permission; sale order within six months to one year; missed application and disobeyed order fines; court fixes weekly coercive fines.",
+    "quotes": [
+      {
+        "source": "acquisition",
+        "act_article": "Act158/2021 §§6,9,12",
+        "url": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+        "original_language": "fo",
+        "exact_quote": "§ 6. Loyvini sambært §§ 2 og 5 kunnu verða treytað og tíðaravmarkað.\nTinglýsing av ognarskifti\n\n§ 9. Um loyvi verður noktað ella fellur burtur sambært § 6, ella um umsókn ikki verður latin inn, gevur landsstýrismaðurin eigaranum boð um at selja fastognina innan eina nærri ásetta freist, sum er í minsta lagi 6 mánaðir og í mesta lagi 1 ár.\nStk. 2. Er fastognin yvirtikin sum nýtsluveð fær veðhavari í førum, sum eru nevnd í stk. 1, boð um innan eina nærri ásetta freist, sum er í minsta lagi 6 mánaðir og í mesta lagi 1 ár, at selja fastognina á tvingsilssølu ella at víkja frá veðnum.\nUttanumvik\n\n§ 12. Persónur, sum ikki innan ásettu freistina søkir um loyvi at keypa ella á annan hátt ogna sær fastogn í Føroyum ella til yvirtøku av fastogn sum nýtsluveð, verður revsaður við sekt.\nStk. 2. Brot á boð, sum eru givin sambært § 9, stk. 1 og 2, verða revsað við sekt. Rætturin áleggur eigaranum ella tí, sum hevur yvirtikið fastognina sum nýtsluveð, at gera eftir boðunum og kann áseta vikuligar tvingsilssektir, til boðini eru fylgd. Rætturin ásetir sektarupphæddina.\nStk. 3. Feløg og aðrir løgfrøðiligir persónar koma undir revsiábyrgd eftir reglunum í kapitli 5 í revsilógini.\nGildiskoma og skiftisregla",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT041",
+    "rule": "Separate digital commencement",
+    "guide_section": "Who this applies to",
+    "claims": "Act 128 permits separate commencement by register. Its invoice exception and digital rules are not imported into property filing from Regulation 60’s vehicle-only commencement dates.",
+    "quotes": [
+      {
+        "source": "digital-act",
+        "act_article": "Act128/2024 §§3–5",
+        "url": "https://www.logir.fo/Logtingslog/128-fra-13-12-2024-um-broyting-i-logtingslog-um-tinglysing-lov-om-Gaeldsbreve-logtingslog-um",
+        "original_language": "fo",
+        "exact_quote": "§ 3\nÍ løgtingslóg nr. 76 frá 17. mai 1994 um tinglýsingargjøld v.m., sum broytt við løgtingslóg nr. 63 frá 10. juni 2008 og § 53 í løgtingslóg nr. 91 frá 7. juni 2020, verða gjørdar hesar broytingar:\n1. Í § 5 verða sum stk. 4 og 5 sett:\n“Stk. 4. Ásetingarnar í stk. 1-3 eru ikki galdandi, tá løgfrøðiligir persónar við einum virknum v-tali, sum eru skrásettir sum stórkundi hjá Tinglýsingini, melda talgild skjøl til tinglýsingar ella tá góðkendir fráboðarar, sum sambært §§ 49 d og 49 e í løgtingslóg um tinglýsing hava galdandi góðkenning sum fráboðari, melda talgild skjøl til tinglýsingar. Avrokning av tinglýsingargjaldinum fer tá fram uppá rokning frá Tinglýsingini.\nStk. 5. Gjøld sambært hesi løgtingslóg kunnu innheintast við panting. Útreiðslur í sambandi við innheintan verða at rinda av tí gjaldskylduga.”\n§ 4\nÍ løgtingslóg nr. 8 frá 28. februar 2006 um tinglýsingaravgjald, sum broytt við løgtingslóg nr. 50 frá 2. juni 2008, løgtingslóg nr. 123 frá 15. desember 2014 og løgtingslóg nr. 156 frá 23. desember 2015, verður í § 5 sum stk. 2 sett:\n“Stk. 2. Ásetingin í stk. 1 er ikki galdandi, tá løgfrøðiligir persónar við einum virknum v-tali, sum eru skrásettir sum stórkundi hjá Tinglýsingini, melda talgild skjøl til tinglýsingar ella tá góðkendir fráboðarar, sum sambært §§ 49 d og 49 e í løgtingslóg um tinglýsing hava galdandi góðkenning sum fráboðari, melda talgild skjøl til tinglýsingar. Avrokning av tinglýsingaravgjaldinum fer tá fram uppá rokning frá Tinglýsingini.”\n§ 5\nStk. 1. Landsstýrisfólkið ásetir í kunngerð, nær løgtingslógin kemur í gildi.\nStk. 2. Landsstýrisfólkið kann áseta ymiskar gildiskomur fyri ávikavist tingbókina, akfarsbókina og persónbókina.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "digital-commence",
+        "act_article": "Reg60/2025 §1",
+        "url": "https://www.logir.fo/Kunngerd/60-fra-22-04-2025-um-at-seta-i-gildi-asetingar-fyri-akfarsbokina-i-logtingslog-um",
+        "original_language": "fo",
+        "exact_quote": "§ 1. §§ 1-4 og 6 í løgtingslógini koma í gildi 20. mai 2025, sí tó stk. 2.\nStk. 2. § 24 a, stk. 3 og 4, sum ásett í § 1, nr. 13, § 42 e, stk. 3, sum ásett í § 1, nr. 35, § 49 b, stk. 5, 49 c, stk. 5, § 49 d, § 49 e, sum ásett í § 1, nr. 37 og § 50 f, stk. 2, sum ásett í § 1, nr. 46, í løgtingslógini koma í gildi 29. apríl 2025.\nStk. 3. Gildiskomurnar fyri stk. 1 og 2 eru galdandi fyri akfarsbókina hjá Umhvørvisstovuni.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT042",
+    "rule": "Examples, recomputed assumptions",
+    "guide_section": "Two worked examples that recompute",
+    "claims": "Hypothetical inputs recompute: purchase duty 30,000 + mortgage duty 24,000 + fees 2,000 = 56,000. Eligible replacement base 200,000, duty 2,000 + fee 1,000 = 3,000. Excluded instrument duty 12,000 + fee 1,000 = 13,000. Eligibility conditions are evidenced assumptions, not arithmetic conclusions.",
+    "quotes": [
+      {
+        "source": "duty",
+        "act_article": "Act8/2006 §§1,3a(1)–(2)",
+        "url": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+        "original_language": "fo",
+        "exact_quote": "§ 1. Tá føst ogn við keyp og sølu, gávubrævi ella á annan hátt verður latin øðrum eigara, skal tinglýsingaravgjald rindast til landskassan. Við arvaskifti skal einki tinglýsingaravgjald rindast fyri tann partin av ognini, sum arvaavgjald verður latið fyri.\nStk. 2. 1) Avgjaldið er 1% av keypsprísinum.\n\n§ 3 a. 2) 1) 3) Tá veð, tó ikki rættarveð, verður tinglýst, skal tinglýsingaravgjald rindast til landskassan. Avgjaldið er 1% av veðtryggjaðu upphæddini. Veðtryggjaða upphæddin er nominella virðið á høvuðsstólinum á veðbrævinum. Inniheldur veðbrævið ásetingar um uppskriving av høvuðsstólinum, er veðtryggjaða upphæddin tann hægsta upphædd, ið høvuðsstólurin kann uppskrivast til. Um hægsta upphæddin, ið høvuðsstólurin kann uppskrivast til, ikki framgongur beinleiðis av veðbrævinum, skal avgjaldskyldugi í veðbrævinum eftir bestu sannføring áseta hægstu upphædd, ið høvuðsstólurin kann uppskrivast til frá tinglýsingardegnum og 10 ár fram. Avgjald verður síðan ásett eftir hesi upphædd. Um avgjaldskyldugi ikki ger hesa meting sjálvur, ella eru ivamál annars, ásetir Umhvørvisstovan hesa upphædd.\nStk. 2. 3) Tá veð verður tinglýst í fastari ogn, tó ikki veð sambært ognarveðbrævi ella skaðaloysisbrævi, sum trygd fyri láni í realkredittinstituttum ella láni í peningastovnum við upprunaligari afturgjaldingartíð á í minsta lagi 10 ár og hægst 30 ár, roknast tann parturin av láninum, ið verður tikin til at avloysa eitt lán við samsvarandi panti í somu ogn ikki til ta veðtryggjaðu upphæddina, sbr. stk. 1. Verður veðbrævið burturvíst av Umhvørvisstovuni, og skal veðbrævið ikki seinni tinglýsast, ella nýggja veðbrævið verður burturvíst sum ikki effektuerað innan 1 ár eftir tilmelding til tinglýsingar, er avgjaldsfyrimunurin eftir 1. pkt. dottin burtur. 1. pkt. kann verða nýtt, sjálvt um tað nýggja pantið er sum eitt ella fleiri veðbrøv, og sjálvt um tað nýggja pantið bert partvíst avloysir verandi lán. Verður veðbrævið avloyst við fleiri veðbrøvum, er tað ein treyt, at tey nýggju veðbrøvini í minsta lagi í eitt ár eftir tinglýsingina av nýggja pantinum hava pant í somu ogn. Fyri at kunna brúka ásetingina í 1. pkt. er tað ein treyt, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram, áðrenn verandi veð er avlýst, og at tað greitt verður tilskilað og váttað, at tilmelding av tí nýggja pantinum til tinglýsingar fer fram treytað av, at verandi veð verður avlýst, og at verandi veð er avlýst í seinasta lagi 1 ár eftir tilmelding til tinglýsingar av tí nýggja pantinum.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "fee",
+        "act_article": "Act76/1994 §§1–2,4(2)",
+        "url": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+        "original_language": "fo",
+        "exact_quote": "§ 1. 2) Fyri tinglýsing verður rindað eitt gjald, sum er 1.000 kr.\n\n§ 2. Gjaldið verður rindað fyri eitthvørt skjal, ið verður fráboðað til tinglýsing.\n\nStk. 2.3) Ókeypis er haraftrat áheitan um:\n1) avlýsing,\n2) avtøku av rættarviðmerkingum,\n3) freistarleingjan ella endaliga innføring í tingbókina av einum skjali, sum er tinglýst við freist, og\n4) striking av rættindum, sum ikki hava fingið fulnað við tvingsilssølu, sbrt. § 642 í rættargangslógini.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "PT043",
+    "rule": "Fixed-fee appeal and general appeal effects",
+    "guide_section": "Penalties and interest",
+    "claims": "Fee Act appeals expressly within Regulation §6/Annex4.8 land-matters jurisdiction; Act147 transfer and ordinary four-week notification clock, special late admission, written reasoned/evidenced appeal, no automatic suspension, ordinary six-month court review subject to contrary legislation.",
+    "quotes": [
+      {
+        "source": "appeal-act",
+        "act_article": "Act147/2021 §§2,10,15–16",
+        "url": "https://logir.fo/Logtingslog/147-fra-25-11-2021-um-Foroya-Kaerustovn",
+        "original_language": "fo",
+        "exact_quote": "§ 2. Føroya Kærustovnur er kærumyndugleiki fyri fyrisitingarligar avgerðir, tá ið tað er ásett í løgtingslóg ella við heimild í løgtingslóg. Harumframt tekur Føroya Kærustovnur avgerð í málum, tá ið tað er ásett í løgtingslóg.\nStk. 2. Er ikki annað ásett, er freistin at kæra 4 vikur at rokna frá tí degi, kærarin hevur fingið fráboðan um avgerðina. Í serligum føri kann Føroya Kærustovnur viðgera kærumál, ið eru latin inn, eftir at kærufreistin er farin.\nStk. 3. Landsstýrismaðurin ásetir nærri reglur um starvsskipan fyri Føroya Kærustovni.\nÚtbúgvingarkrøv\n\n§ 10. Kæra skal sendast skrivliga til Føroya Kærustovn og skal, har tað ber til, vera grundgivin og hava skjalprógv hjáløgd.\nStk. 2. Allar upplýsingar, so sum ummæli, váttanir o.a., ið verða mettar neyðugar fyri at kunna viðgera og taka avgerð í málinum, skulu verða fingnar til vegar, áðrenn málið verður lagt fyri Føroya Kærustovn til avgerðar.\nStk. 3. Tann myndugleiki, ið hevur tikið ta kærdu avgerðina, hevur skyldu til at lata Føroya Kærustovni allar upplýsingar, sum hava verið grundarlag undir kærdu avgerðini.\nStk. 4. Kæra hevur ikki steðgandi virknað uttan so, at hetta er ásett í aðrari lóggávu. Um serligar umstøður tala fyri tí, kann Føroya Kærustovnur gera av, at ein kæra fær steðgandi virknað.\nOnnur mál enn kærumál\n\n§ 15. Um ikki annað er ásett í aðrari lóggávu, kunnu avgerðir hjá Føroya Kærustovni skjótast inn fyri Føroya Rætt innan 6 mánaðir eftir, at avgerðin er fráboðað viðkomandi.\nSkiftistíðarskeið\n\n§ 16. Tann 1. januar 2022 verða hesar kærunevndir tiknar av og virkisøkið flutt til Føroya Kærustovn:\n1) Kærunevndin í almanna-, familju- og heilsumálum.\n2) Skatta- og avgjaldskærunevndin.\n3) Kærunevndin hjá Studna.\nStk. 2. Tann 1. juli 2022 verða hesar nevndir og kærunevndir tiknar av og virkisøkið flutt til Føroya Kærustovn:\n1) Kærunevndin í lendismálum.\n2) Vinnukærunevndin.\n3) Skuldarumskipanarnevndin.\nStk. 3. Tann 1. januar 2023 verða hesar kærunevndir tiknar av og virkisøkið flutt til Føroya Kærustovn:\n1) Kærunevndin hjá Arbeiðsloysisskipanini, ALS.\n2) Kærunevndin hjá Barsilsskipanini.\nStk. 4. Tann 1. juli 2023 verða hesar nevndir og kærunevndir tiknar av og virkisøkið flutt til Føroya Kærustovn:\n1) Høvuðsbarnaverndarnevndin.\n2) Psykiatriska sjúklingakærunevndin.\nStk. 5. Tann 1. januar 2024 verður Tvingsilsnevndin tikin av og virkisøkið flutt til Føroya Kærustovn.",
+        "read_date": "2026-10-31"
+      },
+      {
+        "source": "appeal-reg",
+        "act_article": "Reg161/2021 §6, Annex4.8",
+        "url": "https://logir.fo/Kunngerd/161-fra-14-12-2021-um-starvsskipan-fyri-Foroya-Kaerustovn",
+        "original_language": "fo",
+        "exact_quote": "§ 6. Lendismál eru kærur um avgerðir, sum kommunur ella Umhvørvisstovan hava tikið sambært lóggávu í skjali 1, nr. 4.\nStk. 2. Serkøn ráðgeving í lendismálum verður vanliga veitt av persóni, sum er:\n1) byggikønur, ella\n2) landmálarakønur.\nVinnumál\n\n4. Yvirlit yvir lóggávu, sum er at rokna sum lendismál, samanber § 6, stk. 1.\n\n4.8. Løgtingslóg um tinglýsingargjøld v.m.",
+        "read_date": "2026-10-31"
+      }
+    ]
+  }
+]
