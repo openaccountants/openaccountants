@@ -1,0 +1,77 @@
+{
+  "baseline": "fac36211f",
+  "inputs": [
+    {
+      "path": "skills/svalbard/sj-svalbard-company-beneficial-owners.md",
+      "sha256": "9cccd547eb2f2593ab7fee3cfce81a3eba8e3fbc82333c44b38588fb3d7e0472"
+    },
+    {
+      "path": "skills/svalbard/README.md",
+      "sha256": "4fc398b7c206d100d7201d5426cc644d619303aadbdccc71689eff2ed9d54904"
+    },
+    {
+      "path": "evidence/ledgers/sj-svalbard-company-beneficial-owners.md",
+      "sha256": "98d52ff3acbed70a848142a5c7917afb0c3ea68213064a2759456ecd49702f71"
+    },
+    {
+      "path": "REUSE.toml",
+      "sha256": "41f0e2b98399a7ba7605bb01c114c51a81f8dbd873ccf0730cb6ea0cfb1bb810"
+    },
+    {
+      "path": "LICENSES/NLOD-2.0.txt",
+      "sha256": "b1b06f8f7771ed8d4ee958d984ffe269f48ce18ff6719e4a8ca59e3c6ae84361"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/SOURCE-LICENSING.md",
+      "sha256": "bee080f1a2120790b8e3e7240380f3e3e7e3b4e8f49e0b533bd0196aa290f805"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-dataset-receipts.json",
+      "sha256": "118bb6c5813070501f167913da53df872eb938647dd098dcc431d649114a5f4d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.txt",
+      "sha256": "871dcaced420b28fb926164feff8a2de07cde9d2a230497d015e07c6356f584d"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/nl-20190301-002.xml",
+      "sha256": "0871014acd5dc24eaab8c6a5d1132d0a3faeaad3956c8fa037b09d346dc9982a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.txt",
+      "sha256": "82b292a005ae64034a4160c63943010d0268aa30fb148cbfc633fecee2ebf085"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-19830215-0086.xml",
+      "sha256": "f73699163e492de3948507543635a50551b57df644552cd400e5599b02b22bc0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.txt",
+      "sha256": "9d4826f4112686d919f63df4c9095d97ff4bef0dd5b6ac8087e6efe1742506a0"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/api-sources/sf-20210621-2056.xml",
+      "sha256": "cc63f9af79f4fcb7cc1cfc96d7326b2a4d99e52bca78ed1682b644bd728c8e3a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/line-map.json",
+      "sha256": "b9dc16caa0e0a5ab9acb0454baf13a0223d354aadbacd4f0529a52bb81715fd5"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/predecessor-README.md",
+      "sha256": "1ad918ffca000660da2f4dc6a16bede2cca942b3ddc2b22cba774dc37bdc199a"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/preservation.json",
+      "sha256": "76c927a97dbadca16276af9d37e11927b3a5f874b49910474f12e4c7cb60b236"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/procedure-source-receipts.json",
+      "sha256": "7e7715501966ae6aeb88bba28b68122f1abd20bb157a9249a06f7ed2f5770518"
+    },
+    {
+      "path": "evidence/ledgers/svalbard-beneficial-owners-20261031/rows.json",
+      "sha256": "05b6074de94d85e4af119b18f0ab492abac25f52f5d3ea1a41085900bd14801f"
+    }
+  ]
+}

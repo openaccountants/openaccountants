@@ -1,0 +1,11 @@
+# Gibraltar individual income tax expansion, v0.2
+
+Writer check only, 22 October 2026. Rates Rules pages 4–7 (rules 2–3A), historical period overrides identified; Allowances Rules 6–6C, 16B–16C and 24–24A; Income Tax Act 28, 64–65 and 74 read. Source PDFs hashed. Replaced reliance on undated rates page with statutory rates. GIBS criterion described as assessable income, not unqualified gross salary. ABS top-up is difference, not additional full floor. Spouse restrictions preserved; credit ceiling not represented as a guaranteed refundable amount. Partial-year references to section 34(3) do not align with current Act and are explicitly unresolved. Full-year examples do not resolve that issue.
+
+Filing date computed from section 28; no claim that it establishes payment date. Section 65 penalties total 850; section 64 example totals 1320 with wholly unpaid principal and first surcharge. Nonresident table distinguished from ordinary ABS and pension exception. Two oa-check examples added, pre-credit where necessary. Baseline PAYE/no-code statement replaced by reference to the deeper payroll Guide. Complete relief schedule, low-income exemption interaction, operational return/payment channels, special regimes and independent review remain outstanding. No professional attestation.
+
+## Low-income relief and instalments, v0.3
+
+Read Allowances Rules 16E–16F (printed pages 28–29) and Income Tax Act 39(1)–(9), Schedule 1 Table A(2)/B(2) (pages 99–101, 143). Low-income exemption, four disjoint taper ranges and high-income taper transcribed; do not extrapolate across gaps or erase the 20p endpoint. Fractional-pound edge treatment remains unresolved. Two added oa-check blocks cover taper arithmetic and instalment reconciliation.
+
+Self-employed ITO page corroborates January/June instalments and balance with return by November. Its old allowance table and linked 2015 leaflet are not current allowance authority. Prior-year basis excludes an automatic use of total mixed-income tax: statutory PAYE-first ordering preserved. Reduction needs Commissioner decision; later shortfall keeps original due-date surcharge exposure. Special assessment deadlines and live 2026/27 form/channel remain open. This is writer verification, not independent review or attestation.

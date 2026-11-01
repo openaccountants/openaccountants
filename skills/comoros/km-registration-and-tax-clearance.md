@@ -2,13 +2,13 @@
 name: km-registration-and-tax-clearance
 description: >
   Comoros tax registration and clearance reference based on the enacted 2026 finance law. Covers the amended registration deadline, the distinction between the quitus fiscal and tax-regularity certificate, their validity periods and the customs withholding consequence of missing certification. Separates administrative evidence from substantive tax liability and includes a conditional withholding calculation. Flags incomplete scan wording and the need for current administrative forms rather than assuming certificates are interchangeable. Company formation, tax rates, exemptions, the complete intervening amendment chain and independent accountant review remain outside this initial source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: KM
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -52,8 +52,6 @@ If the verified customs value is **KMF 2,000,000** and the withholding condition
 ## Remaining work
 
 Checked 22 October 2026. Obtain current application forms, processing rules, a legible substitution clause and guidance on crediting the advance. Complete later-amendment and registration-document reconciliation. No independent accountant review has occurred; this is not comprehensive country or formation coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

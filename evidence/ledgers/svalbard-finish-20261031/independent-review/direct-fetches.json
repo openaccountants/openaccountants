@@ -1,0 +1,65 @@
+[
+  {
+    "name": "environment-fee",
+    "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "response": "000 https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: lovdata.no\n",
+    "time_utc": "2026-10-31T19:48:34.935183+00:00",
+    "sha256": null
+  },
+  {
+    "name": "environment-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "response": "000 https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: lovdata.no\n",
+    "time_utc": "2026-10-31T19:48:34.949992+00:00",
+    "sha256": null
+  },
+  {
+    "name": "environment-fund",
+    "url": "https://www.sysselmesteren.no/svalbards-miljovernfond/",
+    "response": "000 https://www.sysselmesteren.no/svalbards-miljovernfond/",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: www.sysselmesteren.no\n",
+    "time_utc": "2026-10-31T19:48:34.963487+00:00",
+    "sha256": null
+  },
+  {
+    "name": "governor-travel",
+    "url": "https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "response": "000 https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: www.sysselmesteren.no\n",
+    "time_utc": "2026-10-31T19:48:34.975566+00:00",
+    "sha256": null
+  },
+  {
+    "name": "fund-refund",
+    "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "response": "000 https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: www.miljovernfondet.no\n",
+    "time_utc": "2026-10-31T19:48:34.988917+00:00",
+    "sha256": null
+  },
+  {
+    "name": "coal-law",
+    "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "response": "000 https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: lovdata.no\n",
+    "time_utc": "2026-10-31T19:48:35.000258+00:00",
+    "sha256": null
+  },
+  {
+    "name": "coal-2026",
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "response": "000 https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "exit": 6,
+    "error": "curl: (6) Could not resolve host: lovdata.no\n",
+    "time_utc": "2026-10-31T19:48:35.011325+00:00",
+    "sha256": null
+  }
+]

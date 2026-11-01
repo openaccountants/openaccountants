@@ -1,0 +1,62 @@
+[
+  {
+    "path": "skills/moldova/moldova-income-tax.md",
+    "previous_version": "0.12",
+    "version": "0.13",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/md-corporate-income-tax.md",
+    "previous_version": "0.14",
+    "version": "0.15",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/moldova-payroll.md",
+    "previous_version": "0.10",
+    "version": "0.11",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/moldova-tax-optimization.md",
+    "previous_version": "0.6",
+    "version": "0.7",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/moldova-social-contributions.md",
+    "previous_version": "0.13",
+    "version": "0.14",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/md-company-formation.md",
+    "previous_version": "0.7",
+    "version": "0.8",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/md-cross-border.md",
+    "previous_version": "0.9",
+    "version": "0.10",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/md-tax-overview.md",
+    "previous_version": "0.5",
+    "version": "0.6",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/md-transfer-pricing.md",
+    "previous_version": "0.7",
+    "version": "0.8",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  },
+  {
+    "path": "skills/moldova/moldova-vat.md",
+    "previous_version": "2.5",
+    "version": "2.6",
+    "reason": "Evidence/document links repaired after country-first repository move; VAT also links new refund method. Tax rules and platform fields/CTA preserved."
+  }
+]

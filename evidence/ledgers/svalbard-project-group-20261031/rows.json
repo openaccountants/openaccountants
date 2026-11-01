@@ -1,0 +1,755 @@
+{
+  "guide": "skills/svalbard/sj-svalbard-project-group-payroll.md",
+  "guide_sha256": "2e0854e642cd7dd89da03353da5fcbfc4099f3178478977ff5be87f1c137ef31",
+  "rows": [
+    {
+      "id": "SJ-PROJ-001",
+      "section": "Who this applies to",
+      "rule": "Power to regulate short project-group settlements",
+      "act_article": "Svalbard Act §4-2(a)",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 213,
+          "exact_original_language_quote": "a.forenklet felles skatteoppgjør for prosjektgrupper mv. med kortere opphold på Svalbard,"
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-002",
+      "section": "Who this applies to",
+      "rule": "Foreign research/project employer; tax-office permission required and discretionary",
+      "act_article": "Svalbard regulation §7",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-003",
+      "section": "Who this applies to",
+      "rule": "Group outside Longyearbyen; total project maximum six months",
+      "act_article": "Svalbard regulation §7",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-004",
+      "section": "Who this applies to",
+      "rule": "Insurance-liable employees prevent consent; foreign employer does not itself prove exemption",
+      "act_article": "Svalbard regulation §7; Insurance Act §2-3",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-005",
+      "section": "Who this applies to",
+      "rule": "Ordinary temporary-work tax liability requires at least30 continuous days; shorter-stay interaction not resolved here",
+      "act_article": "Svalbard Act §2-2 first paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 161,
+          "exact_original_language_quote": "Personer som tar midlertidig opphold på Svalbard og der utfører arbeid eller utøver næringsvirksomhet, skal svare skatt til Svalbard av inntekt vunnet ved slikt arbeid eller virksomhet dersom oppholdet varer sammenhengende i minst 30 dager."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-006",
+      "section": "Who this applies to",
+      "rule": "Historical collective scheme is legally distinct and excludes§4-2(a)",
+      "act_article": "Svalbard Act §6-3 first paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 281,
+          "exact_original_language_quote": "Denne paragraf gjelder for ansatte i virksomhet som har fulgt særskilt praksis med forenklet felles skatteoppgjør. Bestemmelsen gjelder ikke for forenklet oppgjør etter § 4-2 bokstav a."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-007",
+      "section": "Rates, bands and thresholds; The base; worked cases",
+      "rule": "Collective8% of aggregate employees salary in settlement period; conditions and reporting direction remain attached",
+      "act_article": "Svalbard regulation §7",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-008",
+      "section": "The base",
+      "rule": "Existing Norwegian insurance membership retained during Svalbard stay",
+      "act_article": "Insurance Act §2-3 first paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+      "read_on": "2026-10-31",
+      "source": "project-insurance-membership",
+      "raw_sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+      "reader_sha256": "69308bea91450490f342399dccda2d350224681f7226e6c2dd7ba0ce08472389",
+      "proofs": [
+        {
+          "reader_line": 776,
+          "exact_original_language_quote": "Et medlem i trygden som bosetter seg eller tar opphold på Svalbard, på Jan Mayen eller i et norsk biland, beholder medlemskapet."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-009",
+      "section": "The base",
+      "rule": "Norwegian employer operating on Svalbard can establish membership for prior nonmember",
+      "act_article": "Insurance Act §2-3 second paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+      "read_on": "2026-10-31",
+      "source": "project-insurance-membership",
+      "raw_sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+      "reader_sha256": "69308bea91450490f342399dccda2d350224681f7226e6c2dd7ba0ce08472389",
+      "proofs": [
+        {
+          "reader_line": 777,
+          "exact_original_language_quote": "En person som ikke er medlem i trygden, blir medlem dersom han eller hun tar arbeid for en norsk arbeidsgiver som driver virksomhet på Svalbard, på Jan Mayen eller i et norsk biland."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-010",
+      "section": "The base",
+      "rule": "Ordinary gross-salary method and annual band; valuation owned by payroll Guide",
+      "act_article": "Svalbard Act §3-1 first paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 182,
+          "exact_original_language_quote": "Skatt av lønn, pensjoner og annen ytelse som nevnt i skatteloven § 12-2 bokstavene a, b, c, j og k, beregnes med en prosentvis fastsatt del av ytelsens bruttoverdi, jf. § 5-2. Skatten beregnes med en lav sats for inntekt opp til 12 ganger folketrygdens grunnbeløp, og med en høyere sats for overskytende inntekt. I det samlede inntektsgrunnlaget etter forrige punktum inngår også inntekt som nevnt i § 3-2 fjerde ledd bokstav b. Det benyttes det grunnbeløp som sist ble fastsatt for inntektsåret."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-011",
+      "section": "Deadlines and filing step1",
+      "rule": "Recommended consent evidence list, not official numbered fields, derived from all eligibility conditions",
+      "act_article": "Svalbard regulation §7",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-012",
+      "section": "Deadlines and filing step2",
+      "rule": "Authenticated written contact, no ordinary email; dedicated consent form remains unverified",
+      "act_article": "Skatteetaten contact, Skriv til oss",
+      "official_url": "https://www.skatteetaten.no/kontakt/",
+      "read_on": "2026-10-31",
+      "source": "project-contact",
+      "raw_sha256": "f05a6369b42a2c5233a1f7e57e2fb2ad7136d11f4290acb6025a307843d9d4c7",
+      "reader_sha256": "26ae71f6c1de92940fdd0178612a1f7b832b77c15be76a87a56def8fb8b6b4c3",
+      "proofs": [
+        {
+          "reader_line": 51,
+          "exact_original_language_quote": "Hvis du må kontakte oss skriftlig, må du logge deg inn. Du kan ikke sende e-post til oss."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-013",
+      "section": "Deadlines and filing step3",
+      "rule": "A-reporting law default unless tax office determines otherwise; no automatic waiver",
+      "act_article": "Svalbard regulation §7",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+      "read_on": "2026-10-31",
+      "source": "svalbard-regulation",
+      "raw_sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+      "reader_sha256": "5c6f3b532e561191045a1f81e4ac93ea8279e38cc61a6c3c0f5d4101590c4507",
+      "proofs": [
+        {
+          "reader_line": 127,
+          "exact_original_language_quote": "Svalbard skattekontor kan gi samtykke til at forskergrupper og andre prosjektgrupper med utenlandsk arbeidsgiver leverer skattemessig fellesoppgjør for ansattes lønn. Gruppen må ha opphold utenfor Longyearbyen og prosjektet må ha en samlet varighet på maksimalt 6 måneder. Samtykke kan ikke gis når ansatte skal svare trygdeavgift av inntekten. Skatt beregnes med 8 pst. av samlet lønn til ansatte i avregningsperioden. Med mindre skattekontoret bestemmer noe annet, skal opplysninger om slikt trekk gis etter reglene i a-opplysningsloven."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-014",
+      "section": "Deadlines and filing step3",
+      "rule": "A-reporting Act applies territorially on Svalbard",
+      "act_article": "A-reporting Act §1 second paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+      "read_on": "2026-10-31",
+      "source": "project-areport-law",
+      "raw_sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+      "reader_sha256": "5ec22c4e1335983e34bf956f1138c74b588fe87e47bfdc31b27d4a3268b49d48",
+      "proofs": [
+        {
+          "reader_line": 98,
+          "exact_original_language_quote": "Loven gjelder også for Svalbard. Departementet kan i forskrift fastsette at deler av loven ikke skal gjelde på Svalbard, eller fastsette særskilte regler for dette området."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-015",
+      "section": "Deadlines and filing step4",
+      "rule": "Direct reporting for employers without payroll software",
+      "act_article": "Direct a-melding, Hvem skal bruke",
+      "official_url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-direct",
+      "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "proofs": [
+        {
+          "reader_line": 18,
+          "exact_original_language_quote": "Du kan levere a-meldingen direkte på skatteetaten.no hvis du ikke har lønnssystem."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-016",
+      "section": "Deadlines and filing step4",
+      "rule": "Direct route one report per subunit and no public agencies",
+      "act_article": "Direct a-melding, Begrensninger",
+      "official_url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-direct",
+      "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "proofs": [
+        {
+          "reader_line": 22,
+          "exact_original_language_quote": "kun én a-melding per underenhet"
+        },
+        {
+          "reader_line": 23,
+          "exact_original_language_quote": "kan ikke brukes av offentlige etater"
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-017",
+      "section": "Deadlines and filing step4",
+      "rule": "17November2026 access change; check packages/delegation, additional NUF contact-person role",
+      "act_article": "Direct a-melding, notice and access",
+      "official_url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-direct",
+      "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "proofs": [
+        {
+          "reader_line": 4,
+          "exact_original_language_quote": "Fra 17. november 2026 er det ikke lenger mulig å levere a-melding med de gamle Altinn-rollene. Det er derfor viktig at du kontrollerer at du har riktig tilgangspakke for denne tjenesten, eller at du har fått delegert tilgang til en enkelttjeneste."
+        },
+        {
+          "reader_line": 37,
+          "exact_original_language_quote": "For Norskregistrert utenlandsk foretak (NUF) vil det i tillegg være mulig å sende inn skjemaer med enhetsregisterrollen \"Kontaktperson NUF”."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-018",
+      "section": "Deadlines and filing step5",
+      "rule": "Svalbard income tax/fee rule and corresponding withholding description both mandatory",
+      "act_article": "F513-2, Hvorfor denne feilmeldingen",
+      "official_url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-svalbard",
+      "raw_sha256": "007d8c58cd1b2d7342fbc0a13c302c34738efc34d6c7988c468223145e403543",
+      "reader_sha256": "44855d8768e334f5ca7919b4904775525901edfdcc6ac76d7eee9d5baaa5a207",
+      "proofs": [
+        {
+          "reader_line": 139,
+          "exact_original_language_quote": "Du har oppgitt en ugyldig kombinasjon av inntekt og forskuddstrekk. Inntekt som er skattepliktig til Svalbard etter lønnstrekkordningen, skal oppgis med særskilt skatte- og avgiftsregel Svalbard. Forskuddstrekk som gjelder trukket skatt og trygdeavgift til Svalbard, skal oppgis med beskrivelsen Svalbard."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-019",
+      "section": "Deadlines and filing step5",
+      "rule": "Report information in prescribed form; match underlying salary, employment and deductions rather than invent collective boxes",
+      "act_article": "A-reporting regulation §3-1; direct-service scope",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-31",
+      "source": "project-areport-reg",
+      "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "proofs": [
+        {
+          "reader_line": 143,
+          "exact_original_language_quote": "Opplysningene skal leveres i den form Skattedirektoratet bestemmer."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-020",
+      "section": "Deadlines and filing step6",
+      "rule": "Automated feedback identifies errors and account/KID information",
+      "act_article": "Direct a-melding, Tilbakemeldingen",
+      "official_url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-direct",
+      "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "proofs": [
+        {
+          "reader_line": 47,
+          "exact_original_language_quote": "Hver gang du leverer a-meldingen gjør vi en automatisk kontroll av den, og du får en tilbakemelding."
+        },
+        {
+          "reader_line": 48,
+          "exact_original_language_quote": "Tilbakemeldingen gir deg en oversikt over opplysninger du har sendt inn, og om a-meldingen inneholder feil som du må rette. Tilbakemeldingen inneholder informasjon om betaling av arbeidsgiveravgift og forskuddstrekk, kontonummer og KID-nummer."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-021",
+      "section": "Deadlines and filing step6",
+      "rule": "Latest direct report replaces same month/subunit but cannot replace oldAltinn/payroll reports",
+      "act_article": "Direct a-melding, replacement limits",
+      "official_url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-direct",
+      "raw_sha256": "ddf93d18af51388997473b01d923d928796f5d6f3d47b16786af27a3a7b443d3",
+      "reader_sha256": "12e1632ab84798a0e41bbf76db035aeced6abaacab5ddf88c1d719330b3c54a6",
+      "proofs": [
+        {
+          "reader_line": 24,
+          "exact_original_language_quote": "Når du leverer a-meldingen direkte, er det alltid den siste a-meldingen som er sendt for måneden som gjelder for den underenheten du leverer a-meldingen for. Det vil si at hvis du retter feil eller mangler, vil den nye a-meldingen du leverer erstatte/overskrive forrige a-melding for den måneden."
+        },
+        {
+          "reader_line": 25,
+          "exact_original_language_quote": "Direkte registrering på skatteetaten.no erstatter ikke a-meldinger som tidligere er sendt fra Altinn (A01) eller lønnssystem. Du kan derfor ikke bruke a-melding direkte på skatteetaten.no til å rette feil eller mangler i a-melding sendt fra Altinn eller lønnssystem."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-022",
+      "section": "Deadlines and filing step6",
+      "rule": "Correct affected month with replacement or opposite-sign reversal and corrected entry",
+      "act_article": "F513-2, Slik retter du",
+      "official_url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+      "read_on": "2026-10-31",
+      "source": "project-amelding-svalbard",
+      "raw_sha256": "007d8c58cd1b2d7342fbc0a13c302c34738efc34d6c7988c468223145e403543",
+      "reader_sha256": "44855d8768e334f5ca7919b4904775525901edfdcc6ac76d7eee9d5baaa5a207",
+      "proofs": [
+        {
+          "reader_line": 149,
+          "exact_original_language_quote": "Du må rette a-meldingen for den kalendermåneden som inneholder feil."
+        },
+        {
+          "reader_line": 150,
+          "exact_original_language_quote": "Du kan rette opp ved å sende en erstatningsmelding med riktig beløp, riktig beskrivelse og skatte- og avgiftsregel."
+        },
+        {
+          "reader_line": 151,
+          "exact_original_language_quote": "Du kan også rette ved å levere en ny a-melding. Oppgi beløpet med motsatt fortegn og samme beskrivelse eller skatte- og avgiftsregel som i den opprinnelige a-meldingen. Oppgi så beløpet på nytt med riktig fortegn og riktig beskrivelse og skatte- og avgiftsregel."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-023",
+      "section": "Deadlines and filing step7",
+      "rule": "Payment and collection laws apply to Svalbard tax/insurance",
+      "act_article": "Svalbard Act §5-1",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 249,
+          "exact_original_language_quote": "Skattebetalingsloven og innkrevingsloven gjelder ved betaling og innkreving av skatt og trygdeavgift til Svalbard."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-024",
+      "section": "Rates, bands and thresholds; Deadlines and filing step7",
+      "rule": "2026salary withholding next-working-day payment, plus power for prescribed exceptions",
+      "act_article": "Payment Act §10-10(1),(3)",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "read_on": "2026-10-31",
+      "source": "payment-law",
+      "raw_sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "reader_sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21",
+      "proofs": [
+        {
+          "reader_line": 826,
+          "exact_original_language_quote": "(1) Forskuddstrekk og skattetrekk etter § 5-4 første ledd (kildeskatteordning) forfaller til betaling senest første virkedag etter utbetaling av ytelsen det skal foretas trekk i."
+        },
+        {
+          "reader_line": 828,
+          "exact_original_language_quote": "(3) Departementet kan i forskrift gi regler om avvikende forfallstidspunkt for enkelte arbeidsgivere, skattytere eller situasjoner."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-025",
+      "section": "Deadlines and filing step7",
+      "rule": "Payment Act10-10 applies correspondingly to Svalbard salary withholding",
+      "act_article": "Payment Act §10-11",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "read_on": "2026-10-31",
+      "source": "payment-law",
+      "raw_sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "reader_sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21",
+      "proofs": [
+        {
+          "reader_line": 833,
+          "exact_original_language_quote": "For betaling av lønnstrekk av inntekt på Svalbard gjelder § 10-10 tilsvarende."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-026",
+      "section": "Deadlines and filing step7",
+      "rule": "Account/KID available from feedback or before reporting; use Svalbard collection section, not neighbouring mainland account",
+      "act_article": "Payment guidance, Forskuddstrekk and Skatteinnkreving Svalbard",
+      "official_url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/",
+      "read_on": "2026-10-31",
+      "source": "project-payment-guidance",
+      "raw_sha256": "452d11a6fd58279c18a73315cb7614eff94774157fee75cbe2458afcdbc4a7e4",
+      "reader_sha256": "b704543ed99849ddf7eef6aec3dfe1ef51996efc13fe79668974f12f2b59e3a2",
+      "proofs": [
+        {
+          "reader_line": 28,
+          "exact_original_language_quote": "Betalingsinformasjon for forskuddstrekk følger med tilbakemeldingene du mottar etter at du har sendt a-meldingen. Hvis du har behov for å betale forskuddstrekk før du leverer a-meldingen, kan du finne kontonummer og KID-nummer her:"
+        },
+        {
+          "reader_line": 103,
+          "exact_original_language_quote": "Skatteinnkreving Svalbard"
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-027",
+      "section": "Rates, bands and thresholds; Deadlines and filing",
+      "rule": "Ordinary monthly reporting fifth of following month; weekend/public-holiday shift",
+      "act_article": "A-reporting regulation §2-1 first/seventh paragraphs",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-31",
+      "source": "project-areport-reg",
+      "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "proofs": [
+        {
+          "reader_line": 129,
+          "exact_original_language_quote": "Opplysningene skal leveres senest den 5. i måneden etter utløpet av den kalendermåned opplysningene gjelder."
+        },
+        {
+          "reader_line": 135,
+          "exact_original_language_quote": "Faller fristen på en lørdag, søndag eller helligdag utskytes fristen til første påfølgende virkedag."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-028",
+      "section": "Deadlines and filing",
+      "rule": "Foreign-contractor exception requiresTaxAdministration7-6 andassignmentstartafter20th; first report15th following month",
+      "act_article": "A-reporting regulation §2-1 fifth paragraph",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-31",
+      "source": "project-areport-reg",
+      "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "proofs": [
+        {
+          "reader_line": 133,
+          "exact_original_language_quote": "For opplysningspliktige etter skatteforvaltningsloven § 7-6, utskytes fristen for første levering etter første ledd til den 15. i den påfølgende kalendermåneden, når arbeidet i et oppdrag påbegynnes etter den 20. i en kalendermåned. Opplysningene skal gis for hver kalendermåned opplysningene gjelder for."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-029",
+      "section": "Deadlines and filing",
+      "rule": "Annual15Januaryexception requiresactualPaymentAct5-3 exemption and7-6 provider; monthly information still required",
+      "act_article": "A-reporting regulation §2-1 sixth paragraph",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-31",
+      "source": "project-areport-reg",
+      "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "proofs": [
+        {
+          "reader_line": 134,
+          "exact_original_language_quote": "Når det er innvilget fritak fra å foreta forskuddstrekk etter skattebetalingsloven § 5-3 for arbeidstakere hos opplysningspliktige etter skatteforvaltningsloven § 7-6, kan opplysninger leveres en gang per år. Opplysningene skal gis for hver kalendermåned opplysningene gjelder for, og skal leveres senest den 15. januar i året etter inntektsåret."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-030",
+      "section": "Deadlines and filing",
+      "rule": "Svalbard salary withholding excludesPaymentActchapter5; reporting waiver cannot be inferred",
+      "act_article": "Svalbard Act §5-2 fourth paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 257,
+          "exact_original_language_quote": "Skattebetalingsloven kapittel 5 om forskuddstrekk får ikke anvendelse for lønnstrekk."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-031",
+      "section": "Deadlines and filing",
+      "rule": "Report paymentdate, withholding and cessation; underlying reporting source",
+      "act_article": "Svalbard Act §5-2 fifth paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 258,
+          "exact_original_language_quote": "Arbeidsgiveren skal levere melding om foretatt lønnstrekk og dato for utbetaling av ytelser det skal foretas trekk i, etter reglene i skatteforvaltningsloven § 8-8 første ledd. Opplysninger om foretatt lønnstrekk skal også leveres når arbeidsgiver opphører med virksomhet på Svalbard eller aktiviteten der på annen måte opphører. Forhåndsutfylte opplysninger om arbeidsgiveren etter denne bestemmelsen kan gjøres tilgjengelig for arbeidsgiveren ved elektronisk kommunikasjon. Departementet kan i forskrift gi regler som fraviker regelen i første punktum."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-032",
+      "section": "Penalties and interest",
+      "rule": "A-reporting missing-information coercive fine and appeal/waiver conditions; rates owned by payrollGuide",
+      "act_article": "A-reporting Act §10",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+      "read_on": "2026-10-31",
+      "source": "project-areport-law",
+      "raw_sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+      "reader_sha256": "5ec22c4e1335983e34bf956f1138c74b588fe87e47bfdc31b27d4a3268b49d48",
+      "proofs": [
+        {
+          "reader_line": 169,
+          "exact_original_language_quote": "Skattekontoret kan ilegge den som ikke innrapporterer alle opplysninger innen fristen i § 4, en daglig løpende tvangsmulkt frem til opplysningene er levert. Samlet tvangsmulkt kan ikke overstige 1 000 ganger rettsgebyret. Departementet kan i forskrift gi regler om hvordan den daglige tvangsmulkten skal fastsettes."
+        },
+        {
+          "reader_line": 172,
+          "exact_original_language_quote": "Tvangsmulkt kan helt eller delvis frafalles dersom forpliktelsen ikke er overholdt som følge av forhold utenfor den opplysningspliktiges kontroll eller dersom særlige rimelighetsgrunner som forelå ved ileggelsen, tilsier det."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-033",
+      "section": "Penalties and interest",
+      "rule": "Separate administrative late-reporting fee; no verifiedproject-specifictariff",
+      "act_article": "A-reporting Act §11; regulation§4-3",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+      "read_on": "2026-10-31",
+      "source": "project-areport-law",
+      "raw_sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+      "reader_sha256": "5ec22c4e1335983e34bf956f1138c74b588fe87e47bfdc31b27d4a3268b49d48",
+      "proofs": [
+        {
+          "reader_line": 180,
+          "exact_original_language_quote": "Skattekontoret kan ilegge den som ikke leverer alle opplysninger innen fristen i § 4, et overtredelsesgebyr. Gebyret kan ikke overstige 15 ganger rettsgebyret. Departementet kan i forskrift gi regler om hvordan gebyret skal fastsettes."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-034",
+      "section": "Penalties and interest",
+      "rule": "No administrative fee where coercive fine accrues for same delay",
+      "act_article": "A-reporting regulation §4-3 final paragraph",
+      "official_url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+      "read_on": "2026-10-31",
+      "source": "project-areport-reg",
+      "raw_sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+      "reader_sha256": "3f939c4f3eb71d0fb402b5ae747575d7a1216499e17f5441056ff1ded126e7e3",
+      "proofs": [
+        {
+          "reader_line": 179,
+          "exact_original_language_quote": "Det skal ikke ilegges overtredelsesgebyr dersom det er påløpt tvangsmulkt for samme forsinkelse."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-035",
+      "section": "Penalties and interest",
+      "rule": "Late tax interest runs fromdue dateuntilpayment",
+      "act_article": "Payment Act §11-1(1)",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "read_on": "2026-10-31",
+      "source": "payment-law",
+      "raw_sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "reader_sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21",
+      "proofs": [
+        {
+          "reader_line": 985,
+          "exact_original_language_quote": "(1) Det skal beregnes rente av skatte- og avgiftskrav som ikke betales innen forfallstidspunktet etter kapittel 10. Renten beregnes på grunnlag av kravet tillagt eventuell rente etter §§ 11-2 eller 11-5. Renten løper fra forfallstidspunktet fram til betaling skjer. For krav etter § 10-52 løper renten fra forfallstidspunktet for det skatte- eller avgiftskravet som ansvarskravet skal dekke, fram til betaling skjer."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-036",
+      "section": "Penalties and interest",
+      "rule": "Latepaymentrate tied toLatePaymentAct; newrateappliesfromeffectivechange",
+      "act_article": "Payment Act §11-6(1),(3)",
+      "official_url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+      "read_on": "2026-10-31",
+      "source": "payment-law",
+      "raw_sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+      "reader_sha256": "7ef5ecd22d90f3ae12368bcf4f3041a300e04ba4e4a6aca28da8841b01ee2d21",
+      "proofs": [
+        {
+          "reader_line": 1032,
+          "exact_original_language_quote": "(1) Rentesatsen for rente etter §§ 11-1 og 11-3 skal tilsvare satsen fastsatt i medhold av lov 17. desember 1976 nr. 100 om renter ved forsinket betaling m.m. § 3 første ledd første punktum. Er det innvilget betalingsordning for arveavgift fordi arven eller gaven vesentlig omfatter næringsvirksomhet, skal renten være halvparten av satsen etter første punktum."
+        },
+        {
+          "reader_line": 1034,
+          "exact_original_language_quote": "(3) Endring i rentens størrelse får virkning fra tidspunktet endringen trer i kraft, også for skatte- og avgiftskrav hvor det løper rente før ikrafttredelsen."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-037",
+      "section": "Penalties and interest",
+      "rule": "Employer pays underwithholdingdifference; recourse, excessrepayment",
+      "act_article": "Svalbard Act §5-2 sixth paragraph",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 259,
+          "exact_original_language_quote": "Er lønnstrekket for lavt, skal arbeidsgiver innbetale differansen. Arbeidsgiver som dekker en ansatts skatt etter foregående punktum, kan motregne regresskravet i lønn og annen godtgjørelse til den ansatte. Den ansatte kan holdes ansvarlig for beløpet når kravet i forhold til arbeidsgiver må anses som uerholdelig. Er lønnstrekket for høyt, skal differansen tilbakebetales den ansatte."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-038",
+      "section": "Cross-border points",
+      "rule": "Foreigncompanyprojectincome liability distinct fromemployeescollectivesettlement",
+      "act_article": "Svalbard Act §2-4",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+      "read_on": "2026-10-31",
+      "source": "svalbard-law",
+      "raw_sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+      "reader_sha256": "1262f0c91e51d4d30053f0d1389dabba8469d6ce55f42d6336079655e155f792",
+      "proofs": [
+        {
+          "reader_line": 175,
+          "exact_original_language_quote": "Selskaper som er hjemmehørende utenfor Svalbard, skal svare skatt av inntekt vunnet ved virksomhet utøvet på Svalbard, dersom virksomheten varer sammenhengende i minst 30 dager. § 2-2 tredje ledd gjelder tilsvarende."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-039",
+      "section": "Two worked examples that recompute",
+      "rule": "Ordinary comparator low8%/high22%, whose band test is owned bypayrollGuide; examples assume lowband",
+      "act_article": "2026Svalbardtaxdecision§3(a)",
+      "official_url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+      "read_on": "2026-10-31",
+      "source": "svalbard-decision",
+      "raw_sha256": "26542e109049499820b9ab8f0ce3cf0fae17d052ee1e2078cdd1d70c54901a19",
+      "reader_sha256": "328000c5cfa3f7dbedfb45b55f74b6967600b5ce559af3067760ada761f0a92b",
+      "proofs": [
+        {
+          "reader_line": 95,
+          "exact_original_language_quote": "Låg sats: 8 pst."
+        },
+        {
+          "reader_line": 96,
+          "exact_original_language_quote": "Høg sats: 22 pst."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-040",
+      "section": "Two worked examples that recompute",
+      "rule": "Middle-classsalaryinsurance7.6% current2026; exampleadultnotlowclass",
+      "act_article": "2026contributiondecision§7; InsuranceAct23-3",
+      "official_url": "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+      "read_on": "2026-10-31",
+      "source": "insurance-decision",
+      "raw_sha256": "b1445240dcfb22416e5439ea4e85e39747a5a7d894622223bc90120df74ef89b",
+      "reader_sha256": "0efd64100847683c07561b75fc8ea6ee29a796f8e85deb0efd3328b6ab463275",
+      "proofs": [
+        {
+          "reader_line": 214,
+          "exact_original_language_quote": "Av lønnsinntekt og annen personinntekt som nevnt i folketrygdloven § 23-3 annet ledd nr. 2, beregnes trygdeavgift med 7,6 pst."
+        }
+      ]
+    },
+    {
+      "id": "SJ-PROJ-041",
+      "section": "Two worked examples that recompute",
+      "rule": "Insurance salarymiddleclass versus age/pensionlowerclass; comparatorassumesadultmiddleclass",
+      "act_article": "InsuranceAct§23-3(2)1(c),2(a)",
+      "official_url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+      "read_on": "2026-10-31",
+      "source": "insurance-law",
+      "raw_sha256": "bfecdc7c653868da9925b06a979fdbc36744087afcbc7b134d1ada13629f1bc8",
+      "reader_sha256": "2673f9f6c590a041e2be85e377bfe31f5f624af08acf0dacf392d6bf1bf2a9ac",
+      "proofs": [
+        {
+          "reader_line": 710,
+          "exact_original_language_quote": "c.personinntekt for personer under 17 år eller over 69 år."
+        },
+        {
+          "reader_line": 712,
+          "exact_original_language_quote": "a.lønn og annen godtgjørelse som nevnt i skatteloven § 12-2 bokstav a,"
+        }
+      ]
+    }
+  ]
+}

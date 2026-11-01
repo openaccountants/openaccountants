@@ -1,0 +1,13 @@
+changed-only mode: validating 13 changed guide file(s)
+checked 12 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: 1 guides fail check (k) read_date_evidence
+WARN: skills/faroe-islands/fo-estate-income-tax.md: (k) read_date_evidence: 8 source rows all dated 2026-10-31, most not saying what was read
+WARN: skills/faroe-islands/fo-country-by-country-reporting.md: FO TP also holds fo-transfer-pricing, with a different job
+WARN: skills/faroe-islands/fo-estate-income-tax.md: FO IT-IND also holds fo-individual-income-tax, with a different job
+WARN: skills/faroe-islands/fo-inheritance-duty.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/faroe-islands/fo-payroll-levy.md: FO PR also holds fo-payroll-contributions, with a different job
+WARN: skills/faroe-islands/fo-property-transfer-registration.md: no tax domain in the slug, so its country cell was not checked
+WARN: skills/faroe-islands/fo-transfer-pricing.md: FO TP also holds fo-country-by-country-reporting, with a different job
+
+validation passed (8 warning group(s))

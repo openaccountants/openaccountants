@@ -1,0 +1,312 @@
+{
+  "baseline_commit": "a691ffba790bfec850c5b18f01d8c4e342c05ae9",
+  "date": "2026-10-31",
+  "scope": "Frozen writer candidate before fresh review; this manifest excludes itself.",
+  "inputs": [
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/OLD-TOPIC-DESTINATIONS.md",
+      "bytes": 192634,
+      "sha256": "aefef4b8567d2a1c2afc19a056f91652e7b559630434837e1a87c4e7f9cc9452"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/README-before-property-wealth.md",
+      "bytes": 4738,
+      "sha256": "4ac372c90f801cd94df12dc6ca0695a8f1755e7b8bc0bddb2c5a68988a03c204"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/REVIEW-REQUEST.md",
+      "bytes": 2932,
+      "sha256": "a237b8370dd8c9eaa84296c77543048f5efffbfbda1bfb1484e848b4123563cd"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/WRITER-CHOICES.json",
+      "bytes": 967,
+      "sha256": "c6b3110fd239eafa3cd3f5aae542146a3084aac9e9d2f37f784f1491c2593ebf"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/audit-candidate.py",
+      "bytes": 4211,
+      "sha256": "f084dc452e0bf4445a4cb403cbe5a04ed98226930e19c4d27a767b12433a7b74"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/build-evidence.py",
+      "bytes": 20412,
+      "sha256": "2b9b93700359685bc5043d43f5b22073470dd9b491c755008241c37c5540cb17"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/completion-scope-before-property-wealth.json",
+      "bytes": 6665,
+      "sha256": "0af1dcee42fa4ded116669db28a70c515a044fc763589152ab314ed9b4baa5b2"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/example-checks.txt",
+      "bytes": 60,
+      "sha256": "a845ae233929f19cf57a4d0f4abb5a8453cf7d28144736918836bdf1a6a764c8"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/guide-checks.txt",
+      "bytes": 732,
+      "sha256": "2d2b0727cf7bb9227db94d569a250d52bc78095e601adbe3b2eedb7d9ff9100b"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/old-topic-destinations.json",
+      "bytes": 1107218,
+      "sha256": "9599cc0a01a21b5e123627ee1147355bc78725ec92e0bb4c28524017720ed1cc"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/predecessor-guide-manifest.json",
+      "bytes": 1805,
+      "sha256": "c3f47904a1a323698c588cd9631aff827e51cce6ac60a2910135859ee5e9e36d"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/source-manifest.json",
+      "bytes": 12915,
+      "sha256": "1d7f89eae5572a58b6b277031dda3783f97eaedfa5ca18e53c3a9a90bac676a9"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/age-efiling-procedural-excerpt.json",
+      "bytes": 588,
+      "sha256": "be57f5cd59cc590534ac0de928c7774cf7d10bb537863c69f67665e3f7079e04"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/ctif-access-procedural-excerpts.json",
+      "bytes": 849,
+      "sha256": "e9cfcf9a3ce1882a9e6fecb100c5aa3e24cc862a5ca3d0d0a54515e91596a784"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-current-order-20261031.json",
+      "bytes": 2659,
+      "sha256": "3bc10454a8e6723b9f979b025aa5b6267f2220dc242d72f16064f2b7d0f0336b"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031-units.json",
+      "bytes": 78562,
+      "sha256": "ebfce7c9e52d04991cbfa2547d210dc8763a2fe8f58325aaa9605fcc0c5c0118"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031.docx",
+      "bytes": 45419,
+      "sha256": "6ac0bdff632ec773b69b7007d2ade335ed84ad5aca084aae1a2041cfccc1f8c5"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-form-20261031.txt",
+      "bytes": 23156,
+      "sha256": "0267178c56d83efbd4a4ebedb31aadaac024bf003017e93e45860e14c970c7fe"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031-units.json",
+      "bytes": 14670,
+      "sha256": "adf8460a78a2f1536da878db5a7f5197082c64c80593ce34082539a250ce2d1e"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031.docx",
+      "bytes": 27434,
+      "sha256": "a6972994d7b53d1298791ca75ebded3662ca1d08c4615ac5f0bc60ae15314f40"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-bij17-instructions-20261031.txt",
+      "bytes": 13891,
+      "sha256": "fb4bf77d05bf0eb5cbea4f98b63f996a087b4f56b86408d5031233a37606c75d"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-boscana-rates2026.pdf",
+      "bytes": 185059,
+      "sha256": "752ab7f12d7ecb8cf037622e953558ef3a3e7d821174654e2494d463510dca3f"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-boscana-rates2026.txt",
+      "bytes": 8914,
+      "sha256": "63a3b6cb0e8939edca778b6168ae12b66cb646ad4a7af7f52758b86d9e46cecf"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-law1056-current-20261031.json",
+      "bytes": 18466,
+      "sha256": "4f324dc19de8520d8042b07b9e72492f6cda8e0e89209a60a4e40815571a3fe0"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-mpay-procedural-excerpts.json",
+      "bytes": 761,
+      "sha256": "7077a282d365db8c40aed04af920c0ac2d591e5f50b0f3353846781fd712c835"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031-units.json",
+      "bytes": 8212,
+      "sha256": "a568298e479f6d0e080cc3c4a43ee83030bbdf584414bb0db67a9eae42b47f5f"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.doc",
+      "bytes": 58368,
+      "sha256": "4b31e2720e55a20ab50aad80fff4746a51383aef378e88050fff44e1913913a3"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.docx",
+      "bytes": 10099,
+      "sha256": "f8223baf77ac073bbd27db0392c217aec4b156906ce7c692fb9b162aeb494eb1"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex1-20261031.txt",
+      "bytes": 3508,
+      "sha256": "bda19efa184b80c77110a174c630456a1c618a4e2cffc6f1586f2924f0fc003a"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031-units.json",
+      "bytes": 6202,
+      "sha256": "a1f98e0c6f58e62c9facbdeb9f2a2839df3ca502002ed8c83fcbb21bcb1b6c09"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.doc",
+      "bytes": 57344,
+      "sha256": "19edcf9bc1969b83f814458702be0498bc0c4271ec3a24f4dd6355f67e575ca0"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.docx",
+      "bytes": 10023,
+      "sha256": "36449953f60d1260a57ee6e3622c11aa54beb3fbb769585c1cec304f15df61fe"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex2-20261031.txt",
+      "bytes": 2806,
+      "sha256": "933ba29357d6d4d005c4d85b9194781205e61599b1776cb5bbadd8a8f87469d2"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031-units.json",
+      "bytes": 8079,
+      "sha256": "dd0c3998069427122cea68d837990b188e7337af5de315b8ebb07bf2820978af"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.doc",
+      "bytes": 57856,
+      "sha256": "b2950e63a8748feb18390fff78feaf19501964690983aeaacecfb2cf63c537c0"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.docx",
+      "bytes": 10051,
+      "sha256": "992e70b678d508d0cadd87f8315f0a116ea017f3dc584240b42c4fcfa5798fed"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex5-20261031.txt",
+      "bytes": 3406,
+      "sha256": "0c2e794edd6d857ca58b155106fd89ff6e61b38832f7c262077b37eed46c7a52"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031-units.json",
+      "bytes": 5986,
+      "sha256": "429aa3372972a0eecb1b8846179dc6b979d1f2359cd9510675d150fe6d704ac9"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.doc",
+      "bytes": 58368,
+      "sha256": "54c4ff5d2fc5c9ef4a246ebe40002d18ca51b5389dc6b80ad4801156e12fb58e"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.docx",
+      "bytes": 10246,
+      "sha256": "85bccab4f29191d58ba05e5e16b8d12d8569b1920aece8787884ec73c9d88650"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-annex6-20261031.txt",
+      "bytes": 2655,
+      "sha256": "6fe39ff73cee8dc4334bf5926ea282cd2ba3a4dba0902b9a64e58aa23c7e4dd5"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-order17-20261031.json",
+      "bytes": 4002,
+      "sha256": "5309620cfcec1f77352c7c0f67e62c9a39ff6ae779da49470a2fefc214ed4004"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-notice-repeal2027-header.txt",
+      "bytes": 2710,
+      "sha256": "58be5cf7f772ac29e4787a842089ee71ba629d489ea97038b192d4fb3c572630"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-current-code-20261031.json",
+      "bytes": 56845,
+      "sha256": "987966d0e2ca167b1e047ca6d8532ba027783542ac0db71c94e735a006639bac"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/property-wealth-extra-code-20261031.json",
+      "bytes": 19615,
+      "sha256": "01706b1d9e667b84bb63860fcb1770fef2b0fbbb449bb7df9e30c007c10bf273"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-mpay-procedural-excerpts.json",
+      "bytes": 713,
+      "sha256": "bd176e27a0c667bf221e9840609d38aa6df37c95c3d5ad3c1e1197c4162e9eb5"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031-units.json",
+      "bytes": 9986,
+      "sha256": "1a0695d18b228f9f2c37b00a794d6680602cc16edb91e5a302c862a28bf0df05"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.doc",
+      "bytes": 69632,
+      "sha256": "acbc39178cd8de465a33d5ce39326b568f5f6399f7dcab6b95d4596b788285d1"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.docx",
+      "bytes": 23115,
+      "sha256": "1f7cd2f43c211c855df9ae8dc598bae29832553dbe99fd998119fbde6d335c18"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-form-20261031.txt",
+      "bytes": 3487,
+      "sha256": "3cdd4cc24cfc9932e0a22bcbfe75f49a6016f282f15ffa6b6e4a5973a53856cc"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-future-repeal-entry.json",
+      "bytes": 436,
+      "sha256": "9772e6ca649a7dfa969fe3e132c8995f1a072ebfa400fe689f7f47a970aedcce"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sources/wealth-notice-order138-20261031.json",
+      "bytes": 1097,
+      "sha256": "77821856c794b279940ff4c7e8743440dbc219896f5a6d7ef39f4715e71c7823"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/sync-check.txt",
+      "bytes": 82,
+      "sha256": "8307f83b8db8b3be60ec4f4c18cbe5a34a9329068b5f5e76671e1929635a80c9"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-audit.json",
+      "bytes": 424002,
+      "sha256": "67ec52343e5784274e0efa883070e5c5f7f83ebacacabdd488866d4c177ee6ab"
+    },
+    {
+      "path": "evidence/ledgers/md-property-tax.md",
+      "bytes": 196277,
+      "sha256": "9456f8288f8bcf5581121c36f0c359616a48e2adb63fbaeef317914bb32d4740"
+    },
+    {
+      "path": "evidence/ledgers/md-property-tax.writer.json",
+      "bytes": 797267,
+      "sha256": "15b9beade41fe33c09e76f753db624f935c2b3fcc6593d04e49a3d7046f5c8fd"
+    },
+    {
+      "path": "evidence/ledgers/md-wealth-tax.md",
+      "bytes": 26930,
+      "sha256": "7f3d1896b94606bb656823f57948749fb1ca4eeea652fe946b151009730c4aea"
+    },
+    {
+      "path": "evidence/ledgers/md-wealth-tax.writer.json",
+      "bytes": 103935,
+      "sha256": "a16bdd5c2b90d4a098db9eaa1f450bbd1239ef56b49732113a9d8e0547b6b95b"
+    },
+    {
+      "path": "skills/moldova/README.md",
+      "bytes": 5519,
+      "sha256": "7f1aa94f9db626cadbd61b1876cf612beeeb453e55839d9ef6a26bd53e427101"
+    },
+    {
+      "path": "skills/moldova/md-property-tax.md",
+      "bytes": 29965,
+      "sha256": "e40a6944f1ac495785530ff4038ef2dc941d75a775f4467998190c4862b6ddac"
+    },
+    {
+      "path": "skills/moldova/md-wealth-tax.md",
+      "bytes": 13481,
+      "sha256": "f697f718a4f2506ce29ed27bff1e0eeaeb39d6d2811985463b62e2de90044a46"
+    }
+  ]
+}

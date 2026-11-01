@@ -1,13 +1,13 @@
 ---
 name: it-employer-contributions
 description: "Italian employer social contributions on employees and the full cost of an employee, tax year 2026. Covers the employer and employee INPS rates for private industry and commerce, component by component (pension IVS 23.81% and 9.19%, NASpI, CUAF, maternity, sickness, Fondo di garanzia TFR, CIGO, CIGS and the FIS by headcount), the extra 1% above EUR 56,224, the 2026 minimum and maximum bases, apprentices in summary, the INAIL premium (voce, tasso, 1% addizionale, autoliquidazione), TFR accrual and the INPS Fondo di Tesoreria with the 2026 headcount rule, UniEmens and F24, sanzioni civili and the 2026 hiring reliefs. Trigger on: contributi INPS datore di lavoro, costo del lavoro, costo azienda dipendente, aliquote contributive industria commercio, FIS, CIGS, INAIL premio, TFR Fondo Tesoreria. Out of scope, see: italy-payroll (IRPEF withholding, payslip, CU), it-irpef-employees (trattamento integrativo, family detrazioni), it-inps-contributions, it-inps-artigiani-commercianti, it-irap, it-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -268,8 +268,6 @@ expected:
 | INPS, "Certificato di distacco del lavoratore in paesi Ue" | https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.certificato-di-distacco-del-lavoratore-in-paesi-ue.html | 2026-10-23 |
 
 Not yet confirmed: no INPS publication for 2026 prints the full rate set for industry and commerce, so the totals are built from the 2022 and 2024 INPS circulars, the INPS 2010 rate tables (CUAF 0.68% for industry and commerce, sickness 2.44% for commerce impiegati) and the statutes; L. 199/2025 was not read line by line for changes to these smaller contributions. The 0.50% of L. 297/1982 is an increase in the employer's FPLD pension rate (art. 3, and INPS Circolare 55/2026 para. 5 calls it the employer's "contributo aggiuntivo IVS"), so it sits inside the 23.81%; no INPS table prints that split. The INAIL rate a given firm pays (its tasso applicato after oscillation and prevention cuts) and any general INAIL premium cut for 2026 were not read; the examples use the voce 0722 tasso medio. The 2026/2027 INAIL autoliquidazione dates, the decree text of D.L. 62/2026 and Circolare 57/2026 on the Bonus donne (read only from the INPS news item; Circolari 55 and 56/2026 were read) and the 2026 rules for foreign employers registering with INPS were not read.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

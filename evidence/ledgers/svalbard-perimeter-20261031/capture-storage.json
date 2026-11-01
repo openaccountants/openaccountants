@@ -1,0 +1,50 @@
+{
+  "format": "gzip, lossless; decompress before comparing source-receipt raw_sha256",
+  "captures": [
+    {
+      "original_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html",
+      "stored_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz",
+      "raw_sha256": "55c7e2d42cb6f1337aafcfc86290a8cb5d762377b2c7cfa2cdd4ac4102c2177c",
+      "gzip_sha256": "ad5054e08c86d4ca598a256e87c81c8b7acd55748812d574473f51e6417f61ef",
+      "raw_bytes": 3333464,
+      "stored_bytes": 200105,
+      "exact_decompression_verified": true
+    },
+    {
+      "original_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html",
+      "stored_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz",
+      "raw_sha256": "168c0500e66357bdf269ad6d94c88f0f4acd9efa142b968ddb4584976207892a",
+      "gzip_sha256": "ab17e07d4bd554c1eb5730a1700dc343f27f2eeee69b80d157ac36a4197050c0",
+      "raw_bytes": 66152,
+      "stored_bytes": 16083,
+      "exact_decompression_verified": true
+    },
+    {
+      "original_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html",
+      "stored_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz",
+      "raw_sha256": "c9266354771a49241005dcc5fa12032c601d6967fcd61d6a319f7d8e4fc45051",
+      "gzip_sha256": "f60b927a1db433a9e57f2ab5cded62f4fb00fe679d9c3fcaa51ed230cd3d89f9",
+      "raw_bytes": 273184,
+      "stored_bytes": 33157,
+      "exact_decompression_verified": true
+    },
+    {
+      "original_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html",
+      "stored_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz",
+      "raw_sha256": "c9ff977bd8a2f8e1658e5d368355c014a9e0a6c839e636811f1c3ba39fb6a845",
+      "gzip_sha256": "05998170276ee68ac47eaffd56fa9592ab181dbea9fbec54ff814460d2754713",
+      "raw_bytes": 74998,
+      "stored_bytes": 17732,
+      "exact_decompression_verified": true
+    },
+    {
+      "original_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html",
+      "stored_path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz",
+      "raw_sha256": "436f4fa22a2f083c9ac208b8039744f459d993476461c984ebc95e0423590304",
+      "gzip_sha256": "2c9a5eb5df4ec02c8e1f187af2727c936367aad7bec79c5f4c91f5961a1711f1",
+      "raw_bytes": 485609,
+      "stored_bytes": 58385,
+      "exact_decompression_verified": true
+    }
+  ]
+}

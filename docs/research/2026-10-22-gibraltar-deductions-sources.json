@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "locators": "Schedule 3 paragraphs 1\u20134, printed pages 159\u2013163"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf",
+      "sha256": "2dc8ff2febef990795d2fd3606f25016a91ffde75132cc19bfb051f85726ee0c",
+      "locators": "Printed pages 1, 3\u20134",
+      "limitations": "Undated guidance; Gazette publication identity not established"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 ---
 name: it-regime-forfettario
 description: "Italy's regime forfettario (flat-rate regime) for individuals running a business or a profession, tax year 2026, under L. 190/2014 art. 1 commi 54-89. Covers the entry and stay conditions (EUR 85,000 revenue, EUR 20,000 staff costs, the employment-income bar raised to EUR 35,000 for 2025 and 2026, the comma 57 exclusions), the same-year exit above EUR 100,000, the full table of coefficienti di redditivita by ATECO group, the 15% substitute tax and the 5% start-up rate, deduction of INPS contributions, no VAT and the invoice wording, e-invoicing, the EUR 2 stamp duty, the 35% INPS cut for artigiani and commercianti, acconti, Quadro LM, leaving the regime, and penalties. Trigger on: forfettario, forfetario, flat tax partita IVA, imposta sostitutiva 15%, 5% startup, coefficiente di redditivita, Quadro LM, superamento 100.000. Out of scope: regime ordinario (it-income-tax), employees (it-irpef-employees), INPS rates (it-inps-contributions for the gestione separata, it-inps-artigiani-commercianti for artigiani and commercianti), acconti method (it-estimated-tax), VAT returns (italy-vat-return), e-invoice XML (italy-einvoice)."
-version: 0.2
+version: 0.3
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-29
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -294,8 +294,6 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | Law190/2014 art.1(58)(e-bis), (59)–(60), reverse-charge purchases and debtor-operation duties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
 Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) whether the impatriati regime can be combined with the forfettario.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

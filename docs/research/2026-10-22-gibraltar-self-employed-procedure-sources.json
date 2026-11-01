@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf",
+      "locator": "sections3\u20139",
+      "scope": "registration inputs, separate PAYE and licensing"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/SE%20CONTRIBUTION%20SCHEDULE%202627%20%28Fillable%29.pdf",
+      "locator": "one-page 2026/27 schedule",
+      "scope": "annual return date, weekly calendar and reconciliation fields"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Self-Employed%20Guide%20to%20Social%20Insurance%20post%201st%20July%202025.pdf",
+      "locator": "pages4\u20136 and8",
+      "scope": "arithmetic conflicts and payment/assessment procedure"
+    }
+  ],
+  "limits": [
+    "Annual-form date does not establish waiver of quarterly statutory duty.",
+    "Portal not authenticated or used.",
+    "Official intermediate multiplication errors explicitly disclosed."
+  ]
+}

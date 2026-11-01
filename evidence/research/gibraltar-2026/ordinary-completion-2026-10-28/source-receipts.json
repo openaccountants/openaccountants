@@ -1,0 +1,44 @@
+[
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/income-tax-act-20260323.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "bytes": 1849515,
+    "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+    "read_scope": "Freshly downloaded28Oct; actual targeted reads now include ss22,37,40(1)\u2013(4),42\u201343, Schedule4 paragraphs2,4\u20135,7\u201311,8Atargeteddefinitions, complete18(1)\u2013(8)and18A(1)\u2013(10). Not all297pages read."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/income-tax-act-20260323.txt",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "bytes": 716024,
+    "sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+    "read_scope": "pdftotextderived; same targeted reads. Exact quote matching normalizes whitespace and removes repeated PDFheaders/footers; rawPDF/text unchanged."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/rates-tax-rules-20240701.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+    "bytes": 167676,
+    "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+    "read_scope": "Downloaded/converted for upcoming ledger; operative rules not freshly read in this phase. Official parentindexcurrent1July2024observed."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/allowances-rules-20260323.pdf",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+    "bytes": 356091,
+    "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+    "read_scope": "Downloaded/converted for upcoming ledger; operative rules not freshly read in this phase. Official parentindexcurrent23March2026observed."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/uk-gibraltar-treaty-official.html",
+    "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+    "bytes": 244951,
+    "sha256": "d20b012e4327f9c050363ca2885c998fc6a6f8e5f3fb9f838582af04b0d61202",
+    "read_scope": "Actual Articles1,4,22,28,29and effective-date opening for foreign-relief ledger; not all treaty articles newly reverified. HTMLsource saved, derivedtext viaHTMLParser; Crowncopyright2020/OGLv3attribution retained."
+  },
+  {
+    "file": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/work/sources/uk-gibraltar-treaty-official.txt",
+    "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+    "bytes": 69586,
+    "sha256": "843017e0684672a393e282ca0fa193b78d454c7faa7e2c774e07c25321232682",
+    "read_scope": "Actual Articles1,4,22,28,29and effective-date opening for foreign-relief ledger; not all treaty articles newly reverified. HTMLsource saved, derivedtext viaHTMLParser; Crowncopyright2020/OGLv3attribution retained."
+  }
+]

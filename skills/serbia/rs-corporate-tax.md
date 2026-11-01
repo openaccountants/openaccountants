@@ -1,13 +1,13 @@
 ---
 name: rs-corporate-tax
 description: "Serbian corporate income tax (porez na dobit pravnih lica) for tax year 2026 under the Zakon o porezu na dobit pravnih lica (ZPDPL). Covers resident companies and permanent establishments of foreign companies; the flat 15% rate; the tax balance from accounting profit to taxable profit (non-deductible items, expense caps, tax depreciation groups, capital gains); 5-year loss carry-forward; tax consolidation at 75%; thin capitalisation (4:1, 10:1 for banks and leasing) and transfer pricing; the PDP return 180 days after year end and monthly advances by the 15th; penalties and interest; 20% withholding on outbound dividends, interest and royalties (25% for preferential tax jurisdictions on some items) and treaty relief; and the 2026 amendments deferred to 2027, 2028 or EU accession. Trigger on: Serbia corporate tax, porez na dobit, PDP Serbia, DOO tax, Serbian withholding tax. Out of scope: individuals and entrepreneurs (serbia-income-tax), VAT (serbia-vat), payroll (serbia-payroll), social contributions (serbia-social-contributions)."
-version: 0.2
+version: 0.3
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -294,8 +294,6 @@ expected:
 | Pravno-informacioni sistem RS: ELI record of the ZPDPL. The ELI resolves, but the text sits behind a login and could not be read, so no figure here relies on it. | https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2001/25/1/reg | 2026-10-22 |
 
 Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consultation June 2026) has been adopted, and from when it applies; whether the 1 January 2027 repeal of ZPDPL Articles 25a(3) and 30a applies to the 2026 tax balance; the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,0 +1,204 @@
+{
+  "count": 33,
+  "controls": [
+    {
+      "id": "CIT-E1-pool",
+      "result": "90000",
+      "expected": "90000",
+      "reason": "opening200k+additions100k;30%"
+    },
+    {
+      "id": "CIT-E1-tax",
+      "result": "102600",
+      "expected": "102600",
+      "reason": "separate20ksmallitemnotdoubleexpensed"
+    },
+    {
+      "id": "CIT-E2-loss",
+      "result": "40000",
+      "expected": "40000",
+      "reason": "lossreducedbyexemptdividends"
+    },
+    {
+      "id": "CIT-E2-tax",
+      "result": "5400",
+      "expected": "5400",
+      "reason": "capitalprioritythenordinarylossusedonce"
+    },
+    {
+      "id": "TP-E1-charge",
+      "result": "848000",
+      "expected": "848000",
+      "reason": "assumedsupported6%notstatutorysafeharbour"
+    },
+    {
+      "id": "TP-E1-difference",
+      "result": "28000",
+      "expected": "28000",
+      "reason": "reconciliationonly"
+    },
+    {
+      "id": "TP-E2-limit-count",
+      "result": "2",
+      "expected": "2",
+      "reason": "equalitysatisfies2limits;bothyearsrequired"
+    },
+    {
+      "id": "TP-E2-51-limit-count",
+      "result": "1",
+      "expected": "1",
+      "reason": "51employeeswithturnover73mfail"
+    },
+    {
+      "id": "Cb-E1-equal",
+      "result": "True",
+      "expected": "True",
+      "reason": "atleastpriorrevenue"
+    },
+    {
+      "id": "Cb-E1-below",
+      "result": "False",
+      "expected": "False",
+      "reason": "oneDKKbelow"
+    },
+    {
+      "id": "Cb-E2-cash",
+      "result": "14000000",
+      "expected": "14000000",
+      "reason": "qualifyingwithholdingincluded"
+    },
+    {
+      "id": "Cb-E2-accrual",
+      "result": "15000000",
+      "expected": "15000000",
+      "reason": "deferred/uncertainexcluded"
+    },
+    {
+      "id": "C1-goodwill",
+      "result": "10000",
+      "expected": "10000",
+      "reason": "purchaseyearplus9"
+    },
+    {
+      "id": "C1-fixedright",
+      "result": "20000",
+      "expected": "20000",
+      "reason": "specifiedtermexception"
+    },
+    {
+      "id": "C3-currentrecapture",
+      "result": "200000",
+      "expected": "200000",
+      "reason": "unindexedbookdifferencecappedatpastdepreciation"
+    },
+    {
+      "id": "C3-currentindexedgain",
+      "result": "0",
+      "expected": "0",
+      "reason": "indexedlossnotnettedagain"
+    },
+    {
+      "id": "C3-fullcap",
+      "result": "300000",
+      "expected": "300000",
+      "reason": "higherbookdifferencecapped"
+    },
+    {
+      "id": "C3-belowbook",
+      "result": "0",
+      "expected": "0",
+      "reason": "negativegainnotrecapture"
+    },
+    {
+      "id": "C3-publishedrecapture",
+      "result": "400000",
+      "expected": "400000",
+      "reason": "publishedhistoricalfixturemethodonly"
+    },
+    {
+      "id": "C3-publishedindexedrounded",
+      "result": "2583045",
+      "expected": "2583045",
+      "reason": "historicfactorsnot2026inputs"
+    },
+    {
+      "id": "C3-publishedtotal",
+      "result": "1816955",
+      "expected": "1816955",
+      "reason": "separatepublishedgainandrecapture"
+    },
+    {
+      "id": "C2-A-prepool",
+      "result": "130000",
+      "expected": "130000",
+      "reason": "ownpre-groupthenownoldgroup"
+    },
+    {
+      "id": "C2-B-group-loss",
+      "result": "80000",
+      "expected": "80000",
+      "reason": "owncapitalpriority"
+    },
+    {
+      "id": "C2-A-allocation",
+      "result": "52000",
+      "expected": "52000",
+      "reason": "proportional"
+    },
+    {
+      "id": "C2-C-allocation",
+      "result": "28000",
+      "expected": "28000",
+      "reason": "proportional"
+    },
+    {
+      "id": "C2-group-tax",
+      "result": "21600",
+      "expected": "21600",
+      "reason": "group120k"
+    },
+    {
+      "id": "C2-B-compensation",
+      "result": "14400",
+      "expected": "14400",
+      "reason": "parentpaystolossprovider"
+    },
+    {
+      "id": "C2-A-compensation",
+      "result": "9360",
+      "expected": "9360",
+      "reason": "Auserpaystoparent"
+    },
+    {
+      "id": "C2-A-tax",
+      "result": "14040",
+      "expected": "14040",
+      "reason": "parentpaymentforA"
+    },
+    {
+      "id": "C2-C-ownbenefit",
+      "result": "5040",
+      "expected": "5040",
+      "reason": "parentownbenefitnotextracash"
+    },
+    {
+      "id": "C2-C-cash",
+      "result": "12600",
+      "expected": "12600",
+      "reason": "equals70kx18%;Cisparent"
+    },
+    {
+      "id": "TP-thincap-equality",
+      "result": "0",
+      "expected": "0",
+      "reason": "noexcessat4to1"
+    },
+    {
+      "id": "TP-thincap-noinventedfloor",
+      "result": "1000000",
+      "expected": "1000000",
+      "reason": "statutenotenmillionfloor"
+    }
+  ],
+  "limit": "Arithmeticandspecifiedsourcepremises;notproofalltaxlaw.Thestartup2yearconditionisnotreplacedbyDanishanalogy."
+}

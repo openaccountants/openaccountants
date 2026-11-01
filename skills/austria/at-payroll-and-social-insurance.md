@@ -1,13 +1,13 @@
 ---
 name: at-payroll-and-social-insurance
 description: "Use this skill for Austrian payroll in tax year 2026: monthly wage tax (Lohnsteuer), the 13th and 14th salaries at 6% within the Jahressechstel, employee and employer social insurance under the ASVG (18.07% and 20.98% outside Vienna), the EUR 6,930 maximum contribution base, the employer's levies (DB 3.7%, DZ, Kommunalsteuer 3%, MV 1.53%), tax-free supplements under EStG § 68 (EUR 400 a month for dirt, hardship, danger, Sunday, holiday and night work, plus 50% overtime supplements for the first 15 hours up to EUR 170 in 2026), and termination pay (old-system Abfertigung at 6%, BV-Kasse payouts, Kündigungsentschädigung and settlements with a tax-free fifth, Urlaubsersatzleistung). Covers monthly and annual deadlines and penalties. Trigger phrases: Lohnverrechnung, Lohnsteuer, Überstundenzuschlag, SEG-Zulage, Abfertigung, Urlaubsersatzleistung, Austrian payroll. Out of scope: the annual tariff and the employee's L 1 or E 1 return (at-income-tax), self-employed SVS (at-svs-contributions), arriving and leaving (at-cross-border), company tax (at-corporate-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: AT
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -376,8 +376,6 @@ expected:
 | BMF, Lohnsteuerrichtlinien 2002 as amended 18 December 2025, Rz 1087a and 1087c (§ 67(6) and the BV-Kasse), Rz 1121 (social insurance on tax-free supplements), Rz 1145 to 1148 (overtime: divisor 173, supplements under 50%, part-time Mehrarbeit, both pots per employer) | https://findok.bmf.gv.at/findok/iwg/19/19974/19974.26.pdf | 2026-10-23 |
 
 Not yet confirmed: the fine range for late or missing wage-tax payments under the Finanzstrafgesetz, which was not read. The Lohnsteuerrichtlinien edition of 18 December 2025 is the latest on findok; it predates the 2026 overtime rule (15 hours, EUR 170), so only its method points are used and the figures come from § 124b Z 440 lit. c. Whether the DB, DZ and Kommunalsteuer exclusion reaches the part of a voluntary severance above the § 67(6) limits, or a voluntary severance paid to a new-system employee, was not read. The labour-law size of a severance (AngG § 23 months, and whether the monthly base includes a share of the 13th and 14th salary) was not read.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

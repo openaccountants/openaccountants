@@ -2,13 +2,13 @@
 name: tc-national-health-insurance
 description: >
   Turks and Caicos National Health Insurance Plan contribution reference checked for 2026. Covers ordinary employee and employer shares, the monthly minimum, earnings ceilings, allowance treatment, multiple employments and reporting deadlines. Uses the official consolidated National Health Insurance Ordinance and contribution regulations, with worked payroll examples and a distinction between statutory payment timing and the Board’s earlier submission date. Use after employment coverage is established. Keeps national health insurance separate from national insurance. Later amendments, irregular periods, self-employed concessions and benefit eligibility need separate review. This source-cited draft has not received independent accountant attestation.
-version: 0.1
+version: 0.2
 jurisdiction: TC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -55,8 +55,6 @@ The Board's [billing guidance](https://tcinhip.tc/billing/) asks for salary info
 ## Remaining verification
 
 The [1 June 2026 parliamentary discussion](https://www.parliament.gov.tc/hansard/view_hansard?id=2ce31f36-8513-11f1-8f87-32e8d4bf15ba) describes a review of rates and caps, not an enacted replacement. This Guide does not turn that review into a rate change. Later instruments still need checking before merge. Partial periods, self-employed concessions and benefit entitlement are outside the examples. Independent accountant review is pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

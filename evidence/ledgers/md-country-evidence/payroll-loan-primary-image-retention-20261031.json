@@ -1,0 +1,31 @@
+{
+  "status": "ActualprimaryPNGretained31October; original30Octobertranscriptionrecordpreservedunchanged",
+  "retained_on": "2026-10-31",
+  "observed_utc": "2026-10-31T10:01:09.186549+00:00",
+  "official_url": "https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png",
+  "parent_url": "https://www.legis.md/cautare/getResults?doc_id=152473&lang=ro",
+  "path": "ledgers/md-country-evidence/sources/attachments/reg697-loan-formula_543-20261031.png",
+  "sha256": "0ab7d96e78ae4bbef6198e701d2e4ddf5a1786924273cd097488d1cb53833731",
+  "size_bytes": 2602,
+  "dimensions": [
+    294,
+    137
+  ],
+  "format": "image/png; original asset bytes exported unchanged through documentedpageAssets capability from observedparentDOMimage",
+  "capture_method": {
+    "parent_inventory": "3171d07e-fb90-4bca-8d32-75471a512424",
+    "asset_id": "4236d32b66e2b30f",
+    "source_attribution": "Actual imgsrc/resource observed in current rendered parent; directimagepageinventorydidnotexportmainresource",
+    "downloaded_count": 1,
+    "failed_count": 0
+  },
+  "writer_visual_read": "F = S × (Nzl / 365) × ((Rd − Rdc) / 100)",
+  "reviewer_visual_read": "Reviewer independently openedactualofficialimage31October inownIABtab1; matched formula; positive-difference safeguard separately comesfromCode19(d). Seeindependentreviewevidence for finalrecord.",
+  "ledger_rows": [
+    "MD-IND-383",
+    "MD-PR-203"
+  ],
+  "original_transcription_source": "ledgers/md-country-evidence/sources/fiscal-code-article-REG697-LOAN-FORMULA-IMAGE.json",
+  "original_source_record_unchanged": true,
+  "limits": "No arbitrarymaxsymbol inimage; no foreigncurrencyor360daymethod inferred; originalbinary-not-retained observation remains historicallytruefor30October."
+}

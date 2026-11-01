@@ -1,0 +1,280 @@
+{
+  "date": "2026-10-31",
+  "direct_fetches": [
+    {
+      "name": "api-docs",
+      "url": "https://api.lovdata.no/swagger",
+      "accessed_utc": "2026-10-31T21:07:50.036005+00:00",
+      "status": 200,
+      "final_url": "https://api.lovdata.no/swagger",
+      "bytes": 2047,
+      "sha256": "fbc24764d31c15557e7646696a24f857e9f6f939c115dac8cbc1912321a11b25",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/api-docs.raw"
+    },
+    {
+      "name": "api-spec",
+      "url": "https://api.lovdata.no/swagger/api.json",
+      "accessed_utc": "2026-10-31T21:07:50.434786+00:00",
+      "status": 200,
+      "final_url": "https://api.lovdata.no/swagger/api.json",
+      "bytes": 115896,
+      "sha256": "fbcaf3f97d310318c244bf508784abd22754b2011c2f14db238d1cfb14b07cec",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/api-spec.raw"
+    },
+    {
+      "name": "api-list",
+      "url": "https://api.lovdata.no/v1/publicData/list",
+      "accessed_utc": "2026-10-31T21:07:50.841460+00:00",
+      "status": 200,
+      "final_url": "https://api.lovdata.no/v1/publicData/list",
+      "bytes": 1034,
+      "sha256": "609bcb6ecd10e75584cde1a66db3ab17209c712b79ca4152c68a8f64bc55a6aa",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/api-list.raw"
+    },
+    {
+      "name": "nl-20190301-002",
+      "url": "https://lovdata.no/dokument/NL/lov/2019-03-01-2",
+      "accessed_utc": "2026-10-31T21:07:51.143608+00:00",
+      "status": 200,
+      "final_url": "https://lovdata.no/dokument/NL/lov/2019-03-01-2",
+      "bytes": 69075,
+      "sha256": "fade678b7a448a2079b3341f2949a897920a58c7c26d9b2a758643de4f9cf301",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/nl-20190301-002.raw"
+    },
+    {
+      "name": "sf-20210621-2056",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056",
+      "accessed_utc": "2026-10-31T21:07:51.585458+00:00",
+      "status": 200,
+      "final_url": "https://lovdata.no/dokument/SF/forskrift/2021-06-21-2056",
+      "bytes": 122761,
+      "sha256": "e4f023b0a87b8936b0cc94b3ecb69589d71415d10851a52f6ca21a5c249f6aea",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/sf-20210621-2056.raw"
+    },
+    {
+      "name": "sf-19830215-0086",
+      "url": "https://lovdata.no/dokument/SF/forskrift/1983-02-15-86",
+      "accessed_utc": "2026-10-31T21:07:52.042284+00:00",
+      "status": 200,
+      "final_url": "https://lovdata.no/dokument/SF/forskrift/1983-02-15-86",
+      "bytes": 84020,
+      "sha256": "38132b4cdfca742850905a8f7bebba65c16fd6a8355aeffb69c033e55d8660f1",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/sf-19830215-0086.raw"
+    },
+    {
+      "name": "rrh-as",
+      "url": "https://www.brreg.no/reelle-rettighetshavere/reelle-rettighetshavere-i-aksjeselskap/",
+      "accessed_utc": "2026-10-31T21:07:52.479538+00:00",
+      "status": 200,
+      "final_url": "https://www.brreg.no/reelle-rettighetshavere/reelle-rettighetshavere-i-aksjeselskap/",
+      "bytes": 70298,
+      "sha256": "15df127d837927a19337766129691a5b807afc92e9bcf2265b22286bc8e12cb0",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/rrh-as.raw"
+    },
+    {
+      "name": "rrh-altinn",
+      "url": "https://info.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-reelle-rettighetshavere/",
+      "accessed_utc": "2026-10-31T21:07:53.231457+00:00",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "rrh-overview",
+      "url": "https://www.brreg.no/reelle-rettighetshavere/",
+      "accessed_utc": "2026-10-31T21:07:53.529470+00:00",
+      "status": 200,
+      "final_url": "https://www.brreg.no/reelle-rettighetshavere/",
+      "bytes": 75265,
+      "sha256": "6d7fc61443a1c091106fcca7fcc1966a2ccc0b636b279d84d589c2636d48dcb4",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/rrh-overview.raw"
+    },
+    {
+      "name": "nlod",
+      "url": "https://data.norge.no/nlod/en/2.0",
+      "accessed_utc": "2026-10-31T21:07:54.316152+00:00",
+      "status": 200,
+      "final_url": "https://data.norge.no/nlod/en/2.0",
+      "bytes": 59743,
+      "sha256": "8c9abba2b7498f057e3f78bcf4a41d9c7328b12e5bd08ff85b274d18cc0d0862",
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private/nlod.raw"
+    }
+  ],
+  "fresh_direct_quote_comparison": [
+    {
+      "row": "SJ-RRH-001",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-002",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-003",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-004",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-005",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-006",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-007",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-008",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-009",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-010",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-011",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-012",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-013",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-014",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-015",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-016",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-017",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-018",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-019",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-020",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-021",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-022",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-023",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-024",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-025",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-026",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-027",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-028",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-029",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-030",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-031",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-032",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-033",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-034",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-035",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-036",
+      "fresh_direct_status": "Altinn HTTP403; web source opened and retained complete context read"
+    },
+    {
+      "row": "SJ-RRH-037",
+      "fresh_direct_status": "Altinn HTTP403; web source opened and retained complete context read"
+    },
+    {
+      "row": "SJ-RRH-038",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-039",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    },
+    {
+      "row": "SJ-RRH-040",
+      "fresh_direct_status": "Altinn HTTP403; web source opened and retained complete context read"
+    },
+    {
+      "row": "SJ-RRH-041",
+      "fresh_quote_matches_whitespace_and_presentation_normalized": true
+    }
+  ],
+  "web_access": [
+    {
+      "url": "https://info.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-reelle-rettighetshavere/",
+      "result": "Opened successfully through web tool, complete public instructions read; direct fetch independently returned HTTP403. No authenticated screens inspected."
+    },
+    {
+      "url": "https://api.lovdata.no/swagger",
+      "result": "Web tool returned HTTP405; ordinary direct request returned HTTP200 and API specification fetched successfully."
+    }
+  ],
+  "normalization": "Fresh law HTML renders letter/footnote counters and paragraph sharing controls absent from dataset XML. Quote comparison removes only these presentation counters/controls and whitespace. All 35 normative bindings and three directly fetched procedural bindings match. Three Altinn bindings verified through successful web access plus the retained complete public page.",
+  "full_new_captures": "Private outside Git in /Users/michaelcutajar/Documents/ChatGPT/OA/output/svalbard-finish-2026-10-31/independent-beneficial-owners-private",
+  "access_blocks_bypassed": false
+}

@@ -1,10 +1,10 @@
 ---
 name: pt-income-tax
 description: "Portuguese personal income tax (IRS) for tax year 2026 on self-employed income (Category B, recibos verdes) of a resident individual. Covers the 2026 IRS bands of CIRS art. 68 (Lei 73-A/2025), the solidarity surcharge, the simplified regime coefficients of art. 31 (0.75, 0.35, 0.15, 0.95, 0.10, 1), the 10% social security rule and the 15% expenses rule, the first-year coefficient cut, organised accounts and the EUR 200,000 limit, client withholding (23%, 16.5%, 11.5%) and the waiver below EUR 15,000, payments on account, IRS Jovem on the 2026 IAS (EUR 537.13, cap EUR 29,542.15), the Modelo 3 with Anexo B, fines and interest. Trigger on: 'IRS trabalhador independente', 'recibos verdes', 'Anexo B', 'regime simplificado', 'coeficiente 0,75', 'IRS Jovem 2026', 'freelancer tax Portugal'. Out of scope: employees, pensions, rent and investment income (pt-irs-employees-investment), crypto (portugal-crypto-tax), social security (pt-social-contributions), NHR and IFICI (pt-nhr-ifici), non-residents (pt-cross-border)."
-version: 2.2
+version: 2.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 source_checked: 2026-10-16
@@ -253,8 +253,6 @@ expected:
 | Segurança Social, Guia Prático, Novo Regime dos Trabalhadores Independentes (IAS 2026 EUR 537.13, 21.4%, 25.2%, 70%/20%, ceiling EUR 6,445.56, payment 10th to 20th) | https://www.seg-social.pt/ptss/pssd/documento/cmc1xyfxz00dekl2ynxz676sw | 2026-10-23 |
 
 Not yet confirmed: which activity codes of Portaria 1011/2001 fall in the art. 151 table (the table was not read); which simplified-regime coefficient applies to code 1519 (an earlier version said 0.75 as AT's position; the AT ruling read covers withholding only); that AT applies the IRS Jovem art. 22(4) rule as average rate on total income x non-exempt income, as this skill does, and that for Category B in the simplified regime the exempt share and the cap apply to income after the coefficient, as this skill does (no AT guidance read); the EBF art. 58 relief for authors' income, not read for 2026 and not used here; CIRS art. 68(2) still names EUR 8,059 (the 2025 first band limit), and this skill applies the method with the 2026 band limits.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

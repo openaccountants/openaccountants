@@ -1,13 +1,13 @@
 ---
 name: ag-social-security
 description: Calculate ordinary employee and employer social-security contributions using the statutory rate schedule, earnings ceiling and monthly remittance rule.
-version: 0.1
+version: 0.2
 jurisdiction: AG
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -50,8 +50,6 @@ Regulation 9 requires the employee deductions, employer portion and monthly remi
 ## Review output
 
 Retain the calculation, source versions and factual classification. A qualified local reviewer must check current amendments and the actual case before anyone files, pays or relies on the result. No professional attestation is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

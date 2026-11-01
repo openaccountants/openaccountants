@@ -1,0 +1,62 @@
+[
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-writer-report.md",
+    "bytes": 5151,
+    "sha256": "99f0399d58aa7b7be5250109bbf3384f8dd2f54c8cdab943e7488a006d791a40"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-options.md",
+    "bytes": 2713,
+    "sha256": "6bb883af4e8aa844191dae8b7165d622965c69dd4eafc775bb6be3041d626ca8"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-validation.json",
+    "bytes": 908,
+    "sha256": "c78b39c8b9a78994b3c8ca1ed83a77c3e22ce412ed29c517b15c85ffa0a6103f"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-exact-replacements.json",
+    "bytes": 15012,
+    "sha256": "7dd2a16ca34cbd6626d7c76f10729ebe78d6468a6c31901cab3879fbe24e937a"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-source-read-ledger.json",
+    "bytes": 36868,
+    "sha256": "e70b9413d9f8883d3fe0de2aa9ad691ecedab915c48a1e0f7c0c2aaba0ef36fa"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-critical-read-scopes.json",
+    "bytes": 1254,
+    "sha256": "d28dac5993b075ad66f56addf8659dbbbaa5a06734bc8b5f63ae0ecb5d37421e"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-example-result.txt",
+    "bytes": 59,
+    "sha256": "00b5c32dfc81ffb0980acdde9085aaf12eae535feba237e5c6b8c87c17b05f5c"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/fo-payroll-formation-supplementary-controls.md",
+    "bytes": 4977,
+    "sha256": "d181dba892a7277b452c73f0a62944c2572ac0043c4c63d09f683652ee02fd4f"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/fo-payroll-contributions.md",
+    "bytes": 90229,
+    "sha256": "304bda8262f840d4d1afb8160d2b0b248557bb3dc24f76f147b2662d2ba7a148"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/fo-company-registration-reporting.md",
+    "bytes": 66559,
+    "sha256": "e70aea2bb0e9e53a784666dc0b1d3bf64ba48af0e563f700674375d3cebbbfdc"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/fo-payroll-contributions.candidate.txt",
+    "bytes": 39644,
+    "sha256": "966f2af989d24fb363086d49b5c5040751b0673190db597ddbcb0f00d5091383"
+  },
+  {
+    "path": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/fo-company-registration-reporting.candidate.txt",
+    "bytes": 21704,
+    "sha256": "b6812fa88d586c353c8ca7fdfaed60591519226949223f0b12db55630009c72e"
+  }
+]

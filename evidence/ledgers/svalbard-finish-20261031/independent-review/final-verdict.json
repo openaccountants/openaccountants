@@ -1,0 +1,27 @@
+{
+  "verdict": "pass_for_staged_delta_with_explicit_limits",
+  "candidate_commit": "fd14c72daabc5b0509c81aeb7d5cb8be7041417a",
+  "closed_findings": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "new_findings": [],
+  "legal_rows_checked": 47,
+  "examples_recomputed": 4,
+  "country_complete": false,
+  "full_country_goal_achieved": false,
+  "filing_ready": false,
+  "accountant_attestation": false,
+  "guide_sha256": {
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": "d30213477809875245d0fc31743bd026396369df510bce840eef1a7746c4c8d7",
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": "2a548f1eb056eef5d04e1a18e1b3f968c2a85ce124ca16ac0e922db927d2df48"
+  },
+  "scope": "Independent review of two new levy Guides and initial README delta; final notice-only closure does not expand substantive coverage.",
+  "supersedes_verdicts": [
+    "initial-verdict.json",
+    "repair-verdict.json",
+    "notice-supplement-verdict.json"
+  ],
+  "review_date": "2026-10-31"
+}

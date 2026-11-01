@@ -1,0 +1,74 @@
+{
+  "reviewer": "fresh independent AI reviewer /root/svalbard_completion_review",
+  "reviewed_utc": "2026-10-31T19:51:39.107035+00:00",
+  "candidate_commit": "1cb2c0f59aa4fd2e31975cf307614acd86617c48",
+  "candidate_files": {
+    "skills/svalbard/README.md": {
+      "expected": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d",
+      "actual": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-company-income-tax.md": {
+      "expected": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+      "actual": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-income-tax.md": {
+      "expected": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+      "actual": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-payroll-tax.md": {
+      "expected": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+      "actual": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-social-contributions.md": {
+      "expected": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+      "actual": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-tax-residence.md": {
+      "expected": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+      "actual": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-transfer-pricing.md": {
+      "expected": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+      "actual": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": {
+      "expected": "7bdb7d495bdbce455c57250def7ff907af647d8e40774fc633f0b7a88fa57991",
+      "actual": "7bdb7d495bdbce455c57250def7ff907af647d8e40774fc633f0b7a88fa57991",
+      "match": true
+    },
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": {
+      "expected": "05c09a602f2fb2d8ed37c8eb534f245fbc343baf45ade42ed30448d2ac6b1eef",
+      "actual": "05c09a602f2fb2d8ed37c8eb534f245fbc343baf45ade42ed30448d2ac6b1eef",
+      "match": true
+    },
+    "evidence/ledgers/sj-svalbard-visitor-environmental-levy.md": {
+      "expected": "6260e3121c18fd72957dbcb7bd82edbbf71ad52728ad9635fa64001c73517ccc",
+      "actual": "6260e3121c18fd72957dbcb7bd82edbbf71ad52728ad9635fa64001c73517ccc",
+      "match": true
+    },
+    "evidence/ledgers/sj-svalbard-coal-export-duty.md": {
+      "expected": "bab747543329fea3fc88996380231c8f89a5d7336ff0ce98464ede1391707167",
+      "actual": "bab747543329fea3fc88996380231c8f89a5d7336ff0ce98464ede1391707167",
+      "match": true
+    }
+  },
+  "writer_evidence": {
+    "evidence/ledgers/svalbard-finish-20261031/candidate-manifest.json": "63240c325dd1ef73a38aad83dc5081973a1fdf5f36f0928220498b578d873967",
+    "evidence/ledgers/svalbard-finish-20261031/preservation.json": "8a5370ec865c6ec89c82adda20966be4946eb6c89b841dbb25c7d37ea1950cff",
+    "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-coal-export-duty.json": "41604494ed8ecf2658c1d7b97c9621aae9b66c34614b5b5810cf1f6f9a456d02",
+    "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-visitor-environmental-levy.json": "c95b46c5e6278783cb4b05dadf90283d0a393db9168b2758dd52a5e50c6afbfa",
+    "evidence/ledgers/svalbard-finish-20261031/source-receipts.json": "e1a726dbb10b2b0acee2439c0166f594d9f3d7f3ffd28e6a0909a167874f57b8"
+  },
+  "review_inputs": {
+    "CLAUDE.md": "26bdad0beb0ce9bc183b8e53ea7ca59fd513157765be3f249e3778adc0b6dbe7",
+    "docs/skill-template.md": "6f9ad86f6be962808a7fb715c02152e85a8e00aceec0aa77ab6b8d717aaec019",
+    "docs/OWNERS.md": "8d4d02dfddbeb44874392f83f82cda82e677d37905caf0e68327635dd4329f27"
+  }
+}

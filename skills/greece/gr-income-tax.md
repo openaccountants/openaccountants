@@ -1,10 +1,10 @@
 ---
 name: gr-income-tax
 description: "Greek personal income tax for tax year 2026 (calendar year, return filed in 2027) for all individuals: employees, pensioners, the self-employed and landlords. Covers the 2026 scale of ν. 5246/2025 (9% to 44%), the lower rates for parents and for under-30s, the tax reduction for salaries and pensions (EUR 777 upwards, by number of children), the minimum deemed income of the self-employed (arts. 28A to 28Γ, from ν. 5073/2023), the 2026 rental scale (15% to 45%), dividends 5%, interest 15%, royalties 20%, the 30% card-spending requirement, the abolished solidarity contribution, the E1 return in myAADE, eight instalments, the early-filing discount and the 55% prepayment. Trigger phrases: Greek income tax, φορολογική δήλωση, E1, how much tax in Greece, salary tax Greece, freelancer tax Greece, τεκμήρια, rental income Greece. Out of scope: moving in or out and non-residents (gr-cross-border), EFKA contributions (gr-efka for the self-employed, gr-employee-contributions for employees), company tax (gr-corporate-income-tax), VAT (gr-vat-return)."
-version: 2.4
+version: 2.5
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -253,8 +253,6 @@ expected:
 | Ministry of Labour, announcement of the new minimum wage in force from 1 April 2026 | https://ypergasias.gov.gr/se-ischy-apo-simera-o-neos-katotatos-misthos-ofelei-15-ekatommyrio-polites/ | 2026-10-23 |
 
 Not yet confirmed: how AADE annualises the EUR 920 monthly minimum wage for the 2026 art. 28A minimum (the law says "annual amount of the gross minimum wage"; if 14 monthly payments are used, the base is EUR 12,880, but we did not read that figure or the multiplier on an official page); any amendment to the Income Tax Code made during 2026 after ν. 5264/2025, other than the ν. 5301/2026 change to art. 28Γ that AADE circular Ε.2035/2026 describes; the full text of ν. 5301/2026 (only its art. 41, as AADE circular Ε.2035/2026 describes it, was read); the percentage of the late-payment interest rate under ΚΦΔ art. 52 (set by ministerial decision); how the "analogous application" of the art. 15(6) electronic spending rule in art. 40(4) works for rental income; the 2026 E1 form and instructions, which AADE has not yet published.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

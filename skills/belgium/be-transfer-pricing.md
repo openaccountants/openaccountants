@@ -1,13 +1,13 @@
 ---
 name: be-transfer-pricing
 description: "Belgian transfer pricing (verrekenprijzen / prix de transfert) for income year 2026 (assessment year 2027): Belgian companies and Belgian establishments of foreign companies that deal with associated enterprises abroad. Covers the arm's length rule in art. 185, § 2 WIB 92 (upward and downward adjustments), abnormal or gratuitous advantages (art. 26, 79 and 206/3), the BEPS 13 documentation duties in art. 321/1 to 321/7 (master file 275 MF, local file 275 LF, country-by-country report 275 CBC, notification 275 CBC NOT), the EUR 50m / EUR 1bn / 100 FTE and EUR 1m thresholds, the EUR 750m CbC threshold, the art. 445, § 3 fine scale, rulings and APAs, MAP, the EU Arbitration Convention and the law of 2 May 2019. Trigger on: verrekenprijzen, prix de transfert, arm's length Belgium, 185 § 2, abnormaal voordeel, avantage anormal, groepsdossier, lokaal dossier, landenrapport, 275 LF, 275 MF, 275 CBC, BEPS 13, Ruling Commission, DVB, SDA, APA Belgium. Out of scope: be-corporate-tax (rates, base, filing), be-cross-border, belgium-payroll."
-version: 0.1
+version: 0.2
 jurisdiction: BE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -219,8 +219,6 @@ A positive `revenue_over_threshold` means the revenue criterion is exceeded; a p
 | FOD Financiën, transfer pricing pages (financien.belgium.be) | https://financien.belgium.be/nl/experten-partners/verrekenprijzen | Not read: the site returned a bot-protection page on 2026-10-22; no figure relies on it |
 
 Not yet confirmed: the AY 2027 corporate return deadline (and so the 2026 local file deadline), not published on 22 October 2026; whether the administration still expects a ruling before it grants a downward adjustment under art. 185, § 2, b (the statute does not require one; the official TP page could not be read); the current upload channel for 275 LF (circular 2017/C/56 named e-mail, the 2020 FAQ says all BEPS 13 forms were brought onto MyMinfin; the FOD Financiën page that would confirm the 2026 channel could not be read).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
