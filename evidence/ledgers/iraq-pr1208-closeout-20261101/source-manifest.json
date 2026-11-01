@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%AF%D8%AE%D9%84/",
+    "file": "official-00.html",
+    "bytes": 216589,
+    "sha256": "87eb6151d8a01eadc222100936c4a4d7b51ca37c242c0a22759e08079ad9a62a",
+    "content_type": "text/html; charset=UTF-8",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Downloaded/converted only or prior notes; not used as cleared evidence by this closeout",
+    "relied_on_in_new_guides": false,
+    "read_date": null
+  },
+  {
+    "url": "https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/",
+    "file": "official-01.html",
+    "bytes": 134150,
+    "sha256": "1b2ae6efa412722df338af6f9e06eb1935eb1474407d69af28ddc43c9423b1d1",
+    "content_type": "text/html; charset=UTF-8",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Mainpropertyguide:rentformula/paymentstepswithneighboringtransfer/land/usechangeprocedures",
+    "relied_on_in_new_guides": true,
+    "read_date": "2026-11-01"
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Hiba/%D8%A7%D9%84%D8%B3%D9%85%D8%A7%D8%AD%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9%20%D9%88%D9%85%D9%82%D9%8A%D8%A7%D8%B3%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9.pdf",
+    "file": "official-02.pdf",
+    "bytes": 166817,
+    "sha256": "800b1810bd89ea009055f56d4c3437b73773afb8d180f3720125e4e73170b8e7",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Downloaded/converted only or prior notes; not used as cleared evidence by this closeout",
+    "relied_on_in_new_guides": false,
+    "read_date": null
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Najwan/%D8%AF%D9%84%D9%8A%D9%84%20%D9%85%D9%84%D8%A6%20%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA.pdf",
+    "file": "official-03.pdf",
+    "bytes": 619943,
+    "sha256": "b331a1a4f67735d7d0bdc83add17cdf6569ecc638fc4d8c3ca0f83d26554deff",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Downloaded/converted only or prior notes; not used as cleared evidence by this closeout",
+    "relied_on_in_new_guides": false,
+    "read_date": null
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Najwan/law/%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA%20%D9%81%D8%B1%D8%B6%20%D9%88%20%D8%AC%D8%A8%D8%A7%D9%8A%D8%A9%20%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA%20-%20Copy%202.pdf",
+    "file": "official-04.pdf",
+    "bytes": 238897,
+    "sha256": "f3c377be0e813abb90e4e51cf525b9a6ec309435f7d9305afd5536ecb26b6ccf",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "All3pagesvisuallyreadart1–5",
+    "relied_on_in_new_guides": true,
+    "read_date": "2026-11-01"
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf",
+    "file": "official-05.pdf",
+    "bytes": 416453,
+    "sha256": "e88b2576aa6a19d24330f39dbe0758fe74528e5e7ae2e754f12eb207ab9bda14",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Textclausesreadwithneighbors;PDF5,6,13,14,16,17,18,19,20,21,25,26,33,34visuallyread;notall41pagesandnotlateramendmentchain",
+    "relied_on_in_new_guides": true,
+    "read_date": "2026-11-01"
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Najwan/ta3ameem/%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D9%84%D8%B1%D8%A8%D8%AD%D9%8A%D8%A9.pdf",
+    "file": "official-06.pdf",
+    "bytes": 174475,
+    "sha256": "152ad01a9d06f0f9b65cce81935f0b07c8e3d3cf67558f50f11a5ff7f4d24468",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "Downloaded/converted only or prior notes; not used as cleared evidence by this closeout",
+    "relied_on_in_new_guides": false,
+    "read_date": null
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/Najwan/thwabit/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1.pdf",
+    "file": "official-07.pdf",
+    "bytes": 142822,
+    "sha256": "5d6d65a10651329c4bc18d59b6597339006423dcbabad6e218b08eedd9d8da7b",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "PDF3–6notes1–12visuallyread; cover/recipientpagesnotreliedon",
+    "relied_on_in_new_guides": true,
+    "read_date": "2026-11-01"
+  },
+  {
+    "url": "https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf",
+    "file": "official-08.pdf",
+    "bytes": 152008,
+    "sha256": "44e775b3ccb9ed6c535b74cfda8eb469c2309675146b85286cd888c066fcf857",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "All3pagesvisuallyread;brokenPDFtextlayernotused",
+    "relied_on_in_new_guides": true,
+    "read_date": "2026-11-01"
+  },
+  {
+    "url": "https://tax.mof.gov.iq/wp-content/uploads/2026/05/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7-%D8%A7%D9%84%D8%B3%D9%86%D9%88%D9%8A%D9%87-%D9%84%D8%A7%D8%B1%D8%A8%D8%A7%D8%AD-%D8%A7%D9%84%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D9%87-%D9%84%D9%84%D8%B3%D9%86%D9%87-%D9%A2%D9%A0%D9%A2%D9%A6-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D8%B1%D9%8A%D9%87.pdf",
+    "file": "official-09.pdf",
+    "bytes": 2430103,
+    "sha256": "53e69a4c8e558261d0b951f7127d2a4984729c41da8a8427071a8fffb562cea6",
+    "content_type": "application/pdf",
+    "status": 200,
+    "read": false,
+    "actual_read_scope": "GeneralprinciplesPDF3–6textreadonly,notfulldocument;operativeguideapplicationheld",
+    "relied_on_in_new_guides": false,
+    "read_date": "2026-11-01"
+  }
+]

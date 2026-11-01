@@ -1,0 +1,90 @@
+{
+  "base": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+  "original_pr_head": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+  "files": {
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/README.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/README.md",
+      "blob": "6a950eeac5da50a6a9fd6a81ecc854447706eeb9",
+      "sha256": "dd5652102af9711293c34731c743504a39202859d7a341d362472de8d74d41dd"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/README.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/README.md",
+      "blob": "c3b65e6e055007f8e49eafb27f7cd9c575f6a25c",
+      "sha256": "92af423d6deac2d6e5a9fb13e60680dcd5243f982407161c583a1ec179f108b4"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-corporate-income-tax.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iq-corporate-income-tax.md",
+      "blob": "c0465fbea794ecef20856991b052f64f424a76ec",
+      "sha256": "197ed658772676530f1ecd41dbea8e5cc574447d9f04f6572acb9c21af71bd40"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-corporate-income-tax.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iq-corporate-income-tax.md",
+      "blob": "2c50ece64fce388c412678fadc449c61fa74e67b",
+      "sha256": "b6e7b707d9865917d290d9983f3005668fa9e754d17595fc1293f86f1cd09355"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-income-tax.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iq-income-tax.md",
+      "blob": "32a74eee75e4bb5c7f3eb2351707b1731110cfcd",
+      "sha256": "c84c896d0e36cf54e9b23340d7337bb260a14987ab02063ea22099049e3811b7"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-income-tax.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iq-income-tax.md",
+      "blob": "ee54f8274fc70c0fed1ee0f3f1356e081fc6f5cf",
+      "sha256": "98ae819fdd51c68812dbf8407f2dd23bd961856726d46b54eabaae491c34b75b"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-payroll-social.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iq-payroll-social.md",
+      "blob": "a08433c30857ebcfb0fb51ba5c83d0b65691ec50",
+      "sha256": "02dc8a8fe32849f645b92ef8fbd84b6c46f3b915ca4e58165286879a8480b47b"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-payroll-social.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iq-payroll-social.md",
+      "blob": "6f8fdf781670f4495d805cf94c232e5648d0c35e",
+      "sha256": "ac93d410908bbefa127471ac99104af762c1185044c69a933b168fd497b9b8ca"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-tax-overview.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iq-tax-overview.md",
+      "blob": "977d9f8b7f12e4f76f670c84a036120c66da5fda",
+      "sha256": "a1bc739fffb07e0e1cbb8ff8444bd54ff3b4075897c728bb7ea454aa43390db4"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-tax-overview.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iq-tax-overview.md",
+      "blob": "7aec8ba0ed9d507959a6a829b6fddef3943ab108",
+      "sha256": "4534efb7bc427b19c240daa644c82640f5e153f746ea8b42f85f47f8d52755a9"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iq-vat-gst.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iq-vat-gst.md",
+      "blob": "c66feea84dd5533bb2ca776131dfb31ef90e38b1",
+      "sha256": "879a1a62472f84d0c70d48080d973fa0aa6215dc688227900b7526e5c04999ff"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iq-vat-gst.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iq-vat-gst.md",
+      "blob": "873c206c2fec8f1775b80c4a23a8b49df6152659",
+      "sha256": "fc430f4a65489513645597c4e3f57d43284ffedcf6907ef7fbe2bb1ff09342f7"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/pre-pr/iraq-tax.md": {
+      "commit": "79cc1bb401ad9268b7c07d1ac1a78d4b137be630",
+      "path": "skills/iraq/iraq-tax.md",
+      "blob": "844f2e44a61326abb326a20dfbedaa48e79d758f",
+      "sha256": "01dac8ccf83be52e350da824026ca8d8e691244b557e7b25b9a70dcb06a5472b"
+    },
+    "evidence/ledgers/iraq-pr1208-closeout-20261101/original-pr/iraq-tax.md": {
+      "commit": "2b761b3fd33b65ec0b658a0db3987d787d9877fa",
+      "path": "skills/iraq/iraq-tax.md",
+      "blob": "3bfee6b69233912d559cc6b5258d10e02d3e6803",
+      "sha256": "47b369c89e7ae9fff617ab56454c496c0e39d057bc822c149d6de11b2eca23d8"
+    }
+  }
+}
