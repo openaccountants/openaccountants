@@ -8,8 +8,8 @@ partial:
   IT-IND: "Legacy 2025 Guide unchanged; all bands, bases, residence and filing require current enacted-law research."
   IT-CORP: "Legacy 2025 Guide unchanged; ordinary/mining rates, minimum tax, base, withholding and deadlines unresolved for 2026."
   VAT: "New 2026 invoice-field control only; legacy rate/threshold/return and cross-border claims are not confirmed current law."
-  SC: "Legacy 2025 CNSS rates, branch splits, ceiling, base and remittance remain unverified for 2026."
-  PR: "Legacy 2025 withholding and remittance remain unverified for 2026."
+  SC: "2026 ordinary full-month CNSS base/contribution method added; deadline conflict, parameter instruments, special categories, partial months and multi-employer cap allocation remain unresolved."
+  PR: "Current salary-tax withholding, employer salary/apprenticeship taxes and tax remittance remain unresolved; CNSS is computed separately."
   TP: "No current transfer-pricing job; operative pricing and documentation provisions unavailable in this bounded research."
   XB: "No current cross-border job; residence, non-resident withholding, treaties and relief remain unverified."
 ---
@@ -34,3 +34,7 @@ Historical Guides awaiting research: [individual](gn-income-tax.md), [corporate]
 ## Independent source review
 
 The [initial review](../../evidence/ledgers/guinea-review-20261101/review.md) is preserved with its HOLD. The [focused closure](../../evidence/ledgers/guinea-closure-20261101/closure.md) accepts the repaired version within the conditional scope above. All 25 legal ledger rows and four examples carry forward unchanged; all seven domains remain partial. October promulgation, effect and the wider country gaps remain unresolved.
+
+## Remaining-work draft, independent review pending
+
+The expanded [payroll/social Guide](gn-payroll-social.md) now computes ordinary full-month CNSS contributions from current authority guidance and the CNSS-hosted Code/decree. The decree states a twenty-day payment window; current agency pages state fifteen days. The earlier agency date is an operational control, not a resolved legal amendment. The new [ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-payroll-social.md) records the source limits. No accountant attestation or full-domain acceptance follows. The unchanged prior reviews retain their original scope.

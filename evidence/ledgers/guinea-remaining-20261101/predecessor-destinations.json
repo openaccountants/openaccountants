@@ -1,0 +1,1829 @@
+{
+  "schema": "oa-immutable-predecessor-map-v1",
+  "prepared_on": "2026-11-01",
+  "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
+  "destination_status": "Payroll destinations populated; remaining five historical Guides retained unchanged pending research.",
+  "guides": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "slug": "gn-company-formation",
+      "git_blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+      "file_sha256": "3d3c490e3a2925f27f3702f771a4adf4c1951bee067a29a7ed92a974e290d75b",
+      "byte_length": 4192,
+      "source_exact_utf8": "---\nname: gn-company-formation\ndescription: \"Source-cited draft: company formation & entity choice for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea Company Formation & Entity Choice\n\n## Entity types and incorporation\n\nCompany law in Guinea follows the OHADA Uniform Act on Commercial Companies, with incorporation handled through the one-stop shop at the investment-promotion agency (APIP). The SARL is the most common form for private business. Figures are a source-cited draft for accountant review.\n\n- **Limited liability company** — Société à Responsabilité Limitée (SARL) — most common private entity  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://c2zadvisory.com/company-incorporation-in-guinea/))_\n- **Public limited company** — Société Anonyme (SA) — used for larger operations  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://c2zadvisory.com/company-incorporation-in-guinea/))_\n- **Simplified joint-stock company** — Société par Actions Simplifiée (SAS) — flexible OHADA form ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_\n- **SARL minimum share capital** — No mandatory statutory minimum (capital set in the statutes; historically GNF 1,000,000) ((approx — confirm)) GNF (approx — confirm)  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.healyconsultants.com/guinea-company-registration/setup-llc/))_\n- **SA minimum share capital** — GNF 10,000,000 (OHADA minimum for an SA, approx. USD 14,000 equivalent cited) ((approx — confirm)) GNF (approx — confirm)  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.healyconsultants.com/guinea-company-registration/setup-llc/))_\n- **Registration channel** — Guichet Unique (one-stop shop) at APIP — handles RCCM commercial registry, NIF tax number, and CNSS registration  _([APIP Guichet Unique procedures; OHADA Uniform Act](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n- **Core incorporation steps** — Draft statutes; deposit share capital in a blocked account; file with APIP for RCCM, NIF and CNSS; publish a legal notice  _([APIP Guichet Unique procedures; OHADA Uniform Act](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n- **Registration fees** — Around GNF 530,000 base fee, plus a sliding registration duty on capital (about 1% for capital GNF 10m–100m, 0.25% above GNF 500m) ((approx — confirm)) GNF (approx — confirm)  _([APIP Guichet Unique fee schedule](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n- **Incorporation timeline** — Roughly 1–2 weeks through the APIP one-stop shop ((approx — confirm)) (approx — confirm)  _(APIP Guichet Unique procedures)_\n- **Core annual compliance** — Annual OHADA/SYSCOHADA financial statements; IS return by 30 April; monthly VAT and payroll filings; CNSS declarations ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Accounting Law (SYSCOHADA); Code Général des Impôts (CGI))_\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-company-formation\ndescription: \"Source-cited draft: company formation & entity choice for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "e759f2b1b00545bcb7c763eef745e6684ebbe13edce3e855f6607462bb2c1cab"
+      },
+      "platform_cta": {
+        "line_start": 30,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 13,
+      "items": [
+        {
+          "id": "gn-company-formation:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea Company Formation & Entity Choice\n",
+          "text_sha256": "e221a1c06ed280502d4a298309f20b06a68c2db737e3f83557f05c9466bdcd59",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Entity types and incorporation\n",
+          "text_sha256": "3d69784b412f0f22dcbd17fbfca4536732343cd2a59c328798e1ac9461ecce2f",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:introduction_or_context_paragraph:17",
+          "kind": "introduction_or_context_paragraph",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "Company law in Guinea follows the OHADA Uniform Act on Commercial Companies, with incorporation handled through the one-stop shop at the investment-promotion agency (APIP). The SARL is the most common form for private business. Figures are a source-cited draft for accountant review.\n",
+          "text_sha256": "20a8a43a66b55ec051d694277dfe8e9ea5655a91f77de2aee56ba43b7a6b41fb",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **Limited liability company** — Société à Responsabilité Limitée (SARL) — most common private entity  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://c2zadvisory.com/company-incorporation-in-guinea/))_\n",
+          "text_sha256": "03b8108d0f9cc74697f364e50f4b27bb0f419c7e6deac3160a5e99dcee919f0f",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **Public limited company** — Société Anonyme (SA) — used for larger operations  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://c2zadvisory.com/company-incorporation-in-guinea/))_\n",
+          "text_sha256": "f9ec009344fea2cd324df418e335b08389d47da849f690c0986353bf2e4dd7e4",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **Simplified joint-stock company** — Société par Actions Simplifiée (SAS) — flexible OHADA form ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_\n",
+          "text_sha256": "9dc9eede85f7b33ca8cf1a8e23df6a07fe95fb321c38af8c39f8ebacc8ccb8c8",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **SARL minimum share capital** — No mandatory statutory minimum (capital set in the statutes; historically GNF 1,000,000) ((approx — confirm)) GNF (approx — confirm)  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.healyconsultants.com/guinea-company-registration/setup-llc/))_\n",
+          "text_sha256": "b5f7669ca026ab08244417db57ec728065bd52e719ce608f278f78aa7fba7e01",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **SA minimum share capital** — GNF 10,000,000 (OHADA minimum for an SA, approx. USD 14,000 equivalent cited) ((approx — confirm)) GNF (approx — confirm)  _([OHADA Uniform Act on Commercial Companies and Economic Interest Groups](https://www.healyconsultants.com/guinea-company-registration/setup-llc/))_\n",
+          "text_sha256": "ae0551b05fb141cfa1d56f37177ff9459755fdc2db3ba6321bf5db683b4ba9d4",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Registration channel** — Guichet Unique (one-stop shop) at APIP — handles RCCM commercial registry, NIF tax number, and CNSS registration  _([APIP Guichet Unique procedures; OHADA Uniform Act](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n",
+          "text_sha256": "b267c02835f3afa95c53239b0bbc68c99cdfd322d5dd9b0dde07d03d6f132918",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:25",
+          "kind": "bullet",
+          "line_start": 25,
+          "line_end": 25,
+          "original_text": "- **Core incorporation steps** — Draft statutes; deposit share capital in a blocked account; file with APIP for RCCM, NIF and CNSS; publish a legal notice  _([APIP Guichet Unique procedures; OHADA Uniform Act](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n",
+          "text_sha256": "282714c33077576388506d104c509a0306edb6cce704ee924916748a6ab2bcb4",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L25-L25"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:26",
+          "kind": "bullet",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "- **Registration fees** — Around GNF 530,000 base fee, plus a sliding registration duty on capital (about 1% for capital GNF 10m–100m, 0.25% above GNF 500m) ((approx — confirm)) GNF (approx — confirm)  _([APIP Guichet Unique fee schedule](https://www.startbutton.africa/blog/how-to-register-business-guinea-conakry))_\n",
+          "text_sha256": "5b5d9fbe9089467f0bf17ce33b8c7884edf555ec0b1e60c24797621d526a237e",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:27",
+          "kind": "bullet",
+          "line_start": 27,
+          "line_end": 27,
+          "original_text": "- **Incorporation timeline** — Roughly 1–2 weeks through the APIP one-stop shop ((approx — confirm)) (approx — confirm)  _(APIP Guichet Unique procedures)_\n",
+          "text_sha256": "3186364ec6a3d418e54bea49870f858c992c2c94d2140135d87c7784bcde12ef",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L27-L27"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        },
+        {
+          "id": "gn-company-formation:bullet:28",
+          "kind": "bullet",
+          "line_start": 28,
+          "line_end": 28,
+          "original_text": "- **Core annual compliance** — Annual OHADA/SYSCOHADA financial statements; IS return by 30 April; monthly VAT and payroll filings; CNSS declarations ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Accounting Law (SYSCOHADA); Code Général des Impôts (CGI))_\n",
+          "text_sha256": "3aa9e73d9ad7cb90d7d07450012daa2fbefe139d9225c0778d06f2e3b78a800a",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "4dfaa0f71a8fff37ad8e455a78f4bec098dd0e42",
+            "path": "skills/guinea/gn-company-formation.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-company-formation.md#L28-L28"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-company-formation.md",
+            "line_start_at_pinned_base": 28,
+            "line_end_at_pinned_base": 28,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": "pending writer exact destination or explicit hold"
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "slug": "gn-corporate-income-tax",
+      "git_blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+      "file_sha256": "36e3519ff66d3770a70983d5806914677e57a12d238de0f6925c502c1b617f41",
+      "byte_length": 3747,
+      "source_exact_utf8": "---\nname: gn-corporate-income-tax\ndescription: \"Source-cited draft: corporate income tax for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea Corporate Income Tax\n\n## Corporate income tax (Impôt sur les Sociétés)\n\nGuinea taxes company profits under the Impôt sur les Sociétés (IS), with the base derived from OHADA/SYSCOHADA financial statements. A minimum tax applies where the IS computed on profit is low. Figures are a source-cited draft for accountant review.\n\n- **Standard corporate income tax rate** — 25% percent  _([Code Général des Impôts (CGI) — Impôt sur les Sociétés (IS); Loi de Finances 2018](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **Corporate income tax rate — mining companies** — 30% percent (approx — confirm)  _([Code Minier de la République de Guinée (Mining Code)](https://www.imf.org/-/media/Files/Publications/CR/2021/English/1GINEA2021002.ashx))_\n- **Minimum tax (Impôt Minimum Forfaitaire)** — 3% of annual turnover, payable where it exceeds the IS computed on profits percent (approx — confirm)  _([Code Général des Impôts (CGI) — Impôt Minimum Forfaitaire (IMF)](https://taxatlas.io/country/guinea))_\n- **Tax base** — Net accounting profit per OHADA/SYSCOHADA accounts, adjusted for non-deductible items and tax rules  _([OHADA Uniform Act on Accounting Law (SYSCOHADA); Code Général des Impôts (CGI)](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **Withholding tax on dividends** — 10% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **Withholding tax on interest** — 10% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **Withholding tax on royalties (to non-residents)** — 15% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **Capital gains** — Generally taxed as ordinary corporate income; standalone rate around 15% cited for certain gains percent (approx — confirm)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n- **Annual IS return filing deadline** — By 30 April of the year following the financial year (annual declaration) (approx — confirm)  _(Code Général des Impôts (CGI) de Guinée)_\n- **Payment of corporate tax** — Advance installments during the year with balance on filing the annual return (approx — confirm)  _(Code Général des Impôts (CGI) de Guinée)_\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-corporate-income-tax\ndescription: \"Source-cited draft: corporate income tax for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "4fff4d563e5e84da9461cfa775cc768e49bcd34f1db5b99f835f4c3553fcbdf4"
+      },
+      "platform_cta": {
+        "line_start": 30,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 13,
+      "items": [
+        {
+          "id": "gn-corporate-income-tax:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea Corporate Income Tax\n",
+          "text_sha256": "03c349af35aaaa0e479ee778d3586557e553e65713176faef5c7edf8bff5ba97",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Corporate income tax (Impôt sur les Sociétés)\n",
+          "text_sha256": "e447b0236668aa32b1b2ba523987538b428a487f5bb128377bfad55dfcaa17fd",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:introduction_or_context_paragraph:17",
+          "kind": "introduction_or_context_paragraph",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "Guinea taxes company profits under the Impôt sur les Sociétés (IS), with the base derived from OHADA/SYSCOHADA financial statements. A minimum tax applies where the IS computed on profit is low. Figures are a source-cited draft for accountant review.\n",
+          "text_sha256": "95dc93f4fd9ddedfbceaab656e600eb6dbd72780f7d3dc476516e9aaff7a0562",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **Standard corporate income tax rate** — 25% percent  _([Code Général des Impôts (CGI) — Impôt sur les Sociétés (IS); Loi de Finances 2018](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "2fee916356a52ff715ae5cd231e839181105473f3e680467d8dcda452a57ca89",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **Corporate income tax rate — mining companies** — 30% percent (approx — confirm)  _([Code Minier de la République de Guinée (Mining Code)](https://www.imf.org/-/media/Files/Publications/CR/2021/English/1GINEA2021002.ashx))_\n",
+          "text_sha256": "a3606f673071137ffdfde4ea74c8162d9517316d9b60f7de27fbc22a4578e8d2",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **Minimum tax (Impôt Minimum Forfaitaire)** — 3% of annual turnover, payable where it exceeds the IS computed on profits percent (approx — confirm)  _([Code Général des Impôts (CGI) — Impôt Minimum Forfaitaire (IMF)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "c21e68ba7ac317e48560efbf31e85a8763d883bc69fa35365783e6d804b3601c",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **Tax base** — Net accounting profit per OHADA/SYSCOHADA accounts, adjusted for non-deductible items and tax rules  _([OHADA Uniform Act on Accounting Law (SYSCOHADA); Code Général des Impôts (CGI)](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "59c47d8b3e26947ff9e73b4673d5a60b9aac02b9b5017e0d8c94f2301867d9da",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **Withholding tax on dividends** — 10% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "d0e26321b09a5418a1ebacd45052fd5ef42c68c65ed22045f009983f78161b75",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Withholding tax on interest** — 10% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "3dc8422af209f3a0504840294024cb34ed0b4e6af0124951efc56cbab86d577c",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:25",
+          "kind": "bullet",
+          "line_start": 25,
+          "line_end": 25,
+          "original_text": "- **Withholding tax on royalties (to non-residents)** — 15% percent (before treaty relief)  _([Code Général des Impôts (CGI) — retenue à la source](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "0449d538e41d6df937e7251d4a734042e27ee62836442c02e59411ecb42626d8",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L25-L25"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:26",
+          "kind": "bullet",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "- **Capital gains** — Generally taxed as ordinary corporate income; standalone rate around 15% cited for certain gains percent (approx — confirm)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "8155af85034154e211490bd58942fc29e8af68c53501dc466493d93f50ff560e",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:27",
+          "kind": "bullet",
+          "line_start": 27,
+          "line_end": 27,
+          "original_text": "- **Annual IS return filing deadline** — By 30 April of the year following the financial year (annual declaration) (approx — confirm)  _(Code Général des Impôts (CGI) de Guinée)_\n",
+          "text_sha256": "2260991082d3e0e6618c4155d0efebb3c6f4846135f1056c081bbaf0e458fa4b",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L27-L27"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-corporate-income-tax:bullet:28",
+          "kind": "bullet",
+          "line_start": 28,
+          "line_end": 28,
+          "original_text": "- **Payment of corporate tax** — Advance installments during the year with balance on filing the annual return (approx — confirm)  _(Code Général des Impôts (CGI) de Guinée)_\n",
+          "text_sha256": "05b3bdcb10d67c15e25d1b5d8bd7c572972d5c26f07a42cd649fbe48fa482bf5",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "600eb243044738c72ab22aa2459e4df4d2485e40",
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-corporate-income-tax.md#L28-L28"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-corporate-income-tax.md",
+            "line_start_at_pinned_base": 28,
+            "line_end_at_pinned_base": 28,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "slug": "gn-income-tax",
+      "git_blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+      "file_sha256": "2671045f22d434771ed9131896f681b6719a8bb29f9566a7d242a99514383eec",
+      "byte_length": 3849,
+      "source_exact_utf8": "---\nname: gn-income-tax\ndescription: \"Source-cited draft: personal income tax for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea Personal Income Tax\n\n## Personal income tax (IRPP) bands and rates\n\n- **IRPP band 1 (tax-free)** — 0% on income from GNF 0 to 5,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **IRPP band 2** — 10% on income from GNF 5,000,000 to 10,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **IRPP band 3** — 15% on income from GNF 10,000,000 to 15,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **IRPP band 4** — 20% on income from GNF 15,000,000 to 20,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **IRPP band 5 (top rate)** — 35% on income above GNF 20,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **Tax-free threshold** — First GNF 5,000,000 of annual income taxed at 0% percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **Key deduction from taxable employment income** — Employee CNSS social-security contribution (2.5% employee share) is deductible before IRPP ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n- **Residence test** — Individuals with their home, principal place of abode, or centre of economic interest in Guinea are tax resident; worldwide income is taxable for residents ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n- **Collection of tax on employment income** — Employer withholds IRPP at source (PAYE-equivalent) and remits monthly  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **Non-resident taxation** — Non-residents taxed on Guinea-source income only, generally via withholding ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n- **Annual individual return deadline** — 31 March of the year following the income year ((approx — confirm))  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-income-tax\ndescription: \"Source-cited draft: personal income tax for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "eb63f41644c4c2b40bcf65b454c91a14fcd48fbc0a35ca9050906995c44a8f62"
+      },
+      "platform_cta": {
+        "line_start": 29,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 13,
+      "items": [
+        {
+          "id": "gn-income-tax:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea Personal Income Tax\n",
+          "text_sha256": "1f4f4cfdf055356c26fcd1881b8354347d97482ba27fac9d7e87ca76155a2516",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Personal income tax (IRPP) bands and rates\n",
+          "text_sha256": "a1763df37e97fd021732fb049682310dc8f1de2d6056b1cc73d96c4af68e4b50",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:17",
+          "kind": "bullet",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "- **IRPP band 1 (tax-free)** — 0% on income from GNF 0 to 5,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "255a0a0edbbf2e1603b4769937292da43b858f97957aebd6bf496776b5e14caf",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:18",
+          "kind": "bullet",
+          "line_start": 18,
+          "line_end": 18,
+          "original_text": "- **IRPP band 2** — 10% on income from GNF 5,000,000 to 10,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "88ea8781b34933d6ae8fe476c11d4d54cd7c3209ca837a1c002ce9044d57bfcc",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L18-L18"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 18,
+            "line_end_at_pinned_base": 18,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **IRPP band 3** — 15% on income from GNF 10,000,000 to 15,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "bba9d7f060f1ad319b05e389725fb3189e4a7c45c7ca6ab8fa910b3aeeb75d80",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **IRPP band 4** — 20% on income from GNF 15,000,000 to 20,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "8fe13b219019fddcce435c8c0247d856861b0932bb23a6f14d8fa22f0bd427dd",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **IRPP band 5 (top rate)** — 35% on income above GNF 20,000,000 percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "30d2c2d2602a23170806f0c61ffccd6f2ac2c771d5674268e9a6910eae0614bf",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **Tax-free threshold** — First GNF 5,000,000 of annual income taxed at 0% percent ((approx — confirm))  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "5862ff5b99e13fb9bc4678311a45d7bed5b3d7b65d283988dc66d6aca995e929",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **Key deduction from taxable employment income** — Employee CNSS social-security contribution (2.5% employee share) is deductible before IRPP ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n",
+          "text_sha256": "5cfe6745cd514ad5f021b76d5f84a7fa2edd7f55e74f14caab1277863e4e500e",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Residence test** — Individuals with their home, principal place of abode, or centre of economic interest in Guinea are tax resident; worldwide income is taxable for residents ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n",
+          "text_sha256": "bd01524bb92b2c88f866f6ec9861d5d13fdcd683c1d85213b9fb35d528ee15a2",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:25",
+          "kind": "bullet",
+          "line_start": 25,
+          "line_end": 25,
+          "original_text": "- **Collection of tax on employment income** — Employer withholds IRPP at source (PAYE-equivalent) and remits monthly  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "e717d7d367db3aac3a4d2d0f4ca9a430921dbe60af0572d9f88058784022b625",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L25-L25"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:26",
+          "kind": "bullet",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "- **Non-resident taxation** — Non-residents taxed on Guinea-source income only, generally via withholding ((approx — confirm))  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP))_\n",
+          "text_sha256": "baabb1097357b52a38139039577a614e56c50c867b0e71e2619ae9585db8e94d",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-income-tax:bullet:27",
+          "kind": "bullet",
+          "line_start": 27,
+          "line_end": 27,
+          "original_text": "- **Annual individual return deadline** — 31 March of the year following the income year ((approx — confirm))  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "30ce364821df0911296b58cc2e934d4b8fd10661e606cf18e2de211736ddc739",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "ca105e94a6ca44a4a7d7abb5a70451ca7df29b28",
+            "path": "skills/guinea/gn-income-tax.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-income-tax.md#L27-L27"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-income-tax.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "slug": "gn-payroll-social",
+      "git_blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+      "file_sha256": "bfa1355fd698a25c6947de1c1129878171ea2e2df1f9aa5cc251d4ac504a3238",
+      "byte_length": 3714,
+      "source_exact_utf8": "---\nname: gn-payroll-social\ndescription: \"Source-cited draft: payroll & social contributions for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea Payroll & Social Contributions\n\n## Social security (CNSS) and payroll withholding\n\nEmployers in Guinea register with the Caisse Nationale de Sécurité Sociale (CNSS) and withhold both the employee social-security share and IRPP at source. The exact branch split and salary ceiling vary by regulation and are flagged for confirmation.\n\n- **Total employer social-security contribution** — 18% of gross salary (CNSS branches combined) percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS) (https://tradingeconomics.com/guinea/social-security-rate))_\n- **Total employee social-security contribution** — 5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS) (https://tradingeconomics.com/guinea/social-security-rate-for-employees))_\n- **Employee pension (old-age) share** — 2.5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n- **Employer pension (old-age) share** — 4% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n- **Employer health/medical branch share** — Around 6.5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n- **Employer family allowances + work-injury share** — Around 6% + 4% of gross salary (family allowances and occupational risk) percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n- **Monthly contribution ceiling (salary cap)** — GNF 2,500,000 per month (cap on the wage base for CNSS contributions) GNF (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n- **Payroll income-tax withholding (PAYE-equivalent)** — Employer withholds IRPP from salaries at source under the progressive bands  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP) (https://taxatlas.io/country/guinea))_\n- **Remittance deadline (withheld IRPP and CNSS)** — Monthly, generally by the 15th of the following month (approx — confirm)  _(Code Général des Impôts (CGI); Code de la Sécurité Sociale)_\n- **Contribution wage base** — Gross salary including most cash benefits, up to the monthly ceiling (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-payroll-social\ndescription: \"Source-cited draft: payroll & social contributions for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "deaacec2434409714525922cb7f5a021efd470469e7a9372ec785c411e8a1fa8"
+      },
+      "platform_cta": {
+        "line_start": 30,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 13,
+      "items": [
+        {
+          "id": "gn-payroll-social:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea Payroll & Social Contributions\n",
+          "text_sha256": "63c58e085142973135cc161bf63546e421cd51b8194d0e0b18df25fa7d9c5ea3",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "H1 v1.1",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Social security (CNSS) and payroll withholding\n",
+          "text_sha256": "4901ec47f51c9aa851f121bfa2035898a33e62357d306468f94e5967f57883be",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:introduction_or_context_paragraph:17",
+          "kind": "introduction_or_context_paragraph",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "Employers in Guinea register with the Caisse Nationale de Sécurité Sociale (CNSS) and withhold both the employee social-security share and IRPP at source. The exact branch split and salary ceiling vary by regulation and are flagged for confirmation.\n",
+          "text_sha256": "07a2d9bc51013bf7753ba7cc63af651601c35ead7ac26e8aece89bd0010eec84",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to; The base; Sources",
+            "status": "expanded_with_explicit_holds",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **Total employer social-security contribution** — 18% of gross salary (CNSS branches combined) percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS) (https://tradingeconomics.com/guinea/social-security-rate))_\n",
+          "text_sha256": "43a162b40da835dfbd51d1090b71cca0a3487c32fc8bd84f00f2ddf2e3595622",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **Total employee social-security contribution** — 5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS) (https://tradingeconomics.com/guinea/social-security-rate-for-employees))_\n",
+          "text_sha256": "ed31400c8892284d9b5b55612c6776d7add9db88d8067c38f061aefa2e1de4fc",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base; Two worked examples that recompute",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **Employee pension (old-age) share** — 2.5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "3840d639f79cbb6f8c9ba366062d85eabf826710ce744ec0dc2ce23b5588c7a1",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **Employer pension (old-age) share** — 4% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "dadd44ab46ffed8cd7983d7a859d1169b865476e6c39d878afe514242315f643",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds final paragraph; Sources: separate pension/sickness shares held",
+            "status": "explicit_hold_unverified_allocation",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **Employer health/medical branch share** — Around 6.5% of gross salary percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "613ab53be405862aa1345bdb74a7ddbaea546da2ecdf10e75b0df847814768f0",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds sickness combined row and explanation",
+            "status": "corrected_employer_only_misclassification",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Employer family allowances + work-injury share** — Around 6% + 4% of gross salary (family allowances and occupational risk) percent (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "86802e3136d6247dde8758d3db40ada750b7baaf42ca76a40ed91b28ed9ef68c",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds family/occupational rows",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:25",
+          "kind": "bullet",
+          "line_start": 25,
+          "line_end": 25,
+          "original_text": "- **Monthly contribution ceiling (salary cap)** — GNF 2,500,000 per month (cap on the wage base for CNSS contributions) GNF (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "56922eda86f6af721163d1d257929809b9239c3bada056aabc0678282205f3b8",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L25-L25"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:26",
+          "kind": "bullet",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "- **Payroll income-tax withholding (PAYE-equivalent)** — Employer withholds IRPP from salaries at source under the progressive bands  _(Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP) (https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "90d974e0c65965d1070d63e6f817feab3ba566d029a0930657e6a48fa4a1b1b5",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Who this applies to final paragraph; Sources: salary tax hold",
+            "status": "explicit_hold_current_salary_tax",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:27",
+          "kind": "bullet",
+          "line_start": 27,
+          "line_end": 27,
+          "original_text": "- **Remittance deadline (withheld IRPP and CNSS)** — Monthly, generally by the 15th of the following month (approx — confirm)  _(Code Général des Impôts (CGI); Code de la Sécurité Sociale)_\n",
+          "text_sha256": "c595ccbb7ad1a4b69da2f63e91d4ac5f2d828618f29ac4900944f6af1481a3d5",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L27-L27"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Deadlines and filing: separate CNSS frequency and15/20conflict; Sources: salarytax remittancehold",
+            "status": "expanded_and_explicit_tax_hold",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        },
+        {
+          "id": "gn-payroll-social:bullet:28",
+          "kind": "bullet",
+          "line_start": 28,
+          "line_end": 28,
+          "original_text": "- **Contribution wage base** — Gross salary including most cash benefits, up to the monthly ceiling (approx — confirm)  _(Code de la Sécurité Sociale — Caisse Nationale de Sécurité Sociale (CNSS))_\n",
+          "text_sha256": "41040f65c3383ecce1b65b4cdad1eb76f3c9087eecfc149138ec7d834ed3db51",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "56cf7d8549a7592b515d53f8dfacd45c53d755b6",
+            "path": "skills/guinea/gn-payroll-social.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-payroll-social.md#L28-L28"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-payroll-social.md",
+            "heading_or_hold": "Rates, bands and thresholds; The base step4",
+            "status": "replaced_with_sourced_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Use only the sourced new method; the full immutable old text remains in this predecessor record."
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "slug": "gn-tax-overview",
+      "git_blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+      "file_sha256": "a98b1e336b8e2464e2a516536e3ff38395638fdd2796b40346057d9b02e551f7",
+      "byte_length": 3373,
+      "source_exact_utf8": "---\nname: gn-tax-overview\ndescription: \"Source-cited draft: tax overview for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea Tax Overview\n\n## Guinea tax system at a glance\n\nGuinea (Conakry) operates a French-style tax system administered by the national tax directorate, with taxes assessed in Guinean Francs over a calendar tax year. This is an unverified source-cited draft pending review by a licensed Guinea accountant.\n\n- **Tax year** — 1 January to 31 December (calendar year)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n- **Currency** — Guinean Franc (GNF)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n- **Tax authority** — Direction Nationale des Impôts (DNI), Ministère du Budget  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n- **Residence / taxation basis** — Residents are taxed on worldwide income; non-residents on Guinea-source income only ((approx — confirm))  _(Code Général des Impôts (CGI) de Guinée)_\n- **Top personal income tax (IRPP) rate** — 35 percent  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n- **Standard corporate income tax rate** — 25 percent  _([Code Général des Impôts (CGI) — Impôt sur les Sociétés (IS); Loi de Finances 2018](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n- **VAT / GST — Value Added Tax (TVA) standard rate** — 18 percent (Yes — Value Added Tax (TVA) applies at a standard rate)  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n- **Annual return filing deadline** — 31 March of the year following the tax year ((approx — confirm))  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n- **VAT (TVA) return frequency** — Monthly — filed and paid within 15 days after month-end  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n- **Accounting framework for the tax base** — OHADA SYSCOHADA Uniform Act on Accounting Law  _([OHADA Uniform Act on Accounting Law (SYSCOHADA)](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-tax-overview\ndescription: \"Source-cited draft: tax overview for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "63d60ee58ee2cf06fef4d700dcd6cd89fa4d74ef3f47c00af6c93e3affcc6c10"
+      },
+      "platform_cta": {
+        "line_start": 30,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 13,
+      "items": [
+        {
+          "id": "gn-tax-overview:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea Tax Overview\n",
+          "text_sha256": "86c5aaa4835319caeb1efac5058c09bc2c2f11c41bfec18dfb07e888aa397a2b",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Guinea tax system at a glance\n",
+          "text_sha256": "b05d2876703b3a242421a68e909fc5e7a28e7f9209c49146e3a5326568368c47",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:introduction_or_context_paragraph:17",
+          "kind": "introduction_or_context_paragraph",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "Guinea (Conakry) operates a French-style tax system administered by the national tax directorate, with taxes assessed in Guinean Francs over a calendar tax year. This is an unverified source-cited draft pending review by a licensed Guinea accountant.\n",
+          "text_sha256": "6c4dd8a9316a3478dec8946223c0b9517429a02581989dda9482e82876cc6222",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **Tax year** — 1 January to 31 December (calendar year)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "84074cad26718e6f215a181b46bfa926d05b22ab75432e0ff2f60511651013b8",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **Currency** — Guinean Franc (GNF)  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "5f50cba0fb5382cdbefd43ca5a11fa11d6f79fed21418fe789e68632cb2ec8e4",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **Tax authority** — Direction Nationale des Impôts (DNI), Ministère du Budget  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "097b5cc40c514a9a0e4ccb6014e6726583a5f7b535d526848d9b20435c613585",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **Residence / taxation basis** — Residents are taxed on worldwide income; non-residents on Guinea-source income only ((approx — confirm))  _(Code Général des Impôts (CGI) de Guinée)_\n",
+          "text_sha256": "ac595fec66807714c8645657922d8db0066ab0e75af69d6bdf8ba63ab29de1e4",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **Top personal income tax (IRPP) rate** — 35 percent  _([Code Général des Impôts (CGI) — Impôt sur le Revenu des Personnes Physiques (IRPP)](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "6d048733c7622772d4916952e44e92a0c08c79401a5dbc367bc9feff3e1fd740",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Standard corporate income tax rate** — 25 percent  _([Code Général des Impôts (CGI) — Impôt sur les Sociétés (IS); Loi de Finances 2018](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "201abdfe3121c6084ceb49cfb6ebfface152d5a49dc4aafe4327df2d240ee937",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:25",
+          "kind": "bullet",
+          "line_start": 25,
+          "line_end": 25,
+          "original_text": "- **VAT / GST — Value Added Tax (TVA) standard rate** — 18 percent (Yes — Value Added Tax (TVA) applies at a standard rate)  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "a37ca7b4168ac00582beff0e97979c6265414601eff8049da9285507f08a8d2b",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L25-L25"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 25,
+            "line_end_at_pinned_base": 25,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:26",
+          "kind": "bullet",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "- **Annual return filing deadline** — 31 March of the year following the tax year ((approx — confirm))  _([Code Général des Impôts (CGI) de Guinée](https://taxatlas.io/country/guinea))_\n",
+          "text_sha256": "1496f9911fa99161928f21a85c934b48c81341aac9e043d6646825fa34f78488",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:27",
+          "kind": "bullet",
+          "line_start": 27,
+          "line_end": 27,
+          "original_text": "- **VAT (TVA) return frequency** — Monthly — filed and paid within 15 days after month-end  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "6717e5894fcb10dae08f4f2dd15fe53ae391d420c4ca08f3e64a557d1cc50fe8",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L27-L27"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 27,
+            "line_end_at_pinned_base": 27,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-tax-overview:bullet:28",
+          "kind": "bullet",
+          "line_start": 28,
+          "line_end": 28,
+          "original_text": "- **Accounting framework for the tax base** — OHADA SYSCOHADA Uniform Act on Accounting Law  _([OHADA Uniform Act on Accounting Law (SYSCOHADA)](https://www.icaew.com/technical/by-country/africa/guinea/tax-in-guinea))_\n",
+          "text_sha256": "5d3e38a28b34d49698fa37d722c21d5176ea81b7459d13471705a95d6cb0b3c7",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "9f0328218c1dbc7c792204e1aa89708ba7ec8c9d",
+            "path": "skills/guinea/gn-tax-overview.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-tax-overview.md#L28-L28"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-tax-overview.md",
+            "line_start_at_pinned_base": 28,
+            "line_end_at_pinned_base": 28,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "slug": "gn-vat-gst",
+      "git_blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+      "file_sha256": "031265a90237a27278f32b1a06ef914e4ebf068ec79f120b6f7f36f47b2beca6",
+      "byte_length": 3222,
+      "source_exact_utf8": "---\nname: gn-vat-gst\ndescription: \"Source-cited draft: vat / gst for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Guinea VAT / GST\n\n## Value Added Tax (TVA)\n\n- **VAT / GST — Value Added Tax (TVA) standard rate** — 18 percent (Yes — Value Added Tax (TVA) applies at a standard rate)  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n- **Zero-rated supplies** — Exports of goods and services are zero-rated (0%) percent  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n- **Exempt supplies** — Certain essential goods and services are exempt (no VAT charged, no input recovery)  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n- **VAT registration threshold (turnover)** — GNF 1,000,000,000 annual turnover (businesses above this are subject to VAT) (approx — confirm) GNF  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://tradingeconomics.com/guinea/sales-tax-rate))_\n- **Return frequency** — Monthly  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n- **Filing and payment deadline** — Within 15 days after the end of each month  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n- **Reverse charge** — On B2B supplies by non-residents, the Guinea business customer self-accounts for VAT (reverse charge)  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n- **Non-resident registration** — Non-resident suppliers must register through a local fiscal representative  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n\nGuinea applies a Value Added Tax (Taxe sur la Valeur Ajoutée, TVA) at a single standard rate, with exports zero-rated and certain essential supplies exempt. Returns are monthly. Figures are a source-cited draft for accountant review.\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+      "frontmatter": {
+        "line_start": 1,
+        "line_end": 11,
+        "exact_text": "---\nname: gn-vat-gst\ndescription: \"Source-cited draft: vat / gst for Guinea (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review.\"\njurisdiction: GN\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n",
+        "sha256": "4e7020e4de8a539ce74989622fc6a49e898ffa0632f193c805c42cc1bc7df6b3"
+      },
+      "platform_cta": {
+        "line_start": 28,
+        "exact_suffix": "<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+        "sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+        "preserve_entire_suffix": true
+      },
+      "pre_cta_body_nonblank_lines": 11,
+      "items": [
+        {
+          "id": "gn-vat-gst:heading_h1:13",
+          "kind": "heading_h1",
+          "line_start": 13,
+          "line_end": 13,
+          "original_text": "# Guinea VAT / GST\n",
+          "text_sha256": "8ad6f0bc04867a318bfa2f1882de05114def7d064b052d4c9a425584ab2040f1",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L13-L13"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 13,
+            "line_end_at_pinned_base": 13,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:heading_h2:15",
+          "kind": "heading_h2",
+          "line_start": 15,
+          "line_end": 15,
+          "original_text": "## Value Added Tax (TVA)\n",
+          "text_sha256": "6bcde863f51b40df8e98b8e0a0f617dc915e0b9a4b4f8d62fa0a944ac6e8d16e",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L15-L15"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 15,
+            "line_end_at_pinned_base": 15,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:17",
+          "kind": "bullet",
+          "line_start": 17,
+          "line_end": 17,
+          "original_text": "- **VAT / GST — Value Added Tax (TVA) standard rate** — 18 percent (Yes — Value Added Tax (TVA) applies at a standard rate)  _([Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA)](https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "a37ca7b4168ac00582beff0e97979c6265414601eff8049da9285507f08a8d2b",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L17-L17"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 17,
+            "line_end_at_pinned_base": 17,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:18",
+          "kind": "bullet",
+          "line_start": 18,
+          "line_end": 18,
+          "original_text": "- **Zero-rated supplies** — Exports of goods and services are zero-rated (0%) percent  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "acd1dfc64ce85d9f2a489bd9b429177c60c5f5ccc4c5e5594d6eb4cf0d1e21ca",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L18-L18"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 18,
+            "line_end_at_pinned_base": 18,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:19",
+          "kind": "bullet",
+          "line_start": 19,
+          "line_end": 19,
+          "original_text": "- **Exempt supplies** — Certain essential goods and services are exempt (no VAT charged, no input recovery)  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "8d762c0acd164a2f62b8b5beba9d7da0490f0d9129134ac54ae164d488ec4c35",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L19-L19"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 19,
+            "line_end_at_pinned_base": 19,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:20",
+          "kind": "bullet",
+          "line_start": 20,
+          "line_end": 20,
+          "original_text": "- **VAT registration threshold (turnover)** — GNF 1,000,000,000 annual turnover (businesses above this are subject to VAT) (approx — confirm) GNF  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://tradingeconomics.com/guinea/sales-tax-rate))_\n",
+          "text_sha256": "2a28e2589d7e8533663fa2a061b10e45fe390e9fc14325a7df43003bb1e06ce6",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L20-L20"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 20,
+            "line_end_at_pinned_base": 20,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:21",
+          "kind": "bullet",
+          "line_start": 21,
+          "line_end": 21,
+          "original_text": "- **Return frequency** — Monthly  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "71886c92ddf2d37a4ae3e3a15f48ca4a11525b498494650bb03910cf882ad9ec",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L21-L21"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 21,
+            "line_end_at_pinned_base": 21,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:22",
+          "kind": "bullet",
+          "line_start": 22,
+          "line_end": 22,
+          "original_text": "- **Filing and payment deadline** — Within 15 days after the end of each month  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "517eeebf7ec46eeebadfa6208e6cf233f062288583cb4a789a0f72c7f3ff66ab",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L22-L22"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 22,
+            "line_end_at_pinned_base": 22,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:23",
+          "kind": "bullet",
+          "line_start": 23,
+          "line_end": 23,
+          "original_text": "- **Reverse charge** — On B2B supplies by non-residents, the Guinea business customer self-accounts for VAT (reverse charge)  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "bc540f94b7ae8a3775dad8661054be75f3dabcf425e8a530dd3807989a4c4f14",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L23-L23"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 23,
+            "line_end_at_pinned_base": 23,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:bullet:24",
+          "kind": "bullet",
+          "line_start": 24,
+          "line_end": 24,
+          "original_text": "- **Non-resident registration** — Non-resident suppliers must register through a local fiscal representative  _(Code Général des Impôts (CGI) — Taxe sur la Valeur Ajoutée (TVA) (https://quaderno.io/guides/guinea-vat-guide/))_\n",
+          "text_sha256": "d5ee9bcdb7013e03af7aaccb1592daf1560bbae78975496abd79e3cc1a2ae422",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L24-L24"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 24,
+            "line_end_at_pinned_base": 24,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        },
+        {
+          "id": "gn-vat-gst:introduction_or_context_paragraph:26",
+          "kind": "introduction_or_context_paragraph",
+          "line_start": 26,
+          "line_end": 26,
+          "original_text": "Guinea applies a Value Added Tax (Taxe sur la Valeur Ajoutée, TVA) at a single standard rate, with exports zero-rated and certain essential supplies exempt. Returns are monthly. Figures are a source-cited draft for accountant review.\n",
+          "text_sha256": "7f3bde1e94c076c4676192ecf3f9b2aff68061829d65a56998ad1baec3154440",
+          "immutable_source": {
+            "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+            "blob": "2390d6cf20312fd06c2ec5cf0924db18232e7387",
+            "path": "skills/guinea/gn-vat-gst.md",
+            "github_url": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-gst.md#L26-L26"
+          },
+          "destination": {
+            "path": "skills/guinea/gn-vat-gst.md",
+            "line_start_at_pinned_base": 26,
+            "line_end_at_pinned_base": 26,
+            "status": "retained_byte_identical_historical",
+            "current_year_status": "unconfirmed_current_law",
+            "prospective_replacement": null
+          }
+        }
+      ],
+      "every_nonblank_pre_cta_body_line_accounted": true,
+      "table_items": 0
+    }
+  ],
+  "totals": {
+    "guides": 6,
+    "items": 76,
+    "by_kind": {
+      "heading_h1": 6,
+      "heading_h2": 6,
+      "introduction_or_context_paragraph": 5,
+      "bullet": 59
+    },
+    "all_pre_cta_nonblank_body_lines_accounted": true
+  }
+}
