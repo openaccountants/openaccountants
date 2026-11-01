@@ -1,0 +1,19 @@
+{
+  "disposition": "PASS for conditional PARTIAL research publication only",
+  "reviewed_candidate_sha256": {
+    "sa-freelance-intake.md": "e9a43149ebb3c2b30cf7b6d7e3bf5806f3e0759bb93c5cf24a6876a9b8f2a7d4",
+    "sa-return-assembly.md": "b4220c70153345b9ae69945277c7f3fb25d8e6c96dd6ed2636729022cdbf41fe",
+    "README.md": "4cb782ce58d503ded1b31a7f366ffa01efceee59f24e4c4a68e76297e2b15ebf"
+  },
+  "approved_minimal_status_change": {
+    "path": "skills/saudi-arabia/sa-return-assembly.md",
+    "old": "| Validated by | Pending independent review; professional authorisation and client-specific sign-off required before filing |",
+    "new": "| Validated by | Independent conditional research review completed 1 November 2026; unresolved holds remain. Professional authorisation and client-specific sign-off required before filing |",
+    "expected_sha256_after_only_this_change": "5b5631c1c089bba8b7996582cd8f164f6b769e241200590f0846aaa4772e7135"
+  },
+  "preservation": "All ten named-contributor files, platform-written fields and CTA exactly preserved; original writer evidence and original v1.2 changelog preserved; original independent findings immutable.",
+  "review_scope": "Focused closure of R1-R7; 92 original rows not redundantly rereviewed. Initial every-row review and source hash checks remain binding.",
+  "unresolved": "Live-law/postarchive amendment currentness, technical/portal/client-specific facts and all explicit holds. No filing approval, professional attestation, complete-country or all-current-law assertion.",
+  "old_topics": "All684 predecessor identities preserved, 254 intake/430 assembly; six sampled mapping misroutes corrected additively and checked against candidate headings; remaining writer mappings not all manually endorsed. Lost content restored: 0 in the independently spot-checked topic classes.",
+  "initial_R7_clarification": "Initial report incorrectly described manifest M as PDFscope; original manifest M is HTMLFAQ and ML already complete physicalPDF1-5. Only both GuideSources1-4 required correction to1-5; additive source-scope record is accurate."
+}

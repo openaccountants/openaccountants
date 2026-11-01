@@ -1,0 +1,270 @@
+{
+  "before": {
+    "skills/saudi-arabia/sa-freelance-intake.md": "e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b790aef72340",
+    "skills/saudi-arabia/sa-return-assembly.md": "405b3e318200581231850a43474204a0578fe71abd226b6c965f1253e2860dc9",
+    "skills/saudi-arabia/README.md": "900f0da66fcc85663fda2f21060e934702ea74a4db6cabf6162b55e01f6846c4"
+  },
+  "after": {
+    "skills/saudi-arabia/sa-freelance-intake.md": "e9a43149ebb3c2b30cf7b6d7e3bf5806f3e0759bb93c5cf24a6876a9b8f2a7d4",
+    "skills/saudi-arabia/sa-return-assembly.md": "b4220c70153345b9ae69945277c7f3fb25d8e6c96dd6ed2636729022cdbf41fe",
+    "skills/saudi-arabia/README.md": "4cb782ce58d503ded1b31a7f366ffa01efceee59f24e4c4a68e76297e2b15ebf"
+  },
+  "changes": [
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "version: 1.2",
+      "new": "version: 1.3",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "v1.2",
+      "new": "v1.3",
+      "occurrences": 2
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "version: 1.2",
+      "new": "version: 1.3",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "v1.2",
+      "new": "v1.3",
+      "occurrences": 3
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "Some inferred from documents, the rest gap-filled. All mandatory before handoff.",
+      "new": "Infer applicable facts from documents and ask for remaining facts. Record inapplicable items and unresolved evidence separately. An unresolved applicable fact blocks only its dependent conclusion; a partial handoff remains available.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "MISA investment registration number (foreign-owned entities only)",
+      "new": "MISA investment registration evidence where applicable after the existing-investor, securities and other exceptions in Section 4.9 are checked",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "0. **Route to sa-zakat**: 100% Saudi/GCC natural persons → ZAKAT only",
+      "new": "0. **Candidate annual Zakat/CIT route**: apply Sections 4.1 and 4.2 residence/activity and ownership conditions, including GCC similar-treatment eligibility. Do not infer Zakat-only treatment from nationality alone; indirect/GCC corporate and listed allocation stays HOLD. Other tax workstreams are separate.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "0. **Refusal sweep**: Single ask_user_input_v0 call with the 5 questions in Section 5.1.",
+      "new": "0. **Scope and missing-fact sweep**: use the six question groups in Section 5, asking only what the documents have not answered; preserve a partial handoff and explicit holds.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "MISA registration if foreign",
+      "new": "MISA registration evidence if applicable under Section 4.9",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "- **Zakat declaration**: Saudi-owned and GCC-owned entities under Royal Decree No. M/40 (1405 AH) and the Implementing Regulations for Zakat Collection issued by ZATCA",
+      "new": "- **Candidate Zakat declaration**: only after the applicable residence/activity, Saudi ownership and GCC similar-treatment conditions in the cited Zakat Regulations are checked. Indirect/GCC corporate and listed treatment stays HOLD; no operative M/40 attribution is supplied here.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "- **Corporate Income Tax return (portal-approved form; historical Form 800 label on HOLD)**: foreign-owned (non-Saudi / non-GCC) entities under the Income Tax Law (Royal Decree No. M/1 of 1425 AH) and its Implementing Regulations",
+      "new": "- **Candidate income-tax return (portal-approved form; historical Form 800 label on HOLD)**: apply the supported resident-capital-company allocation, non-Saudi resident business or Saudi PE scope in the rates/computation conditions; nationality alone does not establish the route.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "- **Mixed-entity return**: joint Saudi / foreign ownership; Zakat applied to the Saudi/GCC share, CIT applied to the foreign share, with form presentation held until the taxpayer's portal evidence is checked",
+      "new": "- **Mixed-entity working paper**: separate supported Zakat and income-tax bases/allocations after residence/activity and GCC similar-treatment checks. Indirect/GCC corporate/listed treatment and combined-form presentation stay HOLD until evidenced.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| 100% Saudi / GCC-owned | Zakat declaration only |",
+      "new": "| Supported Saudi allocation, including eligible GCC similar treatment; residence/activity and special-ownership conditions checked | Candidate annual Zakat/CIT route only; other taxes are separate |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| 100% foreign-owned | CIT return (form identifier on HOLD) |",
+      "new": "| Supported non-Saudi resident-company allocation, resident business or Saudi PE scope | Candidate income-tax route; form identifier on HOLD |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Mixed (Saudi/GCC + foreign) |",
+      "new": "| Mixed supported allocations; residence/activity and GCC similar treatment checked, indirect/corporate/listed issues held |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| 1. Compute the Zakat base (equity method) | Per sa-zakat |",
+      "new": "| 1. Obtain a separately supported applicable Zakat base | No generic equity-method proxy; check current base rules independently |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| 3. Determine ownership split | From sa-formation (cap table at year-end) |",
+      "new": "| 3. Determine supported ownership allocation | Check evidence, ownership changes, residence/activity and GCC similar treatment; indirect/GCC corporate/listed issues stay HOLD |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| 5. Apply CIT to foreign share of CIT taxable income × 20% (or applicable rate) | CIT portion |",
+      "new": "| 5. Apply the sourced general income-tax rate to its supported allocation and base | Exclude special sectors; confirm the base was not already ownership-apportioned |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Commercial Registration (CR) number: issued by Ministry of Commerce | All entities |",
+      "new": "| Commercial Registration (CR) number: issued by Ministry of Commerce | Collect where applicable; unresolved applicable evidence holds its dependent conclusion, not the partial package |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Tax Identification Number (TIN): issued by ZATCA | All entities |",
+      "new": "| Tax Identification Number (TIN): issued by ZATCA | Copy applicable taxpayer evidence; record missing or inapplicable items |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| MoC commercial registration certificate | All entities |",
+      "new": "| MoC commercial registration certificate | Where applicable to the entity/activity; record exceptions and unresolved facts |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "0. **Phase 2**: Read cap table from sa-formation; classify each shareholder as Saudi / GCC / foreign; compute Saudi+GCC % and foreign %; carry to mixed-entity computation",
+      "new": "0. **Phase 2**: read the ownership evidence and apply the residence/activity, Saudi allocation and GCC similar-treatment conditions above; check ownership changes and avoid double apportionment. HOLD indirect/GCC corporate/listed issues. Carry only supported allocations to the separate bases.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Exempt sales (financial services, residential rent etc.) | Per saudi-arabia-vat | Disclosed separately |",
+      "new": "| Transaction-specific exempt sales | Independently verified transaction/period evidence only | HOLD any exemption not verified; a named upstream Guide is not proof |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| `saudi-einvoice` | E-invoicing compliance status (Fatoorah Phase 1 generation + Phase 2 integration with ZATCA) | Compliance attestation |",
+      "new": "| `saudi-einvoice` | Taxpayer notices and implementation evidence | Evidence collection only; HOLD technical compliance until applicable specifications are independently verified |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| `saudi-einvoice` | Fatoorah compliance status | Compliance attestation |",
+      "new": "| `saudi-einvoice` | Fatoorah notices and implementation evidence | Evidence collection only; HOLD unsupported technical compliance |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "Is the entity exchanging cryptographic stamps / UUIDs correctly?",
+      "new": "Collect available cryptographic-stamp/UUID evidence. HOLD correctness or compliance until the applicable technical specifications and taxpayer implementation have been independently verified; the notice alone proves neither.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "1. Log into ZATCA portal with TIN + password / Nafath\n2. Open \"Annual Zakat/Tax Return\" → select form (Zakat / CIT / Mixed)\n3. Enter computation values from working paper\n4. Upload the attachments actually required for the entity and return; HOLD an assumed audit threshold\n5. Submit return → save acknowledgement with submission reference and timestamp\n6. Generate SADAD bill for the payable amount\n7. Pay via Saudi bank (internet banking, mobile app, SADAD ATM, or branch teller)\n8. Save SADAD payment confirmation\n9. Reconcile payment confirmation and portal status; HOLD any promised status-update time",
+      "new": "1. For an independently resolved income-tax return, the taxpayer/authorised representative accesses their own account; HOLD unverified authentication assumptions.\n2. Choose Returns and the approved applicable form, as in the cited Income Tax Guideline section 6; record actual form/period.\n3. Enter the checked values and review the data and terms.\n4. Confirm actual applicable attachments; HOLD any assumed universal audit threshold or box/menu identifier.\n5. Submit only after all dependent holds are resolved; save acknowledgement/reference/time. This Guide does not submit.\n6. Pay the issued income-tax invoice through SADAD; copy the actual reference and verify taxpayer, period and amount.\n7. Confirm the actual available payment channel; no universal internet/mobile/ATM/teller route is inferred.\n8. Retain invoice and payment receipt and reconcile them without assuming a portal-update time.\n9. For Zakat, mixed presentation and other tax heads, HOLD final portal/payment instructions until their own workflow is evidenced.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| WHT: payments to non-residents | Monthly WHT return | 10th of following month |",
+      "new": "| Payments independently established as subject to WHT | Monthly WHT return where required | First ten days of following month; retain scope/nil-month exceptions |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "**Monthly / periodic compliance through FY 2027 table**",
+      "new": "**Provisional FY 2027 planning table**\n\nThe cited calendar publishes 2026 deadlines only. The following VAT/excise cadence is a 2026 baseline, not verified 2027 deadlines: obtain the applicable current period and official due date before action. The separately sourced WHT rule applies only within its verified scope.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "VAT (monthly filer: turnover > SAR 40M)",
+      "new": "VAT (monthly filer: annual taxable supplies > SAR 40M; confirm applicable period)",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "Monthly VAT (turnover > SAR 40M)",
+      "new": "Monthly VAT (annual taxable supplies > SAR 40M; period verified)",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "Quarterly VAT (turnover ≤ SAR 40M)",
+      "new": "Quarterly VAT (annual taxable supplies ≤ SAR 40M; period verified)",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "- **R-SA-ASM-6**: Intake incomplete. Name the missing intake field (CR, TIN, VAT number, ownership split, fiscal year-end, audited FS, GOSI ID, Mudad subscription). Cannot finalise the return until provided.",
+      "new": "- **R-SA-ASM-6**: Name missing applicable evidence and its dependent conclusion. Check whether CR, TIN, VAT registration, audit, GOSI or Mudad evidence is actually required for this taxpayer; do not infer a legal filing bar from an inapplicable or held requirement. Keep the affected conclusion on HOLD and issue a partial package with reasons.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Zakat | Annual Zakat declaration | Annual (120 days from FYE) | Saudi/GCC entities |",
+      "new": "| Zakat | Actual approved declaration workflow to be evidenced | General 120-day period; check applicable rules | Supported allocation after residence/activity and GCC similar-treatment checks; indirect/corporate/listed issues held |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "| Mixed Zakat + CIT | Annual combined | Annual (120 days from FYE) | Mixed-ownership entities |",
+      "new": "| Mixed Zakat + CIT | HOLD combined-form/menu presentation until evidenced | Check the supported tax-specific periods | Separate supported bases and allocations; no automatic combined-return conclusion |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/README.md",
+      "old": "partial: {}",
+      "new": "partial:\n  IT-IND: \"Intake/assembly are conditional research with residence/activity, ownership, source-currentness and portal holds; not complete individual tax coverage.\"\n  IT-CORP: \"Named corporate Guide remains on 2025; current-law/base/special-sector holds unresolved.\"\n  VAT: \"Named VAT Guide remains on 2025; registration and transaction-specific treatment held.\"\n  SC: \"Named social Guide remains on 2025; applicable rates/entrant/employer rules unreviewed.\"\n  PR: \"Named withholding/payroll material remains on 2025; no complete payroll coverage.\"\n  TP: \"No complete transfer-pricing Guide; specialist thresholds held.\"\n  XB: \"No complete cross-border Guide; treaty and specialist outcomes held.\"",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/README.md",
+      "old": "| 2026 | Ready |",
+      "new": "| 2026 | Partial |",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/README.md",
+      "old": "Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it.",
+      "new": "Partial means the stated workflow remains conditional research with explicit unresolved legal or factual dependencies. A current tax-year label is not accountant attestation.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "bilingual PDF pp. 1 to 4, including arts.",
+      "new": "bilingual PDF pp. 1 to 5, including arts.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "bilingual PDF pp. 1 to 4, including arts.",
+      "new": "bilingual PDF pp. 1 to 5, including arts.",
+      "occurrences": 1
+    },
+    {
+      "path": "skills/saudi-arabia/sa-freelance-intake.md",
+      "old": "- **v1.3 (1 November 2026):** Replaced operative assumptions with explicit local holds; corrected WHT nil-month and partnership exceptions, calendar scaling and the late-penalty example; recorded exact source scope and preserved earlier topics in the evidence ledger. Platform attribution and standard closing block preserved.",
+      "new": "- **v1.2 (1 November 2026):** Replaced operative assumptions with explicit local holds; corrected WHT nil-month and partnership exceptions, calendar scaling and the late-penalty example; recorded exact source scope and preserved earlier topics in the evidence ledger. Platform attribution and standard closing block preserved.\n- **v1.3 (1 November 2026):** Bounded independent-review corrections align ownership and evidence routing, action templates, provisional planning and technical holds with the existing source ledger; earlier history and current-law limits remain.",
+      "occurrences": 1,
+      "reason": "Restore exact historical v1.2 entry and add separate v1.3 history"
+    },
+    {
+      "path": "skills/saudi-arabia/sa-return-assembly.md",
+      "old": "- **v1.3 (1 November 2026):** Replaced operative assumptions with explicit local holds; corrected WHT nil-month and partnership exceptions, calendar scaling and the late-penalty example; recorded exact source scope and preserved earlier topics in the evidence ledger. Platform attribution and standard closing block preserved.",
+      "new": "- **v1.2 (1 November 2026):** Replaced operative assumptions with explicit local holds; corrected WHT nil-month and partnership exceptions, calendar scaling and the late-penalty example; recorded exact source scope and preserved earlier topics in the evidence ledger. Platform attribution and standard closing block preserved.\n- **v1.3 (1 November 2026):** Bounded independent-review corrections align ownership and evidence routing, action templates, provisional planning and technical holds with the existing source ledger; earlier history and current-law limits remain.",
+      "occurrences": 1,
+      "reason": "Restore exact historical v1.2 entry and add separate v1.3 history"
+    }
+  ],
+  "review_status": "Pending independent focused closure; no new law/currentness acceptance",
+  "old_topic_scope": "All684oldunits preserved. Six sampled misroutes corrected additively; independent topic-class checks, not whole-mapmanualacceptance. Lost content restored0 subjectfocusedreview."
+}
