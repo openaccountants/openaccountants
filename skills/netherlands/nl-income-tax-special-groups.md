@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.1
+# Netherlands: income tax at AOW age, for non-residents, and the box 3 actual-return route (2026) v0.2
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Every figure comes from wetten.overheid.nl, belastingdienst.nl or eerstekamer.nl, read on 23 October 2026. It prepares working papers; it is not authority to file or pay.
 
