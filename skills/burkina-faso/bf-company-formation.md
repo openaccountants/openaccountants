@@ -43,7 +43,7 @@ SA shareholders are liable to the extent of contributions; an SA can have a sing
 
 SAS can have one or several associates with limited liability. Articles organise governance subject to mandatory law; a sole member uses SASU. Capital and nominal share value are fixed in the articles. SAS cannot make a public offering; SA minimum capital is excluded by art. 853-3. [AUSCGIE 2014 arts. 853-1–853-5](https://biblio.ohada.org/doc_num.php?explnum_id=2032).
 
-A regulated activity needs its own authorisation. The seat needs a precise physical/geographical address, not only a PO box. [AUSCGIE 2014 arts. 21, 23–25](https://biblio.ohada.org/doc_num.php?explnum_id=2032).
+A company carrying on a regulated activity must comply with the specific rules applicable to it. The actual sector authorisation/licence package remains unverified. The seat needs a precise physical/geographical address, not only a PO box. [AUSCGIE 2014 arts. 21, 23–25](https://biblio.ohada.org/doc_num.php?explnum_id=2032).
 
 Newly created companies are exempt from MFP for their first operating period and from IS advances for the first period/first IS period; neither rule exempts actual profit from ordinary IS. Use the corporate Guide for figures and annual filing. [CGI 2026 arts. 90–91](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
@@ -127,7 +127,7 @@ The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-2026110
 
 Not yet confirmed: Burkina national SARL capital/nominal exceptions and current execution/deposit derogations; current CEFORE portal, forms, fees, notary budget, end-to-end processing time and registration workflow; UBO identity methodology under the referenced AML law and current declaration form/box IDs; CEFORE-specific UBO step; sole-trader registration, pre-registration commitments and ratification; registry accounts-deposit process and deadlines, licences and blanket annual business-registration renewal; formation/UBO penalties; sector/public-offering capital rules, foreign-owner/branch/immigration/exchange restrictions; authenticated eSINTAX filing and accountant attestation.
 
-Written by OpenAccountants from the cited sources. Independent source review: pending for this rewrite. Accountant attestation: none.
+Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
 
 <!-- openaccountants-cta-block -->
 

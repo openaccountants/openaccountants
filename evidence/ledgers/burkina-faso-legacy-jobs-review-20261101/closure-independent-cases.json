@@ -1,0 +1,82 @@
+[
+  {
+    "id": "formation-SA",
+    "raw_facts": {
+      "subscribed_cash": 12000000
+    },
+    "computed": {
+      "initial": 3000000,
+      "unpaid": 9000000
+    },
+    "arithmetic_pass": true,
+    "legal_scope": "Ordinary SA, cash-only; article 389 restrictions retained."
+  },
+  {
+    "id": "formation-audit",
+    "raw_facts": {
+      "balance": 125000000,
+      "turnover": 250000001,
+      "permanent_staff": 51
+    },
+    "computed": {
+      "strict_excesses": 2,
+      "turnover_at_boundary_excesses": 1
+    },
+    "arithmetic_pass": true,
+    "legal_scope": "Article 376 strict two-of-three; optional/judicial appointment not excluded."
+  },
+  {
+    "id": "overview-profit",
+    "computed": {
+      "accounting_profit": 6000000,
+      "adjusted_profit": 7000000,
+      "turnover_less_adjusted_profit": 17000000
+    },
+    "arithmetic_pass": true,
+    "legal_scope": "Hypothetical known add-back, no independent unstated deduction rule."
+  },
+  {
+    "id": "overview-payroll",
+    "computed": {
+      "tax_accounts": 230000,
+      "social_accounts": 220000,
+      "employee_deductions": 260000,
+      "employer_charges": 190000,
+      "total": 450000,
+      "reconciliation": 0
+    },
+    "arithmetic_pass": true,
+    "legal_scope": "Already computed hypothetical liabilities, no new CNSS rate determination."
+  },
+  {
+    "id": "comparison-CGA",
+    "computed": {
+      "ordinary_profit_tax": "110000.000",
+      "member_profit_tax": "77000.0000",
+      "ordinary_minimum": 300000,
+      "member_minimum": 150000,
+      "member_payable": 150000,
+      "nonmember_payable": 300000,
+      "tax_difference": 150000
+    },
+    "arithmetic_pass": true,
+    "legal_scope": "Established liable RSI company, CGA membership effective, no exemptions or other credits. Articles 87–90/196 conditional comparison confirmed."
+  },
+  {
+    "id": "comparison-TPA-repaired",
+    "raw_facts": {
+      "article228_gross_base": 1000000,
+      "article228_abatement_percent": 20,
+      "article229_percent": 3
+    },
+    "independent_decimal_computation": {
+      "article228_base": 800000,
+      "article228_229_stage_amount": 24000,
+      "before_abatement": 30000,
+      "article228_only_stage_difference": 6000
+    },
+    "arithmetic_pass": true,
+    "legal_scope_pass": true,
+    "scope": "An article-228/229 stage calculation only. Final payable TPA and article-196 cumulation/exclusion are expressly not determined. No 19,200 correct/wrong claim remains."
+  }
+]

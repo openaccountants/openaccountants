@@ -7,8 +7,8 @@
     "original_sha256": "2f09547fd7b312a105c36c2ebc0a3737b36a5331f00925b24f42c1d1510e9594",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "H1: Burkina Faso company formation and entity choice v1.1",
+    "disposition": "Editorial title updated and versioned. The former heading is not an unresolved legal rule."
   },
   {
     "slug": "bf-company-formation",
@@ -18,8 +18,8 @@
     "original_sha256": "8d98f9b6b1930cd36c6a2c6b103a6efb58435ff04ea88e1a84e2ae36078d2cce",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "Who this applies to / Rates, bands and thresholds / The base / Deadlines and filing",
+    "disposition": "Editorial section reorganised into the canonical sections. Entity and incorporation subtopics have the separate destinations below."
   },
   {
     "slug": "bf-company-formation",
@@ -29,8 +29,8 @@
     "original_sha256": "ac3cecaa8ce48ac629512d737f3887afc6630f5d74cdf8a9f946b60710351402",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "Who this applies to: OHADA governing-law paragraph / Sources: signed AUSCGIE",
+    "disposition": "Governing-law substance retained with the actual OHADA Act and its national-law qualification. The secondary incorporation-blog citation is replaced, not carried as legal authority."
   },
   {
     "slug": "bf-company-formation",
@@ -40,8 +40,8 @@
     "original_sha256": "ea13d7958132bef4ace2883ffed17a4df43af8cd483f5630a9f8f30feafabd64",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "The base: SARL liability and one-or-several founders",
+    "disposition": "SARL entity and limited-contribution liability retained under article 309. The unsupported most-common-for-SMEs prevalence claim is retired as marketing, not treated as an unconfirmed legal rule."
   },
   {
     "slug": "bf-company-formation",
@@ -51,8 +51,8 @@
     "original_sha256": "b4e50bb82262e8486bc3e49c78a462e40ba904fdf524e871f5ae2d2b529267be",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "The base: SA shareholders and single shareholder / Rates, bands and thresholds: ordinary SA capital and payment rules",
+    "disposition": "SA entity and share-capital rules retained under articles 385 and 387–389. The larger-ventures suitability description is retired as unsupported marketing; the SA legal topic is not wholly held."
   },
   {
     "slug": "bf-company-formation",
@@ -62,8 +62,8 @@
     "original_sha256": "75e50b1c8005e9efae928eefab63530c634bb9ae5b60d173cf4a5e8f2751b58a",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "The base: SAS/SASU paragraph / Who this applies to / Sources: Not yet confirmed, sole-trader registration",
+    "disposition": "SAS/SASU entity, founder and capital rules retained under articles 853-1–853-5. A sole trader is distinguished from an incorporated company; its national registration procedure remains an explicit hold, rather than being attributed to the corporate Act."
   },
   {
     "slug": "bf-company-formation",
@@ -73,8 +73,8 @@
     "original_sha256": "0a5572d7488766cdcc5f61228a6e6ab9f8aabebdf3c90a32fa351222f7936bfa",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "Rates, bands and thresholds: SARL article 311 row / Sources: Not yet confirmed, national SARL capital and nominal exceptions",
+    "disposition": "The actual OHADA default and express national-derogation qualification replace the secondary claim. Freely-set Burkina capital and an operative Burkina minimum are not cleared. The in-practice estimate is retired as unsupported market practice; repeated FCFA tokens are editorial duplication."
   },
   {
     "slug": "bf-company-formation",
@@ -84,8 +84,8 @@
     "original_sha256": "be059030205c31da637df3ae15774f7f8aced9b602b16ce0fa2d57ebcb6a5e44",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "Rates, bands and thresholds: ordinary SA minimum and nominal-value row",
+    "disposition": "The ordinary SA XOF 10,000,000 figure is retained with article 387 and the special-sector/public-offer limit. Repeated FCFA tokens and the secondary citation are removed; this row does not concern the SARL national exception."
   },
   {
     "slug": "bf-company-formation",
@@ -95,8 +95,8 @@
     "original_sha256": "0807ae9fa8e5bcda734abc4f1c859e045cae8766e85135aaf8521073be0045df",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Rates, bands and thresholds / The base",
-    "disposition": "Replaced by actual OHADA conditions; national SARL exception held; no secondary-source figure adopted."
+    "destination": "Rates, bands and thresholds: SARL default and SA nominal-value rows / The base: SAS capital paragraph / Sources: SARL national-exception hold",
+    "disposition": "The universal share-nominal statement is replaced by entity-specific rules: the SARL article 311 default is subject to the national hold, while SA and SAS nominal values follow their cited articles. The old XOF 5,000 figure is not presented as universal; repeated currency tokens are retired formatting."
   },
   {
     "slug": "bf-company-formation",
@@ -106,8 +106,8 @@
     "original_sha256": "c1879c13b7d860fca36dcded2c0d97403ca4d89e3e7b0c1d032b20500a6d5a44",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Not yet confirmed, current CEFORE portal/forms/registration workflow",
+    "disposition": "The CEFORE/Maison one-stop-shop procedure is not adopted from the secondary source. Current institutional integration, submission route and registration steps remain held; RCCM personality and tax existence declaration have separate positive-law paragraphs in Deadlines and filing."
   },
   {
     "slug": "bf-company-formation",
@@ -117,8 +117,8 @@
     "original_sha256": "ede98743951fb2fc1140d040f17575e4f944b8ae5706a8cd37398ad3fe9c91b9",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Deadlines and filing: beneficial-owner register and tax-declaration paragraphs / Sources: CEFORE-specific UBO step and identity/form holds",
+    "disposition": "Identification, register and tax-declaration obligations are retained under CGI articles 96-1–96-2 and 561-4, with actual timing. The old assertion that the declaration occurs at CEFORE registration is explicitly held; no CEFORE checkbox or AML identity methodology is invented."
   },
   {
     "slug": "bf-company-formation",
@@ -128,8 +128,8 @@
     "original_sha256": "67696ec456ed315d311c52dd13932721e2fbb4be97bd240beb90aa6b96b437aa",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Not yet confirmed, end-to-end processing time and CEFORE workflow",
+    "disposition": "The days-to-weeks estimate is not an established service promise or statutory period. It is withdrawn from operative instructions and the processing-time question remains explicit in the hold."
   },
   {
     "slug": "bf-company-formation",
@@ -139,8 +139,8 @@
     "original_sha256": "a654797bac5e8c7e40d50c3a765accda9311d8bc8c1c324694b4287db6581f4b",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Not yet confirmed, fees and notary budget / Worked example: capital is not formation fees",
+    "disposition": "Neither the sub-EUR-50 registration fee nor the EUR-1,000–1,500 professional budget is adopted. Current official fees and actual professional/notary costs remain held; share capital is explicitly distinguished from those costs."
   },
   {
     "slug": "bf-company-formation",
@@ -150,8 +150,8 @@
     "original_sha256": "74e88f202cc5e63c07eb2f67be2860b70cef7160fb7832d7fd0f0c2841b5893b",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "1e0886800501355a6e1c7cd2d56c6e0e1534255a",
-    "destination": "Deadlines and filing / The base / Sources",
-    "disposition": "Accounting and periodic jobs routed; blanket registration renewal held."
+    "destination": "The base: accounting and periodic-job routes / Deadlines and filing: annual approval, first close and corporate-Guide route / Sources: registry deposit and blanket registration-renewal holds",
+    "disposition": "Annual financial statements/accounting retained with CGI 554–556 and OHADA 137–140; annual IS routed to corporate tax. VAT, IUTS and CNSS returns route to their respective Guide conditions and timing. A blanket monthly schedule and universal annual business-registration renewal are not inferred; registration renewal and registry-deposit procedure remain explicit holds."
   },
   {
     "slug": "bf-tax-overview",
@@ -161,8 +161,8 @@
     "original_sha256": "285b28b95ebea76501e6c37c3011861a53bae887287783a5d017e34e436dcffa",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "H1: Burkina Faso tax overview and routing v1.1",
+    "disposition": "Editorial title updated and versioned; no legal claim is assigned to a hold merely because it was an old heading."
   },
   {
     "slug": "bf-tax-overview",
@@ -172,8 +172,8 @@
     "original_sha256": "c18bd94bdfd81714a62d2fa565689a1145be13f2c2832a086dfe6ebe22c56e15",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Who this applies to / Rates, bands and thresholds: seven source-home table",
+    "disposition": "The at-a-glance layout is retired and reorganised as intake and navigation. Substantive topics are separately mapped below."
   },
   {
     "slug": "bf-tax-overview",
@@ -183,8 +183,8 @@
     "original_sha256": "ff6caadf69be373458d2c56e1b6a3b73e57422329d2f6b58957fbe8cb781d57e",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Who this applies to / Sources",
-    "disposition": "2026 DGI source replaces secondary summary; unverified descriptive facts expressly held."
+    "destination": "Who this applies to / Sources: DGI CGI source row and currency/monetary-union hold",
+    "disposition": "DGI/CGI source attribution retained through the opened official edition. The geographic/language introduction is retired as non-operative editorial context. Currency/monetary-union descriptive claims were not independently sourced in this pass and remain explicitly held, rather than silently verified."
   },
   {
     "slug": "bf-tax-overview",
@@ -194,8 +194,8 @@
     "original_sha256": "00d424ff02c1627c7fd9c661ca226dee8280a67b84bd5a983bad20ca8357f83c",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds: business/corporate source homes / Deadlines and filing: obligation calendar; companion formation Deadlines and filing",
+    "disposition": "A universal calendar-year sentence is replaced by the taxpayer/job-specific period and first-close rules in the corporate, business and formation Guides. Their conditional close/declaration rules remain accessible; the overview does not invent one tax period for every obligation."
   },
   {
     "slug": "bf-tax-overview",
@@ -205,8 +205,8 @@
     "original_sha256": "2937574501a571583789d995d973ea417fb7eeb0effdca5cc0303a4663f38585",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Not yet confirmed, currency/monetary-union descriptive claims",
+    "disposition": "The historic currency/union description is an explicit descriptive-source gap. XOF labels used in the source-owned calculations do not by themselves attest to every monetary-union statement in the old bullet."
   },
   {
     "slug": "bf-tax-overview",
@@ -216,8 +216,8 @@
     "original_sha256": "762c016b1931730b1af4b72c6e52c7b1201a58e801ce1235306212bfe933a8f2",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Who this applies to / Sources",
-    "disposition": "2026 DGI source replaces secondary summary; unverified descriptive facts expressly held."
+    "destination": "Who this applies to: official DGI CGI basis / Sources: DGI official edition",
+    "disposition": "DGI authority attribution retained through the actual official source. The former ministry-organisation wording is not restated as an independently checked current institutional claim."
   },
   {
     "slug": "bf-tax-overview",
@@ -227,8 +227,8 @@
     "original_sha256": "10f153a38643d66715c661ddf52151c71bf310f3de486ef107f46d26b11ff883",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Who this applies to: old source-only residence statement not adopted / Cross-border points / Sources: habitual-abode/source-only rule and foreign-income holds",
+    "disposition": "The blanket resident/source-only statement is not adopted. Residence, foreign income and treaty/PE questions remain explicitly unfinished; the payroll source home has its own bounded salary rules and is not a general residence clearance."
   },
   {
     "slug": "bf-tax-overview",
@@ -238,8 +238,8 @@
     "original_sha256": "1883b29d4f9d41954bf3d0b793daba3d3317518d8aa1c4f6d69940f29cb47d9f",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Rates, bands and thresholds: seven figure homes / Deadlines and filing",
-    "disposition": "Routed to the source-owned Guide with its conditions; old unsourced generic figures/deadlines not repeated."
+    "destination": "Rates, bands and thresholds: PR payroll source home",
+    "disposition": "IUTS rate/band questions route to bf-payroll.md, Rates, bands and thresholds, with the actual base/family conditions and source. The isolated old top-rate headline is not duplicated as a complete personal-income-tax system."
   },
   {
     "slug": "bf-tax-overview",
@@ -249,8 +249,8 @@
     "original_sha256": "e852a5ee5817d71e7c08fb0f685a37c1f885ce3e5158a1388378714073c41bd0",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Rates, bands and thresholds: seven figure homes / Deadlines and filing",
-    "disposition": "Routed to the source-owned Guide with its conditions; old unsourced generic figures/deadlines not repeated."
+    "destination": "Rates, bands and thresholds: IT-CORP corporate source home",
+    "disposition": "The ordinary IS figure routes to bf-corporate-tax.md, Rates, bands and thresholds, alongside taxable-base, minimum, CGA and exemption conditions. The secondary rate citation is replaced at its source home."
   },
   {
     "slug": "bf-tax-overview",
@@ -260,8 +260,8 @@
     "original_sha256": "f0b5b380ae74fca34dacc06f888356c5de491b17b2e38a74e55a145bbda82b4f",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Rates, bands and thresholds: seven figure homes / Deadlines and filing",
-    "disposition": "Routed to the source-owned Guide with its conditions; old unsourced generic figures/deadlines not repeated."
+    "destination": "Rates, bands and thresholds: VAT source home",
+    "disposition": "VAT existence, standard rate and qualifying special rates route to bf-vat.md, Rates, bands and thresholds. The former secondary citation and isolated 18% headline are not copied without scope and exceptions."
   },
   {
     "slug": "bf-tax-overview",
@@ -271,8 +271,8 @@
     "original_sha256": "fb71fd7be444fa1876d590069699b9c0c47ea31de7634a309d78af3aa1ce3e64",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Rates, bands and thresholds: seven figure homes / Deadlines and filing",
-    "disposition": "Routed to the source-owned Guide with its conditions; old unsourced generic figures/deadlines not repeated."
+    "destination": "Deadlines and filing: obligation calendar / Rates, bands and thresholds: corporate source home",
+    "disposition": "Annual IS filing routes to bf-corporate-tax.md, Deadlines and filing, including the distinct ordinary and insurance/reinsurance periods and year mapping. The approximate generic deadline is replaced by that source-owned conditional treatment."
   },
   {
     "slug": "bf-tax-overview",
@@ -282,8 +282,8 @@
     "original_sha256": "0d5656afcbc03470ddbaccb020724601584080528097998ad310e5a62002b7dc",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "f2809200dbfda3e837eba5677783fd1baa981ba7",
-    "destination": "Rates, bands and thresholds: seven figure homes / Deadlines and filing",
-    "disposition": "Routed to the source-owned Guide with its conditions; old unsourced generic figures/deadlines not repeated."
+    "destination": "Deadlines and filing: job-specific calendar / Rates, bands and thresholds: payroll source home / Sources: universal tenth-day claim hold",
+    "disposition": "Employer withholding/remittance routes to bf-payroll.md, Deadlines and filing, for the actual taxpayer-frequency and annual branches. The old universally first-ten-days monthly rule is expressly not adopted."
   },
   {
     "slug": "bf-tax-optimization",
@@ -293,8 +293,8 @@
     "original_sha256": "59d96b649092b5992c9e3745fcb4266489354f8406694504545779a05e5af03d",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "H1: Burkina Faso lawful tax comparisons v1.1",
+    "disposition": "Editorial title replaced and versioned to describe conditional workpapers rather than promise optimisation outcomes."
   },
   {
     "slug": "bf-tax-optimization",
@@ -304,8 +304,8 @@
     "original_sha256": "620d73df2a4e3440b1bd557e8cd496279af77bd8d113a5ab9ede7f2a1c3f1412",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "H1: Burkina Faso lawful tax comparisons v1.1 / canonical section headings",
+    "disposition": "Duplicate legacy title/version heading retired. It is formatting, not an unconfirmed tax rule."
   },
   {
     "slug": "bf-tax-optimization",
@@ -315,8 +315,8 @@
     "original_sha256": "495f3c870a9cc6d14aa5b8f1a28d36430d576d4f0bcb9085c2a7ebd949e12e11",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Standard opening General reference only notice / Who this applies to / Sources: source-read and review-state paragraphs",
+    "disposition": "The source-draft, lawful-scope and pending-professional-review substance is replaced by the standard notice, actual source dates and explicit pending independent review/no attestation. The obsolete undated instruction to confirm all figures is replaced by individual ledgers and named holds."
   },
   {
     "slug": "bf-tax-optimization",
@@ -326,8 +326,8 @@
     "original_sha256": "a77452c78c1041fdda1afd9c7d3cc3e9bc1afea8eb416a02857971bce5615453",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds",
+    "disposition": "Quick-reference heading retired as part of canonical editorial reorganisation; each substantive table row has its own destination below."
   },
   {
     "slug": "bf-tax-optimization",
@@ -337,8 +337,8 @@
     "original_sha256": "412ec7c8f71ebb73a98406198c2c43a749aa8289cd6c125ec99c7aaf7a80af87",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds / Sources: CGI 2026 article-specific source row and figure/rule ledger",
+    "disposition": "The old table caption and blanket article citation are replaced by the current conditional rows, exact article citations and ledger. The caption itself is editorial, not held law."
   },
   {
     "slug": "bf-tax-optimization",
@@ -348,8 +348,8 @@
     "original_sha256": "1824849c9b30da5cac9f463382b2c0bdc0b6c6f9f15fc8e34fb2cd53cc6de0b5",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds: Item and conditions / Source header",
+    "disposition": "The old Field/Value table header is retired and replaced with a conditions-and-source layout. No substantive rule is lost."
   },
   {
     "slug": "bf-tax-optimization",
@@ -359,8 +359,8 @@
     "original_sha256": "831f11e7d7026bc2402e464ae6714a93218f622321805bfb5339d48bd550dfde",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds: table formatting",
+    "disposition": "The old Markdown separator is retired formatting. It has no legal content and is not an unresolved rule."
   },
   {
     "slug": "bf-tax-optimization",
@@ -370,8 +370,8 @@
     "original_sha256": "f2b5b82b9ba718dc3ddc898d12bddeefbf8c73942ee3cab761443894a0b740c8",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "H1 / description / jurisdiction: BF / Who this applies to",
+    "disposition": "Country identity retained as Burkina Faso. The duplicate Country table row is retired metadata."
   },
   {
     "slug": "bf-tax-optimization",
@@ -381,8 +381,8 @@
     "original_sha256": "09166ca7f52aad67acf3a4b8290641c77038356eacd0cfab9c59d92c2bc204b6",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds: XOF-denominated conditions / Worked examples",
+    "disposition": "The computational currency labels are retained as XOF in the source-backed figures; the duplicate Currency metadata row is retired. This row did not independently establish a monetary-union legal rule."
   },
   {
     "slug": "bf-tax-optimization",
@@ -392,8 +392,8 @@
     "original_sha256": "161512bd566f5eac98f17c8caa09c4ba70fe9a0c59699ff7ac15485a23bcd709",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: CME subregime/exclusion row / The base: CME substitution and VAT options / business Guide tariff route",
+    "disposition": "The XOF 15m boundary is retained with separate natural/legal-person subregimes and exclusions. The old all-flat-tax and simplest claims are superseded by the actual declarative/forfait conditions and routed tariffs; no universal VAT exemption or lowest-administration guarantee is adopted."
   },
   {
     "slug": "bf-tax-optimization",
@@ -403,8 +403,8 @@
     "original_sha256": "8725c53c4bc13ebd20ad281016a72f4617c1d2107d9d764c599df43a358c75c8",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: RSI row / Deadlines and filing: normal SYSCOHADA and option conditions / The base: VAT scope/options",
+    "disposition": "The RSI turnover range is retained with time apportionment, excluded-CME persons and change notification. The simplified-accounting assertion is corrected to the statutory normal SYSCOHADA requirement; the categorical VAT slogan is replaced by the cited scope/option boundaries and current VAT-Guide holds."
   },
   {
     "slug": "bf-tax-optimization",
@@ -414,8 +414,8 @@
     "original_sha256": "b861002b27e994d26b6c2f1ba70793a22107e5272757001d707cfc42f05fd695",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: RNI row / Deadlines and filing: accounts and RNI election / The base: ordinary VAT scope",
+    "disposition": "The XOF 50m threshold and accounting/VAT topics are retained with start-year apportionment, downward-history test, taxable-business conditions and separate special options. Must/may is replaced by sourced conditions rather than an unexplained choice."
   },
   {
     "slug": "bf-tax-optimization",
@@ -425,8 +425,8 @@
     "original_sha256": "bb906358b3caccdbffc5ea23accf804ec237202312748e60c9bcddbeff3e1652",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: IBICA CGA and RSI incentives rows / corporate and business source homes / Sources: IBNC branches hold",
+    "disposition": "IBICA 30% relief and the conditional RSI profit-tax relief are retained separately. The old joint IBICA/IBNC generalisation is not treated as cleared for every case: uncomputed IBNC reduction/exemption branches remain explicitly held and the underlying business computation is routed."
   },
   {
     "slug": "bf-tax-optimization",
@@ -436,8 +436,8 @@
     "original_sha256": "93b88cf5a5babb9149635f2cd4aacf4a1633466625d61b68b7e98c6b44aa7449",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: IBICA minimum, RSI incentives and company minimum rows / Worked examples: controlling minimum",
+    "disposition": "The 50% CGA MFP reduction is retained under the relevant taxpayer provisions and compared with ordinary profit tax. It is not assumed to remove the minimum or to establish net savings after membership costs."
   },
   {
     "slug": "bf-tax-optimization",
@@ -447,8 +447,8 @@
     "original_sha256": "8d9a641eafd52047062aaeff75bace5b13a9c49bf6f32088d645c45d2ad57c14",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: CME CGA row",
+    "disposition": "The 25% CME contribution reduction is retained under article 197, separately from profit-tax relief and subject to the membership-evidence hold."
   },
   {
     "slug": "bf-tax-optimization",
@@ -458,8 +458,8 @@
     "original_sha256": "f964d86920ee40610e574a31c3c642343afac6d5e2b1782c1b4eaed9eb0c3b08",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: article 228 TPA base row / Worked examples: article-228-only illustration / Sources: article 196 interaction hold",
+    "disposition": "The 20% article 228 base abatement and article 229 3% arithmetic are retained. The bounded example uses XOF 1m to XOF 800k to XOF 24k, versus XOF 30k before that base abatement: XOF 6k article-228 effect only. Neither cumulative nor exclusive treatment with the separate article 196 relief is settled; no final-payable or double-discount verdict is claimed."
   },
   {
     "slug": "bf-tax-optimization",
@@ -469,8 +469,8 @@
     "original_sha256": "31f14ff9631b689b2b7b27da55a2d51569544c8938e73be7b1134ff8270a799a",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: IBICA and company first-operating-period minimum exemptions / Sources: uncomputed IBNC branches",
+    "disposition": "The minimum-only exemption is retained for the actual first operating period under articles 27 and 90. It is not a general exemption of taxable profit or an assumption that every first period is one calendar year; other uncomputed branches remain held."
   },
   {
     "slug": "bf-tax-optimization",
@@ -480,8 +480,8 @@
     "original_sha256": "fb2e20a59d449eb19089c2be419ee5286557319060144140e738d08473f58f02",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Deadlines and filing: distinct CME-to-RSI and RSI-to-RNI election paragraphs",
+    "disposition": "The deadline and three-year duration are retained separately for articles 535 and 530, including letters, effective dates, approval/silence conditions, taxpayer prerequisites and withdrawal rules. The old generic option row is replaced by these distinct paths."
   },
   {
     "slug": "bf-tax-optimization",
@@ -491,8 +491,8 @@
     "original_sha256": "0de3299124bdfd222b74e4ce72c656a837fcdc229fd16161840f6ddebcbff83c",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "The base: ordinary VAT scope and special article 301 options / Sources: special-option/import/exemption interactions hold / VAT source home",
+    "disposition": "The absolute only-RNI slogan is superseded by the actual ordinary RNI scope and named special options. Input recovery and invoicing conditions remain in the VAT Guide; unverified execution/import interactions are expressly held."
   },
   {
     "slug": "bf-tax-optimization",
@@ -502,8 +502,8 @@
     "original_sha256": "5ce09af9da47d828f728f88877d0dacb39f5e12de8dff9028ec9094305813062",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: DGI official CGI 2026 source row",
+    "disposition": "DGI source attribution retained; the duplicate Authority metadata row is retired."
   },
   {
     "slug": "bf-tax-optimization",
@@ -513,8 +513,8 @@
     "original_sha256": "1108346bb0903d65b20ee48cdf13847fd31fe5014c2c44381987c6191d19a7f6",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: CGI 2026 source row / individual conditional rows and figure/rule ledger",
+    "disposition": "The old parent-law/blanket-articles metadata is retired and replaced by the opened 2026 edition, article-level citations, read scope and original-language quotes. No claim of a whole-volume read is made."
   },
   {
     "slug": "bf-tax-optimization",
@@ -524,8 +524,8 @@
     "original_sha256": "c3bfbd793a80ce1ce852bc2a46ce7c370f6e005a91478a8f939d8f7edc85d319",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Written by OpenAccountants paragraph",
+    "disposition": "Old Open Accounting Skills Registry contributor metadata retired. The current actual writer attribution replaces it; this is not a pending legal question."
   },
   {
     "slug": "bf-tax-optimization",
@@ -535,8 +535,8 @@
     "original_sha256": "e945fb718e65741994df9b3c1213669e4f5595c70dd18c3c1fe98132ba77fabc",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: pending independent source review / Accountant attestation: none",
+    "disposition": "The old Pending validation metadata is replaced by separate factual source-review and professional-attestation states. It does not award validation or attestation."
   },
   {
     "slug": "bf-tax-optimization",
@@ -546,8 +546,8 @@
     "original_sha256": "a75a792ee8bd68079775783b128eef62daf31d08e34372d402e617b604c4fcc4",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: Read on 2026-11-01 and actual source scope / last_updated frontmatter",
+    "disposition": "The old June 2026 research metadata is retired and replaced by the recorded actual read date/scope. An obsolete date is not an unconfirmed legal rule."
   },
   {
     "slug": "bf-tax-optimization",
@@ -557,8 +557,8 @@
     "original_sha256": "0a490837a788e250cd2a52f338d2cdf470e757287b3ebac6e53410ab21b31df4",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds / Deadlines and filing / The base",
+    "disposition": "Regime-choice heading retired and reorganised into the canonical sections. Its substantive turnover/election/TVA topics are individually mapped below."
   },
   {
     "slug": "bf-tax-optimization",
@@ -568,8 +568,8 @@
     "original_sha256": "7db422ca27fba64e146396945cdc12b9e0e7dd81312d580bf378b0c4bec9dc72",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds / article-level ledger and Sources",
+    "disposition": "The repeated table caption and generic citation are retired in favour of the actual conditional rows and precise sources; no legal rule is assigned to an unresolved-caption hold."
   },
   {
     "slug": "bf-tax-optimization",
@@ -579,8 +579,8 @@
     "original_sha256": "9de3d12650414c342be3586b499eff9b83cb7e6dabba3b0776da3f15201ec496",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: conditions/source table / The base: legal-form and VAT distinctions",
+    "disposition": "The Turnover/Regime/Tax basis/TVA header is retired formatting. The underlying classification and computation topics remain in the named rows and source homes."
   },
   {
     "slug": "bf-tax-optimization",
@@ -590,8 +590,8 @@
     "original_sha256": "f1a346b3c63ca7ac887076df3f598cbd2f85f0c97e31d43fb3803be524f20102",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Rates, bands and thresholds: table formatting",
+    "disposition": "The old four-column Markdown separator is retired formatting, with no legal content."
   },
   {
     "slug": "bf-tax-optimization",
@@ -601,8 +601,8 @@
     "original_sha256": "22109e9a66378ba0aa8aedd8972e97b1aee390095a2a4b9119b6f932d6e12664",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: CME natural/legal-person subregimes / The base: business tariff route and VAT boundaries",
+    "disposition": "The sub-XOF-15m classification is retained with exclusions and the actual declarative/forfait split. Full class/zone and ambulant tariffs route to bf-income-tax.md; the old universally flat and no-VAT row is not adopted without those conditions."
   },
   {
     "slug": "bf-tax-optimization",
@@ -612,8 +612,8 @@
     "original_sha256": "ae16b2a0ce845434b6f114cf6f67cb9d333a2dec8dc2f4ed6dcfc21ed492c483",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: RSI conditions / The base: company minimum calculation / corporate and business source homes",
+    "disposition": "RSI classification and source-conditioned minimum are retained. Individual IBICA/IBNC progressive computation routes to bf-income-tax.md; companies use their distinct IS rules and the RSI minimum/CGA example. The old progressive-profit table is not applied indiscriminately to companies, and the blanket No TVA cell is superseded by the VAT scope/options treatment."
   },
   {
     "slug": "bf-tax-optimization",
@@ -623,8 +623,8 @@
     "original_sha256": "c06158404c7daf4954d812a3d02f5f9e1b827f592c06c0362aab765e9aa9c7d1",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: RNI conditions / The base: corporate-Guide full RNI branches / business and VAT source homes",
+    "disposition": "RNI threshold and normal accounts/VAT topics are retained conditionally. The RNI minimum and entity-specific profit calculation route to bf-corporate-tax.md or bf-income-tax.md rather than forcing individual brackets on companies; the old unconditional Yes TVA cell is replaced by taxable-business scope and exceptions."
   },
   {
     "slug": "bf-tax-optimization",
@@ -634,8 +634,8 @@
     "original_sha256": "4f3ee18079682d472a3a30d08f4f982fec071d06fa964340b59efc4c84a5a0d2",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Who this applies to: no guaranteed saving / Ask the client first: inputs, customer contracts and actual costs / The base: CME and VAT boundaries",
+    "disposition": "The unsupported lowest-cost/lowest-administration claim is retired as a commercial comparison. CME classification and VAT input/customer implications are retained as conditional workpaper inputs and source-home questions, with no automatic best-regime conclusion."
   },
   {
     "slug": "bf-tax-optimization",
@@ -645,8 +645,8 @@
     "original_sha256": "34e8e2310e8fb8732364804d2448f6b26c034dc2828e3fca5c7a9289450ed5fc",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: RNI/RSI threshold and start-year rules / The base: ordinary VAT scope / Ask the client first",
+    "disposition": "The growth-threshold topic is retained with actual taxable-business and apportionment conditions. Customer contracts, input eligibility and pricing facts are requested; no unsupported instruction to suppress growth or universal VAT outcome is issued."
   },
   {
     "slug": "bf-tax-optimization",
@@ -656,8 +656,8 @@
     "original_sha256": "3de98b7ffa513f24907e9ed2ab91be531019df6cde0ed140f1de98298525df6e",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: downward-history tests / Deadlines and filing: separate articles 530 and 535 elections",
+    "disposition": "The three-year downward tests and dated options are retained with their distinct conditions, rather than a single rule for every regime change."
   },
   {
     "slug": "bf-tax-optimization",
@@ -667,8 +667,8 @@
     "original_sha256": "f87869e8d68d38e608f470f88c79d572264550dfdacd47219f55195c32f12eb2",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: separate CGA rows / Worked examples",
+    "disposition": "The CGA heading is editorially reorganised; relief, eligibility and cost questions remain in the individual rows, cases and holds."
   },
   {
     "slug": "bf-tax-optimization",
@@ -678,8 +678,8 @@
     "original_sha256": "706340702a6af67e024c62d5350775fdbf0ca6e410cb2fbcd151bcd6799aae28",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: IBICA, RSI, MFP, CME and TPA rows / Worked examples / Sources: IBNC, membership evidence and TPA-interaction holds",
+    "disposition": "All four relief topics are retained or specifically held: IBICA/conditional RSI profit relief, separate minima, CME contribution relief and article 228 TPA base relief. Uncomputed IBNC branches and article 196/228 interaction remain held. The single-largest-lever claim is retired as an unsupported comparative guarantee, not disguised as law."
   },
   {
     "slug": "bf-tax-optimization",
@@ -689,8 +689,8 @@
     "original_sha256": "2b8dbd3f589b7bd58241cd717f24c8061fc33bc90da6c57d6ca2c9fa2345f123",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds / The base / Sources: specialist incentives holds",
+    "disposition": "The New-business and other levers heading is retired editorial organisation. Its actual minimum, VAT and liberal-profession topics map separately below; no unresearched incentive is created by the heading."
   },
   {
     "slug": "bf-tax-optimization",
@@ -700,8 +700,8 @@
     "original_sha256": "c52c65f3f72106222c164ac5b752072bdb8e1a9f93e1d78152d33723961d3275",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / Worked examples",
-    "disposition": "Current source conditions restored; minimum comparison and one-time TPA abatement replace blanket savings claim."
+    "destination": "Rates, bands and thresholds: first-operating-period minimum exemptions / Worked examples: established-company comparison / Sources: other branches",
+    "disposition": "The sourced minimum-only first-operating-period exemption is retained; it is not a general profit-tax holiday. The unsourced recommendation to time investment for a guaranteed benefit is retired. Actual start date, period and costs are requested before comparing alternatives."
   },
   {
     "slug": "bf-tax-optimization",
@@ -711,8 +711,8 @@
     "original_sha256": "e4a44db3c2e622a7f1f20180e91956102a47b50fd38f77576acfadda6ef3b8ae",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "The base: VAT scope and special options / Ask the client first: input eligibility, customers and contracts / VAT source home and Sources holds",
+    "disposition": "VAT registration/recovery and customer-mix topics are retained as conditional questions. The absolute only-RNI rule and automatic RSI/CME-avoids-all-VAT-administration suggestion are superseded by the actual ordinary/special scope and explicit unresolved interactions; no net-benefit conclusion is assumed."
   },
   {
     "slug": "bf-tax-optimization",
@@ -722,8 +722,8 @@
     "original_sha256": "ad50308fbe954cf84045e557ef8dcd5ee99fb9795b47f769806def0be67852d2",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Rates, bands and thresholds: CME exclusion and RSI/RNI classification / Who this applies to and business-income source home",
+    "disposition": "The liberal-profession exclusion from CME is retained under article 534. Actual IBNC computation and legal-form treatment route to bf-income-tax.md and the corporate/partnership source home where relevant; no universal personal-tax treatment is inferred from turnover alone."
   },
   {
     "slug": "bf-tax-optimization",
@@ -734,7 +734,7 @@
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
     "destination": "Who this applies to / Ask the client first / Worked examples",
-    "disposition": "No evasion or assumed best regime; obsolete ban on all computation replaced by executable source-based workpapers."
+    "disposition": "The Prohibitions heading is retired editorial organisation. Its behavioural and arithmetic instructions have the separate dispositions below."
   },
   {
     "slug": "bf-tax-optimization",
@@ -744,8 +744,8 @@
     "original_sha256": "0d9c3b30cec5dd2b3dff24300ac2420685f5c90d97a518ec8b08b1dd73f10cd4",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Who this applies to / Ask the client first / Worked examples",
-    "disposition": "No evasion or assumed best regime; obsolete ban on all computation replaced by executable source-based workpapers."
+    "destination": "Who this applies to: no artificial splitting, under-declaration or evasion",
+    "disposition": "The no-evasion instruction is retained as the workflow boundary. It is not an independent exemption, election or tax-rate claim."
   },
   {
     "slug": "bf-tax-optimization",
@@ -755,8 +755,8 @@
     "original_sha256": "ac19418c24019e76c3138b62c69e14c88ebb1e99dcbc99fb608cdc0847481194",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Who this applies to: conditional alternatives / Ask the client first: input VAT, customer contracts and actual costs",
+    "disposition": "The no-automatic-CME-best instruction is retained through evidence-based comparison and actual-cost inputs. No blanket best-regime recommendation is made."
   },
   {
     "slug": "bf-tax-optimization",
@@ -766,8 +766,8 @@
     "original_sha256": "0051ecdbed9a4426a8cbaacb0c166ca31c31f4c6d5cbb1ea10393861db86c905",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Who this applies to / Ask the client first / Worked examples",
-    "disposition": "No evasion or assumed best regime; obsolete ban on all computation replaced by executable source-based workpapers."
+    "destination": "Two worked examples that recompute",
+    "disposition": "The obsolete never-compute-numbers implementation instruction is expressly retired. Two executable, source-conditioned workpaper cases now recompute the amounts; this is an editorial workflow change, not removal of a legal rule."
   },
   {
     "slug": "bf-tax-optimization",
@@ -777,8 +777,8 @@
     "original_sha256": "3ebf0e02f343cbf8c586455af7ea78fdaf32b2379fac6e61ddb2ed7ecfcd369b",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Sources: actual 2026 read scope, individual source ledger, pending independent review and named holds",
+    "disposition": "The general instruction to confirm sources is replaced by traceable actual read records and unresolved items. It is not represented as completed independent review or professional attestation."
   },
   {
     "slug": "bf-tax-optimization",
@@ -788,8 +788,8 @@
     "original_sha256": "694d80a0c515e397a6f7fffe8d899d7eff3724673440d179a00c2995d439b15a",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Sources: Not yet confirmed",
-    "disposition": "Explicit hold or superseded source claim; not silently adopted."
+    "destination": "Standard opening General reference only notice / Sources: review and attestation status / preserved platform CTA",
+    "disposition": "The old Disclaimer heading is retired and its warning function moves to the standard opening and preserved closing blocks. A heading is not an unresolved tax claim."
   },
   {
     "slug": "bf-tax-optimization",
@@ -799,8 +799,8 @@
     "original_sha256": "4e3b312acb88c4f81851bc2d2aff0786a390b4fecf7360cea57e5d31bd75e5e2",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Standard opening General reference only notice / preserved platform CTA disclaimer / Sources: accountant attestation none",
+    "disposition": "Information-only, no-person-specific-advice and professional-review substance is replaced by the standard General reference notice and unchanged platform disclaimer. The old body liability-waiver sentence is retired rather than claimed as copied verbatim. No current professional sign-off is asserted."
   },
   {
     "slug": "bf-tax-optimization",
@@ -810,7 +810,7 @@
     "original_sha256": "a4dfc0f29268122e649f57ce3f1b709f550f1d8b76ef3bdb5ee1a8c853b76bbd",
     "baseline_commit": "60bba17a2c729f4369b7b7abf5488591b712aa99",
     "baseline_blob": "3b936f3e1b5b45d3dec027fcdbe695ca09110390",
-    "destination": "Rates, bands and thresholds / The base / Deadlines and filing",
-    "disposition": "Current legal-form/subregime/option/exception conditions replace generic regime slogan; full tariff routed."
+    "destination": "Sources: pending independent source review and no accountant attestation / preserved platform CTA website contact",
+    "disposition": "The old body assertion that the website version is the most-up-to-date verified version is expressly retired as an unsupported trust/currentness guarantee. The website remains a contact/reference in the unchanged platform CTA, whose preservation is not evidence of current source verification or accountant attestation."
   }
 ]

@@ -113,7 +113,7 @@
     {
       "id": "F12",
       "section": "The base",
-      "rule": "A regulated activity needs its own authorisation. The seat needs a precise physical/geographical address, not only a PO box.",
+      "rule": "A company carrying on a regulated activity must comply with the specific rules applicable to that activity; the actual sector authorisation/licence package remains unverified. The seat needs a precise physical/geographical address, not only a PO box.",
       "act_article": "AUSCGIE 2014 arts. 21, 23–25",
       "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
       "quote": "ne peut pas etre constitue uniquement par une domiciliation a une boite postale",
@@ -226,11 +226,14 @@
       "id": "V2",
       "section": "The base",
       "rule": "Separate owner business profit, company profit, remuneration, VAT, social contributions, controlled transactions and foreign-service withholding into seven source homes. Do not repeat a headline rate without the linked Guide’s conditions.",
-      "act_article": "CGI 2026 arts. 1, 28, 42, 105, 210, 225, 296 and table of contents",
+      "act_article": "CGI 2026 arts. 1, 28, 42, 66, 105, 210, 227, 296 and table of contents",
       "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
       "quote": "Impôt sur les sociétés",
       "read_date": "2026-11-01",
-      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+      "read_scope": "Original CGI arts.65–66 physical36–37 (including control/dependency definition and privileged-regime exception), art.227 TPA physical100, plus cited routing provisions and neighbours; not whole volume.",
+      "additional_quotes": [
+        "les bénéfices indirectement transférés"
+      ]
     },
     {
       "id": "V3",
@@ -276,11 +279,14 @@
       "id": "V7",
       "section": "Cross-border points",
       "rule": "Before cross-border calculations identify service/use/place, payer, recipient establishment, control and any claimed treaty. Non-resident services withholding is a narrow job, not complete treaty/PE/residence/exit coverage.",
-      "act_article": "CGI 2026 arts. 46–47, 65, 210–214, 303–306",
+      "act_article": "CGI 2026 arts. 46–47, 65–66, 210–214, 303–306",
       "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
       "quote": "Sous réserve des dispositions",
       "read_date": "2026-11-01",
-      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+      "read_scope": "Original CGI arts.65–66 physical36–37 (including control/dependency definition and privileged-regime exception), art.227 TPA physical100, plus cited routing provisions and neighbours; not whole volume.",
+      "additional_quotes": [
+        "les bénéfices indirectement transférés"
+      ]
     },
     {
       "id": "V8",
@@ -427,12 +433,16 @@
     {
       "id": "P13",
       "section": "Rates, bands and thresholds",
-      "rule": "CGA employers have a 20% TPA base abatement; TPA is 3% of the applicable base. This is an employer tax, not an employee IUTS reduction. Do not stack the same 20% relief twice by treating art. 196 and art. 228 as two discounts.",
-      "act_article": "CGI 2026 arts. 228–229",
+      "rule": "Article 228 grants CGA employers a 20% TPA base abatement and article 229 sets 3% of the applicable base. Article 196 separately states a 20% TPA reduction for RSI CGA members. The interaction, including cumulation or exclusion, is unresolved; an article-228-only illustration is not a final payable amount for article-196 eligibility.",
+      "act_article": "CGI 2026 arts. 196(2), 228–229",
       "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
       "quote": "abattement de 20 %",
       "read_date": "2026-11-01",
-      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume",
+      "additional_quotes": [
+        "réduction de 20 % de la taxe",
+        "abattement de 20 %"
+      ]
     },
     {
       "id": "P14",
@@ -488,11 +498,14 @@
       "id": "P19",
       "section": "Cross-border points",
       "rule": "A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper.",
-      "act_article": "CGI 2026 arts. 65, 98-1–98-2, 210–214",
+      "act_article": "CGI 2026 arts. 65–66, 98-1–98-2, 210–214",
       "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
       "quote": "entreprises",
       "read_date": "2026-11-01",
-      "read_scope": "Selected CGI article and neighbouring conditions, not the whole volume"
+      "read_scope": "Original CGI arts.65–66 physical36–37 (including control/dependency definition and privileged-regime exception), art.227 TPA physical100, plus cited routing provisions and neighbours; not whole volume.",
+      "additional_quotes": [
+        "les bénéfices indirectement transférés"
+      ]
     },
     {
       "id": "P20",

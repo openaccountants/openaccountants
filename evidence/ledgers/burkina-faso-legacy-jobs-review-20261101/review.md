@@ -1,0 +1,11 @@
+# Independent review of the final three Burkina Faso legacy jobs
+
+Reviewed frozen head `a22c17fe02db1b682133cd15c80987007fbada6c`, content commit `573d2cff08532bb8a2ea21628777a2d2c617a7b7`, against prior accepted head `60bba17a2c729f4369b7b7abf5488591b712aa99` on 2026-11-01. This is a fresh source review of formation, overview and lawful comparisons only.
+
+The complete initial pass checked all 50 grouped rule/routing records against the actual official cached sources, all 74 immutable predecessor entries and their destinations, all six worked cases independently, 45 mechanical shape checks, all seven earlier accepted Guides and every earlier evidence blob. The immutable predecessor inventory, protected Guides, platform fields and full CTA suffixes pass. All six arithmetic checks pass. Source fidelity requires the four corrections in `findings.json`; there is no acceptance yet.
+
+The substantive correction is the unsupported categorical claim that the second TPA relief is legally wrong. The actual CGI separately states a 20% RSI member tax reduction and a 20% member base abatement. A targeted Ministry-source check lists these as separate measure cards. This does not prove a final cumulative treatment either. The Guide must not choose a legal outcome while simultaneously marking the interaction unresolved. A bounded article-228-only illustration can preserve the arithmetic and the explicit unresolved interaction.
+
+Other corrections concern the regulated-activity authorisation overstatement, wrong/missing source article references, and inaccurate boilerplate predecessor destinations. Actual page 95 visually confirms the single-shareholder SA sentence missing from the text extraction, and pages 95–96 confirm all SA subscription/payment/nominative-share/financing restrictions already preserved in the draft.
+
+This review does not certify national SARL derogations, CEFORE fees or processing, current authenticated forms, UBO identification methodology, wider incentives, complete 2026 law or filing, professional attestation, merger readiness or comprehensive country coverage. All seven domains remain partial. Existing review receipts remain unchanged. No Guide was edited and no commit or push was made by this reviewer.

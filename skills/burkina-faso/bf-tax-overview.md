@@ -34,7 +34,7 @@ Formation and lawful-choice comparisons are separate companion jobs; use primary
 | VAT: rates, input conditions, withholding and refunds | [VAT](bf-vat.md) | [CGI arts. 296–334](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | PR: IUTS and employer TPA | [Payroll](bf-payroll.md) | [CGI arts. 105–116, 227–233](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | SC: labelled CNSS source/form statements and unresolved controlling law | [Social contributions](bf-social-contributions.md) | [CNSS contribution guidance](https://cnssbf.org/?p=2078) |
-| TP: controlled prices and distinct documentation tests | [Transfer pricing](bf-transfer-pricing.md) | [CGI arts. 65, 98-1–98-2](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| TP: controlled prices and distinct documentation tests | [Transfer pricing](bf-transfer-pricing.md) | [CGI arts. 65–66, 98-1–98-2](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | XB: the particular non-resident services withholding job | [Non-resident services](bf-nonresident-services-withholding.md) | [CGI arts. 210–214](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 
 Each figure has one home. This table is navigation, not seven completed domains. All remain partial; the social Guide expressly separates signed orders, authority guidance and unverified controlling law.
@@ -42,7 +42,7 @@ Each figure has one home. This table is navigation, not seven completed domains.
 
 ## The base
 
-Separate owner business profit, company profit, remuneration, VAT, social contributions, controlled transactions and foreign-service withholding into seven source homes. Do not repeat a headline rate without the linked Guide’s conditions. [CGI 2026 arts. 1, 28, 42, 105, 210, 225, 296 and table of contents](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+Separate owner business profit, company profit, remuneration, VAT, social contributions, controlled transactions and foreign-service withholding into seven source homes. Do not repeat a headline rate without the linked Guide’s conditions. [CGI 2026 arts. 1, 28, 42, 66, 105, 210, 227, 296 and table of contents](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
 Compute business/company profit from accounts and statutory adjustments, not gross turnover. Turnover still selects regime/minimum tests; customer VAT collected is not an ordinary profit-tax rate. [CGI 2026 arts. 4, 48–53, 527–529](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
@@ -65,7 +65,7 @@ Route a default by the breached obligation and its date. Ordinary profit, VAT an
 
 Individual residence/foreign income, investment income, rental/property taxes, permanent-establishment attribution, treaty relief, customs, exit tax and specialist regimes remain explicit unfinished jobs. The former blanket residence sentence is not a verified answer. The formation and [lawful comparisons](bf-tax-optimization.md) companions also retain their own national/procedural holds.
 
-Before cross-border calculations identify service/use/place, payer, recipient establishment, control and any claimed treaty. Non-resident services withholding is a narrow job, not complete treaty/PE/residence/exit coverage. [CGI 2026 arts. 46–47, 65, 210–214, 303–306](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+Before cross-border calculations identify service/use/place, payer, recipient establishment, control and any claimed treaty. Non-resident services withholding is a narrow job, not complete treaty/PE/residence/exit coverage. [CGI 2026 arts. 46–47, 65–66, 210–214, 303–306](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
 
 ## Two worked examples that recompute
@@ -122,13 +122,13 @@ Obtain legal form and identifiers, all activities and locations, start/close dat
 
 | Official source | Read on | What was actually read |
 |---|---|---|
-| [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 1, 4, 28, 42, 46–53, 105, 210–214, 225, 228–229, 296, 303–306, 530, 535, 557, 561-1, 561-4 and sanctions headings for routing only. Not the whole volume. |
+| [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 1, 4, 28, 42, 46–53, 65–66, 105, 210–214, 227–229, 296, 303–306, 530, 535, 557, 561-1, 561-4 and sanctions headings for routing only. Not the whole volume. |
 
 The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
 
 Not yet confirmed: The old individual habitual-abode/source-only residence rule, foreign income and investment income; current filing form/box identifiers, authenticated eSINTAX confirmation/payment sequences and any supposedly universal tenth-day payroll or monthly social obligation; complete treaty/PE/exit/property/customs/special-sector coverage; currency/monetary-union descriptive claims not independently sourced in this pass; current controlling social law/rates, timing/AMU/SMIG gaps carried by the social Guide; national formation/registration holds and all remaining home-Guide gaps; comprehensive coverage and accountant attestation.
 
-Written by OpenAccountants from the cited sources. Independent source review: pending for this rewrite. Accountant attestation: none.
+Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
 
 <!-- openaccountants-cta-block -->
 

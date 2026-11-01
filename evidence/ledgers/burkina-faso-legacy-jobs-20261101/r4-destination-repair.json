@@ -1,0 +1,31 @@
+{
+  "finding": "R4",
+  "scope": "Destination/disposition fidelity only; parent repairs R1\u2013R3 in separate Guide/ledger edits.",
+  "candidate_before": "a22c17fe02db1b682133cd15c80987007fbada6c",
+  "entries_checked": 74,
+  "counts": {
+    "bf-company-formation": 14,
+    "bf-tax-overview": 12,
+    "bf-tax-optimization": 48
+  },
+  "unchanged_identity_fields": [
+    "slug",
+    "index",
+    "type",
+    "original",
+    "original_sha256",
+    "baseline_commit",
+    "baseline_blob"
+  ],
+  "identity_comparison": "all original identity fields exact; all original SHA256 recomputed and match",
+  "changed_fields": [
+    "destination",
+    "disposition"
+  ],
+  "files": {
+    "old-topics.json": "f5e3b5d8df4aef7b78d89a865f35f6cf05c4da4503775c2c642f50cb893ff06b",
+    "old-topics.md": "03c4acd9926986a3fd0df2e8c41cb0072c247caab64f786f7ac3064f6ed91b27"
+  },
+  "review_state": "Repair candidate pending independent reviewer closure; not self-acceptance",
+  "no_other_writer_mutations": "No Guide, ledger, source, README, commit or push operation was performed by the R4 repair writer."
+}

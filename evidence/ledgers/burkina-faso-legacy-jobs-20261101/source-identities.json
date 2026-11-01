@@ -7,7 +7,8 @@
     "read_date": "2026-11-01",
     "actual_read_scope": "Selected articles itemised in each ledger and Guide source table, with neighbouring definitions/exceptions. This pass read 11, 14, 24–27, 49, 53–56, 87–91, 96-1–96-2, 196–197, 228–229, 300–301, 527–540, 554–557, 561-1, 561-4; prior accepted jobs are routed, not newly reverified.",
     "text_reader_sha256": "5ff548291b0cc4c5ebeedea213037f657a9285a7ae1b23cfa1265668e5d79540",
-    "raw_text_reader_sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5"
+    "raw_text_reader_sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5",
+    "parent_repair_read_scope": "2026-11-01: original CGI arts.196(2),227–229 actual text and arts.65–66 raw column-order text fully read; original activity-specific OHADA21 rule separately checked. Source clauses do not establish a TPA no-cumulation rule."
   },
   {
     "file": "formation-auscgie.pdf",

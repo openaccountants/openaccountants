@@ -1,7 +1,7 @@
 ---
 name: bf-tax-optimization
 description: >
-  Burkina Faso lawful tax comparison workpaper for 2026, covering turnover regime classification, documented CME to RSI and RSI to RNI elections, approved management centre relief, minimum tax comparisons and ordinary deduction evidence. Use it for questions about whether a tax reduction actually changes the amount payable, what conditions attach to an option, and why employer TPA relief is applied only once. It reads the official 2026 CGI and routes full business, company, VAT and payroll calculations to their existing Guides. It supplies two recomputing comparisons, not promised savings. Investment approvals, mining incentives, treaty relief, current portal boxes and accountant sign-off remain unresolved.
+  Burkina Faso lawful tax comparison workpaper for 2026, covering turnover regime classification, documented CME to RSI and RSI to RNI elections, approved management centre relief, minimum tax comparisons and ordinary deduction evidence. Use it for questions about whether a tax reduction actually changes the amount payable, what conditions attach to an option, and how a verified employer TPA base calculation differs from an unresolved interaction between relief provisions. It reads the official 2026 CGI and routes full business, company, VAT and payroll calculations to their existing Guides. It supplies two recomputing comparisons, not promised savings. Investment approvals, mining incentives, treaty relief, current portal boxes and accountant sign-off remain unresolved.
 jurisdiction: BF
 tax_year: 2026
 last_updated: 2026-11-01
@@ -33,7 +33,7 @@ Use legal form and activity before comparing taxes: high turnover does not itsel
 | IBICA CGA membership reduces profit tax 30%. Its minimum has a separate 50% membership reduction; apply both to their own amounts and still compare the minimum. New IBICA undertakings have first-operating-period MFP exemption. | [CGI 2026 arts. 14, 24–25, 27](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | RSI businesses have two accounting periods of patente exemption from effective start established by the tax administration. RSI CGA members receive 30% profit-tax, 50% MFP and 20% TPA reductions under art. 196; do not extend its profit-tax reduction to all RNI companies. | [CGI 2026 art. 196](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | CME members of approved CGAs receive a 25% contribution reduction, not the IBICA 30% profit-tax reduction. | [CGI 2026 art. 197](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
-| CGA employers have a 20% TPA base abatement; TPA is 3% of the applicable base. This is an employer tax, not an employee IUTS reduction. Do not stack the same 20% relief twice by treating art. 196 and art. 228 as two discounts. | [CGI 2026 arts. 228–229](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
+| Article 228 grants CGA employers a 20% TPA base abatement and article 229 sets 3% of the applicable base. Article 196 separately states a 20% TPA reduction for RSI CGA members. The interaction, including cumulation or exclusion, is unresolved; an article-228-only illustration is not a final payable amount for article-196 eligibility. | [CGI 2026 arts. 196(2), 228–229](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 | Company CGA membership separately halves MFP under art. 89; newly created companies have first-operating-period MFP exemption under art. 90. These do not create a general holiday from ordinary profit IS. | [CGI 2026 arts. 89–90](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |
 
 ## The base
@@ -69,7 +69,7 @@ Comparison is not a filing extension or sanction waiver. Each routed Guide retai
 
 No investment code approval, mining relief, duty holiday, treaty entitlement, foreign residence outcome or permanent-establishment attribution is established here. Route related-party and foreign-service transactions before accepting any expense or cash-flow projection.
 
-A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper. [CGI 2026 arts. 65, 98-1–98-2, 210–214](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
+A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper. [CGI 2026 arts. 65–66, 98-1–98-2, 210–214](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
 
 ## Two worked examples that recompute
@@ -96,22 +96,22 @@ expected:
   tax_difference: 150000
 ```
 
-**TPA base abatement once.** Assume a liable CGA employer with XOF 1,000,000 remuneration/benefits in the art. 228 base and no separate exemption. The 20% base abatement gives XOF 800,000 and 3% TPA is XOF 24,000. Applying a second supposed 20% tax reduction would incorrectly give XOF 19,200. Employee IUTS and CNSS are separate and not computed here.
+**Article 228 base calculation, with the article 196 interaction unresolved.** Assume a liable CGA employer with XOF 1,000,000 remuneration/benefits in the article 228 base and no separate exemption. Applying the verified 20% base abatement gives XOF 800,000; article 229's 3% gives XOF 24,000 at this calculation stage. The same gross base at 3% before that abatement is XOF 30,000, a XOF 6,000 difference attributable to article 228 alone. Article 196 separately states an RSI CGA TPA reduction. Its interaction with article 228 is unresolved here, so this example supplies neither a final payable amount nor a conclusion for or against combining the provisions. Employee IUTS and CNSS are separate and not computed here.
 
 ```oa-check
-name: TPA CGA base relief without double count
+name: Article 228 TPA base calculation before unresolved relief interaction
 inputs:
   gross_base: 1000000
 steps:
-  relieved_base: gross_base * 0.80
-  correct_tpa: relieved_base * 0.03
-  wrong_double_relief: correct_tpa * 0.80
-  understatement: correct_tpa - wrong_double_relief
+  article228_base: gross_base * 0.80
+  article228_229_amount: article228_base * 0.03
+  pre_abatement_amount: gross_base * 0.03
+  article228_only_difference: pre_abatement_amount - article228_229_amount
 expected:
-  relieved_base: 800000
-  correct_tpa: 24000
-  wrong_double_relief: 19200
-  understatement: 4800
+  article228_base: 800000
+  article228_229_amount: 24000
+  pre_abatement_amount: 30000
+  article228_only_difference: 6000
 ```
 
 ## Ask the client first
@@ -123,13 +123,13 @@ Obtain legal form and activity, start date and time-apportioned turnover, curren
 
 | Official source | Read on | What was actually read |
 |---|---|---|
-| [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 11, 14, 24–27, 53–56, 65, 87–90, 98-1–98-2, 196–197, 210–214, 228–229, 300–301, 527–540 and neighbouring conditions; actual 2026 text, including 2025 amendment annotations. Not the whole volume. |
+| [DGI, CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | 2026-11-01 | Selected articles 11, 14, 24–27, 53–56, 65–66, 87–90, 98-1–98-2, 196–197, 210–214, 228–229, 300–301, 527–540 and neighbouring conditions; actual 2026 text, including 2025 amendment annotations. Not the whole volume. |
 
 The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md) records each rule, original-language quote and read scope. The [predecessor map](../../evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md) records every original topic, including retained gaps.
 
-Not yet confirmed: CGA admission procedure, effective eligibility evidence, fees and service costs; filing/withdrawal form box IDs, authenticated eSINTAX workflows and proof of option receipt; interpretation of the duplicated TPA relief cross-references beyond applying a single 20% base abatement; special VAT options/import and exemption interactions beyond the linked Guide; IBNC reduction/exemption branches not explicitly computed here; net commercial savings, investment/mining/sector approvals, reorganisation and treaty relief; any automatic best-regime claim; accountant attestation.
+Not yet confirmed: CGA admission procedure, effective eligibility evidence, fees and service costs; filing/withdrawal form box IDs, authenticated eSINTAX workflows and proof of option receipt; controlling interaction between the article 196 RSI TPA reduction and article 228 base abatement, including any cumulation or exclusion; the article-228-only illustration does not establish final payable TPA; special VAT options/import and exemption interactions beyond the linked Guide; IBNC reduction/exemption branches not explicitly computed here; net commercial savings, investment/mining/sector approvals, reorganisation and treaty relief; any automatic best-regime claim; accountant attestation.
 
-Written by OpenAccountants from the cited sources. Independent source review: pending for this rewrite. Accountant attestation: none.
+Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
 
 <!-- openaccountants-cta-block -->
 
