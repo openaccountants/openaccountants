@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   VAT: [gn-vat-gst, gn-vat-invoice-control]
 partial:
-  IT-IND: "Legacy 2025 Guide unchanged; all bands, bases, residence and filing require current enacted-law research."
+  IT-IND: "Categorical routing and monthly salary ITS expanded; other personal income categories, full pension/foreign/multi-source reconciliation and current source-version applicability remain unresolved."
   IT-CORP: "Ordinary IS/IMF, profit bridge, loss limit, instalments and credits expanded from enacted/amended sources and April guidance; currentness, specialised deductions/reliefs, complete withholding and foreign/sector methods remain unresolved."
   VAT: "New 2026 invoice-field control only; legacy rate/threshold/return and cross-border claims are not confirmed current law."
   SC: "2026 ordinary full-month CNSS base/contribution method added; deadline conflict, parameter instruments, special categories, partial months and multi-employer cap allocation remain unresolved."
@@ -44,3 +44,5 @@ The rewritten [formation Guide](gn-company-formation.md) adds entity choice, cap
 The expanded [property Guide](gn-property-tax.md) now adds ordinary liability, exemptions, occupied-property valuation, owner payment and qualifying rental-withholding procedures from the enacted CGI base and April 2026 DGI guidance. The March rate table and original two examples are preserved exactly. The [additive property ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-property-tax.md) does not extend prior acceptance; review is pending, and the actual-period governing-version prerequisite remains. Vacant-property estimation, allocation, relief, sanctions and filing-screen gaps remain explicit.
 
 The rewritten [corporate Guide](gn-corporate-income-tax.md) adds ordinary IS/IMF scope, the2% prior-year IMF with bounds, accounting-to-tax bridge, loss limitation, instalments and separate credit buckets. It corrects the old unqualified dividend/interest defaults and keeps recipient/treaty/filing limits explicit. [Corporate ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-corporate-income-tax.md). Independent review pending; source-version and special-method gaps remain.
+
+The rewritten [individual Guide](gn-income-tax.md) replaces the unverified annual IRPP scale with categorical routing and a monthly ITS method, residence/source tests, allowances, employee contributions, local/foreign withholding and annual-statement controls. The law’s25% allowance cap overrides inconsistent DGI15% examples. [Individual ledger](../../evidence/ledgers/guinea-remaining-20261101/gn-income-tax.md). Independent review pending; wider individual-tax methods remain partial.

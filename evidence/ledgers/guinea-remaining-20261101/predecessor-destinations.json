@@ -3,7 +3,7 @@
   "prepared_on": "2026-11-01",
   "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
-  "destination_status": "Payroll, formation and corporate mapped to new methods or exact holds. Other three historical Guides remain unchanged pending research.",
+  "destination_status": "Payroll, formation, corporate and individual mapped to new methods/holds; VAT and overview remain historical pending research. Old65-topic map stays unchanged history.",
   "guides": [
     {
       "path": "skills/guinea/gn-company-formation.md",
@@ -637,11 +637,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 13,
-            "line_end_at_pinned_base": 13,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "H1 v1.1",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -659,11 +658,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 15,
-            "line_end_at_pinned_base": 15,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates, bands and thresholds; The base",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -681,11 +679,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 17,
-            "line_end_at_pinned_base": 17,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -703,11 +700,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 18,
-            "line_end_at_pinned_base": 18,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -725,11 +721,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 19,
-            "line_end_at_pinned_base": 19,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -747,11 +742,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 20,
-            "line_end_at_pinned_base": 20,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -769,11 +763,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 21,
-            "line_end_at_pinned_base": 21,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -791,11 +784,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 22,
-            "line_end_at_pinned_base": 22,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates: allsixmonthlyCGI63bands; nooldannualIRPPscale",
+            "status": "corrected_unverified_annual_scale",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -813,11 +805,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 23,
-            "line_end_at_pinned_base": 23,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step5: deductibleemployeecompulsoryamount fromCNSSGuide",
+            "status": "corrected_employee_share_and_noemployerdeduction",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -835,11 +826,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 24,
-            "line_end_at_pinned_base": 24,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to: CGI4alternatives and15categoricalscope",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -857,11 +847,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 25,
-            "line_end_at_pinned_base": 25,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step7; Deadlines and filing: employerwithholding/DMU/10dayremit",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -879,11 +868,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 26,
-            "line_end_at_pinned_base": 26,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Cross-border points; foreignsalary/treatyholds",
+            "status": "replaced_with_sourced_categorical_monthly_method",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         },
         {
@@ -901,11 +889,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-income-tax.md",
-            "line_start_at_pinned_base": 27,
-            "line_end_at_pinned_base": 27,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing: Januaryemployerstatement andforeignpayerbranch; no universal31March",
+            "status": "unsupported_universal_deadline_rejected_and_specificdutiespreserved",
+            "old_numeric_claim_accepted": false,
+            "note": "Exact immutable old item retained here; current sourced monthlymethod replaces it or explicit hold applies."
           }
         }
       ],
