@@ -20,7 +20,7 @@ category: international
 
 Businesses, professionals, farmers, fishers and public bodies acting independently are taxable persons under [VAT Code art. 3](https://www2.camara.leg.br/saotomeeprincipe/diarios-da-an/xi-legislatura-22-11-2018/ii-serie-a/2.a-sessao/DAN30-IIS.pdf). Employees are not. Law 13/2019 approved the code. Law 2/2023 and Decree-Law 12/2023 changed it; those two texts were not read, so check any point below against them.
 
-The tax replaced earlier consumption taxes. The older skill named the general consumption tax, services tax, taxes on alcohol, spirits and cigarettes, telecoms and hotel tax, and restaurant tax; that list is unverified. The code read shows art. 2 revocations, not checked line by line.
+Older point, unverified: IVA has applied since 1 June 2023. The tax replaced earlier consumption taxes. The older skill named the general consumption tax, services tax, taxes on alcohol, spirits and cigarettes, telecoms and hotel tax, and restaurant tax; that list is unverified. The code read shows art. 2 revocations, not checked line by line.
 
 ## Rates, bands and thresholds
 

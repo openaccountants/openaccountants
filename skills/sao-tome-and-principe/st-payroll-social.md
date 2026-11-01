@@ -26,7 +26,7 @@ Every employer with staff, including public bodies, embassies, religious bodies 
 |---|---|---|---|
 | Employee rate | 4% in the official text | 2026 text; see next row | [REPSO art. 101(3)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf); [INSS page](https://inss.gov.st/trabalhador-outrem.html) |
 | Employer rate | 6% in the official text | 2026 text; see next row | [REPSO art. 101(3)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf) |
-| Rates under Decree-Law 1/2025 | unverified: a law firm alert reports 7% employer and 5% employee from 1 January 2025, with 6% and 4% kept for some entities. The decree was not read | 2026 | unverified |
+| Rates under Decree-Law 1/2025 | unverified: a law firm alert reports 7% employer and 5% employee from 1 January 2025, with 6% and 4% kept for some entities. The decree was not read. The older skill gave 8% and 6%, also unverified | 2026 | unverified |
 | Self-employed | 10% compulsory scheme; 14% wider scheme, on a chosen conventional pay | 2026 | [REPSO art. 131(1)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf); [INSS page](https://inss.gov.st/independente.html) |
 | Self-employed pay bands | 1, 3, 5 or 7 UCSS and upwards | 2026 | [REPSO art. 131(2)](https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf) |
 | UCSS | Db 1,000 for minimum pensions, minimum contributory wage, minimum sickness benefit, certificates; Db 800 for all else | 2026 if not since changed | [Joint Order 35/2023 art. 1](https://inss.gov.st/assets/Leis/Despacho_n_35_2023.pdf) |
@@ -99,7 +99,7 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Decree-Law 19/2022 consolidated text, arts. 97 to 105, 131 | https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf | 2026-11-01 |
+| Decree-Law 19/2022 consolidated text, arts. 97 to 106, 131 | https://inss.gov.st/assets/Leis/Lei_n_19_2022.pdf | 2026-11-01 |
 | Joint Order 35/2023, UCSS value | https://inss.gov.st/assets/Leis/Despacho_n_35_2023.pdf | 2026-11-01 |
 | INSS employed workers page | https://inss.gov.st/trabalhador-outrem.html | 2026-11-01 |
 | INSS self-employed page | https://inss.gov.st/independente.html | 2026-11-01 |
