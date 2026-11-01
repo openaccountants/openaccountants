@@ -1,0 +1,54 @@
+{
+  "skills/dr-congo/cd-income-tax.md": {
+    "CTA_exact": true,
+    "platform_fields_exact": true,
+    "old_bytes": 4827,
+    "new_bytes": 23350
+  },
+  "skills/dr-congo/cd-vat-gst.md": {
+    "equals_pre_expansion": true,
+    "sha256": "c33ff5874fab5c404250820721c8693b98ad5326cd4352b32925dcdc778764aa"
+  },
+  "skills/dr-congo/cd-tax-overview.md": {
+    "equals_pre_expansion": true,
+    "sha256": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4"
+  },
+  "skills/dr-congo/cd-cross-border.md": {
+    "equals_pre_expansion": true,
+    "sha256": "56f4aa2e49baef36617c51a8ed749d663a76ba1a68b9e5468b94d4afd75ac805"
+  },
+  "skills/dr-congo/README.md": {
+    "equals_pre_expansion": false,
+    "sha256": "1b701b6f5b315f31a8b9fe1705522f41cfd5dfb37a6fb1a82b7985e56b27ac12"
+  },
+  "skills/dr-congo/cd-corporate-income-tax.md": {
+    "CTA_exact": true,
+    "platform_fields_exact": true,
+    "old_bytes": 4963,
+    "new_bytes": 24737
+  },
+  "skills/dr-congo/cd-payroll-social.md": {
+    "equals_pre_expansion": true,
+    "sha256": "b2c8821ec921db890a2de6878aadc888a43ee874ade2e6cdebe3fd85e24d0909"
+  },
+  "skills/dr-congo/cd-transfer-pricing.md": {
+    "equals_pre_expansion": true,
+    "sha256": "eaf229a8e5b8d73421245a15842c4b38b5ba9459d91980def7ea5154eccf144e"
+  },
+  "skills/dr-congo/cd-company-formation.md": {
+    "equals_pre_expansion": true,
+    "sha256": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a"
+  },
+  "evidence/ledgers/dr-congo-old-topics.md": {
+    "equals_pre_expansion": true,
+    "sha256": "7ee17f03578d38cdc6214bab2c953fa83d203a09e51a1a5990d490e91a894de7"
+  },
+  "evidence/ledgers/cd-cross-border.md": {
+    "equals_pre_expansion": true,
+    "sha256": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006"
+  },
+  "evidence/ledgers/cd-transfer-pricing.md": {
+    "equals_pre_expansion": true,
+    "sha256": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0"
+  }
+}

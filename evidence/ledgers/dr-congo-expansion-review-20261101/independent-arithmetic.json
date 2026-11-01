@@ -1,0 +1,54 @@
+{
+  "method": "Independent Decimal arithmetic from source rates; no execution or reuse of oa-check steps for this calculation. Four script blocks additionally passed separately.",
+  "conditions": "Hypothetical category-net inputs, valid credits, current governing chain assumed for demonstration only. No approved final2026liability, family relief, conflicting cap/minimum, decimal rounding, refund or filing entitlement.",
+  "corporate_case1": {
+    "representation_allowed": "3000000.0",
+    "communications_allowed": "1000000.0",
+    "gifts_allowed": "2000000.000",
+    "addbacks": "5000000.000",
+    "taxable_profit": "85000000.000",
+    "profit_tax": "25500000.0000",
+    "minimum": "10000000.00",
+    "liability": "25500000.0000",
+    "provisional_payments": [
+      "6000000.0",
+      "6000000.0",
+      "4000000.0"
+    ],
+    "balance": "9500000.0000"
+  },
+  "corporate_case2": {
+    "profit_tax": "6000000.0",
+    "minimum": "10000000.00",
+    "liability": "10000000.00",
+    "balance": "0",
+    "excess": "6000000.00"
+  },
+  "individual_case1": {
+    "base": "20000000",
+    "band_tax": [
+      "58320.00",
+      "2708400.00",
+      "0.0",
+      "0.0"
+    ],
+    "scale": "2766720.00",
+    "ceiling": "6000000.0",
+    "rounded_tax": "2766700",
+    "balance": "166700"
+  },
+  "individual_case2": {
+    "base": "10000000",
+    "band_tax": [
+      "58320.00",
+      "1208400.00",
+      "0.0",
+      "0.0"
+    ],
+    "scale": "1266720.00",
+    "ceiling": "3000000.0",
+    "business_minimum": "2000000.00",
+    "liability": "2000000.00",
+    "balance": "500000.00"
+  }
+}

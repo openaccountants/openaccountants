@@ -1,0 +1,168 @@
+[
+  {
+    "guide": "skills/dr-congo/cd-corporate-income-tax.md",
+    "old_sha256": "750fde418a8d4438d283d269bc9086c5b24ca1bacabc784c9335fefea52dd151",
+    "old_topic_count": 16,
+    "lost_content_restored": 0,
+    "topic_checks": [
+      {
+        "topic": "Standard corporate income tax rate",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Mining companies",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Minimum tax (loss-making or low-profit companies)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Small company (turnover CDF 25m\u2013300m) \u2014 supply of goods",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Small company (turnover CDF 25m\u2013300m) \u2014 supply of services",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Micro company (turnover below CDF 25m)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Rental income tax (Kinshasa province)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Tax base",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Withholding tax on dividends",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Withholding tax on interest (non-residents)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Withholding tax on royalties",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Withholding tax on service fees (non-residents)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Annual CIT return deadline",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "First CIT installment (30%)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Second CIT installment (30%)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Third CIT installment (20%)",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      }
+    ]
+  },
+  {
+    "guide": "skills/dr-congo/cd-income-tax.md",
+    "old_sha256": "2d05b4b5493a6b0d4a8733bfc3e475560475994634ee083874b49b2d263c2e81",
+    "old_topic_count": 14,
+    "lost_content_restored": 0,
+    "topic_checks": [
+      {
+        "topic": "Band 1 \u2014 annual taxable income CDF 0 to 1,944,000",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Band 2 \u2014 annual taxable income CDF 1,944,001 to 21,600,000",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Band 3 \u2014 annual taxable income CDF 21,600,001 to 43,200,000",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Band 4 \u2014 annual taxable income above CDF 43,200,000",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Overall cap on IPR",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Resident vs non-resident scale",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Tax-free threshold",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Dependant rebate",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Deduction for social security",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Termination indemnities / allowances",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Casual / day-labour employees",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Non-salary income of individuals",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Annual recapitulative return deadline",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      },
+      {
+        "topic": "Monthly PAYE withholding remittance",
+        "present_in_additive_map": true,
+        "destination_checked": true
+      }
+    ]
+  }
+]

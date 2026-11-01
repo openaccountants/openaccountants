@@ -1,0 +1,841 @@
+{
+  "frozen_head": "9f05e8c9785a0573787887e403e07daf20a41e75",
+  "new_rows": 83,
+  "corporate_rows": 41,
+  "individual_rows": 42,
+  "pdf_rows": 80,
+  "html_rows": 3,
+  "scope": "Source fidelity to cited text and safe research holds only. Every row read against actual official law/captures; OCR failures/critical figures checked visually. Does not establish a complete current2026legalchain.",
+  "rows": [
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 1,
+      "act_and_page": "23/053 art.3,PDF12",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Form-based SA/SARL/SAS charge and activity distinction match art3; includes single member."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 2,
+      "act_and_page": "23/053 arts.3\u20134,PDF12",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art4 irrevocability, no prior share-company transformation, assembly minutes/manager/competent office and3month condition retained."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 3,
+      "act_and_page": "23/053 art.5(1)\u2013(2),PDF12",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art5(1)-(2) limited exemption categories; funding/civil-form/statutory conditions not converted to universal exemption."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 4,
+      "act_and_page": "23/053 art.5(3)\u2013(6),PDF13",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art5(3)-(6) categories are screened; nonprofit public-event and regulatory conditions kept as conditional categories."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 5,
+      "act_and_page": "23/053 art.6,PDF13",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art6 individual-member GIE distribution and qualifying foreign transport reciprocity preserved; no exempt-shareholder shortcut."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 6,
+      "act_and_page": "23/053 arts.152\u2013153,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art153 delay and art152 repeal checked; not used to approve2025returns or all transition questions."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 7,
+      "act_and_page": "Ministry reform commencement field",
+      "source_url": "https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Ministry actual commencement field independently opened:1January2026."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 8,
+      "act_and_page": "23/053 art.56,PDF26",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art56 scan30%net taxable profit confirmed."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 9,
+      "act_and_page": "23/053 art.57,PDF26",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art57 scan1%declared turnover floor in loss/lowtax cases; compare rather than add."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 10,
+      "act_and_page": "23/053 art.49(1),PDF23",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art49(1)scan confirms2per mille, not OCR2percent; invoicing, qualifying gifts/objects and general art20conditions retained."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 11,
+      "act_and_page": "23/053 art.49(2),PDF23",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art49(2)scan60%representation limit and invoices/general conditions match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 12,
+      "act_and_page": "23/053 art.49(7),PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art49(7)scan50%communications and100%internet only exclusively professional; quote OCR mismatch resolved visually."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 13,
+      "act_and_page": "23/053 art.7,PDF13",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art7 territory/treaty and residence/PE scope preserved; complete art8 PE job expressly outside workpaper."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 14,
+      "act_and_page": "23/053 art.9,PDF14",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art9 accounting/fiscal result, asset disposals, capital additions and withdrawals direction correct."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 15,
+      "act_and_page": "23/053 art.10,PDF14",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art10 stock cost includes prepaid unreceived goods; work-in-progress general/financing exclusion matches."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 16,
+      "act_and_page": "23/053 art.20(1)\u2013(4),PDF17",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art20four cumulative general expense conditions present."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 17,
+      "act_and_page": "23/053 art.20,lastparagraph,PDF17",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art20last paragraph proof of both declaration and payment for applicable levy/withholding preserved."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 18,
+      "act_and_page": "23/053 art.50(1)\u2013(2),PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art50(1)-(2)personal costs, nonoperating/income taxes and exceptional expatriate-employer levy restrictions match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 19,
+      "act_and_page": "23/053 art.50(3),PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art50(3)fines/confiscations/penalties and related fees/costs not deducted; not restricted to tax fines."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 20,
+      "act_and_page": "23/053 arts.49(3),50(4),PDF23\u201324",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art50(4)approved Central Bank credit-lessor exception preserved; art49(3)property-company conflict held."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 21,
+      "act_and_page": "23/053 art.50(5),PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art50(5)general provision exclusion and three statutory exceptions match; compulsory certification conditions retained."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 22,
+      "act_and_page": "23/053 art.50(6)\u2013(7),PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art50(6)-(7)specified sporting/pleasure and foreign PE head-office/foreign costs restrictions match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 23,
+      "act_and_page": "23/053 art.51,PDF24",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art51nextperiod use with residual no later than thirdfollowingperiod; ordinary treatment of recorded deferred depreciation correct."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 24,
+      "act_and_page": "23/053 art.51,PDF24\u201325",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art51formal-demand nondeclaration and foreign-business exclusions retained."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 25,
+      "act_and_page": "23/053 art.52(1),PDF25",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art52(1)new operator purchase and complete activity/substantial identity change limits retained."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 26,
+      "act_and_page": "23/053 art.52(2)\u2013(3),PDF25",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art52(2)-(3)current fiscal result before previous losses and separately recorded deferred depreciation match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 27,
+      "act_and_page": "23/053 art.150,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art150scan unusual first-decimal <=5 upward clause verified; ambiguous decimal computations withheld; cases exact100multiples."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 28,
+      "act_and_page": "23/053 art.12,PDF15",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art12 calendar close and post30June intermediate creation-year taxation then deduction from firstclosedperiod correct."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 29,
+      "act_and_page": "23/053 art.13,PDF15",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art13immediate dissolution/fusion/scission and separate liquidation assessment acknowledged without unverified computation."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 30,
+      "act_and_page": "25/060 art.18 replacing004/2003art.12,PDF17",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art18complete replacement annual declaration rule30Aprilfollowingyear visually verified;2026=>2027."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 31,
+      "act_and_page": "25/060 art.19 inserting004/2003art.13bis,PDF17",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art19separate10day ordinary assembly minutes deadline with certified financial statements visually verified."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 32,
+      "act_and_page": "25/060 art.31 replacing004/2003art.57bis,PDF27",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art31prior declared tax plus supplements or default tax, disputed amounts included;30/30/20visually verified."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 33,
+      "act_and_page": "25/060 art.31 replacing004/2003art.57bis,PDF27",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art31scan25July/September/November, prescribed payment slip, deduction and balance at declaration match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 34,
+      "act_and_page": "23/052 art.1 replacing004/2003art.13,PDF4\u20135",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "23/052replacementart13normal financial statements/notes,countersignature,salesrecap and special-accounting statements match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 35,
+      "act_and_page": "DGI IS public instructions",
+      "source_url": "https://dgi.gouv.cd/impot-sur-les-societes/",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Independently opened DGI public IS instructions support completed/dated/signed form and bank attestation; no authenticated workflow claimed."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 36,
+      "act_and_page": "25/060 art.24 replacing004/2003art.23,PDF19",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art24normalised invoice/equivalent per transaction, small-enterprise reservation and regulated electronic equivalence match."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 37,
+      "act_and_page": "23/053 art.151,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art151amendedprocedure sanctions/control/collection/appeals cross-reference correct; no invented current rates."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 38,
+      "act_and_page": "25/060 art.23 inserting004/2003art.22quater,PDF19",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art23goodfaith spontaneous correction of timelyreturn, lateinterest assessmentnotice and preserved control match; no lateoriginal immunity."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 39,
+      "act_and_page": "23/053 arts.46\u201348,53,PDF23,25",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts46-48/53deduction tests handed off with pricing/withholding not treated as deduction approval."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 40,
+      "act_and_page": "25/060art.16,PDF16",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art16scan explicitly carries selected24/011measures; missing original chain produces genuine currentness hold."
+    },
+    {
+      "guide": "cd-corporate-income-tax",
+      "row": 41,
+      "act_and_page": "25/044art.9,PDF12\u201313",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/044art9PDF12-13mediation/re-examination actually checked; does not replace missing original carried fiscal provisions."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 1,
+      "act_and_page": "25/060art.16,PDF16",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art16carried original2025chain remains unresolved; no operative2026acceptance inferred."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 2,
+      "act_and_page": "23/053art.153,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art15324monthdelay from31Decemberpromulgationyear matches actual scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 3,
+      "act_and_page": "Ministrycommencementfield",
+      "source_url": "https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Ministry actual commencement field independently opened:1January2026."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 4,
+      "act_and_page": "23/053arts.58\u201359,PDF26\u201327",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts58-59resident nationality/source, nonresident Congolese source, treaty/statutory reservation correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 5,
+      "act_and_page": "23/053art.59,PDF27",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art59foreign-resident employee two cumulative conditions retained."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 6,
+      "act_and_page": "23/053art.60,PDF27",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art60alternative habitualresidence tests and183days over12months continuous or otherwise match; no182day safeharbour."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 7,
+      "act_and_page": "23/053arts.60\u201361,PDF27",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts60-61state officials abroad without local IRPP and treatyallocatedincome correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 8,
+      "act_and_page": "23/053arts.62\u201364,PDF27\u201328",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts62-64international/diplomatic staff treated conditionally, not universally exempt."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 9,
+      "act_and_page": "23/053art.63,PDF27\u201328",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art63partnership and individualsoleshareholder treatment acknowledged; unresolved entityIS interaction held."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 10,
+      "act_and_page": "23/053art.118,PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art118annualnetglobalbase lower1000CDF rounding correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 11,
+      "act_and_page": "23/053art.118(1),PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art118firstannualband3%0to1944000; exemption/specialregime screen retained."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 12,
+      "act_and_page": "23/053art.118(2),PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art118secondannualslice15%1944001to21600000 correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 13,
+      "act_and_page": "23/053art.118(3),PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art118thirdannualslice30%21600001to43200000 confirmed on scan, rejecting OCR39%."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 14,
+      "act_and_page": "23/053art.118(4),PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art118fourthannualslice40%above43200000 confirmed on scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 15,
+      "act_and_page": "23/053art.118,lastpara,PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art11830%taxableincomeceiling confirmed; decisive minimum/relief interaction held."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 16,
+      "act_and_page": "23/053art.123,PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art1232%per qualifying member,max9,no relief on tax above thirdband correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 17,
+      "act_and_page": "23/053art.124,PDF40\u201341",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art124children/ascendant eligibility and exact negative resources wording explicitly held; no headcountrelief inferred."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 18,
+      "act_and_page": "23/053art.125,PDF41",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art125family situation1Januaryincomeyear correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 19,
+      "act_and_page": "23/053art.122,PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art1221%turnoverfloor in listedprofitcategories, microenterprise exclusion retained."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 20,
+      "act_and_page": "23/053arts.58,67,PDF26\u201328",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts58/67sixcategory annualnetglobalincome, rather than salary-only scope, correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 21,
+      "act_and_page": "23/053art.68,PDF28\u201329",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art68employment/assimilated categories,termination and actualvalue benefits correctly identified."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 22,
+      "act_and_page": "23/053art.69(1)\u2013(7),PDF29",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art69(1)-(7)conditional legal familyallowances and specified statutory/protected pensions,military/police,endcareer,maintenance,scholarships correct; tauxlegaux OCR checked visually."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 23,
+      "act_and_page": "23/053art.69(8)(a),PDF29",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art69(8)(a)housing allowance30%remuneration condition matches scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 24,
+      "act_and_page": "23/053art.69(8)(b),PDF29",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art69(8)(b)localticketcost,dailymax6taxiexecutive/6busother and reality/necessity proof match scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 25,
+      "act_and_page": "23/053art.69(8)(c),PDF29",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art69(8)(c)medical persuasive documents condition matches."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 26,
+      "act_and_page": "23/053arts.70\u201371,PDF29\u201330",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts70-71actual definitive qualifying officialfund or compulsoryemployer statute/contract pension/annuity/health/unemployment payments match; no blanketsocialsecuritydeduction."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 27,
+      "act_and_page": "23/053art.70,PDF29\u201330",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art70domestic/microemployee ministeriallumpsumrates not supplied; quote spans PDF29-30linebreak, checked actual scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 28,
+      "act_and_page": "23/053art.89,PDF34",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art89realregimeISprinciples with category/mixedexpense exceptions acknowledged; full netbase construction held."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 29,
+      "act_and_page": "23/053art.116,PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art116no duplicatecategory/globaldeduction restriction preserved."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 30,
+      "act_and_page": "23/053art.116(1),PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art116(1)obligatorygratuitousannuities/lifeinsurance5%grosscap correct; Guide requires statutory conditions and cap evidence."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 31,
+      "act_and_page": "23/053art.116(2),(4),PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art116(2)/(4)courtorderedmaintenance and domesticstaffsocialsecurity payments correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 32,
+      "act_and_page": "23/053art.116(3),lastpara,PDF39",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art116(3)voluntaryretirement10%grosscap and propertydeficit globaldeduction exclusion correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 33,
+      "act_and_page": "23/053art.121,PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art121normal withholding credit; domestic/microemployeesfinalonlysoleincome; administration takes excess for past/futuretax, no automaticrefund/selfoffset."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 34,
+      "act_and_page": "23/053art.150,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art150wholefranc residual<50down/>=50up supported by scan; unusual decimal clause held."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 35,
+      "act_and_page": "25/060art.20,replaces004/2003art.17,PDF17\u201318",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art20PDF17-18whole replacementart17read;30Aprilreturn at residence service; previoussalaryonlywaiver absent."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 36,
+      "act_and_page": "25/060art.20,PDF18",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art20normalaccounting specifiedprofitcategoryindividuals annexes,countersign and actualsalesrecap match."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 37,
+      "act_and_page": "25/060art.22,replaces004/2003art.22ter,PDF18",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "25/060art22separate employer annualsalaryreport31March and province/alphabeticalindividualsheets confirmed on scan."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 38,
+      "act_and_page": "23/053art.119,PDF40",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art119monthly employerwithholdingon70/71netbase correct."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 39,
+      "act_and_page": "23/052art.1,replaces004/2003art.18,PDF5",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "23/052replacementart18monthlyremittance15followingmonth afterpayment/availability;nil declaration retained."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 40,
+      "act_and_page": "23/053art.151,PDF44",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Art151procedure/control/sanctions crossreference correct; penaltyrates deliberately not reconstructed."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 41,
+      "act_and_page": "26/032art.19,PDF11;23/053art.80,PDF32",
+      "source_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "26/032art19replacementart72savingsaddition verified visually against art80exemption; conflict/dateversion expressly held, no savingsliability stated."
+    },
+    {
+      "guide": "cd-income-tax",
+      "row": 42,
+      "act_and_page": "23/053arts.110\u2013111,PDF38",
+      "source_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "read_on": "2026-11-01",
+      "review_result": "faithful_conditional_workpaper",
+      "exact_quote_and_surrounding_conditions_checked": true,
+      "note": "Arts110-111smallbusiness realregime writtenelectionbefore1February,yearplus2yearsirrevocable and obligations match; case2validstatus assumed rather than conferred."
+    }
+  ]
+}

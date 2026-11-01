@@ -1,0 +1,25 @@
+{
+  "initial_frozen_commit": "aab7ad45549b4926e8619cd280ca52401a90a56b",
+  "repairs": [
+    "F1 add non-taxable article47 alternative",
+    "F2 both independently checked commencement provisions added with new actual read scope"
+  ],
+  "files": {
+    "skills/dr-congo/cd-transfer-pricing.md": "eaf229a8e5b8d73421245a15842c4b38b5ba9459d91980def7ea5154eccf144e",
+    "skills/dr-congo/cd-cross-border.md": "56f4aa2e49baef36617c51a8ed749d663a76ba1a68b9e5468b94d4afd75ac805",
+    "evidence/ledgers/cd-transfer-pricing.md": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0",
+    "evidence/ledgers/cd-cross-border.md": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006",
+    "evidence/ledgers/dr-congo-draft-20261101/source-record-repair-1.json": "684ac141b7d7b2d58f6a47f3d31ec1aa15c5cf56c189ebb380ae3b8868907b75"
+  },
+  "ledger_counts": {
+    "TP": 39,
+    "XB": 34
+  },
+  "unchanged": [
+    "README",
+    "six2025legacyGuides",
+    "initialwriterrecords",
+    "initialindependentreviewevidence"
+  ],
+  "review_status": "Targeted closure pending"
+}

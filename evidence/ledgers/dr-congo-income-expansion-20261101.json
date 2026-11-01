@@ -1,0 +1,22 @@
+{
+  "pre_income_ref": "8bfee22a3195db04987268c857b68ea2659b4d45",
+  "scope": "IRPP rewrite and42row ledger,14legacy topics,2examples. Currentness hold and independent review pending.",
+  "guide_sha256": "6380ef9634c33334faf2052a62b78c3e2e48eb40ae3ed4873c573253adf06148",
+  "ledger_sha256": "129b5b9a23480f61c52f3bf963f2fd012248a7ee85da3c3f77c9a1d3d72bd0c2",
+  "old_topic_map_sha256": "5900aac01c305472c988861731e735709978a4b5f7e66e290a2e66c5d693e1fd",
+  "CTA_unchanged": true,
+  "platform_fields_unchanged": true,
+  "protected_files_unchanged": [
+    "skills/dr-congo/cd-company-formation.md",
+    "skills/dr-congo/cd-payroll-social.md",
+    "skills/dr-congo/cd-tax-overview.md",
+    "skills/dr-congo/cd-vat-gst.md",
+    "skills/dr-congo/cd-transfer-pricing.md",
+    "skills/dr-congo/cd-cross-border.md",
+    "evidence/ledgers/cd-transfer-pricing.md",
+    "evidence/ledgers/cd-cross-border.md",
+    "evidence/ledgers/dr-congo-old-topics.md"
+  ],
+  "description_words": 110,
+  "read_scope": "Actual combinedgazettePDF26\u201330,32,34,38\u201341 and44; procedurePDF5;2026FinancePDF16\u201318;rectifyingart19OCR;officialDGI/ministrypages opened."
+}

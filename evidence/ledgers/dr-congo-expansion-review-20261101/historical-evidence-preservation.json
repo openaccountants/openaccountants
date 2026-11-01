@@ -1,0 +1,100 @@
+{
+  "pre_expansion_ref": "3df24cc9f19cd238afa56ab88240c26f739d84fe",
+  "all_pre_expansion_dr_congo_evidence_preserved": true,
+  "prior_evidence_files": [
+    {
+      "path": "evidence/ledgers/cd-cross-border.md",
+      "sha256": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/cd-transfer-pricing.md",
+      "sha256": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-draft-20261101/candidate-manifest.json",
+      "sha256": "c0bff8bd16852ded19d25f021e736d7ff099338639cbd91fa82bd25bdd88a286",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-draft-20261101/repair-1-manifest.json",
+      "sha256": "0e4d8c0495edf354764dcf4b927a240ff9e892cd17a32efbe2c06e085df4cfd9",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-draft-20261101/source-record-repair-1.json",
+      "sha256": "684ac141b7d7b2d58f6a47f3d31ec1aa15c5cf56c189ebb380ae3b8868907b75",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-draft-20261101/source-record.json",
+      "sha256": "315598ab9c30303104c19bf6dfae9c6bc9d43a1cbbdd15d2d1f57028b9c489ed",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-old-topics.md",
+      "sha256": "7ee17f03578d38cdc6214bab2c953fa83d203a09e51a1a5990d490e91a894de7",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/closure-repair-1/closure-input-hashes.json",
+      "sha256": "9dbbe2403891a376ca19788e9c49a6c7cb1e989ea7810e888f19bb71516840dd",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/closure-repair-1/closure-review.md",
+      "sha256": "12c31c0f06692ad33ee414472712d20b82ec01d961e2c1792388a4bcb957a6f7",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/closure-repair-1/closure-validation.json",
+      "sha256": "bbe84a77c983adc9715350f6801c9bf51f5ba01db2ed65efd248da66c17e68af",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/initial-candidate-manifest.json",
+      "sha256": "c0bff8bd16852ded19d25f021e736d7ff099338639cbd91fa82bd25bdd88a286",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/initial-input-hashes.json",
+      "sha256": "0f90b79f3f09fccc0c1477af8c2f52565905b091843d925ee099e69e0658e4f3",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/initial-ledger-row-review.json",
+      "sha256": "dea04789290bd6affab25aa4fe8ced5fe37ef6c5e0cbcaa9f640c0e6cd8d459b",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/initial-review.md",
+      "sha256": "572dba48310ccf69b622cb86c79e7888e8502ca6b20c7120d076fefccbeeda09",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/initial-validation.json",
+      "sha256": "3effe7c181bc113d1b193826d168dfa96a92842e5d6bea25dc0d94e367cb4262",
+      "byte_equal": true
+    },
+    {
+      "path": "evidence/ledgers/dr-congo-review-20261101/legacy-retention-check.json",
+      "sha256": "426a1b46fc8f15cdd59b2a22c8bf0705cd409316acc21ddc4eab9df8ca2958ff",
+      "byte_equal": true
+    }
+  ],
+  "prior73rows_carried_forward_after_hash_verification": true,
+  "prior_review_bound_to": "ddde60a16e113f9056297e6d6ae09d0294bec075",
+  "prior_review_exact_guide_and_ledger_hashes": {
+    "skills/dr-congo/cd-transfer-pricing.md": "eaf229a8e5b8d73421245a15842c4b38b5ba9459d91980def7ea5154eccf144e",
+    "skills/dr-congo/cd-cross-border.md": "56f4aa2e49baef36617c51a8ed749d663a76ba1a68b9e5468b94d4afd75ac805",
+    "evidence/ledgers/cd-transfer-pricing.md": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0",
+    "evidence/ledgers/cd-cross-border.md": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006"
+  },
+  "prior73rows_reopened": false,
+  "corporate39row_initial_manifest_preserved": true,
+  "corporate_initial_manifest_commit": "36f2b3a8211e9dc0169dc24a8c1a5c36e279b871",
+  "corporate_initial_manifest_sha256": "3f10c1e21176dd0e7fd2fade6e69ba41da739bde533be96013bda251de8c06f2",
+  "current_corporate_rows": 41,
+  "interpretation": "Initial39row manifest and original86topicmap are historical snapshots, not claims that current corpus files/rowcounts remain unchanged. Corporate and individual additive maps identify later rewrites. Four untouched2025legacy Guides remain byteexact and are not currentyear certified."
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "scripts/validate-guides.py",
+    "--help"
+  ],
+  "returncode": 1,
+  "explanation": "This script has no argparse help handler; --help unexpectedly ran its full-tree/index mode. The task-scoped validation subsequently passed with --changed-only --no-index-check. Generated artifacts were not edited.",
+  "stdout": "checked 8 guides (3 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: 2 guides missing `a `## Sources` section with a URL (tax skills)`\nWARN: 4 guides fail check (a) tax_year_current\nWARN: 4 guides fail check (b) sources_read_dates\nWARN: 4 guides fail check (c) rates_rows_sourced\nWARN: 4 guides fail check (d) canonical_headings\nWARN: 4 guides fail check (e) two_oa_checks\nWARN: 4 guides fail check (f) version_numeric\nWARN: 4 guides fail check (h) no_em_dash\nWARN: 4 guides fail check (i) not_yet_confirmed\nWARN: 0 same-job groups, see skills/DUPLICATES.md\nERROR: index.json is stale (`counts` differs) \u2014 regenerate with: python3 scripts/build-index.py\nERROR: llms-full.txt is stale (its embedded docs or the guide inventory changed) \u2014 regenerate: python3 scripts/build-llms-full.py\n\nvalidation FAILED: 2 error(s), 10 warning group(s)\n"
+}
