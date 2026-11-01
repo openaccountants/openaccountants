@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-01",
+  "parent_head": "eae2a469563bc2417596ddfca2db9c43a813a290",
+  "actual_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "scope": "New partial capital workpaper, one old rate-row migration and required version/H1; fresh independent source review pending.",
+  "files": [
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "sha256": "0e8f873a93b05130fb60cedd59dc996888740b2eaebca8b874069a3d1b763e18",
+      "bytes": 23465,
+      "git_blob": "91003bc08d10bb6cd155dd3fa08519debc220e7b"
+    },
+    {
+      "path": "skills/burundi/bi-income-tax.md",
+      "sha256": "7cb014c23ab4cf38730fb6884cc577b708de0306aa013552852fe5101d5f23d4",
+      "bytes": 17664,
+      "git_blob": "9c3a06c76ba349f35c6a19dc140522851fb0b321"
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "sha256": "22c30bc4c238d4a1f0861a3757728bb747194a3dd0fe55b75b69d3e3d1ecf030",
+      "bytes": 6460,
+      "git_blob": "5348abaa26c49f26fde7335fcca018c94cad8ecc"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/README.md",
+      "sha256": "a3099b778149ce0461170ef6f47a80efc76d0c5fdc5c451acf8b53aa3c525e68",
+      "bytes": 3957,
+      "git_blob": "abf9481c16e9d6457e5b5afea686459a1a310c00"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/bi-capital-income-tax.json",
+      "sha256": "b166af931354bf7a20e98853d889479f0a189b96f15953a10727b5440cda9dc2",
+      "bytes": 54568,
+      "git_blob": "8550c438521375e0e05ee3c5b50f2adebaaff3f5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/ledgers/bi-capital-income-tax.md",
+      "sha256": "af1c345d267f55b48f030a70132fd3d1ec7f2464bf777f03ae2f05cee6464f0a",
+      "bytes": 23097,
+      "git_blob": "6478a487eb903517ab0046becb8d6cf8198673da"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/old-topic-destinations.json",
+      "sha256": "e2e3e7b6aa8ff14b0b2498088395630ae5d352d3e470d09494c3ceb528b776fb",
+      "bytes": 250058,
+      "git_blob": "2ea9c39b2824955a34c9ce4daec56336733d9600"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/old-topic-destinations.md",
+      "sha256": "e99ed86554d5a1d8a3750b2de8b6d2029ab57cc6143e1456ac4dd74f41c57876",
+      "bytes": 2400,
+      "git_blob": "33d9bbbc0456f1cf689da12f688df0cb2e8048de"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/permitted-old-guide-transform.json",
+      "sha256": "4bc16f3665a98390b1319e71a4f9c7a9efc82abff0edfdf5bb517eab11d71f7c",
+      "bytes": 1596,
+      "git_blob": "2c27f270728ad1b79ca25e5218e3b43c9b1bef5d"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/precommit-validation.json",
+      "sha256": "29996357751cce2e475ddee589000bb30621269d7bd095de55a119b4ca8aa241",
+      "bytes": 2607,
+      "git_blob": "d04890b9f980bb4b3ecc382e4b9d20ebf857ca02"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/predecessor-bi-income-tax.md.txt",
+      "sha256": "be4af87235ecb84a6512f3006f5c229037d7f59816147c525d8574222f500117",
+      "bytes": 17600,
+      "git_blob": "caac2c1ebc08b1619519a6d77f04059858f5d183"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/preservation-baseline.json",
+      "sha256": "6a934ba838a04fed567f298eadb405a515521ca1f92e97c237c60b119c9ebb5f",
+      "bytes": 20546,
+      "git_blob": "18780203726e7394a298c32e26ad546d6fb7b577"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/run-writer-validation.py",
+      "sha256": "52c9ff16c4e5f5db945d62841fda6859c20fed8e935589222f2bfbc29f12fcc2",
+      "bytes": 1778,
+      "git_blob": "d1f0d72c497ed5335fed8965f33c9edab8459ae1"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/source-artifacts.json",
+      "sha256": "a00942c6042b55a3b36c1e448eceff42f0c4b09530a3e4ecbaea0b99ab93071d",
+      "bytes": 3793,
+      "git_blob": "9352c15cc640a7aae34c9831b81336be5d86c50b"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/source-routes.json",
+      "sha256": "90f22f27c68e45cc957458b65ba2bd33d7c11bf0990391421a169b2eb9a7f64f",
+      "bytes": 2908,
+      "git_blob": "7081d9ad6fbf6100ce195e07787dc24b10d1c5b1"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/sources-read.json",
+      "sha256": "6ad77b0fea6e83c433de5f256f358125f715e23c6fee012f275f9e31bda4b7c8",
+      "bytes": 3999,
+      "git_blob": "636c41959d52cf6de3801a221de39acdf56fea8d"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/writer-check.py",
+      "sha256": "6484e2b69d8335426694d52af8f77a8b291701cdf630c2ee29d2dc09944f1c95",
+      "bytes": 4143,
+      "git_blob": "70049f60cdbb76eba86d98243d413bbaec0912f5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-20261101/staging-attempts.json",
+      "sha256": "c9d6c116864171bfc43fd41861ed4f613d6e92e696502ae41a00e88b6767a4b8",
+      "bytes": 584,
+      "git_blob": "89db4a18ef55a7ac5a83abaf81aa9d45c6cc47c2"
+    }
+  ],
+  "ledger_rows": 47,
+  "new_cases": 3,
+  "prior_evidence_preserved": 61,
+  "other_old_guides_preserved": 8,
+  "old_topics_mapped": 294,
+  "author_and_committer": "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>"
+}

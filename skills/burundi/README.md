@@ -3,7 +3,7 @@ jurisdiction: BI
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
-  IT-IND: bi-income-tax
+  IT-IND: [bi-income-tax, bi-capital-income-tax]
   IT-CORP: bi-corporate-income-tax
   VAT: bi-vat-gst
   SC: bi-payroll-social
@@ -26,7 +26,7 @@ Independent AI source review and focused repair closure passed for candidate `e4
 
 | Domain | Guide | Status |
 |---|---|---|
-| IT-IND | bi-income-tax | sourced from the law; partial |
+| IT-IND | bi-income-tax; bi-capital-income-tax | original business/rental scope accepted; new capital scope independent review pending; partial |
 | IT-CORP | bi-corporate-income-tax | sourced from the law; partial |
 | VAT | bi-vat-gst | sourced from the law; partial |
 | SC and PR | bi-payroll-social | sourced from the law; partial |
@@ -49,3 +49,9 @@ The [initial review](../../evidence/ledgers/burundi-review-20261101/README.md) c
 ## Property workpaper addition
 
 The new [property-transactions Guide](bi-property-transactions.md) separates the January and July 2026 budgets, including the mortgage fee cap change, purchaser wealth-tax boundary, secured-title fee/deadline and urban construction charge. Its [row-level ledger](../../evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md) and four recomputing cases passed independent AI source review and [focused repair closure](../../evidence/ledgers/burundi-property-review-20261101/closure.md) within the stated partial scope. The actual 2020 registration law was recovered from the official gazette, but a 2026-uploaded communal-law PDF proved to be the 2016 text; its annual property-tax rates are not treated as current. All eight earlier Guides and their review evidence remain unchanged. All seven tax domains remain partial.
+
+## Individual capital computation addition
+
+The new [capital-income and disposal-gains workpaper](bi-capital-income-tax.md) supplies the statutory private-immovable coefficient base, housing exemption predicates, capped land-registration-duty credit and January/July Treasury exemption distinction. The single individual headline rate row now routes to that exact figure home; its complete predecessor bytes and every old-topic destination are preserved in [capital writer evidence](../../evidence/ledgers/burundi-capital-20261101/README.md). Only that row and the individual Guide's version/H1 change. All other old Guide bodies and all earlier review evidence are preserved.
+
+This new scope is a tier-2 draft pending fresh independent source review. Property reference prices, exact holding-range boundaries, professional-property and financial-asset mechanics, relief execution and private-capital filing fields remain held. All seven domains remain partial. Earlier property acceptance remains bound to its previously reviewed bytes and is not acceptance of this new addition. No accountant attestation or live filing approval.
