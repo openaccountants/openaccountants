@@ -35,7 +35,7 @@ Out of scope, route elsewhere: TVA detail to `morocco-vat`; employees to `morocc
 5. Was either ceiling exceeded last year as well as this year?
 6. Is declaration monthly or quarterly, and were any periods missed?
 
-If the activity mix is not given, work with services (1%, MAD 200,000) until the client confirms otherwise. If the activity could fall on the excluded list, treat it as excluded until confirmed.
+If the activity mix is not given, work with services (1%, MAD 200,000) until the client confirms otherwise. If the activity could fall on the excluded list, treat it as excluded until confirmed. If turnover is near a ceiling, assume the ceiling is breached and warn about exit. If one services client is near MAD 80,000, assume the 30% withholding applies and confirm with the client.
 
 ## The method, step by step
 
@@ -184,7 +184,7 @@ expected:
 
 ### Case 5: ceiling breach
 
-Omar (services) collects MAD 230,000 in 2026. One year over does not end the option. If 2027 is also over, the net real regime applies from 1 January 2028 unless he elects RNS or CPU, and he can never return to AE. Model the exit with `ma-cpu` and `morocco-professional-income-tax`, and check TVA.
+Omar (services) collects MAD 230,000 in 2026. One year over does not end the option. If 2027 is also over, the net real regime applies from 1 January 2028 unless he elects RNS or CPU, and he can never return to AE. On the net real or simplified regime the ordinary Art. 73-I scale applies: the first MAD 40,000 is exempt and the top rate is 37%. Model the exit with `ma-cpu` and `morocco-professional-income-tax`, and check TVA.
 
 ## When to refuse or refer
 
@@ -198,7 +198,7 @@ Refer to a Moroccan expert-comptable when:
 - TVA may apply;
 - business assets are sold or withdrawn, because the Art. 73-I scale then applies.
 
-Do not confirm eligibility for an excluded profession. Do not deduct expenses. Do not invent social contribution amounts outside the table above. Do not present a return as filed without the client's own review.
+Do not confirm eligibility for an excluded profession. Do not deduct expenses. Do not invent social contribution amounts. Do not present a return as filed without expert-comptable sign-off.
 
 ## Filing and payment ([CGI Art. 44-II, 82 bis, 148-V, 173-II, 184, 208](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1))
 
@@ -245,7 +245,7 @@ Social cover: Art. 42 ter-II-B requires membership of the scheme. AMO health cov
 | CGI 2026 (DGI), Art. 40, 42 bis to 44, 45 bis, 73, 82 bis, 86, 91, 145, 148, 157, 173, 184, 208 read in text extract | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 | Decrees 2-15-263 and 2-15-303, as annexed to the CGI 2026 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 
-Not yet confirmed: cnss.ma and ae.gov.ma would not open in a browser on 2026-11-01 and have no 2026 archive copy, so these old-version items are unverified and kept out of the rules: social contribution rules and the "T1 to T8" brackets, whether they match the eight CGI bands; the bases of 50% (services) and 20% (commercial) of turnover; Décret 2.21.477 as the AMO source; the RNAE portal address rn.ae.gov.ma, Poste Maroc or Al Barid Bank as designated body, free registration, the 7 to 15 day processing and card; online payment channels; duty to file nil returns and radiation for missed returns. Also unread: the regulation fixing droit complémentaire terms, including part years and whether the withheld surplus counts for the band; the rate on turnover above a ceiling in a year still within the option; the full text of Loi 114-13, including residence as a condition. The old list named engineers, adouls, regulated transport, alcohol and financial intermediaries as excluded; Decree 2-15-263 does not name them, so check any such case individually.
+Not yet confirmed: cnss.ma and ae.gov.ma would not open in a browser on 2026-11-01 and have no 2026 archive copy, so these old-version items are unverified and kept out of the rules: social contribution rules and the "T1 to T8" brackets, whether they match the eight CGI bands; the old minimum of about MAD 300 a quarter for a nil period; the bases of 50% (services) and 20% (commercial) of turnover; Décret 2.21.477 as the AMO source; the RNAE portal address rn.ae.gov.ma, Poste Maroc or Al Barid Bank as designated body, free registration, the 7 to 15 day processing and card; online payment channels; duty to file nil returns and radiation for missed returns. Also unread: the regulation fixing droit complémentaire terms, including part years and whether the withheld surplus counts for the band; the rate on turnover above a ceiling in a year still within the option; the full text of Loi 114-13, including residence as a condition. The old list named engineers, adouls, regulated transport, alcohol and financial intermediaries as excluded; Decree 2-15-263 does not name them, so check any such case individually.
 
 <!-- openaccountants-cta-block -->
 
