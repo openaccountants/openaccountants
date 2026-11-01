@@ -17,7 +17,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Entity types, capital and incorporation
+## Who this applies to
+
+Founders and investors forming a company in Equatorial Guinea in 2026. Companies are formed under OHADA law; tax registration and filing are under Ley 1/2024.
+
+## Rates, bands and thresholds
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
@@ -35,6 +39,65 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 Old-skill items also unverified: physical registered office required; capital deposited in a local bank with a certificate to the notary; steps of notarised articles, deposit, RCCM entry, NIF, social security.
 
 Annual cycle: accounts, DEF, monthly VAT and payroll, register updates. See [Corporate income tax](gq-corporate-income-tax.md).
+
+## The base
+
+Company tax base: see [Corporate income tax](gq-corporate-income-tax.md).
+
+## Deadlines and filing
+
+Register for tax within 15 working days of starting (art 13). Filing dates are in the sibling skills.
+
+## Penalties and interest
+
+Surcharge and interest as in the [VAT](gq-vat-gst.md) skill (arts 410, 412).
+
+## Cross-border points
+
+See [Cross-border](gq-cross-border.md).
+
+
+## Two worked examples that recompute
+
+**Audit test.** Balance sheet 100,000,000 XAF and turnover 300,000,000 XAF, 20 staff: only turnover is over a limit, so one is exceeded; a non-SA needs no audit report.
+
+```oa-check
+name: Limits exceeded
+inputs:
+  balance: 100000000
+  turnover: 300000000
+  staff: 20
+steps:
+  - over_turnover: clamp(turnover - 250000000, 0, 1) 
+  - over_balance: clamp(balance - 125000000, 0, 1)
+  - over_staff: clamp(staff - 50, 0, 1)
+  - over: over_turnover + over_balance + over_staff
+expected:
+  over: 1
+```
+
+**Decision: new company or branch of a foreign company.** On profit of 40,000,000 XAF a new company pays 5,000,000 with the 50% relief (art 77.4); this assumes a branch does not count as newly created, which the law does not settle.
+
+```oa-check
+name: New company relief
+inputs:
+  profit: 40000000
+steps:
+  - full: profit * 0.25
+  - relieved: full * 0.50
+  - saving: full - relieved
+expected:
+  full: 10000000
+  relieved: 5000000
+  saving: 5000000
+```
+
+## Ask the client first
+
+1. Local or foreign owners?
+2. Sector?
+3. Expected turnover and staff?
+4. Company or branch?
 
 ## Sources
 

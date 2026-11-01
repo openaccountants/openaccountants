@@ -17,9 +17,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## Tax system at a glance
+## Who this applies to
 
-Ley 1/2024 of 19 November, General Tributaria, governs tax and repealed Ley 4/2004 (repeal clause). It took effect on publication; the Government states 6 December 2024. The 2026 Budget Law is Ley 9/2025. The country belongs to CEMAC and OHADA, and companies keep SYSCOHADA accounts (art 42).
+Anyone asking how Equatorial Guinea taxes a business or person in 2026. Ley 1/2024 of 19 November, General Tributaria, governs tax and repealed Ley 4/2004. It took effect on publication; the Government states 6 December 2024. The 2026 Budget Law is Ley 9/2025. The country belongs to CEMAC and OHADA, and companies keep SYSCOHADA accounts (art 42).
+
+## Rates, bands and thresholds
 
 | Item | Amount | Tax year | Official URL |
 |---|---|---|---|
@@ -38,6 +40,69 @@ Ley 1/2024 of 19 November, General Tributaria, governs tax and repealed Ley 4/20
 Other taxes in the law: property (IBI), transfers, stamp, inheritance and gifts, financial activities, gambling and excise (arts 171 to 276).
 
 Skills: [Income tax](gq-income-tax.md), [Corporate income tax](gq-corporate-income-tax.md), [VAT](gq-vat-gst.md), [Payroll](gq-payroll-social.md), [Transfer pricing](gq-transfer-pricing.md), [Cross-border](gq-cross-border.md), [Company formation](gq-company-formation.md).
+
+## The base
+
+Each tax has its own base; see the skills above.
+
+## Deadlines and filing
+
+Self-assessed taxes follow one route: download the form from the https://minhacienda-gob.com/formularios-de-declaraciones-fiscales page, pay at a Treasury bank, then lodge the form and proof at the Ministry (https://www.guineaecuatorialpress.com/noticias/presentacion_oficial_de_la_nueva_ley_general_tributaria_de_guinea_ecuatorial). Dates are in each skill.
+
+## Penalties and interest
+
+Surcharge of 5% to 15% (art 410) and interest of 2.5% a month (art 412). Detail is in the [VAT](gq-vat-gst.md) skill.
+
+## Cross-border points
+
+See [Cross-border](gq-cross-border.md).
+
+
+## Two worked examples that recompute
+
+**Company, profit 10,000,000 XAF, income 100,000,000 XAF.** Tax 2,500,000 is above the 1,500,000 minimum.
+
+```oa-check
+name: Company tax against minimum
+inputs:
+  profit: 10000000
+  income: 100000000
+steps:
+  - cit: profit * 0.25
+  - minimum: income * 0.015
+  - due: max(cit, minimum)
+expected:
+  cit: 2500000
+  minimum: 1500000
+  due: 2500000
+```
+
+**Decision: pay out profit of 8,000,000 as salary or dividend to a resident individual.** As salary, ignoring other income and company tax effects, the scale gives 810,000 on a net figure of 8,000,000. As a dividend, 25% company tax of 2,000,000 then 10% of the 6,000,000 left is 2,600,000. Salary costs 1,790,000 less, before social contributions.
+
+```oa-check
+name: Salary against dividend
+inputs:
+  profit: 8000000
+steps:
+  - salary_tax: 360000 + (profit - 5000000) * 0.15
+  - company_tax: profit * 0.25
+  - dividend_tax: (profit - company_tax) * 0.10
+  - dividend_total: company_tax + dividend_tax
+  - gap: dividend_total - salary_tax
+expected:
+  salary_tax: 810000
+  company_tax: 2000000
+  dividend_tax: 600000
+  dividend_total: 2600000
+  gap: 1790000
+```
+
+## Ask the client first
+
+1. Company, sole trader or employee?
+2. Resident or not?
+3. Sector?
+4. Annual income?
 
 ## Sources
 
