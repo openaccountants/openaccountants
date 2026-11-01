@@ -1,0 +1,34 @@
+{
+  "frozen_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "ledger_rows": 72,
+  "original_rows_preserved": 66,
+  "examples_preserved": 4,
+  "files": [
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/bi-property-transactions.json",
+      "sha256": "33ada1d9a1635e302a5f9639b126afd9895a8a364bd8c3a5ffb272b9c8e334e7"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md",
+      "sha256": "7913338e454169036e7053cedbf69270a4189d8a0ecf5da6c44b5e84933817f5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repaired-sources-read.json",
+      "sha256": "2a4e1e6f5625865c799580903945e46df757670ecaa3dcee6cbdeafe86051f35"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/reviewer-repairs.json",
+      "sha256": "51393ac5f6d22151e7ea09eba7edac0363212b50fbfa40bd7f6e12ce779050eb"
+    },
+    {
+      "path": "evidence/ledgers/burundi-property-20261101/repair-checks.json",
+      "sha256": "a1327b69cc8aa50a8e94fe9947e4006a8ce58a34d000908d02b5f8815646f6af"
+    }
+  ],
+  "committed": false,
+  "review": "focused closure pending"
+}

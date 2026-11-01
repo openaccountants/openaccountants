@@ -1,0 +1,24 @@
+{
+  "base": "eae2a469563bc2417596ddfca2db9c43a813a290",
+  "path": "skills/burundi/bi-income-tax.md",
+  "predecessor_blob": "caac2c1ebc08b1619519a6d77f04059858f5d183",
+  "predecessor_sha256": "be4af87235ecb84a6512f3006f5c229037d7f59816147c525d8574222f500117",
+  "predecessor_bytes": 17600,
+  "exact_replacements": [
+    {
+      "before": "| Individual capital income and individual gains category | 15%, subject to the specific base/exemptions and source withholding; not a corporate trading-gain rate | 2026 | [Arts. 23, 88–93](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf) |",
+      "after": "| Individual capital income and individual gains category | Use [capital income and disposal gains](bi-capital-income-tax.md#rates-bands-and-thresholds) for the exact rate, base and exemptions; payer withholding stays separate | 2026 | [Arts. 23, 88–93](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf) |"
+    },
+    {
+      "before": "version: 1.2\n",
+      "after": "version: 1.3\n"
+    },
+    {
+      "before": "# Burundi: individual business and rental income for 2026 v1.2\n",
+      "after": "# Burundi: individual business and rental income for 2026 v1.3\n"
+    }
+  ],
+  "result_sha256": "7cb014c23ab4cf38730fb6884cc577b708de0306aa013552852fe5101d5f23d4",
+  "replaced_body_units": 1,
+  "rate_destination": "skills/burundi/bi-capital-income-tax.md#rates-bands-and-thresholds"
+}

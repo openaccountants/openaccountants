@@ -1,0 +1,25 @@
+{
+  "new1": {
+    "gain": "15000000.00",
+    "tax": "2250000.0000",
+    "low_balance": "1250000.0000",
+    "high_balance": "0.0000",
+    "duty_outside": "750000.0000"
+  },
+  "new2": {
+    "four_years": "2250000.0000",
+    "six_years_granted": "0.0000",
+    "difference": "2250000.0000"
+  },
+  "new3": {
+    "treasury": 0,
+    "private": "300000.00"
+  },
+  "old1": "50000.00",
+  "old2": {
+    "at_limit": "250000.00",
+    "over_ordinary": "780000.00",
+    "over_minimum": "260000.00",
+    "difference": "530000.00"
+  }
+}

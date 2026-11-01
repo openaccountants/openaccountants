@@ -1,0 +1,40 @@
+{
+  "phase": "precommit",
+  "head": "eae2a469563bc2417596ddfca2db9c43a813a290",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "actual_origin_main": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "evidence/ledgers/burundi-capital-20261101/writer-check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"result\": \"pass\",\n  \"predecessor\": \"eae2a469563bc2417596ddfca2db9c43a813a290\",\n  \"old_files_preserved\": 69,\n  \"old_guide_bodies_byte_identical\": 8,\n  \"prior_evidence_byte_identical\": 61,\n  \"old_guide_exact_replacements\": 3,\n  \"old_substantive_body_rows_replaced\": 1,\n  \"all_old_body_units_mapped\": 294,\n  \"seven_partial_domains_preserved\": true,\n  \"source_artifacts_hashed\": 19,\n  \"ledger_rows\": 47,\n  \"shape_checks\": {\n    \"skills/burundi/bi-capital-income-tax.md\": {\n      \"tax_year_current\": [],\n      \"sources_read_dates\": [],\n      \"rates_rows_sourced\": [],\n      \"canonical_headings\": [],\n      \"two_oa_checks\": [],\n      \"version_numeric\": [],\n      \"tier_honest\": [],\n      \"no_em_dash\": [],\n      \"not_yet_confirmed\": [],\n      \"reviewed_on\": [],\n      \"read_date_evidence\": [],\n      \"sources_columns\": [],\n      \"source_hosts\": [],\n      \"jurisdiction_body\": [],\n      \"year_matches_link\": []\n    },\n    \"skills/burundi/bi-income-tax.md\": {\n      \"tax_year_current\": [],\n      \"sources_read_dates\": [],\n      \"rates_rows_sourced\": [],\n      \"canonical_headings\": [],\n      \"two_oa_checks\": [],\n      \"version_numeric\": [],\n      \"tier_honest\": [],\n      \"no_em_dash\": [],\n      \"not_yet_confirmed\": [],\n      \"reviewed_on\": [],\n      \"read_date_evidence\": [],\n      \"sources_columns\": [],\n      \"source_hosts\": [],\n      \"jurisdiction_body\": [],\n      \"year_matches_link\": []\n    }\n  },\n  \"new_guide_sha256\": \"0e8f873a93b05130fb60cedd59dc996888740b2eaebca8b874069a3d1b763e18\",\n  \"new_description_words\": 97\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-capital-income-tax.md",
+        "skills/burundi/bi-income-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 5 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true
+}

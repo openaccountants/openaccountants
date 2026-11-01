@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "permission_sha256": "5987350d454add474b3ecfb0af9b863d1a8657c48809e45ab435edbcf42e48d5",
+  "result": "Four exact permitted literal status replacements in Guide and README. All input and output hashes matched; no rule, figure, case, ledger/status or historical review evidence changed.",
+  "files": [
+    {
+      "path": "skills/burundi/bi-property-transactions.md",
+      "before_sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e",
+      "after_sha256": "fe429446c3c76e2d940be8d02766fb977c39ae4938d3ea712c9bbd5e420bdd9b",
+      "before_bytes": 31134,
+      "after_bytes": 31214,
+      "replacements": [
+        {
+          "before": "This is a source-cited partial draft awaiting independent review, with no accountant attestation.",
+          "after": "This partial draft passed independent AI source review within its stated scope, with no accountant attestation.",
+          "required_occurrences": 1
+        },
+        {
+          "before": "Independent review is pending; all seven pack tax domains remain partial, with no accountant attestation or authenticated filing.",
+          "after": "Independent AI source review and focused repair closure passed within this Guide's stated scope; all seven pack tax domains remain partial, with no accountant attestation or authenticated filing.",
+          "required_occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "before_sha256": "af98ff63b5404e3375a224f3e757cea5f00f4f3792ff7ac629e944a40a6708ec",
+      "after_sha256": "66f6f2364e85ccb590b1a11842cbbf9b44bb7fe6610576a9899fe055f4025c5f",
+      "before_bytes": 5097,
+      "after_bytes": 5214,
+      "replacements": [
+        {
+          "before": "| Property transactions and title charges | bi-property-transactions | source-cited draft; independent review pending; partial |",
+          "after": "| Property transactions and title charges | bi-property-transactions | checked against the law; independent AI review passed; partial |",
+          "required_occurrences": 1
+        },
+        {
+          "before": "Its [row-level ledger](../../evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md) and four recomputing cases are writer evidence pending a fresh independent review.",
+          "after": "Its [row-level ledger](../../evidence/ledgers/burundi-property-20261101/ledgers/bi-property-transactions.md) and four recomputing cases passed independent AI source review and [focused repair closure](../../evidence/ledgers/burundi-property-review-20261101/closure.md) within the stated partial scope.",
+          "required_occurrences": 1
+        }
+      ]
+    }
+  ]
+}

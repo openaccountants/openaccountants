@@ -1,0 +1,29 @@
+{
+  "JAN": {
+    "url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+    "path": "budget2025mod.pdf",
+    "act": "Modified 2025/26 budget, effective 1 January 2026",
+    "read_scope": "Arts. 94, 103–104, 138–143, 217, 226–227 and 252 with neighbouring paragraphs; visual pp. 41–42 and final PDF249/printed246; per-mille sign and mortgage cap inspected.",
+    "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+    "bytes": 40392761,
+    "read_date": "2026-11-01"
+  },
+  "JUL": {
+    "url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+    "path": "budget2026.pdf",
+    "act": "Enacted 2026/27 budget, effective 1 July 2026",
+    "read_scope": "Arts. 94–95, 108–109, 146–151, 237, 246–247 and 277 with neighbouring paragraphs; visual pp.44–46 and267; per-mille sign and absence of mortgage cap inspected.",
+    "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+    "bytes": 7715040,
+    "read_date": "2026-11-01"
+  },
+  "REG": {
+    "url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+    "path": "support-property-20261101/bob2020-2bis.pdf",
+    "act": "Loi n°1/05 du 20 février 2020, BOB n°2BIS/2020",
+    "read_scope": "Actual complete Act arts.1–35 and annex, physical23–31/printed187–195 read; annexIII/IV inspected visually. Principal text only: no assertion that missing 2026 cession order has been reconciled.",
+    "sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+    "bytes": 434282,
+    "read_date": "2026-11-01"
+  }
+}

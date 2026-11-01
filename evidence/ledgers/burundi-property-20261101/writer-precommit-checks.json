@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "python3",
+      "evidence/ledgers/burundi-property-20261101/writer-check.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"result\": \"pass\",\n  \"prior_files_preserved\": 22,\n  \"old_guides_preserved\": 8,\n  \"prior_evidence_preserved\": 14,\n  \"shape_checks\": {\n    \"tax_year_current\": [],\n    \"sources_read_dates\": [],\n    \"rates_rows_sourced\": [],\n    \"canonical_headings\": [],\n    \"two_oa_checks\": [],\n    \"version_numeric\": [],\n    \"tier_honest\": [],\n    \"no_em_dash\": [],\n    \"not_yet_confirmed\": [],\n    \"reviewed_on\": [],\n    \"read_date_evidence\": [],\n    \"sources_columns\": [],\n    \"source_hosts\": [],\n    \"jurisdiction_body\": [],\n    \"year_matches_link\": []\n  },\n  \"ledger_rows\": 66,\n  \"actual_source_bytes_checked\": [\n    \"budget2025mod.pdf\",\n    \"budget2026.pdf\",\n    \"support-property-20261101/bob2020-2bis.pdf\"\n  ],\n  \"new_guides\": 1,\n  \"replaced_body_units\": 0\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/burundi/bi-property-transactions.md"
+    ],
+    "exit_code": 0,
+    "stdout": "checked 1 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

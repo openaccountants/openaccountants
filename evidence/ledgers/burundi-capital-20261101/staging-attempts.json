@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-01",
+  "attempts": [
+    {
+      "command": "git add skills/burundi/bi-capital-income-tax.md skills/burundi/bi-income-tax.md skills/burundi/README.md evidence/ledgers/burundi-capital-20261101",
+      "exit_code": 1,
+      "reason": "New evidence paths are outside the current sparse-checkout definition. Git staged permitted Guide paths but refused evidence; chained commit did not run.",
+      "correction": "Use git add --sparse for only the already-authorised exact new evidence directory and Guide paths; no sparse-checkout configuration change."
+    }
+  ]
+}

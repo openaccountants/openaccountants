@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-01",
+  "authorization": "Exact five status-only replacements authorised by focused independent closure; no additional substantive edit",
+  "frozen_writer_head": "29c8b477f1d659c0042a6ae9de5b10ef615a98d0",
+  "permission_path": "evidence/ledgers/burundi-capital-review-20261101/status-only-permission.json",
+  "permission_sha256": "7e6a03992aa571c860de5768be51016b3b7e391ce127f1868d35616671063eff",
+  "closure_path": "evidence/ledgers/burundi-capital-review-20261101/closure-review.md",
+  "closure_sha256": "4038fd2ec757b65e79975ebe07d1f608923f5b1bc760db461f6560ce51e8df99",
+  "accepted_repair_candidate_sha256": "a84e85a093c2110d4721f1a40e25466c95efcbbdc5f0a8fce55c2351fe6bbd84",
+  "applications": [
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "input_sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+      "output_sha256": "f63f3372afca68e37ab4c767c8e483a48962205eccdfe7b5d88b05615a008d04",
+      "input_bytes": 27254,
+      "output_bytes": 27370,
+      "exact_replacements": [
+        {
+          "before": "This is a partial computation workpaper with independent source review pending.",
+          "after": "This partial computation workpaper passed independent AI source review and focused repair closure within its stated scope.",
+          "required_occurrences": 1
+        },
+        {
+          "before": "Partial computation scope; independent source review pending.",
+          "after": "Partial computation scope; independent AI source review and focused repair closure passed.",
+          "required_occurrences": 1
+        },
+        {
+          "before": "This is a partial computation workpaper; independent source review is pending.",
+          "after": "This partial computation workpaper passed independent AI source review and focused repair closure within its stated scope.",
+          "required_occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "skills/burundi/README.md",
+      "input_sha256": "22c30bc4c238d4a1f0861a3757728bb747194a3dd0fe55b75b69d3e3d1ecf030",
+      "output_sha256": "2fde4b1b4a17cd0f502e02c27ad2b8ef6f35ea930f40fd3bb500cc2a378d775e",
+      "input_bytes": 6460,
+      "output_bytes": 6594,
+      "exact_replacements": [
+        {
+          "before": "| IT-IND | bi-income-tax; bi-capital-income-tax | original business/rental scope accepted; new capital scope independent review pending; partial |",
+          "after": "| IT-IND | bi-income-tax; bi-capital-income-tax | original business/rental scope accepted; capital scope independent AI review and focused repair closure passed; partial |",
+          "required_occurrences": 1
+        },
+        {
+          "before": "This new scope is a tier-2 draft pending fresh independent source review.",
+          "after": "This tier-2 scope passed independent AI source review and [focused repair closure](../../evidence/ledgers/burundi-capital-review-20261101/closure-review.md) within its stated limits.",
+          "required_occurrences": 1
+        }
+      ]
+    }
+  ],
+  "all_expected_hashes_match": true,
+  "substantive_changes_beyond_accepted_repairs": 0,
+  "tier": 2,
+  "all_seven_domains_partial": true,
+  "not_an_attestation_currentness_certificate_filing_or_merge_approval": true
+}

@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-01",
+  "status": "uncommitted focused repair candidate; pending independent closure",
+  "frozen_parent_head": "29c8b477f1d659c0042a6ae9de5b10ef615a98d0",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "original_review_freeze_sha256": "d979284df7a131f493db0c6b347fad58657d6296a3d4d1b44c386d758c984001",
+  "guide_sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+  "findings_repaired": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "corrected_ledger_rows": [
+    "C15",
+    "C19",
+    "C35",
+    "C37",
+    "C45"
+  ],
+  "new_guide_or_rule_rows": 0,
+  "literal_repair_count": 20,
+  "all_working_candidate_checks_passed": true,
+  "files": [
+    {
+      "path": "skills/burundi/bi-capital-income-tax.md",
+      "sha256": "233d9e7f0e2df6e1d6c65df8713950d7e97126cfecb564a051fdb8af8c238510",
+      "bytes": 27254,
+      "git_blob": "08131e832292871f8b1323fb415e84eaa15d7451"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/README.md",
+      "sha256": "1952b5666e7e4c2ce2a649d08d8791b6330cdfbec14932b3371092df44fc2fd9",
+      "bytes": 3087,
+      "git_blob": "190ccc7d1ad731c1c56b6606344cbb40b9e43e17"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/check-repairs.py",
+      "sha256": "b0a544d36dd47298205f5795d6636dd93bee9f8458d4e342cea7f3d923726d75",
+      "bytes": 4694,
+      "git_blob": "9aad8e746ef163d19f6aafd51db25177b885c577"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/closure-handoff.md",
+      "sha256": "e0469b7d575c2fb0e1b0984bd55e17b137c84ea9e96a2583ecea515498b166ca",
+      "bytes": 2560,
+      "git_blob": "b66ad64a70b0c5f332f2b6cc586d8648253a2097"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/decisive-source-supplement.json",
+      "sha256": "ebd2285510a1d63d310213f83f36da08fa39dc65ad0f4be3d0ead0ebc5098fa7",
+      "bytes": 16316,
+      "git_blob": "1b8d684a002c3ef7120abb8fdafd7129563a76a3"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/effective-47-row-ledger.json",
+      "sha256": "068dd0c2a8757e89fd59806e2e0ec76d3f71e9ed4e5ae2baadb8c7bb70db58c1",
+      "bytes": 82610,
+      "git_blob": "1d622809561bc9b578d992df42a35c3c1d897d89"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/effective-47-row-ledger.md",
+      "sha256": "b037414b5f1da47bb24103e2aa2c9b4e740e525a1fcb8445255e047083939ced",
+      "bytes": 29884,
+      "git_blob": "49839b8dcabb13788396523e0d0acce252182cb5"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/execution-and-source-failures.json",
+      "sha256": "c1bbe35097dd3950fb96a6bdec0cbb2309532fc4a37b08371ac94dbda8edc65b",
+      "bytes": 1219,
+      "git_blob": "6dfb27e16c89dbef1d7e3a138f31a77afd280d04"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/five-row-before-after.json",
+      "sha256": "195ccbab4183a34fe68896734f9664c432d89eae689aa44097385af8c3243c4e",
+      "bytes": 43711,
+      "git_blob": "72388f53e006b5b3fe52f154d7393f252e60ecdc"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/literal-repairs.json",
+      "sha256": "4576b4f7fa5f866697ea03028e42daf9651f64e4d640a34437295d0814138ad5",
+      "bytes": 11041,
+      "git_blob": "b2645297325394a33b4a6966aba459e290fb46b9"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/preservation-baseline.json",
+      "sha256": "7b6dc5f974f3e1915c430fd32881338e0bc97fb831f8c9185011550fd3e3814c",
+      "bytes": 29808,
+      "git_blob": "1acafb6e8795b5130d3ae0a589096d45d0db40e4"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/run-checks.py",
+      "sha256": "a55ce23bc9709bbe2a96a19f68d2289b1ef7bb7287d38b831a199ba7859fce19",
+      "bytes": 1510,
+      "git_blob": "3c9cc0dd4e40e196912ed872d7259ee1da153ce6"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/source-artifacts-supplement.json",
+      "sha256": "c3af42970eed211077e878a0cbf74edfda879e777e3835980dc49e354cbaa2d7",
+      "bytes": 2600,
+      "git_blob": "9a6c08755f6c7aeac050512988a518a132e7a8fa"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/sources-read-supplement.json",
+      "sha256": "b4831d5c197733b160523ead9f3e194806a645f4eac701dcba533611263ced19",
+      "bytes": 1696,
+      "git_blob": "e9232d177172ec690186a402f17e55f6e4ae16f0"
+    },
+    {
+      "path": "evidence/ledgers/burundi-capital-repair-20261101/working-candidate-checks.json",
+      "sha256": "b3fcd89d87bf99eb4ad82aad6ae54fec99e9876fa0589a391e77cf1d1a9601ca",
+      "bytes": 3823,
+      "git_blob": "17a5ccbebdc4aab2b540c4b635284342e2b2d549"
+    }
+  ],
+  "preservation": "89 prior tracked files plus16originalreviewfiles unchanged; no oldGuide, README or earlier evidence mutation beyond the previously authorised original migration",
+  "commit_push_or_status_promotion": false
+}

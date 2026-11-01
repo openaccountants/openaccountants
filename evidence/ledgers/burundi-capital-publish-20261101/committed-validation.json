@@ -1,0 +1,67 @@
+{
+  "validation_kind": "actual committed changed-only scope; no index generation",
+  "content_commit": "59d13bd15c88310fe5a84c382385690e9a611262",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "actual_origin_main": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "evidence/ledgers/burundi-capital-publish-20261101/check-publish.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"result\": \"pass\",\n  \"guide_sha256\": \"f63f3372afca68e37ab4c767c8e483a48962205eccdfe7b5d88b05615a008d04\",\n  \"readme_sha256\": \"2fde4b1b4a17cd0f502e02c27ad2b8ef6f35ea930f40fd3bb500cc2a378d775e\",\n  \"exact_status_literals\": 5,\n  \"accepted_repair_literals\": 20,\n  \"preserved_files\": 125,\n  \"preserved_old_guide_bodies\": 9,\n  \"original_47_rows_and_review_evidence_preserved\": true,\n  \"effective_rows\": 47,\n  \"corrected_ids\": [\n    \"C15\",\n    \"C19\",\n    \"C35\",\n    \"C37\",\n    \"C45\"\n  ],\n  \"other_equal_rows\": 42,\n  \"source_artifact_hashes_checked\": 31,\n  \"all_seven_partial_strings_exact\": true,\n  \"shape_checks\": {\n    \"skills/burundi/bi-capital-income-tax.md\": {\n      \"tax_year_current\": [],\n      \"sources_read_dates\": [],\n      \"rates_rows_sourced\": [],\n      \"canonical_headings\": [],\n      \"two_oa_checks\": [],\n      \"version_numeric\": [],\n      \"tier_honest\": [],\n      \"no_em_dash\": [],\n      \"not_yet_confirmed\": [],\n      \"reviewed_on\": [],\n      \"read_date_evidence\": [],\n      \"sources_columns\": [],\n      \"source_hosts\": [],\n      \"jurisdiction_body\": [],\n      \"year_matches_link\": []\n    },\n    \"skills/burundi/bi-income-tax.md\": {\n      \"tax_year_current\": [],\n      \"sources_read_dates\": [],\n      \"rates_rows_sourced\": [],\n      \"canonical_headings\": [],\n      \"two_oa_checks\": [],\n      \"version_numeric\": [],\n      \"tier_honest\": [],\n      \"no_em_dash\": [],\n      \"not_yet_confirmed\": [],\n      \"reviewed_on\": [],\n      \"read_date_evidence\": [],\n      \"sources_columns\": [],\n      \"source_hosts\": [],\n      \"jurisdiction_body\": [],\n      \"year_matches_link\": []\n    }\n  },\n  \"description_words\": 103\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-capital-income-tax.md",
+        "skills/burundi/bi-income-tax.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 2 files, 5 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 4 changed guide file(s)\nchecked 3 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/burundi/bi-capital-income-tax.md: BI IT-IND also holds bi-income-tax, with a different job\nWARN: skills/burundi/bi-property-transactions.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_passed": true
+}

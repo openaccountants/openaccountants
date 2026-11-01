@@ -1,0 +1,15 @@
+[
+  {
+    "url": "https://www.obr.bi/images/PDF/Ordonnance_relative_aux_I.R.pdf",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+    "path": "../sources/reviewer-capital-20261101/valuation-order2025.pdf",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 5751411,
+    "sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+    "pdf": true
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "IR",
+    "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+    "path": "income2020.pdf",
+    "sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+    "bytes": 2174407,
+    "read_date": "2026-11-01",
+    "review_scope": "Original income law: complete definitions, source articles 6–7, year/categories/rates/filing articles 16–29, business articles 37–39, rental/capital/corporate articles 85–99 including complete 88–93, withholding articles 122–129 and final articles 136–139. OCR aided reading. Visually inspected PDF pages 4–6, 12–14, 30–31, 33 and 41. The 2021 corrections were separately reviewed; exact 2020 wording is not automatically current law."
+  },
+  {
+    "id": "JAN",
+    "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+    "path": "budget2025mod.pdf",
+    "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+    "bytes": 40392761,
+    "read_date": "2026-11-01",
+    "review_scope": "Actual enacted January budget: PDF pages 26–27, 43–44, 48–49, 51–52 and signed commencement page 249. Full relevant business, distribution, annual return, withholding, micro threshold, exemptions and neighbouring clauses read. Pages 51 and 249 visually inspected. Comparison DOCX excluded as operative authority."
+  },
+  {
+    "id": "JUL",
+    "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+    "path": "budget2026.pdf",
+    "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+    "bytes": 7715040,
+    "read_date": "2026-11-01",
+    "review_scope": "Actual signed July budget: PDF pages 25–27, 45–48, the complete article 190 on page 53, exemptions/neighbours on 56–58 and signed commencement page 267. Pages 57 and 267 visually inspected. Appropriation tables not substantively reviewed."
+  },
+  {
+    "id": "FORM",
+    "official_url": "https://www.obr.bi/images/FORMULAIRE_IR_PERSONNE_PHYSIQUE_2021_VF_Corrig%C3%A9_octobre_2021.pdf",
+    "path": "form-individual.pdf",
+    "sha256": "7a35ba979bcd5eb35a24398529b7aea92e2acd74fae1814ab534e6e59434f954",
+    "bytes": 342830,
+    "read_date": "2026-11-01",
+    "review_scope": "All four actual published form pages read: business-income title, products/asset-sale row, profit/minimum tax, credits, balance and administration receipt. No private-capital box inferred."
+  },
+  {
+    "id": "PORTAL",
+    "official_url": "https://www.obr.bi/index.php/teledeclaration-telepaiement",
+    "path": "support-capital-20261101/portal-browser-excerpt.txt",
+    "sha256": "4047700aa57e567f986f2b3429644559cb159af643bf6d31b4e7146f56b714f6",
+    "bytes": 652,
+    "read_date": "2026-11-01",
+    "review_scope": "Actual live official portal page read with the web reader: medium/large and small/micro taxpayer routes and documentation. No authenticated screen. The writer excerpt hash was independently checked."
+  },
+  {
+    "official_url": "https://amategeko.gov.bi/wp-content/uploads/2021/04/BOB_No3-2021.pdf",
+    "path": "reviewer-capital-20261101/gazette202103.pdf",
+    "act": "Ordonnance ministérielle n°540/214bis du 5 mars 2021",
+    "sha256": "64c78813358b3f2eab8a7c8723b1117b03d57d5150a692a29b4999db1134470c",
+    "bytes": 676925,
+    "read_date": "2026-11-01",
+    "review_scope": "Full actual implementing order, articles 1–26, BOB 3/2021 printed pages 337–340 / physical pages 30–33, read and visually inspected. Decisive correction table article 3, quarterly deadline article 5, valuation article 17, seller-paid duties article 18 and final articles 24–26. Other gazette acts not reviewed."
+  },
+  {
+    "official_url": "https://www.obr.bi/images/PDF/OM_PORTANT_ACTUALISATION_DES_TAUX_UTILISES_LORS_DE_LA_CESSION_IMMOBILIERE_OM_VALEURS_DE_CESSION_DES_PARCELLES_CENTRES_URBAINS_AU_29102026.pdf",
+    "path": "reviewer-capital-20261101/valuation-order2025.pdf",
+    "act": "Ordonnance ministérielle conjointe n°540/550/720/1145 du 27 février 2025",
+    "sha256": "c81d4c2c780f8728a799183bd96d9336196ac98ba0ce85fc8e486969052057ed",
+    "bytes": 5751411,
+    "read_date": "2026-11-01",
+    "review_scope": "Actual signed PDF physical pages 1–4 and 11–12 visually read: complete operative articles 1–7, beginning of annex I and annex III. Cover/signature date is 27 February 2025; commencement is signature day. Other location and completed-construction tariff pages not substantively reviewed. Continuing 2026 effect/current replacement not established."
+  }
+]

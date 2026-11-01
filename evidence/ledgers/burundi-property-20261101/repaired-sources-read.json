@@ -1,0 +1,26 @@
+{
+  "frozen_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "read_date": "2026-11-01",
+  "original_source_record": "source-identities.json preserved byte-identically",
+  "repair_scopes": [
+    {
+      "id": "REG",
+      "url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "actual_read": "Full art.23 continuation at physical26/printed190, including weekly list contents and separate reporting sanction, plus adjoining arts24–26."
+    },
+    {
+      "id": "JAN",
+      "url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "actual_read": "Arts94/226–227 already actually read and now included in Sources; full207 with adjacent204–209 and full215 with adjacent214–218 read. Actual scans52–53 inspected; original41–42/final249 readings preserved."
+    },
+    {
+      "id": "JUL",
+      "url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "actual_read": "Full226 with adjacent223–228, and full235 with adjacent234–239 read. Actual scans58/60 inspected; original44–46/final267 readings preserved."
+    }
+  ],
+  "no_new_source_tail": "No new tariff/order/form recovered or inferred. Original scope holds remain, plus exact permit-insurance wording/application hold."
+}

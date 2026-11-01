@@ -1,0 +1,238 @@
+{
+  "result": "pass",
+  "frozen_writer_head": "f2ae4ea5b9463c5e959b2e3e44147e49facafbed",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_sha256": "1a803b529c02dc5b4dc199c3e37622b48c5a8dc3be8ec2f85290761386595b1e",
+  "repair_candidate_sha256": "dc19d6b9927f66720018232514936290e671a102368eea4c7e56b52571d17bbf",
+  "precise_guide_repair_replay": true,
+  "frontmatter_unchanged": true,
+  "original_ledger_objects_preserved": 66,
+  "new_ledger_rows": 6,
+  "total_ledger_rows": 72,
+  "human_ledger_original_exact_prefix": true,
+  "original_four_case_section_preserved": true,
+  "oa_check_blocks_preserved": 4,
+  "prior_files": [
+    {
+      "path": "evidence/ledgers/burundi-publication-format-20261101/format-only.json",
+      "sha256": "fc2335837ff8491888839d43f1601e796cabbf3f1966785129a4895115c9184a",
+      "git_blob": "1cccf838bf25da1ea98e88526fd28bc86a138f8f",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/pinned-validation.py",
+      "sha256": "9d42c1152603b2f1577fc01a7a3e8f97f86dfdaa918e3de8b0b96efe219c57cc",
+      "git_blob": "c4e3b66868eda26e2a2d06a991eaeb137c430a2e",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/preservation-and-checks.json",
+      "sha256": "fabb014a9787e2cc3f96cd15ca40cb7fcbb8ab1ab4206c335b58a8850062dbee",
+      "git_blob": "7a459bf4841f80a2b135fe3c07c17f8be4ce3305",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-repair-1/repair.json",
+      "sha256": "e542d7b96f50d62981db546b517ac92fd258280aadc91484bbf4b26122f8424c",
+      "git_blob": "894c7cd1b87c31bdf9747e6f21a1048e9ca2a206",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/README.md",
+      "sha256": "e8aec5eb9c9385694e6698adf6349723b0214c909602eb927c80692053f51a71",
+      "git_blob": "c26f404697dc7de1c0dc27328cfdfc906186b568",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/build-row-record.py",
+      "sha256": "e04a857ec283269f7200c1b06d0f0685c1e83e4653206154d95f7879a412ab3f",
+      "git_blob": "9684f63f5c4fddc2add7220c73717956de2f57fb",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/examples.md",
+      "sha256": "8933fe1df91a005661be496df23b1506df2508938c10ab9958921f1c45e549bc",
+      "git_blob": "bbdefa5801da9915bc69416243e70095551d0b45",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/mechanical-checks.json",
+      "sha256": "c345e5a493e4e312cc573480f992649aff5edef9ddbc306182c1348965e01257",
+      "git_blob": "202004570a2c2363670d1acd9e48237e26b020b4",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/review-checks.py",
+      "sha256": "c776e6d42af021b81c62d946805f6bd8531d8ad282be8479b223fe71850f195f",
+      "git_blob": "8e9cd5ad53aa0ea68558228c9413e0c2e8434362",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-20261101/row-review.md",
+      "sha256": "0e1831788b8a82e8ec4db8a99b1cde9de72920160b075a7e624335ae8ca6a295",
+      "git_blob": "691bbcedb9442e9bbd183b3bfd158240ce689359",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/README.md",
+      "sha256": "fbfd8567b494c432cafd6ae4b6345344d1bb0940107eb565e16eef7623662c2a",
+      "git_blob": "016b8224be131e4b98f2a5abf991bb4fe85502d7",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/check-closure.py",
+      "sha256": "031adac1e277391d919404b2cf0ceaa95424285ae89cb33df6f5f5884ef717fa",
+      "git_blob": "ecc9699519323a56c6feb074c625ba55115e3e9d",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-review-closure-20261101/closure-checks.json",
+      "sha256": "3ac8f4d0390019599a7001856734dbafbe1f0315974bbbf26ae220a0aa5b6728",
+      "git_blob": "7b8ca21371c8c1da663512c63b25c4248a8dff42",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "evidence/ledgers/burundi-writer-20261101/README.md",
+      "sha256": "ed683ce0229cad9a7da6c7ff35547f504b4cb90de0731c6e21144ce4aae39ab0",
+      "git_blob": "20e1be075dc4ce181d8868df530d9395c1f4da69",
+      "worktree": "sparse absent; immutable Git identity checked"
+    },
+    {
+      "path": "skills/burundi/bi-company-formation.md",
+      "sha256": "3f2d7f4ba2b90be758c3f06b07a0cc5bde6fe47a30aff6d7f6864677254068ef",
+      "git_blob": "9e820a5efdf494a9a836a7c2d5213ac9d78202c1",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-corporate-income-tax.md",
+      "sha256": "68729b2118991841baf16d0a67be77bef3ff34c68b0f07bf8f50802c1a1cd526",
+      "git_blob": "cf45de8f1417cb1acc67c5903f1d45fae07155b9",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-cross-border-tax.md",
+      "sha256": "6f5fe932f904e7c9265e3560804717cdcdd46b841c6b99d7a8c0f61911bb024b",
+      "git_blob": "1ef82646e2e8ed3f57c4b1a8c9f39ec57d22e1ad",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-income-tax.md",
+      "sha256": "be4af87235ecb84a6512f3006f5c229037d7f59816147c525d8574222f500117",
+      "git_blob": "caac2c1ebc08b1619519a6d77f04059858f5d183",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-payroll-social.md",
+      "sha256": "25da97f475d107492a72c72295a10de5c008f976bd6a8a3548ff610cf73f8c7c",
+      "git_blob": "482370cc213119aae3814d9ad1133c6b55c50ca4",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-tax-overview.md",
+      "sha256": "07ccd038e5d4c7eb1a59ec744bd883b7b7ced0ece63de2abf0f01c68f3d4db53",
+      "git_blob": "f1ff99bc83b7a31ff21c3c30b0576aa420ce7698",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-transfer-pricing.md",
+      "sha256": "a9e37922274825f37554c2d375604b21c4a381ca6ac88161465ca8f7c4dc1048",
+      "git_blob": "493645523c8aa508677b872db26fd5eb4080b1b9",
+      "worktree": "identical"
+    },
+    {
+      "path": "skills/burundi/bi-vat-gst.md",
+      "sha256": "30e37485e899594e177d14b7930058c8f6ded22969203a58c82ee57bc4641914",
+      "git_blob": "5e68b950face5238ef4222a977f92881271cd941",
+      "worktree": "identical"
+    }
+  ],
+  "old_guides_preserved": 8,
+  "prior_evidence_preserved": 14,
+  "replaced_old_units": 0,
+  "frozen_property_evidence_preserved": 15,
+  "initial_review_files_preserved": 9,
+  "initial_review_receipt_sha256": "e8477f4589cfb79eaf1a86665abc54d09e72af6577be63428347caae207553a9",
+  "readme_unchanged": true,
+  "source_bytes": [
+    {
+      "id": "JAN",
+      "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "bytes": 40392761
+    },
+    {
+      "id": "JUL",
+      "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "bytes": 7715040
+    },
+    {
+      "id": "REG",
+      "sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "bytes": 434282
+    }
+  ],
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-property-transactions.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 2 changed guide file(s)\nchecked 1 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/burundi/bi-property-transactions.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
