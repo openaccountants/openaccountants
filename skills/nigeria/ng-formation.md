@@ -456,7 +456,7 @@ expected:
   total: 20400000.00
 ```
 
-Decision, business name or limited company? Turnover NGN 60,000,000, costs NGN 15,000,000, fixed assets low. As a business name, income tax on NGN 45,000,000 is NGN 9,280,000, before reliefs. As a small company, company tax and levy are nil. That is not the whole answer: tax on salary or dividends taken out is not in this figure, so compute it before choosing.
+Decision, business name or limited company? Turnover NGN 60,000,000, costs NGN 15,000,000, fixed assets low. As a business name, income tax on NGN 45,000,000 is NGN 9,280,000, before reliefs. As a small company, company tax and levy are nil. That is not the whole answer: tax on salary or dividends taken out is not in this figure, so compute it before choosing. Professional services: the copy read has no exclusion in the small company definition and no NGN 50,000,000 limit, but it could not be checked against an official copy and commentary reports both a professional services exclusion and a NGN 50,000,000 limit. Until an official text settles this, do not give a law, accounting, consulting or similar firm the 0% rate: compute at 30% plus the 4% levy and flag it. A company with turnover over NGN 50,000,000 gets the same flag.
 
 ```oa-check
 name: Business name against small company, NGN 45,000,000 profit
@@ -490,7 +490,7 @@ expected:
 
 NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
 
-Not yet confirmed: every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
+Not yet confirmed: the small company definition (copy read: NGN 100,000,000, no professional services exclusion; ng-cit still says NGN 50,000,000); every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read (ng-cit says EUR 750 million; which currency is enacted is open). Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 

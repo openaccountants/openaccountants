@@ -552,7 +552,7 @@ expected:
   total: 20400000.00
 ```
 
-Decision, which period stack? A company with turnover NGN 90,000,000: 2025 pre-2026 text puts it at 20%; 2026 at 0% if fixed assets are within the limit. On NGN 10,000,000 profit that is the difference shown.
+Decision, which period stack? A company with turnover NGN 90,000,000: 2025 pre-2026 text puts it at 20%; 2026 at 0% if fixed assets are within the limit. On NGN 10,000,000 profit that is the difference shown. This assumes the company does not provide professional services and that the NGN 100,000,000 limit in the copy read is right; both are unverified, see Not yet confirmed. If it provides professional services, flag it and use 30% plus the 4% levy until settled.
 
 ```oa-check
 name: Period flag, turnover NGN 90,000,000
@@ -585,7 +585,7 @@ expected:
 
 NRS guides at https://www.nrs.gov.ng/taxpayer-services/tax-guides-and-manuals could not be read: a page shell loaded, then other NRS pages showed a CAPTCHA, so no cross-check was done.
 
-Not yet confirmed: every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
+Not yet confirmed: the small company definition (NGN 100,000,000 and no professional services exclusion in the copy read; commentary reports NGN 50,000,000 and an exclusion); every NTA figure in this skill, including the s.57 group test, printed as £750 million in the copy read. Each comes from an unofficial press-hosted copy and was not confirmed in an official document, because nrs.gov.ng showed a CAPTCHA on 2026-11-01 and it was not touched. Also unconfirmed: all filing dates, forms, portals and penalties under the Nigeria Tax Administration Act 2025, whose text we did not open; the VAT registration threshold (no figure appears in the NTA text read); capital allowance rates for ordinary trades; and all earlier text. Also unconfirmed: how a financial year straddling 1 January 2026 is assessed, since the sections read give the commencement date only. Lost content restored: 0, nothing removed.
 
 ## Disclaimer
 
