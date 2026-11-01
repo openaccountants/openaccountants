@@ -21,7 +21,7 @@ partial:
 
 # Niger tax pack
 
-**Partial local draft, 1 November 2026.** Five legacy 2025 Guides remain unchanged. Two additional 2026 jobs have source ledgers and executable examples. Their independent source review is pending, and neither has accountant attestation. They do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
+**Partial local draft, 1 November 2026.** Five legacy 2025 Guides remain unchanged. Two additional 2026 jobs have source ledgers and executable examples. Independent source review accepted both limited jobs at `aa1f342de147326021335775874f4e7071ce1415`; neither has accountant attestation. They do not complete [issue #477](https://github.com/openaccountants/openaccountants/issues/477).
 
 | Domain | Retained Guide | Actual status |
 |---|---|---|
@@ -49,4 +49,4 @@ The ministry's original 2026 law and signed first rectification were downloaded 
 - [TDTA repeal rule ledger](../../evidence/ledgers/ne-money-transfer-tax-repeal.md).
 - [Source scope and integrity record](../../evidence/ledgers/niger-source-read-20261101.md).
 
-Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. Independent pack review is pending; no publication, push or merge is authorised by this local checkpoint.
+Full raw PDFs, scans, HTML and OCR remain privately outside this Git worktree. No professional name or warrant is used to imply attestation. The independent reviewer checked all 40 ledger rows, four examples, all five preserved legacy files and the 58-topic destination map. The [review and immutable candidate hashes](../../evidence/ledgers/niger-review-20261101/review.md) record the exact accepted scope. The two Guides and ledgers remain the accepted bytes. All seven domains remain partial. No publication, push or merge is authorised by this local checkpoint.
