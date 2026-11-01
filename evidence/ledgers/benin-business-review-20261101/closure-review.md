@@ -39,4 +39,3 @@ The [independent IBA review and focused closure](../../evidence/ledgers/benin-bu
 
 Input SHA-256: `74ebe94a19595b7f85fdd841e92b5412197657751c315dffe70df5c66ae5e942`
 Expected final SHA-256: `345d0715ae69d63b13d2a13aa0f8198d19405191f97afc6d488a63cde517402c`
-

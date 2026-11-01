@@ -1,0 +1,9 @@
+{
+  "reason": "Committed whitespace audit found one new blank line at EOF in closure-review.md; remove only that blank line. No review prose, law, status literals or source identities changed.",
+  "observed_failure": "evidence/ledgers/benin-business-review-20261101/closure-review.md:42: new blank line at EOF.",
+  "original_commit": "56bb55ab6bf0542a978034a74066218311603327",
+  "original_blob": "8fb8510150b725639add1c2eb20c457c70ebe227",
+  "before_sha256": "66d638be755a85aba05e365cce8e51f92ee334f45a34b566b8cae21f4ccf7e27",
+  "after_sha256": "2936e0b614aacc6c6bdb398c51931ea960f6a8540d3048b613ecf5f6b9f07947",
+  "original_recoverable": true
+}
