@@ -126,12 +126,12 @@
     {
       "id": "C12",
       "section": "The base",
-      "rule": "Businessincome includes disposal/debtgains,poolbalancing,businessgifts,restrictionpayments,tradebankinterest,propertylettingbusiness,insuredstock.",
+      "rule": "Business income includes gains on disposal of business assets OTHER THAN depreciable assets and satisfaction of business debts, whether capital or revenue; also pool balancing, business gifts, restriction payments, specified interest, property letting and insured stock.",
       "article": "ITA24-25",
       "source_id": "ITA",
       "pdf_pages": "27",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
-      "quote": "gifts received by a person in the context of a business relationship",
+      "quote": "other than depreciable assets",
       "read_on": "2026-11-01"
     },
     {
@@ -170,12 +170,12 @@
     {
       "id": "C16",
       "section": "The base",
-      "rule": "50%or greater ownership/controlchange; samebusiness/no unapprovednewbusiness3years; stalecrossrefheld.",
+      "rule": "A50%or greater underlying ownership/control change invokes same-business and no new business OR investment without Commissioner approval conditions for3years; printed stale cross-reference remains held.",
       "article": "ITA88",
       "source_id": "ITA",
       "pdf_pages": "56-57",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
-      "quote": "change of fifty percent or more",
+      "quote": "new business or investment",
       "read_on": "2026-11-01"
     },
     {
@@ -247,12 +247,12 @@
     {
       "id": "C23",
       "section": "Deadlines and filing",
-      "rule": "Initialestimate31Jan/substitutefirstmonth; revisions30Apr/31Oct or4th/10thmonth.",
+      "rule": "Initial estimate by31January or end of first substituted-year month; first review by30April or end of fourth substituted-year month; second by31October or, literally, on or before the tenth month of the substituted year.",
       "article": "ITA113(1)-(2)",
       "source_id": "ITA",
       "pdf_pages": "70-71",
       "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
-      "quote": "on or before 31st January",
+      "quote": "on or before the tenth month",
       "read_on": "2026-11-01"
     },
     {

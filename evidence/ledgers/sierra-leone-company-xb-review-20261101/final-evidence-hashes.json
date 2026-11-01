@@ -1,0 +1,17 @@
+{
+  "CLOSURE.md": "e7ae3999380633e692f9cb2c494ab281f1911071cb4f86a5f2a9488d049e9c07",
+  "REVIEW.md": "72774eec7554f8d6629fd1d82df4608cb87de9a9f7e2ce9eb469762e74390205",
+  "all-records.json": "fb784d13eaf03a0d741df62214c73f2b05f44ac999898860848915b41d1c3c80",
+  "check-examples.txt": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca",
+  "closure-attempt-1.json": "4e2b00936eb239beff7577cc51e86202d5040a71d5859ce18580975e1fe13a0f",
+  "closure-v2.json": "aafc755fc6d954f12597a3d84a214ae5eb943b97055aebad3ef12fcd94155a5e",
+  "findings.json": "aefadabd96f4d2baee83be437389aed579d3f9047851317d545974418aa6cbe9",
+  "old-topics-review.json": "2c527e1744d90881b99bdbdff1df6f11efecf51e8dd22e2a6aad44ec13b01734",
+  "review-evidence-hashes.json": "b709d0f9602448b6e3603336d7ad0af81bcce0f8ac5e2a6787bf0d5635f7a35d",
+  "scope-preservation.json": "f0fcacfa35e0fdd174578e0bc9a43cd2e7e9e6ae73b9098f67aa9d03b1c2cc5c",
+  "source-read-manifest.json": "69fc115bc4ee23b1c761e88e886c113b7a0ddfe7b42ce08d292707fa40e223d2",
+  "sync-audit.txt": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2",
+  "validate-guides.txt": "cea2e82f62fbd4ff0efb35747c59ebd41c65cb5eeda33d888b3a3638fb1a555a",
+  "validation-v2.json": "5972202db17a3c3887e5ee91f107504ea8d7535fdac89f517c870cfe9361b53e",
+  "worked-cases.json": "7e79a255bab8d223228fcd269064ab19f0440fddcf860ea0a536593dc9247c3a"
+}
