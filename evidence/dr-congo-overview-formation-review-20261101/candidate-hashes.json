@@ -1,0 +1,14 @@
+{
+  "candidate_commit": "2474af832b851a04c109d877a8dbf95134b21165",
+  "accepted_base": "fe5f9fd209a3f8169415e9131e72e24a71ac4249",
+  "files": {
+    "skills/dr-congo/README.md": "4ce10b001ab1e62f2c623a0865318fb95ede4c06215c08a11341d85abb0b5c3a",
+    "skills/dr-congo/cd-tax-overview.md": "e70f7800c9527d80c53cd24060f4a650640f5fb764ddc67510925eaab3169e46",
+    "skills/dr-congo/cd-company-formation.md": "3203d2d5d2eac3204c1b132b88f50f71fe6996de0e4a7cd52da7bae950474d07",
+    "evidence/dr-congo-overview-formation-20261101/README.md": "f8c5876816a779ed79dc91a7817a84996c71104c957683dee12be1b00afa022a",
+    "evidence/dr-congo-overview-formation-20261101/ledgers/cd-tax-overview.md": "7c1815df594af7ece523349fe492079cb2f167f5fe05c33aa8701cf455ee8ff9",
+    "evidence/dr-congo-overview-formation-20261101/ledgers/cd-company-formation.md": "85c1302dc2edd8331e582b1544a491656e83e89aaf205c27323dbb2b359eb097",
+    "evidence/dr-congo-overview-formation-20261101/source-manifest.json": "f74f6e65f4df9162a51b4f2869d8e9f8e4fe9c0d377ebc8ffbcab79d6c9bbcd8",
+    "evidence/dr-congo-overview-formation-20261101/preservation.json": "7d1521d4aed59f5f6572dfc8d1ded2a4f391238fb3342515c8a2616d7f1bddac"
+  }
+}

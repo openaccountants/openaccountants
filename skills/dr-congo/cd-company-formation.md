@@ -42,7 +42,7 @@ These are capital/payment rules from the cited text, not tax rates or approved C
 | SARL subscription and cash payment | All shares subscribed; cash contributions paid at least one half on subscription, remainder within two years from RCCM registration according to statutes | [AUSCGIE art.311-1](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
 | SARL contributions in kind | Fully paid; valuation/particular-advantage review requires its own article 312 analysis and any national implementation before use | [AUSCGIE arts.311-1–312](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
 | Ordinary SA minimum | CFA francs 10,000,000 under art.387; ordinary non-public-offer case only here. Public offerings and regulated sectors need separate capital analysis | [AUSCGIE arts.387,824](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
-| SA cash payment | Entire capital subscribed before statutes signed; cash shares paid at least one quarter at subscription, balance within three years of RCCM registration, subject to the article's conditions | [AUSCGIE arts.388–389](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
+| SA cash payment | Entire capital subscribed before statutes signed; cash shares paid at least one quarter at subscription, balance within three years of RCCM registration. Until fully paid, cash shares stay nominative; while capital is unpaid, no capital increase except contributions in kind and no bond issue | [AUSCGIE arts.388–389](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
 | SAS capital | Capital and nominal share value fixed by statutes; article 853-3 excludes the SA minimum-capital paragraph from imported SA rules; mandatory/sector requirements still need screening | [AUSCGIE arts.853-3–853-5](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
 | Foreign-owned branch | Contribution into a member-state company within two years after creation unless valid ministerial dispensation; dispensation two years and nonrenewable, subject to special-regime provisions | [AUSCGIE art.120](https://biblio.ohada.org/doc_num.php?explnum_id=2032) |
 
@@ -145,7 +145,7 @@ expected:
 
 | Source and actual read scope | URL | Read on |
 |---|---|---|
-| OHADA's actual Journal Officiel companies act: arts.1,4–6,10–26,97–101,116–120-5,137–140,309–314,385–389,824,853-1–853-8. Selected pages 8–13,28–31,36,76–78,95–96,194,207–208; capital pages visually inspected. Not all 240 pages | https://biblio.ohada.org/doc_num.php?explnum_id=2032 | 2026-11-01 |
+| OHADA's actual Journal Officiel companies act: arts.1,4–6,10–26,97–101,116–120-5,137–140,309–314,385–389,824,853-1–853-8. Selected pages 8–13,28–32,36,76–78,95–96,194,207–208; capital pages visually inspected. Not all 240 pages | https://biblio.ohada.org/doc_num.php?explnum_id=2032 | 2026-11-01 |
 | ANAPI current procedures, company/foreign-establishment documents, public processing statement and listed identifiers; no authenticated GUCE filing | https://anapi.cd/procedures | 2026-11-01 |
 | Ministry formation page, full text, including CNSS exclusion from GUCE outputs. Conflicts with ANAPI identifier list remain held | https://economie.gouv.cd/rubrique_creation_entreprise | 2026-11-01 |
 | 25/060 art.17, PDF 16, actual tax-number application text and location-plan condition | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01 |

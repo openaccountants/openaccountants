@@ -139,6 +139,7 @@ Use the [corporate](cd-corporate-income-tax.md#deadlines-and-filing), [individua
 | 26/032 arts.12–19,49–51; VAT/nonresident version changes and commencement, no full-country consolidation | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01 |
 | AUSCGIE arts.97–98; legal personality is distinct from tax registrations | https://biblio.ohada.org/doc_num.php?explnum_id=2032 | 2026-11-01 |
 | CNSS collection, 16/009 art.19 and Regulation 146 arts.17–31; employer liability, base and declaration distinctions | https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf | 2026-11-01 |
+| CNSS institutional Presentation §1, institutional legal personality, public status and supervision | https://cnss.cd/?page_id=1388 | 2026-11-01 |
 | DGI public page/navigation in the cached VAT page, identifying IS/IRPP/VAT services; no authenticated filing | https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/ | 2026-11-01 |
 
 Not yet confirmed: the full carried 2025/current-law and implementing-order chains, all specialist sectors/provincial and other taxes, complete residence/PE/foreign-credit/exit methods, all exceptions and category calculations, current form/portal mandates and authenticated filing/credit allocation. The seven partial-domain entries and all owning-Guide holds remain in force. This router creates no new comprehensive coverage or accountant attestation.

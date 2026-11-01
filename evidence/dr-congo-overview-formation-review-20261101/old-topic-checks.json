@@ -1,0 +1,234 @@
+[
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Heading: DR Congo Tax Overview",
+    "old_text_sha256": "52f198bdc033d5dc49ca3abebdbc1208d38e7bfdfdd1c7540b737dc90d682201",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Heading: The DRC tax system at a glance",
+    "old_text_sha256": "8902e7677f2b9db745d25127b1fd3d548930a12afb4be94e89dd3d162bb267b0",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Opening paragraph",
+    "old_text_sha256": "3cbaf8a9c23c6ad76d7aeb41f18b5eb166c5eb2fb0a3d4febe1755be25767e37",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Scope/Who this applies to and explicit research notice; old legal/administrative claims corrected or held in Sources.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "National tax authority",
+    "old_text_sha256": "4c1e40b7aea25c92e66714970744aa5287a5ef25c95947122fc3ac571e88898e",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Scope and method step3: DGI services distinguished from CNSS; official public pages.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Currency",
+    "old_text_sha256": "fbab2cdeee475bac582fe2c5ca8de36884633e31aa2e366f859baa49d1b6c4c7",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method step4: Congolese-franc company accounting where applicable; no guessed currency conversion.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Tax year",
+    "old_text_sha256": "ceaa823eccbab394215299ba92fa5a89fa490097f4e81a0195c9e20e952711b5",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method steps2,4: corporate period routed to its Guide with first-year/cessation exceptions; no universal year-end claim.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Basis of taxation",
+    "old_text_sha256": "d4fdbe82f61e2ed16a6da0f0cd4b5368a1028602e09e42d3578f0e745892da4c",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Scope and method step2: separate company source and individual residence/global-income rules; blanket territorial statement replaced.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Headline corporate income tax rate",
+    "old_text_sha256": "ccff1f9eed229e322148543fe5980ca10b33ede5e411162b90bc1b8511cedc26",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Rates, bands and thresholds: corporate Guide owns the rate; no duplicate figure.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Top personal income tax (IPR) rate on salaries",
+    "old_text_sha256": "1302520a3820023cd388c0d6aac4512f151cd876529080d369d11df70e3e44f9",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Rates, bands and thresholds: individual Guide owns global IRPP scale/ceiling; old salary-only architecture corrected.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Does VAT (TVA) exist?",
+    "old_text_sha256": "9fcb12282c990b6eb203c729443d59a2846a987e53f0971cfbaaab9371e3b0b4",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method step3 and rate-routing table: actual VAT workpaper, no duplicated standard rate.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Annual corporate income tax return deadline",
+    "old_text_sha256": "f74b103ab4ed4df1df562e63f5c2f06dc38120f3f26ebc4cef96aaddd76f7eb9",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method steps2,4 and Filing and payment: corporate Guide owns the deadline.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Annual personal income tax recapitulative return deadline",
+    "old_text_sha256": "9385e4c5f0faf43afbaf795cb15e9436d9ae5cdad7d29bda62a01bed4c9834f4",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method steps2,4: individual return separated from employer salary report; outdated date removed and routed to owning schedules.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "VAT return frequency and deadline",
+    "old_text_sha256": "47ca3e4189cba6d3aa016c344ae44097d9245729909a0987dd9f890f34a4854c",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Method steps3,4 and Filing and payment: VAT Guide owns monthly schedule/holds.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-tax-overview.md",
+    "old_topic": "Minimum corporate tax",
+    "old_text_sha256": "f3d4afc72ff806525e58382714290e19056aee53a0a1706c1676c7188d6105fd",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Rates, bands and thresholds: corporate Guide owns minimum and scope tests.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Heading: DR Congo Company Formation & Entity Choice",
+    "old_text_sha256": "e9bf93c2ecf07e8daf1c765c1e0311aec12af6b3492a7b64e226d71b98f9ce84",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Heading: Entity types and incorporation",
+    "old_text_sha256": "8d98f9b6b1930cd36c6a2c6b103a6efb58435ff04ea88e1a84e2ae36078d2cce",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Opening paragraph",
+    "old_text_sha256": "d28d175c65c52cea22d1f3b3cb220b1aa79ba9212decc786851e5a69309141fd",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Scope/Who this applies to and explicit research notice; old legal/administrative claims corrected or held in Sources.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Most common entity — SARL",
+    "old_text_sha256": "d013636e63f054ee5456f74164c7e9365514276c1931c9737467c2f9c1d28dbe",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Entity choice: SARL legal definition and founders; unsupported prevalence ranking removed.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Public/larger entity — SA",
+    "old_text_sha256": "86b6aba3a85c2b6efae2d0dd749d9918518271cb29e20132790880416372b0a3",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Entity choice and capital table: actual SA definition and ordinary/public-offer distinction; no size ranking.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Flexible entity — SAS",
+    "old_text_sha256": "76aa6e32aa08c3cf7653d9be3c77c76902aa1bd28d8935a90e40044bcb63bf6e",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Entity choice and capital table: statutory organisation, capital and mandatory/public-fundraising limits.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Foreign branch",
+    "old_text_sha256": "67d666015ea2079c32e7f04b6b654154cf21d95a21e697f698c9b3bc4be7f9ae",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Entity choice, capital, filing and Cross-border: personality, registration and conversion/dispensation conditions.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Minimum share capital — SARL",
+    "old_text_sha256": "2767489ff993f0ce83e927f2b284444cefd215cea1b44ede464be0a9dfacb491",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Capital table and Sources hold: national-exception rule; old CDF/USD guesses not approved.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Minimum share capital — SA",
+    "old_text_sha256": "92a13c9f45c165e933ca4715bc505686d2c88df11c29f892176577508b946528",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Capital table and worked case2: statutory CFA unit, ordinary scope, no guessed CDF/USD exchange.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Capital paid-up requirement",
+    "old_text_sha256": "96d084751bf035c3deea2bbffa926691991b9b12e799ebb09ac0e7c9aeaa002c",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Capital table and two cases: SARL half/two years separated from SA quarter/three years.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Incorporation one-stop shop",
+    "old_text_sha256": "b2b81a136ee114af2a3a485146a21544aefb1940d65f5ef3e55c43ff144a4431",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "The base, filing and Sources: official GUCE role, unobserved online sequence and unresolved CNSS handoff.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Registered office",
+    "old_text_sha256": "19b36507217d00a2acc73873b2efc08decd71b77913ade5f7c056d48250cab0d",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "The base: statutory office, location alternatives, precise address and actual-office distinction.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Incorporation timeline",
+    "old_text_sha256": "11791cf0114840808e72a0ee6fbb2f6195db3521cd11288d8ad9e7b7a74ed959",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Filing and Sources: public ANAPI target distinguished from proved current performance; no invented practical timeline.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Core registrations on formation",
+    "old_text_sha256": "11eb1cdf76e2c7c2b535080b6159ef50303cdd74e137a4fcbd172f00d3b8087e",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "The base and filing: actual RCCM/DGI/national-ID/CNSS records and handoff disagreement, current CNSS name.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  },
+  {
+    "guide": "skills/dr-congo/cd-company-formation.md",
+    "old_topic": "Core annual compliance",
+    "old_text_sha256": "9500f7699aad722cdd50b0d99789c3a24c2568a3c513afa68b3a5e967dc05e6c",
+    "exact_old_text_and_hash_verified": true,
+    "destination_checked": "Filing: actual company-law annual statements/report/assembly conditions; tax schedules routed to accepted owning Guides.",
+    "verdict": "pass; destination or explicit hold present; unsupported ranking/old guesses replaced by sourced route/hold"
+  }
+]
