@@ -22,7 +22,7 @@ partial:
 
 # Mali tax pack
 
-**Partial local source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** Six legacy 2025 Guides remain unchanged. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. Independent review of the source baseline is pending; no accountant has attested to it. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
+**Partial local source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** Six legacy 2025 Guides remain unchanged. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -49,4 +49,4 @@ The missing enacted Annex U and any relevant later amendment block current-year 
 
 ## Next action
 
-An independent reviewer must check the historical CSS baseline and its explicit 2026 source gate, recompute both examples and spot-check the old-topic map. Current-year approval requires the enacted amendment chain first. This local draft authorises no push, PR, public comment, issue closure, merge, attestation or country-completion claim.
+The independent review checked all 21 ledger rows, both examples and all 75 mapped legacy topics. Its initial source-locator finding and additive closure are preserved in `evidence/ledgers/mali-review-20261101/` and `evidence/ledgers/mali-review-20261101-closure/`. Acceptance covers the historical enacted-2025 baseline only, not a complete 2025 amendment chain or 2026 coverage. Current-year approval requires the enacted amendment chain first. This local draft authorises no push, PR, public comment, issue closure, merge, attestation or country-completion claim.
