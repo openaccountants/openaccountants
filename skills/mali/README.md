@@ -1,6 +1,6 @@
 ---
 jurisdiction: ML
-version: 0.3
+version: 0.4
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -10,19 +10,21 @@ covered_by:
   VAT: ml-vat-gst
   SC: ml-payroll-social
   PR: ml-payroll-social
+  TP: ml-transfer-pricing
+  XB: ml-cross-border-tax
 partial:
   IT-IND: "Substantive 2026 research draft reconstructs older primary-source rules; operative 2026 chain and current forms remain unproved."
   IT-CORP: "Substantive 2026 corporate research draft uses older CGI/LPF; operative 2026 chain, additional minimum floor and current forms remain unproved. CSS stays separate and held."
   VAT: "Substantive 2026 research draft reconstructs older primary-source rules; operative 2026 chain and current forms remain unproved."
   SC: "Substantive research draft uses primary 2010 AMO decrees and undated INPS authority guidance; operative 2026 continuity and current wage floor/forms remain unproved."
   PR: "Substantive research draft reconstructs older payroll-tax/ITS procedures; operative 2026 law and authenticated filing remain unproved."
-  TP: "Missing; older online code and later amendments were not reconciled into a 2026 Guide."
-  XB: "Missing; no residence, treaty, non-resident, PE or exit Guide drafted."
+  TP: "Conditional older-source pricing and documentation workpaper; complete operative 2026 chain, current classifications and forms held."
+  XB: "Conditional older-source foreign-payment and head-office allocation workpaper; current treaty/residence/PE/exit rules and operative 2026 procedures held."
 ---
 
 # Mali tax pack
 
-**Partial source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** The formation and overview jobs have now been rebuilt as conditional source-reference drafts; independent review of this latest checkpoint is pending below. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
+**Partial source-baseline draft, 1 November 2026. No new current-year coverage is claimed.** The formation, overview, transfer-pricing and cross-border payment/allocation jobs have now been rebuilt as conditional source-reference drafts; independent review of these latest checkpoints is pending below. Four ordinary tax Guides now contain conditional 2026 research workpapers reconstructed from identified older sources; their year metadata does not certify operative 2026 law. A new tier-2 CSS draft reconstructs the enacted 2025 rules and two executable examples while the enacted 2026 fiscal annex remains unavailable. Its `tax_year: 2025` and explanatory notes are deliberate. The historical baseline passed independent source review at `03052d5dbd3fc013bb610ce76f70fd13fb40b5d6`; no accountant has attested to it. The mandatory 2026 hold remains. This does not complete [issue #471](https://github.com/openaccountants/openaccountants/issues/471).
 
 | Domain | Guide | Actual status |
 |---|---|---|
@@ -30,8 +32,8 @@ partial:
 | IT-CORP | [Corporate income tax](ml-corporate-income-tax.md) | Conditional older-source workpaper; 2026 chain and forms held |
 | VAT | [VAT](ml-vat-gst.md) | Conditional older-source workpaper; 2026 chain and forms held |
 | SC and PR | [Payroll/social](ml-payroll-social.md) | Conditional older-source workpaper; 2026 chain and forms held |
-| TP | None | Missing; not filled with unreconciled old code |
-| XB | None | Missing |
+| TP | [Transfer pricing](ml-transfer-pricing.md) | Conditional older-source pricing/documentation workpaper; operative 2026 chain and forms held |
+| XB | [Cross-border tax](ml-cross-border-tax.md) | Conditional older-source payment/allocation workpaper; current treaty, residence, PE, exit and procedures held |
 
 ## Additional source-baseline job
 
@@ -45,7 +47,7 @@ The writer read the complete Ordonnance 2025-007 in SGG gazette pages 89–91 an
 
 The writer also read enacted 2026 finance-law articles 1 and 46. Article 46 refers to fiscal Annex U, which is not printed in the retrieved gazette. A focused search of the official DGI, ministry and SGG sources did not obtain the enacted annex. The ministry's accessible 2026 publication is labelled **Projet de loi de Finances 2026**, dated 2 October 2025, and links `PLF 2026_CNT_v_26-09-2025.pdf`. That proposed bill and the proposed rectifying bill supply no enacted tax figures here. Generic 2026 collection permission and the absence of a sunset in the 2025 ordinance do not establish an unchanged 2026 rate.
 
-The missing enacted Annex U and any relevant later amendment block current-year approval and publication. CSS form identifiers and boxes, authenticated filing/payment/confirmation steps, detailed VAT tax points, exemption/conventions, cross-border treatment, unpaid deduction timing, late-payment interest and wider sanction interaction also remain unconfirmed. All seven core domains remain applicable and partial; none is declared inapplicable. TP and XB remain missing.
+The missing enacted Annex U and any relevant later amendment block current-year approval and publication. CSS form identifiers and boxes, authenticated filing/payment/confirmation steps, detailed VAT tax points, exemption/conventions, cross-border treatment, unpaid deduction timing, late-payment interest and wider sanction interaction also remain unconfirmed. All seven core domains remain applicable and partial; none is declared inapplicable. TP and XB now have limited conditional workpapers, with their wider current-law gaps held below.
 
 ## Next action
 
@@ -66,3 +68,9 @@ All seven core domains remain partial, TP and XB remain missing, and issue #471 
 The two remaining legacy jobs now have substantive conditional research drafts. [Company formation](ml-company-formation.md) uses the original OHADA 2014 company Act, OHADA 2010 commercial Act, Mali Loi 2015-014 and official administrative guidance to distinguish entity forms, capital and payment, registration, annual approval and auditor tests. [Tax overview](ml-tax-overview.md) provides category-specific intake and payment reconciliation while linking the existing figure homes. Each has two executable cases. Neither supplies an operative 2026 or publication approval.
 
 The [fresh ledgers, complete predecessor map and preservation evidence](../../evidence/ledgers/mali-legacy-jobs-draft-20261101/writer-record.md) bind this checkpoint to `a4d09fbf744fbabfbc4988d08e13fd3c61fca449`. The four accepted ordinary Guides, historical CSS and every earlier receipt remain unchanged. Earlier immutable review receipts continue to describe their own candidates. All seven core domains remain applicable and partial, TP and XB remain missing at this checkpoint, and #471 stays open. Complete later operative law, Annex U, current office checklists/forms/fees and authenticated filing remain unresolved.
+
+## Transfer-pricing and cross-border follow-on checkpoint, 1 November 2026
+
+The missing TP and XB jobs now have limited substantive source-reference drafts. [Transfer pricing](ml-transfer-pricing.md) reconstructs the older CGI article 81 control/adjustment branches, full-competition evidence and LPF article 57-A documentation package, threshold and penalty cap, keeping the substantive rule separate from the filing threshold. [Cross-border tax](ml-cross-border-tax.md) reconstructs foreign service-payment classification and reconciliation, the separate head-office ceiling, VAT separation and offshore contract-splitting provisions. It links the existing corporate/VAT figure homes. Each has two executable cases.
+
+The [fresh source ledgers and preservation evidence](../../evidence/ledgers/mali-tp-xb-draft-20261101/writer-record.md) bind this checkpoint to `9d5451d3c373312f2207c904cdf59eaf38386824`. All seven predecessor Guide files and every earlier receipt remain byte-identical. Historical checkpoint statements above describe their earlier candidates. No treaty source/status chain, current PE/residence/exit result, full later law, enacted 2026 Annex U or authenticated current filing procedure has been proved. All seven domains remain applicable and partial; issue #471 stays open, independent review is pending and no accountant has attested to these drafts.

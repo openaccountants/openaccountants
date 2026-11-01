@@ -1,0 +1,11 @@
+{
+  "base": "9d5451d3c373312f2207c904cdf59eaf38386824",
+  "new_files": [
+    "skills/mali/ml-transfer-pricing.md",
+    "skills/mali/ml-cross-border-tax.md"
+  ],
+  "README": "v0.3 to0.4; add limited TP/XB homes, allsevenpartial, noattestation; oldercheckpoint statements remainhistorical",
+  "README_before_sha256": "b11449ea5a43847c622166ced816f4f9f04bad34827f055236ca49c17829cd02",
+  "README_after_sha256": "0d5985506cc18c58631adbcec09a74c1b37742e3baf7071331f16cc5382b238f",
+  "diff_context": 0
+}
