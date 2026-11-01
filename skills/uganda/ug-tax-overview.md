@@ -1,30 +1,55 @@
 ---
 name: ug-tax-overview
-description: "Source-cited draft: tax overview for Uganda (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Overview of the Uganda tax system for tax year 2026-27: the year of income, the Uganda Revenue Authority, main taxes, headline rates and filing rhythm, and the changes from 1 July 2026. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
+version: 0.2
 jurisdiction: UG
-tax_year: 2025
-last_updated: 2026-07-13
+category: orchestrator
+tax_year: 2026
+tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Uganda Tax Overview
+# Uganda Tax Overview v0.2
 
-## The Uganda tax system at a glance
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-- **Overview of tax system** — Uganda taxes income, consumption (VAT) and payroll, administered centrally by the Uganda Revenue Authority (URA). The government tax year runs 1 July to 30 June, and most rates are set in the Income Tax Act and the Value Added Tax Act.
-- **Standard tax (year of income)** — 1 July to 30 June  _(Income Tax Act (Cap 340), https://taxsummaries.pwc.com/uganda/corporate/tax-administration)_
-- **Currency** — Ugandan shilling (UGX)  _(Bank of Uganda Act)_
-- **Tax authority** — Uganda Revenue Authority (URA)  _(Uganda Revenue Authority Act (Cap 196), https://ura.go.ug)_
-- **Basis of taxation for residents** — Residents are taxed on worldwide income; non-residents on Uganda-source income only  _(Income Tax Act (Cap 340), https://taxsummaries.pwc.com/uganda/individual/taxes-on-personal-income)_
-- **Top marginal personal income tax rate (resident)** — 30% plus an additional 10% surcharge on monthly income exceeding UGX 10,000,000 %  _(Income Tax Act (Cap 340), Third Schedule, https://ura.go.ug/en/domestic-taxes/paye-rates/)_
-- **Standard corporate income tax rate** — 30% %  _(Income Tax Act (Cap 340), https://taxsummaries.pwc.com/uganda/corporate/taxes-on-corporate-income)_
-- **Does Uganda levy VAT?** — Yes — VAT at a standard rate of 18% %  _(Value Added Tax Act (Cap 349), https://taxsummaries.pwc.com/uganda/corporate/other-taxes)_
-- **Annual corporate self-assessment return deadline** — Within 6 months after the end of the accounting year (e.g. 31 December for a June year-end)  _(Income Tax Act (Cap 340), https://taxsummaries.pwc.com/uganda/corporate/tax-administration)_
-- **VAT return cadence** — Monthly, by the 15th of the following month  _(Value Added Tax Act (Cap 349), https://taxsummaries.pwc.com/uganda/corporate/other-taxes)_
-- **PAYE / payroll withholding cadence** — Employer withholds PAYE monthly and remits by the 15th of the following month  _(Income Tax Act (Cap 340), https://ura.go.ug/en/domestic-taxes/paye-rates/)_
+Tax year: 2026-27 (year of income 1 July 2026 to 30 June 2027).
+
+## The system at a glance
+
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Tax authority | Uganda Revenue Authority (URA) | 2026-27 | https://ura.go.ug |
+| Year of income | 1 July to 30 June (URA: 30 June accounting date, return by 31 December) | 2026-27 | https://ura.go.ug/en/domestic-taxes/returns/ |
+| Annual return | Six months after period end | 2026-27 | same |
+| VAT, WHT, PAYE, excise returns | 15th of following month | 2026-27 | same |
+| Gaming returns | Weekly, by Wednesday | 2026-27 | same |
+| Resident top rate | 30% plus 10% over UGX 120m a year | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
+| Nil band | UGX 4,020,000 a year | 2026-27 | same |
+| Company rate | 30% | 2024 text | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 |
+| VAT threshold | UGX 300,000,000 | 2026-27 | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ |
+| Gaming tax | 30% of stakes less payouts (was 20%) | 2026-27 | same |
+
+Currency: Ugandan shilling (UGX). Residents are taxed on worldwide income and non-residents on Uganda-source income. Details: [income tax](ug-income-tax.md), [corporate](ug-corporate-income-tax.md), [VAT](uganda-vat.md), [payroll](ug-payroll-social.md).
+
+## 2026 changes outside those skills
+
+Stamp duty: financial services businesses file monthly returns; 2% a month on failure; records kept five years; vehicle transfer UGX 30,000 for motorcycles, tricycles and quadricycles, and UGX 200,000 for other vehicles. Excise: new rates on cement, fuel, sugar, plastics, cooking oil and paints. All https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, all read); printed before the Income Tax and Excise Acts were assented | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-01 |
+| URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
+| Income Tax Act, ULII consolidated text at 2024-12-23 (read in a browser: Schedule tables and rate lines only) | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 | 2026-11-01 |
+
+Not yet confirmed: 18% VAT rate in the law; revised chapter numbers for the acts.
 
 <!-- openaccountants-cta-block -->
 

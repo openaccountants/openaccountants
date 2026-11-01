@@ -1,34 +1,46 @@
 ---
 name: ug-company-formation
-description: "Source-cited draft: company formation & entity choice for Uganda (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: >
+  Forming a company in Uganda, tax year 2026-27: entity types registered by URSB, first steps, URA TIN documents, EFRIS and VAT at the 2026 threshold. Fees and timing from the old file are held as unverified. Use for Uganda questions from URA taxpayers, employers, advisers and foreign investors, including rates, thresholds, filing dates, the URA portal and worked computations. Figures for tax year 2026-27 come from Uganda Revenue Authority pages and the law, and items that could not be opened are named as unverified in the Sources section. Not reviewed by a licensed accountant.
+version: 0.2
 jurisdiction: UG
-tax_year: 2025
-last_updated: 2026-07-13
+category: formation
+tax_year: 2026
+tax_year_notes: "2026-27 (1 July 2026 to 30 June 2027)"
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Uganda Company Formation & Entity Choice
+# Uganda Company Formation and Entity Choice v0.2
 
-## Entity types and capital
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-- **Most common entity type** — Private company limited by shares (Ltd)  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
-- **Other entity / registration forms** — Public company limited by shares, company limited by guarantee, business name (sole proprietor / partnership), and foreign branch of an overseas company  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
-- **Minimum share capital (private limited company)** — No fixed statutory minimum; companies commonly incorporate with nominal capital of UGX 5,000,000 or below (Tier 1 registration fee band) UGX  _(Companies Act, 2012 (https://globallawexperts.com/ursb-company-registration-fees/))_
-- **Minimum shareholders / directors** — A private company may be formed with a single member; at least one director is required (single-member companies are permitted)  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
+Tax year: 2026-27 (year of income 1 July 2026 to 30 June 2027).
 
-## Incorporation steps, cost and timeline
+## Entity types and steps
 
-- **Step 1 — Name reservation** — Reserve the company name with URSB via OBRS; fee approximately UGX 35,000 UGX  _(Companies Act, 2012 (https://globallawexperts.com/ursb-company-registration-fees/))_
-- **Step 2 — Documents and TIN** — Prepare memorandum and articles of association, file Form 18 (registered office) and Form 20 (directors), and obtain a Tax Identification Number (TIN) from URA  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
-- **Step 3 — Registration / incorporation fee** — Flat UGX 105,000 where nominal share capital is UGX 5,000,000 or below; 1.5% of nominal share capital where it exceeds UGX 5,000,000 UGX UGX  _(Companies Act, 2012 (https://globallawexperts.com/ursb-company-registration-fees/))_
-- **Stamp duty on formation** — 0.5% on company formation / increase of capital % %  _(Stamp Duty Act, 2014 (https://taxsummaries.pwc.com/uganda/corporate/other-taxes))_
-- **Typical all-in incorporation cost (small company)** — Approximately UGX 300,000 – 700,000 including stamp duty, declarations and basic drafting UGX ((approx — confirm))  _(Companies Act, 2012 (https://globallawexperts.com/ursb-company-registration-fees/))_
-- **Typical incorporation timeline** — A few days once name reservation and documents are filed via OBRS (subject to URSB processing) ((approx — confirm))  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
-- **Core annual compliance — annual return** — File an annual return with URSB and keep statutory registers; companies above thresholds must file audited financial statements  _(Companies Act, 2012 (https://ursb.go.ug/services/business-registration/))_
-- **Core annual compliance — tax** — Maintain TIN, file provisional and annual income tax returns with URA, and register for VAT if turnover exceeds UGX 150,000,000 UGX  _(Income Tax Act (Cap 340) (https://taxsummaries.pwc.com/uganda/corporate/tax-administration))_
+URSB registers public and private companies, foreign companies and legal documents, under the URSB Act Cap 217 ([URSB](https://ursb.go.ug/services/business-registration/), read 2026-11-01).
+
+1. Register with URSB through its online start link.
+2. Get a TIN: a private company uploads the template with the certificate of incorporation and company form 20; a foreign company needs the certificate of registration and forms 19 and 21 ([URA](https://ura.go.ug/en/domestic-taxes/tin-application/tin-registration-non-individual/)).
+3. Register for EFRIS (https://ura.go.ug/en/efris/efris-registration/) where required.
+4. Register for VAT above UGX 300,000,000 a year (https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/).
+5. File provisional and annual income tax returns (https://ura.go.ug/en/domestic-taxes/returns/).
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| URSB, Business Registration | https://ursb.go.ug/services/business-registration/ | 2026-11-01 |
+| URA, Non Individual TIN Registration | https://ura.go.ug/en/domestic-taxes/tin-application/tin-registration-non-individual/ | 2026-11-01 |
+| URA, Tax Amendments FY 2026-27 handbook (36-page PDF, all read); printed before the Income Tax and Excise Acts were assented | https://ura.go.ug/en/download/tax-amendments-fy-2026-2027/ | 2026-11-01 |
+| URA, EFRIS registration | https://ura.go.ug/en/efris/efris-registration/ | 2026-11-01 |
+| URA, File a Tax Return page (still shows the old UGX 2,820,000 threshold) | https://ura.go.ug/en/domestic-taxes/returns/ | 2026-11-01 |
+
+Not yet confirmed (from the old file, secondary sources; official fee schedule not opened): no minimum share capital, UGX 5,000,000 fee band; single-member company with one director; name reservation UGX 35,000; registration UGX 105,000 or 1.5% above UGX 5,000,000; 0.5% stamp duty on formation; all-in cost UGX 300,000 to 700,000; a few days to incorporate; Forms 18 and 20; annual return and audited accounts; business names, guarantee companies and branches as forms.
 
 <!-- openaccountants-cta-block -->
 
