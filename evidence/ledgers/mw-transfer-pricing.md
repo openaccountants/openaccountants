@@ -15,4 +15,6 @@ Tax year 2026; independently review before publication. Each row records the por
 | 9 | Current 127 Amarginalnoterelatedpartytitle notproofpricingmethod | Act 14/2025 s 2 | https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content | “arrangements between related parties” | 2026-11-01 |
 | 10 | Ratepenaltynotdocumentationturnoverthreshold | Act 6/2026 s 5 andTAA91(a) | https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content | “by deleting the word “one”” | 2026-11-01 |
 
+| 11 | Base/rates: assessment or additional assessment from TP/other related-party audit, up to nine years after expiration of assessment year; distinct from TAA retention/penalty; Taxation 91(2) fraud exception considered | Act 3/2026 s 11 adding Taxation 91(3), PDF pp 4–5; principal 91(1)–(2) context | https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf | “up to nine years after the expiration of the year of assessment” | 2026-11-01 |
+
 [Complete old-topic destination map](mw-old-topic-destinations.md).

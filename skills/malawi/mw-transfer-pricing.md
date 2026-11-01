@@ -4,19 +4,19 @@ description: "Malawi draft for 2026 handling of a transfer-pricing information n
 jurisdiction: MW
 category: transfer-pricing
 tax_year: 2026
-tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
 last_updated: 2026-11-01
 tier: 2
-version: 1.2
+version: 1.3
 ---
 
-# Malawi transfer pricing: information-notice response and retention v1.2
+# Malawi transfer pricing: information-notice response and retention v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
 
-**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted [Taxation (Amendment) Act 3 of 2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has now been read in full and its relevant changes are identified in the company, individual and TP drafts. Appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover remain unread; period allocation and the complete operative chain are not approved. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use when a taxpayer receives a Commissioner General information notice under the Taxation (Transfer Pricing Documentation) Regulations, or a notice of an audit concerning TP/other related-party arrangements. This is a notice-response and preservation job. It does not determine the unverified annual documentation threshold, TP method or associated-party definition. The 2025 amendment renames 127A’s marginal note; that title alone cannot supply substantive pricing rules. [TAA 91](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Act 14/2025 s 2](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content); [Act 6/2026 ss 2–5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
 
@@ -26,6 +26,7 @@ Use when a taxpayer receives a Commissioner General information notice under the
 |---|---|---|
 | Failure to comply with the specified TP information notice, first month, after Act 6/2026 amendment applies | 40,000 currency points | [TAA 91(a)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Act 6/2026 s 5](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content) |
 | Each further month or part the failure continues | 1,500 additional currency points | [TAA 91(b)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |
+| Assessment/additional assessment arising from a TP or other related-party audit | Taxation 91(3): power up to nine years after expiration of the assessment year; distinct from record-retention period | [Act 3/2026 s 11](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) |
 | Ordinary record retention | At least six years from statutory relevant date, or longer specified situation | [TAA 39(3),(7)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content) |
 | Notice of TP/related-party audit | Relevant records retained until written notice that audit completed, where longer | [Act 6/2026 s 3, TAA 39(3)(e)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content) |
 
@@ -33,7 +34,7 @@ Act 6 replaces “one” with “forty” in the first-month penalty’s “one 
 
 ## The base
 
-Log the actual notice, taxpayer/period, requested transaction/document categories, service evidence and stated deadline. Assemble contracts, controlled-transaction ledger, invoice/payment records, ownership information and any existing pricing workpapers relevant to the request; do not invent an accepted method or safe margin. Reconcile supplied totals to the accounts and index each document to the question answered. Preserve originals, the submitted copy, submission evidence and any written extension/completion decision. TAA 39 requires underlying documents and extractable electronic records, with the ordinary period measured from income-year end, VAT-period end or the other statutory relevant date. Pending disputes, applications, refunds, investigations and the amended TP-audit rule can extend that period. [TAA 39](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Act 6/2026 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
+Log the actual notice, taxpayer/period, requested transaction/document categories, service evidence and stated deadline. Assemble contracts, controlled-transaction ledger, invoice/payment records, ownership information and any existing pricing workpapers relevant to the request; do not invent an accepted method or safe margin. Reconcile supplied totals to the accounts and index each document to the question answered. Preserve originals, the submitted copy, submission evidence and any written extension/completion decision. TAA 39 requires underlying documents and extractable electronic records, with the ordinary period measured from income-year end, VAT-period end or the other statutory relevant date. Pending disputes, applications, refunds, investigations and the amended TP-audit rule can extend that period. Separately, Act 3/2026 s 11 adds Taxation 91(3): the assessment/additional-assessment power arising from a TP or other related-party audit can be exercised up to nine years after the assessment year expires. This is not a replacement six-year retention rule, and it is not TAA section 91’s information-notice penalty. Taxation 91(2)’s fraud/wilful-default condition must also be considered before assuming any ordinary assessment limitation. [Taxation 91(1)–(2)](https://elibrary.rat.gov.mw/server/api/core/bitstreams/06b35bf5-faa2-4fa1-81f7-af650cce4dff/content); [Act 3/2026 s 11](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf). [TAA 39](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content); [Act 6/2026 s 3](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content).
 
 ## Deadlines and filing
 
@@ -89,6 +90,7 @@ Get the exact notice and service/transmission evidence, stated response date, al
 |---|---|
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 37–40,91;39 relevant-date/extension conditions | 2026-11-01 |
 | [Act 6/2026 in official gazette bundle](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content), ss 2–5, last two PDFpages; last page visually inspected to confirm amendment wording | 2026-11-01 |
+| [Act 3/2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf), ss 11–12 and all six pages screened; Taxation 91(1)–(2) read in principal text for context | 2026-11-01 |
 | [Act 14/2025](https://elibrary.rat.gov.mw/server/api/core/bitstreams/fb807c0f-1335-442a-a1ce-9d6644186525/content), s 2 marginal-note amendment | 2026-11-01 |
 
-**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  actual current TP Regulations and full 127A operative text, scope/related-party definitions, annual documentation/filing requirements and thresholds, permitted methods, current currency-point conversion order, exact 2026 commencement boundary and authenticated response portal. No full annual TP compliance claim follows from this bounded job.
+**Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; actual current TP Regulations and full 127A operative text, scope/related-party definitions, annual documentation/filing requirements and thresholds, permitted methods, current currency-point conversion order, exact 2026 commencement boundary and authenticated response portal. No full annual TP compliance claim follows from this bounded job.

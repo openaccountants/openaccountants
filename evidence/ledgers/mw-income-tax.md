@@ -21,4 +21,6 @@ Tax year 2026; independently review before publication. Each row records the por
 | Detail-4 | Rates: Employment annual excess above K120,000,000 at40% | Act36/2025 AppendixB | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “Excess of K120,000,000” | 2026-11-01 |
 | Detail-5 | Rates: Annual non-employment excess above K2,040,000 at30% | Act36/2025 AppendixA | https://elibrary.rat.gov.mw/server/api/core/bitstreams/f9c5b41b-5dce-4764-b7c2-923c808bda48/content | “Excess of K2,040,000” | 2026-11-01 |
 
+| 11 | Base scope exclusion: separate residential rental final regime and listed-share final withholding must be screened; no ordinary-table computation for those categories; printed rent cross-reference unresolved | Act 3/2026 ss 3,13, PDF pp 2–3,5–6 | https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf | “shall be a final tax”; “No withholding tax shall be deducted where” | 2026-11-01 |
+
 [Complete old-topic destination map](mw-old-topic-destinations.md).

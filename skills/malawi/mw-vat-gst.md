@@ -3,23 +3,23 @@ name: mw-vat-gst
 description: "Malawi draft for 2026 ordinary domestic VAT working papers and registration screening under the cited amendments. Use it to distinguish supported output tax from eligible input credit, reconcile an excess credit separately from a refund entitlement, and identify the special registration boundary for non-resident digital supplies. The two examples assume that the underlying transactions and input claims have already been classified correctly. Earlier-period thresholds, amendment transitions, complete exemption and zero-rate schedules, imported-service treatment, refund eligibility and live portal fields remain outside the established job where stated. This partial Guide does not certify every supply or replace checking commencement and the actual filing requirements."
 jurisdiction: MW
 tax_year: 2026
-tax_year_notes: "Intended 2026 research draft; Act 3/2026 and appointed commencement chain unverified; live use held."
+tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
 last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
-version: 1.2
+version: 1.3
 ---
 
-# Malawi VAT: current domestic computation and digital-supply boundary v1.2
+# Malawi VAT: current domestic computation and digital-supply boundary v1.3
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Malawi.
 
 ## Who this applies to
 
-**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted Taxation (Amendment) Act 3 of 2026 and appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover have not been read. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
+**Current-year source hold.** This is a draft reconstruction of the cited provisions, not confirmed operative 2026 coverage. The enacted [Taxation (Amendment) Act 3 of 2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has now been read in full and its relevant changes are identified in the company, individual and TP drafts. Appointed commencement notices for the Tax Administration Act and the 2021 administrative cutover remain unread; period allocation and the complete operative chain are not approved. Do not use this draft to determine an actual 2026 tax position, file, pay or complete a live registration/notice response until those checks are closed. The examples illustrate the cited-text assumptions only. The 2026 year label identifies the intended research period, not completed verification.
 
 Use for current ordinary domestic taxable transactions after Act 5/2026 applies. It replaces section 11(1) with registration for taxable goods/services or mining-project turnover at or above K50 million per annum. A non-resident digital supplier, intermediary or electronic marketplace operator is registrable whether or not that threshold is met. The digital definitions refer to automated internet/electronic-network services with minimal human intervention and a recipient who is a non-taxable person; do not extend that particular regime to every imported professional service. [Act 5/2026 ss 2,4](https://elibrary.rat.gov.mw/server/api/core/bitstreams/21540b28-6bfd-45b5-a910-b80f13db59b4/content). Earlier 2026 threshold/transition rules require a separate check.
 
@@ -104,7 +104,7 @@ Get the transaction date, tax regime/registration, annual turnover, goods/servic
 | [2021 cutover](https://elibrary.rat.gov.mw/server/api/core/bitstreams/e43a8644-e1e1-46d8-82d7-7e80afd5fd50/content), VAT 31,33–35 entries | 2026-11-01 |
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 38–40,81,87 | 2026-11-01 |
 
-**Not yet confirmed:** enacted Taxation (Amendment) Act 3/2026 effects and appointed commencement notices for TAA/cutover;  exact April 2026 commencement/registration transition and earlier 2026 threshold; old K25 m threshold and 30-day/voluntary registration conditions not independently established for the earlier period; full zero/exempt tariff schedules, legacy imported-service/reverse-charge scope, appointed electronic-invoicing commencement, operational digital registration, portal fields and refund eligibility. The two MRA December 2025 notices disagree on 30/31 December; no boundary calculation is supplied.
+**Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; exact April 2026 commencement/registration transition and earlier 2026 threshold; old K25 m threshold and 30-day/voluntary registration conditions not independently established for the earlier period; full zero/exempt tariff schedules, legacy imported-service/reverse-charge scope, appointed electronic-invoicing commencement, operational digital registration, portal fields and refund eligibility. The two MRA December 2025 notices disagree on 30/31 December; no boundary calculation is supplied.
 
 <!-- openaccountants-cta-block -->
 
