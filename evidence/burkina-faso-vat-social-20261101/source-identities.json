@@ -5,31 +5,31 @@
       "url": "https://cnssbf.org/wp-content/uploads/2024/02/arrete_no_2022-067_fixation_du_plafond_des_salaires_soumis_a_cotisation_du_regime.pdf",
       "sha256": "3d2bdac73680e05a312e6d7c7d9f71dead313501ad0e13f43c0c1a3aa51bd573",
       "read_date": "2026-11-01",
-      "scope": "Both scan pages; arts. 1\u20135, ceiling and signature/effective date, page 2 viewed."
+      "scope": "Both scan pages; arts. 1–5, ceiling and signature/effective date, page 2 viewed."
     },
     "cnss-base-2023.pdf": {
       "url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-017-portant-determination.pdf",
       "sha256": "c5bb0960c4121c9b9116f1d857aa73c1f9480b045040dd7d7e4bbc0c0489ad38",
       "read_date": "2026-11-01",
-      "scope": "Substantive pages 2\u20135, arts. 1\u201310, actual salary/benefit/exclusion clauses; pages 4\u20135 visually checked."
+      "scope": "Substantive pages 2–5, arts. 1–10, actual salary/benefit/exclusion clauses; pages 4–5 visually checked."
     },
     "cnss-risk-2023.pdf": {
       "url": "https://cnssbf.org/wp-content/uploads/2024/02/Arrete-n%C2%B02023-018-portant-determination.pdf",
       "sha256": "6f88294c1ee2468e38410f689deb34f0fde24fb36716c3cf654fcbd1bec9089e",
       "read_date": "2026-11-01",
-      "scope": "Substantive pages 2\u20133, arts. 1\u201311; both viewed. Recurrence words/number inconsistency held."
+      "scope": "Substantive pages 2–3, arts. 1–11; both viewed. Recurrence words/number inconsistency held."
     },
     "cnss-bnts.pdf": {
       "url": "https://cnss.bf/wp-content/uploads/2024/07/1_Bordereau-Nominatif-des-Travailleurs-Salaries.pdf",
       "sha256": "d96e6de38b8db91a05222175e36253dc71a4d476b115f4e3c97e07e421b28248",
       "read_date": "2026-11-01",
-      "scope": "Both form pages, eleven columns, employment/income codes and instructions."
+      "scope": "All three physical pages: Cot 01 front/reverse on pp1–2 and Cot 02 intercalary on p3; eleven columns, employment/income codes and simultaneous-payment/electronic instructions."
     },
     "cnss-summary.pdf": {
       "url": "https://cnss.bf/wp-content/uploads/2024/07/5_Declaration-recapitulative-des-salaires.pdf",
       "sha256": "27d53f615ab3cdc5ae71e567edcd2977a7794e26c83f9a4e61a838bde2c5ab77",
       "read_date": "2026-11-01",
-      "scope": "Both pages, branch/category bases, rates, payment and CNSS-reserved fields."
+      "scope": "Both pages: branch/category bases, rates, CNSS-reserved fields, declaration by15th monthly/last following-month day quarterly and simultaneous-payment instructions; quarterly timing discrepancy with web thirty-day payment wording explicitly held."
     },
     "cnss-voluntary.pdf": {
       "url": "https://cnss.bf/wp-content/uploads/2024/02/SOUSCRIPTION-A-LASSURANCE-VOLONTAIRE.pdf",
@@ -41,7 +41,7 @@
       "url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
       "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
       "read_date": "2026-11-01",
-      "scope": "VAT ledger arts. 298\u2013306,310\u2013334,776\u2013778 and stated art.307 branches/selected 308 headings; not all 566 pages/product rows."
+      "scope": "VAT ledger arts. 298–306,310–334,776–778 and stated art.307 branches/selected 308 headings; not all 566 pages/product rows."
     },
     "cnss-contributions.html": {
       "url": "https://cnssbf.org/?p=2078",

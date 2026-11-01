@@ -15,8 +15,8 @@ covered_by:
 partial:
   IT-IND: "2026 ordinary IBICA/IBNC and CME draft; live form workflow, personal/foreign income and specialist execution remain incomplete; independent source corrections closed for the partial draft scope."
   IT-CORP: "2026 ordinary IS, MFP and advance-payment draft; current form workflow, specialist exemptions and PE attribution remain incomplete; independent source corrections closed for the partial draft scope."
-  VAT: "2026 ordinary TVA workpaper draft; current forms, commodity/certificate execution, refund workflow and specialist methods incomplete; independent review pending."
-  SC: "2026 source-bound CNSS workpaper draft; controlling law/rate-decree text, penalties, SMIG, current portal and operative AMU remain unresolved; independent review pending."
+  VAT: "2026 ordinary TVA workpaper draft; current forms, commodity/certificate execution, refund workflow and specialist methods incomplete; independent conditional source review accepted."
+  SC: "2026 source-bound CNSS workpaper draft; controlling law/rate-decree text, penalties, SMIG, current portal and operative AMU remain unresolved; independent conditional source review accepted."
   PR: "2026 IUTS/TPA draft; portal forms, administrative rounding, SMIG and current CNSS/AMU integration remain incomplete; independent source corrections closed for the partial draft scope."
   TP: "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent AI source review accepted for the stated draft scope."
   XB: "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent AI source review accepted for the stated draft scope."
@@ -24,14 +24,14 @@ partial:
 
 # Burkina Faso tax pack
 
-**Partial follow-on draft, 1 November 2026.** The corporate, business-income and payroll rewrites retain their accepted independent source corrections. VAT and CNSS now have additional 2026 workpaper drafts, four executable cases and source ledgers, pending a separate independent review. Three legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
+**Partial follow-on draft, 1 November 2026.** The corporate, business-income and payroll rewrites retain their accepted independent source corrections. VAT and CNSS now have additional 2026 workpaper drafts, four executable cases and source ledgers, with separate independent source corrections closed. Three legacy 2025 Guides remain unchanged. The two previously added 2026 tier-2 Guides retain their accepted independent AI source review and merged status corrections. No Guide has accountant attestation. This batch does not complete [issue #444](https://github.com/openaccountants/openaccountants/issues/444).
 
 | Domain | Guide | Actual status |
 |---|---|---|
 | IT-IND | [Business income](bf-income-tax.md) | 2026 draft: IBICA/IBNC profit and minima, CME tariff/election, statutory preparation; independent source corrections closed for the partial draft scope |
 | IT-CORP | [Corporate tax](bf-corporate-tax.md) | 2026 draft: ordinary IS, MFP, deductions, advances and statutory preparation; independent source corrections closed for the partial draft scope |
-| VAT | [VAT](bf-vat.md) | 2026 draft: rates, place/base, deduction, withholding and refund boundaries; independent review pending |
-| SC | [Social contributions](bf-social-contributions.md) | 2026 CNSS workpaper draft: signed ceiling/base/risk orders and labelled authority/form instructions; controlling-text and AMU holds; independent review pending |
+| VAT | [VAT](bf-vat.md) | 2026 draft: rates, place/base, deduction, withholding and refund boundaries; independent conditional source review accepted |
+| SC | [Social contributions](bf-social-contributions.md) | 2026 CNSS workpaper draft: signed ceiling/base/risk orders and labelled authority/form instructions; controlling-text and AMU holds; independent conditional source review accepted |
 | PR | [Payroll](bf-payroll.md) | 2026 draft: IUTS/TPA bases, current allowances, family reductions, payment frequency and annual statements; independent source corrections closed for the partial draft scope |
 | TP | [Transfer pricing](bf-transfer-pricing.md) | 2026 draft: controlled pricing, distinct declaration/documentation size tests, July 2026 documentation contents, audit request and fines |
 | XB | [Non-resident services withholding](bf-nonresident-services-withholding.md) | 2026 draft: payer/service scope, base, general and road-freight rates, declaration fields, remittance and default branches |
@@ -40,7 +40,7 @@ The unchanged [overview](bf-tax-overview.md), [formation](bf-company-formation.m
 
 ## Evidence and limits
 
-The [VAT/social workpaper checkpoint](../../evidence/burkina-faso-vat-social-20261101/README.md) records 89 additional ledger rows, the actual signed texts and official guidance read, failed/mislabelled primary sources, four executable cases and exact preservation checks. Authority/form statements are labelled separately from signed statutory provisions; missing controlling articles and operative AMU remain holds. This pending review does not change any earlier acceptance.
+The [VAT/social workpaper checkpoint](../../evidence/burkina-faso-vat-social-20261101/README.md) records 89 additional ledger rows, the actual signed texts and official guidance read, failed/mislabelled primary sources, four executable cases and exact preservation checks. Authority/form statements are labelled separately from signed statutory provisions; missing controlling articles and operative AMU remain holds. This source-review closure does not change any earlier acceptance.
 
 The [follow-on evidence](../../evidence/burkina-faso-remaining-20261101/README.md) contains the three new rewrite ledgers, source identity, preservation record and validation outputs. The prior accepted ledgers are [TP](../../evidence/ledgers/bf-transfer-pricing.md) and [non-resident services](../../evidence/ledgers/bf-nonresident-services-withholding.md). Every new rule maps to an act/article, an opened official URL, a short original-language quotation and an actual read date. Raw PDFs, text extraction and source images are kept outside the public repository.
 
@@ -53,3 +53,5 @@ Current form box identifiers and authenticated portal steps were not accessed. D
 The [initial independent review](../../evidence/ledgers/burkina-faso-review-20261101/review.md) identified one incomplete TP documentation checklist. After repair, the [dated acceptance closure](../../evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md) accepted the two limited drafts at commit `199e3dfae83beaeb0a908206b11d8317cef37c96`. Together the receipts cover 51 ledger rows, four recomputed examples and preservation checks for the eight legacy Guides. The closure records exact accepted Guide and ledger hashes; the only later Guide edit corrects the closing review-status sentence.
 
 The three additional rewrites now have a separate [independent review and correction closure](../../evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md); the earlier two-Guide acceptance remains unchanged. All130article/rule rows,348old-topic identities and six independent computations were checked. Three finding groups closed: higher ordinary-fine branches, capital-company remuneration scope and the missing IRCM scope restored as an explicit hold. The coverage gaps above remain open and all seven domains remain partial. This is the reviewed partial drafting checkpoint for this follow-on batch. It authorises no issue closure, merge, professional attestation or country-completion claim.
+
+The [independent closure receipt](../../evidence/ledgers/burkina-faso-vat-social-review-20261101/closure.md) checks all 89 records, 102 predecessor entries and four computations. Five findings are closed against exact repaired hashes. This accepts conditional source fidelity only; all stated law, timing, AMU and filing holds remain.
