@@ -31,7 +31,7 @@ Historical federal payroll source extracts. The GCT 2019 explanatory circular is
 | Same circular note 3, single / spouse taxed separately | IQD 2,500,000 annual allowance | same |
 | Same note, housewife spouse or qualifying merged income | IQD 4,500,000 total annual allowance | same |
 | Same note, wife with husband unable to work, medical committee certification and note 7 merger/branch conditions | IQD 5,000,000 annual allowance | same |
-| Same note, widow or divorced woman | IQD 3,200,000 annual allowance | same |
+| Same note, self-independent widow or divorced woman (المستقلة بذاتها) | IQD 3,200,000 annual allowance | same |
 | Same note, employee older than 63 | IQD 300,000 extra annual allowance | same |
 | Same note, each legally qualifying child, regardless of number | IQD 200,000 annual allowance | same |
 
@@ -100,7 +100,7 @@ expected:
 | Source and actual read scope | URL | Read on |
 |---|---|---|
 | 2019 GCT withholding circular: PDF pp. 3–6 notes 1–12 visually read; state/public-sector heading and worked cases checked | https://tax.mof.gov.iq/uploads/Najwan/thwabit/%D8%B6%D9%88%D8%A7%D8%A8%D8%B7%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%B7%D8%A7%D8%B9%20%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B4%D8%B1.pdf | 2026-11-01 |
-| Law 113: PDF p. 19 art. 17(3)–(4) and art. 18 read visually with neighbours | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
+| Law 113: PDF pp. 18–19 art. 17(1)–(4) and art. 18 read visually with neighbours | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 
 Not yet confirmed: **IQ-CURRENT** complete later amendments and 2026 payroll table; **IQ-PAY-PRIVATE** private-sector income base, allowance/exemption limits, non-Iraqi full-month proration, child dependency/age/income conditions, multiple employers and secondary employment; **IQ-PAY-PROCEDURE** employer registration, forms/tables, current remittance dates (including the inherited 15-day claim), returns, receipts, refunds and penalties; **IQ-SOCIAL** operative social-insurance legislation, commencement/transitions, contribution rates, oil categories, wage base, ceiling, registration, remittance, benefits and cross-border coordination. Neither the old employee/employer percentages nor a public pension deduction is evidence of the present private-sector liability.
 

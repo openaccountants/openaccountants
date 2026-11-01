@@ -18,7 +18,7 @@
     "sha256": "1b2ae6efa412722df338af6f9e06eb1935eb1474407d69af28ddc43c9423b1d1",
     "content_type": "text/html; charset=UTF-8",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "Mainpropertyguide:rentformula/paymentstepswithneighboringtransfer/land/usechangeprocedures",
     "relied_on_in_new_guides": true,
     "read_date": "2026-11-01"
@@ -54,7 +54,7 @@
     "sha256": "f3c377be0e813abb90e4e51cf525b9a6ec309435f7d9305afd5536ecb26b6ccf",
     "content_type": "application/pdf",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "All3pagesvisuallyreadart1–5",
     "relied_on_in_new_guides": true,
     "read_date": "2026-11-01"
@@ -66,7 +66,7 @@
     "sha256": "e88b2576aa6a19d24330f39dbe0758fe74528e5e7ae2e754f12eb207ab9bda14",
     "content_type": "application/pdf",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "Textclausesreadwithneighbors;PDF5,6,13,14,16,17,18,19,20,21,25,26,33,34visuallyread;notall41pagesandnotlateramendmentchain",
     "relied_on_in_new_guides": true,
     "read_date": "2026-11-01"
@@ -90,7 +90,7 @@
     "sha256": "5d6d65a10651329c4bc18d59b6597339006423dcbabad6e218b08eedd9d8da7b",
     "content_type": "application/pdf",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "PDF3–6notes1–12visuallyread; cover/recipientpagesnotreliedon",
     "relied_on_in_new_guides": true,
     "read_date": "2026-11-01"
@@ -102,7 +102,7 @@
     "sha256": "44e775b3ccb9ed6c535b74cfda8eb469c2309675146b85286cd888c066fcf857",
     "content_type": "application/pdf",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "All3pagesvisuallyread;brokenPDFtextlayernotused",
     "relied_on_in_new_guides": true,
     "read_date": "2026-11-01"
@@ -114,7 +114,7 @@
     "sha256": "53e69a4c8e558261d0b951f7127d2a4984729c41da8a8427071a8fffb562cea6",
     "content_type": "application/pdf",
     "status": 200,
-    "read": false,
+    "read": true,
     "actual_read_scope": "GeneralprinciplesPDF3–6textreadonly,notfulldocument;operativeguideapplicationheld",
     "relied_on_in_new_guides": false,
     "read_date": "2026-11-01"

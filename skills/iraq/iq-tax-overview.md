@@ -94,7 +94,7 @@ expected:
 |---|---|---|
 | GCT property guide: main text read, basic rent formula and payment sequence plus neighbouring transfer/land/use-change procedures; undated authority guidance | https://tax.mof.gov.iq/%D8%AF%D9%84%D9%8A%D9%84-%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/ | 2026-11-01 |
 
-Not yet confirmed: **IQ-CURRENT** source currentness through 2026; **IQ-PROPERTY** amended Law 162/1959, exemptions, additional-tax treatment, present rates, instalment dates, late interest and appeals, transfer Law 48/2015, valuation and vacant-land rules; **IQ-OVERVIEW-ADMIN** complete authority/remit/language/currency and current workflow for each job. The existing company-formation Guide remains an inherited 2025 research hold, not evidence of current incorporation requirements. All seven core tax jobs remain partial as the README states.
+Not yet confirmed: **IQ-CURRENT** source currentness through 2026; **IQ-PROPERTY** amended Law 162/1959, exemptions, additional-tax treatment, present rates, instalment dates, late interest and appeals, transfer Law 48/2015, valuation and vacant-land rules; **IQ-OVERVIEW-ADMIN** assessment/calendar-year basis, complete authority/remit/language/currency and current workflow for each job. The existing company-formation Guide remains an inherited 2025 research hold, not evidence of current incorporation requirements. All seven core tax jobs remain partial as the README states.
 
 <!-- openaccountants-cta-block -->
 

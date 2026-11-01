@@ -1,0 +1,410 @@
+[
+  {
+    "id": "IQ-001",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Law PDF6 arts5(1)–(3) supports nationality/source distinctions; foreign-credit neighbour read. No residence test inferred.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-002",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF16 art13(1)(a) first band and allowance precondition match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-003",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF16 next250000, upper500000 match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-004",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF16 next500000 through1m match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-005",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Rate correct; exact quote has المائة but PDF16 fifteen-percent line has المئة. Correct quote, also IQ010.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-006",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF16 nonresident scale and art19 exclusion match; no blanket allowance conclusion.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-007",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF5 arts3–4 read: year/category distinction and exceptions retained.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-008",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF26 art27(1)–(3) supports requested21days / before1June / legitimate excuse extension.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-009",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Historical notice/payment description correct. Exact quote is not verbatim: PDF33 says على السلطة المالية أن تبلغ المكلف خطيا بدفع الضريبة معينة مقدارها وتاريخ استحقاقها, rather than تبليغ.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-010",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Arithmetic correct; same quote correction as IQ005.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-011",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Listed company rates correct. PDF16 quote starts نسبة %15 ثابتة من دخل الشركات ذات المسؤولية المحدودة, not بنسبة.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-012",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF20–21 art19 supports payment classes, due-abroad cash/credit trigger, bank exemption and annual-payment scope. Dividend exception not used as a current conclusion.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-013",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF13–14 supports same-year cross-source offset, five consecutive years/half/same-source carry and transition exclusions.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-014",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF6 art5(4) supports cap, five-year excess carry, first-vintage priority, per-country and receipt/authority proof.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-015",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Both source-conditioned loss computations correct; qualifying carried/current losses not conflated.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-016",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Circular PDF3 heading and5–6 distinguish state/public sector and temporary/permanent cases.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-017",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 note2 and5–6 permanent example support ten-percent nominal pension deduction; not extended to private insurance.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-018",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 note3 amount2.5m matches named single/separate-spouse cases; other table cases not represented as unavailable.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-019",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 note3 amount4.5m matches; qualifying merger language and notes4–8 retained.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-020",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 note3 amount5m supports incapacitated-husband case; medical/merger conditions retained.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-021",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Amount3.2m correct. Source PDF3 expressly says الموظفة الأرملة أو المطلقة المستقلة بذاتها. Add independent-in-her-own-right condition beside rate in Guide and ledger claim.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-022",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 age strictly above63 and extra300000 match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-023",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 qualifying children regardless of number /200000 match, complete eligibility remains held.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-024",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF3 note1 salary/overtime/other amounts excluding allowances matches only public-sector scope.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-025",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF4 notes4–8 read fully. Court custody, one-housewife spouse, signed January request/branch proof, incapacity report and otherwise own single allowance retained.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-026",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF4 note9 permits within-year over/underdeduction correction; source-limited wording correct.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-027",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF19 art17(3),18 supports employer liability even if undeducted and authority-set information period; PDF18 context also read.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-028",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF19 art17(4)21days from Minister-set timetable; no universal monthly date substituted.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-029",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "PDF5–6 nominal700000/housewife/nochildren cases42083 and31583 match scan and difference10500. Monthly endpoint rounding explained.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-030",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "All hotel PDF1–3 read: Decision36/1997, Instructions7/1997 and4/2005 identifiers correct.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-031",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Hotel PDF1–2 all-service value/excellent-first class/10percent match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-032",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Sales PDF3 art4(3) imported tobacco/alcohol300percent customs-declaration base and separate local-producer clause match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-033",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Sales PDF2 art4(1) imported cars15percent customs-declaration base match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-034",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Sales PDF1–2 arts1(6),(9),4(2) national-carrier definition/domestic-international ticket scope match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-035",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Hotel PDF2–3 invoice/bookkeeping and2005 replacement central-bank announced market conversion match.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-036",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Timing/records correct. Exact hotel PDF2 wording ends الشهر الذي تحققت فيه الضريبة; ledger instead ends الشهر الذي تحققت الضريبة فيه. Correct quotation.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-037",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Quarterly certified-form/signed report/first-half following-month rule and border-unit separation correct. PDF3 quote ends موقعا منه او ممن يمثله قانونا; ledger misses م in ممن.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-038",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Hotel PDF2 art6 collected/uncollected distinction and overdraft interest match; no unsupported current rate.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-039",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Sales PDF2 art2 historical installation-inside/outside scope matches; levy currentness/rate held.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-040",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Both hotel/import arithmetic cases correct. Note cross-reference hotelquoteinIQ029 is wrong; hotel quotation is IQ031.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-041",
+    "guide": "iq-tax-overview",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Original cached HTML main rent paragraph supports10percent after10percent=9percent. Authority page undated; statute/currentness not inferred.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-042",
+    "guide": "iq-tax-overview",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "HTML neighbouring transfer/use-change/land workflow paragraphs distinguish these from recurring rent; no transfer calculation.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-043",
+    "guide": "iq-tax-overview",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "HTML basic/additional/audit/manager/cash/receipt/posting steps and one/two instalment options match. Actual date windows not asserted current.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-044",
+    "guide": "iq-tax-overview",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Both conditional property computations and180000 difference recompute; no entitlement inferred.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-045",
+    "guide": "iq-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Holds are operationally kept. Preservation needs named PIT-BASE topics: risk-allowance exemption, employee-SSC deduction, undocumented-taxpayer single/unmarried fallback, rather than broad exemption/allowance wording alone.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-046",
+    "guide": "iq-corporate-income-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Holds are operationally kept. Name inherited Iraqi unified accounting framework in CORP-RETURN hold (pre-pr corporate tax base).",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-047",
+    "guide": "iq-payroll-social",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Payroll/private/social/procedure/currentness holds kept; no private contribution conclusion escapes into body.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-048",
+    "guide": "iq-vat-gst",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Sales/currentness/VAT-absence/telecom/customs holds kept; no zero-VAT/credit/registration conclusion escapes into body.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-049",
+    "guide": "iq-tax-overview",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "needs_correction",
+    "review_note": "Holds kept. Name inherited assessment/calendar-year basis in OVERVIEW-ADMIN hold; generic remit/workflow does not identify it.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-050",
+    "guide": "iraq-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Router TP/XB/currentness/legacy holds kept, not operative legal answers; formation expressly held.",
+    "current_2026_law_cleared": false
+  },
+  {
+    "id": "IQ-051",
+    "guide": "iraq-tax",
+    "reviewed_head": "738555d48c711d7212305f2af625beb4c26cb818",
+    "verdict": "pass_source_version_or_hold",
+    "review_note": "Review flags retained as recommendations, automatic EXCLUDE removed, evidence-count arithmetic correct. No legally required document count inferred.",
+    "current_2026_law_cleared": false
+  }
+]

@@ -389,7 +389,7 @@
     "line": 19,
     "heading": "## Corporate income tax rates and base",
     "text": "- **Tax base** — Net profit from Iraq-source income, determined under the Iraqi unified accounting system (GAAP)  _(Income Tax Law No. 113 of 1982 — https://taxsummaries.pwc.com/iraq/corporate/tax-administration)_",
-    "destination": "skills/iraq/iq-corporate-income-tax.md: corresponding canonical section or Sources explicit hold; see section-by-section destination key below"
+    "destination": "skills/iraq/iq-corporate-income-tax.md: Sources, IQ-CORP-RETURN named Iraqi unified accounting framework hold; nationality/source scope separately held"
   },
   {
     "stage": "pre-pr",
@@ -757,7 +757,7 @@
     "line": 26,
     "heading": "## Personal income tax rates and bands",
     "text": "- **Risk allowance exemption** — Up to 30% of basic salary is tax-exempt percent  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/individual/deductions))_",
-    "destination": "skills/iraq/iq-income-tax.md: corresponding canonical section or Sources explicit hold; see section-by-section destination key below"
+    "destination": "skills/iraq/iq-income-tax.md: Sources, IQ-PIT-BASE named hold for risk allowance / employee social deduction / undocumented-taxpayer single fallback; no old figure restored"
   },
   {
     "stage": "pre-pr",
@@ -765,7 +765,7 @@
     "line": 27,
     "heading": "## Personal income tax rates and bands",
     "text": "- **Social security contributions deductible** — Employee social security contributions are deductible from taxable income  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/individual/deductions))_",
-    "destination": "skills/iraq/iq-income-tax.md: corresponding canonical section or Sources explicit hold; see section-by-section destination key below"
+    "destination": "skills/iraq/iq-income-tax.md: Sources, IQ-PIT-BASE named hold for risk allowance / employee social deduction / undocumented-taxpayer single fallback; no old figure restored"
   },
   {
     "stage": "pre-pr",
@@ -773,7 +773,7 @@
     "line": 28,
     "heading": "## Personal income tax rates and bands",
     "text": "- **Allowance documentation requirement** — Supporting documents must be filed or the taxpayer is treated as unmarried (single allowance only)  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq/individual/deductions))_",
-    "destination": "skills/iraq/iq-income-tax.md: corresponding canonical section or Sources explicit hold; see section-by-section destination key below"
+    "destination": "skills/iraq/iq-income-tax.md: Sources, IQ-PIT-BASE named hold for risk allowance / employee social deduction / undocumented-taxpayer single fallback; no old figure restored"
   },
   {
     "stage": "pre-pr",
@@ -1285,7 +1285,7 @@
     "line": 18,
     "heading": "## Iraq tax system at a glance",
     "text": "- **Tax (assessment) year** — Calendar year (1 January to 31 December)  _(Income Tax Law No. 113 of 1982 (https://taxsummaries.pwc.com/iraq))_",
-    "destination": "skills/iraq/iq-tax-overview.md: corresponding canonical section or Sources explicit hold; see section-by-section destination key below"
+    "destination": "skills/iraq/iq-tax-overview.md: Sources, IQ-OVERVIEW-ADMIN named assessment/calendar-year basis hold"
   },
   {
     "stage": "pre-pr",
@@ -4413,7 +4413,7 @@
     "line": 120,
     "heading": "## Sources",
     "text": "Not yet confirmed: Risk allowance exemption of 30% of basic salary and the rule treating undocumented taxpayers as unmarried: no official page opened. Employer remittance within 15 days: see the payroll skill. Whether a 2026 budget law changed bands or allowances: none found, but no 2026 budget text could be opened. Parts of GCT law text are the consolidated copy; amendments after it were not all read.",
-    "destination": "skills/iraq/iq-income-tax.md: Sources, source-version scope/read receipts and explicit topic-specific holds; original wording preserved in snapshot"
+    "destination": "skills/iraq/iq-income-tax.md: IQ-PIT-BASE + IQ-CURRENT and payroll IQ-PAY-PROCEDURE, explicitly held"
   },
   {
     "stage": "original-pr",
