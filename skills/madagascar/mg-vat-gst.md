@@ -4,7 +4,7 @@ description: "Madagascar 2026 TVA rates, domestic liability, eligible input cred
 jurisdiction: MG
 tax_year: 2026
 last_updated: 2026-11-01
-version: 1.0
+version: 1.1
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Madagascar TVA: ordinary monthly computation
+# Madagascar TVA: ordinary monthly computation v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Madagascar.
 
@@ -27,7 +27,7 @@ Use for taxable business supplies in Madagascar under CDI 06.01.02–05. Mandato
 | Ordinary taxable supply | 20% | [CDI 06.01.12](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf) |
 | Export of goods or services qualifying as an export | 0% | same |
 | Luxury-rice imports/sales, tariff 1006.30 10, after LFR entry; earlier LFI rice exemption must be tested against its annex | 5% after LFR entry | [Loi 2026-004 amendment to 06.01.12](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf) |
-| Import/sale of butane gas and its containers under tariff codes 2711.13 00 and 7311.00 00 respectively | 10% | same |
+| Import/sale of butane gas and its containers under tariff codes 2711.13 00 and 7311.00 00 respectively | 10% | [CDI 06.01.12](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf) |
 
 Do not confuse zero rating with exemption. CDI 06.01.06 lists exemptions including general/technical/professional tuition, health-profession services, medicines and specified products. The old phrase “unprocessed agricultural products” is not a blanket exemption: match the actual product against the statutory list and conditions. The July LFR changes the list: it repeals the kerosene exemption, replaces hybrid vehicles with electric vehicles, broadens the financial/banking lending-interest wording, adds meat sales and amends the annex, including luxury rice. Use the [signed LFR amendments](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), not the unreconciled LFI annex. A July transition supply requires actual entry/publication evidence under article 22.
 
@@ -37,7 +37,7 @@ Separate taxable, zero-rated, exempt and outside-scope transactions. For a sale,
 
 Compute output tax less eligible input tax. Ordinary purchase credit requires TVA separately shown on a compliant invoice from an assujetti, normal business necessity, taxable use and payment through a bank or mobile banking; import tax needs import evidence (06.01.17). Check excluded categories in 06.01.18 and supplier exigibility under 06.01.21. Mixed activities require allocation/prorata, not full credit. Do not credit employee or passenger-vehicle expenditure automatically.
 
-An excess is a credit carried to later monthly periods for at most three years (06.01.23). Refund classes include free-zone enterprises, professional exporters, approved financial lessors and VAT enterprises making qualifying investment; the old “export/free zones only” restriction is incomplete. Refund eligibility and allocation require 06.01.24 and implementing decisions. A request accompanies the monthly declaration; unrequested credit loses refund entitlement after the statutory three-month window following the due date. Keep requested credits out of the following carried-credit balance. [CDI 06.01.17–24](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).
+An excess is a credit carried to later monthly periods for at most three years (06.01.23). For a business with both taxable and non-taxable operations, residual carryforward credit at year-end can be expensed. If assujetti status is withdrawn, residual year-end credit ineligible for refund under 06.01.24 must be expensed at year-end. Preserve those distinct permitted and mandatory treatments before carrying a balance into the next period. Refund classes include free-zone enterprises, professional exporters, approved financial lessors and VAT enterprises making qualifying investment; the old “export/free zones only” restriction is incomplete. Refund eligibility and allocation require 06.01.24 and implementing decisions. A request accompanies the monthly declaration; unrequested credit loses refund entitlement after the statutory three-month window following the due date. Keep requested credits out of the following carried-credit balance. [CDI 06.01.17–24](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).
 
 ## Deadlines and filing
 

@@ -1,0 +1,137 @@
+{
+  "capture_manifest_sha256": "0295096cb01908e2ab20c63124a769903701b4fafc511a684a9f818149628b09",
+  "checks": [
+    {
+      "file": "cdi-2026.txt",
+      "sha256": "6165252fc74f92531324a1d7581ddad6df25fb0dc5fbc836ba418eeee2400445",
+      "bytes": 975204,
+      "matches": true
+    },
+    {
+      "file": "edbm-documents.txt",
+      "sha256": "018fea6505783da1cf97d61e55a22f5ad2fb7e86b5aa5d746d572913eda960a6",
+      "bytes": 45201,
+      "matches": true
+    },
+    {
+      "file": "lfr-2026.txt",
+      "sha256": "33756e6834fcbef06b95afadb62d5b6e33b6f9e6d9b09d51b0239c75cfae1c6b",
+      "bytes": 142702,
+      "matches": true
+    },
+    {
+      "file": "cnaps-home.txt",
+      "sha256": "96291a1fd5c2a9482399100dba368bd614de018f08cb8b9b49464ea7033ead43",
+      "bytes": 72837,
+      "matches": true
+    },
+    {
+      "file": "cnaps-update.txt",
+      "sha256": "26f77db783be04f70a5f33ea15417e971cbcb93288714a0fcac62d152addcf94",
+      "bytes": 19635,
+      "matches": true
+    },
+    {
+      "file": "dgi-home.html",
+      "sha256": "ae2010252d5878fc84cbd22ab5ac7ebaca41eb1e8ca891454b19c22e4d78a58f",
+      "bytes": 383313,
+      "matches": true
+    },
+    {
+      "file": "cps.pdf",
+      "sha256": "59ac0d98a9e2598a19528194984f745a0b74c8152fb2463cb666cf72e9c54051",
+      "bytes": 150019,
+      "matches": true
+    },
+    {
+      "file": "edbm-sarl.txt",
+      "sha256": "6788c9bfa3543b0a5c25c49bcfa9d8d662c9aba28ec2c059c55c88d05a4ecf87",
+      "bytes": 42134,
+      "matches": true
+    },
+    {
+      "file": "edbm-documents.html",
+      "sha256": "92f0f8968614e2a588a3766d4d783cf67cf90707c60dc1b4a5977e621a11f155",
+      "bytes": 100764,
+      "matches": true
+    },
+    {
+      "file": "cdi-2026.pdf",
+      "sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "bytes": 2788548,
+      "matches": true
+    },
+    {
+      "file": "lfr-2026.pdf",
+      "sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "bytes": 1907801,
+      "matches": true
+    },
+    {
+      "file": "codes.html",
+      "sha256": "8a0007a3e0e50ab4cac430bd8c0a56a407dd4c27e45ad1f688ea220c9c8221f1",
+      "bytes": 13919,
+      "matches": true
+    },
+    {
+      "file": "cpf-2026.txt",
+      "sha256": "e3967fda31d17116edb819938d0b0eb6463a68a9b1d2d09c27aa4a037ed3f1f1",
+      "bytes": 495529,
+      "matches": true
+    },
+    {
+      "file": "lfi-2026.pdf",
+      "sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "bytes": 3972881,
+      "matches": true
+    },
+    {
+      "file": "cnaps-sme.txt",
+      "sha256": "2d2e5b19e4fd74911e5c7f302763cfba0c6e8bf37779a0d8e20583bf18a372e6",
+      "bytes": 17709,
+      "matches": true
+    },
+    {
+      "file": "edbm-sarl.html",
+      "sha256": "15f747616a19e04359264b767a3949f50dabf5eda5a12a5fdaaa7d9dde5e2f8e",
+      "bytes": 95172,
+      "matches": true
+    },
+    {
+      "file": "mef-laws.html",
+      "sha256": "626565637886ce9ab8188516552127f1b11852fa31887bd548c836aa8053de97",
+      "bytes": 145546,
+      "matches": true
+    },
+    {
+      "file": "cnaps-update.html",
+      "sha256": "0711cfe654fe26a25ab2ede59537e6cd81dbac5a44a0cb6045ae3a399edb294f",
+      "bytes": 38243,
+      "matches": true
+    },
+    {
+      "file": "cnaps-sme.html",
+      "sha256": "ce4c3cfe57501e6959b09b6d81acf51bc50216b5476fd57b3cb89bea9097f3b4",
+      "bytes": 36039,
+      "matches": true
+    },
+    {
+      "file": "cnaps-home.html",
+      "sha256": "59ac0d98a9e2598a19528194984f745a0b74c8152fb2463cb666cf72e9c54051",
+      "bytes": 150019,
+      "matches": true
+    },
+    {
+      "file": "cpf-2026.pdf",
+      "sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "bytes": 1752311,
+      "matches": true
+    },
+    {
+      "file": "lfi-2026.txt",
+      "sha256": "d2dbea0e21dbddbf060549740e0e0c5add16b51fc866cabda4dfb0396b023e25",
+      "bytes": 372006,
+      "matches": true
+    }
+  ]
+}

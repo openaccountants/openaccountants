@@ -4,7 +4,7 @@ description: "Madagascar 2026 ordinary IR company computation, minimum tax, IS b
 jurisdiction: MG
 tax_year: 2026
 last_updated: 2026-11-01
-version: 1.0
+version: 1.1
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -12,7 +12,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 ---
 
-# Madagascar corporate income tax and business-regime routing
+# Madagascar corporate income tax and business-regime routing v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Madagascar.
 
@@ -35,7 +35,7 @@ Transport minimum tax is set by regulation; do not put transport into the genera
 
 ## The base
 
-Start from net accounting profit and reconcile necessary business expenses supported by documents, non-deductible items, taxable income and exemptions under CDI 01.01.09–11. Do not calculate IR on turnover. Carryforward of qualifying prior deficits is limited to the following five exercises (01.01.10 11°); track each year separately. The accounting year can be the calendar year, July–June or another twelve-month period. A first period can be shorter or longer, capped at eighteen months absent permission (01.01.09). Round taxable profit, calculate ordinary IR, then compare with the applicable minimum. Deduct evidenced provisional payments from the tax liability, preserving any excess for the applicable credit procedure. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf). Investment reductions, sector regimes and complex deduction limitations require a separate calculation.
+Start from net accounting profit and reconcile necessary business expenses supported by documents, non-deductible items, taxable income and exemptions under CDI 01.01.09–11. Do not calculate IR on turnover. Carryforward of qualifying prior deficits is permitted over a five-year period (01.01.10 11°); track each year separately. Do not substitute five accounting exercises for the statutory five years. The accounting year can be the calendar year, July–June or another twelve-month period. A first period can be shorter or longer, capped at eighteen months absent permission (01.01.09). Round taxable profit, calculate ordinary IR, then compare with the applicable minimum. Deduct evidenced provisional payments from the tax liability, preserving any excess for the applicable credit procedure. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf). Investment reductions, sector regimes and complex deduction limitations require a separate calculation.
 
 ## Deadlines and filing
 

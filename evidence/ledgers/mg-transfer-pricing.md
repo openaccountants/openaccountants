@@ -21,4 +21,8 @@ Candidate tax year 2026. Writer read the listed portions on 2026-11-01. Short Fr
 | Detail-5 | Documentation extra requests1month extendable2total | CPF V-25 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « une durée de deux (2) mois » | 2026-11-01 |
 | Detail-6 | Insufficientresponse completionnotice15days | CPF V-28 | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf | « dans un délai de quinze (15) jours » | 2026-11-01 |
 
+| Repair-F4a | Penalties: refusal of V-24 complementary annexes after unsuccessful reminder adds 5% of the transaction concerned alongside 20.01.52, without prejudice to ex-officio adjustment | CDI 20.01.56.8 2°, first paragraph | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « de 5p.100 du montant de la transaction concernée » | 2026-11-01 |
+| Repair-F4b | Penalties: insufficient/no response to V-28 completion notice attracts the same consequences | CDI 20.01.56.8 2°, second paragraph | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « les mêmes sanctions prévues à l’alinéa précédent sont applicables. » | 2026-11-01 |
+| Repair-F4c | Penalties: cumulation where original TP-document deadline breach coexists with failure/refusal/insufficient response to complementary-document request | CDI 20.01.56.8 2°, third paragraph | https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf | « Les sanctions sont cumulables au cas où le contribuable n’a pas déposé les documents sur le prix de transfert » | 2026-11-01 |
+
 Old-topic destinations: [complete country map](mg-old-topic-destinations.md).

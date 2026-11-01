@@ -6,10 +6,10 @@ category: transfer-pricing
 tax_year: 2026
 tier: 2
 last_updated: 2026-11-01
-version: 1.0
+version: 1.1
 ---
 
-# Madagascar transfer pricing: annual disclosure and documentation scope
+# Madagascar transfer pricing: annual disclosure and documentation scope v1.1
 
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Madagascar.
 
@@ -39,7 +39,7 @@ Prepare the capital organization chart and transaction-category details, counter
 
 ## Penalties and interest
 
-CDI 20.01.52 provides MGA 10,000,000 for breaches of the TP obligation, including missing elements preventing arm’s-length evaluation and late documentary submission. This does not replace the tax adjustment or applicable understatement/payment sanctions. Refer contested comparability or sanctions for Malagasy professional review. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).
+CDI 20.01.52 provides MGA 10,000,000 for breaches of the TP obligation, including missing elements preventing arm’s-length evaluation and late documentary submission. For refusal to produce complementary annexes under CPF V-24 after an unsuccessful reminder, CDI 20.01.56.8 2° adds a fine of 5% of the transaction concerned, alongside the 20.01.52 sanction and without prejudice to ex-officio adjustment under CPF V-34 onwards. The same consequences apply to an insufficient response or no response to the V-28 completion notice. The sanctions cumulate when the taxpayer both failed to lodge TP documents within the legal deadline and failed to respond, refused production or responded insufficiently to the complementary-document request. These triggers must be established from the actual requests, notices and responses. [CDI 20.01.56.8 2°](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf). This does not replace other applicable understatement/payment sanctions. Refer contested comparability or sanctions for Malagasy professional review. [CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf).
 
 ## Cross-border points
 
@@ -86,7 +86,7 @@ Get full ownership/control chain, country/tax status of each counterparty, indiv
 
  | Source and provisions actually read | Read on |
 |---|---|
-| [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 01.01.13 IV in full; 20.01.52 | 2026-11-01 |
+| [DGI 2026 CDI](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CDI-LFI%202026.pdf), 01.01.13 IV in full; 20.01.52; 20.01.56.8 2° | 2026-11-01 |
 | [DGI 2026 CPF](https://www.impots.mg/explorer?path=/legislation/Codes%20et%20Manuels/CPF-LFI%202026.pdf), IV-08–10; V-19–28 | 2026-11-01 |
 
 | [Signed Loi 2026-004, LFR 2026](https://www.mef.gov.mg/assets/vendor/ckeditor/plugins/kcfinder/upload/files/2026/lfr/LFR2026%20Ampliation%20SIGNEE%20DATEE.pdf), tax amendments and article 22 entry provision read | 2026-11-01 |
