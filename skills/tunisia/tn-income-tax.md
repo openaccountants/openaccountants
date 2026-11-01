@@ -69,13 +69,13 @@ Optional flat tax (LF 2026 art. 91, Code art. 44 ter): turnover at most TND 100,
 
 Source: art. 60 I. The old file's single 25 June date is not in art. 60. Optional flat tax: two equal parts by 25 April and 25 October (LF 2026 art. 91).
 
-Three advance payments (acomptes), each 30% of the prior year's tax, are due in the first 25 days of the sixth, ninth and twelfth months after year end for individuals in business or a profession; not farmers, fishers or basic flat-tax payers; artisans skip the first (art. 51). Withholding is credited against them.
+From the second year of activity, three advance payments (acomptes), each 30% of the prior year's tax, are due in the first 25 days of the sixth, ninth and twelfth months after year end for individuals in business or a profession; not farmers, fishers or basic flat-tax payers; artisans skip the first (art. 51). Withholding is credited against them.
 
 Steps for online filing (DGI): 1. Fill in the adhesion form and lodge it at your tax control office. 2. Buy an electronic certificate from ANCE, DIGIGO or USB token. 3. Log in to the online filing service on jibaya.tn and complete the return. Box numbers and post-filing steps: see Not yet confirmed.
 
 ## Penalties and interest
 
-The flat tax rises 50% if the return is over 30 days late (art. 44 ter). Minimum tax rises 50% if paid over a month late (art. 49 II for companies; the individual text was not re-read). General late-payment rates sit in the Tax Procedures Code, which could not be opened.
+The flat tax rises 50% if the return is over 30 days late (art. 44 ter). Minimum tax rises 50% if paid over a month late (art. 44 II). General late-payment rates sit in the Tax Procedures Code, which could not be opened.
 
 ## Cross-border points
 
@@ -98,7 +98,7 @@ expected:
   tax: 6250.00
 ```
 
-Decision: trader with turnover TND 80,000 and profit TND 20,000, single, in a town. Optional flat tax is TND 5,000. On the real regime the scale gives 750 + 2,500 = TND 3,250, against a minimum tax of 0.2% × 80,000 = TND 160. At this profit the real regime is cheaper by TND 1,750, before bookkeeping cost and the six-year audit protection.
+Decision: trader with turnover TND 80,000 and profit TND 20,000, single, in a town. Optional flat tax is TND 5,000. On the real regime the scale gives 750 + 2,500 = TND 3,250, against a minimum tax of TND 300 (0.2% × 80,000 is 160, below the floor). At this profit the real regime is cheaper by TND 1,750, before bookkeeping cost and the six-year audit protection.
 
 ```oa-check
 name: Flat tax against real regime
@@ -108,7 +108,7 @@ inputs:
   flat: 5000
 steps:
   - scale: (min(profit, 10000) - 5000) * 0.15 + (profit - 10000) * 0.25
-  - minimum: turnover * 0.002
+  - minimum: max(turnover * 0.002, 300)
   - real: max(scale, minimum)
   - saving: flat - real
 expected:

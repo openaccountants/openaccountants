@@ -30,7 +30,7 @@ Private-sector employers and employees in the CNSS general scheme. Tax year 2026
 | Job-loss fund | 0.5% employer, 0.5% employee | 2026 | On payroll declared to CNSS. LF 2025 fund article | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf |
 | State relief on employer share | 100%, 80%, 60%, 40%, 20% over years 1 to 5 | 2026 | Higher-education graduates hired by private firms from 1 Jan 2026. LF 2026 art. 13 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
 | Employee flat expenses | 10%, cap TND 2,000 | 2026 | Art. 26 I | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf |
-| Withholding exempt pay | Net annual pay up to TND 5,000 | 2026 | Art. 53; check art. text in the income skill | same |
+| Provisional or occasional pay | 20% of net, none if annual net salary is at most TND 5,000 | 2026 | Paid on top of regular pay by the same employer. Regular pay follows the annual scale. Art. 53 II | same |
 
 LF 2026 art. 15 raises public and private pay for 2026 to 2028 by decree; the decree was not read.
 

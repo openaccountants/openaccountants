@@ -20,7 +20,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 Those making taxable supplies in Tunisia, those who invoice VAT, and those who opt in (Code TVA art. 2). The code sets no general TND 100,000 goods or 50,000 services registration threshold; the old figures were not found. The TND 100,000 in art. 2 concerns retail traders reselling goods. Flat-tax payers under Code IRPP-IS art. 44 bis may opt in.
 
-Out of scope for escalation: offshore companies (R-TN-1).
+Minimum input for classification: a bank statement from any Tunisian bank. Out of scope for escalation: offshore companies (R-TN-1).
 
 ## Rates, bands and thresholds
 
@@ -31,17 +31,18 @@ Out of scope for escalation: offshore companies (R-TN-1).
 | Intermediate rate | 13% | 2026 | Listed petroleum products; domestic low-voltage electricity above 300 kWh a month. Art. 7(3), LF 2025 art. 31 | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf |
 | New homes by developers | 7% up to TND 400,000 excl. VAT | 2026 | To individuals or public developers; Table B no. 31. The 13% line is repealed, so above the cap the 19% default applies. LF 2025 art. 64 | same |
 | Lithium battery inputs | 7% | 2026 | Listed non-local inputs. LF 2026 art. 46 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
+| LF 2026 Table changes | Plug-in hybrids join Table B no. 18 quinquies at 7%; school book and exercise paper exempt, Table A no. 46 ter | 2026 | LF 2026 arts. 47, 64 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
 | State withholding | 25% of the VAT | 2026 | Payments of TND 1,000 or more incl. VAT by State, local bodies, public entities; phone, water, power exempt. Art. 19 bis | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf |
 | Non-established supplier | Customer withholds all VAT | 2026 | Art. 19 | same |
 | Cash purchase block | TND 5,000 excl. VAT | 2026 | No deduction if paid in cash. Art. 10 | same |
 | Late filing | unverified: 1% a month, min TND 50, old file | 2026 | Tax Procedures Code not opened | unverified |
 | Late payment | unverified: 0.75% a month, old file | 2026 | same | unverified |
 
-Hotels at 13% and legal or accounting services at 13% in the old file are wrong against art. 7: lodging is in Table B and professional services take the default rate. Exempt lines include bread, flours and pasta (Table A no. 41) and insurance under the single tax; finance, education and medical exemptions are in Table A and must be checked line by line.
+Hotels at 13% and legal or accounting services at 13% in the old file are wrong against art. 7: lodging is in Table B and professional services take the default rate. Table B also covers finished pharmaceutical products (no. 4). Exempt lines include bread, flours and pasta (Table A no. 41) and insurance under the single tax; finance, education and medical exemptions are in Table A and must be checked line by line.
 
 ## The base
 
-Taxable amount includes the price and charges (art. 6). Excise (droit de consommation) sits in the VAT base.
+Taxable amount includes the price and charges (art. 6). Excise (droit de consommation) sits in the VAT base. Example from the old file, excise rate unverified: cosmetics CIF TND 100,000, excise 25% = 25,000, base 125,000, VAT 23,750.
 
 No deduction (art. 10): passenger cars not used as the trade itself, their hire and running costs; supplies from flat-tax payers; cash payments of TND 5,000 or more; payments to privileged-tax jurisdictions.
 
@@ -62,7 +63,7 @@ Credit refund: exports, suspension sales and withheld VAT from a monthly return 
 | CNSS, CNRPS | EXCLUDE | Social security |
 | STEG | 7% or 13% domestic low voltage by consumption, otherwise check | Electricity |
 | SONEDE | Check rate | Water |
-| TUNISIE TELECOM, OOREDOO TN, ORANGE TN | Domestic 19% | Telecoms |
+| TUNISIE TELECOM, OOREDOO TN, ORANGE TN | Domestic 19%; 7% for fixed line and ADSL to individuals, non-professional use (Table B II no. 29) | Telecoms |
 | GOOGLE, MICROSOFT, AWS | Autoliquidation 19% | Non-resident |
 
 ## Deadlines and filing
@@ -77,7 +78,7 @@ See the two unverified rows above. Keep invoices with the supplier's tax number.
 
 ## Cross-border points
 
-A foreign supplier with no Tunisian establishment: the customer withholds the VAT (art. 19). Such as SaaS bought in from Google, Microsoft or AWS at 19%. The supplier may instead declare and deduct (art. 19(2)). Whether the customer deducts this VAT follows art. 9. Exports are exempt (Table A).
+A foreign supplier with no Tunisian establishment: the customer withholds the VAT (art. 19). Such as SaaS bought in from Google, Microsoft or AWS at 19%. The supplier may instead declare and deduct (art. 19(2)). Whether the customer deducts this VAT follows art. 9. Exports are not a Table A line; art. 9 counts them with taxable receipts in the prorata and art. 15 lets the credit be refunded.
 
 ## Two worked examples that recompute
 
@@ -128,7 +129,7 @@ expected:
 | DGI professional space with tax calendar, archived 8 June 2026; calendar entries read | https://web.archive.org/web/20260608115736/https://jibaya.tn/ar/espace-professionnel/ | 2026-11-01 |
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
-Not yet confirmed: Late penalties. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file.
+Not yet confirmed: Late penalties. Old-file blocks on staff accommodation, entertainment and gifts, and invoices without a tax number, not found in art. 10 as read. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file.
 
 <!-- openaccountants-cta-block -->
 

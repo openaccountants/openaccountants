@@ -1,6 +1,6 @@
 ---
 name: tn-tax-overview
-description: "Tunisia tax overview for tax year 2026: a short map of income tax, company tax, VAT, authority, currency and residence basis, linking to the skill that owns each figure. Use first for general questions on how tax works in Tunisia, which taxes apply, or which authority to deal with."
+description: "Tunisia tax overview for tax year 2026: a short map of income tax, company tax, VAT, wealth tax, authority, currency and residence basis, linking to the skill that owns each figure. Use first for general questions on how tax works in Tunisia, which taxes apply, or which authority to deal with."
 version: 1.1
 jurisdiction: TN
 category: international
@@ -27,6 +27,7 @@ Anyone needing a map of Tunisian tax for 2026. Calendar tax year; currency TND; 
 | Top income tax rate | Owned by income tax skill | 2026 | See [income tax](tn-income-tax.md) | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf |
 | Standard company rate | Owned by company skill | 2026 | See [corporate income tax](tn-corporate-income-tax.md) | same |
 | VAT | Owned by VAT skill | 2026 | See [VAT](tunisia-vat.md); returns monthly | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf |
+| Wealth tax on individuals | 0.5% from TND 3m to 5m; 1% above TND 5m | 2026 | Due 1 January on net wealth, including minor children's. Residents worldwide, others on Tunisian assets. Main home, business assets, cars up to 12 fiscal horsepower and bank deposits are out. Return by end of June. LF 2026 art. 88 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
 
 ## The base
 
@@ -81,6 +82,7 @@ Company at TND 100,000 turnover: floor applies, TND 500.
 | Source | URL | Read on |
 |---|---|---|
 | Code IRPP-IS, French text updated to LF 2025, archived copy of the DGI file; articles cited in this skill read. The 2026 edition page exists but its PDF could not be opened | https://web.archive.org/web/20250906073044/https://jibaya.tn/wp-content/uploads/2025/07/code-IS-et-IRPP-francais-1.pdf | 2026-11-01 |
+| Loi n° 2025-17 du 12 decembre 2025, loi de finances 2026, JORT n° 148, archived copy of the DGI file; art. 88 read | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf | 2026-11-01 |
 | Code de la TVA, 2023 French edition, archived copy of the DGI file; arts. 2, 7, 10, 15, 18, 19, 19 bis and Tables A and B read. The 2026 edition PDF could not be opened | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf | 2026-11-01 |
 
 Not yet confirmed: Social Solidarity Contribution rate.
