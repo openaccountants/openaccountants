@@ -1,13 +1,13 @@
 ---
 name: se-benefits-and-allowances
 description: "Swedish taxable employee benefits (förmåner) and tax-free travel allowances, income year 2026. Covers valuation under Inkomstskattelagen 61 kap.: car benefit (0.29 price base amount + interest part + 13% of new-car price + vehicle tax, environmental-car reductions, 3,000-mil and part-year rules), fuel benefit (market value x 1.2; market value for contributions), meal benefit (SEK 62 / 124 / 310), housing; tax-free items (friskvårdsbidrag up to SEK 5,000, gifts SEK 600 / 1,800 / 15,000, bicycle, workplace charging); per diem (traktamente SEK 300 a day, meal reductions) and mileage (SEK 25 / 12 / 9.50 a mil); reporting in the arbetsgivardeklaration and employer contributions. Trigger on: förmånsvärde, bilförmån, kostförmån, traktamente, milersättning, friskvårdsbidrag, julgåva, company car Sweden. Out of scope: the payroll run and withholding tables (sweden-payroll), the employee's annual return (se-employee-income-tax), self-employed (se-income-tax)."
-version: 0.1
+version: 0.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -207,8 +207,6 @@ expected:
 | Skatteverket: How to fill in the PAYE tax return, box by box | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html | 2026-10-23 |
 
 Not yet confirmed: the 2026 normalbelopp per country for trips abroad (not reproduced); Skatteverket's practical test for "ringa omfattning" private use of a car; the car benefit rules for a car first liable to vehicle tax before 1 July 2021, and the 8 a § wording for a car first taxed between 1 July 2021 and 30 June 2022 (only the current consolidated text was read); the vehicle tax in example 1 is an assumed input.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

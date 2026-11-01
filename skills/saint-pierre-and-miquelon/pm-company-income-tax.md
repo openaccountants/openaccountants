@@ -2,13 +2,13 @@
 name: pm-company-income-tax
 description: >
   Saint-Pierre-et-Miquelon company income tax reference researched in October 2026 from the local tax code. Covers the territorial profit base, ordinary and conditional reduced rates, the annual minimum, loss carryforward limits, formation notifications and profit-return timing. Includes examples separating tax-base rounding from rate eligibility and identifies an obsolete reduced-rate band on the administration summary page. Describes the statutory instalment structure without treating an indexed historical threshold as a verified current figure. Group taxation, restructurings, treaty allocation, special gains, exemptions and independent accountant review remain outside this initial source-cited draft.
-version: 0.1
+version: 0.2
 jurisdiction: PM
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -69,8 +69,6 @@ Article 246 provides two instalments, **15 March and 15 June**, each one-third o
 ## Review boundary
 
 Checked 22 October 2026. Current forms, indexed payment threshold, full amendment history, exemptions, treaty allocation, group rules, special gains, credits, penalties and appeals require further work. Payroll, social contributions, business licence taxes, property taxes and customs are separate obligations. This is a source-cited draft, not comprehensive territory coverage or accountant attestation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

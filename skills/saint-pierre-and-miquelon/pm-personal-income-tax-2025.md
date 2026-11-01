@@ -2,13 +2,13 @@
 name: pm-personal-income-tax-2025
 description: >
   Saint-Pierre-et-Miquelon personal income tax reference for income earned in 2025 and declared in 2026. Covers the twelve-band local schedule, household shares, ordinary resident and nonresident filing deadlines, and the distinction between taxable income and gross salary. Includes a transparent one-share calculation before individual reliefs. Records the youth reduction introduced for the 2026 campaign with its household and multi-year limits, and identifies inconsistent departure instructions requiring resolution. Uses the local code and official filing notice; it does not substitute mainland French bands or claim to resolve treaties, payroll contributions or every deduction.
-version: 0.1
+version: 0.2
 jurisdiction: PM
 tax_year: 2025
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -78,8 +78,6 @@ The short enacted provision does not settle all cases involving an earlier first
 ## Review boundary
 
 Checked 22 October 2026. Complete income-category deductions, indexed low-liability relief, departure instructions, youth-transition cases, treaty relief, collection, appeals and late-filing rules remain for review. No independent accountant review has occurred. This Guide does not cover payroll or social contributions and is not comprehensive territory coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: vc-national-insurance
 description: >
   Saint Vincent and the Grenadines national insurance contribution reference checked for 2026. Covers ordinary employee and employer shares, current weekly and monthly earnings ceilings, earnings inclusions, registration and monthly remittance. Includes worked payroll examples and a distinction between cash salary and remuneration in kind. Uses current NIS employer guidance and the published contribution regulations, while expressly separating superseded historical rate and age provisions from current rules. Use after employment coverage is established. Special age groups, multiple employers, self-employment, benefit entitlement and the complete amendment chain require further review. Independent accountant review is pending.
-version: 0.1
+version: 0.2
 jurisdiction: VC
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -47,8 +47,6 @@ Reconcile worker registration numbers, period earnings, the capped base and both
 ## Legislative limits
 
 The downloadable regulations are an older compilation. Their historical rate and age provisions have not been used as the current 2026 schedule. Current figures above come from NIS's employer guidance; the complete later amendment chain remains to be reconciled before merge. Age transitions, special coverage, multiple employers, self-employed and voluntary contributions, penalties and benefits require separate analysis. Independent accountant review is pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

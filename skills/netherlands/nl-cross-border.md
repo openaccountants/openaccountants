@@ -1,13 +1,13 @@
 ---
 name: nl-cross-border
 description: "Hub skill for crossing the Dutch border in tax year 2026. Covers tax residence for individuals (facts and circumstances, AWR art. 4) and companies (seat by circumstances plus the incorporation fiction in Wet Vpb art. 2(5)); arriving under the expat scheme (30% ruling) with the 2026 salary norm and the fall to 27% from 2027; non-residents taxed on Dutch box 1, box 2 and box 3 income and qualifying non-resident status; leaving, with the protective assessment (conserverende aanslag) on box 2 shares and pensions; the M return for the migration year; 15% dividend tax and the conditional withholding tax at 25.8% on payments to low-tax jurisdictions; treaty relief. Trigger on: moving to the Netherlands, leaving the Netherlands, emigrating, non-resident, expat, exit tax, conserverende aanslag, M-formulier, digital nomad, bronbelasting. Out of scope: 30% ruling detail (nl-30-percent-ruling), payroll (nl-payroll-tax), corporate tax (nl-corporate-tax), resident income tax (nl-income-tax)."
-version: 0.2
+version: 0.3
 jurisdiction: NL
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -214,8 +214,6 @@ expected:
 | Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
 Not yet confirmed: the filing deadlines for 2026 M and non-resident returns (set in the 2027 invitation letters); the final 2027 expat salary norm and 2027 WNT cap.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
