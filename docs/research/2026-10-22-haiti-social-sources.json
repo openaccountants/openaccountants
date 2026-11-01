@@ -1,0 +1,36 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://ona.ht/pdf_docs/cadre_legal_ona.pdf",
+      "local_file": "ht-ona-law.pdf",
+      "bytes": 539493,
+      "sha256": "0c27aaa7cd5f237ef9327e34c61df356e0d879b0fdf58f26e0235f6878b465e9"
+    },
+    {
+      "url": "https://ona.ht/pdf_docs/formulaire_Renseignement_entreprise.pdf",
+      "local_file": "ht-ona-enterprise.pdf",
+      "bytes": 939618,
+      "sha256": "e272e97aabf06819af8020ab73e011292817dc343fb8df5a713ca67bb52ad065"
+    },
+    {
+      "url": "https://ona.ht/index.php/component/sppagebuilder/page/78",
+      "local_file": "ht-ona-insurance.html",
+      "bytes": 107479,
+      "sha256": "bc34af29837cef938066f6581db698e2916068a68166743584bdb57e8623fce6"
+    },
+    {
+      "url": "https://ofatma.gouv.ht/formulaires.html",
+      "local_file": "ht-ofatma-forms.html",
+      "bytes": 10691,
+      "sha256": "8746872c5363a5431b1c59d15e0be3d806c11fbbd8a11590f8efc6a6da58f730"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "ONA flat-rate amending chain absent from historical compilation",
+    "Current minimum wages and salary-component classification",
+    "Current agency submission procedure and period linkage",
+    "OFATMA health/maternity and accident payment schedule"
+  ]
+}
