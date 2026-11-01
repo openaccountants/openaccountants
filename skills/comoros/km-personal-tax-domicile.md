@@ -86,9 +86,10 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law 25-020/AU, Finance Law 2026, tax section (arts. 14 to 18), scan pages 9 to 16 | https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf | 2026-11-01 |
-| Law 24-013/AU, Amending Finance Law 2024, tax section (arts. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
+| Law 24-013/AU, Amending Finance Law 2024, tax section (art. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
 | Law 24-016/AU, Finance Law 2025, articles 1 to 25, scan, OCR read; no CGI or LPF change found beyond art. 20 | https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf | 2026-11-01 |
 | Code general des impots, 2023 edition, arts. 44 to 49, 123, 124 | https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf | 2026-11-01 |
+
 Not yet confirmed: the Amending Finance Law 2025 (Law 25-019/AU) could not be opened (official link returned 404), so any tax change in it is unverified. The Finance Law 2024 was not re-read in this refresh. The official tax authority site could not be reached. No consolidated 2026 code was found.
 
 <!-- openaccountants-cta-block -->

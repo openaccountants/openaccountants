@@ -28,7 +28,7 @@ Record the start date and obtain evidence that the registration request was rece
 
 ## Earlier registration rule: before starting
 
-The Amending Finance Law 2024 inserted CGI article 42 bis. Anyone starting a profession subject to the tax must declare to the Direction générale des Impôts "avant le commencement de ses opérations". Failure carries a fixed fine of **KMF 500,000**. Legal persons also file a beneficial-owner declaration, and companies attach their articles. Article 42 bis sits in the code and L.1 in the procedure book, and the 2026 text does not repeal 42 bis. Work to the stricter date: declare before starting, and in every case inside the fifteen days of L.1. On a sale or closure, article 42 bis gives ten days to notify the tax office and file the profit return. [2024 amending law, pages 14 to 16](https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf).
+The Amending Finance Law 2024 inserted CGI article 42 bis. Anyone starting a profession subject to the tax must declare to the Direction générale des Impôts "avant le commencement de ses opérations". Failure carries a fixed fine of **KMF 500,000**. Legal persons also file a beneficial-owner declaration, and companies attach their articles. Article 42 bis sits in the code and L.1 in the procedure book, and the 2026 text does not repeal 42 bis. Work to the stricter date: declare before starting, and in every case inside the fifteen days of L.1. On a sale or closure, article 42 bis gives ten days to notify the tax office and file the profit return. [2024 amending law, pages 15 to 16](https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf).
 
 ## Two documents with different conditions
 
@@ -88,9 +88,10 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Law 25-020/AU, Finance Law 2026, tax section (arts. 14 to 18), scan pages 9 to 16 | https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf | 2026-11-01 |
-| Law 24-013/AU, Amending Finance Law 2024, tax section (arts. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
+| Law 24-013/AU, Amending Finance Law 2024, tax section (art. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
 | Law 24-016/AU, Finance Law 2025, articles 1 to 25, scan, OCR read; no CGI or LPF change found beyond art. 20 | https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf | 2026-11-01 |
 | Code general des impots, 2023 edition, background only | https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf | 2026-11-01 |
+
 Not yet confirmed: the Amending Finance Law 2025 (Law 25-019/AU) could not be opened (official link returned 404), so any tax change in it is unverified. The Finance Law 2024 was not re-read in this refresh. The official tax authority site could not be reached. No consolidated 2026 code was found.
 
 <!-- openaccountants-cta-block -->
