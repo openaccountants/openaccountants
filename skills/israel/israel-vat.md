@@ -25,7 +25,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Country | Israel (מדינת ישראל) |
 | Tax | Ma'am (מס ערך מוסף: Value Added Tax) |
 | Currency | ILS (Israeli New Shekel: ₪) |
-| Standard rate | 18% (from 1 January 2025; was 18%) |
+| Standard rate | 18% (from 1 January 2025; was 17%) |
 | Reduced rate | 0% (exports, specific agricultural produce, tourism services to non-residents) |
 | Exempt | Financial services, insurance, residential rent (if not commercial), medical services |
 | Registration threshold | ILS 122,833 annual turnover (2026; ILS 120,000 in 2024 and 2025); below this: "Osek Patur" (exempt dealer) |
@@ -38,7 +38,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Tax invoices | Heshbonit Mase (חשבונית מס) required for all B2B transactions above ILS 305 |
 | Contributor | Open Accountants Community |
 | Validated by | Pending: requires sign-off by Israel-licensed CPA (רואה חשבון) |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ### Key return form fields
 
