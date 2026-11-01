@@ -3,7 +3,12 @@ jurisdiction: TN
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {}
+partial:
+  SC: "main CNSS rates could not be opened at an official source"
+  PR: "main CNSS rates could not be opened at an official source"
+  VAT: "2026 consolidated code and penalties could not be opened"
+  IT-CORP: "solidarity contribution rate not confirmed"
+  IT-IND: "solidarity contribution rate not confirmed"
 ---
 
 # Tunisia: tax pack

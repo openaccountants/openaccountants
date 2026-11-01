@@ -1,50 +1,55 @@
 ---
 name: tunisia-vat
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Tunisia VAT (TVA) return. Three rates -- 19%/13%/7%. Unique suspension regime (not zero-rating). Droit de consommation interaction. Withholding TVA 25%. ALWAYS read before handling Tunisia TVA work.
-version: 2.0
+description: "Tunisia VAT (TVA) for tax year 2026: 19%, 13% and 7% rates, the TND 400,000 developer cap, suspension versus exemption, State withholding at 25% of the VAT, customer withholding on non-established suppliers, blocked input, monthly return dates, e-invoicing widening and a bank statement pattern library. Use whenever asked to prepare, review or classify transactions for a Tunisian VAT return, or any question on TVA rates or filing. ALWAYS read before handling Tunisia TVA work. Unopened items are marked unverified."
+version: 2.1
 jurisdiction: TN
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Tunisia VAT
+# Tunisia VAT v2.1
 
-## Section 1 -- Quick reference
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-**Quick reference**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Tunisia |
-| Standard rate | 19% |
-| Intermediate rate | 13% (hotels/tourism, construction materials, legal/accounting) |
-| Reduced rate | 7% (basic foodstuffs, pharmaceuticals, agricultural equipment, IT, low-voltage electricity) |
-| Suspension regime | Distinct from zero-rating (exporters with attestation) |
-| Filing portal | https://www.impots.finances.gov.tn |
-| Authority | Direction Generale des Impots (DGI) |
-| Currency | TND |
-| Filing frequency | Monthly (>= TND 1M) or Quarterly |
-| Deadline | 15th paper / 28th electronic of following month |
-| Registration | TND 100K goods / 50K services |
-| Withholding TVA | 25% of TVA amount |
-| Primary legislation | Code de la TVA (as amended) |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+Those making taxable supplies in Tunisia, those who invoice VAT, and those who opt in (Code TVA art. 2). The code sets no general TND 100,000 goods or 50,000 services registration threshold; the old figures were not found. The TND 100,000 in art. 2 concerns retail traders reselling goods. Flat-tax payers under Code IRPP-IS art. 44 bis may opt in.
 
-## Section 2 -- Required inputs and refusal catalogue
+Out of scope for escalation: offshore companies (R-TN-1).
 
-**Minimum viable** -- bank statement. Acceptable from BIAT (Banque Internationale Arabe de Tunisie), BNA (Banque Nationale Agricole), Amen Bank, STB, BT, ATB, or any Tunisian bank.
+## Rates, bands and thresholds
 
-- **R-TN-1 -- Offshore company** — Offshore entities have specific regime. Escalate.  _(R-TN-1)_
+| Item | Amount | Tax year | Conditions | Official URL |
+|---|---|---|---|---|
+| Standard rate | 19% | 2026 | Everything not at another rate. Art. 7 | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf |
+| Reduced rate | 7% | 2026 | Table B: includes transport, lodging and catering services. Check the exact line | same |
+| Intermediate rate | 13% | 2026 | Listed petroleum products; domestic low-voltage electricity above 300 kWh a month. Art. 7(3), LF 2025 art. 31 | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf |
+| New homes by developers | 7% up to TND 400,000 excl. VAT | 2026 | To individuals or public developers; Table B no. 31. The 13% line is repealed, so above the cap the 19% default applies. LF 2025 art. 64 | same |
+| Lithium battery inputs | 7% | 2026 | Listed non-local inputs. LF 2026 art. 46 | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf |
+| State withholding | 25% of the VAT | 2026 | Payments of TND 1,000 or more incl. VAT by State, local bodies, public entities; phone, water, power exempt. Art. 19 bis | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf |
+| Non-established supplier | Customer withholds all VAT | 2026 | Art. 19 | same |
+| Cash purchase block | TND 5,000 excl. VAT | 2026 | No deduction if paid in cash. Art. 10 | same |
+| Late filing | unverified: 1% a month, min TND 50, old file | 2026 | Tax Procedures Code not opened | unverified |
+| Late payment | unverified: 0.75% a month, old file | 2026 | same | unverified |
 
-## Section 3 -- Supplier pattern library
+Hotels at 13% and legal or accounting services at 13% in the old file are wrong against art. 7: lodging is in Table B and professional services take the default rate. Exempt lines include bread, flours and pasta (Table A no. 41) and insurance under the single tax; finance, education and medical exemptions are in Table A and must be checked line by line.
 
-**Supplier pattern library**
+## The base
+
+Taxable amount includes the price and charges (art. 6). Excise (droit de consommation) sits in the VAT base.
+
+No deduction (art. 10): passenger cars not used as the trade itself, their hire and running costs; supplies from flat-tax payers; cash payments of TND 5,000 or more; payments to privileged-tax jurisdictions.
+
+Suspension is not a zero rate: certain buyers acquire without VAT on an attestation. Do not sell under suspension without seeing it. Art. 11 opens the regime to those whose exports pass 50% of turnover; the 80% test in the old file is not in the text read. LF 2026 adds suspension for listed bodies and updates art. 13 bis (arts. 16, 17, 19, 33, 44, 86).
+
+Credit refund: exports, suspension sales and withheld VAT from a monthly return (art. 15). Mixed supplies use a prorata; the rule that suspension turnover counts in the numerator comes from the old file.
+
+### Supplier patterns
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
@@ -55,97 +60,75 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | DGI | EXCLUDE | Tax payment |
 | DOUANE | Check for import TVA |  |
 | CNSS, CNRPS | EXCLUDE | Social security |
-| STEG | Domestic (7% low-voltage / 19% commercial) | Electricity |
-| SONEDE | Domestic 7% or 19% | Water |
+| STEG | 7% or 13% domestic low voltage by consumption, otherwise check | Electricity |
+| SONEDE | Check rate | Water |
 | TUNISIE TELECOM, OOREDOO TN, ORANGE TN | Domestic 19% | Telecoms |
 | GOOGLE, MICROSOFT, AWS | Autoliquidation 19% | Non-resident |
 
-## Section 4 -- Worked examples
+## Deadlines and filing
 
-### Example 1 -- Hotel at 13%
+Monthly return, no quarterly option in art. 18: within 15 days for individuals, 28 days for legal persons, with a nil return if nothing is due. The DGI calendar for June 2026 showed 15 June for individuals and 22 June for legal persons on online filing, so check that month's calendar. Occasional sellers file in 48 hours. E-invoicing now also covers service supplies listed by the decree under art. 18 II ter (LF 2026 art. 53).
 
-Hotel room TND 200/night. TVA at 13%. Output TVA = TND 26.
+Steps: 1. Join online filing with the adhesion form at the tax office. 2. Get an ANCE certificate. 3. Complete the monthly return (form mensuelle 2026) on jibaya.tn and pay. The old file's line map (output 1 to 13, input 14 to 21, net 22 to 25) was not matched to the 2026 form.
 
-### Example 2 -- Product subject to droit de consommation
+## Penalties and interest
 
-Cosmetics CIF TND 100K. DC at 25% = TND 25K. TVA base = TND 125K. TVA at 19% = TND 23,750.
+See the two unverified rows above. Keep invoices with the supplier's tax number.
 
-### Example 3 -- Withholding TVA
+## Cross-border points
 
-Ministry pays supplier. Invoice TND 50K + TVA 9.5K. Withholding 25% of 9.5K = TND 2,375. Supplier claims credit Line 24.
+A foreign supplier with no Tunisian establishment: the customer withholds the VAT (art. 19). Such as SaaS bought in from Google, Microsoft or AWS at 19%. The supplier may instead declare and deduct (art. 19(2)). Whether the customer deducts this VAT follows art. 9. Exports are exempt (Table A).
 
-## Section 5 -- Classification rules
+## Two worked examples that recompute
 
-- **Standard rate** — 19%
-- **Intermediate rate** — 13% (hotels/tourism, certain construction, legal/accounting)
-- **Reduced rate** — 7% (basic foodstuffs, pharmaceuticals, agricultural equipment, IT, buses for employee transport, low-voltage domestic electricity)
-- **2025 Finance Law -- real estate developers tiered rate** — Real estate developers tiered: 7% <= TND 400K, 19% > TND 400K  _(2025 Finance Law)_
-- **Suspension regime** — NOT zero-rating. Exporters (>= 80% export) with attestation de suspension buy without TVA. Supplier must verify attestation.
-- **Exempt categories** — Exempt: financial, education, medical, bread/cereals.
+Simple: ministry pays TND 50,000 plus VAT 9,500. Withholding 25% = 2,375; the supplier credits it.
 
-## Section 6 -- TVA return form
+```oa-check
+name: State withholding
+inputs:
+  net: 50000
+steps:
+  - vat: net * 0.19
+  - withheld: vat * 0.25
+expected:
+  vat: 9500.00
+  withheld: 2375.00
+```
 
-Output: Lines 1-13 (19% sales, 13% sales, 7% sales, suspension, exempt, exports, total, TVA 19%, TVA 13%, TVA 7%, autoliquidation, adjustments, total brute).
+Decision: home at TND 380,000 or TND 450,000. Below the cap VAT is 26,600 at 7%; above, 85,500 at 19%. The cap decides the rate for the whole price.
 
-Input: Lines 14-21 (goods for resale, materials, services, capital goods, imports, autoliquidation input, exclusions, total deductible).
+```oa-check
+name: Developer sale either side of the cap
+inputs:
+  low: 380000
+  high: 450000
+steps:
+  - vat_low: low * 0.07
+  - vat_high: high * 0.19
+  - gap: vat_high - vat_low
+expected:
+  gap: 58900.00
+```
 
-Net: Lines 22-25 (due, credit reporte, retenue a la source, payable/credit).
+## Ask the client first
 
-## Section 7 -- Reverse charge and droit de consommation
+1. Individual or company, and taxable or flat-tax?
+2. What goods or services, for Table A or B?
+3. Any exports or suspension sales, with attestations?
+4. Foreign suppliers without a Tunisian establishment?
+5. Sales to the State or public bodies?
 
-- **Reverse charge -- non-resident services** — Non-resident services: self-assess at applicable rate (usually 19%). Net zero.  _(Code TVA Art. 19)_
-- **Droit de consommation and TVA base** — Droit de consommation: excise on specific goods. TVA is calculated on price INCLUDING DC. DC is part of TVA base.
+## Sources
 
-## Section 8 -- Deductibility and blocked input
+| Source | URL | Read on |
+|---|---|---|
+| Code de la TVA, 2023 French edition, archived copy of the DGI file; arts. 2, 7, 10, 15, 18, 19, 19 bis and Tables A and B read. The 2026 edition PDF could not be opened | https://web.archive.org/web/20250906073223/https://jibaya.tn/wp-content/uploads/2024/02/Code-de-la-taxe-sur-la-valeur-ajoutee-2023_compressed.pdf | 2026-11-01 |
+| Loi n° 2024-48 du 9 decembre 2024, loi de finances 2025, archived copy of the DGI file; arts. 31, 64 and the job-loss fund article read | https://web.archive.org/web/20251205000847/https://jibaya.tn/wp-content/uploads/2024/12/Loi2024_48.pdf | 2026-11-01 |
+| Loi n° 2025-17 du 12 decembre 2025, loi de finances 2026, JORT n° 148, archived copy of the DGI file; tax articles read | https://web.archive.org/web/20261005010006/https://jibaya.tn/wp-content/uploads/2025/12/Loi2025_17-1.pdf | 2026-11-01 |
+| DGI professional space with tax calendar, archived 8 June 2026; calendar entries read | https://web.archive.org/web/20260608115736/https://jibaya.tn/ar/espace-professionnel/ | 2026-11-01 |
+| DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
-- **Blocked input items** — Blocked: vehicles < 9 seats, staff accommodation, entertainment/gifts, fuel for blocked vehicles, personal use, invoices without matricule fiscal.  _(Code TVA Art. 10-12)_
-- **Prorata calculation** — Prorata: includes suspension turnover in numerator. Annual recalculation.
-
-## Section 9 -- Filing, deadlines, and penalties
-
-- **Filing deadlines** — Monthly 15th (paper) / 28th (electronic). Quarterly for small.
-- **Late filing penalty** — 1%/month (min TND 50)
-- **Late payment penalty** — 0.75%/month
-
-## Section 10 -- Edge cases, test suite, and escalation
-
-- **EC1 -- SaaS** — Autoliquidation 19%. Net zero.
-- **EC2 -- Exporter with suspension** — Sales under suspension. Input fully recoverable.
-- **EC3 -- Hotel 13%** — Not 19%.
-- **EC4 -- Pharmaceuticals 7%** — Pharmaceuticals 7%.
-- **EC5 -- DC + TVA** — TVA on price INCLUDING DC.
-- **EC6 -- Withholding TVA** — 25% of TVA. Supplier claims credit.
-- **EC7 -- Suspension certificate purchase** — Invoice without TVA. Verify attestation.
-- **EC8 -- Mixed supply prorata** — Include suspension in numerator.
-
-TND 100K sale. TVA TND 19K (19%).
-
-Hotel TND 50K. TVA TND 6.5K (13%).
-
-Pharmacy TND 30K. TVA TND 2.1K (7%).
-
-French services TND 20K. Output 3.8K, input 3.8K. Net zero.
-
-Export TND 500K. Zero.
-
-Vehicle blocked. TND 50K + 9.5K TVA. Input = 0.
-
-Out of scope: IS 15%, PAYE 0%-35%, CNSS/CNRPS.
-
-### Prohibitions
-
-- NEVER confuse suspension with exemption
-- NEVER apply wrong rate -- three rates exist
-- NEVER forget DC in TVA base
-- NEVER issue suspension invoice without verifying attestation
-- NEVER accept invoices without matricule fiscal
-- NEVER compute numbers -- engine handles arithmetic
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+Not yet confirmed: Late penalties. Suspension 80% test. Prorata numerator. Table A and B 2026 changes, since the 2026 and 2025 consolidated PDFs would not open and LF 2024 was not read. General rule behind the 22nd in the DGI calendar. Excise example with 25% rate. Return line numbers. Supplier pattern treatments of telecom and water rates, carried from the old file.
 
 <!-- openaccountants-cta-block -->
 
