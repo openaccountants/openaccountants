@@ -1,13 +1,13 @@
 ---
 name: gr-payroll
 description: "Running Greek payroll for 2026 (calendar year): what an employer does each month and each year. Covers hiring in ERGANI II, the APD return and payment to e-EFKA, monthly gross-to-net (employee e-EFKA contributions of 13.37% under KPK 101, then income tax withholding on pay annualised under decision ΠΟΛ 1104/2014 (monthly net pay times 14, tax divided by 14) using the 2026 scale of 9% to 44%, the youth and child rates and the art. 16 tax reduction), the Christmas and Easter bonuses, the 2026 minimum wage (EUR 880, then EUR 920 from 1 April 2026), overtime, night and Sunday premiums, the 20% withholding on extra pay, the monthly withholding return (ΦΜΥ) and its deadline, the digital work card and the fines. Trigger phrases: Greek payroll, μισθοδοσία, ΦΜΥ, παρακράτηση φόρου μισθωτών, gross to net Greece, δώρο Χριστουγέννων, κατώτατος μισθός 2026, ΕΡΓΑΝΗ, ψηφιακή κάρτα. Out of scope: contribution rates by branch (gr-employee-contributions), the employee's annual return (gr-income-tax), self-employed EFKA (gr-efka), postings and 5C (gr-cross-border)."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -246,8 +246,6 @@ expected:
 | Ministry of Labour interpretive circular 25291/23-09-2026 on the digital work card | https://ypergasias.gov.gr/wp-content/uploads/2026/09/90%CE%91%CE%9F46%CE%9D%CE%9B%CE%94%CE%93-%CE%9379.pdf | 2026-10-23 |
 
 Not yet confirmed: how tax is withheld on the Christmas bonus, Easter bonus and holiday allowance payrolls (ΠΟΛ 1104/2014 sets only the tax on each monthly salary); the statutory amount of the holiday allowance (επίδομα αδείας) under labour law, which the examples take as half a month's salary because ΠΟΛ 1104/2014 treats the three payments as two salaries; the payment dates of the Christmas and Easter bonuses; whether the employer must still give each employee an annual pay and withholding certificate in 2026, and its deadline (set by an annual AADE decision we have not found); the 2026 APD periods for the bonuses; whether ERGANI II hiring must be declared before the first day of work; the amounts of the Labour Inspectorate fines (undeclared work, digital work card); the late-payment interest rate under ΚΦΔ art. 52 (set by ministerial decision); how age is measured for the under-30 rates in monthly withholding; how employer registration with e-EFKA is done for a first-time employer.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

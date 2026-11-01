@@ -1,10 +1,10 @@
 ---
 name: ro-cas-cass
 description: "Use this skill for the Romanian pension contribution (CAS) and health contribution (CASS) owed by the self-employed for tax year 2026: PFA, II, IF members and liberal professions, on net income in the real system or on an income norm. Covers CAS at 25% on a base the taxpayer chooses, at least 12 or 24 minimum wages, once income reaches 12 minimum wages; CASS at 10% of actual net income with a floor of 6 and a cap of 72 minimum wages; the RON 4,050 minimum wage behind every 2026 threshold; exemptions; opt-ins; the income tax deduction; the Declarația unică filed and paid by 25 May 2027; and penalties. Trigger phrases: CAS PFA 2026, CASS PFA 2026, contribuții sociale PFA, plafon 72 salarii minime. Out of scope: ro-income-tax (the 10% tax), ro-payroll-social (employee and employer contributions), ro-employee-income-tax (CASS on rent and investments), ro-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: RO
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -183,8 +183,6 @@ expected:
 | ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
 
 Not yet confirmed: whether the 2026 state budget law grants an early-payment discount on 2026 CAS and CASS paid in 2027 (art. 151(14), art. 174(17)). The amending texts of Legea 239/2025 and Legea 141/2025 were not read; the 72-wage cap is taken from the consolidated Fiscal Code and the ANAF summary. Which professional pension systems count for the art. 150(1) exemption was not checked.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

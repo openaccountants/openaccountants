@@ -2,19 +2,19 @@
 name: fo-payroll-contributions
 description: >
   Prepare 2026 payroll evidence and contribution checks for ordinary A-income. Separate worker deductions, employer charges and contractual pension funding. Shipping, posted workers, age exceptions and B-income require separate treatment. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
-version: 0.1
+version: 0.2
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands payroll and mandatory contributions v0.1
+# Faroe Islands payroll and mandatory contributions v0.2
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -61,8 +61,6 @@ Reconcile the contract's pension funding, age limits, benefits, holiday-pay basi
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

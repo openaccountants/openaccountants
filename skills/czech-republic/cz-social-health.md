@@ -1,10 +1,10 @@
 ---
 name: cz-social-health
 description: "Czech social security and public health insurance for the self-employed (OSVČ) for tax year 2026. Covers the pension and employment-policy rate of 29.2% on 55% of profit, health insurance of 13.5% on 50% of profit, voluntary sickness insurance at 2.7%, the 2026 minimum bases (main activity cut from 40% to 35% of the average wage by Act 90/2026 Coll., back to January, with a refund claim by 31 December 2026), minimum advances of CZK 5,005 social and CZK 3,306 health, the CZK 117,521 secondary-activity threshold, the CZK 2,350,416 social cap, the flat-rate tax regime (paušální daň) bands, due dates, the annual přehled, penalties and EU rules. Trigger on: OSVČ zálohy, sociální pojištění OSVČ, zdravotní pojištění OSVČ, přehled OSSZ, vedlejší činnost, paušální daň. Out of scope: employee and employer contributions (cz-employee-contributions), income tax (cz-income-tax), residence and treaties (cz-cross-border)."
-version: 2.1
+version: 2.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -320,8 +320,6 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the 2026 přehled due dates (3 May, 3 June and 2 August 2027 are computed from the one-month rule; ČSSZ has not yet published them); the 2027 minimum advances (computed from Government Regulation 177/2026 Coll.; ČSSZ and VZP have not yet published them); whether ČSSZ and VZP in practice keep the penalty rate fixed for the whole default as Regulation 351/2013 § 2(1) reads (VZP lists its daily rates by period without saying).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

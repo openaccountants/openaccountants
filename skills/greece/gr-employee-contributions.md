@@ -1,10 +1,10 @@
 ---
 name: gr-employee-contributions
 description: "Greek social security contributions (e-EFKA) on employees' pay for 2026: what the employer withholds and what it pays on top. Covers the standard private-sector rates (code KPK 101: employee 13.37%, employer 21.79%, total 35.16%) by branch (main pension, health in kind and in cash, supplementary pension ETEAEP or TEKA, unemployment and other DYPA branches), the 2026 monthly insurable earnings ceiling of EUR 7,761.94, the heavy and unhealthy occupations (BAE) surcharge, occupational risk, bonuses and holiday allowance, the exempt overtime, night and Sunday premiums, the EUR 20 children's camps contribution, the monthly APD return and payment deadlines, board members of an AE, and late-payment interest (ECB refinancing rate plus 8 points). Trigger on: EFKA employer contributions, ασφαλιστικές εισφορές μισθωτών, ΑΠΔ, KPK 101, πλαφόν 2026, εργοδοτική εισφορά, Greek payroll social security. Out of scope: gr-efka (self-employed), gr-income-tax (employee income tax), gr-cross-border (residence, A1 postings, 5C)."
-version: 0.2
+version: 0.3
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -209,8 +209,6 @@ expected:
 | Ministry of Labour, TEKA start (first insured from 1.1.2022; 3% plus 3% from June 2022) | https://ypergasias.gov.gr/xekinise-i-leitourgia-tou-neou-tameiou-epikourikis-kefalaiopoiitikis-asfalisis-teka/ | 2026-10-23 |
 
 Not yet confirmed: the ECB refinancing rate in force on the payment date, which sets the actual percentage of late-payment interest; any fine for a late APD (art. 7(1)(b) ν. 2972/2001, named in circular 24/2023, was not read); the KPK and branch rates for board fees of an AE (circulars 4/2017, 40/2022 and 31/2024 were not read); the 2026 APD periods for the Christmas and Easter bonuses (general document Ε40/535/28-07-2015 was not fetched); the statutory size of the Christmas bonus, Easter bonus and holiday allowance (labour law, not fetched); whether a cut from 1 April 2027 becomes law (press reports from October 2026 describe a Ministry of Finance bill cutting the employee unemployment contribution from 1.20% to 0.70%; no official text was found and it does not affect 2026); the contribution reductions listed on the Ministry of Labour page (50% of the employee share for a year after childbirth, art. 141(2) ν. 3655/2008; the employer reduction for employees under 25) were not checked for 2026.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,10 +1,10 @@
 ---
 name: italy-payroll
 description: "Italian payroll for employees, tax year 2026: how the employer, as sostituto d'imposta, withholds IRPEF each month and settles it at the conguaglio. Covers the 2026 bands (23%, 33%, 43%), the employment detrazione, the cuneo fiscale (tax-free sum up to EUR 20,000, extra detrazione to EUR 40,000), the 2026 substitute taxes on pay rises, shift pay and productivity bonuses, regional and municipal surcharges, employee INPS (9.19% plus 1% above EUR 56,224, massimale EUR 122,295), TFR accrual and revaluation, tredicesima and quattordicesima, fringe benefits (EUR 1,000 or 2,000 with children; meal vouchers), F24 by the 16th, UniEmens, CU, 770, penalties and leave pay. Trigger on: busta paga, cedolino, ritenute IRPEF dipendenti, conguaglio, CU, 770, F24 1001, TFR, tredicesima, fringe benefit. Out of scope, see: it-employer-contributions, it-irpef-employees, it-income-tax, it-inps-contributions, it-impatriati, it-cross-border."
-version: 1.1
+version: 1.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -323,8 +323,6 @@ Not yet confirmed:
 - **Moved, not dropped:** employer INPS rates by sector, the Fondo di Tesoreria and its 2026 headcount rule, INAIL autoliquidazione and the 2026 hiring reliefs are in `it-employer-contributions`. Family detrazioni and the 19% detrazioni (including the EUR 440 cut above EUR 200,000) are in `it-irpef-employees` and `it-income-tax`. The Modello Redditi PF deadline is in `it-income-tax`.
 
 > Contributed by OpenAccountants.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

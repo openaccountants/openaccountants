@@ -1,23 +1,23 @@
 ---
 name: eg-bookkeeping
 description: Use this skill whenever asked about Egyptian record-keeping, bookkeeping, or the mandatory ETA digital systems for self-employed people, sole proprietors (منشأة فردية), and professionals (أصحاب المهن الحرة). Trigger on phrases like "Egypt e-invoicing", "الفاتورة الإلكترونية", "ETA e-receipt", "الإيصال الإلكتروني", "bookkeeping Egypt", "records sole proprietor Egypt", "EGS item coding", "digital signature ETA", "what books must I keep in Egypt", or any request to set up, review, or explain the books and records an Egyptian self-employed taxpayer must keep. ALWAYS read this skill before touching any Egyptian record-keeping or e-invoicing/e-receipt work.
-version: 1.0
+version: 1.1
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-10-16
+last_updated: 2026-11-01
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
-category: international
+category: bookkeeping
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
 # Egypt record-keeping, e-invoices and e-receipts for the self-employed (2026)
 
-This covers tax year 2026 and the law as it stands on 25 September 2026. It explains the books, records and mandatory digital systems that an Egyptian self-employed person, sole proprietor (منشأة فردية) or professional (صاحب مهنة حرة) must keep. The anchor is the Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية) at eta.gov.eg, and the laws it publishes there:
+This covers tax year 2026 and the law as it stands on 1 November 2026. It explains the books, records and mandatory digital systems that an Egyptian self-employed person, sole proprietor (منشأة فردية) or professional (صاحب مهنة حرة) must keep. The anchor is the Egyptian Tax Authority (ETA, مصلحة الضرائب المصرية) at eta.gov.eg, and the laws it publishes there:
 
 - the Unified Tax Procedures Law No. 206 of 2020 (قانون الإجراءات الضريبية الموحد), as amended in 2025 and 2026;
 - the Income Tax Law No. 91 of 2005;
@@ -49,6 +49,16 @@ Reply to the user in their own language (English or Arabic).
 - Are you operating on a temporary tax card while completing set-up and licensing?
 - Is any year under examination, in dispute, or subject to an ETA notice?
 
+## Rates and thresholds
+
+| Item | Amount | Tax year | Conditions | Official URL |
+|---|---|---|---|---|
+| Law 6 turnover tax, turnover under EGP 500,000 | 0.4% of turnover | 2026 | Business asked for Law 6; turnover not above EGP 20 million (Art. 10) | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf |
+| Law 6, EGP 500,000 to under EGP 2,000,000 | 0.5% | 2026 | same conditions | same |
+| Law 6, EGP 2,000,000 to under EGP 3,000,000 | 0.75% | 2026 | same conditions | same |
+| Law 6, EGP 3,000,000 to under EGP 10,000,000 | 1% | 2026 | same conditions | same |
+| Law 6, EGP 10,000,000 to EGP 20,000,000 | 1.5% | 2026 | same conditions | same |
+
 ## The method, step by step
 
 1. **Decide which record-keeping regime applies.** The default is regular books. Law No. 150 of 2026 replaced the first paragraph of Article 38 of the Unified Tax Procedures Law. Every taxpayer carrying on a commercial, industrial, craft or professional activity must now keep the regular accounting records and books required by the Commercial Law No. 17 of 1999, manually or electronically ([Law No. 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf)). The law applies from the day after its publication on 28 July 2026. The exception is a business taxed under Law No. 6 of 2025, which is exempt from the Unified Tax Procedures Law books. It must keep the simplified records set by Minister of Finance decision instead ([Law No. 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf), Article 13).
@@ -72,10 +82,10 @@ Reply to the user in their own language (English or Arabic).
 
 - **What it is.** At each sale to a final consumer, the seller issues an e-receipt from a registered point of sale (POS) or ERP and transmits it to the ETA. The receipt must carry a QR code; the ETA FAQ says the executive regulations of the Unified Tax Procedures Law require this ([ETA e-receipt FAQ](https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf), edition 24, 31 January 2024).
 - **No signature on receipts.** An e-receipt does not need an electronic signature (same FAQ). E-invoices do.
-- **Timing.** The rule is real-time transmission. The ETA FAQ says the system currently accepts receipts up to 24 hours after issue, that the taxpayer bears the consequences of late sending, and that later receipts go through a late-submission request on the portal. The window is set administratively and can change. Confirm it in the current ETA e-receipt guidance before promising a client a window. The legacy "72 hours" figure has no ETA source.
-- **Big-ticket sales.** Under the FAQ, a consumer receipt whose value exceeds EGP 150 thousand must carry the buyer's national ID number ("currently", so check for changes) ([ETA e-receipt FAQ](https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf)).
+- **Timing.** The rule is real-time transmission. The ETA FAQ says the system currently accepts receipts up to 24 hours after issue, that the taxpayer bears the consequences of late sending, and that later receipts go through a late-submission request on the portal. The ETA sets this window administratively.
+- **Big-ticket sales.** Under the FAQ, a consumer receipt whose value exceeds EGP 150 thousand must carry the buyer's national ID number (the FAQ says "currently") ([ETA e-receipt FAQ](https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf)).
 - **POS devices.** Buy POS devices only from ETA-approved suppliers (list on the [e-receipt services page](https://www.eta.gov.eg/ar/content/e-receipt-services)). An ERP can be registered as a virtual POS where the taxpayer has a single branch or outlet.
-- **Phases.** The mandate has been extended group by group by ETA decisions. Earlier versions of this skill quoted specific 2025 decision numbers, dates and a lowered turnover threshold. None of these could be confirmed from a readable ETA document, so they are not repeated here (check). The only reliable test is whether the taxpayer is named on the [e-receipt inquiry](https://www.eta.gov.eg/ar/ereceipt-inquiry) list, or holds a decision addressed to them.
+- **Phases.** The mandate has been extended group by group by ETA decisions. The test is whether the taxpayer is named on the [e-receipt inquiry](https://www.eta.gov.eg/ar/ereceipt-inquiry) list, or holds a decision addressed to them.
 
 ### Which system applies
 
@@ -88,7 +98,7 @@ Reply to the user in their own language (English or Arabic).
 ### Books and records under the regular regime
 
 - **Who.** From 29 July 2026, every taxpayer carrying on a commercial, industrial, craft or professional activity must keep regular accounting records and books under the Commercial Law, manually or electronically ([Law No. 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf), Article 1). Businesses in the Law 6 regime are the exception. Before this change, Article 38 applied the duty only to a taxpayer whose annual turnover exceeded five hundred thousand pounds. That condition is gone. A sole proprietor or professional below it who kept no regular books must start now.
-- **Electronic accounts.** The paragraphs of Article 38 that were not replaced still require every taxpayer to keep electronic accounts showing annual revenue and costs, under rules set by Minister of Finance decision. They also let the Minister set simplified book-keeping rules for classes of taxpayers ([ETA parallel-text guide][vg], Article 38). Which MoF decisions currently set those rules could not be confirmed from a readable ETA document (check).
+- **Electronic accounts.** The paragraphs of Article 38 that were not replaced still require every taxpayer to keep electronic accounts showing annual revenue and costs, under rules set by Minister of Finance decision. They also let the Minister set simplified book-keeping rules for classes of taxpayers ([ETA parallel-text guide][vg], Article 38). For Law 6 businesses the simplified set is in MoF Decision No. 420 of 2025 (below).
 - **Typical set for a self-employed person:**
   - cash book and bank book (دفتر الصندوق / البنك);
   - sales or fee register listing every e-invoice and e-receipt issued;
@@ -102,14 +112,13 @@ Reply to the user in their own language (English or Arabic).
 
 ### Retention: five years
 
-- Keep records, books and documents, including copies of invoices, for five years following the tax period for which the return is filed ([ETA parallel-text guide][vg], Unified Tax Procedures Law Article 38). The legacy suggestion that some advisers cite seven years has no official basis and is dropped.
+- Keep records, books and documents, including copies of invoices, for five years following the tax period for which the return is filed ([Law No. 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf), Article 38). The seven-year period some advisers cite is not in the law.
 - Keep electronic documents in electronic form: the signed XML or JSON, the ETA validation (UUID), and any PDF view.
 - Practice point (not a statutory rule): while a period is under examination, appeal or dispute, keep its records until it is closed, even if the five years have run.
 
 ### Documentation and deductions
 
 - **VAT.** Purchases from a supplier must be documented by an e-invoice, or input tax on them will not be allowed in the return. A buyer holding only an e-receipt (with no buyer name) cannot deduct. The supplier must issue an e-invoice for such a sale ([ETA e-receipt FAQ](https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf)).
-- **Income tax costs.** Earlier versions stated that costs without an e-invoice are not deductible for income tax. No readable ETA document confirming this rule was found (check). As a conservative default, treat undocumented costs as at risk on examination, and tell the client you are doing so.
 
 ### The Law No. 6 of 2025 simplified regime
 
@@ -117,13 +126,7 @@ Law No. 6 of 2025 was issued on 12 February 2025 and applies from the first day 
 
 **Income tax rates on turnover (Article 10).** The rate applies to the whole turnover. The band edges follow the law's wording: "less than" or "reaches ... and less than". Tax year 2026 rates are unchanged from 2025.
 
-| Annual turnover | Rate |
-| --- | --- |
-| Less than EGP 500,000 | 0.4% ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)) |
-| EGP 500,000 or more, and less than EGP 2,000,000 | 0.5% |
-| EGP 2,000,000 or more, and less than EGP 3,000,000 | 0.75% |
-| EGP 3,000,000 or more, and less than EGP 10,000,000 | 1% |
-| EGP 10,000,000 or more, and not more than EGP 20 million | 1.5% |
+The bands are in the rates table above.
 
 The ETA Services Guide prints the top band as ending at 25,000,000. Law No. 6 of 2025 itself says twenty million, and the same guide's overshoot example uses twenty million, so follow the law.
 
@@ -132,7 +135,7 @@ The ETA Services Guide prints the top band as ending at 25,000,000. Law No. 6 of
 - **How turnover is measured** (Article 2). For a business registered on 1 March 2025, turnover comes from the last final assessment, or failing that the last return. For a business registered later, it comes from its return (the expected first-year turnover when applying). Data from the e-invoice or e-receipt systems can also be used.
 - **Two conditions** (Article 3). The business must file its returns on time. It must also join the ETA's electronic systems, including the e-invoice or e-receipt system under the phase decisions, and actually issue the invoices or receipts. A business outside these systems loses the regime.
 - **Exclusions** (Article 4). The regime does not apply to a professional consultancy that earns at least 90% of its annual turnover from consultancy for one or two persons (the Minister may exempt some activities). Nor does it apply to anyone who enters the regime improperly, for example by splitting an existing business without an economic reason. The ETA bears the burden of proving that.
-- **Lock-in** (Article 5). A business cannot leave the regime until five years have passed from the day after its request. After that it applies on form 11/1 to return to the normal Income Tax Law basis ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
+- **Lock-in** (Article 5). A business cannot leave the regime until five years have passed from the day after its request. After that it applies on form 1/11 (طلبات), on the ETA website, to return to the normal Income Tax Law basis ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
 - **One-time overshoot** (Article 10). If turnover exceeds EGP 20 million in any year within five years of the request, by no more than 20% and only once, the business stays in the regime at the 1.5% rate. The ETA Services Guide puts the margin at EGP 4,000,000. A larger overshoot, or a second one, ends the regime from the following year ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
 - **Reliefs** (Articles 7 to 9 and 11). The regime exempts the business from:
   - stamp duty and the state resource-development fee;
@@ -140,19 +143,18 @@ The ETA Services Guide prints the top band as ending at 25,000,000. Law No. 6 of
   - tax on capital gains from disposing of fixed assets and production equipment;
   - tax on profit distributions;
   - the withholding and advance-payment systems, in both directions.
-- **Returns** (Article 12). An annual income tax return on its own form (form 20), filed on the normal dates: for an individual, 1 January to 31 March. A VAT return every three months, within the month after the quarter ends, with payment. Payroll tax obligations are limited to the annual settlement return, with payment. The ETA examines returns only after five years from the request, for both income tax and VAT ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
-- **Books** (Article 13). The business is exempt from the Unified Tax Procedures Law books, records and documents. It must follow the simplified systems for records, books, documents and procedures set by Minister of Finance decision. Even so, keep a revenue record, an expense record, bank statements and every e-invoice and e-receipt for the five-year retention period. They are the evidence of turnover.
-- **How to apply.** Submit request form 1/10 through the ETA electronic tax system (merged tax offices) or the ETA e-services portal (other offices). No fee is charged. Enterprises already under the tax provisions of the SME Development Law No. 152 of 2020 moved into the regime automatically ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), service 2/18).
+- **Returns** (Article 12). An annual income tax return on its own form (form 20 إقرارات, MoF Decision No. 420 of 2025, Article 2), filed on the normal dates: for an individual, 1 January to 31 March. A VAT return every three months, within the month after the quarter ends, with payment. Payroll tax obligations are limited to the annual settlement return, with payment. The ETA examines returns only after five years from the request, for both income tax and VAT ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
+- **Books** (Article 13). The business is exempt from the Unified Tax Procedures Law books, records and documents. It must follow the simplified systems set by Minister of Finance decision. [MoF Decision No. 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf), Article 3, lists them. Records: fixed-asset register (سجل الأصول الثابتة) and raw-materials stock register (سجل مخزون الخامات). Books: daily sales book (دفتر يومية المبيعات), daily purchases book (دفتر يومية المشتريات) and tax summary book (دفتر ملخص الضريبة). Documents: the e-invoice or e-receipt, as the case requires. They may be kept in electronic or paper form. Keep bank statements with them: they are the evidence of turnover.
+- **How to apply.** Submit request form 10/1 (طلبات) on the ETA website ([MoF Decision No. 420 of 2025](https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf), Article 1): through the ETA electronic tax system (merged tax offices) or the ETA e-services portal (other offices). No fee is charged. Enterprises already under the tax provisions of the SME Development Law No. 152 of 2020 moved into the regime automatically ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf), service 2/18).
 
 ### Penalties and limits
 
-- **Books and documents.** The Unified Tax Procedures Law punishes, with a fine of not less than twenty thousand and not more than one hundred thousand Egyptian pounds, anyone who breaches specified articles. These include Article 37 (first and fourth paragraphs, on issuing invoices and receipts, including electronically) and Article 38 (first, second and third paragraphs, on books and records). A separate fine of up to fifty thousand pounds applies for failing to keep paper or electronic books and records for the legal period (Article 71, as reproduced in the [ETA parallel-text guide][vg]). This is the 2021 consolidated text. Confirm that no later amendment changed the amounts before quoting them to a client (check).
+- **Books and documents.** [Law No. 206 of 2020](https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf), Article 71: a fine of not less than EGP 20,000 and not more than EGP 100,000 for breaching Articles 24, 28, 35 (paragraphs 1 and 2), 37 (paragraphs 1 and 4) and 38 (paragraphs 1, 2 and 3). A fine of not more than EGP 50,000 for failing to keep paper or electronic books and records for the legal period.
 - **Cap on late charges.** Since February 2025, a late-payment charge or additional tax cannot exceed the amount of the tax on which it is charged. The Minister may also settle offences that involve no unpaid tax, for a payment within statutory limits ([Law No. 7 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf), new Articles 45 bis and 75 bis).
-- Earlier versions mentioned new "tiered penalties for 2026" for late e-document submission. No ETA source was found, so the claim is not repeated (check).
 
 ### Temporary tax card (new in 2026)
 
-A new Article 27 bis lets the ETA grant a temporary tax card for eight months, so a taxpayer can finish setting up and licensing the activity. A temporary tax card **cannot** be used to issue e-receipts or e-invoices ([Law No. 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf), Article 2). A client on a temporary card who needs to invoice must get the permanent card and register on the systems first.
+A new Article 27 bis lets the ETA grant a temporary tax card for eight months, so a taxpayer can finish setting up and licensing the activity. A temporary tax card **cannot** be used to issue e-receipts or e-invoices ([Law No. 150 of 2026](https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf), Article 2). Any amount due to the ETA during the card's life must be paid from the date the card expires. The ETA head issues the card's form by decision. The [correction notice](https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf) of 8 August 2026 fixes one word in this article and changes no rule. A client on a temporary card who needs to invoice must get the permanent card and register on the systems first.
 
 ## Boundaries and exceptions
 
@@ -179,6 +181,17 @@ Figures are for tax year 2026. Turnover amounts are illustrations.
 - Documents: e-invoices (B2B) with a digital signature and EGS codes for the services. Permanent portal use is allowed because the developer issues no more than 200 invoices a month and has no accounting system.
 - Records: the simplified records, plus every e-invoice, purchase e-invoice and bank statement, kept for five years.
 
+```oa-check
+name: Law 6 tax, turnover EGP 1,200,000
+inputs:
+  turnover: 1200000
+  rate: 0.005
+steps:
+  - tax: turnover * rate
+expected:
+  tax: 6000.00
+```
+
 **Case 2: beauty salon, consumers only, regular regime.** The salon is named on the ETA e-receipt list.
 
 - It connects an approved POS, codes its services, and prints a QR code on each receipt.
@@ -198,6 +211,24 @@ Figures are for tax year 2026. Turnover amounts are illustrations.
 - The ceiling for staying in is EGP 20 million plus the ETA's EGP 4,000,000 margin, which is EGP 24,000,000 ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
 - The trader stays in at 1.5%: 23,500,000 x 1.5% = EGP 352,500 ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)).
 - A second overshoot in the five years, or any overshoot above EGP 24,000,000, ends the regime from the next year ([ETA Services Guide](https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf)). Regular books are then required.
+
+**Case 4a: decision, Law 6 or regular books.** A trader with turnover of EGP 6,000,000 has computed EGP 45,000 of tax on actual profit under `eg-income-tax` (the amount is an illustration). Law 6 tax is 6,000,000 x 1% = EGP 60,000, so the normal basis costs EGP 15,000 less a year. Over the five-year Law 6 lock-in that is EGP 75,000. If the normal-basis tax exceeds EGP 60,000 a year, Law 6 wins on tax alone. Set the difference against the cost of regular books.
+
+```oa-check
+name: Decision, Law 6 against normal basis over five years
+inputs:
+  turnover: 6000000
+  rate: 0.01
+  normal_tax: 45000
+  years: 5
+steps:
+  - law6_tax: turnover * rate
+  - yearly_gap: law6_tax - normal_tax
+  - five_year_gap: yearly_gap * years
+expected:
+  law6_tax: 60000.00
+  five_year_gap: 75000.00
+```
 
 **Case 5: consultant with one main client.** A management consultant earns 95% of turnover from one company. The exclusion test is in [Law No. 6 of 2025](https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf), Article 4.
 
@@ -229,10 +260,9 @@ Hand off to a qualified Egyptian accountant (محاسب قانوني) or tax adv
 - [ ] Identified the documents: e-invoice for B2B/B2G, e-receipt for B2C, or both.
 - [ ] Checked the ETA e-invoice and e-receipt inquiry lists for the taxpayer's phase, or told the client to.
 - [ ] Covered the digital signature (e-invoices only), item coding (GS1 or EGS), and the portal-vs-integration test (200 invoices a month and no accounting system).
-- [ ] Stated the VAT rule that purchases need an e-invoice, and flagged income tax cost documentation as a conservative default.
+- [ ] Stated the VAT rule that purchases need an e-invoice.
 - [ ] Stated five-year retention from the tax period whose return was filed. Electronic documents are kept electronically.
 - [ ] For Law 6: checked the turnover band, the 90% consultancy exclusion, the five-year lock, and the one-time 20% overshoot.
-- [ ] Flagged every point marked "check" in this skill as unconfirmed.
 - [ ] Replied in the user's language.
 
 ## Prohibitions
@@ -243,6 +273,25 @@ Hand off to a qualified Egyptian accountant (محاسب قانوني) or tax adv
 - Do not invent GS1 or EGS codes. EGS codes need ETA approval.
 - Do not obtain signature certificates, set up an HSM or register on the ETA portal on the user's behalf.
 - Do not present this as filed advice. A qualified human must review it before anyone acts.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law No. 150 of 2026 (Arts 1 to 3), gazette, rendered pages read | https://eta.gov.eg/sites/default/files/2026-08/law.no_.150.of_.2026.pdf | 2026-11-01 |
+| Correction notice for Laws 149, 150, 151 of 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
+| Unified Tax Procedures Law No. 206 of 2020, Arts 31, 38, 69 to 71, gazette text | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law No. 6 of 2025, Arts 7 to 10, 12, 13 | https://eta.gov.eg/sites/default/files/2025-02/law_no.6.of_.2025.pdf | 2026-11-01 |
+| MoF Decision No. 420 of 2025, Arts 1 to 4 | https://eta.gov.eg/sites/default/files/2025-12/mof.decision.no_.420.of_.2025.pdf | 2026-11-01 |
+| Law No. 7 of 2025, Arts 45 bis, 75 bis | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-09-25, previous version; eta.gov.eg refused script connections on 2026-11-01 |
+| ETA Services Guide, 2nd edition | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-09-25, previous version; not reopened on 2026-11-01 |
+| ETA e-receipt FAQ, edition 24 | https://eta.gov.eg/sites/default/files/2024-02/ERECEIPT-FAQ-V24-31-1-2024.pdf | 2026-09-25, previous version; not reopened on 2026-11-01 |
+
+Not yet confirmed: whether an amendment after 2020 other than Law 150 of 2026 changed the Article 71 fine amounts; the ETA decision setting the temporary tax card form; 2025 and 2026 e-invoice and e-receipt phase decisions, dates and any lowered turnover threshold; "tiered penalties for 2026" for late e-documents; the claim that costs without an e-invoice are not deductible for income tax; the current e-receipt submission window beyond the 2024 FAQ (a 72-hour figure has no ETA source).
+
+## Disclaimer
+
+This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon. The most up-to-date version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).
 
 [vg]: https://eta.gov.eg/sites/default/files/2021-04/%D8%AF%D9%84%D9%8A%D9%84%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%82%D9%8A%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%B6%D8%A7%D9%81%D8%A9%20%D9%88%D8%A7%D9%84%D9%86%D8%B5%20%D8%A7%D9%84%D9%85%D9%82%D8%A7%D8%A8%D9%84%20%D8%A3%D9%88%D8%A7%D9%84%D9%85%D9%83%D9%85%D9%84%20%D9%85%D9%86%20%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%A5%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA%20%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF.pdf
 

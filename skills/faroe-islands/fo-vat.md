@@ -2,19 +2,19 @@
 name: fo-vat
 description: >
   Prepare ordinary Faroese MVG registration and quarterly VAT working papers in 2026. Exempt sectors, detailed place-of-supply rules, real property and import valuation require additional classification. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.
-version: 0.2
+version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Faroe Islands VAT registration and returns v0.2
+# Faroe Islands VAT registration and returns v0.3
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -65,8 +65,6 @@ Complete the exempt-sector rules, input restrictions, invoice requirements and i
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

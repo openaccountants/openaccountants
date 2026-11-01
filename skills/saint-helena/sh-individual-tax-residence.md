@@ -2,13 +2,13 @@
 name: sh-individual-tax-residence
 description: >
   Saint Helena island individual income-tax residence reference checked in 2026. Explains the three alternative statutory residence tests, exact day-count boundaries, employment-contract route, arrival and departure provisions, and the Commissioner’s limited travel discretion. Separates tax residence from immigration and from the source of income. Identifies discrepancies between the published residency leaflet and the official law, including the non-resident employment allowance. Use with documented travel dates, contracts and residence evidence. Does not cover Ascension or Tristan da Cunha, treaty residence, immigration permission, or a complete later-amendment audit. Independent accountant review remains pending.
-version: 0.1
+version: 0.2
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -53,8 +53,6 @@ Suggested evidence: travel ledger, accommodation and normal-abode facts, signed 
 ## Verification boundary
 
 Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

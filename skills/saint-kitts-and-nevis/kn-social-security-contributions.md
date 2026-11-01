@@ -2,13 +2,13 @@
 name: kn-social-security-contributions
 description: >
   Saint Kitts and Nevis social security contribution reference checked for 2026. Covers the ordinary employee and employer shares, monthly insurable earnings ceiling, pay classifications, age-transition weeks and monthly reporting. Uses the official revised Social Security Act and contribution regulations together with the Board’s administrative guidance. Includes worked monthly calculations and distinguishes social insurance from the uncapped housing levy and severance contribution. Use after covered employment and the relevant payroll period have been established. A complete post-revision amendment audit and independent accountant review remain outstanding. This draft does not determine benefit entitlement or self-employed assessments.
-version: 0.1
+version: 0.2
 jurisdiction: KN
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -53,8 +53,6 @@ The [Board employer page](https://socialsecurity.kn/employers-2/) requires emplo
 ## Limits
 
 Resolve multiple employment, partial periods, unpaid leave, special coverage, late penalties and self-employed or voluntary assessments separately. This Guide does not calculate benefits or establish eligibility for a pension. A complete post-2017 legislative amendment review and independent accountant review remain required before merge.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
