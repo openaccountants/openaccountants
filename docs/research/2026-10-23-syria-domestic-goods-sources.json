@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-10-23",
+  "guide": "skills/international/syria/sy-consumption-tax-domestic-goods.md",
+  "guide_sha256": "d4cd8c8eccbb3ea91f7363fb5d753e3caf8c20ede8dd3fd1fd6f69df59661d79",
+  "status": "local draft; independent source review completed with two findings corrected and rechecked; not published or attested",
+  "source": {
+    "url": "https://docs.mof.gov.sy/consumption_tax_on_imports_table.pdf",
+    "sha256": "951a25b73f88fab55300644515586ac38689b2b2074d5b6136c81c470683f37a",
+    "authority_link": "https://sana.sy/economy/2515968/",
+    "locators": {
+      "special_domestic_goods": "III, pp4-6; Table3 pp233-234",
+      "other_domestic_goods": "IV, pp9-10; Table4 p235",
+      "registration_returns": "V, pp10-11",
+      "exemptions_currency_records": "XIII-XV, pp16-18",
+      "denomination_supersession": "XXII/XXIV, pp19-20"
+    }
+  },
+  "checks": {
+    "schema": "1 Guide; zero errors/warnings",
+    "examples": "3 blocks; zero failures/missing"
+  },
+  "remaining": [
+    "jewellery and precious-metal collection",
+    "vehicles and component credits",
+    "full import classification",
+    "retrospective import treatment",
+    "forms/electronic-linkage instructions",
+    "underlying amendment chain and later measures",
+    "territorial implementation"
+  ],
+  "review": {
+    "reviewer": "review_gi_minimum",
+    "date": "2026-10-23",
+    "findings": "two translation qualifications corrected; delta confirmed",
+    "record": "2026-10-23-syria-domestic-goods-review.md"
+  }
+}
