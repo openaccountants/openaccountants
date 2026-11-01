@@ -1,0 +1,91 @@
+{
+  "read_date": "2026-11-01",
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "sources": {
+    "dgi-cgi.html": {
+      "url": "https://www.dgi.gouv.ml/CGI/",
+      "sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "bytes": 5882035,
+      "route": "Direct valid-TLS Python HTTPS; cached once; HTML had isolated invalid UTF-8 bytes outside used passages; decoded with replacement for text extraction. Exact used quotes verified against extracted relevant passages.",
+      "actual_read_scope": "CGI arts. 1–13 including 12-A/B and embedded orders; arts. 23–51, 60–61, 70–86-A, 94–98; relevant surrounding regime/depreciation text; arts. 159–163, 183–185-D; arts. 186–229, exemption selected classes and reduced-list computer/solar entries, neighbouring tax point/input provisions; LPF 23–39,57–67,93–98,110–122,275–285,297–302,322–329,410–421; housing appendix Loi85-35 arts1–2/Decret183 art14. No whole-code read claim."
+    },
+    "rsu-inps.html": {
+      "url": "https://rsu.gouv.ml/portail/partenaires/inps/",
+      "sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "bytes": 190828,
+      "route": "Direct valid-TLS Python HTTPS; cached once. Undated government authority page. Unrelated injected casino link and old wage-floor amount excluded.",
+      "actual_read_scope": "Complete employer/worker registration, branch rates, contribution base, responsibility and declaration/payment sections, not authority for operative2026 chain."
+    },
+    "impot-com-38.pdf": {
+      "url": "https://www.dgi.gouv.ml/wp-content/uploads/2025/12/IMPOT_COM-38.pdf",
+      "sha256": "d073e2c9e5c4c6a5e3bf32e3951f0a0fc5ab957934cc63420cf686917ebff934",
+      "bytes": 14941742,
+      "route": "Direct valid-TLS Python HTTPS; cached once; pdftotext -layout.",
+      "actual_read_scope": "Complete reply1 on printed p36 of August2025 issue, concerning unchanged article10 in2024 and erroneous tax-expenditure table. No whole-issue read claim; no2025/2026 continuation inference."
+    },
+    "canam-decret-10-578.pdf": {
+      "url": "https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf",
+      "sha256": "35656849ee8701b352501cb8078925d26fd48b350579bc5cfbced23b9f115835",
+      "bytes": 100047,
+      "route": "Python homepage direct TLS-chain verification failed; normal IAB homepage and contribution accordion read, then documents-utiles links inspected. curl normal valid-TLS fetch of exact observed link succeeded without any bypass. Cached once; French Tesseract OCR and page rendering.",
+      "actual_read_scope": "Original decree26Oct2010 arts1–8 in full; page2 visually checked rates and former disease contribution. No later amendment chain."
+    },
+    "canam-decret-10-601.pdf": {
+      "url": "https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "bytes": 2812364,
+      "route": "Exact observed official CANAM link; curl normal valid TLS, cached once; complete French OCR, relevant rendered pages inspected.",
+      "actual_read_scope": "Original decree18Nov2010 arts1–46 read in full. Rendered pages2,3,6 checked for arts5–8,13–14,25–30. Later ministerial rate/calendar/penalty orders unresolved."
+    },
+    "jo-2016-19.pdf": {
+      "url": "https://sgg-mali.ml/JO/2016/mali-jo-2016-19.pdf",
+      "sha256": "d8adf8ecbb9c6b17d309d045368e8be4cb427daa99e86b3ff985a2a8d570b3ea",
+      "bytes": 313321,
+      "route": "Direct curl normal valid TLS, cached once; pdftotext -layout.",
+      "actual_read_scope": "Complete Loi2016-010 of19April2016 articleunique and bandtable, gazette723–724/PDF3–4. It modifies arts9–10; no repeal of12-A/B inferred."
+    },
+    "jo-2025-33-5.pdf": {
+      "url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf",
+      "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+      "bytes": 1445924,
+      "route": "Existing merged-batch cache reused, not downloaded again.",
+      "actual_read_scope": "Finance-law article46 and neighbours43–49 reread for shared currentness gate; AnnexU absent/unread, not deemed unchanged."
+    }
+  },
+  "preserved_prior_evidence_git_blobs": {
+    "evidence/ledgers/mali-old-topics.md": "c12c0aa947683cb6aa44dc4b1b1857649aa28dab",
+    "evidence/ledgers/mali-repair-1/writer-repair.json": "46044d576e1eac8d6397373bf8f08b830feddcab",
+    "evidence/ledgers/mali-review-20261101-closure/changed-validation.txt": "dac893f8ece26dce684ab99a877aedbde482c660",
+    "evidence/ledgers/mali-review-20261101-closure/closure-observed.json": "fe92dd75123e791feb47cf3e32f493c219b166f6",
+    "evidence/ledgers/mali-review-20261101-closure/closure.md": "c0d27d453801f778fad10f5b93355b4421c17ed1",
+    "evidence/ledgers/mali-review-20261101-closure/examples.txt": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+    "evidence/ledgers/mali-review-20261101-closure/repair-diff-check.txt": "f779db68cc92f6ef910a6b243870dcf5d36fbc15",
+    "evidence/ledgers/mali-review-20261101-closure/skill-checks.txt": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+    "evidence/ledgers/mali-review-20261101/candidate-observed.json": "ca5178e549704878ac1669278fb5944d871f2f0e",
+    "evidence/ledgers/mali-review-20261101/changed-validation.txt": "dac893f8ece26dce684ab99a877aedbde482c660",
+    "evidence/ledgers/mali-review-20261101/coverage-mali.json": "f09c266954f171ca5dced2147fd58b37603d55f8",
+    "evidence/ledgers/mali-review-20261101/diff-check.txt": "5b01a473439774b43da6320a36c8d34059c0e845",
+    "evidence/ledgers/mali-review-20261101/examples.txt": "165482e3d0ce10e55cb49c2ede2edfc6fe1c94cf",
+    "evidence/ledgers/mali-review-20261101/full-no-index-validation.txt": "03a966c81d2d44b36ca2f44d06c6c21fa34d3e6f",
+    "evidence/ledgers/mali-review-20261101/review.md": "e5676dbe9b204bdc1351a7c2ce00090f8904d746",
+    "evidence/ledgers/mali-review-20261101/skill-checks.txt": "593a20c6270b35add85c5529bcbb9e04a79ec9d5",
+    "evidence/ledgers/ml-solidarity-contribution.md": "5fade82c9a481995cdff3e4cb7f7e7b2a2eb6172"
+  },
+  "draft_rule_counts": {
+    "ml-corporate-income-tax": 34,
+    "ml-payroll-social": 30,
+    "ml-vat-gst": 31,
+    "ml-income-tax": 24
+  },
+  "description_word_counts": {
+    "ml-corporate-income-tax": 106,
+    "ml-payroll-social": 107,
+    "ml-vat-gst": 105,
+    "ml-income-tax": 121
+  },
+  "source_rule_quote_checks": {
+    "rows": 119,
+    "exact_quote_substring_test": "All row quotations matched whitespace-normalised cached primary/authority text; source interpretation is a separate independent-review job.",
+    "shared_currentness_row": 1
+  }
+}
