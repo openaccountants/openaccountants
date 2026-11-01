@@ -1,0 +1,423 @@
+{
+  "phase": "Writer repairs GI-R1/GI-R2; independent bounded closure pending",
+  "pinned_review_head": "42697c1cfdd04d72a47abe6bd702dd7cccb84c69",
+  "calculation_files": 20,
+  "calculation_blocks": 51,
+  "calculation_failures": 0,
+  "original_main_controls_exact": 47,
+  "current_main_controls": 48,
+  "supplementary_controls": 3,
+  "guide_schemas": 18,
+  "schema_errors": 0,
+  "schema_warning_groups": 2,
+  "inherited_warning": "Untouched minimum-tax Guide tax_year2024",
+  "strict_metadata_guides_against_main": 18,
+  "strict_metadata_errors": 0,
+  "historical_gibraltar_research_files_exact": 121,
+  "untouched_guides_exact": 16,
+  "ledgers": [
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/tp-full-ledger-match.json",
+      "rows": 59,
+      "quotes": 123,
+      "quotes_exact_to_reviewed_candidate": true,
+      "old_map_paragraphs": 45,
+      "full_old_paragraphs_exact": 44
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/foreign-exit-ledger-match.json",
+      "rows": 33,
+      "quotes": 73,
+      "quotes_exact_to_reviewed_candidate": true,
+      "old_map_paragraphs": 25,
+      "full_old_paragraphs_exact": 24
+    }
+  ],
+  "files": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "sha256": "0039cdae38d1b04fa67b8ec5cc21a9169c202d5e0d750ed443055a5dce9503c3",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0,
+      "h2": [
+        "Next work and acceptance evidence"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0,
+      "h2": [
+        "Scope and obligation",
+        "What the books and supporting file must contain",
+        "Retention clock and enquiry exceptions",
+        "Additional company-law duties",
+        "Practical monthly and year-end controls",
+        "Consequences and review boundaries"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 1,
+      "h2": [
+        "Scope",
+        "Keep books and select the accounting basis",
+        "Establish size before claiming a filing concession",
+        "Audit: company size and tax-return evidence differ",
+        "Accounts filing and annual return are separate",
+        "Filing fees and lateness",
+        "Auditor appointment and authority",
+        "Correcting defective accounts or reports",
+        "Changing the accounting reference period",
+        "Group accounts: identify control before testing exemptions",
+        "Working paper and review"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0,
+      "h2": [
+        "Scope and legal basis",
+        "Subscribers and constitution",
+        "Assemble the application",
+        "Office, director and secretary",
+        "Compliance declaration and fees",
+        "Beneficial-ownership reporting after incorporation",
+        "Completion and handover"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8,
+      "h2": [
+        "Scope",
+        "Charge and rates",
+        "Company residence and the source of profits",
+        "UK treaty: permanent establishments and business profits",
+        "Interest, royalties and overseas movable-property income",
+        "Establish the tax accounting periods",
+        "Filing requirements",
+        "From accounting profit to deductible expenses",
+        "Bad debts, entertainment and gifts",
+        "Capital allowances: equipment purchases and pools",
+        "Disposals and special capital-allowance cases",
+        "Buildings: separate eligibility and historical schemes",
+        "Trading stock when a trade ends",
+        "Trade losses: eligibility and continuity",
+        "Designated persons: 50% loss limit and exceptions",
+        "Losses transferred in a group restructure",
+        "Payments on account and balancing payment",
+        "Applying to reduce instalments",
+        "Computation and examples",
+        "Failure and boundary checks",
+        "Sources",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0,
+      "h2": [
+        "Scope and applicability",
+        "What counts as an electronic invoice",
+        "Standard editions and syntax migration",
+        "Required information",
+        "Preparation and submission workflow",
+        "Recomputable invoice example",
+        "Electronic originals and retained records",
+        "Data, retention and remaining checks",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Who this applies to",
+        "Election affecting ordinary income-tax charges",
+        "Rates and computation rules",
+        "Worked example 1: domestic formula and currency",
+        "Filing, notification and payment calendar",
+        "Records, assessments and repayment",
+        "Worked example 2: late-payment surcharge",
+        "Intake and remaining verification",
+        "Self-checks",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 1,
+      "h2": [
+        "Scope and first checks",
+        "Enquiries and assessment limits are different clocks",
+        "Information notices: response and appeal",
+        "Establish service before calculating the appeal period",
+        "Written appeal and grounds",
+        "Payment postponement requires a separate application",
+        "Tribunal handling and outcome",
+        "Supreme Court: case stated on a point of law",
+        "Non-residents and statutory representatives",
+        "Tax provision during liquidation",
+        "Overpayment claims: a separate six-year period",
+        "Treaty MAP: a separate submission and collection decision",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8,
+      "h2": [
+        "Who this applies to",
+        "Residence and filing intake",
+        "Rates, bands and thresholds",
+        "The base: allowances are system-specific",
+        "Deadlines and filing",
+        "Approved pensions and imported-pension exceptions",
+        "Death during the tax year",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources and remaining verification",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8,
+      "h2": [
+        "Scope",
+        "Registration and reporting",
+        "PAYE deduction and certificate rules",
+        "Selecting the PAYE table and handling irregular payments",
+        "Monthly PAYE reporting, payment and default",
+        "Payroll records and late production/P8 penalties",
+        "Monthly ordinary contribution table",
+        "Contribution liability: wages, absence and employer cost",
+        "Partial months and shared contribution weeks",
+        "Small-employer contribution credit",
+        "Self-employed contribution administration",
+        "Self-employed forms, payment route and annual reconciliation",
+        "Contribution assessments and appeals",
+        "Employer contribution records and cessation",
+        "Contributions paid in error",
+        "UK\u2013Gibraltar social-security coverage",
+        "Questions requiring an operational ruling",
+        "Computation",
+        "Executable calculation controls",
+        "Evidence and exclusions",
+        "Self-checks and output",
+        "Disclaimer",
+        "Sources",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 3,
+      "h2": [
+        "Unresolved amendment status",
+        "Statutory calculation",
+        "Worked boundary checks",
+        "Qualifying first- and second-time buyers",
+        "Specified affordable-housing transactions",
+        "Principal mortgage security",
+        "Stamping, responsibility and late instruments",
+        "Challenging a stamp-duty assessment",
+        "Working-paper evidence",
+        "Scope remaining",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Who this applies to",
+        "Thresholds and scope",
+        "The base and exclusions",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources and limits",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Agreement, territory and dates",
+        "Individuals: domestic residence first",
+        "Entities: four independent Spanish-residence triggers",
+        "Conditional worked checks",
+        "Relief, information exchange and disputes",
+        "Evidence, open work and output",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0,
+      "h2": [
+        "Scope",
+        "Approved qualifying training",
+        "Architects' fees and planning costs",
+        "Historic start-up credit: entry window closed",
+        "Claim preparation and remaining verification"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 3,
+      "h2": [
+        "Scope",
+        "Enacted scope and commencement",
+        "Identify the chargeable event",
+        "Calculate the taxable amount",
+        "Rate selection and period controls",
+        "Recomputable examples",
+        "Exemptions and export refunds",
+        "Working-paper procedure",
+        "Published customs declaration route",
+        "Transitional goods: distinguish movement, certificates and storage",
+        "Transitional business relief: eligibility",
+        "Compute the deduction, separately from tax saved",
+        "Compliance, competing assistance and claim evidence",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2,
+      "h2": [
+        "Establish residence, period and income type",
+        "Ordinary employment and all three short-stay conditions",
+        "Directors, performers and transport crew",
+        "Government service and the Regiment exception",
+        "Pensions: source taxation and a conflicting summary",
+        "Offshore employment has a separate rule",
+        "Student and apprentice maintenance",
+        "Double-tax relief: Gibraltar-resident example",
+        "Filing workflow and unresolved operations",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 4,
+      "h2": [
+        "Scope and effective periods",
+        "Establish entitlement before using a rate",
+        "Dividends: ordinary exemption and property distributions",
+        "Interest: recipient or payer qualification is essential",
+        "Royalties: a different eligibility list",
+        "Source, permanent establishments and related parties",
+        "Worked examples and boundary checks",
+        "Capital gains: classify the disposed asset before allocating tax",
+        "Anti-abuse and dispute procedure",
+        "Company UK-interest relief: published application evidence",
+        "Relief file and remaining verification",
+        "Sources"
+      ]
+    }
+  ],
+  "substantive_content_removed": 0,
+  "old_status_or_limit_paragraphs_updated": 2,
+  "country_complete": false,
+  "ordinary_partial_domains": 7,
+  "published": false
+}

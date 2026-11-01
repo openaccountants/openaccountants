@@ -1,0 +1,15 @@
+{
+  "head": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "input_manifest_sha256": "44fc12c6ce8ecf8649418fae272da6d9808b768233199833fc241043aae09718",
+  "verdict": "CHANGES_REQUIRED_FOUR_NARROW_FINDINGS",
+  "source_bindings_checked": 184,
+  "semantic_condition_findings": 2,
+  "ledger_completeness_findings": 1,
+  "standard_format_findings": 1,
+  "examples_passed": 22,
+  "historical_files_byte_exact": 669,
+  "previous_tax_methods_CTA_preserved": 10,
+  "all_inputs_unchanged_at_verdict": true,
+  "country_complete": false,
+  "professional_attestation": false
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/faroe-ordinary-completion/ledger-review-final/checks.json",
+    "sha256": "220de98a461e876cc69d80ab277861951d27efd1da678a43140cb4b6c849b965",
+    "bytes": 3260
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/faroe-ordinary-completion/ledger-review-final/ordinary-gap-disposition.json",
+    "sha256": "5891733c2722c10c47aca9403f52098b6e65f6d3bbfc4550ae555648511748ba",
+    "bytes": 9394
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/faroe-ordinary-completion/ledger-review-final/ordinary-gap-disposition.md",
+    "sha256": "f655d805e730a9634d999a9dac6da16f690c5fe2cf359932edd0c29f3bc568c0",
+    "bytes": 2712
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/faroe-ordinary-completion/ledger-review-final/packaging-check.py",
+    "sha256": "a755993d8ec561b5e163b541de5dd0577fc913be2d74646136f03d4949dcd19c",
+    "bytes": 6940
+  },
+  {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/faroe-ordinary-completion/ledger-review-final/report.md",
+    "sha256": "ca8078a8f4cc1e38c5ea80b82994a0a7a2973c0352a1161bc7cd9d47abdd3d69",
+    "bytes": 4415
+  }
+]

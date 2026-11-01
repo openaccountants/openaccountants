@@ -1,0 +1,6651 @@
+{
+ "generated_on": "2026-10-28",
+ "guides": 2285,
+ "jurisdictions": 266,
+ "pseudo_codes": {
+  "EU-27": 3,
+  "GENERAL": 7,
+  "INTL": 8,
+  "GLOBAL": 86,
+  "EU/EEA/CH/UK": 1,
+  "EG-AE": 1,
+  "EG-SA": 1,
+  "EU": 2,
+  "NONE": 5
+ },
+ "complete": 36,
+ "with_readme": 36,
+ "reviewed_skills": 33,
+ "rows": [
+  {
+   "code": "AG",
+   "name": "Antigua And Barbuda",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/antigua-and-barbuda",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "SC"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AR",
+   "name": "Argentina",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/argentina",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC"
+   ],
+   "missing": [
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AW",
+   "name": "Aruba",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/aruba",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BB",
+   "name": "Barbados",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/barbados",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BL",
+   "name": "Saint Barthelemy",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-barthelemy",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "SC"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BM",
+   "name": "Bermuda",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/bermuda",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BO",
+   "name": "Bolivia",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/bolivia",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/brazil",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR",
+    "TP"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BS",
+   "name": "Bahamas",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/bahamas",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BZ",
+   "name": "Belize",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/belize",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CA",
+   "name": "Canada",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/canada",
+   "skills": 51,
+   "reviewed": 1,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": true
+  },
+  {
+   "code": "CA-AB",
+   "name": "Alberta (Canada)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/alberta",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "XB"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CL",
+   "name": "Chile",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/chile",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC"
+   ],
+   "missing": [
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CO",
+   "name": "Colombia",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/colombia",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC"
+   ],
+   "missing": [
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CR",
+   "name": "Costa Rica",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/costa-rica",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CU",
+   "name": "Cuba",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/cuba",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CW",
+   "name": "Cura Ao",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/cura-ao",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "DM",
+   "name": "Dominica",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/dominica",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "DO",
+   "name": "Dominican Republic",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/dominican-republic",
+   "skills": 22,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": true
+  },
+  {
+   "code": "EC",
+   "name": "Ecuador",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/ecuador",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GD",
+   "name": "Grenada",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/grenada",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT",
+    "SC"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GF",
+   "name": "French Guiana",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/french-guiana",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GL",
+   "name": "Greenland",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/greenland",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "PR"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GP",
+   "name": "Guadeloupe",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/guadeloupe",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GT",
+   "name": "Guatemala",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/guatemala",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GY",
+   "name": "Guyana",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/guyana",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "HN",
+   "name": "Honduras",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/honduras",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "HT",
+   "name": "Haiti",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/haiti",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "JM",
+   "name": "Jamaica",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/jamaica",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KN",
+   "name": "Saint Kitts And Nevis",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-kitts-and-nevis",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "SC"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KY",
+   "name": "Cayman Islands",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/cayman-islands",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LC",
+   "name": "Saint Lucia",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-lucia",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MF",
+   "name": "Saint Martin",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-martin",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-CORP"
+   ],
+   "missing": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MQ",
+   "name": "Martinique",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/martinique",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MS",
+   "name": "Montserrat",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/montserrat",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "VAT",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/mexico",
+   "skills": 12,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "TP"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NI",
+   "name": "Nicaragua",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/nicaragua",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PA",
+   "name": "Panama",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/panama",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PE",
+   "name": "Peru",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/peru",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PM",
+   "name": "Saint Pierre And Miquelon",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-pierre-and-miquelon",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/puerto-rico",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PY",
+   "name": "Paraguay",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/paraguay",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SR",
+   "name": "Suriname",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/suriname",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SV",
+   "name": "El Salvador",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/el-salvador",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SX",
+   "name": "Sint Maarten",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/sint-maarten",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TC",
+   "name": "Turks And Caicos",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/turks-and-caicos",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TT",
+   "name": "Trinidad And Tobago",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/trinidad-and-tobago",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US",
+   "name": "United States (federal)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/federal",
+   "skills": 103,
+   "reviewed": 21,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "SC",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-AK",
+   "name": "Alaska (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ak",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-AL",
+   "name": "Alabama (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/al",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-AR",
+   "name": "Arkansas (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ar",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-AZ",
+   "name": "Arizona (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/az",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-CA",
+   "name": "California (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ca",
+   "skills": 16,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-CO",
+   "name": "Colorado (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/co",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-CT",
+   "name": "Connecticut (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ct",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-DC",
+   "name": "District of Columbia (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/dc",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-DE",
+   "name": "Delaware (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/de",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-FL",
+   "name": "Florida (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/fl",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT"
+   ],
+   "missing": [
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-GA",
+   "name": "Georgia (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ga",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-HI",
+   "name": "Hawaii (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/hi",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-IA",
+   "name": "Iowa (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ia",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-ID",
+   "name": "Idaho (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/id",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-IL",
+   "name": "Illinois (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/il",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-IN",
+   "name": "Indiana (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/in",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-KS",
+   "name": "Kansas (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ks",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-KY",
+   "name": "Kentucky (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ky",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-LA",
+   "name": "Louisiana (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/la",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MA",
+   "name": "Massachusetts (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ma",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MD",
+   "name": "Maryland (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/md",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-ME",
+   "name": "Maine (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/me",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MI",
+   "name": "Michigan (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/mi",
+   "skills": 9,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MN",
+   "name": "Minnesota (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/mn",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MO",
+   "name": "Missouri (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/mo",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MS",
+   "name": "Mississippi (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ms",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-MT",
+   "name": "Montana (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/mt",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NC",
+   "name": "North Carolina (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nc",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-ND",
+   "name": "North Dakota (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nd",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NE",
+   "name": "Nebraska (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ne",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NH",
+   "name": "New Hampshire (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nh",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NJ",
+   "name": "New Jersey (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nj",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NM",
+   "name": "New Mexico (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nm",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NV",
+   "name": "Nevada (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/nv",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NY",
+   "name": "New York (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ny",
+   "skills": 16,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "SC",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-NY-NYC",
+   "name": "New York City (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ny-nyc",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-OH",
+   "name": "Ohio (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/oh",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-OK",
+   "name": "Oklahoma (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ok",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-OR",
+   "name": "Oregon (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/or",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-PA",
+   "name": "Pennsylvania (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/pa",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-RI",
+   "name": "Rhode Island (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ri",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-SC",
+   "name": "South Carolina (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/sc",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-SD",
+   "name": "South Dakota (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/sd",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-TN",
+   "name": "Tennessee (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/tn",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-TX",
+   "name": "Texas (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/orchestrator",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-UT",
+   "name": "Utah (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/ut",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-VA",
+   "name": "Virginia (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/va",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-VT",
+   "name": "Vermont (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/vt",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-WA",
+   "name": "Washington (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/wa",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-WI",
+   "name": "Wisconsin (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/wi",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-WV",
+   "name": "West Virginia (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/wv",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "US-WY",
+   "name": "Wyoming (US)",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/us-states/wy",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "UY",
+   "name": "Uruguay",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/uruguay",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VC",
+   "name": "Saint Vincent And The Grenadines",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/saint-vincent-and-the-grenadines",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT"
+   ],
+   "missing": [
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VE",
+   "name": "Venezuela",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/venezuela",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VG",
+   "name": "British Virgin Islands",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/british-virgin-islands",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VI",
+   "name": "Us Virgin Islands",
+   "region": "americas",
+   "owner": "jeff",
+   "dir": "skills/international/us-virgin-islands",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AD",
+   "name": "Andorra",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/andorra",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [
+    "IT-IND"
+   ],
+   "not_applicable": {},
+   "partial": {
+    "IT-IND": "The exact 2026 annual dependent-income minimum-wage benchmark after July's wage change remains unconfirmed; the general family-relief method is supplied."
+   },
+   "has_readme": true,
+   "complete": false
+  },
+  {
+   "code": "AL",
+   "name": "Albania",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/albania",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "AM",
+   "name": "Armenia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/armenia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/austria",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "AZ",
+   "name": "Azerbaijan",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/azerbaijan",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BA",
+   "name": "Bosnia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/bosnia",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BE",
+   "name": "Belgium",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/belgium",
+   "skills": 15,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "BG",
+   "name": "Bulgaria",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/bulgaria",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "BY",
+   "name": "Belarus",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/belarus",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CH",
+   "name": "Switzerland",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/switzerland",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "CY",
+   "name": "Cyprus",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/cyprus",
+   "skills": 9,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [
+    "SC"
+   ],
+   "not_applicable": {},
+   "partial": {
+    "SC": "Self-employed insurable income by occupational category and the quarterly due dates are not yet confirmed from Social Insurance Services; only the actual-earnings basis is covered."
+   },
+   "has_readme": true,
+   "complete": false
+  },
+  {
+   "code": "CZ",
+   "name": "Czech Republic",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/czech-republic",
+   "skills": 13,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/germany",
+   "skills": 31,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "DK",
+   "name": "Denmark",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/denmark",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "EE",
+   "name": "Estonia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/estonia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/spain",
+   "skills": 24,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": true
+  },
+  {
+   "code": "FI",
+   "name": "Finland",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/finland",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "FO",
+   "name": "Faroe Islands",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/faroe-islands",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/france",
+   "skills": 23,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "GB",
+   "name": "Uk",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/uk",
+   "skills": 35,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "GE",
+   "name": "Georgia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/georgia",
+   "skills": 8,
+   "reviewed": 3,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GG",
+   "name": "Guernsey",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/guernsey",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {
+    "VAT": "No domestic general VAT/GST in 2026; current HMRC territorial guidance and Guernsey tax-package evidence are cited below. Customs/excise and foreign VAT obligations remain separate."
+   },
+   "partial": {
+    "IT-IND": "2026 standard-charge implementing amount unresolved between current authority table and consolidated s5B; fractional-period allowance/withdrawal remain unreconciled; statutory surcharge rates/minimum and event method supplied",
+    "IT-CORP": "mixed-rate distribution-credit calculation beyond cited statutory rule remains unreconciled; ordinary residence, business base, loss, qualifying-loan and migration methods are supplied",
+    "SC": "Class 2/3 current-year base, mixed Class 1/2 ceiling, certificates, period/payment and reassessment/refund methods supplied; exact Class 3 lower-limit/deeming interaction, Class 2/3 penny rounding and authority-directed part-year outcomes remain unresolved",
+    "PR": "ordinary ETI/benefit methods supplied; statutory surcharge and contribution notice/review methods supplied; statutory car-day and employee annual \u00a3900 aggregate methods supplied and independently source-reviewed; current employer-specific exemption withholding directions, contribution-interest guidance conflict and prescribed notice-penalty amounts remain unresolved",
+    "TP": "new domestic connected-sale, ordinary records/notice and approved associated-company methods supplied and independently source-reviewed; current general arm\u2019s-length/master-file/local-file scope beyond those verified provisions remains unresolved; dated 2020 absence statement is not proof for 2026",
+    "XB": "UK corridor and domestic residence/non-resident-company/migration screens supplied; statutory domestic relief calculations/claim periods and later-tax adjustments supplied; UK ordinary pension form/certification/change notification and the ordinary PE domestic bridge/registration/return sequence now supplied, independently source-reviewed within the stated limits; Guernsey domestic credit submission/change notification, transaction-specific PE attribution, non-resident-PE registration declaration completion and source-specific exit/disposal methods remain unreconciled"
+   },
+   "has_readme": true,
+   "complete": false
+  },
+  {
+   "code": "GI",
+   "name": "Gibraltar",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/gibraltar",
+   "skills": 18,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {
+    "IT-IND": "Part-year ABS/GIBS eligibility/reference, printed senior/dependant and special-home drafting questions, remaining property/energy and social-insurance deduction authority, credit interactions and future-year authenticated fields remain unresolved",
+    "IT-CORP": "Schedule 10 allocation anomalies, section 16(6) extended-period boundaries and Schedule 3 paragraphs 9(6)/2(1)(o) drafting/publication limits remain unresolved",
+    "VAT": "Customs/payment and Union special-procedure methods now drafted; section 102 export-refund form/deadline, warehousing endpoints, relief extension and case-specific aid/commodity/transition issues remain unresolved",
+    "SC": "Published maximum-in-primary second-job application now drafted; general first-employer/concurrent-job allocation, ordinary missed employee-SI recovery and annual/quarterly self-employed schedule interaction remain unresolved",
+    "PR": "Conflicting official PAYE examples, ordinary missed employee-SI recovery, benefit-threshold wording and pension-definition reference remain unresolved",
+    "TP": "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; ordinary record/notice duties rechecked; distinct local-file submission and specialised reporting scope not established",
+    "XB": "Domestic foreign-tax-relief claim/correction submission; exit payment/return implementation and asset-transfer-definition mismatch; remaining residence/treaty procedure limits remain unverified"
+   },
+   "has_readme": true,
+   "complete": false
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/greece",
+   "skills": 15,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "HR",
+   "name": "Croatia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/croatia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "HU",
+   "name": "Hungary",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/hungary",
+   "skills": 11,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/ireland",
+   "skills": 19,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "IM",
+   "name": "Im",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/im",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IS",
+   "name": "Iceland",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/iceland",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/italy",
+   "skills": 22,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "LI",
+   "name": "Liechtenstein",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/liechtenstein",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LT",
+   "name": "Lithuania",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/lithuania",
+   "skills": 9,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "LU",
+   "name": "Luxembourg",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/luxembourg",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "LV",
+   "name": "Latvia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/latvia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "MC",
+   "name": "Monaco",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/monaco",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "MD",
+   "name": "Moldova",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/moldova",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ME",
+   "name": "Montenegro",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/montenegro",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MK",
+   "name": "North Macedonia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/north-macedonia",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MT",
+   "name": "Malta",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/malta",
+   "skills": 34,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/netherlands",
+   "skills": 30,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "NO",
+   "name": "Norway",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/norway",
+   "skills": 9,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "XB"
+   ],
+   "missing": [
+    "PR",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/poland",
+   "skills": 12,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/portugal",
+   "skills": 18,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "RO",
+   "name": "Romania",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/romania",
+   "skills": 13,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "RS",
+   "name": "Serbia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/serbia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "RU",
+   "name": "Russia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/russia",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SE",
+   "name": "Sweden",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/sweden",
+   "skills": 15,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "SI",
+   "name": "Slovenia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/slovenia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "SJ",
+   "name": "Svalbard",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/svalbard",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/slovakia",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "SM",
+   "name": "San Marino",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/san-marino",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TR",
+   "name": "Turkey",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/turkey",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "UA",
+   "name": "Ukraine",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/ukraine",
+   "skills": 15,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VA",
+   "name": "Vatican City",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/vatican-city",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "XK",
+   "name": "Kosovo",
+   "region": "europe",
+   "owner": "michael",
+   "dir": "skills/international/kosovo",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AE",
+   "name": "Uae",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/uae",
+   "skills": 9,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BH",
+   "name": "Bahrain",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/bahrain",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "EG",
+   "name": "Egypt",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/egypt",
+   "skills": 17,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP"
+   ],
+   "missing": [
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IL",
+   "name": "Israel",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/israel",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IQ",
+   "name": "Iraq",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/iraq",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IR",
+   "name": "Iran",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/iran",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "JO",
+   "name": "Jordan",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/jordan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KW",
+   "name": "Kuwait",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/kuwait",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LB",
+   "name": "Lebanon",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/lebanon",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "OM",
+   "name": "Oman",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/oman",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "QA",
+   "name": "Qatar",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/qatar",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {
+    "VAT": "Qatar has not applied VAT, confirmed by the GTA investor guide on 2026-10-24; the GCC agreement is not a domestic VAT commencement.",
+    "PR": "Salaries, wages, allowances and similar employment income are excluded by ITL promulgation art. 2(3); nonresident business-payment withholding is covered under XB, and social insurance under SC."
+   },
+   "partial": {},
+   "has_readme": true,
+   "complete": true
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia",
+   "region": "middle-east",
+   "owner": "michael",
+   "dir": "skills/international/saudi-arabia",
+   "skills": 12,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AO",
+   "name": "Angola",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/angola",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BF",
+   "name": "Burkina Faso",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/burkina-faso",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BI",
+   "name": "Burundi",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/burundi",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BJ",
+   "name": "Benin",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/benin",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BW",
+   "name": "Botswana",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/botswana",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CD",
+   "name": "Dr Congo",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/dr-congo",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CF",
+   "name": "Central African Republic",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/central-african-republic",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CG",
+   "name": "Republic Of Congo",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/republic-of-congo",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CI",
+   "name": "Ivory Coast",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/ivory-coast",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CM",
+   "name": "Cameroon",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/cameroon",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CV",
+   "name": "Cape Verde",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/cape-verde",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "DJ",
+   "name": "Djibouti",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/djibouti",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "DZ",
+   "name": "Algeria",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/algeria",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ER",
+   "name": "Eritrea",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/eritrea",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ET",
+   "name": "Ethiopia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/ethiopia",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GA",
+   "name": "Gabon",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/gabon",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GH",
+   "name": "Ghana",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/ghana",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GM",
+   "name": "Gambia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/gambia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GN",
+   "name": "Guinea",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/guinea",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GQ",
+   "name": "Equatorial Guinea",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/equatorial-guinea",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "GW",
+   "name": "Guinea Bissau",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/guinea-bissau",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KE",
+   "name": "Kenya",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/kenya",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "XB"
+   ],
+   "missing": [
+    "SC",
+    "PR",
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KM",
+   "name": "Comoros",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/comoros",
+   "skills": 3,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LR",
+   "name": "Liberia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/liberia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LS",
+   "name": "Lesotho",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/lesotho",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LY",
+   "name": "Libya",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/libya",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/morocco",
+   "skills": 16,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MG",
+   "name": "Madagascar",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/madagascar",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ML",
+   "name": "Mali",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/mali",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MR",
+   "name": "Mauritania",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/mauritania",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MU",
+   "name": "Mauritius",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/mauritius",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MW",
+   "name": "Malawi",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/malawi",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MZ",
+   "name": "Mozambique",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/mozambique",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NA",
+   "name": "Namibia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/namibia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NE",
+   "name": "Niger",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/niger",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NG",
+   "name": "Nigeria",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/nigeria",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "RE",
+   "name": "Reunion",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/reunion",
+   "skills": 1,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "RW",
+   "name": "Rwanda",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/rwanda",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SC",
+   "name": "Seychelles",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/seychelles",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SD",
+   "name": "Sudan",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/sudan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SH",
+   "name": "Saint Helena",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/saint-helena",
+   "skills": 4,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SL",
+   "name": "Sierra Leone",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/sierra-leone",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SN",
+   "name": "Senegal",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/senegal",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SO",
+   "name": "Somalia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/somalia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SS",
+   "name": "South Sudan",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/south-sudan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ST",
+   "name": "S O Tom And Pr Ncipe",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/s-o-tom-and-pr-ncipe",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SZ",
+   "name": "Eswatini",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/eswatini",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TD",
+   "name": "Chad",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/chad",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TG",
+   "name": "Togo",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/togo",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TN",
+   "name": "Tunisia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/tunisia",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TZ",
+   "name": "Tanzania",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/tanzania",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "UG",
+   "name": "Uganda",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/uganda",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "YT",
+   "name": "Mayotte",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/mayotte",
+   "skills": 2,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ZA",
+   "name": "South Africa",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/south-africa",
+   "skills": 20,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "TP",
+    "XB"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ZM",
+   "name": "Zambia",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/zambia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ZW",
+   "name": "Zimbabwe",
+   "region": "africa",
+   "owner": "ryan",
+   "dir": "skills/international/zimbabwe",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AF",
+   "name": "Afghanistan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/afghanistan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "AU",
+   "name": "Australia",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/australia",
+   "skills": 61,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": true
+  },
+  {
+   "code": "BD",
+   "name": "Bangladesh",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/bangladesh",
+   "skills": 18,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BN",
+   "name": "Brunei",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/brunei",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "BT",
+   "name": "Bhutan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/bhutan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "CN",
+   "name": "China",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/china",
+   "skills": 14,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "XB"
+   ],
+   "missing": [
+    "TP"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "FJ",
+   "name": "Fiji",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/fiji",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "HK",
+   "name": "Hong Kong",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/hong-kong",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT"
+   ],
+   "missing": [
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/indonesia",
+   "skills": 13,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/india",
+   "skills": 22,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "JP",
+   "name": "Japan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/japan",
+   "skills": 19,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR",
+    "TP"
+   ],
+   "missing": [
+    "IT-CORP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KG",
+   "name": "Kyrgyzstan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/kyrgyzstan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KH",
+   "name": "Cambodia",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/cambodia",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KR",
+   "name": "South Korea",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/south-korea",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC"
+   ],
+   "missing": [
+    "IT-CORP",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "KZ",
+   "name": "Kazakhstan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/kazakhstan",
+   "skills": 17,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LA",
+   "name": "Laos",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/laos",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "LK",
+   "name": "Sri Lanka",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/sri-lanka",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MM",
+   "name": "Myanmar",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/myanmar",
+   "skills": 12,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "IT-CORP",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MN",
+   "name": "Mongolia",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/mongolia",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MO",
+   "name": "Macau",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/macau",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MV",
+   "name": "Maldives",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/maldives",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/malaysia",
+   "skills": 8,
+   "reviewed": 1,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP"
+   ],
+   "missing": [
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NP",
+   "name": "Nepal",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/nepal",
+   "skills": 5,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/new-zealand",
+   "skills": 11,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PG",
+   "name": "Papua New Guinea",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/papua-new-guinea",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PH",
+   "name": "Philippines",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/philippines",
+   "skills": 7,
+   "reviewed": 7,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR"
+   ],
+   "missing": [
+    "SC",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "PK",
+   "name": "Pakistan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/pakistan",
+   "skills": 19,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "SG",
+   "name": "Singapore",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/singapore",
+   "skills": 10,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "VAT",
+    "TP"
+   ],
+   "missing": [
+    "IT-CORP",
+    "SC",
+    "PR",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TH",
+   "name": "Thailand",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/thailand",
+   "skills": 7,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TJ",
+   "name": "Tajikistan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/tajikistan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TL",
+   "name": "Timor Leste",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/timor-leste",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TM",
+   "name": "Turkmenistan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/turkmenistan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TO",
+   "name": "Tonga",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/tonga",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "TW",
+   "name": "Taiwan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/taiwan",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT"
+   ],
+   "missing": [
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "UZ",
+   "name": "Uzbekistan",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/uzbekistan",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VN",
+   "name": "Vietnam",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/vietnam",
+   "skills": 8,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "VU",
+   "name": "Vanuatu",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/vanuatu",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  },
+  {
+   "code": "WS",
+   "name": "Samoa",
+   "region": "apac",
+   "owner": "ryan",
+   "dir": "skills/international/samoa",
+   "skills": 6,
+   "reviewed": 0,
+   "stale": 0,
+   "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR"
+   ],
+   "missing": [
+    "TP",
+    "XB"
+   ],
+   "not_applicable": {},
+   "partial": {},
+   "has_readme": false,
+   "complete": false
+  }
+ ]
+}

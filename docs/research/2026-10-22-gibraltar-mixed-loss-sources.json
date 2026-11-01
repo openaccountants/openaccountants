@@ -1,0 +1,13 @@
+{
+  "retrieved": "2026-10-22",
+  "source": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+  "retrieval": "Official PDF freshly retrieved successfully through web; compared with saved official text.",
+  "locators": [
+    "Section20(1)-(11), printed pages81-83: eligible subsequent-period loss relief, cap, exemptions and ordering",
+    "Schedule3, printed page159 onwards: profit measure separate from section20 relief"
+  ],
+  "conclusion_type": "Reasoned statutory interpretation, independently reviewed; no Commissioner endorsement verified.",
+  "reasoning": "20(6) caps restricted losses by reference to Schedule3 profit;20(9) exempts protected amounts and20(10) orders them first. Remaining profits additionally limit utilisation.",
+  "search_limit": "Targeted official-site searches did not identify an official mixed-pool example. This does not prove none exists.",
+  "other_primary_material": "2024 Budget Feetham address 481/2024 describes policy but does not supply a mixed-pool computation; enacted period-end trigger governs this draft."
+}

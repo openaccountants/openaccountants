@@ -1,0 +1,14 @@
+{
+  "article": "ITPARK-CODE129-DEADLINE-20261031",
+  "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+  "text": "8) Termen de stingere a obligaţiei fiscale – perioadă, stabilită conform legislaţiei fiscale, în care trebuie să fie executată obligaţia fiscală, incluzând şi ultima sa zi în orele de program ale Serviciului Fiscal de Stat. Dacă ultima zi a perioadei este una de odihnă, se va considera o ultimă zi prima zi lucrătoare care urmează după ziua de odihnă. În cazul prezentării dărilor de seamă în format electronic, ultima zi se consideră ziua deplină. În mod analogic se determină şi termenele de executare a altor acţiuni prevăzute de legislaţia fiscală.",
+  "sha256": "928f3562be40b25b1b2b210fafba70d3a3c11f0647b2f6e32370664ba7a1c870",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T04:00:30.178881+00:00",
+  "format": "Selected exact official web/browser paragraph; layout whitespace normalized",
+  "source_points": {
+    "deadline_paragraph": "8) Termen de stingere a obligaţiei fiscale – perioadă, stabilită conform legislaţiei fiscale, în care trebuie să fie executată obligaţia fiscală, incluzând şi ultima sa zi în orele de program ale Serviciului Fiscal de Stat. Dacă ultima zi a perioadei este una de odihnă, se va considera o ultimă zi prima zi lucrătoare care urmează după ziua de odihnă. În cazul prezentării dărilor de seamă în format electronic, ultima zi se consideră ziua deplină. În mod analogic se determină şi termenele de executare a altor acţiuni prevăzute de legislaţia fiscală."
+  },
+  "scope": "Current FiscalCode129(8); selected actual body paragraph",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+}

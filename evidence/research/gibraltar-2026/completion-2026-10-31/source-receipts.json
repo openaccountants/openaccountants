@@ -1,0 +1,106 @@
+[
+  {
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/global-minimum-tax-act.pdf",
+    "bytes": 252938,
+    "sha256": "9a8b7132e123524941165e9b68848da1bdde50318faf097c510fd7c553471db3",
+    "reader_path": "sources/global-minimum-tax-act.txt",
+    "reader_sha256": "90b313d82b4093ed88866f4bb53b011ca3913747d6d1cdc46509b3b9b41f2d73",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": []
+  },
+  {
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/allowances-rules.pdf",
+    "bytes": 356091,
+    "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+    "reader_path": "sources/allowances-rules.txt",
+    "reader_sha256": "db42341e448e9ea92d7a7b448b7001f5c1fec626ebf3524a621375cc5d08f5a8",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": []
+  },
+  {
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/income-tax-act.pdf",
+    "bytes": 1849515,
+    "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+    "reader_path": "sources/income-tax-act.txt",
+    "reader_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": []
+  },
+  {
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/oecd-model-rules.pdf",
+    "bytes": 3275454,
+    "sha256": "796d1a16fad360204a76450f5246e038263ef4bc652356f25d367d4b9389e306",
+    "reader_path": "sources/oecd-model-rules.txt",
+    "reader_sha256": "a56a646c3e2e05205c191f696269ca923e17f4c0872824cb2f71dfb232fd6011",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": []
+  },
+  {
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/pillar-two-registration.pdf",
+    "bytes": 1150662,
+    "sha256": "bbeb97b03ee15f99532c9bf5693130cb64291bd88866bc7c600e250603eb6913",
+    "reader_path": "sources/pillar-two-registration.txt",
+    "reader_sha256": "5c2e33c945e1035ea6bd8bac0dcb26b07c1c6ddd06c689a9284af172cadd489f",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": [
+      8
+    ]
+  },
+  {
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/pillar-two-notification.pdf",
+    "bytes": 1410973,
+    "sha256": "94b8e4d9f516e978488e979370f7de1271ef7f02f0e1c48dbcdf80e3f364cec0",
+    "reader_path": "sources/pillar-two-notification.txt",
+    "reader_sha256": "4cf3475cf1f218bf4a1be1cdf6930579b5c8ff9c077a7f01c56be605a77a8f55",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": [
+      12
+    ]
+  },
+  {
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/pillar-two-gir.pdf",
+    "bytes": 1509733,
+    "sha256": "13ffc86c216404159c3a903e33200781a2f80072411c6da115e8756e7a1ea942",
+    "reader_path": "sources/pillar-two-gir.txt",
+    "reader_sha256": "825446efd1ccff4d24778c3313fd6914d66b7e6c09bc923c071b3c3e1638a476",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": [
+      13
+    ]
+  },
+  {
+    "url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+    "read_on": "2026-10-31",
+    "raw_path": "sources/pillar-two-payment.pdf",
+    "bytes": 270742,
+    "sha256": "e30b4b540f74b2dbfb123ae899e07910624c2e8d639986e2d1b474141999c6b3",
+    "reader_path": "sources/pillar-two-payment.txt",
+    "reader_sha256": "57cf5fcc2e10f7a9d94a2b7b7a43a64388a2cc659ab9777cfa9299154fdbc675",
+    "route": "direct official HTTPS fetch, curl success; native pdftotext -layout",
+    "reader_scope": "full registration/notification/GIR/payment documents; cited sections of statutes/Model Rules",
+    "visual_pages": [
+      3
+    ]
+  }
+]

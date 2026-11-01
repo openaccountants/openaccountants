@@ -46,7 +46,7 @@ Out of scope: VAT rates and returns (`morocco-vat`), the auto-entrepreneur regim
 ## Filing requirements
 
 - **System duty (Art. 145-IX):** taxpayers subject to corporate tax, taxpayers on professional income under the real net result or simplified net result, and those liable to VAT must have an invoicing system that meets the administration's technical criteria, in line with Art. 145-III and IV. Application rules are set by regulation, sector by sector.
-- **Out of Art. 145 (Art. 145-XI):** individuals taxed under the CPU or the auto-entrepreneur regime. Only the Art. 145-X email duty applies to them. Their purchases still need Art. 146 invoices if they are on the CPU (Art. 146 bis).
+- **Out of Art. 145 (Art. 145-XI):** individuals taxed under the CPU or the auto-entrepreneur regime. Only the Art. 145-X email duty applies to them. If such a person makes VAT operations, Art. 119-I still requires Art. 145-III invoices to clients liable to VAT. Their purchases still need Art. 146 invoices if they are on the CPU (Art. 146 bis).
 - **Business buyers (Art. 146):** every purchase from a supplier subject to TP needs a regular invoice in the buyer's name with the Art. 145-III and VIII indications. A business client can therefore ask an auto-entrepreneur or CPU supplier for those indications even though Art. 145 itself does not bind that supplier.
 - **Simplified net result (Art. 145-VI):** invoices go to buyers who are subject to corporate tax, VAT or professional income tax and act in the course of their business; keep the copies for ten years after the year they were issued.
 - **Email (Art. 145-X):** every taxpayer holds an email address of their choice.
@@ -59,7 +59,7 @@ Pre-numbered from a continuous series, or issued by a computer system in a conti
 1. the seller's identity;
 2. the tax identification number (IF) from the local tax office and the TP article number;
 3. the date of the operation;
-4. the buyer's name or company name, address and ICE;
+4. the buyer's name or company name, address and ICE (the ICE for operations of financial years opened from 1 January 2019: Finance Law 68-17, application note to Art. 145-III-4);
 5. price, quantity and nature of goods, works or services;
 6. VAT shown separately, whether charged on top or included. For Art. 91, 92 and 94 operations, show the exemption or suspensive regime instead;
 7. references and method of payment;
@@ -90,7 +90,7 @@ All rows: tax year 2026.
 This skill states rules and status; arithmetic goes to the engine. Run the check in order:
 
 1. Identify the regime: corporate tax, real, simplified, CPU, auto-entrepreneur, and VAT status.
-2. If CPU or auto-entrepreneur, Art. 145 does not bind the seller. Go to step 5.
+2. If CPU or auto-entrepreneur, Art. 145 does not bind the seller, unless the seller makes VAT operations and the client is liable to VAT (Art. 119-I), then apply step 3. Otherwise go to step 5.
 3. Check the invoice against each mention above and the continuous series.
 4. Confirm Art. 145-IX status from the Bulletin Officiel and the DGI before saying anything on the system duty.
 5. For a purchase, test Art. 146: real purchase, regular invoice in the buyer's name, Art. 145-III and VIII indications. For VAT also see `morocco-vat` (Art. 106).
@@ -104,7 +104,7 @@ This skill states rules and status; arithmetic goes to the engine. Run the check
 - **Exemptions need the ICE:** an exemption under the code needs an ICE and compliance with filing and payment duties (Art. 164-I).
 - **Vendor claims:** software sold as "DGI 2026 certified" has no standing we could trace to a published criterion. Ask for the DGI text it relies on.
 - **Client asks about a fake invoice:** Art. 192 applies. Refer it.
-- **What to do now:** obtain the ICE and print it on every invoice; fix Art. 145 conformity first, the baseline under any later text; use a tool that keeps an unbroken series and can export structured data, not loose Word or Excel files; keep SIMPL credentials, email and payment mandate working; watch the Bulletin Officiel and tax.gov.ma.
+- **What to do now:** obtain the ICE and print it on every invoice; check clients' ICEs where possible; fix Art. 145 conformity first, the baseline under any later text; use a tool that keeps an unbroken series and can export structured data, not loose Word or Excel files; keep SIMPL credentials, email and payment mandate working; watch the Bulletin Officiel and tax.gov.ma.
 - **Go-live decisions:** platform onboarding, provider choice or workflow change waits for the published text and an expert-comptable.
 
 ## Self-checks
@@ -115,7 +115,7 @@ This skill states rules and status; arithmetic goes to the engine. Run the check
 - No date, wave, cut-off, platform name, format or e-invoicing penalty stated as law.
 - Output matches the base skill spec.
 
-Test questions: "When is e-invoicing mandatory for me?" gives no date, and says the text setting it could not be confirmed. "Is fatourati.gov.ma official?" is not asserted. "I forgot my client's ICE" gives MAD 100 per omission (Art. 198 ter), the buyer's Art. 146 risk, and reissue. "UBL or CII?" is unconfirmed. "Does this apply to my auto-entrepreneur business?" gives Art. 145-XI, and the email duty and client's Art. 146 needs.
+Test questions: "When is e-invoicing mandatory for me?" gives no date, and says the text setting it could not be confirmed. "Is fatourati.gov.ma official?" is not asserted. "I forgot my client's ICE" gives a breach of Art. 145-III-4, the buyer's Art. 146 risk, and reissue. Art. 198 ter (MAD 100) penalises breaches of Art. 145-VIII; flag to the reviewer whether it reaches the client's ICE. "UBL or CII?" is unconfirmed. "Does this apply to my auto-entrepreneur business?" gives Art. 145-XI, and the email duty and client's Art. 146 needs.
 
 Never assert an unconfirmed date, model, platform or threshold. Never accept a VAT-registered seller's invoice without IF and ICE as conforming. Never tell a user to onboard to a clearance platform before the text is published.
 
@@ -126,7 +126,7 @@ Never assert an unconfirmed date, model, platform or threshold. Never accept a V
 | DGI, Code General des Impots 2026 (French), Art. 99, 106, 119, 145, 146, 146 bis, 155, 164, 191, 191 bis, 192, 198 ter, 211; those articles read in a local text copy of the DGI PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 | DGI home page; read for news, no e-invoicing item shown. The decrees page redirected to the home page and was not read | https://www.tax.gov.ma/wps/portal/DGI/Accueil | 2026-11-01 |
 
-Not yet confirmed: whether the Art. 145-IX decree or technical criteria are published (the Bulletin Officiel issue list and DGI decrees page could not be read; press reports to October 2026 report a draft at the Secretariat General du Gouvernement); the old skill's roadmap, all from secondary sources: clearance or CTC model, UBL 2.1 or CII formats, a national platform by xHub linked to Simpl-TVA, the name fatourati.gov.ma, waves from large B2B to SMEs, small firms and B2C, freelancers falling in later waves, future e-invoicing sanctions; ICE length of 15 digits; ICE start dates of 2016 for sellers and January 2019 for B2B clients; whether the buyer's ICE is needed for a private client (Art. 145-III-4 has no B2B limit in its words); the RC number on invoices (not listed in Art. 145); the SIMPL address portail.tax.gov.ma; invoice-sanction range of MAD 2,000 to 50,000 once given under Art. 146 and an ICE cap of about MAD 5,000, neither found in the CGI 2026, so both are removed from the rates.
+Not yet confirmed: whether the Art. 145-IX decree or technical criteria are published (the Bulletin Officiel issue list and DGI decrees page could not be read; press reports to October 2026 report a draft at the Secretariat General du Gouvernement); the old skill's roadmap, all from secondary sources: clearance or CTC model, UBL 2.1 or CII formats, a national platform by xHub linked to Simpl-TVA, the name fatourati.gov.ma, waves from large B2B to SMEs, small firms and B2C, freelancers falling in later waves, future e-invoicing sanctions; ICE length of 15 digits; ICE start date of 2016 for sellers; VAT broken down by rate and HT and TTC totals on the invoice (Art. 145-III-6 asks only for the VAT shown separately); whether the buyer's ICE is needed for a private client (Art. 145-III-4 has no B2B limit in its words); the RC number on invoices (not listed in Art. 145); the SIMPL address portail.tax.gov.ma; invoice-sanction range of MAD 2,000 to 50,000 once given under Art. 146 and an ICE cap of about MAD 5,000, neither found in the CGI 2026, so both are removed from the rates.
 
 ## Disclaimer
 

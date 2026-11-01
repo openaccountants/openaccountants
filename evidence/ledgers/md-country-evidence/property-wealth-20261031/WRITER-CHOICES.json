@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-31",
+  "options": [
+    {
+      "label": "A. Separate property and wealth methods",
+      "selected": true,
+      "why": "Different taxpayer populations, bases, assessing bodies, returns/notices, deadlines and payment keys."
+    },
+    {
+      "label": "B. Combined property and wealth reference",
+      "selected": false,
+      "why": "Would conflate separate jobs and weaken routing; retain cross-links instead."
+    }
+  ],
+  "unresolved_operative_questions": [
+    "Article283(6) first-year decision/accepted relief code",
+    "Law1056 unevaluated farm-land SCITL/unified-return interaction",
+    "Authenticated BIJ17/UNIF25 technical acceptance/final rounding",
+    "Taxpayer-specific local decisions, valuations and municipal appeal route"
+  ],
+  "not_excluded": "All ordinary branches remain in the method and completion scope. These questions are not counted as comprehensive closure.",
+  "no_authority_contact": true,
+  "no_push": true
+}

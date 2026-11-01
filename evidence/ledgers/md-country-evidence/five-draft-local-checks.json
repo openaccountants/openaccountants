@@ -1,0 +1,10 @@
+{
+  "checked_on": "2026-10-30",
+  "scope": "Five Moldova writer drafts; whole-country review pending",
+  "examples": "PASS:6 files,24 oa-check blocks,0 failures,0 missing",
+  "source_preservation": "PASS:protected metadata and CTA unchanged;1127 source rows bound to retained source hashes/quotes;637 of745 original units mapped",
+  "transport_integrity": "PASS:no truncated transport strings in retained public-law bodies",
+  "country_complete": false,
+  "new_push": false,
+  "independent_review": "PENDING"
+}

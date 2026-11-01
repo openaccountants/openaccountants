@@ -1,0 +1,98 @@
+{
+  "predecessor": "a6f0f5b1f50b3edc7f3faef8199852188a60f35c",
+  "main_merged": "ebbf73add3970c1e8a4a4dadc2b3cf8c018c35c2",
+  "guide_count": 9,
+  "review_status": "fresh independent delta review required before push",
+  "inputs": [
+    {
+      "path": "skills/faroe-islands/README.md",
+      "sha256": "79f1f8b7ba53041114c043a66ca8077a6377428fa7c039a1ce95c96634bcdbc1",
+      "bytes": 13732
+    },
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "bytes": 28190
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "bytes": 43035
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "bytes": 11527
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "bytes": 29257
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "bytes": 35867
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "bytes": 46963
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "bytes": 17055
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "bytes": 14094
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "bytes": 25957
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.md",
+      "sha256": "dedc57c987434499c04e304a35f1939002185bd3071b91c3b97fcd91e0eaebd8",
+      "bytes": 27261
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/fo-payroll-levy.rows.json",
+      "sha256": "cfe10c02ac4fc48aed4e107c51e867d1af3de76da6ae7099da1fa87d675773e1",
+      "bytes": 36662
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/formation-delta-ledger.md",
+      "sha256": "b321dc3a7ae0bde9a3a5ced6b142181bf241e7746c045bad2e3e9c0c07cd8e0e",
+      "bytes": 3817
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/preservation.json",
+      "sha256": "7c02df52bff1cf3d6fe3a218cca67afbc30cf110b1c6e9d2de482ddc3dcbac02",
+      "bytes": 596812
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/sources.json",
+      "sha256": "b0c10f47d56463e8790c18361526a88bd10a6f6a95300797bfd3de1030427f6c",
+      "bytes": 2715
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/additional-sources.json",
+      "sha256": "12dc182ae086daa6a9f0f9dca0be05c8e103c0fa04c35fe9bf92225222b74afb",
+      "bytes": 1945
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/citation-expansions.json",
+      "sha256": "a2d1ff14fd05397515c3c9db29d78b2b8ef28ca4e0d75411b603ac98cdbd8f20",
+      "bytes": 1194
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031/research-findings.md",
+      "sha256": "4bb43fafa66906c88c08a7df3cfa5dfdcf30301cb06d8d10974e6dbb754a4249",
+      "bytes": 3725
+    }
+  ]
+}
