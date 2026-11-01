@@ -1,0 +1,321 @@
+[
+  {
+    "id": "A01",
+    "rule": "CR registration despite losses",
+    "raw_path": "../sources/prior-writer/faq.html",
+    "raw_sha256": "1ea6ae59a591ffc047ff810c120b4b4b221ea6a8de7416674f6d68c1b318d50f",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs",
+    "quote": "All holders of the CR must register for income tax.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "All16substantiveFAQanswersread; originalfetchdateunattested;readtodayfromcachedraw",
+    "conditions": "FAQ1;profits determinecharge,notsigneduptaxliability.",
+    "placements": [
+      "om-corporate-income-tax",
+      "om-company-formation",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "A02",
+    "rule": "Returns3/4months;auditedaccounts15%;inactivezero",
+    "raw_path": "../sources/prior-writer/faq.html",
+    "raw_sha256": "1ea6ae59a591ffc047ff810c120b4b4b221ea6a8de7416674f6d68c1b318d50f",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs",
+    "quote": "before the expiry of four months",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "All16substantiveFAQanswersread; originalfetchdateunattested;readtodayfromcachedraw",
+    "conditions": "FAQ2;3%3months;15%auditedaccounts;exemptevidence;inactiveandnoworkerszeroandstamped/signedletter.",
+    "placements": [
+      "om-corporate-income-tax",
+      "om-company-formation",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "A03",
+    "rule": "Firstyear JanuaryJune vs JulyDecember",
+    "raw_path": "../sources/prior-writer/faq.html",
+    "raw_sha256": "1ea6ae59a591ffc047ff810c120b4b4b221ea6a8de7416674f6d68c1b318d50f",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs",
+    "quote": "not exceeding 18 months",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "All16substantiveFAQanswersread; originalfetchdateunattested;readtodayfromcachedraw",
+    "conditions": "FAQ5;JanJuneendscurrentDecember;JulDecendsfollowingDecember;actualstatutoryfirstperiodcaps.",
+    "placements": [
+      "om-corporate-income-tax",
+      "om-company-formation",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "A04",
+    "rule": "Portal6/9/12,RepresentationRights,payment",
+    "raw_path": "../sources/prior-writer/faq.html",
+    "raw_sha256": "1ea6ae59a591ffc047ff810c120b4b4b221ea6a8de7416674f6d68c1b318d50f",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs",
+    "quote": "service No. 6 (final returns)",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "All16substantiveFAQanswersread; originalfetchdateunattested;readtodayfromcachedraw",
+    "conditions": "FAQ2/6/7/8/9;formsnotauthenticated;portalstepsguidanceonly;currentaccountaccessneeded.",
+    "placements": [
+      "om-corporate-income-tax",
+      "om-company-formation",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "A05",
+    "rule": "Withholdingexcludedservices",
+    "raw_path": "../sources/prior-writer/faq.html",
+    "raw_sha256": "1ea6ae59a591ffc047ff810c120b4b4b221ea6a8de7416674f6d68c1b318d50f",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs",
+    "quote": "Any services related to an activity or property located outside the Sultanate of Oman.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "All16substantiveFAQanswersread; originalfetchdateunattested;readtodayfromcachedraw",
+    "conditions": "FAQ15;conference/exhibition,transport/shipping/goodsinsurance,training,tickets/hotelsabroad,boardmeetings,reinsurance;factsnecessary.",
+    "placements": [
+      "om-corporate-income-tax",
+      "om-company-formation",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G01",
+    "rule": "38,500mandatory/19,250voluntary",
+    "raw_path": "../sources/ed454949c42c.pdf",
+    "raw_sha256": "52925faeb0fb8af683ac6eb10fae3c9e59e91e70819637cb25c132caf580ea04",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/Determining+the+Mandatory+and+Voluntary+Registration+Thresholds.pdf/4c5d8dcb-5b81-34ae-a1d2-e3c6d8431988?t=1733169610184",
+    "quote": "(38,500) thirty-eight thousand",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "ArticlesOne/Two;thresholdstrictlyexceedsunderlaw55/61;wholedecisionread.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G02",
+    "rule": "Realestatefirst5%,resaleexempt,rentalconditions",
+    "raw_path": "../sources/d093475a3da6.pdf",
+    "raw_sha256": "c102373b616201996257f103ed0b9c36560c84a763c643a78a6bb02ee855b492",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/Taxpayer+Manual+Guide+of+Real+Estate.pdf/06ee6dc8-2732-aceb-3ce7-9f8954c44b81?t=1733169611885",
+    "quote": "The first supply is subject to the standard-",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "Sections5.2/5.3:resaleinputblocked;residentialrental>3continuousmonths,lawfultenancy;hotels/servicedunitsnotresidential.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G03",
+    "rule": "Humanhealthlicensedexempt",
+    "raw_path": "../sources/6d32d9466d04.pdf",
+    "raw_sha256": "34f68bdb60f5103b3e1f9fa92b965ef68f79434d894068602d2881da1a6b3056",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/vat-taxpayer-guide-health-care-guide-",
+    "quote": "It does not include veterinary services.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "Section3.1licensedmedicalinstitutions;nonlicensednotexempt;exemptinputblocked.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G04",
+    "rule": "Financialexplicitfee5%;licensedlifepremiumexempt",
+    "raw_path": "../sources/00e2a9830c8f.pdf",
+    "raw_sha256": "33c3499478a33308fed4790c581e68e28921c76d818158ec3d9a6f7de4649531",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/financial-services-sector-vat-guide",
+    "quote": "fee, commission or commercial discount",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "4.1/4.2:exportzeroconditions;licensedbankmarginexempt;lifepremiumlicensedexempt,explicitadminfee5%.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G05",
+    "rule": "Inputevidence/time/employee/pre-registration",
+    "raw_path": "../sources/dc6c07a154ab.pdf",
+    "raw_sha256": "6b9a245ee0499ce63c5602083907dc9f8a74d312c7d3c2b272ab9225e482fc4b",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910",
+    "quote": "up to a maximum value of OMR 500.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "2.7\u20132.11:invoice/importpayment/RCrecords,inrecipientname;3yearright;employeesbusinessrecords/privateexcluded;goods3yearsavailable,services6months;capitalNBVratioandmixeduse.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G06",
+    "rule": "Blockedinputandexceptions",
+    "raw_path": "../sources/dc6c07a154ab.pdf",
+    "raw_sha256": "6b9a245ee0499ce63c5602083907dc9f8a74d312c7d3c2b272ab9225e482fc4b",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910",
+    "quote": "not more than ten (10) passengers including the driver.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "2.13:entertainment;privatevehicleportion;rental/emergencyexcluded;cateringexceptlawful/remoteemployeesustenanceandmeetingrefreshments;resalesnormalrules;profitmargininputblocked.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G07",
+    "rule": "Residualapportionmentconditions",
+    "raw_path": "../sources/dc6c07a154ab.pdf",
+    "raw_sha256": "6b9a245ee0499ce63c5602083907dc9f8a74d312c7d3c2b272ab9225e482fc4b",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910",
+    "quote": "rounded to three decimal places",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "2.12/2.14:removeprivate/blocked,directattribute,residualtaxable/total%;excludeoutsideOman,RC,capitalandincidentalnoncoresupplies;annualtrueup.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G08",
+    "rule": "Refund>100/yearend/5years/payment/importdeferral",
+    "raw_path": "../sources/debd4cf3d454.pdf",
+    "raw_sha256": "134a888691f8241d8b7897ab44204459d36855974420482d4b1fe8d501b0f806",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+-+VAT+Return+Filing.pdf/fae31d0c-e7e7-0014-9f28-a4c506b36614?t=1733169613409",
+    "quote": "All requests for repayments must be made within five (5) years",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "3.3/3.4:electronicpaymentreturndate;refundchecklistandTAchecks;yearendanyamountbyfirstperioddue;5yearsrightarose;importpostponementauthorityapplicationconditions/guarantee.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G09",
+    "rule": "Correction30days/3years;quarterly",
+    "raw_path": "../sources/debd4cf3d454.pdf",
+    "raw_sha256": "134a888691f8241d8b7897ab44204459d36855974420482d4b1fe8d501b0f806",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+-+VAT+Return+Filing.pdf/fae31d0c-e7e7-0014-9f28-a4c506b36614?t=1733169613409",
+    "quote": "provided no\ninspection by the TA has been initiated.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "3.5/4:correction30daysdiscoveryinside3yearsfiling,noinspection;quarterfirstfromeffectiveregdate.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "G10",
+    "rule": "Specialzonesauthorisationandtransactionconditions",
+    "raw_path": "../sources/4d7308dc95f1.pdf",
+    "raw_sha256": "87c949f876ace65f98e5fd939d9c2437911a7889eda2ae2bd0c58ab2ad1acd1e",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+For++Free+Zones.pdf/6bc21a32-209c-b348-e8b6-804f7458ad67?t=1733169612723",
+    "quote": "must apply to the Authority for authorization and VAT registration.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Selected complete relevant sections listed in conditions; no all-guide read claim unless wholetext stated",
+    "conditions": "Whole2pages:Duqm,Salalah,Sohar,AlMazyunah;license/CR;recipienttaxablelicensedactivityuse,nonblockedgoods,transportproof;servicesexcludeart24(5)/exempt. Specialistreferralpreserved.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview",
+      "om-company-formation"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "N01",
+    "rule": "Exciseheadlineauthority2025page",
+    "raw_path": "../sources/54a254c0906e.html",
+    "raw_sha256": "a0e1aff4ffbcb8120bcb417cae9a6509cf20dd40208058763fcb67699cc04a4a",
+    "official_url": "https://tms.taxoman.gov.om/portal/tax-rate",
+    "quote": "100% on tobacco products, energy drinks, electronic smoking devices, and vaping liquids",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Whole substantivepage read",
+    "conditions": "50%softdrinks;page29Oct2025,notcurrent2026completenessproof;oldalcohol/porkunconfirmed.",
+    "placements": [
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "N02",
+    "rule": "Einvoicingphases/formatprovider",
+    "raw_path": "../sources/d5c8786e2026.html",
+    "raw_sha256": "a052e0bf9fd372690d80a090c60654262e9202aab8019877d38cec86a13ba705",
+    "official_url": "https://tms.taxoman.gov.om/portal/e-invoicing",
+    "quote": "Phase 4: Full Rollout",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Whole substantivepage read",
+    "conditions": "Selectedlargepilot,medium/large,SME,allVAT;approvedelectronicformats/certifiedproviderorcompatibleERP;noeffectivephase datesproved.",
+    "placements": [
+      "oman-vat",
+      "om-tax-overview"
+    ],
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "N03",
+    "rule": "SeptemberzeroratenewsONLY",
+    "raw_path": "../sources/6b45665e2c87.html",
+    "raw_sha256": "5a6cba575de52c3013d837ac0b340685073f0cb16fd5ae18705b60db34d89f28",
+    "official_url": "https://tms.taxoman.gov.om/portal/web/taxportal/-/the-tax-authority-issues-three-new-decisions-expanding-the-0-vat-rate-list-to-cover-essential-goods-and-healthcare-products.",
+    "quote": "take effect on 1st October, 2026.",
+    "source_language": "English authority publication",
+    "read_on": "2026-11-01",
+    "read_scope": "Whole substantivenewsread;notinstrumentclosure",
+    "conditions": "Newsnotdecisions;allproductannexandclassificationNONOPERATIVEHOLD.",
+    "placements": [
+      "oman-vat"
+    ],
+    "status": "writer-checked; independent review pending"
+  }
+]

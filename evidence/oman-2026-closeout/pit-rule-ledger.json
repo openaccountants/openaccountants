@@ -1,0 +1,615 @@
+[
+  {
+    "id": "P01",
+    "rule": "Commencement 1 January2028; regulations within one year",
+    "act": "RD 56/2025",
+    "article": "decree II,IV",
+    "gazette_page": "7–8",
+    "quote": "ويعمل به من الأول من يناير ٢٠٢٨م.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:scope/rates/examples",
+      "om-tax-overview:rates/examples",
+      "om-payroll-social:scope/rates"
+    ],
+    "conditions": "No new-law charge in2026; legacy Income Tax Law treatment of registered business/nonresident services is separate.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P02",
+    "rule": "Residence more than183days; calendar tax year",
+    "act": "RD 56/2025",
+    "article": "1",
+    "gazette_page": "9",
+    "quote": "كل شخص تجاوزت مدة وجوده في سلطنة عمان (١٨٣) مائة وثلاثة وثمانين يوما",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:scope"
+    ],
+    "conditions": "Continuous or interrupted days during tax year; nonresident is anyone outside definition.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P03",
+    "rule": "Net income excess ofOMR42000; taxable net less exemptions,costs,losses",
+    "act": "RD 56/2025",
+    "article": "1",
+    "gazette_page": "10",
+    "quote": "ما زاد على مبلغ (٤٢,٠٠٠ ر.ع) اثنين وأربعين ألف ريال عماني من الدخل الإجمالي.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates/base/examples",
+      "om-tax-overview:rates/examples"
+    ],
+    "conditions": "Deduction limitations and source rules inarts25–32 apply.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P04",
+    "rule": "Treaties prevail; residence certificate on request",
+    "act": "RD 56/2025",
+    "article": "2–3",
+    "gazette_page": "11",
+    "quote": "لا تخل أحكام هذا القانون بالاتفاقيات والمعاهدات الدولية التي تكون سلطنة عمان طرفا فيها.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:cross-border"
+    ],
+    "conditions": "Art3 person-request certificate; not a treaty-benefit eligibility conclusion.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P05",
+    "rule": "Resident worldwide, nonresident Oman-source",
+    "act": "RD 56/2025",
+    "article": "6",
+    "gazette_page": "11",
+    "quote": "دخل المقيم الضريبي المحقق في سلطنة عمان أو خارجها.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:scope"
+    ],
+    "conditions": "Nonresident limb applies income realized in Oman.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P06",
+    "rule": "Eleven income sources and5% taxable-income rate",
+    "act": "RD 56/2025",
+    "article": "7–8",
+    "gazette_page": "12",
+    "quote": "تستحق الضريبة بمعدل (٥٪) خمسة في المائة من الدخل الخاضع للضريبة.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates/base/examples",
+      "om-tax-overview:rates/examples"
+    ],
+    "conditions": "Art7 salaries,self-employment,rental,royalties,interest,share/sukuk income,property gains,pensions/end-service,prizes,grants/gifts,membership.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P07",
+    "rule": "Self-employment only outside commercial register",
+    "act": "RD 56/2025",
+    "article": "10",
+    "gazette_page": "13",
+    "quote": "شريطة أن يكون النشاط غير مقيد في السجل التجاري.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base/questions/examples"
+    ],
+    "conditions": "Commercial,industrial,professional,craft,tourism or other income-producing activity; registered activity routed to Income Tax Law.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P08",
+    "rule": "Self-employment/rental costs15%gross or actual;three-year election",
+    "act": "RD 56/2025",
+    "article": "11,13,28,29",
+    "gazette_page": "13,20",
+    "quote": "وفي جميع الأحوال، يحق للشخص اختيار أحد البديلين كل (٣) ثلاث سنوات.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates/examples"
+    ],
+    "conditions": "Art28 deducts from net source income; art29 uses income from which expense arose; eligible actual expenses incurred in earning it. Election not freely changed annually.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P09",
+    "rule": "Property improvements deductible on disposal",
+    "act": "RD 56/2025",
+    "article": "19",
+    "gazette_page": "16",
+    "quote": "المبالغ الفعلية التي يتكبدها الشخص بسبب إضافات أو تحسينات على الأصل العقاري.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Incidental/statutory disposal costs also listed; not current rental expense.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P10",
+    "rule": "Main/second home conditions",
+    "act": "RD 56/2025",
+    "article": "20,25(8)–(9)",
+    "gazette_page": "16,18",
+    "quote": "وأن يكون قد سبق له إخطار الجهاز باختيار هذين المسكنين أو أحدهما",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Resident owns home in Oman; main permanent home,second temporary/seasonal;second-home choice once per lifetime;main disposal after2years from selection notification. Detailed property basis remains underart18.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P11",
+    "rule": "New-resident foreignincome exemption18months once",
+    "act": "RD 56/2025",
+    "article": "25(3)",
+    "gazette_page": "18",
+    "quote": "لمدة (١٨) ثمانية عشر شهرا تبدأ من اليوم التالي لانتهاء صفته كغير مقيم ضريبي، ولمرة واحدة.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Foreign-source income, period starts day after nonresident status ends; do not extend to domestic income.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P12",
+    "rule": "Omani resident foreign-work pay exemption",
+    "act": "RD 56/2025",
+    "article": "25(4)",
+    "gazette_page": "18",
+    "quote": "رواتب وأجور المقيم الضريبي العماني المتحققة من عمله خارج سلطنة عمان.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Omani tax resident, salaries/wages from work abroad.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P13",
+    "rule": "Pension contributions up to two schemes",
+    "act": "RD 56/2025",
+    "article": "25(5)",
+    "gazette_page": "18",
+    "quote": "وبحد أقصى نظامين.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Compulsory or voluntary pension and post-service systems; person’s contributions only.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P14",
+    "rule": "Education and healthcare family relief",
+    "act": "RD 56/2025",
+    "article": "25(6)–(7)",
+    "gazette_page": "18",
+    "quote": "وذلك حسب الضوابط التي تبينها اللائحة.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Person,spouse,ascendants,first-degree descendants,supported siblings and persons supported under alternative-family system; executive-regulation controls unresolved. Not blanket family deduction.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P15",
+    "rule": "Zakat/donation cap5%gross",
+    "act": "RD 56/2025",
+    "article": "25(10)",
+    "gazette_page": "18",
+    "quote": "بما لا يتجاوز (٥٪) خمسة في المائة من الدخل الإجمالي.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates/base"
+    ],
+    "conditions": "Chairman-designated recipients;includes waqf donation. Not any private gift.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P16",
+    "rule": "Government securities exemption",
+    "act": "RD 56/2025",
+    "article": "25(11)–(12)",
+    "gazette_page": "18",
+    "quote": "التي تصدرها حكومة سلطنة عمان",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Investment sukuk distributions/disposal and government bills/bonds interest/disposal; not all securities.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P17",
+    "rule": "Compensation except replacement pay; inheritance/wills/family gifts",
+    "act": "RD 56/2025",
+    "article": "25(13)–(14)",
+    "gazette_page": "18–19",
+    "quote": "فيما عدا التعويضات عن الرواتب والأجور.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Inheritance/will income; grants/gifts between spouses or first-degree relatives. Other gifts not blanket exempt.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P18",
+    "rule": "Main-home financing costs once;industrialIPfiveyears",
+    "act": "RD 56/2025",
+    "article": "25(15)–(16)",
+    "gazette_page": "19",
+    "quote": "لمدة (٥) خمس سنوات من تاريخ تسجيلها.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Bank loan interest or Islamic-finance cost for building/buying main home once/lifetime subject regulation;industrial patents/designs/trademarks/models/secretprocesses exemption from registration date.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P19",
+    "rule": "Diplomatic reciprocity; Omani mission livingallowance",
+    "act": "RD 56/2025",
+    "article": "25(1)–(2)",
+    "gazette_page": "17–18",
+    "quote": "بشرط المعاملة بالمثل.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Foreign accredited diplomatic/consular/mission salary in official duties;Omani resident non-diplomatic mission living allowance abroad.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P20",
+    "rule": "Source-specificlosses carry to fifthfollowingyear",
+    "act": "RD 56/2025",
+    "article": "26–27",
+    "gazette_page": "19",
+    "quote": "حتى السنة الخامسة، ولا يجوز بعد ذلك خصم أي شيء من الخسارة من دخل أي سنة لاحقة.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Only self-employment,rent,property disposal,securitiesdisposal;source ringfencing;oldest loss first;regulatory mechanics.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P21",
+    "rule": "Payerwithholding cannot deduct annual allowances",
+    "act": "RD 56/2025",
+    "article": "30–31",
+    "gazette_page": "20–21",
+    "quote": "وعلى أساس الدخل الإجمالي بالنسبة للحالة المنصوص عليها في الفقرة الثالثة من المادة ذاتها",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:examples/cross-border"
+    ],
+    "conditions": "Article44 payer deducts noart28amounts;annualtaxpayer can recover exemptions,costs/losses underart30final paragraph. Annualexample not payer calculation.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P22",
+    "rule": "Foreigncredit capped,no carryforward",
+    "act": "RD 56/2025",
+    "article": "32",
+    "gazette_page": "21",
+    "quote": "ولا يجوز ترحيل ما تبقى من قيمة الضريبة الأجنبية وخصمه من الضريبة المستحقة عن سنوات ضريبية لاحقة.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:base"
+    ],
+    "conditions": "Foreigntax underart1same-source definition;regulatory controls;cap Oman tax.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P23",
+    "rule": "Return above42000gross, electronic,within6months",
+    "act": "RD 56/2025",
+    "article": "33",
+    "gazette_page": "21",
+    "quote": "وذلك خلال (٦) ستة أشهر من تاريخ انتهاء السنة الضريبية.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:filing",
+      "om-tax-overview:filing"
+    ],
+    "conditions": "Oneemployer salary,membership,pension/endservice only: employer files on request;return includesgross,net,taxable,taxdue.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P24",
+    "rule": "Correction30dayswithin3years;no audit started",
+    "act": "RD 56/2025",
+    "article": "35",
+    "gazette_page": "22",
+    "quote": "خلال (٣٠) ثلاثين يوما من تاريخ اكتشاف الخطأ أو الإغفال",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:filing"
+    ],
+    "conditions": "3yearsafteroriginaldue date; amendedreturn withinoriginaldeadline treatedoriginal.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P25",
+    "rule": "Death180days;exit60days with involuntaryexception",
+    "act": "RD 56/2025",
+    "article": "36–37",
+    "gazette_page": "22",
+    "quote": "قبل انقطاع إقامته (٦٠) ستين يوما على الأقل",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:filing"
+    ],
+    "conditions": "Executor files predeath period within180daysdeath,paysestatefunds;unforeseeninvoluntaryexit:beforedeparture without60day requirement.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P26",
+    "rule": "Assessment3years,fraud5years",
+    "act": "RD 56/2025",
+    "article": "41",
+    "gazette_page": "23",
+    "quote": "إذا ثبت أن مقدم الإقرار قد استعمل أساليب الغش والاحتيال في إعداد وتقديم الإقرار",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:penalties"
+    ],
+    "conditions": "From filing for amendment;estimatedassessment3yearsfromtaxyearend.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P27",
+    "rule": "Payment returndate;withholdingperiodic",
+    "act": "RD 56/2025",
+    "article": "42–43",
+    "gazette_page": "23",
+    "quote": "في التاريخ المحدد لتقديم الإقرار الضريبي",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:filing"
+    ],
+    "conditions": "Generalperson excludesart43/44payers;amended/estimatedassessment payableonnotice;art43periodic salary,pension,endservice,membership perregulation.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P28",
+    "rule": "Otherincome withholding20%tax ifsourcegross>20000;nonresidentfulltax",
+    "act": "RD 56/2025",
+    "article": "44",
+    "gazette_page": "24",
+    "quote": "ولكل مصدر على حدة",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates"
+    ],
+    "conditions": "Coveredgovernment/public/privateentitypayers,boundtopay;eachsource separately;exclude salary,pension,endservice,membership. Art31grossbasis;regulatorymechanics.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P29",
+    "rule": "Latepayment1%monthly;waiver",
+    "act": "RD 56/2025",
+    "article": "45",
+    "gazette_page": "24",
+    "quote": "بنسبة (١٪) واحد في المائة شهريا من قيمة المبالغ غير المسددة",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:rates/penalties"
+    ],
+    "conditions": "Untilpayment;coversperson/payer;Chairmanfull/partialwaiverunderregulation.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P30",
+    "rule": "Collection7years,interruption;judgment15years",
+    "act": "RD 56/2025",
+    "article": "50",
+    "gazette_page": "25",
+    "quote": "تكون مدة التقادم الجديدة (١٥) خمس عشرة سنة",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:penalties"
+    ],
+    "conditions": "Listed collectionnotices/orders/actionsinterrupt;freshperiod,finaljudgmentforauthority15years.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P31",
+    "rule": "Records5yearsfromfiling;objection45daysdecision90days",
+    "act": "RD 56/2025",
+    "article": "51,59",
+    "gazette_page": "25,27",
+    "quote": "لمدة (٥) خمس سنوات من تاريخ تقديم الإقرار الضريبي.",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:filing"
+    ],
+    "conditions": "Force-majeuresuspendsobjectiondeadline;unanswered90daysdeemedrejected;objectiondoesnotstoppayment.",
+    "status": "writer-checked; independent review pending"
+  },
+  {
+    "id": "P32",
+    "rule": "Administrativecap5000;intentionaloffences1000–5000;falseevidence1–3years10000–20000",
+    "act": "RD 56/2025",
+    "article": "63,65–66",
+    "gazette_page": "28–29",
+    "quote": "ومدة لا تزيد على (٣) ثلاث سنوات",
+    "source_language": "Arabic",
+    "official_url": "https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true",
+    "raw_path": "../sources/pit-official.pdf",
+    "raw_sha256": "5d3fb43c886bafc83fb2099ab104382183320dc280264e4fd6365edcccdc856b",
+    "read_on": "2026-11-01",
+    "read_scope": "All 25 PDF pages rendered and visually read, Gazette pp7–31; no OCR used for decisive reading",
+    "placements": [
+      "om-income-tax:penalties"
+    ],
+    "conditions": "Art63regulationssetadministrativepenalties;art65intentionalnoncompliance;art66knowingfalseevidence/destruction;custodyfineoreither;arts67–71liability,repetition,prosecution,settlement.",
+    "status": "writer-checked; independent review pending"
+  }
+]
