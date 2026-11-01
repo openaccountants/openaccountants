@@ -17,14 +17,14 @@ partial:
   IT-CORP: "Legacy 2025 Guide retained; new Act 37 corporate and presumptive rules not rebuilt or verified for 2026."
   VAT: "Legacy 2025 sales-tax Guide retained; current-law scope/rates/procedure and territorial administration not rebuilt."
   SC: "Legacy 2025 payroll/social Guide retained; no current statutory contribution coverage established."
-  PR: "Legacy 2025 payroll Guide retained; new Act 37/Regulations 0141 rules and actual return workflow not rebuilt."
-  TP: "Statutory-baseline pricing working-paper draft only; Regulations 0141 and transition unread, so operative 2026 coverage unconfirmed; no documentation/CbCR/APA job."
-  XB: "Statutory-baseline domestic residence intake only; operative 2026 transition/regulations unconfirmed; treaty/PE/source/WHT/credit and entry/exit computation jobs incomplete."
+  PR: "Legacy 2025 payroll Guide retained; new Act 37/Regulation 0142-2025 rules and actual return workflow not rebuilt."
+  TP: "Statutory-baseline pricing working-paper draft; Regulation 0142-2025 read, postponement notices and circulars unchecked; no documentation/CbCR/APA job."
+  XB: "Statutory-baseline domestic residence intake; Regulation 0142-2025 read, postponement notices and circulars unchecked; treaty/PE/source/WHT/credit and entry/exit computation jobs incomplete."
 ---
 
 # Somalia tax pack
 
-**Partial local source-baseline draft,1 November 2026.** Two new working-paper Guides are actual drafts from opened enacted law. They are **not accepted current-year coverage**: the Income Tax Regulations 0141/2025 and applicable transitional directions have not been read. Both stop before final 2026 tax treatment. Independent source review accepted repaired candidate `6477855a1c61821b0f70b8c15bf9473fe2edde4c` within the historical statutory-baseline scope only. No operative 2026 approval follows, and no accountant has attested. [Issue 486](https://github.com/openaccountants/openaccountants/issues/486) remains incomplete.
+**Partial local source-baseline draft, 1 November 2026.** Two new working-paper Guides are actual drafts from opened enacted law. They are **not accepted current-year coverage**: postponement notices and circulars under Income Tax Regulation 0142-2025 have not been checked (the ministry's file name says 0141; the decree and cover page say 0142). A later review read the regulation itself. Both stop before final 2026 tax treatment. Independent source review accepted repaired candidate `6477855a1c61821b0f70b8c15bf9473fe2edde4c` within the historical statutory-baseline scope only. No operative 2026 approval follows, and no accountant has attested. [Issue 486](https://github.com/openaccountants/openaccountants/issues/486) remains incomplete.
 
 The new Income Tax Act 37/2025 replaces the legacy income-tax framework. The six old 2025 Guides remain byte-identical to preserve research and topics; their figures are not recertified for 2026. In particular, do not apply an old Guide's bands, corporate scale, residence summary or no-capital-gains assertion as current law. This batch does not select replacement tax rates from conflicting summaries.
 
@@ -40,7 +40,7 @@ The new Income Tax Act 37/2025 replaces the legacy income-tax framework. The six
 
 ## What the two drafts do
 
-- The pricing job screens association under article 4 and the resident/associated non-resident condition under article 37. It produces a supported independent-price reconciliation with two executable cases. It does not invent a mandatory master/local file, prescribed method, safe harbour or submission process. Article 37(3) leaves exceptions and international guidance to regulations.
+- The pricing job screens association under article 4 and the resident/associated non-resident condition under article 37. It produces a supported independent-price reconciliation with two executable cases. It does not invent a mandatory master/local file, prescribed method, safe harbour or submission process. Regulation 37-1 ties the standard to the OECD guidelines and states no exception.
 - The residence job covers all article 77 person/entity tests, including 183 days in a relevant 12-month window, alternative home/citizenship/posting grounds and corporate effective management. It records article 78 transition and asset issues for separate work. Two day-count decisions show why fewer than 183 days is not itself a non-residence conclusion.
 
 Article 105(7) permits regulations to delay or modify operation. The manual's general commencement statement and a 2026 administration statute do not prove that no transitional measure exists. Neither draft should be described as reviewed operative 2026 law until that chain is resolved. The precise first application in 2025 is also excluded.
@@ -54,10 +54,10 @@ Article 105(7) permits regulations to delay or modify operation. The manual's ge
 - [Residence ledger](../../evidence/ledgers/so-cross-border-residence.md).
 - [Actual source-read scope and hashes](../../evidence/ledgers/somalia-source-read-20261101.md).
 
-Full gazette PDFs, scans, OCR and HTML remain privately in the sibling sources directory outside Git. The Attorney General's observed public download links worked normally. The ministry English manual opened through its current publication/Download link in the web reader; local fetching remained 403. The regulation was too large for that reader and 403 locally; the official archive fallback was also blocked. No access control or certificate warning was bypassed.
+Full gazette PDFs, scans, OCR and HTML remain privately in the sibling sources directory outside Git. The Attorney General's observed public download links worked normally. The ministry English manual opened through its current publication/Download link in the web reader; local fetching remained 403. The writer could not open the regulation; the 1 November review downloaded it with an ordinary request and read the provisions cited.
 
-Remaining work includes current regulations/transitional conditions, complete income/corporate/payroll rebuilding, sales-tax/social coverage, territorial administration, complete filing/payment workflows, treaty and PE/source/withholding/credit work, exit/entry tax computations and accountant attestation. No push, publication or merge forms part of this local freeze.
+Remaining work includes postponement notices and circulars, complete income/corporate/payroll rebuilding, sales-tax/social coverage, territorial administration, complete filing/payment workflows, treaty and PE/source/withholding/credit work, exit/entry tax computations and accountant attestation.
 
 ## Independent review checkpoint
 
-The [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) checked all 46 substantive ledger rules and found one exact-quotation transcription defect. The [focused closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md) confirms its correction against the actual Act 37 scan. Four examples pass, all 71 historical topics remain mapped, and six original Guides and CTA blocks remain unchanged. Acceptance is restricted to the cited statutory baseline; regulation and transition gaps still prevent operative 2026 acceptance or country completion.
+The [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) checked all 46 substantive ledger rules and found one exact-quotation transcription defect. The [focused closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md) confirms its correction against the actual Act 37 scan. Four examples pass, all 71 historical topics remain mapped, and six original Guides and CTA blocks remain unchanged. Acceptance is restricted to the cited statutory baseline; unchecked notices and circulars still prevent operative 2026 acceptance or country completion.
