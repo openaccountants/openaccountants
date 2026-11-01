@@ -1,0 +1,232 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "skills/dr-congo/cd-vat-gst.md",
+      "old_git_blob": "f96f0cda06447b03667338b18dc842c8ec202a60",
+      "old_sha256": "c33ff5874fab5c404250820721c8693b98ad5326cd4352b32925dcdc778764aa",
+      "candidate_sha256": "74ca04ffdc1b6cc07d3621da30141b66c2c593dcea6489de00181e3a0826a7e4",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_bytes_identical": true,
+      "platform_fields_identical": {
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "topics": [
+        {
+          "old_topic": "Heading: DR Congo VAT / GST",
+          "old_text": "# DR Congo VAT / GST",
+          "old_text_sha256": "c0b8857443dec20678bf40aa0937631a950f2aed8fc8e0d42ef3ccf9ca3dd21d",
+          "destination": "H1 and canonical headings; Who this applies to"
+        },
+        {
+          "old_topic": "Heading: Value-added tax (TVA)",
+          "old_text": "## Value-added tax (TVA)",
+          "old_text_sha256": "a249b70f7a49ff27c2d42543a84cb04986b3f1874016a402a7dc8257eb35b3f1",
+          "destination": "H1 and canonical headings; Who this applies to"
+        },
+        {
+          "old_topic": "Opening paragraph",
+          "old_text": "The DRC operates a value-added tax (Taxe sur la Valeur Ajoutée, TVA) at a standard 16% rate, administered by the DGI. This is an unverified 2025 draft pending accountant review.",
+          "old_text_sha256": "1b933a1b0018eea08375bcd4beaf2330d790decabedb70b62d5defd5a0bf48d9",
+          "destination": "Who this applies to; research notice; corresponding Rates/The base/filing sections; unsupported claims held in Sources"
+        },
+        {
+          "old_topic": "Standard VAT rate",
+          "old_text": "- **Standard VAT rate** — 16 percent  _([Ordonnance-loi n° 10/001 instituant la TVA](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "3b80fb3eb721c5ad1df73247da37ceaa3cfa56dddc25dc5a3b8cb23f5b532dd6",
+          "destination": "Rates, bands and thresholds: ordinary16%"
+        },
+        {
+          "old_topic": "Reduced rate",
+          "old_text": "- **Reduced rate** — 1 percent (on certain essential goods (e.g. specified food items and agricultural inputs) (approx — confirm scope))  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "beba0e5693c9245196338e0812d82cdef86ef681a73012331c0798ac22bcd1c4",
+          "destination": "Rates, bands and thresholds: two enacted schedules; eligibility/order holds"
+        },
+        {
+          "old_topic": "Zero rate",
+          "old_text": "- **Zero rate** — 0 percent (on exports of goods and services (approx — confirm))  _(Ordonnance-loi n° 10/001 instituant la TVA)_",
+          "old_text_sha256": "83c93057e184dc819923796812d36bc679c4f227ff9bfe64e9bc78bd651b102e",
+          "destination": "Rates, bands and thresholds; Cross-border points: actual exports/assimilated category"
+        },
+        {
+          "old_topic": "VAT registration threshold",
+          "old_text": "- **VAT registration threshold** — 80,000,000 CDF (Annual turnover exceeding CDF 80,000,000)  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "732dd8aece2e95ce40a2586a775fe825bbf680c496c6123f21b51ac51c6f8263",
+          "destination": "Who this applies to: inclusive threshold/profession exception"
+        },
+        {
+          "old_topic": "Filing frequency",
+          "old_text": "- **Filing frequency** — Monthly  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "21970ae8e54fa9479239c78db0e0c42576c7ccfcb98e1109e6ce3f4de00cda59",
+          "destination": "Deadlines and filing: monthly prescribed return"
+        },
+        {
+          "old_topic": "VAT return and payment deadline",
+          "old_text": "- **VAT return and payment deadline** — By the 15th day of the month following the taxable period  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "a8090b02140045eb902d108351d401f16c1b656014283944bf0ef1b3afc836aa",
+          "destination": "Deadlines and filing: fifteenth/nextmonth/payment/nil"
+        },
+        {
+          "old_topic": "Reverse charge on imported services",
+          "old_text": "- **Reverse charge on imported services** — VAT on services supplied by non-established providers is accounted for by the DRC recipient under a reverse-charge mechanism (approx — confirm)  _(Ordonnance-loi n° 10/001 instituant la TVA)_",
+          "old_text_sha256": "349bd6c28891ac9c3d66e0669c32b91aa2eef4ebef4c7375533e7bee7bf55325",
+          "destination": "Cross-border points; Sources: collection/representative rules expressly held"
+        },
+        {
+          "old_topic": "Voluntary registration",
+          "old_text": "- **Voluntary registration** — Businesses below the threshold (e.g. regular importers/exporters) may register voluntarily  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "f4c2b18941542448ab0364d218ecc41d864c40775d09ea6ea88158356b27d46b",
+          "destination": "Who this applies to: express option/twoyears/revocation"
+        },
+        {
+          "old_topic": "E-invoicing / e-filing",
+          "old_text": "- **E-invoicing / e-filing** — DGI is rolling out electronic invoicing and e-filing for VAT-registered companies under the 2025 modernization plan (approx — confirm)  _([DGI 2025 Tax Modernization Plan](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "b733fa6d8ee180e1b7f434bc3949d824e230bebca0b9433a6c34b52f37d05678",
+          "destination": "Deadlines and filing; Sources: resource labels versus unproved rollout mandate"
+        }
+      ]
+    },
+    {
+      "path": "skills/dr-congo/cd-payroll-social.md",
+      "old_git_blob": "90a947bf782a70198a963a054bf75b5c31c0c942",
+      "old_sha256": "b2c8821ec921db890a2de6878aadc888a43ee874ade2e6cdebe3fd85e24d0909",
+      "candidate_sha256": "ef47b0eaa5d3e53e76f53dacac76ba805e8fcf106bac64a916d5f1faee035087",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_bytes_identical": true,
+      "platform_fields_identical": {
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "topics": [
+        {
+          "old_topic": "Heading: DR Congo Payroll & Social Contributions",
+          "old_text": "# DR Congo Payroll & Social Contributions",
+          "old_text_sha256": "eaa1fa8f8ea18908af2b91daea5c3fcba643a531531ea67214702b2e0396abe6",
+          "destination": "H1 and canonical headings; Who this applies to"
+        },
+        {
+          "old_topic": "Heading: DR Congo Payroll & Social Contributions",
+          "old_text": "## DR Congo Payroll & Social Contributions",
+          "old_text_sha256": "4d727569c50a08ae9109aa4b71316ab1b9c247a2a71bc390a9e88825d4954fe9",
+          "destination": "H1 and canonical headings; Who this applies to"
+        },
+        {
+          "old_topic": "Heading: Social security and payroll contributions",
+          "old_text": "## Social security and payroll contributions",
+          "old_text_sha256": "7c1cd9bbb348643b2c016afbfa38275bd40b93a8826ba38ddf4876fd9466cd5c",
+          "destination": "H1 and canonical headings; Who this applies to"
+        },
+        {
+          "old_topic": "Opening paragraph",
+          "old_text": "Employers and employees contribute to the national social security fund (INSS, formerly CNSS) plus training and employment-office levies, and employers withhold IPR via PAYE. This is an unverified 2025 draft pending accountant review.",
+          "old_text_sha256": "b4ebd923a10b98d30b757ae3416b20ab7e2ec5260177fbbfcc77d7de7a909b15",
+          "destination": "Who this applies to; research notice; corresponding Rates/The base/filing sections; unsupported claims held in Sources"
+        },
+        {
+          "old_topic": "INSS social security — employer share",
+          "old_text": "- **INSS social security — employer share** — 13% percent  _(Loi n° 16/009 portant régime général de la sécurité sociale (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "6ec573b2ffa1c86863cb1111d21573914bc4f1da222b6a11f15f1148fbb23f4b",
+          "destination": "Who this applies to:correct CNSSname; Rates:ordinary13%derived; The base"
+        },
+        {
+          "old_topic": "INSS social security — employee share",
+          "old_text": "- **INSS social security — employee share** — 5% percent (withheld by the employer)  _(Loi n° 16/009 portant régime général de la sécurité sociale (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "b7ca2c377836ab9d65f5f5983b8ac2556e235757f83a78068ed38732f03d4193",
+          "destination": "Who this applies to:correct CNSSname; Rates:pension5%worker"
+        },
+        {
+          "old_topic": "Professional training levy (INPP) — companies with ≤50 employees",
+          "old_text": "- **Professional training levy (INPP) — companies with ≤50 employees** — 3% percent (employer only)  _(Code Général des Impôts (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "4cdfdbb239f0f38d188f207903a1ee4d7cf03deb57b02ea5a0caa53a4e1d1efc",
+          "destination": "Rates and Sources:INPP instrument/rate/bands held"
+        },
+        {
+          "old_topic": "Professional training levy (INPP) — 51 to 300 employees",
+          "old_text": "- **Professional training levy (INPP) — 51 to 300 employees** — 2% percent (employer only)  _(Code Général des Impôts (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "0bc20949c5cd933b09e30fe38e61569c23e6909234b0818dc08b84c3b5a403ba",
+          "destination": "Rates and Sources:INPP instrument/rate/bands held"
+        },
+        {
+          "old_topic": "Professional training levy (INPP) — more than 300 employees",
+          "old_text": "- **Professional training levy (INPP) — more than 300 employees** — 1% percent (employer only)  _(Code Général des Impôts (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "5cf8c0e10ef07520c6aa9be1fee94f696ff498bb7053934d8267f35dcc2d1f1f",
+          "destination": "Rates and Sources:INPP instrument/rate/bands held"
+        },
+        {
+          "old_topic": "Employment office levy (ONEM)",
+          "old_text": "- **Employment office levy (ONEM)** — 0.2% percent (employer only)  _(Code Général des Impôts (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "1e017fcfeca5a0e3dffc2e5b0bc60b598226176ddb324217606cd48fcb2b1a05",
+          "destination": "Rates and Sources:ONEM instrument/rate/base held"
+        },
+        {
+          "old_topic": "Exceptional tax on expatriate remuneration (IER) — standard",
+          "old_text": "- **Exceptional tax on expatriate remuneration (IER) — standard** — 25% percent (employer-borne, on remuneration of expatriate employees from non-bordering countries)  _(Code des Impôts sur les Revenus (IER/IERE) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "c8b543b1f1d7b28f4cad847f7366f9b3cbf409f13ae457927bcdd997b579f6b9",
+          "destination": "Rates; The base:25%employerlevy, exemptions, no unproved neighbouring-country exclusion"
+        },
+        {
+          "old_topic": "Exceptional tax on expatriate remuneration (IER) — mining companies",
+          "old_text": "- **Exceptional tax on expatriate remuneration (IER) — mining companies** — 10% percent (deductible for corporate tax)  _(Code Minier (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "b7cd4505890ea8293c7d0ab632e5f1d2546c00c7ebfc6597e1f384cfef5eadfa",
+          "destination": "The base; Sources:miningrate/deductibility expressly held"
+        },
+        {
+          "old_topic": "PAYE withholding (IPR on salaries)",
+          "old_text": "- **PAYE withholding (IPR on salaries)** — Employer withholds progressive IPR monthly (capped at 30% of taxable salary)  _(Code des Impôts sur les Revenus (IPR) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/individual/tax-administration))_",
+          "old_text_sha256": "f2687b3737caee6e0f25094772cc0490526125aaf361e5b996d537e268ea1640",
+          "destination": "Rates; The base:IRPP monthly duty and annualscalehandoff; implementationheld"
+        },
+        {
+          "old_topic": "Contribution wage base / cap",
+          "old_text": "- **Contribution wage base / cap** — Contributions are computed on gross salary; a contribution ceiling may be set by INSS regulation ((approx — confirm current cap))  _(Loi n° 16/009 portant régime général de la sécurité sociale)_",
+          "old_text_sha256": "4f36cdc07fafa3d140264acc66872d288e81d63d4eb27589b6e9e4c815599eb5",
+          "destination": "The base:actual inclusions/exclusions andminimum; ceilingexpresslyheld"
+        },
+        {
+          "old_topic": "Remittance deadline (payroll taxes and contributions)",
+          "old_text": "- **Remittance deadline (payroll taxes and contributions)** — By the 15th of the month following salary payment, via a single return  _(Code Général des Impôts (RDC) (https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "2791f55d3ee92f9030c27c9d0cb34a6673fdf745ae12b9d84eda8fe86ee37eed",
+          "destination": "Deadlines and filing:separate CNSS/IRPP/expatriate schedules; sharedreturn not assumed"
+        }
+      ]
+    }
+  ],
+  "unchanged_prior_files": [
+    {
+      "path": "skills/dr-congo/cd-income-tax.md",
+      "git_blob": "395ac45675d05de7e1be48eb06a0c34539fb430b",
+      "sha256": "8216ac9efcaf76ba5c3f775417e3896024f3ab5d445d8c966b10fd6ff6fddaaa"
+    },
+    {
+      "path": "skills/dr-congo/cd-corporate-income-tax.md",
+      "git_blob": "351d63b627812fc47e2e0979a93e3ccbc772e565",
+      "sha256": "3a94318a445e48cbd1d973cc8ef83b26e581f3976a2e368a01b1b9e8feccd433"
+    },
+    {
+      "path": "skills/dr-congo/cd-transfer-pricing.md",
+      "git_blob": "57e66ab4c820825a5d32049a217123ad86add437",
+      "sha256": "631405e941fde4ad0374386514f096825749077285c580d22eb48d3da9eb19aa"
+    },
+    {
+      "path": "skills/dr-congo/cd-cross-border.md",
+      "git_blob": "e5ed1c1bfd74b62644f186cd454dcd5b99d49ad7",
+      "sha256": "c34c58ce3f047127b6e251333200571664ea6df4244b4fdabcea6f5652d3a2de"
+    },
+    {
+      "path": "skills/dr-congo/cd-tax-overview.md",
+      "git_blob": "02ab000f992b25037f4f8e17ffb7cfa99013a6a5",
+      "sha256": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4"
+    },
+    {
+      "path": "skills/dr-congo/cd-company-formation.md",
+      "git_blob": "1f6e9850bffa118a5cc429a4e75b8e3e0a702d9e",
+      "sha256": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a"
+    }
+  ],
+  "historical_evidence_unchanged": true
+}

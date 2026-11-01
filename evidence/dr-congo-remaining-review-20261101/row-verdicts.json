@@ -1,0 +1,1941 @@
+[
+  {
+    "guide": "cd-vat-gst",
+    "id": 1,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Unreconciled carried 2025 provisions require a legal-chain hold",
+    "article": "25/060 art. 16",
+    "writer_locator": "16",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          16
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "86df045a1a10998df71c5bb9d95e9045c2e87c82328eda76b34e7d3cac612cba"
+        ]
+      }
+    ],
+    "short_quote": "sont d’application dans le cadre de la présente Loi",
+    "quote_sha256": "570e20ed6d42e06ce000f1b75f3ac5a142e7d01da8ebfcd0ba1367a9c740e382",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Actual carry-forward list makes missing original 24/011 reconciliation a valid hold."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 2,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Original law begins 1 January 2026; rectifier begins on 7 August 2026 promulgation; unchanged original provisions saved",
+    "article": "25/060 art. 88; 26/032 arts. 49–51",
+    "writer_locator": "53; 17",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          53
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "7ca2ad704c6740eb9dc52278ef0c6727ecbb3a263b061e9c82ba1a3b2646ca6f"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          17
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "1ad50b52ac09e1bc5921c4589711394326d6f74dcaa2a4bb89ab3012735c8e5f"
+        ]
+      }
+    ],
+    "short_quote": "La présente Loi entre en vigueur à la date de sa promulgation.",
+    "quote_sha256": "c9511a0ae1d565a0437084ded25a1b60ccf8bbda652f2d9f1e803923d52b5bd5",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Original 1 January commencement and rectifier promulgation/unchanged-law savings confirmed."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 3,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Independent habitual/occasional taxable activity; public service exclusion depends on competition",
+    "article": "DGI VAT scope",
+    "writer_locator": "scope section",
+    "reviewer_sources": [
+      {
+        "cache_file": "dgi-vat.html",
+        "url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+        "pages": "named HTML section",
+        "source_sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+        "passage_text_sha256": [
+          "d02d4cfad768b22d33b338049287f471aea3eafc9f1612c2a1f5871e6bdf9d15"
+        ]
+      }
+    ],
+    "short_quote": "lorsque leur nonassujettissement n’entraîne pas de distorsions dans les conditions de la concurrence",
+    "quote_sha256": "004efc9d582627af5ad6fe7c9da19ccec7d0dd8629f7acd06a5eb56f200b609e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Public-service exclusion depends on distortion of competition; no blanket immunity asserted."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 4,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Inclusive annual 80 million CDF threshold; liberal professions regardless of turnover",
+    "article": "001/2012 art. 1 replacing 10/001 art. 14",
+    "writer_locator": "3",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          3
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "dbc37c2689c1a7fcc07f487fbc8a4da66efbcba579561675e9c03bd379cd9536"
+        ]
+      }
+    ],
+    "short_quote": "égal ou supérieur à 80.000.000 de Francs congolais",
+    "quote_sha256": "3a621fea744c87f139cd34cebbe09ec3fa206e863d4d99cedb5102080f9e1b39",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Inclusive threshold and professional exception accurately reproduced as cited historical baseline."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 5,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Express below-threshold option under regulatory modalities, definitive two years unless revoked",
+    "article": "VAT art. 14 as replaced",
+    "writer_locator": "3",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          3
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "dbc37c2689c1a7fcc07f487fbc8a4da66efbcba579561675e9c03bd379cd9536"
+        ]
+      }
+    ],
+    "short_quote": "Elle est définitive pendant deux ans suivant l’exercice de l’option",
+    "quote_sha256": "30e535018a73ab07d293dc4d241b7a8235fbc1124123fcfbd621228da38c12e0",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Express request, two-year option and administrative revocation all retained."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 6,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Existing status persists following two years after turnover falls; minister can change threshold",
+    "article": "VAT art. 14 as replaced",
+    "writer_locator": "3",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          3
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "dbc37c2689c1a7fcc07f487fbc8a4da66efbcba579561675e9c03bd379cd9536"
+        ]
+      }
+    ],
+    "short_quote": "celui-ci conserve sa qualité les deux années suivant celle de la constatation de la diminution du chiffre d’affaires",
+    "quote_sha256": "72ed759afbc5b2eed71401ba4c6f365ec8b6c53bb8942bb30d09f945afcafa6d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Two following years retained; ministerial adjustment power prevents automatic currentness claim."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 7,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Ordinary 16% outside reduced/zero categories in both enacted schedules",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "32; 8",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          32
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "b91d7c16aa0bdb5eccc34ae3200656d0d099855df4ce635f9fd05f410f94c4f7"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          8
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "edca9ebc18b2e282bdbf2afd96a1e7dad4e762704ded338d2ec1055b32f1af9e"
+        ]
+      }
+    ],
+    "short_quote": "16% applicable à toutes les opérations imposables",
+    "quote_sha256": "50f5cf58eabe91734d1614b4341f14ce738fb899b4e24aa847e8ba1fed4bb527",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "16% excludes reduced/zero operations in each text."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 8,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Tariff 1006.20.00 brown rice 1% original; 8% rectifier acquisitions/sales",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "33; 9",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          33
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "d1812298715e11cc0ee5fe1c7eedb7ce404513601b8036c8df3518101f203224"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          9
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "e1bc41c9382611ed09afe4143f6593d761277b84ba7d63a4b894d1bd7b53b2ae"
+        ]
+      }
+    ],
+    "short_quote": "Riz décortiqué (riz cargo ou riz brun)",
+    "quote_sha256": "551227e799cf8d832b32241889a428116465dfccf85f7d08719fa7f4744d194d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "1006.20.00 is 1% original and 8% rectifier; acquisition/sale scope retained."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 9,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Domestic air ticket 5% both schedules",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "35; 10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "à la vente des billets d’avion sur le trafic aérien national, soit 5%",
+    "quote_sha256": "0c268a81383ff52b3ab0f4c66b41f23eeb36928319634b5bea4d14e096762ed8",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "National air-ticket sales remain 5% in both versions."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 10,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Original local-cement inputs 1%; rectifier enumerated inputs and sale wording 5%",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "35; 10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "pièces de rechange destinées aux équipements de production du ciment et à la vente, soit 5%",
+    "quote_sha256": "07e589b491b1848dccdeab83077bd335d2b19b0b0c8008dd93e0008ba486954d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Cement acquisition category changes 1% to enumerated 5%; anomalous sale wording not silently resolved."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 11,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Original agro-industry raw/input 1% bullet not reproduced in rectifier; no carry-forward conclusion",
+    "article": "25/060 art. 46; 26/032 art. 13 complete replacement",
+    "writer_locator": "35; 8–10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          8,
+          9,
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "edca9ebc18b2e282bdbf2afd96a1e7dad4e762704ded338d2ec1055b32f1af9e",
+          "e1bc41c9382611ed09afe4143f6593d761277b84ba7d63a4b894d1bd7b53b2ae",
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "produits agricoles bruts et intrants destinés à l’agro-industrie",
+    "quote_sha256": "62fc0dd5531ee5c727909c19d0f72321adcd232650cd7eb6301d4c7c74f3211d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Original agro-industry bullet absent from complete August replacement; no invented continuation."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 12,
+    "verdict": "fix_original_scope",
+    "rule": "Listed local industrial-metal acquisitions 1%; rectifier adds tantalum and amended item scope",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "34; 9",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          34
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "af3d1d7a3c6348bd136a2f2c8509662e275ed6c6285089c4b2370295249cfb7d"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          9
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "e1bc41c9382611ed09afe4143f6593d761277b84ba7d63a4b894d1bd7b53b2ae"
+        ]
+      }
+    ],
+    "short_quote": "aux acquisitions locales des matières premières pour la valorisation de l’industrie locale",
+    "quote_sha256": "c2cd70dedcf4e10ec6d7c67203168c078c77b3ad99a7d723c268a5644a34bf69",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Original metals list does not expressly say local acquisitions; joint Guide row and ledger12 incorrectly carry August local-acquisition scope into original version. Retain original local-industry purpose and distinguish August local acquisitions.",
+    "additional_original_quote": "aux matières premières pour la valorisation de l’industrie locale",
+    "additional_original_quote_sha256": "bcffc97ddc7575a105cb7321c0ba85075dec7186550eb76191c42b85c3a576a0"
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 13,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Palm-refining inputs 1% require ministerial list; locally produced refined oil 1%",
+    "article": "26/032 art. 13",
+    "writer_locator": "10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "dont la liste sera déterminée par Arrêté du Ministre ayant les Finances dans ses attributions",
+    "quote_sha256": "d72fa5200a327a6c27f706bcfa1d7ca15d1958180c09df612475ed81ab2ce3a6",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Palm-input list delegated to order; local refined-oil sale category separately present."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 14,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "National-interest public infrastructure construction category 1%",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "35; 10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "projets publics d’infrastructures d’intérêt national, soit 1%",
+    "quote_sha256": "fcfef9a993a7940e57818a33dcc2a1bc2d6bcd0cf0fe560f1836fd5b830da311",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Public national-interest infrastructure materials/services acquisition category retained."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 15,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Reduced 1% benefit conditional on acquisition-quota mechanism; implementation order required",
+    "article": "26/032 art. 13 last paragraph",
+    "writer_locator": "10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "est subordonné à un mécanisme de contingentement des acquisitions de biens et services éligibles",
+    "quote_sha256": "b3783c3a477efe81a2063d177456e328bc20511eac9e5ea82ae413f7f87b5125",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "August 1% benefit expressly depends on quota mechanism and ministerial implementation."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 16,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Exports and assimilated operations 0%; foreign customer alone insufficient",
+    "article": "25/060 art. 46; 26/032 art. 13",
+    "writer_locator": "35; 10",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      },
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "b0a790c8c02fa28d4cc74e02dd66bc4ba018704cb7baf599844f9eaaac78effd"
+        ]
+      }
+    ],
+    "short_quote": "taux 0%, applicable aux exportations et opérations assimilées",
+    "quote_sha256": "55051cdebcfe5bfdf0db6f05437a50a13e801fa2b0e76c39cfd76da0597e348a",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Zero category exports and assimilated operations; foreign customer alone is not statutory classification."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 17,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Read actual product/code tables; rectifier anomalies not silently repaired",
+    "article": "26/032 art. 13",
+    "writer_locator": "8–9",
+    "reviewer_sources": [
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          8,
+          9
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "edca9ebc18b2e282bdbf2afd96a1e7dad4e762704ded338d2ec1055b32f1af9e",
+          "e1bc41c9382611ed09afe4143f6593d761277b84ba7d63a4b894d1bd7b53b2ae"
+        ]
+      }
+    ],
+    "short_quote": "Les taux de la taxe sur la valeur ajoutée sont les suivants",
+    "quote_sha256": "06f142b01e4db5fbc5868ed9269802e7451d2a81b2f09a778420ccd06cfc1304",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Actual numbering/code anomalies observed; Guide correctly requires direct table classification."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 18,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Goods ownership-disposal definition; exchanges/contributions/hirepurchase/disposals/exports included",
+    "article": "VAT art. 6 as replaced",
+    "writer_locator": "1",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          1
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "b661f4aa620963259176a4a4b73d955ebe721f638da949cfeee877b2a9cff7cb"
+        ]
+      }
+    ],
+    "short_quote": "un transfert du pouvoir de disposer de ce bien comme propriétaire",
+    "quote_sha256": "e0b36437d59d511d2accdeed14001487561a6a2b4da420823c0926829fdba039",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Transfer-of-owner-disposal and non-exhaustive named goods operations confirmed."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 19,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Services are other-than-tangible-goods deliveries; specified rental/professional/telecom/construction operations",
+    "article": "VAT art. 8 as replaced",
+    "writer_locator": "1–2",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          1,
+          2
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "b661f4aa620963259176a4a4b73d955ebe721f638da949cfeee877b2a9cff7cb",
+          "064c758ff0ffc75eca3b5d2ae40b279540bb8780928f9a6b390b03b508fe2a8d"
+        ]
+      }
+    ],
+    "short_quote": "toutes les opérations autres que les livraisons de biens meubles corporels",
+    "quote_sha256": "4ddd0d71984fa873c73bd1df5e599b6496cb1266f5a456f3ea91edb43dcf3970",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Other-than-tangible-delivery service definition and named activity types confirmed."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 20,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Self-produced fixed assets include own tangible/intangible production with or without third parties",
+    "article": "25/060 art. 45 adding VAT art. 10(2)",
+    "writer_locator": "32",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          32
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "b91d7c16aa0bdb5eccc34ae3200656d0d099855df4ce635f9fd05f410f94c4f7"
+        ]
+      }
+    ],
+    "short_quote": "avec ou sans le concours de tiers",
+    "quote_sha256": "2c83eff76d98cb04e7af2a395b55dbc4068973724d03f71c8f9b5ee10eae903d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Own tangible/intangible fixed-asset production includes third-party assistance."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 21,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Article 28 addition includes applicable taxes/duties/excises excluding VAT; complete valuation/tax-point chain held",
+    "article": "26/032 art. 12 adding VAT art. 28(5)",
+    "writer_locator": "8",
+    "reviewer_sources": [
+      {
+        "cache_file": "lfr-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+        "pages": [
+          8
+        ],
+        "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+        "passage_text_sha256": [
+          "edca9ebc18b2e282bdbf2afd96a1e7dad4e762704ded338d2ec1055b32f1af9e"
+        ]
+      }
+    ],
+    "short_quote": "y compris les droits d’accises, applicables aux produits ou aux services, à l’exclusion de la taxe sur la valeur ajoutée elle-même",
+    "quote_sha256": "3b987391e2b89feb01b454ac7cd8625ba42f90cf8a91142f6858bf28962faef8",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Added tax/duty/excise base rule excludes VAT itself; broader valuation held."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 22,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Net output minus eligible input VAT, not automatic cost recovery",
+    "article": "DGI VAT method",
+    "writer_locator": "characteristics section",
+    "reviewer_sources": [
+      {
+        "cache_file": "dgi-vat.html",
+        "url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+        "pages": "named HTML section",
+        "source_sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+        "passage_text_sha256": [
+          "d02d4cfad768b22d33b338049287f471aea3eafc9f1612c2a1f5871e6bdf9d15"
+        ]
+      }
+    ],
+    "short_quote": "verser au Trésor la différence entre la TVA qu’elle a collectée et celle qu’elle a déduite",
+    "quote_sha256": "722c452031003b7ba3401db8b25d4f3ccfc253c26399d7015ae34ad23e54b132",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Authority describes collected less deductible VAT; Guide retains eligibility qualifications."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 23,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Proper taxable-supplier invoice/equivalent needs tax number; foreign supplier exception with regulated liquidation",
+    "article": "VAT art. 38(1) as replaced",
+    "writer_locator": "8",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          8
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "2176bafe47736df14d10c56bada35979bd971d882913c10721cb87ddf31d9aa2"
+        ]
+      }
+    ],
+    "short_quote": "en ce qui concerne les factures émises par les prestataires étrangers, cette condition n’est pas exigée",
+    "quote_sha256": "cd056853f5c03e167c9971193a2d2f23b5a9a439543f4d4eed24da62a0f648ef",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Article 38 supplier invoice/tax-number condition and foreign-provider exception retained."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 24,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Import customs consumption declaration and self-invoice evidence",
+    "article": "VAT art. 38(2)–(3) as replaced",
+    "writer_locator": "8",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          8
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "2176bafe47736df14d10c56bada35979bd971d882913c10721cb87ddf31d9aa2"
+        ]
+      }
+    ],
+    "short_quote": "sur la déclaration de mise à la consommation établie par la douane",
+    "quote_sha256": "730cc7c7169879c9af7dfd7a9d77049c157a508873f104a91e141f5d3da60091",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Customs consumption declaration and self-invoice evidence distinguished."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 25,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Final export-related deductions require customs evidence of actual export",
+    "article": "VAT art. 39 as replaced",
+    "writer_locator": "8",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          8
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "2176bafe47736df14d10c56bada35979bd971d882913c10721cb87ddf31d9aa2"
+        ]
+      }
+    ],
+    "short_quote": "l’effectivité de l’exportation est établie par les documents douaniers",
+    "quote_sha256": "19f35f032b991f5f5f8d97867b86e2a167269fc046a280e5160b645fbbd2cb0e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Export effectiveness requires customs documents for final deduction."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 26,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Article 41 lists expense/use exclusions with professional/use exceptions; no blanket deduction",
+    "article": "VAT art. 41 as replaced",
+    "writer_locator": "9",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          9
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "cc46fdbd6ca6528abd0fa53288fe3f964715af0dc2985be58e37514e6b712f39"
+        ]
+      }
+    ],
+    "short_quote": "N’ouvre pas droit à déduction, la taxe ayant grevé",
+    "quote_sha256": "5c5a7600f8df005301072b800381f14fcdb6a587a7eff7d2d1fa2a8479069a64",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Expense exclusions have professional/use exceptions; Guide screens full exclusion list and holds currentness."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 27,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Article 42 passenger-vehicle/transport exclusions with enumerated exceptions",
+    "article": "VAT art. 42 as replaced",
+    "writer_locator": "9–10",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          9,
+          10
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "cc46fdbd6ca6528abd0fa53288fe3f964715af0dc2985be58e37514e6b712f39",
+          "dac63dd85ec802a8456eaecdef67ed982cbe6322bb7a4ef8c151125ff87d3510"
+        ]
+      }
+    ],
+    "short_quote": "Toutefois, l’exclusion visée ci-dessus ne concerne pas",
+    "quote_sha256": "935e5000431eff3366f2906a0062368bb1837ebaafb764e5812b013da4997ac7",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Passenger-vehicle/transport exclusions and express exceptions read; no blanket deduction given."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 28,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Unfindable supplier or invoice address excludes input VAT",
+    "article": "25/060 art. 47 adding VAT art. 42(4)",
+    "writer_locator": "35",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba"
+        ]
+      }
+    ],
+    "short_quote": "une facture dont l’adresse renseignée est introuvable",
+    "quote_sha256": "83d6ac49ff8e760e93e4b1c3528567104f5429e18fbf43368af9c6f0ed661507",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Unfindable supplier/notified address and unfindable invoice address are alternative denial limbs."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 29,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Duplicate invoice/customs-declaration deduction receives article 74 sanction; amount held",
+    "article": "25/060 art. 50 adding VAT art. 74(2)",
+    "writer_locator": "36–37",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          36,
+          37
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "3ff69d71803112f04f2a69ea32765e8d1934174614d43625aba0291a5522b6b7",
+          "2f8658c64e06d147deac5ee94c6b4561cb65d541e7820822982d9d7064b66a5f"
+        ]
+      }
+    ],
+    "short_quote": "plus d’une fois pour la déduction de la taxe sur la valeur ajoutée",
+    "quote_sha256": "9e467ce32ac19aec6d15563331c075f6ead61a10f1512676649f50d6124b0f00",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Duplicate invoice/customs deduction sanction added; numerical sanction not invented."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 30,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Historical at-least 1 million CDF transaction between taxable persons requires cheque/transfer/card; minister can change",
+    "article": "001/2012 art. 3 adding VAT art. 59 bis",
+    "writer_locator": "12",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          12
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "f4b108fb9cc2eb7eff80e3cc77ce370efac43a16d86a98061da3fd36999c5151"
+        ]
+      }
+    ],
+    "short_quote": "doit être payée par chèque, par virement ou par carte bancaire",
+    "quote_sha256": "6ba978c7611b7dbda373a510c368b44d58994050fee3cfff6214092cd5e335e0",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Historical bank-payment requirement is at least 1m and between VAT taxable persons; adjustment power retained."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 31,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Breach of historical bank-payment condition loses input deduction; current chain held",
+    "article": "001/2012 art. 3 adding VAT art. 74 bis",
+    "writer_locator": "12",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          12
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "f4b108fb9cc2eb7eff80e3cc77ce370efac43a16d86a98061da3fd36999c5151"
+        ]
+      }
+    ],
+    "short_quote": "la perte du droit à déduction de la taxe sur la valeur ajoutée supportée",
+    "quote_sha256": "e9f167cfced04c52a1cd724a9abcb6736eca2093752b2ac6dd90a320af519900",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Breach loses supported input deduction under historical text; current chain expressly held."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 32,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Refund has request/claimant/investment/timing/limit conditions; no automatic cash-refund entitlement",
+    "article": "VAT art. 64 as replaced",
+    "writer_locator": "11",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          11
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "2698208b0248aae5380397a32b01335ffe59ffc13a5f97e8b274620f291cd80d"
+        ]
+      }
+    ],
+    "short_quote": "sur demande expresse adressée à l’Administration des impôts",
+    "quote_sha256": "e1a57e9b0bfc5f5f2dc535056f6e3348dabcc01352e6045082435524ad76807e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Refund request, claimant classes, investment and time/amount limits read; Guide grants no automatic refund."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 33,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Monthly prescribed return by 15 thnextmonth in duplicate with payment, including nil and self-supplies",
+    "article": "25/060 art. 48 replacing VAT art. 60",
+    "writer_locator": "35–36",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          35,
+          36
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "08f95a0fbcd8d682961c0b91f61a8db681107f00cac515c23f0f5003cbb132ba",
+          "3ff69d71803112f04f2a69ea32765e8d1934174614d43625aba0291a5522b6b7"
+        ]
+      }
+    ],
+    "short_quote": "La déclaration doit être souscrite même si aucune opération imposable n’a été réalisée",
+    "quote_sha256": "524368634d5c41185730d8df8570a0437d9093fc6651278c13f8360bf1ad0812",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Monthly following-15th, duplicate, payment, nil and self-supply requirements confirmed."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 34,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Ordinary import VAT declared/paid before removal",
+    "article": "VAT art. 61 as replaced",
+    "writer_locator": "10",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          10
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "dac63dd85ec802a8456eaecdef67ed982cbe6322bb7a4ef8c151125ff87d3510"
+        ]
+      }
+    ],
+    "short_quote": "avant l’enlèvement de la marchandise",
+    "quote_sha256": "ce4047894484075095b32c03d164bf192ce6190bfa69b9e1e83028b51220f3c1",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Import declaration/payment before removal confirmed as historical text."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 35,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Mining import/local manufactured special mechanism excludes petroleum and needs ministerial modalities",
+    "article": "25/060 art. 49 replacing VAT art. 62",
+    "writer_locator": "36",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          36
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "3ff69d71803112f04f2a69ea32765e8d1934174614d43625aba0291a5522b6b7"
+        ]
+      }
+    ],
+    "short_quote": "à l’exception des produits pétroliers",
+    "quote_sha256": "1b042c3c79a2413507e31a57cc8795b5f6756d408077ffcea665451ef8866727",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Mining import/local manufactured goods mechanism excludes petroleum and requires implementation order."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 36,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Public form/resource labels do not establish authenticated submission/receipt",
+    "article": "DGI VAT resources",
+    "writer_locator": "resource labels",
+    "reviewer_sources": [
+      {
+        "cache_file": "dgi-vat.html",
+        "url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+        "pages": "named HTML section",
+        "source_sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+        "passage_text_sha256": [
+          "d02d4cfad768b22d33b338049287f471aea3eafc9f1612c2a1f5871e6bdf9d15"
+        ]
+      }
+    ],
+    "short_quote": "Nouveau modèle officiel de formulaire de déclaration de la TVA",
+    "quote_sha256": "ea46f07d46038122ebf5368e889f57572fa0b97e2f4b434980652d45b8e60850",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Public resource labels are present; neither login nor successful filing claimed."
+  },
+  {
+    "guide": "cd-vat-gst",
+    "id": 37,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Registration fine historical article 69 read but current amount and consolidated tax penalties held",
+    "article": "VAT art. 69 as replaced; 25/060 art. 50",
+    "writer_locator": "11; 36–37",
+    "reviewer_sources": [
+      {
+        "cache_file": "vat2012.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+        "pages": [
+          11
+        ],
+        "source_sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+        "passage_text_sha256": [
+          "2698208b0248aae5380397a32b01335ffe59ffc13a5f97e8b274620f291cd80d"
+        ]
+      },
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          36,
+          37
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "3ff69d71803112f04f2a69ea32765e8d1934174614d43625aba0291a5522b6b7",
+          "2f8658c64e06d147deac5ee94c6b4561cb65d541e7820822982d9d7064b66a5f"
+        ]
+      }
+    ],
+    "short_quote": "L’absence de déclaration d’assujettissement auprès de l’Administration des impôts dans le délai est sanctionnée",
+    "quote_sha256": "d0d59d482211b729ead575d73974d0382beeac52cf0c6351160bd063a2e5878e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Historical registration fine exists; Guide deliberately withholds current amount/consolidated penalties."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 1,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Current CNSS replaced INSS; authority identifies the institution.",
+    "article": "CNSS institutional page",
+    "writer_locator": "history section",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-rates.html",
+        "url": "https://cnss.cd/?page_id=1388",
+        "pages": "named HTML section",
+        "source_sha256": "4989b72705238e7e77e2eae3a8c8b7fc11dcbc19ded62b166978729214ce3b28",
+        "passage_text_sha256": [
+          "5bb019af38f021cd8676b239903b3b9832dba5e0e89e930334eb29566399c411"
+        ]
+      }
+    ],
+    "short_quote": "remplacer l’ancien Institut National de Sécurité Sociale",
+    "quote_sha256": "52a1eca0500932fbd91cfe4bc1087e9ba520a6ce31122efe9625aa658fef9e32",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Institutional source says CNSS replaced former INSS; historical page date typo does not affect naming conclusion."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 2,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Ordinary principal work in DR Congo without nationality distinction; additional named categories.",
+    "article": "16/009 art. 3; Regulation 146 arts. 1–3",
+    "writer_locator": "6; 117–118",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          6,
+          117,
+          118
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "5b706d7ceacdc711c5fb8596974bf3e944bfb7574fe13e9a27542e4d72d7d465",
+          "2cf25da7fcb6a11cf3b4a1511caa5f40dd3fe39e356f626d8f9fca70f56cf3c8",
+          "cedc416d216b05650ef6fa98285f692853d39385a72e4cbe542f661988c8646c"
+        ]
+      }
+    ],
+    "short_quote": "sans aucune distinction de race, de nationalité",
+    "quote_sha256": "d73847cfcef05d7cb2d40a3a143bd03c196c11727585e779bf0b4a0247854133",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Ordinary principal-national-work and nationality-independent scope confirmed; special categories not flattened."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 3,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Specified apprentices and trainees have risk-only coverage; full-branch status is not automatic.",
+    "article": "16/009 arts. 4–5",
+    "writer_locator": "6–7",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          6,
+          7
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "5b706d7ceacdc711c5fb8596974bf3e944bfb7574fe13e9a27542e4d72d7d465",
+          "6012092379d8a6711b90e5db8a0271c504faec925ca22de2acc7907d59f0862e"
+        ]
+      }
+    ],
+    "short_quote": "pour la branche des risques professionnels",
+    "quote_sha256": "71cc07f938c10c9ba6841f8275e845f92a7e8aff2295e877191093f4260f50d7",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Risk-only article 4 categories distinguished from article 3 full-branch scope and article 5 optional scope."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 4,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Direction, authority and employment facts determine worker status; an employer uses one or more workers.",
+    "article": "Regulation 146 arts. 1–3",
+    "writer_locator": "117–118",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          117,
+          118
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "2cf25da7fcb6a11cf3b4a1511caa5f40dd3fe39e356f626d8f9fca70f56cf3c8",
+          "cedc416d216b05650ef6fa98285f692853d39385a72e4cbe542f661988c8646c"
+        ]
+      }
+    ],
+    "short_quote": "sous la direction et l’autorité d’une personne physique ou morale",
+    "quote_sha256": "7a3b2cb75209e8c1a5ba7b9cf2585045e3623f3a12d7d574eae471d3a709ec4d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Direction/authority and employment relationship confirmed; employer may use one or more workers."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 5,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Family branch: 6.5%, employer only.",
+    "article": "18/041 art. 2",
+    "writer_locator": "59",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          59
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "57a5b1ca95e2ddb2ef3d653b90018c912908597171afc1063b3af1b243160218"
+        ]
+      }
+    ],
+    "short_quote": "fixé à 6,5 %, à charge exclusive de l’employeur",
+    "quote_sha256": "30064b6f2dd7d24f1fa3dd54d5730f3ab1441084cc3eaf1f7637cde60f6272c6",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "6.5% family contribution entirely employer borne."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 6,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Pension branch: 10%, split 5% employer and 5% worker.",
+    "article": "18/041 art. 3",
+    "writer_locator": "59",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          59
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "57a5b1ca95e2ddb2ef3d653b90018c912908597171afc1063b3af1b243160218"
+        ]
+      }
+    ],
+    "short_quote": "5% à charge de l’employeur",
+    "quote_sha256": "98e020b8184ea031e81ee53eeb06185b940e369efe60d0e4f8730cca3dce9068",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "10% pension split equally 5% employer/worker."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 7,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Ordinary risks: 1.5%, employer only; up to double for noncompliance; separate special-risk instrument.",
+    "article": "18/041 arts. 4–5; 16/009 arts. 16–17",
+    "writer_locator": "59; 12",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          59,
+          12
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "57a5b1ca95e2ddb2ef3d653b90018c912908597171afc1063b3af1b243160218",
+          "8f49536c5e57e1a033bcc486111cf7529519816ec75a114dcbd3e30f3981a7f6"
+        ]
+      }
+    ],
+    "short_quote": "fixé à 1,5% à charge exclusive de l’employeur",
+    "quote_sha256": "4c11815563e2d956f1797d610f7f5ee699d122deb2a1d172916d6ce163d5bbbc",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "1.5% ordinary risks, doubling for noncompliance and separate high-risk-rate power retained."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 8,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Ordinary derived employer 13%, worker 5%, total 18%, only for the stated full-branch facts.",
+    "article": "18/041 arts. 2–6",
+    "writer_locator": "59",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          59
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "57a5b1ca95e2ddb2ef3d653b90018c912908597171afc1063b3af1b243160218"
+        ]
+      }
+    ],
+    "short_quote": "appliqués aux personnes assujetties à tout ou partie du régime général de la sécurité sociale",
+    "quote_sha256": "64a623a7f306915b8f43bdf41a76a37af4905a1da1fb8560291ffc1a67646b67",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Derived employer 13%, employee 5%, total 18% arithmetic valid only stated ordinary full-branch facts."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 9,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Pension and family rates deferred to 1 January 2019; historical transition and decree commencement read.",
+    "article": "18/041 arts. 10–11",
+    "writer_locator": "60–61",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          60,
+          61
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "47108b61b38a4edbbc699d3bcc1b8e0221eb52464bd95ba858795fcc7b12cb96",
+          "f72a67e5c1815b96fc810dd4150dba2a994990272bac2e26fbeb2d4c15a103d4"
+        ]
+      }
+    ],
+    "short_quote": "est différée au 1er janvier 2019",
+    "quote_sha256": "84fa999180ffdca1384e75b7f81d8aeb0ea3b5ec6d7b95100795d385f4c80682",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Pension/family deferral to 1 January 2019 and decree signature commencement confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 10,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Contribution base cannot fall below guaranteed minimum; current amount and cap remain unproved.",
+    "article": "18/041 art. 8; 16/009 art. 13",
+    "writer_locator": "60; 11",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          60,
+          11
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "47108b61b38a4edbbc699d3bcc1b8e0221eb52464bd95ba858795fcc7b12cb96",
+          "5505e80252023d8069315bbaac11cd10c7fc5a3910f4c151d49385019409763a"
+        ]
+      }
+    ],
+    "short_quote": "ne peut être inférieur au salaire minimum interprofessionnel garanti",
+    "quote_sha256": "e15b932e87d9ea4f955b4075fbfbd0a8955e3b3d48f67f4153a2337a0b93d89c",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Minimum base floor confirmed; current minimum/cap not inferred from historical text."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 11,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "CNSS base includes listed remuneration gains, overtime, benefits, holiday and incapacity/maternity pay.",
+    "article": "Regulation 146 art. 17(1)",
+    "writer_locator": "123",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          123
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "743b57c3726d91049ac6c592e8863fb43d97462adc41d727d911f53cb785ddc2"
+        ]
+      }
+    ],
+    "short_quote": "l’ensemble des gains susceptibles d’être évalués en espèces",
+    "quote_sha256": "ff71261acb7307ccaa9789811a86a106a35f94f16994497abe861f5e35f2229e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Salary/commission/bonus/overtime/in-kind/holiday/incapacity and maternity components confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 12,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "CNSS base excludes healthcare, housing, legal family allowances, transport, travel and exclusively duty-facilitating benefits.",
+    "article": "Regulation 146 art. 17(1)",
+    "writer_locator": "123",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          123
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "743b57c3726d91049ac6c592e8863fb43d97462adc41d727d911f53cb785ddc2"
+        ]
+      }
+    ],
+    "short_quote": "Ne sont pas éléments de la rémunération",
+    "quote_sha256": "013537022c00bb7b1ce9a3cc700894723db234c31928f9d165e5a6034691694b",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Healthcare, housing, legal family, transport, travel and exclusively duty-facilitating benefits excluded."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 13,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Specified assimilated-worker base differs; includes listed emoluments, benefits and attendance fees.",
+    "article": "Regulation 146 art. 17(2)",
+    "writer_locator": "123",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          123
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "743b57c3726d91049ac6c592e8863fb43d97462adc41d727d911f53cb785ddc2"
+        ]
+      }
+    ],
+    "short_quote": "l’ensemble des rétributions perçues en contre partie de ses prestations",
+    "quote_sha256": "265f40be47b16527b1ee1c9434b46405f67b982dda423d8e85f0f9246dec00f3",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Article 17(2) special base specifically concerns article 3(2),(4),(6); Guide flags specified category rather than all workers."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 14,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Employer applies branch rates to supported remuneration for monthly service, paid leave and other legally remunerated periods.",
+    "article": "Regulation 146 arts. 19–20",
+    "writer_locator": "124",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          124
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "0098545f6c5bbab5f47a88eb0cf99f6235abdde2a2b9e68c25cc2409b888342a"
+        ]
+      }
+    ],
+    "short_quote": "une période de service effectif, une période de congés rémunérés",
+    "quote_sha256": "0f08fe808ec1bc4ae1fc6bd269a414b29ac460ad3d48e6221639b5d46d676e5d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Rates applied to supported remuneration for service, paid leave and other legally payable periods."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 15,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Employer owes all contributions and missed deductions; cannot recover an omitted worker deduction later.",
+    "article": "16/009 art. 19; Regulation 146 art. 29",
+    "writer_locator": "12–13; 127",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          12,
+          13,
+          127
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "8f49536c5e57e1a033bcc486111cf7529519816ec75a114dcbd3e30f3981a7f6",
+          "1d2040f8f0e6587555816f6e1d05949c558131afffcd7420f3907f3d935553cb",
+          "0bb838b583d9b66f72b039b387029f6da2b54c6460ac90d07242e5089e62f676"
+        ]
+      }
+    ],
+    "short_quote": "Il ne peut en aucun cas les récupérer auprès du travailleur",
+    "quote_sha256": "c3c389823d60532832fb1367110b0ed5cdf927df038b5138146696642980ffe3",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Employer owes whole remittance and bears missed deductions; retrospective recovery from worker prohibited."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 16,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Employer contribution is exclusively its charge; successive employers account for their remuneration proportionately.",
+    "article": "16/009 art. 19; Regulation 146 art. 30",
+    "writer_locator": "13; 127",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          13,
+          127
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "1d2040f8f0e6587555816f6e1d05949c558131afffcd7420f3907f3d935553cb",
+          "0bb838b583d9b66f72b039b387029f6da2b54c6460ac90d07242e5089e62f676"
+        ]
+      }
+    ],
+    "short_quote": "La cotisation de l’employeur reste exclusivement et définitivement à sa charge",
+    "quote_sha256": "c00167355442857428dd09b967f37e7c450de7ce61960f31c849130c6c435f6b",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Employer share definitively its charge; successive employers proportionate to remuneration paid."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 17,
+    "verdict": "fix_locator",
+    "rule": "IRPP monthly withholding uses salary net base and references annual scale; monthly implementation held; art.126 requires ministerial collection/remittance modalities.",
+    "article": "23/053 arts. 119,126 with 70–71,118",
+    "writer_locator": "30; 39–40",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          29,
+          30,
+          39,
+          40,
+          41
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "f7e133dbfcadb8dfbda20a3efe3fa63d96098edcdc6b12cfe2b823666e1079ea",
+          "8b3ae8f29315268e9a2b1428b741754e83f0cbf6dfc896e6988b6859441c1398",
+          "b35f8a7c9e80eaccc9276061206b4425bd035ee11676318e464d59e3a6d5586a",
+          "929a0dfff7438556875acf4597dd7bda158e27a92a8148db7782d3b8f6978d81",
+          "d050a8eeee4891dc0dd121126913971431ace5124bc673161dcf83eaf1c42ce2"
+        ]
+      }
+    ],
+    "short_quote": "est retenu mensuellement par l’employeur pour le compte du Trésor public",
+    "quote_sha256": "d170c1670011b68f83d6a24f9967ffcbc8228d4b6040880a23f4bdda102a1a03",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Substance confirmed, including art.126 ministerial modalities; ledger locator must include actual PDF29 (art.70 beginning) and PDF41 (art.126)."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 18,
+    "verdict": "fix_locator",
+    "rule": "Domestic and microenterprise employee withholding finality requires sole income; no ordinary annual finality assumed.",
+    "article": "23/053 arts. 70,121",
+    "writer_locator": "30; 40",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          29,
+          30,
+          40
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "f7e133dbfcadb8dfbda20a3efe3fa63d96098edcdc6b12cfe2b823666e1079ea",
+          "8b3ae8f29315268e9a2b1428b741754e83f0cbf6dfc896e6988b6859441c1398",
+          "929a0dfff7438556875acf4597dd7bda158e27a92a8148db7782d3b8f6978d81"
+        ]
+      }
+    ],
+    "short_quote": "pour autant que ces rémunérations constituent pour eux des revenus uniques",
+    "quote_sha256": "91cf1f8e2e9b699b8ba3b4137bb5864ae0bc608a1891e5e884aecb78c2dabd37",
+    "quote_match": "visually confirmed PDF40; OCR peur/pour error",
+    "reviewer_note": "Domestic/microenterprise finality requires sole income; visual scan confirms quote despite OCR peur/pour error. Ledger art.70 locator must include PDF29 beginning, not only PDF30 continuation."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 19,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Expatriate levy is an employer charge: 25% of gross article 68 pay with salary exemptions; payment/availability trigger.",
+    "article": "23/053 arts. 145–149",
+    "writer_locator": "43",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          43
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "ccf3b07e17f7b285e6e5027fd0078b0ba2120e384b63223982b840bb2f876288"
+        ]
+      }
+    ],
+    "short_quote": "25%du montant brut des rémunérations",
+    "quote_sha256": "05a8e06d773abfe9c1a35e4432f300d9779e3ce8fedc00f15938ced1f09b1ec6",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Enterprise-employer expatriate levy: qualifying gross art.68 pay, salary exemptions/immunities, 25%, payment/availability trigger."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 20,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Monthly declaration within 15 days following month; unique form for business creators, others Model DC in triplicate.",
+    "article": "Regulation 146 art. 21",
+    "writer_locator": "124",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          124
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "0098545f6c5bbab5f47a88eb0cf99f6235abdde2a2b9e68c25cc2409b888342a"
+        ]
+      }
+    ],
+    "short_quote": "une déclaration de versement des cotisations sera remplie en trois exemplaires",
+    "quote_sha256": "2c845a52f2816fe5676e63e1b86e5161b7cb4ca55454a6087a215929b23cb26e",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "15-day monthly declaration and business-creator unique versus other territorial DC/triplicate routes confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 21,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Declaration identification, period, pay/base, branches and payment fields; payroll sheets attached.",
+    "article": "Regulation 146 arts. 22–25",
+    "writer_locator": "124–126",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          124,
+          125,
+          126
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "0098545f6c5bbab5f47a88eb0cf99f6235abdde2a2b9e68c25cc2409b888342a",
+          "fce4e1e4d215626cf52a32f4d8978ad71ca8700050ac23c94fcd6096d42d97f6",
+          "42f07798bb1d8995bf35a46b79cd805f9b7f7ea380f3ca811d43415d29162ad4"
+        ]
+      }
+    ],
+    "short_quote": "L’employeur est tenu de joindre à cette déclaration une copie des feuilles de paie",
+    "quote_sha256": "4063602cd598b617934e91edf4535ebb857521be006ed436379c19ed72a910ca",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Identification/pay/base/branch/payment fields and payroll attachments checked in articles22–25."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 22,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "More than 25 workers electronic with receipt; fewer than 25 electronic or paper; exactly 25 wording gap.",
+    "article": "Regulation 146 art. 24",
+    "writer_locator": "125",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          125
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "fce4e1e4d215626cf52a32f4d8978ad71ca8700050ac23c94fcd6096d42d97f6"
+        ]
+      }
+    ],
+    "short_quote": "plus de vingt-cinq travailleurs",
+    "quote_sha256": "ef989caddef454eaca27a7e5ba1b67dd9874b8c16d0cb3bc8b841be2542bbbd8",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "More than25 electronic with receipt; fewer than25 either route; source literally omits exactly25."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 23,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "No-worker report within 15 days; centralised declaration details each centre; missing annexes equals no declaration.",
+    "article": "Regulation 146 arts. 26–28",
+    "writer_locator": "126",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          126
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "42f07798bb1d8995bf35a46b79cd805f9b7f7ea380f3ca811d43415d29162ad4"
+        ]
+      }
+    ],
+    "short_quote": "vaut défaut de déclaration",
+    "quote_sha256": "7485c8f6417a29f5d0c84a65d3a6274360086256f66934dcfc95ef6db2928d2a",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "No-worker declaration within15 days, centre details and missing-attachment default consequence confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 24,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "CNSS account credited within 15 days following month; five-day regularisation does not move original deadline.",
+    "article": "Regulation 146 art. 31; Regulation 138 art. 2",
+    "writer_locator": "127; 69",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          127,
+          69
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "0bb838b583d9b66f72b039b387029f6da2b54c6460ac90d07242e5089e62f676",
+          "5fef7fe2b8c1fc036b1fc94fac6caf690124ac9129bc5c264fd4c7673d40aa4b"
+        ]
+      }
+    ],
+    "short_quote": "dans les quinze jours suivant le mois civil auquel elles se rapportent",
+    "quote_sha256": "47dab5e48d8b9ace4c2c8acf1b62e0e07f48f8b937aaf413e01b4023c054495a",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Account must be credited within15 days; five-day regularisation and 21st penalty start do not replace due date."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 25,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Salary withholding remitted by fifteenth following payment/availability month; managing-service declaration including nil.",
+    "article": "23/052 art. 1 replacing 004/2003 art. 18",
+    "writer_locator": "5",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          5
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "54a8023a9d3f396102f9863d678cf95789d6df959ddda16da44337ac788891ac"
+        ]
+      }
+    ],
+    "short_quote": "Cette déclaration doit être souscrite même si les revenus salariaux et revenus assimilés ne sont pas versés",
+    "quote_sha256": "6377e82dee22265e5b5ee09edce16bdfa6dd442a4db45e8d8a463d497d1432a4",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Salary tax remittance by next-month15th with managing-service declaration including nil confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 26,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Expatriate levy remitted within 15 days following payment/availability month; managing-service declaration including nil.",
+    "article": "23/052 art. 1 replacing 004/2003 art. 19",
+    "writer_locator": "5",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          5
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "54a8023a9d3f396102f9863d678cf95789d6df959ddda16da44337ac788891ac"
+        ]
+      }
+    ],
+    "short_quote": "dans les quinze jours qui suivent le mois au cours duquel les rémunérations ont été versées",
+    "quote_sha256": "c103b24b3a60e6f4781752aaa14381acfd126c28e85a2d459e35e969b4dbcc83",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Expatriate levy next-month15day remittance and managing-service declaration including nil confirmed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 27,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Annual employer salary report by 31 March for specified taxpayers, individual sheets by province/alphabetical; separate individual return.",
+    "article": "25/060 art. 22 replacing 004/2003 art. 22 ter",
+    "writer_locator": "18",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          18
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "33f71a0f1f8f55fdd3b4e16f8324db300ba6d12553c67771209381cff668350e"
+        ]
+      }
+    ],
+    "short_quote": "au plus tard le 31 mars de chaque année",
+    "quote_sha256": "efd56b0a56fe9576a3c8dd81dfb036fc6a3e0c84ee2214645de91086c0225821",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Employer report by31March for specified entities/real-small taxpayers, with individual/province/alphabetical sheets."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 28,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "CNSS late payment: 0.5% daily starts twenty-first following month, ends on full payment.",
+    "article": "Regulation 138 arts. 2–3",
+    "writer_locator": "69",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          69
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "5fef7fe2b8c1fc036b1fc94fac6caf690124ac9129bc5c264fd4c7673d40aa4b"
+        ]
+      }
+    ],
+    "short_quote": "à partir du vingt-unième jour du mois civil suivant celui auquel se rapportent les cotisations sociales",
+    "quote_sha256": "6c00193f674c5fc928178e3f43d4557242bf71679249c9e40592d333ea125a2d",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "0.5% daily late-payment start21st/end full payment confirmed; case day count expressly assumed."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 29,
+    "verdict": "fix_missing_relief_condition",
+    "rule": "Good-faith outside-circumstance exception for late bank credit; force-majeure relief needs application/proof.",
+    "article": "Regulation 138 arts. 4–8",
+    "writer_locator": "69",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          69,
+          70
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "5fef7fe2b8c1fc036b1fc94fac6caf690124ac9129bc5c264fd4c7673d40aa4b",
+          "43cf802ca6b9107dc5fbb80b5f09bc288ed0046b4641413384411df32aee80b3"
+        ]
+      }
+    ],
+    "short_quote": "aucune majoration de retard ne peut être mise à charge de l’employeur de bonne foi",
+    "quote_sha256": "7d683f884f398eece64be45e54115b63d9eafa71ecac26ef90ba9e6531ccd074",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Good-faith outside-circumstance exception supported, but force-majeure relief omits mandatory principal-payment admissibility and no-stay conditions from arts6–7."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 30,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Missing declaration/annexes: default last return plus 30%; late replacement return: 0.5% per day on declared amount; no blind stacking.",
+    "article": "Regulation 138 arts. 9–10",
+    "writer_locator": "70",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          70
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "43cf802ca6b9107dc5fbb80b5f09bc288ed0046b4641413384411df32aee80b3"
+        ]
+      }
+    ],
+    "short_quote": "sur base de la dernière déclaration de versement majoré de trente pour cent",
+    "quote_sha256": "a3d32d55038bddaa9aea96aac910448e4a07666c9e448a43d557cd9d609f06f9",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Default last return plus30%; later return replaces assessment with0.5% daily declared-base charge; no blind stacking."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 31,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "CNSS-caused delay needs proof and minutes for cancellation; force-majeure cancellation needs application.",
+    "article": "Regulation 138 arts. 11–12",
+    "writer_locator": "70",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          70
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "43cf802ca6b9107dc5fbb80b5f09bc288ed0046b4641413384411df32aee80b3"
+        ]
+      }
+    ],
+    "short_quote": "après établissement d’un procès verbal entre les deux parties",
+    "quote_sha256": "03429182143eeef6e07d859d1768ea9f2d1f2b40e1fa236d46725a97e2ad0ed6",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "CNSS-caused delay proof/minutes and force-majeure annulment route supported."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 32,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Tax sanctions follow amended fiscal Procedures Law; CNSS rates cannot be borrowed.",
+    "article": "23/053 art. 151",
+    "writer_locator": "44",
+    "reviewer_sources": [
+      {
+        "cache_file": "loi-is-et-irpp-23-053.pdf",
+        "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+        "pages": [
+          44
+        ],
+        "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+        "passage_text_sha256": [
+          "cc7a8759d49010117554b37e02a23e02a7e936ee79ea9f4d62beadaae02c9856"
+        ]
+      }
+    ],
+    "short_quote": "aux sanctions fiscales et pénales ainsi qu’aux réclamations et recours",
+    "quote_sha256": "e62c65b659f44c7bba32b664adb8e9da1403fecb615d40cbac3919f01a80d70c",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Article151 applies amended Procedures Law to tax sanctions; no borrowing CNSS rates."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 33,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Congolese worker sent abroad by Congo employer at most six months; foreign worker sent to Congo by foreign employer over six months; no inverse exemption inferred.",
+    "article": "16/009 art. 3(7)–(8); Regulation 146 art. 3",
+    "writer_locator": "6; 117–118",
+    "reviewer_sources": [
+      {
+        "cache_file": "cnss-recueil.pdf",
+        "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+        "pages": [
+          6,
+          117,
+          118
+        ],
+        "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+        "passage_text_sha256": [
+          "5b706d7ceacdc711c5fb8596974bf3e944bfb7574fe13e9a27542e4d72d7d465",
+          "2cf25da7fcb6a11cf3b4a1511caa5f40dd3fe39e356f626d8f9fca70f56cf3c8",
+          "cedc416d216b05650ef6fa98285f692853d39385a72e4cbe542f661988c8646c"
+        ]
+      }
+    ],
+    "short_quote": "pour une durée excédant six mois",
+    "quote_sha256": "e8aae2ec53d0bb2ae03bef06e95af73d117527560d1c18b354f81271ab66026a",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Outbound Congolese worker no more than6months/inbound foreign worker more than6months conditions preserved without inverse exemption."
+  },
+  {
+    "guide": "cd-payroll-social",
+    "id": 34,
+    "verdict": "pass_conditional_source_fidelity",
+    "rule": "Carried 2025 tax provisions remain unreconciled; historical social collection is not an exhaustive 2026 consolidation.",
+    "article": "25/060 art. 16",
+    "writer_locator": "16",
+    "reviewer_sources": [
+      {
+        "cache_file": "lf-2026-recettes.pdf",
+        "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+        "pages": [
+          16
+        ],
+        "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+        "passage_text_sha256": [
+          "86df045a1a10998df71c5bb9d95e9045c2e87c82328eda76b34e7d3cac612cba"
+        ]
+      }
+    ],
+    "short_quote": "sont d’application dans le cadre de la présente Loi",
+    "quote_sha256": "570e20ed6d42e06ce000f1b75f3ac5a142e7d01da8ebfcd0ba1367a9c740e382",
+    "quote_match": "normalised text confirmed",
+    "reviewer_note": "Carried 2025 provisions require hold; historical collection is not proved exhaustive current consolidation."
+  }
+]

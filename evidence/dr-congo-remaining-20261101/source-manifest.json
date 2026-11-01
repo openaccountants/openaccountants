@@ -1,0 +1,107 @@
+{
+  "read_date": "2026-11-01",
+  "meaning": "Actual named extracts read by writer; acquisition alone is not reading. Historical and 2026 enacted sources do not establish complete operative-law chain. Raw source binaries/OCR remain outside Git.",
+  "sources": [
+    {
+      "cache_file": "vat2012.pdf",
+      "official_url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+      "sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+      "bytes": 6309824,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "All 12 pages read as 2012 amendment. Replacements 6,8,14–19,38–42,45,61,64,69; insertion 59 bis,62 bis,74 bis; commencement. Current consolidation not established.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "cnss-recueil.pdf",
+      "official_url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+      "sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+      "bytes": 1844578,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "PDF 6–7,11–13,59–61,69–70,117–118,123–127:16/009 arts. 3–6,13–21; 18/041 arts. 1–11; Regulation 138 arts. 1–12; Regulation 146 arts. 1–4,17–31. 163-page collection not read in full.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "lf-2026-recettes.pdf",
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "bytes": 13819458,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "25/060 arts. 16,22,24,45–50,88; PDF 16,18–19,32–37,53. Full annexes and carried 2025 provisions not read.",
+      "visual_pages": [
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "cache_file": "lfr-2026-recettes.pdf",
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+      "bytes": 72688605,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "26/032 arts. 12–13,49–51, PDF 8–10 and 17. Actual rate conditions and table anomalies read. Not whole annexes.",
+      "visual_pages": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "cache_file": "loi-is-et-irpp-23-053.pdf",
+      "official_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "bytes": 2931692,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "23/052 replacement 004/2003 arts. 18–19,PDF 5; 23/053 arts. 68–71,118–126,145–153,PDF 28–30,39–44. Scope used here: employer and salary research, not all categories.",
+      "visual_pages": [
+        43
+      ]
+    },
+    {
+      "cache_file": "dgi-vat.html",
+      "official_url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+      "sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+      "bytes": 575375,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Scope, characteristics/netting, turnover/professions and public resource labels; no form payload/authentication inspected.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "cnss-rates.html",
+      "official_url": "https://cnss.cd/?page_id=1388",
+      "sha256": "4989b72705238e7e77e2eae3a8c8b7fc11dcbc19ded62b166978729214ce3b28",
+      "bytes": 172744,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Fund institutional naming and three-branch rate section; background history not certified.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "cnss-declare.html",
+      "official_url": "https://cnss.cd/?page_id=1698",
+      "sha256": "e5c71fc42eb5bbc3392e6ff65ac8555a2bd22b2832b872ffcdde47344c8ea9a7",
+      "bytes": 161781,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Complete operational declaration text:routes, deadline, attachments, worker-count wording, acknowledgement, nil/centralised returns.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "cnss-pay.html",
+      "official_url": "https://cnss.cd/?page_id=1707",
+      "sha256": "89b0e1285f30888798c2c2902a14689e5c1fc985d4ca9f5ce3139521bbff649d",
+      "bytes": 161041,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Complete payment operational text including timing and late/default-return charges; crosschecked against actual collection.",
+      "visual_pages": []
+    },
+    {
+      "cache_file": "cnss-workers.html",
+      "official_url": "https://cnss.cd/?page_id=1735",
+      "sha256": "887663f6bd06eec1d85b98734034be94874c5f49851223a7b2d57fff11c97003",
+      "bytes": 161474,
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Ordinary/specified worker coverage text; used as acquisition corroboration, governing scope cited to collection.",
+      "visual_pages": []
+    }
+  ]
+}
