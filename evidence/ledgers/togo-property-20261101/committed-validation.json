@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "47c65b0646ba12ab7949ae08eaadbb45456e1d8f",
+  "validator": {
+    "actual_guides": 1,
+    "result": "pass",
+    "warning_groups": 1,
+    "warning": "Distinct property-tax slug has no seven-domain mapping; country cell not checked."
+  },
+  "strict_sync": {
+    "source_guides": 1,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "examples": {
+    "guides": 1,
+    "oa_check_blocks": 2,
+    "failures": 0
+  },
+  "shape_checks": {
+    "passed": 15,
+    "failed": 0
+  },
+  "whole_base_whitespace": "pass",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+}
