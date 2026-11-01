@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01",
+  "kind": "Saved diff formatting repair only",
+  "failure": "git diff --check flagged two single-space blank context lines in saved unified diff; Guide/source/README checks passed.",
+  "original_artifact_commit": "7d9efeba43100fd38df673410abd99a11e5f6207",
+  "original_artifact_sha256": "fa8051ad8760da5e54d49a5c619a8f04d8ae3d949343b4e7ec9accfa17f8a36c",
+  "zero_context_diff_sha256": "3728f21c10d0ad187a130808d6c73e3a27f1619706407e6c10e45e8413e952a2",
+  "README_after_sha256": "0c0a19e2fcfd54c3a74f14b29efc956c52e371d752f4ebfb69633da9764092f2",
+  "change": "Regenerated same old/new README diff with zero context; removed only unchanged context lines. Original raw artifact retained in preceding commit. No substantive content or original review/closure changed."
+}

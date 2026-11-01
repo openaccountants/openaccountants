@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "disposition": "Accepted; saved diff formatting change only.",
+  "original_artifact_commit": "7d9efeba43100fd38df673410abd99a11e5f6207",
+  "original_artifact_sha256": "fa8051ad8760da5e54d49a5c619a8f04d8ae3d949343b4e7ec9accfa17f8a36c",
+  "zero_context_diff_sha256": "3728f21c10d0ad187a130808d6c73e3a27f1619706407e6c10e45e8413e952a2",
+  "exact_removed_and_added_lines_unchanged": true,
+  "removed_lines": 1,
+  "added_lines": 1,
+  "zero_context_diff_recomputed_from_exact_before_after_README": true,
+  "README_sha256": "0c0a19e2fcfd54c3a74f14b29efc956c52e371d752f4ebfb69633da9764092f2",
+  "all_bound_Guides_ledgers_and_original_review_closure_status_receipts_unchanged": true,
+  "unchanged_paths_compared_to_commit": 29,
+  "whole_base_git_diff_check_exit": 0,
+  "whole_base_git_diff_check_output": "",
+  "parent_repair_record_sha256": "468ea20312e4762fc59a37745ebdb3202bbb6358af28da077f830b45b4192bfe",
+  "scope": "Only unchanged unified-diff context removed. No law, source, Guide, README, substantive review result, currentness hold or attestation state changed. Original artifact retained in immutable commit history.",
+  "reviewer_edited_other_files_committed_or_pushed": false
+}
