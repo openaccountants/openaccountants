@@ -1,10 +1,10 @@
 ---
 name: it-estimated-tax
 description: Use this skill whenever asked about Italian estimated income tax advance payments (acconti IRPEF) for self-employed individuals, freelancers, or professionisti. Trigger on phrases like "acconti IRPEF", "acconto imposta", "estimated tax Italy", "Italian advance tax", "primo acconto", "secondo acconto", "historical method", "forecast method", "metodo storico", "metodo previsionale", "F24 payment", or any question about advance income tax obligations under the TUIR. Covers the two-instalment schedule (40% by Jun 30, 60% by Nov 30), historical vs forecast computation methods, the EUR 257.52 threshold, penalties for shortfall, and F24 payment procedures. ALWAYS read this skill before touching any estimated tax work for Italy.
-version: 2.1
+version: 2.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -404,8 +404,6 @@ Before delivering output, verify:
 **Not yet confirmed:** taxpayer-specific extensions; detailed addizionale computations/local rates; foreign-credit timing and non-resident payment mechanics; regime-transition bases; post-notice/audit-stage voluntary-correction fractions and successor rules for regularisation in 2027; any 2027 interest rate. The bank matching windows are heuristic cues only. No prior executable check was removed: the earlier skill had none; all six prose examples and seven qualitative scenario checks are retained.
 
 > Contributed by OpenAccountants.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

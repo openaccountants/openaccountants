@@ -1,13 +1,13 @@
 ---
 name: fr-cross-border
 description: "France cross-border income tax for individuals, tax year 2026: residence tests (CGI art. 4 A, 4 B), non-residents with French income (the 20%/30% minimum rate of art. 197 A and the average-rate option), withholding on salaries (art. 182 A) and on fees and royalties (art. 182 B), the levy on property gains (art. 244 bis A), social levies for non-residents (17.2%, 18.6%, or 7.5% when covered by another EU scheme), the impatriate regime (art. 155 B), treaty credits, A1 postings and penalties. Trigger on: non-résident France, impatrié, article 155 B, prime d'impatriation, taux minimum 20 %, taux moyen, retenue à la source 182 A, 244 bis A, prélèvement de solidarité 7,5 %, crédit d'impôt conventionnel. Out of scope: leaving France and exit tax (leaving-france-exit-tax), company outbound withholding and CFC (fr-corporate-tax), the resident computation (fr-personal-income-tax)."
-version: 0.3
+version: 0.4
 jurisdiction: FR
 tax_year: 2026
-last_updated: 2026-10-31
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -299,8 +299,6 @@ expected:
 | Regulation2026/2359 delayed posting application | https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81651 | 2026-10-29 |
 
 Historical source limit: impots.gouv.fr and BOFiP were unavailable to the earlier 23 October reading. Selected current official pages and clauses were actually read on 29 October and are bound in the figure ledger. The published UK relief, annual alternative impatriate caps and salary-withholding refund route above are now supplied. Not yet confirmed: the applicable 2027 filing dates and any 2027 finance-law replacement of the scale; the full statutory implementation bridge for the UK continuation; reconciliation of the literal nationality wording of art. 197 B with the agency’s general non-resident method and the complete artist-specific finality computation. The 2026 tariff is separately published for 2026 payments, not inferred from the 2027 return calendar.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: lc-personal-tax-deductions
 description: >
   Saint Lucia resident individual deduction rules introduced by the February 2026 Income Tax Amendment Act, with specified changes applying from the 2025 income year. Covers the aggregate deduction cap, child and dependent-relative allowances, mortgage interest, co-operative shares and investment deductions. Use for Saint Lucia income tax allowances, the EC$40,000 cap or revised 2025 return deductions. The Guide distinguishes individual entitlement from shared limits and prevents treating the cap as an automatic allowance. It does not compute the full income tax return, personal allowance, pension exemption, tax bands or PAYE code. Independent review remains pending.
-version: 0.1
+version: 0.2
 jurisdiction: LC
 tax_year: 2025
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -57,8 +57,6 @@ Assume all underlying conditions and individual limits are satisfied:
 ## Filing controls and limits
 
 Keep receipts, lender certificates, proof of maintenance, education status and investment documentation. Reconcile capped and excluded claims separately. These rules do not establish the personal allowance, tax bands, pension treatment, filing deadline or a final tax balance. The first-time land deduction has a separate Guide. Independent accountant review remains required.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,10 +1,10 @@
 ---
 name: portugal-payroll
 description: "Portuguese payroll for employees, tax year 2026: monthly IRS withholding under CIRS arts. 98 to 101 and the 2026 tables for the mainland (Despacho 233-A/2026), the Azores (Despacho 1179/2026) and Madeira (Despacho 19/2026), including the 50% cut for November 2026 pay; holiday and Christmas subsidies and twelfths; employee 11% and employer 23.75% Social Security; the 2026 meal allowance limits (EUR 6.15 cash, 70% more on a card); IRS Jovem in withholding; the DMR by the 10th, IRS paid by the 20th, Social Security from the 1st to the 25th; minimum wage; overtime; fines and interest. Trigger on: Portugal payroll, processamento de salários, retenção na fonte, tabelas de retenção 2026, TSU, subsídio de férias, subsídio de Natal, duodécimos, subsídio de refeição, DMR, salário líquido. Out of scope: the self-employed and contributions in depth (pt-social-contributions), the annual IRS return (pt-irs-employees-investment), non-residents (pt-cross-border), NHR and IFICI (pt-nhr-ifici)."
-version: 1.1
+version: 1.2
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -17,8 +17,6 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 # Portugal payroll (tax year 2026) v1.1
 
 > **Source-cited draft.** No accountant has reviewed this skill yet. Figures come from the Código do IRS (CIRS) on the Portal das Finanças, the 2026 withholding despachos, the Código dos Regimes Contributivos and the Código do Trabalho in the Diário da República, read on 24 October 2026. It prepares working papers; it is not authority to file or pay.
-
-> Contributed by Ryan Duguid.
 
 Related skills:
 - `pt-social-contributions`: Social Security in depth, the self-employed, members of corporate bodies (MOE), contribution fines and interest.

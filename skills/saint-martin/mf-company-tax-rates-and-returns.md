@@ -2,13 +2,13 @@
 name: mf-company-tax-rates-and-returns
 description: >
   French Saint-Martin company-tax reference for taxpayers already established as liable to local corporate income tax. Covers the ordinary rate, conditional small-company profit band, turnover and ownership tests, short-period adjustments, ordinary loss carryforward and separate return and balance-payment deadlines. Includes threshold and arithmetic examples using the official code consolidated through June 2026. Identifies an unresolved instalment-rate cross-reference rather than inventing a payment formula. Residence, territorial entitlement, special gains, group restructuring, incentives and full tax-base adjustments require separate analysis; this is a source-cited draft awaiting independent review, not comprehensive coverage.
-version: 0.2
+version: 0.3
 jurisdiction: MF
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -80,8 +80,6 @@ Reconcile the result package, payment reference and supporting computation befor
 Confirm MF rather than Dutch Sint Maarten, local liability, financial-year opening date, period length, strict turnover boundary, continuous ownership, paid-up capital, special income and loss history. Keep declaration timing separate from instalment and balance dates. Retrieve the current official filing channel and forms before submission.
 
 Source-cited draft awaiting independent source and professional review. Detailed residence, tax-base adjustments, distributions, related-party rules, special gains, incentives and the instalment ambiguity remain outside the completed computation scope. This is not a comprehensive company-tax pack or individualized filing advice.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

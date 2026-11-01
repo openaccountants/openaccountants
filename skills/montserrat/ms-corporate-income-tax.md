@@ -2,13 +2,13 @@
 name: ms-corporate-income-tax
 description: >
   Montserrat corporate income tax reference checked for 2026 against the official Income and Corporation Tax Act consolidation. Covers the standard company rate, the distinction between accounting profit and chargeable income, selected expense restrictions, annual return requirements and instalment payments. Includes an illustrative tax reconciliation and a separate prior-assessment instalment example. Use after company residence, taxable scope and the relevant accounting period have been established. Identifies remitted branch profits as a separate withholding issue. Incentives, capital allowances, losses, treaty relief and later legislative changes require further review. This source-cited draft is not accountant-attested.
-version: 0.1
+version: 0.2
 jurisdiction: MS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -54,8 +54,6 @@ For last assessed tax of EC$24,000, the three equal instalments are EC$8,000 eac
 Section 39(4) separately addresses withholding on remitted Montserrat business profits of non-resident companies, in addition to income tax, with a provision for amounts shown not to have been remitted. Do not assume payment of the 30% company tax settles that obligation. [Section 39(4)](https://www.gov.ms/wp-content/uploads/2026/02/17.01-Income-and-Incorporation-Tax-Act.pdf).
 
 Residence, special regimes, related-party payments, capital deductions, losses, group structures and international relief need separate Guides and verification. A post-consolidation amendment audit and independent accountant review remain outstanding; this is not comprehensive corporate coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -2,13 +2,13 @@
 name: km-personal-tax-domicile
 description: >
   Comoros personal tax domicile reference linking the new 2026 definition to the earlier income-tax framework. Sets out the permanent-home and economic-interests alternatives, identifies the unresolved relationship with the older broader residence tests, and distinguishes domestic domicile from treaty allocation. Describes the baseline arrival and departure provisions with explicit amendment-review limits and points to new tax-clearance requirements for permanent departure. Does not invent a day-count safe harbour or certify historic rate tables as current. Full intervening amendments, treaty applications, numerical liability calculations and independent accountant review remain outstanding.
-version: 0.1
+version: 0.2
 jurisdiction: KM
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -50,8 +50,6 @@ The 2026 addition to LPF L.4 ter expressly lists a tax-regularity attestation fo
 ## Remaining work
 
 Checked 22 October 2026. Resolve article 45 versus new article 50 bis, complete the intervening amendment audit, establish treaty outcomes and obtain current departure forms and clearance instructions. Historic personal-tax bands are deliberately not certified as 2026 rates here. No independent accountant review has occurred. This is a source-cited domicile topic, not full personal-tax or comprehensive country coverage.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

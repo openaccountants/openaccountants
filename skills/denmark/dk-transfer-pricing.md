@@ -1,13 +1,13 @@
 ---
 name: dk-transfer-pricing
 description: "Danish transfer pricing for income year 2026: companies, permanent establishments and controlling shareholders that deal with related parties. Covers the arm's length rule in Ligningsloven § 2 (more than 50% control, group links, secondary and corresponding adjustments, § 2 B Amount B), reporting of controlled transactions in the corporate return (TastSelv Selskabsskat; form 05.021 only for hydrocarbon companies), the written documentation duty in Skattekontrolloven §§ 37-40 (master file and local file, the DKK 5m / DKK 50m exemption from 2025, the 250 employees / DKK 195m / DKK 391m small-group test, filing 60 days after the return deadline), the DKK 250,000 fine plus 10% of the adjustment, estimated assessments, the six-year assessment window, country-by-country reporting and APAs. Trigger on: transfer pricing Denmark, armslængde, kontrollerede transaktioner, TP-dokumentation, LL § 2, SKL § 39, master file, local file, land for land-rapport, APA. Out of scope: corporate rates, base and interest limits (dk-corporate-tax), individuals (dk-income-tax), VAT (denmark-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: DK
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -249,8 +249,6 @@ expected:
 | Juridisk Vejledning C.D.11.15.3.3, Den typiske APA-proces (version 3.17) | https://info.skat.dk/data.aspx?oid=2060568 | 2026-10-23 |
 
 Not yet confirmed: (1) whether the documentation deadline moves when the 60th day falls on a weekend. SKL § 39, stk. 3 counts the 60 days from the return deadline "jf. §§ 11-13", but the § 13 weekend rule itself covers only the return deadlines, and Juridisk Vejledning C.D.11.13.1.3.2 gives 29 August for calendar years without a weekend rule. For calendar year 2026, 29 August 2027 is a Sunday, so file by Friday 27 August 2027. (2) The rules for the EU Dispute Resolution Directive and the EU Arbitration Convention in Danish law, and any time limits in specific Danish treaties, were not read for this skill. (3) Whether Skattestyrelsen offers unilateral APAs, beyond binding rulings (bindende svar), was not confirmed. (4) Which characterisation applies to a given secondary adjustment (for example whether an overpayment by a Danish subsidiary to its foreign parent is a dividend with Danish withholding tax) was not researched.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
