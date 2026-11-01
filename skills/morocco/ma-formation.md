@@ -38,7 +38,7 @@ Forms available ([CRI Casablanca-Settat, read 2026-11-01](https://casainvest.ma/
 | Succursale | Branch of a parent; no legal personality; company tax |
 | GIE | Two or more persons, with or without capital; on the commercial register |
 
-Do not pick the status or regime for the user. Lay out the routes and let them choose. A company's IS is computed in `morocco-corporate-income-tax` when that skill is on the repo; otherwise refer to a Moroccan expert-comptable. This skill's output is not a filed registration.
+Do not pick the status or regime for the user. Lay out the routes and let them choose. If turnover is near a ceiling, treat the ceiling as breached and set out the consequences (regime exit, VAT). A company's IS is computed in `morocco-corporate-income-tax` when that skill is on the repo; otherwise refer to a Moroccan expert-comptable. This skill's output is not a filed registration.
 
 ## Rates, bands and thresholds
 
@@ -57,13 +57,13 @@ Every row: tax year 2026, read 2026-11-01. Rows marked unverified carry a figure
 | RNS ceiling, listed commercial activities | MAD 2,000,000 excluding VAT | Other bands in `morocco-professional-income-tax` | [CGI Art. 39](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | VAT exemption, small makers and providers | Annual turnover up to MAD 500,000 | Natural persons only; once taxable, three consecutive years at or under the figure to leave. Corrects the MAD 200,000 services figure | [CGI Art. 91-II-3°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | VAT, traders | Wholesalers always; other traders from MAD 2,000,000 of prior-year taxable turnover | | [CGI Art. 89-I-2°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
-| Capital duty, cash, debt or profit capitalisation | Exempt | Constitution and increase of companies and GIEs, pure and simple contributions | [CGI Art. 129-IV-23°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Capital duty, cash, shareholder current-account debt, profits or reserves | Exempt | Constitution and increase of companies and GIEs, pure and simple contributions | [CGI Art. 129-IV-23°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Capital duty, in-kind contribution valued by a contributions auditor | Exempt | Constitution only; liabilities attached stay under transfer duty | same |
 | Capital duty, other pure and simple new contributions up to MAD 500,000 | MAD 1,000 fixed | Subject to Art. 129-IV-23° | [CGI Art. 135-I-1°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Capital duty, other new contributions above that | 0.5%, minimum MAD 1,000 | Subject to Art. 129-IV-23°; liabilities at transfer rates | [CGI Art. 133-I-H, 133-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Minimum tax relief, company | 36 months from start of operations, ending at most 60 months after constitution | Not concession companies | [CGI Art. 144-I-C-1°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Minimum tax relief, IR taxpayer | First 3 financial years from start | Not on resuming the same activity after cession | [CGI Art. 144-I-C-2°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
-| Cash payment limit | MAD 5,000 a day per supplier | | [CGI Art. 11-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Cash payment, deduction limit | Charges paid other than by the listed traceable means are deductible only up to MAD 5,000 a day and MAD 50,000 a month per supplier | | [CGI Art. 11-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | ICE | 15 digits (9 entity, 4 establishment, 2 control) | unverified: ice.gov.ma refused the read | unverified |
 | Taxe professionnelle exemption | 5 years from start | unverified: Law 47-06 not opened | unverified |
 | Taxe professionnelle rates | 10% to 30% of rental value | unverified: Law 47-06 not opened | unverified |
@@ -78,7 +78,7 @@ Every row: tax year 2026, read 2026-11-01. Rows marked unverified carry a figure
 **Identifiers.**
 - ICE: the common business identifier, on invoices and used across administrations. A return carries a sales statement by client ICE ([CGI Art. 20-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)).
 - IF: the tax identifier from the DGI, needed for IR or IS, VAT and invoicing.
-- RC: the commercial register, for merchants. An auto-entrepreneur is exempt ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). If the activity is commercial, ask; if it is pure service or liberal, the RC depends on the activity.
+- RC: the commercial register, for merchants. An auto-entrepreneur is exempt ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). Ask whether the activity is commercial; if it is pure service or liberal, the RC depends on the activity.
 - TP: taxe professionnelle, the local tax formerly called patente, charged with the taxe de services communaux. CPU taxpayers are exempt from both and still register, per `ma-cpu`.
 
 **Excluded from auto-entrepreneur** ([Decree under CGI Art. 42 ter-III, CGI annex](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)): architects, insurers, lawyers, money changers, surgeons, dentists, statutory auditors, goods commission agents, accountants, tobacconists, publishers, expert-comptables, driving-school operators, cinema operators, clinics, medical laboratories, private schools, surveyors, hotel keepers, bailiffs, printers, booksellers, developers, aircraft lessors, trading agents, property dealers, jewellery retailers and wholesalers, export and import merchants, quantity surveyors, doctors, notaries, event and reception providers, pharmacists, opticians, radiologists, study-office holders, customs agents, topographers and vets. Read the list; never infer it. Activity lists 1 and 2 of Decree 2-15-303 decide commerce against services.
@@ -90,7 +90,7 @@ Every row: tax year 2026, read 2026-11-01. Rows marked unverified carry a figure
 | Route | Who | Tax | Skill |
 |---|---|---|---|
 | Auto-entrepreneur | Individual within ceilings, trade not excluded | 0.5% or 1% of collected turnover, final | `ma-auto-entrepreneur` |
-| CPU | Individual within ceilings, AMO member | 10% of turnover x coefficient, plus droit complémentaire | `ma-cpu` |
+| CPU | Individual within ceilings, AMO member, trade not excluded (Art. 41-III) | 10% of turnover x coefficient, plus droit complémentaire | `ma-cpu` |
 | RNS | Mid-size, by option | Simplified net profit, scale | `morocco-professional-income-tax` |
 | RNR | Default and above ceilings | Net profit, scale | `morocco-professional-income-tax` |
 | SARL or other company | Limited liability or scale | IS, VAT rules below | company tax skill |
@@ -132,7 +132,7 @@ After submission keep the receipt or registered-post proof; it is the evidence o
 |---|---|---|
 | Declaration of existence late, missing or inaccurate | MAD 1,000 fine, by assessment roll | [CGI Art. 188](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 | Late returns, deeds | Surcharges of 5%, 15% and 20% by case | [CGI Art. 184](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
-| Late payment | 10% penalty, 5% for the first month, 0.50% each further month | [CGI Art. 208-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Late payment | 10% penalty (5% if paid within 30 days; 20% for VAT or tax withheld at source and not paid over), plus 5% for the first month and 0.50% each further month or part | [CGI Art. 208-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 
 ## Cross-border points
 
@@ -168,7 +168,7 @@ expected:
   saving: 1200.00
 ```
 
-A trader expecting MAD 1,200,000 is over the auto-entrepreneur ceiling but within the CPU ceiling; a lawyer is excluded from auto-entrepreneur and goes to `morocco-professional-income-tax`.
+A trader expecting MAD 1,200,000 is over the auto-entrepreneur ceiling but within the CPU ceiling if the trade is not excluded; a lawyer is excluded from auto-entrepreneur and goes to `morocco-professional-income-tax`.
 
 ## Ask the client first
 
