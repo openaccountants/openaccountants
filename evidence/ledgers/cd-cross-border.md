@@ -37,6 +37,9 @@ Status: writer ledger for local draft. Independent review pending. Each quotatio
 | CD-CROSS-BORDER-031 | The base6 | Related/privileged/noncooperative andpricingseparatetests | 23/053 arts46–48/53 | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | « à la triple condition » | 23 | 2026-11-01 |
 | CD-CROSS-BORDER-032 | Deadlines | Public i-Impôtsentryonly,formunknown | DGI IS page services link | https://dgi.gouv.cd/impot-sur-les-societes/ | « Déclarer & Payer en ligne » | HTML | 2026-11-01 |
 
+| CD-CROSS-BORDER-033 | Who this applies to / Sources | Original Finance Act effective1January2026; newly read during repair | 25/060 art88 | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | « à la date du 1er janvier 2026 » | 53 | 2026-11-01 |
+| CD-CROSS-BORDER-034 | Who this applies to / Sources | Procedure reform separate commencement24months from31December promulgationyear; read again during repair | 23/052 art6 | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | « après vingt-quatre mois à compter du 31 décembre » | 8 | 2026-11-01 |
+
 ## Worked examples
 
 All scenario amounts and comparable outcomes are hypothetical inputs, not statutory thresholds unless the row above identifies them as such. Each example cites its controlling legal rule. Arithmetic does not validate benchmark reliability, contractual classification or actual portal acceptance.

@@ -17,16 +17,18 @@ category: cross-border
 tax_year: 2026
 last_updated: 2026-11-01
 tier: 2
-version: 0.1
+version: 0.2
 ---
 
-# DR Congo nonresident payments v0.1
+# DR Congo nonresident payments v0.2
 
 > **General reference only.** This Guide is general tax reference material for AI-assisted workflows. It has not been reviewed for a particular taxpayer. Obtain review by a qualified professional before filing, paying or taking a tax position.
 
 ## Who this applies to
 
 Use this Guide for a person established in the **Democratic Republic of the Congo** receiving services from a non-established provider, or a company established there paying investment/passive income to a nonresident. The applicable domestic levy depends on the actual contract, recipient, establishment and payment date. It is not a universal tax on every outbound bank transfer. [Law 23/053, arts. 142–144](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf); [Finance Act 25/060, arts. 40–44](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf); [Rectifying Act 26/032, arts. 14–18](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf).
+
+The initial Finance Act applies from **1 January 2026** under article 88, and Law 23/052 article 6 separately controls commencement of the service declaration procedure. [Finance Act 25/060, art. 88](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf); [Law 23/052, art. 6](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf).
 
 The August amendment is effective from its promulgation, **7 August 2026**. Its expanded passive-income definition must not silently be applied to an earlier payment. This Guide supplies the current ordinary branches and identifies earlier-period or mixed-contract questions that require referral. Mining, hydrocarbons, investment-code privileges and treaty-specific reductions are not established by this method. [Rectifying Act 26/032, arts. 18, 51](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf).
 
@@ -37,7 +39,7 @@ The August amendment is effective from its promulgation, **7 August 2026**. Its 
 | Services supplied to an established recipient by a non-established provider | **14% of the gross invoice amount**, withheld by the recipient of the services. First exclude unresolved establishment, treaty and passive-income classification issues. | 2026 | Law 23/053 arts. 142–144: https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf |
 | Service taxable event and due event | Execution of the service or a service stage is the taxable event; payment of the price, an instalment or advance makes the levy due. Do not substitute invoice receipt alone for the payment event. | 2026 | Same, art. 143: https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf |
 | Service declaration and remittance | Declaration accompanied by payment by the **15th of the month after payment of the invoices**, to the DGI office managing the service recipient. Partial-payment allocation/form treatment remains unconfirmed here. | 2026 | Law 004/2003 art. 22 bis, as replaced by Law 23/052 art. 1: https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf |
-| Investment income paid to a nonresident | **20% of gross income**, paid or made available by a company established in DR Congo. Use the statutory category applicable on the payment date. | From 1 January 2026; August expansion below | Finance Act 25/060 arts. 41–44, inserting arts. 149 bis–quinquies: https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf |
+| Investment income paid to a nonresident | **20% of gross income**, paid or made available by a company established in DR Congo. Use the statutory category applicable on the payment date. | From 1 January 2026; August expansion below | Finance Act 25/060 arts. 41–44, 88, inserting arts. 149 bis–quinquies: https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf |
 | Investment and other passive income paid to a nonresident | **20% of gross income**. The expanded definition covers qualifying dividends, interest, royalties, licence income, know-how/technical information and qualifying equipment payments, subject to the article 149 sexies conditions. | From 7 August 2026 | Rectifying Act 26/032 arts. 14–18, amending arts. 149 bis–quater and adding art. 149 sexies: https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf |
 | Passive-income due event and withholding agent | Paid or made available to the beneficiary; the company established in DR Congo paying the income withholds. | 2026, with August scope amendment | Finance Act 25/060 art. 44 / art. 149 quinquies: https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf |
 | Passive-income declaration and remittance | By the **15th of the following month** after payment or making income available; declaration with payment to the DGI office managing the payer company. | 2026 | Finance Act 25/060 art. 39, the provision printed as procedure art. **22 quarter**: https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf |
@@ -130,8 +132,8 @@ expected:
 
 | Source and scope actually read | URL | Read on |
 |---|---|---|
-| DGI-hosted Journal officiel: Law 23/053 arts. 7–8, 20, 46–48, 53, 142–144, 150–153, and Law 23/052 art. 1 replacing procedure art. 22 bis. Service levy scan visually checked; no authenticated form read. | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01 |
-| Budget Ministry, enacted Finance Act 25/060 arts. 23, 35, 39–44: withholding liability, passive-income levy and return. Read those scanned provisions and surrounding tax-amendment chapter using French OCR. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01 |
+| DGI-hosted Journal officiel: Law 23/053 arts. 7–8, 20, 46–48, 53, 142–144, 150–153, and Law 23/052 art. 1 replacing procedure art. 22 bis and art. 6 commencement, read again during repair. Service levy scan visually checked; no authenticated form read. | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01 |
+| Budget Ministry, enacted Finance Act 25/060 arts. 23, 35, 39–44: withholding liability, passive-income levy and return; art. 88 commencement read and visually checked during repair. Read those scanned provisions and surrounding tax-amendment chapter using French OCR. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01 |
 | Budget Ministry, rectifying Act 26/032 arts. 14–19 and 49–51: expanded passive-income definition, continuation and commencement. Passive-definition/rate and commencement scans visually checked. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01 |
 | DGI official IS page: linked online declaration/payment entry point only. | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01 |
 

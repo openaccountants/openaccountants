@@ -17,16 +17,16 @@ category: transfer-pricing
 tax_year: 2026
 last_updated: 2026-11-01
 tier: 2
-version: 0.1
+version: 0.2
 ---
 
-# DR Congo transfer pricing v0.1
+# DR Congo transfer pricing v0.2
 
 > **General reference only.** This Guide is general tax reference material for AI-assisted workflows. It has not been reviewed for a particular taxpayer. Obtain review by a qualified professional before filing, paying or taking a tax position.
 
 ## Who this applies to
 
-Use this method for an enterprise operated in the **Democratic Republic of the Congo**, not the Republic of Congo. For the 2026 income year, Law 23/053 article 53 governs indirect transfers of profits to foreign controlled or controlling enterprises. It compares the actual profits with those that would have arisen without dependence or control. The documentation and reporting populations are separate tests under Law 004/2003, as amended by Finance Act 25/060. [Law 23/053, arts. 53, 153](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf); [Finance Act 25/060, arts. 25–28](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf).
+Use this method for an enterprise operated in the **Democratic Republic of the Congo**, not the Republic of Congo. For the 2026 income year, Law 23/053 article 53 governs indirect transfers of profits to foreign controlled or controlling enterprises. It compares the actual profits with those that would have arisen without dependence or control. The documentation and reporting populations are separate tests under Law 004/2003, as amended by Finance Act 25/060. That Finance Act applies from 1 January 2026 under its article 88; the reform procedure Act has its own commencement rule in Law 23/052 article 6. [Law 23/053, arts. 53, 153; Law 23/052, art. 6](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf); [Finance Act 25/060, arts. 25–28, 88](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf).
 
 A documentation threshold is **not** an exemption from article 53. A small enterprise can receive a targeted audit information request under article 29 bis even when it is outside article 24 bis. The August rectifying Act preserves unamended provisions of the original Finance Act. [Finance Act 25/060, art. 28](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf); [Rectifying Act 26/032, art. 49](https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf).
 
@@ -75,7 +75,7 @@ These amounts do not certify the entire penalty assessment. The general late-pay
 
 ## Cross-border points
 
-Article 53 removes the dependence/control condition for transfers to enterprises in a privileged-tax or non-cooperative foreign jurisdiction. Article 47's privileged-tax test compares the foreign profit/income tax amount with the amount that would arise under ordinary Congolese IS if the enterprise were operated there: foreign tax must be **more than half lower**. It is an amount-based statutory comparison, not a blanket residence-country headline-rate shortcut. Article 48 requires the Congolese ministerial non-cooperative list. [Law 23/053, arts. 47–48, 53](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf).
+Article 53 removes the dependence/control condition for transfers to enterprises in a privileged-tax or non-cooperative foreign jurisdiction. Article 47 treats the foreign regime as privileged if the enterprise is **not taxable in that state**, or, if taxed there, its foreign profit/income-tax amount is **more than half lower** than the ordinary Congolese IS amount that would arise if it were operated there. It is an amount-based statutory comparison, not a blanket residence-country headline-rate shortcut. Article 48 requires the Congolese ministerial non-cooperative list. [Law 23/053, arts. 47–48, 53](https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf).
 
 Withholding, foreign permanent-establishment attribution and any treaty or mutual-agreement relief are separate work. Do not assume an arm's-length price supplies a withholding exemption, treaty residence, a corresponding foreign adjustment or CbC exchange relief. This Guide does not determine those results.
 
@@ -143,8 +143,8 @@ expected:
 
 | Source and scope actually read | URL | Read on |
 |---|---|---|
-| DGI-hosted Journal officiel, Law 23/053: arts. 46–48 and 53 with neighbouring deduction/loss provisions; art. 153. Scanned text read with French OCR; article 53 visually checked. | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01 |
-| Budget Ministry, enacted Finance Act 25/060: arts. 18 and 25–28, 33–34; audit/file/annual/CbC populations and sanctions. Threshold and sanction scans visually checked. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01 |
+| DGI-hosted Journal officiel, Law 23/053: arts. 46–48 and 53 with neighbouring deduction/loss provisions; art. 153 and Law 23/052 art. 6. The latter commencement provision was read again during the source-review repair. Scanned text read with French OCR; article 53 visually checked. | https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf | 2026-11-01 |
+| Budget Ministry, enacted Finance Act 25/060: arts. 18 and 25–28, 33–34; audit/file/annual/CbC populations and sanctions; art. 88 commencement read and visually checked during repair. Threshold and sanction scans visually checked. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf | 2026-11-01 |
 | Budget Ministry, rectifying Act 26/032: tax-amendment chapter and arts. 49–51; original unamended provisions retained. | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01 |
 | DGI IS information page, public online declaration/payment link only; no authenticated TP workflow read. | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01 |
 

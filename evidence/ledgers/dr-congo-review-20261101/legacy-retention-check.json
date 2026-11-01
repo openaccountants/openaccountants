@@ -1,0 +1,71 @@
+{
+  "legacy_files": [
+    {
+      "path": "skills/dr-congo/cd-company-formation.md",
+      "sha256": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a",
+      "hash_matches": true,
+      "base_bytes_match": true
+    },
+    {
+      "path": "skills/dr-congo/cd-corporate-income-tax.md",
+      "sha256": "750fde418a8d4438d283d269bc9086c5b24ca1bacabc784c9335fefea52dd151",
+      "hash_matches": true,
+      "base_bytes_match": true
+    },
+    {
+      "path": "skills/dr-congo/cd-income-tax.md",
+      "sha256": "2d05b4b5493a6b0d4a8733bfc3e475560475994634ee083874b49b2d263c2e81",
+      "hash_matches": true,
+      "base_bytes_match": true
+    },
+    {
+      "path": "skills/dr-congo/cd-payroll-social.md",
+      "sha256": "b2c8821ec921db890a2de6878aadc888a43ee874ade2e6cdebe3fd85e24d0909",
+      "hash_matches": true,
+      "base_bytes_match": true
+    },
+    {
+      "path": "skills/dr-congo/cd-tax-overview.md",
+      "sha256": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4",
+      "hash_matches": true,
+      "base_bytes_match": true
+    },
+    {
+      "path": "skills/dr-congo/cd-vat-gst.md",
+      "sha256": "c33ff5874fab5c404250820721c8693b98ad5326cd4352b32925dcdc778764aa",
+      "hash_matches": true,
+      "base_bytes_match": true
+    }
+  ],
+  "topic_rows": 86,
+  "all_topic_rows_match": true,
+  "lost_content_restored": 0,
+  "scope": "Retention only, no correctness review of legacy tax content",
+  "excluded_platform_cta_headings": [
+    [
+      "skills/dr-congo/cd-company-formation.md",
+      36
+    ],
+    [
+      "skills/dr-congo/cd-corporate-income-tax.md",
+      40
+    ],
+    [
+      "skills/dr-congo/cd-income-tax.md",
+      38
+    ],
+    [
+      "skills/dr-congo/cd-payroll-social.md",
+      37
+    ],
+    [
+      "skills/dr-congo/cd-tax-overview.md",
+      35
+    ],
+    [
+      "skills/dr-congo/cd-vat-gst.md",
+      33
+    ]
+  ],
+  "missing_substantive_lines": []
+}

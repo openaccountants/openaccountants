@@ -1,0 +1,49 @@
+# Independent review: DR Congo first two 2026 drafts
+
+Decision: **REJECT pending the two focused repairs below.** This decision is bound to frozen Git HEAD `aab7ad45549b4926e8619cd280ca52401a90a56b` on `codex/dr-congo-tax-2026`, not to later working-tree bytes. Review date: 2026-11-01. This is an independent source and computation review, not accountant attestation, full-country clearance or authority to file.
+
+The writer's seven candidate SHA256 values match the frozen files. The candidate manifest itself hashes to `c0bff8bd16852ded19d25f021e736d7ff099338639cbd91fa82bd25bdd88a286`. All three original PDF byte counts and SHA256 values match source-record.json and the private fetch receipts. See initial-input-hashes.json. No writer Guide bytes were edited by the reviewer.
+
+## Count and method
+
+Checked **69 ledger rows**: 37 transfer-pricing and 32 cross-border rows, comprising 67 PDF rows and two references to the same public HTML link. These are ledger-row counts, not 69 distinct numerical figures. Each article, rule, conditions, French excerpt, page locator and read-scope claim was compared with its complete relevant provision. The per-row record is initial-ledger-row-review.json. Checked four oa-check blocks both manually and with Decimal-based repository recomputation. Checked all six old Guide hashes and 86 mapped substantive topics against the base and current bytes. Lost content restored: **0**, because the original files remain byte-exact and no substantive topic is missing from the map.
+
+Read the public AGENTS.md, CLAUDE.md and docs/skill-template.md. Reviewed the supplied original official PDF captures through French OCR and inspected scans where OCR recognition/column order was unreliable. Visually read Law 23/053 PDF pages 5, 13, 23, 25, 43 and 44; original Finance Act PDF pages 20, 22, 29 and 53; rectifying Act PDF pages 10, 11 and 17. The supplied PDF pages are one-based, not the printed Gazette folios. Decimal whitespace and typographic line breaks do not change the quoted amounts. Quotations were checked against original French, not accepted merely because OCR matched.
+
+The relevant source pages read in this review were Law 23/052 and 23/053 combined PDF pages 5, 7, 8, 13, 14, 17, 23, 25, 26, 43 and 44; original Finance Act pages 17, 19 through 26, 28 through 32 and 53; rectifying Act pages 6 through 17. This is not a claim to have read every captured or extracted page or to have audited every budget figure on those pages. The DGI IS page was opened independently on 2026-11-01; only its public online-service link was needed and checked. No authenticated workflow was inspected.
+
+## Repairs required
+
+| ID | Finding and effect | Required repair | Primary source |
+|---|---|---|---|
+| F1 | TP Cross-border points says foreign tax **must** be more than half lower. Article 47 has a separate alternative: an enterprise not taxable in the foreign state qualifies independently of the comparison. The short quote in TP ledger row 014 is accurate, but its definition/conditions and the Guide omit this branch. This matters to the privileged-regime screening that also feeds article 53's removal of the control condition. | State both alternatives: not taxable in that state **or**, if taxed there, the foreign profit/income-tax amount is less than half the ordinary hypothetical Congolese IS amount. Preserve the amount comparison and avoid a headline-rate substitute. Update row 014's rule and excerpt to cover both branches. | Law 23/053 art. 47, PDF page 23 (Gazette folios 41–42), original visually checked: “si elle n'est pas imposable dans cet État ou”. https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf |
+| F2 | The XB rates table correctly says the initial investment levy starts 1 January 2026, but the controlling commencement provision is absent from the ledger and actual-read record. The service procedure's separate commencement provision is also absent. A date cannot rest only on a tax-year label or inference that two Acts share their start. | Read and record Finance Act 25/060 art. 88, PDF page 53 (printed page 44), explicitly making it effective 1 January 2026; and Law 23/052 art. 6, combined PDF page 8 (Gazette folio 11), with the same 24-month formulation as Law 23/053 art. 153. Add ledger rows/citations for these commencement rules and update the source record and Sources scopes to state the actual newly read portions. Preserve the original frozen evidence; do not retroactively claim they were read before this review. | Art. 88: “à la date du 1er janvier 2026”, https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf. Law 23/052 art. 6: “après vingt-quatre mois à compter du 31 décembre”, https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf. Both support the current dates after direct reading. |
+
+Provenance note, not an additional substantive rejection: source-record.json contains an older correction message saying TP015 and XB031 still require a scan check, followed by a final visual_resolution saying they were checked. Preserve that original history, but make a repaired record's final status unambiguous. Both quoted passages were independently confirmed in the original page 23 scan during this review.
+
+## Findings that passed
+
+The CDF 10 billion documentation trigger is turnover excluding taxes **or gross assets**, at equality as well as above, with separate upstream/downstream majority tests at year end. It is distinct from article 53's substantive control/dependence test. The five-day documentation notice and 15-day targeted request are distinct. The targeted request occurs during an audit and requires evidence suggesting indirect profit transfer; the Guide situates it in that audit context. CbC is USD 850 million equivalent as printed, not the familiar threshold from another jurisdiction, with the prior-year/consolidation/ultimate-parent conditions and other filing branches preserved. The Guide appropriately refuses to infer substitute-filing relief from foreign filing alone.
+
+The documentation fine is 2% of affected transactions after notice, minimum CDF 100 million per audited year. Annual TP and CbC default fines are CDF 100 million and CDF 150 million respectively. The daily CDF 10 million article 29 bis sanction and withholding-agent personal liability match their distinct provisions.
+
+The nonresident-service branch is 14% of gross invoices, with execution and payment events distinguished, and remittance by the 15th of the month after invoice payment. The initial and expanded passive branches use 20% of the gross sums; the 7 August 2026 expansion follows rectifying Act art. 51 and the signature date, rather than the Gazette publication date. Article 149 sexies includes software/intangibles, technical information/assistance and equipment consideration with its direct-activity conditions. The Guide does not resolve all technical/mixed contracts by asserting a lower-rate choice. The unusual printed procedure article “22 quarter” is faithfully distinguished from the separate “22 quater” correction provision. The statutory rounding sequence matches article 150.
+
+## Four examples recomputed
+
+| Example | Independent result |
+|---|---|
+| TP controlled sale | 10,000 × (1,000 − 980) = CDF 200,000 transfer; 5,000,000 + 200,000 = CDF 5,200,000 adjusted profit before other tax rules. Benchmark is explicitly assumed, not established by arithmetic. |
+| TP qualifying parent / conditional default | Local size shortfall CDF 2 billion; parent threshold margin zero therefore equality qualifies. 8 billion × 2% = CDF 160 million, above the CDF 100 million minimum. Notice/default conditions are explicit. |
+| Ordinary nonresident service | 10 million × 14% = CDF 1.4 million; net CDF 8.6 million; already rounded. November payment gives 15 December remittance. |
+| November software rights | 8 million × 20% = CDF 1.6 million, net CDF 6.4 million. Wrong service branch gives CDF 1.12 million; difference CDF 480,000. Classification/direct-activity/treaty/sector assumptions are explicit. |
+
+## Mechanical validation
+
+With the supplied validation dependency directory on PYTHONPATH: changed-only validate-guides with --no-index-check passed for the two new Guides plus README, zero warnings; all 15 skill checks passed for each new Guide; four oa-check blocks recomputed without failure; strict metadata/sync-integrity audit against base `db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6` passed for two source Guides. Exact commands and outputs are in initial-validation.json. Two preliminary --help probes failed because skill_checks treats it as a filename and check-sync initially lacked PyYAML without PYTHONPATH. The actual applicable checks were then run with dependencies and passed. Generated index checks were deliberately excluded under the platform-owned-index rule. These passes do not cure F1 or F2.
+
+## Unresolved scope retained
+
+Current electronic forms, identifiers, file specifications, upload schemas, receipts and payment workflow are not verified. CbC exchange lists/notifications/conversion instructions, non-cooperative lists, treaty or corresponding-adjustment procedures, full penalties/interest/disputes, technical-service/passive-income overlap, earlier royalties, sector privileges and wider residence/credit/exit jobs remain explicit gaps. Those are honest partial scopes; this review does not ask the writer to expand all of them.
+
+All six 2025 Guides remain unremediated and unverified. Their old conflicting/secondary-source statements are not certified by retention or by these new Guides. README marks every domain partial and makes no complete-country or professional-attestation claim. Closure must bind to the repaired file hashes, retain this rejection and show the two repairs before acceptance.
