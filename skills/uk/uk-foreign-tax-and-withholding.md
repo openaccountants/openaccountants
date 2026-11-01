@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# UK foreign tax credit relief and withholding on outbound payments v0.2
+# UK foreign tax credit relief and withholding on outbound payments v0.3
 
 Tax year 2026/27 (6 April 2026 to 5 April 2027) for individuals. Companies use their accounting period; the rates below apply to payments made in 2026. Returns being filed now (by 31 January 2027) are for 2025/26; the credit rules are the same for both years.
 

@@ -13,7 +13,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.1
+# Netherlands: company car benefit (bijtelling) in payroll, 2026 v0.2
 
 This skill is the car method that `nl-payroll-tax` refers to. It covers the private-use benefit an employer adds to wages. General payroll steps (tables, credits, the return itself) stay in those two skills.
 
