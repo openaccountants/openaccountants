@@ -1,0 +1,121 @@
+{
+  "accepted_closure": "F1 closed, 46 rows accepted for stated partial source scope",
+  "parent_tax_repair": "Only precise statutory French designation replaces ambiguous director-general deputy; reviewed hash in closure-review.json",
+  "status_only_permission_sha256": "4ddb5aacd0b7de652d5ef5ec4c993267bf0feba26272b10cf50427f56bb16799",
+  "changes": [
+    {
+      "path": "skills/madagascar/mg-capital-income.md",
+      "before_sha256": "e3f3cfddca2ac38bcd9f22e50c60a5a05d7b8f3fbbf266192c49d1d31cadd057",
+      "after_sha256": "1a0079e3e70d8b10879ebbecb1fcced3b62aa80804d4be99fc208c1e5e47b41a",
+      "literal_replacements": [
+        {
+          "path": "skills/madagascar/mg-capital-income.md",
+          "before": "This addition awaits independent source review and carries no accountant attestation.",
+          "after": "Independent AI source review accepted the stated partial scope on 1 November 2026; see the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+        }
+      ],
+      "reverse_status_replacements_restore_accepted_repaired_bytes": true
+    },
+    {
+      "path": "skills/madagascar/README.md",
+      "before_sha256": "a1bd4dbf1ad20fd4bc0728446973bcc2086501303ff7de71c66a37a6255c94e3",
+      "after_sha256": "5ad18a8f6d134e27f46392bf5a56b3f58ce19fdcb2eebec2c0d63071b2da6079",
+      "literal_replacements": [
+        {
+          "path": "skills/madagascar/README.md",
+          "before": "## Capital-income follow-on awaiting independent review",
+          "after": "## Capital-income follow-on"
+        },
+        {
+          "path": "skills/madagascar/README.md",
+          "before": "All seven ordinary domains remain partial; this new draft awaits independent review and has no accountant attestation.",
+          "after": "All seven ordinary domains remain partial; independent AI source review accepted this addition’s stated partial scope on 1 November 2026. See the [closure review](../../evidence/ledgers/madagascar-capital-review-20261101/closure-review.md). No accountant attestation."
+        }
+      ],
+      "reverse_status_replacements_restore_accepted_repaired_bytes": true
+    }
+  ],
+  "preexisting_review_artifacts_preserved": {
+    "evidence/ledgers/madagascar-capital-review-20261101/source-integrity.json": "5a552cb821c04921037ace4a70962dd41004b4c8d7091a492fd4f62ca59415fc",
+    "evidence/ledgers/madagascar-capital-review-20261101/machine-checks.json": "265bde7ea56fd6845a08cd30c6c03f10e505e91e99d6e1e61ed27c97c4ea2d10",
+    "evidence/ledgers/madagascar-capital-review-20261101/initial-input-hashes.json": "72c225c422d5cc6809deeda00af6235a81b0004da5755e29666fa48831e5a5cc",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-page-quote-check.json": "50aa06c6964852dca87ead753fd61561ecacc72ad7f9ec6bc3b386f1ee17f603",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-cases.json": "95d1a0a248307538aaa60cd7f7db0e9c9ac077b670d5a511906365ad1f1e889f",
+    "evidence/ledgers/madagascar-capital-review-20261101/initial-review.md": "8414406052c668892de4ee8b45d76b36c6eb49f476cfa98dda0592bfd8db1476",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-check.py": "2c08da7f0c904c7aade03050b2d3b9459dbfab38d5207296c4bdcc9364b14307",
+    "evidence/ledgers/madagascar-capital-review-20261101/status-only-permission.json": "4ddb5aacd0b7de652d5ef5ec4c993267bf0feba26272b10cf50427f56bb16799",
+    "evidence/ledgers/madagascar-capital-review-20261101/complete-old-topic-map.json": "13be77ec7c6d1e2a81ab08d5089fbb6193f8d63bed858e1da4334a603994bf9b",
+    "evidence/ledgers/madagascar-capital-review-20261101/closure-review.json": "1f178091911fb374be0e6aaa08014195a5eaab746e67e7102f2f76aaf3adf91f",
+    "evidence/ledgers/madagascar-capital-review-20261101/ledger-row-review.json": "d5a41b23049dfbd3a4842f5e5e0ba0f747cf75d854f0447a580cbbb3e1b62cbf",
+    "evidence/ledgers/madagascar-capital-review-20261101/closure-artifact-hashes.json": "c02164b8f9485f45d52d867f4dbe8b8888f26fada3103ebd477a5e4fa3c65d47",
+    "evidence/ledgers/madagascar-capital-review-20261101/preservation-review.json": "88d21b22635ad08d630ef0851ae086cada07348f6f8e122a4db770ec42421b5c",
+    "evidence/ledgers/madagascar-capital-review-20261101/shape-checks.json": "ffbd53a8a6ae43cad9e3eb5452435e1db012b59853f77fa14ce7d5a708330b20",
+    "evidence/ledgers/madagascar-capital-review-20261101/closure-checks.json": "221f2407d5142496b4720de0f42849fef7bbef988da8089d3393a36b49e98dce",
+    "evidence/ledgers/madagascar-capital-review-20261101/parent-F1-repair-candidate.json": "ace7963cd883b7cd91c72d38b29b4a5217b52e0ef7ed638b179cfdee56e6e058",
+    "evidence/ledgers/madagascar-capital-review-20261101/review-artifact-hashes.json": "7d91fd9525247f0f702b6b27965fd6d2298d88b12fadc2e56f4b7475e2f6e3b9",
+    "evidence/ledgers/madagascar-capital-review-20261101/closure-review.md": "915bb59ccd3f791cf111e101d89e3f374bfe4855c33301317c5f7d0518e9d1bf"
+  },
+  "original_writer_evidence_preserved": [
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/committed-validation.json",
+      "sha256": "806fb669f0b3139bfd31827f0234f6cc0d27b49b778880c81799fb3e6946466e"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/freeze-receipt.json",
+      "sha256": "dc145cf5a81f112a7da72a4ba52710ac0a0459f654978637526d29439bfa438b"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.json",
+      "sha256": "b6aab9a11a3a7af4f9ddc06c0700138023499903f16fd50b89934cfc04c58e7d"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/mg-capital-income.md",
+      "sha256": "d16fa616eec6155493e723c9c406271d732747de302e88e2c694911a5eac242d"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/old-topic-destinations.json",
+      "sha256": "8e3ce49364a1b61f01735880863c7e700fc856ff9f4f6c8fc62d2db318c88ba3"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-baseline.json",
+      "sha256": "4d91b54dee9e1d3b5a1e188b39b47d222e6528c4d4d5002e2ed0dc11fa95d5e2"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/preservation-check.json",
+      "sha256": "9ec3b4b8456c37f87e2e2ca94ad4c5b336afbf638b4d6cef99a9ffe3c23ab65f"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/source-identities.json",
+      "sha256": "ae2127678001fbafb98a1a6b5114bbd52b07b05aef51beb816c946ee753c50e7"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-check.py",
+      "sha256": "ca3f8114d3692ed254529a66b4ff67b7c3d60de025b97a63324fc1f3ab6d815c"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-checks.json",
+      "sha256": "c9e50045c29b346eefdb044d1b17faf9449ee56b22d2e4b8c398e7f8d662605f"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-20261101/writer-record.md",
+      "sha256": "831e690b9510a89d2fa84f0084af8e6591a944979a74bf730237490efd1bb549"
+    }
+  ],
+  "all_initial_12_review_artifacts_preserved": {
+    "evidence/ledgers/madagascar-capital-review-20261101/source-integrity.json": "5a552cb821c04921037ace4a70962dd41004b4c8d7091a492fd4f62ca59415fc",
+    "evidence/ledgers/madagascar-capital-review-20261101/machine-checks.json": "265bde7ea56fd6845a08cd30c6c03f10e505e91e99d6e1e61ed27c97c4ea2d10",
+    "evidence/ledgers/madagascar-capital-review-20261101/initial-input-hashes.json": "72c225c422d5cc6809deeda00af6235a81b0004da5755e29666fa48831e5a5cc",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-page-quote-check.json": "50aa06c6964852dca87ead753fd61561ecacc72ad7f9ec6bc3b386f1ee17f603",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-cases.json": "95d1a0a248307538aaa60cd7f7db0e9c9ac077b670d5a511906365ad1f1e889f",
+    "evidence/ledgers/madagascar-capital-review-20261101/initial-review.md": "8414406052c668892de4ee8b45d76b36c6eb49f476cfa98dda0592bfd8db1476",
+    "evidence/ledgers/madagascar-capital-review-20261101/independent-check.py": "2c08da7f0c904c7aade03050b2d3b9459dbfab38d5207296c4bdcc9364b14307",
+    "evidence/ledgers/madagascar-capital-review-20261101/complete-old-topic-map.json": "13be77ec7c6d1e2a81ab08d5089fbb6193f8d63bed858e1da4334a603994bf9b",
+    "evidence/ledgers/madagascar-capital-review-20261101/ledger-row-review.json": "d5a41b23049dfbd3a4842f5e5e0ba0f747cf75d854f0447a580cbbb3e1b62cbf",
+    "evidence/ledgers/madagascar-capital-review-20261101/preservation-review.json": "88d21b22635ad08d630ef0851ae086cada07348f6f8e122a4db770ec42421b5c",
+    "evidence/ledgers/madagascar-capital-review-20261101/shape-checks.json": "ffbd53a8a6ae43cad9e3eb5452435e1db012b59853f77fa14ce7d5a708330b20",
+    "evidence/ledgers/madagascar-capital-review-20261101/review-artifact-hashes.json": "7d91fd9525247f0f702b6b27965fd6d2298d88b12fadc2e56f4b7475e2f6e3b9"
+  },
+  "all_seven_domains_remain_partial": true,
+  "accountant_attestation": false,
+  "merge_authorisation": false
+}

@@ -1,0 +1,83 @@
+{
+  "frozen_head": "b60a51a4adb08da4ea3eb4a8a5e1962b1a2b8a78",
+  "repaired_guide_sha256": "e3f3cfddca2ac38bcd9f22e50c60a5a05d7b8f3fbbf266192c49d1d31cadd057",
+  "only_change": {
+    "before": "The named chairman, director-general deputy and administrator temporarily delegated to perform the chairman's functions",
+    "after": "The named chairman, the administrator described as « l’administrateur adjoint au président à titre de directeur général », and the administrator temporarily delegated to perform the chairman's functions"
+  },
+  "source_quote_verified": true,
+  "source_pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+  "source_physical_page": 45,
+  "source_printed_page": 44,
+  "initial_review_artifacts_unchanged": 12,
+  "writer_evidence_and_README_unchanged": true,
+  "prior_guides_unchanged": 9,
+  "prior_evidence_unchanged": 48,
+  "oa_checks_identical": true,
+  "shape_results": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/madagascar/mg-capital-income.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/madagascar/mg-annual-property-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/madagascar/mg-capital-income.md: no tax domain in the slug, so its country cell was not checked\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--worktree",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

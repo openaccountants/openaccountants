@@ -1,0 +1,25 @@
+{
+  "scope": "New focused closure artifacts only; initial artifacts unchanged. This manifest excludes itself.",
+  "files": [
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/closure-review.md",
+      "sha256": "915bb59ccd3f791cf111e101d89e3f374bfe4855c33301317c5f7d0518e9d1bf"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/closure-review.json",
+      "sha256": "1f178091911fb374be0e6aaa08014195a5eaab746e67e7102f2f76aaf3adf91f"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/closure-checks.json",
+      "sha256": "221f2407d5142496b4720de0f42849fef7bbef988da8089d3393a36b49e98dce"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/status-only-permission.json",
+      "sha256": "4ddb5aacd0b7de652d5ef5ec4c993267bf0feba26272b10cf50427f56bb16799"
+    },
+    {
+      "path": "evidence/ledgers/madagascar-capital-review-20261101/parent-F1-repair-candidate.json",
+      "sha256": "ace7963cd883b7cd91c72d38b29b4a5217b52e0ef7ed638b179cfdee56e6e058"
+    }
+  ]
+}

@@ -1,0 +1,840 @@
+{
+  "method": "Fresh pdftotext -layout extraction of the specific cached PDF pages, not writer cached text; exact matching changes whitespace only. Semantic/neighbour review is separate.",
+  "rows": [
+    {
+      "id": "C01",
+      "article": "01.04.01",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "les personnes morales, les sociétés de personnes et les sociétés en participation ainsi que les personnes physiques.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "article": "01.04.02(6)",
+      "printed_pages": "42",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "fresh_page_extraction_sha256": "b79171858961d435101581a88e41fec2529d576875b394c024a5d839cda5ab4f",
+      "checks": [
+        {
+          "quote": "Aux dividendes perçus par des personnes physiques ou morales résidentes ou non ainsi qu’aux plus-values de cession mobilières par des particuliers.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "article": "01.04.02(6)",
+      "printed_pages": "22",
+      "physical_pages": [
+        26
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "674ff77d75acfac621edc56c127f244f33d06c358ad53525042015e34e84f9a6",
+      "checks": [
+        {
+          "quote": "Aux dividendes perçus ainsi qu’aux plus-values de cession mobilières réalisées par des personnes physiques ou morales résidentes ou non.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "article": "01.01.14 II-B",
+      "printed_pages": "20",
+      "physical_pages": [
+        24
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "c3cc9b204193ed7898165c4e939a7e0841d8586f340a0d52d4fdd3e9d055cf28",
+      "checks": [
+        {
+          "quote": "Modifier la rédaction du B. du II- de cet article comme suit :",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "B. Abrogé",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "article": "24",
+      "printed_pages": "129",
+      "physical_pages": [
+        131
+      ],
+      "pdf_sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "fresh_page_extraction_sha256": "953e8b3765ce819d5484c115b1717e15f9469edd045a30233238878504ca8a4a",
+      "checks": [
+        {
+          "quote": "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage indépendamment de son insertion au Journal Officiel de la République",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "article": "22",
+      "printed_pages": "48",
+      "physical_pages": [
+        52
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "49c6ce4e5097d858e1947ccd8c9b705f7fa03c37ac83309fc6a6d16ecb531b32",
+      "checks": [
+        {
+          "quote": "entrera en vigueur dès qu'elle aura reçu une publication par émission radiodiffusée ou affichage indépendamment de son insertion au journal officiel de la République.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "article": "01.04.04",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "les revenus imposables sont arrondis au millier d’Ariary inférieur.",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "est fixé à 20p.100, sous réserve des dispositions des Conventions fiscales de non double imposition.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "article": "01.04.04",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "un abattement de 50p.100 sur les dividendes perçus par des associés résidents ou non.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "article": "01.04.04",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "un taux réduit de 10p.100 sur les intérêts sur parts sociales et les ristournes qui sont distribués annuellement aux membres des sociétés coopératives sur décision de l’assemblée générale.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "article": "01.04.04",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Le paiement de l’impôt sur le revenu des capitaux mobiliers est représentatif et libératoire, sur justification, de l’impôt sur les revenus des personnes morales et physiques ayant donné lieu à versement de cet impôt.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "article": "01.04.02(1)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Aux produits d’intérêts, revenus et tous autres produits des obligations et des prêts, des sociétés, des entreprises quelconques, financières, industrielles, commerciales ou civiles, ayant ou non leur siège social à Madagasikara ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "article": "01.04.02(2)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "dont les bénéficiaires ne sont pas portés à la connaissance de l’Administration ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "article": "01.04.02(3)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Au montant des tantièmes, jetons de présence, remboursements forfaitaires de frais et toutes autres rémunérations revenant à quelque titre que ce soit à l’administrateur unique ou aux membres du Conseil d’Administration ou à toute personne ayant des fonctions d’administrateur quelle qu’en soit la dénomination ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "article": "01.04.02(4)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Aux lots et primes de remboursement payés aux créanciers et aux porteurs d’obligations des sociétés et entreprises ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "article": "01.04.02(5)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Aux revenus des créances, dépôts, cautionnements.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "article": "01.04.03(1)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Les revenus de placements dans les institutions financières, tels les placements bancaires, les placements dans les sociétés d’assurances, les Bons du Trésor par Adjudication (BTA), les Bons du Trésor Fihary (BTF) ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "article": "01.04.03(2)",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Les intérêts des comptes courants créditeurs des actionnaires ou associés ainsi que ceux relatifs aux avances de trésorerie intra groupe.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "article": "01.04.03(3),04",
+      "printed_pages": "43",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "2a5c463e8cdd8459a65f9ffa82896e8c77d76728c4b051203b7c5b8440149996",
+      "checks": [
+        {
+          "quote": "Les intérêts sur parts sociales ainsi que les ristournes versées par les sociétés coopératives au profit de ses membres.",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "En cas de dissolution de la société coopérative, de l’union, de la fédération et de la confédération de coopérative, le boni de liquidation constitue des revenus imposables.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "article": "01.04.05(1)–(2)",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "pour les obligations ou emprunts, par l’intérêt ou le revenu distribué ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "pour les lots, par le montant même du lot ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "article": "01.04.05(3)",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "pour les primes de remboursement, par la différence entre la somme remboursée et le taux d’émission des emprunts ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "article": "01.04.05(4)",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "par les délibérations des assemblées générales d’actionnaires ou des conseils d’Administration, les comptes rendus ou tous autres documents analogues ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "article": "01.04.05(5)",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "pour les revenus visés à l’article 01.04.03 ci-dessus, par déclaration des directeurs généraux, directeurs gérants.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "article": "01.04.06",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "Si le taux d’émission a varié, il est déterminé pour chaque emprunt par une moyenne",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "un capital formé de 20 fois l’intérêt annuel stipulé lors de l’émission",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "A défaut de stipulation d’intérêt, il est pourvu à la fixation du taux d’émission par une déclaration estimative",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "article": "01.04.02(6), read with CDI01.04.04–08",
+      "printed_pages": "22",
+      "physical_pages": [
+        26
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "674ff77d75acfac621edc56c127f244f33d06c358ad53525042015e34e84f9a6",
+      "checks": [
+        {
+          "quote": "plus-values de cession mobilières réalisées par des personnes physiques ou morales résidentes ou non.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "article": "01.04.10 first bullet",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "aux intérêts perçus par les banques et autres établissements financiers au titre de leurs opérations de crédit bancaire ainsi qu’aux intérêts des dépôts à vue ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "article": "01.04.10",
+      "printed_pages": "42",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "fresh_page_extraction_sha256": "b79171858961d435101581a88e41fec2529d576875b394c024a5d839cda5ab4f",
+      "checks": [
+        {
+          "quote": "Supprimer le 2ème tiret de cet article.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "article": "01.04.10 second bullet",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "aux intérêts des emprunts contractés pour la réalisation d’investissements octroyés par des organismes de financement extérieur ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "article": "01.04.10 direction-function paragraphs",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "elles ne s’appliquent pas aux produits correspondant à des fonctions de direction :",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "au Président du conseil d’Administration ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "à l’administrateur adjoint au président à titre de directeur général ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "à l’administrateur provisoirement délégué, pour remplir en totalité ou en partie les fonctions de président du conseil d’Administration.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "article": "01.04.10 final paragraph",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "Toutefois, l’exonération est limitée aux sommes admises en déduction des bénéfices imposables à l’Impôt sur les Bénéfices des personnes morales.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "article": "01.04.10",
+      "printed_pages": "22",
+      "physical_pages": [
+        26
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "674ff77d75acfac621edc56c127f244f33d06c358ad53525042015e34e84f9a6",
+      "checks": [
+        {
+          "quote": "Supprimer le dernier paragraphe de cet article.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "article": "01.04.11",
+      "printed_pages": "45",
+      "physical_pages": [
+        46
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "fc9c900ab0ea00a97bf9cf36fd674f7dbe5af0b636640ef7f9815de8ff80f257",
+      "checks": [
+        {
+          "quote": "n’est pas applicable aux intérêts sur prêts accordés par les membres ou sur les emprunts contractés par les membres à la société coopérative.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C32",
+      "article": "01.04.12",
+      "printed_pages": "45",
+      "physical_pages": [
+        46
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "fc9c900ab0ea00a97bf9cf36fd674f7dbe5af0b636640ef7f9815de8ff80f257",
+      "checks": [
+        {
+          "quote": "Ni aux parts d’intérêts, des sociétés ou unions de sociétés coopératives, ou caisses locales de crédit agricole, associations agricoles ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "Ni aux intérêts des emprunts contractés par les caisses centrales de crédit mutuel ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "Ni aux intérêts, arrérages et tous autres produits des comptes ouverts dans les établissements de crédit aux noms des caisses de crédit mutuel agricole.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C33",
+      "article": "01.04.13",
+      "printed_pages": "45",
+      "physical_pages": [
+        46
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "fc9c900ab0ea00a97bf9cf36fd674f7dbe5af0b636640ef7f9815de8ff80f257",
+      "checks": [
+        {
+          "quote": "exclusivement et effectivement pour objet le secours matériel et mutuel",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "qui ne sauraient être rangées dans la catégorie des sociétés véritables",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "sauf en ce qui concerne seulement leurs emprunts.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C34",
+      "article": "01.04.14",
+      "printed_pages": "45",
+      "physical_pages": [
+        46
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "fc9c900ab0ea00a97bf9cf36fd674f7dbe5af0b636640ef7f9815de8ff80f257",
+      "checks": [
+        {
+          "quote": "n’est pas applicable aux avances faites aux sociétés au moyen d’endossements de warrants.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C35",
+      "article": "01.04.08",
+      "printed_pages": "44",
+      "physical_pages": [
+        45
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "56d5730d20204bc03cff98f4cdb918a07612961d898c2c4460be332ff82f59c9",
+      "checks": [
+        {
+          "quote": "Le montant de l’impôt est liquidé, retenu, déclaré et versé par l’organisme payeur.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C36",
+      "article": "I-26",
+      "printed_pages": "16",
+      "physical_pages": [
+        17
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "c6778bbccfc1eff5a7e3e7a189701f86bf8711e04a4bfc820196e9dcbe4753c7",
+      "checks": [
+        {
+          "quote": "L’impôt est payé au bureau des Impôts territorialementcompétent pour les sociétés et entreprises.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C37",
+      "article": "I-27(A)",
+      "printed_pages": "16",
+      "physical_pages": [
+        17
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "c6778bbccfc1eff5a7e3e7a189701f86bf8711e04a4bfc820196e9dcbe4753c7",
+      "checks": [
+        {
+          "quote": "L’impôt est acquitté sur déclaration déposée auprès de l’unité opérationnelle gestionnaire du dossier du contribuable au plus tard le 15 du mois qui suit celui du paiement.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C38",
+      "article": "I-27(B)",
+      "printed_pages": "16",
+      "physical_pages": [
+        17
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "c6778bbccfc1eff5a7e3e7a189701f86bf8711e04a4bfc820196e9dcbe4753c7",
+      "checks": [
+        {
+          "quote": "l’impôt est dû et exigible lors de la mise à disposition des sommes imposables",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "ou de leur inscription à un compte quelconque, et quel que soit le mode de paiement opéré.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C39",
+      "article": "I-27(C)",
+      "printed_pages": "17",
+      "physical_pages": [
+        18
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "66a1f646979b3f8c7d047a8b3492607e1092d8d39c0714c0f2a653b9ce07e131",
+      "checks": [
+        {
+          "quote": "une liste des associés avec le nombre de titres ou de parts détenus par chacun d’eux, une copie du procès-verbal de tirage au sort s’il y a lieu",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "le nombre des titres amortis ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C40",
+      "article": "I-27(C)(b)–(e)",
+      "printed_pages": "17",
+      "physical_pages": [
+        18
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "66a1f646979b3f8c7d047a8b3492607e1092d8d39c0714c0f2a653b9ce07e131",
+      "checks": [
+        {
+          "quote": "le taux d’émission de ces titres déterminé conformément à l’Article 01.04.06",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "le cas échéant, le prix de rachat en bourse de ces mêmes titres ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "le montant des lots et des primes revenant aux titres amortis ;",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "la somme sur laquelle la taxe est exigible.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C41",
+      "article": "I-28",
+      "printed_pages": "17",
+      "physical_pages": [
+        18
+      ],
+      "pdf_sha256": "414ddf9396a681d4a8653d027f0063632e949622f0675a461b0c0fd84fcc04dd",
+      "fresh_page_extraction_sha256": "66a1f646979b3f8c7d047a8b3492607e1092d8d39c0714c0f2a653b9ce07e131",
+      "checks": [
+        {
+          "quote": "ceux de ces titres offerts au public, assujetties aux formalités déterminées par les textes en vigueur.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C42",
+      "article": "20.01.51–54.1",
+      "printed_pages": "172–174",
+      "physical_pages": [
+        173,
+        174,
+        175
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "c883daa202b60619f4640c342a1fbadaeb1f296144e02c8aad5c5f96ef8981e2",
+      "checks": [
+        {
+          "quote": "Les pénalités et amendes prévues au présent chapitre sanctionnent les infractions aux dispositions du présent Code.",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "Toute insuffisance, inexactitude, omission, minoration ou fausseté relevée dans toute déclaration périodique ou occasionnelle",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C43",
+      "article": "01.01.14 II-D",
+      "printed_pages": "20",
+      "physical_pages": [
+        24
+      ],
+      "pdf_sha256": "fe0f90c76e729721ff10f9eec820edc55ac881808e02d2f0367f00cfdb45a13c",
+      "fresh_page_extraction_sha256": "c3cc9b204193ed7898165c4e939a7e0841d8586f340a0d52d4fdd3e9d055cf28",
+      "checks": [
+        {
+          "quote": "sur les intérêts perçus par les banques et autres établissements de crédit non-résidents à Madagasikara au titre de leurs opérations de crédit.",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "En sont exclus, les intérêts prévus par l’article 01.01.03.8° du présent Code.",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C44",
+      "article": "30.02.13",
+      "printed_pages": "209",
+      "physical_pages": [
+        210
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "1e39cdc80b224c42547fe932997bf59bde97e7d2fa9c32bcc34b42c59117699e",
+      "checks": [
+        {
+          "quote": "Le Titulaire, l'Entité de Transformation et les Investisseurs, personnes morales, sont redevables de l’impôt sur les revenus des capitaux mobiliers",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "sauf en ce qui concerne les paiements à leur profit :",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C45",
+      "article": "01.01.05",
+      "printed_pages": "13",
+      "physical_pages": [
+        14
+      ],
+      "pdf_sha256": "d542ae2d3c3f5648c9c4a89e0ba2b95a92e6af77a8c07555d83444e71dfc5254",
+      "fresh_page_extraction_sha256": "1fefeb2c5ffab85ca66b100570434959dfb2ce16f60c9f111002a91f100a99eb",
+      "checks": [
+        {
+          "quote": "Les personnes morales qui y ont leur siège social et/ou leur siège de direction effective ;",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    },
+    {
+      "id": "C46",
+      "article": "01.04.04 replacement",
+      "printed_pages": "42",
+      "physical_pages": [
+        44
+      ],
+      "pdf_sha256": "4e28900e81a3cccbfdebd87d11b60a42519e80ee01c358ad4d0dd3d76437fbd8",
+      "fresh_page_extraction_sha256": "b79171858961d435101581a88e41fec2529d576875b394c024a5d839cda5ab4f",
+      "checks": [
+        {
+          "quote": "Le taux de l’impôt sur le revenu des capitaux mobiliers est fixé à 20p.100",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "un abattement de 50p.100",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "un taux réduit de 10p.100",
+          "exact_after_whitespace_only": true
+        },
+        {
+          "quote": "est représentatif et libératoire, sur justification,",
+          "exact_after_whitespace_only": true
+        }
+      ]
+    }
+  ],
+  "passed_rows": 46
+}
