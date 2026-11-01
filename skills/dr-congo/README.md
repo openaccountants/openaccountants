@@ -22,7 +22,7 @@ partial:
 
 # DR Congo: tax pack
 
-**Partial pack, 1 November 2026.** Two existing 2025 Guides, the overview and formation, remain byte-for-byte unchanged. The VAT and payroll/social Guides now have conditional source-bound research drafts, with fresh independent source corrections closed for this conditional draft scope. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f 05e 8c 9785a 0573787887e 403e 07 daf 20a 41e 75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde 60a 16e 113f 9056297e 6d 6 ae 09d 0294 bec 075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
+**Partial pack, 1 November 2026.** The overview and formation now have 2026 research drafts awaiting independent review. All eight Guides have research-year metadata; no completed-country claim follows from those labels. The VAT and payroll/social Guides now have conditional source-bound research drafts, with fresh independent source corrections closed for this conditional draft scope. The corporate and individual Guides are broader 2026 IS/IRPP research workpapers. Fresh independent source review accepted their exact candidate `9f 05e 8c 9785a 0573787887e 403e 07 daf 20a 41e 75` as conditional research only; their currentness and live-filing holds remain. Two new 2026 source-cited drafts cover transfer pricing and nonresident-payment screening. Their independent AI source review was accepted on 1 November 2026 for the exact two-Guide candidate `ddde 60a 16e 113f 9056297e 6d 6 ae 09d 0294 bec 075`. This is not accountant attestation. No domain is represented as comprehensively covered by this batch.
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
@@ -56,8 +56,8 @@ After that review, a maintainer check on 1 November 2026 corrected the article 1
 
 ## Other skills
 
-- [Company formation](cd-company-formation.md) (2025)
-- [Tax overview](cd-tax-overview.md) (2025)
+- [Company formation](cd-company-formation.md) (2026 conditional research; independent review pending)
+- [Tax overview](cd-tax-overview.md) (2026 intake/routing draft; independent review pending)
 
 ## Corporate expansion: conditional source review accepted
 
@@ -74,3 +74,7 @@ The [IRPP ledger](../../evidence/ledgers/cd-income-tax.md) records 42 rows and t
 The [new evidence directory](../../evidence/dr-congo-remaining-20261101/README.md) records 37 VAT and 34 payroll/social rule rows, actual primary-source reading scopes, exact predecessor topic destinations and four recomputing cases. It builds on main `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8` after [historical PR1173](https://github.com/openaccountants/openaccountants/pull/1173) merged. The four earlier reviewed Guides and all earlier evidence remain unchanged. No new source review, operative-law completeness, accepted filing or accountant attestation is claimed. All seven domains remain partial.
 
 The [VAT/payroll independent review and repair closure](../../evidence/dr-congo-remaining-review-20261101/closure-repair-1/closure-review.md) checked all71rows,27predecessor destinations and four independent computations. Three finding groups closed against exact Guide/ledger hashes: principal-payment relief conditions, IRPP source locators and original-versus-August industrial-material scope. This accepts conditional source fidelity only; all seven domains and stated legal/implementation/filing holds remain partial.
+
+## Overview and formation follow-on: independent review pending
+
+The [new evidence](../../evidence/dr-congo-overview-formation-20261101/README.md) records 16 overview routing rules, 30 formation rules, 29 exact predecessor-topic destinations and four executable cases. This two-Guide batch starts at accepted closure commit `fe5f9fd209a3f8169415e9131e72e24a71ac4249` on existing draft PR1213. The six accepted tax Guides and all earlier review evidence remain byte-identical. The overview routes to their figure homes rather than repeating rates and dates. Formation distinguishes the OHADA forms and capital rules while holding national SARL exceptions, live GUCE instructions, currency conversion and the disputed CNSS handoff. Independent review remains pending for these two new drafts; all seven domains remain partial.

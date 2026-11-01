@@ -1,0 +1,112 @@
+{
+  "read_on": "2026-11-01",
+  "meaning": "Acquisition is not reading. Named extracts actually read; raw source binaries/HTML/OCR and renderings remain outside Git.",
+  "sources": [
+    {
+      "cache_file": "formation-auscgie.pdf",
+      "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "bytes": 16313466,
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Actual OHADA Journal Officiel, selected arts.1–6,10–26,97–101,116–120-5,137–140,309–314,385–389,823–824,853-1–853-8. PDF 8–13,28–32,36,76–78,95–96,194,207–208. Not all 240 pages. Selected capital pages rendered and inspected.",
+      "visually_inspected_pages": [
+        76,
+        77,
+        95,
+        96,
+        208
+      ]
+    },
+    {
+      "cache_file": "formation-anapi-current.html",
+      "official_url": "https://anapi.cd/procedures",
+      "bytes": 192688,
+      "sha256": "225d78cfc928227049a414bce1d026c091d760812a56f93f7d5e2fa0f6ebe094",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Full formation procedure sections 1–7, including legal forms, company/individual/foreign-establishment document lists, identifiers, fees and public target. Fees/target not approved as current client quote; no authenticated GUCE workflow.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "formation-economie.html",
+      "official_url": "https://economie.gouv.cd/rubrique_creation_entreprise",
+      "bytes": 16920,
+      "sha256": "4573d7e9d182ae99de2af9a7cdda85954ab6f50f6a95f23fec23ee8dccd7cab3",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Full Ministry formation page sections 1–6; actual CNSS-exclusion wording compared with ANAPI inclusion.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "formation-ohada.html",
+      "official_url": "https://www.ohada.org/droit-des-societes-commerciales-et-du-gie/",
+      "bytes": 264377,
+      "sha256": "a0e7edb5c407874132c257796ac835a68155a581c245a03a27d3c1cd4d2c4e87",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Act description and links, particularly national penal legislation boundary. Landing iframe points to unrelated act 485; actual catalogue download 2032 was followed instead.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "loi-is-et-irpp-23-053.pdf",
+      "official_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "bytes": 2931692,
+      "sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cached original read: 23/053 arts.3–9,12,53,56–62,67,118–126,141–149; source/role routing only, tax figures remain in owning Guides. PDF 12–15,25–28,39–43. No full current consolidation.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "lf-2026-recettes.pdf",
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "bytes": 13819458,
+      "sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cached actual 25/060 arts.16–22,25–27,45–50,88; PDF 16–18,20–25,32–37,53. Route and registration conditions read; all carried 2025 provisions not obtained.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "lfr-2026-recettes.pdf",
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "bytes": 72688605,
+      "sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cached actual 26/032 arts.12–19 and 49–51, PDF 8–11,17; version/classification and commencement route, not duplicated rates or complete consolidation.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "cnss-recueil.pdf",
+      "official_url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+      "bytes": 1844578,
+      "sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cached 16/009 art.19,18/041 arts.2–6, Regulation146 arts.4,17–31: employer liability, affiliation and workstream evidence. PDF 12–13,59,118,123–127. Not all 163 pages.",
+      "visually_inspected_pages": []
+    },
+    {
+      "cache_file": "dgi-vat.html",
+      "official_url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+      "bytes": 575375,
+      "sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Cached navigation identifying IS/IRPP/VAT services only; no authenticated filing sequence.",
+      "visually_inspected_pages": []
+    }
+  ],
+  "acquisition_limits": [
+    {
+      "url": "https://guichetunique.cd/",
+      "direct": "Normal TLS handshake failure; web fetch timeout.",
+      "browser": "Normal Brave browser reported ERR_SSL_VERSION_OR_CIPHER_MISMATCH. No bypass.",
+      "archive": "Year 2026 archive selection failed; no dated snapshot read.",
+      "result": "No live form, sequence, fees or completion established."
+    },
+    {
+      "url": "https://www.cno-rdc.com/download/arrete-interministeriel-du-30-decembre-2014-determinant-la-forme-des-statuts-et-le-capital-social-de-la-sarl",
+      "direct": "Official national commission listing downloaded; no order payload exposed in fetched listing.",
+      "result": "No national SARL exception text treated as read; minimum/statutes/deposit exception remains held."
+    },
+    {
+      "url": "https://investindrc.cd/fr/Comment-creer-une-entreprise-en-RD-Congo",
+      "direct": "Legacy ANAPI hostname failed DNS; web fetch timed out.",
+      "result": "Current official ANAPI procedures at anapi.cd used and actually read."
+    }
+  ]
+}

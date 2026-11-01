@@ -1,0 +1,249 @@
+{
+  "base": "fe5f9fd209a3f8169415e9131e72e24a71ac4249",
+  "files": [
+    {
+      "path": "skills/dr-congo/cd-tax-overview.md",
+      "old_git_blob": "02ab000f992b25037f4f8e17ffb7cfa99013a6a5",
+      "old_sha256": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4",
+      "candidate_sha256": "e70f7800c9527d80c53cd24060f4a650640f5fb764ddc67510925eaab3169e46",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_byte_equal": true,
+      "platform_fields_equal": {
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "old_topics": [
+        {
+          "old_topic": "Heading: DR Congo Tax Overview",
+          "old_text": "# DR Congo Tax Overview",
+          "old_text_sha256": "52f198bdc033d5dc49ca3abebdbc1208d38e7bfdfdd1c7540b737dc90d682201",
+          "destination": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to."
+        },
+        {
+          "old_topic": "Heading: The DRC tax system at a glance",
+          "old_text": "## The DRC tax system at a glance",
+          "old_text_sha256": "8902e7677f2b9db745d25127b1fd3d548930a12afb4be94e89dd3d162bb267b0",
+          "destination": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to."
+        },
+        {
+          "old_topic": "Opening paragraph",
+          "old_text": "The Democratic Republic of the Congo levies tax on a territorial (source) basis, administered by the Direction Générale des Impôts (DGI). This section is an unverified source-cited draft for tax year 2025 and must be reviewed by a licensed DRC accountant.",
+          "old_text_sha256": "3cbaf8a9c23c6ad76d7aeb41f18b5eb166c5eb2fb0a3d4febe1755be25767e37",
+          "destination": "Scope/Who this applies to and explicit research notice; old legal/administrative claims corrected or held in Sources."
+        },
+        {
+          "old_topic": "National tax authority",
+          "old_text": "- **National tax authority** — Direction Générale des Impôts (DGI)  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo))_",
+          "old_text_sha256": "4c1e40b7aea25c92e66714970744aa5287a5ef25c95947122fc3ac571e88898e",
+          "destination": "Scope and method step3: DGI services distinguished from CNSS; official public pages."
+        },
+        {
+          "old_topic": "Currency",
+          "old_text": "- **Currency** — Congolese franc (CDF)  _(Code Général des Impôts (RDC))_",
+          "old_text_sha256": "fbab2cdeee475bac582fe2c5ca8de36884633e31aa2e366f859baa49d1b6c4c7",
+          "destination": "Method step4: Congolese-franc company accounting where applicable; no guessed currency conversion."
+        },
+        {
+          "old_topic": "Tax year",
+          "old_text": "- **Tax year** — Calendar year, 1 January to 31 December  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/tax-administration))_",
+          "old_text_sha256": "ceaa823eccbab394215299ba92fa5a89fa490097f4e81a0195c9e20e952711b5",
+          "destination": "Method steps2,4: corporate period routed to its Guide with first-year/cessation exceptions; no universal year-end claim."
+        },
+        {
+          "old_topic": "Basis of taxation",
+          "old_text": "- **Basis of taxation** — Territorial — income is taxed where it is sourced; foreign-source profits are generally not taxed in the DRC  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/individual/taxes-on-personal-income))_",
+          "old_text_sha256": "d4fdbe82f61e2ed16a6da0f0cd4b5368a1028602e09e42d3578f0e745892da4c",
+          "destination": "Scope and method step2: separate company source and individual residence/global-income rules; blanket territorial statement replaced."
+        },
+        {
+          "old_topic": "Headline corporate income tax rate",
+          "old_text": "- **Headline corporate income tax rate** — 30 percent  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/taxes-on-corporate-income))_",
+          "old_text_sha256": "ccff1f9eed229e322148543fe5980ca10b33ede5e411162b90bc1b8511cedc26",
+          "destination": "Rates, bands and thresholds: corporate Guide owns the rate; no duplicate figure."
+        },
+        {
+          "old_topic": "Top personal income tax (IPR) rate on salaries",
+          "old_text": "- **Top personal income tax (IPR) rate on salaries** — 40% (statutory top band), but IPR cannot exceed 30% of taxable salary percent  _([Code des Impôts sur les Revenus (IPR)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/individual/taxes-on-personal-income))_",
+          "old_text_sha256": "1302520a3820023cd388c0d6aac4512f151cd876529080d369d11df70e3e44f9",
+          "destination": "Rates, bands and thresholds: individual Guide owns global IRPP scale/ceiling; old salary-only architecture corrected."
+        },
+        {
+          "old_topic": "Does VAT (TVA) exist?",
+          "old_text": "- **Does VAT (TVA) exist?** — Yes — standard VAT (Taxe sur la Valeur Ajoutée) at 16% percent  _([Ordonnance-loi n° 10/001 instituant la TVA](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/other-taxes))_",
+          "old_text_sha256": "9fcb12282c990b6eb203c729443d59a2846a987e53f0971cfbaaab9371e3b0b4",
+          "destination": "Method step3 and rate-routing table: actual VAT workpaper, no duplicated standard rate."
+        },
+        {
+          "old_topic": "Annual corporate income tax return deadline",
+          "old_text": "- **Annual corporate income tax return deadline** — 30 April of the following year  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/tax-administration))_",
+          "old_text_sha256": "f74b103ab4ed4df1df562e63f5c2f06dc38120f3f26ebc4cef96aaddd76f7eb9",
+          "destination": "Method steps2,4 and Filing and payment: corporate Guide owns the deadline."
+        },
+        {
+          "old_topic": "Annual personal income tax recapitulative return deadline",
+          "old_text": "- **Annual personal income tax recapitulative return deadline** — 30 March of the following year  _([Code des Impôts sur les Revenus (IPR)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/individual/tax-administration))_",
+          "old_text_sha256": "9385e4c5f0faf43afbaf795cb15e9436d9ae5cdad7d29bda62a01bed4c9834f4",
+          "destination": "Method steps2,4: individual return separated from employer salary report; outdated date removed and routed to owning schedules."
+        },
+        {
+          "old_topic": "VAT return frequency and deadline",
+          "old_text": "- **VAT return frequency and deadline** — Monthly — by the 15th of the month following the taxable transactions  _([Ordonnance-loi n° 10/001 instituant la TVA](https://mjgroup.africa/navigating-vat-in-the-drc-a-guide-for-importers-exporters/))_",
+          "old_text_sha256": "47ca3e4189cba6d3aa016c344ae44097d9245729909a0987dd9f890f34a4854c",
+          "destination": "Method steps3,4 and Filing and payment: VAT Guide owns monthly schedule/holds."
+        },
+        {
+          "old_topic": "Minimum corporate tax",
+          "old_text": "- **Minimum corporate tax** — 1% of yearly turnover (companies other than micro and small) percent  _([Code Général des Impôts (RDC)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/taxes-on-corporate-income))_",
+          "old_text_sha256": "f3d4afc72ff806525e58382714290e19056aee53a0a1706c1676c7188d6105fd",
+          "destination": "Rates, bands and thresholds: corporate Guide owns minimum and scope tests."
+        }
+      ]
+    },
+    {
+      "path": "skills/dr-congo/cd-company-formation.md",
+      "old_git_blob": "1f6e9850bffa118a5cc429a4e75b8e3e0a702d9e",
+      "old_sha256": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a",
+      "candidate_sha256": "3203d2d5d2eac3204c1b132b88f50f71fe6996de0e4a7cd52da7bae950474d07",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_byte_equal": true,
+      "platform_fields_equal": {
+        "review_status": "pending_review",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team",
+        "tier": "2",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "old_topics": [
+        {
+          "old_topic": "Heading: DR Congo Company Formation & Entity Choice",
+          "old_text": "# DR Congo Company Formation & Entity Choice",
+          "old_text_sha256": "e9bf93c2ecf07e8daf1c765c1e0311aec12af6b3492a7b64e226d71b98f9ce84",
+          "destination": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to."
+        },
+        {
+          "old_topic": "Heading: Entity types and incorporation",
+          "old_text": "## Entity types and incorporation",
+          "old_text_sha256": "8d98f9b6b1930cd36c6a2c6b103a6efb58435ff04ea88e1a84e2ae36078d2cce",
+          "destination": "New H1 and canonical method/reference headings; corresponding Scope/Who this applies to."
+        },
+        {
+          "old_topic": "Opening paragraph",
+          "old_text": "Company law in the DRC follows the OHADA Uniform Act on Commercial Companies, with incorporation handled through the Guichet Unique de Création d'Entreprise (GUCE). This is an unverified 2025 draft pending accountant/legal review.",
+          "old_text_sha256": "d28d175c65c52cea22d1f3b3cb220b1aa79ba9212decc786851e5a69309141fd",
+          "destination": "Scope/Who this applies to and explicit research notice; old legal/administrative claims corrected or held in Sources."
+        },
+        {
+          "old_topic": "Most common entity — SARL",
+          "old_text": "- **Most common entity — SARL** — Société à Responsabilité Limitée (private limited liability company)  _([OHADA Acte uniforme relatif au droit des sociétés commerciales](https://mjgroup.africa/business-setup-in-drc-choosing-your-legal-structure-sarl-vs-sa/))_",
+          "old_text_sha256": "d013636e63f054ee5456f74164c7e9365514276c1931c9737467c2f9c1d28dbe",
+          "destination": "Entity choice: SARL legal definition and founders; unsupported prevalence ranking removed."
+        },
+        {
+          "old_topic": "Public/larger entity — SA",
+          "old_text": "- **Public/larger entity — SA** — Société Anonyme (public limited company)  _([OHADA Acte uniforme relatif au droit des sociétés commerciales](https://mjgroup.africa/business-setup-in-drc-choosing-your-legal-structure-sarl-vs-sa/))_",
+          "old_text_sha256": "86b6aba3a85c2b6efae2d0dd749d9918518271cb29e20132790880416372b0a3",
+          "destination": "Entity choice and capital table: actual SA definition and ordinary/public-offer distinction; no size ranking."
+        },
+        {
+          "old_topic": "Flexible entity — SAS",
+          "old_text": "- **Flexible entity — SAS** — Société par Actions Simplifiée (simplified joint-stock company)  _(OHADA Acte uniforme relatif au droit des sociétés commerciales)_",
+          "old_text_sha256": "76aa6e32aa08c3cf7653d9be3c77c76902aa1bd28d8935a90e40044bcb63bf6e",
+          "destination": "Entity choice and capital table: statutory organisation, capital and mandatory/public-fundraising limits."
+        },
+        {
+          "old_topic": "Foreign branch",
+          "old_text": "- **Foreign branch** — A foreign company may operate via a registered branch (succursale)  _(OHADA Acte uniforme relatif au droit des sociétés commerciales)_",
+          "old_text_sha256": "67d666015ea2079c32e7f04b6b654154cf21d95a21e697f698c9b3bc4be7f9ae",
+          "destination": "Entity choice, capital, filing and Cross-border: personality, registration and conversion/dispensation conditions."
+        },
+        {
+          "old_topic": "Minimum share capital — SARL",
+          "old_text": "- **Minimum share capital — SARL** — Set in the articles (OHADA removed the fixed minimum); historically CDF 100,000 / USD ~2,000 (approx — confirm current requirement) (approx — confirm current requirement)  _([OHADA Acte uniforme relatif au droit des sociétés commerciales](https://mjgroup.africa/business-setup-in-drc-choosing-your-legal-structure-sarl-vs-sa/))_",
+          "old_text_sha256": "2767489ff993f0ce83e927f2b284444cefd215cea1b44ede464be0a9dfacb491",
+          "destination": "Capital table and Sources hold: national-exception rule; old CDF/USD guesses not approved."
+        },
+        {
+          "old_topic": "Minimum share capital — SA",
+          "old_text": "- **Minimum share capital — SA** — XOF/CDF equivalent of 10,000,000 CFA (approx USD 17,000) under OHADA (approx — confirm) (approx — confirm)  _(OHADA Acte uniforme relatif au droit des sociétés commerciales)_",
+          "old_text_sha256": "92a13c9f45c165e933ca4715bc505686d2c88df11c29f892176577508b946528",
+          "destination": "Capital table and worked case2: statutory CFA unit, ordinary scope, no guessed CDF/USD exchange."
+        },
+        {
+          "old_topic": "Capital paid-up requirement",
+          "old_text": "- **Capital paid-up requirement** — At least half deposited before incorporation; balance within two years  _([OHADA Acte uniforme relatif au droit des sociétés commerciales](https://www.expanship.com/cd/blog/incorporation-requirements-in-democratic-republic-of-the-congo))_",
+          "old_text_sha256": "96d084751bf035c3deea2bbffa926691991b9b12e799ebb09ac0e7c9aeaa002c",
+          "destination": "Capital table and two cases: SARL half/two years separated from SA quarter/three years."
+        },
+        {
+          "old_topic": "Incorporation one-stop shop",
+          "old_text": "- **Incorporation one-stop shop** — Guichet Unique de Création d'Entreprise (GUCE), with online registration available  _([Décret instituant le Guichet Unique de Création d'Entreprise](https://www.expanship.com/cd/blog/incorporation-requirements-in-democratic-republic-of-the-congo))_",
+          "old_text_sha256": "b2b81a136ee114af2a3a485146a21544aefb1940d65f5ef3e55c43ff144a4431",
+          "destination": "The base, filing and Sources: official GUCE role, unobserved online sequence and unresolved CNSS handoff."
+        },
+        {
+          "old_topic": "Registered office",
+          "old_text": "- **Registered office** — A physical registered office address in the DRC is mandatory and must be evidenced to GUCE  _([OHADA Acte uniforme relatif au droit des sociétés commerciales](https://www.expanship.com/cd/blog/incorporation-requirements-in-democratic-republic-of-the-congo))_",
+          "old_text_sha256": "19b36507217d00a2acc73873b2efc08decd71b77913ade5f7c056d48250cab0d",
+          "destination": "The base: statutory office, location alternatives, precise address and actual-office distinction."
+        },
+        {
+          "old_topic": "Incorporation timeline",
+          "old_text": "- **Incorporation timeline** — Officially about 3 days via GUCE; in practice allow 1–2 weeks (approx — confirm) (approx — confirm)  _([Décret instituant le Guichet Unique de Création d'Entreprise](https://www.expanship.com/cd/blog/incorporation-requirements-in-democratic-republic-of-the-congo))_",
+          "old_text_sha256": "11791cf0114840808e72a0ee6fbb2f6195db3521cd11288d8ad9e7b7a74ed959",
+          "destination": "Filing and Sources: public ANAPI target distinguished from proved current performance; no invented practical timeline."
+        },
+        {
+          "old_topic": "Core registrations on formation",
+          "old_text": "- **Core registrations on formation** — RCCM (commercial register), tax number (NIF) with the DGI, and INSS social-security registration (approx — confirm) (approx — confirm)  _(OHADA Acte uniforme relatif au droit des sociétés commerciales)_",
+          "old_text_sha256": "11eb1cdf76e2c7c2b535080b6159ef50303cdd74e137a4fcbd172f00d3b8087e",
+          "destination": "The base and filing: actual RCCM/DGI/national-ID/CNSS records and handoff disagreement, current CNSS name."
+        },
+        {
+          "old_topic": "Core annual compliance",
+          "old_text": "- **Core annual compliance** — Annual financial statements (OHADA SYSCOHADA), CIT return by 30 April, monthly VAT and payroll returns  _([OHADA Acte uniforme relatif au droit comptable (SYSCOHADA)](https://taxsummaries.pwc.com/democratic-republic-of-the-congo/corporate/tax-administration))_",
+          "old_text_sha256": "9500f7699aad722cdd50b0d99789c3a24c2568a3c513afa68b3a5e967dc05e6c",
+          "destination": "Filing: actual company-law annual statements/report/assembly conditions; tax schedules routed to accepted owning Guides."
+        }
+      ]
+    }
+  ],
+  "accepted_guides": [
+    {
+      "path": "skills/dr-congo/cd-corporate-income-tax.md",
+      "git_blob": "351d63b627812fc47e2e0979a93e3ccbc772e565",
+      "sha256": "3a94318a445e48cbd1d973cc8ef83b26e581f3976a2e368a01b1b9e8feccd433"
+    },
+    {
+      "path": "skills/dr-congo/cd-income-tax.md",
+      "git_blob": "395ac45675d05de7e1be48eb06a0c34539fb430b",
+      "sha256": "8216ac9efcaf76ba5c3f775417e3896024f3ab5d445d8c966b10fd6ff6fddaaa"
+    },
+    {
+      "path": "skills/dr-congo/cd-transfer-pricing.md",
+      "git_blob": "57e66ab4c820825a5d32049a217123ad86add437",
+      "sha256": "631405e941fde4ad0374386514f096825749077285c580d22eb48d3da9eb19aa"
+    },
+    {
+      "path": "skills/dr-congo/cd-cross-border.md",
+      "git_blob": "e5ed1c1bfd74b62644f186cd454dcd5b99d49ad7",
+      "sha256": "c34c58ce3f047127b6e251333200571664ea6df4244b4fdabcea6f5652d3a2de"
+    },
+    {
+      "path": "skills/dr-congo/cd-vat-gst.md",
+      "git_blob": "bc4aa2bfa03d49c64d7301529a3e5aa7e3ac1157",
+      "sha256": "c0b7fa52585dd7f28bb1ea916ebf241bb411c6cd0f48a5003c1f96ef905ee8fa"
+    },
+    {
+      "path": "skills/dr-congo/cd-payroll-social.md",
+      "git_blob": "0ddf1aaa26ef7b961ad55984f265e25ef02d908d",
+      "sha256": "8adef16e9e7017543e35d66a8d88adebcfba42cab5c09108686109f3b1ff7ebc"
+    }
+  ],
+  "historical_evidence_unchanged": true,
+  "historical_evidence_trees": [
+    "evidence/ledgers",
+    "evidence/dr-congo-remaining-20261101",
+    "evidence/dr-congo-remaining-review-20261101"
+  ]
+}
