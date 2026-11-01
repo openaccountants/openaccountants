@@ -2,13 +2,13 @@
 name: ms-nonresident-withholding
 description: >
   Montserrat nonresident withholding tax reference checked for 2026 against the official consolidated Income and Corporation Tax Act. Covers domestic rates for dividends, property rentals and other specified income payments, year-end accrual treatment, certificates, remittance timing and payer liability. Includes gross-payment examples and an accrual example to distinguish withholding from cash settlement. Use only after recipient residence, payment character and statutory scope have been established. Treaty reductions require their own entitlement and direction checks; this Guide does not provide a treaty rate matrix. Branch remittances, permanent establishments and later amendments need separate analysis. Independent accountant review is pending.
-version: 0.1
+version: 0.2
 jurisdiction: MS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -63,8 +63,6 @@ As a closing control, reconcile supplier accruals, payment dates and withholding
 ## Remaining work
 
 Permanent-establishment classification, branch remitted-profit withholding under section 39(4), treaty eligibility, source disputes, specific exemptions and post-consolidation amendments need further analysis. Independent accountant review remains pending.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

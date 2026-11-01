@@ -16,10 +16,10 @@ description: >
 version: 0.4
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-31
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: formation
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -239,8 +239,6 @@ Not yet confirmed: complete current form/fee execution, detailed UBO implementin
 [tax]: https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt
 [forms]: https://www.skraseting.fo/fo/feloeg/stovna-felag
 [start]: https://www.taks.fo/en/business/starting-a-business/starting-a-business
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

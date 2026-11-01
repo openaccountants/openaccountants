@@ -1,10 +1,10 @@
 ---
 name: it-income-tax
 description: "Italian personal income tax (IRPEF) for self-employed professionals (lavoratori autonomi, liberi professionisti) under the regime ordinario, tax year 2026, filed in 2027. Covers the 2026 bands (23%, 33%, 43%; the middle rate cut from 35% by the Legge di Bilancio 2026, L. 199/2025), the art. 13 detrazioni for self-employed, employment and pension income and their phase-outs, the cuneo fiscale in brief, the 19% detrazioni and their cuts above EUR 75,000, 120,000 and 200,000, regional and municipal surcharges, the cash-basis professional income rules and expense limits, the 20% withholding on fees, the forfettario test and the expired flat tax incrementale, Modello Redditi PF and 730 deadlines, acconti, penalties and ravvedimento. Trigger on: IRPEF autonomo, Quadro RE, Redditi PF, detrazioni, addizionale regionale, ritenuta d'acconto 20%, ravvedimento. Out of scope, see: it-irpef-employees, it-regime-forfettario, it-estimated-tax, it-inps-contributions, it-impatriati, italy-payroll, italy-crypto-tax, it-cross-border."
-version: 2.1
+version: 2.2
 jurisdiction: IT
 tax_year: 2026
-last_updated: 2026-10-24
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -297,8 +297,6 @@ Not yet confirmed:
 - **Moved, not dropped:** the gestione separata rates and cap (26.07%, 24%, EUR 122,295, EUR 18,808) are in `it-inps-contributions`; the forfettario coefficients (78%, 67% and the full table) in `it-regime-forfettario`; the 2026 cuneo fiscale detail and family detrazioni in `it-irpef-employees`.
 
 > Contributed by OpenAccountants.
-
-> Contributed by Ryan Duguid.
 
 > Contributed by Michael Cutajar.
 

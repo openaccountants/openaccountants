@@ -15,10 +15,10 @@ description: >
 version: 0.4
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-28
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -372,8 +372,6 @@ Not yet confirmed: separate authority reconciling Q2 payment under §22 with TAK
 [fuel]: https://www.logir.fo/Logtingslog/36-fra-15-05-2026-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin
 [returns]: https://www.taks.fo/fo/vinna/mvg/at-lata-inn-mvg-uppgerd
 [tourism]: https://www.taks.fo/fo/vinna/mvg/mvg-og-ferdavinna
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

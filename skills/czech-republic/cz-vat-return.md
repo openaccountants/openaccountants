@@ -1,10 +1,10 @@
 ---
 name: cz-vat-return
 description: "Pointer skill for Czech VAT (DPH), tax year 2026. The full method lives in czech-republic-vat-return: registration at CZK 2,000,000 calendar-year turnover (payer from 1 January next year) and CZK 2,536,500 (payer from the next day), the 21% and 12% rates, the VAT return (přiznání k DPH), control statement (kontrolní hlášení) and EC sales list (souhrnné hlášení), monthly and quarterly periods and 25-day deadlines, domestic and cross-border reverse charge, unreliable payers, and penalties including control statement fines under § 101h of the VAT Act (235/2004 Coll.). Trigger on: Czech VAT, DPH, plátce DPH, kontrolní hlášení, přiznání k DPH. Load czech-republic-vat-return instead of this file. Out of scope here: everything; income tax is in cz-income-tax and cz-corporate-income-tax, non-residents in cz-cross-border."
-version: 0.1
+version: 0.2
 jurisdiction: CZ
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -27,8 +27,6 @@ The slug stays so that links from [cz-income-tax](cz-income-tax.md), [cz-cross-b
 | Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of [czech-republic-vat-return](czech-republic-vat-return.md).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

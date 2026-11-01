@@ -2,13 +2,13 @@
 name: dm-income-tax-paye
 description: >
   Dominica resident individual income tax and employer PAYE reference for 2026. Covers the resident allowance, post-allowance marginal tax bands, annual calculation examples, individual filing requirements and employer monthly and annual reporting. Use for Commonwealth of Dominica income tax, resident allowance, PAYE remittance or annual employee returns. It distinguishes the pre-allowance income presentation from chargeable income after allowances to prevent double deduction. Residence, special relief eligibility, benefits in kind and the detailed monthly withholding tables require separate analysis. This source-cited draft does not cover the Dominican Republic or constitute a complete personal tax assessment.
-version: 0.1
+version: 0.2
 jurisdiction: DM
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -57,8 +57,6 @@ Monthly PAYE returns and deductions are due by the 15th of the following month, 
 ## Controls and unresolved scope
 
 Reconcile employee declarations, taxable pay, allowances, monthly withholding and annual certificates. Keep social-security deductions separate. Residence tests, mortgage and student-loan relief conditions, nonresident rules, business deductions, special income and payroll rounding are not resolved here. Review the applicable law and taxpayer documents before filing; no accountant attestation is claimed.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

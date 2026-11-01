@@ -17,10 +17,10 @@ description: >
 version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-28
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -211,8 +211,6 @@ Not yet confirmed: actual treaty provisions, beneficial-owner/anti-abuse applica
 [refund]: https://www.taks.fo/en/business/tax/dividend-tax-refunds
 [relief]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/o-tviskatting
 [residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

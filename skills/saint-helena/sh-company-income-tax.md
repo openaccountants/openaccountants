@@ -2,13 +2,13 @@
 name: sh-company-income-tax
 description: >
   Saint Helena island company income tax reference checked for 2026. Covers the standard company rate, the limited qualifying-production rate, separate dividend and capital-gain categories, annual filing and payment, and statutory instalments. Includes worked calculations on established chargeable income and a prior-year instalment example. Distinguishes filing extensions from payment extensions and identifies mixed-income allocation rules. Uses the Income Tax Ordinance, published regulations and current government guidance. Does not determine deductions, investment credits, losses, treaty relief or formation duties and does not apply to Ascension or Tristan da Cunha. Independent accountant review remains pending.
-version: 0.1
+version: 0.2
 jurisdiction: SH
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -56,8 +56,6 @@ Deductions, capital allowances, losses, investment credits, withholding, treaty 
 ## Verification boundary
 
 Checked 22 October 2026 against the official Income Tax Ordinance consolidation authoritative at 1 October 2021 and the additional sources linked above. The Gazette index was searched for later income-tax instruments; its Ascension rate orders do not apply to Saint Helena island. A complete audit of later resolutions and instruments and independent accountant review remain outstanding. This is a source-cited draft, not comprehensive coverage of the SH territory code or accountant attestation.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

@@ -17,12 +17,12 @@ jurisdiction: FO
 category: international
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
+last_updated: 2026-11-01
 version: "0.5"
 verified_by: pending
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
@@ -257,8 +257,6 @@ Not yet confirmed: part-year credit and spouse adjustments beyond the bounded no
 [residence]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting
 [calculator-info]: https://www.taks.fo/fo/borgari/skattur/skattaroknarin
 [calculator]: https://www.eskatt.fo/sjtp/sjtpsim.aspx
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

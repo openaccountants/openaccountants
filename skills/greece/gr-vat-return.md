@@ -9,10 +9,10 @@ description: >
   fines. Trigger on "Greek VAT return", "ΦΠΑ", "do the VAT Greece", "myAADE VAT", "TAXISnet VAT".
   Load greece-vat-return instead of this file. Out of scope here: everything; see
   greece-vat-return, greece-einvoice (myDATA and e-invoicing) and gr-tax-overview.
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -39,8 +39,6 @@ Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of 
 | AADE circular Ε.2113/31.12.2025 on the 30% island reduction, with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of greece-vat-return.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

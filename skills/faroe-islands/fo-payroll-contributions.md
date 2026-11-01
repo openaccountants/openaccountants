@@ -17,10 +17,10 @@ description: >
 version: 0.3
 jurisdiction: FO
 tax_year: 2026
-last_updated: 2026-10-28
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: payroll
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -311,8 +311,6 @@ Not yet confirmed: calendar-only part-year annual housing/electricity/heat valua
 [pensionreg]: https://logir.fo/Kunngerd/60-fra-05-05-2021-um-rindan-av-eftirlon-og-eftirlonarskatti
 [foreignoriginal]: https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=38060
 [foreign2023]: https://logir.fo/Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

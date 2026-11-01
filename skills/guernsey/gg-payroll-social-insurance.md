@@ -6,8 +6,8 @@ jurisdiction: GG
 category: payroll
 tax_year: 2026
 tier: 2
-last_updated: 2026-10-28
-version: "0.10"
+last_updated: 2026-11-01
+version: "0.11"
 sources:
   - url: "https://www.guernseylegalresources.gg/CHttpHandler.ashx?fileid=267239"
     title: "Valuation of Benefits in Kind Regulations 2010, current rr2 and5; original reg5 in267223 and2025amendment265330"
@@ -39,13 +39,13 @@ sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=196680&p=0"
     title: "SIC1 published 22 December 2025"
     as_of: "2026-10-22"
-authored_by: Ryan Duguid
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Guernsey payroll and social contributions v0.10
+# Guernsey payroll and social contributions v0.11
 
 > **Source-cited draft.** Professional review is pending. Figures are limited to the periods and assumptions below. This Guide prepares working papers; it is not authority to file or pay.
 
@@ -390,8 +390,6 @@ Not yet confirmed: exact Class 3 lower-limit/deeming interaction under regulatio
 ## Disclaimer
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
