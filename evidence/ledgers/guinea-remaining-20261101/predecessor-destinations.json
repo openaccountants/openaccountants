@@ -3,7 +3,7 @@
   "prepared_on": "2026-11-01",
   "pinned_base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
   "scope": "All six historical Guinea Guides, every nonblank body line before complete platform CTA suffix. Source texts only; this is not current-law acceptance.",
-  "destination_status": "All five substantive legacy Guides mapped to new methods and holds; overview remains historical. Original source text/hash/blob remains exact.",
+  "destination_status": "All76 exact original body items across six historical Guides mapped to new methods, owningGuide routes or explicit holds. No old historical retention claim remains for changed Guides. Originalsource/hash/blob/frontmatter/CTA evidence remains exact.",
   "guides": [
     {
       "path": "skills/guinea/gn-company-formation.md",
@@ -1233,11 +1233,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 13,
-            "line_end_at_pinned_base": 13,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "H1 v1.1",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1255,11 +1254,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 15,
-            "line_end_at_pinned_base": 15,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates routing table; The base",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1277,11 +1275,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 17,
-            "line_end_at_pinned_base": 17,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Who this applies to; Rates routing table; The base",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1299,11 +1296,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 19,
-            "line_end_at_pinned_base": 19,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step2: calendarbusinessperiod withfirstperiodexception, monthlyjobs separate",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1321,11 +1317,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 20,
-            "line_end_at_pinned_base": 20,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step3: GNF andverifiedforeignconversion",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1343,11 +1338,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 21,
-            "line_end_at_pinned_base": 21,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing: currentDGI, separateCNSS/APIP",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1365,11 +1359,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 22,
-            "line_end_at_pinned_base": 22,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step1; Cross-border; owningindividual/corporateGuide",
+            "status": "qualified_old_worldwide_summary",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1387,11 +1380,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 23,
-            "line_end_at_pinned_base": 23,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates table: individualmonthlyITSowner; oldannual35%notretained",
+            "status": "rejected_unsupported_old_IRPP_toprate",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1409,11 +1401,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 24,
-            "line_end_at_pinned_base": 24,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates table: corporateGuideownsCGI229rates",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1431,11 +1422,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 25,
-            "line_end_at_pinned_base": 25,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates table: VATGuideownsCGI373rates",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1453,11 +1443,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 26,
-            "line_end_at_pinned_base": 26,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Deadlines and filing: nouniversalMarchreturn,specificownercalendars",
+            "status": "rejected_unsupported_universal_deadline",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1475,11 +1464,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 27,
-            "line_end_at_pinned_base": 27,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "The base step2; Deadlines: VATownermonthly10thamendment",
+            "status": "corrected_old15daydate_byownerlink",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         },
         {
@@ -1497,11 +1485,10 @@
           },
           "destination": {
             "path": "skills/guinea/gn-tax-overview.md",
-            "line_start_at_pinned_base": 28,
-            "line_end_at_pinned_base": 28,
-            "status": "retained_byte_identical_historical",
-            "current_year_status": "unconfirmed_current_law",
-            "prospective_replacement": null
+            "heading_or_hold": "Rates route: formationaccounts/registry; Sources: detaileddetailedaccountingstandardsheld",
+            "status": "expanded_sourced_router_no_duplicate_figures",
+            "old_numeric_claim_accepted": false,
+            "note": "Oldexactsourcepreserved; route to currentowningGuide or statedhold rather than duplicate headlinefigure."
           }
         }
       ],
