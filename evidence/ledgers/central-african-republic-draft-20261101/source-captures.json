@@ -1,0 +1,58 @@
+[
+  {
+    "local_cache": "cgi2023.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2023-05/CGI%20RCA%202017%20mise%20%C3%A0%20jour%202023.pdf",
+    "bytes": 2444666,
+    "sha256": "9a31a1c421ae4d66a4052333dcc2fae8d328dc468fb816ad9326c983b7a22331",
+    "read_on": "2026-11-01",
+    "read_scope": "Read cited provisions and neighbours: articles 3–16,35–40,55–66,72–73,80–92,110–119,121–142,166 bis,167–177 bis and selected VAT provisions. Not all 442 pages. Mixed cover/footer dates and complete later amendment chain remain unresolved."
+  },
+  {
+    "local_cache": "lf2024.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2024-03/Loi%20de%20Finances%202024.pdf",
+    "bytes": 187103780,
+    "sha256": "738aafbbc084ace0a25989f0b02fb7a7751bc08128090873026bcf0a2f16f223",
+    "read_on": "2026-11-01",
+    "read_scope": "OCR first 45 PDF pages. Read DSF amendment and VAT old/new replacement through article 278, plus selected opening LPF clauses. Full new LPF and budget annexes not read."
+  },
+  {
+    "local_cache": "lfr2024.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2024-11/COLLECTIF%202024.pdf",
+    "bytes": 163693881,
+    "sha256": "39fdd1171dd83e881eb8c8c9cfb2dba1a625e72e82250e90df81799ef67829f8",
+    "read_on": "2026-11-01",
+    "read_scope": "OCR first 35 pages; read identity and fiscal section to the budget boundary in PDF pages 1–7. Forestry rent language and simulations conflict; no forestry figure used."
+  },
+  {
+    "local_cache": "lf2025.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf",
+    "bytes": 155079881,
+    "sha256": "0ca701b9387528cd7695a3e6fa622034e1b4c8151cdd91d241070d1aac594bee",
+    "read_on": "2026-11-01",
+    "read_scope": "OCR first 45 pages; read general/fiscal sections, especially articles 9–18 and boundaries through PDF page 20. Old/new text distinguished; budget schedules not used."
+  },
+  {
+    "local_cache": "lfr2025.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-07/COLLECTIF%202025.pdf",
+    "bytes": 171563074,
+    "sha256": "a9515ee6a8d1dadc6d122481eb19aeee974ea64069a8054a314ee13656ac4f78",
+    "read_on": "2026-11-01",
+    "read_scope": "OCR first 35 pages; read articles 9–10 with surrounding fiscal section. Immigration fees and budget annexes not used."
+  },
+  {
+    "local_cache": "lf2026.pdf",
+    "official_url": "https://www.finances.gouv.cf/sites/default/files/2025-12/LOI%202026%20OK_0.pdf",
+    "bytes": 137204726,
+    "sha256": "35708d46b1dcb30ef40880fa02de9fe94760585e464e5a21ec9d9ad4de41341f",
+    "read_on": "2026-11-01",
+    "read_scope": "OCR first 44 pages; read fiscal body articles 1–17 and ending 29–31; visual check PDF pages 5–6 on fiscal visa. No claim the entire 624-page Act was read."
+  },
+  {
+    "local_cache": "ohada-companies-2014.pdf",
+    "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "bytes": 16313466,
+    "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+    "read_on": "2026-11-01",
+    "read_scope": "Reused identical primary PDF from Benin source cache; personally read articles 97–104,137–143,309–314,385–389 and neighbours; visual checks pages 77/95. Current CAR national overrides not verified."
+  }
+]

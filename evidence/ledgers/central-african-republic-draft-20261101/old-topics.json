@@ -1,0 +1,410 @@
+[
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Common entity — limited liability company",
+    "old_text": "- **Common entity — limited liability company** — Société à Responsabilité Limitée (SARL)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Common entity — public limited company",
+    "old_text": "- **Common entity — public limited company** — Société Anonyme (SA)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Minimum share capital — SARL",
+    "old_text": "- **Minimum share capital — SARL** — XAF 1,000,000 (fully paid up at incorporation) XAF ((approx — confirm)) XAF (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups — https://www.expanship.com/cf/blog/incorporation-requirements-in-central-african-republic)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Minimum share capital — SA",
+    "old_text": "- **Minimum share capital — SA** — XAF 10,000,000 (at least 25% / XAF 2,500,000 paid up at incorporation) XAF ((approx — confirm)) XAF (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups — https://www.expanship.com/cf/blog/incorporation-requirements-in-central-african-republic)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Company registry",
+    "old_text": "- **Company registry** — Registre du Commerce et du Crédit Mobilier (RCCM), via the Greffe du Tribunal de Commerce  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups — https://www.expanship.com/cf/blog/incorporation-requirements-in-central-african-republic)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Tax identification number",
+    "old_text": "- **Tax identification number** — NIF (Numéro d'Identification Fiscale), issued by the DGID ((approx — confirm)) (approx — confirm)  _(Code Général des Impôts (CAR) — https://maxishr.com/en/central-african-republic/company-registration)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Core incorporation steps",
+    "old_text": "- **Core incorporation steps** — Notarised statutes, capital deposit in a local bank, registration with RCCM, NIF/tax registration, CNSS employer registration ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups; Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Typical incorporation timeline",
+    "old_text": "- **Typical incorporation timeline** — Several weeks (no single-window statutory deadline confirmed) ((approx — confirm)) (approx — confirm)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Core annual compliance",
+    "old_text": "- **Core annual compliance** — Annual financial statements per OHADA SYSCOHADA accounting; annual IS return by 30 April; monthly VAT and payroll declarations; CNSS contributions ((approx — confirm)) (approx — confirm)  _(OHADA SYSCOHADA Accounting Act; Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old bullet",
+    "label": "Accounting framework",
+    "old_text": "- **Accounting framework** — OHADA SYSCOHADA revised accounting system  _(OHADA Uniform Act on Accounting Law (SYSCOHADA))_"
+  },
+  {
+    "slug": "cf-company-formation",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "Companies in the Central African Republic are formed under OHADA company law and registered with the Registre du Commerce et du Crédit Mobilier (RCCM). The SARL and SA are the most common forms. Capital figures and process details below are a source-cited draft to confirm against the OHADA Uniform Act and local practice."
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Standard corporate income tax rate",
+    "old_text": "- **Standard corporate income tax rate** — 30% percent  _([Code Général des Impôts (CAR) — Impôt sur les Sociétés](https://taxatlas.io/region/central-africa))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Reduced rate — agricultural activities",
+    "old_text": "- **Reduced rate — agricultural activities** — 20% for resident companies engaged in agricultural activities percent (approx — confirm)  _([Code Général des Impôts (CAR) — Impôt sur les Sociétés](https://maxishr.com/en/central-african-republic/company-registration))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Minimum lump-sum tax (IMF) — general businesses",
+    "old_text": "- **Minimum lump-sum tax (IMF) — general businesses** — 1.85% of annual turnover percent (approx — confirm)  _([Code Général des Impôts (CAR) — Impôt Minimum Forfaitaire](https://maxishr.com/en/central-african-republic/company-registration))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Minimum lump-sum tax (IMF) — agriculture",
+    "old_text": "- **Minimum lump-sum tax (IMF) — agriculture** — 3% of turnover for agriculture-related businesses percent (approx — confirm)  _([Code Général des Impôts (CAR) — Impôt Minimum Forfaitaire](https://maxishr.com/en/central-african-republic/company-registration))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Tax base",
+    "old_text": "- **Tax base** — Net taxable profit (worldwide profit for resident companies; CAR-source profit for permanent establishments of non-residents) (approx — confirm)  _(Code Général des Impôts (CAR) — Impôt sur les Sociétés)_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Withholding tax on dividends",
+    "old_text": "- **Withholding tax on dividends** — 15% (non-residents) percent (approx — confirm)  _([Code Général des Impôts (CAR)](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Withholding tax on royalties",
+    "old_text": "- **Withholding tax on royalties** — 20% (non-residents) percent (approx — confirm)  _([Code Général des Impôts (CAR)](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Withholding tax on non-resident service fees",
+    "old_text": "- **Withholding tax on non-resident service fees** — 15% on CAR-source service payments to non-residents percent (approx — confirm)  _([Code Général des Impôts (CAR)](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Withholding tax on interest",
+    "old_text": "- **Withholding tax on interest** — 15% (non-residents) percent (approx — confirm)  _(Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old bullet",
+    "label": "Annual return filing & payment deadline",
+    "old_text": "- **Annual return filing & payment deadline** — 30 April of the year following the financial year (approx — confirm)  _([Code Général des Impôts (CAR)](https://maxishr.com/en/central-african-republic/company-registration))_"
+  },
+  {
+    "slug": "cf-corporate-income-tax",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "Companies are subject to the Impôt sur les Sociétés (IS) on taxable profits, with a minimum tax based on turnover where the IS computed is lower. Rates and the minimum tax basis below are a source-cited draft to be verified against the current CAR finance law."
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "IRPP band 1 (tax-free threshold)",
+    "old_text": "- **IRPP band 1 (tax-free threshold)** — 0% on annual income up to XAF 378,000 XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "IRPP band 2",
+    "old_text": "- **IRPP band 2** — 8% on annual income from XAF 378,001 to 1,680,000 XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "IRPP band 3",
+    "old_text": "- **IRPP band 3** — 15% on annual income from XAF 1,680,001 to 3,360,000 XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "IRPP band 4",
+    "old_text": "- **IRPP band 4** — 28% on annual income from XAF 3,360,001 to 5,040,000 XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "IRPP band 5 (top rate)",
+    "old_text": "- **IRPP band 5 (top rate)** — 40% on annual income above XAF 5,040,000 XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Tax-free threshold",
+    "old_text": "- **Tax-free threshold** — XAF 378,000 of annual income XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP barème)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Deduction per dependent",
+    "old_text": "- **Deduction per dependent** — Approximately XAF 50,000 per dependent, up to a maximum of 3 dependents XAF ((approx — confirm))  _(Code Général des Impôts (CAR) — IRPP — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Non-resident individual withholding on CAR-source income",
+    "old_text": "- **Non-resident individual withholding on CAR-source income** — Flat 15% withholding on CAR-source income percent ((approx — confirm))  _(Code Général des Impôts (CAR) — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Capital gains tax — residents",
+    "old_text": "- **Capital gains tax — residents** — 15% percent ((approx — confirm))  _(Code Général des Impôts (CAR) — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Capital gains tax — non-residents",
+    "old_text": "- **Capital gains tax — non-residents** — 20% percent ((approx — confirm))  _(Code Général des Impôts (CAR) — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Individual residence test",
+    "old_text": "- **Individual residence test** — Generally tax-resident if domiciled or with principal place of abode/economic interests in CAR (French-code criteria) ((approx — confirm))  _(Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old bullet",
+    "label": "Annual return filing & payment deadline",
+    "old_text": "- **Annual return filing & payment deadline** — 31 May of the year following the income year ((approx — confirm))  _(Code Général des Impôts (CAR) — https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/)_"
+  },
+  {
+    "slug": "cf-income-tax",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "Individuals are subject to the Impôt sur le Revenu des Personnes Physiques (IRPP) on a progressive scale. The bands below are a source-cited draft and must be confirmed against the current CAR finance law (loi de finances), as published bracket amounts vary by source."
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Social security institution",
+    "old_text": "- **Social security institution** — Caisse Nationale de Sécurité Sociale (CNSS)  _(Code de la Sécurité Sociale (CAR))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Employer total social security contribution",
+    "old_text": "- **Employer total social security contribution** — Approximately 19% of gross salary (pensions + family allowances + work-injury combined) percent (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Employer — old-age / pension branch",
+    "old_text": "- **Employer — old-age / pension branch** — Approximately 4% of gross salary (employer share) percent (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/central-african-republic.html))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Employer — family allowances branch",
+    "old_text": "- **Employer — family allowances branch** — Approximately 11% of gross salary percent (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/central-african-republic.html))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Employer — work-injury branch",
+    "old_text": "- **Employer — work-injury branch** — Approximately 2% of gross salary percent (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/central-african-republic.html))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Employee social security contribution (pension)",
+    "old_text": "- **Employee social security contribution (pension)** — Approximately 1.6% of gross earnings (old-age / pension branch) percent (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/africa/central-african-republic.html))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Monthly contribution earnings ceiling",
+    "old_text": "- **Monthly contribution earnings ceiling** — XAF 600,000 per month XAF (approx — confirm)  _([Code de la Sécurité Sociale (CAR); CNSS](https://centralafricataxguide.com/social-security-contributions/))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Apprenticeship / vocational training tax",
+    "old_text": "- **Apprenticeship / vocational training tax** — Approximately 2% on annual payroll (employer) percent (approx — confirm)  _([Code Général des Impôts (CAR)](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Payroll income tax withholding (PAYE-equivalent)",
+    "old_text": "- **Payroll income tax withholding (PAYE-equivalent)** — Employer withholds IRPP from salary at source on the progressive scale (approx — confirm)  _(Code Général des Impôts (CAR) — IRPP / Impôt sur les Traitements et Salaires)_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old bullet",
+    "label": "Withholding / contribution remittance deadline",
+    "old_text": "- **Withholding / contribution remittance deadline** — Monthly — typically by the 15th of the following month (approx — confirm)  _(Code Général des Impôts (CAR); CNSS regulations)_"
+  },
+  {
+    "slug": "cf-payroll-social",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "Employers and employees contribute to the Caisse Nationale de Sécurité Sociale (CNSS), covering pensions, family allowances and work-injury. Employers also withhold IRPP from salaries (PAYE-equivalent). Contribution rates and the wage ceiling below are a source-cited draft to confirm with CNSS/DGID, as sources differ on the split."
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Standard tax year",
+    "old_text": "- **Standard tax year** — Calendar year (1 January – 31 December) ((approx — confirm))  _(Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Currency",
+    "old_text": "- **Currency** — Central African CFA franc (XAF / FCFA)  _(CEMAC monetary union framework)_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Tax authority",
+    "old_text": "- **Tax authority** — Direction Générale des Impôts et des Domaines (DGID), Ministère des Finances et du Budget  _([Code Général des Impôts (CAR)](https://www.icaew.com/technical/by-country/africa/central-african-republic/tax-in-central-african-republic))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Residence basis of taxation",
+    "old_text": "- **Residence basis of taxation** — Residents taxed on worldwide income; non-residents taxed on CAR-source income only ((approx — confirm))  _(Code Général des Impôts (CAR))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Top personal income tax (IRPP) rate",
+    "old_text": "- **Top personal income tax (IRPP) rate** — 40% percent  _([Code Général des Impôts (CAR) — Impôt sur le Revenu des Personnes Physiques](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Standard corporate income tax rate",
+    "old_text": "- **Standard corporate income tax rate** — 30% percent  _([Code Général des Impôts (CAR) — Impôt sur les Sociétés](https://taxatlas.io/region/central-africa))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Value Added Tax (TVA)",
+    "old_text": "- **Value Added Tax (TVA)** — Yes — standard VAT (TVA) of 19% applies, in line with CEMAC harmonisation percent  _([CEMAC VAT Directive; Code Général des Impôts (CAR)](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Annual personal income tax return deadline",
+    "old_text": "- **Annual personal income tax return deadline** — 31 May of the year following the income year ((approx — confirm))  _([Code Général des Impôts (CAR)](https://remotepeople.com/countries/central-african-republic/employer-of-record/payroll-tax/))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Annual corporate income tax return deadline",
+    "old_text": "- **Annual corporate income tax return deadline** — 30 April of the year following the financial year ((approx — confirm))  _([Code Général des Impôts (CAR)](https://maxishr.com/en/central-african-republic/company-registration))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "VAT return frequency",
+    "old_text": "- **VAT return frequency** — Monthly — declaration due by the 15th of the following month ((approx — confirm))  _([Code Général des Impôts (CAR) — TVA](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old bullet",
+    "label": "Company law framework",
+    "old_text": "- **Company law framework** — OHADA Uniform Act on Commercial Companies (Acte uniforme OHADA sur les sociétés commerciales)  _(OHADA Uniform Act on Commercial Companies and Economic Interest Groups)_"
+  },
+  {
+    "slug": "cf-tax-overview",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "The Central African Republic (CAR) taxes income through a French-style code (Code Général des Impôts) administered by the tax directorate. As a CEMAC member it applies a harmonised VAT and as an OHADA member it uses OHADA company law. Figures below are a 2025 source-cited draft awaiting accountant verification."
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "Standard VAT (TVA) rate",
+    "old_text": "- **Standard VAT (TVA) rate** — 19 percent  _([CEMAC VAT Directive; Code Général des Impôts (CAR) — TVA](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "Zero rate",
+    "old_text": "- **Zero rate** — 0 percent (on exports of goods and certain international services (approx — confirm))  _(Code Général des Impôts (CAR) — TVA)_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "Exempt supplies",
+    "old_text": "- **Exempt supplies** — Certain basic foodstuffs, medical, educational and financial services are exempt (per CEMAC/CAR exemption list) (approx — confirm)  _(Code Général des Impôts (CAR) — TVA)_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "VAT registration / liability threshold",
+    "old_text": "- **VAT registration / liability threshold** — Set by the CAR finance law (turnover-based); confirm current threshold with DGID (approx — confirm)  _([Code Général des Impôts (CAR) — TVA](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "VAT return frequency",
+    "old_text": "- **VAT return frequency** — Monthly (approx — confirm)  _([Code Général des Impôts (CAR) — TVA](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "VAT return / payment deadline",
+    "old_text": "- **VAT return / payment deadline** — 15th of the month following the taxable period (approx — confirm)  _([Code Général des Impôts (CAR) — TVA](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "Reverse charge on imported services",
+    "old_text": "- **Reverse charge on imported services** — VAT on services supplied by non-established providers is self-assessed by the CAR recipient (reverse charge) (approx — confirm)  _(Code Général des Impôts (CAR) — TVA)_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "OHADA / community levy on imports",
+    "old_text": "- **OHADA / community levy on imports** — 0.05 percent (applies on imports (separate from VAT) (approx — confirm))  _([CEMAC/OHADA community levy](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old bullet",
+    "label": "Import de minimis value",
+    "old_text": "- **Import de minimis value** — 200,000 XAF ((approx — confirm))  _([Code Général des Impôts (CAR) — TVA / customs](https://www.vatitstream.com/compliance/central-african-republic))_"
+  },
+  {
+    "slug": "cf-vat-gst",
+    "kind": "old prose",
+    "label": "Introductory/context paragraph",
+    "old_text": "The Central African Republic levies VAT (Taxe sur la Valeur Ajoutée, TVA) under the CEMAC-harmonised regime, in force since 2006. The standard rate, zero-rating of exports, and monthly filing below are a source-cited draft to confirm against the current CAR finance law."
+  }
+]
