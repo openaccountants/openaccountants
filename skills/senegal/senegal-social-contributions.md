@@ -18,7 +18,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Senegal Social Security & Payroll Contributions Skill v0.2
 
-> **Currency:** West African CFA franc — **XOF** (written CFA / FCFA). All figures below are in XOF.
+> **Currency:** West African CFA franc: **XOF** (written CFA / FCFA). All figures below are in XOF.
 > **Senegal levies personal income tax (IRPP).** The "no income tax" special case does **not** apply.
 > **Authority:** tax rules come from the CGI (January 2025 edition, on dgid.sn). Social contribution rates come from PwC Worldwide Tax Summaries (reviewed 31 March 2026) and CLEISS (table at 1 January 2026), because the IPRES and CSS sites did not open.
 
@@ -26,19 +26,19 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **Read this whole section before computing or classifying anything.**
 
-- **Country** — Republic of Senegal
-- **Primary Legislation** — Code Général des Impôts (CGI); Code de la Sécurité Sociale; Code du Travail
-- **Income tax** — IRPP — Impôt sur le Revenu des Personnes Physiques
-- **Pension institution** — IPRES — Institution de Prévoyance Retraite du Sénégal
-- **Family/work-injury institution** — CSS — Caisse de Sécurité Sociale
-- **Health institution** — IPM — Institution de Prévoyance Maladie (employer-level fund)
-- **Employer payroll tax** — CFCE — Contribution Forfaitaire à la Charge de l'Employeur (3%)
-- **Tax authority** — DGID — Direction Générale des Impôts et des Domaines; collection via Trésor Public
-- **Rate publisher (research basis)** — PwC Worldwide Tax Summaries — Senegal (reviewed 31 Mar 2026)
-- **PAYE frequency** — Monthly withholding (retenue à la source) on gross remuneration
-- **Currency** — XOF (CFA franc) only
-- **Validated by** — Pending — requires sign-off by a Senegalese chartered accountant (expert-comptable / OHADA)
-- **Validation date** — Pending
+- **Country**: Republic of Senegal
+- **Primary Legislation**: Code Général des Impôts (CGI); Code de la Sécurité Sociale; Code du Travail
+- **Income tax**: IRPP: Impôt sur le Revenu des Personnes Physiques
+- **Pension institution**: IPRES: Institution de Prévoyance Retraite du Sénégal
+- **Family/work-injury institution**: CSS: Caisse de Sécurité Sociale
+- **Health institution**: IPM: Institution de Prévoyance Maladie (employer-level fund)
+- **Employer payroll tax**: CFCE: Contribution Forfaitaire à la Charge de l'Employeur (3%)
+- **Tax authority**: DGID: Direction Générale des Impôts et des Domaines; collection via Trésor Public
+- **Rate publisher (research basis)**: PwC Worldwide Tax Summaries: Senegal (reviewed 31 Mar 2026)
+- **PAYE frequency**: Monthly withholding (retenue à la source) on gross remuneration
+- **Currency**: XOF (CFA franc) only
+- **Validated by**: Pending: requires sign-off by a Senegalese chartered accountant (expert-comptable / OHADA)
+- **Validation date**: Pending
 
 **Quick reference field table**
 
@@ -46,28 +46,28 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Country | Republic of Senegal |
 | Primary Legislation | Code Général des Impôts (CGI); Code de la Sécurité Sociale; Code du Travail |
-| Income tax | IRPP — Impôt sur le Revenu des Personnes Physiques |
-| Pension institution | IPRES — Institution de Prévoyance Retraite du Sénégal |
-| Family/work-injury institution | CSS — Caisse de Sécurité Sociale |
-| Health institution | IPM — Institution de Prévoyance Maladie (employer-level fund) |
-| Employer payroll tax | CFCE — Contribution Forfaitaire à la Charge de l'Employeur (3%) |
-| Tax authority | DGID — Direction Générale des Impôts et des Domaines; collection via Trésor Public |
-| Rate publisher (research basis) | PwC Worldwide Tax Summaries — Senegal (reviewed 31 Mar 2026) |
+| Income tax | IRPP: Impôt sur le Revenu des Personnes Physiques |
+| Pension institution | IPRES: Institution de Prévoyance Retraite du Sénégal |
+| Family/work-injury institution | CSS: Caisse de Sécurité Sociale |
+| Health institution | IPM: Institution de Prévoyance Maladie (employer-level fund) |
+| Employer payroll tax | CFCE: Contribution Forfaitaire à la Charge de l'Employeur (3%) |
+| Tax authority | DGID: Direction Générale des Impôts et des Domaines; collection via Trésor Public |
+| Rate publisher (research basis) | PwC Worldwide Tax Summaries: Senegal (reviewed 31 Mar 2026) |
 | PAYE frequency | Monthly withholding (retenue à la source) on gross remuneration |
 | Currency | XOF (CFA franc) only |
-| Validated by | Pending — requires sign-off by a Senegalese chartered accountant (expert-comptable / OHADA) |
+| Validated by | Pending: requires sign-off by a Senegalese chartered accountant (expert-comptable / OHADA) |
 | Validation date | Pending |
 
 **Contribution overview (employer + employee shares)**  _(PwC (other-taxes / corporate), reviewed 31 Mar 2026)_
 
 | Scheme | Employer | Employee | Total | Monthly base ceiling | Source |
 | --- | --- | --- | --- | --- | --- |
-| IPRES — General (Régime Général) | 8.4% | 5.6% | 14% | 432,000 | PwC (other-taxes), reviewed 31 Mar 2026 |
-| IPRES — Cadre (Régime Complémentaire des Cadres) | 3.6% | 2.4% | 6% | 1,296,000 | PwC (other-taxes), reviewed 31 Mar 2026 |
-| CSS — Family allowances (prestations familiales) | 7% | 0% | 7% | 63,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
-| CSS — Work injury (accidents du travail) | 1% / 3% / 5% | 0% | 1–5% | 63,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
-| IPM — Health insurance | 3% | 3% | 6% | 60,000–250,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026 — see gap note |
-| CFCE — Employer payroll tax | 3% | 0% | 3% | No ceiling (full payroll) | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
+| IPRES: General (Régime Général) | 8.4% | 5.6% | 14% | 432,000 | PwC (other-taxes), reviewed 31 Mar 2026 |
+| IPRES: Cadre (Régime Complémentaire des Cadres) | 3.6% | 2.4% | 6% | 1,296,000 | PwC (other-taxes), reviewed 31 Mar 2026 |
+| CSS: Family allowances (prestations familiales) | 7% | 0% | 7% | 63,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
+| CSS: Work injury (accidents du travail) | 1% / 3% / 5% | 0% | 1–5% | 63,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
+| IPM: Health insurance | 3% | 3% | 6% | 60,000–250,000 | PwC (corporate/other-taxes), reviewed 31 Mar 2026: see gap note |
+| CFCE: Employer payroll tax | 3% | 0% | 3% | No ceiling (full payroll) | PwC (corporate/other-taxes), reviewed 31 Mar 2026 |
 
 > **Arithmetic check:** IPRES General 8.4 + 5.6 = 14% ✓. IPRES Cadre 3.6 + 2.4 = 6% ✓. IPM 3 + 3 = 6% ✓. CSS and CFCE are 100% employer-borne ✓.
 
@@ -75,8 +75,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Ambiguity | Default |
 | --- | --- |
-| Unknown whether employee is a "cadre" (executive) | Assume NON-cadre — apply IPRES General only; flag for reviewer |
-| Unknown CSS work-injury risk category | Apply 5% (highest) as conservative; flag — actual rate is set by CSS on registration |
+| Unknown whether employee is a "cadre" (executive) | Assume NON-cadre: apply IPRES General only; flag for reviewer |
+| Unknown CSS work-injury risk category | Apply 5% (highest) as conservative; flag: actual rate is set by CSS on registration |
 | Unknown gross above a scheme ceiling | Apply the ceiling base, not the full gross, for that scheme |
 | Unknown IPM rate/fund | Apply 3% employer + 3% employee on base capped at 250,000; mark [RESEARCH GAP] |
 | Unknown number of parts | Compute on 1 part (single, no children): no family reduction, highest IRPP; flag for reviewer |
@@ -86,23 +86,23 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Required inputs
 
-**Minimum viable** — monthly gross remuneration (XOF) and whether the employee is a **cadre** (executive/manager) or non-cadre. Without gross remuneration, STOP.
+**Minimum viable**: monthly gross remuneration (XOF) and whether the employee is a **cadre** (executive/manager) or non-cadre. Without gross remuneration, STOP.
 
 **Recommended**: CSS work-injury risk category (1%/3%/5%), number of parts (marital status + dependent children), and which IPM fund the employer has joined.
 
-**Ideal** — the employer's IPRES/CSS/IPM registration certificates (showing the exact assigned rates), prior payroll journals, and bank statements showing the monthly contribution debits.
+**Ideal**: the employer's IPRES/CSS/IPM registration certificates (showing the exact assigned rates), prior payroll journals, and bank statements showing the monthly contribution debits.
 
 ### Refusal catalogue
 
-- **R-SN-SOC-1 -- Cadre vs non-cadre status unknown** — The IPRES complementary cadre scheme (extra 6%, employer 3.6% / employee 2.4%) applies only to executives/managers. Cannot finalise IPRES without confirming cadre status. Defaulting to non-cadre (General only) and flagging for reviewer. (Trigger: not stated whether the employee is a cadre.)
-- **R-SN-SOC-2 -- CSS work-injury rate** — The CSS accidents-du-travail rate (1%, 3%, or 5%) is set by the Caisse de Sécurité Sociale per risk category on the employer's registration. Do not assume a rate; obtain the CSS registration certificate. Defaulting to 5% conservatively and flagging. (Trigger: work-injury rate not provided.)
-- **R-SN-SOC-3 -- IPM rate/ceiling ambiguity** — [RESEARCH GAP — reviewer to confirm] PwC's individual and corporate pages describe IPM differently (2%–7.5% each vs 6% split 3%/3%) and the precise rate/ceiling depends on the specific IPM fund the employer joined. Do not present IPM as definitive — confirm against the actual IPM scheme. (Trigger: IPM computation requested.)
+- **R-SN-SOC-1 -- Cadre vs non-cadre status unknown**: The IPRES complementary cadre scheme (extra 6%, employer 3.6% / employee 2.4%) applies only to executives/managers. Cannot finalise IPRES without confirming cadre status. Defaulting to non-cadre (General only) and flagging for reviewer. (Trigger: not stated whether the employee is a cadre.)
+- **R-SN-SOC-2 -- CSS work-injury rate**: The CSS accidents-du-travail rate (1%, 3%, or 5%) is set by the Caisse de Sécurité Sociale per risk category on the employer's registration. Do not assume a rate; obtain the CSS registration certificate. Defaulting to 5% conservatively and flagging. (Trigger: work-injury rate not provided.)
+- **R-SN-SOC-3 -- IPM rate/ceiling ambiguity**: [RESEARCH GAP: reviewer to confirm] PwC's individual and corporate pages describe IPM differently (2%–7.5% each vs 6% split 3%/3%) and the precise rate/ceiling depends on the specific IPM fund the employer joined. Do not present IPM as definitive: confirm against the actual IPM scheme. (Trigger: IPM computation requested.)
 - **R-SN-SOC-4 -- Family parts**: Parts give a reduction on the tax (CGI art. 174), not a division of income; maximum 5 parts. Without evidence of family situation, compute on 1 part and flag. (Trigger: IRPP requested with dependants.)
-- **R-SN-SOC-5 -- Arrears / back-contributions** — Late social-contribution and IRPP regularisation carries 5% interest plus 0.5% per month of delay (PwC). Do not quantify arrears without the institution's statement. Escalate to a Senegalese expert-comptable. (Trigger: unpaid prior-period contributions.)
+- **R-SN-SOC-5 -- Arrears / back-contributions**: Late social-contribution and IRPP regularisation carries 5% interest plus 0.5% per month of delay (PwC). Do not quantify arrears without the institution's statement. Escalate to a Senegalese expert-comptable. (Trigger: unpaid prior-period contributions.)
 
 ## Section 3 -- Payment pattern library
 
-Deterministic pre-classifier for Senegalese bank statement transactions related to payroll/social contributions. Match by case-insensitive substring on the counterparty/reference as it appears in the statement. These are statutory payroll obligations — **EXCLUDE** them from any VAT (TVA) return and never treat them as a business supply.
+Deterministic pre-classifier for Senegalese bank statement transactions related to payroll/social contributions. Match by case-insensitive substring on the counterparty/reference as it appears in the statement. These are statutory payroll obligations: **EXCLUDE** them from any VAT (TVA) return and never treat them as a business supply.
 
 ### 3.1 Pension contributions (IPRES)
 
@@ -110,19 +110,19 @@ Deterministic pre-classifier for Senegalese bank statement transactions related 
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| IPRES, INST PREVOYANCE RETRAITE | EXCLUDE — pension contribution | General + cadre combined remittance |
-| RETRAITE, COTISATION RETRAITE | EXCLUDE — pension contribution | French-language reference |
-| REGIME GENERAL, REGIME CADRES | EXCLUDE — pension contribution | Explicit scheme reference |
+| IPRES, INST PREVOYANCE RETRAITE | EXCLUDE: pension contribution | General + cadre combined remittance |
+| RETRAITE, COTISATION RETRAITE | EXCLUDE: pension contribution | French-language reference |
+| REGIME GENERAL, REGIME CADRES | EXCLUDE: pension contribution | Explicit scheme reference |
 
-### 3.2 Social security — family allowances & work injury (CSS)
+### 3.2 Social security: family allowances & work injury (CSS)
 
 **CSS patterns**
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| CSS, CAISSE DE SECURITE SOCIALE | EXCLUDE — CSS contribution | Family allowances + work injury |
-| PRESTATIONS FAMILIALES, ALLOC FAMILIALES | EXCLUDE — CSS family branch | Employer-only |
-| ACCIDENT TRAVAIL, ACCIDENTS DU TRAVAIL | EXCLUDE — CSS work-injury branch | Employer-only |
+| CSS, CAISSE DE SECURITE SOCIALE | EXCLUDE: CSS contribution | Family allowances + work injury |
+| PRESTATIONS FAMILIALES, ALLOC FAMILIALES | EXCLUDE: CSS family branch | Employer-only |
+| ACCIDENT TRAVAIL, ACCIDENTS DU TRAVAIL | EXCLUDE: CSS work-injury branch | Employer-only |
 
 ### 3.3 Health insurance (IPM)
 
@@ -130,8 +130,8 @@ Deterministic pre-classifier for Senegalese bank statement transactions related 
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| IPM, INST PREVOYANCE MALADIE | EXCLUDE — health contribution | Employer + employee share |
-| MALADIE, COTISATION MALADIE | EXCLUDE — health contribution | French-language reference |
+| IPM, INST PREVOYANCE MALADIE | EXCLUDE: health contribution | Employer + employee share |
+| MALADIE, COTISATION MALADIE | EXCLUDE: health contribution | French-language reference |
 
 ### 3.4 Employer payroll tax & income tax to DGID / Trésor
 
@@ -139,11 +139,11 @@ Deterministic pre-classifier for Senegalese bank statement transactions related 
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| CFCE, CONTRIBUTION FORFAITAIRE | EXCLUDE — employer payroll tax (3%) | Employer-only, no ceiling |
+| CFCE, CONTRIBUTION FORFAITAIRE | EXCLUDE: employer payroll tax (3%) | Employer-only, no ceiling |
 | TRIMF, RETENUE TRIMF | EXCLUDE: fixed tax withheld with IRPP | Art. 282 annual table |
-| IRPP, RETENUE A LA SOURCE, RAS | EXCLUDE — PAYE income tax withheld | Not a social contribution |
-| DGID, IMPOTS, TRESOR PUBLIC | EXCLUDE — tax remittance | Could be IRPP and/or CFCE — flag to split |
-| TVA, TAXE VALEUR AJOUTEE | EXCLUDE — VAT, not payroll | Separate obligation |
+| IRPP, RETENUE A LA SOURCE, RAS | EXCLUDE: PAYE income tax withheld | Not a social contribution |
+| DGID, IMPOTS, TRESOR PUBLIC | EXCLUDE: tax remittance | Could be IRPP and/or CFCE: flag to split |
+| TVA, TAXE VALEUR AJOUTEE | EXCLUDE: VAT, not payroll | Separate obligation |
 
 ### 3.5 Salary & pension received (not contributions)
 
@@ -151,9 +151,9 @@ Deterministic pre-classifier for Senegalese bank statement transactions related 
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| SALAIRE, PAIE, NET A PAYER (outgoing) | EXCLUDE — payroll expense | Net wage to employee, not a contribution |
-| SALAIRE, PAIE (incoming) | EXCLUDE — employment income received | Not a contribution |
-| PENSION IPRES, PENSION RETRAITE (incoming) | EXCLUDE — pension income received | Benefit received, not a contribution paid |
+| SALAIRE, PAIE, NET A PAYER (outgoing) | EXCLUDE: payroll expense | Net wage to employee, not a contribution |
+| SALAIRE, PAIE (incoming) | EXCLUDE: employment income received | Not a contribution |
+| PENSION IPRES, PENSION RETRAITE (incoming) | EXCLUDE: pension income received | Benefit received, not a contribution paid |
 
 ## Section 4 -- Worked examples
 
@@ -167,7 +167,7 @@ Bank statement classifications and computations for a hypothetical Dakar-based s
 **Reasoning:**
 Employee monthly gross 500,000 but the IPRES General base is **capped at 432,000**. IPRES General total 14% × 432,000 = 60,480 (employer 8.4% × 432,000 = 36,288; employee 5.6% × 432,000 = 24,192; 36,288 + 24,192 = 60,480 ✓). Non-cadre, so no complementary scheme. Matches pattern 3.1.
 
-**Classification:** EXCLUDE — IPRES pension contribution. Statutory; not a VAT-bearing supply.
+**Classification:** EXCLUDE: IPRES pension contribution. Statutory; not a VAT-bearing supply.
 
 ### Example 2 -- Cadre executive, both IPRES schemes (SGBS)
 
@@ -177,7 +177,7 @@ Employee monthly gross 500,000 but the IPRES General base is **capped at 432,000
 **Reasoning:**
 Cadre with gross 1,296,000 (at the cadre ceiling). Complementary cadre scheme total 6% × 1,296,000 = 77,760 (employer 3.6% × 1,296,000 = 46,656; employee 2.4% × 1,296,000 = 31,104; 46,656 + 31,104 = 77,760 ✓). This is **in addition** to the General scheme (14% on base capped at 432,000 = 60,480, billed separately). Matches pattern 3.1.
 
-**Classification:** EXCLUDE — IPRES cadre complementary contribution.
+**Classification:** EXCLUDE: IPRES cadre complementary contribution.
 
 ### Example 3 -- CSS employer remittance (Ecobank)
 
@@ -187,7 +187,7 @@ Cadre with gross 1,296,000 (at the cadre ceiling). Complementary cadre scheme to
 **Reasoning:**
 CSS base is capped at 63,000/month. Family allowances 7% × 63,000 = 4,410. Work injury (assume 1% risk category) 1% × 63,000 = 630. Total 4,410 + 630 = 5,040 ✓. 100% employer-borne. Matches pattern 3.2.
 
-**Classification:** EXCLUDE — CSS contribution (employer cost). Flag work-injury category for reviewer confirmation.
+**Classification:** EXCLUDE: CSS contribution (employer cost). Flag work-injury category for reviewer confirmation.
 
 ### Example 4 -- IPM health contribution (BICIS)
 
@@ -195,9 +195,9 @@ CSS base is capped at 63,000/month. Family allowances 7% × 63,000 = 4,410. Work
 `30.06.2026 ; IPM COTISATION MALADIE ; DEBIT ; JUIN ; -15,000 ; XOF`
 
 **Reasoning:**
-[RESEARCH GAP — reviewer to confirm] Using PwC corporate-page figures: IPM 6% total split 3% employer / 3% employee on a base capped at 250,000. For an employee at/above the 250,000 ceiling: 6% × 250,000 = 15,000 (employer 3% × 250,000 = 7,500; employee 3% × 250,000 = 7,500; 7,500 + 7,500 = 15,000 ✓). Matches pattern 3.3. PwC's individual page describes IPM differently (2%–7.5% each) — do not finalise without confirming the fund's actual rate.
+[RESEARCH GAP: reviewer to confirm] Using PwC corporate-page figures: IPM 6% total split 3% employer / 3% employee on a base capped at 250,000. For an employee at/above the 250,000 ceiling: 6% × 250,000 = 15,000 (employer 3% × 250,000 = 7,500; employee 3% × 250,000 = 7,500; 7,500 + 7,500 = 15,000 ✓). Matches pattern 3.3. PwC's individual page describes IPM differently (2%–7.5% each): do not finalise without confirming the fund's actual rate.
 
-**Classification:** EXCLUDE — IPM health contribution. Flag IPM rate/ceiling for reviewer.
+**Classification:** EXCLUDE: IPM health contribution. Flag IPM rate/ceiling for reviewer.
 
 ### Example 5 -- CFCE employer payroll tax (CBAO)
 
@@ -207,7 +207,7 @@ CSS base is capped at 63,000/month. Family allowances 7% × 63,000 = 4,410. Work
 **Reasoning:**
 CFCE is 3% of **total gross payroll with no ceiling** (PwC, employer-only). Monthly payroll 5,000,000 → 3% × 5,000,000 = 150,000 ✓. Matches pattern 3.4. Employer-only; never deducted from the employee.
 
-**Classification:** EXCLUDE — CFCE employer payroll tax. Deductible business cost; not VAT-bearing.
+**Classification:** EXCLUDE: CFCE employer payroll tax. Deductible business cost; not VAT-bearing.
 
 ### Example 6 -- DGID PAYE / IRPP withholding remittance (SGBS)
 
@@ -217,7 +217,7 @@ CFCE is 3% of **total gross payroll with no ceiling** (PwC, employer-only). Mont
 **Reasoning:**
 "DGID TRESOR PUBLIC" + "RAS IRPP" matches pattern 3.4. This is **monthly PAYE income tax withheld** from employees and remitted, NOT a social contribution. If the reference also bundled CFCE, request the payroll journal to split IRPP from CFCE. Do not classify as IPRES/CSS/IPM.
 
-**Classification:** EXCLUDE — IRPP (PAYE) remittance to DGID. NOT a social contribution. Flag to split if CFCE is bundled.
+**Classification:** EXCLUDE: IRPP (PAYE) remittance to DGID. NOT a social contribution. Flag to split if CFCE is bundled.
 
 ### Example 7 -- IRPP annual liability computation (1 part)
 
@@ -246,29 +246,42 @@ expected:
 
 **Classification:** IRPP due = 624,000 at 1 part, plus TRIMF 12,000.
 
+```oa-check
+name: IPRES general at the ceiling, gross 500,000
+inputs:
+  gross: 500000
+steps:
+  - base: min(gross, 432000)
+  - employer: base * 0.084
+  - employee: base * 0.056
+  - total: employer + employee
+expected:
+  total: 60480.00
+```
+
 ## Section 5 -- Tier 1 rules
 
 Apply exactly as written when inputs are clear.
 
 ### Rule 1 -- IPRES General applies to all employees
 
-- **IPRES General rule** — IPRES General = 14% total (employer 8.4% / employee 5.6%) on monthly base capped at 432,000. Per-employee contribution = 14% × min(gross, 432,000).  _(PwC, reviewed 31 Mar 2026)_
+- **IPRES General rule**: IPRES General = 14% total (employer 8.4% / employee 5.6%) on monthly base capped at 432,000. Per-employee contribution = 14% × min(gross, 432,000).  _(PwC, reviewed 31 Mar 2026)_
 
 ### Rule 2 -- IPRES Cadre is ADDITIONAL and only for executives
 
-- **IPRES Cadre rule** — The complementary cadre scheme = 6% total (employer 3.6% / employee 2.4%) on base capped at 1,296,000, due in addition to the General scheme, only for cadres (managers/executives). Non-cadres: General only.
+- **IPRES Cadre rule**: The complementary cadre scheme = 6% total (employer 3.6% / employee 2.4%) on base capped at 1,296,000, due in addition to the General scheme, only for cadres (managers/executives). Non-cadres: General only.
 
 ### Rule 3 -- CSS is 100% employer-borne, base capped at 63,000
 
-- **CSS rule** — Family allowances = 7%. Work injury = 1%, 3%, or 5% per CSS-assigned risk category. Both on base capped at 63,000/month. Never deduct CSS from the employee.  _(PwC)_
+- **CSS rule**: Family allowances = 7%. Work injury = 1%, 3%, or 5% per CSS-assigned risk category. Both on base capped at 63,000/month. Never deduct CSS from the employee.  _(PwC)_
 
 ### Rule 4 -- IPM health insurance [RESEARCH GAP]
 
-- **IPM rule** — [RESEARCH GAP — reviewer to confirm] Per PwC corporate page: 6% total split 3% employer / 3% employee on base 60,000–250,000. PwC individual page gives 2%–7.5% each. Fund-specific. Do not present as definitive.
+- **IPM rule**: [RESEARCH GAP: reviewer to confirm] Per PwC corporate page: 6% total split 3% employer / 3% employee on base 60,000–250,000. PwC individual page gives 2%–7.5% each. Fund-specific. Do not present as definitive.
 
 ### Rule 5 -- CFCE has NO ceiling
 
-- **CFCE rule** — CFCE = 3% of total gross payroll, employer-only, no ceiling — applies to full payroll. It is an employer payroll tax, not a withholding from the employee.  _(PwC)_
+- **CFCE rule**: CFCE = 3% of total gross payroll, employer-only, no ceiling: applies to full payroll. It is an employer payroll tax, not a withholding from the employee.  _(PwC)_
 
 ### Rule 6 -- IRPP is progressive on whole income, then reduced for family parts
 
@@ -285,7 +298,7 @@ Apply exactly as written when inputs are clear.
 | 4,000,001 – 8,000,000 | 35% | 2,324,000 |
 | 8,000,001 – 13,500,000 | 37% | 4,359,000 |
 | 13,500,001 – 50,000,000 | 40% | 18,959,000 |
-| Over 50,000,000 | 43% | — |
+| Over 50,000,000 | 43% |: |
 
 > **Cumulative check:** 174,000 + 30%×2,500,000 = 924,000 ✓; + 35%×4,000,000 = 2,324,000 ✓; + 37%×5,500,000 = 4,359,000 ✓; + 40%×36,500,000 = 18,959,000 ✓.
 
@@ -310,7 +323,7 @@ Apply exactly as written when inputs are clear.
 
 ### Rule 9 -- Ceilings cap the BASE, not the contribution
 
-- **Ceiling application rule** — Apply each scheme's monthly base ceiling before multiplying by the rate. A high salary does not raise IPRES/CSS/IPM contributions above the capped base; CFCE alone has no ceiling.
+- **Ceiling application rule**: Apply each scheme's monthly base ceiling before multiplying by the rate. A high salary does not raise IPRES/CSS/IPM contributions above the capped base; CFCE alone has no ceiling.
 
 ### Rule 10 -- Minimum wage (SMIG) for sanity-checks only
 
@@ -322,15 +335,15 @@ Flag these for reviewer confirmation when data is ambiguous.
 
 ### T2-1 -- Cadre classification borderline
 
-- **Cadre classification borderline** — Trigger: Employee's role could be cadre or non-cadre (e.g., senior technician, team lead). Issue: Cadre status adds the 6% complementary scheme. Misclassification under- or over-states IPRES. Action: Flag for reviewer; confirm against the collective agreement (convention collective) and IPRES registration.
+- **Cadre classification borderline**: Trigger: Employee's role could be cadre or non-cadre (e.g., senior technician, team lead). Issue: Cadre status adds the 6% complementary scheme. Misclassification under- or over-states IPRES. Action: Flag for reviewer; confirm against the collective agreement (convention collective) and IPRES registration.
 
 ### T2-2 -- CSS work-injury risk category
 
-- **CSS work-injury risk category** — Trigger: Work-injury rate not on the CSS certificate. Issue: Rate is 1%, 3%, or 5% by activity risk; defaulting to 5% over-states cost. Action: Obtain the CSS registration; flag for reviewer.
+- **CSS work-injury risk category**: Trigger: Work-injury rate not on the CSS certificate. Issue: Rate is 1%, 3%, or 5% by activity risk; defaulting to 5% over-states cost. Action: Obtain the CSS registration; flag for reviewer.
 
 ### T2-3 -- IPM fund and rate
 
-- **IPM fund and rate** — Trigger: IPM computation needed but fund unknown. [RESEARCH GAP] Issue: PwC individual vs corporate pages disagree (2–7.5% each vs 6% split 3/3); fund-specific. Action: Confirm the employer's actual IPM scheme rate/ceiling before finalising. Flag.
+- **IPM fund and rate**: Trigger: IPM computation needed but fund unknown. [RESEARCH GAP] Issue: PwC individual vs corporate pages disagree (2–7.5% each vs 6% split 3/3); fund-specific. Action: Confirm the employer's actual IPM scheme rate/ceiling before finalising. Flag.
 
 ### T2-4 -- Family parts evidence
 
@@ -338,11 +351,11 @@ Flag these for reviewer confirmation when data is ambiguous.
 
 ### T2-5 -- Expatriate / seconded staff
 
-- **Expatriate / seconded staff** — Trigger: Foreign national or secondee. Issue: Totalisation agreements, residence, and which schemes apply may differ; PwC general rates may not capture exemptions. Action: Flag for reviewer; confirm residence and any social-security agreement.
+- **Expatriate / seconded staff**: Trigger: Foreign national or secondee. Issue: Totalisation agreements, residence, and which schemes apply may differ; PwC general rates may not capture exemptions. Action: Flag for reviewer; confirm residence and any social-security agreement.
 
 ### T2-6 -- Arrears / late regularisation
 
-- **Arrears / late regularisation** — Trigger: Unpaid prior-period IRPP or contributions. Issue: 5% interest + 0.5%/month of delay (PwC). Penalties compound. Action: Do not estimate; obtain institution statements; escalate to an expert-comptable.  _(PwC)_
+- **Arrears / late regularisation**: Trigger: Unpaid prior-period IRPP or contributions. Issue: 5% interest + 0.5%/month of delay (PwC). Penalties compound. Action: Do not estimate; obtain institution statements; escalate to an expert-comptable.  _(PwC)_
 
 ## Section 7 -- Excel working paper template
 
@@ -402,18 +415,18 @@ REVIEWER FLAGS / RESEARCH GAPS
 - IPRES, CSS, IPM are remitted to the **institutions**; IRPP (RAS) and CFCE go to **DGID / Trésor Public**.
 
 **Key identification tips:**
-1. Social contributions recur monthly with amounts tied to capped bases (IPRES base ≤ 432,000; cadre ≤ 1,296,000; CSS ≤ 63,000; IPM base ≤ 250,000) — CFCE alone scales with full payroll.
-2. A debit to "DGID"/"TRESOR PUBLIC" may bundle IRPP and CFCE — request the payroll journal to split.
+1. Social contributions recur monthly with amounts tied to capped bases (IPRES base ≤ 432,000; cadre ≤ 1,296,000; CSS ≤ 63,000; IPM base ≤ 250,000): CFCE alone scales with full payroll.
+2. A debit to "DGID"/"TRESOR PUBLIC" may bundle IRPP and CFCE: request the payroll journal to split.
 3. Do not confuse outbound IPRES contributions with inbound "PENSION IPRES" credits (benefits received).
-4. TVA (VAT) debits are a separate obligation — never fold into payroll contributions.
-5. Irregular lump sums referencing "REGULARISATION" or "ARRIERE" may include 0.5%/month + 5% interest — flag for reviewer.
+4. TVA (VAT) debits are a separate obligation: never fold into payroll contributions.
+5. Irregular lump sums referencing "REGULARISATION" or "ARRIERE" may include 0.5%/month + 5% interest: flag for reviewer.
 
 ## Section 9 -- Onboarding fallback
 
 If only a bank statement is provided and no payroll detail:
 
-1. **Scan for contribution debits** — identify outgoing payments matching Section 3 patterns (IPRES, CSS, IPM, CFCE, DGID/RAS).
-2. **Group by institution** — IPRES (pension), CSS (family + injury), IPM (health), DGID (IRPP/CFCE).
+1. **Scan for contribution debits**: identify outgoing payments matching Section 3 patterns (IPRES, CSS, IPM, CFCE, DGID/RAS).
+2. **Group by institution**: IPRES (pension), CSS (family + injury), IPM (health), DGID (IRPP/CFCE).
 3. **Reverse-check the bases:**
    - IPRES General debit ÷ 14% ⇒ implied base (capped at 432,000).
    - CSS debit ÷ (7% + injury%) ⇒ implied base (capped at 63,000).
@@ -484,19 +497,19 @@ If only a bank statement is provided and no payroll detail:
 ### Prohibitions
 
 - NEVER apply the IPRES cadre complementary scheme to a non-cadre, or omit it for a confirmed cadre.
-- NEVER deduct CSS or CFCE from the employee — both are 100% employer-borne.
+- NEVER deduct CSS or CFCE from the employee: both are 100% employer-borne.
 - NEVER apply a scheme's rate to gross above its capped base (IPRES 432,000 / cadre 1,296,000 / CSS 63,000 / IPM 250,000).
-- NEVER apply a ceiling to CFCE — it has none; it is 3% of full payroll.
-- NEVER present IPM rate/ceiling as definitive — it is a flagged [RESEARCH GAP]; confirm the fund.
+- NEVER apply a ceiling to CFCE: it has none; it is 3% of full payroll.
+- NEVER present IPM rate/ceiling as definitive: it is a flagged [RESEARCH GAP]; confirm the fund.
 - NEVER divide income by parts; art. 174 is a reduction on the tax. NEVER apply parts above 1 without evidence, or above 5.
 - NEVER deduct employee contributions from the IRPP base on top of the 30% abatement (art. 182).
 - NEVER apply a minimum IRPP floor; the 900 to 36,000 table is TRIMF, added on top.
-- NEVER treat a DGID/Trésor "RAS IRPP" debit as a social contribution — it is PAYE income tax.
+- NEVER treat a DGID/Trésor "RAS IRPP" debit as a social contribution: it is PAYE income tax.
 - NEVER quote SMIG as the decree: the figure comes from the CLEISS table.
-- NEVER estimate arrears/penalties without the institution's statement — escalate to an expert-comptable.
-- NEVER present any figure as definitive — label as estimated, cite PwC, and direct to a Senegalese chartered accountant.
+- NEVER estimate arrears/penalties without the institution's statement: escalate to an expert-comptable.
+- NEVER present any figure as definitive: label as estimated, cite PwC, and direct to a Senegalese chartered accountant.
 
-## Sources checked for the 1 November 2026 fix
+## Sources
 
 | Source | URL | Read on |
 |---|---|---|
@@ -517,7 +530,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network: accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
