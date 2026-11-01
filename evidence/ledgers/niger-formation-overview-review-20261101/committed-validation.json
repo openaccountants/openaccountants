@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "e50b3ff4c25ee384772e15e565e46fa41d507497",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_only_validator": {
+    "guides": 2,
+    "warning_groups": 0,
+    "result": "pass"
+  },
+  "strict_sync": {
+    "source_guides": 2,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "examples": {
+    "files": 2,
+    "cases": 4,
+    "failures": 0
+  },
+  "whole_base_whitespace": "pass",
+  "scope": "Source-fidelity closure only; all seven domains remain partial."
+}
