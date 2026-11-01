@@ -1,10 +1,10 @@
 ---
 name: portugal-formation
 description: "Utilize esta skill sempre que lhe perguntarem sobre constituição, incorporação ou registo de uma empresa em Portugal em 2026. Acione perante expressões como \"constituir empresa em Portugal\", \"constituição de Lda\", \"sociedade por quotas\", \"Empresa na Hora\", \"Empresa Online\", \"constituição de empresa portuguesa\", \"registar negócio em Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficiário efetivo\", \"RCBE\", ou qualquer questão sobre o início de uma entidade empresarial em Portugal. Abrange tipos de entidade (Lda, Unipessoal Lda, SA, ENI), Código das Sociedades Comerciais (capital, entradas, reserva legal, revisor oficial de contas), emolumentos do IRN para 2026 (Empresa na Hora, Empresa Online, certificado de admissibilidade, certidão permanente), RCBE, inscrição fiscal, obrigações pós-constituição e abertura de conta bancária. Fora do âmbito, ver: pt-corporate-tax (cálculo do IRC), portugal-vat-return (IVA), pt-social-contributions (Segurança Social), portugal-bookkeeping (contabilidade e SNC), pt-cross-border (não residentes). LEIA SEMPRE esta skill antes de aconselhar sobre a constituição de empresas em Portugal. Trigger also on: \"set up a company in Portugal\", \"Lda formation\", \"sociedade por quotas\", \"Empresa na Hora\", \"Portuguese company formation\", \"register a business Portugal\", \"sociedade unipessoal\", \"NIF Portugal\", \"Registo Comercial\", \"beneficial owner register Portugal\"."
-version: 1.2
+version: 1.3
 jurisdiction: PT
 tax_year: 2026
-last_updated: 2026-10-30
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -292,8 +292,6 @@ Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Emp
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento jurídico, fiscal ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de qualquer atuação.
 
 A versão mais atualizada desta skill encontra-se em [openaccountants.com](https://openaccountants.com).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

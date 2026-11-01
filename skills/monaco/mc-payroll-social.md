@@ -1,10 +1,10 @@
 ---
 name: mc-payroll-social
 description: "Monaco payroll and social contributions for all of 2026, separating January to September and October rate periods. Covers professional and domestic employers, ordinary bases and caps, directors, part time and absent workers, CAMTI and CARTI self employed classes, wages and payslips, filings, sanctions and French cross border tax collection. Use for Monaco payroll, pension, social security, gross to net and independent contribution questions. Includes two reproducible ordinary payroll examples and sourced in-year transitions. Source cited draft awaiting named Monaco professional review."
-version: 1.4
+version: 1.5
 jurisdiction: MC
 tax_year: 2026
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -28,11 +28,11 @@ Use the **pay-acquisition period**, not the payment date. The social year change
 
 | Component | 1 January–30 September 2026 | 1 October–31 December 2026 | Employer / employee rate |
 |---|---|---|---|
-| CCSS monthly cap | EUR 9,800; full social-year cap EUR 117,600 | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction |
-| CAR monthly cap | EUR 6,112; full social-year cap EUR 73,344 (base salary EUR 1,528) | EUR 6,276; full social-year cap EUR 75,312 | 8.33% to September (7.45% base + 0.88% variable), 8.39% from October / 6.85% |
-| Unemployment monthly cap | EUR 16,020 | EUR 16,020 | 4.00% / 2.40% throughout |
-| CMRC A cap | EUR 3,971 | EUR 4,067 | 10.02% total, 60% employer / 40% employee |
-| CMRC B | Above A to EUR 31,768 (8 × A) | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee |
+| CCSS monthly cap | EUR 9,800; full social-year cap EUR 117,600 | EUR 10,000; full social-year cap EUR 120,000 | 13.40% including OMT; 13.45% with CGCS / no employee CCSS deduction Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CAR monthly cap | EUR 6,112; full social-year cap EUR 73,344 (base salary EUR 1,528) | EUR 6,276; full social-year cap EUR 75,312 | 8.33% to September (7.45% base + 0.88% variable), 8.39% from October / 6.85% Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| Unemployment monthly cap | EUR 16,020 | EUR 16,020 | 4.00% / 2.40% throughout Source: https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CMRC A cap | EUR 3,971 | EUR 4,067 | 10.02% total, 60% employer / 40% employee Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
+| CMRC B | Above A to EUR 31,768 (8 × A) | Above A to EUR 32,536 | 24.29% total, 60% employer / 40% employee Source: https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf (tax year 2026) (read 2026-10-31) |
 
 Sources: [official October 2025 circular, p. 1, preserved capture 15 December 2025](https://web.archive.org/web/20251215011100id_/https://www.caisses-sociales.mc/content/download/3439/file/Lettre_information_aux_employeurs_octobre_2025.pdf); [dated current CSM schedule](https://www.caisses-sociales.mc/accueil/employeur/employeur/employeur-a-titre-professionnel/cotisations); [2025–26 CAR base](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-584/), [variable rate](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-585/), [adjustment](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-586/), [CMRC cap](https://legimonaco.mc/tnc/arrete-ministeriel/2025/10-30-2025-589/). CAR base is four times the statutory salary base under [Law 455, arts. 8 ter–9](https://legimonaco.mc/tnc/loi/1947/06-27-455/).
 
@@ -40,11 +40,11 @@ CCSS totals include CCSS 13.15%, OMT 0.25% and CGCS 0.05% where affiliated. Do n
 
 | Independent contribution per full quarter | January–September 2026, social year 2025–26 | From October 2026, social year 2026–27 |
 |---|---|---|
-| CAMTI | EUR 1,101 | EUR 1,128 |
-| CARTI class 1 | EUR 550.08 | EUR 564.84 |
-| CARTI class 2 | EUR 1,100.16 | EUR 1,129.68 |
-| CARTI class 3 | EUR 1,650.24 | EUR 1,694.52 |
-| CARTI class 4 | EUR 2,200.32 | EUR 2,259.36 |
+| CAMTI | EUR 1,101 | EUR 1,128 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 1 | EUR 550.08 | EUR 564.84 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 2 | EUR 1,100.16 | EUR 1,129.68 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 3 | EUR 1,650.24 | EUR 1,694.52 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
+| CARTI class 4 | EUR 2,200.32 | EUR 2,259.36 Source: https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf and https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf (tax year 2026) (read 2026-10-31) |
 
 Sources: [official October 2025 independent circular, p. 2, preserved capture 16 October 2025](https://web.archive.org/web/20251016094431id_/https://www.caisses-sociales.mc/content/download/3108/file/Lettre_information_travailleurs_independants_octobre_2025.pdf); [October 2026 independent circular, p. 2](https://www.caisses-sociales.mc/content/download/3108/file/CSM-Lettre-Information-TravailleursIndependants-2026.pdf). CARTI's 2025–26 additional rate is **0%**, confirmed by [Ordinance 11.574, art. 1](https://legimonaco.mc/tnc/ordonnance/2025/11-11-11.574/); the current circular also states 0% for 2026–27.
 

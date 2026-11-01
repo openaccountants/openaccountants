@@ -1,10 +1,10 @@
 ---
 name: serbia-payroll
 description: "Serbian payroll for employers, tax year 2026. Covers the monthly gross-to-net for employees: salary tax at 10% on gross salary less the 2026 non-taxable amount of RSD 34,221 a month (pro rata for part-time and split between employers); employee contributions of 19.9% and employer contributions of 15.15% on a base between RSD 51,297 and RSD 732,820; non-taxable reimbursements from 1 February 2026; the PPP-PD return filed before each payment and payment on the day of payment; what happens when salary is not paid on time; the new-hire salary tax and contribution refunds; and penalties. Trigger on: obračun zarade, porez na zarade, neoporezivi iznos, bruto u neto, PPP-PD, doprinosi na zaradu, trošak poslodavca, Serbia gross to net. Out of scope: contribution rules for the self-employed and founders (serbia-social-contributions), the annual income tax (serbia-income-tax), non-residents and withholding on payments abroad (rs-cross-border)."
-version: 0.1
+version: 0.2
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -212,8 +212,6 @@ expected:
 | Ministry of Finance: Zakon o poreskom postupku i poreskoj administraciji, consolidated text (Arts. 41, 75, 177, 178, 179) | https://www.mfin.gov.rs/propisi/zakon-o-poreskom-postupku-i-poreskoj-administraciji-0809 ; https://www.mfin.gov.rs/upload/media/2UkJa3_6a9fe325297c3.docx | 2026-10-23 |
 
 Not yet confirmed: the non-taxable reimbursement amounts that applied in January 2026; the Sl. glasnik number of the 2026 minimum wage decision; whether the CROSO Law has been amended since 2019; the current NBS reference rate for late payment interest.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

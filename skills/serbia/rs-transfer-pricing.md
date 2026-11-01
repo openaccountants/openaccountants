@@ -1,13 +1,13 @@
 ---
 name: rs-transfer-pricing
 description: "Serbian transfer pricing (transferne cene) for tax year 2026 under the Zakon o porezu na dobit pravnih lica (ZPDPL), Articles 59 to 61v, 10a and 112a, and the Ministry of Finance Rulebook on transfer pricing (Sl. glasnik 61/13 to 95/21). Covers who is a related party (25% capital or votes, family links, any company from a preferential tax jurisdiction); the arm's length principle and the six methods; the interquartile range and adjustment to the midpoint; full and short-form documentation filed with the tax balance, and the RSD 8,000,000 short-form test; the 2026 arm's length interest rate rulebook for related-party loans (Sl. glasnik 36/2026); country-by-country reporting; adjustments, the five-year limitation period and penalties. Trigger on: Serbia transfer pricing, transferne cene, povezana lica, ван дохвата руке, Serbian TP documentation, arm's length interest Serbia. Out of scope: the full tax balance, thin capitalisation detail and withholding (rs-corporate-tax), VAT (serbia-vat)."
-version: 0.1
+version: 0.2
 jurisdiction: RS
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -203,8 +203,6 @@ expected:
 | Tax Administration: corporate income tax secondary legislation list | https://www.purs.gov.rs/sr/pravna-lica/porez-na-dobit/podzakonska-akta-pdp.html | 2026-10-23 |
 
 Not yet confirmed: whether "midpoint" (средишња вредност) in Article 60(10) means the median or the arithmetic middle of the interquartile range, so Example 1 uses a range where both are equal; how the Tax Administration orders the thin capitalisation limit and the arm's length interest test when both bite on the same loan; whether ZPPPA Article 178a fines are imposed before the ZPDPL Article 112a warning period has run out; that no advance pricing agreement procedure exists in any other Serbian law or bylaw (only the ZPDPL and ZPPPA were searched); the tax balance line codes where related-party transactions are shown.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

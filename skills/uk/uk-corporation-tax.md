@@ -1,13 +1,13 @@
 ---
 name: uk-corporation-tax
 description: "UK corporation tax for companies resident in the UK and for non-resident companies trading in the UK through a permanent establishment. Covers the 25% main rate, the 19% small profits rate and marginal relief between GBP 50,000 and GBP 250,000 (limits shared by associated companies and cut for short periods), financial years running from 1 April, the taxable base, capital allowances, trade losses and the GBP 5m deductions allowance, 75% group relief, the dividend exemption and substantial shareholding exemption, corporate interest restriction, CT600 filing with iXBRL accounts, payment 9 months and 1 day after the period end, quarterly instalments for large and very large companies, and penalties. Financial year 2026. Trigger on: UK corporation tax, CT600, marginal relief, small profits rate, associated companies, quarterly instalment payments, group relief, SSE, corporate interest restriction. Out of scope: R&D relief (gb-tax-relief-under-the-merged-scheme), transfer pricing (uk-transfer-pricing), shareholder dividend tax (uk-dividends), accounts (uk-financial-statements), VAT (uk-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: GB
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -263,8 +263,6 @@ expected:
 | HMRC manuals MTT01100 and MTT01010 (Pillar Two) | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100 | 2026-10-22 |
 
 Not yet confirmed: whether a tax treaty's non-discrimination article lets a UK permanent establishment of a non-resident company use the small profits rate or marginal relief despite CTA 2010 ss18A and 18B.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

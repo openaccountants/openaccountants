@@ -1,10 +1,10 @@
 ---
 name: gr-corporate-income-tax
 description: "Greek corporate income tax for tax year 2026 under the Income Tax Code (ν. 4172/2013) as codified up to ν. 5264/2025. Covers resident companies, partnerships and Greek permanent establishments; the 22% rate, 29% for banks under article 27A and 10% for agricultural cooperatives; deductible and non-deductible expenses (arts. 22-23); depreciation rates; the 5-year loss carry-forward; the interest limitation (30% of EBITDA, EUR 3m); participation exemptions; withholding on dividends, interest, royalties and fees; the 80% prepayment and its 50% cut for new companies; the trade fee for legal entities; the N return by 15 July, eight instalments and penalties. Trigger on: Greek company tax, έντυπο Ν, προκαταβολή φόρου, τέλος επιτηδεύματος. Out of scope: individuals (gr-income-tax), residence and exit tax (gr-cross-border), VAT (gr-vat-return), EFKA (gr-efka), company formation (gr-company-formation)."
-version: 0.1
+version: 0.2
 jurisdiction: GR
 tax_year: 2026
-last_updated: 2026-10-23
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -241,8 +241,6 @@ expected:
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 
 Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52; a rate of 0.73% a month appears only in press reports, not on an official page that was read); whether any 2026 law amended the articles above after ν. 5264/2025; the AADE decision setting the filing window for tax year 2026 returns, and any extension; the CFC and exit-tax figures (see `gr-cross-border`).
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

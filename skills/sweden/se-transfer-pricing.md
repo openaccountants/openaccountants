@@ -1,13 +1,13 @@
 ---
 name: se-transfer-pricing
 description: "Swedish transfer pricing (internprissättning) for companies with cross-border related-party transactions, tax year 2026. Covers the arm's length rule in Inkomstskattelagen 14 kap. 19-20 §§ (korrigeringsregeln) and what counts as ekonomisk intressegemenskap; the documentation duty in Skatteförfarandelagen 39 kap. 15-16 f §§ and Skatteförfarandeförordningen 9 kap. 9-19 §§ (group part and company part, the 250 employees / SEK 450 million / SEK 400 million exemption, the SEK 5 million immaterial-transaction rule, timing, language, seven-year retention); country-by-country reports (SFL 33 a kap., SEK 7 billion, twelve months, notification); prissättningsbesked (APA) fees; MAP and the EU dispute law 2019:601; skattetillägg and reopening periods. Trigger on: internprissättning, transfer pricing Sweden, armlängdsprincipen, korrigeringsregeln, master file, local file, land-för-land-rapport, CbCR Sweden, prissättningsbesked, APA Sweden, ömsesidig överenskommelse. Out of scope: corporate tax computation and interest limitation (se-corporate-tax), cross-border individuals and exit tax (se-cross-border), VAT (sweden-vat-return)."
-version: 0.1
+version: 0.2
 jurisdiction: SE
 tax_year: 2026
-last_updated: 2026-10-23
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -188,8 +188,6 @@ expected:
 | Skatteverket: Undanröjande av dubbelbeskattning (MAP, Arbitration Convention, Lag 2019:601) | https://www.skatteverket.se/foretagochorganisationer/skatter/internationellt/dubbelbeskattning/undanrojandeavdubbelbeskattning.106.233f91f71260075abe8800018011.html | 2026-10-23 |
 
 Not yet confirmed: how many days Skatteverket gives to hand over documentation on request in practice (the law sets no period); which treaties lack a three-year MAP deadline; the Swedish statute implementing the EU Arbitration Convention (90/436/EEC) was not read.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 

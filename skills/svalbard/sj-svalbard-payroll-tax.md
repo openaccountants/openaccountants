@@ -5,10 +5,10 @@ description: >
 version: 0.2
 jurisdiction: SJ
 tax_year: 2026
-last_updated: 2026-10-24
-authored_by: Ryan Duguid
+last_updated: 2026-11-01
+authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
-trust_label: Accountant-authored
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
@@ -153,8 +153,6 @@ expected:
 The current Skatte-ABC contains stale year labels in some rate paragraphs and numbering inconsistencies. The enacted 2026 decision and consolidated statute control all figures here.
 
 Not yet confirmed: None for the ordinary imported allowances and statutory claim-rounding rule stated above. Specialist benefit arrangements are outside scope as declared in the README.
-
-> Contributed by Ryan Duguid.
 
 <!-- openaccountants-cta-block -->
 
