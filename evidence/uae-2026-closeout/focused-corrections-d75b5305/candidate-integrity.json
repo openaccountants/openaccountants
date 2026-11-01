@@ -1,0 +1,29 @@
+{
+  "predecessor": "d75b5305a7e7007900c9e14d57e97fb9d7d0769a",
+  "disposition": "HOLD / NOT_SOURCE_READY",
+  "guides": [
+    {
+      "guide": "ae-corporate-tax",
+      "sha256": "4892c1739436294e004246cb80b1c735ca13d6efb6f05a4ab3d5c34682fd73da",
+      "cta_boundary": "first byte of <!-- openaccountants-cta-block --> through EOF, inclusive of marker",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_byte_exact_against_d75b5305": true
+    },
+    {
+      "guide": "ae-payroll-social",
+      "sha256": "f56a8dc5e23a0e21af1027b3349e67be322a8261e2a5bbd74d527a529a2f2bb5",
+      "cta_boundary": "first byte of <!-- openaccountants-cta-block --> through EOF, inclusive of marker",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_byte_exact_against_d75b5305": true
+    },
+    {
+      "guide": "uae-vat",
+      "sha256": "93c9cbb9b9104c5800126d93beb0e01e9f962f2275d5554f0d0140b4af374816",
+      "cta_boundary": "first byte of <!-- openaccountants-cta-block --> through EOF, inclusive of marker",
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "cta_byte_exact_against_d75b5305": true
+    }
+  ],
+  "other_source_rows_open": 470,
+  "nonretained_predecessor_acceptances_open": 376
+}

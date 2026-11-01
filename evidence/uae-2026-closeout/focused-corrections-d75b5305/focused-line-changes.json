@@ -1,0 +1,203 @@
+[
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 4,
+    "old_text": [
+      "version: 2.1"
+    ],
+    "new_start": 4,
+    "new_text": [
+      "version: 2.2"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 110,
+    "old_text": [],
+    "new_start": 110,
+    "new_text": [
+      "For this calculation, exclude the following from **both non-qualifying revenue and total revenue** under Cabinet Decision No. 100 of 2023, Article 4(3): free-zone commercial-property transactions with a Non-Free Zone Person; free-zone non-commercial-property transactions with any person; revenue attributable to a domestic or foreign permanent establishment; and intellectual-property ownership/exploitation revenue, except revenue related to Qualifying Income under Article 7(1). Article 4(4) treats the QFZP and each permanent establishment as separate, independent related persons. Apply these exclusions before computing the percentage or comparing it with the monetary limit.",
+      ""
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 112,
+    "old_text": [
+      "**Qualifying Activities** (MD 229 of 2025): manufacturing and processing of goods or materials; trading of qualifying commodities; holding shares and other securities for investment; ownership, management and operation of ships; reinsurance; fund management; wealth and investment management; headquarter services and treasury and financing services to related parties or for its own account; aircraft financing and leasing; distribution of goods or materials in or from a designated zone; logistics services; and ancillary activities."
+    ],
+    "new_start": 114,
+    "new_text": [
+      "**Qualifying Activities** (MD 229 of 2025): manufacturing and processing of goods or materials; trading of qualifying commodities; holding shares and other securities for investment; ownership, management and operation of ships; reinsurance; fund management; wealth and investment management; headquarter services to related parties; treasury and financing services to related parties or for its own account; aircraft financing and leasing; distribution of goods or materials in or from a designated zone; logistics services; and ancillary activities."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 120,
+    "old_text": [],
+    "new_start": 122,
+    "new_text": [
+      "- activities ancillary to the Excluded Activities above (MD 229/2025 Article 2(2)(f)).",
+      "",
+      "**Detailed activity classification is a NON-OPERATIVE HOLD.** The names above are a screening list, not complete qualification tests. MD 229/2025 Article 2(3)-(4) defines each activity and ancillary status, including the uninterrupted holding period for investment securities, regulatory oversight for fund/wealth management, and customer/import conditions for distribution. Obtain a specialist determination against those definitions before treating an activity as qualifying or excluded."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 225,
+    "old_text": [
+      "   - **De minimis test:** a free zone distributor has total revenue of AED 20,000,000 (excluding its mainland branch), all from Qualifying Activities except AED 800,000 of sales to individuals. The de minimis limit is the lower of AED 20,000,000 \u00d7 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%."
+    ],
+    "new_start": 230,
+    "new_text": [
+      "   - **De minimis test:** a free zone distributor has revenue of AED 20,000,000 after every Article 4(3) exclusion described above, with mainland-branch revenue excluded. Assume no further excluded property or intellectual-property revenue and that a specialist has confirmed the distribution activity and customer conditions. Of that adjusted revenue, AED 800,000 is non-qualifying sales to individuals; the rest is qualifying distribution revenue. The de minimis limit is the lower of AED 20,000,000 \u00d7 5% = AED 1,000,000 and AED 5,000,000, so it is AED 1,000,000. AED 800,000 does not exceed it, so the test is met. If it meets the other conditions, its qualifying income is taxed at 0%."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 375,
+    "old_text": [
+      "| S04: Decision commencement; annex arts 1.1-1.3, 8.1, 15.1-15.6 and minimum-rate definition; no full GloBE computation review | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |"
+    ],
+    "new_start": 380,
+    "new_text": [
+      "| S04: Original annex Article 8.1.1-8.1.3 and Article 15.3-15.6 re-read and captured. Prior supplied extracts did not contain all declared deadline clauses. Articles 15.1-15.2 and full legal application remain independently unaccepted. | https://tax.gov.ae/Datafolder/Files/Legislation/Cabinet-Decision-No-142-of-2024-on-Top-up-Tax-on-MNEs.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 383,
+    "old_text": [
+      "| S13: arts 1-2 and 5-6, distribution report requirement, scope and commencement; detailed sampling is not an operative method in the Guide | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |"
+    ],
+    "new_start": 388,
+    "new_text": [
+      "| S13: Original final-page Articles 4-6 re-read and captured; earlier supplied Article 1/2 excerpt remains partial, ending during Article 2(7). No detailed sampling acceptance. | https://tax.gov.ae/Datafolder/Files/Legislation/2026/FTA%20Decision%20No.%206%20of%202026%20on%20Determining%20the%20Additional%20Procedures%20for%20the%20Compliance%20of%20QFZP%20-%20for%20publishing%20-%2007%202026.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-corporate-tax",
+    "old_start": 395,
+    "old_text": [
+      "Not yet confirmed: NON-OPERATIVE HOLDS: detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+    ],
+    "new_start": 400,
+    "new_text": [
+      "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 4,
+    "old_text": [
+      "version: 1.1"
+    ],
+    "new_start": 4,
+    "new_text": [
+      "version: 1.2"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 108,
+    "old_text": [
+      "  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring with records.",
+      "  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy; receipts showing date, time, amount and tax."
+    ],
+    "new_start": 108,
+    "new_text": [
+      "  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental and insignificant and is not the primary purpose; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring to verify compliance, retaining relevant records and justifications where use is unauthorised.",
+      "  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy specifying eligible cases and the applicable approval mechanism; receipts showing date, time, amount and tax."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 186,
+    "old_text": [
+      "- Refer any pension rate, cap, deadline or penalty question to GPSSA, or the Abu Dhabi Pension Fund for UAE nationals employed in Abu Dhabi, or to an adviser who works from that fund's current published rules. Do not quote rates from memory or from private summaries.",
+      "- Refer gratuity calculations for a leaving employee, especially with unpaid leave, part-time service, a change of contract type or a dispute, to MOHRE's rules or a UAE employment adviser.",
+      "- Refer free zone employers (including the financial free zones) whose employment rules differ from the federal Labour Law to the free zone authority's rules."
+    ],
+    "new_start": 186,
+    "new_text": [
+      "- Ask a UAE payroll specialist which pension fund, if any, covers this worker and employer, and which authority supplies the applicable rates, caps, deadlines and penalties. Do not assume Abu Dhabi/GPSSA routing from this Guide or quote rates from memory.",
+      "- Ask a UAE employment specialist which law and authority govern a leaving employee's gratuity, particularly with unpaid leave, part-time service, a contract change or a dispute; obtain the applicable calculation before execution.",
+      "- Ask the specialist which employment regime and authority govern a free-zone employer, including a financial free zone; do not infer the applicable rules from this Guide."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 197,
+    "old_text": [
+      "- **Wage Protection System and unemployment insurance:** on MOHRE's timetable. Check with MOHRE."
+    ],
+    "new_start": 197,
+    "new_text": [
+      "- **Wage Protection System and unemployment insurance:** ask the specialist which obligations, responsible authority and timetable apply. These remain non-operative holds here."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 211,
+    "old_text": [
+      "- [ ] Wage Protection System and unemployment insurance obligations confirmed with MOHRE."
+    ],
+    "new_start": 211,
+    "new_text": [
+      "- [ ] Specialist asked which WPS and unemployment-insurance obligations, responsible authority and timetable apply; answers obtained from the applicable current authority sources before execution."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "ae-payroll-social",
+    "old_start": 224,
+    "old_text": [
+      "| S23: Taxation of natural persons section 3.8.1 and Example 10, pp 19-20; wage definition and business exclusion | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |",
+      "| S24: Determination of Taxable Income sections 4.5.1-4.5.2, 4.5.5 and 4.5.10-4.5.10.1; employment, connected pay and entertainment | https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |"
+    ],
+    "new_start": 224,
+    "new_text": [
+      "| S23: Original section 3.8.1, including the complete Example 10 conclusion on salary and board fees, re-read and captured. | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |",
+      "| S24: Original section 4.5.2 employment expenditure and section 4.5.10.1 staff entertainment re-read and captured. Prior extract omitted these operative paragraphs. Other earlier selected sections are not expanded by this supplement. | https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "uae-vat",
+    "old_start": 4,
+    "old_text": [
+      "version: 2.2"
+    ],
+    "new_start": 4,
+    "new_text": [
+      "version: 2.3"
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  },
+  {
+    "guide": "uae-vat",
+    "old_start": 162,
+    "old_text": [
+      "- **Each supply (Article 4):** genuine commercial reason; payment by electronic means, or cash only for a documented reason within the legal limits; price and margin in line with the market; supply within the supplier's licensed activity; goods' authenticity, origin and ownership or disposal rights; a justified intermediary role. Document commercial reasons for third-party payments or payments to a bank outside the supplier's incorporation country, consistent with known evidence.",
+      "- **When (Article 5):** verify a supplier at first dealing, and again if not verified in the previous 12 months. Keep records and a documented policy naming who is responsible."
+    ],
+    "new_start": 162,
+    "new_text": [
+      "- **Each supply (Article 4):** genuine commercial reason; payment by electronic means, or cash only for a documented commercial reason within the legal limits and easily verifiable; prices or margins must not be commercially unjustifiable or significantly different from market conditions without a clear reason; supply within the supplier's licensed activity; goods' authenticity, origin and ownership or disposal rights; a justified intermediary role. Document commercial reasons for third-party payments or payments to a bank outside the supplier's incorporation country, consistent with known evidence.",
+      "- **When (Article 5):** verify a supplier at first dealing, and again if not verified in the previous 12 months. Document verification steps and retain supporting records. Maintain a documented policy identifying the people implementing, reviewing and supervising verification, their clear powers and responsibilities, and retain that policy at the designated document-retention location."
+    ],
+    "independent_acceptance": "PENDING focused eight-finding closure only"
+  }
+]

@@ -1,7 +1,7 @@
 ---
 name: ae-payroll-social
 description: "Use this skill for UAE payroll questions in tax year 2026: why wages are outside Corporate Tax, employee versus self-employed, directors' fees, Corporate Tax deduction of staff costs and private pension contributions, and VAT recovery on staff benefits, including the 1 October 2026 rules and the FTA cases for transport, food, accommodation, phones and parking. Names the pension, gratuity, Wage Protection System and unemployment insurance duties and who to confirm them with; it does not state their rates. Trigger on: UAE payroll, Dubai salary tax, gratuity, GPSSA, staff accommodation VAT, employee benefits UAE."
-version: 1.1
+version: 1.2
 category: PR
 jurisdiction: AE
 tax_year: 2026
@@ -105,8 +105,8 @@ What this means in practice:
   2. **Food and drink:** the home is remote, distant or isolated; no suitable food preparation facilities at home or work and no nearby restaurants; linked to the work or required residence period; no cash option.
   3. **Accommodation:** no cash option; tied to operational needs and not part of benefits or ordinary pay; the work requires living near the workplace, site or client; for the employee alone, with no family or personal use, unless the employee must live permanently near the workplace so that this is the usual home; commensurate with the job and basic needs, with no significant recreational or personal elements.
   4. **New employees' accommodation:** temporary, no longer than 30 days, and commensurate with the job and basic needs.
-  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring with records.
-  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy; receipts showing date, time, amount and tax.
+  5. **Phones, airtime, data and home internet:** necessary for the job; limited to work, or personal use is incidental and insignificant and is not the primary purpose; a documented internal policy states the permitted use and consequences of misuse; reasonable monitoring to verify compliance, retaining relevant records and justifications where use is unauthorised.
+  6. **Parking fees:** solely for business and tied to the job or business visits; a documented reimbursement policy specifying eligible cases and the applicable approval mechanism; receipts showing date, time, amount and tax.
 - **Health insurance.** Recovery continues for the employee, one spouse and up to three children under 18. Input tax on cover for a fourth child, or a child aged 18 or over, falls outside exception (3) and is blocked unless another exception applies.
 - **Entertainment of non-staff.** Input tax on entertainment for customers, potential customers, officials, shareholders or investors stays blocked for non-government employers.
 
@@ -183,9 +183,9 @@ expected:
 
 ## When to refuse or refer
 
-- Refer any pension rate, cap, deadline or penalty question to GPSSA, or the Abu Dhabi Pension Fund for UAE nationals employed in Abu Dhabi, or to an adviser who works from that fund's current published rules. Do not quote rates from memory or from private summaries.
-- Refer gratuity calculations for a leaving employee, especially with unpaid leave, part-time service, a change of contract type or a dispute, to MOHRE's rules or a UAE employment adviser.
-- Refer free zone employers (including the financial free zones) whose employment rules differ from the federal Labour Law to the free zone authority's rules.
+- Ask a UAE payroll specialist which pension fund, if any, covers this worker and employer, and which authority supplies the applicable rates, caps, deadlines and penalties. Do not assume Abu Dhabi/GPSSA routing from this Guide or quote rates from memory.
+- Ask a UAE employment specialist which law and authority govern a leaving employee's gratuity, particularly with unpaid leave, part-time service, a contract change or a dispute; obtain the applicable calculation before execution.
+- Ask the specialist which employment regime and authority govern a free-zone employer, including a financial free zone; do not infer the applicable rules from this Guide.
 - Refer any employee who also has UAE business income, or a contractor near the AED 1,000,000 turnover line, to the `ae-income-tax` skill ([Cabinet Decision No. 49 of 2023, Article 2](https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf)).
 - Refuse to present the employer's pension, gratuity or insurance figures as confirmed by this skill. It does not contain them.
 - Refer tax obligations of the employee in their home country (for example, citizens of countries that tax worldwide income) to that country's rules; UAE payroll does not handle them.
@@ -194,7 +194,7 @@ expected:
 
 - **Employee Corporate Tax:** wages alone produce no Corporate Tax return or payment.
 - **Pension contributions:** NON-OPERATIVE HOLD for coverage, fund routing, deduction, frequency, due date and late-payment consequences.
-- **Wage Protection System and unemployment insurance:** on MOHRE's timetable. Check with MOHRE.
+- **Wage Protection System and unemployment insurance:** ask the specialist which obligations, responsible authority and timetable apply. These remain non-operative holds here.
 - **Employer's Corporate Tax:** payroll costs go into the employer's Corporate Tax return, which is filed, and any tax paid, no later than nine months after the end of the Tax Period. For a calendar-year company, the 2026 return is due by 30 September 2027. Details are in `ae-corporate-tax`.
 - **Employer's VAT:** input tax on staff benefits is claimed only when the VAT recovery conditions are met, in the first eligible period or the next period under VAT Law Article 55. Apply the amended Article 53 texts to periods from 1 October 2026. Details are in `uae-vat`.
 
@@ -208,7 +208,7 @@ The 2025 Corporate Tax return of a calendar-year company was due by 30 September
 - [ ] No tax deducted from any Wage.
 - [ ] Social coverage and fund routing independently confirmed from current authority sources; no social instruction is taken from held old text.
 - [ ] Gratuity coverage, accrual and payment method independently confirmed before execution.
-- [ ] Wage Protection System and unemployment insurance obligations confirmed with MOHRE.
+- [ ] Specialist asked which WPS and unemployment-insurance obligations, responsible authority and timetable apply; answers obtained from the applicable current authority sources before execution.
 - [ ] Related-party salaries checked against Market Value.
 - [ ] Private pension contributions: paid in the period and within 15% of each member's deductible remuneration; any excess added back.
 - [ ] VAT input tax on staff benefits reviewed against Article 53, using the texts in force from 1 October 2026 for later costs; claims on transport, food, accommodation, phones and parking tested against FTA Decision No. 17 of 2026; exempt residential leases carry no input tax to claim.
@@ -221,8 +221,8 @@ The 2025 Corporate Tax return of a calendar-year company was due by 30 September
 |---|---|---|
 | S01: whole Decision, definitions and arts 1-4 | https://tax.gov.ae/DataFolder/Files/Legislation/05-06-2023/3/Cabinet%20Decision%20No.%2049%20of%202023%20-%20for%20publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 | S05: definitions; arts 2-4, 11-13, 18-22, 28-39, 43-58, 66 and 69-70 including neighbours and amendment footnotes | https://mof.gov.ae/wp-content/uploads/2026/01/Federal-Decree-Law-No.-47-of-2022-and-its-amendments-en-v13.1.26.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
-| S23: Taxation of natural persons section 3.8.1 and Example 10, pp 19-20; wage definition and business exclusion | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
-| S24: Determination of Taxable Income sections 4.5.1-4.5.2, 4.5.5 and 4.5.10-4.5.10.1; employment, connected pay and entertainment | https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
+| S23: Original section 3.8.1, including the complete Example 10 conclusion on salary and board fees, re-read and captured. | https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |
+| S24: Original section 4.5.2 employment expenditure and section 4.5.10.1 staff entertainment re-read and captured. Prior extract omitted these operative paragraphs. Other earlier selected sections are not expanded by this supplement. | https://tax.gov.ae/DataFolder/Files/Pdf/2024/Determination%20of%20Taxable%20Income%20-%2031%2007%202024.pdf | 2026-11-01, read: the specific scopes in the first column; corrected capture hashes in evidence/uae-2026-closeout/focused-corrections-d75b5305/source-scope-corrections.json |
 | S25: whole Decision arts 1-7, private-fund definitions/exemption conditions and contributions | https://mof.gov.ae/wp-content/uploads/2023/05/Ministerial-Decision-No.115-of-2023-on-Private-Pension-Funds-and-Private-Social-Security-Funds-for-Corporate-Tax-Purposes.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 | S26: Executive Regulation arts 1-8, 29, 31-32, 36-45, 51, 53-54, 57, 59-60, 62-65, 71-75 and 2026 amendment/commencement footnotes; apportionment method excluded | https://tax.gov.ae/Datafolder/Files/Legislation/2026/Law-No-8-of-2017-and-its-amendments--09-2026.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 | S27: whole Decision arts 1-3, every subcondition of the six cases, commencement; paired with original Arabic A17 | https://tax.gov.ae/Datafolder/Files/Pdf/2026/legislation/FTA%20Decision%20No.%2017%20of%202026%20on%20the%20Cases%20and%20Conditions%20for%20the%20Recovery%20of%20Input%20Tax%20Incurred%20on%20Employee%20Expenses%20-%20Publishing.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
