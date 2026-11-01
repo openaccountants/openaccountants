@@ -70,7 +70,7 @@ E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were n
 | RNS exit limit, commercial | MAD 2,000,000 | CGI Art. 39 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | RNS exit limit, services | MAD 500,000 | CGI Art. 39 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Auditor, SARL | Turnover above MAD 50,000,000 excluding taxes at a year end | Law 5-96 Art. 80 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
-| Auditor, SNC | Turnover above MAD 50,000,000 at year end | Law 5-96 Art. 12 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
+| Auditor, SNC and SCS | Turnover above MAD 50,000,000 excluding taxes at year end | Law 5-96 Art. 12, 21 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
 | Late filing surcharge | 5% up to 30 days; 15% after; 20% on assessment | CGI Art. 184 | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 |
 | Missing deposit, SARL managers | MAD 10,000 to 50,000 | Law 5-96 Art. 108 | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm |
 | Missing deposit, SA directors | MAD 10,000 to 50,000; extra 2 months with MAD 5,000 late penalty | Law 17-95 Art. 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf |
@@ -84,30 +84,30 @@ E-filing with the DGI: Art. 155 governs electronic returns. SIMPL screens were n
 3. RNS: list the Art. 145-VI items: registers of receipts and payments, third-party list, stock inventory, depreciation register.
 4. RNR or company: prepare the statements below for the return annexes (Art. 20-I, 82-I).
 5. Company: compute the deadlines from year end and from approval, using the Filing table.
-6. Test audit: SA always (Law 17-95 Art. 159); SA calling on public savings, banks, credit, investment, insurance, capitalisation and savings companies at least two auditors; SARL and SNC on the turnover line. Turnover near MAD 50,000,000: warn the user to line up an auditor.
+6. Test audit: SA always (Law 17-95 Art. 159); SA calling on public savings, banks, credit, investment, insurance, capitalisation and savings companies at least two auditors; SCA always (Law 5-96 Art. 34); SARL, SNC and SCS on the turnover line (SCS through Art. 21). Turnover near MAD 50,000,000: warn the user to line up an auditor.
 
 ### The statements
 
 The official model 100/IS/N annex set (normal accounting model), as filed by a Moroccan issuer on the AMMC site, carries the ESG and the Tableau de financement alongside the bilan and CPC. CGI Art. 82-I names the bilan, the compte de produits et charges and the etat des informations complementaires for participation companies.
 
-- **Bilan:** position at the closing date, assets against equity and liabilities.
-- **CPC (compte de produits et charges):** revenue and charges for the year, ending in the net result.
-- **ESG (etat des soldes de gestion):** how the net result forms.
+- **Bilan:** position at the closing date, assets against equity and liabilities, with actif immobilise, actif circulant and tresorerie-actif on one side and financement permanent, passif circulant and tresorerie-passif on the other.
+- **CPC (compte de produits et charges):** revenue and charges for the year, split into exploitation, financier and non courant, ending in the net result.
+- **ESG (etat des soldes de gestion):** how the net result forms, and the capacite d'autofinancement (CAF).
 - **Tableau de financement:** resources and uses over the year.
-- **ETIC (etat des informations complementaires):** notes that explain the bilan and CPC.
+- **ETIC (etat des informations complementaires):** notes that explain the bilan and CPC, such as methods, fixed assets and depreciation, debts, provisions and commitments.
 
 The turnover line and content of the simplified model were not confirmed. Until they are, prepare the normal model and flag it. The statements are approved by members or shareholders, and the SA auditor certifies them as regular and fair (Law 17-95 Art. 175).
 
 ## Edge cases and special rules
 
-- **Auditor independence:** an auditor must be on the roll of the Ordre des Experts-Comptables (Law 17-95 Art. 160).
+- **Auditor v accountant:** the commissaire aux comptes certifies; the expert-comptable prepares or reviews. An auditor must be on the roll of the Ordre des Experts-Comptables (Law 17-95 Art. 160).
 - **Term:** three financial years (Law 17-95 Art. 163). A company calling on public savings cannot keep the same auditor certifying for more than 12 years (Art. 163 as amended by Law 19-20).
 - **Failure to appoint in an SA:** directors face one to six months' prison and MAD 10,000 to 50,000 fine, or either (Law 17-95 Art. 403).
 - **SARL below the line:** members may appoint an auditor; holders of at least a quarter of the capital may ask the court president to order one (Law 5-96 Art. 80). The old one-tenth figure was wrong.
 - **SNC below the line:** one member may ask the court (Law 5-96 Art. 12).
 - **Individuals:** no sole proprietor is subject to these audit rules, which attach to company forms in Law 17-95 and Law 5-96. An expert-comptable may still be engaged voluntarily.
 - **Listed SA:** publishes its statements in a legal notices journal with the meeting notice (Law 17-95 Art. 156).
-- **IFRS:** a self-employed person or ordinary SARL is not told to use IFRS; bank, insurer and listed-group questions go to a professional.
+- **IFRS:** a self-employed person or ordinary SARL is not told to use IFRS; bank, insurer and listed-group questions go to a professional. Consolidated accounts are where the old file placed IFRS (see Not yet confirmed).
 - **Lost documents:** inform the inspector by registered letter within 15 days, 30 for force majeure (CGI Art. 211).
 
 ## Worked examples
@@ -129,7 +129,7 @@ Consultancy, turnover MAD 3,000,000, above the MAD 500,000 services limit for tw
 5. *"Normal or simplified?"* Line unconfirmed: use normal, flag it.
 6. *"Do I use IFRS?"* Not for a freelancer or ordinary SARL.
 7. *"Where do company accounts go?"* With the return, and to the court registry: 2 months (SA), 30 days (others).
-8. *"Do I need a commissaire aux comptes?"* All SA; SARL or SNC above MAD 50,000,000; never a sole proprietor.
+8. *"Do I need a commissaire aux comptes?"* All SA and SCA; SARL, SNC or SCS above MAD 50,000,000; never a sole proprietor.
 
 Also check: inputs trace to documents; regime confirmed; figures match 2026; output names unconfirmed items.
 
@@ -143,10 +143,10 @@ Also check: inputs trace to documents; regime confirmed; figures match 2026; out
 | Law 17-95 consolidated to Law 78-12 (AMMC), Art. 115, 156, 158, 159, 160, 163, 175, 386, 403, 420 | https://www.ammc.ma/sites/default/files/Loi%20n%C2%B0%2017-95.pdf | 2026-11-01 |
 | Law 19-20, BO 7014, amending Art. 163 of Law 17-95 | https://www.ammc.ma/sites/default/files/LOI%20N%C2%B019-20.pdf | 2026-11-01 |
 | Law 96-21, BO 7376, amends Law 17-95 Art. 12, 130, 245 only as far as read (share form) | https://www.sgg.gov.ma/BO/FR/2873/2025/BO_7376_fr.pdf | 2026-11-01 |
-| Law 5-96, Art. 12, 70, 80, 95, 108, 109, archived copy of Adala dated 22 Feb 2020 (live page refused, later amendments not checked) | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm | 2026-11-01 |
+| Law 5-96, Art. 12, 21, 34, 70, 80, 95, 108, 109, archived copy of Adala dated 22 Feb 2020 (live page refused, later amendments not checked) | http://web.archive.org/web/20200222125632/http://adala.justice.gov.ma:80/production/html/fr/69028.htm | 2026-11-01 |
 | Model 100/IS/N annexes, normal model, CFG Marches 2024 filing on AMMC | https://www.ammc.ma/sites/default/files/CFG%20MARCHES%20ETATS%20FINANCIERS%202024.pdf | 2026-11-01 |
 
-Not yet confirmed: simplified model turnover line (old file: MAD 10,000,000) and its component list; text of Law 9-88 and the CGNC, including any Law 9-88 duties of traders on RNS, AE and CPU; whether Law 19-20, Law 24-10 or later laws changed Law 5-96 Art. 12, 70, 80, 95, 108, 109; the electronic deposit platform; the list of return annexes set by regulation; SIMPL-IS and SIMPL-IR screens; IFRS scope (Bank Al-Maghrib Circular 56/G/2007 for banks, insurers from 2022, the AMMC option for listed groups); the AE and CPU register contents. Art. 145 bis, cited by the old files, is repealed in the 2026 CGI.
+Not yet confirmed: simplified model turnover line (old file: MAD 10,000,000) and its component list (old file: ESG dropped, tableau de financement and ETIC disputed); the old file's CGNC points that the five statements form an inseparable whole and that individual accounts stay under the CGNC with IFRS only for consolidated accounts; an auditor required by the statutes; text of Law 9-88 and the CGNC, including any Law 9-88 duties of traders on RNS, AE and CPU; whether Law 19-20, Law 24-10 or later laws changed Law 5-96 Art. 12, 70, 80, 95, 108, 109; the electronic deposit platform; the list of return annexes set by regulation; SIMPL-IS and SIMPL-IR screens; IFRS scope (Bank Al-Maghrib Circular 56/G/2007 for banks, insurers from 2022, the AMMC option for listed groups); the AE and CPU register contents. Art. 145 bis, cited by the old files, is repealed in the 2026 CGI.
 
 ## Disclaimer
 
