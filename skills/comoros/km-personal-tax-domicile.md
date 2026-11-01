@@ -55,6 +55,32 @@ The Amending Finance Law 2024 (art. 10) lists articles 31, 43, 42, L21, L114, L1
 
 Checked 1 November 2026. Resolve article 45 versus new article 50 bis, complete the intervening amendment audit, establish treaty outcomes and obtain current departure forms and clearance instructions. Historic personal-tax bands are deliberately not certified as 2026 rates here. No independent accountant review has occurred. This is a source-cited domicile topic, not full personal-tax or comprehensive country coverage.
 
+## Two worked examples that recompute
+
+Article 124 needs the provisional declaration at least 30 days before departure. A person leaving on day 200 of the year files by day 170.
+
+```oa-check
+name: Departure on day 200
+inputs:
+  departure_day: 200
+steps:
+  - latest_day: departure_day - 30
+expected:
+  latest_day: 170
+```
+
+A person leaving on day 45 files by day 15.
+
+```oa-check
+name: Departure on day 45
+inputs:
+  departure_day: 45
+steps:
+  - latest_day: departure_day - 30
+expected:
+  latest_day: 15
+```
+
 ## Sources
 
 | Source | URL | Read on |

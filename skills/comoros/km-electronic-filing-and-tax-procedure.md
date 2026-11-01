@@ -68,6 +68,32 @@ The 2026 law also creates a household waste charge (art. 15) and an eco-contribu
 
 Checked 1 November 2026. Obtain commencement/rollout orders, reconcile the earlier mandate, confirm the official platform, and complete the full appeals and penalty analysis. No live filing, payment or private-account interaction was performed. No independent accountant review has occurred.
 
+## Two worked examples that recompute
+
+A taxpayer delays a right of communication request by 6 days past the stated deadline. At KMF 50,000 a day under L.113, that is KMF 300,000.
+
+```oa-check
+name: Six days of delay
+inputs:
+  days: 6
+steps:
+  - amount: days * 50000
+expected:
+  amount: 300000
+```
+
+A 20 day delay gives KMF 1,000,000. The KMF 100,000 fixed fine is a separate charge for evading or obstructing the right.
+
+```oa-check
+name: Twenty days of delay
+inputs:
+  days: 20
+steps:
+  - amount: days * 50000
+expected:
+  amount: 1000000
+```
+
 ## Sources
 
 | Source | URL | Read on |

@@ -24,7 +24,7 @@ Companies in Comoros that control, or are controlled by, a company in or outside
 
 | Item | Figure | Year | Source |
 |---|---|---|---|
-| Control test | More than 50% of capital or votes, or de facto control (art. 31(2)) | 2026 |  |
+| Control test | More than 50% of capital or votes, or de facto control (art. 31(2)) | 2026 | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf |
 | Privileged tax regime | Not taxable there, or profit tax at least 40% lower than Comoros tax (art. 31 bis) | 2026 | same |
 | Declaration and documentation threshold | Turnover excluding tax or gross assets of KMF 80,000,000 or more, in the company, a held company or a holder (art. 43 bis, L.21 bis) | 2026 | same |
 | Fine for no, incomplete or inaccurate declaration | KMF 50,000,000 fixed (L.101 bis) | 2026 | same |
@@ -85,8 +85,8 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Law 24-013/AU of 27 August 2024, Amending Finance Law 2024, art. 10, pages 9 to 14, scan, OCR read |  | 2026-11-01 |
-| Law 25-020/AU, Finance Law 2026, tax section; no change to these articles |  | 2026-11-01 |
+| Law 24-013/AU of 27 August 2024, Amending Finance Law 2024, art. 10, pages 9 to 14, scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
+| Law 25-020/AU, Finance Law 2026, tax section; no change to these articles | https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf | 2026-11-01 |
 | Code general des impots, 2023 edition, art. 42 | https://justice.gouv.km/wp-content/uploads/2025/03/comores-cgi-2023.pdf | 2026-11-01 |
 
 Not yet confirmed: the Finance Minister's order on documentation content; the current declaration form; the Amending Finance Law 2025 (official link returned 404).

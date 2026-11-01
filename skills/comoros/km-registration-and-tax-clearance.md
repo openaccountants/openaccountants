@@ -57,6 +57,32 @@ If the verified customs value is **KMF 2,000,000** and the withholding condition
 
 Checked 1 November 2026. Obtain current application forms, processing rules, a legible substitution clause and guidance on crediting the advance. Complete later-amendment and registration-document reconciliation. No independent accountant review has occurred; this is not comprehensive country or formation coverage.
 
+## Two worked examples that recompute
+
+An importer with no attestation clears goods with a customs value of KMF 2,000,000. Withholding at 15% is KMF 300,000, an advance on its tax debts.
+
+```oa-check
+name: Withholding on KMF 2,000,000
+inputs:
+  customs_value: 2000000
+steps:
+  - withheld: customs_value * 0.15
+expected:
+  withheld: 300000
+```
+
+The same on KMF 10,000,000 gives KMF 1,500,000.
+
+```oa-check
+name: Withholding on KMF 10,000,000
+inputs:
+  customs_value: 10000000
+steps:
+  - withheld: customs_value * 0.15
+expected:
+  withheld: 1500000
+```
+
 ## Sources
 
 | Source | URL | Read on |
