@@ -70,7 +70,7 @@ Apportionment for mixed supplies: taxable supplies divided by total taxable and 
 | SOCIAL PROTECTION FUND, SPF, PASI | Exclude | Contributions |
 | MINISTRY | Exclude | Government fee |
 | NAMA, MAZOON, MUSCAT ELECTRICITY, OMANTEL, OOREDOO OMAN, HAYA WATER | Domestic 5% | Utilities and telecoms |
-| GOOGLE, MICROSOFT, ADOBE, META, AWS, ZOOM, SLACK, NOTION | Reverse charge 5% | Check for an Omani VAT invoice |
+| GOOGLE, MICROSOFT, ADOBE, META, AWS, ZOOM, SLACK, NOTION, ANTHROPIC, OPENAI, GITHUB, FIGMA | Reverse charge 5% | Check for an Omani VAT invoice |
 | SALARY, WAGES, OWN TRANSFER, INTERNAL, DIVIDEND | Exclude | Out of scope |
 
 ## Deadlines and filing
@@ -142,7 +142,7 @@ expected:
   recovered: 1000
 ```
 
-Checks to run on any file: a sale of OMR 10,000 gives output OMR 500; a purchase of OMR 5,000 plus OMR 250 is recoverable; entertainment of OMR 500 plus OMR 25 gives zero input; an OMR 8,000 sedan for personal use is blocked; a credit note adjusts VAT under art. 40. Never apply a rate other than 5%, 0% or exempt, and always check credit brought forward.
+Checks to run on any file: a sale of OMR 10,000 gives output OMR 500; a purchase of OMR 5,000 plus OMR 250 is recoverable; entertainment of OMR 500 plus OMR 25 gives zero input; an OMR 8,000 sedan for personal use is blocked; exported goods of OMR 50,000 go in box 3a at 0% with input recoverable; a credit note adjusts VAT under art. 40. Never apply a rate other than 5%, 0% or exempt, and always check credit brought forward.
 
 ## Ask the client first
 
