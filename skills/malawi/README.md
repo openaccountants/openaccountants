@@ -21,7 +21,7 @@ partial:
 
 # Malawi: partial 2026 source pack
 
-**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have passed focused independent closure, and Act 3/2026 has now been read and reconciled for the stated jobs. The appointed TAA/cutover commencement notices remain unread. New amendment repairs await independent review. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
+**CURRENT-YEAR HOLD.** Independent review rejected the initial seven-Guide candidate. Three findings have passed focused independent closure, and Act 3/2026 has now been read and reconciled for the stated jobs. The appointed TAA/cutover commencement notices remain unread. The amendment delta passed a separate independent source review at `6e37fc6093718c07bb554a44194aeb10727cae21`; F4 remains open. No current-year source acceptance or publication approval is claimed. All seven Guides carry a live-use stop; their 2026 label names the intended research period.
 
 Seven tier-2 drafts, read on 1 November 2026 from official enacted amendments and specified portions of principal Acts. Independent review remains unaccepted because the currentness finding is open. No accountant attestation. Keep [issue 474](https://github.com/openaccountants/openaccountants/issues/474) open.
 
@@ -47,3 +47,5 @@ Initial findings: `evidence/ledgers/malawi-review-20261101/review.md`. Additive 
 ## Enacted April amendment reconciliation
 
 The [actual Act 3/2026](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) has been downloaded, all six pages read, and its relevant corporate, individual-scope and TP assessment changes added. The corporate amendment history is corrected: December 2025 changed the additional rate to 5%, while April 2026 restores 10% and moves the threshold to K5 billion. The final example results are unchanged because they now expressly assume the April combination. Levies are added to the deduction restrictions; the nine-year TP assessment window is distinguished from document retention. Separate rental/listed-share jobs, the printed rental cross-reference and earlier-period allocation remain open. See the additive [repair record](../../evidence/ledgers/malawi-act3-repair-20261101/repair.json). This does not close F4 or confer current-year/publication acceptance.
+
+The [independent Act 3 delta review](../../evidence/ledgers/malawi-act3-review-20261101/review.md) confirms the corrected rate history, levy exclusion, assessment window and scope exclusions. It supersedes the initial source interpretation of the December corporate amendment without altering the historical review. It does not accept the pack for operative 2026 use or publication.
