@@ -22,7 +22,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “who are accorded similar treatment as Saudi nationals.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z03: Ordinary Saudi activity and Saudi shareholder scope
 
@@ -33,7 +33,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “Resident Saudi person, who practices an Activity under a license within the Kingdom.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z04: Individual residence conditions
 
@@ -66,7 +66,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “according to its owners and the property shares at the end of the Zakat year”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z07: Hijri full-year rate 2.5%
 
@@ -77,7 +77,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “Zakat shall be levied at (2.5%) of Zakat Base for Hijri year.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z08: Other fiscal period actual-day scaling
 
@@ -209,7 +209,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “Amounts paid to international telecommunications companies for international roaming services.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W07: Oil/gas investment dividends excluded
 
@@ -242,7 +242,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “for shipping goods from abroad to ports in the Kingdom.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W15: Treaty reduction requires applicable agreement/procedure
 
@@ -275,7 +275,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: Complete article body, qualifying years/strict threshold/date/notification and Phase 1 context.
 - Authentic blob: `73aee3b4d421.html`; SHA-256 `9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4`
 - Exact decisive original wording: “whose revenues subject to VAT exceeded (SAR 187,500) during 2022, 2023,2024 or 2025.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## E02: Wave25 integration by1February2027
 
@@ -286,7 +286,7 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Read on: 2026-11-01; scope: Complete article body, qualifying years/strict threshold/date/notification and Phase 1 context.
 - Authentic blob: `73aee3b4d421.html`; SHA-256 `9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4`
 - Exact decisive original wording: “by no later than February 1, 2027.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## E03: Later waves notified>=6months andPhase1 introduced4December2021
 
@@ -635,4 +635,3 @@ Candidate Guide SHA-256: `e3efce9d7817630073cccea374ac244bc8a4ec095ea139926962b7
 - Act, article, page: UNVERIFIED: no operative rule asserted; local HOLD and Not yet confirmed
 - Official URL / read date / quotation: none asserted; this row is a stipulated example/workflow convention or an explicit unresolved hold, never sourced law.
 - Conditions / limits: Preserved prior topic; no figure, condition, default, routing conclusion, refusal, overdue finding or filing-ready sign-off follows from it. Current official law and taxpayer facts needed. Source not invented.
-

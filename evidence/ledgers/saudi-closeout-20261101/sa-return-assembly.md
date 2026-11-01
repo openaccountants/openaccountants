@@ -22,7 +22,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “who are accorded similar treatment as Saudi nationals.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z03: Ordinary Saudi activity and Saudi shareholder scope
 
@@ -33,7 +33,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “Resident Saudi person, who practices an Activity under a license within the Kingdom.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z07: Hijri full-year rate 2.5%
 
@@ -44,7 +44,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “Zakat shall be levied at (2.5%) of Zakat Base for Hijri year.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## Z08: Other fiscal period actual-day scaling
 
@@ -132,7 +132,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 2-9, 15-23, 58-63; cover/amendments, definitions, scope/residence, ownership change, mergers, period/rate, consolidation, base minimum/maximum, filing/payment, assessment/refund/retention. No whole-document or all-deductions claim.
 - Authentic blob: `f7fcd43250bd.pdf`; SHA-256 `ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83`
 - Exact decisive original wording: “within the Kingdom for a period of no less than (10) ten years.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## I01: General income-tax scope: non-Saudi shares/activity and non-resident Saudi PE
 
@@ -187,7 +187,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: All PDF pp. 1-11, including rate diagram p. 5 and obligations diagram p. 6 visually read.
 - Authentic blob: `e75f21a080d4.pdf`; SHA-256 `023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d`
 - Exact decisive original wording: “1% of total revenue, capped at a maximum of SAR 20,000.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## I06: Unpaid-tax alternatives5%<=30d,10%31-90,20%91-365,25%>365
 
@@ -286,7 +286,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “Amounts paid to international telecommunications companies for international roaming services.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W07: Oil/gas investment dividends excluded
 
@@ -319,7 +319,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “for shipping goods from abroad to ports in the Kingdom.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W10: No nil monthly statement; required statement/payment first10days
 
@@ -330,7 +330,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “If there are no amounts subject to Tax Withholding, the person is not obligated to submit the monthly statement.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W11: Annual WHT statement120 days,partnership60 days
 
@@ -374,7 +374,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 1-33 read; definitions, scope/source/PE, category examples, rates and neighbours, exclusions, nil-month and partnership exceptions, credits/retention/penalties. Pages 34-43 not claimed.
 - Authentic blob: `89ff11327b58.pdf`; SHA-256 `3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7`
 - Exact decisive original wording: “1% of the unpaid tax for every 30 days of delay.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## W15: Treaty reduction requires applicable agreement/procedure
 
@@ -418,7 +418,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: Complete PDF pp. 1-2, all 2026 monthly entries and 120-day footer; no published 2027 deadline claim.
 - Authentic blob: `bef6fd8edc49.pdf`; SHA-256 `1a81ad421f862fc46f6f23acfe30bad1cbfa9777d531e62125d424efb9d285e8`
 - Exact decisive original wording: “March 31 is the last date to submit and pay Excise Tax for January and February 2026”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## P01: MonthlyVAT annualsupplies>40million,otherwisequarterly
 
@@ -440,7 +440,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: Complete article body, qualifying years/strict threshold/date/notification and Phase 1 context.
 - Authentic blob: `73aee3b4d421.html`; SHA-256 `9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4`
 - Exact decisive original wording: “whose revenues subject to VAT exceeded (SAR 187,500) during 2022, 2023,2024 or 2025.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## E02: Wave25 integration by1February2027
 
@@ -451,7 +451,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: Complete article body, qualifying years/strict threshold/date/notification and Phase 1 context.
 - Authentic blob: `73aee3b4d421.html`; SHA-256 `9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4`
 - Exact decisive original wording: “by no later than February 1, 2027.”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## E03: Later waves notified>=6months andPhase1 introduced4December2021
 
@@ -484,7 +484,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: Complete offence/fine table and neighbouring repeat-offence note.
 - Authentic blob: `0c0f31e8c9a1.html`; SHA-256 `0aab3ca8b374dc7e79ad2c592e9ff6106021ddbc7520f99841ed29a6de24627f`
 - Exact decisive original wording: “5% - 25% of the value of the Tax that would have had to be declared”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## V02: LateVATpayment5% eachmonthorpart
 
@@ -495,7 +495,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: Complete offence/fine table and neighbouring repeat-offence note.
 - Authentic blob: `0c0f31e8c9a1.html`; SHA-256 `0aab3ca8b374dc7e79ad2c592e9ff6106021ddbc7520f99841ed29a6de24627f`
 - Exact decisive original wording: “5% of the value of the unpaid Tax for each month or part thereof”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## V03: IncorrectVATreturn resulting lower tax50%difference
 
@@ -517,7 +517,7 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Read on: 2026-11-01; scope: PDF pp. 1-9, initiative period, covered fines, conditions and exclusions, instalment consequences; income-tax cell in p. 7 diagram not relied on.
 - Authentic blob: `896ec17116a5.pdf`; SHA-256 `942b26164ca5aa2aca911614210e28856bcb5cf77825f8cab89764fea7aa417f`
 - Exact decisive original wording: “July 1 to December 31, 2026”
-- Conditions / limits: 
+- Conditions / limits:
 
 ## F02: Initiative conditions,exclusions and instalment continuation
 
@@ -827,4 +827,3 @@ Candidate Guide SHA-256: `405b3e318200581231850a43474204a0578fe71abd226b6c965f12
 - Act, article, page: UNVERIFIED: no operative rule asserted; local HOLD and Not yet confirmed
 - Official URL / read date / quotation: none asserted; this row is a stipulated example/workflow convention or an explicit unresolved hold, never sourced law.
 - Conditions / limits: Preserved prior topic; no figure, condition, default, routing conclusion, refusal, overdue finding or filing-ready sign-off follows from it. Current official law and taxpayer facts needed. Source not invented.
-
