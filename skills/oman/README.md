@@ -3,7 +3,12 @@ jurisdiction: OM
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by: {}
-partial: {}
+partial:
+  IT-IND: "Future 2028 law explained; executive-regulation controls and operational filing details unresolved."
+  IT-CORP: "Later-amendment and dividend/interest withholding suspension closure unresolved."
+  VAT: "September 2026 zero-rate decisions and annexes unresolved; operational rule ledger unfinished."
+  SC: "Current ceiling decisions and sick-leave implementation conflict unresolved."
+  PR: "Current ceiling decisions and sick-leave implementation conflict unresolved."
 ---
 
 # Oman: tax pack
@@ -14,15 +19,15 @@ Tax years: 2026 (6 skills).
 
 | Tax | Skill | Tax year | Status |
 |---|---|---|---|
-| Income tax | [Income tax](om-income-tax.md) | 2026 | Ready |
-| Company tax | [Corporate income tax](om-corporate-income-tax.md) | 2026 | Ready |
-| VAT or sales tax | [VAT](oman-vat.md) | 2026 | Ready |
-| Social contributions | [Payroll social](om-payroll-social.md) | 2026 | Ready |
-| Payroll | [Payroll social](om-payroll-social.md) | 2026 | Ready |
+| Income tax | [Income tax](om-income-tax.md) | 2026 | Partial draft |
+| Company tax | [Corporate income tax](om-corporate-income-tax.md) | 2026 | Partial draft |
+| VAT or sales tax | [VAT](oman-vat.md) | 2026 | Partial draft |
+| Social contributions | [Payroll social](om-payroll-social.md) | 2026 | Partial draft |
+| Payroll | [Payroll social](om-payroll-social.md) | 2026 | Partial draft |
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Ready means the skill is on the current tax year. It does not mean an accountant has reviewed it. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Partial draft means core or currentness gaps remain. The six refreshed Guides are tier 2, pending independent closeout review and accountant review. A 2026 label does not establish current-law completeness. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
@@ -35,3 +40,5 @@ Tracked in [\[OM\] Complete the pack](https://github.com/openaccountants/openacc
 
 - [Company formation](om-company-formation.md) (2026)
 - [Tax overview](om-tax-overview.md) (2026)
+
+Closeout remains incomplete: formation activity restrictions, portal procedures and one-person-company rules; overview top-up amendment reconciliation; complete operative-rule ledgers and predecessor-topic reconciliation; independent pack review. Existing sources and earlier work remain preserved.
