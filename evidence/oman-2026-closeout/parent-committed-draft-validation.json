@@ -1,0 +1,69 @@
+{
+  "candidate_head": "86c09e53d24a953b96f8ea79c5c01a8bb75c7f1c",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "scope": "Incomplete DRAFT only; technical checks do not establish source acceptance or independent review.",
+  "checked_at": "2026-11-01T20:48:59.004209+00:00",
+  "guide_sha256": {
+    "skills/oman/om-company-formation.md": "4628ac23fd37e90788b672c82416429bbcff8531bbccd61e220136fa15135a87",
+    "skills/oman/om-corporate-income-tax.md": "d418a0bdd35ba3240c5ed468d68f5f88afa761a88de1fc18ac805f25e3145915",
+    "skills/oman/om-income-tax.md": "57d5b171ce6078f32a969aaf0a84149668c638aa6c192c8bc294a928cedbf374",
+    "skills/oman/om-payroll-social.md": "8dd76a5f2a767b501f4e452b375d0b158f2c78d0dde033320f023744753fbde0",
+    "skills/oman/om-tax-overview.md": "910fe82677b839fce6125ebe83ed045f9d9f5fd7a907417e1ab87985dffdf90b",
+    "skills/oman/oman-vat.md": "d4a9031968bc6d81a81bf2cf27fe2aa28dc45a9b39db05b3e11a4d2262678404"
+  },
+  "results": [
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/oman/om-company-formation.md",
+        "skills/oman/om-corporate-income-tax.md",
+        "skills/oman/om-income-tax.md",
+        "skills/oman/om-payroll-social.md",
+        "skills/oman/om-tax-overview.md",
+        "skills/oman/oman-vat.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 6 files, 13 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 7 changed guide file(s)\nchecked 6 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "46c01152da0fdd1b722f61190c88413d0a195d02",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 6 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "46c01152da0fdd1b722f61190c88413d0a195d02",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
