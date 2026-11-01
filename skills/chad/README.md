@@ -5,7 +5,7 @@ not_applicable: {}
 covered_by:
   XB: td-import-exemption-eligibility
 partial:
-  IT-IND: "Existing 2025 Guide retained; 2026 income, exemptions, residence and filing not refreshed."
+  IT-IND: "2026 labour scale, salary base, capital separation and residence expanded; full BIC/BNC, live payroll scale, annual individual filing date/forms and treaty/exit computations remain open."
   IT-CORP: "Existing 2025 Guide retained; current ordinary and special company computations not refreshed."
   VAT: "Existing 2025 Guide retained; 2026 domestic VAT and filing not refreshed."
   SC: "Existing 2025 payroll/social Guide retained; current CNPS rates, ceilings and procedures not verified."
@@ -16,13 +16,13 @@ partial:
 
 # Chad: partial tax pack
 
-Six existing 2025 Guides remain unchanged. The new 2026 draft supports only the listed-goods import-exemption eligibility working paper under the signed 9 September order. It does not complete a customs claim or verify the wider pack. Independent source review accepted the narrow non-wheat job at `d91f12a172626fb9c4ee9ee69f860dd410856492`; local drafts only, no accountant attestation. All wheat is held pending reconciliation of finance-law article 65 with the September order.
+The income Guide now has a source-ledger-backed 2026 expansion pending fresh independent review. Five other existing 2025 Guides remain unchanged. The new 2026 draft supports only the listed-goods import-exemption eligibility working paper under the signed 9 September order. It does not complete a customs claim or verify the wider pack. Independent source review accepted the narrow non-wheat job at `d91f12a172626fb9c4ee9ee69f860dd410856492`; local drafts only, no accountant attestation. All wheat is held pending reconciliation of finance-law article 65 with the September order.
 
 ## Domains
 
 | Domain | Guide | Status/scope |
 |---|---|---|
-| IT-IND | [Income tax](td-income-tax.md) | Legacy 2025, not refreshed |
+| IT-IND | [Income tax](td-income-tax.md) | 2026 salary/base/category expansion; review pending, domain partial |
 | IT-CORP | [Corporate tax](td-corporate-income-tax.md) | Legacy 2025, not refreshed |
 | VAT | [VAT](td-vat-gst.md) | Legacy 2025, not refreshed |
 | SC and PR | [Payroll/social](td-payroll-social.md) | Legacy 2025, not refreshed |
@@ -42,3 +42,7 @@ Tracked by [TD pack issue #490](https://github.com/openaccountants/openaccountan
 ## Independent review evidence
 
 The initial source-conflict finding is preserved in `evidence/ledgers/chad-review-20261101/review.md`; additive closure is in `evidence/ledgers/chad-review-closure-1/closure.md`. Fourteen ledger rows, both examples, six unchanged legacy Guides and 82 preserved editorial topics were checked. After acceptance, only the stale review-status sentences in the Guide and ledger changed.
+
+## Remaining-coverage continuation
+
+Draft follow-on [#1219](https://github.com/openaccountants/openaccountants/pull/1219), pinned base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`. Additive ledgers, exact predecessor destinations and historical identities live in `evidence/ledgers/chad-remaining-2026/`. The official CGI 2025 was recovered through a dated 2025-07-20 archive after direct TLS and browser failures; the relevant baseline provisions are reconciled with the enacted 2026 law. Prior import-eligibility acceptance does not cover these expansions.
