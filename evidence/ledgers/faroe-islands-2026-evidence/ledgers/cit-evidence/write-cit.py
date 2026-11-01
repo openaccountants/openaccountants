@@ -1,0 +1,64 @@
+from pathlib import Path
+import re,json,subprocess,hashlib
+ROOT=Path(__file__).resolve().parents[7]
+# Locate checkout without relying on cwd.
+ROOT=Path(subprocess.check_output(['git','rev-parse','--show-toplevel'],text=True).strip())
+P=Path(__file__).resolve().parent
+f=ROOT/'skills/international/faroe-islands/fo-corporate-income-tax.md'
+b=f.read_text();(P/'baseline-cit.md').write_text(b)
+ops=[]
+def change(old,new):
+ global b
+ assert b.count(old)==1,(old[:80],b.count(old));ops.append(dict(old=old,new=new));b=b.replace(old,new,1)
+change('last_updated: 2026-10-25\nversion: 0.5','last_updated: 2026-10-28\nversion: 0.6')
+change('# Faroe Islands corporate income tax v0.5','# Faroe Islands corporate income tax v0.6')
+change('**Period:** income year 2026, selected current provisions read 25 October 2026.','**Period:** income year 2026, with the additions below checked on 28 October 2026 against retained current primary provisions and the stated TAKS guidance. Earlier source checks retain their dates.')
+change('### Losses\n', '''### Purchased goodwill and other business intangibles
+
+Tax Act §35a(2) permits purchased goodwill and other business-use intangible acquisition cost to be deducted in equal amounts in the purchase year and the next nine years. For a right covering a specified term, use equal deductions over that entire term instead. Keep the contract, business-use evidence, purchase price, term and cumulative deductions separately from the equipment pool. A hypothetical DKK 100,000 goodwill purchase gives DKK 10,000 annually over ten years; a DKK 100,000 right lasting five years gives DKK 20,000 annually. These are derived amounts, not statutory allowances per asset. [Tax Act §35a(1)–(2)][tax]
+
+Business intangible sale proceeds enter sale-year income under §35a(1); subsection 3 allows the same asset's undeducted acquisition cost against those proceeds, or deduction in the business-cessation year. For an asset still held, follow subsection 3's ten-year route by reference to subsection 2; cessation and continued holding must be distinguished. Gifts/advances on inheritance and changes between business and private use follow subsection 4's deemed acquisition/disposal and ordinary-market-value rules. Do not replace these with accounting impairment or write off purchased goodwill immediately. [Tax Act §35a(1), (3)–(4)][tax]
+
+### Losses
+''')
+old='Each company computes its own result. Pre-group losses first offset its own profit; the regulation prescribes further ordering involving its own capital income and group-period losses before group allocation. Do not transfer an acquired company\'s pre-group loss directly to its parent. The parent reports the joint result; §9 requires intercompany tax/loss compensation to be paid or booked by 1 October following the income year. [§§6–9][group]'
+new='''Each company computes its own ordinary result under §6(1). Apply the following order before pooling; distinguish pre-group losses, losses arising during grouping, and capital losses by entity and origin year. [Regulation §6][group]
+
+1. Use pre-group ordinary losses against that company's own ordinary surplus (§6(3)). Remaining pre-group losses then shelter its own capital income, after older capital losses (§6(4)); preserve any remainder for that company's later years (§6(5)).
+2. Use its own earlier group-period ordinary losses against its own ordinary surplus (§6(6)). Its remaining current/group-period ordinary losses then shelter its own current capital income, after older capital losses and pre-group ordinary losses (§6(7)).
+3. Only then allocate the remaining current/group-period ordinary loss, up to the remaining combined ordinary surpluses, proportionally among the surplus companies (§6(8)). For each surplus company, allocation is `usable group loss × its remaining ordinary surplus / total remaining ordinary surpluses`. Preserve unused current/group-period losses for later use under the same ordering (§6(9)). A loss never becomes a transferable pre-group loss merely because a company was acquired.
+4. Report the combined ordinary result on the parent's return using the special TAKS group schedule (§6(2)). A departing company retains its own unused pre-group and group-period losses (§7); the parent receives assessments/refunds under §8. Subsection 6(10) confines the stated debt-compromise loss reduction to the debtor company's own loss before the remaining group-period loss is used; obtain its debt/restructuring evidence before applying it.
+
+**Ordinary group control:** assume approved full-year grouping, no ownership-loss forfeiture or debt compromise, no separate capital-group permission, and C as parent. A has ordinary profit DKK 200,000, pre-group loss DKK 40,000 and own old group-period loss DKK 30,000, leaving DKK 130,000. C has DKK 70,000 ordinary profit. B has current ordinary loss DKK 100,000 and capital gain DKK 25,000 less old capital loss DKK 5,000. B first uses DKK 20,000 ordinary loss against its own net capital income; only DKK 80,000 remains for ordinary group allocation. A receives `80,000 × 130,000 / 200,000 = 52,000`; C receives DKK 28,000. Their final ordinary bases are DKK 78,000 and DKK 42,000: total DKK 120,000 and tax DKK 21,600 at the established 18% rate. B has no taxable capital remainder and no unused current ordinary loss in this fixture. [Regulation §6(3)–(9)][group]; [Capital Income Act §14][capital]; [Assessment Act §5(2)][rate]
+
+Under §9 the parent pays B DKK 14,400 compensation for the DKK 80,000 loss used; A pays the parent DKK 9,360 loss compensation and DKK 14,040 for the tax the parent pays for A. C's own loss benefit is DKK 5,040 and its own tax DKK 7,560. The parent's net cash outflow is `21,600 + 14,400 − 9,360 − 14,040 = 12,600`, matching `70,000 × 18%`. These internal payments have no tax consequences and must be paid or booked by 1 October following the income year. Compensation follows the losses actually used, not every available loss balance. [Regulation §9][group]'''
+change(old,new)
+old='Cases where the indexed cost exceeds proceeds but proceeds exceed written-down tax value still need the recapture amount verified before computation here.'
+new='The published TAKS worksheet below separates recapture from indexed gain; the acquisition-factor conflict still requires resolution in affected cases.'
+change(old,new)
+anchor='For §26 insurance relief, request exemption'
+new='''**Published TAKS recapture worksheet:** VLS N's §25 example calculates recapture as `min(prior tax depreciation, max(proceeds − unindexed tax book value, 0))`, then adds positive disposal gain over indexed building/land cost. Applying that separation to hypothetical proceeds DKK 900,000, book value DKK 700,000, prior depreciation DKK 300,000 and verified indexed cost DKK 1,100,000 gives recapture DKK 200,000 and indexed gain zero. The indexed loss does not offset recapture. This is an expressly identified derivation from TAKS's worked example and current §25, not a new statutory formula. Preserve land/building allocations and the existing category/1950 gates; use current indices and current §26 timing, not the older page's historic factors or insurance period. [Depreciation Act §25][depreciation]; [TAKS VLS N, §25 worked example][vls-n]
+
+For §26 insurance relief, request exemption'''
+change(anchor,new)
+old='That provision does not supply the procedure for a treaty country or an ordinary-income credit. Treaty eligibility, ordinary foreign-tax relief, PE profit attribution and refund procedures remain separate.'
+new='Tax Act §154 separately supplies credit for eligible ordinary income from a country without a treaty. Use the [ordinary foreign-tax credit method and its precise limits](fo-cross-border-payments.md#ordinary-foreign-tax-credit), including the source-expense and same-income caps; §19 must not be treated as its statutory substitute. Treaty eligibility, nonpositive credit bases, later adjustments, PE profit attribution and refund procedures remain separate.'
+change(old,new)
+change('| [Group taxation regulation 148/2015][group] | §§1–9, ordinary group scope, ordering and compensation | 2026-10-25 |','| [Group taxation regulation 148/2015][group] | §§1–9, ordinary group scope, ordered loss/capital allocation and compensation | 2026-10-28 |')
+change('| [TAKS building/land index page][indices] | Cross-check current factors; some historical entries differ from circular | 2026-10-25 |','''| [TAKS building/land index page][indices] | Cross-check current factors; some historical entries differ from circular | 2026-10-25 |
+| [Tax Act §35a][tax] | Full purchased-intangible acquisition, term, disposal, cessation and deemed-transfer provisions | 2026-10-28 |
+| [TAKS VLS N][vls-n] | §25 worked example: separate recapture capped at deductions and indexed gain; current Depreciation Act §25 cross-check; older §26 timing not adopted | 2026-10-28 |
+
+The [whole-Guide figure/rule ledger and old-topic destination table](../../research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/fo-corporate-income-tax.md) records source quotes, read scopes and derived-example inputs. Supplementary controls there preserve exactly the two main examples below.'''.replace('below.','in this Guide.'))
+old='Not yet confirmed: conflicting historic acquisition-index entries and recapture computation when indexed cost exceeds proceeds but proceeds exceed written-down value; capital-group implementing conditions and complete group-loss operational filing; employee-benefit adjustments and full exemption implementation; ordinary foreign-credit and treaty procedures; current monetary fine practice; intangible-asset treatment and other common deductions not resolved above.'
+new='Not yet confirmed: conflicting historic acquisition-index entries; capital-group implementing conditions and case-specific group schedule/filing fields; employee-benefit adjustments and full exemption implementation; foreign-credit nonpositive bases, changes/refunds, unused-credit treatment and filing fields, and treaty procedures; current monetary fine practice; other common deductions not resolved above. The supplied ordinary group allocation and purchased-intangible methods are distinct from these reservations.'
+change(old,new)
+change('this Guide does not establish complete corporate coverage.','this Guide does not establish complete corporate coverage. The 28 October additions require fresh independent review and do not extend the earlier review to this version.')
+b+='\n[vls-n]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/n-skattligar-avskrivingar\n'
+f.write_text(b)
+(P/'exact-operations.json').write_text(json.dumps(ops,ensure_ascii=False,indent=2)+'\n')
+z=b
+for o in reversed(ops):assert z.count(o['new'])==1;z=z.replace(o['new'],o['old'],1)
+z=z.removesuffix('\n[vls-n]: https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/n-skattligar-avskrivingar\n')
+assert z==(P/'baseline-cit.md').read_text()
+print('Wrote CIT; exact inverse:',len(ops),'operations plus one new reference definition')

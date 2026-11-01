@@ -1,0 +1,2804 @@
+{
+  "reviewed_head": "42697c1cfdd04d72a47abe6bd702dd7cccb84c69",
+  "split_baseline": "43206e9939b3d2add9de213897fbec30aafa9c36",
+  "file_inventory": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "sha256": "2d41ab28c8057161d65014ed3f3de6ea957d9f8c7333c12399d46b022be31cb2",
+      "split_sha256": "2fa4f6ea4ac814d75ea0fc4581f8f11c1e0e163348f9a8c9c59b46e83d855f67",
+      "byte_exact": false,
+      "old_main_controls": 0,
+      "current_main_controls": 0,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": null,
+      "h2": [
+        "Next work and acceptance evidence"
+      ],
+      "expected_README_partial_map_change": [
+        "None",
+        "{'IT-IND': 'Ordinary partial-year ABS/GIBS band interaction and the section34 cross-reference remain unreconciled', 'IT-CORP': 'CT4 payment-on-account reduction form fields/submission and remaining ordinary deduction/claim implementation remain unverified', 'VAT': 'Remaining ordinary IM4/EX1 operational procedures and deadlines beyond the supplied transaction-tax charging/valuation route remain unverified', 'SC': 'Concurrent-employment allocation/exemption certificate and annual/quarterly self-employed schedule interaction remain unverified', 'PR': 'Conflicting official PAYE examples and missed employee-deduction recovery remain unresolved; ordinary benefit/starter/leaver procedures still need completion', 'TP': 'PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; complete domestic documentation scope remains to verify', 'XB': 'Domestic foreign-tax-relief claim/correction submission; exit payment/return implementation and asset-transfer-definition mismatch; remaining residence/treaty procedure limits remain unverified'}"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "split_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "byte_exact": true,
+      "old_main_controls": 0,
+      "current_main_controls": 0,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and obligation",
+        "What the books and supporting file must contain",
+        "Retention clock and enquiry exceptions",
+        "Additional company-law duties",
+        "Practical monthly and year-end controls",
+        "Consequences and review boundaries"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "split_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "byte_exact": true,
+      "old_main_controls": 1,
+      "current_main_controls": 1,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope",
+        "Keep books and select the accounting basis",
+        "Establish size before claiming a filing concession",
+        "Audit: company size and tax-return evidence differ",
+        "Accounts filing and annual return are separate",
+        "Filing fees and lateness",
+        "Auditor appointment and authority",
+        "Correcting defective accounts or reports",
+        "Changing the accounting reference period",
+        "Group accounts: identify control before testing exemptions",
+        "Working paper and review"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "split_sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "byte_exact": true,
+      "old_main_controls": 0,
+      "current_main_controls": 0,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and legal basis",
+        "Subscribers and constitution",
+        "Assemble the application",
+        "Office, director and secretary",
+        "Compliance declaration and fees",
+        "Beneficial-ownership reporting after incorporation",
+        "Completion and handover"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "a67c67fc84f192b0019b85ccc5f0188efb8602d60e6ba5e63974f49d81e309cf",
+      "split_sha256": "e612e427e6ee9e8e5b93f69051603e208b5b11db2611e3310a16003c0893f5af",
+      "byte_exact": false,
+      "old_main_controls": 2,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and relationship test",
+        "Determine control from rights, not just registered shares",
+        "Connection extends beyond shareholders",
+        "Business-profit adjustment and excess interest",
+        "Conditional thin capitalisation",
+        "Arm's-length loans secured by untaxed deposits or investments",
+        "Separate net-borrowing-cost limitation",
+        "Aggregate connected-expense cap",
+        "Shareholder advances and deemed distributions",
+        "Exemption and evidence",
+        "Seeking clearance under section 42",
+        "Anti-avoidance decisions and appeal scope",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "split_sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "byte_exact": true,
+      "old_main_controls": 8,
+      "current_main_controls": 8,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope",
+        "Charge and rates",
+        "Company residence and the source of profits",
+        "UK treaty: permanent establishments and business profits",
+        "Interest, royalties and overseas movable-property income",
+        "Establish the tax accounting periods",
+        "Filing requirements",
+        "From accounting profit to deductible expenses",
+        "Bad debts, entertainment and gifts",
+        "Capital allowances: equipment purchases and pools",
+        "Disposals and special capital-allowance cases",
+        "Buildings: separate eligibility and historical schemes",
+        "Trading stock when a trade ends",
+        "Trade losses: eligibility and continuity",
+        "Designated persons: 50% loss limit and exceptions",
+        "Losses transferred in a group restructure",
+        "Payments on account and balancing payment",
+        "Applying to reduce instalments",
+        "Computation and examples",
+        "Failure and boundary checks",
+        "Sources",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "split_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "byte_exact": true,
+      "old_main_controls": 0,
+      "current_main_controls": 0,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and applicability",
+        "What counts as an electronic invoice",
+        "Standard editions and syntax migration",
+        "Required information",
+        "Preparation and submission workflow",
+        "Recomputable invoice example",
+        "Electronic originals and retained records",
+        "Data, retention and remaining checks",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "sha256": "70bda42fe52d64b5ae3f96be9a161c6f01fe4594af55fd9f65fabde3e30706fb",
+      "split_sha256": "7170ee37c2519a98e7763378f563bbb11713d1240219759e2d312ccd6a45e850",
+      "byte_exact": false,
+      "old_main_controls": 1,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and eligibility",
+        "Source restriction and residence-only exclusion",
+        "Allocate the Gibraltar tax before applying the cap",
+        "Account for relief allowed abroad",
+        "Claim and adjustment deadlines",
+        "UK treaty: Article 22 coordination",
+        "Corporate tax-residence exit: scope and base",
+        "Conditional exit-tax deferral and later changes",
+        "Claim working paper",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "split_sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "byte_exact": true,
+      "old_main_controls": 2,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2024,
+      "h2": [
+        "Who this applies to",
+        "Election affecting ordinary income-tax charges",
+        "Rates and computation rules",
+        "Worked example 1: domestic formula and currency",
+        "Filing, notification and payment calendar",
+        "Records, assessments and repayment",
+        "Worked example 2: late-payment surcharge",
+        "Intake and remaining verification",
+        "Self-checks",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "split_sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "byte_exact": true,
+      "old_main_controls": 1,
+      "current_main_controls": 1,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and first checks",
+        "Enquiries and assessment limits are different clocks",
+        "Information notices: response and appeal",
+        "Establish service before calculating the appeal period",
+        "Written appeal and grounds",
+        "Payment postponement requires a separate application",
+        "Tribunal handling and outcome",
+        "Supreme Court: case stated on a point of law",
+        "Non-residents and statutory representatives",
+        "Tax provision during liquidation",
+        "Overpayment claims: a separate six-year period",
+        "Treaty MAP: a separate submission and collection decision",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "split_sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "byte_exact": true,
+      "old_main_controls": 8,
+      "current_main_controls": 8,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Who this applies to",
+        "Residence and filing intake",
+        "Rates, bands and thresholds",
+        "The base: allowances are system-specific",
+        "Deadlines and filing",
+        "Approved pensions and imported-pension exceptions",
+        "Death during the tax year",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources and remaining verification",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "split_sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "byte_exact": true,
+      "old_main_controls": 8,
+      "current_main_controls": 8,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope",
+        "Registration and reporting",
+        "PAYE deduction and certificate rules",
+        "Selecting the PAYE table and handling irregular payments",
+        "Monthly PAYE reporting, payment and default",
+        "Payroll records and late production/P8 penalties",
+        "Monthly ordinary contribution table",
+        "Contribution liability: wages, absence and employer cost",
+        "Partial months and shared contribution weeks",
+        "Small-employer contribution credit",
+        "Self-employed contribution administration",
+        "Self-employed forms, payment route and annual reconciliation",
+        "Contribution assessments and appeals",
+        "Employer contribution records and cessation",
+        "Contributions paid in error",
+        "UK–Gibraltar social-security coverage",
+        "Questions requiring an operational ruling",
+        "Computation",
+        "Executable calculation controls",
+        "Evidence and exclusions",
+        "Self-checks and output",
+        "Disclaimer",
+        "Sources",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "split_sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "byte_exact": true,
+      "old_main_controls": 3,
+      "current_main_controls": 3,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Unresolved amendment status",
+        "Statutory calculation",
+        "Worked boundary checks",
+        "Qualifying first- and second-time buyers",
+        "Specified affordable-housing transactions",
+        "Principal mortgage security",
+        "Stamping, responsibility and late instruments",
+        "Challenging a stamp-duty assessment",
+        "Working-paper evidence",
+        "Scope remaining",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "split_sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "byte_exact": true,
+      "old_main_controls": 2,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Who this applies to",
+        "Thresholds and scope",
+        "The base and exclusions",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources and limits",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "split_sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "byte_exact": true,
+      "old_main_controls": 2,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Agreement, territory and dates",
+        "Individuals: domestic residence first",
+        "Entities: four independent Spanish-residence triggers",
+        "Conditional worked checks",
+        "Relief, information exchange and disputes",
+        "Evidence, open work and output",
+        "Disclaimer"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "split_sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "byte_exact": true,
+      "old_main_controls": 0,
+      "current_main_controls": 0,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope",
+        "Approved qualifying training",
+        "Architects' fees and planning costs",
+        "Historic start-up credit: entry window closed",
+        "Claim preparation and remaining verification"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "split_sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "byte_exact": true,
+      "old_main_controls": 3,
+      "current_main_controls": 3,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope",
+        "Enacted scope and commencement",
+        "Identify the chargeable event",
+        "Calculate the taxable amount",
+        "Rate selection and period controls",
+        "Recomputable examples",
+        "Exemptions and export refunds",
+        "Working-paper procedure",
+        "Published customs declaration route",
+        "Transitional goods: distinguish movement, certificates and storage",
+        "Transitional business relief: eligibility",
+        "Compute the deduction, separately from tax saved",
+        "Compliance, competing assistance and claim evidence",
+        "Self-checks and output",
+        "Disclaimer",
+        "Talk to an accountant"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "split_sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "byte_exact": true,
+      "old_main_controls": 2,
+      "current_main_controls": 2,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Establish residence, period and income type",
+        "Ordinary employment and all three short-stay conditions",
+        "Directors, performers and transport crew",
+        "Government service and the Regiment exception",
+        "Pensions: source taxation and a conflicting summary",
+        "Offshore employment has a separate rule",
+        "Student and apprentice maintenance",
+        "Double-tax relief: Gibraltar-resident example",
+        "Filing workflow and unresolved operations",
+        "Sources"
+      ]
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "split_sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "byte_exact": true,
+      "old_main_controls": 4,
+      "current_main_controls": 4,
+      "all_old_main_controls_exact": true,
+      "protected_differences": {},
+      "cta_exact": true,
+      "tax_year": 2026,
+      "h2": [
+        "Scope and effective periods",
+        "Establish entitlement before using a rate",
+        "Dividends: ordinary exemption and property distributions",
+        "Interest: recipient or payer qualification is essential",
+        "Royalties: a different eligibility list",
+        "Source, permanent establishments and related parties",
+        "Worked examples and boundary checks",
+        "Capital gains: classify the disposed asset before allocating tax",
+        "Anti-abuse and dispute procedure",
+        "Company UK-interest relief: published application evidence",
+        "Relief file and remaining verification",
+        "Sources"
+      ]
+    }
+  ],
+  "historical_research": [
+    {
+      "path": "docs/research/2026-10-22-gibraltar-accounting-periods-review.md",
+      "sha256": "40ea3770535766f11bafcb9a8d5d5f566c6b15c64034c5a4bbfe2138709e9309",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-accounting-periods-sources.json",
+      "sha256": "730369f814dcb0711d48bb8dc89eb47bb216e625e32fcc1e12b1c2e53c5e8f94",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-appeals-review.md",
+      "sha256": "9927c18bdac38b21e0efa760f8c5d556ee091c821e5ca52343edab102f1c4920",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-appeals-sources.json",
+      "sha256": "0800310c5e6fffa5208a7f327f27e271486ac399e099ad0e4729d2bb8ccf8d18",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-independent-review.md",
+      "sha256": "34b98826bafd15499f36706b1764a93147af2f561818de5439120cf5aa4b4695",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-review.md",
+      "sha256": "94b69dd0b160174d2bf92299847bd0f08b185e03cbf88c24ea392009bc3133f4",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-beneficial-ownership-sources.json",
+      "sha256": "521d929a692f008f2c8f2404f034a14efbcb5de0e13959e4e9282747a2467539",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-bookkeeping-review.md",
+      "sha256": "9e3a8a93a7389fe69475f7a1975318f4bb0b0b386b726ec562882550683a586f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-bookkeeping-sources.json",
+      "sha256": "ed41abcf0771bf724c2875c27fd6e68f902826437cad10afaa70f6aebbd74fb7",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-building-allowances-review.md",
+      "sha256": "1d3eded59e20f8c80aeb38463f3a2f9505f75faecd6d4f30de17d161b903fdf4",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-building-allowances-sources.json",
+      "sha256": "d68412f2b470e7b7e885c0e6a6f737c6c895d98ec84c1004fe39633d81e56a67",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-capital-allowances-review.md",
+      "sha256": "7b04fd41fcdedc63db0a85c7e465bd8f04ad93f72c20fa9c34698afa88863c4d",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-capital-allowances-sources.json",
+      "sha256": "97bd71cdfb231daad39d431a83f17ec5e273bf22c78945ff0e8f24fde83d6b77",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cessation-stock-review.md",
+      "sha256": "b5b97f4af028e46c6103cdcca2e6d2ff86f8561d900b07d4a3d367b647aabbbe",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cessation-stock-sources.json",
+      "sha256": "f02e404e80e53de42568913cdd3400971e9d9796f422c88aa101efe0d9bc2288",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-clearance-review.md",
+      "sha256": "6a8a80d9101e1f7cec007584dac1219bf8fe13e61d084e64f2796b900e50c976",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-clearance-sources.json",
+      "sha256": "b6897a4d25efb62e54dbcdc05b8a6e18ba906d37b1f11839fe2ed72c2f57401a",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-formation-review.md",
+      "sha256": "d618e944817e8efca41cfbe8152355453b6b2d463d2298a02dd566611f81841b",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-formation-sources.json",
+      "sha256": "8f262ca683795f5fbc4aff98bd127c8a1ca26439fa12ae2020899466eabe9894",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-reporting-review.md",
+      "sha256": "23afa18b277471b56ad369ec0862cf37a920b063e306353187119c2f684ce383",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-reporting-sources.json",
+      "sha256": "dd5ee28eee3047afdb4750de46fea9575428fca4da1581cc9fe9ae80f94c9e89",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-returns-review.md",
+      "sha256": "be040b6e2da2aab89fe67c7120b0d6608b891d63528b89601d4bfb675f721cf0",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-returns-sources.json",
+      "sha256": "2f9c2ce254ec89d2839e0ed137be3c78e33483c880a5dc10c57f25fe305ae44f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-scope-review.md",
+      "sha256": "fead20ecf6c408e6c84958e482ce22e612f66e24c024dcc3d9d0c3d08e254d7a",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-company-scope-sources.json",
+      "sha256": "1ec2e43f76c419b2ec615edc420f5b8f481e131f5294bc4f2a7a165195e20234",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-connected-party-review.md",
+      "sha256": "b941cb51f8b1b7dd1d2c35022256d5b24d8ce8cbce38947e07a13443d59ebe2b",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-connected-party-sources.json",
+      "sha256": "e64670c688352c35b0818b61dbf6bfd83af9483c863628af8302c43e8d6717be",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-full-review.md",
+      "sha256": "9e028a7aba3be0341f3d0ade2fe4fe11dc29b1f06e1e7320739742c739387633",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-metadata-review.md",
+      "sha256": "3c62fff8b71bdc3c73cb8bd754e5d8119a036c186747275f391ecd6e5f29ff6f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-payments-review.md",
+      "sha256": "f2c16ee86fd1edcc5e289c3f2e6185ab1b3b61e08ea5fb03122f02a7c93a7ce7",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-corporate-payments-sources.json",
+      "sha256": "6e9f038a45200c1142760130d4fab0804b903df0a2a06ebc9fe916527c4f40d3",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-cross-border-full-review.md",
+      "sha256": "8be496d5325dff3f1c2d9aa85716b0abf013c79d0bef7a55ed6596bfb418e504",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-customs-residence-delta-review.md",
+      "sha256": "29efc0211898c55645c591ed4a9125bef421a029d7a3229a46d944b095476022",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-customs-route-sources.json",
+      "sha256": "9c3672e1b62cdc983105ab717e03755df179f6510dca839194b58b01073d0bf2",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deceased-taxpayers-review.md",
+      "sha256": "4341152ca534d2a356c404d7b0eb9060d7d45039401be31fdf5db695b527872f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deceased-taxpayers-sources.json",
+      "sha256": "7d46191755177c58d656e68225f43978e54ed2088a29e98336b627aa11f5c114",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deductions-review.md",
+      "sha256": "8b1ff92b11c3eb7c750e70e0c86edf63dbc5ad624ed8023d919cde0e984ce4cd",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-deductions-sources.json",
+      "sha256": "bc785271dbc105a3ffa610045d81f3706365c748dedbb8a867cd07243896ff87",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-domestic-pensions-review.md",
+      "sha256": "613de3f8c5ebd6e39ecdf01413179ef6fa5d790c39aea2e02940f32aec02d2da",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-domestic-pensions-sources.json",
+      "sha256": "285ddc189aabd2a98234f0c73aea395e460efa70f32a21737443b241631cb74e",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-review.md",
+      "sha256": "dda018a25b9d47fa863375ab7db7c51fb4ad841a942fa77c24b90e041e5ee9c6",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-sources.json",
+      "sha256": "036fa76efb2e6f6a4e9f4ce7152c24fee0aa40c3d6c3d9ca5984431d77a0964f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-syntax-review.md",
+      "sha256": "3aed98d6c8b189cf73b4ed8183a87a2d5c7d992291f946bc61ba7636357b6f1c",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-einvoice-syntax-sources.json",
+      "sha256": "adbd2aeae261e876772708569add63a972b26345a6d2d89a17dbce999b47ee60",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-foreign-tax-relief-review.md",
+      "sha256": "5bbd116f50c7992052be887bad74a1cef1e330c3867dc9c4d2b6e4bf9d0980d1",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-foreign-tax-relief-sources.json",
+      "sha256": "e64670c688352c35b0818b61dbf6bfd83af9483c863628af8302c43e8d6717be",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-formation-accounts-full-review.md",
+      "sha256": "a51cca0b1a196cae3cfa8a9d732ed3afa414a8d05a38ccd89318f037c0bee9d0",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-group-accounts-review.md",
+      "sha256": "ad54b83a5e8aa930475f4312ad22f3d27329913731c4b6586bc4c25a32ced747",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-group-accounts-sources.json",
+      "sha256": "0c68d3892cada4e6d819f36b1baa7859b9c8d3de3e10802149133b1067accf11",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-health-insurance-review.md",
+      "sha256": "1eb43802a2359a6d39c84fd520de651959756dce772d0502f40d41de52ff26d6",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-health-insurance-sources.json",
+      "sha256": "978318be9addc9e07ec95cffc5a05beebf2f4da42616c9940adcf6adac140336",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-payroll-full-review.md",
+      "sha256": "ff6c760d8922639c097273215210b5daa012301c6fe08e74fb13a8e755b68daf",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-review.md",
+      "sha256": "c5bcf1373f0ede41132bf1129bc6d167d44bce4ab9a2e9fe488de1dad7f97e78",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-individual-sources.json",
+      "sha256": "e868718aa9e7cea19b5829ac4abf4c9f9bf73f70a8fa2f78d38303bccf26d50a",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-interest-royalties-review.md",
+      "sha256": "e7e0e84546379cce089b639bbc8151272e69632ccbb1a94fa26b1d3aa9311113",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-interest-royalties-sources.json",
+      "sha256": "bd88c9c2d3b372760a6fbe2956b8528ce5e3358b5e59581fcfbdec4f2adb721f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-lending-appeals-full-review.md",
+      "sha256": "9190bc81f208eeeb3893a2a20ac60564adfecc2c203b9c7676a0c0775bacaa96",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-losses-review.md",
+      "sha256": "6be77520dbdb2f079c16101a3bdf13c134aadd5803e363b2ca6fcf5250abca64",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-losses-sources.json",
+      "sha256": "8adef9fa587a23ed4884432378bf0bb7fa22a05b45a94a573d638e2ea2ac91d2",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-map-review.md",
+      "sha256": "778b31af279017ed6934bb3f374967b3f9295c0a604625a125116be3fcda2032",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-map-sources.json",
+      "sha256": "57351b83d8b1f09a9b0cd1b7bf62f949d8ecae344dc68a6feb11d579d0cf3f2c",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-election-review.md",
+      "sha256": "2fb85e4e4b3db44383899eb271ce3a6e620a1c17cae7e4e64330e8c752d98f62",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-election-sources.json",
+      "sha256": "dcfd2411a4bcc929151df0b692ac376b31ae15849be6557631695ea54d2bdac7",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-full-review.md",
+      "sha256": "9730f1ab5151d1474c237e691aaaeb7452124b3a367217fbdbb2553cd1f37edb",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-independent-review.md",
+      "sha256": "900d070a081f8ee333f87f49bfe3f4fde05954aa9acce70a96eb03454e50a5f6",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-review.md",
+      "sha256": "6c67dd35690188f471a36a5b75bde597ba4e6c2c8c76d3926db1e6b11a7c6f40",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-minimum-tax-sources.json",
+      "sha256": "dfa4cd19726df6f4b4aa7914645f502e95b6d855a2f22f24278a4fd5da2b1175",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-mixed-loss-review.md",
+      "sha256": "4f3cbfa795ea3cb8aabe253c495b104f445d1f56a9c28212b319666edc99c8d2",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-mixed-loss-sources.json",
+      "sha256": "094febe59db3a79daa0e317771ab6442dc85dc46ac2fb1054518451fcb9ead3d",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-independent-review.md",
+      "sha256": "73110d46a5d490e8bb5395fdcdb7fe6ab8db5ac40c524dd70ce36adcc1c45e82",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-review.md",
+      "sha256": "2559bb7ac39265ce8fb815b2bd669d4778ed502a8550d8bf5225c8eb8cba9174",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nominee-appointor-sources.json",
+      "sha256": "a711ab0d321d4b592f44fc74885e4072771a92c426dc1ca8d88606615a07289f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nonresident-pension-relief-review.md",
+      "sha256": "5ba89eec88a4c7f1d030dc384cafa063d7108507d0a777fcd14b018d870a9398",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-nonresident-pension-relief-sources.json",
+      "sha256": "b2927fdb7236d0e8d6529b854f1821fdda6176035c8d71dc4389bf943551f68d",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-payroll-reporting-review.md",
+      "sha256": "250e6179cc4af7524fb1d915ae0153f80de70c833f70eee91f0bc0437c5ab1f5",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-payroll-reporting-sources.json",
+      "sha256": "b966c6bd2f1d93ce8bf4ba523829081a44c75d77c9785477b2bf31b6f0fe81e8",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-full-review.md",
+      "sha256": "f6ec78c768b43e3f0bc8ad946a2aaeee64c848838dfa35a266115d5917d9e332",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-review.md",
+      "sha256": "40bbc5b1de2cadf8582761c74e2607192849a3ca08245be82112263fc932cf03",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-property-sources.json",
+      "sha256": "1728608edb4a3a33b552a225085edd935736d9c27bb848b10a2e00acbca47ef9",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-qnups-review.md",
+      "sha256": "5dee50fdfa2d02c750202c8e49d934781de8c7f3c5a663965fd8743cb87e2000",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-qnups-sources.json",
+      "sha256": "71553657b346bb96ec437d6fc9cea517fe1e467c56e6d1b09de3906d6f7d8510",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-records-invoices-reliefs-full-review.md",
+      "sha256": "dd0af0c96d20930909b5126af272a415a4ff9a5f3f60aa3bdf7dee71f2a8300b",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-refunds-review.md",
+      "sha256": "ca180154618c2074d6c32838a551e9bc45c1b1778927ad36c8f190587fd29f7f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-refunds-sources.json",
+      "sha256": "b9929685fb0195fae912542bb6eb685508cb779fdc12405d0452239bfd2a7ceb",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-reliefs-review.md",
+      "sha256": "975acc2c6b0dd82cb6483d0f35d0880d1667d3fca3a2fa4d609a22af94685eac",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-reliefs-sources.json",
+      "sha256": "e64670c688352c35b0818b61dbf6bfd83af9483c863628af8302c43e8d6717be",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-representatives-review.md",
+      "sha256": "011bf5c9599b382a855ae03de6344eebca41d91ace325ee774d03ba1edea5906",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-representatives-sources.json",
+      "sha256": "ceb11d59c4c30742591f8549f97cc2c177b5ed58210416a62598fdb167f7f8d2",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-residential-disposals-review.md",
+      "sha256": "56e8f49925479660aae4408bca15763131902dde5b6934c084710f59305c3c00",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-residential-disposals-sources.json",
+      "sha256": "9ea2c898fc592ce70dea38bdaff2ec2d585f234b978d14f426b6e6647575bb90",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-secured-loan-sources.json",
+      "sha256": "5cdddae5e8ac518a04bda38b68ad36ffe0f628986cbe413d38d57e48ac26bf6d",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-self-employed-procedure-review.md",
+      "sha256": "1510a414a2034e8491fe4429762c61de9cd24f3a6d1d878a41404502ecfa4e5f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-self-employed-procedure-sources.json",
+      "sha256": "cba5d4da775995153fd26a306a54d9c054d8b220c31862c1cdc59c703e7cf3cc",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-shareholder-loans-review.md",
+      "sha256": "d45799a444e7d67aef2b2544010da2412afca23f3658ee87daaf2b63c2d8ec9e",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-shareholder-loans-sources.json",
+      "sha256": "be3e912387a50895fa1bb9fcdcadf83920e01f645319c6ba296f87f9d2f8e7bc",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-spain-residence-review.md",
+      "sha256": "91c2c5be7ecaa20639adb507ba63b398dbafef59cb89040b8cbb11a729f78bdf",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-spain-residence-sources.json",
+      "sha256": "86e1af109861237af7fb4b2d3aede0f63cf63ed184c3b9d16dbf3f2dd9c9b050",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-stamp-amendment-status.md",
+      "sha256": "54b5f788a6de474500f42f22ea1ab7e63b6ca6cd41105705aa70b68ae3f8d1dc",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-stamping-procedure-sources.json",
+      "sha256": "2702808e080ad86b8e15cc02ae51c9b840b7e1214daaa78d2e7ed1d0e78986c5",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transaction-tax-review.md",
+      "sha256": "fb3daaffe21063b23ff76bcc1931855dcb7a5af84c45b32ce1f218085c8ba5fc",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transaction-tax-sources.json",
+      "sha256": "0f9cab213c007e6b34414995c5b2420512550b456489e11bf057187d619ed896",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-transition-spain-full-review.md",
+      "sha256": "75814577818f5a10852e53e0cbb3f9b76e7bc9ec7df606e92fa38a81578332d1",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-treaty-credit-review.md",
+      "sha256": "04334a1382cb870d664ce52d5780e3e4a6fd96ad7d5c095cade5b00586271a9e",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-treaty-credit-sources.json",
+      "sha256": "6e0591d2a596e91e5a4cc0502df393a3aacbf8e9d13560cafd842fa014ff334f",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-independent-review.md",
+      "sha256": "94a7b29f122d1ec04000ab0f63623e963661c4f82448026bd5871d87a4cb23b1",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-review.md",
+      "sha256": "302d52737eaa469a2ec4aa63670de2b4f063b378e0c3f99f6eaac9c0f1c728dc",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-access-sources.json",
+      "sha256": "b3c272fc8c1cfa5563380e38fb0f455aacd40dc4afdf604ed410d8a8e519bdd6",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-independent-review.md",
+      "sha256": "40157b4b0abd57e746d5f17b6b287cbf39001791fff29799ff27916992532cdf",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-review.md",
+      "sha256": "c36569b2dd6f1980f6b825af0f9dba7f172d62623eccd0352da24aed2eaf3b8c",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-enforcement-sources.json",
+      "sha256": "8f05f894b3f2cb442944f615bf1ea1fea4091cfa5091d1e8298eb33b77beba52",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-independent-review.md",
+      "sha256": "1b6a4b74b6f3eae24488fddc097d4bac9bf02708a4ad1460ba58e590b791a0c4",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-review.md",
+      "sha256": "d62bc103df1f91b13cafa3933f1cc2c7a0a353dc61a75571c1c0181d8bf6889b",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-ubo-investigation-sources.json",
+      "sha256": "297a5e57bb8acf1ae117bb38f61eb27d41a67a2818cbd6a07b00346e8a352d46",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-business-review.md",
+      "sha256": "ee324c3140883c50eb2f9bb4235c7d5e5954192ba3aebd79247528c296216b6b",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-business-sources.json",
+      "sha256": "89cf226fb40d28b75f50e52415f754210884dd1d320cb66757c78b4a90d57ace",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-employment-review.md",
+      "sha256": "8d8dc03d520299b9fec3737e5ffe57caa2decb297f054c666246d459454f3861",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-employment-sources.json",
+      "sha256": "056734a11e9d3b2214ce7e542a9e95d62e7bfc3179da985d51dccffeb74abe07",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-investment-review.md",
+      "sha256": "827a5db08ed107c0645a82fc697ec20fb775b04de7d9a7a24f822ed0b7e23332",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-investment-sources.json",
+      "sha256": "dbaf0307a6a615ee8953abab891aff8813eb902b08c43e139bec637196728d95",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-social-review.md",
+      "sha256": "a7011fe14b9f1cb34d649ef4a915b38f5959c1e30842172b360d30246cb8b46c",
+      "byte_exact": true
+    },
+    {
+      "path": "docs/research/2026-10-22-gibraltar-uk-social-sources.json",
+      "sha256": "bddaef50eba23e87b778861a2757823dec9fc22668f22cf7b0cdf9927df91d08",
+      "byte_exact": true
+    }
+  ],
+  "source_receipts": [
+    {
+      "file": "work/sources/income-tax-act-20260323.pdf",
+      "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+      "receipt_hash_equal": true,
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
+    },
+    {
+      "file": "work/sources/income-tax-act-20260323.txt",
+      "sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+      "receipt_hash_equal": true,
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
+    },
+    {
+      "file": "work/sources/rates-tax-rules-20240701.pdf",
+      "sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+      "receipt_hash_equal": true,
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf"
+    },
+    {
+      "file": "work/sources/allowances-rules-20260323.pdf",
+      "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+      "receipt_hash_equal": true,
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
+    },
+    {
+      "file": "work/sources/uk-gibraltar-treaty-official.html",
+      "sha256": "d20b012e4327f9c050363ca2885c998fc6a6f8e5f3fb9f838582af04b0d61202",
+      "receipt_hash_equal": true,
+      "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
+    },
+    {
+      "file": "work/sources/uk-gibraltar-treaty-official.txt",
+      "sha256": "843017e0684672a393e282ca0fa193b78d454c7faa7e2c774e07c25321232682",
+      "receipt_hash_equal": true,
+      "url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
+    }
+  ],
+  "ledger_rows": {
+    "gi-connected-party-pricing-and-interest": [
+      {
+        "row": 1,
+        "provision": "s40(3)–(4)",
+        "section": "Scope",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 2,
+        "provision": "Sch4,8,8A,9(1)",
+        "section": "Relationship",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 3,
+        "provision": "Sch4,10(1)",
+        "section": "Control",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 4,
+        "provision": "Sch4,10(1)(a)",
+        "section": "Control",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 5,
+        "provision": "Sch4,10(1)(b)–(c)",
+        "section": "Control",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 6,
+        "provision": "Sch4,10(2)",
+        "section": "Control",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 7,
+        "provision": "Sch4,10(3)",
+        "section": "Control",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 8,
+        "provision": "Sch4,10(4)",
+        "section": "Control",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 9,
+        "provision": "Sch4,10(5)",
+        "section": "Control",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 10,
+        "provision": "Sch4,9(2)–(3A)",
+        "section": "Connection",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 11,
+        "provision": "Sch4,9(4)",
+        "section": "Connection",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 12,
+        "provision": "Sch4,9(5)–(6)",
+        "section": "Connection",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 13,
+        "provision": "Sch4,9(7)–(8)",
+        "section": "Connection",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 14,
+        "provision": "Sch4,11(1)–(3)",
+        "section": "Participators",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 15,
+        "provision": "Sch4,11(6)–(8)",
+        "section": "Participators",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 16,
+        "provision": "Sch4,11(4)–(5),9(9)",
+        "section": "Associates",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 17,
+        "provision": "Sch4,4(1)",
+        "section": "Profit adjustment",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 18,
+        "provision": "Sch4,4(2)",
+        "section": "Excess interest",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 19,
+        "provision": "Sch4,2(1)",
+        "section": "Thin capitalisation",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 20,
+        "provision": "Sch4,2(1)(a)",
+        "section": "Thin capitalisation",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 21,
+        "provision": "Sch4,2(1)(b)",
+        "section": "Thin capitalisation",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 22,
+        "provision": "Sch4,2(1)",
+        "section": "Thin capitalisation",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 23,
+        "provision": "Sch4,2(1)(c)",
+        "section": "Thin capitalisation",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 24,
+        "provision": "Sch4,5(a)–(b)",
+        "section": "Secured deposits",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 25,
+        "provision": "Sch4,8 and5",
+        "section": "Secured deposits",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 26,
+        "provision": "Sch4,5(b)(ii)",
+        "section": "Secured investments",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 27,
+        "provision": "Sch4,4(3)",
+        "section": "Connected-expense cap",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 28,
+        "provision": "Sch4,4(3)(c)(ii)–(iii)",
+        "section": "Connected-expense cap",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 29,
+        "provision": "Sch4,4(4)",
+        "section": "Connected-expense cap",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 30,
+        "provision": "s22(1)",
+        "section": "Shareholder advances",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 31,
+        "provision": "s22(1)",
+        "section": "Shareholder advances",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 32,
+        "provision": "s22(2)",
+        "section": "Shareholder advances",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 33,
+        "provision": "s22(3)",
+        "section": "Shareholder set-off",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 34,
+        "provision": "Sch4,7(1)",
+        "section": "Exemption",
+        "quote_count": 5,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 35,
+        "provision": "Sch4,7(2)",
+        "section": "Exemption appeal",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 36,
+        "provision": "s42(1)",
+        "section": "Clearance",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 37,
+        "provision": "s42(2)",
+        "section": "Clearance",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 38,
+        "provision": "s42(3)",
+        "section": "Clearance",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 39,
+        "provision": "s42(4)",
+        "section": "Clearance",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 40,
+        "provision": "s42(6)",
+        "section": "Clearance",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 41,
+        "provision": "s42(7)(c)",
+        "section": "Clearance",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 42,
+        "provision": "s42(8)",
+        "section": "Clearance",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 43,
+        "provision": "s42(9)–(10)",
+        "section": "Clearance",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 44,
+        "provision": "s42(11)–(12)",
+        "section": "Publication",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 45,
+        "provision": "s43(1)",
+        "section": "Anti-avoidance decision",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 46,
+        "provision": "s43(2)–(3)",
+        "section": "Anti-avoidance appeal",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 47,
+        "provision": "Schedule4,18(1), PartIII definitions",
+        "section": "Part V scope",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 48,
+        "provision": "Schedule4,PartIII",
+        "section": "Exceeding borrowing costs",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 49,
+        "provision": "Schedule4,18(5)",
+        "section": "Tax EBITDA",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 50,
+        "provision": "Schedule4,18(5)",
+        "section": "Tax EBITDA",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 51,
+        "provision": "Schedule4,18(3)",
+        "section": "Ordinary limit",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 52,
+        "provision": "Schedule4,18(4)",
+        "section": "Group floor",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 53,
+        "provision": "Schedule4,18(7)(a)",
+        "section": "Equity escape",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 54,
+        "provision": "Schedule4,18(7)(b)",
+        "section": "Group ratio",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 55,
+        "provision": "Schedule4,18(8)",
+        "section": "Disallowed-cost ledger",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 56,
+        "provision": "Schedule4,18(8)",
+        "section": "Capacity ledger",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 57,
+        "provision": "Schedule4,18(6)",
+        "section": "Exemption limit",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 58,
+        "provision": "Schedule4,18(6)(a)",
+        "section": "Exemption limit",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "request_changes_wrong_assertion",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 59,
+        "provision": "Schedule 4, paragraph 8A",
+        "section": "Part V defined taxpayer",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      }
+    ],
+    "gi-foreign-tax-relief": [
+      {
+        "row": 1,
+        "provision": "s37(1)",
+        "section": "Domestic relief",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 2,
+        "provision": "s37(1)",
+        "section": "Domestic relief",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 3,
+        "provision": "s37(7)",
+        "section": "Tax character",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 4,
+        "provision": "s37(8)",
+        "section": "Source restriction",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 5,
+        "provision": "s37(8A)",
+        "section": "Residence-only exclusion",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 6,
+        "provision": "s37(1),(8)",
+        "section": "Unpaid-tax boundary",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 7,
+        "provision": "s37(4)",
+        "section": "Tax allocation",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 8,
+        "provision": "s37(2)",
+        "section": "Foreign relief",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 9,
+        "provision": "s37(3)",
+        "section": "Foreign evidence",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 10,
+        "provision": "s37(5)",
+        "section": "Claim clock",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 11,
+        "provision": "s37(6)",
+        "section": "Later adjustments",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 12,
+        "provision": "Articles1,4,28,29",
+        "section": "Treaty eligibility",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 13,
+        "provision": "Article22(1)",
+        "section": "Gibraltar treaty credit",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 14,
+        "provision": "Article22(3)",
+        "section": "Gibraltar exclusion",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 15,
+        "provision": "Article22(2)(a)",
+        "section": "UK credit",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 16,
+        "provision": "Article22(2)(b)–(c)",
+        "section": "UK exemptions",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 17,
+        "provision": "Article22(2)(d)",
+        "section": "Underlying credit",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 18,
+        "provision": "Article22(2),final sentence",
+        "section": "Treaty source",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 19,
+        "provision": "Article22(4)",
+        "section": "UK exclusion",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 20,
+        "provision": "Sch4,8A",
+        "section": "Exit corporate scope",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 21,
+        "provision": "Sch4,8A",
+        "section": "Residence transfer",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 22,
+        "provision": "Sch4,18A(1)(c)",
+        "section": "Residence exit trigger",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 23,
+        "provision": "Sch4,18A(2)",
+        "section": "Exit base",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 24,
+        "provision": "Sch4,18A(9)",
+        "section": "Market value",
+        "quote_count": 1,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 25,
+        "provision": "Sch4,18A(3),(3)(c)",
+        "section": "Deferral",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 26,
+        "provision": "Sch4,18A(4)",
+        "section": "EEA recovery condition",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 27,
+        "provision": "Sch4,18A(5)",
+        "section": "Guarantee",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 28,
+        "provision": "Sch4,18A(6)(a)–(d)",
+        "section": "Deferral termination",
+        "quote_count": 4,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 29,
+        "provision": "Sch4,18A(6)(e)",
+        "section": "Instalment failure",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 30,
+        "provision": "Sch4,18A(7)",
+        "section": "Subsequent transfers",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 31,
+        "provision": "Sch4,18A(8)",
+        "section": "Inbound value",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 32,
+        "provision": "Sch4,18A(10)",
+        "section": "Temporary transfers",
+        "quote_count": 3,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      },
+      {
+        "row": 33,
+        "provision": "Sch4,8A,18A(1)(a)–(b)",
+        "section": "Definition mismatch",
+        "quote_count": 2,
+        "all_quotes_present": true,
+        "quote_context_verdict": "Source quote/provision checked; conditions support the relevant actual Guide paragraph.",
+        "writer_rule_mapping_verdict": "accepted",
+        "read_on": "2026-10-28"
+      }
+    ]
+  },
+  "quote_failures": [],
+  "old_topics_actual": {
+    "gi-connected-party-pricing-and-interest": [
+      {
+        "old_paragraph": 1,
+        "old_section": "Scope and relationship test",
+        "original_sha256": "d4314761c20428e186685fb3de5d131e858243f5b5cc927de8f66cc648e22845",
+        "actual_original_anchor": "This Guide covers selected Schedule 4 rules for connected-party business and financing. It does not establish complete transfer-pricing, borrowing-cost, hybrid-",
+        "byte_exact": true,
+        "current_section": "Scope and relationship test",
+        "current_line": 22,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 2,
+        "old_section": "Scope and relationship test",
+        "original_sha256": "e5da63107c35233f7dd1067e34b66a149c65cc6bda409c6d462e79e81064d446",
+        "actual_original_anchor": "Determine connected status under Schedule 4 paragraph 9, with control construed under paragraph 10. Common control, control exercised with connected persons, sp",
+        "byte_exact": true,
+        "current_section": "Scope and relationship test",
+        "current_line": 24,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 3,
+        "old_section": "Determine control from rights, not just registered shares",
+        "original_sha256": "0fae77cf386f288f747a7b6178b95370e4c91e279dc8bc32c34edf143ebd85ea",
+        "actual_original_anchor": "Paragraph 10(1) covers a person who exercises, can exercise or is entitled to acquire direct or indirect control over company affairs. Its specific routes inclu",
+        "byte_exact": true,
+        "current_section": "Determine control from rights, not just registered shares",
+        "current_line": 28,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 4,
+        "old_section": "Determine control from rights, not just registered shares",
+        "original_sha256": "4a9b2831111925b26a4e586f324f34b65c2364f79a4a80d830a1592500858487",
+        "actual_original_anchor": "Two or more persons satisfying the conditions together are treated as controlling the company. Entitlements arising at a future date count. Rights held by a nom",
+        "byte_exact": true,
+        "current_section": "Determine control from rights, not just registered shares",
+        "current_line": 30,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 5,
+        "old_section": "Determine control from rights, not just registered shares",
+        "original_sha256": "ee74b58ed7c1d0e69de32664e55359f5dd7dec2e84599a55bd74e05e2075e58d",
+        "actual_original_anchor": "Example: a person holds 40% of voting rights directly and a nominee holds a further 20% on that person's behalf. The attributed voting position is **40% + 20% =",
+        "byte_exact": true,
+        "current_section": "Determine control from rights, not just registered shares",
+        "current_line": 32,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 6,
+        "old_section": "Determine control from rights, not just registered shares",
+        "original_sha256": "bf7ee849de912ba0d7187770ffe1b2dcc5c041b08b19f67fbb2c9d0ec1ee3aa6",
+        "actual_original_anchor": "Paragraph 10(5) additionally addresses rights of controlled companies and associates, including its specified attribution limits and the rule concerning control",
+        "byte_exact": true,
+        "current_section": "Determine control from rights, not just registered shares",
+        "current_line": 34,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 7,
+        "old_section": "Connection extends beyond shareholders",
+        "original_sha256": "14ae3bfe0783c6c7e7d19caa2ba7515f2e8705a587fe0c1b68c4500fc84640b7",
+        "actual_original_anchor": "Paragraph 9 connects companies under the specified common-control arrangements and a company with a person who controls it, alone or with connected persons. It ",
+        "byte_exact": true,
+        "current_section": "Connection extends beyond shareholders",
+        "current_line": 38,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 8,
+        "old_section": "Connection extends beyond shareholders",
+        "original_sha256": "e3e268b3b6aca004a34df76df084f07f816b06f7f6423c18efd853f8b3257b5d",
+        "actual_original_anchor": "A “participator” under paragraph 11 includes persons with interests in company capital or income, rights to acquire capital or votes, specified loan creditors, ",
+        "byte_exact": true,
+        "current_section": "Connection extends beyond shareholders",
+        "current_line": 40,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 9,
+        "old_section": "Connection extends beyond shareholders",
+        "original_sha256": "9353ce44a028984695fd2f982c4bff7504028927352e391765339fe6a59359a2",
+        "actual_original_anchor": "For associate attribution, paragraph 11(4) addresses relatives, partners, specified trustees and estate representatives. Paragraph 11(5)'s narrower relative wor",
+        "byte_exact": true,
+        "current_section": "Connection extends beyond shareholders",
+        "current_line": 42,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 10,
+        "old_section": "Business-profit adjustment and excess interest",
+        "original_sha256": "49f11c9f2ba4f83ef454b867e51562441d54549c1b098d8127eaa7461f4dcade",
+        "actual_original_anchor": "Where connected business is arranged so that the taxable person earns no profits, less than ordinary profits, or creates or increases a loss, paragraph 4(1) pro",
+        "byte_exact": true,
+        "current_section": "Business-profit adjustment and excess interest",
+        "current_line": 46,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 11,
+        "old_section": "Business-profit adjustment and excess interest",
+        "original_sha256": "a14f6735b4c56e6c42f7b45e90b8b1c1ca327cbccc40ac7d5fea20b9b1e590ec",
+        "actual_original_anchor": "Paragraph 4(2) separately treats connected-party interest **above the amount payable to an arm's-length party** as a dividend and denies deduction of that exces",
+        "byte_exact": true,
+        "current_section": "Business-profit adjustment and excess interest",
+        "current_line": 48,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 12,
+        "old_section": "Conditional thin capitalisation",
+        "original_sha256": "6e290f0a183b0021df395f2b87b9511abd1154c20d61719e076894589115cbf8",
+        "actual_original_anchor": "Paragraph 2 applies where the company's loan-capital-to-equity ratio is **greater than 5:1 at any time in the accounting period**, subject to its exclusion for ",
+        "byte_exact": true,
+        "current_section": "Conditional thin capitalisation",
+        "current_line": 52,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 13,
+        "old_section": "Conditional thin capitalisation",
+        "original_sha256": "1857bb1fb0a7dcf049589e1df8510067808ce024f152b2387fff0cc0a6efab6a",
+        "actual_original_anchor": "- Interest to a connected person that is **not a company**; or\n- Interest to an arm's-length lender on a loan secured wholly or on **more than 50%** of assets b",
+        "byte_exact": true,
+        "current_section": "Conditional thin capitalisation",
+        "current_line": 54,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 14,
+        "old_section": "Conditional thin capitalisation",
+        "original_sha256": "a0952c5efbf4af15314abed0db95356cd3f470f3ff614c832fcd285d08884ff4",
+        "actual_original_anchor": "When the provision applies, the relevant interest is treated as a dividend and is not deductible. Do not describe every loan above 5:1 as automatically disallow",
+        "byte_exact": true,
+        "current_section": "Conditional thin capitalisation",
+        "current_line": 57,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 15,
+        "old_section": "Conditional thin capitalisation",
+        "original_sha256": "8a7b183c02bb38d5d945714cd631c47d341c3c7b6ea4671b68aa14515669442e",
+        "actual_original_anchor": "“Loan capital” means total interest-bearing debt. The specified equity definition includes preference shares regardless of accounting treatment, shareholders' f",
+        "byte_exact": true,
+        "current_section": "Conditional thin capitalisation",
+        "current_line": 59,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 16,
+        "old_section": "Conditional thin capitalisation",
+        "original_sha256": "a3c386aedaa58700f79c6e5129be9ff4741ac0de3329dac68c1be16be76ae86d",
+        "actual_original_anchor": "Example: qualifying loan capital £600,000 divided by statutory equity £100,000 gives **6:1**. That meets the ratio limb; lender, security and arm's-length condi",
+        "byte_exact": true,
+        "current_section": "Conditional thin capitalisation",
+        "current_line": 61,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 17,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "40545ce74e259c4f55ad4d48452f0eaae6108cc55691c1e765316894b40625c8",
+        "actual_original_anchor": "Schedule 4 paragraph 5 is a separate restriction from the 5:1 thin-capitalisation test. It applies where, at any time in a year, a person pays interest to an ar",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 65,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 18,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "68fe560ac9b9518e2a820e40d4b75dbce2996301bcfc65a098c3b536e12b8ca6",
+        "actual_original_anchor": "The cash-deposit route covers a deposit with the lender or a person connected to that lender, made by the borrower or a person connected to the borrower. The in",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 67,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 19,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "66a3ac5105abb609e9e21877824cb32b12f1677f5f46578597ccb155ee96a543",
+        "actual_original_anchor": "Where the provision applies, **the interest is not deductible**. It does not say to disallow only the fraction matching the security percentage. Paragraph 7's e",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 69,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 20,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "b88a40010b55cbddee316e450a45ae2dff3f6ec022b00540b07e52f73a4386fa",
+        "actual_original_anchor": "**Conditional boundary example:** assume a £200,000 loan, £12,000 interest, qualifying cash-deposit security covering £100,000 of the loan, non-assessable depos",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 71,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 21,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "df1f6a634de861ec18d58a690a49744ef50bbc28da5b0abe4ec316e03d39e9ab",
+        "actual_original_anchor": "```oa-check\nname: Secured cash-deposit loan substantial-part boundary\ninputs:\n  loan: 200000\n  qualifying_security: 100000\n  below_boundary_security: 99999\n  in",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 73,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 22,
+        "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "original_sha256": "3f4160d3699f5075d491d696e144988ae95483fda6946e9c52a85d8ea70d87d7",
+        "actual_original_anchor": "Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the deposit/inv",
+        "byte_exact": true,
+        "current_section": "Arm's-length loans secured by untaxed deposits or investments",
+        "current_line": 90,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 23,
+        "old_section": "Aggregate connected-expense cap",
+        "original_sha256": "d0e1c34b003116f1cf19765280e286f6497d95ea6e5ab65e57d31dd5189ba4cd",
+        "actual_original_anchor": "Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected parties, collectively the “Expense”. Subject to the applicable exemption and oth",
+        "byte_exact": true,
+        "current_section": "Aggregate connected-expense cap",
+        "current_line": 117,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 24,
+        "old_section": "Aggregate connected-expense cap",
+        "original_sha256": "28dec2ed13763adb911c01be48adfce33b48567acfa0d3f375feedba99e2fe58",
+        "actual_original_anchor": "1. The Expense itself;\n2. **5% of gross turnover**; and\n3. **75% of pre-Expense net profit**, after first deducting available brought-forward losses.",
+        "byte_exact": true,
+        "current_section": "Aggregate connected-expense cap",
+        "current_line": 119,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 25,
+        "old_section": "Aggregate connected-expense cap",
+        "original_sha256": "66095c13f5a9af275c414f5db140e68202d064ed89c8e765f155e12f9f686d64",
+        "actual_original_anchor": "Pre-Expense net profit adds the Expense back to net profit; paragraph 4(4) specifies the tax-computed profit and turnover bases. The test is aggregate, not a fr",
+        "byte_exact": true,
+        "current_section": "Aggregate connected-expense cap",
+        "current_line": 123,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 26,
+        "old_section": "Aggregate connected-expense cap",
+        "original_sha256": "c9e174b2eeb5a9dc62a9e412fee0bab59136912cb8d9f58cf829fc9ece0aebef",
+        "actual_original_anchor": "Example: aggregate Expense £80,000, statutory gross turnover £1,000,000, pre-Expense net profit £100,000 and available brought-forward losses £40,000. The limit",
+        "byte_exact": true,
+        "current_section": "Aggregate connected-expense cap",
+        "current_line": 125,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 27,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "4e8619b66ad182d3786b65398470427db82dd9b27af5f89cae242cdcd36504d5",
+        "actual_original_anchor": "Section 22 is a recipient-income rule, separate from the company's interest deduction tests above. It addresses specified company advances, loans, asset distrib",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 129,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 28,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "d21012736082fe463538a9cc2ee0656ca4d8c80212f819cd906b89f4fc283403",
+        "actual_original_anchor": "The Commissioner determines how much represents a distribution of income. That amount is deemed income as if a dividend had been paid in the **year of assessmen",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 131,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 29,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "a34ba48dd005e379a72ee3b2cea10448f385c9d41812aba1946d3f03a4228b54",
+        "actual_original_anchor": "In forming that opinion, the Commissioner can presume the company distributes income before capital and distributes income in the order it arose historically, u",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 133,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 30,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "6ffab62f7c81fad4f8428d49ddcd7a0fa577c13235b2c53358def4d1c81a1a28",
+        "actual_original_anchor": "If a later dividend is paid and set off against an advance, loan or payment already deemed income, section 22(3) prevents the dividend being assessable again **",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 135,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 31,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "ad2a28171b0b1afb4da1801b667b2b3824fbfa0c8830dfade1fcd24aecd80f3f",
+        "actual_original_anchor": "**Worked example:** assume an earlier £30,000 advance was fully treated as income under section 22(1). A later £40,000 dividend is actually applied £30,000 agai",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 137,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 32,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "36dcd30ae7c02a3481261362c432e96c73ce249fd702378ab3abc7cc6558bb3a",
+        "actual_original_anchor": "```oa-check\nname: Gibraltar dividend set-off against previously deemed shareholder income\ninputs:\n  previously_deemed_advance: 30000\n  later_dividend: 40000\n  a",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 139,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 33,
+        "old_section": "Shareholder advances and deemed distributions",
+        "original_sha256": "2f6eec26ec829e05c6f9faa4f8fa6bfe3d5b02966257b63e00244582fbe837d9",
+        "actual_original_anchor": "If only £12,000 of that dividend is actually set off, this provision protects only £12,000; a £30,000 historic deemed-income balance does not itself exempt £30,",
+        "byte_exact": true,
+        "current_section": "Shareholder advances and deemed distributions",
+        "current_line": 153,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 34,
+        "old_section": "Exemption and evidence",
+        "original_sha256": "e4c55559b2c519b09d9bc3a1fb8f1f0736e440a83a16d7ded356d73f34461fd0",
+        "actual_original_anchor": "Paragraph 7 states that paragraphs 2 and 4–6 do not apply where the person establishes the prescribed matters to the Commissioner's satisfaction. Its wording ad",
+        "byte_exact": true,
+        "current_section": "Exemption and evidence",
+        "current_line": 157,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 35,
+        "old_section": "Exemption and evidence",
+        "original_sha256": "2e7786f0e2ab5bad8d27904087118cfb8a9c2e393652038b35709839a09d6548",
+        "actual_original_anchor": "Paragraph 7(2) expressly applies the section 35 appeal route to the exemption decision as if it were an assessment, excluding Schedule 2 paragraph 13 and permit",
+        "byte_exact": true,
+        "current_section": "Exemption and evidence",
+        "current_line": 159,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 36,
+        "old_section": "Exemption and evidence",
+        "original_sha256": "0952d36c35324835785c83ae5e2bc8973112987280d94d231a87fd751ac71869",
+        "actual_original_anchor": "A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and equity mo",
+        "byte_exact": true,
+        "current_section": "Exemption and evidence",
+        "current_line": 161,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 37,
+        "old_section": "Exemption and evidence",
+        "original_sha256": "838d2d867dd2191bb945c896fdfc8e4cf187bbf3e2abe073a0072cfe31bb7db4",
+        "actual_original_anchor": "Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence unde",
+        "byte_exact": false,
+        "current_section": null,
+        "current_line": null,
+        "disposition": "Old limitation replaced by a more precise Part V limitation; no operative rule removed."
+      },
+      {
+        "old_paragraph": 38,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "04635ac22e537ef4cb1c3e61feec90392c0b780e002c524ff385c0bed63d5cac",
+        "actual_original_anchor": "An applicant seeking confirmation that an effected or proposed arrangement is not taxable under section 40 or Schedule 4 must furnish full particulars **in writ",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 167,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 39,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "bd5fc03032d933e5d1f7dbcf3292caadbe5307253ae5b3689b22cfa8317f9af1",
+        "actual_original_anchor": "The statutory sequence distinguishes several **21-day** periods:",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 169,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 40,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "f7ff50c815e92028002722330a90c27b51e438639f1c62f768877e4c87742ae5",
+        "actual_original_anchor": "| Event | Required next step |\n|---|---|\n| Commissioner receives insufficient particulars or further information | Within 21 days, notify the applicant of furth",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 171,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 41,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "5c615fb412ed538ea98ffea769fc552fd041e536f5e5b182a3fd499b2918613e",
+        "actual_original_anchor": "[Section 42(2)–(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf). Keep receipt and notification evidence and ",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 178,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 42,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "ad8a63d6faf64d58acaa6ef0fc49aff828d32484dfbe6c0bb6214872814b9813",
+        "actual_original_anchor": "Subsection (8) permits reliance on failure to decide within the period specified by subsection (6), while preserving the Commissioner's general assessment power",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 180,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 43,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "2484f502ce79e4f7ab297fd6f54d825f30c27d23b985d2db66467fa167f4c8ba",
+        "actual_original_anchor": "**Boundary examples:** a taxpayer who sent only an initial application and received no answer cannot infer subsection (8) acceptance merely because 21 days pass",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 182,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 44,
+        "old_section": "Seeking clearance under section 42",
+        "original_sha256": "8d81fed21abba7bed48f5a1da4099aff8c1706b6bc236bc70c33016c8e9dbd89",
+        "actual_original_anchor": "A notification is void where the disclosure omits material facts or is not full and accurate, or where those facts and circumstances change. Clearance for one a",
+        "byte_exact": true,
+        "current_section": "Seeking clearance under section 42",
+        "current_line": 184,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 45,
+        "old_section": "Anti-avoidance decisions and appeal scope",
+        "original_sha256": "6529c15af348f4b163a8e1bf1a94047f147dd7d245b25d7175bd12e74ba5bf89",
+        "actual_original_anchor": "Section 43 requires a written decision identifying the person assessed, affected/disregarded parts of the arrangements, reasons and proposed assessment amount. ",
+        "byte_exact": true,
+        "current_section": "Anti-avoidance decisions and appeal scope",
+        "current_line": 188,
+        "disposition": "exact"
+      }
+    ],
+    "gi-foreign-tax-relief": [
+      {
+        "old_paragraph": 1,
+        "old_section": "Scope and eligibility",
+        "original_sha256": "2c25d5e1d1ff67a6be19add896e12c6d3bed84257552d95f82ca45cd5c95a950",
+        "actual_original_anchor": "The first sections address **section 37 domestic relief**. The separate UK treaty section below has its own entitlement conditions. Begin with the actual Gibral",
+        "byte_exact": true,
+        "current_section": "Scope and eligibility",
+        "current_line": 25,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 2,
+        "old_section": "Scope and eligibility",
+        "original_sha256": "8134a3383058d2ccfc122ae74fdf01991d0f0b3ecaa18f25e2635f128a2ea951",
+        "actual_original_anchor": "The basic amount is the lesser of Gibraltar tax attributable to those profits or gains and foreign income tax on that income, subject to the further limitations",
+        "byte_exact": true,
+        "current_section": "Scope and eligibility",
+        "current_line": 27,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 3,
+        "old_section": "Source restriction and residence-only exclusion",
+        "original_sha256": "de597438ec321fc27f08de8cb6d1593047801eb91c6d12a36b16c5760b870534",
+        "actual_original_anchor": "Section 37(8) limits the provision to tax paid in the country in or from which the revenue generated by the underlying business activity arose. Identify that ac",
+        "byte_exact": true,
+        "current_section": "Source restriction and residence-only exclusion",
+        "current_line": 31,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 4,
+        "old_section": "Source restriction and residence-only exclusion",
+        "original_sha256": "c01afa3b7f0aa250d6890bfe921d6d74c14e6d53a88b1ec54a98190d252553e8",
+        "actual_original_anchor": "Section 37(8A) excludes Gibraltar tax on Gibraltar-source income where the provision would otherwise apply only because the taxpayer's foreign country of tax re",
+        "byte_exact": true,
+        "current_section": "Source restriction and residence-only exclusion",
+        "current_line": 33,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 5,
+        "old_section": "Source restriction and residence-only exclusion",
+        "original_sha256": "4a384914ab9cb23fd41833913652940d55d92c904dabe360960711f81ead861c",
+        "actual_original_anchor": "Section 37(1) refers to tax paid or payable while subsection (8) uses tax paid. If a proposed claim concerns assessed but unpaid foreign tax, reconcile those pr",
+        "byte_exact": true,
+        "current_section": "Source restriction and residence-only exclusion",
+        "current_line": 35,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 6,
+        "old_section": "Allocate the Gibraltar tax before applying the cap",
+        "original_sha256": "fa7dd7306e2a9f1407c69d8da04993218a7be577785bdb17eed74c8cc1ab8d0c",
+        "actual_original_anchor": "Section 37(4) attributes Gibraltar tax proportionately:",
+        "byte_exact": true,
+        "current_section": "Allocate the Gibraltar tax before applying the cap",
+        "current_line": 39,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 7,
+        "old_section": "Allocate the Gibraltar tax before applying the cap",
+        "original_sha256": "def07061c4223b5a9d3b193233d3570f36106d1a73611fa65fe75f628ac43140",
+        "actual_original_anchor": "**Gibraltar tax on the relevant income = total Gibraltar tax before section 37 relief × relevant charged profits or gains ÷ total charged profits or gains.**",
+        "byte_exact": true,
+        "current_section": "Allocate the Gibraltar tax before applying the cap",
+        "current_line": 41,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 8,
+        "old_section": "Allocate the Gibraltar tax before applying the cap",
+        "original_sha256": "81492b22559c4d8cba341dd2d54912d712ad04f10027ee5d28ca4f50e977c37f",
+        "actual_original_anchor": "Use the amounts actually charged for the relevant assessment year or accounting period. Do not substitute worldwide revenue, accounting profit or a headline tax",
+        "byte_exact": true,
+        "current_section": "Allocate the Gibraltar tax before applying the cap",
+        "current_line": 43,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 9,
+        "old_section": "Allocate the Gibraltar tax before applying the cap",
+        "original_sha256": "575a5538019ebfbcb58c7ad323273b388852377f020d86ef0ca31540969b74c0",
+        "actual_original_anchor": "Example: total charged profits are **£100,000**, of which **£40,000** are the relevant income. Total Gibraltar tax before section 37 relief is assumed to be **£",
+        "byte_exact": true,
+        "current_section": "Allocate the Gibraltar tax before applying the cap",
+        "current_line": 45,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 10,
+        "old_section": "Account for relief allowed abroad",
+        "original_sha256": "9ea6bc428e31dabac0d527094d5c12efdc61b85ed87d00ea5a825eb1d99e278e",
+        "actual_original_anchor": "Section 37(2) reduces Gibraltar relief by the amount of relevant unilateral relief allowable abroad for Gibraltar tax on those profits or gains. Section 37(3) c",
+        "byte_exact": true,
+        "current_section": "Account for relief allowed abroad",
+        "current_line": 49,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 11,
+        "old_section": "Account for relief allowed abroad",
+        "original_sha256": "ea61a2e131a75a02edb6330e4566ddcc39ad0a470713e0e52429e2d5a553b860",
+        "actual_original_anchor": "Continuing the £6,000 initial-relief example, if the relevant foreign unilateral relief allowable is **£2,000**, the reduction leaves **£4,000** of Gibraltar re",
+        "byte_exact": true,
+        "current_section": "Account for relief allowed abroad",
+        "current_line": 51,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 12,
+        "old_section": "Claim and adjustment deadlines",
+        "original_sha256": "418cd9314a8771d58c1752ca589994724d8234179b1af7576ff1b191eee7d31b",
+        "actual_original_anchor": "An ordinary section 37 claim must be made no later than **six years after the end of the assessment year or accounting period** concerned. For an accounting per",
+        "byte_exact": true,
+        "current_section": "Claim and adjustment deadlines",
+        "current_line": 55,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 13,
+        "old_section": "Claim and adjustment deadlines",
+        "original_sha256": "4c2743ad1c1ad82999fb8b01ee8cc891b897ee3de81096823f3952941a41c835",
+        "actual_original_anchor": "A later adjustment to Gibraltar tax, foreign tax or relevant foreign relief can make the original credit excessive or insufficient. Section 37(6) provides a spe",
+        "byte_exact": true,
+        "current_section": "Claim and adjustment deadlines",
+        "current_line": 57,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 14,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "a191f4996964ac7965397eca72f14e1322981c4b09619696b1d19a3b5db433cf",
+        "actual_original_anchor": "Establish entitlement under Articles 1, 4 and 28 and the applicable Article 29 commencement before applying the credit article. Use the [UK investment-income Gu",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 61,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 15,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "db8feabcb3d6760ff8a020d78f650516474b4f600b0113b682cdc826d749a212",
+        "actual_original_anchor": "For a **Gibraltar resident**, Article 22(1)(a) permits Gibraltar to include income that the agreement allows the UK to tax in its tax base. Paragraph (1)(b) the",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 63,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 16,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "76a3018a80619660fd07c34f3e07d6c7149433c5c6e2edae76103816cffe5938",
+        "actual_original_anchor": "**Conditional example:** assume treaty eligibility, permitted UK taxation, no paragraph (3) exclusion and independently established tax on the same income of £6",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 65,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 17,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "b0822cab298c31fb8277dc0af280415116bebda56dafdbd4947c9318d5f19430",
+        "actual_original_anchor": "```oa-check\nname: Gibraltar resident Article 22 same-income credit limits\ninputs:\n  gibraltar_tax_on_same_income: 6000\n  higher_uk_tax_due: 8000\n  lower_uk_tax_",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 67,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 18,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "ad715fe9d20a2f74aee18c9d1c27d37f89c8958c34b10e134588d1f64d57e716",
+        "actual_original_anchor": "For the **UK side**, Article 22(2) is expressly subject to UK credit/exemption law, without affecting the stated general principle. Paragraph (a) provides credi",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 85,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 19,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "fdfcb547dd086a074f439b8482d66b5de43ff12f1783ef1f767d97048e8bcea5",
+        "actual_original_anchor": "For a dividend paid by a Gibraltar-resident company and not exempt under paragraph (b), paragraph (d) extends the credit to take account of underlying Gibraltar",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 87,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 20,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "162c52b744dd1dcb1b94f4951a85e31c3b0d5179f95e0e52a2a020a3a0b5a2f1",
+        "actual_original_anchor": "Article 22(4) supplies the opposite-direction exclusion: paragraph (2) does not apply where Gibraltar taxation is permitted by the agreement solely because the ",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 89,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 21,
+        "old_section": "UK treaty: Article 22 coordination",
+        "original_sha256": "7d1079c146132a6cff193dd6aec369829bcded190945d06667131f487038b680",
+        "actual_original_anchor": "Keep a single reconciliation of domestic relief, treaty relief and foreign repayments. Do not add the section 37 result to the treaty result as two independent ",
+        "byte_exact": true,
+        "current_section": "UK treaty: Article 22 coordination",
+        "current_line": 91,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 22,
+        "old_section": "Claim working paper",
+        "original_sha256": "da58dfb8b7effa3a3dd5b2dc5b3dd1e128528f9c4188a9a744dc9c9cdd49263c",
+        "actual_original_anchor": "Prepare and retain:",
+        "byte_exact": true,
+        "current_section": "Claim working paper",
+        "current_line": 128,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 23,
+        "old_section": "Claim working paper",
+        "original_sha256": "3350668cbf6bd54eb1fa46957cbe38b17dcedc2ebeb14ecf83f351570b65234b",
+        "actual_original_anchor": "1. Identification of the person, both tax periods and the same income taxed in each jurisdiction.\n2. The Gibraltar computation before relief and the section 37(",
+        "byte_exact": true,
+        "current_section": "Claim working paper",
+        "current_line": 130,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 24,
+        "old_section": "Claim working paper",
+        "original_sha256": "eb627f8d93401498ae84754b58397ca97eca918e8fdb2e3ad2bc1c0ca64988bf",
+        "actual_original_anchor": "These are suggested evidence controls to support the statutory test, not an assertion that a particular claim form has been verified. Preserve records under the",
+        "byte_exact": true,
+        "current_section": "Claim working paper",
+        "current_line": 137,
+        "disposition": "exact"
+      },
+      {
+        "old_paragraph": 25,
+        "old_section": "Claim working paper",
+        "original_sha256": "d96e5df1eb60bac5681c403f0c355769231d63c8ed7066dbc850483034168166",
+        "actual_original_anchor": "Independent review and professional attestation are pending. Claim forms, foreign-currency conversion, disputed sourcing, assessed-but-unpaid tax and the applic",
+        "byte_exact": true,
+        "current_section": "Claim working paper",
+        "current_line": 139,
+        "disposition": "exact"
+      }
+    ]
+  },
+  "schema": {
+    "errors": [],
+    "warnings": [
+      "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+      "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+    ]
+  },
+  "calculations": {
+    "command": [
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/armenia-recovery/venv/bin/python",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/scripts/check-examples.py",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-company-formation.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-corporate-tax.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-einvoice.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-global-minimum-tax.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-individual-income-tax.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-property-stamp-duty.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-residential-property-disposals.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-spain-tax-residence.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+      "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/gibraltar-continuation/country/skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md"
+    ],
+    "exit_code": 0,
+    "output": "checked 20 files, 51 oa-check blocks, 0 failures, 0 missing\n"
+  },
+  "inclusive_90_day_transition_endpoint": "2026-10-12"
+}

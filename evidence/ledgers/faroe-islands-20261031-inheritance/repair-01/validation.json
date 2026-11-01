@@ -1,0 +1,36 @@
+{
+  "content_candidate": "9f970df543e150289228b432920fc87b2fd806eb",
+  "base_main": "3de6616a827b5f4b3ea9707ede381a6735e5299a",
+  "shape": {
+    "guides": 11,
+    "checks": 110,
+    "result": "PASS"
+  },
+  "examples": {
+    "cases": 22,
+    "result": "PASS"
+  },
+  "changed_validator": {
+    "guides": 11,
+    "result": "PASS",
+    "warnings": 5
+  },
+  "strict_sync": {
+    "guides": 11,
+    "result": "PASS",
+    "errors": 0,
+    "warnings": 0
+  },
+  "initial_unit_tests": {
+    "cases": 152,
+    "result": "PASS on prior candidate e4aa6eca4 after prior main merge; not rerun for this bounded content/metadata repair"
+  },
+  "old_rule_rows_preserved": 64,
+  "new_rule_rows": 1,
+  "exact_quote_groups": 82,
+  "initial_review": "805268ba7 preserved unchanged before fixes",
+  "independent_closure": "pending",
+  "country_complete": false,
+  "pushed": false,
+  "publication_rights": "Not assessed by tax-source repair; no general free-republication claim."
+}

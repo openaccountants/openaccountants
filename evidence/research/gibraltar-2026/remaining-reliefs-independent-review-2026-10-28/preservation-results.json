@@ -1,0 +1,1571 @@
+{
+  "pin": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "base": "f7d59d7c4679192f0e5d3bbe286742fb78531c11",
+  "guide_sha256": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+  "before_snapshot_exact": true,
+  "inherited_rows_data_exact": 60,
+  "inherited_proof_units_data_exact": 87,
+  "manifest": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "git_blob": "8d337fd3d6b5e93ab3ca0fe2a74d33294f1e6a03",
+      "sha256": "5d9a58735cad05daf0953fb22cf2b647efd214febe78a77f0e39f1df3f08867a",
+      "current_sha256": "6eef31a3db736c9c2746aa94682765e787a11e0d633d0a776b8f4890096bcff8",
+      "current_git_blob": "2afc34133f3a71461ea0c01df6c5d74ac3d79115",
+      "expected_delta": true,
+      "unchanged": false
+    },
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "git_blob": "f712823fde6d4d66f1105b6ff0fb97524d5fdd04",
+      "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "current_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "current_git_blob": "f712823fde6d4d66f1105b6ff0fb97524d5fdd04",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "git_blob": "7462016e62ba8fc8e6a6d2b2f58663a13bce3fe7",
+      "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "current_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "current_git_blob": "7462016e62ba8fc8e6a6d2b2f58663a13bce3fe7",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "git_blob": "64a47ed6ed1a8b41834bb41f09a163cfbe47c135",
+      "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "current_sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "current_git_blob": "64a47ed6ed1a8b41834bb41f09a163cfbe47c135",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "git_blob": "59146440b506590fdd54beac0a69ae2615a79048",
+      "sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "current_sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "current_git_blob": "59146440b506590fdd54beac0a69ae2615a79048",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "git_blob": "272396f3e701a6713f6e412c879c771b35be5b22",
+      "sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61",
+      "current_sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61",
+      "current_git_blob": "272396f3e701a6713f6e412c879c771b35be5b22",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "git_blob": "211df1cdbe202d1e87a4903d32b92798bd8f114e",
+      "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "current_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "current_git_blob": "211df1cdbe202d1e87a4903d32b92798bd8f114e",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "git_blob": "6d0ea5c974d616f82dc79066327e2f871ae6dc26",
+      "sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "current_sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "current_git_blob": "6d0ea5c974d616f82dc79066327e2f871ae6dc26",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "git_blob": "075b7820e921d40235246b70252bafbc11b56643",
+      "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "current_sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "current_git_blob": "075b7820e921d40235246b70252bafbc11b56643",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "git_blob": "9e5368294a8ac9baf12a34950936d54fd2448645",
+      "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "current_sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "current_git_blob": "9e5368294a8ac9baf12a34950936d54fd2448645",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "git_blob": "22b6fe552586c81b9f01fa2187050185cb309024",
+      "sha256": "349eb8fb104f56eb6960cd99b3ad093828717bc9a9c6a5f31d0ab52a04658c07",
+      "current_sha256": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+      "current_git_blob": "88955ada7bf627a35eef0d7d05413586045820fd",
+      "expected_delta": true,
+      "unchanged": false
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "git_blob": "425267ca18d0f40df24e7255a22e364c6ca37697",
+      "sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+      "current_sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+      "current_git_blob": "425267ca18d0f40df24e7255a22e364c6ca37697",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "git_blob": "463778a12d2f931552504a835f252e65bef5399a",
+      "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "current_sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "current_git_blob": "463778a12d2f931552504a835f252e65bef5399a",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "git_blob": "6502b869531546f5edcbc88c83aa1708d6e5dccd",
+      "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "current_sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "current_git_blob": "6502b869531546f5edcbc88c83aa1708d6e5dccd",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "git_blob": "e8c94556c66af940aad8d7cce43eeb0533030a21",
+      "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "current_sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "current_git_blob": "e8c94556c66af940aad8d7cce43eeb0533030a21",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "git_blob": "b6cd12ef52422e0b07cf0446a437d4f0623cc020",
+      "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "current_sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "current_git_blob": "b6cd12ef52422e0b07cf0446a437d4f0623cc020",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "git_blob": "5ab9f178e7644c49e08f6501c4d8a3c7fced78f9",
+      "sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+      "current_sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+      "current_git_blob": "5ab9f178e7644c49e08f6501c4d8a3c7fced78f9",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "git_blob": "6af56a47c11a9b0e8fb7cbbb6887a6e867b49318",
+      "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "current_sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "current_git_blob": "6af56a47c11a9b0e8fb7cbbb6887a6e867b49318",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "git_blob": "e27130dd4f2ea2ee6cf8affa1909c2bb7a29247e",
+      "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "current_sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "current_git_blob": "e27130dd4f2ea2ee6cf8affa1909c2bb7a29247e",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledger.json",
+      "git_blob": "ccbbf2471bf5095054d278201a189d802a34ddf1",
+      "sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6",
+      "current_sha256": "ef7044cd14468251caa3e1b6de8463b1116c2bae055c775bdc41c54759e20fd6",
+      "current_git_blob": "ccbbf2471bf5095054d278201a189d802a34ddf1",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/ledgers/gi-transaction-tax-transition.md",
+      "git_blob": "9ad9b7f095e5a6cd95d765ef98ab2808f916a72d",
+      "sha256": "dfac180fe97851ad8f51423bf6ca8e337f162406724d1b5ef8ecc753cc778c56",
+      "current_sha256": "dfac180fe97851ad8f51423bf6ca8e337f162406724d1b5ef8ecc753cc778c56",
+      "current_git_blob": "9ad9b7f095e5a6cd95d765ef98ab2808f916a72d",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/preserved-consumption-controls.md",
+      "git_blob": "e8304d2d0e9711dd5a3644796b9413dee5da5cb9",
+      "sha256": "39d8bb04b3bae2012ea6fcf4b23a9309f288add4dc7c315cc34837182f9544ef",
+      "current_sha256": "39d8bb04b3bae2012ea6fcf4b23a9309f288add4dc7c315cc34837182f9544ef",
+      "current_git_blob": "e8304d2d0e9711dd5a3644796b9413dee5da5cb9",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/consumption-completion-2026-10-28/writer-complete-audit.json",
+      "git_blob": "f5062bab6c693b64b2066d41fef967d456a1d494",
+      "sha256": "5fbba29b8e9637c063b7ec056eb00c77ede6adbe7cdcec44410f780af91867c4",
+      "current_sha256": "5fbba29b8e9637c063b7ec056eb00c77ede6adbe7cdcec44410f780af91867c4",
+      "current_git_blob": "f5062bab6c693b64b2066d41fef967d456a1d494",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ct4-controls.md",
+      "git_blob": "80b5e08ee0db46eb06b2f400ca7527bae8c0bfb5",
+      "sha256": "e69ffd4b30bc3d9844a4b494cb5c0c927484b01f80171ddd579eb344873eb322",
+      "current_sha256": "e69ffd4b30bc3d9844a4b494cb5c0c927484b01f80171ddd579eb344873eb322",
+      "current_git_blob": "80b5e08ee0db46eb06b2f400ca7527bae8c0bfb5",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledger.json",
+      "git_blob": "f6fda591d10805713af5bf4618a16b80a6619d1f",
+      "sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f",
+      "current_sha256": "084ef6e6591a58d65f628fc6f08c25461036691db9567d77d2e98fb0a0e4de7f",
+      "current_git_blob": "f6fda591d10805713af5bf4618a16b80a6619d1f",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/ledgers/gi-corporate-tax.md",
+      "git_blob": "ab88f8bd6da49a8093e0eebf97586d27046b2d42",
+      "sha256": "30ae753b37704cc630f71afa0d9fbbd631b537c76f75ab893e8bb4d08fdd6a5a",
+      "current_sha256": "30ae753b37704cc630f71afa0d9fbbd631b537c76f75ab893e8bb4d08fdd6a5a",
+      "current_git_blob": "ab88f8bd6da49a8093e0eebf97586d27046b2d42",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/preserved-corporate-controls.md",
+      "git_blob": "face6f56c742a7b52da591b37dc957c59c7224c4",
+      "sha256": "c21c014f5f9d0b0fb19f0f83e2673d225b6d852f66bd48610b63170e2d819e32",
+      "current_sha256": "c21c014f5f9d0b0fb19f0f83e2673d225b6d852f66bd48610b63170e2d819e32",
+      "current_git_blob": "face6f56c742a7b52da591b37dc957c59c7224c4",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/rent-control.md",
+      "git_blob": "94d9ba03730d6bc04936ecaf4e8b095c5dbab68b",
+      "sha256": "b630e80f56593a6879475d8586691a4b4c91dd32bf863d77938f17a452132ad5",
+      "current_sha256": "b630e80f56593a6879475d8586691a4b4c91dd32bf863d77938f17a452132ad5",
+      "current_git_blob": "94d9ba03730d6bc04936ecaf4e8b095c5dbab68b",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/corporate-completion-2026-10-28/writer-complete-audit.json",
+      "git_blob": "9d49c37892bbd96e5ba2e5d1e87641eedee39cf9",
+      "sha256": "3dc0f6dbbb16191d535f75eb810b5c069b115cac7fa0c49762e6b30bfcb34a33",
+      "current_sha256": "3dc0f6dbbb16191d535f75eb810b5c069b115cac7fa0c49762e6b30bfcb34a33",
+      "current_git_blob": "9d49c37892bbd96e5ba2e5d1e87641eedee39cf9",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledger.json",
+      "git_blob": "259f3b3a8a17230ba6502a2ddaaf9182c6cd6a78",
+      "sha256": "924e4a833300795eee358e8609f2a7fe8ae017dbe2d05b99bbf63293b2b5c602",
+      "current_sha256": "924e4a833300795eee358e8609f2a7fe8ae017dbe2d05b99bbf63293b2b5c602",
+      "current_git_blob": "259f3b3a8a17230ba6502a2ddaaf9182c6cd6a78",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ledgers/gi-individual-income-tax.md",
+      "git_blob": "67322a0bc0accc46a8c59718dee108e2aaa69343",
+      "sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783",
+      "current_sha256": "b72cb8a4732f094a8d34ee80db6960d83f23c90c29c25210e476aabf93d28783",
+      "current_git_blob": "67322a0bc0accc46a8c59718dee108e2aaa69343",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/ordinary-deduction-controls.md",
+      "git_blob": "e0b36ef9adb0d908337d75168619a31232c09254",
+      "sha256": "589bf819acf9fe6907d970bd9e110be46bf562f62006f6f6dc324d5e69220826",
+      "current_sha256": "589bf819acf9fe6907d970bd9e110be46bf562f62006f6f6dc324d5e69220826",
+      "current_git_blob": "e0b36ef9adb0d908337d75168619a31232c09254",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/preserved-individual-controls.md",
+      "git_blob": "7dd2cf5ed6abdc3e5e35c2e771007e18f3746b5d",
+      "sha256": "4a9f56d96624a42d5929731a6e44a23ed5a64f8672130f62474c6eb015e30a59",
+      "current_sha256": "4a9f56d96624a42d5929731a6e44a23ed5a64f8672130f62474c6eb015e30a59",
+      "current_git_blob": "7dd2cf5ed6abdc3e5e35c2e771007e18f3746b5d",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/individual-completion-2026-10-28/writer-complete-audit.json",
+      "git_blob": "e90b7b7abf7623448437a9c422b6f1ca281aaa27",
+      "sha256": "1714c37f1177aec936a555d3120d323a50248d2f7ba35232438199f9a44f2922",
+      "current_sha256": "1714c37f1177aec936a555d3120d323a50248d2f7ba35232438199f9a44f2922",
+      "current_git_blob": "e90b7b7abf7623448437a9c422b6f1ca281aaa27",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/exit-controls.md",
+      "git_blob": "ce796a5531b8eed391214a60bf84fa0f1dcde8c7",
+      "sha256": "cca8bb97ff3acb8b7dce9f3dccf671df25a148fd48d78a8f75337e625fa564b8",
+      "current_sha256": "cca8bb97ff3acb8b7dce9f3dccf671df25a148fd48d78a8f75337e625fa564b8",
+      "current_git_blob": "ce796a5531b8eed391214a60bf84fa0f1dcde8c7",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/ordinary-completion-2026-10-28/interest-controls.md",
+      "git_blob": "cf5f1171cc8a28571263e3e416f9446fff0f3597",
+      "sha256": "022d29fe55f50130d2e52f4ded770236624f39fb796fbed886695944255e72cc",
+      "current_sha256": "022d29fe55f50130d2e52f4ded770236624f39fb796fbed886695944255e72cc",
+      "current_git_blob": "cf5f1171cc8a28571263e3e416f9446fff0f3597",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/benefit-controls.md",
+      "git_blob": "8dbea436b4a4004c7c70db918ab6a08dd0da3345",
+      "sha256": "2d56658ec40ea6d33ce0ecf18473aab433b07934bc21fe81de9a5bbb7049dc27",
+      "current_sha256": "2d56658ec40ea6d33ce0ecf18473aab433b07934bc21fe81de9a5bbb7049dc27",
+      "current_git_blob": "8dbea436b4a4004c7c70db918ab6a08dd0da3345",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledger.json",
+      "git_blob": "e64f9435590d237bca61a2134d47454110eb5007",
+      "sha256": "7a7ab6a9ccbba35d8a6cfbf5dcbe49eea98deaa7d5131f421ca3cc3ae92dd46f",
+      "current_sha256": "7a7ab6a9ccbba35d8a6cfbf5dcbe49eea98deaa7d5131f421ca3cc3ae92dd46f",
+      "current_git_blob": "e64f9435590d237bca61a2134d47454110eb5007",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/ledgers/gi-payroll-social-insurance.md",
+      "git_blob": "fc7128bec98aaeebcbf1872b67cfd81b1aad06d3",
+      "sha256": "523d19fad761fa4a779250f9b331a6509e4b03515a0847505c0be7cd95a0814e",
+      "current_sha256": "523d19fad761fa4a779250f9b331a6509e4b03515a0847505c0be7cd95a0814e",
+      "current_git_blob": "fc7128bec98aaeebcbf1872b67cfd81b1aad06d3",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/preserved-payroll-controls.md",
+      "git_blob": "64935171f0170a086d9c3c70fdf2c77138192896",
+      "sha256": "e68bc33609d13eca3633b45fd0c1aa1c076916317f5eab62a0a88cb61a7eaf9f",
+      "current_sha256": "e68bc33609d13eca3633b45fd0c1aa1c076916317f5eab62a0a88cb61a7eaf9f",
+      "current_git_blob": "64935171f0170a086d9c3c70fdf2c77138192896",
+      "expected_delta": false,
+      "unchanged": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/payroll-completion-2026-10-28/writer-complete-audit.json",
+      "git_blob": "7a39c0d9b6e55f485f01cc50d43a999ce7eb16fa",
+      "sha256": "25dd6f8d5488ba8e5515855cd6af82817be969abf910eb1aae54f62a7026090f",
+      "current_sha256": "25dd6f8d5488ba8e5515855cd6af82817be969abf910eb1aae54f62a7026090f",
+      "current_git_blob": "7a39c0d9b6e55f485f01cc50d43a999ce7eb16fa",
+      "expected_delta": false,
+      "unchanged": true
+    }
+  ],
+  "prior_review_evidence": [
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.md",
+      "sha256": "cd9d98dba443dcc4be45b2c8f831211d6b960720ac42789bc46006ea670e488e",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/review.json",
+      "sha256": "578a11d1d2a6e8ac8529ca8ea8e7a09f2b621119e33e08437fd75a151326b367",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/row-check-results.json",
+      "sha256": "19bba1b182b7e31eabe476499432951c48b2c44e95d3beb830d18ca63f339243",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/prose-arithmetic-results.json",
+      "sha256": "056ab1a97bc72c57392b1b9e01228c43b70a7413310e95d0553db226abab10a7",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/original-topic-spotchecks.json",
+      "sha256": "c603715486f88fb717052e97166c5229da708943646e3878a0679e22ba905b1a",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/preservation-and-shape.json",
+      "sha256": "073876a6a2748254ef05af004d5406b56288a233687aa322830db1d00465d999",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/example-check-summary.json",
+      "sha256": "1e2eddcd0f46975eed8061e662c15ea6b8a04e4d10b113dbbf0efed38517b300",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-examples.log",
+      "sha256": "b256c1b1fe0b812269e822f7a7f67fa5cfc09fa68fc317b6599af1fbd0ef2a26",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-schema-results.json",
+      "sha256": "83fc82e472cbdaf2ff9254491bd2d42ffe61fe66b27af5dd18d35cfd7f67db6f",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-metadata.log",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/independent-unit-tests.log",
+      "sha256": "838e0732b323b7b8eee58b03688d0c7d9aa6a39d59f3f55ee3052acdd6269090",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/repo-pr-validation.log",
+      "sha256": "65bc5d777fc8567d9e5f61ffdfb92d4c0f2c761da48ef1a74f4565dd2b6455aa",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-independent-cell-comparison.json",
+      "sha256": "c4c0335587f716460b448d83477c14e620adf2ce2416f6d5196ed124c0db9822",
+      "exact": true
+    },
+    {
+      "path": "skills/research/gibraltar-2026/final-country-review-2026-10-28/ct4-metadata-check.json",
+      "sha256": "43713adcd48977e04a1964cea5313880267095de2a71e82955f140f4c5ac707b",
+      "exact": true
+    }
+  ],
+  "old_topic_map_complete": true,
+  "mapped_paragraphs": 90,
+  "exact_paragraphs": 88,
+  "explicit_gap_reconciliations": 2,
+  "destinations": [
+    {
+      "id": "IND11-P001",
+      "old_section": "Title",
+      "destination": "Guide: Title",
+      "old_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf",
+      "current_sha256": "b534a33683825976e5671009f98188ef4c49da7a91ceb43894ff996c77eea3bf",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P002",
+      "old_section": "Who this applies to",
+      "destination": "Guide: Who this applies to",
+      "old_sha256": "fdabf1d896e2b76b13f31a7cbbfad401b52ef9fd219aad35470644daf7fb7453",
+      "current_sha256": "fdabf1d896e2b76b13f31a7cbbfad401b52ef9fd219aad35470644daf7fb7453",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P003",
+      "old_section": "Who this applies to",
+      "destination": "Guide: Who this applies to",
+      "old_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc",
+      "current_sha256": "7f05e2f0618a77dcde988157b1b7b2043039a30a70429f1e122f71db015750dc",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P004",
+      "old_section": "Who this applies to > Residence and filing intake",
+      "destination": "Guide: Who this applies to > Residence and filing intake",
+      "old_sha256": "561c1c2e7bf6f911138d2af078abc533cd8098a87a700cb1a53261ee10e39c82",
+      "current_sha256": "561c1c2e7bf6f911138d2af078abc533cd8098a87a700cb1a53261ee10e39c82",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P005",
+      "old_section": "Who this applies to > Residence and filing intake",
+      "destination": "Guide: Who this applies to > Residence and filing intake",
+      "old_sha256": "3de6848c29fce1066adb973f6c9e176f173ed1edcb873848571377b0aff7810b",
+      "current_sha256": "3de6848c29fce1066adb973f6c9e176f173ed1edcb873848571377b0aff7810b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P006",
+      "old_section": "Rates, bands and thresholds",
+      "destination": "Guide: Rates, bands and thresholds",
+      "old_sha256": "79d5150581549c2eb011d974966198dfec9c5e3ef5ae4f677233e5f32d02d449",
+      "current_sha256": "79d5150581549c2eb011d974966198dfec9c5e3ef5ae4f677233e5f32d02d449",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P007",
+      "old_section": "Rates, bands and thresholds",
+      "destination": "Guide: Rates, bands and thresholds",
+      "old_sha256": "dd0f4f311d6f696c4d30b200875e04c39f499ec87b0104092d0f33333e635cb1",
+      "current_sha256": "dd0f4f311d6f696c4d30b200875e04c39f499ec87b0104092d0f33333e635cb1",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P008",
+      "old_section": "Rates, bands and thresholds",
+      "destination": "Guide: Rates, bands and thresholds",
+      "old_sha256": "778c38bdeed04635d74bb3a4c890870159b700911e126cf8e577578a9cde8613",
+      "current_sha256": "778c38bdeed04635d74bb3a4c890870159b700911e126cf8e577578a9cde8613",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P009",
+      "old_section": "Rates, bands and thresholds",
+      "destination": "Guide: Rates, bands and thresholds",
+      "old_sha256": "986dd711483b937171fe49a2088c9f7f2cd3a8e574ba690f4c636783f3a23365",
+      "current_sha256": "986dd711483b937171fe49a2088c9f7f2cd3a8e574ba690f4c636783f3a23365",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P010",
+      "old_section": "The base",
+      "destination": "Guide: The base",
+      "old_sha256": "2ecb5e9ac83ea7529f0f54d184b15d7376ac2faeefd55388a6c2acc647a8a56a",
+      "current_sha256": "09efb4c469d1431b7f97cc490c836c3de5d12f632dfd26291ce0adbb2d511b6e",
+      "verified_destination": true,
+      "paragraph_exact": false,
+      "disposition": "Named property/energy gap narrowed to sourced conditions and explicit cross-scheme/certificate-reference limits; all other qualifications retained",
+      "changed_text": "First establish assessable income under the charging provisions. ABS taxable income is the balance after eligible deductions; GIBS is not authority to transfer ABS allowances into a gross-income calculation. The following core amounts are supplemented by the ordinary claim methods below. The separate property and energy deduction conditions are recorded below. The legal basis of the webpage’s social-insurance deduction entries, the remaining cross-scheme/claim interactions and the stated drafting questions still prevent a claim to a complete relief schedule:"
+    },
+    {
+      "id": "IND11-P011",
+      "old_section": "The base",
+      "destination": "Guide: The base",
+      "old_sha256": "9ba1de03180d4cde240e70d0cb8bf955e329f7b3f33e0b2c2d1e877cf0ddab05",
+      "current_sha256": "9ba1de03180d4cde240e70d0cb8bf955e329f7b3f33e0b2c2d1e877cf0ddab05",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P012",
+      "old_section": "The base",
+      "destination": "Guide: The base",
+      "old_sha256": "84a15299878b3af6804a9f3c678beee51a8f053cfd9c4d91d723dc77a462fa2a",
+      "current_sha256": "84a15299878b3af6804a9f3c678beee51a8f053cfd9c4d91d723dc77a462fa2a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P013",
+      "old_section": "The base",
+      "destination": "Guide: The base",
+      "old_sha256": "d5550e9dd66981db9fcf66cf333a09b17cc533ffdc1f9eb90eb5c2cc4844bf67",
+      "current_sha256": "d5550e9dd66981db9fcf66cf333a09b17cc533ffdc1f9eb90eb5c2cc4844bf67",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P014",
+      "old_section": "The base > Health-insurance deductions and family-policy restrictions",
+      "destination": "Guide: The base > Health-insurance deductions and family-policy restrictions",
+      "old_sha256": "ac2a505ef707b93472e2c20909609a9ea398a2419a2744f59fc3954b6a3318ab",
+      "current_sha256": "ac2a505ef707b93472e2c20909609a9ea398a2419a2744f59fc3954b6a3318ab",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P015",
+      "old_section": "The base > Health-insurance deductions and family-policy restrictions",
+      "destination": "Guide: The base > Health-insurance deductions and family-policy restrictions",
+      "old_sha256": "c866e9119e292b36235fefb2cfacd08add68e93b9fb28244a338f361dea36b3d",
+      "current_sha256": "c866e9119e292b36235fefb2cfacd08add68e93b9fb28244a338f361dea36b3d",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P016",
+      "old_section": "The base > Health-insurance deductions and family-policy restrictions",
+      "destination": "Guide: The base > Health-insurance deductions and family-policy restrictions",
+      "old_sha256": "b0b36ea6870b510da53d744c0134f23cdf1d99ab81149d9801d9751626e440c1",
+      "current_sha256": "b0b36ea6870b510da53d744c0134f23cdf1d99ab81149d9801d9751626e440c1",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P017",
+      "old_section": "The base > Health-insurance deductions and family-policy restrictions",
+      "destination": "Guide: The base > Health-insurance deductions and family-policy restrictions",
+      "old_sha256": "040ac7d563cf0bb414d424c102787cde6c608585262011d0d727e9ad3f9f2d56",
+      "current_sha256": "040ac7d563cf0bb414d424c102787cde6c608585262011d0d727e9ad3f9f2d56",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P018",
+      "old_section": "The base > Low-income exemption and taper relief",
+      "destination": "Guide: The base > Low-income exemption and taper relief",
+      "old_sha256": "1721a53db0942f251331f44953a053cc0efc55ab51ea269c9b127a7673552316",
+      "current_sha256": "1721a53db0942f251331f44953a053cc0efc55ab51ea269c9b127a7673552316",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P019",
+      "old_section": "The base > Low-income exemption and taper relief",
+      "destination": "Guide: The base > Low-income exemption and taper relief",
+      "old_sha256": "d2c9129d11a07b3640ca3df696276c3198d39b3da48057ca93d31e903572e09a",
+      "current_sha256": "d2c9129d11a07b3640ca3df696276c3198d39b3da48057ca93d31e903572e09a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P020",
+      "old_section": "The base > Low-income exemption and taper relief",
+      "destination": "Guide: The base > Low-income exemption and taper relief",
+      "old_sha256": "547e18bf7400915a1cfa19685e1af91a62fb80615b63c26a7c28c326422b470e",
+      "current_sha256": "547e18bf7400915a1cfa19685e1af91a62fb80615b63c26a7c28c326422b470e",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P021",
+      "old_section": "The base > Low-income exemption and taper relief",
+      "destination": "Guide: The base > Low-income exemption and taper relief",
+      "old_sha256": "4f6910e5a454ec9407c245c6e2c6d4af37b40c83ae26bc9de3fb428a3d273b69",
+      "current_sha256": "4f6910e5a454ec9407c245c6e2c6d4af37b40c83ae26bc9de3fb428a3d273b69",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P022",
+      "old_section": "The base > Low-income exemption and taper relief",
+      "destination": "Guide: The base > Low-income exemption and taper relief",
+      "old_sha256": "9715700dc08e4f1f91daeb6d3f1084aec422eb849512879fc5bcfc96fcde9435",
+      "current_sha256": "9715700dc08e4f1f91daeb6d3f1084aec422eb849512879fc5bcfc96fcde9435",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P023",
+      "old_section": "The base > Computation working paper",
+      "destination": "Guide: The base > Computation working paper",
+      "old_sha256": "3b2936177ea7f5aa673af50e1e31546e8e587bb8f7cf08e23c39bf527ed45ef6",
+      "current_sha256": "3b2936177ea7f5aa673af50e1e31546e8e587bb8f7cf08e23c39bf527ed45ef6",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P024",
+      "old_section": "The base > Computation working paper",
+      "destination": "Guide: The base > Computation working paper",
+      "old_sha256": "1490063ea750e64659df8999f1838501e41d341ac39d004cb004628d03cb687a",
+      "current_sha256": "1490063ea750e64659df8999f1838501e41d341ac39d004cb004628d03cb687a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P025",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "04fcedd059ea3dba2ca3492011f3d08a9bf3ac66e3a79b6aac2672643cade55c",
+      "current_sha256": "04fcedd059ea3dba2ca3492011f3d08a9bf3ac66e3a79b6aac2672643cade55c",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P026",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "ba36d42e6fa2e8d4fce422d515dfaa57f655ed81dd60cb9dd0ee888434b90dd8",
+      "current_sha256": "ba36d42e6fa2e8d4fce422d515dfaa57f655ed81dd60cb9dd0ee888434b90dd8",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P027",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "576d87d6897b3b14dad0b1ee2bd1fe1e1514bf5afce24e6388cc0da8e2ec8bff",
+      "current_sha256": "576d87d6897b3b14dad0b1ee2bd1fe1e1514bf5afce24e6388cc0da8e2ec8bff",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P028",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "266870b127de3ef5c267c6341f0ea1eebb03ec4e39b897ebf67c99de22fa8f4e",
+      "current_sha256": "266870b127de3ef5c267c6341f0ea1eebb03ec4e39b897ebf67c99de22fa8f4e",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P029",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "43cb715a7fb09a938bb3ea71ebef942151d039fe58137c7eb8dbb732327df21a",
+      "current_sha256": "43cb715a7fb09a938bb3ea71ebef942151d039fe58137c7eb8dbb732327df21a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P030",
+      "old_section": "The base > Family, disability and other ordinary ABS deductions",
+      "destination": "Guide: The base > Family, disability and other ordinary ABS deductions",
+      "old_sha256": "558be9caf592f9661145f4753d93265a889fa23e13db11eee22bd9a36749b408",
+      "current_sha256": "558be9caf592f9661145f4753d93265a889fa23e13db11eee22bd9a36749b408",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P031",
+      "old_section": "The base > Life assurance and pension contributions deducted from income",
+      "destination": "Guide: The base > Life assurance and pension contributions deducted from income",
+      "old_sha256": "c847e0a7f58b5747c217523c6a17149c57ab5d6500cd635b03f4a128c2e59e2b",
+      "current_sha256": "c847e0a7f58b5747c217523c6a17149c57ab5d6500cd635b03f4a128c2e59e2b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P032",
+      "old_section": "The base > Life assurance and pension contributions deducted from income",
+      "destination": "Guide: The base > Life assurance and pension contributions deducted from income",
+      "old_sha256": "35a1e6079d5404f2753f05c5847489cb1578bc3be5a3a7c54ce2cf2037193225",
+      "current_sha256": "35a1e6079d5404f2753f05c5847489cb1578bc3be5a3a7c54ce2cf2037193225",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P033",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "ffcdf0c285a24bb4b5c2d8a769067ab834e2235389097c39355d5244c565590f",
+      "current_sha256": "ffcdf0c285a24bb4b5c2d8a769067ab834e2235389097c39355d5244c565590f",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P034",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "c881cec0d68f19f36c4330d396c35a3dd4b245639afc3648dfe7b4f16cc47ce4",
+      "current_sha256": "c881cec0d68f19f36c4330d396c35a3dd4b245639afc3648dfe7b4f16cc47ce4",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P035",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "469938e6b5198bd7fb29b574e0dfeae80c267be6acb5a31267ade119cacd220b",
+      "current_sha256": "469938e6b5198bd7fb29b574e0dfeae80c267be6acb5a31267ade119cacd220b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P036",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "323c23aee9ed60223fe7afec09b66c2796cfd4ea28fa7e8e8eb05ca8988cf42c",
+      "current_sha256": "323c23aee9ed60223fe7afec09b66c2796cfd4ea28fa7e8e8eb05ca8988cf42c",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P037",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "707373121f07959b3e959e2e58943157bd31995f3d2802bf63e2403eb4479283",
+      "current_sha256": "707373121f07959b3e959e2e58943157bd31995f3d2802bf63e2403eb4479283",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P038",
+      "old_section": "The base > Mortgage interest and home-purchase deductions",
+      "destination": "Guide: The base > Mortgage interest and home-purchase deductions",
+      "old_sha256": "afb70eb00cf17dedfc80fff667edcc16597b5e64637f221b556ba916aa967c90",
+      "current_sha256": "afb70eb00cf17dedfc80fff667edcc16597b5e64637f221b556ba916aa967c90",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P039",
+      "old_section": "The base > Gym/personal-training and private-school tax credits",
+      "destination": "Guide: The base > Gym/personal-training and private-school tax credits",
+      "old_sha256": "fa028b2ca20c0d98df4df9a618e65900cb675bdf593036edbec974bfdad9831a",
+      "current_sha256": "fa028b2ca20c0d98df4df9a618e65900cb675bdf593036edbec974bfdad9831a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P040",
+      "old_section": "The base > Gym/personal-training and private-school tax credits",
+      "destination": "Guide: The base > Gym/personal-training and private-school tax credits",
+      "old_sha256": "ed72a91a302878f9712ba8dea2205f01666277658d9889911b0b7f9d2d3cbf6b",
+      "current_sha256": "ed72a91a302878f9712ba8dea2205f01666277658d9889911b0b7f9d2d3cbf6b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P041",
+      "old_section": "The base > Approved pensions and imported-pension exceptions",
+      "destination": "Guide: The base > Approved pensions and imported-pension exceptions",
+      "old_sha256": "708e6ff08bae2e8ff95b7b164d76b60240c76502a77cfd2ae4f053dbf1ceff43",
+      "current_sha256": "708e6ff08bae2e8ff95b7b164d76b60240c76502a77cfd2ae4f053dbf1ceff43",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P042",
+      "old_section": "The base > Approved pensions and imported-pension exceptions",
+      "destination": "Guide: The base > Approved pensions and imported-pension exceptions",
+      "old_sha256": "3142ac292aeb1a69c889d9b731bf835e0b94e6d09ea8754e4375a8f0ce0da96a",
+      "current_sha256": "3142ac292aeb1a69c889d9b731bf835e0b94e6d09ea8754e4375a8f0ce0da96a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P043",
+      "old_section": "The base > Approved pensions and imported-pension exceptions",
+      "destination": "Guide: The base > Approved pensions and imported-pension exceptions",
+      "old_sha256": "6047fed21570de7cca6e24ae397b499ab5cf040bd18d9fb34f75a6b32a9bcf0c",
+      "current_sha256": "6047fed21570de7cca6e24ae397b499ab5cf040bd18d9fb34f75a6b32a9bcf0c",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P044",
+      "old_section": "The base > Approved pensions and imported-pension exceptions",
+      "destination": "Guide: The base > Approved pensions and imported-pension exceptions",
+      "old_sha256": "d31c7121fecdee959a2dff7d4b84ba224d7d1d5003464e850b3ccfc4ff25813d",
+      "current_sha256": "d31c7121fecdee959a2dff7d4b84ba224d7d1d5003464e850b3ccfc4ff25813d",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P045",
+      "old_section": "The base > Approved pensions and imported-pension exceptions",
+      "destination": "Guide: The base > Approved pensions and imported-pension exceptions",
+      "old_sha256": "00a505edd76a7d500f1fe480db4dd092a397fd09397404e40c9b2635ff6fe5ea",
+      "current_sha256": "00a505edd76a7d500f1fe480db4dd092a397fd09397404e40c9b2635ff6fe5ea",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P046",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "3b7a0740477ad8c848f12357463b5c8f2fce38fdf4cacdd89066c6b9994f73f7",
+      "current_sha256": "3b7a0740477ad8c848f12357463b5c8f2fce38fdf4cacdd89066c6b9994f73f7",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P047",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "5a4df222a7c95ef5db49ca0bef13178b96032b85ff863732989e0570e6bd4349",
+      "current_sha256": "5a4df222a7c95ef5db49ca0bef13178b96032b85ff863732989e0570e6bd4349",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P048",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "b96dcaf85bbc39d0a9c2e3cf5d5bf66468d6809bed5654bd3c955c26e8afdf68",
+      "current_sha256": "b96dcaf85bbc39d0a9c2e3cf5d5bf66468d6809bed5654bd3c955c26e8afdf68",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P049",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "a45529344a395a1fa4309218de5c766eaa87fda229ae9bfda254986bddca320c",
+      "current_sha256": "a45529344a395a1fa4309218de5c766eaa87fda229ae9bfda254986bddca320c",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P050",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "4f92028a580cfdc5a852b2974292de6be8618c853fcdd77b7f11b67549a5a2b5",
+      "current_sha256": "4f92028a580cfdc5a852b2974292de6be8618c853fcdd77b7f11b67549a5a2b5",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P051",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "2cc69819c17c874f6cf906b3f5c242a8fe561d8c0ce7d6e9d45f4af052d52ad5",
+      "current_sha256": "2cc69819c17c874f6cf906b3f5c242a8fe561d8c0ce7d6e9d45f4af052d52ad5",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P052",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "5700bec867a6b0d56346de84616eee919a84a745e815c98dc4e8b19701096a00",
+      "current_sha256": "5700bec867a6b0d56346de84616eee919a84a745e815c98dc4e8b19701096a00",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P053",
+      "old_section": "The base > Section 14B: evidence for the UK scheme requirements",
+      "destination": "Guide: The base > Section 14B: evidence for the UK scheme requirements",
+      "old_sha256": "717f4ef56abdb4019cf069bf299d6d5eba293dd80946828c5f6fd97018936ba8",
+      "current_sha256": "717f4ef56abdb4019cf069bf299d6d5eba293dd80946828c5f6fd97018936ba8",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P054",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "68c2d4a31db1bfb52bf588eedca00240c8456ef5eb25bc78e81e99e74768d092",
+      "current_sha256": "68c2d4a31db1bfb52bf588eedca00240c8456ef5eb25bc78e81e99e74768d092",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P055",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "a460b0ba5be52b9663988fb6d08fc1d4b72c1cc65cc3b5a8c858e253486d746d",
+      "current_sha256": "a460b0ba5be52b9663988fb6d08fc1d4b72c1cc65cc3b5a8c858e253486d746d",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P056",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "3a7164d2aa36a08e22fbd8c2c5c666d940524ba5d7c03bddade233d6ef66bd92",
+      "current_sha256": "3a7164d2aa36a08e22fbd8c2c5c666d940524ba5d7c03bddade233d6ef66bd92",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P057",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "5a208cd4666034f9be515b24f29b258812b03377e257604db6703be456105e5a",
+      "current_sha256": "5a208cd4666034f9be515b24f29b258812b03377e257604db6703be456105e5a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P058",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "1bfefc994c2043abdf98638f2e14fc79eab97b0d01a82a67bc86dd1cbb5cb4da",
+      "current_sha256": "1bfefc994c2043abdf98638f2e14fc79eab97b0d01a82a67bc86dd1cbb5cb4da",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P059",
+      "old_section": "The base > Death during the tax year",
+      "destination": "Guide: The base > Death during the tax year",
+      "old_sha256": "6f98b2c79c946a1e73a652de5790c368b71d2f727658fa34335de6dc8f4c29fe",
+      "current_sha256": "6f98b2c79c946a1e73a652de5790c368b71d2f727658fa34335de6dc8f4c29fe",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P060",
+      "old_section": "Deadlines and filing",
+      "destination": "Guide: Deadlines and filing",
+      "old_sha256": "b3255147ff2a91bd214fe46c0fc8b1c7afa7c8f2a5bbd8b1d75e3ff08776a644",
+      "current_sha256": "b3255147ff2a91bd214fe46c0fc8b1c7afa7c8f2a5bbd8b1d75e3ff08776a644",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P061",
+      "old_section": "Deadlines and filing > Payments on account and the balance",
+      "destination": "Guide: Deadlines and filing > Payments on account and the balance",
+      "old_sha256": "e1e02df3bc3a7f4f4504d4ffd0947d84e4c842211af3befbcf40f2b3f39e6148",
+      "current_sha256": "e1e02df3bc3a7f4f4504d4ffd0947d84e4c842211af3befbcf40f2b3f39e6148",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P062",
+      "old_section": "Deadlines and filing > Payments on account and the balance",
+      "destination": "Guide: Deadlines and filing > Payments on account and the balance",
+      "old_sha256": "641843c5f87b8a92a11bd842551786a2068e3e5839ce6b1964e1be4c448bcaf9",
+      "current_sha256": "641843c5f87b8a92a11bd842551786a2068e3e5839ce6b1964e1be4c448bcaf9",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P063",
+      "old_section": "Deadlines and filing > Payments on account and the balance",
+      "destination": "Guide: Deadlines and filing > Payments on account and the balance",
+      "old_sha256": "1294411d88d8efd5249e6b05d257a8d1f67c56059ee0c0dc3d040e0b478c83d6",
+      "current_sha256": "1294411d88d8efd5249e6b05d257a8d1f67c56059ee0c0dc3d040e0b478c83d6",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P064",
+      "old_section": "Deadlines and filing > Payments on account and the balance",
+      "destination": "Guide: Deadlines and filing > Payments on account and the balance",
+      "old_sha256": "6542fc9e40bf220f8f8159353cc3b838617aa398faa8661de3344417951c63ac",
+      "current_sha256": "6542fc9e40bf220f8f8159353cc3b838617aa398faa8661de3344417951c63ac",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P065",
+      "old_section": "Deadlines and filing > Payments on account and the balance",
+      "destination": "Guide: Deadlines and filing > Payments on account and the balance",
+      "old_sha256": "e9bd59b45a4b21d9d814684bdec0c5ef5959faa95e83bcfc0768bb89a32565b7",
+      "current_sha256": "e9bd59b45a4b21d9d814684bdec0c5ef5959faa95e83bcfc0768bb89a32565b7",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P066",
+      "old_section": "Deadlines and filing > Published return, payment and departure routes",
+      "destination": "Guide: Deadlines and filing > Published return, payment and departure routes",
+      "old_sha256": "018c240b13319231125789545e8fed6aa420bbaca2e1ee74b83275f0ac40f357",
+      "current_sha256": "018c240b13319231125789545e8fed6aa420bbaca2e1ee74b83275f0ac40f357",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P067",
+      "old_section": "Deadlines and filing > Published return, payment and departure routes",
+      "destination": "Guide: Deadlines and filing > Published return, payment and departure routes",
+      "old_sha256": "3481272b63257d0cd0e50c01935aa5c6a25e17dbd622a00375a7a9c3263e6c14",
+      "current_sha256": "3481272b63257d0cd0e50c01935aa5c6a25e17dbd622a00375a7a9c3263e6c14",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P068",
+      "old_section": "Deadlines and filing > Published return, payment and departure routes",
+      "destination": "Guide: Deadlines and filing > Published return, payment and departure routes",
+      "old_sha256": "194fe483a86a6da6ca6365c088dea71484ca94e6699f789f40db93f48d48886d",
+      "current_sha256": "194fe483a86a6da6ca6365c088dea71484ca94e6699f789f40db93f48d48886d",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P069",
+      "old_section": "Penalties and interest",
+      "destination": "Guide: Penalties and interest",
+      "old_sha256": "a8b6ac076618e0bdbd86557a5da4ec891c3d21a89bcb6e6d73afef34cedfac82",
+      "current_sha256": "a8b6ac076618e0bdbd86557a5da4ec891c3d21a89bcb6e6d73afef34cedfac82",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P070",
+      "old_section": "Penalties and interest",
+      "destination": "Guide: Penalties and interest",
+      "old_sha256": "a10307ed53c47fa55c9eaf7aaffae559899867b99a39f0a0ab3386f10e9b6473",
+      "current_sha256": "a10307ed53c47fa55c9eaf7aaffae559899867b99a39f0a0ab3386f10e9b6473",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P071",
+      "old_section": "Penalties and interest",
+      "destination": "Guide: Penalties and interest",
+      "old_sha256": "0edf5e37fc0b3ebe4866d43d699302610356d2e8ac581a64fe2d1666c789de9c",
+      "current_sha256": "0edf5e37fc0b3ebe4866d43d699302610356d2e8ac581a64fe2d1666c789de9c",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P072",
+      "old_section": "Cross-border points",
+      "destination": "Guide: Cross-border points",
+      "old_sha256": "3dd99834f230924ac5d1c73465cb3db814b6331bb471f3408422ea1775f37b7b",
+      "current_sha256": "3dd99834f230924ac5d1c73465cb3db814b6331bb471f3408422ea1775f37b7b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P073",
+      "old_section": "Cross-border points",
+      "destination": "Guide: Cross-border points",
+      "old_sha256": "5295e1fc000207ba0bb7d9f961748c42d2fbcf942a14500c5ae9feb86cd634ab",
+      "current_sha256": "5295e1fc000207ba0bb7d9f961748c42d2fbcf942a14500c5ae9feb86cd634ab",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P074",
+      "old_section": "Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "destination": "Guide: Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "old_sha256": "e828ace18855ddb492f24d2ebe3f4eca3f5fbdccbf614da71f416bbda9fbb498",
+      "current_sha256": "e828ace18855ddb492f24d2ebe3f4eca3f5fbdccbf614da71f416bbda9fbb498",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P075",
+      "old_section": "Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "destination": "Guide: Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "old_sha256": "cbe4ecb9a5940fd16b1912df1684274779e6f4a4a0fadd9cc03a58f22ef11d4d",
+      "current_sha256": "cbe4ecb9a5940fd16b1912df1684274779e6f4a4a0fadd9cc03a58f22ef11d4d",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P076",
+      "old_section": "Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "destination": "Guide: Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "old_sha256": "9401885965d7162908e17dd198fb782dd40350698d28538e91b0934fe9a2aff7",
+      "current_sha256": "9401885965d7162908e17dd198fb782dd40350698d28538e91b0934fe9a2aff7",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P077",
+      "old_section": "Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "destination": "Guide: Cross-border points > Non-resident pensioner relief: worldwide-income limit",
+      "old_sha256": "0db2c713317ceb1646c280709f4837b41ac35b47adb5752bd0bee0831dca2c23",
+      "current_sha256": "0db2c713317ceb1646c280709f4837b41ac35b47adb5752bd0bee0831dca2c23",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P078",
+      "old_section": "Two worked examples that recompute",
+      "destination": "Guide: Two worked examples that recompute",
+      "old_sha256": "5a484f4e99ee4adfd9324485abca31f8020a9232402a3e666a83496faeb8dead",
+      "current_sha256": "5a484f4e99ee4adfd9324485abca31f8020a9232402a3e666a83496faeb8dead",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P079",
+      "old_section": "Two worked examples that recompute",
+      "destination": "Guide: Two worked examples that recompute",
+      "old_sha256": "c0629e453f4e1a10b70f010d4e8c8340387ee13a6638cb24fef4b1eb1aa25846",
+      "current_sha256": "c0629e453f4e1a10b70f010d4e8c8340387ee13a6638cb24fef4b1eb1aa25846",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P080",
+      "old_section": "Two worked examples that recompute",
+      "destination": "Guide: Two worked examples that recompute",
+      "old_sha256": "bf7e109fb97cebfffa31d077d45255b6979c2d7b5a054182a02eb0e67429076f",
+      "current_sha256": "bf7e109fb97cebfffa31d077d45255b6979c2d7b5a054182a02eb0e67429076f",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P081",
+      "old_section": "Two worked examples that recompute",
+      "destination": "Guide: Two worked examples that recompute",
+      "old_sha256": "8441af860b04e38f967dab7bbd52cf85a762f88ed6168913efe5234e4248b535",
+      "current_sha256": "8441af860b04e38f967dab7bbd52cf85a762f88ed6168913efe5234e4248b535",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P082",
+      "old_section": "Ask the client first",
+      "destination": "Guide: Ask the client first",
+      "old_sha256": "40117dc56e22f8c6bd6907dd93d62c2794a1d6a1717953535f6b98b56ac5d7f1",
+      "current_sha256": "40117dc56e22f8c6bd6907dd93d62c2794a1d6a1717953535f6b98b56ac5d7f1",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P083",
+      "old_section": "Sources",
+      "destination": "Guide: Sources",
+      "old_sha256": "9d13489ad9b13ab2b1ec4164a682b9adc1f116f9e77cf8e03aeaf72e8391eb29",
+      "current_sha256": "9d13489ad9b13ab2b1ec4164a682b9adc1f116f9e77cf8e03aeaf72e8391eb29",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P084",
+      "old_section": "Sources",
+      "destination": "Guide: Sources",
+      "old_sha256": "5ab3091fb058450a633d9bdf70aba8f9d18ccb52585bb0ad18469c7cb8b3aa59",
+      "current_sha256": "5ab3091fb058450a633d9bdf70aba8f9d18ccb52585bb0ad18469c7cb8b3aa59",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P085",
+      "old_section": "Sources",
+      "destination": "Guide: Sources",
+      "old_sha256": "c4fd8123b745c96a52fa9fbcce1579c99a9319800006c4d347439b0728d4e59b",
+      "current_sha256": "c4fd8123b745c96a52fa9fbcce1579c99a9319800006c4d347439b0728d4e59b",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P086",
+      "old_section": "Sources > Retained calculation controls",
+      "destination": "Guide: Sources > Retained calculation controls",
+      "old_sha256": "dfd2c1e614d02283126fc64fd65b1b5c41067559fdecbfa2b88eac0e702001b0",
+      "current_sha256": "dfd2c1e614d02283126fc64fd65b1b5c41067559fdecbfa2b88eac0e702001b0",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P087",
+      "old_section": "Sources > Retained calculation controls",
+      "destination": "Guide: Sources > Retained calculation controls",
+      "old_sha256": "6b5f0567f8620bbbf87acf510453d94d5fa1c16ceaeba777e66141fd4e7ac07f",
+      "current_sha256": "e575512915040f49be34a8524e7a8bf8117343c9a8523c9f287383f24c4b62b2",
+      "verified_destination": true,
+      "paragraph_exact": false,
+      "disposition": "Named property/energy gap narrowed to sourced conditions and explicit cross-scheme/certificate-reference limits; all other qualifications retained",
+      "changed_text": "Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed senior/dependant/special-home drafting questions; property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority; credit interactions and actual future-year authenticated fields/receipt. Current 2026 interim PDF filing instructions do not resolve those points."
+    },
+    {
+      "id": "IND11-P088",
+      "old_section": "Sources > Self-checks and output",
+      "destination": "Guide: Sources > Self-checks and output",
+      "old_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a",
+      "current_sha256": "4925212782021de34147d8488b6054bc53cc0ed7d3a00bd3d6878ae007c1899a",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P089",
+      "old_section": "Sources > Disclaimer",
+      "destination": "Guide: Sources > Disclaimer",
+      "old_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e",
+      "current_sha256": "6c3d0a9f6a5c96f7ec13367d125a454d4d0435d45431f3099b5371a18a794b1e",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    },
+    {
+      "id": "IND11-P090",
+      "old_section": "Sources > Disclaimer",
+      "destination": "Guide: Sources > Disclaimer",
+      "old_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0",
+      "current_sha256": "09a30302beb3ec0d5737091d3db798f1f21984ecc56db885ab41665e352712a0",
+      "verified_destination": true,
+      "paragraph_exact": true,
+      "disposition": "Full original paragraph byte-exact",
+      "changed_text": null
+    }
+  ],
+  "protected_metadata": [
+    {
+      "key": "name",
+      "old": "gi-individual-income-tax",
+      "new": "gi-individual-income-tax",
+      "exact": true
+    },
+    {
+      "key": "description",
+      "old": "Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes pre-death income obligations and specified allowance reductions under section 47. Includes specified approved/imported pension rules; Category 2, HEPSS, other pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.\n",
+      "new": "Prepare an ordinary individual income-tax comparison for the year 1 July 2026 to 30 June 2027. Includes pre-death income obligations and specified allowance reductions under section 47. Includes specified approved/imported pension rules; Category 2, HEPSS, other pension cases, frontier-worker treaty residence and special deductions require separate review. This source-cited draft supports preparation of reviewable working papers using the stated periods, evidence requirements and computation examples. Retain source evidence and effective dates; unresolved points and professional review remain explicit. Use the linked official materials when checking a case, and obtain a qualified local review before filing or making a payment. Read the explicit exclusions before applying its calculations to different facts.\n",
+      "exact": true
+    },
+    {
+      "key": "jurisdiction",
+      "old": "GI",
+      "new": "GI",
+      "exact": true
+    },
+    {
+      "key": "category",
+      "old": "international",
+      "new": "international",
+      "exact": true
+    },
+    {
+      "key": "tax_year",
+      "old": "2026",
+      "new": "2026",
+      "exact": true
+    },
+    {
+      "key": "tier",
+      "old": "2",
+      "new": "2",
+      "exact": true
+    },
+    {
+      "key": "verified_by",
+      "old": "pending",
+      "new": "pending",
+      "exact": true
+    },
+    {
+      "key": "authored_by",
+      "old": "Ryan Duguid",
+      "new": "Ryan Duguid",
+      "exact": true
+    },
+    {
+      "key": "review_status",
+      "old": "pending_review",
+      "new": "pending_review",
+      "exact": true
+    },
+    {
+      "key": "trust_label",
+      "old": "Accountant-authored",
+      "new": "Accountant-authored",
+      "exact": true
+    },
+    {
+      "key": "license",
+      "old": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "new": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "exact": true
+    },
+    {
+      "key": "drafted_by",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    },
+    {
+      "key": "approved_by",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    },
+    {
+      "key": "validation_status",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    },
+    {
+      "key": "validated",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    },
+    {
+      "key": "reviewed_by",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    },
+    {
+      "key": "reviewed_on",
+      "old": "None",
+      "new": "None",
+      "exact": true
+    }
+  ],
+  "old_sources_preserved": true,
+  "CTA_byte_exact": true,
+  "canonical_sections": [
+    "Who this applies to",
+    "Rates, bands and thresholds",
+    "The base",
+    "Deadlines and filing",
+    "Penalties and interest",
+    "Cross-border points",
+    "Two worked examples that recompute",
+    "Ask the client first",
+    "Sources"
+  ],
+  "main_oa_checks": 2,
+  "main_oa_checks_byte_exact": true,
+  "all_seven_partial_domains_retained": true,
+  "other_partial_reasons_exact": true,
+  "individual_partial_reason": "Part-year ABS/GIBS eligibility/reference, printed senior/dependant and special-home drafting questions, property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority, credit interactions and future-year authenticated fields remain unresolved",
+  "markdown_ledger_rows_proofs_and_map_match": true,
+  "lost_content_restored": 0
+}

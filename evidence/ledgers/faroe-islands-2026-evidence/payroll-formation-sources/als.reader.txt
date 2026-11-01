@@ -1,0 +1,529 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 113 frá 13. juni 1997 um arbeiðsloysistrygging og arbeiðsávísing, sum seinast broytt við løgtingslóg nr. 81 frá 2. mai 2025
+13. juni 1997Nr. 113
+Løgtingslóg um arbeiðsloysistrygging og arbeiðsávísing, sum seinast broytt við løgtingslóg nr. 81 frá 2. mai 2025
+(ALS-lógin) 1)
+Kapittul 1 Endamál og inntøkur
+Kapittul 2 Leiðsla og fyrisiting
+Kapittul 3 Gjald til arbeiðsloysisskipanina
+Kapittul 4 Sjálvstøðug vinnurekandi/Sjálvboðin trygging
+Kapittul 5 Útgjald
+Kapittul 6 Arbeiðsávísing og arbeiðsmarknaðarátøk
+Kapittul 7 Kærur
+Kapittul 8 Reglur annars
+Kapittul 1
+Endamál og inntøkur
+§ 1. Arbeiðsloysisskipanin hevur til endamáls at veita fíggjarligan stuðul til arbeiðsleys, at virka fyri bøttum møguleikum hjá arbeiðsleysum at fáa arbeiði og at umsita arbeiðsávísing fyri føroyska arbeiðsmarknaðin.
+Stk. 2. 2) 3) Avtala kann gerast millum avvarðandi landsstýrisfólk og stýrið fyri Arbeiðsloysisskipanina um, at Arbeiðsloysisskipanin kann taka á seg aðrar uppgávur, sum hava samband við arbeiðsmarknaðin.
+§ 2. 4) Inntøkur grunsins verða útvegaðar við gjøldum frá:
+1)   Teimum, sum taka ímóti, og teimum, sum rinda:
+a)    A-inntøku.
+b)    Lønarinntøku, sum ikki er A-inntøka, fyri arbeiði, útint í Føroyum.
+c)    Lønarinntøku, sum ikki er A-inntøka, fyri arbeiði, útint í Norðurlandi, og sum sbrt. ásetingum í millumtjóðasáttmála eru sosialt tryggjað í Føroyum.
+2)   Sjálvstøðugum vinnurekandi, sum hava teknað arbeiðsloysistrygging sbrt. § 12.
+3)   Persónum, sum hava teknað sjálvbodna arbeiðsloysistrygging sbrt. § 13.
+§ 2 a. 2) 4) Inntøkur og útreiðslur grunsins verða ikki tiknar við á løgtingsfíggjarlógina.
+Kapittul 2
+Leiðsla og fyrisiting
+§ 3. At sita fyri og hava ábyrgdina av arbeiðsloysisskipanini, verður stýri valt. Stýrið setur stjóra at hava dagligu leiðsluna um hendi.
+Stk. 2. 4) 3) Samsýningin til stýrislimirnar skal góðkennast av landsstýrisfólkinum.
+§ 4. 3) Stýrið hevur sjey limir, sum verða valdir av landsstýrisfólkinum. Tríggir limir skulu umboða løntakarafeløgini og verða valdir eftir uppskoti frá løntakarafeløgunum; ein umboðandi feløgini hjá tímaløntum, ein umboðandi feløgini hjá fiskimonnunum og útróðrarmonnunum og ein umboðandi feløgini hjá alment settum starvsfólkum. Tveir limir skulu umboða privatu arbeiðsgevararnar og verða valdir eftir uppskoti frá arbeiðsgevarafeløgunum, meðan ein limur skal umboða hitt almenna sum arbeiðsgevara. Sjeyndi limurin er forfólk.
+Stk. 2. Samstundis verða vald varafólk, sum taka sæti í stýrinum, tá stýrislimi berst frá.
+Stk. 3. Limirnir verða valdir fyri 4 ár í senn, tó so, at stýrislimur verður sitandi til nýggjur limur verður valdur.
+Stk. 4. 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um val av stýri.
+Stk. 5. Stýrið ásetir í starvsskipan greiniligar reglur fyri starvið.
+§ 5. 2) 3) Roknskaparárið er álmanakkaárið. Roknskaparførslan skal fylgja ásetingunum í ársroknskaparlógini við slíkum tillagingum, ið mettar vera neyðugar, løgtingslógini um bókhaldsskyldu og kunngerð um minstukrøv til bókhald og roknskap. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um roknskaparførsluna. Roknskapurin verður almannakunngjørdur.
+Stk. 2. 2) Roknskapurin verður grannskoðaður av løggildum grannskoðara, sum stýrið velur fyri eitt ár í senn.
+Stk. 3. 2) 3) Landsstýrisfólkið fær roknskapin frá Arbeiðsloysisskipanini.
+§ 6. 3) Arbeiðsloysisskipanin verður teknað av stýrisforfólki ella stjóra. Stýrið kann veita umboðsfulltrú.
+Kapittul 3
+Gjald til arbeiðsloysisskipanina
+§ 7. 4) Gjaldskyldug til Arbeiðsloysisskipanina eru:
+1)   allir persónar, sum móttaka inntøku sbrt. § 2, nr. 1, og sum hava fylt 16 ár, men ikki hava nátt fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a., og
+2)   øll, sum rinda inntøkur sbrt. § 2, nr. 1.
+Stk. 2. 5) 6) 4) 3) Hesi verða eftir umsókn sbrt. § 8 a undantikin frá gjaldskyldu:
+1)   Persónar, sum móttaka pensjón sbrt. løgtingslóg um almannapensjónir o.a., undantikið einkjur og einkjumenn, sum móttaka miðal fyritíðarpensjón, tí tey hava uppihaldsskyldu mótvegis børnum undir 18 ár.
+2)   Persónar, sum sbrt. løgtingslóg um arbeiðsfremjandi tiltøk eru í tillagaðum starvi.
+Stk. 3. 4) Persónar, sum sbrt. ásetingum í millumtjóðasáttmála eru sosialt tryggjaðir í øðrum landi, eru undantiknir frá gjaldskyldu.
+§ 8. 5) 2) 6) 4) 3) Gjaldið til Arbeiðsloysisskipanina, í hesi løgtingslóg nevnt ALS-gjaldið, verður roknað av øllum inntøkum, sum ásett í § 2, nr. 1, sum tey gjaldskyldugu móttaka ella rinda, tó undantikið:
+1)   Pensjónir sbrt. løgtingslóg um almannapensjónir o.a.
+2)   Lønarískoyti til arbeiði í tillagaðum starvi sbrt. løgtingslóg um arbeiðsfremjandi tiltøk.
+3)   Aðrar skattskyldugar almannaveitingar, undantikið:
+a)    Endurgjald fyri mista arbeiðsinntøku sbrt. § 25 í løgtingslóg um almannatrygd og tænastur.
+b)    Ansingarsamsýning fyri at ansa gomlum og óhjálpnum sbrt. § 12 í løgtingslóg um heimatænastu, eldrarøkt v.m.
+c)    Sjúkradagpengar sbrt. løgtingslóg um dagpening vegna sjúku v.m.
+4)   A-inntøka til avmarkaða skattskyldu undir FAS-skipanini og undir FAS-líknandi skipan, sum gevur rætt til afturbering av skatti til reiðaran, um viðkomandi løntakari ikki hevur fastan bústað í Føroyum ella í einum av hinum Norðurlondunum undantikið Grønlandi.
+5)   Tænastumannapensjónir og aðrar líknandi eftirlønir, uppihaldspeningur sbrt. anordning om ikrafttræden for Færøerne af lov om ægteskabs indgåelse og opløsning og barnapeningur sbrt. lov om børns retsstilling.
+Stk. 2. 2) 6) Tryggingartakarin kann í mesta lagi rinda ALS-gjald av kr. 650.000 samsvarandi ásetingunum í § 9.
+Stk. 3. 2) Persónar, sum hava tíðaravmarkað uppihalds- og arbeiðsloyvi, kunnu eftir umsókn verða undantiknir gjaldskylduni fyri upp til eitt ár í senn. Undantøkan frá gjaldskylduni tekur við tann dagin, Arbeiðsloysisskipanin hevur fingið skrivliga umsókn um undantøku.
+§ 8 a. 5) 3) Undantøka frá gjaldskyldu eftir § 7, stk. 2, og undantøka eftir § 8, stk. 1, nr. 5, verður veitt eftir umsókn til Arbeiðsloysisskipanina. Undantøkan frá gjaldskylduni tekur við tann dagin, Arbeiðsloysiskipanin hevur fingið skrivliga umsókn um undantøku.
+§ 9. 3) ALS-gjaldið hjá teimum gjaldskyldugu er 2,25% av tí í § 8 nevnda gjaldsgrundarlagi. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta eitt lægri gjald og nærri reglur um ALS-gjaldið.
+Stk. 2. 2) 4) 3) ALS-gjaldið fellur til gjaldingar, samstundis sum tey gjaldskyldugu móttaka ella rinda inntøku sbrt. § 2, nr. 1. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið seta aðra gjaldfreist fyri gjaldskyldug sbrt. § 7, stk. 1, nr. 2, og tey, sum taka ímóti inntøku sbrt. § 2, nr. 1, litra b og c. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta avgreiðslugjald fyri teir arbeiðsgevarar, sum ynskja at rinda ALS-gjald eftir rokning frá Arbeiðsloysisskipanini.
+Stk. 3. 2) Rinda tey gjaldskyldugu ikki rættstundis, skal renta rindast við 1% fyri hvønn byrjaðan mánað. ALS-gjøld, avgreiðslugjøld, renta og møguligur innkrevjingarkostnaður av hesum kunnu krevjast inn við panting
+Stk. 4. 2) 7) 3) (Strikað).
+§ 10. 1) Arbeiðsloysisskipanin rindar fyri ta umsiting, sum TAKS ger fyri skipanina.
+§ 11. 7) 3) (Strikað).
+Kapittul 4
+Sjálvstøðug vinnurekandi/Sjálvboðin trygging
+§ 12. Tey, sum hava inntøku frá persónligum arbeiði sum sjálvstøðugt vinnurekandi, kunnu sjálvboðin tekna arbeiðsloysistrygging fyri hesa inntøku.
+Stk. 2. 2) 3) Um tryggingartakari er í eftirstøðu og Arbeiðsloysisskipanin hevur sent honum áminning við boðum um at tryggingin fer úr gildi, um eftirstøðan ikki er goldin innan 14 dagar eftir at áminningin er send, og eftirstøðan framvegis ikki er goldin, fer tryggingin úr gildi.
+Stk. 3. 2) 3) Tryggingin skal hava verið í gildi samanhangandi í minsta lagi í seks mánaðir, áðrenn hin sjálvstøðugi vinnurekandi hevur rætt til útgjald.
+Stk. 4. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, hvør er sjálvstøðugur vinnurekandi, nær hin sjálvstøðugi vinnurekandi er arbeiðsleysur, heruppií nær tað sjálvstøðuga vinnuvirksemið hjá viðkomandi er hildið uppat, ALS-gjaldið hjá sjálvstøðugum vinnurekandi, avgreiðslugjøld og rentu fyri ov seint rindað inngjøld, hvørjar upplýsingar hin sjálvstøðugi vinnurekandi skal lata Arbeiðsloysisskipanini, nær tær skulu verða latnar, áseta freist fyri at lata hesar upplýsingar og um útgjaldið til sjálvstøðug vinnurekandi, sum eru vorðin arbeiðsleys o.tíl.
+Stk. 5. 2) 3) ALS-gjøld sbrt. stk. 4 kunnu krevjast inn við panting.
+§ 12 a. 8) (Strikað)
+Stk. 2. 9) (Strikað).
+Stk. 3. 9) (Strikað).
+Stk. 4. 9) (Strikað).
+Stk. 5. 9) (Strikað).
+§ 13. 2) 7) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, at persónar, sum annars ikki hava møguleika at koma undir Arbeiðsloysisskipanina, eftir egnum ynski tekna trygging og koma undir arbeiðsávísingina. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um inngjald, útgjald, nær hesir persónar eru arbeiðsleysir, tøkir o.tíl.
+Kapittul 5
+Útgjald
+§ 14. 2) 6) 4) 3) Rætt til arbeiðsloysisstuðul hevur persónur frá tí degi, tá viðkomandi:
+1)   er arbeiðsleysur og mótvegis Arbeiðsloysisskipanini prógvar, at so er, tó í fyrsta lagi frá tí degi Arbeiðsloysisskipanin hevur móttikið skrivliga umsókn,
+2)   er tøkur á arbeiðsmarknaðinum og arbeiðsførur at átaka sær eitthvørt fulltíðarstarv,
+3)   er sinnaður at luttaka í arbeiðsmarknaðarátøkum, sbrt. §§ 25-25 b,
+4)   hevur fylt 16 ár, men ikki nátt fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a.,
+5)   hevur bústað í Føroyum og
+6)   ikki er sjálvstøðugt vinnurekandi sbrt. § 12.
+Stk. 2. 7) 3) Arbeiðsleys kunnu tó fáa stuðul uttan at vera tøk í dagatal svarandi til teir dagar, persónur hevur rætt til frítíð eftir løgtingslógini um frítíð við løn. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um at halda frí við arbeiðsloysisstuðli, fráboðanarfreist o.a.
+Stk. 3. 7) 3) Arbeiðsleys kunnu í styttri tíðarskeiði, við loyvi frá Arbeiðsloysisskipanini, sleppa undan treytini at vera tøk á arbeiðsmarknaðinum og samstundis fáa arbeiðsloysisstuðul. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um longdina á tíðarskeiðinum umframt treytirnar annars.
+Stk. 4. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, nær ein persónur er arbeiðsleysur, er tøkur, nær hann er arbeiðsførur o.tíl.
+§ 14 a. 8) 9) (Strikað).
+Stk. 2. 9) (Strikað).
+Stk. 3. 9) (Strikað).
+Stk. 4. 9) (Strikað).
+Stk. 5. 9) (Strikað).
+Stk. 6. 9) (Strikað).
+Stk. 7. 9) (Strikað).
+§ 15. 5) 2) 6) 4) 3) Útrokningargrundarlagið er móttikna inntøkan sbrt. § 2, nr. 1 seinastu 12 mánaðirnar, áðrenn arbeiðsloysið er staðfest. Upp í útrokningargrundarlagið verður ikki roknað:
+1)   Pensjónir sbrt. løgtingslóg um almannapensjónir o.a.
+2)   Lønarískoyti til arbeiði í tillagaðum starvi sbrt. løgtingslóg um arbeiðsfremjandi tiltøk.
+3)   Aðrar skattskyldugar almannaveitingar, undantikið:
+a)    Endurgjald fyri mista arbeiðsinntøku sbrt. § 25 í løgtingslóg um almannatrygd og tænastur.
+b)    Ansingarsamsýning fyri at ansa gomlum og óhjálpnum sbrt. § 12 í løgtingslóg um heimatænastu, eldrarøkt v.m.
+c)    Sjúkradagpengar sbrt. løgtingslóg um dagpening vegna sjúku v.m.
+4)   A-inntøka til avmarkaða skattskyldu undir FAS-skipanini og undir FAS-líknandi skipan, sum gevur rætt til afturbering av skatti til reiðaran, um viðkomandi løntakari ikki hevur fastan bústað í Føroyum ella í einum av hinum Norðurlondunum undantikið Grønlandi.
+5)   Tænastumannapensjónir og aðrar líknandi eftirlønir, uppihaldspeningur sbrt. anordning om ikrafttræden for Færøerne af lov om ægteskabs indgåelse og opløsning og barnapeningur sbrt. lov om børns retstilling.
+Stk. 2. 2) Tann, sum fyrr hevur verið arbeiðsleysur og ikki hevur verið úr skipanini í 12 mánaðir, hevur tó tað seinast nýtta útrokningargrundarlagið, um hetta er hægri enn útrokningargrundarlagið, tá hesin aftur gerst arbeiðsleysur.
+Stk. 3. 2) Hjá persóni, sum fer úr arbeiði í skúla ella í læru, sum í mesta lagi er ásett at vara 12 mánaðir, verður útrokningargrundarlagið tann í stk. 1 lýsta inntøka seinastu 12 mánaðirnar, áðrenn viðkomandi fór í skúla ella í læru, um hetta er hægri enn roknaða útrokningargrundarlagið eftir stk. 1. Sama regla er galdandi hjá persóni, sum fer í vinnu uttanlands.
+Stk. 4. 2) Útrokningargrundarlagið sbrt. stk. 1 hjá arbeiðsleysum á fiskavirkjum sbrt. § 20 verður roknað fyrstu ferð fyrsta dag í tí vikuni, tá hin arbeiðsleysi fyrstu ferð fær útgjald úr fiskavirkisskipanini. Útrokningargrundarlagið verður harumframt roknað av nýggjum tann 1. januar á hvørjum ári. Nýggja útrokningargrundarlagið kann tó ongantíð verða lægri enn tað fyrsta útrokningargrundarlagið, sbr. Stk. 1.
+Stk. 6. 3) Útrokningargrundarlagið sbrt. stk. 1 hjá arbeiðsleysum, sum hava verið í starvi við lønarískoyti sbrt. § 25, stk. 3, nr. 2, verður roknað av nýggjum, tá viðkomandi kemur aftur í Arbeiðsloysisskipanina, eftir at starvstíðin er endað. Nýggja útrokningargrundarlagið kann tó ikki verða lægri, enn tað var, frammanundan viðkomandi fór í starv við lønarískoyti.
+§ 16. 5) 2) 10) 4) Arbeiðsloysisstuðul pr. dag er 80% av tí í § 15 nevnda útrokningargrundarlagi, býtt við 253. Útgoldið verður fyri allar dagar í árinum við undantaki av leygar-, sunnu-, og halgidøgum.
+Stk. 2. 2) 10) 1) 4) 3) Árligi arbeiðsloysisstuðulin er í mesta lagi 80% av árligu grundlønini fyri 40 tíma arbeiðsviku hjá fastløntum sambært lønarsáttmálanum fyri fastlønt millum Føroya Arbeiðarafelag og Føroya Arbeiðsgevarafelag umframt eftirlønargjaldið sbrt. § 17. Mesti árligi arbeiðsloysisstuðul verður rundaður upp til næstu heilu krónu. Nýggjur mesti árligi arbeiðsloysisstuðul fær virknað fyrsta útgjaldsskeið eftir, at nýggjur sáttmáli er skrivaður undir millum Føroya Arbeiðarafelag og Føroya Arbeiðsgevarafelag, og eftir eina møguliga lønarhækking í sáttmálaskeiðnum. Frádrignar hesi upphædd verða egnar tænastumannapensjónir umframt aðrar líknandi eftirlønir, sum verða skattaðar sum A-inntøka, tó ikki fyritíðarpensjónir. Dagligi arbeiðsloysisstuðulin er í mesta lagi hægsti árligi arbeiðsloysisstuðulin, býttur við 253. Arbeiðsloysisstuðulin um tíman er í mesta lagi hægsti dagligi arbeiðsloysisstuðul, býttur við 8.
+Stk. 3. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um útgjald, herundir útgjaldsdagar, útgjaldskeið, hvørjar upplýsingar hin arbeiðsleysi skal lata Arbeiðsloysisskipanini, hvør skal vátta hesar upplýsingar, nær og hvussu tær verða latnar og ásetan av freist fyri at lata hesar upplýsingar o.tíl.
+Stk. 4. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, í hvønn mun hin arbeiðsleysi kann hava aðra inntøku, samstundis sum hann fær arbeiðsloysisstuðul, og hvussu stuðulin skal skerjast í mun til hesa inntøku og nærri reglur í hesum sambandi.
+§ 16 a. 10) 6) 3) (Strikað).
+Stk. 2. 6) 3) (Strikað).
+Stk. 3. 6) 3) (Strikað).
+Stk. 4. 6) 3) (Strikað).
+§ 17. 2) 4) Arbeiðsleys, sum fáa arbeiðsloysisstuðul, rinda eftirlønargjald sbrt. eftirlønarlógini.
+§ 18. 2) 6) 3) Arbeiðsleysur, sum er burturvístur orsakað av tænastubroti, missir samstundis rættin til stuðul í fýra vikur at rokna frá tí degi, setanarliga tilknýtið hansara til arbeiðsgevaran er av. Sama er galdandi, um so er, at hin arbeiðsleysi uttan haldgóða grund hevur sagt seg úr starvi. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, nær talan er um haldgóða grund o.tíl.
+§ 19. 2) 11) 6) Arbeiðsleysur, sum uttan serliga orsøk noktar at luttaka í arbeiðsmarknaðarátaki, sbrt. §§ 25-25 b, ella at taka á seg arbeiði, ávíst av arbeiðsávísingini, missir rættin til arbeiðsloysisstuðul, sbr. tó 2. pkt. Fyrstu ferð tann arbeiðsleysi noktar, sum nevnt í 1. pkt., missir hann rættin til arbeiðsloysisstuðul í 4 vikur, aðru ferð í 8 vikur, triðju ferð í 12 vikur og fjórðu ferð í 6 mánaðir at rokna frá degnum eftir, at fráboðanin um luttøku í arbeiðsmarknaðarátaki avikavist arbeiðstilboðið má roknast við at vera móttikin av tí arbeiðsleysa.
+Stk. 2. 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur fyri, nær talan er um serliga orsøk o.tíl.
+§ 19 a. 11) Um arbeiðsleysur uttan serliga orsøk ikki møtir upp til skeiðstilboð, sum hann hevur fingið bjóðað frá Arbeiðsloysisskipanini og hevur tikið av, hevur viðkomandi skyldu at endurrinda arbeiðsloysisskipanini útreiðslurnar, sum Arbeiðsloysisskipanin hevur havt til skeiðið. Í tann mun tað ber til, er heimilað Arbeiðsloysisskipanini at mótrokna hesar útreiðslur í arbeiðsloysisstuðli til viðkomandi.
+Stk. 2. 6) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur fyri, nær talan er um serliga orsøk o.tíl.
+§ 20. 2) 3) Fyri arbeiðsleys á fiskavirkjum, verður arbeiðsloysisstuðul roknaður eina ferð um vikuna frá og við 9. arbeiðsloysistíma. Fyri arbeiðsleys, sum sambært avtalu ikki arbeiddi fulla tíð, verður arbeiðsloysisstuðul roknaður við einum lutfalsligum lægri tímatali. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, hvørji fiskavirki koma undir hesa reglu og undir hvørjum treytum, hvørjir persónar koma undir hesa reglu og undir hvørjum treytum, útgjald, herundir útgjaldsdagar, útgjaldskeið og um skipanina annars, herundir hvørjar upplýsingar skulu gevast Arbeiðsloysisskipanini, hvør skal vátta hesar upplýsingar, nær og hvussu tær verða latnar og ásetan av freist fyri at lata hesar upplýsingar o.tíl.
+§ 20 a. 2) 12) Fyri fiskimenn, sum eru við fiskiskipum, sum hava veiðiloyvi sambært løgtingslóg um sjófeingi, og sum verða løgd vegna umvælingar, verður arbeiðsloysisstuðul goldin eftir 15 dagar, frá tí at skipið varð lagt, hóast setanarliga tilknýtið millum fiskimannin og reiðaríið ikki er av. Goldið verður í mesta lagi fyri 90 útgjaldsdagar. Fyri hvørjar kr. 1.000,-, sum útrokningargrundarlagið hjá fiskimanninum fer upp um upphæddina, nevnda í § 16, stk. 2, minkar útgjaldið við 0,5 prosentstigum.
+Stk. 2. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, hvørjir fiskimenn koma undir hesa reglu, og undir hvørjum treytum, hvørjar umvælingar talan skal vera um, útgjald, herundir útgjaldsdagar, útgjaldskeið, og um skipanina annars, herundir hvørjar upplýsingar skulu gevast Arbeiðsloysisskipanini, hvør skal vátta hesar upplýsingar, nær og hvussu tær verða latnar, og ásetan av freist fyri at lata hesar upplýsingar o.tíl.
+§ 21. 2) 6) (Strikað).
+§ 22. 2) 6) 3) Rætturin til útgjald fellur burtur, tá arbeiðsleysur í undanfarna fýra ára skeiði hevur fingið arbeiðsloysisstuðul útgoldnan í 648 dagar, ella tá ið persónurin uttan steðg hevur verið í Arbeiðsloysisskipanini í fýra ár.
+Stk. 2. 2) Hóast viðkomandi ikki hevur fingið arbeiðsloysisstuðul útgoldnan í tí í §§ 18 og 19 nevnda tíðarskeiði, veður tað í §§ 18 og 19 nevnda tíðarskeiði talt við í tað í stk. 1 nevnda tíðarskeiði.
+§ 23. Tá rætturin er fallin burtur sambært § 22, hevur hin arbeiðsleysi ikki rætt at fáa útgjald úr skipanini fyrr enn eitt 24-mánaða skeið er farið, og verður tá at meta sum um hann kemur uppí skipanina fyrstu ferð.
+Kapittul 6
+Arbeiðsávísing og arbeiðsmarknaðarátøk 6)
+§ 24. 2) 4) 3) Arbeiðsloysisskipanin umsitur arbeiðsávísing fyri arbeiðsleys og onnur, sum ynskja at vera skrásett á arbeiðsávísingini. Rætturin til fáa útgoldið stuðul eftir §§ 14 og 25 a er treytaður av, at viðkomandi er skrásettur í arbeiðsávísingini. Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, í hvønn mun og undir hvørjum treytum onnur, sum ynskja tað, kunnu verða skrásett í arbeiðsávísingini.
+Stk. 2. Allar Føroyar eru at rokna sum ein arbeiðsmarknaður í sambandi við arbeiðsávísing.
+Stk. 3. Ikki er loyvt at seta fakmørk fyri arbeiðsávísing, burtursæð frá neyðugum førleika.
+Stk. 4. 7) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um virkið hjá arbeiðsávísingini, sum m.a. kunnu stovnseta lokalar arbeiðsávísingar.
+§ 25. 2) 6) Persóni, sum er arbeiðsleysur, kann verða álagt at luttaka í arbeiðsmarknaðarátøkum, sbr. stk. 3 og 4, og §§ 25 a og 25 b.
+Stk. 2. 6) Arbeiðsmarknaðarátøk skulu styrkja og menna hin einstaka og økja um møguleikarnar fyri at koma aftur í arbeiði.
+Stk. 3. 6) 3) Arbeiðsmarknaðarátøk eru m.a.:
+1)   samrøður,
+2)   starv við lønarískoyti, sbr. § 25 b,
+3)   ALS farloyvi, sbr. § 25 a,
+4)   ólønt starvsvenjing,
+5)   skeið og førleikagevandi tiltøk,
+6)   arbeiðsgevaravitjanir,
+7)   samfelagsgagnligar verkætlanir,
+8)   útbúgvingar styttri enn 3 mánaðir.
+Stk. 4. 6) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um arbeiðsmarknaðarátøk heruppií reglur um innihald, persónskara, skipan av átøkunum, nær og undir hvørjum treytum ein persónur skal luttaka í arbeiðsmarknaðarátøkunum o.a.
+§ 25 a. 6) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um útgjaldingar til fólk í farloyvi frá føstum ella støðugum starvi, herundir at útgjaldið kann vera lægri, enn ásett í §§ 15 og 16, hvørjar treytir skulu setast tí, ið fer í farloyvi, og tí arbeiðsleysa, m.a. hvussu tann, ið fer í farloyvi, skal skrásetast í arbeiðsávísingini, hvussu leingi hin arbeiðsleysi skal hava fingið stuðul, umframt nærri reglur um, nær talan er um fast ella støðugt starv, o.tíl.
+Stk. 2. Útgjald undir farloyvi kann verða givið fyri eitt ávíst tíðarskeið millum 3 og 12 mánaðir.
+Stk. 3. Útgjald undir farloyvi skal verða givið við teirri treyt, at annað fólk, sum fær arbeiðsloysisstuðul og er tøkt í arbeiðsávísingini, verður sett í staðin í sama tíðarskeiði og í høvuðsheitum undir somu treytum.
+Stk. 4. Ásetingarnar í stk. 1–3 verða ikki nýttar, um arbeiðsloysið er undir 6%.
+§ 25 b. 6) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um størv við lønarískoyti, endurrindan av stuðli til arbeiðsgevarar og møguligum øðrum útreiðslum, undir hvørjum umstøðum, persónar kunnu fara í starv við lønarískoyti, hvussu long slík størv kunnu vera o.tíl.
+Kapittul 7
+Kærur
+§ 26. 2) 4) 13) Avgerðir, sum Arbeiðsloysisskipanin hevur tikið viðvíkjandi arbeiðsloysi, kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at viðkomandi hevur fingið fráboðan um avgerðina. Avgerðir hjá Føroya Kærustovni kunnu ikki kærast til annan fyrisitingarligan myndugleika, men kunnu skjótast inn fyri Føroya Rætt innan 6 mánaðir eftir, at avgerðin er fráboðað viðkomandi.
+Stk. 2. 2) 13) (Strikað).
+Stk. 3. 13) (Strikað).
+Stk. 4. 13) (Strikað).
+Kapittul 8
+Reglur annars
+§ 27. 2) Til umsiting og eftirlit eftir hesi lóg kann Arbeiðsloysisskipanin útvega sær allar upplýsingar frá TAKS og øðrum myndugleikum.
+Stk. 3. 2) Fakfeløg og arbeiðsgevarar hava skyldu at geva Arbeiðsloysisskipanini tær upplýsingar, skipanin biður um í sambandi við umsiting og eftirlit.
+§ 27 a. 4) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um, at upplýsingar skulu skrásetast og sendast Arbeiðsloysisskipanini elektroniskt, og kann áseta nærri reglur um elektroniska samskiftið.
+§ 28. 2) Hevur arbeiðsleysur givið Arbeiðsloysisskipanini skeivar upplýsingar, ella tagt um umstøður, sum hava havt týdning fyri arbeiðsloysisstuðulin, ella annars móti betri vitandi móttikið stuðul uttan at hava rætt til tess, kunnu upphæddir, sum av órøttum eru útgoldnar, verða kravdar afturgoldnar frá tí arbeiðsleysa.
+Stk. 2. Hevur arbeiðsgevari medábyrgd av at skeivar upplýsingar eru givnar, ella at tagt er um umstøður, sum hava havt týdning fyri arbeiðsloysisstuðulin, liggur afturgjaldsskyldan eisini á honum.
+Stk. 3. 2) Afturgjalding av skuld eftir stk. 1 og stk. 2 kann fara fram við mótrokning í øðrum krøvum, viðkomandi hevur mótvegis Arbeiðsloysisskipanini.
+Stk. 4. 2) Upphæddir, sum verða kravdar inn eftir hesi grein, fella til gjaldingar ein mánað eftir, at krav er sett fram. Krøv sambært hesi grein, umframt møguligur innkrevjingarkostnaður av hesum, kunnu krevjast inn við panting.
+Stk. 5. 2) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um smámunamørk í sambandi við, at ALS eigur pening til góðar hjá viðskiftafólki, ella at viðskiftafólk eiga pening til góðar hjá ALS.
+§ 29. 4) Um ikki strangari revsing er ásett sambært lóggávu annars, verður hann revsaður við sekt ella fongsul upp til 4 mánaðir, sum sambært hesi lóg gevur skipanini skeivar ella misvísandi upplýsingar.
+Stk. 2. Er lógarbrotið framt av einum partafelag, lutafelag ella líknandi, kann áleggjast felagnum sektarábyrgd.
+§ 30. Stýrið kann eftir nærri ásettum reglum gera gjaldsavtalur, herundir avskriva krøv, tá útlit ikki eru at fáa allan peningin frá skuldaranum.
+§ 31. 5) 3) Landsstýrisfólkið kann eftir ummæli frá stýrinum gera sáttmála við onnur lond um arbeiðsloysistrygging.
+Stk. 2. 5) 3) Um stýrið tekur undir við ásetingunum, kann landsstýrisfólkið áseta nærri reglur um arbeiðsloysistrygging o.a. fyri teir persónar, sum eru fevndir av sáttmálum sambært hesi grein, heruppií fyri hesar persónar áseta reglur, sum víkja frá ásetingunum í kapitli 3-5 í hesi løgtingslóg.
+§ 32. Henda lóg kemur í gildi tann 1. juli 1997 og samstundis fer úr gildi løgtingslóg nr. 17 frá 10. mars 1992 um arbeiðsloysistrygging og arbeiðsávísing við seinni broytingum, tó fer § 2, stk. 2 14) , í hesi lóg ikki úr gildi fyrr enn 01.05.2002.
+1) Broytt við løgtingslóg nr. 129 frá 20. desember 2016.
+2) Broytt við løgtingslóg nr. 79 frá 25. mai 2009, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslógin kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. Hóast ásetingina í stk. 1 fáa broytingarnar í § 22, stk. 1 ikki gildi fyrr enn 1. januar 2010. Stk. 3. Fram til 1. januar 2010 verður § 22, stk. 1 orðað soleiðis: “§ 22. Rætturin til útgjald fellur burtur, tá arbeiðsleysur í undanfarna 3-áraskeiði hevur fingið arbeiðsloysisstuðul útgoldnan í 723 dagar.” Stk. 4. Tey, sum eru í Arbeiðsloysisskipanini og fáa arbeiðsloysisstuðul, tá lógin kemur í gildi, fáa útroknað nýtt útrokningargrundarlag sambært § 15, og verður nýggja útrokningargrundarlagið roknað av móttiknu A-inntøkuni seinastu 12 mánaðirnar, áðrenn lógin kom í gildi. Nýggja útrokningargrundarlagið kann tó ikki verða lægri enn útrokningargrundarlagið, áðrenn henda lógin kom í gildi.”
+3) Broytt við løgtingslóg nr. 42 frá 25. mars 2025.
+4) Broytt við løgtingslóg nr. 177 frá 17. desember 2020, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi 1. januar 2021. Stk. 2. Orðingin “umframt eftirlønargjaldið sbrt. § 17” í § 1, nr. 10 og § 1, nr. 11 hevur tó virknað frá 1. januar 2019. Stk. 3. Frá fyrsta útgjaldsskeiði eftir, at løgtingslógin er sett í gildi, verða øll útgjøld til arbeiðsleys og tey, sum verða arbeiðsleys eftirfylgjandi, roknað av nýggjum samsvarandi hesi løgtingslóg.”
+5) Broytt við løgtingslóg nr. 12 frá 9. februar 2001.
+6) Broytt við løgtingslóg nr. 71 frá 22. mai 2015, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslógin kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá fyrsta degnum í fyrsta útgjaldsskeiðnum, eftir at lógin er kunngjørd. Stk. 2. Undanfarna skeiðið, sum ásett í § 1, nr. 11, verður longt við einum útgjaldsskeiði fyri hvørt útgjaldsskeið í eitt ár.”
+7) Sambært løgtingslóg nr. 79 frá 25. mai 2009 § 1., nr. 33: “Allastaðni í lógini um arbeiðsloysistrygging og arbeiðsávísing, har tað er latin stýrinum heimild at áseta reglur í kunngerð, verður heimildin latin landsstýrismanninum, treytað av, at stýrið góðkennir ásetingarnar.”
+8) Broytt við løgtingslóg nr. 25 frá 18. mars 2020, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 12. mars 2020 og fer úr gildi 31. august 2020.”
+9) Broytt við løgtingslóg nr. 43 frá 7. apríl 2020, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 12. mars 2020 og fer úr gildi 31. august 2020. Stk. 2. Løgtingslógin er galdandi fyri útgjaldsskeið sbrt. § 12 a og § 14 a í løgtingslógini frá og við 20. apríl 2020. Stk. 3. Persónar, sum fáa útgoldið stuðul í uppsagnartíð, tá løgtingslógin kemur í gildi, varðveita rættin til stuðul til 30. juni 2020, hóast § 14 a, stk. 7, sum ásett í § 2, nr. 1 í hesi løgtingslóg.”
+10) Broytt við løgtingslóg nr 45 frá 8. mai 2012. “Stk. 2. Frá fyrsta útgjaldsskeiði eftir, at lógin er sett í gildi, verða øll, sum eru arbeiðsleys, og sum verða arbeiðsleys eftirfylgjandi, roknað av nýggjum samsvarandi hesi lóg.”
+11) Broytt við løgtingslóg nr. 46 frá 17. mai 2011.
+12) Broytt við løgtingslóg nr. 81 frá 2. mai 2025.
+13) Broytt við løgtingslóg nr. 32 frá 9. mars 2023, har § 8 ljóðar soleiðis: “Stk. 1. §§ 1 og 2 í hesi løgtingslóg koma í gildi dagin eftir, at hon er kunngjørd. Stk. 2. §§ 3 og 4 í hesi løgtingslóg koma í gildi 1. juli 2023. Stk. 3. §§ 5-7 í hesi løgtingslóg koma í gildi 1. januar 2024.”
+14) § 2, stk. 2 í løgtingslóg nr. 17 frá 10. mars 1992, sum seinast broytt við § 1, nr. 1 í løgtingslóg nr. 45 frá 09. mai 1997* er soljóðandi: “Landsstýrinum verður landskassans vegna heimilað at veðhalda fyri láni, sum verður lænt arbeiðsloysisskipanini til afturgjalding av láni til arbeiðsmarknaðareftirlønargrunnin sambært løgtingslóg um arbeiðsmarknaðareftirlønargrunn. Lánið verður uppá 73.247.009,- kr. Afturgjaldstíðin verður 5 ár, avdráttirnir skulu falla mánaðarliga, fyrstu ferð 1. mai 1997 og rentan verður 6% p.a. * § 2 í løgtingslóg nr. 45 frá 9. mai 1997 er soljóðandi: “Henda lóg kemur í gildi dagin eftir, at hon er kunngjørd, tó fær § 1, nr. 2 gildi frá 1. januar 1997. Samstundis fer danski teksturin í løgtingslóg nr. 17 frá 10. mars 1992 um arbeiðsloysistrygging og arbeiðsávísing við seinni broytingum úr gildi og løgtingslóg nr. 23 frá 04.03.1994 um veðhald fyri láni til Arbeiðsloysistryggingina og Arbeiðsávísingina.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Almanna- og bústaðamálaráðið
+Útgávudagur: 26-06-1997
+Tilvísingar
+Heimildir
+Broytingar
+Skjøl o.tíl.
+Skjøl
+Kunngerðablaðið
+Kunngerðarblað  1997 A - Hefti 12 A frá 26. juni 1997
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

@@ -1,0 +1,34 @@
+{
+  "examples": {
+    "exit_code": 0,
+    "tail": "checked 28 files, 61 oa-check blocks, 0 failures, 0 missing\n"
+  },
+  "metadata": {
+    "exit_code": 0,
+    "scope": "current repaired worktree",
+    "tail": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n"
+  },
+  "preservation": {
+    "exit_code": 0,
+    "tail": "preserved\": 47, \"historical_research_byte_exact\": 121, \"prior_accepted_research_byte_exact\": 32, \"corporate_cta_exact\": true, \"protected_metadata_exact\": true, \"prior_accepted_financing_foreign_methods_exact\": true, \"new_independent_acceptance\": false, \"published\": false, \"country_complete\": false}\n"
+  },
+  "schema": {
+    "guides": 18,
+    "errors": [],
+    "warnings": [
+      "1 guides missing `fresh figures (last_updated within a year, tax_year current)`",
+      "skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind"
+    ]
+  },
+  "reviewed_candidate": "42fe0cf1ceaa767ac1853921ba1e1ba8cdf4ae65",
+  "repair_findings_applied": 3,
+  "independent_closure": false,
+  "tests": "129 passed at pinned writer candidate; no code/arithmetic change in three repairs. Final remote CI still required.",
+  "published": false,
+  "coverage": {
+    "exit_code": 0,
+    "scope": "current repaired worktree",
+    "tail": "All seven domains remain partial"
+  },
+  "publication_status_updates": "README and corporate/individual provenance only; exact scope linked, no acceptance/attestation/completeness claimed"
+}

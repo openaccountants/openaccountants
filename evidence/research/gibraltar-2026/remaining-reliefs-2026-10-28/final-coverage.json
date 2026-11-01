@@ -1,0 +1,32 @@
+{
+  "code": "GI",
+  "name": "Gibraltar",
+  "region": "europe",
+  "owner": "michael",
+  "dir": "skills/international/gibraltar",
+  "skills": 18,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [],
+  "missing": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "not_applicable": {},
+  "partial": {
+    "IT-IND": "Part-year ABS/GIBS eligibility/reference, printed senior/dependant and special-home drafting questions, property/energy cross-scheme and claim interactions, the disabled-access certificate reference and social-insurance deduction authority, credit interactions and future-year authenticated fields remain unresolved",
+    "IT-CORP": "Schedule 10 allocation anomalies, section 16(6) extended-period boundaries and Schedule 3 paragraphs 9(6)/2(1)(o) drafting/publication limits remain unresolved",
+    "VAT": "Customs/payment and Union special-procedure methods now drafted; section 102 export-refund form/deadline, warehousing endpoints, relief extension and case-specific aid/commodity/transition issues remain unresolved",
+    "SC": "Published maximum-in-primary second-job application now drafted; general first-employer/concurrent-job allocation, ordinary missed employee-SI recovery and annual/quarterly self-employed schedule interaction remain unresolved",
+    "PR": "Conflicting official PAYE examples, ordinary missed employee-SI recovery, benefit-threshold wording and pension-definition reference remain unresolved",
+    "TP": "PartV group-wide floor allocation/currency/return implementation and paragraph18(6) cross-reference remain unresolved; ordinary record/notice duties rechecked; distinct local-file submission and specialised reporting scope not established",
+    "XB": "Domestic foreign-tax-relief claim/correction submission; exit payment/return implementation and asset-transfer-definition mismatch; remaining residence/treaty procedure limits remain unverified"
+  },
+  "has_readme": true,
+  "complete": false
+}

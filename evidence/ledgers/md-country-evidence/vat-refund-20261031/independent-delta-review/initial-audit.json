@@ -1,0 +1,1561 @@
+{
+  "source_rows": 184,
+  "source_groups": {
+    "HG93_points": 50,
+    "Code_fragments": 62,
+    "application_fields": 29,
+    "control_fields": 43
+  },
+  "row_checks": [
+    {
+      "id": "MD-VATR-001",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point1",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-002",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-003",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-004",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-005",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-006",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-007",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-008",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point8",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-009",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point11",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-010",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point111",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-011",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point12",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-012",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point13",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-013",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point14",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-014",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point15",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-015",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point16",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-016",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point18",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-017",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point19",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-018",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point191",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-019",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point22",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-020",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point24",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-021",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point25",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-022",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point26",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-023",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point27",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-024",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point28",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-025",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point29",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-026",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point30",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-027",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point31",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-028",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point32",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-029",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point341",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-030",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point351",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-031",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point36",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-032",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point37",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-033",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point38",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-034",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point381",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-035",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point391",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-036",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point41",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-037",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point421",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-038",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point422",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-039",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point423",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-040",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point44",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-041",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point451",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-042",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point461",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-043",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point471",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-044",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point473",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-045",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point474",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-046",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point475",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-047",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point48",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-048",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point49",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-049",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point50",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-050",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/regulation-current-body.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93/2013 Regulation point51",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-051",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-052",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-053",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-054",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-055",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-056",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-057",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph8",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-058",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph9",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-059",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph10",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-060",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph11",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-061",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph12",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-062",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph15",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-063",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph16",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-064",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article101, retained paragraph17",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-065",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-066",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-067",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-068",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-069",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-070",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1011, retained paragraph8",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-071",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1013, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-072",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1013, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-073",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1013, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-074",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1013, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-075",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1013, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-076",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1016, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-077",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1016, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-078",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1016, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-079",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1016, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-080",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1016, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-081",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-082",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-083",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-084",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-085",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-086",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-087",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph8",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-088",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph9",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-089",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph10",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-090",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph11",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-091",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph12",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-092",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph13",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-093",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1017, retained paragraph14",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-094",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-095",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-096",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-097",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-098",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-099",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article1018, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-100",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-101",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-102",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-103",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-104",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-105",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph8",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-106",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article176, retained paragraph9",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-107",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-108",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-109",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph4",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-110",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-111",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-112",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/code-current-selected.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "Fiscal Code1163/1997 article266, retained paragraph7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-113",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field1",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-114",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-115",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-116",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-117",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field6",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-118",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field7",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-119",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field9",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-120",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field10",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-121",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field11",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-122",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field12",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-123",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field13",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-124",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field14",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-125",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field15",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-126",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field16",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-127",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field18",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-128",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field19",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-129",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field21",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-130",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field23",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-131",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field24",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-132",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field25",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-133",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field27",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-134",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field28",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-135",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field29",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-136",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field32",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-137",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field33",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-138",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field59",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-139",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field62",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-140",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field64",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-141",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/application-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex1, paragraph/field66",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-142",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field1",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-143",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field2",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-144",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field3",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-145",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field5",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-146",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field10",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-147",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field12",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-148",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field13",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-149",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field14",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-150",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field15",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-151",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field16",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-152",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field17",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-153",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field18",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-154",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field19",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-155",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field20",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-156",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field21",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-157",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field22",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-158",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field23",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-159",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field24",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-160",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field25",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-161",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field27",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-162",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field28",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-163",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field30",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-164",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field31",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-165",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field33",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-166",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field34",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-167",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field36",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-168",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field37",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-169",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field39",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-170",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field40",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-171",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field42",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-172",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field43",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-173",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field45",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-174",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field46",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-175",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field48",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-176",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field49",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-177",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field51",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-178",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field52",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-179",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field54",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-180",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field55",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-181",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field57",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-182",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field59",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-183",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field60",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    },
+    {
+      "id": "MD-VATR-184",
+      "source_observation": "evidence/ledgers/md-country-evidence/vat-refund-20261031/control-paragraphs.json",
+      "quote_in_source": true,
+      "source_context_hash": true,
+      "article_or_field": "HG93 annex2¹, paragraph/field61",
+      "status": "PASS_SOURCE_BINDING; semantic scope/findings in review"
+    }
+  ],
+  "original_attachments": [
+    {
+      "role": "application",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo430-433ro/an_1_496_ro.docx",
+      "retained_binary": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.docx",
+      "sha256": "238a1ace8c1a1ff2b2af1a0ee78245915972263964dda3eafd1c341f5d98a34e",
+      "text": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-application-2026.txt",
+      "rendered_page_count": 1,
+      "read_scope": "Complete DOCX text/table and one rendered page read and visually inspected31October2026; no authenticated filing/approval claimed.",
+      "independent_original_OOXML_rows": 29
+    },
+    {
+      "role": "control",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20564-568%20ro/an_2_1_93_MD.docx",
+      "retained_binary": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.docx",
+      "sha256": "f6d872d885fbb8e804f304292d5b09844fce1e2cdbf7ce9e1dae6283cff8023b",
+      "text": "evidence/ledgers/md-country-evidence/vat-refund-20261031/vat-refund-control-2026.txt",
+      "rendered_page_count": 1,
+      "read_scope": "Complete DOCX text/table and one rendered page read and visually inspected31October2026; no authenticated filing/approval claimed.",
+      "independent_original_OOXML_rows": 43
+    }
+  ],
+  "ten_predecessor_checks": [
+    {
+      "guide": "skills/moldova/moldova-income-tax.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Classify the individual, residence, citizenship, income source, legal activity and actual regime before calculating Moldova's 2026 income tax. This source-cited draft covers ordinary annual individual liability, registered business/professional income, final withholding, capital gains and the separate retail, plant-purchasing and independent-service regimes. It replaces the old 2025 summary, not the need for the correct underlying documents. Bounded source review is recorded under Sources; accountant attestation is not provided. [Fiscal Code arts. 5, 13–15, 39–44, 69^1–69^26, 83][code]."
+    },
+    {
+      "guide": "skills/moldova/md-corporate-income-tax.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Compute ordinary resident-company profit tax and the separate eligible non-VAT SME income regime for 2026. Establish the taxpayer, elected regime and applicable period before calculating. Resident business entities include income from Moldova and abroad, less the deductions and exemptions they actually qualify for. Legal persons use accrual accounting. This is a source-cited draft, without accountant attestation or comprehensive country coverage. [Fiscal Code arts. 13–14, 44][code]."
+    },
+    {
+      "guide": "skills/moldova/moldova-payroll.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Compute Moldova's 2026 ordinary employment withholding, employer social contributions and employee medical premiums using the employee's actual status, gross components, accrual period, payment dates and exemption application. This is a source-cited draft. The bounded source-review record is linked under Sources; accountant attestation is not provided. [Fiscal Code arts. 15, 19, 88][code]; [Government Decision 697/2014, 2026 regulation][reg]."
+    },
+    {
+      "guide": "skills/moldova/moldova-tax-optimization.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Use this Guide to compare an ordinary Moldovan business, the eligible non-VAT small-business regime and an actual IT-park resident, and to evaluate company distributions and genuine independent work. Establish legal eligibility before comparing amounts. An SRL, an individual entrepreneur and the new registered independent service entrepreneur are different legal/tax populations; an invoice or a software-related description does not select a regime. This is a source-cited draft, with stated implementation gaps and a bounded source-review record linked under Sources. [Code arts. 13–15, 24(11^1), 54^1–54^4, 88, 368][code]; [Law 77/2016 arts. 2, 7–8][park]."
+    },
+    {
+      "guide": "skills/moldova/moldova-social-contributions.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Determine the actual payer category, insured person, remuneration, work period and payment date before calculating Moldova's 2026 social contributions or mandatory medical insurance. These are different systems with different bases and timing. This source-cited draft replaces the earlier mixed-year summary. It has a bounded source-review record linked under Sources and is not accountant-attested; the country remains partial. [Law 489/1999 arts. 17–23][social]; [Law 1593/2002][health]."
+    },
+    {
+      "guide": "skills/moldova/md-company-formation.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Use this Guide to prepare an ordinary Moldovan SRL incorporation, compare the individual-entrepreneur registration route and screen an SA proposal. It supplies the current registration and continuing-compliance framework as read on 30 October 2026. It does not certify the full securities-registration procedure, regulated-sector approvals, every foreign-document treaty exemption or historical incorporation rules throughout 2026. The bounded source-review record is linked under Sources. [Law 135/2007 arts. 2, 9, 11–16][srl]; [Law 220/2007 arts. 7–14, 28, 35][register]; [Law 1134/1997 arts. 2–4, 38][sa]."
+    },
+    {
+      "guide": "skills/moldova/md-cross-border.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "This Guide covers ordinary resident foreign income and nonresident Moldova-source income: residence, permanent establishments (PEs), gross withholding, property and capital gains, treaty evidence and refunds, foreign-tax credits, and individual arrival/departure. It is a source-cited draft. The country pack remains partial because of the identified implementation gaps. A named accountant has not attested to this expansion."
+    },
+    {
+      "guide": "skills/moldova/md-tax-overview.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "Use this overview to identify the taxpayer, period, tax base and connected Moldova Guide before calculating an ordinary 2026 liability. Headline rates are not a complete tax computation or proof of eligibility for a special regime. The pack remains a source-cited draft with stated gaps and a bounded source-review record linked under Sources. [Code arts. 12^1–15, 83, 96, 114–115][code]."
+    },
+    {
+      "guide": "skills/moldova/md-transfer-pricing.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "2026 draft, primary law read 30 October 2026; the current information annex and APA application model read 31 October 2026. The 24 October draft and its independent correction evidence are preserved; that review does not attest to this expanded country pack. This Guide provides the domestic TP computation/documentation method. Actual comparables, legal facts and any treaty relief must be evidenced before use."
+    },
+    {
+      "guide": "skills/moldova/moldova-vat.md",
+      "tax_methods_and_CTA_preserved": true,
+      "old_topic_sample": "2026 draft, law read 30–31 October 2026. Use alongside `vat-workflow-base` v0.1 or later for document handling. The Moldova law and current return instructions control the tax calculation. The bounded source-review record is linked under Sources; accountant attestation is not provided."
+    }
+  ],
+  "historical_evidence_byte_exact": 669,
+  "previous_README_byte_exact": true,
+  "lost_content_restored": 0,
+  "original_review_3913_rows_immutable": true
+}

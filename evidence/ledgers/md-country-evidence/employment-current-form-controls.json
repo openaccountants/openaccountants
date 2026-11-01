@@ -1,0 +1,204 @@
+{
+  "status": "PASS writer arithmetic/source identity only; named source/implementation limits and independent country review remain open",
+  "cases": [
+    {
+      "name": "Full-year eligible founder fixed contribution",
+      "inputs": {
+        "monthly": "1906.50",
+        "charged_months": 12
+      },
+      "actual": {
+        "monthly_total": "22878.00"
+      },
+      "expected": {
+        "monthly_total": "22878.00"
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Eligibility/no exemption and twelve full chargeable months expressly assumed; current budget fixes annual amount separately. Not entitlement or payment acceptance."
+    },
+    {
+      "name": "Changed employer status partitions founder reporting without duplicating months",
+      "inputs": {
+        "CAS_months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "IPC_months": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "founder_monthly_fixed": "1906.50"
+      },
+      "actual": {
+        "CAS_total": "11439.00",
+        "IPC_founder_total": "11439.00",
+        "combined_founder_total": "22878.00",
+        "reported_months": 12
+      },
+      "expected": {
+        "CAS_total": "11439.00",
+        "IPC_founder_total": "11439.00",
+        "combined_founder_total": "22878.00",
+        "reported_months": 12
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Hypothetical start-of-month status change, continuous fixed liability and no exemption assumed. Employee contributions are separate; this case proves no duplication, not mixed-month proration."
+    },
+    {
+      "name": "CAS serial denotes person while monetary total sums all month rows",
+      "inputs": {
+        "person_serials": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        "monthly_rows": 6,
+        "monthly_fixed": "1906.50"
+      },
+      "actual": {
+        "person_count": 2,
+        "column9_total": "11439.00"
+      },
+      "expected": {
+        "person_count": 2,
+        "column9_total": "11439.00"
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Two eligible founders and three full months each expressly assumed; row total is contributions, not six people or six gross salaries."
+    }
+  ],
+  "source_lookups": [
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-20261031",
+      "checked_exact_text": "începând cu ziua următoare",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-20261031",
+      "checked_exact_text": "două înscrieri",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-20261031",
+      "checked_exact_text": "numărului documentului din Sistemul Informațional",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-20261031",
+      "checked_exact_text": "suplimentar, agențiilor teritoriale",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "13 cifre sau cifra „0”",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "11 cifre sau cifra „0”",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "Coloanele 5, 6 și 7 se completează concomitent",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "5 zile și nu mai mare de 45 de zile",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "158",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX4-1-20261031",
+      "checked_exact_text": "02",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX7-20261031",
+      "checked_exact_text": "Codurile 06-10",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX8-20261031",
+      "checked_exact_text": "211",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX9-20261031",
+      "checked_exact_text": "Codul 173 nu se utilizează începând cu perioada fiscală 2026",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX6-20261031",
+      "checked_exact_text": "inclusiv fondatorii gospodăriilor țărănești",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX6-20261031",
+      "checked_exact_text": "se va repeta în cazul",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX6-20261031",
+      "checked_exact_text": "nu se vacompleta cu alte caractere",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ACTUAL-ANNEX6-20261031",
+      "checked_exact_text": "doar din perioadele (lunile) pentru care obligația a fost modificată",
+      "status": "PASS source wording identity; not independent legal review"
+    },
+    {
+      "source": "EMPLOYMENT-ORDER56-ENACTED-20261031",
+      "checked_exact_text": "30-04-2026",
+      "status": "PASS source wording identity; not independent legal review"
+    }
+  ],
+  "unresolved_source_checks": [
+    {
+      "subject": "CAS instruction6 opening status direction",
+      "status": "Source inconsistency retained; final with/without-employee form split used and corroborated by CNAS25"
+    },
+    {
+      "subject": "IRM158 and field groups",
+      "status": "Explicit automatic03/date6exception retained; authenticated behaviour not tested"
+    },
+    {
+      "subject": "Identifier and classification limits",
+      "status": "IRMzeroexception distinct fromCASblankmissing-IDNP rule; farm-specific category and currentCNASspecial-pensionoccupationlist not certified"
+    },
+    {
+      "subject": "Dates, captions and entitlements",
+      "status": "Paternaltechnical5–45bound separate from entitlement; exact boundary-day algorithm untested; historical captions not used for current rates"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX4-20261031.json": "491404070dbe821e01870f38fd50cf8550bb6222b78e3875273b920ec9cbff27",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX4-1-20261031.json": "d9e2e220ff519c24ebeb6dd4cc3894c0ef6ab097d6f65e3ebe46593d0088d146",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX7-20261031.json": "6e42ea29a398fbb448c6a26f53384174124260da84ecd43008a0577e53079c7d",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX8-20261031.json": "a14202e644801c46957ec072e7e198e73b4124459e9dcdc2c21d1e088320d886",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX9-20261031.json": "3b8ff5e5ea390caf8c2a46c5e6f29a2ca09001a6c7044e3f4d1420383d4fc3f5",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ACTUAL-ANNEX6-20261031.json": "baa5a919fbb98a2eeae9f4b757cc73a12eca328e3c2254cbd613578e69f507ee",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-EMPLOYMENT-ORDER56-ENACTED-20261031.json": "4515b9999f4a5375fec2a1c7cff5ef02b40053a6a5b7bb0419096e257f5c97fc"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68",
+    "skills/international/moldova/moldova-payroll.md": "c6537ba21906a12e99ac50293cb4dfdd0b64970a9e38db750d6f2412135d1df2"
+  }
+}

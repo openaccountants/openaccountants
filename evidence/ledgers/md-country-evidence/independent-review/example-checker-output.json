@@ -1,0 +1,62 @@
+[
+  {
+    "Guide": "md-company-formation.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "md-corporate-income-tax.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "md-cross-border.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "md-tax-overview.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "md-transfer-pricing.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "moldova-income-tax.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "moldova-payroll.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "moldova-social-contributions.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "moldova-tax-optimization.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "Guide": "moldova-vat.md",
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-31",
+  "accepted_research_candidate": "dc2dddd64a4686677f372e3ba40656ed10393cc2",
+  "publication_merge": "f3c170a97910286e258610d9625e0dce5183bc8d",
+  "public_parents": [
+    "a6f0f5b1f50b3edc7f3faef8199852188a60f35c",
+    "372dbcb47ff8865bd197e0682cd446e288361872"
+  ],
+  "research_candidate_not_ancestor": true,
+  "omitted_blob_ids_absent_from_new_history": true,
+  "private_omitted_sources_preserved": true,
+  "source_capture_omissions": 57,
+  "source_capture_omitted_bytes": 7572023,
+  "reviewed_guide_bytes_exact": 12,
+  "retained_evidence_bytes_exact": 429,
+  "old_public_evidence_moves": 310,
+  "checks": {
+    "changed_guides": "Pass:12 Guides;8 warning groups including estate read-scope advisory",
+    "strict_sync": "Pass:12 source Guides, zero errors/warnings/notices",
+    "core_shape": "120/120 pass",
+    "advisory_shape": "59/60 pass; estate k read_date_evidence warns on8 same-date source rows; standalone CLI exits1. Accepted Guide bytes retained; changed validator treats this as warning.",
+    "examples": "24/24 executable cases pass",
+    "current_unit_suite": "175 tests, pass,1 skipped after bounded public fixture materialisation",
+    "changed_modules": "8 rates-link tests and15 reviewer-lesson tests pass",
+    "initial_sparse_suite": "4 failures/13 errors due missing public fixture trees; output preserved, followed by passing current suite"
+  },
+  "review_status": "Existing whole-pack and delta independent reviews/closures preserved, including accepted47 payroll/formation rows,65 inheritance/estate rows and43 original property rows plus PT044 procedural receipt and accepted two-finding repair",
+  "scope": "Partial2026 country pack; all7 domain partials and other tax-job gaps retained. Issue393 remains open. No professional attestation.",
+  "pr": 776,
+  "auto_merge_preparation_check": "null at existing remote heada6f0f5b",
+  "merge_requested": false
+}

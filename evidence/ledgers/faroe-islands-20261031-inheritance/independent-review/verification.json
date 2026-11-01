@@ -1,0 +1,1073 @@
+{
+  "candidate": "aa3de1064ae435d69e650d19733c315d6146f35d",
+  "manifest_sha256": "20ec3540db04065f79fa4415250fc4e3674c85f091c502c629665da431919466",
+  "inputs": 46,
+  "mismatches": [],
+  "rows": [
+    {
+      "id": "IH-001",
+      "sources": [
+        {
+          "act_article": "Order 468/1921 §§4, 10",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "77ce4887b29c0ed413a160632b72d6905c7cf3eb6f3778a318547946d96c0875",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-002",
+      "sources": [
+        {
+          "act_article": "Order §5",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "8bda525a454fe33293e372a77507aebfb4d7aa22edc5503962bfc32094bf64f7",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "court, insurance section",
+          "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+          "source_file": "sources/court.reader.txt",
+          "quote_sha256": "c436ab4a6c9e89e7abc2929dda67e3dcaf90ae7c3550ad1eea4ad27898750488",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-003",
+      "sources": [
+        {
+          "act_article": "Order §14",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "9bb01c038757eec4e123697600f554709ab5d8bf33744da98e28cc139685192e",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-004",
+      "sources": [
+        {
+          "act_article": "Order §§2, 6–7",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "d1f680d48ab83c7fe0fc4667d2882eff91963ec9e825117b83bd57462409b0ae",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-005",
+      "sources": [
+        {
+          "act_article": "Order §§2–3, 21",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "d4dd8cea07d00896b305a6a75decefb32f846eb8d39403f489bf34dd15d9e671",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-006",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-007",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-008",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-009",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-010",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-011",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-012",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-013",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-014",
+      "sources": [
+        {
+          "act_article": "Order §2",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "927d366510663dbd9a3e639d27d07e64436ec22b75a579766497a2fa85818b28",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-015",
+      "sources": [
+        {
+          "act_article": "Order §§2–3, 6",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "7867288d485017ae040f3d32d23c752d6b0c5d88c9a4b099fe87804d87cf644d",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-016",
+      "sources": [
+        {
+          "act_article": "Order §3",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "987245bcb1c457e8eafa53586eab2c77d75a73abc8510c14287672645f0e5d63",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-017",
+      "sources": [
+        {
+          "act_article": "Order §21",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "098bd019ae77e02c94b3b7f77776c290e7914b3b411c934645c3d74410e857a4",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-018",
+      "sources": [
+        {
+          "act_article": "Order §16",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "6d7ce5cbb49f2b32a3236a6667c4ea5bc26750a8b559080a80d7eb55b3985eb2",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-019",
+      "sources": [
+        {
+          "act_article": "Order §17",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "caf7018e27b4db376752891279907648cc3b868415ef22f232496538827dc125",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "D03 pp 2–6",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-020",
+      "sources": [
+        {
+          "act_article": "Order §18",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "5c7fd9eefce1e605cfbf8472d3fc95934ef588151a5708759e6ed0337778fae5",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-021",
+      "sources": [
+        {
+          "act_article": "Order §21",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "098bd019ae77e02c94b3b7f77776c290e7914b3b411c934645c3d74410e857a4",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-022",
+      "sources": [
+        {
+          "act_article": "Order §§15, 19",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "4361d9d54f89727d6e256f9da40962d8685fb8c313a6c752fa0a0aabd2ed372a",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-023",
+      "sources": [
+        {
+          "act_article": "Order §§12–13, 20",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "f7bc71285d84a94b63a3933bd497a2f983bbc91a9ea26856e9fc85ce28cb6b2c",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-024",
+      "sources": [
+        {
+          "act_article": "Court, opening/private-administration sections",
+          "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+          "source_file": "sources/court.reader.txt",
+          "quote_sha256": "448f08cbc354db7e3ebbda2cc13792ebb22e358b4a47214ec32a772eb5e47423",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-025",
+      "sources": [
+        {
+          "act_article": "D03 §14 opening form",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        },
+        {
+          "act_article": "D03, all six pages",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-026",
+      "sources": [
+        {
+          "act_article": "four-page closing inventory",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/1ndp1gcb/b%C3%BAuppger%C3%B0-14-uppger%C3%B0.pdf",
+          "source_file": "sources/closing.reader.txt",
+          "quote_sha256": "b2d5f32821225fb4a6484beaa46239bb9efdf6396a8d654151301462aa7d227f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        },
+        {
+          "act_article": "D03 pp 1, 6",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        },
+        {
+          "act_article": "closing inventory, all four pages",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/1ndp1gcb/b%C3%BAuppger%C3%B0-14-uppger%C3%B0.pdf",
+          "source_file": "sources/closing.reader.txt",
+          "quote_sha256": "b2d5f32821225fb4a6484beaa46239bb9efdf6396a8d654151301462aa7d227f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-027",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(3)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "4fc9eaa22664a737296252beecca5a25eff3f0094a1c3bb844c7b13cd045bdc0",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "Order §§26–29",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "431ceff50d53a6e20f7e8f5ecafacb7db1e11d926e0faff15518003e57626e64",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "court, inventories",
+          "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+          "source_file": "sources/court.reader.txt",
+          "quote_sha256": "9166a70dbeefedd40aca8d14abaf094c8a7e9be84925ad791e7e00436fe886fc",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-028",
+      "sources": [
+        {
+          "act_article": "Order §§23–25, 31, 34",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "a0744f8a287bd4a502baa7ce31ae2c6f29ca8d83d09371983ce634703545fb29",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "court, approval/invoice",
+          "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+          "source_file": "sources/court.reader.txt",
+          "quote_sha256": "1ff1ee00dd17e51bd95defac670ed24c85fe553df13a6ebd899c927aad062f5a",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "IH-029",
+      "sources": [
+        {
+          "act_article": "Order §§32–34",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "6a4f7bb6c65f645ac3e63ea7b665a8b9a9498b21a3b278af09d35e64fddbff38",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-030",
+      "sources": [
+        {
+          "act_article": "Order §§11, 33",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "ea31f007fc2979e6ae0c5fb8bdeea9a4ab923a07c1d7fb174ccfff30259bebc8",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-031",
+      "sources": [
+        {
+          "act_article": "Order §§30, 37–38",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "2f00dfad03f11e2e8dd34c27697eccb61a3c13926733b66c5a3839edf14cc32f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-032",
+      "sources": [
+        {
+          "act_article": "Order §§33–40",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "1930f9d7ca41aa0c0aa0d1fc48f3e128477edb609bdf375365da3ec18d5eabad",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-033",
+      "sources": [
+        {
+          "act_article": "Order §§8–9",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "8a028fb9e3849c6c04ebfd8418db48f37b81398f2b3fa509919973d4c3b02060",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-034",
+      "sources": [
+        {
+          "act_article": "Order §34",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "db1bfbb016a2bddc5a7ba9b8fea24612d2cd339f3ddff9ac8b9c5675952a0ee8",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-035",
+      "sources": [
+        {
+          "act_article": "Order §§2–3, 16, 21",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "4a562bafa5dc8488b94ed814570e92898d4ef5ba6d9f36f91146c68343b3adaf",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "IH-036",
+      "sources": [
+        {
+          "act_article": "Order §§2, 5(a), 21, 33",
+          "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+          "source_file": "sources/duty.reader.txt",
+          "quote_sha256": "5451a5028d1aa9d0e5ca6d89ade17a2581067bfae9c62de34ec7e12f4108cc24",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-001",
+      "sources": [
+        {
+          "act_article": "Tax Act §§1–2, 11, 15–20",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "adddc7233aaddc2e55d4852fd6502de4ed527a40e4066f8418a182f98eb6d542",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-002",
+      "sources": [
+        {
+          "act_article": "Tax Act §§13, 14(8), 39",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "07a1e373e7f560728a9b13c318d34f6431462c7ac028cbd8ae4fbe8afd3dbf63",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-003",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(1)–(5), (9)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "60491a923382d1f27bae025fb821e168975d33914f395337338d1e5f1d030f86",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-004",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "a337efa6103f1b51238262107c3bf4431115e4dabc970e9546f67b6ea68f54c4",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-005",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "a337efa6103f1b51238262107c3bf4431115e4dabc970e9546f67b6ea68f54c4",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-006",
+      "sources": [
+        {
+          "act_article": "Tax Act §15(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "16dfe356c24342d77b77faf938845efbde35843fe6a437d621918b42474f1e57",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-007",
+      "sources": [
+        {
+          "act_article": "Assessment Act §6",
+          "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+          "source_file": "sources/rates.reader.txt",
+          "quote_sha256": "882128440524ddb78b7eddb097673e5461d5ce982018c9a163f3491a5a0f226c",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-008",
+      "sources": [
+        {
+          "act_article": "Assessment Act §6",
+          "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+          "source_file": "sources/rates.reader.txt",
+          "quote_sha256": "882128440524ddb78b7eddb097673e5461d5ce982018c9a163f3491a5a0f226c",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-009",
+      "sources": [
+        {
+          "act_article": "Tax Act §§14(2), 24(2), 40(1)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "439315219b1659483931d502e513291535b6f87a32d1b836680c744157e84ae5",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "TAKS G.2.1",
+          "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv",
+          "source_file": "sources/estate-guidance.reader.txt",
+          "quote_sha256": "5ca7edd9ba7496e0c805007e1b46e1951173392cb7b2dfd70931cf81256c6fa7",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-010",
+      "sources": [
+        {
+          "act_article": "Tax Act §§41(6), 46–47, 54",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "fec53b720e7000477a1c6a48e271dc239d87869c07cf0b6d9244ead3f66ab153",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "Assessment Act §6",
+          "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+          "source_file": "sources/rates.reader.txt",
+          "quote_sha256": "882128440524ddb78b7eddb097673e5461d5ce982018c9a163f3491a5a0f226c",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-011",
+      "sources": [
+        {
+          "act_article": "Tax Act §§14, 24(2), 40(1)–(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "6fa364ecb4b8bd6a1ac61841c995447bc492d5b794fba1f867e046e707401d38",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-012",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(6)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "5ee96e96f02d93b9cebb9452061c80b18193ff6262360ca48cb7eb8d0648368e",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "D03 pp 2–4",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "ET-013",
+      "sources": [
+        {
+          "act_article": "Tax Act §§15, 24(3), 40(3)–(7)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "6684ef4eb1a0728e8e277566b5ba128f90cd257498ccea473900c7bb8c095c03",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-014",
+      "sources": [
+        {
+          "act_article": "Tax Act §§15(2), 18(1)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "2239fad2637438693e3267a9c64ee94c80d77a40487d95fb9a01e5deb1c472c8",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-015",
+      "sources": [
+        {
+          "act_article": "Tax Act §§16–17",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "44b72ab5445b0b4ef6b452d59cae16c93a73de3f3ccdef142537faa2866ae109",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-016",
+      "sources": [
+        {
+          "act_article": "Tax Act §§18–19",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "088665ddc9a6b9993a6134ca458c40981bf47d5a4e2091a2c6b6beb574fe621f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-017",
+      "sources": [
+        {
+          "act_article": "Capital Income Act §§9–12, 14, 16",
+          "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+          "source_file": "sources/capital-correct.reader.txt",
+          "quote_sha256": "06b1b7cd0f45807bee21953cbeee60f063a76cd06aec52dd41b568ffa28db34d",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "Tax Act §40(6)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "08b92cbf671b62c3d67568e901ce2325071d7b835e00b86cf26b19b47f356862",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-018",
+      "sources": [
+        {
+          "act_article": "Tax Act §§14(3)–(5), 20(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "30b3047a86376ba8100178d2cec6271c978599d30e7e08b4d569e6263aa7616e",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-019",
+      "sources": [
+        {
+          "act_article": "D03, all six pages",
+          "url": "https://domstoldk.euwest01.umbraco.io/media/tfjl4r3d/d03-uppger%C3%B0-yvir-ogn-og-skuld-vi%C3%B0-dey%C3%B0a-sambaert-14-%C3%AD-skattal%C3%B3gini-241023.pdf",
+          "source_file": "sources/opening.reader.txt",
+          "quote_sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": null
+        },
+        {
+          "act_article": "Tax Act §14(3), (6)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "1cd9a7fd8d74a54e75369d4a789687c08d3856b685ea6d988827d53b6d4fb57f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; citation repair needed"
+    },
+    {
+      "id": "ET-020",
+      "sources": [
+        {
+          "act_article": "Tax Act §§100, 102–103",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "008aa5792ac08b6f1e342ce9721ae710a14226202412af7c6f459b8d4743fd17",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "TAKS estate-inclusive calendar",
+          "url": "https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum",
+          "source_file": "sources/estate-calendar.reader.txt",
+          "quote_sha256": "286c0ee0de78e69ba6f2e1cba2b3daa7eeea85fadd19673981ba553e1c254e3f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "TAKS current return instructions",
+          "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+          "source_file": "sources/estate-return.reader.txt",
+          "quote_sha256": "24dab2726fc31eb980fb136a737eaa5c8fe7dcddf4c45f136554bd3468aa9732",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-021",
+      "sources": [
+        {
+          "act_article": "TAKS current return instructions",
+          "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+          "source_file": "sources/estate-return.reader.txt",
+          "quote_sha256": "24dab2726fc31eb980fb136a737eaa5c8fe7dcddf4c45f136554bd3468aa9732",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "Tax Act §§14, 17, 40, 100",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "08521475759ccd1e0269da9c4e97f2074860b3009179cb859abd34cf76ace044",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-022",
+      "sources": [
+        {
+          "act_article": "Tax Act §§80(5), 81",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "6a35b7e736bb1a1284d7bfeea1a8124345d183045496fac6a9cec1bc43c7e821",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-023",
+      "sources": [
+        {
+          "act_article": "Tax Act §127(1)–(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "7ec055afe3624e8507db7e1c0c0ed2216250a71b10c8d0c192bc00b8ca7d6727",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-024",
+      "sources": [
+        {
+          "act_article": "Tax Act §§14(7), 104, 141–142",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "9d73fb28ef06ed8545a32f8a332a5f692dddcac6e75af235a6ac2072145acc0f",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-025",
+      "sources": [
+        {
+          "act_article": "Tax Act §§81, 135",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "4d75dda6fcc5044f3e957403b91d7571bde169a7665b8feff61ee77a52aafa9b",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-026",
+      "sources": [
+        {
+          "act_article": "Tax Act §§1–2",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "0aeec51a2aa140c08db31399d24f2a2148fe077c952802d07677b13d12a26178",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        },
+        {
+          "act_article": "Capital Income Act §12",
+          "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+          "source_file": "sources/capital-correct.reader.txt",
+          "quote_sha256": "2eadecbff46db7d4d2fda114b4e669df10c57ff4bd833a5f69b821d2925bc573",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-027",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(2)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "a337efa6103f1b51238262107c3bf4431115e4dabc970e9546f67b6ea68f54c4",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    },
+    {
+      "id": "ET-028",
+      "sources": [
+        {
+          "act_article": "Tax Act §14(1)–(5)",
+          "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+          "source_file": "sources/tax.reader.txt",
+          "quote_sha256": "3988816e1f0447c93dae2f3398457b4a845a038bb367bfecc92d0f9a847be1eb",
+          "all_quote_parts_in_reader": true,
+          "all_quote_parts_in_fresh_html": true
+        }
+      ],
+      "verdict": "supported; separate neighbouring-sanction finding for ET-020/024"
+    }
+  ],
+  "quote_groups": 81,
+  "mechanical_quote_failures": [],
+  "checks": [
+    {
+      "check": "shape",
+      "exit_code": 0,
+      "tail": [
+        "  (i) not_yet_confirmed    pass",
+        "  (j) reviewed_on          pass"
+      ]
+    },
+    {
+      "check": "examples",
+      "exit_code": 0,
+      "tail": [
+        "checked 11 files, 22 oa-check blocks, 0 failures, 0 missing"
+      ]
+    }
+  ],
+  "preservation": {
+    "anchor": "a36aa428d39aa4a5e185092ae4d953b256292f43",
+    "old_guides_checked": 9,
+    "historical_evidence_checked": 356,
+    "all_bytes_and_sha256_exact": true,
+    "lost_content_restored": 0
+  },
+  "verdict": "repair_required",
+  "findings": [
+    "FO-EST-001",
+    "FO-EST-002",
+    "FO-EST-003",
+    "FO-EST-004"
+  ]
+}

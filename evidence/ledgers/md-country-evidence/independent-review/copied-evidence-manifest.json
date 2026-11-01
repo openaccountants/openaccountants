@@ -1,0 +1,278 @@
+{
+  "source_review_agent": "/root/moldova_whole_pack_review",
+  "reviewed_tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "copied_utc": "2026-10-31T10:18:40.977619+00:00",
+  "excluded": "Immutable snapshot duplicates remain reconstructible from recorded Git commits; current evidence and all focused deltas retained. OWNERS reference already exists in repository.",
+  "files": [
+    {
+      "path": "ledgers/md-country-evidence/independent-review/final-gap-classification.json",
+      "sha256": "0e4ac3c630cada5a3bad7d92ee4d6bdd57c6afda229c4521a36439c0c39e54eb",
+      "bytes": 4337
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-question-and-rental-recheck.json",
+      "sha256": "16d16c8d150745d0a6be4932efa63c6c079623a0ddd2694da0daec367f9b7679",
+      "bytes": 775
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/gap-classification.json",
+      "sha256": "571eaabc7f001f1b6704afde37a43b8cb6757b630841c9145fca85194601a7eb",
+      "bytes": 8526
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/manual-six-example-recomputations.json",
+      "sha256": "8e31d90fff9fcf6f5b0991fd1c532b3bd44ff16507efdc62de7dceea2cc641d7",
+      "bytes": 6090
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/example-checker-output.json",
+      "sha256": "e997a8cc129a32f2e1926787383bd41b1b8a2d29d83cd4843fe2b38cd9a3d51c",
+      "bytes": 1630
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/standalone-case-dispositions.json",
+      "sha256": "7edaf7e41ec3ce436bb41c3161121f10ebf4672852584e983ff0b062b6ea7a20",
+      "bytes": 31355
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-e3c93d44-review.json",
+      "sha256": "5132e22a56c8d394a912ac0319455abb55fb260ea3cb44b9f580d37f21cbb9cc",
+      "bytes": 377
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/row-dispositions.json",
+      "sha256": "5f67112a3e2a594818f0bd93807f8a27c9c27d64046935bb3fea15e4eaa18dfc",
+      "bytes": 2428517
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/social-source-reuse-working.json",
+      "sha256": "60f943043e4e9205c01957cffacafd861f9d7c07f6d55975a22059f2261c5f46",
+      "bytes": 432130
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/standalone-remaining49-recomputations.json",
+      "sha256": "d8f586003cae4ffc609393b1822cd99547b9e6f0a471bdec9b9e5c3ba81f736b",
+      "bytes": 30442
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/topic-integrity.json",
+      "sha256": "8b48fb5b5d4d0a55998e79f1482bac509be34d492b27d0e168940f00565cfe88",
+      "bytes": 620246
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/FINAL-DECISION.json",
+      "sha256": "607bf44596a5317318dd1e6ad60f23a83dae2f6b6ddb4026d5f93dae54390997",
+      "bytes": 3723
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/supplemental-264-266-capture.json",
+      "sha256": "7a0fb832a0431f952ede1f890db92a574921e7a15d65844c145ccfc78e71f558",
+      "bytes": 5907
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/independent-loan-formula-visual.json",
+      "sha256": "3db843dd26b2e7d3d4bb560b7ab053ca59ed0316029ab2cb69238bfb039bd3a0",
+      "bytes": 653
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/payroll-source-reuse-working.json",
+      "sha256": "f96881609be276a5fbdbc33850dd17cbe97aa265f2bee46902b172a7fe0567bb",
+      "bytes": 567410
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/findings.json",
+      "sha256": "541abf944c269d5367104405b594e27adf8e1ab9925cac4d4c0a1ed852ce4a69",
+      "bytes": 13528
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/review-status.json",
+      "sha256": "592ce2e5c37774009688012ffbdb288d93dee656a68f64c486edd2cafbaa0af2",
+      "bytes": 1747
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/machine-provenance.json",
+      "sha256": "3a75e4939e75937b5163d1fd17be992ad71f34117136b052bd9851dc037a4127",
+      "bytes": 1334243
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md",
+      "sha256": "b36f700bd110f9140240fab0dea740414414e9dd7d548308c2229dd2ca1d732e",
+      "bytes": 3666
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/topic-spot-checks.json",
+      "sha256": "1e74273cd35cc6a7ea474e2df568c67939478e30227a5ff705abc25b6093b3e7",
+      "bytes": 3612
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/standalone-eight-itpark-recomputations.json",
+      "sha256": "6c64e2ecce08a6d63e91da68240f65cf744c1e39c70febe3cd5de71dee526245",
+      "bytes": 2104
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/CURRENT-STATUS.json",
+      "sha256": "e095a545d27d3e714aa321918dad5e72092b24f4126701e22f546260d70a228b",
+      "bytes": 1021
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/expanded-topic-semantic-spotchecks.json",
+      "sha256": "793b16e06ce0d1f6e4dbb43711643691201922094e46c8f3186ab72a7bb51ad0",
+      "bytes": 83129
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/REVIEW.md",
+      "sha256": "5e51180b545d8b99512c84aeb2ef9cec0792c21ba0b5d56d8f189b77f40e3155",
+      "bytes": 10359
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/final-current-topic-mechanical-preservation.json",
+      "sha256": "ac9d4736ab5ef0c318476684aaef80f07b1bab021df59dd428702302a96c43f0",
+      "bytes": 638601
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/all-retained-oa-check-output.json",
+      "sha256": "64124a476171ecc298466b7aedb7549d46a37da01ce53f3cbe6ed7a1546c1875",
+      "bytes": 3811
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/final-current-machine-provenance.json",
+      "sha256": "c5f64a36a24fa588f40bc0c1293bd177e3af6ce7363cc784e9b21316164309df",
+      "bytes": 633005
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/additional30-oa-block-manual-recomputations.json",
+      "sha256": "405d5e2b73f16489c8927be32e0f32bdd8a8a7415556f6baa78f9ffc187b49b9",
+      "bytes": 8322
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/incoming-eight-example-check-output.json",
+      "sha256": "b3406684211380fc78b3b3541d84f8195cc55cd4ffa123c109fa3a084599481f",
+      "bytes": 860
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-46abcea/selected-rows.json",
+      "sha256": "25ddf640e617857f29a452bc7832afee05b74106417222a8eaa8efc8df5d08db",
+      "bytes": 29455
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-46abcea/REVIEW.json",
+      "sha256": "c9808a0313cd66a4a20e98d1b3aadc5b90b5d7780014a1ea3ad1fabb70a9db3b",
+      "bytes": 1215
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-46abcea/reg697-loan-formula_543-20261031.png",
+      "sha256": "0ab7d96e78ae4bbef6198e701d2e4ddf5a1786924273cd097488d1cb53833731",
+      "bytes": 2602
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-4a39d66/moldova-income-tax.json",
+      "sha256": "5828b1a4b4f324cfeb3bd5884cf9f6cea4614055bbeeb28c72d1d137d40726ab",
+      "bytes": 9270
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-4a39d66/md-corporate-income-tax.json",
+      "sha256": "fb068dd80da7427a2a5a8f3aa741dab26c95b53fd4f2e7c407709ec0ec8a41bf",
+      "bytes": 32809
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-4a39d66/REVIEW.json",
+      "sha256": "4dc106d476d2aee8ecc6b3c4d5ea7bde0a6af33a570f2bac698b4d0a65cdf9cb",
+      "bytes": 1087
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-95f9a77/new-rows.json",
+      "sha256": "fcbe3c955110314a9830baf1132a50ead39d377856a94bfb047fc926afbba241",
+      "bytes": 3732
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-95f9a77/REVIEW.json",
+      "sha256": "a99ba3997bf560f61cd3355372ea4af199de67cfb158c9c1d81297e0fbe7b861",
+      "bytes": 765
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1026-moldova-social-contributions.md",
+      "sha256": "153ff193ad629372acc3c99a59517d92c412ac376df4354e0737c011f1ad8e75",
+      "bytes": 17640
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1024-moldova-income-tax.md",
+      "sha256": "eafee1d85c801b40075e53d40e18f55ca0ab8dd11888ab1efde806fb445fbfed",
+      "bytes": 24627
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1028-moldova-vat.md",
+      "sha256": "f169835bb1b471dd70839c9f2d7fb5d7e84c2a54d9ef0362ed74a12c7497c4ea",
+      "bytes": 20746
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1029-README.md",
+      "sha256": "6edc6fb1dbae544e7b7d89178a7f1c1099b50f288a801c3e463c9216dab20157",
+      "bytes": 2057
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/predecessor-example-checks/PR1027-moldova-payroll.md",
+      "sha256": "3d054561d634ddcfd12df62eb0d2d8cad54a0175504c5d281600f1d595281404",
+      "bytes": 18098
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/formation-subtitle-independent-review-correction.json",
+      "sha256": "179253ad0909365f3cb7f687d4caff961cbf993210b41c011efbdaa3549d5171",
+      "bytes": 51252
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/moldova-income-tax.writer.json",
+      "sha256": "d231fa6e6630c5baba108535b20c9f103a154277791a9079e09fd5b889123b22",
+      "bytes": 1442832
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/vat-it-independent-review-corrections.json",
+      "sha256": "48013bfaf41f05b522bfa8d932a2c30a86b52e548e4126f2e145824533b46338",
+      "bytes": 33236
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/delta-review.json",
+      "sha256": "b21c437ebe395733ba3400d128e65da7b17a84c15cd98803e552322f384b98e5",
+      "bytes": 2460
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/new-row-provenance.json",
+      "sha256": "b04b3918d2dfa13829e84ce6771780186c77bd1cc2fd2f2160168a21a8991575",
+      "bytes": 3251
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-264-20261031.json",
+      "sha256": "a5638fcbea16dcf6dd2aed02634e6216d9e236351466159cce7ee569c3e49f83",
+      "bytes": 4300
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-266-20261031.json",
+      "sha256": "3bb4dc343bbee8b0b8cc39b8a641c3054ba83b36b51112cd855b9623b353df83",
+      "bytes": 3448
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/moldova-vat.writer.json",
+      "sha256": "beb02bafeb7f031a237a1fcf43641af2f2563c21aeb301a0273ce3ea5c352b5c",
+      "bytes": 794602
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/fiscal-code-article-265-20261031.json",
+      "sha256": "6bfb61730962de9569acdea7f48df0780e3025fa6d03bf4a5787587bb8875cc7",
+      "bytes": 5785
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/REVIEW.md",
+      "sha256": "6035dbaf9970fbb335c423dae0cce0b29ff1a2135f359fbf536a5e4a158a04db",
+      "bytes": 680
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/md-company-formation.writer.json",
+      "sha256": "c0e6c19b5c369a9df067cc04c608271f2aa30b221d323f1bc017882ee376b818",
+      "bytes": 542314
+    },
+    {
+      "path": "ledgers/md-country-evidence/independent-review/delta-7a727ba/current-row-dispositions.json",
+      "sha256": "ba28f3aba16335ed401d97ceace8939035601b8ced79d93c5d2cd234237c275a",
+      "bytes": 2346080
+    }
+  ]
+}

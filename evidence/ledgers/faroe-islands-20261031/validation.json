@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-31",
+  "skill_checks": {
+    "guides": 9,
+    "checks_each": 10,
+    "failures": 0
+  },
+  "examples": {
+    "blocks": 18,
+    "failures": 0
+  },
+  "changed_only": {
+    "guides": 9,
+    "errors": 0,
+    "warnings": 3,
+    "warning_scope": "distinct jobs in same domain:TP/CbCR,payroll/contributionsversuslevy"
+  },
+  "sync_integrity": {
+    "sources": 9,
+    "errors": 0,
+    "warnings": 0,
+    "strict_metadata": true
+  },
+  "unit_tests": {
+    "count": 152,
+    "failures": 0
+  },
+  "preservation": {
+    "guide_nonblank_units": 1520,
+    "historical_files_byte_exact": 310,
+    "old_rules_removed": 0
+  },
+  "completion": "incomplete:seven precise core-domain partials and additional tax-job families remain; nopush before independent review"
+}
