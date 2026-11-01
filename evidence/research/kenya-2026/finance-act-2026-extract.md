@@ -1,6 +1,6 @@
 # Finance Act, 2026 (Kenya): extract kept from the retired skill ke-income-tax-2
 
-Public statute text as held in `skills/kenya/ke-income-tax-2.md`, unchanged below this note. Extract contributed by CPA Julian Njoroge Maina, 25241. Check against Kenya Gazette Supplement No. 157 (Acts No. 19) before quoting.
+Public statute text as held in `skills/kenya/ke-income-tax-2.md`, unchanged below this note. Extract contributed by CPA Julian Njoroge Maina, 25241. Checked 2026-11-01 against the KRA copy of Kenya Gazette Supplement No. 157 (Acts No. 19), https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf: all 55 sections present and every figure matches. Some entries are summaries, not the Gazette wording, so quote from the Gazette.
 
 
 # The Finance Act, 2026 — Kenya (Income Tax, VAT, Excise Duty, Tax Procedures)

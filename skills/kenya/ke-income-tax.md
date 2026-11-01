@@ -28,7 +28,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Filing portal | iTax (itax.kra.go.ke) |
 | Currency | KES only |
 | Return form | Self-assessment return |
-| Filing deadline | 30 June of the following year. Finance Act, 2026 s.18 moves individuals to the last day of the fourth month after the year of income, in force 1 January 2027: see "Finance Act, 2026" |
+| Filing deadline | 30 June of the following year. Finance Act, 2026 s.18 moves individuals to the last day of the fourth month after the year of income, in force 1 January 2027, so the 2026 return is due 30 April 2027: see "Finance Act, 2026" |
 | Instalment tax | Quarterly (20th of 4th, 6th, 9th, 12th months) |
 | Personal relief | KES 28,800/year (credit against tax) |
 | Insurance relief | 15% of qualifying premiums, cap KES 60,000/year |
@@ -407,25 +407,29 @@ Progressive brackets. Reliefs. Instalment tax offset. WHT credits.
 
 ## Finance Act, 2026
 
-Published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
+Act No. 19 of 2026, assented 23 June 2026, published in Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026. Read in the KRA copy of the Gazette. Commencement (s.1): ss.17, 18 and 24 on 1 January 2027; s.43 on 1 September 2026; all other sections on 1 July 2026. Income Tax Act amendments that reach individuals and small businesses:
 
 | Section | Change | In force |
 |---|---|---|
-| s.2 | "Management or professional fee" includes interchange and merchant service fees on card payments. "Royalty" is redefined to include software, proprietary or off-the-shelf, whether licence, development, training, maintenance or support fees | 1 July 2026 |
-| s.3 | Gratuity contribution added to s.5(4): contract of at least three years, amount not above 31% of emoluments for the contract period | 1 July 2026 |
-| s.4 | New s.6B: non-resident rental income tax, a final tax. Return and payment by the 20th of the month after the month rent is paid, unless a resident receiving the rent deducts under s.35(1)(c). See `non-resident-rental-income-tax-on-kenyan-property` | 1 July 2026 |
+| s.2 | "Management or professional fee" includes interchange and merchant service fees on card payments. "Royalty" is redefined to include software, proprietary or off-the-shelf, whether licence, development, training, maintenance or support fees, and proprietary digital payment card networks or platforms. New definition of "winnings": a pay-out from a lottery or prize competition by a person licensed under the Gambling Control Act, 2025 | 1 July 2026 |
+| s.3 | Contribution to a gratuity added to s.5(4) as new paragraph (ga): continuous contract of service of at least three years, or its renewal or extension beyond three years, amount paid not above 31% of emoluments earned for the contract period | 1 July 2026 |
+| s.4 | New s.6B: non-resident rental income tax, a final tax. Register through the simplified framework, then return and payment by the 20th of the month following the end of the month for which the rent is paid, unless a resident receiving the rent is subject to deduction under s.35(1)(c). The rate is in the Third Schedule, not in this section. See `non-resident-rental-income-tax-on-kenyan-property` | 1 July 2026 |
 | s.5 | Income Tax Act s.8(5A) deleted | 1 July 2026 |
 | s.7, s.16, s.21 | Scrap metal and winnings added to s.10 and s.35. Withholding: 1.5% of the gross amount on scrap metal, 20% on winnings | 1 July 2026 |
-| s.8 | Trust income is deemed income of the trustee, executor or administrator. A beneficiary is not liable on income on which that person paid tax | 1 July 2026 |
-| s.9 | s.12(1)(a) replaced: covers a person with no income chargeable for the year other than emoluments | 1 July 2026 |
+| s.8 | Trust income is deemed income of the trustee, executor or administrator. Qualifying dividend or interest in that income bears no further tax. Where the trustee, executor or administrator has paid tax, the beneficiary is not liable on that income | 1 July 2026 |
+| s.9 | s.12(1)(a) replaced: no instalment tax for a person who, to the best of their judgement and belief, will have no income chargeable for the year other than emoluments (exemption wording per KPMG; the Act gives only the new paragraph) | 1 July 2026 |
 | s.10 | Bad debts of money lenders, banks and licensed financial institutions include principal, interest and related amounts. Deficit carry-forward proviso for investors of at least KES 10 billion before 1 July 2025 | 1 July 2026 |
-| s.15 | Income Tax Act s.23 repealed | 1 July 2026 |
-| s.17 | s.52(1): notice to furnish a return now runs to the last day of the fourth month after the year of income | 1 January 2027 |
+| s.15, s.42 | Income Tax Act s.23 (tax avoidance adjustment) repealed. New Tax Procedures Act s.18A on tax avoidance schemes | 1 July 2026 |
+| s.17 | s.52(1): a return required by the Commissioner's notice is now due by the last day of the fourth month after the year of income, in place of a reasonable time of at least 30 days | 1 January 2027 |
 | s.18 | s.52B(1): individuals file with self-assessment by the last day of the fourth month after the year of income; others by the last day of the sixth month after the accounting period | 1 January 2027 |
-| s.19 | First Schedule: benefits arising due to death added to paragraph 53 proviso; capital gains on transfer of property to a registered real estate investment trust exempt (paragraph 76) | 1 July 2026 |
-| s.20 | Second Schedule: 100% first-year allowance on item (iv) where investment is over KES 10 billion; item (a)(viii) 10% is per year in equal instalments | 1 July 2026 |
+| s.19 | First Schedule: benefits arising due to death added to paragraph 53 proviso; capital gains on transfer of property to a real estate investment trust registered by the Commissioner under s.20(1) exempt (paragraph 76) | 1 July 2026 |
+| s.20 | Second Schedule: 100% in the first year of use on item (iv) where investment is over KES 10 billion; item (a)(viii) 10% is per year in equal instalments | 1 July 2026 |
+| s.23 | Eighth Schedule: gains of a non-resident on shares that derive value from Kenya, or where the sale changes the group membership of a Kenyan resident company or ownership of property in Kenya | 1 July 2026 |
+| s.47 | Tax Procedures Act s.75: the Commissioner may issue a pre-populated return by the end of January. The person confirms or amends it within two months of issue, and may rely on it to file | 1 July 2026 |
 
-If a client's year of income ends on 31 December, the s.18 date is 30 April. The Act does not say in s.1 which year of income is the first one caught; check KRA guidance before quoting 30 April for the 2026 return.
+If a client's year of income ends on 31 December, the s.18 date is 30 April. New s.52B(1)(a) applies to "any year of income", s.1 starts it on 1 January 2027, and the Act has no transitional rule, so the 2026 return is due 30 April 2027. KRA says the new timelines begin on 1 January 2027 and that individuals file by 30 April.
+
+Not verified: KRA does not name the 2026 year of income in terms, so the 30 April 2027 date is our reading of the Act. The current wording of s.5(4), s.8(5A), s.12 and the Third Schedule was not read, so the rate for s.6B and the full effect of the s.5 and s.12 changes are not stated here. KPMG reports 30% on rent for immovable property and 15% for other property; check the Third Schedule before quoting. KRA guidance on the two-month pre-populated window against the 30 April date is still to come.
 
 The rest of the Act (other Income Tax amendments, VAT, excise, Tax Procedures, fees and levies, housing levy, stamp duty, road maintenance) is held in `evidence/research/kenya-2026/finance-act-2026-extract.md`.
 
@@ -440,8 +444,10 @@ The rest of the Act (other Income Tax amendments, VAT, excise, Tax Procedures, f
 5. Income Tax Act, s15(2)(ae) (section text not re-read in this update; read date unverified)
 6. KRA PAYE page, read 2026-10-31 -- https://www.kra.go.ke/individual/filing-paying/types-of-taxes/paye
 7. KRA public notice on insurance relief and SHIF, 8 November 2024, read 2026-10-31 -- https://www.kra.go.ke/news-center/public-notices/2152-applicability-of-insurance-relief-to-contributions-made-to-the-social-health-insurance-fund-shif
-8. Finance Act, 2026, Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026, text as held in evidence/research/kenya-2026/finance-act-2026-extract.md, read 2026-11-01
-9. EY Global Tax Alert 2026-1445, read 2026-11-01 (secondary, confirms assent and the 1 January 2027 filing date) -- https://taxnews.ey.com/news/2026-1445-kenya-enacts-finance-act-2026
+8. Finance Act, 2026, Kenya Gazette Supplement No. 157 (Acts No. 19), 26 June 2026, KRA copy, read 2026-11-01 -- https://www.kra.go.ke/images/publications/Finance-Act-2026.pdf. Extract in evidence/research/kenya-2026/finance-act-2026-extract.md
+9. KRA, Finance Act 2026: what it means for you, read 2026-11-01 -- https://www.kra.go.ke/finance-act-2026-what-it-means-for-you
+10. KPMG, Kenya Finance Act, 2026 Analysis, 1 July 2026, read 2026-11-01 (secondary) -- https://assets.kpmg.com/content/dam/kpmgsites/ke/pdf/thought_leaderships/tax/2026/Finance-Act-2026_KPMG-Analysis.pdf
+11. EY Global Tax Alert 2026-1445, read 2026-11-01 (secondary) -- https://taxnews.ey.com/news/2026-1445-kenya-enacts-finance-act-2026
 
 ### Disclaimer
 
