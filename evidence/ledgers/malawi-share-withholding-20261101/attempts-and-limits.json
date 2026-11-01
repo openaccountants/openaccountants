@@ -1,0 +1,37 @@
+{
+  "network_attempts": [
+    {
+      "command": "git fetch origin (sandboxed)",
+      "exit": 128,
+      "stderr": "fatal: unable to access 'https://github.com/openaccountants/openaccountants.git/': Could not resolve host: github.com"
+    },
+    {
+      "command": "git fetch origin (ordinary network escalation)",
+      "exit": 0
+    },
+    {
+      "command": "gh pr view 1216 --json ... (sandboxed)",
+      "exit": 1,
+      "stderr": "error connecting to api.github.com; check your internet connection or https://githubstatus.com"
+    },
+    {
+      "command": "GitHub plugin get_pr_info #1216",
+      "result": "Successfully read actual draft PR metadata and original body"
+    }
+  ],
+  "preserved_failed_checks": [
+    "quote-checks-initial.json (S09 margin-heading interruption)",
+    "pre-commit-validation-initial.json (harness extra newline)"
+  ],
+  "final_official_commands_pass": true,
+  "validator_warning_not_suppressed": "One warning: mechanical PR-domain classifier also finds mw-payroll-social; distinct listed-share-disposal-withholding job declared and income-domain routing explicit. No same-job error. Warning preserved, not suppressed.",
+  "legal_limits": [
+    "FirstSchedule hb/hc historical mismatch",
+    "F4 appointed TAA/cutover notices unread",
+    "general-law commencement and period allocation",
+    "actual Securities Act definitions",
+    "reinvestment implementation and underlying tax after exemption",
+    "current forms/deadline/certificates",
+    "No live withholding/payment/filing or publication/currentness acceptance"
+  ]
+}
