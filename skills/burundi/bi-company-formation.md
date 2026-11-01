@@ -1,6 +1,6 @@
 ---
 name: bi-company-formation
-description: "Choose between a Burundi sole-member company, a private limited company and a foreign branch using the national company code and the development agency’s published registration procedure. This Guide covers founder numbers, capital subscription and payment, articles, bank evidence, the public application inputs and official registration fees. It distinguishes commercial registration by ADB from the tax identification number reserved to OBR and routes post-registration income tax, VAT and employer compliance to the relevant Guides. Public-company capital requirements, regulated activities, beneficial-owner filing, authenticated portal completion and a guaranteed incorporation timeline are not established here. Independent review is pending and no filing should rely on the old nominal-dollar capital claim."
+description: "Choose between a Burundi sole-member company, a private limited company and a foreign branch using the national company code and the development agency’s published registration procedure. This Guide covers founder numbers, capital subscription and payment, articles, bank evidence, the public application inputs and official registration fees. It distinguishes commercial registration by ADB from the tax identification number reserved to OBR and routes post-registration income tax, VAT and employer compliance to the relevant Guides. Public-company capital requirements, regulated activities, beneficial-owner filing, authenticated portal completion and a guaranteed incorporation timeline are not established here. Accountant review is pending and no filing should rely on the old nominal-dollar capital claim."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
@@ -10,7 +10,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: company-formation
 version: 1.2
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: ordinary company formation and entity choice for 2026 v1.2
@@ -111,7 +111,7 @@ expected:
 | [Law 1/09 of 31 December 2025](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf) | Read for selected income/VAT/registration amendments at arts. 79–83, 95–100, 147–149, 180, 208, 213, 246 and commencement art. 252 (p. 249), with neighboring clauses. Other sector charges and allocation tables not substantively reviewed. | 2026-11-01 |
 | [Law 1/10 of 30 June 2026](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf) | Read for selected income/VAT/registration/procedure amendments at arts. 78–82, 95–104, 154–158, 190, 210–233, 246–271 and commencement art. 277 (p. 267), with neighboring clauses. Other sector charges and allocation tables not substantively reviewed. | 2026-11-01 |
 
-Not yet confirmed: Current authenticated easybusiness application fields, fee-payment reference and final receipt/certificate screens; separate name-reservation procedure; guaranteed registration timeline; regulated-sector/SA capital and licence rules; beneficial-owner filings; relative popularity of company forms, foreign-ownership sector restrictions, relative popularity of company forms, foreign-ownership sector restrictions, detailed branch fees; incorporation tax or stamp charges beyond the published registration fees. The old nominal-dollar minimum and generic foreign/corporate-founder claims are not verified.
+Not yet confirmed: Current authenticated easybusiness application fields, fee-payment reference and final receipt/certificate screens; separate name-reservation procedure; guaranteed registration timeline; regulated-sector/SA capital and licence rules; beneficial-owner filings; relative popularity of company forms, foreign-ownership sector restrictions, detailed branch fees; incorporation tax or stamp charges beyond the published registration fees. The old nominal-dollar minimum and generic foreign/corporate-founder claims are not verified.
 
 <!-- openaccountants-cta-block -->
 

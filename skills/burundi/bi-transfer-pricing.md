@@ -1,13 +1,16 @@
 ---
 name: bi-transfer-pricing
-description: "Identify a Burundi company’s foreign related-party transactions and prepare the statutory profit-adjustment and supporting-documentation analysis for 2026. This Guide covers the income law’s control tests, transfers to privileged or noncooperative jurisdictions, the obligation to justify a pricing policy, and the separate restrictions on related-party interest. It distinguishes the first-half financing exception from the additional July budget conditions and shows how a documented price difference or financing limit changes taxable profit. It does not invent a safe-harbor markup, documentation threshold, country-by-country deadline or approved pricing agreement. The currently operative implementing-order details and cross-period financing application need further confirmation. Independent review is pending."
+description: "Identify a Burundi company’s foreign related-party transactions and prepare the statutory profit-adjustment and supporting-documentation analysis for 2026. This Guide covers the income law’s control tests, transfers to privileged or noncooperative jurisdictions, the obligation to justify a pricing policy, and the separate restrictions on related-party interest. It distinguishes the first-half financing exception from the additional July budget conditions and shows how a documented price difference or financing limit changes taxable profit. It does not invent a safe-harbor markup, documentation threshold, country-by-country deadline or approved pricing agreement. The currently operative implementing-order details and cross-period financing application need further confirmation. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: transfer-pricing
 version: 1.1
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: related-party profit adjustments and financing for 2026 v1.1

@@ -1,6 +1,6 @@
 ---
 name: bi-vat-gst
-description: "Determine whether an ordinary Burundi business must register for VAT, distinguish the two registration periods in calendar 2026, classify supplies and compute a monthly return using the published OBR fields. This Guide covers output VAT, documentary input-credit conditions, imported services, the excess-credit refund sequence and the separate purchase, import and stock registration triggers. It distinguishes exempt healthcare and medicines from the limited intermediate-rate categories rather than treating every essential good alike. Real-estate transactions, sector-specific exemptions, partial deduction adjustments and current authenticated filing screens require additional work before a filing in those areas. Independent review is pending, and the pack remains partial."
+description: "Determine whether an ordinary Burundi business must register for VAT, distinguish the two registration periods in calendar 2026, classify supplies and compute a monthly return using the published OBR fields. This Guide covers output VAT, documentary input-credit conditions, imported services, the excess-credit refund sequence and the separate purchase, import and stock registration triggers. It distinguishes exempt healthcare and medicines from the limited intermediate-rate categories rather than treating every essential good alike. Real-estate transactions, sector-specific exemptions, partial deduction adjustments and current authenticated filing screens require additional work before a filing in those areas. Accountant review is pending, and the pack remains partial."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
@@ -10,7 +10,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: vat
 version: 1.2
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: ordinary VAT registration and monthly return for 2026 v1.2

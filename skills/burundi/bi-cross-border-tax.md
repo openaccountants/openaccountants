@@ -1,13 +1,16 @@
 ---
 name: bi-cross-border-tax
-description: "Classify cross-border income under Burundi’s domestic rules before calculating tax or applying an asserted treaty benefit. This Guide covers ordinary residence tests, domestic income source, fixed-place and service or construction permanent establishments, the source-withholding categories and capped foreign-tax credit with documentary requirements. It gives the published monthly withholding fields and separates withholding from the recipient’s ultimate business or capital-gain liability. The Morocco ratification and treaty commencement wording are read without assuming an exchange of instruments or a 2026 reduced rate. Complete treaty-by-treaty effectiveness, diplomatic residence details, exchange controls and authenticated filing screens remain unresolved. Independent review is pending."
+description: "Classify cross-border income under Burundi’s domestic rules before calculating tax or applying an asserted treaty benefit. This Guide covers ordinary residence tests, domestic income source, fixed-place and service or construction permanent establishments, the source-withholding categories and capped foreign-tax credit with documentary requirements. It gives the published monthly withholding fields and separates withholding from the recipient’s ultimate business or capital-gain liability. The Morocco ratification and treaty commencement wording are read without assuming an exchange of instruments or a 2026 reduced rate. Complete treaty-by-treaty effectiveness, diplomatic residence details, exchange controls and authenticated filing screens remain unresolved. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
+review_status: pending_review
+trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
+license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: cross-border
 version: 1.1
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: domestic cross-border residence, PE and withholding for 2026 v1.1
@@ -47,7 +50,7 @@ Keep VAT on imported services separate from income withholding; use [VAT](bi-vat
 ## Deadlines and filing
 
 1. Obtain contracts/invoices, actual service location and personnel-day/project records, residence/entity facts, recipient identity and PE attribution. Document any asserted treaty before reducing a domestic amount.
-2. In [monthly return section IV](https://www.obr.bi/images/DECLARATION_TVA-_IRE-_PF_ET_AUTRES_RETENUES_A_LA_SOURCE-2021-VF-juillet-2022-vf-1.pdf), map dividends, interest, royalties, nonresident services, specified group/technical fees and vehicle hire to lines 1–6. Enter payment date, taxable payment, rate and tax in columns 2–5. Nonresident asset acquisition belongs to line 9. The historic form's obsolete sector/gaming lines do not establish current liability. Reconcile section IV total line 15 to the payment.
+2. In [monthly return section IV](https://www.obr.bi/images/DECLARATION_TVA-_IRE-_PF_ET_AUTRES_RETENUES_A_LA_SOURCE-2021-VF-juillet-2022-vf-1.pdf), map dividends, interest, royalties, nonresident services, specified group/technical fees and vehicle hire to lines 1–6. Enter payment date, taxable payment, rate and tax in columns 2–5. Nonresident asset acquisition belongs to line 9. The historic form's other sector lines do not establish current liability. July art. 156 separately sets 10% gaming charges on deposits, withdrawals, gross profit of gaming companies and promotional prizes; those charges are outside this Guide. Reconcile section IV total line 15 to the payment.
 3. File the prescribed withholding return and remit within fifteen calendar days after the payment month. Retain payment-category and tax registers for the ten fiscal years following the withholding year; provide the recipient its evidence as required. The withholding agent is personally liable for a failure, and cannot shift its own penalties/interest to the recipient. [IR arts. 124–129](https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf).
 4. Use OBR's [category portal links](https://www.obr.bi/index.php/teledeclaration-telepaiement); keep declaration acknowledgment and quittance/bank reference matched to NIF, tax, period and total. Current authenticated completion screens are not established here. Claim a resident foreign credit through the annual income return's foreign-tax line with the certified evidence, respecting the domestic cap; use the [corporate](bi-corporate-income-tax.md) or [individual](bi-income-tax.md) filing route.
 

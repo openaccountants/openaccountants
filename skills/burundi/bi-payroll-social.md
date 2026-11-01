@@ -1,6 +1,6 @@
 ---
 name: bi-payroll-social
-description: "Calculate monthly employment income withholding and ordinary private-sector INSS contributions in Burundi during 2026. This Guide separates the payroll tax base from the contribution base, applies the pension and occupational-risk ceilings separately, and distinguishes monthly OBR remittance from quarterly INSS declaration and payment. It covers principal versus secondary employment, qualifying termination payments, payroll records and the published monthly tax form. The annual foreign-labor charge in both budgets is identified separately from employee deductions. Public-sector pensions, difficult-work contributions, national health-insurance eligibility, an alleged training levy and authenticated completion screens are not completed by this Guide. Independent review is pending."
+description: "Calculate monthly employment income withholding and ordinary private-sector INSS contributions in Burundi during 2026. This Guide separates the payroll tax base from the contribution base, applies the pension and occupational-risk ceilings separately, and distinguishes monthly OBR remittance from quarterly INSS declaration and payment. It covers principal versus secondary employment, qualifying termination payments, payroll records and the published monthly tax form. The annual foreign-labor charge in both budgets is identified separately from employee deductions. Public-sector pensions, difficult-work contributions, national health-insurance eligibility, an alleged training levy and authenticated completion screens are not completed by this Guide. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
@@ -10,7 +10,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.2
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: employment withholding and ordinary INSS for 2026 v1.2

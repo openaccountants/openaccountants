@@ -1,6 +1,6 @@
 ---
 name: bi-corporate-income-tax
-description: "Compute ordinary corporate business income tax for a Burundi resident company or a nonresident permanent establishment during calendar 2026. Use this Guide to bridge accounting profit to taxable profit, compare the turnover minimum, track loss use, calculate provisional payments and prepare the published OBR corporate return. It separates ordinary trading gains from the individual capital-gains regime and routes dividends, interest, royalties and foreign service payments to the withholding Guide. It also identifies the budget rules governing profit allocation and related-party financing. Investment incentives, free-zone qualification, financial institutions, restructurings and the authenticated filing completion screens remain outside the completed scope. Independent review is pending."
+description: "Compute ordinary corporate business income tax for a Burundi resident company or a nonresident permanent establishment during calendar 2026. Use this Guide to bridge accounting profit to taxable profit, compare the turnover minimum, track loss use, calculate provisional payments and prepare the published OBR corporate return. It separates ordinary trading gains from the individual capital-gains regime and routes dividends, interest, royalties and foreign service payments to the withholding Guide. It also identifies the budget rules governing profit allocation and related-party financing. Investment incentives, free-zone qualification, financial institutions, restructurings and the authenticated filing completion screens remain outside the completed scope. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
@@ -10,7 +10,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: corporate-income-tax
 version: 1.2
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: ordinary corporate income tax for 2026 v1.2

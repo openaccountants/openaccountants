@@ -1,6 +1,6 @@
 ---
 name: bi-tax-overview
-description: "Build a Burundi compliance plan for calendar 2026 by identifying the taxpayer, income category, taxable activity and reporting period before choosing a return. This Guide routes individual, company, VAT, payroll, social contribution, related-party and cross-border questions to one substantive home each. It explains the distinction between a calendar income-tax year and the two budget-law periods within 2026, the official tax and registration authorities, registration and records, and the public portal activation process. It also shows how to reconcile a monthly payment schedule and a quarterly contribution schedule without confusing their deadlines. Special regimes and authenticated submission screens remain incomplete. Independent review is pending."
+description: "Build a Burundi compliance plan for calendar 2026 by identifying the taxpayer, income category, taxable activity and reporting period before choosing a return. This Guide routes individual, company, VAT, payroll, social contribution, related-party and cross-border questions to one substantive home each. It explains the distinction between a calendar income-tax year and the two budget-law periods within 2026, the official tax and registration authorities, registration and records, and the public portal activation process. It also shows how to reconcile a monthly payment schedule and a quarterly contribution schedule without confusing their deadlines. Special regimes and authenticated submission screens remain incomplete. Accountant review is pending."
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
@@ -10,7 +10,7 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: tax-overview
 version: 1.2
-tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Independent pack review pending."
+tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
 ---
 
 # Burundi: tax classification and compliance routing for 2026 v1.2
@@ -122,7 +122,7 @@ expected:
 | [OBR linked Espace Connecté download](https://www.obr.bi/images/ebank-guide_utilisateur_1.pdf) | Read for Actual title is Console eBanque, July 2023; bank workflow and contents read, not used as taxpayer submission instructions. | 2026-11-01 |
 | [INSS declaration and payment](https://inss.gov.bi/declaration-et-versement-des-cotisations/) | Read for Quarterly employer versus monthly voluntary frequency, Modèle VI and delay additions read. | 2026-11-01 |
 
-Not yet confirmed: Every sibling Guide remains partial for the omissions named in its Sources; no domain is certified complete. Special sectors/levies and investment/free-zone eligibility, treaty effectiveness/procedures, health/training levy applicability, current annual interest order, fully current taxpayer return/refund/correction/payment screens and all generated inventories are outside this writer checkpoint. Independent review and accountant attestation have not occurred.
+Not yet confirmed: Every sibling Guide remains partial for the omissions named in its Sources; no domain is certified complete. Special sectors/levies and investment/free-zone eligibility, treaty effectiveness/procedures, health/training levy applicability, current annual interest order, fully current taxpayer return/refund/correction/payment screens and all generated inventories are outside this writer checkpoint. Accountant attestation has not occurred.
 
 <!-- openaccountants-cta-block -->
 
