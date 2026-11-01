@@ -103,7 +103,7 @@ expected:
 | MoJ Companies Division page (registration steps; its fee list predates the 2024 Order), read for the rows cited | https://www.moj.gm/companies-division | 2026-11-01 |
 | GRA Domestic Taxes FAQs (whole), read in full for this skill | https://www.gra.gm/domestic-faqs | 2026-11-01 |
 
-Not yet confirmed: The Companies Act 2013 text. Minimum number of incorporators (old: two). Minimum capital and the 25% subscription rule (old file, law firm source). Form S.V.3 (old file; the MoJ page names SWR 7). One-day timeline. Municipal trade licence step. Annual return date. Statutory audit thresholds.
+Not yet confirmed: The Companies Act 2013 text. Minimum number of incorporators (old: two). Minimum capital and the 25% subscription rule (old file, law firm source). Form S.V.3 (old file; the MoJ page names SWR 7). One-day timeline. Municipal trade licence and SSHFC employer registration steps (old file, no official source). Annual return date. Statutory audit thresholds.
 
 <!-- openaccountants-cta-block -->
 
