@@ -1,10 +1,10 @@
 ---
 name: bh-tax-overview
-description: "Tax overview for Bahrain, tax year 2026: which taxes exist, who runs them, and which skill in this pack holds each figure. Covers the absence of personal and general corporate income tax, the 46% hydrocarbon tax, the 15% DMTT for large multinational groups, VAT and social insurance. Use for questions like does Bahrain have income tax, what taxes apply in Bahrain, or who is the tax authority in Bahrain."
+description: "Bahrain tax router for 2026: personal tax screening, hydrocarbon tax, DMTT, payroll/social insurance, VAT, transfer pricing and cross-border domain owners. Makes current-year procedural and source holds explicit."
 jurisdiction: BH
 tax_year: 2026
 last_updated: 2026-11-01
-version: 0.2
+version: 0.3
 category: international
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -12,91 +12,89 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Tax Overview v0.2
+# Bahrain Tax Overview v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
 ## Who this applies to
 
-Anyone asking which taxes apply in Bahrain in 2026, business or individual. Each figure lives in the skill named below.
+People deciding which Bahrain tax or employment-compliance job to run in 2026. Use the domain owner below. This router does not grant a blanket exemption from business, payroll or foreign taxes.
 
 ## Rates, bands and thresholds
 
-| Item | Rate or amount | Year | Source URL |
+| Job | Routing decision | Year | Official source |
 |---|---|---|---|
-| Personal income tax | None: the Income Tax Law taxes only bodies corporate, establishments and companies (art. 1(a)). See bh-income-tax | 2026 | https://www.lloc.gov.bh/Legislation/id/L2279 |
-| Hydrocarbon income tax | 46%. See bh-corporate-income-tax | 2026 | same |
-| DMTT Minimum Rate, in-scope groups only | 15%. See bh-corporate-income-tax | 2026 | https://www.nbr.gov.bh/laws_regulations/dmtt |
-| VAT mandatory registration | BHD 37,500 annual taxable supplies | 2026 | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration |
-| VAT standard rate | 10% from 1 January 2022 | 2026 | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq |
-| Social insurance | unverified: see bh-payroll-social | 2026 | unverified |
+| Personal income tax | EDB states no taxation on personal income; use [bh-income-tax](bh-income-tax.md) and its explicitly dated archive | 2026 reference | https://web.archive.org/web/20260321041012/https://www.bahrainedb.com/app/uploads/2026/01/Bahrain-EDB-MFG-Factsheet-2026.pdf |
+| Hydrocarbon income tax | Screen statutory activity and income using [bh-corporate-income-tax](bh-corporate-income-tax.md), art. 2 | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L2279 |
+| DMTT | Screen the multinational-group revenue test and Bahrain entity scope using the corporate Guide, law arts. 1 to 4 | 2026 | https://www.lloc.gov.bh/Legislation/HTM/L1124 |
+| Social insurance/payroll | Establish coverage, wage and service dates using [bh-payroll-social](bh-payroll-social.md); unresolved employer phase-in/minimum-base issues block a full payroll computation | 2026 | https://www.lloc.gov.bh/FullAr/L2476.docx |
+| VAT | Use [bahrain-vat](bahrain-vat.md), by Mehran Habib, unchanged on 2025. Obtain a current-year review before acting | 2026 screening only | https://www.nbr.gov.bh/laws_regulations/vat |
 
 ## The base
 
-- Income tax reaches hydrocarbon companies only. The DMTT reaches in-scope multinational group members. Others pay no tax on profits in 2026.
-- A draft corporate income tax law went to the legislature on 29 December 2025 (see bh-cross-border-tax). It is not treated as law here.
-- Currency: Bahraini dinar (BHD). The NBR administers VAT, excise and the DMTT. The Social Insurance Organization (SIO) runs social insurance.
-- Standard fiscal year: calendar year unless an entity adopts a different one.
-- No general residence-based income tax; the DMTT applies by reference to constituent entities located in Bahrain.
+Each figure has one home: corporate income tax and DMTT computations belong to the corporate Guide; social contributions and EOSB to payroll; personal income tax screening to the individual Guide. Formation is [bh-company-formation](bh-company-formation.md). No new narrow Guide is needed. General corporate-tax enactment status and excise coverage remain held below.
 
 ## Deadlines and filing
 
-VAT: the NBR's example has a quarter ending 31 March due on 30 April, so the return is due by the end of the following month. Monthly periods apply above BHD 3,000,000 of current or expected annual supplies; below that, monthly returns need an application and NBR approval. Annual periods need NBR approval and supplies under BHD 100,000. Social insurance: within the first 15 days of the following month (bh-payroll-social). DMTT: see bh-transfer-pricing.
+Follow the owner Guide for its return, payment and records. Do not treat a VAT period, social-insurance payment date or DMTT reporting year as a universal Bahrain fiscal-year rule. Current electronic form/box workflows must be established before submitting.
 
 ## Penalties and interest
 
-Held in bh-payroll-social and bahrain-vat.
+Penalties are regime-specific. Use the corporate or payroll Guide with its act/article; VAT penalties require the named-author VAT Guide's current-year review.
 
 ## Cross-border points
 
-See bh-cross-border-tax.
+Use [bh-transfer-pricing](bh-transfer-pricing.md) for DMTT transfer pricing and CbCR, and [bh-cross-border-tax](bh-cross-border-tax.md) for Bahrain cross-border screening. They are unchanged by this repair; this router does not independently attest their content.
 
 ## Two worked examples that recompute
 
-Local trading company with BHD 100,000 profit, no hydrocarbon activity, not in a multinational group: income tax is nil.
-
+Routing check: an individual has BHD 60,000 salary and BHD 2,000 payroll deductions. Personal income tax remains zero; payroll amounts must be reconciled separately.
 ```oa-check
-name: Local company, no profits tax
+name: Overview individual routing
 inputs:
-  profit: 100000
+  salary: 60000
+  deductions: 2000
 steps:
-  - tax: profit * 0
+  - pit: salary * 0
+  - payroll_reconciliation: salary - deductions
 expected:
-  tax: 0.00
+  pit: 0
+  payroll_reconciliation: 58000
 ```
 
-Decision: register for VAT? Turnover of BHD 40,000 is above BHD 37,500, so registration is mandatory.
-
+Decision: route a company to DMTT screening for revenue below versus above the corporate Guide's revenue threshold? For four twelve-month preceding years, EUR 800 million in each of two years exceeds EUR 750 million by EUR 50 million in each; EUR 700 million in the other two falls short. Two qualifying years meet art. 3(C), subject to all other entity-scope conditions. These are screening inputs, not a tax amount.
 ```oa-check
-name: VAT threshold test
+name: DMTT revenue screening comparison
 inputs:
-  turnover: 40000
-  threshold: 37500
+  higher: 800000000
+  lower: 700000000
+  threshold: 750000000
 steps:
-  - excess: max(turnover - threshold, 0)
+  - higher_excess: max(higher - threshold, 0)
+  - lower_shortfall: max(threshold - lower, 0)
 expected:
-  excess: 2500.00
+  higher_excess: 50000000
+  lower_shortfall: 50000000
 ```
 
 ## Ask the client first
 
-- Individual or company?
-- Any hydrocarbon activity?
-- Part of a multinational group with revenue of EUR 750 million or more?
-- Annual taxable supplies?
-- Any employees, and their nationality?
+- Individual or entity, and what activity?
+- Any hydrocarbon exploration, production or refining?
+- Any multinational group and what preceding-year consolidated revenue/year lengths?
+- Any employees, their nationality and first registration dates?
+- Any actual or expected taxable business supplies or foreign-country connections?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual read scope | URL | Read on |
 |---|---|---|
-| Income Tax Law, Legislative Decree No. 22 of 1979, read for bh-cross-border-tax, not reopened (page body did not load by script on 2026-11-01) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
-| DMTT Law and Regulations, read for bh-transfer-pricing and bh-cross-border-tax, not reopened (NBR returned 403 by script and browser on 2026-11-01) | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
-| NBR, VAT registration page, threshold paragraph (archive copy of 22 Apr 2025) | https://web.archive.org/web/20250422040914/https://www.nbr.gov.bh/vat_registration | 2026-11-01 |
-| NBR, when to file VAT, periods and examples (archive copy of 25 Aug 2026) | https://web.archive.org/web/20260825060528/https://www.nbr.gov.bh/VAT/vat_return_filing/when_to_file | 2026-11-01 |
-| NBR, FAQ, VAT rate (archive copy, 2025) | https://web.archive.org/web/2025/https://www.nbr.gov.bh/faq | 2026-11-01 |
+| EDB manufacturing factsheet, both pages read; March 2026 archive, personal-tax statement p. 2 | https://web.archive.org/web/20260321041012/https://www.bahrainedb.com/app/uploads/2026/01/Bahrain-EDB-MFG-Factsheet-2026.pdf | 2026-11-01 |
+| Income Tax Law, enactment and arts. 1 to 13 read | https://www.lloc.gov.bh/Legislation/HTM/L2279 | 2026-11-01 |
+| DMTT Law, arts. 1 to 4 and 44 read with scope definitions | https://www.lloc.gov.bh/Legislation/HTM/L1124 | 2026-11-01 |
+| Social Insurance Law, arts. 1 to 4, 17 to 33 and 47 to 49 read | https://www.lloc.gov.bh/FullAr/L2476.docx | 2026-11-01 |
 
-Not yet confirmed: the fiscal year rule; excise rates; whether the draft corporate income tax law has been enacted.
+Not yet confirmed: general corporate-tax enactment status; the older EDB blanket zero corporate-tax statement; excise; universal calendar-fiscal-year assumption; historic VAT rate/registration/filing assertions as current 2026 instructions; social employer phase-in and minimum-base implementation. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
 
 <!-- openaccountants-cta-block -->
 

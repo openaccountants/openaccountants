@@ -4,7 +4,7 @@ description: "Company formation and entity choice in Bahrain, 2026: W.L.L., clos
 jurisdiction: BH
 tax_year: 2026
 last_updated: 2026-11-01
-version: 0.2
+version: 0.3
 category: formation
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
@@ -12,15 +12,15 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Bahrain Company Formation and Entity Choice v0.2
+# Bahrain Company Formation and Entity Choice v0.3
 
 > **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-## What this file is
+## Who this applies to
 
-Entity choice and registration through Sijilat, run by the Ministry of Industry and Commerce, for founders in 2026.
+Founders selecting a Bahrain legal form in 2026. Sijilat Business Types is the official administrative guide read here. Its entity-level ownership statements do not establish that every licensed activity permits foreign ownership. Obtain activity-specific approval before committing capital.
 
-## Rates and thresholds
+## Rates, bands and thresholds
 
 | Entity | Minimum capital and key rule | Source URL |
 |---|---|---|
@@ -30,56 +30,74 @@ Entity choice and registration through Sijilat, run by the Ministry of Industry 
 | Commandite by shares | BHD 20,000; at least four founders | same |
 | Partnership, simple commandite | No minimum capital; at least two partners | same |
 | Foreign branch or representative office | Head office in Bahrain required; audited annual budget; a representative office may not deal directly with clients | same |
-| Individual establishment | Bahraini, GCC or resident FTA-state citizen, 18 or over; one registration per person | same |
+| Individual establishment | Nationality and Bahrain residence eligibility require the Sijilat individual-establishment checks; age 18 or over; one registration per person | same |
 | Sijili (virtual) | Bahraini only; no business address; no foreign worker permits | same |
-| unverified: trade name reservation | 60 days, about BHD 10, per the prior version | unverified |
-| unverified: incorporation time | 1 to 3 working days, 1 to 3 weeks with licences, per the prior version | unverified |
 
-The prior version gave BHD 20,000 for a foreign W.L.L. and BHD 250,000 for a closed B.S.C. Sijilat contradicts both. Sijilat allows GCC nationals and foreigners to own 100% of W.L.L.s, B.S.C.s, partnerships and commandites.
+Sijilat's public-company founder rule exempts companies established by or with government. Foreign participation can be limited by sector/activity decisions. A closed B.S.C. requires the balance of subscribed capital within three years. Sijili also excludes an ICR owner or sole W.L.L. partner, and permits a shareholder only if not a manager/director. Traditional individual establishments require the nationality/residence conditions, age threshold and activity approvals stated by Sijilat; private-sector employees need employer authorisation and government employees face the page's restrictions. These conditions must be checked before selecting the form.
 
-## Filing steps
+## The base
 
-Reserve the name, apply on Sijilat with documents, select activities, obtain inter-agency approvals, pay fees, receive the Commercial Registration. Then open a bank account, register with the SIO if employing, register for VAT above BHD 37,500 (bahrain-vat), renew the CR annually, obtain sector licences.
+A W.L.L. has no minimum capital under the Sijilat page; all cash and in-kind shares must be distributed and fully paid, with in-kind contributions delivered, before incorporation. It cannot conduct insurance, banking or investment of others' funds. Partnership partners have unlimited joint personal liability. In a simple commandite, general partners have unlimited liability and sleeping partners are limited to their capital but must not manage; a sleeping partner's knowing inclusion in the name can create general-partner liability. A non-profit W.L.L. cannot distribute profit directly or indirectly.
 
-## Commitments
+Sijilat lists an auditor, general assembly, management/financial reporting, reserve capital, UBO and AML tasks for W.L.L.s. It permits an auditor solvency letter instead of the financial report unless losses reach half the share capital. It lists retention of W.L.L. business books for ten years. Shareholding forms also have board/governance requirements. The page lists Economic Substance Reports, but their current legal applicability is held rather than imposed automatically.
 
-W.L.L.: general assembly, auditor, financial report (or auditor solvency letter unless losses reach 50% of capital), management report, UBO, Economic Substance Report, AML, reserve capital, books for 10 years. B.S.C.: also four board meetings, governance report and officer; a public B.S.C. publishes results. A non-profit W.L.L. (N.P.C.) may not distribute profits.
+## Deadlines and filing
 
-## Worked cases
+Use https://www.sijilat.bh/ to select the legal form and activity. Check activity licences, nationality/ownership restrictions and required documents before filing. A foreign branch deposits the parent's articles and amendments with the Ministry, uses the prescribed branch name and supplies the annual audited financial position; documents must be Arabic or English, or accompanied by a certified Arabic translation. A representative office cannot transact directly with clients. Obtain the Commercial Registration and required activity approvals before operating.
 
-Closed B.S.C. at the BHD 50,000 minimum: at least 50% is deposited at the start.
+Exact name-reservation validity/fee, portal screens, document checklist for each activity, completion time, payment reference and annual CR renewal procedure are held. Do not quote a cost or completion date from the predecessor.
 
+## Penalties and interest
+
+Sijilat states that people operating a foreign branch before completing registration are personally and jointly liable. No numeric registration fine is verified here.
+
+## Cross-border points
+
+Sijilat states that GCC nationals and foreigners can own the listed company forms; check the separate activity/sector restrictions. A branch is a foreign company's Bahrain operation; a representative office has the narrower non-trading role above. Tax and payroll obligations need the respective domain screens.
+
+## Two worked examples that recompute
+
+Closed B.S.C. subscribed capital BHD 50,000: depositing half initially means BHD 25,000 paid and BHD 25,000 remaining within the three-year limit.
 ```oa-check
-name: Closed BSC initial deposit
+name: Closed BSC initial capital
 inputs:
   capital: 50000
 steps:
-  - deposit: capital * 0.5
+  - initial: capital * 0.5
+  - balance: capital - initial
 expected:
-  deposit: 25000.00
+  initial: 25000
+  balance: 25000
 ```
 
-Decision: W.L.L. or closed B.S.C. for a founder with BHD 10,000? A W.L.L. has no minimum; a closed B.S.C. leaves a capital shortfall.
-
+Decision: founders have BHD 10,000 and an activity allowed for a W.L.L. Compare only statutory minimum capital, before operating capital, licences and fees. The closed B.S.C. shortfall is BHD 40,000; W.L.L. statutory minimum-capital shortfall is zero. This does not prove BHD 10,000 is adequate to operate the business.
 ```oa-check
-name: Capital shortfall, closed BSC against WLL
+name: Entity minimum-capital choice
 inputs:
   funds: 10000
 steps:
-  - bsc_gap: max(50000 - funds, 0)
-  - wll_gap: max(0 - funds, 0)
+  - closed_bsc_shortfall: max(50000 - funds, 0)
+  - wll_statutory_shortfall: max(0 - funds, 0)
 expected:
-  bsc_gap: 40000.00
-  wll_gap: 0.00
+  closed_bsc_shortfall: 40000
+  wll_statutory_shortfall: 0
 ```
+
+## Ask the client first
+
+- Intended activity and required licence?
+- Founders' nationality, residence, number and employment status?
+- Available capital and intended contribution type?
+- Liability, management and ability-to-distribute-profit requirements?
+- Local company, operating branch, representative office or individual establishment?
 
 ## Sources
 
-| Source | URL | Read on |
+| Source and actual read scope | URL | Read on |
 |---|---|---|
-| Sijilat, Business Types, whole page (browser) | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
+| Sijilat Business Types, entire public page and all entity rows/requirements/notes/commitments read in ordinary browser; selective verbatim browser read receipt saved; raw HTML translation data contains stale values and is not substituted for the visible page | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
 
-Not yet confirmed: name reservation fee and validity; incorporation times; the SPC conversion under Decree-Law No. 28 of 2020; annual CR renewal from an official page.
+Not yet confirmed: name reservation 60-day validity/about BHD 10 fee; 1-to-3-day/1-to-3-week completion estimates; SPC conversion under Decree-Law 28/2020; current annual CR renewal procedure; exact activity-specific ownership/licensing approvals; automatic ESR applicability. Earlier BHD 20,000 foreign W.L.L. and BHD 250,000 closed B.S.C. minima are contradicted by Sijilat and are not executable. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
 
 <!-- openaccountants-cta-block -->
 

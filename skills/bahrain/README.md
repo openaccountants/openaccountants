@@ -1,51 +1,40 @@
 ---
 jurisdiction: BH
 partial:
-  SC: "SIO contribution rates and wage ceiling not confirmed from an official text"
-  PR: "SIO contribution rates and wage ceiling not confirmed from an official text"
-  VAT: "bahrain-vat is on tax year 2025; named author, not changed"
+  IT-CORP: "Current general corporate-tax enactment status and filing screens/payment steps held; hydrocarbon and DMTT core rules sourced"
+  IT-IND: "Personal-tax screening sourced to an explicitly dated official archive; current payroll/VAT/WPS procedures route to their owner and holds"
+  SC: "Employer pension phase-in implementation and October 2026 first-registration minimum-base amount held"
+  PR: "Full payroll cannot be computed until applicable rates/base and current SIO/WPS procedures are confirmed"
+  VAT: "bahrain-vat is on 2025, by Mehran Habib, unchanged; current-year review required"
 covered_by:
+  IT-IND: bh-income-tax
+  IT-CORP: bh-corporate-income-tax
+  SC: bh-payroll-social
+  PR: bh-payroll-social
   TP: bh-transfer-pricing
   XB: bh-cross-border-tax
 ---
 
 # Bahrain: tax pack
 
-Bahrain has no personal income tax and no general corporate income tax. Direct
-tax on business income comes from two laws only: the 46% Income Tax Law for
-hydrocarbon companies (Legislative Decree No. 22 of 1979) and the 15% Domestic
-Minimum Top-up Tax (DMTT) for multinational groups with revenue of EUR 750
-million or more, from Fiscal Years starting on or after 1 January 2025
-(Decree-Law No. 11 of 2024). Taxes are administered by the National Bureau
-for Revenue (NBR), in Bahraini dinars (BHD). Built by Michael Cutajar and
-the OpenAccountants team; no skill in this pack carries a licensed Bahrain
-professional's sign-off.
+The five team Guides were repaired together for 2026. The pack remains partial.
+The core hydrocarbon and DMTT rules were read in original Arabic law. An explicit
+March 2026 archive of the official EDB manufacturing factsheet supports personal
+tax screening. The earlier blanket claim that all other companies pay no profits
+tax is held pending current general corporate-tax enactment verification.
 
-## Domains
-
-| Domain | Skill | Status |
+| Job | Guide | Current scope and boundary |
 |---|---|---|
-| Overview | [bh-tax-overview](bh-tax-overview.md) | sourced from the law, tax year 2026 |
-| IT-IND, individual income tax | [bh-income-tax](bh-income-tax.md) | sourced from the law, tax year 2026 |
-| IT-CORP, corporate income tax | [bh-corporate-income-tax](bh-corporate-income-tax.md) | sourced from the law, tax year 2026 |
-| VAT | [bahrain-vat](bahrain-vat.md) | partial, by Mehran Habib, tax year 2025, not changed |
-| SC and PR, social contributions and payroll | [bh-payroll-social](bh-payroll-social.md) | partial, tax year 2026: SIO rates and ceiling unverified |
-| TP, transfer pricing | [bh-transfer-pricing](bh-transfer-pricing.md) | checked against the law, tax year 2026: DMTT arm's length rule and local/master file, CbCR, hydrocarbon tax; Bahrain has no general TP regime |
-| XB, cross-border | [bh-cross-border-tax](bh-cross-border-tax.md) | checked against the law, tax year 2026 |
+| Overview | [bh-tax-overview](bh-tax-overview.md) | Router; does not grant a universal exemption |
+| IT-IND | [bh-income-tax](bh-income-tax.md) | Personal-tax screening; inherited unsupported payroll/VAT defaults are NON-OPERATIVE |
+| IT-CORP | [bh-corporate-income-tax](bh-corporate-income-tax.md) | Hydrocarbon and DMTT core computation; current filing screens/payment workflow held |
+| VAT | [bahrain-vat](bahrain-vat.md) | Mehran Habib's named-author 2025 Guide, unchanged |
+| SC / PR | [bh-payroll-social](bh-payroll-social.md) | Verified employee pension/unemployment components, work-injury base, wage cap, EOSB and statutory dates; employer phase-in and new minimum base held |
+| TP | [bh-transfer-pricing](bh-transfer-pricing.md) | Existing 2026 Guide, unchanged; no new attestation made here |
+| XB | [bh-cross-border-tax](bh-cross-border-tax.md) | Existing 2026 Guide, unchanged; no new attestation made here |
+| Entity choice | [bh-company-formation](bh-company-formation.md) | Sijilat entity requirements and worked capital choice; activity licences/current ESR applicability held |
 
-[Company formation](bh-company-formation.md) is an entity-choice skill, tax
-year 2026.
-
-## Official sources
-
-| Source | URL | Read on |
-|---|---|---|
-| Sijilat, Business Types | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
-| Social Insurance Law, Legislative Decree No. 24 of 1976, arts. 17, 26 to 29, 33 (SIO English text, archive copy of 3 Jul 2025; older consolidation, its rates are not current) | https://web.archive.org/web/20250703061359/https://www.sio.gov.bh/en/law-no-24-of-1976 | 2026-11-01 |
-| Decision No. 109 of 2023, EOSB Regulation, arts. 5, 13, 14 (SIO, archive copy of 17 Jun 2025) | https://web.archive.org/web/20250617002539/https://www.sio.gov.bh/en/end-of-service-benefits | 2026-11-01 |
-| NBR, DMTT Law and Executive Regulations | https://www.nbr.gov.bh/laws_regulations/dmtt | 2026-10-29 |
-| NBR, DMTT guidelines and publications | https://www.nbr.gov.bh/guidelines_and_publications | 2026-10-29 |
-| NBR, Action 13 (Country-by-Country Reporting) | https://www.nbr.gov.bh/FTR/bebs_projects/action_thirteen | 2026-10-29 |
-| Ministerial Order No. 28 of 2021, CbCR | https://www.sijilat.bh/temp/CommercialLaws/18%20EN.pdf | 2026-10-29 |
-| Legislative Decree No. 22 of 1979, Income Tax Law (LLOC) | https://www.lloc.gov.bh/Legislation/id/L2279 | 2026-10-29 |
-| NBR, Tax Treaties Network | https://www.nbr.gov.bh/FTR/bahrain_tax_treaties_network | 2026-10-29 |
+No Guide in this repair receives a licensed Bahrain professional's signature.
+Fresh independent source review is required before acceptance. Source identities,
+actual read scopes, operative rule ledgers, exact predecessor destinations and
+all preserved text are in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md).
